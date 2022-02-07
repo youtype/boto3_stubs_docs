@@ -1,3 +1,5 @@
+<a id="mturkclient-for-boto3-mturk-module"></a>
+
 # MTurkClient for boto3 MTurk module
 
 > [Index](..) > [MTurk](.) > MTurkClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
 type annotations stubs module
-[mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
+[mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 - [MTurkClient for boto3 MTurk module](#mturkclient-for-boto3-mturk-module)
   - [MTurkClient](#mturkclient)
@@ -55,6 +57,8 @@ type annotations stubs module
     - [update_qualification_type](#update_qualification_type)
     - [get_paginator](#get_paginator)
 
+<a id="mturkclient"></a>
+
 ## MTurkClient
 
 Type annotations for `boto3.client("mturk")`
@@ -62,14 +66,17 @@ Type annotations for `boto3.client("mturk")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mturk.client import MTurkClient
 
 def get_mturk_client() -> MTurkClient:
-    return boto3.client("mturk")
+    return Session().client("mturk")
 ```
 
 Boto3 documentation:
 [MTurk.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -89,7 +96,11 @@ Exceptions:
 - `Exceptions.RequestError`
 - `Exceptions.ServiceFault`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -101,6 +112,8 @@ Boto3 documentation:
 [MTurk.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_qualification_request"></a>
 
 ### accept_qualification_request
 
@@ -123,6 +136,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="approve_assignment"></a>
+
 ### approve_assignment
 
 The `ApproveAssignment` operation approves the results of a completed
@@ -143,6 +158,8 @@ Keyword-only arguments:
 - `OverrideRejection`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_qualification_with_worker"></a>
 
 ### associate_qualification_with_worker
 
@@ -167,6 +184,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -181,6 +200,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_additional_assignments_for_hit"></a>
 
 ### create_additional_assignments_for_hit
 
@@ -203,6 +224,8 @@ Keyword-only arguments:
 - `UniqueRequestToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_hit"></a>
 
 ### create_hit
 
@@ -240,6 +263,8 @@ Keyword-only arguments:
 
 Returns [CreateHITResponseTypeDef](./type_defs.md#createhitresponsetypedef).
 
+<a id="create_hit_type"></a>
+
 ### create_hit_type
 
 The `CreateHITType` operation creates a new HIT type.
@@ -265,6 +290,8 @@ Keyword-only arguments:
 
 Returns
 [CreateHITTypeResponseTypeDef](./type_defs.md#createhittyperesponsetypedef).
+
+<a id="create_hit_with_hit_type"></a>
 
 ### create_hit_with_hit_type
 
@@ -297,6 +324,8 @@ Keyword-only arguments:
 Returns
 [CreateHITWithHITTypeResponseTypeDef](./type_defs.md#createhitwithhittyperesponsetypedef).
 
+<a id="create_qualification_type"></a>
+
 ### create_qualification_type
 
 The `CreateQualificationType` operation creates a new Qualification type, which
@@ -328,6 +357,8 @@ Keyword-only arguments:
 Returns
 [CreateQualificationTypeResponseTypeDef](./type_defs.md#createqualificationtyperesponsetypedef).
 
+<a id="create_worker_block"></a>
+
 ### create_worker_block
 
 The `CreateWorkerBlock` operation allows you to prevent a Worker from working
@@ -348,6 +379,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_hit"></a>
+
 ### delete_hit
 
 The `DeleteHIT` operation is used to delete HIT that is no longer needed.
@@ -365,6 +398,8 @@ Keyword-only arguments:
 - `HITId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_qualification_type"></a>
 
 ### delete_qualification_type
 
@@ -385,6 +420,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_worker_block"></a>
+
 ### delete_worker_block
 
 The `DeleteWorkerBlock` operation allows you to reinstate a blocked Worker to
@@ -404,6 +441,8 @@ Keyword-only arguments:
 - `Reason`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_qualification_from_worker"></a>
 
 ### disassociate_qualification_from_worker
 
@@ -427,6 +466,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -445,6 +486,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_account_balance"></a>
+
 ### get_account_balance
 
 The `GetAccountBalance` operation retrieves the Prepaid HITs balance in your
@@ -457,6 +500,8 @@ Boto3 documentation:
 
 Returns
 [GetAccountBalanceResponseTypeDef](./type_defs.md#getaccountbalanceresponsetypedef).
+
+<a id="get_assignment"></a>
 
 ### get_assignment
 
@@ -478,6 +523,8 @@ Keyword-only arguments:
 Returns
 [GetAssignmentResponseTypeDef](./type_defs.md#getassignmentresponsetypedef).
 
+<a id="get_file_upload_url"></a>
+
 ### get_file_upload_url
 
 The `GetFileUploadURL` operation generates and returns a temporary URL.
@@ -498,6 +545,8 @@ Keyword-only arguments:
 Returns
 [GetFileUploadURLResponseTypeDef](./type_defs.md#getfileuploadurlresponsetypedef).
 
+<a id="get_hit"></a>
+
 ### get_hit
 
 The `GetHIT` operation retrieves the details of the specified HIT.
@@ -515,6 +564,8 @@ Keyword-only arguments:
 - `HITId`: `str` *(required)*
 
 Returns [GetHITResponseTypeDef](./type_defs.md#gethitresponsetypedef).
+
+<a id="get_qualification_score"></a>
 
 ### get_qualification_score
 
@@ -537,6 +588,8 @@ Keyword-only arguments:
 Returns
 [GetQualificationScoreResponseTypeDef](./type_defs.md#getqualificationscoreresponsetypedef).
 
+<a id="get_qualification_type"></a>
+
 ### get_qualification_type
 
 The `GetQualificationType` operation retrieves information about a
@@ -556,6 +609,8 @@ Keyword-only arguments:
 
 Returns
 [GetQualificationTypeResponseTypeDef](./type_defs.md#getqualificationtyperesponsetypedef).
+
+<a id="list_assignments_for_hit"></a>
 
 ### list_assignments_for_hit
 
@@ -581,6 +636,8 @@ Keyword-only arguments:
 Returns
 [ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef).
 
+<a id="list_bonus_payments"></a>
+
 ### list_bonus_payments
 
 The `ListBonusPayments` operation retrieves the amounts of bonuses you have
@@ -604,6 +661,8 @@ Keyword-only arguments:
 Returns
 [ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef).
 
+<a id="list_hits"></a>
+
 ### list_hits
 
 The `ListHITs` operation returns all of a Requester's HITs.
@@ -622,6 +681,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef).
+
+<a id="list_hits_for_qualification_type"></a>
 
 ### list_hits_for_qualification_type
 
@@ -646,6 +707,8 @@ Keyword-only arguments:
 Returns
 [ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef).
 
+<a id="list_qualification_requests"></a>
+
 ### list_qualification_requests
 
 The `ListQualificationRequests` operation retrieves requests for Qualifications
@@ -668,6 +731,8 @@ Keyword-only arguments:
 
 Returns
 [ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef).
+
+<a id="list_qualification_types"></a>
 
 ### list_qualification_types
 
@@ -692,6 +757,8 @@ Keyword-only arguments:
 
 Returns
 [ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef).
+
+<a id="list_review_policy_results_for_hit"></a>
 
 ### list_review_policy_results_for_hit
 
@@ -721,6 +788,8 @@ Keyword-only arguments:
 Returns
 [ListReviewPolicyResultsForHITResponseTypeDef](./type_defs.md#listreviewpolicyresultsforhitresponsetypedef).
 
+<a id="list_reviewable_hits"></a>
+
 ### list_reviewable_hits
 
 The `ListReviewableHITs` operation retrieves the HITs with Status equal to
@@ -745,6 +814,8 @@ Keyword-only arguments:
 Returns
 [ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef).
 
+<a id="list_worker_blocks"></a>
+
 ### list_worker_blocks
 
 The `ListWorkersBlocks` operation retrieves a list of Workers who are blocked
@@ -765,6 +836,8 @@ Keyword-only arguments:
 
 Returns
 [ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef).
+
+<a id="list_workers_with_qualification_type"></a>
 
 ### list_workers_with_qualification_type
 
@@ -790,6 +863,8 @@ Keyword-only arguments:
 Returns
 [ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef).
 
+<a id="notify_workers"></a>
+
 ### notify_workers
 
 The `NotifyWorkers` operation sends an email to one or more Workers that you
@@ -812,6 +887,8 @@ Keyword-only arguments:
 Returns
 [NotifyWorkersResponseTypeDef](./type_defs.md#notifyworkersresponsetypedef).
 
+<a id="reject_assignment"></a>
+
 ### reject_assignment
 
 The `RejectAssignment` operation rejects the results of a completed assignment.
@@ -830,6 +907,8 @@ Keyword-only arguments:
 - `RequesterFeedback`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="reject_qualification_request"></a>
 
 ### reject_qualification_request
 
@@ -851,6 +930,8 @@ Keyword-only arguments:
 - `Reason`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="send_bonus"></a>
 
 ### send_bonus
 
@@ -874,6 +955,8 @@ Keyword-only arguments:
 - `UniqueRequestToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="send_test_event_notification"></a>
 
 ### send_test_event_notification
 
@@ -899,6 +982,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_expiration_for_hit"></a>
+
 ### update_expiration_for_hit
 
 The `UpdateExpirationForHIT` operation allows you update the expiration time of
@@ -919,6 +1004,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_hit_review_status"></a>
+
 ### update_hit_review_status
 
 The `UpdateHITReviewStatus` operation updates the status of a HIT.
@@ -937,6 +1024,8 @@ Keyword-only arguments:
 - `Revert`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_hit_type_of_hit"></a>
 
 ### update_hit_type_of_hit
 
@@ -957,6 +1046,8 @@ Keyword-only arguments:
 - `HITTypeId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_notification_settings"></a>
 
 ### update_notification_settings
 
@@ -980,6 +1071,8 @@ Keyword-only arguments:
 - `Active`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_qualification_type"></a>
 
 ### update_qualification_type
 
@@ -1009,6 +1102,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateQualificationTypeResponseTypeDef](./type_defs.md#updatequalificationtyperesponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

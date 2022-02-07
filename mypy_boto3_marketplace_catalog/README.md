@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-marketplacecatalog-module"></a>
+
 # Type annotations for boto3 MarketplaceCatalog module
 
 > [Index](..) > MarketplaceCatalog
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
 type annotations stubs module
-[mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
+[mypy-boto3-marketplace-catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[marketplace-catalog]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[marketplace-catalog]'
+
+# standalone installation
 pip install mypy-boto3-marketplace-catalog
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-marketplace-catalog
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="marketplacecatalogclient"></a>
 
 ## MarketplaceCatalogClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_marketplace_catalog.client import MarketplaceCatalogClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -40,6 +54,8 @@ from mypy_boto3_marketplace_catalog.client import MarketplaceCatalogClient
 - [list_change_sets](./client.md#list_change_sets)
 - [list_entities](./client.md#list_entities)
 - [start_change_set](./client.md#start_change_set)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -55,6 +71,8 @@ MarketplaceCatalogClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -69,6 +87,8 @@ from mypy_boto3_marketplace_catalog.literals import ChangeStatusType, ...
 - [FailureCodeType](./literals.md#failurecodetype)
 - [SortOrderType](./literals.md#sortordertype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-codedeploy-module"></a>
+
 # Type annotations for boto3 CodeDeploy module
 
 > [Index](..) > CodeDeploy
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
 type annotations stubs module
-[mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
+[mypy-boto3-codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[codedeploy]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[codedeploy]'
+
+# standalone installation
 pip install mypy-boto3-codedeploy
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-codedeploy
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="codedeployclient"></a>
+
 ## CodeDeployClient
 
 Type annotations for `boto3.client("codedeploy")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_codedeploy.client import CodeDeployClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -85,6 +99,8 @@ from mypy_boto3_codedeploy.client import CodeDeployClient
 - [untag_resource](./client.md#untag_resource)
 - [update_application](./client.md#update_application)
 - [update_deployment_group](./client.md#update_deployment_group)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -204,6 +220,8 @@ CodeDeployClient [exceptions](./client.md#exceptions)
 - TriggerTargetsLimitExceededException
 - UnsupportedActionForDeploymentTypeException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -212,7 +230,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.paginators import ListApplicationRevisionsPaginator, ...
+from mypy_boto3_codedeploy.paginator import ListApplicationRevisionsPaginator, ...
 ```
 
 - [ListApplicationRevisionsPaginator](./paginators.md#listapplicationrevisionspaginator)
@@ -225,6 +243,8 @@ from mypy_boto3_codedeploy.paginators import ListApplicationRevisionsPaginator, 
 - [ListGitHubAccountTokenNamesPaginator](./paginators.md#listgithubaccounttokennamespaginator)
 - [ListOnPremisesInstancesPaginator](./paginators.md#listonpremisesinstancespaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -233,10 +253,12 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.waiters import DeploymentSuccessfulWaiter, ...
+from mypy_boto3_codedeploy.waiter import DeploymentSuccessfulWaiter, ...
 ```
 
 - [DeploymentSuccessfulWaiter](./waiters.md#deploymentsuccessfulwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -294,6 +316,8 @@ from mypy_boto3_codedeploy.literals import ApplicationRevisionSortByType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

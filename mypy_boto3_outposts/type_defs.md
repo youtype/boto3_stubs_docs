@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-outposts-module"></a>
+
 # Typed dictionaries for boto3 Outposts module
 
 > [Index](..) > [Outposts](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
 type annotations stubs module
-[mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
+[mypy-boto3-outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 - [Typed dictionaries for boto3 Outposts module](#typed-dictionaries-for-boto3-outposts-module)
   - [AddressTypeDef](#addresstypedef)
@@ -62,6 +64,8 @@ type annotations stubs module
   - [UpdateSiteRackPhysicalPropertiesInputRequestTypeDef](#updatesiterackphysicalpropertiesinputrequesttypedef)
   - [UpdateSiteRackPhysicalPropertiesOutputTypeDef](#updatesiterackphysicalpropertiesoutputtypedef)
 
+<a id="addresstypedef"></a>
+
 ## AddressTypeDef
 
 ```python
@@ -85,6 +89,8 @@ Optional fields:
 - `DistrictOrCounty`: `str`
 - `Municipality`: `str`
 
+<a id="cancelorderinputrequesttypedef"></a>
+
 ## CancelOrderInputRequestTypeDef
 
 ```python
@@ -94,6 +100,8 @@ from mypy_boto3_outposts.type_defs import CancelOrderInputRequestTypeDef
 Required fields:
 
 - `OrderId`: `str`
+
+<a id="catalogitemtypedef"></a>
 
 ## CatalogItemTypeDef
 
@@ -113,6 +121,8 @@ Optional fields:
 - `SupportedStorage`:
   `List`\[[SupportedStorageEnumType](./literals.md#supportedstorageenumtype)\]
 
+<a id="createorderinputrequesttypedef"></a>
+
 ## CreateOrderInputRequestTypeDef
 
 ```python
@@ -131,6 +141,8 @@ Optional fields:
 - `PaymentTerm`: `Literal['THREE_YEARS']` (see
   [PaymentTermType](./literals.md#paymenttermtype))
 
+<a id="createorderoutputtypedef"></a>
+
 ## CreateOrderOutputTypeDef
 
 ```python
@@ -142,6 +154,8 @@ Required fields:
 - `Order`: [OrderTypeDef](./type_defs.md#ordertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createoutpostinputrequesttypedef"></a>
 
 ## CreateOutpostInputRequestTypeDef
 
@@ -163,6 +177,8 @@ Optional fields:
 - `SupportedHardwareType`:
   [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
 
+<a id="createoutpostoutputtypedef"></a>
+
 ## CreateOutpostOutputTypeDef
 
 ```python
@@ -174,6 +190,8 @@ Required fields:
 - `Outpost`: [OutpostTypeDef](./type_defs.md#outposttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsiteinputrequesttypedef"></a>
 
 ## CreateSiteInputRequestTypeDef
 
@@ -195,6 +213,8 @@ Optional fields:
 - `RackPhysicalProperties`:
   [RackPhysicalPropertiesTypeDef](./type_defs.md#rackphysicalpropertiestypedef)
 
+<a id="createsiteoutputtypedef"></a>
+
 ## CreateSiteOutputTypeDef
 
 ```python
@@ -207,6 +227,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteoutpostinputrequesttypedef"></a>
+
 ## DeleteOutpostInputRequestTypeDef
 
 ```python
@@ -217,6 +239,8 @@ Required fields:
 
 - `OutpostId`: `str`
 
+<a id="deletesiteinputrequesttypedef"></a>
+
 ## DeleteSiteInputRequestTypeDef
 
 ```python
@@ -226,6 +250,8 @@ from mypy_boto3_outposts.type_defs import DeleteSiteInputRequestTypeDef
 Required fields:
 
 - `SiteId`: `str`
+
+<a id="ec2capacitytypedef"></a>
 
 ## EC2CapacityTypeDef
 
@@ -239,6 +265,8 @@ Optional fields:
 - `MaxSize`: `str`
 - `Quantity`: `str`
 
+<a id="getcatalogiteminputrequesttypedef"></a>
+
 ## GetCatalogItemInputRequestTypeDef
 
 ```python
@@ -248,6 +276,8 @@ from mypy_boto3_outposts.type_defs import GetCatalogItemInputRequestTypeDef
 Required fields:
 
 - `CatalogItemId`: `str`
+
+<a id="getcatalogitemoutputtypedef"></a>
 
 ## GetCatalogItemOutputTypeDef
 
@@ -261,6 +291,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getorderinputrequesttypedef"></a>
+
 ## GetOrderInputRequestTypeDef
 
 ```python
@@ -270,6 +302,8 @@ from mypy_boto3_outposts.type_defs import GetOrderInputRequestTypeDef
 Required fields:
 
 - `OrderId`: `str`
+
+<a id="getorderoutputtypedef"></a>
 
 ## GetOrderOutputTypeDef
 
@@ -283,6 +317,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getoutpostinputrequesttypedef"></a>
+
 ## GetOutpostInputRequestTypeDef
 
 ```python
@@ -292,6 +328,8 @@ from mypy_boto3_outposts.type_defs import GetOutpostInputRequestTypeDef
 Required fields:
 
 - `OutpostId`: `str`
+
+<a id="getoutpostinstancetypesinputrequesttypedef"></a>
 
 ## GetOutpostInstanceTypesInputRequestTypeDef
 
@@ -307,6 +345,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="getoutpostinstancetypesoutputtypedef"></a>
 
 ## GetOutpostInstanceTypesOutputTypeDef
 
@@ -324,6 +364,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getoutpostoutputtypedef"></a>
+
 ## GetOutpostOutputTypeDef
 
 ```python
@@ -336,6 +378,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsiteaddressinputrequesttypedef"></a>
+
 ## GetSiteAddressInputRequestTypeDef
 
 ```python
@@ -346,6 +390,8 @@ Required fields:
 
 - `SiteId`: `str`
 - `AddressType`: [AddressTypeType](./literals.md#addresstypetype)
+
+<a id="getsiteaddressoutputtypedef"></a>
 
 ## GetSiteAddressOutputTypeDef
 
@@ -361,6 +407,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsiteinputrequesttypedef"></a>
+
 ## GetSiteInputRequestTypeDef
 
 ```python
@@ -370,6 +418,8 @@ from mypy_boto3_outposts.type_defs import GetSiteInputRequestTypeDef
 Required fields:
 
 - `SiteId`: `str`
+
+<a id="getsiteoutputtypedef"></a>
 
 ## GetSiteOutputTypeDef
 
@@ -383,6 +433,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="instancetypeitemtypedef"></a>
+
 ## InstanceTypeItemTypeDef
 
 ```python
@@ -392,6 +444,8 @@ from mypy_boto3_outposts.type_defs import InstanceTypeItemTypeDef
 Optional fields:
 
 - `InstanceType`: `str`
+
+<a id="lineitemrequesttypedef"></a>
 
 ## LineItemRequestTypeDef
 
@@ -403,6 +457,8 @@ Optional fields:
 
 - `CatalogItemId`: `str`
 - `Quantity`: `int`
+
+<a id="lineitemtypedef"></a>
 
 ## LineItemTypeDef
 
@@ -416,6 +472,8 @@ Optional fields:
 - `LineItemId`: `str`
 - `Quantity`: `int`
 - `Status`: [LineItemStatusType](./literals.md#lineitemstatustype)
+
+<a id="listcatalogitemsinputrequesttypedef"></a>
 
 ## ListCatalogItemsInputRequestTypeDef
 
@@ -433,6 +491,8 @@ Optional fields:
   `Sequence`\[[SupportedStorageEnumType](./literals.md#supportedstorageenumtype)\]
 - `EC2FamilyFilter`: `Sequence`\[`str`\]
 
+<a id="listcatalogitemsoutputtypedef"></a>
+
 ## ListCatalogItemsOutputTypeDef
 
 ```python
@@ -447,6 +507,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listordersinputrequesttypedef"></a>
+
 ## ListOrdersInputRequestTypeDef
 
 ```python
@@ -458,6 +520,8 @@ Optional fields:
 - `OutpostIdentifierFilter`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listordersoutputtypedef"></a>
 
 ## ListOrdersOutputTypeDef
 
@@ -471,6 +535,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listoutpostsinputrequesttypedef"></a>
 
 ## ListOutpostsInputRequestTypeDef
 
@@ -486,6 +552,8 @@ Optional fields:
 - `AvailabilityZoneFilter`: `Sequence`\[`str`\]
 - `AvailabilityZoneIdFilter`: `Sequence`\[`str`\]
 
+<a id="listoutpostsoutputtypedef"></a>
+
 ## ListOutpostsOutputTypeDef
 
 ```python
@@ -499,6 +567,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsitesinputrequesttypedef"></a>
+
 ## ListSitesInputRequestTypeDef
 
 ```python
@@ -509,6 +579,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listsitesoutputtypedef"></a>
 
 ## ListSitesOutputTypeDef
 
@@ -523,6 +595,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -532,6 +606,8 @@ from mypy_boto3_outposts.type_defs import ListTagsForResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -544,6 +620,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="ordersummarytypedef"></a>
 
 ## OrderSummaryTypeDef
 
@@ -562,6 +640,8 @@ Optional fields:
 - `OrderSubmissionDate`: `datetime`
 - `OrderFulfilledDate`: `datetime`
 
+<a id="ordertypedef"></a>
+
 ## OrderTypeDef
 
 ```python
@@ -577,6 +657,8 @@ Optional fields:
 - `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
 - `OrderSubmissionDate`: `datetime`
 - `OrderFulfilledDate`: `datetime`
+
+<a id="outposttypedef"></a>
 
 ## OutpostTypeDef
 
@@ -600,6 +682,8 @@ Optional fields:
 - `SupportedHardwareType`:
   [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
 
+<a id="rackphysicalpropertiestypedef"></a>
+
 ## RackPhysicalPropertiesTypeDef
 
 ```python
@@ -620,6 +704,8 @@ Optional fields:
 - `MaximumSupportedWeightLbs`:
   [MaximumSupportedWeightLbsType](./literals.md#maximumsupportedweightlbstype)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -633,6 +719,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="sitetypedef"></a>
 
 ## SiteTypeDef
 
@@ -655,6 +743,8 @@ Optional fields:
 - `RackPhysicalProperties`:
   [RackPhysicalPropertiesTypeDef](./type_defs.md#rackphysicalpropertiestypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -666,6 +756,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -676,6 +768,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateoutpostinputrequesttypedef"></a>
 
 ## UpdateOutpostInputRequestTypeDef
 
@@ -694,6 +788,8 @@ Optional fields:
 - `SupportedHardwareType`:
   [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
 
+<a id="updateoutpostoutputtypedef"></a>
+
 ## UpdateOutpostOutputTypeDef
 
 ```python
@@ -705,6 +801,8 @@ Required fields:
 - `Outpost`: [OutpostTypeDef](./type_defs.md#outposttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesiteaddressinputrequesttypedef"></a>
 
 ## UpdateSiteAddressInputRequestTypeDef
 
@@ -718,6 +816,8 @@ Required fields:
 - `AddressType`: [AddressTypeType](./literals.md#addresstypetype)
 - `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
 
+<a id="updatesiteaddressoutputtypedef"></a>
+
 ## UpdateSiteAddressOutputTypeDef
 
 ```python
@@ -730,6 +830,8 @@ Required fields:
 - `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesiteinputrequesttypedef"></a>
 
 ## UpdateSiteInputRequestTypeDef
 
@@ -747,6 +849,8 @@ Optional fields:
 - `Description`: `str`
 - `Notes`: `str`
 
+<a id="updatesiteoutputtypedef"></a>
+
 ## UpdateSiteOutputTypeDef
 
 ```python
@@ -758,6 +862,8 @@ Required fields:
 - `Site`: [SiteTypeDef](./type_defs.md#sitetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesiterackphysicalpropertiesinputrequesttypedef"></a>
 
 ## UpdateSiteRackPhysicalPropertiesInputRequestTypeDef
 
@@ -782,6 +888,8 @@ Optional fields:
 - `OpticalStandard`: [OpticalStandardType](./literals.md#opticalstandardtype)
 - `MaximumSupportedWeightLbs`:
   [MaximumSupportedWeightLbsType](./literals.md#maximumsupportedweightlbstype)
+
+<a id="updatesiterackphysicalpropertiesoutputtypedef"></a>
 
 ## UpdateSiteRackPhysicalPropertiesOutputTypeDef
 

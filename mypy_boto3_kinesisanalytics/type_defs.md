@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-kinesisanalytics-module"></a>
+
 # Typed dictionaries for boto3 KinesisAnalytics module
 
 > [Index](..) > [KinesisAnalytics](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
 type annotations stubs module
-[mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
+[mypy-boto3-kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
 - [Typed dictionaries for boto3 KinesisAnalytics module](#typed-dictionaries-for-boto3-kinesisanalytics-module)
   - [AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef](#addapplicationcloudwatchloggingoptionrequestrequesttypedef)
@@ -88,6 +90,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
 
+<a id="addapplicationcloudwatchloggingoptionrequestrequesttypedef"></a>
+
 ## AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef
 
 ```python
@@ -100,6 +104,8 @@ Required fields:
 - `CurrentApplicationVersionId`: `int`
 - `CloudWatchLoggingOption`:
   [CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)
+
+<a id="addapplicationinputprocessingconfigurationrequestrequesttypedef"></a>
 
 ## AddApplicationInputProcessingConfigurationRequestRequestTypeDef
 
@@ -115,6 +121,8 @@ Required fields:
 - `InputProcessingConfiguration`:
   [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
 
+<a id="addapplicationinputrequestrequesttypedef"></a>
+
 ## AddApplicationInputRequestRequestTypeDef
 
 ```python
@@ -126,6 +134,8 @@ Required fields:
 - `ApplicationName`: `str`
 - `CurrentApplicationVersionId`: `int`
 - `Input`: [InputTypeDef](./type_defs.md#inputtypedef)
+
+<a id="addapplicationoutputrequestrequesttypedef"></a>
 
 ## AddApplicationOutputRequestRequestTypeDef
 
@@ -139,6 +149,8 @@ Required fields:
 - `CurrentApplicationVersionId`: `int`
 - `Output`: [OutputTypeDef](./type_defs.md#outputtypedef)
 
+<a id="addapplicationreferencedatasourcerequestrequesttypedef"></a>
+
 ## AddApplicationReferenceDataSourceRequestRequestTypeDef
 
 ```python
@@ -151,6 +163,8 @@ Required fields:
 - `CurrentApplicationVersionId`: `int`
 - `ReferenceDataSource`:
   [ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef)
+
+<a id="applicationdetailtypedef"></a>
 
 ## ApplicationDetailTypeDef
 
@@ -181,6 +195,8 @@ Optional fields:
   `List`\[[CloudWatchLoggingOptionDescriptionTypeDef](./type_defs.md#cloudwatchloggingoptiondescriptiontypedef)\]
 - `ApplicationCode`: `str`
 
+<a id="applicationsummarytypedef"></a>
+
 ## ApplicationSummaryTypeDef
 
 ```python
@@ -193,6 +209,8 @@ Required fields:
 - `ApplicationARN`: `str`
 - `ApplicationStatus`:
   [ApplicationStatusType](./literals.md#applicationstatustype)
+
+<a id="applicationupdatetypedef"></a>
 
 ## ApplicationUpdateTypeDef
 
@@ -212,6 +230,8 @@ Optional fields:
 - `CloudWatchLoggingOptionUpdates`:
   `Sequence`\[[CloudWatchLoggingOptionUpdateTypeDef](./type_defs.md#cloudwatchloggingoptionupdatetypedef)\]
 
+<a id="csvmappingparameterstypedef"></a>
+
 ## CSVMappingParametersTypeDef
 
 ```python
@@ -222,6 +242,8 @@ Required fields:
 
 - `RecordRowDelimiter`: `str`
 - `RecordColumnDelimiter`: `str`
+
+<a id="cloudwatchloggingoptiondescriptiontypedef"></a>
 
 ## CloudWatchLoggingOptionDescriptionTypeDef
 
@@ -238,6 +260,8 @@ Optional fields:
 
 - `CloudWatchLoggingOptionId`: `str`
 
+<a id="cloudwatchloggingoptiontypedef"></a>
+
 ## CloudWatchLoggingOptionTypeDef
 
 ```python
@@ -248,6 +272,8 @@ Required fields:
 
 - `LogStreamARN`: `str`
 - `RoleARN`: `str`
+
+<a id="cloudwatchloggingoptionupdatetypedef"></a>
 
 ## CloudWatchLoggingOptionUpdateTypeDef
 
@@ -263,6 +289,8 @@ Optional fields:
 
 - `LogStreamARNUpdate`: `str`
 - `RoleARNUpdate`: `str`
+
+<a id="createapplicationrequestrequesttypedef"></a>
 
 ## CreateApplicationRequestRequestTypeDef
 
@@ -284,6 +312,8 @@ Optional fields:
 - `ApplicationCode`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createapplicationresponsetypedef"></a>
+
 ## CreateApplicationResponseTypeDef
 
 ```python
@@ -297,6 +327,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapplicationcloudwatchloggingoptionrequestrequesttypedef"></a>
+
 ## DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef
 
 ```python
@@ -308,6 +340,8 @@ Required fields:
 - `ApplicationName`: `str`
 - `CurrentApplicationVersionId`: `int`
 - `CloudWatchLoggingOptionId`: `str`
+
+<a id="deleteapplicationinputprocessingconfigurationrequestrequesttypedef"></a>
 
 ## DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef
 
@@ -321,6 +355,8 @@ Required fields:
 - `CurrentApplicationVersionId`: `int`
 - `InputId`: `str`
 
+<a id="deleteapplicationoutputrequestrequesttypedef"></a>
+
 ## DeleteApplicationOutputRequestRequestTypeDef
 
 ```python
@@ -332,6 +368,8 @@ Required fields:
 - `ApplicationName`: `str`
 - `CurrentApplicationVersionId`: `int`
 - `OutputId`: `str`
+
+<a id="deleteapplicationreferencedatasourcerequestrequesttypedef"></a>
 
 ## DeleteApplicationReferenceDataSourceRequestRequestTypeDef
 
@@ -345,6 +383,8 @@ Required fields:
 - `CurrentApplicationVersionId`: `int`
 - `ReferenceId`: `str`
 
+<a id="deleteapplicationrequestrequesttypedef"></a>
+
 ## DeleteApplicationRequestRequestTypeDef
 
 ```python
@@ -356,6 +396,8 @@ Required fields:
 - `ApplicationName`: `str`
 - `CreateTimestamp`: `Union`\[`datetime`, `str`\]
 
+<a id="describeapplicationrequestrequesttypedef"></a>
+
 ## DescribeApplicationRequestRequestTypeDef
 
 ```python
@@ -365,6 +407,8 @@ from mypy_boto3_kinesisanalytics.type_defs import DescribeApplicationRequestRequ
 Required fields:
 
 - `ApplicationName`: `str`
+
+<a id="describeapplicationresponsetypedef"></a>
 
 ## DescribeApplicationResponseTypeDef
 
@@ -379,6 +423,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="destinationschematypedef"></a>
+
 ## DestinationSchemaTypeDef
 
 ```python
@@ -389,6 +435,8 @@ Required fields:
 
 - `RecordFormatType`:
   [RecordFormatTypeType](./literals.md#recordformattypetype)
+
+<a id="discoverinputschemarequestrequesttypedef"></a>
 
 ## DiscoverInputSchemaRequestRequestTypeDef
 
@@ -407,6 +455,8 @@ Optional fields:
 - `InputProcessingConfiguration`:
   [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
 
+<a id="discoverinputschemaresponsetypedef"></a>
+
 ## DiscoverInputSchemaResponseTypeDef
 
 ```python
@@ -422,6 +472,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="inputconfigurationtypedef"></a>
+
 ## InputConfigurationTypeDef
 
 ```python
@@ -433,6 +485,8 @@ Required fields:
 - `Id`: `str`
 - `InputStartingPositionConfiguration`:
   [InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef)
+
+<a id="inputdescriptiontypedef"></a>
 
 ## InputDescriptionTypeDef
 
@@ -457,6 +511,8 @@ Optional fields:
 - `InputStartingPositionConfiguration`:
   [InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef)
 
+<a id="inputlambdaprocessordescriptiontypedef"></a>
+
 ## InputLambdaProcessorDescriptionTypeDef
 
 ```python
@@ -467,6 +523,8 @@ Optional fields:
 
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
+
+<a id="inputlambdaprocessortypedef"></a>
 
 ## InputLambdaProcessorTypeDef
 
@@ -479,6 +537,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
 
+<a id="inputlambdaprocessorupdatetypedef"></a>
+
 ## InputLambdaProcessorUpdateTypeDef
 
 ```python
@@ -490,6 +550,8 @@ Optional fields:
 - `ResourceARNUpdate`: `str`
 - `RoleARNUpdate`: `str`
 
+<a id="inputparallelismtypedef"></a>
+
 ## InputParallelismTypeDef
 
 ```python
@@ -500,6 +562,8 @@ Optional fields:
 
 - `Count`: `int`
 
+<a id="inputparallelismupdatetypedef"></a>
+
 ## InputParallelismUpdateTypeDef
 
 ```python
@@ -509,6 +573,8 @@ from mypy_boto3_kinesisanalytics.type_defs import InputParallelismUpdateTypeDef
 Optional fields:
 
 - `CountUpdate`: `int`
+
+<a id="inputprocessingconfigurationdescriptiontypedef"></a>
 
 ## InputProcessingConfigurationDescriptionTypeDef
 
@@ -521,6 +587,8 @@ Optional fields:
 - `InputLambdaProcessorDescription`:
   [InputLambdaProcessorDescriptionTypeDef](./type_defs.md#inputlambdaprocessordescriptiontypedef)
 
+<a id="inputprocessingconfigurationtypedef"></a>
+
 ## InputProcessingConfigurationTypeDef
 
 ```python
@@ -532,6 +600,8 @@ Required fields:
 - `InputLambdaProcessor`:
   [InputLambdaProcessorTypeDef](./type_defs.md#inputlambdaprocessortypedef)
 
+<a id="inputprocessingconfigurationupdatetypedef"></a>
+
 ## InputProcessingConfigurationUpdateTypeDef
 
 ```python
@@ -542,6 +612,8 @@ Required fields:
 
 - `InputLambdaProcessorUpdate`:
   [InputLambdaProcessorUpdateTypeDef](./type_defs.md#inputlambdaprocessorupdatetypedef)
+
+<a id="inputschemaupdatetypedef"></a>
 
 ## InputSchemaUpdateTypeDef
 
@@ -557,6 +629,8 @@ Optional fields:
 - `RecordColumnUpdates`:
   `Sequence`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
 
+<a id="inputstartingpositionconfigurationtypedef"></a>
+
 ## InputStartingPositionConfigurationTypeDef
 
 ```python
@@ -567,6 +641,8 @@ Optional fields:
 
 - `InputStartingPosition`:
   [InputStartingPositionType](./literals.md#inputstartingpositiontype)
+
+<a id="inputtypedef"></a>
 
 ## InputTypeDef
 
@@ -589,6 +665,8 @@ Optional fields:
   [KinesisFirehoseInputTypeDef](./type_defs.md#kinesisfirehoseinputtypedef)
 - `InputParallelism`:
   [InputParallelismTypeDef](./type_defs.md#inputparallelismtypedef)
+
+<a id="inputupdatetypedef"></a>
 
 ## InputUpdateTypeDef
 
@@ -614,6 +692,8 @@ Optional fields:
 - `InputParallelismUpdate`:
   [InputParallelismUpdateTypeDef](./type_defs.md#inputparallelismupdatetypedef)
 
+<a id="jsonmappingparameterstypedef"></a>
+
 ## JSONMappingParametersTypeDef
 
 ```python
@@ -623,6 +703,8 @@ from mypy_boto3_kinesisanalytics.type_defs import JSONMappingParametersTypeDef
 Required fields:
 
 - `RecordRowPath`: `str`
+
+<a id="kinesisfirehoseinputdescriptiontypedef"></a>
 
 ## KinesisFirehoseInputDescriptionTypeDef
 
@@ -635,6 +717,8 @@ Optional fields:
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
 
+<a id="kinesisfirehoseinputtypedef"></a>
+
 ## KinesisFirehoseInputTypeDef
 
 ```python
@@ -645,6 +729,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
+
+<a id="kinesisfirehoseinputupdatetypedef"></a>
 
 ## KinesisFirehoseInputUpdateTypeDef
 
@@ -657,6 +743,8 @@ Optional fields:
 - `ResourceARNUpdate`: `str`
 - `RoleARNUpdate`: `str`
 
+<a id="kinesisfirehoseoutputdescriptiontypedef"></a>
+
 ## KinesisFirehoseOutputDescriptionTypeDef
 
 ```python
@@ -667,6 +755,8 @@ Optional fields:
 
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
+
+<a id="kinesisfirehoseoutputtypedef"></a>
 
 ## KinesisFirehoseOutputTypeDef
 
@@ -679,6 +769,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
 
+<a id="kinesisfirehoseoutputupdatetypedef"></a>
+
 ## KinesisFirehoseOutputUpdateTypeDef
 
 ```python
@@ -689,6 +781,8 @@ Optional fields:
 
 - `ResourceARNUpdate`: `str`
 - `RoleARNUpdate`: `str`
+
+<a id="kinesisstreamsinputdescriptiontypedef"></a>
 
 ## KinesisStreamsInputDescriptionTypeDef
 
@@ -701,6 +795,8 @@ Optional fields:
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
 
+<a id="kinesisstreamsinputtypedef"></a>
+
 ## KinesisStreamsInputTypeDef
 
 ```python
@@ -711,6 +807,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
+
+<a id="kinesisstreamsinputupdatetypedef"></a>
 
 ## KinesisStreamsInputUpdateTypeDef
 
@@ -723,6 +821,8 @@ Optional fields:
 - `ResourceARNUpdate`: `str`
 - `RoleARNUpdate`: `str`
 
+<a id="kinesisstreamsoutputdescriptiontypedef"></a>
+
 ## KinesisStreamsOutputDescriptionTypeDef
 
 ```python
@@ -733,6 +833,8 @@ Optional fields:
 
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
+
+<a id="kinesisstreamsoutputtypedef"></a>
 
 ## KinesisStreamsOutputTypeDef
 
@@ -745,6 +847,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
 
+<a id="kinesisstreamsoutputupdatetypedef"></a>
+
 ## KinesisStreamsOutputUpdateTypeDef
 
 ```python
@@ -755,6 +859,8 @@ Optional fields:
 
 - `ResourceARNUpdate`: `str`
 - `RoleARNUpdate`: `str`
+
+<a id="lambdaoutputdescriptiontypedef"></a>
 
 ## LambdaOutputDescriptionTypeDef
 
@@ -767,6 +873,8 @@ Optional fields:
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
 
+<a id="lambdaoutputtypedef"></a>
+
 ## LambdaOutputTypeDef
 
 ```python
@@ -777,6 +885,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
+
+<a id="lambdaoutputupdatetypedef"></a>
 
 ## LambdaOutputUpdateTypeDef
 
@@ -789,6 +899,8 @@ Optional fields:
 - `ResourceARNUpdate`: `str`
 - `RoleARNUpdate`: `str`
 
+<a id="listapplicationsrequestrequesttypedef"></a>
+
 ## ListApplicationsRequestRequestTypeDef
 
 ```python
@@ -799,6 +911,8 @@ Optional fields:
 
 - `Limit`: `int`
 - `ExclusiveStartApplicationName`: `str`
+
+<a id="listapplicationsresponsetypedef"></a>
 
 ## ListApplicationsResponseTypeDef
 
@@ -814,6 +928,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -823,6 +939,8 @@ from mypy_boto3_kinesisanalytics.type_defs import ListTagsForResourceRequestRequ
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -836,6 +954,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="mappingparameterstypedef"></a>
+
 ## MappingParametersTypeDef
 
 ```python
@@ -848,6 +968,8 @@ Optional fields:
   [JSONMappingParametersTypeDef](./type_defs.md#jsonmappingparameterstypedef)
 - `CSVMappingParameters`:
   [CSVMappingParametersTypeDef](./type_defs.md#csvmappingparameterstypedef)
+
+<a id="outputdescriptiontypedef"></a>
 
 ## OutputDescriptionTypeDef
 
@@ -868,6 +990,8 @@ Optional fields:
 - `DestinationSchema`:
   [DestinationSchemaTypeDef](./type_defs.md#destinationschematypedef)
 
+<a id="outputtypedef"></a>
+
 ## OutputTypeDef
 
 ```python
@@ -887,6 +1011,8 @@ Optional fields:
 - `KinesisFirehoseOutput`:
   [KinesisFirehoseOutputTypeDef](./type_defs.md#kinesisfirehoseoutputtypedef)
 - `LambdaOutput`: [LambdaOutputTypeDef](./type_defs.md#lambdaoutputtypedef)
+
+<a id="outputupdatetypedef"></a>
 
 ## OutputUpdateTypeDef
 
@@ -910,6 +1036,8 @@ Optional fields:
 - `DestinationSchemaUpdate`:
   [DestinationSchemaTypeDef](./type_defs.md#destinationschematypedef)
 
+<a id="recordcolumntypedef"></a>
+
 ## RecordColumnTypeDef
 
 ```python
@@ -924,6 +1052,8 @@ Required fields:
 Optional fields:
 
 - `Mapping`: `str`
+
+<a id="recordformattypedef"></a>
 
 ## RecordFormatTypeDef
 
@@ -940,6 +1070,8 @@ Optional fields:
 
 - `MappingParameters`:
   [MappingParametersTypeDef](./type_defs.md#mappingparameterstypedef)
+
+<a id="referencedatasourcedescriptiontypedef"></a>
 
 ## ReferenceDataSourceDescriptionTypeDef
 
@@ -958,6 +1090,8 @@ Optional fields:
 
 - `ReferenceSchema`: [SourceSchemaTypeDef](./type_defs.md#sourceschematypedef)
 
+<a id="referencedatasourcetypedef"></a>
+
 ## ReferenceDataSourceTypeDef
 
 ```python
@@ -973,6 +1107,8 @@ Optional fields:
 
 - `S3ReferenceDataSource`:
   [S3ReferenceDataSourceTypeDef](./type_defs.md#s3referencedatasourcetypedef)
+
+<a id="referencedatasourceupdatetypedef"></a>
 
 ## ReferenceDataSourceUpdateTypeDef
 
@@ -992,6 +1128,8 @@ Optional fields:
 - `ReferenceSchemaUpdate`:
   [SourceSchemaTypeDef](./type_defs.md#sourceschematypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1006,6 +1144,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3configurationtypedef"></a>
+
 ## S3ConfigurationTypeDef
 
 ```python
@@ -1017,6 +1157,8 @@ Required fields:
 - `RoleARN`: `str`
 - `BucketARN`: `str`
 - `FileKey`: `str`
+
+<a id="s3referencedatasourcedescriptiontypedef"></a>
 
 ## S3ReferenceDataSourceDescriptionTypeDef
 
@@ -1030,6 +1172,8 @@ Required fields:
 - `FileKey`: `str`
 - `ReferenceRoleARN`: `str`
 
+<a id="s3referencedatasourcetypedef"></a>
+
 ## S3ReferenceDataSourceTypeDef
 
 ```python
@@ -1042,6 +1186,8 @@ Required fields:
 - `FileKey`: `str`
 - `ReferenceRoleARN`: `str`
 
+<a id="s3referencedatasourceupdatetypedef"></a>
+
 ## S3ReferenceDataSourceUpdateTypeDef
 
 ```python
@@ -1053,6 +1199,8 @@ Optional fields:
 - `BucketARNUpdate`: `str`
 - `FileKeyUpdate`: `str`
 - `ReferenceRoleARNUpdate`: `str`
+
+<a id="sourceschematypedef"></a>
 
 ## SourceSchemaTypeDef
 
@@ -1070,6 +1218,8 @@ Optional fields:
 
 - `RecordEncoding`: `str`
 
+<a id="startapplicationrequestrequesttypedef"></a>
+
 ## StartApplicationRequestRequestTypeDef
 
 ```python
@@ -1082,6 +1232,8 @@ Required fields:
 - `InputConfigurations`:
   `Sequence`\[[InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)\]
 
+<a id="stopapplicationrequestrequesttypedef"></a>
+
 ## StopApplicationRequestRequestTypeDef
 
 ```python
@@ -1091,6 +1243,8 @@ from mypy_boto3_kinesisanalytics.type_defs import StopApplicationRequestRequestT
 Required fields:
 
 - `ApplicationName`: `str`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1102,6 +1256,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1117,6 +1273,8 @@ Optional fields:
 
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1127,6 +1285,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapplicationrequestrequesttypedef"></a>
 
 ## UpdateApplicationRequestRequestTypeDef
 

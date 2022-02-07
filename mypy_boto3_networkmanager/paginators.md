@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-networkmanager-module"></a>
+
 # Paginators for boto3 NetworkManager module
 
 > [Index](..) > [NetworkManager](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
 type annotations stubs module
-[mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
+[mypy-boto3-networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 - [Paginators for boto3 NetworkManager module](#paginators-for-boto3-networkmanager-module)
   - [DescribeGlobalNetworksPaginator](#describeglobalnetworkspaginator)
@@ -28,6 +30,8 @@ type annotations stubs module
   - [ListCoreNetworkPolicyVersionsPaginator](#listcorenetworkpolicyversionspaginator)
   - [ListCoreNetworksPaginator](#listcorenetworkspaginator)
 
+<a id="describeglobalnetworkspaginator"></a>
+
 ## DescribeGlobalNetworksPaginator
 
 Type annotations for
@@ -36,10 +40,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import DescribeGlobalNetworksPaginator
 
 def get_describe_global_networks_paginator() -> DescribeGlobalNetworksPaginator:
-    return boto3.client("networkmanager").get_paginator("describe_global_networks")
+    return Session().client("networkmanager").get_paginator("describe_global_networks")
 ```
 
 Boto3 documentation:
@@ -54,6 +60,8 @@ Arguments for `DescribeGlobalNetworksPaginator.paginate` method:
 `DescribeGlobalNetworksPaginator.paginate` returns
 `_PageIterator`\[[DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef)\].
 
+<a id="getconnectpeerassociationspaginator"></a>
+
 ## GetConnectPeerAssociationsPaginator
 
 Type annotations for
@@ -62,10 +70,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetConnectPeerAssociationsPaginator
 
 def get_get_connect_peer_associations_paginator() -> GetConnectPeerAssociationsPaginator:
-    return boto3.client("networkmanager").get_paginator("get_connect_peer_associations")
+    return Session().client("networkmanager").get_paginator("get_connect_peer_associations")
 ```
 
 Boto3 documentation:
@@ -81,6 +91,8 @@ Arguments for `GetConnectPeerAssociationsPaginator.paginate` method:
 `GetConnectPeerAssociationsPaginator.paginate` returns
 `_PageIterator`\[[GetConnectPeerAssociationsResponseTypeDef](./type_defs.md#getconnectpeerassociationsresponsetypedef)\].
 
+<a id="getconnectionspaginator"></a>
+
 ## GetConnectionsPaginator
 
 Type annotations for
@@ -89,10 +101,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetConnectionsPaginator
 
 def get_get_connections_paginator() -> GetConnectionsPaginator:
-    return boto3.client("networkmanager").get_paginator("get_connections")
+    return Session().client("networkmanager").get_paginator("get_connections")
 ```
 
 Boto3 documentation:
@@ -109,6 +123,8 @@ Arguments for `GetConnectionsPaginator.paginate` method:
 `GetConnectionsPaginator.paginate` returns
 `_PageIterator`\[[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)\].
 
+<a id="getcorenetworkchangesetpaginator"></a>
+
 ## GetCoreNetworkChangeSetPaginator
 
 Type annotations for
@@ -117,10 +133,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetCoreNetworkChangeSetPaginator
 
 def get_get_core_network_change_set_paginator() -> GetCoreNetworkChangeSetPaginator:
-    return boto3.client("networkmanager").get_paginator("get_core_network_change_set")
+    return Session().client("networkmanager").get_paginator("get_core_network_change_set")
 ```
 
 Boto3 documentation:
@@ -136,6 +154,8 @@ Arguments for `GetCoreNetworkChangeSetPaginator.paginate` method:
 `GetCoreNetworkChangeSetPaginator.paginate` returns
 `_PageIterator`\[[GetCoreNetworkChangeSetResponseTypeDef](./type_defs.md#getcorenetworkchangesetresponsetypedef)\].
 
+<a id="getcustomergatewayassociationspaginator"></a>
+
 ## GetCustomerGatewayAssociationsPaginator
 
 Type annotations for
@@ -144,10 +164,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetCustomerGatewayAssociationsPaginator
 
 def get_get_customer_gateway_associations_paginator() -> GetCustomerGatewayAssociationsPaginator:
-    return boto3.client("networkmanager").get_paginator("get_customer_gateway_associations")
+    return Session().client("networkmanager").get_paginator("get_customer_gateway_associations")
 ```
 
 Boto3 documentation:
@@ -163,6 +185,8 @@ Arguments for `GetCustomerGatewayAssociationsPaginator.paginate` method:
 `GetCustomerGatewayAssociationsPaginator.paginate` returns
 `_PageIterator`\[[GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef)\].
 
+<a id="getdevicespaginator"></a>
+
 ## GetDevicesPaginator
 
 Type annotations for
@@ -171,10 +195,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetDevicesPaginator
 
 def get_get_devices_paginator() -> GetDevicesPaginator:
-    return boto3.client("networkmanager").get_paginator("get_devices")
+    return Session().client("networkmanager").get_paginator("get_devices")
 ```
 
 Boto3 documentation:
@@ -191,6 +217,8 @@ Arguments for `GetDevicesPaginator.paginate` method:
 `GetDevicesPaginator.paginate` returns
 `_PageIterator`\[[GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef)\].
 
+<a id="getlinkassociationspaginator"></a>
+
 ## GetLinkAssociationsPaginator
 
 Type annotations for
@@ -199,10 +227,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetLinkAssociationsPaginator
 
 def get_get_link_associations_paginator() -> GetLinkAssociationsPaginator:
-    return boto3.client("networkmanager").get_paginator("get_link_associations")
+    return Session().client("networkmanager").get_paginator("get_link_associations")
 ```
 
 Boto3 documentation:
@@ -219,6 +249,8 @@ Arguments for `GetLinkAssociationsPaginator.paginate` method:
 `GetLinkAssociationsPaginator.paginate` returns
 `_PageIterator`\[[GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef)\].
 
+<a id="getlinkspaginator"></a>
+
 ## GetLinksPaginator
 
 Type annotations for
@@ -227,10 +259,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetLinksPaginator
 
 def get_get_links_paginator() -> GetLinksPaginator:
-    return boto3.client("networkmanager").get_paginator("get_links")
+    return Session().client("networkmanager").get_paginator("get_links")
 ```
 
 Boto3 documentation:
@@ -249,6 +283,8 @@ Arguments for `GetLinksPaginator.paginate` method:
 `GetLinksPaginator.paginate` returns
 `_PageIterator`\[[GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef)\].
 
+<a id="getnetworkresourcecountspaginator"></a>
+
 ## GetNetworkResourceCountsPaginator
 
 Type annotations for
@@ -257,10 +293,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetNetworkResourceCountsPaginator
 
 def get_get_network_resource_counts_paginator() -> GetNetworkResourceCountsPaginator:
-    return boto3.client("networkmanager").get_paginator("get_network_resource_counts")
+    return Session().client("networkmanager").get_paginator("get_network_resource_counts")
 ```
 
 Boto3 documentation:
@@ -276,6 +314,8 @@ Arguments for `GetNetworkResourceCountsPaginator.paginate` method:
 `GetNetworkResourceCountsPaginator.paginate` returns
 `_PageIterator`\[[GetNetworkResourceCountsResponseTypeDef](./type_defs.md#getnetworkresourcecountsresponsetypedef)\].
 
+<a id="getnetworkresourcerelationshipspaginator"></a>
+
 ## GetNetworkResourceRelationshipsPaginator
 
 Type annotations for
@@ -284,10 +324,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetNetworkResourceRelationshipsPaginator
 
 def get_get_network_resource_relationships_paginator() -> GetNetworkResourceRelationshipsPaginator:
-    return boto3.client("networkmanager").get_paginator("get_network_resource_relationships")
+    return Session().client("networkmanager").get_paginator("get_network_resource_relationships")
 ```
 
 Boto3 documentation:
@@ -308,6 +350,8 @@ Arguments for `GetNetworkResourceRelationshipsPaginator.paginate` method:
 `GetNetworkResourceRelationshipsPaginator.paginate` returns
 `_PageIterator`\[[GetNetworkResourceRelationshipsResponseTypeDef](./type_defs.md#getnetworkresourcerelationshipsresponsetypedef)\].
 
+<a id="getnetworkresourcespaginator"></a>
+
 ## GetNetworkResourcesPaginator
 
 Type annotations for
@@ -316,10 +360,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetNetworkResourcesPaginator
 
 def get_get_network_resources_paginator() -> GetNetworkResourcesPaginator:
-    return boto3.client("networkmanager").get_paginator("get_network_resources")
+    return Session().client("networkmanager").get_paginator("get_network_resources")
 ```
 
 Boto3 documentation:
@@ -340,6 +386,8 @@ Arguments for `GetNetworkResourcesPaginator.paginate` method:
 `GetNetworkResourcesPaginator.paginate` returns
 `_PageIterator`\[[GetNetworkResourcesResponseTypeDef](./type_defs.md#getnetworkresourcesresponsetypedef)\].
 
+<a id="getnetworktelemetrypaginator"></a>
+
 ## GetNetworkTelemetryPaginator
 
 Type annotations for
@@ -348,10 +396,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetNetworkTelemetryPaginator
 
 def get_get_network_telemetry_paginator() -> GetNetworkTelemetryPaginator:
-    return boto3.client("networkmanager").get_paginator("get_network_telemetry")
+    return Session().client("networkmanager").get_paginator("get_network_telemetry")
 ```
 
 Boto3 documentation:
@@ -372,6 +422,8 @@ Arguments for `GetNetworkTelemetryPaginator.paginate` method:
 `GetNetworkTelemetryPaginator.paginate` returns
 `_PageIterator`\[[GetNetworkTelemetryResponseTypeDef](./type_defs.md#getnetworktelemetryresponsetypedef)\].
 
+<a id="getsitespaginator"></a>
+
 ## GetSitesPaginator
 
 Type annotations for
@@ -380,10 +432,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetSitesPaginator
 
 def get_get_sites_paginator() -> GetSitesPaginator:
-    return boto3.client("networkmanager").get_paginator("get_sites")
+    return Session().client("networkmanager").get_paginator("get_sites")
 ```
 
 Boto3 documentation:
@@ -399,6 +453,8 @@ Arguments for `GetSitesPaginator.paginate` method:
 `GetSitesPaginator.paginate` returns
 `_PageIterator`\[[GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef)\].
 
+<a id="gettransitgatewayconnectpeerassociationspaginator"></a>
+
 ## GetTransitGatewayConnectPeerAssociationsPaginator
 
 Type annotations for
@@ -407,10 +463,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetTransitGatewayConnectPeerAssociationsPaginator
 
 def get_get_transit_gateway_connect_peer_associations_paginator() -> GetTransitGatewayConnectPeerAssociationsPaginator:
-    return boto3.client("networkmanager").get_paginator("get_transit_gateway_connect_peer_associations")
+    return Session().client("networkmanager").get_paginator("get_transit_gateway_connect_peer_associations")
 ```
 
 Boto3 documentation:
@@ -427,6 +485,8 @@ method:
 `GetTransitGatewayConnectPeerAssociationsPaginator.paginate` returns
 `_PageIterator`\[[GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef)\].
 
+<a id="gettransitgatewayregistrationspaginator"></a>
+
 ## GetTransitGatewayRegistrationsPaginator
 
 Type annotations for
@@ -435,10 +495,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import GetTransitGatewayRegistrationsPaginator
 
 def get_get_transit_gateway_registrations_paginator() -> GetTransitGatewayRegistrationsPaginator:
-    return boto3.client("networkmanager").get_paginator("get_transit_gateway_registrations")
+    return Session().client("networkmanager").get_paginator("get_transit_gateway_registrations")
 ```
 
 Boto3 documentation:
@@ -454,6 +516,8 @@ Arguments for `GetTransitGatewayRegistrationsPaginator.paginate` method:
 `GetTransitGatewayRegistrationsPaginator.paginate` returns
 `_PageIterator`\[[GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef)\].
 
+<a id="listattachmentspaginator"></a>
+
 ## ListAttachmentsPaginator
 
 Type annotations for
@@ -462,10 +526,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import ListAttachmentsPaginator
 
 def get_list_attachments_paginator() -> ListAttachmentsPaginator:
-    return boto3.client("networkmanager").get_paginator("list_attachments")
+    return Session().client("networkmanager").get_paginator("list_attachments")
 ```
 
 Boto3 documentation:
@@ -483,6 +549,8 @@ Arguments for `ListAttachmentsPaginator.paginate` method:
 `ListAttachmentsPaginator.paginate` returns
 `_PageIterator`\[[ListAttachmentsResponseTypeDef](./type_defs.md#listattachmentsresponsetypedef)\].
 
+<a id="listconnectpeerspaginator"></a>
+
 ## ListConnectPeersPaginator
 
 Type annotations for
@@ -491,10 +559,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import ListConnectPeersPaginator
 
 def get_list_connect_peers_paginator() -> ListConnectPeersPaginator:
-    return boto3.client("networkmanager").get_paginator("list_connect_peers")
+    return Session().client("networkmanager").get_paginator("list_connect_peers")
 ```
 
 Boto3 documentation:
@@ -510,6 +580,8 @@ Arguments for `ListConnectPeersPaginator.paginate` method:
 `ListConnectPeersPaginator.paginate` returns
 `_PageIterator`\[[ListConnectPeersResponseTypeDef](./type_defs.md#listconnectpeersresponsetypedef)\].
 
+<a id="listcorenetworkpolicyversionspaginator"></a>
+
 ## ListCoreNetworkPolicyVersionsPaginator
 
 Type annotations for
@@ -518,10 +590,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import ListCoreNetworkPolicyVersionsPaginator
 
 def get_list_core_network_policy_versions_paginator() -> ListCoreNetworkPolicyVersionsPaginator:
-    return boto3.client("networkmanager").get_paginator("list_core_network_policy_versions")
+    return Session().client("networkmanager").get_paginator("list_core_network_policy_versions")
 ```
 
 Boto3 documentation:
@@ -536,6 +610,8 @@ Arguments for `ListCoreNetworkPolicyVersionsPaginator.paginate` method:
 `ListCoreNetworkPolicyVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListCoreNetworkPolicyVersionsResponseTypeDef](./type_defs.md#listcorenetworkpolicyversionsresponsetypedef)\].
 
+<a id="listcorenetworkspaginator"></a>
+
 ## ListCoreNetworksPaginator
 
 Type annotations for
@@ -544,10 +620,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_networkmanager.paginator import ListCoreNetworksPaginator
 
 def get_list_core_networks_paginator() -> ListCoreNetworksPaginator:
-    return boto3.client("networkmanager").get_paginator("list_core_networks")
+    return Session().client("networkmanager").get_paginator("list_core_networks")
 ```
 
 Boto3 documentation:

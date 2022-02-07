@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-comprehend-module"></a>
+
 # Literals for boto3 Comprehend module
 
 > [Index](..) > [Comprehend](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
 type annotations stubs module
-[mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
+[mypy-boto3-comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
 - [Literals for boto3 Comprehend module](#literals-for-boto3-comprehend-module)
   - [AugmentedManifestsDocumentTypeFormatType](#augmentedmanifestsdocumenttypeformattype)
@@ -39,6 +41,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="augmentedmanifestsdocumenttypeformattype"></a>
+
 ## AugmentedManifestsDocumentTypeFormatType
 
 ```python
@@ -49,6 +53,8 @@ Values:
 
 - `PLAIN_TEXT_DOCUMENT`
 - `SEMI_STRUCTURED_DOCUMENT`
+
+<a id="documentclassifierdataformattype"></a>
 
 ## DocumentClassifierDataFormatType
 
@@ -61,6 +67,8 @@ Values:
 - `AUGMENTED_MANIFEST`
 - `COMPREHEND_CSV`
 
+<a id="documentclassifiermodetype"></a>
+
 ## DocumentClassifierModeType
 
 ```python
@@ -71,6 +79,8 @@ Values:
 
 - `MULTI_CLASS`
 - `MULTI_LABEL`
+
+<a id="documentreadactiontype"></a>
 
 ## DocumentReadActionType
 
@@ -83,6 +93,8 @@ Values:
 - `TEXTRACT_ANALYZE_DOCUMENT`
 - `TEXTRACT_DETECT_DOCUMENT_TEXT`
 
+<a id="documentreadfeaturetypestype"></a>
+
 ## DocumentReadFeatureTypesType
 
 ```python
@@ -94,6 +106,8 @@ Values:
 - `FORMS`
 - `TABLES`
 
+<a id="documentreadmodetype"></a>
+
 ## DocumentReadModeType
 
 ```python
@@ -104,6 +118,8 @@ Values:
 
 - `FORCE_DOCUMENT_READ_ACTION`
 - `SERVICE_DEFAULT`
+
+<a id="endpointstatustype"></a>
 
 ## EndpointStatusType
 
@@ -119,6 +135,8 @@ Values:
 - `IN_SERVICE`
 - `UPDATING`
 
+<a id="entityrecognizerdataformattype"></a>
+
 ## EntityRecognizerDataFormatType
 
 ```python
@@ -129,6 +147,8 @@ Values:
 
 - `AUGMENTED_MANIFEST`
 - `COMPREHEND_CSV`
+
+<a id="entitytypetype"></a>
 
 ## EntityTypeType
 
@@ -148,6 +168,8 @@ Values:
 - `QUANTITY`
 - `TITLE`
 
+<a id="inputformattype"></a>
+
 ## InputFormatType
 
 ```python
@@ -158,6 +180,8 @@ Values:
 
 - `ONE_DOC_PER_FILE`
 - `ONE_DOC_PER_LINE`
+
+<a id="jobstatustype"></a>
 
 ## JobStatusType
 
@@ -173,6 +197,8 @@ Values:
 - `STOP_REQUESTED`
 - `STOPPED`
 - `SUBMITTED`
+
+<a id="languagecodetype"></a>
 
 ## LanguageCodeType
 
@@ -195,6 +221,8 @@ Values:
 - `zh`
 - `zh-TW`
 
+<a id="listdocumentclassificationjobspaginatorname"></a>
+
 ## ListDocumentClassificationJobsPaginatorName
 
 ```python
@@ -204,6 +232,8 @@ from mypy_boto3_comprehend.literals import ListDocumentClassificationJobsPaginat
 Values:
 
 - `list_document_classification_jobs`
+
+<a id="listdocumentclassifierspaginatorname"></a>
 
 ## ListDocumentClassifiersPaginatorName
 
@@ -215,6 +245,8 @@ Values:
 
 - `list_document_classifiers`
 
+<a id="listdominantlanguagedetectionjobspaginatorname"></a>
+
 ## ListDominantLanguageDetectionJobsPaginatorName
 
 ```python
@@ -224,6 +256,8 @@ from mypy_boto3_comprehend.literals import ListDominantLanguageDetectionJobsPagi
 Values:
 
 - `list_dominant_language_detection_jobs`
+
+<a id="listentitiesdetectionjobspaginatorname"></a>
 
 ## ListEntitiesDetectionJobsPaginatorName
 
@@ -235,6 +269,8 @@ Values:
 
 - `list_entities_detection_jobs`
 
+<a id="listentityrecognizerspaginatorname"></a>
+
 ## ListEntityRecognizersPaginatorName
 
 ```python
@@ -244,6 +280,8 @@ from mypy_boto3_comprehend.literals import ListEntityRecognizersPaginatorName
 Values:
 
 - `list_entity_recognizers`
+
+<a id="listkeyphrasesdetectionjobspaginatorname"></a>
 
 ## ListKeyPhrasesDetectionJobsPaginatorName
 
@@ -255,6 +293,8 @@ Values:
 
 - `list_key_phrases_detection_jobs`
 
+<a id="listsentimentdetectionjobspaginatorname"></a>
+
 ## ListSentimentDetectionJobsPaginatorName
 
 ```python
@@ -265,6 +305,8 @@ Values:
 
 - `list_sentiment_detection_jobs`
 
+<a id="listtopicsdetectionjobspaginatorname"></a>
+
 ## ListTopicsDetectionJobsPaginatorName
 
 ```python
@@ -274,6 +316,8 @@ from mypy_boto3_comprehend.literals import ListTopicsDetectionJobsPaginatorName
 Values:
 
 - `list_topics_detection_jobs`
+
+<a id="modelstatustype"></a>
 
 ## ModelStatusType
 
@@ -290,6 +334,8 @@ Values:
 - `SUBMITTED`
 - `TRAINED`
 - `TRAINING`
+
+<a id="partofspeechtagtypetype"></a>
 
 ## PartOfSpeechTagTypeType
 
@@ -318,6 +364,8 @@ Values:
 - `SYM`
 - `VERB`
 
+<a id="piientitiesdetectionmaskmodetype"></a>
+
 ## PiiEntitiesDetectionMaskModeType
 
 ```python
@@ -329,6 +377,8 @@ Values:
 - `MASK`
 - `REPLACE_WITH_PII_ENTITY_TYPE`
 
+<a id="piientitiesdetectionmodetype"></a>
+
 ## PiiEntitiesDetectionModeType
 
 ```python
@@ -339,6 +389,8 @@ Values:
 
 - `ONLY_OFFSETS`
 - `ONLY_REDACTION`
+
+<a id="piientitytypetype"></a>
 
 ## PiiEntityTypeType
 
@@ -372,6 +424,8 @@ Values:
 - `URL`
 - `USERNAME`
 
+<a id="sentimenttypetype"></a>
+
 ## SentimentTypeType
 
 ```python
@@ -385,6 +439,8 @@ Values:
 - `NEUTRAL`
 - `POSITIVE`
 
+<a id="splittype"></a>
+
 ## SplitType
 
 ```python
@@ -395,6 +451,8 @@ Values:
 
 - `TEST`
 - `TRAIN`
+
+<a id="syntaxlanguagecodetype"></a>
 
 ## SyntaxLanguageCodeType
 
@@ -410,6 +468,8 @@ Values:
 - `fr`
 - `it`
 - `pt`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -718,6 +778,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

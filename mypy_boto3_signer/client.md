@@ -1,3 +1,5 @@
+<a id="signerclient-for-boto3-signer-module"></a>
+
 # signerClient for boto3 signer module
 
 > [Index](..) > [signer](.) > signerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
 type annotations stubs module
-[mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
+[mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
 
 - [signerClient for boto3 signer module](#signerclient-for-boto3-signer-module)
   - [signerClient](#signerclient)
@@ -34,6 +36,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="signerclient"></a>
+
 ## signerClient
 
 Type annotations for `boto3.client("signer")`
@@ -41,14 +45,17 @@ Type annotations for `boto3.client("signer")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_signer.client import signerClient
 
 def get_signer_client() -> signerClient:
-    return boto3.client("signer")
+    return Session().client("signer")
 ```
 
 Boto3 documentation:
 [signer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -76,7 +83,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -88,6 +99,8 @@ Boto3 documentation:
 [signer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_profile_permission"></a>
 
 ### add_profile_permission
 
@@ -113,6 +126,8 @@ Keyword-only arguments:
 Returns
 [AddProfilePermissionResponseTypeDef](./type_defs.md#addprofilepermissionresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -127,6 +142,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_signing_profile"></a>
 
 ### cancel_signing_profile
 
@@ -143,6 +160,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `profileName`: `str` *(required)*
+
+<a id="describe_signing_job"></a>
 
 ### describe_signing_job
 
@@ -163,6 +182,8 @@ Keyword-only arguments:
 Returns
 [DescribeSigningJobResponseTypeDef](./type_defs.md#describesigningjobresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -180,6 +201,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_signing_platform"></a>
 
 ### get_signing_platform
 
@@ -199,6 +222,8 @@ Keyword-only arguments:
 
 Returns
 [GetSigningPlatformResponseTypeDef](./type_defs.md#getsigningplatformresponsetypedef).
+
+<a id="get_signing_profile"></a>
 
 ### get_signing_profile
 
@@ -220,6 +245,8 @@ Keyword-only arguments:
 Returns
 [GetSigningProfileResponseTypeDef](./type_defs.md#getsigningprofileresponsetypedef).
 
+<a id="list_profile_permissions"></a>
+
 ### list_profile_permissions
 
 Lists the cross-account permissions associated with a signing profile.
@@ -239,6 +266,8 @@ Keyword-only arguments:
 
 Returns
 [ListProfilePermissionsResponseTypeDef](./type_defs.md#listprofilepermissionsresponsetypedef).
+
+<a id="list_signing_jobs"></a>
 
 ### list_signing_jobs
 
@@ -267,6 +296,8 @@ Keyword-only arguments:
 Returns
 [ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef).
 
+<a id="list_signing_platforms"></a>
+
 ### list_signing_platforms
 
 Lists all signing platforms available in code signing that match the request
@@ -290,6 +321,8 @@ Keyword-only arguments:
 
 Returns
 [ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef).
+
+<a id="list_signing_profiles"></a>
 
 ### list_signing_profiles
 
@@ -315,6 +348,8 @@ Keyword-only arguments:
 Returns
 [ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of the tags associated with a signing profile resource.
@@ -333,6 +368,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_signing_profile"></a>
 
 ### put_signing_profile
 
@@ -362,6 +399,8 @@ Keyword-only arguments:
 Returns
 [PutSigningProfileResponseTypeDef](./type_defs.md#putsigningprofileresponsetypedef).
 
+<a id="remove_profile_permission"></a>
+
 ### remove_profile_permission
 
 Removes cross-account permissions from a signing profile.
@@ -383,6 +422,8 @@ Keyword-only arguments:
 Returns
 [RemoveProfilePermissionResponseTypeDef](./type_defs.md#removeprofilepermissionresponsetypedef).
 
+<a id="revoke_signature"></a>
+
 ### revoke_signature
 
 Changes the state of a signing job to REVOKED.
@@ -400,6 +441,8 @@ Keyword-only arguments:
 - `jobId`: `str` *(required)*
 - `reason`: `str` *(required)*
 - `jobOwner`: `str`
+
+<a id="revoke_signing_profile"></a>
 
 ### revoke_signing_profile
 
@@ -419,6 +462,8 @@ Keyword-only arguments:
 - `profileVersion`: `str` *(required)*
 - `reason`: `str` *(required)*
 - `effectiveTime`: `Union`\[`datetime`, `str`\] *(required)*
+
+<a id="start_signing_job"></a>
 
 ### start_signing_job
 
@@ -444,6 +489,8 @@ Keyword-only arguments:
 Returns
 [StartSigningJobResponseTypeDef](./type_defs.md#startsigningjobresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds one or more tags to a signing profile.
@@ -462,6 +509,8 @@ Keyword-only arguments:
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -482,6 +531,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("signer").get_paginator` method with
@@ -493,6 +544,8 @@ overloads.
   [ListSigningPlatformsPaginator](./paginators.md#listsigningplatformspaginator)
 - `client.get_paginator("list_signing_profiles")` ->
   [ListSigningProfilesPaginator](./paginators.md#listsigningprofilespaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

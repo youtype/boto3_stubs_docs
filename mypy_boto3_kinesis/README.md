@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-kinesis-module"></a>
+
 # Type annotations for boto3 Kinesis module
 
 > [Index](..) > Kinesis
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
 type annotations stubs module
-[mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
+[mypy-boto3-kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[kinesis]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[kinesis]'
+
+# standalone installation
 pip install mypy-boto3-kinesis
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-kinesis
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="kinesisclient"></a>
+
 ## KinesisClient
 
 Type annotations for `boto3.client("kinesis")` as [KinesisClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_kinesis.client import KinesisClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -67,6 +81,8 @@ from mypy_boto3_kinesis.client import KinesisClient
 - [update_shard_count](./client.md#update_shard_count)
 - [update_stream_mode](./client.md#update_stream_mode)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 KinesisClient [exceptions](./client.md#exceptions)
@@ -88,6 +104,8 @@ KinesisClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -96,13 +114,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis.paginators import DescribeStreamPaginator, ...
+from mypy_boto3_kinesis.paginator import DescribeStreamPaginator, ...
 ```
 
 - [DescribeStreamPaginator](./paginators.md#describestreampaginator)
 - [ListShardsPaginator](./paginators.md#listshardspaginator)
 - [ListStreamConsumersPaginator](./paginators.md#liststreamconsumerspaginator)
 - [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -112,11 +132,13 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis.waiters import StreamExistsWaiter, ...
+from mypy_boto3_kinesis.waiter import StreamExistsWaiter, ...
 ```
 
 - [StreamExistsWaiter](./waiters.md#streamexistswaiter)
 - [StreamNotExistsWaiter](./waiters.md#streamnotexistswaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -145,6 +167,8 @@ from mypy_boto3_kinesis.literals import ConsumerStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

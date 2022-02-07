@@ -1,3 +1,5 @@
+<a id="servicediscoveryclient-for-boto3-servicediscovery-module"></a>
+
 # ServiceDiscoveryClient for boto3 ServiceDiscovery module
 
 > [Index](..) > [ServiceDiscovery](.) > ServiceDiscoveryClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
 type annotations stubs module
-[mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
+[mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 - [ServiceDiscoveryClient for boto3 ServiceDiscovery module](#servicediscoveryclient-for-boto3-servicediscovery-module)
   - [ServiceDiscoveryClient](#servicediscoveryclient)
@@ -42,6 +44,8 @@ type annotations stubs module
     - [update_service](#update_service)
     - [get_paginator](#get_paginator)
 
+<a id="servicediscoveryclient"></a>
+
 ## ServiceDiscoveryClient
 
 Type annotations for `boto3.client("servicediscovery")`
@@ -49,14 +53,17 @@ Type annotations for `boto3.client("servicediscovery")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_servicediscovery.client import ServiceDiscoveryClient
 
 def get_servicediscovery_client() -> ServiceDiscoveryClient:
-    return boto3.client("servicediscovery")
+    return Session().client("servicediscovery")
 ```
 
 Boto3 documentation:
 [ServiceDiscovery.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -88,7 +95,11 @@ Exceptions:
 - `Exceptions.ServiceNotFound`
 - `Exceptions.TooManyTagsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -100,6 +111,8 @@ Boto3 documentation:
 [ServiceDiscovery.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -115,6 +128,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_http_namespace"></a>
 
 ### create_http_namespace
 
@@ -138,6 +153,8 @@ Keyword-only arguments:
 
 Returns
 [CreateHttpNamespaceResponseTypeDef](./type_defs.md#createhttpnamespaceresponsetypedef).
+
+<a id="create_private_dns_namespace"></a>
 
 ### create_private_dns_namespace
 
@@ -166,6 +183,8 @@ Keyword-only arguments:
 Returns
 [CreatePrivateDnsNamespaceResponseTypeDef](./type_defs.md#createprivatednsnamespaceresponsetypedef).
 
+<a id="create_public_dns_namespace"></a>
+
 ### create_public_dns_namespace
 
 Creates a public namespace based on DNS, which is visible on the internet.
@@ -190,6 +209,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePublicDnsNamespaceResponseTypeDef](./type_defs.md#createpublicdnsnamespaceresponsetypedef).
+
+<a id="create_service"></a>
 
 ### create_service
 
@@ -221,6 +242,8 @@ Keyword-only arguments:
 Returns
 [CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
 
+<a id="delete_namespace"></a>
+
 ### delete_namespace
 
 Deletes a namespace from the current account.
@@ -241,6 +264,8 @@ Keyword-only arguments:
 Returns
 [DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef).
 
+<a id="delete_service"></a>
+
 ### delete_service
 
 Deletes a specified service.
@@ -258,6 +283,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="deregister_instance"></a>
 
 ### deregister_instance
 
@@ -280,6 +307,8 @@ Keyword-only arguments:
 
 Returns
 [DeregisterInstanceResponseTypeDef](./type_defs.md#deregisterinstanceresponsetypedef).
+
+<a id="discover_instances"></a>
 
 ### discover_instances
 
@@ -307,6 +336,8 @@ Keyword-only arguments:
 Returns
 [DiscoverInstancesResponseTypeDef](./type_defs.md#discoverinstancesresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -325,6 +356,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_instance"></a>
 
 ### get_instance
 
@@ -345,6 +378,8 @@ Keyword-only arguments:
 
 Returns
 [GetInstanceResponseTypeDef](./type_defs.md#getinstanceresponsetypedef).
+
+<a id="get_instances_health_status"></a>
 
 ### get_instances_health_status
 
@@ -370,6 +405,8 @@ Keyword-only arguments:
 Returns
 [GetInstancesHealthStatusResponseTypeDef](./type_defs.md#getinstanceshealthstatusresponsetypedef).
 
+<a id="get_namespace"></a>
+
 ### get_namespace
 
 Gets information about a namespace.
@@ -388,6 +425,8 @@ Keyword-only arguments:
 
 Returns
 [GetNamespaceResponseTypeDef](./type_defs.md#getnamespaceresponsetypedef).
+
+<a id="get_operation"></a>
 
 ### get_operation
 
@@ -409,6 +448,8 @@ Keyword-only arguments:
 Returns
 [GetOperationResponseTypeDef](./type_defs.md#getoperationresponsetypedef).
 
+<a id="get_service"></a>
+
 ### get_service
 
 Gets the settings for a specified service.
@@ -426,6 +467,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns [GetServiceResponseTypeDef](./type_defs.md#getserviceresponsetypedef).
+
+<a id="list_instances"></a>
 
 ### list_instances
 
@@ -448,6 +491,8 @@ Keyword-only arguments:
 
 Returns
 [ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef).
+
+<a id="list_namespaces"></a>
 
 ### list_namespaces
 
@@ -472,6 +517,8 @@ Keyword-only arguments:
 Returns
 [ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef).
 
+<a id="list_operations"></a>
+
 ### list_operations
 
 Lists operations that match the criteria that you specify.
@@ -493,6 +540,8 @@ Keyword-only arguments:
 
 Returns
 [ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
+
+<a id="list_services"></a>
 
 ### list_services
 
@@ -517,6 +566,8 @@ Keyword-only arguments:
 Returns
 [ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists tags for the specified resource.
@@ -536,6 +587,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="register_instance"></a>
 
 ### register_instance
 
@@ -561,6 +614,8 @@ Keyword-only arguments:
 Returns
 [RegisterInstanceResponseTypeDef](./type_defs.md#registerinstanceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds one or more tags to the specified resource.
@@ -580,6 +635,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from the specified resource.
@@ -598,6 +655,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_http_namespace"></a>
 
 ### update_http_namespace
 
@@ -623,6 +682,8 @@ Keyword-only arguments:
 Returns
 [UpdateHttpNamespaceResponseTypeDef](./type_defs.md#updatehttpnamespaceresponsetypedef).
 
+<a id="update_instance_custom_health_status"></a>
+
 ### update_instance_custom_health_status
 
 Submits a request to change the health status of a custom health check to
@@ -643,6 +704,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `Status`: [CustomHealthStatusType](./literals.md#customhealthstatustype)
   *(required)*
+
+<a id="update_private_dns_namespace"></a>
 
 ### update_private_dns_namespace
 
@@ -668,6 +731,8 @@ Keyword-only arguments:
 Returns
 [UpdatePrivateDnsNamespaceResponseTypeDef](./type_defs.md#updateprivatednsnamespaceresponsetypedef).
 
+<a id="update_public_dns_namespace"></a>
+
 ### update_public_dns_namespace
 
 Updates a public DNS namespace.
@@ -692,6 +757,8 @@ Keyword-only arguments:
 Returns
 [UpdatePublicDnsNamespaceResponseTypeDef](./type_defs.md#updatepublicdnsnamespaceresponsetypedef).
 
+<a id="update_service"></a>
+
 ### update_service
 
 Submits a request to perform the following operations * Update the TTL setting
@@ -714,6 +781,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

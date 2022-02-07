@@ -1,3 +1,5 @@
+<a id="iotdataplaneclient-for-boto3-iotdataplane-module"></a>
+
 # IoTDataPlaneClient for boto3 IoTDataPlane module
 
 > [Index](..) > [IoTDataPlane](.) > IoTDataPlaneClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
 type annotations stubs module
-[mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
+[mypy-boto3-iot-data](https://pypi.org/project/mypy-boto3-iot-data/).
 
 - [IoTDataPlaneClient for boto3 IoTDataPlane module](#iotdataplaneclient-for-boto3-iotdataplane-module)
   - [IoTDataPlaneClient](#iotdataplaneclient)
@@ -23,6 +25,8 @@ type annotations stubs module
     - [update_thing_shadow](#update_thing_shadow)
     - [get_paginator](#get_paginator)
 
+<a id="iotdataplaneclient"></a>
+
 ## IoTDataPlaneClient
 
 Type annotations for `boto3.client("iot-data")`
@@ -30,14 +34,17 @@ Type annotations for `boto3.client("iot-data")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iot_data.client import IoTDataPlaneClient
 
 def get_iot-data_client() -> IoTDataPlaneClient:
-    return boto3.client("iot-data")
+    return Session().client("iot-data")
 ```
 
 Boto3 documentation:
 [IoTDataPlane.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -65,7 +72,11 @@ Exceptions:
 - `Exceptions.UnauthorizedException`
 - `Exceptions.UnsupportedDocumentEncodingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -77,6 +88,8 @@ Boto3 documentation:
 [IoTDataPlane.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -92,6 +105,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_thing_shadow"></a>
 
 ### delete_thing_shadow
 
@@ -113,6 +128,8 @@ Keyword-only arguments:
 Returns
 [DeleteThingShadowResponseTypeDef](./type_defs.md#deletethingshadowresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -130,6 +147,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_retained_message"></a>
 
 ### get_retained_message
 
@@ -150,6 +169,8 @@ Keyword-only arguments:
 Returns
 [GetRetainedMessageResponseTypeDef](./type_defs.md#getretainedmessageresponsetypedef).
 
+<a id="get_thing_shadow"></a>
+
 ### get_thing_shadow
 
 Gets the shadow for the specified thing.
@@ -169,6 +190,8 @@ Keyword-only arguments:
 
 Returns
 [GetThingShadowResponseTypeDef](./type_defs.md#getthingshadowresponsetypedef).
+
+<a id="list_named_shadows_for_thing"></a>
 
 ### list_named_shadows_for_thing
 
@@ -192,6 +215,8 @@ Keyword-only arguments:
 Returns
 [ListNamedShadowsForThingResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponsetypedef).
 
+<a id="list_retained_messages"></a>
+
 ### list_retained_messages
 
 Lists summary information about the retained messages stored for the account.
@@ -212,6 +237,8 @@ Keyword-only arguments:
 Returns
 [ListRetainedMessagesResponseTypeDef](./type_defs.md#listretainedmessagesresponsetypedef).
 
+<a id="publish"></a>
+
 ### publish
 
 Publishes an MQTT message.
@@ -230,6 +257,8 @@ Keyword-only arguments:
 - `qos`: `int`
 - `retain`: `bool`
 - `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="update_thing_shadow"></a>
 
 ### update_thing_shadow
 
@@ -251,6 +280,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateThingShadowResponseTypeDef](./type_defs.md#updatethingshadowresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

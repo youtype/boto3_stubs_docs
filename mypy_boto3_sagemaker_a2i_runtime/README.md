@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-augmentedairuntime-module"></a>
+
 # Type annotations for boto3 AugmentedAIRuntime module
 
 > [Index](..) > AugmentedAIRuntime
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
 type annotations stubs module
-[mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
+[mypy-boto3-sagemaker-a2i-runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sagemaker-a2i-runtime]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sagemaker-a2i-runtime]'
+
+# standalone installation
 pip install mypy-boto3-sagemaker-a2i-runtime
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-sagemaker-a2i-runtime
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="augmentedairuntimeclient"></a>
+
 ## AugmentedAIRuntimeClient
 
 Type annotations for `boto3.client("sagemaker-a2i-runtime")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_sagemaker_a2i_runtime.client import AugmentedAIRuntimeClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -42,6 +56,8 @@ from mypy_boto3_sagemaker_a2i_runtime.client import AugmentedAIRuntimeClient
 - [start_human_loop](./client.md#start_human_loop)
 - [stop_human_loop](./client.md#stop_human_loop)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AugmentedAIRuntimeClient [exceptions](./client.md#exceptions)
@@ -54,6 +70,8 @@ AugmentedAIRuntimeClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -62,10 +80,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker_a2i_runtime.paginators import ListHumanLoopsPaginator, ...
+from mypy_boto3_sagemaker_a2i_runtime.paginator import ListHumanLoopsPaginator, ...
 ```
 
 - [ListHumanLoopsPaginator](./paginators.md#listhumanloopspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -83,6 +103,8 @@ from mypy_boto3_sagemaker_a2i_runtime.literals import ContentClassifierType, ...
 - [SortOrderType](./literals.md#sortordertype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

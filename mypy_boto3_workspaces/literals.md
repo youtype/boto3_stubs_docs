@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-workspaces-module"></a>
+
 # Literals for boto3 WorkSpaces module
 
 > [Index](..) > [WorkSpaces](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
 type annotations stubs module
-[mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
+[mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 - [Literals for boto3 WorkSpaces module](#literals-for-boto3-workspaces-module)
   - [AccessPropertyValueType](#accesspropertyvaluetype)
@@ -42,6 +44,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="accesspropertyvaluetype"></a>
+
 ## AccessPropertyValueType
 
 ```python
@@ -53,6 +57,8 @@ Values:
 - `ALLOW`
 - `DENY`
 
+<a id="applicationtype"></a>
+
 ## ApplicationType
 
 ```python
@@ -63,6 +69,8 @@ Values:
 
 - `Microsoft_Office_2016`
 - `Microsoft_Office_2019`
+
+<a id="associationstatustype"></a>
 
 ## AssociationStatusType
 
@@ -77,6 +85,8 @@ Values:
 - `NOT_ASSOCIATED`
 - `PENDING_ASSOCIATION`
 - `PENDING_DISASSOCIATION`
+
+<a id="computetype"></a>
 
 ## ComputeType
 
@@ -94,6 +104,8 @@ Values:
 - `STANDARD`
 - `VALUE`
 
+<a id="connectionaliasstatetype"></a>
+
 ## ConnectionAliasStateType
 
 ```python
@@ -105,6 +117,8 @@ Values:
 - `CREATED`
 - `CREATING`
 - `DELETING`
+
+<a id="connectionstatetype"></a>
 
 ## ConnectionStateType
 
@@ -118,6 +132,8 @@ Values:
 - `DISCONNECTED`
 - `UNKNOWN`
 
+<a id="dedicatedtenancymodificationstateenumtype"></a>
+
 ## DedicatedTenancyModificationStateEnumType
 
 ```python
@@ -130,6 +146,8 @@ Values:
 - `FAILED`
 - `PENDING`
 
+<a id="dedicatedtenancysupportenumtype"></a>
+
 ## DedicatedTenancySupportEnumType
 
 ```python
@@ -139,6 +157,8 @@ from mypy_boto3_workspaces.literals import DedicatedTenancySupportEnumType
 Values:
 
 - `ENABLED`
+
+<a id="dedicatedtenancysupportresultenumtype"></a>
 
 ## DedicatedTenancySupportResultEnumType
 
@@ -151,6 +171,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="describeaccountmodificationspaginatorname"></a>
+
 ## DescribeAccountModificationsPaginatorName
 
 ```python
@@ -160,6 +182,8 @@ from mypy_boto3_workspaces.literals import DescribeAccountModificationsPaginator
 Values:
 
 - `describe_account_modifications`
+
+<a id="describeipgroupspaginatorname"></a>
 
 ## DescribeIpGroupsPaginatorName
 
@@ -171,6 +195,8 @@ Values:
 
 - `describe_ip_groups`
 
+<a id="describeworkspacebundlespaginatorname"></a>
+
 ## DescribeWorkspaceBundlesPaginatorName
 
 ```python
@@ -180,6 +206,8 @@ from mypy_boto3_workspaces.literals import DescribeWorkspaceBundlesPaginatorName
 Values:
 
 - `describe_workspace_bundles`
+
+<a id="describeworkspacedirectoriespaginatorname"></a>
 
 ## DescribeWorkspaceDirectoriesPaginatorName
 
@@ -191,6 +219,8 @@ Values:
 
 - `describe_workspace_directories`
 
+<a id="describeworkspaceimagespaginatorname"></a>
+
 ## DescribeWorkspaceImagesPaginatorName
 
 ```python
@@ -200,6 +230,8 @@ from mypy_boto3_workspaces.literals import DescribeWorkspaceImagesPaginatorName
 Values:
 
 - `describe_workspace_images`
+
+<a id="describeworkspacesconnectionstatuspaginatorname"></a>
 
 ## DescribeWorkspacesConnectionStatusPaginatorName
 
@@ -211,6 +243,8 @@ Values:
 
 - `describe_workspaces_connection_status`
 
+<a id="describeworkspacespaginatorname"></a>
+
 ## DescribeWorkspacesPaginatorName
 
 ```python
@@ -220,6 +254,8 @@ from mypy_boto3_workspaces.literals import DescribeWorkspacesPaginatorName
 Values:
 
 - `describe_workspaces`
+
+<a id="imagetypetype"></a>
 
 ## ImageTypeType
 
@@ -232,6 +268,8 @@ Values:
 - `OWNED`
 - `SHARED`
 
+<a id="listavailablemanagementcidrrangespaginatorname"></a>
+
 ## ListAvailableManagementCidrRangesPaginatorName
 
 ```python
@@ -241,6 +279,8 @@ from mypy_boto3_workspaces.literals import ListAvailableManagementCidrRangesPagi
 Values:
 
 - `list_available_management_cidr_ranges`
+
+<a id="modificationresourceenumtype"></a>
 
 ## ModificationResourceEnumType
 
@@ -254,6 +294,8 @@ Values:
 - `ROOT_VOLUME`
 - `USER_VOLUME`
 
+<a id="modificationstateenumtype"></a>
+
 ## ModificationStateEnumType
 
 ```python
@@ -264,6 +306,8 @@ Values:
 
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_INITIATED`
+
+<a id="operatingsystemtypetype"></a>
 
 ## OperatingSystemTypeType
 
@@ -276,6 +320,8 @@ Values:
 - `LINUX`
 - `WINDOWS`
 
+<a id="reconnectenumtype"></a>
+
 ## ReconnectEnumType
 
 ```python
@@ -286,6 +332,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="runningmodetype"></a>
 
 ## RunningModeType
 
@@ -298,6 +346,8 @@ Values:
 - `ALWAYS_ON`
 - `AUTO_STOP`
 
+<a id="targetworkspacestatetype"></a>
+
 ## TargetWorkspaceStateType
 
 ```python
@@ -309,6 +359,8 @@ Values:
 - `ADMIN_MAINTENANCE`
 - `AVAILABLE`
 
+<a id="tenancytype"></a>
+
 ## TenancyType
 
 ```python
@@ -319,6 +371,8 @@ Values:
 
 - `DEDICATED`
 - `SHARED`
+
+<a id="workspacedirectorystatetype"></a>
 
 ## WorkspaceDirectoryStateType
 
@@ -334,6 +388,8 @@ Values:
 - `REGISTERED`
 - `REGISTERING`
 
+<a id="workspacedirectorytypetype"></a>
+
 ## WorkspaceDirectoryTypeType
 
 ```python
@@ -344,6 +400,8 @@ Values:
 
 - `AD_CONNECTOR`
 - `SIMPLE_AD`
+
+<a id="workspaceimageingestionprocesstype"></a>
 
 ## WorkspaceImageIngestionProcessType
 
@@ -358,6 +416,8 @@ Values:
 - `BYOL_REGULAR`
 - `BYOL_REGULAR_WSP`
 
+<a id="workspaceimagerequiredtenancytype"></a>
+
 ## WorkspaceImageRequiredTenancyType
 
 ```python
@@ -368,6 +428,8 @@ Values:
 
 - `DEDICATED`
 - `DEFAULT`
+
+<a id="workspaceimagestatetype"></a>
 
 ## WorkspaceImageStateType
 
@@ -380,6 +442,8 @@ Values:
 - `AVAILABLE`
 - `ERROR`
 - `PENDING`
+
+<a id="workspacestatetype"></a>
 
 ## WorkspaceStateType
 
@@ -406,6 +470,8 @@ Values:
 - `TERMINATING`
 - `UNHEALTHY`
 - `UPDATING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -714,6 +780,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

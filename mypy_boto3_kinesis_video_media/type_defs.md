@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-kinesisvideomedia-module"></a>
+
 # Typed dictionaries for boto3 KinesisVideoMedia module
 
 > [Index](..) > [KinesisVideoMedia](.) > Typed dictionaries
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
 type annotations stubs module
-[mypy_boto3_kinesis_video_media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
+[mypy-boto3-kinesis-video-media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
 
 - [Typed dictionaries for boto3 KinesisVideoMedia module](#typed-dictionaries-for-boto3-kinesisvideomedia-module)
   - [GetMediaInputRequestTypeDef](#getmediainputrequesttypedef)
   - [GetMediaOutputTypeDef](#getmediaoutputtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StartSelectorTypeDef](#startselectortypedef)
+
+<a id="getmediainputrequesttypedef"></a>
 
 ## GetMediaInputRequestTypeDef
 
@@ -28,6 +32,8 @@ Optional fields:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
+<a id="getmediaoutputtypedef"></a>
+
 ## GetMediaOutputTypeDef
 
 ```python
@@ -40,6 +46,8 @@ Required fields:
 - `Payload`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -54,6 +62,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="startselectortypedef"></a>
 
 ## StartSelectorTypeDef
 

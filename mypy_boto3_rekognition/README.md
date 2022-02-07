@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-rekognition-module"></a>
+
 # Type annotations for boto3 Rekognition module
 
 > [Index](..) > Rekognition
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
-[mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
+[mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[rekognition]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[rekognition]'
+
+# standalone installation
 pip install mypy-boto3-rekognition
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-rekognition
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="rekognitionclient"></a>
+
 ## RekognitionClient
 
 Type annotations for `boto3.client("rekognition")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_rekognition.client import RekognitionClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -97,6 +111,8 @@ from mypy_boto3_rekognition.client import RekognitionClient
 - [untag_resource](./client.md#untag_resource)
 - [update_dataset_entries](./client.md#update_dataset_entries)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 RekognitionClient [exceptions](./client.md#exceptions)
@@ -121,6 +137,8 @@ RekognitionClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - VideoTooLargeException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -129,7 +147,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_rekognition.paginators import DescribeProjectVersionsPaginator, ...
+from mypy_boto3_rekognition.paginator import DescribeProjectVersionsPaginator, ...
 ```
 
 - [DescribeProjectVersionsPaginator](./paginators.md#describeprojectversionspaginator)
@@ -140,6 +158,8 @@ from mypy_boto3_rekognition.paginators import DescribeProjectVersionsPaginator, 
 - [ListFacesPaginator](./paginators.md#listfacespaginator)
 - [ListStreamProcessorsPaginator](./paginators.md#liststreamprocessorspaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -148,11 +168,13 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_rekognition.waiters import ProjectVersionRunningWaiter, ...
+from mypy_boto3_rekognition.waiter import ProjectVersionRunningWaiter, ...
 ```
 
 - [ProjectVersionRunningWaiter](./waiters.md#projectversionrunningwaiter)
 - [ProjectVersionTrainingCompletedWaiter](./waiters.md#projectversiontrainingcompletedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -204,6 +226,8 @@ from mypy_boto3_rekognition.literals import AttributeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

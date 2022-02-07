@@ -1,3 +1,5 @@
+<a id="locationserviceclient-for-boto3-locationservice-module"></a>
+
 # LocationServiceClient for boto3 LocationService module
 
 > [Index](..) > [LocationService](.) > LocationServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
 type annotations stubs module
-[mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
+[mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
 
 - [LocationServiceClient for boto3 LocationService module](#locationserviceclient-for-boto3-locationservice-module)
   - [LocationServiceClient](#locationserviceclient)
@@ -68,6 +70,8 @@ type annotations stubs module
     - [update_tracker](#update_tracker)
     - [get_paginator](#get_paginator)
 
+<a id="locationserviceclient"></a>
+
 ## LocationServiceClient
 
 Type annotations for `boto3.client("location")`
@@ -75,14 +79,17 @@ Type annotations for `boto3.client("location")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_location.client import LocationServiceClient
 
 def get_location_client() -> LocationServiceClient:
-    return boto3.client("location")
+    return Session().client("location")
 ```
 
 Boto3 documentation:
 [LocationService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -107,7 +114,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -119,6 +130,8 @@ Boto3 documentation:
 [LocationService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_tracker_consumer"></a>
 
 ### associate_tracker_consumer
 
@@ -139,6 +152,8 @@ Keyword-only arguments:
 - `TrackerName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="batch_delete_device_position_history"></a>
 
 ### batch_delete_device_position_history
 
@@ -161,6 +176,8 @@ Keyword-only arguments:
 Returns
 [BatchDeleteDevicePositionHistoryResponseTypeDef](./type_defs.md#batchdeletedevicepositionhistoryresponsetypedef).
 
+<a id="batch_delete_geofence"></a>
+
 ### batch_delete_geofence
 
 Deletes a batch of geofences from a geofence collection.
@@ -180,6 +197,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDeleteGeofenceResponseTypeDef](./type_defs.md#batchdeletegeofenceresponsetypedef).
+
+<a id="batch_evaluate_geofences"></a>
 
 ### batch_evaluate_geofences
 
@@ -205,6 +224,8 @@ Keyword-only arguments:
 Returns
 [BatchEvaluateGeofencesResponseTypeDef](./type_defs.md#batchevaluategeofencesresponsetypedef).
 
+<a id="batch_get_device_position"></a>
+
 ### batch_get_device_position
 
 Lists the latest device positions for requested devices.
@@ -225,6 +246,8 @@ Keyword-only arguments:
 
 Returns
 [BatchGetDevicePositionResponseTypeDef](./type_defs.md#batchgetdevicepositionresponsetypedef).
+
+<a id="batch_put_geofence"></a>
 
 ### batch_put_geofence
 
@@ -250,6 +273,8 @@ Keyword-only arguments:
 Returns
 [BatchPutGeofenceResponseTypeDef](./type_defs.md#batchputgeofenceresponsetypedef).
 
+<a id="batch_update_device_position"></a>
+
 ### batch_update_device_position
 
 Uploads position update data for one or more devices to a tracker resource.
@@ -272,6 +297,8 @@ Keyword-only arguments:
 
 Returns
 [BatchUpdateDevicePositionResponseTypeDef](./type_defs.md#batchupdatedevicepositionresponsetypedef).
+
+<a id="calculate_route"></a>
 
 ### calculate_route
 
@@ -302,6 +329,8 @@ Keyword-only arguments:
 Returns
 [CalculateRouteResponseTypeDef](./type_defs.md#calculaterouteresponsetypedef).
 
+<a id="calculate_route_matrix"></a>
+
 ### calculate_route_matrix
 
 Type annotations for `boto3.client("location").calculate_route_matrix` method.
@@ -329,6 +358,8 @@ Keyword-only arguments:
 Returns
 [CalculateRouteMatrixResponseTypeDef](./type_defs.md#calculateroutematrixresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -343,6 +374,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_geofence_collection"></a>
 
 ### create_geofence_collection
 
@@ -369,6 +402,8 @@ Keyword-only arguments:
 Returns
 [CreateGeofenceCollectionResponseTypeDef](./type_defs.md#creategeofencecollectionresponsetypedef).
 
+<a id="create_map"></a>
+
 ### create_map
 
 Creates a map resource in your AWS account, which provides map tiles of
@@ -393,6 +428,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateMapResponseTypeDef](./type_defs.md#createmapresponsetypedef).
+
+<a id="create_place_index"></a>
 
 ### create_place_index
 
@@ -419,6 +456,8 @@ Keyword-only arguments:
 Returns
 [CreatePlaceIndexResponseTypeDef](./type_defs.md#createplaceindexresponsetypedef).
 
+<a id="create_route_calculator"></a>
+
 ### create_route_calculator
 
 Creates a route calculator resource in your AWS account.
@@ -441,6 +480,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRouteCalculatorResponseTypeDef](./type_defs.md#createroutecalculatorresponsetypedef).
+
+<a id="create_tracker"></a>
 
 ### create_tracker
 
@@ -469,6 +510,8 @@ Keyword-only arguments:
 Returns
 [CreateTrackerResponseTypeDef](./type_defs.md#createtrackerresponsetypedef).
 
+<a id="delete_geofence_collection"></a>
+
 ### delete_geofence_collection
 
 Deletes a geofence collection from your AWS account.
@@ -488,6 +531,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_map"></a>
+
 ### delete_map
 
 Deletes a map resource from your AWS account.
@@ -505,6 +550,8 @@ Keyword-only arguments:
 - `MapName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_place_index"></a>
 
 ### delete_place_index
 
@@ -524,6 +571,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_route_calculator"></a>
+
 ### delete_route_calculator
 
 Deletes a route calculator resource from your AWS account.
@@ -542,6 +591,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_tracker"></a>
+
 ### delete_tracker
 
 Deletes a tracker resource from your AWS account.
@@ -559,6 +610,8 @@ Keyword-only arguments:
 - `TrackerName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_geofence_collection"></a>
 
 ### describe_geofence_collection
 
@@ -580,6 +633,8 @@ Keyword-only arguments:
 Returns
 [DescribeGeofenceCollectionResponseTypeDef](./type_defs.md#describegeofencecollectionresponsetypedef).
 
+<a id="describe_map"></a>
+
 ### describe_map
 
 Retrieves the map resource details.
@@ -599,6 +654,8 @@ Keyword-only arguments:
 Returns
 [DescribeMapResponseTypeDef](./type_defs.md#describemapresponsetypedef).
 
+<a id="describe_place_index"></a>
+
 ### describe_place_index
 
 Retrieves the place index resource details.
@@ -617,6 +674,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePlaceIndexResponseTypeDef](./type_defs.md#describeplaceindexresponsetypedef).
+
+<a id="describe_route_calculator"></a>
 
 ### describe_route_calculator
 
@@ -638,6 +697,8 @@ Keyword-only arguments:
 Returns
 [DescribeRouteCalculatorResponseTypeDef](./type_defs.md#describeroutecalculatorresponsetypedef).
 
+<a id="describe_tracker"></a>
+
 ### describe_tracker
 
 Retrieves the tracker resource details.
@@ -656,6 +717,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTrackerResponseTypeDef](./type_defs.md#describetrackerresponsetypedef).
+
+<a id="disassociate_tracker_consumer"></a>
 
 ### disassociate_tracker_consumer
 
@@ -677,6 +740,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -694,6 +759,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_device_position"></a>
 
 ### get_device_position
 
@@ -714,6 +781,8 @@ Keyword-only arguments:
 
 Returns
 [GetDevicePositionResponseTypeDef](./type_defs.md#getdevicepositionresponsetypedef).
+
+<a id="get_device_position_history"></a>
 
 ### get_device_position_history
 
@@ -740,6 +809,8 @@ Keyword-only arguments:
 Returns
 [GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef).
 
+<a id="get_geofence"></a>
+
 ### get_geofence
 
 Retrieves the geofence details from a geofence collection.
@@ -759,6 +830,8 @@ Keyword-only arguments:
 
 Returns
 [GetGeofenceResponseTypeDef](./type_defs.md#getgeofenceresponsetypedef).
+
+<a id="get_map_glyphs"></a>
 
 ### get_map_glyphs
 
@@ -781,6 +854,8 @@ Keyword-only arguments:
 Returns
 [GetMapGlyphsResponseTypeDef](./type_defs.md#getmapglyphsresponsetypedef).
 
+<a id="get_map_sprites"></a>
+
 ### get_map_sprites
 
 Retrieves the sprite sheet corresponding to a map resource.
@@ -801,6 +876,8 @@ Keyword-only arguments:
 Returns
 [GetMapSpritesResponseTypeDef](./type_defs.md#getmapspritesresponsetypedef).
 
+<a id="get_map_style_descriptor"></a>
+
 ### get_map_style_descriptor
 
 Retrieves the map style descriptor from a map resource.
@@ -820,6 +897,8 @@ Keyword-only arguments:
 
 Returns
 [GetMapStyleDescriptorResponseTypeDef](./type_defs.md#getmapstyledescriptorresponsetypedef).
+
+<a id="get_map_tile"></a>
 
 ### get_map_tile
 
@@ -842,6 +921,8 @@ Keyword-only arguments:
 
 Returns [GetMapTileResponseTypeDef](./type_defs.md#getmaptileresponsetypedef).
 
+<a id="list_device_positions"></a>
+
 ### list_device_positions
 
 A batch request to retrieve all device positions.
@@ -862,6 +943,8 @@ Keyword-only arguments:
 
 Returns
 [ListDevicePositionsResponseTypeDef](./type_defs.md#listdevicepositionsresponsetypedef).
+
+<a id="list_geofence_collections"></a>
 
 ### list_geofence_collections
 
@@ -884,6 +967,8 @@ Keyword-only arguments:
 Returns
 [ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef).
 
+<a id="list_geofences"></a>
+
 ### list_geofences
 
 Lists geofences stored in a given geofence collection.
@@ -904,6 +989,8 @@ Keyword-only arguments:
 Returns
 [ListGeofencesResponseTypeDef](./type_defs.md#listgeofencesresponsetypedef).
 
+<a id="list_maps"></a>
+
 ### list_maps
 
 Lists map resources in your AWS account.
@@ -922,6 +1009,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef).
+
+<a id="list_place_indexes"></a>
 
 ### list_place_indexes
 
@@ -943,6 +1032,8 @@ Keyword-only arguments:
 Returns
 [ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef).
 
+<a id="list_route_calculators"></a>
+
 ### list_route_calculators
 
 Lists route calculator resources in your AWS account.
@@ -963,6 +1054,8 @@ Keyword-only arguments:
 Returns
 [ListRouteCalculatorsResponseTypeDef](./type_defs.md#listroutecalculatorsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of tags that are applied to the specified Amazon Location
@@ -982,6 +1075,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_tracker_consumers"></a>
 
 ### list_tracker_consumers
 
@@ -1004,6 +1099,8 @@ Keyword-only arguments:
 Returns
 [ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef).
 
+<a id="list_trackers"></a>
+
 ### list_trackers
 
 Lists tracker resources in your AWS account.
@@ -1023,6 +1120,8 @@ Keyword-only arguments:
 
 Returns
 [ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef).
+
+<a id="put_geofence"></a>
 
 ### put_geofence
 
@@ -1047,6 +1146,8 @@ Keyword-only arguments:
 Returns
 [PutGeofenceResponseTypeDef](./type_defs.md#putgeofenceresponsetypedef).
 
+<a id="search_place_index_for_position"></a>
+
 ### search_place_index_for_position
 
 Reverse geocodes a given coordinate and returns a legible address.
@@ -1069,6 +1170,8 @@ Keyword-only arguments:
 
 Returns
 [SearchPlaceIndexForPositionResponseTypeDef](./type_defs.md#searchplaceindexforpositionresponsetypedef).
+
+<a id="search_place_index_for_suggestions"></a>
 
 ### search_place_index_for_suggestions
 
@@ -1097,6 +1200,8 @@ Keyword-only arguments:
 Returns
 [SearchPlaceIndexForSuggestionsResponseTypeDef](./type_defs.md#searchplaceindexforsuggestionsresponsetypedef).
 
+<a id="search_place_index_for_text"></a>
+
 ### search_place_index_for_text
 
 Geocodes free-form text, such as an address, name, city, or region to allow you
@@ -1124,6 +1229,8 @@ Keyword-only arguments:
 Returns
 [SearchPlaceIndexForTextResponseTypeDef](./type_defs.md#searchplaceindexfortextresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns one or more tags (key-value pairs) to the specified Amazon Location
@@ -1144,6 +1251,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from the specified Amazon Location resource.
@@ -1162,6 +1271,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_geofence_collection"></a>
 
 ### update_geofence_collection
 
@@ -1186,6 +1297,8 @@ Keyword-only arguments:
 Returns
 [UpdateGeofenceCollectionResponseTypeDef](./type_defs.md#updategeofencecollectionresponsetypedef).
 
+<a id="update_map"></a>
+
 ### update_map
 
 Updates the specified properties of a given map resource.
@@ -1205,6 +1318,8 @@ Keyword-only arguments:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 
 Returns [UpdateMapResponseTypeDef](./type_defs.md#updatemapresponsetypedef).
+
+<a id="update_place_index"></a>
 
 ### update_place_index
 
@@ -1229,6 +1344,8 @@ Keyword-only arguments:
 Returns
 [UpdatePlaceIndexResponseTypeDef](./type_defs.md#updateplaceindexresponsetypedef).
 
+<a id="update_route_calculator"></a>
+
 ### update_route_calculator
 
 Updates the specified properties for a given route calculator resource.
@@ -1249,6 +1366,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRouteCalculatorResponseTypeDef](./type_defs.md#updateroutecalculatorresponsetypedef).
+
+<a id="update_tracker"></a>
 
 ### update_tracker
 
@@ -1273,6 +1392,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateTrackerResponseTypeDef](./type_defs.md#updatetrackerresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

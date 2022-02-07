@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-kinesis-module"></a>
+
 # Literals for boto3 Kinesis module
 
 > [Index](..) > [Kinesis](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
 type annotations stubs module
-[mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
+[mypy-boto3-kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 - [Literals for boto3 Kinesis module](#literals-for-boto3-kinesis-module)
   - [ConsumerStatusType](#consumerstatustype)
@@ -26,6 +28,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="consumerstatustype"></a>
+
 ## ConsumerStatusType
 
 ```python
@@ -38,6 +42,8 @@ Values:
 - `CREATING`
 - `DELETING`
 
+<a id="describestreampaginatorname"></a>
+
 ## DescribeStreamPaginatorName
 
 ```python
@@ -47,6 +53,8 @@ from mypy_boto3_kinesis.literals import DescribeStreamPaginatorName
 Values:
 
 - `describe_stream`
+
+<a id="encryptiontypetype"></a>
 
 ## EncryptionTypeType
 
@@ -59,6 +67,8 @@ Values:
 - `KMS`
 - `NONE`
 
+<a id="listshardspaginatorname"></a>
+
 ## ListShardsPaginatorName
 
 ```python
@@ -68,6 +78,8 @@ from mypy_boto3_kinesis.literals import ListShardsPaginatorName
 Values:
 
 - `list_shards`
+
+<a id="liststreamconsumerspaginatorname"></a>
 
 ## ListStreamConsumersPaginatorName
 
@@ -79,6 +91,8 @@ Values:
 
 - `list_stream_consumers`
 
+<a id="liststreamspaginatorname"></a>
+
 ## ListStreamsPaginatorName
 
 ```python
@@ -88,6 +102,8 @@ from mypy_boto3_kinesis.literals import ListStreamsPaginatorName
 Values:
 
 - `list_streams`
+
+<a id="metricsnametype"></a>
 
 ## MetricsNameType
 
@@ -106,6 +122,8 @@ Values:
 - `ReadProvisionedThroughputExceeded`
 - `WriteProvisionedThroughputExceeded`
 
+<a id="scalingtypetype"></a>
+
 ## ScalingTypeType
 
 ```python
@@ -115,6 +133,8 @@ from mypy_boto3_kinesis.literals import ScalingTypeType
 Values:
 
 - `UNIFORM_SCALING`
+
+<a id="shardfiltertypetype"></a>
 
 ## ShardFilterTypeType
 
@@ -131,6 +151,8 @@ Values:
 - `FROM_TIMESTAMP`
 - `FROM_TRIM_HORIZON`
 
+<a id="sharditeratortypetype"></a>
+
 ## ShardIteratorTypeType
 
 ```python
@@ -145,6 +167,8 @@ Values:
 - `LATEST`
 - `TRIM_HORIZON`
 
+<a id="streamexistswaitername"></a>
+
 ## StreamExistsWaiterName
 
 ```python
@@ -154,6 +178,8 @@ from mypy_boto3_kinesis.literals import StreamExistsWaiterName
 Values:
 
 - `stream_exists`
+
+<a id="streammodetype"></a>
 
 ## StreamModeType
 
@@ -166,6 +192,8 @@ Values:
 - `ON_DEMAND`
 - `PROVISIONED`
 
+<a id="streamnotexistswaitername"></a>
+
 ## StreamNotExistsWaiterName
 
 ```python
@@ -175,6 +203,8 @@ from mypy_boto3_kinesis.literals import StreamNotExistsWaiterName
 Values:
 
 - `stream_not_exists`
+
+<a id="streamstatustype"></a>
 
 ## StreamStatusType
 
@@ -188,6 +218,8 @@ Values:
 - `CREATING`
 - `DELETING`
 - `UPDATING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -497,6 +529,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -509,6 +543,8 @@ Values:
 - `list_shards`
 - `list_stream_consumers`
 - `list_streams`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

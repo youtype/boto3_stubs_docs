@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-textract-module"></a>
+
 # Type annotations for boto3 Textract module
 
 > [Index](..) > Textract
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
 type annotations stubs module
-[mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
+[mypy-boto3-textract](https://pypi.org/project/mypy-boto3-textract/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[textract]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[textract]'
+
+# standalone installation
 pip install mypy-boto3-textract
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-textract
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="textractclient"></a>
 
 ## TextractClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_textract.client import TextractClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -44,6 +58,8 @@ from mypy_boto3_textract.client import TextractClient
 - [start_document_analysis](./client.md#start_document_analysis)
 - [start_document_text_detection](./client.md#start_document_text_detection)
 - [start_expense_analysis](./client.md#start_expense_analysis)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -65,6 +81,8 @@ TextractClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - UnsupportedDocumentException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -85,6 +103,8 @@ from mypy_boto3_textract.literals import BlockTypeType, ...
 - [TextTypeType](./literals.md#texttypetype)
 - [ValueTypeType](./literals.md#valuetypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

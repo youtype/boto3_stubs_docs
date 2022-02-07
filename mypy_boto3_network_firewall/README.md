@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-networkfirewall-module"></a>
+
 # Type annotations for boto3 NetworkFirewall module
 
 > [Index](..) > NetworkFirewall
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
 type annotations stubs module
-[mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
+[mypy-boto3-network-firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[network-firewall]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[network-firewall]'
+
+# standalone installation
 pip install mypy-boto3-network-firewall
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-network-firewall
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="networkfirewallclient"></a>
+
 ## NetworkFirewallClient
 
 Type annotations for `boto3.client("network-firewall")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_network_firewall.client import NetworkFirewallClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -67,6 +81,8 @@ from mypy_boto3_network_firewall.client import NetworkFirewallClient
 - [update_rule_group](./client.md#update_rule_group)
 - [update_subnet_change_protection](./client.md#update_subnet_change_protection)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 NetworkFirewallClient [exceptions](./client.md#exceptions)
@@ -85,6 +101,8 @@ NetworkFirewallClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - UnsupportedOperationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -93,13 +111,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_network_firewall.paginators import ListFirewallPoliciesPaginator, ...
+from mypy_boto3_network_firewall.paginator import ListFirewallPoliciesPaginator, ...
 ```
 
 - [ListFirewallPoliciesPaginator](./paginators.md#listfirewallpoliciespaginator)
 - [ListFirewallsPaginator](./paginators.md#listfirewallspaginator)
 - [ListRuleGroupsPaginator](./paginators.md#listrulegroupspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -134,6 +154,8 @@ from mypy_boto3_network_firewall.literals import AttachmentStatusType, ...
 - [TargetTypeType](./literals.md#targettypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

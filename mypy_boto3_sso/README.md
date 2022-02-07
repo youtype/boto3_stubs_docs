@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-sso-module"></a>
+
 # Type annotations for boto3 SSO module
 
 > [Index](..) > SSO
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
 type annotations stubs module
-[mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
+[mypy-boto3-sso](https://pypi.org/project/mypy-boto3-sso/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sso]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sso]'
+
+# standalone installation
 pip install mypy-boto3-sso
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-sso
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="ssoclient"></a>
+
 ## SSOClient
 
 Type annotations for `boto3.client("sso")` as [SSOClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_sso.client import SSOClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -40,6 +54,8 @@ from mypy_boto3_sso.client import SSOClient
 - [list_accounts](./client.md#list_accounts)
 - [logout](./client.md#logout)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SSOClient [exceptions](./client.md#exceptions)
@@ -50,6 +66,8 @@ SSOClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - UnauthorizedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -58,11 +76,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_sso.paginators import ListAccountRolesPaginator, ...
+from mypy_boto3_sso.paginator import ListAccountRolesPaginator, ...
 ```
 
 - [ListAccountRolesPaginator](./paginators.md#listaccountrolespaginator)
 - [ListAccountsPaginator](./paginators.md#listaccountspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -78,6 +98,8 @@ from mypy_boto3_sso.literals import ListAccountRolesPaginatorName, ...
 - [ListAccountsPaginatorName](./literals.md#listaccountspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

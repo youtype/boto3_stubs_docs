@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-schemas-module"></a>
+
 # Literals for boto3 Schemas module
 
 > [Index](..) > [Schemas](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
 type annotations stubs module
-[mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
+[mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 - [Literals for boto3 Schemas module](#literals-for-boto3-schemas-module)
   - [CodeBindingExistsWaiterName](#codebindingexistswaitername)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="codebindingexistswaitername"></a>
+
 ## CodeBindingExistsWaiterName
 
 ```python
@@ -30,6 +34,8 @@ from mypy_boto3_schemas.literals import CodeBindingExistsWaiterName
 Values:
 
 - `code_binding_exists`
+
+<a id="codegenerationstatustype"></a>
 
 ## CodeGenerationStatusType
 
@@ -43,6 +49,8 @@ Values:
 - `CREATE_FAILED`
 - `CREATE_IN_PROGRESS`
 
+<a id="discovererstatetype"></a>
+
 ## DiscovererStateType
 
 ```python
@@ -54,6 +62,8 @@ Values:
 - `STARTED`
 - `STOPPED`
 
+<a id="listdiscovererspaginatorname"></a>
+
 ## ListDiscoverersPaginatorName
 
 ```python
@@ -63,6 +73,8 @@ from mypy_boto3_schemas.literals import ListDiscoverersPaginatorName
 Values:
 
 - `list_discoverers`
+
+<a id="listregistriespaginatorname"></a>
 
 ## ListRegistriesPaginatorName
 
@@ -74,6 +86,8 @@ Values:
 
 - `list_registries`
 
+<a id="listschemaversionspaginatorname"></a>
+
 ## ListSchemaVersionsPaginatorName
 
 ```python
@@ -83,6 +97,8 @@ from mypy_boto3_schemas.literals import ListSchemaVersionsPaginatorName
 Values:
 
 - `list_schema_versions`
+
+<a id="listschemaspaginatorname"></a>
 
 ## ListSchemasPaginatorName
 
@@ -94,6 +110,8 @@ Values:
 
 - `list_schemas`
 
+<a id="searchschemaspaginatorname"></a>
+
 ## SearchSchemasPaginatorName
 
 ```python
@@ -103,6 +121,8 @@ from mypy_boto3_schemas.literals import SearchSchemasPaginatorName
 Values:
 
 - `search_schemas`
+
+<a id="typetype"></a>
 
 ## TypeType
 
@@ -114,6 +134,8 @@ Values:
 
 - `JSONSchemaDraft4`
 - `OpenApi3`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -423,6 +445,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -436,6 +460,8 @@ Values:
 - `list_schema_versions`
 - `list_schemas`
 - `search_schemas`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

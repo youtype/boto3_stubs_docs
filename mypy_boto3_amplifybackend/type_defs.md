@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-amplifybackend-module"></a>
+
 # Typed dictionaries for boto3 AmplifyBackend module
 
 > [Index](..) > [AmplifyBackend](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
 type annotations stubs module
-[mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
+[mypy-boto3-amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
 - [Typed dictionaries for boto3 AmplifyBackend module](#typed-dictionaries-for-boto3-amplifybackend-module)
   - [BackendAPIAppSyncAuthSettingsTypeDef](#backendapiappsyncauthsettingstypedef)
@@ -104,6 +106,8 @@ type annotations stubs module
   - [UpdateBackendStorageResourceConfigTypeDef](#updatebackendstorageresourceconfigtypedef)
   - [UpdateBackendStorageResponseTypeDef](#updatebackendstorageresponsetypedef)
 
+<a id="backendapiappsyncauthsettingstypedef"></a>
+
 ## BackendAPIAppSyncAuthSettingsTypeDef
 
 ```python
@@ -121,6 +125,8 @@ Optional fields:
 - `OpenIDIssueURL`: `str`
 - `OpenIDProviderName`: `str`
 
+<a id="backendapiauthtypetypedef"></a>
+
 ## BackendAPIAuthTypeTypeDef
 
 ```python
@@ -133,6 +139,8 @@ Optional fields:
 - `Settings`:
   [BackendAPIAppSyncAuthSettingsTypeDef](./type_defs.md#backendapiappsyncauthsettingstypedef)
 
+<a id="backendapiconflictresolutiontypedef"></a>
+
 ## BackendAPIConflictResolutionTypeDef
 
 ```python
@@ -143,6 +151,8 @@ Optional fields:
 
 - `ResolutionStrategy`:
   [ResolutionStrategyType](./literals.md#resolutionstrategytype)
+
+<a id="backendapiresourceconfigtypedef"></a>
 
 ## BackendAPIResourceConfigTypeDef
 
@@ -162,6 +172,8 @@ Optional fields:
 - `Service`: `str`
 - `TransformSchema`: `str`
 
+<a id="backendauthappleproviderconfigtypedef"></a>
+
 ## BackendAuthAppleProviderConfigTypeDef
 
 ```python
@@ -175,6 +187,8 @@ Optional fields:
 - `PrivateKey`: `str`
 - `TeamId`: `str`
 
+<a id="backendauthsocialproviderconfigtypedef"></a>
+
 ## BackendAuthSocialProviderConfigTypeDef
 
 ```python
@@ -185,6 +199,8 @@ Optional fields:
 
 - `ClientId`: `str`
 - `ClientSecret`: `str`
+
+<a id="backendjobrespobjtypedef"></a>
 
 ## BackendJobRespObjTypeDef
 
@@ -206,6 +222,8 @@ Optional fields:
 - `Status`: `str`
 - `UpdateTime`: `str`
 
+<a id="backendstoragepermissionstypedef"></a>
+
 ## BackendStoragePermissionsTypeDef
 
 ```python
@@ -222,6 +240,8 @@ Optional fields:
 - `UnAuthenticated`:
   `Sequence`\[[UnAuthenticatedElementType](./literals.md#unauthenticatedelementtype)\]
 
+<a id="clonebackendrequestrequesttypedef"></a>
+
 ## CloneBackendRequestRequestTypeDef
 
 ```python
@@ -233,6 +253,8 @@ Required fields:
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `TargetEnvironmentName`: `str`
+
+<a id="clonebackendresponsetypedef"></a>
 
 ## CloneBackendResponseTypeDef
 
@@ -251,6 +273,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createbackendapirequestrequesttypedef"></a>
+
 ## CreateBackendAPIRequestRequestTypeDef
 
 ```python
@@ -264,6 +288,8 @@ Required fields:
 - `ResourceConfig`:
   [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
 - `ResourceName`: `str`
+
+<a id="createbackendapiresponsetypedef"></a>
 
 ## CreateBackendAPIResponseTypeDef
 
@@ -282,6 +308,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createbackendauthforgotpasswordconfigtypedef"></a>
+
 ## CreateBackendAuthForgotPasswordConfigTypeDef
 
 ```python
@@ -297,6 +325,8 @@ Optional fields:
 - `EmailSettings`: [EmailSettingsTypeDef](./type_defs.md#emailsettingstypedef)
 - `SmsSettings`: [SmsSettingsTypeDef](./type_defs.md#smssettingstypedef)
 
+<a id="createbackendauthidentitypoolconfigtypedef"></a>
+
 ## CreateBackendAuthIdentityPoolConfigTypeDef
 
 ```python
@@ -307,6 +337,8 @@ Required fields:
 
 - `IdentityPoolName`: `str`
 - `UnauthenticatedLogin`: `bool`
+
+<a id="createbackendauthmfaconfigtypedef"></a>
 
 ## CreateBackendAuthMFAConfigTypeDef
 
@@ -321,6 +353,8 @@ Required fields:
 Optional fields:
 
 - `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
+
+<a id="createbackendauthoauthconfigtypedef"></a>
 
 ## CreateBackendAuthOAuthConfigTypeDef
 
@@ -342,6 +376,8 @@ Optional fields:
 - `SocialProviderSettings`:
   [SocialProviderSettingsTypeDef](./type_defs.md#socialprovidersettingstypedef)
 
+<a id="createbackendauthpasswordpolicyconfigtypedef"></a>
+
 ## CreateBackendAuthPasswordPolicyConfigTypeDef
 
 ```python
@@ -357,6 +393,8 @@ Optional fields:
 - `AdditionalConstraints`:
   `Sequence`\[[AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)\]
 
+<a id="createbackendauthrequestrequesttypedef"></a>
+
 ## CreateBackendAuthRequestRequestTypeDef
 
 ```python
@@ -370,6 +408,8 @@ Required fields:
 - `ResourceConfig`:
   [CreateBackendAuthResourceConfigTypeDef](./type_defs.md#createbackendauthresourceconfigtypedef)
 - `ResourceName`: `str`
+
+<a id="createbackendauthresourceconfigtypedef"></a>
 
 ## CreateBackendAuthResourceConfigTypeDef
 
@@ -390,6 +430,8 @@ Optional fields:
 - `IdentityPoolConfigs`:
   [CreateBackendAuthIdentityPoolConfigTypeDef](./type_defs.md#createbackendauthidentitypoolconfigtypedef)
 
+<a id="createbackendauthresponsetypedef"></a>
+
 ## CreateBackendAuthResponseTypeDef
 
 ```python
@@ -406,6 +448,8 @@ Required fields:
 - `Status`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createbackendauthuserpoolconfigtypedef"></a>
 
 ## CreateBackendAuthUserPoolConfigTypeDef
 
@@ -431,6 +475,8 @@ Optional fields:
 - `PasswordPolicy`:
   [CreateBackendAuthPasswordPolicyConfigTypeDef](./type_defs.md#createbackendauthpasswordpolicyconfigtypedef)
 
+<a id="createbackendconfigrequestrequesttypedef"></a>
+
 ## CreateBackendConfigRequestRequestTypeDef
 
 ```python
@@ -444,6 +490,8 @@ Required fields:
 Optional fields:
 
 - `BackendManagerAppId`: `str`
+
+<a id="createbackendconfigresponsetypedef"></a>
 
 ## CreateBackendConfigResponseTypeDef
 
@@ -459,6 +507,8 @@ Required fields:
 - `Status`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createbackendrequestrequesttypedef"></a>
 
 ## CreateBackendRequestRequestTypeDef
 
@@ -477,6 +527,8 @@ Optional fields:
 - `ResourceConfig`: `Mapping`\[`str`, `Any`\]
 - `ResourceName`: `str`
 
+<a id="createbackendresponsetypedef"></a>
+
 ## CreateBackendResponseTypeDef
 
 ```python
@@ -494,6 +546,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createbackendstoragerequestrequesttypedef"></a>
+
 ## CreateBackendStorageRequestRequestTypeDef
 
 ```python
@@ -507,6 +561,8 @@ Required fields:
 - `ResourceConfig`:
   [CreateBackendStorageResourceConfigTypeDef](./type_defs.md#createbackendstorageresourceconfigtypedef)
 - `ResourceName`: `str`
+
+<a id="createbackendstorageresourceconfigtypedef"></a>
 
 ## CreateBackendStorageResourceConfigTypeDef
 
@@ -525,6 +581,8 @@ Optional fields:
 
 - `BucketName`: `str`
 
+<a id="createbackendstorageresponsetypedef"></a>
+
 ## CreateBackendStorageResponseTypeDef
 
 ```python
@@ -540,6 +598,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createtokenrequestrequesttypedef"></a>
+
 ## CreateTokenRequestRequestTypeDef
 
 ```python
@@ -549,6 +609,8 @@ from mypy_boto3_amplifybackend.type_defs import CreateTokenRequestRequestTypeDef
 Required fields:
 
 - `AppId`: `str`
+
+<a id="createtokenresponsetypedef"></a>
 
 ## CreateTokenResponseTypeDef
 
@@ -564,6 +626,8 @@ Required fields:
 - `Ttl`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletebackendapirequestrequesttypedef"></a>
 
 ## DeleteBackendAPIRequestRequestTypeDef
 
@@ -582,6 +646,8 @@ Optional fields:
 - `ResourceConfig`:
   [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
 
+<a id="deletebackendapiresponsetypedef"></a>
+
 ## DeleteBackendAPIResponseTypeDef
 
 ```python
@@ -599,6 +665,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebackendauthrequestrequesttypedef"></a>
+
 ## DeleteBackendAuthRequestRequestTypeDef
 
 ```python
@@ -610,6 +678,8 @@ Required fields:
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `ResourceName`: `str`
+
+<a id="deletebackendauthresponsetypedef"></a>
 
 ## DeleteBackendAuthResponseTypeDef
 
@@ -628,6 +698,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebackendrequestrequesttypedef"></a>
+
 ## DeleteBackendRequestRequestTypeDef
 
 ```python
@@ -638,6 +710,8 @@ Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
+
+<a id="deletebackendresponsetypedef"></a>
 
 ## DeleteBackendResponseTypeDef
 
@@ -656,6 +730,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebackendstoragerequestrequesttypedef"></a>
+
 ## DeleteBackendStorageRequestRequestTypeDef
 
 ```python
@@ -669,6 +745,8 @@ Required fields:
 - `ResourceName`: `str`
 - `ServiceName`: `Literal['S3']` (see
   [ServiceNameType](./literals.md#servicenametype))
+
+<a id="deletebackendstorageresponsetypedef"></a>
 
 ## DeleteBackendStorageResponseTypeDef
 
@@ -685,6 +763,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletetokenrequestrequesttypedef"></a>
+
 ## DeleteTokenRequestRequestTypeDef
 
 ```python
@@ -695,6 +775,8 @@ Required fields:
 
 - `AppId`: `str`
 - `SessionId`: `str`
+
+<a id="deletetokenresponsetypedef"></a>
 
 ## DeleteTokenResponseTypeDef
 
@@ -708,6 +790,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="emailsettingstypedef"></a>
+
 ## EmailSettingsTypeDef
 
 ```python
@@ -718,6 +802,8 @@ Optional fields:
 
 - `EmailMessage`: `str`
 - `EmailSubject`: `str`
+
+<a id="generatebackendapimodelsrequestrequesttypedef"></a>
 
 ## GenerateBackendAPIModelsRequestRequestTypeDef
 
@@ -730,6 +816,8 @@ Required fields:
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `ResourceName`: `str`
+
+<a id="generatebackendapimodelsresponsetypedef"></a>
 
 ## GenerateBackendAPIModelsResponseTypeDef
 
@@ -748,6 +836,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbackendapimodelsrequestrequesttypedef"></a>
+
 ## GetBackendAPIModelsRequestRequestTypeDef
 
 ```python
@@ -759,6 +849,8 @@ Required fields:
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `ResourceName`: `str`
+
+<a id="getbackendapimodelsresponsetypedef"></a>
 
 ## GetBackendAPIModelsResponseTypeDef
 
@@ -772,6 +864,8 @@ Required fields:
 - `Status`: [StatusType](./literals.md#statustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbackendapirequestrequesttypedef"></a>
 
 ## GetBackendAPIRequestRequestTypeDef
 
@@ -790,6 +884,8 @@ Optional fields:
 - `ResourceConfig`:
   [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
 
+<a id="getbackendapiresponsetypedef"></a>
+
 ## GetBackendAPIResponseTypeDef
 
 ```python
@@ -807,6 +903,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbackendauthrequestrequesttypedef"></a>
+
 ## GetBackendAuthRequestRequestTypeDef
 
 ```python
@@ -818,6 +916,8 @@ Required fields:
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `ResourceName`: `str`
+
+<a id="getbackendauthresponsetypedef"></a>
 
 ## GetBackendAuthResponseTypeDef
 
@@ -836,6 +936,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbackendjobrequestrequesttypedef"></a>
+
 ## GetBackendJobRequestRequestTypeDef
 
 ```python
@@ -847,6 +949,8 @@ Required fields:
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `JobId`: `str`
+
+<a id="getbackendjobresponsetypedef"></a>
 
 ## GetBackendJobResponseTypeDef
 
@@ -867,6 +971,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbackendrequestrequesttypedef"></a>
+
 ## GetBackendRequestRequestTypeDef
 
 ```python
@@ -880,6 +986,8 @@ Required fields:
 Optional fields:
 
 - `BackendEnvironmentName`: `str`
+
+<a id="getbackendresponsetypedef"></a>
 
 ## GetBackendResponseTypeDef
 
@@ -899,6 +1007,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbackendstoragerequestrequesttypedef"></a>
+
 ## GetBackendStorageRequestRequestTypeDef
 
 ```python
@@ -910,6 +1020,8 @@ Required fields:
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `ResourceName`: `str`
+
+<a id="getbackendstorageresourceconfigtypedef"></a>
 
 ## GetBackendStorageResourceConfigTypeDef
 
@@ -929,6 +1041,8 @@ Optional fields:
 - `Permissions`:
   [BackendStoragePermissionsTypeDef](./type_defs.md#backendstoragepermissionstypedef)
 
+<a id="getbackendstorageresponsetypedef"></a>
+
 ## GetBackendStorageResponseTypeDef
 
 ```python
@@ -945,6 +1059,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettokenrequestrequesttypedef"></a>
+
 ## GetTokenRequestRequestTypeDef
 
 ```python
@@ -955,6 +1071,8 @@ Required fields:
 
 - `AppId`: `str`
 - `SessionId`: `str`
+
+<a id="gettokenresponsetypedef"></a>
 
 ## GetTokenResponseTypeDef
 
@@ -970,6 +1088,8 @@ Required fields:
 - `Ttl`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="importbackendauthrequestrequesttypedef"></a>
 
 ## ImportBackendAuthRequestRequestTypeDef
 
@@ -989,6 +1109,8 @@ Optional fields:
 
 - `IdentityPoolId`: `str`
 
+<a id="importbackendauthresponsetypedef"></a>
+
 ## ImportBackendAuthResponseTypeDef
 
 ```python
@@ -1005,6 +1127,8 @@ Required fields:
 - `Status`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="importbackendstoragerequestrequesttypedef"></a>
 
 ## ImportBackendStorageRequestRequestTypeDef
 
@@ -1023,6 +1147,8 @@ Optional fields:
 
 - `BucketName`: `str`
 
+<a id="importbackendstorageresponsetypedef"></a>
+
 ## ImportBackendStorageResponseTypeDef
 
 ```python
@@ -1037,6 +1163,8 @@ Required fields:
 - `Status`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listbackendjobsrequestrequesttypedef"></a>
 
 ## ListBackendJobsRequestRequestTypeDef
 
@@ -1057,6 +1185,8 @@ Optional fields:
 - `Operation`: `str`
 - `Status`: `str`
 
+<a id="listbackendjobsresponsetypedef"></a>
+
 ## ListBackendJobsResponseTypeDef
 
 ```python
@@ -1071,6 +1201,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="lists3bucketsrequestrequesttypedef"></a>
+
 ## ListS3BucketsRequestRequestTypeDef
 
 ```python
@@ -1080,6 +1212,8 @@ from mypy_boto3_amplifybackend.type_defs import ListS3BucketsRequestRequestTypeD
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="lists3bucketsresponsetypedef"></a>
 
 ## ListS3BucketsResponseTypeDef
 
@@ -1095,6 +1229,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="loginauthconfigreqobjtypedef"></a>
+
 ## LoginAuthConfigReqObjTypeDef
 
 ```python
@@ -1108,6 +1244,8 @@ Optional fields:
 - `AwsUserPoolsId`: `str`
 - `AwsUserPoolsWebClientId`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1119,6 +1257,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="removeallbackendsrequestrequesttypedef"></a>
 
 ## RemoveAllBackendsRequestRequestTypeDef
 
@@ -1133,6 +1273,8 @@ Required fields:
 Optional fields:
 
 - `CleanAmplifyApp`: `bool`
+
+<a id="removeallbackendsresponsetypedef"></a>
 
 ## RemoveAllBackendsResponseTypeDef
 
@@ -1150,6 +1292,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removebackendconfigrequestrequesttypedef"></a>
+
 ## RemoveBackendConfigRequestRequestTypeDef
 
 ```python
@@ -1159,6 +1303,8 @@ from mypy_boto3_amplifybackend.type_defs import RemoveBackendConfigRequestReques
 Required fields:
 
 - `AppId`: `str`
+
+<a id="removebackendconfigresponsetypedef"></a>
 
 ## RemoveBackendConfigResponseTypeDef
 
@@ -1171,6 +1317,8 @@ Required fields:
 - `Error`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1186,6 +1334,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3bucketinfotypedef"></a>
+
 ## S3BucketInfoTypeDef
 
 ```python
@@ -1196,6 +1346,8 @@ Optional fields:
 
 - `CreationDate`: `str`
 - `Name`: `str`
+
+<a id="settingstypedef"></a>
 
 ## SettingsTypeDef
 
@@ -1209,6 +1361,8 @@ Optional fields:
   `Sequence`\[[MfaTypesElementType](./literals.md#mfatypeselementtype)\]
 - `SmsMessage`: `str`
 
+<a id="smssettingstypedef"></a>
+
 ## SmsSettingsTypeDef
 
 ```python
@@ -1218,6 +1372,8 @@ from mypy_boto3_amplifybackend.type_defs import SmsSettingsTypeDef
 Optional fields:
 
 - `SmsMessage`: `str`
+
+<a id="socialprovidersettingstypedef"></a>
 
 ## SocialProviderSettingsTypeDef
 
@@ -1236,6 +1392,8 @@ Optional fields:
 - `SignInWithApple`:
   [BackendAuthAppleProviderConfigTypeDef](./type_defs.md#backendauthappleproviderconfigtypedef)
 
+<a id="updatebackendapirequestrequesttypedef"></a>
+
 ## UpdateBackendAPIRequestRequestTypeDef
 
 ```python
@@ -1252,6 +1410,8 @@ Optional fields:
 
 - `ResourceConfig`:
   [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
+
+<a id="updatebackendapiresponsetypedef"></a>
 
 ## UpdateBackendAPIResponseTypeDef
 
@@ -1270,6 +1430,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatebackendauthforgotpasswordconfigtypedef"></a>
+
 ## UpdateBackendAuthForgotPasswordConfigTypeDef
 
 ```python
@@ -1282,6 +1444,8 @@ Optional fields:
 - `EmailSettings`: [EmailSettingsTypeDef](./type_defs.md#emailsettingstypedef)
 - `SmsSettings`: [SmsSettingsTypeDef](./type_defs.md#smssettingstypedef)
 
+<a id="updatebackendauthidentitypoolconfigtypedef"></a>
+
 ## UpdateBackendAuthIdentityPoolConfigTypeDef
 
 ```python
@@ -1291,6 +1455,8 @@ from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthIdentityPoolCon
 Optional fields:
 
 - `UnauthenticatedLogin`: `bool`
+
+<a id="updatebackendauthmfaconfigtypedef"></a>
 
 ## UpdateBackendAuthMFAConfigTypeDef
 
@@ -1302,6 +1468,8 @@ Optional fields:
 
 - `MFAMode`: [MFAModeType](./literals.md#mfamodetype)
 - `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
+
+<a id="updatebackendauthoauthconfigtypedef"></a>
 
 ## UpdateBackendAuthOAuthConfigTypeDef
 
@@ -1320,6 +1488,8 @@ Optional fields:
 - `SocialProviderSettings`:
   [SocialProviderSettingsTypeDef](./type_defs.md#socialprovidersettingstypedef)
 
+<a id="updatebackendauthpasswordpolicyconfigtypedef"></a>
+
 ## UpdateBackendAuthPasswordPolicyConfigTypeDef
 
 ```python
@@ -1331,6 +1501,8 @@ Optional fields:
 - `AdditionalConstraints`:
   `Sequence`\[[AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)\]
 - `MinimumLength`: `float`
+
+<a id="updatebackendauthrequestrequesttypedef"></a>
 
 ## UpdateBackendAuthRequestRequestTypeDef
 
@@ -1345,6 +1517,8 @@ Required fields:
 - `ResourceConfig`:
   [UpdateBackendAuthResourceConfigTypeDef](./type_defs.md#updatebackendauthresourceconfigtypedef)
 - `ResourceName`: `str`
+
+<a id="updatebackendauthresourceconfigtypedef"></a>
 
 ## UpdateBackendAuthResourceConfigTypeDef
 
@@ -1365,6 +1539,8 @@ Optional fields:
 - `IdentityPoolConfigs`:
   [UpdateBackendAuthIdentityPoolConfigTypeDef](./type_defs.md#updatebackendauthidentitypoolconfigtypedef)
 
+<a id="updatebackendauthresponsetypedef"></a>
+
 ## UpdateBackendAuthResponseTypeDef
 
 ```python
@@ -1381,6 +1557,8 @@ Required fields:
 - `Status`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatebackendauthuserpoolconfigtypedef"></a>
 
 ## UpdateBackendAuthUserPoolConfigTypeDef
 
@@ -1399,6 +1577,8 @@ Optional fields:
 - `PasswordPolicy`:
   [UpdateBackendAuthPasswordPolicyConfigTypeDef](./type_defs.md#updatebackendauthpasswordpolicyconfigtypedef)
 
+<a id="updatebackendconfigrequestrequesttypedef"></a>
+
 ## UpdateBackendConfigRequestRequestTypeDef
 
 ```python
@@ -1413,6 +1593,8 @@ Optional fields:
 
 - `LoginAuthConfig`:
   [LoginAuthConfigReqObjTypeDef](./type_defs.md#loginauthconfigreqobjtypedef)
+
+<a id="updatebackendconfigresponsetypedef"></a>
 
 ## UpdateBackendConfigResponseTypeDef
 
@@ -1430,6 +1612,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatebackendjobrequestrequesttypedef"></a>
+
 ## UpdateBackendJobRequestRequestTypeDef
 
 ```python
@@ -1446,6 +1630,8 @@ Optional fields:
 
 - `Operation`: `str`
 - `Status`: `str`
+
+<a id="updatebackendjobresponsetypedef"></a>
 
 ## UpdateBackendJobResponseTypeDef
 
@@ -1466,6 +1652,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatebackendstoragerequestrequesttypedef"></a>
+
 ## UpdateBackendStorageRequestRequestTypeDef
 
 ```python
@@ -1480,6 +1668,8 @@ Required fields:
   [UpdateBackendStorageResourceConfigTypeDef](./type_defs.md#updatebackendstorageresourceconfigtypedef)
 - `ResourceName`: `str`
 
+<a id="updatebackendstorageresourceconfigtypedef"></a>
+
 ## UpdateBackendStorageResourceConfigTypeDef
 
 ```python
@@ -1492,6 +1682,8 @@ Required fields:
   [BackendStoragePermissionsTypeDef](./type_defs.md#backendstoragepermissionstypedef)
 - `ServiceName`: `Literal['S3']` (see
   [ServiceNameType](./literals.md#servicenametype))
+
+<a id="updatebackendstorageresponsetypedef"></a>
 
 ## UpdateBackendStorageResponseTypeDef
 

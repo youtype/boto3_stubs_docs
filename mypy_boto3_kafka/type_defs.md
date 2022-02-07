@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-kafka-module"></a>
+
 # Typed dictionaries for boto3 Kafka module
 
 > [Index](..) > [Kafka](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
 type annotations stubs module
-[mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
+[mypy-boto3-kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
 - [Typed dictionaries for boto3 Kafka module](#typed-dictionaries-for-boto3-kafka-module)
   - [BatchAssociateScramSecretRequestRequestTypeDef](#batchassociatescramsecretrequestrequesttypedef)
@@ -133,6 +135,8 @@ type annotations stubs module
   - [VpcConfigTypeDef](#vpcconfigtypedef)
   - [ZookeeperNodeInfoTypeDef](#zookeepernodeinfotypedef)
 
+<a id="batchassociatescramsecretrequestrequesttypedef"></a>
+
 ## BatchAssociateScramSecretRequestRequestTypeDef
 
 ```python
@@ -143,6 +147,8 @@ Required fields:
 
 - `ClusterArn`: `str`
 - `SecretArnList`: `Sequence`\[`str`\]
+
+<a id="batchassociatescramsecretresponsetypedef"></a>
 
 ## BatchAssociateScramSecretResponseTypeDef
 
@@ -158,6 +164,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdisassociatescramsecretrequestrequesttypedef"></a>
+
 ## BatchDisassociateScramSecretRequestRequestTypeDef
 
 ```python
@@ -168,6 +176,8 @@ Required fields:
 
 - `ClusterArn`: `str`
 - `SecretArnList`: `Sequence`\[`str`\]
+
+<a id="batchdisassociatescramsecretresponsetypedef"></a>
 
 ## BatchDisassociateScramSecretResponseTypeDef
 
@@ -182,6 +192,8 @@ Required fields:
   `List`\[[UnprocessedScramSecretTypeDef](./type_defs.md#unprocessedscramsecrettypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="brokerebsvolumeinfotypedef"></a>
 
 ## BrokerEBSVolumeInfoTypeDef
 
@@ -199,6 +211,8 @@ Optional fields:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `VolumeSizeGB`: `int`
 
+<a id="brokerlogstypedef"></a>
+
 ## BrokerLogsTypeDef
 
 ```python
@@ -211,6 +225,8 @@ Optional fields:
   [CloudWatchLogsTypeDef](./type_defs.md#cloudwatchlogstypedef)
 - `Firehose`: [FirehoseTypeDef](./type_defs.md#firehosetypedef)
 - `S3`: [S3TypeDef](./type_defs.md#s3typedef)
+
+<a id="brokernodegroupinfotypedef"></a>
 
 ## BrokerNodeGroupInfoTypeDef
 
@@ -232,6 +248,8 @@ Optional fields:
 - `ConnectivityInfo`:
   [ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)
 
+<a id="brokernodeinfotypedef"></a>
+
 ## BrokerNodeInfoTypeDef
 
 ```python
@@ -248,6 +266,8 @@ Optional fields:
   [BrokerSoftwareInfoTypeDef](./type_defs.md#brokersoftwareinfotypedef)
 - `Endpoints`: `List`\[`str`\]
 
+<a id="brokersoftwareinfotypedef"></a>
+
 ## BrokerSoftwareInfoTypeDef
 
 ```python
@@ -259,6 +279,8 @@ Optional fields:
 - `ConfigurationArn`: `str`
 - `ConfigurationRevision`: `int`
 - `KafkaVersion`: `str`
+
+<a id="clientauthenticationtypedef"></a>
 
 ## ClientAuthenticationTypeDef
 
@@ -273,6 +295,8 @@ Optional fields:
 - `Unauthenticated`:
   [UnauthenticatedTypeDef](./type_defs.md#unauthenticatedtypedef)
 
+<a id="cloudwatchlogstypedef"></a>
+
 ## CloudWatchLogsTypeDef
 
 ```python
@@ -286,6 +310,8 @@ Required fields:
 Optional fields:
 
 - `LogGroup`: `str`
+
+<a id="clusterinfotypedef"></a>
 
 ## ClusterInfoTypeDef
 
@@ -320,6 +346,8 @@ Optional fields:
 - `ZookeeperConnectString`: `str`
 - `ZookeeperConnectStringTls`: `str`
 
+<a id="clusteroperationinfotypedef"></a>
+
 ## ClusterOperationInfoTypeDef
 
 ```python
@@ -343,6 +371,8 @@ Optional fields:
 - `TargetClusterInfo`:
   [MutableClusterInfoTypeDef](./type_defs.md#mutableclusterinfotypedef)
 
+<a id="clusteroperationstepinfotypedef"></a>
+
 ## ClusterOperationStepInfoTypeDef
 
 ```python
@@ -352,6 +382,8 @@ from mypy_boto3_kafka.type_defs import ClusterOperationStepInfoTypeDef
 Optional fields:
 
 - `StepStatus`: `str`
+
+<a id="clusteroperationsteptypedef"></a>
 
 ## ClusterOperationStepTypeDef
 
@@ -364,6 +396,8 @@ Optional fields:
 - `StepInfo`:
   [ClusterOperationStepInfoTypeDef](./type_defs.md#clusteroperationstepinfotypedef)
 - `StepName`: `str`
+
+<a id="clustertypedef"></a>
 
 ## ClusterTypeDef
 
@@ -385,6 +419,8 @@ Optional fields:
 - `Provisioned`: [ProvisionedTypeDef](./type_defs.md#provisionedtypedef)
 - `Serverless`: [ServerlessTypeDef](./type_defs.md#serverlesstypedef)
 
+<a id="compatiblekafkaversiontypedef"></a>
+
 ## CompatibleKafkaVersionTypeDef
 
 ```python
@@ -396,6 +432,8 @@ Optional fields:
 - `SourceVersion`: `str`
 - `TargetVersions`: `List`\[`str`\]
 
+<a id="configurationinfotypedef"></a>
+
 ## ConfigurationInfoTypeDef
 
 ```python
@@ -406,6 +444,8 @@ Required fields:
 
 - `Arn`: `str`
 - `Revision`: `int`
+
+<a id="configurationrevisiontypedef"></a>
 
 ## ConfigurationRevisionTypeDef
 
@@ -421,6 +461,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="configurationtypedef"></a>
 
 ## ConfigurationTypeDef
 
@@ -439,6 +481,8 @@ Required fields:
 - `Name`: `str`
 - `State`: [ConfigurationStateType](./literals.md#configurationstatetype)
 
+<a id="connectivityinfotypedef"></a>
+
 ## ConnectivityInfoTypeDef
 
 ```python
@@ -448,6 +492,8 @@ from mypy_boto3_kafka.type_defs import ConnectivityInfoTypeDef
 Optional fields:
 
 - `PublicAccess`: [PublicAccessTypeDef](./type_defs.md#publicaccesstypedef)
+
+<a id="createclusterrequestrequesttypedef"></a>
 
 ## CreateClusterRequestRequestTypeDef
 
@@ -478,6 +524,8 @@ Optional fields:
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createclusterresponsetypedef"></a>
+
 ## CreateClusterResponseTypeDef
 
 ```python
@@ -491,6 +539,8 @@ Required fields:
 - `State`: [ClusterStateType](./literals.md#clusterstatetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createclusterv2requestrequesttypedef"></a>
 
 ## CreateClusterV2RequestRequestTypeDef
 
@@ -510,6 +560,8 @@ Optional fields:
 - `Serverless`:
   [ServerlessRequestTypeDef](./type_defs.md#serverlessrequesttypedef)
 
+<a id="createclusterv2responsetypedef"></a>
+
 ## CreateClusterV2ResponseTypeDef
 
 ```python
@@ -524,6 +576,8 @@ Required fields:
 - `ClusterType`: [ClusterTypeType](./literals.md#clustertypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createconfigurationrequestrequesttypedef"></a>
 
 ## CreateConfigurationRequestRequestTypeDef
 
@@ -540,6 +594,8 @@ Optional fields:
 
 - `Description`: `str`
 - `KafkaVersions`: `Sequence`\[`str`\]
+
+<a id="createconfigurationresponsetypedef"></a>
 
 ## CreateConfigurationResponseTypeDef
 
@@ -558,6 +614,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteclusterrequestrequesttypedef"></a>
+
 ## DeleteClusterRequestRequestTypeDef
 
 ```python
@@ -572,6 +630,8 @@ Optional fields:
 
 - `CurrentVersion`: `str`
 
+<a id="deleteclusterresponsetypedef"></a>
+
 ## DeleteClusterResponseTypeDef
 
 ```python
@@ -585,6 +645,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteconfigurationrequestrequesttypedef"></a>
+
 ## DeleteConfigurationRequestRequestTypeDef
 
 ```python
@@ -594,6 +656,8 @@ from mypy_boto3_kafka.type_defs import DeleteConfigurationRequestRequestTypeDef
 Required fields:
 
 - `Arn`: `str`
+
+<a id="deleteconfigurationresponsetypedef"></a>
 
 ## DeleteConfigurationResponseTypeDef
 
@@ -608,6 +672,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeclusteroperationrequestrequesttypedef"></a>
+
 ## DescribeClusterOperationRequestRequestTypeDef
 
 ```python
@@ -617,6 +683,8 @@ from mypy_boto3_kafka.type_defs import DescribeClusterOperationRequestRequestTyp
 Required fields:
 
 - `ClusterOperationArn`: `str`
+
+<a id="describeclusteroperationresponsetypedef"></a>
 
 ## DescribeClusterOperationResponseTypeDef
 
@@ -631,6 +699,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeclusterrequestrequesttypedef"></a>
+
 ## DescribeClusterRequestRequestTypeDef
 
 ```python
@@ -640,6 +710,8 @@ from mypy_boto3_kafka.type_defs import DescribeClusterRequestRequestTypeDef
 Required fields:
 
 - `ClusterArn`: `str`
+
+<a id="describeclusterresponsetypedef"></a>
 
 ## DescribeClusterResponseTypeDef
 
@@ -653,6 +725,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeclusterv2requestrequesttypedef"></a>
+
 ## DescribeClusterV2RequestRequestTypeDef
 
 ```python
@@ -662,6 +736,8 @@ from mypy_boto3_kafka.type_defs import DescribeClusterV2RequestRequestTypeDef
 Required fields:
 
 - `ClusterArn`: `str`
+
+<a id="describeclusterv2responsetypedef"></a>
 
 ## DescribeClusterV2ResponseTypeDef
 
@@ -675,6 +751,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconfigurationrequestrequesttypedef"></a>
+
 ## DescribeConfigurationRequestRequestTypeDef
 
 ```python
@@ -684,6 +762,8 @@ from mypy_boto3_kafka.type_defs import DescribeConfigurationRequestRequestTypeDe
 Required fields:
 
 - `Arn`: `str`
+
+<a id="describeconfigurationresponsetypedef"></a>
 
 ## DescribeConfigurationResponseTypeDef
 
@@ -704,6 +784,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconfigurationrevisionrequestrequesttypedef"></a>
+
 ## DescribeConfigurationRevisionRequestRequestTypeDef
 
 ```python
@@ -714,6 +796,8 @@ Required fields:
 
 - `Arn`: `str`
 - `Revision`: `int`
+
+<a id="describeconfigurationrevisionresponsetypedef"></a>
 
 ## DescribeConfigurationRevisionResponseTypeDef
 
@@ -731,6 +815,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="ebsstorageinfotypedef"></a>
+
 ## EBSStorageInfoTypeDef
 
 ```python
@@ -743,6 +829,8 @@ Optional fields:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `VolumeSize`: `int`
 
+<a id="encryptionatresttypedef"></a>
+
 ## EncryptionAtRestTypeDef
 
 ```python
@@ -752,6 +840,8 @@ from mypy_boto3_kafka.type_defs import EncryptionAtRestTypeDef
 Required fields:
 
 - `DataVolumeKMSKeyId`: `str`
+
+<a id="encryptionintransittypedef"></a>
 
 ## EncryptionInTransitTypeDef
 
@@ -763,6 +853,8 @@ Optional fields:
 
 - `ClientBroker`: [ClientBrokerType](./literals.md#clientbrokertype)
 - `InCluster`: `bool`
+
+<a id="encryptioninfotypedef"></a>
 
 ## EncryptionInfoTypeDef
 
@@ -777,6 +869,8 @@ Optional fields:
 - `EncryptionInTransit`:
   [EncryptionInTransitTypeDef](./type_defs.md#encryptionintransittypedef)
 
+<a id="errorinfotypedef"></a>
+
 ## ErrorInfoTypeDef
 
 ```python
@@ -787,6 +881,8 @@ Optional fields:
 
 - `ErrorCode`: `str`
 - `ErrorString`: `str`
+
+<a id="firehosetypedef"></a>
 
 ## FirehoseTypeDef
 
@@ -802,6 +898,8 @@ Optional fields:
 
 - `DeliveryStream`: `str`
 
+<a id="getbootstrapbrokersrequestrequesttypedef"></a>
+
 ## GetBootstrapBrokersRequestRequestTypeDef
 
 ```python
@@ -811,6 +909,8 @@ from mypy_boto3_kafka.type_defs import GetBootstrapBrokersRequestRequestTypeDef
 Required fields:
 
 - `ClusterArn`: `str`
+
+<a id="getbootstrapbrokersresponsetypedef"></a>
 
 ## GetBootstrapBrokersResponseTypeDef
 
@@ -830,6 +930,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcompatiblekafkaversionsrequestrequesttypedef"></a>
+
 ## GetCompatibleKafkaVersionsRequestRequestTypeDef
 
 ```python
@@ -839,6 +941,8 @@ from mypy_boto3_kafka.type_defs import GetCompatibleKafkaVersionsRequestRequestT
 Optional fields:
 
 - `ClusterArn`: `str`
+
+<a id="getcompatiblekafkaversionsresponsetypedef"></a>
 
 ## GetCompatibleKafkaVersionsResponseTypeDef
 
@@ -853,6 +957,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="iamtypedef"></a>
+
 ## IamTypeDef
 
 ```python
@@ -862,6 +968,8 @@ from mypy_boto3_kafka.type_defs import IamTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
+
+<a id="jmxexporterinfotypedef"></a>
 
 ## JmxExporterInfoTypeDef
 
@@ -873,6 +981,8 @@ Required fields:
 
 - `EnabledInBroker`: `bool`
 
+<a id="jmxexportertypedef"></a>
+
 ## JmxExporterTypeDef
 
 ```python
@@ -882,6 +992,8 @@ from mypy_boto3_kafka.type_defs import JmxExporterTypeDef
 Required fields:
 
 - `EnabledInBroker`: `bool`
+
+<a id="kafkaversiontypedef"></a>
 
 ## KafkaVersionTypeDef
 
@@ -893,6 +1005,8 @@ Optional fields:
 
 - `Version`: `str`
 - `Status`: [KafkaVersionStatusType](./literals.md#kafkaversionstatustype)
+
+<a id="listclusteroperationsrequestrequesttypedef"></a>
 
 ## ListClusterOperationsRequestRequestTypeDef
 
@@ -909,6 +1023,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listclusteroperationsresponsetypedef"></a>
+
 ## ListClusterOperationsResponseTypeDef
 
 ```python
@@ -923,6 +1039,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listclustersrequestrequesttypedef"></a>
+
 ## ListClustersRequestRequestTypeDef
 
 ```python
@@ -934,6 +1052,8 @@ Optional fields:
 - `ClusterNameFilter`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listclustersresponsetypedef"></a>
 
 ## ListClustersResponseTypeDef
 
@@ -949,6 +1069,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listclustersv2requestrequesttypedef"></a>
+
 ## ListClustersV2RequestRequestTypeDef
 
 ```python
@@ -962,6 +1084,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listclustersv2responsetypedef"></a>
+
 ## ListClustersV2ResponseTypeDef
 
 ```python
@@ -974,6 +1098,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listconfigurationrevisionsrequestrequesttypedef"></a>
 
 ## ListConfigurationRevisionsRequestRequestTypeDef
 
@@ -990,6 +1116,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listconfigurationrevisionsresponsetypedef"></a>
+
 ## ListConfigurationRevisionsResponseTypeDef
 
 ```python
@@ -1004,6 +1132,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listconfigurationsrequestrequesttypedef"></a>
+
 ## ListConfigurationsRequestRequestTypeDef
 
 ```python
@@ -1014,6 +1144,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listconfigurationsresponsetypedef"></a>
 
 ## ListConfigurationsResponseTypeDef
 
@@ -1029,6 +1161,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listkafkaversionsrequestrequesttypedef"></a>
+
 ## ListKafkaVersionsRequestRequestTypeDef
 
 ```python
@@ -1039,6 +1173,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listkafkaversionsresponsetypedef"></a>
 
 ## ListKafkaVersionsResponseTypeDef
 
@@ -1053,6 +1189,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listnodesrequestrequesttypedef"></a>
 
 ## ListNodesRequestRequestTypeDef
 
@@ -1069,6 +1207,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listnodesresponsetypedef"></a>
+
 ## ListNodesResponseTypeDef
 
 ```python
@@ -1081,6 +1221,8 @@ Required fields:
 - `NodeInfoList`: `List`\[[NodeInfoTypeDef](./type_defs.md#nodeinfotypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listscramsecretsrequestrequesttypedef"></a>
 
 ## ListScramSecretsRequestRequestTypeDef
 
@@ -1097,6 +1239,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listscramsecretsresponsetypedef"></a>
+
 ## ListScramSecretsResponseTypeDef
 
 ```python
@@ -1110,6 +1254,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1119,6 +1265,8 @@ from mypy_boto3_kafka.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1132,6 +1280,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logginginfotypedef"></a>
+
 ## LoggingInfoTypeDef
 
 ```python
@@ -1141,6 +1291,8 @@ from mypy_boto3_kafka.type_defs import LoggingInfoTypeDef
 Required fields:
 
 - `BrokerLogs`: [BrokerLogsTypeDef](./type_defs.md#brokerlogstypedef)
+
+<a id="mutableclusterinfotypedef"></a>
 
 ## MutableClusterInfoTypeDef
 
@@ -1169,6 +1321,8 @@ Optional fields:
 - `ConnectivityInfo`:
   [ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)
 
+<a id="nodeexporterinfotypedef"></a>
+
 ## NodeExporterInfoTypeDef
 
 ```python
@@ -1179,6 +1333,8 @@ Required fields:
 
 - `EnabledInBroker`: `bool`
 
+<a id="nodeexportertypedef"></a>
+
 ## NodeExporterTypeDef
 
 ```python
@@ -1188,6 +1344,8 @@ from mypy_boto3_kafka.type_defs import NodeExporterTypeDef
 Required fields:
 
 - `EnabledInBroker`: `bool`
+
+<a id="nodeinfotypedef"></a>
 
 ## NodeInfoTypeDef
 
@@ -1207,6 +1365,8 @@ Optional fields:
 - `ZookeeperNodeInfo`:
   [ZookeeperNodeInfoTypeDef](./type_defs.md#zookeepernodeinfotypedef)
 
+<a id="openmonitoringinfotypedef"></a>
+
 ## OpenMonitoringInfoTypeDef
 
 ```python
@@ -1217,6 +1377,8 @@ Required fields:
 
 - `Prometheus`: [PrometheusInfoTypeDef](./type_defs.md#prometheusinfotypedef)
 
+<a id="openmonitoringtypedef"></a>
+
 ## OpenMonitoringTypeDef
 
 ```python
@@ -1226,6 +1388,8 @@ from mypy_boto3_kafka.type_defs import OpenMonitoringTypeDef
 Required fields:
 
 - `Prometheus`: [PrometheusTypeDef](./type_defs.md#prometheustypedef)
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1238,6 +1402,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="prometheusinfotypedef"></a>
 
 ## PrometheusInfoTypeDef
 
@@ -1252,6 +1418,8 @@ Optional fields:
 - `NodeExporter`:
   [NodeExporterInfoTypeDef](./type_defs.md#nodeexporterinfotypedef)
 
+<a id="prometheustypedef"></a>
+
 ## PrometheusTypeDef
 
 ```python
@@ -1262,6 +1430,8 @@ Optional fields:
 
 - `JmxExporter`: [JmxExporterTypeDef](./type_defs.md#jmxexportertypedef)
 - `NodeExporter`: [NodeExporterTypeDef](./type_defs.md#nodeexportertypedef)
+
+<a id="provisionedrequesttypedef"></a>
 
 ## ProvisionedRequestTypeDef
 
@@ -1290,6 +1460,8 @@ Optional fields:
   [OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef)
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 
+<a id="provisionedthroughputtypedef"></a>
+
 ## ProvisionedThroughputTypeDef
 
 ```python
@@ -1300,6 +1472,8 @@ Optional fields:
 
 - `Enabled`: `bool`
 - `VolumeThroughput`: `int`
+
+<a id="provisionedtypedef"></a>
 
 ## ProvisionedTypeDef
 
@@ -1329,6 +1503,8 @@ Optional fields:
 - `ZookeeperConnectString`: `str`
 - `ZookeeperConnectStringTls`: `str`
 
+<a id="publicaccesstypedef"></a>
+
 ## PublicAccessTypeDef
 
 ```python
@@ -1338,6 +1514,8 @@ from mypy_boto3_kafka.type_defs import PublicAccessTypeDef
 Optional fields:
 
 - `Type`: `str`
+
+<a id="rebootbrokerrequestrequesttypedef"></a>
 
 ## RebootBrokerRequestRequestTypeDef
 
@@ -1349,6 +1527,8 @@ Required fields:
 
 - `BrokerIds`: `Sequence`\[`str`\]
 - `ClusterArn`: `str`
+
+<a id="rebootbrokerresponsetypedef"></a>
 
 ## RebootBrokerResponseTypeDef
 
@@ -1363,6 +1543,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1376,6 +1558,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3typedef"></a>
 
 ## S3TypeDef
 
@@ -1392,6 +1576,8 @@ Optional fields:
 - `Bucket`: `str`
 - `Prefix`: `str`
 
+<a id="sasltypedef"></a>
+
 ## SaslTypeDef
 
 ```python
@@ -1403,6 +1589,8 @@ Optional fields:
 - `Scram`: [ScramTypeDef](./type_defs.md#scramtypedef)
 - `Iam`: [IamTypeDef](./type_defs.md#iamtypedef)
 
+<a id="scramtypedef"></a>
+
 ## ScramTypeDef
 
 ```python
@@ -1413,6 +1601,8 @@ Optional fields:
 
 - `Enabled`: `bool`
 
+<a id="serverlessclientauthenticationtypedef"></a>
+
 ## ServerlessClientAuthenticationTypeDef
 
 ```python
@@ -1422,6 +1612,8 @@ from mypy_boto3_kafka.type_defs import ServerlessClientAuthenticationTypeDef
 Optional fields:
 
 - `Sasl`: [ServerlessSaslTypeDef](./type_defs.md#serverlesssasltypedef)
+
+<a id="serverlessrequesttypedef"></a>
 
 ## ServerlessRequestTypeDef
 
@@ -1439,6 +1631,8 @@ Optional fields:
 - `ClientAuthentication`:
   [ServerlessClientAuthenticationTypeDef](./type_defs.md#serverlessclientauthenticationtypedef)
 
+<a id="serverlesssasltypedef"></a>
+
 ## ServerlessSaslTypeDef
 
 ```python
@@ -1448,6 +1642,8 @@ from mypy_boto3_kafka.type_defs import ServerlessSaslTypeDef
 Optional fields:
 
 - `Iam`: [IamTypeDef](./type_defs.md#iamtypedef)
+
+<a id="serverlesstypedef"></a>
 
 ## ServerlessTypeDef
 
@@ -1464,6 +1660,8 @@ Optional fields:
 - `ClientAuthentication`:
   [ServerlessClientAuthenticationTypeDef](./type_defs.md#serverlessclientauthenticationtypedef)
 
+<a id="stateinfotypedef"></a>
+
 ## StateInfoTypeDef
 
 ```python
@@ -1474,6 +1672,8 @@ Optional fields:
 
 - `Code`: `str`
 - `Message`: `str`
+
+<a id="storageinfotypedef"></a>
 
 ## StorageInfoTypeDef
 
@@ -1486,6 +1686,8 @@ Optional fields:
 - `EbsStorageInfo`:
   [EBSStorageInfoTypeDef](./type_defs.md#ebsstorageinfotypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1496,6 +1698,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="tlstypedef"></a>
 
 ## TlsTypeDef
 
@@ -1508,6 +1712,8 @@ Optional fields:
 - `CertificateAuthorityArnList`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
 
+<a id="unauthenticatedtypedef"></a>
+
 ## UnauthenticatedTypeDef
 
 ```python
@@ -1517,6 +1723,8 @@ from mypy_boto3_kafka.type_defs import UnauthenticatedTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
+
+<a id="unprocessedscramsecrettypedef"></a>
 
 ## UnprocessedScramSecretTypeDef
 
@@ -1530,6 +1738,8 @@ Optional fields:
 - `ErrorMessage`: `str`
 - `SecretArn`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1540,6 +1750,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatebrokercountrequestrequesttypedef"></a>
 
 ## UpdateBrokerCountRequestRequestTypeDef
 
@@ -1552,6 +1764,8 @@ Required fields:
 - `ClusterArn`: `str`
 - `CurrentVersion`: `str`
 - `TargetNumberOfBrokerNodes`: `int`
+
+<a id="updatebrokercountresponsetypedef"></a>
 
 ## UpdateBrokerCountResponseTypeDef
 
@@ -1566,6 +1780,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatebrokerstoragerequestrequesttypedef"></a>
+
 ## UpdateBrokerStorageRequestRequestTypeDef
 
 ```python
@@ -1578,6 +1794,8 @@ Required fields:
 - `CurrentVersion`: `str`
 - `TargetBrokerEBSVolumeInfo`:
   `Sequence`\[[BrokerEBSVolumeInfoTypeDef](./type_defs.md#brokerebsvolumeinfotypedef)\]
+
+<a id="updatebrokerstorageresponsetypedef"></a>
 
 ## UpdateBrokerStorageResponseTypeDef
 
@@ -1592,6 +1810,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatebrokertyperequestrequesttypedef"></a>
+
 ## UpdateBrokerTypeRequestRequestTypeDef
 
 ```python
@@ -1603,6 +1823,8 @@ Required fields:
 - `ClusterArn`: `str`
 - `CurrentVersion`: `str`
 - `TargetInstanceType`: `str`
+
+<a id="updatebrokertyperesponsetypedef"></a>
 
 ## UpdateBrokerTypeResponseTypeDef
 
@@ -1617,6 +1839,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateclusterconfigurationrequestrequesttypedef"></a>
+
 ## UpdateClusterConfigurationRequestRequestTypeDef
 
 ```python
@@ -1630,6 +1854,8 @@ Required fields:
   [ConfigurationInfoTypeDef](./type_defs.md#configurationinfotypedef)
 - `CurrentVersion`: `str`
 
+<a id="updateclusterconfigurationresponsetypedef"></a>
+
 ## UpdateClusterConfigurationResponseTypeDef
 
 ```python
@@ -1642,6 +1868,8 @@ Required fields:
 - `ClusterOperationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateclusterkafkaversionrequestrequesttypedef"></a>
 
 ## UpdateClusterKafkaVersionRequestRequestTypeDef
 
@@ -1660,6 +1888,8 @@ Optional fields:
 - `ConfigurationInfo`:
   [ConfigurationInfoTypeDef](./type_defs.md#configurationinfotypedef)
 
+<a id="updateclusterkafkaversionresponsetypedef"></a>
+
 ## UpdateClusterKafkaVersionResponseTypeDef
 
 ```python
@@ -1672,6 +1902,8 @@ Required fields:
 - `ClusterOperationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateconfigurationrequestrequesttypedef"></a>
 
 ## UpdateConfigurationRequestRequestTypeDef
 
@@ -1688,6 +1920,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="updateconfigurationresponsetypedef"></a>
+
 ## UpdateConfigurationResponseTypeDef
 
 ```python
@@ -1702,6 +1936,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateconnectivityrequestrequesttypedef"></a>
+
 ## UpdateConnectivityRequestRequestTypeDef
 
 ```python
@@ -1715,6 +1951,8 @@ Required fields:
   [ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)
 - `CurrentVersion`: `str`
 
+<a id="updateconnectivityresponsetypedef"></a>
+
 ## UpdateConnectivityResponseTypeDef
 
 ```python
@@ -1727,6 +1965,8 @@ Required fields:
 - `ClusterOperationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatemonitoringrequestrequesttypedef"></a>
 
 ## UpdateMonitoringRequestRequestTypeDef
 
@@ -1747,6 +1987,8 @@ Optional fields:
   [OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef)
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 
+<a id="updatemonitoringresponsetypedef"></a>
+
 ## UpdateMonitoringResponseTypeDef
 
 ```python
@@ -1759,6 +2001,8 @@ Required fields:
 - `ClusterOperationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesecurityrequestrequesttypedef"></a>
 
 ## UpdateSecurityRequestRequestTypeDef
 
@@ -1778,6 +2022,8 @@ Optional fields:
 - `EncryptionInfo`:
   [EncryptionInfoTypeDef](./type_defs.md#encryptioninfotypedef)
 
+<a id="updatesecurityresponsetypedef"></a>
+
 ## UpdateSecurityResponseTypeDef
 
 ```python
@@ -1790,6 +2036,8 @@ Required fields:
 - `ClusterOperationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="vpcconfigtypedef"></a>
 
 ## VpcConfigTypeDef
 
@@ -1804,6 +2052,8 @@ Required fields:
 Optional fields:
 
 - `SecurityGroupIds`: `Sequence`\[`str`\]
+
+<a id="zookeepernodeinfotypedef"></a>
 
 ## ZookeeperNodeInfoTypeDef
 

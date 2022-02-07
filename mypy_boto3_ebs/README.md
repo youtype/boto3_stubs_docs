@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ebs-module"></a>
+
 # Type annotations for boto3 EBS module
 
 > [Index](..) > EBS
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
 type annotations stubs module
-[mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
+[mypy-boto3-ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ebs]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ebs]'
+
+# standalone installation
 pip install mypy-boto3-ebs
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-ebs
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="ebsclient"></a>
+
 ## EBSClient
 
 Type annotations for `boto3.client("ebs")` as [EBSClient](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ebs.client import EBSClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -39,6 +53,8 @@ from mypy_boto3_ebs.client import EBSClient
 - [list_snapshot_blocks](./client.md#list_snapshot_blocks)
 - [put_snapshot_block](./client.md#put_snapshot_block)
 - [start_snapshot](./client.md#start_snapshot)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -54,6 +70,8 @@ EBSClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - ValidationException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -68,6 +86,8 @@ from mypy_boto3_ebs.literals import ChecksumAggregationMethodType, ...
 - [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - [StatusType](./literals.md#statustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

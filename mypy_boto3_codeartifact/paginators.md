@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-codeartifact-module"></a>
+
 # Paginators for boto3 CodeArtifact module
 
 > [Index](..) > [CodeArtifact](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module
-[mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
+[mypy-boto3-codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 - [Paginators for boto3 CodeArtifact module](#paginators-for-boto3-codeartifact-module)
   - [ListDomainsPaginator](#listdomainspaginator)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [ListRepositoriesPaginator](#listrepositoriespaginator)
   - [ListRepositoriesInDomainPaginator](#listrepositoriesindomainpaginator)
 
+<a id="listdomainspaginator"></a>
+
 ## ListDomainsPaginator
 
 Type annotations for
@@ -23,10 +27,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codeartifact.paginator import ListDomainsPaginator
 
 def get_list_domains_paginator() -> ListDomainsPaginator:
-    return boto3.client("codeartifact").get_paginator("list_domains")
+    return Session().client("codeartifact").get_paginator("list_domains")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `ListDomainsPaginator.paginate` method:
 `ListDomainsPaginator.paginate` returns
 `_PageIterator`\[[ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef)\].
 
+<a id="listpackageversionassetspaginator"></a>
+
 ## ListPackageVersionAssetsPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codeartifact.paginator import ListPackageVersionAssetsPaginator
 
 def get_list_package_version_assets_paginator() -> ListPackageVersionAssetsPaginator:
-    return boto3.client("codeartifact").get_paginator("list_package_version_assets")
+    return Session().client("codeartifact").get_paginator("list_package_version_assets")
 ```
 
 Boto3 documentation:
@@ -72,6 +82,8 @@ Arguments for `ListPackageVersionAssetsPaginator.paginate` method:
 `ListPackageVersionAssetsPaginator.paginate` returns
 `_PageIterator`\[[ListPackageVersionAssetsResultTypeDef](./type_defs.md#listpackageversionassetsresulttypedef)\].
 
+<a id="listpackageversionspaginator"></a>
+
 ## ListPackageVersionsPaginator
 
 Type annotations for
@@ -80,10 +92,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codeartifact.paginator import ListPackageVersionsPaginator
 
 def get_list_package_versions_paginator() -> ListPackageVersionsPaginator:
-    return boto3.client("codeartifact").get_paginator("list_package_versions")
+    return Session().client("codeartifact").get_paginator("list_package_versions")
 ```
 
 Boto3 documentation:
@@ -106,6 +120,8 @@ Arguments for `ListPackageVersionsPaginator.paginate` method:
 `ListPackageVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef)\].
 
+<a id="listpackagespaginator"></a>
+
 ## ListPackagesPaginator
 
 Type annotations for
@@ -114,10 +130,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codeartifact.paginator import ListPackagesPaginator
 
 def get_list_packages_paginator() -> ListPackagesPaginator:
-    return boto3.client("codeartifact").get_paginator("list_packages")
+    return Session().client("codeartifact").get_paginator("list_packages")
 ```
 
 Boto3 documentation:
@@ -137,6 +155,8 @@ Arguments for `ListPackagesPaginator.paginate` method:
 `ListPackagesPaginator.paginate` returns
 `_PageIterator`\[[ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef)\].
 
+<a id="listrepositoriespaginator"></a>
+
 ## ListRepositoriesPaginator
 
 Type annotations for
@@ -145,10 +165,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codeartifact.paginator import ListRepositoriesPaginator
 
 def get_list_repositories_paginator() -> ListRepositoriesPaginator:
-    return boto3.client("codeartifact").get_paginator("list_repositories")
+    return Session().client("codeartifact").get_paginator("list_repositories")
 ```
 
 Boto3 documentation:
@@ -163,6 +185,8 @@ Arguments for `ListRepositoriesPaginator.paginate` method:
 `ListRepositoriesPaginator.paginate` returns
 `_PageIterator`\[[ListRepositoriesResultTypeDef](./type_defs.md#listrepositoriesresulttypedef)\].
 
+<a id="listrepositoriesindomainpaginator"></a>
+
 ## ListRepositoriesInDomainPaginator
 
 Type annotations for
@@ -171,10 +195,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codeartifact.paginator import ListRepositoriesInDomainPaginator
 
 def get_list_repositories_in_domain_paginator() -> ListRepositoriesInDomainPaginator:
-    return boto3.client("codeartifact").get_paginator("list_repositories_in_domain")
+    return Session().client("codeartifact").get_paginator("list_repositories_in_domain")
 ```
 
 Boto3 documentation:

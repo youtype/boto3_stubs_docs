@@ -1,3 +1,5 @@
+<a id="appflowclient-for-boto3-appflow-module"></a>
+
 # AppflowClient for boto3 Appflow module
 
 > [Index](..) > [Appflow](.) > AppflowClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
 type annotations stubs module
-[mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
+[mypy-boto3-appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 - [AppflowClient for boto3 Appflow module](#appflowclient-for-boto3-appflow-module)
   - [AppflowClient](#appflowclient)
@@ -37,6 +39,8 @@ type annotations stubs module
     - [update_connector_profile](#update_connector_profile)
     - [update_flow](#update_flow)
 
+<a id="appflowclient"></a>
+
 ## AppflowClient
 
 Type annotations for `boto3.client("appflow")`
@@ -44,14 +48,17 @@ Type annotations for `boto3.client("appflow")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_appflow.client import AppflowClient
 
 def get_appflow_client() -> AppflowClient:
-    return boto3.client("appflow")
+    return Session().client("appflow")
 ```
 
 Boto3 documentation:
 [Appflow.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -79,7 +86,11 @@ Exceptions:
 - `Exceptions.UnsupportedOperationException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -91,6 +102,8 @@ Boto3 documentation:
 [Appflow.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -106,6 +119,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_connector_profile"></a>
 
 ### create_connector_profile
 
@@ -135,6 +150,8 @@ Keyword-only arguments:
 
 Returns
 [CreateConnectorProfileResponseTypeDef](./type_defs.md#createconnectorprofileresponsetypedef).
+
+<a id="create_flow"></a>
 
 ### create_flow
 
@@ -166,6 +183,8 @@ Keyword-only arguments:
 
 Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
 
+<a id="delete_connector_profile"></a>
+
 ### delete_connector_profile
 
 Enables you to delete an existing connector profile.
@@ -185,6 +204,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_flow"></a>
+
 ### delete_flow
 
 Enables your application to delete an existing flow.
@@ -203,6 +224,8 @@ Keyword-only arguments:
 - `forceDelete`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_connector"></a>
 
 ### describe_connector
 
@@ -225,6 +248,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeConnectorResponseTypeDef](./type_defs.md#describeconnectorresponsetypedef).
+
+<a id="describe_connector_entity"></a>
 
 ### describe_connector_entity
 
@@ -249,6 +274,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeConnectorEntityResponseTypeDef](./type_defs.md#describeconnectorentityresponsetypedef).
+
+<a id="describe_connector_profiles"></a>
 
 ### describe_connector_profiles
 
@@ -275,6 +302,8 @@ Keyword-only arguments:
 Returns
 [DescribeConnectorProfilesResponseTypeDef](./type_defs.md#describeconnectorprofilesresponsetypedef).
 
+<a id="describe_connectors"></a>
+
 ### describe_connectors
 
 Describes the connectors vended by Amazon AppFlow for specified connector
@@ -298,6 +327,8 @@ Keyword-only arguments:
 Returns
 [DescribeConnectorsResponseTypeDef](./type_defs.md#describeconnectorsresponsetypedef).
 
+<a id="describe_flow"></a>
+
 ### describe_flow
 
 Provides a description of the specified flow.
@@ -316,6 +347,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef).
+
+<a id="describe_flow_execution_records"></a>
 
 ### describe_flow_execution_records
 
@@ -339,6 +372,8 @@ Keyword-only arguments:
 Returns
 [DescribeFlowExecutionRecordsResponseTypeDef](./type_defs.md#describeflowexecutionrecordsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -356,6 +391,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_connector_entities"></a>
 
 ### list_connector_entities
 
@@ -379,6 +416,8 @@ Keyword-only arguments:
 Returns
 [ListConnectorEntitiesResponseTypeDef](./type_defs.md#listconnectorentitiesresponsetypedef).
 
+<a id="list_connectors"></a>
+
 ### list_connectors
 
 Returns the list of all registered custom connectors in your Amazon Web
@@ -400,6 +439,8 @@ Keyword-only arguments:
 Returns
 [ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef).
 
+<a id="list_flows"></a>
+
 ### list_flows
 
 Lists all of the flows associated with your account.
@@ -419,6 +460,8 @@ Keyword-only arguments:
 
 Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves the tags that are associated with a specified flow.
@@ -437,6 +480,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="register_connector"></a>
 
 ### register_connector
 
@@ -462,6 +507,8 @@ Keyword-only arguments:
 Returns
 [RegisterConnectorResponseTypeDef](./type_defs.md#registerconnectorresponsetypedef).
 
+<a id="start_flow"></a>
+
 ### start_flow
 
 Activates an existing flow.
@@ -479,6 +526,8 @@ Keyword-only arguments:
 - `flowName`: `str` *(required)*
 
 Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
+
+<a id="stop_flow"></a>
 
 ### stop_flow
 
@@ -498,6 +547,8 @@ Keyword-only arguments:
 
 Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Applies a tag to the specified flow.
@@ -516,6 +567,8 @@ Keyword-only arguments:
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="unregister_connector"></a>
 
 ### unregister_connector
 
@@ -537,6 +590,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from the specified flow.
@@ -555,6 +610,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_connector_profile"></a>
 
 ### update_connector_profile
 
@@ -579,6 +636,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateConnectorProfileResponseTypeDef](./type_defs.md#updateconnectorprofileresponsetypedef).
+
+<a id="update_flow"></a>
 
 ### update_flow
 

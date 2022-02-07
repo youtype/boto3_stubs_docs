@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-appsync-module"></a>
+
 # Typed dictionaries for boto3 AppSync module
 
 > [Index](..) > [AppSync](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
 type annotations stubs module
-[mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
+[mypy-boto3-appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
 - [Typed dictionaries for boto3 AppSync module](#typed-dictionaries-for-boto3-appsync-module)
   - [AdditionalAuthenticationProviderTypeDef](#additionalauthenticationprovidertypedef)
@@ -126,6 +128,8 @@ type annotations stubs module
   - [UpdateTypeResponseTypeDef](#updatetyperesponsetypedef)
   - [UserPoolConfigTypeDef](#userpoolconfigtypedef)
 
+<a id="additionalauthenticationprovidertypedef"></a>
+
 ## AdditionalAuthenticationProviderTypeDef
 
 ```python
@@ -143,6 +147,8 @@ Optional fields:
 - `lambdaAuthorizerConfig`:
   [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
+<a id="apiassociationtypedef"></a>
+
 ## ApiAssociationTypeDef
 
 ```python
@@ -156,6 +162,8 @@ Optional fields:
 - `associationStatus`:
   [AssociationStatusType](./literals.md#associationstatustype)
 - `deploymentDetail`: `str`
+
+<a id="apicachetypedef"></a>
 
 ## ApiCacheTypeDef
 
@@ -173,6 +181,8 @@ Optional fields:
 - `type`: [ApiCacheTypeType](./literals.md#apicachetypetype)
 - `status`: [ApiCacheStatusType](./literals.md#apicachestatustype)
 
+<a id="apikeytypedef"></a>
+
 ## ApiKeyTypeDef
 
 ```python
@@ -186,6 +196,8 @@ Optional fields:
 - `expires`: `int`
 - `deletes`: `int`
 
+<a id="associateapirequestrequesttypedef"></a>
+
 ## AssociateApiRequestRequestTypeDef
 
 ```python
@@ -196,6 +208,8 @@ Required fields:
 
 - `domainName`: `str`
 - `apiId`: `str`
+
+<a id="associateapiresponsetypedef"></a>
 
 ## AssociateApiResponseTypeDef
 
@@ -209,6 +223,8 @@ Required fields:
   [ApiAssociationTypeDef](./type_defs.md#apiassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="authorizationconfigtypedef"></a>
 
 ## AuthorizationConfigTypeDef
 
@@ -225,6 +241,8 @@ Optional fields:
 
 - `awsIamConfig`: [AwsIamConfigTypeDef](./type_defs.md#awsiamconfigtypedef)
 
+<a id="awsiamconfigtypedef"></a>
+
 ## AwsIamConfigTypeDef
 
 ```python
@@ -236,6 +254,8 @@ Optional fields:
 - `signingRegion`: `str`
 - `signingServiceName`: `str`
 
+<a id="cachingconfigtypedef"></a>
+
 ## CachingConfigTypeDef
 
 ```python
@@ -246,6 +266,8 @@ Optional fields:
 
 - `ttl`: `int`
 - `cachingKeys`: `Sequence`\[`str`\]
+
+<a id="cognitouserpoolconfigtypedef"></a>
 
 ## CognitoUserPoolConfigTypeDef
 
@@ -261,6 +283,8 @@ Required fields:
 Optional fields:
 
 - `appIdClientRegex`: `str`
+
+<a id="createapicacherequestrequesttypedef"></a>
 
 ## CreateApiCacheRequestRequestTypeDef
 
@@ -281,6 +305,8 @@ Optional fields:
 - `transitEncryptionEnabled`: `bool`
 - `atRestEncryptionEnabled`: `bool`
 
+<a id="createapicacheresponsetypedef"></a>
+
 ## CreateApiCacheResponseTypeDef
 
 ```python
@@ -292,6 +318,8 @@ Required fields:
 - `apiCache`: [ApiCacheTypeDef](./type_defs.md#apicachetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createapikeyrequestrequesttypedef"></a>
 
 ## CreateApiKeyRequestRequestTypeDef
 
@@ -308,6 +336,8 @@ Optional fields:
 - `description`: `str`
 - `expires`: `int`
 
+<a id="createapikeyresponsetypedef"></a>
+
 ## CreateApiKeyResponseTypeDef
 
 ```python
@@ -319,6 +349,8 @@ Required fields:
 - `apiKey`: [ApiKeyTypeDef](./type_defs.md#apikeytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasourcerequestrequesttypedef"></a>
 
 ## CreateDataSourceRequestRequestTypeDef
 
@@ -349,6 +381,8 @@ Optional fields:
 - `relationalDatabaseConfig`:
   [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
 
+<a id="createdatasourceresponsetypedef"></a>
+
 ## CreateDataSourceResponseTypeDef
 
 ```python
@@ -360,6 +394,8 @@ Required fields:
 - `dataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdomainnamerequestrequesttypedef"></a>
 
 ## CreateDomainNameRequestRequestTypeDef
 
@@ -376,6 +412,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="createdomainnameresponsetypedef"></a>
+
 ## CreateDomainNameResponseTypeDef
 
 ```python
@@ -388,6 +426,8 @@ Required fields:
   [DomainNameConfigTypeDef](./type_defs.md#domainnameconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfunctionrequestrequesttypedef"></a>
 
 ## CreateFunctionRequestRequestTypeDef
 
@@ -410,6 +450,8 @@ Optional fields:
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 - `maxBatchSize`: `int`
 
+<a id="createfunctionresponsetypedef"></a>
+
 ## CreateFunctionResponseTypeDef
 
 ```python
@@ -422,6 +464,8 @@ Required fields:
   [FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creategraphqlapirequestrequesttypedef"></a>
 
 ## CreateGraphqlApiRequestRequestTypeDef
 
@@ -449,6 +493,8 @@ Optional fields:
 - `lambdaAuthorizerConfig`:
   [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
+<a id="creategraphqlapiresponsetypedef"></a>
+
 ## CreateGraphqlApiResponseTypeDef
 
 ```python
@@ -460,6 +506,8 @@ Required fields:
 - `graphqlApi`: [GraphqlApiTypeDef](./type_defs.md#graphqlapitypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createresolverrequestrequesttypedef"></a>
 
 ## CreateResolverRequestRequestTypeDef
 
@@ -485,6 +533,8 @@ Optional fields:
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
 - `maxBatchSize`: `int`
 
+<a id="createresolverresponsetypedef"></a>
+
 ## CreateResolverResponseTypeDef
 
 ```python
@@ -496,6 +546,8 @@ Required fields:
 - `resolver`: [ResolverTypeDef](./type_defs.md#resolvertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtyperequestrequesttypedef"></a>
 
 ## CreateTypeRequestRequestTypeDef
 
@@ -509,6 +561,8 @@ Required fields:
 - `definition`: `str`
 - `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
 
+<a id="createtyperesponsetypedef"></a>
+
 ## CreateTypeResponseTypeDef
 
 ```python
@@ -520,6 +574,8 @@ Required fields:
 - `type`: [TypeTypeDef](./type_defs.md#typetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="datasourcetypedef"></a>
 
 ## DataSourceTypeDef
 
@@ -547,6 +603,8 @@ Optional fields:
 - `relationalDatabaseConfig`:
   [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
 
+<a id="deleteapicacherequestrequesttypedef"></a>
+
 ## DeleteApiCacheRequestRequestTypeDef
 
 ```python
@@ -556,6 +614,8 @@ from mypy_boto3_appsync.type_defs import DeleteApiCacheRequestRequestTypeDef
 Required fields:
 
 - `apiId`: `str`
+
+<a id="deleteapikeyrequestrequesttypedef"></a>
 
 ## DeleteApiKeyRequestRequestTypeDef
 
@@ -568,6 +628,8 @@ Required fields:
 - `apiId`: `str`
 - `id`: `str`
 
+<a id="deletedatasourcerequestrequesttypedef"></a>
+
 ## DeleteDataSourceRequestRequestTypeDef
 
 ```python
@@ -579,6 +641,8 @@ Required fields:
 - `apiId`: `str`
 - `name`: `str`
 
+<a id="deletedomainnamerequestrequesttypedef"></a>
+
 ## DeleteDomainNameRequestRequestTypeDef
 
 ```python
@@ -588,6 +652,8 @@ from mypy_boto3_appsync.type_defs import DeleteDomainNameRequestRequestTypeDef
 Required fields:
 
 - `domainName`: `str`
+
+<a id="deletefunctionrequestrequesttypedef"></a>
 
 ## DeleteFunctionRequestRequestTypeDef
 
@@ -600,6 +666,8 @@ Required fields:
 - `apiId`: `str`
 - `functionId`: `str`
 
+<a id="deletegraphqlapirequestrequesttypedef"></a>
+
 ## DeleteGraphqlApiRequestRequestTypeDef
 
 ```python
@@ -609,6 +677,8 @@ from mypy_boto3_appsync.type_defs import DeleteGraphqlApiRequestRequestTypeDef
 Required fields:
 
 - `apiId`: `str`
+
+<a id="deleteresolverrequestrequesttypedef"></a>
 
 ## DeleteResolverRequestRequestTypeDef
 
@@ -622,6 +692,8 @@ Required fields:
 - `typeName`: `str`
 - `fieldName`: `str`
 
+<a id="deletetyperequestrequesttypedef"></a>
+
 ## DeleteTypeRequestRequestTypeDef
 
 ```python
@@ -632,6 +704,8 @@ Required fields:
 
 - `apiId`: `str`
 - `typeName`: `str`
+
+<a id="deltasyncconfigtypedef"></a>
 
 ## DeltaSyncConfigTypeDef
 
@@ -645,6 +719,8 @@ Optional fields:
 - `deltaSyncTableName`: `str`
 - `deltaSyncTableTTL`: `int`
 
+<a id="disassociateapirequestrequesttypedef"></a>
+
 ## DisassociateApiRequestRequestTypeDef
 
 ```python
@@ -654,6 +730,8 @@ from mypy_boto3_appsync.type_defs import DisassociateApiRequestRequestTypeDef
 Required fields:
 
 - `domainName`: `str`
+
+<a id="domainnameconfigtypedef"></a>
 
 ## DomainNameConfigTypeDef
 
@@ -668,6 +746,8 @@ Optional fields:
 - `certificateArn`: `str`
 - `appsyncDomainName`: `str`
 - `hostedZoneId`: `str`
+
+<a id="dynamodbdatasourceconfigtypedef"></a>
 
 ## DynamodbDataSourceConfigTypeDef
 
@@ -687,6 +767,8 @@ Optional fields:
   [DeltaSyncConfigTypeDef](./type_defs.md#deltasyncconfigtypedef)
 - `versioned`: `bool`
 
+<a id="elasticsearchdatasourceconfigtypedef"></a>
+
 ## ElasticsearchDataSourceConfigTypeDef
 
 ```python
@@ -698,6 +780,8 @@ Required fields:
 - `endpoint`: `str`
 - `awsRegion`: `str`
 
+<a id="flushapicacherequestrequesttypedef"></a>
+
 ## FlushApiCacheRequestRequestTypeDef
 
 ```python
@@ -707,6 +791,8 @@ from mypy_boto3_appsync.type_defs import FlushApiCacheRequestRequestTypeDef
 Required fields:
 
 - `apiId`: `str`
+
+<a id="functionconfigurationtypedef"></a>
 
 ## FunctionConfigurationTypeDef
 
@@ -727,6 +813,8 @@ Optional fields:
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 - `maxBatchSize`: `int`
 
+<a id="getapiassociationrequestrequesttypedef"></a>
+
 ## GetApiAssociationRequestRequestTypeDef
 
 ```python
@@ -736,6 +824,8 @@ from mypy_boto3_appsync.type_defs import GetApiAssociationRequestRequestTypeDef
 Required fields:
 
 - `domainName`: `str`
+
+<a id="getapiassociationresponsetypedef"></a>
 
 ## GetApiAssociationResponseTypeDef
 
@@ -750,6 +840,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapicacherequestrequesttypedef"></a>
+
 ## GetApiCacheRequestRequestTypeDef
 
 ```python
@@ -759,6 +851,8 @@ from mypy_boto3_appsync.type_defs import GetApiCacheRequestRequestTypeDef
 Required fields:
 
 - `apiId`: `str`
+
+<a id="getapicacheresponsetypedef"></a>
 
 ## GetApiCacheResponseTypeDef
 
@@ -772,6 +866,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdatasourcerequestrequesttypedef"></a>
+
 ## GetDataSourceRequestRequestTypeDef
 
 ```python
@@ -782,6 +878,8 @@ Required fields:
 
 - `apiId`: `str`
 - `name`: `str`
+
+<a id="getdatasourceresponsetypedef"></a>
 
 ## GetDataSourceResponseTypeDef
 
@@ -795,6 +893,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdomainnamerequestrequesttypedef"></a>
+
 ## GetDomainNameRequestRequestTypeDef
 
 ```python
@@ -804,6 +904,8 @@ from mypy_boto3_appsync.type_defs import GetDomainNameRequestRequestTypeDef
 Required fields:
 
 - `domainName`: `str`
+
+<a id="getdomainnameresponsetypedef"></a>
 
 ## GetDomainNameResponseTypeDef
 
@@ -818,6 +920,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfunctionrequestrequesttypedef"></a>
+
 ## GetFunctionRequestRequestTypeDef
 
 ```python
@@ -828,6 +932,8 @@ Required fields:
 
 - `apiId`: `str`
 - `functionId`: `str`
+
+<a id="getfunctionresponsetypedef"></a>
 
 ## GetFunctionResponseTypeDef
 
@@ -842,6 +948,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgraphqlapirequestrequesttypedef"></a>
+
 ## GetGraphqlApiRequestRequestTypeDef
 
 ```python
@@ -851,6 +959,8 @@ from mypy_boto3_appsync.type_defs import GetGraphqlApiRequestRequestTypeDef
 Required fields:
 
 - `apiId`: `str`
+
+<a id="getgraphqlapiresponsetypedef"></a>
 
 ## GetGraphqlApiResponseTypeDef
 
@@ -863,6 +973,8 @@ Required fields:
 - `graphqlApi`: [GraphqlApiTypeDef](./type_defs.md#graphqlapitypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getintrospectionschemarequestrequesttypedef"></a>
 
 ## GetIntrospectionSchemaRequestRequestTypeDef
 
@@ -879,6 +991,8 @@ Optional fields:
 
 - `includeDirectives`: `bool`
 
+<a id="getintrospectionschemaresponsetypedef"></a>
+
 ## GetIntrospectionSchemaResponseTypeDef
 
 ```python
@@ -890,6 +1004,8 @@ Required fields:
 - `schema`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getresolverrequestrequesttypedef"></a>
 
 ## GetResolverRequestRequestTypeDef
 
@@ -903,6 +1019,8 @@ Required fields:
 - `typeName`: `str`
 - `fieldName`: `str`
 
+<a id="getresolverresponsetypedef"></a>
+
 ## GetResolverResponseTypeDef
 
 ```python
@@ -915,6 +1033,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getschemacreationstatusrequestrequesttypedef"></a>
+
 ## GetSchemaCreationStatusRequestRequestTypeDef
 
 ```python
@@ -924,6 +1044,8 @@ from mypy_boto3_appsync.type_defs import GetSchemaCreationStatusRequestRequestTy
 Required fields:
 
 - `apiId`: `str`
+
+<a id="getschemacreationstatusresponsetypedef"></a>
 
 ## GetSchemaCreationStatusResponseTypeDef
 
@@ -938,6 +1060,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettyperequestrequesttypedef"></a>
+
 ## GetTypeRequestRequestTypeDef
 
 ```python
@@ -950,6 +1074,8 @@ Required fields:
 - `typeName`: `str`
 - `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
 
+<a id="gettyperesponsetypedef"></a>
+
 ## GetTypeResponseTypeDef
 
 ```python
@@ -961,6 +1087,8 @@ Required fields:
 - `type`: [TypeTypeDef](./type_defs.md#typetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="graphqlapitypedef"></a>
 
 ## GraphqlApiTypeDef
 
@@ -989,6 +1117,8 @@ Optional fields:
 - `lambdaAuthorizerConfig`:
   [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
+<a id="httpdatasourceconfigtypedef"></a>
+
 ## HttpDataSourceConfigTypeDef
 
 ```python
@@ -1000,6 +1130,8 @@ Optional fields:
 - `endpoint`: `str`
 - `authorizationConfig`:
   [AuthorizationConfigTypeDef](./type_defs.md#authorizationconfigtypedef)
+
+<a id="lambdaauthorizerconfigtypedef"></a>
 
 ## LambdaAuthorizerConfigTypeDef
 
@@ -1016,6 +1148,8 @@ Optional fields:
 - `authorizerResultTtlInSeconds`: `int`
 - `identityValidationExpression`: `str`
 
+<a id="lambdaconflicthandlerconfigtypedef"></a>
+
 ## LambdaConflictHandlerConfigTypeDef
 
 ```python
@@ -1026,6 +1160,8 @@ Optional fields:
 
 - `lambdaConflictHandlerArn`: `str`
 
+<a id="lambdadatasourceconfigtypedef"></a>
+
 ## LambdaDataSourceConfigTypeDef
 
 ```python
@@ -1035,6 +1171,8 @@ from mypy_boto3_appsync.type_defs import LambdaDataSourceConfigTypeDef
 Required fields:
 
 - `lambdaFunctionArn`: `str`
+
+<a id="listapikeysrequestrequesttypedef"></a>
 
 ## ListApiKeysRequestRequestTypeDef
 
@@ -1051,6 +1189,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listapikeysresponsetypedef"></a>
+
 ## ListApiKeysResponseTypeDef
 
 ```python
@@ -1063,6 +1203,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdatasourcesrequestrequesttypedef"></a>
 
 ## ListDataSourcesRequestRequestTypeDef
 
@@ -1079,6 +1221,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listdatasourcesresponsetypedef"></a>
+
 ## ListDataSourcesResponseTypeDef
 
 ```python
@@ -1093,6 +1237,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdomainnamesrequestrequesttypedef"></a>
+
 ## ListDomainNamesRequestRequestTypeDef
 
 ```python
@@ -1103,6 +1249,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listdomainnamesresponsetypedef"></a>
 
 ## ListDomainNamesResponseTypeDef
 
@@ -1117,6 +1265,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfunctionsrequestrequesttypedef"></a>
 
 ## ListFunctionsRequestRequestTypeDef
 
@@ -1133,6 +1283,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listfunctionsresponsetypedef"></a>
+
 ## ListFunctionsResponseTypeDef
 
 ```python
@@ -1147,6 +1299,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgraphqlapisrequestrequesttypedef"></a>
+
 ## ListGraphqlApisRequestRequestTypeDef
 
 ```python
@@ -1157,6 +1311,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listgraphqlapisresponsetypedef"></a>
 
 ## ListGraphqlApisResponseTypeDef
 
@@ -1171,6 +1327,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listresolversbyfunctionrequestrequesttypedef"></a>
 
 ## ListResolversByFunctionRequestRequestTypeDef
 
@@ -1188,6 +1346,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listresolversbyfunctionresponsetypedef"></a>
+
 ## ListResolversByFunctionResponseTypeDef
 
 ```python
@@ -1200,6 +1360,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listresolversrequestrequesttypedef"></a>
 
 ## ListResolversRequestRequestTypeDef
 
@@ -1217,6 +1379,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listresolversresponsetypedef"></a>
+
 ## ListResolversResponseTypeDef
 
 ```python
@@ -1230,6 +1394,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1239,6 +1405,8 @@ from mypy_boto3_appsync.type_defs import ListTagsForResourceRequestRequestTypeDe
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1251,6 +1419,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtypesrequestrequesttypedef"></a>
 
 ## ListTypesRequestRequestTypeDef
 
@@ -1268,6 +1438,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listtypesresponsetypedef"></a>
+
 ## ListTypesResponseTypeDef
 
 ```python
@@ -1280,6 +1452,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="logconfigtypedef"></a>
 
 ## LogConfigTypeDef
 
@@ -1295,6 +1469,8 @@ Required fields:
 Optional fields:
 
 - `excludeVerboseContent`: `bool`
+
+<a id="openidconnectconfigtypedef"></a>
 
 ## OpenIDConnectConfigTypeDef
 
@@ -1312,6 +1488,8 @@ Optional fields:
 - `iatTTL`: `int`
 - `authTTL`: `int`
 
+<a id="opensearchservicedatasourceconfigtypedef"></a>
+
 ## OpenSearchServiceDataSourceConfigTypeDef
 
 ```python
@@ -1322,6 +1500,8 @@ Required fields:
 
 - `endpoint`: `str`
 - `awsRegion`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1335,6 +1515,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="pipelineconfigtypedef"></a>
+
 ## PipelineConfigTypeDef
 
 ```python
@@ -1344,6 +1526,8 @@ from mypy_boto3_appsync.type_defs import PipelineConfigTypeDef
 Optional fields:
 
 - `functions`: `Sequence`\[`str`\]
+
+<a id="rdshttpendpointconfigtypedef"></a>
 
 ## RdsHttpEndpointConfigTypeDef
 
@@ -1359,6 +1543,8 @@ Optional fields:
 - `schema`: `str`
 - `awsSecretStoreArn`: `str`
 
+<a id="relationaldatabasedatasourceconfigtypedef"></a>
+
 ## RelationalDatabaseDataSourceConfigTypeDef
 
 ```python
@@ -1371,6 +1557,8 @@ Optional fields:
   [RelationalDatabaseSourceTypeType](./literals.md#relationaldatabasesourcetypetype))
 - `rdsHttpEndpointConfig`:
   [RdsHttpEndpointConfigTypeDef](./type_defs.md#rdshttpendpointconfigtypedef)
+
+<a id="resolvertypedef"></a>
 
 ## ResolverTypeDef
 
@@ -1393,6 +1581,8 @@ Optional fields:
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
 - `maxBatchSize`: `int`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1407,6 +1597,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="startschemacreationrequestrequesttypedef"></a>
+
 ## StartSchemaCreationRequestRequestTypeDef
 
 ```python
@@ -1417,6 +1609,8 @@ Required fields:
 
 - `apiId`: `str`
 - `definition`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="startschemacreationresponsetypedef"></a>
 
 ## StartSchemaCreationResponseTypeDef
 
@@ -1429,6 +1623,8 @@ Required fields:
 - `status`: [SchemaStatusType](./literals.md#schemastatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="syncconfigtypedef"></a>
 
 ## SyncConfigTypeDef
 
@@ -1445,6 +1641,8 @@ Optional fields:
 - `lambdaConflictHandlerConfig`:
   [LambdaConflictHandlerConfigTypeDef](./type_defs.md#lambdaconflicthandlerconfigtypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1455,6 +1653,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="typetypedef"></a>
 
 ## TypeTypeDef
 
@@ -1470,6 +1670,8 @@ Optional fields:
 - `definition`: `str`
 - `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1480,6 +1682,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapicacherequestrequesttypedef"></a>
 
 ## UpdateApiCacheRequestRequestTypeDef
 
@@ -1495,6 +1699,8 @@ Required fields:
   [ApiCachingBehaviorType](./literals.md#apicachingbehaviortype)
 - `type`: [ApiCacheTypeType](./literals.md#apicachetypetype)
 
+<a id="updateapicacheresponsetypedef"></a>
+
 ## UpdateApiCacheResponseTypeDef
 
 ```python
@@ -1506,6 +1712,8 @@ Required fields:
 - `apiCache`: [ApiCacheTypeDef](./type_defs.md#apicachetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateapikeyrequestrequesttypedef"></a>
 
 ## UpdateApiKeyRequestRequestTypeDef
 
@@ -1523,6 +1731,8 @@ Optional fields:
 - `description`: `str`
 - `expires`: `int`
 
+<a id="updateapikeyresponsetypedef"></a>
+
 ## UpdateApiKeyResponseTypeDef
 
 ```python
@@ -1534,6 +1744,8 @@ Required fields:
 - `apiKey`: [ApiKeyTypeDef](./type_defs.md#apikeytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedatasourcerequestrequesttypedef"></a>
 
 ## UpdateDataSourceRequestRequestTypeDef
 
@@ -1564,6 +1776,8 @@ Optional fields:
 - `relationalDatabaseConfig`:
   [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
 
+<a id="updatedatasourceresponsetypedef"></a>
+
 ## UpdateDataSourceResponseTypeDef
 
 ```python
@@ -1575,6 +1789,8 @@ Required fields:
 - `dataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedomainnamerequestrequesttypedef"></a>
 
 ## UpdateDomainNameRequestRequestTypeDef
 
@@ -1590,6 +1806,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="updatedomainnameresponsetypedef"></a>
+
 ## UpdateDomainNameResponseTypeDef
 
 ```python
@@ -1602,6 +1820,8 @@ Required fields:
   [DomainNameConfigTypeDef](./type_defs.md#domainnameconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefunctionrequestrequesttypedef"></a>
 
 ## UpdateFunctionRequestRequestTypeDef
 
@@ -1625,6 +1845,8 @@ Optional fields:
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 - `maxBatchSize`: `int`
 
+<a id="updatefunctionresponsetypedef"></a>
+
 ## UpdateFunctionResponseTypeDef
 
 ```python
@@ -1637,6 +1859,8 @@ Required fields:
   [FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updategraphqlapirequestrequesttypedef"></a>
 
 ## UpdateGraphqlApiRequestRequestTypeDef
 
@@ -1664,6 +1888,8 @@ Optional fields:
 - `lambdaAuthorizerConfig`:
   [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
+<a id="updategraphqlapiresponsetypedef"></a>
+
 ## UpdateGraphqlApiResponseTypeDef
 
 ```python
@@ -1675,6 +1901,8 @@ Required fields:
 - `graphqlApi`: [GraphqlApiTypeDef](./type_defs.md#graphqlapitypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateresolverrequestrequesttypedef"></a>
 
 ## UpdateResolverRequestRequestTypeDef
 
@@ -1700,6 +1928,8 @@ Optional fields:
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
 - `maxBatchSize`: `int`
 
+<a id="updateresolverresponsetypedef"></a>
+
 ## UpdateResolverResponseTypeDef
 
 ```python
@@ -1711,6 +1941,8 @@ Required fields:
 - `resolver`: [ResolverTypeDef](./type_defs.md#resolvertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetyperequestrequesttypedef"></a>
 
 ## UpdateTypeRequestRequestTypeDef
 
@@ -1728,6 +1960,8 @@ Optional fields:
 
 - `definition`: `str`
 
+<a id="updatetyperesponsetypedef"></a>
+
 ## UpdateTypeResponseTypeDef
 
 ```python
@@ -1739,6 +1973,8 @@ Required fields:
 - `type`: [TypeTypeDef](./type_defs.md#typetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="userpoolconfigtypedef"></a>
 
 ## UserPoolConfigTypeDef
 

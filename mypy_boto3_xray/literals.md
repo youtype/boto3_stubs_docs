@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-xray-module"></a>
+
 # Literals for boto3 XRay module
 
 > [Index](..) > [XRay](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
 type annotations stubs module
-[mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
+[mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
 
 - [Literals for boto3 XRay module](#literals-for-boto3-xray-module)
   - [BatchGetTracesPaginatorName](#batchgettracespaginatorname)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="batchgettracespaginatorname"></a>
+
 ## BatchGetTracesPaginatorName
 
 ```python
@@ -34,6 +38,8 @@ from mypy_boto3_xray.literals import BatchGetTracesPaginatorName
 Values:
 
 - `batch_get_traces`
+
+<a id="encryptionstatustype"></a>
 
 ## EncryptionStatusType
 
@@ -46,6 +52,8 @@ Values:
 - `ACTIVE`
 - `UPDATING`
 
+<a id="encryptiontypetype"></a>
+
 ## EncryptionTypeType
 
 ```python
@@ -57,6 +65,8 @@ Values:
 - `KMS`
 - `NONE`
 
+<a id="getgroupspaginatorname"></a>
+
 ## GetGroupsPaginatorName
 
 ```python
@@ -66,6 +76,8 @@ from mypy_boto3_xray.literals import GetGroupsPaginatorName
 Values:
 
 - `get_groups`
+
+<a id="getsamplingrulespaginatorname"></a>
 
 ## GetSamplingRulesPaginatorName
 
@@ -77,6 +89,8 @@ Values:
 
 - `get_sampling_rules`
 
+<a id="getsamplingstatisticsummariespaginatorname"></a>
+
 ## GetSamplingStatisticSummariesPaginatorName
 
 ```python
@@ -86,6 +100,8 @@ from mypy_boto3_xray.literals import GetSamplingStatisticSummariesPaginatorName
 Values:
 
 - `get_sampling_statistic_summaries`
+
+<a id="getservicegraphpaginatorname"></a>
 
 ## GetServiceGraphPaginatorName
 
@@ -97,6 +113,8 @@ Values:
 
 - `get_service_graph`
 
+<a id="gettimeseriesservicestatisticspaginatorname"></a>
+
 ## GetTimeSeriesServiceStatisticsPaginatorName
 
 ```python
@@ -106,6 +124,8 @@ from mypy_boto3_xray.literals import GetTimeSeriesServiceStatisticsPaginatorName
 Values:
 
 - `get_time_series_service_statistics`
+
+<a id="gettracegraphpaginatorname"></a>
 
 ## GetTraceGraphPaginatorName
 
@@ -117,6 +137,8 @@ Values:
 
 - `get_trace_graph`
 
+<a id="gettracesummariespaginatorname"></a>
+
 ## GetTraceSummariesPaginatorName
 
 ```python
@@ -127,6 +149,8 @@ Values:
 
 - `get_trace_summaries`
 
+<a id="insightcategorytype"></a>
+
 ## InsightCategoryType
 
 ```python
@@ -136,6 +160,8 @@ from mypy_boto3_xray.literals import InsightCategoryType
 Values:
 
 - `FAULT`
+
+<a id="insightstatetype"></a>
 
 ## InsightStateType
 
@@ -148,6 +174,8 @@ Values:
 - `ACTIVE`
 - `CLOSED`
 
+<a id="samplingstrategynametype"></a>
+
 ## SamplingStrategyNameType
 
 ```python
@@ -159,6 +187,8 @@ Values:
 - `FixedRate`
 - `PartialScan`
 
+<a id="timerangetypetype"></a>
+
 ## TimeRangeTypeType
 
 ```python
@@ -169,6 +199,8 @@ Values:
 
 - `Event`
 - `TraceId`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -477,6 +509,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

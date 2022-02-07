@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-acmpca-module"></a>
+
 # Type annotations for boto3 ACMPCA module
 
 > [Index](..) > ACMPCA
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
-[mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
+[mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[acm-pca]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[acm-pca]'
+
+# standalone installation
 pip install mypy-boto3-acm-pca
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-acm-pca
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="acmpcaclient"></a>
+
 ## ACMPCAClient
 
 Type annotations for `boto3.client("acm-pca")` as [ACMPCAClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_acm_pca.client import ACMPCAClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -61,6 +75,8 @@ from mypy_boto3_acm_pca.client import ACMPCAClient
 - [untag_certificate_authority](./client.md#untag_certificate_authority)
 - [update_certificate_authority](./client.md#update_certificate_authority)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ACMPCAClient [exceptions](./client.md#exceptions)
@@ -86,6 +102,8 @@ ACMPCAClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - TooManyTagsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -94,12 +112,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_acm_pca.paginators import ListCertificateAuthoritiesPaginator, ...
+from mypy_boto3_acm_pca.paginator import ListCertificateAuthoritiesPaginator, ...
 ```
 
 - [ListCertificateAuthoritiesPaginator](./paginators.md#listcertificateauthoritiespaginator)
 - [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
 - [ListTagsPaginator](./paginators.md#listtagspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -109,12 +129,14 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_acm_pca.waiters import AuditReportCreatedWaiter, ...
+from mypy_boto3_acm_pca.waiter import AuditReportCreatedWaiter, ...
 ```
 
 - [AuditReportCreatedWaiter](./waiters.md#auditreportcreatedwaiter)
 - [CertificateAuthorityCSRCreatedWaiter](./waiters.md#certificateauthoritycsrcreatedwaiter)
 - [CertificateIssuedWaiter](./waiters.md#certificateissuedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -151,6 +173,8 @@ from mypy_boto3_acm_pca.literals import AccessMethodTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

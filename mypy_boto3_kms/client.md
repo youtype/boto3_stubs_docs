@@ -1,3 +1,5 @@
+<a id="kmsclient-for-boto3-kms-module"></a>
+
 # KMSClient for boto3 KMS module
 
 > [Index](..) > [KMS](.) > KMSClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
 type annotations stubs module
-[mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
+[mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
 
 - [KMSClient for boto3 KMS module](#kmsclient-for-boto3-kms-module)
   - [KMSClient](#kmsclient)
@@ -64,6 +66,8 @@ type annotations stubs module
     - [verify](#verify)
     - [get_paginator](#get_paginator)
 
+<a id="kmsclient"></a>
+
 ## KMSClient
 
 Type annotations for `boto3.client("kms")`
@@ -71,14 +75,17 @@ Type annotations for `boto3.client("kms")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_kms.client import KMSClient
 
 def get_kms_client() -> KMSClient:
-    return boto3.client("kms")
+    return Session().client("kms")
 ```
 
 Boto3 documentation:
 [KMS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -129,7 +136,11 @@ Exceptions:
 - `Exceptions.TagException`
 - `Exceptions.UnsupportedOperationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -141,6 +152,8 @@ Boto3 documentation:
 [KMS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -156,6 +169,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_key_deletion"></a>
 
 ### cancel_key_deletion
 
@@ -175,6 +190,8 @@ Keyword-only arguments:
 
 Returns
 [CancelKeyDeletionResponseTypeDef](./type_defs.md#cancelkeydeletionresponsetypedef).
+
+<a id="connect_custom_key_store"></a>
 
 ### connect_custom_key_store
 
@@ -196,6 +213,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_alias"></a>
+
 ### create_alias
 
 Creates a friendly name for a KMS key.
@@ -212,6 +231,8 @@ Keyword-only arguments:
 
 - `AliasName`: `str` *(required)*
 - `TargetKeyId`: `str` *(required)*
+
+<a id="create_custom_key_store"></a>
 
 ### create_custom_key_store
 
@@ -238,6 +259,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCustomKeyStoreResponseTypeDef](./type_defs.md#createcustomkeystoreresponsetypedef).
+
+<a id="create_grant"></a>
 
 ### create_grant
 
@@ -266,6 +289,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGrantResponseTypeDef](./type_defs.md#creategrantresponsetypedef).
+
+<a id="create_key"></a>
 
 ### create_key
 
@@ -297,6 +322,8 @@ Keyword-only arguments:
 
 Returns [CreateKeyResponseTypeDef](./type_defs.md#createkeyresponsetypedef).
 
+<a id="decrypt"></a>
+
 ### decrypt
 
 Decrypts ciphertext that was encrypted by a KMS key using any of the following
@@ -324,6 +351,8 @@ Keyword-only arguments:
 
 Returns [DecryptResponseTypeDef](./type_defs.md#decryptresponsetypedef).
 
+<a id="delete_alias"></a>
+
 ### delete_alias
 
 Deletes the specified alias.
@@ -339,6 +368,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AliasName`: `str` *(required)*
+
+<a id="delete_custom_key_store"></a>
 
 ### delete_custom_key_store
 
@@ -360,6 +391,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_imported_key_material"></a>
+
 ### delete_imported_key_material
 
 Deletes key material that you previously imported.
@@ -375,6 +408,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
+
+<a id="describe_custom_key_stores"></a>
 
 ### describe_custom_key_stores
 
@@ -400,6 +435,8 @@ Keyword-only arguments:
 Returns
 [DescribeCustomKeyStoresResponseTypeDef](./type_defs.md#describecustomkeystoresresponsetypedef).
 
+<a id="describe_key"></a>
+
 ### describe_key
 
 Provides detailed information about a KMS key.
@@ -420,6 +457,8 @@ Keyword-only arguments:
 Returns
 [DescribeKeyResponseTypeDef](./type_defs.md#describekeyresponsetypedef).
 
+<a id="disable_key"></a>
+
 ### disable_key
 
 Sets the state of a KMS key to disabled.
@@ -435,6 +474,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
+
+<a id="disable_key_rotation"></a>
 
 ### disable_key_rotation
 
@@ -453,6 +494,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
+
+<a id="disconnect_custom_key_store"></a>
 
 ### disconnect_custom_key_store
 
@@ -474,6 +517,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="enable_key"></a>
+
 ### enable_key
 
 Sets the key state of a KMS key to enabled.
@@ -489,6 +534,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
+
+<a id="enable_key_rotation"></a>
 
 ### enable_key_rotation
 
@@ -507,6 +554,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
+
+<a id="encrypt"></a>
 
 ### encrypt
 
@@ -532,6 +581,8 @@ Keyword-only arguments:
 
 Returns [EncryptResponseTypeDef](./type_defs.md#encryptresponsetypedef).
 
+<a id="generate_data_key"></a>
+
 ### generate_data_key
 
 Generates a unique symmetric data key for client-side encryption.
@@ -555,6 +606,8 @@ Keyword-only arguments:
 Returns
 [GenerateDataKeyResponseTypeDef](./type_defs.md#generatedatakeyresponsetypedef).
 
+<a id="generate_data_key_pair"></a>
+
 ### generate_data_key_pair
 
 Generates a unique asymmetric data key pair.
@@ -577,6 +630,8 @@ Keyword-only arguments:
 
 Returns
 [GenerateDataKeyPairResponseTypeDef](./type_defs.md#generatedatakeypairresponsetypedef).
+
+<a id="generate_data_key_pair_without_plaintext"></a>
 
 ### generate_data_key_pair_without_plaintext
 
@@ -602,6 +657,8 @@ Keyword-only arguments:
 Returns
 [GenerateDataKeyPairWithoutPlaintextResponseTypeDef](./type_defs.md#generatedatakeypairwithoutplaintextresponsetypedef).
 
+<a id="generate_data_key_without_plaintext"></a>
+
 ### generate_data_key_without_plaintext
 
 Generates a unique symmetric data key.
@@ -626,6 +683,8 @@ Keyword-only arguments:
 Returns
 [GenerateDataKeyWithoutPlaintextResponseTypeDef](./type_defs.md#generatedatakeywithoutplaintextresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -643,6 +702,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="generate_random"></a>
 
 ### generate_random
 
@@ -664,6 +725,8 @@ Keyword-only arguments:
 Returns
 [GenerateRandomResponseTypeDef](./type_defs.md#generaterandomresponsetypedef).
 
+<a id="get_key_policy"></a>
+
 ### get_key_policy
 
 Gets a key policy attached to the specified KMS key.
@@ -683,6 +746,8 @@ Keyword-only arguments:
 
 Returns
 [GetKeyPolicyResponseTypeDef](./type_defs.md#getkeypolicyresponsetypedef).
+
+<a id="get_key_rotation_status"></a>
 
 ### get_key_rotation_status
 
@@ -704,6 +769,8 @@ Keyword-only arguments:
 
 Returns
 [GetKeyRotationStatusResponseTypeDef](./type_defs.md#getkeyrotationstatusresponsetypedef).
+
+<a id="get_parameters_for_import"></a>
 
 ### get_parameters_for_import
 
@@ -729,6 +796,8 @@ Keyword-only arguments:
 Returns
 [GetParametersForImportResponseTypeDef](./type_defs.md#getparametersforimportresponsetypedef).
 
+<a id="get_public_key"></a>
+
 ### get_public_key
 
 Returns the public key of an asymmetric KMS key.
@@ -748,6 +817,8 @@ Keyword-only arguments:
 
 Returns
 [GetPublicKeyResponseTypeDef](./type_defs.md#getpublickeyresponsetypedef).
+
+<a id="import_key_material"></a>
 
 ### import_key_material
 
@@ -775,6 +846,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="list_aliases"></a>
+
 ### list_aliases
 
 Gets a list of aliases in the caller's Amazon Web Services account and region.
@@ -795,6 +868,8 @@ Keyword-only arguments:
 
 Returns
 [ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
+
+<a id="list_grants"></a>
 
 ### list_grants
 
@@ -818,6 +893,8 @@ Keyword-only arguments:
 
 Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 
+<a id="list_key_policies"></a>
+
 ### list_key_policies
 
 Gets the names of the key policies that are attached to a KMS key.
@@ -839,6 +916,8 @@ Keyword-only arguments:
 Returns
 [ListKeyPoliciesResponseTypeDef](./type_defs.md#listkeypoliciesresponsetypedef).
 
+<a id="list_keys"></a>
+
 ### list_keys
 
 Gets a list of all KMS keys in the caller's Amazon Web Services account and
@@ -858,6 +937,8 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns [ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef).
+
+<a id="list_resource_tags"></a>
 
 ### list_resource_tags
 
@@ -880,6 +961,8 @@ Keyword-only arguments:
 Returns
 [ListResourceTagsResponseTypeDef](./type_defs.md#listresourcetagsresponsetypedef).
 
+<a id="list_retirable_grants"></a>
+
 ### list_retirable_grants
 
 Returns information about all grants in the Amazon Web Services account and
@@ -901,6 +984,8 @@ Keyword-only arguments:
 
 Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 
+<a id="put_key_policy"></a>
+
 ### put_key_policy
 
 Attaches a key policy to the specified KMS key.
@@ -919,6 +1004,8 @@ Keyword-only arguments:
 - `PolicyName`: `str` *(required)*
 - `Policy`: `str` *(required)*
 - `BypassPolicyLockoutSafetyCheck`: `bool`
+
+<a id="re_encrypt"></a>
 
 ### re_encrypt
 
@@ -948,6 +1035,8 @@ Keyword-only arguments:
 
 Returns [ReEncryptResponseTypeDef](./type_defs.md#reencryptresponsetypedef).
 
+<a id="replicate_key"></a>
+
 ### replicate_key
 
 Replicates a multi-Region key into the specified Region.
@@ -972,6 +1061,8 @@ Keyword-only arguments:
 Returns
 [ReplicateKeyResponseTypeDef](./type_defs.md#replicatekeyresponsetypedef).
 
+<a id="retire_grant"></a>
+
 ### retire_grant
 
 Deletes a grant.
@@ -990,6 +1081,8 @@ Keyword-only arguments:
 - `KeyId`: `str`
 - `GrantId`: `str`
 
+<a id="revoke_grant"></a>
+
 ### revoke_grant
 
 Deletes the specified grant.
@@ -1006,6 +1099,8 @@ Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `GrantId`: `str` *(required)*
+
+<a id="schedule_key_deletion"></a>
 
 ### schedule_key_deletion
 
@@ -1026,6 +1121,8 @@ Keyword-only arguments:
 
 Returns
 [ScheduleKeyDeletionResponseTypeDef](./type_defs.md#schedulekeydeletionresponsetypedef).
+
+<a id="sign"></a>
 
 ### sign
 
@@ -1053,6 +1150,8 @@ Keyword-only arguments:
 
 Returns [SignResponseTypeDef](./type_defs.md#signresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or edits tags on a \[customer managed
@@ -1071,6 +1170,8 @@ Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -1091,6 +1192,8 @@ Keyword-only arguments:
 - `KeyId`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
+<a id="update_alias"></a>
+
 ### update_alias
 
 Associates an existing KMS alias with a different KMS key.
@@ -1107,6 +1210,8 @@ Keyword-only arguments:
 
 - `AliasName`: `str` *(required)*
 - `TargetKeyId`: `str` *(required)*
+
+<a id="update_custom_key_store"></a>
 
 ### update_custom_key_store
 
@@ -1129,6 +1234,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_key_description"></a>
+
 ### update_key_description
 
 Updates the description of a KMS key.
@@ -1146,6 +1253,8 @@ Keyword-only arguments:
 - `KeyId`: `str` *(required)*
 - `Description`: `str` *(required)*
 
+<a id="update_primary_region"></a>
+
 ### update_primary_region
 
 Changes the primary key of a multi-Region key.
@@ -1162,6 +1271,8 @@ Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `PrimaryRegion`: `str` *(required)*
+
+<a id="verify"></a>
 
 ### verify
 
@@ -1188,6 +1299,8 @@ Keyword-only arguments:
 - `GrantTokens`: `Sequence`\[`str`\]
 
 Returns [VerifyResponseTypeDef](./type_defs.md#verifyresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-transfer-module"></a>
+
 # Literals for boto3 Transfer module
 
 > [Index](..) > [Transfer](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
 type annotations stubs module
-[mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
+[mypy-boto3-transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 - [Literals for boto3 Transfer module](#literals-for-boto3-transfer-module)
   - [CustomStepStatusType](#customstepstatustype)
@@ -24,6 +26,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="customstepstatustype"></a>
+
 ## CustomStepStatusType
 
 ```python
@@ -35,6 +39,8 @@ Values:
 - `FAILURE`
 - `SUCCESS`
 
+<a id="domaintype"></a>
+
 ## DomainType
 
 ```python
@@ -45,6 +51,8 @@ Values:
 
 - `EFS`
 - `S3`
+
+<a id="endpointtypetype"></a>
 
 ## EndpointTypeType
 
@@ -58,6 +66,8 @@ Values:
 - `VPC`
 - `VPC_ENDPOINT`
 
+<a id="executionerrortypetype"></a>
+
 ## ExecutionErrorTypeType
 
 ```python
@@ -67,6 +77,8 @@ from mypy_boto3_transfer.literals import ExecutionErrorTypeType
 Values:
 
 - `PERMISSION_DENIED`
+
+<a id="executionstatustype"></a>
 
 ## ExecutionStatusType
 
@@ -81,6 +93,8 @@ Values:
 - `HANDLING_EXCEPTION`
 - `IN_PROGRESS`
 
+<a id="homedirectorytypetype"></a>
+
 ## HomeDirectoryTypeType
 
 ```python
@@ -91,6 +105,8 @@ Values:
 
 - `LOGICAL`
 - `PATH`
+
+<a id="identityprovidertypetype"></a>
 
 ## IdentityProviderTypeType
 
@@ -105,6 +121,8 @@ Values:
 - `AWS_LAMBDA`
 - `SERVICE_MANAGED`
 
+<a id="listserverspaginatorname"></a>
+
 ## ListServersPaginatorName
 
 ```python
@@ -114,6 +132,8 @@ from mypy_boto3_transfer.literals import ListServersPaginatorName
 Values:
 
 - `list_servers`
+
+<a id="overwriteexistingtype"></a>
 
 ## OverwriteExistingType
 
@@ -126,6 +146,8 @@ Values:
 - `FALSE`
 - `TRUE`
 
+<a id="protocoltype"></a>
+
 ## ProtocolType
 
 ```python
@@ -137,6 +159,8 @@ Values:
 - `FTP`
 - `FTPS`
 - `SFTP`
+
+<a id="statetype"></a>
 
 ## StateType
 
@@ -153,6 +177,8 @@ Values:
 - `STOP_FAILED`
 - `STOPPING`
 
+<a id="tlssessionresumptionmodetype"></a>
+
 ## TlsSessionResumptionModeType
 
 ```python
@@ -164,6 +190,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 - `ENFORCED`
+
+<a id="workflowsteptypetype"></a>
 
 ## WorkflowStepTypeType
 
@@ -177,6 +205,8 @@ Values:
 - `CUSTOM`
 - `DELETE`
 - `TAG`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -485,6 +515,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

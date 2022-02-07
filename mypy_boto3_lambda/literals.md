@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-lambda-module"></a>
+
 # Literals for boto3 Lambda module
 
 > [Index](..) > [Lambda](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
 type annotations stubs module
-[mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
+[mypy-boto3-lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
 - [Literals for boto3 Lambda module](#literals-for-boto3-lambda-module)
   - [ArchitectureType](#architecturetype)
@@ -42,6 +44,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="architecturetype"></a>
+
 ## ArchitectureType
 
 ```python
@@ -52,6 +56,8 @@ Values:
 
 - `arm64`
 - `x86_64`
+
+<a id="codesigningpolicytype"></a>
 
 ## CodeSigningPolicyType
 
@@ -64,6 +70,8 @@ Values:
 - `Enforce`
 - `Warn`
 
+<a id="endpointtypetype"></a>
+
 ## EndPointTypeType
 
 ```python
@@ -73,6 +81,8 @@ from mypy_boto3_lambda.literals import EndPointTypeType
 Values:
 
 - `KAFKA_BOOTSTRAP_SERVERS`
+
+<a id="eventsourcepositiontype"></a>
 
 ## EventSourcePositionType
 
@@ -86,6 +96,8 @@ Values:
 - `LATEST`
 - `TRIM_HORIZON`
 
+<a id="functionactivewaitername"></a>
+
 ## FunctionActiveWaiterName
 
 ```python
@@ -95,6 +107,8 @@ from mypy_boto3_lambda.literals import FunctionActiveWaiterName
 Values:
 
 - `function_active`
+
+<a id="functionexistswaitername"></a>
 
 ## FunctionExistsWaiterName
 
@@ -106,6 +120,8 @@ Values:
 
 - `function_exists`
 
+<a id="functionresponsetypetype"></a>
+
 ## FunctionResponseTypeType
 
 ```python
@@ -115,6 +131,8 @@ from mypy_boto3_lambda.literals import FunctionResponseTypeType
 Values:
 
 - `ReportBatchItemFailures`
+
+<a id="functionupdatedwaitername"></a>
 
 ## FunctionUpdatedWaiterName
 
@@ -126,6 +144,8 @@ Values:
 
 - `function_updated`
 
+<a id="functionversiontype"></a>
+
 ## FunctionVersionType
 
 ```python
@@ -135,6 +155,8 @@ from mypy_boto3_lambda.literals import FunctionVersionType
 Values:
 
 - `ALL`
+
+<a id="invocationtypetype"></a>
 
 ## InvocationTypeType
 
@@ -147,6 +169,8 @@ Values:
 - `DryRun`
 - `Event`
 - `RequestResponse`
+
+<a id="lastupdatestatusreasoncodetype"></a>
 
 ## LastUpdateStatusReasonCodeType
 
@@ -167,6 +191,8 @@ Values:
 - `InvalidSubnet`
 - `SubnetOutOfIPAddresses`
 
+<a id="lastupdatestatustype"></a>
+
 ## LastUpdateStatusType
 
 ```python
@@ -179,6 +205,8 @@ Values:
 - `InProgress`
 - `Successful`
 
+<a id="listaliasespaginatorname"></a>
+
 ## ListAliasesPaginatorName
 
 ```python
@@ -188,6 +216,8 @@ from mypy_boto3_lambda.literals import ListAliasesPaginatorName
 Values:
 
 - `list_aliases`
+
+<a id="listcodesigningconfigspaginatorname"></a>
 
 ## ListCodeSigningConfigsPaginatorName
 
@@ -199,6 +229,8 @@ Values:
 
 - `list_code_signing_configs`
 
+<a id="listeventsourcemappingspaginatorname"></a>
+
 ## ListEventSourceMappingsPaginatorName
 
 ```python
@@ -208,6 +240,8 @@ from mypy_boto3_lambda.literals import ListEventSourceMappingsPaginatorName
 Values:
 
 - `list_event_source_mappings`
+
+<a id="listfunctioneventinvokeconfigspaginatorname"></a>
 
 ## ListFunctionEventInvokeConfigsPaginatorName
 
@@ -219,6 +253,8 @@ Values:
 
 - `list_function_event_invoke_configs`
 
+<a id="listfunctionsbycodesigningconfigpaginatorname"></a>
+
 ## ListFunctionsByCodeSigningConfigPaginatorName
 
 ```python
@@ -228,6 +264,8 @@ from mypy_boto3_lambda.literals import ListFunctionsByCodeSigningConfigPaginator
 Values:
 
 - `list_functions_by_code_signing_config`
+
+<a id="listfunctionspaginatorname"></a>
 
 ## ListFunctionsPaginatorName
 
@@ -239,6 +277,8 @@ Values:
 
 - `list_functions`
 
+<a id="listlayerversionspaginatorname"></a>
+
 ## ListLayerVersionsPaginatorName
 
 ```python
@@ -248,6 +288,8 @@ from mypy_boto3_lambda.literals import ListLayerVersionsPaginatorName
 Values:
 
 - `list_layer_versions`
+
+<a id="listlayerspaginatorname"></a>
 
 ## ListLayersPaginatorName
 
@@ -259,6 +301,8 @@ Values:
 
 - `list_layers`
 
+<a id="listprovisionedconcurrencyconfigspaginatorname"></a>
+
 ## ListProvisionedConcurrencyConfigsPaginatorName
 
 ```python
@@ -269,6 +313,8 @@ Values:
 
 - `list_provisioned_concurrency_configs`
 
+<a id="listversionsbyfunctionpaginatorname"></a>
+
 ## ListVersionsByFunctionPaginatorName
 
 ```python
@@ -278,6 +324,8 @@ from mypy_boto3_lambda.literals import ListVersionsByFunctionPaginatorName
 Values:
 
 - `list_versions_by_function`
+
+<a id="logtypetype"></a>
 
 ## LogTypeType
 
@@ -290,6 +338,8 @@ Values:
 - `None`
 - `Tail`
 
+<a id="packagetypetype"></a>
+
 ## PackageTypeType
 
 ```python
@@ -300,6 +350,8 @@ Values:
 
 - `Image`
 - `Zip`
+
+<a id="provisionedconcurrencystatusenumtype"></a>
 
 ## ProvisionedConcurrencyStatusEnumType
 
@@ -312,6 +364,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `READY`
+
+<a id="runtimetype"></a>
 
 ## RuntimeType
 
@@ -347,6 +401,8 @@ Values:
 - `ruby2.5`
 - `ruby2.7`
 
+<a id="sourceaccesstypetype"></a>
+
 ## SourceAccessTypeType
 
 ```python
@@ -363,6 +419,8 @@ Values:
 - `VIRTUAL_HOST`
 - `VPC_SECURITY_GROUP`
 - `VPC_SUBNET`
+
+<a id="statereasoncodetype"></a>
 
 ## StateReasonCodeType
 
@@ -386,6 +444,8 @@ Values:
 - `Restoring`
 - `SubnetOutOfIPAddresses`
 
+<a id="statetype"></a>
+
 ## StateType
 
 ```python
@@ -399,6 +459,8 @@ Values:
 - `Inactive`
 - `Pending`
 
+<a id="tracingmodetype"></a>
+
 ## TracingModeType
 
 ```python
@@ -409,6 +471,8 @@ Values:
 
 - `Active`
 - `PassThrough`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -718,6 +782,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -736,6 +802,8 @@ Values:
 - `list_layers`
 - `list_provisioned_concurrency_configs`
 - `list_versions_by_function`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

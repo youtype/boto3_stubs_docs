@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-codebuild-module"></a>
+
 # Paginators for boto3 CodeBuild module
 
 > [Index](..) > [CodeBuild](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module
-[mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
+[mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 - [Paginators for boto3 CodeBuild module](#paginators-for-boto3-codebuild-module)
   - [DescribeCodeCoveragesPaginator](#describecodecoveragespaginator)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [ListSharedProjectsPaginator](#listsharedprojectspaginator)
   - [ListSharedReportGroupsPaginator](#listsharedreportgroupspaginator)
 
+<a id="describecodecoveragespaginator"></a>
+
 ## DescribeCodeCoveragesPaginator
 
 Type annotations for
@@ -29,10 +33,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import DescribeCodeCoveragesPaginator
 
 def get_describe_code_coverages_paginator() -> DescribeCodeCoveragesPaginator:
-    return boto3.client("codebuild").get_paginator("describe_code_coverages")
+    return Session().client("codebuild").get_paginator("describe_code_coverages")
 ```
 
 Boto3 documentation:
@@ -52,6 +58,8 @@ Arguments for `DescribeCodeCoveragesPaginator.paginate` method:
 `DescribeCodeCoveragesPaginator.paginate` returns
 `_PageIterator`\[[DescribeCodeCoveragesOutputTypeDef](./type_defs.md#describecodecoveragesoutputtypedef)\].
 
+<a id="describetestcasespaginator"></a>
+
 ## DescribeTestCasesPaginator
 
 Type annotations for
@@ -60,10 +68,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import DescribeTestCasesPaginator
 
 def get_describe_test_cases_paginator() -> DescribeTestCasesPaginator:
-    return boto3.client("codebuild").get_paginator("describe_test_cases")
+    return Session().client("codebuild").get_paginator("describe_test_cases")
 ```
 
 Boto3 documentation:
@@ -79,6 +89,8 @@ Arguments for `DescribeTestCasesPaginator.paginate` method:
 `DescribeTestCasesPaginator.paginate` returns
 `_PageIterator`\[[DescribeTestCasesOutputTypeDef](./type_defs.md#describetestcasesoutputtypedef)\].
 
+<a id="listbuildbatchespaginator"></a>
+
 ## ListBuildBatchesPaginator
 
 Type annotations for
@@ -87,10 +99,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import ListBuildBatchesPaginator
 
 def get_list_build_batches_paginator() -> ListBuildBatchesPaginator:
-    return boto3.client("codebuild").get_paginator("list_build_batches")
+    return Session().client("codebuild").get_paginator("list_build_batches")
 ```
 
 Boto3 documentation:
@@ -106,6 +120,8 @@ Arguments for `ListBuildBatchesPaginator.paginate` method:
 `ListBuildBatchesPaginator.paginate` returns
 `_PageIterator`\[[ListBuildBatchesOutputTypeDef](./type_defs.md#listbuildbatchesoutputtypedef)\].
 
+<a id="listbuildbatchesforprojectpaginator"></a>
+
 ## ListBuildBatchesForProjectPaginator
 
 Type annotations for
@@ -114,10 +130,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import ListBuildBatchesForProjectPaginator
 
 def get_list_build_batches_for_project_paginator() -> ListBuildBatchesForProjectPaginator:
-    return boto3.client("codebuild").get_paginator("list_build_batches_for_project")
+    return Session().client("codebuild").get_paginator("list_build_batches_for_project")
 ```
 
 Boto3 documentation:
@@ -134,6 +152,8 @@ Arguments for `ListBuildBatchesForProjectPaginator.paginate` method:
 `ListBuildBatchesForProjectPaginator.paginate` returns
 `_PageIterator`\[[ListBuildBatchesForProjectOutputTypeDef](./type_defs.md#listbuildbatchesforprojectoutputtypedef)\].
 
+<a id="listbuildspaginator"></a>
+
 ## ListBuildsPaginator
 
 Type annotations for `boto3.client("codebuild").get_paginator("list_builds")`.
@@ -141,10 +161,12 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_builds")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import ListBuildsPaginator
 
 def get_list_builds_paginator() -> ListBuildsPaginator:
-    return boto3.client("codebuild").get_paginator("list_builds")
+    return Session().client("codebuild").get_paginator("list_builds")
 ```
 
 Boto3 documentation:
@@ -159,6 +181,8 @@ Arguments for `ListBuildsPaginator.paginate` method:
 `ListBuildsPaginator.paginate` returns
 `_PageIterator`\[[ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef)\].
 
+<a id="listbuildsforprojectpaginator"></a>
+
 ## ListBuildsForProjectPaginator
 
 Type annotations for
@@ -167,10 +191,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import ListBuildsForProjectPaginator
 
 def get_list_builds_for_project_paginator() -> ListBuildsForProjectPaginator:
-    return boto3.client("codebuild").get_paginator("list_builds_for_project")
+    return Session().client("codebuild").get_paginator("list_builds_for_project")
 ```
 
 Boto3 documentation:
@@ -186,6 +212,8 @@ Arguments for `ListBuildsForProjectPaginator.paginate` method:
 `ListBuildsForProjectPaginator.paginate` returns
 `_PageIterator`\[[ListBuildsForProjectOutputTypeDef](./type_defs.md#listbuildsforprojectoutputtypedef)\].
 
+<a id="listprojectspaginator"></a>
+
 ## ListProjectsPaginator
 
 Type annotations for
@@ -194,10 +222,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
-    return boto3.client("codebuild").get_paginator("list_projects")
+    return Session().client("codebuild").get_paginator("list_projects")
 ```
 
 Boto3 documentation:
@@ -213,6 +243,8 @@ Arguments for `ListProjectsPaginator.paginate` method:
 `ListProjectsPaginator.paginate` returns
 `_PageIterator`\[[ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef)\].
 
+<a id="listreportgroupspaginator"></a>
+
 ## ListReportGroupsPaginator
 
 Type annotations for
@@ -221,10 +253,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import ListReportGroupsPaginator
 
 def get_list_report_groups_paginator() -> ListReportGroupsPaginator:
-    return boto3.client("codebuild").get_paginator("list_report_groups")
+    return Session().client("codebuild").get_paginator("list_report_groups")
 ```
 
 Boto3 documentation:
@@ -241,6 +275,8 @@ Arguments for `ListReportGroupsPaginator.paginate` method:
 `ListReportGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListReportGroupsOutputTypeDef](./type_defs.md#listreportgroupsoutputtypedef)\].
 
+<a id="listreportspaginator"></a>
+
 ## ListReportsPaginator
 
 Type annotations for `boto3.client("codebuild").get_paginator("list_reports")`.
@@ -248,10 +284,12 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_reports")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import ListReportsPaginator
 
 def get_list_reports_paginator() -> ListReportsPaginator:
-    return boto3.client("codebuild").get_paginator("list_reports")
+    return Session().client("codebuild").get_paginator("list_reports")
 ```
 
 Boto3 documentation:
@@ -267,6 +305,8 @@ Arguments for `ListReportsPaginator.paginate` method:
 `ListReportsPaginator.paginate` returns
 `_PageIterator`\[[ListReportsOutputTypeDef](./type_defs.md#listreportsoutputtypedef)\].
 
+<a id="listreportsforreportgrouppaginator"></a>
+
 ## ListReportsForReportGroupPaginator
 
 Type annotations for
@@ -275,10 +315,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import ListReportsForReportGroupPaginator
 
 def get_list_reports_for_report_group_paginator() -> ListReportsForReportGroupPaginator:
-    return boto3.client("codebuild").get_paginator("list_reports_for_report_group")
+    return Session().client("codebuild").get_paginator("list_reports_for_report_group")
 ```
 
 Boto3 documentation:
@@ -295,6 +337,8 @@ Arguments for `ListReportsForReportGroupPaginator.paginate` method:
 `ListReportsForReportGroupPaginator.paginate` returns
 `_PageIterator`\[[ListReportsForReportGroupOutputTypeDef](./type_defs.md#listreportsforreportgroupoutputtypedef)\].
 
+<a id="listsharedprojectspaginator"></a>
+
 ## ListSharedProjectsPaginator
 
 Type annotations for
@@ -303,10 +347,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import ListSharedProjectsPaginator
 
 def get_list_shared_projects_paginator() -> ListSharedProjectsPaginator:
-    return boto3.client("codebuild").get_paginator("list_shared_projects")
+    return Session().client("codebuild").get_paginator("list_shared_projects")
 ```
 
 Boto3 documentation:
@@ -323,6 +369,8 @@ Arguments for `ListSharedProjectsPaginator.paginate` method:
 `ListSharedProjectsPaginator.paginate` returns
 `_PageIterator`\[[ListSharedProjectsOutputTypeDef](./type_defs.md#listsharedprojectsoutputtypedef)\].
 
+<a id="listsharedreportgroupspaginator"></a>
+
 ## ListSharedReportGroupsPaginator
 
 Type annotations for
@@ -331,10 +379,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codebuild.paginator import ListSharedReportGroupsPaginator
 
 def get_list_shared_report_groups_paginator() -> ListSharedReportGroupsPaginator:
-    return boto3.client("codebuild").get_paginator("list_shared_report_groups")
+    return Session().client("codebuild").get_paginator("list_shared_report_groups")
 ```
 
 Boto3 documentation:

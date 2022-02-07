@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-proton-module"></a>
+
 # Typed dictionaries for boto3 Proton module
 
 > [Index](..) > [Proton](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
 type annotations stubs module
-[mypy_boto3_proton](https://pypi.org/project/mypy-boto3-proton/).
+[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 - [Typed dictionaries for boto3 Proton module](#typed-dictionaries-for-boto3-proton-module)
   - [AcceptEnvironmentAccountConnectionInputRequestTypeDef](#acceptenvironmentaccountconnectioninputrequesttypedef)
@@ -179,6 +181,8 @@ type annotations stubs module
   - [UpdateTemplateSyncConfigOutputTypeDef](#updatetemplatesyncconfigoutputtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="acceptenvironmentaccountconnectioninputrequesttypedef"></a>
+
 ## AcceptEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
@@ -188,6 +192,8 @@ from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionInputR
 Required fields:
 
 - `id`: `str`
+
+<a id="acceptenvironmentaccountconnectionoutputtypedef"></a>
 
 ## AcceptEnvironmentAccountConnectionOutputTypeDef
 
@@ -202,6 +208,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="accountsettingstypedef"></a>
+
 ## AccountSettingsTypeDef
 
 ```python
@@ -214,6 +222,8 @@ Optional fields:
   [RepositoryBranchTypeDef](./type_defs.md#repositorybranchtypedef)
 - `pipelineServiceRoleArn`: `str`
 
+<a id="cancelenvironmentdeploymentinputrequesttypedef"></a>
+
 ## CancelEnvironmentDeploymentInputRequestTypeDef
 
 ```python
@@ -223,6 +233,8 @@ from mypy_boto3_proton.type_defs import CancelEnvironmentDeploymentInputRequestT
 Required fields:
 
 - `environmentName`: `str`
+
+<a id="cancelenvironmentdeploymentoutputtypedef"></a>
 
 ## CancelEnvironmentDeploymentOutputTypeDef
 
@@ -236,6 +248,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cancelserviceinstancedeploymentinputrequesttypedef"></a>
+
 ## CancelServiceInstanceDeploymentInputRequestTypeDef
 
 ```python
@@ -246,6 +260,8 @@ Required fields:
 
 - `serviceInstanceName`: `str`
 - `serviceName`: `str`
+
+<a id="cancelserviceinstancedeploymentoutputtypedef"></a>
 
 ## CancelServiceInstanceDeploymentOutputTypeDef
 
@@ -260,6 +276,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cancelservicepipelinedeploymentinputrequesttypedef"></a>
+
 ## CancelServicePipelineDeploymentInputRequestTypeDef
 
 ```python
@@ -269,6 +287,8 @@ from mypy_boto3_proton.type_defs import CancelServicePipelineDeploymentInputRequ
 Required fields:
 
 - `serviceName`: `str`
+
+<a id="cancelservicepipelinedeploymentoutputtypedef"></a>
 
 ## CancelServicePipelineDeploymentOutputTypeDef
 
@@ -282,6 +302,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="compatibleenvironmenttemplateinputtypedef"></a>
+
 ## CompatibleEnvironmentTemplateInputTypeDef
 
 ```python
@@ -293,6 +315,8 @@ Required fields:
 - `majorVersion`: `str`
 - `templateName`: `str`
 
+<a id="compatibleenvironmenttemplatetypedef"></a>
+
 ## CompatibleEnvironmentTemplateTypeDef
 
 ```python
@@ -303,6 +327,8 @@ Required fields:
 
 - `majorVersion`: `str`
 - `templateName`: `str`
+
+<a id="createenvironmentaccountconnectioninputrequesttypedef"></a>
 
 ## CreateEnvironmentAccountConnectionInputRequestTypeDef
 
@@ -321,6 +347,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createenvironmentaccountconnectionoutputtypedef"></a>
+
 ## CreateEnvironmentAccountConnectionOutputTypeDef
 
 ```python
@@ -333,6 +361,8 @@ Required fields:
   [EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createenvironmentinputrequesttypedef"></a>
 
 ## CreateEnvironmentInputRequestTypeDef
 
@@ -357,6 +387,8 @@ Optional fields:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `templateMinorVersion`: `str`
 
+<a id="createenvironmentoutputtypedef"></a>
+
 ## CreateEnvironmentOutputTypeDef
 
 ```python
@@ -368,6 +400,8 @@ Required fields:
 - `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createenvironmenttemplateinputrequesttypedef"></a>
 
 ## CreateEnvironmentTemplateInputRequestTypeDef
 
@@ -388,6 +422,8 @@ Optional fields:
   [ProvisioningType](./literals.md#provisioningtype))
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createenvironmenttemplateoutputtypedef"></a>
+
 ## CreateEnvironmentTemplateOutputTypeDef
 
 ```python
@@ -400,6 +436,8 @@ Required fields:
   [EnvironmentTemplateTypeDef](./type_defs.md#environmenttemplatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createenvironmenttemplateversioninputrequesttypedef"></a>
 
 ## CreateEnvironmentTemplateVersionInputRequestTypeDef
 
@@ -420,6 +458,8 @@ Optional fields:
 - `majorVersion`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createenvironmenttemplateversionoutputtypedef"></a>
+
 ## CreateEnvironmentTemplateVersionOutputTypeDef
 
 ```python
@@ -432,6 +472,8 @@ Required fields:
   [EnvironmentTemplateVersionTypeDef](./type_defs.md#environmenttemplateversiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrepositoryinputrequesttypedef"></a>
 
 ## CreateRepositoryInputRequestTypeDef
 
@@ -449,6 +491,8 @@ Optional fields:
 
 - `encryptionKey`: `str`
 
+<a id="createrepositoryoutputtypedef"></a>
+
 ## CreateRepositoryOutputTypeDef
 
 ```python
@@ -460,6 +504,8 @@ Required fields:
 - `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createserviceinputrequesttypedef"></a>
 
 ## CreateServiceInputRequestTypeDef
 
@@ -483,6 +529,8 @@ Optional fields:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `templateMinorVersion`: `str`
 
+<a id="createserviceoutputtypedef"></a>
+
 ## CreateServiceOutputTypeDef
 
 ```python
@@ -494,6 +542,8 @@ Required fields:
 - `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createservicetemplateinputrequesttypedef"></a>
 
 ## CreateServiceTemplateInputRequestTypeDef
 
@@ -514,6 +564,8 @@ Optional fields:
   [ProvisioningType](./literals.md#provisioningtype))
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createservicetemplateoutputtypedef"></a>
+
 ## CreateServiceTemplateOutputTypeDef
 
 ```python
@@ -526,6 +578,8 @@ Required fields:
   [ServiceTemplateTypeDef](./type_defs.md#servicetemplatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createservicetemplateversioninputrequesttypedef"></a>
 
 ## CreateServiceTemplateVersionInputRequestTypeDef
 
@@ -548,6 +602,8 @@ Optional fields:
 - `majorVersion`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createservicetemplateversionoutputtypedef"></a>
+
 ## CreateServiceTemplateVersionOutputTypeDef
 
 ```python
@@ -560,6 +616,8 @@ Required fields:
   [ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtemplatesyncconfiginputrequesttypedef"></a>
 
 ## CreateTemplateSyncConfigInputRequestTypeDef
 
@@ -580,6 +638,8 @@ Optional fields:
 
 - `subdirectory`: `str`
 
+<a id="createtemplatesyncconfigoutputtypedef"></a>
+
 ## CreateTemplateSyncConfigOutputTypeDef
 
 ```python
@@ -593,6 +653,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteenvironmentaccountconnectioninputrequesttypedef"></a>
+
 ## DeleteEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
@@ -602,6 +664,8 @@ from mypy_boto3_proton.type_defs import DeleteEnvironmentAccountConnectionInputR
 Required fields:
 
 - `id`: `str`
+
+<a id="deleteenvironmentaccountconnectionoutputtypedef"></a>
 
 ## DeleteEnvironmentAccountConnectionOutputTypeDef
 
@@ -616,6 +680,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteenvironmentinputrequesttypedef"></a>
+
 ## DeleteEnvironmentInputRequestTypeDef
 
 ```python
@@ -625,6 +691,8 @@ from mypy_boto3_proton.type_defs import DeleteEnvironmentInputRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="deleteenvironmentoutputtypedef"></a>
 
 ## DeleteEnvironmentOutputTypeDef
 
@@ -638,6 +706,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteenvironmenttemplateinputrequesttypedef"></a>
+
 ## DeleteEnvironmentTemplateInputRequestTypeDef
 
 ```python
@@ -647,6 +717,8 @@ from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateInputRequestTyp
 Required fields:
 
 - `name`: `str`
+
+<a id="deleteenvironmenttemplateoutputtypedef"></a>
 
 ## DeleteEnvironmentTemplateOutputTypeDef
 
@@ -661,6 +733,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteenvironmenttemplateversioninputrequesttypedef"></a>
+
 ## DeleteEnvironmentTemplateVersionInputRequestTypeDef
 
 ```python
@@ -672,6 +746,8 @@ Required fields:
 - `majorVersion`: `str`
 - `minorVersion`: `str`
 - `templateName`: `str`
+
+<a id="deleteenvironmenttemplateversionoutputtypedef"></a>
 
 ## DeleteEnvironmentTemplateVersionOutputTypeDef
 
@@ -686,6 +762,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleterepositoryinputrequesttypedef"></a>
+
 ## DeleteRepositoryInputRequestTypeDef
 
 ```python
@@ -696,6 +774,8 @@ Required fields:
 
 - `name`: `str`
 - `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+
+<a id="deleterepositoryoutputtypedef"></a>
 
 ## DeleteRepositoryOutputTypeDef
 
@@ -709,6 +789,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteserviceinputrequesttypedef"></a>
+
 ## DeleteServiceInputRequestTypeDef
 
 ```python
@@ -718,6 +800,8 @@ from mypy_boto3_proton.type_defs import DeleteServiceInputRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="deleteserviceoutputtypedef"></a>
 
 ## DeleteServiceOutputTypeDef
 
@@ -731,6 +815,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteservicetemplateinputrequesttypedef"></a>
+
 ## DeleteServiceTemplateInputRequestTypeDef
 
 ```python
@@ -740,6 +826,8 @@ from mypy_boto3_proton.type_defs import DeleteServiceTemplateInputRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="deleteservicetemplateoutputtypedef"></a>
 
 ## DeleteServiceTemplateOutputTypeDef
 
@@ -754,6 +842,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteservicetemplateversioninputrequesttypedef"></a>
+
 ## DeleteServiceTemplateVersionInputRequestTypeDef
 
 ```python
@@ -765,6 +855,8 @@ Required fields:
 - `majorVersion`: `str`
 - `minorVersion`: `str`
 - `templateName`: `str`
+
+<a id="deleteservicetemplateversionoutputtypedef"></a>
 
 ## DeleteServiceTemplateVersionOutputTypeDef
 
@@ -779,6 +871,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletetemplatesyncconfiginputrequesttypedef"></a>
+
 ## DeleteTemplateSyncConfigInputRequestTypeDef
 
 ```python
@@ -789,6 +883,8 @@ Required fields:
 
 - `templateName`: `str`
 - `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+
+<a id="deletetemplatesyncconfigoutputtypedef"></a>
 
 ## DeleteTemplateSyncConfigOutputTypeDef
 
@@ -802,6 +898,8 @@ Required fields:
   [TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="environmentaccountconnectionsummarytypedef"></a>
 
 ## EnvironmentAccountConnectionSummaryTypeDef
 
@@ -822,6 +920,8 @@ Required fields:
 - `status`:
   [EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)
 
+<a id="environmentaccountconnectiontypedef"></a>
+
 ## EnvironmentAccountConnectionTypeDef
 
 ```python
@@ -840,6 +940,8 @@ Required fields:
 - `roleArn`: `str`
 - `status`:
   [EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)
+
+<a id="environmentsummarytypedef"></a>
 
 ## EnvironmentSummaryTypeDef
 
@@ -870,6 +972,8 @@ Optional fields:
 - `provisioning`: `Literal['CUSTOMER_MANAGED']` (see
   [ProvisioningType](./literals.md#provisioningtype))
 
+<a id="environmenttemplatefiltertypedef"></a>
+
 ## EnvironmentTemplateFilterTypeDef
 
 ```python
@@ -880,6 +984,8 @@ Required fields:
 
 - `majorVersion`: `str`
 - `templateName`: `str`
+
+<a id="environmenttemplatesummarytypedef"></a>
 
 ## EnvironmentTemplateSummaryTypeDef
 
@@ -902,6 +1008,8 @@ Optional fields:
   [ProvisioningType](./literals.md#provisioningtype))
 - `recommendedVersion`: `str`
 
+<a id="environmenttemplatetypedef"></a>
+
 ## EnvironmentTemplateTypeDef
 
 ```python
@@ -923,6 +1031,8 @@ Optional fields:
 - `provisioning`: `Literal['CUSTOMER_MANAGED']` (see
   [ProvisioningType](./literals.md#provisioningtype))
 - `recommendedVersion`: `str`
+
+<a id="environmenttemplateversionsummarytypedef"></a>
 
 ## EnvironmentTemplateVersionSummaryTypeDef
 
@@ -947,6 +1057,8 @@ Optional fields:
 - `recommendedMinorVersion`: `str`
 - `statusMessage`: `str`
 
+<a id="environmenttemplateversiontypedef"></a>
+
 ## EnvironmentTemplateVersionTypeDef
 
 ```python
@@ -970,6 +1082,8 @@ Optional fields:
 - `recommendedMinorVersion`: `str`
 - `schema`: `str`
 - `statusMessage`: `str`
+
+<a id="environmenttypedef"></a>
 
 ## EnvironmentTypeDef
 
@@ -1003,6 +1117,8 @@ Optional fields:
   [RepositoryBranchTypeDef](./type_defs.md#repositorybranchtypedef)
 - `spec`: `str`
 
+<a id="getaccountsettingsoutputtypedef"></a>
+
 ## GetAccountSettingsOutputTypeDef
 
 ```python
@@ -1016,6 +1132,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getenvironmentaccountconnectioninputrequesttypedef"></a>
+
 ## GetEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
@@ -1025,6 +1143,8 @@ from mypy_boto3_proton.type_defs import GetEnvironmentAccountConnectionInputRequ
 Required fields:
 
 - `id`: `str`
+
+<a id="getenvironmentaccountconnectionoutputtypedef"></a>
 
 ## GetEnvironmentAccountConnectionOutputTypeDef
 
@@ -1039,6 +1159,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getenvironmentinputrequesttypedef"></a>
+
 ## GetEnvironmentInputRequestTypeDef
 
 ```python
@@ -1048,6 +1170,8 @@ from mypy_boto3_proton.type_defs import GetEnvironmentInputRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="getenvironmentoutputtypedef"></a>
 
 ## GetEnvironmentOutputTypeDef
 
@@ -1061,6 +1185,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getenvironmenttemplateinputrequesttypedef"></a>
+
 ## GetEnvironmentTemplateInputRequestTypeDef
 
 ```python
@@ -1070,6 +1196,8 @@ from mypy_boto3_proton.type_defs import GetEnvironmentTemplateInputRequestTypeDe
 Required fields:
 
 - `name`: `str`
+
+<a id="getenvironmenttemplateoutputtypedef"></a>
 
 ## GetEnvironmentTemplateOutputTypeDef
 
@@ -1084,6 +1212,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getenvironmenttemplateversioninputrequesttypedef"></a>
+
 ## GetEnvironmentTemplateVersionInputRequestTypeDef
 
 ```python
@@ -1095,6 +1225,8 @@ Required fields:
 - `majorVersion`: `str`
 - `minorVersion`: `str`
 - `templateName`: `str`
+
+<a id="getenvironmenttemplateversionoutputtypedef"></a>
 
 ## GetEnvironmentTemplateVersionOutputTypeDef
 
@@ -1109,6 +1241,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrepositoryinputrequesttypedef"></a>
+
 ## GetRepositoryInputRequestTypeDef
 
 ```python
@@ -1119,6 +1253,8 @@ Required fields:
 
 - `name`: `str`
 - `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+
+<a id="getrepositoryoutputtypedef"></a>
 
 ## GetRepositoryOutputTypeDef
 
@@ -1131,6 +1267,8 @@ Required fields:
 - `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrepositorysyncstatusinputrequesttypedef"></a>
 
 ## GetRepositorySyncStatusInputRequestTypeDef
 
@@ -1147,6 +1285,8 @@ Required fields:
 - `syncType`: `Literal['TEMPLATE_SYNC']` (see
   [SyncTypeType](./literals.md#synctypetype))
 
+<a id="getrepositorysyncstatusoutputtypedef"></a>
+
 ## GetRepositorySyncStatusOutputTypeDef
 
 ```python
@@ -1160,6 +1300,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getserviceinputrequesttypedef"></a>
+
 ## GetServiceInputRequestTypeDef
 
 ```python
@@ -1169,6 +1311,8 @@ from mypy_boto3_proton.type_defs import GetServiceInputRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="getserviceinstanceinputrequesttypedef"></a>
 
 ## GetServiceInstanceInputRequestTypeDef
 
@@ -1180,6 +1324,8 @@ Required fields:
 
 - `name`: `str`
 - `serviceName`: `str`
+
+<a id="getserviceinstanceoutputtypedef"></a>
 
 ## GetServiceInstanceOutputTypeDef
 
@@ -1194,6 +1340,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getserviceoutputtypedef"></a>
+
 ## GetServiceOutputTypeDef
 
 ```python
@@ -1206,6 +1354,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getservicetemplateinputrequesttypedef"></a>
+
 ## GetServiceTemplateInputRequestTypeDef
 
 ```python
@@ -1215,6 +1365,8 @@ from mypy_boto3_proton.type_defs import GetServiceTemplateInputRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="getservicetemplateoutputtypedef"></a>
 
 ## GetServiceTemplateOutputTypeDef
 
@@ -1229,6 +1381,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getservicetemplateversioninputrequesttypedef"></a>
+
 ## GetServiceTemplateVersionInputRequestTypeDef
 
 ```python
@@ -1240,6 +1394,8 @@ Required fields:
 - `majorVersion`: `str`
 - `minorVersion`: `str`
 - `templateName`: `str`
+
+<a id="getservicetemplateversionoutputtypedef"></a>
 
 ## GetServiceTemplateVersionOutputTypeDef
 
@@ -1254,6 +1410,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettemplatesyncconfiginputrequesttypedef"></a>
+
 ## GetTemplateSyncConfigInputRequestTypeDef
 
 ```python
@@ -1264,6 +1422,8 @@ Required fields:
 
 - `templateName`: `str`
 - `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
+
+<a id="gettemplatesyncconfigoutputtypedef"></a>
 
 ## GetTemplateSyncConfigOutputTypeDef
 
@@ -1278,6 +1438,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettemplatesyncstatusinputrequesttypedef"></a>
+
 ## GetTemplateSyncStatusInputRequestTypeDef
 
 ```python
@@ -1289,6 +1451,8 @@ Required fields:
 - `templateName`: `str`
 - `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
 - `templateVersion`: `str`
+
+<a id="gettemplatesyncstatusoutputtypedef"></a>
 
 ## GetTemplateSyncStatusOutputTypeDef
 
@@ -1305,6 +1469,8 @@ Required fields:
   [ResourceSyncAttemptTypeDef](./type_defs.md#resourcesyncattempttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listenvironmentaccountconnectionsinputrequesttypedef"></a>
 
 ## ListEnvironmentAccountConnectionsInputRequestTypeDef
 
@@ -1325,6 +1491,8 @@ Optional fields:
 - `statuses`:
   `Sequence`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
 
+<a id="listenvironmentaccountconnectionsoutputtypedef"></a>
+
 ## ListEnvironmentAccountConnectionsOutputTypeDef
 
 ```python
@@ -1338,6 +1506,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listenvironmentoutputsinputrequesttypedef"></a>
 
 ## ListEnvironmentOutputsInputRequestTypeDef
 
@@ -1353,6 +1523,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listenvironmentoutputsoutputtypedef"></a>
+
 ## ListEnvironmentOutputsOutputTypeDef
 
 ```python
@@ -1365,6 +1537,8 @@ Required fields:
 - `outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listenvironmentprovisionedresourcesinputrequesttypedef"></a>
 
 ## ListEnvironmentProvisionedResourcesInputRequestTypeDef
 
@@ -1380,6 +1554,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listenvironmentprovisionedresourcesoutputtypedef"></a>
+
 ## ListEnvironmentProvisionedResourcesOutputTypeDef
 
 ```python
@@ -1393,6 +1569,8 @@ Required fields:
   `List`\[[ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listenvironmenttemplateversionsinputrequesttypedef"></a>
 
 ## ListEnvironmentTemplateVersionsInputRequestTypeDef
 
@@ -1410,6 +1588,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listenvironmenttemplateversionsoutputtypedef"></a>
+
 ## ListEnvironmentTemplateVersionsOutputTypeDef
 
 ```python
@@ -1424,6 +1604,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listenvironmenttemplatesinputrequesttypedef"></a>
+
 ## ListEnvironmentTemplatesInputRequestTypeDef
 
 ```python
@@ -1434,6 +1616,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listenvironmenttemplatesoutputtypedef"></a>
 
 ## ListEnvironmentTemplatesOutputTypeDef
 
@@ -1449,6 +1633,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listenvironmentsinputrequesttypedef"></a>
+
 ## ListEnvironmentsInputRequestTypeDef
 
 ```python
@@ -1461,6 +1647,8 @@ Optional fields:
   `Sequence`\[[EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listenvironmentsoutputtypedef"></a>
 
 ## ListEnvironmentsOutputTypeDef
 
@@ -1476,6 +1664,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrepositoriesinputrequesttypedef"></a>
+
 ## ListRepositoriesInputRequestTypeDef
 
 ```python
@@ -1486,6 +1676,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listrepositoriesoutputtypedef"></a>
 
 ## ListRepositoriesOutputTypeDef
 
@@ -1500,6 +1692,8 @@ Required fields:
   `List`\[[RepositorySummaryTypeDef](./type_defs.md#repositorysummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrepositorysyncdefinitionsinputrequesttypedef"></a>
 
 ## ListRepositorySyncDefinitionsInputRequestTypeDef
 
@@ -1519,6 +1713,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listrepositorysyncdefinitionsoutputtypedef"></a>
+
 ## ListRepositorySyncDefinitionsOutputTypeDef
 
 ```python
@@ -1532,6 +1728,8 @@ Required fields:
   `List`\[[RepositorySyncDefinitionTypeDef](./type_defs.md#repositorysyncdefinitiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listserviceinstanceoutputsinputrequesttypedef"></a>
 
 ## ListServiceInstanceOutputsInputRequestTypeDef
 
@@ -1548,6 +1746,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listserviceinstanceoutputsoutputtypedef"></a>
+
 ## ListServiceInstanceOutputsOutputTypeDef
 
 ```python
@@ -1560,6 +1760,8 @@ Required fields:
 - `outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listserviceinstanceprovisionedresourcesinputrequesttypedef"></a>
 
 ## ListServiceInstanceProvisionedResourcesInputRequestTypeDef
 
@@ -1576,6 +1778,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listserviceinstanceprovisionedresourcesoutputtypedef"></a>
+
 ## ListServiceInstanceProvisionedResourcesOutputTypeDef
 
 ```python
@@ -1590,6 +1794,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listserviceinstancesinputrequesttypedef"></a>
+
 ## ListServiceInstancesInputRequestTypeDef
 
 ```python
@@ -1601,6 +1807,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `serviceName`: `str`
+
+<a id="listserviceinstancesoutputtypedef"></a>
 
 ## ListServiceInstancesOutputTypeDef
 
@@ -1616,6 +1824,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listservicepipelineoutputsinputrequesttypedef"></a>
+
 ## ListServicePipelineOutputsInputRequestTypeDef
 
 ```python
@@ -1630,6 +1840,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listservicepipelineoutputsoutputtypedef"></a>
+
 ## ListServicePipelineOutputsOutputTypeDef
 
 ```python
@@ -1642,6 +1854,8 @@ Required fields:
 - `outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listservicepipelineprovisionedresourcesinputrequesttypedef"></a>
 
 ## ListServicePipelineProvisionedResourcesInputRequestTypeDef
 
@@ -1657,6 +1871,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listservicepipelineprovisionedresourcesoutputtypedef"></a>
+
 ## ListServicePipelineProvisionedResourcesOutputTypeDef
 
 ```python
@@ -1670,6 +1886,8 @@ Required fields:
   `List`\[[ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listservicetemplateversionsinputrequesttypedef"></a>
 
 ## ListServiceTemplateVersionsInputRequestTypeDef
 
@@ -1687,6 +1905,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listservicetemplateversionsoutputtypedef"></a>
+
 ## ListServiceTemplateVersionsOutputTypeDef
 
 ```python
@@ -1701,6 +1921,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listservicetemplatesinputrequesttypedef"></a>
+
 ## ListServiceTemplatesInputRequestTypeDef
 
 ```python
@@ -1711,6 +1933,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listservicetemplatesoutputtypedef"></a>
 
 ## ListServiceTemplatesOutputTypeDef
 
@@ -1726,6 +1950,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listservicesinputrequesttypedef"></a>
+
 ## ListServicesInputRequestTypeDef
 
 ```python
@@ -1736,6 +1962,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listservicesoutputtypedef"></a>
 
 ## ListServicesOutputTypeDef
 
@@ -1750,6 +1978,8 @@ Required fields:
   `List`\[[ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourceinputrequesttypedef"></a>
 
 ## ListTagsForResourceInputRequestTypeDef
 
@@ -1766,6 +1996,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listtagsforresourceoutputtypedef"></a>
+
 ## ListTagsForResourceOutputTypeDef
 
 ```python
@@ -1778,6 +2010,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="notifyresourcedeploymentstatuschangeinputrequesttypedef"></a>
 
 ## NotifyResourceDeploymentStatusChangeInputRequestTypeDef
 
@@ -1797,6 +2031,8 @@ Optional fields:
 - `outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `statusMessage`: `str`
 
+<a id="outputtypedef"></a>
+
 ## OutputTypeDef
 
 ```python
@@ -1807,6 +2043,8 @@ Optional fields:
 
 - `key`: `str`
 - `valueString`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1819,6 +2057,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="provisionedresourcetypedef"></a>
 
 ## ProvisionedResourceTypeDef
 
@@ -1833,6 +2073,8 @@ Optional fields:
 - `provisioningEngine`:
   [ProvisionedResourceEngineType](./literals.md#provisionedresourceenginetype)
 
+<a id="rejectenvironmentaccountconnectioninputrequesttypedef"></a>
+
 ## RejectEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
@@ -1842,6 +2084,8 @@ from mypy_boto3_proton.type_defs import RejectEnvironmentAccountConnectionInputR
 Required fields:
 
 - `id`: `str`
+
+<a id="rejectenvironmentaccountconnectionoutputtypedef"></a>
 
 ## RejectEnvironmentAccountConnectionOutputTypeDef
 
@@ -1856,6 +2100,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="repositorybranchinputtypedef"></a>
+
 ## RepositoryBranchInputTypeDef
 
 ```python
@@ -1867,6 +2113,8 @@ Required fields:
 - `branch`: `str`
 - `name`: `str`
 - `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+
+<a id="repositorybranchtypedef"></a>
 
 ## RepositoryBranchTypeDef
 
@@ -1881,6 +2129,8 @@ Required fields:
 - `name`: `str`
 - `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
 
+<a id="repositorysummarytypedef"></a>
+
 ## RepositorySummaryTypeDef
 
 ```python
@@ -1892,6 +2142,8 @@ Required fields:
 - `arn`: `str`
 - `name`: `str`
 - `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
+
+<a id="repositorysyncattempttypedef"></a>
 
 ## RepositorySyncAttemptTypeDef
 
@@ -1906,6 +2158,8 @@ Required fields:
 - `startedAt`: `datetime`
 - `status`: [RepositorySyncStatusType](./literals.md#repositorysyncstatustype)
 
+<a id="repositorysyncdefinitiontypedef"></a>
+
 ## RepositorySyncDefinitionTypeDef
 
 ```python
@@ -1918,6 +2172,8 @@ Required fields:
 - `directory`: `str`
 - `parent`: `str`
 - `target`: `str`
+
+<a id="repositorysynceventtypedef"></a>
 
 ## RepositorySyncEventTypeDef
 
@@ -1934,6 +2190,8 @@ Required fields:
 Optional fields:
 
 - `externalId`: `str`
+
+<a id="repositorytypedef"></a>
 
 ## RepositoryTypeDef
 
@@ -1952,6 +2210,8 @@ Optional fields:
 
 - `encryptionKey`: `str`
 
+<a id="resourcesyncattempttypedef"></a>
+
 ## ResourceSyncAttemptTypeDef
 
 ```python
@@ -1967,6 +2227,8 @@ Required fields:
 - `status`: [ResourceSyncStatusType](./literals.md#resourcesyncstatustype)
 - `target`: `str`
 - `targetRevision`: [RevisionTypeDef](./type_defs.md#revisiontypedef)
+
+<a id="resourcesynceventtypedef"></a>
 
 ## ResourceSyncEventTypeDef
 
@@ -1984,6 +2246,8 @@ Optional fields:
 
 - `externalId`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1997,6 +2261,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="revisiontypedef"></a>
 
 ## RevisionTypeDef
 
@@ -2013,6 +2279,8 @@ Required fields:
   [RepositoryProviderType](./literals.md#repositoryprovidertype)
 - `sha`: `str`
 
+<a id="s3objectsourcetypedef"></a>
+
 ## S3ObjectSourceTypeDef
 
 ```python
@@ -2023,6 +2291,8 @@ Required fields:
 
 - `bucket`: `str`
 - `key`: `str`
+
+<a id="serviceinstancesummarytypedef"></a>
 
 ## ServiceInstanceSummaryTypeDef
 
@@ -2048,6 +2318,8 @@ Required fields:
 Optional fields:
 
 - `deploymentStatusMessage`: `str`
+
+<a id="serviceinstancetypedef"></a>
 
 ## ServiceInstanceTypeDef
 
@@ -2075,6 +2347,8 @@ Optional fields:
 - `deploymentStatusMessage`: `str`
 - `spec`: `str`
 
+<a id="servicepipelinetypedef"></a>
+
 ## ServicePipelineTypeDef
 
 ```python
@@ -2098,6 +2372,8 @@ Optional fields:
 - `deploymentStatusMessage`: `str`
 - `spec`: `str`
 
+<a id="servicesummarytypedef"></a>
+
 ## ServiceSummaryTypeDef
 
 ```python
@@ -2117,6 +2393,8 @@ Optional fields:
 
 - `description`: `str`
 - `statusMessage`: `str`
+
+<a id="servicetemplatesummarytypedef"></a>
 
 ## ServiceTemplateSummaryTypeDef
 
@@ -2138,6 +2416,8 @@ Optional fields:
 - `pipelineProvisioning`: `Literal['CUSTOMER_MANAGED']` (see
   [ProvisioningType](./literals.md#provisioningtype))
 - `recommendedVersion`: `str`
+
+<a id="servicetemplatetypedef"></a>
 
 ## ServiceTemplateTypeDef
 
@@ -2161,6 +2441,8 @@ Optional fields:
   [ProvisioningType](./literals.md#provisioningtype))
 - `recommendedVersion`: `str`
 
+<a id="servicetemplateversionsummarytypedef"></a>
+
 ## ServiceTemplateVersionSummaryTypeDef
 
 ```python
@@ -2183,6 +2465,8 @@ Optional fields:
 - `description`: `str`
 - `recommendedMinorVersion`: `str`
 - `statusMessage`: `str`
+
+<a id="servicetemplateversiontypedef"></a>
 
 ## ServiceTemplateVersionTypeDef
 
@@ -2210,6 +2494,8 @@ Optional fields:
 - `schema`: `str`
 - `statusMessage`: `str`
 
+<a id="servicetypedef"></a>
+
 ## ServiceTypeDef
 
 ```python
@@ -2235,6 +2521,8 @@ Optional fields:
 - `repositoryId`: `str`
 - `statusMessage`: `str`
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -2246,6 +2534,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2256,6 +2546,8 @@ Required fields:
 
 - `key`: `str`
 - `value`: `str`
+
+<a id="templatesyncconfigtypedef"></a>
 
 ## TemplateSyncConfigTypeDef
 
@@ -2276,6 +2568,8 @@ Optional fields:
 
 - `subdirectory`: `str`
 
+<a id="templateversionsourceinputtypedef"></a>
+
 ## TemplateVersionSourceInputTypeDef
 
 ```python
@@ -2285,6 +2579,8 @@ from mypy_boto3_proton.type_defs import TemplateVersionSourceInputTypeDef
 Optional fields:
 
 - `s3`: [S3ObjectSourceTypeDef](./type_defs.md#s3objectsourcetypedef)
+
+<a id="untagresourceinputrequesttypedef"></a>
 
 ## UntagResourceInputRequestTypeDef
 
@@ -2297,6 +2593,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
 
+<a id="updateaccountsettingsinputrequesttypedef"></a>
+
 ## UpdateAccountSettingsInputRequestTypeDef
 
 ```python
@@ -2308,6 +2606,8 @@ Optional fields:
 - `pipelineProvisioningRepository`:
   [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
 - `pipelineServiceRoleArn`: `str`
+
+<a id="updateaccountsettingsoutputtypedef"></a>
 
 ## UpdateAccountSettingsOutputTypeDef
 
@@ -2322,6 +2622,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateenvironmentaccountconnectioninputrequesttypedef"></a>
+
 ## UpdateEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
@@ -2332,6 +2634,8 @@ Required fields:
 
 - `id`: `str`
 - `roleArn`: `str`
+
+<a id="updateenvironmentaccountconnectionoutputtypedef"></a>
 
 ## UpdateEnvironmentAccountConnectionOutputTypeDef
 
@@ -2345,6 +2649,8 @@ Required fields:
   [EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateenvironmentinputrequesttypedef"></a>
 
 ## UpdateEnvironmentInputRequestTypeDef
 
@@ -2369,6 +2675,8 @@ Optional fields:
 - `templateMajorVersion`: `str`
 - `templateMinorVersion`: `str`
 
+<a id="updateenvironmentoutputtypedef"></a>
+
 ## UpdateEnvironmentOutputTypeDef
 
 ```python
@@ -2380,6 +2688,8 @@ Required fields:
 - `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateenvironmenttemplateinputrequesttypedef"></a>
 
 ## UpdateEnvironmentTemplateInputRequestTypeDef
 
@@ -2396,6 +2706,8 @@ Optional fields:
 - `description`: `str`
 - `displayName`: `str`
 
+<a id="updateenvironmenttemplateoutputtypedef"></a>
+
 ## UpdateEnvironmentTemplateOutputTypeDef
 
 ```python
@@ -2408,6 +2720,8 @@ Required fields:
   [EnvironmentTemplateTypeDef](./type_defs.md#environmenttemplatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateenvironmenttemplateversioninputrequesttypedef"></a>
 
 ## UpdateEnvironmentTemplateVersionInputRequestTypeDef
 
@@ -2427,6 +2741,8 @@ Optional fields:
 - `status`:
   [TemplateVersionStatusType](./literals.md#templateversionstatustype)
 
+<a id="updateenvironmenttemplateversionoutputtypedef"></a>
+
 ## UpdateEnvironmentTemplateVersionOutputTypeDef
 
 ```python
@@ -2439,6 +2755,8 @@ Required fields:
   [EnvironmentTemplateVersionTypeDef](./type_defs.md#environmenttemplateversiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateserviceinputrequesttypedef"></a>
 
 ## UpdateServiceInputRequestTypeDef
 
@@ -2454,6 +2772,8 @@ Optional fields:
 
 - `description`: `str`
 - `spec`: `str`
+
+<a id="updateserviceinstanceinputrequesttypedef"></a>
 
 ## UpdateServiceInstanceInputRequestTypeDef
 
@@ -2474,6 +2794,8 @@ Optional fields:
 - `templateMajorVersion`: `str`
 - `templateMinorVersion`: `str`
 
+<a id="updateserviceinstanceoutputtypedef"></a>
+
 ## UpdateServiceInstanceOutputTypeDef
 
 ```python
@@ -2487,6 +2809,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateserviceoutputtypedef"></a>
+
 ## UpdateServiceOutputTypeDef
 
 ```python
@@ -2498,6 +2822,8 @@ Required fields:
 - `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateservicepipelineinputrequesttypedef"></a>
 
 ## UpdateServicePipelineInputRequestTypeDef
 
@@ -2517,6 +2843,8 @@ Optional fields:
 - `templateMajorVersion`: `str`
 - `templateMinorVersion`: `str`
 
+<a id="updateservicepipelineoutputtypedef"></a>
+
 ## UpdateServicePipelineOutputTypeDef
 
 ```python
@@ -2528,6 +2856,8 @@ Required fields:
 - `pipeline`: [ServicePipelineTypeDef](./type_defs.md#servicepipelinetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateservicetemplateinputrequesttypedef"></a>
 
 ## UpdateServiceTemplateInputRequestTypeDef
 
@@ -2544,6 +2874,8 @@ Optional fields:
 - `description`: `str`
 - `displayName`: `str`
 
+<a id="updateservicetemplateoutputtypedef"></a>
+
 ## UpdateServiceTemplateOutputTypeDef
 
 ```python
@@ -2556,6 +2888,8 @@ Required fields:
   [ServiceTemplateTypeDef](./type_defs.md#servicetemplatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateservicetemplateversioninputrequesttypedef"></a>
 
 ## UpdateServiceTemplateVersionInputRequestTypeDef
 
@@ -2577,6 +2911,8 @@ Optional fields:
 - `status`:
   [TemplateVersionStatusType](./literals.md#templateversionstatustype)
 
+<a id="updateservicetemplateversionoutputtypedef"></a>
+
 ## UpdateServiceTemplateVersionOutputTypeDef
 
 ```python
@@ -2589,6 +2925,8 @@ Required fields:
   [ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetemplatesyncconfiginputrequesttypedef"></a>
 
 ## UpdateTemplateSyncConfigInputRequestTypeDef
 
@@ -2609,6 +2947,8 @@ Optional fields:
 
 - `subdirectory`: `str`
 
+<a id="updatetemplatesyncconfigoutputtypedef"></a>
+
 ## UpdateTemplateSyncConfigOutputTypeDef
 
 ```python
@@ -2621,6 +2961,8 @@ Required fields:
   [TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

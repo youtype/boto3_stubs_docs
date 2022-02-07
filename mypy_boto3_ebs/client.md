@@ -1,3 +1,5 @@
+<a id="ebsclient-for-boto3-ebs-module"></a>
+
 # EBSClient for boto3 EBS module
 
 > [Index](..) > [EBS](.) > EBSClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
 type annotations stubs module
-[mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
+[mypy-boto3-ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
 - [EBSClient for boto3 EBS module](#ebsclient-for-boto3-ebs-module)
   - [EBSClient](#ebsclient)
@@ -21,6 +23,8 @@ type annotations stubs module
     - [put_snapshot_block](#put_snapshot_block)
     - [start_snapshot](#start_snapshot)
 
+<a id="ebsclient"></a>
+
 ## EBSClient
 
 Type annotations for `boto3.client("ebs")`
@@ -28,14 +32,17 @@ Type annotations for `boto3.client("ebs")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ebs.client import EBSClient
 
 def get_ebs_client() -> EBSClient:
-    return boto3.client("ebs")
+    return Session().client("ebs")
 ```
 
 Boto3 documentation:
 [EBS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -61,7 +68,11 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -73,6 +84,8 @@ Boto3 documentation:
 [EBS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -88,6 +101,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="complete_snapshot"></a>
 
 ### complete_snapshot
 
@@ -115,6 +130,8 @@ Keyword-only arguments:
 Returns
 [CompleteSnapshotResponseTypeDef](./type_defs.md#completesnapshotresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -132,6 +149,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_snapshot_block"></a>
 
 ### get_snapshot_block
 
@@ -153,6 +172,8 @@ Keyword-only arguments:
 
 Returns
 [GetSnapshotBlockResponseTypeDef](./type_defs.md#getsnapshotblockresponsetypedef).
+
+<a id="list_changed_blocks"></a>
 
 ### list_changed_blocks
 
@@ -178,6 +199,8 @@ Keyword-only arguments:
 Returns
 [ListChangedBlocksResponseTypeDef](./type_defs.md#listchangedblocksresponsetypedef).
 
+<a id="list_snapshot_blocks"></a>
+
 ### list_snapshot_blocks
 
 Returns information about the blocks in an Amazon Elastic Block Store snapshot.
@@ -199,6 +222,8 @@ Keyword-only arguments:
 
 Returns
 [ListSnapshotBlocksResponseTypeDef](./type_defs.md#listsnapshotblocksresponsetypedef).
+
+<a id="put_snapshot_block"></a>
 
 ### put_snapshot_block
 
@@ -226,6 +251,8 @@ Keyword-only arguments:
 
 Returns
 [PutSnapshotBlockResponseTypeDef](./type_defs.md#putsnapshotblockresponsetypedef).
+
+<a id="start_snapshot"></a>
 
 ### start_snapshot
 

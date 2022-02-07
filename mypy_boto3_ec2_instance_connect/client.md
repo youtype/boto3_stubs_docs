@@ -1,3 +1,5 @@
+<a id="ec2instanceconnectclient-for-boto3-ec2instanceconnect-module"></a>
+
 # EC2InstanceConnectClient for boto3 EC2InstanceConnect module
 
 > [Index](..) > [EC2InstanceConnect](.) > EC2InstanceConnectClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
 type annotations stubs module
-[mypy_boto3_ec2_instance_connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
+[mypy-boto3-ec2-instance-connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
 
 - [EC2InstanceConnectClient for boto3 EC2InstanceConnect module](#ec2instanceconnectclient-for-boto3-ec2instanceconnect-module)
   - [EC2InstanceConnectClient](#ec2instanceconnectclient)
@@ -17,6 +19,8 @@ type annotations stubs module
     - [send_serial_console_ssh_public_key](#send_serial_console_ssh_public_key)
     - [send_ssh_public_key](#send_ssh_public_key)
 
+<a id="ec2instanceconnectclient"></a>
+
 ## EC2InstanceConnectClient
 
 Type annotations for `boto3.client("ec2-instance-connect")`
@@ -24,14 +28,17 @@ Type annotations for `boto3.client("ec2-instance-connect")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ec2_instance_connect.client import EC2InstanceConnectClient
 
 def get_ec2-instance-connect_client() -> EC2InstanceConnectClient:
-    return boto3.client("ec2-instance-connect")
+    return Session().client("ec2-instance-connect")
 ```
 
 Boto3 documentation:
 [EC2InstanceConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -59,7 +66,11 @@ Exceptions:
 - `Exceptions.ServiceException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -71,6 +82,8 @@ Boto3 documentation:
 [EC2InstanceConnect.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -87,6 +100,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -106,6 +121,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="send_serial_console_ssh_public_key"></a>
 
 ### send_serial_console_ssh_public_key
 
@@ -129,6 +146,8 @@ Keyword-only arguments:
 
 Returns
 [SendSerialConsoleSSHPublicKeyResponseTypeDef](./type_defs.md#sendserialconsolesshpublickeyresponsetypedef).
+
+<a id="send_ssh_public_key"></a>
 
 ### send_ssh_public_key
 

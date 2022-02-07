@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-pinpointemail-module"></a>
+
 # Type annotations for boto3 PinpointEmail module
 
 > [Index](..) > PinpointEmail
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
 type annotations stubs module
-[mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+[mypy-boto3-pinpoint-email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[pinpoint-email]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[pinpoint-email]'
+
+# standalone installation
 pip install mypy-boto3-pinpoint-email
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-pinpoint-email
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="pinpointemailclient"></a>
+
 ## PinpointEmailClient
 
 Type annotations for `boto3.client("pinpoint-email")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_pinpoint_email.client import PinpointEmailClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -79,6 +93,8 @@ from mypy_boto3_pinpoint_email.client import PinpointEmailClient
 - [untag_resource](./client.md#untag_resource)
 - [update_configuration_set_event_destination](./client.md#update_configuration_set_event_destination)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 PinpointEmailClient [exceptions](./client.md#exceptions)
@@ -95,6 +111,8 @@ PinpointEmailClient [exceptions](./client.md#exceptions)
 - SendingPausedException
 - TooManyRequestsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -103,7 +121,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_pinpoint_email.paginators import GetDedicatedIpsPaginator, ...
+from mypy_boto3_pinpoint_email.paginator import GetDedicatedIpsPaginator, ...
 ```
 
 - [GetDedicatedIpsPaginator](./paginators.md#getdedicatedipspaginator)
@@ -111,6 +129,8 @@ from mypy_boto3_pinpoint_email.paginators import GetDedicatedIpsPaginator, ...
 - [ListDedicatedIpPoolsPaginator](./paginators.md#listdedicatedippoolspaginator)
 - [ListDeliverabilityTestReportsPaginator](./paginators.md#listdeliverabilitytestreportspaginator)
 - [ListEmailIdentitiesPaginator](./paginators.md#listemailidentitiespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -139,6 +159,8 @@ from mypy_boto3_pinpoint_email.literals import BehaviorOnMxFailureType, ...
 - [WarmupStatusType](./literals.md#warmupstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

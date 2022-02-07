@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-codeartifact-module"></a>
+
 # Literals for boto3 CodeArtifact module
 
 > [Index](..) > [CodeArtifact](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module
-[mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
+[mypy-boto3-codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 - [Literals for boto3 CodeArtifact module](#literals-for-boto3-codeartifact-module)
   - [DomainStatusType](#domainstatustype)
@@ -24,6 +26,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="domainstatustype"></a>
+
 ## DomainStatusType
 
 ```python
@@ -35,6 +39,8 @@ Values:
 - `Active`
 - `Deleted`
 
+<a id="externalconnectionstatustype"></a>
+
 ## ExternalConnectionStatusType
 
 ```python
@@ -44,6 +50,8 @@ from mypy_boto3_codeartifact.literals import ExternalConnectionStatusType
 Values:
 
 - `Available`
+
+<a id="hashalgorithmtype"></a>
 
 ## HashAlgorithmType
 
@@ -58,6 +66,8 @@ Values:
 - `SHA-256`
 - `SHA-512`
 
+<a id="listdomainspaginatorname"></a>
+
 ## ListDomainsPaginatorName
 
 ```python
@@ -67,6 +77,8 @@ from mypy_boto3_codeartifact.literals import ListDomainsPaginatorName
 Values:
 
 - `list_domains`
+
+<a id="listpackageversionassetspaginatorname"></a>
 
 ## ListPackageVersionAssetsPaginatorName
 
@@ -78,6 +90,8 @@ Values:
 
 - `list_package_version_assets`
 
+<a id="listpackageversionspaginatorname"></a>
+
 ## ListPackageVersionsPaginatorName
 
 ```python
@@ -87,6 +101,8 @@ from mypy_boto3_codeartifact.literals import ListPackageVersionsPaginatorName
 Values:
 
 - `list_package_versions`
+
+<a id="listpackagespaginatorname"></a>
 
 ## ListPackagesPaginatorName
 
@@ -98,6 +114,8 @@ Values:
 
 - `list_packages`
 
+<a id="listrepositoriesindomainpaginatorname"></a>
+
 ## ListRepositoriesInDomainPaginatorName
 
 ```python
@@ -108,6 +126,8 @@ Values:
 
 - `list_repositories_in_domain`
 
+<a id="listrepositoriespaginatorname"></a>
+
 ## ListRepositoriesPaginatorName
 
 ```python
@@ -117,6 +137,8 @@ from mypy_boto3_codeartifact.literals import ListRepositoriesPaginatorName
 Values:
 
 - `list_repositories`
+
+<a id="packageformattype"></a>
 
 ## PackageFormatType
 
@@ -130,6 +152,8 @@ Values:
 - `npm`
 - `nuget`
 - `pypi`
+
+<a id="packageversionerrorcodetype"></a>
 
 ## PackageVersionErrorCodeType
 
@@ -146,6 +170,8 @@ Values:
 - `NOT_FOUND`
 - `SKIPPED`
 
+<a id="packageversionsorttypetype"></a>
+
 ## PackageVersionSortTypeType
 
 ```python
@@ -155,6 +181,8 @@ from mypy_boto3_codeartifact.literals import PackageVersionSortTypeType
 Values:
 
 - `PUBLISHED_TIME`
+
+<a id="packageversionstatustype"></a>
 
 ## PackageVersionStatusType
 
@@ -170,6 +198,8 @@ Values:
 - `Published`
 - `Unfinished`
 - `Unlisted`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -478,6 +508,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

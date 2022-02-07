@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iotsitewise-module"></a>
+
 # Type annotations for boto3 IoTSiteWise module
 
 > [Index](..) > IoTSiteWise
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module
-[mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+[mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iotsitewise]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iotsitewise]'
+
+# standalone installation
 pip install mypy-boto3-iotsitewise
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-iotsitewise
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="iotsitewiseclient"></a>
+
 ## IoTSiteWiseClient
 
 Type annotations for `boto3.client("iotsitewise")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iotsitewise.client import IoTSiteWiseClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -104,6 +118,8 @@ from mypy_boto3_iotsitewise.client import IoTSiteWiseClient
 - [update_portal](./client.md#update_portal)
 - [update_project](./client.md#update_project)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoTSiteWiseClient [exceptions](./client.md#exceptions)
@@ -120,6 +136,8 @@ IoTSiteWiseClient [exceptions](./client.md#exceptions)
 - TooManyTagsException
 - UnauthorizedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -128,7 +146,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import GetAssetPropertyAggregatesPaginator, ...
+from mypy_boto3_iotsitewise.paginator import GetAssetPropertyAggregatesPaginator, ...
 ```
 
 - [GetAssetPropertyAggregatesPaginator](./paginators.md#getassetpropertyaggregatespaginator)
@@ -146,6 +164,8 @@ from mypy_boto3_iotsitewise.paginators import GetAssetPropertyAggregatesPaginato
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
 - [ListTimeSeriesPaginator](./paginators.md#listtimeseriespaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -154,7 +174,7 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.waiters import AssetActiveWaiter, ...
+from mypy_boto3_iotsitewise.waiter import AssetActiveWaiter, ...
 ```
 
 - [AssetActiveWaiter](./waiters.md#assetactivewaiter)
@@ -163,6 +183,8 @@ from mypy_boto3_iotsitewise.waiters import AssetActiveWaiter, ...
 - [AssetNotExistsWaiter](./waiters.md#assetnotexistswaiter)
 - [PortalActiveWaiter](./waiters.md#portalactivewaiter)
 - [PortalNotExistsWaiter](./waiters.md#portalnotexistswaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -228,6 +250,8 @@ from mypy_boto3_iotsitewise.literals import AggregateTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

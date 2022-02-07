@@ -1,3 +1,5 @@
+<a id="appconfigdataclient-for-boto3-appconfigdata-module"></a>
+
 # AppConfigDataClient for boto3 AppConfigData module
 
 > [Index](..) > [AppConfigData](.) > AppConfigDataClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppConfigData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfigdata.html#AppConfigData)
 type annotations stubs module
-[mypy_boto3_appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
+[mypy-boto3-appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
 
 - [AppConfigDataClient for boto3 AppConfigData module](#appconfigdataclient-for-boto3-appconfigdata-module)
   - [AppConfigDataClient](#appconfigdataclient)
@@ -17,6 +19,8 @@ type annotations stubs module
     - [get_latest_configuration](#get_latest_configuration)
     - [start_configuration_session](#start_configuration_session)
 
+<a id="appconfigdataclient"></a>
+
 ## AppConfigDataClient
 
 Type annotations for `boto3.client("appconfigdata")`
@@ -24,14 +28,17 @@ Type annotations for `boto3.client("appconfigdata")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_appconfigdata.client import AppConfigDataClient
 
 def get_appconfigdata_client() -> AppConfigDataClient:
-    return boto3.client("appconfigdata")
+    return Session().client("appconfigdata")
 ```
 
 Boto3 documentation:
 [AppConfigData.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfigdata.html#AppConfigData.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -53,7 +60,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -65,6 +76,8 @@ Boto3 documentation:
 [AppConfigData.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfigdata.html#AppConfigData.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -80,6 +93,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -100,6 +115,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_latest_configuration"></a>
+
 ### get_latest_configuration
 
 Retrieves the latest deployed configuration.
@@ -119,6 +136,8 @@ Keyword-only arguments:
 
 Returns
 [GetLatestConfigurationResponseTypeDef](./type_defs.md#getlatestconfigurationresponsetypedef).
+
+<a id="start_configuration_session"></a>
 
 ### start_configuration_session
 

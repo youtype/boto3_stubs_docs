@@ -1,3 +1,5 @@
+<a id="applicationinsightsclient-for-boto3-applicationinsights-module"></a>
+
 # ApplicationInsightsClient for boto3 ApplicationInsights module
 
 > [Index](..) > [ApplicationInsights](.) > ApplicationInsightsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
 type annotations stubs module
-[mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
+[mypy-boto3-application-insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
 - [ApplicationInsightsClient for boto3 ApplicationInsights module](#applicationinsightsclient-for-boto3-applicationinsights-module)
   - [ApplicationInsightsClient](#applicationinsightsclient)
@@ -42,6 +44,8 @@ type annotations stubs module
     - [update_component_configuration](#update_component_configuration)
     - [update_log_pattern](#update_log_pattern)
 
+<a id="applicationinsightsclient"></a>
+
 ## ApplicationInsightsClient
 
 Type annotations for `boto3.client("application-insights")`
@@ -49,14 +53,17 @@ Type annotations for `boto3.client("application-insights")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_application_insights.client import ApplicationInsightsClient
 
 def get_application-insights_client() -> ApplicationInsightsClient:
-    return boto3.client("application-insights")
+    return Session().client("application-insights")
 ```
 
 Boto3 documentation:
 [ApplicationInsights.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -82,7 +89,11 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -94,6 +105,8 @@ Boto3 documentation:
 [ApplicationInsights.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -110,6 +123,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_application"></a>
 
 ### create_application
 
@@ -137,6 +152,8 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
+<a id="create_component"></a>
+
 ### create_component
 
 Creates a custom component by grouping similar standalone instances to monitor.
@@ -157,6 +174,8 @@ Keyword-only arguments:
 - `ResourceList`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_log_pattern"></a>
 
 ### create_log_pattern
 
@@ -182,6 +201,8 @@ Keyword-only arguments:
 Returns
 [CreateLogPatternResponseTypeDef](./type_defs.md#createlogpatternresponsetypedef).
 
+<a id="delete_application"></a>
+
 ### delete_application
 
 Removes the specified application from monitoring.
@@ -200,6 +221,8 @@ Keyword-only arguments:
 - `ResourceGroupName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_component"></a>
 
 ### delete_component
 
@@ -220,6 +243,8 @@ Keyword-only arguments:
 - `ComponentName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_log_pattern"></a>
 
 ### delete_log_pattern
 
@@ -242,6 +267,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_application"></a>
+
 ### describe_application
 
 Describes the application.
@@ -261,6 +288,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
+
+<a id="describe_component"></a>
 
 ### describe_component
 
@@ -284,6 +313,8 @@ Keyword-only arguments:
 Returns
 [DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef).
 
+<a id="describe_component_configuration"></a>
+
 ### describe_component_configuration
 
 Describes the monitoring configuration of the component.
@@ -304,6 +335,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeComponentConfigurationResponseTypeDef](./type_defs.md#describecomponentconfigurationresponsetypedef).
+
+<a id="describe_component_configuration_recommendation"></a>
 
 ### describe_component_configuration_recommendation
 
@@ -328,6 +361,8 @@ Keyword-only arguments:
 Returns
 [DescribeComponentConfigurationRecommendationResponseTypeDef](./type_defs.md#describecomponentconfigurationrecommendationresponsetypedef).
 
+<a id="describe_log_pattern"></a>
+
 ### describe_log_pattern
 
 Describe a specific log pattern from a `LogPatternSet` .
@@ -350,6 +385,8 @@ Keyword-only arguments:
 Returns
 [DescribeLogPatternResponseTypeDef](./type_defs.md#describelogpatternresponsetypedef).
 
+<a id="describe_observation"></a>
+
 ### describe_observation
 
 Describes an anomaly or error with the application.
@@ -369,6 +406,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeObservationResponseTypeDef](./type_defs.md#describeobservationresponsetypedef).
+
+<a id="describe_problem"></a>
 
 ### describe_problem
 
@@ -390,6 +429,8 @@ Keyword-only arguments:
 Returns
 [DescribeProblemResponseTypeDef](./type_defs.md#describeproblemresponsetypedef).
 
+<a id="describe_problem_observations"></a>
+
 ### describe_problem_observations
 
 Describes the anomalies or errors associated with the problem.
@@ -410,6 +451,8 @@ Keyword-only arguments:
 Returns
 [DescribeProblemObservationsResponseTypeDef](./type_defs.md#describeproblemobservationsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -428,6 +471,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_applications"></a>
 
 ### list_applications
 
@@ -450,6 +495,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
+<a id="list_components"></a>
+
 ### list_components
 
 Lists the auto-grouped, standalone, and custom components of the application.
@@ -471,6 +518,8 @@ Keyword-only arguments:
 
 Returns
 [ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
+
+<a id="list_configuration_history"></a>
 
 ### list_configuration_history
 
@@ -499,6 +548,8 @@ Keyword-only arguments:
 Returns
 [ListConfigurationHistoryResponseTypeDef](./type_defs.md#listconfigurationhistoryresponsetypedef).
 
+<a id="list_log_pattern_sets"></a>
+
 ### list_log_pattern_sets
 
 Lists the log pattern sets in the specific application.
@@ -520,6 +571,8 @@ Keyword-only arguments:
 
 Returns
 [ListLogPatternSetsResponseTypeDef](./type_defs.md#listlogpatternsetsresponsetypedef).
+
+<a id="list_log_patterns"></a>
 
 ### list_log_patterns
 
@@ -543,6 +596,8 @@ Keyword-only arguments:
 
 Returns
 [ListLogPatternsResponseTypeDef](./type_defs.md#listlogpatternsresponsetypedef).
+
+<a id="list_problems"></a>
 
 ### list_problems
 
@@ -569,6 +624,8 @@ Keyword-only arguments:
 Returns
 [ListProblemsResponseTypeDef](./type_defs.md#listproblemsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieve a list of the tags (keys and values) that are associated with a
@@ -590,6 +647,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Add one or more tags (keys and values) to a specified application.
@@ -610,6 +669,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Remove one or more tags (keys and values) from a specified application.
@@ -629,6 +690,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_application"></a>
 
 ### update_application
 
@@ -655,6 +718,8 @@ Keyword-only arguments:
 Returns
 [UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
 
+<a id="update_component"></a>
+
 ### update_component
 
 Updates the custom component name and/or the list of resources that make up the
@@ -677,6 +742,8 @@ Keyword-only arguments:
 - `ResourceList`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_component_configuration"></a>
 
 ### update_component_configuration
 
@@ -701,6 +768,8 @@ Keyword-only arguments:
 - `AutoConfigEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_log_pattern"></a>
 
 ### update_log_pattern
 

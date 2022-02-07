@@ -1,3 +1,5 @@
+<a id="route53client-for-boto3-route53-module"></a>
+
 # Route53Client for boto3 Route53 module
 
 > [Index](..) > [Route53](.) > Route53Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
 type annotations stubs module
-[mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
+[mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
 - [Route53Client for boto3 Route53 module](#route53client-for-boto3-route53-module)
   - [Route53Client](#route53client)
@@ -81,6 +83,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="route53client"></a>
+
 ## Route53Client
 
 Type annotations for `boto3.client("route53")`
@@ -88,14 +92,17 @@ Type annotations for `boto3.client("route53")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_route53.client import Route53Client
 
 def get_route53_client() -> Route53Client:
-    return boto3.client("route53")
+    return Session().client("route53")
 ```
 
 Boto3 documentation:
 [Route53.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -176,7 +183,11 @@ Exceptions:
 - `Exceptions.VPCAssociationAuthorizationNotFound`
 - `Exceptions.VPCAssociationNotFound`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -188,6 +199,8 @@ Boto3 documentation:
 [Route53.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="activate_key_signing_key"></a>
 
 ### activate_key_signing_key
 
@@ -208,6 +221,8 @@ Keyword-only arguments:
 
 Returns
 [ActivateKeySigningKeyResponseTypeDef](./type_defs.md#activatekeysigningkeyresponsetypedef).
+
+<a id="associate_vpc_with_hosted_zone"></a>
 
 ### associate_vpc_with_hosted_zone
 
@@ -231,6 +246,8 @@ Keyword-only arguments:
 Returns
 [AssociateVPCWithHostedZoneResponseTypeDef](./type_defs.md#associatevpcwithhostedzoneresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -245,6 +262,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="change_resource_record_sets"></a>
 
 ### change_resource_record_sets
 
@@ -269,6 +288,8 @@ Keyword-only arguments:
 Returns
 [ChangeResourceRecordSetsResponseTypeDef](./type_defs.md#changeresourcerecordsetsresponsetypedef).
 
+<a id="change_tags_for_resource"></a>
+
 ### change_tags_for_resource
 
 Adds, edits, or deletes tags for a health check or a hosted zone.
@@ -291,6 +312,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_health_check"></a>
+
 ### create_health_check
 
 Creates a new health check.
@@ -312,6 +335,8 @@ Keyword-only arguments:
 
 Returns
 [CreateHealthCheckResponseTypeDef](./type_defs.md#createhealthcheckresponsetypedef).
+
+<a id="create_hosted_zone"></a>
 
 ### create_hosted_zone
 
@@ -337,6 +362,8 @@ Keyword-only arguments:
 Returns
 [CreateHostedZoneResponseTypeDef](./type_defs.md#createhostedzoneresponsetypedef).
 
+<a id="create_key_signing_key"></a>
+
 ### create_key_signing_key
 
 Creates a new key-signing key (KSK) associated with a hosted zone.
@@ -360,6 +387,8 @@ Keyword-only arguments:
 Returns
 [CreateKeySigningKeyResponseTypeDef](./type_defs.md#createkeysigningkeyresponsetypedef).
 
+<a id="create_query_logging_config"></a>
+
 ### create_query_logging_config
 
 Creates a configuration for DNS query logging.
@@ -380,6 +409,8 @@ Keyword-only arguments:
 
 Returns
 [CreateQueryLoggingConfigResponseTypeDef](./type_defs.md#createqueryloggingconfigresponsetypedef).
+
+<a id="create_reusable_delegation_set"></a>
 
 ### create_reusable_delegation_set
 
@@ -404,6 +435,8 @@ Keyword-only arguments:
 Returns
 [CreateReusableDelegationSetResponseTypeDef](./type_defs.md#createreusabledelegationsetresponsetypedef).
 
+<a id="create_traffic_policy"></a>
+
 ### create_traffic_policy
 
 Creates a traffic policy, which you use to create multiple DNS resource record
@@ -426,6 +459,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTrafficPolicyResponseTypeDef](./type_defs.md#createtrafficpolicyresponsetypedef).
+
+<a id="create_traffic_policy_instance"></a>
 
 ### create_traffic_policy_instance
 
@@ -452,6 +487,8 @@ Keyword-only arguments:
 Returns
 [CreateTrafficPolicyInstanceResponseTypeDef](./type_defs.md#createtrafficpolicyinstanceresponsetypedef).
 
+<a id="create_traffic_policy_version"></a>
+
 ### create_traffic_policy_version
 
 Creates a new version of an existing traffic policy.
@@ -473,6 +510,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTrafficPolicyVersionResponseTypeDef](./type_defs.md#createtrafficpolicyversionresponsetypedef).
+
+<a id="create_vpc_association_authorization"></a>
 
 ### create_vpc_association_authorization
 
@@ -497,6 +536,8 @@ Keyword-only arguments:
 Returns
 [CreateVPCAssociationAuthorizationResponseTypeDef](./type_defs.md#createvpcassociationauthorizationresponsetypedef).
 
+<a id="deactivate_key_signing_key"></a>
+
 ### deactivate_key_signing_key
 
 Deactivates a key-signing key (KSK) so that it will not be used for signing by
@@ -519,6 +560,8 @@ Keyword-only arguments:
 Returns
 [DeactivateKeySigningKeyResponseTypeDef](./type_defs.md#deactivatekeysigningkeyresponsetypedef).
 
+<a id="delete_health_check"></a>
+
 ### delete_health_check
 
 Deletes a health check.
@@ -536,6 +579,8 @@ Keyword-only arguments:
 - `HealthCheckId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_hosted_zone"></a>
 
 ### delete_hosted_zone
 
@@ -555,6 +600,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteHostedZoneResponseTypeDef](./type_defs.md#deletehostedzoneresponsetypedef).
+
+<a id="delete_key_signing_key"></a>
 
 ### delete_key_signing_key
 
@@ -576,6 +623,8 @@ Keyword-only arguments:
 Returns
 [DeleteKeySigningKeyResponseTypeDef](./type_defs.md#deletekeysigningkeyresponsetypedef).
 
+<a id="delete_query_logging_config"></a>
+
 ### delete_query_logging_config
 
 Deletes a configuration for DNS query logging.
@@ -594,6 +643,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_reusable_delegation_set"></a>
 
 ### delete_reusable_delegation_set
 
@@ -614,6 +665,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_traffic_policy"></a>
+
 ### delete_traffic_policy
 
 Deletes a traffic policy.
@@ -632,6 +685,8 @@ Keyword-only arguments:
 - `Version`: `int` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_traffic_policy_instance"></a>
 
 ### delete_traffic_policy_instance
 
@@ -652,6 +707,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_vpc_association_authorization"></a>
 
 ### delete_vpc_association_authorization
 
@@ -675,6 +732,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disable_hosted_zone_dnssec"></a>
+
 ### disable_hosted_zone_dnssec
 
 Disables DNSSEC signing in a specific hosted zone.
@@ -694,6 +753,8 @@ Keyword-only arguments:
 
 Returns
 [DisableHostedZoneDNSSECResponseTypeDef](./type_defs.md#disablehostedzonednssecresponsetypedef).
+
+<a id="disassociate_vpc_from_hosted_zone"></a>
 
 ### disassociate_vpc_from_hosted_zone
 
@@ -718,6 +779,8 @@ Keyword-only arguments:
 Returns
 [DisassociateVPCFromHostedZoneResponseTypeDef](./type_defs.md#disassociatevpcfromhostedzoneresponsetypedef).
 
+<a id="enable_hosted_zone_dnssec"></a>
+
 ### enable_hosted_zone_dnssec
 
 Enables DNSSEC signing in a specific hosted zone.
@@ -738,6 +801,8 @@ Keyword-only arguments:
 Returns
 [EnableHostedZoneDNSSECResponseTypeDef](./type_defs.md#enablehostedzonednssecresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -755,6 +820,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_account_limit"></a>
 
 ### get_account_limit
 
@@ -777,6 +844,8 @@ Keyword-only arguments:
 Returns
 [GetAccountLimitResponseTypeDef](./type_defs.md#getaccountlimitresponsetypedef).
 
+<a id="get_change"></a>
+
 ### get_change
 
 Returns the current status of a change batch request.
@@ -795,6 +864,8 @@ Keyword-only arguments:
 
 Returns [GetChangeResponseTypeDef](./type_defs.md#getchangeresponsetypedef).
 
+<a id="get_checker_ip_ranges"></a>
+
 ### get_checker_ip_ranges
 
 Route 53 does not perform authorization for this API because it retrieves
@@ -807,6 +878,8 @@ Boto3 documentation:
 
 Returns
 [GetCheckerIpRangesResponseTypeDef](./type_defs.md#getcheckeriprangesresponsetypedef).
+
+<a id="get_dnssec"></a>
 
 ### get_dnssec
 
@@ -826,6 +899,8 @@ Keyword-only arguments:
 - `HostedZoneId`: `str` *(required)*
 
 Returns [GetDNSSECResponseTypeDef](./type_defs.md#getdnssecresponsetypedef).
+
+<a id="get_geo_location"></a>
 
 ### get_geo_location
 
@@ -849,6 +924,8 @@ Keyword-only arguments:
 Returns
 [GetGeoLocationResponseTypeDef](./type_defs.md#getgeolocationresponsetypedef).
 
+<a id="get_health_check"></a>
+
 ### get_health_check
 
 Gets information about a specified health check.
@@ -868,6 +945,8 @@ Keyword-only arguments:
 Returns
 [GetHealthCheckResponseTypeDef](./type_defs.md#gethealthcheckresponsetypedef).
 
+<a id="get_health_check_count"></a>
+
 ### get_health_check_count
 
 Retrieves the number of health checks that are associated with the current
@@ -880,6 +959,8 @@ Boto3 documentation:
 
 Returns
 [GetHealthCheckCountResponseTypeDef](./type_defs.md#gethealthcheckcountresponsetypedef).
+
+<a id="get_health_check_last_failure_reason"></a>
 
 ### get_health_check_last_failure_reason
 
@@ -901,6 +982,8 @@ Keyword-only arguments:
 Returns
 [GetHealthCheckLastFailureReasonResponseTypeDef](./type_defs.md#gethealthchecklastfailurereasonresponsetypedef).
 
+<a id="get_health_check_status"></a>
+
 ### get_health_check_status
 
 Gets status of a specified health check.
@@ -919,6 +1002,8 @@ Keyword-only arguments:
 
 Returns
 [GetHealthCheckStatusResponseTypeDef](./type_defs.md#gethealthcheckstatusresponsetypedef).
+
+<a id="get_hosted_zone"></a>
 
 ### get_hosted_zone
 
@@ -940,6 +1025,8 @@ Keyword-only arguments:
 Returns
 [GetHostedZoneResponseTypeDef](./type_defs.md#gethostedzoneresponsetypedef).
 
+<a id="get_hosted_zone_count"></a>
+
 ### get_hosted_zone_count
 
 Retrieves the number of hosted zones that are associated with the current
@@ -952,6 +1039,8 @@ Boto3 documentation:
 
 Returns
 [GetHostedZoneCountResponseTypeDef](./type_defs.md#gethostedzonecountresponsetypedef).
+
+<a id="get_hosted_zone_limit"></a>
 
 ### get_hosted_zone_limit
 
@@ -975,6 +1064,8 @@ Keyword-only arguments:
 Returns
 [GetHostedZoneLimitResponseTypeDef](./type_defs.md#gethostedzonelimitresponsetypedef).
 
+<a id="get_query_logging_config"></a>
+
 ### get_query_logging_config
 
 Gets information about a specified configuration for DNS query logging.
@@ -993,6 +1084,8 @@ Keyword-only arguments:
 
 Returns
 [GetQueryLoggingConfigResponseTypeDef](./type_defs.md#getqueryloggingconfigresponsetypedef).
+
+<a id="get_reusable_delegation_set"></a>
 
 ### get_reusable_delegation_set
 
@@ -1014,6 +1107,8 @@ Keyword-only arguments:
 
 Returns
 [GetReusableDelegationSetResponseTypeDef](./type_defs.md#getreusabledelegationsetresponsetypedef).
+
+<a id="get_reusable_delegation_set_limit"></a>
 
 ### get_reusable_delegation_set_limit
 
@@ -1039,6 +1134,8 @@ Keyword-only arguments:
 Returns
 [GetReusableDelegationSetLimitResponseTypeDef](./type_defs.md#getreusabledelegationsetlimitresponsetypedef).
 
+<a id="get_traffic_policy"></a>
+
 ### get_traffic_policy
 
 Gets information about a specific traffic policy version.
@@ -1058,6 +1155,8 @@ Keyword-only arguments:
 
 Returns
 [GetTrafficPolicyResponseTypeDef](./type_defs.md#gettrafficpolicyresponsetypedef).
+
+<a id="get_traffic_policy_instance"></a>
 
 ### get_traffic_policy_instance
 
@@ -1079,6 +1178,8 @@ Keyword-only arguments:
 Returns
 [GetTrafficPolicyInstanceResponseTypeDef](./type_defs.md#gettrafficpolicyinstanceresponsetypedef).
 
+<a id="get_traffic_policy_instance_count"></a>
+
 ### get_traffic_policy_instance_count
 
 Gets the number of traffic policy instances that are associated with the
@@ -1092,6 +1193,8 @@ Boto3 documentation:
 
 Returns
 [GetTrafficPolicyInstanceCountResponseTypeDef](./type_defs.md#gettrafficpolicyinstancecountresponsetypedef).
+
+<a id="list_geo_locations"></a>
 
 ### list_geo_locations
 
@@ -1115,6 +1218,8 @@ Keyword-only arguments:
 Returns
 [ListGeoLocationsResponseTypeDef](./type_defs.md#listgeolocationsresponsetypedef).
 
+<a id="list_health_checks"></a>
+
 ### list_health_checks
 
 Retrieve a list of the health checks that are associated with the current
@@ -1135,6 +1240,8 @@ Keyword-only arguments:
 
 Returns
 [ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef).
+
+<a id="list_hosted_zones"></a>
 
 ### list_hosted_zones
 
@@ -1158,6 +1265,8 @@ Keyword-only arguments:
 Returns
 [ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef).
 
+<a id="list_hosted_zones_by_name"></a>
+
 ### list_hosted_zones_by_name
 
 Retrieves a list of your hosted zones in lexicographic order.
@@ -1179,6 +1288,8 @@ Keyword-only arguments:
 
 Returns
 [ListHostedZonesByNameResponseTypeDef](./type_defs.md#listhostedzonesbynameresponsetypedef).
+
+<a id="list_hosted_zones_by_vpc"></a>
 
 ### list_hosted_zones_by_vpc
 
@@ -1204,6 +1315,8 @@ Keyword-only arguments:
 Returns
 [ListHostedZonesByVPCResponseTypeDef](./type_defs.md#listhostedzonesbyvpcresponsetypedef).
 
+<a id="list_query_logging_configs"></a>
+
 ### list_query_logging_configs
 
 Lists the configurations for DNS query logging that are associated with the
@@ -1227,6 +1340,8 @@ Keyword-only arguments:
 
 Returns
 [ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef).
+
+<a id="list_resource_record_sets"></a>
 
 ### list_resource_record_sets
 
@@ -1252,6 +1367,8 @@ Keyword-only arguments:
 Returns
 [ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef).
 
+<a id="list_reusable_delegation_sets"></a>
+
 ### list_reusable_delegation_sets
 
 Retrieves a list of the reusable delegation sets that are associated with the
@@ -1274,6 +1391,8 @@ Keyword-only arguments:
 Returns
 [ListReusableDelegationSetsResponseTypeDef](./type_defs.md#listreusabledelegationsetsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists tags for one health check or hosted zone.
@@ -1294,6 +1413,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_tags_for_resources"></a>
 
 ### list_tags_for_resources
 
@@ -1316,6 +1437,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourcesResponseTypeDef](./type_defs.md#listtagsforresourcesresponsetypedef).
 
+<a id="list_traffic_policies"></a>
+
 ### list_traffic_policies
 
 Gets information about the latest version for every traffic policy that is
@@ -1336,6 +1459,8 @@ Keyword-only arguments:
 
 Returns
 [ListTrafficPoliciesResponseTypeDef](./type_defs.md#listtrafficpoliciesresponsetypedef).
+
+<a id="list_traffic_policy_instances"></a>
 
 ### list_traffic_policy_instances
 
@@ -1361,6 +1486,8 @@ Keyword-only arguments:
 Returns
 [ListTrafficPolicyInstancesResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesresponsetypedef).
 
+<a id="list_traffic_policy_instances_by_hosted_zone"></a>
+
 ### list_traffic_policy_instances_by_hosted_zone
 
 Gets information about the traffic policy instances that you created in a
@@ -1384,6 +1511,8 @@ Keyword-only arguments:
 
 Returns
 [ListTrafficPolicyInstancesByHostedZoneResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesbyhostedzoneresponsetypedef).
+
+<a id="list_traffic_policy_instances_by_policy"></a>
 
 ### list_traffic_policy_instances_by_policy
 
@@ -1411,6 +1540,8 @@ Keyword-only arguments:
 Returns
 [ListTrafficPolicyInstancesByPolicyResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesbypolicyresponsetypedef).
 
+<a id="list_traffic_policy_versions"></a>
+
 ### list_traffic_policy_versions
 
 Gets information about all of the versions for a specified traffic policy.
@@ -1432,6 +1563,8 @@ Keyword-only arguments:
 
 Returns
 [ListTrafficPolicyVersionsResponseTypeDef](./type_defs.md#listtrafficpolicyversionsresponsetypedef).
+
+<a id="list_vpc_association_authorizations"></a>
 
 ### list_vpc_association_authorizations
 
@@ -1457,6 +1590,8 @@ Keyword-only arguments:
 Returns
 [ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef).
 
+<a id="test_dns_answer"></a>
+
 ### test_dns_answer
 
 Gets the value that Amazon Route 53 returns in response to a DNS request for a
@@ -1481,6 +1616,8 @@ Keyword-only arguments:
 
 Returns
 [TestDNSAnswerResponseTypeDef](./type_defs.md#testdnsanswerresponsetypedef).
+
+<a id="update_health_check"></a>
 
 ### update_health_check
 
@@ -1521,6 +1658,8 @@ Keyword-only arguments:
 Returns
 [UpdateHealthCheckResponseTypeDef](./type_defs.md#updatehealthcheckresponsetypedef).
 
+<a id="update_hosted_zone_comment"></a>
+
 ### update_hosted_zone_comment
 
 Updates the comment for a specified hosted zone.
@@ -1541,6 +1680,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateHostedZoneCommentResponseTypeDef](./type_defs.md#updatehostedzonecommentresponsetypedef).
+
+<a id="update_traffic_policy_comment"></a>
 
 ### update_traffic_policy_comment
 
@@ -1563,6 +1704,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateTrafficPolicyCommentResponseTypeDef](./type_defs.md#updatetrafficpolicycommentresponsetypedef).
+
+<a id="update_traffic_policy_instance"></a>
 
 ### update_traffic_policy_instance
 
@@ -1588,6 +1731,8 @@ Keyword-only arguments:
 Returns
 [UpdateTrafficPolicyInstanceResponseTypeDef](./type_defs.md#updatetrafficpolicyinstanceresponsetypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("route53").get_paginator` method with
@@ -1603,6 +1748,8 @@ overloads.
   [ListResourceRecordSetsPaginator](./paginators.md#listresourcerecordsetspaginator)
 - `client.get_paginator("list_vpc_association_authorizations")` ->
   [ListVPCAssociationAuthorizationsPaginator](./paginators.md#listvpcassociationauthorizationspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

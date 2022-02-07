@@ -1,3 +1,5 @@
+<a id="iotdeviceadvisorclient-for-boto3-iotdeviceadvisor-module"></a>
+
 # IoTDeviceAdvisorClient for boto3 IoTDeviceAdvisor module
 
 > [Index](..) > [IoTDeviceAdvisor](.) > IoTDeviceAdvisorClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
 type annotations stubs module
-[mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
+[mypy-boto3-iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 - [IoTDeviceAdvisorClient for boto3 IoTDeviceAdvisor module](#iotdeviceadvisorclient-for-boto3-iotdeviceadvisor-module)
   - [IoTDeviceAdvisorClient](#iotdeviceadvisorclient)
@@ -29,6 +31,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_suite_definition](#update_suite_definition)
 
+<a id="iotdeviceadvisorclient"></a>
+
 ## IoTDeviceAdvisorClient
 
 Type annotations for `boto3.client("iotdeviceadvisor")`
@@ -36,14 +40,17 @@ Type annotations for `boto3.client("iotdeviceadvisor")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iotdeviceadvisor.client import IoTDeviceAdvisorClient
 
 def get_iotdeviceadvisor_client() -> IoTDeviceAdvisorClient:
-    return boto3.client("iotdeviceadvisor")
+    return Session().client("iotdeviceadvisor")
 ```
 
 Boto3 documentation:
 [IoTDeviceAdvisor.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -65,7 +72,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -77,6 +88,8 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -92,6 +105,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_suite_definition"></a>
 
 ### create_suite_definition
 
@@ -115,6 +130,8 @@ Keyword-only arguments:
 Returns
 [CreateSuiteDefinitionResponseTypeDef](./type_defs.md#createsuitedefinitionresponsetypedef).
 
+<a id="delete_suite_definition"></a>
+
 ### delete_suite_definition
 
 Deletes a Device Advisor test suite.
@@ -133,6 +150,8 @@ Keyword-only arguments:
 - `suiteDefinitionId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -153,6 +172,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_endpoint"></a>
+
 ### get_endpoint
 
 Gets information about an Device Advisor endpoint.
@@ -172,6 +193,8 @@ Keyword-only arguments:
 
 Returns
 [GetEndpointResponseTypeDef](./type_defs.md#getendpointresponsetypedef).
+
+<a id="get_suite_definition"></a>
 
 ### get_suite_definition
 
@@ -194,6 +217,8 @@ Keyword-only arguments:
 Returns
 [GetSuiteDefinitionResponseTypeDef](./type_defs.md#getsuitedefinitionresponsetypedef).
 
+<a id="get_suite_run"></a>
+
 ### get_suite_run
 
 Gets information about a Device Advisor test suite run.
@@ -213,6 +238,8 @@ Keyword-only arguments:
 
 Returns
 [GetSuiteRunResponseTypeDef](./type_defs.md#getsuiterunresponsetypedef).
+
+<a id="get_suite_run_report"></a>
 
 ### get_suite_run_report
 
@@ -236,6 +263,8 @@ Keyword-only arguments:
 Returns
 [GetSuiteRunReportResponseTypeDef](./type_defs.md#getsuiterunreportresponsetypedef).
 
+<a id="list_suite_definitions"></a>
+
 ### list_suite_definitions
 
 Lists the Device Advisor test suites you have created.
@@ -256,6 +285,8 @@ Keyword-only arguments:
 
 Returns
 [ListSuiteDefinitionsResponseTypeDef](./type_defs.md#listsuitedefinitionsresponsetypedef).
+
+<a id="list_suite_runs"></a>
 
 ### list_suite_runs
 
@@ -279,6 +310,8 @@ Keyword-only arguments:
 Returns
 [ListSuiteRunsResponseTypeDef](./type_defs.md#listsuiterunsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags attached to an IoT Device Advisor resource.
@@ -298,6 +331,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="start_suite_run"></a>
 
 ### start_suite_run
 
@@ -322,6 +357,8 @@ Keyword-only arguments:
 Returns
 [StartSuiteRunResponseTypeDef](./type_defs.md#startsuiterunresponsetypedef).
 
+<a id="stop_suite_run"></a>
+
 ### stop_suite_run
 
 Stops a Device Advisor test suite run that is currently running.
@@ -340,6 +377,8 @@ Keyword-only arguments:
 - `suiteRunId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -360,6 +399,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from an IoT Device Advisor resource.
@@ -378,6 +419,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_suite_definition"></a>
 
 ### update_suite_definition
 

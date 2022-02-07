@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-simpledb-module"></a>
+
 # Typed dictionaries for boto3 SimpleDB module
 
 > [Index](..) > [SimpleDB](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
 type annotations stubs module
-[mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
+[mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 - [Typed dictionaries for boto3 SimpleDB module](#typed-dictionaries-for-boto3-simpledb-module)
   - [AttributeTypeDef](#attributetypedef)
@@ -31,6 +33,8 @@ type annotations stubs module
   - [SelectResultTypeDef](#selectresulttypedef)
   - [UpdateConditionTypeDef](#updateconditiontypedef)
 
+<a id="attributetypedef"></a>
+
 ## AttributeTypeDef
 
 ```python
@@ -47,6 +51,8 @@ Optional fields:
 - `AlternateNameEncoding`: `str`
 - `AlternateValueEncoding`: `str`
 
+<a id="batchdeleteattributesrequestrequesttypedef"></a>
+
 ## BatchDeleteAttributesRequestRequestTypeDef
 
 ```python
@@ -58,6 +64,8 @@ Required fields:
 - `DomainName`: `str`
 - `Items`:
   `Sequence`\[[DeletableItemTypeDef](./type_defs.md#deletableitemtypedef)\]
+
+<a id="batchputattributesrequestrequesttypedef"></a>
 
 ## BatchPutAttributesRequestRequestTypeDef
 
@@ -71,6 +79,8 @@ Required fields:
 - `Items`:
   `Sequence`\[[ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)\]
 
+<a id="createdomainrequestrequesttypedef"></a>
+
 ## CreateDomainRequestRequestTypeDef
 
 ```python
@@ -80,6 +90,8 @@ from mypy_boto3_sdb.type_defs import CreateDomainRequestRequestTypeDef
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="deletableitemtypedef"></a>
 
 ## DeletableItemTypeDef
 
@@ -95,6 +107,8 @@ Optional fields:
 
 - `Attributes`:
   `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+
+<a id="deleteattributesrequestrequesttypedef"></a>
 
 ## DeleteAttributesRequestRequestTypeDef
 
@@ -113,6 +127,8 @@ Optional fields:
   `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
 
+<a id="deletedomainrequestrequesttypedef"></a>
+
 ## DeleteDomainRequestRequestTypeDef
 
 ```python
@@ -123,6 +139,8 @@ Required fields:
 
 - `DomainName`: `str`
 
+<a id="domainmetadatarequestrequesttypedef"></a>
+
 ## DomainMetadataRequestRequestTypeDef
 
 ```python
@@ -132,6 +150,8 @@ from mypy_boto3_sdb.type_defs import DomainMetadataRequestRequestTypeDef
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="domainmetadataresulttypedef"></a>
 
 ## DomainMetadataResultTypeDef
 
@@ -151,6 +171,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getattributesrequestrequesttypedef"></a>
+
 ## GetAttributesRequestRequestTypeDef
 
 ```python
@@ -167,6 +189,8 @@ Optional fields:
 - `AttributeNames`: `Sequence`\[`str`\]
 - `ConsistentRead`: `bool`
 
+<a id="getattributesresulttypedef"></a>
+
 ## GetAttributesResultTypeDef
 
 ```python
@@ -178,6 +202,8 @@ Required fields:
 - `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="itemtypedef"></a>
 
 ## ItemTypeDef
 
@@ -194,6 +220,8 @@ Optional fields:
 
 - `AlternateNameEncoding`: `str`
 
+<a id="listdomainsrequestrequesttypedef"></a>
+
 ## ListDomainsRequestRequestTypeDef
 
 ```python
@@ -204,6 +232,8 @@ Optional fields:
 
 - `MaxNumberOfDomains`: `int`
 - `NextToken`: `str`
+
+<a id="listdomainsresulttypedef"></a>
 
 ## ListDomainsResultTypeDef
 
@@ -218,6 +248,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -229,6 +261,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putattributesrequestrequesttypedef"></a>
 
 ## PutAttributesRequestRequestTypeDef
 
@@ -247,6 +281,8 @@ Optional fields:
 
 - `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
 
+<a id="replaceableattributetypedef"></a>
+
 ## ReplaceableAttributeTypeDef
 
 ```python
@@ -262,6 +298,8 @@ Optional fields:
 
 - `Replace`: `bool`
 
+<a id="replaceableitemtypedef"></a>
+
 ## ReplaceableItemTypeDef
 
 ```python
@@ -273,6 +311,8 @@ Required fields:
 - `Name`: `str`
 - `Attributes`:
   `Sequence`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -287,6 +327,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="selectrequestrequesttypedef"></a>
 
 ## SelectRequestRequestTypeDef
 
@@ -303,6 +345,8 @@ Optional fields:
 - `NextToken`: `str`
 - `ConsistentRead`: `bool`
 
+<a id="selectresulttypedef"></a>
+
 ## SelectResultTypeDef
 
 ```python
@@ -315,6 +359,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateconditiontypedef"></a>
 
 ## UpdateConditionTypeDef
 

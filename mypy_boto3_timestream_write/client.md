@@ -1,3 +1,5 @@
+<a id="timestreamwriteclient-for-boto3-timestreamwrite-module"></a>
+
 # TimestreamWriteClient for boto3 TimestreamWrite module
 
 > [Index](..) > [TimestreamWrite](.) > TimestreamWriteClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
 type annotations stubs module
-[mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
+[mypy-boto3-timestream-write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 - [TimestreamWriteClient for boto3 TimestreamWrite module](#timestreamwriteclient-for-boto3-timestreamwrite-module)
   - [TimestreamWriteClient](#timestreamwriteclient)
@@ -30,6 +32,8 @@ type annotations stubs module
     - [update_table](#update_table)
     - [write_records](#write_records)
 
+<a id="timestreamwriteclient"></a>
+
 ## TimestreamWriteClient
 
 Type annotations for `boto3.client("timestream-write")`
@@ -37,14 +41,17 @@ Type annotations for `boto3.client("timestream-write")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_timestream_write.client import TimestreamWriteClient
 
 def get_timestream-write_client() -> TimestreamWriteClient:
-    return boto3.client("timestream-write")
+    return Session().client("timestream-write")
 ```
 
 Boto3 documentation:
 [TimestreamWrite.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -71,7 +78,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -83,6 +94,8 @@ Boto3 documentation:
 [TimestreamWrite.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -98,6 +111,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_database"></a>
 
 ### create_database
 
@@ -119,6 +134,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef).
+
+<a id="create_table"></a>
 
 ### create_table
 
@@ -146,6 +163,8 @@ Keyword-only arguments:
 Returns
 [CreateTableResponseTypeDef](./type_defs.md#createtableresponsetypedef).
 
+<a id="delete_database"></a>
+
 ### delete_database
 
 Deletes a given Timestream database.
@@ -161,6 +180,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
+
+<a id="delete_table"></a>
 
 ### delete_table
 
@@ -178,6 +199,8 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
+
+<a id="describe_database"></a>
 
 ### describe_database
 
@@ -201,6 +224,8 @@ Keyword-only arguments:
 Returns
 [DescribeDatabaseResponseTypeDef](./type_defs.md#describedatabaseresponsetypedef).
 
+<a id="describe_endpoints"></a>
+
 ### describe_endpoints
 
 DescribeEndpoints returns a list of available endpoints to make Timestream API
@@ -214,6 +239,8 @@ Boto3 documentation:
 
 Returns
 [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
+
+<a id="describe_table"></a>
 
 ### describe_table
 
@@ -236,6 +263,8 @@ Keyword-only arguments:
 Returns
 [DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -254,6 +283,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_databases"></a>
 
 ### list_databases
 
@@ -274,6 +305,8 @@ Keyword-only arguments:
 
 Returns
 [ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef).
+
+<a id="list_tables"></a>
 
 ### list_tables
 
@@ -296,6 +329,8 @@ Keyword-only arguments:
 
 Returns [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List all tags on a Timestream resource.
@@ -316,6 +351,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associate a set of tags with a Timestream resource.
@@ -334,6 +371,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -354,6 +393,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_database"></a>
+
 ### update_database
 
 Modifies the KMS key for an existing database.
@@ -373,6 +414,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDatabaseResponseTypeDef](./type_defs.md#updatedatabaseresponsetypedef).
+
+<a id="update_table"></a>
 
 ### update_table
 
@@ -398,6 +441,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateTableResponseTypeDef](./type_defs.md#updatetableresponsetypedef).
+
+<a id="write_records"></a>
 
 ### write_records
 

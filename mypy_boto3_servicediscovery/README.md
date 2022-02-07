@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-servicediscovery-module"></a>
+
 # Type annotations for boto3 ServiceDiscovery module
 
 > [Index](..) > ServiceDiscovery
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
 type annotations stubs module
-[mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
+[mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[servicediscovery]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[servicediscovery]'
+
+# standalone installation
 pip install mypy-boto3-servicediscovery
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-servicediscovery
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="servicediscoveryclient"></a>
+
 ## ServiceDiscoveryClient
 
 Type annotations for `boto3.client("servicediscovery")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_servicediscovery.client import ServiceDiscoveryClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -63,6 +77,8 @@ from mypy_boto3_servicediscovery.client import ServiceDiscoveryClient
 - [update_public_dns_namespace](./client.md#update_public_dns_namespace)
 - [update_service](./client.md#update_service)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ServiceDiscoveryClient [exceptions](./client.md#exceptions)
@@ -83,6 +99,8 @@ ServiceDiscoveryClient [exceptions](./client.md#exceptions)
 - ServiceNotFound
 - TooManyTagsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -91,13 +109,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_servicediscovery.paginators import ListInstancesPaginator, ...
+from mypy_boto3_servicediscovery.paginator import ListInstancesPaginator, ...
 ```
 
 - [ListInstancesPaginator](./paginators.md#listinstancespaginator)
 - [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
 - [ListOperationsPaginator](./paginators.md#listoperationspaginator)
 - [ListServicesPaginator](./paginators.md#listservicespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -131,6 +151,8 @@ from mypy_boto3_servicediscovery.literals import CustomHealthStatusType, ...
 - [ServiceTypeType](./literals.md#servicetypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-elasticloadbalancing-module"></a>
+
 # Literals for boto3 ElasticLoadBalancing module
 
 > [Index](..) > [ElasticLoadBalancing](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
 type annotations stubs module
-[mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
+[mypy-boto3-elb](https://pypi.org/project/mypy-boto3-elb/).
 
 - [Literals for boto3 ElasticLoadBalancing module](#literals-for-boto3-elasticloadbalancing-module)
   - [AnyInstanceInServiceWaiterName](#anyinstanceinservicewaitername)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="anyinstanceinservicewaitername"></a>
+
 ## AnyInstanceInServiceWaiterName
 
 ```python
@@ -26,6 +30,8 @@ from mypy_boto3_elb.literals import AnyInstanceInServiceWaiterName
 Values:
 
 - `any_instance_in_service`
+
+<a id="describeaccountlimitspaginatorname"></a>
 
 ## DescribeAccountLimitsPaginatorName
 
@@ -37,6 +43,8 @@ Values:
 
 - `describe_account_limits`
 
+<a id="describeloadbalancerspaginatorname"></a>
+
 ## DescribeLoadBalancersPaginatorName
 
 ```python
@@ -46,6 +54,8 @@ from mypy_boto3_elb.literals import DescribeLoadBalancersPaginatorName
 Values:
 
 - `describe_load_balancers`
+
+<a id="instancederegisteredwaitername"></a>
 
 ## InstanceDeregisteredWaiterName
 
@@ -57,6 +67,8 @@ Values:
 
 - `instance_deregistered`
 
+<a id="instanceinservicewaitername"></a>
+
 ## InstanceInServiceWaiterName
 
 ```python
@@ -66,6 +78,8 @@ from mypy_boto3_elb.literals import InstanceInServiceWaiterName
 Values:
 
 - `instance_in_service`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -375,6 +389,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -385,6 +401,8 @@ Values:
 
 - `describe_account_limits`
 - `describe_load_balancers`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

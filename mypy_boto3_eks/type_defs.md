@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-eks-module"></a>
+
 # Typed dictionaries for boto3 EKS module
 
 > [Index](..) > [EKS](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
 type annotations stubs module
-[mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
+[mypy-boto3-eks](https://pypi.org/project/mypy-boto3-eks/).
 
 - [Typed dictionaries for boto3 EKS module](#typed-dictionaries-for-boto3-eks-module)
   - [AddonHealthTypeDef](#addonhealthtypedef)
@@ -119,6 +121,8 @@ type annotations stubs module
   - [VpcConfigResponseTypeDef](#vpcconfigresponsetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="addonhealthtypedef"></a>
+
 ## AddonHealthTypeDef
 
 ```python
@@ -128,6 +132,8 @@ from mypy_boto3_eks.type_defs import AddonHealthTypeDef
 Optional fields:
 
 - `issues`: `List`\[[AddonIssueTypeDef](./type_defs.md#addonissuetypedef)\]
+
+<a id="addoninfotypedef"></a>
 
 ## AddonInfoTypeDef
 
@@ -142,6 +148,8 @@ Optional fields:
 - `addonVersions`:
   `List`\[[AddonVersionInfoTypeDef](./type_defs.md#addonversioninfotypedef)\]
 
+<a id="addonissuetypedef"></a>
+
 ## AddonIssueTypeDef
 
 ```python
@@ -153,6 +161,8 @@ Optional fields:
 - `code`: [AddonIssueCodeType](./literals.md#addonissuecodetype)
 - `message`: `str`
 - `resourceIds`: `List`\[`str`\]
+
+<a id="addontypedef"></a>
 
 ## AddonTypeDef
 
@@ -173,6 +183,8 @@ Optional fields:
 - `serviceAccountRoleArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="addonversioninfotypedef"></a>
+
 ## AddonVersionInfoTypeDef
 
 ```python
@@ -185,6 +197,8 @@ Optional fields:
 - `architecture`: `List`\[`str`\]
 - `compatibilities`:
   `List`\[[CompatibilityTypeDef](./type_defs.md#compatibilitytypedef)\]
+
+<a id="associateencryptionconfigrequestrequesttypedef"></a>
 
 ## AssociateEncryptionConfigRequestRequestTypeDef
 
@@ -202,6 +216,8 @@ Optional fields:
 
 - `clientRequestToken`: `str`
 
+<a id="associateencryptionconfigresponsetypedef"></a>
+
 ## AssociateEncryptionConfigResponseTypeDef
 
 ```python
@@ -213,6 +229,8 @@ Required fields:
 - `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associateidentityproviderconfigrequestrequesttypedef"></a>
 
 ## AssociateIdentityProviderConfigRequestRequestTypeDef
 
@@ -231,6 +249,8 @@ Optional fields:
 - `tags`: `Mapping`\[`str`, `str`\]
 - `clientRequestToken`: `str`
 
+<a id="associateidentityproviderconfigresponsetypedef"></a>
+
 ## AssociateIdentityProviderConfigResponseTypeDef
 
 ```python
@@ -244,6 +264,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="autoscalinggrouptypedef"></a>
+
 ## AutoScalingGroupTypeDef
 
 ```python
@@ -254,6 +276,8 @@ Optional fields:
 
 - `name`: `str`
 
+<a id="certificatetypedef"></a>
+
 ## CertificateTypeDef
 
 ```python
@@ -263,6 +287,8 @@ from mypy_boto3_eks.type_defs import CertificateTypeDef
 Optional fields:
 
 - `data`: `str`
+
+<a id="clustertypedef"></a>
 
 ## ClusterTypeDef
 
@@ -295,6 +321,8 @@ Optional fields:
 - `connectorConfig`:
   [ConnectorConfigResponseTypeDef](./type_defs.md#connectorconfigresponsetypedef)
 
+<a id="compatibilitytypedef"></a>
+
 ## CompatibilityTypeDef
 
 ```python
@@ -307,6 +335,8 @@ Optional fields:
 - `platformVersions`: `List`\[`str`\]
 - `defaultVersion`: `bool`
 
+<a id="connectorconfigrequesttypedef"></a>
+
 ## ConnectorConfigRequestTypeDef
 
 ```python
@@ -318,6 +348,8 @@ Required fields:
 - `roleArn`: `str`
 - `provider`:
   [ConnectorConfigProviderType](./literals.md#connectorconfigprovidertype)
+
+<a id="connectorconfigresponsetypedef"></a>
 
 ## ConnectorConfigResponseTypeDef
 
@@ -332,6 +364,8 @@ Optional fields:
 - `activationExpiry`: `datetime`
 - `provider`: `str`
 - `roleArn`: `str`
+
+<a id="createaddonrequestrequesttypedef"></a>
 
 ## CreateAddonRequestRequestTypeDef
 
@@ -353,6 +387,8 @@ Optional fields:
 - `clientRequestToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createaddonresponsetypedef"></a>
+
 ## CreateAddonResponseTypeDef
 
 ```python
@@ -364,6 +400,8 @@ Required fields:
 - `addon`: [AddonTypeDef](./type_defs.md#addontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createclusterrequestrequesttypedef"></a>
 
 ## CreateClusterRequestRequestTypeDef
 
@@ -389,6 +427,8 @@ Optional fields:
 - `encryptionConfig`:
   `Sequence`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
 
+<a id="createclusterresponsetypedef"></a>
+
 ## CreateClusterResponseTypeDef
 
 ```python
@@ -400,6 +440,8 @@ Required fields:
 - `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfargateprofilerequestrequesttypedef"></a>
 
 ## CreateFargateProfileRequestRequestTypeDef
 
@@ -421,6 +463,8 @@ Optional fields:
 - `clientRequestToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createfargateprofileresponsetypedef"></a>
+
 ## CreateFargateProfileResponseTypeDef
 
 ```python
@@ -433,6 +477,8 @@ Required fields:
   [FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createnodegrouprequestrequesttypedef"></a>
 
 ## CreateNodegroupRequestRequestTypeDef
 
@@ -468,6 +514,8 @@ Optional fields:
 - `version`: `str`
 - `releaseVersion`: `str`
 
+<a id="createnodegroupresponsetypedef"></a>
+
 ## CreateNodegroupResponseTypeDef
 
 ```python
@@ -479,6 +527,8 @@ Required fields:
 - `nodegroup`: [NodegroupTypeDef](./type_defs.md#nodegrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteaddonrequestrequesttypedef"></a>
 
 ## DeleteAddonRequestRequestTypeDef
 
@@ -495,6 +545,8 @@ Optional fields:
 
 - `preserve`: `bool`
 
+<a id="deleteaddonresponsetypedef"></a>
+
 ## DeleteAddonResponseTypeDef
 
 ```python
@@ -507,6 +559,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteclusterrequestrequesttypedef"></a>
+
 ## DeleteClusterRequestRequestTypeDef
 
 ```python
@@ -516,6 +570,8 @@ from mypy_boto3_eks.type_defs import DeleteClusterRequestRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="deleteclusterresponsetypedef"></a>
 
 ## DeleteClusterResponseTypeDef
 
@@ -529,6 +585,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletefargateprofilerequestrequesttypedef"></a>
+
 ## DeleteFargateProfileRequestRequestTypeDef
 
 ```python
@@ -539,6 +597,8 @@ Required fields:
 
 - `clusterName`: `str`
 - `fargateProfileName`: `str`
+
+<a id="deletefargateprofileresponsetypedef"></a>
 
 ## DeleteFargateProfileResponseTypeDef
 
@@ -553,6 +613,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletenodegrouprequestrequesttypedef"></a>
+
 ## DeleteNodegroupRequestRequestTypeDef
 
 ```python
@@ -563,6 +625,8 @@ Required fields:
 
 - `clusterName`: `str`
 - `nodegroupName`: `str`
+
+<a id="deletenodegroupresponsetypedef"></a>
 
 ## DeleteNodegroupResponseTypeDef
 
@@ -576,6 +640,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deregisterclusterrequestrequesttypedef"></a>
+
 ## DeregisterClusterRequestRequestTypeDef
 
 ```python
@@ -585,6 +651,8 @@ from mypy_boto3_eks.type_defs import DeregisterClusterRequestRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="deregisterclusterresponsetypedef"></a>
 
 ## DeregisterClusterResponseTypeDef
 
@@ -598,6 +666,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeaddonrequestrequesttypedef"></a>
+
 ## DescribeAddonRequestRequestTypeDef
 
 ```python
@@ -608,6 +678,8 @@ Required fields:
 
 - `clusterName`: `str`
 - `addonName`: `str`
+
+<a id="describeaddonresponsetypedef"></a>
 
 ## DescribeAddonResponseTypeDef
 
@@ -620,6 +692,8 @@ Required fields:
 - `addon`: [AddonTypeDef](./type_defs.md#addontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeaddonversionsrequestrequesttypedef"></a>
 
 ## DescribeAddonVersionsRequestRequestTypeDef
 
@@ -634,6 +708,8 @@ Optional fields:
 - `nextToken`: `str`
 - `addonName`: `str`
 
+<a id="describeaddonversionsresponsetypedef"></a>
+
 ## DescribeAddonVersionsResponseTypeDef
 
 ```python
@@ -647,6 +723,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeclusterrequestrequesttypedef"></a>
+
 ## DescribeClusterRequestRequestTypeDef
 
 ```python
@@ -656,6 +734,8 @@ from mypy_boto3_eks.type_defs import DescribeClusterRequestRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="describeclusterresponsetypedef"></a>
 
 ## DescribeClusterResponseTypeDef
 
@@ -669,6 +749,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefargateprofilerequestrequesttypedef"></a>
+
 ## DescribeFargateProfileRequestRequestTypeDef
 
 ```python
@@ -679,6 +761,8 @@ Required fields:
 
 - `clusterName`: `str`
 - `fargateProfileName`: `str`
+
+<a id="describefargateprofileresponsetypedef"></a>
 
 ## DescribeFargateProfileResponseTypeDef
 
@@ -693,6 +777,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeidentityproviderconfigrequestrequesttypedef"></a>
+
 ## DescribeIdentityProviderConfigRequestRequestTypeDef
 
 ```python
@@ -704,6 +790,8 @@ Required fields:
 - `clusterName`: `str`
 - `identityProviderConfig`:
   [IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef)
+
+<a id="describeidentityproviderconfigresponsetypedef"></a>
 
 ## DescribeIdentityProviderConfigResponseTypeDef
 
@@ -718,6 +806,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describenodegrouprequestrequesttypedef"></a>
+
 ## DescribeNodegroupRequestRequestTypeDef
 
 ```python
@@ -728,6 +818,8 @@ Required fields:
 
 - `clusterName`: `str`
 - `nodegroupName`: `str`
+
+<a id="describenodegroupresponsetypedef"></a>
 
 ## DescribeNodegroupResponseTypeDef
 
@@ -740,6 +832,8 @@ Required fields:
 - `nodegroup`: [NodegroupTypeDef](./type_defs.md#nodegrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeupdaterequestrequesttypedef"></a>
 
 ## DescribeUpdateRequestRequestTypeDef
 
@@ -757,6 +851,8 @@ Optional fields:
 - `nodegroupName`: `str`
 - `addonName`: `str`
 
+<a id="describeupdateresponsetypedef"></a>
+
 ## DescribeUpdateResponseTypeDef
 
 ```python
@@ -768,6 +864,8 @@ Required fields:
 - `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="disassociateidentityproviderconfigrequestrequesttypedef"></a>
 
 ## DisassociateIdentityProviderConfigRequestRequestTypeDef
 
@@ -785,6 +883,8 @@ Optional fields:
 
 - `clientRequestToken`: `str`
 
+<a id="disassociateidentityproviderconfigresponsetypedef"></a>
+
 ## DisassociateIdentityProviderConfigResponseTypeDef
 
 ```python
@@ -797,6 +897,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="encryptionconfigtypedef"></a>
+
 ## EncryptionConfigTypeDef
 
 ```python
@@ -807,6 +909,8 @@ Optional fields:
 
 - `resources`: `Sequence`\[`str`\]
 - `provider`: [ProviderTypeDef](./type_defs.md#providertypedef)
+
+<a id="errordetailtypedef"></a>
 
 ## ErrorDetailTypeDef
 
@@ -820,6 +924,8 @@ Optional fields:
 - `errorMessage`: `str`
 - `resourceIds`: `List`\[`str`\]
 
+<a id="fargateprofileselectortypedef"></a>
+
 ## FargateProfileSelectorTypeDef
 
 ```python
@@ -830,6 +936,8 @@ Optional fields:
 
 - `namespace`: `str`
 - `labels`: `Mapping`\[`str`, `str`\]
+
+<a id="fargateprofiletypedef"></a>
 
 ## FargateProfileTypeDef
 
@@ -850,6 +958,8 @@ Optional fields:
 - `status`: [FargateProfileStatusType](./literals.md#fargateprofilestatustype)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="identityproviderconfigresponsetypedef"></a>
+
 ## IdentityProviderConfigResponseTypeDef
 
 ```python
@@ -860,6 +970,8 @@ Optional fields:
 
 - `oidc`:
   [OidcIdentityProviderConfigTypeDef](./type_defs.md#oidcidentityproviderconfigtypedef)
+
+<a id="identityproviderconfigtypedef"></a>
 
 ## IdentityProviderConfigTypeDef
 
@@ -872,6 +984,8 @@ Required fields:
 - `type`: `str`
 - `name`: `str`
 
+<a id="identitytypedef"></a>
+
 ## IdentityTypeDef
 
 ```python
@@ -881,6 +995,8 @@ from mypy_boto3_eks.type_defs import IdentityTypeDef
 Optional fields:
 
 - `oidc`: [OIDCTypeDef](./type_defs.md#oidctypedef)
+
+<a id="issuetypedef"></a>
 
 ## IssueTypeDef
 
@@ -894,6 +1010,8 @@ Optional fields:
 - `message`: `str`
 - `resourceIds`: `List`\[`str`\]
 
+<a id="kubernetesnetworkconfigrequesttypedef"></a>
+
 ## KubernetesNetworkConfigRequestTypeDef
 
 ```python
@@ -904,6 +1022,8 @@ Optional fields:
 
 - `serviceIpv4Cidr`: `str`
 - `ipFamily`: [IpFamilyType](./literals.md#ipfamilytype)
+
+<a id="kubernetesnetworkconfigresponsetypedef"></a>
 
 ## KubernetesNetworkConfigResponseTypeDef
 
@@ -917,6 +1037,8 @@ Optional fields:
 - `serviceIpv6Cidr`: `str`
 - `ipFamily`: [IpFamilyType](./literals.md#ipfamilytype)
 
+<a id="launchtemplatespecificationtypedef"></a>
+
 ## LaunchTemplateSpecificationTypeDef
 
 ```python
@@ -928,6 +1050,8 @@ Optional fields:
 - `name`: `str`
 - `version`: `str`
 - `id`: `str`
+
+<a id="listaddonsrequestrequesttypedef"></a>
 
 ## ListAddonsRequestRequestTypeDef
 
@@ -944,6 +1068,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listaddonsresponsetypedef"></a>
+
 ## ListAddonsResponseTypeDef
 
 ```python
@@ -957,6 +1083,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listclustersrequestrequesttypedef"></a>
+
 ## ListClustersRequestRequestTypeDef
 
 ```python
@@ -968,6 +1096,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `include`: `Sequence`\[`str`\]
+
+<a id="listclustersresponsetypedef"></a>
 
 ## ListClustersResponseTypeDef
 
@@ -981,6 +1111,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfargateprofilesrequestrequesttypedef"></a>
 
 ## ListFargateProfilesRequestRequestTypeDef
 
@@ -997,6 +1129,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listfargateprofilesresponsetypedef"></a>
+
 ## ListFargateProfilesResponseTypeDef
 
 ```python
@@ -1009,6 +1143,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listidentityproviderconfigsrequestrequesttypedef"></a>
 
 ## ListIdentityProviderConfigsRequestRequestTypeDef
 
@@ -1025,6 +1161,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listidentityproviderconfigsresponsetypedef"></a>
+
 ## ListIdentityProviderConfigsResponseTypeDef
 
 ```python
@@ -1038,6 +1176,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listnodegroupsrequestrequesttypedef"></a>
 
 ## ListNodegroupsRequestRequestTypeDef
 
@@ -1054,6 +1194,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listnodegroupsresponsetypedef"></a>
+
 ## ListNodegroupsResponseTypeDef
 
 ```python
@@ -1067,6 +1209,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1076,6 +1220,8 @@ from mypy_boto3_eks.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1088,6 +1234,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listupdatesrequestrequesttypedef"></a>
 
 ## ListUpdatesRequestRequestTypeDef
 
@@ -1106,6 +1254,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listupdatesresponsetypedef"></a>
+
 ## ListUpdatesResponseTypeDef
 
 ```python
@@ -1119,6 +1269,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logsetuptypedef"></a>
+
 ## LogSetupTypeDef
 
 ```python
@@ -1129,6 +1281,8 @@ Optional fields:
 
 - `types`: `Sequence`\[[LogTypeType](./literals.md#logtypetype)\]
 - `enabled`: `bool`
+
+<a id="loggingtypedef"></a>
 
 ## LoggingTypeDef
 
@@ -1141,6 +1295,8 @@ Optional fields:
 - `clusterLogging`:
   `Sequence`\[[LogSetupTypeDef](./type_defs.md#logsetuptypedef)\]
 
+<a id="nodegrouphealthtypedef"></a>
+
 ## NodegroupHealthTypeDef
 
 ```python
@@ -1150,6 +1306,8 @@ from mypy_boto3_eks.type_defs import NodegroupHealthTypeDef
 Optional fields:
 
 - `issues`: `List`\[[IssueTypeDef](./type_defs.md#issuetypedef)\]
+
+<a id="nodegroupresourcestypedef"></a>
 
 ## NodegroupResourcesTypeDef
 
@@ -1163,6 +1321,8 @@ Optional fields:
   `List`\[[AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef)\]
 - `remoteAccessSecurityGroup`: `str`
 
+<a id="nodegroupscalingconfigtypedef"></a>
+
 ## NodegroupScalingConfigTypeDef
 
 ```python
@@ -1174,6 +1334,8 @@ Optional fields:
 - `minSize`: `int`
 - `maxSize`: `int`
 - `desiredSize`: `int`
+
+<a id="nodegrouptypedef"></a>
 
 ## NodegroupTypeDef
 
@@ -1212,6 +1374,8 @@ Optional fields:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="nodegroupupdateconfigtypedef"></a>
+
 ## NodegroupUpdateConfigTypeDef
 
 ```python
@@ -1223,6 +1387,8 @@ Optional fields:
 - `maxUnavailable`: `int`
 - `maxUnavailablePercentage`: `int`
 
+<a id="oidctypedef"></a>
+
 ## OIDCTypeDef
 
 ```python
@@ -1232,6 +1398,8 @@ from mypy_boto3_eks.type_defs import OIDCTypeDef
 Optional fields:
 
 - `issuer`: `str`
+
+<a id="oidcidentityproviderconfigrequesttypedef"></a>
 
 ## OidcIdentityProviderConfigRequestTypeDef
 
@@ -1252,6 +1420,8 @@ Optional fields:
 - `groupsClaim`: `str`
 - `groupsPrefix`: `str`
 - `requiredClaims`: `Mapping`\[`str`, `str`\]
+
+<a id="oidcidentityproviderconfigtypedef"></a>
 
 ## OidcIdentityProviderConfigTypeDef
 
@@ -1274,6 +1444,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `status`: [configStatusType](./literals.md#configstatustype)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1286,6 +1458,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="providertypedef"></a>
+
 ## ProviderTypeDef
 
 ```python
@@ -1295,6 +1469,8 @@ from mypy_boto3_eks.type_defs import ProviderTypeDef
 Optional fields:
 
 - `keyArn`: `str`
+
+<a id="registerclusterrequestrequesttypedef"></a>
 
 ## RegisterClusterRequestRequestTypeDef
 
@@ -1313,6 +1489,8 @@ Optional fields:
 - `clientRequestToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="registerclusterresponsetypedef"></a>
+
 ## RegisterClusterResponseTypeDef
 
 ```python
@@ -1325,6 +1503,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="remoteaccessconfigtypedef"></a>
+
 ## RemoteAccessConfigTypeDef
 
 ```python
@@ -1335,6 +1515,8 @@ Optional fields:
 
 - `ec2SshKey`: `str`
 - `sourceSecurityGroups`: `Sequence`\[`str`\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1350,6 +1532,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1360,6 +1544,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="tainttypedef"></a>
 
 ## TaintTypeDef
 
@@ -1373,6 +1559,8 @@ Optional fields:
 - `value`: `str`
 - `effect`: [TaintEffectType](./literals.md#tainteffecttype)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1383,6 +1571,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateaddonrequestrequesttypedef"></a>
 
 ## UpdateAddonRequestRequestTypeDef
 
@@ -1403,6 +1593,8 @@ Optional fields:
   [ResolveConflictsType](./literals.md#resolveconflictstype)
 - `clientRequestToken`: `str`
 
+<a id="updateaddonresponsetypedef"></a>
+
 ## UpdateAddonResponseTypeDef
 
 ```python
@@ -1414,6 +1606,8 @@ Required fields:
 - `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateclusterconfigrequestrequesttypedef"></a>
 
 ## UpdateClusterConfigRequestRequestTypeDef
 
@@ -1432,6 +1626,8 @@ Optional fields:
 - `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `clientRequestToken`: `str`
 
+<a id="updateclusterconfigresponsetypedef"></a>
+
 ## UpdateClusterConfigResponseTypeDef
 
 ```python
@@ -1443,6 +1639,8 @@ Required fields:
 - `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateclusterversionrequestrequesttypedef"></a>
 
 ## UpdateClusterVersionRequestRequestTypeDef
 
@@ -1459,6 +1657,8 @@ Optional fields:
 
 - `clientRequestToken`: `str`
 
+<a id="updateclusterversionresponsetypedef"></a>
+
 ## UpdateClusterVersionResponseTypeDef
 
 ```python
@@ -1471,6 +1671,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatelabelspayloadtypedef"></a>
+
 ## UpdateLabelsPayloadTypeDef
 
 ```python
@@ -1481,6 +1683,8 @@ Optional fields:
 
 - `addOrUpdateLabels`: `Mapping`\[`str`, `str`\]
 - `removeLabels`: `Sequence`\[`str`\]
+
+<a id="updatenodegroupconfigrequestrequesttypedef"></a>
 
 ## UpdateNodegroupConfigRequestRequestTypeDef
 
@@ -1505,6 +1709,8 @@ Optional fields:
   [NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef)
 - `clientRequestToken`: `str`
 
+<a id="updatenodegroupconfigresponsetypedef"></a>
+
 ## UpdateNodegroupConfigResponseTypeDef
 
 ```python
@@ -1516,6 +1722,8 @@ Required fields:
 - `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatenodegroupversionrequestrequesttypedef"></a>
 
 ## UpdateNodegroupVersionRequestRequestTypeDef
 
@@ -1537,6 +1745,8 @@ Optional fields:
 - `force`: `bool`
 - `clientRequestToken`: `str`
 
+<a id="updatenodegroupversionresponsetypedef"></a>
+
 ## UpdateNodegroupVersionResponseTypeDef
 
 ```python
@@ -1549,6 +1759,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateparamtypedef"></a>
+
 ## UpdateParamTypeDef
 
 ```python
@@ -1559,6 +1771,8 @@ Optional fields:
 
 - `type`: [UpdateParamTypeType](./literals.md#updateparamtypetype)
 - `value`: `str`
+
+<a id="updatetaintspayloadtypedef"></a>
 
 ## UpdateTaintsPayloadTypeDef
 
@@ -1571,6 +1785,8 @@ Optional fields:
 - `addOrUpdateTaints`:
   `Sequence`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
 - `removeTaints`: `Sequence`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
+
+<a id="updatetypedef"></a>
 
 ## UpdateTypeDef
 
@@ -1587,6 +1803,8 @@ Optional fields:
 - `createdAt`: `datetime`
 - `errors`: `List`\[[ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
 
+<a id="vpcconfigrequesttypedef"></a>
+
 ## VpcConfigRequestTypeDef
 
 ```python
@@ -1600,6 +1818,8 @@ Optional fields:
 - `endpointPublicAccess`: `bool`
 - `endpointPrivateAccess`: `bool`
 - `publicAccessCidrs`: `Sequence`\[`str`\]
+
+<a id="vpcconfigresponsetypedef"></a>
 
 ## VpcConfigResponseTypeDef
 
@@ -1616,6 +1836,8 @@ Optional fields:
 - `endpointPublicAccess`: `bool`
 - `endpointPrivateAccess`: `bool`
 - `publicAccessCidrs`: `List`\[`str`\]
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

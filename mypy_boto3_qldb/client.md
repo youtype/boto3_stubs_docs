@@ -1,3 +1,5 @@
+<a id="qldbclient-for-boto3-qldb-module"></a>
+
 # QLDBClient for boto3 QLDB module
 
 > [Index](..) > [QLDB](.) > QLDBClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
 type annotations stubs module
-[mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
+[mypy-boto3-qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
 - [QLDBClient for boto3 QLDB module](#qldbclient-for-boto3-qldb-module)
   - [QLDBClient](#qldbclient)
@@ -35,6 +37,8 @@ type annotations stubs module
     - [update_ledger](#update_ledger)
     - [update_ledger_permissions_mode](#update_ledger_permissions_mode)
 
+<a id="qldbclient"></a>
+
 ## QLDBClient
 
 Type annotations for `boto3.client("qldb")`
@@ -42,14 +46,17 @@ Type annotations for `boto3.client("qldb")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_qldb.client import QLDBClient
 
 def get_qldb_client() -> QLDBClient:
-    return boto3.client("qldb")
+    return Session().client("qldb")
 ```
 
 Boto3 documentation:
 [QLDB.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -73,7 +80,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ResourcePreconditionNotMetException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -85,6 +96,8 @@ Boto3 documentation:
 [QLDB.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -100,6 +113,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_journal_kinesis_stream"></a>
 
 ### cancel_journal_kinesis_stream
 
@@ -121,6 +136,8 @@ Keyword-only arguments:
 
 Returns
 [CancelJournalKinesisStreamResponseTypeDef](./type_defs.md#canceljournalkinesisstreamresponsetypedef).
+
+<a id="create_ledger"></a>
 
 ### create_ledger
 
@@ -146,6 +163,8 @@ Keyword-only arguments:
 Returns
 [CreateLedgerResponseTypeDef](./type_defs.md#createledgerresponsetypedef).
 
+<a id="delete_ledger"></a>
+
 ### delete_ledger
 
 Deletes a ledger and all of its contents.
@@ -161,6 +180,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
+
+<a id="describe_journal_kinesis_stream"></a>
 
 ### describe_journal_kinesis_stream
 
@@ -182,6 +203,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeJournalKinesisStreamResponseTypeDef](./type_defs.md#describejournalkinesisstreamresponsetypedef).
+
+<a id="describe_journal_s3_export"></a>
 
 ### describe_journal_s3_export
 
@@ -205,6 +228,8 @@ Keyword-only arguments:
 Returns
 [DescribeJournalS3ExportResponseTypeDef](./type_defs.md#describejournals3exportresponsetypedef).
 
+<a id="describe_ledger"></a>
+
 ### describe_ledger
 
 Returns information about a ledger, including its state, permissions mode,
@@ -224,6 +249,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLedgerResponseTypeDef](./type_defs.md#describeledgerresponsetypedef).
+
+<a id="export_journal_to_s3"></a>
 
 ### export_journal_to_s3
 
@@ -252,6 +279,8 @@ Keyword-only arguments:
 Returns
 [ExportJournalToS3ResponseTypeDef](./type_defs.md#exportjournaltos3responsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -269,6 +298,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_block"></a>
 
 ### get_block
 
@@ -291,6 +322,8 @@ Keyword-only arguments:
 
 Returns [GetBlockResponseTypeDef](./type_defs.md#getblockresponsetypedef).
 
+<a id="get_digest"></a>
+
 ### get_digest
 
 Returns the digest of a ledger at the latest committed block in the journal.
@@ -308,6 +341,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns [GetDigestResponseTypeDef](./type_defs.md#getdigestresponsetypedef).
+
+<a id="get_revision"></a>
 
 ### get_revision
 
@@ -332,6 +367,8 @@ Keyword-only arguments:
 Returns
 [GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef).
 
+<a id="list_journal_kinesis_streams_for_ledger"></a>
+
 ### list_journal_kinesis_streams_for_ledger
 
 Returns an array of all Amazon QLDB journal stream descriptors for a given
@@ -355,6 +392,8 @@ Keyword-only arguments:
 Returns
 [ListJournalKinesisStreamsForLedgerResponseTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerresponsetypedef).
 
+<a id="list_journal_s3_exports"></a>
+
 ### list_journal_s3_exports
 
 Returns an array of journal export job descriptions for all ledgers that are
@@ -375,6 +414,8 @@ Keyword-only arguments:
 
 Returns
 [ListJournalS3ExportsResponseTypeDef](./type_defs.md#listjournals3exportsresponsetypedef).
+
+<a id="list_journal_s3_exports_for_ledger"></a>
 
 ### list_journal_s3_exports_for_ledger
 
@@ -398,6 +439,8 @@ Keyword-only arguments:
 Returns
 [ListJournalS3ExportsForLedgerResponseTypeDef](./type_defs.md#listjournals3exportsforledgerresponsetypedef).
 
+<a id="list_ledgers"></a>
+
 ### list_ledgers
 
 Returns an array of ledger summaries that are associated with the current
@@ -419,6 +462,8 @@ Keyword-only arguments:
 Returns
 [ListLedgersResponseTypeDef](./type_defs.md#listledgersresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns all tags for a specified Amazon QLDB resource.
@@ -437,6 +482,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="stream_journal_to_kinesis"></a>
 
 ### stream_journal_to_kinesis
 
@@ -465,6 +512,8 @@ Keyword-only arguments:
 Returns
 [StreamJournalToKinesisResponseTypeDef](./type_defs.md#streamjournaltokinesisresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds one or more tags to a specified Amazon QLDB resource.
@@ -484,6 +533,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from a specified Amazon QLDB resource.
@@ -502,6 +553,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_ledger"></a>
 
 ### update_ledger
 
@@ -523,6 +576,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateLedgerResponseTypeDef](./type_defs.md#updateledgerresponsetypedef).
+
+<a id="update_ledger_permissions_mode"></a>
 
 ### update_ledger_permissions_mode
 

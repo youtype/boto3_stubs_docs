@@ -1,3 +1,5 @@
+<a id="cloudwatchclient-for-boto3-cloudwatch-module"></a>
+
 # CloudWatchClient for boto3 CloudWatch module
 
 > [Index](..) > [CloudWatch](.) > CloudWatchClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
 type annotations stubs module
-[mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
+[mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 - [CloudWatchClient for boto3 CloudWatch module](#cloudwatchclient-for-boto3-cloudwatch-module)
   - [CloudWatchClient](#cloudwatchclient)
@@ -53,6 +55,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="cloudwatchclient"></a>
+
 ## CloudWatchClient
 
 Type annotations for `boto3.client("cloudwatch")`
@@ -60,14 +64,17 @@ Type annotations for `boto3.client("cloudwatch")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cloudwatch.client import CloudWatchClient
 
 def get_cloudwatch_client() -> CloudWatchClient:
-    return boto3.client("cloudwatch")
+    return Session().client("cloudwatch")
 ```
 
 Boto3 documentation:
 [CloudWatch.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -98,7 +105,11 @@ Exceptions:
 - `Exceptions.ResourceNotFound`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -110,6 +121,8 @@ Boto3 documentation:
 [CloudWatch.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -126,6 +139,8 @@ Arguments:
 
 Returns `bool`.
 
+<a id="delete_alarms"></a>
+
 ### delete_alarms
 
 Deletes the specified alarms.
@@ -141,6 +156,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AlarmNames`: `Sequence`\[`str`\] *(required)*
+
+<a id="delete_anomaly_detector"></a>
 
 ### delete_anomaly_detector
 
@@ -169,6 +186,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_dashboards"></a>
+
 ### delete_dashboards
 
 Deletes all dashboards that you specify.
@@ -186,6 +205,8 @@ Keyword-only arguments:
 - `DashboardNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_insight_rules"></a>
 
 ### delete_insight_rules
 
@@ -206,6 +227,8 @@ Keyword-only arguments:
 Returns
 [DeleteInsightRulesOutputTypeDef](./type_defs.md#deleteinsightrulesoutputtypedef).
 
+<a id="delete_metric_stream"></a>
+
 ### delete_metric_stream
 
 Permanently deletes the metric stream that you specify.
@@ -223,6 +246,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_alarm_history"></a>
 
 ### describe_alarm_history
 
@@ -251,6 +276,8 @@ Keyword-only arguments:
 Returns
 [DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef).
 
+<a id="describe_alarms"></a>
+
 ### describe_alarms
 
 Retrieves the specified alarms.
@@ -277,6 +304,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef).
+
+<a id="describe_alarms_for_metric"></a>
 
 ### describe_alarms_for_metric
 
@@ -305,6 +334,8 @@ Keyword-only arguments:
 Returns
 [DescribeAlarmsForMetricOutputTypeDef](./type_defs.md#describealarmsformetricoutputtypedef).
 
+<a id="describe_anomaly_detectors"></a>
+
 ### describe_anomaly_detectors
 
 Lists the anomaly detection models that you have created in your account.
@@ -332,6 +363,8 @@ Keyword-only arguments:
 Returns
 [DescribeAnomalyDetectorsOutputTypeDef](./type_defs.md#describeanomalydetectorsoutputtypedef).
 
+<a id="describe_insight_rules"></a>
+
 ### describe_insight_rules
 
 Returns a list of all the Contributor Insights rules in your account.
@@ -353,6 +386,8 @@ Keyword-only arguments:
 Returns
 [DescribeInsightRulesOutputTypeDef](./type_defs.md#describeinsightrulesoutputtypedef).
 
+<a id="disable_alarm_actions"></a>
+
 ### disable_alarm_actions
 
 Disables the actions for the specified alarms.
@@ -368,6 +403,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AlarmNames`: `Sequence`\[`str`\] *(required)*
+
+<a id="disable_insight_rules"></a>
 
 ### disable_insight_rules
 
@@ -388,6 +425,8 @@ Keyword-only arguments:
 Returns
 [DisableInsightRulesOutputTypeDef](./type_defs.md#disableinsightrulesoutputtypedef).
 
+<a id="enable_alarm_actions"></a>
+
 ### enable_alarm_actions
 
 Enables the actions for the specified alarms.
@@ -403,6 +442,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AlarmNames`: `Sequence`\[`str`\] *(required)*
+
+<a id="enable_insight_rules"></a>
 
 ### enable_insight_rules
 
@@ -423,6 +464,8 @@ Keyword-only arguments:
 Returns
 [EnableInsightRulesOutputTypeDef](./type_defs.md#enableinsightrulesoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -442,6 +485,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_dashboard"></a>
+
 ### get_dashboard
 
 Displays the details of the dashboard that you specify.
@@ -459,6 +504,8 @@ Keyword-only arguments:
 - `DashboardName`: `str` *(required)*
 
 Returns [GetDashboardOutputTypeDef](./type_defs.md#getdashboardoutputtypedef).
+
+<a id="get_insight_rule_report"></a>
 
 ### get_insight_rule_report
 
@@ -486,6 +533,8 @@ Keyword-only arguments:
 
 Returns
 [GetInsightRuleReportOutputTypeDef](./type_defs.md#getinsightrulereportoutputtypedef).
+
+<a id="get_metric_data"></a>
 
 ### get_metric_data
 
@@ -515,6 +564,8 @@ Keyword-only arguments:
 Returns
 [GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef).
 
+<a id="get_metric_statistics"></a>
+
 ### get_metric_statistics
 
 Gets statistics for the specified metric.
@@ -543,6 +594,8 @@ Keyword-only arguments:
 Returns
 [GetMetricStatisticsOutputTypeDef](./type_defs.md#getmetricstatisticsoutputtypedef).
 
+<a id="get_metric_stream"></a>
+
 ### get_metric_stream
 
 Returns information about the metric stream that you specify.
@@ -561,6 +614,8 @@ Keyword-only arguments:
 
 Returns
 [GetMetricStreamOutputTypeDef](./type_defs.md#getmetricstreamoutputtypedef).
+
+<a id="get_metric_widget_image"></a>
 
 ### get_metric_widget_image
 
@@ -584,6 +639,8 @@ Keyword-only arguments:
 Returns
 [GetMetricWidgetImageOutputTypeDef](./type_defs.md#getmetricwidgetimageoutputtypedef).
 
+<a id="list_dashboards"></a>
+
 ### list_dashboards
 
 Returns a list of the dashboards for your account.
@@ -604,6 +661,8 @@ Keyword-only arguments:
 Returns
 [ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef).
 
+<a id="list_metric_streams"></a>
+
 ### list_metric_streams
 
 Returns a list of metric streams in this account.
@@ -623,6 +682,8 @@ Keyword-only arguments:
 
 Returns
 [ListMetricStreamsOutputTypeDef](./type_defs.md#listmetricstreamsoutputtypedef).
+
+<a id="list_metrics"></a>
 
 ### list_metrics
 
@@ -648,6 +709,8 @@ Keyword-only arguments:
 
 Returns [ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Displays the tags associated with a CloudWatch resource.
@@ -667,6 +730,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+
+<a id="put_anomaly_detector"></a>
 
 ### put_anomaly_detector
 
@@ -696,6 +761,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_composite_alarm"></a>
+
 ### put_composite_alarm
 
 Creates or updates a *composite alarm*.
@@ -719,6 +786,8 @@ Keyword-only arguments:
 - `OKActions`: `Sequence`\[`str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="put_dashboard"></a>
+
 ### put_dashboard
 
 Creates a dashboard if it does not already exist, or updates an existing
@@ -738,6 +807,8 @@ Keyword-only arguments:
 - `DashboardBody`: `str` *(required)*
 
 Returns [PutDashboardOutputTypeDef](./type_defs.md#putdashboardoutputtypedef).
+
+<a id="put_insight_rule"></a>
 
 ### put_insight_rule
 
@@ -759,6 +830,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_metric_alarm"></a>
 
 ### put_metric_alarm
 
@@ -801,6 +874,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ThresholdMetricId`: `str`
 
+<a id="put_metric_data"></a>
+
 ### put_metric_data
 
 Publishes metric data points to Amazon CloudWatch.
@@ -819,6 +894,8 @@ Keyword-only arguments:
 - `MetricData`:
   `Sequence`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
   *(required)*
+
+<a id="put_metric_stream"></a>
 
 ### put_metric_stream
 
@@ -849,6 +926,8 @@ Keyword-only arguments:
 Returns
 [PutMetricStreamOutputTypeDef](./type_defs.md#putmetricstreamoutputtypedef).
 
+<a id="set_alarm_state"></a>
+
 ### set_alarm_state
 
 Temporarily sets the state of an alarm for testing purposes.
@@ -868,6 +947,8 @@ Keyword-only arguments:
 - `StateReason`: `str` *(required)*
 - `StateReasonData`: `str`
 
+<a id="start_metric_streams"></a>
+
 ### start_metric_streams
 
 Starts the streaming of metrics for one or more of your metric streams.
@@ -886,6 +967,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="stop_metric_streams"></a>
+
 ### stop_metric_streams
 
 Stops the streaming of metrics for one or more of your metric streams.
@@ -903,6 +986,8 @@ Keyword-only arguments:
 - `Names`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -924,6 +1009,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from the specified resource.
@@ -943,6 +1030,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("cloudwatch").get_paginator` method with
@@ -958,6 +1047,8 @@ overloads.
   [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
 - `client.get_paginator("list_metrics")` ->
   [ListMetricsPaginator](./paginators.md#listmetricspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

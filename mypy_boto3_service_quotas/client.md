@@ -1,3 +1,5 @@
+<a id="servicequotasclient-for-boto3-servicequotas-module"></a>
+
 # ServiceQuotasClient for boto3 ServiceQuotas module
 
 > [Index](..) > [ServiceQuotas](.) > ServiceQuotasClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
 type annotations stubs module
-[mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
+[mypy-boto3-service-quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
 - [ServiceQuotasClient for boto3 ServiceQuotas module](#servicequotasclient-for-boto3-servicequotas-module)
   - [ServiceQuotasClient](#servicequotasclient)
@@ -35,6 +37,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="servicequotasclient"></a>
+
 ## ServiceQuotasClient
 
 Type annotations for `boto3.client("service-quotas")`
@@ -42,14 +46,17 @@ Type annotations for `boto3.client("service-quotas")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_service_quotas.client import ServiceQuotasClient
 
 def get_service-quotas_client() -> ServiceQuotasClient:
-    return boto3.client("service-quotas")
+    return Session().client("service-quotas")
 ```
 
 Boto3 documentation:
 [ServiceQuotas.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -84,7 +91,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.TooManyTagsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -97,6 +108,8 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
+<a id="associate_service_quota_template"></a>
+
 ### associate_service_quota_template
 
 Associates your quota request template with your organization.
@@ -108,6 +121,8 @@ Boto3 documentation:
 [ServiceQuotas.Client.associate_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.associate_service_quota_template)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -123,6 +138,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_service_quota_increase_request_from_template"></a>
 
 ### delete_service_quota_increase_request_from_template
 
@@ -147,6 +164,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_service_quota_template"></a>
+
 ### disassociate_service_quota_template
 
 Disables your quota request template.
@@ -158,6 +177,8 @@ Boto3 documentation:
 [ServiceQuotas.Client.disassociate_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.disassociate_service_quota_template)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -178,6 +199,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_association_for_service_quota_template"></a>
+
 ### get_association_for_service_quota_template
 
 Retrieves the status of the association for the quota request template.
@@ -191,6 +214,8 @@ Boto3 documentation:
 
 Returns
 [GetAssociationForServiceQuotaTemplateResponseTypeDef](./type_defs.md#getassociationforservicequotatemplateresponsetypedef).
+
+<a id="get_aws_default_service_quota"></a>
 
 ### get_aws_default_service_quota
 
@@ -213,6 +238,8 @@ Keyword-only arguments:
 Returns
 [GetAWSDefaultServiceQuotaResponseTypeDef](./type_defs.md#getawsdefaultservicequotaresponsetypedef).
 
+<a id="get_requested_service_quota_change"></a>
+
 ### get_requested_service_quota_change
 
 Retrieves information about the specified quota increase request.
@@ -233,6 +260,8 @@ Keyword-only arguments:
 Returns
 [GetRequestedServiceQuotaChangeResponseTypeDef](./type_defs.md#getrequestedservicequotachangeresponsetypedef).
 
+<a id="get_service_quota"></a>
+
 ### get_service_quota
 
 Retrieves the applied quota value for the specified quota.
@@ -252,6 +281,8 @@ Keyword-only arguments:
 
 Returns
 [GetServiceQuotaResponseTypeDef](./type_defs.md#getservicequotaresponsetypedef).
+
+<a id="get_service_quota_increase_request_from_template"></a>
 
 ### get_service_quota_increase_request_from_template
 
@@ -277,6 +308,8 @@ Keyword-only arguments:
 Returns
 [GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef](./type_defs.md#getservicequotaincreaserequestfromtemplateresponsetypedef).
 
+<a id="list_aws_default_service_quotas"></a>
+
 ### list_aws_default_service_quotas
 
 Lists the default values for the quotas for the specified AWS service.
@@ -298,6 +331,8 @@ Keyword-only arguments:
 
 Returns
 [ListAWSDefaultServiceQuotasResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponsetypedef).
+
+<a id="list_requested_service_quota_change_history"></a>
 
 ### list_requested_service_quota_change_history
 
@@ -322,6 +357,8 @@ Keyword-only arguments:
 
 Returns
 [ListRequestedServiceQuotaChangeHistoryResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponsetypedef).
+
+<a id="list_requested_service_quota_change_history_by_quota"></a>
 
 ### list_requested_service_quota_change_history_by_quota
 
@@ -348,6 +385,8 @@ Keyword-only arguments:
 Returns
 [ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponsetypedef).
 
+<a id="list_service_quota_increase_requests_in_template"></a>
+
 ### list_service_quota_increase_requests_in_template
 
 Lists the quota increase requests in the specified quota request template.
@@ -372,6 +411,8 @@ Keyword-only arguments:
 Returns
 [ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponsetypedef).
 
+<a id="list_service_quotas"></a>
+
 ### list_service_quotas
 
 Lists the applied quota values for the specified AWS service.
@@ -394,6 +435,8 @@ Keyword-only arguments:
 Returns
 [ListServiceQuotasResponseTypeDef](./type_defs.md#listservicequotasresponsetypedef).
 
+<a id="list_services"></a>
+
 ### list_services
 
 Lists the names and codes for the services integrated with Service Quotas.
@@ -414,6 +457,8 @@ Keyword-only arguments:
 Returns
 [ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of the tags assigned to the specified applied quota.
@@ -433,6 +478,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_service_quota_increase_request_into_template"></a>
 
 ### put_service_quota_increase_request_into_template
 
@@ -458,6 +505,8 @@ Keyword-only arguments:
 Returns
 [PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef](./type_defs.md#putservicequotaincreaserequestintotemplateresponsetypedef).
 
+<a id="request_service_quota_increase"></a>
+
 ### request_service_quota_increase
 
 Submits a quota increase request for the specified quota.
@@ -480,6 +529,8 @@ Keyword-only arguments:
 Returns
 [RequestServiceQuotaIncreaseResponseTypeDef](./type_defs.md#requestservicequotaincreaseresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to the specified applied quota.
@@ -499,6 +550,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from the specified applied quota.
@@ -517,6 +570,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-snowdevicemanagement-module"></a>
+
 # Typed dictionaries for boto3 SnowDeviceManagement module
 
 > [Index](..) > [SnowDeviceManagement](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SnowDeviceManagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement)
 type annotations stubs module
-[mypy_boto3_snow_device_management](https://pypi.org/project/mypy-boto3-snow-device-management/).
+[mypy-boto3-snow-device-management](https://pypi.org/project/mypy-boto3-snow-device-management/).
 
 - [Typed dictionaries for boto3 SnowDeviceManagement module](#typed-dictionaries-for-boto3-snowdevicemanagement-module)
   - [CancelTaskInputRequestTypeDef](#canceltaskinputrequesttypedef)
@@ -50,6 +52,8 @@ type annotations stubs module
   - [TaskSummaryTypeDef](#tasksummarytypedef)
   - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
 
+<a id="canceltaskinputrequesttypedef"></a>
+
 ## CancelTaskInputRequestTypeDef
 
 ```python
@@ -59,6 +63,8 @@ from mypy_boto3_snow_device_management.type_defs import CancelTaskInputRequestTy
 Required fields:
 
 - `taskId`: `str`
+
+<a id="canceltaskoutputtypedef"></a>
 
 ## CancelTaskOutputTypeDef
 
@@ -71,6 +77,8 @@ Required fields:
 - `taskId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="capacitytypedef"></a>
 
 ## CapacityTypeDef
 
@@ -86,6 +94,8 @@ Optional fields:
 - `unit`: `str`
 - `used`: `int`
 
+<a id="commandtypedef"></a>
+
 ## CommandTypeDef
 
 ```python
@@ -97,6 +107,8 @@ Optional fields:
 - `reboot`: `Mapping`\[`str`, `Any`\]
 - `unlock`: `Mapping`\[`str`, `Any`\]
 
+<a id="cpuoptionstypedef"></a>
+
 ## CpuOptionsTypeDef
 
 ```python
@@ -107,6 +119,8 @@ Optional fields:
 
 - `coreCount`: `int`
 - `threadsPerCore`: `int`
+
+<a id="createtaskinputrequesttypedef"></a>
 
 ## CreateTaskInputRequestTypeDef
 
@@ -125,6 +139,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createtaskoutputtypedef"></a>
+
 ## CreateTaskOutputTypeDef
 
 ```python
@@ -138,6 +154,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedeviceec2inputrequesttypedef"></a>
+
 ## DescribeDeviceEc2InputRequestTypeDef
 
 ```python
@@ -148,6 +166,8 @@ Required fields:
 
 - `instanceIds`: `Sequence`\[`str`\]
 - `managedDeviceId`: `str`
+
+<a id="describedeviceec2outputtypedef"></a>
 
 ## DescribeDeviceEc2OutputTypeDef
 
@@ -162,6 +182,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedeviceinputrequesttypedef"></a>
+
 ## DescribeDeviceInputRequestTypeDef
 
 ```python
@@ -171,6 +193,8 @@ from mypy_boto3_snow_device_management.type_defs import DescribeDeviceInputReque
 Required fields:
 
 - `managedDeviceId`: `str`
+
+<a id="describedeviceoutputtypedef"></a>
 
 ## DescribeDeviceOutputTypeDef
 
@@ -197,6 +221,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeexecutioninputrequesttypedef"></a>
+
 ## DescribeExecutionInputRequestTypeDef
 
 ```python
@@ -207,6 +233,8 @@ Required fields:
 
 - `managedDeviceId`: `str`
 - `taskId`: `str`
+
+<a id="describeexecutionoutputtypedef"></a>
 
 ## DescribeExecutionOutputTypeDef
 
@@ -225,6 +253,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetaskinputrequesttypedef"></a>
+
 ## DescribeTaskInputRequestTypeDef
 
 ```python
@@ -234,6 +264,8 @@ from mypy_boto3_snow_device_management.type_defs import DescribeTaskInputRequest
 Required fields:
 
 - `taskId`: `str`
+
+<a id="describetaskoutputtypedef"></a>
 
 ## DescribeTaskOutputTypeDef
 
@@ -255,6 +287,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="devicesummarytypedef"></a>
+
 ## DeviceSummaryTypeDef
 
 ```python
@@ -267,6 +301,8 @@ Optional fields:
 - `managedDeviceArn`: `str`
 - `managedDeviceId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="ebsinstanceblockdevicetypedef"></a>
 
 ## EbsInstanceBlockDeviceTypeDef
 
@@ -281,6 +317,8 @@ Optional fields:
 - `status`: [AttachmentStatusType](./literals.md#attachmentstatustype)
 - `volumeId`: `str`
 
+<a id="executionsummarytypedef"></a>
+
 ## ExecutionSummaryTypeDef
 
 ```python
@@ -294,6 +332,8 @@ Optional fields:
 - `state`: [ExecutionStateType](./literals.md#executionstatetype)
 - `taskId`: `str`
 
+<a id="instanceblockdevicemappingtypedef"></a>
+
 ## InstanceBlockDeviceMappingTypeDef
 
 ```python
@@ -306,6 +346,8 @@ Optional fields:
 - `ebs`:
   [EbsInstanceBlockDeviceTypeDef](./type_defs.md#ebsinstanceblockdevicetypedef)
 
+<a id="instancestatetypedef"></a>
+
 ## InstanceStateTypeDef
 
 ```python
@@ -317,6 +359,8 @@ Optional fields:
 - `code`: `int`
 - `name`: [InstanceStateNameType](./literals.md#instancestatenametype)
 
+<a id="instancesummarytypedef"></a>
+
 ## InstanceSummaryTypeDef
 
 ```python
@@ -327,6 +371,8 @@ Optional fields:
 
 - `instance`: [InstanceTypeDef](./type_defs.md#instancetypedef)
 - `lastUpdatedAt`: `datetime`
+
+<a id="instancetypedef"></a>
 
 ## InstanceTypeDef
 
@@ -352,6 +398,8 @@ Optional fields:
 - `state`: [InstanceStateTypeDef](./type_defs.md#instancestatetypedef)
 - `updatedAt`: `datetime`
 
+<a id="listdeviceresourcesinputrequesttypedef"></a>
+
 ## ListDeviceResourcesInputRequestTypeDef
 
 ```python
@@ -368,6 +416,8 @@ Optional fields:
 - `nextToken`: `str`
 - `type`: `str`
 
+<a id="listdeviceresourcesoutputtypedef"></a>
+
 ## ListDeviceResourcesOutputTypeDef
 
 ```python
@@ -382,6 +432,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdevicesinputrequesttypedef"></a>
+
 ## ListDevicesInputRequestTypeDef
 
 ```python
@@ -393,6 +445,8 @@ Optional fields:
 - `jobId`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listdevicesoutputtypedef"></a>
 
 ## ListDevicesOutputTypeDef
 
@@ -407,6 +461,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listexecutionsinputrequesttypedef"></a>
 
 ## ListExecutionsInputRequestTypeDef
 
@@ -424,6 +480,8 @@ Optional fields:
 - `nextToken`: `str`
 - `state`: [ExecutionStateType](./literals.md#executionstatetype)
 
+<a id="listexecutionsoutputtypedef"></a>
+
 ## ListExecutionsOutputTypeDef
 
 ```python
@@ -438,6 +496,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -447,6 +507,8 @@ from mypy_boto3_snow_device_management.type_defs import ListTagsForResourceInput
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceoutputtypedef"></a>
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -460,6 +522,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtasksinputrequesttypedef"></a>
+
 ## ListTasksInputRequestTypeDef
 
 ```python
@@ -471,6 +535,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `state`: [TaskStateType](./literals.md#taskstatetype)
+
+<a id="listtasksoutputtypedef"></a>
 
 ## ListTasksOutputTypeDef
 
@@ -485,6 +551,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -496,6 +564,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="physicalnetworkinterfacetypedef"></a>
 
 ## PhysicalNetworkInterfaceTypeDef
 
@@ -515,6 +585,8 @@ Optional fields:
   [PhysicalConnectorTypeType](./literals.md#physicalconnectortypetype)
 - `physicalNetworkInterfaceId`: `str`
 
+<a id="resourcesummarytypedef"></a>
+
 ## ResourceSummaryTypeDef
 
 ```python
@@ -530,6 +602,8 @@ Optional fields:
 - `arn`: `str`
 - `id`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -544,6 +618,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="securitygroupidentifiertypedef"></a>
+
 ## SecurityGroupIdentifierTypeDef
 
 ```python
@@ -554,6 +630,8 @@ Optional fields:
 
 - `groupId`: `str`
 - `groupName`: `str`
+
+<a id="softwareinformationtypedef"></a>
 
 ## SoftwareInformationTypeDef
 
@@ -567,6 +645,8 @@ Optional fields:
 - `installedVersion`: `str`
 - `installingVersion`: `str`
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -577,6 +657,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="tasksummarytypedef"></a>
 
 ## TaskSummaryTypeDef
 
@@ -593,6 +675,8 @@ Optional fields:
 - `state`: [TaskStateType](./literals.md#taskstatetype)
 - `tags`: `Dict`\[`str`, `str`\]
 - `taskArn`: `str`
+
+<a id="untagresourceinputrequesttypedef"></a>
 
 ## UntagResourceInputRequestTypeDef
 

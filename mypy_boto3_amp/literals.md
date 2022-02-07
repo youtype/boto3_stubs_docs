@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-prometheusservice-module"></a>
+
 # Literals for boto3 PrometheusService module
 
 > [Index](..) > [PrometheusService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
 type annotations stubs module
-[mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
+[mypy-boto3-amp](https://pypi.org/project/mypy-boto3-amp/).
 
 - [Literals for boto3 PrometheusService module](#literals-for-boto3-prometheusservice-module)
   - [AlertManagerDefinitionStatusCodeType](#alertmanagerdefinitionstatuscodetype)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
+
+<a id="alertmanagerdefinitionstatuscodetype"></a>
 
 ## AlertManagerDefinitionStatusCodeType
 
@@ -34,6 +38,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATING`
 
+<a id="listrulegroupsnamespacespaginatorname"></a>
+
 ## ListRuleGroupsNamespacesPaginatorName
 
 ```python
@@ -44,6 +50,8 @@ Values:
 
 - `list_rule_groups_namespaces`
 
+<a id="listworkspacespaginatorname"></a>
+
 ## ListWorkspacesPaginatorName
 
 ```python
@@ -53,6 +61,8 @@ from mypy_boto3_amp.literals import ListWorkspacesPaginatorName
 Values:
 
 - `list_workspaces`
+
+<a id="rulegroupsnamespacestatuscodetype"></a>
 
 ## RuleGroupsNamespaceStatusCodeType
 
@@ -69,6 +79,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATING`
 
+<a id="workspaceactivewaitername"></a>
+
 ## WorkspaceActiveWaiterName
 
 ```python
@@ -79,6 +91,8 @@ Values:
 
 - `workspace_active`
 
+<a id="workspacedeletedwaitername"></a>
+
 ## WorkspaceDeletedWaiterName
 
 ```python
@@ -88,6 +102,8 @@ from mypy_boto3_amp.literals import WorkspaceDeletedWaiterName
 Values:
 
 - `workspace_deleted`
+
+<a id="workspacestatuscodetype"></a>
 
 ## WorkspaceStatusCodeType
 
@@ -102,6 +118,8 @@ Values:
 - `CREATION_FAILED`
 - `DELETING`
 - `UPDATING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -411,6 +429,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -421,6 +441,8 @@ Values:
 
 - `list_rule_groups_namespaces`
 - `list_workspaces`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

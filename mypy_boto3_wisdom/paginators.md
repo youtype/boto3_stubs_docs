@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-connectwisdomservice-module"></a>
+
 # Paginators for boto3 ConnectWisdomService module
 
 > [Index](..) > [ConnectWisdomService](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
 type annotations stubs module
-[mypy_boto3_wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
+[mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
 
 - [Paginators for boto3 ConnectWisdomService module](#paginators-for-boto3-connectwisdomservice-module)
   - [ListAssistantAssociationsPaginator](#listassistantassociationspaginator)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [SearchContentPaginator](#searchcontentpaginator)
   - [SearchSessionsPaginator](#searchsessionspaginator)
 
+<a id="listassistantassociationspaginator"></a>
+
 ## ListAssistantAssociationsPaginator
 
 Type annotations for
@@ -24,10 +28,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_wisdom.paginator import ListAssistantAssociationsPaginator
 
 def get_list_assistant_associations_paginator() -> ListAssistantAssociationsPaginator:
-    return boto3.client("wisdom").get_paginator("list_assistant_associations")
+    return Session().client("wisdom").get_paginator("list_assistant_associations")
 ```
 
 Boto3 documentation:
@@ -42,6 +48,8 @@ Arguments for `ListAssistantAssociationsPaginator.paginate` method:
 `ListAssistantAssociationsPaginator.paginate` returns
 `_PageIterator`\[[ListAssistantAssociationsResponseTypeDef](./type_defs.md#listassistantassociationsresponsetypedef)\].
 
+<a id="listassistantspaginator"></a>
+
 ## ListAssistantsPaginator
 
 Type annotations for `boto3.client("wisdom").get_paginator("list_assistants")`.
@@ -49,10 +57,12 @@ Type annotations for `boto3.client("wisdom").get_paginator("list_assistants")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_wisdom.paginator import ListAssistantsPaginator
 
 def get_list_assistants_paginator() -> ListAssistantsPaginator:
-    return boto3.client("wisdom").get_paginator("list_assistants")
+    return Session().client("wisdom").get_paginator("list_assistants")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `ListAssistantsPaginator.paginate` method:
 `ListAssistantsPaginator.paginate` returns
 `_PageIterator`\[[ListAssistantsResponseTypeDef](./type_defs.md#listassistantsresponsetypedef)\].
 
+<a id="listcontentspaginator"></a>
+
 ## ListContentsPaginator
 
 Type annotations for `boto3.client("wisdom").get_paginator("list_contents")`.
@@ -73,10 +85,12 @@ Type annotations for `boto3.client("wisdom").get_paginator("list_contents")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_wisdom.paginator import ListContentsPaginator
 
 def get_list_contents_paginator() -> ListContentsPaginator:
-    return boto3.client("wisdom").get_paginator("list_contents")
+    return Session().client("wisdom").get_paginator("list_contents")
 ```
 
 Boto3 documentation:
@@ -91,6 +105,8 @@ Arguments for `ListContentsPaginator.paginate` method:
 `ListContentsPaginator.paginate` returns
 `_PageIterator`\[[ListContentsResponseTypeDef](./type_defs.md#listcontentsresponsetypedef)\].
 
+<a id="listknowledgebasespaginator"></a>
+
 ## ListKnowledgeBasesPaginator
 
 Type annotations for
@@ -99,10 +115,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_wisdom.paginator import ListKnowledgeBasesPaginator
 
 def get_list_knowledge_bases_paginator() -> ListKnowledgeBasesPaginator:
-    return boto3.client("wisdom").get_paginator("list_knowledge_bases")
+    return Session().client("wisdom").get_paginator("list_knowledge_bases")
 ```
 
 Boto3 documentation:
@@ -116,6 +134,8 @@ Arguments for `ListKnowledgeBasesPaginator.paginate` method:
 `ListKnowledgeBasesPaginator.paginate` returns
 `_PageIterator`\[[ListKnowledgeBasesResponseTypeDef](./type_defs.md#listknowledgebasesresponsetypedef)\].
 
+<a id="queryassistantpaginator"></a>
+
 ## QueryAssistantPaginator
 
 Type annotations for `boto3.client("wisdom").get_paginator("query_assistant")`.
@@ -123,10 +143,12 @@ Type annotations for `boto3.client("wisdom").get_paginator("query_assistant")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_wisdom.paginator import QueryAssistantPaginator
 
 def get_query_assistant_paginator() -> QueryAssistantPaginator:
-    return boto3.client("wisdom").get_paginator("query_assistant")
+    return Session().client("wisdom").get_paginator("query_assistant")
 ```
 
 Boto3 documentation:
@@ -142,6 +164,8 @@ Arguments for `QueryAssistantPaginator.paginate` method:
 `QueryAssistantPaginator.paginate` returns
 `_PageIterator`\[[QueryAssistantResponseTypeDef](./type_defs.md#queryassistantresponsetypedef)\].
 
+<a id="searchcontentpaginator"></a>
+
 ## SearchContentPaginator
 
 Type annotations for `boto3.client("wisdom").get_paginator("search_content")`.
@@ -149,10 +173,12 @@ Type annotations for `boto3.client("wisdom").get_paginator("search_content")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_wisdom.paginator import SearchContentPaginator
 
 def get_search_content_paginator() -> SearchContentPaginator:
-    return boto3.client("wisdom").get_paginator("search_content")
+    return Session().client("wisdom").get_paginator("search_content")
 ```
 
 Boto3 documentation:
@@ -170,6 +196,8 @@ Arguments for `SearchContentPaginator.paginate` method:
 `SearchContentPaginator.paginate` returns
 `_PageIterator`\[[SearchContentResponseTypeDef](./type_defs.md#searchcontentresponsetypedef)\].
 
+<a id="searchsessionspaginator"></a>
+
 ## SearchSessionsPaginator
 
 Type annotations for `boto3.client("wisdom").get_paginator("search_sessions")`.
@@ -177,10 +205,12 @@ Type annotations for `boto3.client("wisdom").get_paginator("search_sessions")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_wisdom.paginator import SearchSessionsPaginator
 
 def get_search_sessions_paginator() -> SearchSessionsPaginator:
-    return boto3.client("wisdom").get_paginator("search_sessions")
+    return Session().client("wisdom").get_paginator("search_sessions")
 ```
 
 Boto3 documentation:

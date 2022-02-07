@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-acmpca-module"></a>
+
 # Typed dictionaries for boto3 ACMPCA module
 
 > [Index](..) > [ACMPCA](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
-[mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
+[mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 - [Typed dictionaries for boto3 ACMPCA module](#typed-dictionaries-for-boto3-acmpca-module)
   - [ASN1SubjectTypeDef](#asn1subjecttypedef)
@@ -69,6 +71,8 @@ type annotations stubs module
   - [ValidityTypeDef](#validitytypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="asn1subjecttypedef"></a>
+
 ## ASN1SubjectTypeDef
 
 ```python
@@ -92,6 +96,8 @@ Optional fields:
 - `Pseudonym`: `str`
 - `GenerationQualifier`: `str`
 
+<a id="accessdescriptiontypedef"></a>
+
 ## AccessDescriptionTypeDef
 
 ```python
@@ -102,6 +108,8 @@ Required fields:
 
 - `AccessMethod`: [AccessMethodTypeDef](./type_defs.md#accessmethodtypedef)
 - `AccessLocation`: [GeneralNameTypeDef](./type_defs.md#generalnametypedef)
+
+<a id="accessmethodtypedef"></a>
 
 ## AccessMethodTypeDef
 
@@ -115,6 +123,8 @@ Optional fields:
 - `AccessMethodType`:
   [AccessMethodTypeType](./literals.md#accessmethodtypetype)
 
+<a id="apipassthroughtypedef"></a>
+
 ## ApiPassthroughTypeDef
 
 ```python
@@ -125,6 +135,8 @@ Optional fields:
 
 - `Extensions`: [ExtensionsTypeDef](./type_defs.md#extensionstypedef)
 - `Subject`: [ASN1SubjectTypeDef](./type_defs.md#asn1subjecttypedef)
+
+<a id="certificateauthorityconfigurationtypedef"></a>
 
 ## CertificateAuthorityConfigurationTypeDef
 
@@ -142,6 +154,8 @@ Required fields:
 Optional fields:
 
 - `CsrExtensions`: [CsrExtensionsTypeDef](./type_defs.md#csrextensionstypedef)
+
+<a id="certificateauthoritytypedef"></a>
 
 ## CertificateAuthorityTypeDef
 
@@ -171,6 +185,8 @@ Optional fields:
 - `KeyStorageSecurityStandard`:
   [KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype)
 
+<a id="createcertificateauthorityauditreportrequestrequesttypedef"></a>
+
 ## CreateCertificateAuthorityAuditReportRequestRequestTypeDef
 
 ```python
@@ -184,6 +200,8 @@ Required fields:
 - `AuditReportResponseFormat`:
   [AuditReportResponseFormatType](./literals.md#auditreportresponseformattype)
 
+<a id="createcertificateauthorityauditreportresponsetypedef"></a>
+
 ## CreateCertificateAuthorityAuditReportResponseTypeDef
 
 ```python
@@ -196,6 +214,8 @@ Required fields:
 - `S3Key`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcertificateauthorityrequestrequesttypedef"></a>
 
 ## CreateCertificateAuthorityRequestRequestTypeDef
 
@@ -219,6 +239,8 @@ Optional fields:
   [KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcertificateauthorityresponsetypedef"></a>
+
 ## CreateCertificateAuthorityResponseTypeDef
 
 ```python
@@ -230,6 +252,8 @@ Required fields:
 - `CertificateAuthorityArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpermissionrequestrequesttypedef"></a>
 
 ## CreatePermissionRequestRequestTypeDef
 
@@ -246,6 +270,8 @@ Required fields:
 Optional fields:
 
 - `SourceAccount`: `str`
+
+<a id="crlconfigurationtypedef"></a>
 
 ## CrlConfigurationTypeDef
 
@@ -264,6 +290,8 @@ Optional fields:
 - `S3BucketName`: `str`
 - `S3ObjectAcl`: [S3ObjectAclType](./literals.md#s3objectacltype)
 
+<a id="csrextensionstypedef"></a>
+
 ## CsrExtensionsTypeDef
 
 ```python
@@ -275,6 +303,8 @@ Optional fields:
 - `KeyUsage`: [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
 - `SubjectInformationAccess`:
   `Sequence`\[[AccessDescriptionTypeDef](./type_defs.md#accessdescriptiontypedef)\]
+
+<a id="deletecertificateauthorityrequestrequesttypedef"></a>
 
 ## DeleteCertificateAuthorityRequestRequestTypeDef
 
@@ -289,6 +319,8 @@ Required fields:
 Optional fields:
 
 - `PermanentDeletionTimeInDays`: `int`
+
+<a id="deletepermissionrequestrequesttypedef"></a>
 
 ## DeletePermissionRequestRequestTypeDef
 
@@ -305,6 +337,8 @@ Optional fields:
 
 - `SourceAccount`: `str`
 
+<a id="deletepolicyrequestrequesttypedef"></a>
+
 ## DeletePolicyRequestRequestTypeDef
 
 ```python
@@ -314,6 +348,8 @@ from mypy_boto3_acm_pca.type_defs import DeletePolicyRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="describecertificateauthorityauditreportrequestrequesttypedef"></a>
 
 ## DescribeCertificateAuthorityAuditReportRequestRequestTypeDef
 
@@ -325,6 +361,8 @@ Required fields:
 
 - `CertificateAuthorityArn`: `str`
 - `AuditReportId`: `str`
+
+<a id="describecertificateauthorityauditreportresponsetypedef"></a>
 
 ## DescribeCertificateAuthorityAuditReportResponseTypeDef
 
@@ -342,6 +380,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecertificateauthorityrequestrequesttypedef"></a>
+
 ## DescribeCertificateAuthorityRequestRequestTypeDef
 
 ```python
@@ -351,6 +391,8 @@ from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityRequestRequ
 Required fields:
 
 - `CertificateAuthorityArn`: `str`
+
+<a id="describecertificateauthorityresponsetypedef"></a>
 
 ## DescribeCertificateAuthorityResponseTypeDef
 
@@ -364,6 +406,8 @@ Required fields:
   [CertificateAuthorityTypeDef](./type_defs.md#certificateauthoritytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="edipartynametypedef"></a>
 
 ## EdiPartyNameTypeDef
 
@@ -379,6 +423,8 @@ Optional fields:
 
 - `NameAssigner`: `str`
 
+<a id="extendedkeyusagetypedef"></a>
+
 ## ExtendedKeyUsageTypeDef
 
 ```python
@@ -390,6 +436,8 @@ Optional fields:
 - `ExtendedKeyUsageType`:
   [ExtendedKeyUsageTypeType](./literals.md#extendedkeyusagetypetype)
 - `ExtendedKeyUsageObjectIdentifier`: `str`
+
+<a id="extensionstypedef"></a>
 
 ## ExtensionsTypeDef
 
@@ -406,6 +454,8 @@ Optional fields:
 - `KeyUsage`: [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
 - `SubjectAlternativeNames`:
   `Sequence`\[[GeneralNameTypeDef](./type_defs.md#generalnametypedef)\]
+
+<a id="generalnametypedef"></a>
 
 ## GeneralNameTypeDef
 
@@ -424,6 +474,8 @@ Optional fields:
 - `IpAddress`: `str`
 - `RegisteredId`: `str`
 
+<a id="getcertificateauthoritycertificaterequestrequesttypedef"></a>
+
 ## GetCertificateAuthorityCertificateRequestRequestTypeDef
 
 ```python
@@ -433,6 +485,8 @@ from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCertificateReque
 Required fields:
 
 - `CertificateAuthorityArn`: `str`
+
+<a id="getcertificateauthoritycertificateresponsetypedef"></a>
 
 ## GetCertificateAuthorityCertificateResponseTypeDef
 
@@ -447,6 +501,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcertificateauthoritycsrrequestrequesttypedef"></a>
+
 ## GetCertificateAuthorityCsrRequestRequestTypeDef
 
 ```python
@@ -456,6 +512,8 @@ from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCsrRequestReques
 Required fields:
 
 - `CertificateAuthorityArn`: `str`
+
+<a id="getcertificateauthoritycsrresponsetypedef"></a>
 
 ## GetCertificateAuthorityCsrResponseTypeDef
 
@@ -469,6 +527,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcertificaterequestrequesttypedef"></a>
+
 ## GetCertificateRequestRequestTypeDef
 
 ```python
@@ -479,6 +539,8 @@ Required fields:
 
 - `CertificateAuthorityArn`: `str`
 - `CertificateArn`: `str`
+
+<a id="getcertificateresponsetypedef"></a>
 
 ## GetCertificateResponseTypeDef
 
@@ -493,6 +555,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpolicyrequestrequesttypedef"></a>
+
 ## GetPolicyRequestRequestTypeDef
 
 ```python
@@ -502,6 +566,8 @@ from mypy_boto3_acm_pca.type_defs import GetPolicyRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="getpolicyresponsetypedef"></a>
 
 ## GetPolicyResponseTypeDef
 
@@ -514,6 +580,8 @@ Required fields:
 - `Policy`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="importcertificateauthoritycertificaterequestrequesttypedef"></a>
 
 ## ImportCertificateAuthorityCertificateRequestRequestTypeDef
 
@@ -529,6 +597,8 @@ Required fields:
 Optional fields:
 
 - `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="issuecertificaterequestrequesttypedef"></a>
 
 ## IssueCertificateRequestRequestTypeDef
 
@@ -552,6 +622,8 @@ Optional fields:
 - `ValidityNotBefore`: [ValidityTypeDef](./type_defs.md#validitytypedef)
 - `IdempotencyToken`: `str`
 
+<a id="issuecertificateresponsetypedef"></a>
+
 ## IssueCertificateResponseTypeDef
 
 ```python
@@ -563,6 +635,8 @@ Required fields:
 - `CertificateArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="keyusagetypedef"></a>
 
 ## KeyUsageTypeDef
 
@@ -582,6 +656,8 @@ Optional fields:
 - `EncipherOnly`: `bool`
 - `DecipherOnly`: `bool`
 
+<a id="listcertificateauthoritiesrequestrequesttypedef"></a>
+
 ## ListCertificateAuthoritiesRequestRequestTypeDef
 
 ```python
@@ -593,6 +669,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `ResourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
+
+<a id="listcertificateauthoritiesresponsetypedef"></a>
 
 ## ListCertificateAuthoritiesResponseTypeDef
 
@@ -607,6 +685,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpermissionsrequestrequesttypedef"></a>
 
 ## ListPermissionsRequestRequestTypeDef
 
@@ -623,6 +703,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listpermissionsresponsetypedef"></a>
+
 ## ListPermissionsResponseTypeDef
 
 ```python
@@ -636,6 +718,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsrequestrequesttypedef"></a>
 
 ## ListTagsRequestRequestTypeDef
 
@@ -652,6 +736,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listtagsresponsetypedef"></a>
+
 ## ListTagsResponseTypeDef
 
 ```python
@@ -664,6 +750,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="ocspconfigurationtypedef"></a>
 
 ## OcspConfigurationTypeDef
 
@@ -679,6 +767,8 @@ Optional fields:
 
 - `OcspCustomCname`: `str`
 
+<a id="othernametypedef"></a>
+
 ## OtherNameTypeDef
 
 ```python
@@ -689,6 +779,8 @@ Required fields:
 
 - `TypeId`: `str`
 - `Value`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -701,6 +793,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="permissiontypedef"></a>
 
 ## PermissionTypeDef
 
@@ -717,6 +811,8 @@ Optional fields:
 - `Actions`: `List`\[[ActionTypeType](./literals.md#actiontypetype)\]
 - `Policy`: `str`
 
+<a id="policyinformationtypedef"></a>
+
 ## PolicyInformationTypeDef
 
 ```python
@@ -732,6 +828,8 @@ Optional fields:
 - `PolicyQualifiers`:
   `Sequence`\[[PolicyQualifierInfoTypeDef](./type_defs.md#policyqualifierinfotypedef)\]
 
+<a id="policyqualifierinfotypedef"></a>
+
 ## PolicyQualifierInfoTypeDef
 
 ```python
@@ -744,6 +842,8 @@ Required fields:
   [PolicyQualifierIdType](./literals.md#policyqualifieridtype))
 - `Qualifier`: [QualifierTypeDef](./type_defs.md#qualifiertypedef)
 
+<a id="putpolicyrequestrequesttypedef"></a>
+
 ## PutPolicyRequestRequestTypeDef
 
 ```python
@@ -755,6 +855,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Policy`: `str`
 
+<a id="qualifiertypedef"></a>
+
 ## QualifierTypeDef
 
 ```python
@@ -764,6 +866,8 @@ from mypy_boto3_acm_pca.type_defs import QualifierTypeDef
 Required fields:
 
 - `CpsUri`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -779,6 +883,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="restorecertificateauthorityrequestrequesttypedef"></a>
+
 ## RestoreCertificateAuthorityRequestRequestTypeDef
 
 ```python
@@ -788,6 +894,8 @@ from mypy_boto3_acm_pca.type_defs import RestoreCertificateAuthorityRequestReque
 Required fields:
 
 - `CertificateAuthorityArn`: `str`
+
+<a id="revocationconfigurationtypedef"></a>
 
 ## RevocationConfigurationTypeDef
 
@@ -802,6 +910,8 @@ Optional fields:
 - `OcspConfiguration`:
   [OcspConfigurationTypeDef](./type_defs.md#ocspconfigurationtypedef)
 
+<a id="revokecertificaterequestrequesttypedef"></a>
+
 ## RevokeCertificateRequestRequestTypeDef
 
 ```python
@@ -815,6 +925,8 @@ Required fields:
 - `RevocationReason`:
   [RevocationReasonType](./literals.md#revocationreasontype)
 
+<a id="tagcertificateauthorityrequestrequesttypedef"></a>
+
 ## TagCertificateAuthorityRequestRequestTypeDef
 
 ```python
@@ -825,6 +937,8 @@ Required fields:
 
 - `CertificateAuthorityArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -840,6 +954,8 @@ Optional fields:
 
 - `Value`: `str`
 
+<a id="untagcertificateauthorityrequestrequesttypedef"></a>
+
 ## UntagCertificateAuthorityRequestRequestTypeDef
 
 ```python
@@ -850,6 +966,8 @@ Required fields:
 
 - `CertificateAuthorityArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="updatecertificateauthorityrequestrequesttypedef"></a>
 
 ## UpdateCertificateAuthorityRequestRequestTypeDef
 
@@ -868,6 +986,8 @@ Optional fields:
 - `Status`:
   [CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype)
 
+<a id="validitytypedef"></a>
+
 ## ValidityTypeDef
 
 ```python
@@ -878,6 +998,8 @@ Required fields:
 
 - `Value`: `int`
 - `Type`: [ValidityPeriodTypeType](./literals.md#validityperiodtypetype)
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

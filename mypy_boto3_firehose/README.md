@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-firehose-module"></a>
+
 # Type annotations for boto3 Firehose module
 
 > [Index](..) > Firehose
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
 type annotations stubs module
-[mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
+[mypy-boto3-firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[firehose]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[firehose]'
+
+# standalone installation
 pip install mypy-boto3-firehose
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-firehose
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="firehoseclient"></a>
 
 ## FirehoseClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_firehose.client import FirehoseClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -47,6 +61,8 @@ from mypy_boto3_firehose.client import FirehoseClient
 - [untag_delivery_stream](./client.md#untag_delivery_stream)
 - [update_destination](./client.md#update_destination)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 FirehoseClient [exceptions](./client.md#exceptions)
@@ -59,6 +75,8 @@ FirehoseClient [exceptions](./client.md#exceptions)
 - ResourceInUseException
 - ResourceNotFoundException
 - ServiceUnavailableException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -94,6 +112,8 @@ from mypy_boto3_firehose.literals import AmazonopensearchserviceIndexRotationPer
 - [S3BackupModeType](./literals.md#s3backupmodetype)
 - [SplunkS3BackupModeType](./literals.md#splunks3backupmodetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

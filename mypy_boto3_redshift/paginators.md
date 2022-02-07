@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-redshift-module"></a>
+
 # Paginators for boto3 Redshift module
 
 > [Index](..) > [Redshift](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
 type annotations stubs module
-[mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
+[mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 - [Paginators for boto3 Redshift module](#paginators-for-boto3-redshift-module)
   - [DescribeClusterDbRevisionsPaginator](#describeclusterdbrevisionspaginator)
@@ -41,6 +43,8 @@ type annotations stubs module
   - [GetReservedNodeExchangeConfigurationOptionsPaginator](#getreservednodeexchangeconfigurationoptionspaginator)
   - [GetReservedNodeExchangeOfferingsPaginator](#getreservednodeexchangeofferingspaginator)
 
+<a id="describeclusterdbrevisionspaginator"></a>
+
 ## DescribeClusterDbRevisionsPaginator
 
 Type annotations for
@@ -49,10 +53,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeClusterDbRevisionsPaginator
 
 def get_describe_cluster_db_revisions_paginator() -> DescribeClusterDbRevisionsPaginator:
-    return boto3.client("redshift").get_paginator("describe_cluster_db_revisions")
+    return Session().client("redshift").get_paginator("describe_cluster_db_revisions")
 ```
 
 Boto3 documentation:
@@ -67,6 +73,8 @@ Arguments for `DescribeClusterDbRevisionsPaginator.paginate` method:
 `DescribeClusterDbRevisionsPaginator.paginate` returns
 `_PageIterator`\[[ClusterDbRevisionsMessageTypeDef](./type_defs.md#clusterdbrevisionsmessagetypedef)\].
 
+<a id="describeclusterparametergroupspaginator"></a>
+
 ## DescribeClusterParameterGroupsPaginator
 
 Type annotations for
@@ -75,10 +83,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeClusterParameterGroupsPaginator
 
 def get_describe_cluster_parameter_groups_paginator() -> DescribeClusterParameterGroupsPaginator:
-    return boto3.client("redshift").get_paginator("describe_cluster_parameter_groups")
+    return Session().client("redshift").get_paginator("describe_cluster_parameter_groups")
 ```
 
 Boto3 documentation:
@@ -95,6 +105,8 @@ Arguments for `DescribeClusterParameterGroupsPaginator.paginate` method:
 `DescribeClusterParameterGroupsPaginator.paginate` returns
 `_PageIterator`\[[ClusterParameterGroupsMessageTypeDef](./type_defs.md#clusterparametergroupsmessagetypedef)\].
 
+<a id="describeclusterparameterspaginator"></a>
+
 ## DescribeClusterParametersPaginator
 
 Type annotations for
@@ -103,10 +115,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeClusterParametersPaginator
 
 def get_describe_cluster_parameters_paginator() -> DescribeClusterParametersPaginator:
-    return boto3.client("redshift").get_paginator("describe_cluster_parameters")
+    return Session().client("redshift").get_paginator("describe_cluster_parameters")
 ```
 
 Boto3 documentation:
@@ -122,6 +136,8 @@ Arguments for `DescribeClusterParametersPaginator.paginate` method:
 `DescribeClusterParametersPaginator.paginate` returns
 `_PageIterator`\[[ClusterParameterGroupDetailsTypeDef](./type_defs.md#clusterparametergroupdetailstypedef)\].
 
+<a id="describeclustersecuritygroupspaginator"></a>
+
 ## DescribeClusterSecurityGroupsPaginator
 
 Type annotations for
@@ -130,10 +146,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeClusterSecurityGroupsPaginator
 
 def get_describe_cluster_security_groups_paginator() -> DescribeClusterSecurityGroupsPaginator:
-    return boto3.client("redshift").get_paginator("describe_cluster_security_groups")
+    return Session().client("redshift").get_paginator("describe_cluster_security_groups")
 ```
 
 Boto3 documentation:
@@ -150,6 +168,8 @@ Arguments for `DescribeClusterSecurityGroupsPaginator.paginate` method:
 `DescribeClusterSecurityGroupsPaginator.paginate` returns
 `_PageIterator`\[[ClusterSecurityGroupMessageTypeDef](./type_defs.md#clustersecuritygroupmessagetypedef)\].
 
+<a id="describeclustersnapshotspaginator"></a>
+
 ## DescribeClusterSnapshotsPaginator
 
 Type annotations for
@@ -158,10 +178,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeClusterSnapshotsPaginator
 
 def get_describe_cluster_snapshots_paginator() -> DescribeClusterSnapshotsPaginator:
-    return boto3.client("redshift").get_paginator("describe_cluster_snapshots")
+    return Session().client("redshift").get_paginator("describe_cluster_snapshots")
 ```
 
 Boto3 documentation:
@@ -186,6 +208,8 @@ Arguments for `DescribeClusterSnapshotsPaginator.paginate` method:
 `DescribeClusterSnapshotsPaginator.paginate` returns
 `_PageIterator`\[[SnapshotMessageTypeDef](./type_defs.md#snapshotmessagetypedef)\].
 
+<a id="describeclustersubnetgroupspaginator"></a>
+
 ## DescribeClusterSubnetGroupsPaginator
 
 Type annotations for
@@ -194,10 +218,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeClusterSubnetGroupsPaginator
 
 def get_describe_cluster_subnet_groups_paginator() -> DescribeClusterSubnetGroupsPaginator:
-    return boto3.client("redshift").get_paginator("describe_cluster_subnet_groups")
+    return Session().client("redshift").get_paginator("describe_cluster_subnet_groups")
 ```
 
 Boto3 documentation:
@@ -214,6 +240,8 @@ Arguments for `DescribeClusterSubnetGroupsPaginator.paginate` method:
 `DescribeClusterSubnetGroupsPaginator.paginate` returns
 `_PageIterator`\[[ClusterSubnetGroupMessageTypeDef](./type_defs.md#clustersubnetgroupmessagetypedef)\].
 
+<a id="describeclustertrackspaginator"></a>
+
 ## DescribeClusterTracksPaginator
 
 Type annotations for
@@ -222,10 +250,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeClusterTracksPaginator
 
 def get_describe_cluster_tracks_paginator() -> DescribeClusterTracksPaginator:
-    return boto3.client("redshift").get_paginator("describe_cluster_tracks")
+    return Session().client("redshift").get_paginator("describe_cluster_tracks")
 ```
 
 Boto3 documentation:
@@ -240,6 +270,8 @@ Arguments for `DescribeClusterTracksPaginator.paginate` method:
 `DescribeClusterTracksPaginator.paginate` returns
 `_PageIterator`\[[TrackListMessageTypeDef](./type_defs.md#tracklistmessagetypedef)\].
 
+<a id="describeclusterversionspaginator"></a>
+
 ## DescribeClusterVersionsPaginator
 
 Type annotations for
@@ -248,10 +280,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeClusterVersionsPaginator
 
 def get_describe_cluster_versions_paginator() -> DescribeClusterVersionsPaginator:
-    return boto3.client("redshift").get_paginator("describe_cluster_versions")
+    return Session().client("redshift").get_paginator("describe_cluster_versions")
 ```
 
 Boto3 documentation:
@@ -267,6 +301,8 @@ Arguments for `DescribeClusterVersionsPaginator.paginate` method:
 `DescribeClusterVersionsPaginator.paginate` returns
 `_PageIterator`\[[ClusterVersionsMessageTypeDef](./type_defs.md#clusterversionsmessagetypedef)\].
 
+<a id="describeclusterspaginator"></a>
+
 ## DescribeClustersPaginator
 
 Type annotations for
@@ -275,10 +311,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeClustersPaginator
 
 def get_describe_clusters_paginator() -> DescribeClustersPaginator:
-    return boto3.client("redshift").get_paginator("describe_clusters")
+    return Session().client("redshift").get_paginator("describe_clusters")
 ```
 
 Boto3 documentation:
@@ -295,6 +333,8 @@ Arguments for `DescribeClustersPaginator.paginate` method:
 `DescribeClustersPaginator.paginate` returns
 `_PageIterator`\[[ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef)\].
 
+<a id="describedatasharespaginator"></a>
+
 ## DescribeDataSharesPaginator
 
 Type annotations for
@@ -303,10 +343,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeDataSharesPaginator
 
 def get_describe_data_shares_paginator() -> DescribeDataSharesPaginator:
-    return boto3.client("redshift").get_paginator("describe_data_shares")
+    return Session().client("redshift").get_paginator("describe_data_shares")
 ```
 
 Boto3 documentation:
@@ -321,6 +363,8 @@ Arguments for `DescribeDataSharesPaginator.paginate` method:
 `DescribeDataSharesPaginator.paginate` returns
 `_PageIterator`\[[DescribeDataSharesResultTypeDef](./type_defs.md#describedatasharesresulttypedef)\].
 
+<a id="describedatasharesforconsumerpaginator"></a>
+
 ## DescribeDataSharesForConsumerPaginator
 
 Type annotations for
@@ -329,10 +373,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeDataSharesForConsumerPaginator
 
 def get_describe_data_shares_for_consumer_paginator() -> DescribeDataSharesForConsumerPaginator:
-    return boto3.client("redshift").get_paginator("describe_data_shares_for_consumer")
+    return Session().client("redshift").get_paginator("describe_data_shares_for_consumer")
 ```
 
 Boto3 documentation:
@@ -349,6 +395,8 @@ Arguments for `DescribeDataSharesForConsumerPaginator.paginate` method:
 `DescribeDataSharesForConsumerPaginator.paginate` returns
 `_PageIterator`\[[DescribeDataSharesForConsumerResultTypeDef](./type_defs.md#describedatasharesforconsumerresulttypedef)\].
 
+<a id="describedatasharesforproducerpaginator"></a>
+
 ## DescribeDataSharesForProducerPaginator
 
 Type annotations for
@@ -357,10 +405,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeDataSharesForProducerPaginator
 
 def get_describe_data_shares_for_producer_paginator() -> DescribeDataSharesForProducerPaginator:
-    return boto3.client("redshift").get_paginator("describe_data_shares_for_producer")
+    return Session().client("redshift").get_paginator("describe_data_shares_for_producer")
 ```
 
 Boto3 documentation:
@@ -377,6 +427,8 @@ Arguments for `DescribeDataSharesForProducerPaginator.paginate` method:
 `DescribeDataSharesForProducerPaginator.paginate` returns
 `_PageIterator`\[[DescribeDataSharesForProducerResultTypeDef](./type_defs.md#describedatasharesforproducerresulttypedef)\].
 
+<a id="describedefaultclusterparameterspaginator"></a>
+
 ## DescribeDefaultClusterParametersPaginator
 
 Type annotations for
@@ -385,10 +437,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeDefaultClusterParametersPaginator
 
 def get_describe_default_cluster_parameters_paginator() -> DescribeDefaultClusterParametersPaginator:
-    return boto3.client("redshift").get_paginator("describe_default_cluster_parameters")
+    return Session().client("redshift").get_paginator("describe_default_cluster_parameters")
 ```
 
 Boto3 documentation:
@@ -403,6 +457,8 @@ Arguments for `DescribeDefaultClusterParametersPaginator.paginate` method:
 `DescribeDefaultClusterParametersPaginator.paginate` returns
 `_PageIterator`\[[DescribeDefaultClusterParametersResultTypeDef](./type_defs.md#describedefaultclusterparametersresulttypedef)\].
 
+<a id="describeendpointaccesspaginator"></a>
+
 ## DescribeEndpointAccessPaginator
 
 Type annotations for
@@ -411,10 +467,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeEndpointAccessPaginator
 
 def get_describe_endpoint_access_paginator() -> DescribeEndpointAccessPaginator:
-    return boto3.client("redshift").get_paginator("describe_endpoint_access")
+    return Session().client("redshift").get_paginator("describe_endpoint_access")
 ```
 
 Boto3 documentation:
@@ -432,6 +490,8 @@ Arguments for `DescribeEndpointAccessPaginator.paginate` method:
 `DescribeEndpointAccessPaginator.paginate` returns
 `_PageIterator`\[[EndpointAccessListTypeDef](./type_defs.md#endpointaccesslisttypedef)\].
 
+<a id="describeendpointauthorizationpaginator"></a>
+
 ## DescribeEndpointAuthorizationPaginator
 
 Type annotations for
@@ -440,10 +500,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeEndpointAuthorizationPaginator
 
 def get_describe_endpoint_authorization_paginator() -> DescribeEndpointAuthorizationPaginator:
-    return boto3.client("redshift").get_paginator("describe_endpoint_authorization")
+    return Session().client("redshift").get_paginator("describe_endpoint_authorization")
 ```
 
 Boto3 documentation:
@@ -460,6 +522,8 @@ Arguments for `DescribeEndpointAuthorizationPaginator.paginate` method:
 `DescribeEndpointAuthorizationPaginator.paginate` returns
 `_PageIterator`\[[EndpointAuthorizationListTypeDef](./type_defs.md#endpointauthorizationlisttypedef)\].
 
+<a id="describeeventsubscriptionspaginator"></a>
+
 ## DescribeEventSubscriptionsPaginator
 
 Type annotations for
@@ -468,10 +532,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeEventSubscriptionsPaginator
 
 def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPaginator:
-    return boto3.client("redshift").get_paginator("describe_event_subscriptions")
+    return Session().client("redshift").get_paginator("describe_event_subscriptions")
 ```
 
 Boto3 documentation:
@@ -488,6 +554,8 @@ Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
 `DescribeEventSubscriptionsPaginator.paginate` returns
 `_PageIterator`\[[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef)\].
 
+<a id="describeeventspaginator"></a>
+
 ## DescribeEventsPaginator
 
 Type annotations for
@@ -496,10 +564,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
-    return boto3.client("redshift").get_paginator("describe_events")
+    return Session().client("redshift").get_paginator("describe_events")
 ```
 
 Boto3 documentation:
@@ -518,6 +588,8 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 `DescribeEventsPaginator.paginate` returns
 `_PageIterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
 
+<a id="describehsmclientcertificatespaginator"></a>
+
 ## DescribeHsmClientCertificatesPaginator
 
 Type annotations for
@@ -526,10 +598,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeHsmClientCertificatesPaginator
 
 def get_describe_hsm_client_certificates_paginator() -> DescribeHsmClientCertificatesPaginator:
-    return boto3.client("redshift").get_paginator("describe_hsm_client_certificates")
+    return Session().client("redshift").get_paginator("describe_hsm_client_certificates")
 ```
 
 Boto3 documentation:
@@ -546,6 +620,8 @@ Arguments for `DescribeHsmClientCertificatesPaginator.paginate` method:
 `DescribeHsmClientCertificatesPaginator.paginate` returns
 `_PageIterator`\[[HsmClientCertificateMessageTypeDef](./type_defs.md#hsmclientcertificatemessagetypedef)\].
 
+<a id="describehsmconfigurationspaginator"></a>
+
 ## DescribeHsmConfigurationsPaginator
 
 Type annotations for
@@ -554,10 +630,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeHsmConfigurationsPaginator
 
 def get_describe_hsm_configurations_paginator() -> DescribeHsmConfigurationsPaginator:
-    return boto3.client("redshift").get_paginator("describe_hsm_configurations")
+    return Session().client("redshift").get_paginator("describe_hsm_configurations")
 ```
 
 Boto3 documentation:
@@ -574,6 +652,8 @@ Arguments for `DescribeHsmConfigurationsPaginator.paginate` method:
 `DescribeHsmConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[HsmConfigurationMessageTypeDef](./type_defs.md#hsmconfigurationmessagetypedef)\].
 
+<a id="describenodeconfigurationoptionspaginator"></a>
+
 ## DescribeNodeConfigurationOptionsPaginator
 
 Type annotations for
@@ -582,10 +662,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeNodeConfigurationOptionsPaginator
 
 def get_describe_node_configuration_options_paginator() -> DescribeNodeConfigurationOptionsPaginator:
-    return boto3.client("redshift").get_paginator("describe_node_configuration_options")
+    return Session().client("redshift").get_paginator("describe_node_configuration_options")
 ```
 
 Boto3 documentation:
@@ -605,6 +687,8 @@ Arguments for `DescribeNodeConfigurationOptionsPaginator.paginate` method:
 `DescribeNodeConfigurationOptionsPaginator.paginate` returns
 `_PageIterator`\[[NodeConfigurationOptionsMessageTypeDef](./type_defs.md#nodeconfigurationoptionsmessagetypedef)\].
 
+<a id="describeorderableclusteroptionspaginator"></a>
+
 ## DescribeOrderableClusterOptionsPaginator
 
 Type annotations for
@@ -613,10 +697,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeOrderableClusterOptionsPaginator
 
 def get_describe_orderable_cluster_options_paginator() -> DescribeOrderableClusterOptionsPaginator:
-    return boto3.client("redshift").get_paginator("describe_orderable_cluster_options")
+    return Session().client("redshift").get_paginator("describe_orderable_cluster_options")
 ```
 
 Boto3 documentation:
@@ -632,6 +718,8 @@ Arguments for `DescribeOrderableClusterOptionsPaginator.paginate` method:
 `DescribeOrderableClusterOptionsPaginator.paginate` returns
 `_PageIterator`\[[OrderableClusterOptionsMessageTypeDef](./type_defs.md#orderableclusteroptionsmessagetypedef)\].
 
+<a id="describereservednodeexchangestatuspaginator"></a>
+
 ## DescribeReservedNodeExchangeStatusPaginator
 
 Type annotations for
@@ -640,10 +728,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeReservedNodeExchangeStatusPaginator
 
 def get_describe_reserved_node_exchange_status_paginator() -> DescribeReservedNodeExchangeStatusPaginator:
-    return boto3.client("redshift").get_paginator("describe_reserved_node_exchange_status")
+    return Session().client("redshift").get_paginator("describe_reserved_node_exchange_status")
 ```
 
 Boto3 documentation:
@@ -659,6 +749,8 @@ Arguments for `DescribeReservedNodeExchangeStatusPaginator.paginate` method:
 `DescribeReservedNodeExchangeStatusPaginator.paginate` returns
 `_PageIterator`\[[DescribeReservedNodeExchangeStatusOutputMessageTypeDef](./type_defs.md#describereservednodeexchangestatusoutputmessagetypedef)\].
 
+<a id="describereservednodeofferingspaginator"></a>
+
 ## DescribeReservedNodeOfferingsPaginator
 
 Type annotations for
@@ -667,10 +759,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeReservedNodeOfferingsPaginator
 
 def get_describe_reserved_node_offerings_paginator() -> DescribeReservedNodeOfferingsPaginator:
-    return boto3.client("redshift").get_paginator("describe_reserved_node_offerings")
+    return Session().client("redshift").get_paginator("describe_reserved_node_offerings")
 ```
 
 Boto3 documentation:
@@ -685,6 +779,8 @@ Arguments for `DescribeReservedNodeOfferingsPaginator.paginate` method:
 `DescribeReservedNodeOfferingsPaginator.paginate` returns
 `_PageIterator`\[[ReservedNodeOfferingsMessageTypeDef](./type_defs.md#reservednodeofferingsmessagetypedef)\].
 
+<a id="describereservednodespaginator"></a>
+
 ## DescribeReservedNodesPaginator
 
 Type annotations for
@@ -693,10 +789,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeReservedNodesPaginator
 
 def get_describe_reserved_nodes_paginator() -> DescribeReservedNodesPaginator:
-    return boto3.client("redshift").get_paginator("describe_reserved_nodes")
+    return Session().client("redshift").get_paginator("describe_reserved_nodes")
 ```
 
 Boto3 documentation:
@@ -711,6 +809,8 @@ Arguments for `DescribeReservedNodesPaginator.paginate` method:
 `DescribeReservedNodesPaginator.paginate` returns
 `_PageIterator`\[[ReservedNodesMessageTypeDef](./type_defs.md#reservednodesmessagetypedef)\].
 
+<a id="describescheduledactionspaginator"></a>
+
 ## DescribeScheduledActionsPaginator
 
 Type annotations for
@@ -719,10 +819,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeScheduledActionsPaginator
 
 def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPaginator:
-    return boto3.client("redshift").get_paginator("describe_scheduled_actions")
+    return Session().client("redshift").get_paginator("describe_scheduled_actions")
 ```
 
 Boto3 documentation:
@@ -744,6 +846,8 @@ Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 `DescribeScheduledActionsPaginator.paginate` returns
 `_PageIterator`\[[ScheduledActionsMessageTypeDef](./type_defs.md#scheduledactionsmessagetypedef)\].
 
+<a id="describesnapshotcopygrantspaginator"></a>
+
 ## DescribeSnapshotCopyGrantsPaginator
 
 Type annotations for
@@ -752,10 +856,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeSnapshotCopyGrantsPaginator
 
 def get_describe_snapshot_copy_grants_paginator() -> DescribeSnapshotCopyGrantsPaginator:
-    return boto3.client("redshift").get_paginator("describe_snapshot_copy_grants")
+    return Session().client("redshift").get_paginator("describe_snapshot_copy_grants")
 ```
 
 Boto3 documentation:
@@ -772,6 +878,8 @@ Arguments for `DescribeSnapshotCopyGrantsPaginator.paginate` method:
 `DescribeSnapshotCopyGrantsPaginator.paginate` returns
 `_PageIterator`\[[SnapshotCopyGrantMessageTypeDef](./type_defs.md#snapshotcopygrantmessagetypedef)\].
 
+<a id="describesnapshotschedulespaginator"></a>
+
 ## DescribeSnapshotSchedulesPaginator
 
 Type annotations for
@@ -780,10 +888,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeSnapshotSchedulesPaginator
 
 def get_describe_snapshot_schedules_paginator() -> DescribeSnapshotSchedulesPaginator:
-    return boto3.client("redshift").get_paginator("describe_snapshot_schedules")
+    return Session().client("redshift").get_paginator("describe_snapshot_schedules")
 ```
 
 Boto3 documentation:
@@ -801,6 +911,8 @@ Arguments for `DescribeSnapshotSchedulesPaginator.paginate` method:
 `DescribeSnapshotSchedulesPaginator.paginate` returns
 `_PageIterator`\[[DescribeSnapshotSchedulesOutputMessageTypeDef](./type_defs.md#describesnapshotschedulesoutputmessagetypedef)\].
 
+<a id="describetablerestorestatuspaginator"></a>
+
 ## DescribeTableRestoreStatusPaginator
 
 Type annotations for
@@ -809,10 +921,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeTableRestoreStatusPaginator
 
 def get_describe_table_restore_status_paginator() -> DescribeTableRestoreStatusPaginator:
-    return boto3.client("redshift").get_paginator("describe_table_restore_status")
+    return Session().client("redshift").get_paginator("describe_table_restore_status")
 ```
 
 Boto3 documentation:
@@ -828,6 +942,8 @@ Arguments for `DescribeTableRestoreStatusPaginator.paginate` method:
 `DescribeTableRestoreStatusPaginator.paginate` returns
 `_PageIterator`\[[TableRestoreStatusMessageTypeDef](./type_defs.md#tablerestorestatusmessagetypedef)\].
 
+<a id="describetagspaginator"></a>
+
 ## DescribeTagsPaginator
 
 Type annotations for `boto3.client("redshift").get_paginator("describe_tags")`.
@@ -835,10 +951,12 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_tags")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeTagsPaginator
 
 def get_describe_tags_paginator() -> DescribeTagsPaginator:
-    return boto3.client("redshift").get_paginator("describe_tags")
+    return Session().client("redshift").get_paginator("describe_tags")
 ```
 
 Boto3 documentation:
@@ -856,6 +974,8 @@ Arguments for `DescribeTagsPaginator.paginate` method:
 `DescribeTagsPaginator.paginate` returns
 `_PageIterator`\[[TaggedResourceListMessageTypeDef](./type_defs.md#taggedresourcelistmessagetypedef)\].
 
+<a id="describeusagelimitspaginator"></a>
+
 ## DescribeUsageLimitsPaginator
 
 Type annotations for
@@ -864,10 +984,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import DescribeUsageLimitsPaginator
 
 def get_describe_usage_limits_paginator() -> DescribeUsageLimitsPaginator:
-    return boto3.client("redshift").get_paginator("describe_usage_limits")
+    return Session().client("redshift").get_paginator("describe_usage_limits")
 ```
 
 Boto3 documentation:
@@ -887,6 +1009,8 @@ Arguments for `DescribeUsageLimitsPaginator.paginate` method:
 `DescribeUsageLimitsPaginator.paginate` returns
 `_PageIterator`\[[UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef)\].
 
+<a id="getreservednodeexchangeconfigurationoptionspaginator"></a>
+
 ## GetReservedNodeExchangeConfigurationOptionsPaginator
 
 Type annotations for
@@ -895,10 +1019,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import GetReservedNodeExchangeConfigurationOptionsPaginator
 
 def get_get_reserved_node_exchange_configuration_options_paginator() -> GetReservedNodeExchangeConfigurationOptionsPaginator:
-    return boto3.client("redshift").get_paginator("get_reserved_node_exchange_configuration_options")
+    return Session().client("redshift").get_paginator("get_reserved_node_exchange_configuration_options")
 ```
 
 Boto3 documentation:
@@ -918,6 +1044,8 @@ method:
 `GetReservedNodeExchangeConfigurationOptionsPaginator.paginate` returns
 `_PageIterator`\[[GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsoutputmessagetypedef)\].
 
+<a id="getreservednodeexchangeofferingspaginator"></a>
+
 ## GetReservedNodeExchangeOfferingsPaginator
 
 Type annotations for
@@ -926,10 +1054,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.paginator import GetReservedNodeExchangeOfferingsPaginator
 
 def get_get_reserved_node_exchange_offerings_paginator() -> GetReservedNodeExchangeOfferingsPaginator:
-    return boto3.client("redshift").get_paginator("get_reserved_node_exchange_offerings")
+    return Session().client("redshift").get_paginator("get_reserved_node_exchange_offerings")
 ```
 
 Boto3 documentation:

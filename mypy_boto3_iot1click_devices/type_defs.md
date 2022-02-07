@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iot1clickdevicesservice-module"></a>
+
 # Typed dictionaries for boto3 IoT1ClickDevicesService module
 
 > [Index](..) > [IoT1ClickDevicesService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
 type annotations stubs module
-[mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
+[mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 - [Typed dictionaries for boto3 IoT1ClickDevicesService module](#typed-dictionaries-for-boto3-iot1clickdevicesservice-module)
   - [ClaimDevicesByClaimCodeRequestRequestTypeDef](#claimdevicesbyclaimcoderequestrequesttypedef)
@@ -38,6 +40,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateDeviceStateRequestRequestTypeDef](#updatedevicestaterequestrequesttypedef)
 
+<a id="claimdevicesbyclaimcoderequestrequesttypedef"></a>
+
 ## ClaimDevicesByClaimCodeRequestRequestTypeDef
 
 ```python
@@ -47,6 +51,8 @@ from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeReques
 Required fields:
 
 - `ClaimCode`: `str`
+
+<a id="claimdevicesbyclaimcoderesponsetypedef"></a>
 
 ## ClaimDevicesByClaimCodeResponseTypeDef
 
@@ -61,6 +67,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedevicerequestrequesttypedef"></a>
+
 ## DescribeDeviceRequestRequestTypeDef
 
 ```python
@@ -70,6 +78,8 @@ from mypy_boto3_iot1click_devices.type_defs import DescribeDeviceRequestRequestT
 Required fields:
 
 - `DeviceId`: `str`
+
+<a id="describedeviceresponsetypedef"></a>
 
 ## DescribeDeviceResponseTypeDef
 
@@ -83,6 +93,8 @@ Required fields:
   [DeviceDescriptionTypeDef](./type_defs.md#devicedescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="devicedescriptiontypedef"></a>
 
 ## DeviceDescriptionTypeDef
 
@@ -100,6 +112,8 @@ Optional fields:
 - `Type`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="deviceeventtypedef"></a>
+
 ## DeviceEventTypeDef
 
 ```python
@@ -110,6 +124,8 @@ Optional fields:
 
 - `Device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
 - `StdEvent`: `str`
+
+<a id="devicemethodtypedef"></a>
 
 ## DeviceMethodTypeDef
 
@@ -122,6 +138,8 @@ Optional fields:
 - `DeviceType`: `str`
 - `MethodName`: `str`
 
+<a id="devicetypedef"></a>
+
 ## DeviceTypeDef
 
 ```python
@@ -133,6 +151,8 @@ Optional fields:
 - `Attributes`: `Dict`\[`str`, `Any`\]
 - `DeviceId`: `str`
 - `Type`: `str`
+
+<a id="finalizedeviceclaimrequestrequesttypedef"></a>
 
 ## FinalizeDeviceClaimRequestRequestTypeDef
 
@@ -148,6 +168,8 @@ Optional fields:
 
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="finalizedeviceclaimresponsetypedef"></a>
+
 ## FinalizeDeviceClaimResponseTypeDef
 
 ```python
@@ -160,6 +182,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdevicemethodsrequestrequesttypedef"></a>
+
 ## GetDeviceMethodsRequestRequestTypeDef
 
 ```python
@@ -169,6 +193,8 @@ from mypy_boto3_iot1click_devices.type_defs import GetDeviceMethodsRequestReques
 Required fields:
 
 - `DeviceId`: `str`
+
+<a id="getdevicemethodsresponsetypedef"></a>
 
 ## GetDeviceMethodsResponseTypeDef
 
@@ -183,6 +209,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="initiatedeviceclaimrequestrequesttypedef"></a>
+
 ## InitiateDeviceClaimRequestRequestTypeDef
 
 ```python
@@ -192,6 +220,8 @@ from mypy_boto3_iot1click_devices.type_defs import InitiateDeviceClaimRequestReq
 Required fields:
 
 - `DeviceId`: `str`
+
+<a id="initiatedeviceclaimresponsetypedef"></a>
 
 ## InitiateDeviceClaimResponseTypeDef
 
@@ -204,6 +234,8 @@ Required fields:
 - `State`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="invokedevicemethodrequestrequesttypedef"></a>
 
 ## InvokeDeviceMethodRequestRequestTypeDef
 
@@ -220,6 +252,8 @@ Optional fields:
 - `DeviceMethod`: [DeviceMethodTypeDef](./type_defs.md#devicemethodtypedef)
 - `DeviceMethodParameters`: `str`
 
+<a id="invokedevicemethodresponsetypedef"></a>
+
 ## InvokeDeviceMethodResponseTypeDef
 
 ```python
@@ -231,6 +265,8 @@ Required fields:
 - `DeviceMethodResponse`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdeviceeventsrequestrequesttypedef"></a>
 
 ## ListDeviceEventsRequestRequestTypeDef
 
@@ -249,6 +285,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listdeviceeventsresponsetypedef"></a>
+
 ## ListDeviceEventsResponseTypeDef
 
 ```python
@@ -262,6 +300,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdevicesrequestrequesttypedef"></a>
+
 ## ListDevicesRequestRequestTypeDef
 
 ```python
@@ -273,6 +313,8 @@ Optional fields:
 - `DeviceType`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listdevicesresponsetypedef"></a>
 
 ## ListDevicesResponseTypeDef
 
@@ -288,6 +330,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -297,6 +341,8 @@ from mypy_boto3_iot1click_devices.type_defs import ListTagsForResourceRequestReq
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -310,6 +356,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -321,6 +369,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -336,6 +386,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -347,6 +399,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="unclaimdevicerequestrequesttypedef"></a>
+
 ## UnclaimDeviceRequestRequestTypeDef
 
 ```python
@@ -356,6 +410,8 @@ from mypy_boto3_iot1click_devices.type_defs import UnclaimDeviceRequestRequestTy
 Required fields:
 
 - `DeviceId`: `str`
+
+<a id="unclaimdeviceresponsetypedef"></a>
 
 ## UnclaimDeviceResponseTypeDef
 
@@ -369,6 +425,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -379,6 +437,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedevicestaterequestrequesttypedef"></a>
 
 ## UpdateDeviceStateRequestRequestTypeDef
 

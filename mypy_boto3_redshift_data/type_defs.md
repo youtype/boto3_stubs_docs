@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-redshiftdataapiservice-module"></a>
+
 # Typed dictionaries for boto3 RedshiftDataAPIService module
 
 > [Index](..) > [RedshiftDataAPIService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
 type annotations stubs module
-[mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
+[mypy-boto3-redshift-data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
 - [Typed dictionaries for boto3 RedshiftDataAPIService module](#typed-dictionaries-for-boto3-redshiftdataapiservice-module)
   - [BatchExecuteStatementInputRequestTypeDef](#batchexecutestatementinputrequesttypedef)
@@ -37,6 +39,8 @@ type annotations stubs module
   - [SubStatementDataTypeDef](#substatementdatatypedef)
   - [TableMemberTypeDef](#tablemembertypedef)
 
+<a id="batchexecutestatementinputrequesttypedef"></a>
+
 ## BatchExecuteStatementInputRequestTypeDef
 
 ```python
@@ -56,6 +60,8 @@ Optional fields:
 - `StatementName`: `str`
 - `WithEvent`: `bool`
 
+<a id="batchexecutestatementoutputtypedef"></a>
+
 ## BatchExecuteStatementOutputTypeDef
 
 ```python
@@ -73,6 +79,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cancelstatementrequestrequesttypedef"></a>
+
 ## CancelStatementRequestRequestTypeDef
 
 ```python
@@ -82,6 +90,8 @@ from mypy_boto3_redshift_data.type_defs import CancelStatementRequestRequestType
 Required fields:
 
 - `Id`: `str`
+
+<a id="cancelstatementresponsetypedef"></a>
 
 ## CancelStatementResponseTypeDef
 
@@ -94,6 +104,8 @@ Required fields:
 - `Status`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="columnmetadatatypedef"></a>
 
 ## ColumnMetadataTypeDef
 
@@ -117,6 +129,8 @@ Optional fields:
 - `tableName`: `str`
 - `typeName`: `str`
 
+<a id="describestatementrequestrequesttypedef"></a>
+
 ## DescribeStatementRequestRequestTypeDef
 
 ```python
@@ -126,6 +140,8 @@ from mypy_boto3_redshift_data.type_defs import DescribeStatementRequestRequestTy
 Required fields:
 
 - `Id`: `str`
+
+<a id="describestatementresponsetypedef"></a>
 
 ## DescribeStatementResponseTypeDef
 
@@ -158,6 +174,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetablerequestrequesttypedef"></a>
+
 ## DescribeTableRequestRequestTypeDef
 
 ```python
@@ -179,6 +197,8 @@ Optional fields:
 - `SecretArn`: `str`
 - `Table`: `str`
 
+<a id="describetableresponsetypedef"></a>
+
 ## DescribeTableResponseTypeDef
 
 ```python
@@ -193,6 +213,8 @@ Required fields:
 - `TableName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="executestatementinputrequesttypedef"></a>
 
 ## ExecuteStatementInputRequestTypeDef
 
@@ -215,6 +237,8 @@ Optional fields:
 - `StatementName`: `str`
 - `WithEvent`: `bool`
 
+<a id="executestatementoutputtypedef"></a>
+
 ## ExecuteStatementOutputTypeDef
 
 ```python
@@ -232,6 +256,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="fieldtypedef"></a>
+
 ## FieldTypeDef
 
 ```python
@@ -247,6 +273,8 @@ Optional fields:
 - `longValue`: `int`
 - `stringValue`: `str`
 
+<a id="getstatementresultrequestrequesttypedef"></a>
+
 ## GetStatementResultRequestRequestTypeDef
 
 ```python
@@ -260,6 +288,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="getstatementresultresponsetypedef"></a>
 
 ## GetStatementResultResponseTypeDef
 
@@ -276,6 +306,8 @@ Required fields:
 - `TotalNumRows`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdatabasesrequestrequesttypedef"></a>
 
 ## ListDatabasesRequestRequestTypeDef
 
@@ -295,6 +327,8 @@ Optional fields:
 - `NextToken`: `str`
 - `SecretArn`: `str`
 
+<a id="listdatabasesresponsetypedef"></a>
+
 ## ListDatabasesResponseTypeDef
 
 ```python
@@ -307,6 +341,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listschemasrequestrequesttypedef"></a>
 
 ## ListSchemasRequestRequestTypeDef
 
@@ -328,6 +364,8 @@ Optional fields:
 - `SchemaPattern`: `str`
 - `SecretArn`: `str`
 
+<a id="listschemasresponsetypedef"></a>
+
 ## ListSchemasResponseTypeDef
 
 ```python
@@ -340,6 +378,8 @@ Required fields:
 - `Schemas`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststatementsrequestrequesttypedef"></a>
 
 ## ListStatementsRequestRequestTypeDef
 
@@ -355,6 +395,8 @@ Optional fields:
 - `StatementName`: `str`
 - `Status`: [StatusStringType](./literals.md#statusstringtype)
 
+<a id="liststatementsresponsetypedef"></a>
+
 ## ListStatementsResponseTypeDef
 
 ```python
@@ -368,6 +410,8 @@ Required fields:
   `List`\[[StatementDataTypeDef](./type_defs.md#statementdatatypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtablesrequestrequesttypedef"></a>
 
 ## ListTablesRequestRequestTypeDef
 
@@ -390,6 +434,8 @@ Optional fields:
 - `SecretArn`: `str`
 - `TablePattern`: `str`
 
+<a id="listtablesresponsetypedef"></a>
+
 ## ListTablesResponseTypeDef
 
 ```python
@@ -403,6 +449,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -414,6 +462,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -429,6 +479,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="sqlparametertypedef"></a>
+
 ## SqlParameterTypeDef
 
 ```python
@@ -439,6 +491,8 @@ Required fields:
 
 - `name`: `str`
 - `value`: `str`
+
+<a id="statementdatatypedef"></a>
 
 ## StatementDataTypeDef
 
@@ -463,6 +517,8 @@ Optional fields:
 - `Status`: [StatusStringType](./literals.md#statusstringtype)
 - `UpdatedAt`: `datetime`
 
+<a id="substatementdatatypedef"></a>
+
 ## SubStatementDataTypeDef
 
 ```python
@@ -486,6 +542,8 @@ Optional fields:
 - `Status`:
   [StatementStatusStringType](./literals.md#statementstatusstringtype)
 - `UpdatedAt`: `datetime`
+
+<a id="tablemembertypedef"></a>
 
 ## TableMemberTypeDef
 

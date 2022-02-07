@@ -1,3 +1,5 @@
+<a id="kafkaclient-for-boto3-kafka-module"></a>
+
 # KafkaClient for boto3 Kafka module
 
 > [Index](..) > [Kafka](.) > KafkaClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
 type annotations stubs module
-[mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
+[mypy-boto3-kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
 - [KafkaClient for boto3 Kafka module](#kafkaclient-for-boto3-kafka-module)
   - [KafkaClient](#kafkaclient)
@@ -51,6 +53,8 @@ type annotations stubs module
     - [update_security](#update_security)
     - [get_paginator](#get_paginator)
 
+<a id="kafkaclient"></a>
+
 ## KafkaClient
 
 Type annotations for `boto3.client("kafka")`
@@ -58,14 +62,17 @@ Type annotations for `boto3.client("kafka")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_kafka.client import KafkaClient
 
 def get_kafka_client() -> KafkaClient:
-    return boto3.client("kafka")
+    return Session().client("kafka")
 ```
 
 Boto3 documentation:
 [Kafka.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -91,7 +98,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -103,6 +114,8 @@ Boto3 documentation:
 [Kafka.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_associate_scram_secret"></a>
 
 ### batch_associate_scram_secret
 
@@ -125,6 +138,8 @@ Keyword-only arguments:
 Returns
 [BatchAssociateScramSecretResponseTypeDef](./type_defs.md#batchassociatescramsecretresponsetypedef).
 
+<a id="batch_disassociate_scram_secret"></a>
+
 ### batch_disassociate_scram_secret
 
 Disassociates one or more Scram Secrets from an Amazon MSK cluster.
@@ -146,6 +161,8 @@ Keyword-only arguments:
 Returns
 [BatchDisassociateScramSecretResponseTypeDef](./type_defs.md#batchdisassociatescramsecretresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -160,6 +177,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_cluster"></a>
 
 ### create_cluster
 
@@ -197,6 +216,8 @@ Keyword-only arguments:
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
+<a id="create_cluster_v2"></a>
+
 ### create_cluster_v2
 
 Creates a new MSK cluster.
@@ -221,6 +242,8 @@ Keyword-only arguments:
 Returns
 [CreateClusterV2ResponseTypeDef](./type_defs.md#createclusterv2responsetypedef).
 
+<a id="create_configuration"></a>
+
 ### create_configuration
 
 Creates a new MSK configuration.
@@ -244,6 +267,8 @@ Keyword-only arguments:
 Returns
 [CreateConfigurationResponseTypeDef](./type_defs.md#createconfigurationresponsetypedef).
 
+<a id="delete_cluster"></a>
+
 ### delete_cluster
 
 Deletes the MSK cluster specified by the Amazon Resource Name (ARN) in the
@@ -265,6 +290,8 @@ Keyword-only arguments:
 Returns
 [DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
+<a id="delete_configuration"></a>
+
 ### delete_configuration
 
 Deletes an MSK Configuration.
@@ -283,6 +310,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteConfigurationResponseTypeDef](./type_defs.md#deleteconfigurationresponsetypedef).
+
+<a id="describe_cluster"></a>
 
 ### describe_cluster
 
@@ -304,6 +333,8 @@ Keyword-only arguments:
 Returns
 [DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef).
 
+<a id="describe_cluster_operation"></a>
+
 ### describe_cluster_operation
 
 Returns a description of the cluster operation specified by the ARN.
@@ -322,6 +353,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeClusterOperationResponseTypeDef](./type_defs.md#describeclusteroperationresponsetypedef).
+
+<a id="describe_cluster_v2"></a>
 
 ### describe_cluster_v2
 
@@ -343,6 +376,8 @@ Keyword-only arguments:
 Returns
 [DescribeClusterV2ResponseTypeDef](./type_defs.md#describeclusterv2responsetypedef).
 
+<a id="describe_configuration"></a>
+
 ### describe_configuration
 
 Returns a description of this MSK configuration.
@@ -361,6 +396,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeConfigurationResponseTypeDef](./type_defs.md#describeconfigurationresponsetypedef).
+
+<a id="describe_configuration_revision"></a>
 
 ### describe_configuration_revision
 
@@ -383,6 +420,8 @@ Keyword-only arguments:
 Returns
 [DescribeConfigurationRevisionResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -400,6 +439,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_bootstrap_brokers"></a>
 
 ### get_bootstrap_brokers
 
@@ -420,6 +461,8 @@ Keyword-only arguments:
 Returns
 [GetBootstrapBrokersResponseTypeDef](./type_defs.md#getbootstrapbrokersresponsetypedef).
 
+<a id="get_compatible_kafka_versions"></a>
+
 ### get_compatible_kafka_versions
 
 Gets the Apache Kafka versions to which you can update the MSK cluster.
@@ -439,6 +482,8 @@ Keyword-only arguments:
 
 Returns
 [GetCompatibleKafkaVersionsResponseTypeDef](./type_defs.md#getcompatiblekafkaversionsresponsetypedef).
+
+<a id="list_cluster_operations"></a>
 
 ### list_cluster_operations
 
@@ -462,6 +507,8 @@ Keyword-only arguments:
 Returns
 [ListClusterOperationsResponseTypeDef](./type_defs.md#listclusteroperationsresponsetypedef).
 
+<a id="list_clusters"></a>
+
 ### list_clusters
 
 Returns a list of all the MSK clusters in the current Region.
@@ -482,6 +529,8 @@ Keyword-only arguments:
 
 Returns
 [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
+
+<a id="list_clusters_v2"></a>
 
 ### list_clusters_v2
 
@@ -505,6 +554,8 @@ Keyword-only arguments:
 Returns
 [ListClustersV2ResponseTypeDef](./type_defs.md#listclustersv2responsetypedef).
 
+<a id="list_configuration_revisions"></a>
+
 ### list_configuration_revisions
 
 Returns a list of all the MSK configurations in this Region.
@@ -527,6 +578,8 @@ Keyword-only arguments:
 Returns
 [ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef).
 
+<a id="list_configurations"></a>
+
 ### list_configurations
 
 Returns a list of all the MSK configurations in this Region.
@@ -546,6 +599,8 @@ Keyword-only arguments:
 
 Returns
 [ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
+
+<a id="list_kafka_versions"></a>
 
 ### list_kafka_versions
 
@@ -567,6 +622,8 @@ Keyword-only arguments:
 Returns
 [ListKafkaVersionsResponseTypeDef](./type_defs.md#listkafkaversionsresponsetypedef).
 
+<a id="list_nodes"></a>
+
 ### list_nodes
 
 Returns a list of the broker nodes in the cluster.
@@ -586,6 +643,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef).
+
+<a id="list_scram_secrets"></a>
 
 ### list_scram_secrets
 
@@ -608,6 +667,8 @@ Keyword-only arguments:
 Returns
 [ListScramSecretsResponseTypeDef](./type_defs.md#listscramsecretsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of the tags associated with the specified resource.
@@ -626,6 +687,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="reboot_broker"></a>
 
 ### reboot_broker
 
@@ -647,6 +710,8 @@ Keyword-only arguments:
 Returns
 [RebootBrokerResponseTypeDef](./type_defs.md#rebootbrokerresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to the specified MSK resource.
@@ -664,6 +729,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the tags associated with the keys that are provided in the query.
@@ -680,6 +747,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_broker_count"></a>
 
 ### update_broker_count
 
@@ -701,6 +770,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateBrokerCountResponseTypeDef](./type_defs.md#updatebrokercountresponsetypedef).
+
+<a id="update_broker_storage"></a>
 
 ### update_broker_storage
 
@@ -725,6 +796,8 @@ Keyword-only arguments:
 Returns
 [UpdateBrokerStorageResponseTypeDef](./type_defs.md#updatebrokerstorageresponsetypedef).
 
+<a id="update_broker_type"></a>
+
 ### update_broker_type
 
 Updates EC2 instance type.
@@ -745,6 +818,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateBrokerTypeResponseTypeDef](./type_defs.md#updatebrokertyperesponsetypedef).
+
+<a id="update_cluster_configuration"></a>
 
 ### update_cluster_configuration
 
@@ -771,6 +846,8 @@ Keyword-only arguments:
 Returns
 [UpdateClusterConfigurationResponseTypeDef](./type_defs.md#updateclusterconfigurationresponsetypedef).
 
+<a id="update_cluster_kafka_version"></a>
+
 ### update_cluster_kafka_version
 
 Updates the Apache Kafka version for the cluster.
@@ -795,6 +872,8 @@ Keyword-only arguments:
 Returns
 [UpdateClusterKafkaVersionResponseTypeDef](./type_defs.md#updateclusterkafkaversionresponsetypedef).
 
+<a id="update_configuration"></a>
+
 ### update_configuration
 
 Updates an MSK configuration.
@@ -816,6 +895,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef).
+
+<a id="update_connectivity"></a>
 
 ### update_connectivity
 
@@ -839,6 +920,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateConnectivityResponseTypeDef](./type_defs.md#updateconnectivityresponsetypedef).
+
+<a id="update_monitoring"></a>
 
 ### update_monitoring
 
@@ -865,6 +948,8 @@ Keyword-only arguments:
 Returns
 [UpdateMonitoringResponseTypeDef](./type_defs.md#updatemonitoringresponsetypedef).
 
+<a id="update_security"></a>
+
 ### update_security
 
 Updates the security settings for the cluster.
@@ -888,6 +973,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSecurityResponseTypeDef](./type_defs.md#updatesecurityresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

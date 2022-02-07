@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-shield-module"></a>
+
 # Literals for boto3 Shield module
 
 > [Index](..) > [Shield](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
 type annotations stubs module
-[mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
+[mypy-boto3-shield](https://pypi.org/project/mypy-boto3-shield/).
 
 - [Literals for boto3 Shield module](#literals-for-boto3-shield-module)
   - [ApplicationLayerAutomaticResponseStatusType](#applicationlayerautomaticresponsestatustype)
@@ -24,6 +26,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="applicationlayerautomaticresponsestatustype"></a>
+
 ## ApplicationLayerAutomaticResponseStatusType
 
 ```python
@@ -35,6 +39,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="attacklayertype"></a>
+
 ## AttackLayerType
 
 ```python
@@ -45,6 +51,8 @@ Values:
 
 - `APPLICATION`
 - `NETWORK`
+
+<a id="attackpropertyidentifiertype"></a>
 
 ## AttackPropertyIdentifierType
 
@@ -63,6 +71,8 @@ Values:
 - `WORDPRESS_PINGBACK_REFLECTOR`
 - `WORDPRESS_PINGBACK_SOURCE`
 
+<a id="autorenewtype"></a>
+
 ## AutoRenewType
 
 ```python
@@ -74,6 +84,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="listattackspaginatorname"></a>
+
 ## ListAttacksPaginatorName
 
 ```python
@@ -84,6 +96,8 @@ Values:
 
 - `list_attacks`
 
+<a id="listprotectionspaginatorname"></a>
+
 ## ListProtectionsPaginatorName
 
 ```python
@@ -93,6 +107,8 @@ from mypy_boto3_shield.literals import ListProtectionsPaginatorName
 Values:
 
 - `list_protections`
+
+<a id="proactiveengagementstatustype"></a>
 
 ## ProactiveEngagementStatusType
 
@@ -105,6 +121,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 - `PENDING`
+
+<a id="protectedresourcetypetype"></a>
 
 ## ProtectedResourceTypeType
 
@@ -121,6 +139,8 @@ Values:
 - `GLOBAL_ACCELERATOR`
 - `ROUTE_53_HOSTED_ZONE`
 
+<a id="protectiongroupaggregationtype"></a>
+
 ## ProtectionGroupAggregationType
 
 ```python
@@ -132,6 +152,8 @@ Values:
 - `MAX`
 - `MEAN`
 - `SUM`
+
+<a id="protectiongrouppatterntype"></a>
 
 ## ProtectionGroupPatternType
 
@@ -145,6 +167,8 @@ Values:
 - `ARBITRARY`
 - `BY_RESOURCE_TYPE`
 
+<a id="subresourcetypetype"></a>
+
 ## SubResourceTypeType
 
 ```python
@@ -156,6 +180,8 @@ Values:
 - `IP`
 - `URL`
 
+<a id="subscriptionstatetype"></a>
+
 ## SubscriptionStateType
 
 ```python
@@ -166,6 +192,8 @@ Values:
 
 - `ACTIVE`
 - `INACTIVE`
+
+<a id="unittype"></a>
 
 ## UnitType
 
@@ -179,6 +207,8 @@ Values:
 - `BYTES`
 - `PACKETS`
 - `REQUESTS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -487,6 +517,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="pinpointsmsvoiceclient-for-boto3-pinpointsmsvoice-module"></a>
+
 # PinpointSMSVoiceClient for boto3 PinpointSMSVoice module
 
 > [Index](..) > [PinpointSMSVoice](.) > PinpointSMSVoiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
 type annotations stubs module
-[mypy_boto3_pinpoint_sms_voice](https://pypi.org/project/mypy-boto3-pinpoint-sms-voice/).
+[mypy-boto3-pinpoint-sms-voice](https://pypi.org/project/mypy-boto3-pinpoint-sms-voice/).
 
 - [PinpointSMSVoiceClient for boto3 PinpointSMSVoice module](#pinpointsmsvoiceclient-for-boto3-pinpointsmsvoice-module)
   - [PinpointSMSVoiceClient](#pinpointsmsvoiceclient)
@@ -22,6 +24,8 @@ type annotations stubs module
     - [send_voice_message](#send_voice_message)
     - [update_configuration_set_event_destination](#update_configuration_set_event_destination)
 
+<a id="pinpointsmsvoiceclient"></a>
+
 ## PinpointSMSVoiceClient
 
 Type annotations for `boto3.client("pinpoint-sms-voice")`
@@ -29,14 +33,17 @@ Type annotations for `boto3.client("pinpoint-sms-voice")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_pinpoint_sms_voice.client import PinpointSMSVoiceClient
 
 def get_pinpoint-sms-voice_client() -> PinpointSMSVoiceClient:
-    return boto3.client("pinpoint-sms-voice")
+    return Session().client("pinpoint-sms-voice")
 ```
 
 Boto3 documentation:
 [PinpointSMSVoice.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -60,7 +67,11 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -72,6 +83,8 @@ Boto3 documentation:
 [PinpointSMSVoice.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -87,6 +100,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_configuration_set"></a>
 
 ### create_configuration_set
 
@@ -106,6 +121,8 @@ Keyword-only arguments:
 - `ConfigurationSetName`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_configuration_set_event_destination"></a>
 
 ### create_configuration_set_event_destination
 
@@ -130,6 +147,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_configuration_set"></a>
+
 ### delete_configuration_set
 
 Deletes an existing configuration set.
@@ -148,6 +167,8 @@ Keyword-only arguments:
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_configuration_set_event_destination"></a>
 
 ### delete_configuration_set_event_destination
 
@@ -170,6 +191,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -188,6 +211,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_configuration_set_event_destinations"></a>
 
 ### get_configuration_set_event_destinations
 
@@ -211,6 +236,8 @@ Keyword-only arguments:
 
 Returns
 [GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef).
+
+<a id="send_voice_message"></a>
 
 ### send_voice_message
 
@@ -236,6 +263,8 @@ Keyword-only arguments:
 
 Returns
 [SendVoiceMessageResponseTypeDef](./type_defs.md#sendvoicemessageresponsetypedef).
+
+<a id="update_configuration_set_event_destination"></a>
 
 ### update_configuration_set_event_destination
 

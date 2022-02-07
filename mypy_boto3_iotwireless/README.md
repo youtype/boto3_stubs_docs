@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iotwireless-module"></a>
+
 # Type annotations for boto3 IoTWireless module
 
 > [Index](..) > IoTWireless
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
 type annotations stubs module
-[mypy_boto3_iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
+[mypy-boto3-iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iotwireless]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iotwireless]'
+
+# standalone installation
 pip install mypy-boto3-iotwireless
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-iotwireless
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="iotwirelessclient"></a>
 
 ## IoTWirelessClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iotwireless.client import IoTWirelessClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -122,6 +136,8 @@ from mypy_boto3_iotwireless.client import IoTWirelessClient
 - [update_wireless_device](./client.md#update_wireless_device)
 - [update_wireless_gateway](./client.md#update_wireless_gateway)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoTWirelessClient [exceptions](./client.md#exceptions)
@@ -134,6 +150,8 @@ IoTWirelessClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - TooManyTagsException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -172,6 +190,8 @@ from mypy_boto3_iotwireless.literals import BatteryLevelType, ...
 - [WirelessGatewayTaskStatusType](./literals.md#wirelessgatewaytaskstatustype)
 - [WirelessGatewayTypeType](./literals.md#wirelessgatewaytypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

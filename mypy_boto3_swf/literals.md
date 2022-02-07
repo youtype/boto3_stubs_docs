@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-swf-module"></a>
+
 # Literals for boto3 SWF module
 
 > [Index](..) > [SWF](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
 type annotations stubs module
-[mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
+[mypy-boto3-swf](https://pypi.org/project/mypy-boto3-swf/).
 
 - [Literals for boto3 SWF module](#literals-for-boto3-swf-module)
   - [ActivityTaskTimeoutTypeType](#activitytasktimeouttypetype)
@@ -44,6 +46,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="activitytasktimeouttypetype"></a>
+
 ## ActivityTaskTimeoutTypeType
 
 ```python
@@ -57,6 +61,8 @@ Values:
 - `SCHEDULE_TO_START`
 - `START_TO_CLOSE`
 
+<a id="canceltimerfailedcausetype"></a>
+
 ## CancelTimerFailedCauseType
 
 ```python
@@ -67,6 +73,8 @@ Values:
 
 - `OPERATION_NOT_PERMITTED`
 - `TIMER_ID_UNKNOWN`
+
+<a id="cancelworkflowexecutionfailedcausetype"></a>
 
 ## CancelWorkflowExecutionFailedCauseType
 
@@ -79,6 +87,8 @@ Values:
 - `OPERATION_NOT_PERMITTED`
 - `UNHANDLED_DECISION`
 
+<a id="childpolicytype"></a>
+
 ## ChildPolicyType
 
 ```python
@@ -90,6 +100,8 @@ Values:
 - `ABANDON`
 - `REQUEST_CANCEL`
 - `TERMINATE`
+
+<a id="closestatustype"></a>
 
 ## CloseStatusType
 
@@ -106,6 +118,8 @@ Values:
 - `TERMINATED`
 - `TIMED_OUT`
 
+<a id="completeworkflowexecutionfailedcausetype"></a>
+
 ## CompleteWorkflowExecutionFailedCauseType
 
 ```python
@@ -116,6 +130,8 @@ Values:
 
 - `OPERATION_NOT_PERMITTED`
 - `UNHANDLED_DECISION`
+
+<a id="continueasnewworkflowexecutionfailedcausetype"></a>
 
 ## ContinueAsNewWorkflowExecutionFailedCauseType
 
@@ -135,6 +151,8 @@ Values:
 - `WORKFLOW_TYPE_DEPRECATED`
 - `WORKFLOW_TYPE_DOES_NOT_EXIST`
 
+<a id="decisiontasktimeouttypetype"></a>
+
 ## DecisionTaskTimeoutTypeType
 
 ```python
@@ -144,6 +162,8 @@ from mypy_boto3_swf.literals import DecisionTaskTimeoutTypeType
 Values:
 
 - `START_TO_CLOSE`
+
+<a id="decisiontypetype"></a>
 
 ## DecisionTypeType
 
@@ -166,6 +186,8 @@ Values:
 - `SignalExternalWorkflowExecution`
 - `StartChildWorkflowExecution`
 - `StartTimer`
+
+<a id="eventtypetype"></a>
 
 ## EventTypeType
 
@@ -230,6 +252,8 @@ Values:
 - `WorkflowExecutionTerminated`
 - `WorkflowExecutionTimedOut`
 
+<a id="executionstatustype"></a>
+
 ## ExecutionStatusType
 
 ```python
@@ -240,6 +264,8 @@ Values:
 
 - `CLOSED`
 - `OPEN`
+
+<a id="failworkflowexecutionfailedcausetype"></a>
 
 ## FailWorkflowExecutionFailedCauseType
 
@@ -252,6 +278,8 @@ Values:
 - `OPERATION_NOT_PERMITTED`
 - `UNHANDLED_DECISION`
 
+<a id="getworkflowexecutionhistorypaginatorname"></a>
+
 ## GetWorkflowExecutionHistoryPaginatorName
 
 ```python
@@ -261,6 +289,8 @@ from mypy_boto3_swf.literals import GetWorkflowExecutionHistoryPaginatorName
 Values:
 
 - `get_workflow_execution_history`
+
+<a id="lambdafunctiontimeouttypetype"></a>
 
 ## LambdaFunctionTimeoutTypeType
 
@@ -272,6 +302,8 @@ Values:
 
 - `START_TO_CLOSE`
 
+<a id="listactivitytypespaginatorname"></a>
+
 ## ListActivityTypesPaginatorName
 
 ```python
@@ -281,6 +313,8 @@ from mypy_boto3_swf.literals import ListActivityTypesPaginatorName
 Values:
 
 - `list_activity_types`
+
+<a id="listclosedworkflowexecutionspaginatorname"></a>
 
 ## ListClosedWorkflowExecutionsPaginatorName
 
@@ -292,6 +326,8 @@ Values:
 
 - `list_closed_workflow_executions`
 
+<a id="listdomainspaginatorname"></a>
+
 ## ListDomainsPaginatorName
 
 ```python
@@ -301,6 +337,8 @@ from mypy_boto3_swf.literals import ListDomainsPaginatorName
 Values:
 
 - `list_domains`
+
+<a id="listopenworkflowexecutionspaginatorname"></a>
 
 ## ListOpenWorkflowExecutionsPaginatorName
 
@@ -312,6 +350,8 @@ Values:
 
 - `list_open_workflow_executions`
 
+<a id="listworkflowtypespaginatorname"></a>
+
 ## ListWorkflowTypesPaginatorName
 
 ```python
@@ -321,6 +361,8 @@ from mypy_boto3_swf.literals import ListWorkflowTypesPaginatorName
 Values:
 
 - `list_workflow_types`
+
+<a id="pollfordecisiontaskpaginatorname"></a>
 
 ## PollForDecisionTaskPaginatorName
 
@@ -332,6 +374,8 @@ Values:
 
 - `poll_for_decision_task`
 
+<a id="recordmarkerfailedcausetype"></a>
+
 ## RecordMarkerFailedCauseType
 
 ```python
@@ -341,6 +385,8 @@ from mypy_boto3_swf.literals import RecordMarkerFailedCauseType
 Values:
 
 - `OPERATION_NOT_PERMITTED`
+
+<a id="registrationstatustype"></a>
 
 ## RegistrationStatusType
 
@@ -353,6 +399,8 @@ Values:
 - `DEPRECATED`
 - `REGISTERED`
 
+<a id="requestcancelactivitytaskfailedcausetype"></a>
+
 ## RequestCancelActivityTaskFailedCauseType
 
 ```python
@@ -363,6 +411,8 @@ Values:
 
 - `ACTIVITY_ID_UNKNOWN`
 - `OPERATION_NOT_PERMITTED`
+
+<a id="requestcancelexternalworkflowexecutionfailedcausetype"></a>
 
 ## RequestCancelExternalWorkflowExecutionFailedCauseType
 
@@ -375,6 +425,8 @@ Values:
 - `OPERATION_NOT_PERMITTED`
 - `REQUEST_CANCEL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED`
 - `UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION`
+
+<a id="scheduleactivitytaskfailedcausetype"></a>
 
 ## ScheduleActivityTaskFailedCauseType
 
@@ -396,6 +448,8 @@ Values:
 - `OPEN_ACTIVITIES_LIMIT_EXCEEDED`
 - `OPERATION_NOT_PERMITTED`
 
+<a id="schedulelambdafunctionfailedcausetype"></a>
+
 ## ScheduleLambdaFunctionFailedCauseType
 
 ```python
@@ -409,6 +463,8 @@ Values:
 - `LAMBDA_SERVICE_NOT_AVAILABLE_IN_REGION`
 - `OPEN_LAMBDA_FUNCTIONS_LIMIT_EXCEEDED`
 
+<a id="signalexternalworkflowexecutionfailedcausetype"></a>
+
 ## SignalExternalWorkflowExecutionFailedCauseType
 
 ```python
@@ -420,6 +476,8 @@ Values:
 - `OPERATION_NOT_PERMITTED`
 - `SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED`
 - `UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION`
+
+<a id="startchildworkflowexecutionfailedcausetype"></a>
 
 ## StartChildWorkflowExecutionFailedCauseType
 
@@ -441,6 +499,8 @@ Values:
 - `WORKFLOW_TYPE_DEPRECATED`
 - `WORKFLOW_TYPE_DOES_NOT_EXIST`
 
+<a id="startlambdafunctionfailedcausetype"></a>
+
 ## StartLambdaFunctionFailedCauseType
 
 ```python
@@ -450,6 +510,8 @@ from mypy_boto3_swf.literals import StartLambdaFunctionFailedCauseType
 Values:
 
 - `ASSUME_ROLE_FAILED`
+
+<a id="starttimerfailedcausetype"></a>
 
 ## StartTimerFailedCauseType
 
@@ -464,6 +526,8 @@ Values:
 - `TIMER_CREATION_RATE_EXCEEDED`
 - `TIMER_ID_ALREADY_IN_USE`
 
+<a id="workflowexecutioncancelrequestedcausetype"></a>
+
 ## WorkflowExecutionCancelRequestedCauseType
 
 ```python
@@ -473,6 +537,8 @@ from mypy_boto3_swf.literals import WorkflowExecutionCancelRequestedCauseType
 Values:
 
 - `CHILD_POLICY_APPLIED`
+
+<a id="workflowexecutionterminatedcausetype"></a>
 
 ## WorkflowExecutionTerminatedCauseType
 
@@ -486,6 +552,8 @@ Values:
 - `EVENT_LIMIT_EXCEEDED`
 - `OPERATOR_INITIATED`
 
+<a id="workflowexecutiontimeouttypetype"></a>
+
 ## WorkflowExecutionTimeoutTypeType
 
 ```python
@@ -495,6 +563,8 @@ from mypy_boto3_swf.literals import WorkflowExecutionTimeoutTypeType
 Values:
 
 - `START_TO_CLOSE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -803,6 +873,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

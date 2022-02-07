@@ -1,3 +1,5 @@
+<a id="cognitoidentityproviderclient-for-boto3-cognitoidentityprovider-module"></a>
+
 # CognitoIdentityProviderClient for boto3 CognitoIdentityProvider module
 
 > [Index](..) > [CognitoIdentityProvider](.) > CognitoIdentityProviderClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
 type annotations stubs module
-[mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
+[mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 - [CognitoIdentityProviderClient for boto3 CognitoIdentityProvider module](#cognitoidentityproviderclient-for-boto3-cognitoidentityprovider-module)
   - [CognitoIdentityProviderClient](#cognitoidentityproviderclient)
@@ -117,6 +119,8 @@ type annotations stubs module
     - [verify_user_attribute](#verify_user_attribute)
     - [get_paginator](#get_paginator)
 
+<a id="cognitoidentityproviderclient"></a>
+
 ## CognitoIdentityProviderClient
 
 Type annotations for `boto3.client("cognito-idp")`
@@ -124,14 +128,17 @@ Type annotations for `boto3.client("cognito-idp")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cognito_idp.client import CognitoIdentityProviderClient
 
 def get_cognito-idp_client() -> CognitoIdentityProviderClient:
-    return boto3.client("cognito-idp")
+    return Session().client("cognito-idp")
 ```
 
 Boto3 documentation:
 [CognitoIdentityProvider.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -189,7 +196,11 @@ Exceptions:
 - `Exceptions.UserPoolTaggingException`
 - `Exceptions.UsernameExistsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -201,6 +212,8 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_custom_attributes"></a>
 
 ### add_custom_attributes
 
@@ -224,6 +237,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="admin_add_user_to_group"></a>
+
 ### admin_add_user_to_group
 
 Adds the specified user to the specified group.
@@ -242,6 +257,8 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
 - `GroupName`: `str` *(required)*
+
+<a id="admin_confirm_sign_up"></a>
 
 ### admin_confirm_sign_up
 
@@ -263,6 +280,8 @@ Keyword-only arguments:
 - `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="admin_create_user"></a>
 
 ### admin_create_user
 
@@ -294,6 +313,8 @@ Keyword-only arguments:
 Returns
 [AdminCreateUserResponseTypeDef](./type_defs.md#admincreateuserresponsetypedef).
 
+<a id="admin_delete_user"></a>
+
 ### admin_delete_user
 
 Deletes a user as an administrator.
@@ -310,6 +331,8 @@ Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
+
+<a id="admin_delete_user_attributes"></a>
 
 ### admin_delete_user_attributes
 
@@ -331,6 +354,8 @@ Keyword-only arguments:
 - `UserAttributeNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="admin_disable_provider_for_user"></a>
 
 ### admin_disable_provider_for_user
 
@@ -355,6 +380,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="admin_disable_user"></a>
+
 ### admin_disable_user
 
 Disables the specified user.
@@ -373,6 +400,8 @@ Keyword-only arguments:
 - `Username`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="admin_enable_user"></a>
 
 ### admin_enable_user
 
@@ -393,6 +422,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="admin_forget_device"></a>
+
 ### admin_forget_device
 
 Forgets the device, as an administrator.
@@ -410,6 +441,8 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
 - `DeviceKey`: `str` *(required)*
+
+<a id="admin_get_device"></a>
 
 ### admin_get_device
 
@@ -432,6 +465,8 @@ Keyword-only arguments:
 Returns
 [AdminGetDeviceResponseTypeDef](./type_defs.md#admingetdeviceresponsetypedef).
 
+<a id="admin_get_user"></a>
+
 ### admin_get_user
 
 Gets the specified user by user name in a user pool as an administrator.
@@ -451,6 +486,8 @@ Keyword-only arguments:
 
 Returns
 [AdminGetUserResponseTypeDef](./type_defs.md#admingetuserresponsetypedef).
+
+<a id="admin_initiate_auth"></a>
 
 ### admin_initiate_auth
 
@@ -479,6 +516,8 @@ Keyword-only arguments:
 Returns
 [AdminInitiateAuthResponseTypeDef](./type_defs.md#admininitiateauthresponsetypedef).
 
+<a id="admin_link_provider_for_user"></a>
+
 ### admin_link_provider_for_user
 
 Links an existing user account in a user pool (`DestinationUser` ) to an
@@ -506,6 +545,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="admin_list_devices"></a>
+
 ### admin_list_devices
 
 Lists devices, as an administrator.
@@ -527,6 +568,8 @@ Keyword-only arguments:
 
 Returns
 [AdminListDevicesResponseTypeDef](./type_defs.md#adminlistdevicesresponsetypedef).
+
+<a id="admin_list_groups_for_user"></a>
 
 ### admin_list_groups_for_user
 
@@ -550,6 +593,8 @@ Keyword-only arguments:
 
 Returns
 [AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef).
+
+<a id="admin_list_user_auth_events"></a>
 
 ### admin_list_user_auth_events
 
@@ -575,6 +620,8 @@ Keyword-only arguments:
 Returns
 [AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef).
 
+<a id="admin_remove_user_from_group"></a>
+
 ### admin_remove_user_from_group
 
 Removes the specified user from the specified group.
@@ -593,6 +640,8 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
 - `GroupName`: `str` *(required)*
+
+<a id="admin_reset_user_password"></a>
 
 ### admin_reset_user_password
 
@@ -614,6 +663,8 @@ Keyword-only arguments:
 - `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="admin_respond_to_auth_challenge"></a>
 
 ### admin_respond_to_auth_challenge
 
@@ -645,6 +696,8 @@ Keyword-only arguments:
 Returns
 [AdminRespondToAuthChallengeResponseTypeDef](./type_defs.md#adminrespondtoauthchallengeresponsetypedef).
 
+<a id="admin_set_user_mfa_preference"></a>
+
 ### admin_set_user_mfa_preference
 
 The user's multi-factor authentication (MFA) preference, including which MFA
@@ -670,6 +723,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="admin_set_user_password"></a>
+
 ### admin_set_user_password
 
 Sets the specified user's password in a user pool as an administrator.
@@ -691,6 +746,8 @@ Keyword-only arguments:
 - `Permanent`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="admin_set_user_settings"></a>
 
 ### admin_set_user_settings
 
@@ -714,6 +771,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="admin_update_auth_event_feedback"></a>
 
 ### admin_update_auth_event_feedback
 
@@ -739,6 +798,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="admin_update_device_status"></a>
+
 ### admin_update_device_status
 
 Updates the device status as an administrator.
@@ -761,6 +822,8 @@ Keyword-only arguments:
   [DeviceRememberedStatusTypeType](./literals.md#devicerememberedstatustypetype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="admin_update_user_attributes"></a>
 
 ### admin_update_user_attributes
 
@@ -787,6 +850,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="admin_user_global_sign_out"></a>
+
 ### admin_user_global_sign_out
 
 Signs out users from all devices, as an administrator.
@@ -806,6 +871,8 @@ Keyword-only arguments:
 - `Username`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_software_token"></a>
 
 ### associate_software_token
 
@@ -828,6 +895,8 @@ Keyword-only arguments:
 Returns
 [AssociateSoftwareTokenResponseTypeDef](./type_defs.md#associatesoftwaretokenresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -842,6 +911,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="change_password"></a>
 
 ### change_password
 
@@ -862,6 +933,8 @@ Keyword-only arguments:
 - `AccessToken`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="confirm_device"></a>
 
 ### confirm_device
 
@@ -885,6 +958,8 @@ Keyword-only arguments:
 
 Returns
 [ConfirmDeviceResponseTypeDef](./type_defs.md#confirmdeviceresponsetypedef).
+
+<a id="confirm_forgot_password"></a>
 
 ### confirm_forgot_password
 
@@ -914,6 +989,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="confirm_sign_up"></a>
+
 ### confirm_sign_up
 
 Confirms registration of a user and handles the existing alias from a previous
@@ -942,6 +1019,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_group"></a>
+
 ### create_group
 
 Creates a new group in the specified user pool.
@@ -964,6 +1043,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
+
+<a id="create_identity_provider"></a>
 
 ### create_identity_provider
 
@@ -992,6 +1073,8 @@ Keyword-only arguments:
 Returns
 [CreateIdentityProviderResponseTypeDef](./type_defs.md#createidentityproviderresponsetypedef).
 
+<a id="create_resource_server"></a>
+
 ### create_resource_server
 
 Creates a new OAuth2.0 resource server and defines custom scopes within it.
@@ -1016,6 +1099,8 @@ Keyword-only arguments:
 Returns
 [CreateResourceServerResponseTypeDef](./type_defs.md#createresourceserverresponsetypedef).
 
+<a id="create_user_import_job"></a>
+
 ### create_user_import_job
 
 Creates the user import job.
@@ -1037,6 +1122,8 @@ Keyword-only arguments:
 
 Returns
 [CreateUserImportJobResponseTypeDef](./type_defs.md#createuserimportjobresponsetypedef).
+
+<a id="create_user_pool"></a>
 
 ### create_user_pool
 
@@ -1092,6 +1179,8 @@ Keyword-only arguments:
 Returns
 [CreateUserPoolResponseTypeDef](./type_defs.md#createuserpoolresponsetypedef).
 
+<a id="create_user_pool_client"></a>
+
 ### create_user_pool_client
 
 Creates the user pool client.
@@ -1136,6 +1225,8 @@ Keyword-only arguments:
 Returns
 [CreateUserPoolClientResponseTypeDef](./type_defs.md#createuserpoolclientresponsetypedef).
 
+<a id="create_user_pool_domain"></a>
+
 ### create_user_pool_domain
 
 Creates a new domain for a user pool.
@@ -1159,6 +1250,8 @@ Keyword-only arguments:
 Returns
 [CreateUserPoolDomainResponseTypeDef](./type_defs.md#createuserpooldomainresponsetypedef).
 
+<a id="delete_group"></a>
+
 ### delete_group
 
 Deletes a group.
@@ -1175,6 +1268,8 @@ Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `UserPoolId`: `str` *(required)*
+
+<a id="delete_identity_provider"></a>
 
 ### delete_identity_provider
 
@@ -1194,6 +1289,8 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 - `ProviderName`: `str` *(required)*
 
+<a id="delete_resource_server"></a>
+
 ### delete_resource_server
 
 Deletes a resource server.
@@ -1212,6 +1309,8 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 - `Identifier`: `str` *(required)*
 
+<a id="delete_user"></a>
+
 ### delete_user
 
 Allows a user to delete himself or herself.
@@ -1227,6 +1326,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AccessToken`: `str` *(required)*
+
+<a id="delete_user_attributes"></a>
 
 ### delete_user_attributes
 
@@ -1248,6 +1349,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_user_pool"></a>
+
 ### delete_user_pool
 
 Deletes the specified Amazon Cognito user pool.
@@ -1263,6 +1366,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
+
+<a id="delete_user_pool_client"></a>
 
 ### delete_user_pool_client
 
@@ -1281,6 +1386,8 @@ Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `ClientId`: `str` *(required)*
+
+<a id="delete_user_pool_domain"></a>
 
 ### delete_user_pool_domain
 
@@ -1301,6 +1408,8 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_identity_provider"></a>
 
 ### describe_identity_provider
 
@@ -1323,6 +1432,8 @@ Keyword-only arguments:
 Returns
 [DescribeIdentityProviderResponseTypeDef](./type_defs.md#describeidentityproviderresponsetypedef).
 
+<a id="describe_resource_server"></a>
+
 ### describe_resource_server
 
 Describes a resource server.
@@ -1343,6 +1454,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeResourceServerResponseTypeDef](./type_defs.md#describeresourceserverresponsetypedef).
+
+<a id="describe_risk_configuration"></a>
 
 ### describe_risk_configuration
 
@@ -1365,6 +1478,8 @@ Keyword-only arguments:
 Returns
 [DescribeRiskConfigurationResponseTypeDef](./type_defs.md#describeriskconfigurationresponsetypedef).
 
+<a id="describe_user_import_job"></a>
+
 ### describe_user_import_job
 
 Describes the user import job.
@@ -1386,6 +1501,8 @@ Keyword-only arguments:
 Returns
 [DescribeUserImportJobResponseTypeDef](./type_defs.md#describeuserimportjobresponsetypedef).
 
+<a id="describe_user_pool"></a>
+
 ### describe_user_pool
 
 Returns the configuration information and metadata of the specified user pool.
@@ -1404,6 +1521,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUserPoolResponseTypeDef](./type_defs.md#describeuserpoolresponsetypedef).
+
+<a id="describe_user_pool_client"></a>
 
 ### describe_user_pool_client
 
@@ -1427,6 +1546,8 @@ Keyword-only arguments:
 Returns
 [DescribeUserPoolClientResponseTypeDef](./type_defs.md#describeuserpoolclientresponsetypedef).
 
+<a id="describe_user_pool_domain"></a>
+
 ### describe_user_pool_domain
 
 Gets information about a domain.
@@ -1447,6 +1568,8 @@ Keyword-only arguments:
 Returns
 [DescribeUserPoolDomainResponseTypeDef](./type_defs.md#describeuserpooldomainresponsetypedef).
 
+<a id="forget_device"></a>
+
 ### forget_device
 
 Forgets the specified device.
@@ -1463,6 +1586,8 @@ Keyword-only arguments:
 
 - `DeviceKey`: `str` *(required)*
 - `AccessToken`: `str`
+
+<a id="forgot_password"></a>
 
 ### forgot_password
 
@@ -1491,6 +1616,8 @@ Keyword-only arguments:
 Returns
 [ForgotPasswordResponseTypeDef](./type_defs.md#forgotpasswordresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1509,6 +1636,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_csv_header"></a>
 
 ### get_csv_header
 
@@ -1530,6 +1659,8 @@ Keyword-only arguments:
 Returns
 [GetCSVHeaderResponseTypeDef](./type_defs.md#getcsvheaderresponsetypedef).
 
+<a id="get_device"></a>
+
 ### get_device
 
 Gets the device.
@@ -1549,6 +1680,8 @@ Keyword-only arguments:
 
 Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 
+<a id="get_group"></a>
+
 ### get_group
 
 Gets a group.
@@ -1567,6 +1700,8 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 
 Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
+
+<a id="get_identity_provider_by_identifier"></a>
 
 ### get_identity_provider_by_identifier
 
@@ -1589,6 +1724,8 @@ Keyword-only arguments:
 Returns
 [GetIdentityProviderByIdentifierResponseTypeDef](./type_defs.md#getidentityproviderbyidentifierresponsetypedef).
 
+<a id="get_signing_certificate"></a>
+
 ### get_signing_certificate
 
 This method takes a user pool ID, and returns the signing certificate.
@@ -1608,6 +1745,8 @@ Keyword-only arguments:
 
 Returns
 [GetSigningCertificateResponseTypeDef](./type_defs.md#getsigningcertificateresponsetypedef).
+
+<a id="get_ui_customization"></a>
 
 ### get_ui_customization
 
@@ -1630,6 +1769,8 @@ Keyword-only arguments:
 Returns
 [GetUICustomizationResponseTypeDef](./type_defs.md#getuicustomizationresponsetypedef).
 
+<a id="get_user"></a>
+
 ### get_user
 
 Gets the user attributes and metadata for a user.
@@ -1647,6 +1788,8 @@ Keyword-only arguments:
 - `AccessToken`: `str` *(required)*
 
 Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
+
+<a id="get_user_attribute_verification_code"></a>
 
 ### get_user_attribute_verification_code
 
@@ -1670,6 +1813,8 @@ Keyword-only arguments:
 Returns
 [GetUserAttributeVerificationCodeResponseTypeDef](./type_defs.md#getuserattributeverificationcoderesponsetypedef).
 
+<a id="get_user_pool_mfa_config"></a>
+
 ### get_user_pool_mfa_config
 
 Gets the user pool multi-factor authentication (MFA) configuration.
@@ -1690,6 +1835,8 @@ Keyword-only arguments:
 Returns
 [GetUserPoolMfaConfigResponseTypeDef](./type_defs.md#getuserpoolmfaconfigresponsetypedef).
 
+<a id="global_sign_out"></a>
+
 ### global_sign_out
 
 Signs out users from all devices.
@@ -1707,6 +1854,8 @@ Keyword-only arguments:
 - `AccessToken`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="initiate_auth"></a>
 
 ### initiate_auth
 
@@ -1734,6 +1883,8 @@ Keyword-only arguments:
 Returns
 [InitiateAuthResponseTypeDef](./type_defs.md#initiateauthresponsetypedef).
 
+<a id="list_devices"></a>
+
 ### list_devices
 
 Lists the devices.
@@ -1755,6 +1906,8 @@ Keyword-only arguments:
 Returns
 [ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
+<a id="list_groups"></a>
+
 ### list_groups
 
 Lists the groups associated with a user pool.
@@ -1774,6 +1927,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+
+<a id="list_identity_providers"></a>
 
 ### list_identity_providers
 
@@ -1797,6 +1952,8 @@ Keyword-only arguments:
 Returns
 [ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef).
 
+<a id="list_resource_servers"></a>
+
 ### list_resource_servers
 
 Lists the resource servers for a user pool.
@@ -1819,6 +1976,8 @@ Keyword-only arguments:
 Returns
 [ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags that are assigned to an Amazon Cognito user pool.
@@ -1838,6 +1997,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_user_import_jobs"></a>
 
 ### list_user_import_jobs
 
@@ -1861,6 +2022,8 @@ Keyword-only arguments:
 Returns
 [ListUserImportJobsResponseTypeDef](./type_defs.md#listuserimportjobsresponsetypedef).
 
+<a id="list_user_pool_clients"></a>
+
 ### list_user_pool_clients
 
 Lists the clients that have been created for the specified user pool.
@@ -1883,6 +2046,8 @@ Keyword-only arguments:
 Returns
 [ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef).
 
+<a id="list_user_pools"></a>
+
 ### list_user_pools
 
 Lists the user pools associated with an Amazon Web Services account.
@@ -1902,6 +2067,8 @@ Keyword-only arguments:
 
 Returns
 [ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef).
+
+<a id="list_users"></a>
 
 ### list_users
 
@@ -1925,6 +2092,8 @@ Keyword-only arguments:
 
 Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
+<a id="list_users_in_group"></a>
+
 ### list_users_in_group
 
 Lists the users in the specified group.
@@ -1946,6 +2115,8 @@ Keyword-only arguments:
 
 Returns
 [ListUsersInGroupResponseTypeDef](./type_defs.md#listusersingroupresponsetypedef).
+
+<a id="resend_confirmation_code"></a>
 
 ### resend_confirmation_code
 
@@ -1974,6 +2145,8 @@ Keyword-only arguments:
 
 Returns
 [ResendConfirmationCodeResponseTypeDef](./type_defs.md#resendconfirmationcoderesponsetypedef).
+
+<a id="respond_to_auth_challenge"></a>
 
 ### respond_to_auth_challenge
 
@@ -2004,6 +2177,8 @@ Keyword-only arguments:
 Returns
 [RespondToAuthChallengeResponseTypeDef](./type_defs.md#respondtoauthchallengeresponsetypedef).
 
+<a id="revoke_token"></a>
+
 ### revoke_token
 
 Revokes all of the access tokens generated by the specified refresh token.
@@ -2023,6 +2198,8 @@ Keyword-only arguments:
 - `ClientSecret`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="set_risk_configuration"></a>
 
 ### set_risk_configuration
 
@@ -2051,6 +2228,8 @@ Keyword-only arguments:
 Returns
 [SetRiskConfigurationResponseTypeDef](./type_defs.md#setriskconfigurationresponsetypedef).
 
+<a id="set_ui_customization"></a>
+
 ### set_ui_customization
 
 Sets the user interface (UI) customization information for a user pool's built-
@@ -2073,6 +2252,8 @@ Keyword-only arguments:
 
 Returns
 [SetUICustomizationResponseTypeDef](./type_defs.md#setuicustomizationresponsetypedef).
+
+<a id="set_user_mfa_preference"></a>
 
 ### set_user_mfa_preference
 
@@ -2097,6 +2278,8 @@ Keyword-only arguments:
   [SoftwareTokenMfaSettingsTypeTypeDef](./type_defs.md#softwaretokenmfasettingstypetypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="set_user_pool_mfa_config"></a>
 
 ### set_user_pool_mfa_config
 
@@ -2123,6 +2306,8 @@ Keyword-only arguments:
 Returns
 [SetUserPoolMfaConfigResponseTypeDef](./type_defs.md#setuserpoolmfaconfigresponsetypedef).
 
+<a id="set_user_settings"></a>
+
 ### set_user_settings
 
 *This action is no longer supported.* You can use it to configure only SMS MFA.
@@ -2143,6 +2328,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="sign_up"></a>
 
 ### sign_up
 
@@ -2175,6 +2362,8 @@ Keyword-only arguments:
 
 Returns [SignUpResponseTypeDef](./type_defs.md#signupresponsetypedef).
 
+<a id="start_user_import_job"></a>
+
 ### start_user_import_job
 
 Starts the user import.
@@ -2196,6 +2385,8 @@ Keyword-only arguments:
 Returns
 [StartUserImportJobResponseTypeDef](./type_defs.md#startuserimportjobresponsetypedef).
 
+<a id="stop_user_import_job"></a>
+
 ### stop_user_import_job
 
 Stops the user import job.
@@ -2216,6 +2407,8 @@ Keyword-only arguments:
 Returns
 [StopUserImportJobResponseTypeDef](./type_defs.md#stopuserimportjobresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns a set of tags to an Amazon Cognito user pool.
@@ -2235,6 +2428,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the specified tags from an Amazon Cognito user pool.
@@ -2253,6 +2448,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_auth_event_feedback"></a>
 
 ### update_auth_event_feedback
 
@@ -2279,6 +2476,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_device_status"></a>
+
 ### update_device_status
 
 Updates the device status.
@@ -2299,6 +2498,8 @@ Keyword-only arguments:
   [DeviceRememberedStatusTypeType](./literals.md#devicerememberedstatustypetype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_group"></a>
 
 ### update_group
 
@@ -2322,6 +2523,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateGroupResponseTypeDef](./type_defs.md#updategroupresponsetypedef).
+
+<a id="update_identity_provider"></a>
 
 ### update_identity_provider
 
@@ -2347,6 +2550,8 @@ Keyword-only arguments:
 Returns
 [UpdateIdentityProviderResponseTypeDef](./type_defs.md#updateidentityproviderresponsetypedef).
 
+<a id="update_resource_server"></a>
+
 ### update_resource_server
 
 Updates the name and scopes of resource server.
@@ -2371,6 +2576,8 @@ Keyword-only arguments:
 Returns
 [UpdateResourceServerResponseTypeDef](./type_defs.md#updateresourceserverresponsetypedef).
 
+<a id="update_user_attributes"></a>
+
 ### update_user_attributes
 
 Allows a user to update a specific attribute (one at a time).
@@ -2394,6 +2601,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateUserAttributesResponseTypeDef](./type_defs.md#updateuserattributesresponsetypedef).
+
+<a id="update_user_pool"></a>
 
 ### update_user_pool
 
@@ -2439,6 +2648,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_user_pool_client"></a>
+
 ### update_user_pool_client
 
 Updates the specified user pool app client with the specified attributes.
@@ -2483,6 +2694,8 @@ Keyword-only arguments:
 Returns
 [UpdateUserPoolClientResponseTypeDef](./type_defs.md#updateuserpoolclientresponsetypedef).
 
+<a id="update_user_pool_domain"></a>
+
 ### update_user_pool_domain
 
 Updates the Secure Sockets Layer (SSL) certificate for the custom domain for
@@ -2508,6 +2721,8 @@ Keyword-only arguments:
 Returns
 [UpdateUserPoolDomainResponseTypeDef](./type_defs.md#updateuserpooldomainresponsetypedef).
 
+<a id="verify_software_token"></a>
+
 ### verify_software_token
 
 Use this API to register a user's entered time-based one-time password (TOTP)
@@ -2532,6 +2747,8 @@ Keyword-only arguments:
 Returns
 [VerifySoftwareTokenResponseTypeDef](./type_defs.md#verifysoftwaretokenresponsetypedef).
 
+<a id="verify_user_attribute"></a>
+
 ### verify_user_attribute
 
 Verifies the specified user attributes in the user pool.
@@ -2552,6 +2769,8 @@ Keyword-only arguments:
 - `Code`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

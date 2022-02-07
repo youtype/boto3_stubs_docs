@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-networkmanager-module"></a>
+
 # Literals for boto3 NetworkManager module
 
 > [Index](..) > [NetworkManager](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
 type annotations stubs module
-[mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
+[mypy-boto3-networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 - [Literals for boto3 NetworkManager module](#literals-for-boto3-networkmanager-module)
   - [AttachmentStateType](#attachmentstatetype)
@@ -57,6 +59,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="attachmentstatetype"></a>
+
 ## AttachmentStateType
 
 ```python
@@ -75,6 +79,8 @@ Values:
 - `REJECTED`
 - `UPDATING`
 
+<a id="attachmenttypetype"></a>
+
 ## AttachmentTypeType
 
 ```python
@@ -87,6 +93,8 @@ Values:
 - `SITE_TO_SITE_VPN`
 - `VPC`
 
+<a id="changeactiontype"></a>
+
 ## ChangeActionType
 
 ```python
@@ -98,6 +106,8 @@ Values:
 - `ADD`
 - `MODIFY`
 - `REMOVE`
+
+<a id="changesetstatetype"></a>
 
 ## ChangeSetStateType
 
@@ -114,6 +124,8 @@ Values:
 - `PENDING_GENERATION`
 - `READY_TO_EXECUTE`
 
+<a id="changetypetype"></a>
+
 ## ChangeTypeType
 
 ```python
@@ -128,6 +140,8 @@ Values:
 - `CORE_NETWORK_EDGE`
 - `CORE_NETWORK_SEGMENT`
 
+<a id="connectpeerassociationstatetype"></a>
+
 ## ConnectPeerAssociationStateType
 
 ```python
@@ -140,6 +154,8 @@ Values:
 - `DELETED`
 - `DELETING`
 - `PENDING`
+
+<a id="connectpeerstatetype"></a>
 
 ## ConnectPeerStateType
 
@@ -154,6 +170,8 @@ Values:
 - `DELETING`
 - `FAILED`
 
+<a id="connectionstatetype"></a>
+
 ## ConnectionStateType
 
 ```python
@@ -167,6 +185,8 @@ Values:
 - `PENDING`
 - `UPDATING`
 
+<a id="connectionstatustype"></a>
+
 ## ConnectionStatusType
 
 ```python
@@ -177,6 +197,8 @@ Values:
 
 - `DOWN`
 - `UP`
+
+<a id="connectiontypetype"></a>
 
 ## ConnectionTypeType
 
@@ -189,6 +211,8 @@ Values:
 - `BGP`
 - `IPSEC`
 
+<a id="corenetworkpolicyaliastype"></a>
+
 ## CoreNetworkPolicyAliasType
 
 ```python
@@ -199,6 +223,8 @@ Values:
 
 - `LATEST`
 - `LIVE`
+
+<a id="corenetworkstatetype"></a>
 
 ## CoreNetworkStateType
 
@@ -213,6 +239,8 @@ Values:
 - `DELETING`
 - `UPDATING`
 
+<a id="customergatewayassociationstatetype"></a>
+
 ## CustomerGatewayAssociationStateType
 
 ```python
@@ -226,6 +254,8 @@ Values:
 - `DELETING`
 - `PENDING`
 
+<a id="describeglobalnetworkspaginatorname"></a>
+
 ## DescribeGlobalNetworksPaginatorName
 
 ```python
@@ -235,6 +265,8 @@ from mypy_boto3_networkmanager.literals import DescribeGlobalNetworksPaginatorNa
 Values:
 
 - `describe_global_networks`
+
+<a id="devicestatetype"></a>
 
 ## DeviceStateType
 
@@ -249,6 +281,8 @@ Values:
 - `PENDING`
 - `UPDATING`
 
+<a id="getconnectpeerassociationspaginatorname"></a>
+
 ## GetConnectPeerAssociationsPaginatorName
 
 ```python
@@ -258,6 +292,8 @@ from mypy_boto3_networkmanager.literals import GetConnectPeerAssociationsPaginat
 Values:
 
 - `get_connect_peer_associations`
+
+<a id="getconnectionspaginatorname"></a>
 
 ## GetConnectionsPaginatorName
 
@@ -269,6 +305,8 @@ Values:
 
 - `get_connections`
 
+<a id="getcorenetworkchangesetpaginatorname"></a>
+
 ## GetCoreNetworkChangeSetPaginatorName
 
 ```python
@@ -278,6 +316,8 @@ from mypy_boto3_networkmanager.literals import GetCoreNetworkChangeSetPaginatorN
 Values:
 
 - `get_core_network_change_set`
+
+<a id="getcustomergatewayassociationspaginatorname"></a>
 
 ## GetCustomerGatewayAssociationsPaginatorName
 
@@ -289,6 +329,8 @@ Values:
 
 - `get_customer_gateway_associations`
 
+<a id="getdevicespaginatorname"></a>
+
 ## GetDevicesPaginatorName
 
 ```python
@@ -298,6 +340,8 @@ from mypy_boto3_networkmanager.literals import GetDevicesPaginatorName
 Values:
 
 - `get_devices`
+
+<a id="getlinkassociationspaginatorname"></a>
 
 ## GetLinkAssociationsPaginatorName
 
@@ -309,6 +353,8 @@ Values:
 
 - `get_link_associations`
 
+<a id="getlinkspaginatorname"></a>
+
 ## GetLinksPaginatorName
 
 ```python
@@ -318,6 +364,8 @@ from mypy_boto3_networkmanager.literals import GetLinksPaginatorName
 Values:
 
 - `get_links`
+
+<a id="getnetworkresourcecountspaginatorname"></a>
 
 ## GetNetworkResourceCountsPaginatorName
 
@@ -329,6 +377,8 @@ Values:
 
 - `get_network_resource_counts`
 
+<a id="getnetworkresourcerelationshipspaginatorname"></a>
+
 ## GetNetworkResourceRelationshipsPaginatorName
 
 ```python
@@ -338,6 +388,8 @@ from mypy_boto3_networkmanager.literals import GetNetworkResourceRelationshipsPa
 Values:
 
 - `get_network_resource_relationships`
+
+<a id="getnetworkresourcespaginatorname"></a>
 
 ## GetNetworkResourcesPaginatorName
 
@@ -349,6 +401,8 @@ Values:
 
 - `get_network_resources`
 
+<a id="getnetworktelemetrypaginatorname"></a>
+
 ## GetNetworkTelemetryPaginatorName
 
 ```python
@@ -358,6 +412,8 @@ from mypy_boto3_networkmanager.literals import GetNetworkTelemetryPaginatorName
 Values:
 
 - `get_network_telemetry`
+
+<a id="getsitespaginatorname"></a>
 
 ## GetSitesPaginatorName
 
@@ -369,6 +425,8 @@ Values:
 
 - `get_sites`
 
+<a id="gettransitgatewayconnectpeerassociationspaginatorname"></a>
+
 ## GetTransitGatewayConnectPeerAssociationsPaginatorName
 
 ```python
@@ -379,6 +437,8 @@ Values:
 
 - `get_transit_gateway_connect_peer_associations`
 
+<a id="gettransitgatewayregistrationspaginatorname"></a>
+
 ## GetTransitGatewayRegistrationsPaginatorName
 
 ```python
@@ -388,6 +448,8 @@ from mypy_boto3_networkmanager.literals import GetTransitGatewayRegistrationsPag
 Values:
 
 - `get_transit_gateway_registrations`
+
+<a id="globalnetworkstatetype"></a>
 
 ## GlobalNetworkStateType
 
@@ -402,6 +464,8 @@ Values:
 - `PENDING`
 - `UPDATING`
 
+<a id="linkassociationstatetype"></a>
+
 ## LinkAssociationStateType
 
 ```python
@@ -414,6 +478,8 @@ Values:
 - `DELETED`
 - `DELETING`
 - `PENDING`
+
+<a id="linkstatetype"></a>
 
 ## LinkStateType
 
@@ -428,6 +494,8 @@ Values:
 - `PENDING`
 - `UPDATING`
 
+<a id="listattachmentspaginatorname"></a>
+
 ## ListAttachmentsPaginatorName
 
 ```python
@@ -437,6 +505,8 @@ from mypy_boto3_networkmanager.literals import ListAttachmentsPaginatorName
 Values:
 
 - `list_attachments`
+
+<a id="listconnectpeerspaginatorname"></a>
 
 ## ListConnectPeersPaginatorName
 
@@ -448,6 +518,8 @@ Values:
 
 - `list_connect_peers`
 
+<a id="listcorenetworkpolicyversionspaginatorname"></a>
+
 ## ListCoreNetworkPolicyVersionsPaginatorName
 
 ```python
@@ -458,6 +530,8 @@ Values:
 
 - `list_core_network_policy_versions`
 
+<a id="listcorenetworkspaginatorname"></a>
+
 ## ListCoreNetworksPaginatorName
 
 ```python
@@ -467,6 +541,8 @@ from mypy_boto3_networkmanager.literals import ListCoreNetworksPaginatorName
 Values:
 
 - `list_core_networks`
+
+<a id="routeanalysiscompletionreasoncodetype"></a>
 
 ## RouteAnalysisCompletionReasonCodeType
 
@@ -488,6 +564,8 @@ Values:
 - `TRANSIT_GATEWAY_ATTACHMENT_NOT_IN_TRANSIT_GATEWAY`
 - `TRANSIT_GATEWAY_ATTACHMENT_STABLE_ROUTE_TABLE_NOT_FOUND`
 
+<a id="routeanalysiscompletionresultcodetype"></a>
+
 ## RouteAnalysisCompletionResultCodeType
 
 ```python
@@ -498,6 +576,8 @@ Values:
 
 - `CONNECTED`
 - `NOT_CONNECTED`
+
+<a id="routeanalysisstatustype"></a>
 
 ## RouteAnalysisStatusType
 
@@ -511,6 +591,8 @@ Values:
 - `FAILED`
 - `RUNNING`
 
+<a id="routestatetype"></a>
+
 ## RouteStateType
 
 ```python
@@ -521,6 +603,8 @@ Values:
 
 - `ACTIVE`
 - `BLACKHOLE`
+
+<a id="routetabletypetype"></a>
 
 ## RouteTableTypeType
 
@@ -533,6 +617,8 @@ Values:
 - `CORE_NETWORK_SEGMENT`
 - `TRANSIT_GATEWAY_ROUTE_TABLE`
 
+<a id="routetypetype"></a>
+
 ## RouteTypeType
 
 ```python
@@ -543,6 +629,8 @@ Values:
 
 - `PROPAGATED`
 - `STATIC`
+
+<a id="sitestatetype"></a>
 
 ## SiteStateType
 
@@ -557,6 +645,8 @@ Values:
 - `PENDING`
 - `UPDATING`
 
+<a id="transitgatewayconnectpeerassociationstatetype"></a>
+
 ## TransitGatewayConnectPeerAssociationStateType
 
 ```python
@@ -569,6 +659,8 @@ Values:
 - `DELETED`
 - `DELETING`
 - `PENDING`
+
+<a id="transitgatewayregistrationstatetype"></a>
 
 ## TransitGatewayRegistrationStateType
 
@@ -584,6 +676,8 @@ Values:
 - `FAILED`
 - `PENDING`
 
+<a id="tunnelprotocoltype"></a>
+
 ## TunnelProtocolType
 
 ```python
@@ -593,6 +687,8 @@ from mypy_boto3_networkmanager.literals import TunnelProtocolType
 Values:
 
 - `GRE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -901,6 +997,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-migrationhubstrategyrecommendations-module"></a>
+
 # Literals for boto3 MigrationHubStrategyRecommendations module
 
 > [Index](..) > [MigrationHubStrategyRecommendations](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
 type annotations stubs module
-[mypy_boto3_migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
+[mypy-boto3-migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
 
 - [Literals for boto3 MigrationHubStrategyRecommendations module](#literals-for-boto3-migrationhubstrategyrecommendations-module)
   - [AntipatternReportStatusType](#antipatternreportstatustype)
@@ -47,6 +49,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="antipatternreportstatustype"></a>
+
 ## AntipatternReportStatusType
 
 ```python
@@ -58,6 +62,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `SUCCESS`
+
+<a id="apptypetype"></a>
 
 ## AppTypeType
 
@@ -74,6 +80,8 @@ Values:
 - `Other`
 - `SQLServer`
 
+<a id="applicationcomponentcriteriatype"></a>
+
 ## ApplicationComponentCriteriaType
 
 ```python
@@ -89,6 +97,8 @@ Values:
 - `SERVER_ID`
 - `STRATEGY`
 
+<a id="assessmentstatustype"></a>
+
 ## AssessmentStatusType
 
 ```python
@@ -102,6 +112,8 @@ Values:
 - `IN_PROGRESS`
 - `STOPPED`
 
+<a id="awsmanagedtargetdestinationtype"></a>
+
 ## AwsManagedTargetDestinationType
 
 ```python
@@ -114,6 +126,8 @@ Values:
 - `AWS Fargate`
 - `None specified`
 
+<a id="collectorhealthtype"></a>
+
 ## CollectorHealthType
 
 ```python
@@ -125,6 +139,8 @@ Values:
 - `COLLECTOR_HEALTHY`
 - `COLLECTOR_UNHEALTHY`
 
+<a id="datasourcetypetype"></a>
+
 ## DataSourceTypeType
 
 ```python
@@ -135,6 +151,8 @@ Values:
 
 - `ApplicationDiscoveryService`
 - `MPA`
+
+<a id="databasemanagementpreferencetype"></a>
 
 ## DatabaseManagementPreferenceType
 
@@ -148,6 +166,8 @@ Values:
 - `No preference`
 - `Self-manage`
 
+<a id="getserverdetailspaginatorname"></a>
+
 ## GetServerDetailsPaginatorName
 
 ```python
@@ -158,6 +178,8 @@ Values:
 
 - `get_server_details`
 
+<a id="groupnametype"></a>
+
 ## GroupNameType
 
 ```python
@@ -167,6 +189,8 @@ from mypy_boto3_migrationhubstrategy.literals import GroupNameType
 Values:
 
 - `ExternalId`
+
+<a id="heterogeneoustargetdatabaseenginetype"></a>
 
 ## HeterogeneousTargetDatabaseEngineType
 
@@ -187,6 +211,8 @@ Values:
 - `Oracle Database`
 - `SAP`
 
+<a id="homogeneoustargetdatabaseenginetype"></a>
+
 ## HomogeneousTargetDatabaseEngineType
 
 ```python
@@ -196,6 +222,8 @@ from mypy_boto3_migrationhubstrategy.literals import HomogeneousTargetDatabaseEn
 Values:
 
 - `None specified`
+
+<a id="importfiletaskstatustype"></a>
 
 ## ImportFileTaskStatusType
 
@@ -214,6 +242,8 @@ Values:
 - `ImportPartialSuccess`
 - `ImportSuccess`
 
+<a id="inclusionstatustype"></a>
+
 ## InclusionStatusType
 
 ```python
@@ -225,6 +255,8 @@ Values:
 - `excludeFromAssessment`
 - `includeInAssessment`
 
+<a id="listapplicationcomponentspaginatorname"></a>
+
 ## ListApplicationComponentsPaginatorName
 
 ```python
@@ -234,6 +266,8 @@ from mypy_boto3_migrationhubstrategy.literals import ListApplicationComponentsPa
 Values:
 
 - `list_application_components`
+
+<a id="listcollectorspaginatorname"></a>
 
 ## ListCollectorsPaginatorName
 
@@ -245,6 +279,8 @@ Values:
 
 - `list_collectors`
 
+<a id="listimportfiletaskpaginatorname"></a>
+
 ## ListImportFileTaskPaginatorName
 
 ```python
@@ -255,6 +291,8 @@ Values:
 
 - `list_import_file_task`
 
+<a id="listserverspaginatorname"></a>
+
 ## ListServersPaginatorName
 
 ```python
@@ -264,6 +302,8 @@ from mypy_boto3_migrationhubstrategy.literals import ListServersPaginatorName
 Values:
 
 - `list_servers`
+
+<a id="nopreferencetargetdestinationtype"></a>
 
 ## NoPreferenceTargetDestinationType
 
@@ -280,6 +320,8 @@ Values:
 - `AWS Fargate`
 - `None specified`
 
+<a id="ostypetype"></a>
+
 ## OSTypeType
 
 ```python
@@ -291,6 +333,8 @@ Values:
 - `LINUX`
 - `WINDOWS`
 
+<a id="outputformattype"></a>
+
 ## OutputFormatType
 
 ```python
@@ -301,6 +345,8 @@ Values:
 
 - `Excel`
 - `Json`
+
+<a id="recommendationreportstatustype"></a>
 
 ## RecommendationReportStatusType
 
@@ -314,6 +360,8 @@ Values:
 - `IN_PROGRESS`
 - `SUCCESS`
 
+<a id="resourcesubtypetype"></a>
+
 ## ResourceSubTypeType
 
 ```python
@@ -325,6 +373,8 @@ Values:
 - `Database`
 - `DatabaseProcess`
 - `Process`
+
+<a id="runtimeassessmentstatustype"></a>
 
 ## RunTimeAssessmentStatusType
 
@@ -342,6 +392,8 @@ Values:
 - `dataCollectionTaskSuccess`
 - `dataCollectionTaskToBeScheduled`
 
+<a id="selfmanagetargetdestinationtype"></a>
+
 ## SelfManageTargetDestinationType
 
 ```python
@@ -354,6 +406,8 @@ Values:
 - `Amazon Elastic Container Service (ECS)`
 - `Amazon Elastic Kubernetes Service (EKS)`
 - `None specified`
+
+<a id="servercriteriatype"></a>
 
 ## ServerCriteriaType
 
@@ -369,6 +423,8 @@ Values:
 - `SERVER_ID`
 - `STRATEGY`
 
+<a id="serverostypetype"></a>
+
 ## ServerOsTypeType
 
 ```python
@@ -383,6 +439,8 @@ Values:
 - `Redhat`
 - `WindowsServer`
 
+<a id="severitytype"></a>
+
 ## SeverityType
 
 ```python
@@ -395,6 +453,8 @@ Values:
 - `LOW`
 - `MEDIUM`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -405,6 +465,8 @@ Values:
 
 - `ASC`
 - `DESC`
+
+<a id="srccodeordbanalysisstatustype"></a>
 
 ## SrcCodeOrDbAnalysisStatusType
 
@@ -419,6 +481,8 @@ Values:
 - `ANALYSIS_SUCCESS`
 - `ANALYSIS_TO_BE_SCHEDULED`
 
+<a id="strategyrecommendationtype"></a>
+
 ## StrategyRecommendationType
 
 ```python
@@ -430,6 +494,8 @@ Values:
 - `notRecommended`
 - `recommended`
 - `viableOption`
+
+<a id="strategytype"></a>
 
 ## StrategyType
 
@@ -446,6 +512,8 @@ Values:
 - `Repurchase`
 - `Retain`
 - `Retirement`
+
+<a id="targetdatabaseenginetype"></a>
 
 ## TargetDatabaseEngineType
 
@@ -465,6 +533,8 @@ Values:
 - `None specified`
 - `Oracle Database`
 - `SAP`
+
+<a id="targetdestinationtype"></a>
 
 ## TargetDestinationType
 
@@ -488,6 +558,8 @@ Values:
 - `AWS Fargate`
 - `None specified`
 
+<a id="transformationtoolnametype"></a>
+
 ## TransformationToolNameType
 
 ```python
@@ -507,6 +579,8 @@ Values:
 - `Strategy Recommendation Support`
 - `Windows Web Application Migration Assistant`
 
+<a id="versioncontroltype"></a>
+
 ## VersionControlType
 
 ```python
@@ -517,6 +591,8 @@ Values:
 
 - `GITHUB`
 - `GITHUB_ENTERPRISE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -825,6 +901,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

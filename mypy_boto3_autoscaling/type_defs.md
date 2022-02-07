@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-autoscaling-module"></a>
+
 # Typed dictionaries for boto3 AutoScaling module
 
 > [Index](..) > [AutoScaling](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module
-[mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
+[mypy-boto3-autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 - [Typed dictionaries for boto3 AutoScaling module](#typed-dictionaries-for-boto3-autoscaling-module)
   - [AcceleratorCountRequestTypeDef](#acceleratorcountrequesttypedef)
@@ -161,6 +163,8 @@ type annotations stubs module
   - [VCpuCountRequestTypeDef](#vcpucountrequesttypedef)
   - [WarmPoolConfigurationTypeDef](#warmpoolconfigurationtypedef)
 
+<a id="acceleratorcountrequesttypedef"></a>
+
 ## AcceleratorCountRequestTypeDef
 
 ```python
@@ -172,6 +176,8 @@ Optional fields:
 - `Min`: `int`
 - `Max`: `int`
 
+<a id="acceleratortotalmemorymibrequesttypedef"></a>
+
 ## AcceleratorTotalMemoryMiBRequestTypeDef
 
 ```python
@@ -182,6 +188,8 @@ Optional fields:
 
 - `Min`: `int`
 - `Max`: `int`
+
+<a id="activitiestypetypedef"></a>
 
 ## ActivitiesTypeTypeDef
 
@@ -195,6 +203,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="activitytypedef"></a>
 
 ## ActivityTypeDef
 
@@ -221,6 +231,8 @@ Optional fields:
 - `AutoScalingGroupState`: `str`
 - `AutoScalingGroupARN`: `str`
 
+<a id="activitytypetypedef"></a>
+
 ## ActivityTypeTypeDef
 
 ```python
@@ -233,6 +245,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="adjustmenttypetypedef"></a>
+
 ## AdjustmentTypeTypeDef
 
 ```python
@@ -242,6 +256,8 @@ from mypy_boto3_autoscaling.type_defs import AdjustmentTypeTypeDef
 Optional fields:
 
 - `AdjustmentType`: `str`
+
+<a id="alarmtypedef"></a>
 
 ## AlarmTypeDef
 
@@ -253,6 +269,8 @@ Optional fields:
 
 - `AlarmName`: `str`
 - `AlarmARN`: `str`
+
+<a id="attachinstancesqueryrequesttypedef"></a>
 
 ## AttachInstancesQueryRequestTypeDef
 
@@ -268,6 +286,8 @@ Optional fields:
 
 - `InstanceIds`: `Sequence`\[`str`\]
 
+<a id="attachloadbalancertargetgroupstyperequesttypedef"></a>
+
 ## AttachLoadBalancerTargetGroupsTypeRequestTypeDef
 
 ```python
@@ -279,6 +299,8 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `TargetGroupARNs`: `Sequence`\[`str`\]
 
+<a id="attachloadbalancerstyperequesttypedef"></a>
+
 ## AttachLoadBalancersTypeRequestTypeDef
 
 ```python
@@ -289,6 +311,8 @@ Required fields:
 
 - `AutoScalingGroupName`: `str`
 - `LoadBalancerNames`: `Sequence`\[`str`\]
+
+<a id="autoscalinggroupnamestyperequesttypedef"></a>
 
 ## AutoScalingGroupNamesTypeRequestTypeDef
 
@@ -302,6 +326,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="autoscalinggrouptypedef"></a>
 
 ## AutoScalingGroupTypeDef
 
@@ -353,6 +379,8 @@ Optional fields:
 - `Context`: `str`
 - `DesiredCapacityType`: `str`
 
+<a id="autoscalinggroupstypetypedef"></a>
+
 ## AutoScalingGroupsTypeTypeDef
 
 ```python
@@ -366,6 +394,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="autoscalinginstancedetailstypedef"></a>
 
 ## AutoScalingInstanceDetailsTypeDef
 
@@ -390,6 +420,8 @@ Optional fields:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `WeightedCapacity`: `str`
 
+<a id="autoscalinginstancestypetypedef"></a>
+
 ## AutoScalingInstancesTypeTypeDef
 
 ```python
@@ -404,6 +436,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="baselineebsbandwidthmbpsrequesttypedef"></a>
+
 ## BaselineEbsBandwidthMbpsRequestTypeDef
 
 ```python
@@ -414,6 +448,8 @@ Optional fields:
 
 - `Min`: `int`
 - `Max`: `int`
+
+<a id="batchdeletescheduledactionanswertypedef"></a>
 
 ## BatchDeleteScheduledActionAnswerTypeDef
 
@@ -428,6 +464,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdeletescheduledactiontyperequesttypedef"></a>
+
 ## BatchDeleteScheduledActionTypeRequestTypeDef
 
 ```python
@@ -438,6 +476,8 @@ Required fields:
 
 - `AutoScalingGroupName`: `str`
 - `ScheduledActionNames`: `Sequence`\[`str`\]
+
+<a id="batchputscheduledupdategroupactionanswertypedef"></a>
 
 ## BatchPutScheduledUpdateGroupActionAnswerTypeDef
 
@@ -452,6 +492,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchputscheduledupdategroupactiontyperequesttypedef"></a>
+
 ## BatchPutScheduledUpdateGroupActionTypeRequestTypeDef
 
 ```python
@@ -463,6 +505,8 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `ScheduledUpdateGroupActions`:
   `Sequence`\[[ScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#scheduledupdategroupactionrequesttypedef)\]
+
+<a id="blockdevicemappingtypedef"></a>
 
 ## BlockDeviceMappingTypeDef
 
@@ -480,6 +524,8 @@ Optional fields:
 - `Ebs`: [EbsTypeDef](./type_defs.md#ebstypedef)
 - `NoDevice`: `bool`
 
+<a id="cancelinstancerefreshanswertypedef"></a>
+
 ## CancelInstanceRefreshAnswerTypeDef
 
 ```python
@@ -492,6 +538,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cancelinstancerefreshtyperequesttypedef"></a>
+
 ## CancelInstanceRefreshTypeRequestTypeDef
 
 ```python
@@ -501,6 +549,8 @@ from mypy_boto3_autoscaling.type_defs import CancelInstanceRefreshTypeRequestTyp
 Required fields:
 
 - `AutoScalingGroupName`: `str`
+
+<a id="capacityforecasttypedef"></a>
 
 ## CapacityForecastTypeDef
 
@@ -512,6 +562,8 @@ Required fields:
 
 - `Timestamps`: `List`\[`datetime`\]
 - `Values`: `List`\[`float`\]
+
+<a id="completelifecycleactiontyperequesttypedef"></a>
 
 ## CompleteLifecycleActionTypeRequestTypeDef
 
@@ -529,6 +581,8 @@ Optional fields:
 
 - `LifecycleActionToken`: `str`
 - `InstanceId`: `str`
+
+<a id="createautoscalinggrouptyperequesttypedef"></a>
 
 ## CreateAutoScalingGroupTypeRequestTypeDef
 
@@ -570,6 +624,8 @@ Optional fields:
 - `Context`: `str`
 - `DesiredCapacityType`: `str`
 
+<a id="createlaunchconfigurationtyperequesttypedef"></a>
+
 ## CreateLaunchConfigurationTypeRequestTypeDef
 
 ```python
@@ -604,6 +660,8 @@ Optional fields:
 - `MetadataOptions`:
   [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 
+<a id="createorupdatetagstyperequesttypedef"></a>
+
 ## CreateOrUpdateTagsTypeRequestTypeDef
 
 ```python
@@ -613,6 +671,8 @@ from mypy_boto3_autoscaling.type_defs import CreateOrUpdateTagsTypeRequestTypeDe
 Required fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="customizedmetricspecificationtypedef"></a>
 
 ## CustomizedMetricSpecificationTypeDef
 
@@ -632,6 +692,8 @@ Optional fields:
   `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 - `Unit`: `str`
 
+<a id="deleteautoscalinggrouptyperequesttypedef"></a>
+
 ## DeleteAutoScalingGroupTypeRequestTypeDef
 
 ```python
@@ -646,6 +708,8 @@ Optional fields:
 
 - `ForceDelete`: `bool`
 
+<a id="deletelifecyclehooktyperequesttypedef"></a>
+
 ## DeleteLifecycleHookTypeRequestTypeDef
 
 ```python
@@ -657,6 +721,8 @@ Required fields:
 - `LifecycleHookName`: `str`
 - `AutoScalingGroupName`: `str`
 
+<a id="deletenotificationconfigurationtyperequesttypedef"></a>
+
 ## DeleteNotificationConfigurationTypeRequestTypeDef
 
 ```python
@@ -667,6 +733,8 @@ Required fields:
 
 - `AutoScalingGroupName`: `str`
 - `TopicARN`: `str`
+
+<a id="deletepolicytyperequesttypedef"></a>
 
 ## DeletePolicyTypeRequestTypeDef
 
@@ -682,6 +750,8 @@ Optional fields:
 
 - `AutoScalingGroupName`: `str`
 
+<a id="deletescheduledactiontyperequesttypedef"></a>
+
 ## DeleteScheduledActionTypeRequestTypeDef
 
 ```python
@@ -693,6 +763,8 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `ScheduledActionName`: `str`
 
+<a id="deletetagstyperequesttypedef"></a>
+
 ## DeleteTagsTypeRequestTypeDef
 
 ```python
@@ -702,6 +774,8 @@ from mypy_boto3_autoscaling.type_defs import DeleteTagsTypeRequestTypeDef
 Required fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="deletewarmpooltyperequesttypedef"></a>
 
 ## DeleteWarmPoolTypeRequestTypeDef
 
@@ -716,6 +790,8 @@ Required fields:
 Optional fields:
 
 - `ForceDelete`: `bool`
+
+<a id="describeaccountlimitsanswertypedef"></a>
 
 ## DescribeAccountLimitsAnswerTypeDef
 
@@ -732,6 +808,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeadjustmenttypesanswertypedef"></a>
+
 ## DescribeAdjustmentTypesAnswerTypeDef
 
 ```python
@@ -745,6 +823,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeautoscalinginstancestyperequesttypedef"></a>
+
 ## DescribeAutoScalingInstancesTypeRequestTypeDef
 
 ```python
@@ -757,6 +837,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
+<a id="describeautoscalingnotificationtypesanswertypedef"></a>
+
 ## DescribeAutoScalingNotificationTypesAnswerTypeDef
 
 ```python
@@ -768,6 +850,8 @@ Required fields:
 - `AutoScalingNotificationTypes`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeinstancerefreshesanswertypedef"></a>
 
 ## DescribeInstanceRefreshesAnswerTypeDef
 
@@ -782,6 +866,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeinstancerefreshestyperequesttypedef"></a>
 
 ## DescribeInstanceRefreshesTypeRequestTypeDef
 
@@ -799,6 +885,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
+<a id="describelifecyclehooktypesanswertypedef"></a>
+
 ## DescribeLifecycleHookTypesAnswerTypeDef
 
 ```python
@@ -810,6 +898,8 @@ Required fields:
 - `LifecycleHookTypes`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describelifecyclehooksanswertypedef"></a>
 
 ## DescribeLifecycleHooksAnswerTypeDef
 
@@ -824,6 +914,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelifecyclehookstyperequesttypedef"></a>
+
 ## DescribeLifecycleHooksTypeRequestTypeDef
 
 ```python
@@ -837,6 +929,8 @@ Required fields:
 Optional fields:
 
 - `LifecycleHookNames`: `Sequence`\[`str`\]
+
+<a id="describeloadbalancertargetgroupsrequestrequesttypedef"></a>
 
 ## DescribeLoadBalancerTargetGroupsRequestRequestTypeDef
 
@@ -853,6 +947,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
+<a id="describeloadbalancertargetgroupsresponsetypedef"></a>
+
 ## DescribeLoadBalancerTargetGroupsResponseTypeDef
 
 ```python
@@ -866,6 +962,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeloadbalancersrequestrequesttypedef"></a>
 
 ## DescribeLoadBalancersRequestRequestTypeDef
 
@@ -882,6 +980,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
+<a id="describeloadbalancersresponsetypedef"></a>
+
 ## DescribeLoadBalancersResponseTypeDef
 
 ```python
@@ -895,6 +995,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemetriccollectiontypesanswertypedef"></a>
 
 ## DescribeMetricCollectionTypesAnswerTypeDef
 
@@ -911,6 +1013,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describenotificationconfigurationsanswertypedef"></a>
+
 ## DescribeNotificationConfigurationsAnswerTypeDef
 
 ```python
@@ -925,6 +1029,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describenotificationconfigurationstyperequesttypedef"></a>
+
 ## DescribeNotificationConfigurationsTypeRequestTypeDef
 
 ```python
@@ -936,6 +1042,8 @@ Optional fields:
 - `AutoScalingGroupNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
+
+<a id="describepoliciestyperequesttypedef"></a>
 
 ## DescribePoliciesTypeRequestTypeDef
 
@@ -951,6 +1059,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
+<a id="describescalingactivitiestyperequesttypedef"></a>
+
 ## DescribeScalingActivitiesTypeRequestTypeDef
 
 ```python
@@ -964,6 +1074,8 @@ Optional fields:
 - `IncludeDeletedGroups`: `bool`
 - `MaxRecords`: `int`
 - `NextToken`: `str`
+
+<a id="describescheduledactionstyperequesttypedef"></a>
 
 ## DescribeScheduledActionsTypeRequestTypeDef
 
@@ -980,6 +1092,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
+<a id="describetagstyperequesttypedef"></a>
+
 ## DescribeTagsTypeRequestTypeDef
 
 ```python
@@ -992,6 +1106,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
+<a id="describeterminationpolicytypesanswertypedef"></a>
+
 ## DescribeTerminationPolicyTypesAnswerTypeDef
 
 ```python
@@ -1003,6 +1119,8 @@ Required fields:
 - `TerminationPolicyTypes`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describewarmpoolanswertypedef"></a>
 
 ## DescribeWarmPoolAnswerTypeDef
 
@@ -1019,6 +1137,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describewarmpooltyperequesttypedef"></a>
+
 ## DescribeWarmPoolTypeRequestTypeDef
 
 ```python
@@ -1034,6 +1154,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
+<a id="desiredconfigurationtypedef"></a>
+
 ## DesiredConfigurationTypeDef
 
 ```python
@@ -1047,6 +1169,8 @@ Optional fields:
 - `MixedInstancesPolicy`:
   [MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef)
 
+<a id="detachinstancesanswertypedef"></a>
+
 ## DetachInstancesAnswerTypeDef
 
 ```python
@@ -1058,6 +1182,8 @@ Required fields:
 - `Activities`: `List`\[[ActivityTypeDef](./type_defs.md#activitytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="detachinstancesqueryrequesttypedef"></a>
 
 ## DetachInstancesQueryRequestTypeDef
 
@@ -1074,6 +1200,8 @@ Optional fields:
 
 - `InstanceIds`: `Sequence`\[`str`\]
 
+<a id="detachloadbalancertargetgroupstyperequesttypedef"></a>
+
 ## DetachLoadBalancerTargetGroupsTypeRequestTypeDef
 
 ```python
@@ -1085,6 +1213,8 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `TargetGroupARNs`: `Sequence`\[`str`\]
 
+<a id="detachloadbalancerstyperequesttypedef"></a>
+
 ## DetachLoadBalancersTypeRequestTypeDef
 
 ```python
@@ -1095,6 +1225,8 @@ Required fields:
 
 - `AutoScalingGroupName`: `str`
 - `LoadBalancerNames`: `Sequence`\[`str`\]
+
+<a id="disablemetricscollectionqueryrequesttypedef"></a>
 
 ## DisableMetricsCollectionQueryRequestTypeDef
 
@@ -1109,6 +1241,8 @@ Required fields:
 Optional fields:
 
 - `Metrics`: `Sequence`\[`str`\]
+
+<a id="ebstypedef"></a>
 
 ## EbsTypeDef
 
@@ -1126,6 +1260,8 @@ Optional fields:
 - `Encrypted`: `bool`
 - `Throughput`: `int`
 
+<a id="enablemetricscollectionqueryrequesttypedef"></a>
+
 ## EnableMetricsCollectionQueryRequestTypeDef
 
 ```python
@@ -1141,6 +1277,8 @@ Optional fields:
 
 - `Metrics`: `Sequence`\[`str`\]
 
+<a id="enabledmetrictypedef"></a>
+
 ## EnabledMetricTypeDef
 
 ```python
@@ -1151,6 +1289,8 @@ Optional fields:
 
 - `Metric`: `str`
 - `Granularity`: `str`
+
+<a id="enterstandbyanswertypedef"></a>
 
 ## EnterStandbyAnswerTypeDef
 
@@ -1163,6 +1303,8 @@ Required fields:
 - `Activities`: `List`\[[ActivityTypeDef](./type_defs.md#activitytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="enterstandbyqueryrequesttypedef"></a>
 
 ## EnterStandbyQueryRequestTypeDef
 
@@ -1178,6 +1320,8 @@ Required fields:
 Optional fields:
 
 - `InstanceIds`: `Sequence`\[`str`\]
+
+<a id="executepolicytyperequesttypedef"></a>
 
 ## ExecutePolicyTypeRequestTypeDef
 
@@ -1196,6 +1340,8 @@ Optional fields:
 - `MetricValue`: `float`
 - `BreachThreshold`: `float`
 
+<a id="exitstandbyanswertypedef"></a>
+
 ## ExitStandbyAnswerTypeDef
 
 ```python
@@ -1207,6 +1353,8 @@ Required fields:
 - `Activities`: `List`\[[ActivityTypeDef](./type_defs.md#activitytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="exitstandbyqueryrequesttypedef"></a>
 
 ## ExitStandbyQueryRequestTypeDef
 
@@ -1221,6 +1369,8 @@ Required fields:
 Optional fields:
 
 - `InstanceIds`: `Sequence`\[`str`\]
+
+<a id="failedscheduledupdategroupactionrequesttypedef"></a>
 
 ## FailedScheduledUpdateGroupActionRequestTypeDef
 
@@ -1237,6 +1387,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -1247,6 +1399,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="getpredictivescalingforecastanswertypedef"></a>
 
 ## GetPredictiveScalingForecastAnswerTypeDef
 
@@ -1264,6 +1418,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpredictivescalingforecasttyperequesttypedef"></a>
+
 ## GetPredictiveScalingForecastTypeRequestTypeDef
 
 ```python
@@ -1276,6 +1432,8 @@ Required fields:
 - `PolicyName`: `str`
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
+
+<a id="instancemetadataoptionstypedef"></a>
 
 ## InstanceMetadataOptionsTypeDef
 
@@ -1291,6 +1449,8 @@ Optional fields:
 - `HttpEndpoint`:
   [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 
+<a id="instancemonitoringtypedef"></a>
+
 ## InstanceMonitoringTypeDef
 
 ```python
@@ -1300,6 +1460,8 @@ from mypy_boto3_autoscaling.type_defs import InstanceMonitoringTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
+
+<a id="instancerefreshlivepoolprogresstypedef"></a>
 
 ## InstanceRefreshLivePoolProgressTypeDef
 
@@ -1311,6 +1473,8 @@ Optional fields:
 
 - `PercentageComplete`: `int`
 - `InstancesToUpdate`: `int`
+
+<a id="instancerefreshprogressdetailstypedef"></a>
 
 ## InstanceRefreshProgressDetailsTypeDef
 
@@ -1324,6 +1488,8 @@ Optional fields:
   [InstanceRefreshLivePoolProgressTypeDef](./type_defs.md#instancerefreshlivepoolprogresstypedef)
 - `WarmPoolProgress`:
   [InstanceRefreshWarmPoolProgressTypeDef](./type_defs.md#instancerefreshwarmpoolprogresstypedef)
+
+<a id="instancerefreshtypedef"></a>
 
 ## InstanceRefreshTypeDef
 
@@ -1349,6 +1515,8 @@ Optional fields:
 - `DesiredConfiguration`:
   [DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef)
 
+<a id="instancerefreshwarmpoolprogresstypedef"></a>
+
 ## InstanceRefreshWarmPoolProgressTypeDef
 
 ```python
@@ -1359,6 +1527,8 @@ Optional fields:
 
 - `PercentageComplete`: `int`
 - `InstancesToUpdate`: `int`
+
+<a id="instancerequirementstypedef"></a>
 
 ## InstanceRequirementsTypeDef
 
@@ -1408,6 +1578,8 @@ Optional fields:
 - `AcceleratorTotalMemoryMiB`:
   [AcceleratorTotalMemoryMiBRequestTypeDef](./type_defs.md#acceleratortotalmemorymibrequesttypedef)
 
+<a id="instancetypedef"></a>
+
 ## InstanceTypeDef
 
 ```python
@@ -1430,6 +1602,8 @@ Optional fields:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `WeightedCapacity`: `str`
 
+<a id="instancesdistributiontypedef"></a>
+
 ## InstancesDistributionTypeDef
 
 ```python
@@ -1445,6 +1619,8 @@ Optional fields:
 - `SpotInstancePools`: `int`
 - `SpotMaxPrice`: `str`
 
+<a id="launchconfigurationnametyperequesttypedef"></a>
+
 ## LaunchConfigurationNameTypeRequestTypeDef
 
 ```python
@@ -1454,6 +1630,8 @@ from mypy_boto3_autoscaling.type_defs import LaunchConfigurationNameTypeRequestT
 Required fields:
 
 - `LaunchConfigurationName`: `str`
+
+<a id="launchconfigurationnamestyperequesttypedef"></a>
 
 ## LaunchConfigurationNamesTypeRequestTypeDef
 
@@ -1466,6 +1644,8 @@ Optional fields:
 - `LaunchConfigurationNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
+
+<a id="launchconfigurationtypedef"></a>
 
 ## LaunchConfigurationTypeDef
 
@@ -1502,6 +1682,8 @@ Optional fields:
 - `MetadataOptions`:
   [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 
+<a id="launchconfigurationstypetypedef"></a>
+
 ## LaunchConfigurationsTypeTypeDef
 
 ```python
@@ -1515,6 +1697,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="launchtemplateoverridestypedef"></a>
 
 ## LaunchTemplateOverridesTypeDef
 
@@ -1531,6 +1715,8 @@ Optional fields:
 - `InstanceRequirements`:
   [InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef)
 
+<a id="launchtemplatespecificationtypedef"></a>
+
 ## LaunchTemplateSpecificationTypeDef
 
 ```python
@@ -1542,6 +1728,8 @@ Optional fields:
 - `LaunchTemplateId`: `str`
 - `LaunchTemplateName`: `str`
 - `Version`: `str`
+
+<a id="launchtemplatetypedef"></a>
 
 ## LaunchTemplateTypeDef
 
@@ -1555,6 +1743,8 @@ Optional fields:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `Overrides`:
   `Sequence`\[[LaunchTemplateOverridesTypeDef](./type_defs.md#launchtemplateoverridestypedef)\]
+
+<a id="lifecyclehookspecificationtypedef"></a>
 
 ## LifecycleHookSpecificationTypeDef
 
@@ -1575,6 +1765,8 @@ Optional fields:
 - `NotificationTargetARN`: `str`
 - `RoleARN`: `str`
 
+<a id="lifecyclehooktypedef"></a>
+
 ## LifecycleHookTypeDef
 
 ```python
@@ -1593,6 +1785,8 @@ Optional fields:
 - `GlobalTimeout`: `int`
 - `DefaultResult`: `str`
 
+<a id="loadbalancerstatetypedef"></a>
+
 ## LoadBalancerStateTypeDef
 
 ```python
@@ -1604,6 +1798,8 @@ Optional fields:
 - `LoadBalancerName`: `str`
 - `State`: `str`
 
+<a id="loadbalancertargetgroupstatetypedef"></a>
+
 ## LoadBalancerTargetGroupStateTypeDef
 
 ```python
@@ -1614,6 +1810,8 @@ Optional fields:
 
 - `LoadBalancerTargetGroupARN`: `str`
 - `State`: `str`
+
+<a id="loadforecasttypedef"></a>
 
 ## LoadForecastTypeDef
 
@@ -1628,6 +1826,8 @@ Required fields:
 - `MetricSpecification`:
   [PredictiveScalingMetricSpecificationTypeDef](./type_defs.md#predictivescalingmetricspecificationtypedef)
 
+<a id="memorygibpervcpurequesttypedef"></a>
+
 ## MemoryGiBPerVCpuRequestTypeDef
 
 ```python
@@ -1638,6 +1838,8 @@ Optional fields:
 
 - `Min`: `float`
 - `Max`: `float`
+
+<a id="memorymibrequesttypedef"></a>
 
 ## MemoryMiBRequestTypeDef
 
@@ -1653,6 +1855,8 @@ Optional fields:
 
 - `Max`: `int`
 
+<a id="metriccollectiontypetypedef"></a>
+
 ## MetricCollectionTypeTypeDef
 
 ```python
@@ -1662,6 +1866,8 @@ from mypy_boto3_autoscaling.type_defs import MetricCollectionTypeTypeDef
 Optional fields:
 
 - `Metric`: `str`
+
+<a id="metricdataquerytypedef"></a>
 
 ## MetricDataQueryTypeDef
 
@@ -1680,6 +1886,8 @@ Optional fields:
 - `Label`: `str`
 - `ReturnData`: `bool`
 
+<a id="metricdimensiontypedef"></a>
+
 ## MetricDimensionTypeDef
 
 ```python
@@ -1691,6 +1899,8 @@ Required fields:
 - `Name`: `str`
 - `Value`: `str`
 
+<a id="metricgranularitytypetypedef"></a>
+
 ## MetricGranularityTypeTypeDef
 
 ```python
@@ -1700,6 +1910,8 @@ from mypy_boto3_autoscaling.type_defs import MetricGranularityTypeTypeDef
 Optional fields:
 
 - `Granularity`: `str`
+
+<a id="metricstattypedef"></a>
 
 ## MetricStatTypeDef
 
@@ -1715,6 +1927,8 @@ Required fields:
 Optional fields:
 
 - `Unit`: `str`
+
+<a id="metrictypedef"></a>
 
 ## MetricTypeDef
 
@@ -1732,6 +1946,8 @@ Optional fields:
 - `Dimensions`:
   `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 
+<a id="mixedinstancespolicytypedef"></a>
+
 ## MixedInstancesPolicyTypeDef
 
 ```python
@@ -1745,6 +1961,8 @@ Optional fields:
 - `InstancesDistribution`:
   [InstancesDistributionTypeDef](./type_defs.md#instancesdistributiontypedef)
 
+<a id="networkinterfacecountrequesttypedef"></a>
+
 ## NetworkInterfaceCountRequestTypeDef
 
 ```python
@@ -1755,6 +1973,8 @@ Optional fields:
 
 - `Min`: `int`
 - `Max`: `int`
+
+<a id="notificationconfigurationtypedef"></a>
 
 ## NotificationConfigurationTypeDef
 
@@ -1768,6 +1988,8 @@ Optional fields:
 - `TopicARN`: `str`
 - `NotificationType`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1779,6 +2001,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="policiestypetypedef"></a>
 
 ## PoliciesTypeTypeDef
 
@@ -1794,6 +2018,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="policyarntypetypedef"></a>
+
 ## PolicyARNTypeTypeDef
 
 ```python
@@ -1806,6 +2032,8 @@ Required fields:
 - `Alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="predefinedmetricspecificationtypedef"></a>
 
 ## PredefinedMetricSpecificationTypeDef
 
@@ -1820,6 +2048,8 @@ Required fields:
 Optional fields:
 
 - `ResourceLabel`: `str`
+
+<a id="predictivescalingconfigurationtypedef"></a>
 
 ## PredictiveScalingConfigurationTypeDef
 
@@ -1840,6 +2070,8 @@ Optional fields:
   [PredictiveScalingMaxCapacityBreachBehaviorType](./literals.md#predictivescalingmaxcapacitybreachbehaviortype)
 - `MaxCapacityBuffer`: `int`
 
+<a id="predictivescalingcustomizedcapacitymetrictypedef"></a>
+
 ## PredictiveScalingCustomizedCapacityMetricTypeDef
 
 ```python
@@ -1850,6 +2082,8 @@ Required fields:
 
 - `MetricDataQueries`:
   `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+
+<a id="predictivescalingcustomizedloadmetrictypedef"></a>
 
 ## PredictiveScalingCustomizedLoadMetricTypeDef
 
@@ -1862,6 +2096,8 @@ Required fields:
 - `MetricDataQueries`:
   `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
 
+<a id="predictivescalingcustomizedscalingmetrictypedef"></a>
+
 ## PredictiveScalingCustomizedScalingMetricTypeDef
 
 ```python
@@ -1872,6 +2108,8 @@ Required fields:
 
 - `MetricDataQueries`:
   `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+
+<a id="predictivescalingmetricspecificationtypedef"></a>
 
 ## PredictiveScalingMetricSpecificationTypeDef
 
@@ -1898,6 +2136,8 @@ Optional fields:
 - `CustomizedCapacityMetricSpecification`:
   [PredictiveScalingCustomizedCapacityMetricTypeDef](./type_defs.md#predictivescalingcustomizedcapacitymetrictypedef)
 
+<a id="predictivescalingpredefinedloadmetrictypedef"></a>
+
 ## PredictiveScalingPredefinedLoadMetricTypeDef
 
 ```python
@@ -1912,6 +2152,8 @@ Required fields:
 Optional fields:
 
 - `ResourceLabel`: `str`
+
+<a id="predictivescalingpredefinedmetricpairtypedef"></a>
 
 ## PredictiveScalingPredefinedMetricPairTypeDef
 
@@ -1928,6 +2170,8 @@ Optional fields:
 
 - `ResourceLabel`: `str`
 
+<a id="predictivescalingpredefinedscalingmetrictypedef"></a>
+
 ## PredictiveScalingPredefinedScalingMetricTypeDef
 
 ```python
@@ -1943,6 +2187,8 @@ Optional fields:
 
 - `ResourceLabel`: `str`
 
+<a id="processtypetypedef"></a>
+
 ## ProcessTypeTypeDef
 
 ```python
@@ -1952,6 +2198,8 @@ from mypy_boto3_autoscaling.type_defs import ProcessTypeTypeDef
 Required fields:
 
 - `ProcessName`: `str`
+
+<a id="processestypetypedef"></a>
 
 ## ProcessesTypeTypeDef
 
@@ -1965,6 +2213,8 @@ Required fields:
   `List`\[[ProcessTypeTypeDef](./type_defs.md#processtypetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putlifecyclehooktyperequesttypedef"></a>
 
 ## PutLifecycleHookTypeRequestTypeDef
 
@@ -1986,6 +2236,8 @@ Optional fields:
 - `HeartbeatTimeout`: `int`
 - `DefaultResult`: `str`
 
+<a id="putnotificationconfigurationtyperequesttypedef"></a>
+
 ## PutNotificationConfigurationTypeRequestTypeDef
 
 ```python
@@ -1997,6 +2249,8 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `TopicARN`: `str`
 - `NotificationTypes`: `Sequence`\[`str`\]
+
+<a id="putscalingpolicytyperequesttypedef"></a>
 
 ## PutScalingPolicyTypeRequestTypeDef
 
@@ -2027,6 +2281,8 @@ Optional fields:
 - `PredictiveScalingConfiguration`:
   [PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef)
 
+<a id="putscheduledupdategroupactiontyperequesttypedef"></a>
+
 ## PutScheduledUpdateGroupActionTypeRequestTypeDef
 
 ```python
@@ -2049,6 +2305,8 @@ Optional fields:
 - `DesiredCapacity`: `int`
 - `TimeZone`: `str`
 
+<a id="putwarmpooltyperequesttypedef"></a>
+
 ## PutWarmPoolTypeRequestTypeDef
 
 ```python
@@ -2064,6 +2322,8 @@ Optional fields:
 - `MaxGroupPreparedCapacity`: `int`
 - `MinSize`: `int`
 - `PoolState`: [WarmPoolStateType](./literals.md#warmpoolstatetype)
+
+<a id="recordlifecycleactionheartbeattyperequesttypedef"></a>
 
 ## RecordLifecycleActionHeartbeatTypeRequestTypeDef
 
@@ -2081,6 +2341,8 @@ Optional fields:
 - `LifecycleActionToken`: `str`
 - `InstanceId`: `str`
 
+<a id="refreshpreferencestypedef"></a>
+
 ## RefreshPreferencesTypeDef
 
 ```python
@@ -2095,6 +2357,8 @@ Optional fields:
 - `CheckpointDelay`: `int`
 - `SkipMatching`: `bool`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -2108,6 +2372,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="scalingpolicytypedef"></a>
 
 ## ScalingPolicyTypeDef
 
@@ -2137,6 +2403,8 @@ Optional fields:
 - `PredictiveScalingConfiguration`:
   [PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef)
 
+<a id="scalingprocessqueryrequesttypedef"></a>
+
 ## ScalingProcessQueryRequestTypeDef
 
 ```python
@@ -2151,6 +2419,8 @@ Optional fields:
 
 - `ScalingProcesses`: `Sequence`\[`str`\]
 
+<a id="scheduledactionstypetypedef"></a>
+
 ## ScheduledActionsTypeTypeDef
 
 ```python
@@ -2164,6 +2434,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="scheduledupdategroupactionrequesttypedef"></a>
 
 ## ScheduledUpdateGroupActionRequestTypeDef
 
@@ -2185,6 +2457,8 @@ Optional fields:
 - `DesiredCapacity`: `int`
 - `TimeZone`: `str`
 
+<a id="scheduledupdategroupactiontypedef"></a>
+
 ## ScheduledUpdateGroupActionTypeDef
 
 ```python
@@ -2205,6 +2479,8 @@ Optional fields:
 - `DesiredCapacity`: `int`
 - `TimeZone`: `str`
 
+<a id="setdesiredcapacitytyperequesttypedef"></a>
+
 ## SetDesiredCapacityTypeRequestTypeDef
 
 ```python
@@ -2219,6 +2495,8 @@ Required fields:
 Optional fields:
 
 - `HonorCooldown`: `bool`
+
+<a id="setinstancehealthqueryrequesttypedef"></a>
 
 ## SetInstanceHealthQueryRequestTypeDef
 
@@ -2235,6 +2513,8 @@ Optional fields:
 
 - `ShouldRespectGracePeriod`: `bool`
 
+<a id="setinstanceprotectionqueryrequesttypedef"></a>
+
 ## SetInstanceProtectionQueryRequestTypeDef
 
 ```python
@@ -2247,6 +2527,8 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `ProtectedFromScaleIn`: `bool`
 
+<a id="startinstancerefreshanswertypedef"></a>
+
 ## StartInstanceRefreshAnswerTypeDef
 
 ```python
@@ -2258,6 +2540,8 @@ Required fields:
 - `InstanceRefreshId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startinstancerefreshtyperequesttypedef"></a>
 
 ## StartInstanceRefreshTypeRequestTypeDef
 
@@ -2278,6 +2562,8 @@ Optional fields:
 - `Preferences`:
   [RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef)
 
+<a id="stepadjustmenttypedef"></a>
+
 ## StepAdjustmentTypeDef
 
 ```python
@@ -2293,6 +2579,8 @@ Optional fields:
 - `MetricIntervalLowerBound`: `float`
 - `MetricIntervalUpperBound`: `float`
 
+<a id="suspendedprocesstypedef"></a>
+
 ## SuspendedProcessTypeDef
 
 ```python
@@ -2303,6 +2591,8 @@ Optional fields:
 
 - `ProcessName`: `str`
 - `SuspensionReason`: `str`
+
+<a id="tagdescriptiontypedef"></a>
 
 ## TagDescriptionTypeDef
 
@@ -2317,6 +2607,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 - `PropagateAtLaunch`: `bool`
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -2335,6 +2627,8 @@ Optional fields:
 - `Value`: `str`
 - `PropagateAtLaunch`: `bool`
 
+<a id="tagstypetypedef"></a>
+
 ## TagsTypeTypeDef
 
 ```python
@@ -2348,6 +2642,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="targettrackingconfigurationtypedef"></a>
 
 ## TargetTrackingConfigurationTypeDef
 
@@ -2367,6 +2663,8 @@ Optional fields:
   [CustomizedMetricSpecificationTypeDef](./type_defs.md#customizedmetricspecificationtypedef)
 - `DisableScaleIn`: `bool`
 
+<a id="terminateinstanceinautoscalinggrouptyperequesttypedef"></a>
+
 ## TerminateInstanceInAutoScalingGroupTypeRequestTypeDef
 
 ```python
@@ -2378,6 +2676,8 @@ Required fields:
 - `InstanceId`: `str`
 - `ShouldDecrementDesiredCapacity`: `bool`
 
+<a id="totallocalstoragegbrequesttypedef"></a>
+
 ## TotalLocalStorageGBRequestTypeDef
 
 ```python
@@ -2388,6 +2688,8 @@ Optional fields:
 
 - `Min`: `float`
 - `Max`: `float`
+
+<a id="updateautoscalinggrouptyperequesttypedef"></a>
 
 ## UpdateAutoScalingGroupTypeRequestTypeDef
 
@@ -2423,6 +2725,8 @@ Optional fields:
 - `Context`: `str`
 - `DesiredCapacityType`: `str`
 
+<a id="vcpucountrequesttypedef"></a>
+
 ## VCpuCountRequestTypeDef
 
 ```python
@@ -2436,6 +2740,8 @@ Required fields:
 Optional fields:
 
 - `Max`: `int`
+
+<a id="warmpoolconfigurationtypedef"></a>
 
 ## WarmPoolConfigurationTypeDef
 

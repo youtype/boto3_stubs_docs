@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-servicecatalog-module"></a>
+
 # Type annotations for boto3 ServiceCatalog module
 
 > [Index](..) > ServiceCatalog
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
 type annotations stubs module
-[mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
+[mypy-boto3-servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[servicecatalog]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[servicecatalog]'
+
+# standalone installation
 pip install mypy-boto3-servicecatalog
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-servicecatalog
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="servicecatalogclient"></a>
+
 ## ServiceCatalogClient
 
 Type annotations for `boto3.client("servicecatalog")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_servicecatalog.client import ServiceCatalogClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -124,6 +138,8 @@ from mypy_boto3_servicecatalog.client import ServiceCatalogClient
 - [update_service_action](./client.md#update_service_action)
 - [update_tag_option](./client.md#update_tag_option)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ServiceCatalogClient [exceptions](./client.md#exceptions)
@@ -138,6 +154,8 @@ ServiceCatalogClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - TagOptionNotMigratedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -146,7 +164,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_servicecatalog.paginators import ListAcceptedPortfolioSharesPaginator, ...
+from mypy_boto3_servicecatalog.paginator import ListAcceptedPortfolioSharesPaginator, ...
 ```
 
 - [ListAcceptedPortfolioSharesPaginator](./paginators.md#listacceptedportfoliosharespaginator)
@@ -165,6 +183,8 @@ from mypy_boto3_servicecatalog.paginators import ListAcceptedPortfolioSharesPagi
 - [ListTagOptionsPaginator](./paginators.md#listtagoptionspaginator)
 - [ScanProvisionedProductsPaginator](./paginators.md#scanprovisionedproductspaginator)
 - [SearchProductsAsAdminPaginator](./paginators.md#searchproductsasadminpaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -228,6 +248,8 @@ from mypy_boto3_servicecatalog.literals import AccessLevelFilterKeyType, ...
 - [StatusType](./literals.md#statustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

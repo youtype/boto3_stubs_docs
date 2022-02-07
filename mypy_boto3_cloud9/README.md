@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cloud9-module"></a>
+
 # Type annotations for boto3 Cloud9 module
 
 > [Index](..) > Cloud9
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
 type annotations stubs module
-[mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+[mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[cloud9]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[cloud9]'
+
+# standalone installation
 pip install mypy-boto3-cloud9
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-cloud9
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="cloud9client"></a>
+
 ## Cloud9Client
 
 Type annotations for `boto3.client("cloud9")` as [Cloud9Client](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_cloud9.client import Cloud9Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -49,6 +63,8 @@ from mypy_boto3_cloud9.client import Cloud9Client
 - [update_environment](./client.md#update_environment)
 - [update_environment_membership](./client.md#update_environment_membership)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 Cloud9Client [exceptions](./client.md#exceptions)
@@ -63,6 +79,8 @@ Cloud9Client [exceptions](./client.md#exceptions)
 - NotFoundException
 - TooManyRequestsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -71,11 +89,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_cloud9.paginators import DescribeEnvironmentMembershipsPaginator, ...
+from mypy_boto3_cloud9.paginator import DescribeEnvironmentMembershipsPaginator, ...
 ```
 
 - [DescribeEnvironmentMembershipsPaginator](./paginators.md#describeenvironmentmembershipspaginator)
 - [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -99,6 +119,8 @@ from mypy_boto3_cloud9.literals import ConnectionTypeType, ...
 - [PermissionsType](./literals.md#permissionstype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

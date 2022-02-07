@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iotsitewise-module"></a>
+
 # Typed dictionaries for boto3 IoTSiteWise module
 
 > [Index](..) > [IoTSiteWise](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module
-[mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+[mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 - [Typed dictionaries for boto3 IoTSiteWise module](#typed-dictionaries-for-boto3-iotsitewise-module)
   - [AccessPolicySummaryTypeDef](#accesspolicysummarytypedef)
@@ -196,6 +198,8 @@ type annotations stubs module
   - [VariantTypeDef](#varianttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="accesspolicysummarytypedef"></a>
+
 ## AccessPolicySummaryTypeDef
 
 ```python
@@ -214,6 +218,8 @@ Optional fields:
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
 
+<a id="aggregatedvaluetypedef"></a>
+
 ## AggregatedValueTypeDef
 
 ```python
@@ -228,6 +234,8 @@ Required fields:
 Optional fields:
 
 - `quality`: [QualityType](./literals.md#qualitytype)
+
+<a id="aggregatestypedef"></a>
 
 ## AggregatesTypeDef
 
@@ -244,6 +252,8 @@ Optional fields:
 - `sum`: `float`
 - `standardDeviation`: `float`
 
+<a id="alarmstypedef"></a>
+
 ## AlarmsTypeDef
 
 ```python
@@ -257,6 +267,8 @@ Required fields:
 Optional fields:
 
 - `notificationLambdaArn`: `str`
+
+<a id="assetcompositemodeltypedef"></a>
 
 ## AssetCompositeModelTypeDef
 
@@ -275,6 +287,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="asseterrordetailstypedef"></a>
+
 ## AssetErrorDetailsTypeDef
 
 ```python
@@ -288,6 +302,8 @@ Required fields:
   [AssetErrorCodeType](./literals.md#asseterrorcodetype))
 - `message`: `str`
 
+<a id="assethierarchyinfotypedef"></a>
+
 ## AssetHierarchyInfoTypeDef
 
 ```python
@@ -298,6 +314,8 @@ Optional fields:
 
 - `parentAssetId`: `str`
 - `childAssetId`: `str`
+
+<a id="assethierarchytypedef"></a>
 
 ## AssetHierarchyTypeDef
 
@@ -312,6 +330,8 @@ Required fields:
 Optional fields:
 
 - `id`: `str`
+
+<a id="assetmodelcompositemodeldefinitiontypedef"></a>
 
 ## AssetModelCompositeModelDefinitionTypeDef
 
@@ -330,6 +350,8 @@ Optional fields:
 - `properties`:
   `Sequence`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
 
+<a id="assetmodelcompositemodeltypedef"></a>
+
 ## AssetModelCompositeModelTypeDef
 
 ```python
@@ -347,6 +369,8 @@ Optional fields:
 - `properties`:
   `List`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
 
+<a id="assetmodelhierarchydefinitiontypedef"></a>
+
 ## AssetModelHierarchyDefinitionTypeDef
 
 ```python
@@ -357,6 +381,8 @@ Required fields:
 
 - `name`: `str`
 - `childAssetModelId`: `str`
+
+<a id="assetmodelhierarchytypedef"></a>
 
 ## AssetModelHierarchyTypeDef
 
@@ -372,6 +398,8 @@ Required fields:
 Optional fields:
 
 - `id`: `str`
+
+<a id="assetmodelpropertydefinitiontypedef"></a>
 
 ## AssetModelPropertyDefinitionTypeDef
 
@@ -389,6 +417,8 @@ Optional fields:
 
 - `dataTypeSpec`: `str`
 - `unit`: `str`
+
+<a id="assetmodelpropertytypedef"></a>
 
 ## AssetModelPropertyTypeDef
 
@@ -408,6 +438,8 @@ Optional fields:
 - `dataTypeSpec`: `str`
 - `unit`: `str`
 
+<a id="assetmodelstatustypedef"></a>
+
 ## AssetModelStatusTypeDef
 
 ```python
@@ -421,6 +453,8 @@ Required fields:
 Optional fields:
 
 - `error`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
+
+<a id="assetmodelsummarytypedef"></a>
 
 ## AssetModelSummaryTypeDef
 
@@ -437,6 +471,8 @@ Required fields:
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
 - `status`: [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
+
+<a id="assetpropertytypedef"></a>
 
 ## AssetPropertyTypeDef
 
@@ -458,6 +494,8 @@ Optional fields:
 - `dataTypeSpec`: `str`
 - `unit`: `str`
 
+<a id="assetpropertyvaluetypedef"></a>
+
 ## AssetPropertyValueTypeDef
 
 ```python
@@ -472,6 +510,8 @@ Required fields:
 Optional fields:
 
 - `quality`: [QualityType](./literals.md#qualitytype)
+
+<a id="assetrelationshipsummarytypedef"></a>
 
 ## AssetRelationshipSummaryTypeDef
 
@@ -489,6 +529,8 @@ Optional fields:
 - `hierarchyInfo`:
   [AssetHierarchyInfoTypeDef](./type_defs.md#assethierarchyinfotypedef)
 
+<a id="assetstatustypedef"></a>
+
 ## AssetStatusTypeDef
 
 ```python
@@ -502,6 +544,8 @@ Required fields:
 Optional fields:
 
 - `error`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
+
+<a id="assetsummarytypedef"></a>
 
 ## AssetSummaryTypeDef
 
@@ -521,6 +565,8 @@ Required fields:
 - `hierarchies`:
   `List`\[[AssetHierarchyTypeDef](./type_defs.md#assethierarchytypedef)\]
 
+<a id="associateassetsrequestrequesttypedef"></a>
+
 ## AssociateAssetsRequestRequestTypeDef
 
 ```python
@@ -537,6 +583,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="associatetimeseriestoassetpropertyrequestrequesttypedef"></a>
+
 ## AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef
 
 ```python
@@ -552,6 +600,8 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
+
+<a id="associatedassetssummarytypedef"></a>
 
 ## AssociatedAssetsSummaryTypeDef
 
@@ -571,6 +621,8 @@ Required fields:
 - `hierarchies`:
   `List`\[[AssetHierarchyTypeDef](./type_defs.md#assethierarchytypedef)\]
 
+<a id="attributetypedef"></a>
+
 ## AttributeTypeDef
 
 ```python
@@ -580,6 +632,8 @@ from mypy_boto3_iotsitewise.type_defs import AttributeTypeDef
 Optional fields:
 
 - `defaultValue`: `str`
+
+<a id="batchassociateprojectassetsrequestrequesttypedef"></a>
 
 ## BatchAssociateProjectAssetsRequestRequestTypeDef
 
@@ -596,6 +650,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="batchassociateprojectassetsresponsetypedef"></a>
+
 ## BatchAssociateProjectAssetsResponseTypeDef
 
 ```python
@@ -608,6 +664,8 @@ Required fields:
   `List`\[[AssetErrorDetailsTypeDef](./type_defs.md#asseterrordetailstypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="batchdisassociateprojectassetsrequestrequesttypedef"></a>
 
 ## BatchDisassociateProjectAssetsRequestRequestTypeDef
 
@@ -624,6 +682,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="batchdisassociateprojectassetsresponsetypedef"></a>
+
 ## BatchDisassociateProjectAssetsResponseTypeDef
 
 ```python
@@ -637,6 +697,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchputassetpropertyerrorentrytypedef"></a>
+
 ## BatchPutAssetPropertyErrorEntryTypeDef
 
 ```python
@@ -648,6 +710,8 @@ Required fields:
 - `entryId`: `str`
 - `errors`:
   `List`\[[BatchPutAssetPropertyErrorTypeDef](./type_defs.md#batchputassetpropertyerrortypedef)\]
+
+<a id="batchputassetpropertyerrortypedef"></a>
 
 ## BatchPutAssetPropertyErrorTypeDef
 
@@ -663,6 +727,8 @@ Required fields:
 - `timestamps`:
   `List`\[[TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef)\]
 
+<a id="batchputassetpropertyvaluerequestrequesttypedef"></a>
+
 ## BatchPutAssetPropertyValueRequestRequestTypeDef
 
 ```python
@@ -673,6 +739,8 @@ Required fields:
 
 - `entries`:
   `Sequence`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
+
+<a id="batchputassetpropertyvalueresponsetypedef"></a>
 
 ## BatchPutAssetPropertyValueResponseTypeDef
 
@@ -687,6 +755,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="compositemodelpropertytypedef"></a>
+
 ## CompositeModelPropertyTypeDef
 
 ```python
@@ -699,6 +769,8 @@ Required fields:
 - `type`: `str`
 - `assetProperty`: [PropertyTypeDef](./type_defs.md#propertytypedef)
 
+<a id="configurationerrordetailstypedef"></a>
+
 ## ConfigurationErrorDetailsTypeDef
 
 ```python
@@ -709,6 +781,8 @@ Required fields:
 
 - `code`: [ErrorCodeType](./literals.md#errorcodetype)
 - `message`: `str`
+
+<a id="configurationstatustypedef"></a>
 
 ## ConfigurationStatusTypeDef
 
@@ -724,6 +798,8 @@ Optional fields:
 
 - `error`:
   [ConfigurationErrorDetailsTypeDef](./type_defs.md#configurationerrordetailstypedef)
+
+<a id="createaccesspolicyrequestrequesttypedef"></a>
 
 ## CreateAccessPolicyRequestRequestTypeDef
 
@@ -742,6 +818,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createaccesspolicyresponsetypedef"></a>
+
 ## CreateAccessPolicyResponseTypeDef
 
 ```python
@@ -754,6 +832,8 @@ Required fields:
 - `accessPolicyArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createassetmodelrequestrequesttypedef"></a>
 
 ## CreateAssetModelRequestRequestTypeDef
 
@@ -777,6 +857,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createassetmodelresponsetypedef"></a>
+
 ## CreateAssetModelResponseTypeDef
 
 ```python
@@ -791,6 +873,8 @@ Required fields:
   [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createassetrequestrequesttypedef"></a>
 
 ## CreateAssetRequestRequestTypeDef
 
@@ -808,6 +892,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createassetresponsetypedef"></a>
+
 ## CreateAssetResponseTypeDef
 
 ```python
@@ -821,6 +907,8 @@ Required fields:
 - `assetStatus`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdashboardrequestrequesttypedef"></a>
 
 ## CreateDashboardRequestRequestTypeDef
 
@@ -840,6 +928,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createdashboardresponsetypedef"></a>
+
 ## CreateDashboardResponseTypeDef
 
 ```python
@@ -852,6 +942,8 @@ Required fields:
 - `dashboardArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creategatewayrequestrequesttypedef"></a>
 
 ## CreateGatewayRequestRequestTypeDef
 
@@ -869,6 +961,8 @@ Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="creategatewayresponsetypedef"></a>
+
 ## CreateGatewayResponseTypeDef
 
 ```python
@@ -881,6 +975,8 @@ Required fields:
 - `gatewayArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createportalrequestrequesttypedef"></a>
 
 ## CreatePortalRequestRequestTypeDef
 
@@ -904,6 +1000,8 @@ Optional fields:
 - `notificationSenderEmail`: `str`
 - `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
 
+<a id="createportalresponsetypedef"></a>
+
 ## CreatePortalResponseTypeDef
 
 ```python
@@ -919,6 +1017,8 @@ Required fields:
 - `ssoApplicationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprojectrequestrequesttypedef"></a>
 
 ## CreateProjectRequestRequestTypeDef
 
@@ -937,6 +1037,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createprojectresponsetypedef"></a>
+
 ## CreateProjectResponseTypeDef
 
 ```python
@@ -950,6 +1052,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="customermanageds3storagetypedef"></a>
+
 ## CustomerManagedS3StorageTypeDef
 
 ```python
@@ -960,6 +1064,8 @@ Required fields:
 
 - `s3ResourceArn`: `str`
 - `roleArn`: `str`
+
+<a id="dashboardsummarytypedef"></a>
 
 ## DashboardSummaryTypeDef
 
@@ -978,6 +1084,8 @@ Optional fields:
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
 
+<a id="deleteaccesspolicyrequestrequesttypedef"></a>
+
 ## DeleteAccessPolicyRequestRequestTypeDef
 
 ```python
@@ -991,6 +1099,8 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
+
+<a id="deleteassetmodelrequestrequesttypedef"></a>
 
 ## DeleteAssetModelRequestRequestTypeDef
 
@@ -1006,6 +1116,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deleteassetmodelresponsetypedef"></a>
+
 ## DeleteAssetModelResponseTypeDef
 
 ```python
@@ -1018,6 +1130,8 @@ Required fields:
   [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteassetrequestrequesttypedef"></a>
 
 ## DeleteAssetRequestRequestTypeDef
 
@@ -1033,6 +1147,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deleteassetresponsetypedef"></a>
+
 ## DeleteAssetResponseTypeDef
 
 ```python
@@ -1044,6 +1160,8 @@ Required fields:
 - `assetStatus`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletedashboardrequestrequesttypedef"></a>
 
 ## DeleteDashboardRequestRequestTypeDef
 
@@ -1059,6 +1177,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deletegatewayrequestrequesttypedef"></a>
+
 ## DeleteGatewayRequestRequestTypeDef
 
 ```python
@@ -1068,6 +1188,8 @@ from mypy_boto3_iotsitewise.type_defs import DeleteGatewayRequestRequestTypeDef
 Required fields:
 
 - `gatewayId`: `str`
+
+<a id="deleteportalrequestrequesttypedef"></a>
 
 ## DeletePortalRequestRequestTypeDef
 
@@ -1083,6 +1205,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deleteportalresponsetypedef"></a>
+
 ## DeletePortalResponseTypeDef
 
 ```python
@@ -1094,6 +1218,8 @@ Required fields:
 - `portalStatus`: [PortalStatusTypeDef](./type_defs.md#portalstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteprojectrequestrequesttypedef"></a>
 
 ## DeleteProjectRequestRequestTypeDef
 
@@ -1109,6 +1235,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deletetimeseriesrequestrequesttypedef"></a>
+
 ## DeleteTimeSeriesRequestRequestTypeDef
 
 ```python
@@ -1122,6 +1250,8 @@ Optional fields:
 - `propertyId`: `str`
 - `clientToken`: `str`
 
+<a id="describeaccesspolicyrequestrequesttypedef"></a>
+
 ## DescribeAccessPolicyRequestRequestTypeDef
 
 ```python
@@ -1131,6 +1261,8 @@ from mypy_boto3_iotsitewise.type_defs import DescribeAccessPolicyRequestRequestT
 Required fields:
 
 - `accessPolicyId`: `str`
+
+<a id="describeaccesspolicyresponsetypedef"></a>
 
 ## DescribeAccessPolicyResponseTypeDef
 
@@ -1150,6 +1282,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeassetmodelrequestrequesttypedef"></a>
+
 ## DescribeAssetModelRequestRequestTypeDef
 
 ```python
@@ -1159,6 +1293,8 @@ from mypy_boto3_iotsitewise.type_defs import DescribeAssetModelRequestRequestTyp
 Required fields:
 
 - `assetModelId`: `str`
+
+<a id="describeassetmodelresponsetypedef"></a>
 
 ## DescribeAssetModelResponseTypeDef
 
@@ -1185,6 +1321,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeassetpropertyrequestrequesttypedef"></a>
+
 ## DescribeAssetPropertyRequestRequestTypeDef
 
 ```python
@@ -1195,6 +1333,8 @@ Required fields:
 
 - `assetId`: `str`
 - `propertyId`: `str`
+
+<a id="describeassetpropertyresponsetypedef"></a>
 
 ## DescribeAssetPropertyResponseTypeDef
 
@@ -1213,6 +1353,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeassetrequestrequesttypedef"></a>
+
 ## DescribeAssetRequestRequestTypeDef
 
 ```python
@@ -1222,6 +1364,8 @@ from mypy_boto3_iotsitewise.type_defs import DescribeAssetRequestRequestTypeDef
 Required fields:
 
 - `assetId`: `str`
+
+<a id="describeassetresponsetypedef"></a>
 
 ## DescribeAssetResponseTypeDef
 
@@ -1247,6 +1391,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedashboardrequestrequesttypedef"></a>
+
 ## DescribeDashboardRequestRequestTypeDef
 
 ```python
@@ -1256,6 +1402,8 @@ from mypy_boto3_iotsitewise.type_defs import DescribeDashboardRequestRequestType
 Required fields:
 
 - `dashboardId`: `str`
+
+<a id="describedashboardresponsetypedef"></a>
 
 ## DescribeDashboardResponseTypeDef
 
@@ -1276,6 +1424,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedefaultencryptionconfigurationresponsetypedef"></a>
+
 ## DescribeDefaultEncryptionConfigurationResponseTypeDef
 
 ```python
@@ -1291,6 +1441,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describegatewaycapabilityconfigurationrequestrequesttypedef"></a>
+
 ## DescribeGatewayCapabilityConfigurationRequestRequestTypeDef
 
 ```python
@@ -1301,6 +1453,8 @@ Required fields:
 
 - `gatewayId`: `str`
 - `capabilityNamespace`: `str`
+
+<a id="describegatewaycapabilityconfigurationresponsetypedef"></a>
 
 ## DescribeGatewayCapabilityConfigurationResponseTypeDef
 
@@ -1318,6 +1472,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describegatewayrequestrequesttypedef"></a>
+
 ## DescribeGatewayRequestRequestTypeDef
 
 ```python
@@ -1327,6 +1483,8 @@ from mypy_boto3_iotsitewise.type_defs import DescribeGatewayRequestRequestTypeDe
 Required fields:
 
 - `gatewayId`: `str`
+
+<a id="describegatewayresponsetypedef"></a>
 
 ## DescribeGatewayResponseTypeDef
 
@@ -1348,6 +1506,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeloggingoptionsresponsetypedef"></a>
+
 ## DescribeLoggingOptionsResponseTypeDef
 
 ```python
@@ -1361,6 +1521,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeportalrequestrequesttypedef"></a>
+
 ## DescribePortalRequestRequestTypeDef
 
 ```python
@@ -1370,6 +1532,8 @@ from mypy_boto3_iotsitewise.type_defs import DescribePortalRequestRequestTypeDef
 Required fields:
 
 - `portalId`: `str`
+
+<a id="describeportalresponsetypedef"></a>
 
 ## DescribePortalResponseTypeDef
 
@@ -1398,6 +1562,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeprojectrequestrequesttypedef"></a>
+
 ## DescribeProjectRequestRequestTypeDef
 
 ```python
@@ -1407,6 +1573,8 @@ from mypy_boto3_iotsitewise.type_defs import DescribeProjectRequestRequestTypeDe
 Required fields:
 
 - `projectId`: `str`
+
+<a id="describeprojectresponsetypedef"></a>
 
 ## DescribeProjectResponseTypeDef
 
@@ -1425,6 +1593,8 @@ Required fields:
 - `projectLastUpdateDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describestorageconfigurationresponsetypedef"></a>
 
 ## DescribeStorageConfigurationResponseTypeDef
 
@@ -1447,6 +1617,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetimeseriesrequestrequesttypedef"></a>
+
 ## DescribeTimeSeriesRequestRequestTypeDef
 
 ```python
@@ -1458,6 +1630,8 @@ Optional fields:
 - `alias`: `str`
 - `assetId`: `str`
 - `propertyId`: `str`
+
+<a id="describetimeseriesresponsetypedef"></a>
 
 ## DescribeTimeSeriesResponseTypeDef
 
@@ -1478,6 +1652,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detailederrortypedef"></a>
+
 ## DetailedErrorTypeDef
 
 ```python
@@ -1488,6 +1664,8 @@ Required fields:
 
 - `code`: [DetailedErrorCodeType](./literals.md#detailederrorcodetype)
 - `message`: `str`
+
+<a id="disassociateassetsrequestrequesttypedef"></a>
 
 ## DisassociateAssetsRequestRequestTypeDef
 
@@ -1505,6 +1683,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="disassociatetimeseriesfromassetpropertyrequestrequesttypedef"></a>
+
 ## DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef
 
 ```python
@@ -1520,6 +1700,8 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
+
+<a id="errordetailstypedef"></a>
 
 ## ErrorDetailsTypeDef
 
@@ -1537,6 +1719,8 @@ Optional fields:
 - `details`:
   `List`\[[DetailedErrorTypeDef](./type_defs.md#detailederrortypedef)\]
 
+<a id="expressionvariabletypedef"></a>
+
 ## ExpressionVariableTypeDef
 
 ```python
@@ -1548,6 +1732,8 @@ Required fields:
 - `name`: `str`
 - `value`: [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
 
+<a id="forwardingconfigtypedef"></a>
+
 ## ForwardingConfigTypeDef
 
 ```python
@@ -1557,6 +1743,8 @@ from mypy_boto3_iotsitewise.type_defs import ForwardingConfigTypeDef
 Required fields:
 
 - `state`: [ForwardingConfigStateType](./literals.md#forwardingconfigstatetype)
+
+<a id="gatewaycapabilitysummarytypedef"></a>
 
 ## GatewayCapabilitySummaryTypeDef
 
@@ -1570,6 +1758,8 @@ Required fields:
 - `capabilitySyncStatus`:
   [CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype)
 
+<a id="gatewayplatformtypedef"></a>
+
 ## GatewayPlatformTypeDef
 
 ```python
@@ -1580,6 +1770,8 @@ Optional fields:
 
 - `greengrass`: [GreengrassTypeDef](./type_defs.md#greengrasstypedef)
 - `greengrassV2`: [GreengrassV2TypeDef](./type_defs.md#greengrassv2typedef)
+
+<a id="gatewaysummarytypedef"></a>
 
 ## GatewaySummaryTypeDef
 
@@ -1600,6 +1792,8 @@ Optional fields:
   [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef)
 - `gatewayCapabilitySummaries`:
   `List`\[[GatewayCapabilitySummaryTypeDef](./type_defs.md#gatewaycapabilitysummarytypedef)\]
+
+<a id="getassetpropertyaggregatesrequestrequesttypedef"></a>
 
 ## GetAssetPropertyAggregatesRequestRequestTypeDef
 
@@ -1625,6 +1819,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getassetpropertyaggregatesresponsetypedef"></a>
+
 ## GetAssetPropertyAggregatesResponseTypeDef
 
 ```python
@@ -1638,6 +1834,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getassetpropertyvaluehistoryrequestrequesttypedef"></a>
 
 ## GetAssetPropertyValueHistoryRequestRequestTypeDef
 
@@ -1657,6 +1855,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getassetpropertyvaluehistoryresponsetypedef"></a>
+
 ## GetAssetPropertyValueHistoryResponseTypeDef
 
 ```python
@@ -1671,6 +1871,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getassetpropertyvaluerequestrequesttypedef"></a>
+
 ## GetAssetPropertyValueRequestRequestTypeDef
 
 ```python
@@ -1682,6 +1884,8 @@ Optional fields:
 - `assetId`: `str`
 - `propertyId`: `str`
 - `propertyAlias`: `str`
+
+<a id="getassetpropertyvalueresponsetypedef"></a>
 
 ## GetAssetPropertyValueResponseTypeDef
 
@@ -1695,6 +1899,8 @@ Required fields:
   [AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getinterpolatedassetpropertyvaluesrequestrequesttypedef"></a>
 
 ## GetInterpolatedAssetPropertyValuesRequestRequestTypeDef
 
@@ -1721,6 +1927,8 @@ Optional fields:
 - `maxResults`: `int`
 - `intervalWindowInSeconds`: `int`
 
+<a id="getinterpolatedassetpropertyvaluesresponsetypedef"></a>
+
 ## GetInterpolatedAssetPropertyValuesResponseTypeDef
 
 ```python
@@ -1735,6 +1943,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="greengrasstypedef"></a>
+
 ## GreengrassTypeDef
 
 ```python
@@ -1744,6 +1954,8 @@ from mypy_boto3_iotsitewise.type_defs import GreengrassTypeDef
 Required fields:
 
 - `groupArn`: `str`
+
+<a id="greengrassv2typedef"></a>
 
 ## GreengrassV2TypeDef
 
@@ -1755,6 +1967,8 @@ Required fields:
 
 - `coreDeviceThingName`: `str`
 
+<a id="groupidentitytypedef"></a>
+
 ## GroupIdentityTypeDef
 
 ```python
@@ -1764,6 +1978,8 @@ from mypy_boto3_iotsitewise.type_defs import GroupIdentityTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="iamroleidentitytypedef"></a>
 
 ## IAMRoleIdentityTypeDef
 
@@ -1775,6 +1991,8 @@ Required fields:
 
 - `arn`: `str`
 
+<a id="iamuseridentitytypedef"></a>
+
 ## IAMUserIdentityTypeDef
 
 ```python
@@ -1784,6 +2002,8 @@ from mypy_boto3_iotsitewise.type_defs import IAMUserIdentityTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="identitytypedef"></a>
 
 ## IdentityTypeDef
 
@@ -1798,6 +2018,8 @@ Optional fields:
 - `iamUser`: [IAMUserIdentityTypeDef](./type_defs.md#iamuseridentitytypedef)
 - `iamRole`: [IAMRoleIdentityTypeDef](./type_defs.md#iamroleidentitytypedef)
 
+<a id="imagefiletypedef"></a>
+
 ## ImageFileTypeDef
 
 ```python
@@ -1810,6 +2032,8 @@ Required fields:
 - `type`: `Literal['PNG']` (see
   [ImageFileTypeType](./literals.md#imagefiletypetype))
 
+<a id="imagelocationtypedef"></a>
+
 ## ImageLocationTypeDef
 
 ```python
@@ -1820,6 +2044,8 @@ Required fields:
 
 - `id`: `str`
 - `url`: `str`
+
+<a id="imagetypedef"></a>
 
 ## ImageTypeDef
 
@@ -1832,6 +2058,8 @@ Optional fields:
 - `id`: `str`
 - `file`: [ImageFileTypeDef](./type_defs.md#imagefiletypedef)
 
+<a id="interpolatedassetpropertyvaluetypedef"></a>
+
 ## InterpolatedAssetPropertyValueTypeDef
 
 ```python
@@ -1842,6 +2070,8 @@ Required fields:
 
 - `timestamp`: [TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef)
 - `value`: [VariantTypeDef](./type_defs.md#varianttypedef)
+
+<a id="listaccesspoliciesrequestrequesttypedef"></a>
 
 ## ListAccessPoliciesRequestRequestTypeDef
 
@@ -1859,6 +2089,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listaccesspoliciesresponsetypedef"></a>
+
 ## ListAccessPoliciesResponseTypeDef
 
 ```python
@@ -1873,6 +2105,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listassetmodelsrequestrequesttypedef"></a>
+
 ## ListAssetModelsRequestRequestTypeDef
 
 ```python
@@ -1883,6 +2117,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listassetmodelsresponsetypedef"></a>
 
 ## ListAssetModelsResponseTypeDef
 
@@ -1897,6 +2133,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassetrelationshipsrequestrequesttypedef"></a>
 
 ## ListAssetRelationshipsRequestRequestTypeDef
 
@@ -1915,6 +2153,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassetrelationshipsresponsetypedef"></a>
+
 ## ListAssetRelationshipsResponseTypeDef
 
 ```python
@@ -1929,6 +2169,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listassetsrequestrequesttypedef"></a>
+
 ## ListAssetsRequestRequestTypeDef
 
 ```python
@@ -1941,6 +2183,8 @@ Optional fields:
 - `maxResults`: `int`
 - `assetModelId`: `str`
 - `filter`: [ListAssetsFilterType](./literals.md#listassetsfiltertype)
+
+<a id="listassetsresponsetypedef"></a>
 
 ## ListAssetsResponseTypeDef
 
@@ -1955,6 +2199,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassociatedassetsrequestrequesttypedef"></a>
 
 ## ListAssociatedAssetsRequestRequestTypeDef
 
@@ -1974,6 +2220,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassociatedassetsresponsetypedef"></a>
+
 ## ListAssociatedAssetsResponseTypeDef
 
 ```python
@@ -1987,6 +2235,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdashboardsrequestrequesttypedef"></a>
 
 ## ListDashboardsRequestRequestTypeDef
 
@@ -2003,6 +2253,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listdashboardsresponsetypedef"></a>
+
 ## ListDashboardsResponseTypeDef
 
 ```python
@@ -2017,6 +2269,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgatewaysrequestrequesttypedef"></a>
+
 ## ListGatewaysRequestRequestTypeDef
 
 ```python
@@ -2027,6 +2281,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listgatewaysresponsetypedef"></a>
 
 ## ListGatewaysResponseTypeDef
 
@@ -2042,6 +2298,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listportalsrequestrequesttypedef"></a>
+
 ## ListPortalsRequestRequestTypeDef
 
 ```python
@@ -2052,6 +2310,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listportalsresponsetypedef"></a>
 
 ## ListPortalsResponseTypeDef
 
@@ -2066,6 +2326,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listprojectassetsrequestrequesttypedef"></a>
 
 ## ListProjectAssetsRequestRequestTypeDef
 
@@ -2082,6 +2344,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listprojectassetsresponsetypedef"></a>
+
 ## ListProjectAssetsResponseTypeDef
 
 ```python
@@ -2094,6 +2358,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listprojectsrequestrequesttypedef"></a>
 
 ## ListProjectsRequestRequestTypeDef
 
@@ -2110,6 +2376,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listprojectsresponsetypedef"></a>
+
 ## ListProjectsResponseTypeDef
 
 ```python
@@ -2124,6 +2392,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -2133,6 +2403,8 @@ from mypy_boto3_iotsitewise.type_defs import ListTagsForResourceRequestRequestTy
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -2145,6 +2417,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtimeseriesrequestrequesttypedef"></a>
 
 ## ListTimeSeriesRequestRequestTypeDef
 
@@ -2161,6 +2435,8 @@ Optional fields:
 - `timeSeriesType`:
   [ListTimeSeriesTypeType](./literals.md#listtimeseriestypetype)
 
+<a id="listtimeseriesresponsetypedef"></a>
+
 ## ListTimeSeriesResponseTypeDef
 
 ```python
@@ -2175,6 +2451,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="loggingoptionstypedef"></a>
+
 ## LoggingOptionsTypeDef
 
 ```python
@@ -2184,6 +2462,8 @@ from mypy_boto3_iotsitewise.type_defs import LoggingOptionsTypeDef
 Required fields:
 
 - `level`: [LoggingLevelType](./literals.md#loggingleveltype)
+
+<a id="measurementprocessingconfigtypedef"></a>
 
 ## MeasurementProcessingConfigTypeDef
 
@@ -2196,6 +2476,8 @@ Required fields:
 - `forwardingConfig`:
   [ForwardingConfigTypeDef](./type_defs.md#forwardingconfigtypedef)
 
+<a id="measurementtypedef"></a>
+
 ## MeasurementTypeDef
 
 ```python
@@ -2207,6 +2489,8 @@ Optional fields:
 - `processingConfig`:
   [MeasurementProcessingConfigTypeDef](./type_defs.md#measurementprocessingconfigtypedef)
 
+<a id="metricprocessingconfigtypedef"></a>
+
 ## MetricProcessingConfigTypeDef
 
 ```python
@@ -2216,6 +2500,8 @@ from mypy_boto3_iotsitewise.type_defs import MetricProcessingConfigTypeDef
 Required fields:
 
 - `computeLocation`: [ComputeLocationType](./literals.md#computelocationtype)
+
+<a id="metrictypedef"></a>
 
 ## MetricTypeDef
 
@@ -2235,6 +2521,8 @@ Optional fields:
 - `processingConfig`:
   [MetricProcessingConfigTypeDef](./type_defs.md#metricprocessingconfigtypedef)
 
+<a id="metricwindowtypedef"></a>
+
 ## MetricWindowTypeDef
 
 ```python
@@ -2244,6 +2532,8 @@ from mypy_boto3_iotsitewise.type_defs import MetricWindowTypeDef
 Optional fields:
 
 - `tumbling`: [TumblingWindowTypeDef](./type_defs.md#tumblingwindowtypedef)
+
+<a id="monitorerrordetailstypedef"></a>
 
 ## MonitorErrorDetailsTypeDef
 
@@ -2256,6 +2546,8 @@ Optional fields:
 - `code`: [MonitorErrorCodeType](./literals.md#monitorerrorcodetype)
 - `message`: `str`
 
+<a id="multilayerstoragetypedef"></a>
+
 ## MultiLayerStorageTypeDef
 
 ```python
@@ -2266,6 +2558,8 @@ Required fields:
 
 - `customerManagedS3Storage`:
   [CustomerManagedS3StorageTypeDef](./type_defs.md#customermanageds3storagetypedef)
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -2279,6 +2573,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="portalresourcetypedef"></a>
+
 ## PortalResourceTypeDef
 
 ```python
@@ -2288,6 +2584,8 @@ from mypy_boto3_iotsitewise.type_defs import PortalResourceTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="portalstatustypedef"></a>
 
 ## PortalStatusTypeDef
 
@@ -2303,6 +2601,8 @@ Optional fields:
 
 - `error`:
   [MonitorErrorDetailsTypeDef](./type_defs.md#monitorerrordetailstypedef)
+
+<a id="portalsummarytypedef"></a>
 
 ## PortalSummaryTypeDef
 
@@ -2324,6 +2624,8 @@ Optional fields:
 - `lastUpdateDate`: `datetime`
 - `roleArn`: `str`
 
+<a id="projectresourcetypedef"></a>
+
 ## ProjectResourceTypeDef
 
 ```python
@@ -2333,6 +2635,8 @@ from mypy_boto3_iotsitewise.type_defs import ProjectResourceTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="projectsummarytypedef"></a>
 
 ## ProjectSummaryTypeDef
 
@@ -2351,6 +2655,8 @@ Optional fields:
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
 
+<a id="propertynotificationtypedef"></a>
+
 ## PropertyNotificationTypeDef
 
 ```python
@@ -2362,6 +2668,8 @@ Required fields:
 - `topic`: `str`
 - `state`:
   [PropertyNotificationStateType](./literals.md#propertynotificationstatetype)
+
+<a id="propertytypedef"></a>
 
 ## PropertyTypeDef
 
@@ -2383,6 +2691,8 @@ Optional fields:
 - `unit`: `str`
 - `type`: [PropertyTypeTypeDef](./type_defs.md#propertytypetypedef)
 
+<a id="propertytypetypedef"></a>
+
 ## PropertyTypeTypeDef
 
 ```python
@@ -2395,6 +2705,8 @@ Optional fields:
 - `measurement`: [MeasurementTypeDef](./type_defs.md#measurementtypedef)
 - `transform`: [TransformTypeDef](./type_defs.md#transformtypedef)
 - `metric`: [MetricTypeDef](./type_defs.md#metrictypedef)
+
+<a id="putassetpropertyvalueentrytypedef"></a>
 
 ## PutAssetPropertyValueEntryTypeDef
 
@@ -2414,6 +2726,8 @@ Optional fields:
 - `propertyId`: `str`
 - `propertyAlias`: `str`
 
+<a id="putdefaultencryptionconfigurationrequestrequesttypedef"></a>
+
 ## PutDefaultEncryptionConfigurationRequestRequestTypeDef
 
 ```python
@@ -2427,6 +2741,8 @@ Required fields:
 Optional fields:
 
 - `kmsKeyId`: `str`
+
+<a id="putdefaultencryptionconfigurationresponsetypedef"></a>
 
 ## PutDefaultEncryptionConfigurationResponseTypeDef
 
@@ -2443,6 +2759,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putloggingoptionsrequestrequesttypedef"></a>
+
 ## PutLoggingOptionsRequestRequestTypeDef
 
 ```python
@@ -2453,6 +2771,8 @@ Required fields:
 
 - `loggingOptions`:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
+
+<a id="putstorageconfigurationrequestrequesttypedef"></a>
 
 ## PutStorageConfigurationRequestRequestTypeDef
 
@@ -2472,6 +2792,8 @@ Optional fields:
   [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
+
+<a id="putstorageconfigurationresponsetypedef"></a>
 
 ## PutStorageConfigurationResponseTypeDef
 
@@ -2493,6 +2815,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resourcetypedef"></a>
+
 ## ResourceTypeDef
 
 ```python
@@ -2503,6 +2827,8 @@ Optional fields:
 
 - `portal`: [PortalResourceTypeDef](./type_defs.md#portalresourcetypedef)
 - `project`: [ProjectResourceTypeDef](./type_defs.md#projectresourcetypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2518,6 +2844,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retentionperiodtypedef"></a>
+
 ## RetentionPeriodTypeDef
 
 ```python
@@ -2529,6 +2857,8 @@ Optional fields:
 - `numberOfDays`: `int`
 - `unlimited`: `bool`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2539,6 +2869,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="timeinnanostypedef"></a>
 
 ## TimeInNanosTypeDef
 
@@ -2553,6 +2885,8 @@ Required fields:
 Optional fields:
 
 - `offsetInNanos`: `int`
+
+<a id="timeseriessummarytypedef"></a>
 
 ## TimeSeriesSummaryTypeDef
 
@@ -2574,6 +2908,8 @@ Optional fields:
 - `alias`: `str`
 - `dataTypeSpec`: `str`
 
+<a id="transformprocessingconfigtypedef"></a>
+
 ## TransformProcessingConfigTypeDef
 
 ```python
@@ -2588,6 +2924,8 @@ Optional fields:
 
 - `forwardingConfig`:
   [ForwardingConfigTypeDef](./type_defs.md#forwardingconfigtypedef)
+
+<a id="transformtypedef"></a>
 
 ## TransformTypeDef
 
@@ -2606,6 +2944,8 @@ Optional fields:
 - `processingConfig`:
   [TransformProcessingConfigTypeDef](./type_defs.md#transformprocessingconfigtypedef)
 
+<a id="tumblingwindowtypedef"></a>
+
 ## TumblingWindowTypeDef
 
 ```python
@@ -2620,6 +2960,8 @@ Optional fields:
 
 - `offset`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2630,6 +2972,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateaccesspolicyrequestrequesttypedef"></a>
 
 ## UpdateAccessPolicyRequestRequestTypeDef
 
@@ -2647,6 +2991,8 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
+
+<a id="updateassetmodelrequestrequesttypedef"></a>
 
 ## UpdateAssetModelRequestRequestTypeDef
 
@@ -2670,6 +3016,8 @@ Optional fields:
   `Sequence`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
 - `clientToken`: `str`
 
+<a id="updateassetmodelresponsetypedef"></a>
+
 ## UpdateAssetModelResponseTypeDef
 
 ```python
@@ -2682,6 +3030,8 @@ Required fields:
   [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateassetpropertyrequestrequesttypedef"></a>
 
 ## UpdateAssetPropertyRequestRequestTypeDef
 
@@ -2701,6 +3051,8 @@ Optional fields:
   [PropertyNotificationStateType](./literals.md#propertynotificationstatetype)
 - `clientToken`: `str`
 
+<a id="updateassetrequestrequesttypedef"></a>
+
 ## UpdateAssetRequestRequestTypeDef
 
 ```python
@@ -2716,6 +3068,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="updateassetresponsetypedef"></a>
+
 ## UpdateAssetResponseTypeDef
 
 ```python
@@ -2727,6 +3081,8 @@ Required fields:
 - `assetStatus`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedashboardrequestrequesttypedef"></a>
 
 ## UpdateDashboardRequestRequestTypeDef
 
@@ -2745,6 +3101,8 @@ Optional fields:
 - `dashboardDescription`: `str`
 - `clientToken`: `str`
 
+<a id="updategatewaycapabilityconfigurationrequestrequesttypedef"></a>
+
 ## UpdateGatewayCapabilityConfigurationRequestRequestTypeDef
 
 ```python
@@ -2756,6 +3114,8 @@ Required fields:
 - `gatewayId`: `str`
 - `capabilityNamespace`: `str`
 - `capabilityConfiguration`: `str`
+
+<a id="updategatewaycapabilityconfigurationresponsetypedef"></a>
 
 ## UpdateGatewayCapabilityConfigurationResponseTypeDef
 
@@ -2771,6 +3131,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updategatewayrequestrequesttypedef"></a>
+
 ## UpdateGatewayRequestRequestTypeDef
 
 ```python
@@ -2781,6 +3143,8 @@ Required fields:
 
 - `gatewayId`: `str`
 - `gatewayName`: `str`
+
+<a id="updateportalrequestrequesttypedef"></a>
 
 ## UpdatePortalRequestRequestTypeDef
 
@@ -2803,6 +3167,8 @@ Optional fields:
 - `notificationSenderEmail`: `str`
 - `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
 
+<a id="updateportalresponsetypedef"></a>
+
 ## UpdatePortalResponseTypeDef
 
 ```python
@@ -2814,6 +3180,8 @@ Required fields:
 - `portalStatus`: [PortalStatusTypeDef](./type_defs.md#portalstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateprojectrequestrequesttypedef"></a>
 
 ## UpdateProjectRequestRequestTypeDef
 
@@ -2831,6 +3199,8 @@ Optional fields:
 - `projectDescription`: `str`
 - `clientToken`: `str`
 
+<a id="useridentitytypedef"></a>
+
 ## UserIdentityTypeDef
 
 ```python
@@ -2840,6 +3210,8 @@ from mypy_boto3_iotsitewise.type_defs import UserIdentityTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="variablevaluetypedef"></a>
 
 ## VariableValueTypeDef
 
@@ -2855,6 +3227,8 @@ Optional fields:
 
 - `hierarchyId`: `str`
 
+<a id="varianttypedef"></a>
+
 ## VariantTypeDef
 
 ```python
@@ -2867,6 +3241,8 @@ Optional fields:
 - `integerValue`: `int`
 - `doubleValue`: `float`
 - `booleanValue`: `bool`
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

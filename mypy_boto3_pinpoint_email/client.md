@@ -1,3 +1,5 @@
+<a id="pinpointemailclient-for-boto3-pinpointemail-module"></a>
+
 # PinpointEmailClient for boto3 PinpointEmail module
 
 > [Index](..) > [PinpointEmail](.) > PinpointEmailClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
 type annotations stubs module
-[mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+[mypy-boto3-pinpoint-email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 - [PinpointEmailClient for boto3 PinpointEmail module](#pinpointemailclient-for-boto3-pinpointemail-module)
   - [PinpointEmailClient](#pinpointemailclient)
@@ -58,6 +60,8 @@ type annotations stubs module
     - [update_configuration_set_event_destination](#update_configuration_set_event_destination)
     - [get_paginator](#get_paginator)
 
+<a id="pinpointemailclient"></a>
+
 ## PinpointEmailClient
 
 Type annotations for `boto3.client("pinpoint-email")`
@@ -65,14 +69,17 @@ Type annotations for `boto3.client("pinpoint-email")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_pinpoint_email.client import PinpointEmailClient
 
 def get_pinpoint-email_client() -> PinpointEmailClient:
-    return boto3.client("pinpoint-email")
+    return Session().client("pinpoint-email")
 ```
 
 Boto3 documentation:
 [PinpointEmail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -100,7 +107,11 @@ Exceptions:
 - `Exceptions.SendingPausedException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -112,6 +123,8 @@ Boto3 documentation:
 [PinpointEmail.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -127,6 +140,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_configuration_set"></a>
 
 ### create_configuration_set
 
@@ -156,6 +171,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_configuration_set_event_destination"></a>
+
 ### create_configuration_set_event_destination
 
 Create an event destination.
@@ -180,6 +197,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_dedicated_ip_pool"></a>
+
 ### create_dedicated_ip_pool
 
 Create a new pool of dedicated IP addresses.
@@ -199,6 +218,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_deliverability_test_report"></a>
 
 ### create_deliverability_test_report
 
@@ -224,6 +245,8 @@ Keyword-only arguments:
 Returns
 [CreateDeliverabilityTestReportResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponsetypedef).
 
+<a id="create_email_identity"></a>
+
 ### create_email_identity
 
 Verifies an email identity for use with Amazon Pinpoint.
@@ -245,6 +268,8 @@ Keyword-only arguments:
 Returns
 [CreateEmailIdentityResponseTypeDef](./type_defs.md#createemailidentityresponsetypedef).
 
+<a id="delete_configuration_set"></a>
+
 ### delete_configuration_set
 
 Delete an existing configuration set.
@@ -263,6 +288,8 @@ Keyword-only arguments:
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_configuration_set_event_destination"></a>
 
 ### delete_configuration_set_event_destination
 
@@ -285,6 +312,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_dedicated_ip_pool"></a>
+
 ### delete_dedicated_ip_pool
 
 Delete a dedicated IP pool.
@@ -303,6 +332,8 @@ Keyword-only arguments:
 - `PoolName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_email_identity"></a>
 
 ### delete_email_identity
 
@@ -324,6 +355,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -343,6 +376,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_account"></a>
+
 ### get_account
 
 Obtain information about the email-sending status and capabilities of your
@@ -354,6 +389,8 @@ Boto3 documentation:
 [PinpointEmail.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_account)
 
 Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
+
+<a id="get_blacklist_reports"></a>
 
 ### get_blacklist_reports
 
@@ -374,6 +411,8 @@ Keyword-only arguments:
 
 Returns
 [GetBlacklistReportsResponseTypeDef](./type_defs.md#getblacklistreportsresponsetypedef).
+
+<a id="get_configuration_set"></a>
 
 ### get_configuration_set
 
@@ -397,6 +436,8 @@ Keyword-only arguments:
 Returns
 [GetConfigurationSetResponseTypeDef](./type_defs.md#getconfigurationsetresponsetypedef).
 
+<a id="get_configuration_set_event_destinations"></a>
+
 ### get_configuration_set_event_destinations
 
 Retrieve a list of event destinations that are associated with a configuration
@@ -419,6 +460,8 @@ Keyword-only arguments:
 Returns
 [GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef).
 
+<a id="get_dedicated_ip"></a>
+
 ### get_dedicated_ip
 
 Get information about a dedicated IP address, including the name of the
@@ -439,6 +482,8 @@ Keyword-only arguments:
 
 Returns
 [GetDedicatedIpResponseTypeDef](./type_defs.md#getdedicatedipresponsetypedef).
+
+<a id="get_dedicated_ips"></a>
 
 ### get_dedicated_ips
 
@@ -462,6 +507,8 @@ Keyword-only arguments:
 Returns
 [GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef).
 
+<a id="get_deliverability_dashboard_options"></a>
+
 ### get_deliverability_dashboard_options
 
 Retrieve information about the status of the Deliverability dashboard for your
@@ -475,6 +522,8 @@ Boto3 documentation:
 
 Returns
 [GetDeliverabilityDashboardOptionsResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponsetypedef).
+
+<a id="get_deliverability_test_report"></a>
 
 ### get_deliverability_test_report
 
@@ -496,6 +545,8 @@ Keyword-only arguments:
 Returns
 [GetDeliverabilityTestReportResponseTypeDef](./type_defs.md#getdeliverabilitytestreportresponsetypedef).
 
+<a id="get_domain_deliverability_campaign"></a>
+
 ### get_domain_deliverability_campaign
 
 Retrieve all the deliverability data for a specific campaign.
@@ -515,6 +566,8 @@ Keyword-only arguments:
 
 Returns
 [GetDomainDeliverabilityCampaignResponseTypeDef](./type_defs.md#getdomaindeliverabilitycampaignresponsetypedef).
+
+<a id="get_domain_statistics_report"></a>
 
 ### get_domain_statistics_report
 
@@ -539,6 +592,8 @@ Keyword-only arguments:
 Returns
 [GetDomainStatisticsReportResponseTypeDef](./type_defs.md#getdomainstatisticsreportresponsetypedef).
 
+<a id="get_email_identity"></a>
+
 ### get_email_identity
 
 Provides information about a specific identity associated with your Amazon
@@ -560,6 +615,8 @@ Keyword-only arguments:
 
 Returns
 [GetEmailIdentityResponseTypeDef](./type_defs.md#getemailidentityresponsetypedef).
+
+<a id="list_configuration_sets"></a>
 
 ### list_configuration_sets
 
@@ -583,6 +640,8 @@ Keyword-only arguments:
 Returns
 [ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef).
 
+<a id="list_dedicated_ip_pools"></a>
+
 ### list_dedicated_ip_pools
 
 List all of the dedicated IP pools that exist in your Amazon Pinpoint account
@@ -605,6 +664,8 @@ Keyword-only arguments:
 Returns
 [ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef).
 
+<a id="list_deliverability_test_reports"></a>
+
 ### list_deliverability_test_reports
 
 Show a list of the predictive inbox placement tests that you've performed,
@@ -626,6 +687,8 @@ Keyword-only arguments:
 
 Returns
 [ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef).
+
+<a id="list_domain_deliverability_campaigns"></a>
 
 ### list_domain_deliverability_campaigns
 
@@ -652,6 +715,8 @@ Keyword-only arguments:
 Returns
 [ListDomainDeliverabilityCampaignsResponseTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsresponsetypedef).
 
+<a id="list_email_identities"></a>
+
 ### list_email_identities
 
 Returns a list of all of the email identities that are associated with your
@@ -674,6 +739,8 @@ Keyword-only arguments:
 Returns
 [ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieve a list of the tags (keys and values) that are associated with a
@@ -695,6 +762,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="put_account_dedicated_ip_warmup_attributes"></a>
+
 ### put_account_dedicated_ip_warmup_attributes
 
 Enable or disable the automatic warm-up feature for dedicated IP addresses.
@@ -715,6 +784,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_account_sending_attributes"></a>
+
 ### put_account_sending_attributes
 
 Enable or disable the ability of your account to send email.
@@ -733,6 +804,8 @@ Keyword-only arguments:
 - `SendingEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_configuration_set_delivery_options"></a>
 
 ### put_configuration_set_delivery_options
 
@@ -754,6 +827,8 @@ Keyword-only arguments:
 - `SendingPoolName`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_configuration_set_reputation_options"></a>
 
 ### put_configuration_set_reputation_options
 
@@ -777,6 +852,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_configuration_set_sending_options"></a>
+
 ### put_configuration_set_sending_options
 
 Enable or disable email sending for messages that use a particular
@@ -797,6 +874,8 @@ Keyword-only arguments:
 - `SendingEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_configuration_set_tracking_options"></a>
 
 ### put_configuration_set_tracking_options
 
@@ -819,6 +898,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_dedicated_ip_in_pool"></a>
+
 ### put_dedicated_ip_in_pool
 
 Move a dedicated IP address to an existing dedicated IP pool.
@@ -838,6 +919,8 @@ Keyword-only arguments:
 - `DestinationPoolName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_dedicated_ip_warmup_attributes"></a>
 
 ### put_dedicated_ip_warmup_attributes
 
@@ -861,6 +944,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_deliverability_dashboard_option"></a>
+
 ### put_deliverability_dashboard_option
 
 Enable or disable the Deliverability dashboard for your Amazon Pinpoint
@@ -883,6 +968,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_email_identity_dkim_attributes"></a>
+
 ### put_email_identity_dkim_attributes
 
 Used to enable or disable DKIM authentication for an email identity.
@@ -903,6 +990,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_email_identity_feedback_attributes"></a>
+
 ### put_email_identity_feedback_attributes
 
 Used to enable or disable feedback forwarding for an identity.
@@ -922,6 +1011,8 @@ Keyword-only arguments:
 - `EmailForwardingEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_email_identity_mail_from_attributes"></a>
 
 ### put_email_identity_mail_from_attributes
 
@@ -946,6 +1037,8 @@ Keyword-only arguments:
   [BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="send_email"></a>
 
 ### send_email
 
@@ -974,6 +1067,8 @@ Keyword-only arguments:
 
 Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Add one or more tags (keys and values) to a specified resource.
@@ -993,6 +1088,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Remove one or more tags (keys and values) from a specified resource.
@@ -1011,6 +1108,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_configuration_set_event_destination"></a>
 
 ### update_configuration_set_event_destination
 
@@ -1035,6 +1134,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

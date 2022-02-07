@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-marketplacecommerceanalytics-module"></a>
+
 # Typed dictionaries for boto3 MarketplaceCommerceAnalytics module
 
 > [Index](..) > [MarketplaceCommerceAnalytics](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
 type annotations stubs module
-[mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
+[mypy-boto3-marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 
 - [Typed dictionaries for boto3 MarketplaceCommerceAnalytics module](#typed-dictionaries-for-boto3-marketplacecommerceanalytics-module)
   - [GenerateDataSetRequestRequestTypeDef](#generatedatasetrequestrequesttypedef)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StartSupportDataExportRequestRequestTypeDef](#startsupportdataexportrequestrequesttypedef)
   - [StartSupportDataExportResultTypeDef](#startsupportdataexportresulttypedef)
+
+<a id="generatedatasetrequestrequesttypedef"></a>
 
 ## GenerateDataSetRequestRequestTypeDef
 
@@ -33,6 +37,8 @@ Optional fields:
 - `destinationS3Prefix`: `str`
 - `customerDefinedValues`: `Mapping`\[`str`, `str`\]
 
+<a id="generatedatasetresulttypedef"></a>
+
 ## GenerateDataSetResultTypeDef
 
 ```python
@@ -44,6 +50,8 @@ Required fields:
 - `dataSetRequestId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -58,6 +66,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="startsupportdataexportrequestrequesttypedef"></a>
 
 ## StartSupportDataExportRequestRequestTypeDef
 
@@ -77,6 +87,8 @@ Optional fields:
 
 - `destinationS3Prefix`: `str`
 - `customerDefinedValues`: `Mapping`\[`str`, `str`\]
+
+<a id="startsupportdataexportresulttypedef"></a>
 
 ## StartSupportDataExportResultTypeDef
 

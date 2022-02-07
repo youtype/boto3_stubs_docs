@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-clouddirectory-module"></a>
+
 # Paginators for boto3 CloudDirectory module
 
 > [Index](..) > [CloudDirectory](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
 type annotations stubs module
-[mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
+[mypy-boto3-clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
 - [Paginators for boto3 CloudDirectory module](#paginators-for-boto3-clouddirectory-module)
   - [ListAppliedSchemaArnsPaginator](#listappliedschemaarnspaginator)
@@ -28,6 +30,8 @@ type annotations stubs module
   - [ListTypedLinkFacetNamesPaginator](#listtypedlinkfacetnamespaginator)
   - [LookupPolicyPaginator](#lookuppolicypaginator)
 
+<a id="listappliedschemaarnspaginator"></a>
+
 ## ListAppliedSchemaArnsPaginator
 
 Type annotations for
@@ -36,10 +40,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListAppliedSchemaArnsPaginator
 
 def get_list_applied_schema_arns_paginator() -> ListAppliedSchemaArnsPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_applied_schema_arns")
+    return Session().client("clouddirectory").get_paginator("list_applied_schema_arns")
 ```
 
 Boto3 documentation:
@@ -55,6 +61,8 @@ Arguments for `ListAppliedSchemaArnsPaginator.paginate` method:
 `ListAppliedSchemaArnsPaginator.paginate` returns
 `_PageIterator`\[[ListAppliedSchemaArnsResponseTypeDef](./type_defs.md#listappliedschemaarnsresponsetypedef)\].
 
+<a id="listattachedindicespaginator"></a>
+
 ## ListAttachedIndicesPaginator
 
 Type annotations for
@@ -63,10 +71,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListAttachedIndicesPaginator
 
 def get_list_attached_indices_paginator() -> ListAttachedIndicesPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_attached_indices")
+    return Session().client("clouddirectory").get_paginator("list_attached_indices")
 ```
 
 Boto3 documentation:
@@ -85,6 +95,8 @@ Arguments for `ListAttachedIndicesPaginator.paginate` method:
 `ListAttachedIndicesPaginator.paginate` returns
 `_PageIterator`\[[ListAttachedIndicesResponseTypeDef](./type_defs.md#listattachedindicesresponsetypedef)\].
 
+<a id="listdevelopmentschemaarnspaginator"></a>
+
 ## ListDevelopmentSchemaArnsPaginator
 
 Type annotations for
@@ -93,10 +105,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListDevelopmentSchemaArnsPaginator
 
 def get_list_development_schema_arns_paginator() -> ListDevelopmentSchemaArnsPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_development_schema_arns")
+    return Session().client("clouddirectory").get_paginator("list_development_schema_arns")
 ```
 
 Boto3 documentation:
@@ -110,6 +124,8 @@ Arguments for `ListDevelopmentSchemaArnsPaginator.paginate` method:
 `ListDevelopmentSchemaArnsPaginator.paginate` returns
 `_PageIterator`\[[ListDevelopmentSchemaArnsResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponsetypedef)\].
 
+<a id="listdirectoriespaginator"></a>
+
 ## ListDirectoriesPaginator
 
 Type annotations for
@@ -118,10 +134,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListDirectoriesPaginator
 
 def get_list_directories_paginator() -> ListDirectoriesPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_directories")
+    return Session().client("clouddirectory").get_paginator("list_directories")
 ```
 
 Boto3 documentation:
@@ -136,6 +154,8 @@ Arguments for `ListDirectoriesPaginator.paginate` method:
 `ListDirectoriesPaginator.paginate` returns
 `_PageIterator`\[[ListDirectoriesResponseTypeDef](./type_defs.md#listdirectoriesresponsetypedef)\].
 
+<a id="listfacetattributespaginator"></a>
+
 ## ListFacetAttributesPaginator
 
 Type annotations for
@@ -144,10 +164,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListFacetAttributesPaginator
 
 def get_list_facet_attributes_paginator() -> ListFacetAttributesPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_facet_attributes")
+    return Session().client("clouddirectory").get_paginator("list_facet_attributes")
 ```
 
 Boto3 documentation:
@@ -163,6 +185,8 @@ Arguments for `ListFacetAttributesPaginator.paginate` method:
 `ListFacetAttributesPaginator.paginate` returns
 `_PageIterator`\[[ListFacetAttributesResponseTypeDef](./type_defs.md#listfacetattributesresponsetypedef)\].
 
+<a id="listfacetnamespaginator"></a>
+
 ## ListFacetNamesPaginator
 
 Type annotations for
@@ -171,10 +195,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListFacetNamesPaginator
 
 def get_list_facet_names_paginator() -> ListFacetNamesPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_facet_names")
+    return Session().client("clouddirectory").get_paginator("list_facet_names")
 ```
 
 Boto3 documentation:
@@ -189,6 +215,8 @@ Arguments for `ListFacetNamesPaginator.paginate` method:
 `ListFacetNamesPaginator.paginate` returns
 `_PageIterator`\[[ListFacetNamesResponseTypeDef](./type_defs.md#listfacetnamesresponsetypedef)\].
 
+<a id="listincomingtypedlinkspaginator"></a>
+
 ## ListIncomingTypedLinksPaginator
 
 Type annotations for
@@ -197,10 +225,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListIncomingTypedLinksPaginator
 
 def get_list_incoming_typed_links_paginator() -> ListIncomingTypedLinksPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_incoming_typed_links")
+    return Session().client("clouddirectory").get_paginator("list_incoming_typed_links")
 ```
 
 Boto3 documentation:
@@ -223,6 +253,8 @@ Arguments for `ListIncomingTypedLinksPaginator.paginate` method:
 `ListIncomingTypedLinksPaginator.paginate` returns
 `_PageIterator`\[[ListIncomingTypedLinksResponseTypeDef](./type_defs.md#listincomingtypedlinksresponsetypedef)\].
 
+<a id="listindexpaginator"></a>
+
 ## ListIndexPaginator
 
 Type annotations for
@@ -231,10 +263,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListIndexPaginator
 
 def get_list_index_paginator() -> ListIndexPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_index")
+    return Session().client("clouddirectory").get_paginator("list_index")
 ```
 
 Boto3 documentation:
@@ -255,6 +289,8 @@ Arguments for `ListIndexPaginator.paginate` method:
 `ListIndexPaginator.paginate` returns
 `_PageIterator`\[[ListIndexResponseTypeDef](./type_defs.md#listindexresponsetypedef)\].
 
+<a id="listmanagedschemaarnspaginator"></a>
+
 ## ListManagedSchemaArnsPaginator
 
 Type annotations for
@@ -263,10 +299,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListManagedSchemaArnsPaginator
 
 def get_list_managed_schema_arns_paginator() -> ListManagedSchemaArnsPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_managed_schema_arns")
+    return Session().client("clouddirectory").get_paginator("list_managed_schema_arns")
 ```
 
 Boto3 documentation:
@@ -281,6 +319,8 @@ Arguments for `ListManagedSchemaArnsPaginator.paginate` method:
 `ListManagedSchemaArnsPaginator.paginate` returns
 `_PageIterator`\[[ListManagedSchemaArnsResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponsetypedef)\].
 
+<a id="listobjectattributespaginator"></a>
+
 ## ListObjectAttributesPaginator
 
 Type annotations for
@@ -289,10 +329,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListObjectAttributesPaginator
 
 def get_list_object_attributes_paginator() -> ListObjectAttributesPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_object_attributes")
+    return Session().client("clouddirectory").get_paginator("list_object_attributes")
 ```
 
 Boto3 documentation:
@@ -312,6 +354,8 @@ Arguments for `ListObjectAttributesPaginator.paginate` method:
 `ListObjectAttributesPaginator.paginate` returns
 `_PageIterator`\[[ListObjectAttributesResponseTypeDef](./type_defs.md#listobjectattributesresponsetypedef)\].
 
+<a id="listobjectparentpathspaginator"></a>
+
 ## ListObjectParentPathsPaginator
 
 Type annotations for
@@ -320,10 +364,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListObjectParentPathsPaginator
 
 def get_list_object_parent_paths_paginator() -> ListObjectParentPathsPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_object_parent_paths")
+    return Session().client("clouddirectory").get_paginator("list_object_parent_paths")
 ```
 
 Boto3 documentation:
@@ -340,6 +386,8 @@ Arguments for `ListObjectParentPathsPaginator.paginate` method:
 `ListObjectParentPathsPaginator.paginate` returns
 `_PageIterator`\[[ListObjectParentPathsResponseTypeDef](./type_defs.md#listobjectparentpathsresponsetypedef)\].
 
+<a id="listobjectpoliciespaginator"></a>
+
 ## ListObjectPoliciesPaginator
 
 Type annotations for
@@ -348,10 +396,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListObjectPoliciesPaginator
 
 def get_list_object_policies_paginator() -> ListObjectPoliciesPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_object_policies")
+    return Session().client("clouddirectory").get_paginator("list_object_policies")
 ```
 
 Boto3 documentation:
@@ -370,6 +420,8 @@ Arguments for `ListObjectPoliciesPaginator.paginate` method:
 `ListObjectPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListObjectPoliciesResponseTypeDef](./type_defs.md#listobjectpoliciesresponsetypedef)\].
 
+<a id="listoutgoingtypedlinkspaginator"></a>
+
 ## ListOutgoingTypedLinksPaginator
 
 Type annotations for
@@ -378,10 +430,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListOutgoingTypedLinksPaginator
 
 def get_list_outgoing_typed_links_paginator() -> ListOutgoingTypedLinksPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_outgoing_typed_links")
+    return Session().client("clouddirectory").get_paginator("list_outgoing_typed_links")
 ```
 
 Boto3 documentation:
@@ -404,6 +458,8 @@ Arguments for `ListOutgoingTypedLinksPaginator.paginate` method:
 `ListOutgoingTypedLinksPaginator.paginate` returns
 `_PageIterator`\[[ListOutgoingTypedLinksResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponsetypedef)\].
 
+<a id="listpolicyattachmentspaginator"></a>
+
 ## ListPolicyAttachmentsPaginator
 
 Type annotations for
@@ -412,10 +468,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListPolicyAttachmentsPaginator
 
 def get_list_policy_attachments_paginator() -> ListPolicyAttachmentsPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_policy_attachments")
+    return Session().client("clouddirectory").get_paginator("list_policy_attachments")
 ```
 
 Boto3 documentation:
@@ -434,6 +492,8 @@ Arguments for `ListPolicyAttachmentsPaginator.paginate` method:
 `ListPolicyAttachmentsPaginator.paginate` returns
 `_PageIterator`\[[ListPolicyAttachmentsResponseTypeDef](./type_defs.md#listpolicyattachmentsresponsetypedef)\].
 
+<a id="listpublishedschemaarnspaginator"></a>
+
 ## ListPublishedSchemaArnsPaginator
 
 Type annotations for
@@ -442,10 +502,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListPublishedSchemaArnsPaginator
 
 def get_list_published_schema_arns_paginator() -> ListPublishedSchemaArnsPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_published_schema_arns")
+    return Session().client("clouddirectory").get_paginator("list_published_schema_arns")
 ```
 
 Boto3 documentation:
@@ -460,6 +522,8 @@ Arguments for `ListPublishedSchemaArnsPaginator.paginate` method:
 `ListPublishedSchemaArnsPaginator.paginate` returns
 `_PageIterator`\[[ListPublishedSchemaArnsResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -468,10 +532,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("clouddirectory").get_paginator("list_tags_for_resource")
+    return Session().client("clouddirectory").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:
@@ -486,6 +552,8 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 `ListTagsForResourcePaginator.paginate` returns
 `_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
+<a id="listtypedlinkfacetattributespaginator"></a>
+
 ## ListTypedLinkFacetAttributesPaginator
 
 Type annotations for
@@ -494,10 +562,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListTypedLinkFacetAttributesPaginator
 
 def get_list_typed_link_facet_attributes_paginator() -> ListTypedLinkFacetAttributesPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_typed_link_facet_attributes")
+    return Session().client("clouddirectory").get_paginator("list_typed_link_facet_attributes")
 ```
 
 Boto3 documentation:
@@ -513,6 +583,8 @@ Arguments for `ListTypedLinkFacetAttributesPaginator.paginate` method:
 `ListTypedLinkFacetAttributesPaginator.paginate` returns
 `_PageIterator`\[[ListTypedLinkFacetAttributesResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponsetypedef)\].
 
+<a id="listtypedlinkfacetnamespaginator"></a>
+
 ## ListTypedLinkFacetNamesPaginator
 
 Type annotations for
@@ -521,10 +593,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import ListTypedLinkFacetNamesPaginator
 
 def get_list_typed_link_facet_names_paginator() -> ListTypedLinkFacetNamesPaginator:
-    return boto3.client("clouddirectory").get_paginator("list_typed_link_facet_names")
+    return Session().client("clouddirectory").get_paginator("list_typed_link_facet_names")
 ```
 
 Boto3 documentation:
@@ -539,6 +613,8 @@ Arguments for `ListTypedLinkFacetNamesPaginator.paginate` method:
 `ListTypedLinkFacetNamesPaginator.paginate` returns
 `_PageIterator`\[[ListTypedLinkFacetNamesResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponsetypedef)\].
 
+<a id="lookuppolicypaginator"></a>
+
 ## LookupPolicyPaginator
 
 Type annotations for
@@ -547,10 +623,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_clouddirectory.paginator import LookupPolicyPaginator
 
 def get_lookup_policy_paginator() -> LookupPolicyPaginator:
-    return boto3.client("clouddirectory").get_paginator("lookup_policy")
+    return Session().client("clouddirectory").get_paginator("lookup_policy")
 ```
 
 Boto3 documentation:

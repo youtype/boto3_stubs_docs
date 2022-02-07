@@ -1,3 +1,5 @@
+<a id="recyclebinclient-for-boto3-recyclebin-module"></a>
+
 # RecycleBinClient for boto3 RecycleBin module
 
 > [Index](..) > [RecycleBin](.) > RecycleBinClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin)
 type annotations stubs module
-[mypy_boto3_rbin](https://pypi.org/project/mypy-boto3-rbin/).
+[mypy-boto3-rbin](https://pypi.org/project/mypy-boto3-rbin/).
 
 - [RecycleBinClient for boto3 RecycleBin module](#recyclebinclient-for-boto3-recyclebin-module)
   - [RecycleBinClient](#recyclebinclient)
@@ -24,6 +26,8 @@ type annotations stubs module
     - [update_rule](#update_rule)
     - [get_paginator](#get_paginator)
 
+<a id="recyclebinclient"></a>
+
 ## RecycleBinClient
 
 Type annotations for `boto3.client("rbin")`
@@ -31,14 +35,17 @@ Type annotations for `boto3.client("rbin")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_rbin.client import RecycleBinClient
 
 def get_rbin_client() -> RecycleBinClient:
-    return boto3.client("rbin")
+    return Session().client("rbin")
 ```
 
 Boto3 documentation:
 [RecycleBin.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -60,7 +67,11 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -72,6 +83,8 @@ Boto3 documentation:
 [RecycleBin.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -87,6 +100,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_rule"></a>
 
 ### create_rule
 
@@ -113,6 +128,8 @@ Keyword-only arguments:
 
 Returns [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef).
 
+<a id="delete_rule"></a>
+
 ### delete_rule
 
 Deletes a Recycle Bin retention rule.
@@ -130,6 +147,8 @@ Keyword-only arguments:
 - `Identifier`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -149,6 +168,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_rule"></a>
+
 ### get_rule
 
 Gets information about a Recycle Bin retention rule.
@@ -166,6 +187,8 @@ Keyword-only arguments:
 - `Identifier`: `str` *(required)*
 
 Returns [GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef).
+
+<a id="list_rules"></a>
 
 ### list_rules
 
@@ -190,6 +213,8 @@ Keyword-only arguments:
 
 Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags assigned to a retention rule.
@@ -208,6 +233,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -228,6 +255,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Unassigns a tag from a retention rule.
@@ -246,6 +275,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_rule"></a>
 
 ### update_rule
 
@@ -270,6 +301,8 @@ Keyword-only arguments:
   `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
 Returns [UpdateRuleResponseTypeDef](./type_defs.md#updateruleresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

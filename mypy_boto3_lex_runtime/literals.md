@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-lexruntimeservice-module"></a>
+
 # Literals for boto3 LexRuntimeService module
 
 > [Index](..) > [LexRuntimeService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
 type annotations stubs module
-[mypy_boto3_lex_runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
+[mypy-boto3-lex-runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
 
 - [Literals for boto3 LexRuntimeService module](#literals-for-boto3-lexruntimeservice-module)
   - [ConfirmationStatusType](#confirmationstatustype)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [FulfillmentStateType](#fulfillmentstatetype)
   - [MessageFormatTypeType](#messageformattypetype)
   - [ServiceName](#servicename)
+
+<a id="confirmationstatustype"></a>
 
 ## ConfirmationStatusType
 
@@ -28,6 +32,8 @@ Values:
 - `Denied`
 - `None`
 
+<a id="contenttypetype"></a>
+
 ## ContentTypeType
 
 ```python
@@ -37,6 +43,8 @@ from mypy_boto3_lex_runtime.literals import ContentTypeType
 Values:
 
 - `application/vnd.amazonaws.card.generic`
+
+<a id="dialogactiontypetype"></a>
 
 ## DialogActionTypeType
 
@@ -51,6 +59,8 @@ Values:
 - `Delegate`
 - `ElicitIntent`
 - `ElicitSlot`
+
+<a id="dialogstatetype"></a>
 
 ## DialogStateType
 
@@ -67,6 +77,8 @@ Values:
 - `Fulfilled`
 - `ReadyForFulfillment`
 
+<a id="fulfillmentstatetype"></a>
+
 ## FulfillmentStateType
 
 ```python
@@ -78,6 +90,8 @@ Values:
 - `Failed`
 - `Fulfilled`
 - `ReadyForFulfillment`
+
+<a id="messageformattypetype"></a>
 
 ## MessageFormatTypeType
 
@@ -91,6 +105,8 @@ Values:
 - `CustomPayload`
 - `PlainText`
 - `SSML`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

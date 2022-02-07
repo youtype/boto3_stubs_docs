@@ -1,3 +1,5 @@
+<a id="devicefarmclient-for-boto3-devicefarm-module"></a>
+
 # DeviceFarmClient for boto3 DeviceFarm module
 
 > [Index](..) > [DeviceFarm](.) > DeviceFarmClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module
-[mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
+[mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 - [DeviceFarmClient for boto3 DeviceFarm module](#devicefarmclient-for-boto3-devicefarm-module)
   - [DeviceFarmClient](#devicefarmclient)
@@ -93,6 +95,8 @@ type annotations stubs module
     - [update_vpce_configuration](#update_vpce_configuration)
     - [get_paginator](#get_paginator)
 
+<a id="devicefarmclient"></a>
+
 ## DeviceFarmClient
 
 Type annotations for `boto3.client("devicefarm")`
@@ -100,14 +104,17 @@ Type annotations for `boto3.client("devicefarm")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_devicefarm.client import DeviceFarmClient
 
 def get_devicefarm_client() -> DeviceFarmClient:
-    return boto3.client("devicefarm")
+    return Session().client("devicefarm")
 ```
 
 Boto3 documentation:
 [DeviceFarm.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -137,7 +144,11 @@ Exceptions:
 - `Exceptions.TagPolicyException`
 - `Exceptions.TooManyTagsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -149,6 +160,8 @@ Boto3 documentation:
 [DeviceFarm.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -164,6 +177,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_device_pool"></a>
 
 ### create_device_pool
 
@@ -187,6 +202,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDevicePoolResultTypeDef](./type_defs.md#createdevicepoolresulttypedef).
+
+<a id="create_instance_profile"></a>
 
 ### create_instance_profile
 
@@ -212,6 +229,8 @@ Keyword-only arguments:
 
 Returns
 [CreateInstanceProfileResultTypeDef](./type_defs.md#createinstanceprofileresulttypedef).
+
+<a id="create_network_profile"></a>
 
 ### create_network_profile
 
@@ -244,6 +263,8 @@ Keyword-only arguments:
 Returns
 [CreateNetworkProfileResultTypeDef](./type_defs.md#createnetworkprofileresulttypedef).
 
+<a id="create_project"></a>
+
 ### create_project
 
 Creates a project.
@@ -263,6 +284,8 @@ Keyword-only arguments:
 
 Returns
 [CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
+
+<a id="create_remote_access_session"></a>
 
 ### create_remote_access_session
 
@@ -296,6 +319,8 @@ Keyword-only arguments:
 Returns
 [CreateRemoteAccessSessionResultTypeDef](./type_defs.md#createremoteaccesssessionresulttypedef).
 
+<a id="create_test_grid_project"></a>
+
 ### create_test_grid_project
 
 Creates a Selenium testing project.
@@ -319,6 +344,8 @@ Keyword-only arguments:
 Returns
 [CreateTestGridProjectResultTypeDef](./type_defs.md#createtestgridprojectresulttypedef).
 
+<a id="create_test_grid_url"></a>
+
 ### create_test_grid_url
 
 Creates a signed, short-term URL that can be passed to a Selenium
@@ -340,6 +367,8 @@ Keyword-only arguments:
 Returns
 [CreateTestGridUrlResultTypeDef](./type_defs.md#createtestgridurlresulttypedef).
 
+<a id="create_upload"></a>
+
 ### create_upload
 
 Uploads an app or test scripts.
@@ -360,6 +389,8 @@ Keyword-only arguments:
 - `contentType`: `str`
 
 Returns [CreateUploadResultTypeDef](./type_defs.md#createuploadresulttypedef).
+
+<a id="create_vpce_configuration"></a>
 
 ### create_vpce_configuration
 
@@ -385,6 +416,8 @@ Keyword-only arguments:
 Returns
 [CreateVPCEConfigurationResultTypeDef](./type_defs.md#createvpceconfigurationresulttypedef).
 
+<a id="delete_device_pool"></a>
+
 ### delete_device_pool
 
 Deletes a device pool given the pool ARN.
@@ -402,6 +435,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_instance_profile"></a>
 
 ### delete_instance_profile
 
@@ -422,6 +457,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_network_profile"></a>
+
 ### delete_network_profile
 
 Deletes a network profile.
@@ -441,6 +478,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_project"></a>
+
 ### delete_project
 
 Deletes an AWS Device Farm project, given the project ARN.
@@ -458,6 +497,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_remote_access_session"></a>
 
 ### delete_remote_access_session
 
@@ -478,6 +519,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_run"></a>
+
 ### delete_run
 
 Deletes the run, given the run ARN.
@@ -495,6 +538,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_test_grid_project"></a>
 
 ### delete_test_grid_project
 
@@ -515,6 +560,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_upload"></a>
+
 ### delete_upload
 
 Deletes an upload given the upload ARN.
@@ -532,6 +579,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_vpce_configuration"></a>
 
 ### delete_vpce_configuration
 
@@ -552,6 +601,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -571,6 +622,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_account_settings"></a>
+
 ### get_account_settings
 
 Returns the number of unmetered iOS or unmetered Android devices that have been
@@ -583,6 +636,8 @@ Boto3 documentation:
 
 Returns
 [GetAccountSettingsResultTypeDef](./type_defs.md#getaccountsettingsresulttypedef).
+
+<a id="get_device"></a>
 
 ### get_device
 
@@ -601,6 +656,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns [GetDeviceResultTypeDef](./type_defs.md#getdeviceresulttypedef).
+
+<a id="get_device_instance"></a>
 
 ### get_device_instance
 
@@ -622,6 +679,8 @@ Keyword-only arguments:
 Returns
 [GetDeviceInstanceResultTypeDef](./type_defs.md#getdeviceinstanceresulttypedef).
 
+<a id="get_device_pool"></a>
+
 ### get_device_pool
 
 Gets information about a device pool.
@@ -640,6 +699,8 @@ Keyword-only arguments:
 
 Returns
 [GetDevicePoolResultTypeDef](./type_defs.md#getdevicepoolresulttypedef).
+
+<a id="get_device_pool_compatibility"></a>
 
 ### get_device_pool_compatibility
 
@@ -666,6 +727,8 @@ Keyword-only arguments:
 Returns
 [GetDevicePoolCompatibilityResultTypeDef](./type_defs.md#getdevicepoolcompatibilityresulttypedef).
 
+<a id="get_instance_profile"></a>
+
 ### get_instance_profile
 
 Returns information about the specified instance profile.
@@ -685,6 +748,8 @@ Keyword-only arguments:
 Returns
 [GetInstanceProfileResultTypeDef](./type_defs.md#getinstanceprofileresulttypedef).
 
+<a id="get_job"></a>
+
 ### get_job
 
 Gets information about a job.
@@ -702,6 +767,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns [GetJobResultTypeDef](./type_defs.md#getjobresulttypedef).
+
+<a id="get_network_profile"></a>
 
 ### get_network_profile
 
@@ -721,6 +788,8 @@ Keyword-only arguments:
 
 Returns
 [GetNetworkProfileResultTypeDef](./type_defs.md#getnetworkprofileresulttypedef).
+
+<a id="get_offering_status"></a>
 
 ### get_offering_status
 
@@ -742,6 +811,8 @@ Keyword-only arguments:
 Returns
 [GetOfferingStatusResultTypeDef](./type_defs.md#getofferingstatusresulttypedef).
 
+<a id="get_project"></a>
+
 ### get_project
 
 Gets information about a project.
@@ -759,6 +830,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns [GetProjectResultTypeDef](./type_defs.md#getprojectresulttypedef).
+
+<a id="get_remote_access_session"></a>
 
 ### get_remote_access_session
 
@@ -780,6 +853,8 @@ Keyword-only arguments:
 Returns
 [GetRemoteAccessSessionResultTypeDef](./type_defs.md#getremoteaccesssessionresulttypedef).
 
+<a id="get_run"></a>
+
 ### get_run
 
 Gets information about a run.
@@ -797,6 +872,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns [GetRunResultTypeDef](./type_defs.md#getrunresulttypedef).
+
+<a id="get_suite"></a>
 
 ### get_suite
 
@@ -816,6 +893,8 @@ Keyword-only arguments:
 
 Returns [GetSuiteResultTypeDef](./type_defs.md#getsuiteresulttypedef).
 
+<a id="get_test"></a>
+
 ### get_test
 
 Gets information about a test.
@@ -833,6 +912,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns [GetTestResultTypeDef](./type_defs.md#gettestresulttypedef).
+
+<a id="get_test_grid_project"></a>
 
 ### get_test_grid_project
 
@@ -852,6 +933,8 @@ Keyword-only arguments:
 
 Returns
 [GetTestGridProjectResultTypeDef](./type_defs.md#gettestgridprojectresulttypedef).
+
+<a id="get_test_grid_session"></a>
 
 ### get_test_grid_session
 
@@ -875,6 +958,8 @@ Keyword-only arguments:
 Returns
 [GetTestGridSessionResultTypeDef](./type_defs.md#gettestgridsessionresulttypedef).
 
+<a id="get_upload"></a>
+
 ### get_upload
 
 Gets information about an upload.
@@ -892,6 +977,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns [GetUploadResultTypeDef](./type_defs.md#getuploadresulttypedef).
+
+<a id="get_vpce_configuration"></a>
 
 ### get_vpce_configuration
 
@@ -914,6 +1001,8 @@ Keyword-only arguments:
 Returns
 [GetVPCEConfigurationResultTypeDef](./type_defs.md#getvpceconfigurationresulttypedef).
 
+<a id="install_to_remote_access_session"></a>
+
 ### install_to_remote_access_session
 
 Installs an application to the device in a remote access session.
@@ -934,6 +1023,8 @@ Keyword-only arguments:
 
 Returns
 [InstallToRemoteAccessSessionResultTypeDef](./type_defs.md#installtoremoteaccesssessionresulttypedef).
+
+<a id="list_artifacts"></a>
 
 ### list_artifacts
 
@@ -957,6 +1048,8 @@ Keyword-only arguments:
 Returns
 [ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef).
 
+<a id="list_device_instances"></a>
+
 ### list_device_instances
 
 Returns information about the private device instances associated with one or
@@ -977,6 +1070,8 @@ Keyword-only arguments:
 
 Returns
 [ListDeviceInstancesResultTypeDef](./type_defs.md#listdeviceinstancesresulttypedef).
+
+<a id="list_device_pools"></a>
 
 ### list_device_pools
 
@@ -999,6 +1094,8 @@ Keyword-only arguments:
 Returns
 [ListDevicePoolsResultTypeDef](./type_defs.md#listdevicepoolsresulttypedef).
 
+<a id="list_devices"></a>
+
 ### list_devices
 
 Gets information about unique device types.
@@ -1019,6 +1116,8 @@ Keyword-only arguments:
   `Sequence`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 
 Returns [ListDevicesResultTypeDef](./type_defs.md#listdevicesresulttypedef).
+
+<a id="list_instance_profiles"></a>
 
 ### list_instance_profiles
 
@@ -1041,6 +1140,8 @@ Keyword-only arguments:
 Returns
 [ListInstanceProfilesResultTypeDef](./type_defs.md#listinstanceprofilesresulttypedef).
 
+<a id="list_jobs"></a>
+
 ### list_jobs
 
 Gets information about jobs for a given test run.
@@ -1059,6 +1160,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
+
+<a id="list_network_profiles"></a>
 
 ### list_network_profiles
 
@@ -1081,6 +1184,8 @@ Keyword-only arguments:
 Returns
 [ListNetworkProfilesResultTypeDef](./type_defs.md#listnetworkprofilesresulttypedef).
 
+<a id="list_offering_promotions"></a>
+
 ### list_offering_promotions
 
 Returns a list of offering promotions.
@@ -1100,6 +1205,8 @@ Keyword-only arguments:
 
 Returns
 [ListOfferingPromotionsResultTypeDef](./type_defs.md#listofferingpromotionsresulttypedef).
+
+<a id="list_offering_transactions"></a>
 
 ### list_offering_transactions
 
@@ -1122,6 +1229,8 @@ Keyword-only arguments:
 Returns
 [ListOfferingTransactionsResultTypeDef](./type_defs.md#listofferingtransactionsresulttypedef).
 
+<a id="list_offerings"></a>
+
 ### list_offerings
 
 Returns a list of products or offerings that the user can manage through the
@@ -1142,6 +1251,8 @@ Keyword-only arguments:
 Returns
 [ListOfferingsResultTypeDef](./type_defs.md#listofferingsresulttypedef).
 
+<a id="list_projects"></a>
+
 ### list_projects
 
 Gets information about projects.
@@ -1160,6 +1271,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
+
+<a id="list_remote_access_sessions"></a>
 
 ### list_remote_access_sessions
 
@@ -1182,6 +1295,8 @@ Keyword-only arguments:
 Returns
 [ListRemoteAccessSessionsResultTypeDef](./type_defs.md#listremoteaccesssessionsresulttypedef).
 
+<a id="list_runs"></a>
+
 ### list_runs
 
 Gets information about runs, given an AWS Device Farm project ARN.
@@ -1200,6 +1315,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListRunsResultTypeDef](./type_defs.md#listrunsresulttypedef).
+
+<a id="list_samples"></a>
 
 ### list_samples
 
@@ -1220,6 +1337,8 @@ Keyword-only arguments:
 
 Returns [ListSamplesResultTypeDef](./type_defs.md#listsamplesresulttypedef).
 
+<a id="list_suites"></a>
+
 ### list_suites
 
 Gets information about test suites for a given job.
@@ -1238,6 +1357,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListSuitesResultTypeDef](./type_defs.md#listsuitesresulttypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1258,6 +1379,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_test_grid_projects"></a>
 
 ### list_test_grid_projects
 
@@ -1280,6 +1403,8 @@ Keyword-only arguments:
 Returns
 [ListTestGridProjectsResultTypeDef](./type_defs.md#listtestgridprojectsresulttypedef).
 
+<a id="list_test_grid_session_actions"></a>
+
 ### list_test_grid_session_actions
 
 Returns a list of the actions taken in a TestGridSession .
@@ -1301,6 +1426,8 @@ Keyword-only arguments:
 
 Returns
 [ListTestGridSessionActionsResultTypeDef](./type_defs.md#listtestgridsessionactionsresulttypedef).
+
+<a id="list_test_grid_session_artifacts"></a>
 
 ### list_test_grid_session_artifacts
 
@@ -1325,6 +1452,8 @@ Keyword-only arguments:
 
 Returns
 [ListTestGridSessionArtifactsResultTypeDef](./type_defs.md#listtestgridsessionartifactsresulttypedef).
+
+<a id="list_test_grid_sessions"></a>
 
 ### list_test_grid_sessions
 
@@ -1354,6 +1483,8 @@ Keyword-only arguments:
 Returns
 [ListTestGridSessionsResultTypeDef](./type_defs.md#listtestgridsessionsresulttypedef).
 
+<a id="list_tests"></a>
+
 ### list_tests
 
 Gets information about tests in a given test suite.
@@ -1372,6 +1503,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListTestsResultTypeDef](./type_defs.md#listtestsresulttypedef).
+
+<a id="list_unique_problems"></a>
 
 ### list_unique_problems
 
@@ -1393,6 +1526,8 @@ Keyword-only arguments:
 Returns
 [ListUniqueProblemsResultTypeDef](./type_defs.md#listuniqueproblemsresulttypedef).
 
+<a id="list_uploads"></a>
+
 ### list_uploads
 
 Gets information about uploads, given an AWS Device Farm project ARN.
@@ -1412,6 +1547,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListUploadsResultTypeDef](./type_defs.md#listuploadsresulttypedef).
+
+<a id="list_vpce_configurations"></a>
 
 ### list_vpce_configurations
 
@@ -1435,6 +1572,8 @@ Keyword-only arguments:
 Returns
 [ListVPCEConfigurationsResultTypeDef](./type_defs.md#listvpceconfigurationsresulttypedef).
 
+<a id="purchase_offering"></a>
+
 ### purchase_offering
 
 Immediately purchases offerings for an AWS account.
@@ -1456,6 +1595,8 @@ Keyword-only arguments:
 Returns
 [PurchaseOfferingResultTypeDef](./type_defs.md#purchaseofferingresulttypedef).
 
+<a id="renew_offering"></a>
+
 ### renew_offering
 
 Explicitly sets the quantity of devices to renew for an offering, starting from
@@ -1476,6 +1617,8 @@ Keyword-only arguments:
 
 Returns
 [RenewOfferingResultTypeDef](./type_defs.md#renewofferingresulttypedef).
+
+<a id="schedule_run"></a>
 
 ### schedule_run
 
@@ -1506,6 +1649,8 @@ Keyword-only arguments:
 
 Returns [ScheduleRunResultTypeDef](./type_defs.md#schedulerunresulttypedef).
 
+<a id="stop_job"></a>
+
 ### stop_job
 
 Initiates a stop request for the current job.
@@ -1523,6 +1668,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns [StopJobResultTypeDef](./type_defs.md#stopjobresulttypedef).
+
+<a id="stop_remote_access_session"></a>
 
 ### stop_remote_access_session
 
@@ -1544,6 +1691,8 @@ Keyword-only arguments:
 Returns
 [StopRemoteAccessSessionResultTypeDef](./type_defs.md#stopremoteaccesssessionresulttypedef).
 
+<a id="stop_run"></a>
+
 ### stop_run
 
 Initiates a stop request for the current test run.
@@ -1561,6 +1710,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns [StopRunResultTypeDef](./type_defs.md#stoprunresulttypedef).
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -1581,6 +1732,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes the specified tags from a resource.
@@ -1599,6 +1752,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_device_instance"></a>
 
 ### update_device_instance
 
@@ -1621,6 +1776,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDeviceInstanceResultTypeDef](./type_defs.md#updatedeviceinstanceresulttypedef).
+
+<a id="update_device_pool"></a>
 
 ### update_device_pool
 
@@ -1647,6 +1804,8 @@ Keyword-only arguments:
 Returns
 [UpdateDevicePoolResultTypeDef](./type_defs.md#updatedevicepoolresulttypedef).
 
+<a id="update_instance_profile"></a>
+
 ### update_instance_profile
 
 Updates information about an existing private device instance profile.
@@ -1671,6 +1830,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateInstanceProfileResultTypeDef](./type_defs.md#updateinstanceprofileresulttypedef).
+
+<a id="update_network_profile"></a>
 
 ### update_network_profile
 
@@ -1703,6 +1864,8 @@ Keyword-only arguments:
 Returns
 [UpdateNetworkProfileResultTypeDef](./type_defs.md#updatenetworkprofileresulttypedef).
 
+<a id="update_project"></a>
+
 ### update_project
 
 Modifies the specified project name, given the project ARN and a new name.
@@ -1723,6 +1886,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef).
+
+<a id="update_test_grid_project"></a>
 
 ### update_test_grid_project
 
@@ -1748,6 +1913,8 @@ Keyword-only arguments:
 Returns
 [UpdateTestGridProjectResultTypeDef](./type_defs.md#updatetestgridprojectresulttypedef).
 
+<a id="update_upload"></a>
+
 ### update_upload
 
 Updates an uploaded test spec.
@@ -1768,6 +1935,8 @@ Keyword-only arguments:
 - `editContent`: `bool`
 
 Returns [UpdateUploadResultTypeDef](./type_defs.md#updateuploadresulttypedef).
+
+<a id="update_vpce_configuration"></a>
 
 ### update_vpce_configuration
 
@@ -1793,6 +1962,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVPCEConfigurationResultTypeDef](./type_defs.md#updatevpceconfigurationresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

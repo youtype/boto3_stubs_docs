@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-licensemanager-module"></a>
+
 # Literals for boto3 LicenseManager module
 
 > [Index](..) > [LicenseManager](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
-[mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
+[mypy-boto3-license-manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
 - [Literals for boto3 LicenseManager module](#literals-for-boto3-licensemanager-module)
   - [AllowedOperationType](#allowedoperationtype)
@@ -34,6 +36,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="allowedoperationtype"></a>
+
 ## AllowedOperationType
 
 ```python
@@ -50,6 +54,8 @@ Values:
 - `ExtendConsumptionLicense`
 - `ListPurchasedLicenses`
 
+<a id="checkouttypetype"></a>
+
 ## CheckoutTypeType
 
 ```python
@@ -61,6 +67,8 @@ Values:
 - `PERPETUAL`
 - `PROVISIONAL`
 
+<a id="digitalsignaturemethodtype"></a>
+
 ## DigitalSignatureMethodType
 
 ```python
@@ -70,6 +78,8 @@ from mypy_boto3_license_manager.literals import DigitalSignatureMethodType
 Values:
 
 - `JWT_PS384`
+
+<a id="entitlementdataunittype"></a>
 
 ## EntitlementDataUnitType
 
@@ -107,6 +117,8 @@ Values:
 - `Terabytes`
 - `Terabytes/Second`
 
+<a id="entitlementunittype"></a>
+
 ## EntitlementUnitType
 
 ```python
@@ -143,6 +155,8 @@ Values:
 - `Terabytes`
 - `Terabytes/Second`
 
+<a id="grantstatustype"></a>
+
 ## GrantStatusType
 
 ```python
@@ -161,6 +175,8 @@ Values:
 - `REJECTED`
 - `WORKFLOW_COMPLETED`
 
+<a id="inventoryfilterconditiontype"></a>
+
 ## InventoryFilterConditionType
 
 ```python
@@ -174,6 +190,8 @@ Values:
 - `EQUALS`
 - `NOT_EQUALS`
 
+<a id="licenseconfigurationstatustype"></a>
+
 ## LicenseConfigurationStatusType
 
 ```python
@@ -184,6 +202,8 @@ Values:
 
 - `AVAILABLE`
 - `DISABLED`
+
+<a id="licenseconversiontaskstatustype"></a>
 
 ## LicenseConversionTaskStatusType
 
@@ -196,6 +216,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `SUCCEEDED`
+
+<a id="licensecountingtypetype"></a>
 
 ## LicenseCountingTypeType
 
@@ -210,6 +232,8 @@ Values:
 - `Socket`
 - `vCPU`
 
+<a id="licensedeletionstatustype"></a>
+
 ## LicenseDeletionStatusType
 
 ```python
@@ -220,6 +244,8 @@ Values:
 
 - `DELETED`
 - `PENDING_DELETE`
+
+<a id="licensestatustype"></a>
 
 ## LicenseStatusType
 
@@ -237,6 +263,8 @@ Values:
 - `PENDING_DELETE`
 - `SUSPENDED`
 
+<a id="listassociationsforlicenseconfigurationpaginatorname"></a>
+
 ## ListAssociationsForLicenseConfigurationPaginatorName
 
 ```python
@@ -246,6 +274,8 @@ from mypy_boto3_license_manager.literals import ListAssociationsForLicenseConfig
 Values:
 
 - `list_associations_for_license_configuration`
+
+<a id="listlicenseconfigurationspaginatorname"></a>
 
 ## ListLicenseConfigurationsPaginatorName
 
@@ -257,6 +287,8 @@ Values:
 
 - `list_license_configurations`
 
+<a id="listlicensespecificationsforresourcepaginatorname"></a>
+
 ## ListLicenseSpecificationsForResourcePaginatorName
 
 ```python
@@ -266,6 +298,8 @@ from mypy_boto3_license_manager.literals import ListLicenseSpecificationsForReso
 Values:
 
 - `list_license_specifications_for_resource`
+
+<a id="listresourceinventorypaginatorname"></a>
 
 ## ListResourceInventoryPaginatorName
 
@@ -277,6 +311,8 @@ Values:
 
 - `list_resource_inventory`
 
+<a id="listusageforlicenseconfigurationpaginatorname"></a>
+
 ## ListUsageForLicenseConfigurationPaginatorName
 
 ```python
@@ -286,6 +322,8 @@ from mypy_boto3_license_manager.literals import ListUsageForLicenseConfiguration
 Values:
 
 - `list_usage_for_license_configuration`
+
+<a id="receivedstatustype"></a>
 
 ## ReceivedStatusType
 
@@ -304,6 +342,8 @@ Values:
 - `REJECTED`
 - `WORKFLOW_COMPLETED`
 
+<a id="renewtypetype"></a>
+
 ## RenewTypeType
 
 ```python
@@ -315,6 +355,8 @@ Values:
 - `Monthly`
 - `None`
 - `Weekly`
+
+<a id="reportfrequencytypetype"></a>
 
 ## ReportFrequencyTypeType
 
@@ -328,6 +370,8 @@ Values:
 - `MONTH`
 - `WEEK`
 
+<a id="reporttypetype"></a>
+
 ## ReportTypeType
 
 ```python
@@ -338,6 +382,8 @@ Values:
 
 - `LicenseConfigurationSummaryReport`
 - `LicenseConfigurationUsageReport`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -353,6 +399,8 @@ Values:
 - `RDS`
 - `SYSTEMS_MANAGER_MANAGED_INSTANCE`
 
+<a id="tokentypetype"></a>
+
 ## TokenTypeType
 
 ```python
@@ -362,6 +410,8 @@ from mypy_boto3_license_manager.literals import TokenTypeType
 Values:
 
 - `REFRESH_TOKEN`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -670,6 +720,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

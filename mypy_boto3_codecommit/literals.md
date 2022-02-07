@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-codecommit-module"></a>
+
 # Literals for boto3 CodeCommit module
 
 > [Index](..) > [CodeCommit](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
 type annotations stubs module
-[mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
+[mypy-boto3-codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
 - [Literals for boto3 CodeCommit module](#literals-for-boto3-codecommit-module)
   - [ApprovalStateType](#approvalstatetype)
@@ -33,6 +35,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="approvalstatetype"></a>
+
 ## ApprovalStateType
 
 ```python
@@ -43,6 +47,8 @@ Values:
 
 - `APPROVE`
 - `REVOKE`
+
+<a id="changetypeenumtype"></a>
 
 ## ChangeTypeEnumType
 
@@ -56,6 +62,8 @@ Values:
 - `D`
 - `M`
 
+<a id="conflictdetailleveltypeenumtype"></a>
+
 ## ConflictDetailLevelTypeEnumType
 
 ```python
@@ -66,6 +74,8 @@ Values:
 
 - `FILE_LEVEL`
 - `LINE_LEVEL`
+
+<a id="conflictresolutionstrategytypeenumtype"></a>
 
 ## ConflictResolutionStrategyTypeEnumType
 
@@ -80,6 +90,8 @@ Values:
 - `AUTOMERGE`
 - `NONE`
 
+<a id="describepullrequesteventspaginatorname"></a>
+
 ## DescribePullRequestEventsPaginatorName
 
 ```python
@@ -89,6 +101,8 @@ from mypy_boto3_codecommit.literals import DescribePullRequestEventsPaginatorNam
 Values:
 
 - `describe_pull_request_events`
+
+<a id="filemodetypeenumtype"></a>
 
 ## FileModeTypeEnumType
 
@@ -102,6 +116,8 @@ Values:
 - `NORMAL`
 - `SYMLINK`
 
+<a id="getcommentsforcomparedcommitpaginatorname"></a>
+
 ## GetCommentsForComparedCommitPaginatorName
 
 ```python
@@ -111,6 +127,8 @@ from mypy_boto3_codecommit.literals import GetCommentsForComparedCommitPaginator
 Values:
 
 - `get_comments_for_compared_commit`
+
+<a id="getcommentsforpullrequestpaginatorname"></a>
 
 ## GetCommentsForPullRequestPaginatorName
 
@@ -122,6 +140,8 @@ Values:
 
 - `get_comments_for_pull_request`
 
+<a id="getdifferencespaginatorname"></a>
+
 ## GetDifferencesPaginatorName
 
 ```python
@@ -131,6 +151,8 @@ from mypy_boto3_codecommit.literals import GetDifferencesPaginatorName
 Values:
 
 - `get_differences`
+
+<a id="listbranchespaginatorname"></a>
 
 ## ListBranchesPaginatorName
 
@@ -142,6 +164,8 @@ Values:
 
 - `list_branches`
 
+<a id="listpullrequestspaginatorname"></a>
+
 ## ListPullRequestsPaginatorName
 
 ```python
@@ -152,6 +176,8 @@ Values:
 
 - `list_pull_requests`
 
+<a id="listrepositoriespaginatorname"></a>
+
 ## ListRepositoriesPaginatorName
 
 ```python
@@ -161,6 +187,8 @@ from mypy_boto3_codecommit.literals import ListRepositoriesPaginatorName
 Values:
 
 - `list_repositories`
+
+<a id="mergeoptiontypeenumtype"></a>
 
 ## MergeOptionTypeEnumType
 
@@ -173,6 +201,8 @@ Values:
 - `FAST_FORWARD_MERGE`
 - `SQUASH_MERGE`
 - `THREE_WAY_MERGE`
+
+<a id="objecttypeenumtype"></a>
 
 ## ObjectTypeEnumType
 
@@ -187,6 +217,8 @@ Values:
 - `GIT_LINK`
 - `SYMBOLIC_LINK`
 
+<a id="orderenumtype"></a>
+
 ## OrderEnumType
 
 ```python
@@ -198,6 +230,8 @@ Values:
 - `ascending`
 - `descending`
 
+<a id="overridestatustype"></a>
+
 ## OverrideStatusType
 
 ```python
@@ -208,6 +242,8 @@ Values:
 
 - `OVERRIDE`
 - `REVOKE`
+
+<a id="pullrequesteventtypetype"></a>
 
 ## PullRequestEventTypeType
 
@@ -227,6 +263,8 @@ Values:
 - `PULL_REQUEST_SOURCE_REFERENCE_UPDATED`
 - `PULL_REQUEST_STATUS_CHANGED`
 
+<a id="pullrequeststatusenumtype"></a>
+
 ## PullRequestStatusEnumType
 
 ```python
@@ -238,6 +276,8 @@ Values:
 - `CLOSED`
 - `OPEN`
 
+<a id="relativefileversionenumtype"></a>
+
 ## RelativeFileVersionEnumType
 
 ```python
@@ -248,6 +288,8 @@ Values:
 
 - `AFTER`
 - `BEFORE`
+
+<a id="replacementtypeenumtype"></a>
 
 ## ReplacementTypeEnumType
 
@@ -262,6 +304,8 @@ Values:
 - `KEEP_SOURCE`
 - `USE_NEW_CONTENT`
 
+<a id="repositorytriggereventenumtype"></a>
+
 ## RepositoryTriggerEventEnumType
 
 ```python
@@ -275,6 +319,8 @@ Values:
 - `deleteReference`
 - `updateReference`
 
+<a id="sortbyenumtype"></a>
+
 ## SortByEnumType
 
 ```python
@@ -285,6 +331,8 @@ Values:
 
 - `lastModifiedDate`
 - `repositoryName`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -593,6 +641,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

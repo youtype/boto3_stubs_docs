@@ -1,3 +1,5 @@
+<a id="ramclient-for-boto3-ram-module"></a>
+
 # RAMClient for boto3 RAM module
 
 > [Index](..) > [RAM](.) > RAMClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
 type annotations stubs module
-[mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
+[mypy-boto3-ram](https://pypi.org/project/mypy-boto3-ram/).
 
 - [RAMClient for boto3 RAM module](#ramclient-for-boto3-ram-module)
   - [RAMClient](#ramclient)
@@ -41,6 +43,8 @@ type annotations stubs module
     - [update_resource_share](#update_resource_share)
     - [get_paginator](#get_paginator)
 
+<a id="ramclient"></a>
+
 ## RAMClient
 
 Type annotations for `boto3.client("ram")`
@@ -48,14 +52,17 @@ Type annotations for `boto3.client("ram")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ram.client import RAMClient
 
 def get_ram_client() -> RAMClient:
-    return boto3.client("ram")
+    return Session().client("ram")
 ```
 
 Boto3 documentation:
 [RAM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -95,7 +102,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.UnknownResourceException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -107,6 +118,8 @@ Boto3 documentation:
 [RAM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_resource_share_invitation"></a>
 
 ### accept_resource_share_invitation
 
@@ -130,6 +143,8 @@ Keyword-only arguments:
 Returns
 [AcceptResourceShareInvitationResponseTypeDef](./type_defs.md#acceptresourceshareinvitationresponsetypedef).
 
+<a id="associate_resource_share"></a>
+
 ### associate_resource_share
 
 Adds the specified list of principals and list of resources to a resource
@@ -152,6 +167,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateResourceShareResponseTypeDef](./type_defs.md#associateresourceshareresponsetypedef).
+
+<a id="associate_resource_share_permission"></a>
 
 ### associate_resource_share_permission
 
@@ -178,6 +195,8 @@ Keyword-only arguments:
 Returns
 [AssociateResourceSharePermissionResponseTypeDef](./type_defs.md#associateresourcesharepermissionresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -192,6 +211,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_resource_share"></a>
 
 ### create_resource_share
 
@@ -218,6 +239,8 @@ Keyword-only arguments:
 Returns
 [CreateResourceShareResponseTypeDef](./type_defs.md#createresourceshareresponsetypedef).
 
+<a id="delete_resource_share"></a>
+
 ### delete_resource_share
 
 Deletes the specified resource share.
@@ -237,6 +260,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteResourceShareResponseTypeDef](./type_defs.md#deleteresourceshareresponsetypedef).
+
+<a id="disassociate_resource_share"></a>
 
 ### disassociate_resource_share
 
@@ -261,6 +286,8 @@ Keyword-only arguments:
 Returns
 [DisassociateResourceShareResponseTypeDef](./type_defs.md#disassociateresourceshareresponsetypedef).
 
+<a id="disassociate_resource_share_permission"></a>
+
 ### disassociate_resource_share_permission
 
 Disassociates an RAM permission from a resource share.
@@ -283,6 +310,8 @@ Keyword-only arguments:
 Returns
 [DisassociateResourceSharePermissionResponseTypeDef](./type_defs.md#disassociateresourcesharepermissionresponsetypedef).
 
+<a id="enable_sharing_with_aws_organization"></a>
+
 ### enable_sharing_with_aws_organization
 
 Enables resource sharing within your organization in Organizations.
@@ -295,6 +324,8 @@ Boto3 documentation:
 
 Returns
 [EnableSharingWithAwsOrganizationResponseTypeDef](./type_defs.md#enablesharingwithawsorganizationresponsetypedef).
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -313,6 +344,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_permission"></a>
 
 ### get_permission
 
@@ -333,6 +366,8 @@ Keyword-only arguments:
 
 Returns
 [GetPermissionResponseTypeDef](./type_defs.md#getpermissionresponsetypedef).
+
+<a id="get_resource_policies"></a>
 
 ### get_resource_policies
 
@@ -356,6 +391,8 @@ Keyword-only arguments:
 
 Returns
 [GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef).
+
+<a id="get_resource_share_associations"></a>
 
 ### get_resource_share_associations
 
@@ -387,6 +424,8 @@ Keyword-only arguments:
 Returns
 [GetResourceShareAssociationsResponseTypeDef](./type_defs.md#getresourceshareassociationsresponsetypedef).
 
+<a id="get_resource_share_invitations"></a>
+
 ### get_resource_share_invitations
 
 Retrieves details about invitations that you have received for resource shares.
@@ -409,6 +448,8 @@ Keyword-only arguments:
 
 Returns
 [GetResourceShareInvitationsResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponsetypedef).
+
+<a id="get_resource_shares"></a>
 
 ### get_resource_shares
 
@@ -440,6 +481,8 @@ Keyword-only arguments:
 Returns
 [GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef).
 
+<a id="list_pending_invitation_resources"></a>
+
 ### list_pending_invitation_resources
 
 Lists the resources in a resource share that is shared with you but for which
@@ -465,6 +508,8 @@ Keyword-only arguments:
 Returns
 [ListPendingInvitationResourcesResponseTypeDef](./type_defs.md#listpendinginvitationresourcesresponsetypedef).
 
+<a id="list_permission_versions"></a>
+
 ### list_permission_versions
 
 Lists the available versions of the specified RAM permission.
@@ -485,6 +530,8 @@ Keyword-only arguments:
 
 Returns
 [ListPermissionVersionsResponseTypeDef](./type_defs.md#listpermissionversionsresponsetypedef).
+
+<a id="list_permissions"></a>
 
 ### list_permissions
 
@@ -507,6 +554,8 @@ Keyword-only arguments:
 
 Returns
 [ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
+
+<a id="list_principals"></a>
 
 ### list_principals
 
@@ -535,6 +584,8 @@ Keyword-only arguments:
 Returns
 [ListPrincipalsResponseTypeDef](./type_defs.md#listprincipalsresponsetypedef).
 
+<a id="list_resource_share_permissions"></a>
+
 ### list_resource_share_permissions
 
 Lists the RAM permissions that are associated with a resource share.
@@ -557,6 +608,8 @@ Keyword-only arguments:
 Returns
 [ListResourceSharePermissionsResponseTypeDef](./type_defs.md#listresourcesharepermissionsresponsetypedef).
 
+<a id="list_resource_types"></a>
+
 ### list_resource_types
 
 Lists the resource types that can be shared by RAM.
@@ -578,6 +631,8 @@ Keyword-only arguments:
 
 Returns
 [ListResourceTypesResponseTypeDef](./type_defs.md#listresourcetypesresponsetypedef).
+
+<a id="list_resources"></a>
 
 ### list_resources
 
@@ -608,6 +663,8 @@ Keyword-only arguments:
 Returns
 [ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
 
+<a id="promote_resource_share_created_from_policy"></a>
+
 ### promote_resource_share_created_from_policy
 
 When you attach a resource-based permission policy to a resource, it
@@ -628,6 +685,8 @@ Keyword-only arguments:
 
 Returns
 [PromoteResourceShareCreatedFromPolicyResponseTypeDef](./type_defs.md#promoteresourcesharecreatedfrompolicyresponsetypedef).
+
+<a id="reject_resource_share_invitation"></a>
 
 ### reject_resource_share_invitation
 
@@ -651,6 +710,8 @@ Keyword-only arguments:
 Returns
 [RejectResourceShareInvitationResponseTypeDef](./type_defs.md#rejectresourceshareinvitationresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tag keys and values to the specified resource share.
@@ -669,6 +730,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -689,6 +752,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_resource_share"></a>
 
 ### update_resource_share
 
@@ -711,6 +776,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateResourceShareResponseTypeDef](./type_defs.md#updateresourceshareresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

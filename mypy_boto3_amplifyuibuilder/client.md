@@ -1,3 +1,5 @@
+<a id="amplifyuibuilderclient-for-boto3-amplifyuibuilder-module"></a>
+
 # AmplifyUIBuilderClient for boto3 AmplifyUIBuilder module
 
 > [Index](..) > [AmplifyUIBuilder](.) > AmplifyUIBuilderClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AmplifyUIBuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder)
 type annotations stubs module
-[mypy_boto3_amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
+[mypy-boto3-amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
 
 - [AmplifyUIBuilderClient for boto3 AmplifyUIBuilder module](#amplifyuibuilderclient-for-boto3-amplifyuibuilder-module)
   - [AmplifyUIBuilderClient](#amplifyuibuilderclient)
@@ -30,6 +32,8 @@ type annotations stubs module
     - [update_theme](#update_theme)
     - [get_paginator](#get_paginator)
 
+<a id="amplifyuibuilderclient"></a>
+
 ## AmplifyUIBuilderClient
 
 Type annotations for `boto3.client("amplifyuibuilder")`
@@ -37,14 +41,17 @@ Type annotations for `boto3.client("amplifyuibuilder")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_amplifyuibuilder.client import AmplifyUIBuilderClient
 
 def get_amplifyuibuilder_client() -> AmplifyUIBuilderClient:
-    return boto3.client("amplifyuibuilder")
+    return Session().client("amplifyuibuilder")
 ```
 
 Boto3 documentation:
 [AmplifyUIBuilder.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -67,7 +74,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceQuotaExceededException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -79,6 +90,8 @@ Boto3 documentation:
 [AmplifyUIBuilder.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -94,6 +107,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_component"></a>
 
 ### create_component
 
@@ -120,6 +135,8 @@ Keyword-only arguments:
 Returns
 [CreateComponentResponseTypeDef](./type_defs.md#createcomponentresponsetypedef).
 
+<a id="create_theme"></a>
+
 ### create_theme
 
 Creates a theme to apply to the components in an Amplify app.
@@ -143,6 +160,8 @@ Keyword-only arguments:
 Returns
 [CreateThemeResponseTypeDef](./type_defs.md#createthemeresponsetypedef).
 
+<a id="delete_component"></a>
+
 ### delete_component
 
 Deletes a component from an Amplify app.
@@ -162,6 +181,8 @@ Keyword-only arguments:
 - `environmentName`: `str` *(required)*
 - `id`: `str` *(required)*
 
+<a id="delete_theme"></a>
+
 ### delete_theme
 
 Deletes a theme from an Amplify app.
@@ -179,6 +200,8 @@ Keyword-only arguments:
 - `appId`: `str` *(required)*
 - `environmentName`: `str` *(required)*
 - `id`: `str` *(required)*
+
+<a id="exchange_code_for_token"></a>
 
 ### exchange_code_for_token
 
@@ -204,6 +227,8 @@ Keyword-only arguments:
 Returns
 [ExchangeCodeForTokenResponseTypeDef](./type_defs.md#exchangecodefortokenresponsetypedef).
 
+<a id="export_components"></a>
+
 ### export_components
 
 Exports component configurations to code that is ready to integrate into an
@@ -226,6 +251,8 @@ Keyword-only arguments:
 Returns
 [ExportComponentsResponseTypeDef](./type_defs.md#exportcomponentsresponsetypedef).
 
+<a id="export_themes"></a>
+
 ### export_themes
 
 Exports theme configurations to code that is ready to integrate into an Amplify
@@ -247,6 +274,8 @@ Keyword-only arguments:
 Returns
 [ExportThemesResponseTypeDef](./type_defs.md#exportthemesresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -265,6 +294,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_component"></a>
 
 ### get_component
 
@@ -287,6 +318,8 @@ Keyword-only arguments:
 Returns
 [GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef).
 
+<a id="get_theme"></a>
+
 ### get_theme
 
 Returns an existing theme for an Amplify app.
@@ -306,6 +339,8 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 
 Returns [GetThemeResponseTypeDef](./type_defs.md#getthemeresponsetypedef).
+
+<a id="list_components"></a>
 
 ### list_components
 
@@ -330,6 +365,8 @@ Keyword-only arguments:
 Returns
 [ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
 
+<a id="list_themes"></a>
+
 ### list_themes
 
 Retrieves a list of themes for a specified Amplify app and backend environment.
@@ -350,6 +387,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef).
+
+<a id="refresh_token"></a>
 
 ### refresh_token
 
@@ -373,6 +412,8 @@ Keyword-only arguments:
 
 Returns
 [RefreshTokenResponseTypeDef](./type_defs.md#refreshtokenresponsetypedef).
+
+<a id="update_component"></a>
 
 ### update_component
 
@@ -400,6 +441,8 @@ Keyword-only arguments:
 Returns
 [UpdateComponentResponseTypeDef](./type_defs.md#updatecomponentresponsetypedef).
 
+<a id="update_theme"></a>
+
 ### update_theme
 
 Updates an existing theme.
@@ -423,6 +466,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateThemeResponseTypeDef](./type_defs.md#updatethemeresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

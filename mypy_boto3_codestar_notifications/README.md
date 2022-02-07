@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-codestarnotifications-module"></a>
+
 # Type annotations for boto3 CodeStarNotifications module
 
 > [Index](..) > CodeStarNotifications
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
 type annotations stubs module
-[mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
+[mypy-boto3-codestar-notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[codestar-notifications]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[codestar-notifications]'
+
+# standalone installation
 pip install mypy-boto3-codestar-notifications
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-codestar-notifications
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="codestarnotificationsclient"></a>
+
 ## CodeStarNotificationsClient
 
 Type annotations for `boto3.client("codestar-notifications")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_codestar_notifications.client import CodeStarNotificationsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -50,6 +64,8 @@ from mypy_boto3_codestar_notifications.client import CodeStarNotificationsClient
 - [untag_resource](./client.md#untag_resource)
 - [update_notification_rule](./client.md#update_notification_rule)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CodeStarNotificationsClient [exceptions](./client.md#exceptions)
@@ -64,6 +80,8 @@ CodeStarNotificationsClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -72,12 +90,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_codestar_notifications.paginators import ListEventTypesPaginator, ...
+from mypy_boto3_codestar_notifications.paginator import ListEventTypesPaginator, ...
 ```
 
 - [ListEventTypesPaginator](./paginators.md#listeventtypespaginator)
 - [ListNotificationRulesPaginator](./paginators.md#listnotificationrulespaginator)
 - [ListTargetsPaginator](./paginators.md#listtargetspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -100,6 +120,8 @@ from mypy_boto3_codestar_notifications.literals import DetailTypeType, ...
 - [TargetStatusType](./literals.md#targetstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

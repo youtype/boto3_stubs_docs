@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-route53resolver-module"></a>
+
 # Typed dictionaries for boto3 Route53Resolver module
 
 > [Index](..) > [Route53Resolver](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
 type annotations stubs module
-[mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+[mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 - [Typed dictionaries for boto3 Route53Resolver module](#typed-dictionaries-for-boto3-route53resolver-module)
   - [AssociateFirewallRuleGroupRequestRequestTypeDef](#associatefirewallrulegrouprequestrequesttypedef)
@@ -156,6 +158,8 @@ type annotations stubs module
   - [UpdateResolverRuleRequestRequestTypeDef](#updateresolverrulerequestrequesttypedef)
   - [UpdateResolverRuleResponseTypeDef](#updateresolverruleresponsetypedef)
 
+<a id="associatefirewallrulegrouprequestrequesttypedef"></a>
+
 ## AssociateFirewallRuleGroupRequestRequestTypeDef
 
 ```python
@@ -176,6 +180,8 @@ Optional fields:
   [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="associatefirewallrulegroupresponsetypedef"></a>
+
 ## AssociateFirewallRuleGroupResponseTypeDef
 
 ```python
@@ -189,6 +195,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associateresolverendpointipaddressrequestrequesttypedef"></a>
+
 ## AssociateResolverEndpointIpAddressRequestRequestTypeDef
 
 ```python
@@ -199,6 +207,8 @@ Required fields:
 
 - `ResolverEndpointId`: `str`
 - `IpAddress`: [IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef)
+
+<a id="associateresolverendpointipaddressresponsetypedef"></a>
 
 ## AssociateResolverEndpointIpAddressResponseTypeDef
 
@@ -213,6 +223,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associateresolverquerylogconfigrequestrequesttypedef"></a>
+
 ## AssociateResolverQueryLogConfigRequestRequestTypeDef
 
 ```python
@@ -223,6 +235,8 @@ Required fields:
 
 - `ResolverQueryLogConfigId`: `str`
 - `ResourceId`: `str`
+
+<a id="associateresolverquerylogconfigresponsetypedef"></a>
 
 ## AssociateResolverQueryLogConfigResponseTypeDef
 
@@ -236,6 +250,8 @@ Required fields:
   [ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associateresolverrulerequestrequesttypedef"></a>
 
 ## AssociateResolverRuleRequestRequestTypeDef
 
@@ -252,6 +268,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="associateresolverruleresponsetypedef"></a>
+
 ## AssociateResolverRuleResponseTypeDef
 
 ```python
@@ -264,6 +282,8 @@ Required fields:
   [ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfirewalldomainlistrequestrequesttypedef"></a>
 
 ## CreateFirewallDomainListRequestRequestTypeDef
 
@@ -280,6 +300,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createfirewalldomainlistresponsetypedef"></a>
+
 ## CreateFirewallDomainListResponseTypeDef
 
 ```python
@@ -292,6 +314,8 @@ Required fields:
   [FirewallDomainListTypeDef](./type_defs.md#firewalldomainlisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfirewallrulegrouprequestrequesttypedef"></a>
 
 ## CreateFirewallRuleGroupRequestRequestTypeDef
 
@@ -308,6 +332,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createfirewallrulegroupresponsetypedef"></a>
+
 ## CreateFirewallRuleGroupResponseTypeDef
 
 ```python
@@ -320,6 +346,8 @@ Required fields:
   [FirewallRuleGroupTypeDef](./type_defs.md#firewallrulegrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfirewallrulerequestrequesttypedef"></a>
 
 ## CreateFirewallRuleRequestRequestTypeDef
 
@@ -344,6 +372,8 @@ Optional fields:
   [BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype))
 - `BlockOverrideTtl`: `int`
 
+<a id="createfirewallruleresponsetypedef"></a>
+
 ## CreateFirewallRuleResponseTypeDef
 
 ```python
@@ -355,6 +385,8 @@ Required fields:
 - `FirewallRule`: [FirewallRuleTypeDef](./type_defs.md#firewallruletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createresolverendpointrequestrequesttypedef"></a>
 
 ## CreateResolverEndpointRequestRequestTypeDef
 
@@ -376,6 +408,8 @@ Optional fields:
 - `Name`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createresolverendpointresponsetypedef"></a>
+
 ## CreateResolverEndpointResponseTypeDef
 
 ```python
@@ -388,6 +422,8 @@ Required fields:
   [ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createresolverquerylogconfigrequestrequesttypedef"></a>
 
 ## CreateResolverQueryLogConfigRequestRequestTypeDef
 
@@ -405,6 +441,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createresolverquerylogconfigresponsetypedef"></a>
+
 ## CreateResolverQueryLogConfigResponseTypeDef
 
 ```python
@@ -417,6 +455,8 @@ Required fields:
   [ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createresolverrulerequestrequesttypedef"></a>
 
 ## CreateResolverRuleRequestRequestTypeDef
 
@@ -438,6 +478,8 @@ Optional fields:
 - `ResolverEndpointId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createresolverruleresponsetypedef"></a>
+
 ## CreateResolverRuleResponseTypeDef
 
 ```python
@@ -450,6 +492,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletefirewalldomainlistrequestrequesttypedef"></a>
+
 ## DeleteFirewallDomainListRequestRequestTypeDef
 
 ```python
@@ -459,6 +503,8 @@ from mypy_boto3_route53resolver.type_defs import DeleteFirewallDomainListRequest
 Required fields:
 
 - `FirewallDomainListId`: `str`
+
+<a id="deletefirewalldomainlistresponsetypedef"></a>
 
 ## DeleteFirewallDomainListResponseTypeDef
 
@@ -473,6 +519,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletefirewallrulegrouprequestrequesttypedef"></a>
+
 ## DeleteFirewallRuleGroupRequestRequestTypeDef
 
 ```python
@@ -482,6 +530,8 @@ from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleGroupRequestR
 Required fields:
 
 - `FirewallRuleGroupId`: `str`
+
+<a id="deletefirewallrulegroupresponsetypedef"></a>
 
 ## DeleteFirewallRuleGroupResponseTypeDef
 
@@ -496,6 +546,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletefirewallrulerequestrequesttypedef"></a>
+
 ## DeleteFirewallRuleRequestRequestTypeDef
 
 ```python
@@ -506,6 +558,8 @@ Required fields:
 
 - `FirewallRuleGroupId`: `str`
 - `FirewallDomainListId`: `str`
+
+<a id="deletefirewallruleresponsetypedef"></a>
 
 ## DeleteFirewallRuleResponseTypeDef
 
@@ -519,6 +573,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteresolverendpointrequestrequesttypedef"></a>
+
 ## DeleteResolverEndpointRequestRequestTypeDef
 
 ```python
@@ -528,6 +584,8 @@ from mypy_boto3_route53resolver.type_defs import DeleteResolverEndpointRequestRe
 Required fields:
 
 - `ResolverEndpointId`: `str`
+
+<a id="deleteresolverendpointresponsetypedef"></a>
 
 ## DeleteResolverEndpointResponseTypeDef
 
@@ -542,6 +600,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteresolverquerylogconfigrequestrequesttypedef"></a>
+
 ## DeleteResolverQueryLogConfigRequestRequestTypeDef
 
 ```python
@@ -551,6 +611,8 @@ from mypy_boto3_route53resolver.type_defs import DeleteResolverQueryLogConfigReq
 Required fields:
 
 - `ResolverQueryLogConfigId`: `str`
+
+<a id="deleteresolverquerylogconfigresponsetypedef"></a>
 
 ## DeleteResolverQueryLogConfigResponseTypeDef
 
@@ -565,6 +627,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteresolverrulerequestrequesttypedef"></a>
+
 ## DeleteResolverRuleRequestRequestTypeDef
 
 ```python
@@ -574,6 +638,8 @@ from mypy_boto3_route53resolver.type_defs import DeleteResolverRuleRequestReques
 Required fields:
 
 - `ResolverRuleId`: `str`
+
+<a id="deleteresolverruleresponsetypedef"></a>
 
 ## DeleteResolverRuleResponseTypeDef
 
@@ -587,6 +653,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociatefirewallrulegrouprequestrequesttypedef"></a>
+
 ## DisassociateFirewallRuleGroupRequestRequestTypeDef
 
 ```python
@@ -596,6 +664,8 @@ from mypy_boto3_route53resolver.type_defs import DisassociateFirewallRuleGroupRe
 Required fields:
 
 - `FirewallRuleGroupAssociationId`: `str`
+
+<a id="disassociatefirewallrulegroupresponsetypedef"></a>
 
 ## DisassociateFirewallRuleGroupResponseTypeDef
 
@@ -610,6 +680,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateresolverendpointipaddressrequestrequesttypedef"></a>
+
 ## DisassociateResolverEndpointIpAddressRequestRequestTypeDef
 
 ```python
@@ -620,6 +692,8 @@ Required fields:
 
 - `ResolverEndpointId`: `str`
 - `IpAddress`: [IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef)
+
+<a id="disassociateresolverendpointipaddressresponsetypedef"></a>
 
 ## DisassociateResolverEndpointIpAddressResponseTypeDef
 
@@ -634,6 +708,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateresolverquerylogconfigrequestrequesttypedef"></a>
+
 ## DisassociateResolverQueryLogConfigRequestRequestTypeDef
 
 ```python
@@ -644,6 +720,8 @@ Required fields:
 
 - `ResolverQueryLogConfigId`: `str`
 - `ResourceId`: `str`
+
+<a id="disassociateresolverquerylogconfigresponsetypedef"></a>
 
 ## DisassociateResolverQueryLogConfigResponseTypeDef
 
@@ -658,6 +736,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateresolverrulerequestrequesttypedef"></a>
+
 ## DisassociateResolverRuleRequestRequestTypeDef
 
 ```python
@@ -668,6 +748,8 @@ Required fields:
 
 - `VPCId`: `str`
 - `ResolverRuleId`: `str`
+
+<a id="disassociateresolverruleresponsetypedef"></a>
 
 ## DisassociateResolverRuleResponseTypeDef
 
@@ -682,6 +764,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -692,6 +776,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="firewallconfigtypedef"></a>
 
 ## FirewallConfigTypeDef
 
@@ -707,6 +793,8 @@ Optional fields:
 - `FirewallFailOpen`:
   [FirewallFailOpenStatusType](./literals.md#firewallfailopenstatustype)
 
+<a id="firewalldomainlistmetadatatypedef"></a>
+
 ## FirewallDomainListMetadataTypeDef
 
 ```python
@@ -720,6 +808,8 @@ Optional fields:
 - `Name`: `str`
 - `CreatorRequestId`: `str`
 - `ManagedOwnerName`: `str`
+
+<a id="firewalldomainlisttypedef"></a>
 
 ## FirewallDomainListTypeDef
 
@@ -740,6 +830,8 @@ Optional fields:
 - `CreatorRequestId`: `str`
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
+
+<a id="firewallrulegroupassociationtypedef"></a>
 
 ## FirewallRuleGroupAssociationTypeDef
 
@@ -765,6 +857,8 @@ Optional fields:
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
 
+<a id="firewallrulegroupmetadatatypedef"></a>
+
 ## FirewallRuleGroupMetadataTypeDef
 
 ```python
@@ -779,6 +873,8 @@ Optional fields:
 - `OwnerId`: `str`
 - `CreatorRequestId`: `str`
 - `ShareStatus`: [ShareStatusType](./literals.md#sharestatustype)
+
+<a id="firewallrulegrouptypedef"></a>
 
 ## FirewallRuleGroupTypeDef
 
@@ -800,6 +896,8 @@ Optional fields:
 - `ShareStatus`: [ShareStatusType](./literals.md#sharestatustype)
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
+
+<a id="firewallruletypedef"></a>
 
 ## FirewallRuleTypeDef
 
@@ -823,6 +921,8 @@ Optional fields:
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
 
+<a id="getfirewallconfigrequestrequesttypedef"></a>
+
 ## GetFirewallConfigRequestRequestTypeDef
 
 ```python
@@ -832,6 +932,8 @@ from mypy_boto3_route53resolver.type_defs import GetFirewallConfigRequestRequest
 Required fields:
 
 - `ResourceId`: `str`
+
+<a id="getfirewallconfigresponsetypedef"></a>
 
 ## GetFirewallConfigResponseTypeDef
 
@@ -846,6 +948,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfirewalldomainlistrequestrequesttypedef"></a>
+
 ## GetFirewallDomainListRequestRequestTypeDef
 
 ```python
@@ -855,6 +959,8 @@ from mypy_boto3_route53resolver.type_defs import GetFirewallDomainListRequestReq
 Required fields:
 
 - `FirewallDomainListId`: `str`
+
+<a id="getfirewalldomainlistresponsetypedef"></a>
 
 ## GetFirewallDomainListResponseTypeDef
 
@@ -869,6 +975,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfirewallrulegroupassociationrequestrequesttypedef"></a>
+
 ## GetFirewallRuleGroupAssociationRequestRequestTypeDef
 
 ```python
@@ -878,6 +986,8 @@ from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupAssociation
 Required fields:
 
 - `FirewallRuleGroupAssociationId`: `str`
+
+<a id="getfirewallrulegroupassociationresponsetypedef"></a>
 
 ## GetFirewallRuleGroupAssociationResponseTypeDef
 
@@ -892,6 +1002,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfirewallrulegrouppolicyrequestrequesttypedef"></a>
+
 ## GetFirewallRuleGroupPolicyRequestRequestTypeDef
 
 ```python
@@ -901,6 +1013,8 @@ from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupPolicyReque
 Required fields:
 
 - `Arn`: `str`
+
+<a id="getfirewallrulegrouppolicyresponsetypedef"></a>
 
 ## GetFirewallRuleGroupPolicyResponseTypeDef
 
@@ -914,6 +1028,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfirewallrulegrouprequestrequesttypedef"></a>
+
 ## GetFirewallRuleGroupRequestRequestTypeDef
 
 ```python
@@ -923,6 +1039,8 @@ from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupRequestRequ
 Required fields:
 
 - `FirewallRuleGroupId`: `str`
+
+<a id="getfirewallrulegroupresponsetypedef"></a>
 
 ## GetFirewallRuleGroupResponseTypeDef
 
@@ -937,6 +1055,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresolverconfigrequestrequesttypedef"></a>
+
 ## GetResolverConfigRequestRequestTypeDef
 
 ```python
@@ -946,6 +1066,8 @@ from mypy_boto3_route53resolver.type_defs import GetResolverConfigRequestRequest
 Required fields:
 
 - `ResourceId`: `str`
+
+<a id="getresolverconfigresponsetypedef"></a>
 
 ## GetResolverConfigResponseTypeDef
 
@@ -960,6 +1082,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresolverdnssecconfigrequestrequesttypedef"></a>
+
 ## GetResolverDnssecConfigRequestRequestTypeDef
 
 ```python
@@ -969,6 +1093,8 @@ from mypy_boto3_route53resolver.type_defs import GetResolverDnssecConfigRequestR
 Required fields:
 
 - `ResourceId`: `str`
+
+<a id="getresolverdnssecconfigresponsetypedef"></a>
 
 ## GetResolverDnssecConfigResponseTypeDef
 
@@ -983,6 +1109,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresolverendpointrequestrequesttypedef"></a>
+
 ## GetResolverEndpointRequestRequestTypeDef
 
 ```python
@@ -992,6 +1120,8 @@ from mypy_boto3_route53resolver.type_defs import GetResolverEndpointRequestReque
 Required fields:
 
 - `ResolverEndpointId`: `str`
+
+<a id="getresolverendpointresponsetypedef"></a>
 
 ## GetResolverEndpointResponseTypeDef
 
@@ -1006,6 +1136,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresolverquerylogconfigassociationrequestrequesttypedef"></a>
+
 ## GetResolverQueryLogConfigAssociationRequestRequestTypeDef
 
 ```python
@@ -1015,6 +1147,8 @@ from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigAssoci
 Required fields:
 
 - `ResolverQueryLogConfigAssociationId`: `str`
+
+<a id="getresolverquerylogconfigassociationresponsetypedef"></a>
 
 ## GetResolverQueryLogConfigAssociationResponseTypeDef
 
@@ -1029,6 +1163,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresolverquerylogconfigpolicyrequestrequesttypedef"></a>
+
 ## GetResolverQueryLogConfigPolicyRequestRequestTypeDef
 
 ```python
@@ -1038,6 +1174,8 @@ from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigPolicy
 Required fields:
 
 - `Arn`: `str`
+
+<a id="getresolverquerylogconfigpolicyresponsetypedef"></a>
 
 ## GetResolverQueryLogConfigPolicyResponseTypeDef
 
@@ -1051,6 +1189,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresolverquerylogconfigrequestrequesttypedef"></a>
+
 ## GetResolverQueryLogConfigRequestRequestTypeDef
 
 ```python
@@ -1060,6 +1200,8 @@ from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigReques
 Required fields:
 
 - `ResolverQueryLogConfigId`: `str`
+
+<a id="getresolverquerylogconfigresponsetypedef"></a>
 
 ## GetResolverQueryLogConfigResponseTypeDef
 
@@ -1074,6 +1216,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresolverruleassociationrequestrequesttypedef"></a>
+
 ## GetResolverRuleAssociationRequestRequestTypeDef
 
 ```python
@@ -1083,6 +1227,8 @@ from mypy_boto3_route53resolver.type_defs import GetResolverRuleAssociationReque
 Required fields:
 
 - `ResolverRuleAssociationId`: `str`
+
+<a id="getresolverruleassociationresponsetypedef"></a>
 
 ## GetResolverRuleAssociationResponseTypeDef
 
@@ -1097,6 +1243,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresolverrulepolicyrequestrequesttypedef"></a>
+
 ## GetResolverRulePolicyRequestRequestTypeDef
 
 ```python
@@ -1106,6 +1254,8 @@ from mypy_boto3_route53resolver.type_defs import GetResolverRulePolicyRequestReq
 Required fields:
 
 - `Arn`: `str`
+
+<a id="getresolverrulepolicyresponsetypedef"></a>
 
 ## GetResolverRulePolicyResponseTypeDef
 
@@ -1119,6 +1269,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresolverrulerequestrequesttypedef"></a>
+
 ## GetResolverRuleRequestRequestTypeDef
 
 ```python
@@ -1128,6 +1280,8 @@ from mypy_boto3_route53resolver.type_defs import GetResolverRuleRequestRequestTy
 Required fields:
 
 - `ResolverRuleId`: `str`
+
+<a id="getresolverruleresponsetypedef"></a>
 
 ## GetResolverRuleResponseTypeDef
 
@@ -1141,6 +1295,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="importfirewalldomainsrequestrequesttypedef"></a>
+
 ## ImportFirewallDomainsRequestRequestTypeDef
 
 ```python
@@ -1153,6 +1309,8 @@ Required fields:
 - `Operation`: `Literal['REPLACE']` (see
   [FirewallDomainImportOperationType](./literals.md#firewalldomainimportoperationtype))
 - `DomainFileUrl`: `str`
+
+<a id="importfirewalldomainsresponsetypedef"></a>
 
 ## ImportFirewallDomainsResponseTypeDef
 
@@ -1170,6 +1328,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="ipaddressrequesttypedef"></a>
+
 ## IpAddressRequestTypeDef
 
 ```python
@@ -1183,6 +1343,8 @@ Required fields:
 Optional fields:
 
 - `Ip`: `str`
+
+<a id="ipaddressresponsetypedef"></a>
 
 ## IpAddressResponseTypeDef
 
@@ -1200,6 +1362,8 @@ Optional fields:
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
 
+<a id="ipaddressupdatetypedef"></a>
+
 ## IpAddressUpdateTypeDef
 
 ```python
@@ -1212,6 +1376,8 @@ Optional fields:
 - `SubnetId`: `str`
 - `Ip`: `str`
 
+<a id="listfirewallconfigsrequestrequesttypedef"></a>
+
 ## ListFirewallConfigsRequestRequestTypeDef
 
 ```python
@@ -1222,6 +1388,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listfirewallconfigsresponsetypedef"></a>
 
 ## ListFirewallConfigsResponseTypeDef
 
@@ -1237,6 +1405,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfirewalldomainlistsrequestrequesttypedef"></a>
+
 ## ListFirewallDomainListsRequestRequestTypeDef
 
 ```python
@@ -1247,6 +1417,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listfirewalldomainlistsresponsetypedef"></a>
 
 ## ListFirewallDomainListsResponseTypeDef
 
@@ -1261,6 +1433,8 @@ Required fields:
   `List`\[[FirewallDomainListMetadataTypeDef](./type_defs.md#firewalldomainlistmetadatatypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfirewalldomainsrequestrequesttypedef"></a>
 
 ## ListFirewallDomainsRequestRequestTypeDef
 
@@ -1277,6 +1451,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listfirewalldomainsresponsetypedef"></a>
+
 ## ListFirewallDomainsResponseTypeDef
 
 ```python
@@ -1289,6 +1465,8 @@ Required fields:
 - `Domains`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfirewallrulegroupassociationsrequestrequesttypedef"></a>
 
 ## ListFirewallRuleGroupAssociationsRequestRequestTypeDef
 
@@ -1306,6 +1484,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listfirewallrulegroupassociationsresponsetypedef"></a>
+
 ## ListFirewallRuleGroupAssociationsResponseTypeDef
 
 ```python
@@ -1320,6 +1500,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfirewallrulegroupsrequestrequesttypedef"></a>
+
 ## ListFirewallRuleGroupsRequestRequestTypeDef
 
 ```python
@@ -1330,6 +1512,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listfirewallrulegroupsresponsetypedef"></a>
 
 ## ListFirewallRuleGroupsResponseTypeDef
 
@@ -1344,6 +1528,8 @@ Required fields:
   `List`\[[FirewallRuleGroupMetadataTypeDef](./type_defs.md#firewallrulegroupmetadatatypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfirewallrulesrequestrequesttypedef"></a>
 
 ## ListFirewallRulesRequestRequestTypeDef
 
@@ -1362,6 +1548,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listfirewallrulesresponsetypedef"></a>
+
 ## ListFirewallRulesResponseTypeDef
 
 ```python
@@ -1376,6 +1564,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresolverconfigsrequestrequesttypedef"></a>
+
 ## ListResolverConfigsRequestRequestTypeDef
 
 ```python
@@ -1386,6 +1576,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listresolverconfigsresponsetypedef"></a>
 
 ## ListResolverConfigsResponseTypeDef
 
@@ -1401,6 +1593,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresolverdnssecconfigsrequestrequesttypedef"></a>
+
 ## ListResolverDnssecConfigsRequestRequestTypeDef
 
 ```python
@@ -1412,6 +1606,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listresolverdnssecconfigsresponsetypedef"></a>
 
 ## ListResolverDnssecConfigsResponseTypeDef
 
@@ -1426,6 +1622,8 @@ Required fields:
   `List`\[[ResolverDnssecConfigTypeDef](./type_defs.md#resolverdnssecconfigtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listresolverendpointipaddressesrequestrequesttypedef"></a>
 
 ## ListResolverEndpointIpAddressesRequestRequestTypeDef
 
@@ -1442,6 +1640,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listresolverendpointipaddressesresponsetypedef"></a>
+
 ## ListResolverEndpointIpAddressesResponseTypeDef
 
 ```python
@@ -1457,6 +1657,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresolverendpointsrequestrequesttypedef"></a>
+
 ## ListResolverEndpointsRequestRequestTypeDef
 
 ```python
@@ -1468,6 +1670,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listresolverendpointsresponsetypedef"></a>
 
 ## ListResolverEndpointsResponseTypeDef
 
@@ -1484,6 +1688,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresolverquerylogconfigassociationsrequestrequesttypedef"></a>
+
 ## ListResolverQueryLogConfigAssociationsRequestRequestTypeDef
 
 ```python
@@ -1497,6 +1703,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortBy`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+<a id="listresolverquerylogconfigassociationsresponsetypedef"></a>
 
 ## ListResolverQueryLogConfigAssociationsResponseTypeDef
 
@@ -1514,6 +1722,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresolverquerylogconfigsrequestrequesttypedef"></a>
+
 ## ListResolverQueryLogConfigsRequestRequestTypeDef
 
 ```python
@@ -1527,6 +1737,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortBy`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+<a id="listresolverquerylogconfigsresponsetypedef"></a>
 
 ## ListResolverQueryLogConfigsResponseTypeDef
 
@@ -1544,6 +1756,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresolverruleassociationsrequestrequesttypedef"></a>
+
 ## ListResolverRuleAssociationsRequestRequestTypeDef
 
 ```python
@@ -1555,6 +1769,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listresolverruleassociationsresponsetypedef"></a>
 
 ## ListResolverRuleAssociationsResponseTypeDef
 
@@ -1571,6 +1787,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresolverrulesrequestrequesttypedef"></a>
+
 ## ListResolverRulesRequestRequestTypeDef
 
 ```python
@@ -1582,6 +1800,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listresolverrulesresponsetypedef"></a>
 
 ## ListResolverRulesResponseTypeDef
 
@@ -1598,6 +1818,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1613,6 +1835,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -1626,6 +1850,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1638,6 +1864,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="putfirewallrulegrouppolicyrequestrequesttypedef"></a>
+
 ## PutFirewallRuleGroupPolicyRequestRequestTypeDef
 
 ```python
@@ -1648,6 +1876,8 @@ Required fields:
 
 - `Arn`: `str`
 - `FirewallRuleGroupPolicy`: `str`
+
+<a id="putfirewallrulegrouppolicyresponsetypedef"></a>
 
 ## PutFirewallRuleGroupPolicyResponseTypeDef
 
@@ -1661,6 +1891,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putresolverquerylogconfigpolicyrequestrequesttypedef"></a>
+
 ## PutResolverQueryLogConfigPolicyRequestRequestTypeDef
 
 ```python
@@ -1671,6 +1903,8 @@ Required fields:
 
 - `Arn`: `str`
 - `ResolverQueryLogConfigPolicy`: `str`
+
+<a id="putresolverquerylogconfigpolicyresponsetypedef"></a>
 
 ## PutResolverQueryLogConfigPolicyResponseTypeDef
 
@@ -1684,6 +1918,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putresolverrulepolicyrequestrequesttypedef"></a>
+
 ## PutResolverRulePolicyRequestRequestTypeDef
 
 ```python
@@ -1694,6 +1930,8 @@ Required fields:
 
 - `Arn`: `str`
 - `ResolverRulePolicy`: `str`
+
+<a id="putresolverrulepolicyresponsetypedef"></a>
 
 ## PutResolverRulePolicyResponseTypeDef
 
@@ -1706,6 +1944,8 @@ Required fields:
 - `ReturnValue`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="resolverconfigtypedef"></a>
 
 ## ResolverConfigTypeDef
 
@@ -1721,6 +1961,8 @@ Optional fields:
 - `AutodefinedReverse`:
   [ResolverAutodefinedReverseStatusType](./literals.md#resolverautodefinedreversestatustype)
 
+<a id="resolverdnssecconfigtypedef"></a>
+
 ## ResolverDnssecConfigTypeDef
 
 ```python
@@ -1734,6 +1976,8 @@ Optional fields:
 - `ResourceId`: `str`
 - `ValidationStatus`:
   [ResolverDNSSECValidationStatusType](./literals.md#resolverdnssecvalidationstatustype)
+
+<a id="resolverendpointtypedef"></a>
 
 ## ResolverEndpointTypeDef
 
@@ -1758,6 +2002,8 @@ Optional fields:
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
 
+<a id="resolverquerylogconfigassociationtypedef"></a>
+
 ## ResolverQueryLogConfigAssociationTypeDef
 
 ```python
@@ -1775,6 +2021,8 @@ Optional fields:
   [ResolverQueryLogConfigAssociationErrorType](./literals.md#resolverquerylogconfigassociationerrortype)
 - `ErrorMessage`: `str`
 - `CreationTime`: `str`
+
+<a id="resolverquerylogconfigtypedef"></a>
 
 ## ResolverQueryLogConfigTypeDef
 
@@ -1796,6 +2044,8 @@ Optional fields:
 - `CreatorRequestId`: `str`
 - `CreationTime`: `str`
 
+<a id="resolverruleassociationtypedef"></a>
+
 ## ResolverRuleAssociationTypeDef
 
 ```python
@@ -1812,6 +2062,8 @@ Optional fields:
   [ResolverRuleAssociationStatusType](./literals.md#resolverruleassociationstatustype)
 - `StatusMessage`: `str`
 
+<a id="resolverruleconfigtypedef"></a>
+
 ## ResolverRuleConfigTypeDef
 
 ```python
@@ -1824,6 +2076,8 @@ Optional fields:
 - `TargetIps`:
   `Sequence`\[[TargetAddressTypeDef](./type_defs.md#targetaddresstypedef)\]
 - `ResolverEndpointId`: `str`
+
+<a id="resolverruletypedef"></a>
 
 ## ResolverRuleTypeDef
 
@@ -1849,6 +2103,8 @@ Optional fields:
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1863,6 +2119,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1874,6 +2132,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1884,6 +2144,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="targetaddresstypedef"></a>
 
 ## TargetAddressTypeDef
 
@@ -1899,6 +2161,8 @@ Optional fields:
 
 - `Port`: `int`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1909,6 +2173,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatefirewallconfigrequestrequesttypedef"></a>
 
 ## UpdateFirewallConfigRequestRequestTypeDef
 
@@ -1921,6 +2187,8 @@ Required fields:
 - `ResourceId`: `str`
 - `FirewallFailOpen`:
   [FirewallFailOpenStatusType](./literals.md#firewallfailopenstatustype)
+
+<a id="updatefirewallconfigresponsetypedef"></a>
 
 ## UpdateFirewallConfigResponseTypeDef
 
@@ -1935,6 +2203,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatefirewalldomainsrequestrequesttypedef"></a>
+
 ## UpdateFirewallDomainsRequestRequestTypeDef
 
 ```python
@@ -1947,6 +2217,8 @@ Required fields:
 - `Operation`:
   [FirewallDomainUpdateOperationType](./literals.md#firewalldomainupdateoperationtype)
 - `Domains`: `Sequence`\[`str`\]
+
+<a id="updatefirewalldomainsresponsetypedef"></a>
 
 ## UpdateFirewallDomainsResponseTypeDef
 
@@ -1963,6 +2235,8 @@ Required fields:
 - `StatusMessage`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefirewallrulegroupassociationrequestrequesttypedef"></a>
 
 ## UpdateFirewallRuleGroupAssociationRequestRequestTypeDef
 
@@ -1981,6 +2255,8 @@ Optional fields:
   [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
 - `Name`: `str`
 
+<a id="updatefirewallrulegroupassociationresponsetypedef"></a>
+
 ## UpdateFirewallRuleGroupAssociationResponseTypeDef
 
 ```python
@@ -1993,6 +2269,8 @@ Required fields:
   [FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefirewallrulerequestrequesttypedef"></a>
 
 ## UpdateFirewallRuleRequestRequestTypeDef
 
@@ -2016,6 +2294,8 @@ Optional fields:
 - `BlockOverrideTtl`: `int`
 - `Name`: `str`
 
+<a id="updatefirewallruleresponsetypedef"></a>
+
 ## UpdateFirewallRuleResponseTypeDef
 
 ```python
@@ -2028,6 +2308,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateresolverconfigrequestrequesttypedef"></a>
+
 ## UpdateResolverConfigRequestRequestTypeDef
 
 ```python
@@ -2039,6 +2321,8 @@ Required fields:
 - `ResourceId`: `str`
 - `AutodefinedReverseFlag`:
   [AutodefinedReverseFlagType](./literals.md#autodefinedreverseflagtype)
+
+<a id="updateresolverconfigresponsetypedef"></a>
 
 ## UpdateResolverConfigResponseTypeDef
 
@@ -2053,6 +2337,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateresolverdnssecconfigrequestrequesttypedef"></a>
+
 ## UpdateResolverDnssecConfigRequestRequestTypeDef
 
 ```python
@@ -2063,6 +2349,8 @@ Required fields:
 
 - `ResourceId`: `str`
 - `Validation`: [ValidationType](./literals.md#validationtype)
+
+<a id="updateresolverdnssecconfigresponsetypedef"></a>
 
 ## UpdateResolverDnssecConfigResponseTypeDef
 
@@ -2076,6 +2364,8 @@ Required fields:
   [ResolverDnssecConfigTypeDef](./type_defs.md#resolverdnssecconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateresolverendpointrequestrequesttypedef"></a>
 
 ## UpdateResolverEndpointRequestRequestTypeDef
 
@@ -2091,6 +2381,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="updateresolverendpointresponsetypedef"></a>
+
 ## UpdateResolverEndpointResponseTypeDef
 
 ```python
@@ -2104,6 +2396,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateresolverrulerequestrequesttypedef"></a>
+
 ## UpdateResolverRuleRequestRequestTypeDef
 
 ```python
@@ -2115,6 +2409,8 @@ Required fields:
 - `ResolverRuleId`: `str`
 - `Config`:
   [ResolverRuleConfigTypeDef](./type_defs.md#resolverruleconfigtypedef)
+
+<a id="updateresolverruleresponsetypedef"></a>
 
 ## UpdateResolverRuleResponseTypeDef
 

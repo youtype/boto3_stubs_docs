@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-appstream-module"></a>
+
 # Type annotations for boto3 AppStream module
 
 > [Index](..) > AppStream
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
 type annotations stubs module
-[mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
+[mypy-boto3-appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[appstream]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[appstream]'
+
+# standalone installation
 pip install mypy-boto3-appstream
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-appstream
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="appstreamclient"></a>
+
 ## AppStreamClient
 
 Type annotations for `boto3.client("appstream")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_appstream.client import AppStreamClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -104,6 +118,8 @@ from mypy_boto3_appstream.client import AppStreamClient
 - [update_image_permissions](./client.md#update_image_permissions)
 - [update_stack](./client.md#update_stack)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AppStreamClient [exceptions](./client.md#exceptions)
@@ -124,6 +140,8 @@ AppStreamClient [exceptions](./client.md#exceptions)
 - ResourceNotAvailableException
 - ResourceNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -132,7 +150,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.paginators import DescribeDirectoryConfigsPaginator, ...
+from mypy_boto3_appstream.paginator import DescribeDirectoryConfigsPaginator, ...
 ```
 
 - [DescribeDirectoryConfigsPaginator](./paginators.md#describedirectoryconfigspaginator)
@@ -146,6 +164,8 @@ from mypy_boto3_appstream.paginators import DescribeDirectoryConfigsPaginator, .
 - [ListAssociatedFleetsPaginator](./paginators.md#listassociatedfleetspaginator)
 - [ListAssociatedStacksPaginator](./paginators.md#listassociatedstackspaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -154,11 +174,13 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.waiters import FleetStartedWaiter, ...
+from mypy_boto3_appstream.waiter import FleetStartedWaiter, ...
 ```
 
 - [FleetStartedWaiter](./waiters.md#fleetstartedwaiter)
 - [FleetStoppedWaiter](./waiters.md#fleetstoppedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -211,6 +233,8 @@ from mypy_boto3_appstream.literals import AccessEndpointTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

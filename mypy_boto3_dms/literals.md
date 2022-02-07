@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-databasemigrationservice-module"></a>
+
 # Literals for boto3 DatabaseMigrationService module
 
 > [Index](..) > [DatabaseMigrationService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module
-[mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
+[mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
 
 - [Literals for boto3 DatabaseMigrationService module](#literals-for-boto3-databasemigrationservice-module)
   - [AuthMechanismValueType](#authmechanismvaluetype)
@@ -61,6 +63,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="authmechanismvaluetype"></a>
+
 ## AuthMechanismValueType
 
 ```python
@@ -73,6 +77,8 @@ Values:
 - `mongodb_cr`
 - `scram_sha_1`
 
+<a id="authtypevaluetype"></a>
+
 ## AuthTypeValueType
 
 ```python
@@ -83,6 +89,8 @@ Values:
 
 - `no`
 - `password`
+
+<a id="cannedaclforobjectsvaluetype"></a>
 
 ## CannedAclForObjectsValueType
 
@@ -101,6 +109,8 @@ Values:
 - `public-read`
 - `public-read-write`
 
+<a id="charlengthsemanticstype"></a>
+
 ## CharLengthSemanticsType
 
 ```python
@@ -113,6 +123,8 @@ Values:
 - `char`
 - `default`
 
+<a id="compressiontypevaluetype"></a>
+
 ## CompressionTypeValueType
 
 ```python
@@ -124,6 +136,8 @@ Values:
 - `gzip`
 - `none`
 
+<a id="dataformatvaluetype"></a>
+
 ## DataFormatValueType
 
 ```python
@@ -134,6 +148,8 @@ Values:
 
 - `csv`
 - `parquet`
+
+<a id="datepartitiondelimitervaluetype"></a>
 
 ## DatePartitionDelimiterValueType
 
@@ -147,6 +163,8 @@ Values:
 - `NONE`
 - `SLASH`
 - `UNDERSCORE`
+
+<a id="datepartitionsequencevaluetype"></a>
 
 ## DatePartitionSequenceValueType
 
@@ -162,6 +180,8 @@ Values:
 - `YYYYMMDD`
 - `YYYYMMDDHH`
 
+<a id="describecertificatespaginatorname"></a>
+
 ## DescribeCertificatesPaginatorName
 
 ```python
@@ -171,6 +191,8 @@ from mypy_boto3_dms.literals import DescribeCertificatesPaginatorName
 Values:
 
 - `describe_certificates`
+
+<a id="describeconnectionspaginatorname"></a>
 
 ## DescribeConnectionsPaginatorName
 
@@ -182,6 +204,8 @@ Values:
 
 - `describe_connections`
 
+<a id="describeendpointtypespaginatorname"></a>
+
 ## DescribeEndpointTypesPaginatorName
 
 ```python
@@ -191,6 +215,8 @@ from mypy_boto3_dms.literals import DescribeEndpointTypesPaginatorName
 Values:
 
 - `describe_endpoint_types`
+
+<a id="describeendpointspaginatorname"></a>
 
 ## DescribeEndpointsPaginatorName
 
@@ -202,6 +228,8 @@ Values:
 
 - `describe_endpoints`
 
+<a id="describeeventsubscriptionspaginatorname"></a>
+
 ## DescribeEventSubscriptionsPaginatorName
 
 ```python
@@ -211,6 +239,8 @@ from mypy_boto3_dms.literals import DescribeEventSubscriptionsPaginatorName
 Values:
 
 - `describe_event_subscriptions`
+
+<a id="describeeventspaginatorname"></a>
 
 ## DescribeEventsPaginatorName
 
@@ -222,6 +252,8 @@ Values:
 
 - `describe_events`
 
+<a id="describeorderablereplicationinstancespaginatorname"></a>
+
 ## DescribeOrderableReplicationInstancesPaginatorName
 
 ```python
@@ -231,6 +263,8 @@ from mypy_boto3_dms.literals import DescribeOrderableReplicationInstancesPaginat
 Values:
 
 - `describe_orderable_replication_instances`
+
+<a id="describereplicationinstancespaginatorname"></a>
 
 ## DescribeReplicationInstancesPaginatorName
 
@@ -242,6 +276,8 @@ Values:
 
 - `describe_replication_instances`
 
+<a id="describereplicationsubnetgroupspaginatorname"></a>
+
 ## DescribeReplicationSubnetGroupsPaginatorName
 
 ```python
@@ -251,6 +287,8 @@ from mypy_boto3_dms.literals import DescribeReplicationSubnetGroupsPaginatorName
 Values:
 
 - `describe_replication_subnet_groups`
+
+<a id="describereplicationtaskassessmentresultspaginatorname"></a>
 
 ## DescribeReplicationTaskAssessmentResultsPaginatorName
 
@@ -262,6 +300,8 @@ Values:
 
 - `describe_replication_task_assessment_results`
 
+<a id="describereplicationtaskspaginatorname"></a>
+
 ## DescribeReplicationTasksPaginatorName
 
 ```python
@@ -271,6 +311,8 @@ from mypy_boto3_dms.literals import DescribeReplicationTasksPaginatorName
 Values:
 
 - `describe_replication_tasks`
+
+<a id="describeschemaspaginatorname"></a>
 
 ## DescribeSchemasPaginatorName
 
@@ -282,6 +324,8 @@ Values:
 
 - `describe_schemas`
 
+<a id="describetablestatisticspaginatorname"></a>
+
 ## DescribeTableStatisticsPaginatorName
 
 ```python
@@ -291,6 +335,8 @@ from mypy_boto3_dms.literals import DescribeTableStatisticsPaginatorName
 Values:
 
 - `describe_table_statistics`
+
+<a id="dmssslmodevaluetype"></a>
 
 ## DmsSslModeValueType
 
@@ -305,6 +351,8 @@ Values:
 - `verify-ca`
 - `verify-full`
 
+<a id="encodingtypevaluetype"></a>
+
 ## EncodingTypeValueType
 
 ```python
@@ -317,6 +365,8 @@ Values:
 - `plain-dictionary`
 - `rle-dictionary`
 
+<a id="encryptionmodevaluetype"></a>
+
 ## EncryptionModeValueType
 
 ```python
@@ -328,6 +378,8 @@ Values:
 - `sse-kms`
 - `sse-s3`
 
+<a id="endpointdeletedwaitername"></a>
+
 ## EndpointDeletedWaiterName
 
 ```python
@@ -337,6 +389,8 @@ from mypy_boto3_dms.literals import EndpointDeletedWaiterName
 Values:
 
 - `endpoint_deleted`
+
+<a id="endpointsettingtypevaluetype"></a>
 
 ## EndpointSettingTypeValueType
 
@@ -351,6 +405,8 @@ Values:
 - `integer`
 - `string`
 
+<a id="kafkasecurityprotocoltype"></a>
+
 ## KafkaSecurityProtocolType
 
 ```python
@@ -364,6 +420,8 @@ Values:
 - `ssl-authentication`
 - `ssl-encryption`
 
+<a id="messageformatvaluetype"></a>
+
 ## MessageFormatValueType
 
 ```python
@@ -374,6 +432,8 @@ Values:
 
 - `json`
 - `json-unformatted`
+
+<a id="migrationtypevaluetype"></a>
 
 ## MigrationTypeValueType
 
@@ -387,6 +447,8 @@ Values:
 - `full-load`
 - `full-load-and-cdc`
 
+<a id="nestinglevelvaluetype"></a>
+
 ## NestingLevelValueType
 
 ```python
@@ -398,6 +460,8 @@ Values:
 - `none`
 - `one`
 
+<a id="parquetversionvaluetype"></a>
+
 ## ParquetVersionValueType
 
 ```python
@@ -408,6 +472,8 @@ Values:
 
 - `parquet-1-0`
 - `parquet-2-0`
+
+<a id="pluginnamevaluetype"></a>
 
 ## PluginNameValueType
 
@@ -421,6 +487,8 @@ Values:
 - `pglogical`
 - `test-decoding`
 
+<a id="redisauthtypevaluetype"></a>
+
 ## RedisAuthTypeValueType
 
 ```python
@@ -432,6 +500,8 @@ Values:
 - `auth-role`
 - `auth-token`
 - `none`
+
+<a id="refreshschemasstatustypevaluetype"></a>
 
 ## RefreshSchemasStatusTypeValueType
 
@@ -445,6 +515,8 @@ Values:
 - `refreshing`
 - `successful`
 
+<a id="releasestatusvaluestype"></a>
+
 ## ReleaseStatusValuesType
 
 ```python
@@ -454,6 +526,8 @@ from mypy_boto3_dms.literals import ReleaseStatusValuesType
 Values:
 
 - `beta`
+
+<a id="reloadoptionvaluetype"></a>
 
 ## ReloadOptionValueType
 
@@ -466,6 +540,8 @@ Values:
 - `data-reload`
 - `validate-only`
 
+<a id="replicationendpointtypevaluetype"></a>
+
 ## ReplicationEndpointTypeValueType
 
 ```python
@@ -477,6 +553,8 @@ Values:
 - `source`
 - `target`
 
+<a id="replicationinstanceavailablewaitername"></a>
+
 ## ReplicationInstanceAvailableWaiterName
 
 ```python
@@ -486,6 +564,8 @@ from mypy_boto3_dms.literals import ReplicationInstanceAvailableWaiterName
 Values:
 
 - `replication_instance_available`
+
+<a id="replicationinstancedeletedwaitername"></a>
 
 ## ReplicationInstanceDeletedWaiterName
 
@@ -497,6 +577,8 @@ Values:
 
 - `replication_instance_deleted`
 
+<a id="replicationtaskdeletedwaitername"></a>
+
 ## ReplicationTaskDeletedWaiterName
 
 ```python
@@ -506,6 +588,8 @@ from mypy_boto3_dms.literals import ReplicationTaskDeletedWaiterName
 Values:
 
 - `replication_task_deleted`
+
+<a id="replicationtaskreadywaitername"></a>
 
 ## ReplicationTaskReadyWaiterName
 
@@ -517,6 +601,8 @@ Values:
 
 - `replication_task_ready`
 
+<a id="replicationtaskrunningwaitername"></a>
+
 ## ReplicationTaskRunningWaiterName
 
 ```python
@@ -527,6 +613,8 @@ Values:
 
 - `replication_task_running`
 
+<a id="replicationtaskstoppedwaitername"></a>
+
 ## ReplicationTaskStoppedWaiterName
 
 ```python
@@ -536,6 +624,8 @@ from mypy_boto3_dms.literals import ReplicationTaskStoppedWaiterName
 Values:
 
 - `replication_task_stopped`
+
+<a id="safeguardpolicytype"></a>
 
 ## SafeguardPolicyType
 
@@ -549,6 +639,8 @@ Values:
 - `rely-on-sql-server-replication-agent`
 - `shared-automatic-truncation`
 
+<a id="sourcetypetype"></a>
+
 ## SourceTypeType
 
 ```python
@@ -558,6 +650,8 @@ from mypy_boto3_dms.literals import SourceTypeType
 Values:
 
 - `replication-instance`
+
+<a id="sslsecurityprotocolvaluetype"></a>
 
 ## SslSecurityProtocolValueType
 
@@ -569,6 +663,8 @@ Values:
 
 - `plaintext`
 - `ssl-encryption`
+
+<a id="startreplicationtasktypevaluetype"></a>
 
 ## StartReplicationTaskTypeValueType
 
@@ -582,6 +678,8 @@ Values:
 - `resume-processing`
 - `start-replication`
 
+<a id="targetdbtypetype"></a>
+
 ## TargetDbTypeType
 
 ```python
@@ -593,6 +691,8 @@ Values:
 - `multiple-databases`
 - `specific-database`
 
+<a id="testconnectionsucceedswaitername"></a>
+
 ## TestConnectionSucceedsWaiterName
 
 ```python
@@ -602,6 +702,8 @@ from mypy_boto3_dms.literals import TestConnectionSucceedsWaiterName
 Values:
 
 - `test_connection_succeeds`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -911,6 +1013,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -932,6 +1036,8 @@ Values:
 - `describe_replication_tasks`
 - `describe_schemas`
 - `describe_table_statistics`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

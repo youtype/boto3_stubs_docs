@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-sso-module"></a>
+
 # Literals for boto3 SSO module
 
 > [Index](..) > [SSO](.) > Literals
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
 type annotations stubs module
-[mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
+[mypy-boto3-sso](https://pypi.org/project/mypy-boto3-sso/).
 
 - [Literals for boto3 SSO module](#literals-for-boto3-sso-module)
   - [ListAccountRolesPaginatorName](#listaccountrolespaginatorname)
   - [ListAccountsPaginatorName](#listaccountspaginatorname)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="listaccountrolespaginatorname"></a>
 
 ## ListAccountRolesPaginatorName
 
@@ -23,6 +27,8 @@ Values:
 
 - `list_account_roles`
 
+<a id="listaccountspaginatorname"></a>
+
 ## ListAccountsPaginatorName
 
 ```python
@@ -32,6 +38,8 @@ from mypy_boto3_sso.literals import ListAccountsPaginatorName
 Values:
 
 - `list_accounts`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -340,6 +348,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

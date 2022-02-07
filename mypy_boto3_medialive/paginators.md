@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-medialive-module"></a>
+
 # Paginators for boto3 MediaLive module
 
 > [Index](..) > [MediaLive](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
 type annotations stubs module
-[mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
+[mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 - [Paginators for boto3 MediaLive module](#paginators-for-boto3-medialive-module)
   - [DescribeSchedulePaginator](#describeschedulepaginator)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ListOfferingsPaginator](#listofferingspaginator)
   - [ListReservationsPaginator](#listreservationspaginator)
 
+<a id="describeschedulepaginator"></a>
+
 ## DescribeSchedulePaginator
 
 Type annotations for
@@ -27,10 +31,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.paginator import DescribeSchedulePaginator
 
 def get_describe_schedule_paginator() -> DescribeSchedulePaginator:
-    return boto3.client("medialive").get_paginator("describe_schedule")
+    return Session().client("medialive").get_paginator("describe_schedule")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `DescribeSchedulePaginator.paginate` method:
 `DescribeSchedulePaginator.paginate` returns
 `_PageIterator`\[[DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef)\].
 
+<a id="listchannelspaginator"></a>
+
 ## ListChannelsPaginator
 
 Type annotations for
@@ -53,10 +61,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.paginator import ListChannelsPaginator
 
 def get_list_channels_paginator() -> ListChannelsPaginator:
-    return boto3.client("medialive").get_paginator("list_channels")
+    return Session().client("medialive").get_paginator("list_channels")
 ```
 
 Boto3 documentation:
@@ -70,6 +80,8 @@ Arguments for `ListChannelsPaginator.paginate` method:
 `ListChannelsPaginator.paginate` returns
 `_PageIterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
+<a id="listinputdevicetransferspaginator"></a>
+
 ## ListInputDeviceTransfersPaginator
 
 Type annotations for
@@ -78,10 +90,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.paginator import ListInputDeviceTransfersPaginator
 
 def get_list_input_device_transfers_paginator() -> ListInputDeviceTransfersPaginator:
-    return boto3.client("medialive").get_paginator("list_input_device_transfers")
+    return Session().client("medialive").get_paginator("list_input_device_transfers")
 ```
 
 Boto3 documentation:
@@ -96,6 +110,8 @@ Arguments for `ListInputDeviceTransfersPaginator.paginate` method:
 `ListInputDeviceTransfersPaginator.paginate` returns
 `_PageIterator`\[[ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef)\].
 
+<a id="listinputdevicespaginator"></a>
+
 ## ListInputDevicesPaginator
 
 Type annotations for
@@ -104,10 +120,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.paginator import ListInputDevicesPaginator
 
 def get_list_input_devices_paginator() -> ListInputDevicesPaginator:
-    return boto3.client("medialive").get_paginator("list_input_devices")
+    return Session().client("medialive").get_paginator("list_input_devices")
 ```
 
 Boto3 documentation:
@@ -121,6 +139,8 @@ Arguments for `ListInputDevicesPaginator.paginate` method:
 `ListInputDevicesPaginator.paginate` returns
 `_PageIterator`\[[ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef)\].
 
+<a id="listinputsecuritygroupspaginator"></a>
+
 ## ListInputSecurityGroupsPaginator
 
 Type annotations for
@@ -129,10 +149,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.paginator import ListInputSecurityGroupsPaginator
 
 def get_list_input_security_groups_paginator() -> ListInputSecurityGroupsPaginator:
-    return boto3.client("medialive").get_paginator("list_input_security_groups")
+    return Session().client("medialive").get_paginator("list_input_security_groups")
 ```
 
 Boto3 documentation:
@@ -146,6 +168,8 @@ Arguments for `ListInputSecurityGroupsPaginator.paginate` method:
 `ListInputSecurityGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef)\].
 
+<a id="listinputspaginator"></a>
+
 ## ListInputsPaginator
 
 Type annotations for `boto3.client("medialive").get_paginator("list_inputs")`.
@@ -153,10 +177,12 @@ Type annotations for `boto3.client("medialive").get_paginator("list_inputs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.paginator import ListInputsPaginator
 
 def get_list_inputs_paginator() -> ListInputsPaginator:
-    return boto3.client("medialive").get_paginator("list_inputs")
+    return Session().client("medialive").get_paginator("list_inputs")
 ```
 
 Boto3 documentation:
@@ -170,6 +196,8 @@ Arguments for `ListInputsPaginator.paginate` method:
 `ListInputsPaginator.paginate` returns
 `_PageIterator`\[[ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef)\].
 
+<a id="listmultiplexprogramspaginator"></a>
+
 ## ListMultiplexProgramsPaginator
 
 Type annotations for
@@ -178,10 +206,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.paginator import ListMultiplexProgramsPaginator
 
 def get_list_multiplex_programs_paginator() -> ListMultiplexProgramsPaginator:
-    return boto3.client("medialive").get_paginator("list_multiplex_programs")
+    return Session().client("medialive").get_paginator("list_multiplex_programs")
 ```
 
 Boto3 documentation:
@@ -196,6 +226,8 @@ Arguments for `ListMultiplexProgramsPaginator.paginate` method:
 `ListMultiplexProgramsPaginator.paginate` returns
 `_PageIterator`\[[ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef)\].
 
+<a id="listmultiplexespaginator"></a>
+
 ## ListMultiplexesPaginator
 
 Type annotations for
@@ -204,10 +236,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.paginator import ListMultiplexesPaginator
 
 def get_list_multiplexes_paginator() -> ListMultiplexesPaginator:
-    return boto3.client("medialive").get_paginator("list_multiplexes")
+    return Session().client("medialive").get_paginator("list_multiplexes")
 ```
 
 Boto3 documentation:
@@ -221,6 +255,8 @@ Arguments for `ListMultiplexesPaginator.paginate` method:
 `ListMultiplexesPaginator.paginate` returns
 `_PageIterator`\[[ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef)\].
 
+<a id="listofferingspaginator"></a>
+
 ## ListOfferingsPaginator
 
 Type annotations for
@@ -229,10 +265,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.paginator import ListOfferingsPaginator
 
 def get_list_offerings_paginator() -> ListOfferingsPaginator:
-    return boto3.client("medialive").get_paginator("list_offerings")
+    return Session().client("medialive").get_paginator("list_offerings")
 ```
 
 Boto3 documentation:
@@ -256,6 +294,8 @@ Arguments for `ListOfferingsPaginator.paginate` method:
 `ListOfferingsPaginator.paginate` returns
 `_PageIterator`\[[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef)\].
 
+<a id="listreservationspaginator"></a>
+
 ## ListReservationsPaginator
 
 Type annotations for
@@ -264,10 +304,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.paginator import ListReservationsPaginator
 
 def get_list_reservations_paginator() -> ListReservationsPaginator:
-    return boto3.client("medialive").get_paginator("list_reservations")
+    return Session().client("medialive").get_paginator("list_reservations")
 ```
 
 Boto3 documentation:

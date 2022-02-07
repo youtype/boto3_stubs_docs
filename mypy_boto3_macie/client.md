@@ -1,3 +1,5 @@
+<a id="macieclient-for-boto3-macie-module"></a>
+
 # MacieClient for boto3 Macie module
 
 > [Index](..) > [Macie](.) > MacieClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
 type annotations stubs module
-[mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
+[mypy-boto3-macie](https://pypi.org/project/mypy-boto3-macie/).
 
 - [MacieClient for boto3 Macie module](#macieclient-for-boto3-macie-module)
   - [MacieClient](#macieclient)
@@ -23,6 +25,8 @@ type annotations stubs module
     - [update_s3_resources](#update_s3_resources)
     - [get_paginator](#get_paginator)
 
+<a id="macieclient"></a>
+
 ## MacieClient
 
 Type annotations for `boto3.client("macie")`
@@ -30,14 +34,17 @@ Type annotations for `boto3.client("macie")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_macie.client import MacieClient
 
 def get_macie_client() -> MacieClient:
-    return boto3.client("macie")
+    return Session().client("macie")
 ```
 
 Boto3 documentation:
 [Macie.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -59,7 +66,11 @@ Exceptions:
 - `Exceptions.InvalidInputException`
 - `Exceptions.LimitExceededException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -71,6 +82,8 @@ Boto3 documentation:
 [Macie.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_member_account"></a>
 
 ### associate_member_account
 
@@ -88,6 +101,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `memberAccountId`: `str` *(required)*
+
+<a id="associate_s3_resources"></a>
 
 ### associate_s3_resources
 
@@ -112,6 +127,8 @@ Keyword-only arguments:
 Returns
 [AssociateS3ResourcesResultTypeDef](./type_defs.md#associates3resourcesresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -126,6 +143,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="disassociate_member_account"></a>
 
 ### disassociate_member_account
 
@@ -143,6 +162,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `memberAccountId`: `str` *(required)*
+
+<a id="disassociate_s3_resources"></a>
 
 ### disassociate_s3_resources
 
@@ -166,6 +187,8 @@ Keyword-only arguments:
 Returns
 [DisassociateS3ResourcesResultTypeDef](./type_defs.md#disassociates3resourcesresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -183,6 +206,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_member_accounts"></a>
 
 ### list_member_accounts
 
@@ -205,6 +230,8 @@ Keyword-only arguments:
 Returns
 [ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef).
 
+<a id="list_s3_resources"></a>
+
 ### list_s3_resources
 
 Lists all the S3 resources associated with Amazon Macie Classic.
@@ -225,6 +252,8 @@ Keyword-only arguments:
 
 Returns
 [ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef).
+
+<a id="update_s3_resources"></a>
 
 ### update_s3_resources
 
@@ -247,6 +276,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateS3ResourcesResultTypeDef](./type_defs.md#updates3resourcesresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

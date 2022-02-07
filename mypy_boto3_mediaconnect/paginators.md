@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-mediaconnect-module"></a>
+
 # Paginators for boto3 MediaConnect module
 
 > [Index](..) > [MediaConnect](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
-[mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
+[mypy-boto3-mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 - [Paginators for boto3 MediaConnect module](#paginators-for-boto3-mediaconnect-module)
   - [ListEntitlementsPaginator](#listentitlementspaginator)
   - [ListFlowsPaginator](#listflowspaginator)
   - [ListOfferingsPaginator](#listofferingspaginator)
   - [ListReservationsPaginator](#listreservationspaginator)
+
+<a id="listentitlementspaginator"></a>
 
 ## ListEntitlementsPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediaconnect.paginator import ListEntitlementsPaginator
 
 def get_list_entitlements_paginator() -> ListEntitlementsPaginator:
-    return boto3.client("mediaconnect").get_paginator("list_entitlements")
+    return Session().client("mediaconnect").get_paginator("list_entitlements")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `ListEntitlementsPaginator.paginate` method:
 `ListEntitlementsPaginator.paginate` returns
 `_PageIterator`\[[ListEntitlementsResponseTypeDef](./type_defs.md#listentitlementsresponsetypedef)\].
 
+<a id="listflowspaginator"></a>
+
 ## ListFlowsPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediaconnect.paginator import ListFlowsPaginator
 
 def get_list_flows_paginator() -> ListFlowsPaginator:
-    return boto3.client("mediaconnect").get_paginator("list_flows")
+    return Session().client("mediaconnect").get_paginator("list_flows")
 ```
 
 Boto3 documentation:
@@ -63,6 +73,8 @@ Arguments for `ListFlowsPaginator.paginate` method:
 `ListFlowsPaginator.paginate` returns
 `_PageIterator`\[[ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef)\].
 
+<a id="listofferingspaginator"></a>
+
 ## ListOfferingsPaginator
 
 Type annotations for
@@ -71,10 +83,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediaconnect.paginator import ListOfferingsPaginator
 
 def get_list_offerings_paginator() -> ListOfferingsPaginator:
-    return boto3.client("mediaconnect").get_paginator("list_offerings")
+    return Session().client("mediaconnect").get_paginator("list_offerings")
 ```
 
 Boto3 documentation:
@@ -88,6 +102,8 @@ Arguments for `ListOfferingsPaginator.paginate` method:
 `ListOfferingsPaginator.paginate` returns
 `_PageIterator`\[[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef)\].
 
+<a id="listreservationspaginator"></a>
+
 ## ListReservationsPaginator
 
 Type annotations for
@@ -96,10 +112,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediaconnect.paginator import ListReservationsPaginator
 
 def get_list_reservations_paginator() -> ListReservationsPaginator:
-    return boto3.client("mediaconnect").get_paginator("list_reservations")
+    return Session().client("mediaconnect").get_paginator("list_reservations")
 ```
 
 Boto3 documentation:

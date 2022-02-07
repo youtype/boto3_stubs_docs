@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-mwaa-module"></a>
+
 # Type annotations for boto3 MWAA module
 
 > [Index](..) > MWAA
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
 type annotations stubs module
-[mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
+[mypy-boto3-mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[mwaa]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[mwaa]'
+
+# standalone installation
 pip install mypy-boto3-mwaa
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-mwaa
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="mwaaclient"></a>
+
 ## MWAAClient
 
 Type annotations for `boto3.client("mwaa")` as [MWAAClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_mwaa.client import MWAAClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -47,6 +61,8 @@ from mypy_boto3_mwaa.client import MWAAClient
 - [untag_resource](./client.md#untag_resource)
 - [update_environment](./client.md#update_environment)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MWAAClient [exceptions](./client.md#exceptions)
@@ -57,6 +73,8 @@ MWAAClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -65,10 +83,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_mwaa.paginators import ListEnvironmentsPaginator, ...
+from mypy_boto3_mwaa.paginator import ListEnvironmentsPaginator, ...
 ```
 
 - [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -88,6 +108,8 @@ from mypy_boto3_mwaa.literals import EnvironmentStatusType, ...
 - [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

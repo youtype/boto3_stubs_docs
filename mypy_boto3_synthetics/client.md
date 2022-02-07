@@ -1,3 +1,5 @@
+<a id="syntheticsclient-for-boto3-synthetics-module"></a>
+
 # SyntheticsClient for boto3 Synthetics module
 
 > [Index](..) > [Synthetics](.) > SyntheticsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
 type annotations stubs module
-[mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
+[mypy-boto3-synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 - [SyntheticsClient for boto3 Synthetics module](#syntheticsclient-for-boto3-synthetics-module)
   - [SyntheticsClient](#syntheticsclient)
@@ -28,6 +30,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_canary](#update_canary)
 
+<a id="syntheticsclient"></a>
+
 ## SyntheticsClient
 
 Type annotations for `boto3.client("synthetics")`
@@ -35,14 +39,17 @@ Type annotations for `boto3.client("synthetics")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_synthetics.client import SyntheticsClient
 
 def get_synthetics_client() -> SyntheticsClient:
-    return boto3.client("synthetics")
+    return Session().client("synthetics")
 ```
 
 Boto3 documentation:
 [Synthetics.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -61,10 +68,15 @@ Exceptions:
 - `Exceptions.ClientError`
 - `Exceptions.ConflictException`
 - `Exceptions.InternalServerException`
+- `Exceptions.RequestEntityTooLargeException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -76,6 +88,8 @@ Boto3 documentation:
 [Synthetics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -91,6 +105,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_canary"></a>
 
 ### create_canary
 
@@ -127,6 +143,8 @@ Keyword-only arguments:
 Returns
 [CreateCanaryResponseTypeDef](./type_defs.md#createcanaryresponsetypedef).
 
+<a id="delete_canary"></a>
+
 ### delete_canary
 
 Permanently deletes the specified canary.
@@ -145,6 +163,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_canaries"></a>
+
 ### describe_canaries
 
 This operation returns a list of the canaries in your account, along with full
@@ -162,9 +182,12 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `Names`: `Sequence`\[`str`\]
 
 Returns
 [DescribeCanariesResponseTypeDef](./type_defs.md#describecanariesresponsetypedef).
+
+<a id="describe_canaries_last_run"></a>
 
 ### describe_canaries_last_run
 
@@ -184,9 +207,12 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `Names`: `Sequence`\[`str`\]
 
 Returns
 [DescribeCanariesLastRunResponseTypeDef](./type_defs.md#describecanarieslastrunresponsetypedef).
+
+<a id="describe_runtime_versions"></a>
 
 ### describe_runtime_versions
 
@@ -209,6 +235,8 @@ Keyword-only arguments:
 Returns
 [DescribeRuntimeVersionsResponseTypeDef](./type_defs.md#describeruntimeversionsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -228,6 +256,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_canary"></a>
+
 ### get_canary
 
 Retrieves complete information about one canary.
@@ -245,6 +275,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns [GetCanaryResponseTypeDef](./type_defs.md#getcanaryresponsetypedef).
+
+<a id="get_canary_runs"></a>
 
 ### get_canary_runs
 
@@ -267,6 +299,8 @@ Keyword-only arguments:
 Returns
 [GetCanaryRunsResponseTypeDef](./type_defs.md#getcanaryrunsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Displays the tags associated with a canary.
@@ -287,6 +321,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="start_canary"></a>
+
 ### start_canary
 
 Use this operation to run a canary that has already been created.
@@ -305,6 +341,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="stop_canary"></a>
+
 ### stop_canary
 
 Stops the canary to prevent all future runs.
@@ -322,6 +360,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -342,6 +382,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from the specified canary.
@@ -360,6 +402,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_canary"></a>
 
 ### update_canary
 

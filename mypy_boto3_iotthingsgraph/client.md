@@ -1,3 +1,5 @@
+<a id="iotthingsgraphclient-for-boto3-iotthingsgraph-module"></a>
+
 # IoTThingsGraphClient for boto3 IoTThingsGraph module
 
 > [Index](..) > [IoTThingsGraph](.) > IoTThingsGraphClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
 type annotations stubs module
-[mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
+[mypy-boto3-iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 - [IoTThingsGraphClient for boto3 IoTThingsGraph module](#iotthingsgraphclient-for-boto3-iotthingsgraph-module)
   - [IoTThingsGraphClient](#iotthingsgraphclient)
@@ -51,6 +53,8 @@ type annotations stubs module
     - [upload_entity_definitions](#upload_entity_definitions)
     - [get_paginator](#get_paginator)
 
+<a id="iotthingsgraphclient"></a>
+
 ## IoTThingsGraphClient
 
 Type annotations for `boto3.client("iotthingsgraph")`
@@ -58,14 +62,17 @@ Type annotations for `boto3.client("iotthingsgraph")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iotthingsgraph.client import IoTThingsGraphClient
 
 def get_iotthingsgraph_client() -> IoTThingsGraphClient:
-    return boto3.client("iotthingsgraph")
+    return Session().client("iotthingsgraph")
 ```
 
 Boto3 documentation:
 [IoTThingsGraph.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -90,7 +97,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -102,6 +113,8 @@ Boto3 documentation:
 [IoTThingsGraph.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_entity_to_thing"></a>
 
 ### associate_entity_to_thing
 
@@ -124,6 +137,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -138,6 +153,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_flow_template"></a>
 
 ### create_flow_template
 
@@ -161,6 +178,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFlowTemplateResponseTypeDef](./type_defs.md#createflowtemplateresponsetypedef).
+
+<a id="create_system_instance"></a>
 
 ### create_system_instance
 
@@ -192,6 +211,8 @@ Keyword-only arguments:
 Returns
 [CreateSystemInstanceResponseTypeDef](./type_defs.md#createsysteminstanceresponsetypedef).
 
+<a id="create_system_template"></a>
+
 ### create_system_template
 
 Creates a system.
@@ -215,6 +236,8 @@ Keyword-only arguments:
 Returns
 [CreateSystemTemplateResponseTypeDef](./type_defs.md#createsystemtemplateresponsetypedef).
 
+<a id="delete_flow_template"></a>
+
 ### delete_flow_template
 
 Deletes a workflow.
@@ -234,6 +257,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_namespace"></a>
+
 ### delete_namespace
 
 Deletes the specified namespace.
@@ -245,6 +270,8 @@ Boto3 documentation:
 
 Returns
 [DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef).
+
+<a id="delete_system_instance"></a>
 
 ### delete_system_instance
 
@@ -265,6 +292,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_system_template"></a>
+
 ### delete_system_template
 
 Deletes a system.
@@ -283,6 +312,8 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="deploy_system_instance"></a>
 
 ### deploy_system_instance
 
@@ -305,6 +336,8 @@ Keyword-only arguments:
 Returns
 [DeploySystemInstanceResponseTypeDef](./type_defs.md#deploysysteminstanceresponsetypedef).
 
+<a id="deprecate_flow_template"></a>
+
 ### deprecate_flow_template
 
 Deprecates the specified workflow.
@@ -324,6 +357,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="deprecate_system_template"></a>
+
 ### deprecate_system_template
 
 Deprecates the specified system.
@@ -342,6 +377,8 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_namespace"></a>
 
 ### describe_namespace
 
@@ -364,6 +401,8 @@ Keyword-only arguments:
 Returns
 [DescribeNamespaceResponseTypeDef](./type_defs.md#describenamespaceresponsetypedef).
 
+<a id="dissociate_entity_from_thing"></a>
+
 ### dissociate_entity_from_thing
 
 Dissociates a device entity from a concrete thing.
@@ -384,6 +423,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -402,6 +443,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_entities"></a>
 
 ### get_entities
 
@@ -423,6 +466,8 @@ Keyword-only arguments:
 Returns
 [GetEntitiesResponseTypeDef](./type_defs.md#getentitiesresponsetypedef).
 
+<a id="get_flow_template"></a>
+
 ### get_flow_template
 
 Gets the latest version of the `DefinitionDocument` and `FlowTemplateSummary`
@@ -443,6 +488,8 @@ Keyword-only arguments:
 
 Returns
 [GetFlowTemplateResponseTypeDef](./type_defs.md#getflowtemplateresponsetypedef).
+
+<a id="get_flow_template_revisions"></a>
 
 ### get_flow_template_revisions
 
@@ -466,6 +513,8 @@ Keyword-only arguments:
 Returns
 [GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef).
 
+<a id="get_namespace_deletion_status"></a>
+
 ### get_namespace_deletion_status
 
 Gets the status of a namespace deletion task.
@@ -478,6 +527,8 @@ Boto3 documentation:
 
 Returns
 [GetNamespaceDeletionStatusResponseTypeDef](./type_defs.md#getnamespacedeletionstatusresponsetypedef).
+
+<a id="get_system_instance"></a>
 
 ### get_system_instance
 
@@ -499,6 +550,8 @@ Keyword-only arguments:
 Returns
 [GetSystemInstanceResponseTypeDef](./type_defs.md#getsysteminstanceresponsetypedef).
 
+<a id="get_system_template"></a>
+
 ### get_system_template
 
 Gets a system.
@@ -519,6 +572,8 @@ Keyword-only arguments:
 
 Returns
 [GetSystemTemplateResponseTypeDef](./type_defs.md#getsystemtemplateresponsetypedef).
+
+<a id="get_system_template_revisions"></a>
 
 ### get_system_template_revisions
 
@@ -542,6 +597,8 @@ Keyword-only arguments:
 Returns
 [GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef).
 
+<a id="get_upload_status"></a>
+
 ### get_upload_status
 
 Gets the status of the specified upload.
@@ -560,6 +617,8 @@ Keyword-only arguments:
 
 Returns
 [GetUploadStatusResponseTypeDef](./type_defs.md#getuploadstatusresponsetypedef).
+
+<a id="list_flow_execution_messages"></a>
 
 ### list_flow_execution_messages
 
@@ -584,6 +643,8 @@ Keyword-only arguments:
 Returns
 [ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all tags on an AWS IoT Things Graph resource.
@@ -605,6 +666,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="search_entities"></a>
 
 ### search_entities
 
@@ -631,6 +694,8 @@ Keyword-only arguments:
 Returns
 [SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef).
 
+<a id="search_flow_executions"></a>
+
 ### search_flow_executions
 
 Searches for AWS IoT Things Graph workflow execution instances.
@@ -656,6 +721,8 @@ Keyword-only arguments:
 Returns
 [SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef).
 
+<a id="search_flow_templates"></a>
+
 ### search_flow_templates
 
 Searches for summary information about workflows.
@@ -678,6 +745,8 @@ Keyword-only arguments:
 
 Returns
 [SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef).
+
+<a id="search_system_instances"></a>
 
 ### search_system_instances
 
@@ -702,6 +771,8 @@ Keyword-only arguments:
 Returns
 [SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef).
 
+<a id="search_system_templates"></a>
+
 ### search_system_templates
 
 Searches for summary information about systems in the user's account.
@@ -725,6 +796,8 @@ Keyword-only arguments:
 Returns
 [SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef).
 
+<a id="search_things"></a>
+
 ### search_things
 
 Searches for things associated with the specified entity.
@@ -747,6 +820,8 @@ Keyword-only arguments:
 Returns
 [SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Creates a tag for the specified resource.
@@ -765,6 +840,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="undeploy_system_instance"></a>
 
 ### undeploy_system_instance
 
@@ -786,6 +863,8 @@ Keyword-only arguments:
 Returns
 [UndeploySystemInstanceResponseTypeDef](./type_defs.md#undeploysysteminstanceresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from the specified resource.
@@ -804,6 +883,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_flow_template"></a>
 
 ### update_flow_template
 
@@ -829,6 +910,8 @@ Keyword-only arguments:
 Returns
 [UpdateFlowTemplateResponseTypeDef](./type_defs.md#updateflowtemplateresponsetypedef).
 
+<a id="update_system_template"></a>
+
 ### update_system_template
 
 Updates the specified system.
@@ -853,6 +936,8 @@ Keyword-only arguments:
 Returns
 [UpdateSystemTemplateResponseTypeDef](./type_defs.md#updatesystemtemplateresponsetypedef).
 
+<a id="upload_entity_definitions"></a>
+
 ### upload_entity_definitions
 
 Asynchronously uploads one or more entity definitions to the user's namespace.
@@ -875,6 +960,8 @@ Keyword-only arguments:
 
 Returns
 [UploadEntityDefinitionsResponseTypeDef](./type_defs.md#uploadentitydefinitionsresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

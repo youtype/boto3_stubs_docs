@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-s3control-module"></a>
+
 # Type annotations for boto3 S3Control module
 
 > [Index](..) > S3Control
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
 type annotations stubs module
-[mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
+[mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[s3control]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[s3control]'
+
+# standalone installation
 pip install mypy-boto3-s3control
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-s3control
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="s3controlclient"></a>
+
 ## S3ControlClient
 
 Type annotations for `boto3.client("s3control")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_s3control.client import S3ControlClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -94,6 +108,8 @@ from mypy_boto3_s3control.client import S3ControlClient
 - [update_job_priority](./client.md#update_job_priority)
 - [update_job_status](./client.md#update_job_status)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 S3ControlClient [exceptions](./client.md#exceptions)
@@ -112,6 +128,8 @@ S3ControlClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - TooManyTagsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -120,10 +138,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_s3control.paginators import ListAccessPointsForObjectLambdaPaginator, ...
+from mypy_boto3_s3control.paginator import ListAccessPointsForObjectLambdaPaginator, ...
 ```
 
 - [ListAccessPointsForObjectLambdaPaginator](./paginators.md#listaccesspointsforobjectlambdapaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -166,6 +186,8 @@ from mypy_boto3_s3control.literals import AsyncOperationNameType, ...
 - [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

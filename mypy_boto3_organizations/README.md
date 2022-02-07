@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-organizations-module"></a>
+
 # Type annotations for boto3 Organizations module
 
 > [Index](..) > Organizations
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
 type annotations stubs module
-[mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
+[mypy-boto3-organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[organizations]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[organizations]'
+
+# standalone installation
 pip install mypy-boto3-organizations
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-organizations
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="organizationsclient"></a>
+
 ## OrganizationsClient
 
 Type annotations for `boto3.client("organizations")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_organizations.client import OrganizationsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -88,6 +102,8 @@ from mypy_boto3_organizations.client import OrganizationsClient
 - [update_organizational_unit](./client.md#update_organizational_unit)
 - [update_policy](./client.md#update_policy)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 OrganizationsClient [exceptions](./client.md#exceptions)
@@ -138,6 +154,8 @@ OrganizationsClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - UnsupportedAPIEndpointException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -146,7 +164,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_organizations.paginators import ListAWSServiceAccessForOrganizationPaginator, ...
+from mypy_boto3_organizations.paginator import ListAWSServiceAccessForOrganizationPaginator, ...
 ```
 
 - [ListAWSServiceAccessForOrganizationPaginator](./paginators.md#listawsserviceaccessfororganizationpaginator)
@@ -165,6 +183,8 @@ from mypy_boto3_organizations.paginators import ListAWSServiceAccessForOrganizat
 - [ListRootsPaginator](./paginators.md#listrootspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 - [ListTargetsForPolicyPaginator](./paginators.md#listtargetsforpolicypaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -210,6 +230,8 @@ from mypy_boto3_organizations.literals import AccountJoinedMethodType, ...
 - [TargetTypeType](./literals.md#targettypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

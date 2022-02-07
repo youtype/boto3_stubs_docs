@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-ec2-module"></a>
+
 # Waiters for boto3 EC2 module
 
 > [Index](..) > [EC2](.) > Waiters
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
 type annotations stubs module
-[mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
+[mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 - [Waiters for boto3 EC2 module](#waiters-for-boto3-ec2-module)
   - [BundleTaskCompleteWaiter](#bundletaskcompletewaiter)
@@ -42,6 +44,8 @@ type annotations stubs module
   - [VpnConnectionAvailableWaiter](#vpnconnectionavailablewaiter)
   - [VpnConnectionDeletedWaiter](#vpnconnectiondeletedwaiter)
 
+<a id="bundletaskcompletewaiter"></a>
+
 ## BundleTaskCompleteWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("bundle_task_complete")`.
@@ -49,10 +53,12 @@ Type annotations for `boto3.client("ec2").get_waiter("bundle_task_complete")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import BundleTaskCompleteWaiter
 
 def get_bundle_task_complete_waiter() -> BundleTaskCompleteWaiter:
-    return boto3.client("ec2").get_waiter("bundle_task_complete")
+    return Session().client("ec2").get_waiter("bundle_task_complete")
 ```
 
 Boto3 documentation:
@@ -65,6 +71,8 @@ Arguments for `BundleTaskCompleteWaiter.wait` method:
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="conversiontaskcancelledwaiter"></a>
+
 ## ConversionTaskCancelledWaiter
 
 Type annotations for
@@ -73,10 +81,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import ConversionTaskCancelledWaiter
 
 def get_conversion_task_cancelled_waiter() -> ConversionTaskCancelledWaiter:
-    return boto3.client("ec2").get_waiter("conversion_task_cancelled")
+    return Session().client("ec2").get_waiter("conversion_task_cancelled")
 ```
 
 Boto3 documentation:
@@ -88,6 +98,8 @@ Arguments for `ConversionTaskCancelledWaiter.wait` method:
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="conversiontaskcompletedwaiter"></a>
+
 ## ConversionTaskCompletedWaiter
 
 Type annotations for
@@ -96,10 +108,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import ConversionTaskCompletedWaiter
 
 def get_conversion_task_completed_waiter() -> ConversionTaskCompletedWaiter:
-    return boto3.client("ec2").get_waiter("conversion_task_completed")
+    return Session().client("ec2").get_waiter("conversion_task_completed")
 ```
 
 Boto3 documentation:
@@ -111,6 +125,8 @@ Arguments for `ConversionTaskCompletedWaiter.wait` method:
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="conversiontaskdeletedwaiter"></a>
+
 ## ConversionTaskDeletedWaiter
 
 Type annotations for
@@ -119,10 +135,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import ConversionTaskDeletedWaiter
 
 def get_conversion_task_deleted_waiter() -> ConversionTaskDeletedWaiter:
-    return boto3.client("ec2").get_waiter("conversion_task_deleted")
+    return Session().client("ec2").get_waiter("conversion_task_deleted")
 ```
 
 Boto3 documentation:
@@ -134,6 +152,8 @@ Arguments for `ConversionTaskDeletedWaiter.wait` method:
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="customergatewayavailablewaiter"></a>
+
 ## CustomerGatewayAvailableWaiter
 
 Type annotations for
@@ -142,10 +162,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import CustomerGatewayAvailableWaiter
 
 def get_customer_gateway_available_waiter() -> CustomerGatewayAvailableWaiter:
-    return boto3.client("ec2").get_waiter("customer_gateway_available")
+    return Session().client("ec2").get_waiter("customer_gateway_available")
 ```
 
 Boto3 documentation:
@@ -158,6 +180,8 @@ Arguments for `CustomerGatewayAvailableWaiter.wait` method:
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="exporttaskcancelledwaiter"></a>
+
 ## ExportTaskCancelledWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("export_task_cancelled")`.
@@ -165,10 +189,12 @@ Type annotations for `boto3.client("ec2").get_waiter("export_task_cancelled")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import ExportTaskCancelledWaiter
 
 def get_export_task_cancelled_waiter() -> ExportTaskCancelledWaiter:
-    return boto3.client("ec2").get_waiter("export_task_cancelled")
+    return Session().client("ec2").get_waiter("export_task_cancelled")
 ```
 
 Boto3 documentation:
@@ -180,6 +206,8 @@ Arguments for `ExportTaskCancelledWaiter.wait` method:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="exporttaskcompletedwaiter"></a>
+
 ## ExportTaskCompletedWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("export_task_completed")`.
@@ -187,10 +215,12 @@ Type annotations for `boto3.client("ec2").get_waiter("export_task_completed")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import ExportTaskCompletedWaiter
 
 def get_export_task_completed_waiter() -> ExportTaskCompletedWaiter:
-    return boto3.client("ec2").get_waiter("export_task_completed")
+    return Session().client("ec2").get_waiter("export_task_completed")
 ```
 
 Boto3 documentation:
@@ -202,6 +232,8 @@ Arguments for `ExportTaskCompletedWaiter.wait` method:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="imageavailablewaiter"></a>
+
 ## ImageAvailableWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("image_available")`.
@@ -209,10 +241,12 @@ Type annotations for `boto3.client("ec2").get_waiter("image_available")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import ImageAvailableWaiter
 
 def get_image_available_waiter() -> ImageAvailableWaiter:
-    return boto3.client("ec2").get_waiter("image_available")
+    return Session().client("ec2").get_waiter("image_available")
 ```
 
 Boto3 documentation:
@@ -228,6 +262,8 @@ Arguments for `ImageAvailableWaiter.wait` method:
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="imageexistswaiter"></a>
+
 ## ImageExistsWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("image_exists")`.
@@ -235,10 +271,12 @@ Type annotations for `boto3.client("ec2").get_waiter("image_exists")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import ImageExistsWaiter
 
 def get_image_exists_waiter() -> ImageExistsWaiter:
-    return boto3.client("ec2").get_waiter("image_exists")
+    return Session().client("ec2").get_waiter("image_exists")
 ```
 
 Boto3 documentation:
@@ -254,6 +292,8 @@ Arguments for `ImageExistsWaiter.wait` method:
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="instanceexistswaiter"></a>
+
 ## InstanceExistsWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("instance_exists")`.
@@ -261,10 +301,12 @@ Type annotations for `boto3.client("ec2").get_waiter("instance_exists")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import InstanceExistsWaiter
 
 def get_instance_exists_waiter() -> InstanceExistsWaiter:
-    return boto3.client("ec2").get_waiter("instance_exists")
+    return Session().client("ec2").get_waiter("instance_exists")
 ```
 
 Boto3 documentation:
@@ -279,6 +321,8 @@ Arguments for `InstanceExistsWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="instancerunningwaiter"></a>
+
 ## InstanceRunningWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("instance_running")`.
@@ -286,10 +330,12 @@ Type annotations for `boto3.client("ec2").get_waiter("instance_running")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import InstanceRunningWaiter
 
 def get_instance_running_waiter() -> InstanceRunningWaiter:
-    return boto3.client("ec2").get_waiter("instance_running")
+    return Session().client("ec2").get_waiter("instance_running")
 ```
 
 Boto3 documentation:
@@ -304,6 +350,8 @@ Arguments for `InstanceRunningWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="instancestatusokwaiter"></a>
+
 ## InstanceStatusOkWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("instance_status_ok")`.
@@ -311,10 +359,12 @@ Type annotations for `boto3.client("ec2").get_waiter("instance_status_ok")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import InstanceStatusOkWaiter
 
 def get_instance_status_ok_waiter() -> InstanceStatusOkWaiter:
-    return boto3.client("ec2").get_waiter("instance_status_ok")
+    return Session().client("ec2").get_waiter("instance_status_ok")
 ```
 
 Boto3 documentation:
@@ -330,6 +380,8 @@ Arguments for `InstanceStatusOkWaiter.wait` method:
 - `IncludeAllInstances`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="instancestoppedwaiter"></a>
+
 ## InstanceStoppedWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("instance_stopped")`.
@@ -337,10 +389,12 @@ Type annotations for `boto3.client("ec2").get_waiter("instance_stopped")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import InstanceStoppedWaiter
 
 def get_instance_stopped_waiter() -> InstanceStoppedWaiter:
-    return boto3.client("ec2").get_waiter("instance_stopped")
+    return Session().client("ec2").get_waiter("instance_stopped")
 ```
 
 Boto3 documentation:
@@ -355,6 +409,8 @@ Arguments for `InstanceStoppedWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="instanceterminatedwaiter"></a>
+
 ## InstanceTerminatedWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("instance_terminated")`.
@@ -362,10 +418,12 @@ Type annotations for `boto3.client("ec2").get_waiter("instance_terminated")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import InstanceTerminatedWaiter
 
 def get_instance_terminated_waiter() -> InstanceTerminatedWaiter:
-    return boto3.client("ec2").get_waiter("instance_terminated")
+    return Session().client("ec2").get_waiter("instance_terminated")
 ```
 
 Boto3 documentation:
@@ -380,6 +438,8 @@ Arguments for `InstanceTerminatedWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="internetgatewayexistswaiter"></a>
+
 ## InternetGatewayExistsWaiter
 
 Type annotations for
@@ -388,10 +448,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import InternetGatewayExistsWaiter
 
 def get_internet_gateway_exists_waiter() -> InternetGatewayExistsWaiter:
-    return boto3.client("ec2").get_waiter("internet_gateway_exists")
+    return Session().client("ec2").get_waiter("internet_gateway_exists")
 ```
 
 Boto3 documentation:
@@ -406,6 +468,8 @@ Arguments for `InternetGatewayExistsWaiter.wait` method:
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="keypairexistswaiter"></a>
+
 ## KeyPairExistsWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("key_pair_exists")`.
@@ -413,10 +477,12 @@ Type annotations for `boto3.client("ec2").get_waiter("key_pair_exists")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import KeyPairExistsWaiter
 
 def get_key_pair_exists_waiter() -> KeyPairExistsWaiter:
-    return boto3.client("ec2").get_waiter("key_pair_exists")
+    return Session().client("ec2").get_waiter("key_pair_exists")
 ```
 
 Boto3 documentation:
@@ -430,6 +496,8 @@ Arguments for `KeyPairExistsWaiter.wait` method:
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="natgatewayavailablewaiter"></a>
+
 ## NatGatewayAvailableWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("nat_gateway_available")`.
@@ -437,10 +505,12 @@ Type annotations for `boto3.client("ec2").get_waiter("nat_gateway_available")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import NatGatewayAvailableWaiter
 
 def get_nat_gateway_available_waiter() -> NatGatewayAvailableWaiter:
-    return boto3.client("ec2").get_waiter("nat_gateway_available")
+    return Session().client("ec2").get_waiter("nat_gateway_available")
 ```
 
 Boto3 documentation:
@@ -455,6 +525,8 @@ Arguments for `NatGatewayAvailableWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="networkinterfaceavailablewaiter"></a>
+
 ## NetworkInterfaceAvailableWaiter
 
 Type annotations for
@@ -463,10 +535,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import NetworkInterfaceAvailableWaiter
 
 def get_network_interface_available_waiter() -> NetworkInterfaceAvailableWaiter:
-    return boto3.client("ec2").get_waiter("network_interface_available")
+    return Session().client("ec2").get_waiter("network_interface_available")
 ```
 
 Boto3 documentation:
@@ -481,6 +555,8 @@ Arguments for `NetworkInterfaceAvailableWaiter.wait` method:
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="passworddataavailablewaiter"></a>
+
 ## PasswordDataAvailableWaiter
 
 Type annotations for
@@ -489,10 +565,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import PasswordDataAvailableWaiter
 
 def get_password_data_available_waiter() -> PasswordDataAvailableWaiter:
-    return boto3.client("ec2").get_waiter("password_data_available")
+    return Session().client("ec2").get_waiter("password_data_available")
 ```
 
 Boto3 documentation:
@@ -504,6 +582,8 @@ Arguments for `PasswordDataAvailableWaiter.wait` method:
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="securitygroupexistswaiter"></a>
+
 ## SecurityGroupExistsWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("security_group_exists")`.
@@ -511,10 +591,12 @@ Type annotations for `boto3.client("ec2").get_waiter("security_group_exists")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import SecurityGroupExistsWaiter
 
 def get_security_group_exists_waiter() -> SecurityGroupExistsWaiter:
-    return boto3.client("ec2").get_waiter("security_group_exists")
+    return Session().client("ec2").get_waiter("security_group_exists")
 ```
 
 Boto3 documentation:
@@ -530,6 +612,8 @@ Arguments for `SecurityGroupExistsWaiter.wait` method:
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="snapshotcompletedwaiter"></a>
+
 ## SnapshotCompletedWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("snapshot_completed")`.
@@ -537,10 +621,12 @@ Type annotations for `boto3.client("ec2").get_waiter("snapshot_completed")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import SnapshotCompletedWaiter
 
 def get_snapshot_completed_waiter() -> SnapshotCompletedWaiter:
-    return boto3.client("ec2").get_waiter("snapshot_completed")
+    return Session().client("ec2").get_waiter("snapshot_completed")
 ```
 
 Boto3 documentation:
@@ -557,6 +643,8 @@ Arguments for `SnapshotCompletedWaiter.wait` method:
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="spotinstancerequestfulfilledwaiter"></a>
+
 ## SpotInstanceRequestFulfilledWaiter
 
 Type annotations for
@@ -565,10 +653,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import SpotInstanceRequestFulfilledWaiter
 
 def get_spot_instance_request_fulfilled_waiter() -> SpotInstanceRequestFulfilledWaiter:
-    return boto3.client("ec2").get_waiter("spot_instance_request_fulfilled")
+    return Session().client("ec2").get_waiter("spot_instance_request_fulfilled")
 ```
 
 Boto3 documentation:
@@ -583,6 +673,8 @@ Arguments for `SpotInstanceRequestFulfilledWaiter.wait` method:
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="subnetavailablewaiter"></a>
+
 ## SubnetAvailableWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("subnet_available")`.
@@ -590,10 +682,12 @@ Type annotations for `boto3.client("ec2").get_waiter("subnet_available")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import SubnetAvailableWaiter
 
 def get_subnet_available_waiter() -> SubnetAvailableWaiter:
-    return boto3.client("ec2").get_waiter("subnet_available")
+    return Session().client("ec2").get_waiter("subnet_available")
 ```
 
 Boto3 documentation:
@@ -608,6 +702,8 @@ Arguments for `SubnetAvailableWaiter.wait` method:
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="systemstatusokwaiter"></a>
+
 ## SystemStatusOkWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("system_status_ok")`.
@@ -615,10 +711,12 @@ Type annotations for `boto3.client("ec2").get_waiter("system_status_ok")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import SystemStatusOkWaiter
 
 def get_system_status_ok_waiter() -> SystemStatusOkWaiter:
-    return boto3.client("ec2").get_waiter("system_status_ok")
+    return Session().client("ec2").get_waiter("system_status_ok")
 ```
 
 Boto3 documentation:
@@ -634,6 +732,8 @@ Arguments for `SystemStatusOkWaiter.wait` method:
 - `IncludeAllInstances`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="volumeavailablewaiter"></a>
+
 ## VolumeAvailableWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("volume_available")`.
@@ -641,10 +741,12 @@ Type annotations for `boto3.client("ec2").get_waiter("volume_available")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import VolumeAvailableWaiter
 
 def get_volume_available_waiter() -> VolumeAvailableWaiter:
-    return boto3.client("ec2").get_waiter("volume_available")
+    return Session().client("ec2").get_waiter("volume_available")
 ```
 
 Boto3 documentation:
@@ -659,6 +761,8 @@ Arguments for `VolumeAvailableWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="volumedeletedwaiter"></a>
+
 ## VolumeDeletedWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("volume_deleted")`.
@@ -666,10 +770,12 @@ Type annotations for `boto3.client("ec2").get_waiter("volume_deleted")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import VolumeDeletedWaiter
 
 def get_volume_deleted_waiter() -> VolumeDeletedWaiter:
-    return boto3.client("ec2").get_waiter("volume_deleted")
+    return Session().client("ec2").get_waiter("volume_deleted")
 ```
 
 Boto3 documentation:
@@ -684,6 +790,8 @@ Arguments for `VolumeDeletedWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="volumeinusewaiter"></a>
+
 ## VolumeInUseWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("volume_in_use")`.
@@ -691,10 +799,12 @@ Type annotations for `boto3.client("ec2").get_waiter("volume_in_use")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import VolumeInUseWaiter
 
 def get_volume_in_use_waiter() -> VolumeInUseWaiter:
-    return boto3.client("ec2").get_waiter("volume_in_use")
+    return Session().client("ec2").get_waiter("volume_in_use")
 ```
 
 Boto3 documentation:
@@ -709,6 +819,8 @@ Arguments for `VolumeInUseWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="vpcavailablewaiter"></a>
+
 ## VpcAvailableWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("vpc_available")`.
@@ -716,10 +828,12 @@ Type annotations for `boto3.client("ec2").get_waiter("vpc_available")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import VpcAvailableWaiter
 
 def get_vpc_available_waiter() -> VpcAvailableWaiter:
-    return boto3.client("ec2").get_waiter("vpc_available")
+    return Session().client("ec2").get_waiter("vpc_available")
 ```
 
 Boto3 documentation:
@@ -734,6 +848,8 @@ Arguments for `VpcAvailableWaiter.wait` method:
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="vpcexistswaiter"></a>
+
 ## VpcExistsWaiter
 
 Type annotations for `boto3.client("ec2").get_waiter("vpc_exists")`.
@@ -741,10 +857,12 @@ Type annotations for `boto3.client("ec2").get_waiter("vpc_exists")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import VpcExistsWaiter
 
 def get_vpc_exists_waiter() -> VpcExistsWaiter:
-    return boto3.client("ec2").get_waiter("vpc_exists")
+    return Session().client("ec2").get_waiter("vpc_exists")
 ```
 
 Boto3 documentation:
@@ -759,6 +877,8 @@ Arguments for `VpcExistsWaiter.wait` method:
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="vpcpeeringconnectiondeletedwaiter"></a>
+
 ## VpcPeeringConnectionDeletedWaiter
 
 Type annotations for
@@ -767,10 +887,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import VpcPeeringConnectionDeletedWaiter
 
 def get_vpc_peering_connection_deleted_waiter() -> VpcPeeringConnectionDeletedWaiter:
-    return boto3.client("ec2").get_waiter("vpc_peering_connection_deleted")
+    return Session().client("ec2").get_waiter("vpc_peering_connection_deleted")
 ```
 
 Boto3 documentation:
@@ -785,6 +907,8 @@ Arguments for `VpcPeeringConnectionDeletedWaiter.wait` method:
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="vpcpeeringconnectionexistswaiter"></a>
+
 ## VpcPeeringConnectionExistsWaiter
 
 Type annotations for
@@ -793,10 +917,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import VpcPeeringConnectionExistsWaiter
 
 def get_vpc_peering_connection_exists_waiter() -> VpcPeeringConnectionExistsWaiter:
-    return boto3.client("ec2").get_waiter("vpc_peering_connection_exists")
+    return Session().client("ec2").get_waiter("vpc_peering_connection_exists")
 ```
 
 Boto3 documentation:
@@ -811,6 +937,8 @@ Arguments for `VpcPeeringConnectionExistsWaiter.wait` method:
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="vpnconnectionavailablewaiter"></a>
+
 ## VpnConnectionAvailableWaiter
 
 Type annotations for
@@ -819,10 +947,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import VpnConnectionAvailableWaiter
 
 def get_vpn_connection_available_waiter() -> VpnConnectionAvailableWaiter:
-    return boto3.client("ec2").get_waiter("vpn_connection_available")
+    return Session().client("ec2").get_waiter("vpn_connection_available")
 ```
 
 Boto3 documentation:
@@ -835,6 +965,8 @@ Arguments for `VpnConnectionAvailableWaiter.wait` method:
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="vpnconnectiondeletedwaiter"></a>
+
 ## VpnConnectionDeletedWaiter
 
 Type annotations for
@@ -843,10 +975,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.waiter import VpnConnectionDeletedWaiter
 
 def get_vpn_connection_deleted_waiter() -> VpnConnectionDeletedWaiter:
-    return boto3.client("ec2").get_waiter("vpn_connection_deleted")
+    return Session().client("ec2").get_waiter("vpn_connection_deleted")
 ```
 
 Boto3 documentation:

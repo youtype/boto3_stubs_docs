@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-mediastoredata-module"></a>
+
 # Typed dictionaries for boto3 MediaStoreData module
 
 > [Index](..) > [MediaStoreData](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
 type annotations stubs module
-[mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
+[mypy-boto3-mediastore-data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 - [Typed dictionaries for boto3 MediaStoreData module](#typed-dictionaries-for-boto3-mediastoredata-module)
   - [DeleteObjectRequestRequestTypeDef](#deleteobjectrequestrequesttypedef)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [PutObjectResponseTypeDef](#putobjectresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
+<a id="deleteobjectrequestrequesttypedef"></a>
+
 ## DeleteObjectRequestRequestTypeDef
 
 ```python
@@ -31,6 +35,8 @@ Required fields:
 
 - `Path`: `str`
 
+<a id="describeobjectrequestrequesttypedef"></a>
+
 ## DescribeObjectRequestRequestTypeDef
 
 ```python
@@ -40,6 +46,8 @@ from mypy_boto3_mediastore_data.type_defs import DescribeObjectRequestRequestTyp
 Required fields:
 
 - `Path`: `str`
+
+<a id="describeobjectresponsetypedef"></a>
 
 ## DescribeObjectResponseTypeDef
 
@@ -57,6 +65,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getobjectrequestrequesttypedef"></a>
+
 ## GetObjectRequestRequestTypeDef
 
 ```python
@@ -70,6 +80,8 @@ Required fields:
 Optional fields:
 
 - `Range`: `str`
+
+<a id="getobjectresponsetypedef"></a>
 
 ## GetObjectResponseTypeDef
 
@@ -90,6 +102,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="itemtypedef"></a>
+
 ## ItemTypeDef
 
 ```python
@@ -105,6 +119,8 @@ Optional fields:
 - `ContentType`: `str`
 - `ContentLength`: `int`
 
+<a id="listitemsrequestrequesttypedef"></a>
+
 ## ListItemsRequestRequestTypeDef
 
 ```python
@@ -116,6 +132,8 @@ Optional fields:
 - `Path`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listitemsresponsetypedef"></a>
 
 ## ListItemsResponseTypeDef
 
@@ -130,6 +148,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -141,6 +161,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putobjectrequestrequesttypedef"></a>
 
 ## PutObjectRequestRequestTypeDef
 
@@ -162,6 +184,8 @@ Optional fields:
 - `UploadAvailability`:
   [UploadAvailabilityType](./literals.md#uploadavailabilitytype)
 
+<a id="putobjectresponsetypedef"></a>
+
 ## PutObjectResponseTypeDef
 
 ```python
@@ -176,6 +200,8 @@ Required fields:
   [StorageClassType](./literals.md#storageclasstype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 

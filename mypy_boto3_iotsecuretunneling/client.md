@@ -1,3 +1,5 @@
+<a id="iotsecuretunnelingclient-for-boto3-iotsecuretunneling-module"></a>
+
 # IoTSecureTunnelingClient for boto3 IoTSecureTunneling module
 
 > [Index](..) > [IoTSecureTunneling](.) > IoTSecureTunnelingClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
 type annotations stubs module
-[mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
+[mypy-boto3-iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
 - [IoTSecureTunnelingClient for boto3 IoTSecureTunneling module](#iotsecuretunnelingclient-for-boto3-iotsecuretunneling-module)
   - [IoTSecureTunnelingClient](#iotsecuretunnelingclient)
@@ -22,6 +24,8 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
 
+<a id="iotsecuretunnelingclient"></a>
+
 ## IoTSecureTunnelingClient
 
 Type annotations for `boto3.client("iotsecuretunneling")`
@@ -29,14 +33,17 @@ Type annotations for `boto3.client("iotsecuretunneling")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iotsecuretunneling.client import IoTSecureTunnelingClient
 
 def get_iotsecuretunneling_client() -> IoTSecureTunnelingClient:
-    return boto3.client("iotsecuretunneling")
+    return Session().client("iotsecuretunneling")
 ```
 
 Boto3 documentation:
 [IoTSecureTunneling.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -56,7 +63,11 @@ Exceptions:
 - `Exceptions.LimitExceededException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -68,6 +79,8 @@ Boto3 documentation:
 [IoTSecureTunneling.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -83,6 +96,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="close_tunnel"></a>
 
 ### close_tunnel
 
@@ -102,6 +117,8 @@ Keyword-only arguments:
 - `delete`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_tunnel"></a>
 
 ### describe_tunnel
 
@@ -123,6 +140,8 @@ Keyword-only arguments:
 Returns
 [DescribeTunnelResponseTypeDef](./type_defs.md#describetunnelresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -141,6 +160,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -162,6 +183,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="list_tunnels"></a>
+
 ### list_tunnels
 
 List all tunnels for an AWS account.
@@ -182,6 +205,8 @@ Keyword-only arguments:
 
 Returns
 [ListTunnelsResponseTypeDef](./type_defs.md#listtunnelsresponsetypedef).
+
+<a id="open_tunnel"></a>
 
 ### open_tunnel
 
@@ -206,6 +231,8 @@ Keyword-only arguments:
 
 Returns [OpenTunnelResponseTypeDef](./type_defs.md#opentunnelresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 A resource tag.
@@ -224,6 +251,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 

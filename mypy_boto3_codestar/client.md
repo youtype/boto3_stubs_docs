@@ -1,3 +1,5 @@
+<a id="codestarclient-for-boto3-codestar-module"></a>
+
 # CodeStarClient for boto3 CodeStar module
 
 > [Index](..) > [CodeStar](.) > CodeStarClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
 type annotations stubs module
-[mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
+[mypy-boto3-codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 - [CodeStarClient for boto3 CodeStar module](#codestarclient-for-boto3-codestar-module)
   - [CodeStarClient](#codestarclient)
@@ -34,6 +36,8 @@ type annotations stubs module
     - [update_user_profile](#update_user_profile)
     - [get_paginator](#get_paginator)
 
+<a id="codestarclient"></a>
+
 ## CodeStarClient
 
 Type annotations for `boto3.client("codestar")`
@@ -41,14 +45,17 @@ Type annotations for `boto3.client("codestar")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_codestar.client import CodeStarClient
 
 def get_codestar_client() -> CodeStarClient:
-    return boto3.client("codestar")
+    return Session().client("codestar")
 ```
 
 Boto3 documentation:
 [CodeStar.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -79,7 +86,11 @@ Exceptions:
 - `Exceptions.UserProfileNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -91,6 +102,8 @@ Boto3 documentation:
 [CodeStar.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_team_member"></a>
 
 ### associate_team_member
 
@@ -115,6 +128,8 @@ Keyword-only arguments:
 Returns
 [AssociateTeamMemberResultTypeDef](./type_defs.md#associateteammemberresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -129,6 +144,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_project"></a>
 
 ### create_project
 
@@ -155,6 +172,8 @@ Keyword-only arguments:
 Returns
 [CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
 
+<a id="create_user_profile"></a>
+
 ### create_user_profile
 
 Creates a profile for a user that includes user preferences, such as the
@@ -178,6 +197,8 @@ Keyword-only arguments:
 Returns
 [CreateUserProfileResultTypeDef](./type_defs.md#createuserprofileresulttypedef).
 
+<a id="delete_project"></a>
+
 ### delete_project
 
 Deletes a project, including project resources.
@@ -199,6 +220,8 @@ Keyword-only arguments:
 Returns
 [DeleteProjectResultTypeDef](./type_defs.md#deleteprojectresulttypedef).
 
+<a id="delete_user_profile"></a>
+
 ### delete_user_profile
 
 Deletes a user profile in AWS CodeStar, including all personal preference data
@@ -219,6 +242,8 @@ Keyword-only arguments:
 Returns
 [DeleteUserProfileResultTypeDef](./type_defs.md#deleteuserprofileresulttypedef).
 
+<a id="describe_project"></a>
+
 ### describe_project
 
 Describes a project and its resources.
@@ -238,6 +263,8 @@ Keyword-only arguments:
 Returns
 [DescribeProjectResultTypeDef](./type_defs.md#describeprojectresulttypedef).
 
+<a id="describe_user_profile"></a>
+
 ### describe_user_profile
 
 Describes a user in AWS CodeStar and the user attributes across all projects.
@@ -256,6 +283,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUserProfileResultTypeDef](./type_defs.md#describeuserprofileresulttypedef).
+
+<a id="disassociate_team_member"></a>
 
 ### disassociate_team_member
 
@@ -277,6 +306,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -294,6 +325,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_projects"></a>
 
 ### list_projects
 
@@ -313,6 +346,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
+
+<a id="list_resources"></a>
 
 ### list_resources
 
@@ -335,6 +370,8 @@ Keyword-only arguments:
 Returns
 [ListResourcesResultTypeDef](./type_defs.md#listresourcesresulttypedef).
 
+<a id="list_tags_for_project"></a>
+
 ### list_tags_for_project
 
 Gets the tags for a project.
@@ -355,6 +392,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForProjectResultTypeDef](./type_defs.md#listtagsforprojectresulttypedef).
+
+<a id="list_team_members"></a>
 
 ### list_team_members
 
@@ -377,6 +416,8 @@ Keyword-only arguments:
 Returns
 [ListTeamMembersResultTypeDef](./type_defs.md#listteammembersresulttypedef).
 
+<a id="list_user_profiles"></a>
+
 ### list_user_profiles
 
 Lists all the user profiles configured for your AWS account in AWS CodeStar.
@@ -397,6 +438,8 @@ Keyword-only arguments:
 Returns
 [ListUserProfilesResultTypeDef](./type_defs.md#listuserprofilesresulttypedef).
 
+<a id="tag_project"></a>
+
 ### tag_project
 
 Adds tags to a project.
@@ -415,6 +458,8 @@ Keyword-only arguments:
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns [TagProjectResultTypeDef](./type_defs.md#tagprojectresulttypedef).
+
+<a id="untag_project"></a>
 
 ### untag_project
 
@@ -435,6 +480,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_project"></a>
+
 ### update_project
 
 Updates a project in AWS CodeStar.
@@ -454,6 +501,8 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_team_member"></a>
 
 ### update_team_member
 
@@ -477,6 +526,8 @@ Keyword-only arguments:
 Returns
 [UpdateTeamMemberResultTypeDef](./type_defs.md#updateteammemberresulttypedef).
 
+<a id="update_user_profile"></a>
+
 ### update_user_profile
 
 Updates a user's profile in AWS CodeStar.
@@ -498,6 +549,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateUserProfileResultTypeDef](./type_defs.md#updateuserprofileresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

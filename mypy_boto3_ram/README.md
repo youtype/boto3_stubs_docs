@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ram-module"></a>
+
 # Type annotations for boto3 RAM module
 
 > [Index](..) > RAM
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
 type annotations stubs module
-[mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
+[mypy-boto3-ram](https://pypi.org/project/mypy-boto3-ram/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ram]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ram]'
+
+# standalone installation
 pip install mypy-boto3-ram
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-ram
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="ramclient"></a>
+
 ## RAMClient
 
 Type annotations for `boto3.client("ram")` as [RAMClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ram.client import RAMClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -61,6 +75,8 @@ from mypy_boto3_ram.client import RAMClient
 - [untag_resource](./client.md#untag_resource)
 - [update_resource_share](./client.md#update_resource_share)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 RAMClient [exceptions](./client.md#exceptions)
@@ -89,6 +105,8 @@ RAMClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - UnknownResourceException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -97,7 +115,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ram.paginators import GetResourcePoliciesPaginator, ...
+from mypy_boto3_ram.paginator import GetResourcePoliciesPaginator, ...
 ```
 
 - [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
@@ -106,6 +124,8 @@ from mypy_boto3_ram.paginators import GetResourcePoliciesPaginator, ...
 - [GetResourceSharesPaginator](./paginators.md#getresourcesharespaginator)
 - [ListPrincipalsPaginator](./paginators.md#listprincipalspaginator)
 - [ListResourcesPaginator](./paginators.md#listresourcespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -134,6 +154,8 @@ from mypy_boto3_ram.literals import GetResourcePoliciesPaginatorName, ...
 - [ResourceStatusType](./literals.md#resourcestatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

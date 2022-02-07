@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-iotsecuretunneling-module"></a>
+
 # Literals for boto3 IoTSecureTunneling module
 
 > [Index](..) > [IoTSecureTunneling](.) > Literals
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
 type annotations stubs module
-[mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
+[mypy-boto3-iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
 - [Literals for boto3 IoTSecureTunneling module](#literals-for-boto3-iotsecuretunneling-module)
   - [ConnectionStatusType](#connectionstatustype)
   - [TunnelStatusType](#tunnelstatustype)
   - [ServiceName](#servicename)
+
+<a id="connectionstatustype"></a>
 
 ## ConnectionStatusType
 
@@ -23,6 +27,8 @@ Values:
 - `CONNECTED`
 - `DISCONNECTED`
 
+<a id="tunnelstatustype"></a>
+
 ## TunnelStatusType
 
 ```python
@@ -33,6 +39,8 @@ Values:
 
 - `CLOSED`
 - `OPEN`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

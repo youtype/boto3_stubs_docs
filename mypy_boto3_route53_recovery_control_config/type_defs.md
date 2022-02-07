@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-route53recoverycontrolconfig-module"></a>
+
 # Typed dictionaries for boto3 Route53RecoveryControlConfig module
 
 > [Index](..) > [Route53RecoveryControlConfig](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53RecoveryControlConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig)
 type annotations stubs module
-[mypy_boto3_route53_recovery_control_config](https://pypi.org/project/mypy-boto3-route53-recovery-control-config/).
+[mypy-boto3-route53-recovery-control-config](https://pypi.org/project/mypy-boto3-route53-recovery-control-config/).
 
 - [Typed dictionaries for boto3 Route53RecoveryControlConfig module](#typed-dictionaries-for-boto3-route53recoverycontrolconfig-module)
   - [AssertionRuleTypeDef](#assertionruletypedef)
@@ -63,6 +65,8 @@ type annotations stubs module
   - [UpdateSafetyRuleResponseTypeDef](#updatesafetyruleresponsetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="assertionruletypedef"></a>
+
 ## AssertionRuleTypeDef
 
 ```python
@@ -79,6 +83,8 @@ Required fields:
 - `Status`: [StatusType](./literals.md#statustype)
 - `WaitPeriodMs`: `int`
 
+<a id="assertionruleupdatetypedef"></a>
+
 ## AssertionRuleUpdateTypeDef
 
 ```python
@@ -91,6 +97,8 @@ Required fields:
 - `SafetyRuleArn`: `str`
 - `WaitPeriodMs`: `int`
 
+<a id="clusterendpointtypedef"></a>
+
 ## ClusterEndpointTypeDef
 
 ```python
@@ -101,6 +109,8 @@ Optional fields:
 
 - `Endpoint`: `str`
 - `Region`: `str`
+
+<a id="clustertypedef"></a>
 
 ## ClusterTypeDef
 
@@ -115,6 +125,8 @@ Optional fields:
   `List`\[[ClusterEndpointTypeDef](./type_defs.md#clusterendpointtypedef)\]
 - `Name`: `str`
 - `Status`: [StatusType](./literals.md#statustype)
+
+<a id="controlpaneltypedef"></a>
 
 ## ControlPanelTypeDef
 
@@ -131,6 +143,8 @@ Optional fields:
 - `RoutingControlCount`: `int`
 - `Status`: [StatusType](./literals.md#statustype)
 
+<a id="createclusterrequestrequesttypedef"></a>
+
 ## CreateClusterRequestRequestTypeDef
 
 ```python
@@ -146,6 +160,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createclusterresponsetypedef"></a>
+
 ## CreateClusterResponseTypeDef
 
 ```python
@@ -157,6 +173,8 @@ Required fields:
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcontrolpanelrequestrequesttypedef"></a>
 
 ## CreateControlPanelRequestRequestTypeDef
 
@@ -174,6 +192,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createcontrolpanelresponsetypedef"></a>
+
 ## CreateControlPanelResponseTypeDef
 
 ```python
@@ -185,6 +205,8 @@ Required fields:
 - `ControlPanel`: [ControlPanelTypeDef](./type_defs.md#controlpaneltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createroutingcontrolrequestrequesttypedef"></a>
 
 ## CreateRoutingControlRequestRequestTypeDef
 
@@ -202,6 +224,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `ControlPanelArn`: `str`
 
+<a id="createroutingcontrolresponsetypedef"></a>
+
 ## CreateRoutingControlResponseTypeDef
 
 ```python
@@ -214,6 +238,8 @@ Required fields:
   [RoutingControlTypeDef](./type_defs.md#routingcontroltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsafetyrulerequestrequesttypedef"></a>
 
 ## CreateSafetyRuleRequestRequestTypeDef
 
@@ -229,6 +255,8 @@ Optional fields:
 - `GatingRule`: [NewGatingRuleTypeDef](./type_defs.md#newgatingruletypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createsafetyruleresponsetypedef"></a>
+
 ## CreateSafetyRuleResponseTypeDef
 
 ```python
@@ -242,6 +270,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteclusterrequestrequesttypedef"></a>
+
 ## DeleteClusterRequestRequestTypeDef
 
 ```python
@@ -251,6 +281,8 @@ from mypy_boto3_route53_recovery_control_config.type_defs import DeleteClusterRe
 Required fields:
 
 - `ClusterArn`: `str`
+
+<a id="deletecontrolpanelrequestrequesttypedef"></a>
 
 ## DeleteControlPanelRequestRequestTypeDef
 
@@ -262,6 +294,8 @@ Required fields:
 
 - `ControlPanelArn`: `str`
 
+<a id="deleteroutingcontrolrequestrequesttypedef"></a>
+
 ## DeleteRoutingControlRequestRequestTypeDef
 
 ```python
@@ -271,6 +305,8 @@ from mypy_boto3_route53_recovery_control_config.type_defs import DeleteRoutingCo
 Required fields:
 
 - `RoutingControlArn`: `str`
+
+<a id="deletesafetyrulerequestrequesttypedef"></a>
 
 ## DeleteSafetyRuleRequestRequestTypeDef
 
@@ -282,6 +318,8 @@ Required fields:
 
 - `SafetyRuleArn`: `str`
 
+<a id="describeclusterrequestrequesttypedef"></a>
+
 ## DescribeClusterRequestRequestTypeDef
 
 ```python
@@ -291,6 +329,8 @@ from mypy_boto3_route53_recovery_control_config.type_defs import DescribeCluster
 Required fields:
 
 - `ClusterArn`: `str`
+
+<a id="describeclusterresponsetypedef"></a>
 
 ## DescribeClusterResponseTypeDef
 
@@ -304,6 +344,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecontrolpanelrequestrequesttypedef"></a>
+
 ## DescribeControlPanelRequestRequestTypeDef
 
 ```python
@@ -313,6 +355,8 @@ from mypy_boto3_route53_recovery_control_config.type_defs import DescribeControl
 Required fields:
 
 - `ControlPanelArn`: `str`
+
+<a id="describecontrolpanelresponsetypedef"></a>
 
 ## DescribeControlPanelResponseTypeDef
 
@@ -326,6 +370,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeroutingcontrolrequestrequesttypedef"></a>
+
 ## DescribeRoutingControlRequestRequestTypeDef
 
 ```python
@@ -335,6 +381,8 @@ from mypy_boto3_route53_recovery_control_config.type_defs import DescribeRouting
 Required fields:
 
 - `RoutingControlArn`: `str`
+
+<a id="describeroutingcontrolresponsetypedef"></a>
 
 ## DescribeRoutingControlResponseTypeDef
 
@@ -349,6 +397,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesafetyrulerequestrequesttypedef"></a>
+
 ## DescribeSafetyRuleRequestRequestTypeDef
 
 ```python
@@ -358,6 +408,8 @@ from mypy_boto3_route53_recovery_control_config.type_defs import DescribeSafetyR
 Required fields:
 
 - `SafetyRuleArn`: `str`
+
+<a id="describesafetyruleresponsetypedef"></a>
 
 ## DescribeSafetyRuleResponseTypeDef
 
@@ -371,6 +423,8 @@ Required fields:
 - `GatingRule`: [GatingRuleTypeDef](./type_defs.md#gatingruletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gatingruletypedef"></a>
 
 ## GatingRuleTypeDef
 
@@ -389,6 +443,8 @@ Required fields:
 - `TargetControls`: `List`\[`str`\]
 - `WaitPeriodMs`: `int`
 
+<a id="gatingruleupdatetypedef"></a>
+
 ## GatingRuleUpdateTypeDef
 
 ```python
@@ -400,6 +456,8 @@ Required fields:
 - `Name`: `str`
 - `SafetyRuleArn`: `str`
 - `WaitPeriodMs`: `int`
+
+<a id="listassociatedroute53healthchecksrequestrequesttypedef"></a>
 
 ## ListAssociatedRoute53HealthChecksRequestRequestTypeDef
 
@@ -416,6 +474,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listassociatedroute53healthchecksresponsetypedef"></a>
+
 ## ListAssociatedRoute53HealthChecksResponseTypeDef
 
 ```python
@@ -429,6 +489,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listclustersrequestrequesttypedef"></a>
+
 ## ListClustersRequestRequestTypeDef
 
 ```python
@@ -439,6 +501,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listclustersresponsetypedef"></a>
 
 ## ListClustersResponseTypeDef
 
@@ -453,6 +517,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcontrolpanelsrequestrequesttypedef"></a>
+
 ## ListControlPanelsRequestRequestTypeDef
 
 ```python
@@ -464,6 +530,8 @@ Optional fields:
 - `ClusterArn`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listcontrolpanelsresponsetypedef"></a>
 
 ## ListControlPanelsResponseTypeDef
 
@@ -478,6 +546,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listroutingcontrolsrequestrequesttypedef"></a>
 
 ## ListRoutingControlsRequestRequestTypeDef
 
@@ -494,6 +564,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listroutingcontrolsresponsetypedef"></a>
+
 ## ListRoutingControlsResponseTypeDef
 
 ```python
@@ -507,6 +579,8 @@ Required fields:
   `List`\[[RoutingControlTypeDef](./type_defs.md#routingcontroltypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsafetyrulesrequestrequesttypedef"></a>
 
 ## ListSafetyRulesRequestRequestTypeDef
 
@@ -523,6 +597,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listsafetyrulesresponsetypedef"></a>
+
 ## ListSafetyRulesResponseTypeDef
 
 ```python
@@ -536,6 +612,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -545,6 +623,8 @@ from mypy_boto3_route53_recovery_control_config.type_defs import ListTagsForReso
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -557,6 +637,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="newassertionruletypedef"></a>
 
 ## NewAssertionRuleTypeDef
 
@@ -571,6 +653,8 @@ Required fields:
 - `Name`: `str`
 - `RuleConfig`: [RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef)
 - `WaitPeriodMs`: `int`
+
+<a id="newgatingruletypedef"></a>
 
 ## NewGatingRuleTypeDef
 
@@ -587,6 +671,8 @@ Required fields:
 - `TargetControls`: `Sequence`\[`str`\]
 - `WaitPeriodMs`: `int`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -601,6 +687,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="routingcontroltypedef"></a>
+
 ## RoutingControlTypeDef
 
 ```python
@@ -614,6 +702,8 @@ Optional fields:
 - `RoutingControlArn`: `str`
 - `Status`: [StatusType](./literals.md#statustype)
 
+<a id="ruleconfigtypedef"></a>
+
 ## RuleConfigTypeDef
 
 ```python
@@ -626,6 +716,8 @@ Required fields:
 - `Threshold`: `int`
 - `Type`: [RuleTypeType](./literals.md#ruletypetype)
 
+<a id="ruletypedef"></a>
+
 ## RuleTypeDef
 
 ```python
@@ -636,6 +728,8 @@ Optional fields:
 
 - `ASSERTION`: [AssertionRuleTypeDef](./type_defs.md#assertionruletypedef)
 - `GATING`: [GatingRuleTypeDef](./type_defs.md#gatingruletypedef)
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -648,6 +742,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -659,6 +755,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
 
+<a id="updatecontrolpanelrequestrequesttypedef"></a>
+
 ## UpdateControlPanelRequestRequestTypeDef
 
 ```python
@@ -669,6 +767,8 @@ Required fields:
 
 - `ControlPanelArn`: `str`
 - `ControlPanelName`: `str`
+
+<a id="updatecontrolpanelresponsetypedef"></a>
 
 ## UpdateControlPanelResponseTypeDef
 
@@ -682,6 +782,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateroutingcontrolrequestrequesttypedef"></a>
+
 ## UpdateRoutingControlRequestRequestTypeDef
 
 ```python
@@ -692,6 +794,8 @@ Required fields:
 
 - `RoutingControlArn`: `str`
 - `RoutingControlName`: `str`
+
+<a id="updateroutingcontrolresponsetypedef"></a>
 
 ## UpdateRoutingControlResponseTypeDef
 
@@ -706,6 +810,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatesafetyrulerequestrequesttypedef"></a>
+
 ## UpdateSafetyRuleRequestRequestTypeDef
 
 ```python
@@ -719,6 +825,8 @@ Optional fields:
 - `GatingRuleUpdate`:
   [GatingRuleUpdateTypeDef](./type_defs.md#gatingruleupdatetypedef)
 
+<a id="updatesafetyruleresponsetypedef"></a>
+
 ## UpdateSafetyRuleResponseTypeDef
 
 ```python
@@ -731,6 +839,8 @@ Required fields:
 - `GatingRule`: [GatingRuleTypeDef](./type_defs.md#gatingruletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

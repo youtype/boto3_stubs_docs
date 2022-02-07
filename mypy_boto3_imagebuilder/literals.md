@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-imagebuilder-module"></a>
+
 # Literals for boto3 imagebuilder module
 
 > [Index](..) > [imagebuilder](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
 type annotations stubs module
-[mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
+[mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 - [Literals for boto3 imagebuilder module](#literals-for-boto3-imagebuilder-module)
   - [BuildTypeType](#buildtypetype)
@@ -24,6 +26,8 @@ type annotations stubs module
   - [PlatformType](#platformtype)
   - [ServiceName](#servicename)
 
+<a id="buildtypetype"></a>
+
 ## BuildTypeType
 
 ```python
@@ -36,6 +40,8 @@ Values:
 - `SCHEDULED`
 - `USER_INITIATED`
 
+<a id="componentformattype"></a>
+
 ## ComponentFormatType
 
 ```python
@@ -46,6 +52,8 @@ Values:
 
 - `SHELL`
 
+<a id="componentstatustype"></a>
+
 ## ComponentStatusType
 
 ```python
@@ -55,6 +63,8 @@ from mypy_boto3_imagebuilder.literals import ComponentStatusType
 Values:
 
 - `DEPRECATED`
+
+<a id="componenttypetype"></a>
 
 ## ComponentTypeType
 
@@ -67,6 +77,8 @@ Values:
 - `BUILD`
 - `TEST`
 
+<a id="containerrepositoryservicetype"></a>
+
 ## ContainerRepositoryServiceType
 
 ```python
@@ -77,6 +89,8 @@ Values:
 
 - `ECR`
 
+<a id="containertypetype"></a>
+
 ## ContainerTypeType
 
 ```python
@@ -86,6 +100,8 @@ from mypy_boto3_imagebuilder.literals import ContainerTypeType
 Values:
 
 - `DOCKER`
+
+<a id="diskimageformattype"></a>
 
 ## DiskImageFormatType
 
@@ -98,6 +114,8 @@ Values:
 - `RAW`
 - `VHD`
 - `VMDK`
+
+<a id="ebsvolumetypetype"></a>
 
 ## EbsVolumeTypeType
 
@@ -114,6 +132,8 @@ Values:
 - `sc1`
 - `st1`
 - `standard`
+
+<a id="imagestatustype"></a>
 
 ## ImageStatusType
 
@@ -135,6 +155,8 @@ Values:
 - `PENDING`
 - `TESTING`
 
+<a id="imagetypetype"></a>
+
 ## ImageTypeType
 
 ```python
@@ -145,6 +167,8 @@ Values:
 
 - `AMI`
 - `DOCKER`
+
+<a id="ownershiptype"></a>
 
 ## OwnershipType
 
@@ -158,6 +182,8 @@ Values:
 - `Self`
 - `Shared`
 
+<a id="pipelineexecutionstartconditiontype"></a>
+
 ## PipelineExecutionStartConditionType
 
 ```python
@@ -168,6 +194,8 @@ Values:
 
 - `EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE`
 - `EXPRESSION_MATCH_ONLY`
+
+<a id="pipelinestatustype"></a>
 
 ## PipelineStatusType
 
@@ -180,6 +208,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="platformtype"></a>
+
 ## PlatformType
 
 ```python
@@ -190,6 +220,8 @@ Values:
 
 - `Linux`
 - `Windows`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

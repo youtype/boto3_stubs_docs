@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-robomaker-module"></a>
+
 # Literals for boto3 RoboMaker module
 
 > [Index](..) > [RoboMaker](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
 type annotations stubs module
-[mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
+[mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 - [Literals for boto3 RoboMaker module](#literals-for-boto3-robomaker-module)
   - [ArchitectureType](#architecturetype)
@@ -44,6 +46,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="architecturetype"></a>
+
 ## ArchitectureType
 
 ```python
@@ -56,6 +60,8 @@ Values:
 - `ARMHF`
 - `X86_64`
 
+<a id="computetypetype"></a>
+
 ## ComputeTypeType
 
 ```python
@@ -66,6 +72,8 @@ Values:
 
 - `CPU`
 - `GPU_AND_CPU`
+
+<a id="datasourcetypetype"></a>
 
 ## DataSourceTypeType
 
@@ -78,6 +86,8 @@ Values:
 - `Archive`
 - `File`
 - `Prefix`
+
+<a id="deploymentjoberrorcodetype"></a>
 
 ## DeploymentJobErrorCodeType
 
@@ -112,6 +122,8 @@ Values:
 - `RobotDeploymentAborted`
 - `RobotDeploymentNoResponse`
 
+<a id="deploymentstatustype"></a>
+
 ## DeploymentStatusType
 
 ```python
@@ -127,6 +139,8 @@ Values:
 - `Preparing`
 - `Succeeded`
 
+<a id="exitbehaviortype"></a>
+
 ## ExitBehaviorType
 
 ```python
@@ -137,6 +151,8 @@ Values:
 
 - `FAIL`
 - `RESTART`
+
+<a id="failurebehaviortype"></a>
 
 ## FailureBehaviorType
 
@@ -149,6 +165,8 @@ Values:
 - `Continue`
 - `Fail`
 
+<a id="listdeploymentjobspaginatorname"></a>
+
 ## ListDeploymentJobsPaginatorName
 
 ```python
@@ -158,6 +176,8 @@ from mypy_boto3_robomaker.literals import ListDeploymentJobsPaginatorName
 Values:
 
 - `list_deployment_jobs`
+
+<a id="listfleetspaginatorname"></a>
 
 ## ListFleetsPaginatorName
 
@@ -169,6 +189,8 @@ Values:
 
 - `list_fleets`
 
+<a id="listrobotapplicationspaginatorname"></a>
+
 ## ListRobotApplicationsPaginatorName
 
 ```python
@@ -178,6 +200,8 @@ from mypy_boto3_robomaker.literals import ListRobotApplicationsPaginatorName
 Values:
 
 - `list_robot_applications`
+
+<a id="listrobotspaginatorname"></a>
 
 ## ListRobotsPaginatorName
 
@@ -189,6 +213,8 @@ Values:
 
 - `list_robots`
 
+<a id="listsimulationapplicationspaginatorname"></a>
+
 ## ListSimulationApplicationsPaginatorName
 
 ```python
@@ -198,6 +224,8 @@ from mypy_boto3_robomaker.literals import ListSimulationApplicationsPaginatorNam
 Values:
 
 - `list_simulation_applications`
+
+<a id="listsimulationjobbatchespaginatorname"></a>
 
 ## ListSimulationJobBatchesPaginatorName
 
@@ -209,6 +237,8 @@ Values:
 
 - `list_simulation_job_batches`
 
+<a id="listsimulationjobspaginatorname"></a>
+
 ## ListSimulationJobsPaginatorName
 
 ```python
@@ -218,6 +248,8 @@ from mypy_boto3_robomaker.literals import ListSimulationJobsPaginatorName
 Values:
 
 - `list_simulation_jobs`
+
+<a id="listworldexportjobspaginatorname"></a>
 
 ## ListWorldExportJobsPaginatorName
 
@@ -229,6 +261,8 @@ Values:
 
 - `list_world_export_jobs`
 
+<a id="listworldgenerationjobspaginatorname"></a>
+
 ## ListWorldGenerationJobsPaginatorName
 
 ```python
@@ -238,6 +272,8 @@ from mypy_boto3_robomaker.literals import ListWorldGenerationJobsPaginatorName
 Values:
 
 - `list_world_generation_jobs`
+
+<a id="listworldtemplatespaginatorname"></a>
 
 ## ListWorldTemplatesPaginatorName
 
@@ -249,6 +285,8 @@ Values:
 
 - `list_world_templates`
 
+<a id="listworldspaginatorname"></a>
+
 ## ListWorldsPaginatorName
 
 ```python
@@ -259,6 +297,8 @@ Values:
 
 - `list_worlds`
 
+<a id="renderingenginetypetype"></a>
+
 ## RenderingEngineTypeType
 
 ```python
@@ -268,6 +308,8 @@ from mypy_boto3_robomaker.literals import RenderingEngineTypeType
 Values:
 
 - `OGRE`
+
+<a id="robotdeploymentsteptype"></a>
 
 ## RobotDeploymentStepType
 
@@ -285,6 +327,8 @@ Values:
 - `Launching`
 - `Validating`
 
+<a id="robotsoftwaresuitetypetype"></a>
+
 ## RobotSoftwareSuiteTypeType
 
 ```python
@@ -296,6 +340,8 @@ Values:
 - `General`
 - `ROS`
 - `ROS2`
+
+<a id="robotsoftwaresuiteversiontypetype"></a>
 
 ## RobotSoftwareSuiteVersionTypeType
 
@@ -309,6 +355,8 @@ Values:
 - `Foxy`
 - `Kinetic`
 - `Melodic`
+
+<a id="robotstatustype"></a>
 
 ## RobotStatusType
 
@@ -326,6 +374,8 @@ Values:
 - `PendingNewDeployment`
 - `Registered`
 
+<a id="simulationjobbatcherrorcodetype"></a>
+
 ## SimulationJobBatchErrorCodeType
 
 ```python
@@ -335,6 +385,8 @@ from mypy_boto3_robomaker.literals import SimulationJobBatchErrorCodeType
 Values:
 
 - `InternalServiceError`
+
+<a id="simulationjobbatchstatustype"></a>
 
 ## SimulationJobBatchStatusType
 
@@ -353,6 +405,8 @@ Values:
 - `Pending`
 - `TimedOut`
 - `TimingOut`
+
+<a id="simulationjoberrorcodetype"></a>
 
 ## SimulationJobErrorCodeType
 
@@ -394,6 +448,8 @@ Values:
 - `WrongRegionS3Output`
 - `WrongRegionSimulationApplication`
 
+<a id="simulationjobstatustype"></a>
+
 ## SimulationJobStatusType
 
 ```python
@@ -413,6 +469,8 @@ Values:
 - `Terminated`
 - `Terminating`
 
+<a id="simulationsoftwaresuitetypetype"></a>
+
 ## SimulationSoftwareSuiteTypeType
 
 ```python
@@ -425,6 +483,8 @@ Values:
 - `RosbagPlay`
 - `SimulationRuntime`
 
+<a id="uploadbehaviortype"></a>
+
 ## UploadBehaviorType
 
 ```python
@@ -435,6 +495,8 @@ Values:
 
 - `UPLOAD_ON_TERMINATE`
 - `UPLOAD_ROLLING_AUTO_REMOVE`
+
+<a id="worldexportjoberrorcodetype"></a>
 
 ## WorldExportJobErrorCodeType
 
@@ -451,6 +513,8 @@ Values:
 - `RequestThrottled`
 - `ResourceNotFound`
 
+<a id="worldexportjobstatustype"></a>
+
 ## WorldExportJobStatusType
 
 ```python
@@ -465,6 +529,8 @@ Values:
 - `Failed`
 - `Pending`
 - `Running`
+
+<a id="worldgenerationjoberrorcodetype"></a>
 
 ## WorldGenerationJobErrorCodeType
 
@@ -481,6 +547,8 @@ Values:
 - `RequestThrottled`
 - `ResourceNotFound`
 
+<a id="worldgenerationjobstatustype"></a>
+
 ## WorldGenerationJobStatusType
 
 ```python
@@ -496,6 +564,8 @@ Values:
 - `PartialFailed`
 - `Pending`
 - `Running`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -804,6 +874,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="opsworksclient-for-boto3-opsworks-module"></a>
+
 # OpsWorksClient for boto3 OpsWorks module
 
 > [Index](..) > [OpsWorks](.) > OpsWorksClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
 type annotations stubs module
-[mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
+[mypy-boto3-opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 - [OpsWorksClient for boto3 OpsWorks module](#opsworksclient-for-boto3-opsworks-module)
   - [OpsWorksClient](#opsworksclient)
@@ -91,6 +93,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="opsworksclient"></a>
+
 ## OpsWorksClient
 
 Type annotations for `boto3.client("opsworks")`
@@ -98,14 +102,17 @@ Type annotations for `boto3.client("opsworks")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_opsworks.client import OpsWorksClient
 
 def get_opsworks_client() -> OpsWorksClient:
-    return boto3.client("opsworks")
+    return Session().client("opsworks")
 ```
 
 Boto3 documentation:
 [OpsWorks.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -125,7 +132,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -137,6 +148,8 @@ Boto3 documentation:
 [OpsWorks.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="assign_instance"></a>
 
 ### assign_instance
 
@@ -154,6 +167,8 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `LayerIds`: `Sequence`\[`str`\] *(required)*
+
+<a id="assign_volume"></a>
 
 ### assign_volume
 
@@ -173,6 +188,8 @@ Keyword-only arguments:
 - `VolumeId`: `str` *(required)*
 - `InstanceId`: `str`
 
+<a id="associate_elastic_ip"></a>
+
 ### associate_elastic_ip
 
 Associates one of the stack's registered Elastic IP addresses with a specified
@@ -190,6 +207,8 @@ Keyword-only arguments:
 
 - `ElasticIp`: `str` *(required)*
 - `InstanceId`: `str`
+
+<a id="attach_elastic_load_balancer"></a>
 
 ### attach_elastic_load_balancer
 
@@ -209,6 +228,8 @@ Keyword-only arguments:
 - `ElasticLoadBalancerName`: `str` *(required)*
 - `LayerId`: `str` *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -223,6 +244,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="clone_stack"></a>
 
 ### clone_stack
 
@@ -267,6 +290,8 @@ Keyword-only arguments:
 
 Returns [CloneStackResultTypeDef](./type_defs.md#clonestackresulttypedef).
 
+<a id="create_app"></a>
+
 ### create_app
 
 Creates an app for a specified stack.
@@ -301,6 +326,8 @@ Keyword-only arguments:
 
 Returns [CreateAppResultTypeDef](./type_defs.md#createappresulttypedef).
 
+<a id="create_deployment"></a>
+
 ### create_deployment
 
 Runs deployment or stack commands.
@@ -327,6 +354,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDeploymentResultTypeDef](./type_defs.md#createdeploymentresulttypedef).
+
+<a id="create_instance"></a>
 
 ### create_instance
 
@@ -364,6 +393,8 @@ Keyword-only arguments:
 
 Returns
 [CreateInstanceResultTypeDef](./type_defs.md#createinstanceresulttypedef).
+
+<a id="create_layer"></a>
 
 ### create_layer
 
@@ -405,6 +436,8 @@ Keyword-only arguments:
 
 Returns [CreateLayerResultTypeDef](./type_defs.md#createlayerresulttypedef).
 
+<a id="create_stack"></a>
+
 ### create_stack
 
 Creates a new stack.
@@ -445,6 +478,8 @@ Keyword-only arguments:
 
 Returns [CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef).
 
+<a id="create_user_profile"></a>
+
 ### create_user_profile
 
 Creates a new user profile.
@@ -467,6 +502,8 @@ Keyword-only arguments:
 Returns
 [CreateUserProfileResultTypeDef](./type_defs.md#createuserprofileresulttypedef).
 
+<a id="delete_app"></a>
+
 ### delete_app
 
 Deletes a specified app.
@@ -482,6 +519,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
+
+<a id="delete_instance"></a>
 
 ### delete_instance
 
@@ -502,6 +541,8 @@ Keyword-only arguments:
 - `DeleteElasticIp`: `bool`
 - `DeleteVolumes`: `bool`
 
+<a id="delete_layer"></a>
+
 ### delete_layer
 
 Deletes a specified layer.
@@ -517,6 +558,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LayerId`: `str` *(required)*
+
+<a id="delete_stack"></a>
 
 ### delete_stack
 
@@ -534,6 +577,8 @@ Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
 
+<a id="delete_user_profile"></a>
+
 ### delete_user_profile
 
 Deletes a user profile.
@@ -549,6 +594,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IamUserArn`: `str` *(required)*
+
+<a id="deregister_ecs_cluster"></a>
 
 ### deregister_ecs_cluster
 
@@ -566,6 +613,8 @@ Keyword-only arguments:
 
 - `EcsClusterArn`: `str` *(required)*
 
+<a id="deregister_elastic_ip"></a>
+
 ### deregister_elastic_ip
 
 Deregisters a specified Elastic IP address.
@@ -582,6 +631,8 @@ Keyword-only arguments:
 
 - `ElasticIp`: `str` *(required)*
 
+<a id="deregister_instance"></a>
+
 ### deregister_instance
 
 Deregister a registered Amazon EC2 or on-premises instance.
@@ -597,6 +648,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
+
+<a id="deregister_rds_db_instance"></a>
 
 ### deregister_rds_db_instance
 
@@ -615,6 +668,8 @@ Keyword-only arguments:
 
 - `RdsDbInstanceArn`: `str` *(required)*
 
+<a id="deregister_volume"></a>
+
 ### deregister_volume
 
 Deregisters an Amazon EBS volume.
@@ -630,6 +685,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VolumeId`: `str` *(required)*
+
+<a id="describe_agent_versions"></a>
 
 ### describe_agent_versions
 
@@ -652,6 +709,8 @@ Keyword-only arguments:
 Returns
 [DescribeAgentVersionsResultTypeDef](./type_defs.md#describeagentversionsresulttypedef).
 
+<a id="describe_apps"></a>
+
 ### describe_apps
 
 Requests a description of a specified set of apps.
@@ -670,6 +729,8 @@ Keyword-only arguments:
 - `AppIds`: `Sequence`\[`str`\]
 
 Returns [DescribeAppsResultTypeDef](./type_defs.md#describeappsresulttypedef).
+
+<a id="describe_commands"></a>
 
 ### describe_commands
 
@@ -692,6 +753,8 @@ Keyword-only arguments:
 Returns
 [DescribeCommandsResultTypeDef](./type_defs.md#describecommandsresulttypedef).
 
+<a id="describe_deployments"></a>
+
 ### describe_deployments
 
 Requests a description of a specified set of deployments.
@@ -712,6 +775,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDeploymentsResultTypeDef](./type_defs.md#describedeploymentsresulttypedef).
+
+<a id="describe_ecs_clusters"></a>
 
 ### describe_ecs_clusters
 
@@ -734,6 +799,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEcsClustersResultTypeDef](./type_defs.md#describeecsclustersresulttypedef).
+
+<a id="describe_elastic_ips"></a>
 
 ### describe_elastic_ips
 
@@ -758,6 +825,8 @@ Keyword-only arguments:
 Returns
 [DescribeElasticIpsResultTypeDef](./type_defs.md#describeelasticipsresulttypedef).
 
+<a id="describe_elastic_load_balancers"></a>
+
 ### describe_elastic_load_balancers
 
 Describes a stack's Elastic Load Balancing instances.
@@ -778,6 +847,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeElasticLoadBalancersResultTypeDef](./type_defs.md#describeelasticloadbalancersresulttypedef).
+
+<a id="describe_instances"></a>
 
 ### describe_instances
 
@@ -800,6 +871,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef).
 
+<a id="describe_layers"></a>
+
 ### describe_layers
 
 Requests a description of one or more layers in a specified stack.
@@ -819,6 +892,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLayersResultTypeDef](./type_defs.md#describelayersresulttypedef).
+
+<a id="describe_load_based_auto_scaling"></a>
 
 ### describe_load_based_auto_scaling
 
@@ -840,6 +915,8 @@ Keyword-only arguments:
 Returns
 [DescribeLoadBasedAutoScalingResultTypeDef](./type_defs.md#describeloadbasedautoscalingresulttypedef).
 
+<a id="describe_my_user_profile"></a>
+
 ### describe_my_user_profile
 
 Describes a user's SSH information.
@@ -853,6 +930,8 @@ Boto3 documentation:
 Returns
 [DescribeMyUserProfileResultTypeDef](./type_defs.md#describemyuserprofileresulttypedef).
 
+<a id="describe_operating_systems"></a>
+
 ### describe_operating_systems
 
 Describes the operating systems that are supported by AWS OpsWorks Stacks.
@@ -865,6 +944,8 @@ Boto3 documentation:
 
 Returns
 [DescribeOperatingSystemsResponseTypeDef](./type_defs.md#describeoperatingsystemsresponsetypedef).
+
+<a id="describe_permissions"></a>
 
 ### describe_permissions
 
@@ -885,6 +966,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePermissionsResultTypeDef](./type_defs.md#describepermissionsresulttypedef).
+
+<a id="describe_raid_arrays"></a>
 
 ### describe_raid_arrays
 
@@ -907,6 +990,8 @@ Keyword-only arguments:
 Returns
 [DescribeRaidArraysResultTypeDef](./type_defs.md#describeraidarraysresulttypedef).
 
+<a id="describe_rds_db_instances"></a>
+
 ### describe_rds_db_instances
 
 Describes Amazon RDS instances.
@@ -927,6 +1012,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRdsDbInstancesResultTypeDef](./type_defs.md#describerdsdbinstancesresulttypedef).
+
+<a id="describe_service_errors"></a>
 
 ### describe_service_errors
 
@@ -949,6 +1036,8 @@ Keyword-only arguments:
 Returns
 [DescribeServiceErrorsResultTypeDef](./type_defs.md#describeserviceerrorsresulttypedef).
 
+<a id="describe_stack_provisioning_parameters"></a>
+
 ### describe_stack_provisioning_parameters
 
 Requests a description of a stack's provisioning parameters.
@@ -968,6 +1057,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStackProvisioningParametersResultTypeDef](./type_defs.md#describestackprovisioningparametersresulttypedef).
+
+<a id="describe_stack_summary"></a>
 
 ### describe_stack_summary
 
@@ -989,6 +1080,8 @@ Keyword-only arguments:
 Returns
 [DescribeStackSummaryResultTypeDef](./type_defs.md#describestacksummaryresulttypedef).
 
+<a id="describe_stacks"></a>
+
 ### describe_stacks
 
 Requests a description of one or more stacks.
@@ -1007,6 +1100,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef).
+
+<a id="describe_time_based_auto_scaling"></a>
 
 ### describe_time_based_auto_scaling
 
@@ -1028,6 +1123,8 @@ Keyword-only arguments:
 Returns
 [DescribeTimeBasedAutoScalingResultTypeDef](./type_defs.md#describetimebasedautoscalingresulttypedef).
 
+<a id="describe_user_profiles"></a>
+
 ### describe_user_profiles
 
 Describe specified users.
@@ -1046,6 +1143,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUserProfilesResultTypeDef](./type_defs.md#describeuserprofilesresulttypedef).
+
+<a id="describe_volumes"></a>
 
 ### describe_volumes
 
@@ -1069,6 +1168,8 @@ Keyword-only arguments:
 Returns
 [DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef).
 
+<a id="detach_elastic_load_balancer"></a>
+
 ### detach_elastic_load_balancer
 
 Detaches a specified Elastic Load Balancing instance from its layer.
@@ -1087,6 +1188,8 @@ Keyword-only arguments:
 - `ElasticLoadBalancerName`: `str` *(required)*
 - `LayerId`: `str` *(required)*
 
+<a id="disassociate_elastic_ip"></a>
+
 ### disassociate_elastic_ip
 
 Disassociates an Elastic IP address from its instance.
@@ -1102,6 +1205,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ElasticIp`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -1120,6 +1225,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_hostname_suggestion"></a>
 
 ### get_hostname_suggestion
 
@@ -1141,6 +1248,8 @@ Keyword-only arguments:
 Returns
 [GetHostnameSuggestionResultTypeDef](./type_defs.md#gethostnamesuggestionresulttypedef).
 
+<a id="grant_access"></a>
+
 ### grant_access
 
 .
@@ -1159,6 +1268,8 @@ Keyword-only arguments:
 - `ValidForInMinutes`: `int`
 
 Returns [GrantAccessResultTypeDef](./type_defs.md#grantaccessresulttypedef).
+
+<a id="list_tags"></a>
 
 ### list_tags
 
@@ -1180,6 +1291,8 @@ Keyword-only arguments:
 
 Returns [ListTagsResultTypeDef](./type_defs.md#listtagsresulttypedef).
 
+<a id="reboot_instance"></a>
+
 ### reboot_instance
 
 Reboots a specified instance.
@@ -1195,6 +1308,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
+
+<a id="register_ecs_cluster"></a>
 
 ### register_ecs_cluster
 
@@ -1216,6 +1331,8 @@ Keyword-only arguments:
 Returns
 [RegisterEcsClusterResultTypeDef](./type_defs.md#registerecsclusterresulttypedef).
 
+<a id="register_elastic_ip"></a>
+
 ### register_elastic_ip
 
 Registers an Elastic IP address with a specified stack.
@@ -1235,6 +1352,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterElasticIpResultTypeDef](./type_defs.md#registerelasticipresulttypedef).
+
+<a id="register_instance"></a>
 
 ### register_instance
 
@@ -1263,6 +1382,8 @@ Keyword-only arguments:
 Returns
 [RegisterInstanceResultTypeDef](./type_defs.md#registerinstanceresulttypedef).
 
+<a id="register_rds_db_instance"></a>
+
 ### register_rds_db_instance
 
 Registers an Amazon RDS instance with a stack.
@@ -1283,6 +1404,8 @@ Keyword-only arguments:
 - `DbUser`: `str` *(required)*
 - `DbPassword`: `str` *(required)*
 
+<a id="register_volume"></a>
+
 ### register_volume
 
 Registers an Amazon EBS volume with a specified stack.
@@ -1302,6 +1425,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterVolumeResultTypeDef](./type_defs.md#registervolumeresulttypedef).
+
+<a id="set_load_based_auto_scaling"></a>
 
 ### set_load_based_auto_scaling
 
@@ -1325,6 +1450,8 @@ Keyword-only arguments:
 - `DownScaling`:
   [AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef)
 
+<a id="set_permission"></a>
+
 ### set_permission
 
 Specifies a user's permissions.
@@ -1345,6 +1472,8 @@ Keyword-only arguments:
 - `AllowSudo`: `bool`
 - `Level`: `str`
 
+<a id="set_time_based_auto_scaling"></a>
+
 ### set_time_based_auto_scaling
 
 Specify the time-based auto scaling configuration for a specified instance.
@@ -1364,6 +1493,8 @@ Keyword-only arguments:
 - `AutoScalingSchedule`:
   [WeeklyAutoScalingScheduleTypeDef](./type_defs.md#weeklyautoscalingscheduletypedef)
 
+<a id="start_instance"></a>
+
 ### start_instance
 
 Starts a specified instance.
@@ -1380,6 +1511,8 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
+<a id="start_stack"></a>
+
 ### start_stack
 
 Starts a stack's instances.
@@ -1395,6 +1528,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
+
+<a id="stop_instance"></a>
 
 ### stop_instance
 
@@ -1413,6 +1548,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `Force`: `bool`
 
+<a id="stop_stack"></a>
+
 ### stop_stack
 
 Stops a specified stack.
@@ -1428,6 +1565,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -1447,6 +1586,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="unassign_instance"></a>
+
 ### unassign_instance
 
 Unassigns a registered instance from all layers that are using the instance.
@@ -1462,6 +1603,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
+
+<a id="unassign_volume"></a>
 
 ### unassign_volume
 
@@ -1479,6 +1622,8 @@ Keyword-only arguments:
 
 - `VolumeId`: `str` *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a specified stack or layer.
@@ -1495,6 +1640,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_app"></a>
 
 ### update_app
 
@@ -1527,6 +1674,8 @@ Keyword-only arguments:
 - `Environment`:
   `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
+<a id="update_elastic_ip"></a>
+
 ### update_elastic_ip
 
 Updates a registered Elastic IP address's name.
@@ -1543,6 +1692,8 @@ Keyword-only arguments:
 
 - `ElasticIp`: `str` *(required)*
 - `Name`: `str`
+
+<a id="update_instance"></a>
 
 ### update_instance
 
@@ -1570,6 +1721,8 @@ Keyword-only arguments:
 - `InstallUpdatesOnBoot`: `bool`
 - `EbsOptimized`: `bool`
 - `AgentVersion`: `str`
+
+<a id="update_layer"></a>
 
 ### update_layer
 
@@ -1608,6 +1761,8 @@ Keyword-only arguments:
 - `LifecycleEventConfiguration`:
   [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
 
+<a id="update_my_user_profile"></a>
+
 ### update_my_user_profile
 
 Updates a user's SSH public key.
@@ -1623,6 +1778,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SshPublicKey`: `str`
+
+<a id="update_rds_db_instance"></a>
 
 ### update_rds_db_instance
 
@@ -1641,6 +1798,8 @@ Keyword-only arguments:
 - `RdsDbInstanceArn`: `str` *(required)*
 - `DbUser`: `str`
 - `DbPassword`: `str`
+
+<a id="update_stack"></a>
 
 ### update_stack
 
@@ -1679,6 +1838,8 @@ Keyword-only arguments:
 - `UseOpsworksSecurityGroups`: `bool`
 - `AgentVersion`: `str`
 
+<a id="update_user_profile"></a>
+
 ### update_user_profile
 
 Updates a specified user profile.
@@ -1698,6 +1859,8 @@ Keyword-only arguments:
 - `SshPublicKey`: `str`
 - `AllowSelfManagement`: `bool`
 
+<a id="update_volume"></a>
+
 ### update_volume
 
 Updates an Amazon EBS volume's name or mount point.
@@ -1716,6 +1879,8 @@ Keyword-only arguments:
 - `Name`: `str`
 - `MountPoint`: `str`
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("opsworks").get_paginator` method with
@@ -1723,6 +1888,8 @@ overloads.
 
 - `client.get_paginator("describe_ecs_clusters")` ->
   [DescribeEcsClustersPaginator](./paginators.md#describeecsclusterspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

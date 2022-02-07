@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-macie2-module"></a>
+
 # Typed dictionaries for boto3 Macie2 module
 
 > [Index](..) > [Macie2](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
 type annotations stubs module
-[mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
+[mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 - [Typed dictionaries for boto3 Macie2 module](#typed-dictionaries-for-boto3-macie2-module)
   - [AcceptInvitationRequestRequestTypeDef](#acceptinvitationrequestrequesttypedef)
@@ -212,6 +214,8 @@ type annotations stubs module
   - [UserPausedDetailsTypeDef](#userpauseddetailstypedef)
   - [WeeklyScheduleTypeDef](#weeklyscheduletypedef)
 
+<a id="acceptinvitationrequestrequesttypedef"></a>
+
 ## AcceptInvitationRequestRequestTypeDef
 
 ```python
@@ -227,6 +231,8 @@ Optional fields:
 - `administratorAccountId`: `str`
 - `masterAccount`: `str`
 
+<a id="accesscontrollisttypedef"></a>
+
 ## AccessControlListTypeDef
 
 ```python
@@ -237,6 +243,8 @@ Optional fields:
 
 - `allowsPublicReadAccess`: `bool`
 - `allowsPublicWriteAccess`: `bool`
+
+<a id="accountdetailtypedef"></a>
 
 ## AccountDetailTypeDef
 
@@ -249,6 +257,8 @@ Required fields:
 - `accountId`: `str`
 - `email`: `str`
 
+<a id="accountlevelpermissionstypedef"></a>
+
 ## AccountLevelPermissionsTypeDef
 
 ```python
@@ -260,6 +270,8 @@ Optional fields:
 - `blockPublicAccess`:
   [BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef)
 
+<a id="adminaccounttypedef"></a>
+
 ## AdminAccountTypeDef
 
 ```python
@@ -270,6 +282,8 @@ Optional fields:
 
 - `accountId`: `str`
 - `status`: [AdminStatusType](./literals.md#adminstatustype)
+
+<a id="apicalldetailstypedef"></a>
 
 ## ApiCallDetailsTypeDef
 
@@ -283,6 +297,8 @@ Optional fields:
 - `apiServiceName`: `str`
 - `firstSeen`: `datetime`
 - `lastSeen`: `datetime`
+
+<a id="assumedroletypedef"></a>
 
 ## AssumedRoleTypeDef
 
@@ -299,6 +315,8 @@ Optional fields:
 - `sessionContext`:
   [SessionContextTypeDef](./type_defs.md#sessioncontexttypedef)
 
+<a id="awsaccounttypedef"></a>
+
 ## AwsAccountTypeDef
 
 ```python
@@ -310,6 +328,8 @@ Optional fields:
 - `accountId`: `str`
 - `principalId`: `str`
 
+<a id="awsservicetypedef"></a>
+
 ## AwsServiceTypeDef
 
 ```python
@@ -319,6 +339,8 @@ from mypy_boto3_macie2.type_defs import AwsServiceTypeDef
 Optional fields:
 
 - `invokedBy`: `str`
+
+<a id="batchgetcustomdataidentifiersummarytypedef"></a>
 
 ## BatchGetCustomDataIdentifierSummaryTypeDef
 
@@ -335,6 +357,8 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 
+<a id="batchgetcustomdataidentifiersrequestrequesttypedef"></a>
+
 ## BatchGetCustomDataIdentifiersRequestRequestTypeDef
 
 ```python
@@ -344,6 +368,8 @@ from mypy_boto3_macie2.type_defs import BatchGetCustomDataIdentifiersRequestRequ
 Optional fields:
 
 - `ids`: `Sequence`\[`str`\]
+
+<a id="batchgetcustomdataidentifiersresponsetypedef"></a>
 
 ## BatchGetCustomDataIdentifiersResponseTypeDef
 
@@ -359,6 +385,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="blockpublicaccesstypedef"></a>
+
 ## BlockPublicAccessTypeDef
 
 ```python
@@ -371,6 +399,8 @@ Optional fields:
 - `blockPublicPolicy`: `bool`
 - `ignorePublicAcls`: `bool`
 - `restrictPublicBuckets`: `bool`
+
+<a id="bucketcountbyeffectivepermissiontypedef"></a>
 
 ## BucketCountByEffectivePermissionTypeDef
 
@@ -385,6 +415,8 @@ Optional fields:
 - `publiclyWritable`: `int`
 - `unknown`: `int`
 
+<a id="bucketcountbyencryptiontypetypedef"></a>
+
 ## BucketCountByEncryptionTypeTypeDef
 
 ```python
@@ -397,6 +429,8 @@ Optional fields:
 - `s3Managed`: `int`
 - `unencrypted`: `int`
 - `unknown`: `int`
+
+<a id="bucketcountbysharedaccesstypetypedef"></a>
 
 ## BucketCountBySharedAccessTypeTypeDef
 
@@ -411,6 +445,8 @@ Optional fields:
 - `notShared`: `int`
 - `unknown`: `int`
 
+<a id="bucketcountpolicyallowsunencryptedobjectuploadstypedef"></a>
+
 ## BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef
 
 ```python
@@ -422,6 +458,8 @@ Optional fields:
 - `allowsUnencryptedObjectUploads`: `int`
 - `deniesUnencryptedObjectUploads`: `int`
 - `unknown`: `int`
+
+<a id="bucketcriteriaadditionalpropertiestypedef"></a>
 
 ## BucketCriteriaAdditionalPropertiesTypeDef
 
@@ -439,6 +477,8 @@ Optional fields:
 - `neq`: `Sequence`\[`str`\]
 - `prefix`: `str`
 
+<a id="bucketlevelpermissionstypedef"></a>
+
 ## BucketLevelPermissionsTypeDef
 
 ```python
@@ -452,6 +492,8 @@ Optional fields:
 - `blockPublicAccess`:
   [BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef)
 - `bucketPolicy`: [BucketPolicyTypeDef](./type_defs.md#bucketpolicytypedef)
+
+<a id="bucketmetadatatypedef"></a>
 
 ## BucketMetadataTypeDef
 
@@ -494,6 +536,8 @@ Optional fields:
   [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
 - `versioning`: `bool`
 
+<a id="bucketpermissionconfigurationtypedef"></a>
+
 ## BucketPermissionConfigurationTypeDef
 
 ```python
@@ -507,6 +551,8 @@ Optional fields:
 - `bucketLevelPermissions`:
   [BucketLevelPermissionsTypeDef](./type_defs.md#bucketlevelpermissionstypedef)
 
+<a id="bucketpolicytypedef"></a>
+
 ## BucketPolicyTypeDef
 
 ```python
@@ -517,6 +563,8 @@ Optional fields:
 
 - `allowsPublicReadAccess`: `bool`
 - `allowsPublicWriteAccess`: `bool`
+
+<a id="bucketpublicaccesstypedef"></a>
 
 ## BucketPublicAccessTypeDef
 
@@ -531,6 +579,8 @@ Optional fields:
 - `permissionConfiguration`:
   [BucketPermissionConfigurationTypeDef](./type_defs.md#bucketpermissionconfigurationtypedef)
 
+<a id="bucketserversideencryptiontypedef"></a>
+
 ## BucketServerSideEncryptionTypeDef
 
 ```python
@@ -542,6 +592,8 @@ Optional fields:
 - `kmsMasterKeyId`: `str`
 - `type`: [TypeType](./literals.md#typetype)
 
+<a id="bucketsortcriteriatypedef"></a>
+
 ## BucketSortCriteriaTypeDef
 
 ```python
@@ -552,6 +604,8 @@ Optional fields:
 
 - `attributeName`: `str`
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
+
+<a id="celltypedef"></a>
 
 ## CellTypeDef
 
@@ -565,6 +619,8 @@ Optional fields:
 - `column`: `int`
 - `columnName`: `str`
 - `row`: `int`
+
+<a id="classificationdetailstypedef"></a>
 
 ## ClassificationDetailsTypeDef
 
@@ -580,6 +636,8 @@ Optional fields:
 - `result`:
   [ClassificationResultTypeDef](./type_defs.md#classificationresulttypedef)
 
+<a id="classificationexportconfigurationtypedef"></a>
+
 ## ClassificationExportConfigurationTypeDef
 
 ```python
@@ -589,6 +647,8 @@ from mypy_boto3_macie2.type_defs import ClassificationExportConfigurationTypeDef
 Optional fields:
 
 - `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
+
+<a id="classificationresultstatustypedef"></a>
 
 ## ClassificationResultStatusTypeDef
 
@@ -600,6 +660,8 @@ Optional fields:
 
 - `code`: `str`
 - `reason`: `str`
+
+<a id="classificationresulttypedef"></a>
 
 ## ClassificationResultTypeDef
 
@@ -618,6 +680,8 @@ Optional fields:
 - `sizeClassified`: `int`
 - `status`:
   [ClassificationResultStatusTypeDef](./type_defs.md#classificationresultstatustypedef)
+
+<a id="createclassificationjobrequestrequesttypedef"></a>
 
 ## CreateClassificationJobRequestRequestTypeDef
 
@@ -646,6 +710,8 @@ Optional fields:
   [JobScheduleFrequencyTypeDef](./type_defs.md#jobschedulefrequencytypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createclassificationjobresponsetypedef"></a>
+
 ## CreateClassificationJobResponseTypeDef
 
 ```python
@@ -658,6 +724,8 @@ Required fields:
 - `jobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcustomdataidentifierrequestrequesttypedef"></a>
 
 ## CreateCustomDataIdentifierRequestRequestTypeDef
 
@@ -681,6 +749,8 @@ Optional fields:
   `Sequence`\[[SeverityLevelTypeDef](./type_defs.md#severityleveltypedef)\]
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createcustomdataidentifierresponsetypedef"></a>
+
 ## CreateCustomDataIdentifierResponseTypeDef
 
 ```python
@@ -692,6 +762,8 @@ Required fields:
 - `customDataIdentifierId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfindingsfilterrequestrequesttypedef"></a>
 
 ## CreateFindingsFilterRequestRequestTypeDef
 
@@ -713,6 +785,8 @@ Optional fields:
 - `position`: `int`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createfindingsfilterresponsetypedef"></a>
+
 ## CreateFindingsFilterResponseTypeDef
 
 ```python
@@ -725,6 +799,8 @@ Required fields:
 - `id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createinvitationsrequestrequesttypedef"></a>
 
 ## CreateInvitationsRequestRequestTypeDef
 
@@ -741,6 +817,8 @@ Optional fields:
 - `disableEmailNotification`: `bool`
 - `message`: `str`
 
+<a id="createinvitationsresponsetypedef"></a>
+
 ## CreateInvitationsResponseTypeDef
 
 ```python
@@ -753,6 +831,8 @@ Required fields:
   `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creatememberrequestrequesttypedef"></a>
 
 ## CreateMemberRequestRequestTypeDef
 
@@ -768,6 +848,8 @@ Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="creatememberresponsetypedef"></a>
+
 ## CreateMemberResponseTypeDef
 
 ```python
@@ -780,6 +862,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createsamplefindingsrequestrequesttypedef"></a>
+
 ## CreateSampleFindingsRequestRequestTypeDef
 
 ```python
@@ -791,6 +875,8 @@ Optional fields:
 - `findingTypes`:
   `Sequence`\[[FindingTypeType](./literals.md#findingtypetype)\]
 
+<a id="criteriablockforjobtypedef"></a>
+
 ## CriteriaBlockForJobTypeDef
 
 ```python
@@ -801,6 +887,8 @@ Optional fields:
 
 - `and`:
   `Sequence`\[[CriteriaForJobTypeDef](./type_defs.md#criteriaforjobtypedef)\]
+
+<a id="criteriaforjobtypedef"></a>
 
 ## CriteriaForJobTypeDef
 
@@ -814,6 +902,8 @@ Optional fields:
   [SimpleCriterionForJobTypeDef](./type_defs.md#simplecriterionforjobtypedef)
 - `tagCriterion`:
   [TagCriterionForJobTypeDef](./type_defs.md#tagcriterionforjobtypedef)
+
+<a id="criterionadditionalpropertiestypedef"></a>
 
 ## CriterionAdditionalPropertiesTypeDef
 
@@ -831,6 +921,8 @@ Optional fields:
 - `lte`: `int`
 - `neq`: `Sequence`\[`str`\]
 
+<a id="customdataidentifiersummarytypedef"></a>
+
 ## CustomDataIdentifierSummaryTypeDef
 
 ```python
@@ -845,6 +937,8 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 
+<a id="customdataidentifierstypedef"></a>
+
 ## CustomDataIdentifiersTypeDef
 
 ```python
@@ -856,6 +950,8 @@ Optional fields:
 - `detections`:
   `List`\[[CustomDetectionTypeDef](./type_defs.md#customdetectiontypedef)\]
 - `totalCount`: `int`
+
+<a id="customdetectiontypedef"></a>
 
 ## CustomDetectionTypeDef
 
@@ -870,6 +966,8 @@ Optional fields:
 - `name`: `str`
 - `occurrences`: [OccurrencesTypeDef](./type_defs.md#occurrencestypedef)
 
+<a id="declineinvitationsrequestrequesttypedef"></a>
+
 ## DeclineInvitationsRequestRequestTypeDef
 
 ```python
@@ -879,6 +977,8 @@ from mypy_boto3_macie2.type_defs import DeclineInvitationsRequestRequestTypeDef
 Required fields:
 
 - `accountIds`: `Sequence`\[`str`\]
+
+<a id="declineinvitationsresponsetypedef"></a>
 
 ## DeclineInvitationsResponseTypeDef
 
@@ -893,6 +993,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="defaultdetectiontypedef"></a>
+
 ## DefaultDetectionTypeDef
 
 ```python
@@ -905,6 +1007,8 @@ Optional fields:
 - `occurrences`: [OccurrencesTypeDef](./type_defs.md#occurrencestypedef)
 - `type`: `str`
 
+<a id="deletecustomdataidentifierrequestrequesttypedef"></a>
+
 ## DeleteCustomDataIdentifierRequestRequestTypeDef
 
 ```python
@@ -914,6 +1018,8 @@ from mypy_boto3_macie2.type_defs import DeleteCustomDataIdentifierRequestRequest
 Required fields:
 
 - `id`: `str`
+
+<a id="deletefindingsfilterrequestrequesttypedef"></a>
 
 ## DeleteFindingsFilterRequestRequestTypeDef
 
@@ -925,6 +1031,8 @@ Required fields:
 
 - `id`: `str`
 
+<a id="deleteinvitationsrequestrequesttypedef"></a>
+
 ## DeleteInvitationsRequestRequestTypeDef
 
 ```python
@@ -934,6 +1042,8 @@ from mypy_boto3_macie2.type_defs import DeleteInvitationsRequestRequestTypeDef
 Required fields:
 
 - `accountIds`: `Sequence`\[`str`\]
+
+<a id="deleteinvitationsresponsetypedef"></a>
 
 ## DeleteInvitationsResponseTypeDef
 
@@ -948,6 +1058,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletememberrequestrequesttypedef"></a>
+
 ## DeleteMemberRequestRequestTypeDef
 
 ```python
@@ -957,6 +1069,8 @@ from mypy_boto3_macie2.type_defs import DeleteMemberRequestRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="describebucketsrequestrequesttypedef"></a>
 
 ## DescribeBucketsRequestRequestTypeDef
 
@@ -973,6 +1087,8 @@ Optional fields:
 - `sortCriteria`:
   [BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef)
 
+<a id="describebucketsresponsetypedef"></a>
+
 ## DescribeBucketsResponseTypeDef
 
 ```python
@@ -987,6 +1103,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeclassificationjobrequestrequesttypedef"></a>
+
 ## DescribeClassificationJobRequestRequestTypeDef
 
 ```python
@@ -996,6 +1114,8 @@ from mypy_boto3_macie2.type_defs import DescribeClassificationJobRequestRequestT
 Required fields:
 
 - `jobId`: `str`
+
+<a id="describeclassificationjobresponsetypedef"></a>
 
 ## DescribeClassificationJobResponseTypeDef
 
@@ -1033,6 +1153,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeorganizationconfigurationresponsetypedef"></a>
+
 ## DescribeOrganizationConfigurationResponseTypeDef
 
 ```python
@@ -1046,6 +1168,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disableorganizationadminaccountrequestrequesttypedef"></a>
+
 ## DisableOrganizationAdminAccountRequestRequestTypeDef
 
 ```python
@@ -1055,6 +1179,8 @@ from mypy_boto3_macie2.type_defs import DisableOrganizationAdminAccountRequestRe
 Required fields:
 
 - `adminAccountId`: `str`
+
+<a id="disassociatememberrequestrequesttypedef"></a>
 
 ## DisassociateMemberRequestRequestTypeDef
 
@@ -1066,6 +1192,8 @@ Required fields:
 
 - `id`: `str`
 
+<a id="domaindetailstypedef"></a>
+
 ## DomainDetailsTypeDef
 
 ```python
@@ -1075,6 +1203,8 @@ from mypy_boto3_macie2.type_defs import DomainDetailsTypeDef
 Optional fields:
 
 - `domainName`: `str`
+
+<a id="enablemacierequestrequesttypedef"></a>
 
 ## EnableMacieRequestRequestTypeDef
 
@@ -1089,6 +1219,8 @@ Optional fields:
   [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
 - `status`: [MacieStatusType](./literals.md#maciestatustype)
 
+<a id="enableorganizationadminaccountrequestrequesttypedef"></a>
+
 ## EnableOrganizationAdminAccountRequestRequestTypeDef
 
 ```python
@@ -1102,6 +1234,8 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
+
+<a id="federatedusertypedef"></a>
 
 ## FederatedUserTypeDef
 
@@ -1118,6 +1252,8 @@ Optional fields:
 - `sessionContext`:
   [SessionContextTypeDef](./type_defs.md#sessioncontexttypedef)
 
+<a id="findingactiontypedef"></a>
+
 ## FindingActionTypeDef
 
 ```python
@@ -1130,6 +1266,8 @@ Optional fields:
   [FindingActionTypeType](./literals.md#findingactiontypetype))
 - `apiCallDetails`:
   [ApiCallDetailsTypeDef](./type_defs.md#apicalldetailstypedef)
+
+<a id="findingactortypedef"></a>
 
 ## FindingActorTypeDef
 
@@ -1144,6 +1282,8 @@ Optional fields:
   [IpAddressDetailsTypeDef](./type_defs.md#ipaddressdetailstypedef)
 - `userIdentity`: [UserIdentityTypeDef](./type_defs.md#useridentitytypedef)
 
+<a id="findingcriteriatypedef"></a>
+
 ## FindingCriteriaTypeDef
 
 ```python
@@ -1154,6 +1294,8 @@ Optional fields:
 
 - `criterion`: `Mapping`\[`str`,
   [CriterionAdditionalPropertiesTypeDef](./type_defs.md#criterionadditionalpropertiestypedef)\]
+
+<a id="findingstatisticssortcriteriatypedef"></a>
 
 ## FindingStatisticsSortCriteriaTypeDef
 
@@ -1166,6 +1308,8 @@ Optional fields:
 - `attributeName`:
   [FindingStatisticsSortAttributeNameType](./literals.md#findingstatisticssortattributenametype)
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
+
+<a id="findingtypedef"></a>
 
 ## FindingTypeDef
 
@@ -1196,6 +1340,8 @@ Optional fields:
 - `type`: [FindingTypeType](./literals.md#findingtypetype)
 - `updatedAt`: `datetime`
 
+<a id="findingsfilterlistitemtypedef"></a>
+
 ## FindingsFilterListItemTypeDef
 
 ```python
@@ -1210,6 +1356,8 @@ Optional fields:
 - `name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="getadministratoraccountresponsetypedef"></a>
+
 ## GetAdministratorAccountResponseTypeDef
 
 ```python
@@ -1222,6 +1370,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbucketstatisticsrequestrequesttypedef"></a>
+
 ## GetBucketStatisticsRequestRequestTypeDef
 
 ```python
@@ -1231,6 +1381,8 @@ from mypy_boto3_macie2.type_defs import GetBucketStatisticsRequestRequestTypeDef
 Optional fields:
 
 - `accountId`: `str`
+
+<a id="getbucketstatisticsresponsetypedef"></a>
 
 ## GetBucketStatisticsResponseTypeDef
 
@@ -1262,6 +1414,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getclassificationexportconfigurationresponsetypedef"></a>
+
 ## GetClassificationExportConfigurationResponseTypeDef
 
 ```python
@@ -1275,6 +1429,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcustomdataidentifierrequestrequesttypedef"></a>
+
 ## GetCustomDataIdentifierRequestRequestTypeDef
 
 ```python
@@ -1284,6 +1440,8 @@ from mypy_boto3_macie2.type_defs import GetCustomDataIdentifierRequestRequestTyp
 Required fields:
 
 - `id`: `str`
+
+<a id="getcustomdataidentifierresponsetypedef"></a>
 
 ## GetCustomDataIdentifierResponseTypeDef
 
@@ -1309,6 +1467,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfindingstatisticsrequestrequesttypedef"></a>
+
 ## GetFindingStatisticsRequestRequestTypeDef
 
 ```python
@@ -1327,6 +1487,8 @@ Optional fields:
 - `sortCriteria`:
   [FindingStatisticsSortCriteriaTypeDef](./type_defs.md#findingstatisticssortcriteriatypedef)
 
+<a id="getfindingstatisticsresponsetypedef"></a>
+
 ## GetFindingStatisticsResponseTypeDef
 
 ```python
@@ -1340,6 +1502,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfindingsfilterrequestrequesttypedef"></a>
+
 ## GetFindingsFilterRequestRequestTypeDef
 
 ```python
@@ -1349,6 +1513,8 @@ from mypy_boto3_macie2.type_defs import GetFindingsFilterRequestRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="getfindingsfilterresponsetypedef"></a>
 
 ## GetFindingsFilterResponseTypeDef
 
@@ -1370,6 +1536,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfindingspublicationconfigurationresponsetypedef"></a>
+
 ## GetFindingsPublicationConfigurationResponseTypeDef
 
 ```python
@@ -1382,6 +1550,8 @@ Required fields:
   [SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getfindingsrequestrequesttypedef"></a>
 
 ## GetFindingsRequestRequestTypeDef
 
@@ -1397,6 +1567,8 @@ Optional fields:
 
 - `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
+<a id="getfindingsresponsetypedef"></a>
+
 ## GetFindingsResponseTypeDef
 
 ```python
@@ -1409,6 +1581,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinvitationscountresponsetypedef"></a>
+
 ## GetInvitationsCountResponseTypeDef
 
 ```python
@@ -1420,6 +1594,8 @@ Required fields:
 - `invitationsCount`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getmaciesessionresponsetypedef"></a>
 
 ## GetMacieSessionResponseTypeDef
 
@@ -1438,6 +1614,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmasteraccountresponsetypedef"></a>
+
 ## GetMasterAccountResponseTypeDef
 
 ```python
@@ -1450,6 +1628,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmemberrequestrequesttypedef"></a>
+
 ## GetMemberRequestRequestTypeDef
 
 ```python
@@ -1459,6 +1639,8 @@ from mypy_boto3_macie2.type_defs import GetMemberRequestRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="getmemberresponsetypedef"></a>
 
 ## GetMemberResponseTypeDef
 
@@ -1481,6 +1663,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getusagestatisticsrequestrequesttypedef"></a>
+
 ## GetUsageStatisticsRequestRequestTypeDef
 
 ```python
@@ -1497,6 +1681,8 @@ Optional fields:
   [UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef)
 - `timeRange`: [TimeRangeType](./literals.md#timerangetype)
 
+<a id="getusagestatisticsresponsetypedef"></a>
+
 ## GetUsageStatisticsResponseTypeDef
 
 ```python
@@ -1511,6 +1697,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getusagetotalsrequestrequesttypedef"></a>
+
 ## GetUsageTotalsRequestRequestTypeDef
 
 ```python
@@ -1520,6 +1708,8 @@ from mypy_boto3_macie2.type_defs import GetUsageTotalsRequestRequestTypeDef
 Optional fields:
 
 - `timeRange`: `str`
+
+<a id="getusagetotalsresponsetypedef"></a>
 
 ## GetUsageTotalsResponseTypeDef
 
@@ -1535,6 +1725,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="groupcounttypedef"></a>
+
 ## GroupCountTypeDef
 
 ```python
@@ -1545,6 +1737,8 @@ Optional fields:
 
 - `count`: `int`
 - `groupKey`: `str`
+
+<a id="iamusertypedef"></a>
 
 ## IamUserTypeDef
 
@@ -1558,6 +1752,8 @@ Optional fields:
 - `arn`: `str`
 - `principalId`: `str`
 - `userName`: `str`
+
+<a id="invitationtypedef"></a>
 
 ## InvitationTypeDef
 
@@ -1573,6 +1769,8 @@ Optional fields:
 - `relationshipStatus`:
   [RelationshipStatusType](./literals.md#relationshipstatustype)
 
+<a id="ipaddressdetailstypedef"></a>
+
 ## IpAddressDetailsTypeDef
 
 ```python
@@ -1587,6 +1785,8 @@ Optional fields:
 - `ipGeoLocation`: [IpGeoLocationTypeDef](./type_defs.md#ipgeolocationtypedef)
 - `ipOwner`: [IpOwnerTypeDef](./type_defs.md#ipownertypedef)
 
+<a id="ipcitytypedef"></a>
+
 ## IpCityTypeDef
 
 ```python
@@ -1596,6 +1796,8 @@ from mypy_boto3_macie2.type_defs import IpCityTypeDef
 Optional fields:
 
 - `name`: `str`
+
+<a id="ipcountrytypedef"></a>
 
 ## IpCountryTypeDef
 
@@ -1608,6 +1810,8 @@ Optional fields:
 - `code`: `str`
 - `name`: `str`
 
+<a id="ipgeolocationtypedef"></a>
+
 ## IpGeoLocationTypeDef
 
 ```python
@@ -1618,6 +1822,8 @@ Optional fields:
 
 - `lat`: `float`
 - `lon`: `float`
+
+<a id="ipownertypedef"></a>
 
 ## IpOwnerTypeDef
 
@@ -1631,6 +1837,8 @@ Optional fields:
 - `asnOrg`: `str`
 - `isp`: `str`
 - `org`: `str`
+
+<a id="jobdetailstypedef"></a>
 
 ## JobDetailsTypeDef
 
@@ -1646,6 +1854,8 @@ Optional fields:
 - `lastJobId`: `str`
 - `lastJobRunTime`: `datetime`
 
+<a id="jobschedulefrequencytypedef"></a>
+
 ## JobScheduleFrequencyTypeDef
 
 ```python
@@ -1660,6 +1870,8 @@ Optional fields:
 - `weeklySchedule`:
   [WeeklyScheduleTypeDef](./type_defs.md#weeklyscheduletypedef)
 
+<a id="jobscopetermtypedef"></a>
+
 ## JobScopeTermTypeDef
 
 ```python
@@ -1672,6 +1884,8 @@ Optional fields:
   [SimpleScopeTermTypeDef](./type_defs.md#simplescopetermtypedef)
 - `tagScopeTerm`: [TagScopeTermTypeDef](./type_defs.md#tagscopetermtypedef)
 
+<a id="jobscopingblocktypedef"></a>
+
 ## JobScopingBlockTypeDef
 
 ```python
@@ -1682,6 +1896,8 @@ Optional fields:
 
 - `and`:
   `Sequence`\[[JobScopeTermTypeDef](./type_defs.md#jobscopetermtypedef)\]
+
+<a id="jobsummarytypedef"></a>
 
 ## JobSummaryTypeDef
 
@@ -1705,6 +1921,8 @@ Optional fields:
 - `bucketCriteria`:
   [S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef)
 
+<a id="keyvaluepairtypedef"></a>
+
 ## KeyValuePairTypeDef
 
 ```python
@@ -1716,6 +1934,8 @@ Optional fields:
 - `key`: `str`
 - `value`: `str`
 
+<a id="lastrunerrorstatustypedef"></a>
+
 ## LastRunErrorStatusTypeDef
 
 ```python
@@ -1726,6 +1946,8 @@ Optional fields:
 
 - `code`:
   [LastRunErrorStatusCodeType](./literals.md#lastrunerrorstatuscodetype)
+
+<a id="listclassificationjobsrequestrequesttypedef"></a>
 
 ## ListClassificationJobsRequestRequestTypeDef
 
@@ -1742,6 +1964,8 @@ Optional fields:
 - `sortCriteria`:
   [ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef)
 
+<a id="listclassificationjobsresponsetypedef"></a>
+
 ## ListClassificationJobsResponseTypeDef
 
 ```python
@@ -1755,6 +1979,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcustomdataidentifiersrequestrequesttypedef"></a>
+
 ## ListCustomDataIdentifiersRequestRequestTypeDef
 
 ```python
@@ -1765,6 +1991,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listcustomdataidentifiersresponsetypedef"></a>
 
 ## ListCustomDataIdentifiersResponseTypeDef
 
@@ -1780,6 +2008,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfindingsfiltersrequestrequesttypedef"></a>
+
 ## ListFindingsFiltersRequestRequestTypeDef
 
 ```python
@@ -1790,6 +2020,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listfindingsfiltersresponsetypedef"></a>
 
 ## ListFindingsFiltersResponseTypeDef
 
@@ -1805,6 +2037,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfindingsrequestrequesttypedef"></a>
+
 ## ListFindingsRequestRequestTypeDef
 
 ```python
@@ -1819,6 +2053,8 @@ Optional fields:
 - `nextToken`: `str`
 - `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
+<a id="listfindingsresponsetypedef"></a>
+
 ## ListFindingsResponseTypeDef
 
 ```python
@@ -1832,6 +2068,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listinvitationsrequestrequesttypedef"></a>
+
 ## ListInvitationsRequestRequestTypeDef
 
 ```python
@@ -1842,6 +2080,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listinvitationsresponsetypedef"></a>
 
 ## ListInvitationsResponseTypeDef
 
@@ -1857,6 +2097,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listjobsfiltercriteriatypedef"></a>
+
 ## ListJobsFilterCriteriaTypeDef
 
 ```python
@@ -1870,6 +2112,8 @@ Optional fields:
 - `includes`:
   `Sequence`\[[ListJobsFilterTermTypeDef](./type_defs.md#listjobsfiltertermtypedef)\]
 
+<a id="listjobsfiltertermtypedef"></a>
+
 ## ListJobsFilterTermTypeDef
 
 ```python
@@ -1881,6 +2125,8 @@ Optional fields:
 - `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
 - `key`: [ListJobsFilterKeyType](./literals.md#listjobsfilterkeytype)
 - `values`: `Sequence`\[`str`\]
+
+<a id="listjobssortcriteriatypedef"></a>
 
 ## ListJobsSortCriteriaTypeDef
 
@@ -1894,6 +2140,8 @@ Optional fields:
   [ListJobsSortAttributeNameType](./literals.md#listjobssortattributenametype)
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
 
+<a id="listmanageddataidentifiersrequestrequesttypedef"></a>
+
 ## ListManagedDataIdentifiersRequestRequestTypeDef
 
 ```python
@@ -1903,6 +2151,8 @@ from mypy_boto3_macie2.type_defs import ListManagedDataIdentifiersRequestRequest
 Optional fields:
 
 - `nextToken`: `str`
+
+<a id="listmanageddataidentifiersresponsetypedef"></a>
 
 ## ListManagedDataIdentifiersResponseTypeDef
 
@@ -1918,6 +2168,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmembersrequestrequesttypedef"></a>
+
 ## ListMembersRequestRequestTypeDef
 
 ```python
@@ -1929,6 +2181,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `onlyAssociated`: `str`
+
+<a id="listmembersresponsetypedef"></a>
 
 ## ListMembersResponseTypeDef
 
@@ -1943,6 +2197,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listorganizationadminaccountsrequestrequesttypedef"></a>
+
 ## ListOrganizationAdminAccountsRequestRequestTypeDef
 
 ```python
@@ -1953,6 +2209,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listorganizationadminaccountsresponsetypedef"></a>
 
 ## ListOrganizationAdminAccountsResponseTypeDef
 
@@ -1968,6 +2226,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1977,6 +2237,8 @@ from mypy_boto3_macie2.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1990,6 +2252,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="manageddataidentifiersummarytypedef"></a>
+
 ## ManagedDataIdentifierSummaryTypeDef
 
 ```python
@@ -2001,6 +2265,8 @@ Optional fields:
 - `category`:
   [SensitiveDataItemCategoryType](./literals.md#sensitivedataitemcategorytype)
 - `id`: `str`
+
+<a id="matchingbuckettypedef"></a>
 
 ## MatchingBucketTypeDef
 
@@ -2028,6 +2294,8 @@ Optional fields:
 - `unclassifiableObjectSizeInBytes`:
   [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
 
+<a id="matchingresourcetypedef"></a>
+
 ## MatchingResourceTypeDef
 
 ```python
@@ -2038,6 +2306,8 @@ Optional fields:
 
 - `matchingBucket`:
   [MatchingBucketTypeDef](./type_defs.md#matchingbuckettypedef)
+
+<a id="membertypedef"></a>
 
 ## MemberTypeDef
 
@@ -2058,6 +2328,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `updatedAt`: `datetime`
 
+<a id="monthlyscheduletypedef"></a>
+
 ## MonthlyScheduleTypeDef
 
 ```python
@@ -2067,6 +2339,8 @@ from mypy_boto3_macie2.type_defs import MonthlyScheduleTypeDef
 Optional fields:
 
 - `dayOfMonth`: `int`
+
+<a id="objectcountbyencryptiontypetypedef"></a>
 
 ## ObjectCountByEncryptionTypeTypeDef
 
@@ -2082,6 +2356,8 @@ Optional fields:
 - `unencrypted`: `int`
 - `unknown`: `int`
 
+<a id="objectlevelstatisticstypedef"></a>
+
 ## ObjectLevelStatisticsTypeDef
 
 ```python
@@ -2093,6 +2369,8 @@ Optional fields:
 - `fileType`: `int`
 - `storageClass`: `int`
 - `total`: `int`
+
+<a id="occurrencestypedef"></a>
 
 ## OccurrencesTypeDef
 
@@ -2108,6 +2386,8 @@ Optional fields:
 - `pages`: `List`\[[PageTypeDef](./type_defs.md#pagetypedef)\]
 - `records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
 
+<a id="pagetypedef"></a>
+
 ## PageTypeDef
 
 ```python
@@ -2119,6 +2399,8 @@ Optional fields:
 - `lineRange`: [RangeTypeDef](./type_defs.md#rangetypedef)
 - `offsetRange`: [RangeTypeDef](./type_defs.md#rangetypedef)
 - `pageNumber`: `int`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -2132,6 +2414,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="policydetailstypedef"></a>
+
 ## PolicyDetailsTypeDef
 
 ```python
@@ -2143,6 +2427,8 @@ Optional fields:
 - `action`: [FindingActionTypeDef](./type_defs.md#findingactiontypedef)
 - `actor`: [FindingActorTypeDef](./type_defs.md#findingactortypedef)
 
+<a id="putclassificationexportconfigurationrequestrequesttypedef"></a>
+
 ## PutClassificationExportConfigurationRequestRequestTypeDef
 
 ```python
@@ -2153,6 +2439,8 @@ Required fields:
 
 - `configuration`:
   [ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef)
+
+<a id="putclassificationexportconfigurationresponsetypedef"></a>
 
 ## PutClassificationExportConfigurationResponseTypeDef
 
@@ -2167,6 +2455,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putfindingspublicationconfigurationrequestrequesttypedef"></a>
+
 ## PutFindingsPublicationConfigurationRequestRequestTypeDef
 
 ```python
@@ -2178,6 +2468,8 @@ Optional fields:
 - `clientToken`: `str`
 - `securityHubConfiguration`:
   [SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef)
+
+<a id="rangetypedef"></a>
 
 ## RangeTypeDef
 
@@ -2191,6 +2483,8 @@ Optional fields:
 - `start`: `int`
 - `startColumn`: `int`
 
+<a id="recordtypedef"></a>
+
 ## RecordTypeDef
 
 ```python
@@ -2201,6 +2495,8 @@ Optional fields:
 
 - `jsonPath`: `str`
 - `recordIndex`: `int`
+
+<a id="replicationdetailstypedef"></a>
 
 ## ReplicationDetailsTypeDef
 
@@ -2214,6 +2510,8 @@ Optional fields:
 - `replicatedExternally`: `bool`
 - `replicationAccounts`: `List`\[`str`\]
 
+<a id="resourcesaffectedtypedef"></a>
+
 ## ResourcesAffectedTypeDef
 
 ```python
@@ -2224,6 +2522,8 @@ Optional fields:
 
 - `s3Bucket`: [S3BucketTypeDef](./type_defs.md#s3buckettypedef)
 - `s3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2239,6 +2539,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3bucketcriteriaforjobtypedef"></a>
+
 ## S3BucketCriteriaForJobTypeDef
 
 ```python
@@ -2252,6 +2554,8 @@ Optional fields:
 - `includes`:
   [CriteriaBlockForJobTypeDef](./type_defs.md#criteriablockforjobtypedef)
 
+<a id="s3bucketdefinitionforjobtypedef"></a>
+
 ## S3BucketDefinitionForJobTypeDef
 
 ```python
@@ -2263,6 +2567,8 @@ Required fields:
 - `accountId`: `str`
 - `buckets`: `Sequence`\[`str`\]
 
+<a id="s3bucketownertypedef"></a>
+
 ## S3BucketOwnerTypeDef
 
 ```python
@@ -2273,6 +2579,8 @@ Optional fields:
 
 - `displayName`: `str`
 - `id`: `str`
+
+<a id="s3buckettypedef"></a>
 
 ## S3BucketTypeDef
 
@@ -2294,6 +2602,8 @@ Optional fields:
   [BucketPublicAccessTypeDef](./type_defs.md#bucketpublicaccesstypedef)
 - `tags`: `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 
+<a id="s3destinationtypedef"></a>
+
 ## S3DestinationTypeDef
 
 ```python
@@ -2309,6 +2619,8 @@ Optional fields:
 
 - `keyPrefix`: `str`
 
+<a id="s3jobdefinitiontypedef"></a>
+
 ## S3JobDefinitionTypeDef
 
 ```python
@@ -2322,6 +2634,8 @@ Optional fields:
 - `scoping`: [ScopingTypeDef](./type_defs.md#scopingtypedef)
 - `bucketCriteria`:
   [S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef)
+
+<a id="s3objecttypedef"></a>
 
 ## S3ObjectTypeDef
 
@@ -2345,6 +2659,8 @@ Optional fields:
 - `tags`: `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 - `versionId`: `str`
 
+<a id="scopingtypedef"></a>
+
 ## ScopingTypeDef
 
 ```python
@@ -2355,6 +2671,8 @@ Optional fields:
 
 - `excludes`: [JobScopingBlockTypeDef](./type_defs.md#jobscopingblocktypedef)
 - `includes`: [JobScopingBlockTypeDef](./type_defs.md#jobscopingblocktypedef)
+
+<a id="searchresourcesbucketcriteriatypedef"></a>
 
 ## SearchResourcesBucketCriteriaTypeDef
 
@@ -2369,6 +2687,8 @@ Optional fields:
 - `includes`:
   [SearchResourcesCriteriaBlockTypeDef](./type_defs.md#searchresourcescriteriablocktypedef)
 
+<a id="searchresourcescriteriablocktypedef"></a>
+
 ## SearchResourcesCriteriaBlockTypeDef
 
 ```python
@@ -2379,6 +2699,8 @@ Optional fields:
 
 - `and`:
   `Sequence`\[[SearchResourcesCriteriaTypeDef](./type_defs.md#searchresourcescriteriatypedef)\]
+
+<a id="searchresourcescriteriatypedef"></a>
 
 ## SearchResourcesCriteriaTypeDef
 
@@ -2392,6 +2714,8 @@ Optional fields:
   [SearchResourcesSimpleCriterionTypeDef](./type_defs.md#searchresourcessimplecriteriontypedef)
 - `tagCriterion`:
   [SearchResourcesTagCriterionTypeDef](./type_defs.md#searchresourcestagcriteriontypedef)
+
+<a id="searchresourcesrequestrequesttypedef"></a>
 
 ## SearchResourcesRequestRequestTypeDef
 
@@ -2408,6 +2732,8 @@ Optional fields:
 - `sortCriteria`:
   [SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef)
 
+<a id="searchresourcesresponsetypedef"></a>
+
 ## SearchResourcesResponseTypeDef
 
 ```python
@@ -2421,6 +2747,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="searchresourcessimplecriteriontypedef"></a>
 
 ## SearchResourcesSimpleCriterionTypeDef
 
@@ -2436,6 +2764,8 @@ Optional fields:
   [SearchResourcesSimpleCriterionKeyType](./literals.md#searchresourcessimplecriterionkeytype)
 - `values`: `Sequence`\[`str`\]
 
+<a id="searchresourcessortcriteriatypedef"></a>
+
 ## SearchResourcesSortCriteriaTypeDef
 
 ```python
@@ -2448,6 +2778,8 @@ Optional fields:
   [SearchResourcesSortAttributeNameType](./literals.md#searchresourcessortattributenametype)
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
 
+<a id="searchresourcestagcriterionpairtypedef"></a>
+
 ## SearchResourcesTagCriterionPairTypeDef
 
 ```python
@@ -2458,6 +2790,8 @@ Optional fields:
 
 - `key`: `str`
 - `value`: `str`
+
+<a id="searchresourcestagcriteriontypedef"></a>
 
 ## SearchResourcesTagCriterionTypeDef
 
@@ -2472,6 +2806,8 @@ Optional fields:
 - `tagValues`:
   `Sequence`\[[SearchResourcesTagCriterionPairTypeDef](./type_defs.md#searchresourcestagcriterionpairtypedef)\]
 
+<a id="securityhubconfigurationtypedef"></a>
+
 ## SecurityHubConfigurationTypeDef
 
 ```python
@@ -2482,6 +2818,8 @@ Required fields:
 
 - `publishClassificationFindings`: `bool`
 - `publishPolicyFindings`: `bool`
+
+<a id="sensitivedataitemtypedef"></a>
 
 ## SensitiveDataItemTypeDef
 
@@ -2497,6 +2835,8 @@ Optional fields:
   `List`\[[DefaultDetectionTypeDef](./type_defs.md#defaultdetectiontypedef)\]
 - `totalCount`: `int`
 
+<a id="serversideencryptiontypedef"></a>
+
 ## ServerSideEncryptionTypeDef
 
 ```python
@@ -2507,6 +2847,8 @@ Optional fields:
 
 - `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `kmsMasterKeyId`: `str`
+
+<a id="servicelimittypedef"></a>
 
 ## ServiceLimitTypeDef
 
@@ -2520,6 +2862,8 @@ Optional fields:
 - `unit`: `Literal['TERABYTES']` (see [UnitType](./literals.md#unittype))
 - `value`: `int`
 
+<a id="sessioncontextattributestypedef"></a>
+
 ## SessionContextAttributesTypeDef
 
 ```python
@@ -2530,6 +2874,8 @@ Optional fields:
 
 - `creationDate`: `datetime`
 - `mfaAuthenticated`: `bool`
+
+<a id="sessioncontexttypedef"></a>
 
 ## SessionContextTypeDef
 
@@ -2542,6 +2888,8 @@ Optional fields:
 - `attributes`:
   [SessionContextAttributesTypeDef](./type_defs.md#sessioncontextattributestypedef)
 - `sessionIssuer`: [SessionIssuerTypeDef](./type_defs.md#sessionissuertypedef)
+
+<a id="sessionissuertypedef"></a>
 
 ## SessionIssuerTypeDef
 
@@ -2557,6 +2905,8 @@ Optional fields:
 - `type`: `str`
 - `userName`: `str`
 
+<a id="severityleveltypedef"></a>
+
 ## SeverityLevelTypeDef
 
 ```python
@@ -2569,6 +2919,8 @@ Required fields:
 - `severity`:
   [DataIdentifierSeverityType](./literals.md#dataidentifierseveritytype)
 
+<a id="severitytypedef"></a>
+
 ## SeverityTypeDef
 
 ```python
@@ -2580,6 +2932,8 @@ Optional fields:
 - `description`:
   [SeverityDescriptionType](./literals.md#severitydescriptiontype)
 - `score`: `int`
+
+<a id="simplecriterionforjobtypedef"></a>
 
 ## SimpleCriterionForJobTypeDef
 
@@ -2594,6 +2948,8 @@ Optional fields:
   [SimpleCriterionKeyForJobType](./literals.md#simplecriterionkeyforjobtype)
 - `values`: `Sequence`\[`str`\]
 
+<a id="simplescopetermtypedef"></a>
+
 ## SimpleScopeTermTypeDef
 
 ```python
@@ -2606,6 +2962,8 @@ Optional fields:
 - `key`: [ScopeFilterKeyType](./literals.md#scopefilterkeytype)
 - `values`: `Sequence`\[`str`\]
 
+<a id="sortcriteriatypedef"></a>
+
 ## SortCriteriaTypeDef
 
 ```python
@@ -2617,6 +2975,8 @@ Optional fields:
 - `attributeName`: `str`
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
 
+<a id="statisticstypedef"></a>
+
 ## StatisticsTypeDef
 
 ```python
@@ -2627,6 +2987,8 @@ Optional fields:
 
 - `approximateNumberOfObjectsToProcess`: `float`
 - `numberOfRuns`: `float`
+
+<a id="tagcriterionforjobtypedef"></a>
 
 ## TagCriterionForJobTypeDef
 
@@ -2640,6 +3002,8 @@ Optional fields:
 - `tagValues`:
   `Sequence`\[[TagCriterionPairForJobTypeDef](./type_defs.md#tagcriterionpairforjobtypedef)\]
 
+<a id="tagcriterionpairforjobtypedef"></a>
+
 ## TagCriterionPairForJobTypeDef
 
 ```python
@@ -2651,6 +3015,8 @@ Optional fields:
 - `key`: `str`
 - `value`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2661,6 +3027,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="tagscopetermtypedef"></a>
 
 ## TagScopeTermTypeDef
 
@@ -2677,6 +3045,8 @@ Optional fields:
 - `target`: `Literal['S3_OBJECT']` (see
   [TagTargetType](./literals.md#tagtargettype))
 
+<a id="tagvaluepairtypedef"></a>
+
 ## TagValuePairTypeDef
 
 ```python
@@ -2687,6 +3057,8 @@ Optional fields:
 
 - `key`: `str`
 - `value`: `str`
+
+<a id="testcustomdataidentifierrequestrequesttypedef"></a>
 
 ## TestCustomDataIdentifierRequestRequestTypeDef
 
@@ -2705,6 +3077,8 @@ Optional fields:
 - `keywords`: `Sequence`\[`str`\]
 - `maximumMatchDistance`: `int`
 
+<a id="testcustomdataidentifierresponsetypedef"></a>
+
 ## TestCustomDataIdentifierResponseTypeDef
 
 ```python
@@ -2716,6 +3090,8 @@ Required fields:
 - `matchCount`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="unprocessedaccounttypedef"></a>
 
 ## UnprocessedAccountTypeDef
 
@@ -2729,6 +3105,8 @@ Optional fields:
 - `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2740,6 +3118,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
 
+<a id="updateclassificationjobrequestrequesttypedef"></a>
+
 ## UpdateClassificationJobRequestRequestTypeDef
 
 ```python
@@ -2750,6 +3130,8 @@ Required fields:
 
 - `jobId`: `str`
 - `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
+
+<a id="updatefindingsfilterrequestrequesttypedef"></a>
 
 ## UpdateFindingsFilterRequestRequestTypeDef
 
@@ -2771,6 +3153,8 @@ Optional fields:
 - `position`: `int`
 - `clientToken`: `str`
 
+<a id="updatefindingsfilterresponsetypedef"></a>
+
 ## UpdateFindingsFilterResponseTypeDef
 
 ```python
@@ -2784,6 +3168,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatemaciesessionrequestrequesttypedef"></a>
+
 ## UpdateMacieSessionRequestRequestTypeDef
 
 ```python
@@ -2796,6 +3182,8 @@ Optional fields:
   [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
 - `status`: [MacieStatusType](./literals.md#maciestatustype)
 
+<a id="updatemembersessionrequestrequesttypedef"></a>
+
 ## UpdateMemberSessionRequestRequestTypeDef
 
 ```python
@@ -2807,6 +3195,8 @@ Required fields:
 - `id`: `str`
 - `status`: [MacieStatusType](./literals.md#maciestatustype)
 
+<a id="updateorganizationconfigurationrequestrequesttypedef"></a>
+
 ## UpdateOrganizationConfigurationRequestRequestTypeDef
 
 ```python
@@ -2816,6 +3206,8 @@ from mypy_boto3_macie2.type_defs import UpdateOrganizationConfigurationRequestRe
 Required fields:
 
 - `autoEnable`: `bool`
+
+<a id="usagebyaccounttypedef"></a>
 
 ## UsageByAccountTypeDef
 
@@ -2830,6 +3222,8 @@ Optional fields:
 - `serviceLimit`: [ServiceLimitTypeDef](./type_defs.md#servicelimittypedef)
 - `type`: [UsageTypeType](./literals.md#usagetypetype)
 
+<a id="usagerecordtypedef"></a>
+
 ## UsageRecordTypeDef
 
 ```python
@@ -2842,6 +3236,8 @@ Optional fields:
 - `freeTrialStartDate`: `datetime`
 - `usage`:
   `List`\[[UsageByAccountTypeDef](./type_defs.md#usagebyaccounttypedef)\]
+
+<a id="usagestatisticsfiltertypedef"></a>
 
 ## UsageStatisticsFilterTypeDef
 
@@ -2857,6 +3253,8 @@ Optional fields:
   [UsageStatisticsFilterKeyType](./literals.md#usagestatisticsfilterkeytype)
 - `values`: `Sequence`\[`str`\]
 
+<a id="usagestatisticssortbytypedef"></a>
+
 ## UsageStatisticsSortByTypeDef
 
 ```python
@@ -2867,6 +3265,8 @@ Optional fields:
 
 - `key`: [UsageStatisticsSortKeyType](./literals.md#usagestatisticssortkeytype)
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
+
+<a id="usagetotaltypedef"></a>
 
 ## UsageTotalTypeDef
 
@@ -2880,6 +3280,8 @@ Optional fields:
 - `estimatedCost`: `str`
 - `type`: [UsageTypeType](./literals.md#usagetypetype)
 
+<a id="useridentityroottypedef"></a>
+
 ## UserIdentityRootTypeDef
 
 ```python
@@ -2891,6 +3293,8 @@ Optional fields:
 - `accountId`: `str`
 - `arn`: `str`
 - `principalId`: `str`
+
+<a id="useridentitytypedef"></a>
 
 ## UserIdentityTypeDef
 
@@ -2908,6 +3312,8 @@ Optional fields:
 - `root`: [UserIdentityRootTypeDef](./type_defs.md#useridentityroottypedef)
 - `type`: [UserIdentityTypeType](./literals.md#useridentitytypetype)
 
+<a id="userpauseddetailstypedef"></a>
+
 ## UserPausedDetailsTypeDef
 
 ```python
@@ -2919,6 +3325,8 @@ Optional fields:
 - `jobExpiresAt`: `datetime`
 - `jobImminentExpirationHealthEventArn`: `str`
 - `jobPausedAt`: `datetime`
+
+<a id="weeklyscheduletypedef"></a>
 
 ## WeeklyScheduleTypeDef
 

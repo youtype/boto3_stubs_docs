@@ -1,3 +1,5 @@
+<a id="textractclient-for-boto3-textract-module"></a>
+
 # TextractClient for boto3 Textract module
 
 > [Index](..) > [Textract](.) > TextractClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
 type annotations stubs module
-[mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
+[mypy-boto3-textract](https://pypi.org/project/mypy-boto3-textract/).
 
 - [TextractClient for boto3 Textract module](#textractclient-for-boto3-textract-module)
   - [TextractClient](#textractclient)
@@ -25,6 +27,8 @@ type annotations stubs module
     - [start_document_text_detection](#start_document_text_detection)
     - [start_expense_analysis](#start_expense_analysis)
 
+<a id="textractclient"></a>
+
 ## TextractClient
 
 Type annotations for `boto3.client("textract")`
@@ -32,14 +36,17 @@ Type annotations for `boto3.client("textract")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_textract.client import TextractClient
 
 def get_textract_client() -> TextractClient:
-    return boto3.client("textract")
+    return Session().client("textract")
 ```
 
 Boto3 documentation:
 [Textract.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -71,7 +78,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.UnsupportedDocumentException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -83,6 +94,8 @@ Boto3 documentation:
 [Textract.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="analyze_document"></a>
 
 ### analyze_document
 
@@ -107,6 +120,8 @@ Keyword-only arguments:
 Returns
 [AnalyzeDocumentResponseTypeDef](./type_defs.md#analyzedocumentresponsetypedef).
 
+<a id="analyze_expense"></a>
+
 ### analyze_expense
 
 `AnalyzeExpense` synchronously analyzes an input document for financially
@@ -127,6 +142,8 @@ Keyword-only arguments:
 Returns
 [AnalyzeExpenseResponseTypeDef](./type_defs.md#analyzeexpenseresponsetypedef).
 
+<a id="analyze_id"></a>
+
 ### analyze_id
 
 Analyzes identity documents for relevant information.
@@ -146,6 +163,8 @@ Keyword-only arguments:
 
 Returns [AnalyzeIDResponseTypeDef](./type_defs.md#analyzeidresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -160,6 +179,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="detect_document_text"></a>
 
 ### detect_document_text
 
@@ -180,6 +201,8 @@ Keyword-only arguments:
 Returns
 [DetectDocumentTextResponseTypeDef](./type_defs.md#detectdocumenttextresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -197,6 +220,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_document_analysis"></a>
 
 ### get_document_analysis
 
@@ -219,6 +244,8 @@ Keyword-only arguments:
 
 Returns
 [GetDocumentAnalysisResponseTypeDef](./type_defs.md#getdocumentanalysisresponsetypedef).
+
+<a id="get_document_text_detection"></a>
 
 ### get_document_text_detection
 
@@ -243,6 +270,8 @@ Keyword-only arguments:
 Returns
 [GetDocumentTextDetectionResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponsetypedef).
 
+<a id="get_expense_analysis"></a>
+
 ### get_expense_analysis
 
 Gets the results for an Amazon Textract asynchronous operation that analyzes
@@ -264,6 +293,8 @@ Keyword-only arguments:
 
 Returns
 [GetExpenseAnalysisResponseTypeDef](./type_defs.md#getexpenseanalysisresponsetypedef).
+
+<a id="start_document_analysis"></a>
 
 ### start_document_analysis
 
@@ -295,6 +326,8 @@ Keyword-only arguments:
 Returns
 [StartDocumentAnalysisResponseTypeDef](./type_defs.md#startdocumentanalysisresponsetypedef).
 
+<a id="start_document_text_detection"></a>
+
 ### start_document_text_detection
 
 Starts the asynchronous detection of text in a document.
@@ -322,6 +355,8 @@ Keyword-only arguments:
 
 Returns
 [StartDocumentTextDetectionResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponsetypedef).
+
+<a id="start_expense_analysis"></a>
 
 ### start_expense_analysis
 

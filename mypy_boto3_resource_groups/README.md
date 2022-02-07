@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-resourcegroups-module"></a>
+
 # Type annotations for boto3 ResourceGroups module
 
 > [Index](..) > ResourceGroups
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
 type annotations stubs module
-[mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
+[mypy-boto3-resource-groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[resource-groups]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[resource-groups]'
+
+# standalone installation
 pip install mypy-boto3-resource-groups
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-resource-groups
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="resourcegroupsclient"></a>
+
 ## ResourceGroupsClient
 
 Type annotations for `boto3.client("resource-groups")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_resource_groups.client import ResourceGroupsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -53,6 +67,8 @@ from mypy_boto3_resource_groups.client import ResourceGroupsClient
 - [update_group](./client.md#update_group)
 - [update_group_query](./client.md#update_group_query)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ResourceGroupsClient [exceptions](./client.md#exceptions)
@@ -66,6 +82,8 @@ ResourceGroupsClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - UnauthorizedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -74,12 +92,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_resource_groups.paginators import ListGroupResourcesPaginator, ...
+from mypy_boto3_resource_groups.paginator import ListGroupResourcesPaginator, ...
 ```
 
 - [ListGroupResourcesPaginator](./paginators.md#listgroupresourcespaginator)
 - [ListGroupsPaginator](./paginators.md#listgroupspaginator)
 - [SearchResourcesPaginator](./paginators.md#searchresourcespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -102,6 +122,8 @@ from mypy_boto3_resource_groups.literals import GroupConfigurationStatusType, ..
 - [SearchResourcesPaginatorName](./literals.md#searchresourcespaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

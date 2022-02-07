@@ -1,3 +1,5 @@
+<a id="route53recoverycontrolconfigclient-for-boto3-route53recoverycontrolconfig-module"></a>
+
 # Route53RecoveryControlConfigClient for boto3 Route53RecoveryControlConfig module
 
 > [Index](..) > [Route53RecoveryControlConfig](.) >
@@ -6,7 +8,7 @@
 Auto-generated documentation for
 [Route53RecoveryControlConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig)
 type annotations stubs module
-[mypy_boto3_route53_recovery_control_config](https://pypi.org/project/mypy-boto3-route53-recovery-control-config/).
+[mypy-boto3-route53-recovery-control-config](https://pypi.org/project/mypy-boto3-route53-recovery-control-config/).
 
 - [Route53RecoveryControlConfigClient for boto3 Route53RecoveryControlConfig module](#route53recoverycontrolconfigclient-for-boto3-route53recoverycontrolconfig-module)
   - [Route53RecoveryControlConfigClient](#route53recoverycontrolconfigclient)
@@ -40,6 +42,8 @@ type annotations stubs module
     - [update_safety_rule](#update_safety_rule)
     - [get_waiter](#get_waiter)
 
+<a id="route53recoverycontrolconfigclient"></a>
+
 ## Route53RecoveryControlConfigClient
 
 Type annotations for `boto3.client("route53-recovery-control-config")`
@@ -47,14 +51,17 @@ Type annotations for `boto3.client("route53-recovery-control-config")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_route53_recovery_control_config.client import Route53RecoveryControlConfigClient
 
 def get_route53-recovery-control-config_client() -> Route53RecoveryControlConfigClient:
-    return boto3.client("route53-recovery-control-config")
+    return Session().client("route53-recovery-control-config")
 ```
 
 Boto3 documentation:
 [Route53RecoveryControlConfig.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -79,7 +86,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -92,6 +103,8 @@ Boto3 documentation:
 [Route53RecoveryControlConfig.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -108,6 +121,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_cluster"></a>
 
 ### create_cluster
 
@@ -131,6 +146,8 @@ Keyword-only arguments:
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
+<a id="create_control_panel"></a>
+
 ### create_control_panel
 
 Creates a new control panel.
@@ -153,6 +170,8 @@ Keyword-only arguments:
 
 Returns
 [CreateControlPanelResponseTypeDef](./type_defs.md#createcontrolpanelresponsetypedef).
+
+<a id="create_routing_control"></a>
 
 ### create_routing_control
 
@@ -178,6 +197,8 @@ Keyword-only arguments:
 Returns
 [CreateRoutingControlResponseTypeDef](./type_defs.md#createroutingcontrolresponsetypedef).
 
+<a id="create_safety_rule"></a>
+
 ### create_safety_rule
 
 Creates a safety rule in a control panel.
@@ -202,6 +223,8 @@ Keyword-only arguments:
 Returns
 [CreateSafetyRuleResponseTypeDef](./type_defs.md#createsafetyruleresponsetypedef).
 
+<a id="delete_cluster"></a>
+
 ### delete_cluster
 
 Delete a cluster.
@@ -221,6 +244,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_control_panel"></a>
+
 ### delete_control_panel
 
 Deletes a control panel.
@@ -239,6 +264,8 @@ Keyword-only arguments:
 - `ControlPanelArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_routing_control"></a>
 
 ### delete_routing_control
 
@@ -260,6 +287,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_safety_rule"></a>
+
 ### delete_safety_rule
 
 Deletes a safety rule.
@@ -278,6 +307,8 @@ Keyword-only arguments:
 - `SafetyRuleArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_cluster"></a>
 
 ### describe_cluster
 
@@ -298,6 +329,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef).
+
+<a id="describe_control_panel"></a>
 
 ### describe_control_panel
 
@@ -320,6 +353,8 @@ Keyword-only arguments:
 Returns
 [DescribeControlPanelResponseTypeDef](./type_defs.md#describecontrolpanelresponsetypedef).
 
+<a id="describe_routing_control"></a>
+
 ### describe_routing_control
 
 Displays details about a routing control.
@@ -341,6 +376,8 @@ Keyword-only arguments:
 Returns
 [DescribeRoutingControlResponseTypeDef](./type_defs.md#describeroutingcontrolresponsetypedef).
 
+<a id="describe_safety_rule"></a>
+
 ### describe_safety_rule
 
 Returns information about a safety rule.
@@ -361,6 +398,8 @@ Keyword-only arguments:
 Returns
 [DescribeSafetyRuleResponseTypeDef](./type_defs.md#describesafetyruleresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -380,6 +419,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_associated_route53_health_checks"></a>
 
 ### list_associated_route53_health_checks
 
@@ -405,6 +446,8 @@ Keyword-only arguments:
 Returns
 [ListAssociatedRoute53HealthChecksResponseTypeDef](./type_defs.md#listassociatedroute53healthchecksresponsetypedef).
 
+<a id="list_clusters"></a>
+
 ### list_clusters
 
 Returns an array of all the clusters in an account.
@@ -425,6 +468,8 @@ Keyword-only arguments:
 
 Returns
 [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
+
+<a id="list_control_panels"></a>
 
 ### list_control_panels
 
@@ -448,6 +493,8 @@ Keyword-only arguments:
 Returns
 [ListControlPanelsResponseTypeDef](./type_defs.md#listcontrolpanelsresponsetypedef).
 
+<a id="list_routing_controls"></a>
+
 ### list_routing_controls
 
 Returns an array of routing controls for a control panel.
@@ -469,6 +516,8 @@ Keyword-only arguments:
 
 Returns
 [ListRoutingControlsResponseTypeDef](./type_defs.md#listroutingcontrolsresponsetypedef).
+
+<a id="list_safety_rules"></a>
 
 ### list_safety_rules
 
@@ -493,6 +542,8 @@ Keyword-only arguments:
 Returns
 [ListSafetyRulesResponseTypeDef](./type_defs.md#listsafetyrulesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags for a resource.
@@ -514,6 +565,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds a tag to a resource.
@@ -533,6 +586,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -554,6 +609,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_control_panel"></a>
+
 ### update_control_panel
 
 Updates a control panel.
@@ -574,6 +631,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateControlPanelResponseTypeDef](./type_defs.md#updatecontrolpanelresponsetypedef).
+
+<a id="update_routing_control"></a>
 
 ### update_routing_control
 
@@ -597,6 +656,8 @@ Keyword-only arguments:
 Returns
 [UpdateRoutingControlResponseTypeDef](./type_defs.md#updateroutingcontrolresponsetypedef).
 
+<a id="update_safety_rule"></a>
+
 ### update_safety_rule
 
 Update a safety rule (an assertion rule or gating rule).
@@ -619,6 +680,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSafetyRuleResponseTypeDef](./type_defs.md#updatesafetyruleresponsetypedef).
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

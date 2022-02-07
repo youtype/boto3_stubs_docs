@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-mturk-module"></a>
+
 # Paginators for boto3 MTurk module
 
 > [Index](..) > [MTurk](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
 type annotations stubs module
-[mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
+[mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 - [Paginators for boto3 MTurk module](#paginators-for-boto3-mturk-module)
   - [ListAssignmentsForHITPaginator](#listassignmentsforhitpaginator)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [ListWorkerBlocksPaginator](#listworkerblockspaginator)
   - [ListWorkersWithQualificationTypePaginator](#listworkerswithqualificationtypepaginator)
 
+<a id="listassignmentsforhitpaginator"></a>
+
 ## ListAssignmentsForHITPaginator
 
 Type annotations for
@@ -26,10 +30,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mturk.paginator import ListAssignmentsForHITPaginator
 
 def get_list_assignments_for_hit_paginator() -> ListAssignmentsForHITPaginator:
-    return boto3.client("mturk").get_paginator("list_assignments_for_hit")
+    return Session().client("mturk").get_paginator("list_assignments_for_hit")
 ```
 
 Boto3 documentation:
@@ -46,6 +52,8 @@ Arguments for `ListAssignmentsForHITPaginator.paginate` method:
 `ListAssignmentsForHITPaginator.paginate` returns
 `_PageIterator`\[[ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef)\].
 
+<a id="listbonuspaymentspaginator"></a>
+
 ## ListBonusPaymentsPaginator
 
 Type annotations for
@@ -54,10 +62,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mturk.paginator import ListBonusPaymentsPaginator
 
 def get_list_bonus_payments_paginator() -> ListBonusPaymentsPaginator:
-    return boto3.client("mturk").get_paginator("list_bonus_payments")
+    return Session().client("mturk").get_paginator("list_bonus_payments")
 ```
 
 Boto3 documentation:
@@ -73,6 +83,8 @@ Arguments for `ListBonusPaymentsPaginator.paginate` method:
 `ListBonusPaymentsPaginator.paginate` returns
 `_PageIterator`\[[ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef)\].
 
+<a id="listhitspaginator"></a>
+
 ## ListHITsPaginator
 
 Type annotations for `boto3.client("mturk").get_paginator("list_hits")`.
@@ -80,10 +92,12 @@ Type annotations for `boto3.client("mturk").get_paginator("list_hits")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mturk.paginator import ListHITsPaginator
 
 def get_list_hits_paginator() -> ListHITsPaginator:
-    return boto3.client("mturk").get_paginator("list_hits")
+    return Session().client("mturk").get_paginator("list_hits")
 ```
 
 Boto3 documentation:
@@ -97,6 +111,8 @@ Arguments for `ListHITsPaginator.paginate` method:
 `ListHITsPaginator.paginate` returns
 `_PageIterator`\[[ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef)\].
 
+<a id="listhitsforqualificationtypepaginator"></a>
+
 ## ListHITsForQualificationTypePaginator
 
 Type annotations for
@@ -105,10 +121,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mturk.paginator import ListHITsForQualificationTypePaginator
 
 def get_list_hits_for_qualification_type_paginator() -> ListHITsForQualificationTypePaginator:
-    return boto3.client("mturk").get_paginator("list_hits_for_qualification_type")
+    return Session().client("mturk").get_paginator("list_hits_for_qualification_type")
 ```
 
 Boto3 documentation:
@@ -123,6 +141,8 @@ Arguments for `ListHITsForQualificationTypePaginator.paginate` method:
 `ListHITsForQualificationTypePaginator.paginate` returns
 `_PageIterator`\[[ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef)\].
 
+<a id="listqualificationrequestspaginator"></a>
+
 ## ListQualificationRequestsPaginator
 
 Type annotations for
@@ -131,10 +151,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mturk.paginator import ListQualificationRequestsPaginator
 
 def get_list_qualification_requests_paginator() -> ListQualificationRequestsPaginator:
-    return boto3.client("mturk").get_paginator("list_qualification_requests")
+    return Session().client("mturk").get_paginator("list_qualification_requests")
 ```
 
 Boto3 documentation:
@@ -149,6 +171,8 @@ Arguments for `ListQualificationRequestsPaginator.paginate` method:
 `ListQualificationRequestsPaginator.paginate` returns
 `_PageIterator`\[[ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef)\].
 
+<a id="listqualificationtypespaginator"></a>
+
 ## ListQualificationTypesPaginator
 
 Type annotations for
@@ -157,10 +181,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mturk.paginator import ListQualificationTypesPaginator
 
 def get_list_qualification_types_paginator() -> ListQualificationTypesPaginator:
-    return boto3.client("mturk").get_paginator("list_qualification_types")
+    return Session().client("mturk").get_paginator("list_qualification_types")
 ```
 
 Boto3 documentation:
@@ -177,6 +203,8 @@ Arguments for `ListQualificationTypesPaginator.paginate` method:
 `ListQualificationTypesPaginator.paginate` returns
 `_PageIterator`\[[ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef)\].
 
+<a id="listreviewablehitspaginator"></a>
+
 ## ListReviewableHITsPaginator
 
 Type annotations for
@@ -185,10 +213,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mturk.paginator import ListReviewableHITsPaginator
 
 def get_list_reviewable_hits_paginator() -> ListReviewableHITsPaginator:
-    return boto3.client("mturk").get_paginator("list_reviewable_hits")
+    return Session().client("mturk").get_paginator("list_reviewable_hits")
 ```
 
 Boto3 documentation:
@@ -204,6 +234,8 @@ Arguments for `ListReviewableHITsPaginator.paginate` method:
 `ListReviewableHITsPaginator.paginate` returns
 `_PageIterator`\[[ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef)\].
 
+<a id="listworkerblockspaginator"></a>
+
 ## ListWorkerBlocksPaginator
 
 Type annotations for
@@ -212,10 +244,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mturk.paginator import ListWorkerBlocksPaginator
 
 def get_list_worker_blocks_paginator() -> ListWorkerBlocksPaginator:
-    return boto3.client("mturk").get_paginator("list_worker_blocks")
+    return Session().client("mturk").get_paginator("list_worker_blocks")
 ```
 
 Boto3 documentation:
@@ -229,6 +263,8 @@ Arguments for `ListWorkerBlocksPaginator.paginate` method:
 `ListWorkerBlocksPaginator.paginate` returns
 `_PageIterator`\[[ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef)\].
 
+<a id="listworkerswithqualificationtypepaginator"></a>
+
 ## ListWorkersWithQualificationTypePaginator
 
 Type annotations for
@@ -237,10 +273,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mturk.paginator import ListWorkersWithQualificationTypePaginator
 
 def get_list_workers_with_qualification_type_paginator() -> ListWorkersWithQualificationTypePaginator:
-    return boto3.client("mturk").get_paginator("list_workers_with_qualification_type")
+    return Session().client("mturk").get_paginator("list_workers_with_qualification_type")
 ```
 
 Boto3 documentation:

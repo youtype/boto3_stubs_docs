@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-backup-module"></a>
+
 # Typed dictionaries for boto3 Backup module
 
 > [Index](..) > [Backup](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
 type annotations stubs module
-[mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
+[mypy-boto3-backup](https://pypi.org/project/mypy-boto3-backup/).
 
 - [Typed dictionaries for boto3 Backup module](#typed-dictionaries-for-boto3-backup-module)
   - [AdvancedBackupSettingTypeDef](#advancedbackupsettingtypedef)
@@ -154,6 +156,8 @@ type annotations stubs module
   - [UpdateReportPlanInputRequestTypeDef](#updatereportplaninputrequesttypedef)
   - [UpdateReportPlanOutputTypeDef](#updatereportplanoutputtypedef)
 
+<a id="advancedbackupsettingtypedef"></a>
+
 ## AdvancedBackupSettingTypeDef
 
 ```python
@@ -164,6 +168,8 @@ Optional fields:
 
 - `ResourceType`: `str`
 - `BackupOptions`: `Mapping`\[`str`, `str`\]
+
+<a id="backupjobtypedef"></a>
 
 ## BackupJobTypeDef
 
@@ -195,6 +201,8 @@ Optional fields:
 - `BackupOptions`: `Dict`\[`str`, `str`\]
 - `BackupType`: `str`
 
+<a id="backupplaninputtypedef"></a>
+
 ## BackupPlanInputTypeDef
 
 ```python
@@ -212,6 +220,8 @@ Optional fields:
 - `AdvancedBackupSettings`:
   `Sequence`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
 
+<a id="backupplantemplateslistmembertypedef"></a>
+
 ## BackupPlanTemplatesListMemberTypeDef
 
 ```python
@@ -222,6 +232,8 @@ Optional fields:
 
 - `BackupPlanTemplateId`: `str`
 - `BackupPlanTemplateName`: `str`
+
+<a id="backupplantypedef"></a>
 
 ## BackupPlanTypeDef
 
@@ -238,6 +250,8 @@ Optional fields:
 
 - `AdvancedBackupSettings`:
   `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
+
+<a id="backupplanslistmembertypedef"></a>
 
 ## BackupPlansListMemberTypeDef
 
@@ -257,6 +271,8 @@ Optional fields:
 - `LastExecutionDate`: `datetime`
 - `AdvancedBackupSettings`:
   `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
+
+<a id="backupruleinputtypedef"></a>
 
 ## BackupRuleInputTypeDef
 
@@ -279,6 +295,8 @@ Optional fields:
 - `CopyActions`:
   `Sequence`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
 - `EnableContinuousBackup`: `bool`
+
+<a id="backupruletypedef"></a>
 
 ## BackupRuleTypeDef
 
@@ -303,6 +321,8 @@ Optional fields:
   `List`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
 - `EnableContinuousBackup`: `bool`
 
+<a id="backupselectiontypedef"></a>
+
 ## BackupSelectionTypeDef
 
 ```python
@@ -322,6 +342,8 @@ Optional fields:
 - `NotResources`: `Sequence`\[`str`\]
 - `Conditions`: [ConditionsTypeDef](./type_defs.md#conditionstypedef)
 
+<a id="backupselectionslistmembertypedef"></a>
+
 ## BackupSelectionsListMemberTypeDef
 
 ```python
@@ -336,6 +358,8 @@ Optional fields:
 - `CreationDate`: `datetime`
 - `CreatorRequestId`: `str`
 - `IamRoleArn`: `str`
+
+<a id="backupvaultlistmembertypedef"></a>
 
 ## BackupVaultListMemberTypeDef
 
@@ -356,6 +380,8 @@ Optional fields:
 - `MaxRetentionDays`: `int`
 - `LockDate`: `datetime`
 
+<a id="calculatedlifecycletypedef"></a>
+
 ## CalculatedLifecycleTypeDef
 
 ```python
@@ -367,6 +393,8 @@ Optional fields:
 - `MoveToColdStorageAt`: `datetime`
 - `DeleteAt`: `datetime`
 
+<a id="conditionparametertypedef"></a>
+
 ## ConditionParameterTypeDef
 
 ```python
@@ -377,6 +405,8 @@ Optional fields:
 
 - `ConditionKey`: `str`
 - `ConditionValue`: `str`
+
+<a id="conditiontypedef"></a>
 
 ## ConditionTypeDef
 
@@ -390,6 +420,8 @@ Required fields:
   [ConditionTypeType](./literals.md#conditiontypetype))
 - `ConditionKey`: `str`
 - `ConditionValue`: `str`
+
+<a id="conditionstypedef"></a>
 
 ## ConditionsTypeDef
 
@@ -408,6 +440,8 @@ Optional fields:
 - `StringNotLike`:
   `Sequence`\[[ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef)\]
 
+<a id="controlinputparametertypedef"></a>
+
 ## ControlInputParameterTypeDef
 
 ```python
@@ -418,6 +452,8 @@ Optional fields:
 
 - `ParameterName`: `str`
 - `ParameterValue`: `str`
+
+<a id="controlscopetypedef"></a>
 
 ## ControlScopeTypeDef
 
@@ -430,6 +466,8 @@ Optional fields:
 - `ComplianceResourceIds`: `Sequence`\[`str`\]
 - `ComplianceResourceTypes`: `Sequence`\[`str`\]
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="copyactiontypedef"></a>
 
 ## CopyActionTypeDef
 
@@ -444,6 +482,8 @@ Required fields:
 Optional fields:
 
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
+
+<a id="copyjobtypedef"></a>
 
 ## CopyJobTypeDef
 
@@ -470,6 +510,8 @@ Optional fields:
   [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
 - `ResourceType`: `str`
 
+<a id="createbackupplaninputrequesttypedef"></a>
+
 ## CreateBackupPlanInputRequestTypeDef
 
 ```python
@@ -484,6 +526,8 @@ Optional fields:
 
 - `BackupPlanTags`: `Mapping`\[`str`, `str`\]
 - `CreatorRequestId`: `str`
+
+<a id="createbackupplanoutputtypedef"></a>
 
 ## CreateBackupPlanOutputTypeDef
 
@@ -502,6 +546,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createbackupselectioninputrequesttypedef"></a>
+
 ## CreateBackupSelectionInputRequestTypeDef
 
 ```python
@@ -518,6 +564,8 @@ Optional fields:
 
 - `CreatorRequestId`: `str`
 
+<a id="createbackupselectionoutputtypedef"></a>
+
 ## CreateBackupSelectionOutputTypeDef
 
 ```python
@@ -531,6 +579,8 @@ Required fields:
 - `CreationDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createbackupvaultinputrequesttypedef"></a>
 
 ## CreateBackupVaultInputRequestTypeDef
 
@@ -548,6 +598,8 @@ Optional fields:
 - `EncryptionKeyArn`: `str`
 - `CreatorRequestId`: `str`
 
+<a id="createbackupvaultoutputtypedef"></a>
+
 ## CreateBackupVaultOutputTypeDef
 
 ```python
@@ -561,6 +613,8 @@ Required fields:
 - `CreationDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createframeworkinputrequesttypedef"></a>
 
 ## CreateFrameworkInputRequestTypeDef
 
@@ -580,6 +634,8 @@ Optional fields:
 - `IdempotencyToken`: `str`
 - `FrameworkTags`: `Mapping`\[`str`, `str`\]
 
+<a id="createframeworkoutputtypedef"></a>
+
 ## CreateFrameworkOutputTypeDef
 
 ```python
@@ -592,6 +648,8 @@ Required fields:
 - `FrameworkArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createreportplaninputrequesttypedef"></a>
 
 ## CreateReportPlanInputRequestTypeDef
 
@@ -612,6 +670,8 @@ Optional fields:
 - `ReportPlanTags`: `Mapping`\[`str`, `str`\]
 - `IdempotencyToken`: `str`
 
+<a id="createreportplanoutputtypedef"></a>
+
 ## CreateReportPlanOutputTypeDef
 
 ```python
@@ -626,6 +686,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebackupplaninputrequesttypedef"></a>
+
 ## DeleteBackupPlanInputRequestTypeDef
 
 ```python
@@ -635,6 +697,8 @@ from mypy_boto3_backup.type_defs import DeleteBackupPlanInputRequestTypeDef
 Required fields:
 
 - `BackupPlanId`: `str`
+
+<a id="deletebackupplanoutputtypedef"></a>
 
 ## DeleteBackupPlanOutputTypeDef
 
@@ -651,6 +715,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebackupselectioninputrequesttypedef"></a>
+
 ## DeleteBackupSelectionInputRequestTypeDef
 
 ```python
@@ -662,6 +728,8 @@ Required fields:
 - `BackupPlanId`: `str`
 - `SelectionId`: `str`
 
+<a id="deletebackupvaultaccesspolicyinputrequesttypedef"></a>
+
 ## DeleteBackupVaultAccessPolicyInputRequestTypeDef
 
 ```python
@@ -671,6 +739,8 @@ from mypy_boto3_backup.type_defs import DeleteBackupVaultAccessPolicyInputReques
 Required fields:
 
 - `BackupVaultName`: `str`
+
+<a id="deletebackupvaultinputrequesttypedef"></a>
 
 ## DeleteBackupVaultInputRequestTypeDef
 
@@ -682,6 +752,8 @@ Required fields:
 
 - `BackupVaultName`: `str`
 
+<a id="deletebackupvaultlockconfigurationinputrequesttypedef"></a>
+
 ## DeleteBackupVaultLockConfigurationInputRequestTypeDef
 
 ```python
@@ -691,6 +763,8 @@ from mypy_boto3_backup.type_defs import DeleteBackupVaultLockConfigurationInputR
 Required fields:
 
 - `BackupVaultName`: `str`
+
+<a id="deletebackupvaultnotificationsinputrequesttypedef"></a>
 
 ## DeleteBackupVaultNotificationsInputRequestTypeDef
 
@@ -702,6 +776,8 @@ Required fields:
 
 - `BackupVaultName`: `str`
 
+<a id="deleteframeworkinputrequesttypedef"></a>
+
 ## DeleteFrameworkInputRequestTypeDef
 
 ```python
@@ -711,6 +787,8 @@ from mypy_boto3_backup.type_defs import DeleteFrameworkInputRequestTypeDef
 Required fields:
 
 - `FrameworkName`: `str`
+
+<a id="deleterecoverypointinputrequesttypedef"></a>
 
 ## DeleteRecoveryPointInputRequestTypeDef
 
@@ -723,6 +801,8 @@ Required fields:
 - `BackupVaultName`: `str`
 - `RecoveryPointArn`: `str`
 
+<a id="deletereportplaninputrequesttypedef"></a>
+
 ## DeleteReportPlanInputRequestTypeDef
 
 ```python
@@ -733,6 +813,8 @@ Required fields:
 
 - `ReportPlanName`: `str`
 
+<a id="describebackupjobinputrequesttypedef"></a>
+
 ## DescribeBackupJobInputRequestTypeDef
 
 ```python
@@ -742,6 +824,8 @@ from mypy_boto3_backup.type_defs import DescribeBackupJobInputRequestTypeDef
 Required fields:
 
 - `BackupJobId`: `str`
+
+<a id="describebackupjoboutputtypedef"></a>
 
 ## DescribeBackupJobOutputTypeDef
 
@@ -775,6 +859,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describebackupvaultinputrequesttypedef"></a>
+
 ## DescribeBackupVaultInputRequestTypeDef
 
 ```python
@@ -784,6 +870,8 @@ from mypy_boto3_backup.type_defs import DescribeBackupVaultInputRequestTypeDef
 Required fields:
 
 - `BackupVaultName`: `str`
+
+<a id="describebackupvaultoutputtypedef"></a>
 
 ## DescribeBackupVaultOutputTypeDef
 
@@ -806,6 +894,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecopyjobinputrequesttypedef"></a>
+
 ## DescribeCopyJobInputRequestTypeDef
 
 ```python
@@ -815,6 +905,8 @@ from mypy_boto3_backup.type_defs import DescribeCopyJobInputRequestTypeDef
 Required fields:
 
 - `CopyJobId`: `str`
+
+<a id="describecopyjoboutputtypedef"></a>
 
 ## DescribeCopyJobOutputTypeDef
 
@@ -828,6 +920,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeframeworkinputrequesttypedef"></a>
+
 ## DescribeFrameworkInputRequestTypeDef
 
 ```python
@@ -837,6 +931,8 @@ from mypy_boto3_backup.type_defs import DescribeFrameworkInputRequestTypeDef
 Required fields:
 
 - `FrameworkName`: `str`
+
+<a id="describeframeworkoutputtypedef"></a>
 
 ## DescribeFrameworkOutputTypeDef
 
@@ -858,6 +954,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeglobalsettingsoutputtypedef"></a>
+
 ## DescribeGlobalSettingsOutputTypeDef
 
 ```python
@@ -871,6 +969,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeprotectedresourceinputrequesttypedef"></a>
+
 ## DescribeProtectedResourceInputRequestTypeDef
 
 ```python
@@ -880,6 +980,8 @@ from mypy_boto3_backup.type_defs import DescribeProtectedResourceInputRequestTyp
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="describeprotectedresourceoutputtypedef"></a>
 
 ## DescribeProtectedResourceOutputTypeDef
 
@@ -895,6 +997,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerecoverypointinputrequesttypedef"></a>
+
 ## DescribeRecoveryPointInputRequestTypeDef
 
 ```python
@@ -905,6 +1009,8 @@ Required fields:
 
 - `BackupVaultName`: `str`
 - `RecoveryPointArn`: `str`
+
+<a id="describerecoverypointoutputtypedef"></a>
 
 ## DescribeRecoveryPointOutputTypeDef
 
@@ -938,6 +1044,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeregionsettingsoutputtypedef"></a>
+
 ## DescribeRegionSettingsOutputTypeDef
 
 ```python
@@ -951,6 +1059,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereportjobinputrequesttypedef"></a>
+
 ## DescribeReportJobInputRequestTypeDef
 
 ```python
@@ -960,6 +1070,8 @@ from mypy_boto3_backup.type_defs import DescribeReportJobInputRequestTypeDef
 Required fields:
 
 - `ReportJobId`: `str`
+
+<a id="describereportjoboutputtypedef"></a>
 
 ## DescribeReportJobOutputTypeDef
 
@@ -973,6 +1085,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereportplaninputrequesttypedef"></a>
+
 ## DescribeReportPlanInputRequestTypeDef
 
 ```python
@@ -982,6 +1096,8 @@ from mypy_boto3_backup.type_defs import DescribeReportPlanInputRequestTypeDef
 Required fields:
 
 - `ReportPlanName`: `str`
+
+<a id="describereportplanoutputtypedef"></a>
 
 ## DescribeReportPlanOutputTypeDef
 
@@ -995,6 +1111,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerestorejobinputrequesttypedef"></a>
+
 ## DescribeRestoreJobInputRequestTypeDef
 
 ```python
@@ -1004,6 +1122,8 @@ from mypy_boto3_backup.type_defs import DescribeRestoreJobInputRequestTypeDef
 Required fields:
 
 - `RestoreJobId`: `str`
+
+<a id="describerestorejoboutputtypedef"></a>
 
 ## DescribeRestoreJobOutputTypeDef
 
@@ -1029,6 +1149,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociaterecoverypointinputrequesttypedef"></a>
+
 ## DisassociateRecoveryPointInputRequestTypeDef
 
 ```python
@@ -1040,6 +1162,8 @@ Required fields:
 - `BackupVaultName`: `str`
 - `RecoveryPointArn`: `str`
 
+<a id="exportbackupplantemplateinputrequesttypedef"></a>
+
 ## ExportBackupPlanTemplateInputRequestTypeDef
 
 ```python
@@ -1049,6 +1173,8 @@ from mypy_boto3_backup.type_defs import ExportBackupPlanTemplateInputRequestType
 Required fields:
 
 - `BackupPlanId`: `str`
+
+<a id="exportbackupplantemplateoutputtypedef"></a>
 
 ## ExportBackupPlanTemplateOutputTypeDef
 
@@ -1061,6 +1187,8 @@ Required fields:
 - `BackupPlanTemplateJson`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="frameworkcontroltypedef"></a>
 
 ## FrameworkControlTypeDef
 
@@ -1078,6 +1206,8 @@ Optional fields:
   `Sequence`\[[ControlInputParameterTypeDef](./type_defs.md#controlinputparametertypedef)\]
 - `ControlScope`: [ControlScopeTypeDef](./type_defs.md#controlscopetypedef)
 
+<a id="frameworktypedef"></a>
+
 ## FrameworkTypeDef
 
 ```python
@@ -1093,6 +1223,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `DeploymentStatus`: `str`
 
+<a id="getbackupplanfromjsoninputrequesttypedef"></a>
+
 ## GetBackupPlanFromJSONInputRequestTypeDef
 
 ```python
@@ -1102,6 +1234,8 @@ from mypy_boto3_backup.type_defs import GetBackupPlanFromJSONInputRequestTypeDef
 Required fields:
 
 - `BackupPlanTemplateJson`: `str`
+
+<a id="getbackupplanfromjsonoutputtypedef"></a>
 
 ## GetBackupPlanFromJSONOutputTypeDef
 
@@ -1115,6 +1249,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbackupplanfromtemplateinputrequesttypedef"></a>
+
 ## GetBackupPlanFromTemplateInputRequestTypeDef
 
 ```python
@@ -1124,6 +1260,8 @@ from mypy_boto3_backup.type_defs import GetBackupPlanFromTemplateInputRequestTyp
 Required fields:
 
 - `BackupPlanTemplateId`: `str`
+
+<a id="getbackupplanfromtemplateoutputtypedef"></a>
 
 ## GetBackupPlanFromTemplateOutputTypeDef
 
@@ -1136,6 +1274,8 @@ Required fields:
 - `BackupPlanDocument`: [BackupPlanTypeDef](./type_defs.md#backupplantypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbackupplaninputrequesttypedef"></a>
 
 ## GetBackupPlanInputRequestTypeDef
 
@@ -1150,6 +1290,8 @@ Required fields:
 Optional fields:
 
 - `VersionId`: `str`
+
+<a id="getbackupplanoutputtypedef"></a>
 
 ## GetBackupPlanOutputTypeDef
 
@@ -1172,6 +1314,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbackupselectioninputrequesttypedef"></a>
+
 ## GetBackupSelectionInputRequestTypeDef
 
 ```python
@@ -1182,6 +1326,8 @@ Required fields:
 
 - `BackupPlanId`: `str`
 - `SelectionId`: `str`
+
+<a id="getbackupselectionoutputtypedef"></a>
 
 ## GetBackupSelectionOutputTypeDef
 
@@ -1200,6 +1346,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbackupvaultaccesspolicyinputrequesttypedef"></a>
+
 ## GetBackupVaultAccessPolicyInputRequestTypeDef
 
 ```python
@@ -1209,6 +1357,8 @@ from mypy_boto3_backup.type_defs import GetBackupVaultAccessPolicyInputRequestTy
 Required fields:
 
 - `BackupVaultName`: `str`
+
+<a id="getbackupvaultaccesspolicyoutputtypedef"></a>
 
 ## GetBackupVaultAccessPolicyOutputTypeDef
 
@@ -1224,6 +1374,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbackupvaultnotificationsinputrequesttypedef"></a>
+
 ## GetBackupVaultNotificationsInputRequestTypeDef
 
 ```python
@@ -1233,6 +1385,8 @@ from mypy_boto3_backup.type_defs import GetBackupVaultNotificationsInputRequestT
 Required fields:
 
 - `BackupVaultName`: `str`
+
+<a id="getbackupvaultnotificationsoutputtypedef"></a>
 
 ## GetBackupVaultNotificationsOutputTypeDef
 
@@ -1250,6 +1404,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrecoverypointrestoremetadatainputrequesttypedef"></a>
+
 ## GetRecoveryPointRestoreMetadataInputRequestTypeDef
 
 ```python
@@ -1260,6 +1416,8 @@ Required fields:
 
 - `BackupVaultName`: `str`
 - `RecoveryPointArn`: `str`
+
+<a id="getrecoverypointrestoremetadataoutputtypedef"></a>
 
 ## GetRecoveryPointRestoreMetadataOutputTypeDef
 
@@ -1275,6 +1433,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsupportedresourcetypesoutputtypedef"></a>
+
 ## GetSupportedResourceTypesOutputTypeDef
 
 ```python
@@ -1287,6 +1447,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="lifecycletypedef"></a>
+
 ## LifecycleTypeDef
 
 ```python
@@ -1297,6 +1459,8 @@ Optional fields:
 
 - `MoveToColdStorageAfterDays`: `int`
 - `DeleteAfterDays`: `int`
+
+<a id="listbackupjobsinputrequesttypedef"></a>
 
 ## ListBackupJobsInputRequestTypeDef
 
@@ -1316,6 +1480,8 @@ Optional fields:
 - `ByResourceType`: `str`
 - `ByAccountId`: `str`
 
+<a id="listbackupjobsoutputtypedef"></a>
+
 ## ListBackupJobsOutputTypeDef
 
 ```python
@@ -1329,6 +1495,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbackupplantemplatesinputrequesttypedef"></a>
+
 ## ListBackupPlanTemplatesInputRequestTypeDef
 
 ```python
@@ -1339,6 +1507,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listbackupplantemplatesoutputtypedef"></a>
 
 ## ListBackupPlanTemplatesOutputTypeDef
 
@@ -1353,6 +1523,8 @@ Required fields:
   `List`\[[BackupPlanTemplatesListMemberTypeDef](./type_defs.md#backupplantemplateslistmembertypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listbackupplanversionsinputrequesttypedef"></a>
 
 ## ListBackupPlanVersionsInputRequestTypeDef
 
@@ -1369,6 +1541,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listbackupplanversionsoutputtypedef"></a>
+
 ## ListBackupPlanVersionsOutputTypeDef
 
 ```python
@@ -1383,6 +1557,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbackupplansinputrequesttypedef"></a>
+
 ## ListBackupPlansInputRequestTypeDef
 
 ```python
@@ -1394,6 +1570,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `IncludeDeleted`: `bool`
+
+<a id="listbackupplansoutputtypedef"></a>
 
 ## ListBackupPlansOutputTypeDef
 
@@ -1408,6 +1586,8 @@ Required fields:
   `List`\[[BackupPlansListMemberTypeDef](./type_defs.md#backupplanslistmembertypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listbackupselectionsinputrequesttypedef"></a>
 
 ## ListBackupSelectionsInputRequestTypeDef
 
@@ -1424,6 +1604,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listbackupselectionsoutputtypedef"></a>
+
 ## ListBackupSelectionsOutputTypeDef
 
 ```python
@@ -1438,6 +1620,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbackupvaultsinputrequesttypedef"></a>
+
 ## ListBackupVaultsInputRequestTypeDef
 
 ```python
@@ -1448,6 +1632,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listbackupvaultsoutputtypedef"></a>
 
 ## ListBackupVaultsOutputTypeDef
 
@@ -1462,6 +1648,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcopyjobsinputrequesttypedef"></a>
 
 ## ListCopyJobsInputRequestTypeDef
 
@@ -1481,6 +1669,8 @@ Optional fields:
 - `ByDestinationVaultArn`: `str`
 - `ByAccountId`: `str`
 
+<a id="listcopyjobsoutputtypedef"></a>
+
 ## ListCopyJobsOutputTypeDef
 
 ```python
@@ -1494,6 +1684,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listframeworksinputrequesttypedef"></a>
+
 ## ListFrameworksInputRequestTypeDef
 
 ```python
@@ -1504,6 +1696,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listframeworksoutputtypedef"></a>
 
 ## ListFrameworksOutputTypeDef
 
@@ -1518,6 +1712,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listprotectedresourcesinputrequesttypedef"></a>
+
 ## ListProtectedResourcesInputRequestTypeDef
 
 ```python
@@ -1528,6 +1724,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listprotectedresourcesoutputtypedef"></a>
 
 ## ListProtectedResourcesOutputTypeDef
 
@@ -1542,6 +1740,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrecoverypointsbybackupvaultinputrequesttypedef"></a>
 
 ## ListRecoveryPointsByBackupVaultInputRequestTypeDef
 
@@ -1563,6 +1763,8 @@ Optional fields:
 - `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
 - `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
 
+<a id="listrecoverypointsbybackupvaultoutputtypedef"></a>
+
 ## ListRecoveryPointsByBackupVaultOutputTypeDef
 
 ```python
@@ -1576,6 +1778,8 @@ Required fields:
   `List`\[[RecoveryPointByBackupVaultTypeDef](./type_defs.md#recoverypointbybackupvaulttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrecoverypointsbyresourceinputrequesttypedef"></a>
 
 ## ListRecoveryPointsByResourceInputRequestTypeDef
 
@@ -1592,6 +1796,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listrecoverypointsbyresourceoutputtypedef"></a>
+
 ## ListRecoveryPointsByResourceOutputTypeDef
 
 ```python
@@ -1605,6 +1811,8 @@ Required fields:
   `List`\[[RecoveryPointByResourceTypeDef](./type_defs.md#recoverypointbyresourcetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listreportjobsinputrequesttypedef"></a>
 
 ## ListReportJobsInputRequestTypeDef
 
@@ -1621,6 +1829,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listreportjobsoutputtypedef"></a>
+
 ## ListReportJobsOutputTypeDef
 
 ```python
@@ -1634,6 +1844,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listreportplansinputrequesttypedef"></a>
+
 ## ListReportPlansInputRequestTypeDef
 
 ```python
@@ -1644,6 +1856,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listreportplansoutputtypedef"></a>
 
 ## ListReportPlansOutputTypeDef
 
@@ -1658,6 +1872,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrestorejobsinputrequesttypedef"></a>
 
 ## ListRestoreJobsInputRequestTypeDef
 
@@ -1674,6 +1890,8 @@ Optional fields:
 - `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
 - `ByStatus`: [RestoreJobStatusType](./literals.md#restorejobstatustype)
 
+<a id="listrestorejobsoutputtypedef"></a>
+
 ## ListRestoreJobsOutputTypeDef
 
 ```python
@@ -1687,6 +1905,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsinputrequesttypedef"></a>
 
 ## ListTagsInputRequestTypeDef
 
@@ -1703,6 +1923,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listtagsoutputtypedef"></a>
+
 ## ListTagsOutputTypeDef
 
 ```python
@@ -1716,6 +1938,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="protectedresourcetypedef"></a>
+
 ## ProtectedResourceTypeDef
 
 ```python
@@ -1727,6 +1951,8 @@ Optional fields:
 - `ResourceArn`: `str`
 - `ResourceType`: `str`
 - `LastBackupTime`: `datetime`
+
+<a id="putbackupvaultaccesspolicyinputrequesttypedef"></a>
 
 ## PutBackupVaultAccessPolicyInputRequestTypeDef
 
@@ -1741,6 +1967,8 @@ Required fields:
 Optional fields:
 
 - `Policy`: `str`
+
+<a id="putbackupvaultlockconfigurationinputrequesttypedef"></a>
 
 ## PutBackupVaultLockConfigurationInputRequestTypeDef
 
@@ -1758,6 +1986,8 @@ Optional fields:
 - `MaxRetentionDays`: `int`
 - `ChangeableForDays`: `int`
 
+<a id="putbackupvaultnotificationsinputrequesttypedef"></a>
+
 ## PutBackupVaultNotificationsInputRequestTypeDef
 
 ```python
@@ -1770,6 +2000,8 @@ Required fields:
 - `SNSTopicArn`: `str`
 - `BackupVaultEvents`:
   `Sequence`\[[BackupVaultEventType](./literals.md#backupvaulteventtype)\]
+
+<a id="recoverypointbybackupvaulttypedef"></a>
 
 ## RecoveryPointByBackupVaultTypeDef
 
@@ -1800,6 +2032,8 @@ Optional fields:
 - `IsEncrypted`: `bool`
 - `LastRestoreTime`: `datetime`
 
+<a id="recoverypointbyresourcetypedef"></a>
+
 ## RecoveryPointByResourceTypeDef
 
 ```python
@@ -1816,6 +2050,8 @@ Optional fields:
 - `BackupSizeBytes`: `int`
 - `BackupVaultName`: `str`
 
+<a id="recoverypointcreatortypedef"></a>
+
 ## RecoveryPointCreatorTypeDef
 
 ```python
@@ -1828,6 +2064,8 @@ Optional fields:
 - `BackupPlanArn`: `str`
 - `BackupPlanVersion`: `str`
 - `BackupRuleId`: `str`
+
+<a id="reportdeliverychanneltypedef"></a>
 
 ## ReportDeliveryChannelTypeDef
 
@@ -1844,6 +2082,8 @@ Optional fields:
 - `S3KeyPrefix`: `str`
 - `Formats`: `Sequence`\[`str`\]
 
+<a id="reportdestinationtypedef"></a>
+
 ## ReportDestinationTypeDef
 
 ```python
@@ -1854,6 +2094,8 @@ Optional fields:
 
 - `S3BucketName`: `str`
 - `S3Keys`: `List`\[`str`\]
+
+<a id="reportjobtypedef"></a>
 
 ## ReportJobTypeDef
 
@@ -1872,6 +2114,8 @@ Optional fields:
 - `StatusMessage`: `str`
 - `ReportDestination`:
   [ReportDestinationTypeDef](./type_defs.md#reportdestinationtypedef)
+
+<a id="reportplantypedef"></a>
 
 ## ReportPlanTypeDef
 
@@ -1892,6 +2136,8 @@ Optional fields:
 - `LastAttemptedExecutionTime`: `datetime`
 - `LastSuccessfulExecutionTime`: `datetime`
 
+<a id="reportsettingtypedef"></a>
+
 ## ReportSettingTypeDef
 
 ```python
@@ -1907,6 +2153,8 @@ Optional fields:
 - `FrameworkArns`: `Sequence`\[`str`\]
 - `NumberOfFrameworks`: `int`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1920,6 +2168,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="restorejobslistmembertypedef"></a>
 
 ## RestoreJobsListMemberTypeDef
 
@@ -1943,6 +2193,8 @@ Optional fields:
 - `CreatedResourceArn`: `str`
 - `ResourceType`: `str`
 
+<a id="startbackupjobinputrequesttypedef"></a>
+
 ## StartBackupJobInputRequestTypeDef
 
 ```python
@@ -1964,6 +2216,8 @@ Optional fields:
 - `RecoveryPointTags`: `Mapping`\[`str`, `str`\]
 - `BackupOptions`: `Mapping`\[`str`, `str`\]
 
+<a id="startbackupjoboutputtypedef"></a>
+
 ## StartBackupJobOutputTypeDef
 
 ```python
@@ -1977,6 +2231,8 @@ Required fields:
 - `CreationDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startcopyjobinputrequesttypedef"></a>
 
 ## StartCopyJobInputRequestTypeDef
 
@@ -1996,6 +2252,8 @@ Optional fields:
 - `IdempotencyToken`: `str`
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 
+<a id="startcopyjoboutputtypedef"></a>
+
 ## StartCopyJobOutputTypeDef
 
 ```python
@@ -2008,6 +2266,8 @@ Required fields:
 - `CreationDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startreportjobinputrequesttypedef"></a>
 
 ## StartReportJobInputRequestTypeDef
 
@@ -2023,6 +2283,8 @@ Optional fields:
 
 - `IdempotencyToken`: `str`
 
+<a id="startreportjoboutputtypedef"></a>
+
 ## StartReportJobOutputTypeDef
 
 ```python
@@ -2034,6 +2296,8 @@ Required fields:
 - `ReportJobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startrestorejobinputrequesttypedef"></a>
 
 ## StartRestoreJobInputRequestTypeDef
 
@@ -2052,6 +2316,8 @@ Optional fields:
 - `IdempotencyToken`: `str`
 - `ResourceType`: `str`
 
+<a id="startrestorejoboutputtypedef"></a>
+
 ## StartRestoreJobOutputTypeDef
 
 ```python
@@ -2064,6 +2330,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopbackupjobinputrequesttypedef"></a>
+
 ## StopBackupJobInputRequestTypeDef
 
 ```python
@@ -2073,6 +2341,8 @@ from mypy_boto3_backup.type_defs import StopBackupJobInputRequestTypeDef
 Required fields:
 
 - `BackupJobId`: `str`
+
+<a id="tagresourceinputrequesttypedef"></a>
 
 ## TagResourceInputRequestTypeDef
 
@@ -2085,6 +2355,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -2096,6 +2368,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeyList`: `Sequence`\[`str`\]
 
+<a id="updatebackupplaninputrequesttypedef"></a>
+
 ## UpdateBackupPlanInputRequestTypeDef
 
 ```python
@@ -2106,6 +2380,8 @@ Required fields:
 
 - `BackupPlanId`: `str`
 - `BackupPlan`: [BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef)
+
+<a id="updatebackupplanoutputtypedef"></a>
 
 ## UpdateBackupPlanOutputTypeDef
 
@@ -2124,6 +2400,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateframeworkinputrequesttypedef"></a>
+
 ## UpdateFrameworkInputRequestTypeDef
 
 ```python
@@ -2141,6 +2419,8 @@ Optional fields:
   `Sequence`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
 - `IdempotencyToken`: `str`
 
+<a id="updateframeworkoutputtypedef"></a>
+
 ## UpdateFrameworkOutputTypeDef
 
 ```python
@@ -2155,6 +2435,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateglobalsettingsinputrequesttypedef"></a>
+
 ## UpdateGlobalSettingsInputRequestTypeDef
 
 ```python
@@ -2164,6 +2446,8 @@ from mypy_boto3_backup.type_defs import UpdateGlobalSettingsInputRequestTypeDef
 Optional fields:
 
 - `GlobalSettings`: `Mapping`\[`str`, `str`\]
+
+<a id="updaterecoverypointlifecycleinputrequesttypedef"></a>
 
 ## UpdateRecoveryPointLifecycleInputRequestTypeDef
 
@@ -2179,6 +2463,8 @@ Required fields:
 Optional fields:
 
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
+
+<a id="updaterecoverypointlifecycleoutputtypedef"></a>
 
 ## UpdateRecoveryPointLifecycleOutputTypeDef
 
@@ -2196,6 +2482,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateregionsettingsinputrequesttypedef"></a>
+
 ## UpdateRegionSettingsInputRequestTypeDef
 
 ```python
@@ -2206,6 +2494,8 @@ Optional fields:
 
 - `ResourceTypeOptInPreference`: `Mapping`\[`str`, `bool`\]
 - `ResourceTypeManagementPreference`: `Mapping`\[`str`, `bool`\]
+
+<a id="updatereportplaninputrequesttypedef"></a>
 
 ## UpdateReportPlanInputRequestTypeDef
 
@@ -2224,6 +2514,8 @@ Optional fields:
   [ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef)
 - `ReportSetting`: [ReportSettingTypeDef](./type_defs.md#reportsettingtypedef)
 - `IdempotencyToken`: `str`
+
+<a id="updatereportplanoutputtypedef"></a>
 
 ## UpdateReportPlanOutputTypeDef
 

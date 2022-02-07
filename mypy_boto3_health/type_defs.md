@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-health-module"></a>
+
 # Typed dictionaries for boto3 Health module
 
 > [Index](..) > [Health](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
 type annotations stubs module
-[mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
+[mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
 
 - [Typed dictionaries for boto3 Health module](#typed-dictionaries-for-boto3-health-module)
   - [AffectedEntityTypeDef](#affectedentitytypedef)
@@ -50,6 +52,8 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
+<a id="affectedentitytypedef"></a>
+
 ## AffectedEntityTypeDef
 
 ```python
@@ -67,6 +71,8 @@ Optional fields:
 - `statusCode`: [entityStatusCodeType](./literals.md#entitystatuscodetype)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="datetimerangetypedef"></a>
+
 ## DateTimeRangeTypeDef
 
 ```python
@@ -77,6 +83,8 @@ Optional fields:
 
 - `from`: `Union`\[`datetime`, `str`\]
 - `to`: `Union`\[`datetime`, `str`\]
+
+<a id="describeaffectedaccountsfororganizationrequestrequesttypedef"></a>
 
 ## DescribeAffectedAccountsForOrganizationRequestRequestTypeDef
 
@@ -93,6 +101,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describeaffectedaccountsfororganizationresponsetypedef"></a>
+
 ## DescribeAffectedAccountsForOrganizationResponseTypeDef
 
 ```python
@@ -106,6 +116,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeaffectedentitiesfororganizationrequestrequesttypedef"></a>
 
 ## DescribeAffectedEntitiesForOrganizationRequestRequestTypeDef
 
@@ -124,6 +136,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describeaffectedentitiesfororganizationresponsetypedef"></a>
+
 ## DescribeAffectedEntitiesForOrganizationResponseTypeDef
 
 ```python
@@ -139,6 +153,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeaffectedentitiesrequestrequesttypedef"></a>
 
 ## DescribeAffectedEntitiesRequestRequestTypeDef
 
@@ -156,6 +172,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describeaffectedentitiesresponsetypedef"></a>
+
 ## DescribeAffectedEntitiesResponseTypeDef
 
 ```python
@@ -170,6 +188,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeentityaggregatesrequestrequesttypedef"></a>
+
 ## DescribeEntityAggregatesRequestRequestTypeDef
 
 ```python
@@ -179,6 +199,8 @@ from mypy_boto3_health.type_defs import DescribeEntityAggregatesRequestRequestTy
 Optional fields:
 
 - `eventArns`: `Sequence`\[`str`\]
+
+<a id="describeentityaggregatesresponsetypedef"></a>
 
 ## DescribeEntityAggregatesResponseTypeDef
 
@@ -192,6 +214,8 @@ Required fields:
   `List`\[[EntityAggregateTypeDef](./type_defs.md#entityaggregatetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeeventaggregatesrequestrequesttypedef"></a>
 
 ## DescribeEventAggregatesRequestRequestTypeDef
 
@@ -210,6 +234,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="describeeventaggregatesresponsetypedef"></a>
+
 ## DescribeEventAggregatesResponseTypeDef
 
 ```python
@@ -223,6 +249,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeeventdetailsfororganizationrequestrequesttypedef"></a>
 
 ## DescribeEventDetailsForOrganizationRequestRequestTypeDef
 
@@ -239,6 +267,8 @@ Optional fields:
 
 - `locale`: `str`
 
+<a id="describeeventdetailsfororganizationresponsetypedef"></a>
+
 ## DescribeEventDetailsForOrganizationResponseTypeDef
 
 ```python
@@ -254,6 +284,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeeventdetailsrequestrequesttypedef"></a>
+
 ## DescribeEventDetailsRequestRequestTypeDef
 
 ```python
@@ -267,6 +299,8 @@ Required fields:
 Optional fields:
 
 - `locale`: `str`
+
+<a id="describeeventdetailsresponsetypedef"></a>
 
 ## DescribeEventDetailsResponseTypeDef
 
@@ -283,6 +317,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeeventtypesrequestrequesttypedef"></a>
+
 ## DescribeEventTypesRequestRequestTypeDef
 
 ```python
@@ -296,6 +332,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describeeventtypesresponsetypedef"></a>
+
 ## DescribeEventTypesResponseTypeDef
 
 ```python
@@ -308,6 +346,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeeventsfororganizationrequestrequesttypedef"></a>
 
 ## DescribeEventsForOrganizationRequestRequestTypeDef
 
@@ -323,6 +363,8 @@ Optional fields:
 - `maxResults`: `int`
 - `locale`: `str`
 
+<a id="describeeventsfororganizationresponsetypedef"></a>
+
 ## DescribeEventsForOrganizationResponseTypeDef
 
 ```python
@@ -337,6 +379,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeeventsrequestrequesttypedef"></a>
+
 ## DescribeEventsRequestRequestTypeDef
 
 ```python
@@ -349,6 +393,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `locale`: `str`
+
+<a id="describeeventsresponsetypedef"></a>
 
 ## DescribeEventsResponseTypeDef
 
@@ -363,6 +409,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describehealthservicestatusfororganizationresponsetypedef"></a>
+
 ## DescribeHealthServiceStatusForOrganizationResponseTypeDef
 
 ```python
@@ -375,6 +423,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="entityaggregatetypedef"></a>
+
 ## EntityAggregateTypeDef
 
 ```python
@@ -385,6 +435,8 @@ Optional fields:
 
 - `eventArn`: `str`
 - `count`: `int`
+
+<a id="entityfiltertypedef"></a>
 
 ## EntityFilterTypeDef
 
@@ -406,6 +458,8 @@ Optional fields:
 - `statusCodes`:
   `Sequence`\[[entityStatusCodeType](./literals.md#entitystatuscodetype)\]
 
+<a id="eventaccountfiltertypedef"></a>
+
 ## EventAccountFilterTypeDef
 
 ```python
@@ -420,6 +474,8 @@ Optional fields:
 
 - `awsAccountId`: `str`
 
+<a id="eventaggregatetypedef"></a>
+
 ## EventAggregateTypeDef
 
 ```python
@@ -431,6 +487,8 @@ Optional fields:
 - `aggregateValue`: `str`
 - `count`: `int`
 
+<a id="eventdescriptiontypedef"></a>
+
 ## EventDescriptionTypeDef
 
 ```python
@@ -440,6 +498,8 @@ from mypy_boto3_health.type_defs import EventDescriptionTypeDef
 Optional fields:
 
 - `latestDescription`: `str`
+
+<a id="eventdetailserroritemtypedef"></a>
 
 ## EventDetailsErrorItemTypeDef
 
@@ -453,6 +513,8 @@ Optional fields:
 - `errorName`: `str`
 - `errorMessage`: `str`
 
+<a id="eventdetailstypedef"></a>
+
 ## EventDetailsTypeDef
 
 ```python
@@ -465,6 +527,8 @@ Optional fields:
 - `eventDescription`:
   [EventDescriptionTypeDef](./type_defs.md#eventdescriptiontypedef)
 - `eventMetadata`: `Dict`\[`str`, `str`\]
+
+<a id="eventfiltertypedef"></a>
 
 ## EventFilterTypeDef
 
@@ -493,6 +557,8 @@ Optional fields:
 - `eventStatusCodes`:
   `Sequence`\[[eventStatusCodeType](./literals.md#eventstatuscodetype)\]
 
+<a id="eventtypedef"></a>
+
 ## EventTypeDef
 
 ```python
@@ -514,6 +580,8 @@ Optional fields:
 - `statusCode`: [eventStatusCodeType](./literals.md#eventstatuscodetype)
 - `eventScopeCode`: [eventScopeCodeType](./literals.md#eventscopecodetype)
 
+<a id="eventtypefiltertypedef"></a>
+
 ## EventTypeFilterTypeDef
 
 ```python
@@ -527,6 +595,8 @@ Optional fields:
 - `eventTypeCategories`:
   `Sequence`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
 
+<a id="eventtypetypedef"></a>
+
 ## EventTypeTypeDef
 
 ```python
@@ -538,6 +608,8 @@ Optional fields:
 - `service`: `str`
 - `code`: `str`
 - `category`: [eventTypeCategoryType](./literals.md#eventtypecategorytype)
+
+<a id="organizationaffectedentitieserroritemtypedef"></a>
 
 ## OrganizationAffectedEntitiesErrorItemTypeDef
 
@@ -552,6 +624,8 @@ Optional fields:
 - `errorName`: `str`
 - `errorMessage`: `str`
 
+<a id="organizationeventdetailserroritemtypedef"></a>
+
 ## OrganizationEventDetailsErrorItemTypeDef
 
 ```python
@@ -564,6 +638,8 @@ Optional fields:
 - `eventArn`: `str`
 - `errorName`: `str`
 - `errorMessage`: `str`
+
+<a id="organizationeventdetailstypedef"></a>
 
 ## OrganizationEventDetailsTypeDef
 
@@ -578,6 +654,8 @@ Optional fields:
 - `eventDescription`:
   [EventDescriptionTypeDef](./type_defs.md#eventdescriptiontypedef)
 - `eventMetadata`: `Dict`\[`str`, `str`\]
+
+<a id="organizationeventfiltertypedef"></a>
 
 ## OrganizationEventFilterTypeDef
 
@@ -602,6 +680,8 @@ Optional fields:
 - `eventStatusCodes`:
   `Sequence`\[[eventStatusCodeType](./literals.md#eventstatuscodetype)\]
 
+<a id="organizationeventtypedef"></a>
+
 ## OrganizationEventTypeDef
 
 ```python
@@ -622,6 +702,8 @@ Optional fields:
 - `lastUpdatedTime`: `datetime`
 - `statusCode`: [eventStatusCodeType](./literals.md#eventstatuscodetype)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -633,6 +715,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 

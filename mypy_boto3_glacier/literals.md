@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-glacier-module"></a>
+
 # Literals for boto3 Glacier module
 
 > [Index](..) > [Glacier](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
 type annotations stubs module
-[mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
+[mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 - [Literals for boto3 Glacier module](#literals-for-boto3-glacier-module)
   - [ActionCodeType](#actioncodetype)
@@ -28,6 +30,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="actioncodetype"></a>
+
 ## ActionCodeType
 
 ```python
@@ -39,6 +43,8 @@ Values:
 - `ArchiveRetrieval`
 - `InventoryRetrieval`
 - `Select`
+
+<a id="cannedacltype"></a>
 
 ## CannedACLType
 
@@ -56,6 +62,8 @@ Values:
 - `public-read`
 - `public-read-write`
 
+<a id="encryptiontypetype"></a>
+
 ## EncryptionTypeType
 
 ```python
@@ -67,6 +75,8 @@ Values:
 - `AES256`
 - `aws:kms`
 
+<a id="expressiontypetype"></a>
+
 ## ExpressionTypeType
 
 ```python
@@ -76,6 +86,8 @@ from mypy_boto3_glacier.literals import ExpressionTypeType
 Values:
 
 - `SQL`
+
+<a id="fileheaderinfotype"></a>
 
 ## FileHeaderInfoType
 
@@ -89,6 +101,8 @@ Values:
 - `NONE`
 - `USE`
 
+<a id="listjobspaginatorname"></a>
+
 ## ListJobsPaginatorName
 
 ```python
@@ -98,6 +112,8 @@ from mypy_boto3_glacier.literals import ListJobsPaginatorName
 Values:
 
 - `list_jobs`
+
+<a id="listmultipartuploadspaginatorname"></a>
 
 ## ListMultipartUploadsPaginatorName
 
@@ -109,6 +125,8 @@ Values:
 
 - `list_multipart_uploads`
 
+<a id="listpartspaginatorname"></a>
+
 ## ListPartsPaginatorName
 
 ```python
@@ -119,6 +137,8 @@ Values:
 
 - `list_parts`
 
+<a id="listvaultspaginatorname"></a>
+
 ## ListVaultsPaginatorName
 
 ```python
@@ -128,6 +148,8 @@ from mypy_boto3_glacier.literals import ListVaultsPaginatorName
 Values:
 
 - `list_vaults`
+
+<a id="permissiontype"></a>
 
 ## PermissionType
 
@@ -143,6 +165,8 @@ Values:
 - `WRITE`
 - `WRITE_ACP`
 
+<a id="quotefieldstype"></a>
+
 ## QuoteFieldsType
 
 ```python
@@ -153,6 +177,8 @@ Values:
 
 - `ALWAYS`
 - `ASNEEDED`
+
+<a id="statuscodetype"></a>
 
 ## StatusCodeType
 
@@ -166,6 +192,8 @@ Values:
 - `InProgress`
 - `Succeeded`
 
+<a id="storageclasstype"></a>
+
 ## StorageClassType
 
 ```python
@@ -177,6 +205,8 @@ Values:
 - `REDUCED_REDUNDANCY`
 - `STANDARD`
 - `STANDARD_IA`
+
+<a id="typetype"></a>
 
 ## TypeType
 
@@ -190,6 +220,8 @@ Values:
 - `CanonicalUser`
 - `Group`
 
+<a id="vaultexistswaitername"></a>
+
 ## VaultExistsWaiterName
 
 ```python
@@ -200,6 +232,8 @@ Values:
 
 - `vault_exists`
 
+<a id="vaultnotexistswaitername"></a>
+
 ## VaultNotExistsWaiterName
 
 ```python
@@ -209,6 +243,8 @@ from mypy_boto3_glacier.literals import VaultNotExistsWaiterName
 Values:
 
 - `vault_not_exists`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -518,6 +554,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -530,6 +568,8 @@ Values:
 - `list_multipart_uploads`
 - `list_parts`
 - `list_vaults`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

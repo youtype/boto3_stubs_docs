@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloudwatchevidently-module"></a>
+
 # Literals for boto3 CloudWatchEvidently module
 
 > [Index](..) > [CloudWatchEvidently](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
 type annotations stubs module
-[mypy_boto3_evidently](https://pypi.org/project/mypy-boto3-evidently/).
+[mypy-boto3-evidently](https://pypi.org/project/mypy-boto3-evidently/).
 
 - [Literals for boto3 CloudWatchEvidently module](#literals-for-boto3-cloudwatchevidently-module)
   - [ChangeDirectionEnumType](#changedirectionenumtype)
@@ -31,6 +33,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="changedirectionenumtype"></a>
+
 ## ChangeDirectionEnumType
 
 ```python
@@ -41,6 +45,8 @@ Values:
 
 - `DECREASE`
 - `INCREASE`
+
+<a id="eventtypetype"></a>
 
 ## EventTypeType
 
@@ -53,6 +59,8 @@ Values:
 - `aws.evidently.custom`
 - `aws.evidently.evaluation`
 
+<a id="experimentbasestattype"></a>
+
 ## ExperimentBaseStatType
 
 ```python
@@ -63,6 +71,8 @@ Values:
 
 - `Mean`
 
+<a id="experimentreportnametype"></a>
+
 ## ExperimentReportNameType
 
 ```python
@@ -72,6 +82,8 @@ from mypy_boto3_evidently.literals import ExperimentReportNameType
 Values:
 
 - `BayesianInference`
+
+<a id="experimentresultrequesttypetype"></a>
 
 ## ExperimentResultRequestTypeType
 
@@ -85,6 +97,8 @@ Values:
 - `ConfidenceInterval`
 - `PValue`
 - `TreatmentEffect`
+
+<a id="experimentresultresponsetypetype"></a>
 
 ## ExperimentResultResponseTypeType
 
@@ -100,6 +114,8 @@ Values:
 - `PValue`
 - `TreatmentEffect`
 
+<a id="experimentstatustype"></a>
+
 ## ExperimentStatusType
 
 ```python
@@ -114,6 +130,8 @@ Values:
 - `RUNNING`
 - `UPDATING`
 
+<a id="experimentstopdesiredstatetype"></a>
+
 ## ExperimentStopDesiredStateType
 
 ```python
@@ -125,6 +143,8 @@ Values:
 - `CANCELLED`
 - `COMPLETED`
 
+<a id="experimenttypetype"></a>
+
 ## ExperimentTypeType
 
 ```python
@@ -134,6 +154,8 @@ from mypy_boto3_evidently.literals import ExperimentTypeType
 Values:
 
 - `aws.evidently.onlineab`
+
+<a id="featureevaluationstrategytype"></a>
 
 ## FeatureEvaluationStrategyType
 
@@ -146,6 +168,8 @@ Values:
 - `ALL_RULES`
 - `DEFAULT_VARIATION`
 
+<a id="featurestatustype"></a>
+
 ## FeatureStatusType
 
 ```python
@@ -156,6 +180,8 @@ Values:
 
 - `AVAILABLE`
 - `UPDATING`
+
+<a id="launchstatustype"></a>
 
 ## LaunchStatusType
 
@@ -171,6 +197,8 @@ Values:
 - `RUNNING`
 - `UPDATING`
 
+<a id="launchstopdesiredstatetype"></a>
+
 ## LaunchStopDesiredStateType
 
 ```python
@@ -182,6 +210,8 @@ Values:
 - `CANCELLED`
 - `COMPLETED`
 
+<a id="launchtypetype"></a>
+
 ## LaunchTypeType
 
 ```python
@@ -191,6 +221,8 @@ from mypy_boto3_evidently.literals import LaunchTypeType
 Values:
 
 - `aws.evidently.splits`
+
+<a id="listexperimentspaginatorname"></a>
 
 ## ListExperimentsPaginatorName
 
@@ -202,6 +234,8 @@ Values:
 
 - `list_experiments`
 
+<a id="listfeaturespaginatorname"></a>
+
 ## ListFeaturesPaginatorName
 
 ```python
@@ -211,6 +245,8 @@ from mypy_boto3_evidently.literals import ListFeaturesPaginatorName
 Values:
 
 - `list_features`
+
+<a id="listlaunchespaginatorname"></a>
 
 ## ListLaunchesPaginatorName
 
@@ -222,6 +258,8 @@ Values:
 
 - `list_launches`
 
+<a id="listprojectspaginatorname"></a>
+
 ## ListProjectsPaginatorName
 
 ```python
@@ -231,6 +269,8 @@ from mypy_boto3_evidently.literals import ListProjectsPaginatorName
 Values:
 
 - `list_projects`
+
+<a id="projectstatustype"></a>
 
 ## ProjectStatusType
 
@@ -242,6 +282,8 @@ Values:
 
 - `AVAILABLE`
 - `UPDATING`
+
+<a id="variationvaluetypetype"></a>
 
 ## VariationValueTypeType
 
@@ -255,6 +297,8 @@ Values:
 - `DOUBLE`
 - `LONG`
 - `STRING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -563,6 +607,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

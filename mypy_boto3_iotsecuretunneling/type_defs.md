@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iotsecuretunneling-module"></a>
+
 # Typed dictionaries for boto3 IoTSecureTunneling module
 
 > [Index](..) > [IoTSecureTunneling](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
 type annotations stubs module
-[mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
+[mypy-boto3-iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
 - [Typed dictionaries for boto3 IoTSecureTunneling module](#typed-dictionaries-for-boto3-iotsecuretunneling-module)
   - [CloseTunnelRequestRequestTypeDef](#closetunnelrequestrequesttypedef)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [TunnelTypeDef](#tunneltypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
+<a id="closetunnelrequestrequesttypedef"></a>
+
 ## CloseTunnelRequestRequestTypeDef
 
 ```python
@@ -41,6 +45,8 @@ Optional fields:
 
 - `delete`: `bool`
 
+<a id="connectionstatetypedef"></a>
+
 ## ConnectionStateTypeDef
 
 ```python
@@ -52,6 +58,8 @@ Optional fields:
 - `status`: [ConnectionStatusType](./literals.md#connectionstatustype)
 - `lastUpdatedAt`: `datetime`
 
+<a id="describetunnelrequestrequesttypedef"></a>
+
 ## DescribeTunnelRequestRequestTypeDef
 
 ```python
@@ -61,6 +69,8 @@ from mypy_boto3_iotsecuretunneling.type_defs import DescribeTunnelRequestRequest
 Required fields:
 
 - `tunnelId`: `str`
+
+<a id="describetunnelresponsetypedef"></a>
 
 ## DescribeTunnelResponseTypeDef
 
@@ -73,6 +83,8 @@ Required fields:
 - `tunnel`: [TunnelTypeDef](./type_defs.md#tunneltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="destinationconfigtypedef"></a>
 
 ## DestinationConfigTypeDef
 
@@ -88,6 +100,8 @@ Optional fields:
 
 - `thingName`: `str`
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -97,6 +111,8 @@ from mypy_boto3_iotsecuretunneling.type_defs import ListTagsForResourceRequestRe
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -110,6 +126,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtunnelsrequestrequesttypedef"></a>
+
 ## ListTunnelsRequestRequestTypeDef
 
 ```python
@@ -121,6 +139,8 @@ Optional fields:
 - `thingName`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listtunnelsresponsetypedef"></a>
 
 ## ListTunnelsResponseTypeDef
 
@@ -136,6 +156,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="opentunnelrequestrequesttypedef"></a>
+
 ## OpenTunnelRequestRequestTypeDef
 
 ```python
@@ -149,6 +171,8 @@ Optional fields:
 - `destinationConfig`:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
+
+<a id="opentunnelresponsetypedef"></a>
 
 ## OpenTunnelResponseTypeDef
 
@@ -165,6 +189,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -179,6 +205,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -189,6 +217,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -201,6 +231,8 @@ Required fields:
 - `key`: `str`
 - `value`: `str`
 
+<a id="timeoutconfigtypedef"></a>
+
 ## TimeoutConfigTypeDef
 
 ```python
@@ -210,6 +242,8 @@ from mypy_boto3_iotsecuretunneling.type_defs import TimeoutConfigTypeDef
 Optional fields:
 
 - `maxLifetimeTimeoutMinutes`: `int`
+
+<a id="tunnelsummarytypedef"></a>
 
 ## TunnelSummaryTypeDef
 
@@ -225,6 +259,8 @@ Optional fields:
 - `description`: `str`
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
+
+<a id="tunneltypedef"></a>
 
 ## TunnelTypeDef
 
@@ -248,6 +284,8 @@ Optional fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 

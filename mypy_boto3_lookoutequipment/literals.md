@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-lookoutequipment-module"></a>
+
 # Literals for boto3 LookoutEquipment module
 
 > [Index](..) > [LookoutEquipment](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
 type annotations stubs module
-[mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
+[mypy-boto3-lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
 - [Literals for boto3 LookoutEquipment module](#literals-for-boto3-lookoutequipment-module)
   - [DataUploadFrequencyType](#datauploadfrequencytype)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [ModelStatusType](#modelstatustype)
   - [TargetSamplingRateType](#targetsamplingratetype)
   - [ServiceName](#servicename)
+
+<a id="datauploadfrequencytype"></a>
 
 ## DataUploadFrequencyType
 
@@ -31,6 +35,8 @@ Values:
 - `PT30M`
 - `PT5M`
 
+<a id="datasetstatustype"></a>
+
 ## DatasetStatusType
 
 ```python
@@ -43,6 +49,8 @@ Values:
 - `CREATED`
 - `INGESTION_IN_PROGRESS`
 
+<a id="inferenceexecutionstatustype"></a>
+
 ## InferenceExecutionStatusType
 
 ```python
@@ -54,6 +62,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `SUCCESS`
+
+<a id="inferenceschedulerstatustype"></a>
 
 ## InferenceSchedulerStatusType
 
@@ -68,6 +78,8 @@ Values:
 - `STOPPED`
 - `STOPPING`
 
+<a id="ingestionjobstatustype"></a>
+
 ## IngestionJobStatusType
 
 ```python
@@ -80,6 +92,8 @@ Values:
 - `IN_PROGRESS`
 - `SUCCESS`
 
+<a id="modelstatustype"></a>
+
 ## ModelStatusType
 
 ```python
@@ -91,6 +105,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `SUCCESS`
+
+<a id="targetsamplingratetype"></a>
 
 ## TargetSamplingRateType
 
@@ -111,6 +127,8 @@ Values:
 - `PT30S`
 - `PT5M`
 - `PT5S`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-machinelearning-module"></a>
+
 # Paginators for boto3 MachineLearning module
 
 > [Index](..) > [MachineLearning](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
-[mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
+[mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 - [Paginators for boto3 MachineLearning module](#paginators-for-boto3-machinelearning-module)
   - [DescribeBatchPredictionsPaginator](#describebatchpredictionspaginator)
   - [DescribeDataSourcesPaginator](#describedatasourcespaginator)
   - [DescribeEvaluationsPaginator](#describeevaluationspaginator)
   - [DescribeMLModelsPaginator](#describemlmodelspaginator)
+
+<a id="describebatchpredictionspaginator"></a>
 
 ## DescribeBatchPredictionsPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_machinelearning.paginator import DescribeBatchPredictionsPaginator
 
 def get_describe_batch_predictions_paginator() -> DescribeBatchPredictionsPaginator:
-    return boto3.client("machinelearning").get_paginator("describe_batch_predictions")
+    return Session().client("machinelearning").get_paginator("describe_batch_predictions")
 ```
 
 Boto3 documentation:
@@ -48,6 +54,8 @@ Arguments for `DescribeBatchPredictionsPaginator.paginate` method:
 `DescribeBatchPredictionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef)\].
 
+<a id="describedatasourcespaginator"></a>
+
 ## DescribeDataSourcesPaginator
 
 Type annotations for
@@ -56,10 +64,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_machinelearning.paginator import DescribeDataSourcesPaginator
 
 def get_describe_data_sources_paginator() -> DescribeDataSourcesPaginator:
-    return boto3.client("machinelearning").get_paginator("describe_data_sources")
+    return Session().client("machinelearning").get_paginator("describe_data_sources")
 ```
 
 Boto3 documentation:
@@ -83,6 +93,8 @@ Arguments for `DescribeDataSourcesPaginator.paginate` method:
 `DescribeDataSourcesPaginator.paginate` returns
 `_PageIterator`\[[DescribeDataSourcesOutputTypeDef](./type_defs.md#describedatasourcesoutputtypedef)\].
 
+<a id="describeevaluationspaginator"></a>
+
 ## DescribeEvaluationsPaginator
 
 Type annotations for
@@ -91,10 +103,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_machinelearning.paginator import DescribeEvaluationsPaginator
 
 def get_describe_evaluations_paginator() -> DescribeEvaluationsPaginator:
-    return boto3.client("machinelearning").get_paginator("describe_evaluations")
+    return Session().client("machinelearning").get_paginator("describe_evaluations")
 ```
 
 Boto3 documentation:
@@ -118,6 +132,8 @@ Arguments for `DescribeEvaluationsPaginator.paginate` method:
 `DescribeEvaluationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeEvaluationsOutputTypeDef](./type_defs.md#describeevaluationsoutputtypedef)\].
 
+<a id="describemlmodelspaginator"></a>
+
 ## DescribeMLModelsPaginator
 
 Type annotations for
@@ -126,10 +142,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_machinelearning.paginator import DescribeMLModelsPaginator
 
 def get_describe_ml_models_paginator() -> DescribeMLModelsPaginator:
-    return boto3.client("machinelearning").get_paginator("describe_ml_models")
+    return Session().client("machinelearning").get_paginator("describe_ml_models")
 ```
 
 Boto3 documentation:

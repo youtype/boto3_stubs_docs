@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-pinpoint-module"></a>
+
 # Literals for boto3 Pinpoint module
 
 > [Index](..) > [Pinpoint](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
 type annotations stubs module
-[mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
+[mypy-boto3-pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
 - [Literals for boto3 Pinpoint module](#literals-for-boto3-pinpoint-module)
   - [ActionType](#actiontype)
@@ -35,6 +37,8 @@ type annotations stubs module
   - [TypeType](#typetype)
   - [ServiceName](#servicename)
 
+<a id="actiontype"></a>
+
 ## ActionType
 
 ```python
@@ -47,6 +51,8 @@ Values:
 - `OPEN_APP`
 - `URL`
 
+<a id="alignmenttype"></a>
+
 ## AlignmentType
 
 ```python
@@ -58,6 +64,8 @@ Values:
 - `CENTER`
 - `LEFT`
 - `RIGHT`
+
+<a id="attributetypetype"></a>
 
 ## AttributeTypeType
 
@@ -75,6 +83,8 @@ Values:
 - `INCLUSIVE`
 - `ON`
 
+<a id="buttonactiontype"></a>
+
 ## ButtonActionType
 
 ```python
@@ -86,6 +96,8 @@ Values:
 - `CLOSE`
 - `DEEP_LINK`
 - `LINK`
+
+<a id="campaignstatustype"></a>
 
 ## CampaignStatusType
 
@@ -102,6 +114,8 @@ Values:
 - `PAUSED`
 - `PENDING_NEXT_RUN`
 - `SCHEDULED`
+
+<a id="channeltypetype"></a>
 
 ## ChannelTypeType
 
@@ -125,6 +139,8 @@ Values:
 - `SMS`
 - `VOICE`
 
+<a id="deliverystatustype"></a>
+
 ## DeliveryStatusType
 
 ```python
@@ -141,6 +157,8 @@ Values:
 - `THROTTLED`
 - `UNKNOWN_FAILURE`
 
+<a id="dimensiontypetype"></a>
+
 ## DimensionTypeType
 
 ```python
@@ -151,6 +169,8 @@ Values:
 
 - `EXCLUSIVE`
 - `INCLUSIVE`
+
+<a id="durationtype"></a>
 
 ## DurationType
 
@@ -164,6 +184,8 @@ Values:
 - `DAY_30`
 - `DAY_7`
 - `HR_24`
+
+<a id="endpointtypeselementtype"></a>
 
 ## EndpointTypesElementType
 
@@ -187,6 +209,8 @@ Values:
 - `SMS`
 - `VOICE`
 
+<a id="filtertypetype"></a>
+
 ## FilterTypeType
 
 ```python
@@ -198,6 +222,8 @@ Values:
 - `ENDPOINT`
 - `SYSTEM`
 
+<a id="formattype"></a>
+
 ## FormatType
 
 ```python
@@ -208,6 +234,8 @@ Values:
 
 - `CSV`
 - `JSON`
+
+<a id="frequencytype"></a>
 
 ## FrequencyType
 
@@ -225,6 +253,8 @@ Values:
 - `ONCE`
 - `WEEKLY`
 
+<a id="includetype"></a>
+
 ## IncludeType
 
 ```python
@@ -236,6 +266,8 @@ Values:
 - `ALL`
 - `ANY`
 - `NONE`
+
+<a id="jobstatustype"></a>
 
 ## JobStatusType
 
@@ -255,6 +287,8 @@ Values:
 - `PREPARING_FOR_INITIALIZATION`
 - `PROCESSING`
 
+<a id="layouttype"></a>
+
 ## LayoutType
 
 ```python
@@ -270,6 +304,8 @@ Values:
 - `OVERLAYS`
 - `TOP_BANNER`
 
+<a id="messagetypetype"></a>
+
 ## MessageTypeType
 
 ```python
@@ -280,6 +316,8 @@ Values:
 
 - `PROMOTIONAL`
 - `TRANSACTIONAL`
+
+<a id="modetype"></a>
 
 ## ModeType
 
@@ -292,6 +330,8 @@ Values:
 - `DELIVERY`
 - `FILTER`
 
+<a id="operatortype"></a>
+
 ## OperatorType
 
 ```python
@@ -302,6 +342,8 @@ Values:
 
 - `ALL`
 - `ANY`
+
+<a id="recencytypetype"></a>
 
 ## RecencyTypeType
 
@@ -314,6 +356,8 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
+<a id="segmenttypetype"></a>
+
 ## SegmentTypeType
 
 ```python
@@ -324,6 +368,8 @@ Values:
 
 - `DIMENSIONAL`
 - `IMPORT`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -336,6 +382,8 @@ Values:
 - `ALL`
 - `ANY`
 - `NONE`
+
+<a id="statetype"></a>
 
 ## StateType
 
@@ -352,6 +400,8 @@ Values:
 - `DRAFT`
 - `PAUSED`
 
+<a id="templatetypetype"></a>
+
 ## TemplateTypeType
 
 ```python
@@ -366,6 +416,8 @@ Values:
 - `SMS`
 - `VOICE`
 
+<a id="typetype"></a>
+
 ## TypeType
 
 ```python
@@ -377,6 +429,8 @@ Values:
 - `ALL`
 - `ANY`
 - `NONE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

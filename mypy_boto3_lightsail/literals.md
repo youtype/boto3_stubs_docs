@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-lightsail-module"></a>
+
 # Literals for boto3 Lightsail module
 
 > [Index](..) > [Lightsail](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
 type annotations stubs module
-[mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
+[mypy-boto3-lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 - [Literals for boto3 Lightsail module](#literals-for-boto3-lightsail-module)
   - [AccessDirectionType](#accessdirectiontype)
@@ -93,6 +95,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="accessdirectiontype"></a>
+
 ## AccessDirectionType
 
 ```python
@@ -103,6 +107,8 @@ Values:
 
 - `inbound`
 - `outbound`
+
+<a id="accesstypetype"></a>
 
 ## AccessTypeType
 
@@ -115,6 +121,8 @@ Values:
 - `private`
 - `public`
 
+<a id="addontypetype"></a>
+
 ## AddOnTypeType
 
 ```python
@@ -124,6 +132,8 @@ from mypy_boto3_lightsail.literals import AddOnTypeType
 Values:
 
 - `AutoSnapshot`
+
+<a id="alarmstatetype"></a>
 
 ## AlarmStateType
 
@@ -136,6 +146,8 @@ Values:
 - `ALARM`
 - `INSUFFICIENT_DATA`
 - `OK`
+
+<a id="autosnapshotstatustype"></a>
 
 ## AutoSnapshotStatusType
 
@@ -150,6 +162,8 @@ Values:
 - `NotFound`
 - `Success`
 
+<a id="behaviorenumtype"></a>
+
 ## BehaviorEnumType
 
 ```python
@@ -160,6 +174,8 @@ Values:
 
 - `cache`
 - `dont-cache`
+
+<a id="blueprinttypetype"></a>
 
 ## BlueprintTypeType
 
@@ -172,6 +188,8 @@ Values:
 - `app`
 - `os`
 
+<a id="bucketmetricnametype"></a>
+
 ## BucketMetricNameType
 
 ```python
@@ -182,6 +200,8 @@ Values:
 
 - `BucketSizeBytes`
 - `NumberOfObjects`
+
+<a id="certificatestatustype"></a>
 
 ## CertificateStatusType
 
@@ -199,6 +219,8 @@ Values:
 - `REVOKED`
 - `VALIDATION_TIMED_OUT`
 
+<a id="cloudformationstackrecordsourcetypetype"></a>
+
 ## CloudFormationStackRecordSourceTypeType
 
 ```python
@@ -208,6 +230,8 @@ from mypy_boto3_lightsail.literals import CloudFormationStackRecordSourceTypeTyp
 Values:
 
 - `ExportSnapshotRecord`
+
+<a id="comparisonoperatortype"></a>
 
 ## ComparisonOperatorType
 
@@ -222,6 +246,8 @@ Values:
 - `LessThanOrEqualToThreshold`
 - `LessThanThreshold`
 
+<a id="contactmethodstatustype"></a>
+
 ## ContactMethodStatusType
 
 ```python
@@ -234,6 +260,8 @@ Values:
 - `PendingVerification`
 - `Valid`
 
+<a id="contactmethodverificationprotocoltype"></a>
+
 ## ContactMethodVerificationProtocolType
 
 ```python
@@ -243,6 +271,8 @@ from mypy_boto3_lightsail.literals import ContactMethodVerificationProtocolType
 Values:
 
 - `Email`
+
+<a id="contactprotocoltype"></a>
 
 ## ContactProtocolType
 
@@ -254,6 +284,8 @@ Values:
 
 - `Email`
 - `SMS`
+
+<a id="containerservicedeploymentstatetype"></a>
 
 ## ContainerServiceDeploymentStateType
 
@@ -268,6 +300,8 @@ Values:
 - `FAILED`
 - `INACTIVE`
 
+<a id="containerservicemetricnametype"></a>
+
 ## ContainerServiceMetricNameType
 
 ```python
@@ -278,6 +312,8 @@ Values:
 
 - `CPUUtilization`
 - `MemoryUtilization`
+
+<a id="containerservicepowernametype"></a>
 
 ## ContainerServicePowerNameType
 
@@ -294,6 +330,8 @@ Values:
 - `small`
 - `xlarge`
 
+<a id="containerserviceprotocoltype"></a>
+
 ## ContainerServiceProtocolType
 
 ```python
@@ -306,6 +344,8 @@ Values:
 - `HTTPS`
 - `TCP`
 - `UDP`
+
+<a id="containerservicestatedetailcodetype"></a>
 
 ## ContainerServiceStateDetailCodeType
 
@@ -325,6 +365,8 @@ Values:
 - `PROVISIONING_SERVICE`
 - `UNKNOWN_ERROR`
 
+<a id="containerservicestatetype"></a>
+
 ## ContainerServiceStateType
 
 ```python
@@ -341,6 +383,8 @@ Values:
 - `RUNNING`
 - `UPDATING`
 
+<a id="disksnapshotstatetype"></a>
+
 ## DiskSnapshotStateType
 
 ```python
@@ -353,6 +397,8 @@ Values:
 - `error`
 - `pending`
 - `unknown`
+
+<a id="diskstatetype"></a>
 
 ## DiskStateType
 
@@ -367,6 +413,8 @@ Values:
 - `in-use`
 - `pending`
 - `unknown`
+
+<a id="distributionmetricnametype"></a>
 
 ## DistributionMetricNameType
 
@@ -383,6 +431,8 @@ Values:
 - `Requests`
 - `TotalErrorRate`
 
+<a id="exportsnapshotrecordsourcetypetype"></a>
+
 ## ExportSnapshotRecordSourceTypeType
 
 ```python
@@ -393,6 +443,8 @@ Values:
 
 - `DiskSnapshot`
 - `InstanceSnapshot`
+
+<a id="forwardvaluestype"></a>
 
 ## ForwardValuesType
 
@@ -406,6 +458,8 @@ Values:
 - `allow-list`
 - `none`
 
+<a id="getactivenamespaginatorname"></a>
+
 ## GetActiveNamesPaginatorName
 
 ```python
@@ -415,6 +469,8 @@ from mypy_boto3_lightsail.literals import GetActiveNamesPaginatorName
 Values:
 
 - `get_active_names`
+
+<a id="getblueprintspaginatorname"></a>
 
 ## GetBlueprintsPaginatorName
 
@@ -426,6 +482,8 @@ Values:
 
 - `get_blueprints`
 
+<a id="getbundlespaginatorname"></a>
+
 ## GetBundlesPaginatorName
 
 ```python
@@ -435,6 +493,8 @@ from mypy_boto3_lightsail.literals import GetBundlesPaginatorName
 Values:
 
 - `get_bundles`
+
+<a id="getcloudformationstackrecordspaginatorname"></a>
 
 ## GetCloudFormationStackRecordsPaginatorName
 
@@ -446,6 +506,8 @@ Values:
 
 - `get_cloud_formation_stack_records`
 
+<a id="getdisksnapshotspaginatorname"></a>
+
 ## GetDiskSnapshotsPaginatorName
 
 ```python
@@ -455,6 +517,8 @@ from mypy_boto3_lightsail.literals import GetDiskSnapshotsPaginatorName
 Values:
 
 - `get_disk_snapshots`
+
+<a id="getdiskspaginatorname"></a>
 
 ## GetDisksPaginatorName
 
@@ -466,6 +530,8 @@ Values:
 
 - `get_disks`
 
+<a id="getdomainspaginatorname"></a>
+
 ## GetDomainsPaginatorName
 
 ```python
@@ -475,6 +541,8 @@ from mypy_boto3_lightsail.literals import GetDomainsPaginatorName
 Values:
 
 - `get_domains`
+
+<a id="getexportsnapshotrecordspaginatorname"></a>
 
 ## GetExportSnapshotRecordsPaginatorName
 
@@ -486,6 +554,8 @@ Values:
 
 - `get_export_snapshot_records`
 
+<a id="getinstancesnapshotspaginatorname"></a>
+
 ## GetInstanceSnapshotsPaginatorName
 
 ```python
@@ -495,6 +565,8 @@ from mypy_boto3_lightsail.literals import GetInstanceSnapshotsPaginatorName
 Values:
 
 - `get_instance_snapshots`
+
+<a id="getinstancespaginatorname"></a>
 
 ## GetInstancesPaginatorName
 
@@ -506,6 +578,8 @@ Values:
 
 - `get_instances`
 
+<a id="getkeypairspaginatorname"></a>
+
 ## GetKeyPairsPaginatorName
 
 ```python
@@ -515,6 +589,8 @@ from mypy_boto3_lightsail.literals import GetKeyPairsPaginatorName
 Values:
 
 - `get_key_pairs`
+
+<a id="getloadbalancerspaginatorname"></a>
 
 ## GetLoadBalancersPaginatorName
 
@@ -526,6 +602,8 @@ Values:
 
 - `get_load_balancers`
 
+<a id="getoperationspaginatorname"></a>
+
 ## GetOperationsPaginatorName
 
 ```python
@@ -535,6 +613,8 @@ from mypy_boto3_lightsail.literals import GetOperationsPaginatorName
 Values:
 
 - `get_operations`
+
+<a id="getrelationaldatabaseblueprintspaginatorname"></a>
 
 ## GetRelationalDatabaseBlueprintsPaginatorName
 
@@ -546,6 +626,8 @@ Values:
 
 - `get_relational_database_blueprints`
 
+<a id="getrelationaldatabasebundlespaginatorname"></a>
+
 ## GetRelationalDatabaseBundlesPaginatorName
 
 ```python
@@ -555,6 +637,8 @@ from mypy_boto3_lightsail.literals import GetRelationalDatabaseBundlesPaginatorN
 Values:
 
 - `get_relational_database_bundles`
+
+<a id="getrelationaldatabaseeventspaginatorname"></a>
 
 ## GetRelationalDatabaseEventsPaginatorName
 
@@ -566,6 +650,8 @@ Values:
 
 - `get_relational_database_events`
 
+<a id="getrelationaldatabaseparameterspaginatorname"></a>
+
 ## GetRelationalDatabaseParametersPaginatorName
 
 ```python
@@ -575,6 +661,8 @@ from mypy_boto3_lightsail.literals import GetRelationalDatabaseParametersPaginat
 Values:
 
 - `get_relational_database_parameters`
+
+<a id="getrelationaldatabasesnapshotspaginatorname"></a>
 
 ## GetRelationalDatabaseSnapshotsPaginatorName
 
@@ -586,6 +674,8 @@ Values:
 
 - `get_relational_database_snapshots`
 
+<a id="getrelationaldatabasespaginatorname"></a>
+
 ## GetRelationalDatabasesPaginatorName
 
 ```python
@@ -596,6 +686,8 @@ Values:
 
 - `get_relational_databases`
 
+<a id="getstaticipspaginatorname"></a>
+
 ## GetStaticIpsPaginatorName
 
 ```python
@@ -605,6 +697,8 @@ from mypy_boto3_lightsail.literals import GetStaticIpsPaginatorName
 Values:
 
 - `get_static_ips`
+
+<a id="headerenumtype"></a>
 
 ## HeaderEnumType
 
@@ -630,6 +724,8 @@ Values:
 - `Origin`
 - `Referer`
 
+<a id="instanceaccessprotocoltype"></a>
+
 ## InstanceAccessProtocolType
 
 ```python
@@ -640,6 +736,8 @@ Values:
 
 - `rdp`
 - `ssh`
+
+<a id="instancehealthreasontype"></a>
 
 ## InstanceHealthReasonType
 
@@ -661,6 +759,8 @@ Values:
 - `Lb.InternalError`
 - `Lb.RegistrationInProgress`
 
+<a id="instancehealthstatetype"></a>
+
 ## InstanceHealthStateType
 
 ```python
@@ -675,6 +775,8 @@ Values:
 - `unavailable`
 - `unhealthy`
 - `unused`
+
+<a id="instancemetricnametype"></a>
 
 ## InstanceMetricNameType
 
@@ -693,6 +795,8 @@ Values:
 - `StatusCheckFailed_Instance`
 - `StatusCheckFailed_System`
 
+<a id="instanceplatformtype"></a>
+
 ## InstancePlatformType
 
 ```python
@@ -703,6 +807,8 @@ Values:
 
 - `LINUX_UNIX`
 - `WINDOWS`
+
+<a id="instancesnapshotstatetype"></a>
 
 ## InstanceSnapshotStateType
 
@@ -716,6 +822,8 @@ Values:
 - `error`
 - `pending`
 
+<a id="ipaddresstypetype"></a>
+
 ## IpAddressTypeType
 
 ```python
@@ -726,6 +834,8 @@ Values:
 
 - `dualstack`
 - `ipv4`
+
+<a id="loadbalancerattributenametype"></a>
 
 ## LoadBalancerAttributeNameType
 
@@ -738,6 +848,8 @@ Values:
 - `HealthCheckPath`
 - `SessionStickiness_LB_CookieDurationSeconds`
 - `SessionStickinessEnabled`
+
+<a id="loadbalancermetricnametype"></a>
 
 ## LoadBalancerMetricNameType
 
@@ -760,6 +872,8 @@ Values:
 - `RequestCount`
 - `UnhealthyHostCount`
 
+<a id="loadbalancerprotocoltype"></a>
+
 ## LoadBalancerProtocolType
 
 ```python
@@ -770,6 +884,8 @@ Values:
 
 - `HTTP`
 - `HTTP_HTTPS`
+
+<a id="loadbalancerstatetype"></a>
 
 ## LoadBalancerStateType
 
@@ -785,6 +901,8 @@ Values:
 - `provisioning`
 - `unknown`
 
+<a id="loadbalancertlscertificatedomainstatustype"></a>
+
 ## LoadBalancerTlsCertificateDomainStatusType
 
 ```python
@@ -796,6 +914,8 @@ Values:
 - `FAILED`
 - `PENDING_VALIDATION`
 - `SUCCESS`
+
+<a id="loadbalancertlscertificatefailurereasontype"></a>
 
 ## LoadBalancerTlsCertificateFailureReasonType
 
@@ -811,6 +931,8 @@ Values:
 - `NO_AVAILABLE_CONTACTS`
 - `OTHER`
 
+<a id="loadbalancertlscertificaterenewalstatustype"></a>
+
 ## LoadBalancerTlsCertificateRenewalStatusType
 
 ```python
@@ -823,6 +945,8 @@ Values:
 - `PENDING_AUTO_RENEWAL`
 - `PENDING_VALIDATION`
 - `SUCCESS`
+
+<a id="loadbalancertlscertificaterevocationreasontype"></a>
 
 ## LoadBalancerTlsCertificateRevocationReasonType
 
@@ -843,6 +967,8 @@ Values:
 - `SUPERCEDED`
 - `UNSPECIFIED`
 
+<a id="loadbalancertlscertificatestatustype"></a>
+
 ## LoadBalancerTlsCertificateStatusType
 
 ```python
@@ -859,6 +985,8 @@ Values:
 - `REVOKED`
 - `UNKNOWN`
 - `VALIDATION_TIMED_OUT`
+
+<a id="metricnametype"></a>
 
 ## MetricNameType
 
@@ -894,6 +1022,8 @@ Values:
 - `StatusCheckFailed_System`
 - `UnhealthyHostCount`
 
+<a id="metricstatistictype"></a>
+
 ## MetricStatisticType
 
 ```python
@@ -907,6 +1037,8 @@ Values:
 - `Minimum`
 - `SampleCount`
 - `Sum`
+
+<a id="metricunittype"></a>
 
 ## MetricUnitType
 
@@ -944,6 +1076,8 @@ Values:
 - `Terabytes`
 - `Terabytes/Second`
 
+<a id="networkprotocoltype"></a>
+
 ## NetworkProtocolType
 
 ```python
@@ -956,6 +1090,8 @@ Values:
 - `icmp`
 - `tcp`
 - `udp`
+
+<a id="operationstatustype"></a>
 
 ## OperationStatusType
 
@@ -970,6 +1106,8 @@ Values:
 - `NotStarted`
 - `Started`
 - `Succeeded`
+
+<a id="operationtypetype"></a>
 
 ## OperationTypeType
 
@@ -1059,6 +1197,8 @@ Values:
 - `UpdateRelationalDatabase`
 - `UpdateRelationalDatabaseParameters`
 
+<a id="originprotocolpolicyenumtype"></a>
+
 ## OriginProtocolPolicyEnumType
 
 ```python
@@ -1070,6 +1210,8 @@ Values:
 - `http-only`
 - `https-only`
 
+<a id="portaccesstypetype"></a>
+
 ## PortAccessTypeType
 
 ```python
@@ -1080,6 +1222,8 @@ Values:
 
 - `Private`
 - `Public`
+
+<a id="portinfosourcetypetype"></a>
 
 ## PortInfoSourceTypeType
 
@@ -1094,6 +1238,8 @@ Values:
 - `INSTANCE`
 - `NONE`
 
+<a id="portstatetype"></a>
+
 ## PortStateType
 
 ```python
@@ -1104,6 +1250,8 @@ Values:
 
 - `closed`
 - `open`
+
+<a id="recordstatetype"></a>
 
 ## RecordStateType
 
@@ -1116,6 +1264,8 @@ Values:
 - `Failed`
 - `Started`
 - `Succeeded`
+
+<a id="regionnametype"></a>
 
 ## RegionNameType
 
@@ -1141,6 +1291,8 @@ Values:
 - `us-west-1`
 - `us-west-2`
 
+<a id="relationaldatabaseenginetype"></a>
+
 ## RelationalDatabaseEngineType
 
 ```python
@@ -1150,6 +1302,8 @@ from mypy_boto3_lightsail.literals import RelationalDatabaseEngineType
 Values:
 
 - `mysql`
+
+<a id="relationaldatabasemetricnametype"></a>
 
 ## RelationalDatabaseMetricNameType
 
@@ -1166,6 +1320,8 @@ Values:
 - `NetworkReceiveThroughput`
 - `NetworkTransmitThroughput`
 
+<a id="relationaldatabasepasswordversiontype"></a>
+
 ## RelationalDatabasePasswordVersionType
 
 ```python
@@ -1177,6 +1333,8 @@ Values:
 - `CURRENT`
 - `PENDING`
 - `PREVIOUS`
+
+<a id="renewalstatustype"></a>
 
 ## RenewalStatusType
 
@@ -1191,6 +1349,8 @@ Values:
 - `PendingValidation`
 - `Success`
 
+<a id="resourcebucketaccesstype"></a>
+
 ## ResourceBucketAccessType
 
 ```python
@@ -1201,6 +1361,8 @@ Values:
 
 - `allow`
 - `deny`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -1231,6 +1393,8 @@ Values:
 - `RelationalDatabaseSnapshot`
 - `StaticIp`
 
+<a id="statustypetype"></a>
+
 ## StatusTypeType
 
 ```python
@@ -1241,6 +1405,8 @@ Values:
 
 - `Active`
 - `Inactive`
+
+<a id="treatmissingdatatype"></a>
 
 ## TreatMissingDataType
 
@@ -1254,6 +1420,8 @@ Values:
 - `ignore`
 - `missing`
 - `notBreaching`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1562,6 +1730,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

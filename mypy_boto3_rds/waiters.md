@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-rds-module"></a>
+
 # Waiters for boto3 RDS module
 
 > [Index](..) > [RDS](.) > Waiters
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
 type annotations stubs module
-[mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
+[mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
 
 - [Waiters for boto3 RDS module](#waiters-for-boto3-rds-module)
   - [DBClusterSnapshotAvailableWaiter](#dbclustersnapshotavailablewaiter)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [DBSnapshotCompletedWaiter](#dbsnapshotcompletedwaiter)
   - [DBSnapshotDeletedWaiter](#dbsnapshotdeletedwaiter)
 
+<a id="dbclustersnapshotavailablewaiter"></a>
+
 ## DBClusterSnapshotAvailableWaiter
 
 Type annotations for
@@ -24,10 +28,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.waiter import DBClusterSnapshotAvailableWaiter
 
 def get_db_cluster_snapshot_available_waiter() -> DBClusterSnapshotAvailableWaiter:
-    return boto3.client("rds").get_waiter("db_cluster_snapshot_available")
+    return Session().client("rds").get_waiter("db_cluster_snapshot_available")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `DBClusterSnapshotAvailableWaiter.wait` method:
 - `IncludePublic`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="dbclustersnapshotdeletedwaiter"></a>
+
 ## DBClusterSnapshotDeletedWaiter
 
 Type annotations for
@@ -53,10 +61,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.waiter import DBClusterSnapshotDeletedWaiter
 
 def get_db_cluster_snapshot_deleted_waiter() -> DBClusterSnapshotDeletedWaiter:
-    return boto3.client("rds").get_waiter("db_cluster_snapshot_deleted")
+    return Session().client("rds").get_waiter("db_cluster_snapshot_deleted")
 ```
 
 Boto3 documentation:
@@ -74,6 +84,8 @@ Arguments for `DBClusterSnapshotDeletedWaiter.wait` method:
 - `IncludePublic`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="dbinstanceavailablewaiter"></a>
+
 ## DBInstanceAvailableWaiter
 
 Type annotations for `boto3.client("rds").get_waiter("db_instance_available")`.
@@ -81,10 +93,12 @@ Type annotations for `boto3.client("rds").get_waiter("db_instance_available")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.waiter import DBInstanceAvailableWaiter
 
 def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
-    return boto3.client("rds").get_waiter("db_instance_available")
+    return Session().client("rds").get_waiter("db_instance_available")
 ```
 
 Boto3 documentation:
@@ -98,6 +112,8 @@ Arguments for `DBInstanceAvailableWaiter.wait` method:
 - `Marker`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="dbinstancedeletedwaiter"></a>
+
 ## DBInstanceDeletedWaiter
 
 Type annotations for `boto3.client("rds").get_waiter("db_instance_deleted")`.
@@ -105,10 +121,12 @@ Type annotations for `boto3.client("rds").get_waiter("db_instance_deleted")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.waiter import DBInstanceDeletedWaiter
 
 def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
-    return boto3.client("rds").get_waiter("db_instance_deleted")
+    return Session().client("rds").get_waiter("db_instance_deleted")
 ```
 
 Boto3 documentation:
@@ -122,6 +140,8 @@ Arguments for `DBInstanceDeletedWaiter.wait` method:
 - `Marker`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="dbsnapshotavailablewaiter"></a>
+
 ## DBSnapshotAvailableWaiter
 
 Type annotations for `boto3.client("rds").get_waiter("db_snapshot_available")`.
@@ -129,10 +149,12 @@ Type annotations for `boto3.client("rds").get_waiter("db_snapshot_available")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.waiter import DBSnapshotAvailableWaiter
 
 def get_db_snapshot_available_waiter() -> DBSnapshotAvailableWaiter:
-    return boto3.client("rds").get_waiter("db_snapshot_available")
+    return Session().client("rds").get_waiter("db_snapshot_available")
 ```
 
 Boto3 documentation:
@@ -151,6 +173,8 @@ Arguments for `DBSnapshotAvailableWaiter.wait` method:
 - `DbiResourceId`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="dbsnapshotcompletedwaiter"></a>
+
 ## DBSnapshotCompletedWaiter
 
 Type annotations for `boto3.client("rds").get_waiter("db_snapshot_completed")`.
@@ -158,10 +182,12 @@ Type annotations for `boto3.client("rds").get_waiter("db_snapshot_completed")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.waiter import DBSnapshotCompletedWaiter
 
 def get_db_snapshot_completed_waiter() -> DBSnapshotCompletedWaiter:
-    return boto3.client("rds").get_waiter("db_snapshot_completed")
+    return Session().client("rds").get_waiter("db_snapshot_completed")
 ```
 
 Boto3 documentation:
@@ -180,6 +206,8 @@ Arguments for `DBSnapshotCompletedWaiter.wait` method:
 - `DbiResourceId`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="dbsnapshotdeletedwaiter"></a>
+
 ## DBSnapshotDeletedWaiter
 
 Type annotations for `boto3.client("rds").get_waiter("db_snapshot_deleted")`.
@@ -187,10 +215,12 @@ Type annotations for `boto3.client("rds").get_waiter("db_snapshot_deleted")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.waiter import DBSnapshotDeletedWaiter
 
 def get_db_snapshot_deleted_waiter() -> DBSnapshotDeletedWaiter:
-    return boto3.client("rds").get_waiter("db_snapshot_deleted")
+    return Session().client("rds").get_waiter("db_snapshot_deleted")
 ```
 
 Boto3 documentation:

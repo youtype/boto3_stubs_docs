@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-panorama-module"></a>
+
 # Literals for boto3 Panorama module
 
 > [Index](..) > [Panorama](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Panorama](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama)
 type annotations stubs module
-[mypy_boto3_panorama](https://pypi.org/project/mypy-boto3-panorama/).
+[mypy-boto3-panorama](https://pypi.org/project/mypy-boto3-panorama/).
 
 - [Literals for boto3 Panorama module](#literals-for-boto3-panorama-module)
   - [ApplicationInstanceHealthStatusType](#applicationinstancehealthstatustype)
@@ -29,6 +31,8 @@ type annotations stubs module
   - [UpdateProgressType](#updateprogresstype)
   - [ServiceName](#servicename)
 
+<a id="applicationinstancehealthstatustype"></a>
+
 ## ApplicationInstanceHealthStatusType
 
 ```python
@@ -40,6 +44,8 @@ Values:
 - `ERROR`
 - `NOT_AVAILABLE`
 - `RUNNING`
+
+<a id="applicationinstancestatustype"></a>
 
 ## ApplicationInstanceStatusType
 
@@ -60,6 +66,8 @@ Values:
 - `REMOVAL_REQUESTED`
 - `REMOVAL_SUCCEEDED`
 
+<a id="connectiontypetype"></a>
+
 ## ConnectionTypeType
 
 ```python
@@ -70,6 +78,8 @@ Values:
 
 - `DHCP`
 - `STATIC_IP`
+
+<a id="deviceconnectionstatustype"></a>
 
 ## DeviceConnectionStatusType
 
@@ -84,6 +94,8 @@ Values:
 - `NOT_AVAILABLE`
 - `OFFLINE`
 - `ONLINE`
+
+<a id="devicestatustype"></a>
 
 ## DeviceStatusType
 
@@ -100,6 +112,8 @@ Values:
 - `PENDING`
 - `SUCCEEDED`
 
+<a id="devicetypetype"></a>
+
 ## DeviceTypeType
 
 ```python
@@ -111,6 +125,8 @@ Values:
 - `PANORAMA_APPLIANCE`
 - `PANORAMA_APPLIANCE_DEVELOPER_KIT`
 
+<a id="jobresourcetypetype"></a>
+
 ## JobResourceTypeType
 
 ```python
@@ -120,6 +136,8 @@ from mypy_boto3_panorama.literals import JobResourceTypeType
 Values:
 
 - `PACKAGE`
+
+<a id="jobtypetype"></a>
 
 ## JobTypeType
 
@@ -131,6 +149,8 @@ Values:
 
 - `OTA`
 
+<a id="networkconnectionstatustype"></a>
+
 ## NetworkConnectionStatusType
 
 ```python
@@ -141,6 +161,8 @@ Values:
 
 - `CONNECTED`
 - `NOT_CONNECTED`
+
+<a id="nodecategorytype"></a>
 
 ## NodeCategoryType
 
@@ -155,6 +177,8 @@ Values:
 - `MEDIA_SOURCE`
 - `ML_MODEL`
 
+<a id="nodefromtemplatejobstatustype"></a>
+
 ## NodeFromTemplateJobStatusType
 
 ```python
@@ -166,6 +190,8 @@ Values:
 - `FAILED`
 - `PENDING`
 - `SUCCEEDED`
+
+<a id="nodeinstancestatustype"></a>
 
 ## NodeInstanceStatusType
 
@@ -179,6 +205,8 @@ Values:
 - `NOT_AVAILABLE`
 - `RUNNING`
 
+<a id="packageimportjobstatustype"></a>
+
 ## PackageImportJobStatusType
 
 ```python
@@ -191,6 +219,8 @@ Values:
 - `PENDING`
 - `SUCCEEDED`
 
+<a id="packageimportjobtypetype"></a>
+
 ## PackageImportJobTypeType
 
 ```python
@@ -200,6 +230,8 @@ from mypy_boto3_panorama.literals import PackageImportJobTypeType
 Values:
 
 - `NODE_PACKAGE_VERSION`
+
+<a id="packageversionstatustype"></a>
 
 ## PackageVersionStatusType
 
@@ -214,6 +246,8 @@ Values:
 - `REGISTER_COMPLETED`
 - `REGISTER_PENDING`
 
+<a id="porttypetype"></a>
+
 ## PortTypeType
 
 ```python
@@ -227,6 +261,8 @@ Values:
 - `INT32`
 - `MEDIA`
 - `STRING`
+
+<a id="statusfiltertype"></a>
 
 ## StatusFilterType
 
@@ -243,6 +279,8 @@ Values:
 - `REMOVAL_FAILED`
 - `REMOVAL_SUCCEEDED`
 
+<a id="templatetypetype"></a>
+
 ## TemplateTypeType
 
 ```python
@@ -252,6 +290,8 @@ from mypy_boto3_panorama.literals import TemplateTypeType
 Values:
 
 - `RTSP_CAMERA_STREAM`
+
+<a id="updateprogresstype"></a>
 
 ## UpdateProgressType
 
@@ -268,6 +308,8 @@ Values:
 - `PENDING`
 - `REBOOTING`
 - `VERIFYING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

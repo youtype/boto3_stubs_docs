@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-cloudwatchlogs-module"></a>
+
 # Paginators for boto3 CloudWatchLogs module
 
 > [Index](..) > [CloudWatchLogs](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
-[mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
+[mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
 
 - [Paginators for boto3 CloudWatchLogs module](#paginators-for-boto3-cloudwatchlogs-module)
   - [DescribeDestinationsPaginator](#describedestinationspaginator)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [DescribeSubscriptionFiltersPaginator](#describesubscriptionfilterspaginator)
   - [FilterLogEventsPaginator](#filterlogeventspaginator)
 
+<a id="describedestinationspaginator"></a>
+
 ## DescribeDestinationsPaginator
 
 Type annotations for
@@ -26,10 +30,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_logs.paginator import DescribeDestinationsPaginator
 
 def get_describe_destinations_paginator() -> DescribeDestinationsPaginator:
-    return boto3.client("logs").get_paginator("describe_destinations")
+    return Session().client("logs").get_paginator("describe_destinations")
 ```
 
 Boto3 documentation:
@@ -44,6 +50,8 @@ Arguments for `DescribeDestinationsPaginator.paginate` method:
 `DescribeDestinationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef)\].
 
+<a id="describeexporttaskspaginator"></a>
+
 ## DescribeExportTasksPaginator
 
 Type annotations for
@@ -52,10 +60,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_logs.paginator import DescribeExportTasksPaginator
 
 def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
-    return boto3.client("logs").get_paginator("describe_export_tasks")
+    return Session().client("logs").get_paginator("describe_export_tasks")
 ```
 
 Boto3 documentation:
@@ -72,6 +82,8 @@ Arguments for `DescribeExportTasksPaginator.paginate` method:
 `DescribeExportTasksPaginator.paginate` returns
 `_PageIterator`\[[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef)\].
 
+<a id="describeloggroupspaginator"></a>
+
 ## DescribeLogGroupsPaginator
 
 Type annotations for
@@ -80,10 +92,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_logs.paginator import DescribeLogGroupsPaginator
 
 def get_describe_log_groups_paginator() -> DescribeLogGroupsPaginator:
-    return boto3.client("logs").get_paginator("describe_log_groups")
+    return Session().client("logs").get_paginator("describe_log_groups")
 ```
 
 Boto3 documentation:
@@ -98,6 +112,8 @@ Arguments for `DescribeLogGroupsPaginator.paginate` method:
 `DescribeLogGroupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef)\].
 
+<a id="describelogstreamspaginator"></a>
+
 ## DescribeLogStreamsPaginator
 
 Type annotations for
@@ -106,10 +122,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_logs.paginator import DescribeLogStreamsPaginator
 
 def get_describe_log_streams_paginator() -> DescribeLogStreamsPaginator:
-    return boto3.client("logs").get_paginator("describe_log_streams")
+    return Session().client("logs").get_paginator("describe_log_streams")
 ```
 
 Boto3 documentation:
@@ -127,6 +145,8 @@ Arguments for `DescribeLogStreamsPaginator.paginate` method:
 `DescribeLogStreamsPaginator.paginate` returns
 `_PageIterator`\[[DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef)\].
 
+<a id="describemetricfilterspaginator"></a>
+
 ## DescribeMetricFiltersPaginator
 
 Type annotations for
@@ -135,10 +155,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_logs.paginator import DescribeMetricFiltersPaginator
 
 def get_describe_metric_filters_paginator() -> DescribeMetricFiltersPaginator:
-    return boto3.client("logs").get_paginator("describe_metric_filters")
+    return Session().client("logs").get_paginator("describe_metric_filters")
 ```
 
 Boto3 documentation:
@@ -156,6 +178,8 @@ Arguments for `DescribeMetricFiltersPaginator.paginate` method:
 `DescribeMetricFiltersPaginator.paginate` returns
 `_PageIterator`\[[DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef)\].
 
+<a id="describequeriespaginator"></a>
+
 ## DescribeQueriesPaginator
 
 Type annotations for `boto3.client("logs").get_paginator("describe_queries")`.
@@ -163,10 +187,12 @@ Type annotations for `boto3.client("logs").get_paginator("describe_queries")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_logs.paginator import DescribeQueriesPaginator
 
 def get_describe_queries_paginator() -> DescribeQueriesPaginator:
-    return boto3.client("logs").get_paginator("describe_queries")
+    return Session().client("logs").get_paginator("describe_queries")
 ```
 
 Boto3 documentation:
@@ -182,6 +208,8 @@ Arguments for `DescribeQueriesPaginator.paginate` method:
 `DescribeQueriesPaginator.paginate` returns
 `_PageIterator`\[[DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef)\].
 
+<a id="describeresourcepoliciespaginator"></a>
+
 ## DescribeResourcePoliciesPaginator
 
 Type annotations for
@@ -190,10 +218,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_logs.paginator import DescribeResourcePoliciesPaginator
 
 def get_describe_resource_policies_paginator() -> DescribeResourcePoliciesPaginator:
-    return boto3.client("logs").get_paginator("describe_resource_policies")
+    return Session().client("logs").get_paginator("describe_resource_policies")
 ```
 
 Boto3 documentation:
@@ -207,6 +237,8 @@ Arguments for `DescribeResourcePoliciesPaginator.paginate` method:
 `DescribeResourcePoliciesPaginator.paginate` returns
 `_PageIterator`\[[DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef)\].
 
+<a id="describesubscriptionfilterspaginator"></a>
+
 ## DescribeSubscriptionFiltersPaginator
 
 Type annotations for
@@ -215,10 +247,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_logs.paginator import DescribeSubscriptionFiltersPaginator
 
 def get_describe_subscription_filters_paginator() -> DescribeSubscriptionFiltersPaginator:
-    return boto3.client("logs").get_paginator("describe_subscription_filters")
+    return Session().client("logs").get_paginator("describe_subscription_filters")
 ```
 
 Boto3 documentation:
@@ -234,6 +268,8 @@ Arguments for `DescribeSubscriptionFiltersPaginator.paginate` method:
 `DescribeSubscriptionFiltersPaginator.paginate` returns
 `_PageIterator`\[[DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef)\].
 
+<a id="filterlogeventspaginator"></a>
+
 ## FilterLogEventsPaginator
 
 Type annotations for `boto3.client("logs").get_paginator("filter_log_events")`.
@@ -241,10 +277,12 @@ Type annotations for `boto3.client("logs").get_paginator("filter_log_events")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_logs.paginator import FilterLogEventsPaginator
 
 def get_filter_log_events_paginator() -> FilterLogEventsPaginator:
-    return boto3.client("logs").get_paginator("filter_log_events")
+    return Session().client("logs").get_paginator("filter_log_events")
 ```
 
 Boto3 documentation:

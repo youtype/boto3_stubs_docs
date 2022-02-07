@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-inspector-module"></a>
+
 # Typed dictionaries for boto3 Inspector module
 
 > [Index](..) > [Inspector](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
 type annotations stubs module
-[mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
+[mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 - [Typed dictionaries for boto3 Inspector module](#typed-dictionaries-for-boto3-inspector-module)
   - [AddAttributesToFindingsRequestRequestTypeDef](#addattributestofindingsrequestrequesttypedef)
@@ -107,6 +109,8 @@ type annotations stubs module
   - [UnsubscribeFromEventRequestRequestTypeDef](#unsubscribefromeventrequestrequesttypedef)
   - [UpdateAssessmentTargetRequestRequestTypeDef](#updateassessmenttargetrequestrequesttypedef)
 
+<a id="addattributestofindingsrequestrequesttypedef"></a>
+
 ## AddAttributesToFindingsRequestRequestTypeDef
 
 ```python
@@ -118,6 +122,8 @@ Required fields:
 - `findingArns`: `Sequence`\[`str`\]
 - `attributes`:
   `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+
+<a id="addattributestofindingsresponsetypedef"></a>
 
 ## AddAttributesToFindingsResponseTypeDef
 
@@ -132,6 +138,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="agentfiltertypedef"></a>
+
 ## AgentFilterTypeDef
 
 ```python
@@ -144,6 +152,8 @@ Required fields:
   `Sequence`\[[AgentHealthType](./literals.md#agenthealthtype)\]
 - `agentHealthCodes`:
   `Sequence`\[[AgentHealthCodeType](./literals.md#agenthealthcodetype)\]
+
+<a id="agentpreviewtypedef"></a>
 
 ## AgentPreviewTypeDef
 
@@ -165,6 +175,8 @@ Optional fields:
 - `kernelVersion`: `str`
 - `ipv4Address`: `str`
 
+<a id="assessmentrunagenttypedef"></a>
+
 ## AssessmentRunAgentTypeDef
 
 ```python
@@ -184,6 +196,8 @@ Optional fields:
 
 - `agentHealthDetails`: `str`
 - `autoScalingGroup`: `str`
+
+<a id="assessmentrunfiltertypedef"></a>
 
 ## AssessmentRunFilterTypeDef
 
@@ -205,6 +219,8 @@ Optional fields:
 - `stateChangeTimeRange`:
   [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 
+<a id="assessmentrunnotificationtypedef"></a>
+
 ## AssessmentRunNotificationTypeDef
 
 ```python
@@ -224,6 +240,8 @@ Optional fields:
 - `snsPublishStatusCode`:
   [AssessmentRunNotificationSnsStatusCodeType](./literals.md#assessmentrunnotificationsnsstatuscodetype)
 
+<a id="assessmentrunstatechangetypedef"></a>
+
 ## AssessmentRunStateChangeTypeDef
 
 ```python
@@ -234,6 +252,8 @@ Required fields:
 
 - `stateChangedAt`: `datetime`
 - `state`: [AssessmentRunStateType](./literals.md#assessmentrunstatetype)
+
+<a id="assessmentruntypedef"></a>
 
 ## AssessmentRunTypeDef
 
@@ -265,6 +285,8 @@ Optional fields:
 - `startedAt`: `datetime`
 - `completedAt`: `datetime`
 
+<a id="assessmenttargetfiltertypedef"></a>
+
 ## AssessmentTargetFilterTypeDef
 
 ```python
@@ -274,6 +296,8 @@ from mypy_boto3_inspector.type_defs import AssessmentTargetFilterTypeDef
 Optional fields:
 
 - `assessmentTargetNamePattern`: `str`
+
+<a id="assessmenttargettypedef"></a>
 
 ## AssessmentTargetTypeDef
 
@@ -292,6 +316,8 @@ Optional fields:
 
 - `resourceGroupArn`: `str`
 
+<a id="assessmenttemplatefiltertypedef"></a>
+
 ## AssessmentTemplateFilterTypeDef
 
 ```python
@@ -303,6 +329,8 @@ Optional fields:
 - `namePattern`: `str`
 - `durationRange`: [DurationRangeTypeDef](./type_defs.md#durationrangetypedef)
 - `rulesPackageArns`: `Sequence`\[`str`\]
+
+<a id="assessmenttemplatetypedef"></a>
 
 ## AssessmentTemplateTypeDef
 
@@ -326,6 +354,8 @@ Optional fields:
 
 - `lastAssessmentRunArn`: `str`
 
+<a id="assetattributestypedef"></a>
+
 ## AssetAttributesTypeDef
 
 ```python
@@ -347,6 +377,8 @@ Optional fields:
 - `networkInterfaces`:
   `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 
+<a id="attributetypedef"></a>
+
 ## AttributeTypeDef
 
 ```python
@@ -360,6 +392,8 @@ Required fields:
 Optional fields:
 
 - `value`: `str`
+
+<a id="createassessmenttargetrequestrequesttypedef"></a>
 
 ## CreateAssessmentTargetRequestRequestTypeDef
 
@@ -375,6 +409,8 @@ Optional fields:
 
 - `resourceGroupArn`: `str`
 
+<a id="createassessmenttargetresponsetypedef"></a>
+
 ## CreateAssessmentTargetResponseTypeDef
 
 ```python
@@ -386,6 +422,8 @@ Required fields:
 - `assessmentTargetArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createassessmenttemplaterequestrequesttypedef"></a>
 
 ## CreateAssessmentTemplateRequestRequestTypeDef
 
@@ -405,6 +443,8 @@ Optional fields:
 - `userAttributesForFindings`:
   `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
+<a id="createassessmenttemplateresponsetypedef"></a>
+
 ## CreateAssessmentTemplateResponseTypeDef
 
 ```python
@@ -417,6 +457,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createexclusionspreviewrequestrequesttypedef"></a>
+
 ## CreateExclusionsPreviewRequestRequestTypeDef
 
 ```python
@@ -426,6 +468,8 @@ from mypy_boto3_inspector.type_defs import CreateExclusionsPreviewRequestRequest
 Required fields:
 
 - `assessmentTemplateArn`: `str`
+
+<a id="createexclusionspreviewresponsetypedef"></a>
 
 ## CreateExclusionsPreviewResponseTypeDef
 
@@ -439,6 +483,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createresourcegrouprequestrequesttypedef"></a>
+
 ## CreateResourceGroupRequestRequestTypeDef
 
 ```python
@@ -449,6 +495,8 @@ Required fields:
 
 - `resourceGroupTags`:
   `Sequence`\[[ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef)\]
+
+<a id="createresourcegroupresponsetypedef"></a>
 
 ## CreateResourceGroupResponseTypeDef
 
@@ -462,6 +510,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteassessmentrunrequestrequesttypedef"></a>
+
 ## DeleteAssessmentRunRequestRequestTypeDef
 
 ```python
@@ -471,6 +521,8 @@ from mypy_boto3_inspector.type_defs import DeleteAssessmentRunRequestRequestType
 Required fields:
 
 - `assessmentRunArn`: `str`
+
+<a id="deleteassessmenttargetrequestrequesttypedef"></a>
 
 ## DeleteAssessmentTargetRequestRequestTypeDef
 
@@ -482,6 +534,8 @@ Required fields:
 
 - `assessmentTargetArn`: `str`
 
+<a id="deleteassessmenttemplaterequestrequesttypedef"></a>
+
 ## DeleteAssessmentTemplateRequestRequestTypeDef
 
 ```python
@@ -492,6 +546,8 @@ Required fields:
 
 - `assessmentTemplateArn`: `str`
 
+<a id="describeassessmentrunsrequestrequesttypedef"></a>
+
 ## DescribeAssessmentRunsRequestRequestTypeDef
 
 ```python
@@ -501,6 +557,8 @@ from mypy_boto3_inspector.type_defs import DescribeAssessmentRunsRequestRequestT
 Required fields:
 
 - `assessmentRunArns`: `Sequence`\[`str`\]
+
+<a id="describeassessmentrunsresponsetypedef"></a>
 
 ## DescribeAssessmentRunsResponseTypeDef
 
@@ -517,6 +575,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeassessmenttargetsrequestrequesttypedef"></a>
+
 ## DescribeAssessmentTargetsRequestRequestTypeDef
 
 ```python
@@ -526,6 +586,8 @@ from mypy_boto3_inspector.type_defs import DescribeAssessmentTargetsRequestReque
 Required fields:
 
 - `assessmentTargetArns`: `Sequence`\[`str`\]
+
+<a id="describeassessmenttargetsresponsetypedef"></a>
 
 ## DescribeAssessmentTargetsResponseTypeDef
 
@@ -542,6 +604,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeassessmenttemplatesrequestrequesttypedef"></a>
+
 ## DescribeAssessmentTemplatesRequestRequestTypeDef
 
 ```python
@@ -551,6 +615,8 @@ from mypy_boto3_inspector.type_defs import DescribeAssessmentTemplatesRequestReq
 Required fields:
 
 - `assessmentTemplateArns`: `Sequence`\[`str`\]
+
+<a id="describeassessmenttemplatesresponsetypedef"></a>
 
 ## DescribeAssessmentTemplatesResponseTypeDef
 
@@ -567,6 +633,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecrossaccountaccessroleresponsetypedef"></a>
+
 ## DescribeCrossAccountAccessRoleResponseTypeDef
 
 ```python
@@ -581,6 +649,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeexclusionsrequestrequesttypedef"></a>
+
 ## DescribeExclusionsRequestRequestTypeDef
 
 ```python
@@ -594,6 +664,8 @@ Required fields:
 Optional fields:
 
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
+
+<a id="describeexclusionsresponsetypedef"></a>
 
 ## DescribeExclusionsResponseTypeDef
 
@@ -610,6 +682,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefindingsrequestrequesttypedef"></a>
+
 ## DescribeFindingsRequestRequestTypeDef
 
 ```python
@@ -623,6 +697,8 @@ Required fields:
 Optional fields:
 
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
+
+<a id="describefindingsresponsetypedef"></a>
 
 ## DescribeFindingsResponseTypeDef
 
@@ -638,6 +714,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeresourcegroupsrequestrequesttypedef"></a>
+
 ## DescribeResourceGroupsRequestRequestTypeDef
 
 ```python
@@ -647,6 +725,8 @@ from mypy_boto3_inspector.type_defs import DescribeResourceGroupsRequestRequestT
 Required fields:
 
 - `resourceGroupArns`: `Sequence`\[`str`\]
+
+<a id="describeresourcegroupsresponsetypedef"></a>
 
 ## DescribeResourceGroupsResponseTypeDef
 
@@ -663,6 +743,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerulespackagesrequestrequesttypedef"></a>
+
 ## DescribeRulesPackagesRequestRequestTypeDef
 
 ```python
@@ -676,6 +758,8 @@ Required fields:
 Optional fields:
 
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
+
+<a id="describerulespackagesresponsetypedef"></a>
 
 ## DescribeRulesPackagesResponseTypeDef
 
@@ -692,6 +776,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="durationrangetypedef"></a>
+
 ## DurationRangeTypeDef
 
 ```python
@@ -703,6 +789,8 @@ Optional fields:
 - `minSeconds`: `int`
 - `maxSeconds`: `int`
 
+<a id="eventsubscriptiontypedef"></a>
+
 ## EventSubscriptionTypeDef
 
 ```python
@@ -713,6 +801,8 @@ Required fields:
 
 - `event`: [InspectorEventType](./literals.md#inspectoreventtype)
 - `subscribedAt`: `datetime`
+
+<a id="exclusionpreviewtypedef"></a>
 
 ## ExclusionPreviewTypeDef
 
@@ -730,6 +820,8 @@ Required fields:
 Optional fields:
 
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+
+<a id="exclusiontypedef"></a>
 
 ## ExclusionTypeDef
 
@@ -749,6 +841,8 @@ Optional fields:
 
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
+<a id="faileditemdetailstypedef"></a>
+
 ## FailedItemDetailsTypeDef
 
 ```python
@@ -760,6 +854,8 @@ Required fields:
 - `failureCode`:
   [FailedItemErrorCodeType](./literals.md#faileditemerrorcodetype)
 - `retryable`: `bool`
+
+<a id="findingfiltertypedef"></a>
 
 ## FindingFilterTypeDef
 
@@ -780,6 +876,8 @@ Optional fields:
   `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `creationTimeRange`:
   [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
+
+<a id="findingtypedef"></a>
 
 ## FindingTypeDef
 
@@ -815,6 +913,8 @@ Optional fields:
 - `confidence`: `int`
 - `indicatorOfCompromise`: `bool`
 
+<a id="getassessmentreportrequestrequesttypedef"></a>
+
 ## GetAssessmentReportRequestRequestTypeDef
 
 ```python
@@ -828,6 +928,8 @@ Required fields:
   [ReportFileFormatType](./literals.md#reportfileformattype)
 - `reportType`: [ReportTypeType](./literals.md#reporttypetype)
 
+<a id="getassessmentreportresponsetypedef"></a>
+
 ## GetAssessmentReportResponseTypeDef
 
 ```python
@@ -840,6 +942,8 @@ Required fields:
 - `url`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getexclusionspreviewrequestrequesttypedef"></a>
 
 ## GetExclusionsPreviewRequestRequestTypeDef
 
@@ -858,6 +962,8 @@ Optional fields:
 - `maxResults`: `int`
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
+<a id="getexclusionspreviewresponsetypedef"></a>
+
 ## GetExclusionsPreviewResponseTypeDef
 
 ```python
@@ -873,6 +979,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettelemetrymetadatarequestrequesttypedef"></a>
+
 ## GetTelemetryMetadataRequestRequestTypeDef
 
 ```python
@@ -882,6 +990,8 @@ from mypy_boto3_inspector.type_defs import GetTelemetryMetadataRequestRequestTyp
 Required fields:
 
 - `assessmentRunArn`: `str`
+
+<a id="gettelemetrymetadataresponsetypedef"></a>
 
 ## GetTelemetryMetadataResponseTypeDef
 
@@ -895,6 +1005,8 @@ Required fields:
   `List`\[[TelemetryMetadataTypeDef](./type_defs.md#telemetrymetadatatypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="inspectorserviceattributestypedef"></a>
 
 ## InspectorServiceAttributesTypeDef
 
@@ -910,6 +1022,8 @@ Optional fields:
 
 - `assessmentRunArn`: `str`
 - `rulesPackageArn`: `str`
+
+<a id="listassessmentrunagentsrequestrequesttypedef"></a>
 
 ## ListAssessmentRunAgentsRequestRequestTypeDef
 
@@ -927,6 +1041,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassessmentrunagentsresponsetypedef"></a>
+
 ## ListAssessmentRunAgentsResponseTypeDef
 
 ```python
@@ -940,6 +1056,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassessmentrunsrequestrequesttypedef"></a>
 
 ## ListAssessmentRunsRequestRequestTypeDef
 
@@ -955,6 +1073,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassessmentrunsresponsetypedef"></a>
+
 ## ListAssessmentRunsResponseTypeDef
 
 ```python
@@ -967,6 +1087,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassessmenttargetsrequestrequesttypedef"></a>
 
 ## ListAssessmentTargetsRequestRequestTypeDef
 
@@ -981,6 +1103,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassessmenttargetsresponsetypedef"></a>
+
 ## ListAssessmentTargetsResponseTypeDef
 
 ```python
@@ -993,6 +1117,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassessmenttemplatesrequestrequesttypedef"></a>
 
 ## ListAssessmentTemplatesRequestRequestTypeDef
 
@@ -1008,6 +1134,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassessmenttemplatesresponsetypedef"></a>
+
 ## ListAssessmentTemplatesResponseTypeDef
 
 ```python
@@ -1021,6 +1149,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listeventsubscriptionsrequestrequesttypedef"></a>
+
 ## ListEventSubscriptionsRequestRequestTypeDef
 
 ```python
@@ -1032,6 +1162,8 @@ Optional fields:
 - `resourceArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listeventsubscriptionsresponsetypedef"></a>
 
 ## ListEventSubscriptionsResponseTypeDef
 
@@ -1046,6 +1178,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listexclusionsrequestrequesttypedef"></a>
 
 ## ListExclusionsRequestRequestTypeDef
 
@@ -1062,6 +1196,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listexclusionsresponsetypedef"></a>
+
 ## ListExclusionsResponseTypeDef
 
 ```python
@@ -1074,6 +1210,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfindingsrequestrequesttypedef"></a>
 
 ## ListFindingsRequestRequestTypeDef
 
@@ -1088,6 +1226,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listfindingsresponsetypedef"></a>
+
 ## ListFindingsResponseTypeDef
 
 ```python
@@ -1101,6 +1241,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrulespackagesrequestrequesttypedef"></a>
+
 ## ListRulesPackagesRequestRequestTypeDef
 
 ```python
@@ -1111,6 +1253,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listrulespackagesresponsetypedef"></a>
 
 ## ListRulesPackagesResponseTypeDef
 
@@ -1125,6 +1269,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1134,6 +1280,8 @@ from mypy_boto3_inspector.type_defs import ListTagsForResourceRequestRequestType
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1146,6 +1294,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="networkinterfacetypedef"></a>
 
 ## NetworkInterfaceTypeDef
 
@@ -1168,6 +1318,8 @@ Optional fields:
 - `securityGroups`:
   `List`\[[SecurityGroupTypeDef](./type_defs.md#securitygrouptypedef)\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1179,6 +1331,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="previewagentsrequestrequesttypedef"></a>
 
 ## PreviewAgentsRequestRequestTypeDef
 
@@ -1195,6 +1349,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="previewagentsresponsetypedef"></a>
+
 ## PreviewAgentsResponseTypeDef
 
 ```python
@@ -1209,6 +1365,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="privateiptypedef"></a>
+
 ## PrivateIpTypeDef
 
 ```python
@@ -1220,6 +1378,8 @@ Optional fields:
 - `privateDnsName`: `str`
 - `privateIpAddress`: `str`
 
+<a id="registercrossaccountaccessrolerequestrequesttypedef"></a>
+
 ## RegisterCrossAccountAccessRoleRequestRequestTypeDef
 
 ```python
@@ -1229,6 +1389,8 @@ from mypy_boto3_inspector.type_defs import RegisterCrossAccountAccessRoleRequest
 Required fields:
 
 - `roleArn`: `str`
+
+<a id="removeattributesfromfindingsrequestrequesttypedef"></a>
 
 ## RemoveAttributesFromFindingsRequestRequestTypeDef
 
@@ -1240,6 +1402,8 @@ Required fields:
 
 - `findingArns`: `Sequence`\[`str`\]
 - `attributeKeys`: `Sequence`\[`str`\]
+
+<a id="removeattributesfromfindingsresponsetypedef"></a>
 
 ## RemoveAttributesFromFindingsResponseTypeDef
 
@@ -1253,6 +1417,8 @@ Required fields:
   [FailedItemDetailsTypeDef](./type_defs.md#faileditemdetailstypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="resourcegrouptagtypedef"></a>
 
 ## ResourceGroupTagTypeDef
 
@@ -1268,6 +1434,8 @@ Optional fields:
 
 - `value`: `str`
 
+<a id="resourcegrouptypedef"></a>
+
 ## ResourceGroupTypeDef
 
 ```python
@@ -1280,6 +1448,8 @@ Required fields:
 - `tags`:
   `List`\[[ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef)\]
 - `createdAt`: `datetime`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1294,6 +1464,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="rulespackagetypedef"></a>
 
 ## RulesPackageTypeDef
 
@@ -1312,6 +1484,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="scopetypedef"></a>
+
 ## ScopeTypeDef
 
 ```python
@@ -1323,6 +1497,8 @@ Optional fields:
 - `key`: [ScopeTypeType](./literals.md#scopetypetype)
 - `value`: `str`
 
+<a id="securitygrouptypedef"></a>
+
 ## SecurityGroupTypeDef
 
 ```python
@@ -1333,6 +1509,8 @@ Optional fields:
 
 - `groupName`: `str`
 - `groupId`: `str`
+
+<a id="settagsforresourcerequestrequesttypedef"></a>
 
 ## SetTagsForResourceRequestRequestTypeDef
 
@@ -1348,6 +1526,8 @@ Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="startassessmentrunrequestrequesttypedef"></a>
+
 ## StartAssessmentRunRequestRequestTypeDef
 
 ```python
@@ -1362,6 +1542,8 @@ Optional fields:
 
 - `assessmentRunName`: `str`
 
+<a id="startassessmentrunresponsetypedef"></a>
+
 ## StartAssessmentRunResponseTypeDef
 
 ```python
@@ -1373,6 +1555,8 @@ Required fields:
 - `assessmentRunArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="stopassessmentrunrequestrequesttypedef"></a>
 
 ## StopAssessmentRunRequestRequestTypeDef
 
@@ -1388,6 +1572,8 @@ Optional fields:
 
 - `stopAction`: [StopActionType](./literals.md#stopactiontype)
 
+<a id="subscribetoeventrequestrequesttypedef"></a>
+
 ## SubscribeToEventRequestRequestTypeDef
 
 ```python
@@ -1399,6 +1585,8 @@ Required fields:
 - `resourceArn`: `str`
 - `event`: [InspectorEventType](./literals.md#inspectoreventtype)
 - `topicArn`: `str`
+
+<a id="subscriptiontypedef"></a>
 
 ## SubscriptionTypeDef
 
@@ -1413,6 +1601,8 @@ Required fields:
 - `eventSubscriptions`:
   `List`\[[EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1426,6 +1616,8 @@ Required fields:
 Optional fields:
 
 - `value`: `str`
+
+<a id="telemetrymetadatatypedef"></a>
 
 ## TelemetryMetadataTypeDef
 
@@ -1442,6 +1634,8 @@ Optional fields:
 
 - `dataSize`: `int`
 
+<a id="timestamprangetypedef"></a>
+
 ## TimestampRangeTypeDef
 
 ```python
@@ -1452,6 +1646,8 @@ Optional fields:
 
 - `beginDate`: `Union`\[`datetime`, `str`\]
 - `endDate`: `Union`\[`datetime`, `str`\]
+
+<a id="unsubscribefromeventrequestrequesttypedef"></a>
 
 ## UnsubscribeFromEventRequestRequestTypeDef
 
@@ -1464,6 +1660,8 @@ Required fields:
 - `resourceArn`: `str`
 - `event`: [InspectorEventType](./literals.md#inspectoreventtype)
 - `topicArn`: `str`
+
+<a id="updateassessmenttargetrequestrequesttypedef"></a>
 
 ## UpdateAssessmentTargetRequestRequestTypeDef
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ssooidc-module"></a>
+
 # Literals for boto3 SSOOIDC module
 
 > [Index](..) > [SSOOIDC](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)
 type annotations stubs module
-[mypy_boto3_sso_oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
+[mypy-boto3-sso-oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
 
 - [Literals for boto3 SSOOIDC module](#literals-for-boto3-ssooidc-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

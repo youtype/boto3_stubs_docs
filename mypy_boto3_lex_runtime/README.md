@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-lexruntimeservice-module"></a>
+
 # Type annotations for boto3 LexRuntimeService module
 
 > [Index](..) > LexRuntimeService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
 type annotations stubs module
-[mypy_boto3_lex_runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
+[mypy-boto3-lex-runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[lex-runtime]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[lex-runtime]'
+
+# standalone installation
 pip install mypy-boto3-lex-runtime
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-lex-runtime
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="lexruntimeserviceclient"></a>
 
 ## LexRuntimeServiceClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_lex_runtime.client import LexRuntimeServiceClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -39,6 +53,8 @@ from mypy_boto3_lex_runtime.client import LexRuntimeServiceClient
 - [post_content](./client.md#post_content)
 - [post_text](./client.md#post_text)
 - [put_session](./client.md#put_session)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -57,6 +73,8 @@ LexRuntimeServiceClient [exceptions](./client.md#exceptions)
 - RequestTimeoutException
 - UnsupportedMediaTypeException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -74,6 +92,8 @@ from mypy_boto3_lex_runtime.literals import ConfirmationStatusType, ...
 - [FulfillmentStateType](./literals.md#fulfillmentstatetype)
 - [MessageFormatTypeType](./literals.md#messageformattypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

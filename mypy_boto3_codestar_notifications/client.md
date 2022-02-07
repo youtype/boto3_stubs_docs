@@ -1,3 +1,5 @@
+<a id="codestarnotificationsclient-for-boto3-codestarnotifications-module"></a>
+
 # CodeStarNotificationsClient for boto3 CodeStarNotifications module
 
 > [Index](..) > [CodeStarNotifications](.) > CodeStarNotificationsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
 type annotations stubs module
-[mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
+[mypy-boto3-codestar-notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
 - [CodeStarNotificationsClient for boto3 CodeStarNotifications module](#codestarnotificationsclient-for-boto3-codestarnotifications-module)
   - [CodeStarNotificationsClient](#codestarnotificationsclient)
@@ -29,6 +31,8 @@ type annotations stubs module
     - [update_notification_rule](#update_notification_rule)
     - [get_paginator](#get_paginator)
 
+<a id="codestarnotificationsclient"></a>
+
 ## CodeStarNotificationsClient
 
 Type annotations for `boto3.client("codestar-notifications")`
@@ -36,14 +40,17 @@ Type annotations for `boto3.client("codestar-notifications")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_codestar_notifications.client import CodeStarNotificationsClient
 
 def get_codestar-notifications_client() -> CodeStarNotificationsClient:
-    return boto3.client("codestar-notifications")
+    return Session().client("codestar-notifications")
 ```
 
 Boto3 documentation:
 [CodeStarNotifications.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -69,7 +76,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -82,6 +93,8 @@ Boto3 documentation:
 [CodeStarNotifications.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -98,6 +111,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_notification_rule"></a>
 
 ### create_notification_rule
 
@@ -128,6 +143,8 @@ Keyword-only arguments:
 Returns
 [CreateNotificationRuleResultTypeDef](./type_defs.md#createnotificationruleresulttypedef).
 
+<a id="delete_notification_rule"></a>
+
 ### delete_notification_rule
 
 Deletes a notification rule for a resource.
@@ -147,6 +164,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteNotificationRuleResultTypeDef](./type_defs.md#deletenotificationruleresulttypedef).
+
+<a id="delete_target"></a>
 
 ### delete_target
 
@@ -168,6 +187,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_notification_rule"></a>
+
 ### describe_notification_rule
 
 Returns information about a specified notification rule.
@@ -188,6 +209,8 @@ Keyword-only arguments:
 Returns
 [DescribeNotificationRuleResultTypeDef](./type_defs.md#describenotificationruleresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -206,6 +229,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_event_types"></a>
 
 ### list_event_types
 
@@ -231,6 +256,8 @@ Keyword-only arguments:
 Returns
 [ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef).
 
+<a id="list_notification_rules"></a>
+
 ### list_notification_rules
 
 Returns a list of the notification rules for an AWS account.
@@ -254,6 +281,8 @@ Keyword-only arguments:
 Returns
 [ListNotificationRulesResultTypeDef](./type_defs.md#listnotificationrulesresulttypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of the tags associated with a notification rule.
@@ -273,6 +302,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+
+<a id="list_targets"></a>
 
 ### list_targets
 
@@ -296,6 +327,8 @@ Keyword-only arguments:
 
 Returns [ListTargetsResultTypeDef](./type_defs.md#listtargetsresulttypedef).
 
+<a id="subscribe"></a>
+
 ### subscribe
 
 Creates an association between a notification rule and an SNS topic so that the
@@ -318,6 +351,8 @@ Keyword-only arguments:
 
 Returns [SubscribeResultTypeDef](./type_defs.md#subscriberesulttypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates a set of provided tags with a notification rule.
@@ -337,6 +372,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
+
+<a id="unsubscribe"></a>
 
 ### unsubscribe
 
@@ -360,6 +397,8 @@ Keyword-only arguments:
 
 Returns [UnsubscribeResultTypeDef](./type_defs.md#unsubscriberesulttypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the association between one or more provided tags and a notification
@@ -380,6 +419,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_notification_rule"></a>
 
 ### update_notification_rule
 
@@ -405,6 +446,8 @@ Keyword-only arguments:
 - `DetailType`: [DetailTypeType](./literals.md#detailtypetype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-iotfleethub-module"></a>
+
 # Literals for boto3 IoTFleetHub module
 
 > [Index](..) > [IoTFleetHub](.) > Literals
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
 type annotations stubs module
-[mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
+[mypy-boto3-iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
 
 - [Literals for boto3 IoTFleetHub module](#literals-for-boto3-iotfleethub-module)
   - [ApplicationStateType](#applicationstatetype)
   - [ListApplicationsPaginatorName](#listapplicationspaginatorname)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="applicationstatetype"></a>
 
 ## ApplicationStateType
 
@@ -27,6 +31,8 @@ Values:
 - `DELETE_FAILED`
 - `DELETING`
 
+<a id="listapplicationspaginatorname"></a>
+
 ## ListApplicationsPaginatorName
 
 ```python
@@ -36,6 +42,8 @@ from mypy_boto3_iotfleethub.literals import ListApplicationsPaginatorName
 Values:
 
 - `list_applications`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -344,6 +352,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

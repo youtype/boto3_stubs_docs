@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-groundstation-module"></a>
+
 # Paginators for boto3 GroundStation module
 
 > [Index](..) > [GroundStation](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
 type annotations stubs module
-[mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+[mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 - [Paginators for boto3 GroundStation module](#paginators-for-boto3-groundstation-module)
   - [ListConfigsPaginator](#listconfigspaginator)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [ListMissionProfilesPaginator](#listmissionprofilespaginator)
   - [ListSatellitesPaginator](#listsatellitespaginator)
 
+<a id="listconfigspaginator"></a>
+
 ## ListConfigsPaginator
 
 Type annotations for
@@ -23,10 +27,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_groundstation.paginator import ListConfigsPaginator
 
 def get_list_configs_paginator() -> ListConfigsPaginator:
-    return boto3.client("groundstation").get_paginator("list_configs")
+    return Session().client("groundstation").get_paginator("list_configs")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `ListConfigsPaginator.paginate` method:
 `ListConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef)\].
 
+<a id="listcontactspaginator"></a>
+
 ## ListContactsPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_groundstation.paginator import ListContactsPaginator
 
 def get_list_contacts_paginator() -> ListContactsPaginator:
-    return boto3.client("groundstation").get_paginator("list_contacts")
+    return Session().client("groundstation").get_paginator("list_contacts")
 ```
 
 Boto3 documentation:
@@ -73,6 +83,8 @@ Arguments for `ListContactsPaginator.paginate` method:
 `ListContactsPaginator.paginate` returns
 `_PageIterator`\[[ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef)\].
 
+<a id="listdataflowendpointgroupspaginator"></a>
+
 ## ListDataflowEndpointGroupsPaginator
 
 Type annotations for
@@ -81,10 +93,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_groundstation.paginator import ListDataflowEndpointGroupsPaginator
 
 def get_list_dataflow_endpoint_groups_paginator() -> ListDataflowEndpointGroupsPaginator:
-    return boto3.client("groundstation").get_paginator("list_dataflow_endpoint_groups")
+    return Session().client("groundstation").get_paginator("list_dataflow_endpoint_groups")
 ```
 
 Boto3 documentation:
@@ -98,6 +112,8 @@ Arguments for `ListDataflowEndpointGroupsPaginator.paginate` method:
 `ListDataflowEndpointGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef)\].
 
+<a id="listgroundstationspaginator"></a>
+
 ## ListGroundStationsPaginator
 
 Type annotations for
@@ -106,10 +122,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_groundstation.paginator import ListGroundStationsPaginator
 
 def get_list_ground_stations_paginator() -> ListGroundStationsPaginator:
-    return boto3.client("groundstation").get_paginator("list_ground_stations")
+    return Session().client("groundstation").get_paginator("list_ground_stations")
 ```
 
 Boto3 documentation:
@@ -124,6 +142,8 @@ Arguments for `ListGroundStationsPaginator.paginate` method:
 `ListGroundStationsPaginator.paginate` returns
 `_PageIterator`\[[ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef)\].
 
+<a id="listmissionprofilespaginator"></a>
+
 ## ListMissionProfilesPaginator
 
 Type annotations for
@@ -132,10 +152,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_groundstation.paginator import ListMissionProfilesPaginator
 
 def get_list_mission_profiles_paginator() -> ListMissionProfilesPaginator:
-    return boto3.client("groundstation").get_paginator("list_mission_profiles")
+    return Session().client("groundstation").get_paginator("list_mission_profiles")
 ```
 
 Boto3 documentation:
@@ -149,6 +171,8 @@ Arguments for `ListMissionProfilesPaginator.paginate` method:
 `ListMissionProfilesPaginator.paginate` returns
 `_PageIterator`\[[ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef)\].
 
+<a id="listsatellitespaginator"></a>
+
 ## ListSatellitesPaginator
 
 Type annotations for
@@ -157,10 +181,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_groundstation.paginator import ListSatellitesPaginator
 
 def get_list_satellites_paginator() -> ListSatellitesPaginator:
-    return boto3.client("groundstation").get_paginator("list_satellites")
+    return Session().client("groundstation").get_paginator("list_satellites")
 ```
 
 Boto3 documentation:

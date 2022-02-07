@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iottwinmaker-module"></a>
+
 # Typed dictionaries for boto3 IoTTwinMaker module
 
 > [Index](..) > [IoTTwinMaker](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
 type annotations stubs module
-[mypy_boto3_iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
+[mypy-boto3-iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
 
 - [Typed dictionaries for boto3 IoTTwinMaker module](#typed-dictionaries-for-boto3-iottwinmaker-module)
   - [BatchPutPropertyErrorEntryTypeDef](#batchputpropertyerrorentrytypedef)
@@ -91,6 +93,8 @@ type annotations stubs module
   - [UpdateWorkspaceResponseTypeDef](#updateworkspaceresponsetypedef)
   - [WorkspaceSummaryTypeDef](#workspacesummarytypedef)
 
+<a id="batchputpropertyerrorentrytypedef"></a>
+
 ## BatchPutPropertyErrorEntryTypeDef
 
 ```python
@@ -101,6 +105,8 @@ Required fields:
 
 - `errors`:
   `List`\[[BatchPutPropertyErrorTypeDef](./type_defs.md#batchputpropertyerrortypedef)\]
+
+<a id="batchputpropertyerrortypedef"></a>
 
 ## BatchPutPropertyErrorTypeDef
 
@@ -115,6 +121,8 @@ Required fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
+<a id="batchputpropertyvaluesrequestrequesttypedef"></a>
+
 ## BatchPutPropertyValuesRequestRequestTypeDef
 
 ```python
@@ -126,6 +134,8 @@ Required fields:
 - `entries`:
   `Sequence`\[[PropertyValueEntryTypeDef](./type_defs.md#propertyvalueentrytypedef)\]
 - `workspaceId`: `str`
+
+<a id="batchputpropertyvaluesresponsetypedef"></a>
 
 ## BatchPutPropertyValuesResponseTypeDef
 
@@ -140,6 +150,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="componentrequesttypedef"></a>
+
 ## ComponentRequestTypeDef
 
 ```python
@@ -152,6 +164,8 @@ Optional fields:
 - `description`: `str`
 - `properties`: `Mapping`\[`str`,
   [PropertyRequestTypeDef](./type_defs.md#propertyrequesttypedef)\]
+
+<a id="componentresponsetypedef"></a>
 
 ## ComponentResponseTypeDef
 
@@ -168,6 +182,8 @@ Optional fields:
 - `properties`: `Dict`\[`str`,
   [PropertyResponseTypeDef](./type_defs.md#propertyresponsetypedef)\]
 - `status`: [StatusTypeDef](./type_defs.md#statustypedef)
+
+<a id="componenttypesummarytypedef"></a>
 
 ## ComponentTypeSummaryTypeDef
 
@@ -187,6 +203,8 @@ Optional fields:
 - `description`: `str`
 - `status`: [StatusTypeDef](./type_defs.md#statustypedef)
 
+<a id="componentupdaterequesttypedef"></a>
+
 ## ComponentUpdateRequestTypeDef
 
 ```python
@@ -201,6 +219,8 @@ Optional fields:
   [PropertyRequestTypeDef](./type_defs.md#propertyrequesttypedef)\]
 - `updateType`:
   [ComponentUpdateTypeType](./literals.md#componentupdatetypetype)
+
+<a id="createcomponenttyperequestrequesttypedef"></a>
 
 ## CreateComponentTypeRequestRequestTypeDef
 
@@ -224,6 +244,8 @@ Optional fields:
   [PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef)\]
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createcomponenttyperesponsetypedef"></a>
+
 ## CreateComponentTypeResponseTypeDef
 
 ```python
@@ -237,6 +259,8 @@ Required fields:
 - `state`: [StateType](./literals.md#statetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createentityrequestrequesttypedef"></a>
 
 ## CreateEntityRequestRequestTypeDef
 
@@ -258,6 +282,8 @@ Optional fields:
 - `parentEntityId`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createentityresponsetypedef"></a>
+
 ## CreateEntityResponseTypeDef
 
 ```python
@@ -272,6 +298,8 @@ Required fields:
 - `state`: [StateType](./literals.md#statetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createscenerequestrequesttypedef"></a>
 
 ## CreateSceneRequestRequestTypeDef
 
@@ -291,6 +319,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createsceneresponsetypedef"></a>
+
 ## CreateSceneResponseTypeDef
 
 ```python
@@ -303,6 +333,8 @@ Required fields:
 - `creationDateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createworkspacerequestrequesttypedef"></a>
 
 ## CreateWorkspaceRequestRequestTypeDef
 
@@ -321,6 +353,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createworkspaceresponsetypedef"></a>
+
 ## CreateWorkspaceResponseTypeDef
 
 ```python
@@ -334,6 +368,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dataconnectortypedef"></a>
+
 ## DataConnectorTypeDef
 
 ```python
@@ -344,6 +380,8 @@ Optional fields:
 
 - `isNative`: `bool`
 - `lambda`: [LambdaFunctionTypeDef](./type_defs.md#lambdafunctiontypedef)
+
+<a id="datatypetypedef"></a>
 
 ## DataTypeTypeDef
 
@@ -362,6 +400,8 @@ Optional fields:
 - `nestedType`: [DataTypeTypeDef](./type_defs.md#datatypetypedef)
 - `relationship`: [RelationshipTypeDef](./type_defs.md#relationshiptypedef)
 - `unitOfMeasure`: `str`
+
+<a id="datavaluetypedef"></a>
 
 ## DataValueTypeDef
 
@@ -384,6 +424,8 @@ Optional fields:
   [RelationshipValueTypeDef](./type_defs.md#relationshipvaluetypedef)
 - `stringValue`: `str`
 
+<a id="deletecomponenttyperequestrequesttypedef"></a>
+
 ## DeleteComponentTypeRequestRequestTypeDef
 
 ```python
@@ -394,6 +436,8 @@ Required fields:
 
 - `componentTypeId`: `str`
 - `workspaceId`: `str`
+
+<a id="deletecomponenttyperesponsetypedef"></a>
 
 ## DeleteComponentTypeResponseTypeDef
 
@@ -406,6 +450,8 @@ Required fields:
 - `state`: [StateType](./literals.md#statetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteentityrequestrequesttypedef"></a>
 
 ## DeleteEntityRequestRequestTypeDef
 
@@ -422,6 +468,8 @@ Optional fields:
 
 - `isRecursive`: `bool`
 
+<a id="deleteentityresponsetypedef"></a>
+
 ## DeleteEntityResponseTypeDef
 
 ```python
@@ -434,6 +482,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletescenerequestrequesttypedef"></a>
+
 ## DeleteSceneRequestRequestTypeDef
 
 ```python
@@ -445,6 +495,8 @@ Required fields:
 - `sceneId`: `str`
 - `workspaceId`: `str`
 
+<a id="deleteworkspacerequestrequesttypedef"></a>
+
 ## DeleteWorkspaceRequestRequestTypeDef
 
 ```python
@@ -454,6 +506,8 @@ from mypy_boto3_iottwinmaker.type_defs import DeleteWorkspaceRequestRequestTypeD
 Required fields:
 
 - `workspaceId`: `str`
+
+<a id="entitypropertyreferencetypedef"></a>
 
 ## EntityPropertyReferenceTypeDef
 
@@ -470,6 +524,8 @@ Optional fields:
 - `componentName`: `str`
 - `entityId`: `str`
 - `externalIdProperty`: `Mapping`\[`str`, `str`\]
+
+<a id="entitysummarytypedef"></a>
 
 ## EntitySummaryTypeDef
 
@@ -492,6 +548,8 @@ Optional fields:
 - `hasChildEntities`: `bool`
 - `parentEntityId`: `str`
 
+<a id="errordetailstypedef"></a>
+
 ## ErrorDetailsTypeDef
 
 ```python
@@ -502,6 +560,8 @@ Optional fields:
 
 - `code`: [ErrorCodeType](./literals.md#errorcodetype)
 - `message`: `str`
+
+<a id="functionrequesttypedef"></a>
 
 ## FunctionRequestTypeDef
 
@@ -514,6 +574,8 @@ Optional fields:
 - `implementedBy`: [DataConnectorTypeDef](./type_defs.md#dataconnectortypedef)
 - `requiredProperties`: `Sequence`\[`str`\]
 - `scope`: [ScopeType](./literals.md#scopetype)
+
+<a id="functionresponsetypedef"></a>
 
 ## FunctionResponseTypeDef
 
@@ -528,6 +590,8 @@ Optional fields:
 - `requiredProperties`: `List`\[`str`\]
 - `scope`: [ScopeType](./literals.md#scopetype)
 
+<a id="getcomponenttyperequestrequesttypedef"></a>
+
 ## GetComponentTypeRequestRequestTypeDef
 
 ```python
@@ -538,6 +602,8 @@ Required fields:
 
 - `componentTypeId`: `str`
 - `workspaceId`: `str`
+
+<a id="getcomponenttyperesponsetypedef"></a>
 
 ## GetComponentTypeResponseTypeDef
 
@@ -565,6 +631,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getentityrequestrequesttypedef"></a>
+
 ## GetEntityRequestRequestTypeDef
 
 ```python
@@ -575,6 +643,8 @@ Required fields:
 
 - `entityId`: `str`
 - `workspaceId`: `str`
+
+<a id="getentityresponsetypedef"></a>
 
 ## GetEntityResponseTypeDef
 
@@ -598,6 +668,8 @@ Required fields:
 - `workspaceId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getpropertyvaluehistoryrequestrequesttypedef"></a>
 
 ## GetPropertyValueHistoryRequestRequestTypeDef
 
@@ -625,6 +697,8 @@ Optional fields:
 - `propertyFilters`:
   `Sequence`\[[PropertyFilterTypeDef](./type_defs.md#propertyfiltertypedef)\]
 
+<a id="getpropertyvaluehistoryresponsetypedef"></a>
+
 ## GetPropertyValueHistoryResponseTypeDef
 
 ```python
@@ -638,6 +712,8 @@ Required fields:
   `List`\[[PropertyValueHistoryTypeDef](./type_defs.md#propertyvaluehistorytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getpropertyvaluerequestrequesttypedef"></a>
 
 ## GetPropertyValueRequestRequestTypeDef
 
@@ -656,6 +732,8 @@ Optional fields:
 - `componentTypeId`: `str`
 - `entityId`: `str`
 
+<a id="getpropertyvalueresponsetypedef"></a>
+
 ## GetPropertyValueResponseTypeDef
 
 ```python
@@ -669,6 +747,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getscenerequestrequesttypedef"></a>
+
 ## GetSceneRequestRequestTypeDef
 
 ```python
@@ -679,6 +759,8 @@ Required fields:
 
 - `sceneId`: `str`
 - `workspaceId`: `str`
+
+<a id="getsceneresponsetypedef"></a>
 
 ## GetSceneResponseTypeDef
 
@@ -699,6 +781,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getworkspacerequestrequesttypedef"></a>
+
 ## GetWorkspaceRequestRequestTypeDef
 
 ```python
@@ -708,6 +792,8 @@ from mypy_boto3_iottwinmaker.type_defs import GetWorkspaceRequestRequestTypeDef
 Required fields:
 
 - `workspaceId`: `str`
+
+<a id="getworkspaceresponsetypedef"></a>
 
 ## GetWorkspaceResponseTypeDef
 
@@ -727,6 +813,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="interpolationparameterstypedef"></a>
+
 ## InterpolationParametersTypeDef
 
 ```python
@@ -739,6 +827,8 @@ Optional fields:
   [InterpolationTypeType](./literals.md#interpolationtypetype))
 - `intervalInSeconds`: `int`
 
+<a id="lambdafunctiontypedef"></a>
+
 ## LambdaFunctionTypeDef
 
 ```python
@@ -748,6 +838,8 @@ from mypy_boto3_iottwinmaker.type_defs import LambdaFunctionTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="listcomponenttypesfiltertypedef"></a>
 
 ## ListComponentTypesFilterTypeDef
 
@@ -760,6 +852,8 @@ Optional fields:
 - `extendsFrom`: `str`
 - `isAbstract`: `bool`
 - `namespace`: `str`
+
+<a id="listcomponenttypesrequestrequesttypedef"></a>
 
 ## ListComponentTypesRequestRequestTypeDef
 
@@ -778,6 +872,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listcomponenttypesresponsetypedef"></a>
+
 ## ListComponentTypesResponseTypeDef
 
 ```python
@@ -794,6 +890,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listentitiesfiltertypedef"></a>
+
 ## ListEntitiesFilterTypeDef
 
 ```python
@@ -804,6 +902,8 @@ Optional fields:
 
 - `componentTypeId`: `str`
 - `parentEntityId`: `str`
+
+<a id="listentitiesrequestrequesttypedef"></a>
 
 ## ListEntitiesRequestRequestTypeDef
 
@@ -822,6 +922,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listentitiesresponsetypedef"></a>
+
 ## ListEntitiesResponseTypeDef
 
 ```python
@@ -835,6 +937,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listscenesrequestrequesttypedef"></a>
 
 ## ListScenesRequestRequestTypeDef
 
@@ -851,6 +955,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listscenesresponsetypedef"></a>
+
 ## ListScenesResponseTypeDef
 
 ```python
@@ -864,6 +970,8 @@ Required fields:
   `List`\[[SceneSummaryTypeDef](./type_defs.md#scenesummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -880,6 +988,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -893,6 +1003,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listworkspacesrequestrequesttypedef"></a>
+
 ## ListWorkspacesRequestRequestTypeDef
 
 ```python
@@ -903,6 +1015,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listworkspacesresponsetypedef"></a>
 
 ## ListWorkspacesResponseTypeDef
 
@@ -917,6 +1031,8 @@ Required fields:
   `List`\[[WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="parententityupdaterequesttypedef"></a>
 
 ## ParentEntityUpdateRequestTypeDef
 
@@ -933,6 +1049,8 @@ Optional fields:
 
 - `parentEntityId`: `str`
 
+<a id="propertydefinitionrequesttypedef"></a>
+
 ## PropertyDefinitionRequestTypeDef
 
 ```python
@@ -948,6 +1066,8 @@ Optional fields:
 - `isRequiredInEntity`: `bool`
 - `isStoredExternally`: `bool`
 - `isTimeSeries`: `bool`
+
+<a id="propertydefinitionresponsetypedef"></a>
 
 ## PropertyDefinitionResponseTypeDef
 
@@ -971,6 +1091,8 @@ Optional fields:
 - `configuration`: `Dict`\[`str`, `str`\]
 - `defaultValue`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
 
+<a id="propertyfiltertypedef"></a>
+
 ## PropertyFilterTypeDef
 
 ```python
@@ -982,6 +1104,8 @@ Optional fields:
 - `operator`: `str`
 - `propertyName`: `str`
 - `value`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
+
+<a id="propertylatestvaluetypedef"></a>
 
 ## PropertyLatestValueTypeDef
 
@@ -998,6 +1122,8 @@ Optional fields:
 
 - `propertyValue`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
 
+<a id="propertyrequesttypedef"></a>
+
 ## PropertyRequestTypeDef
 
 ```python
@@ -1011,6 +1137,8 @@ Optional fields:
 - `updateType`: [PropertyUpdateTypeType](./literals.md#propertyupdatetypetype)
 - `value`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
 
+<a id="propertyresponsetypedef"></a>
+
 ## PropertyResponseTypeDef
 
 ```python
@@ -1022,6 +1150,8 @@ Optional fields:
 - `definition`:
   [PropertyDefinitionResponseTypeDef](./type_defs.md#propertydefinitionresponsetypedef)
 - `value`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
+
+<a id="propertyvalueentrytypedef"></a>
 
 ## PropertyValueEntryTypeDef
 
@@ -1039,6 +1169,8 @@ Optional fields:
 - `propertyValues`:
   `Sequence`\[[PropertyValueTypeDef](./type_defs.md#propertyvaluetypedef)\]
 
+<a id="propertyvaluehistorytypedef"></a>
+
 ## PropertyValueHistoryTypeDef
 
 ```python
@@ -1055,6 +1187,8 @@ Optional fields:
 - `values`:
   `List`\[[PropertyValueTypeDef](./type_defs.md#propertyvaluetypedef)\]
 
+<a id="propertyvaluetypedef"></a>
+
 ## PropertyValueTypeDef
 
 ```python
@@ -1065,6 +1199,8 @@ Required fields:
 
 - `timestamp`: `Union`\[`datetime`, `str`\]
 - `value`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
+
+<a id="relationshiptypedef"></a>
 
 ## RelationshipTypeDef
 
@@ -1077,6 +1213,8 @@ Optional fields:
 - `relationshipType`: `str`
 - `targetComponentTypeId`: `str`
 
+<a id="relationshipvaluetypedef"></a>
+
 ## RelationshipValueTypeDef
 
 ```python
@@ -1087,6 +1225,8 @@ Optional fields:
 
 - `targetComponentName`: `str`
 - `targetEntityId`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1101,6 +1241,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="scenesummarytypedef"></a>
 
 ## SceneSummaryTypeDef
 
@@ -1120,6 +1262,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="statustypedef"></a>
+
 ## StatusTypeDef
 
 ```python
@@ -1130,6 +1274,8 @@ Optional fields:
 
 - `error`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
 - `state`: [StateType](./literals.md#statetype)
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1142,6 +1288,8 @@ Required fields:
 - `resourceARN`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1152,6 +1300,8 @@ Required fields:
 
 - `resourceARN`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatecomponenttyperequestrequesttypedef"></a>
 
 ## UpdateComponentTypeRequestRequestTypeDef
 
@@ -1174,6 +1324,8 @@ Optional fields:
 - `propertyDefinitions`: `Mapping`\[`str`,
   [PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef)\]
 
+<a id="updatecomponenttyperesponsetypedef"></a>
+
 ## UpdateComponentTypeResponseTypeDef
 
 ```python
@@ -1188,6 +1340,8 @@ Required fields:
 - `workspaceId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateentityrequestrequesttypedef"></a>
 
 ## UpdateEntityRequestRequestTypeDef
 
@@ -1209,6 +1363,8 @@ Optional fields:
 - `parentEntityUpdate`:
   [ParentEntityUpdateRequestTypeDef](./type_defs.md#parententityupdaterequesttypedef)
 
+<a id="updateentityresponsetypedef"></a>
+
 ## UpdateEntityResponseTypeDef
 
 ```python
@@ -1221,6 +1377,8 @@ Required fields:
 - `updateDateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatescenerequestrequesttypedef"></a>
 
 ## UpdateSceneRequestRequestTypeDef
 
@@ -1239,6 +1397,8 @@ Optional fields:
 - `contentLocation`: `str`
 - `description`: `str`
 
+<a id="updatesceneresponsetypedef"></a>
+
 ## UpdateSceneResponseTypeDef
 
 ```python
@@ -1250,6 +1410,8 @@ Required fields:
 - `updateDateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateworkspacerequestrequesttypedef"></a>
 
 ## UpdateWorkspaceRequestRequestTypeDef
 
@@ -1266,6 +1428,8 @@ Optional fields:
 - `description`: `str`
 - `role`: `str`
 
+<a id="updateworkspaceresponsetypedef"></a>
+
 ## UpdateWorkspaceResponseTypeDef
 
 ```python
@@ -1277,6 +1441,8 @@ Required fields:
 - `updateDateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="workspacesummarytypedef"></a>
 
 ## WorkspaceSummaryTypeDef
 

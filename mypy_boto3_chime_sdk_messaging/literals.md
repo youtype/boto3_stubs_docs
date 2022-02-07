@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-chimesdkmessaging-module"></a>
+
 # Literals for boto3 ChimeSDKMessaging module
 
 > [Index](..) > [ChimeSDKMessaging](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging)
 type annotations stubs module
-[mypy_boto3_chime_sdk_messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
+[mypy-boto3-chime-sdk-messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
 
 - [Literals for boto3 ChimeSDKMessaging module](#literals-for-boto3-chimesdkmessaging-module)
   - [AllowNotificationsType](#allownotificationstype)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [SortOrderType](#sortordertype)
   - [ServiceName](#servicename)
 
+<a id="allownotificationstype"></a>
+
 ## AllowNotificationsType
 
 ```python
@@ -34,6 +38,8 @@ Values:
 - `FILTERED`
 - `NONE`
 
+<a id="channelmembershiptypetype"></a>
+
 ## ChannelMembershipTypeType
 
 ```python
@@ -45,6 +51,8 @@ Values:
 - `DEFAULT`
 - `HIDDEN`
 
+<a id="channelmessagepersistencetypetype"></a>
+
 ## ChannelMessagePersistenceTypeType
 
 ```python
@@ -55,6 +63,8 @@ Values:
 
 - `NON_PERSISTENT`
 - `PERSISTENT`
+
+<a id="channelmessagestatustype"></a>
 
 ## ChannelMessageStatusType
 
@@ -69,6 +79,8 @@ Values:
 - `PENDING`
 - `SENT`
 
+<a id="channelmessagetypetype"></a>
+
 ## ChannelMessageTypeType
 
 ```python
@@ -79,6 +91,8 @@ Values:
 
 - `CONTROL`
 - `STANDARD`
+
+<a id="channelmodetype"></a>
 
 ## ChannelModeType
 
@@ -91,6 +105,8 @@ Values:
 - `RESTRICTED`
 - `UNRESTRICTED`
 
+<a id="channelprivacytype"></a>
+
 ## ChannelPrivacyType
 
 ```python
@@ -101,6 +117,8 @@ Values:
 
 - `PRIVATE`
 - `PUBLIC`
+
+<a id="errorcodetype"></a>
 
 ## ErrorCodeType
 
@@ -126,6 +144,8 @@ Values:
 - `Unprocessable`
 - `VoiceConnectorGroupAssociationsExist`
 
+<a id="fallbackactiontype"></a>
+
 ## FallbackActionType
 
 ```python
@@ -137,6 +157,8 @@ Values:
 - `ABORT`
 - `CONTINUE`
 
+<a id="invocationtypetype"></a>
+
 ## InvocationTypeType
 
 ```python
@@ -146,6 +168,8 @@ from mypy_boto3_chime_sdk_messaging.literals import InvocationTypeType
 Values:
 
 - `ASYNC`
+
+<a id="pushnotificationtypetype"></a>
 
 ## PushNotificationTypeType
 
@@ -158,6 +182,8 @@ Values:
 - `DEFAULT`
 - `VOIP`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -168,6 +194,8 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

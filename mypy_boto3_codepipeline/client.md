@@ -1,3 +1,5 @@
+<a id="codepipelineclient-for-boto3-codepipeline-module"></a>
+
 # CodePipelineClient for boto3 CodePipeline module
 
 > [Index](..) > [CodePipeline](.) > CodePipelineClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module
-[mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
+[mypy-boto3-codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
 - [CodePipelineClient for boto3 CodePipeline module](#codepipelineclient-for-boto3-codepipeline-module)
   - [CodePipelineClient](#codepipelineclient)
@@ -55,6 +57,8 @@ type annotations stubs module
     - [update_pipeline](#update_pipeline)
     - [get_paginator](#get_paginator)
 
+<a id="codepipelineclient"></a>
+
 ## CodePipelineClient
 
 Type annotations for `boto3.client("codepipeline")`
@@ -62,14 +66,17 @@ Type annotations for `boto3.client("codepipeline")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_codepipeline.client import CodePipelineClient
 
 def get_codepipeline_client() -> CodePipelineClient:
-    return boto3.client("codepipeline")
+    return Session().client("codepipeline")
 ```
 
 Boto3 documentation:
 [CodePipeline.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -124,7 +131,11 @@ Exceptions:
 - `Exceptions.ValidationException`
 - `Exceptions.WebhookNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -136,6 +147,8 @@ Boto3 documentation:
 [CodePipeline.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="acknowledge_job"></a>
 
 ### acknowledge_job
 
@@ -157,6 +170,8 @@ Keyword-only arguments:
 
 Returns
 [AcknowledgeJobOutputTypeDef](./type_defs.md#acknowledgejoboutputtypedef).
+
+<a id="acknowledge_third_party_job"></a>
 
 ### acknowledge_third_party_job
 
@@ -180,6 +195,8 @@ Keyword-only arguments:
 Returns
 [AcknowledgeThirdPartyJobOutputTypeDef](./type_defs.md#acknowledgethirdpartyjoboutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -194,6 +211,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_custom_action_type"></a>
 
 ### create_custom_action_type
 
@@ -228,6 +247,8 @@ Keyword-only arguments:
 Returns
 [CreateCustomActionTypeOutputTypeDef](./type_defs.md#createcustomactiontypeoutputtypedef).
 
+<a id="create_pipeline"></a>
+
 ### create_pipeline
 
 Creates a pipeline.
@@ -250,6 +271,8 @@ Keyword-only arguments:
 Returns
 [CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef).
 
+<a id="delete_custom_action_type"></a>
+
 ### delete_custom_action_type
 
 Marks a custom action as deleted.
@@ -270,6 +293,8 @@ Keyword-only arguments:
 - `provider`: `str` *(required)*
 - `version`: `str` *(required)*
 
+<a id="delete_pipeline"></a>
+
 ### delete_pipeline
 
 Deletes the specified pipeline.
@@ -285,6 +310,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
+
+<a id="delete_webhook"></a>
 
 ### delete_webhook
 
@@ -303,6 +330,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="deregister_webhook_with_third_party"></a>
 
 ### deregister_webhook_with_third_party
 
@@ -323,6 +352,8 @@ Keyword-only arguments:
 - `webhookName`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disable_stage_transition"></a>
 
 ### disable_stage_transition
 
@@ -346,6 +377,8 @@ Keyword-only arguments:
   [StageTransitionTypeType](./literals.md#stagetransitiontypetype) *(required)*
 - `reason`: `str` *(required)*
 
+<a id="enable_stage_transition"></a>
+
 ### enable_stage_transition
 
 Enables artifacts in a pipeline to transition to a stage in a pipeline.
@@ -366,6 +399,8 @@ Keyword-only arguments:
 - `transitionType`:
   [StageTransitionTypeType](./literals.md#stagetransitiontypetype) *(required)*
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -384,6 +419,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_action_type"></a>
 
 ### get_action_type
 
@@ -409,6 +446,8 @@ Keyword-only arguments:
 Returns
 [GetActionTypeOutputTypeDef](./type_defs.md#getactiontypeoutputtypedef).
 
+<a id="get_job_details"></a>
+
 ### get_job_details
 
 Returns information about a job.
@@ -428,6 +467,8 @@ Keyword-only arguments:
 Returns
 [GetJobDetailsOutputTypeDef](./type_defs.md#getjobdetailsoutputtypedef).
 
+<a id="get_pipeline"></a>
+
 ### get_pipeline
 
 Returns the metadata, structure, stages, and actions of a pipeline.
@@ -446,6 +487,8 @@ Keyword-only arguments:
 - `version`: `int`
 
 Returns [GetPipelineOutputTypeDef](./type_defs.md#getpipelineoutputtypedef).
+
+<a id="get_pipeline_execution"></a>
 
 ### get_pipeline_execution
 
@@ -470,6 +513,8 @@ Keyword-only arguments:
 Returns
 [GetPipelineExecutionOutputTypeDef](./type_defs.md#getpipelineexecutionoutputtypedef).
 
+<a id="get_pipeline_state"></a>
+
 ### get_pipeline_state
 
 Returns information about the state of a pipeline, including the stages and
@@ -489,6 +534,8 @@ Keyword-only arguments:
 
 Returns
 [GetPipelineStateOutputTypeDef](./type_defs.md#getpipelinestateoutputtypedef).
+
+<a id="get_third_party_job_details"></a>
 
 ### get_third_party_job_details
 
@@ -510,6 +557,8 @@ Keyword-only arguments:
 
 Returns
 [GetThirdPartyJobDetailsOutputTypeDef](./type_defs.md#getthirdpartyjobdetailsoutputtypedef).
+
+<a id="list_action_executions"></a>
 
 ### list_action_executions
 
@@ -535,6 +584,8 @@ Keyword-only arguments:
 Returns
 [ListActionExecutionsOutputTypeDef](./type_defs.md#listactionexecutionsoutputtypedef).
 
+<a id="list_action_types"></a>
+
 ### list_action_types
 
 Gets a summary of all AWS CodePipeline action types associated with your
@@ -556,6 +607,8 @@ Keyword-only arguments:
 
 Returns
 [ListActionTypesOutputTypeDef](./type_defs.md#listactiontypesoutputtypedef).
+
+<a id="list_pipeline_executions"></a>
 
 ### list_pipeline_executions
 
@@ -579,6 +632,8 @@ Keyword-only arguments:
 Returns
 [ListPipelineExecutionsOutputTypeDef](./type_defs.md#listpipelineexecutionsoutputtypedef).
 
+<a id="list_pipelines"></a>
+
 ### list_pipelines
 
 Gets a summary of all of the pipelines associated with your account.
@@ -598,6 +653,8 @@ Keyword-only arguments:
 
 Returns
 [ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -622,6 +679,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
+<a id="list_webhooks"></a>
+
 ### list_webhooks
 
 Gets a listing of all the webhooks in this AWS Region for this account.
@@ -640,6 +699,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListWebhooksOutputTypeDef](./type_defs.md#listwebhooksoutputtypedef).
+
+<a id="poll_for_jobs"></a>
 
 ### poll_for_jobs
 
@@ -661,6 +722,8 @@ Keyword-only arguments:
 - `queryParam`: `Mapping`\[`str`, `str`\]
 
 Returns [PollForJobsOutputTypeDef](./type_defs.md#pollforjobsoutputtypedef).
+
+<a id="poll_for_third_party_jobs"></a>
 
 ### poll_for_third_party_jobs
 
@@ -684,6 +747,8 @@ Keyword-only arguments:
 Returns
 [PollForThirdPartyJobsOutputTypeDef](./type_defs.md#pollforthirdpartyjobsoutputtypedef).
 
+<a id="put_action_revision"></a>
+
 ### put_action_revision
 
 Provides information to AWS CodePipeline about new revisions to a source.
@@ -706,6 +771,8 @@ Keyword-only arguments:
 
 Returns
 [PutActionRevisionOutputTypeDef](./type_defs.md#putactionrevisionoutputtypedef).
+
+<a id="put_approval_result"></a>
 
 ### put_approval_result
 
@@ -731,6 +798,8 @@ Keyword-only arguments:
 Returns
 [PutApprovalResultOutputTypeDef](./type_defs.md#putapprovalresultoutputtypedef).
 
+<a id="put_job_failure_result"></a>
+
 ### put_job_failure_result
 
 Represents the failure of a job as returned to the pipeline by a job worker.
@@ -749,6 +818,8 @@ Keyword-only arguments:
 - `jobId`: `str` *(required)*
 - `failureDetails`:
   [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) *(required)*
+
+<a id="put_job_success_result"></a>
 
 ### put_job_success_result
 
@@ -773,6 +844,8 @@ Keyword-only arguments:
   [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
 - `outputVariables`: `Mapping`\[`str`, `str`\]
 
+<a id="put_third_party_job_failure_result"></a>
+
 ### put_third_party_job_failure_result
 
 Represents the failure of a third party job as returned to the pipeline by a
@@ -793,6 +866,8 @@ Keyword-only arguments:
 - `clientToken`: `str` *(required)*
 - `failureDetails`:
   [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) *(required)*
+
+<a id="put_third_party_job_success_result"></a>
 
 ### put_third_party_job_success_result
 
@@ -818,6 +893,8 @@ Keyword-only arguments:
 - `executionDetails`:
   [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
 
+<a id="put_webhook"></a>
+
 ### put_webhook
 
 Defines a webhook and returns a unique webhook URL generated by CodePipeline.
@@ -839,6 +916,8 @@ Keyword-only arguments:
 
 Returns [PutWebhookOutputTypeDef](./type_defs.md#putwebhookoutputtypedef).
 
+<a id="register_webhook_with_third_party"></a>
+
 ### register_webhook_with_third_party
 
 Configures a connection between the webhook that was created and the external
@@ -858,6 +937,8 @@ Keyword-only arguments:
 - `webhookName`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="retry_stage_execution"></a>
 
 ### retry_stage_execution
 
@@ -883,6 +964,8 @@ Keyword-only arguments:
 Returns
 [RetryStageExecutionOutputTypeDef](./type_defs.md#retrystageexecutionoutputtypedef).
 
+<a id="start_pipeline_execution"></a>
+
 ### start_pipeline_execution
 
 Starts the specified pipeline.
@@ -903,6 +986,8 @@ Keyword-only arguments:
 
 Returns
 [StartPipelineExecutionOutputTypeDef](./type_defs.md#startpipelineexecutionoutputtypedef).
+
+<a id="stop_pipeline_execution"></a>
 
 ### stop_pipeline_execution
 
@@ -927,6 +1012,8 @@ Keyword-only arguments:
 Returns
 [StopPipelineExecutionOutputTypeDef](./type_defs.md#stoppipelineexecutionoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds to or modifies the tags of the given resource.
@@ -945,6 +1032,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -965,6 +1054,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_action_type"></a>
+
 ### update_action_type
 
 Updates an action type that was created with any supported integration model,
@@ -983,6 +1074,8 @@ Keyword-only arguments:
 - `actionType`:
   [ActionTypeDeclarationTypeDef](./type_defs.md#actiontypedeclarationtypedef)
   *(required)*
+
+<a id="update_pipeline"></a>
 
 ### update_pipeline
 
@@ -1004,6 +1097,8 @@ Keyword-only arguments:
 
 Returns
 [UpdatePipelineOutputTypeDef](./type_defs.md#updatepipelineoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="codeartifactclient-for-boto3-codeartifact-module"></a>
+
 # CodeArtifactClient for boto3 CodeArtifact module
 
 > [Index](..) > [CodeArtifact](.) > CodeArtifactClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module
-[mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
+[mypy-boto3-codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 - [CodeArtifactClient for boto3 CodeArtifact module](#codeartifactclient-for-boto3-codeartifact-module)
   - [CodeArtifactClient](#codeartifactclient)
@@ -50,6 +52,8 @@ type annotations stubs module
     - [update_repository](#update_repository)
     - [get_paginator](#get_paginator)
 
+<a id="codeartifactclient"></a>
+
 ## CodeArtifactClient
 
 Type annotations for `boto3.client("codeartifact")`
@@ -57,14 +61,17 @@ Type annotations for `boto3.client("codeartifact")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_codeartifact.client import CodeArtifactClient
 
 def get_codeartifact_client() -> CodeArtifactClient:
-    return boto3.client("codeartifact")
+    return Session().client("codeartifact")
 ```
 
 Boto3 documentation:
 [CodeArtifact.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -89,7 +96,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -101,6 +112,8 @@ Boto3 documentation:
 [CodeArtifact.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_external_connection"></a>
 
 ### associate_external_connection
 
@@ -125,6 +138,8 @@ Keyword-only arguments:
 Returns
 [AssociateExternalConnectionResultTypeDef](./type_defs.md#associateexternalconnectionresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -139,6 +154,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="copy_package_versions"></a>
 
 ### copy_package_versions
 
@@ -171,6 +188,8 @@ Keyword-only arguments:
 Returns
 [CopyPackageVersionsResultTypeDef](./type_defs.md#copypackageversionsresulttypedef).
 
+<a id="create_domain"></a>
+
 ### create_domain
 
 Creates a domain.
@@ -190,6 +209,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
+
+<a id="create_repository"></a>
 
 ### create_repository
 
@@ -216,6 +237,8 @@ Keyword-only arguments:
 Returns
 [CreateRepositoryResultTypeDef](./type_defs.md#createrepositoryresulttypedef).
 
+<a id="delete_domain"></a>
+
 ### delete_domain
 
 Deletes a domain.
@@ -234,6 +257,8 @@ Keyword-only arguments:
 - `domainOwner`: `str`
 
 Returns [DeleteDomainResultTypeDef](./type_defs.md#deletedomainresulttypedef).
+
+<a id="delete_domain_permissions_policy"></a>
 
 ### delete_domain_permissions_policy
 
@@ -256,6 +281,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteDomainPermissionsPolicyResultTypeDef](./type_defs.md#deletedomainpermissionspolicyresulttypedef).
+
+<a id="delete_package_versions"></a>
 
 ### delete_package_versions
 
@@ -285,6 +312,8 @@ Keyword-only arguments:
 Returns
 [DeletePackageVersionsResultTypeDef](./type_defs.md#deletepackageversionsresulttypedef).
 
+<a id="delete_repository"></a>
+
 ### delete_repository
 
 Deletes a repository.
@@ -305,6 +334,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteRepositoryResultTypeDef](./type_defs.md#deleterepositoryresulttypedef).
+
+<a id="delete_repository_permissions_policy"></a>
 
 ### delete_repository_permissions_policy
 
@@ -329,6 +360,8 @@ Keyword-only arguments:
 Returns
 [DeleteRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#deleterepositorypermissionspolicyresulttypedef).
 
+<a id="describe_domain"></a>
+
 ### describe_domain
 
 Returns a
@@ -350,6 +383,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDomainResultTypeDef](./type_defs.md#describedomainresulttypedef).
+
+<a id="describe_package_version"></a>
 
 ### describe_package_version
 
@@ -379,6 +414,8 @@ Keyword-only arguments:
 Returns
 [DescribePackageVersionResultTypeDef](./type_defs.md#describepackageversionresulttypedef).
 
+<a id="describe_repository"></a>
+
 ### describe_repository
 
 Returns a `RepositoryDescription` object that contains detailed information
@@ -400,6 +437,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRepositoryResultTypeDef](./type_defs.md#describerepositoryresulttypedef).
+
+<a id="disassociate_external_connection"></a>
 
 ### disassociate_external_connection
 
@@ -423,6 +462,8 @@ Keyword-only arguments:
 
 Returns
 [DisassociateExternalConnectionResultTypeDef](./type_defs.md#disassociateexternalconnectionresulttypedef).
+
+<a id="dispose_package_versions"></a>
 
 ### dispose_package_versions
 
@@ -454,6 +495,8 @@ Keyword-only arguments:
 Returns
 [DisposePackageVersionsResultTypeDef](./type_defs.md#disposepackageversionsresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -472,6 +515,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_authorization_token"></a>
 
 ### get_authorization_token
 
@@ -496,6 +541,8 @@ Keyword-only arguments:
 Returns
 [GetAuthorizationTokenResultTypeDef](./type_defs.md#getauthorizationtokenresulttypedef).
 
+<a id="get_domain_permissions_policy"></a>
+
 ### get_domain_permissions_policy
 
 Returns the resource policy attached to the specified domain.
@@ -516,6 +563,8 @@ Keyword-only arguments:
 
 Returns
 [GetDomainPermissionsPolicyResultTypeDef](./type_defs.md#getdomainpermissionspolicyresulttypedef).
+
+<a id="get_package_version_asset"></a>
 
 ### get_package_version_asset
 
@@ -545,6 +594,8 @@ Keyword-only arguments:
 Returns
 [GetPackageVersionAssetResultTypeDef](./type_defs.md#getpackageversionassetresulttypedef).
 
+<a id="get_package_version_readme"></a>
+
 ### get_package_version_readme
 
 Gets the readme file or descriptive text for a package version.
@@ -571,6 +622,8 @@ Keyword-only arguments:
 Returns
 [GetPackageVersionReadmeResultTypeDef](./type_defs.md#getpackageversionreadmeresulttypedef).
 
+<a id="get_repository_endpoint"></a>
+
 ### get_repository_endpoint
 
 Returns the endpoint of a repository for a specific package format.
@@ -594,6 +647,8 @@ Keyword-only arguments:
 Returns
 [GetRepositoryEndpointResultTypeDef](./type_defs.md#getrepositoryendpointresulttypedef).
 
+<a id="get_repository_permissions_policy"></a>
+
 ### get_repository_permissions_policy
 
 Returns the resource policy that is set on a repository.
@@ -616,6 +671,8 @@ Keyword-only arguments:
 Returns
 [GetRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#getrepositorypermissionspolicyresulttypedef).
 
+<a id="list_domains"></a>
+
 ### list_domains
 
 Returns a list of
@@ -636,6 +693,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef).
+
+<a id="list_package_version_assets"></a>
 
 ### list_package_version_assets
 
@@ -667,6 +726,8 @@ Keyword-only arguments:
 Returns
 [ListPackageVersionAssetsResultTypeDef](./type_defs.md#listpackageversionassetsresulttypedef).
 
+<a id="list_package_version_dependencies"></a>
+
 ### list_package_version_dependencies
 
 Returns the direct dependencies for a package version.
@@ -693,6 +754,8 @@ Keyword-only arguments:
 
 Returns
 [ListPackageVersionDependenciesResultTypeDef](./type_defs.md#listpackageversiondependenciesresulttypedef).
+
+<a id="list_package_versions"></a>
 
 ### list_package_versions
 
@@ -726,6 +789,8 @@ Keyword-only arguments:
 Returns
 [ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef).
 
+<a id="list_packages"></a>
+
 ### list_packages
 
 Returns a list of
@@ -753,6 +818,8 @@ Keyword-only arguments:
 
 Returns [ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef).
 
+<a id="list_repositories"></a>
+
 ### list_repositories
 
 Returns a list of
@@ -775,6 +842,8 @@ Keyword-only arguments:
 
 Returns
 [ListRepositoriesResultTypeDef](./type_defs.md#listrepositoriesresulttypedef).
+
+<a id="list_repositories_in_domain"></a>
 
 ### list_repositories_in_domain
 
@@ -803,6 +872,8 @@ Keyword-only arguments:
 Returns
 [ListRepositoriesInDomainResultTypeDef](./type_defs.md#listrepositoriesindomainresulttypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Gets information about AWS tags for a specified Amazon Resource Name (ARN) in
@@ -823,6 +894,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+
+<a id="put_domain_permissions_policy"></a>
 
 ### put_domain_permissions_policy
 
@@ -846,6 +919,8 @@ Keyword-only arguments:
 
 Returns
 [PutDomainPermissionsPolicyResultTypeDef](./type_defs.md#putdomainpermissionspolicyresulttypedef).
+
+<a id="put_repository_permissions_policy"></a>
 
 ### put_repository_permissions_policy
 
@@ -872,6 +947,8 @@ Keyword-only arguments:
 Returns
 [PutRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#putrepositorypermissionspolicyresulttypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or updates tags for a resource in AWS CodeArtifact.
@@ -891,6 +968,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a resource in AWS CodeArtifact.
@@ -909,6 +988,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_package_versions_status"></a>
 
 ### update_package_versions_status
 
@@ -942,6 +1023,8 @@ Keyword-only arguments:
 Returns
 [UpdatePackageVersionsStatusResultTypeDef](./type_defs.md#updatepackageversionsstatusresulttypedef).
 
+<a id="update_repository"></a>
+
 ### update_repository
 
 Update the properties of a repository.
@@ -965,6 +1048,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRepositoryResultTypeDef](./type_defs.md#updaterepositoryresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

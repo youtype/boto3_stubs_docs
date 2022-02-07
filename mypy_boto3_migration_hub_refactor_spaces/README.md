@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-migrationhubrefactorspaces-module"></a>
+
 # Type annotations for boto3 MigrationHubRefactorSpaces module
 
 > [Index](..) > MigrationHubRefactorSpaces
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
 type annotations stubs module
-[mypy_boto3_migration_hub_refactor_spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
+[mypy-boto3-migration-hub-refactor-spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[migration-hub-refactor-spaces]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[migration-hub-refactor-spaces]'
+
+# standalone installation
 pip install mypy-boto3-migration-hub-refactor-spaces
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-migration-hub-refactor-spaces
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="migrationhubrefactorspacesclient"></a>
+
 ## MigrationHubRefactorSpacesClient
 
 Type annotations for `boto3.client("migration-hub-refactor-spaces")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_migration_hub_refactor_spaces.client import MigrationHubRefactorSpacesClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -60,6 +74,8 @@ from mypy_boto3_migration_hub_refactor_spaces.client import MigrationHubRefactor
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MigrationHubRefactorSpacesClient [exceptions](./client.md#exceptions)
@@ -74,6 +90,8 @@ MigrationHubRefactorSpacesClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -82,7 +100,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_migration_hub_refactor_spaces.paginators import ListApplicationsPaginator, ...
+from mypy_boto3_migration_hub_refactor_spaces.paginator import ListApplicationsPaginator, ...
 ```
 
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
@@ -90,6 +108,8 @@ from mypy_boto3_migration_hub_refactor_spaces.paginators import ListApplications
 - [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
 - [ListRoutesPaginator](./paginators.md#listroutespaginator)
 - [ListServicesPaginator](./paginators.md#listservicespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -121,6 +141,8 @@ from mypy_boto3_migration_hub_refactor_spaces.literals import ApiGatewayEndpoint
 - [ServiceStateType](./literals.md#servicestatetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="neptuneclient-for-boto3-neptune-module"></a>
+
 # NeptuneClient for boto3 Neptune module
 
 > [Index](..) > [Neptune](.) > NeptuneClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
 type annotations stubs module
-[mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).
+[mypy-boto3-neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
 - [NeptuneClient for boto3 Neptune module](#neptuneclient-for-boto3-neptune-module)
   - [NeptuneClient](#neptuneclient)
@@ -80,6 +82,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="neptuneclient"></a>
+
 ## NeptuneClient
 
 Type annotations for `boto3.client("neptune")`
@@ -87,14 +91,17 @@ Type annotations for `boto3.client("neptune")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_neptune.client import NeptuneClient
 
 def get_neptune_client() -> NeptuneClient:
-    return boto3.client("neptune")
+    return Session().client("neptune")
 ```
 
 Boto3 documentation:
 [Neptune.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -175,7 +182,11 @@ Exceptions:
 - `Exceptions.SubscriptionCategoryNotFoundFault`
 - `Exceptions.SubscriptionNotFoundFault`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -187,6 +198,8 @@ Boto3 documentation:
 [Neptune.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_role_to_db_cluster"></a>
 
 ### add_role_to_db_cluster
 
@@ -206,6 +219,8 @@ Keyword-only arguments:
 - `DBClusterIdentifier`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
 - `FeatureName`: `str`
+
+<a id="add_source_identifier_to_subscription"></a>
 
 ### add_source_identifier_to_subscription
 
@@ -228,6 +243,8 @@ Keyword-only arguments:
 Returns
 [AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef).
 
+<a id="add_tags_to_resource"></a>
+
 ### add_tags_to_resource
 
 Adds metadata tags to an Amazon Neptune resource.
@@ -244,6 +261,8 @@ Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="apply_pending_maintenance_action"></a>
 
 ### apply_pending_maintenance_action
 
@@ -268,6 +287,8 @@ Keyword-only arguments:
 Returns
 [ApplyPendingMaintenanceActionResultTypeDef](./type_defs.md#applypendingmaintenanceactionresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -282,6 +303,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="copy_db_cluster_parameter_group"></a>
 
 ### copy_db_cluster_parameter_group
 
@@ -305,6 +328,8 @@ Keyword-only arguments:
 
 Returns
 [CopyDBClusterParameterGroupResultTypeDef](./type_defs.md#copydbclusterparametergroupresulttypedef).
+
+<a id="copy_db_cluster_snapshot"></a>
 
 ### copy_db_cluster_snapshot
 
@@ -331,6 +356,8 @@ Keyword-only arguments:
 Returns
 [CopyDBClusterSnapshotResultTypeDef](./type_defs.md#copydbclustersnapshotresulttypedef).
 
+<a id="copy_db_parameter_group"></a>
+
 ### copy_db_parameter_group
 
 Copies the specified DB parameter group.
@@ -352,6 +379,8 @@ Keyword-only arguments:
 
 Returns
 [CopyDBParameterGroupResultTypeDef](./type_defs.md#copydbparametergroupresulttypedef).
+
+<a id="create_db_cluster"></a>
 
 ### create_db_cluster
 
@@ -397,6 +426,8 @@ Keyword-only arguments:
 Returns
 [CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef).
 
+<a id="create_db_cluster_endpoint"></a>
+
 ### create_db_cluster_endpoint
 
 Creates a new custom endpoint and associates it with an Amazon Neptune DB
@@ -423,6 +454,8 @@ Keyword-only arguments:
 Returns
 [CreateDBClusterEndpointOutputTypeDef](./type_defs.md#createdbclusterendpointoutputtypedef).
 
+<a id="create_db_cluster_parameter_group"></a>
+
 ### create_db_cluster_parameter_group
 
 Creates a new DB cluster parameter group.
@@ -446,6 +479,8 @@ Keyword-only arguments:
 Returns
 [CreateDBClusterParameterGroupResultTypeDef](./type_defs.md#createdbclusterparametergroupresulttypedef).
 
+<a id="create_db_cluster_snapshot"></a>
+
 ### create_db_cluster_snapshot
 
 Creates a snapshot of a DB cluster.
@@ -467,6 +502,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDBClusterSnapshotResultTypeDef](./type_defs.md#createdbclustersnapshotresulttypedef).
+
+<a id="create_db_instance"></a>
 
 ### create_db_instance
 
@@ -529,6 +566,8 @@ Keyword-only arguments:
 Returns
 [CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef).
 
+<a id="create_db_parameter_group"></a>
+
 ### create_db_parameter_group
 
 Creates a new DB parameter group.
@@ -552,6 +591,8 @@ Keyword-only arguments:
 Returns
 [CreateDBParameterGroupResultTypeDef](./type_defs.md#createdbparametergroupresulttypedef).
 
+<a id="create_db_subnet_group"></a>
+
 ### create_db_subnet_group
 
 Creates a new DB subnet group.
@@ -573,6 +614,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDBSubnetGroupResultTypeDef](./type_defs.md#createdbsubnetgroupresulttypedef).
+
+<a id="create_event_subscription"></a>
 
 ### create_event_subscription
 
@@ -600,6 +643,8 @@ Keyword-only arguments:
 Returns
 [CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
 
+<a id="delete_db_cluster"></a>
+
 ### delete_db_cluster
 
 The DeleteDBCluster action deletes a previously provisioned DB cluster.
@@ -621,6 +666,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBClusterResultTypeDef](./type_defs.md#deletedbclusterresulttypedef).
 
+<a id="delete_db_cluster_endpoint"></a>
+
 ### delete_db_cluster_endpoint
 
 Deletes a custom endpoint and removes it from an Amazon Neptune DB cluster.
@@ -641,6 +688,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBClusterEndpointOutputTypeDef](./type_defs.md#deletedbclusterendpointoutputtypedef).
 
+<a id="delete_db_cluster_parameter_group"></a>
+
 ### delete_db_cluster_parameter_group
 
 Deletes a specified DB cluster parameter group.
@@ -657,6 +706,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
+
+<a id="delete_db_cluster_snapshot"></a>
 
 ### delete_db_cluster_snapshot
 
@@ -677,6 +728,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteDBClusterSnapshotResultTypeDef](./type_defs.md#deletedbclustersnapshotresulttypedef).
+
+<a id="delete_db_instance"></a>
 
 ### delete_db_instance
 
@@ -699,6 +752,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBInstanceResultTypeDef](./type_defs.md#deletedbinstanceresulttypedef).
 
+<a id="delete_db_parameter_group"></a>
+
 ### delete_db_parameter_group
 
 Deletes a specified DBParameterGroup.
@@ -716,6 +771,8 @@ Keyword-only arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
 
+<a id="delete_db_subnet_group"></a>
+
 ### delete_db_subnet_group
 
 Deletes a DB subnet group.
@@ -731,6 +788,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBSubnetGroupName`: `str` *(required)*
+
+<a id="delete_event_subscription"></a>
 
 ### delete_event_subscription
 
@@ -751,6 +810,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef).
+
+<a id="describe_db_cluster_endpoints"></a>
 
 ### describe_db_cluster_endpoints
 
@@ -776,6 +837,8 @@ Keyword-only arguments:
 Returns
 [DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef).
 
+<a id="describe_db_cluster_parameter_groups"></a>
+
 ### describe_db_cluster_parameter_groups
 
 Returns a list of `DBClusterParameterGroup` descriptions.
@@ -798,6 +861,8 @@ Keyword-only arguments:
 
 Returns
 [DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef).
+
+<a id="describe_db_cluster_parameters"></a>
 
 ### describe_db_cluster_parameters
 
@@ -824,6 +889,8 @@ Keyword-only arguments:
 Returns
 [DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef).
 
+<a id="describe_db_cluster_snapshot_attributes"></a>
+
 ### describe_db_cluster_snapshot_attributes
 
 Returns a list of DB cluster snapshot attribute names and values for a manual
@@ -844,6 +911,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef).
+
+<a id="describe_db_cluster_snapshots"></a>
 
 ### describe_db_cluster_snapshots
 
@@ -872,6 +941,8 @@ Keyword-only arguments:
 Returns
 [DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef).
 
+<a id="describe_db_clusters"></a>
+
 ### describe_db_clusters
 
 Returns information about provisioned DB clusters, and supports pagination.
@@ -892,6 +963,8 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns [DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef).
+
+<a id="describe_db_engine_versions"></a>
 
 ### describe_db_engine_versions
 
@@ -921,6 +994,8 @@ Keyword-only arguments:
 Returns
 [DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef).
 
+<a id="describe_db_instances"></a>
+
 ### describe_db_instances
 
 Returns information about provisioned instances, and supports pagination.
@@ -941,6 +1016,8 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns [DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef).
+
+<a id="describe_db_parameter_groups"></a>
 
 ### describe_db_parameter_groups
 
@@ -965,6 +1042,8 @@ Keyword-only arguments:
 Returns
 [DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef).
 
+<a id="describe_db_parameters"></a>
+
 ### describe_db_parameters
 
 Returns the detailed parameter list for a particular DB parameter group.
@@ -988,6 +1067,8 @@ Keyword-only arguments:
 Returns
 [DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef).
 
+<a id="describe_db_subnet_groups"></a>
+
 ### describe_db_subnet_groups
 
 Returns a list of DBSubnetGroup descriptions.
@@ -1010,6 +1091,8 @@ Keyword-only arguments:
 
 Returns
 [DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef).
+
+<a id="describe_engine_default_cluster_parameters"></a>
 
 ### describe_engine_default_cluster_parameters
 
@@ -1035,6 +1118,8 @@ Keyword-only arguments:
 Returns
 [DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef).
 
+<a id="describe_engine_default_parameters"></a>
+
 ### describe_engine_default_parameters
 
 Returns the default engine and system parameter information for the specified
@@ -1059,6 +1144,8 @@ Keyword-only arguments:
 Returns
 [DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef).
 
+<a id="describe_event_categories"></a>
+
 ### describe_event_categories
 
 Displays a list of categories for all event source types, or, if specified, for
@@ -1080,6 +1167,8 @@ Keyword-only arguments:
 
 Returns
 [EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef).
+
+<a id="describe_event_subscriptions"></a>
 
 ### describe_event_subscriptions
 
@@ -1103,6 +1192,8 @@ Keyword-only arguments:
 
 Returns
 [EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
+
+<a id="describe_events"></a>
 
 ### describe_events
 
@@ -1131,6 +1222,8 @@ Keyword-only arguments:
 
 Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
+<a id="describe_orderable_db_instance_options"></a>
+
 ### describe_orderable_db_instance_options
 
 Returns a list of orderable DB instance options for the specified engine.
@@ -1158,6 +1251,8 @@ Keyword-only arguments:
 Returns
 [OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef).
 
+<a id="describe_pending_maintenance_actions"></a>
+
 ### describe_pending_maintenance_actions
 
 Returns a list of resources (for example, DB instances) that have at least one
@@ -1182,6 +1277,8 @@ Keyword-only arguments:
 Returns
 [PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef).
 
+<a id="describe_valid_db_instance_modifications"></a>
+
 ### describe_valid_db_instance_modifications
 
 You can call DescribeValidDBInstanceModifications to learn what modifications
@@ -1203,6 +1300,8 @@ Keyword-only arguments:
 Returns
 [DescribeValidDBInstanceModificationsResultTypeDef](./type_defs.md#describevaliddbinstancemodificationsresulttypedef).
 
+<a id="failover_db_cluster"></a>
+
 ### failover_db_cluster
 
 Forces a failover for a DB cluster.
@@ -1223,6 +1322,8 @@ Keyword-only arguments:
 Returns
 [FailoverDBClusterResultTypeDef](./type_defs.md#failoverdbclusterresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1240,6 +1341,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1259,6 +1362,8 @@ Keyword-only arguments:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
+
+<a id="modify_db_cluster"></a>
 
 ### modify_db_cluster
 
@@ -1297,6 +1402,8 @@ Keyword-only arguments:
 Returns
 [ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef).
 
+<a id="modify_db_cluster_endpoint"></a>
+
 ### modify_db_cluster_endpoint
 
 Modifies the properties of an endpoint in an Amazon Neptune DB cluster.
@@ -1319,6 +1426,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyDBClusterEndpointOutputTypeDef](./type_defs.md#modifydbclusterendpointoutputtypedef).
+
+<a id="modify_db_cluster_parameter_group"></a>
 
 ### modify_db_cluster_parameter_group
 
@@ -1343,6 +1452,8 @@ Keyword-only arguments:
 Returns
 [DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
 
+<a id="modify_db_cluster_snapshot_attribute"></a>
+
 ### modify_db_cluster_snapshot_attribute
 
 Adds an attribute and values to, or removes an attribute and values from, a
@@ -1366,6 +1477,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyDBClusterSnapshotAttributeResultTypeDef](./type_defs.md#modifydbclustersnapshotattributeresulttypedef).
+
+<a id="modify_db_instance"></a>
 
 ### modify_db_instance
 
@@ -1423,6 +1536,8 @@ Keyword-only arguments:
 Returns
 [ModifyDBInstanceResultTypeDef](./type_defs.md#modifydbinstanceresulttypedef).
 
+<a id="modify_db_parameter_group"></a>
+
 ### modify_db_parameter_group
 
 Modifies the parameters of a DB parameter group.
@@ -1446,6 +1561,8 @@ Keyword-only arguments:
 Returns
 [DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef).
 
+<a id="modify_db_subnet_group"></a>
+
 ### modify_db_subnet_group
 
 Modifies an existing DB subnet group.
@@ -1466,6 +1583,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyDBSubnetGroupResultTypeDef](./type_defs.md#modifydbsubnetgroupresulttypedef).
+
+<a id="modify_event_subscription"></a>
 
 ### modify_event_subscription
 
@@ -1491,6 +1610,8 @@ Keyword-only arguments:
 Returns
 [ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef).
 
+<a id="promote_read_replica_db_cluster"></a>
+
 ### promote_read_replica_db_cluster
 
 Not supported.
@@ -1510,6 +1631,8 @@ Keyword-only arguments:
 
 Returns
 [PromoteReadReplicaDBClusterResultTypeDef](./type_defs.md#promotereadreplicadbclusterresulttypedef).
+
+<a id="reboot_db_instance"></a>
 
 ### reboot_db_instance
 
@@ -1531,6 +1654,8 @@ Keyword-only arguments:
 Returns
 [RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef).
 
+<a id="remove_role_from_db_cluster"></a>
+
 ### remove_role_from_db_cluster
 
 Disassociates an Identity and Access Management (IAM) role from a DB cluster.
@@ -1549,6 +1674,8 @@ Keyword-only arguments:
 - `DBClusterIdentifier`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
 - `FeatureName`: `str`
+
+<a id="remove_source_identifier_from_subscription"></a>
 
 ### remove_source_identifier_from_subscription
 
@@ -1571,6 +1698,8 @@ Keyword-only arguments:
 Returns
 [RemoveSourceIdentifierFromSubscriptionResultTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresulttypedef).
 
+<a id="remove_tags_from_resource"></a>
+
 ### remove_tags_from_resource
 
 Removes metadata tags from an Amazon Neptune resource.
@@ -1588,6 +1717,8 @@ Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="reset_db_cluster_parameter_group"></a>
 
 ### reset_db_cluster_parameter_group
 
@@ -1612,6 +1743,8 @@ Keyword-only arguments:
 Returns
 [DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
 
+<a id="reset_db_parameter_group"></a>
+
 ### reset_db_parameter_group
 
 Modifies the parameters of a DB parameter group to the engine/system default
@@ -1634,6 +1767,8 @@ Keyword-only arguments:
 
 Returns
 [DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef).
+
+<a id="restore_db_cluster_from_snapshot"></a>
 
 ### restore_db_cluster_from_snapshot
 
@@ -1671,6 +1806,8 @@ Keyword-only arguments:
 Returns
 [RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef).
 
+<a id="restore_db_cluster_to_point_in_time"></a>
+
 ### restore_db_cluster_to_point_in_time
 
 Restores a DB cluster to an arbitrary point in time.
@@ -1705,6 +1842,8 @@ Keyword-only arguments:
 Returns
 [RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef).
 
+<a id="start_db_cluster"></a>
+
 ### start_db_cluster
 
 Starts an Amazon Neptune DB cluster that was stopped using the Amazon console,
@@ -1725,6 +1864,8 @@ Keyword-only arguments:
 Returns
 [StartDBClusterResultTypeDef](./type_defs.md#startdbclusterresulttypedef).
 
+<a id="stop_db_cluster"></a>
+
 ### stop_db_cluster
 
 Stops an Amazon Neptune DB cluster.
@@ -1743,6 +1884,8 @@ Keyword-only arguments:
 
 Returns
 [StopDBClusterResultTypeDef](./type_defs.md#stopdbclusterresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -1779,6 +1922,8 @@ overloads.
   [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
 - `client.get_paginator("describe_pending_maintenance_actions")` ->
   [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

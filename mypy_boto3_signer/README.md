@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-signer-module"></a>
+
 # Type annotations for boto3 signer module
 
 > [Index](..) > signer
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
 type annotations stubs module
-[mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
+[mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[signer]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[signer]'
+
+# standalone installation
 pip install mypy-boto3-signer
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-signer
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="signerclient"></a>
+
 ## signerClient
 
 Type annotations for `boto3.client("signer")` as [signerClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_signer.client import signerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -55,6 +69,8 @@ from mypy_boto3_signer.client import signerClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 signerClient [exceptions](./client.md#exceptions)
@@ -71,6 +87,8 @@ signerClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -79,12 +97,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_signer.paginators import ListSigningJobsPaginator, ...
+from mypy_boto3_signer.paginator import ListSigningJobsPaginator, ...
 ```
 
 - [ListSigningJobsPaginator](./paginators.md#listsigningjobspaginator)
 - [ListSigningPlatformsPaginator](./paginators.md#listsigningplatformspaginator)
 - [ListSigningProfilesPaginator](./paginators.md#listsigningprofilespaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -94,10 +114,12 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_signer.waiters import SuccessfulSigningJobWaiter, ...
+from mypy_boto3_signer.waiter import SuccessfulSigningJobWaiter, ...
 ```
 
 - [SuccessfulSigningJobWaiter](./waiters.md#successfulsigningjobwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -123,6 +145,8 @@ from mypy_boto3_signer.literals import CategoryType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

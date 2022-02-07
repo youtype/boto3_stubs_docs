@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-globalaccelerator-module"></a>
+
 # Type annotations for boto3 GlobalAccelerator module
 
 > [Index](..) > GlobalAccelerator
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
 type annotations stubs module
-[mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+[mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[globalaccelerator]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[globalaccelerator]'
+
+# standalone installation
 pip install mypy-boto3-globalaccelerator
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-globalaccelerator
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="globalacceleratorclient"></a>
+
 ## GlobalAcceleratorClient
 
 Type annotations for `boto3.client("globalaccelerator")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_globalaccelerator.client import GlobalAcceleratorClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -84,6 +98,8 @@ from mypy_boto3_globalaccelerator.client import GlobalAcceleratorClient
 - [update_listener](./client.md#update_listener)
 - [withdraw_byoip_cidr](./client.md#withdraw_byoip_cidr)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 GlobalAcceleratorClient [exceptions](./client.md#exceptions)
@@ -108,6 +124,8 @@ GlobalAcceleratorClient [exceptions](./client.md#exceptions)
 - LimitExceededException
 - ListenerNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -116,7 +134,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_globalaccelerator.paginators import ListAcceleratorsPaginator, ...
+from mypy_boto3_globalaccelerator.paginator import ListAcceleratorsPaginator, ...
 ```
 
 - [ListAcceleratorsPaginator](./paginators.md#listacceleratorspaginator)
@@ -127,6 +145,8 @@ from mypy_boto3_globalaccelerator.paginators import ListAcceleratorsPaginator, .
 - [ListCustomRoutingPortMappingsByDestinationPaginator](./paginators.md#listcustomroutingportmappingsbydestinationpaginator)
 - [ListEndpointGroupsPaginator](./paginators.md#listendpointgroupspaginator)
 - [ListListenersPaginator](./paginators.md#listlistenerspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -158,6 +178,8 @@ from mypy_boto3_globalaccelerator.literals import AcceleratorStatusType, ...
 - [ProtocolType](./literals.md#protocoltype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

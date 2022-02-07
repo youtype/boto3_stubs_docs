@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-eks-module"></a>
+
 # Literals for boto3 EKS module
 
 > [Index](..) > [EKS](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
 type annotations stubs module
-[mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
+[mypy-boto3-eks](https://pypi.org/project/mypy-boto3-eks/).
 
 - [Literals for boto3 EKS module](#literals-for-boto3-eks-module)
   - [AMITypesType](#amitypestype)
@@ -45,6 +47,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="amitypestype"></a>
+
 ## AMITypesType
 
 ```python
@@ -60,6 +64,8 @@ Values:
 - `BOTTLEROCKET_x86_64`
 - `CUSTOM`
 
+<a id="addonactivewaitername"></a>
+
 ## AddonActiveWaiterName
 
 ```python
@@ -70,6 +76,8 @@ Values:
 
 - `addon_active`
 
+<a id="addondeletedwaitername"></a>
+
 ## AddonDeletedWaiterName
 
 ```python
@@ -79,6 +87,8 @@ from mypy_boto3_eks.literals import AddonDeletedWaiterName
 Values:
 
 - `addon_deleted`
+
+<a id="addonissuecodetype"></a>
 
 ## AddonIssueCodeType
 
@@ -97,6 +107,8 @@ Values:
 - `K8sResourceNotFound`
 - `UnsupportedAddonModification`
 
+<a id="addonstatustype"></a>
+
 ## AddonStatusType
 
 ```python
@@ -113,6 +125,8 @@ Values:
 - `DELETING`
 - `UPDATING`
 
+<a id="capacitytypestype"></a>
+
 ## CapacityTypesType
 
 ```python
@@ -124,6 +138,8 @@ Values:
 - `ON_DEMAND`
 - `SPOT`
 
+<a id="clusteractivewaitername"></a>
+
 ## ClusterActiveWaiterName
 
 ```python
@@ -134,6 +150,8 @@ Values:
 
 - `cluster_active`
 
+<a id="clusterdeletedwaitername"></a>
+
 ## ClusterDeletedWaiterName
 
 ```python
@@ -143,6 +161,8 @@ from mypy_boto3_eks.literals import ClusterDeletedWaiterName
 Values:
 
 - `cluster_deleted`
+
+<a id="clusterstatustype"></a>
 
 ## ClusterStatusType
 
@@ -158,6 +178,8 @@ Values:
 - `FAILED`
 - `PENDING`
 - `UPDATING`
+
+<a id="connectorconfigprovidertype"></a>
 
 ## ConnectorConfigProviderType
 
@@ -177,6 +199,8 @@ Values:
 - `RANCHER`
 - `TANZU`
 
+<a id="describeaddonversionspaginatorname"></a>
+
 ## DescribeAddonVersionsPaginatorName
 
 ```python
@@ -186,6 +210,8 @@ from mypy_boto3_eks.literals import DescribeAddonVersionsPaginatorName
 Values:
 
 - `describe_addon_versions`
+
+<a id="errorcodetype"></a>
 
 ## ErrorCodeType
 
@@ -213,6 +239,8 @@ Values:
 - `UnsupportedAddonModification`
 - `VpcIdNotFound`
 
+<a id="fargateprofileactivewaitername"></a>
+
 ## FargateProfileActiveWaiterName
 
 ```python
@@ -223,6 +251,8 @@ Values:
 
 - `fargate_profile_active`
 
+<a id="fargateprofiledeletedwaitername"></a>
+
 ## FargateProfileDeletedWaiterName
 
 ```python
@@ -232,6 +262,8 @@ from mypy_boto3_eks.literals import FargateProfileDeletedWaiterName
 Values:
 
 - `fargate_profile_deleted`
+
+<a id="fargateprofilestatustype"></a>
 
 ## FargateProfileStatusType
 
@@ -247,6 +279,8 @@ Values:
 - `DELETE_FAILED`
 - `DELETING`
 
+<a id="ipfamilytype"></a>
+
 ## IpFamilyType
 
 ```python
@@ -258,6 +292,8 @@ Values:
 - `ipv4`
 - `ipv6`
 
+<a id="listaddonspaginatorname"></a>
+
 ## ListAddonsPaginatorName
 
 ```python
@@ -267,6 +303,8 @@ from mypy_boto3_eks.literals import ListAddonsPaginatorName
 Values:
 
 - `list_addons`
+
+<a id="listclusterspaginatorname"></a>
 
 ## ListClustersPaginatorName
 
@@ -278,6 +316,8 @@ Values:
 
 - `list_clusters`
 
+<a id="listfargateprofilespaginatorname"></a>
+
 ## ListFargateProfilesPaginatorName
 
 ```python
@@ -287,6 +327,8 @@ from mypy_boto3_eks.literals import ListFargateProfilesPaginatorName
 Values:
 
 - `list_fargate_profiles`
+
+<a id="listidentityproviderconfigspaginatorname"></a>
 
 ## ListIdentityProviderConfigsPaginatorName
 
@@ -298,6 +340,8 @@ Values:
 
 - `list_identity_provider_configs`
 
+<a id="listnodegroupspaginatorname"></a>
+
 ## ListNodegroupsPaginatorName
 
 ```python
@@ -308,6 +352,8 @@ Values:
 
 - `list_nodegroups`
 
+<a id="listupdatespaginatorname"></a>
+
 ## ListUpdatesPaginatorName
 
 ```python
@@ -317,6 +363,8 @@ from mypy_boto3_eks.literals import ListUpdatesPaginatorName
 Values:
 
 - `list_updates`
+
+<a id="logtypetype"></a>
 
 ## LogTypeType
 
@@ -332,6 +380,8 @@ Values:
 - `controllerManager`
 - `scheduler`
 
+<a id="nodegroupactivewaitername"></a>
+
 ## NodegroupActiveWaiterName
 
 ```python
@@ -342,6 +392,8 @@ Values:
 
 - `nodegroup_active`
 
+<a id="nodegroupdeletedwaitername"></a>
+
 ## NodegroupDeletedWaiterName
 
 ```python
@@ -351,6 +403,8 @@ from mypy_boto3_eks.literals import NodegroupDeletedWaiterName
 Values:
 
 - `nodegroup_deleted`
+
+<a id="nodegroupissuecodetype"></a>
 
 ## NodegroupIssueCodeType
 
@@ -379,6 +433,8 @@ Values:
 - `InternalFailure`
 - `NodeCreationFailure`
 
+<a id="nodegroupstatustype"></a>
+
 ## NodegroupStatusType
 
 ```python
@@ -395,6 +451,8 @@ Values:
 - `DELETING`
 - `UPDATING`
 
+<a id="resolveconflictstype"></a>
+
 ## ResolveConflictsType
 
 ```python
@@ -405,6 +463,8 @@ Values:
 
 - `NONE`
 - `OVERWRITE`
+
+<a id="tainteffecttype"></a>
 
 ## TaintEffectType
 
@@ -417,6 +477,8 @@ Values:
 - `NO_EXECUTE`
 - `NO_SCHEDULE`
 - `PREFER_NO_SCHEDULE`
+
+<a id="updateparamtypetype"></a>
 
 ## UpdateParamTypeType
 
@@ -450,6 +512,8 @@ Values:
 - `TaintsToRemove`
 - `Version`
 
+<a id="updatestatustype"></a>
+
 ## UpdateStatusType
 
 ```python
@@ -462,6 +526,8 @@ Values:
 - `Failed`
 - `InProgress`
 - `Successful`
+
+<a id="updatetypetype"></a>
 
 ## UpdateTypeType
 
@@ -480,6 +546,8 @@ Values:
 - `LoggingUpdate`
 - `VersionUpdate`
 
+<a id="configstatustype"></a>
+
 ## configStatusType
 
 ```python
@@ -491,6 +559,8 @@ Values:
 - `ACTIVE`
 - `CREATING`
 - `DELETING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -800,6 +870,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -815,6 +887,8 @@ Values:
 - `list_identity_provider_configs`
 - `list_nodegroups`
 - `list_updates`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

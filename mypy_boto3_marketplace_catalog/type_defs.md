@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-marketplacecatalog-module"></a>
+
 # Typed dictionaries for boto3 MarketplaceCatalog module
 
 > [Index](..) > [MarketplaceCatalog](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
 type annotations stubs module
-[mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
+[mypy-boto3-marketplace-catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
 - [Typed dictionaries for boto3 MarketplaceCatalog module](#typed-dictionaries-for-boto3-marketplacecatalog-module)
   - [CancelChangeSetRequestRequestTypeDef](#cancelchangesetrequestrequesttypedef)
@@ -30,6 +32,8 @@ type annotations stubs module
   - [StartChangeSetRequestRequestTypeDef](#startchangesetrequestrequesttypedef)
   - [StartChangeSetResponseTypeDef](#startchangesetresponsetypedef)
 
+<a id="cancelchangesetrequestrequesttypedef"></a>
+
 ## CancelChangeSetRequestRequestTypeDef
 
 ```python
@@ -40,6 +44,8 @@ Required fields:
 
 - `Catalog`: `str`
 - `ChangeSetId`: `str`
+
+<a id="cancelchangesetresponsetypedef"></a>
 
 ## CancelChangeSetResponseTypeDef
 
@@ -53,6 +59,8 @@ Required fields:
 - `ChangeSetArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="changesetsummarylistitemtypedef"></a>
 
 ## ChangeSetSummaryListItemTypeDef
 
@@ -71,6 +79,8 @@ Optional fields:
 - `EntityIdList`: `List`\[`str`\]
 - `FailureCode`: [FailureCodeType](./literals.md#failurecodetype)
 
+<a id="changesummarytypedef"></a>
+
 ## ChangeSummaryTypeDef
 
 ```python
@@ -85,6 +95,8 @@ Optional fields:
 - `ErrorDetailList`:
   `List`\[[ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
 - `ChangeName`: `str`
+
+<a id="changetypedef"></a>
 
 ## ChangeTypeDef
 
@@ -102,6 +114,8 @@ Optional fields:
 
 - `ChangeName`: `str`
 
+<a id="describechangesetrequestrequesttypedef"></a>
+
 ## DescribeChangeSetRequestRequestTypeDef
 
 ```python
@@ -112,6 +126,8 @@ Required fields:
 
 - `Catalog`: `str`
 - `ChangeSetId`: `str`
+
+<a id="describechangesetresponsetypedef"></a>
 
 ## DescribeChangeSetResponseTypeDef
 
@@ -134,6 +150,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeentityrequestrequesttypedef"></a>
+
 ## DescribeEntityRequestRequestTypeDef
 
 ```python
@@ -144,6 +162,8 @@ Required fields:
 
 - `Catalog`: `str`
 - `EntityId`: `str`
+
+<a id="describeentityresponsetypedef"></a>
 
 ## DescribeEntityResponseTypeDef
 
@@ -161,6 +181,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="entitysummarytypedef"></a>
+
 ## EntitySummaryTypeDef
 
 ```python
@@ -176,6 +198,8 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Visibility`: `str`
 
+<a id="entitytypedef"></a>
+
 ## EntityTypeDef
 
 ```python
@@ -190,6 +214,8 @@ Optional fields:
 
 - `Identifier`: `str`
 
+<a id="errordetailtypedef"></a>
+
 ## ErrorDetailTypeDef
 
 ```python
@@ -201,6 +227,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -211,6 +239,8 @@ Optional fields:
 
 - `Name`: `str`
 - `ValueList`: `Sequence`\[`str`\]
+
+<a id="listchangesetsrequestrequesttypedef"></a>
 
 ## ListChangeSetsRequestRequestTypeDef
 
@@ -229,6 +259,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listchangesetsresponsetypedef"></a>
+
 ## ListChangeSetsResponseTypeDef
 
 ```python
@@ -242,6 +274,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listentitiesrequestrequesttypedef"></a>
 
 ## ListEntitiesRequestRequestTypeDef
 
@@ -261,6 +295,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listentitiesresponsetypedef"></a>
+
 ## ListEntitiesResponseTypeDef
 
 ```python
@@ -274,6 +310,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -289,6 +327,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="sorttypedef"></a>
+
 ## SortTypeDef
 
 ```python
@@ -299,6 +339,8 @@ Optional fields:
 
 - `SortBy`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+<a id="startchangesetrequestrequesttypedef"></a>
 
 ## StartChangeSetRequestRequestTypeDef
 
@@ -315,6 +357,8 @@ Optional fields:
 
 - `ChangeSetName`: `str`
 - `ClientRequestToken`: `str`
+
+<a id="startchangesetresponsetypedef"></a>
 
 ## StartChangeSetResponseTypeDef
 

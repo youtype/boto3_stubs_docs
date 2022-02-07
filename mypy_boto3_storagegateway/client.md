@@ -1,3 +1,5 @@
+<a id="storagegatewayclient-for-boto3-storagegateway-module"></a>
+
 # StorageGatewayClient for boto3 StorageGateway module
 
 > [Index](..) > [StorageGateway](.) > StorageGatewayClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
 type annotations stubs module
-[mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
+[mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 - [StorageGatewayClient for boto3 StorageGateway module](#storagegatewayclient-for-boto3-storagegateway-module)
   - [StorageGatewayClient](#storagegatewayclient)
@@ -106,6 +108,8 @@ type annotations stubs module
     - [update_vtl_device_type](#update_vtl_device_type)
     - [get_paginator](#get_paginator)
 
+<a id="storagegatewayclient"></a>
+
 ## StorageGatewayClient
 
 Type annotations for `boto3.client("storagegateway")`
@@ -113,14 +117,17 @@ Type annotations for `boto3.client("storagegateway")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_storagegateway.client import StorageGatewayClient
 
 def get_storagegateway_client() -> StorageGatewayClient:
-    return boto3.client("storagegateway")
+    return Session().client("storagegateway")
 ```
 
 Boto3 documentation:
 [StorageGateway.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -141,7 +148,11 @@ Exceptions:
 - `Exceptions.InvalidGatewayRequestException`
 - `Exceptions.ServiceUnavailableError`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -153,6 +164,8 @@ Boto3 documentation:
 [StorageGateway.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="activate_gateway"></a>
 
 ### activate_gateway
 
@@ -180,6 +193,8 @@ Keyword-only arguments:
 Returns
 [ActivateGatewayOutputTypeDef](./type_defs.md#activategatewayoutputtypedef).
 
+<a id="add_cache"></a>
+
 ### add_cache
 
 Configures one or more gateway local disks as cache for a gateway.
@@ -198,6 +213,8 @@ Keyword-only arguments:
 - `DiskIds`: `Sequence`\[`str`\] *(required)*
 
 Returns [AddCacheOutputTypeDef](./type_defs.md#addcacheoutputtypedef).
+
+<a id="add_tags_to_resource"></a>
 
 ### add_tags_to_resource
 
@@ -220,6 +237,8 @@ Keyword-only arguments:
 Returns
 [AddTagsToResourceOutputTypeDef](./type_defs.md#addtagstoresourceoutputtypedef).
 
+<a id="add_upload_buffer"></a>
+
 ### add_upload_buffer
 
 Configures one or more gateway local disks as upload buffer for a specified
@@ -240,6 +259,8 @@ Keyword-only arguments:
 
 Returns
 [AddUploadBufferOutputTypeDef](./type_defs.md#adduploadbufferoutputtypedef).
+
+<a id="add_working_storage"></a>
 
 ### add_working_storage
 
@@ -262,6 +283,8 @@ Keyword-only arguments:
 Returns
 [AddWorkingStorageOutputTypeDef](./type_defs.md#addworkingstorageoutputtypedef).
 
+<a id="assign_tape_pool"></a>
+
 ### assign_tape_pool
 
 Assigns a tape to a tape pool for archiving.
@@ -282,6 +305,8 @@ Keyword-only arguments:
 
 Returns
 [AssignTapePoolOutputTypeDef](./type_defs.md#assigntapepooloutputtypedef).
+
+<a id="associate_file_system"></a>
 
 ### associate_file_system
 
@@ -313,6 +338,8 @@ Keyword-only arguments:
 Returns
 [AssociateFileSystemOutputTypeDef](./type_defs.md#associatefilesystemoutputtypedef).
 
+<a id="attach_volume"></a>
+
 ### attach_volume
 
 Connects a volume to an iSCSI connection and then attaches the volume to the
@@ -336,6 +363,8 @@ Keyword-only arguments:
 
 Returns [AttachVolumeOutputTypeDef](./type_defs.md#attachvolumeoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -350,6 +379,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_archival"></a>
 
 ### cancel_archival
 
@@ -372,6 +403,8 @@ Keyword-only arguments:
 Returns
 [CancelArchivalOutputTypeDef](./type_defs.md#cancelarchivaloutputtypedef).
 
+<a id="cancel_retrieval"></a>
+
 ### cancel_retrieval
 
 Cancels retrieval of a virtual tape from the virtual tape shelf (VTS) to a
@@ -392,6 +425,8 @@ Keyword-only arguments:
 
 Returns
 [CancelRetrievalOutputTypeDef](./type_defs.md#cancelretrievaloutputtypedef).
+
+<a id="create_cached_iscsi_volume"></a>
 
 ### create_cached_iscsi_volume
 
@@ -421,6 +456,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCachediSCSIVolumeOutputTypeDef](./type_defs.md#createcachediscsivolumeoutputtypedef).
+
+<a id="create_nfs_file_share"></a>
 
 ### create_nfs_file_share
 
@@ -463,6 +500,8 @@ Keyword-only arguments:
 
 Returns
 [CreateNFSFileShareOutputTypeDef](./type_defs.md#createnfsfileshareoutputtypedef).
+
+<a id="create_smb_file_share"></a>
 
 ### create_smb_file_share
 
@@ -510,6 +549,8 @@ Keyword-only arguments:
 Returns
 [CreateSMBFileShareOutputTypeDef](./type_defs.md#createsmbfileshareoutputtypedef).
 
+<a id="create_snapshot"></a>
+
 ### create_snapshot
 
 Initiates a snapshot of a volume.
@@ -530,6 +571,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSnapshotOutputTypeDef](./type_defs.md#createsnapshotoutputtypedef).
+
+<a id="create_snapshot_from_volume_recovery_point"></a>
 
 ### create_snapshot_from_volume_recovery_point
 
@@ -553,6 +596,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSnapshotFromVolumeRecoveryPointOutputTypeDef](./type_defs.md#createsnapshotfromvolumerecoverypointoutputtypedef).
+
+<a id="create_stored_iscsi_volume"></a>
 
 ### create_stored_iscsi_volume
 
@@ -582,6 +627,8 @@ Keyword-only arguments:
 Returns
 [CreateStorediSCSIVolumeOutputTypeDef](./type_defs.md#createstorediscsivolumeoutputtypedef).
 
+<a id="create_tape_pool"></a>
+
 ### create_tape_pool
 
 Creates a new custom tape pool.
@@ -606,6 +653,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTapePoolOutputTypeDef](./type_defs.md#createtapepooloutputtypedef).
+
+<a id="create_tape_with_barcode"></a>
 
 ### create_tape_with_barcode
 
@@ -634,6 +683,8 @@ Keyword-only arguments:
 Returns
 [CreateTapeWithBarcodeOutputTypeDef](./type_defs.md#createtapewithbarcodeoutputtypedef).
 
+<a id="create_tapes"></a>
+
 ### create_tapes
 
 Creates one or more virtual tapes.
@@ -661,6 +712,8 @@ Keyword-only arguments:
 
 Returns [CreateTapesOutputTypeDef](./type_defs.md#createtapesoutputtypedef).
 
+<a id="delete_automatic_tape_creation_policy"></a>
+
 ### delete_automatic_tape_creation_policy
 
 Deletes the automatic tape creation policy of a gateway.
@@ -680,6 +733,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteAutomaticTapeCreationPolicyOutputTypeDef](./type_defs.md#deleteautomatictapecreationpolicyoutputtypedef).
+
+<a id="delete_bandwidth_rate_limit"></a>
 
 ### delete_bandwidth_rate_limit
 
@@ -701,6 +756,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteBandwidthRateLimitOutputTypeDef](./type_defs.md#deletebandwidthratelimitoutputtypedef).
+
+<a id="delete_chap_credentials"></a>
 
 ### delete_chap_credentials
 
@@ -724,6 +781,8 @@ Keyword-only arguments:
 Returns
 [DeleteChapCredentialsOutputTypeDef](./type_defs.md#deletechapcredentialsoutputtypedef).
 
+<a id="delete_file_share"></a>
+
 ### delete_file_share
 
 Deletes a file share from an S3 File Gateway.
@@ -744,6 +803,8 @@ Keyword-only arguments:
 Returns
 [DeleteFileShareOutputTypeDef](./type_defs.md#deletefileshareoutputtypedef).
 
+<a id="delete_gateway"></a>
+
 ### delete_gateway
 
 Deletes a gateway.
@@ -762,6 +823,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteGatewayOutputTypeDef](./type_defs.md#deletegatewayoutputtypedef).
+
+<a id="delete_snapshot_schedule"></a>
 
 ### delete_snapshot_schedule
 
@@ -783,6 +846,8 @@ Keyword-only arguments:
 Returns
 [DeleteSnapshotScheduleOutputTypeDef](./type_defs.md#deletesnapshotscheduleoutputtypedef).
 
+<a id="delete_tape"></a>
+
 ### delete_tape
 
 Deletes the specified virtual tape.
@@ -802,6 +867,8 @@ Keyword-only arguments:
 - `BypassGovernanceRetention`: `bool`
 
 Returns [DeleteTapeOutputTypeDef](./type_defs.md#deletetapeoutputtypedef).
+
+<a id="delete_tape_archive"></a>
 
 ### delete_tape_archive
 
@@ -824,6 +891,8 @@ Keyword-only arguments:
 Returns
 [DeleteTapeArchiveOutputTypeDef](./type_defs.md#deletetapearchiveoutputtypedef).
 
+<a id="delete_tape_pool"></a>
+
 ### delete_tape_pool
 
 Delete a custom tape pool.
@@ -843,6 +912,8 @@ Keyword-only arguments:
 Returns
 [DeleteTapePoolOutputTypeDef](./type_defs.md#deletetapepooloutputtypedef).
 
+<a id="delete_volume"></a>
+
 ### delete_volume
 
 Deletes the specified storage volume that you previously created using the
@@ -861,6 +932,8 @@ Keyword-only arguments:
 - `VolumeARN`: `str` *(required)*
 
 Returns [DeleteVolumeOutputTypeDef](./type_defs.md#deletevolumeoutputtypedef).
+
+<a id="describe_availability_monitor_test"></a>
 
 ### describe_availability_monitor_test
 
@@ -883,6 +956,8 @@ Keyword-only arguments:
 Returns
 [DescribeAvailabilityMonitorTestOutputTypeDef](./type_defs.md#describeavailabilitymonitortestoutputtypedef).
 
+<a id="describe_bandwidth_rate_limit"></a>
+
 ### describe_bandwidth_rate_limit
 
 Returns the bandwidth rate limits of a gateway.
@@ -902,6 +977,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBandwidthRateLimitOutputTypeDef](./type_defs.md#describebandwidthratelimitoutputtypedef).
+
+<a id="describe_bandwidth_rate_limit_schedule"></a>
 
 ### describe_bandwidth_rate_limit_schedule
 
@@ -923,6 +1000,8 @@ Keyword-only arguments:
 Returns
 [DescribeBandwidthRateLimitScheduleOutputTypeDef](./type_defs.md#describebandwidthratelimitscheduleoutputtypedef).
 
+<a id="describe_cache"></a>
+
 ### describe_cache
 
 Returns information about the cache of a gateway.
@@ -941,6 +1020,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCacheOutputTypeDef](./type_defs.md#describecacheoutputtypedef).
+
+<a id="describe_cached_iscsi_volumes"></a>
 
 ### describe_cached_iscsi_volumes
 
@@ -961,6 +1042,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCachediSCSIVolumesOutputTypeDef](./type_defs.md#describecachediscsivolumesoutputtypedef).
+
+<a id="describe_chap_credentials"></a>
 
 ### describe_chap_credentials
 
@@ -984,6 +1067,8 @@ Keyword-only arguments:
 Returns
 [DescribeChapCredentialsOutputTypeDef](./type_defs.md#describechapcredentialsoutputtypedef).
 
+<a id="describe_file_system_associations"></a>
+
 ### describe_file_system_associations
 
 Gets the file system association information.
@@ -1003,6 +1088,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFileSystemAssociationsOutputTypeDef](./type_defs.md#describefilesystemassociationsoutputtypedef).
+
+<a id="describe_gateway_information"></a>
 
 ### describe_gateway_information
 
@@ -1025,6 +1112,8 @@ Keyword-only arguments:
 Returns
 [DescribeGatewayInformationOutputTypeDef](./type_defs.md#describegatewayinformationoutputtypedef).
 
+<a id="describe_maintenance_start_time"></a>
+
 ### describe_maintenance_start_time
 
 Returns your gateway's weekly maintenance start time including the day and time
@@ -1045,6 +1134,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeMaintenanceStartTimeOutputTypeDef](./type_defs.md#describemaintenancestarttimeoutputtypedef).
+
+<a id="describe_nfs_file_shares"></a>
 
 ### describe_nfs_file_shares
 
@@ -1067,6 +1158,8 @@ Keyword-only arguments:
 Returns
 [DescribeNFSFileSharesOutputTypeDef](./type_defs.md#describenfsfilesharesoutputtypedef).
 
+<a id="describe_smb_file_shares"></a>
+
 ### describe_smb_file_shares
 
 Gets a description for one or more Server Message Block (SMB) file shares from
@@ -1087,6 +1180,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSMBFileSharesOutputTypeDef](./type_defs.md#describesmbfilesharesoutputtypedef).
+
+<a id="describe_smb_settings"></a>
 
 ### describe_smb_settings
 
@@ -1109,6 +1204,8 @@ Keyword-only arguments:
 Returns
 [DescribeSMBSettingsOutputTypeDef](./type_defs.md#describesmbsettingsoutputtypedef).
 
+<a id="describe_snapshot_schedule"></a>
+
 ### describe_snapshot_schedule
 
 Describes the snapshot schedule for the specified gateway volume.
@@ -1129,6 +1226,8 @@ Keyword-only arguments:
 Returns
 [DescribeSnapshotScheduleOutputTypeDef](./type_defs.md#describesnapshotscheduleoutputtypedef).
 
+<a id="describe_stored_iscsi_volumes"></a>
+
 ### describe_stored_iscsi_volumes
 
 Returns the description of the gateway volumes specified in the request.
@@ -1148,6 +1247,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStorediSCSIVolumesOutputTypeDef](./type_defs.md#describestorediscsivolumesoutputtypedef).
+
+<a id="describe_tape_archives"></a>
 
 ### describe_tape_archives
 
@@ -1172,6 +1273,8 @@ Keyword-only arguments:
 Returns
 [DescribeTapeArchivesOutputTypeDef](./type_defs.md#describetapearchivesoutputtypedef).
 
+<a id="describe_tape_recovery_points"></a>
+
 ### describe_tape_recovery_points
 
 Returns a list of virtual tape recovery points that are available for the
@@ -1194,6 +1297,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTapeRecoveryPointsOutputTypeDef](./type_defs.md#describetaperecoverypointsoutputtypedef).
+
+<a id="describe_tapes"></a>
 
 ### describe_tapes
 
@@ -1218,6 +1323,8 @@ Keyword-only arguments:
 Returns
 [DescribeTapesOutputTypeDef](./type_defs.md#describetapesoutputtypedef).
 
+<a id="describe_upload_buffer"></a>
+
 ### describe_upload_buffer
 
 Returns information about the upload buffer of a gateway.
@@ -1237,6 +1344,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUploadBufferOutputTypeDef](./type_defs.md#describeuploadbufferoutputtypedef).
+
+<a id="describe_vtl_devices"></a>
 
 ### describe_vtl_devices
 
@@ -1262,6 +1371,8 @@ Keyword-only arguments:
 Returns
 [DescribeVTLDevicesOutputTypeDef](./type_defs.md#describevtldevicesoutputtypedef).
 
+<a id="describe_working_storage"></a>
+
 ### describe_working_storage
 
 Returns information about the working storage of a gateway.
@@ -1281,6 +1392,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeWorkingStorageOutputTypeDef](./type_defs.md#describeworkingstorageoutputtypedef).
+
+<a id="detach_volume"></a>
 
 ### detach_volume
 
@@ -1302,6 +1415,8 @@ Keyword-only arguments:
 
 Returns [DetachVolumeOutputTypeDef](./type_defs.md#detachvolumeoutputtypedef).
 
+<a id="disable_gateway"></a>
+
 ### disable_gateway
 
 Disables a tape gateway when the gateway is no longer functioning.
@@ -1320,6 +1435,8 @@ Keyword-only arguments:
 
 Returns
 [DisableGatewayOutputTypeDef](./type_defs.md#disablegatewayoutputtypedef).
+
+<a id="disassociate_file_system"></a>
 
 ### disassociate_file_system
 
@@ -1342,6 +1459,8 @@ Keyword-only arguments:
 Returns
 [DisassociateFileSystemOutputTypeDef](./type_defs.md#disassociatefilesystemoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1360,6 +1479,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="join_domain"></a>
 
 ### join_domain
 
@@ -1385,6 +1506,8 @@ Keyword-only arguments:
 
 Returns [JoinDomainOutputTypeDef](./type_defs.md#joindomainoutputtypedef).
 
+<a id="list_automatic_tape_creation_policies"></a>
+
 ### list_automatic_tape_creation_policies
 
 Lists the automatic tape creation policies for a gateway.
@@ -1404,6 +1527,8 @@ Keyword-only arguments:
 
 Returns
 [ListAutomaticTapeCreationPoliciesOutputTypeDef](./type_defs.md#listautomatictapecreationpoliciesoutputtypedef).
+
+<a id="list_file_shares"></a>
 
 ### list_file_shares
 
@@ -1427,6 +1552,8 @@ Keyword-only arguments:
 Returns
 [ListFileSharesOutputTypeDef](./type_defs.md#listfilesharesoutputtypedef).
 
+<a id="list_file_system_associations"></a>
+
 ### list_file_system_associations
 
 Gets a list of `FileSystemAssociationSummary` objects.
@@ -1449,6 +1576,8 @@ Keyword-only arguments:
 Returns
 [ListFileSystemAssociationsOutputTypeDef](./type_defs.md#listfilesystemassociationsoutputtypedef).
 
+<a id="list_gateways"></a>
+
 ### list_gateways
 
 Lists gateways owned by an Amazon Web Services account in an Amazon Web
@@ -1469,6 +1598,8 @@ Keyword-only arguments:
 
 Returns [ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef).
 
+<a id="list_local_disks"></a>
+
 ### list_local_disks
 
 Returns a list of the gateway's local disks.
@@ -1487,6 +1618,8 @@ Keyword-only arguments:
 
 Returns
 [ListLocalDisksOutputTypeDef](./type_defs.md#listlocaldisksoutputtypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1510,6 +1643,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
+<a id="list_tape_pools"></a>
+
 ### list_tape_pools
 
 Lists custom tape pools.
@@ -1530,6 +1665,8 @@ Keyword-only arguments:
 
 Returns
 [ListTapePoolsOutputTypeDef](./type_defs.md#listtapepoolsoutputtypedef).
+
+<a id="list_tapes"></a>
 
 ### list_tapes
 
@@ -1552,6 +1689,8 @@ Keyword-only arguments:
 
 Returns [ListTapesOutputTypeDef](./type_defs.md#listtapesoutputtypedef).
 
+<a id="list_volume_initiators"></a>
+
 ### list_volume_initiators
 
 Lists iSCSI initiators that are connected to a volume.
@@ -1571,6 +1710,8 @@ Keyword-only arguments:
 
 Returns
 [ListVolumeInitiatorsOutputTypeDef](./type_defs.md#listvolumeinitiatorsoutputtypedef).
+
+<a id="list_volume_recovery_points"></a>
 
 ### list_volume_recovery_points
 
@@ -1592,6 +1733,8 @@ Keyword-only arguments:
 Returns
 [ListVolumeRecoveryPointsOutputTypeDef](./type_defs.md#listvolumerecoverypointsoutputtypedef).
 
+<a id="list_volumes"></a>
+
 ### list_volumes
 
 Lists the iSCSI stored volumes of a gateway.
@@ -1611,6 +1754,8 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns [ListVolumesOutputTypeDef](./type_defs.md#listvolumesoutputtypedef).
+
+<a id="notify_when_uploaded"></a>
 
 ### notify_when_uploaded
 
@@ -1633,6 +1778,8 @@ Keyword-only arguments:
 Returns
 [NotifyWhenUploadedOutputTypeDef](./type_defs.md#notifywhenuploadedoutputtypedef).
 
+<a id="refresh_cache"></a>
+
 ### refresh_cache
 
 Refreshes the cached inventory of objects for the specified file share.
@@ -1652,6 +1799,8 @@ Keyword-only arguments:
 - `Recursive`: `bool`
 
 Returns [RefreshCacheOutputTypeDef](./type_defs.md#refreshcacheoutputtypedef).
+
+<a id="remove_tags_from_resource"></a>
 
 ### remove_tags_from_resource
 
@@ -1674,6 +1823,8 @@ Keyword-only arguments:
 Returns
 [RemoveTagsFromResourceOutputTypeDef](./type_defs.md#removetagsfromresourceoutputtypedef).
 
+<a id="reset_cache"></a>
+
 ### reset_cache
 
 Resets all cache disks that have encountered an error and makes the disks
@@ -1692,6 +1843,8 @@ Keyword-only arguments:
 - `GatewayARN`: `str` *(required)*
 
 Returns [ResetCacheOutputTypeDef](./type_defs.md#resetcacheoutputtypedef).
+
+<a id="retrieve_tape_archive"></a>
 
 ### retrieve_tape_archive
 
@@ -1715,6 +1868,8 @@ Keyword-only arguments:
 Returns
 [RetrieveTapeArchiveOutputTypeDef](./type_defs.md#retrievetapearchiveoutputtypedef).
 
+<a id="retrieve_tape_recovery_point"></a>
+
 ### retrieve_tape_recovery_point
 
 Retrieves the recovery point for the specified virtual tape.
@@ -1735,6 +1890,8 @@ Keyword-only arguments:
 
 Returns
 [RetrieveTapeRecoveryPointOutputTypeDef](./type_defs.md#retrievetaperecoverypointoutputtypedef).
+
+<a id="set_local_console_password"></a>
 
 ### set_local_console_password
 
@@ -1757,6 +1914,8 @@ Keyword-only arguments:
 Returns
 [SetLocalConsolePasswordOutputTypeDef](./type_defs.md#setlocalconsolepasswordoutputtypedef).
 
+<a id="set_smb_guest_password"></a>
+
 ### set_smb_guest_password
 
 Sets the password for the guest user `smbguest`.
@@ -1778,6 +1937,8 @@ Keyword-only arguments:
 Returns
 [SetSMBGuestPasswordOutputTypeDef](./type_defs.md#setsmbguestpasswordoutputtypedef).
 
+<a id="shutdown_gateway"></a>
+
 ### shutdown_gateway
 
 Shuts down a gateway.
@@ -1796,6 +1957,8 @@ Keyword-only arguments:
 
 Returns
 [ShutdownGatewayOutputTypeDef](./type_defs.md#shutdowngatewayoutputtypedef).
+
+<a id="start_availability_monitor_test"></a>
 
 ### start_availability_monitor_test
 
@@ -1818,6 +1981,8 @@ Keyword-only arguments:
 Returns
 [StartAvailabilityMonitorTestOutputTypeDef](./type_defs.md#startavailabilitymonitortestoutputtypedef).
 
+<a id="start_gateway"></a>
+
 ### start_gateway
 
 Starts a gateway that you previously shut down (see ShutdownGateway ).
@@ -1835,6 +2000,8 @@ Keyword-only arguments:
 - `GatewayARN`: `str` *(required)*
 
 Returns [StartGatewayOutputTypeDef](./type_defs.md#startgatewayoutputtypedef).
+
+<a id="update_automatic_tape_creation_policy"></a>
 
 ### update_automatic_tape_creation_policy
 
@@ -1859,6 +2026,8 @@ Keyword-only arguments:
 Returns
 [UpdateAutomaticTapeCreationPolicyOutputTypeDef](./type_defs.md#updateautomatictapecreationpolicyoutputtypedef).
 
+<a id="update_bandwidth_rate_limit"></a>
+
 ### update_bandwidth_rate_limit
 
 Updates the bandwidth rate limits of a gateway.
@@ -1880,6 +2049,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateBandwidthRateLimitOutputTypeDef](./type_defs.md#updatebandwidthratelimitoutputtypedef).
+
+<a id="update_bandwidth_rate_limit_schedule"></a>
 
 ### update_bandwidth_rate_limit_schedule
 
@@ -1904,6 +2075,8 @@ Keyword-only arguments:
 Returns
 [UpdateBandwidthRateLimitScheduleOutputTypeDef](./type_defs.md#updatebandwidthratelimitscheduleoutputtypedef).
 
+<a id="update_chap_credentials"></a>
+
 ### update_chap_credentials
 
 Updates the Challenge-Handshake Authentication Protocol (CHAP) credentials for
@@ -1927,6 +2100,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateChapCredentialsOutputTypeDef](./type_defs.md#updatechapcredentialsoutputtypedef).
+
+<a id="update_file_system_association"></a>
 
 ### update_file_system_association
 
@@ -1953,6 +2128,8 @@ Keyword-only arguments:
 Returns
 [UpdateFileSystemAssociationOutputTypeDef](./type_defs.md#updatefilesystemassociationoutputtypedef).
 
+<a id="update_gateway_information"></a>
+
 ### update_gateway_information
 
 Updates a gateway's metadata, which includes the gateway's name and time zone.
@@ -1977,6 +2154,8 @@ Keyword-only arguments:
 Returns
 [UpdateGatewayInformationOutputTypeDef](./type_defs.md#updategatewayinformationoutputtypedef).
 
+<a id="update_gateway_software_now"></a>
+
 ### update_gateway_software_now
 
 Updates the gateway virtual machine (VM) software.
@@ -1996,6 +2175,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateGatewaySoftwareNowOutputTypeDef](./type_defs.md#updategatewaysoftwarenowoutputtypedef).
+
+<a id="update_maintenance_start_time"></a>
 
 ### update_maintenance_start_time
 
@@ -2021,6 +2202,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateMaintenanceStartTimeOutputTypeDef](./type_defs.md#updatemaintenancestarttimeoutputtypedef).
+
+<a id="update_nfs_file_share"></a>
 
 ### update_nfs_file_share
 
@@ -2057,6 +2240,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateNFSFileShareOutputTypeDef](./type_defs.md#updatenfsfileshareoutputtypedef).
+
+<a id="update_smb_file_share"></a>
 
 ### update_smb_file_share
 
@@ -2097,6 +2282,8 @@ Keyword-only arguments:
 Returns
 [UpdateSMBFileShareOutputTypeDef](./type_defs.md#updatesmbfileshareoutputtypedef).
 
+<a id="update_smb_file_share_visibility"></a>
+
 ### update_smb_file_share_visibility
 
 Controls whether the shares on an S3 File Gateway are visible in a net view or
@@ -2118,6 +2305,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSMBFileShareVisibilityOutputTypeDef](./type_defs.md#updatesmbfilesharevisibilityoutputtypedef).
+
+<a id="update_smb_local_groups"></a>
 
 ### update_smb_local_groups
 
@@ -2142,6 +2331,8 @@ Keyword-only arguments:
 Returns
 [UpdateSMBLocalGroupsOutputTypeDef](./type_defs.md#updatesmblocalgroupsoutputtypedef).
 
+<a id="update_smb_security_strategy"></a>
+
 ### update_smb_security_strategy
 
 Updates the SMB security strategy on a file gateway.
@@ -2163,6 +2354,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSMBSecurityStrategyOutputTypeDef](./type_defs.md#updatesmbsecuritystrategyoutputtypedef).
+
+<a id="update_snapshot_schedule"></a>
 
 ### update_snapshot_schedule
 
@@ -2188,6 +2381,8 @@ Keyword-only arguments:
 Returns
 [UpdateSnapshotScheduleOutputTypeDef](./type_defs.md#updatesnapshotscheduleoutputtypedef).
 
+<a id="update_vtl_device_type"></a>
+
 ### update_vtl_device_type
 
 Updates the type of medium changer in a tape gateway.
@@ -2208,6 +2403,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVTLDeviceTypeOutputTypeDef](./type_defs.md#updatevtldevicetypeoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

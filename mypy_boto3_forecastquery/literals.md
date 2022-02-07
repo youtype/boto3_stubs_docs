@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-forecastqueryservice-module"></a>
+
 # Literals for boto3 ForecastQueryService module
 
 > [Index](..) > [ForecastQueryService](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
 type annotations stubs module
-[mypy_boto3_forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
+[mypy-boto3-forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
 
 - [Literals for boto3 ForecastQueryService module](#literals-for-boto3-forecastqueryservice-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

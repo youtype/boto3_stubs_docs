@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-greengrass-module"></a>
+
 # Type annotations for boto3 Greengrass module
 
 > [Index](..) > Greengrass
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
 type annotations stubs module
-[mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
+[mypy-boto3-greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[greengrass]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[greengrass]'
+
+# standalone installation
 pip install mypy-boto3-greengrass
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-greengrass
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="greengrassclient"></a>
+
 ## GreengrassClient
 
 Type annotations for `boto3.client("greengrass")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_greengrass.client import GreengrassClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -129,6 +143,8 @@ from mypy_boto3_greengrass.client import GreengrassClient
 - [update_subscription_definition](./client.md#update_subscription_definition)
 - [update_thing_runtime_configuration](./client.md#update_thing_runtime_configuration)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 GreengrassClient [exceptions](./client.md#exceptions)
@@ -136,6 +152,8 @@ GreengrassClient [exceptions](./client.md#exceptions)
 - BadRequestException
 - ClientError
 - InternalServerErrorException
+
+<a id="paginators"></a>
 
 ## Paginators
 
@@ -145,7 +163,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_greengrass.paginators import ListBulkDeploymentDetailedReportsPaginator, ...
+from mypy_boto3_greengrass.paginator import ListBulkDeploymentDetailedReportsPaginator, ...
 ```
 
 - [ListBulkDeploymentDetailedReportsPaginator](./paginators.md#listbulkdeploymentdetailedreportspaginator)
@@ -167,6 +185,8 @@ from mypy_boto3_greengrass.paginators import ListBulkDeploymentDetailedReportsPa
 - [ListResourceDefinitionsPaginator](./paginators.md#listresourcedefinitionspaginator)
 - [ListSubscriptionDefinitionVersionsPaginator](./paginators.md#listsubscriptiondefinitionversionspaginator)
 - [ListSubscriptionDefinitionsPaginator](./paginators.md#listsubscriptiondefinitionspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -213,6 +233,8 @@ from mypy_boto3_greengrass.literals import BulkDeploymentStatusType, ...
 - [UpdateTargetsOperatingSystemType](./literals.md#updatetargetsoperatingsystemtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

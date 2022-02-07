@@ -1,3 +1,5 @@
+<a id="ssooidcclient-for-boto3-ssooidc-module"></a>
+
 # SSOOIDCClient for boto3 SSOOIDC module
 
 > [Index](..) > [SSOOIDC](.) > SSOOIDCClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)
 type annotations stubs module
-[mypy_boto3_sso_oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
+[mypy-boto3-sso-oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
 
 - [SSOOIDCClient for boto3 SSOOIDC module](#ssooidcclient-for-boto3-ssooidc-module)
   - [SSOOIDCClient](#ssooidcclient)
@@ -18,6 +20,8 @@ type annotations stubs module
     - [register_client](#register_client)
     - [start_device_authorization](#start_device_authorization)
 
+<a id="ssooidcclient"></a>
+
 ## SSOOIDCClient
 
 Type annotations for `boto3.client("sso-oidc")`
@@ -25,14 +29,17 @@ Type annotations for `boto3.client("sso-oidc")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sso_oidc.client import SSOOIDCClient
 
 def get_sso-oidc_client() -> SSOOIDCClient:
-    return boto3.client("sso-oidc")
+    return Session().client("sso-oidc")
 ```
 
 Boto3 documentation:
 [SSOOIDC.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -62,7 +69,11 @@ Exceptions:
 - `Exceptions.UnauthorizedClientException`
 - `Exceptions.UnsupportedGrantTypeException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -74,6 +85,8 @@ Boto3 documentation:
 [SSOOIDC.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -89,6 +102,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_token"></a>
 
 ### create_token
 
@@ -116,6 +131,8 @@ Keyword-only arguments:
 Returns
 [CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -133,6 +150,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="register_client"></a>
 
 ### register_client
 
@@ -154,6 +173,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef).
+
+<a id="start_device_authorization"></a>
 
 ### start_device_authorization
 

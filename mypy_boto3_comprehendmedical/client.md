@@ -1,3 +1,5 @@
+<a id="comprehendmedicalclient-for-boto3-comprehendmedical-module"></a>
+
 # ComprehendMedicalClient for boto3 ComprehendMedical module
 
 > [Index](..) > [ComprehendMedical](.) > ComprehendMedicalClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
 type annotations stubs module
-[mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
+[mypy-boto3-comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
 - [ComprehendMedicalClient for boto3 ComprehendMedical module](#comprehendmedicalclient-for-boto3-comprehendmedical-module)
   - [ComprehendMedicalClient](#comprehendmedicalclient)
@@ -41,6 +43,8 @@ type annotations stubs module
     - [stop_rx_norm_inference_job](#stop_rx_norm_inference_job)
     - [stop_snomedct_inference_job](#stop_snomedct_inference_job)
 
+<a id="comprehendmedicalclient"></a>
+
 ## ComprehendMedicalClient
 
 Type annotations for `boto3.client("comprehendmedical")`
@@ -48,14 +52,17 @@ Type annotations for `boto3.client("comprehendmedical")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_comprehendmedical.client import ComprehendMedicalClient
 
 def get_comprehendmedical_client() -> ComprehendMedicalClient:
-    return boto3.client("comprehendmedical")
+    return Session().client("comprehendmedical")
 ```
 
 Boto3 documentation:
 [ComprehendMedical.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -81,7 +88,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -93,6 +104,8 @@ Boto3 documentation:
 [ComprehendMedical.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -108,6 +121,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="describe_entities_detection_v2_job"></a>
 
 ### describe_entities_detection_v2_job
 
@@ -129,6 +144,8 @@ Keyword-only arguments:
 Returns
 [DescribeEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#describeentitiesdetectionv2jobresponsetypedef).
 
+<a id="describe_icd10_cm_inference_job"></a>
+
 ### describe_icd10_cm_inference_job
 
 Gets the properties associated with an InferICD10CM job.
@@ -148,6 +165,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeICD10CMInferenceJobResponseTypeDef](./type_defs.md#describeicd10cminferencejobresponsetypedef).
+
+<a id="describe_phi_detection_job"></a>
 
 ### describe_phi_detection_job
 
@@ -170,6 +189,8 @@ Keyword-only arguments:
 Returns
 [DescribePHIDetectionJobResponseTypeDef](./type_defs.md#describephidetectionjobresponsetypedef).
 
+<a id="describe_rx_norm_inference_job"></a>
+
 ### describe_rx_norm_inference_job
 
 Gets the properties associated with an InferRxNorm job.
@@ -189,6 +210,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRxNormInferenceJobResponseTypeDef](./type_defs.md#describerxnorminferencejobresponsetypedef).
+
+<a id="describe_snomedct_inference_job"></a>
 
 ### describe_snomedct_inference_job
 
@@ -210,6 +233,8 @@ Keyword-only arguments:
 Returns
 [DescribeSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#describesnomedctinferencejobresponsetypedef).
 
+<a id="detect_entities"></a>
+
 ### detect_entities
 
 The `DetectEntities` operation is deprecated.
@@ -229,6 +254,8 @@ Keyword-only arguments:
 
 Returns
 [DetectEntitiesResponseTypeDef](./type_defs.md#detectentitiesresponsetypedef).
+
+<a id="detect_entities_v2"></a>
 
 ### detect_entities_v2
 
@@ -252,6 +279,8 @@ Keyword-only arguments:
 Returns
 [DetectEntitiesV2ResponseTypeDef](./type_defs.md#detectentitiesv2responsetypedef).
 
+<a id="detect_phi"></a>
+
 ### detect_phi
 
 Inspects the clinical text for protected health information (PHI) entities and
@@ -271,6 +300,8 @@ Keyword-only arguments:
 
 Returns [DetectPHIResponseTypeDef](./type_defs.md#detectphiresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -289,6 +320,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="infer_icd10_cm"></a>
 
 ### infer_icd10_cm
 
@@ -311,6 +344,8 @@ Keyword-only arguments:
 Returns
 [InferICD10CMResponseTypeDef](./type_defs.md#infericd10cmresponsetypedef).
 
+<a id="infer_rx_norm"></a>
+
 ### infer_rx_norm
 
 InferRxNorm detects medications as entities listed in a patient record and
@@ -331,6 +366,8 @@ Keyword-only arguments:
 
 Returns
 [InferRxNormResponseTypeDef](./type_defs.md#inferrxnormresponsetypedef).
+
+<a id="infer_snomedct"></a>
 
 ### infer_snomedct
 
@@ -355,6 +392,8 @@ Keyword-only arguments:
 Returns
 [InferSNOMEDCTResponseTypeDef](./type_defs.md#infersnomedctresponsetypedef).
 
+<a id="list_entities_detection_v2_jobs"></a>
+
 ### list_entities_detection_v2_jobs
 
 Gets a list of medical entity detection jobs that you have submitted.
@@ -378,6 +417,8 @@ Keyword-only arguments:
 Returns
 [ListEntitiesDetectionV2JobsResponseTypeDef](./type_defs.md#listentitiesdetectionv2jobsresponsetypedef).
 
+<a id="list_icd10_cm_inference_jobs"></a>
+
 ### list_icd10_cm_inference_jobs
 
 Gets a list of InferICD10CM jobs that you have submitted.
@@ -400,6 +441,8 @@ Keyword-only arguments:
 
 Returns
 [ListICD10CMInferenceJobsResponseTypeDef](./type_defs.md#listicd10cminferencejobsresponsetypedef).
+
+<a id="list_phi_detection_jobs"></a>
 
 ### list_phi_detection_jobs
 
@@ -425,6 +468,8 @@ Keyword-only arguments:
 Returns
 [ListPHIDetectionJobsResponseTypeDef](./type_defs.md#listphidetectionjobsresponsetypedef).
 
+<a id="list_rx_norm_inference_jobs"></a>
+
 ### list_rx_norm_inference_jobs
 
 Gets a list of InferRxNorm jobs that you have submitted.
@@ -448,6 +493,8 @@ Keyword-only arguments:
 Returns
 [ListRxNormInferenceJobsResponseTypeDef](./type_defs.md#listrxnorminferencejobsresponsetypedef).
 
+<a id="list_snomedct_inference_jobs"></a>
+
 ### list_snomedct_inference_jobs
 
 Gets a list of InferSNOMEDCT jobs a user has submitted.
@@ -470,6 +517,8 @@ Keyword-only arguments:
 
 Returns
 [ListSNOMEDCTInferenceJobsResponseTypeDef](./type_defs.md#listsnomedctinferencejobsresponsetypedef).
+
+<a id="start_entities_detection_v2_job"></a>
 
 ### start_entities_detection_v2_job
 
@@ -502,6 +551,8 @@ Keyword-only arguments:
 Returns
 [StartEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#startentitiesdetectionv2jobresponsetypedef).
 
+<a id="start_icd10_cm_inference_job"></a>
+
 ### start_icd10_cm_inference_job
 
 Starts an asynchronous job to detect medical conditions and link them to the
@@ -533,6 +584,8 @@ Keyword-only arguments:
 Returns
 [StartICD10CMInferenceJobResponseTypeDef](./type_defs.md#starticd10cminferencejobresponsetypedef).
 
+<a id="start_phi_detection_job"></a>
+
 ### start_phi_detection_job
 
 Starts an asynchronous job to detect protected health information (PHI).
@@ -562,6 +615,8 @@ Keyword-only arguments:
 
 Returns
 [StartPHIDetectionJobResponseTypeDef](./type_defs.md#startphidetectionjobresponsetypedef).
+
+<a id="start_rx_norm_inference_job"></a>
 
 ### start_rx_norm_inference_job
 
@@ -594,6 +649,8 @@ Keyword-only arguments:
 Returns
 [StartRxNormInferenceJobResponseTypeDef](./type_defs.md#startrxnorminferencejobresponsetypedef).
 
+<a id="start_snomedct_inference_job"></a>
+
 ### start_snomedct_inference_job
 
 Starts an asynchronous job to detect medical concepts and link them to the
@@ -625,6 +682,8 @@ Keyword-only arguments:
 Returns
 [StartSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#startsnomedctinferencejobresponsetypedef).
 
+<a id="stop_entities_detection_v2_job"></a>
+
 ### stop_entities_detection_v2_job
 
 Stops a medical entities detection job in progress.
@@ -644,6 +703,8 @@ Keyword-only arguments:
 
 Returns
 [StopEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#stopentitiesdetectionv2jobresponsetypedef).
+
+<a id="stop_icd10_cm_inference_job"></a>
 
 ### stop_icd10_cm_inference_job
 
@@ -665,6 +726,8 @@ Keyword-only arguments:
 Returns
 [StopICD10CMInferenceJobResponseTypeDef](./type_defs.md#stopicd10cminferencejobresponsetypedef).
 
+<a id="stop_phi_detection_job"></a>
+
 ### stop_phi_detection_job
 
 Stops a protected health information (PHI) detection job in progress.
@@ -685,6 +748,8 @@ Keyword-only arguments:
 Returns
 [StopPHIDetectionJobResponseTypeDef](./type_defs.md#stopphidetectionjobresponsetypedef).
 
+<a id="stop_rx_norm_inference_job"></a>
+
 ### stop_rx_norm_inference_job
 
 Stops an InferRxNorm inference job in progress.
@@ -704,6 +769,8 @@ Keyword-only arguments:
 
 Returns
 [StopRxNormInferenceJobResponseTypeDef](./type_defs.md#stoprxnorminferencejobresponsetypedef).
+
+<a id="stop_snomedct_inference_job"></a>
 
 ### stop_snomedct_inference_job
 

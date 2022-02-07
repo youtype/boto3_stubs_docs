@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-backup-module"></a>
+
 # Literals for boto3 Backup module
 
 > [Index](..) > [Backup](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
 type annotations stubs module
-[mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
+[mypy-boto3-backup](https://pypi.org/project/mypy-boto3-backup/).
 
 - [Literals for boto3 Backup module](#literals-for-boto3-backup-module)
   - [BackupJobStateType](#backupjobstatetype)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [RestoreJobStatusType](#restorejobstatustype)
   - [StorageClassType](#storageclasstype)
   - [ServiceName](#servicename)
+
+<a id="backupjobstatetype"></a>
 
 ## BackupJobStateType
 
@@ -33,6 +37,8 @@ Values:
 - `FAILED`
 - `PENDING`
 - `RUNNING`
+
+<a id="backupvaulteventtype"></a>
 
 ## BackupVaultEventType
 
@@ -58,6 +64,8 @@ Values:
 - `RESTORE_JOB_STARTED`
 - `RESTORE_JOB_SUCCESSFUL`
 
+<a id="conditiontypetype"></a>
+
 ## ConditionTypeType
 
 ```python
@@ -67,6 +75,8 @@ from mypy_boto3_backup.literals import ConditionTypeType
 Values:
 
 - `STRINGEQUALS`
+
+<a id="copyjobstatetype"></a>
 
 ## CopyJobStateType
 
@@ -81,6 +91,8 @@ Values:
 - `FAILED`
 - `RUNNING`
 
+<a id="recoverypointstatustype"></a>
+
 ## RecoveryPointStatusType
 
 ```python
@@ -93,6 +105,8 @@ Values:
 - `DELETING`
 - `EXPIRED`
 - `PARTIAL`
+
+<a id="restorejobstatustype"></a>
 
 ## RestoreJobStatusType
 
@@ -108,6 +122,8 @@ Values:
 - `PENDING`
 - `RUNNING`
 
+<a id="storageclasstype"></a>
+
 ## StorageClassType
 
 ```python
@@ -119,6 +135,8 @@ Values:
 - `COLD`
 - `DELETED`
 - `WARM`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

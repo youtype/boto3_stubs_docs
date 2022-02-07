@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-pi-module"></a>
+
 # Type annotations for boto3 PI module
 
 > [Index](..) > PI
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
 type annotations stubs module
-[mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
+[mypy-boto3-pi](https://pypi.org/project/mypy-boto3-pi/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[pi]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[pi]'
+
+# standalone installation
 pip install mypy-boto3-pi
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-pi
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="piclient"></a>
+
 ## PIClient
 
 Type annotations for `boto3.client("pi")` as [PIClient](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_pi.client import PIClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -40,6 +54,8 @@ from mypy_boto3_pi.client import PIClient
 - [list_available_resource_dimensions](./client.md#list_available_resource_dimensions)
 - [list_available_resource_metrics](./client.md#list_available_resource_metrics)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 PIClient [exceptions](./client.md#exceptions)
@@ -48,6 +64,8 @@ PIClient [exceptions](./client.md#exceptions)
 - InternalServiceError
 - InvalidArgumentException
 - NotAuthorizedException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -63,6 +81,8 @@ from mypy_boto3_pi.literals import DetailStatusType, ...
 - [FeatureStatusType](./literals.md#featurestatustype)
 - [ServiceTypeType](./literals.md#servicetypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

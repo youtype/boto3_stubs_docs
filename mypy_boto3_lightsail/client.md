@@ -1,3 +1,5 @@
+<a id="lightsailclient-for-boto3-lightsail-module"></a>
+
 # LightsailClient for boto3 Lightsail module
 
 > [Index](..) > [Lightsail](.) > LightsailClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
 type annotations stubs module
-[mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
+[mypy-boto3-lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 - [LightsailClient for boto3 Lightsail module](#lightsailclient-for-boto3-lightsail-module)
   - [LightsailClient](#lightsailclient)
@@ -169,6 +171,8 @@ type annotations stubs module
     - [update_relational_database_parameters](#update_relational_database_parameters)
     - [get_paginator](#get_paginator)
 
+<a id="lightsailclient"></a>
+
 ## LightsailClient
 
 Type annotations for `boto3.client("lightsail")`
@@ -176,14 +180,17 @@ Type annotations for `boto3.client("lightsail")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_lightsail.client import LightsailClient
 
 def get_lightsail_client() -> LightsailClient:
-    return boto3.client("lightsail")
+    return Session().client("lightsail")
 ```
 
 Boto3 documentation:
 [Lightsail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -208,7 +215,11 @@ Exceptions:
 - `Exceptions.ServiceException`
 - `Exceptions.UnauthenticatedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -220,6 +231,8 @@ Boto3 documentation:
 [Lightsail.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="allocate_static_ip"></a>
 
 ### allocate_static_ip
 
@@ -239,6 +252,8 @@ Keyword-only arguments:
 
 Returns
 [AllocateStaticIpResultTypeDef](./type_defs.md#allocatestaticipresulttypedef).
+
+<a id="attach_certificate_to_distribution"></a>
 
 ### attach_certificate_to_distribution
 
@@ -262,6 +277,8 @@ Keyword-only arguments:
 Returns
 [AttachCertificateToDistributionResultTypeDef](./type_defs.md#attachcertificatetodistributionresulttypedef).
 
+<a id="attach_disk"></a>
+
 ### attach_disk
 
 Attaches a block storage disk to a running or stopped Lightsail instance and
@@ -282,6 +299,8 @@ Keyword-only arguments:
 - `diskPath`: `str` *(required)*
 
 Returns [AttachDiskResultTypeDef](./type_defs.md#attachdiskresulttypedef).
+
+<a id="attach_instances_to_load_balancer"></a>
 
 ### attach_instances_to_load_balancer
 
@@ -304,6 +323,8 @@ Keyword-only arguments:
 Returns
 [AttachInstancesToLoadBalancerResultTypeDef](./type_defs.md#attachinstancestoloadbalancerresulttypedef).
 
+<a id="attach_load_balancer_tls_certificate"></a>
+
 ### attach_load_balancer_tls_certificate
 
 Attaches a Transport Layer Security (TLS) certificate to your load balancer.
@@ -325,6 +346,8 @@ Keyword-only arguments:
 Returns
 [AttachLoadBalancerTlsCertificateResultTypeDef](./type_defs.md#attachloadbalancertlscertificateresulttypedef).
 
+<a id="attach_static_ip"></a>
+
 ### attach_static_ip
 
 Attaches a static IP address to a specific Amazon Lightsail instance.
@@ -345,6 +368,8 @@ Keyword-only arguments:
 Returns
 [AttachStaticIpResultTypeDef](./type_defs.md#attachstaticipresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -359,6 +384,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="close_instance_public_ports"></a>
 
 ### close_instance_public_ports
 
@@ -380,6 +407,8 @@ Keyword-only arguments:
 
 Returns
 [CloseInstancePublicPortsResultTypeDef](./type_defs.md#closeinstancepublicportsresulttypedef).
+
+<a id="copy_snapshot"></a>
 
 ### copy_snapshot
 
@@ -405,6 +434,8 @@ Keyword-only arguments:
 
 Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
 
+<a id="create_bucket"></a>
+
 ### create_bucket
 
 Creates an Amazon Lightsail bucket.
@@ -426,6 +457,8 @@ Keyword-only arguments:
 
 Returns [CreateBucketResultTypeDef](./type_defs.md#createbucketresulttypedef).
 
+<a id="create_bucket_access_key"></a>
+
 ### create_bucket_access_key
 
 Creates a new access key for the specified Amazon Lightsail bucket.
@@ -445,6 +478,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBucketAccessKeyResultTypeDef](./type_defs.md#createbucketaccesskeyresulttypedef).
+
+<a id="create_certificate"></a>
 
 ### create_certificate
 
@@ -469,6 +504,8 @@ Keyword-only arguments:
 Returns
 [CreateCertificateResultTypeDef](./type_defs.md#createcertificateresulttypedef).
 
+<a id="create_cloud_formation_stack"></a>
+
 ### create_cloud_formation_stack
 
 Creates an AWS CloudFormation stack, which creates a new Amazon EC2 instance
@@ -492,6 +529,8 @@ Keyword-only arguments:
 Returns
 [CreateCloudFormationStackResultTypeDef](./type_defs.md#createcloudformationstackresulttypedef).
 
+<a id="create_contact_method"></a>
+
 ### create_contact_method
 
 Creates an email or SMS text message contact method.
@@ -512,6 +551,8 @@ Keyword-only arguments:
 
 Returns
 [CreateContactMethodResultTypeDef](./type_defs.md#createcontactmethodresulttypedef).
+
+<a id="create_container_service"></a>
 
 ### create_container_service
 
@@ -541,6 +582,8 @@ Keyword-only arguments:
 Returns
 [CreateContainerServiceResultTypeDef](./type_defs.md#createcontainerserviceresulttypedef).
 
+<a id="create_container_service_deployment"></a>
+
 ### create_container_service_deployment
 
 Creates a deployment for your Amazon Lightsail container service.
@@ -565,6 +608,8 @@ Keyword-only arguments:
 Returns
 [CreateContainerServiceDeploymentResultTypeDef](./type_defs.md#createcontainerservicedeploymentresulttypedef).
 
+<a id="create_container_service_registry_login"></a>
+
 ### create_container_service_registry_login
 
 Creates a temporary set of log in credentials that you can use to log in to the
@@ -578,6 +623,8 @@ Boto3 documentation:
 
 Returns
 [CreateContainerServiceRegistryLoginResultTypeDef](./type_defs.md#createcontainerserviceregistryloginresulttypedef).
+
+<a id="create_disk"></a>
 
 ### create_disk
 
@@ -602,6 +649,8 @@ Keyword-only arguments:
   `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 
 Returns [CreateDiskResultTypeDef](./type_defs.md#creatediskresulttypedef).
+
+<a id="create_disk_from_snapshot"></a>
 
 ### create_disk_from_snapshot
 
@@ -632,6 +681,8 @@ Keyword-only arguments:
 Returns
 [CreateDiskFromSnapshotResultTypeDef](./type_defs.md#creatediskfromsnapshotresulttypedef).
 
+<a id="create_disk_snapshot"></a>
+
 ### create_disk_snapshot
 
 Creates a snapshot of a block storage disk.
@@ -653,6 +704,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDiskSnapshotResultTypeDef](./type_defs.md#createdisksnapshotresulttypedef).
+
+<a id="create_distribution"></a>
 
 ### create_distribution
 
@@ -684,6 +737,8 @@ Keyword-only arguments:
 Returns
 [CreateDistributionResultTypeDef](./type_defs.md#createdistributionresulttypedef).
 
+<a id="create_domain"></a>
+
 ### create_domain
 
 Creates a domain resource for the specified domain (e.g., example.com).
@@ -702,6 +757,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
+
+<a id="create_domain_entry"></a>
 
 ### create_domain_entry
 
@@ -726,6 +783,8 @@ Keyword-only arguments:
 Returns
 [CreateDomainEntryResultTypeDef](./type_defs.md#createdomainentryresulttypedef).
 
+<a id="create_instance_snapshot"></a>
+
 ### create_instance_snapshot
 
 Creates a snapshot of a specific virtual private server, or *instance*.
@@ -747,6 +806,8 @@ Keyword-only arguments:
 
 Returns
 [CreateInstanceSnapshotResultTypeDef](./type_defs.md#createinstancesnapshotresulttypedef).
+
+<a id="create_instances"></a>
 
 ### create_instances
 
@@ -776,6 +837,8 @@ Keyword-only arguments:
 
 Returns
 [CreateInstancesResultTypeDef](./type_defs.md#createinstancesresulttypedef).
+
+<a id="create_instances_from_snapshot"></a>
 
 ### create_instances_from_snapshot
 
@@ -812,6 +875,8 @@ Keyword-only arguments:
 Returns
 [CreateInstancesFromSnapshotResultTypeDef](./type_defs.md#createinstancesfromsnapshotresulttypedef).
 
+<a id="create_key_pair"></a>
+
 ### create_key_pair
 
 Creates an SSH key pair.
@@ -831,6 +896,8 @@ Keyword-only arguments:
 
 Returns
 [CreateKeyPairResultTypeDef](./type_defs.md#createkeypairresulttypedef).
+
+<a id="create_load_balancer"></a>
 
 ### create_load_balancer
 
@@ -858,6 +925,8 @@ Keyword-only arguments:
 Returns
 [CreateLoadBalancerResultTypeDef](./type_defs.md#createloadbalancerresulttypedef).
 
+<a id="create_load_balancer_tls_certificate"></a>
+
 ### create_load_balancer_tls_certificate
 
 Creates an SSL/TLS certificate for an Amazon Lightsail load balancer.
@@ -881,6 +950,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLoadBalancerTlsCertificateResultTypeDef](./type_defs.md#createloadbalancertlscertificateresulttypedef).
+
+<a id="create_relational_database"></a>
 
 ### create_relational_database
 
@@ -912,6 +983,8 @@ Keyword-only arguments:
 Returns
 [CreateRelationalDatabaseResultTypeDef](./type_defs.md#createrelationaldatabaseresulttypedef).
 
+<a id="create_relational_database_from_snapshot"></a>
+
 ### create_relational_database_from_snapshot
 
 Creates a new database from an existing database snapshot in Amazon Lightsail.
@@ -940,6 +1013,8 @@ Keyword-only arguments:
 Returns
 [CreateRelationalDatabaseFromSnapshotResultTypeDef](./type_defs.md#createrelationaldatabasefromsnapshotresulttypedef).
 
+<a id="create_relational_database_snapshot"></a>
+
 ### create_relational_database_snapshot
 
 Creates a snapshot of your database in Amazon Lightsail.
@@ -962,6 +1037,8 @@ Keyword-only arguments:
 Returns
 [CreateRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#createrelationaldatabasesnapshotresulttypedef).
 
+<a id="delete_alarm"></a>
+
 ### delete_alarm
 
 Deletes an alarm.
@@ -979,6 +1056,8 @@ Keyword-only arguments:
 - `alarmName`: `str` *(required)*
 
 Returns [DeleteAlarmResultTypeDef](./type_defs.md#deletealarmresulttypedef).
+
+<a id="delete_auto_snapshot"></a>
 
 ### delete_auto_snapshot
 
@@ -1000,6 +1079,8 @@ Keyword-only arguments:
 Returns
 [DeleteAutoSnapshotResultTypeDef](./type_defs.md#deleteautosnapshotresulttypedef).
 
+<a id="delete_bucket"></a>
+
 ### delete_bucket
 
 Deletes a Amazon Lightsail bucket.
@@ -1018,6 +1099,8 @@ Keyword-only arguments:
 - `forceDelete`: `bool`
 
 Returns [DeleteBucketResultTypeDef](./type_defs.md#deletebucketresulttypedef).
+
+<a id="delete_bucket_access_key"></a>
 
 ### delete_bucket_access_key
 
@@ -1040,6 +1123,8 @@ Keyword-only arguments:
 Returns
 [DeleteBucketAccessKeyResultTypeDef](./type_defs.md#deletebucketaccesskeyresulttypedef).
 
+<a id="delete_certificate"></a>
+
 ### delete_certificate
 
 Deletes an SSL/TLS certificate for your Amazon Lightsail content delivery
@@ -1059,6 +1144,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteCertificateResultTypeDef](./type_defs.md#deletecertificateresulttypedef).
+
+<a id="delete_contact_method"></a>
 
 ### delete_contact_method
 
@@ -1080,6 +1167,8 @@ Keyword-only arguments:
 Returns
 [DeleteContactMethodResultTypeDef](./type_defs.md#deletecontactmethodresulttypedef).
 
+<a id="delete_container_image"></a>
+
 ### delete_container_image
 
 Deletes a container image that is registered to your Amazon Lightsail container
@@ -1100,6 +1189,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_container_service"></a>
+
 ### delete_container_service
 
 Deletes your Amazon Lightsail container service.
@@ -1118,6 +1209,8 @@ Keyword-only arguments:
 - `serviceName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_disk"></a>
 
 ### delete_disk
 
@@ -1138,6 +1231,8 @@ Keyword-only arguments:
 
 Returns [DeleteDiskResultTypeDef](./type_defs.md#deletediskresulttypedef).
 
+<a id="delete_disk_snapshot"></a>
+
 ### delete_disk_snapshot
 
 Deletes the specified disk snapshot.
@@ -1156,6 +1251,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteDiskSnapshotResultTypeDef](./type_defs.md#deletedisksnapshotresulttypedef).
+
+<a id="delete_distribution"></a>
 
 ### delete_distribution
 
@@ -1176,6 +1273,8 @@ Keyword-only arguments:
 Returns
 [DeleteDistributionResultTypeDef](./type_defs.md#deletedistributionresulttypedef).
 
+<a id="delete_domain"></a>
+
 ### delete_domain
 
 Deletes the specified domain recordset and all of its domain records.
@@ -1193,6 +1292,8 @@ Keyword-only arguments:
 - `domainName`: `str` *(required)*
 
 Returns [DeleteDomainResultTypeDef](./type_defs.md#deletedomainresulttypedef).
+
+<a id="delete_domain_entry"></a>
 
 ### delete_domain_entry
 
@@ -1215,6 +1316,8 @@ Keyword-only arguments:
 Returns
 [DeleteDomainEntryResultTypeDef](./type_defs.md#deletedomainentryresulttypedef).
 
+<a id="delete_instance"></a>
+
 ### delete_instance
 
 Deletes an Amazon Lightsail instance.
@@ -1234,6 +1337,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteInstanceResultTypeDef](./type_defs.md#deleteinstanceresulttypedef).
+
+<a id="delete_instance_snapshot"></a>
 
 ### delete_instance_snapshot
 
@@ -1255,6 +1360,8 @@ Keyword-only arguments:
 Returns
 [DeleteInstanceSnapshotResultTypeDef](./type_defs.md#deleteinstancesnapshotresulttypedef).
 
+<a id="delete_key_pair"></a>
+
 ### delete_key_pair
 
 Deletes a specific SSH key pair.
@@ -1273,6 +1380,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteKeyPairResultTypeDef](./type_defs.md#deletekeypairresulttypedef).
+
+<a id="delete_known_host_keys"></a>
 
 ### delete_known_host_keys
 
@@ -1294,6 +1403,8 @@ Keyword-only arguments:
 Returns
 [DeleteKnownHostKeysResultTypeDef](./type_defs.md#deleteknownhostkeysresulttypedef).
 
+<a id="delete_load_balancer"></a>
+
 ### delete_load_balancer
 
 Deletes a Lightsail load balancer and all its associated SSL/TLS certificates.
@@ -1312,6 +1423,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteLoadBalancerResultTypeDef](./type_defs.md#deleteloadbalancerresulttypedef).
+
+<a id="delete_load_balancer_tls_certificate"></a>
 
 ### delete_load_balancer_tls_certificate
 
@@ -1335,6 +1448,8 @@ Keyword-only arguments:
 Returns
 [DeleteLoadBalancerTlsCertificateResultTypeDef](./type_defs.md#deleteloadbalancertlscertificateresulttypedef).
 
+<a id="delete_relational_database"></a>
+
 ### delete_relational_database
 
 Deletes a database in Amazon Lightsail.
@@ -1357,6 +1472,8 @@ Keyword-only arguments:
 Returns
 [DeleteRelationalDatabaseResultTypeDef](./type_defs.md#deleterelationaldatabaseresulttypedef).
 
+<a id="delete_relational_database_snapshot"></a>
+
 ### delete_relational_database_snapshot
 
 Deletes a database snapshot in Amazon Lightsail.
@@ -1376,6 +1493,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#deleterelationaldatabasesnapshotresulttypedef).
+
+<a id="detach_certificate_from_distribution"></a>
 
 ### detach_certificate_from_distribution
 
@@ -1398,6 +1517,8 @@ Keyword-only arguments:
 Returns
 [DetachCertificateFromDistributionResultTypeDef](./type_defs.md#detachcertificatefromdistributionresulttypedef).
 
+<a id="detach_disk"></a>
+
 ### detach_disk
 
 Detaches a stopped block storage disk from a Lightsail instance.
@@ -1415,6 +1536,8 @@ Keyword-only arguments:
 - `diskName`: `str` *(required)*
 
 Returns [DetachDiskResultTypeDef](./type_defs.md#detachdiskresulttypedef).
+
+<a id="detach_instances_from_load_balancer"></a>
 
 ### detach_instances_from_load_balancer
 
@@ -1437,6 +1560,8 @@ Keyword-only arguments:
 Returns
 [DetachInstancesFromLoadBalancerResultTypeDef](./type_defs.md#detachinstancesfromloadbalancerresulttypedef).
 
+<a id="detach_static_ip"></a>
+
 ### detach_static_ip
 
 Detaches a static IP from the Amazon Lightsail instance to which it is
@@ -1456,6 +1581,8 @@ Keyword-only arguments:
 
 Returns
 [DetachStaticIpResultTypeDef](./type_defs.md#detachstaticipresulttypedef).
+
+<a id="disable_add_on"></a>
 
 ### disable_add_on
 
@@ -1477,6 +1604,8 @@ Keyword-only arguments:
 
 Returns [DisableAddOnResultTypeDef](./type_defs.md#disableaddonresulttypedef).
 
+<a id="download_default_key_pair"></a>
+
 ### download_default_key_pair
 
 Downloads the default SSH key pair from the user's account.
@@ -1489,6 +1618,8 @@ Boto3 documentation:
 
 Returns
 [DownloadDefaultKeyPairResultTypeDef](./type_defs.md#downloaddefaultkeypairresulttypedef).
+
+<a id="enable_add_on"></a>
 
 ### enable_add_on
 
@@ -1510,6 +1641,8 @@ Keyword-only arguments:
 
 Returns [EnableAddOnResultTypeDef](./type_defs.md#enableaddonresulttypedef).
 
+<a id="export_snapshot"></a>
+
 ### export_snapshot
 
 Exports an Amazon Lightsail instance or block storage disk snapshot to Amazon
@@ -1530,6 +1663,8 @@ Keyword-only arguments:
 Returns
 [ExportSnapshotResultTypeDef](./type_defs.md#exportsnapshotresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1547,6 +1682,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_active_names"></a>
 
 ### get_active_names
 
@@ -1566,6 +1703,8 @@ Keyword-only arguments:
 
 Returns
 [GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef).
+
+<a id="get_alarms"></a>
 
 ### get_alarms
 
@@ -1587,6 +1726,8 @@ Keyword-only arguments:
 
 Returns [GetAlarmsResultTypeDef](./type_defs.md#getalarmsresulttypedef).
 
+<a id="get_auto_snapshots"></a>
+
 ### get_auto_snapshots
 
 Returns the available automatic snapshots for an instance or disk.
@@ -1605,6 +1746,8 @@ Keyword-only arguments:
 
 Returns
 [GetAutoSnapshotsResultTypeDef](./type_defs.md#getautosnapshotsresulttypedef).
+
+<a id="get_blueprints"></a>
 
 ### get_blueprints
 
@@ -1626,6 +1769,8 @@ Keyword-only arguments:
 Returns
 [GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef).
 
+<a id="get_bucket_access_keys"></a>
+
 ### get_bucket_access_keys
 
 Returns the existing access key IDs for the specified Amazon Lightsail bucket.
@@ -1645,6 +1790,8 @@ Keyword-only arguments:
 Returns
 [GetBucketAccessKeysResultTypeDef](./type_defs.md#getbucketaccesskeysresulttypedef).
 
+<a id="get_bucket_bundles"></a>
+
 ### get_bucket_bundles
 
 Returns the bundles that you can apply to a Amazon Lightsail bucket.
@@ -1663,6 +1810,8 @@ Keyword-only arguments:
 
 Returns
 [GetBucketBundlesResultTypeDef](./type_defs.md#getbucketbundlesresulttypedef).
+
+<a id="get_bucket_metric_data"></a>
 
 ### get_bucket_metric_data
 
@@ -1692,6 +1841,8 @@ Keyword-only arguments:
 Returns
 [GetBucketMetricDataResultTypeDef](./type_defs.md#getbucketmetricdataresulttypedef).
 
+<a id="get_buckets"></a>
+
 ### get_buckets
 
 Returns information about one or more Amazon Lightsail buckets.
@@ -1712,6 +1863,8 @@ Keyword-only arguments:
 
 Returns [GetBucketsResultTypeDef](./type_defs.md#getbucketsresulttypedef).
 
+<a id="get_bundles"></a>
+
 ### get_bundles
 
 Returns the list of bundles that are available for purchase.
@@ -1730,6 +1883,8 @@ Keyword-only arguments:
 - `pageToken`: `str`
 
 Returns [GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef).
+
+<a id="get_certificates"></a>
 
 ### get_certificates
 
@@ -1753,6 +1908,8 @@ Keyword-only arguments:
 Returns
 [GetCertificatesResultTypeDef](./type_defs.md#getcertificatesresulttypedef).
 
+<a id="get_cloud_formation_stack_records"></a>
+
 ### get_cloud_formation_stack_records
 
 Returns the CloudFormation stack record created as a result of the
@@ -1774,6 +1931,8 @@ Keyword-only arguments:
 Returns
 [GetCloudFormationStackRecordsResultTypeDef](./type_defs.md#getcloudformationstackrecordsresulttypedef).
 
+<a id="get_contact_methods"></a>
+
 ### get_contact_methods
 
 Returns information about the configured contact methods.
@@ -1794,6 +1953,8 @@ Keyword-only arguments:
 Returns
 [GetContactMethodsResultTypeDef](./type_defs.md#getcontactmethodsresulttypedef).
 
+<a id="get_container_api_metadata"></a>
+
 ### get_container_api_metadata
 
 Returns information about Amazon Lightsail containers, such as the current
@@ -1807,6 +1968,8 @@ Boto3 documentation:
 
 Returns
 [GetContainerAPIMetadataResultTypeDef](./type_defs.md#getcontainerapimetadataresulttypedef).
+
+<a id="get_container_images"></a>
 
 ### get_container_images
 
@@ -1827,6 +1990,8 @@ Keyword-only arguments:
 
 Returns
 [GetContainerImagesResultTypeDef](./type_defs.md#getcontainerimagesresulttypedef).
+
+<a id="get_container_log"></a>
 
 ### get_container_log
 
@@ -1853,6 +2018,8 @@ Keyword-only arguments:
 Returns
 [GetContainerLogResultTypeDef](./type_defs.md#getcontainerlogresulttypedef).
 
+<a id="get_container_service_deployments"></a>
+
 ### get_container_service_deployments
 
 Returns the deployments for your Amazon Lightsail container service A
@@ -1874,6 +2041,8 @@ Keyword-only arguments:
 
 Returns
 [GetContainerServiceDeploymentsResultTypeDef](./type_defs.md#getcontainerservicedeploymentsresulttypedef).
+
+<a id="get_container_service_metric_data"></a>
 
 ### get_container_service_metric_data
 
@@ -1905,6 +2074,8 @@ Keyword-only arguments:
 Returns
 [GetContainerServiceMetricDataResultTypeDef](./type_defs.md#getcontainerservicemetricdataresulttypedef).
 
+<a id="get_container_service_powers"></a>
+
 ### get_container_service_powers
 
 Returns the list of powers that can be specified for your Amazon Lightsail
@@ -1918,6 +2089,8 @@ Boto3 documentation:
 
 Returns
 [GetContainerServicePowersResultTypeDef](./type_defs.md#getcontainerservicepowersresulttypedef).
+
+<a id="get_container_services"></a>
 
 ### get_container_services
 
@@ -1939,6 +2112,8 @@ Keyword-only arguments:
 Returns
 [ContainerServicesListResultTypeDef](./type_defs.md#containerserviceslistresulttypedef).
 
+<a id="get_disk"></a>
+
 ### get_disk
 
 Returns information about a specific block storage disk.
@@ -1956,6 +2131,8 @@ Keyword-only arguments:
 - `diskName`: `str` *(required)*
 
 Returns [GetDiskResultTypeDef](./type_defs.md#getdiskresulttypedef).
+
+<a id="get_disk_snapshot"></a>
 
 ### get_disk_snapshot
 
@@ -1975,6 +2152,8 @@ Keyword-only arguments:
 
 Returns
 [GetDiskSnapshotResultTypeDef](./type_defs.md#getdisksnapshotresulttypedef).
+
+<a id="get_disk_snapshots"></a>
 
 ### get_disk_snapshots
 
@@ -1996,6 +2175,8 @@ Keyword-only arguments:
 Returns
 [GetDiskSnapshotsResultTypeDef](./type_defs.md#getdisksnapshotsresulttypedef).
 
+<a id="get_disks"></a>
+
 ### get_disks
 
 Returns information about all block storage disks in your AWS account and
@@ -2015,6 +2196,8 @@ Keyword-only arguments:
 
 Returns [GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef).
 
+<a id="get_distribution_bundles"></a>
+
 ### get_distribution_bundles
 
 Returns the bundles that can be applied to your Amazon Lightsail content
@@ -2028,6 +2211,8 @@ Boto3 documentation:
 
 Returns
 [GetDistributionBundlesResultTypeDef](./type_defs.md#getdistributionbundlesresulttypedef).
+
+<a id="get_distribution_latest_cache_reset"></a>
 
 ### get_distribution_latest_cache_reset
 
@@ -2049,6 +2234,8 @@ Keyword-only arguments:
 
 Returns
 [GetDistributionLatestCacheResetResultTypeDef](./type_defs.md#getdistributionlatestcacheresetresulttypedef).
+
+<a id="get_distribution_metric_data"></a>
 
 ### get_distribution_metric_data
 
@@ -2081,6 +2268,8 @@ Keyword-only arguments:
 Returns
 [GetDistributionMetricDataResultTypeDef](./type_defs.md#getdistributionmetricdataresulttypedef).
 
+<a id="get_distributions"></a>
+
 ### get_distributions
 
 Returns information about one or more of your Amazon Lightsail content delivery
@@ -2102,6 +2291,8 @@ Keyword-only arguments:
 Returns
 [GetDistributionsResultTypeDef](./type_defs.md#getdistributionsresulttypedef).
 
+<a id="get_domain"></a>
+
 ### get_domain
 
 Returns information about a specific domain recordset.
@@ -2120,6 +2311,8 @@ Keyword-only arguments:
 
 Returns [GetDomainResultTypeDef](./type_defs.md#getdomainresulttypedef).
 
+<a id="get_domains"></a>
+
 ### get_domains
 
 Returns a list of all domains in the user's account.
@@ -2137,6 +2330,8 @@ Keyword-only arguments:
 - `pageToken`: `str`
 
 Returns [GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef).
+
+<a id="get_export_snapshot_records"></a>
 
 ### get_export_snapshot_records
 
@@ -2159,6 +2354,8 @@ Keyword-only arguments:
 Returns
 [GetExportSnapshotRecordsResultTypeDef](./type_defs.md#getexportsnapshotrecordsresulttypedef).
 
+<a id="get_instance"></a>
+
 ### get_instance
 
 Returns information about a specific Amazon Lightsail instance, which is a
@@ -2177,6 +2374,8 @@ Keyword-only arguments:
 - `instanceName`: `str` *(required)*
 
 Returns [GetInstanceResultTypeDef](./type_defs.md#getinstanceresulttypedef).
+
+<a id="get_instance_access_details"></a>
 
 ### get_instance_access_details
 
@@ -2200,6 +2399,8 @@ Keyword-only arguments:
 
 Returns
 [GetInstanceAccessDetailsResultTypeDef](./type_defs.md#getinstanceaccessdetailsresulttypedef).
+
+<a id="get_instance_metric_data"></a>
 
 ### get_instance_metric_data
 
@@ -2231,6 +2432,8 @@ Keyword-only arguments:
 Returns
 [GetInstanceMetricDataResultTypeDef](./type_defs.md#getinstancemetricdataresulttypedef).
 
+<a id="get_instance_port_states"></a>
+
 ### get_instance_port_states
 
 Returns the firewall port states for a specific Amazon Lightsail instance, the
@@ -2253,6 +2456,8 @@ Keyword-only arguments:
 Returns
 [GetInstancePortStatesResultTypeDef](./type_defs.md#getinstanceportstatesresulttypedef).
 
+<a id="get_instance_snapshot"></a>
+
 ### get_instance_snapshot
 
 Returns information about a specific instance snapshot.
@@ -2271,6 +2476,8 @@ Keyword-only arguments:
 
 Returns
 [GetInstanceSnapshotResultTypeDef](./type_defs.md#getinstancesnapshotresulttypedef).
+
+<a id="get_instance_snapshots"></a>
 
 ### get_instance_snapshots
 
@@ -2291,6 +2498,8 @@ Keyword-only arguments:
 Returns
 [GetInstanceSnapshotsResultTypeDef](./type_defs.md#getinstancesnapshotsresulttypedef).
 
+<a id="get_instance_state"></a>
+
 ### get_instance_state
 
 Returns the state of a specific instance.
@@ -2309,6 +2518,8 @@ Keyword-only arguments:
 
 Returns
 [GetInstanceStateResultTypeDef](./type_defs.md#getinstancestateresulttypedef).
+
+<a id="get_instances"></a>
 
 ### get_instances
 
@@ -2329,6 +2540,8 @@ Keyword-only arguments:
 
 Returns [GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef).
 
+<a id="get_key_pair"></a>
+
 ### get_key_pair
 
 Returns information about a specific key pair.
@@ -2346,6 +2559,8 @@ Keyword-only arguments:
 - `keyPairName`: `str` *(required)*
 
 Returns [GetKeyPairResultTypeDef](./type_defs.md#getkeypairresulttypedef).
+
+<a id="get_key_pairs"></a>
 
 ### get_key_pairs
 
@@ -2365,6 +2580,8 @@ Keyword-only arguments:
 
 Returns [GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef).
 
+<a id="get_load_balancer"></a>
+
 ### get_load_balancer
 
 Returns information about the specified Lightsail load balancer.
@@ -2383,6 +2600,8 @@ Keyword-only arguments:
 
 Returns
 [GetLoadBalancerResultTypeDef](./type_defs.md#getloadbalancerresulttypedef).
+
+<a id="get_load_balancer_metric_data"></a>
 
 ### get_load_balancer_metric_data
 
@@ -2414,6 +2633,8 @@ Keyword-only arguments:
 Returns
 [GetLoadBalancerMetricDataResultTypeDef](./type_defs.md#getloadbalancermetricdataresulttypedef).
 
+<a id="get_load_balancer_tls_certificates"></a>
+
 ### get_load_balancer_tls_certificates
 
 Returns information about the TLS certificates that are associated with the
@@ -2435,6 +2656,8 @@ Keyword-only arguments:
 Returns
 [GetLoadBalancerTlsCertificatesResultTypeDef](./type_defs.md#getloadbalancertlscertificatesresulttypedef).
 
+<a id="get_load_balancers"></a>
+
 ### get_load_balancers
 
 Returns information about all load balancers in an account.
@@ -2454,6 +2677,8 @@ Keyword-only arguments:
 Returns
 [GetLoadBalancersResultTypeDef](./type_defs.md#getloadbalancersresulttypedef).
 
+<a id="get_operation"></a>
+
 ### get_operation
 
 Returns information about a specific operation.
@@ -2471,6 +2696,8 @@ Keyword-only arguments:
 - `operationId`: `str` *(required)*
 
 Returns [GetOperationResultTypeDef](./type_defs.md#getoperationresulttypedef).
+
+<a id="get_operations"></a>
 
 ### get_operations
 
@@ -2490,6 +2717,8 @@ Keyword-only arguments:
 
 Returns
 [GetOperationsResultTypeDef](./type_defs.md#getoperationsresulttypedef).
+
+<a id="get_operations_for_resource"></a>
 
 ### get_operations_for_resource
 
@@ -2512,6 +2741,8 @@ Keyword-only arguments:
 Returns
 [GetOperationsForResourceResultTypeDef](./type_defs.md#getoperationsforresourceresulttypedef).
 
+<a id="get_regions"></a>
+
 ### get_regions
 
 Returns a list of all valid regions for Amazon Lightsail.
@@ -2530,6 +2761,8 @@ Keyword-only arguments:
 - `includeRelationalDatabaseAvailabilityZones`: `bool`
 
 Returns [GetRegionsResultTypeDef](./type_defs.md#getregionsresulttypedef).
+
+<a id="get_relational_database"></a>
 
 ### get_relational_database
 
@@ -2551,6 +2784,8 @@ Keyword-only arguments:
 Returns
 [GetRelationalDatabaseResultTypeDef](./type_defs.md#getrelationaldatabaseresulttypedef).
 
+<a id="get_relational_database_blueprints"></a>
+
 ### get_relational_database_blueprints
 
 Returns a list of available database blueprints in Amazon Lightsail.
@@ -2571,6 +2806,8 @@ Keyword-only arguments:
 Returns
 [GetRelationalDatabaseBlueprintsResultTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresulttypedef).
 
+<a id="get_relational_database_bundles"></a>
+
 ### get_relational_database_bundles
 
 Returns the list of bundles that are available in Amazon Lightsail.
@@ -2590,6 +2827,8 @@ Keyword-only arguments:
 
 Returns
 [GetRelationalDatabaseBundlesResultTypeDef](./type_defs.md#getrelationaldatabasebundlesresulttypedef).
+
+<a id="get_relational_database_events"></a>
 
 ### get_relational_database_events
 
@@ -2612,6 +2851,8 @@ Keyword-only arguments:
 
 Returns
 [GetRelationalDatabaseEventsResultTypeDef](./type_defs.md#getrelationaldatabaseeventsresulttypedef).
+
+<a id="get_relational_database_log_events"></a>
 
 ### get_relational_database_log_events
 
@@ -2638,6 +2879,8 @@ Keyword-only arguments:
 Returns
 [GetRelationalDatabaseLogEventsResultTypeDef](./type_defs.md#getrelationaldatabaselogeventsresulttypedef).
 
+<a id="get_relational_database_log_streams"></a>
+
 ### get_relational_database_log_streams
 
 Returns a list of available log streams for a specific database in Amazon
@@ -2658,6 +2901,8 @@ Keyword-only arguments:
 
 Returns
 [GetRelationalDatabaseLogStreamsResultTypeDef](./type_defs.md#getrelationaldatabaselogstreamsresulttypedef).
+
+<a id="get_relational_database_master_user_password"></a>
 
 ### get_relational_database_master_user_password
 
@@ -2682,6 +2927,8 @@ Keyword-only arguments:
 
 Returns
 [GetRelationalDatabaseMasterUserPasswordResultTypeDef](./type_defs.md#getrelationaldatabasemasteruserpasswordresulttypedef).
+
+<a id="get_relational_database_metric_data"></a>
 
 ### get_relational_database_metric_data
 
@@ -2714,6 +2961,8 @@ Keyword-only arguments:
 Returns
 [GetRelationalDatabaseMetricDataResultTypeDef](./type_defs.md#getrelationaldatabasemetricdataresulttypedef).
 
+<a id="get_relational_database_parameters"></a>
+
 ### get_relational_database_parameters
 
 Returns all of the runtime parameters offered by the underlying database
@@ -2736,6 +2985,8 @@ Keyword-only arguments:
 Returns
 [GetRelationalDatabaseParametersResultTypeDef](./type_defs.md#getrelationaldatabaseparametersresulttypedef).
 
+<a id="get_relational_database_snapshot"></a>
+
 ### get_relational_database_snapshot
 
 Returns information about a specific database snapshot in Amazon Lightsail.
@@ -2755,6 +3006,8 @@ Keyword-only arguments:
 
 Returns
 [GetRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotresulttypedef).
+
+<a id="get_relational_database_snapshots"></a>
 
 ### get_relational_database_snapshots
 
@@ -2776,6 +3029,8 @@ Keyword-only arguments:
 Returns
 [GetRelationalDatabaseSnapshotsResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresulttypedef).
 
+<a id="get_relational_databases"></a>
+
 ### get_relational_databases
 
 Returns information about all of your databases in Amazon Lightsail.
@@ -2796,6 +3051,8 @@ Keyword-only arguments:
 Returns
 [GetRelationalDatabasesResultTypeDef](./type_defs.md#getrelationaldatabasesresulttypedef).
 
+<a id="get_static_ip"></a>
+
 ### get_static_ip
 
 Returns information about an Amazon Lightsail static IP.
@@ -2814,6 +3071,8 @@ Keyword-only arguments:
 
 Returns [GetStaticIpResultTypeDef](./type_defs.md#getstaticipresulttypedef).
 
+<a id="get_static_ips"></a>
+
 ### get_static_ips
 
 Returns information about all static IPs in the user's account.
@@ -2831,6 +3090,8 @@ Keyword-only arguments:
 - `pageToken`: `str`
 
 Returns [GetStaticIpsResultTypeDef](./type_defs.md#getstaticipsresulttypedef).
+
+<a id="import_key_pair"></a>
 
 ### import_key_pair
 
@@ -2852,6 +3113,8 @@ Keyword-only arguments:
 Returns
 [ImportKeyPairResultTypeDef](./type_defs.md#importkeypairresulttypedef).
 
+<a id="is_vpc_peered"></a>
+
 ### is_vpc_peered
 
 Returns a Boolean value indicating whether your Lightsail VPC is peered.
@@ -2862,6 +3125,8 @@ Boto3 documentation:
 [Lightsail.Client.is_vpc_peered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.is_vpc_peered)
 
 Returns [IsVpcPeeredResultTypeDef](./type_defs.md#isvpcpeeredresulttypedef).
+
+<a id="open_instance_public_ports"></a>
 
 ### open_instance_public_ports
 
@@ -2886,6 +3151,8 @@ Keyword-only arguments:
 Returns
 [OpenInstancePublicPortsResultTypeDef](./type_defs.md#openinstancepublicportsresulttypedef).
 
+<a id="peer_vpc"></a>
+
 ### peer_vpc
 
 Peers the Lightsail VPC with the user's default VPC.
@@ -2896,6 +3163,8 @@ Boto3 documentation:
 [Lightsail.Client.peer_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.peer_vpc)
 
 Returns [PeerVpcResultTypeDef](./type_defs.md#peervpcresulttypedef).
+
+<a id="put_alarm"></a>
 
 ### put_alarm
 
@@ -2929,6 +3198,8 @@ Keyword-only arguments:
 
 Returns [PutAlarmResultTypeDef](./type_defs.md#putalarmresulttypedef).
 
+<a id="put_instance_public_ports"></a>
+
 ### put_instance_public_ports
 
 Opens ports for a specific Amazon Lightsail instance, and specifies the IP
@@ -2953,6 +3224,8 @@ Keyword-only arguments:
 Returns
 [PutInstancePublicPortsResultTypeDef](./type_defs.md#putinstancepublicportsresulttypedef).
 
+<a id="reboot_instance"></a>
+
 ### reboot_instance
 
 Restarts a specific instance.
@@ -2971,6 +3244,8 @@ Keyword-only arguments:
 
 Returns
 [RebootInstanceResultTypeDef](./type_defs.md#rebootinstanceresulttypedef).
+
+<a id="reboot_relational_database"></a>
 
 ### reboot_relational_database
 
@@ -2991,6 +3266,8 @@ Keyword-only arguments:
 
 Returns
 [RebootRelationalDatabaseResultTypeDef](./type_defs.md#rebootrelationaldatabaseresulttypedef).
+
+<a id="register_container_image"></a>
 
 ### register_container_image
 
@@ -3014,6 +3291,8 @@ Keyword-only arguments:
 Returns
 [RegisterContainerImageResultTypeDef](./type_defs.md#registercontainerimageresulttypedef).
 
+<a id="release_static_ip"></a>
+
 ### release_static_ip
 
 Deletes a specific static IP from your account.
@@ -3032,6 +3311,8 @@ Keyword-only arguments:
 
 Returns
 [ReleaseStaticIpResultTypeDef](./type_defs.md#releasestaticipresulttypedef).
+
+<a id="reset_distribution_cache"></a>
 
 ### reset_distribution_cache
 
@@ -3053,6 +3334,8 @@ Keyword-only arguments:
 
 Returns
 [ResetDistributionCacheResultTypeDef](./type_defs.md#resetdistributioncacheresulttypedef).
+
+<a id="send_contact_method_verification"></a>
 
 ### send_contact_method_verification
 
@@ -3077,6 +3360,8 @@ Keyword-only arguments:
 Returns
 [SendContactMethodVerificationResultTypeDef](./type_defs.md#sendcontactmethodverificationresulttypedef).
 
+<a id="set_ip_address_type"></a>
+
 ### set_ip_address_type
 
 Sets the IP address type for an Amazon Lightsail resource.
@@ -3099,6 +3384,8 @@ Keyword-only arguments:
 
 Returns
 [SetIpAddressTypeResultTypeDef](./type_defs.md#setipaddresstyperesulttypedef).
+
+<a id="set_resource_access_for_bucket"></a>
 
 ### set_resource_access_for_bucket
 
@@ -3124,6 +3411,8 @@ Keyword-only arguments:
 Returns
 [SetResourceAccessForBucketResultTypeDef](./type_defs.md#setresourceaccessforbucketresulttypedef).
 
+<a id="start_instance"></a>
+
 ### start_instance
 
 Starts a specific Amazon Lightsail instance from a stopped state.
@@ -3142,6 +3431,8 @@ Keyword-only arguments:
 
 Returns
 [StartInstanceResultTypeDef](./type_defs.md#startinstanceresulttypedef).
+
+<a id="start_relational_database"></a>
 
 ### start_relational_database
 
@@ -3163,6 +3454,8 @@ Keyword-only arguments:
 Returns
 [StartRelationalDatabaseResultTypeDef](./type_defs.md#startrelationaldatabaseresulttypedef).
 
+<a id="stop_instance"></a>
+
 ### stop_instance
 
 Stops a specific Amazon Lightsail instance that is currently running.
@@ -3181,6 +3474,8 @@ Keyword-only arguments:
 - `force`: `bool`
 
 Returns [StopInstanceResultTypeDef](./type_defs.md#stopinstanceresulttypedef).
+
+<a id="stop_relational_database"></a>
 
 ### stop_relational_database
 
@@ -3203,6 +3498,8 @@ Keyword-only arguments:
 Returns
 [StopRelationalDatabaseResultTypeDef](./type_defs.md#stoprelationaldatabaseresulttypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds one or more tags to the specified Amazon Lightsail resource.
@@ -3223,6 +3520,8 @@ Keyword-only arguments:
 
 Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
 
+<a id="test_alarm"></a>
+
 ### test_alarm
 
 Tests an alarm by displaying a banner on the Amazon Lightsail console.
@@ -3242,6 +3541,8 @@ Keyword-only arguments:
 
 Returns [TestAlarmResultTypeDef](./type_defs.md#testalarmresulttypedef).
 
+<a id="unpeer_vpc"></a>
+
 ### unpeer_vpc
 
 Unpeers the Lightsail VPC from the user's default VPC.
@@ -3252,6 +3553,8 @@ Boto3 documentation:
 [Lightsail.Client.unpeer_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.unpeer_vpc)
 
 Returns [UnpeerVpcResultTypeDef](./type_defs.md#unpeervpcresulttypedef).
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -3274,6 +3577,8 @@ Keyword-only arguments:
 
 Returns
 [UntagResourceResultTypeDef](./type_defs.md#untagresourceresulttypedef).
+
+<a id="update_bucket"></a>
 
 ### update_bucket
 
@@ -3298,6 +3603,8 @@ Keyword-only arguments:
 
 Returns [UpdateBucketResultTypeDef](./type_defs.md#updatebucketresulttypedef).
 
+<a id="update_bucket_bundle"></a>
+
 ### update_bucket_bundle
 
 Updates the bundle, or storage plan, of an existing Amazon Lightsail bucket.
@@ -3317,6 +3624,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateBucketBundleResultTypeDef](./type_defs.md#updatebucketbundleresulttypedef).
+
+<a id="update_container_service"></a>
 
 ### update_container_service
 
@@ -3343,6 +3652,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateContainerServiceResultTypeDef](./type_defs.md#updatecontainerserviceresulttypedef).
+
+<a id="update_distribution"></a>
 
 ### update_distribution
 
@@ -3372,6 +3683,8 @@ Keyword-only arguments:
 Returns
 [UpdateDistributionResultTypeDef](./type_defs.md#updatedistributionresulttypedef).
 
+<a id="update_distribution_bundle"></a>
+
 ### update_distribution_bundle
 
 Updates the bundle of your Amazon Lightsail content delivery network (CDN)
@@ -3394,6 +3707,8 @@ Keyword-only arguments:
 Returns
 [UpdateDistributionBundleResultTypeDef](./type_defs.md#updatedistributionbundleresulttypedef).
 
+<a id="update_domain_entry"></a>
+
 ### update_domain_entry
 
 Updates a domain recordset after it is created.
@@ -3414,6 +3729,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDomainEntryResultTypeDef](./type_defs.md#updatedomainentryresulttypedef).
+
+<a id="update_load_balancer_attribute"></a>
 
 ### update_load_balancer_attribute
 
@@ -3438,6 +3755,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateLoadBalancerAttributeResultTypeDef](./type_defs.md#updateloadbalancerattributeresulttypedef).
+
+<a id="update_relational_database"></a>
 
 ### update_relational_database
 
@@ -3468,6 +3787,8 @@ Keyword-only arguments:
 Returns
 [UpdateRelationalDatabaseResultTypeDef](./type_defs.md#updaterelationaldatabaseresulttypedef).
 
+<a id="update_relational_database_parameters"></a>
+
 ### update_relational_database_parameters
 
 Allows the update of one or more parameters of a database in Amazon Lightsail.
@@ -3490,6 +3811,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRelationalDatabaseParametersResultTypeDef](./type_defs.md#updaterelationaldatabaseparametersresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

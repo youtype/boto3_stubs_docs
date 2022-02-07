@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-securityhub-module"></a>
+
 # Literals for boto3 SecurityHub module
 
 > [Index](..) > [SecurityHub](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
 type annotations stubs module
-[mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
+[mypy-boto3-securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
 - [Literals for boto3 SecurityHub module](#literals-for-boto3-securityhub-module)
   - [AdminStatusType](#adminstatustype)
@@ -47,6 +49,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="adminstatustype"></a>
+
 ## AdminStatusType
 
 ```python
@@ -57,6 +61,8 @@ Values:
 
 - `DISABLE_IN_PROGRESS`
 - `ENABLED`
+
+<a id="awsiamaccesskeystatustype"></a>
 
 ## AwsIamAccessKeyStatusType
 
@@ -69,6 +75,8 @@ Values:
 - `Active`
 - `Inactive`
 
+<a id="awss3bucketnotificationconfigurations3keyfilterrulenametype"></a>
+
 ## AwsS3BucketNotificationConfigurationS3KeyFilterRuleNameType
 
 ```python
@@ -79,6 +87,8 @@ Values:
 
 - `Prefix`
 - `Suffix`
+
+<a id="compliancestatustype"></a>
 
 ## ComplianceStatusType
 
@@ -93,6 +103,8 @@ Values:
 - `PASSED`
 - `WARNING`
 
+<a id="controlstatustype"></a>
+
 ## ControlStatusType
 
 ```python
@@ -104,6 +116,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="daterangeunittype"></a>
+
 ## DateRangeUnitType
 
 ```python
@@ -113,6 +127,8 @@ from mypy_boto3_securityhub.literals import DateRangeUnitType
 Values:
 
 - `DAYS`
+
+<a id="describeactiontargetspaginatorname"></a>
 
 ## DescribeActionTargetsPaginatorName
 
@@ -124,6 +140,8 @@ Values:
 
 - `describe_action_targets`
 
+<a id="describeproductspaginatorname"></a>
+
 ## DescribeProductsPaginatorName
 
 ```python
@@ -133,6 +151,8 @@ from mypy_boto3_securityhub.literals import DescribeProductsPaginatorName
 Values:
 
 - `describe_products`
+
+<a id="describestandardscontrolspaginatorname"></a>
 
 ## DescribeStandardsControlsPaginatorName
 
@@ -144,6 +164,8 @@ Values:
 
 - `describe_standards_controls`
 
+<a id="describestandardspaginatorname"></a>
+
 ## DescribeStandardsPaginatorName
 
 ```python
@@ -153,6 +175,8 @@ from mypy_boto3_securityhub.literals import DescribeStandardsPaginatorName
 Values:
 
 - `describe_standards`
+
+<a id="getenabledstandardspaginatorname"></a>
 
 ## GetEnabledStandardsPaginatorName
 
@@ -164,6 +188,8 @@ Values:
 
 - `get_enabled_standards`
 
+<a id="getfindingspaginatorname"></a>
+
 ## GetFindingsPaginatorName
 
 ```python
@@ -174,6 +200,8 @@ Values:
 
 - `get_findings`
 
+<a id="getinsightspaginatorname"></a>
+
 ## GetInsightsPaginatorName
 
 ```python
@@ -183,6 +211,8 @@ from mypy_boto3_securityhub.literals import GetInsightsPaginatorName
 Values:
 
 - `get_insights`
+
+<a id="integrationtypetype"></a>
 
 ## IntegrationTypeType
 
@@ -196,6 +226,8 @@ Values:
 - `SEND_FINDINGS_TO_SECURITY_HUB`
 - `UPDATE_FINDINGS_IN_SECURITY_HUB`
 
+<a id="listenabledproductsforimportpaginatorname"></a>
+
 ## ListEnabledProductsForImportPaginatorName
 
 ```python
@@ -205,6 +237,8 @@ from mypy_boto3_securityhub.literals import ListEnabledProductsForImportPaginato
 Values:
 
 - `list_enabled_products_for_import`
+
+<a id="listfindingaggregatorspaginatorname"></a>
 
 ## ListFindingAggregatorsPaginatorName
 
@@ -216,6 +250,8 @@ Values:
 
 - `list_finding_aggregators`
 
+<a id="listinvitationspaginatorname"></a>
+
 ## ListInvitationsPaginatorName
 
 ```python
@@ -225,6 +261,8 @@ from mypy_boto3_securityhub.literals import ListInvitationsPaginatorName
 Values:
 
 - `list_invitations`
+
+<a id="listmemberspaginatorname"></a>
 
 ## ListMembersPaginatorName
 
@@ -236,6 +274,8 @@ Values:
 
 - `list_members`
 
+<a id="listorganizationadminaccountspaginatorname"></a>
+
 ## ListOrganizationAdminAccountsPaginatorName
 
 ```python
@@ -245,6 +285,8 @@ from mypy_boto3_securityhub.literals import ListOrganizationAdminAccountsPaginat
 Values:
 
 - `list_organization_admin_accounts`
+
+<a id="malwarestatetype"></a>
 
 ## MalwareStateType
 
@@ -257,6 +299,8 @@ Values:
 - `OBSERVED`
 - `REMOVAL_FAILED`
 - `REMOVED`
+
+<a id="malwaretypetype"></a>
 
 ## MalwareTypeType
 
@@ -282,6 +326,8 @@ Values:
 - `VIRUS`
 - `WORM`
 
+<a id="mapfiltercomparisontype"></a>
+
 ## MapFilterComparisonType
 
 ```python
@@ -293,6 +339,8 @@ Values:
 - `EQUALS`
 - `NOT_EQUALS`
 
+<a id="networkdirectiontype"></a>
+
 ## NetworkDirectionType
 
 ```python
@@ -303,6 +351,8 @@ Values:
 
 - `IN`
 - `OUT`
+
+<a id="partitiontype"></a>
 
 ## PartitionType
 
@@ -316,6 +366,8 @@ Values:
 - `aws-cn`
 - `aws-us-gov`
 
+<a id="recordstatetype"></a>
+
 ## RecordStateType
 
 ```python
@@ -326,6 +378,8 @@ Values:
 
 - `ACTIVE`
 - `ARCHIVED`
+
+<a id="severitylabeltype"></a>
 
 ## SeverityLabelType
 
@@ -341,6 +395,8 @@ Values:
 - `LOW`
 - `MEDIUM`
 
+<a id="severityratingtype"></a>
+
 ## SeverityRatingType
 
 ```python
@@ -354,6 +410,8 @@ Values:
 - `LOW`
 - `MEDIUM`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -364,6 +422,8 @@ Values:
 
 - `asc`
 - `desc`
+
+<a id="standardsstatustype"></a>
 
 ## StandardsStatusType
 
@@ -379,6 +439,8 @@ Values:
 - `PENDING`
 - `READY`
 
+<a id="statusreasoncodetype"></a>
+
 ## StatusReasonCodeType
 
 ```python
@@ -389,6 +451,8 @@ Values:
 
 - `INTERNAL_ERROR`
 - `NO_AVAILABLE_CONFIGURATION_RECORDER`
+
+<a id="stringfiltercomparisontype"></a>
 
 ## StringFilterComparisonType
 
@@ -402,6 +466,8 @@ Values:
 - `NOT_EQUALS`
 - `PREFIX`
 - `PREFIX_NOT_EQUALS`
+
+<a id="threatintelindicatorcategorytype"></a>
 
 ## ThreatIntelIndicatorCategoryType
 
@@ -417,6 +483,8 @@ Values:
 - `DROP_SITE`
 - `EXPLOIT_SITE`
 - `KEYLOGGER`
+
+<a id="threatintelindicatortypetype"></a>
 
 ## ThreatIntelIndicatorTypeType
 
@@ -438,6 +506,8 @@ Values:
 - `PROCESS`
 - `URL`
 
+<a id="verificationstatetype"></a>
+
 ## VerificationStateType
 
 ```python
@@ -450,6 +520,8 @@ Values:
 - `FALSE_POSITIVE`
 - `TRUE_POSITIVE`
 - `UNKNOWN`
+
+<a id="workflowstatetype"></a>
 
 ## WorkflowStateType
 
@@ -465,6 +537,8 @@ Values:
 - `NEW`
 - `RESOLVED`
 
+<a id="workflowstatustype"></a>
+
 ## WorkflowStatusType
 
 ```python
@@ -477,6 +551,8 @@ Values:
 - `NOTIFIED`
 - `RESOLVED`
 - `SUPPRESSED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -785,6 +861,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

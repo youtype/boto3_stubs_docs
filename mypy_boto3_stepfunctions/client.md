@@ -1,3 +1,5 @@
+<a id="sfnclient-for-boto3-sfn-module"></a>
+
 # SFNClient for boto3 SFN module
 
 > [Index](..) > [SFN](.) > SFNClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
 type annotations stubs module
-[mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+[mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 - [SFNClient for boto3 SFN module](#sfnclient-for-boto3-sfn-module)
   - [SFNClient](#sfnclient)
@@ -39,6 +41,8 @@ type annotations stubs module
     - [update_state_machine](#update_state_machine)
     - [get_paginator](#get_paginator)
 
+<a id="sfnclient"></a>
+
 ## SFNClient
 
 Type annotations for `boto3.client("stepfunctions")`
@@ -46,14 +50,17 @@ Type annotations for `boto3.client("stepfunctions")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_stepfunctions.client import SFNClient
 
 def get_stepfunctions_client() -> SFNClient:
-    return boto3.client("stepfunctions")
+    return Session().client("stepfunctions")
 ```
 
 Boto3 documentation:
 [SFN.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -95,7 +102,11 @@ Exceptions:
 - `Exceptions.TaskTimedOut`
 - `Exceptions.TooManyTags`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -107,6 +118,8 @@ Boto3 documentation:
 [SFN.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -122,6 +135,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_activity"></a>
 
 ### create_activity
 
@@ -142,6 +157,8 @@ Keyword-only arguments:
 
 Returns
 [CreateActivityOutputTypeDef](./type_defs.md#createactivityoutputtypedef).
+
+<a id="create_state_machine"></a>
 
 ### create_state_machine
 
@@ -171,6 +188,8 @@ Keyword-only arguments:
 Returns
 [CreateStateMachineOutputTypeDef](./type_defs.md#createstatemachineoutputtypedef).
 
+<a id="delete_activity"></a>
+
 ### delete_activity
 
 Deletes an activity.
@@ -188,6 +207,8 @@ Keyword-only arguments:
 - `activityArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_state_machine"></a>
 
 ### delete_state_machine
 
@@ -208,6 +229,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_activity"></a>
+
 ### describe_activity
 
 Describes an activity.
@@ -227,6 +250,8 @@ Keyword-only arguments:
 Returns
 [DescribeActivityOutputTypeDef](./type_defs.md#describeactivityoutputtypedef).
 
+<a id="describe_execution"></a>
+
 ### describe_execution
 
 Describes an execution.
@@ -245,6 +270,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeExecutionOutputTypeDef](./type_defs.md#describeexecutionoutputtypedef).
+
+<a id="describe_state_machine"></a>
 
 ### describe_state_machine
 
@@ -266,6 +293,8 @@ Keyword-only arguments:
 Returns
 [DescribeStateMachineOutputTypeDef](./type_defs.md#describestatemachineoutputtypedef).
 
+<a id="describe_state_machine_for_execution"></a>
+
 ### describe_state_machine_for_execution
 
 Describes the state machine associated with a specific execution.
@@ -286,6 +315,8 @@ Keyword-only arguments:
 Returns
 [DescribeStateMachineForExecutionOutputTypeDef](./type_defs.md#describestatemachineforexecutionoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -304,6 +335,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_activity_task"></a>
 
 ### get_activity_task
 
@@ -325,6 +358,8 @@ Keyword-only arguments:
 
 Returns
 [GetActivityTaskOutputTypeDef](./type_defs.md#getactivitytaskoutputtypedef).
+
+<a id="get_execution_history"></a>
 
 ### get_execution_history
 
@@ -350,6 +385,8 @@ Keyword-only arguments:
 Returns
 [GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef).
 
+<a id="list_activities"></a>
+
 ### list_activities
 
 Lists the existing activities.
@@ -369,6 +406,8 @@ Keyword-only arguments:
 
 Returns
 [ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef).
+
+<a id="list_executions"></a>
 
 ### list_executions
 
@@ -392,6 +431,8 @@ Keyword-only arguments:
 Returns
 [ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef).
 
+<a id="list_state_machines"></a>
+
 ### list_state_machines
 
 Lists the existing state machines.
@@ -413,6 +454,8 @@ Keyword-only arguments:
 Returns
 [ListStateMachinesOutputTypeDef](./type_defs.md#liststatemachinesoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List tags for a given resource.
@@ -432,6 +475,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+
+<a id="send_task_failure"></a>
 
 ### send_task_failure
 
@@ -456,6 +501,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="send_task_heartbeat"></a>
+
 ### send_task_heartbeat
 
 Used by activity workers and task states using the
@@ -477,6 +524,8 @@ Keyword-only arguments:
 - `taskToken`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="send_task_success"></a>
 
 ### send_task_success
 
@@ -500,6 +549,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="start_execution"></a>
+
 ### start_execution
 
 Starts a state machine execution.
@@ -521,6 +572,8 @@ Keyword-only arguments:
 
 Returns
 [StartExecutionOutputTypeDef](./type_defs.md#startexecutionoutputtypedef).
+
+<a id="start_sync_execution"></a>
 
 ### start_sync_execution
 
@@ -545,6 +598,8 @@ Keyword-only arguments:
 Returns
 [StartSyncExecutionOutputTypeDef](./type_defs.md#startsyncexecutionoutputtypedef).
 
+<a id="stop_execution"></a>
+
 ### stop_execution
 
 Stops an execution.
@@ -566,6 +621,8 @@ Keyword-only arguments:
 Returns
 [StopExecutionOutputTypeDef](./type_defs.md#stopexecutionoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Add a tag to a Step Functions resource.
@@ -584,6 +641,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -604,6 +663,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_state_machine"></a>
 
 ### update_state_machine
 
@@ -631,6 +692,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateStateMachineOutputTypeDef](./type_defs.md#updatestatemachineoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

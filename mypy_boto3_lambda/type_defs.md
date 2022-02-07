@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-lambda-module"></a>
+
 # Typed dictionaries for boto3 Lambda module
 
 > [Index](..) > [Lambda](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
 type annotations stubs module
-[mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
+[mypy-boto3-lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
 - [Typed dictionaries for boto3 Lambda module](#typed-dictionaries-for-boto3-lambda-module)
   - [AccountLimitTypeDef](#accountlimittypedef)
@@ -141,6 +143,8 @@ type annotations stubs module
   - [VpcConfigTypeDef](#vpcconfigtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="accountlimittypedef"></a>
+
 ## AccountLimitTypeDef
 
 ```python
@@ -155,6 +159,8 @@ Optional fields:
 - `ConcurrentExecutions`: `int`
 - `UnreservedConcurrentExecutions`: `int`
 
+<a id="accountusagetypedef"></a>
+
 ## AccountUsageTypeDef
 
 ```python
@@ -165,6 +171,8 @@ Optional fields:
 
 - `TotalCodeSize`: `int`
 - `FunctionCount`: `int`
+
+<a id="addlayerversionpermissionrequestrequesttypedef"></a>
 
 ## AddLayerVersionPermissionRequestRequestTypeDef
 
@@ -185,6 +193,8 @@ Optional fields:
 - `OrganizationId`: `str`
 - `RevisionId`: `str`
 
+<a id="addlayerversionpermissionresponsetypedef"></a>
+
 ## AddLayerVersionPermissionResponseTypeDef
 
 ```python
@@ -197,6 +207,8 @@ Required fields:
 - `RevisionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="addpermissionrequestrequesttypedef"></a>
 
 ## AddPermissionRequestRequestTypeDef
 
@@ -219,6 +231,8 @@ Optional fields:
 - `Qualifier`: `str`
 - `RevisionId`: `str`
 
+<a id="addpermissionresponsetypedef"></a>
+
 ## AddPermissionResponseTypeDef
 
 ```python
@@ -230,6 +244,8 @@ Required fields:
 - `Statement`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="aliasconfigurationresponsemetadatatypedef"></a>
 
 ## AliasConfigurationResponseMetadataTypeDef
 
@@ -249,6 +265,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="aliasconfigurationtypedef"></a>
+
 ## AliasConfigurationTypeDef
 
 ```python
@@ -265,6 +283,8 @@ Optional fields:
   [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
 - `RevisionId`: `str`
 
+<a id="aliasroutingconfigurationtypedef"></a>
+
 ## AliasRoutingConfigurationTypeDef
 
 ```python
@@ -275,6 +295,8 @@ Optional fields:
 
 - `AdditionalVersionWeights`: `Mapping`\[`str`, `float`\]
 
+<a id="allowedpublisherstypedef"></a>
+
 ## AllowedPublishersTypeDef
 
 ```python
@@ -284,6 +306,8 @@ from mypy_boto3_lambda.type_defs import AllowedPublishersTypeDef
 Required fields:
 
 - `SigningProfileVersionArns`: `Sequence`\[`str`\]
+
+<a id="codesigningconfigtypedef"></a>
 
 ## CodeSigningConfigTypeDef
 
@@ -305,6 +329,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="codesigningpoliciestypedef"></a>
+
 ## CodeSigningPoliciesTypeDef
 
 ```python
@@ -315,6 +341,8 @@ Optional fields:
 
 - `UntrustedArtifactOnDeployment`:
   [CodeSigningPolicyType](./literals.md#codesigningpolicytype)
+
+<a id="concurrencyresponsemetadatatypedef"></a>
 
 ## ConcurrencyResponseMetadataTypeDef
 
@@ -328,6 +356,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="concurrencytypedef"></a>
+
 ## ConcurrencyTypeDef
 
 ```python
@@ -337,6 +367,8 @@ from mypy_boto3_lambda.type_defs import ConcurrencyTypeDef
 Optional fields:
 
 - `ReservedConcurrentExecutions`: `int`
+
+<a id="createaliasrequestrequesttypedef"></a>
 
 ## CreateAliasRequestRequestTypeDef
 
@@ -356,6 +388,8 @@ Optional fields:
 - `RoutingConfig`:
   [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
 
+<a id="createcodesigningconfigrequestrequesttypedef"></a>
+
 ## CreateCodeSigningConfigRequestRequestTypeDef
 
 ```python
@@ -373,6 +407,8 @@ Optional fields:
 - `CodeSigningPolicies`:
   [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
 
+<a id="createcodesigningconfigresponsetypedef"></a>
+
 ## CreateCodeSigningConfigResponseTypeDef
 
 ```python
@@ -385,6 +421,8 @@ Required fields:
   [CodeSigningConfigTypeDef](./type_defs.md#codesigningconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createeventsourcemappingrequestrequesttypedef"></a>
 
 ## CreateEventSourceMappingRequestRequestTypeDef
 
@@ -423,6 +461,8 @@ Optional fields:
 - `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
   (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
+<a id="createfunctionrequestrequesttypedef"></a>
+
 ## CreateFunctionRequestRequestTypeDef
 
 ```python
@@ -459,6 +499,8 @@ Optional fields:
 - `Architectures`:
   `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
 
+<a id="deadletterconfigtypedef"></a>
+
 ## DeadLetterConfigTypeDef
 
 ```python
@@ -468,6 +510,8 @@ from mypy_boto3_lambda.type_defs import DeadLetterConfigTypeDef
 Optional fields:
 
 - `TargetArn`: `str`
+
+<a id="deletealiasrequestrequesttypedef"></a>
 
 ## DeleteAliasRequestRequestTypeDef
 
@@ -480,6 +524,8 @@ Required fields:
 - `FunctionName`: `str`
 - `Name`: `str`
 
+<a id="deletecodesigningconfigrequestrequesttypedef"></a>
+
 ## DeleteCodeSigningConfigRequestRequestTypeDef
 
 ```python
@@ -489,6 +535,8 @@ from mypy_boto3_lambda.type_defs import DeleteCodeSigningConfigRequestRequestTyp
 Required fields:
 
 - `CodeSigningConfigArn`: `str`
+
+<a id="deleteeventsourcemappingrequestrequesttypedef"></a>
 
 ## DeleteEventSourceMappingRequestRequestTypeDef
 
@@ -500,6 +548,8 @@ Required fields:
 
 - `UUID`: `str`
 
+<a id="deletefunctioncodesigningconfigrequestrequesttypedef"></a>
+
 ## DeleteFunctionCodeSigningConfigRequestRequestTypeDef
 
 ```python
@@ -510,6 +560,8 @@ Required fields:
 
 - `FunctionName`: `str`
 
+<a id="deletefunctionconcurrencyrequestrequesttypedef"></a>
+
 ## DeleteFunctionConcurrencyRequestRequestTypeDef
 
 ```python
@@ -519,6 +571,8 @@ from mypy_boto3_lambda.type_defs import DeleteFunctionConcurrencyRequestRequestT
 Required fields:
 
 - `FunctionName`: `str`
+
+<a id="deletefunctioneventinvokeconfigrequestrequesttypedef"></a>
 
 ## DeleteFunctionEventInvokeConfigRequestRequestTypeDef
 
@@ -534,6 +588,8 @@ Optional fields:
 
 - `Qualifier`: `str`
 
+<a id="deletefunctionrequestrequesttypedef"></a>
+
 ## DeleteFunctionRequestRequestTypeDef
 
 ```python
@@ -548,6 +604,8 @@ Optional fields:
 
 - `Qualifier`: `str`
 
+<a id="deletelayerversionrequestrequesttypedef"></a>
+
 ## DeleteLayerVersionRequestRequestTypeDef
 
 ```python
@@ -558,6 +616,8 @@ Required fields:
 
 - `LayerName`: `str`
 - `VersionNumber`: `int`
+
+<a id="deleteprovisionedconcurrencyconfigrequestrequesttypedef"></a>
 
 ## DeleteProvisionedConcurrencyConfigRequestRequestTypeDef
 
@@ -570,6 +630,8 @@ Required fields:
 - `FunctionName`: `str`
 - `Qualifier`: `str`
 
+<a id="destinationconfigtypedef"></a>
+
 ## DestinationConfigTypeDef
 
 ```python
@@ -580,6 +642,8 @@ Optional fields:
 
 - `OnSuccess`: [OnSuccessTypeDef](./type_defs.md#onsuccesstypedef)
 - `OnFailure`: [OnFailureTypeDef](./type_defs.md#onfailuretypedef)
+
+<a id="environmenterrortypedef"></a>
 
 ## EnvironmentErrorTypeDef
 
@@ -592,6 +656,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `Message`: `str`
 
+<a id="environmentresponsetypedef"></a>
+
 ## EnvironmentResponseTypeDef
 
 ```python
@@ -603,6 +669,8 @@ Optional fields:
 - `Variables`: `Dict`\[`str`, `str`\]
 - `Error`: [EnvironmentErrorTypeDef](./type_defs.md#environmenterrortypedef)
 
+<a id="environmenttypedef"></a>
+
 ## EnvironmentTypeDef
 
 ```python
@@ -612,6 +680,8 @@ from mypy_boto3_lambda.type_defs import EnvironmentTypeDef
 Optional fields:
 
 - `Variables`: `Mapping`\[`str`, `str`\]
+
+<a id="eventsourcemappingconfigurationresponsemetadatatypedef"></a>
 
 ## EventSourceMappingConfigurationResponseMetadataTypeDef
 
@@ -653,6 +723,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="eventsourcemappingconfigurationtypedef"></a>
+
 ## EventSourceMappingConfigurationTypeDef
 
 ```python
@@ -691,6 +763,8 @@ Optional fields:
 - `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
   [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
+<a id="filesystemconfigtypedef"></a>
+
 ## FileSystemConfigTypeDef
 
 ```python
@@ -702,6 +776,8 @@ Required fields:
 - `Arn`: `str`
 - `LocalMountPath`: `str`
 
+<a id="filtercriteriatypedef"></a>
+
 ## FilterCriteriaTypeDef
 
 ```python
@@ -712,6 +788,8 @@ Optional fields:
 
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -721,6 +799,8 @@ from mypy_boto3_lambda.type_defs import FilterTypeDef
 Optional fields:
 
 - `Pattern`: `str`
+
+<a id="functioncodelocationtypedef"></a>
 
 ## FunctionCodeLocationTypeDef
 
@@ -735,6 +815,8 @@ Optional fields:
 - `ImageUri`: `str`
 - `ResolvedImageUri`: `str`
 
+<a id="functioncodetypedef"></a>
+
 ## FunctionCodeTypeDef
 
 ```python
@@ -748,6 +830,8 @@ Optional fields:
 - `S3Key`: `str`
 - `S3ObjectVersion`: `str`
 - `ImageUri`: `str`
+
+<a id="functionconfigurationresponsemetadatatypedef"></a>
 
 ## FunctionConfigurationResponseMetadataTypeDef
 
@@ -800,6 +884,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="functionconfigurationtypedef"></a>
+
 ## FunctionConfigurationTypeDef
 
 ```python
@@ -849,6 +935,8 @@ Optional fields:
 - `SigningJobArn`: `str`
 - `Architectures`: `List`\[[ArchitectureType](./literals.md#architecturetype)\]
 
+<a id="functioneventinvokeconfigresponsemetadatatypedef"></a>
+
 ## FunctionEventInvokeConfigResponseMetadataTypeDef
 
 ```python
@@ -866,6 +954,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="functioneventinvokeconfigtypedef"></a>
+
 ## FunctionEventInvokeConfigTypeDef
 
 ```python
@@ -881,6 +971,8 @@ Optional fields:
 - `DestinationConfig`:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 
+<a id="getaccountsettingsresponsetypedef"></a>
+
 ## GetAccountSettingsResponseTypeDef
 
 ```python
@@ -894,6 +986,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getaliasrequestrequesttypedef"></a>
+
 ## GetAliasRequestRequestTypeDef
 
 ```python
@@ -905,6 +999,8 @@ Required fields:
 - `FunctionName`: `str`
 - `Name`: `str`
 
+<a id="getcodesigningconfigrequestrequesttypedef"></a>
+
 ## GetCodeSigningConfigRequestRequestTypeDef
 
 ```python
@@ -914,6 +1010,8 @@ from mypy_boto3_lambda.type_defs import GetCodeSigningConfigRequestRequestTypeDe
 Required fields:
 
 - `CodeSigningConfigArn`: `str`
+
+<a id="getcodesigningconfigresponsetypedef"></a>
 
 ## GetCodeSigningConfigResponseTypeDef
 
@@ -928,6 +1026,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="geteventsourcemappingrequestrequesttypedef"></a>
+
 ## GetEventSourceMappingRequestRequestTypeDef
 
 ```python
@@ -938,6 +1038,8 @@ Required fields:
 
 - `UUID`: `str`
 
+<a id="getfunctioncodesigningconfigrequestrequesttypedef"></a>
+
 ## GetFunctionCodeSigningConfigRequestRequestTypeDef
 
 ```python
@@ -947,6 +1049,8 @@ from mypy_boto3_lambda.type_defs import GetFunctionCodeSigningConfigRequestReque
 Required fields:
 
 - `FunctionName`: `str`
+
+<a id="getfunctioncodesigningconfigresponsetypedef"></a>
 
 ## GetFunctionCodeSigningConfigResponseTypeDef
 
@@ -961,6 +1065,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfunctionconcurrencyrequestrequesttypedef"></a>
+
 ## GetFunctionConcurrencyRequestRequestTypeDef
 
 ```python
@@ -970,6 +1076,8 @@ from mypy_boto3_lambda.type_defs import GetFunctionConcurrencyRequestRequestType
 Required fields:
 
 - `FunctionName`: `str`
+
+<a id="getfunctionconcurrencyresponsetypedef"></a>
 
 ## GetFunctionConcurrencyResponseTypeDef
 
@@ -982,6 +1090,8 @@ Required fields:
 - `ReservedConcurrentExecutions`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getfunctionconfigurationrequestrequesttypedef"></a>
 
 ## GetFunctionConfigurationRequestRequestTypeDef
 
@@ -997,6 +1107,8 @@ Optional fields:
 
 - `Qualifier`: `str`
 
+<a id="getfunctioneventinvokeconfigrequestrequesttypedef"></a>
+
 ## GetFunctionEventInvokeConfigRequestRequestTypeDef
 
 ```python
@@ -1011,6 +1123,8 @@ Optional fields:
 
 - `Qualifier`: `str`
 
+<a id="getfunctionrequestrequesttypedef"></a>
+
 ## GetFunctionRequestRequestTypeDef
 
 ```python
@@ -1024,6 +1138,8 @@ Required fields:
 Optional fields:
 
 - `Qualifier`: `str`
+
+<a id="getfunctionresponsetypedef"></a>
 
 ## GetFunctionResponseTypeDef
 
@@ -1042,6 +1158,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlayerversionbyarnrequestrequesttypedef"></a>
+
 ## GetLayerVersionByArnRequestRequestTypeDef
 
 ```python
@@ -1051,6 +1169,8 @@ from mypy_boto3_lambda.type_defs import GetLayerVersionByArnRequestRequestTypeDe
 Required fields:
 
 - `Arn`: `str`
+
+<a id="getlayerversionpolicyrequestrequesttypedef"></a>
 
 ## GetLayerVersionPolicyRequestRequestTypeDef
 
@@ -1062,6 +1182,8 @@ Required fields:
 
 - `LayerName`: `str`
 - `VersionNumber`: `int`
+
+<a id="getlayerversionpolicyresponsetypedef"></a>
 
 ## GetLayerVersionPolicyResponseTypeDef
 
@@ -1076,6 +1198,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlayerversionrequestrequesttypedef"></a>
+
 ## GetLayerVersionRequestRequestTypeDef
 
 ```python
@@ -1086,6 +1210,8 @@ Required fields:
 
 - `LayerName`: `str`
 - `VersionNumber`: `int`
+
+<a id="getlayerversionresponsetypedef"></a>
 
 ## GetLayerVersionResponseTypeDef
 
@@ -1109,6 +1235,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpolicyrequestrequesttypedef"></a>
+
 ## GetPolicyRequestRequestTypeDef
 
 ```python
@@ -1123,6 +1251,8 @@ Optional fields:
 
 - `Qualifier`: `str`
 
+<a id="getpolicyresponsetypedef"></a>
+
 ## GetPolicyResponseTypeDef
 
 ```python
@@ -1136,6 +1266,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getprovisionedconcurrencyconfigrequestrequesttypedef"></a>
+
 ## GetProvisionedConcurrencyConfigRequestRequestTypeDef
 
 ```python
@@ -1146,6 +1278,8 @@ Required fields:
 
 - `FunctionName`: `str`
 - `Qualifier`: `str`
+
+<a id="getprovisionedconcurrencyconfigresponsetypedef"></a>
 
 ## GetProvisionedConcurrencyConfigResponseTypeDef
 
@@ -1165,6 +1299,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="imageconfigerrortypedef"></a>
+
 ## ImageConfigErrorTypeDef
 
 ```python
@@ -1175,6 +1311,8 @@ Optional fields:
 
 - `ErrorCode`: `str`
 - `Message`: `str`
+
+<a id="imageconfigresponsetypedef"></a>
 
 ## ImageConfigResponseTypeDef
 
@@ -1187,6 +1325,8 @@ Optional fields:
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 - `Error`: [ImageConfigErrorTypeDef](./type_defs.md#imageconfigerrortypedef)
 
+<a id="imageconfigtypedef"></a>
+
 ## ImageConfigTypeDef
 
 ```python
@@ -1198,6 +1338,8 @@ Optional fields:
 - `EntryPoint`: `Sequence`\[`str`\]
 - `Command`: `Sequence`\[`str`\]
 - `WorkingDirectory`: `str`
+
+<a id="invocationrequestrequesttypedef"></a>
 
 ## InvocationRequestRequestTypeDef
 
@@ -1217,6 +1359,8 @@ Optional fields:
 - `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Qualifier`: `str`
 
+<a id="invocationresponsetypedef"></a>
+
 ## InvocationResponseTypeDef
 
 ```python
@@ -1231,6 +1375,8 @@ Optional fields:
 - `Payload`: `IO`\[`bytes`\]
 - `ExecutedVersion`: `str`
 
+<a id="invokeasyncrequestrequesttypedef"></a>
+
 ## InvokeAsyncRequestRequestTypeDef
 
 ```python
@@ -1241,6 +1387,8 @@ Required fields:
 
 - `FunctionName`: `str`
 - `InvokeArgs`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="invokeasyncresponsetypedef"></a>
 
 ## InvokeAsyncResponseTypeDef
 
@@ -1253,6 +1401,8 @@ Required fields:
 - `Status`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="layertypedef"></a>
 
 ## LayerTypeDef
 
@@ -1267,6 +1417,8 @@ Optional fields:
 - `SigningProfileVersionArn`: `str`
 - `SigningJobArn`: `str`
 
+<a id="layerversioncontentinputtypedef"></a>
+
 ## LayerVersionContentInputTypeDef
 
 ```python
@@ -1279,6 +1431,8 @@ Optional fields:
 - `S3Key`: `str`
 - `S3ObjectVersion`: `str`
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="layerversioncontentoutputtypedef"></a>
 
 ## LayerVersionContentOutputTypeDef
 
@@ -1293,6 +1447,8 @@ Optional fields:
 - `CodeSize`: `int`
 - `SigningProfileVersionArn`: `str`
 - `SigningJobArn`: `str`
+
+<a id="layerversionslistitemtypedef"></a>
 
 ## LayerVersionsListItemTypeDef
 
@@ -1311,6 +1467,8 @@ Optional fields:
 - `CompatibleArchitectures`:
   `List`\[[ArchitectureType](./literals.md#architecturetype)\]
 
+<a id="layerslistitemtypedef"></a>
+
 ## LayersListItemTypeDef
 
 ```python
@@ -1323,6 +1481,8 @@ Optional fields:
 - `LayerArn`: `str`
 - `LatestMatchingVersion`:
   [LayerVersionsListItemTypeDef](./type_defs.md#layerversionslistitemtypedef)
+
+<a id="listaliasesrequestrequesttypedef"></a>
 
 ## ListAliasesRequestRequestTypeDef
 
@@ -1340,6 +1500,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
+<a id="listaliasesresponsetypedef"></a>
+
 ## ListAliasesResponseTypeDef
 
 ```python
@@ -1354,6 +1516,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcodesigningconfigsrequestrequesttypedef"></a>
+
 ## ListCodeSigningConfigsRequestRequestTypeDef
 
 ```python
@@ -1364,6 +1528,8 @@ Optional fields:
 
 - `Marker`: `str`
 - `MaxItems`: `int`
+
+<a id="listcodesigningconfigsresponsetypedef"></a>
 
 ## ListCodeSigningConfigsResponseTypeDef
 
@@ -1379,6 +1545,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listeventsourcemappingsrequestrequesttypedef"></a>
+
 ## ListEventSourceMappingsRequestRequestTypeDef
 
 ```python
@@ -1391,6 +1559,8 @@ Optional fields:
 - `FunctionName`: `str`
 - `Marker`: `str`
 - `MaxItems`: `int`
+
+<a id="listeventsourcemappingsresponsetypedef"></a>
 
 ## ListEventSourceMappingsResponseTypeDef
 
@@ -1405,6 +1575,8 @@ Required fields:
   `List`\[[EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfunctioneventinvokeconfigsrequestrequesttypedef"></a>
 
 ## ListFunctionEventInvokeConfigsRequestRequestTypeDef
 
@@ -1421,6 +1593,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
+<a id="listfunctioneventinvokeconfigsresponsetypedef"></a>
+
 ## ListFunctionEventInvokeConfigsResponseTypeDef
 
 ```python
@@ -1434,6 +1608,8 @@ Required fields:
 - `NextMarker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfunctionsbycodesigningconfigrequestrequesttypedef"></a>
 
 ## ListFunctionsByCodeSigningConfigRequestRequestTypeDef
 
@@ -1450,6 +1626,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
+<a id="listfunctionsbycodesigningconfigresponsetypedef"></a>
+
 ## ListFunctionsByCodeSigningConfigResponseTypeDef
 
 ```python
@@ -1462,6 +1640,8 @@ Required fields:
 - `FunctionArns`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfunctionsrequestrequesttypedef"></a>
 
 ## ListFunctionsRequestRequestTypeDef
 
@@ -1477,6 +1657,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
+<a id="listfunctionsresponsetypedef"></a>
+
 ## ListFunctionsResponseTypeDef
 
 ```python
@@ -1490,6 +1672,8 @@ Required fields:
   `List`\[[FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlayerversionsrequestrequesttypedef"></a>
 
 ## ListLayerVersionsRequestRequestTypeDef
 
@@ -1508,6 +1692,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
 
+<a id="listlayerversionsresponsetypedef"></a>
+
 ## ListLayerVersionsResponseTypeDef
 
 ```python
@@ -1522,6 +1708,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listlayersrequestrequesttypedef"></a>
+
 ## ListLayersRequestRequestTypeDef
 
 ```python
@@ -1534,6 +1722,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 - `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
+
+<a id="listlayersresponsetypedef"></a>
 
 ## ListLayersResponseTypeDef
 
@@ -1548,6 +1738,8 @@ Required fields:
   `List`\[[LayersListItemTypeDef](./type_defs.md#layerslistitemtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listprovisionedconcurrencyconfigsrequestrequesttypedef"></a>
 
 ## ListProvisionedConcurrencyConfigsRequestRequestTypeDef
 
@@ -1564,6 +1756,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
+<a id="listprovisionedconcurrencyconfigsresponsetypedef"></a>
+
 ## ListProvisionedConcurrencyConfigsResponseTypeDef
 
 ```python
@@ -1578,6 +1772,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsrequestrequesttypedef"></a>
+
 ## ListTagsRequestRequestTypeDef
 
 ```python
@@ -1587,6 +1783,8 @@ from mypy_boto3_lambda.type_defs import ListTagsRequestRequestTypeDef
 Required fields:
 
 - `Resource`: `str`
+
+<a id="listtagsresponsetypedef"></a>
 
 ## ListTagsResponseTypeDef
 
@@ -1599,6 +1797,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listversionsbyfunctionrequestrequesttypedef"></a>
 
 ## ListVersionsByFunctionRequestRequestTypeDef
 
@@ -1615,6 +1815,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
+<a id="listversionsbyfunctionresponsetypedef"></a>
+
 ## ListVersionsByFunctionResponseTypeDef
 
 ```python
@@ -1629,6 +1831,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="onfailuretypedef"></a>
+
 ## OnFailureTypeDef
 
 ```python
@@ -1639,6 +1843,8 @@ Optional fields:
 
 - `Destination`: `str`
 
+<a id="onsuccesstypedef"></a>
+
 ## OnSuccessTypeDef
 
 ```python
@@ -1648,6 +1854,8 @@ from mypy_boto3_lambda.type_defs import OnSuccessTypeDef
 Optional fields:
 
 - `Destination`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1660,6 +1868,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="provisionedconcurrencyconfiglistitemtypedef"></a>
 
 ## ProvisionedConcurrencyConfigListItemTypeDef
 
@@ -1677,6 +1887,8 @@ Optional fields:
   [ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype)
 - `StatusReason`: `str`
 - `LastModified`: `str`
+
+<a id="publishlayerversionrequestrequesttypedef"></a>
 
 ## PublishLayerVersionRequestRequestTypeDef
 
@@ -1697,6 +1909,8 @@ Optional fields:
 - `LicenseInfo`: `str`
 - `CompatibleArchitectures`:
   `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
+
+<a id="publishlayerversionresponsetypedef"></a>
 
 ## PublishLayerVersionResponseTypeDef
 
@@ -1720,6 +1934,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="publishversionrequestrequesttypedef"></a>
+
 ## PublishVersionRequestRequestTypeDef
 
 ```python
@@ -1736,6 +1952,8 @@ Optional fields:
 - `Description`: `str`
 - `RevisionId`: `str`
 
+<a id="putfunctioncodesigningconfigrequestrequesttypedef"></a>
+
 ## PutFunctionCodeSigningConfigRequestRequestTypeDef
 
 ```python
@@ -1746,6 +1964,8 @@ Required fields:
 
 - `CodeSigningConfigArn`: `str`
 - `FunctionName`: `str`
+
+<a id="putfunctioncodesigningconfigresponsetypedef"></a>
 
 ## PutFunctionCodeSigningConfigResponseTypeDef
 
@@ -1760,6 +1980,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putfunctionconcurrencyrequestrequesttypedef"></a>
+
 ## PutFunctionConcurrencyRequestRequestTypeDef
 
 ```python
@@ -1770,6 +1992,8 @@ Required fields:
 
 - `FunctionName`: `str`
 - `ReservedConcurrentExecutions`: `int`
+
+<a id="putfunctioneventinvokeconfigrequestrequesttypedef"></a>
 
 ## PutFunctionEventInvokeConfigRequestRequestTypeDef
 
@@ -1789,6 +2013,8 @@ Optional fields:
 - `DestinationConfig`:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 
+<a id="putprovisionedconcurrencyconfigrequestrequesttypedef"></a>
+
 ## PutProvisionedConcurrencyConfigRequestRequestTypeDef
 
 ```python
@@ -1800,6 +2026,8 @@ Required fields:
 - `FunctionName`: `str`
 - `Qualifier`: `str`
 - `ProvisionedConcurrentExecutions`: `int`
+
+<a id="putprovisionedconcurrencyconfigresponsetypedef"></a>
 
 ## PutProvisionedConcurrencyConfigResponseTypeDef
 
@@ -1819,6 +2047,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removelayerversionpermissionrequestrequesttypedef"></a>
+
 ## RemoveLayerVersionPermissionRequestRequestTypeDef
 
 ```python
@@ -1834,6 +2064,8 @@ Required fields:
 Optional fields:
 
 - `RevisionId`: `str`
+
+<a id="removepermissionrequestrequesttypedef"></a>
 
 ## RemovePermissionRequestRequestTypeDef
 
@@ -1851,6 +2083,8 @@ Optional fields:
 - `Qualifier`: `str`
 - `RevisionId`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1865,6 +2099,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="selfmanagedeventsourcetypedef"></a>
+
 ## SelfManagedEventSourceTypeDef
 
 ```python
@@ -1875,6 +2111,8 @@ Optional fields:
 
 - `Endpoints`: `Mapping`\[`Literal['KAFKA_BOOTSTRAP_SERVERS']` (see
   [EndPointTypeType](./literals.md#endpointtypetype)), `Sequence`\[`str`\]\]
+
+<a id="sourceaccessconfigurationtypedef"></a>
 
 ## SourceAccessConfigurationTypeDef
 
@@ -1887,6 +2125,8 @@ Optional fields:
 - `Type`: [SourceAccessTypeType](./literals.md#sourceaccesstypetype)
 - `URI`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1898,6 +2138,8 @@ Required fields:
 - `Resource`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="tracingconfigresponsetypedef"></a>
+
 ## TracingConfigResponseTypeDef
 
 ```python
@@ -1907,6 +2149,8 @@ from mypy_boto3_lambda.type_defs import TracingConfigResponseTypeDef
 Optional fields:
 
 - `Mode`: [TracingModeType](./literals.md#tracingmodetype)
+
+<a id="tracingconfigtypedef"></a>
 
 ## TracingConfigTypeDef
 
@@ -1918,6 +2162,8 @@ Optional fields:
 
 - `Mode`: [TracingModeType](./literals.md#tracingmodetype)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1928,6 +2174,8 @@ Required fields:
 
 - `Resource`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatealiasrequestrequesttypedef"></a>
 
 ## UpdateAliasRequestRequestTypeDef
 
@@ -1948,6 +2196,8 @@ Optional fields:
   [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
 - `RevisionId`: `str`
 
+<a id="updatecodesigningconfigrequestrequesttypedef"></a>
+
 ## UpdateCodeSigningConfigRequestRequestTypeDef
 
 ```python
@@ -1966,6 +2216,8 @@ Optional fields:
 - `CodeSigningPolicies`:
   [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
 
+<a id="updatecodesigningconfigresponsetypedef"></a>
+
 ## UpdateCodeSigningConfigResponseTypeDef
 
 ```python
@@ -1978,6 +2230,8 @@ Required fields:
   [CodeSigningConfigTypeDef](./type_defs.md#codesigningconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateeventsourcemappingrequestrequesttypedef"></a>
 
 ## UpdateEventSourceMappingRequestRequestTypeDef
 
@@ -2009,6 +2263,8 @@ Optional fields:
 - `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
   (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
+<a id="updatefunctioncoderequestrequesttypedef"></a>
+
 ## UpdateFunctionCodeRequestRequestTypeDef
 
 ```python
@@ -2031,6 +2287,8 @@ Optional fields:
 - `RevisionId`: `str`
 - `Architectures`:
   `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
+
+<a id="updatefunctionconfigurationrequestrequesttypedef"></a>
 
 ## UpdateFunctionConfigurationRequestRequestTypeDef
 
@@ -2062,6 +2320,8 @@ Optional fields:
   `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 
+<a id="updatefunctioneventinvokeconfigrequestrequesttypedef"></a>
+
 ## UpdateFunctionEventInvokeConfigRequestRequestTypeDef
 
 ```python
@@ -2080,6 +2340,8 @@ Optional fields:
 - `DestinationConfig`:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 
+<a id="vpcconfigresponsetypedef"></a>
+
 ## VpcConfigResponseTypeDef
 
 ```python
@@ -2092,6 +2354,8 @@ Optional fields:
 - `SecurityGroupIds`: `List`\[`str`\]
 - `VpcId`: `str`
 
+<a id="vpcconfigtypedef"></a>
+
 ## VpcConfigTypeDef
 
 ```python
@@ -2102,6 +2366,8 @@ Optional fields:
 
 - `SubnetIds`: `Sequence`\[`str`\]
 - `SecurityGroupIds`: `Sequence`\[`str`\]
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

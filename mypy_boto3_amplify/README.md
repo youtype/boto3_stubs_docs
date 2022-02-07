@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-amplify-module"></a>
+
 # Type annotations for boto3 Amplify module
 
 > [Index](..) > Amplify
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
 type annotations stubs module
-[mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
+[mypy-boto3-amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[amplify]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[amplify]'
+
+# standalone installation
 pip install mypy-boto3-amplify
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-amplify
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="amplifyclient"></a>
+
 ## AmplifyClient
 
 Type annotations for `boto3.client("amplify")` as [AmplifyClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_amplify.client import AmplifyClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -73,6 +87,8 @@ from mypy_boto3_amplify.client import AmplifyClient
 - [update_domain_association](./client.md#update_domain_association)
 - [update_webhook](./client.md#update_webhook)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AmplifyClient [exceptions](./client.md#exceptions)
@@ -86,6 +102,8 @@ AmplifyClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - UnauthorizedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -94,13 +112,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_amplify.paginators import ListAppsPaginator, ...
+from mypy_boto3_amplify.paginator import ListAppsPaginator, ...
 ```
 
 - [ListAppsPaginator](./paginators.md#listappspaginator)
 - [ListBranchesPaginator](./paginators.md#listbranchespaginator)
 - [ListDomainAssociationsPaginator](./paginators.md#listdomainassociationspaginator)
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -123,6 +143,8 @@ from mypy_boto3_amplify.literals import DomainStatusType, ...
 - [StageType](./literals.md#stagetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

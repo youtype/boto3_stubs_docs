@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ssoadmin-module"></a>
+
 # Literals for boto3 SSOAdmin module
 
 > [Index](..) > [SSOAdmin](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
 type annotations stubs module
-[mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
+[mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 - [Literals for boto3 SSOAdmin module](#literals-for-boto3-ssoadmin-module)
   - [InstanceAccessControlAttributeConfigurationStatusType](#instanceaccesscontrolattributeconfigurationstatustype)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="instanceaccesscontrolattributeconfigurationstatustype"></a>
+
 ## InstanceAccessControlAttributeConfigurationStatusType
 
 ```python
@@ -39,6 +43,8 @@ Values:
 - `CREATION_IN_PROGRESS`
 - `ENABLED`
 
+<a id="listaccountassignmentcreationstatuspaginatorname"></a>
+
 ## ListAccountAssignmentCreationStatusPaginatorName
 
 ```python
@@ -48,6 +54,8 @@ from mypy_boto3_sso_admin.literals import ListAccountAssignmentCreationStatusPag
 Values:
 
 - `list_account_assignment_creation_status`
+
+<a id="listaccountassignmentdeletionstatuspaginatorname"></a>
 
 ## ListAccountAssignmentDeletionStatusPaginatorName
 
@@ -59,6 +67,8 @@ Values:
 
 - `list_account_assignment_deletion_status`
 
+<a id="listaccountassignmentspaginatorname"></a>
+
 ## ListAccountAssignmentsPaginatorName
 
 ```python
@@ -68,6 +78,8 @@ from mypy_boto3_sso_admin.literals import ListAccountAssignmentsPaginatorName
 Values:
 
 - `list_account_assignments`
+
+<a id="listaccountsforprovisionedpermissionsetpaginatorname"></a>
 
 ## ListAccountsForProvisionedPermissionSetPaginatorName
 
@@ -79,6 +91,8 @@ Values:
 
 - `list_accounts_for_provisioned_permission_set`
 
+<a id="listinstancespaginatorname"></a>
+
 ## ListInstancesPaginatorName
 
 ```python
@@ -88,6 +102,8 @@ from mypy_boto3_sso_admin.literals import ListInstancesPaginatorName
 Values:
 
 - `list_instances`
+
+<a id="listmanagedpoliciesinpermissionsetpaginatorname"></a>
 
 ## ListManagedPoliciesInPermissionSetPaginatorName
 
@@ -99,6 +115,8 @@ Values:
 
 - `list_managed_policies_in_permission_set`
 
+<a id="listpermissionsetprovisioningstatuspaginatorname"></a>
+
 ## ListPermissionSetProvisioningStatusPaginatorName
 
 ```python
@@ -108,6 +126,8 @@ from mypy_boto3_sso_admin.literals import ListPermissionSetProvisioningStatusPag
 Values:
 
 - `list_permission_set_provisioning_status`
+
+<a id="listpermissionsetspaginatorname"></a>
 
 ## ListPermissionSetsPaginatorName
 
@@ -119,6 +139,8 @@ Values:
 
 - `list_permission_sets`
 
+<a id="listpermissionsetsprovisionedtoaccountpaginatorname"></a>
+
 ## ListPermissionSetsProvisionedToAccountPaginatorName
 
 ```python
@@ -129,6 +151,8 @@ Values:
 
 - `list_permission_sets_provisioned_to_account`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -138,6 +162,8 @@ from mypy_boto3_sso_admin.literals import ListTagsForResourcePaginatorName
 Values:
 
 - `list_tags_for_resource`
+
+<a id="principaltypetype"></a>
 
 ## PrincipalTypeType
 
@@ -150,6 +176,8 @@ Values:
 - `GROUP`
 - `USER`
 
+<a id="provisiontargettypetype"></a>
+
 ## ProvisionTargetTypeType
 
 ```python
@@ -161,6 +189,8 @@ Values:
 - `ALL_PROVISIONED_ACCOUNTS`
 - `AWS_ACCOUNT`
 
+<a id="provisioningstatustype"></a>
+
 ## ProvisioningStatusType
 
 ```python
@@ -171,6 +201,8 @@ Values:
 
 - `LATEST_PERMISSION_SET_NOT_PROVISIONED`
 - `LATEST_PERMISSION_SET_PROVISIONED`
+
+<a id="statusvaluestype"></a>
 
 ## StatusValuesType
 
@@ -184,6 +216,8 @@ Values:
 - `IN_PROGRESS`
 - `SUCCEEDED`
 
+<a id="targettypetype"></a>
+
 ## TargetTypeType
 
 ```python
@@ -193,6 +227,8 @@ from mypy_boto3_sso_admin.literals import TargetTypeType
 Values:
 
 - `AWS_ACCOUNT`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -501,6 +537,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

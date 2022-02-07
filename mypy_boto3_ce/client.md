@@ -1,3 +1,5 @@
+<a id="costexplorerclient-for-boto3-costexplorer-module"></a>
+
 # CostExplorerClient for boto3 CostExplorer module
 
 > [Index](..) > [CostExplorer](.) > CostExplorerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
 type annotations stubs module
-[mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
+[mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
 
 - [CostExplorerClient for boto3 CostExplorer module](#costexplorerclient-for-boto3-costexplorer-module)
   - [CostExplorerClient](#costexplorerclient)
@@ -45,6 +47,8 @@ type annotations stubs module
     - [update_anomaly_subscription](#update_anomaly_subscription)
     - [update_cost_category_definition](#update_cost_category_definition)
 
+<a id="costexplorerclient"></a>
+
 ## CostExplorerClient
 
 Type annotations for `boto3.client("ce")`
@@ -52,14 +56,17 @@ Type annotations for `boto3.client("ce")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ce.client import CostExplorerClient
 
 def get_ce_client() -> CostExplorerClient:
-    return boto3.client("ce")
+    return Session().client("ce")
 ```
 
 Boto3 documentation:
 [CostExplorer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -87,7 +94,11 @@ Exceptions:
 - `Exceptions.UnknownSubscriptionException`
 - `Exceptions.UnresolvableUsageUnitException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -99,6 +110,8 @@ Boto3 documentation:
 [CostExplorer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -114,6 +127,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_anomaly_monitor"></a>
 
 ### create_anomaly_monitor
 
@@ -136,6 +151,8 @@ Keyword-only arguments:
 Returns
 [CreateAnomalyMonitorResponseTypeDef](./type_defs.md#createanomalymonitorresponsetypedef).
 
+<a id="create_anomaly_subscription"></a>
+
 ### create_anomaly_subscription
 
 Adds a subscription to a cost anomaly detection monitor.
@@ -156,6 +173,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAnomalySubscriptionResponseTypeDef](./type_defs.md#createanomalysubscriptionresponsetypedef).
+
+<a id="create_cost_category_definition"></a>
 
 ### create_cost_category_definition
 
@@ -186,6 +205,8 @@ Keyword-only arguments:
 Returns
 [CreateCostCategoryDefinitionResponseTypeDef](./type_defs.md#createcostcategorydefinitionresponsetypedef).
 
+<a id="delete_anomaly_monitor"></a>
+
 ### delete_anomaly_monitor
 
 Deletes a cost anomaly monitor.
@@ -204,6 +225,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_anomaly_subscription"></a>
+
 ### delete_anomaly_subscription
 
 Deletes a cost anomaly subscription.
@@ -221,6 +244,8 @@ Keyword-only arguments:
 - `SubscriptionArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_cost_category_definition"></a>
 
 ### delete_cost_category_definition
 
@@ -241,6 +266,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteCostCategoryDefinitionResponseTypeDef](./type_defs.md#deletecostcategorydefinitionresponsetypedef).
+
+<a id="describe_cost_category_definition"></a>
 
 ### describe_cost_category_definition
 
@@ -264,6 +291,8 @@ Keyword-only arguments:
 Returns
 [DescribeCostCategoryDefinitionResponseTypeDef](./type_defs.md#describecostcategorydefinitionresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -281,6 +310,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_anomalies"></a>
 
 ### get_anomalies
 
@@ -310,6 +341,8 @@ Keyword-only arguments:
 Returns
 [GetAnomaliesResponseTypeDef](./type_defs.md#getanomaliesresponsetypedef).
 
+<a id="get_anomaly_monitors"></a>
+
 ### get_anomaly_monitors
 
 Retrieves the cost anomaly monitor definitions for your account.
@@ -330,6 +363,8 @@ Keyword-only arguments:
 
 Returns
 [GetAnomalyMonitorsResponseTypeDef](./type_defs.md#getanomalymonitorsresponsetypedef).
+
+<a id="get_anomaly_subscriptions"></a>
 
 ### get_anomaly_subscriptions
 
@@ -352,6 +387,8 @@ Keyword-only arguments:
 
 Returns
 [GetAnomalySubscriptionsResponseTypeDef](./type_defs.md#getanomalysubscriptionsresponsetypedef).
+
+<a id="get_cost_and_usage"></a>
 
 ### get_cost_and_usage
 
@@ -378,6 +415,8 @@ Keyword-only arguments:
 
 Returns
 [GetCostAndUsageResponseTypeDef](./type_defs.md#getcostandusageresponsetypedef).
+
+<a id="get_cost_and_usage_with_resources"></a>
 
 ### get_cost_and_usage_with_resources
 
@@ -406,6 +445,8 @@ Keyword-only arguments:
 Returns
 [GetCostAndUsageWithResourcesResponseTypeDef](./type_defs.md#getcostandusagewithresourcesresponsetypedef).
 
+<a id="get_cost_categories"></a>
+
 ### get_cost_categories
 
 Retrieves an array of Cost Category names and values incurred cost.
@@ -433,6 +474,8 @@ Keyword-only arguments:
 Returns
 [GetCostCategoriesResponseTypeDef](./type_defs.md#getcostcategoriesresponsetypedef).
 
+<a id="get_cost_forecast"></a>
+
 ### get_cost_forecast
 
 Retrieves a forecast for how much Amazon Web Services predicts that you will
@@ -457,6 +500,8 @@ Keyword-only arguments:
 
 Returns
 [GetCostForecastResponseTypeDef](./type_defs.md#getcostforecastresponsetypedef).
+
+<a id="get_dimension_values"></a>
 
 ### get_dimension_values
 
@@ -487,6 +532,8 @@ Keyword-only arguments:
 Returns
 [GetDimensionValuesResponseTypeDef](./type_defs.md#getdimensionvaluesresponsetypedef).
 
+<a id="get_reservation_coverage"></a>
+
 ### get_reservation_coverage
 
 Retrieves the reservation coverage for your account.
@@ -514,6 +561,8 @@ Keyword-only arguments:
 
 Returns
 [GetReservationCoverageResponseTypeDef](./type_defs.md#getreservationcoverageresponsetypedef).
+
+<a id="get_reservation_purchase_recommendation"></a>
 
 ### get_reservation_purchase_recommendation
 
@@ -546,6 +595,8 @@ Keyword-only arguments:
 Returns
 [GetReservationPurchaseRecommendationResponseTypeDef](./type_defs.md#getreservationpurchaserecommendationresponsetypedef).
 
+<a id="get_reservation_utilization"></a>
+
 ### get_reservation_utilization
 
 Retrieves the reservation utilization for your account.
@@ -573,6 +624,8 @@ Keyword-only arguments:
 Returns
 [GetReservationUtilizationResponseTypeDef](./type_defs.md#getreservationutilizationresponsetypedef).
 
+<a id="get_rightsizing_recommendation"></a>
+
 ### get_rightsizing_recommendation
 
 Creates recommendations that help you save cost by identifying idle and
@@ -598,6 +651,8 @@ Keyword-only arguments:
 
 Returns
 [GetRightsizingRecommendationResponseTypeDef](./type_defs.md#getrightsizingrecommendationresponsetypedef).
+
+<a id="get_savings_plans_coverage"></a>
 
 ### get_savings_plans_coverage
 
@@ -626,6 +681,8 @@ Keyword-only arguments:
 
 Returns
 [GetSavingsPlansCoverageResponseTypeDef](./type_defs.md#getsavingsplanscoverageresponsetypedef).
+
+<a id="get_savings_plans_purchase_recommendation"></a>
 
 ### get_savings_plans_purchase_recommendation
 
@@ -660,6 +717,8 @@ Keyword-only arguments:
 Returns
 [GetSavingsPlansPurchaseRecommendationResponseTypeDef](./type_defs.md#getsavingsplanspurchaserecommendationresponsetypedef).
 
+<a id="get_savings_plans_utilization"></a>
+
 ### get_savings_plans_utilization
 
 Retrieves the Savings Plans utilization for your account across date ranges
@@ -683,6 +742,8 @@ Keyword-only arguments:
 
 Returns
 [GetSavingsPlansUtilizationResponseTypeDef](./type_defs.md#getsavingsplansutilizationresponsetypedef).
+
+<a id="get_savings_plans_utilization_details"></a>
 
 ### get_savings_plans_utilization_details
 
@@ -712,6 +773,8 @@ Keyword-only arguments:
 Returns
 [GetSavingsPlansUtilizationDetailsResponseTypeDef](./type_defs.md#getsavingsplansutilizationdetailsresponsetypedef).
 
+<a id="get_tags"></a>
+
 ### get_tags
 
 Queries for available tag keys and tag values for a specified period.
@@ -738,6 +801,8 @@ Keyword-only arguments:
 
 Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
 
+<a id="get_usage_forecast"></a>
+
 ### get_usage_forecast
 
 Retrieves a forecast for how much Amazon Web Services predicts that you will
@@ -763,6 +828,8 @@ Keyword-only arguments:
 Returns
 [GetUsageForecastResponseTypeDef](./type_defs.md#getusageforecastresponsetypedef).
 
+<a id="list_cost_category_definitions"></a>
+
 ### list_cost_category_definitions
 
 Returns the name, ARN, `NumberOfRules` and effective dates of all Cost
@@ -786,6 +853,8 @@ Keyword-only arguments:
 Returns
 [ListCostCategoryDefinitionsResponseTypeDef](./type_defs.md#listcostcategorydefinitionsresponsetypedef).
 
+<a id="provide_anomaly_feedback"></a>
+
 ### provide_anomaly_feedback
 
 Modifies the feedback property of a given cost anomaly.
@@ -807,6 +876,8 @@ Keyword-only arguments:
 Returns
 [ProvideAnomalyFeedbackResponseTypeDef](./type_defs.md#provideanomalyfeedbackresponsetypedef).
 
+<a id="update_anomaly_monitor"></a>
+
 ### update_anomaly_monitor
 
 Updates an existing cost anomaly monitor.
@@ -826,6 +897,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAnomalyMonitorResponseTypeDef](./type_defs.md#updateanomalymonitorresponsetypedef).
+
+<a id="update_anomaly_subscription"></a>
 
 ### update_anomaly_subscription
 
@@ -852,6 +925,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAnomalySubscriptionResponseTypeDef](./type_defs.md#updateanomalysubscriptionresponsetypedef).
+
+<a id="update_cost_category_definition"></a>
 
 ### update_cost_category_definition
 

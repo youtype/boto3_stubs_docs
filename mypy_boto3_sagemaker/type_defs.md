@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-sagemaker-module"></a>
+
 # Typed dictionaries for boto3 SageMaker module
 
 > [Index](..) > [SageMaker](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module
-[mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
+[mypy-boto3-sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
 - [Typed dictionaries for boto3 SageMaker module](#typed-dictionaries-for-boto3-sagemaker-module)
   - [ActionSourceTypeDef](#actionsourcetypedef)
@@ -841,6 +843,8 @@ type annotations stubs module
   - [WorkforceTypeDef](#workforcetypedef)
   - [WorkteamTypeDef](#workteamtypedef)
 
+<a id="actionsourcetypedef"></a>
+
 ## ActionSourceTypeDef
 
 ```python
@@ -855,6 +859,8 @@ Optional fields:
 
 - `SourceType`: `str`
 - `SourceId`: `str`
+
+<a id="actionsummarytypedef"></a>
 
 ## ActionSummaryTypeDef
 
@@ -872,6 +878,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
+<a id="addassociationrequestrequesttypedef"></a>
+
 ## AddAssociationRequestRequestTypeDef
 
 ```python
@@ -888,6 +896,8 @@ Optional fields:
 - `AssociationType`:
   [AssociationEdgeTypeType](./literals.md#associationedgetypetype)
 
+<a id="addassociationresponsetypedef"></a>
+
 ## AddAssociationResponseTypeDef
 
 ```python
@@ -901,6 +911,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="addtagsinputrequesttypedef"></a>
+
 ## AddTagsInputRequestTypeDef
 
 ```python
@@ -911,6 +923,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="addtagsoutputtypedef"></a>
 
 ## AddTagsOutputTypeDef
 
@@ -923,6 +937,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="additionalinferencespecificationdefinitiontypedef"></a>
 
 ## AdditionalInferenceSpecificationDefinitionTypeDef
 
@@ -946,6 +962,8 @@ Optional fields:
 - `SupportedContentTypes`: `Sequence`\[`str`\]
 - `SupportedResponseMIMETypes`: `Sequence`\[`str`\]
 
+<a id="agentversiontypedef"></a>
+
 ## AgentVersionTypeDef
 
 ```python
@@ -957,6 +975,8 @@ Required fields:
 - `Version`: `str`
 - `AgentCount`: `int`
 
+<a id="alarmtypedef"></a>
+
 ## AlarmTypeDef
 
 ```python
@@ -966,6 +986,8 @@ from mypy_boto3_sagemaker.type_defs import AlarmTypeDef
 Optional fields:
 
 - `AlarmName`: `str`
+
+<a id="algorithmspecificationtypedef"></a>
 
 ## AlgorithmSpecificationTypeDef
 
@@ -986,6 +1008,8 @@ Optional fields:
   `Sequence`\[[MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)\]
 - `EnableSageMakerMetricsTimeSeries`: `bool`
 
+<a id="algorithmstatusdetailstypedef"></a>
+
 ## AlgorithmStatusDetailsTypeDef
 
 ```python
@@ -998,6 +1022,8 @@ Optional fields:
   `List`\[[AlgorithmStatusItemTypeDef](./type_defs.md#algorithmstatusitemtypedef)\]
 - `ImageScanStatuses`:
   `List`\[[AlgorithmStatusItemTypeDef](./type_defs.md#algorithmstatusitemtypedef)\]
+
+<a id="algorithmstatusitemtypedef"></a>
 
 ## AlgorithmStatusItemTypeDef
 
@@ -1014,6 +1040,8 @@ Required fields:
 Optional fields:
 
 - `FailureReason`: `str`
+
+<a id="algorithmsummarytypedef"></a>
 
 ## AlgorithmSummaryTypeDef
 
@@ -1032,6 +1060,8 @@ Optional fields:
 
 - `AlgorithmDescription`: `str`
 
+<a id="algorithmvalidationprofiletypedef"></a>
+
 ## AlgorithmValidationProfileTypeDef
 
 ```python
@@ -1049,6 +1079,8 @@ Optional fields:
 - `TransformJobDefinition`:
   [TransformJobDefinitionTypeDef](./type_defs.md#transformjobdefinitiontypedef)
 
+<a id="algorithmvalidationspecificationtypedef"></a>
+
 ## AlgorithmValidationSpecificationTypeDef
 
 ```python
@@ -1061,6 +1093,8 @@ Required fields:
 - `ValidationProfiles`:
   `Sequence`\[[AlgorithmValidationProfileTypeDef](./type_defs.md#algorithmvalidationprofiletypedef)\]
 
+<a id="annotationconsolidationconfigtypedef"></a>
+
 ## AnnotationConsolidationConfigTypeDef
 
 ```python
@@ -1070,6 +1104,8 @@ from mypy_boto3_sagemaker.type_defs import AnnotationConsolidationConfigTypeDef
 Required fields:
 
 - `AnnotationConsolidationLambdaArn`: `str`
+
+<a id="appdetailstypedef"></a>
 
 ## AppDetailsTypeDef
 
@@ -1086,6 +1122,8 @@ Optional fields:
 - `Status`: [AppStatusType](./literals.md#appstatustype)
 - `CreationTime`: `datetime`
 
+<a id="appimageconfigdetailstypedef"></a>
+
 ## AppImageConfigDetailsTypeDef
 
 ```python
@@ -1100,6 +1138,8 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `KernelGatewayImageConfig`:
   [KernelGatewayImageConfigTypeDef](./type_defs.md#kernelgatewayimageconfigtypedef)
+
+<a id="appspecificationtypedef"></a>
 
 ## AppSpecificationTypeDef
 
@@ -1116,6 +1156,8 @@ Optional fields:
 - `ContainerEntrypoint`: `Sequence`\[`str`\]
 - `ContainerArguments`: `Sequence`\[`str`\]
 
+<a id="artifactsourcetypedef"></a>
+
 ## ArtifactSourceTypeDef
 
 ```python
@@ -1131,6 +1173,8 @@ Optional fields:
 - `SourceTypes`:
   `Sequence`\[[ArtifactSourceTypeTypeDef](./type_defs.md#artifactsourcetypetypedef)\]
 
+<a id="artifactsourcetypetypedef"></a>
+
 ## ArtifactSourceTypeTypeDef
 
 ```python
@@ -1142,6 +1186,8 @@ Required fields:
 - `SourceIdType`:
   [ArtifactSourceIdTypeType](./literals.md#artifactsourceidtypetype)
 - `Value`: `str`
+
+<a id="artifactsummarytypedef"></a>
 
 ## ArtifactSummaryTypeDef
 
@@ -1158,6 +1204,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
+<a id="associatetrialcomponentrequestrequesttypedef"></a>
+
 ## AssociateTrialComponentRequestRequestTypeDef
 
 ```python
@@ -1168,6 +1216,8 @@ Required fields:
 
 - `TrialComponentName`: `str`
 - `TrialName`: `str`
+
+<a id="associatetrialcomponentresponsetypedef"></a>
 
 ## AssociateTrialComponentResponseTypeDef
 
@@ -1181,6 +1231,8 @@ Required fields:
 - `TrialArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associationsummarytypedef"></a>
 
 ## AssociationSummaryTypeDef
 
@@ -1201,6 +1253,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 
+<a id="asyncinferenceclientconfigtypedef"></a>
+
 ## AsyncInferenceClientConfigTypeDef
 
 ```python
@@ -1210,6 +1264,8 @@ from mypy_boto3_sagemaker.type_defs import AsyncInferenceClientConfigTypeDef
 Optional fields:
 
 - `MaxConcurrentInvocationsPerInstance`: `int`
+
+<a id="asyncinferenceconfigtypedef"></a>
 
 ## AsyncInferenceConfigTypeDef
 
@@ -1227,6 +1283,8 @@ Optional fields:
 - `ClientConfig`:
   [AsyncInferenceClientConfigTypeDef](./type_defs.md#asyncinferenceclientconfigtypedef)
 
+<a id="asyncinferencenotificationconfigtypedef"></a>
+
 ## AsyncInferenceNotificationConfigTypeDef
 
 ```python
@@ -1237,6 +1295,8 @@ Optional fields:
 
 - `SuccessTopic`: `str`
 - `ErrorTopic`: `str`
+
+<a id="asyncinferenceoutputconfigtypedef"></a>
 
 ## AsyncInferenceOutputConfigTypeDef
 
@@ -1253,6 +1313,8 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `NotificationConfig`:
   [AsyncInferenceNotificationConfigTypeDef](./type_defs.md#asyncinferencenotificationconfigtypedef)
+
+<a id="athenadatasetdefinitiontypedef"></a>
 
 ## AthenaDatasetDefinitionTypeDef
 
@@ -1276,6 +1338,8 @@ Optional fields:
 - `OutputCompression`:
   [AthenaResultCompressionTypeType](./literals.md#athenaresultcompressiontypetype)
 
+<a id="automlcandidatesteptypedef"></a>
+
 ## AutoMLCandidateStepTypeDef
 
 ```python
@@ -1288,6 +1352,8 @@ Required fields:
   [CandidateStepTypeType](./literals.md#candidatesteptypetype)
 - `CandidateStepArn`: `str`
 - `CandidateStepName`: `str`
+
+<a id="automlcandidatetypedef"></a>
 
 ## AutoMLCandidateTypeDef
 
@@ -1316,6 +1382,8 @@ Optional fields:
 - `CandidateProperties`:
   [CandidatePropertiesTypeDef](./type_defs.md#candidatepropertiestypedef)
 
+<a id="automlchanneltypedef"></a>
+
 ## AutoMLChannelTypeDef
 
 ```python
@@ -1333,6 +1401,8 @@ Optional fields:
 - `CompressionType`: [CompressionTypeType](./literals.md#compressiontypetype)
 - `ContentType`: `str`
 
+<a id="automlcontainerdefinitiontypedef"></a>
+
 ## AutoMLContainerDefinitionTypeDef
 
 ```python
@@ -1348,6 +1418,8 @@ Optional fields:
 
 - `Environment`: `Dict`\[`str`, `str`\]
 
+<a id="automldatasourcetypedef"></a>
+
 ## AutoMLDataSourceTypeDef
 
 ```python
@@ -1358,6 +1430,8 @@ Required fields:
 
 - `S3DataSource`:
   [AutoMLS3DataSourceTypeDef](./type_defs.md#automls3datasourcetypedef)
+
+<a id="automljobartifactstypedef"></a>
 
 ## AutoMLJobArtifactsTypeDef
 
@@ -1370,6 +1444,8 @@ Optional fields:
 - `CandidateDefinitionNotebookLocation`: `str`
 - `DataExplorationNotebookLocation`: `str`
 
+<a id="automljobcompletioncriteriatypedef"></a>
+
 ## AutoMLJobCompletionCriteriaTypeDef
 
 ```python
@@ -1381,6 +1457,8 @@ Optional fields:
 - `MaxCandidates`: `int`
 - `MaxRuntimePerTrainingJobInSeconds`: `int`
 - `MaxAutoMLJobRuntimeInSeconds`: `int`
+
+<a id="automljobconfigtypedef"></a>
 
 ## AutoMLJobConfigTypeDef
 
@@ -1395,6 +1473,8 @@ Optional fields:
 - `SecurityConfig`:
   [AutoMLSecurityConfigTypeDef](./type_defs.md#automlsecurityconfigtypedef)
 
+<a id="automljobobjectivetypedef"></a>
+
 ## AutoMLJobObjectiveTypeDef
 
 ```python
@@ -1404,6 +1484,8 @@ from mypy_boto3_sagemaker.type_defs import AutoMLJobObjectiveTypeDef
 Required fields:
 
 - `MetricName`: [AutoMLMetricEnumType](./literals.md#automlmetricenumtype)
+
+<a id="automljobsummarytypedef"></a>
 
 ## AutoMLJobSummaryTypeDef
 
@@ -1428,6 +1510,8 @@ Optional fields:
 - `PartialFailureReasons`:
   `List`\[[AutoMLPartialFailureReasonTypeDef](./type_defs.md#automlpartialfailurereasontypedef)\]
 
+<a id="automloutputdataconfigtypedef"></a>
+
 ## AutoMLOutputDataConfigTypeDef
 
 ```python
@@ -1442,6 +1526,8 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+<a id="automlpartialfailurereasontypedef"></a>
+
 ## AutoMLPartialFailureReasonTypeDef
 
 ```python
@@ -1451,6 +1537,8 @@ from mypy_boto3_sagemaker.type_defs import AutoMLPartialFailureReasonTypeDef
 Optional fields:
 
 - `PartialFailureMessage`: `str`
+
+<a id="automls3datasourcetypedef"></a>
 
 ## AutoMLS3DataSourceTypeDef
 
@@ -1462,6 +1550,8 @@ Required fields:
 
 - `S3DataType`: [AutoMLS3DataTypeType](./literals.md#automls3datatypetype)
 - `S3Uri`: `str`
+
+<a id="automlsecurityconfigtypedef"></a>
 
 ## AutoMLSecurityConfigTypeDef
 
@@ -1475,6 +1565,8 @@ Optional fields:
 - `EnableInterContainerTrafficEncryption`: `bool`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
+<a id="autorollbackconfigtypedef"></a>
+
 ## AutoRollbackConfigTypeDef
 
 ```python
@@ -1484,6 +1576,8 @@ from mypy_boto3_sagemaker.type_defs import AutoRollbackConfigTypeDef
 Optional fields:
 
 - `Alarms`: `Sequence`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
+
+<a id="batchdescribemodelpackageerrortypedef"></a>
 
 ## BatchDescribeModelPackageErrorTypeDef
 
@@ -1496,6 +1590,8 @@ Required fields:
 - `ErrorCode`: `str`
 - `ErrorResponse`: `str`
 
+<a id="batchdescribemodelpackageinputrequesttypedef"></a>
+
 ## BatchDescribeModelPackageInputRequestTypeDef
 
 ```python
@@ -1505,6 +1601,8 @@ from mypy_boto3_sagemaker.type_defs import BatchDescribeModelPackageInputRequest
 Required fields:
 
 - `ModelPackageArnList`: `Sequence`\[`str`\]
+
+<a id="batchdescribemodelpackageoutputtypedef"></a>
 
 ## BatchDescribeModelPackageOutputTypeDef
 
@@ -1520,6 +1618,8 @@ Required fields:
   [BatchDescribeModelPackageErrorTypeDef](./type_defs.md#batchdescribemodelpackageerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="batchdescribemodelpackagesummarytypedef"></a>
 
 ## BatchDescribeModelPackageSummaryTypeDef
 
@@ -1544,6 +1644,8 @@ Optional fields:
 - `ModelApprovalStatus`:
   [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 
+<a id="biastypedef"></a>
+
 ## BiasTypeDef
 
 ```python
@@ -1557,6 +1659,8 @@ Optional fields:
   [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 - `PostTrainingReport`:
   [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+
+<a id="bluegreenupdatepolicytypedef"></a>
 
 ## BlueGreenUpdatePolicyTypeDef
 
@@ -1574,6 +1678,8 @@ Optional fields:
 - `TerminationWaitInSeconds`: `int`
 - `MaximumExecutionTimeoutInSeconds`: `int`
 
+<a id="cachehitresulttypedef"></a>
+
 ## CacheHitResultTypeDef
 
 ```python
@@ -1583,6 +1689,8 @@ from mypy_boto3_sagemaker.type_defs import CacheHitResultTypeDef
 Optional fields:
 
 - `SourcePipelineExecutionArn`: `str`
+
+<a id="callbackstepmetadatatypedef"></a>
 
 ## CallbackStepMetadataTypeDef
 
@@ -1597,6 +1705,8 @@ Optional fields:
 - `OutputParameters`:
   `List`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
 
+<a id="candidateartifactlocationstypedef"></a>
+
 ## CandidateArtifactLocationsTypeDef
 
 ```python
@@ -1606,6 +1716,8 @@ from mypy_boto3_sagemaker.type_defs import CandidateArtifactLocationsTypeDef
 Required fields:
 
 - `Explainability`: `str`
+
+<a id="candidatepropertiestypedef"></a>
 
 ## CandidatePropertiesTypeDef
 
@@ -1620,6 +1732,8 @@ Optional fields:
 - `CandidateMetrics`:
   `List`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
 
+<a id="capacitysizetypedef"></a>
+
 ## CapacitySizeTypeDef
 
 ```python
@@ -1630,6 +1744,8 @@ Required fields:
 
 - `Type`: [CapacitySizeTypeType](./literals.md#capacitysizetypetype)
 - `Value`: `int`
+
+<a id="capturecontenttypeheadertypedef"></a>
 
 ## CaptureContentTypeHeaderTypeDef
 
@@ -1642,6 +1758,8 @@ Optional fields:
 - `CsvContentTypes`: `Sequence`\[`str`\]
 - `JsonContentTypes`: `Sequence`\[`str`\]
 
+<a id="captureoptiontypedef"></a>
+
 ## CaptureOptionTypeDef
 
 ```python
@@ -1652,6 +1770,8 @@ Required fields:
 
 - `CaptureMode`: [CaptureModeType](./literals.md#capturemodetype)
 
+<a id="categoricalparameterrangespecificationtypedef"></a>
+
 ## CategoricalParameterRangeSpecificationTypeDef
 
 ```python
@@ -1661,6 +1781,8 @@ from mypy_boto3_sagemaker.type_defs import CategoricalParameterRangeSpecificatio
 Required fields:
 
 - `Values`: `Sequence`\[`str`\]
+
+<a id="categoricalparameterrangetypedef"></a>
 
 ## CategoricalParameterRangeTypeDef
 
@@ -1673,6 +1795,8 @@ Required fields:
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
 
+<a id="categoricalparametertypedef"></a>
+
 ## CategoricalParameterTypeDef
 
 ```python
@@ -1683,6 +1807,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `Sequence`\[`str`\]
+
+<a id="channelspecificationtypedef"></a>
 
 ## ChannelSpecificationTypeDef
 
@@ -1704,6 +1830,8 @@ Optional fields:
 - `SupportedCompressionTypes`:
   `Sequence`\[[CompressionTypeType](./literals.md#compressiontypetype)\]
 
+<a id="channeltypedef"></a>
+
 ## ChannelTypeDef
 
 ```python
@@ -1723,6 +1851,8 @@ Optional fields:
 - `InputMode`: [TrainingInputModeType](./literals.md#traininginputmodetype)
 - `ShuffleConfig`: [ShuffleConfigTypeDef](./type_defs.md#shuffleconfigtypedef)
 
+<a id="checkpointconfigtypedef"></a>
+
 ## CheckpointConfigTypeDef
 
 ```python
@@ -1736,6 +1866,8 @@ Required fields:
 Optional fields:
 
 - `LocalPath`: `str`
+
+<a id="clarifycheckstepmetadatatypedef"></a>
 
 ## ClarifyCheckStepMetadataTypeDef
 
@@ -1754,6 +1886,8 @@ Optional fields:
 - `SkipCheck`: `bool`
 - `RegisterNewBaseline`: `bool`
 
+<a id="coderepositorysummarytypedef"></a>
+
 ## CodeRepositorySummaryTypeDef
 
 ```python
@@ -1771,6 +1905,8 @@ Optional fields:
 
 - `GitConfig`: [GitConfigTypeDef](./type_defs.md#gitconfigtypedef)
 
+<a id="cognitoconfigtypedef"></a>
+
 ## CognitoConfigTypeDef
 
 ```python
@@ -1781,6 +1917,8 @@ Required fields:
 
 - `UserPool`: `str`
 - `ClientId`: `str`
+
+<a id="cognitomemberdefinitiontypedef"></a>
 
 ## CognitoMemberDefinitionTypeDef
 
@@ -1794,6 +1932,8 @@ Required fields:
 - `UserGroup`: `str`
 - `ClientId`: `str`
 
+<a id="collectionconfigurationtypedef"></a>
+
 ## CollectionConfigurationTypeDef
 
 ```python
@@ -1804,6 +1944,8 @@ Optional fields:
 
 - `CollectionName`: `str`
 - `CollectionParameters`: `Mapping`\[`str`, `str`\]
+
+<a id="compilationjobsummarytypedef"></a>
 
 ## CompilationJobSummaryTypeDef
 
@@ -1832,6 +1974,8 @@ Optional fields:
   [TargetPlatformAcceleratorType](./literals.md#targetplatformacceleratortype)
 - `LastModifiedTime`: `datetime`
 
+<a id="conditionstepmetadatatypedef"></a>
+
 ## ConditionStepMetadataTypeDef
 
 ```python
@@ -1841,6 +1985,8 @@ from mypy_boto3_sagemaker.type_defs import ConditionStepMetadataTypeDef
 Optional fields:
 
 - `Outcome`: [ConditionOutcomeType](./literals.md#conditionoutcometype)
+
+<a id="containerdefinitiontypedef"></a>
 
 ## ContainerDefinitionTypeDef
 
@@ -1861,6 +2007,8 @@ Optional fields:
 - `MultiModelConfig`:
   [MultiModelConfigTypeDef](./type_defs.md#multimodelconfigtypedef)
 
+<a id="contextsourcetypedef"></a>
+
 ## ContextSourceTypeDef
 
 ```python
@@ -1875,6 +2023,8 @@ Optional fields:
 
 - `SourceType`: `str`
 - `SourceId`: `str`
+
+<a id="contextsummarytypedef"></a>
 
 ## ContextSummaryTypeDef
 
@@ -1891,6 +2041,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
+<a id="continuousparameterrangespecificationtypedef"></a>
+
 ## ContinuousParameterRangeSpecificationTypeDef
 
 ```python
@@ -1901,6 +2053,8 @@ Required fields:
 
 - `MinValue`: `str`
 - `MaxValue`: `str`
+
+<a id="continuousparameterrangetypedef"></a>
 
 ## ContinuousParameterRangeTypeDef
 
@@ -1918,6 +2072,8 @@ Optional fields:
 
 - `ScalingType`:
   [HyperParameterScalingTypeType](./literals.md#hyperparameterscalingtypetype)
+
+<a id="createactionrequestrequesttypedef"></a>
 
 ## CreateActionRequestRequestTypeDef
 
@@ -1940,6 +2096,8 @@ Optional fields:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createactionresponsetypedef"></a>
+
 ## CreateActionResponseTypeDef
 
 ```python
@@ -1951,6 +2109,8 @@ Required fields:
 - `ActionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createalgorithminputrequesttypedef"></a>
 
 ## CreateAlgorithmInputRequestTypeDef
 
@@ -1974,6 +2134,8 @@ Optional fields:
 - `CertifyForMarketplace`: `bool`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createalgorithmoutputtypedef"></a>
+
 ## CreateAlgorithmOutputTypeDef
 
 ```python
@@ -1985,6 +2147,8 @@ Required fields:
 - `AlgorithmArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createappimageconfigrequestrequesttypedef"></a>
 
 ## CreateAppImageConfigRequestRequestTypeDef
 
@@ -2002,6 +2166,8 @@ Optional fields:
 - `KernelGatewayImageConfig`:
   [KernelGatewayImageConfigTypeDef](./type_defs.md#kernelgatewayimageconfigtypedef)
 
+<a id="createappimageconfigresponsetypedef"></a>
+
 ## CreateAppImageConfigResponseTypeDef
 
 ```python
@@ -2013,6 +2179,8 @@ Required fields:
 - `AppImageConfigArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createapprequestrequesttypedef"></a>
 
 ## CreateAppRequestRequestTypeDef
 
@@ -2032,6 +2200,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResourceSpec`: [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
 
+<a id="createappresponsetypedef"></a>
+
 ## CreateAppResponseTypeDef
 
 ```python
@@ -2043,6 +2213,8 @@ Required fields:
 - `AppArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createartifactrequestrequesttypedef"></a>
 
 ## CreateArtifactRequestRequestTypeDef
 
@@ -2063,6 +2235,8 @@ Optional fields:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createartifactresponsetypedef"></a>
+
 ## CreateArtifactResponseTypeDef
 
 ```python
@@ -2074,6 +2248,8 @@ Required fields:
 - `ArtifactArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createautomljobrequestrequesttypedef"></a>
 
 ## CreateAutoMLJobRequestRequestTypeDef
 
@@ -2102,6 +2278,8 @@ Optional fields:
 - `ModelDeployConfig`:
   [ModelDeployConfigTypeDef](./type_defs.md#modeldeployconfigtypedef)
 
+<a id="createautomljobresponsetypedef"></a>
+
 ## CreateAutoMLJobResponseTypeDef
 
 ```python
@@ -2113,6 +2291,8 @@ Required fields:
 - `AutoMLJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcoderepositoryinputrequesttypedef"></a>
 
 ## CreateCodeRepositoryInputRequestTypeDef
 
@@ -2129,6 +2309,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcoderepositoryoutputtypedef"></a>
+
 ## CreateCodeRepositoryOutputTypeDef
 
 ```python
@@ -2140,6 +2322,8 @@ Required fields:
 - `CodeRepositoryArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcompilationjobrequestrequesttypedef"></a>
 
 ## CreateCompilationJobRequestRequestTypeDef
 
@@ -2162,6 +2346,8 @@ Optional fields:
 - `VpcConfig`: [NeoVpcConfigTypeDef](./type_defs.md#neovpcconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcompilationjobresponsetypedef"></a>
+
 ## CreateCompilationJobResponseTypeDef
 
 ```python
@@ -2173,6 +2359,8 @@ Required fields:
 - `CompilationJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcontextrequestrequesttypedef"></a>
 
 ## CreateContextRequestRequestTypeDef
 
@@ -2192,6 +2380,8 @@ Optional fields:
 - `Properties`: `Mapping`\[`str`, `str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcontextresponsetypedef"></a>
+
 ## CreateContextResponseTypeDef
 
 ```python
@@ -2203,6 +2393,8 @@ Required fields:
 - `ContextArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdataqualityjobdefinitionrequestrequesttypedef"></a>
 
 ## CreateDataQualityJobDefinitionRequestRequestTypeDef
 
@@ -2233,6 +2425,8 @@ Optional fields:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdataqualityjobdefinitionresponsetypedef"></a>
+
 ## CreateDataQualityJobDefinitionResponseTypeDef
 
 ```python
@@ -2244,6 +2438,8 @@ Required fields:
 - `JobDefinitionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdevicefleetrequestrequesttypedef"></a>
 
 ## CreateDeviceFleetRequestRequestTypeDef
 
@@ -2263,6 +2459,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EnableIotRoleAlias`: `bool`
+
+<a id="createdomainrequestrequesttypedef"></a>
 
 ## CreateDomainRequestRequestTypeDef
 
@@ -2291,6 +2489,8 @@ Optional fields:
 - `DomainSettings`:
   [DomainSettingsTypeDef](./type_defs.md#domainsettingstypedef)
 
+<a id="createdomainresponsetypedef"></a>
+
 ## CreateDomainResponseTypeDef
 
 ```python
@@ -2303,6 +2503,8 @@ Required fields:
 - `Url`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createedgepackagingjobrequestrequesttypedef"></a>
 
 ## CreateEdgePackagingJobRequestRequestTypeDef
 
@@ -2325,6 +2527,8 @@ Optional fields:
 - `ResourceKey`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createendpointconfiginputrequesttypedef"></a>
+
 ## CreateEndpointConfigInputRequestTypeDef
 
 ```python
@@ -2346,6 +2550,8 @@ Optional fields:
 - `AsyncInferenceConfig`:
   [AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef)
 
+<a id="createendpointconfigoutputtypedef"></a>
+
 ## CreateEndpointConfigOutputTypeDef
 
 ```python
@@ -2357,6 +2563,8 @@ Required fields:
 - `EndpointConfigArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createendpointinputrequesttypedef"></a>
 
 ## CreateEndpointInputRequestTypeDef
 
@@ -2375,6 +2583,8 @@ Optional fields:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createendpointoutputtypedef"></a>
+
 ## CreateEndpointOutputTypeDef
 
 ```python
@@ -2386,6 +2596,8 @@ Required fields:
 - `EndpointArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createexperimentrequestrequesttypedef"></a>
 
 ## CreateExperimentRequestRequestTypeDef
 
@@ -2403,6 +2615,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createexperimentresponsetypedef"></a>
+
 ## CreateExperimentResponseTypeDef
 
 ```python
@@ -2414,6 +2628,8 @@ Required fields:
 - `ExperimentArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfeaturegrouprequestrequesttypedef"></a>
 
 ## CreateFeatureGroupRequestRequestTypeDef
 
@@ -2439,6 +2655,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createfeaturegroupresponsetypedef"></a>
+
 ## CreateFeatureGroupResponseTypeDef
 
 ```python
@@ -2450,6 +2668,8 @@ Required fields:
 - `FeatureGroupArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createflowdefinitionrequestrequesttypedef"></a>
 
 ## CreateFlowDefinitionRequestRequestTypeDef
 
@@ -2474,6 +2694,8 @@ Optional fields:
   [HumanLoopActivationConfigTypeDef](./type_defs.md#humanloopactivationconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createflowdefinitionresponsetypedef"></a>
+
 ## CreateFlowDefinitionResponseTypeDef
 
 ```python
@@ -2485,6 +2707,8 @@ Required fields:
 - `FlowDefinitionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createhumantaskuirequestrequesttypedef"></a>
 
 ## CreateHumanTaskUiRequestRequestTypeDef
 
@@ -2501,6 +2725,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createhumantaskuiresponsetypedef"></a>
+
 ## CreateHumanTaskUiResponseTypeDef
 
 ```python
@@ -2512,6 +2738,8 @@ Required fields:
 - `HumanTaskUiArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createhyperparametertuningjobrequestrequesttypedef"></a>
 
 ## CreateHyperParameterTuningJobRequestRequestTypeDef
 
@@ -2535,6 +2763,8 @@ Optional fields:
   [HyperParameterTuningJobWarmStartConfigTypeDef](./type_defs.md#hyperparametertuningjobwarmstartconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createhyperparametertuningjobresponsetypedef"></a>
+
 ## CreateHyperParameterTuningJobResponseTypeDef
 
 ```python
@@ -2546,6 +2776,8 @@ Required fields:
 - `HyperParameterTuningJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createimagerequestrequesttypedef"></a>
 
 ## CreateImageRequestRequestTypeDef
 
@@ -2564,6 +2796,8 @@ Optional fields:
 - `DisplayName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createimageresponsetypedef"></a>
+
 ## CreateImageResponseTypeDef
 
 ```python
@@ -2575,6 +2809,8 @@ Required fields:
 - `ImageArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createimageversionrequestrequesttypedef"></a>
 
 ## CreateImageVersionRequestRequestTypeDef
 
@@ -2588,6 +2824,8 @@ Required fields:
 - `ClientToken`: `str`
 - `ImageName`: `str`
 
+<a id="createimageversionresponsetypedef"></a>
+
 ## CreateImageVersionResponseTypeDef
 
 ```python
@@ -2599,6 +2837,8 @@ Required fields:
 - `ImageVersionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createinferencerecommendationsjobrequestrequesttypedef"></a>
 
 ## CreateInferenceRecommendationsJobRequestRequestTypeDef
 
@@ -2622,6 +2862,8 @@ Optional fields:
   [RecommendationJobStoppingConditionsTypeDef](./type_defs.md#recommendationjobstoppingconditionstypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createinferencerecommendationsjobresponsetypedef"></a>
+
 ## CreateInferenceRecommendationsJobResponseTypeDef
 
 ```python
@@ -2633,6 +2875,8 @@ Required fields:
 - `JobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlabelingjobrequestrequesttypedef"></a>
 
 ## CreateLabelingJobRequestRequestTypeDef
 
@@ -2661,6 +2905,8 @@ Optional fields:
   [LabelingJobAlgorithmsConfigTypeDef](./type_defs.md#labelingjobalgorithmsconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createlabelingjobresponsetypedef"></a>
+
 ## CreateLabelingJobResponseTypeDef
 
 ```python
@@ -2672,6 +2918,8 @@ Required fields:
 - `LabelingJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmodelbiasjobdefinitionrequestrequesttypedef"></a>
 
 ## CreateModelBiasJobDefinitionRequestRequestTypeDef
 
@@ -2702,6 +2950,8 @@ Optional fields:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createmodelbiasjobdefinitionresponsetypedef"></a>
+
 ## CreateModelBiasJobDefinitionResponseTypeDef
 
 ```python
@@ -2713,6 +2963,8 @@ Required fields:
 - `JobDefinitionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmodelexplainabilityjobdefinitionrequestrequesttypedef"></a>
 
 ## CreateModelExplainabilityJobDefinitionRequestRequestTypeDef
 
@@ -2743,6 +2995,8 @@ Optional fields:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createmodelexplainabilityjobdefinitionresponsetypedef"></a>
+
 ## CreateModelExplainabilityJobDefinitionResponseTypeDef
 
 ```python
@@ -2754,6 +3008,8 @@ Required fields:
 - `JobDefinitionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmodelinputrequesttypedef"></a>
 
 ## CreateModelInputRequestTypeDef
 
@@ -2778,6 +3034,8 @@ Optional fields:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `EnableNetworkIsolation`: `bool`
 
+<a id="createmodeloutputtypedef"></a>
+
 ## CreateModelOutputTypeDef
 
 ```python
@@ -2789,6 +3047,8 @@ Required fields:
 - `ModelArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmodelpackagegroupinputrequesttypedef"></a>
 
 ## CreateModelPackageGroupInputRequestTypeDef
 
@@ -2805,6 +3065,8 @@ Optional fields:
 - `ModelPackageGroupDescription`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createmodelpackagegroupoutputtypedef"></a>
+
 ## CreateModelPackageGroupOutputTypeDef
 
 ```python
@@ -2816,6 +3078,8 @@ Required fields:
 - `ModelPackageGroupArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmodelpackageinputrequesttypedef"></a>
 
 ## CreateModelPackageInputRequestTypeDef
 
@@ -2851,6 +3115,8 @@ Optional fields:
 - `AdditionalInferenceSpecifications`:
   `Sequence`\[[AdditionalInferenceSpecificationDefinitionTypeDef](./type_defs.md#additionalinferencespecificationdefinitiontypedef)\]
 
+<a id="createmodelpackageoutputtypedef"></a>
+
 ## CreateModelPackageOutputTypeDef
 
 ```python
@@ -2862,6 +3128,8 @@ Required fields:
 - `ModelPackageArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmodelqualityjobdefinitionrequestrequesttypedef"></a>
 
 ## CreateModelQualityJobDefinitionRequestRequestTypeDef
 
@@ -2892,6 +3160,8 @@ Optional fields:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createmodelqualityjobdefinitionresponsetypedef"></a>
+
 ## CreateModelQualityJobDefinitionResponseTypeDef
 
 ```python
@@ -2903,6 +3173,8 @@ Required fields:
 - `JobDefinitionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmonitoringschedulerequestrequesttypedef"></a>
 
 ## CreateMonitoringScheduleRequestRequestTypeDef
 
@@ -2920,6 +3192,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createmonitoringscheduleresponsetypedef"></a>
+
 ## CreateMonitoringScheduleResponseTypeDef
 
 ```python
@@ -2931,6 +3205,8 @@ Required fields:
 - `MonitoringScheduleArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createnotebookinstanceinputrequesttypedef"></a>
 
 ## CreateNotebookInstanceInputRequestTypeDef
 
@@ -2961,6 +3237,8 @@ Optional fields:
 - `RootAccess`: [RootAccessType](./literals.md#rootaccesstype)
 - `PlatformIdentifier`: `str`
 
+<a id="createnotebookinstancelifecycleconfiginputrequesttypedef"></a>
+
 ## CreateNotebookInstanceLifecycleConfigInputRequestTypeDef
 
 ```python
@@ -2978,6 +3256,8 @@ Optional fields:
 - `OnStart`:
   `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 
+<a id="createnotebookinstancelifecycleconfigoutputtypedef"></a>
+
 ## CreateNotebookInstanceLifecycleConfigOutputTypeDef
 
 ```python
@@ -2990,6 +3270,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createnotebookinstanceoutputtypedef"></a>
+
 ## CreateNotebookInstanceOutputTypeDef
 
 ```python
@@ -3001,6 +3283,8 @@ Required fields:
 - `NotebookInstanceArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpipelinerequestrequesttypedef"></a>
 
 ## CreatePipelineRequestRequestTypeDef
 
@@ -3025,6 +3309,8 @@ Optional fields:
 - `ParallelismConfiguration`:
   [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
+<a id="createpipelineresponsetypedef"></a>
+
 ## CreatePipelineResponseTypeDef
 
 ```python
@@ -3036,6 +3322,8 @@ Required fields:
 - `PipelineArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpresigneddomainurlrequestrequesttypedef"></a>
 
 ## CreatePresignedDomainUrlRequestRequestTypeDef
 
@@ -3053,6 +3341,8 @@ Optional fields:
 - `SessionExpirationDurationInSeconds`: `int`
 - `ExpiresInSeconds`: `int`
 
+<a id="createpresigneddomainurlresponsetypedef"></a>
+
 ## CreatePresignedDomainUrlResponseTypeDef
 
 ```python
@@ -3064,6 +3354,8 @@ Required fields:
 - `AuthorizedUrl`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpresignednotebookinstanceurlinputrequesttypedef"></a>
 
 ## CreatePresignedNotebookInstanceUrlInputRequestTypeDef
 
@@ -3079,6 +3371,8 @@ Optional fields:
 
 - `SessionExpirationDurationInSeconds`: `int`
 
+<a id="createpresignednotebookinstanceurloutputtypedef"></a>
+
 ## CreatePresignedNotebookInstanceUrlOutputTypeDef
 
 ```python
@@ -3090,6 +3384,8 @@ Required fields:
 - `AuthorizedUrl`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprocessingjobrequestrequesttypedef"></a>
 
 ## CreateProcessingJobRequestRequestTypeDef
 
@@ -3120,6 +3416,8 @@ Optional fields:
 - `ExperimentConfig`:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 
+<a id="createprocessingjobresponsetypedef"></a>
+
 ## CreateProcessingJobResponseTypeDef
 
 ```python
@@ -3131,6 +3429,8 @@ Required fields:
 - `ProcessingJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprojectinputrequesttypedef"></a>
 
 ## CreateProjectInputRequestTypeDef
 
@@ -3149,6 +3449,8 @@ Optional fields:
 - `ProjectDescription`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createprojectoutputtypedef"></a>
+
 ## CreateProjectOutputTypeDef
 
 ```python
@@ -3161,6 +3463,8 @@ Required fields:
 - `ProjectId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstudiolifecycleconfigrequestrequesttypedef"></a>
 
 ## CreateStudioLifecycleConfigRequestRequestTypeDef
 
@@ -3179,6 +3483,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createstudiolifecycleconfigresponsetypedef"></a>
+
 ## CreateStudioLifecycleConfigResponseTypeDef
 
 ```python
@@ -3190,6 +3496,8 @@ Required fields:
 - `StudioLifecycleConfigArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtrainingjobrequestrequesttypedef"></a>
 
 ## CreateTrainingJobRequestRequestTypeDef
 
@@ -3237,6 +3545,8 @@ Optional fields:
 - `Environment`: `Mapping`\[`str`, `str`\]
 - `RetryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 
+<a id="createtrainingjobresponsetypedef"></a>
+
 ## CreateTrainingJobResponseTypeDef
 
 ```python
@@ -3248,6 +3558,8 @@ Required fields:
 - `TrainingJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtransformjobrequestrequesttypedef"></a>
 
 ## CreateTransformJobRequestRequestTypeDef
 
@@ -3280,6 +3592,8 @@ Optional fields:
 - `ExperimentConfig`:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 
+<a id="createtransformjobresponsetypedef"></a>
+
 ## CreateTransformJobResponseTypeDef
 
 ```python
@@ -3291,6 +3605,8 @@ Required fields:
 - `TransformJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtrialcomponentrequestrequesttypedef"></a>
 
 ## CreateTrialComponentRequestRequestTypeDef
 
@@ -3319,6 +3635,8 @@ Optional fields:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createtrialcomponentresponsetypedef"></a>
+
 ## CreateTrialComponentResponseTypeDef
 
 ```python
@@ -3330,6 +3648,8 @@ Required fields:
 - `TrialComponentArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtrialrequestrequesttypedef"></a>
 
 ## CreateTrialRequestRequestTypeDef
 
@@ -3349,6 +3669,8 @@ Optional fields:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createtrialresponsetypedef"></a>
+
 ## CreateTrialResponseTypeDef
 
 ```python
@@ -3360,6 +3682,8 @@ Required fields:
 - `TrialArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createuserprofilerequestrequesttypedef"></a>
 
 ## CreateUserProfileRequestRequestTypeDef
 
@@ -3379,6 +3703,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 
+<a id="createuserprofileresponsetypedef"></a>
+
 ## CreateUserProfileResponseTypeDef
 
 ```python
@@ -3390,6 +3716,8 @@ Required fields:
 - `UserProfileArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createworkforcerequestrequesttypedef"></a>
 
 ## CreateWorkforceRequestRequestTypeDef
 
@@ -3409,6 +3737,8 @@ Optional fields:
   [SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createworkforceresponsetypedef"></a>
+
 ## CreateWorkforceResponseTypeDef
 
 ```python
@@ -3420,6 +3750,8 @@ Required fields:
 - `WorkforceArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createworkteamrequestrequesttypedef"></a>
 
 ## CreateWorkteamRequestRequestTypeDef
 
@@ -3441,6 +3773,8 @@ Optional fields:
   [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createworkteamresponsetypedef"></a>
+
 ## CreateWorkteamResponseTypeDef
 
 ```python
@@ -3452,6 +3786,8 @@ Required fields:
 - `WorkteamArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="customimagetypedef"></a>
 
 ## CustomImageTypeDef
 
@@ -3468,6 +3804,8 @@ Optional fields:
 
 - `ImageVersionNumber`: `int`
 
+<a id="datacaptureconfigsummarytypedef"></a>
+
 ## DataCaptureConfigSummaryTypeDef
 
 ```python
@@ -3481,6 +3819,8 @@ Required fields:
 - `CurrentSamplingPercentage`: `int`
 - `DestinationS3Uri`: `str`
 - `KmsKeyId`: `str`
+
+<a id="datacaptureconfigtypedef"></a>
 
 ## DataCaptureConfigTypeDef
 
@@ -3502,6 +3842,8 @@ Optional fields:
 - `CaptureContentTypeHeader`:
   [CaptureContentTypeHeaderTypeDef](./type_defs.md#capturecontenttypeheadertypedef)
 
+<a id="datacatalogconfigtypedef"></a>
+
 ## DataCatalogConfigTypeDef
 
 ```python
@@ -3514,6 +3856,8 @@ Required fields:
 - `Catalog`: `str`
 - `Database`: `str`
 
+<a id="dataprocessingtypedef"></a>
+
 ## DataProcessingTypeDef
 
 ```python
@@ -3525,6 +3869,8 @@ Optional fields:
 - `InputFilter`: `str`
 - `OutputFilter`: `str`
 - `JoinSource`: [JoinSourceType](./literals.md#joinsourcetype)
+
+<a id="dataqualityappspecificationtypedef"></a>
 
 ## DataQualityAppSpecificationTypeDef
 
@@ -3544,6 +3890,8 @@ Optional fields:
 - `PostAnalyticsProcessorSourceUri`: `str`
 - `Environment`: `Mapping`\[`str`, `str`\]
 
+<a id="dataqualitybaselineconfigtypedef"></a>
+
 ## DataQualityBaselineConfigTypeDef
 
 ```python
@@ -3558,6 +3906,8 @@ Optional fields:
 - `StatisticsResource`:
   [MonitoringStatisticsResourceTypeDef](./type_defs.md#monitoringstatisticsresourcetypedef)
 
+<a id="dataqualityjobinputtypedef"></a>
+
 ## DataQualityJobInputTypeDef
 
 ```python
@@ -3567,6 +3917,8 @@ from mypy_boto3_sagemaker.type_defs import DataQualityJobInputTypeDef
 Required fields:
 
 - `EndpointInput`: [EndpointInputTypeDef](./type_defs.md#endpointinputtypedef)
+
+<a id="datasourcetypedef"></a>
 
 ## DataSourceTypeDef
 
@@ -3579,6 +3931,8 @@ Optional fields:
 - `S3DataSource`: [S3DataSourceTypeDef](./type_defs.md#s3datasourcetypedef)
 - `FileSystemDataSource`:
   [FileSystemDataSourceTypeDef](./type_defs.md#filesystemdatasourcetypedef)
+
+<a id="datasetdefinitiontypedef"></a>
 
 ## DatasetDefinitionTypeDef
 
@@ -3597,6 +3951,8 @@ Optional fields:
   [DataDistributionTypeType](./literals.md#datadistributiontypetype)
 - `InputMode`: [InputModeType](./literals.md#inputmodetype)
 
+<a id="debughookconfigtypedef"></a>
+
 ## DebugHookConfigTypeDef
 
 ```python
@@ -3613,6 +3969,8 @@ Optional fields:
 - `HookParameters`: `Mapping`\[`str`, `str`\]
 - `CollectionConfigurations`:
   `Sequence`\[[CollectionConfigurationTypeDef](./type_defs.md#collectionconfigurationtypedef)\]
+
+<a id="debugruleconfigurationtypedef"></a>
 
 ## DebugRuleConfigurationTypeDef
 
@@ -3634,6 +3992,8 @@ Optional fields:
 - `VolumeSizeInGB`: `int`
 - `RuleParameters`: `Mapping`\[`str`, `str`\]
 
+<a id="debugruleevaluationstatustypedef"></a>
+
 ## DebugRuleEvaluationStatusTypeDef
 
 ```python
@@ -3649,6 +4009,8 @@ Optional fields:
 - `StatusDetails`: `str`
 - `LastModifiedTime`: `datetime`
 
+<a id="deleteactionrequestrequesttypedef"></a>
+
 ## DeleteActionRequestRequestTypeDef
 
 ```python
@@ -3658,6 +4020,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteActionRequestRequestTypeDef
 Required fields:
 
 - `ActionName`: `str`
+
+<a id="deleteactionresponsetypedef"></a>
 
 ## DeleteActionResponseTypeDef
 
@@ -3671,6 +4035,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletealgorithminputrequesttypedef"></a>
+
 ## DeleteAlgorithmInputRequestTypeDef
 
 ```python
@@ -3681,6 +4047,8 @@ Required fields:
 
 - `AlgorithmName`: `str`
 
+<a id="deleteappimageconfigrequestrequesttypedef"></a>
+
 ## DeleteAppImageConfigRequestRequestTypeDef
 
 ```python
@@ -3690,6 +4058,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteAppImageConfigRequestRequestTyp
 Required fields:
 
 - `AppImageConfigName`: `str`
+
+<a id="deleteapprequestrequesttypedef"></a>
 
 ## DeleteAppRequestRequestTypeDef
 
@@ -3704,6 +4074,8 @@ Required fields:
 - `AppType`: [AppTypeType](./literals.md#apptypetype)
 - `AppName`: `str`
 
+<a id="deleteartifactrequestrequesttypedef"></a>
+
 ## DeleteArtifactRequestRequestTypeDef
 
 ```python
@@ -3714,6 +4086,8 @@ Optional fields:
 
 - `ArtifactArn`: `str`
 - `Source`: [ArtifactSourceTypeDef](./type_defs.md#artifactsourcetypedef)
+
+<a id="deleteartifactresponsetypedef"></a>
 
 ## DeleteArtifactResponseTypeDef
 
@@ -3727,6 +4101,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteassociationrequestrequesttypedef"></a>
+
 ## DeleteAssociationRequestRequestTypeDef
 
 ```python
@@ -3737,6 +4113,8 @@ Required fields:
 
 - `SourceArn`: `str`
 - `DestinationArn`: `str`
+
+<a id="deleteassociationresponsetypedef"></a>
 
 ## DeleteAssociationResponseTypeDef
 
@@ -3751,6 +4129,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecoderepositoryinputrequesttypedef"></a>
+
 ## DeleteCodeRepositoryInputRequestTypeDef
 
 ```python
@@ -3761,6 +4141,8 @@ Required fields:
 
 - `CodeRepositoryName`: `str`
 
+<a id="deletecontextrequestrequesttypedef"></a>
+
 ## DeleteContextRequestRequestTypeDef
 
 ```python
@@ -3770,6 +4152,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteContextRequestRequestTypeDef
 Required fields:
 
 - `ContextName`: `str`
+
+<a id="deletecontextresponsetypedef"></a>
 
 ## DeleteContextResponseTypeDef
 
@@ -3783,6 +4167,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedataqualityjobdefinitionrequestrequesttypedef"></a>
+
 ## DeleteDataQualityJobDefinitionRequestRequestTypeDef
 
 ```python
@@ -3793,6 +4179,8 @@ Required fields:
 
 - `JobDefinitionName`: `str`
 
+<a id="deletedevicefleetrequestrequesttypedef"></a>
+
 ## DeleteDeviceFleetRequestRequestTypeDef
 
 ```python
@@ -3802,6 +4190,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteDeviceFleetRequestRequestTypeDe
 Required fields:
 
 - `DeviceFleetName`: `str`
+
+<a id="deletedomainrequestrequesttypedef"></a>
 
 ## DeleteDomainRequestRequestTypeDef
 
@@ -3818,6 +4208,8 @@ Optional fields:
 - `RetentionPolicy`:
   [RetentionPolicyTypeDef](./type_defs.md#retentionpolicytypedef)
 
+<a id="deleteendpointconfiginputrequesttypedef"></a>
+
 ## DeleteEndpointConfigInputRequestTypeDef
 
 ```python
@@ -3827,6 +4219,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteEndpointConfigInputRequestTypeD
 Required fields:
 
 - `EndpointConfigName`: `str`
+
+<a id="deleteendpointinputrequesttypedef"></a>
 
 ## DeleteEndpointInputRequestTypeDef
 
@@ -3838,6 +4232,8 @@ Required fields:
 
 - `EndpointName`: `str`
 
+<a id="deleteexperimentrequestrequesttypedef"></a>
+
 ## DeleteExperimentRequestRequestTypeDef
 
 ```python
@@ -3847,6 +4243,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteExperimentRequestRequestTypeDef
 Required fields:
 
 - `ExperimentName`: `str`
+
+<a id="deleteexperimentresponsetypedef"></a>
 
 ## DeleteExperimentResponseTypeDef
 
@@ -3860,6 +4258,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletefeaturegrouprequestrequesttypedef"></a>
+
 ## DeleteFeatureGroupRequestRequestTypeDef
 
 ```python
@@ -3869,6 +4269,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteFeatureGroupRequestRequestTypeD
 Required fields:
 
 - `FeatureGroupName`: `str`
+
+<a id="deleteflowdefinitionrequestrequesttypedef"></a>
 
 ## DeleteFlowDefinitionRequestRequestTypeDef
 
@@ -3880,6 +4282,8 @@ Required fields:
 
 - `FlowDefinitionName`: `str`
 
+<a id="deletehumantaskuirequestrequesttypedef"></a>
+
 ## DeleteHumanTaskUiRequestRequestTypeDef
 
 ```python
@@ -3890,6 +4294,8 @@ Required fields:
 
 - `HumanTaskUiName`: `str`
 
+<a id="deleteimagerequestrequesttypedef"></a>
+
 ## DeleteImageRequestRequestTypeDef
 
 ```python
@@ -3899,6 +4305,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteImageRequestRequestTypeDef
 Required fields:
 
 - `ImageName`: `str`
+
+<a id="deleteimageversionrequestrequesttypedef"></a>
 
 ## DeleteImageVersionRequestRequestTypeDef
 
@@ -3911,6 +4319,8 @@ Required fields:
 - `ImageName`: `str`
 - `Version`: `int`
 
+<a id="deletemodelbiasjobdefinitionrequestrequesttypedef"></a>
+
 ## DeleteModelBiasJobDefinitionRequestRequestTypeDef
 
 ```python
@@ -3920,6 +4330,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteModelBiasJobDefinitionRequestRe
 Required fields:
 
 - `JobDefinitionName`: `str`
+
+<a id="deletemodelexplainabilityjobdefinitionrequestrequesttypedef"></a>
 
 ## DeleteModelExplainabilityJobDefinitionRequestRequestTypeDef
 
@@ -3931,6 +4343,8 @@ Required fields:
 
 - `JobDefinitionName`: `str`
 
+<a id="deletemodelinputrequesttypedef"></a>
+
 ## DeleteModelInputRequestTypeDef
 
 ```python
@@ -3940,6 +4354,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteModelInputRequestTypeDef
 Required fields:
 
 - `ModelName`: `str`
+
+<a id="deletemodelpackagegroupinputrequesttypedef"></a>
 
 ## DeleteModelPackageGroupInputRequestTypeDef
 
@@ -3951,6 +4367,8 @@ Required fields:
 
 - `ModelPackageGroupName`: `str`
 
+<a id="deletemodelpackagegrouppolicyinputrequesttypedef"></a>
+
 ## DeleteModelPackageGroupPolicyInputRequestTypeDef
 
 ```python
@@ -3960,6 +4378,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteModelPackageGroupPolicyInputReq
 Required fields:
 
 - `ModelPackageGroupName`: `str`
+
+<a id="deletemodelpackageinputrequesttypedef"></a>
 
 ## DeleteModelPackageInputRequestTypeDef
 
@@ -3971,6 +4391,8 @@ Required fields:
 
 - `ModelPackageName`: `str`
 
+<a id="deletemodelqualityjobdefinitionrequestrequesttypedef"></a>
+
 ## DeleteModelQualityJobDefinitionRequestRequestTypeDef
 
 ```python
@@ -3980,6 +4402,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteModelQualityJobDefinitionReques
 Required fields:
 
 - `JobDefinitionName`: `str`
+
+<a id="deletemonitoringschedulerequestrequesttypedef"></a>
 
 ## DeleteMonitoringScheduleRequestRequestTypeDef
 
@@ -3991,6 +4415,8 @@ Required fields:
 
 - `MonitoringScheduleName`: `str`
 
+<a id="deletenotebookinstanceinputrequesttypedef"></a>
+
 ## DeleteNotebookInstanceInputRequestTypeDef
 
 ```python
@@ -4000,6 +4426,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteNotebookInstanceInputRequestTyp
 Required fields:
 
 - `NotebookInstanceName`: `str`
+
+<a id="deletenotebookinstancelifecycleconfiginputrequesttypedef"></a>
 
 ## DeleteNotebookInstanceLifecycleConfigInputRequestTypeDef
 
@@ -4011,6 +4439,8 @@ Required fields:
 
 - `NotebookInstanceLifecycleConfigName`: `str`
 
+<a id="deletepipelinerequestrequesttypedef"></a>
+
 ## DeletePipelineRequestRequestTypeDef
 
 ```python
@@ -4021,6 +4451,8 @@ Required fields:
 
 - `PipelineName`: `str`
 - `ClientRequestToken`: `str`
+
+<a id="deletepipelineresponsetypedef"></a>
 
 ## DeletePipelineResponseTypeDef
 
@@ -4034,6 +4466,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteprojectinputrequesttypedef"></a>
+
 ## DeleteProjectInputRequestTypeDef
 
 ```python
@@ -4044,6 +4478,8 @@ Required fields:
 
 - `ProjectName`: `str`
 
+<a id="deletestudiolifecycleconfigrequestrequesttypedef"></a>
+
 ## DeleteStudioLifecycleConfigRequestRequestTypeDef
 
 ```python
@@ -4053,6 +4489,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteStudioLifecycleConfigRequestReq
 Required fields:
 
 - `StudioLifecycleConfigName`: `str`
+
+<a id="deletetagsinputrequesttypedef"></a>
 
 ## DeleteTagsInputRequestTypeDef
 
@@ -4065,6 +4503,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
 
+<a id="deletetrialcomponentrequestrequesttypedef"></a>
+
 ## DeleteTrialComponentRequestRequestTypeDef
 
 ```python
@@ -4074,6 +4514,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteTrialComponentRequestRequestTyp
 Required fields:
 
 - `TrialComponentName`: `str`
+
+<a id="deletetrialcomponentresponsetypedef"></a>
 
 ## DeleteTrialComponentResponseTypeDef
 
@@ -4087,6 +4529,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletetrialrequestrequesttypedef"></a>
+
 ## DeleteTrialRequestRequestTypeDef
 
 ```python
@@ -4096,6 +4540,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteTrialRequestRequestTypeDef
 Required fields:
 
 - `TrialName`: `str`
+
+<a id="deletetrialresponsetypedef"></a>
 
 ## DeleteTrialResponseTypeDef
 
@@ -4109,6 +4555,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteuserprofilerequestrequesttypedef"></a>
+
 ## DeleteUserProfileRequestRequestTypeDef
 
 ```python
@@ -4120,6 +4568,8 @@ Required fields:
 - `DomainId`: `str`
 - `UserProfileName`: `str`
 
+<a id="deleteworkforcerequestrequesttypedef"></a>
+
 ## DeleteWorkforceRequestRequestTypeDef
 
 ```python
@@ -4130,6 +4580,8 @@ Required fields:
 
 - `WorkforceName`: `str`
 
+<a id="deleteworkteamrequestrequesttypedef"></a>
+
 ## DeleteWorkteamRequestRequestTypeDef
 
 ```python
@@ -4139,6 +4591,8 @@ from mypy_boto3_sagemaker.type_defs import DeleteWorkteamRequestRequestTypeDef
 Required fields:
 
 - `WorkteamName`: `str`
+
+<a id="deleteworkteamresponsetypedef"></a>
 
 ## DeleteWorkteamResponseTypeDef
 
@@ -4152,6 +4606,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deployedimagetypedef"></a>
+
 ## DeployedImageTypeDef
 
 ```python
@@ -4163,6 +4619,8 @@ Optional fields:
 - `SpecifiedImage`: `str`
 - `ResolvedImage`: `str`
 - `ResolutionTime`: `datetime`
+
+<a id="deploymentconfigtypedef"></a>
 
 ## DeploymentConfigTypeDef
 
@@ -4180,6 +4638,8 @@ Optional fields:
 - `AutoRollbackConfiguration`:
   [AutoRollbackConfigTypeDef](./type_defs.md#autorollbackconfigtypedef)
 
+<a id="deregisterdevicesrequestrequesttypedef"></a>
+
 ## DeregisterDevicesRequestRequestTypeDef
 
 ```python
@@ -4191,6 +4651,8 @@ Required fields:
 - `DeviceFleetName`: `str`
 - `DeviceNames`: `Sequence`\[`str`\]
 
+<a id="describeactionrequestrequesttypedef"></a>
+
 ## DescribeActionRequestRequestTypeDef
 
 ```python
@@ -4200,6 +4662,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeActionRequestRequestTypeDef
 Required fields:
 
 - `ActionName`: `str`
+
+<a id="describeactionresponsetypedef"></a>
 
 ## DescribeActionResponseTypeDef
 
@@ -4226,6 +4690,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describealgorithminputrequesttypedef"></a>
+
 ## DescribeAlgorithmInputRequestTypeDef
 
 ```python
@@ -4235,6 +4701,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeAlgorithmInputRequestTypeDef
 Required fields:
 
 - `AlgorithmName`: `str`
+
+<a id="describealgorithmoutputtypedef"></a>
 
 ## DescribeAlgorithmOutputTypeDef
 
@@ -4262,6 +4730,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeappimageconfigrequestrequesttypedef"></a>
+
 ## DescribeAppImageConfigRequestRequestTypeDef
 
 ```python
@@ -4271,6 +4741,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeAppImageConfigRequestRequestT
 Required fields:
 
 - `AppImageConfigName`: `str`
+
+<a id="describeappimageconfigresponsetypedef"></a>
 
 ## DescribeAppImageConfigResponseTypeDef
 
@@ -4289,6 +4761,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeapprequestrequesttypedef"></a>
+
 ## DescribeAppRequestRequestTypeDef
 
 ```python
@@ -4301,6 +4775,8 @@ Required fields:
 - `UserProfileName`: `str`
 - `AppType`: [AppTypeType](./literals.md#apptypetype)
 - `AppName`: `str`
+
+<a id="describeappresponsetypedef"></a>
 
 ## DescribeAppResponseTypeDef
 
@@ -4324,6 +4800,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeartifactrequestrequesttypedef"></a>
+
 ## DescribeArtifactRequestRequestTypeDef
 
 ```python
@@ -4333,6 +4811,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeArtifactRequestRequestTypeDef
 Required fields:
 
 - `ArtifactArn`: `str`
+
+<a id="describeartifactresponsetypedef"></a>
 
 ## DescribeArtifactResponseTypeDef
 
@@ -4357,6 +4837,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeautomljobrequestrequesttypedef"></a>
+
 ## DescribeAutoMLJobRequestRequestTypeDef
 
 ```python
@@ -4366,6 +4848,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeAutoMLJobRequestRequestTypeDe
 Required fields:
 
 - `AutoMLJobName`: `str`
+
+<a id="describeautomljobresponsetypedef"></a>
 
 ## DescribeAutoMLJobResponseTypeDef
 
@@ -4410,6 +4894,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecoderepositoryinputrequesttypedef"></a>
+
 ## DescribeCodeRepositoryInputRequestTypeDef
 
 ```python
@@ -4419,6 +4905,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeCodeRepositoryInputRequestTyp
 Required fields:
 
 - `CodeRepositoryName`: `str`
+
+<a id="describecoderepositoryoutputtypedef"></a>
 
 ## DescribeCodeRepositoryOutputTypeDef
 
@@ -4436,6 +4924,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecompilationjobrequestrequesttypedef"></a>
+
 ## DescribeCompilationJobRequestRequestTypeDef
 
 ```python
@@ -4445,6 +4935,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeCompilationJobRequestRequestT
 Required fields:
 
 - `CompilationJobName`: `str`
+
+<a id="describecompilationjobresponsetypedef"></a>
 
 ## DescribeCompilationJobResponseTypeDef
 
@@ -4477,6 +4969,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecontextrequestrequesttypedef"></a>
+
 ## DescribeContextRequestRequestTypeDef
 
 ```python
@@ -4486,6 +4980,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeContextRequestRequestTypeDef
 Required fields:
 
 - `ContextName`: `str`
+
+<a id="describecontextresponsetypedef"></a>
 
 ## DescribeContextResponseTypeDef
 
@@ -4509,6 +5005,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedataqualityjobdefinitionrequestrequesttypedef"></a>
+
 ## DescribeDataQualityJobDefinitionRequestRequestTypeDef
 
 ```python
@@ -4518,6 +5016,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeDataQualityJobDefinitionReque
 Required fields:
 
 - `JobDefinitionName`: `str`
+
+<a id="describedataqualityjobdefinitionresponsetypedef"></a>
 
 ## DescribeDataQualityJobDefinitionResponseTypeDef
 
@@ -4548,6 +5048,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedevicefleetrequestrequesttypedef"></a>
+
 ## DescribeDeviceFleetRequestRequestTypeDef
 
 ```python
@@ -4557,6 +5059,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeDeviceFleetRequestRequestType
 Required fields:
 
 - `DeviceFleetName`: `str`
+
+<a id="describedevicefleetresponsetypedef"></a>
 
 ## DescribeDeviceFleetResponseTypeDef
 
@@ -4578,6 +5082,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedevicerequestrequesttypedef"></a>
+
 ## DescribeDeviceRequestRequestTypeDef
 
 ```python
@@ -4592,6 +5098,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="describedeviceresponsetypedef"></a>
 
 ## DescribeDeviceResponseTypeDef
 
@@ -4615,6 +5123,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedomainrequestrequesttypedef"></a>
+
 ## DescribeDomainRequestRequestTypeDef
 
 ```python
@@ -4624,6 +5134,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeDomainRequestRequestTypeDef
 Required fields:
 
 - `DomainId`: `str`
+
+<a id="describedomainresponsetypedef"></a>
 
 ## DescribeDomainResponseTypeDef
 
@@ -4660,6 +5172,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeedgepackagingjobrequestrequesttypedef"></a>
+
 ## DescribeEdgePackagingJobRequestRequestTypeDef
 
 ```python
@@ -4669,6 +5183,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeEdgePackagingJobRequestReques
 Required fields:
 
 - `EdgePackagingJobName`: `str`
+
+<a id="describeedgepackagingjobresponsetypedef"></a>
 
 ## DescribeEdgePackagingJobResponseTypeDef
 
@@ -4699,6 +5215,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeendpointconfiginputrequesttypedef"></a>
+
 ## DescribeEndpointConfigInputRequestTypeDef
 
 ```python
@@ -4708,6 +5226,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeEndpointConfigInputRequestTyp
 Required fields:
 
 - `EndpointConfigName`: `str`
+
+<a id="describeendpointconfigoutputtypedef"></a>
 
 ## DescribeEndpointConfigOutputTypeDef
 
@@ -4730,6 +5250,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeendpointinputrequesttypedef"></a>
+
 ## DescribeEndpointInputRequestTypeDef
 
 ```python
@@ -4739,6 +5261,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeEndpointInputRequestTypeDef
 Required fields:
 
 - `EndpointName`: `str`
+
+<a id="describeendpointoutputtypedef"></a>
 
 ## DescribeEndpointOutputTypeDef
 
@@ -4768,6 +5292,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeexperimentrequestrequesttypedef"></a>
+
 ## DescribeExperimentRequestRequestTypeDef
 
 ```python
@@ -4777,6 +5303,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeExperimentRequestRequestTypeD
 Required fields:
 
 - `ExperimentName`: `str`
+
+<a id="describeexperimentresponsetypedef"></a>
 
 ## DescribeExperimentResponseTypeDef
 
@@ -4798,6 +5326,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefeaturegrouprequestrequesttypedef"></a>
+
 ## DescribeFeatureGroupRequestRequestTypeDef
 
 ```python
@@ -4811,6 +5341,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="describefeaturegroupresponsetypedef"></a>
 
 ## DescribeFeatureGroupResponseTypeDef
 
@@ -4842,6 +5374,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeflowdefinitionrequestrequesttypedef"></a>
+
 ## DescribeFlowDefinitionRequestRequestTypeDef
 
 ```python
@@ -4851,6 +5385,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeFlowDefinitionRequestRequestT
 Required fields:
 
 - `FlowDefinitionName`: `str`
+
+<a id="describeflowdefinitionresponsetypedef"></a>
 
 ## DescribeFlowDefinitionResponseTypeDef
 
@@ -4878,6 +5414,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describehumantaskuirequestrequesttypedef"></a>
+
 ## DescribeHumanTaskUiRequestRequestTypeDef
 
 ```python
@@ -4887,6 +5425,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeHumanTaskUiRequestRequestType
 Required fields:
 
 - `HumanTaskUiName`: `str`
+
+<a id="describehumantaskuiresponsetypedef"></a>
 
 ## DescribeHumanTaskUiResponseTypeDef
 
@@ -4905,6 +5445,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describehyperparametertuningjobrequestrequesttypedef"></a>
+
 ## DescribeHyperParameterTuningJobRequestRequestTypeDef
 
 ```python
@@ -4914,6 +5456,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeHyperParameterTuningJobReques
 Required fields:
 
 - `HyperParameterTuningJobName`: `str`
+
+<a id="describehyperparametertuningjobresponsetypedef"></a>
 
 ## DescribeHyperParameterTuningJobResponseTypeDef
 
@@ -4950,6 +5494,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeimagerequestrequesttypedef"></a>
+
 ## DescribeImageRequestRequestTypeDef
 
 ```python
@@ -4959,6 +5505,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeImageRequestRequestTypeDef
 Required fields:
 
 - `ImageName`: `str`
+
+<a id="describeimageresponsetypedef"></a>
 
 ## DescribeImageResponseTypeDef
 
@@ -4980,6 +5528,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeimageversionrequestrequesttypedef"></a>
+
 ## DescribeImageVersionRequestRequestTypeDef
 
 ```python
@@ -4993,6 +5543,8 @@ Required fields:
 Optional fields:
 
 - `Version`: `int`
+
+<a id="describeimageversionresponsetypedef"></a>
 
 ## DescribeImageVersionResponseTypeDef
 
@@ -5015,6 +5567,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeinferencerecommendationsjobrequestrequesttypedef"></a>
+
 ## DescribeInferenceRecommendationsJobRequestRequestTypeDef
 
 ```python
@@ -5024,6 +5578,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeInferenceRecommendationsJobRe
 Required fields:
 
 - `JobName`: `str`
+
+<a id="describeinferencerecommendationsjobresponsetypedef"></a>
 
 ## DescribeInferenceRecommendationsJobResponseTypeDef
 
@@ -5054,6 +5610,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelabelingjobrequestrequesttypedef"></a>
+
 ## DescribeLabelingJobRequestRequestTypeDef
 
 ```python
@@ -5063,6 +5621,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeLabelingJobRequestRequestType
 Required fields:
 
 - `LabelingJobName`: `str`
+
+<a id="describelabelingjobresponsetypedef"></a>
 
 ## DescribeLabelingJobResponseTypeDef
 
@@ -5100,6 +5660,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelineagegrouprequestrequesttypedef"></a>
+
 ## DescribeLineageGroupRequestRequestTypeDef
 
 ```python
@@ -5109,6 +5671,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeLineageGroupRequestRequestTyp
 Required fields:
 
 - `LineageGroupName`: `str`
+
+<a id="describelineagegroupresponsetypedef"></a>
 
 ## DescribeLineageGroupResponseTypeDef
 
@@ -5129,6 +5693,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemodelbiasjobdefinitionrequestrequesttypedef"></a>
+
 ## DescribeModelBiasJobDefinitionRequestRequestTypeDef
 
 ```python
@@ -5138,6 +5704,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeModelBiasJobDefinitionRequest
 Required fields:
 
 - `JobDefinitionName`: `str`
+
+<a id="describemodelbiasjobdefinitionresponsetypedef"></a>
 
 ## DescribeModelBiasJobDefinitionResponseTypeDef
 
@@ -5168,6 +5736,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemodelexplainabilityjobdefinitionrequestrequesttypedef"></a>
+
 ## DescribeModelExplainabilityJobDefinitionRequestRequestTypeDef
 
 ```python
@@ -5177,6 +5747,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeModelExplainabilityJobDefinit
 Required fields:
 
 - `JobDefinitionName`: `str`
+
+<a id="describemodelexplainabilityjobdefinitionresponsetypedef"></a>
 
 ## DescribeModelExplainabilityJobDefinitionResponseTypeDef
 
@@ -5207,6 +5779,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemodelinputrequesttypedef"></a>
+
 ## DescribeModelInputRequestTypeDef
 
 ```python
@@ -5216,6 +5790,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeModelInputRequestTypeDef
 Required fields:
 
 - `ModelName`: `str`
+
+<a id="describemodeloutputtypedef"></a>
 
 ## DescribeModelOutputTypeDef
 
@@ -5240,6 +5816,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemodelpackagegroupinputrequesttypedef"></a>
+
 ## DescribeModelPackageGroupInputRequestTypeDef
 
 ```python
@@ -5249,6 +5827,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeModelPackageGroupInputRequest
 Required fields:
 
 - `ModelPackageGroupName`: `str`
+
+<a id="describemodelpackagegroupoutputtypedef"></a>
 
 ## DescribeModelPackageGroupOutputTypeDef
 
@@ -5268,6 +5848,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemodelpackageinputrequesttypedef"></a>
+
 ## DescribeModelPackageInputRequestTypeDef
 
 ```python
@@ -5277,6 +5859,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeModelPackageInputRequestTypeD
 Required fields:
 
 - `ModelPackageName`: `str`
+
+<a id="describemodelpackageoutputtypedef"></a>
 
 ## DescribeModelPackageOutputTypeDef
 
@@ -5323,6 +5907,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemodelqualityjobdefinitionrequestrequesttypedef"></a>
+
 ## DescribeModelQualityJobDefinitionRequestRequestTypeDef
 
 ```python
@@ -5332,6 +5918,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeModelQualityJobDefinitionRequ
 Required fields:
 
 - `JobDefinitionName`: `str`
+
+<a id="describemodelqualityjobdefinitionresponsetypedef"></a>
 
 ## DescribeModelQualityJobDefinitionResponseTypeDef
 
@@ -5362,6 +5950,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemonitoringschedulerequestrequesttypedef"></a>
+
 ## DescribeMonitoringScheduleRequestRequestTypeDef
 
 ```python
@@ -5371,6 +5961,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeMonitoringScheduleRequestRequ
 Required fields:
 
 - `MonitoringScheduleName`: `str`
+
+<a id="describemonitoringscheduleresponsetypedef"></a>
 
 ## DescribeMonitoringScheduleResponseTypeDef
 
@@ -5396,6 +5988,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describenotebookinstanceinputrequesttypedef"></a>
+
 ## DescribeNotebookInstanceInputRequestTypeDef
 
 ```python
@@ -5406,6 +6000,8 @@ Required fields:
 
 - `NotebookInstanceName`: `str`
 
+<a id="describenotebookinstancelifecycleconfiginputrequesttypedef"></a>
+
 ## DescribeNotebookInstanceLifecycleConfigInputRequestTypeDef
 
 ```python
@@ -5415,6 +6011,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeNotebookInstanceLifecycleConf
 Required fields:
 
 - `NotebookInstanceLifecycleConfigName`: `str`
+
+<a id="describenotebookinstancelifecycleconfigoutputtypedef"></a>
 
 ## DescribeNotebookInstanceLifecycleConfigOutputTypeDef
 
@@ -5434,6 +6032,8 @@ Required fields:
 - `CreationTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describenotebookinstanceoutputtypedef"></a>
 
 ## DescribeNotebookInstanceOutputTypeDef
 
@@ -5470,6 +6070,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepipelinedefinitionforexecutionrequestrequesttypedef"></a>
+
 ## DescribePipelineDefinitionForExecutionRequestRequestTypeDef
 
 ```python
@@ -5479,6 +6081,8 @@ from mypy_boto3_sagemaker.type_defs import DescribePipelineDefinitionForExecutio
 Required fields:
 
 - `PipelineExecutionArn`: `str`
+
+<a id="describepipelinedefinitionforexecutionresponsetypedef"></a>
 
 ## DescribePipelineDefinitionForExecutionResponseTypeDef
 
@@ -5493,6 +6097,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepipelineexecutionrequestrequesttypedef"></a>
+
 ## DescribePipelineExecutionRequestRequestTypeDef
 
 ```python
@@ -5502,6 +6108,8 @@ from mypy_boto3_sagemaker.type_defs import DescribePipelineExecutionRequestReque
 Required fields:
 
 - `PipelineExecutionArn`: `str`
+
+<a id="describepipelineexecutionresponsetypedef"></a>
 
 ## DescribePipelineExecutionResponseTypeDef
 
@@ -5529,6 +6137,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepipelinerequestrequesttypedef"></a>
+
 ## DescribePipelineRequestRequestTypeDef
 
 ```python
@@ -5538,6 +6148,8 @@ from mypy_boto3_sagemaker.type_defs import DescribePipelineRequestRequestTypeDef
 Required fields:
 
 - `PipelineName`: `str`
+
+<a id="describepipelineresponsetypedef"></a>
 
 ## DescribePipelineResponseTypeDef
 
@@ -5565,6 +6177,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeprocessingjobrequestrequesttypedef"></a>
+
 ## DescribeProcessingJobRequestRequestTypeDef
 
 ```python
@@ -5574,6 +6188,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeProcessingJobRequestRequestTy
 Required fields:
 
 - `ProcessingJobName`: `str`
+
+<a id="describeprocessingjobresponsetypedef"></a>
 
 ## DescribeProcessingJobResponseTypeDef
 
@@ -5614,6 +6230,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeprojectinputrequesttypedef"></a>
+
 ## DescribeProjectInputRequestTypeDef
 
 ```python
@@ -5623,6 +6241,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeProjectInputRequestTypeDef
 Required fields:
 
 - `ProjectName`: `str`
+
+<a id="describeprojectoutputtypedef"></a>
 
 ## DescribeProjectOutputTypeDef
 
@@ -5648,6 +6268,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestudiolifecycleconfigrequestrequesttypedef"></a>
+
 ## DescribeStudioLifecycleConfigRequestRequestTypeDef
 
 ```python
@@ -5657,6 +6279,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeStudioLifecycleConfigRequestR
 Required fields:
 
 - `StudioLifecycleConfigName`: `str`
+
+<a id="describestudiolifecycleconfigresponsetypedef"></a>
 
 ## DescribeStudioLifecycleConfigResponseTypeDef
 
@@ -5676,6 +6300,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesubscribedworkteamrequestrequesttypedef"></a>
+
 ## DescribeSubscribedWorkteamRequestRequestTypeDef
 
 ```python
@@ -5685,6 +6311,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeSubscribedWorkteamRequestRequ
 Required fields:
 
 - `WorkteamArn`: `str`
+
+<a id="describesubscribedworkteamresponsetypedef"></a>
 
 ## DescribeSubscribedWorkteamResponseTypeDef
 
@@ -5699,6 +6327,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetrainingjobrequestrequesttypedef"></a>
+
 ## DescribeTrainingJobRequestRequestTypeDef
 
 ```python
@@ -5708,6 +6338,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeTrainingJobRequestRequestType
 Required fields:
 
 - `TrainingJobName`: `str`
+
+<a id="describetrainingjobresponsetypedef"></a>
 
 ## DescribeTrainingJobResponseTypeDef
 
@@ -5777,6 +6409,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetransformjobrequestrequesttypedef"></a>
+
 ## DescribeTransformJobRequestRequestTypeDef
 
 ```python
@@ -5786,6 +6420,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeTransformJobRequestRequestTyp
 Required fields:
 
 - `TransformJobName`: `str`
+
+<a id="describetransformjobresponsetypedef"></a>
 
 ## DescribeTransformJobResponseTypeDef
 
@@ -5825,6 +6461,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetrialcomponentrequestrequesttypedef"></a>
+
 ## DescribeTrialComponentRequestRequestTypeDef
 
 ```python
@@ -5834,6 +6472,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeTrialComponentRequestRequestT
 Required fields:
 
 - `TrialComponentName`: `str`
+
+<a id="describetrialcomponentresponsetypedef"></a>
 
 ## DescribeTrialComponentResponseTypeDef
 
@@ -5870,6 +6510,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetrialrequestrequesttypedef"></a>
+
 ## DescribeTrialRequestRequestTypeDef
 
 ```python
@@ -5879,6 +6521,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeTrialRequestRequestTypeDef
 Required fields:
 
 - `TrialName`: `str`
+
+<a id="describetrialresponsetypedef"></a>
 
 ## DescribeTrialResponseTypeDef
 
@@ -5902,6 +6546,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeuserprofilerequestrequesttypedef"></a>
+
 ## DescribeUserProfileRequestRequestTypeDef
 
 ```python
@@ -5912,6 +6558,8 @@ Required fields:
 
 - `DomainId`: `str`
 - `UserProfileName`: `str`
+
+<a id="describeuserprofileresponsetypedef"></a>
 
 ## DescribeUserProfileResponseTypeDef
 
@@ -5935,6 +6583,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeworkforcerequestrequesttypedef"></a>
+
 ## DescribeWorkforceRequestRequestTypeDef
 
 ```python
@@ -5944,6 +6594,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeWorkforceRequestRequestTypeDe
 Required fields:
 
 - `WorkforceName`: `str`
+
+<a id="describeworkforceresponsetypedef"></a>
 
 ## DescribeWorkforceResponseTypeDef
 
@@ -5957,6 +6609,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeworkteamrequestrequesttypedef"></a>
+
 ## DescribeWorkteamRequestRequestTypeDef
 
 ```python
@@ -5966,6 +6620,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeWorkteamRequestRequestTypeDef
 Required fields:
 
 - `WorkteamName`: `str`
+
+<a id="describeworkteamresponsetypedef"></a>
 
 ## DescribeWorkteamResponseTypeDef
 
@@ -5978,6 +6634,8 @@ Required fields:
 - `Workteam`: [WorkteamTypeDef](./type_defs.md#workteamtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="desiredweightandcapacitytypedef"></a>
 
 ## DesiredWeightAndCapacityTypeDef
 
@@ -5993,6 +6651,8 @@ Optional fields:
 
 - `DesiredWeight`: `float`
 - `DesiredInstanceCount`: `int`
+
+<a id="devicefleetsummarytypedef"></a>
 
 ## DeviceFleetSummaryTypeDef
 
@@ -6010,6 +6670,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
+<a id="devicestatstypedef"></a>
+
 ## DeviceStatsTypeDef
 
 ```python
@@ -6020,6 +6682,8 @@ Required fields:
 
 - `ConnectedDeviceCount`: `int`
 - `RegisteredDeviceCount`: `int`
+
+<a id="devicesummarytypedef"></a>
 
 ## DeviceSummaryTypeDef
 
@@ -6043,6 +6707,8 @@ Optional fields:
   `List`\[[EdgeModelSummaryTypeDef](./type_defs.md#edgemodelsummarytypedef)\]
 - `AgentVersion`: `str`
 
+<a id="devicetypedef"></a>
+
 ## DeviceTypeDef
 
 ```python
@@ -6058,6 +6724,8 @@ Optional fields:
 - `Description`: `str`
 - `IotThingName`: `str`
 
+<a id="disassociatetrialcomponentrequestrequesttypedef"></a>
+
 ## DisassociateTrialComponentRequestRequestTypeDef
 
 ```python
@@ -6068,6 +6736,8 @@ Required fields:
 
 - `TrialComponentName`: `str`
 - `TrialName`: `str`
+
+<a id="disassociatetrialcomponentresponsetypedef"></a>
 
 ## DisassociateTrialComponentResponseTypeDef
 
@@ -6081,6 +6751,8 @@ Required fields:
 - `TrialArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="domaindetailstypedef"></a>
 
 ## DomainDetailsTypeDef
 
@@ -6098,6 +6770,8 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `Url`: `str`
 
+<a id="domainsettingsforupdatetypedef"></a>
+
 ## DomainSettingsForUpdateTypeDef
 
 ```python
@@ -6108,6 +6782,8 @@ Optional fields:
 
 - `RStudioServerProDomainSettingsForUpdate`:
   [RStudioServerProDomainSettingsForUpdateTypeDef](./type_defs.md#rstudioserverprodomainsettingsforupdatetypedef)
+
+<a id="domainsettingstypedef"></a>
 
 ## DomainSettingsTypeDef
 
@@ -6120,6 +6796,8 @@ Optional fields:
 - `SecurityGroupIds`: `Sequence`\[`str`\]
 - `RStudioServerProDomainSettings`:
   [RStudioServerProDomainSettingsTypeDef](./type_defs.md#rstudioserverprodomainsettingstypedef)
+
+<a id="driftcheckbaselinestypedef"></a>
 
 ## DriftCheckBaselinesTypeDef
 
@@ -6137,6 +6815,8 @@ Optional fields:
 - `ModelDataQuality`:
   [DriftCheckModelDataQualityTypeDef](./type_defs.md#driftcheckmodeldataqualitytypedef)
 
+<a id="driftcheckbiastypedef"></a>
+
 ## DriftCheckBiasTypeDef
 
 ```python
@@ -6151,6 +6831,8 @@ Optional fields:
 - `PostTrainingConstraints`:
   [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 
+<a id="driftcheckexplainabilitytypedef"></a>
+
 ## DriftCheckExplainabilityTypeDef
 
 ```python
@@ -6161,6 +6843,8 @@ Optional fields:
 
 - `Constraints`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 - `ConfigFile`: [FileSourceTypeDef](./type_defs.md#filesourcetypedef)
+
+<a id="driftcheckmodeldataqualitytypedef"></a>
 
 ## DriftCheckModelDataQualityTypeDef
 
@@ -6173,6 +6857,8 @@ Optional fields:
 - `Statistics`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 - `Constraints`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 
+<a id="driftcheckmodelqualitytypedef"></a>
+
 ## DriftCheckModelQualityTypeDef
 
 ```python
@@ -6183,6 +6869,8 @@ Optional fields:
 
 - `Statistics`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 - `Constraints`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+
+<a id="emrstepmetadatatypedef"></a>
 
 ## EMRStepMetadataTypeDef
 
@@ -6196,6 +6884,8 @@ Optional fields:
 - `StepId`: `str`
 - `StepName`: `str`
 - `LogFilePath`: `str`
+
+<a id="edgemodelstattypedef"></a>
 
 ## EdgeModelStatTypeDef
 
@@ -6212,6 +6902,8 @@ Required fields:
 - `ActiveDeviceCount`: `int`
 - `SamplingDeviceCount`: `int`
 
+<a id="edgemodelsummarytypedef"></a>
+
 ## EdgeModelSummaryTypeDef
 
 ```python
@@ -6222,6 +6914,8 @@ Required fields:
 
 - `ModelName`: `str`
 - `ModelVersion`: `str`
+
+<a id="edgemodeltypedef"></a>
 
 ## EdgeModelTypeDef
 
@@ -6239,6 +6933,8 @@ Optional fields:
 - `LatestSampleTime`: `datetime`
 - `LatestInference`: `datetime`
 
+<a id="edgeoutputconfigtypedef"></a>
+
 ## EdgeOutputConfigTypeDef
 
 ```python
@@ -6255,6 +6951,8 @@ Optional fields:
 - `PresetDeploymentType`: `Literal['GreengrassV2Component']` (see
   [EdgePresetDeploymentTypeType](./literals.md#edgepresetdeploymenttypetype))
 - `PresetDeploymentConfig`: `str`
+
+<a id="edgepackagingjobsummarytypedef"></a>
 
 ## EdgePackagingJobSummaryTypeDef
 
@@ -6277,6 +6975,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
+<a id="edgepresetdeploymentoutputtypedef"></a>
+
 ## EdgePresetDeploymentOutputTypeDef
 
 ```python
@@ -6295,6 +6995,8 @@ Optional fields:
   [EdgePresetDeploymentStatusType](./literals.md#edgepresetdeploymentstatustype)
 - `StatusMessage`: `str`
 
+<a id="edgetypedef"></a>
+
 ## EdgeTypeDef
 
 ```python
@@ -6308,6 +7010,8 @@ Optional fields:
 - `AssociationType`:
   [AssociationEdgeTypeType](./literals.md#associationedgetypetype)
 
+<a id="endpointconfigsummarytypedef"></a>
+
 ## EndpointConfigSummaryTypeDef
 
 ```python
@@ -6319,6 +7023,8 @@ Required fields:
 - `EndpointConfigName`: `str`
 - `EndpointConfigArn`: `str`
 - `CreationTime`: `datetime`
+
+<a id="endpointinputconfigurationtypedef"></a>
 
 ## EndpointInputConfigurationTypeDef
 
@@ -6336,6 +7042,8 @@ Optional fields:
 - `InferenceSpecificationName`: `str`
 - `EnvironmentParameterRanges`:
   [EnvironmentParameterRangesTypeDef](./type_defs.md#environmentparameterrangestypedef)
+
+<a id="endpointinputtypedef"></a>
 
 ## EndpointInputTypeDef
 
@@ -6361,6 +7069,8 @@ Optional fields:
 - `StartTimeOffset`: `str`
 - `EndTimeOffset`: `str`
 
+<a id="endpointoutputconfigurationtypedef"></a>
+
 ## EndpointOutputConfigurationTypeDef
 
 ```python
@@ -6375,6 +7085,8 @@ Required fields:
   [ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)
 - `InitialInstanceCount`: `int`
 
+<a id="endpointsummarytypedef"></a>
+
 ## EndpointSummaryTypeDef
 
 ```python
@@ -6388,6 +7100,8 @@ Required fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `EndpointStatus`: [EndpointStatusType](./literals.md#endpointstatustype)
+
+<a id="endpointtypedef"></a>
 
 ## EndpointTypeDef
 
@@ -6415,6 +7129,8 @@ Optional fields:
   `List`\[[MonitoringScheduleTypeDef](./type_defs.md#monitoringscheduletypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="environmentparameterrangestypedef"></a>
+
 ## EnvironmentParameterRangesTypeDef
 
 ```python
@@ -6425,6 +7141,8 @@ Optional fields:
 
 - `CategoricalParameterRanges`:
   `Sequence`\[[CategoricalParameterTypeDef](./type_defs.md#categoricalparametertypedef)\]
+
+<a id="environmentparametertypedef"></a>
 
 ## EnvironmentParameterTypeDef
 
@@ -6438,6 +7156,8 @@ Required fields:
 - `ValueType`: `str`
 - `Value`: `str`
 
+<a id="experimentconfigtypedef"></a>
+
 ## ExperimentConfigTypeDef
 
 ```python
@@ -6449,6 +7169,8 @@ Optional fields:
 - `ExperimentName`: `str`
 - `TrialName`: `str`
 - `TrialComponentDisplayName`: `str`
+
+<a id="experimentsourcetypedef"></a>
 
 ## ExperimentSourceTypeDef
 
@@ -6463,6 +7185,8 @@ Required fields:
 Optional fields:
 
 - `SourceType`: `str`
+
+<a id="experimentsummarytypedef"></a>
 
 ## ExperimentSummaryTypeDef
 
@@ -6479,6 +7203,8 @@ Optional fields:
   [ExperimentSourceTypeDef](./type_defs.md#experimentsourcetypedef)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
+
+<a id="experimenttypedef"></a>
 
 ## ExperimentTypeDef
 
@@ -6499,6 +7225,8 @@ Optional fields:
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="explainabilitytypedef"></a>
+
 ## ExplainabilityTypeDef
 
 ```python
@@ -6508,6 +7236,8 @@ from mypy_boto3_sagemaker.type_defs import ExplainabilityTypeDef
 Optional fields:
 
 - `Report`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+
+<a id="failstepmetadatatypedef"></a>
 
 ## FailStepMetadataTypeDef
 
@@ -6519,6 +7249,8 @@ Optional fields:
 
 - `ErrorMessage`: `str`
 
+<a id="featuredefinitiontypedef"></a>
+
 ## FeatureDefinitionTypeDef
 
 ```python
@@ -6529,6 +7261,8 @@ Optional fields:
 
 - `FeatureName`: `str`
 - `FeatureType`: [FeatureTypeType](./literals.md#featuretypetype)
+
+<a id="featuregroupsummarytypedef"></a>
 
 ## FeatureGroupSummaryTypeDef
 
@@ -6548,6 +7282,8 @@ Optional fields:
   [FeatureGroupStatusType](./literals.md#featuregroupstatustype)
 - `OfflineStoreStatus`:
   [OfflineStoreStatusTypeDef](./type_defs.md#offlinestorestatustypedef)
+
+<a id="featuregrouptypedef"></a>
 
 ## FeatureGroupTypeDef
 
@@ -6577,6 +7313,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="filesourcetypedef"></a>
+
 ## FileSourceTypeDef
 
 ```python
@@ -6592,6 +7330,8 @@ Optional fields:
 - `ContentType`: `str`
 - `ContentDigest`: `str`
 
+<a id="filesystemconfigtypedef"></a>
+
 ## FileSystemConfigTypeDef
 
 ```python
@@ -6603,6 +7343,8 @@ Optional fields:
 - `MountPath`: `str`
 - `DefaultUid`: `int`
 - `DefaultGid`: `int`
+
+<a id="filesystemdatasourcetypedef"></a>
 
 ## FileSystemDataSourceTypeDef
 
@@ -6618,6 +7360,8 @@ Required fields:
 - `FileSystemType`: [FileSystemTypeType](./literals.md#filesystemtypetype)
 - `DirectoryPath`: `str`
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -6632,6 +7376,8 @@ Optional fields:
 
 - `Operator`: [OperatorType](./literals.md#operatortype)
 - `Value`: `str`
+
+<a id="finalautomljobobjectivemetrictypedef"></a>
 
 ## FinalAutoMLJobObjectiveMetricTypeDef
 
@@ -6649,6 +7395,8 @@ Optional fields:
 - `Type`:
   [AutoMLJobObjectiveTypeType](./literals.md#automljobobjectivetypetype)
 
+<a id="finalhyperparametertuningjobobjectivemetrictypedef"></a>
+
 ## FinalHyperParameterTuningJobObjectiveMetricTypeDef
 
 ```python
@@ -6665,6 +7413,8 @@ Optional fields:
 - `Type`:
   [HyperParameterTuningJobObjectiveTypeType](./literals.md#hyperparametertuningjobobjectivetypetype)
 
+<a id="flowdefinitionoutputconfigtypedef"></a>
+
 ## FlowDefinitionOutputConfigTypeDef
 
 ```python
@@ -6678,6 +7428,8 @@ Required fields:
 Optional fields:
 
 - `KmsKeyId`: `str`
+
+<a id="flowdefinitionsummarytypedef"></a>
 
 ## FlowDefinitionSummaryTypeDef
 
@@ -6697,6 +7449,8 @@ Optional fields:
 
 - `FailureReason`: `str`
 
+<a id="getdevicefleetreportrequestrequesttypedef"></a>
+
 ## GetDeviceFleetReportRequestRequestTypeDef
 
 ```python
@@ -6706,6 +7460,8 @@ from mypy_boto3_sagemaker.type_defs import GetDeviceFleetReportRequestRequestTyp
 Required fields:
 
 - `DeviceFleetName`: `str`
+
+<a id="getdevicefleetreportresponsetypedef"></a>
 
 ## GetDeviceFleetReportResponseTypeDef
 
@@ -6729,6 +7485,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlineagegrouppolicyrequestrequesttypedef"></a>
+
 ## GetLineageGroupPolicyRequestRequestTypeDef
 
 ```python
@@ -6738,6 +7496,8 @@ from mypy_boto3_sagemaker.type_defs import GetLineageGroupPolicyRequestRequestTy
 Required fields:
 
 - `LineageGroupName`: `str`
+
+<a id="getlineagegrouppolicyresponsetypedef"></a>
 
 ## GetLineageGroupPolicyResponseTypeDef
 
@@ -6752,6 +7512,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmodelpackagegrouppolicyinputrequesttypedef"></a>
+
 ## GetModelPackageGroupPolicyInputRequestTypeDef
 
 ```python
@@ -6761,6 +7523,8 @@ from mypy_boto3_sagemaker.type_defs import GetModelPackageGroupPolicyInputReques
 Required fields:
 
 - `ModelPackageGroupName`: `str`
+
+<a id="getmodelpackagegrouppolicyoutputtypedef"></a>
 
 ## GetModelPackageGroupPolicyOutputTypeDef
 
@@ -6774,6 +7538,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsagemakerservicecatalogportfoliostatusoutputtypedef"></a>
+
 ## GetSagemakerServicecatalogPortfolioStatusOutputTypeDef
 
 ```python
@@ -6786,6 +7552,8 @@ Required fields:
   [SagemakerServicecatalogStatusType](./literals.md#sagemakerservicecatalogstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsearchsuggestionsrequestrequesttypedef"></a>
 
 ## GetSearchSuggestionsRequestRequestTypeDef
 
@@ -6802,6 +7570,8 @@ Optional fields:
 - `SuggestionQuery`:
   [SuggestionQueryTypeDef](./type_defs.md#suggestionquerytypedef)
 
+<a id="getsearchsuggestionsresponsetypedef"></a>
+
 ## GetSearchSuggestionsResponseTypeDef
 
 ```python
@@ -6815,6 +7585,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gitconfigforupdatetypedef"></a>
+
 ## GitConfigForUpdateTypeDef
 
 ```python
@@ -6824,6 +7596,8 @@ from mypy_boto3_sagemaker.type_defs import GitConfigForUpdateTypeDef
 Optional fields:
 
 - `SecretArn`: `str`
+
+<a id="gitconfigtypedef"></a>
 
 ## GitConfigTypeDef
 
@@ -6840,6 +7614,8 @@ Optional fields:
 - `Branch`: `str`
 - `SecretArn`: `str`
 
+<a id="humanloopactivationconditionsconfigtypedef"></a>
+
 ## HumanLoopActivationConditionsConfigTypeDef
 
 ```python
@@ -6849,6 +7625,8 @@ from mypy_boto3_sagemaker.type_defs import HumanLoopActivationConditionsConfigTy
 Required fields:
 
 - `HumanLoopActivationConditions`: `str`
+
+<a id="humanloopactivationconfigtypedef"></a>
 
 ## HumanLoopActivationConfigTypeDef
 
@@ -6860,6 +7638,8 @@ Required fields:
 
 - `HumanLoopActivationConditionsConfig`:
   [HumanLoopActivationConditionsConfigTypeDef](./type_defs.md#humanloopactivationconditionsconfigtypedef)
+
+<a id="humanloopconfigtypedef"></a>
 
 ## HumanLoopConfigTypeDef
 
@@ -6883,6 +7663,8 @@ Optional fields:
 - `PublicWorkforceTaskPrice`:
   [PublicWorkforceTaskPriceTypeDef](./type_defs.md#publicworkforcetaskpricetypedef)
 
+<a id="humanlooprequestsourcetypedef"></a>
+
 ## HumanLoopRequestSourceTypeDef
 
 ```python
@@ -6893,6 +7675,8 @@ Required fields:
 
 - `AwsManagedHumanLoopRequestSource`:
   [AwsManagedHumanLoopRequestSourceType](./literals.md#awsmanagedhumanlooprequestsourcetype)
+
+<a id="humantaskconfigtypedef"></a>
 
 ## HumanTaskConfigTypeDef
 
@@ -6920,6 +7704,8 @@ Optional fields:
 - `PublicWorkforceTaskPrice`:
   [PublicWorkforceTaskPriceTypeDef](./type_defs.md#publicworkforcetaskpricetypedef)
 
+<a id="humantaskuisummarytypedef"></a>
+
 ## HumanTaskUiSummaryTypeDef
 
 ```python
@@ -6931,6 +7717,8 @@ Required fields:
 - `HumanTaskUiName`: `str`
 - `HumanTaskUiArn`: `str`
 - `CreationTime`: `datetime`
+
+<a id="hyperparameteralgorithmspecificationtypedef"></a>
 
 ## HyperParameterAlgorithmSpecificationTypeDef
 
@@ -6950,6 +7738,8 @@ Optional fields:
 - `MetricDefinitions`:
   `Sequence`\[[MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)\]
 
+<a id="hyperparameterspecificationtypedef"></a>
+
 ## HyperParameterSpecificationTypeDef
 
 ```python
@@ -6968,6 +7758,8 @@ Optional fields:
 - `IsTunable`: `bool`
 - `IsRequired`: `bool`
 - `DefaultValue`: `str`
+
+<a id="hyperparametertrainingjobdefinitiontypedef"></a>
 
 ## HyperParameterTrainingJobDefinitionTypeDef
 
@@ -7005,6 +7797,8 @@ Optional fields:
   [CheckpointConfigTypeDef](./type_defs.md#checkpointconfigtypedef)
 - `RetryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 
+<a id="hyperparametertrainingjobsummarytypedef"></a>
+
 ## HyperParameterTrainingJobSummaryTypeDef
 
 ```python
@@ -7031,6 +7825,8 @@ Optional fields:
   [FinalHyperParameterTuningJobObjectiveMetricTypeDef](./type_defs.md#finalhyperparametertuningjobobjectivemetrictypedef)
 - `ObjectiveStatus`: [ObjectiveStatusType](./literals.md#objectivestatustype)
 
+<a id="hyperparametertuningjobconfigtypedef"></a>
+
 ## HyperParameterTuningJobConfigTypeDef
 
 ```python
@@ -7055,6 +7851,8 @@ Optional fields:
 - `TuningJobCompletionCriteria`:
   [TuningJobCompletionCriteriaTypeDef](./type_defs.md#tuningjobcompletioncriteriatypedef)
 
+<a id="hyperparametertuningjobobjectivetypedef"></a>
+
 ## HyperParameterTuningJobObjectiveTypeDef
 
 ```python
@@ -7066,6 +7864,8 @@ Required fields:
 - `Type`:
   [HyperParameterTuningJobObjectiveTypeType](./literals.md#hyperparametertuningjobobjectivetypetype)
 - `MetricName`: `str`
+
+<a id="hyperparametertuningjobsummarytypedef"></a>
 
 ## HyperParameterTuningJobSummaryTypeDef
 
@@ -7094,6 +7894,8 @@ Optional fields:
 - `ResourceLimits`:
   [ResourceLimitsTypeDef](./type_defs.md#resourcelimitstypedef)
 
+<a id="hyperparametertuningjobwarmstartconfigtypedef"></a>
+
 ## HyperParameterTuningJobWarmStartConfigTypeDef
 
 ```python
@@ -7106,6 +7908,8 @@ Required fields:
   `Sequence`\[[ParentHyperParameterTuningJobTypeDef](./type_defs.md#parenthyperparametertuningjobtypedef)\]
 - `WarmStartType`:
   [HyperParameterTuningJobWarmStartTypeType](./literals.md#hyperparametertuningjobwarmstarttypetype)
+
+<a id="imageconfigtypedef"></a>
 
 ## ImageConfigTypeDef
 
@@ -7122,6 +7926,8 @@ Optional fields:
 
 - `RepositoryAuthConfig`:
   [RepositoryAuthConfigTypeDef](./type_defs.md#repositoryauthconfigtypedef)
+
+<a id="imagetypedef"></a>
 
 ## ImageTypeDef
 
@@ -7143,6 +7949,8 @@ Optional fields:
 - `DisplayName`: `str`
 - `FailureReason`: `str`
 
+<a id="imageversiontypedef"></a>
+
 ## ImageVersionTypeDef
 
 ```python
@@ -7163,6 +7971,8 @@ Optional fields:
 
 - `FailureReason`: `str`
 
+<a id="inferenceexecutionconfigtypedef"></a>
+
 ## InferenceExecutionConfigTypeDef
 
 ```python
@@ -7173,6 +7983,8 @@ Required fields:
 
 - `Mode`:
   [InferenceExecutionModeType](./literals.md#inferenceexecutionmodetype)
+
+<a id="inferencerecommendationtypedef"></a>
 
 ## InferenceRecommendationTypeDef
 
@@ -7188,6 +8000,8 @@ Required fields:
   [EndpointOutputConfigurationTypeDef](./type_defs.md#endpointoutputconfigurationtypedef)
 - `ModelConfiguration`:
   [ModelConfigurationTypeDef](./type_defs.md#modelconfigurationtypedef)
+
+<a id="inferencerecommendationsjobtypedef"></a>
 
 ## InferenceRecommendationsJobTypeDef
 
@@ -7213,6 +8027,8 @@ Optional fields:
 - `CompletionTime`: `datetime`
 - `FailureReason`: `str`
 
+<a id="inferencespecificationtypedef"></a>
+
 ## InferenceSpecificationTypeDef
 
 ```python
@@ -7233,6 +8049,8 @@ Optional fields:
 - `SupportedRealtimeInferenceInstanceTypes`:
   `List`\[[ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)\]
 
+<a id="inputconfigtypedef"></a>
+
 ## InputConfigTypeDef
 
 ```python
@@ -7249,6 +8067,8 @@ Optional fields:
 
 - `FrameworkVersion`: `str`
 
+<a id="integerparameterrangespecificationtypedef"></a>
+
 ## IntegerParameterRangeSpecificationTypeDef
 
 ```python
@@ -7259,6 +8079,8 @@ Required fields:
 
 - `MinValue`: `str`
 - `MaxValue`: `str`
+
+<a id="integerparameterrangetypedef"></a>
 
 ## IntegerParameterRangeTypeDef
 
@@ -7277,6 +8099,8 @@ Optional fields:
 - `ScalingType`:
   [HyperParameterScalingTypeType](./literals.md#hyperparameterscalingtypetype)
 
+<a id="jupyterserverappsettingstypedef"></a>
+
 ## JupyterServerAppSettingsTypeDef
 
 ```python
@@ -7288,6 +8112,8 @@ Optional fields:
 - `DefaultResourceSpec`:
   [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
 - `LifecycleConfigArns`: `Sequence`\[`str`\]
+
+<a id="kernelgatewayappsettingstypedef"></a>
 
 ## KernelGatewayAppSettingsTypeDef
 
@@ -7302,6 +8128,8 @@ Optional fields:
 - `CustomImages`:
   `Sequence`\[[CustomImageTypeDef](./type_defs.md#customimagetypedef)\]
 - `LifecycleConfigArns`: `Sequence`\[`str`\]
+
+<a id="kernelgatewayimageconfigtypedef"></a>
 
 ## KernelGatewayImageConfigTypeDef
 
@@ -7319,6 +8147,8 @@ Optional fields:
 - `FileSystemConfig`:
   [FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)
 
+<a id="kernelspectypedef"></a>
+
 ## KernelSpecTypeDef
 
 ```python
@@ -7333,6 +8163,8 @@ Optional fields:
 
 - `DisplayName`: `str`
 
+<a id="labelcountersforworkteamtypedef"></a>
+
 ## LabelCountersForWorkteamTypeDef
 
 ```python
@@ -7344,6 +8176,8 @@ Optional fields:
 - `HumanLabeled`: `int`
 - `PendingHuman`: `int`
 - `Total`: `int`
+
+<a id="labelcounterstypedef"></a>
 
 ## LabelCountersTypeDef
 
@@ -7358,6 +8192,8 @@ Optional fields:
 - `MachineLabeled`: `int`
 - `FailedNonRetryableError`: `int`
 - `Unlabeled`: `int`
+
+<a id="labelingjobalgorithmsconfigtypedef"></a>
 
 ## LabelingJobAlgorithmsConfigTypeDef
 
@@ -7375,6 +8211,8 @@ Optional fields:
 - `LabelingJobResourceConfig`:
   [LabelingJobResourceConfigTypeDef](./type_defs.md#labelingjobresourceconfigtypedef)
 
+<a id="labelingjobdataattributestypedef"></a>
+
 ## LabelingJobDataAttributesTypeDef
 
 ```python
@@ -7385,6 +8223,8 @@ Optional fields:
 
 - `ContentClassifiers`:
   `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
+
+<a id="labelingjobdatasourcetypedef"></a>
 
 ## LabelingJobDataSourceTypeDef
 
@@ -7398,6 +8238,8 @@ Optional fields:
   [LabelingJobS3DataSourceTypeDef](./type_defs.md#labelingjobs3datasourcetypedef)
 - `SnsDataSource`:
   [LabelingJobSnsDataSourceTypeDef](./type_defs.md#labelingjobsnsdatasourcetypedef)
+
+<a id="labelingjobforworkteamsummarytypedef"></a>
 
 ## LabelingJobForWorkteamSummaryTypeDef
 
@@ -7418,6 +8260,8 @@ Optional fields:
   [LabelCountersForWorkteamTypeDef](./type_defs.md#labelcountersforworkteamtypedef)
 - `NumberOfHumanWorkersPerDataObject`: `int`
 
+<a id="labelingjobinputconfigtypedef"></a>
+
 ## LabelingJobInputConfigTypeDef
 
 ```python
@@ -7434,6 +8278,8 @@ Optional fields:
 - `DataAttributes`:
   [LabelingJobDataAttributesTypeDef](./type_defs.md#labelingjobdataattributestypedef)
 
+<a id="labelingjoboutputconfigtypedef"></a>
+
 ## LabelingJobOutputConfigTypeDef
 
 ```python
@@ -7449,6 +8295,8 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `SnsTopicArn`: `str`
 
+<a id="labelingjoboutputtypedef"></a>
+
 ## LabelingJobOutputTypeDef
 
 ```python
@@ -7463,6 +8311,8 @@ Optional fields:
 
 - `FinalActiveLearningModelArn`: `str`
 
+<a id="labelingjobresourceconfigtypedef"></a>
+
 ## LabelingJobResourceConfigTypeDef
 
 ```python
@@ -7472,6 +8322,8 @@ from mypy_boto3_sagemaker.type_defs import LabelingJobResourceConfigTypeDef
 Optional fields:
 
 - `VolumeKmsKeyId`: `str`
+
+<a id="labelingjobs3datasourcetypedef"></a>
 
 ## LabelingJobS3DataSourceTypeDef
 
@@ -7483,6 +8335,8 @@ Required fields:
 
 - `ManifestS3Uri`: `str`
 
+<a id="labelingjobsnsdatasourcetypedef"></a>
+
 ## LabelingJobSnsDataSourceTypeDef
 
 ```python
@@ -7492,6 +8346,8 @@ from mypy_boto3_sagemaker.type_defs import LabelingJobSnsDataSourceTypeDef
 Required fields:
 
 - `SnsTopicArn`: `str`
+
+<a id="labelingjobstoppingconditionstypedef"></a>
 
 ## LabelingJobStoppingConditionsTypeDef
 
@@ -7503,6 +8359,8 @@ Optional fields:
 
 - `MaxHumanLabeledObjectCount`: `int`
 - `MaxPercentageOfInputDatasetLabeled`: `int`
+
+<a id="labelingjobsummarytypedef"></a>
 
 ## LabelingJobSummaryTypeDef
 
@@ -7531,6 +8389,8 @@ Optional fields:
 - `InputConfig`:
   [LabelingJobInputConfigTypeDef](./type_defs.md#labelingjobinputconfigtypedef)
 
+<a id="lambdastepmetadatatypedef"></a>
+
 ## LambdaStepMetadataTypeDef
 
 ```python
@@ -7542,6 +8402,8 @@ Optional fields:
 - `Arn`: `str`
 - `OutputParameters`:
   `List`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
+
+<a id="lineagegroupsummarytypedef"></a>
 
 ## LineageGroupSummaryTypeDef
 
@@ -7556,6 +8418,8 @@ Optional fields:
 - `DisplayName`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
+
+<a id="listactionsrequestrequesttypedef"></a>
 
 ## ListActionsRequestRequestTypeDef
 
@@ -7574,6 +8438,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listactionsresponsetypedef"></a>
+
 ## ListActionsResponseTypeDef
 
 ```python
@@ -7587,6 +8453,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listalgorithmsinputrequesttypedef"></a>
 
 ## ListAlgorithmsInputRequestTypeDef
 
@@ -7604,6 +8472,8 @@ Optional fields:
 - `SortBy`: [AlgorithmSortByType](./literals.md#algorithmsortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listalgorithmsoutputtypedef"></a>
+
 ## ListAlgorithmsOutputTypeDef
 
 ```python
@@ -7617,6 +8487,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listappimageconfigsrequestrequesttypedef"></a>
 
 ## ListAppImageConfigsRequestRequestTypeDef
 
@@ -7637,6 +8509,8 @@ Optional fields:
   [AppImageConfigSortKeyType](./literals.md#appimageconfigsortkeytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listappimageconfigsresponsetypedef"></a>
+
 ## ListAppImageConfigsResponseTypeDef
 
 ```python
@@ -7650,6 +8524,8 @@ Required fields:
   `List`\[[AppImageConfigDetailsTypeDef](./type_defs.md#appimageconfigdetailstypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listappsrequestrequesttypedef"></a>
 
 ## ListAppsRequestRequestTypeDef
 
@@ -7667,6 +8543,8 @@ Optional fields:
 - `DomainIdEquals`: `str`
 - `UserProfileNameEquals`: `str`
 
+<a id="listappsresponsetypedef"></a>
+
 ## ListAppsResponseTypeDef
 
 ```python
@@ -7679,6 +8557,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listartifactsrequestrequesttypedef"></a>
 
 ## ListArtifactsRequestRequestTypeDef
 
@@ -7698,6 +8578,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listartifactsresponsetypedef"></a>
+
 ## ListArtifactsResponseTypeDef
 
 ```python
@@ -7711,6 +8593,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassociationsrequestrequesttypedef"></a>
 
 ## ListAssociationsRequestRequestTypeDef
 
@@ -7733,6 +8617,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listassociationsresponsetypedef"></a>
+
 ## ListAssociationsResponseTypeDef
 
 ```python
@@ -7746,6 +8632,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listautomljobsrequestrequesttypedef"></a>
 
 ## ListAutoMLJobsRequestRequestTypeDef
 
@@ -7766,6 +8654,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listautomljobsresponsetypedef"></a>
+
 ## ListAutoMLJobsResponseTypeDef
 
 ```python
@@ -7779,6 +8669,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcandidatesforautomljobrequestrequesttypedef"></a>
 
 ## ListCandidatesForAutoMLJobRequestRequestTypeDef
 
@@ -7799,6 +8691,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listcandidatesforautomljobresponsetypedef"></a>
+
 ## ListCandidatesForAutoMLJobResponseTypeDef
 
 ```python
@@ -7812,6 +8706,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcoderepositoriesinputrequesttypedef"></a>
 
 ## ListCodeRepositoriesInputRequestTypeDef
 
@@ -7832,6 +8728,8 @@ Optional fields:
 - `SortOrder`:
   [CodeRepositorySortOrderType](./literals.md#coderepositorysortordertype)
 
+<a id="listcoderepositoriesoutputtypedef"></a>
+
 ## ListCodeRepositoriesOutputTypeDef
 
 ```python
@@ -7845,6 +8743,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcompilationjobsrequestrequesttypedef"></a>
 
 ## ListCompilationJobsRequestRequestTypeDef
 
@@ -7867,6 +8767,8 @@ Optional fields:
   [ListCompilationJobsSortByType](./literals.md#listcompilationjobssortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listcompilationjobsresponsetypedef"></a>
+
 ## ListCompilationJobsResponseTypeDef
 
 ```python
@@ -7880,6 +8782,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcontextsrequestrequesttypedef"></a>
 
 ## ListContextsRequestRequestTypeDef
 
@@ -7898,6 +8802,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listcontextsresponsetypedef"></a>
+
 ## ListContextsResponseTypeDef
 
 ```python
@@ -7911,6 +8817,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdataqualityjobdefinitionsrequestrequesttypedef"></a>
 
 ## ListDataQualityJobDefinitionsRequestRequestTypeDef
 
@@ -7930,6 +8838,8 @@ Optional fields:
 - `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
+<a id="listdataqualityjobdefinitionsresponsetypedef"></a>
+
 ## ListDataQualityJobDefinitionsResponseTypeDef
 
 ```python
@@ -7943,6 +8853,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdevicefleetsrequestrequesttypedef"></a>
 
 ## ListDeviceFleetsRequestRequestTypeDef
 
@@ -7963,6 +8875,8 @@ Optional fields:
   [ListDeviceFleetsSortByType](./literals.md#listdevicefleetssortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listdevicefleetsresponsetypedef"></a>
+
 ## ListDeviceFleetsResponseTypeDef
 
 ```python
@@ -7976,6 +8890,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdevicesrequestrequesttypedef"></a>
 
 ## ListDevicesRequestRequestTypeDef
 
@@ -7991,6 +8907,8 @@ Optional fields:
 - `ModelName`: `str`
 - `DeviceFleetName`: `str`
 
+<a id="listdevicesresponsetypedef"></a>
+
 ## ListDevicesResponseTypeDef
 
 ```python
@@ -8005,6 +8923,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdomainsrequestrequesttypedef"></a>
+
 ## ListDomainsRequestRequestTypeDef
 
 ```python
@@ -8015,6 +8935,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdomainsresponsetypedef"></a>
 
 ## ListDomainsResponseTypeDef
 
@@ -8029,6 +8951,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listedgepackagingjobsrequestrequesttypedef"></a>
 
 ## ListEdgePackagingJobsRequestRequestTypeDef
 
@@ -8052,6 +8976,8 @@ Optional fields:
   [ListEdgePackagingJobsSortByType](./literals.md#listedgepackagingjobssortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listedgepackagingjobsresponsetypedef"></a>
+
 ## ListEdgePackagingJobsResponseTypeDef
 
 ```python
@@ -8065,6 +8991,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listendpointconfigsinputrequesttypedef"></a>
 
 ## ListEndpointConfigsInputRequestTypeDef
 
@@ -8083,6 +9011,8 @@ Optional fields:
 - `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
+<a id="listendpointconfigsoutputtypedef"></a>
+
 ## ListEndpointConfigsOutputTypeDef
 
 ```python
@@ -8096,6 +9026,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listendpointsinputrequesttypedef"></a>
 
 ## ListEndpointsInputRequestTypeDef
 
@@ -8116,6 +9048,8 @@ Optional fields:
 - `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
 - `StatusEquals`: [EndpointStatusType](./literals.md#endpointstatustype)
 
+<a id="listendpointsoutputtypedef"></a>
+
 ## ListEndpointsOutputTypeDef
 
 ```python
@@ -8129,6 +9063,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listexperimentsrequestrequesttypedef"></a>
 
 ## ListExperimentsRequestRequestTypeDef
 
@@ -8145,6 +9081,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listexperimentsresponsetypedef"></a>
+
 ## ListExperimentsResponseTypeDef
 
 ```python
@@ -8158,6 +9096,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfeaturegroupsrequestrequesttypedef"></a>
 
 ## ListFeatureGroupsRequestRequestTypeDef
 
@@ -8180,6 +9120,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listfeaturegroupsresponsetypedef"></a>
+
 ## ListFeatureGroupsResponseTypeDef
 
 ```python
@@ -8193,6 +9135,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listflowdefinitionsrequestrequesttypedef"></a>
 
 ## ListFlowDefinitionsRequestRequestTypeDef
 
@@ -8208,6 +9152,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listflowdefinitionsresponsetypedef"></a>
+
 ## ListFlowDefinitionsResponseTypeDef
 
 ```python
@@ -8221,6 +9167,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listhumantaskuisrequestrequesttypedef"></a>
 
 ## ListHumanTaskUisRequestRequestTypeDef
 
@@ -8236,6 +9184,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listhumantaskuisresponsetypedef"></a>
+
 ## ListHumanTaskUisResponseTypeDef
 
 ```python
@@ -8249,6 +9199,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listhyperparametertuningjobsrequestrequesttypedef"></a>
 
 ## ListHyperParameterTuningJobsRequestRequestTypeDef
 
@@ -8271,6 +9223,8 @@ Optional fields:
 - `StatusEquals`:
   [HyperParameterTuningJobStatusType](./literals.md#hyperparametertuningjobstatustype)
 
+<a id="listhyperparametertuningjobsresponsetypedef"></a>
+
 ## ListHyperParameterTuningJobsResponseTypeDef
 
 ```python
@@ -8284,6 +9238,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listimageversionsrequestrequesttypedef"></a>
 
 ## ListImageVersionsRequestRequestTypeDef
 
@@ -8307,6 +9263,8 @@ Optional fields:
 - `SortOrder`:
   [ImageVersionSortOrderType](./literals.md#imageversionsortordertype)
 
+<a id="listimageversionsresponsetypedef"></a>
+
 ## ListImageVersionsResponseTypeDef
 
 ```python
@@ -8320,6 +9278,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listimagesrequestrequesttypedef"></a>
 
 ## ListImagesRequestRequestTypeDef
 
@@ -8339,6 +9299,8 @@ Optional fields:
 - `SortBy`: [ImageSortByType](./literals.md#imagesortbytype)
 - `SortOrder`: [ImageSortOrderType](./literals.md#imagesortordertype)
 
+<a id="listimagesresponsetypedef"></a>
+
 ## ListImagesResponseTypeDef
 
 ```python
@@ -8351,6 +9313,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listinferencerecommendationsjobsrequestrequesttypedef"></a>
 
 ## ListInferenceRecommendationsJobsRequestRequestTypeDef
 
@@ -8373,6 +9337,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listinferencerecommendationsjobsresponsetypedef"></a>
+
 ## ListInferenceRecommendationsJobsResponseTypeDef
 
 ```python
@@ -8386,6 +9352,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlabelingjobsforworkteamrequestrequesttypedef"></a>
 
 ## ListLabelingJobsForWorkteamRequestRequestTypeDef
 
@@ -8408,6 +9376,8 @@ Optional fields:
   [ListLabelingJobsForWorkteamSortByOptionsType](./literals.md#listlabelingjobsforworkteamsortbyoptionstype))
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listlabelingjobsforworkteamresponsetypedef"></a>
+
 ## ListLabelingJobsForWorkteamResponseTypeDef
 
 ```python
@@ -8421,6 +9391,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlabelingjobsrequestrequesttypedef"></a>
 
 ## ListLabelingJobsRequestRequestTypeDef
 
@@ -8441,6 +9413,8 @@ Optional fields:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `StatusEquals`: [LabelingJobStatusType](./literals.md#labelingjobstatustype)
 
+<a id="listlabelingjobsresponsetypedef"></a>
+
 ## ListLabelingJobsResponseTypeDef
 
 ```python
@@ -8454,6 +9428,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlineagegroupsrequestrequesttypedef"></a>
 
 ## ListLineageGroupsRequestRequestTypeDef
 
@@ -8470,6 +9446,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listlineagegroupsresponsetypedef"></a>
+
 ## ListLineageGroupsResponseTypeDef
 
 ```python
@@ -8483,6 +9461,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmodelbiasjobdefinitionsrequestrequesttypedef"></a>
 
 ## ListModelBiasJobDefinitionsRequestRequestTypeDef
 
@@ -8502,6 +9482,8 @@ Optional fields:
 - `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
+<a id="listmodelbiasjobdefinitionsresponsetypedef"></a>
+
 ## ListModelBiasJobDefinitionsResponseTypeDef
 
 ```python
@@ -8515,6 +9497,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmodelexplainabilityjobdefinitionsrequestrequesttypedef"></a>
 
 ## ListModelExplainabilityJobDefinitionsRequestRequestTypeDef
 
@@ -8534,6 +9518,8 @@ Optional fields:
 - `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
+<a id="listmodelexplainabilityjobdefinitionsresponsetypedef"></a>
+
 ## ListModelExplainabilityJobDefinitionsResponseTypeDef
 
 ```python
@@ -8548,6 +9534,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmodelmetadatarequestrequesttypedef"></a>
+
 ## ListModelMetadataRequestRequestTypeDef
 
 ```python
@@ -8560,6 +9548,8 @@ Optional fields:
   [ModelMetadataSearchExpressionTypeDef](./type_defs.md#modelmetadatasearchexpressiontypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listmodelmetadataresponsetypedef"></a>
 
 ## ListModelMetadataResponseTypeDef
 
@@ -8574,6 +9564,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmodelpackagegroupsinputrequesttypedef"></a>
 
 ## ListModelPackageGroupsInputRequestTypeDef
 
@@ -8592,6 +9584,8 @@ Optional fields:
   [ModelPackageGroupSortByType](./literals.md#modelpackagegroupsortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listmodelpackagegroupsoutputtypedef"></a>
+
 ## ListModelPackageGroupsOutputTypeDef
 
 ```python
@@ -8605,6 +9599,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmodelpackagesinputrequesttypedef"></a>
 
 ## ListModelPackagesInputRequestTypeDef
 
@@ -8627,6 +9623,8 @@ Optional fields:
 - `SortBy`: [ModelPackageSortByType](./literals.md#modelpackagesortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listmodelpackagesoutputtypedef"></a>
+
 ## ListModelPackagesOutputTypeDef
 
 ```python
@@ -8640,6 +9638,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmodelqualityjobdefinitionsrequestrequesttypedef"></a>
 
 ## ListModelQualityJobDefinitionsRequestRequestTypeDef
 
@@ -8659,6 +9659,8 @@ Optional fields:
 - `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
+<a id="listmodelqualityjobdefinitionsresponsetypedef"></a>
+
 ## ListModelQualityJobDefinitionsResponseTypeDef
 
 ```python
@@ -8672,6 +9674,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmodelsinputrequesttypedef"></a>
 
 ## ListModelsInputRequestTypeDef
 
@@ -8689,6 +9693,8 @@ Optional fields:
 - `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
+<a id="listmodelsoutputtypedef"></a>
+
 ## ListModelsOutputTypeDef
 
 ```python
@@ -8701,6 +9707,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmonitoringexecutionsrequestrequesttypedef"></a>
 
 ## ListMonitoringExecutionsRequestRequestTypeDef
 
@@ -8728,6 +9736,8 @@ Optional fields:
 - `MonitoringTypeEquals`:
   [MonitoringTypeType](./literals.md#monitoringtypetype)
 
+<a id="listmonitoringexecutionsresponsetypedef"></a>
+
 ## ListMonitoringExecutionsResponseTypeDef
 
 ```python
@@ -8741,6 +9751,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmonitoringschedulesrequestrequesttypedef"></a>
 
 ## ListMonitoringSchedulesRequestRequestTypeDef
 
@@ -8766,6 +9778,8 @@ Optional fields:
 - `MonitoringTypeEquals`:
   [MonitoringTypeType](./literals.md#monitoringtypetype)
 
+<a id="listmonitoringschedulesresponsetypedef"></a>
+
 ## ListMonitoringSchedulesResponseTypeDef
 
 ```python
@@ -8779,6 +9793,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listnotebookinstancelifecycleconfigsinputrequesttypedef"></a>
 
 ## ListNotebookInstanceLifecycleConfigsInputRequestTypeDef
 
@@ -8800,6 +9816,8 @@ Optional fields:
 - `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
 
+<a id="listnotebookinstancelifecycleconfigsoutputtypedef"></a>
+
 ## ListNotebookInstanceLifecycleConfigsOutputTypeDef
 
 ```python
@@ -8813,6 +9831,8 @@ Required fields:
   `List`\[[NotebookInstanceLifecycleConfigSummaryTypeDef](./type_defs.md#notebookinstancelifecycleconfigsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listnotebookinstancesinputrequesttypedef"></a>
 
 ## ListNotebookInstancesInputRequestTypeDef
 
@@ -8839,6 +9859,8 @@ Optional fields:
 - `DefaultCodeRepositoryContains`: `str`
 - `AdditionalCodeRepositoryEquals`: `str`
 
+<a id="listnotebookinstancesoutputtypedef"></a>
+
 ## ListNotebookInstancesOutputTypeDef
 
 ```python
@@ -8853,6 +9875,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpipelineexecutionstepsrequestrequesttypedef"></a>
+
 ## ListPipelineExecutionStepsRequestRequestTypeDef
 
 ```python
@@ -8865,6 +9889,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+<a id="listpipelineexecutionstepsresponsetypedef"></a>
 
 ## ListPipelineExecutionStepsResponseTypeDef
 
@@ -8879,6 +9905,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpipelineexecutionsrequestrequesttypedef"></a>
 
 ## ListPipelineExecutionsRequestRequestTypeDef
 
@@ -8900,6 +9928,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listpipelineexecutionsresponsetypedef"></a>
+
 ## ListPipelineExecutionsResponseTypeDef
 
 ```python
@@ -8913,6 +9943,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpipelineparametersforexecutionrequestrequesttypedef"></a>
 
 ## ListPipelineParametersForExecutionRequestRequestTypeDef
 
@@ -8929,6 +9961,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listpipelineparametersforexecutionresponsetypedef"></a>
+
 ## ListPipelineParametersForExecutionResponseTypeDef
 
 ```python
@@ -8942,6 +9976,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpipelinesrequestrequesttypedef"></a>
 
 ## ListPipelinesRequestRequestTypeDef
 
@@ -8959,6 +9995,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listpipelinesresponsetypedef"></a>
+
 ## ListPipelinesResponseTypeDef
 
 ```python
@@ -8972,6 +10010,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listprocessingjobsrequestrequesttypedef"></a>
 
 ## ListProcessingJobsRequestRequestTypeDef
 
@@ -8993,6 +10033,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listprocessingjobsresponsetypedef"></a>
+
 ## ListProcessingJobsResponseTypeDef
 
 ```python
@@ -9006,6 +10048,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listprojectsinputrequesttypedef"></a>
 
 ## ListProjectsInputRequestTypeDef
 
@@ -9023,6 +10067,8 @@ Optional fields:
 - `SortBy`: [ProjectSortByType](./literals.md#projectsortbytype)
 - `SortOrder`: [ProjectSortOrderType](./literals.md#projectsortordertype)
 
+<a id="listprojectsoutputtypedef"></a>
+
 ## ListProjectsOutputTypeDef
 
 ```python
@@ -9036,6 +10082,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststudiolifecycleconfigsrequestrequesttypedef"></a>
 
 ## ListStudioLifecycleConfigsRequestRequestTypeDef
 
@@ -9058,6 +10106,8 @@ Optional fields:
   [StudioLifecycleConfigSortKeyType](./literals.md#studiolifecycleconfigsortkeytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="liststudiolifecycleconfigsresponsetypedef"></a>
+
 ## ListStudioLifecycleConfigsResponseTypeDef
 
 ```python
@@ -9072,6 +10122,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsubscribedworkteamsrequestrequesttypedef"></a>
+
 ## ListSubscribedWorkteamsRequestRequestTypeDef
 
 ```python
@@ -9083,6 +10135,8 @@ Optional fields:
 - `NameContains`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listsubscribedworkteamsresponsetypedef"></a>
 
 ## ListSubscribedWorkteamsResponseTypeDef
 
@@ -9097,6 +10151,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsinputrequesttypedef"></a>
 
 ## ListTagsInputRequestTypeDef
 
@@ -9113,6 +10169,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listtagsoutputtypedef"></a>
+
 ## ListTagsOutputTypeDef
 
 ```python
@@ -9125,6 +10183,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtrainingjobsforhyperparametertuningjobrequestrequesttypedef"></a>
 
 ## ListTrainingJobsForHyperParameterTuningJobRequestRequestTypeDef
 
@@ -9145,6 +10205,8 @@ Optional fields:
   [TrainingJobSortByOptionsType](./literals.md#trainingjobsortbyoptionstype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listtrainingjobsforhyperparametertuningjobresponsetypedef"></a>
+
 ## ListTrainingJobsForHyperParameterTuningJobResponseTypeDef
 
 ```python
@@ -9158,6 +10220,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtrainingjobsrequestrequesttypedef"></a>
 
 ## ListTrainingJobsRequestRequestTypeDef
 
@@ -9178,6 +10242,8 @@ Optional fields:
 - `SortBy`: [SortByType](./literals.md#sortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listtrainingjobsresponsetypedef"></a>
+
 ## ListTrainingJobsResponseTypeDef
 
 ```python
@@ -9191,6 +10257,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtransformjobsrequestrequesttypedef"></a>
 
 ## ListTransformJobsRequestRequestTypeDef
 
@@ -9212,6 +10280,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listtransformjobsresponsetypedef"></a>
+
 ## ListTransformJobsResponseTypeDef
 
 ```python
@@ -9225,6 +10295,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtrialcomponentsrequestrequesttypedef"></a>
 
 ## ListTrialComponentsRequestRequestTypeDef
 
@@ -9245,6 +10317,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtrialcomponentsresponsetypedef"></a>
+
 ## ListTrialComponentsResponseTypeDef
 
 ```python
@@ -9258,6 +10332,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtrialsrequestrequesttypedef"></a>
 
 ## ListTrialsRequestRequestTypeDef
 
@@ -9276,6 +10352,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtrialsresponsetypedef"></a>
+
 ## ListTrialsResponseTypeDef
 
 ```python
@@ -9289,6 +10367,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listuserprofilesrequestrequesttypedef"></a>
 
 ## ListUserProfilesRequestRequestTypeDef
 
@@ -9305,6 +10385,8 @@ Optional fields:
 - `DomainIdEquals`: `str`
 - `UserProfileNameContains`: `str`
 
+<a id="listuserprofilesresponsetypedef"></a>
+
 ## ListUserProfilesResponseTypeDef
 
 ```python
@@ -9318,6 +10400,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listworkforcesrequestrequesttypedef"></a>
 
 ## ListWorkforcesRequestRequestTypeDef
 
@@ -9334,6 +10418,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listworkforcesresponsetypedef"></a>
+
 ## ListWorkforcesResponseTypeDef
 
 ```python
@@ -9346,6 +10432,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listworkteamsrequestrequesttypedef"></a>
 
 ## ListWorkteamsRequestRequestTypeDef
 
@@ -9362,6 +10450,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listworkteamsresponsetypedef"></a>
+
 ## ListWorkteamsResponseTypeDef
 
 ```python
@@ -9374,6 +10464,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="memberdefinitiontypedef"></a>
 
 ## MemberDefinitionTypeDef
 
@@ -9388,6 +10480,8 @@ Optional fields:
 - `OidcMemberDefinition`:
   [OidcMemberDefinitionTypeDef](./type_defs.md#oidcmemberdefinitiontypedef)
 
+<a id="metadatapropertiestypedef"></a>
+
 ## MetadataPropertiesTypeDef
 
 ```python
@@ -9401,6 +10495,8 @@ Optional fields:
 - `GeneratedBy`: `str`
 - `ProjectId`: `str`
 
+<a id="metricdatatypedef"></a>
+
 ## MetricDataTypeDef
 
 ```python
@@ -9412,6 +10508,8 @@ Optional fields:
 - `MetricName`: `str`
 - `Value`: `float`
 - `Timestamp`: `datetime`
+
+<a id="metricdatumtypedef"></a>
 
 ## MetricDatumTypeDef
 
@@ -9425,6 +10523,8 @@ Optional fields:
 - `Value`: `float`
 - `Set`: [MetricSetSourceType](./literals.md#metricsetsourcetype)
 
+<a id="metricdefinitiontypedef"></a>
+
 ## MetricDefinitionTypeDef
 
 ```python
@@ -9435,6 +10535,8 @@ Required fields:
 
 - `Name`: `str`
 - `Regex`: `str`
+
+<a id="metricssourcetypedef"></a>
 
 ## MetricsSourceTypeDef
 
@@ -9451,6 +10553,8 @@ Optional fields:
 
 - `ContentDigest`: `str`
 
+<a id="modelartifactstypedef"></a>
+
 ## ModelArtifactsTypeDef
 
 ```python
@@ -9460,6 +10564,8 @@ from mypy_boto3_sagemaker.type_defs import ModelArtifactsTypeDef
 Required fields:
 
 - `S3ModelArtifacts`: `str`
+
+<a id="modelbiasappspecificationtypedef"></a>
 
 ## ModelBiasAppSpecificationTypeDef
 
@@ -9476,6 +10582,8 @@ Optional fields:
 
 - `Environment`: `Mapping`\[`str`, `str`\]
 
+<a id="modelbiasbaselineconfigtypedef"></a>
+
 ## ModelBiasBaselineConfigTypeDef
 
 ```python
@@ -9487,6 +10595,8 @@ Optional fields:
 - `BaseliningJobName`: `str`
 - `ConstraintsResource`:
   [MonitoringConstraintsResourceTypeDef](./type_defs.md#monitoringconstraintsresourcetypedef)
+
+<a id="modelbiasjobinputtypedef"></a>
 
 ## ModelBiasJobInputTypeDef
 
@@ -9500,6 +10610,8 @@ Required fields:
 - `GroundTruthS3Input`:
   [MonitoringGroundTruthS3InputTypeDef](./type_defs.md#monitoringgroundtruths3inputtypedef)
 
+<a id="modelclientconfigtypedef"></a>
+
 ## ModelClientConfigTypeDef
 
 ```python
@@ -9510,6 +10622,8 @@ Optional fields:
 
 - `InvocationsTimeoutInSeconds`: `int`
 - `InvocationsMaxRetries`: `int`
+
+<a id="modelconfigurationtypedef"></a>
 
 ## ModelConfigurationTypeDef
 
@@ -9523,6 +10637,8 @@ Optional fields:
 - `EnvironmentParameters`:
   `List`\[[EnvironmentParameterTypeDef](./type_defs.md#environmentparametertypedef)\]
 
+<a id="modeldataqualitytypedef"></a>
+
 ## ModelDataQualityTypeDef
 
 ```python
@@ -9533,6 +10649,8 @@ Optional fields:
 
 - `Statistics`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 - `Constraints`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
+
+<a id="modeldeployconfigtypedef"></a>
 
 ## ModelDeployConfigTypeDef
 
@@ -9545,6 +10663,8 @@ Optional fields:
 - `AutoGenerateEndpointName`: `bool`
 - `EndpointName`: `str`
 
+<a id="modeldeployresulttypedef"></a>
+
 ## ModelDeployResultTypeDef
 
 ```python
@@ -9555,6 +10675,8 @@ Optional fields:
 
 - `EndpointName`: `str`
 
+<a id="modeldigeststypedef"></a>
+
 ## ModelDigestsTypeDef
 
 ```python
@@ -9564,6 +10686,8 @@ from mypy_boto3_sagemaker.type_defs import ModelDigestsTypeDef
 Optional fields:
 
 - `ArtifactDigest`: `str`
+
+<a id="modelexplainabilityappspecificationtypedef"></a>
 
 ## ModelExplainabilityAppSpecificationTypeDef
 
@@ -9580,6 +10704,8 @@ Optional fields:
 
 - `Environment`: `Mapping`\[`str`, `str`\]
 
+<a id="modelexplainabilitybaselineconfigtypedef"></a>
+
 ## ModelExplainabilityBaselineConfigTypeDef
 
 ```python
@@ -9592,6 +10718,8 @@ Optional fields:
 - `ConstraintsResource`:
   [MonitoringConstraintsResourceTypeDef](./type_defs.md#monitoringconstraintsresourcetypedef)
 
+<a id="modelexplainabilityjobinputtypedef"></a>
+
 ## ModelExplainabilityJobInputTypeDef
 
 ```python
@@ -9601,6 +10729,8 @@ from mypy_boto3_sagemaker.type_defs import ModelExplainabilityJobInputTypeDef
 Required fields:
 
 - `EndpointInput`: [EndpointInputTypeDef](./type_defs.md#endpointinputtypedef)
+
+<a id="modelinputtypedef"></a>
 
 ## ModelInputTypeDef
 
@@ -9612,6 +10742,8 @@ Required fields:
 
 - `DataInputConfig`: `str`
 
+<a id="modellatencythresholdtypedef"></a>
+
 ## ModelLatencyThresholdTypeDef
 
 ```python
@@ -9622,6 +10754,8 @@ Optional fields:
 
 - `Percentile`: `str`
 - `ValueInMilliseconds`: `int`
+
+<a id="modelmetadatafiltertypedef"></a>
 
 ## ModelMetadataFilterTypeDef
 
@@ -9635,6 +10769,8 @@ Required fields:
   [ModelMetadataFilterTypeType](./literals.md#modelmetadatafiltertypetype)
 - `Value`: `str`
 
+<a id="modelmetadatasearchexpressiontypedef"></a>
+
 ## ModelMetadataSearchExpressionTypeDef
 
 ```python
@@ -9645,6 +10781,8 @@ Optional fields:
 
 - `Filters`:
   `Sequence`\[[ModelMetadataFilterTypeDef](./type_defs.md#modelmetadatafiltertypedef)\]
+
+<a id="modelmetadatasummarytypedef"></a>
 
 ## ModelMetadataSummaryTypeDef
 
@@ -9660,6 +10798,8 @@ Required fields:
 - `Model`: `str`
 - `FrameworkVersion`: `str`
 
+<a id="modelmetricstypedef"></a>
+
 ## ModelMetricsTypeDef
 
 ```python
@@ -9674,6 +10814,8 @@ Optional fields:
 - `Bias`: [BiasTypeDef](./type_defs.md#biastypedef)
 - `Explainability`:
   [ExplainabilityTypeDef](./type_defs.md#explainabilitytypedef)
+
+<a id="modelpackagecontainerdefinitiontypedef"></a>
 
 ## ModelPackageContainerDefinitionTypeDef
 
@@ -9697,6 +10839,8 @@ Optional fields:
 - `FrameworkVersion`: `str`
 - `NearestModelName`: `str`
 
+<a id="modelpackagegroupsummarytypedef"></a>
+
 ## ModelPackageGroupSummaryTypeDef
 
 ```python
@@ -9715,6 +10859,8 @@ Optional fields:
 
 - `ModelPackageGroupDescription`: `str`
 
+<a id="modelpackagegrouptypedef"></a>
+
 ## ModelPackageGroupTypeDef
 
 ```python
@@ -9732,6 +10878,8 @@ Optional fields:
   [ModelPackageGroupStatusType](./literals.md#modelpackagegroupstatustype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="modelpackagestatusdetailstypedef"></a>
+
 ## ModelPackageStatusDetailsTypeDef
 
 ```python
@@ -9748,6 +10896,8 @@ Optional fields:
 - `ImageScanStatuses`:
   `List`\[[ModelPackageStatusItemTypeDef](./type_defs.md#modelpackagestatusitemtypedef)\]
 
+<a id="modelpackagestatusitemtypedef"></a>
+
 ## ModelPackageStatusItemTypeDef
 
 ```python
@@ -9763,6 +10913,8 @@ Required fields:
 Optional fields:
 
 - `FailureReason`: `str`
+
+<a id="modelpackagesummarytypedef"></a>
 
 ## ModelPackageSummaryTypeDef
 
@@ -9785,6 +10937,8 @@ Optional fields:
 - `ModelPackageDescription`: `str`
 - `ModelApprovalStatus`:
   [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
+
+<a id="modelpackagetypedef"></a>
 
 ## ModelPackageTypeDef
 
@@ -9830,6 +10984,8 @@ Optional fields:
 - `DriftCheckBaselines`:
   [DriftCheckBaselinesTypeDef](./type_defs.md#driftcheckbaselinestypedef)
 
+<a id="modelpackagevalidationprofiletypedef"></a>
+
 ## ModelPackageValidationProfileTypeDef
 
 ```python
@@ -9842,6 +10998,8 @@ Required fields:
 - `TransformJobDefinition`:
   [TransformJobDefinitionTypeDef](./type_defs.md#transformjobdefinitiontypedef)
 
+<a id="modelpackagevalidationspecificationtypedef"></a>
+
 ## ModelPackageValidationSpecificationTypeDef
 
 ```python
@@ -9853,6 +11011,8 @@ Required fields:
 - `ValidationRole`: `str`
 - `ValidationProfiles`:
   `Sequence`\[[ModelPackageValidationProfileTypeDef](./type_defs.md#modelpackagevalidationprofiletypedef)\]
+
+<a id="modelqualityappspecificationtypedef"></a>
 
 ## ModelQualityAppSpecificationTypeDef
 
@@ -9874,6 +11034,8 @@ Optional fields:
   [MonitoringProblemTypeType](./literals.md#monitoringproblemtypetype)
 - `Environment`: `Mapping`\[`str`, `str`\]
 
+<a id="modelqualitybaselineconfigtypedef"></a>
+
 ## ModelQualityBaselineConfigTypeDef
 
 ```python
@@ -9885,6 +11047,8 @@ Optional fields:
 - `BaseliningJobName`: `str`
 - `ConstraintsResource`:
   [MonitoringConstraintsResourceTypeDef](./type_defs.md#monitoringconstraintsresourcetypedef)
+
+<a id="modelqualityjobinputtypedef"></a>
 
 ## ModelQualityJobInputTypeDef
 
@@ -9898,6 +11062,8 @@ Required fields:
 - `GroundTruthS3Input`:
   [MonitoringGroundTruthS3InputTypeDef](./type_defs.md#monitoringgroundtruths3inputtypedef)
 
+<a id="modelqualitytypedef"></a>
+
 ## ModelQualityTypeDef
 
 ```python
@@ -9909,6 +11075,8 @@ Optional fields:
 - `Statistics`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 - `Constraints`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 
+<a id="modelstepmetadatatypedef"></a>
+
 ## ModelStepMetadataTypeDef
 
 ```python
@@ -9918,6 +11086,8 @@ from mypy_boto3_sagemaker.type_defs import ModelStepMetadataTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+<a id="modelsummarytypedef"></a>
 
 ## ModelSummaryTypeDef
 
@@ -9930,6 +11100,8 @@ Required fields:
 - `ModelName`: `str`
 - `ModelArn`: `str`
 - `CreationTime`: `datetime`
+
+<a id="monitoringappspecificationtypedef"></a>
 
 ## MonitoringAppSpecificationTypeDef
 
@@ -9948,6 +11120,8 @@ Optional fields:
 - `RecordPreprocessorSourceUri`: `str`
 - `PostAnalyticsProcessorSourceUri`: `str`
 
+<a id="monitoringbaselineconfigtypedef"></a>
+
 ## MonitoringBaselineConfigTypeDef
 
 ```python
@@ -9961,6 +11135,8 @@ Optional fields:
   [MonitoringConstraintsResourceTypeDef](./type_defs.md#monitoringconstraintsresourcetypedef)
 - `StatisticsResource`:
   [MonitoringStatisticsResourceTypeDef](./type_defs.md#monitoringstatisticsresourcetypedef)
+
+<a id="monitoringclusterconfigtypedef"></a>
 
 ## MonitoringClusterConfigTypeDef
 
@@ -9979,6 +11155,8 @@ Optional fields:
 
 - `VolumeKmsKeyId`: `str`
 
+<a id="monitoringconstraintsresourcetypedef"></a>
+
 ## MonitoringConstraintsResourceTypeDef
 
 ```python
@@ -9988,6 +11166,8 @@ from mypy_boto3_sagemaker.type_defs import MonitoringConstraintsResourceTypeDef
 Optional fields:
 
 - `S3Uri`: `str`
+
+<a id="monitoringexecutionsummarytypedef"></a>
 
 ## MonitoringExecutionSummaryTypeDef
 
@@ -10012,6 +11192,8 @@ Optional fields:
 - `MonitoringJobDefinitionName`: `str`
 - `MonitoringType`: [MonitoringTypeType](./literals.md#monitoringtypetype)
 
+<a id="monitoringgroundtruths3inputtypedef"></a>
+
 ## MonitoringGroundTruthS3InputTypeDef
 
 ```python
@@ -10022,6 +11204,8 @@ Optional fields:
 
 - `S3Uri`: `str`
 
+<a id="monitoringinputtypedef"></a>
+
 ## MonitoringInputTypeDef
 
 ```python
@@ -10031,6 +11215,8 @@ from mypy_boto3_sagemaker.type_defs import MonitoringInputTypeDef
 Required fields:
 
 - `EndpointInput`: [EndpointInputTypeDef](./type_defs.md#endpointinputtypedef)
+
+<a id="monitoringjobdefinitionsummarytypedef"></a>
 
 ## MonitoringJobDefinitionSummaryTypeDef
 
@@ -10044,6 +11230,8 @@ Required fields:
 - `MonitoringJobDefinitionArn`: `str`
 - `CreationTime`: `datetime`
 - `EndpointName`: `str`
+
+<a id="monitoringjobdefinitiontypedef"></a>
 
 ## MonitoringJobDefinitionTypeDef
 
@@ -10072,6 +11260,8 @@ Optional fields:
 - `Environment`: `Mapping`\[`str`, `str`\]
 - `NetworkConfig`: [NetworkConfigTypeDef](./type_defs.md#networkconfigtypedef)
 
+<a id="monitoringnetworkconfigtypedef"></a>
+
 ## MonitoringNetworkConfigTypeDef
 
 ```python
@@ -10083,6 +11273,8 @@ Optional fields:
 - `EnableInterContainerTrafficEncryption`: `bool`
 - `EnableNetworkIsolation`: `bool`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+
+<a id="monitoringoutputconfigtypedef"></a>
 
 ## MonitoringOutputConfigTypeDef
 
@@ -10099,6 +11291,8 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+<a id="monitoringoutputtypedef"></a>
+
 ## MonitoringOutputTypeDef
 
 ```python
@@ -10110,6 +11304,8 @@ Required fields:
 - `S3Output`:
   [MonitoringS3OutputTypeDef](./type_defs.md#monitorings3outputtypedef)
 
+<a id="monitoringresourcestypedef"></a>
+
 ## MonitoringResourcesTypeDef
 
 ```python
@@ -10120,6 +11316,8 @@ Required fields:
 
 - `ClusterConfig`:
   [MonitoringClusterConfigTypeDef](./type_defs.md#monitoringclusterconfigtypedef)
+
+<a id="monitorings3outputtypedef"></a>
 
 ## MonitoringS3OutputTypeDef
 
@@ -10137,6 +11335,8 @@ Optional fields:
 - `S3UploadMode`:
   [ProcessingS3UploadModeType](./literals.md#processings3uploadmodetype)
 
+<a id="monitoringscheduleconfigtypedef"></a>
+
 ## MonitoringScheduleConfigTypeDef
 
 ```python
@@ -10151,6 +11351,8 @@ Optional fields:
   [MonitoringJobDefinitionTypeDef](./type_defs.md#monitoringjobdefinitiontypedef)
 - `MonitoringJobDefinitionName`: `str`
 - `MonitoringType`: [MonitoringTypeType](./literals.md#monitoringtypetype)
+
+<a id="monitoringschedulesummarytypedef"></a>
 
 ## MonitoringScheduleSummaryTypeDef
 
@@ -10172,6 +11374,8 @@ Optional fields:
 - `EndpointName`: `str`
 - `MonitoringJobDefinitionName`: `str`
 - `MonitoringType`: [MonitoringTypeType](./literals.md#monitoringtypetype)
+
+<a id="monitoringscheduletypedef"></a>
 
 ## MonitoringScheduleTypeDef
 
@@ -10196,6 +11400,8 @@ Optional fields:
   [MonitoringExecutionSummaryTypeDef](./type_defs.md#monitoringexecutionsummarytypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="monitoringstatisticsresourcetypedef"></a>
+
 ## MonitoringStatisticsResourceTypeDef
 
 ```python
@@ -10206,6 +11412,8 @@ Optional fields:
 
 - `S3Uri`: `str`
 
+<a id="monitoringstoppingconditiontypedef"></a>
+
 ## MonitoringStoppingConditionTypeDef
 
 ```python
@@ -10215,6 +11423,8 @@ from mypy_boto3_sagemaker.type_defs import MonitoringStoppingConditionTypeDef
 Required fields:
 
 - `MaxRuntimeInSeconds`: `int`
+
+<a id="multimodelconfigtypedef"></a>
 
 ## MultiModelConfigTypeDef
 
@@ -10227,6 +11437,8 @@ Optional fields:
 - `ModelCacheSetting`:
   [ModelCacheSettingType](./literals.md#modelcachesettingtype)
 
+<a id="neovpcconfigtypedef"></a>
+
 ## NeoVpcConfigTypeDef
 
 ```python
@@ -10237,6 +11449,8 @@ Required fields:
 
 - `SecurityGroupIds`: `Sequence`\[`str`\]
 - `Subnets`: `Sequence`\[`str`\]
+
+<a id="nestedfilterstypedef"></a>
 
 ## NestedFiltersTypeDef
 
@@ -10249,6 +11463,8 @@ Required fields:
 - `NestedPropertyName`: `str`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
+<a id="networkconfigtypedef"></a>
+
 ## NetworkConfigTypeDef
 
 ```python
@@ -10260,6 +11476,8 @@ Optional fields:
 - `EnableInterContainerTrafficEncryption`: `bool`
 - `EnableNetworkIsolation`: `bool`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+
+<a id="notebookinstancelifecycleconfigsummarytypedef"></a>
 
 ## NotebookInstanceLifecycleConfigSummaryTypeDef
 
@@ -10277,6 +11495,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
+<a id="notebookinstancelifecyclehooktypedef"></a>
+
 ## NotebookInstanceLifecycleHookTypeDef
 
 ```python
@@ -10286,6 +11506,8 @@ from mypy_boto3_sagemaker.type_defs import NotebookInstanceLifecycleHookTypeDef
 Optional fields:
 
 - `Content`: `str`
+
+<a id="notebookinstancesummarytypedef"></a>
 
 ## NotebookInstanceSummaryTypeDef
 
@@ -10310,6 +11532,8 @@ Optional fields:
 - `DefaultCodeRepository`: `str`
 - `AdditionalCodeRepositories`: `List`\[`str`\]
 
+<a id="notificationconfigurationtypedef"></a>
+
 ## NotificationConfigurationTypeDef
 
 ```python
@@ -10319,6 +11543,8 @@ from mypy_boto3_sagemaker.type_defs import NotificationConfigurationTypeDef
 Optional fields:
 
 - `NotificationTopicArn`: `str`
+
+<a id="objectivestatuscounterstypedef"></a>
 
 ## ObjectiveStatusCountersTypeDef
 
@@ -10331,6 +11557,8 @@ Optional fields:
 - `Succeeded`: `int`
 - `Pending`: `int`
 - `Failed`: `int`
+
+<a id="offlinestoreconfigtypedef"></a>
 
 ## OfflineStoreConfigTypeDef
 
@@ -10349,6 +11577,8 @@ Optional fields:
 - `DataCatalogConfig`:
   [DataCatalogConfigTypeDef](./type_defs.md#datacatalogconfigtypedef)
 
+<a id="offlinestorestatustypedef"></a>
+
 ## OfflineStoreStatusTypeDef
 
 ```python
@@ -10363,6 +11593,8 @@ Required fields:
 Optional fields:
 
 - `BlockedReason`: `str`
+
+<a id="oidcconfigforresponsetypedef"></a>
 
 ## OidcConfigForResponseTypeDef
 
@@ -10379,6 +11611,8 @@ Optional fields:
 - `UserInfoEndpoint`: `str`
 - `LogoutEndpoint`: `str`
 - `JwksUri`: `str`
+
+<a id="oidcconfigtypedef"></a>
 
 ## OidcConfigTypeDef
 
@@ -10397,6 +11631,8 @@ Required fields:
 - `LogoutEndpoint`: `str`
 - `JwksUri`: `str`
 
+<a id="oidcmemberdefinitiontypedef"></a>
+
 ## OidcMemberDefinitionTypeDef
 
 ```python
@@ -10406,6 +11642,8 @@ from mypy_boto3_sagemaker.type_defs import OidcMemberDefinitionTypeDef
 Required fields:
 
 - `Groups`: `Sequence`\[`str`\]
+
+<a id="onlinestoreconfigtypedef"></a>
 
 ## OnlineStoreConfigTypeDef
 
@@ -10419,6 +11657,8 @@ Optional fields:
   [OnlineStoreSecurityConfigTypeDef](./type_defs.md#onlinestoresecurityconfigtypedef)
 - `EnableOnlineStore`: `bool`
 
+<a id="onlinestoresecurityconfigtypedef"></a>
+
 ## OnlineStoreSecurityConfigTypeDef
 
 ```python
@@ -10428,6 +11668,8 @@ from mypy_boto3_sagemaker.type_defs import OnlineStoreSecurityConfigTypeDef
 Optional fields:
 
 - `KmsKeyId`: `str`
+
+<a id="outputconfigtypedef"></a>
 
 ## OutputConfigTypeDef
 
@@ -10447,6 +11689,8 @@ Optional fields:
 - `CompilerOptions`: `str`
 - `KmsKeyId`: `str`
 
+<a id="outputdataconfigtypedef"></a>
+
 ## OutputDataConfigTypeDef
 
 ```python
@@ -10461,6 +11705,8 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+<a id="outputparametertypedef"></a>
+
 ## OutputParameterTypeDef
 
 ```python
@@ -10471,6 +11717,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -10484,6 +11732,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="parallelismconfigurationtypedef"></a>
+
 ## ParallelismConfigurationTypeDef
 
 ```python
@@ -10493,6 +11743,8 @@ from mypy_boto3_sagemaker.type_defs import ParallelismConfigurationTypeDef
 Required fields:
 
 - `MaxParallelExecutionSteps`: `int`
+
+<a id="parameterrangetypedef"></a>
 
 ## ParameterRangeTypeDef
 
@@ -10509,6 +11761,8 @@ Optional fields:
 - `CategoricalParameterRangeSpecification`:
   [CategoricalParameterRangeSpecificationTypeDef](./type_defs.md#categoricalparameterrangespecificationtypedef)
 
+<a id="parameterrangestypedef"></a>
+
 ## ParameterRangesTypeDef
 
 ```python
@@ -10524,6 +11778,8 @@ Optional fields:
 - `CategoricalParameterRanges`:
   `Sequence`\[[CategoricalParameterRangeTypeDef](./type_defs.md#categoricalparameterrangetypedef)\]
 
+<a id="parametertypedef"></a>
+
 ## ParameterTypeDef
 
 ```python
@@ -10535,6 +11791,8 @@ Required fields:
 - `Name`: `str`
 - `Value`: `str`
 
+<a id="parenthyperparametertuningjobtypedef"></a>
+
 ## ParentHyperParameterTuningJobTypeDef
 
 ```python
@@ -10544,6 +11802,8 @@ from mypy_boto3_sagemaker.type_defs import ParentHyperParameterTuningJobTypeDef
 Optional fields:
 
 - `HyperParameterTuningJobName`: `str`
+
+<a id="parenttypedef"></a>
 
 ## ParentTypeDef
 
@@ -10555,6 +11815,8 @@ Optional fields:
 
 - `TrialName`: `str`
 - `ExperimentName`: `str`
+
+<a id="pendingdeploymentsummarytypedef"></a>
 
 ## PendingDeploymentSummaryTypeDef
 
@@ -10571,6 +11833,8 @@ Optional fields:
 - `ProductionVariants`:
   `List`\[[PendingProductionVariantSummaryTypeDef](./type_defs.md#pendingproductionvariantsummarytypedef)\]
 - `StartTime`: `datetime`
+
+<a id="pendingproductionvariantsummarytypedef"></a>
 
 ## PendingProductionVariantSummaryTypeDef
 
@@ -10601,6 +11865,8 @@ Optional fields:
 - `DesiredServerlessConfig`:
   [ProductionVariantServerlessConfigTypeDef](./type_defs.md#productionvariantserverlessconfigtypedef)
 
+<a id="phasetypedef"></a>
+
 ## PhaseTypeDef
 
 ```python
@@ -10612,6 +11878,8 @@ Optional fields:
 - `InitialNumberOfUsers`: `int`
 - `SpawnRate`: `int`
 - `DurationInSeconds`: `int`
+
+<a id="pipelinedefinitions3locationtypedef"></a>
 
 ## PipelineDefinitionS3LocationTypeDef
 
@@ -10627,6 +11895,8 @@ Required fields:
 Optional fields:
 
 - `VersionId`: `str`
+
+<a id="pipelineexecutionstepmetadatatypedef"></a>
 
 ## PipelineExecutionStepMetadataTypeDef
 
@@ -10660,6 +11930,8 @@ Optional fields:
 - `EMR`: [EMRStepMetadataTypeDef](./type_defs.md#emrstepmetadatatypedef)
 - `Fail`: [FailStepMetadataTypeDef](./type_defs.md#failstepmetadatatypedef)
 
+<a id="pipelineexecutionsteptypedef"></a>
+
 ## PipelineExecutionStepTypeDef
 
 ```python
@@ -10681,6 +11953,8 @@ Optional fields:
 - `Metadata`:
   [PipelineExecutionStepMetadataTypeDef](./type_defs.md#pipelineexecutionstepmetadatatypedef)
 
+<a id="pipelineexecutionsummarytypedef"></a>
+
 ## PipelineExecutionSummaryTypeDef
 
 ```python
@@ -10696,6 +11970,8 @@ Optional fields:
 - `PipelineExecutionDescription`: `str`
 - `PipelineExecutionDisplayName`: `str`
 - `PipelineExecutionFailureReason`: `str`
+
+<a id="pipelineexecutiontypedef"></a>
 
 ## PipelineExecutionTypeDef
 
@@ -10723,6 +11999,8 @@ Optional fields:
 - `PipelineParameters`:
   `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
+<a id="pipelineexperimentconfigtypedef"></a>
+
 ## PipelineExperimentConfigTypeDef
 
 ```python
@@ -10733,6 +12011,8 @@ Optional fields:
 
 - `ExperimentName`: `str`
 - `TrialName`: `str`
+
+<a id="pipelinesummarytypedef"></a>
 
 ## PipelineSummaryTypeDef
 
@@ -10750,6 +12030,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastExecutionTime`: `datetime`
+
+<a id="pipelinetypedef"></a>
 
 ## PipelineTypeDef
 
@@ -10775,6 +12057,8 @@ Optional fields:
   [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="processingclusterconfigtypedef"></a>
+
 ## ProcessingClusterConfigTypeDef
 
 ```python
@@ -10792,6 +12076,8 @@ Optional fields:
 
 - `VolumeKmsKeyId`: `str`
 
+<a id="processingfeaturestoreoutputtypedef"></a>
+
 ## ProcessingFeatureStoreOutputTypeDef
 
 ```python
@@ -10801,6 +12087,8 @@ from mypy_boto3_sagemaker.type_defs import ProcessingFeatureStoreOutputTypeDef
 Required fields:
 
 - `FeatureGroupName`: `str`
+
+<a id="processinginputtypedef"></a>
 
 ## ProcessingInputTypeDef
 
@@ -10820,6 +12108,8 @@ Optional fields:
 - `DatasetDefinition`:
   [DatasetDefinitionTypeDef](./type_defs.md#datasetdefinitiontypedef)
 
+<a id="processingjobstepmetadatatypedef"></a>
+
 ## ProcessingJobStepMetadataTypeDef
 
 ```python
@@ -10829,6 +12119,8 @@ from mypy_boto3_sagemaker.type_defs import ProcessingJobStepMetadataTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+<a id="processingjobsummarytypedef"></a>
 
 ## ProcessingJobSummaryTypeDef
 
@@ -10850,6 +12142,8 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
 - `ExitMessage`: `str`
+
+<a id="processingjobtypedef"></a>
 
 ## ProcessingJobTypeDef
 
@@ -10889,6 +12183,8 @@ Optional fields:
 - `TrainingJobArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="processingoutputconfigtypedef"></a>
+
 ## ProcessingOutputConfigTypeDef
 
 ```python
@@ -10903,6 +12199,8 @@ Required fields:
 Optional fields:
 
 - `KmsKeyId`: `str`
+
+<a id="processingoutputtypedef"></a>
 
 ## ProcessingOutputTypeDef
 
@@ -10922,6 +12220,8 @@ Optional fields:
   [ProcessingFeatureStoreOutputTypeDef](./type_defs.md#processingfeaturestoreoutputtypedef)
 - `AppManaged`: `bool`
 
+<a id="processingresourcestypedef"></a>
+
 ## ProcessingResourcesTypeDef
 
 ```python
@@ -10932,6 +12232,8 @@ Required fields:
 
 - `ClusterConfig`:
   [ProcessingClusterConfigTypeDef](./type_defs.md#processingclusterconfigtypedef)
+
+<a id="processings3inputtypedef"></a>
 
 ## ProcessingS3InputTypeDef
 
@@ -10955,6 +12257,8 @@ Optional fields:
 - `S3CompressionType`:
   [ProcessingS3CompressionTypeType](./literals.md#processings3compressiontypetype)
 
+<a id="processings3outputtypedef"></a>
+
 ## ProcessingS3OutputTypeDef
 
 ```python
@@ -10968,6 +12272,8 @@ Required fields:
 - `S3UploadMode`:
   [ProcessingS3UploadModeType](./literals.md#processings3uploadmodetype)
 
+<a id="processingstoppingconditiontypedef"></a>
+
 ## ProcessingStoppingConditionTypeDef
 
 ```python
@@ -10977,6 +12283,8 @@ from mypy_boto3_sagemaker.type_defs import ProcessingStoppingConditionTypeDef
 Required fields:
 
 - `MaxRuntimeInSeconds`: `int`
+
+<a id="productionvariantcoredumpconfigtypedef"></a>
 
 ## ProductionVariantCoreDumpConfigTypeDef
 
@@ -10992,6 +12300,8 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+<a id="productionvariantserverlessconfigtypedef"></a>
+
 ## ProductionVariantServerlessConfigTypeDef
 
 ```python
@@ -11002,6 +12312,8 @@ Required fields:
 
 - `MemorySizeInMB`: `int`
 - `MaxConcurrency`: `int`
+
+<a id="productionvariantstatustypedef"></a>
 
 ## ProductionVariantStatusTypeDef
 
@@ -11017,6 +12329,8 @@ Optional fields:
 
 - `StatusMessage`: `str`
 - `StartTime`: `datetime`
+
+<a id="productionvariantsummarytypedef"></a>
 
 ## ProductionVariantSummaryTypeDef
 
@@ -11043,6 +12357,8 @@ Optional fields:
 - `DesiredServerlessConfig`:
   [ProductionVariantServerlessConfigTypeDef](./type_defs.md#productionvariantserverlessconfigtypedef)
 
+<a id="productionvarianttypedef"></a>
+
 ## ProductionVariantTypeDef
 
 ```python
@@ -11067,6 +12383,8 @@ Optional fields:
 - `ServerlessConfig`:
   [ProductionVariantServerlessConfigTypeDef](./type_defs.md#productionvariantserverlessconfigtypedef)
 
+<a id="profilerconfigforupdatetypedef"></a>
+
 ## ProfilerConfigForUpdateTypeDef
 
 ```python
@@ -11079,6 +12397,8 @@ Optional fields:
 - `ProfilingIntervalInMilliseconds`: `int`
 - `ProfilingParameters`: `Mapping`\[`str`, `str`\]
 - `DisableProfiler`: `bool`
+
+<a id="profilerconfigtypedef"></a>
 
 ## ProfilerConfigTypeDef
 
@@ -11094,6 +12414,8 @@ Optional fields:
 
 - `ProfilingIntervalInMilliseconds`: `int`
 - `ProfilingParameters`: `Mapping`\[`str`, `str`\]
+
+<a id="profilerruleconfigurationtypedef"></a>
 
 ## ProfilerRuleConfigurationTypeDef
 
@@ -11115,6 +12437,8 @@ Optional fields:
 - `VolumeSizeInGB`: `int`
 - `RuleParameters`: `Mapping`\[`str`, `str`\]
 
+<a id="profilerruleevaluationstatustypedef"></a>
+
 ## ProfilerRuleEvaluationStatusTypeDef
 
 ```python
@@ -11129,6 +12453,8 @@ Optional fields:
   [RuleEvaluationStatusType](./literals.md#ruleevaluationstatustype)
 - `StatusDetails`: `str`
 - `LastModifiedTime`: `datetime`
+
+<a id="projectsummarytypedef"></a>
 
 ## ProjectSummaryTypeDef
 
@@ -11147,6 +12473,8 @@ Required fields:
 Optional fields:
 
 - `ProjectDescription`: `str`
+
+<a id="projecttypedef"></a>
 
 ## ProjectTypeDef
 
@@ -11171,6 +12499,8 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 
+<a id="propertynamequerytypedef"></a>
+
 ## PropertyNameQueryTypeDef
 
 ```python
@@ -11181,6 +12511,8 @@ Required fields:
 
 - `PropertyNameHint`: `str`
 
+<a id="propertynamesuggestiontypedef"></a>
+
 ## PropertyNameSuggestionTypeDef
 
 ```python
@@ -11190,6 +12522,8 @@ from mypy_boto3_sagemaker.type_defs import PropertyNameSuggestionTypeDef
 Optional fields:
 
 - `PropertyName`: `str`
+
+<a id="provisioningparametertypedef"></a>
 
 ## ProvisioningParameterTypeDef
 
@@ -11202,6 +12536,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="publicworkforcetaskpricetypedef"></a>
+
 ## PublicWorkforceTaskPriceTypeDef
 
 ```python
@@ -11211,6 +12547,8 @@ from mypy_boto3_sagemaker.type_defs import PublicWorkforceTaskPriceTypeDef
 Optional fields:
 
 - `AmountInUsd`: [USDTypeDef](./type_defs.md#usdtypedef)
+
+<a id="putmodelpackagegrouppolicyinputrequesttypedef"></a>
 
 ## PutModelPackageGroupPolicyInputRequestTypeDef
 
@@ -11223,6 +12561,8 @@ Required fields:
 - `ModelPackageGroupName`: `str`
 - `ResourcePolicy`: `str`
 
+<a id="putmodelpackagegrouppolicyoutputtypedef"></a>
+
 ## PutModelPackageGroupPolicyOutputTypeDef
 
 ```python
@@ -11234,6 +12574,8 @@ Required fields:
 - `ModelPackageGroupArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="qualitycheckstepmetadatatypedef"></a>
 
 ## QualityCheckStepMetadataTypeDef
 
@@ -11254,6 +12596,8 @@ Optional fields:
 - `SkipCheck`: `bool`
 - `RegisterNewBaseline`: `bool`
 
+<a id="queryfilterstypedef"></a>
+
 ## QueryFiltersTypeDef
 
 ```python
@@ -11270,6 +12614,8 @@ Optional fields:
 - `ModifiedBefore`: `Union`\[`datetime`, `str`\]
 - `ModifiedAfter`: `Union`\[`datetime`, `str`\]
 - `Properties`: `Mapping`\[`str`, `str`\]
+
+<a id="querylineagerequestrequesttypedef"></a>
 
 ## QueryLineageRequestRequestTypeDef
 
@@ -11290,6 +12636,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="querylineageresponsetypedef"></a>
+
 ## QueryLineageResponseTypeDef
 
 ```python
@@ -11304,6 +12652,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="rstudioserverproappsettingstypedef"></a>
+
 ## RStudioServerProAppSettingsTypeDef
 
 ```python
@@ -11316,6 +12666,8 @@ Optional fields:
   [RStudioServerProAccessStatusType](./literals.md#rstudioserverproaccessstatustype)
 - `UserGroup`:
   [RStudioServerProUserGroupType](./literals.md#rstudioserverprousergrouptype)
+
+<a id="rstudioserverprodomainsettingsforupdatetypedef"></a>
 
 ## RStudioServerProDomainSettingsForUpdateTypeDef
 
@@ -11331,6 +12683,8 @@ Optional fields:
 
 - `DefaultResourceSpec`:
   [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
+
+<a id="rstudioserverprodomainsettingstypedef"></a>
 
 ## RStudioServerProDomainSettingsTypeDef
 
@@ -11348,6 +12702,8 @@ Optional fields:
 - `RStudioPackageManagerUrl`: `str`
 - `DefaultResourceSpec`:
   [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
+
+<a id="recommendationjobinputconfigtypedef"></a>
 
 ## RecommendationJobInputConfigTypeDef
 
@@ -11369,6 +12725,8 @@ Optional fields:
 - `EndpointConfigurations`:
   `Sequence`\[[EndpointInputConfigurationTypeDef](./type_defs.md#endpointinputconfigurationtypedef)\]
 
+<a id="recommendationjobresourcelimittypedef"></a>
+
 ## RecommendationJobResourceLimitTypeDef
 
 ```python
@@ -11379,6 +12737,8 @@ Optional fields:
 
 - `MaxNumberOfTests`: `int`
 - `MaxParallelOfTests`: `int`
+
+<a id="recommendationjobstoppingconditionstypedef"></a>
 
 ## RecommendationJobStoppingConditionsTypeDef
 
@@ -11392,6 +12752,8 @@ Optional fields:
 - `ModelLatencyThresholds`:
   `Sequence`\[[ModelLatencyThresholdTypeDef](./type_defs.md#modellatencythresholdtypedef)\]
 
+<a id="recommendationmetricstypedef"></a>
+
 ## RecommendationMetricsTypeDef
 
 ```python
@@ -11404,6 +12766,8 @@ Required fields:
 - `CostPerInference`: `float`
 - `MaxInvocations`: `int`
 - `ModelLatency`: `int`
+
+<a id="redshiftdatasetdefinitiontypedef"></a>
 
 ## RedshiftDatasetDefinitionTypeDef
 
@@ -11428,6 +12792,8 @@ Optional fields:
 - `OutputCompression`:
   [RedshiftResultCompressionTypeType](./literals.md#redshiftresultcompressiontypetype)
 
+<a id="registerdevicesrequestrequesttypedef"></a>
+
 ## RegisterDevicesRequestRequestTypeDef
 
 ```python
@@ -11443,6 +12809,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="registermodelstepmetadatatypedef"></a>
+
 ## RegisterModelStepMetadataTypeDef
 
 ```python
@@ -11452,6 +12820,8 @@ from mypy_boto3_sagemaker.type_defs import RegisterModelStepMetadataTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+<a id="renderuitemplaterequestrequesttypedef"></a>
 
 ## RenderUiTemplateRequestRequestTypeDef
 
@@ -11469,6 +12839,8 @@ Optional fields:
 - `UiTemplate`: [UiTemplateTypeDef](./type_defs.md#uitemplatetypedef)
 - `HumanTaskUiArn`: `str`
 
+<a id="renderuitemplateresponsetypedef"></a>
+
 ## RenderUiTemplateResponseTypeDef
 
 ```python
@@ -11483,6 +12855,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="renderabletasktypedef"></a>
+
 ## RenderableTaskTypeDef
 
 ```python
@@ -11492,6 +12866,8 @@ from mypy_boto3_sagemaker.type_defs import RenderableTaskTypeDef
 Required fields:
 
 - `Input`: `str`
+
+<a id="renderingerrortypedef"></a>
 
 ## RenderingErrorTypeDef
 
@@ -11504,6 +12880,8 @@ Required fields:
 - `Code`: `str`
 - `Message`: `str`
 
+<a id="repositoryauthconfigtypedef"></a>
+
 ## RepositoryAuthConfigTypeDef
 
 ```python
@@ -11513,6 +12891,8 @@ from mypy_boto3_sagemaker.type_defs import RepositoryAuthConfigTypeDef
 Required fields:
 
 - `RepositoryCredentialsProviderArn`: `str`
+
+<a id="resolvedattributestypedef"></a>
 
 ## ResolvedAttributesTypeDef
 
@@ -11527,6 +12907,8 @@ Optional fields:
 - `ProblemType`: [ProblemTypeType](./literals.md#problemtypetype)
 - `CompletionCriteria`:
   [AutoMLJobCompletionCriteriaTypeDef](./type_defs.md#automljobcompletioncriteriatypedef)
+
+<a id="resourceconfigtypedef"></a>
 
 ## ResourceConfigTypeDef
 
@@ -11545,6 +12927,8 @@ Optional fields:
 
 - `VolumeKmsKeyId`: `str`
 
+<a id="resourcelimitstypedef"></a>
+
 ## ResourceLimitsTypeDef
 
 ```python
@@ -11555,6 +12939,8 @@ Required fields:
 
 - `MaxNumberOfTrainingJobs`: `int`
 - `MaxParallelTrainingJobs`: `int`
+
+<a id="resourcespectypedef"></a>
 
 ## ResourceSpecTypeDef
 
@@ -11568,6 +12954,8 @@ Optional fields:
 - `SageMakerImageVersionArn`: `str`
 - `InstanceType`: [AppInstanceTypeType](./literals.md#appinstancetypetype)
 - `LifecycleConfigArn`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -11583,6 +12971,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retentionpolicytypedef"></a>
+
 ## RetentionPolicyTypeDef
 
 ```python
@@ -11592,6 +12982,8 @@ from mypy_boto3_sagemaker.type_defs import RetentionPolicyTypeDef
 Optional fields:
 
 - `HomeEfsFileSystem`: [RetentionTypeType](./literals.md#retentiontypetype)
+
+<a id="retrypipelineexecutionrequestrequesttypedef"></a>
 
 ## RetryPipelineExecutionRequestRequestTypeDef
 
@@ -11609,6 +13001,8 @@ Optional fields:
 - `ParallelismConfiguration`:
   [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
+<a id="retrypipelineexecutionresponsetypedef"></a>
+
 ## RetryPipelineExecutionResponseTypeDef
 
 ```python
@@ -11621,6 +13015,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="retrystrategytypedef"></a>
+
 ## RetryStrategyTypeDef
 
 ```python
@@ -11630,6 +13026,8 @@ from mypy_boto3_sagemaker.type_defs import RetryStrategyTypeDef
 Required fields:
 
 - `MaximumRetryAttempts`: `int`
+
+<a id="s3datasourcetypedef"></a>
 
 ## S3DataSourceTypeDef
 
@@ -11648,6 +13046,8 @@ Optional fields:
   [S3DataDistributionType](./literals.md#s3datadistributiontype)
 - `AttributeNames`: `Sequence`\[`str`\]
 
+<a id="s3storageconfigtypedef"></a>
+
 ## S3StorageConfigTypeDef
 
 ```python
@@ -11663,6 +13063,8 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `ResolvedOutputS3Uri`: `str`
 
+<a id="scheduleconfigtypedef"></a>
+
 ## ScheduleConfigTypeDef
 
 ```python
@@ -11672,6 +13074,8 @@ from mypy_boto3_sagemaker.type_defs import ScheduleConfigTypeDef
 Required fields:
 
 - `ScheduleExpression`: `str`
+
+<a id="searchexpressiontypedef"></a>
 
 ## SearchExpressionTypeDef
 
@@ -11687,6 +13091,8 @@ Optional fields:
 - `SubExpressions`:
   `Sequence`\[[SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)\]
 - `Operator`: [BooleanOperatorType](./literals.md#booleanoperatortype)
+
+<a id="searchrecordtypedef"></a>
 
 ## SearchRecordTypeDef
 
@@ -11711,6 +13117,8 @@ Optional fields:
 - `FeatureGroup`: [FeatureGroupTypeDef](./type_defs.md#featuregrouptypedef)
 - `Project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 
+<a id="searchrequestrequesttypedef"></a>
+
 ## SearchRequestRequestTypeDef
 
 ```python
@@ -11730,6 +13138,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="searchresponsetypedef"></a>
+
 ## SearchResponseTypeDef
 
 ```python
@@ -11743,6 +13153,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="secondarystatustransitiontypedef"></a>
 
 ## SecondaryStatusTransitionTypeDef
 
@@ -11760,6 +13172,8 @@ Optional fields:
 - `EndTime`: `datetime`
 - `StatusMessage`: `str`
 
+<a id="sendpipelineexecutionstepfailurerequestrequesttypedef"></a>
+
 ## SendPipelineExecutionStepFailureRequestRequestTypeDef
 
 ```python
@@ -11775,6 +13189,8 @@ Optional fields:
 - `FailureReason`: `str`
 - `ClientRequestToken`: `str`
 
+<a id="sendpipelineexecutionstepfailureresponsetypedef"></a>
+
 ## SendPipelineExecutionStepFailureResponseTypeDef
 
 ```python
@@ -11786,6 +13202,8 @@ Required fields:
 - `PipelineExecutionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendpipelineexecutionstepsuccessrequestrequesttypedef"></a>
 
 ## SendPipelineExecutionStepSuccessRequestRequestTypeDef
 
@@ -11803,6 +13221,8 @@ Optional fields:
   `Sequence`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
 - `ClientRequestToken`: `str`
 
+<a id="sendpipelineexecutionstepsuccessresponsetypedef"></a>
+
 ## SendPipelineExecutionStepSuccessResponseTypeDef
 
 ```python
@@ -11815,6 +13235,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="servicecatalogprovisionedproductdetailstypedef"></a>
+
 ## ServiceCatalogProvisionedProductDetailsTypeDef
 
 ```python
@@ -11825,6 +13247,8 @@ Optional fields:
 
 - `ProvisionedProductId`: `str`
 - `ProvisionedProductStatusMessage`: `str`
+
+<a id="servicecatalogprovisioningdetailstypedef"></a>
 
 ## ServiceCatalogProvisioningDetailsTypeDef
 
@@ -11843,6 +13267,8 @@ Optional fields:
 - `ProvisioningParameters`:
   `Sequence`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
 
+<a id="servicecatalogprovisioningupdatedetailstypedef"></a>
+
 ## ServiceCatalogProvisioningUpdateDetailsTypeDef
 
 ```python
@@ -11854,6 +13280,8 @@ Optional fields:
 - `ProvisioningArtifactId`: `str`
 - `ProvisioningParameters`:
   `Sequence`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
+
+<a id="sharingsettingstypedef"></a>
 
 ## SharingSettingsTypeDef
 
@@ -11868,6 +13296,8 @@ Optional fields:
 - `S3OutputPath`: `str`
 - `S3KmsKeyId`: `str`
 
+<a id="shuffleconfigtypedef"></a>
+
 ## ShuffleConfigTypeDef
 
 ```python
@@ -11877,6 +13307,8 @@ from mypy_boto3_sagemaker.type_defs import ShuffleConfigTypeDef
 Required fields:
 
 - `Seed`: `int`
+
+<a id="sourcealgorithmspecificationtypedef"></a>
 
 ## SourceAlgorithmSpecificationTypeDef
 
@@ -11888,6 +13320,8 @@ Required fields:
 
 - `SourceAlgorithms`:
   `Sequence`\[[SourceAlgorithmTypeDef](./type_defs.md#sourcealgorithmtypedef)\]
+
+<a id="sourcealgorithmtypedef"></a>
 
 ## SourceAlgorithmTypeDef
 
@@ -11903,6 +13337,8 @@ Optional fields:
 
 - `ModelDataUrl`: `str`
 
+<a id="sourceipconfigtypedef"></a>
+
 ## SourceIpConfigTypeDef
 
 ```python
@@ -11912,6 +13348,8 @@ from mypy_boto3_sagemaker.type_defs import SourceIpConfigTypeDef
 Required fields:
 
 - `Cidrs`: `Sequence`\[`str`\]
+
+<a id="startmonitoringschedulerequestrequesttypedef"></a>
 
 ## StartMonitoringScheduleRequestRequestTypeDef
 
@@ -11923,6 +13361,8 @@ Required fields:
 
 - `MonitoringScheduleName`: `str`
 
+<a id="startnotebookinstanceinputrequesttypedef"></a>
+
 ## StartNotebookInstanceInputRequestTypeDef
 
 ```python
@@ -11932,6 +13372,8 @@ from mypy_boto3_sagemaker.type_defs import StartNotebookInstanceInputRequestType
 Required fields:
 
 - `NotebookInstanceName`: `str`
+
+<a id="startpipelineexecutionrequestrequesttypedef"></a>
 
 ## StartPipelineExecutionRequestRequestTypeDef
 
@@ -11953,6 +13395,8 @@ Optional fields:
 - `ParallelismConfiguration`:
   [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
+<a id="startpipelineexecutionresponsetypedef"></a>
+
 ## StartPipelineExecutionResponseTypeDef
 
 ```python
@@ -11965,6 +13409,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopautomljobrequestrequesttypedef"></a>
+
 ## StopAutoMLJobRequestRequestTypeDef
 
 ```python
@@ -11974,6 +13420,8 @@ from mypy_boto3_sagemaker.type_defs import StopAutoMLJobRequestRequestTypeDef
 Required fields:
 
 - `AutoMLJobName`: `str`
+
+<a id="stopcompilationjobrequestrequesttypedef"></a>
 
 ## StopCompilationJobRequestRequestTypeDef
 
@@ -11985,6 +13433,8 @@ Required fields:
 
 - `CompilationJobName`: `str`
 
+<a id="stopedgepackagingjobrequestrequesttypedef"></a>
+
 ## StopEdgePackagingJobRequestRequestTypeDef
 
 ```python
@@ -11994,6 +13444,8 @@ from mypy_boto3_sagemaker.type_defs import StopEdgePackagingJobRequestRequestTyp
 Required fields:
 
 - `EdgePackagingJobName`: `str`
+
+<a id="stophyperparametertuningjobrequestrequesttypedef"></a>
 
 ## StopHyperParameterTuningJobRequestRequestTypeDef
 
@@ -12005,6 +13457,8 @@ Required fields:
 
 - `HyperParameterTuningJobName`: `str`
 
+<a id="stopinferencerecommendationsjobrequestrequesttypedef"></a>
+
 ## StopInferenceRecommendationsJobRequestRequestTypeDef
 
 ```python
@@ -12014,6 +13468,8 @@ from mypy_boto3_sagemaker.type_defs import StopInferenceRecommendationsJobReques
 Required fields:
 
 - `JobName`: `str`
+
+<a id="stoplabelingjobrequestrequesttypedef"></a>
 
 ## StopLabelingJobRequestRequestTypeDef
 
@@ -12025,6 +13481,8 @@ Required fields:
 
 - `LabelingJobName`: `str`
 
+<a id="stopmonitoringschedulerequestrequesttypedef"></a>
+
 ## StopMonitoringScheduleRequestRequestTypeDef
 
 ```python
@@ -12034,6 +13492,8 @@ from mypy_boto3_sagemaker.type_defs import StopMonitoringScheduleRequestRequestT
 Required fields:
 
 - `MonitoringScheduleName`: `str`
+
+<a id="stopnotebookinstanceinputrequesttypedef"></a>
 
 ## StopNotebookInstanceInputRequestTypeDef
 
@@ -12045,6 +13505,8 @@ Required fields:
 
 - `NotebookInstanceName`: `str`
 
+<a id="stoppipelineexecutionrequestrequesttypedef"></a>
+
 ## StopPipelineExecutionRequestRequestTypeDef
 
 ```python
@@ -12055,6 +13517,8 @@ Required fields:
 
 - `PipelineExecutionArn`: `str`
 - `ClientRequestToken`: `str`
+
+<a id="stoppipelineexecutionresponsetypedef"></a>
 
 ## StopPipelineExecutionResponseTypeDef
 
@@ -12068,6 +13532,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopprocessingjobrequestrequesttypedef"></a>
+
 ## StopProcessingJobRequestRequestTypeDef
 
 ```python
@@ -12077,6 +13543,8 @@ from mypy_boto3_sagemaker.type_defs import StopProcessingJobRequestRequestTypeDe
 Required fields:
 
 - `ProcessingJobName`: `str`
+
+<a id="stoptrainingjobrequestrequesttypedef"></a>
 
 ## StopTrainingJobRequestRequestTypeDef
 
@@ -12088,6 +13556,8 @@ Required fields:
 
 - `TrainingJobName`: `str`
 
+<a id="stoptransformjobrequestrequesttypedef"></a>
+
 ## StopTransformJobRequestRequestTypeDef
 
 ```python
@@ -12097,6 +13567,8 @@ from mypy_boto3_sagemaker.type_defs import StopTransformJobRequestRequestTypeDef
 Required fields:
 
 - `TransformJobName`: `str`
+
+<a id="stoppingconditiontypedef"></a>
 
 ## StoppingConditionTypeDef
 
@@ -12108,6 +13580,8 @@ Optional fields:
 
 - `MaxRuntimeInSeconds`: `int`
 - `MaxWaitTimeInSeconds`: `int`
+
+<a id="studiolifecycleconfigdetailstypedef"></a>
 
 ## StudioLifecycleConfigDetailsTypeDef
 
@@ -12123,6 +13597,8 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `StudioLifecycleConfigAppType`:
   [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
+
+<a id="subscribedworkteamtypedef"></a>
 
 ## SubscribedWorkteamTypeDef
 
@@ -12141,6 +13617,8 @@ Optional fields:
 - `MarketplaceDescription`: `str`
 - `ListingId`: `str`
 
+<a id="suggestionquerytypedef"></a>
+
 ## SuggestionQueryTypeDef
 
 ```python
@@ -12152,6 +13630,8 @@ Optional fields:
 - `PropertyNameQuery`:
   [PropertyNameQueryTypeDef](./type_defs.md#propertynamequerytypedef)
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -12162,6 +13642,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="targetplatformtypedef"></a>
 
 ## TargetPlatformTypeDef
 
@@ -12179,6 +13661,8 @@ Optional fields:
 - `Accelerator`:
   [TargetPlatformAcceleratorType](./literals.md#targetplatformacceleratortype)
 
+<a id="tensorboardappsettingstypedef"></a>
+
 ## TensorBoardAppSettingsTypeDef
 
 ```python
@@ -12189,6 +13673,8 @@ Optional fields:
 
 - `DefaultResourceSpec`:
   [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
+
+<a id="tensorboardoutputconfigtypedef"></a>
 
 ## TensorBoardOutputConfigTypeDef
 
@@ -12204,6 +13690,8 @@ Optional fields:
 
 - `LocalPath`: `str`
 
+<a id="trafficpatterntypedef"></a>
+
 ## TrafficPatternTypeDef
 
 ```python
@@ -12215,6 +13703,8 @@ Optional fields:
 - `TrafficType`: `Literal['PHASES']` (see
   [TrafficTypeType](./literals.md#traffictypetype))
 - `Phases`: `Sequence`\[[PhaseTypeDef](./type_defs.md#phasetypedef)\]
+
+<a id="trafficroutingconfigtypedef"></a>
 
 ## TrafficRoutingConfigTypeDef
 
@@ -12232,6 +13722,8 @@ Optional fields:
 
 - `CanarySize`: [CapacitySizeTypeDef](./type_defs.md#capacitysizetypedef)
 - `LinearStepSize`: [CapacitySizeTypeDef](./type_defs.md#capacitysizetypedef)
+
+<a id="trainingjobdefinitiontypedef"></a>
 
 ## TrainingJobDefinitionTypeDef
 
@@ -12256,6 +13748,8 @@ Optional fields:
 
 - `HyperParameters`: `Mapping`\[`str`, `str`\]
 
+<a id="trainingjobstatuscounterstypedef"></a>
+
 ## TrainingJobStatusCountersTypeDef
 
 ```python
@@ -12270,6 +13764,8 @@ Optional fields:
 - `NonRetryableError`: `int`
 - `Stopped`: `int`
 
+<a id="trainingjobstepmetadatatypedef"></a>
+
 ## TrainingJobStepMetadataTypeDef
 
 ```python
@@ -12279,6 +13775,8 @@ from mypy_boto3_sagemaker.type_defs import TrainingJobStepMetadataTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+<a id="trainingjobsummarytypedef"></a>
 
 ## TrainingJobSummaryTypeDef
 
@@ -12298,6 +13796,8 @@ Optional fields:
 
 - `TrainingEndTime`: `datetime`
 - `LastModifiedTime`: `datetime`
+
+<a id="trainingjobtypedef"></a>
 
 ## TrainingJobTypeDef
 
@@ -12359,6 +13859,8 @@ Optional fields:
 - `RetryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="trainingspecificationtypedef"></a>
+
 ## TrainingSpecificationTypeDef
 
 ```python
@@ -12384,6 +13886,8 @@ Optional fields:
 - `SupportedTuningJobObjectiveMetrics`:
   `Sequence`\[[HyperParameterTuningJobObjectiveTypeDef](./type_defs.md#hyperparametertuningjobobjectivetypedef)\]
 
+<a id="transformdatasourcetypedef"></a>
+
 ## TransformDataSourceTypeDef
 
 ```python
@@ -12394,6 +13898,8 @@ Required fields:
 
 - `S3DataSource`:
   [TransformS3DataSourceTypeDef](./type_defs.md#transforms3datasourcetypedef)
+
+<a id="transforminputtypedef"></a>
 
 ## TransformInputTypeDef
 
@@ -12411,6 +13917,8 @@ Optional fields:
 - `ContentType`: `str`
 - `CompressionType`: [CompressionTypeType](./literals.md#compressiontypetype)
 - `SplitType`: [SplitTypeType](./literals.md#splittypetype)
+
+<a id="transformjobdefinitiontypedef"></a>
 
 ## TransformJobDefinitionTypeDef
 
@@ -12434,6 +13942,8 @@ Optional fields:
 - `BatchStrategy`: [BatchStrategyType](./literals.md#batchstrategytype)
 - `Environment`: `Mapping`\[`str`, `str`\]
 
+<a id="transformjobstepmetadatatypedef"></a>
+
 ## TransformJobStepMetadataTypeDef
 
 ```python
@@ -12443,6 +13953,8 @@ from mypy_boto3_sagemaker.type_defs import TransformJobStepMetadataTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+<a id="transformjobsummarytypedef"></a>
 
 ## TransformJobSummaryTypeDef
 
@@ -12463,6 +13975,8 @@ Optional fields:
 - `TransformEndTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
+
+<a id="transformjobtypedef"></a>
 
 ## TransformJobTypeDef
 
@@ -12501,6 +14015,8 @@ Optional fields:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="transformoutputtypedef"></a>
+
 ## TransformOutputTypeDef
 
 ```python
@@ -12516,6 +14032,8 @@ Optional fields:
 - `Accept`: `str`
 - `AssembleWith`: [AssemblyTypeType](./literals.md#assemblytypetype)
 - `KmsKeyId`: `str`
+
+<a id="transformresourcestypedef"></a>
 
 ## TransformResourcesTypeDef
 
@@ -12533,6 +14051,8 @@ Optional fields:
 
 - `VolumeKmsKeyId`: `str`
 
+<a id="transforms3datasourcetypedef"></a>
+
 ## TransformS3DataSourceTypeDef
 
 ```python
@@ -12543,6 +14063,8 @@ Required fields:
 
 - `S3DataType`: [S3DataTypeType](./literals.md#s3datatypetype)
 - `S3Uri`: `str`
+
+<a id="trialcomponentartifacttypedef"></a>
 
 ## TrialComponentArtifactTypeDef
 
@@ -12557,6 +14079,8 @@ Required fields:
 Optional fields:
 
 - `MediaType`: `str`
+
+<a id="trialcomponentmetricsummarytypedef"></a>
 
 ## TrialComponentMetricSummaryTypeDef
 
@@ -12576,6 +14100,8 @@ Optional fields:
 - `Avg`: `float`
 - `StdDev`: `float`
 
+<a id="trialcomponentparametervaluetypedef"></a>
+
 ## TrialComponentParameterValueTypeDef
 
 ```python
@@ -12586,6 +14112,8 @@ Optional fields:
 
 - `StringValue`: `str`
 - `NumberValue`: `float`
+
+<a id="trialcomponentsimplesummarytypedef"></a>
 
 ## TrialComponentSimpleSummaryTypeDef
 
@@ -12602,6 +14130,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 
+<a id="trialcomponentsourcedetailtypedef"></a>
+
 ## TrialComponentSourceDetailTypeDef
 
 ```python
@@ -12614,6 +14144,8 @@ Optional fields:
 - `TrainingJob`: [TrainingJobTypeDef](./type_defs.md#trainingjobtypedef)
 - `ProcessingJob`: [ProcessingJobTypeDef](./type_defs.md#processingjobtypedef)
 - `TransformJob`: [TransformJobTypeDef](./type_defs.md#transformjobtypedef)
+
+<a id="trialcomponentsourcetypedef"></a>
 
 ## TrialComponentSourceTypeDef
 
@@ -12629,6 +14161,8 @@ Optional fields:
 
 - `SourceType`: `str`
 
+<a id="trialcomponentstatustypedef"></a>
+
 ## TrialComponentStatusTypeDef
 
 ```python
@@ -12640,6 +14174,8 @@ Optional fields:
 - `PrimaryStatus`:
   [TrialComponentPrimaryStatusType](./literals.md#trialcomponentprimarystatustype)
 - `Message`: `str`
+
+<a id="trialcomponentsummarytypedef"></a>
 
 ## TrialComponentSummaryTypeDef
 
@@ -12662,6 +14198,8 @@ Optional fields:
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `LastModifiedTime`: `datetime`
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+
+<a id="trialcomponenttypedef"></a>
 
 ## TrialComponentTypeDef
 
@@ -12700,6 +14238,8 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Parents`: `List`\[[ParentTypeDef](./type_defs.md#parenttypedef)\]
 
+<a id="trialsourcetypedef"></a>
+
 ## TrialSourceTypeDef
 
 ```python
@@ -12713,6 +14253,8 @@ Required fields:
 Optional fields:
 
 - `SourceType`: `str`
+
+<a id="trialsummarytypedef"></a>
 
 ## TrialSummaryTypeDef
 
@@ -12728,6 +14270,8 @@ Optional fields:
 - `TrialSource`: [TrialSourceTypeDef](./type_defs.md#trialsourcetypedef)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
+
+<a id="trialtypedef"></a>
 
 ## TrialTypeDef
 
@@ -12752,6 +14296,8 @@ Optional fields:
 - `TrialComponentSummaries`:
   `List`\[[TrialComponentSimpleSummaryTypeDef](./type_defs.md#trialcomponentsimplesummarytypedef)\]
 
+<a id="tuningjobcompletioncriteriatypedef"></a>
+
 ## TuningJobCompletionCriteriaTypeDef
 
 ```python
@@ -12762,6 +14308,8 @@ Required fields:
 
 - `TargetObjectiveMetricValue`: `float`
 
+<a id="tuningjobstepmetadatatypedef"></a>
+
 ## TuningJobStepMetaDataTypeDef
 
 ```python
@@ -12771,6 +14319,8 @@ from mypy_boto3_sagemaker.type_defs import TuningJobStepMetaDataTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+<a id="usdtypedef"></a>
 
 ## USDTypeDef
 
@@ -12784,6 +14334,8 @@ Optional fields:
 - `Cents`: `int`
 - `TenthFractionsOfACent`: `int`
 
+<a id="uiconfigtypedef"></a>
+
 ## UiConfigTypeDef
 
 ```python
@@ -12794,6 +14346,8 @@ Optional fields:
 
 - `UiTemplateS3Uri`: `str`
 - `HumanTaskUiArn`: `str`
+
+<a id="uitemplateinfotypedef"></a>
 
 ## UiTemplateInfoTypeDef
 
@@ -12806,6 +14360,8 @@ Optional fields:
 - `Url`: `str`
 - `ContentSha256`: `str`
 
+<a id="uitemplatetypedef"></a>
+
 ## UiTemplateTypeDef
 
 ```python
@@ -12815,6 +14371,8 @@ from mypy_boto3_sagemaker.type_defs import UiTemplateTypeDef
 Required fields:
 
 - `Content`: `str`
+
+<a id="updateactionrequestrequesttypedef"></a>
 
 ## UpdateActionRequestRequestTypeDef
 
@@ -12833,6 +14391,8 @@ Optional fields:
 - `Properties`: `Mapping`\[`str`, `str`\]
 - `PropertiesToRemove`: `Sequence`\[`str`\]
 
+<a id="updateactionresponsetypedef"></a>
+
 ## UpdateActionResponseTypeDef
 
 ```python
@@ -12844,6 +14404,8 @@ Required fields:
 - `ActionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateappimageconfigrequestrequesttypedef"></a>
 
 ## UpdateAppImageConfigRequestRequestTypeDef
 
@@ -12860,6 +14422,8 @@ Optional fields:
 - `KernelGatewayImageConfig`:
   [KernelGatewayImageConfigTypeDef](./type_defs.md#kernelgatewayimageconfigtypedef)
 
+<a id="updateappimageconfigresponsetypedef"></a>
+
 ## UpdateAppImageConfigResponseTypeDef
 
 ```python
@@ -12871,6 +14435,8 @@ Required fields:
 - `AppImageConfigArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateartifactrequestrequesttypedef"></a>
 
 ## UpdateArtifactRequestRequestTypeDef
 
@@ -12888,6 +14454,8 @@ Optional fields:
 - `Properties`: `Mapping`\[`str`, `str`\]
 - `PropertiesToRemove`: `Sequence`\[`str`\]
 
+<a id="updateartifactresponsetypedef"></a>
+
 ## UpdateArtifactResponseTypeDef
 
 ```python
@@ -12899,6 +14467,8 @@ Required fields:
 - `ArtifactArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecoderepositoryinputrequesttypedef"></a>
 
 ## UpdateCodeRepositoryInputRequestTypeDef
 
@@ -12915,6 +14485,8 @@ Optional fields:
 - `GitConfig`:
   [GitConfigForUpdateTypeDef](./type_defs.md#gitconfigforupdatetypedef)
 
+<a id="updatecoderepositoryoutputtypedef"></a>
+
 ## UpdateCodeRepositoryOutputTypeDef
 
 ```python
@@ -12926,6 +14498,8 @@ Required fields:
 - `CodeRepositoryArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecontextrequestrequesttypedef"></a>
 
 ## UpdateContextRequestRequestTypeDef
 
@@ -12943,6 +14517,8 @@ Optional fields:
 - `Properties`: `Mapping`\[`str`, `str`\]
 - `PropertiesToRemove`: `Sequence`\[`str`\]
 
+<a id="updatecontextresponsetypedef"></a>
+
 ## UpdateContextResponseTypeDef
 
 ```python
@@ -12954,6 +14530,8 @@ Required fields:
 - `ContextArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedevicefleetrequestrequesttypedef"></a>
 
 ## UpdateDeviceFleetRequestRequestTypeDef
 
@@ -12973,6 +14551,8 @@ Optional fields:
 - `Description`: `str`
 - `EnableIotRoleAlias`: `bool`
 
+<a id="updatedevicesrequestrequesttypedef"></a>
+
 ## UpdateDevicesRequestRequestTypeDef
 
 ```python
@@ -12983,6 +14563,8 @@ Required fields:
 
 - `DeviceFleetName`: `str`
 - `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+
+<a id="updatedomainrequestrequesttypedef"></a>
 
 ## UpdateDomainRequestRequestTypeDef
 
@@ -13001,6 +14583,8 @@ Optional fields:
 - `DomainSettingsForUpdate`:
   [DomainSettingsForUpdateTypeDef](./type_defs.md#domainsettingsforupdatetypedef)
 
+<a id="updatedomainresponsetypedef"></a>
+
 ## UpdateDomainResponseTypeDef
 
 ```python
@@ -13012,6 +14596,8 @@ Required fields:
 - `DomainArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateendpointinputrequesttypedef"></a>
 
 ## UpdateEndpointInputRequestTypeDef
 
@@ -13033,6 +14619,8 @@ Optional fields:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `RetainDeploymentConfig`: `bool`
 
+<a id="updateendpointoutputtypedef"></a>
+
 ## UpdateEndpointOutputTypeDef
 
 ```python
@@ -13044,6 +14632,8 @@ Required fields:
 - `EndpointArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateendpointweightsandcapacitiesinputrequesttypedef"></a>
 
 ## UpdateEndpointWeightsAndCapacitiesInputRequestTypeDef
 
@@ -13057,6 +14647,8 @@ Required fields:
 - `DesiredWeightsAndCapacities`:
   `Sequence`\[[DesiredWeightAndCapacityTypeDef](./type_defs.md#desiredweightandcapacitytypedef)\]
 
+<a id="updateendpointweightsandcapacitiesoutputtypedef"></a>
+
 ## UpdateEndpointWeightsAndCapacitiesOutputTypeDef
 
 ```python
@@ -13068,6 +14660,8 @@ Required fields:
 - `EndpointArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateexperimentrequestrequesttypedef"></a>
 
 ## UpdateExperimentRequestRequestTypeDef
 
@@ -13084,6 +14678,8 @@ Optional fields:
 - `DisplayName`: `str`
 - `Description`: `str`
 
+<a id="updateexperimentresponsetypedef"></a>
+
 ## UpdateExperimentResponseTypeDef
 
 ```python
@@ -13095,6 +14691,8 @@ Required fields:
 - `ExperimentArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateimagerequestrequesttypedef"></a>
 
 ## UpdateImageRequestRequestTypeDef
 
@@ -13113,6 +14711,8 @@ Optional fields:
 - `DisplayName`: `str`
 - `RoleArn`: `str`
 
+<a id="updateimageresponsetypedef"></a>
+
 ## UpdateImageResponseTypeDef
 
 ```python
@@ -13124,6 +14724,8 @@ Required fields:
 - `ImageArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatemodelpackageinputrequesttypedef"></a>
 
 ## UpdateModelPackageInputRequestTypeDef
 
@@ -13145,6 +14747,8 @@ Optional fields:
 - `AdditionalInferenceSpecificationsToAdd`:
   `Sequence`\[[AdditionalInferenceSpecificationDefinitionTypeDef](./type_defs.md#additionalinferencespecificationdefinitiontypedef)\]
 
+<a id="updatemodelpackageoutputtypedef"></a>
+
 ## UpdateModelPackageOutputTypeDef
 
 ```python
@@ -13156,6 +14760,8 @@ Required fields:
 - `ModelPackageArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatemonitoringschedulerequestrequesttypedef"></a>
 
 ## UpdateMonitoringScheduleRequestRequestTypeDef
 
@@ -13169,6 +14775,8 @@ Required fields:
 - `MonitoringScheduleConfig`:
   [MonitoringScheduleConfigTypeDef](./type_defs.md#monitoringscheduleconfigtypedef)
 
+<a id="updatemonitoringscheduleresponsetypedef"></a>
+
 ## UpdateMonitoringScheduleResponseTypeDef
 
 ```python
@@ -13180,6 +14788,8 @@ Required fields:
 - `MonitoringScheduleArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatenotebookinstanceinputrequesttypedef"></a>
 
 ## UpdateNotebookInstanceInputRequestTypeDef
 
@@ -13207,6 +14817,8 @@ Optional fields:
 - `DisassociateAdditionalCodeRepositories`: `bool`
 - `RootAccess`: [RootAccessType](./literals.md#rootaccesstype)
 
+<a id="updatenotebookinstancelifecycleconfiginputrequesttypedef"></a>
+
 ## UpdateNotebookInstanceLifecycleConfigInputRequestTypeDef
 
 ```python
@@ -13223,6 +14835,8 @@ Optional fields:
   `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 - `OnStart`:
   `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
+
+<a id="updatepipelineexecutionrequestrequesttypedef"></a>
 
 ## UpdatePipelineExecutionRequestRequestTypeDef
 
@@ -13241,6 +14855,8 @@ Optional fields:
 - `ParallelismConfiguration`:
   [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
+<a id="updatepipelineexecutionresponsetypedef"></a>
+
 ## UpdatePipelineExecutionResponseTypeDef
 
 ```python
@@ -13252,6 +14868,8 @@ Required fields:
 - `PipelineExecutionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatepipelinerequestrequesttypedef"></a>
 
 ## UpdatePipelineRequestRequestTypeDef
 
@@ -13274,6 +14892,8 @@ Optional fields:
 - `ParallelismConfiguration`:
   [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
 
+<a id="updatepipelineresponsetypedef"></a>
+
 ## UpdatePipelineResponseTypeDef
 
 ```python
@@ -13285,6 +14905,8 @@ Required fields:
 - `PipelineArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateprojectinputrequesttypedef"></a>
 
 ## UpdateProjectInputRequestTypeDef
 
@@ -13303,6 +14925,8 @@ Optional fields:
   [ServiceCatalogProvisioningUpdateDetailsTypeDef](./type_defs.md#servicecatalogprovisioningupdatedetailstypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="updateprojectoutputtypedef"></a>
+
 ## UpdateProjectOutputTypeDef
 
 ```python
@@ -13314,6 +14938,8 @@ Required fields:
 - `ProjectArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetrainingjobrequestrequesttypedef"></a>
 
 ## UpdateTrainingJobRequestRequestTypeDef
 
@@ -13332,6 +14958,8 @@ Optional fields:
 - `ProfilerRuleConfigurations`:
   `Sequence`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
 
+<a id="updatetrainingjobresponsetypedef"></a>
+
 ## UpdateTrainingJobResponseTypeDef
 
 ```python
@@ -13343,6 +14971,8 @@ Required fields:
 - `TrainingJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetrialcomponentrequestrequesttypedef"></a>
 
 ## UpdateTrialComponentRequestRequestTypeDef
 
@@ -13371,6 +15001,8 @@ Optional fields:
   [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
 - `OutputArtifactsToRemove`: `Sequence`\[`str`\]
 
+<a id="updatetrialcomponentresponsetypedef"></a>
+
 ## UpdateTrialComponentResponseTypeDef
 
 ```python
@@ -13382,6 +15014,8 @@ Required fields:
 - `TrialComponentArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetrialrequestrequesttypedef"></a>
 
 ## UpdateTrialRequestRequestTypeDef
 
@@ -13397,6 +15031,8 @@ Optional fields:
 
 - `DisplayName`: `str`
 
+<a id="updatetrialresponsetypedef"></a>
+
 ## UpdateTrialResponseTypeDef
 
 ```python
@@ -13408,6 +15044,8 @@ Required fields:
 - `TrialArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateuserprofilerequestrequesttypedef"></a>
 
 ## UpdateUserProfileRequestRequestTypeDef
 
@@ -13424,6 +15062,8 @@ Optional fields:
 
 - `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 
+<a id="updateuserprofileresponsetypedef"></a>
+
 ## UpdateUserProfileResponseTypeDef
 
 ```python
@@ -13435,6 +15075,8 @@ Required fields:
 - `UserProfileArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateworkforcerequestrequesttypedef"></a>
 
 ## UpdateWorkforceRequestRequestTypeDef
 
@@ -13452,6 +15094,8 @@ Optional fields:
   [SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef)
 - `OidcConfig`: [OidcConfigTypeDef](./type_defs.md#oidcconfigtypedef)
 
+<a id="updateworkforceresponsetypedef"></a>
+
 ## UpdateWorkforceResponseTypeDef
 
 ```python
@@ -13463,6 +15107,8 @@ Required fields:
 - `Workforce`: [WorkforceTypeDef](./type_defs.md#workforcetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateworkteamrequestrequesttypedef"></a>
 
 ## UpdateWorkteamRequestRequestTypeDef
 
@@ -13482,6 +15128,8 @@ Optional fields:
 - `NotificationConfiguration`:
   [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 
+<a id="updateworkteamresponsetypedef"></a>
+
 ## UpdateWorkteamResponseTypeDef
 
 ```python
@@ -13494,6 +15142,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="usercontexttypedef"></a>
+
 ## UserContextTypeDef
 
 ```python
@@ -13505,6 +15155,8 @@ Optional fields:
 - `UserProfileArn`: `str`
 - `UserProfileName`: `str`
 - `DomainId`: `str`
+
+<a id="userprofiledetailstypedef"></a>
 
 ## UserProfileDetailsTypeDef
 
@@ -13519,6 +15171,8 @@ Optional fields:
 - `Status`: [UserProfileStatusType](./literals.md#userprofilestatustype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
+
+<a id="usersettingstypedef"></a>
 
 ## UserSettingsTypeDef
 
@@ -13542,6 +15196,8 @@ Optional fields:
   [RStudioServerProAppSettingsTypeDef](./type_defs.md#rstudioserverproappsettingstypedef)
 - `RSessionAppSettings`: `Mapping`\[`str`, `Any`\]
 
+<a id="variantpropertytypedef"></a>
+
 ## VariantPropertyTypeDef
 
 ```python
@@ -13552,6 +15208,8 @@ Required fields:
 
 - `VariantPropertyType`:
   [VariantPropertyTypeType](./literals.md#variantpropertytypetype)
+
+<a id="vertextypedef"></a>
 
 ## VertexTypeDef
 
@@ -13565,6 +15223,8 @@ Optional fields:
 - `Type`: `str`
 - `LineageType`: [LineageTypeType](./literals.md#lineagetypetype)
 
+<a id="vpcconfigtypedef"></a>
+
 ## VpcConfigTypeDef
 
 ```python
@@ -13576,6 +15236,8 @@ Required fields:
 - `SecurityGroupIds`: `Sequence`\[`str`\]
 - `Subnets`: `Sequence`\[`str`\]
 
+<a id="waiterconfigtypedef"></a>
+
 ## WaiterConfigTypeDef
 
 ```python
@@ -13586,6 +15248,8 @@ Optional fields:
 
 - `Delay`: `int`
 - `MaxAttempts`: `int`
+
+<a id="workforcetypedef"></a>
 
 ## WorkforceTypeDef
 
@@ -13608,6 +15272,8 @@ Optional fields:
 - `OidcConfig`:
   [OidcConfigForResponseTypeDef](./type_defs.md#oidcconfigforresponsetypedef)
 - `CreateDate`: `datetime`
+
+<a id="workteamtypedef"></a>
 
 ## WorkteamTypeDef
 

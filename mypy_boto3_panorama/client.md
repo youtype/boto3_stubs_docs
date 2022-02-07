@@ -1,3 +1,5 @@
+<a id="panoramaclient-for-boto3-panorama-module"></a>
+
 # PanoramaClient for boto3 Panorama module
 
 > [Index](..) > [Panorama](.) > PanoramaClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Panorama](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama)
 type annotations stubs module
-[mypy_boto3_panorama](https://pypi.org/project/mypy-boto3-panorama/).
+[mypy-boto3-panorama](https://pypi.org/project/mypy-boto3-panorama/).
 
 - [PanoramaClient for boto3 Panorama module](#panoramaclient-for-boto3-panorama-module)
   - [PanoramaClient](#panoramaclient)
@@ -48,6 +50,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_device_metadata](#update_device_metadata)
 
+<a id="panoramaclient"></a>
+
 ## PanoramaClient
 
 Type annotations for `boto3.client("panorama")`
@@ -55,14 +59,17 @@ Type annotations for `boto3.client("panorama")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_panorama.client import PanoramaClient
 
 def get_panorama_client() -> PanoramaClient:
-    return boto3.client("panorama")
+    return Session().client("panorama")
 ```
 
 Boto3 documentation:
 [Panorama.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -86,7 +93,11 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -98,6 +109,8 @@ Boto3 documentation:
 [Panorama.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -113,6 +126,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_application_instance"></a>
 
 ### create_application_instance
 
@@ -143,6 +158,8 @@ Keyword-only arguments:
 Returns
 [CreateApplicationInstanceResponseTypeDef](./type_defs.md#createapplicationinstanceresponsetypedef).
 
+<a id="create_job_for_devices"></a>
+
 ### create_job_for_devices
 
 Creates a job to run on one or more devices.
@@ -165,6 +182,8 @@ Keyword-only arguments:
 
 Returns
 [CreateJobForDevicesResponseTypeDef](./type_defs.md#createjobfordevicesresponsetypedef).
+
+<a id="create_node_from_template_job"></a>
 
 ### create_node_from_template_job
 
@@ -194,6 +213,8 @@ Keyword-only arguments:
 Returns
 [CreateNodeFromTemplateJobResponseTypeDef](./type_defs.md#createnodefromtemplatejobresponsetypedef).
 
+<a id="create_package"></a>
+
 ### create_package
 
 Creates a package and storage location in an Amazon S3 access point.
@@ -213,6 +234,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePackageResponseTypeDef](./type_defs.md#createpackageresponsetypedef).
+
+<a id="create_package_import_job"></a>
 
 ### create_package_import_job
 
@@ -245,6 +268,8 @@ Keyword-only arguments:
 Returns
 [CreatePackageImportJobResponseTypeDef](./type_defs.md#createpackageimportjobresponsetypedef).
 
+<a id="delete_device"></a>
+
 ### delete_device
 
 Deletes a device.
@@ -264,6 +289,8 @@ Keyword-only arguments:
 Returns
 [DeleteDeviceResponseTypeDef](./type_defs.md#deletedeviceresponsetypedef).
 
+<a id="delete_package"></a>
+
 ### delete_package
 
 Deletes a package.
@@ -282,6 +309,8 @@ Keyword-only arguments:
 - `ForceDelete`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="deregister_package_version"></a>
 
 ### deregister_package_version
 
@@ -306,6 +335,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_application_instance"></a>
+
 ### describe_application_instance
 
 Returns information about an application instance on a device.
@@ -325,6 +356,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeApplicationInstanceResponseTypeDef](./type_defs.md#describeapplicationinstanceresponsetypedef).
+
+<a id="describe_application_instance_details"></a>
 
 ### describe_application_instance_details
 
@@ -346,6 +379,8 @@ Keyword-only arguments:
 Returns
 [DescribeApplicationInstanceDetailsResponseTypeDef](./type_defs.md#describeapplicationinstancedetailsresponsetypedef).
 
+<a id="describe_device"></a>
+
 ### describe_device
 
 Returns information about a device.
@@ -365,6 +400,8 @@ Keyword-only arguments:
 Returns
 [DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
 
+<a id="describe_device_job"></a>
+
 ### describe_device_job
 
 Returns information about a device job.
@@ -383,6 +420,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDeviceJobResponseTypeDef](./type_defs.md#describedevicejobresponsetypedef).
+
+<a id="describe_node"></a>
 
 ### describe_node
 
@@ -404,6 +443,8 @@ Keyword-only arguments:
 Returns
 [DescribeNodeResponseTypeDef](./type_defs.md#describenoderesponsetypedef).
 
+<a id="describe_node_from_template_job"></a>
+
 ### describe_node_from_template_job
 
 Returns information about a job to create a camera stream node.
@@ -424,6 +465,8 @@ Keyword-only arguments:
 Returns
 [DescribeNodeFromTemplateJobResponseTypeDef](./type_defs.md#describenodefromtemplatejobresponsetypedef).
 
+<a id="describe_package"></a>
+
 ### describe_package
 
 Returns information about a package.
@@ -442,6 +485,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePackageResponseTypeDef](./type_defs.md#describepackageresponsetypedef).
+
+<a id="describe_package_import_job"></a>
 
 ### describe_package_import_job
 
@@ -462,6 +507,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePackageImportJobResponseTypeDef](./type_defs.md#describepackageimportjobresponsetypedef).
+
+<a id="describe_package_version"></a>
 
 ### describe_package_version
 
@@ -486,6 +533,8 @@ Keyword-only arguments:
 Returns
 [DescribePackageVersionResponseTypeDef](./type_defs.md#describepackageversionresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -503,6 +552,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_application_instance_dependencies"></a>
 
 ### list_application_instance_dependencies
 
@@ -526,6 +577,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationInstanceDependenciesResponseTypeDef](./type_defs.md#listapplicationinstancedependenciesresponsetypedef).
 
+<a id="list_application_instance_node_instances"></a>
+
 ### list_application_instance_node_instances
 
 Returns a list of application node instances.
@@ -547,6 +600,8 @@ Keyword-only arguments:
 
 Returns
 [ListApplicationInstanceNodeInstancesResponseTypeDef](./type_defs.md#listapplicationinstancenodeinstancesresponsetypedef).
+
+<a id="list_application_instances"></a>
 
 ### list_application_instances
 
@@ -571,6 +626,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationInstancesResponseTypeDef](./type_defs.md#listapplicationinstancesresponsetypedef).
 
+<a id="list_devices"></a>
+
 ### list_devices
 
 Returns a list of devices.
@@ -590,6 +647,8 @@ Keyword-only arguments:
 
 Returns
 [ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
+
+<a id="list_devices_jobs"></a>
 
 ### list_devices_jobs
 
@@ -612,6 +671,8 @@ Keyword-only arguments:
 Returns
 [ListDevicesJobsResponseTypeDef](./type_defs.md#listdevicesjobsresponsetypedef).
 
+<a id="list_node_from_template_jobs"></a>
+
 ### list_node_from_template_jobs
 
 Returns a list of camera stream node jobs.
@@ -632,6 +693,8 @@ Keyword-only arguments:
 
 Returns
 [ListNodeFromTemplateJobsResponseTypeDef](./type_defs.md#listnodefromtemplatejobsresponsetypedef).
+
+<a id="list_nodes"></a>
 
 ### list_nodes
 
@@ -657,6 +720,8 @@ Keyword-only arguments:
 
 Returns [ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef).
 
+<a id="list_package_import_jobs"></a>
+
 ### list_package_import_jobs
 
 Returns a list of package import jobs.
@@ -678,6 +743,8 @@ Keyword-only arguments:
 Returns
 [ListPackageImportJobsResponseTypeDef](./type_defs.md#listpackageimportjobsresponsetypedef).
 
+<a id="list_packages"></a>
+
 ### list_packages
 
 Returns a list of packages.
@@ -698,6 +765,8 @@ Keyword-only arguments:
 Returns
 [ListPackagesResponseTypeDef](./type_defs.md#listpackagesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of tags for a resource.
@@ -716,6 +785,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="provision_device"></a>
 
 ### provision_device
 
@@ -740,6 +811,8 @@ Keyword-only arguments:
 Returns
 [ProvisionDeviceResponseTypeDef](./type_defs.md#provisiondeviceresponsetypedef).
 
+<a id="register_package_version"></a>
+
 ### register_package_version
 
 Registers a package version.
@@ -763,6 +836,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="remove_application_instance"></a>
+
 ### remove_application_instance
 
 Removes an application instance.
@@ -781,6 +856,8 @@ Keyword-only arguments:
 - `ApplicationInstanceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -801,6 +878,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a resource.
@@ -819,6 +898,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_device_metadata"></a>
 
 ### update_device_metadata
 

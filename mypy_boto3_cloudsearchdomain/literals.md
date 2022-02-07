@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloudsearchdomain-module"></a>
+
 # Literals for boto3 CloudSearchDomain module
 
 > [Index](..) > [CloudSearchDomain](.) > Literals
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
 type annotations stubs module
-[mypy_boto3_cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
+[mypy-boto3-cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
 
 - [Literals for boto3 CloudSearchDomain module](#literals-for-boto3-cloudsearchdomain-module)
   - [ContentTypeType](#contenttypetype)
   - [QueryParserType](#queryparsertype)
   - [ServiceName](#servicename)
+
+<a id="contenttypetype"></a>
 
 ## ContentTypeType
 
@@ -22,6 +26,8 @@ Values:
 
 - `application/json`
 - `application/xml`
+
+<a id="queryparsertype"></a>
 
 ## QueryParserType
 
@@ -35,6 +41,8 @@ Values:
 - `lucene`
 - `simple`
 - `structured`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

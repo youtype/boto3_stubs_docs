@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iot1clickprojects-module"></a>
+
 # Type annotations for boto3 IoT1ClickProjects module
 
 > [Index](..) > IoT1ClickProjects
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
 type annotations stubs module
-[mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
+[mypy-boto3-iot1click-projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iot1click-projects]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iot1click-projects]'
+
+# standalone installation
 pip install mypy-boto3-iot1click-projects
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-iot1click-projects
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="iot1clickprojectsclient"></a>
+
 ## IoT1ClickProjectsClient
 
 Type annotations for `boto3.client("iot1click-projects")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iot1click_projects.client import IoT1ClickProjectsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -53,6 +67,8 @@ from mypy_boto3_iot1click_projects.client import IoT1ClickProjectsClient
 - [update_placement](./client.md#update_placement)
 - [update_project](./client.md#update_project)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoT1ClickProjectsClient [exceptions](./client.md#exceptions)
@@ -64,6 +80,8 @@ IoT1ClickProjectsClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - TooManyRequestsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -72,11 +90,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_iot1click_projects.paginators import ListPlacementsPaginator, ...
+from mypy_boto3_iot1click_projects.paginator import ListPlacementsPaginator, ...
 ```
 
 - [ListPlacementsPaginator](./paginators.md#listplacementspaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -92,6 +112,8 @@ from mypy_boto3_iot1click_projects.literals import ListPlacementsPaginatorName, 
 - [ListProjectsPaginatorName](./literals.md#listprojectspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

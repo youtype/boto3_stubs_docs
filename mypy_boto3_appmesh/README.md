@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-appmesh-module"></a>
+
 # Type annotations for boto3 AppMesh module
 
 > [Index](..) > AppMesh
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
 type annotations stubs module
-[mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
+[mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[appmesh]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[appmesh]'
+
+# standalone installation
 pip install mypy-boto3-appmesh
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-appmesh
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="appmeshclient"></a>
+
 ## AppMeshClient
 
 Type annotations for `boto3.client("appmesh")` as [AppMeshClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_appmesh.client import AppMeshClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -74,6 +88,8 @@ from mypy_boto3_appmesh.client import AppMeshClient
 - [update_virtual_router](./client.md#update_virtual_router)
 - [update_virtual_service](./client.md#update_virtual_service)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AppMeshClient [exceptions](./client.md#exceptions)
@@ -90,6 +106,8 @@ AppMeshClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - TooManyTagsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -98,7 +116,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_appmesh.paginators import ListGatewayRoutesPaginator, ...
+from mypy_boto3_appmesh.paginator import ListGatewayRoutesPaginator, ...
 ```
 
 - [ListGatewayRoutesPaginator](./paginators.md#listgatewayroutespaginator)
@@ -109,6 +127,8 @@ from mypy_boto3_appmesh.paginators import ListGatewayRoutesPaginator, ...
 - [ListVirtualNodesPaginator](./paginators.md#listvirtualnodespaginator)
 - [ListVirtualRoutersPaginator](./paginators.md#listvirtualrouterspaginator)
 - [ListVirtualServicesPaginator](./paginators.md#listvirtualservicespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -149,6 +169,8 @@ from mypy_boto3_appmesh.literals import DefaultGatewayRouteRewriteType, ...
 - [VirtualServiceStatusCodeType](./literals.md#virtualservicestatuscodetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

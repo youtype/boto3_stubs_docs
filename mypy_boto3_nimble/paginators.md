@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-nimblestudio-module"></a>
+
 # Paginators for boto3 NimbleStudio module
 
 > [Index](..) > [NimbleStudio](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
 type annotations stubs module
-[mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
+[mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 - [Paginators for boto3 NimbleStudio module](#paginators-for-boto3-nimblestudio-module)
   - [ListEulaAcceptancesPaginator](#listeulaacceptancespaginator)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [ListStudioMembersPaginator](#liststudiomemberspaginator)
   - [ListStudiosPaginator](#liststudiospaginator)
 
+<a id="listeulaacceptancespaginator"></a>
+
 ## ListEulaAcceptancesPaginator
 
 Type annotations for
@@ -26,10 +30,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_nimble.paginator import ListEulaAcceptancesPaginator
 
 def get_list_eula_acceptances_paginator() -> ListEulaAcceptancesPaginator:
-    return boto3.client("nimble").get_paginator("list_eula_acceptances")
+    return Session().client("nimble").get_paginator("list_eula_acceptances")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `ListEulaAcceptancesPaginator.paginate` method:
 `ListEulaAcceptancesPaginator.paginate` returns
 `_PageIterator`\[[ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef)\].
 
+<a id="listeulaspaginator"></a>
+
 ## ListEulasPaginator
 
 Type annotations for `boto3.client("nimble").get_paginator("list_eulas")`.
@@ -52,10 +60,12 @@ Type annotations for `boto3.client("nimble").get_paginator("list_eulas")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_nimble.paginator import ListEulasPaginator
 
 def get_list_eulas_paginator() -> ListEulasPaginator:
-    return boto3.client("nimble").get_paginator("list_eulas")
+    return Session().client("nimble").get_paginator("list_eulas")
 ```
 
 Boto3 documentation:
@@ -70,6 +80,8 @@ Arguments for `ListEulasPaginator.paginate` method:
 `ListEulasPaginator.paginate` returns
 `_PageIterator`\[[ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef)\].
 
+<a id="listlaunchprofilememberspaginator"></a>
+
 ## ListLaunchProfileMembersPaginator
 
 Type annotations for
@@ -78,10 +90,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_nimble.paginator import ListLaunchProfileMembersPaginator
 
 def get_list_launch_profile_members_paginator() -> ListLaunchProfileMembersPaginator:
-    return boto3.client("nimble").get_paginator("list_launch_profile_members")
+    return Session().client("nimble").get_paginator("list_launch_profile_members")
 ```
 
 Boto3 documentation:
@@ -97,6 +111,8 @@ Arguments for `ListLaunchProfileMembersPaginator.paginate` method:
 `ListLaunchProfileMembersPaginator.paginate` returns
 `_PageIterator`\[[ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef)\].
 
+<a id="listlaunchprofilespaginator"></a>
+
 ## ListLaunchProfilesPaginator
 
 Type annotations for
@@ -105,10 +121,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_nimble.paginator import ListLaunchProfilesPaginator
 
 def get_list_launch_profiles_paginator() -> ListLaunchProfilesPaginator:
-    return boto3.client("nimble").get_paginator("list_launch_profiles")
+    return Session().client("nimble").get_paginator("list_launch_profiles")
 ```
 
 Boto3 documentation:
@@ -126,6 +144,8 @@ Arguments for `ListLaunchProfilesPaginator.paginate` method:
 `ListLaunchProfilesPaginator.paginate` returns
 `_PageIterator`\[[ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef)\].
 
+<a id="liststreamingimagespaginator"></a>
+
 ## ListStreamingImagesPaginator
 
 Type annotations for
@@ -134,10 +154,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_nimble.paginator import ListStreamingImagesPaginator
 
 def get_list_streaming_images_paginator() -> ListStreamingImagesPaginator:
-    return boto3.client("nimble").get_paginator("list_streaming_images")
+    return Session().client("nimble").get_paginator("list_streaming_images")
 ```
 
 Boto3 documentation:
@@ -153,6 +175,8 @@ Arguments for `ListStreamingImagesPaginator.paginate` method:
 `ListStreamingImagesPaginator.paginate` returns
 `_PageIterator`\[[ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef)\].
 
+<a id="liststreamingsessionspaginator"></a>
+
 ## ListStreamingSessionsPaginator
 
 Type annotations for
@@ -161,10 +185,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_nimble.paginator import ListStreamingSessionsPaginator
 
 def get_list_streaming_sessions_paginator() -> ListStreamingSessionsPaginator:
-    return boto3.client("nimble").get_paginator("list_streaming_sessions")
+    return Session().client("nimble").get_paginator("list_streaming_sessions")
 ```
 
 Boto3 documentation:
@@ -182,6 +208,8 @@ Arguments for `ListStreamingSessionsPaginator.paginate` method:
 `ListStreamingSessionsPaginator.paginate` returns
 `_PageIterator`\[[ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef)\].
 
+<a id="liststudiocomponentspaginator"></a>
+
 ## ListStudioComponentsPaginator
 
 Type annotations for
@@ -190,10 +218,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_nimble.paginator import ListStudioComponentsPaginator
 
 def get_list_studio_components_paginator() -> ListStudioComponentsPaginator:
-    return boto3.client("nimble").get_paginator("list_studio_components")
+    return Session().client("nimble").get_paginator("list_studio_components")
 ```
 
 Boto3 documentation:
@@ -212,6 +242,8 @@ Arguments for `ListStudioComponentsPaginator.paginate` method:
 `ListStudioComponentsPaginator.paginate` returns
 `_PageIterator`\[[ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef)\].
 
+<a id="liststudiomemberspaginator"></a>
+
 ## ListStudioMembersPaginator
 
 Type annotations for
@@ -220,10 +252,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_nimble.paginator import ListStudioMembersPaginator
 
 def get_list_studio_members_paginator() -> ListStudioMembersPaginator:
-    return boto3.client("nimble").get_paginator("list_studio_members")
+    return Session().client("nimble").get_paginator("list_studio_members")
 ```
 
 Boto3 documentation:
@@ -238,6 +272,8 @@ Arguments for `ListStudioMembersPaginator.paginate` method:
 `ListStudioMembersPaginator.paginate` returns
 `_PageIterator`\[[ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef)\].
 
+<a id="liststudiospaginator"></a>
+
 ## ListStudiosPaginator
 
 Type annotations for `boto3.client("nimble").get_paginator("list_studios")`.
@@ -245,10 +281,12 @@ Type annotations for `boto3.client("nimble").get_paginator("list_studios")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_nimble.paginator import ListStudiosPaginator
 
 def get_list_studios_paginator() -> ListStudiosPaginator:
-    return boto3.client("nimble").get_paginator("list_studios")
+    return Session().client("nimble").get_paginator("list_studios")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cognitoidentityprovider-module"></a>
+
 # Type annotations for boto3 CognitoIdentityProvider module
 
 > [Index](..) > CognitoIdentityProvider
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
 type annotations stubs module
-[mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
+[mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[cognito-idp]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[cognito-idp]'
+
+# standalone installation
 pip install mypy-boto3-cognito-idp
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-cognito-idp
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="cognitoidentityproviderclient"></a>
+
 ## CognitoIdentityProviderClient
 
 Type annotations for `boto3.client("cognito-idp")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_cognito_idp.client import CognitoIdentityProviderClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -138,6 +152,8 @@ from mypy_boto3_cognito_idp.client import CognitoIdentityProviderClient
 - [verify_software_token](./client.md#verify_software_token)
 - [verify_user_attribute](./client.md#verify_user_attribute)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CognitoIdentityProviderClient [exceptions](./client.md#exceptions)
@@ -184,6 +200,8 @@ CognitoIdentityProviderClient [exceptions](./client.md#exceptions)
 - UserPoolTaggingException
 - UsernameExistsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -192,7 +210,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_cognito_idp.paginators import AdminListGroupsForUserPaginator, ...
+from mypy_boto3_cognito_idp.paginator import AdminListGroupsForUserPaginator, ...
 ```
 
 - [AdminListGroupsForUserPaginator](./paginators.md#adminlistgroupsforuserpaginator)
@@ -204,6 +222,8 @@ from mypy_boto3_cognito_idp.paginators import AdminListGroupsForUserPaginator, .
 - [ListUserPoolsPaginator](./paginators.md#listuserpoolspaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
 - [ListUsersInGroupPaginator](./paginators.md#listusersingrouppaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -262,6 +282,8 @@ from mypy_boto3_cognito_idp.literals import AccountTakeoverEventActionTypeType, 
 - [VerifySoftwareTokenResponseTypeType](./literals.md#verifysoftwaretokenresponsetypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

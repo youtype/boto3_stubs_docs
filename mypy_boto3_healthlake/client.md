@@ -1,3 +1,5 @@
+<a id="healthlakeclient-for-boto3-healthlake-module"></a>
+
 # HealthLakeClient for boto3 HealthLake module
 
 > [Index](..) > [HealthLake](.) > HealthLakeClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
 type annotations stubs module
-[mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
+[mypy-boto3-healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 - [HealthLakeClient for boto3 HealthLake module](#healthlakeclient-for-boto3-healthlake-module)
   - [HealthLakeClient](#healthlakeclient)
@@ -28,6 +30,8 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
 
+<a id="healthlakeclient"></a>
+
 ## HealthLakeClient
 
 Type annotations for `boto3.client("healthlake")`
@@ -35,14 +39,17 @@ Type annotations for `boto3.client("healthlake")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_healthlake.client import HealthLakeClient
 
 def get_healthlake_client() -> HealthLakeClient:
-    return boto3.client("healthlake")
+    return Session().client("healthlake")
 ```
 
 Boto3 documentation:
 [HealthLake.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -66,7 +73,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -78,6 +89,8 @@ Boto3 documentation:
 [HealthLake.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -93,6 +106,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_fhir_datastore"></a>
 
 ### create_fhir_datastore
 
@@ -121,6 +136,8 @@ Keyword-only arguments:
 Returns
 [CreateFHIRDatastoreResponseTypeDef](./type_defs.md#createfhirdatastoreresponsetypedef).
 
+<a id="delete_fhir_datastore"></a>
+
 ### delete_fhir_datastore
 
 Deletes a Data Store.
@@ -139,6 +156,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteFHIRDatastoreResponseTypeDef](./type_defs.md#deletefhirdatastoreresponsetypedef).
+
+<a id="describe_fhir_datastore"></a>
 
 ### describe_fhir_datastore
 
@@ -162,6 +181,8 @@ Keyword-only arguments:
 Returns
 [DescribeFHIRDatastoreResponseTypeDef](./type_defs.md#describefhirdatastoreresponsetypedef).
 
+<a id="describe_fhir_export_job"></a>
+
 ### describe_fhir_export_job
 
 Displays the properties of a FHIR export job, including the ID, ARN, name, and
@@ -183,6 +204,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFHIRExportJobResponseTypeDef](./type_defs.md#describefhirexportjobresponsetypedef).
+
+<a id="describe_fhir_import_job"></a>
 
 ### describe_fhir_import_job
 
@@ -206,6 +229,8 @@ Keyword-only arguments:
 Returns
 [DescribeFHIRImportJobResponseTypeDef](./type_defs.md#describefhirimportjobresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -224,6 +249,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_fhir_datastores"></a>
 
 ### list_fhir_datastores
 
@@ -246,6 +273,8 @@ Keyword-only arguments:
 
 Returns
 [ListFHIRDatastoresResponseTypeDef](./type_defs.md#listfhirdatastoresresponsetypedef).
+
+<a id="list_fhir_export_jobs"></a>
 
 ### list_fhir_export_jobs
 
@@ -272,6 +301,8 @@ Keyword-only arguments:
 Returns
 [ListFHIRExportJobsResponseTypeDef](./type_defs.md#listfhirexportjobsresponsetypedef).
 
+<a id="list_fhir_import_jobs"></a>
+
 ### list_fhir_import_jobs
 
 Lists all FHIR import jobs associated with an account and their statuses.
@@ -297,6 +328,8 @@ Keyword-only arguments:
 Returns
 [ListFHIRImportJobsResponseTypeDef](./type_defs.md#listfhirimportjobsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of all existing tags associated with a Data Store.
@@ -316,6 +349,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="start_fhir_export_job"></a>
 
 ### start_fhir_export_job
 
@@ -341,6 +376,8 @@ Keyword-only arguments:
 
 Returns
 [StartFHIRExportJobResponseTypeDef](./type_defs.md#startfhirexportjobresponsetypedef).
+
+<a id="start_fhir_import_job"></a>
 
 ### start_fhir_import_job
 
@@ -369,6 +406,8 @@ Keyword-only arguments:
 Returns
 [StartFHIRImportJobResponseTypeDef](./type_defs.md#startfhirimportjobresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds a user specifed key and value tag to a Data Store.
@@ -387,6 +426,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 

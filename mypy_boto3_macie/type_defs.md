@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-macie-module"></a>
+
 # Typed dictionaries for boto3 Macie module
 
 > [Index](..) > [Macie](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
 type annotations stubs module
-[mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
+[mypy-boto3-macie](https://pypi.org/project/mypy-boto3-macie/).
 
 - [Typed dictionaries for boto3 Macie module](#typed-dictionaries-for-boto3-macie-module)
   - [AssociateMemberAccountRequestRequestTypeDef](#associatememberaccountrequestrequesttypedef)
@@ -30,6 +32,8 @@ type annotations stubs module
   - [UpdateS3ResourcesRequestRequestTypeDef](#updates3resourcesrequestrequesttypedef)
   - [UpdateS3ResourcesResultTypeDef](#updates3resourcesresulttypedef)
 
+<a id="associatememberaccountrequestrequesttypedef"></a>
+
 ## AssociateMemberAccountRequestRequestTypeDef
 
 ```python
@@ -39,6 +43,8 @@ from mypy_boto3_macie.type_defs import AssociateMemberAccountRequestRequestTypeD
 Required fields:
 
 - `memberAccountId`: `str`
+
+<a id="associates3resourcesrequestrequesttypedef"></a>
 
 ## AssociateS3ResourcesRequestRequestTypeDef
 
@@ -55,6 +61,8 @@ Optional fields:
 
 - `memberAccountId`: `str`
 
+<a id="associates3resourcesresulttypedef"></a>
+
 ## AssociateS3ResourcesResultTypeDef
 
 ```python
@@ -67,6 +75,8 @@ Required fields:
   `List`\[[FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="classificationtypetypedef"></a>
 
 ## ClassificationTypeTypeDef
 
@@ -81,6 +91,8 @@ Required fields:
 - `continuous`: `Literal['FULL']` (see
   [S3ContinuousClassificationTypeType](./literals.md#s3continuousclassificationtypetype))
 
+<a id="classificationtypeupdatetypedef"></a>
+
 ## ClassificationTypeUpdateTypeDef
 
 ```python
@@ -94,6 +106,8 @@ Optional fields:
 - `continuous`: `Literal['FULL']` (see
   [S3ContinuousClassificationTypeType](./literals.md#s3continuousclassificationtypetype))
 
+<a id="disassociatememberaccountrequestrequesttypedef"></a>
+
 ## DisassociateMemberAccountRequestRequestTypeDef
 
 ```python
@@ -103,6 +117,8 @@ from mypy_boto3_macie.type_defs import DisassociateMemberAccountRequestRequestTy
 Required fields:
 
 - `memberAccountId`: `str`
+
+<a id="disassociates3resourcesrequestrequesttypedef"></a>
 
 ## DisassociateS3ResourcesRequestRequestTypeDef
 
@@ -119,6 +135,8 @@ Optional fields:
 
 - `memberAccountId`: `str`
 
+<a id="disassociates3resourcesresulttypedef"></a>
+
 ## DisassociateS3ResourcesResultTypeDef
 
 ```python
@@ -132,6 +150,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="faileds3resourcetypedef"></a>
+
 ## FailedS3ResourceTypeDef
 
 ```python
@@ -144,6 +164,8 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
+<a id="listmemberaccountsrequestrequesttypedef"></a>
+
 ## ListMemberAccountsRequestRequestTypeDef
 
 ```python
@@ -154,6 +176,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listmemberaccountsresulttypedef"></a>
 
 ## ListMemberAccountsResultTypeDef
 
@@ -169,6 +193,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="lists3resourcesrequestrequesttypedef"></a>
+
 ## ListS3ResourcesRequestRequestTypeDef
 
 ```python
@@ -180,6 +206,8 @@ Optional fields:
 - `memberAccountId`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="lists3resourcesresulttypedef"></a>
 
 ## ListS3ResourcesResultTypeDef
 
@@ -195,6 +223,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="memberaccounttypedef"></a>
+
 ## MemberAccountTypeDef
 
 ```python
@@ -204,6 +234,8 @@ from mypy_boto3_macie.type_defs import MemberAccountTypeDef
 Optional fields:
 
 - `accountId`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -216,6 +248,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -230,6 +264,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3resourceclassificationtypedef"></a>
 
 ## S3ResourceClassificationTypeDef
 
@@ -247,6 +283,8 @@ Optional fields:
 
 - `prefix`: `str`
 
+<a id="s3resourceclassificationupdatetypedef"></a>
+
 ## S3ResourceClassificationUpdateTypeDef
 
 ```python
@@ -263,6 +301,8 @@ Optional fields:
 
 - `prefix`: `str`
 
+<a id="s3resourcetypedef"></a>
+
 ## S3ResourceTypeDef
 
 ```python
@@ -276,6 +316,8 @@ Required fields:
 Optional fields:
 
 - `prefix`: `str`
+
+<a id="updates3resourcesrequestrequesttypedef"></a>
 
 ## UpdateS3ResourcesRequestRequestTypeDef
 
@@ -291,6 +333,8 @@ Required fields:
 Optional fields:
 
 - `memberAccountId`: `str`
+
+<a id="updates3resourcesresulttypedef"></a>
 
 ## UpdateS3ResourcesResultTypeDef
 

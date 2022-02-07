@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-applicationinsights-module"></a>
+
 # Type annotations for boto3 ApplicationInsights module
 
 > [Index](..) > ApplicationInsights
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
 type annotations stubs module
-[mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
+[mypy-boto3-application-insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[application-insights]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[application-insights]'
+
+# standalone installation
 pip install mypy-boto3-application-insights
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-application-insights
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="applicationinsightsclient"></a>
 
 ## ApplicationInsightsClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_application_insights.client import ApplicationInsightsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -62,6 +76,8 @@ from mypy_boto3_application_insights.client import ApplicationInsightsClient
 - [update_component_configuration](./client.md#update_component_configuration)
 - [update_log_pattern](./client.md#update_log_pattern)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ApplicationInsightsClient [exceptions](./client.md#exceptions)
@@ -75,6 +91,8 @@ ApplicationInsightsClient [exceptions](./client.md#exceptions)
 - TagsAlreadyExistException
 - TooManyTagsException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -98,6 +116,8 @@ from mypy_boto3_application_insights.literals import CloudWatchEventSourceType, 
 - [StatusType](./literals.md#statustype)
 - [TierType](./literals.md#tiertype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

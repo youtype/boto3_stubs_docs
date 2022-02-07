@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloudfront-module"></a>
+
 # Literals for boto3 CloudFront module
 
 > [Index](..) > [CloudFront](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
 type annotations stubs module
-[mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
+[mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 - [Literals for boto3 CloudFront module](#literals-for-boto3-cloudfront-module)
   - [CachePolicyCookieBehaviorType](#cachepolicycookiebehaviortype)
@@ -48,6 +50,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="cachepolicycookiebehaviortype"></a>
+
 ## CachePolicyCookieBehaviorType
 
 ```python
@@ -61,6 +65,8 @@ Values:
 - `none`
 - `whitelist`
 
+<a id="cachepolicyheaderbehaviortype"></a>
+
 ## CachePolicyHeaderBehaviorType
 
 ```python
@@ -71,6 +77,8 @@ Values:
 
 - `none`
 - `whitelist`
+
+<a id="cachepolicyquerystringbehaviortype"></a>
 
 ## CachePolicyQueryStringBehaviorType
 
@@ -85,6 +93,8 @@ Values:
 - `none`
 - `whitelist`
 
+<a id="cachepolicytypetype"></a>
+
 ## CachePolicyTypeType
 
 ```python
@@ -95,6 +105,8 @@ Values:
 
 - `custom`
 - `managed`
+
+<a id="certificatesourcetype"></a>
 
 ## CertificateSourceType
 
@@ -108,6 +120,8 @@ Values:
 - `cloudfront`
 - `iam`
 
+<a id="distributiondeployedwaitername"></a>
+
 ## DistributionDeployedWaiterName
 
 ```python
@@ -117,6 +131,8 @@ from mypy_boto3_cloudfront.literals import DistributionDeployedWaiterName
 Values:
 
 - `distribution_deployed`
+
+<a id="eventtypetype"></a>
 
 ## EventTypeType
 
@@ -131,6 +147,8 @@ Values:
 - `viewer-request`
 - `viewer-response`
 
+<a id="formattype"></a>
+
 ## FormatType
 
 ```python
@@ -140,6 +158,8 @@ from mypy_boto3_cloudfront.literals import FormatType
 Values:
 
 - `URLEncoded`
+
+<a id="frameoptionslisttype"></a>
 
 ## FrameOptionsListType
 
@@ -152,6 +172,8 @@ Values:
 - `DENY`
 - `SAMEORIGIN`
 
+<a id="functionruntimetype"></a>
+
 ## FunctionRuntimeType
 
 ```python
@@ -161,6 +183,8 @@ from mypy_boto3_cloudfront.literals import FunctionRuntimeType
 Values:
 
 - `cloudfront-js-1.0`
+
+<a id="functionstagetype"></a>
 
 ## FunctionStageType
 
@@ -172,6 +196,8 @@ Values:
 
 - `DEVELOPMENT`
 - `LIVE`
+
+<a id="georestrictiontypetype"></a>
 
 ## GeoRestrictionTypeType
 
@@ -185,6 +211,8 @@ Values:
 - `none`
 - `whitelist`
 
+<a id="httpversiontype"></a>
+
 ## HttpVersionType
 
 ```python
@@ -195,6 +223,8 @@ Values:
 
 - `http1.1`
 - `http2`
+
+<a id="icprecordalstatustype"></a>
 
 ## ICPRecordalStatusType
 
@@ -208,6 +238,8 @@ Values:
 - `PENDING`
 - `SUSPENDED`
 
+<a id="invalidationcompletedwaitername"></a>
+
 ## InvalidationCompletedWaiterName
 
 ```python
@@ -217,6 +249,8 @@ from mypy_boto3_cloudfront.literals import InvalidationCompletedWaiterName
 Values:
 
 - `invalidation_completed`
+
+<a id="itemselectiontype"></a>
 
 ## ItemSelectionType
 
@@ -230,6 +264,8 @@ Values:
 - `none`
 - `whitelist`
 
+<a id="listcloudfrontoriginaccessidentitiespaginatorname"></a>
+
 ## ListCloudFrontOriginAccessIdentitiesPaginatorName
 
 ```python
@@ -239,6 +275,8 @@ from mypy_boto3_cloudfront.literals import ListCloudFrontOriginAccessIdentitiesP
 Values:
 
 - `list_cloud_front_origin_access_identities`
+
+<a id="listdistributionspaginatorname"></a>
 
 ## ListDistributionsPaginatorName
 
@@ -250,6 +288,8 @@ Values:
 
 - `list_distributions`
 
+<a id="listinvalidationspaginatorname"></a>
+
 ## ListInvalidationsPaginatorName
 
 ```python
@@ -260,6 +300,8 @@ Values:
 
 - `list_invalidations`
 
+<a id="liststreamingdistributionspaginatorname"></a>
+
 ## ListStreamingDistributionsPaginatorName
 
 ```python
@@ -269,6 +311,8 @@ from mypy_boto3_cloudfront.literals import ListStreamingDistributionsPaginatorNa
 Values:
 
 - `list_streaming_distributions`
+
+<a id="methodtype"></a>
 
 ## MethodType
 
@@ -286,6 +330,8 @@ Values:
 - `POST`
 - `PUT`
 
+<a id="minimumprotocolversiontype"></a>
+
 ## MinimumProtocolVersionType
 
 ```python
@@ -302,6 +348,8 @@ Values:
 - `TLSv1.2_2021`
 - `TLSv1_2016`
 
+<a id="originprotocolpolicytype"></a>
+
 ## OriginProtocolPolicyType
 
 ```python
@@ -314,6 +362,8 @@ Values:
 - `https-only`
 - `match-viewer`
 
+<a id="originrequestpolicycookiebehaviortype"></a>
+
 ## OriginRequestPolicyCookieBehaviorType
 
 ```python
@@ -325,6 +375,8 @@ Values:
 - `all`
 - `none`
 - `whitelist`
+
+<a id="originrequestpolicyheaderbehaviortype"></a>
 
 ## OriginRequestPolicyHeaderBehaviorType
 
@@ -339,6 +391,8 @@ Values:
 - `none`
 - `whitelist`
 
+<a id="originrequestpolicyquerystringbehaviortype"></a>
+
 ## OriginRequestPolicyQueryStringBehaviorType
 
 ```python
@@ -351,6 +405,8 @@ Values:
 - `none`
 - `whitelist`
 
+<a id="originrequestpolicytypetype"></a>
+
 ## OriginRequestPolicyTypeType
 
 ```python
@@ -361,6 +417,8 @@ Values:
 
 - `custom`
 - `managed`
+
+<a id="priceclasstype"></a>
 
 ## PriceClassType
 
@@ -374,6 +432,8 @@ Values:
 - `PriceClass_200`
 - `PriceClass_All`
 
+<a id="realtimemetricssubscriptionstatustype"></a>
+
 ## RealtimeMetricsSubscriptionStatusType
 
 ```python
@@ -384,6 +444,8 @@ Values:
 
 - `Disabled`
 - `Enabled`
+
+<a id="referrerpolicylisttype"></a>
 
 ## ReferrerPolicyListType
 
@@ -402,6 +464,8 @@ Values:
 - `strict-origin-when-cross-origin`
 - `unsafe-url`
 
+<a id="responseheaderspolicyaccesscontrolallowmethodsvaluestype"></a>
+
 ## ResponseHeadersPolicyAccessControlAllowMethodsValuesType
 
 ```python
@@ -419,6 +483,8 @@ Values:
 - `POST`
 - `PUT`
 
+<a id="responseheaderspolicytypetype"></a>
+
 ## ResponseHeadersPolicyTypeType
 
 ```python
@@ -429,6 +495,8 @@ Values:
 
 - `custom`
 - `managed`
+
+<a id="sslsupportmethodtype"></a>
 
 ## SSLSupportMethodType
 
@@ -441,6 +509,8 @@ Values:
 - `sni-only`
 - `static-ip`
 - `vip`
+
+<a id="sslprotocoltype"></a>
 
 ## SslProtocolType
 
@@ -455,6 +525,8 @@ Values:
 - `TLSv1.1`
 - `TLSv1.2`
 
+<a id="streamingdistributiondeployedwaitername"></a>
+
 ## StreamingDistributionDeployedWaiterName
 
 ```python
@@ -464,6 +536,8 @@ from mypy_boto3_cloudfront.literals import StreamingDistributionDeployedWaiterNa
 Values:
 
 - `streaming_distribution_deployed`
+
+<a id="viewerprotocolpolicytype"></a>
 
 ## ViewerProtocolPolicyType
 
@@ -476,6 +550,8 @@ Values:
 - `allow-all`
 - `https-only`
 - `redirect-to-https`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -785,6 +861,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -797,6 +875,8 @@ Values:
 - `list_distributions`
 - `list_invalidations`
 - `list_streaming_distributions`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

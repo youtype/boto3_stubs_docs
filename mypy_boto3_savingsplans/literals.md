@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-savingsplans-module"></a>
+
 # Literals for boto3 SavingsPlans module
 
 > [Index](..) > [SavingsPlans](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
 type annotations stubs module
-[mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
+[mypy-boto3-savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 - [Literals for boto3 SavingsPlans module](#literals-for-boto3-savingsplans-module)
   - [CurrencyCodeType](#currencycodetype)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [SavingsPlansFilterNameType](#savingsplansfilternametype)
   - [ServiceName](#servicename)
 
+<a id="currencycodetype"></a>
+
 ## CurrencyCodeType
 
 ```python
@@ -33,6 +37,8 @@ Values:
 
 - `CNY`
 - `USD`
+
+<a id="savingsplanofferingfilterattributetype"></a>
 
 ## SavingsPlanOfferingFilterAttributeType
 
@@ -45,6 +51,8 @@ Values:
 - `instanceFamily`
 - `region`
 
+<a id="savingsplanofferingpropertykeytype"></a>
+
 ## SavingsPlanOfferingPropertyKeyType
 
 ```python
@@ -55,6 +63,8 @@ Values:
 
 - `instanceFamily`
 - `region`
+
+<a id="savingsplanpaymentoptiontype"></a>
 
 ## SavingsPlanPaymentOptionType
 
@@ -68,6 +78,8 @@ Values:
 - `No Upfront`
 - `Partial Upfront`
 
+<a id="savingsplanproducttypetype"></a>
+
 ## SavingsPlanProductTypeType
 
 ```python
@@ -80,6 +92,8 @@ Values:
 - `Fargate`
 - `Lambda`
 - `SageMaker`
+
+<a id="savingsplanratefilterattributetype"></a>
 
 ## SavingsPlanRateFilterAttributeType
 
@@ -95,6 +109,8 @@ Values:
 - `productId`
 - `region`
 - `tenancy`
+
+<a id="savingsplanratefilternametype"></a>
 
 ## SavingsPlanRateFilterNameType
 
@@ -113,6 +129,8 @@ Values:
 - `tenancy`
 - `usageType`
 
+<a id="savingsplanratepropertykeytype"></a>
+
 ## SavingsPlanRatePropertyKeyType
 
 ```python
@@ -126,6 +144,8 @@ Values:
 - `productDescription`
 - `region`
 - `tenancy`
+
+<a id="savingsplanrateservicecodetype"></a>
 
 ## SavingsPlanRateServiceCodeType
 
@@ -141,6 +161,8 @@ Values:
 - `AmazonSageMaker`
 - `AWSLambda`
 
+<a id="savingsplanrateunittype"></a>
+
 ## SavingsPlanRateUnitType
 
 ```python
@@ -152,6 +174,8 @@ Values:
 - `Hrs`
 - `Lambda-GB-Second`
 - `Request`
+
+<a id="savingsplanstatetype"></a>
 
 ## SavingsPlanStateType
 
@@ -168,6 +192,8 @@ Values:
 - `queued-deleted`
 - `retired`
 
+<a id="savingsplantypetype"></a>
+
 ## SavingsPlanTypeType
 
 ```python
@@ -179,6 +205,8 @@ Values:
 - `Compute`
 - `EC2Instance`
 - `SageMaker`
+
+<a id="savingsplansfilternametype"></a>
 
 ## SavingsPlansFilterNameType
 
@@ -197,6 +225,8 @@ Values:
 - `start`
 - `term`
 - `upfront`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

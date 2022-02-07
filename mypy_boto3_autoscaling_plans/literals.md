@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-autoscalingplans-module"></a>
+
 # Literals for boto3 AutoScalingPlans module
 
 > [Index](..) > [AutoScalingPlans](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
 type annotations stubs module
-[mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
+[mypy-boto3-autoscaling-plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
 - [Literals for boto3 AutoScalingPlans module](#literals-for-boto3-autoscalingplans-module)
   - [DescribeScalingPlanResourcesPaginatorName](#describescalingplanresourcespaginatorname)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="describescalingplanresourcespaginatorname"></a>
+
 ## DescribeScalingPlanResourcesPaginatorName
 
 ```python
@@ -35,6 +39,8 @@ Values:
 
 - `describe_scaling_plan_resources`
 
+<a id="describescalingplanspaginatorname"></a>
+
 ## DescribeScalingPlansPaginatorName
 
 ```python
@@ -44,6 +50,8 @@ from mypy_boto3_autoscaling_plans.literals import DescribeScalingPlansPaginatorN
 Values:
 
 - `describe_scaling_plans`
+
+<a id="forecastdatatypetype"></a>
 
 ## ForecastDataTypeType
 
@@ -58,6 +66,8 @@ Values:
 - `ScheduledActionMaxCapacity`
 - `ScheduledActionMinCapacity`
 
+<a id="loadmetrictypetype"></a>
+
 ## LoadMetricTypeType
 
 ```python
@@ -70,6 +80,8 @@ Values:
 - `ASGTotalCPUUtilization`
 - `ASGTotalNetworkIn`
 - `ASGTotalNetworkOut`
+
+<a id="metricstatistictype"></a>
 
 ## MetricStatisticType
 
@@ -85,6 +97,8 @@ Values:
 - `SampleCount`
 - `Sum`
 
+<a id="policytypetype"></a>
+
 ## PolicyTypeType
 
 ```python
@@ -94,6 +108,8 @@ from mypy_boto3_autoscaling_plans.literals import PolicyTypeType
 Values:
 
 - `TargetTrackingScaling`
+
+<a id="predictivescalingmaxcapacitybehaviortype"></a>
 
 ## PredictiveScalingMaxCapacityBehaviorType
 
@@ -107,6 +123,8 @@ Values:
 - `SetMaxCapacityAboveForecastCapacity`
 - `SetMaxCapacityToForecastCapacity`
 
+<a id="predictivescalingmodetype"></a>
+
 ## PredictiveScalingModeType
 
 ```python
@@ -117,6 +135,8 @@ Values:
 
 - `ForecastAndScale`
 - `ForecastOnly`
+
+<a id="scalabledimensiontype"></a>
 
 ## ScalableDimensionType
 
@@ -134,6 +154,8 @@ Values:
 - `ec2:spot-fleet-request:TargetCapacity`
 - `ecs:service:DesiredCount`
 - `rds:cluster:ReadReplicaCount`
+
+<a id="scalingmetrictypetype"></a>
 
 ## ScalingMetricTypeType
 
@@ -157,6 +179,8 @@ Values:
 - `RDSReaderAverageCPUUtilization`
 - `RDSReaderAverageDatabaseConnections`
 
+<a id="scalingplanstatuscodetype"></a>
+
 ## ScalingPlanStatusCodeType
 
 ```python
@@ -174,6 +198,8 @@ Values:
 - `UpdateFailed`
 - `UpdateInProgress`
 
+<a id="scalingpolicyupdatebehaviortype"></a>
+
 ## ScalingPolicyUpdateBehaviorType
 
 ```python
@@ -184,6 +210,8 @@ Values:
 
 - `KeepExternalPolicies`
 - `ReplaceExternalPolicies`
+
+<a id="scalingstatuscodetype"></a>
 
 ## ScalingStatusCodeType
 
@@ -196,6 +224,8 @@ Values:
 - `Active`
 - `Inactive`
 - `PartiallyActive`
+
+<a id="servicenamespacetype"></a>
 
 ## ServiceNamespaceType
 
@@ -210,6 +240,8 @@ Values:
 - `ec2`
 - `ecs`
 - `rds`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -518,6 +550,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

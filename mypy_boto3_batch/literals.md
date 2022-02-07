@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-batch-module"></a>
+
 # Literals for boto3 Batch module
 
 > [Index](..) > [Batch](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
 type annotations stubs module
-[mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
+[mypy-boto3-batch](https://pypi.org/project/mypy-boto3-batch/).
 
 - [Literals for boto3 Batch module](#literals-for-boto3-batch-module)
   - [ArrayJobDependencyType](#arrayjobdependencytype)
@@ -34,6 +36,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="arrayjobdependencytype"></a>
+
 ## ArrayJobDependencyType
 
 ```python
@@ -44,6 +48,8 @@ Values:
 
 - `N_TO_N`
 - `SEQUENTIAL`
+
+<a id="assignpubliciptype"></a>
 
 ## AssignPublicIpType
 
@@ -56,6 +62,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="cestatetype"></a>
+
 ## CEStateType
 
 ```python
@@ -66,6 +74,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="cestatustype"></a>
 
 ## CEStatusType
 
@@ -82,6 +92,8 @@ Values:
 - `UPDATING`
 - `VALID`
 
+<a id="cetypetype"></a>
+
 ## CETypeType
 
 ```python
@@ -92,6 +104,8 @@ Values:
 
 - `MANAGED`
 - `UNMANAGED`
+
+<a id="crallocationstrategytype"></a>
 
 ## CRAllocationStrategyType
 
@@ -104,6 +118,8 @@ Values:
 - `BEST_FIT`
 - `BEST_FIT_PROGRESSIVE`
 - `SPOT_CAPACITY_OPTIMIZED`
+
+<a id="crtypetype"></a>
 
 ## CRTypeType
 
@@ -118,6 +134,8 @@ Values:
 - `FARGATE_SPOT`
 - `SPOT`
 
+<a id="describecomputeenvironmentspaginatorname"></a>
+
 ## DescribeComputeEnvironmentsPaginatorName
 
 ```python
@@ -127,6 +145,8 @@ from mypy_boto3_batch.literals import DescribeComputeEnvironmentsPaginatorName
 Values:
 
 - `describe_compute_environments`
+
+<a id="describejobdefinitionspaginatorname"></a>
 
 ## DescribeJobDefinitionsPaginatorName
 
@@ -138,6 +158,8 @@ Values:
 
 - `describe_job_definitions`
 
+<a id="describejobqueuespaginatorname"></a>
+
 ## DescribeJobQueuesPaginatorName
 
 ```python
@@ -147,6 +169,8 @@ from mypy_boto3_batch.literals import DescribeJobQueuesPaginatorName
 Values:
 
 - `describe_job_queues`
+
+<a id="devicecgrouppermissiontype"></a>
 
 ## DeviceCgroupPermissionType
 
@@ -160,6 +184,8 @@ Values:
 - `READ`
 - `WRITE`
 
+<a id="efsauthorizationconfigiamtype"></a>
+
 ## EFSAuthorizationConfigIAMType
 
 ```python
@@ -170,6 +196,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="efstransitencryptiontype"></a>
 
 ## EFSTransitEncryptionType
 
@@ -182,6 +210,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="jqstatetype"></a>
+
 ## JQStateType
 
 ```python
@@ -192,6 +222,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="jqstatustype"></a>
 
 ## JQStatusType
 
@@ -208,6 +240,8 @@ Values:
 - `UPDATING`
 - `VALID`
 
+<a id="jobdefinitiontypetype"></a>
+
 ## JobDefinitionTypeType
 
 ```python
@@ -218,6 +252,8 @@ Values:
 
 - `container`
 - `multinode`
+
+<a id="jobstatustype"></a>
 
 ## JobStatusType
 
@@ -235,6 +271,8 @@ Values:
 - `SUBMITTED`
 - `SUCCEEDED`
 
+<a id="listjobspaginatorname"></a>
+
 ## ListJobsPaginatorName
 
 ```python
@@ -245,6 +283,8 @@ Values:
 
 - `list_jobs`
 
+<a id="listschedulingpoliciespaginatorname"></a>
+
 ## ListSchedulingPoliciesPaginatorName
 
 ```python
@@ -254,6 +294,8 @@ from mypy_boto3_batch.literals import ListSchedulingPoliciesPaginatorName
 Values:
 
 - `list_scheduling_policies`
+
+<a id="logdrivertype"></a>
 
 ## LogDriverType
 
@@ -271,6 +313,8 @@ Values:
 - `splunk`
 - `syslog`
 
+<a id="platformcapabilitytype"></a>
+
 ## PlatformCapabilityType
 
 ```python
@@ -281,6 +325,8 @@ Values:
 
 - `EC2`
 - `FARGATE`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -294,6 +340,8 @@ Values:
 - `MEMORY`
 - `VCPU`
 
+<a id="retryactiontype"></a>
+
 ## RetryActionType
 
 ```python
@@ -304,6 +352,8 @@ Values:
 
 - `EXIT`
 - `RETRY`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -612,6 +662,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

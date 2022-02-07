@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cloudcontrolapi-module"></a>
+
 # Type annotations for boto3 CloudControlApi module
 
 > [Index](..) > CloudControlApi
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
 type annotations stubs module
-[mypy_boto3_cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
+[mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[cloudcontrol]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[cloudcontrol]'
+
+# standalone installation
 pip install mypy-boto3-cloudcontrol
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-cloudcontrol
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="cloudcontrolapiclient"></a>
+
 ## CloudControlApiClient
 
 Type annotations for `boto3.client("cloudcontrol")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_cloudcontrol.client import CloudControlApiClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -44,6 +58,8 @@ from mypy_boto3_cloudcontrol.client import CloudControlApiClient
 - [list_resource_requests](./client.md#list_resource_requests)
 - [list_resources](./client.md#list_resources)
 - [update_resource](./client.md#update_resource)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -72,6 +88,8 @@ CloudControlApiClient [exceptions](./client.md#exceptions)
 - TypeNotFoundException
 - UnsupportedActionException
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -80,10 +98,12 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudcontrol.waiters import ResourceRequestSuccessWaiter, ...
+from mypy_boto3_cloudcontrol.waiter import ResourceRequestSuccessWaiter, ...
 ```
 
 - [ResourceRequestSuccessWaiter](./waiters.md#resourcerequestsuccesswaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -101,6 +121,8 @@ from mypy_boto3_cloudcontrol.literals import HandlerErrorCodeType, ...
 - [ResourceRequestSuccessWaiterName](./literals.md#resourcerequestsuccesswaitername)
 - [ServiceName](./literals.md#servicename)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

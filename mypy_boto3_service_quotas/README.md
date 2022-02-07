@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-servicequotas-module"></a>
+
 # Type annotations for boto3 ServiceQuotas module
 
 > [Index](..) > ServiceQuotas
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
 type annotations stubs module
-[mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
+[mypy-boto3-service-quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[service-quotas]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[service-quotas]'
+
+# standalone installation
 pip install mypy-boto3-service-quotas
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-service-quotas
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="servicequotasclient"></a>
+
 ## ServiceQuotasClient
 
 Type annotations for `boto3.client("service-quotas")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_service_quotas.client import ServiceQuotasClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -56,6 +70,8 @@ from mypy_boto3_service_quotas.client import ServiceQuotasClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ServiceQuotasClient [exceptions](./client.md#exceptions)
@@ -79,6 +95,8 @@ ServiceQuotasClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - TooManyTagsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -87,7 +105,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_service_quotas.paginators import ListAWSDefaultServiceQuotasPaginator, ...
+from mypy_boto3_service_quotas.paginator import ListAWSDefaultServiceQuotasPaginator, ...
 ```
 
 - [ListAWSDefaultServiceQuotasPaginator](./paginators.md#listawsdefaultservicequotaspaginator)
@@ -96,6 +114,8 @@ from mypy_boto3_service_quotas.paginators import ListAWSDefaultServiceQuotasPagi
 - [ListServiceQuotaIncreaseRequestsInTemplatePaginator](./paginators.md#listservicequotaincreaserequestsintemplatepaginator)
 - [ListServiceQuotasPaginator](./paginators.md#listservicequotaspaginator)
 - [ListServicesPaginator](./paginators.md#listservicespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -119,6 +139,8 @@ from mypy_boto3_service_quotas.literals import ErrorCodeType, ...
 - [ServiceQuotaTemplateAssociationStatusType](./literals.md#servicequotatemplateassociationstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

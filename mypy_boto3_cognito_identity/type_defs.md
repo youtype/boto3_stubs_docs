@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cognitoidentity-module"></a>
+
 # Typed dictionaries for boto3 CognitoIdentity module
 
 > [Index](..) > [CognitoIdentity](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
 type annotations stubs module
-[mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
+[mypy-boto3-cognito-identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
 - [Typed dictionaries for boto3 CognitoIdentity module](#typed-dictionaries-for-boto3-cognitoidentity-module)
   - [CognitoIdentityProviderTypeDef](#cognitoidentityprovidertypedef)
@@ -57,6 +59,8 @@ type annotations stubs module
   - [UnprocessedIdentityIdTypeDef](#unprocessedidentityidtypedef)
   - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
 
+<a id="cognitoidentityprovidertypedef"></a>
+
 ## CognitoIdentityProviderTypeDef
 
 ```python
@@ -68,6 +72,8 @@ Optional fields:
 - `ProviderName`: `str`
 - `ClientId`: `str`
 - `ServerSideTokenCheck`: `bool`
+
+<a id="createidentitypoolinputrequesttypedef"></a>
 
 ## CreateIdentityPoolInputRequestTypeDef
 
@@ -91,6 +97,8 @@ Optional fields:
 - `SamlProviderARNs`: `Sequence`\[`str`\]
 - `IdentityPoolTags`: `Mapping`\[`str`, `str`\]
 
+<a id="credentialstypedef"></a>
+
 ## CredentialsTypeDef
 
 ```python
@@ -104,6 +112,8 @@ Optional fields:
 - `SessionToken`: `str`
 - `Expiration`: `datetime`
 
+<a id="deleteidentitiesinputrequesttypedef"></a>
+
 ## DeleteIdentitiesInputRequestTypeDef
 
 ```python
@@ -113,6 +123,8 @@ from mypy_boto3_cognito_identity.type_defs import DeleteIdentitiesInputRequestTy
 Required fields:
 
 - `IdentityIdsToDelete`: `Sequence`\[`str`\]
+
+<a id="deleteidentitiesresponsetypedef"></a>
 
 ## DeleteIdentitiesResponseTypeDef
 
@@ -127,6 +139,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteidentitypoolinputrequesttypedef"></a>
+
 ## DeleteIdentityPoolInputRequestTypeDef
 
 ```python
@@ -136,6 +150,8 @@ from mypy_boto3_cognito_identity.type_defs import DeleteIdentityPoolInputRequest
 Required fields:
 
 - `IdentityPoolId`: `str`
+
+<a id="describeidentityinputrequesttypedef"></a>
 
 ## DescribeIdentityInputRequestTypeDef
 
@@ -147,6 +163,8 @@ Required fields:
 
 - `IdentityId`: `str`
 
+<a id="describeidentitypoolinputrequesttypedef"></a>
+
 ## DescribeIdentityPoolInputRequestTypeDef
 
 ```python
@@ -156,6 +174,8 @@ from mypy_boto3_cognito_identity.type_defs import DescribeIdentityPoolInputReque
 Required fields:
 
 - `IdentityPoolId`: `str`
+
+<a id="getcredentialsforidentityinputrequesttypedef"></a>
 
 ## GetCredentialsForIdentityInputRequestTypeDef
 
@@ -172,6 +192,8 @@ Optional fields:
 - `Logins`: `Mapping`\[`str`, `str`\]
 - `CustomRoleArn`: `str`
 
+<a id="getcredentialsforidentityresponsetypedef"></a>
+
 ## GetCredentialsForIdentityResponseTypeDef
 
 ```python
@@ -184,6 +206,8 @@ Required fields:
 - `Credentials`: [CredentialsTypeDef](./type_defs.md#credentialstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getidinputrequesttypedef"></a>
 
 ## GetIdInputRequestTypeDef
 
@@ -200,6 +224,8 @@ Optional fields:
 - `AccountId`: `str`
 - `Logins`: `Mapping`\[`str`, `str`\]
 
+<a id="getidresponsetypedef"></a>
+
 ## GetIdResponseTypeDef
 
 ```python
@@ -212,6 +238,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getidentitypoolrolesinputrequesttypedef"></a>
+
 ## GetIdentityPoolRolesInputRequestTypeDef
 
 ```python
@@ -221,6 +249,8 @@ from mypy_boto3_cognito_identity.type_defs import GetIdentityPoolRolesInputReque
 Required fields:
 
 - `IdentityPoolId`: `str`
+
+<a id="getidentitypoolrolesresponsetypedef"></a>
 
 ## GetIdentityPoolRolesResponseTypeDef
 
@@ -236,6 +266,8 @@ Required fields:
   [RoleMappingTypeDef](./type_defs.md#rolemappingtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getopenidtokenfordeveloperidentityinputrequesttypedef"></a>
 
 ## GetOpenIdTokenForDeveloperIdentityInputRequestTypeDef
 
@@ -254,6 +286,8 @@ Optional fields:
 - `PrincipalTags`: `Mapping`\[`str`, `str`\]
 - `TokenDuration`: `int`
 
+<a id="getopenidtokenfordeveloperidentityresponsetypedef"></a>
+
 ## GetOpenIdTokenForDeveloperIdentityResponseTypeDef
 
 ```python
@@ -266,6 +300,8 @@ Required fields:
 - `Token`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getopenidtokeninputrequesttypedef"></a>
 
 ## GetOpenIdTokenInputRequestTypeDef
 
@@ -281,6 +317,8 @@ Optional fields:
 
 - `Logins`: `Mapping`\[`str`, `str`\]
 
+<a id="getopenidtokenresponsetypedef"></a>
+
 ## GetOpenIdTokenResponseTypeDef
 
 ```python
@@ -294,6 +332,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getprincipaltagattributemapinputrequesttypedef"></a>
+
 ## GetPrincipalTagAttributeMapInputRequestTypeDef
 
 ```python
@@ -304,6 +344,8 @@ Required fields:
 
 - `IdentityPoolId`: `str`
 - `IdentityProviderName`: `str`
+
+<a id="getprincipaltagattributemapresponsetypedef"></a>
 
 ## GetPrincipalTagAttributeMapResponseTypeDef
 
@@ -320,6 +362,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="identitydescriptionresponsemetadatatypedef"></a>
+
 ## IdentityDescriptionResponseMetadataTypeDef
 
 ```python
@@ -335,6 +379,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="identitydescriptiontypedef"></a>
+
 ## IdentityDescriptionTypeDef
 
 ```python
@@ -347,6 +393,8 @@ Optional fields:
 - `Logins`: `List`\[`str`\]
 - `CreationDate`: `datetime`
 - `LastModifiedDate`: `datetime`
+
+<a id="identitypoolrequesttypedef"></a>
 
 ## IdentityPoolRequestTypeDef
 
@@ -371,6 +419,8 @@ Optional fields:
 - `SamlProviderARNs`: `Sequence`\[`str`\]
 - `IdentityPoolTags`: `Mapping`\[`str`, `str`\]
 
+<a id="identitypoolshortdescriptiontypedef"></a>
+
 ## IdentityPoolShortDescriptionTypeDef
 
 ```python
@@ -381,6 +431,8 @@ Optional fields:
 
 - `IdentityPoolId`: `str`
 - `IdentityPoolName`: `str`
+
+<a id="identitypooltypedef"></a>
 
 ## IdentityPoolTypeDef
 
@@ -404,6 +456,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listidentitiesinputrequesttypedef"></a>
+
 ## ListIdentitiesInputRequestTypeDef
 
 ```python
@@ -420,6 +474,8 @@ Optional fields:
 - `NextToken`: `str`
 - `HideDisabled`: `bool`
 
+<a id="listidentitiesresponsetypedef"></a>
+
 ## ListIdentitiesResponseTypeDef
 
 ```python
@@ -435,6 +491,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listidentitypoolsinputrequesttypedef"></a>
+
 ## ListIdentityPoolsInputRequestTypeDef
 
 ```python
@@ -448,6 +506,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listidentitypoolsresponsetypedef"></a>
 
 ## ListIdentityPoolsResponseTypeDef
 
@@ -463,6 +523,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -472,6 +534,8 @@ from mypy_boto3_cognito_identity.type_defs import ListTagsForResourceInputReques
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -484,6 +548,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="lookupdeveloperidentityinputrequesttypedef"></a>
 
 ## LookupDeveloperIdentityInputRequestTypeDef
 
@@ -502,6 +568,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="lookupdeveloperidentityresponsetypedef"></a>
+
 ## LookupDeveloperIdentityResponseTypeDef
 
 ```python
@@ -515,6 +583,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mappingruletypedef"></a>
 
 ## MappingRuleTypeDef
 
@@ -530,6 +600,8 @@ Required fields:
 - `Value`: `str`
 - `RoleARN`: `str`
 
+<a id="mergedeveloperidentitiesinputrequesttypedef"></a>
+
 ## MergeDeveloperIdentitiesInputRequestTypeDef
 
 ```python
@@ -543,6 +615,8 @@ Required fields:
 - `DeveloperProviderName`: `str`
 - `IdentityPoolId`: `str`
 
+<a id="mergedeveloperidentitiesresponsetypedef"></a>
+
 ## MergeDeveloperIdentitiesResponseTypeDef
 
 ```python
@@ -555,6 +629,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -566,6 +642,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -580,6 +658,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="rolemappingtypedef"></a>
 
 ## RoleMappingTypeDef
 
@@ -598,6 +678,8 @@ Optional fields:
 - `RulesConfiguration`:
   [RulesConfigurationTypeTypeDef](./type_defs.md#rulesconfigurationtypetypedef)
 
+<a id="rulesconfigurationtypetypedef"></a>
+
 ## RulesConfigurationTypeTypeDef
 
 ```python
@@ -607,6 +689,8 @@ from mypy_boto3_cognito_identity.type_defs import RulesConfigurationTypeTypeDef
 Required fields:
 
 - `Rules`: `List`\[[MappingRuleTypeDef](./type_defs.md#mappingruletypedef)\]
+
+<a id="setidentitypoolrolesinputrequesttypedef"></a>
 
 ## SetIdentityPoolRolesInputRequestTypeDef
 
@@ -624,6 +708,8 @@ Optional fields:
 - `RoleMappings`: `Mapping`\[`str`,
   [RoleMappingTypeDef](./type_defs.md#rolemappingtypedef)\]
 
+<a id="setprincipaltagattributemapinputrequesttypedef"></a>
+
 ## SetPrincipalTagAttributeMapInputRequestTypeDef
 
 ```python
@@ -640,6 +726,8 @@ Optional fields:
 - `UseDefaults`: `bool`
 - `PrincipalTags`: `Mapping`\[`str`, `str`\]
 
+<a id="setprincipaltagattributemapresponsetypedef"></a>
+
 ## SetPrincipalTagAttributeMapResponseTypeDef
 
 ```python
@@ -655,6 +743,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -665,6 +755,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="unlinkdeveloperidentityinputrequesttypedef"></a>
 
 ## UnlinkDeveloperIdentityInputRequestTypeDef
 
@@ -679,6 +771,8 @@ Required fields:
 - `DeveloperProviderName`: `str`
 - `DeveloperUserIdentifier`: `str`
 
+<a id="unlinkidentityinputrequesttypedef"></a>
+
 ## UnlinkIdentityInputRequestTypeDef
 
 ```python
@@ -691,6 +785,8 @@ Required fields:
 - `Logins`: `Mapping`\[`str`, `str`\]
 - `LoginsToRemove`: `Sequence`\[`str`\]
 
+<a id="unprocessedidentityidtypedef"></a>
+
 ## UnprocessedIdentityIdTypeDef
 
 ```python
@@ -701,6 +797,8 @@ Optional fields:
 
 - `IdentityId`: `str`
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
+
+<a id="untagresourceinputrequesttypedef"></a>
 
 ## UntagResourceInputRequestTypeDef
 

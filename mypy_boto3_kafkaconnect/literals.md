@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-kafkaconnect-module"></a>
+
 # Literals for boto3 KafkaConnect module
 
 > [Index](..) > [KafkaConnect](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
 type annotations stubs module
-[mypy_boto3_kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
+[mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
 
 - [Literals for boto3 KafkaConnect module](#literals-for-boto3-kafkaconnect-module)
   - [ConnectorStateType](#connectorstatetype)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [ListWorkerConfigurationsPaginatorName](#listworkerconfigurationspaginatorname)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="connectorstatetype"></a>
 
 ## ConnectorStateType
 
@@ -33,6 +37,8 @@ Values:
 - `RUNNING`
 - `UPDATING`
 
+<a id="customplugincontenttypetype"></a>
+
 ## CustomPluginContentTypeType
 
 ```python
@@ -43,6 +49,8 @@ Values:
 
 - `JAR`
 - `ZIP`
+
+<a id="custompluginstatetype"></a>
 
 ## CustomPluginStateType
 
@@ -59,6 +67,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATING`
 
+<a id="kafkaclusterclientauthenticationtypetype"></a>
+
 ## KafkaClusterClientAuthenticationTypeType
 
 ```python
@@ -69,6 +79,8 @@ Values:
 
 - `IAM`
 - `NONE`
+
+<a id="kafkaclusterencryptionintransittypetype"></a>
 
 ## KafkaClusterEncryptionInTransitTypeType
 
@@ -81,6 +93,8 @@ Values:
 - `PLAINTEXT`
 - `TLS`
 
+<a id="listconnectorspaginatorname"></a>
+
 ## ListConnectorsPaginatorName
 
 ```python
@@ -90,6 +104,8 @@ from mypy_boto3_kafkaconnect.literals import ListConnectorsPaginatorName
 Values:
 
 - `list_connectors`
+
+<a id="listcustompluginspaginatorname"></a>
 
 ## ListCustomPluginsPaginatorName
 
@@ -101,6 +117,8 @@ Values:
 
 - `list_custom_plugins`
 
+<a id="listworkerconfigurationspaginatorname"></a>
+
 ## ListWorkerConfigurationsPaginatorName
 
 ```python
@@ -110,6 +128,8 @@ from mypy_boto3_kafkaconnect.literals import ListWorkerConfigurationsPaginatorNa
 Values:
 
 - `list_worker_configurations`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -418,6 +438,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

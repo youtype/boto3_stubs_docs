@@ -1,3 +1,5 @@
+<a id="ivsclient-for-boto3-ivs-module"></a>
+
 # IVSClient for boto3 IVS module
 
 > [Index](..) > [IVS](.) > IVSClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
 type annotations stubs module
-[mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
+[mypy-boto3-ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 - [IVSClient for boto3 IVS module](#ivsclient-for-boto3-ivs-module)
   - [IVSClient](#ivsclient)
@@ -44,6 +46,8 @@ type annotations stubs module
     - [update_channel](#update_channel)
     - [get_paginator](#get_paginator)
 
+<a id="ivsclient"></a>
+
 ## IVSClient
 
 Type annotations for `boto3.client("ivs")`
@@ -51,14 +55,17 @@ Type annotations for `boto3.client("ivs")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ivs.client import IVSClient
 
 def get_ivs_client() -> IVSClient:
-    return boto3.client("ivs")
+    return Session().client("ivs")
 ```
 
 Boto3 documentation:
 [IVS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -86,7 +93,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -98,6 +109,8 @@ Boto3 documentation:
 [IVS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_get_channel"></a>
 
 ### batch_get_channel
 
@@ -118,6 +131,8 @@ Keyword-only arguments:
 Returns
 [BatchGetChannelResponseTypeDef](./type_defs.md#batchgetchannelresponsetypedef).
 
+<a id="batch_get_stream_key"></a>
+
 ### batch_get_stream_key
 
 Performs GetStreamKey on multiple ARNs simultaneously.
@@ -137,6 +152,8 @@ Keyword-only arguments:
 Returns
 [BatchGetStreamKeyResponseTypeDef](./type_defs.md#batchgetstreamkeyresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -151,6 +168,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_channel"></a>
 
 ### create_channel
 
@@ -175,6 +194,8 @@ Keyword-only arguments:
 
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+
+<a id="create_recording_configuration"></a>
 
 ### create_recording_configuration
 
@@ -202,6 +223,8 @@ Keyword-only arguments:
 Returns
 [CreateRecordingConfigurationResponseTypeDef](./type_defs.md#createrecordingconfigurationresponsetypedef).
 
+<a id="create_stream_key"></a>
+
 ### create_stream_key
 
 Creates a stream key, used to initiate a stream, for the specified channel ARN.
@@ -222,6 +245,8 @@ Keyword-only arguments:
 Returns
 [CreateStreamKeyResponseTypeDef](./type_defs.md#createstreamkeyresponsetypedef).
 
+<a id="delete_channel"></a>
+
 ### delete_channel
 
 Deletes the specified channel and its associated stream keys.
@@ -237,6 +262,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
+
+<a id="delete_playback_key_pair"></a>
 
 ### delete_playback_key_pair
 
@@ -256,6 +283,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_recording_configuration"></a>
+
 ### delete_recording_configuration
 
 Deletes the recording configuration for the specified ARN.
@@ -273,6 +302,8 @@ Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
+<a id="delete_stream_key"></a>
+
 ### delete_stream_key
 
 Deletes the stream key for the specified ARN, so it can no longer be used to
@@ -289,6 +320,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -308,6 +341,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_channel"></a>
+
 ### get_channel
 
 Gets the channel configuration for the specified channel ARN.
@@ -325,6 +360,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns [GetChannelResponseTypeDef](./type_defs.md#getchannelresponsetypedef).
+
+<a id="get_playback_key_pair"></a>
 
 ### get_playback_key_pair
 
@@ -346,6 +383,8 @@ Keyword-only arguments:
 Returns
 [GetPlaybackKeyPairResponseTypeDef](./type_defs.md#getplaybackkeypairresponsetypedef).
 
+<a id="get_recording_configuration"></a>
+
 ### get_recording_configuration
 
 Gets the recording configuration for the specified ARN.
@@ -365,6 +404,8 @@ Keyword-only arguments:
 Returns
 [GetRecordingConfigurationResponseTypeDef](./type_defs.md#getrecordingconfigurationresponsetypedef).
 
+<a id="get_stream"></a>
+
 ### get_stream
 
 Gets information about the active (live) stream on a specified channel.
@@ -382,6 +423,8 @@ Keyword-only arguments:
 - `channelArn`: `str` *(required)*
 
 Returns [GetStreamResponseTypeDef](./type_defs.md#getstreamresponsetypedef).
+
+<a id="get_stream_key"></a>
 
 ### get_stream_key
 
@@ -402,6 +445,8 @@ Keyword-only arguments:
 Returns
 [GetStreamKeyResponseTypeDef](./type_defs.md#getstreamkeyresponsetypedef).
 
+<a id="get_stream_session"></a>
+
 ### get_stream_session
 
 Gets metadata on a specified stream.
@@ -421,6 +466,8 @@ Keyword-only arguments:
 
 Returns
 [GetStreamSessionResponseTypeDef](./type_defs.md#getstreamsessionresponsetypedef).
+
+<a id="import_playback_key_pair"></a>
 
 ### import_playback_key_pair
 
@@ -443,6 +490,8 @@ Keyword-only arguments:
 
 Returns
 [ImportPlaybackKeyPairResponseTypeDef](./type_defs.md#importplaybackkeypairresponsetypedef).
+
+<a id="list_channels"></a>
 
 ### list_channels
 
@@ -467,6 +516,8 @@ Keyword-only arguments:
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
+<a id="list_playback_key_pairs"></a>
+
 ### list_playback_key_pairs
 
 Gets summary information about playback key pairs.
@@ -486,6 +537,8 @@ Keyword-only arguments:
 
 Returns
 [ListPlaybackKeyPairsResponseTypeDef](./type_defs.md#listplaybackkeypairsresponsetypedef).
+
+<a id="list_recording_configurations"></a>
 
 ### list_recording_configurations
 
@@ -509,6 +562,8 @@ Keyword-only arguments:
 Returns
 [ListRecordingConfigurationsResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponsetypedef).
 
+<a id="list_stream_keys"></a>
+
 ### list_stream_keys
 
 Gets summary information about stream keys for the specified channel.
@@ -529,6 +584,8 @@ Keyword-only arguments:
 
 Returns
 [ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef).
+
+<a id="list_stream_sessions"></a>
 
 ### list_stream_sessions
 
@@ -552,6 +609,8 @@ Keyword-only arguments:
 Returns
 [ListStreamSessionsResponseTypeDef](./type_defs.md#liststreamsessionsresponsetypedef).
 
+<a id="list_streams"></a>
+
 ### list_streams
 
 Gets summary information about live streams in your account, in the Amazon Web
@@ -574,6 +633,8 @@ Keyword-only arguments:
 Returns
 [ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Gets information about Amazon Web Services tags for the specified ARN.
@@ -593,6 +654,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="put_metadata"></a>
+
 ### put_metadata
 
 Inserts metadata into the active stream of the specified channel.
@@ -609,6 +672,8 @@ Keyword-only arguments:
 
 - `channelArn`: `str` *(required)*
 - `metadata`: `str` *(required)*
+
+<a id="stop_stream"></a>
 
 ### stop_stream
 
@@ -627,6 +692,8 @@ Keyword-only arguments:
 - `channelArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -648,6 +715,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from the resource with the specified ARN.
@@ -666,6 +735,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_channel"></a>
 
 ### update_channel
 
@@ -690,6 +761,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

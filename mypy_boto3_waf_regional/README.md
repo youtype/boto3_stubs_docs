@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-wafregional-module"></a>
+
 # Type annotations for boto3 WAFRegional module
 
 > [Index](..) > WAFRegional
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)
 type annotations stubs module
-[mypy_boto3_waf_regional](https://pypi.org/project/mypy-boto3-waf-regional/).
+[mypy-boto3-waf-regional](https://pypi.org/project/mypy-boto3-waf-regional/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[waf-regional]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[waf-regional]'
+
+# standalone installation
 pip install mypy-boto3-waf-regional
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-waf-regional
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="wafregionalclient"></a>
 
 ## WAFRegionalClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_waf_regional.client import WAFRegionalClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -116,6 +130,8 @@ from mypy_boto3_waf_regional.client import WAFRegionalClient
 - [update_web_acl](./client.md#update_web_acl)
 - [update_xss_match_set](./client.md#update_xss_match_set)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 WAFRegionalClient [exceptions](./client.md#exceptions)
@@ -141,6 +157,8 @@ WAFRegionalClient [exceptions](./client.md#exceptions)
 - WAFTagOperationException
 - WAFTagOperationInternalErrorException
 - WAFUnavailableEntityException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -168,6 +186,8 @@ from mypy_boto3_waf_regional.literals import ChangeActionType, ...
 - [WafOverrideActionTypeType](./literals.md#wafoverrideactiontypetype)
 - [WafRuleTypeType](./literals.md#wafruletypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

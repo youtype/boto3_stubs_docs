@@ -1,3 +1,5 @@
+<a id="resourcegroupstaggingapiclient-for-boto3-resourcegroupstaggingapi-module"></a>
+
 # ResourceGroupsTaggingAPIClient for boto3 ResourceGroupsTaggingAPI module
 
 > [Index](..) > [ResourceGroupsTaggingAPI](.) > ResourceGroupsTaggingAPIClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module
-[mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
+[mypy-boto3-resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
 - [ResourceGroupsTaggingAPIClient for boto3 ResourceGroupsTaggingAPI module](#resourcegroupstaggingapiclient-for-boto3-resourcegroupstaggingapi-module)
   - [ResourceGroupsTaggingAPIClient](#resourcegroupstaggingapiclient)
@@ -24,6 +26,8 @@ type annotations stubs module
     - [untag_resources](#untag_resources)
     - [get_paginator](#get_paginator)
 
+<a id="resourcegroupstaggingapiclient"></a>
+
 ## ResourceGroupsTaggingAPIClient
 
 Type annotations for `boto3.client("resourcegroupstaggingapi")`
@@ -31,14 +35,17 @@ Type annotations for `boto3.client("resourcegroupstaggingapi")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_resourcegroupstaggingapi.client import ResourceGroupsTaggingAPIClient
 
 def get_resourcegroupstaggingapi_client() -> ResourceGroupsTaggingAPIClient:
-    return boto3.client("resourcegroupstaggingapi")
+    return Session().client("resourcegroupstaggingapi")
 ```
 
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -62,7 +69,11 @@ Exceptions:
 - `Exceptions.PaginationTokenExpiredException`
 - `Exceptions.ThrottledException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -75,6 +86,8 @@ Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -92,6 +105,8 @@ Arguments:
 
 Returns `bool`.
 
+<a id="describe_report_creation"></a>
+
 ### describe_report_creation
 
 Describes the status of the `StartReportCreation` operation.
@@ -104,6 +119,8 @@ Boto3 documentation:
 
 Returns
 [DescribeReportCreationOutputTypeDef](./type_defs.md#describereportcreationoutputtypedef).
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -123,6 +140,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_compliance_summary"></a>
 
 ### get_compliance_summary
 
@@ -152,6 +171,8 @@ Keyword-only arguments:
 Returns
 [GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef).
 
+<a id="get_resources"></a>
+
 ### get_resources
 
 Returns all the tagged or previously tagged resources that are located in the
@@ -180,6 +201,8 @@ Keyword-only arguments:
 
 Returns [GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef).
 
+<a id="get_tag_keys"></a>
+
 ### get_tag_keys
 
 Returns all tag keys currently in use in the specified Amazon Web Services
@@ -199,6 +222,8 @@ Keyword-only arguments:
 - `PaginationToken`: `str`
 
 Returns [GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef).
+
+<a id="get_tag_values"></a>
 
 ### get_tag_values
 
@@ -221,6 +246,8 @@ Keyword-only arguments:
 
 Returns [GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef).
 
+<a id="start_report_creation"></a>
+
 ### start_report_creation
 
 Generates a report that lists all tagged resources in the accounts across your
@@ -242,6 +269,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resources"></a>
+
 ### tag_resources
 
 .
@@ -261,6 +290,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns [TagResourcesOutputTypeDef](./type_defs.md#tagresourcesoutputtypedef).
+
+<a id="untag_resources"></a>
 
 ### untag_resources
 
@@ -282,6 +313,8 @@ Keyword-only arguments:
 
 Returns
 [UntagResourcesOutputTypeDef](./type_defs.md#untagresourcesoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

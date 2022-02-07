@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloudfront-module"></a>
+
 # Typed dictionaries for boto3 CloudFront module
 
 > [Index](..) > [CloudFront](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
 type annotations stubs module
-[mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
+[mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 - [Typed dictionaries for boto3 CloudFront module](#typed-dictionaries-for-boto3-cloudfront-module)
   - [ActiveTrustedKeyGroupsTypeDef](#activetrustedkeygroupstypedef)
@@ -320,6 +322,8 @@ type annotations stubs module
   - [ViewerCertificateTypeDef](#viewercertificatetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="activetrustedkeygroupstypedef"></a>
+
 ## ActiveTrustedKeyGroupsTypeDef
 
 ```python
@@ -334,6 +338,8 @@ Required fields:
 Optional fields:
 
 - `Items`: `List`\[[KGKeyPairIdsTypeDef](./type_defs.md#kgkeypairidstypedef)\]
+
+<a id="activetrustedsignerstypedef"></a>
 
 ## ActiveTrustedSignersTypeDef
 
@@ -350,6 +356,8 @@ Optional fields:
 
 - `Items`: `List`\[[SignerTypeDef](./type_defs.md#signertypedef)\]
 
+<a id="aliasicprecordaltypedef"></a>
+
 ## AliasICPRecordalTypeDef
 
 ```python
@@ -361,6 +369,8 @@ Optional fields:
 - `CNAME`: `str`
 - `ICPRecordalStatus`:
   [ICPRecordalStatusType](./literals.md#icprecordalstatustype)
+
+<a id="aliasestypedef"></a>
 
 ## AliasesTypeDef
 
@@ -375,6 +385,8 @@ Required fields:
 Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
+
+<a id="allowedmethodstypedef"></a>
 
 ## AllowedMethodsTypeDef
 
@@ -391,6 +403,8 @@ Optional fields:
 
 - `CachedMethods`: [CachedMethodsTypeDef](./type_defs.md#cachedmethodstypedef)
 
+<a id="associatealiasrequestrequesttypedef"></a>
+
 ## AssociateAliasRequestRequestTypeDef
 
 ```python
@@ -401,6 +415,8 @@ Required fields:
 
 - `TargetDistributionId`: `str`
 - `Alias`: `str`
+
+<a id="cachebehaviortypedef"></a>
 
 ## CacheBehaviorTypeDef
 
@@ -440,6 +456,8 @@ Optional fields:
 - `DefaultTTL`: `int`
 - `MaxTTL`: `int`
 
+<a id="cachebehaviorstypedef"></a>
+
 ## CacheBehaviorsTypeDef
 
 ```python
@@ -454,6 +472,8 @@ Optional fields:
 
 - `Items`:
   `Sequence`\[[CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef)\]
+
+<a id="cachepolicyconfigtypedef"></a>
 
 ## CachePolicyConfigTypeDef
 
@@ -474,6 +494,8 @@ Optional fields:
 - `ParametersInCacheKeyAndForwardedToOrigin`:
   [ParametersInCacheKeyAndForwardedToOriginTypeDef](./type_defs.md#parametersincachekeyandforwardedtoorigintypedef)
 
+<a id="cachepolicycookiesconfigtypedef"></a>
+
 ## CachePolicyCookiesConfigTypeDef
 
 ```python
@@ -489,6 +511,8 @@ Optional fields:
 
 - `Cookies`: [CookieNamesTypeDef](./type_defs.md#cookienamestypedef)
 
+<a id="cachepolicyheadersconfigtypedef"></a>
+
 ## CachePolicyHeadersConfigTypeDef
 
 ```python
@@ -503,6 +527,8 @@ Required fields:
 Optional fields:
 
 - `Headers`: [HeadersTypeDef](./type_defs.md#headerstypedef)
+
+<a id="cachepolicylisttypedef"></a>
 
 ## CachePolicyListTypeDef
 
@@ -521,6 +547,8 @@ Optional fields:
 - `Items`:
   `List`\[[CachePolicySummaryTypeDef](./type_defs.md#cachepolicysummarytypedef)\]
 
+<a id="cachepolicyquerystringsconfigtypedef"></a>
+
 ## CachePolicyQueryStringsConfigTypeDef
 
 ```python
@@ -537,6 +565,8 @@ Optional fields:
 - `QueryStrings`:
   [QueryStringNamesTypeDef](./type_defs.md#querystringnamestypedef)
 
+<a id="cachepolicysummarytypedef"></a>
+
 ## CachePolicySummaryTypeDef
 
 ```python
@@ -547,6 +577,8 @@ Required fields:
 
 - `Type`: [CachePolicyTypeType](./literals.md#cachepolicytypetype)
 - `CachePolicy`: [CachePolicyTypeDef](./type_defs.md#cachepolicytypedef)
+
+<a id="cachepolicytypedef"></a>
 
 ## CachePolicyTypeDef
 
@@ -561,6 +593,8 @@ Required fields:
 - `CachePolicyConfig`:
   [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
 
+<a id="cachedmethodstypedef"></a>
+
 ## CachedMethodsTypeDef
 
 ```python
@@ -572,6 +606,8 @@ Required fields:
 - `Quantity`: `int`
 - `Items`: `Sequence`\[[MethodType](./literals.md#methodtype)\]
 
+<a id="cloudfrontoriginaccessidentityconfigtypedef"></a>
+
 ## CloudFrontOriginAccessIdentityConfigTypeDef
 
 ```python
@@ -582,6 +618,8 @@ Required fields:
 
 - `CallerReference`: `str`
 - `Comment`: `str`
+
+<a id="cloudfrontoriginaccessidentitylisttypedef"></a>
 
 ## CloudFrontOriginAccessIdentityListTypeDef
 
@@ -602,6 +640,8 @@ Optional fields:
 - `Items`:
   `List`\[[CloudFrontOriginAccessIdentitySummaryTypeDef](./type_defs.md#cloudfrontoriginaccessidentitysummarytypedef)\]
 
+<a id="cloudfrontoriginaccessidentitysummarytypedef"></a>
+
 ## CloudFrontOriginAccessIdentitySummaryTypeDef
 
 ```python
@@ -613,6 +653,8 @@ Required fields:
 - `Id`: `str`
 - `S3CanonicalUserId`: `str`
 - `Comment`: `str`
+
+<a id="cloudfrontoriginaccessidentitytypedef"></a>
 
 ## CloudFrontOriginAccessIdentityTypeDef
 
@@ -630,6 +672,8 @@ Optional fields:
 - `CloudFrontOriginAccessIdentityConfig`:
   [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
 
+<a id="conflictingaliastypedef"></a>
+
 ## ConflictingAliasTypeDef
 
 ```python
@@ -641,6 +685,8 @@ Optional fields:
 - `Alias`: `str`
 - `DistributionId`: `str`
 - `AccountId`: `str`
+
+<a id="conflictingaliaseslisttypedef"></a>
 
 ## ConflictingAliasesListTypeDef
 
@@ -656,6 +702,8 @@ Optional fields:
 - `Items`:
   `List`\[[ConflictingAliasTypeDef](./type_defs.md#conflictingaliastypedef)\]
 
+<a id="contenttypeprofileconfigtypedef"></a>
+
 ## ContentTypeProfileConfigTypeDef
 
 ```python
@@ -670,6 +718,8 @@ Optional fields:
 
 - `ContentTypeProfiles`:
   [ContentTypeProfilesTypeDef](./type_defs.md#contenttypeprofilestypedef)
+
+<a id="contenttypeprofiletypedef"></a>
 
 ## ContentTypeProfileTypeDef
 
@@ -687,6 +737,8 @@ Optional fields:
 
 - `ProfileId`: `str`
 
+<a id="contenttypeprofilestypedef"></a>
+
 ## ContentTypeProfilesTypeDef
 
 ```python
@@ -702,6 +754,8 @@ Optional fields:
 - `Items`:
   `Sequence`\[[ContentTypeProfileTypeDef](./type_defs.md#contenttypeprofiletypedef)\]
 
+<a id="cookienamestypedef"></a>
+
 ## CookieNamesTypeDef
 
 ```python
@@ -715,6 +769,8 @@ Required fields:
 Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
+
+<a id="cookiepreferencetypedef"></a>
 
 ## CookiePreferenceTypeDef
 
@@ -730,6 +786,8 @@ Optional fields:
 
 - `WhitelistedNames`: [CookieNamesTypeDef](./type_defs.md#cookienamestypedef)
 
+<a id="createcachepolicyrequestrequesttypedef"></a>
+
 ## CreateCachePolicyRequestRequestTypeDef
 
 ```python
@@ -740,6 +798,8 @@ Required fields:
 
 - `CachePolicyConfig`:
   [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
+
+<a id="createcachepolicyresulttypedef"></a>
 
 ## CreateCachePolicyResultTypeDef
 
@@ -755,6 +815,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createcloudfrontoriginaccessidentityrequestrequesttypedef"></a>
+
 ## CreateCloudFrontOriginAccessIdentityRequestRequestTypeDef
 
 ```python
@@ -765,6 +827,8 @@ Required fields:
 
 - `CloudFrontOriginAccessIdentityConfig`:
   [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
+
+<a id="createcloudfrontoriginaccessidentityresulttypedef"></a>
 
 ## CreateCloudFrontOriginAccessIdentityResultTypeDef
 
@@ -781,6 +845,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createdistributionrequestrequesttypedef"></a>
+
 ## CreateDistributionRequestRequestTypeDef
 
 ```python
@@ -791,6 +857,8 @@ Required fields:
 
 - `DistributionConfig`:
   [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
+
+<a id="createdistributionresulttypedef"></a>
 
 ## CreateDistributionResultTypeDef
 
@@ -806,6 +874,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createdistributionwithtagsrequestrequesttypedef"></a>
+
 ## CreateDistributionWithTagsRequestRequestTypeDef
 
 ```python
@@ -816,6 +886,8 @@ Required fields:
 
 - `DistributionConfigWithTags`:
   [DistributionConfigWithTagsTypeDef](./type_defs.md#distributionconfigwithtagstypedef)
+
+<a id="createdistributionwithtagsresulttypedef"></a>
 
 ## CreateDistributionWithTagsResultTypeDef
 
@@ -831,6 +903,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createfieldlevelencryptionconfigrequestrequesttypedef"></a>
+
 ## CreateFieldLevelEncryptionConfigRequestRequestTypeDef
 
 ```python
@@ -841,6 +915,8 @@ Required fields:
 
 - `FieldLevelEncryptionConfig`:
   [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
+
+<a id="createfieldlevelencryptionconfigresulttypedef"></a>
 
 ## CreateFieldLevelEncryptionConfigResultTypeDef
 
@@ -857,6 +933,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createfieldlevelencryptionprofilerequestrequesttypedef"></a>
+
 ## CreateFieldLevelEncryptionProfileRequestRequestTypeDef
 
 ```python
@@ -867,6 +945,8 @@ Required fields:
 
 - `FieldLevelEncryptionProfileConfig`:
   [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
+
+<a id="createfieldlevelencryptionprofileresulttypedef"></a>
 
 ## CreateFieldLevelEncryptionProfileResultTypeDef
 
@@ -883,6 +963,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createfunctionrequestrequesttypedef"></a>
+
 ## CreateFunctionRequestRequestTypeDef
 
 ```python
@@ -895,6 +977,8 @@ Required fields:
 - `FunctionConfig`:
   [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef)
 - `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="createfunctionresulttypedef"></a>
 
 ## CreateFunctionResultTypeDef
 
@@ -911,6 +995,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createinvalidationrequestrequesttypedef"></a>
+
 ## CreateInvalidationRequestRequestTypeDef
 
 ```python
@@ -922,6 +1008,8 @@ Required fields:
 - `DistributionId`: `str`
 - `InvalidationBatch`:
   [InvalidationBatchTypeDef](./type_defs.md#invalidationbatchtypedef)
+
+<a id="createinvalidationresulttypedef"></a>
 
 ## CreateInvalidationResultTypeDef
 
@@ -936,6 +1024,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createkeygrouprequestrequesttypedef"></a>
+
 ## CreateKeyGroupRequestRequestTypeDef
 
 ```python
@@ -946,6 +1036,8 @@ Required fields:
 
 - `KeyGroupConfig`:
   [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
+
+<a id="createkeygroupresulttypedef"></a>
 
 ## CreateKeyGroupResultTypeDef
 
@@ -961,6 +1053,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createmonitoringsubscriptionrequestrequesttypedef"></a>
+
 ## CreateMonitoringSubscriptionRequestRequestTypeDef
 
 ```python
@@ -972,6 +1066,8 @@ Required fields:
 - `DistributionId`: `str`
 - `MonitoringSubscription`:
   [MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef)
+
+<a id="createmonitoringsubscriptionresulttypedef"></a>
 
 ## CreateMonitoringSubscriptionResultTypeDef
 
@@ -986,6 +1082,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createoriginrequestpolicyrequestrequesttypedef"></a>
+
 ## CreateOriginRequestPolicyRequestRequestTypeDef
 
 ```python
@@ -996,6 +1094,8 @@ Required fields:
 
 - `OriginRequestPolicyConfig`:
   [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
+
+<a id="createoriginrequestpolicyresulttypedef"></a>
 
 ## CreateOriginRequestPolicyResultTypeDef
 
@@ -1012,6 +1112,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createpublickeyrequestrequesttypedef"></a>
+
 ## CreatePublicKeyRequestRequestTypeDef
 
 ```python
@@ -1022,6 +1124,8 @@ Required fields:
 
 - `PublicKeyConfig`:
   [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef)
+
+<a id="createpublickeyresulttypedef"></a>
 
 ## CreatePublicKeyResultTypeDef
 
@@ -1037,6 +1141,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createrealtimelogconfigrequestrequesttypedef"></a>
+
 ## CreateRealtimeLogConfigRequestRequestTypeDef
 
 ```python
@@ -1049,6 +1155,8 @@ Required fields:
 - `Fields`: `Sequence`\[`str`\]
 - `Name`: `str`
 - `SamplingRate`: `int`
+
+<a id="createrealtimelogconfigresulttypedef"></a>
 
 ## CreateRealtimeLogConfigResultTypeDef
 
@@ -1063,6 +1171,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createresponseheaderspolicyrequestrequesttypedef"></a>
+
 ## CreateResponseHeadersPolicyRequestRequestTypeDef
 
 ```python
@@ -1073,6 +1183,8 @@ Required fields:
 
 - `ResponseHeadersPolicyConfig`:
   [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
+
+<a id="createresponseheaderspolicyresulttypedef"></a>
 
 ## CreateResponseHeadersPolicyResultTypeDef
 
@@ -1089,6 +1201,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createstreamingdistributionrequestrequesttypedef"></a>
+
 ## CreateStreamingDistributionRequestRequestTypeDef
 
 ```python
@@ -1099,6 +1213,8 @@ Required fields:
 
 - `StreamingDistributionConfig`:
   [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
+
+<a id="createstreamingdistributionresulttypedef"></a>
 
 ## CreateStreamingDistributionResultTypeDef
 
@@ -1115,6 +1231,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createstreamingdistributionwithtagsrequestrequesttypedef"></a>
+
 ## CreateStreamingDistributionWithTagsRequestRequestTypeDef
 
 ```python
@@ -1125,6 +1243,8 @@ Required fields:
 
 - `StreamingDistributionConfigWithTags`:
   [StreamingDistributionConfigWithTagsTypeDef](./type_defs.md#streamingdistributionconfigwithtagstypedef)
+
+<a id="createstreamingdistributionwithtagsresulttypedef"></a>
 
 ## CreateStreamingDistributionWithTagsResultTypeDef
 
@@ -1140,6 +1260,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="customerrorresponsetypedef"></a>
 
 ## CustomErrorResponseTypeDef
 
@@ -1157,6 +1279,8 @@ Optional fields:
 - `ResponseCode`: `str`
 - `ErrorCachingMinTTL`: `int`
 
+<a id="customerrorresponsestypedef"></a>
+
 ## CustomErrorResponsesTypeDef
 
 ```python
@@ -1172,6 +1296,8 @@ Optional fields:
 - `Items`:
   `Sequence`\[[CustomErrorResponseTypeDef](./type_defs.md#customerrorresponsetypedef)\]
 
+<a id="customheaderstypedef"></a>
+
 ## CustomHeadersTypeDef
 
 ```python
@@ -1186,6 +1312,8 @@ Optional fields:
 
 - `Items`:
   `Sequence`\[[OriginCustomHeaderTypeDef](./type_defs.md#origincustomheadertypedef)\]
+
+<a id="customoriginconfigtypedef"></a>
 
 ## CustomOriginConfigTypeDef
 
@@ -1206,6 +1334,8 @@ Optional fields:
   [OriginSslProtocolsTypeDef](./type_defs.md#originsslprotocolstypedef)
 - `OriginReadTimeout`: `int`
 - `OriginKeepaliveTimeout`: `int`
+
+<a id="defaultcachebehaviortypedef"></a>
 
 ## DefaultCacheBehaviorTypeDef
 
@@ -1244,6 +1374,8 @@ Optional fields:
 - `DefaultTTL`: `int`
 - `MaxTTL`: `int`
 
+<a id="deletecachepolicyrequestrequesttypedef"></a>
+
 ## DeleteCachePolicyRequestRequestTypeDef
 
 ```python
@@ -1257,6 +1389,8 @@ Required fields:
 Optional fields:
 
 - `IfMatch`: `str`
+
+<a id="deletecloudfrontoriginaccessidentityrequestrequesttypedef"></a>
 
 ## DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef
 
@@ -1272,6 +1406,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="deletedistributionrequestrequesttypedef"></a>
+
 ## DeleteDistributionRequestRequestTypeDef
 
 ```python
@@ -1285,6 +1421,8 @@ Required fields:
 Optional fields:
 
 - `IfMatch`: `str`
+
+<a id="deletefieldlevelencryptionconfigrequestrequesttypedef"></a>
 
 ## DeleteFieldLevelEncryptionConfigRequestRequestTypeDef
 
@@ -1300,6 +1438,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="deletefieldlevelencryptionprofilerequestrequesttypedef"></a>
+
 ## DeleteFieldLevelEncryptionProfileRequestRequestTypeDef
 
 ```python
@@ -1314,6 +1454,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="deletefunctionrequestrequesttypedef"></a>
+
 ## DeleteFunctionRequestRequestTypeDef
 
 ```python
@@ -1324,6 +1466,8 @@ Required fields:
 
 - `Name`: `str`
 - `IfMatch`: `str`
+
+<a id="deletekeygrouprequestrequesttypedef"></a>
 
 ## DeleteKeyGroupRequestRequestTypeDef
 
@@ -1339,6 +1483,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="deletemonitoringsubscriptionrequestrequesttypedef"></a>
+
 ## DeleteMonitoringSubscriptionRequestRequestTypeDef
 
 ```python
@@ -1348,6 +1494,8 @@ from mypy_boto3_cloudfront.type_defs import DeleteMonitoringSubscriptionRequestR
 Required fields:
 
 - `DistributionId`: `str`
+
+<a id="deleteoriginrequestpolicyrequestrequesttypedef"></a>
 
 ## DeleteOriginRequestPolicyRequestRequestTypeDef
 
@@ -1363,6 +1511,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="deletepublickeyrequestrequesttypedef"></a>
+
 ## DeletePublicKeyRequestRequestTypeDef
 
 ```python
@@ -1377,6 +1527,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="deleterealtimelogconfigrequestrequesttypedef"></a>
+
 ## DeleteRealtimeLogConfigRequestRequestTypeDef
 
 ```python
@@ -1387,6 +1539,8 @@ Optional fields:
 
 - `Name`: `str`
 - `ARN`: `str`
+
+<a id="deleteresponseheaderspolicyrequestrequesttypedef"></a>
 
 ## DeleteResponseHeadersPolicyRequestRequestTypeDef
 
@@ -1402,6 +1556,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="deletestreamingdistributionrequestrequesttypedef"></a>
+
 ## DeleteStreamingDistributionRequestRequestTypeDef
 
 ```python
@@ -1415,6 +1571,8 @@ Required fields:
 Optional fields:
 
 - `IfMatch`: `str`
+
+<a id="describefunctionrequestrequesttypedef"></a>
 
 ## DescribeFunctionRequestRequestTypeDef
 
@@ -1430,6 +1588,8 @@ Optional fields:
 
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
 
+<a id="describefunctionresulttypedef"></a>
+
 ## DescribeFunctionResultTypeDef
 
 ```python
@@ -1443,6 +1603,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="distributionconfigtypedef"></a>
 
 ## DistributionConfigTypeDef
 
@@ -1477,6 +1639,8 @@ Optional fields:
 - `HttpVersion`: [HttpVersionType](./literals.md#httpversiontype)
 - `IsIPV6Enabled`: `bool`
 
+<a id="distributionconfigwithtagstypedef"></a>
+
 ## DistributionConfigWithTagsTypeDef
 
 ```python
@@ -1488,6 +1652,8 @@ Required fields:
 - `DistributionConfig`:
   [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
 - `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef)
+
+<a id="distributionidlisttypedef"></a>
 
 ## DistributionIdListTypeDef
 
@@ -1507,6 +1673,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Items`: `List`\[`str`\]
 
+<a id="distributionlisttypedef"></a>
+
 ## DistributionListTypeDef
 
 ```python
@@ -1525,6 +1693,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Items`:
   `List`\[[DistributionSummaryTypeDef](./type_defs.md#distributionsummarytypedef)\]
+
+<a id="distributionsummarytypedef"></a>
 
 ## DistributionSummaryTypeDef
 
@@ -1563,6 +1733,8 @@ Optional fields:
 - `AliasICPRecordals`:
   `List`\[[AliasICPRecordalTypeDef](./type_defs.md#aliasicprecordaltypedef)\]
 
+<a id="distributiontypedef"></a>
+
 ## DistributionTypeDef
 
 ```python
@@ -1589,6 +1761,8 @@ Optional fields:
 - `AliasICPRecordals`:
   `List`\[[AliasICPRecordalTypeDef](./type_defs.md#aliasicprecordaltypedef)\]
 
+<a id="encryptionentitiestypedef"></a>
+
 ## EncryptionEntitiesTypeDef
 
 ```python
@@ -1604,6 +1778,8 @@ Optional fields:
 - `Items`:
   `Sequence`\[[EncryptionEntityTypeDef](./type_defs.md#encryptionentitytypedef)\]
 
+<a id="encryptionentitytypedef"></a>
+
 ## EncryptionEntityTypeDef
 
 ```python
@@ -1615,6 +1791,8 @@ Required fields:
 - `PublicKeyId`: `str`
 - `ProviderId`: `str`
 - `FieldPatterns`: [FieldPatternsTypeDef](./type_defs.md#fieldpatternstypedef)
+
+<a id="endpointtypedef"></a>
 
 ## EndPointTypeDef
 
@@ -1630,6 +1808,8 @@ Optional fields:
 
 - `KinesisStreamConfig`:
   [KinesisStreamConfigTypeDef](./type_defs.md#kinesisstreamconfigtypedef)
+
+<a id="fieldlevelencryptionconfigtypedef"></a>
 
 ## FieldLevelEncryptionConfigTypeDef
 
@@ -1649,6 +1829,8 @@ Optional fields:
 - `ContentTypeProfileConfig`:
   [ContentTypeProfileConfigTypeDef](./type_defs.md#contenttypeprofileconfigtypedef)
 
+<a id="fieldlevelencryptionlisttypedef"></a>
+
 ## FieldLevelEncryptionListTypeDef
 
 ```python
@@ -1665,6 +1847,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Items`:
   `List`\[[FieldLevelEncryptionSummaryTypeDef](./type_defs.md#fieldlevelencryptionsummarytypedef)\]
+
+<a id="fieldlevelencryptionprofileconfigtypedef"></a>
 
 ## FieldLevelEncryptionProfileConfigTypeDef
 
@@ -1683,6 +1867,8 @@ Optional fields:
 
 - `Comment`: `str`
 
+<a id="fieldlevelencryptionprofilelisttypedef"></a>
+
 ## FieldLevelEncryptionProfileListTypeDef
 
 ```python
@@ -1699,6 +1885,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Items`:
   `List`\[[FieldLevelEncryptionProfileSummaryTypeDef](./type_defs.md#fieldlevelencryptionprofilesummarytypedef)\]
+
+<a id="fieldlevelencryptionprofilesummarytypedef"></a>
 
 ## FieldLevelEncryptionProfileSummaryTypeDef
 
@@ -1718,6 +1906,8 @@ Optional fields:
 
 - `Comment`: `str`
 
+<a id="fieldlevelencryptionprofiletypedef"></a>
+
 ## FieldLevelEncryptionProfileTypeDef
 
 ```python
@@ -1730,6 +1920,8 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `FieldLevelEncryptionProfileConfig`:
   [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
+
+<a id="fieldlevelencryptionsummarytypedef"></a>
 
 ## FieldLevelEncryptionSummaryTypeDef
 
@@ -1750,6 +1942,8 @@ Optional fields:
 - `ContentTypeProfileConfig`:
   [ContentTypeProfileConfigTypeDef](./type_defs.md#contenttypeprofileconfigtypedef)
 
+<a id="fieldlevelencryptiontypedef"></a>
+
 ## FieldLevelEncryptionTypeDef
 
 ```python
@@ -1762,6 +1956,8 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `FieldLevelEncryptionConfig`:
   [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
+
+<a id="fieldpatternstypedef"></a>
 
 ## FieldPatternsTypeDef
 
@@ -1776,6 +1972,8 @@ Required fields:
 Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
+
+<a id="forwardedvaluestypedef"></a>
 
 ## ForwardedValuesTypeDef
 
@@ -1794,6 +1992,8 @@ Optional fields:
 - `QueryStringCacheKeys`:
   [QueryStringCacheKeysTypeDef](./type_defs.md#querystringcachekeystypedef)
 
+<a id="functionassociationtypedef"></a>
+
 ## FunctionAssociationTypeDef
 
 ```python
@@ -1804,6 +2004,8 @@ Required fields:
 
 - `FunctionARN`: `str`
 - `EventType`: [EventTypeType](./literals.md#eventtypetype)
+
+<a id="functionassociationstypedef"></a>
 
 ## FunctionAssociationsTypeDef
 
@@ -1820,6 +2022,8 @@ Optional fields:
 - `Items`:
   `Sequence`\[[FunctionAssociationTypeDef](./type_defs.md#functionassociationtypedef)\]
 
+<a id="functionconfigtypedef"></a>
+
 ## FunctionConfigTypeDef
 
 ```python
@@ -1831,6 +2035,8 @@ Required fields:
 - `Comment`: `str`
 - `Runtime`: `Literal['cloudfront-js-1.0']` (see
   [FunctionRuntimeType](./literals.md#functionruntimetype))
+
+<a id="functionlisttypedef"></a>
 
 ## FunctionListTypeDef
 
@@ -1849,6 +2055,8 @@ Optional fields:
 - `Items`:
   `List`\[[FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)\]
 
+<a id="functionmetadatatypedef"></a>
+
 ## FunctionMetadataTypeDef
 
 ```python
@@ -1864,6 +2072,8 @@ Optional fields:
 
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
 - `CreatedTime`: `datetime`
+
+<a id="functionsummarytypedef"></a>
 
 ## FunctionSummaryTypeDef
 
@@ -1883,6 +2093,8 @@ Optional fields:
 
 - `Status`: `str`
 
+<a id="georestrictiontypedef"></a>
+
 ## GeoRestrictionTypeDef
 
 ```python
@@ -1899,6 +2111,8 @@ Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
 
+<a id="getcachepolicyconfigrequestrequesttypedef"></a>
+
 ## GetCachePolicyConfigRequestRequestTypeDef
 
 ```python
@@ -1908,6 +2122,8 @@ from mypy_boto3_cloudfront.type_defs import GetCachePolicyConfigRequestRequestTy
 Required fields:
 
 - `Id`: `str`
+
+<a id="getcachepolicyconfigresulttypedef"></a>
 
 ## GetCachePolicyConfigResultTypeDef
 
@@ -1923,6 +2139,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcachepolicyrequestrequesttypedef"></a>
+
 ## GetCachePolicyRequestRequestTypeDef
 
 ```python
@@ -1932,6 +2150,8 @@ from mypy_boto3_cloudfront.type_defs import GetCachePolicyRequestRequestTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="getcachepolicyresulttypedef"></a>
 
 ## GetCachePolicyResultTypeDef
 
@@ -1946,6 +2166,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcloudfrontoriginaccessidentityconfigrequestrequesttypedef"></a>
+
 ## GetCloudFrontOriginAccessIdentityConfigRequestRequestTypeDef
 
 ```python
@@ -1955,6 +2177,8 @@ from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityCon
 Required fields:
 
 - `Id`: `str`
+
+<a id="getcloudfrontoriginaccessidentityconfigresulttypedef"></a>
 
 ## GetCloudFrontOriginAccessIdentityConfigResultTypeDef
 
@@ -1970,6 +2194,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcloudfrontoriginaccessidentityrequestrequesttypedef"></a>
+
 ## GetCloudFrontOriginAccessIdentityRequestRequestTypeDef
 
 ```python
@@ -1979,6 +2205,8 @@ from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityReq
 Required fields:
 
 - `Id`: `str`
+
+<a id="getcloudfrontoriginaccessidentityresulttypedef"></a>
 
 ## GetCloudFrontOriginAccessIdentityResultTypeDef
 
@@ -1994,6 +2222,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdistributionconfigrequestrequesttypedef"></a>
+
 ## GetDistributionConfigRequestRequestTypeDef
 
 ```python
@@ -2003,6 +2233,8 @@ from mypy_boto3_cloudfront.type_defs import GetDistributionConfigRequestRequestT
 Required fields:
 
 - `Id`: `str`
+
+<a id="getdistributionconfigresulttypedef"></a>
 
 ## GetDistributionConfigResultTypeDef
 
@@ -2018,6 +2250,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdistributionrequestrequesttypedef"></a>
+
 ## GetDistributionRequestRequestTypeDef
 
 ```python
@@ -2027,6 +2261,8 @@ from mypy_boto3_cloudfront.type_defs import GetDistributionRequestRequestTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="getdistributionresulttypedef"></a>
 
 ## GetDistributionResultTypeDef
 
@@ -2041,6 +2277,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfieldlevelencryptionconfigrequestrequesttypedef"></a>
+
 ## GetFieldLevelEncryptionConfigRequestRequestTypeDef
 
 ```python
@@ -2050,6 +2288,8 @@ from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionConfigRequest
 Required fields:
 
 - `Id`: `str`
+
+<a id="getfieldlevelencryptionconfigresulttypedef"></a>
 
 ## GetFieldLevelEncryptionConfigResultTypeDef
 
@@ -2065,6 +2305,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfieldlevelencryptionprofileconfigrequestrequesttypedef"></a>
+
 ## GetFieldLevelEncryptionProfileConfigRequestRequestTypeDef
 
 ```python
@@ -2074,6 +2316,8 @@ from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileConfig
 Required fields:
 
 - `Id`: `str`
+
+<a id="getfieldlevelencryptionprofileconfigresulttypedef"></a>
 
 ## GetFieldLevelEncryptionProfileConfigResultTypeDef
 
@@ -2089,6 +2333,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfieldlevelencryptionprofilerequestrequesttypedef"></a>
+
 ## GetFieldLevelEncryptionProfileRequestRequestTypeDef
 
 ```python
@@ -2098,6 +2344,8 @@ from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileReques
 Required fields:
 
 - `Id`: `str`
+
+<a id="getfieldlevelencryptionprofileresulttypedef"></a>
 
 ## GetFieldLevelEncryptionProfileResultTypeDef
 
@@ -2113,6 +2361,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfieldlevelencryptionrequestrequesttypedef"></a>
+
 ## GetFieldLevelEncryptionRequestRequestTypeDef
 
 ```python
@@ -2122,6 +2372,8 @@ from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionRequestReques
 Required fields:
 
 - `Id`: `str`
+
+<a id="getfieldlevelencryptionresulttypedef"></a>
 
 ## GetFieldLevelEncryptionResultTypeDef
 
@@ -2137,6 +2389,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfunctionrequestrequesttypedef"></a>
+
 ## GetFunctionRequestRequestTypeDef
 
 ```python
@@ -2150,6 +2404,8 @@ Required fields:
 Optional fields:
 
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
+
+<a id="getfunctionresulttypedef"></a>
 
 ## GetFunctionResultTypeDef
 
@@ -2165,6 +2421,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinvalidationrequestrequesttypedef"></a>
+
 ## GetInvalidationRequestRequestTypeDef
 
 ```python
@@ -2175,6 +2433,8 @@ Required fields:
 
 - `DistributionId`: `str`
 - `Id`: `str`
+
+<a id="getinvalidationresulttypedef"></a>
 
 ## GetInvalidationResultTypeDef
 
@@ -2188,6 +2448,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getkeygroupconfigrequestrequesttypedef"></a>
+
 ## GetKeyGroupConfigRequestRequestTypeDef
 
 ```python
@@ -2197,6 +2459,8 @@ from mypy_boto3_cloudfront.type_defs import GetKeyGroupConfigRequestRequestTypeD
 Required fields:
 
 - `Id`: `str`
+
+<a id="getkeygroupconfigresulttypedef"></a>
 
 ## GetKeyGroupConfigResultTypeDef
 
@@ -2212,6 +2476,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getkeygrouprequestrequesttypedef"></a>
+
 ## GetKeyGroupRequestRequestTypeDef
 
 ```python
@@ -2221,6 +2487,8 @@ from mypy_boto3_cloudfront.type_defs import GetKeyGroupRequestRequestTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="getkeygroupresulttypedef"></a>
 
 ## GetKeyGroupResultTypeDef
 
@@ -2235,6 +2503,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmonitoringsubscriptionrequestrequesttypedef"></a>
+
 ## GetMonitoringSubscriptionRequestRequestTypeDef
 
 ```python
@@ -2244,6 +2514,8 @@ from mypy_boto3_cloudfront.type_defs import GetMonitoringSubscriptionRequestRequ
 Required fields:
 
 - `DistributionId`: `str`
+
+<a id="getmonitoringsubscriptionresulttypedef"></a>
 
 ## GetMonitoringSubscriptionResultTypeDef
 
@@ -2258,6 +2530,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getoriginrequestpolicyconfigrequestrequesttypedef"></a>
+
 ## GetOriginRequestPolicyConfigRequestRequestTypeDef
 
 ```python
@@ -2267,6 +2541,8 @@ from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyConfigRequestR
 Required fields:
 
 - `Id`: `str`
+
+<a id="getoriginrequestpolicyconfigresulttypedef"></a>
 
 ## GetOriginRequestPolicyConfigResultTypeDef
 
@@ -2282,6 +2558,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getoriginrequestpolicyrequestrequesttypedef"></a>
+
 ## GetOriginRequestPolicyRequestRequestTypeDef
 
 ```python
@@ -2291,6 +2569,8 @@ from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyRequestRequest
 Required fields:
 
 - `Id`: `str`
+
+<a id="getoriginrequestpolicyresulttypedef"></a>
 
 ## GetOriginRequestPolicyResultTypeDef
 
@@ -2306,6 +2586,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpublickeyconfigrequestrequesttypedef"></a>
+
 ## GetPublicKeyConfigRequestRequestTypeDef
 
 ```python
@@ -2315,6 +2597,8 @@ from mypy_boto3_cloudfront.type_defs import GetPublicKeyConfigRequestRequestType
 Required fields:
 
 - `Id`: `str`
+
+<a id="getpublickeyconfigresulttypedef"></a>
 
 ## GetPublicKeyConfigResultTypeDef
 
@@ -2330,6 +2614,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpublickeyrequestrequesttypedef"></a>
+
 ## GetPublicKeyRequestRequestTypeDef
 
 ```python
@@ -2339,6 +2625,8 @@ from mypy_boto3_cloudfront.type_defs import GetPublicKeyRequestRequestTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="getpublickeyresulttypedef"></a>
 
 ## GetPublicKeyResultTypeDef
 
@@ -2353,6 +2641,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrealtimelogconfigrequestrequesttypedef"></a>
+
 ## GetRealtimeLogConfigRequestRequestTypeDef
 
 ```python
@@ -2363,6 +2653,8 @@ Optional fields:
 
 - `Name`: `str`
 - `ARN`: `str`
+
+<a id="getrealtimelogconfigresulttypedef"></a>
 
 ## GetRealtimeLogConfigResultTypeDef
 
@@ -2377,6 +2669,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresponseheaderspolicyconfigrequestrequesttypedef"></a>
+
 ## GetResponseHeadersPolicyConfigRequestRequestTypeDef
 
 ```python
@@ -2386,6 +2680,8 @@ from mypy_boto3_cloudfront.type_defs import GetResponseHeadersPolicyConfigReques
 Required fields:
 
 - `Id`: `str`
+
+<a id="getresponseheaderspolicyconfigresulttypedef"></a>
 
 ## GetResponseHeadersPolicyConfigResultTypeDef
 
@@ -2401,6 +2697,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresponseheaderspolicyrequestrequesttypedef"></a>
+
 ## GetResponseHeadersPolicyRequestRequestTypeDef
 
 ```python
@@ -2410,6 +2708,8 @@ from mypy_boto3_cloudfront.type_defs import GetResponseHeadersPolicyRequestReque
 Required fields:
 
 - `Id`: `str`
+
+<a id="getresponseheaderspolicyresulttypedef"></a>
 
 ## GetResponseHeadersPolicyResultTypeDef
 
@@ -2425,6 +2725,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstreamingdistributionconfigrequestrequesttypedef"></a>
+
 ## GetStreamingDistributionConfigRequestRequestTypeDef
 
 ```python
@@ -2434,6 +2736,8 @@ from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionConfigReques
 Required fields:
 
 - `Id`: `str`
+
+<a id="getstreamingdistributionconfigresulttypedef"></a>
 
 ## GetStreamingDistributionConfigResultTypeDef
 
@@ -2449,6 +2753,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstreamingdistributionrequestrequesttypedef"></a>
+
 ## GetStreamingDistributionRequestRequestTypeDef
 
 ```python
@@ -2458,6 +2764,8 @@ from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionRequestReque
 Required fields:
 
 - `Id`: `str`
+
+<a id="getstreamingdistributionresulttypedef"></a>
 
 ## GetStreamingDistributionResultTypeDef
 
@@ -2473,6 +2781,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="headerstypedef"></a>
+
 ## HeadersTypeDef
 
 ```python
@@ -2487,6 +2797,8 @@ Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
 
+<a id="invalidationbatchtypedef"></a>
+
 ## InvalidationBatchTypeDef
 
 ```python
@@ -2497,6 +2809,8 @@ Required fields:
 
 - `Paths`: [PathsTypeDef](./type_defs.md#pathstypedef)
 - `CallerReference`: `str`
+
+<a id="invalidationlisttypedef"></a>
 
 ## InvalidationListTypeDef
 
@@ -2517,6 +2831,8 @@ Optional fields:
 - `Items`:
   `List`\[[InvalidationSummaryTypeDef](./type_defs.md#invalidationsummarytypedef)\]
 
+<a id="invalidationsummarytypedef"></a>
+
 ## InvalidationSummaryTypeDef
 
 ```python
@@ -2528,6 +2844,8 @@ Required fields:
 - `Id`: `str`
 - `CreateTime`: `datetime`
 - `Status`: `str`
+
+<a id="invalidationtypedef"></a>
 
 ## InvalidationTypeDef
 
@@ -2543,6 +2861,8 @@ Required fields:
 - `InvalidationBatch`:
   [InvalidationBatchTypeDef](./type_defs.md#invalidationbatchtypedef)
 
+<a id="kgkeypairidstypedef"></a>
+
 ## KGKeyPairIdsTypeDef
 
 ```python
@@ -2553,6 +2873,8 @@ Optional fields:
 
 - `KeyGroupId`: `str`
 - `KeyPairIds`: [KeyPairIdsTypeDef](./type_defs.md#keypairidstypedef)
+
+<a id="keygroupconfigtypedef"></a>
 
 ## KeyGroupConfigTypeDef
 
@@ -2568,6 +2890,8 @@ Required fields:
 Optional fields:
 
 - `Comment`: `str`
+
+<a id="keygrouplisttypedef"></a>
 
 ## KeyGroupListTypeDef
 
@@ -2586,6 +2910,8 @@ Optional fields:
 - `Items`:
   `List`\[[KeyGroupSummaryTypeDef](./type_defs.md#keygroupsummarytypedef)\]
 
+<a id="keygroupsummarytypedef"></a>
+
 ## KeyGroupSummaryTypeDef
 
 ```python
@@ -2595,6 +2921,8 @@ from mypy_boto3_cloudfront.type_defs import KeyGroupSummaryTypeDef
 Required fields:
 
 - `KeyGroup`: [KeyGroupTypeDef](./type_defs.md#keygrouptypedef)
+
+<a id="keygrouptypedef"></a>
 
 ## KeyGroupTypeDef
 
@@ -2608,6 +2936,8 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `KeyGroupConfig`:
   [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
+
+<a id="keypairidstypedef"></a>
 
 ## KeyPairIdsTypeDef
 
@@ -2623,6 +2953,8 @@ Optional fields:
 
 - `Items`: `List`\[`str`\]
 
+<a id="kinesisstreamconfigtypedef"></a>
+
 ## KinesisStreamConfigTypeDef
 
 ```python
@@ -2633,6 +2965,8 @@ Required fields:
 
 - `RoleARN`: `str`
 - `StreamARN`: `str`
+
+<a id="lambdafunctionassociationtypedef"></a>
 
 ## LambdaFunctionAssociationTypeDef
 
@@ -2649,6 +2983,8 @@ Optional fields:
 
 - `IncludeBody`: `bool`
 
+<a id="lambdafunctionassociationstypedef"></a>
+
 ## LambdaFunctionAssociationsTypeDef
 
 ```python
@@ -2664,6 +3000,8 @@ Optional fields:
 - `Items`:
   `Sequence`\[[LambdaFunctionAssociationTypeDef](./type_defs.md#lambdafunctionassociationtypedef)\]
 
+<a id="listcachepoliciesrequestrequesttypedef"></a>
+
 ## ListCachePoliciesRequestRequestTypeDef
 
 ```python
@@ -2675,6 +3013,8 @@ Optional fields:
 - `Type`: [CachePolicyTypeType](./literals.md#cachepolicytypetype)
 - `Marker`: `str`
 - `MaxItems`: `str`
+
+<a id="listcachepoliciesresulttypedef"></a>
 
 ## ListCachePoliciesResultTypeDef
 
@@ -2689,6 +3029,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcloudfrontoriginaccessidentitiesrequestrequesttypedef"></a>
+
 ## ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef
 
 ```python
@@ -2699,6 +3041,8 @@ Optional fields:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
+
+<a id="listcloudfrontoriginaccessidentitiesresulttypedef"></a>
 
 ## ListCloudFrontOriginAccessIdentitiesResultTypeDef
 
@@ -2712,6 +3056,8 @@ Required fields:
   [CloudFrontOriginAccessIdentityListTypeDef](./type_defs.md#cloudfrontoriginaccessidentitylisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listconflictingaliasesrequestrequesttypedef"></a>
 
 ## ListConflictingAliasesRequestRequestTypeDef
 
@@ -2729,6 +3075,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
+<a id="listconflictingaliasesresulttypedef"></a>
+
 ## ListConflictingAliasesResultTypeDef
 
 ```python
@@ -2741,6 +3089,8 @@ Required fields:
   [ConflictingAliasesListTypeDef](./type_defs.md#conflictingaliaseslisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdistributionsbycachepolicyidrequestrequesttypedef"></a>
 
 ## ListDistributionsByCachePolicyIdRequestRequestTypeDef
 
@@ -2757,6 +3107,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `str`
 
+<a id="listdistributionsbycachepolicyidresulttypedef"></a>
+
 ## ListDistributionsByCachePolicyIdResultTypeDef
 
 ```python
@@ -2769,6 +3121,8 @@ Required fields:
   [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdistributionsbykeygrouprequestrequesttypedef"></a>
 
 ## ListDistributionsByKeyGroupRequestRequestTypeDef
 
@@ -2785,6 +3139,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `str`
 
+<a id="listdistributionsbykeygroupresulttypedef"></a>
+
 ## ListDistributionsByKeyGroupResultTypeDef
 
 ```python
@@ -2797,6 +3153,8 @@ Required fields:
   [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdistributionsbyoriginrequestpolicyidrequestrequesttypedef"></a>
 
 ## ListDistributionsByOriginRequestPolicyIdRequestRequestTypeDef
 
@@ -2813,6 +3171,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `str`
 
+<a id="listdistributionsbyoriginrequestpolicyidresulttypedef"></a>
+
 ## ListDistributionsByOriginRequestPolicyIdResultTypeDef
 
 ```python
@@ -2825,6 +3185,8 @@ Required fields:
   [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdistributionsbyrealtimelogconfigrequestrequesttypedef"></a>
 
 ## ListDistributionsByRealtimeLogConfigRequestRequestTypeDef
 
@@ -2839,6 +3201,8 @@ Optional fields:
 - `RealtimeLogConfigName`: `str`
 - `RealtimeLogConfigArn`: `str`
 
+<a id="listdistributionsbyrealtimelogconfigresulttypedef"></a>
+
 ## ListDistributionsByRealtimeLogConfigResultTypeDef
 
 ```python
@@ -2851,6 +3215,8 @@ Required fields:
   [DistributionListTypeDef](./type_defs.md#distributionlisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdistributionsbyresponseheaderspolicyidrequestrequesttypedef"></a>
 
 ## ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef
 
@@ -2867,6 +3233,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `str`
 
+<a id="listdistributionsbyresponseheaderspolicyidresulttypedef"></a>
+
 ## ListDistributionsByResponseHeadersPolicyIdResultTypeDef
 
 ```python
@@ -2879,6 +3247,8 @@ Required fields:
   [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdistributionsbywebaclidrequestrequesttypedef"></a>
 
 ## ListDistributionsByWebACLIdRequestRequestTypeDef
 
@@ -2895,6 +3265,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `str`
 
+<a id="listdistributionsbywebaclidresulttypedef"></a>
+
 ## ListDistributionsByWebACLIdResultTypeDef
 
 ```python
@@ -2908,6 +3280,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdistributionsrequestrequesttypedef"></a>
+
 ## ListDistributionsRequestRequestTypeDef
 
 ```python
@@ -2918,6 +3292,8 @@ Optional fields:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
+
+<a id="listdistributionsresulttypedef"></a>
 
 ## ListDistributionsResultTypeDef
 
@@ -2932,6 +3308,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfieldlevelencryptionconfigsrequestrequesttypedef"></a>
+
 ## ListFieldLevelEncryptionConfigsRequestRequestTypeDef
 
 ```python
@@ -2942,6 +3320,8 @@ Optional fields:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
+
+<a id="listfieldlevelencryptionconfigsresulttypedef"></a>
 
 ## ListFieldLevelEncryptionConfigsResultTypeDef
 
@@ -2956,6 +3336,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfieldlevelencryptionprofilesrequestrequesttypedef"></a>
+
 ## ListFieldLevelEncryptionProfilesRequestRequestTypeDef
 
 ```python
@@ -2966,6 +3348,8 @@ Optional fields:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
+
+<a id="listfieldlevelencryptionprofilesresulttypedef"></a>
 
 ## ListFieldLevelEncryptionProfilesResultTypeDef
 
@@ -2980,6 +3364,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfunctionsrequestrequesttypedef"></a>
+
 ## ListFunctionsRequestRequestTypeDef
 
 ```python
@@ -2992,6 +3378,8 @@ Optional fields:
 - `MaxItems`: `str`
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
 
+<a id="listfunctionsresulttypedef"></a>
+
 ## ListFunctionsResultTypeDef
 
 ```python
@@ -3003,6 +3391,8 @@ Required fields:
 - `FunctionList`: [FunctionListTypeDef](./type_defs.md#functionlisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listinvalidationsrequestrequesttypedef"></a>
 
 ## ListInvalidationsRequestRequestTypeDef
 
@@ -3019,6 +3409,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `str`
 
+<a id="listinvalidationsresulttypedef"></a>
+
 ## ListInvalidationsResultTypeDef
 
 ```python
@@ -3032,6 +3424,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listkeygroupsrequestrequesttypedef"></a>
+
 ## ListKeyGroupsRequestRequestTypeDef
 
 ```python
@@ -3042,6 +3436,8 @@ Optional fields:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
+
+<a id="listkeygroupsresulttypedef"></a>
 
 ## ListKeyGroupsResultTypeDef
 
@@ -3054,6 +3450,8 @@ Required fields:
 - `KeyGroupList`: [KeyGroupListTypeDef](./type_defs.md#keygrouplisttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listoriginrequestpoliciesrequestrequesttypedef"></a>
 
 ## ListOriginRequestPoliciesRequestRequestTypeDef
 
@@ -3068,6 +3466,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `str`
 
+<a id="listoriginrequestpoliciesresulttypedef"></a>
+
 ## ListOriginRequestPoliciesResultTypeDef
 
 ```python
@@ -3081,6 +3481,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpublickeysrequestrequesttypedef"></a>
+
 ## ListPublicKeysRequestRequestTypeDef
 
 ```python
@@ -3091,6 +3493,8 @@ Optional fields:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
+
+<a id="listpublickeysresulttypedef"></a>
 
 ## ListPublicKeysResultTypeDef
 
@@ -3104,6 +3508,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrealtimelogconfigsrequestrequesttypedef"></a>
+
 ## ListRealtimeLogConfigsRequestRequestTypeDef
 
 ```python
@@ -3114,6 +3520,8 @@ Optional fields:
 
 - `MaxItems`: `str`
 - `Marker`: `str`
+
+<a id="listrealtimelogconfigsresulttypedef"></a>
 
 ## ListRealtimeLogConfigsResultTypeDef
 
@@ -3128,6 +3536,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresponseheaderspoliciesrequestrequesttypedef"></a>
+
 ## ListResponseHeadersPoliciesRequestRequestTypeDef
 
 ```python
@@ -3140,6 +3550,8 @@ Optional fields:
   [ResponseHeadersPolicyTypeType](./literals.md#responseheaderspolicytypetype)
 - `Marker`: `str`
 - `MaxItems`: `str`
+
+<a id="listresponseheaderspoliciesresulttypedef"></a>
 
 ## ListResponseHeadersPoliciesResultTypeDef
 
@@ -3154,6 +3566,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="liststreamingdistributionsrequestrequesttypedef"></a>
+
 ## ListStreamingDistributionsRequestRequestTypeDef
 
 ```python
@@ -3164,6 +3578,8 @@ Optional fields:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
+
+<a id="liststreamingdistributionsresulttypedef"></a>
 
 ## ListStreamingDistributionsResultTypeDef
 
@@ -3178,6 +3594,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -3187,6 +3605,8 @@ from mypy_boto3_cloudfront.type_defs import ListTagsForResourceRequestRequestTyp
 Required fields:
 
 - `Resource`: `str`
+
+<a id="listtagsforresourceresulttypedef"></a>
 
 ## ListTagsForResourceResultTypeDef
 
@@ -3199,6 +3619,8 @@ Required fields:
 - `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="loggingconfigtypedef"></a>
 
 ## LoggingConfigTypeDef
 
@@ -3213,6 +3635,8 @@ Required fields:
 - `Bucket`: `str`
 - `Prefix`: `str`
 
+<a id="monitoringsubscriptiontypedef"></a>
+
 ## MonitoringSubscriptionTypeDef
 
 ```python
@@ -3223,6 +3647,8 @@ Optional fields:
 
 - `RealtimeMetricsSubscriptionConfig`:
   [RealtimeMetricsSubscriptionConfigTypeDef](./type_defs.md#realtimemetricssubscriptionconfigtypedef)
+
+<a id="origincustomheadertypedef"></a>
 
 ## OriginCustomHeaderTypeDef
 
@@ -3235,6 +3661,8 @@ Required fields:
 - `HeaderName`: `str`
 - `HeaderValue`: `str`
 
+<a id="origingroupfailovercriteriatypedef"></a>
+
 ## OriginGroupFailoverCriteriaTypeDef
 
 ```python
@@ -3245,6 +3673,8 @@ Required fields:
 
 - `StatusCodes`: [StatusCodesTypeDef](./type_defs.md#statuscodestypedef)
 
+<a id="origingroupmembertypedef"></a>
+
 ## OriginGroupMemberTypeDef
 
 ```python
@@ -3254,6 +3684,8 @@ from mypy_boto3_cloudfront.type_defs import OriginGroupMemberTypeDef
 Required fields:
 
 - `OriginId`: `str`
+
+<a id="origingroupmemberstypedef"></a>
 
 ## OriginGroupMembersTypeDef
 
@@ -3266,6 +3698,8 @@ Required fields:
 - `Quantity`: `int`
 - `Items`:
   `Sequence`\[[OriginGroupMemberTypeDef](./type_defs.md#origingroupmembertypedef)\]
+
+<a id="origingrouptypedef"></a>
 
 ## OriginGroupTypeDef
 
@@ -3281,6 +3715,8 @@ Required fields:
 - `Members`:
   [OriginGroupMembersTypeDef](./type_defs.md#origingroupmemberstypedef)
 
+<a id="origingroupstypedef"></a>
+
 ## OriginGroupsTypeDef
 
 ```python
@@ -3295,6 +3731,8 @@ Optional fields:
 
 - `Items`:
   `Sequence`\[[OriginGroupTypeDef](./type_defs.md#origingrouptypedef)\]
+
+<a id="originrequestpolicyconfigtypedef"></a>
 
 ## OriginRequestPolicyConfigTypeDef
 
@@ -3316,6 +3754,8 @@ Optional fields:
 
 - `Comment`: `str`
 
+<a id="originrequestpolicycookiesconfigtypedef"></a>
+
 ## OriginRequestPolicyCookiesConfigTypeDef
 
 ```python
@@ -3331,6 +3771,8 @@ Optional fields:
 
 - `Cookies`: [CookieNamesTypeDef](./type_defs.md#cookienamestypedef)
 
+<a id="originrequestpolicyheadersconfigtypedef"></a>
+
 ## OriginRequestPolicyHeadersConfigTypeDef
 
 ```python
@@ -3345,6 +3787,8 @@ Required fields:
 Optional fields:
 
 - `Headers`: [HeadersTypeDef](./type_defs.md#headerstypedef)
+
+<a id="originrequestpolicylisttypedef"></a>
 
 ## OriginRequestPolicyListTypeDef
 
@@ -3363,6 +3807,8 @@ Optional fields:
 - `Items`:
   `List`\[[OriginRequestPolicySummaryTypeDef](./type_defs.md#originrequestpolicysummarytypedef)\]
 
+<a id="originrequestpolicyquerystringsconfigtypedef"></a>
+
 ## OriginRequestPolicyQueryStringsConfigTypeDef
 
 ```python
@@ -3379,6 +3825,8 @@ Optional fields:
 - `QueryStrings`:
   [QueryStringNamesTypeDef](./type_defs.md#querystringnamestypedef)
 
+<a id="originrequestpolicysummarytypedef"></a>
+
 ## OriginRequestPolicySummaryTypeDef
 
 ```python
@@ -3392,6 +3840,8 @@ Required fields:
 - `OriginRequestPolicy`:
   [OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef)
 
+<a id="originrequestpolicytypedef"></a>
+
 ## OriginRequestPolicyTypeDef
 
 ```python
@@ -3404,6 +3854,8 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `OriginRequestPolicyConfig`:
   [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
+
+<a id="originshieldtypedef"></a>
 
 ## OriginShieldTypeDef
 
@@ -3419,6 +3871,8 @@ Optional fields:
 
 - `OriginShieldRegion`: `str`
 
+<a id="originsslprotocolstypedef"></a>
+
 ## OriginSslProtocolsTypeDef
 
 ```python
@@ -3429,6 +3883,8 @@ Required fields:
 
 - `Quantity`: `int`
 - `Items`: `Sequence`\[[SslProtocolType](./literals.md#sslprotocoltype)\]
+
+<a id="origintypedef"></a>
 
 ## OriginTypeDef
 
@@ -3453,6 +3909,8 @@ Optional fields:
 - `ConnectionTimeout`: `int`
 - `OriginShield`: [OriginShieldTypeDef](./type_defs.md#originshieldtypedef)
 
+<a id="originstypedef"></a>
+
 ## OriginsTypeDef
 
 ```python
@@ -3463,6 +3921,8 @@ Required fields:
 
 - `Quantity`: `int`
 - `Items`: `Sequence`\[[OriginTypeDef](./type_defs.md#origintypedef)\]
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -3475,6 +3935,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="parametersincachekeyandforwardedtoorigintypedef"></a>
 
 ## ParametersInCacheKeyAndForwardedToOriginTypeDef
 
@@ -3496,6 +3958,8 @@ Optional fields:
 
 - `EnableAcceptEncodingBrotli`: `bool`
 
+<a id="pathstypedef"></a>
+
 ## PathsTypeDef
 
 ```python
@@ -3509,6 +3973,8 @@ Required fields:
 Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
+
+<a id="publickeyconfigtypedef"></a>
 
 ## PublicKeyConfigTypeDef
 
@@ -3525,6 +3991,8 @@ Required fields:
 Optional fields:
 
 - `Comment`: `str`
+
+<a id="publickeylisttypedef"></a>
 
 ## PublicKeyListTypeDef
 
@@ -3543,6 +4011,8 @@ Optional fields:
 - `Items`:
   `List`\[[PublicKeySummaryTypeDef](./type_defs.md#publickeysummarytypedef)\]
 
+<a id="publickeysummarytypedef"></a>
+
 ## PublicKeySummaryTypeDef
 
 ```python
@@ -3560,6 +4030,8 @@ Optional fields:
 
 - `Comment`: `str`
 
+<a id="publickeytypedef"></a>
+
 ## PublicKeyTypeDef
 
 ```python
@@ -3573,6 +4045,8 @@ Required fields:
 - `PublicKeyConfig`:
   [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef)
 
+<a id="publishfunctionrequestrequesttypedef"></a>
+
 ## PublishFunctionRequestRequestTypeDef
 
 ```python
@@ -3583,6 +4057,8 @@ Required fields:
 
 - `Name`: `str`
 - `IfMatch`: `str`
+
+<a id="publishfunctionresulttypedef"></a>
 
 ## PublishFunctionResultTypeDef
 
@@ -3596,6 +4072,8 @@ Required fields:
   [FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="queryargprofileconfigtypedef"></a>
 
 ## QueryArgProfileConfigTypeDef
 
@@ -3612,6 +4090,8 @@ Optional fields:
 - `QueryArgProfiles`:
   [QueryArgProfilesTypeDef](./type_defs.md#queryargprofilestypedef)
 
+<a id="queryargprofiletypedef"></a>
+
 ## QueryArgProfileTypeDef
 
 ```python
@@ -3622,6 +4102,8 @@ Required fields:
 
 - `QueryArg`: `str`
 - `ProfileId`: `str`
+
+<a id="queryargprofilestypedef"></a>
 
 ## QueryArgProfilesTypeDef
 
@@ -3638,6 +4120,8 @@ Optional fields:
 - `Items`:
   `Sequence`\[[QueryArgProfileTypeDef](./type_defs.md#queryargprofiletypedef)\]
 
+<a id="querystringcachekeystypedef"></a>
+
 ## QueryStringCacheKeysTypeDef
 
 ```python
@@ -3651,6 +4135,8 @@ Required fields:
 Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
+
+<a id="querystringnamestypedef"></a>
 
 ## QueryStringNamesTypeDef
 
@@ -3666,6 +4152,8 @@ Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
 
+<a id="realtimelogconfigtypedef"></a>
+
 ## RealtimeLogConfigTypeDef
 
 ```python
@@ -3679,6 +4167,8 @@ Required fields:
 - `SamplingRate`: `int`
 - `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
 - `Fields`: `List`\[`str`\]
+
+<a id="realtimelogconfigstypedef"></a>
 
 ## RealtimeLogConfigsTypeDef
 
@@ -3698,6 +4188,8 @@ Optional fields:
   `List`\[[RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef)\]
 - `NextMarker`: `str`
 
+<a id="realtimemetricssubscriptionconfigtypedef"></a>
+
 ## RealtimeMetricsSubscriptionConfigTypeDef
 
 ```python
@@ -3709,6 +4201,8 @@ Required fields:
 - `RealtimeMetricsSubscriptionStatus`:
   [RealtimeMetricsSubscriptionStatusType](./literals.md#realtimemetricssubscriptionstatustype)
 
+<a id="responseheaderspolicyaccesscontrolallowheaderstypedef"></a>
+
 ## ResponseHeadersPolicyAccessControlAllowHeadersTypeDef
 
 ```python
@@ -3719,6 +4213,8 @@ Required fields:
 
 - `Quantity`: `int`
 - `Items`: `Sequence`\[`str`\]
+
+<a id="responseheaderspolicyaccesscontrolallowmethodstypedef"></a>
 
 ## ResponseHeadersPolicyAccessControlAllowMethodsTypeDef
 
@@ -3732,6 +4228,8 @@ Required fields:
 - `Items`:
   `Sequence`\[[ResponseHeadersPolicyAccessControlAllowMethodsValuesType](./literals.md#responseheaderspolicyaccesscontrolallowmethodsvaluestype)\]
 
+<a id="responseheaderspolicyaccesscontrolalloworiginstypedef"></a>
+
 ## ResponseHeadersPolicyAccessControlAllowOriginsTypeDef
 
 ```python
@@ -3742,6 +4240,8 @@ Required fields:
 
 - `Quantity`: `int`
 - `Items`: `Sequence`\[`str`\]
+
+<a id="responseheaderspolicyaccesscontrolexposeheaderstypedef"></a>
 
 ## ResponseHeadersPolicyAccessControlExposeHeadersTypeDef
 
@@ -3756,6 +4256,8 @@ Required fields:
 Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
+
+<a id="responseheaderspolicyconfigtypedef"></a>
 
 ## ResponseHeadersPolicyConfigTypeDef
 
@@ -3777,6 +4279,8 @@ Optional fields:
 - `CustomHeadersConfig`:
   [ResponseHeadersPolicyCustomHeadersConfigTypeDef](./type_defs.md#responseheaderspolicycustomheadersconfigtypedef)
 
+<a id="responseheaderspolicycontentsecuritypolicytypedef"></a>
+
 ## ResponseHeadersPolicyContentSecurityPolicyTypeDef
 
 ```python
@@ -3788,6 +4292,8 @@ Required fields:
 - `Override`: `bool`
 - `ContentSecurityPolicy`: `str`
 
+<a id="responseheaderspolicycontenttypeoptionstypedef"></a>
+
 ## ResponseHeadersPolicyContentTypeOptionsTypeDef
 
 ```python
@@ -3797,6 +4303,8 @@ from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyContentTypeOpti
 Required fields:
 
 - `Override`: `bool`
+
+<a id="responseheaderspolicycorsconfigtypedef"></a>
 
 ## ResponseHeadersPolicyCorsConfigTypeDef
 
@@ -3821,6 +4329,8 @@ Optional fields:
   [ResponseHeadersPolicyAccessControlExposeHeadersTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolexposeheaderstypedef)
 - `AccessControlMaxAgeSec`: `int`
 
+<a id="responseheaderspolicycustomheadertypedef"></a>
+
 ## ResponseHeadersPolicyCustomHeaderTypeDef
 
 ```python
@@ -3832,6 +4342,8 @@ Required fields:
 - `Header`: `str`
 - `Value`: `str`
 - `Override`: `bool`
+
+<a id="responseheaderspolicycustomheadersconfigtypedef"></a>
 
 ## ResponseHeadersPolicyCustomHeadersConfigTypeDef
 
@@ -3848,6 +4360,8 @@ Optional fields:
 - `Items`:
   `Sequence`\[[ResponseHeadersPolicyCustomHeaderTypeDef](./type_defs.md#responseheaderspolicycustomheadertypedef)\]
 
+<a id="responseheaderspolicyframeoptionstypedef"></a>
+
 ## ResponseHeadersPolicyFrameOptionsTypeDef
 
 ```python
@@ -3858,6 +4372,8 @@ Required fields:
 
 - `Override`: `bool`
 - `FrameOption`: [FrameOptionsListType](./literals.md#frameoptionslisttype)
+
+<a id="responseheaderspolicylisttypedef"></a>
 
 ## ResponseHeadersPolicyListTypeDef
 
@@ -3876,6 +4392,8 @@ Optional fields:
 - `Items`:
   `List`\[[ResponseHeadersPolicySummaryTypeDef](./type_defs.md#responseheaderspolicysummarytypedef)\]
 
+<a id="responseheaderspolicyreferrerpolicytypedef"></a>
+
 ## ResponseHeadersPolicyReferrerPolicyTypeDef
 
 ```python
@@ -3887,6 +4405,8 @@ Required fields:
 - `Override`: `bool`
 - `ReferrerPolicy`:
   [ReferrerPolicyListType](./literals.md#referrerpolicylisttype)
+
+<a id="responseheaderspolicysecurityheadersconfigtypedef"></a>
 
 ## ResponseHeadersPolicySecurityHeadersConfigTypeDef
 
@@ -3909,6 +4429,8 @@ Optional fields:
 - `StrictTransportSecurity`:
   [ResponseHeadersPolicyStrictTransportSecurityTypeDef](./type_defs.md#responseheaderspolicystricttransportsecuritytypedef)
 
+<a id="responseheaderspolicystricttransportsecuritytypedef"></a>
+
 ## ResponseHeadersPolicyStrictTransportSecurityTypeDef
 
 ```python
@@ -3925,6 +4447,8 @@ Optional fields:
 - `IncludeSubdomains`: `bool`
 - `Preload`: `bool`
 
+<a id="responseheaderspolicysummarytypedef"></a>
+
 ## ResponseHeadersPolicySummaryTypeDef
 
 ```python
@@ -3938,6 +4462,8 @@ Required fields:
 - `ResponseHeadersPolicy`:
   [ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef)
 
+<a id="responseheaderspolicytypedef"></a>
+
 ## ResponseHeadersPolicyTypeDef
 
 ```python
@@ -3950,6 +4476,8 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `ResponseHeadersPolicyConfig`:
   [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
+
+<a id="responseheaderspolicyxssprotectiontypedef"></a>
 
 ## ResponseHeadersPolicyXSSProtectionTypeDef
 
@@ -3967,6 +4495,8 @@ Optional fields:
 - `ModeBlock`: `bool`
 - `ReportUri`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -3981,6 +4511,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="restrictionstypedef"></a>
+
 ## RestrictionsTypeDef
 
 ```python
@@ -3992,6 +4524,8 @@ Required fields:
 - `GeoRestriction`:
   [GeoRestrictionTypeDef](./type_defs.md#georestrictiontypedef)
 
+<a id="s3originconfigtypedef"></a>
+
 ## S3OriginConfigTypeDef
 
 ```python
@@ -4001,6 +4535,8 @@ from mypy_boto3_cloudfront.type_defs import S3OriginConfigTypeDef
 Required fields:
 
 - `OriginAccessIdentity`: `str`
+
+<a id="s3origintypedef"></a>
 
 ## S3OriginTypeDef
 
@@ -4013,6 +4549,8 @@ Required fields:
 - `DomainName`: `str`
 - `OriginAccessIdentity`: `str`
 
+<a id="signertypedef"></a>
+
 ## SignerTypeDef
 
 ```python
@@ -4024,6 +4562,8 @@ Optional fields:
 - `AwsAccountNumber`: `str`
 - `KeyPairIds`: [KeyPairIdsTypeDef](./type_defs.md#keypairidstypedef)
 
+<a id="statuscodestypedef"></a>
+
 ## StatusCodesTypeDef
 
 ```python
@@ -4034,6 +4574,8 @@ Required fields:
 
 - `Quantity`: `int`
 - `Items`: `Sequence`\[`int`\]
+
+<a id="streamingdistributionconfigtypedef"></a>
 
 ## StreamingDistributionConfigTypeDef
 
@@ -4057,6 +4599,8 @@ Optional fields:
   [StreamingLoggingConfigTypeDef](./type_defs.md#streamingloggingconfigtypedef)
 - `PriceClass`: [PriceClassType](./literals.md#priceclasstype)
 
+<a id="streamingdistributionconfigwithtagstypedef"></a>
+
 ## StreamingDistributionConfigWithTagsTypeDef
 
 ```python
@@ -4068,6 +4612,8 @@ Required fields:
 - `StreamingDistributionConfig`:
   [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
 - `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef)
+
+<a id="streamingdistributionlisttypedef"></a>
 
 ## StreamingDistributionListTypeDef
 
@@ -4087,6 +4633,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Items`:
   `List`\[[StreamingDistributionSummaryTypeDef](./type_defs.md#streamingdistributionsummarytypedef)\]
+
+<a id="streamingdistributionsummarytypedef"></a>
 
 ## StreamingDistributionSummaryTypeDef
 
@@ -4109,6 +4657,8 @@ Required fields:
 - `PriceClass`: [PriceClassType](./literals.md#priceclasstype)
 - `Enabled`: `bool`
 
+<a id="streamingdistributiontypedef"></a>
+
 ## StreamingDistributionTypeDef
 
 ```python
@@ -4130,6 +4680,8 @@ Optional fields:
 
 - `LastModifiedTime`: `datetime`
 
+<a id="streamingloggingconfigtypedef"></a>
+
 ## StreamingLoggingConfigTypeDef
 
 ```python
@@ -4142,6 +4694,8 @@ Required fields:
 - `Bucket`: `str`
 - `Prefix`: `str`
 
+<a id="tagkeystypedef"></a>
+
 ## TagKeysTypeDef
 
 ```python
@@ -4151,6 +4705,8 @@ from mypy_boto3_cloudfront.type_defs import TagKeysTypeDef
 Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -4162,6 +4718,8 @@ Required fields:
 
 - `Resource`: `str`
 - `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef)
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -4177,6 +4735,8 @@ Optional fields:
 
 - `Value`: `str`
 
+<a id="tagstypedef"></a>
+
 ## TagsTypeDef
 
 ```python
@@ -4186,6 +4746,8 @@ from mypy_boto3_cloudfront.type_defs import TagsTypeDef
 Optional fields:
 
 - `Items`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="testfunctionrequestrequesttypedef"></a>
 
 ## TestFunctionRequestRequestTypeDef
 
@@ -4203,6 +4765,8 @@ Optional fields:
 
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
 
+<a id="testfunctionresulttypedef"></a>
+
 ## TestFunctionResultTypeDef
 
 ```python
@@ -4214,6 +4778,8 @@ Required fields:
 - `TestResult`: [TestResultTypeDef](./type_defs.md#testresulttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="testresulttypedef"></a>
 
 ## TestResultTypeDef
 
@@ -4230,6 +4796,8 @@ Optional fields:
 - `FunctionErrorMessage`: `str`
 - `FunctionOutput`: `str`
 
+<a id="trustedkeygroupstypedef"></a>
+
 ## TrustedKeyGroupsTypeDef
 
 ```python
@@ -4244,6 +4812,8 @@ Required fields:
 Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
+
+<a id="trustedsignerstypedef"></a>
 
 ## TrustedSignersTypeDef
 
@@ -4260,6 +4830,8 @@ Optional fields:
 
 - `Items`: `Sequence`\[`str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -4270,6 +4842,8 @@ Required fields:
 
 - `Resource`: `str`
 - `TagKeys`: [TagKeysTypeDef](./type_defs.md#tagkeystypedef)
+
+<a id="updatecachepolicyrequestrequesttypedef"></a>
 
 ## UpdateCachePolicyRequestRequestTypeDef
 
@@ -4287,6 +4861,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="updatecachepolicyresulttypedef"></a>
+
 ## UpdateCachePolicyResultTypeDef
 
 ```python
@@ -4299,6 +4875,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecloudfrontoriginaccessidentityrequestrequesttypedef"></a>
 
 ## UpdateCloudFrontOriginAccessIdentityRequestRequestTypeDef
 
@@ -4316,6 +4894,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="updatecloudfrontoriginaccessidentityresulttypedef"></a>
+
 ## UpdateCloudFrontOriginAccessIdentityResultTypeDef
 
 ```python
@@ -4329,6 +4909,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedistributionrequestrequesttypedef"></a>
 
 ## UpdateDistributionRequestRequestTypeDef
 
@@ -4346,6 +4928,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="updatedistributionresulttypedef"></a>
+
 ## UpdateDistributionResultTypeDef
 
 ```python
@@ -4358,6 +4942,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefieldlevelencryptionconfigrequestrequesttypedef"></a>
 
 ## UpdateFieldLevelEncryptionConfigRequestRequestTypeDef
 
@@ -4375,6 +4961,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="updatefieldlevelencryptionconfigresulttypedef"></a>
+
 ## UpdateFieldLevelEncryptionConfigResultTypeDef
 
 ```python
@@ -4388,6 +4976,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefieldlevelencryptionprofilerequestrequesttypedef"></a>
 
 ## UpdateFieldLevelEncryptionProfileRequestRequestTypeDef
 
@@ -4405,6 +4995,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="updatefieldlevelencryptionprofileresulttypedef"></a>
+
 ## UpdateFieldLevelEncryptionProfileResultTypeDef
 
 ```python
@@ -4418,6 +5010,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefunctionrequestrequesttypedef"></a>
 
 ## UpdateFunctionRequestRequestTypeDef
 
@@ -4433,6 +5027,8 @@ Required fields:
   [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef)
 - `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
+<a id="updatefunctionresulttypedef"></a>
+
 ## UpdateFunctionResultTypeDef
 
 ```python
@@ -4446,6 +5042,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatekeygrouprequestrequesttypedef"></a>
 
 ## UpdateKeyGroupRequestRequestTypeDef
 
@@ -4463,6 +5061,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="updatekeygroupresulttypedef"></a>
+
 ## UpdateKeyGroupResultTypeDef
 
 ```python
@@ -4475,6 +5075,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateoriginrequestpolicyrequestrequesttypedef"></a>
 
 ## UpdateOriginRequestPolicyRequestRequestTypeDef
 
@@ -4492,6 +5094,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="updateoriginrequestpolicyresulttypedef"></a>
+
 ## UpdateOriginRequestPolicyResultTypeDef
 
 ```python
@@ -4505,6 +5109,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatepublickeyrequestrequesttypedef"></a>
 
 ## UpdatePublicKeyRequestRequestTypeDef
 
@@ -4522,6 +5128,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="updatepublickeyresulttypedef"></a>
+
 ## UpdatePublicKeyResultTypeDef
 
 ```python
@@ -4534,6 +5142,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterealtimelogconfigrequestrequesttypedef"></a>
 
 ## UpdateRealtimeLogConfigRequestRequestTypeDef
 
@@ -4549,6 +5159,8 @@ Optional fields:
 - `ARN`: `str`
 - `SamplingRate`: `int`
 
+<a id="updaterealtimelogconfigresulttypedef"></a>
+
 ## UpdateRealtimeLogConfigResultTypeDef
 
 ```python
@@ -4561,6 +5173,8 @@ Required fields:
   [RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateresponseheaderspolicyrequestrequesttypedef"></a>
 
 ## UpdateResponseHeadersPolicyRequestRequestTypeDef
 
@@ -4578,6 +5192,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="updateresponseheaderspolicyresulttypedef"></a>
+
 ## UpdateResponseHeadersPolicyResultTypeDef
 
 ```python
@@ -4591,6 +5207,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatestreamingdistributionrequestrequesttypedef"></a>
 
 ## UpdateStreamingDistributionRequestRequestTypeDef
 
@@ -4608,6 +5226,8 @@ Optional fields:
 
 - `IfMatch`: `str`
 
+<a id="updatestreamingdistributionresulttypedef"></a>
+
 ## UpdateStreamingDistributionResultTypeDef
 
 ```python
@@ -4621,6 +5241,8 @@ Required fields:
 - `ETag`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="viewercertificatetypedef"></a>
 
 ## ViewerCertificateTypeDef
 
@@ -4640,6 +5262,8 @@ Optional fields:
 - `Certificate`: `str`
 - `CertificateSource`:
   [CertificateSourceType](./literals.md#certificatesourcetype)
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

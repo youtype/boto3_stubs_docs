@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-acm-module"></a>
+
 # Type annotations for boto3 ACM module
 
 > [Index](..) > ACM
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
 type annotations stubs module
-[mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
+[mypy-boto3-acm](https://pypi.org/project/mypy-boto3-acm/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[acm]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[acm]'
+
+# standalone installation
 pip install mypy-boto3-acm
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-acm
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="acmclient"></a>
+
 ## ACMClient
 
 Type annotations for `boto3.client("acm")` as [ACMClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_acm.client import ACMClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -53,6 +67,8 @@ from mypy_boto3_acm.client import ACMClient
 - [resend_validation_email](./client.md#resend_validation_email)
 - [update_certificate_options](./client.md#update_certificate_options)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ACMClient [exceptions](./client.md#exceptions)
@@ -75,6 +91,8 @@ ACMClient [exceptions](./client.md#exceptions)
 - TooManyTagsException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -83,10 +101,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_acm.paginators import ListCertificatesPaginator, ...
+from mypy_boto3_acm.paginator import ListCertificatesPaginator, ...
 ```
 
 - [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -96,10 +116,12 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_acm.waiters import CertificateValidatedWaiter, ...
+from mypy_boto3_acm.waiter import CertificateValidatedWaiter, ...
 ```
 
 - [CertificateValidatedWaiter](./waiters.md#certificatevalidatedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -129,6 +151,8 @@ from mypy_boto3_acm.literals import CertificateStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

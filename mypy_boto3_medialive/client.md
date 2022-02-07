@@ -1,3 +1,5 @@
+<a id="medialiveclient-for-boto3-medialive-module"></a>
+
 # MediaLiveClient for boto3 MediaLive module
 
 > [Index](..) > [MediaLive](.) > MediaLiveClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
 type annotations stubs module
-[mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
+[mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 - [MediaLiveClient for boto3 MediaLive module](#medialiveclient-for-boto3-medialive-module)
   - [MediaLiveClient](#medialiveclient)
@@ -74,6 +76,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="medialiveclient"></a>
+
 ## MediaLiveClient
 
 Type annotations for `boto3.client("medialive")`
@@ -81,14 +85,17 @@ Type annotations for `boto3.client("medialive")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_medialive.client import MediaLiveClient
 
 def get_medialive_client() -> MediaLiveClient:
-    return boto3.client("medialive")
+    return Session().client("medialive")
 ```
 
 Boto3 documentation:
 [MediaLive.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -115,7 +122,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnprocessableEntityException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -127,6 +138,8 @@ Boto3 documentation:
 [MediaLive.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_input_device_transfer"></a>
 
 ### accept_input_device_transfer
 
@@ -146,6 +159,8 @@ Keyword-only arguments:
 - `InputDeviceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="batch_delete"></a>
 
 ### batch_delete
 
@@ -169,6 +184,8 @@ Keyword-only arguments:
 Returns
 [BatchDeleteResponseTypeDef](./type_defs.md#batchdeleteresponsetypedef).
 
+<a id="batch_start"></a>
+
 ### batch_start
 
 Starts existing resources See also:
@@ -189,6 +206,8 @@ Keyword-only arguments:
 
 Returns [BatchStartResponseTypeDef](./type_defs.md#batchstartresponsetypedef).
 
+<a id="batch_stop"></a>
+
 ### batch_stop
 
 Stops running resources See also:
@@ -208,6 +227,8 @@ Keyword-only arguments:
 - `MultiplexIds`: `Sequence`\[`str`\]
 
 Returns [BatchStopResponseTypeDef](./type_defs.md#batchstopresponsetypedef).
+
+<a id="batch_update_schedule"></a>
 
 ### batch_update_schedule
 
@@ -233,6 +254,8 @@ Keyword-only arguments:
 Returns
 [BatchUpdateScheduleResponseTypeDef](./type_defs.md#batchupdatescheduleresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -247,6 +270,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_input_device_transfer"></a>
 
 ### cancel_input_device_transfer
 
@@ -267,6 +292,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="claim_device"></a>
+
 ### claim_device
 
 Send a request to claim an AWS Elemental device that you have purchased from a
@@ -285,6 +312,8 @@ Keyword-only arguments:
 - `Id`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_channel"></a>
 
 ### create_channel
 
@@ -323,6 +352,8 @@ Keyword-only arguments:
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
+<a id="create_input"></a>
+
 ### create_input
 
 Create an input See also:
@@ -357,6 +388,8 @@ Keyword-only arguments:
 Returns
 [CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef).
 
+<a id="create_input_security_group"></a>
+
 ### create_input_security_group
 
 Creates a Input Security Group See also:
@@ -379,6 +412,8 @@ Keyword-only arguments:
 
 Returns
 [CreateInputSecurityGroupResponseTypeDef](./type_defs.md#createinputsecuritygroupresponsetypedef).
+
+<a id="create_multiplex"></a>
 
 ### create_multiplex
 
@@ -405,6 +440,8 @@ Keyword-only arguments:
 Returns
 [CreateMultiplexResponseTypeDef](./type_defs.md#createmultiplexresponsetypedef).
 
+<a id="create_multiplex_program"></a>
+
 ### create_multiplex_program
 
 Create a new program in the multiplex.
@@ -430,6 +467,8 @@ Keyword-only arguments:
 Returns
 [CreateMultiplexProgramResponseTypeDef](./type_defs.md#createmultiplexprogramresponsetypedef).
 
+<a id="create_partner_input"></a>
+
 ### create_partner_input
 
 Create a partner input See also:
@@ -452,6 +491,8 @@ Keyword-only arguments:
 Returns
 [CreatePartnerInputResponseTypeDef](./type_defs.md#createpartnerinputresponsetypedef).
 
+<a id="create_tags"></a>
+
 ### create_tags
 
 Create tags for a resource See also:
@@ -469,6 +510,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="delete_channel"></a>
 
 ### delete_channel
 
@@ -489,6 +532,8 @@ Keyword-only arguments:
 Returns
 [DeleteChannelResponseTypeDef](./type_defs.md#deletechannelresponsetypedef).
 
+<a id="delete_input"></a>
+
 ### delete_input
 
 Deletes the input end point See also:
@@ -507,6 +552,8 @@ Keyword-only arguments:
 - `InputId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_input_security_group"></a>
 
 ### delete_input_security_group
 
@@ -528,6 +575,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_multiplex"></a>
+
 ### delete_multiplex
 
 Delete a multiplex.
@@ -546,6 +595,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteMultiplexResponseTypeDef](./type_defs.md#deletemultiplexresponsetypedef).
+
+<a id="delete_multiplex_program"></a>
 
 ### delete_multiplex_program
 
@@ -568,6 +619,8 @@ Keyword-only arguments:
 Returns
 [DeleteMultiplexProgramResponseTypeDef](./type_defs.md#deletemultiplexprogramresponsetypedef).
 
+<a id="delete_reservation"></a>
+
 ### delete_reservation
 
 Delete an expired reservation.
@@ -587,6 +640,8 @@ Keyword-only arguments:
 Returns
 [DeleteReservationResponseTypeDef](./type_defs.md#deletereservationresponsetypedef).
 
+<a id="delete_schedule"></a>
+
 ### delete_schedule
 
 Delete all schedule actions on a channel.
@@ -605,6 +660,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_tags"></a>
+
 ### delete_tags
 
 Removes tags for a resource See also:
@@ -622,6 +679,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="describe_channel"></a>
 
 ### describe_channel
 
@@ -643,6 +702,8 @@ Keyword-only arguments:
 Returns
 [DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
+<a id="describe_input"></a>
+
 ### describe_input
 
 Produces details about an input See also:
@@ -663,6 +724,8 @@ Keyword-only arguments:
 Returns
 [DescribeInputResponseTypeDef](./type_defs.md#describeinputresponsetypedef).
 
+<a id="describe_input_device"></a>
+
 ### describe_input_device
 
 Gets the details for the input device See also:
@@ -682,6 +745,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInputDeviceResponseTypeDef](./type_defs.md#describeinputdeviceresponsetypedef).
+
+<a id="describe_input_device_thumbnail"></a>
 
 ### describe_input_device_thumbnail
 
@@ -705,6 +770,8 @@ Keyword-only arguments:
 Returns
 [DescribeInputDeviceThumbnailResponseTypeDef](./type_defs.md#describeinputdevicethumbnailresponsetypedef).
 
+<a id="describe_input_security_group"></a>
+
 ### describe_input_security_group
 
 Produces a summary of an Input Security Group See also:
@@ -726,6 +793,8 @@ Keyword-only arguments:
 Returns
 [DescribeInputSecurityGroupResponseTypeDef](./type_defs.md#describeinputsecuritygroupresponsetypedef).
 
+<a id="describe_multiplex"></a>
+
 ### describe_multiplex
 
 Gets details about a multiplex.
@@ -744,6 +813,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeMultiplexResponseTypeDef](./type_defs.md#describemultiplexresponsetypedef).
+
+<a id="describe_multiplex_program"></a>
 
 ### describe_multiplex_program
 
@@ -766,6 +837,8 @@ Keyword-only arguments:
 Returns
 [DescribeMultiplexProgramResponseTypeDef](./type_defs.md#describemultiplexprogramresponsetypedef).
 
+<a id="describe_offering"></a>
+
 ### describe_offering
 
 Get details for an offering.
@@ -785,6 +858,8 @@ Keyword-only arguments:
 Returns
 [DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef).
 
+<a id="describe_reservation"></a>
+
 ### describe_reservation
 
 Get details for a reservation.
@@ -803,6 +878,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef).
+
+<a id="describe_schedule"></a>
 
 ### describe_schedule
 
@@ -826,6 +903,8 @@ Keyword-only arguments:
 Returns
 [DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -843,6 +922,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_channels"></a>
 
 ### list_channels
 
@@ -864,6 +945,8 @@ Keyword-only arguments:
 
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
+
+<a id="list_input_device_transfers"></a>
 
 ### list_input_device_transfers
 
@@ -887,6 +970,8 @@ Keyword-only arguments:
 Returns
 [ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef).
 
+<a id="list_input_devices"></a>
+
 ### list_input_devices
 
 List input devices See also:
@@ -907,6 +992,8 @@ Keyword-only arguments:
 
 Returns
 [ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef).
+
+<a id="list_input_security_groups"></a>
 
 ### list_input_security_groups
 
@@ -930,6 +1017,8 @@ Keyword-only arguments:
 Returns
 [ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef).
 
+<a id="list_inputs"></a>
+
 ### list_inputs
 
 Produces list of inputs that have been created See also:
@@ -949,6 +1038,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef).
+
+<a id="list_multiplex_programs"></a>
 
 ### list_multiplex_programs
 
@@ -972,6 +1063,8 @@ Keyword-only arguments:
 Returns
 [ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef).
 
+<a id="list_multiplexes"></a>
+
 ### list_multiplexes
 
 Retrieve a list of the existing multiplexes.
@@ -991,6 +1084,8 @@ Keyword-only arguments:
 
 Returns
 [ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef).
+
+<a id="list_offerings"></a>
 
 ### list_offerings
 
@@ -1022,6 +1117,8 @@ Keyword-only arguments:
 Returns
 [ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef).
 
+<a id="list_reservations"></a>
+
 ### list_reservations
 
 List purchased reservations.
@@ -1050,6 +1147,8 @@ Keyword-only arguments:
 Returns
 [ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Produces list of tags that have been created for a resource See also:
@@ -1069,6 +1168,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="purchase_offering"></a>
 
 ### purchase_offering
 
@@ -1094,6 +1195,8 @@ Keyword-only arguments:
 Returns
 [PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef).
 
+<a id="reject_input_device_transfer"></a>
+
 ### reject_input_device_transfer
 
 Reject the transfer of the specified input device to your AWS account.
@@ -1112,6 +1215,8 @@ Keyword-only arguments:
 - `InputDeviceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_channel"></a>
 
 ### start_channel
 
@@ -1133,6 +1238,8 @@ Keyword-only arguments:
 Returns
 [StartChannelResponseTypeDef](./type_defs.md#startchannelresponsetypedef).
 
+<a id="start_multiplex"></a>
+
 ### start_multiplex
 
 Start (run) the multiplex.
@@ -1151,6 +1258,8 @@ Keyword-only arguments:
 
 Returns
 [StartMultiplexResponseTypeDef](./type_defs.md#startmultiplexresponsetypedef).
+
+<a id="stop_channel"></a>
 
 ### stop_channel
 
@@ -1172,6 +1281,8 @@ Keyword-only arguments:
 Returns
 [StopChannelResponseTypeDef](./type_defs.md#stopchannelresponsetypedef).
 
+<a id="stop_multiplex"></a>
+
 ### stop_multiplex
 
 Stops a running multiplex.
@@ -1190,6 +1301,8 @@ Keyword-only arguments:
 
 Returns
 [StopMultiplexResponseTypeDef](./type_defs.md#stopmultiplexresponsetypedef).
+
+<a id="transfer_input_device"></a>
 
 ### transfer_input_device
 
@@ -1211,6 +1324,8 @@ Keyword-only arguments:
 - `TransferMessage`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_channel"></a>
 
 ### update_channel
 
@@ -1244,6 +1359,8 @@ Keyword-only arguments:
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
+<a id="update_channel_class"></a>
+
 ### update_channel_class
 
 Changes the class of the channel.
@@ -1266,6 +1383,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateChannelClassResponseTypeDef](./type_defs.md#updatechannelclassresponsetypedef).
+
+<a id="update_input"></a>
 
 ### update_input
 
@@ -1297,6 +1416,8 @@ Keyword-only arguments:
 Returns
 [UpdateInputResponseTypeDef](./type_defs.md#updateinputresponsetypedef).
 
+<a id="update_input_device"></a>
+
 ### update_input_device
 
 Updates the parameters for the input device.
@@ -1321,6 +1442,8 @@ Keyword-only arguments:
 Returns
 [UpdateInputDeviceResponseTypeDef](./type_defs.md#updateinputdeviceresponsetypedef).
 
+<a id="update_input_security_group"></a>
+
 ### update_input_security_group
 
 Update an Input Security Group's Whilelists.
@@ -1344,6 +1467,8 @@ Keyword-only arguments:
 Returns
 [UpdateInputSecurityGroupResponseTypeDef](./type_defs.md#updateinputsecuritygroupresponsetypedef).
 
+<a id="update_multiplex"></a>
+
 ### update_multiplex
 
 Updates a multiplex.
@@ -1365,6 +1490,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateMultiplexResponseTypeDef](./type_defs.md#updatemultiplexresponsetypedef).
+
+<a id="update_multiplex_program"></a>
 
 ### update_multiplex_program
 
@@ -1389,6 +1516,8 @@ Keyword-only arguments:
 Returns
 [UpdateMultiplexProgramResponseTypeDef](./type_defs.md#updatemultiplexprogramresponsetypedef).
 
+<a id="update_reservation"></a>
+
 ### update_reservation
 
 Update reservation.
@@ -1408,6 +1537,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateReservationResponseTypeDef](./type_defs.md#updatereservationresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -1434,6 +1565,8 @@ overloads.
   [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
 - `client.get_paginator("list_reservations")` ->
   [ListReservationsPaginator](./paginators.md#listreservationspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

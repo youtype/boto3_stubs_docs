@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-applicationautoscaling-module"></a>
+
 # Type annotations for boto3 ApplicationAutoScaling module
 
 > [Index](..) > ApplicationAutoScaling
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module
-[mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
+[mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[application-autoscaling]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[application-autoscaling]'
+
+# standalone installation
 pip install mypy-boto3-application-autoscaling
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-application-autoscaling
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="applicationautoscalingclient"></a>
+
 ## ApplicationAutoScalingClient
 
 Type annotations for `boto3.client("application-autoscaling")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_application_autoscaling.client import ApplicationAutoScalingClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -47,6 +61,8 @@ from mypy_boto3_application_autoscaling.client import ApplicationAutoScalingClie
 - [put_scheduled_action](./client.md#put_scheduled_action)
 - [register_scalable_target](./client.md#register_scalable_target)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ApplicationAutoScalingClient [exceptions](./client.md#exceptions)
@@ -60,6 +76,8 @@ ApplicationAutoScalingClient [exceptions](./client.md#exceptions)
 - ObjectNotFoundException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -68,13 +86,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_application_autoscaling.paginators import DescribeScalableTargetsPaginator, ...
+from mypy_boto3_application_autoscaling.paginator import DescribeScalableTargetsPaginator, ...
 ```
 
 - [DescribeScalableTargetsPaginator](./paginators.md#describescalabletargetspaginator)
 - [DescribeScalingActivitiesPaginator](./paginators.md#describescalingactivitiespaginator)
 - [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
 - [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -100,6 +120,8 @@ from mypy_boto3_application_autoscaling.literals import AdjustmentTypeType, ...
 - [ServiceNamespaceType](./literals.md#servicenamespacetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

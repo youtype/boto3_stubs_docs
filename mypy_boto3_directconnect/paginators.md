@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-directconnect-module"></a>
+
 # Paginators for boto3 DirectConnect module
 
 > [Index](..) > [DirectConnect](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
 type annotations stubs module
-[mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
+[mypy-boto3-directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
 - [Paginators for boto3 DirectConnect module](#paginators-for-boto3-directconnect-module)
   - [DescribeDirectConnectGatewayAssociationsPaginator](#describedirectconnectgatewayassociationspaginator)
   - [DescribeDirectConnectGatewayAttachmentsPaginator](#describedirectconnectgatewayattachmentspaginator)
   - [DescribeDirectConnectGatewaysPaginator](#describedirectconnectgatewayspaginator)
+
+<a id="describedirectconnectgatewayassociationspaginator"></a>
 
 ## DescribeDirectConnectGatewayAssociationsPaginator
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewayAssociationsPaginator
 
 def get_describe_direct_connect_gateway_associations_paginator() -> DescribeDirectConnectGatewayAssociationsPaginator:
-    return boto3.client("directconnect").get_paginator("describe_direct_connect_gateway_associations")
+    return Session().client("directconnect").get_paginator("describe_direct_connect_gateway_associations")
 ```
 
 Boto3 documentation:
@@ -42,6 +48,8 @@ method:
 `DescribeDirectConnectGatewayAssociationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeDirectConnectGatewayAssociationsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresulttypedef)\].
 
+<a id="describedirectconnectgatewayattachmentspaginator"></a>
+
 ## DescribeDirectConnectGatewayAttachmentsPaginator
 
 Type annotations for
@@ -50,10 +58,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewayAttachmentsPaginator
 
 def get_describe_direct_connect_gateway_attachments_paginator() -> DescribeDirectConnectGatewayAttachmentsPaginator:
-    return boto3.client("directconnect").get_paginator("describe_direct_connect_gateway_attachments")
+    return Session().client("directconnect").get_paginator("describe_direct_connect_gateway_attachments")
 ```
 
 Boto3 documentation:
@@ -70,6 +80,8 @@ method:
 `DescribeDirectConnectGatewayAttachmentsPaginator.paginate` returns
 `_PageIterator`\[[DescribeDirectConnectGatewayAttachmentsResultTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresulttypedef)\].
 
+<a id="describedirectconnectgatewayspaginator"></a>
+
 ## DescribeDirectConnectGatewaysPaginator
 
 Type annotations for
@@ -78,10 +90,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewaysPaginator
 
 def get_describe_direct_connect_gateways_paginator() -> DescribeDirectConnectGatewaysPaginator:
-    return boto3.client("directconnect").get_paginator("describe_direct_connect_gateways")
+    return Session().client("directconnect").get_paginator("describe_direct_connect_gateways")
 ```
 
 Boto3 documentation:

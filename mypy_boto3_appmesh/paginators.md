@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-appmesh-module"></a>
+
 # Paginators for boto3 AppMesh module
 
 > [Index](..) > [AppMesh](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
 type annotations stubs module
-[mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
+[mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 - [Paginators for boto3 AppMesh module](#paginators-for-boto3-appmesh-module)
   - [ListGatewayRoutesPaginator](#listgatewayroutespaginator)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [ListVirtualRoutersPaginator](#listvirtualrouterspaginator)
   - [ListVirtualServicesPaginator](#listvirtualservicespaginator)
 
+<a id="listgatewayroutespaginator"></a>
+
 ## ListGatewayRoutesPaginator
 
 Type annotations for
@@ -25,10 +29,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appmesh.paginator import ListGatewayRoutesPaginator
 
 def get_list_gateway_routes_paginator() -> ListGatewayRoutesPaginator:
-    return boto3.client("appmesh").get_paginator("list_gateway_routes")
+    return Session().client("appmesh").get_paginator("list_gateway_routes")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `ListGatewayRoutesPaginator.paginate` method:
 `ListGatewayRoutesPaginator.paginate` returns
 `_PageIterator`\[[ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef)\].
 
+<a id="listmeshespaginator"></a>
+
 ## ListMeshesPaginator
 
 Type annotations for `boto3.client("appmesh").get_paginator("list_meshes")`.
@@ -52,10 +60,12 @@ Type annotations for `boto3.client("appmesh").get_paginator("list_meshes")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appmesh.paginator import ListMeshesPaginator
 
 def get_list_meshes_paginator() -> ListMeshesPaginator:
-    return boto3.client("appmesh").get_paginator("list_meshes")
+    return Session().client("appmesh").get_paginator("list_meshes")
 ```
 
 Boto3 documentation:
@@ -69,6 +79,8 @@ Arguments for `ListMeshesPaginator.paginate` method:
 `ListMeshesPaginator.paginate` returns
 `_PageIterator`\[[ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef)\].
 
+<a id="listroutespaginator"></a>
+
 ## ListRoutesPaginator
 
 Type annotations for `boto3.client("appmesh").get_paginator("list_routes")`.
@@ -76,10 +88,12 @@ Type annotations for `boto3.client("appmesh").get_paginator("list_routes")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appmesh.paginator import ListRoutesPaginator
 
 def get_list_routes_paginator() -> ListRoutesPaginator:
-    return boto3.client("appmesh").get_paginator("list_routes")
+    return Session().client("appmesh").get_paginator("list_routes")
 ```
 
 Boto3 documentation:
@@ -96,6 +110,8 @@ Arguments for `ListRoutesPaginator.paginate` method:
 `ListRoutesPaginator.paginate` returns
 `_PageIterator`\[[ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -104,10 +120,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appmesh.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("appmesh").get_paginator("list_tags_for_resource")
+    return Session().client("appmesh").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:
@@ -122,6 +140,8 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 `ListTagsForResourcePaginator.paginate` returns
 `_PageIterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
 
+<a id="listvirtualgatewayspaginator"></a>
+
 ## ListVirtualGatewaysPaginator
 
 Type annotations for
@@ -130,10 +150,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appmesh.paginator import ListVirtualGatewaysPaginator
 
 def get_list_virtual_gateways_paginator() -> ListVirtualGatewaysPaginator:
-    return boto3.client("appmesh").get_paginator("list_virtual_gateways")
+    return Session().client("appmesh").get_paginator("list_virtual_gateways")
 ```
 
 Boto3 documentation:
@@ -149,6 +171,8 @@ Arguments for `ListVirtualGatewaysPaginator.paginate` method:
 `ListVirtualGatewaysPaginator.paginate` returns
 `_PageIterator`\[[ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef)\].
 
+<a id="listvirtualnodespaginator"></a>
+
 ## ListVirtualNodesPaginator
 
 Type annotations for
@@ -157,10 +181,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appmesh.paginator import ListVirtualNodesPaginator
 
 def get_list_virtual_nodes_paginator() -> ListVirtualNodesPaginator:
-    return boto3.client("appmesh").get_paginator("list_virtual_nodes")
+    return Session().client("appmesh").get_paginator("list_virtual_nodes")
 ```
 
 Boto3 documentation:
@@ -176,6 +202,8 @@ Arguments for `ListVirtualNodesPaginator.paginate` method:
 `ListVirtualNodesPaginator.paginate` returns
 `_PageIterator`\[[ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef)\].
 
+<a id="listvirtualrouterspaginator"></a>
+
 ## ListVirtualRoutersPaginator
 
 Type annotations for
@@ -184,10 +212,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appmesh.paginator import ListVirtualRoutersPaginator
 
 def get_list_virtual_routers_paginator() -> ListVirtualRoutersPaginator:
-    return boto3.client("appmesh").get_paginator("list_virtual_routers")
+    return Session().client("appmesh").get_paginator("list_virtual_routers")
 ```
 
 Boto3 documentation:
@@ -203,6 +233,8 @@ Arguments for `ListVirtualRoutersPaginator.paginate` method:
 `ListVirtualRoutersPaginator.paginate` returns
 `_PageIterator`\[[ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef)\].
 
+<a id="listvirtualservicespaginator"></a>
+
 ## ListVirtualServicesPaginator
 
 Type annotations for
@@ -211,10 +243,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appmesh.paginator import ListVirtualServicesPaginator
 
 def get_list_virtual_services_paginator() -> ListVirtualServicesPaginator:
-    return boto3.client("appmesh").get_paginator("list_virtual_services")
+    return Session().client("appmesh").get_paginator("list_virtual_services")
 ```
 
 Boto3 documentation:

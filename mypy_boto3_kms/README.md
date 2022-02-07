@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-kms-module"></a>
+
 # Type annotations for boto3 KMS module
 
 > [Index](..) > KMS
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
 type annotations stubs module
-[mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
+[mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[kms]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[kms]'
+
+# standalone installation
 pip install mypy-boto3-kms
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-kms
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="kmsclient"></a>
+
 ## KMSClient
 
 Type annotations for `boto3.client("kms")` as [KMSClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_kms.client import KMSClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -84,6 +98,8 @@ from mypy_boto3_kms.client import KMSClient
 - [update_primary_region](./client.md#update_primary_region)
 - [verify](./client.md#verify)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 KMSClient [exceptions](./client.md#exceptions)
@@ -123,6 +139,8 @@ KMSClient [exceptions](./client.md#exceptions)
 - TagException
 - UnsupportedOperationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -131,13 +149,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_kms.paginators import ListAliasesPaginator, ...
+from mypy_boto3_kms.paginator import ListAliasesPaginator, ...
 ```
 
 - [ListAliasesPaginator](./paginators.md#listaliasespaginator)
 - [ListGrantsPaginator](./paginators.md#listgrantspaginator)
 - [ListKeyPoliciesPaginator](./paginators.md#listkeypoliciespaginator)
 - [ListKeysPaginator](./paginators.md#listkeyspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -173,6 +193,8 @@ from mypy_boto3_kms.literals import AlgorithmSpecType, ...
 - [WrappingKeySpecType](./literals.md#wrappingkeyspectype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

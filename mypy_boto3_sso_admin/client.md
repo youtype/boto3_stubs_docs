@@ -1,3 +1,5 @@
+<a id="ssoadminclient-for-boto3-ssoadmin-module"></a>
+
 # SSOAdminClient for boto3 SSOAdmin module
 
 > [Index](..) > [SSOAdmin](.) > SSOAdminClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
 type annotations stubs module
-[mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
+[mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 - [SSOAdminClient for boto3 SSOAdmin module](#ssoadminclient-for-boto3-ssoadmin-module)
   - [SSOAdminClient](#ssoadminclient)
@@ -47,6 +49,8 @@ type annotations stubs module
     - [update_permission_set](#update_permission_set)
     - [get_paginator](#get_paginator)
 
+<a id="ssoadminclient"></a>
+
 ## SSOAdminClient
 
 Type annotations for `boto3.client("sso-admin")`
@@ -54,14 +58,17 @@ Type annotations for `boto3.client("sso-admin")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sso_admin.client import SSOAdminClient
 
 def get_sso-admin_client() -> SSOAdminClient:
-    return boto3.client("sso-admin")
+    return Session().client("sso-admin")
 ```
 
 Boto3 documentation:
 [SSOAdmin.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -86,7 +93,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -98,6 +109,8 @@ Boto3 documentation:
 [SSOAdmin.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="attach_managed_policy_to_permission_set"></a>
 
 ### attach_managed_policy_to_permission_set
 
@@ -120,6 +133,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -134,6 +149,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_account_assignment"></a>
 
 ### create_account_assignment
 
@@ -163,6 +180,8 @@ Keyword-only arguments:
 Returns
 [CreateAccountAssignmentResponseTypeDef](./type_defs.md#createaccountassignmentresponsetypedef).
 
+<a id="create_instance_access_control_attribute_configuration"></a>
+
 ### create_instance_access_control_attribute_configuration
 
 Enables the attributes-based access control (ABAC) feature for the specified
@@ -187,6 +206,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_permission_set"></a>
+
 ### create_permission_set
 
 Creates a permission set within a specified SSO instance.
@@ -210,6 +231,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePermissionSetResponseTypeDef](./type_defs.md#createpermissionsetresponsetypedef).
+
+<a id="delete_account_assignment"></a>
 
 ### delete_account_assignment
 
@@ -239,6 +262,8 @@ Keyword-only arguments:
 Returns
 [DeleteAccountAssignmentResponseTypeDef](./type_defs.md#deleteaccountassignmentresponsetypedef).
 
+<a id="delete_inline_policy_from_permission_set"></a>
+
 ### delete_inline_policy_from_permission_set
 
 Deletes the inline policy from a specified permission set.
@@ -258,6 +283,8 @@ Keyword-only arguments:
 - `PermissionSetArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_instance_access_control_attribute_configuration"></a>
 
 ### delete_instance_access_control_attribute_configuration
 
@@ -281,6 +308,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_permission_set"></a>
+
 ### delete_permission_set
 
 Deletes the specified permission set.
@@ -299,6 +328,8 @@ Keyword-only arguments:
 - `PermissionSetArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_account_assignment_creation_status"></a>
 
 ### describe_account_assignment_creation_status
 
@@ -321,6 +352,8 @@ Keyword-only arguments:
 Returns
 [DescribeAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#describeaccountassignmentcreationstatusresponsetypedef).
 
+<a id="describe_account_assignment_deletion_status"></a>
+
 ### describe_account_assignment_deletion_status
 
 Describes the status of the assignment deletion request.
@@ -341,6 +374,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#describeaccountassignmentdeletionstatusresponsetypedef).
+
+<a id="describe_instance_access_control_attribute_configuration"></a>
 
 ### describe_instance_access_control_attribute_configuration
 
@@ -365,6 +400,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef](./type_defs.md#describeinstanceaccesscontrolattributeconfigurationresponsetypedef).
 
+<a id="describe_permission_set"></a>
+
 ### describe_permission_set
 
 Gets the details of the permission set.
@@ -385,6 +422,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePermissionSetResponseTypeDef](./type_defs.md#describepermissionsetresponsetypedef).
+
+<a id="describe_permission_set_provisioning_status"></a>
 
 ### describe_permission_set_provisioning_status
 
@@ -407,6 +446,8 @@ Keyword-only arguments:
 Returns
 [DescribePermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#describepermissionsetprovisioningstatusresponsetypedef).
 
+<a id="detach_managed_policy_from_permission_set"></a>
+
 ### detach_managed_policy_from_permission_set
 
 Detaches the attached IAM managed policy ARN from the specified permission set.
@@ -428,6 +469,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -445,6 +488,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_inline_policy_for_permission_set"></a>
 
 ### get_inline_policy_for_permission_set
 
@@ -466,6 +511,8 @@ Keyword-only arguments:
 
 Returns
 [GetInlinePolicyForPermissionSetResponseTypeDef](./type_defs.md#getinlinepolicyforpermissionsetresponsetypedef).
+
+<a id="list_account_assignment_creation_status"></a>
 
 ### list_account_assignment_creation_status
 
@@ -492,6 +539,8 @@ Keyword-only arguments:
 Returns
 [ListAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponsetypedef).
 
+<a id="list_account_assignment_deletion_status"></a>
+
 ### list_account_assignment_deletion_status
 
 Lists the status of the Amazon Web Services account assignment deletion
@@ -517,6 +566,8 @@ Keyword-only arguments:
 Returns
 [ListAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponsetypedef).
 
+<a id="list_account_assignments"></a>
+
 ### list_account_assignments
 
 Lists the assignee of the specified Amazon Web Services account with the
@@ -541,6 +592,8 @@ Keyword-only arguments:
 
 Returns
 [ListAccountAssignmentsResponseTypeDef](./type_defs.md#listaccountassignmentsresponsetypedef).
+
+<a id="list_accounts_for_provisioned_permission_set"></a>
 
 ### list_accounts_for_provisioned_permission_set
 
@@ -569,6 +622,8 @@ Keyword-only arguments:
 Returns
 [ListAccountsForProvisionedPermissionSetResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponsetypedef).
 
+<a id="list_instances"></a>
+
 ### list_instances
 
 Lists the SSO instances that the caller has access to.
@@ -588,6 +643,8 @@ Keyword-only arguments:
 
 Returns
 [ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef).
+
+<a id="list_managed_policies_in_permission_set"></a>
 
 ### list_managed_policies_in_permission_set
 
@@ -611,6 +668,8 @@ Keyword-only arguments:
 
 Returns
 [ListManagedPoliciesInPermissionSetResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponsetypedef).
+
+<a id="list_permission_set_provisioning_status"></a>
 
 ### list_permission_set_provisioning_status
 
@@ -637,6 +696,8 @@ Keyword-only arguments:
 Returns
 [ListPermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponsetypedef).
 
+<a id="list_permission_sets"></a>
+
 ### list_permission_sets
 
 Lists the PermissionSet s in an SSO instance.
@@ -657,6 +718,8 @@ Keyword-only arguments:
 
 Returns
 [ListPermissionSetsResponseTypeDef](./type_defs.md#listpermissionsetsresponsetypedef).
+
+<a id="list_permission_sets_provisioned_to_account"></a>
 
 ### list_permission_sets_provisioned_to_account
 
@@ -684,6 +747,8 @@ Keyword-only arguments:
 Returns
 [ListPermissionSetsProvisionedToAccountResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags that are attached to a specified resource.
@@ -704,6 +769,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="provision_permission_set"></a>
 
 ### provision_permission_set
 
@@ -730,6 +797,8 @@ Keyword-only arguments:
 Returns
 [ProvisionPermissionSetResponseTypeDef](./type_defs.md#provisionpermissionsetresponsetypedef).
 
+<a id="put_inline_policy_to_permission_set"></a>
+
 ### put_inline_policy_to_permission_set
 
 Attaches an IAM inline policy to a permission set.
@@ -751,6 +820,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates a set of tags with a specified resource.
@@ -771,6 +842,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Disassociates a set of tags from a specified resource.
@@ -790,6 +863,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_instance_access_control_attribute_configuration"></a>
 
 ### update_instance_access_control_attribute_configuration
 
@@ -816,6 +891,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_permission_set"></a>
+
 ### update_permission_set
 
 Updates an existing permission set.
@@ -837,6 +914,8 @@ Keyword-only arguments:
 - `RelayState`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

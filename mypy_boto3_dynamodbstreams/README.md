@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-dynamodbstreams-module"></a>
+
 # Type annotations for boto3 DynamoDBStreams module
 
 > [Index](..) > DynamoDBStreams
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
 type annotations stubs module
-[mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
+[mypy-boto3-dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[dynamodbstreams]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[dynamodbstreams]'
+
+# standalone installation
 pip install mypy-boto3-dynamodbstreams
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-dynamodbstreams
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="dynamodbstreamsclient"></a>
 
 ## DynamoDBStreamsClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_dynamodbstreams.client import DynamoDBStreamsClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -38,6 +52,8 @@ from mypy_boto3_dynamodbstreams.client import DynamoDBStreamsClient
 - [get_records](./client.md#get_records)
 - [get_shard_iterator](./client.md#get_shard_iterator)
 - [list_streams](./client.md#list_streams)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -49,6 +65,8 @@ DynamoDBStreamsClient [exceptions](./client.md#exceptions)
 - LimitExceededException
 - ResourceNotFoundException
 - TrimmedDataAccessException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -66,6 +84,8 @@ from mypy_boto3_dynamodbstreams.literals import KeyTypeType, ...
 - [StreamStatusType](./literals.md#streamstatustype)
 - [StreamViewTypeType](./literals.md#streamviewtypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

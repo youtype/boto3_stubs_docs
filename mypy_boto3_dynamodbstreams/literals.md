@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-dynamodbstreams-module"></a>
+
 # Literals for boto3 DynamoDBStreams module
 
 > [Index](..) > [DynamoDBStreams](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
 type annotations stubs module
-[mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
+[mypy-boto3-dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
 - [Literals for boto3 DynamoDBStreams module](#literals-for-boto3-dynamodbstreams-module)
   - [KeyTypeType](#keytypetype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [StreamStatusType](#streamstatustype)
   - [StreamViewTypeType](#streamviewtypetype)
   - [ServiceName](#servicename)
+
+<a id="keytypetype"></a>
 
 ## KeyTypeType
 
@@ -26,6 +30,8 @@ Values:
 - `HASH`
 - `RANGE`
 
+<a id="operationtypetype"></a>
+
 ## OperationTypeType
 
 ```python
@@ -37,6 +43,8 @@ Values:
 - `INSERT`
 - `MODIFY`
 - `REMOVE`
+
+<a id="sharditeratortypetype"></a>
 
 ## ShardIteratorTypeType
 
@@ -51,6 +59,8 @@ Values:
 - `LATEST`
 - `TRIM_HORIZON`
 
+<a id="streamstatustype"></a>
+
 ## StreamStatusType
 
 ```python
@@ -64,6 +74,8 @@ Values:
 - `ENABLED`
 - `ENABLING`
 
+<a id="streamviewtypetype"></a>
+
 ## StreamViewTypeType
 
 ```python
@@ -76,6 +88,8 @@ Values:
 - `NEW_AND_OLD_IMAGES`
 - `NEW_IMAGE`
 - `OLD_IMAGE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

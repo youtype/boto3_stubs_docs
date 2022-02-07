@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-neptune-module"></a>
+
 # Literals for boto3 Neptune module
 
 > [Index](..) > [Neptune](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
 type annotations stubs module
-[mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).
+[mypy-boto3-neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
 - [Literals for boto3 Neptune module](#literals-for-boto3-neptune-module)
   - [ApplyMethodType](#applymethodtype)
@@ -31,6 +33,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="applymethodtype"></a>
+
 ## ApplyMethodType
 
 ```python
@@ -42,6 +46,8 @@ Values:
 - `immediate`
 - `pending-reboot`
 
+<a id="dbinstanceavailablewaitername"></a>
+
 ## DBInstanceAvailableWaiterName
 
 ```python
@@ -51,6 +57,8 @@ from mypy_boto3_neptune.literals import DBInstanceAvailableWaiterName
 Values:
 
 - `db_instance_available`
+
+<a id="dbinstancedeletedwaitername"></a>
 
 ## DBInstanceDeletedWaiterName
 
@@ -62,6 +70,8 @@ Values:
 
 - `db_instance_deleted`
 
+<a id="describedbclusterendpointspaginatorname"></a>
+
 ## DescribeDBClusterEndpointsPaginatorName
 
 ```python
@@ -71,6 +81,8 @@ from mypy_boto3_neptune.literals import DescribeDBClusterEndpointsPaginatorName
 Values:
 
 - `describe_db_cluster_endpoints`
+
+<a id="describedbclusterparametergroupspaginatorname"></a>
 
 ## DescribeDBClusterParameterGroupsPaginatorName
 
@@ -82,6 +94,8 @@ Values:
 
 - `describe_db_cluster_parameter_groups`
 
+<a id="describedbclusterparameterspaginatorname"></a>
+
 ## DescribeDBClusterParametersPaginatorName
 
 ```python
@@ -91,6 +105,8 @@ from mypy_boto3_neptune.literals import DescribeDBClusterParametersPaginatorName
 Values:
 
 - `describe_db_cluster_parameters`
+
+<a id="describedbclustersnapshotspaginatorname"></a>
 
 ## DescribeDBClusterSnapshotsPaginatorName
 
@@ -102,6 +118,8 @@ Values:
 
 - `describe_db_cluster_snapshots`
 
+<a id="describedbclusterspaginatorname"></a>
+
 ## DescribeDBClustersPaginatorName
 
 ```python
@@ -111,6 +129,8 @@ from mypy_boto3_neptune.literals import DescribeDBClustersPaginatorName
 Values:
 
 - `describe_db_clusters`
+
+<a id="describedbengineversionspaginatorname"></a>
 
 ## DescribeDBEngineVersionsPaginatorName
 
@@ -122,6 +142,8 @@ Values:
 
 - `describe_db_engine_versions`
 
+<a id="describedbinstancespaginatorname"></a>
+
 ## DescribeDBInstancesPaginatorName
 
 ```python
@@ -131,6 +153,8 @@ from mypy_boto3_neptune.literals import DescribeDBInstancesPaginatorName
 Values:
 
 - `describe_db_instances`
+
+<a id="describedbparametergroupspaginatorname"></a>
 
 ## DescribeDBParameterGroupsPaginatorName
 
@@ -142,6 +166,8 @@ Values:
 
 - `describe_db_parameter_groups`
 
+<a id="describedbparameterspaginatorname"></a>
+
 ## DescribeDBParametersPaginatorName
 
 ```python
@@ -151,6 +177,8 @@ from mypy_boto3_neptune.literals import DescribeDBParametersPaginatorName
 Values:
 
 - `describe_db_parameters`
+
+<a id="describedbsubnetgroupspaginatorname"></a>
 
 ## DescribeDBSubnetGroupsPaginatorName
 
@@ -162,6 +190,8 @@ Values:
 
 - `describe_db_subnet_groups`
 
+<a id="describeenginedefaultparameterspaginatorname"></a>
+
 ## DescribeEngineDefaultParametersPaginatorName
 
 ```python
@@ -171,6 +201,8 @@ from mypy_boto3_neptune.literals import DescribeEngineDefaultParametersPaginator
 Values:
 
 - `describe_engine_default_parameters`
+
+<a id="describeeventsubscriptionspaginatorname"></a>
 
 ## DescribeEventSubscriptionsPaginatorName
 
@@ -182,6 +214,8 @@ Values:
 
 - `describe_event_subscriptions`
 
+<a id="describeeventspaginatorname"></a>
+
 ## DescribeEventsPaginatorName
 
 ```python
@@ -191,6 +225,8 @@ from mypy_boto3_neptune.literals import DescribeEventsPaginatorName
 Values:
 
 - `describe_events`
+
+<a id="describeorderabledbinstanceoptionspaginatorname"></a>
 
 ## DescribeOrderableDBInstanceOptionsPaginatorName
 
@@ -202,6 +238,8 @@ Values:
 
 - `describe_orderable_db_instance_options`
 
+<a id="describependingmaintenanceactionspaginatorname"></a>
+
 ## DescribePendingMaintenanceActionsPaginatorName
 
 ```python
@@ -211,6 +249,8 @@ from mypy_boto3_neptune.literals import DescribePendingMaintenanceActionsPaginat
 Values:
 
 - `describe_pending_maintenance_actions`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -226,6 +266,8 @@ Values:
 - `db-parameter-group`
 - `db-security-group`
 - `db-snapshot`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -535,6 +577,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -558,6 +602,8 @@ Values:
 - `describe_events`
 - `describe_orderable_db_instance_options`
 - `describe_pending_maintenance_actions`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

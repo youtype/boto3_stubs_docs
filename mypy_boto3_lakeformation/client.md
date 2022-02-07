@@ -1,3 +1,5 @@
+<a id="lakeformationclient-for-boto3-lakeformation-module"></a>
+
 # LakeFormationClient for boto3 LakeFormation module
 
 > [Index](..) > [LakeFormation](.) > LakeFormationClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module
-[mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
+[mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 - [LakeFormationClient for boto3 LakeFormation module](#lakeformationclient-for-boto3-lakeformation-module)
   - [LakeFormationClient](#lakeformationclient)
@@ -60,6 +62,8 @@ type annotations stubs module
     - [update_table_storage_optimizer](#update_table_storage_optimizer)
     - [get_paginator](#get_paginator)
 
+<a id="lakeformationclient"></a>
+
 ## LakeFormationClient
 
 Type annotations for `boto3.client("lakeformation")`
@@ -67,14 +71,17 @@ Type annotations for `boto3.client("lakeformation")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_lakeformation.client import LakeFormationClient
 
 def get_lakeformation_client() -> LakeFormationClient:
-    return boto3.client("lakeformation")
+    return Session().client("lakeformation")
 ```
 
 Boto3 documentation:
 [LakeFormation.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -110,7 +117,11 @@ Exceptions:
 - `Exceptions.TransactionCommittedException`
 - `Exceptions.WorkUnitsNotReadyYetException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -122,6 +133,8 @@ Boto3 documentation:
 [LakeFormation.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_lf_tags_to_resource"></a>
 
 ### add_lf_tags_to_resource
 
@@ -146,6 +159,8 @@ Keyword-only arguments:
 Returns
 [AddLFTagsToResourceResponseTypeDef](./type_defs.md#addlftagstoresourceresponsetypedef).
 
+<a id="batch_grant_permissions"></a>
+
 ### batch_grant_permissions
 
 Batch operation to grant permissions to the principal.
@@ -168,6 +183,8 @@ Keyword-only arguments:
 
 Returns
 [BatchGrantPermissionsResponseTypeDef](./type_defs.md#batchgrantpermissionsresponsetypedef).
+
+<a id="batch_revoke_permissions"></a>
 
 ### batch_revoke_permissions
 
@@ -192,6 +209,8 @@ Keyword-only arguments:
 Returns
 [BatchRevokePermissionsResponseTypeDef](./type_defs.md#batchrevokepermissionsresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -206,6 +225,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_transaction"></a>
 
 ### cancel_transaction
 
@@ -225,6 +246,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="commit_transaction"></a>
+
 ### commit_transaction
 
 Attempts to commit the specified transaction.
@@ -243,6 +266,8 @@ Keyword-only arguments:
 
 Returns
 [CommitTransactionResponseTypeDef](./type_defs.md#committransactionresponsetypedef).
+
+<a id="create_data_cells_filter"></a>
 
 ### create_data_cells_filter
 
@@ -265,6 +290,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_lf_tag"></a>
+
 ### create_lf_tag
 
 Creates an LF-tag with the specified name and values.
@@ -284,6 +311,8 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_data_cells_filter"></a>
 
 ### delete_data_cells_filter
 
@@ -307,6 +336,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_lf_tag"></a>
+
 ### delete_lf_tag
 
 Deletes the specified LF-tag key name.
@@ -325,6 +356,8 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_objects_on_cancel"></a>
 
 ### delete_objects_on_cancel
 
@@ -353,6 +386,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="deregister_resource"></a>
+
 ### deregister_resource
 
 Deregisters the resource as managed by the Data Catalog.
@@ -371,6 +406,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_resource"></a>
 
 ### describe_resource
 
@@ -392,6 +429,8 @@ Keyword-only arguments:
 Returns
 [DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef).
 
+<a id="describe_transaction"></a>
+
 ### describe_transaction
 
 Returns the details of a single transaction.
@@ -412,6 +451,8 @@ Keyword-only arguments:
 Returns
 [DescribeTransactionResponseTypeDef](./type_defs.md#describetransactionresponsetypedef).
 
+<a id="extend_transaction"></a>
+
 ### extend_transaction
 
 Indicates to the service that the specified transaction is still active and
@@ -431,6 +472,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -449,6 +492,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_data_lake_settings"></a>
 
 ### get_data_lake_settings
 
@@ -470,6 +515,8 @@ Keyword-only arguments:
 
 Returns
 [GetDataLakeSettingsResponseTypeDef](./type_defs.md#getdatalakesettingsresponsetypedef).
+
+<a id="get_effective_permissions_for_path"></a>
 
 ### get_effective_permissions_for_path
 
@@ -495,6 +542,8 @@ Keyword-only arguments:
 Returns
 [GetEffectivePermissionsForPathResponseTypeDef](./type_defs.md#geteffectivepermissionsforpathresponsetypedef).
 
+<a id="get_lf_tag"></a>
+
 ### get_lf_tag
 
 Returns an LF-tag definition.
@@ -513,6 +562,8 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns [GetLFTagResponseTypeDef](./type_defs.md#getlftagresponsetypedef).
+
+<a id="get_query_state"></a>
 
 ### get_query_state
 
@@ -533,6 +584,8 @@ Keyword-only arguments:
 Returns
 [GetQueryStateResponseTypeDef](./type_defs.md#getquerystateresponsetypedef).
 
+<a id="get_query_statistics"></a>
+
 ### get_query_statistics
 
 Retrieves statistics on the planning and execution of a query.
@@ -552,6 +605,8 @@ Keyword-only arguments:
 
 Returns
 [GetQueryStatisticsResponseTypeDef](./type_defs.md#getquerystatisticsresponsetypedef).
+
+<a id="get_resource_lf_tags"></a>
 
 ### get_resource_lf_tags
 
@@ -574,6 +629,8 @@ Keyword-only arguments:
 
 Returns
 [GetResourceLFTagsResponseTypeDef](./type_defs.md#getresourcelftagsresponsetypedef).
+
+<a id="get_table_objects"></a>
 
 ### get_table_objects
 
@@ -600,6 +657,8 @@ Keyword-only arguments:
 
 Returns
 [GetTableObjectsResponseTypeDef](./type_defs.md#gettableobjectsresponsetypedef).
+
+<a id="get_temporary_glue_partition_credentials"></a>
 
 ### get_temporary_glue_partition_credentials
 
@@ -632,6 +691,8 @@ Keyword-only arguments:
 Returns
 [GetTemporaryGluePartitionCredentialsResponseTypeDef](./type_defs.md#gettemporarygluepartitioncredentialsresponsetypedef).
 
+<a id="get_temporary_glue_table_credentials"></a>
+
 ### get_temporary_glue_table_credentials
 
 Allows a caller in a secure environment to assume a role with permission to
@@ -659,6 +720,8 @@ Keyword-only arguments:
 Returns
 [GetTemporaryGlueTableCredentialsResponseTypeDef](./type_defs.md#gettemporarygluetablecredentialsresponsetypedef).
 
+<a id="get_work_unit_results"></a>
+
 ### get_work_unit_results
 
 Returns the work units resulting from the query.
@@ -681,6 +744,8 @@ Keyword-only arguments:
 Returns
 [GetWorkUnitResultsResponseTypeDef](./type_defs.md#getworkunitresultsresponsetypedef).
 
+<a id="get_work_units"></a>
+
 ### get_work_units
 
 Retrieves the work units generated by the `StartQueryPlanning` operation.
@@ -701,6 +766,8 @@ Keyword-only arguments:
 
 Returns
 [GetWorkUnitsResponseTypeDef](./type_defs.md#getworkunitsresponsetypedef).
+
+<a id="grant_permissions"></a>
 
 ### grant_permissions
 
@@ -729,6 +796,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="list_data_cells_filter"></a>
+
 ### list_data_cells_filter
 
 Lists all the data cell filters on a table.
@@ -751,6 +820,8 @@ Keyword-only arguments:
 Returns
 [ListDataCellsFilterResponseTypeDef](./type_defs.md#listdatacellsfilterresponsetypedef).
 
+<a id="list_lf_tags"></a>
+
 ### list_lf_tags
 
 Lists LF-tags that the requester has permission to view.
@@ -772,6 +843,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListLFTagsResponseTypeDef](./type_defs.md#listlftagsresponsetypedef).
+
+<a id="list_permissions"></a>
 
 ### list_permissions
 
@@ -801,6 +874,8 @@ Keyword-only arguments:
 Returns
 [ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
+<a id="list_resources"></a>
+
 ### list_resources
 
 Lists the resources registered to be managed by the Data Catalog.
@@ -822,6 +897,8 @@ Keyword-only arguments:
 
 Returns
 [ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
+
+<a id="list_table_storage_optimizers"></a>
 
 ### list_table_storage_optimizers
 
@@ -849,6 +926,8 @@ Keyword-only arguments:
 Returns
 [ListTableStorageOptimizersResponseTypeDef](./type_defs.md#listtablestorageoptimizersresponsetypedef).
 
+<a id="list_transactions"></a>
+
 ### list_transactions
 
 Returns metadata about transactions and their status.
@@ -871,6 +950,8 @@ Keyword-only arguments:
 
 Returns
 [ListTransactionsResponseTypeDef](./type_defs.md#listtransactionsresponsetypedef).
+
+<a id="put_data_lake_settings"></a>
 
 ### put_data_lake_settings
 
@@ -895,6 +976,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="register_resource"></a>
+
 ### register_resource
 
 Registers the resource as managed by the Data Catalog.
@@ -914,6 +997,8 @@ Keyword-only arguments:
 - `RoleArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="remove_lf_tags_from_resource"></a>
 
 ### remove_lf_tags_from_resource
 
@@ -937,6 +1022,8 @@ Keyword-only arguments:
 
 Returns
 [RemoveLFTagsFromResourceResponseTypeDef](./type_defs.md#removelftagsfromresourceresponsetypedef).
+
+<a id="revoke_permissions"></a>
 
 ### revoke_permissions
 
@@ -965,6 +1052,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="search_databases_by_lf_tags"></a>
+
 ### search_databases_by_lf_tags
 
 This operation allows a search on `DATABASE` resources by `TagCondition`.
@@ -988,6 +1077,8 @@ Keyword-only arguments:
 
 Returns
 [SearchDatabasesByLFTagsResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponsetypedef).
+
+<a id="search_tables_by_lf_tags"></a>
 
 ### search_tables_by_lf_tags
 
@@ -1013,6 +1104,8 @@ Keyword-only arguments:
 Returns
 [SearchTablesByLFTagsResponseTypeDef](./type_defs.md#searchtablesbylftagsresponsetypedef).
 
+<a id="start_query_planning"></a>
+
 ### start_query_planning
 
 Submits a request to process a query statement.
@@ -1036,6 +1129,8 @@ Keyword-only arguments:
 Returns
 [StartQueryPlanningResponseTypeDef](./type_defs.md#startqueryplanningresponsetypedef).
 
+<a id="start_transaction"></a>
+
 ### start_transaction
 
 Starts a new transaction and returns its transaction ID.
@@ -1054,6 +1149,8 @@ Keyword-only arguments:
 
 Returns
 [StartTransactionResponseTypeDef](./type_defs.md#starttransactionresponsetypedef).
+
+<a id="update_lf_tag"></a>
 
 ### update_lf_tag
 
@@ -1076,6 +1173,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_resource"></a>
+
 ### update_resource
 
 Updates the data access role used for vending access to the given (registered)
@@ -1095,6 +1194,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_table_objects"></a>
 
 ### update_table_objects
 
@@ -1122,6 +1223,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_table_storage_optimizer"></a>
+
 ### update_table_storage_optimizer
 
 Updates the configuration of the storage optimizers for a table.
@@ -1146,6 +1249,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateTableStorageOptimizerResponseTypeDef](./type_defs.md#updatetablestorageoptimizerresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

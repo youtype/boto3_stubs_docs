@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-appflow-module"></a>
+
 # Type annotations for boto3 Appflow module
 
 > [Index](..) > Appflow
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
 type annotations stubs module
-[mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
+[mypy-boto3-appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[appflow]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[appflow]'
+
+# standalone installation
 pip install mypy-boto3-appflow
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-appflow
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="appflowclient"></a>
+
 ## AppflowClient
 
 Type annotations for `boto3.client("appflow")` as [AppflowClient](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_appflow.client import AppflowClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -56,6 +70,8 @@ from mypy_boto3_appflow.client import AppflowClient
 - [update_connector_profile](./client.md#update_connector_profile)
 - [update_flow](./client.md#update_flow)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AppflowClient [exceptions](./client.md#exceptions)
@@ -71,6 +87,8 @@ AppflowClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - UnsupportedOperationException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -120,6 +138,8 @@ from mypy_boto3_appflow.literals import AggregationTypeType, ...
 - [WriteOperationTypeType](./literals.md#writeoperationtypetype)
 - [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

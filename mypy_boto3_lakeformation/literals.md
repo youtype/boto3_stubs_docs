@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-lakeformation-module"></a>
+
 # Literals for boto3 LakeFormation module
 
 > [Index](..) > [LakeFormation](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module
-[mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
+[mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 - [Literals for boto3 LakeFormation module](#literals-for-boto3-lakeformation-module)
   - [ComparisonOperatorType](#comparisonoperatortype)
@@ -28,6 +30,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="comparisonoperatortype"></a>
+
 ## ComparisonOperatorType
 
 ```python
@@ -48,6 +52,8 @@ Values:
 - `NE`
 - `NOT_CONTAINS`
 
+<a id="datalakeresourcetypetype"></a>
+
 ## DataLakeResourceTypeType
 
 ```python
@@ -65,6 +71,8 @@ Values:
 - `LF_TAG_POLICY_TABLE`
 - `TABLE`
 
+<a id="fieldnamestringtype"></a>
+
 ## FieldNameStringType
 
 ```python
@@ -77,6 +85,8 @@ Values:
 - `RESOURCE_ARN`
 - `ROLE_ARN`
 
+<a id="getworkunitspaginatorname"></a>
+
 ## GetWorkUnitsPaginatorName
 
 ```python
@@ -86,6 +96,8 @@ from mypy_boto3_lakeformation.literals import GetWorkUnitsPaginatorName
 Values:
 
 - `get_work_units`
+
+<a id="listdatacellsfilterpaginatorname"></a>
 
 ## ListDataCellsFilterPaginatorName
 
@@ -97,6 +109,8 @@ Values:
 
 - `list_data_cells_filter`
 
+<a id="listlftagspaginatorname"></a>
+
 ## ListLFTagsPaginatorName
 
 ```python
@@ -106,6 +120,8 @@ from mypy_boto3_lakeformation.literals import ListLFTagsPaginatorName
 Values:
 
 - `list_lf_tags`
+
+<a id="optimizertypetype"></a>
 
 ## OptimizerTypeType
 
@@ -118,6 +134,8 @@ Values:
 - `ALL`
 - `COMPACTION`
 - `GARBAGE_COLLECTION`
+
+<a id="permissiontype"></a>
 
 ## PermissionType
 
@@ -143,6 +161,8 @@ Values:
 - `INSERT`
 - `SELECT`
 
+<a id="permissiontypetype"></a>
+
 ## PermissionTypeType
 
 ```python
@@ -153,6 +173,8 @@ Values:
 
 - `CELL_FILTER_PERMISSION`
 - `COLUMN_PERMISSION`
+
+<a id="querystatestringtype"></a>
 
 ## QueryStateStringType
 
@@ -168,6 +190,8 @@ Values:
 - `PENDING`
 - `WORKUNITS_AVAILABLE`
 
+<a id="resourcesharetypetype"></a>
+
 ## ResourceShareTypeType
 
 ```python
@@ -178,6 +202,8 @@ Values:
 
 - `ALL`
 - `FOREIGN`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -190,6 +216,8 @@ Values:
 - `DATABASE`
 - `TABLE`
 
+<a id="searchdatabasesbylftagspaginatorname"></a>
+
 ## SearchDatabasesByLFTagsPaginatorName
 
 ```python
@@ -200,6 +228,8 @@ Values:
 
 - `search_databases_by_lf_tags`
 
+<a id="searchtablesbylftagspaginatorname"></a>
+
 ## SearchTablesByLFTagsPaginatorName
 
 ```python
@@ -209,6 +239,8 @@ from mypy_boto3_lakeformation.literals import SearchTablesByLFTagsPaginatorName
 Values:
 
 - `search_tables_by_lf_tags`
+
+<a id="transactionstatusfiltertype"></a>
 
 ## TransactionStatusFilterType
 
@@ -224,6 +256,8 @@ Values:
 - `COMMITTED`
 - `COMPLETED`
 
+<a id="transactionstatustype"></a>
+
 ## TransactionStatusType
 
 ```python
@@ -237,6 +271,8 @@ Values:
 - `COMMIT_IN_PROGRESS`
 - `COMMITTED`
 
+<a id="transactiontypetype"></a>
+
 ## TransactionTypeType
 
 ```python
@@ -247,6 +283,8 @@ Values:
 
 - `READ_AND_WRITE`
 - `READ_ONLY`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -555,6 +593,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

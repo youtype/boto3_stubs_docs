@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-lexmodelsv2-module"></a>
+
 # Waiters for boto3 LexModelsV2 module
 
 > [Index](..) > [LexModelsV2](.) > Waiters
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
-[mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
+[mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 - [Waiters for boto3 LexModelsV2 module](#waiters-for-boto3-lexmodelsv2-module)
   - [BotAliasAvailableWaiter](#botaliasavailablewaiter)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [BotLocaleExpressTestingAvailableWaiter](#botlocaleexpresstestingavailablewaiter)
   - [BotVersionAvailableWaiter](#botversionavailablewaiter)
 
+<a id="botaliasavailablewaiter"></a>
+
 ## BotAliasAvailableWaiter
 
 Type annotations for
@@ -25,10 +29,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lexv2_models.waiter import BotAliasAvailableWaiter
 
 def get_bot_alias_available_waiter() -> BotAliasAvailableWaiter:
-    return boto3.client("lexv2-models").get_waiter("bot_alias_available")
+    return Session().client("lexv2-models").get_waiter("bot_alias_available")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `BotAliasAvailableWaiter.wait` method:
 - `botId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="botavailablewaiter"></a>
+
 ## BotAvailableWaiter
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lexv2_models.waiter import BotAvailableWaiter
 
 def get_bot_available_waiter() -> BotAvailableWaiter:
-    return boto3.client("lexv2-models").get_waiter("bot_available")
+    return Session().client("lexv2-models").get_waiter("bot_available")
 ```
 
 Boto3 documentation:
@@ -62,6 +72,8 @@ Arguments for `BotAvailableWaiter.wait` method:
 - `botId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="botexportcompletedwaiter"></a>
+
 ## BotExportCompletedWaiter
 
 Type annotations for
@@ -70,10 +82,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lexv2_models.waiter import BotExportCompletedWaiter
 
 def get_bot_export_completed_waiter() -> BotExportCompletedWaiter:
-    return boto3.client("lexv2-models").get_waiter("bot_export_completed")
+    return Session().client("lexv2-models").get_waiter("bot_export_completed")
 ```
 
 Boto3 documentation:
@@ -84,6 +98,8 @@ Arguments for `BotExportCompletedWaiter.wait` method:
 - `exportId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="botimportcompletedwaiter"></a>
+
 ## BotImportCompletedWaiter
 
 Type annotations for
@@ -92,10 +108,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lexv2_models.waiter import BotImportCompletedWaiter
 
 def get_bot_import_completed_waiter() -> BotImportCompletedWaiter:
-    return boto3.client("lexv2-models").get_waiter("bot_import_completed")
+    return Session().client("lexv2-models").get_waiter("bot_import_completed")
 ```
 
 Boto3 documentation:
@@ -106,6 +124,8 @@ Arguments for `BotImportCompletedWaiter.wait` method:
 - `importId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="botlocalebuiltwaiter"></a>
+
 ## BotLocaleBuiltWaiter
 
 Type annotations for
@@ -114,10 +134,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lexv2_models.waiter import BotLocaleBuiltWaiter
 
 def get_bot_locale_built_waiter() -> BotLocaleBuiltWaiter:
-    return boto3.client("lexv2-models").get_waiter("bot_locale_built")
+    return Session().client("lexv2-models").get_waiter("bot_locale_built")
 ```
 
 Boto3 documentation:
@@ -130,6 +152,8 @@ Arguments for `BotLocaleBuiltWaiter.wait` method:
 - `localeId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="botlocalecreatedwaiter"></a>
+
 ## BotLocaleCreatedWaiter
 
 Type annotations for
@@ -138,10 +162,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lexv2_models.waiter import BotLocaleCreatedWaiter
 
 def get_bot_locale_created_waiter() -> BotLocaleCreatedWaiter:
-    return boto3.client("lexv2-models").get_waiter("bot_locale_created")
+    return Session().client("lexv2-models").get_waiter("bot_locale_created")
 ```
 
 Boto3 documentation:
@@ -154,6 +180,8 @@ Arguments for `BotLocaleCreatedWaiter.wait` method:
 - `localeId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="botlocaleexpresstestingavailablewaiter"></a>
+
 ## BotLocaleExpressTestingAvailableWaiter
 
 Type annotations for
@@ -162,10 +190,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lexv2_models.waiter import BotLocaleExpressTestingAvailableWaiter
 
 def get_bot_locale_express_testing_available_waiter() -> BotLocaleExpressTestingAvailableWaiter:
-    return boto3.client("lexv2-models").get_waiter("bot_locale_express_testing_available")
+    return Session().client("lexv2-models").get_waiter("bot_locale_express_testing_available")
 ```
 
 Boto3 documentation:
@@ -178,6 +208,8 @@ Arguments for `BotLocaleExpressTestingAvailableWaiter.wait` method:
 - `localeId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="botversionavailablewaiter"></a>
+
 ## BotVersionAvailableWaiter
 
 Type annotations for
@@ -186,10 +218,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lexv2_models.waiter import BotVersionAvailableWaiter
 
 def get_bot_version_available_waiter() -> BotVersionAvailableWaiter:
-    return boto3.client("lexv2-models").get_waiter("bot_version_available")
+    return Session().client("lexv2-models").get_waiter("bot_version_available")
 ```
 
 Boto3 documentation:

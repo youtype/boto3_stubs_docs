@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-mediapackage-module"></a>
+
 # Type annotations for boto3 MediaPackage module
 
 > [Index](..) > MediaPackage
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
 type annotations stubs module
-[mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
+[mypy-boto3-mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[mediapackage]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[mediapackage]'
+
+# standalone installation
 pip install mypy-boto3-mediapackage
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-mediapackage
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="mediapackageclient"></a>
+
 ## MediaPackageClient
 
 Type annotations for `boto3.client("mediapackage")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_mediapackage.client import MediaPackageClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -56,6 +70,8 @@ from mypy_boto3_mediapackage.client import MediaPackageClient
 - [update_channel](./client.md#update_channel)
 - [update_origin_endpoint](./client.md#update_origin_endpoint)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MediaPackageClient [exceptions](./client.md#exceptions)
@@ -68,6 +84,8 @@ MediaPackageClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - UnprocessableEntityException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -76,12 +94,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_mediapackage.paginators import ListChannelsPaginator, ...
+from mypy_boto3_mediapackage.paginator import ListChannelsPaginator, ...
 ```
 
 - [ListChannelsPaginator](./paginators.md#listchannelspaginator)
 - [ListHarvestJobsPaginator](./paginators.md#listharvestjobspaginator)
 - [ListOriginEndpointsPaginator](./paginators.md#listoriginendpointspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -113,6 +133,8 @@ from mypy_boto3_mediapackage.literals import AdMarkersType, ...
 - [UtcTimingType](./literals.md#utctimingtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

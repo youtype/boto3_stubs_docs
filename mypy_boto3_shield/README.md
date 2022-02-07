@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-shield-module"></a>
+
 # Type annotations for boto3 Shield module
 
 > [Index](..) > Shield
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
 type annotations stubs module
-[mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
+[mypy-boto3-shield](https://pypi.org/project/mypy-boto3-shield/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[shield]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[shield]'
+
+# standalone installation
 pip install mypy-boto3-shield
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-shield
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="shieldclient"></a>
+
 ## ShieldClient
 
 Type annotations for `boto3.client("shield")` as [ShieldClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_shield.client import ShieldClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -72,6 +86,8 @@ from mypy_boto3_shield.client import ShieldClient
 - [update_protection_group](./client.md#update_protection_group)
 - [update_subscription](./client.md#update_subscription)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ShieldClient [exceptions](./client.md#exceptions)
@@ -91,6 +107,8 @@ ShieldClient [exceptions](./client.md#exceptions)
 - ResourceAlreadyExistsException
 - ResourceNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -99,11 +117,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_shield.paginators import ListAttacksPaginator, ...
+from mypy_boto3_shield.paginator import ListAttacksPaginator, ...
 ```
 
 - [ListAttacksPaginator](./paginators.md#listattackspaginator)
 - [ListProtectionsPaginator](./paginators.md#listprotectionspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -130,6 +150,8 @@ from mypy_boto3_shield.literals import ApplicationLayerAutomaticResponseStatusTy
 - [UnitType](./literals.md#unittype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

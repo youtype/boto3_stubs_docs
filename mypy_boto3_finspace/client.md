@@ -1,3 +1,5 @@
+<a id="finspaceclient-for-boto3-finspace-module"></a>
+
 # finspaceClient for boto3 finspace module
 
 > [Index](..) > [finspace](.) > finspaceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
 type annotations stubs module
-[mypy_boto3_finspace](https://pypi.org/project/mypy-boto3-finspace/).
+[mypy-boto3-finspace](https://pypi.org/project/mypy-boto3-finspace/).
 
 - [finspaceClient for boto3 finspace module](#finspaceclient-for-boto3-finspace-module)
   - [finspaceClient](#finspaceclient)
@@ -23,6 +25,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_environment](#update_environment)
 
+<a id="finspaceclient"></a>
+
 ## finspaceClient
 
 Type annotations for `boto3.client("finspace")`
@@ -30,14 +34,17 @@ Type annotations for `boto3.client("finspace")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_finspace.client import finspaceClient
 
 def get_finspace_client() -> finspaceClient:
-    return boto3.client("finspace")
+    return Session().client("finspace")
 ```
 
 Boto3 documentation:
 [finspace.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -63,7 +70,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -75,6 +86,8 @@ Boto3 documentation:
 [finspace.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -90,6 +103,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_environment"></a>
 
 ### create_environment
 
@@ -119,6 +134,8 @@ Keyword-only arguments:
 Returns
 [CreateEnvironmentResponseTypeDef](./type_defs.md#createenvironmentresponsetypedef).
 
+<a id="delete_environment"></a>
+
 ### delete_environment
 
 Delete an FinSpace environment.
@@ -136,6 +153,8 @@ Keyword-only arguments:
 - `environmentId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -155,6 +174,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_environment"></a>
+
 ### get_environment
 
 Returns the FinSpace environment object.
@@ -173,6 +194,8 @@ Keyword-only arguments:
 
 Returns
 [GetEnvironmentResponseTypeDef](./type_defs.md#getenvironmentresponsetypedef).
+
+<a id="list_environments"></a>
 
 ### list_environments
 
@@ -194,6 +217,8 @@ Keyword-only arguments:
 Returns
 [ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 A list of all tags for a resource.
@@ -212,6 +237,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -232,6 +259,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes metadata tags from a FinSpace resource.
@@ -250,6 +279,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_environment"></a>
 
 ### update_environment
 

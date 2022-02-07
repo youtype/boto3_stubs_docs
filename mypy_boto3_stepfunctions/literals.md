@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-sfn-module"></a>
+
 # Literals for boto3 SFN module
 
 > [Index](..) > [SFN](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
 type annotations stubs module
-[mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+[mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 - [Literals for boto3 SFN module](#literals-for-boto3-sfn-module)
   - [ExecutionStatusType](#executionstatustype)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="executionstatustype"></a>
+
 ## ExecutionStatusType
 
 ```python
@@ -35,6 +39,8 @@ Values:
 - `SUCCEEDED`
 - `TIMED_OUT`
 
+<a id="getexecutionhistorypaginatorname"></a>
+
 ## GetExecutionHistoryPaginatorName
 
 ```python
@@ -44,6 +50,8 @@ from mypy_boto3_stepfunctions.literals import GetExecutionHistoryPaginatorName
 Values:
 
 - `get_execution_history`
+
+<a id="historyeventtypetype"></a>
 
 ## HistoryEventTypeType
 
@@ -109,6 +117,8 @@ Values:
 - `WaitStateEntered`
 - `WaitStateExited`
 
+<a id="listactivitiespaginatorname"></a>
+
 ## ListActivitiesPaginatorName
 
 ```python
@@ -118,6 +128,8 @@ from mypy_boto3_stepfunctions.literals import ListActivitiesPaginatorName
 Values:
 
 - `list_activities`
+
+<a id="listexecutionspaginatorname"></a>
 
 ## ListExecutionsPaginatorName
 
@@ -129,6 +141,8 @@ Values:
 
 - `list_executions`
 
+<a id="liststatemachinespaginatorname"></a>
+
 ## ListStateMachinesPaginatorName
 
 ```python
@@ -138,6 +152,8 @@ from mypy_boto3_stepfunctions.literals import ListStateMachinesPaginatorName
 Values:
 
 - `list_state_machines`
+
+<a id="logleveltype"></a>
 
 ## LogLevelType
 
@@ -152,6 +168,8 @@ Values:
 - `FATAL`
 - `OFF`
 
+<a id="statemachinestatustype"></a>
+
 ## StateMachineStatusType
 
 ```python
@@ -162,6 +180,8 @@ Values:
 
 - `ACTIVE`
 - `DELETING`
+
+<a id="statemachinetypetype"></a>
 
 ## StateMachineTypeType
 
@@ -174,6 +194,8 @@ Values:
 - `EXPRESS`
 - `STANDARD`
 
+<a id="syncexecutionstatustype"></a>
+
 ## SyncExecutionStatusType
 
 ```python
@@ -185,6 +207,8 @@ Values:
 - `FAILED`
 - `SUCCEEDED`
 - `TIMED_OUT`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -493,6 +517,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

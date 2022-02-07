@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-kinesisvideo-module"></a>
+
 # Type annotations for boto3 KinesisVideo module
 
 > [Index](..) > KinesisVideo
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
 type annotations stubs module
-[mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
+[mypy-boto3-kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[kinesisvideo]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[kinesisvideo]'
+
+# standalone installation
 pip install mypy-boto3-kinesisvideo
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-kinesisvideo
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="kinesisvideoclient"></a>
+
 ## KinesisVideoClient
 
 Type annotations for `boto3.client("kinesisvideo")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_kinesisvideo.client import KinesisVideoClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -56,6 +70,8 @@ from mypy_boto3_kinesisvideo.client import KinesisVideoClient
 - [update_signaling_channel](./client.md#update_signaling_channel)
 - [update_stream](./client.md#update_stream)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 KinesisVideoClient [exceptions](./client.md#exceptions)
@@ -75,6 +91,8 @@ KinesisVideoClient [exceptions](./client.md#exceptions)
 - TagsPerResourceExceededLimitException
 - VersionMismatchException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -83,11 +101,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesisvideo.paginators import ListSignalingChannelsPaginator, ...
+from mypy_boto3_kinesisvideo.paginator import ListSignalingChannelsPaginator, ...
 ```
 
 - [ListSignalingChannelsPaginator](./paginators.md#listsignalingchannelspaginator)
 - [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -110,6 +130,8 @@ from mypy_boto3_kinesisvideo.literals import APINameType, ...
 - [UpdateDataRetentionOperationType](./literals.md#updatedataretentionoperationtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

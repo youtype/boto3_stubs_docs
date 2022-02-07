@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-qldbsession-module"></a>
+
 # Literals for boto3 QLDBSession module
 
 > [Index](..) > [QLDBSession](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
 type annotations stubs module
-[mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
+[mypy-boto3-qldb-session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
 - [Literals for boto3 QLDBSession module](#literals-for-boto3-qldbsession-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

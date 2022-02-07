@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-s3control-module"></a>
+
 # Typed dictionaries for boto3 S3Control module
 
 > [Index](..) > [S3Control](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
 type annotations stubs module
-[mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
+[mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 - [Typed dictionaries for boto3 S3Control module](#typed-dictionaries-for-boto3-s3control-module)
   - [AbortIncompleteMultipartUploadTypeDef](#abortincompletemultipartuploadtypedef)
@@ -181,6 +183,8 @@ type annotations stubs module
   - [UpdateJobStatusResultTypeDef](#updatejobstatusresulttypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
 
+<a id="abortincompletemultipartuploadtypedef"></a>
+
 ## AbortIncompleteMultipartUploadTypeDef
 
 ```python
@@ -190,6 +194,8 @@ from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef
 Optional fields:
 
 - `DaysAfterInitiation`: `int`
+
+<a id="accesspointtypedef"></a>
 
 ## AccessPointTypeDef
 
@@ -210,6 +216,8 @@ Optional fields:
 - `AccessPointArn`: `str`
 - `Alias`: `str`
 
+<a id="accountleveltypedef"></a>
+
 ## AccountLevelTypeDef
 
 ```python
@@ -225,6 +233,8 @@ Optional fields:
 - `ActivityMetrics`:
   [ActivityMetricsTypeDef](./type_defs.md#activitymetricstypedef)
 
+<a id="activitymetricstypedef"></a>
+
 ## ActivityMetricsTypeDef
 
 ```python
@@ -234,6 +244,8 @@ from mypy_boto3_s3control.type_defs import ActivityMetricsTypeDef
 Optional fields:
 
 - `IsEnabled`: `bool`
+
+<a id="asyncerrordetailstypedef"></a>
 
 ## AsyncErrorDetailsTypeDef
 
@@ -247,6 +259,8 @@ Optional fields:
 - `Message`: `str`
 - `Resource`: `str`
 - `RequestId`: `str`
+
+<a id="asyncoperationtypedef"></a>
 
 ## AsyncOperationTypeDef
 
@@ -265,6 +279,8 @@ Optional fields:
 - `ResponseDetails`:
   [AsyncResponseDetailsTypeDef](./type_defs.md#asyncresponsedetailstypedef)
 
+<a id="asyncrequestparameterstypedef"></a>
+
 ## AsyncRequestParametersTypeDef
 
 ```python
@@ -280,6 +296,8 @@ Optional fields:
 - `PutMultiRegionAccessPointPolicyRequest`:
   [PutMultiRegionAccessPointPolicyInputTypeDef](./type_defs.md#putmultiregionaccesspointpolicyinputtypedef)
 
+<a id="asyncresponsedetailstypedef"></a>
+
 ## AsyncResponseDetailsTypeDef
 
 ```python
@@ -292,6 +310,8 @@ Optional fields:
   [MultiRegionAccessPointsAsyncResponseTypeDef](./type_defs.md#multiregionaccesspointsasyncresponsetypedef)
 - `ErrorDetails`:
   [AsyncErrorDetailsTypeDef](./type_defs.md#asyncerrordetailstypedef)
+
+<a id="awslambdatransformationtypedef"></a>
 
 ## AwsLambdaTransformationTypeDef
 
@@ -307,6 +327,8 @@ Optional fields:
 
 - `FunctionPayload`: `str`
 
+<a id="bucketleveltypedef"></a>
+
 ## BucketLevelTypeDef
 
 ```python
@@ -319,6 +341,8 @@ Optional fields:
   [ActivityMetricsTypeDef](./type_defs.md#activitymetricstypedef)
 - `PrefixLevel`: [PrefixLevelTypeDef](./type_defs.md#prefixleveltypedef)
 
+<a id="cloudwatchmetricstypedef"></a>
+
 ## CloudWatchMetricsTypeDef
 
 ```python
@@ -328,6 +352,8 @@ from mypy_boto3_s3control.type_defs import CloudWatchMetricsTypeDef
 Required fields:
 
 - `IsEnabled`: `bool`
+
+<a id="createaccesspointforobjectlambdarequestrequesttypedef"></a>
 
 ## CreateAccessPointForObjectLambdaRequestRequestTypeDef
 
@@ -342,6 +368,8 @@ Required fields:
 - `Configuration`:
   [ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef)
 
+<a id="createaccesspointforobjectlambdaresulttypedef"></a>
+
 ## CreateAccessPointForObjectLambdaResultTypeDef
 
 ```python
@@ -353,6 +381,8 @@ Required fields:
 - `ObjectLambdaAccessPointArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createaccesspointrequestrequesttypedef"></a>
 
 ## CreateAccessPointRequestRequestTypeDef
 
@@ -373,6 +403,8 @@ Optional fields:
 - `PublicAccessBlockConfiguration`:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 
+<a id="createaccesspointresulttypedef"></a>
+
 ## CreateAccessPointResultTypeDef
 
 ```python
@@ -386,6 +418,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createbucketconfigurationtypedef"></a>
+
 ## CreateBucketConfigurationTypeDef
 
 ```python
@@ -396,6 +430,8 @@ Optional fields:
 
 - `LocationConstraint`:
   [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
+
+<a id="createbucketrequestrequesttypedef"></a>
 
 ## CreateBucketRequestRequestTypeDef
 
@@ -420,6 +456,8 @@ Optional fields:
 - `ObjectLockEnabledForBucket`: `bool`
 - `OutpostId`: `str`
 
+<a id="createbucketresulttypedef"></a>
+
 ## CreateBucketResultTypeDef
 
 ```python
@@ -432,6 +470,8 @@ Required fields:
 - `BucketArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createjobrequestrequesttypedef"></a>
 
 ## CreateJobRequestRequestTypeDef
 
@@ -455,6 +495,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 
+<a id="createjobresulttypedef"></a>
+
 ## CreateJobResultTypeDef
 
 ```python
@@ -466,6 +508,8 @@ Required fields:
 - `JobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmultiregionaccesspointinputtypedef"></a>
 
 ## CreateMultiRegionAccessPointInputTypeDef
 
@@ -483,6 +527,8 @@ Optional fields:
 - `PublicAccessBlock`:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 
+<a id="createmultiregionaccesspointrequestrequesttypedef"></a>
+
 ## CreateMultiRegionAccessPointRequestRequestTypeDef
 
 ```python
@@ -496,6 +542,8 @@ Required fields:
 - `Details`:
   [CreateMultiRegionAccessPointInputTypeDef](./type_defs.md#createmultiregionaccesspointinputtypedef)
 
+<a id="createmultiregionaccesspointresulttypedef"></a>
+
 ## CreateMultiRegionAccessPointResultTypeDef
 
 ```python
@@ -508,6 +556,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteaccesspointforobjectlambdarequestrequesttypedef"></a>
+
 ## DeleteAccessPointForObjectLambdaRequestRequestTypeDef
 
 ```python
@@ -518,6 +568,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="deleteaccesspointpolicyforobjectlambdarequestrequesttypedef"></a>
 
 ## DeleteAccessPointPolicyForObjectLambdaRequestRequestTypeDef
 
@@ -530,6 +582,8 @@ Required fields:
 - `AccountId`: `str`
 - `Name`: `str`
 
+<a id="deleteaccesspointpolicyrequestrequesttypedef"></a>
+
 ## DeleteAccessPointPolicyRequestRequestTypeDef
 
 ```python
@@ -540,6 +594,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="deleteaccesspointrequestrequesttypedef"></a>
 
 ## DeleteAccessPointRequestRequestTypeDef
 
@@ -552,6 +608,8 @@ Required fields:
 - `AccountId`: `str`
 - `Name`: `str`
 
+<a id="deletebucketlifecycleconfigurationrequestrequesttypedef"></a>
+
 ## DeleteBucketLifecycleConfigurationRequestRequestTypeDef
 
 ```python
@@ -562,6 +620,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Bucket`: `str`
+
+<a id="deletebucketpolicyrequestrequesttypedef"></a>
 
 ## DeleteBucketPolicyRequestRequestTypeDef
 
@@ -574,6 +634,8 @@ Required fields:
 - `AccountId`: `str`
 - `Bucket`: `str`
 
+<a id="deletebucketrequestrequesttypedef"></a>
+
 ## DeleteBucketRequestRequestTypeDef
 
 ```python
@@ -584,6 +646,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Bucket`: `str`
+
+<a id="deletebuckettaggingrequestrequesttypedef"></a>
 
 ## DeleteBucketTaggingRequestRequestTypeDef
 
@@ -596,6 +660,8 @@ Required fields:
 - `AccountId`: `str`
 - `Bucket`: `str`
 
+<a id="deletejobtaggingrequestrequesttypedef"></a>
+
 ## DeleteJobTaggingRequestRequestTypeDef
 
 ```python
@@ -607,6 +673,8 @@ Required fields:
 - `AccountId`: `str`
 - `JobId`: `str`
 
+<a id="deletemultiregionaccesspointinputtypedef"></a>
+
 ## DeleteMultiRegionAccessPointInputTypeDef
 
 ```python
@@ -616,6 +684,8 @@ from mypy_boto3_s3control.type_defs import DeleteMultiRegionAccessPointInputType
 Required fields:
 
 - `Name`: `str`
+
+<a id="deletemultiregionaccesspointrequestrequesttypedef"></a>
 
 ## DeleteMultiRegionAccessPointRequestRequestTypeDef
 
@@ -630,6 +700,8 @@ Required fields:
 - `Details`:
   [DeleteMultiRegionAccessPointInputTypeDef](./type_defs.md#deletemultiregionaccesspointinputtypedef)
 
+<a id="deletemultiregionaccesspointresulttypedef"></a>
+
 ## DeleteMultiRegionAccessPointResultTypeDef
 
 ```python
@@ -642,6 +714,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletepublicaccessblockrequestrequesttypedef"></a>
+
 ## DeletePublicAccessBlockRequestRequestTypeDef
 
 ```python
@@ -651,6 +725,8 @@ from mypy_boto3_s3control.type_defs import DeletePublicAccessBlockRequestRequest
 Required fields:
 
 - `AccountId`: `str`
+
+<a id="deletestoragelensconfigurationrequestrequesttypedef"></a>
 
 ## DeleteStorageLensConfigurationRequestRequestTypeDef
 
@@ -663,6 +739,8 @@ Required fields:
 - `ConfigId`: `str`
 - `AccountId`: `str`
 
+<a id="deletestoragelensconfigurationtaggingrequestrequesttypedef"></a>
+
 ## DeleteStorageLensConfigurationTaggingRequestRequestTypeDef
 
 ```python
@@ -674,6 +752,8 @@ Required fields:
 - `ConfigId`: `str`
 - `AccountId`: `str`
 
+<a id="describejobrequestrequesttypedef"></a>
+
 ## DescribeJobRequestRequestTypeDef
 
 ```python
@@ -684,6 +764,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `JobId`: `str`
+
+<a id="describejobresulttypedef"></a>
 
 ## DescribeJobResultTypeDef
 
@@ -697,6 +779,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemultiregionaccesspointoperationrequestrequesttypedef"></a>
+
 ## DescribeMultiRegionAccessPointOperationRequestRequestTypeDef
 
 ```python
@@ -707,6 +791,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `RequestTokenARN`: `str`
+
+<a id="describemultiregionaccesspointoperationresulttypedef"></a>
 
 ## DescribeMultiRegionAccessPointOperationResultTypeDef
 
@@ -721,6 +807,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="establishedmultiregionaccesspointpolicytypedef"></a>
+
 ## EstablishedMultiRegionAccessPointPolicyTypeDef
 
 ```python
@@ -730,6 +818,8 @@ from mypy_boto3_s3control.type_defs import EstablishedMultiRegionAccessPointPoli
 Optional fields:
 
 - `Policy`: `str`
+
+<a id="excludetypedef"></a>
 
 ## ExcludeTypeDef
 
@@ -742,6 +832,8 @@ Optional fields:
 - `Buckets`: `List`\[`str`\]
 - `Regions`: `List`\[`str`\]
 
+<a id="getaccesspointconfigurationforobjectlambdarequestrequesttypedef"></a>
+
 ## GetAccessPointConfigurationForObjectLambdaRequestRequestTypeDef
 
 ```python
@@ -752,6 +844,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="getaccesspointconfigurationforobjectlambdaresulttypedef"></a>
 
 ## GetAccessPointConfigurationForObjectLambdaResultTypeDef
 
@@ -766,6 +860,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getaccesspointforobjectlambdarequestrequesttypedef"></a>
+
 ## GetAccessPointForObjectLambdaRequestRequestTypeDef
 
 ```python
@@ -776,6 +872,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="getaccesspointforobjectlambdaresulttypedef"></a>
 
 ## GetAccessPointForObjectLambdaResultTypeDef
 
@@ -792,6 +890,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getaccesspointpolicyforobjectlambdarequestrequesttypedef"></a>
+
 ## GetAccessPointPolicyForObjectLambdaRequestRequestTypeDef
 
 ```python
@@ -802,6 +902,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="getaccesspointpolicyforobjectlambdaresulttypedef"></a>
 
 ## GetAccessPointPolicyForObjectLambdaResultTypeDef
 
@@ -815,6 +917,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getaccesspointpolicyrequestrequesttypedef"></a>
+
 ## GetAccessPointPolicyRequestRequestTypeDef
 
 ```python
@@ -825,6 +929,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="getaccesspointpolicyresulttypedef"></a>
 
 ## GetAccessPointPolicyResultTypeDef
 
@@ -838,6 +944,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getaccesspointpolicystatusforobjectlambdarequestrequesttypedef"></a>
+
 ## GetAccessPointPolicyStatusForObjectLambdaRequestRequestTypeDef
 
 ```python
@@ -848,6 +956,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="getaccesspointpolicystatusforobjectlambdaresulttypedef"></a>
 
 ## GetAccessPointPolicyStatusForObjectLambdaResultTypeDef
 
@@ -861,6 +971,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getaccesspointpolicystatusrequestrequesttypedef"></a>
+
 ## GetAccessPointPolicyStatusRequestRequestTypeDef
 
 ```python
@@ -871,6 +983,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="getaccesspointpolicystatusresulttypedef"></a>
 
 ## GetAccessPointPolicyStatusResultTypeDef
 
@@ -884,6 +998,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getaccesspointrequestrequesttypedef"></a>
+
 ## GetAccessPointRequestRequestTypeDef
 
 ```python
@@ -894,6 +1010,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="getaccesspointresulttypedef"></a>
 
 ## GetAccessPointResultTypeDef
 
@@ -917,6 +1035,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbucketlifecycleconfigurationrequestrequesttypedef"></a>
+
 ## GetBucketLifecycleConfigurationRequestRequestTypeDef
 
 ```python
@@ -927,6 +1047,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Bucket`: `str`
+
+<a id="getbucketlifecycleconfigurationresulttypedef"></a>
 
 ## GetBucketLifecycleConfigurationResultTypeDef
 
@@ -941,6 +1063,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbucketpolicyrequestrequesttypedef"></a>
+
 ## GetBucketPolicyRequestRequestTypeDef
 
 ```python
@@ -951,6 +1075,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Bucket`: `str`
+
+<a id="getbucketpolicyresulttypedef"></a>
 
 ## GetBucketPolicyResultTypeDef
 
@@ -964,6 +1090,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbucketrequestrequesttypedef"></a>
+
 ## GetBucketRequestRequestTypeDef
 
 ```python
@@ -974,6 +1102,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Bucket`: `str`
+
+<a id="getbucketresulttypedef"></a>
 
 ## GetBucketResultTypeDef
 
@@ -989,6 +1119,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbuckettaggingrequestrequesttypedef"></a>
+
 ## GetBucketTaggingRequestRequestTypeDef
 
 ```python
@@ -999,6 +1131,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Bucket`: `str`
+
+<a id="getbuckettaggingresulttypedef"></a>
 
 ## GetBucketTaggingResultTypeDef
 
@@ -1012,6 +1146,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getjobtaggingrequestrequesttypedef"></a>
+
 ## GetJobTaggingRequestRequestTypeDef
 
 ```python
@@ -1022,6 +1158,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `JobId`: `str`
+
+<a id="getjobtaggingresulttypedef"></a>
 
 ## GetJobTaggingResultTypeDef
 
@@ -1035,6 +1173,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmultiregionaccesspointpolicyrequestrequesttypedef"></a>
+
 ## GetMultiRegionAccessPointPolicyRequestRequestTypeDef
 
 ```python
@@ -1045,6 +1185,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="getmultiregionaccesspointpolicyresulttypedef"></a>
 
 ## GetMultiRegionAccessPointPolicyResultTypeDef
 
@@ -1059,6 +1201,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmultiregionaccesspointpolicystatusrequestrequesttypedef"></a>
+
 ## GetMultiRegionAccessPointPolicyStatusRequestRequestTypeDef
 
 ```python
@@ -1069,6 +1213,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="getmultiregionaccesspointpolicystatusresulttypedef"></a>
 
 ## GetMultiRegionAccessPointPolicyStatusResultTypeDef
 
@@ -1082,6 +1228,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmultiregionaccesspointrequestrequesttypedef"></a>
+
 ## GetMultiRegionAccessPointRequestRequestTypeDef
 
 ```python
@@ -1092,6 +1240,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `Name`: `str`
+
+<a id="getmultiregionaccesspointresulttypedef"></a>
 
 ## GetMultiRegionAccessPointResultTypeDef
 
@@ -1106,6 +1256,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpublicaccessblockoutputtypedef"></a>
+
 ## GetPublicAccessBlockOutputTypeDef
 
 ```python
@@ -1119,6 +1271,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpublicaccessblockrequestrequesttypedef"></a>
+
 ## GetPublicAccessBlockRequestRequestTypeDef
 
 ```python
@@ -1128,6 +1282,8 @@ from mypy_boto3_s3control.type_defs import GetPublicAccessBlockRequestRequestTyp
 Required fields:
 
 - `AccountId`: `str`
+
+<a id="getstoragelensconfigurationrequestrequesttypedef"></a>
 
 ## GetStorageLensConfigurationRequestRequestTypeDef
 
@@ -1139,6 +1295,8 @@ Required fields:
 
 - `ConfigId`: `str`
 - `AccountId`: `str`
+
+<a id="getstoragelensconfigurationresulttypedef"></a>
 
 ## GetStorageLensConfigurationResultTypeDef
 
@@ -1153,6 +1311,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstoragelensconfigurationtaggingrequestrequesttypedef"></a>
+
 ## GetStorageLensConfigurationTaggingRequestRequestTypeDef
 
 ```python
@@ -1163,6 +1323,8 @@ Required fields:
 
 - `ConfigId`: `str`
 - `AccountId`: `str`
+
+<a id="getstoragelensconfigurationtaggingresulttypedef"></a>
 
 ## GetStorageLensConfigurationTaggingResultTypeDef
 
@@ -1177,6 +1339,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="includetypedef"></a>
+
 ## IncludeTypeDef
 
 ```python
@@ -1187,6 +1351,8 @@ Optional fields:
 
 - `Buckets`: `List`\[`str`\]
 - `Regions`: `List`\[`str`\]
+
+<a id="jobdescriptortypedef"></a>
 
 ## JobDescriptorTypeDef
 
@@ -1216,6 +1382,8 @@ Optional fields:
 - `SuspendedDate`: `datetime`
 - `SuspendedCause`: `str`
 
+<a id="jobfailuretypedef"></a>
+
 ## JobFailureTypeDef
 
 ```python
@@ -1226,6 +1394,8 @@ Optional fields:
 
 - `FailureCode`: `str`
 - `FailureReason`: `str`
+
+<a id="joblistdescriptortypedef"></a>
 
 ## JobListDescriptorTypeDef
 
@@ -1245,6 +1415,8 @@ Optional fields:
 - `ProgressSummary`:
   [JobProgressSummaryTypeDef](./type_defs.md#jobprogresssummarytypedef)
 
+<a id="jobmanifestlocationtypedef"></a>
+
 ## JobManifestLocationTypeDef
 
 ```python
@@ -1259,6 +1431,8 @@ Required fields:
 Optional fields:
 
 - `ObjectVersionId`: `str`
+
+<a id="jobmanifestspectypedef"></a>
 
 ## JobManifestSpecTypeDef
 
@@ -1275,6 +1449,8 @@ Optional fields:
 - `Fields`:
   `Sequence`\[[JobManifestFieldNameType](./literals.md#jobmanifestfieldnametype)\]
 
+<a id="jobmanifesttypedef"></a>
+
 ## JobManifestTypeDef
 
 ```python
@@ -1286,6 +1462,8 @@ Required fields:
 - `Spec`: [JobManifestSpecTypeDef](./type_defs.md#jobmanifestspectypedef)
 - `Location`:
   [JobManifestLocationTypeDef](./type_defs.md#jobmanifestlocationtypedef)
+
+<a id="joboperationtypedef"></a>
 
 ## JobOperationTypeDef
 
@@ -1311,6 +1489,8 @@ Optional fields:
 - `S3PutObjectRetention`:
   [S3SetObjectRetentionOperationTypeDef](./type_defs.md#s3setobjectretentionoperationtypedef)
 
+<a id="jobprogresssummarytypedef"></a>
+
 ## JobProgressSummaryTypeDef
 
 ```python
@@ -1322,6 +1502,8 @@ Optional fields:
 - `TotalNumberOfTasks`: `int`
 - `NumberOfTasksSucceeded`: `int`
 - `NumberOfTasksFailed`: `int`
+
+<a id="jobreporttypedef"></a>
 
 ## JobReportTypeDef
 
@@ -1341,6 +1523,8 @@ Optional fields:
 - `Prefix`: `str`
 - `ReportScope`: [JobReportScopeType](./literals.md#jobreportscopetype)
 
+<a id="lambdainvokeoperationtypedef"></a>
+
 ## LambdaInvokeOperationTypeDef
 
 ```python
@@ -1350,6 +1534,8 @@ from mypy_boto3_s3control.type_defs import LambdaInvokeOperationTypeDef
 Optional fields:
 
 - `FunctionArn`: `str`
+
+<a id="lifecycleconfigurationtypedef"></a>
 
 ## LifecycleConfigurationTypeDef
 
@@ -1361,6 +1547,8 @@ Optional fields:
 
 - `Rules`:
   `Sequence`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
+
+<a id="lifecycleexpirationtypedef"></a>
 
 ## LifecycleExpirationTypeDef
 
@@ -1374,6 +1562,8 @@ Optional fields:
 - `Days`: `int`
 - `ExpiredObjectDeleteMarker`: `bool`
 
+<a id="lifecycleruleandoperatortypedef"></a>
+
 ## LifecycleRuleAndOperatorTypeDef
 
 ```python
@@ -1384,6 +1574,8 @@ Optional fields:
 
 - `Prefix`: `str`
 - `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+
+<a id="lifecyclerulefiltertypedef"></a>
 
 ## LifecycleRuleFilterTypeDef
 
@@ -1397,6 +1589,8 @@ Optional fields:
 - `Tag`: [S3TagTypeDef](./type_defs.md#s3tagtypedef)
 - `And`:
   [LifecycleRuleAndOperatorTypeDef](./type_defs.md#lifecycleruleandoperatortypedef)
+
+<a id="lifecycleruletypedef"></a>
 
 ## LifecycleRuleTypeDef
 
@@ -1424,6 +1618,8 @@ Optional fields:
 - `AbortIncompleteMultipartUpload`:
   [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
 
+<a id="listaccesspointsforobjectlambdarequestrequesttypedef"></a>
+
 ## ListAccessPointsForObjectLambdaRequestRequestTypeDef
 
 ```python
@@ -1439,6 +1635,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listaccesspointsforobjectlambdaresulttypedef"></a>
+
 ## ListAccessPointsForObjectLambdaResultTypeDef
 
 ```python
@@ -1452,6 +1650,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listaccesspointsrequestrequesttypedef"></a>
 
 ## ListAccessPointsRequestRequestTypeDef
 
@@ -1469,6 +1669,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listaccesspointsresulttypedef"></a>
+
 ## ListAccessPointsResultTypeDef
 
 ```python
@@ -1482,6 +1684,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listjobsrequestrequesttypedef"></a>
 
 ## ListJobsRequestRequestTypeDef
 
@@ -1499,6 +1703,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listjobsresulttypedef"></a>
+
 ## ListJobsResultTypeDef
 
 ```python
@@ -1512,6 +1718,8 @@ Required fields:
   `List`\[[JobListDescriptorTypeDef](./type_defs.md#joblistdescriptortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmultiregionaccesspointsrequestrequesttypedef"></a>
 
 ## ListMultiRegionAccessPointsRequestRequestTypeDef
 
@@ -1528,6 +1736,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listmultiregionaccesspointsresulttypedef"></a>
+
 ## ListMultiRegionAccessPointsResultTypeDef
 
 ```python
@@ -1541,6 +1751,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listregionalbucketsrequestrequesttypedef"></a>
 
 ## ListRegionalBucketsRequestRequestTypeDef
 
@@ -1558,6 +1770,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `OutpostId`: `str`
 
+<a id="listregionalbucketsresulttypedef"></a>
+
 ## ListRegionalBucketsResultTypeDef
 
 ```python
@@ -1571,6 +1785,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststoragelensconfigurationentrytypedef"></a>
 
 ## ListStorageLensConfigurationEntryTypeDef
 
@@ -1588,6 +1804,8 @@ Optional fields:
 
 - `IsEnabled`: `bool`
 
+<a id="liststoragelensconfigurationsrequestrequesttypedef"></a>
+
 ## ListStorageLensConfigurationsRequestRequestTypeDef
 
 ```python
@@ -1601,6 +1819,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="liststoragelensconfigurationsresulttypedef"></a>
 
 ## ListStorageLensConfigurationsResultTypeDef
 
@@ -1616,6 +1836,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="multiregionaccesspointpolicydocumenttypedef"></a>
+
 ## MultiRegionAccessPointPolicyDocumentTypeDef
 
 ```python
@@ -1629,6 +1851,8 @@ Optional fields:
 - `Proposed`:
   [ProposedMultiRegionAccessPointPolicyTypeDef](./type_defs.md#proposedmultiregionaccesspointpolicytypedef)
 
+<a id="multiregionaccesspointregionalresponsetypedef"></a>
+
 ## MultiRegionAccessPointRegionalResponseTypeDef
 
 ```python
@@ -1639,6 +1863,8 @@ Optional fields:
 
 - `Name`: `str`
 - `RequestStatus`: `str`
+
+<a id="multiregionaccesspointreporttypedef"></a>
 
 ## MultiRegionAccessPointReportTypeDef
 
@@ -1658,6 +1884,8 @@ Optional fields:
 - `Regions`:
   `List`\[[RegionReportTypeDef](./type_defs.md#regionreporttypedef)\]
 
+<a id="multiregionaccesspointsasyncresponsetypedef"></a>
+
 ## MultiRegionAccessPointsAsyncResponseTypeDef
 
 ```python
@@ -1669,6 +1897,8 @@ Optional fields:
 - `Regions`:
   `List`\[[MultiRegionAccessPointRegionalResponseTypeDef](./type_defs.md#multiregionaccesspointregionalresponsetypedef)\]
 
+<a id="noncurrentversionexpirationtypedef"></a>
+
 ## NoncurrentVersionExpirationTypeDef
 
 ```python
@@ -1678,6 +1908,8 @@ from mypy_boto3_s3control.type_defs import NoncurrentVersionExpirationTypeDef
 Optional fields:
 
 - `NoncurrentDays`: `int`
+
+<a id="noncurrentversiontransitiontypedef"></a>
 
 ## NoncurrentVersionTransitionTypeDef
 
@@ -1690,6 +1922,8 @@ Optional fields:
 - `NoncurrentDays`: `int`
 - `StorageClass`:
   [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
+
+<a id="objectlambdaaccesspointtypedef"></a>
 
 ## ObjectLambdaAccessPointTypeDef
 
@@ -1704,6 +1938,8 @@ Required fields:
 Optional fields:
 
 - `ObjectLambdaAccessPointArn`: `str`
+
+<a id="objectlambdaconfigurationtypedef"></a>
 
 ## ObjectLambdaConfigurationTypeDef
 
@@ -1723,6 +1959,8 @@ Optional fields:
 - `AllowedFeatures`:
   `Sequence`\[[ObjectLambdaAllowedFeatureType](./literals.md#objectlambdaallowedfeaturetype)\]
 
+<a id="objectlambdacontenttransformationtypedef"></a>
+
 ## ObjectLambdaContentTransformationTypeDef
 
 ```python
@@ -1733,6 +1971,8 @@ Optional fields:
 
 - `AwsLambda`:
   [AwsLambdaTransformationTypeDef](./type_defs.md#awslambdatransformationtypedef)
+
+<a id="objectlambdatransformationconfigurationtypedef"></a>
 
 ## ObjectLambdaTransformationConfigurationTypeDef
 
@@ -1747,6 +1987,8 @@ Required fields:
 - `ContentTransformation`:
   [ObjectLambdaContentTransformationTypeDef](./type_defs.md#objectlambdacontenttransformationtypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1759,6 +2001,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="policystatustypedef"></a>
+
 ## PolicyStatusTypeDef
 
 ```python
@@ -1768,6 +2012,8 @@ from mypy_boto3_s3control.type_defs import PolicyStatusTypeDef
 Optional fields:
 
 - `IsPublic`: `bool`
+
+<a id="prefixlevelstoragemetricstypedef"></a>
 
 ## PrefixLevelStorageMetricsTypeDef
 
@@ -1781,6 +2027,8 @@ Optional fields:
 - `SelectionCriteria`:
   [SelectionCriteriaTypeDef](./type_defs.md#selectioncriteriatypedef)
 
+<a id="prefixleveltypedef"></a>
+
 ## PrefixLevelTypeDef
 
 ```python
@@ -1792,6 +2040,8 @@ Required fields:
 - `StorageMetrics`:
   [PrefixLevelStorageMetricsTypeDef](./type_defs.md#prefixlevelstoragemetricstypedef)
 
+<a id="proposedmultiregionaccesspointpolicytypedef"></a>
+
 ## ProposedMultiRegionAccessPointPolicyTypeDef
 
 ```python
@@ -1801,6 +2051,8 @@ from mypy_boto3_s3control.type_defs import ProposedMultiRegionAccessPointPolicyT
 Optional fields:
 
 - `Policy`: `str`
+
+<a id="publicaccessblockconfigurationtypedef"></a>
 
 ## PublicAccessBlockConfigurationTypeDef
 
@@ -1815,6 +2067,8 @@ Optional fields:
 - `BlockPublicPolicy`: `bool`
 - `RestrictPublicBuckets`: `bool`
 
+<a id="putaccesspointconfigurationforobjectlambdarequestrequesttypedef"></a>
+
 ## PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef
 
 ```python
@@ -1828,6 +2082,8 @@ Required fields:
 - `Configuration`:
   [ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef)
 
+<a id="putaccesspointpolicyforobjectlambdarequestrequesttypedef"></a>
+
 ## PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef
 
 ```python
@@ -1840,6 +2096,8 @@ Required fields:
 - `Name`: `str`
 - `Policy`: `str`
 
+<a id="putaccesspointpolicyrequestrequesttypedef"></a>
+
 ## PutAccessPointPolicyRequestRequestTypeDef
 
 ```python
@@ -1851,6 +2109,8 @@ Required fields:
 - `AccountId`: `str`
 - `Name`: `str`
 - `Policy`: `str`
+
+<a id="putbucketlifecycleconfigurationrequestrequesttypedef"></a>
 
 ## PutBucketLifecycleConfigurationRequestRequestTypeDef
 
@@ -1868,6 +2128,8 @@ Optional fields:
 - `LifecycleConfiguration`:
   [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 
+<a id="putbucketpolicyrequestrequesttypedef"></a>
+
 ## PutBucketPolicyRequestRequestTypeDef
 
 ```python
@@ -1884,6 +2146,8 @@ Optional fields:
 
 - `ConfirmRemoveSelfBucketAccess`: `bool`
 
+<a id="putbuckettaggingrequestrequesttypedef"></a>
+
 ## PutBucketTaggingRequestRequestTypeDef
 
 ```python
@@ -1895,6 +2159,8 @@ Required fields:
 - `AccountId`: `str`
 - `Bucket`: `str`
 - `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
+
+<a id="putjobtaggingrequestrequesttypedef"></a>
 
 ## PutJobTaggingRequestRequestTypeDef
 
@@ -1908,6 +2174,8 @@ Required fields:
 - `JobId`: `str`
 - `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 
+<a id="putmultiregionaccesspointpolicyinputtypedef"></a>
+
 ## PutMultiRegionAccessPointPolicyInputTypeDef
 
 ```python
@@ -1918,6 +2186,8 @@ Required fields:
 
 - `Name`: `str`
 - `Policy`: `str`
+
+<a id="putmultiregionaccesspointpolicyrequestrequesttypedef"></a>
 
 ## PutMultiRegionAccessPointPolicyRequestRequestTypeDef
 
@@ -1932,6 +2202,8 @@ Required fields:
 - `Details`:
   [PutMultiRegionAccessPointPolicyInputTypeDef](./type_defs.md#putmultiregionaccesspointpolicyinputtypedef)
 
+<a id="putmultiregionaccesspointpolicyresulttypedef"></a>
+
 ## PutMultiRegionAccessPointPolicyResultTypeDef
 
 ```python
@@ -1944,6 +2216,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putpublicaccessblockrequestrequesttypedef"></a>
+
 ## PutPublicAccessBlockRequestRequestTypeDef
 
 ```python
@@ -1955,6 +2229,8 @@ Required fields:
 - `PublicAccessBlockConfiguration`:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 - `AccountId`: `str`
+
+<a id="putstoragelensconfigurationrequestrequesttypedef"></a>
 
 ## PutStorageLensConfigurationRequestRequestTypeDef
 
@@ -1974,6 +2250,8 @@ Optional fields:
 - `Tags`:
   `Sequence`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
 
+<a id="putstoragelensconfigurationtaggingrequestrequesttypedef"></a>
+
 ## PutStorageLensConfigurationTaggingRequestRequestTypeDef
 
 ```python
@@ -1987,6 +2265,8 @@ Required fields:
 - `Tags`:
   `Sequence`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
 
+<a id="regionreporttypedef"></a>
+
 ## RegionReportTypeDef
 
 ```python
@@ -1998,6 +2278,8 @@ Optional fields:
 - `Bucket`: `str`
 - `Region`: `str`
 
+<a id="regiontypedef"></a>
+
 ## RegionTypeDef
 
 ```python
@@ -2007,6 +2289,8 @@ from mypy_boto3_s3control.type_defs import RegionTypeDef
 Required fields:
 
 - `Bucket`: `str`
+
+<a id="regionalbuckettypedef"></a>
 
 ## RegionalBucketTypeDef
 
@@ -2025,6 +2309,8 @@ Optional fields:
 - `BucketArn`: `str`
 - `OutpostId`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -2038,6 +2324,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3accesscontrollisttypedef"></a>
 
 ## S3AccessControlListTypeDef
 
@@ -2053,6 +2341,8 @@ Optional fields:
 
 - `Grants`: `Sequence`\[[S3GrantTypeDef](./type_defs.md#s3granttypedef)\]
 
+<a id="s3accesscontrolpolicytypedef"></a>
+
 ## S3AccessControlPolicyTypeDef
 
 ```python
@@ -2065,6 +2355,8 @@ Optional fields:
   [S3AccessControlListTypeDef](./type_defs.md#s3accesscontrollisttypedef)
 - `CannedAccessControlList`:
   [S3CannedAccessControlListType](./literals.md#s3cannedaccesscontrollisttype)
+
+<a id="s3bucketdestinationtypedef"></a>
 
 ## S3BucketDestinationTypeDef
 
@@ -2085,6 +2377,8 @@ Optional fields:
 - `Prefix`: `str`
 - `Encryption`:
   [StorageLensDataExportEncryptionTypeDef](./type_defs.md#storagelensdataexportencryptiontypedef)
+
+<a id="s3copyobjectoperationtypedef"></a>
 
 ## S3CopyObjectOperationTypeDef
 
@@ -2117,6 +2411,8 @@ Optional fields:
 - `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
 - `BucketKeyEnabled`: `bool`
 
+<a id="s3granttypedef"></a>
+
 ## S3GrantTypeDef
 
 ```python
@@ -2127,6 +2423,8 @@ Optional fields:
 
 - `Grantee`: [S3GranteeTypeDef](./type_defs.md#s3granteetypedef)
 - `Permission`: [S3PermissionType](./literals.md#s3permissiontype)
+
+<a id="s3granteetypedef"></a>
 
 ## S3GranteeTypeDef
 
@@ -2141,6 +2439,8 @@ Optional fields:
 - `Identifier`: `str`
 - `DisplayName`: `str`
 
+<a id="s3initiaterestoreobjectoperationtypedef"></a>
+
 ## S3InitiateRestoreObjectOperationTypeDef
 
 ```python
@@ -2152,6 +2452,8 @@ Optional fields:
 - `ExpirationInDays`: `int`
 - `GlacierJobTier`: [S3GlacierJobTierType](./literals.md#s3glacierjobtiertype)
 
+<a id="s3objectlocklegalholdtypedef"></a>
+
 ## S3ObjectLockLegalHoldTypeDef
 
 ```python
@@ -2162,6 +2464,8 @@ Required fields:
 
 - `Status`:
   [S3ObjectLockLegalHoldStatusType](./literals.md#s3objectlocklegalholdstatustype)
+
+<a id="s3objectmetadatatypedef"></a>
 
 ## S3ObjectMetadataTypeDef
 
@@ -2183,6 +2487,8 @@ Optional fields:
 - `RequesterCharged`: `bool`
 - `SSEAlgorithm`: [S3SSEAlgorithmType](./literals.md#s3ssealgorithmtype)
 
+<a id="s3objectownertypedef"></a>
+
 ## S3ObjectOwnerTypeDef
 
 ```python
@@ -2193,6 +2499,8 @@ Optional fields:
 
 - `ID`: `str`
 - `DisplayName`: `str`
+
+<a id="s3retentiontypedef"></a>
 
 ## S3RetentionTypeDef
 
@@ -2206,6 +2514,8 @@ Optional fields:
 - `Mode`:
   [S3ObjectLockRetentionModeType](./literals.md#s3objectlockretentionmodetype)
 
+<a id="s3setobjectacloperationtypedef"></a>
+
 ## S3SetObjectAclOperationTypeDef
 
 ```python
@@ -2217,6 +2527,8 @@ Optional fields:
 - `AccessControlPolicy`:
   [S3AccessControlPolicyTypeDef](./type_defs.md#s3accesscontrolpolicytypedef)
 
+<a id="s3setobjectlegalholdoperationtypedef"></a>
+
 ## S3SetObjectLegalHoldOperationTypeDef
 
 ```python
@@ -2227,6 +2539,8 @@ Required fields:
 
 - `LegalHold`:
   [S3ObjectLockLegalHoldTypeDef](./type_defs.md#s3objectlocklegalholdtypedef)
+
+<a id="s3setobjectretentionoperationtypedef"></a>
 
 ## S3SetObjectRetentionOperationTypeDef
 
@@ -2242,6 +2556,8 @@ Optional fields:
 
 - `BypassGovernanceRetention`: `bool`
 
+<a id="s3setobjecttaggingoperationtypedef"></a>
+
 ## S3SetObjectTaggingOperationTypeDef
 
 ```python
@@ -2251,6 +2567,8 @@ from mypy_boto3_s3control.type_defs import S3SetObjectTaggingOperationTypeDef
 Optional fields:
 
 - `TagSet`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+
+<a id="s3tagtypedef"></a>
 
 ## S3TagTypeDef
 
@@ -2263,6 +2581,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="ssekmstypedef"></a>
+
 ## SSEKMSTypeDef
 
 ```python
@@ -2272,6 +2592,8 @@ from mypy_boto3_s3control.type_defs import SSEKMSTypeDef
 Required fields:
 
 - `KeyId`: `str`
+
+<a id="selectioncriteriatypedef"></a>
 
 ## SelectionCriteriaTypeDef
 
@@ -2285,6 +2607,8 @@ Optional fields:
 - `MaxDepth`: `int`
 - `MinStorageBytesPercentage`: `float`
 
+<a id="storagelensawsorgtypedef"></a>
+
 ## StorageLensAwsOrgTypeDef
 
 ```python
@@ -2294,6 +2618,8 @@ from mypy_boto3_s3control.type_defs import StorageLensAwsOrgTypeDef
 Required fields:
 
 - `Arn`: `str`
+
+<a id="storagelensconfigurationtypedef"></a>
 
 ## StorageLensConfigurationTypeDef
 
@@ -2316,6 +2642,8 @@ Optional fields:
 - `AwsOrg`: [StorageLensAwsOrgTypeDef](./type_defs.md#storagelensawsorgtypedef)
 - `StorageLensArn`: `str`
 
+<a id="storagelensdataexportencryptiontypedef"></a>
+
 ## StorageLensDataExportEncryptionTypeDef
 
 ```python
@@ -2326,6 +2654,8 @@ Optional fields:
 
 - `SSES3`: `Dict`\[`str`, `Any`\]
 - `SSEKMS`: [SSEKMSTypeDef](./type_defs.md#ssekmstypedef)
+
+<a id="storagelensdataexporttypedef"></a>
 
 ## StorageLensDataExportTypeDef
 
@@ -2340,6 +2670,8 @@ Optional fields:
 - `CloudWatchMetrics`:
   [CloudWatchMetricsTypeDef](./type_defs.md#cloudwatchmetricstypedef)
 
+<a id="storagelenstagtypedef"></a>
+
 ## StorageLensTagTypeDef
 
 ```python
@@ -2351,6 +2683,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="taggingtypedef"></a>
+
 ## TaggingTypeDef
 
 ```python
@@ -2360,6 +2694,8 @@ from mypy_boto3_s3control.type_defs import TaggingTypeDef
 Required fields:
 
 - `TagSet`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+
+<a id="transitiontypedef"></a>
 
 ## TransitionTypeDef
 
@@ -2374,6 +2710,8 @@ Optional fields:
 - `StorageClass`:
   [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 
+<a id="updatejobpriorityrequestrequesttypedef"></a>
+
 ## UpdateJobPriorityRequestRequestTypeDef
 
 ```python
@@ -2385,6 +2723,8 @@ Required fields:
 - `AccountId`: `str`
 - `JobId`: `str`
 - `Priority`: `int`
+
+<a id="updatejobpriorityresulttypedef"></a>
 
 ## UpdateJobPriorityResultTypeDef
 
@@ -2398,6 +2738,8 @@ Required fields:
 - `Priority`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatejobstatusrequestrequesttypedef"></a>
 
 ## UpdateJobStatusRequestRequestTypeDef
 
@@ -2416,6 +2758,8 @@ Optional fields:
 
 - `StatusUpdateReason`: `str`
 
+<a id="updatejobstatusresulttypedef"></a>
+
 ## UpdateJobStatusResultTypeDef
 
 ```python
@@ -2429,6 +2773,8 @@ Required fields:
 - `StatusUpdateReason`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="vpcconfigurationtypedef"></a>
 
 ## VpcConfigurationTypeDef
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-qldbsession-module"></a>
+
 # Type annotations for boto3 QLDBSession module
 
 > [Index](..) > QLDBSession
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
 type annotations stubs module
-[mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
+[mypy-boto3-qldb-session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[qldb-session]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[qldb-session]'
+
+# standalone installation
 pip install mypy-boto3-qldb-session
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-qldb-session
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="qldbsessionclient"></a>
 
 ## QLDBSessionClient
 
@@ -29,12 +41,16 @@ Can be used directly:
 from mypy_boto3_qldb_session.client import QLDBSessionClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [send_command](./client.md#send_command)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -48,6 +64,8 @@ QLDBSessionClient [exceptions](./client.md#exceptions)
 - OccConflictException
 - RateExceededException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -59,6 +77,8 @@ from mypy_boto3_qldb_session.literals import ServiceName, ...
 ```
 
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

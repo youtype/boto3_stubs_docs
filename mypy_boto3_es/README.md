@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-elasticsearchservice-module"></a>
+
 # Type annotations for boto3 ElasticsearchService module
 
 > [Index](..) > ElasticsearchService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
 type annotations stubs module
-[mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
+[mypy-boto3-es](https://pypi.org/project/mypy-boto3-es/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[es]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[es]'
+
+# standalone installation
 pip install mypy-boto3-es
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-es
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="elasticsearchserviceclient"></a>
+
 ## ElasticsearchServiceClient
 
 Type annotations for `boto3.client("es")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_es.client import ElasticsearchServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -78,6 +92,8 @@ from mypy_boto3_es.client import ElasticsearchServiceClient
 - [update_package](./client.md#update_package)
 - [upgrade_elasticsearch_domain](./client.md#upgrade_elasticsearch_domain)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ElasticsearchServiceClient [exceptions](./client.md#exceptions)
@@ -95,6 +111,8 @@ ElasticsearchServiceClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -103,7 +121,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_es.paginators import DescribeReservedElasticsearchInstanceOfferingsPaginator, ...
+from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstanceOfferingsPaginator, ...
 ```
 
 - [DescribeReservedElasticsearchInstanceOfferingsPaginator](./paginators.md#describereservedelasticsearchinstanceofferingspaginator)
@@ -111,6 +129,8 @@ from mypy_boto3_es.paginators import DescribeReservedElasticsearchInstanceOfferi
 - [GetUpgradeHistoryPaginator](./paginators.md#getupgradehistorypaginator)
 - [ListElasticsearchInstanceTypesPaginator](./paginators.md#listelasticsearchinstancetypespaginator)
 - [ListElasticsearchVersionsPaginator](./paginators.md#listelasticsearchversionspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -154,6 +174,8 @@ from mypy_boto3_es.literals import AutoTuneDesiredStateType, ...
 - [VolumeTypeType](./literals.md#volumetypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

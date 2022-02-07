@@ -1,3 +1,5 @@
+<a id="pinpointclient-for-boto3-pinpoint-module"></a>
+
 # PinpointClient for boto3 Pinpoint module
 
 > [Index](..) > [Pinpoint](.) > PinpointClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
 type annotations stubs module
-[mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
+[mypy-boto3-pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
 - [PinpointClient for boto3 Pinpoint module](#pinpointclient-for-boto3-pinpoint-module)
   - [PinpointClient](#pinpointclient)
@@ -134,6 +136,8 @@ type annotations stubs module
     - [update_voice_template](#update_voice_template)
     - [verify_otp_message](#verify_otp_message)
 
+<a id="pinpointclient"></a>
+
 ## PinpointClient
 
 Type annotations for `boto3.client("pinpoint")`
@@ -141,14 +145,17 @@ Type annotations for `boto3.client("pinpoint")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_pinpoint.client import PinpointClient
 
 def get_pinpoint_client() -> PinpointClient:
-    return boto3.client("pinpoint")
+    return Session().client("pinpoint")
 ```
 
 Boto3 documentation:
 [Pinpoint.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -174,7 +181,11 @@ Exceptions:
 - `Exceptions.PayloadTooLargeException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -186,6 +197,8 @@ Boto3 documentation:
 [Pinpoint.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -201,6 +214,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_app"></a>
 
 ### create_app
 
@@ -221,6 +236,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
+
+<a id="create_campaign"></a>
 
 ### create_campaign
 
@@ -245,6 +262,8 @@ Keyword-only arguments:
 Returns
 [CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef).
 
+<a id="create_email_template"></a>
+
 ### create_email_template
 
 Creates a message template for messages that are sent through the email
@@ -268,6 +287,8 @@ Keyword-only arguments:
 Returns
 [CreateEmailTemplateResponseTypeDef](./type_defs.md#createemailtemplateresponsetypedef).
 
+<a id="create_export_job"></a>
+
 ### create_export_job
 
 Creates an export job for an application.
@@ -289,6 +310,8 @@ Keyword-only arguments:
 
 Returns
 [CreateExportJobResponseTypeDef](./type_defs.md#createexportjobresponsetypedef).
+
+<a id="create_import_job"></a>
 
 ### create_import_job
 
@@ -312,6 +335,8 @@ Keyword-only arguments:
 Returns
 [CreateImportJobResponseTypeDef](./type_defs.md#createimportjobresponsetypedef).
 
+<a id="create_in_app_template"></a>
+
 ### create_in_app_template
 
 Creates a new message template for messages using the in-app message channel.
@@ -334,6 +359,8 @@ Keyword-only arguments:
 Returns
 [CreateInAppTemplateResponseTypeDef](./type_defs.md#createinapptemplateresponsetypedef).
 
+<a id="create_journey"></a>
+
 ### create_journey
 
 Creates a journey for an application.
@@ -355,6 +382,8 @@ Keyword-only arguments:
 
 Returns
 [CreateJourneyResponseTypeDef](./type_defs.md#createjourneyresponsetypedef).
+
+<a id="create_push_template"></a>
 
 ### create_push_template
 
@@ -379,6 +408,8 @@ Keyword-only arguments:
 Returns
 [CreatePushTemplateResponseTypeDef](./type_defs.md#createpushtemplateresponsetypedef).
 
+<a id="create_recommender_configuration"></a>
+
 ### create_recommender_configuration
 
 Creates an Amazon Pinpoint configuration for a recommender model.
@@ -400,6 +431,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRecommenderConfigurationResponseTypeDef](./type_defs.md#createrecommenderconfigurationresponsetypedef).
+
+<a id="create_segment"></a>
 
 ### create_segment
 
@@ -425,6 +458,8 @@ Keyword-only arguments:
 Returns
 [CreateSegmentResponseTypeDef](./type_defs.md#createsegmentresponsetypedef).
 
+<a id="create_sms_template"></a>
+
 ### create_sms_template
 
 Creates a message template for messages that are sent through the SMS channel.
@@ -446,6 +481,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSmsTemplateResponseTypeDef](./type_defs.md#createsmstemplateresponsetypedef).
+
+<a id="create_voice_template"></a>
 
 ### create_voice_template
 
@@ -470,6 +507,8 @@ Keyword-only arguments:
 Returns
 [CreateVoiceTemplateResponseTypeDef](./type_defs.md#createvoicetemplateresponsetypedef).
 
+<a id="delete_adm_channel"></a>
+
 ### delete_adm_channel
 
 Disables the ADM channel for an application and deletes any existing settings
@@ -490,6 +529,8 @@ Keyword-only arguments:
 Returns
 [DeleteAdmChannelResponseTypeDef](./type_defs.md#deleteadmchannelresponsetypedef).
 
+<a id="delete_apns_channel"></a>
+
 ### delete_apns_channel
 
 Disables the APNs channel for an application and deletes any existing settings
@@ -509,6 +550,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteApnsChannelResponseTypeDef](./type_defs.md#deleteapnschannelresponsetypedef).
+
+<a id="delete_apns_sandbox_channel"></a>
 
 ### delete_apns_sandbox_channel
 
@@ -531,6 +574,8 @@ Keyword-only arguments:
 Returns
 [DeleteApnsSandboxChannelResponseTypeDef](./type_defs.md#deleteapnssandboxchannelresponsetypedef).
 
+<a id="delete_apns_voip_channel"></a>
+
 ### delete_apns_voip_channel
 
 Disables the APNs VoIP channel for an application and deletes any existing
@@ -551,6 +596,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteApnsVoipChannelResponseTypeDef](./type_defs.md#deleteapnsvoipchannelresponsetypedef).
+
+<a id="delete_apns_voip_sandbox_channel"></a>
 
 ### delete_apns_voip_sandbox_channel
 
@@ -573,6 +620,8 @@ Keyword-only arguments:
 Returns
 [DeleteApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#deleteapnsvoipsandboxchannelresponsetypedef).
 
+<a id="delete_app"></a>
+
 ### delete_app
 
 Deletes an application.
@@ -590,6 +639,8 @@ Keyword-only arguments:
 - `ApplicationId`: `str` *(required)*
 
 Returns [DeleteAppResponseTypeDef](./type_defs.md#deleteappresponsetypedef).
+
+<a id="delete_baidu_channel"></a>
 
 ### delete_baidu_channel
 
@@ -611,6 +662,8 @@ Keyword-only arguments:
 Returns
 [DeleteBaiduChannelResponseTypeDef](./type_defs.md#deletebaiduchannelresponsetypedef).
 
+<a id="delete_campaign"></a>
+
 ### delete_campaign
 
 Deletes a campaign from an application.
@@ -631,6 +684,8 @@ Keyword-only arguments:
 Returns
 [DeleteCampaignResponseTypeDef](./type_defs.md#deletecampaignresponsetypedef).
 
+<a id="delete_email_channel"></a>
+
 ### delete_email_channel
 
 Disables the email channel for an application and deletes any existing settings
@@ -650,6 +705,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteEmailChannelResponseTypeDef](./type_defs.md#deleteemailchannelresponsetypedef).
+
+<a id="delete_email_template"></a>
 
 ### delete_email_template
 
@@ -672,6 +729,8 @@ Keyword-only arguments:
 Returns
 [DeleteEmailTemplateResponseTypeDef](./type_defs.md#deleteemailtemplateresponsetypedef).
 
+<a id="delete_endpoint"></a>
+
 ### delete_endpoint
 
 Deletes an endpoint from an application.
@@ -692,6 +751,8 @@ Keyword-only arguments:
 Returns
 [DeleteEndpointResponseTypeDef](./type_defs.md#deleteendpointresponsetypedef).
 
+<a id="delete_event_stream"></a>
+
 ### delete_event_stream
 
 Deletes the event stream for an application.
@@ -710,6 +771,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteEventStreamResponseTypeDef](./type_defs.md#deleteeventstreamresponsetypedef).
+
+<a id="delete_gcm_channel"></a>
 
 ### delete_gcm_channel
 
@@ -731,6 +794,8 @@ Keyword-only arguments:
 Returns
 [DeleteGcmChannelResponseTypeDef](./type_defs.md#deletegcmchannelresponsetypedef).
 
+<a id="delete_in_app_template"></a>
+
 ### delete_in_app_template
 
 Deletes a message template for messages sent using the in-app message channel.
@@ -751,6 +816,8 @@ Keyword-only arguments:
 Returns
 [DeleteInAppTemplateResponseTypeDef](./type_defs.md#deleteinapptemplateresponsetypedef).
 
+<a id="delete_journey"></a>
+
 ### delete_journey
 
 Deletes a journey from an application.
@@ -770,6 +837,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteJourneyResponseTypeDef](./type_defs.md#deletejourneyresponsetypedef).
+
+<a id="delete_push_template"></a>
 
 ### delete_push_template
 
@@ -792,6 +861,8 @@ Keyword-only arguments:
 Returns
 [DeletePushTemplateResponseTypeDef](./type_defs.md#deletepushtemplateresponsetypedef).
 
+<a id="delete_recommender_configuration"></a>
+
 ### delete_recommender_configuration
 
 Deletes an Amazon Pinpoint configuration for a recommender model.
@@ -811,6 +882,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteRecommenderConfigurationResponseTypeDef](./type_defs.md#deleterecommenderconfigurationresponsetypedef).
+
+<a id="delete_segment"></a>
 
 ### delete_segment
 
@@ -832,6 +905,8 @@ Keyword-only arguments:
 Returns
 [DeleteSegmentResponseTypeDef](./type_defs.md#deletesegmentresponsetypedef).
 
+<a id="delete_sms_channel"></a>
+
 ### delete_sms_channel
 
 Disables the SMS channel for an application and deletes any existing settings
@@ -851,6 +926,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteSmsChannelResponseTypeDef](./type_defs.md#deletesmschannelresponsetypedef).
+
+<a id="delete_sms_template"></a>
 
 ### delete_sms_template
 
@@ -872,6 +949,8 @@ Keyword-only arguments:
 Returns
 [DeleteSmsTemplateResponseTypeDef](./type_defs.md#deletesmstemplateresponsetypedef).
 
+<a id="delete_user_endpoints"></a>
+
 ### delete_user_endpoints
 
 Deletes all the endpoints that are associated with a specific user ID.
@@ -892,6 +971,8 @@ Keyword-only arguments:
 Returns
 [DeleteUserEndpointsResponseTypeDef](./type_defs.md#deleteuserendpointsresponsetypedef).
 
+<a id="delete_voice_channel"></a>
+
 ### delete_voice_channel
 
 Disables the voice channel for an application and deletes any existing settings
@@ -911,6 +992,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteVoiceChannelResponseTypeDef](./type_defs.md#deletevoicechannelresponsetypedef).
+
+<a id="delete_voice_template"></a>
 
 ### delete_voice_template
 
@@ -933,6 +1016,8 @@ Keyword-only arguments:
 Returns
 [DeleteVoiceTemplateResponseTypeDef](./type_defs.md#deletevoicetemplateresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -950,6 +1035,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_adm_channel"></a>
 
 ### get_adm_channel
 
@@ -971,6 +1058,8 @@ Keyword-only arguments:
 Returns
 [GetAdmChannelResponseTypeDef](./type_defs.md#getadmchannelresponsetypedef).
 
+<a id="get_apns_channel"></a>
+
 ### get_apns_channel
 
 Retrieves information about the status and settings of the APNs channel for an
@@ -990,6 +1079,8 @@ Keyword-only arguments:
 
 Returns
 [GetApnsChannelResponseTypeDef](./type_defs.md#getapnschannelresponsetypedef).
+
+<a id="get_apns_sandbox_channel"></a>
 
 ### get_apns_sandbox_channel
 
@@ -1012,6 +1103,8 @@ Keyword-only arguments:
 Returns
 [GetApnsSandboxChannelResponseTypeDef](./type_defs.md#getapnssandboxchannelresponsetypedef).
 
+<a id="get_apns_voip_channel"></a>
+
 ### get_apns_voip_channel
 
 Retrieves information about the status and settings of the APNs VoIP channel
@@ -1031,6 +1124,8 @@ Keyword-only arguments:
 
 Returns
 [GetApnsVoipChannelResponseTypeDef](./type_defs.md#getapnsvoipchannelresponsetypedef).
+
+<a id="get_apns_voip_sandbox_channel"></a>
 
 ### get_apns_voip_sandbox_channel
 
@@ -1053,6 +1148,8 @@ Keyword-only arguments:
 Returns
 [GetApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#getapnsvoipsandboxchannelresponsetypedef).
 
+<a id="get_app"></a>
+
 ### get_app
 
 Retrieves information about an application.
@@ -1070,6 +1167,8 @@ Keyword-only arguments:
 - `ApplicationId`: `str` *(required)*
 
 Returns [GetAppResponseTypeDef](./type_defs.md#getappresponsetypedef).
+
+<a id="get_application_date_range_kpi"></a>
 
 ### get_application_date_range_kpi
 
@@ -1097,6 +1196,8 @@ Keyword-only arguments:
 Returns
 [GetApplicationDateRangeKpiResponseTypeDef](./type_defs.md#getapplicationdaterangekpiresponsetypedef).
 
+<a id="get_application_settings"></a>
+
 ### get_application_settings
 
 Retrieves information about the settings for an application.
@@ -1116,6 +1217,8 @@ Keyword-only arguments:
 
 Returns
 [GetApplicationSettingsResponseTypeDef](./type_defs.md#getapplicationsettingsresponsetypedef).
+
+<a id="get_apps"></a>
 
 ### get_apps
 
@@ -1137,6 +1240,8 @@ Keyword-only arguments:
 
 Returns [GetAppsResponseTypeDef](./type_defs.md#getappsresponsetypedef).
 
+<a id="get_baidu_channel"></a>
+
 ### get_baidu_channel
 
 Retrieves information about the status and settings of the Baidu channel for an
@@ -1156,6 +1261,8 @@ Keyword-only arguments:
 
 Returns
 [GetBaiduChannelResponseTypeDef](./type_defs.md#getbaiduchannelresponsetypedef).
+
+<a id="get_campaign"></a>
 
 ### get_campaign
 
@@ -1178,6 +1285,8 @@ Keyword-only arguments:
 Returns
 [GetCampaignResponseTypeDef](./type_defs.md#getcampaignresponsetypedef).
 
+<a id="get_campaign_activities"></a>
+
 ### get_campaign_activities
 
 Retrieves information about all the activities for a campaign.
@@ -1199,6 +1308,8 @@ Keyword-only arguments:
 
 Returns
 [GetCampaignActivitiesResponseTypeDef](./type_defs.md#getcampaignactivitiesresponsetypedef).
+
+<a id="get_campaign_date_range_kpi"></a>
 
 ### get_campaign_date_range_kpi
 
@@ -1227,6 +1338,8 @@ Keyword-only arguments:
 Returns
 [GetCampaignDateRangeKpiResponseTypeDef](./type_defs.md#getcampaigndaterangekpiresponsetypedef).
 
+<a id="get_campaign_version"></a>
+
 ### get_campaign_version
 
 Retrieves information about the status, configuration, and other settings for a
@@ -1248,6 +1361,8 @@ Keyword-only arguments:
 
 Returns
 [GetCampaignVersionResponseTypeDef](./type_defs.md#getcampaignversionresponsetypedef).
+
+<a id="get_campaign_versions"></a>
 
 ### get_campaign_versions
 
@@ -1272,6 +1387,8 @@ Keyword-only arguments:
 Returns
 [GetCampaignVersionsResponseTypeDef](./type_defs.md#getcampaignversionsresponsetypedef).
 
+<a id="get_campaigns"></a>
+
 ### get_campaigns
 
 Retrieves information about the status, configuration, and other settings for
@@ -1294,6 +1411,8 @@ Keyword-only arguments:
 Returns
 [GetCampaignsResponseTypeDef](./type_defs.md#getcampaignsresponsetypedef).
 
+<a id="get_channels"></a>
+
 ### get_channels
 
 Retrieves information about the history and status of each channel for an
@@ -1314,6 +1433,8 @@ Keyword-only arguments:
 Returns
 [GetChannelsResponseTypeDef](./type_defs.md#getchannelsresponsetypedef).
 
+<a id="get_email_channel"></a>
+
 ### get_email_channel
 
 Retrieves information about the status and settings of the email channel for an
@@ -1333,6 +1454,8 @@ Keyword-only arguments:
 
 Returns
 [GetEmailChannelResponseTypeDef](./type_defs.md#getemailchannelresponsetypedef).
+
+<a id="get_email_template"></a>
 
 ### get_email_template
 
@@ -1355,6 +1478,8 @@ Keyword-only arguments:
 Returns
 [GetEmailTemplateResponseTypeDef](./type_defs.md#getemailtemplateresponsetypedef).
 
+<a id="get_endpoint"></a>
+
 ### get_endpoint
 
 Retrieves information about the settings and attributes of a specific endpoint
@@ -1376,6 +1501,8 @@ Keyword-only arguments:
 Returns
 [GetEndpointResponseTypeDef](./type_defs.md#getendpointresponsetypedef).
 
+<a id="get_event_stream"></a>
+
 ### get_event_stream
 
 Retrieves information about the event stream settings for an application.
@@ -1394,6 +1521,8 @@ Keyword-only arguments:
 
 Returns
 [GetEventStreamResponseTypeDef](./type_defs.md#geteventstreamresponsetypedef).
+
+<a id="get_export_job"></a>
 
 ### get_export_job
 
@@ -1415,6 +1544,8 @@ Keyword-only arguments:
 
 Returns
 [GetExportJobResponseTypeDef](./type_defs.md#getexportjobresponsetypedef).
+
+<a id="get_export_jobs"></a>
 
 ### get_export_jobs
 
@@ -1438,6 +1569,8 @@ Keyword-only arguments:
 Returns
 [GetExportJobsResponseTypeDef](./type_defs.md#getexportjobsresponsetypedef).
 
+<a id="get_gcm_channel"></a>
+
 ### get_gcm_channel
 
 Retrieves information about the status and settings of the GCM channel for an
@@ -1457,6 +1590,8 @@ Keyword-only arguments:
 
 Returns
 [GetGcmChannelResponseTypeDef](./type_defs.md#getgcmchannelresponsetypedef).
+
+<a id="get_import_job"></a>
 
 ### get_import_job
 
@@ -1478,6 +1613,8 @@ Keyword-only arguments:
 
 Returns
 [GetImportJobResponseTypeDef](./type_defs.md#getimportjobresponsetypedef).
+
+<a id="get_import_jobs"></a>
 
 ### get_import_jobs
 
@@ -1501,6 +1638,8 @@ Keyword-only arguments:
 Returns
 [GetImportJobsResponseTypeDef](./type_defs.md#getimportjobsresponsetypedef).
 
+<a id="get_in_app_messages"></a>
+
 ### get_in_app_messages
 
 Retrieves the in-app messages targeted for the provided endpoint ID.
@@ -1520,6 +1659,8 @@ Keyword-only arguments:
 
 Returns
 [GetInAppMessagesResponseTypeDef](./type_defs.md#getinappmessagesresponsetypedef).
+
+<a id="get_in_app_template"></a>
 
 ### get_in_app_template
 
@@ -1542,6 +1683,8 @@ Keyword-only arguments:
 Returns
 [GetInAppTemplateResponseTypeDef](./type_defs.md#getinapptemplateresponsetypedef).
 
+<a id="get_journey"></a>
+
 ### get_journey
 
 Retrieves information about the status, configuration, and other settings for a
@@ -1561,6 +1704,8 @@ Keyword-only arguments:
 - `JourneyId`: `str` *(required)*
 
 Returns [GetJourneyResponseTypeDef](./type_defs.md#getjourneyresponsetypedef).
+
+<a id="get_journey_date_range_kpi"></a>
 
 ### get_journey_date_range_kpi
 
@@ -1589,6 +1734,8 @@ Keyword-only arguments:
 Returns
 [GetJourneyDateRangeKpiResponseTypeDef](./type_defs.md#getjourneydaterangekpiresponsetypedef).
 
+<a id="get_journey_execution_activity_metrics"></a>
+
 ### get_journey_execution_activity_metrics
 
 Retrieves (queries) pre-aggregated data for a standard execution metric that
@@ -1614,6 +1761,8 @@ Keyword-only arguments:
 Returns
 [GetJourneyExecutionActivityMetricsResponseTypeDef](./type_defs.md#getjourneyexecutionactivitymetricsresponsetypedef).
 
+<a id="get_journey_execution_metrics"></a>
+
 ### get_journey_execution_metrics
 
 Retrieves (queries) pre-aggregated data for a standard execution metric that
@@ -1638,6 +1787,8 @@ Keyword-only arguments:
 Returns
 [GetJourneyExecutionMetricsResponseTypeDef](./type_defs.md#getjourneyexecutionmetricsresponsetypedef).
 
+<a id="get_push_template"></a>
+
 ### get_push_template
 
 Retrieves the content and settings of a message template for messages that are
@@ -1659,6 +1810,8 @@ Keyword-only arguments:
 Returns
 [GetPushTemplateResponseTypeDef](./type_defs.md#getpushtemplateresponsetypedef).
 
+<a id="get_recommender_configuration"></a>
+
 ### get_recommender_configuration
 
 Retrieves information about an Amazon Pinpoint configuration for a recommender
@@ -1679,6 +1832,8 @@ Keyword-only arguments:
 
 Returns
 [GetRecommenderConfigurationResponseTypeDef](./type_defs.md#getrecommenderconfigurationresponsetypedef).
+
+<a id="get_recommender_configurations"></a>
 
 ### get_recommender_configurations
 
@@ -1702,6 +1857,8 @@ Keyword-only arguments:
 Returns
 [GetRecommenderConfigurationsResponseTypeDef](./type_defs.md#getrecommenderconfigurationsresponsetypedef).
 
+<a id="get_segment"></a>
+
 ### get_segment
 
 Retrieves information about the configuration, dimension, and other settings
@@ -1721,6 +1878,8 @@ Keyword-only arguments:
 - `SegmentId`: `str` *(required)*
 
 Returns [GetSegmentResponseTypeDef](./type_defs.md#getsegmentresponsetypedef).
+
+<a id="get_segment_export_jobs"></a>
 
 ### get_segment_export_jobs
 
@@ -1745,6 +1904,8 @@ Keyword-only arguments:
 Returns
 [GetSegmentExportJobsResponseTypeDef](./type_defs.md#getsegmentexportjobsresponsetypedef).
 
+<a id="get_segment_import_jobs"></a>
+
 ### get_segment_import_jobs
 
 Retrieves information about the status and settings of the import jobs for a
@@ -1768,6 +1929,8 @@ Keyword-only arguments:
 Returns
 [GetSegmentImportJobsResponseTypeDef](./type_defs.md#getsegmentimportjobsresponsetypedef).
 
+<a id="get_segment_version"></a>
+
 ### get_segment_version
 
 Retrieves information about the configuration, dimension, and other settings
@@ -1789,6 +1952,8 @@ Keyword-only arguments:
 
 Returns
 [GetSegmentVersionResponseTypeDef](./type_defs.md#getsegmentversionresponsetypedef).
+
+<a id="get_segment_versions"></a>
 
 ### get_segment_versions
 
@@ -1814,6 +1979,8 @@ Keyword-only arguments:
 Returns
 [GetSegmentVersionsResponseTypeDef](./type_defs.md#getsegmentversionsresponsetypedef).
 
+<a id="get_segments"></a>
+
 ### get_segments
 
 Retrieves information about the configuration, dimension, and other settings
@@ -1836,6 +2003,8 @@ Keyword-only arguments:
 Returns
 [GetSegmentsResponseTypeDef](./type_defs.md#getsegmentsresponsetypedef).
 
+<a id="get_sms_channel"></a>
+
 ### get_sms_channel
 
 Retrieves information about the status and settings of the SMS channel for an
@@ -1855,6 +2024,8 @@ Keyword-only arguments:
 
 Returns
 [GetSmsChannelResponseTypeDef](./type_defs.md#getsmschannelresponsetypedef).
+
+<a id="get_sms_template"></a>
 
 ### get_sms_template
 
@@ -1877,6 +2048,8 @@ Keyword-only arguments:
 Returns
 [GetSmsTemplateResponseTypeDef](./type_defs.md#getsmstemplateresponsetypedef).
 
+<a id="get_user_endpoints"></a>
+
 ### get_user_endpoints
 
 Retrieves information about all the endpoints that are associated with a
@@ -1898,6 +2071,8 @@ Keyword-only arguments:
 Returns
 [GetUserEndpointsResponseTypeDef](./type_defs.md#getuserendpointsresponsetypedef).
 
+<a id="get_voice_channel"></a>
+
 ### get_voice_channel
 
 Retrieves information about the status and settings of the voice channel for an
@@ -1917,6 +2092,8 @@ Keyword-only arguments:
 
 Returns
 [GetVoiceChannelResponseTypeDef](./type_defs.md#getvoicechannelresponsetypedef).
+
+<a id="get_voice_template"></a>
 
 ### get_voice_template
 
@@ -1938,6 +2115,8 @@ Keyword-only arguments:
 
 Returns
 [GetVoiceTemplateResponseTypeDef](./type_defs.md#getvoicetemplateresponsetypedef).
+
+<a id="list_journeys"></a>
 
 ### list_journeys
 
@@ -1961,6 +2140,8 @@ Keyword-only arguments:
 Returns
 [ListJourneysResponseTypeDef](./type_defs.md#listjourneysresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves all the tags (keys and values) that are associated with an
@@ -1980,6 +2161,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_template_versions"></a>
 
 ### list_template_versions
 
@@ -2002,6 +2185,8 @@ Keyword-only arguments:
 
 Returns
 [ListTemplateVersionsResponseTypeDef](./type_defs.md#listtemplateversionsresponsetypedef).
+
+<a id="list_templates"></a>
 
 ### list_templates
 
@@ -2026,6 +2211,8 @@ Keyword-only arguments:
 Returns
 [ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef).
 
+<a id="phone_number_validate"></a>
+
 ### phone_number_validate
 
 Retrieves information about a phone number.
@@ -2046,6 +2233,8 @@ Keyword-only arguments:
 
 Returns
 [PhoneNumberValidateResponseTypeDef](./type_defs.md#phonenumbervalidateresponsetypedef).
+
+<a id="put_event_stream"></a>
 
 ### put_event_stream
 
@@ -2070,6 +2259,8 @@ Keyword-only arguments:
 Returns
 [PutEventStreamResponseTypeDef](./type_defs.md#puteventstreamresponsetypedef).
 
+<a id="put_events"></a>
+
 ### put_events
 
 Creates a new event to record for endpoints, or creates or updates endpoint
@@ -2090,6 +2281,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns [PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef).
+
+<a id="remove_attributes"></a>
 
 ### remove_attributes
 
@@ -2115,6 +2308,8 @@ Keyword-only arguments:
 Returns
 [RemoveAttributesResponseTypeDef](./type_defs.md#removeattributesresponsetypedef).
 
+<a id="send_messages"></a>
+
 ### send_messages
 
 Creates and sends a direct message.
@@ -2135,6 +2330,8 @@ Keyword-only arguments:
 
 Returns
 [SendMessagesResponseTypeDef](./type_defs.md#sendmessagesresponsetypedef).
+
+<a id="send_otp_message"></a>
 
 ### send_otp_message
 
@@ -2159,6 +2356,8 @@ Keyword-only arguments:
 Returns
 [SendOTPMessageResponseTypeDef](./type_defs.md#sendotpmessageresponsetypedef).
 
+<a id="send_users_messages"></a>
+
 ### send_users_messages
 
 Creates and sends a message to a list of users.
@@ -2181,6 +2380,8 @@ Keyword-only arguments:
 Returns
 [SendUsersMessagesResponseTypeDef](./type_defs.md#sendusersmessagesresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds one or more tags (keys and values) to an application, campaign, message
@@ -2199,6 +2400,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `TagsModel`: [TagsModelTypeDef](./type_defs.md#tagsmodeltypedef) *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags (keys and values) from an application, campaign,
@@ -2216,6 +2419,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_adm_channel"></a>
 
 ### update_adm_channel
 
@@ -2240,6 +2445,8 @@ Keyword-only arguments:
 Returns
 [UpdateAdmChannelResponseTypeDef](./type_defs.md#updateadmchannelresponsetypedef).
 
+<a id="update_apns_channel"></a>
+
 ### update_apns_channel
 
 Enables the APNs channel for an application or updates the status and settings
@@ -2262,6 +2469,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateApnsChannelResponseTypeDef](./type_defs.md#updateapnschannelresponsetypedef).
+
+<a id="update_apns_sandbox_channel"></a>
 
 ### update_apns_sandbox_channel
 
@@ -2287,6 +2496,8 @@ Keyword-only arguments:
 Returns
 [UpdateApnsSandboxChannelResponseTypeDef](./type_defs.md#updateapnssandboxchannelresponsetypedef).
 
+<a id="update_apns_voip_channel"></a>
+
 ### update_apns_voip_channel
 
 Enables the APNs VoIP channel for an application or updates the status and
@@ -2310,6 +2521,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateApnsVoipChannelResponseTypeDef](./type_defs.md#updateapnsvoipchannelresponsetypedef).
+
+<a id="update_apns_voip_sandbox_channel"></a>
 
 ### update_apns_voip_sandbox_channel
 
@@ -2335,6 +2548,8 @@ Keyword-only arguments:
 Returns
 [UpdateApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#updateapnsvoipsandboxchannelresponsetypedef).
 
+<a id="update_application_settings"></a>
+
 ### update_application_settings
 
 Updates the settings for an application.
@@ -2357,6 +2572,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateApplicationSettingsResponseTypeDef](./type_defs.md#updateapplicationsettingsresponsetypedef).
+
+<a id="update_baidu_channel"></a>
 
 ### update_baidu_channel
 
@@ -2381,6 +2598,8 @@ Keyword-only arguments:
 Returns
 [UpdateBaiduChannelResponseTypeDef](./type_defs.md#updatebaiduchannelresponsetypedef).
 
+<a id="update_campaign"></a>
+
 ### update_campaign
 
 Updates the configuration and other settings for a campaign.
@@ -2404,6 +2623,8 @@ Keyword-only arguments:
 Returns
 [UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef).
 
+<a id="update_email_channel"></a>
+
 ### update_email_channel
 
 Enables the email channel for an application or updates the status and settings
@@ -2426,6 +2647,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateEmailChannelResponseTypeDef](./type_defs.md#updateemailchannelresponsetypedef).
+
+<a id="update_email_template"></a>
 
 ### update_email_template
 
@@ -2452,6 +2675,8 @@ Keyword-only arguments:
 Returns
 [UpdateEmailTemplateResponseTypeDef](./type_defs.md#updateemailtemplateresponsetypedef).
 
+<a id="update_endpoint"></a>
+
 ### update_endpoint
 
 Creates a new endpoint for an application or updates the settings and
@@ -2474,6 +2699,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateEndpointResponseTypeDef](./type_defs.md#updateendpointresponsetypedef).
+
+<a id="update_endpoints_batch"></a>
 
 ### update_endpoints_batch
 
@@ -2498,6 +2725,8 @@ Keyword-only arguments:
 Returns
 [UpdateEndpointsBatchResponseTypeDef](./type_defs.md#updateendpointsbatchresponsetypedef).
 
+<a id="update_gcm_channel"></a>
+
 ### update_gcm_channel
 
 Enables the GCM channel for an application or updates the status and settings
@@ -2520,6 +2749,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateGcmChannelResponseTypeDef](./type_defs.md#updategcmchannelresponsetypedef).
+
+<a id="update_in_app_template"></a>
 
 ### update_in_app_template
 
@@ -2546,6 +2777,8 @@ Keyword-only arguments:
 Returns
 [UpdateInAppTemplateResponseTypeDef](./type_defs.md#updateinapptemplateresponsetypedef).
 
+<a id="update_journey"></a>
+
 ### update_journey
 
 Updates the configuration and other settings for a journey.
@@ -2569,6 +2802,8 @@ Keyword-only arguments:
 Returns
 [UpdateJourneyResponseTypeDef](./type_defs.md#updatejourneyresponsetypedef).
 
+<a id="update_journey_state"></a>
+
 ### update_journey_state
 
 Cancels (stops) an active journey.
@@ -2591,6 +2826,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateJourneyStateResponseTypeDef](./type_defs.md#updatejourneystateresponsetypedef).
+
+<a id="update_push_template"></a>
 
 ### update_push_template
 
@@ -2617,6 +2854,8 @@ Keyword-only arguments:
 Returns
 [UpdatePushTemplateResponseTypeDef](./type_defs.md#updatepushtemplateresponsetypedef).
 
+<a id="update_recommender_configuration"></a>
+
 ### update_recommender_configuration
 
 Updates an Amazon Pinpoint configuration for a recommender model.
@@ -2639,6 +2878,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRecommenderConfigurationResponseTypeDef](./type_defs.md#updaterecommenderconfigurationresponsetypedef).
+
+<a id="update_segment"></a>
 
 ### update_segment
 
@@ -2665,6 +2906,8 @@ Keyword-only arguments:
 Returns
 [UpdateSegmentResponseTypeDef](./type_defs.md#updatesegmentresponsetypedef).
 
+<a id="update_sms_channel"></a>
+
 ### update_sms_channel
 
 Enables the SMS channel for an application or updates the status and settings
@@ -2687,6 +2930,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSmsChannelResponseTypeDef](./type_defs.md#updatesmschannelresponsetypedef).
+
+<a id="update_sms_template"></a>
 
 ### update_sms_template
 
@@ -2713,6 +2958,8 @@ Keyword-only arguments:
 Returns
 [UpdateSmsTemplateResponseTypeDef](./type_defs.md#updatesmstemplateresponsetypedef).
 
+<a id="update_template_active_version"></a>
+
 ### update_template_active_version
 
 Changes the status of a specific version of a message template to *active* .
@@ -2737,6 +2984,8 @@ Keyword-only arguments:
 Returns
 [UpdateTemplateActiveVersionResponseTypeDef](./type_defs.md#updatetemplateactiveversionresponsetypedef).
 
+<a id="update_voice_channel"></a>
+
 ### update_voice_channel
 
 Enables the voice channel for an application or updates the status and settings
@@ -2759,6 +3008,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVoiceChannelResponseTypeDef](./type_defs.md#updatevoicechannelresponsetypedef).
+
+<a id="update_voice_template"></a>
 
 ### update_voice_template
 
@@ -2784,6 +3035,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVoiceTemplateResponseTypeDef](./type_defs.md#updatevoicetemplateresponsetypedef).
+
+<a id="verify_otp_message"></a>
 
 ### verify_otp_message
 

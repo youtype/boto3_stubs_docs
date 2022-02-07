@@ -1,3 +1,5 @@
+<a id="pollyclient-for-boto3-polly-module"></a>
+
 # PollyClient for boto3 Polly module
 
 > [Index](..) > [Polly](.) > PollyClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
 type annotations stubs module
-[mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
+[mypy-boto3-polly](https://pypi.org/project/mypy-boto3-polly/).
 
 - [PollyClient for boto3 Polly module](#pollyclient-for-boto3-polly-module)
   - [PollyClient](#pollyclient)
@@ -25,6 +27,8 @@ type annotations stubs module
     - [synthesize_speech](#synthesize_speech)
     - [get_paginator](#get_paginator)
 
+<a id="pollyclient"></a>
+
 ## PollyClient
 
 Type annotations for `boto3.client("polly")`
@@ -32,14 +36,17 @@ Type annotations for `boto3.client("polly")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_polly.client import PollyClient
 
 def get_polly_client() -> PollyClient:
-    return boto3.client("polly")
+    return Session().client("polly")
 ```
 
 Boto3 documentation:
 [Polly.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -78,7 +85,11 @@ Exceptions:
 - `Exceptions.UnsupportedPlsAlphabetException`
 - `Exceptions.UnsupportedPlsLanguageException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -90,6 +101,8 @@ Boto3 documentation:
 [Polly.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -105,6 +118,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_lexicon"></a>
 
 ### delete_lexicon
 
@@ -124,6 +139,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_voices"></a>
 
 ### describe_voices
 
@@ -148,6 +165,8 @@ Keyword-only arguments:
 Returns
 [DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -165,6 +184,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_lexicon"></a>
 
 ### get_lexicon
 
@@ -185,6 +206,8 @@ Keyword-only arguments:
 
 Returns [GetLexiconOutputTypeDef](./type_defs.md#getlexiconoutputtypedef).
 
+<a id="get_speech_synthesis_task"></a>
+
 ### get_speech_synthesis_task
 
 Retrieves a specific SpeechSynthesisTask object based on its TaskID.
@@ -204,6 +227,8 @@ Keyword-only arguments:
 Returns
 [GetSpeechSynthesisTaskOutputTypeDef](./type_defs.md#getspeechsynthesistaskoutputtypedef).
 
+<a id="list_lexicons"></a>
+
 ### list_lexicons
 
 Returns a list of pronunciation lexicons stored in an Amazon Web Services
@@ -222,6 +247,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef).
+
+<a id="list_speech_synthesis_tasks"></a>
 
 ### list_speech_synthesis_tasks
 
@@ -245,6 +272,8 @@ Keyword-only arguments:
 Returns
 [ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef).
 
+<a id="put_lexicon"></a>
+
 ### put_lexicon
 
 Stores a pronunciation lexicon in an Amazon Web Services Region.
@@ -263,6 +292,8 @@ Keyword-only arguments:
 - `Content`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_speech_synthesis_task"></a>
 
 ### start_speech_synthesis_task
 
@@ -298,6 +329,8 @@ Keyword-only arguments:
 Returns
 [StartSpeechSynthesisTaskOutputTypeDef](./type_defs.md#startspeechsynthesistaskoutputtypedef).
 
+<a id="synthesize_speech"></a>
+
 ### synthesize_speech
 
 Synthesizes UTF-8 input, plain text or SSML, to a stream of bytes.
@@ -326,6 +359,8 @@ Keyword-only arguments:
 
 Returns
 [SynthesizeSpeechOutputTypeDef](./type_defs.md#synthesizespeechoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

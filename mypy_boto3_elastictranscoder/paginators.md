@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-elastictranscoder-module"></a>
+
 # Paginators for boto3 ElasticTranscoder module
 
 > [Index](..) > [ElasticTranscoder](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module
-[mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+[mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 - [Paginators for boto3 ElasticTranscoder module](#paginators-for-boto3-elastictranscoder-module)
   - [ListJobsByPipelinePaginator](#listjobsbypipelinepaginator)
   - [ListJobsByStatusPaginator](#listjobsbystatuspaginator)
   - [ListPipelinesPaginator](#listpipelinespaginator)
   - [ListPresetsPaginator](#listpresetspaginator)
+
+<a id="listjobsbypipelinepaginator"></a>
 
 ## ListJobsByPipelinePaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elastictranscoder.paginator import ListJobsByPipelinePaginator
 
 def get_list_jobs_by_pipeline_paginator() -> ListJobsByPipelinePaginator:
-    return boto3.client("elastictranscoder").get_paginator("list_jobs_by_pipeline")
+    return Session().client("elastictranscoder").get_paginator("list_jobs_by_pipeline")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `ListJobsByPipelinePaginator.paginate` method:
 `ListJobsByPipelinePaginator.paginate` returns
 `_PageIterator`\[[ListJobsByPipelineResponseTypeDef](./type_defs.md#listjobsbypipelineresponsetypedef)\].
 
+<a id="listjobsbystatuspaginator"></a>
+
 ## ListJobsByStatusPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elastictranscoder.paginator import ListJobsByStatusPaginator
 
 def get_list_jobs_by_status_paginator() -> ListJobsByStatusPaginator:
-    return boto3.client("elastictranscoder").get_paginator("list_jobs_by_status")
+    return Session().client("elastictranscoder").get_paginator("list_jobs_by_status")
 ```
 
 Boto3 documentation:
@@ -67,6 +77,8 @@ Arguments for `ListJobsByStatusPaginator.paginate` method:
 `ListJobsByStatusPaginator.paginate` returns
 `_PageIterator`\[[ListJobsByStatusResponseTypeDef](./type_defs.md#listjobsbystatusresponsetypedef)\].
 
+<a id="listpipelinespaginator"></a>
+
 ## ListPipelinesPaginator
 
 Type annotations for
@@ -75,10 +87,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elastictranscoder.paginator import ListPipelinesPaginator
 
 def get_list_pipelines_paginator() -> ListPipelinesPaginator:
-    return boto3.client("elastictranscoder").get_paginator("list_pipelines")
+    return Session().client("elastictranscoder").get_paginator("list_pipelines")
 ```
 
 Boto3 documentation:
@@ -93,6 +107,8 @@ Arguments for `ListPipelinesPaginator.paginate` method:
 `ListPipelinesPaginator.paginate` returns
 `_PageIterator`\[[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef)\].
 
+<a id="listpresetspaginator"></a>
+
 ## ListPresetsPaginator
 
 Type annotations for
@@ -101,10 +117,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elastictranscoder.paginator import ListPresetsPaginator
 
 def get_list_presets_paginator() -> ListPresetsPaginator:
-    return boto3.client("elastictranscoder").get_paginator("list_presets")
+    return Session().client("elastictranscoder").get_paginator("list_presets")
 ```
 
 Boto3 documentation:

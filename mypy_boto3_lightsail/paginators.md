@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-lightsail-module"></a>
+
 # Paginators for boto3 Lightsail module
 
 > [Index](..) > [Lightsail](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
 type annotations stubs module
-[mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
+[mypy-boto3-lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 - [Paginators for boto3 Lightsail module](#paginators-for-boto3-lightsail-module)
   - [GetActiveNamesPaginator](#getactivenamespaginator)
@@ -29,6 +31,8 @@ type annotations stubs module
   - [GetRelationalDatabasesPaginator](#getrelationaldatabasespaginator)
   - [GetStaticIpsPaginator](#getstaticipspaginator)
 
+<a id="getactivenamespaginator"></a>
+
 ## GetActiveNamesPaginator
 
 Type annotations for
@@ -37,10 +41,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetActiveNamesPaginator
 
 def get_get_active_names_paginator() -> GetActiveNamesPaginator:
-    return boto3.client("lightsail").get_paginator("get_active_names")
+    return Session().client("lightsail").get_paginator("get_active_names")
 ```
 
 Boto3 documentation:
@@ -54,6 +60,8 @@ Arguments for `GetActiveNamesPaginator.paginate` method:
 `GetActiveNamesPaginator.paginate` returns
 `_PageIterator`\[[GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef)\].
 
+<a id="getblueprintspaginator"></a>
+
 ## GetBlueprintsPaginator
 
 Type annotations for
@@ -62,10 +70,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetBlueprintsPaginator
 
 def get_get_blueprints_paginator() -> GetBlueprintsPaginator:
-    return boto3.client("lightsail").get_paginator("get_blueprints")
+    return Session().client("lightsail").get_paginator("get_blueprints")
 ```
 
 Boto3 documentation:
@@ -80,6 +90,8 @@ Arguments for `GetBlueprintsPaginator.paginate` method:
 `GetBlueprintsPaginator.paginate` returns
 `_PageIterator`\[[GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef)\].
 
+<a id="getbundlespaginator"></a>
+
 ## GetBundlesPaginator
 
 Type annotations for `boto3.client("lightsail").get_paginator("get_bundles")`.
@@ -87,10 +99,12 @@ Type annotations for `boto3.client("lightsail").get_paginator("get_bundles")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetBundlesPaginator
 
 def get_get_bundles_paginator() -> GetBundlesPaginator:
-    return boto3.client("lightsail").get_paginator("get_bundles")
+    return Session().client("lightsail").get_paginator("get_bundles")
 ```
 
 Boto3 documentation:
@@ -105,6 +119,8 @@ Arguments for `GetBundlesPaginator.paginate` method:
 `GetBundlesPaginator.paginate` returns
 `_PageIterator`\[[GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef)\].
 
+<a id="getcloudformationstackrecordspaginator"></a>
+
 ## GetCloudFormationStackRecordsPaginator
 
 Type annotations for
@@ -113,10 +129,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetCloudFormationStackRecordsPaginator
 
 def get_get_cloud_formation_stack_records_paginator() -> GetCloudFormationStackRecordsPaginator:
-    return boto3.client("lightsail").get_paginator("get_cloud_formation_stack_records")
+    return Session().client("lightsail").get_paginator("get_cloud_formation_stack_records")
 ```
 
 Boto3 documentation:
@@ -130,6 +148,8 @@ Arguments for `GetCloudFormationStackRecordsPaginator.paginate` method:
 `GetCloudFormationStackRecordsPaginator.paginate` returns
 `_PageIterator`\[[GetCloudFormationStackRecordsResultTypeDef](./type_defs.md#getcloudformationstackrecordsresulttypedef)\].
 
+<a id="getdisksnapshotspaginator"></a>
+
 ## GetDiskSnapshotsPaginator
 
 Type annotations for
@@ -138,10 +158,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetDiskSnapshotsPaginator
 
 def get_get_disk_snapshots_paginator() -> GetDiskSnapshotsPaginator:
-    return boto3.client("lightsail").get_paginator("get_disk_snapshots")
+    return Session().client("lightsail").get_paginator("get_disk_snapshots")
 ```
 
 Boto3 documentation:
@@ -155,6 +177,8 @@ Arguments for `GetDiskSnapshotsPaginator.paginate` method:
 `GetDiskSnapshotsPaginator.paginate` returns
 `_PageIterator`\[[GetDiskSnapshotsResultTypeDef](./type_defs.md#getdisksnapshotsresulttypedef)\].
 
+<a id="getdiskspaginator"></a>
+
 ## GetDisksPaginator
 
 Type annotations for `boto3.client("lightsail").get_paginator("get_disks")`.
@@ -162,10 +186,12 @@ Type annotations for `boto3.client("lightsail").get_paginator("get_disks")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetDisksPaginator
 
 def get_get_disks_paginator() -> GetDisksPaginator:
-    return boto3.client("lightsail").get_paginator("get_disks")
+    return Session().client("lightsail").get_paginator("get_disks")
 ```
 
 Boto3 documentation:
@@ -179,6 +205,8 @@ Arguments for `GetDisksPaginator.paginate` method:
 `GetDisksPaginator.paginate` returns
 `_PageIterator`\[[GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef)\].
 
+<a id="getdomainspaginator"></a>
+
 ## GetDomainsPaginator
 
 Type annotations for `boto3.client("lightsail").get_paginator("get_domains")`.
@@ -186,10 +214,12 @@ Type annotations for `boto3.client("lightsail").get_paginator("get_domains")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetDomainsPaginator
 
 def get_get_domains_paginator() -> GetDomainsPaginator:
-    return boto3.client("lightsail").get_paginator("get_domains")
+    return Session().client("lightsail").get_paginator("get_domains")
 ```
 
 Boto3 documentation:
@@ -203,6 +233,8 @@ Arguments for `GetDomainsPaginator.paginate` method:
 `GetDomainsPaginator.paginate` returns
 `_PageIterator`\[[GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef)\].
 
+<a id="getexportsnapshotrecordspaginator"></a>
+
 ## GetExportSnapshotRecordsPaginator
 
 Type annotations for
@@ -211,10 +243,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetExportSnapshotRecordsPaginator
 
 def get_get_export_snapshot_records_paginator() -> GetExportSnapshotRecordsPaginator:
-    return boto3.client("lightsail").get_paginator("get_export_snapshot_records")
+    return Session().client("lightsail").get_paginator("get_export_snapshot_records")
 ```
 
 Boto3 documentation:
@@ -228,6 +262,8 @@ Arguments for `GetExportSnapshotRecordsPaginator.paginate` method:
 `GetExportSnapshotRecordsPaginator.paginate` returns
 `_PageIterator`\[[GetExportSnapshotRecordsResultTypeDef](./type_defs.md#getexportsnapshotrecordsresulttypedef)\].
 
+<a id="getinstancesnapshotspaginator"></a>
+
 ## GetInstanceSnapshotsPaginator
 
 Type annotations for
@@ -236,10 +272,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetInstanceSnapshotsPaginator
 
 def get_get_instance_snapshots_paginator() -> GetInstanceSnapshotsPaginator:
-    return boto3.client("lightsail").get_paginator("get_instance_snapshots")
+    return Session().client("lightsail").get_paginator("get_instance_snapshots")
 ```
 
 Boto3 documentation:
@@ -253,6 +291,8 @@ Arguments for `GetInstanceSnapshotsPaginator.paginate` method:
 `GetInstanceSnapshotsPaginator.paginate` returns
 `_PageIterator`\[[GetInstanceSnapshotsResultTypeDef](./type_defs.md#getinstancesnapshotsresulttypedef)\].
 
+<a id="getinstancespaginator"></a>
+
 ## GetInstancesPaginator
 
 Type annotations for
@@ -261,10 +301,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetInstancesPaginator
 
 def get_get_instances_paginator() -> GetInstancesPaginator:
-    return boto3.client("lightsail").get_paginator("get_instances")
+    return Session().client("lightsail").get_paginator("get_instances")
 ```
 
 Boto3 documentation:
@@ -278,6 +320,8 @@ Arguments for `GetInstancesPaginator.paginate` method:
 `GetInstancesPaginator.paginate` returns
 `_PageIterator`\[[GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef)\].
 
+<a id="getkeypairspaginator"></a>
+
 ## GetKeyPairsPaginator
 
 Type annotations for
@@ -286,10 +330,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetKeyPairsPaginator
 
 def get_get_key_pairs_paginator() -> GetKeyPairsPaginator:
-    return boto3.client("lightsail").get_paginator("get_key_pairs")
+    return Session().client("lightsail").get_paginator("get_key_pairs")
 ```
 
 Boto3 documentation:
@@ -303,6 +349,8 @@ Arguments for `GetKeyPairsPaginator.paginate` method:
 `GetKeyPairsPaginator.paginate` returns
 `_PageIterator`\[[GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef)\].
 
+<a id="getloadbalancerspaginator"></a>
+
 ## GetLoadBalancersPaginator
 
 Type annotations for
@@ -311,10 +359,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetLoadBalancersPaginator
 
 def get_get_load_balancers_paginator() -> GetLoadBalancersPaginator:
-    return boto3.client("lightsail").get_paginator("get_load_balancers")
+    return Session().client("lightsail").get_paginator("get_load_balancers")
 ```
 
 Boto3 documentation:
@@ -328,6 +378,8 @@ Arguments for `GetLoadBalancersPaginator.paginate` method:
 `GetLoadBalancersPaginator.paginate` returns
 `_PageIterator`\[[GetLoadBalancersResultTypeDef](./type_defs.md#getloadbalancersresulttypedef)\].
 
+<a id="getoperationspaginator"></a>
+
 ## GetOperationsPaginator
 
 Type annotations for
@@ -336,10 +388,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetOperationsPaginator
 
 def get_get_operations_paginator() -> GetOperationsPaginator:
-    return boto3.client("lightsail").get_paginator("get_operations")
+    return Session().client("lightsail").get_paginator("get_operations")
 ```
 
 Boto3 documentation:
@@ -353,6 +407,8 @@ Arguments for `GetOperationsPaginator.paginate` method:
 `GetOperationsPaginator.paginate` returns
 `_PageIterator`\[[GetOperationsResultTypeDef](./type_defs.md#getoperationsresulttypedef)\].
 
+<a id="getrelationaldatabaseblueprintspaginator"></a>
+
 ## GetRelationalDatabaseBlueprintsPaginator
 
 Type annotations for
@@ -361,10 +417,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetRelationalDatabaseBlueprintsPaginator
 
 def get_get_relational_database_blueprints_paginator() -> GetRelationalDatabaseBlueprintsPaginator:
-    return boto3.client("lightsail").get_paginator("get_relational_database_blueprints")
+    return Session().client("lightsail").get_paginator("get_relational_database_blueprints")
 ```
 
 Boto3 documentation:
@@ -378,6 +436,8 @@ Arguments for `GetRelationalDatabaseBlueprintsPaginator.paginate` method:
 `GetRelationalDatabaseBlueprintsPaginator.paginate` returns
 `_PageIterator`\[[GetRelationalDatabaseBlueprintsResultTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresulttypedef)\].
 
+<a id="getrelationaldatabasebundlespaginator"></a>
+
 ## GetRelationalDatabaseBundlesPaginator
 
 Type annotations for
@@ -386,10 +446,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetRelationalDatabaseBundlesPaginator
 
 def get_get_relational_database_bundles_paginator() -> GetRelationalDatabaseBundlesPaginator:
-    return boto3.client("lightsail").get_paginator("get_relational_database_bundles")
+    return Session().client("lightsail").get_paginator("get_relational_database_bundles")
 ```
 
 Boto3 documentation:
@@ -403,6 +465,8 @@ Arguments for `GetRelationalDatabaseBundlesPaginator.paginate` method:
 `GetRelationalDatabaseBundlesPaginator.paginate` returns
 `_PageIterator`\[[GetRelationalDatabaseBundlesResultTypeDef](./type_defs.md#getrelationaldatabasebundlesresulttypedef)\].
 
+<a id="getrelationaldatabaseeventspaginator"></a>
+
 ## GetRelationalDatabaseEventsPaginator
 
 Type annotations for
@@ -411,10 +475,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetRelationalDatabaseEventsPaginator
 
 def get_get_relational_database_events_paginator() -> GetRelationalDatabaseEventsPaginator:
-    return boto3.client("lightsail").get_paginator("get_relational_database_events")
+    return Session().client("lightsail").get_paginator("get_relational_database_events")
 ```
 
 Boto3 documentation:
@@ -430,6 +496,8 @@ Arguments for `GetRelationalDatabaseEventsPaginator.paginate` method:
 `GetRelationalDatabaseEventsPaginator.paginate` returns
 `_PageIterator`\[[GetRelationalDatabaseEventsResultTypeDef](./type_defs.md#getrelationaldatabaseeventsresulttypedef)\].
 
+<a id="getrelationaldatabaseparameterspaginator"></a>
+
 ## GetRelationalDatabaseParametersPaginator
 
 Type annotations for
@@ -438,10 +506,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetRelationalDatabaseParametersPaginator
 
 def get_get_relational_database_parameters_paginator() -> GetRelationalDatabaseParametersPaginator:
-    return boto3.client("lightsail").get_paginator("get_relational_database_parameters")
+    return Session().client("lightsail").get_paginator("get_relational_database_parameters")
 ```
 
 Boto3 documentation:
@@ -456,6 +526,8 @@ Arguments for `GetRelationalDatabaseParametersPaginator.paginate` method:
 `GetRelationalDatabaseParametersPaginator.paginate` returns
 `_PageIterator`\[[GetRelationalDatabaseParametersResultTypeDef](./type_defs.md#getrelationaldatabaseparametersresulttypedef)\].
 
+<a id="getrelationaldatabasesnapshotspaginator"></a>
+
 ## GetRelationalDatabaseSnapshotsPaginator
 
 Type annotations for
@@ -464,10 +536,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetRelationalDatabaseSnapshotsPaginator
 
 def get_get_relational_database_snapshots_paginator() -> GetRelationalDatabaseSnapshotsPaginator:
-    return boto3.client("lightsail").get_paginator("get_relational_database_snapshots")
+    return Session().client("lightsail").get_paginator("get_relational_database_snapshots")
 ```
 
 Boto3 documentation:
@@ -481,6 +555,8 @@ Arguments for `GetRelationalDatabaseSnapshotsPaginator.paginate` method:
 `GetRelationalDatabaseSnapshotsPaginator.paginate` returns
 `_PageIterator`\[[GetRelationalDatabaseSnapshotsResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresulttypedef)\].
 
+<a id="getrelationaldatabasespaginator"></a>
+
 ## GetRelationalDatabasesPaginator
 
 Type annotations for
@@ -489,10 +565,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetRelationalDatabasesPaginator
 
 def get_get_relational_databases_paginator() -> GetRelationalDatabasesPaginator:
-    return boto3.client("lightsail").get_paginator("get_relational_databases")
+    return Session().client("lightsail").get_paginator("get_relational_databases")
 ```
 
 Boto3 documentation:
@@ -506,6 +584,8 @@ Arguments for `GetRelationalDatabasesPaginator.paginate` method:
 `GetRelationalDatabasesPaginator.paginate` returns
 `_PageIterator`\[[GetRelationalDatabasesResultTypeDef](./type_defs.md#getrelationaldatabasesresulttypedef)\].
 
+<a id="getstaticipspaginator"></a>
+
 ## GetStaticIpsPaginator
 
 Type annotations for
@@ -514,10 +594,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lightsail.paginator import GetStaticIpsPaginator
 
 def get_get_static_ips_paginator() -> GetStaticIpsPaginator:
-    return boto3.client("lightsail").get_paginator("get_static_ips")
+    return Session().client("lightsail").get_paginator("get_static_ips")
 ```
 
 Boto3 documentation:

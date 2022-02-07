@@ -1,3 +1,5 @@
+<a id="ecrclient-for-boto3-ecr-module"></a>
+
 # ECRClient for boto3 ECR module
 
 > [Index](..) > [ECR](.) > ECRClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
 type annotations stubs module
-[mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
+[mypy-boto3-ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
 - [ECRClient for boto3 ECR module](#ecrclient-for-boto3-ecr-module)
   - [ECRClient](#ecrclient)
@@ -58,6 +60,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="ecrclient"></a>
+
 ## ECRClient
 
 Type annotations for `boto3.client("ecr")`
@@ -65,14 +69,17 @@ Type annotations for `boto3.client("ecr")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ecr.client import ECRClient
 
 def get_ecr_client() -> ECRClient:
-    return boto3.client("ecr")
+    return Session().client("ecr")
 ```
 
 Boto3 documentation:
 [ECR.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -123,7 +130,11 @@ Exceptions:
 - `Exceptions.UploadNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -135,6 +146,8 @@ Boto3 documentation:
 [ECR.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_check_layer_availability"></a>
 
 ### batch_check_layer_availability
 
@@ -158,6 +171,8 @@ Keyword-only arguments:
 Returns
 [BatchCheckLayerAvailabilityResponseTypeDef](./type_defs.md#batchchecklayeravailabilityresponsetypedef).
 
+<a id="batch_delete_image"></a>
+
 ### batch_delete_image
 
 Deletes a list of specified images within a repository.
@@ -180,6 +195,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDeleteImageResponseTypeDef](./type_defs.md#batchdeleteimageresponsetypedef).
+
+<a id="batch_get_image"></a>
 
 ### batch_get_image
 
@@ -205,6 +222,8 @@ Keyword-only arguments:
 Returns
 [BatchGetImageResponseTypeDef](./type_defs.md#batchgetimageresponsetypedef).
 
+<a id="batch_get_repository_scanning_configuration"></a>
+
 ### batch_get_repository_scanning_configuration
 
 Gets the scanning configuration for one or more repositories.
@@ -225,6 +244,8 @@ Keyword-only arguments:
 Returns
 [BatchGetRepositoryScanningConfigurationResponseTypeDef](./type_defs.md#batchgetrepositoryscanningconfigurationresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -239,6 +260,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="complete_layer_upload"></a>
 
 ### complete_layer_upload
 
@@ -263,6 +286,8 @@ Keyword-only arguments:
 Returns
 [CompleteLayerUploadResponseTypeDef](./type_defs.md#completelayeruploadresponsetypedef).
 
+<a id="create_pull_through_cache_rule"></a>
+
 ### create_pull_through_cache_rule
 
 Creates a pull through cache rule.
@@ -284,6 +309,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePullThroughCacheRuleResponseTypeDef](./type_defs.md#createpullthroughcacheruleresponsetypedef).
+
+<a id="create_repository"></a>
 
 ### create_repository
 
@@ -312,6 +339,8 @@ Keyword-only arguments:
 Returns
 [CreateRepositoryResponseTypeDef](./type_defs.md#createrepositoryresponsetypedef).
 
+<a id="delete_lifecycle_policy"></a>
+
 ### delete_lifecycle_policy
 
 Deletes the lifecycle policy associated with the specified repository.
@@ -331,6 +360,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteLifecyclePolicyResponseTypeDef](./type_defs.md#deletelifecyclepolicyresponsetypedef).
+
+<a id="delete_pull_through_cache_rule"></a>
 
 ### delete_pull_through_cache_rule
 
@@ -353,6 +384,8 @@ Keyword-only arguments:
 Returns
 [DeletePullThroughCacheRuleResponseTypeDef](./type_defs.md#deletepullthroughcacheruleresponsetypedef).
 
+<a id="delete_registry_policy"></a>
+
 ### delete_registry_policy
 
 Deletes the registry permissions policy.
@@ -364,6 +397,8 @@ Boto3 documentation:
 
 Returns
 [DeleteRegistryPolicyResponseTypeDef](./type_defs.md#deleteregistrypolicyresponsetypedef).
+
+<a id="delete_repository"></a>
 
 ### delete_repository
 
@@ -386,6 +421,8 @@ Keyword-only arguments:
 Returns
 [DeleteRepositoryResponseTypeDef](./type_defs.md#deleterepositoryresponsetypedef).
 
+<a id="delete_repository_policy"></a>
+
 ### delete_repository_policy
 
 Deletes the repository policy associated with the specified repository.
@@ -405,6 +442,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteRepositoryPolicyResponseTypeDef](./type_defs.md#deleterepositorypolicyresponsetypedef).
+
+<a id="describe_image_replication_status"></a>
 
 ### describe_image_replication_status
 
@@ -429,6 +468,8 @@ Keyword-only arguments:
 Returns
 [DescribeImageReplicationStatusResponseTypeDef](./type_defs.md#describeimagereplicationstatusresponsetypedef).
 
+<a id="describe_image_scan_findings"></a>
+
 ### describe_image_scan_findings
 
 Returns the scan findings for the specified image.
@@ -452,6 +493,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeImageScanFindingsResponseTypeDef](./type_defs.md#describeimagescanfindingsresponsetypedef).
+
+<a id="describe_images"></a>
 
 ### describe_images
 
@@ -479,6 +522,8 @@ Keyword-only arguments:
 Returns
 [DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef).
 
+<a id="describe_pull_through_cache_rules"></a>
+
 ### describe_pull_through_cache_rules
 
 Returns the pull through cache rules for a registry.
@@ -502,6 +547,8 @@ Keyword-only arguments:
 Returns
 [DescribePullThroughCacheRulesResponseTypeDef](./type_defs.md#describepullthroughcacherulesresponsetypedef).
 
+<a id="describe_registry"></a>
+
 ### describe_registry
 
 Describes the settings for a registry.
@@ -513,6 +560,8 @@ Boto3 documentation:
 
 Returns
 [DescribeRegistryResponseTypeDef](./type_defs.md#describeregistryresponsetypedef).
+
+<a id="describe_repositories"></a>
 
 ### describe_repositories
 
@@ -536,6 +585,8 @@ Keyword-only arguments:
 Returns
 [DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -553,6 +604,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_authorization_token"></a>
 
 ### get_authorization_token
 
@@ -572,6 +625,8 @@ Keyword-only arguments:
 
 Returns
 [GetAuthorizationTokenResponseTypeDef](./type_defs.md#getauthorizationtokenresponsetypedef).
+
+<a id="get_download_url_for_layer"></a>
 
 ### get_download_url_for_layer
 
@@ -595,6 +650,8 @@ Keyword-only arguments:
 Returns
 [GetDownloadUrlForLayerResponseTypeDef](./type_defs.md#getdownloadurlforlayerresponsetypedef).
 
+<a id="get_lifecycle_policy"></a>
+
 ### get_lifecycle_policy
 
 Retrieves the lifecycle policy for the specified repository.
@@ -614,6 +671,8 @@ Keyword-only arguments:
 
 Returns
 [GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef).
+
+<a id="get_lifecycle_policy_preview"></a>
 
 ### get_lifecycle_policy_preview
 
@@ -642,6 +701,8 @@ Keyword-only arguments:
 Returns
 [GetLifecyclePolicyPreviewResponseTypeDef](./type_defs.md#getlifecyclepolicypreviewresponsetypedef).
 
+<a id="get_registry_policy"></a>
+
 ### get_registry_policy
 
 Retrieves the permissions policy for a registry.
@@ -653,6 +714,8 @@ Boto3 documentation:
 
 Returns
 [GetRegistryPolicyResponseTypeDef](./type_defs.md#getregistrypolicyresponsetypedef).
+
+<a id="get_registry_scanning_configuration"></a>
 
 ### get_registry_scanning_configuration
 
@@ -666,6 +729,8 @@ Boto3 documentation:
 
 Returns
 [GetRegistryScanningConfigurationResponseTypeDef](./type_defs.md#getregistryscanningconfigurationresponsetypedef).
+
+<a id="get_repository_policy"></a>
 
 ### get_repository_policy
 
@@ -687,6 +752,8 @@ Keyword-only arguments:
 Returns
 [GetRepositoryPolicyResponseTypeDef](./type_defs.md#getrepositorypolicyresponsetypedef).
 
+<a id="initiate_layer_upload"></a>
+
 ### initiate_layer_upload
 
 Notifies Amazon ECR that you intend to upload an image layer.
@@ -706,6 +773,8 @@ Keyword-only arguments:
 
 Returns
 [InitiateLayerUploadResponseTypeDef](./type_defs.md#initiatelayeruploadresponsetypedef).
+
+<a id="list_images"></a>
 
 ### list_images
 
@@ -729,6 +798,8 @@ Keyword-only arguments:
 
 Returns [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List the tags for an Amazon ECR resource.
@@ -747,6 +818,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_image"></a>
 
 ### put_image
 
@@ -770,6 +843,8 @@ Keyword-only arguments:
 - `imageDigest`: `str`
 
 Returns [PutImageResponseTypeDef](./type_defs.md#putimageresponsetypedef).
+
+<a id="put_image_scanning_configuration"></a>
 
 ### put_image_scanning_configuration
 
@@ -795,6 +870,8 @@ Keyword-only arguments:
 Returns
 [PutImageScanningConfigurationResponseTypeDef](./type_defs.md#putimagescanningconfigurationresponsetypedef).
 
+<a id="put_image_tag_mutability"></a>
+
 ### put_image_tag_mutability
 
 Updates the image tag mutability settings for the specified repository.
@@ -817,6 +894,8 @@ Keyword-only arguments:
 Returns
 [PutImageTagMutabilityResponseTypeDef](./type_defs.md#putimagetagmutabilityresponsetypedef).
 
+<a id="put_lifecycle_policy"></a>
+
 ### put_lifecycle_policy
 
 Creates or updates the lifecycle policy for the specified repository.
@@ -838,6 +917,8 @@ Keyword-only arguments:
 Returns
 [PutLifecyclePolicyResponseTypeDef](./type_defs.md#putlifecyclepolicyresponsetypedef).
 
+<a id="put_registry_policy"></a>
+
 ### put_registry_policy
 
 Creates or updates the permissions policy for your registry.
@@ -856,6 +937,8 @@ Keyword-only arguments:
 
 Returns
 [PutRegistryPolicyResponseTypeDef](./type_defs.md#putregistrypolicyresponsetypedef).
+
+<a id="put_registry_scanning_configuration"></a>
 
 ### put_registry_scanning_configuration
 
@@ -879,6 +962,8 @@ Keyword-only arguments:
 Returns
 [PutRegistryScanningConfigurationResponseTypeDef](./type_defs.md#putregistryscanningconfigurationresponsetypedef).
 
+<a id="put_replication_configuration"></a>
+
 ### put_replication_configuration
 
 Creates or updates the replication configuration for a registry.
@@ -900,6 +985,8 @@ Keyword-only arguments:
 
 Returns
 [PutReplicationConfigurationResponseTypeDef](./type_defs.md#putreplicationconfigurationresponsetypedef).
+
+<a id="set_repository_policy"></a>
 
 ### set_repository_policy
 
@@ -924,6 +1011,8 @@ Keyword-only arguments:
 Returns
 [SetRepositoryPolicyResponseTypeDef](./type_defs.md#setrepositorypolicyresponsetypedef).
 
+<a id="start_image_scan"></a>
+
 ### start_image_scan
 
 Starts an image vulnerability scan.
@@ -945,6 +1034,8 @@ Keyword-only arguments:
 
 Returns
 [StartImageScanResponseTypeDef](./type_defs.md#startimagescanresponsetypedef).
+
+<a id="start_lifecycle_policy_preview"></a>
 
 ### start_lifecycle_policy_preview
 
@@ -968,6 +1059,8 @@ Keyword-only arguments:
 Returns
 [StartLifecyclePolicyPreviewResponseTypeDef](./type_defs.md#startlifecyclepolicypreviewresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds specified tags to a resource with the specified ARN.
@@ -987,6 +1080,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes specified tags from a resource.
@@ -1005,6 +1100,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="upload_layer_part"></a>
 
 ### upload_layer_part
 
@@ -1031,6 +1128,8 @@ Keyword-only arguments:
 Returns
 [UploadLayerPartResponseTypeDef](./type_defs.md#uploadlayerpartresponsetypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("ecr").get_paginator` method with overloads.
@@ -1047,6 +1146,8 @@ Type annotations for `boto3.client("ecr").get_paginator` method with overloads.
   [GetLifecyclePolicyPreviewPaginator](./paginators.md#getlifecyclepolicypreviewpaginator)
 - `client.get_paginator("list_images")` ->
   [ListImagesPaginator](./paginators.md#listimagespaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

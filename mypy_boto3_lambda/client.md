@@ -1,3 +1,5 @@
+<a id="lambdaclient-for-boto3-lambda-module"></a>
+
 # LambdaClient for boto3 Lambda module
 
 > [Index](..) > [Lambda](.) > LambdaClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
 type annotations stubs module
-[mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
+[mypy-boto3-lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
 - [LambdaClient for boto3 Lambda module](#lambdaclient-for-boto3-lambda-module)
   - [LambdaClient](#lambdaclient)
@@ -75,6 +77,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="lambdaclient"></a>
+
 ## LambdaClient
 
 Type annotations for `boto3.client("lambda")`
@@ -82,14 +86,17 @@ Type annotations for `boto3.client("lambda")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_lambda.client import LambdaClient
 
 def get_lambda_client() -> LambdaClient:
-    return boto3.client("lambda")
+    return Session().client("lambda")
 ```
 
 Boto3 documentation:
 [Lambda.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -141,7 +148,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnsupportedMediaTypeException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -153,6 +164,8 @@ Boto3 documentation:
 [Lambda.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_layer_version_permission"></a>
 
 ### add_layer_version_permission
 
@@ -180,6 +193,8 @@ Keyword-only arguments:
 
 Returns
 [AddLayerVersionPermissionResponseTypeDef](./type_defs.md#addlayerversionpermissionresponsetypedef).
+
+<a id="add_permission"></a>
 
 ### add_permission
 
@@ -209,6 +224,8 @@ Keyword-only arguments:
 Returns
 [AddPermissionResponseTypeDef](./type_defs.md#addpermissionresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -223,6 +240,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_alias"></a>
 
 ### create_alias
 
@@ -249,6 +268,8 @@ Keyword-only arguments:
 Returns
 [AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef).
 
+<a id="create_code_signing_config"></a>
+
 ### create_code_signing_config
 
 Creates a code signing configuration.
@@ -273,6 +294,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCodeSigningConfigResponseTypeDef](./type_defs.md#createcodesigningconfigresponsetypedef).
+
+<a id="create_event_source_mapping"></a>
 
 ### create_event_source_mapping
 
@@ -318,6 +341,8 @@ Keyword-only arguments:
 Returns
 [EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
 
+<a id="create_function"></a>
+
 ### create_function
 
 Creates a Lambda function.
@@ -361,6 +386,8 @@ Keyword-only arguments:
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
 
+<a id="delete_alias"></a>
+
 ### delete_alias
 
 Deletes a Lambda function
@@ -380,6 +407,8 @@ Keyword-only arguments:
 - `FunctionName`: `str` *(required)*
 - `Name`: `str` *(required)*
 
+<a id="delete_code_signing_config"></a>
+
 ### delete_code_signing_config
 
 Deletes the code signing configuration.
@@ -398,6 +427,8 @@ Keyword-only arguments:
 - `CodeSigningConfigArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_event_source_mapping"></a>
 
 ### delete_event_source_mapping
 
@@ -421,6 +452,8 @@ Keyword-only arguments:
 Returns
 [EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
 
+<a id="delete_function"></a>
+
 ### delete_function
 
 Deletes a Lambda function.
@@ -437,6 +470,8 @@ Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
+
+<a id="delete_function_code_signing_config"></a>
 
 ### delete_function_code_signing_config
 
@@ -455,6 +490,8 @@ Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 
+<a id="delete_function_concurrency"></a>
+
 ### delete_function_concurrency
 
 Removes a concurrent execution limit from a function.
@@ -471,6 +508,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
+
+<a id="delete_function_event_invoke_config"></a>
 
 ### delete_function_event_invoke_config
 
@@ -491,6 +530,8 @@ Keyword-only arguments:
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
 
+<a id="delete_layer_version"></a>
+
 ### delete_layer_version
 
 Deletes a version of an
@@ -508,6 +549,8 @@ Keyword-only arguments:
 
 - `LayerName`: `str` *(required)*
 - `VersionNumber`: `int` *(required)*
+
+<a id="delete_provisioned_concurrency_config"></a>
 
 ### delete_provisioned_concurrency_config
 
@@ -527,6 +570,8 @@ Keyword-only arguments:
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str` *(required)*
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -545,6 +590,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_account_settings"></a>
+
 ### get_account_settings
 
 Retrieves details about your account's
@@ -558,6 +605,8 @@ Boto3 documentation:
 
 Returns
 [GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef).
+
+<a id="get_alias"></a>
 
 ### get_alias
 
@@ -581,6 +630,8 @@ Keyword-only arguments:
 Returns
 [AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef).
 
+<a id="get_code_signing_config"></a>
+
 ### get_code_signing_config
 
 Returns information about the specified code signing configuration.
@@ -600,6 +651,8 @@ Keyword-only arguments:
 Returns
 [GetCodeSigningConfigResponseTypeDef](./type_defs.md#getcodesigningconfigresponsetypedef).
 
+<a id="get_event_source_mapping"></a>
+
 ### get_event_source_mapping
 
 Returns details about an event source mapping.
@@ -618,6 +671,8 @@ Keyword-only arguments:
 
 Returns
 [EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
+
+<a id="get_function"></a>
 
 ### get_function
 
@@ -640,6 +695,8 @@ Keyword-only arguments:
 Returns
 [GetFunctionResponseTypeDef](./type_defs.md#getfunctionresponsetypedef).
 
+<a id="get_function_code_signing_config"></a>
+
 ### get_function_code_signing_config
 
 Returns the code signing configuration for the specified function.
@@ -660,6 +717,8 @@ Keyword-only arguments:
 Returns
 [GetFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#getfunctioncodesigningconfigresponsetypedef).
 
+<a id="get_function_concurrency"></a>
+
 ### get_function_concurrency
 
 Returns details about the reserved concurrency configuration for a function.
@@ -678,6 +737,8 @@ Keyword-only arguments:
 
 Returns
 [GetFunctionConcurrencyResponseTypeDef](./type_defs.md#getfunctionconcurrencyresponsetypedef).
+
+<a id="get_function_configuration"></a>
 
 ### get_function_configuration
 
@@ -699,6 +760,8 @@ Keyword-only arguments:
 
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
+
+<a id="get_function_event_invoke_config"></a>
 
 ### get_function_event_invoke_config
 
@@ -722,6 +785,8 @@ Keyword-only arguments:
 Returns
 [FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef).
 
+<a id="get_layer_version"></a>
+
 ### get_layer_version
 
 Returns information about a version of an
@@ -744,6 +809,8 @@ Keyword-only arguments:
 Returns
 [GetLayerVersionResponseTypeDef](./type_defs.md#getlayerversionresponsetypedef).
 
+<a id="get_layer_version_by_arn"></a>
+
 ### get_layer_version_by_arn
 
 Returns information about a version of an
@@ -764,6 +831,8 @@ Keyword-only arguments:
 
 Returns
 [GetLayerVersionResponseTypeDef](./type_defs.md#getlayerversionresponsetypedef).
+
+<a id="get_layer_version_policy"></a>
 
 ### get_layer_version_policy
 
@@ -786,6 +855,8 @@ Keyword-only arguments:
 Returns
 [GetLayerVersionPolicyResponseTypeDef](./type_defs.md#getlayerversionpolicyresponsetypedef).
 
+<a id="get_policy"></a>
+
 ### get_policy
 
 Returns the \[resource-based IAM
@@ -806,6 +877,8 @@ Keyword-only arguments:
 - `Qualifier`: `str`
 
 Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+
+<a id="get_provisioned_concurrency_config"></a>
 
 ### get_provisioned_concurrency_config
 
@@ -828,6 +901,8 @@ Keyword-only arguments:
 
 Returns
 [GetProvisionedConcurrencyConfigResponseTypeDef](./type_defs.md#getprovisionedconcurrencyconfigresponsetypedef).
+
+<a id="invoke"></a>
 
 ### invoke
 
@@ -852,6 +927,8 @@ Keyword-only arguments:
 
 Returns [InvocationResponseTypeDef](./type_defs.md#invocationresponsetypedef).
 
+<a id="invoke_async"></a>
+
 ### invoke_async
 
 .
@@ -872,6 +949,8 @@ Keyword-only arguments:
 
 Returns
 [InvokeAsyncResponseTypeDef](./type_defs.md#invokeasyncresponsetypedef).
+
+<a id="list_aliases"></a>
 
 ### list_aliases
 
@@ -897,6 +976,8 @@ Keyword-only arguments:
 Returns
 [ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
 
+<a id="list_code_signing_configs"></a>
+
 ### list_code_signing_configs
 
 Returns a list of \[code signing
@@ -918,6 +999,8 @@ Keyword-only arguments:
 
 Returns
 [ListCodeSigningConfigsResponseTypeDef](./type_defs.md#listcodesigningconfigsresponsetypedef).
+
+<a id="list_event_source_mappings"></a>
 
 ### list_event_source_mappings
 
@@ -942,6 +1025,8 @@ Keyword-only arguments:
 Returns
 [ListEventSourceMappingsResponseTypeDef](./type_defs.md#listeventsourcemappingsresponsetypedef).
 
+<a id="list_function_event_invoke_configs"></a>
+
 ### list_function_event_invoke_configs
 
 Retrieves a list of configurations for asynchronous invocation for a function.
@@ -963,6 +1048,8 @@ Keyword-only arguments:
 
 Returns
 [ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef).
+
+<a id="list_functions"></a>
 
 ### list_functions
 
@@ -988,6 +1075,8 @@ Keyword-only arguments:
 Returns
 [ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef).
 
+<a id="list_functions_by_code_signing_config"></a>
+
 ### list_functions_by_code_signing_config
 
 List the functions that use the specified code signing configuration.
@@ -1009,6 +1098,8 @@ Keyword-only arguments:
 
 Returns
 [ListFunctionsByCodeSigningConfigResponseTypeDef](./type_defs.md#listfunctionsbycodesigningconfigresponsetypedef).
+
+<a id="list_layer_versions"></a>
 
 ### list_layer_versions
 
@@ -1034,6 +1125,8 @@ Keyword-only arguments:
 Returns
 [ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef).
 
+<a id="list_layers"></a>
+
 ### list_layers
 
 Lists \[Lambda
@@ -1057,6 +1150,8 @@ Keyword-only arguments:
 
 Returns [ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef).
 
+<a id="list_provisioned_concurrency_configs"></a>
+
 ### list_provisioned_concurrency_configs
 
 Retrieves a list of provisioned concurrency configurations for a function.
@@ -1079,6 +1174,8 @@ Keyword-only arguments:
 Returns
 [ListProvisionedConcurrencyConfigsResponseTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsresponsetypedef).
 
+<a id="list_tags"></a>
+
 ### list_tags
 
 Returns a function's
@@ -1097,6 +1194,8 @@ Keyword-only arguments:
 - `Resource`: `str` *(required)*
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+
+<a id="list_versions_by_function"></a>
 
 ### list_versions_by_function
 
@@ -1120,6 +1219,8 @@ Keyword-only arguments:
 
 Returns
 [ListVersionsByFunctionResponseTypeDef](./type_defs.md#listversionsbyfunctionresponsetypedef).
+
+<a id="publish_layer_version"></a>
 
 ### publish_layer_version
 
@@ -1150,6 +1251,8 @@ Keyword-only arguments:
 Returns
 [PublishLayerVersionResponseTypeDef](./type_defs.md#publishlayerversionresponsetypedef).
 
+<a id="publish_version"></a>
+
 ### publish_version
 
 Creates a \[version\](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
@@ -1173,6 +1276,8 @@ Keyword-only arguments:
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
 
+<a id="put_function_code_signing_config"></a>
+
 ### put_function_code_signing_config
 
 Update the code signing configuration for the function.
@@ -1194,6 +1299,8 @@ Keyword-only arguments:
 Returns
 [PutFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#putfunctioncodesigningconfigresponsetypedef).
 
+<a id="put_function_concurrency"></a>
+
 ### put_function_concurrency
 
 Sets the maximum number of simultaneous executions for a function, and reserves
@@ -1214,6 +1321,8 @@ Keyword-only arguments:
 
 Returns
 [ConcurrencyResponseMetadataTypeDef](./type_defs.md#concurrencyresponsemetadatatypedef).
+
+<a id="put_function_event_invoke_config"></a>
 
 ### put_function_event_invoke_config
 
@@ -1242,6 +1351,8 @@ Keyword-only arguments:
 Returns
 [FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef).
 
+<a id="put_provisioned_concurrency_config"></a>
+
 ### put_provisioned_concurrency_config
 
 Adds a provisioned concurrency configuration to a function's alias or version.
@@ -1264,6 +1375,8 @@ Keyword-only arguments:
 Returns
 [PutProvisionedConcurrencyConfigResponseTypeDef](./type_defs.md#putprovisionedconcurrencyconfigresponsetypedef).
 
+<a id="remove_layer_version_permission"></a>
+
 ### remove_layer_version_permission
 
 Removes a statement from the permissions policy for a version of an
@@ -1285,6 +1398,8 @@ Keyword-only arguments:
 - `StatementId`: `str` *(required)*
 - `RevisionId`: `str`
 
+<a id="remove_permission"></a>
+
 ### remove_permission
 
 Revokes function-use permission from an Amazon Web Services service or another
@@ -1305,6 +1420,8 @@ Keyword-only arguments:
 - `Qualifier`: `str`
 - `RevisionId`: `str`
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds [tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html)\_ to a
@@ -1323,6 +1440,8 @@ Keyword-only arguments:
 - `Resource`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes [tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html)\_
@@ -1340,6 +1459,8 @@ Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_alias"></a>
 
 ### update_alias
 
@@ -1368,6 +1489,8 @@ Keyword-only arguments:
 Returns
 [AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef).
 
+<a id="update_code_signing_config"></a>
+
 ### update_code_signing_config
 
 Update the code signing configuration.
@@ -1392,6 +1515,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateCodeSigningConfigResponseTypeDef](./type_defs.md#updatecodesigningconfigresponsetypedef).
+
+<a id="update_event_source_mapping"></a>
 
 ### update_event_source_mapping
 
@@ -1430,6 +1555,8 @@ Keyword-only arguments:
 Returns
 [EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
 
+<a id="update_function_code"></a>
+
 ### update_function_code
 
 Updates a Lambda function's code.
@@ -1458,6 +1585,8 @@ Keyword-only arguments:
 
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
+
+<a id="update_function_configuration"></a>
 
 ### update_function_configuration
 
@@ -1496,6 +1625,8 @@ Keyword-only arguments:
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
 
+<a id="update_function_event_invoke_config"></a>
+
 ### update_function_event_invoke_config
 
 Updates the configuration for asynchronous invocation for a function, version,
@@ -1522,6 +1653,8 @@ Keyword-only arguments:
 Returns
 [FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("lambda").get_paginator` method with
@@ -1547,6 +1680,8 @@ overloads.
   [ListProvisionedConcurrencyConfigsPaginator](./paginators.md#listprovisionedconcurrencyconfigspaginator)
 - `client.get_paginator("list_versions_by_function")` ->
   [ListVersionsByFunctionPaginator](./paginators.md#listversionsbyfunctionpaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

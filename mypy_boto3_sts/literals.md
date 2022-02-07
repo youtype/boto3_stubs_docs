@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-sts-module"></a>
+
 # Literals for boto3 STS module
 
 > [Index](..) > [STS](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
 type annotations stubs module
-[mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
+[mypy-boto3-sts](https://pypi.org/project/mypy-boto3-sts/).
 
 - [Literals for boto3 STS module](#literals-for-boto3-sts-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

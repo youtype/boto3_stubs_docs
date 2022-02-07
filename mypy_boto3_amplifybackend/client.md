@@ -1,3 +1,5 @@
+<a id="amplifybackendclient-for-boto3-amplifybackend-module"></a>
+
 # AmplifyBackendClient for boto3 AmplifyBackend module
 
 > [Index](..) > [AmplifyBackend](.) > AmplifyBackendClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
 type annotations stubs module
-[mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
+[mypy-boto3-amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
 - [AmplifyBackendClient for boto3 AmplifyBackend module](#amplifybackendclient-for-boto3-amplifybackend-module)
   - [AmplifyBackendClient](#amplifybackendclient)
@@ -47,6 +49,8 @@ type annotations stubs module
     - [update_backend_storage](#update_backend_storage)
     - [get_paginator](#get_paginator)
 
+<a id="amplifybackendclient"></a>
+
 ## AmplifyBackendClient
 
 Type annotations for `boto3.client("amplifybackend")`
@@ -54,14 +58,17 @@ Type annotations for `boto3.client("amplifybackend")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_amplifybackend.client import AmplifyBackendClient
 
 def get_amplifybackend_client() -> AmplifyBackendClient:
-    return boto3.client("amplifybackend")
+    return Session().client("amplifybackend")
 ```
 
 Boto3 documentation:
 [AmplifyBackend.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -83,7 +90,11 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -95,6 +106,8 @@ Boto3 documentation:
 [AmplifyBackend.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -110,6 +123,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="clone_backend"></a>
 
 ### clone_backend
 
@@ -131,6 +146,8 @@ Keyword-only arguments:
 
 Returns
 [CloneBackendResponseTypeDef](./type_defs.md#clonebackendresponsetypedef).
+
+<a id="create_backend"></a>
 
 ### create_backend
 
@@ -154,6 +171,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBackendResponseTypeDef](./type_defs.md#createbackendresponsetypedef).
+
+<a id="create_backend_api"></a>
 
 ### create_backend_api
 
@@ -180,6 +199,8 @@ Keyword-only arguments:
 Returns
 [CreateBackendAPIResponseTypeDef](./type_defs.md#createbackendapiresponsetypedef).
 
+<a id="create_backend_auth"></a>
+
 ### create_backend_auth
 
 Creates a new backend authentication resource.
@@ -205,6 +226,8 @@ Keyword-only arguments:
 Returns
 [CreateBackendAuthResponseTypeDef](./type_defs.md#createbackendauthresponsetypedef).
 
+<a id="create_backend_config"></a>
+
 ### create_backend_config
 
 Creates a config object for a backend.
@@ -225,6 +248,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBackendConfigResponseTypeDef](./type_defs.md#createbackendconfigresponsetypedef).
+
+<a id="create_backend_storage"></a>
 
 ### create_backend_storage
 
@@ -251,6 +276,8 @@ Keyword-only arguments:
 Returns
 [CreateBackendStorageResponseTypeDef](./type_defs.md#createbackendstorageresponsetypedef).
 
+<a id="create_token"></a>
+
 ### create_token
 
 Generates a one-time challenge code to authenticate a user into your Amplify
@@ -271,6 +298,8 @@ Keyword-only arguments:
 Returns
 [CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
 
+<a id="delete_backend"></a>
+
 ### delete_backend
 
 Removes an existing environment from your Amplify project.
@@ -290,6 +319,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteBackendResponseTypeDef](./type_defs.md#deletebackendresponsetypedef).
+
+<a id="delete_backend_api"></a>
 
 ### delete_backend_api
 
@@ -315,6 +346,8 @@ Keyword-only arguments:
 Returns
 [DeleteBackendAPIResponseTypeDef](./type_defs.md#deletebackendapiresponsetypedef).
 
+<a id="delete_backend_auth"></a>
+
 ### delete_backend_auth
 
 Deletes an existing backend authentication resource.
@@ -336,6 +369,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteBackendAuthResponseTypeDef](./type_defs.md#deletebackendauthresponsetypedef).
+
+<a id="delete_backend_storage"></a>
 
 ### delete_backend_storage
 
@@ -361,6 +396,8 @@ Keyword-only arguments:
 Returns
 [DeleteBackendStorageResponseTypeDef](./type_defs.md#deletebackendstorageresponsetypedef).
 
+<a id="delete_token"></a>
+
 ### delete_token
 
 Deletes the challenge token based on the given appId and sessionId.
@@ -380,6 +417,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteTokenResponseTypeDef](./type_defs.md#deletetokenresponsetypedef).
+
+<a id="generate_backend_api_models"></a>
 
 ### generate_backend_api_models
 
@@ -403,6 +442,8 @@ Keyword-only arguments:
 Returns
 [GenerateBackendAPIModelsResponseTypeDef](./type_defs.md#generatebackendapimodelsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -422,6 +463,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_backend"></a>
+
 ### get_backend
 
 Provides project-level details for your Amplify UI project.
@@ -440,6 +483,8 @@ Keyword-only arguments:
 - `BackendEnvironmentName`: `str`
 
 Returns [GetBackendResponseTypeDef](./type_defs.md#getbackendresponsetypedef).
+
+<a id="get_backend_api"></a>
 
 ### get_backend_api
 
@@ -464,6 +509,8 @@ Keyword-only arguments:
 Returns
 [GetBackendAPIResponseTypeDef](./type_defs.md#getbackendapiresponsetypedef).
 
+<a id="get_backend_api_models"></a>
+
 ### get_backend_api_models
 
 Generates a model schema for existing backend API resource.
@@ -486,6 +533,8 @@ Keyword-only arguments:
 Returns
 [GetBackendAPIModelsResponseTypeDef](./type_defs.md#getbackendapimodelsresponsetypedef).
 
+<a id="get_backend_auth"></a>
+
 ### get_backend_auth
 
 Gets a backend auth details.
@@ -507,6 +556,8 @@ Keyword-only arguments:
 Returns
 [GetBackendAuthResponseTypeDef](./type_defs.md#getbackendauthresponsetypedef).
 
+<a id="get_backend_job"></a>
+
 ### get_backend_job
 
 Returns information about a specific job.
@@ -527,6 +578,8 @@ Keyword-only arguments:
 
 Returns
 [GetBackendJobResponseTypeDef](./type_defs.md#getbackendjobresponsetypedef).
+
+<a id="get_backend_storage"></a>
 
 ### get_backend_storage
 
@@ -550,6 +603,8 @@ Keyword-only arguments:
 Returns
 [GetBackendStorageResponseTypeDef](./type_defs.md#getbackendstorageresponsetypedef).
 
+<a id="get_token"></a>
+
 ### get_token
 
 Gets the challenge token based on the given appId and sessionId.
@@ -568,6 +623,8 @@ Keyword-only arguments:
 - `SessionId`: `str` *(required)*
 
 Returns [GetTokenResponseTypeDef](./type_defs.md#gettokenresponsetypedef).
+
+<a id="import_backend_auth"></a>
 
 ### import_backend_auth
 
@@ -594,6 +651,8 @@ Keyword-only arguments:
 Returns
 [ImportBackendAuthResponseTypeDef](./type_defs.md#importbackendauthresponsetypedef).
 
+<a id="import_backend_storage"></a>
+
 ### import_backend_storage
 
 Imports an existing backend storage resource.
@@ -617,6 +676,8 @@ Keyword-only arguments:
 
 Returns
 [ImportBackendStorageResponseTypeDef](./type_defs.md#importbackendstorageresponsetypedef).
+
+<a id="list_backend_jobs"></a>
 
 ### list_backend_jobs
 
@@ -643,6 +704,8 @@ Keyword-only arguments:
 Returns
 [ListBackendJobsResponseTypeDef](./type_defs.md#listbackendjobsresponsetypedef).
 
+<a id="list_s3_buckets"></a>
+
 ### list_s3_buckets
 
 The list of S3 buckets in your account.
@@ -661,6 +724,8 @@ Keyword-only arguments:
 
 Returns
 [ListS3BucketsResponseTypeDef](./type_defs.md#lists3bucketsresponsetypedef).
+
+<a id="remove_all_backends"></a>
 
 ### remove_all_backends
 
@@ -683,6 +748,8 @@ Keyword-only arguments:
 Returns
 [RemoveAllBackendsResponseTypeDef](./type_defs.md#removeallbackendsresponsetypedef).
 
+<a id="remove_backend_config"></a>
+
 ### remove_backend_config
 
 Removes the AWS resources required to access the Amplify Admin UI.
@@ -702,6 +769,8 @@ Keyword-only arguments:
 
 Returns
 [RemoveBackendConfigResponseTypeDef](./type_defs.md#removebackendconfigresponsetypedef).
+
+<a id="update_backend_api"></a>
 
 ### update_backend_api
 
@@ -726,6 +795,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateBackendAPIResponseTypeDef](./type_defs.md#updatebackendapiresponsetypedef).
+
+<a id="update_backend_auth"></a>
 
 ### update_backend_auth
 
@@ -752,6 +823,8 @@ Keyword-only arguments:
 Returns
 [UpdateBackendAuthResponseTypeDef](./type_defs.md#updatebackendauthresponsetypedef).
 
+<a id="update_backend_config"></a>
+
 ### update_backend_config
 
 Updates the AWS resources required to access the Amplify Admin UI.
@@ -773,6 +846,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateBackendConfigResponseTypeDef](./type_defs.md#updatebackendconfigresponsetypedef).
+
+<a id="update_backend_job"></a>
 
 ### update_backend_job
 
@@ -798,6 +873,8 @@ Keyword-only arguments:
 Returns
 [UpdateBackendJobResponseTypeDef](./type_defs.md#updatebackendjobresponsetypedef).
 
+<a id="update_backend_storage"></a>
+
 ### update_backend_storage
 
 Updates an existing backend storage resource.
@@ -822,6 +899,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateBackendStorageResponseTypeDef](./type_defs.md#updatebackendstorageresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

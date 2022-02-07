@@ -1,3 +1,5 @@
+<a id="backupgatewayclient-for-boto3-backupgateway-module"></a>
+
 # BackupGatewayClient for boto3 BackupGateway module
 
 > [Index](..) > [BackupGateway](.) > BackupGatewayClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [BackupGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway)
 type annotations stubs module
-[mypy_boto3_backup_gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
+[mypy-boto3-backup-gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
 
 - [BackupGatewayClient for boto3 BackupGateway module](#backupgatewayclient-for-boto3-backupgateway-module)
   - [BackupGatewayClient](#backupgatewayclient)
@@ -32,6 +34,8 @@ type annotations stubs module
     - [update_hypervisor](#update_hypervisor)
     - [get_paginator](#get_paginator)
 
+<a id="backupgatewayclient"></a>
+
 ## BackupGatewayClient
 
 Type annotations for `boto3.client("backup-gateway")`
@@ -39,14 +43,17 @@ Type annotations for `boto3.client("backup-gateway")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_backup_gateway.client import BackupGatewayClient
 
 def get_backup-gateway_client() -> BackupGatewayClient:
-    return boto3.client("backup-gateway")
+    return Session().client("backup-gateway")
 ```
 
 Boto3 documentation:
 [BackupGateway.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -69,7 +76,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -81,6 +92,8 @@ Boto3 documentation:
 [BackupGateway.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_gateway_to_server"></a>
 
 ### associate_gateway_to_server
 
@@ -103,6 +116,8 @@ Keyword-only arguments:
 Returns
 [AssociateGatewayToServerOutputTypeDef](./type_defs.md#associategatewaytoserveroutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -117,6 +132,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_gateway"></a>
 
 ### create_gateway
 
@@ -141,6 +158,8 @@ Keyword-only arguments:
 Returns
 [CreateGatewayOutputTypeDef](./type_defs.md#creategatewayoutputtypedef).
 
+<a id="delete_gateway"></a>
+
 ### delete_gateway
 
 Deletes a backup gateway.
@@ -160,6 +179,8 @@ Keyword-only arguments:
 Returns
 [DeleteGatewayOutputTypeDef](./type_defs.md#deletegatewayoutputtypedef).
 
+<a id="delete_hypervisor"></a>
+
 ### delete_hypervisor
 
 Deletes a hypervisor.
@@ -178,6 +199,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteHypervisorOutputTypeDef](./type_defs.md#deletehypervisoroutputtypedef).
+
+<a id="disassociate_gateway_from_server"></a>
 
 ### disassociate_gateway_from_server
 
@@ -199,6 +222,8 @@ Keyword-only arguments:
 Returns
 [DisassociateGatewayFromServerOutputTypeDef](./type_defs.md#disassociategatewayfromserveroutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -217,6 +242,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="import_hypervisor_configuration"></a>
 
 ### import_hypervisor_configuration
 
@@ -243,6 +270,8 @@ Keyword-only arguments:
 Returns
 [ImportHypervisorConfigurationOutputTypeDef](./type_defs.md#importhypervisorconfigurationoutputtypedef).
 
+<a id="list_gateways"></a>
+
 ### list_gateways
 
 Lists backup gateways owned by an Amazon Web Services account in an Amazon Web
@@ -263,6 +292,8 @@ Keyword-only arguments:
 
 Returns [ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef).
 
+<a id="list_hypervisors"></a>
+
 ### list_hypervisors
 
 Lists your hypervisors.
@@ -282,6 +313,8 @@ Keyword-only arguments:
 
 Returns
 [ListHypervisorsOutputTypeDef](./type_defs.md#listhypervisorsoutputtypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -304,6 +337,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
+<a id="list_virtual_machines"></a>
+
 ### list_virtual_machines
 
 Lists your virtual machines.
@@ -324,6 +359,8 @@ Keyword-only arguments:
 
 Returns
 [ListVirtualMachinesOutputTypeDef](./type_defs.md#listvirtualmachinesoutputtypedef).
+
+<a id="put_maintenance_start_time"></a>
 
 ### put_maintenance_start_time
 
@@ -349,6 +386,8 @@ Keyword-only arguments:
 Returns
 [PutMaintenanceStartTimeOutputTypeDef](./type_defs.md#putmaintenancestarttimeoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Tag the resource.
@@ -367,6 +406,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns [TagResourceOutputTypeDef](./type_defs.md#tagresourceoutputtypedef).
+
+<a id="test_hypervisor_configuration"></a>
 
 ### test_hypervisor_configuration
 
@@ -391,6 +432,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from the resource.
@@ -410,6 +453,8 @@ Keyword-only arguments:
 
 Returns
 [UntagResourceOutputTypeDef](./type_defs.md#untagresourceoutputtypedef).
+
+<a id="update_gateway_information"></a>
 
 ### update_gateway_information
 
@@ -432,6 +477,8 @@ Keyword-only arguments:
 Returns
 [UpdateGatewayInformationOutputTypeDef](./type_defs.md#updategatewayinformationoutputtypedef).
 
+<a id="update_hypervisor"></a>
+
 ### update_hypervisor
 
 Updates a hypervisor metadata, including its host, username, and password.
@@ -453,6 +500,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateHypervisorOutputTypeDef](./type_defs.md#updatehypervisoroutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

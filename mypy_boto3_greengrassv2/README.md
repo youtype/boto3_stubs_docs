@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-greengrassv2-module"></a>
+
 # Type annotations for boto3 GreengrassV2 module
 
 > [Index](..) > GreengrassV2
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
 type annotations stubs module
-[mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
+[mypy-boto3-greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[greengrassv2]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[greengrassv2]'
+
+# standalone installation
 pip install mypy-boto3-greengrassv2
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-greengrassv2
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="greengrassv2client"></a>
+
 ## GreengrassV2Client
 
 Type annotations for `boto3.client("greengrassv2")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_greengrassv2.client import GreengrassV2Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -65,6 +79,8 @@ from mypy_boto3_greengrassv2.client import GreengrassV2Client
 - [untag_resource](./client.md#untag_resource)
 - [update_connectivity_info](./client.md#update_connectivity_info)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 GreengrassV2Client [exceptions](./client.md#exceptions)
@@ -79,6 +95,8 @@ GreengrassV2Client [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -87,7 +105,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_greengrassv2.paginators import ListClientDevicesAssociatedWithCoreDevicePaginator, ...
+from mypy_boto3_greengrassv2.paginator import ListClientDevicesAssociatedWithCoreDevicePaginator, ...
 ```
 
 - [ListClientDevicesAssociatedWithCoreDevicePaginator](./paginators.md#listclientdevicesassociatedwithcoredevicepaginator)
@@ -97,6 +115,8 @@ from mypy_boto3_greengrassv2.paginators import ListClientDevicesAssociatedWithCo
 - [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
 - [ListEffectiveDeploymentsPaginator](./paginators.md#listeffectivedeploymentspaginator)
 - [ListInstalledComponentsPaginator](./paginators.md#listinstalledcomponentspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -134,6 +154,8 @@ from mypy_boto3_greengrassv2.literals import CloudComponentStateType, ...
 - [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-route53-module"></a>
+
 # Type annotations for boto3 Route53 module
 
 > [Index](..) > Route53
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
 type annotations stubs module
-[mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
+[mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[route53]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[route53]'
+
+# standalone installation
 pip install mypy-boto3-route53
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-route53
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="route53client"></a>
+
 ## Route53Client
 
 Type annotations for `boto3.client("route53")` as [Route53Client](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_route53.client import Route53Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -102,6 +116,8 @@ from mypy_boto3_route53.client import Route53Client
 - [update_traffic_policy_comment](./client.md#update_traffic_policy_comment)
 - [update_traffic_policy_instance](./client.md#update_traffic_policy_instance)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 Route53Client [exceptions](./client.md#exceptions)
@@ -171,6 +187,8 @@ Route53Client [exceptions](./client.md#exceptions)
 - VPCAssociationAuthorizationNotFound
 - VPCAssociationNotFound
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -179,7 +197,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_route53.paginators import ListHealthChecksPaginator, ...
+from mypy_boto3_route53.paginator import ListHealthChecksPaginator, ...
 ```
 
 - [ListHealthChecksPaginator](./paginators.md#listhealthcheckspaginator)
@@ -187,6 +205,8 @@ from mypy_boto3_route53.paginators import ListHealthChecksPaginator, ...
 - [ListQueryLoggingConfigsPaginator](./paginators.md#listqueryloggingconfigspaginator)
 - [ListResourceRecordSetsPaginator](./paginators.md#listresourcerecordsetspaginator)
 - [ListVPCAssociationAuthorizationsPaginator](./paginators.md#listvpcassociationauthorizationspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -196,10 +216,12 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_route53.waiters import ResourceRecordSetsChangedWaiter, ...
+from mypy_boto3_route53.waiter import ResourceRecordSetsChangedWaiter, ...
 ```
 
 - [ResourceRecordSetsChangedWaiter](./waiters.md#resourcerecordsetschangedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -237,6 +259,8 @@ from mypy_boto3_route53.literals import AccountLimitTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

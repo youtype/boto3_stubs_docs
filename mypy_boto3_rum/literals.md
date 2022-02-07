@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloudwatchrum-module"></a>
+
 # Literals for boto3 CloudWatchRUM module
 
 > [Index](..) > [CloudWatchRUM](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
 type annotations stubs module
-[mypy_boto3_rum](https://pypi.org/project/mypy-boto3-rum/).
+[mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
 
 - [Literals for boto3 CloudWatchRUM module](#literals-for-boto3-cloudwatchrum-module)
   - [GetAppMonitorDataPaginatorName](#getappmonitordatapaginatorname)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [TelemetryType](#telemetrytype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="getappmonitordatapaginatorname"></a>
 
 ## GetAppMonitorDataPaginatorName
 
@@ -25,6 +29,8 @@ Values:
 
 - `get_app_monitor_data`
 
+<a id="listappmonitorspaginatorname"></a>
+
 ## ListAppMonitorsPaginatorName
 
 ```python
@@ -34,6 +40,8 @@ from mypy_boto3_rum.literals import ListAppMonitorsPaginatorName
 Values:
 
 - `list_app_monitors`
+
+<a id="stateenumtype"></a>
 
 ## StateEnumType
 
@@ -47,6 +55,8 @@ Values:
 - `CREATED`
 - `DELETING`
 
+<a id="telemetrytype"></a>
+
 ## TelemetryType
 
 ```python
@@ -58,6 +68,8 @@ Values:
 - `errors`
 - `http`
 - `performance`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -366,6 +378,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

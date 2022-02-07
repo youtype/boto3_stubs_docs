@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-groundstation-module"></a>
+
 # Type annotations for boto3 GroundStation module
 
 > [Index](..) > GroundStation
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
 type annotations stubs module
-[mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+[mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[groundstation]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[groundstation]'
+
+# standalone installation
 pip install mypy-boto3-groundstation
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-groundstation
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="groundstationclient"></a>
+
 ## GroundStationClient
 
 Type annotations for `boto3.client("groundstation")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_groundstation.client import GroundStationClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -62,6 +76,8 @@ from mypy_boto3_groundstation.client import GroundStationClient
 - [update_config](./client.md#update_config)
 - [update_mission_profile](./client.md#update_mission_profile)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 GroundStationClient [exceptions](./client.md#exceptions)
@@ -72,6 +88,8 @@ GroundStationClient [exceptions](./client.md#exceptions)
 - ResourceLimitExceededException
 - ResourceNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -80,7 +98,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_groundstation.paginators import ListConfigsPaginator, ...
+from mypy_boto3_groundstation.paginator import ListConfigsPaginator, ...
 ```
 
 - [ListConfigsPaginator](./paginators.md#listconfigspaginator)
@@ -89,6 +107,8 @@ from mypy_boto3_groundstation.paginators import ListConfigsPaginator, ...
 - [ListGroundStationsPaginator](./paginators.md#listgroundstationspaginator)
 - [ListMissionProfilesPaginator](./paginators.md#listmissionprofilespaginator)
 - [ListSatellitesPaginator](./paginators.md#listsatellitespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -117,6 +137,8 @@ from mypy_boto3_groundstation.literals import AngleUnitsType, ...
 - [PolarizationType](./literals.md#polarizationtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

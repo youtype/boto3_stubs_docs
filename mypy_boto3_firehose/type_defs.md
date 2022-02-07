@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-firehose-module"></a>
+
 # Typed dictionaries for boto3 Firehose module
 
 > [Index](..) > [Firehose](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
 type annotations stubs module
-[mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
+[mypy-boto3-firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 - [Typed dictionaries for boto3 Firehose module](#typed-dictionaries-for-boto3-firehose-module)
   - [AmazonopensearchserviceBufferingHintsTypeDef](#amazonopensearchservicebufferinghintstypedef)
@@ -94,6 +96,8 @@ type annotations stubs module
   - [VpcConfigurationDescriptionTypeDef](#vpcconfigurationdescriptiontypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
 
+<a id="amazonopensearchservicebufferinghintstypedef"></a>
+
 ## AmazonopensearchserviceBufferingHintsTypeDef
 
 ```python
@@ -104,6 +108,8 @@ Optional fields:
 
 - `IntervalInSeconds`: `int`
 - `SizeInMBs`: `int`
+
+<a id="amazonopensearchservicedestinationconfigurationtypedef"></a>
 
 ## AmazonopensearchserviceDestinationConfigurationTypeDef
 
@@ -138,6 +144,8 @@ Optional fields:
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 
+<a id="amazonopensearchservicedestinationdescriptiontypedef"></a>
+
 ## AmazonopensearchserviceDestinationDescriptionTypeDef
 
 ```python
@@ -168,6 +176,8 @@ Optional fields:
 - `VpcConfigurationDescription`:
   [VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef)
 
+<a id="amazonopensearchservicedestinationupdatetypedef"></a>
+
 ## AmazonopensearchserviceDestinationUpdateTypeDef
 
 ```python
@@ -194,6 +204,8 @@ Optional fields:
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 
+<a id="amazonopensearchserviceretryoptionstypedef"></a>
+
 ## AmazonopensearchserviceRetryOptionsTypeDef
 
 ```python
@@ -203,6 +215,8 @@ from mypy_boto3_firehose.type_defs import AmazonopensearchserviceRetryOptionsTyp
 Optional fields:
 
 - `DurationInSeconds`: `int`
+
+<a id="bufferinghintstypedef"></a>
 
 ## BufferingHintsTypeDef
 
@@ -215,6 +229,8 @@ Optional fields:
 - `SizeInMBs`: `int`
 - `IntervalInSeconds`: `int`
 
+<a id="cloudwatchloggingoptionstypedef"></a>
+
 ## CloudWatchLoggingOptionsTypeDef
 
 ```python
@@ -226,6 +242,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `LogGroupName`: `str`
 - `LogStreamName`: `str`
+
+<a id="copycommandtypedef"></a>
 
 ## CopyCommandTypeDef
 
@@ -241,6 +259,8 @@ Optional fields:
 
 - `DataTableColumns`: `str`
 - `CopyOptions`: `str`
+
+<a id="createdeliverystreaminputrequesttypedef"></a>
 
 ## CreateDeliveryStreamInputRequestTypeDef
 
@@ -276,6 +296,8 @@ Optional fields:
   [HttpEndpointDestinationConfigurationTypeDef](./type_defs.md#httpendpointdestinationconfigurationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdeliverystreamoutputtypedef"></a>
+
 ## CreateDeliveryStreamOutputTypeDef
 
 ```python
@@ -287,6 +309,8 @@ Required fields:
 - `DeliveryStreamARN`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dataformatconversionconfigurationtypedef"></a>
 
 ## DataFormatConversionConfigurationTypeDef
 
@@ -304,6 +328,8 @@ Optional fields:
   [OutputFormatConfigurationTypeDef](./type_defs.md#outputformatconfigurationtypedef)
 - `Enabled`: `bool`
 
+<a id="deletedeliverystreaminputrequesttypedef"></a>
+
 ## DeleteDeliveryStreamInputRequestTypeDef
 
 ```python
@@ -317,6 +343,8 @@ Required fields:
 Optional fields:
 
 - `AllowForceDelete`: `bool`
+
+<a id="deliverystreamdescriptiontypedef"></a>
 
 ## DeliveryStreamDescriptionTypeDef
 
@@ -347,6 +375,8 @@ Optional fields:
 - `LastUpdateTimestamp`: `datetime`
 - `Source`: [SourceDescriptionTypeDef](./type_defs.md#sourcedescriptiontypedef)
 
+<a id="deliverystreamencryptionconfigurationinputtypedef"></a>
+
 ## DeliveryStreamEncryptionConfigurationInputTypeDef
 
 ```python
@@ -360,6 +390,8 @@ Required fields:
 Optional fields:
 
 - `KeyARN`: `str`
+
+<a id="deliverystreamencryptionconfigurationtypedef"></a>
 
 ## DeliveryStreamEncryptionConfigurationTypeDef
 
@@ -376,6 +408,8 @@ Optional fields:
 - `FailureDescription`:
   [FailureDescriptionTypeDef](./type_defs.md#failuredescriptiontypedef)
 
+<a id="describedeliverystreaminputrequesttypedef"></a>
+
 ## DescribeDeliveryStreamInputRequestTypeDef
 
 ```python
@@ -391,6 +425,8 @@ Optional fields:
 - `Limit`: `int`
 - `ExclusiveStartDestinationId`: `str`
 
+<a id="describedeliverystreamoutputtypedef"></a>
+
 ## DescribeDeliveryStreamOutputTypeDef
 
 ```python
@@ -404,6 +440,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deserializertypedef"></a>
+
 ## DeserializerTypeDef
 
 ```python
@@ -415,6 +453,8 @@ Optional fields:
 - `OpenXJsonSerDe`:
   [OpenXJsonSerDeTypeDef](./type_defs.md#openxjsonserdetypedef)
 - `HiveJsonSerDe`: [HiveJsonSerDeTypeDef](./type_defs.md#hivejsonserdetypedef)
+
+<a id="destinationdescriptiontypedef"></a>
 
 ## DestinationDescriptionTypeDef
 
@@ -443,6 +483,8 @@ Optional fields:
 - `HttpEndpointDestinationDescription`:
   [HttpEndpointDestinationDescriptionTypeDef](./type_defs.md#httpendpointdestinationdescriptiontypedef)
 
+<a id="dynamicpartitioningconfigurationtypedef"></a>
+
 ## DynamicPartitioningConfigurationTypeDef
 
 ```python
@@ -454,6 +496,8 @@ Optional fields:
 - `RetryOptions`: [RetryOptionsTypeDef](./type_defs.md#retryoptionstypedef)
 - `Enabled`: `bool`
 
+<a id="elasticsearchbufferinghintstypedef"></a>
+
 ## ElasticsearchBufferingHintsTypeDef
 
 ```python
@@ -464,6 +508,8 @@ Optional fields:
 
 - `IntervalInSeconds`: `int`
 - `SizeInMBs`: `int`
+
+<a id="elasticsearchdestinationconfigurationtypedef"></a>
 
 ## ElasticsearchDestinationConfigurationTypeDef
 
@@ -498,6 +544,8 @@ Optional fields:
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 
+<a id="elasticsearchdestinationdescriptiontypedef"></a>
+
 ## ElasticsearchDestinationDescriptionTypeDef
 
 ```python
@@ -528,6 +576,8 @@ Optional fields:
 - `VpcConfigurationDescription`:
   [VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef)
 
+<a id="elasticsearchdestinationupdatetypedef"></a>
+
 ## ElasticsearchDestinationUpdateTypeDef
 
 ```python
@@ -554,6 +604,8 @@ Optional fields:
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 
+<a id="elasticsearchretryoptionstypedef"></a>
+
 ## ElasticsearchRetryOptionsTypeDef
 
 ```python
@@ -563,6 +615,8 @@ from mypy_boto3_firehose.type_defs import ElasticsearchRetryOptionsTypeDef
 Optional fields:
 
 - `DurationInSeconds`: `int`
+
+<a id="encryptionconfigurationtypedef"></a>
 
 ## EncryptionConfigurationTypeDef
 
@@ -576,6 +630,8 @@ Optional fields:
   [NoEncryptionConfigType](./literals.md#noencryptionconfigtype))
 - `KMSEncryptionConfig`:
   [KMSEncryptionConfigTypeDef](./type_defs.md#kmsencryptionconfigtypedef)
+
+<a id="extendeds3destinationconfigurationtypedef"></a>
 
 ## ExtendedS3DestinationConfigurationTypeDef
 
@@ -610,6 +666,8 @@ Optional fields:
 - `DynamicPartitioningConfiguration`:
   [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
 
+<a id="extendeds3destinationdescriptiontypedef"></a>
+
 ## ExtendedS3DestinationDescriptionTypeDef
 
 ```python
@@ -643,6 +701,8 @@ Optional fields:
 - `DynamicPartitioningConfiguration`:
   [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
 
+<a id="extendeds3destinationupdatetypedef"></a>
+
 ## ExtendedS3DestinationUpdateTypeDef
 
 ```python
@@ -673,6 +733,8 @@ Optional fields:
 - `DynamicPartitioningConfiguration`:
   [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
 
+<a id="failuredescriptiontypedef"></a>
+
 ## FailureDescriptionTypeDef
 
 ```python
@@ -685,6 +747,8 @@ Required fields:
   [DeliveryStreamFailureTypeType](./literals.md#deliverystreamfailuretypetype)
 - `Details`: `str`
 
+<a id="hivejsonserdetypedef"></a>
+
 ## HiveJsonSerDeTypeDef
 
 ```python
@@ -694,6 +758,8 @@ from mypy_boto3_firehose.type_defs import HiveJsonSerDeTypeDef
 Optional fields:
 
 - `TimestampFormats`: `Sequence`\[`str`\]
+
+<a id="httpendpointbufferinghintstypedef"></a>
 
 ## HttpEndpointBufferingHintsTypeDef
 
@@ -706,6 +772,8 @@ Optional fields:
 - `SizeInMBs`: `int`
 - `IntervalInSeconds`: `int`
 
+<a id="httpendpointcommonattributetypedef"></a>
+
 ## HttpEndpointCommonAttributeTypeDef
 
 ```python
@@ -716,6 +784,8 @@ Required fields:
 
 - `AttributeName`: `str`
 - `AttributeValue`: `str`
+
+<a id="httpendpointconfigurationtypedef"></a>
 
 ## HttpEndpointConfigurationTypeDef
 
@@ -732,6 +802,8 @@ Optional fields:
 - `Name`: `str`
 - `AccessKey`: `str`
 
+<a id="httpendpointdescriptiontypedef"></a>
+
 ## HttpEndpointDescriptionTypeDef
 
 ```python
@@ -742,6 +814,8 @@ Optional fields:
 
 - `Url`: `str`
 - `Name`: `str`
+
+<a id="httpendpointdestinationconfigurationtypedef"></a>
 
 ## HttpEndpointDestinationConfigurationTypeDef
 
@@ -772,6 +846,8 @@ Optional fields:
 - `S3BackupMode`:
   [HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype)
 
+<a id="httpendpointdestinationdescriptiontypedef"></a>
+
 ## HttpEndpointDestinationDescriptionTypeDef
 
 ```python
@@ -797,6 +873,8 @@ Optional fields:
   [HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype)
 - `S3DestinationDescription`:
   [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
+
+<a id="httpendpointdestinationupdatetypedef"></a>
 
 ## HttpEndpointDestinationUpdateTypeDef
 
@@ -824,6 +902,8 @@ Optional fields:
 - `S3Update`:
   [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
 
+<a id="httpendpointrequestconfigurationtypedef"></a>
+
 ## HttpEndpointRequestConfigurationTypeDef
 
 ```python
@@ -836,6 +916,8 @@ Optional fields:
 - `CommonAttributes`:
   `Sequence`\[[HttpEndpointCommonAttributeTypeDef](./type_defs.md#httpendpointcommonattributetypedef)\]
 
+<a id="httpendpointretryoptionstypedef"></a>
+
 ## HttpEndpointRetryOptionsTypeDef
 
 ```python
@@ -845,6 +927,8 @@ from mypy_boto3_firehose.type_defs import HttpEndpointRetryOptionsTypeDef
 Optional fields:
 
 - `DurationInSeconds`: `int`
+
+<a id="inputformatconfigurationtypedef"></a>
 
 ## InputFormatConfigurationTypeDef
 
@@ -856,6 +940,8 @@ Optional fields:
 
 - `Deserializer`: [DeserializerTypeDef](./type_defs.md#deserializertypedef)
 
+<a id="kmsencryptionconfigtypedef"></a>
+
 ## KMSEncryptionConfigTypeDef
 
 ```python
@@ -865,6 +951,8 @@ from mypy_boto3_firehose.type_defs import KMSEncryptionConfigTypeDef
 Required fields:
 
 - `AWSKMSKeyARN`: `str`
+
+<a id="kinesisstreamsourceconfigurationtypedef"></a>
 
 ## KinesisStreamSourceConfigurationTypeDef
 
@@ -877,6 +965,8 @@ Required fields:
 - `KinesisStreamARN`: `str`
 - `RoleARN`: `str`
 
+<a id="kinesisstreamsourcedescriptiontypedef"></a>
+
 ## KinesisStreamSourceDescriptionTypeDef
 
 ```python
@@ -888,6 +978,8 @@ Optional fields:
 - `KinesisStreamARN`: `str`
 - `RoleARN`: `str`
 - `DeliveryStartTimestamp`: `datetime`
+
+<a id="listdeliverystreamsinputrequesttypedef"></a>
 
 ## ListDeliveryStreamsInputRequestTypeDef
 
@@ -902,6 +994,8 @@ Optional fields:
   [DeliveryStreamTypeType](./literals.md#deliverystreamtypetype)
 - `ExclusiveStartDeliveryStreamName`: `str`
 
+<a id="listdeliverystreamsoutputtypedef"></a>
+
 ## ListDeliveryStreamsOutputTypeDef
 
 ```python
@@ -914,6 +1008,8 @@ Required fields:
 - `HasMoreDeliveryStreams`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsfordeliverystreaminputrequesttypedef"></a>
 
 ## ListTagsForDeliveryStreamInputRequestTypeDef
 
@@ -930,6 +1026,8 @@ Optional fields:
 - `ExclusiveStartTagKey`: `str`
 - `Limit`: `int`
 
+<a id="listtagsfordeliverystreamoutputtypedef"></a>
+
 ## ListTagsForDeliveryStreamOutputTypeDef
 
 ```python
@@ -943,6 +1041,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="openxjsonserdetypedef"></a>
+
 ## OpenXJsonSerDeTypeDef
 
 ```python
@@ -954,6 +1054,8 @@ Optional fields:
 - `ConvertDotsInJsonKeysToUnderscores`: `bool`
 - `CaseInsensitive`: `bool`
 - `ColumnToJsonKeyMappings`: `Mapping`\[`str`, `str`\]
+
+<a id="orcserdetypedef"></a>
 
 ## OrcSerDeTypeDef
 
@@ -974,6 +1076,8 @@ Optional fields:
 - `DictionaryKeyThreshold`: `float`
 - `FormatVersion`: [OrcFormatVersionType](./literals.md#orcformatversiontype)
 
+<a id="outputformatconfigurationtypedef"></a>
+
 ## OutputFormatConfigurationTypeDef
 
 ```python
@@ -983,6 +1087,8 @@ from mypy_boto3_firehose.type_defs import OutputFormatConfigurationTypeDef
 Optional fields:
 
 - `Serializer`: [SerializerTypeDef](./type_defs.md#serializertypedef)
+
+<a id="parquetserdetypedef"></a>
 
 ## ParquetSerDeTypeDef
 
@@ -1000,6 +1106,8 @@ Optional fields:
 - `WriterVersion`:
   [ParquetWriterVersionType](./literals.md#parquetwriterversiontype)
 
+<a id="processingconfigurationtypedef"></a>
+
 ## ProcessingConfigurationTypeDef
 
 ```python
@@ -1012,6 +1120,8 @@ Optional fields:
 - `Processors`:
   `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
 
+<a id="processorparametertypedef"></a>
+
 ## ProcessorParameterTypeDef
 
 ```python
@@ -1023,6 +1133,8 @@ Required fields:
 - `ParameterName`:
   [ProcessorParameterNameType](./literals.md#processorparameternametype)
 - `ParameterValue`: `str`
+
+<a id="processortypedef"></a>
 
 ## ProcessorTypeDef
 
@@ -1039,6 +1151,8 @@ Optional fields:
 - `Parameters`:
   `Sequence`\[[ProcessorParameterTypeDef](./type_defs.md#processorparametertypedef)\]
 
+<a id="putrecordbatchinputrequesttypedef"></a>
+
 ## PutRecordBatchInputRequestTypeDef
 
 ```python
@@ -1049,6 +1163,8 @@ Required fields:
 
 - `DeliveryStreamName`: `str`
 - `Records`: `Sequence`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
+
+<a id="putrecordbatchoutputtypedef"></a>
 
 ## PutRecordBatchOutputTypeDef
 
@@ -1065,6 +1181,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putrecordbatchresponseentrytypedef"></a>
+
 ## PutRecordBatchResponseEntryTypeDef
 
 ```python
@@ -1077,6 +1195,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
+<a id="putrecordinputrequesttypedef"></a>
+
 ## PutRecordInputRequestTypeDef
 
 ```python
@@ -1087,6 +1207,8 @@ Required fields:
 
 - `DeliveryStreamName`: `str`
 - `Record`: [RecordTypeDef](./type_defs.md#recordtypedef)
+
+<a id="putrecordoutputtypedef"></a>
 
 ## PutRecordOutputTypeDef
 
@@ -1101,6 +1223,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="recordtypedef"></a>
+
 ## RecordTypeDef
 
 ```python
@@ -1110,6 +1234,8 @@ from mypy_boto3_firehose.type_defs import RecordTypeDef
 Required fields:
 
 - `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="redshiftdestinationconfigurationtypedef"></a>
 
 ## RedshiftDestinationConfigurationTypeDef
 
@@ -1140,6 +1266,8 @@ Optional fields:
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 
+<a id="redshiftdestinationdescriptiontypedef"></a>
+
 ## RedshiftDestinationDescriptionTypeDef
 
 ```python
@@ -1168,6 +1296,8 @@ Optional fields:
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 
+<a id="redshiftdestinationupdatetypedef"></a>
+
 ## RedshiftDestinationUpdateTypeDef
 
 ```python
@@ -1194,6 +1324,8 @@ Optional fields:
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 
+<a id="redshiftretryoptionstypedef"></a>
+
 ## RedshiftRetryOptionsTypeDef
 
 ```python
@@ -1203,6 +1335,8 @@ from mypy_boto3_firehose.type_defs import RedshiftRetryOptionsTypeDef
 Optional fields:
 
 - `DurationInSeconds`: `int`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1218,6 +1352,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retryoptionstypedef"></a>
+
 ## RetryOptionsTypeDef
 
 ```python
@@ -1227,6 +1363,8 @@ from mypy_boto3_firehose.type_defs import RetryOptionsTypeDef
 Optional fields:
 
 - `DurationInSeconds`: `int`
+
+<a id="s3destinationconfigurationtypedef"></a>
 
 ## S3DestinationConfigurationTypeDef
 
@@ -1252,6 +1390,8 @@ Optional fields:
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 
+<a id="s3destinationdescriptiontypedef"></a>
+
 ## S3DestinationDescriptionTypeDef
 
 ```python
@@ -1276,6 +1416,8 @@ Optional fields:
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 
+<a id="s3destinationupdatetypedef"></a>
+
 ## S3DestinationUpdateTypeDef
 
 ```python
@@ -1297,6 +1439,8 @@ Optional fields:
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 
+<a id="schemaconfigurationtypedef"></a>
+
 ## SchemaConfigurationTypeDef
 
 ```python
@@ -1312,6 +1456,8 @@ Optional fields:
 - `Region`: `str`
 - `VersionId`: `str`
 
+<a id="serializertypedef"></a>
+
 ## SerializerTypeDef
 
 ```python
@@ -1323,6 +1469,8 @@ Optional fields:
 - `ParquetSerDe`: [ParquetSerDeTypeDef](./type_defs.md#parquetserdetypedef)
 - `OrcSerDe`: [OrcSerDeTypeDef](./type_defs.md#orcserdetypedef)
 
+<a id="sourcedescriptiontypedef"></a>
+
 ## SourceDescriptionTypeDef
 
 ```python
@@ -1333,6 +1481,8 @@ Optional fields:
 
 - `KinesisStreamSourceDescription`:
   [KinesisStreamSourceDescriptionTypeDef](./type_defs.md#kinesisstreamsourcedescriptiontypedef)
+
+<a id="splunkdestinationconfigurationtypedef"></a>
 
 ## SplunkDestinationConfigurationTypeDef
 
@@ -1360,6 +1510,8 @@ Optional fields:
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 
+<a id="splunkdestinationdescriptiontypedef"></a>
+
 ## SplunkDestinationDescriptionTypeDef
 
 ```python
@@ -1382,6 +1534,8 @@ Optional fields:
   [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
+
+<a id="splunkdestinationupdatetypedef"></a>
 
 ## SplunkDestinationUpdateTypeDef
 
@@ -1406,6 +1560,8 @@ Optional fields:
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 
+<a id="splunkretryoptionstypedef"></a>
+
 ## SplunkRetryOptionsTypeDef
 
 ```python
@@ -1415,6 +1571,8 @@ from mypy_boto3_firehose.type_defs import SplunkRetryOptionsTypeDef
 Optional fields:
 
 - `DurationInSeconds`: `int`
+
+<a id="startdeliverystreamencryptioninputrequesttypedef"></a>
 
 ## StartDeliveryStreamEncryptionInputRequestTypeDef
 
@@ -1431,6 +1589,8 @@ Optional fields:
 - `DeliveryStreamEncryptionConfigurationInput`:
   [DeliveryStreamEncryptionConfigurationInputTypeDef](./type_defs.md#deliverystreamencryptionconfigurationinputtypedef)
 
+<a id="stopdeliverystreamencryptioninputrequesttypedef"></a>
+
 ## StopDeliveryStreamEncryptionInputRequestTypeDef
 
 ```python
@@ -1440,6 +1600,8 @@ from mypy_boto3_firehose.type_defs import StopDeliveryStreamEncryptionInputReque
 Required fields:
 
 - `DeliveryStreamName`: `str`
+
+<a id="tagdeliverystreaminputrequesttypedef"></a>
 
 ## TagDeliveryStreamInputRequestTypeDef
 
@@ -1451,6 +1613,8 @@ Required fields:
 
 - `DeliveryStreamName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1466,6 +1630,8 @@ Optional fields:
 
 - `Value`: `str`
 
+<a id="untagdeliverystreaminputrequesttypedef"></a>
+
 ## UntagDeliveryStreamInputRequestTypeDef
 
 ```python
@@ -1476,6 +1642,8 @@ Required fields:
 
 - `DeliveryStreamName`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedestinationinputrequesttypedef"></a>
 
 ## UpdateDestinationInputRequestTypeDef
 
@@ -1506,6 +1674,8 @@ Optional fields:
 - `HttpEndpointDestinationUpdate`:
   [HttpEndpointDestinationUpdateTypeDef](./type_defs.md#httpendpointdestinationupdatetypedef)
 
+<a id="vpcconfigurationdescriptiontypedef"></a>
+
 ## VpcConfigurationDescriptionTypeDef
 
 ```python
@@ -1518,6 +1688,8 @@ Required fields:
 - `RoleARN`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 - `VpcId`: `str`
+
+<a id="vpcconfigurationtypedef"></a>
 
 ## VpcConfigurationTypeDef
 

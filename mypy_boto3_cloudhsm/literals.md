@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloudhsm-module"></a>
+
 # Literals for boto3 CloudHSM module
 
 > [Index](..) > [CloudHSM](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module
-[mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
+[mypy-boto3-cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
 - [Literals for boto3 CloudHSM module](#literals-for-boto3-cloudhsm-module)
   - [ClientVersionType](#clientversiontype)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="clientversiontype"></a>
+
 ## ClientVersionType
 
 ```python
@@ -28,6 +32,8 @@ Values:
 
 - `5.1`
 - `5.3`
+
+<a id="cloudhsmobjectstatetype"></a>
 
 ## CloudHsmObjectStateType
 
@@ -40,6 +46,8 @@ Values:
 - `DEGRADED`
 - `READY`
 - `UPDATING`
+
+<a id="hsmstatustype"></a>
 
 ## HsmStatusType
 
@@ -57,6 +65,8 @@ Values:
 - `TERMINATING`
 - `UPDATING`
 
+<a id="listhapgspaginatorname"></a>
+
 ## ListHapgsPaginatorName
 
 ```python
@@ -66,6 +76,8 @@ from mypy_boto3_cloudhsm.literals import ListHapgsPaginatorName
 Values:
 
 - `list_hapgs`
+
+<a id="listhsmspaginatorname"></a>
 
 ## ListHsmsPaginatorName
 
@@ -77,6 +89,8 @@ Values:
 
 - `list_hsms`
 
+<a id="listlunaclientspaginatorname"></a>
+
 ## ListLunaClientsPaginatorName
 
 ```python
@@ -87,6 +101,8 @@ Values:
 
 - `list_luna_clients`
 
+<a id="subscriptiontypetype"></a>
+
 ## SubscriptionTypeType
 
 ```python
@@ -96,6 +112,8 @@ from mypy_boto3_cloudhsm.literals import SubscriptionTypeType
 Values:
 
 - `PRODUCTION`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -404,6 +422,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

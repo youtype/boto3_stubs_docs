@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-serverlessapplicationrepository-module"></a>
+
 # Literals for boto3 ServerlessApplicationRepository module
 
 > [Index](..) > [ServerlessApplicationRepository](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
 type annotations stubs module
-[mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
+[mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 - [Literals for boto3 ServerlessApplicationRepository module](#literals-for-boto3-serverlessapplicationrepository-module)
   - [CapabilityType](#capabilitytype)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [StatusType](#statustype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="capabilitytype"></a>
 
 ## CapabilityType
 
@@ -29,6 +33,8 @@ Values:
 - `CAPABILITY_NAMED_IAM`
 - `CAPABILITY_RESOURCE_POLICY`
 
+<a id="listapplicationdependenciespaginatorname"></a>
+
 ## ListApplicationDependenciesPaginatorName
 
 ```python
@@ -38,6 +44,8 @@ from mypy_boto3_serverlessrepo.literals import ListApplicationDependenciesPagina
 Values:
 
 - `list_application_dependencies`
+
+<a id="listapplicationversionspaginatorname"></a>
 
 ## ListApplicationVersionsPaginatorName
 
@@ -49,6 +57,8 @@ Values:
 
 - `list_application_versions`
 
+<a id="listapplicationspaginatorname"></a>
+
 ## ListApplicationsPaginatorName
 
 ```python
@@ -58,6 +68,8 @@ from mypy_boto3_serverlessrepo.literals import ListApplicationsPaginatorName
 Values:
 
 - `list_applications`
+
+<a id="statustype"></a>
 
 ## StatusType
 
@@ -70,6 +82,8 @@ Values:
 - `ACTIVE`
 - `EXPIRED`
 - `PREPARING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -378,6 +392,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

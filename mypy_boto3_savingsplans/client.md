@@ -1,3 +1,5 @@
+<a id="savingsplansclient-for-boto3-savingsplans-module"></a>
+
 # SavingsPlansClient for boto3 SavingsPlans module
 
 > [Index](..) > [SavingsPlans](.) > SavingsPlansClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
 type annotations stubs module
-[mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
+[mypy-boto3-savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 - [SavingsPlansClient for boto3 SavingsPlans module](#savingsplansclient-for-boto3-savingsplans-module)
   - [SavingsPlansClient](#savingsplansclient)
@@ -24,6 +26,8 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
 
+<a id="savingsplansclient"></a>
+
 ## SavingsPlansClient
 
 Type annotations for `boto3.client("savingsplans")`
@@ -31,14 +35,17 @@ Type annotations for `boto3.client("savingsplans")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_savingsplans.client import SavingsPlansClient
 
 def get_savingsplans_client() -> SavingsPlansClient:
-    return boto3.client("savingsplans")
+    return Session().client("savingsplans")
 ```
 
 Boto3 documentation:
 [SavingsPlans.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -60,7 +67,11 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -72,6 +83,8 @@ Boto3 documentation:
 [SavingsPlans.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -87,6 +100,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_savings_plan"></a>
 
 ### create_savings_plan
 
@@ -112,6 +127,8 @@ Keyword-only arguments:
 Returns
 [CreateSavingsPlanResponseTypeDef](./type_defs.md#createsavingsplanresponsetypedef).
 
+<a id="delete_queued_savings_plan"></a>
+
 ### delete_queued_savings_plan
 
 Deletes the queued purchase for the specified Savings Plan.
@@ -130,6 +147,8 @@ Keyword-only arguments:
 - `savingsPlanId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_savings_plan_rates"></a>
 
 ### describe_savings_plan_rates
 
@@ -154,6 +173,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSavingsPlanRatesResponseTypeDef](./type_defs.md#describesavingsplanratesresponsetypedef).
+
+<a id="describe_savings_plans"></a>
 
 ### describe_savings_plans
 
@@ -181,6 +202,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSavingsPlansResponseTypeDef](./type_defs.md#describesavingsplansresponsetypedef).
+
+<a id="describe_savings_plans_offering_rates"></a>
 
 ### describe_savings_plans_offering_rates
 
@@ -215,6 +238,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSavingsPlansOfferingRatesResponseTypeDef](./type_defs.md#describesavingsplansofferingratesresponsetypedef).
+
+<a id="describe_savings_plans_offerings"></a>
 
 ### describe_savings_plans_offerings
 
@@ -253,6 +278,8 @@ Keyword-only arguments:
 Returns
 [DescribeSavingsPlansOfferingsResponseTypeDef](./type_defs.md#describesavingsplansofferingsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -271,6 +298,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -292,6 +321,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tags to the specified resource.
@@ -310,6 +341,8 @@ Keyword-only arguments:
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 

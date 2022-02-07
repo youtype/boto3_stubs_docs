@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-worklink-module"></a>
+
 # Typed dictionaries for boto3 WorkLink module
 
 > [Index](..) > [WorkLink](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
 type annotations stubs module
-[mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
+[mypy-boto3-worklink](https://pypi.org/project/mypy-boto3-worklink/).
 
 - [Typed dictionaries for boto3 WorkLink module](#typed-dictionaries-for-boto3-worklink-module)
   - [AssociateDomainRequestRequestTypeDef](#associatedomainrequestrequesttypedef)
@@ -65,6 +67,8 @@ type annotations stubs module
   - [WebsiteAuthorizationProviderSummaryTypeDef](#websiteauthorizationprovidersummarytypedef)
   - [WebsiteCaSummaryTypeDef](#websitecasummarytypedef)
 
+<a id="associatedomainrequestrequesttypedef"></a>
+
 ## AssociateDomainRequestRequestTypeDef
 
 ```python
@@ -80,6 +84,8 @@ Required fields:
 Optional fields:
 
 - `DisplayName`: `str`
+
+<a id="associatewebsiteauthorizationproviderrequestrequesttypedef"></a>
 
 ## AssociateWebsiteAuthorizationProviderRequestRequestTypeDef
 
@@ -97,6 +103,8 @@ Optional fields:
 
 - `DomainName`: `str`
 
+<a id="associatewebsiteauthorizationproviderresponsetypedef"></a>
+
 ## AssociateWebsiteAuthorizationProviderResponseTypeDef
 
 ```python
@@ -108,6 +116,8 @@ Required fields:
 - `AuthorizationProviderId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associatewebsitecertificateauthorityrequestrequesttypedef"></a>
 
 ## AssociateWebsiteCertificateAuthorityRequestRequestTypeDef
 
@@ -124,6 +134,8 @@ Optional fields:
 
 - `DisplayName`: `str`
 
+<a id="associatewebsitecertificateauthorityresponsetypedef"></a>
+
 ## AssociateWebsiteCertificateAuthorityResponseTypeDef
 
 ```python
@@ -135,6 +147,8 @@ Required fields:
 - `WebsiteCaId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfleetrequestrequesttypedef"></a>
 
 ## CreateFleetRequestRequestTypeDef
 
@@ -152,6 +166,8 @@ Optional fields:
 - `OptimizeForEndUserLocation`: `bool`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createfleetresponsetypedef"></a>
+
 ## CreateFleetResponseTypeDef
 
 ```python
@@ -164,6 +180,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletefleetrequestrequesttypedef"></a>
+
 ## DeleteFleetRequestRequestTypeDef
 
 ```python
@@ -174,6 +192,8 @@ Required fields:
 
 - `FleetArn`: `str`
 
+<a id="describeauditstreamconfigurationrequestrequesttypedef"></a>
+
 ## DescribeAuditStreamConfigurationRequestRequestTypeDef
 
 ```python
@@ -183,6 +203,8 @@ from mypy_boto3_worklink.type_defs import DescribeAuditStreamConfigurationReques
 Required fields:
 
 - `FleetArn`: `str`
+
+<a id="describeauditstreamconfigurationresponsetypedef"></a>
 
 ## DescribeAuditStreamConfigurationResponseTypeDef
 
@@ -196,6 +218,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecompanynetworkconfigurationrequestrequesttypedef"></a>
+
 ## DescribeCompanyNetworkConfigurationRequestRequestTypeDef
 
 ```python
@@ -205,6 +229,8 @@ from mypy_boto3_worklink.type_defs import DescribeCompanyNetworkConfigurationReq
 Required fields:
 
 - `FleetArn`: `str`
+
+<a id="describecompanynetworkconfigurationresponsetypedef"></a>
 
 ## DescribeCompanyNetworkConfigurationResponseTypeDef
 
@@ -220,6 +246,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedevicepolicyconfigurationrequestrequesttypedef"></a>
+
 ## DescribeDevicePolicyConfigurationRequestRequestTypeDef
 
 ```python
@@ -229,6 +257,8 @@ from mypy_boto3_worklink.type_defs import DescribeDevicePolicyConfigurationReque
 Required fields:
 
 - `FleetArn`: `str`
+
+<a id="describedevicepolicyconfigurationresponsetypedef"></a>
 
 ## DescribeDevicePolicyConfigurationResponseTypeDef
 
@@ -242,6 +272,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedevicerequestrequesttypedef"></a>
+
 ## DescribeDeviceRequestRequestTypeDef
 
 ```python
@@ -252,6 +284,8 @@ Required fields:
 
 - `FleetArn`: `str`
 - `DeviceId`: `str`
+
+<a id="describedeviceresponsetypedef"></a>
 
 ## DescribeDeviceResponseTypeDef
 
@@ -273,6 +307,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedomainrequestrequesttypedef"></a>
+
 ## DescribeDomainRequestRequestTypeDef
 
 ```python
@@ -283,6 +319,8 @@ Required fields:
 
 - `FleetArn`: `str`
 - `DomainName`: `str`
+
+<a id="describedomainresponsetypedef"></a>
 
 ## DescribeDomainResponseTypeDef
 
@@ -300,6 +338,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefleetmetadatarequestrequesttypedef"></a>
+
 ## DescribeFleetMetadataRequestRequestTypeDef
 
 ```python
@@ -309,6 +349,8 @@ from mypy_boto3_worklink.type_defs import DescribeFleetMetadataRequestRequestTyp
 Required fields:
 
 - `FleetArn`: `str`
+
+<a id="describefleetmetadataresponsetypedef"></a>
 
 ## DescribeFleetMetadataResponseTypeDef
 
@@ -329,6 +371,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeidentityproviderconfigurationrequestrequesttypedef"></a>
+
 ## DescribeIdentityProviderConfigurationRequestRequestTypeDef
 
 ```python
@@ -338,6 +382,8 @@ from mypy_boto3_worklink.type_defs import DescribeIdentityProviderConfigurationR
 Required fields:
 
 - `FleetArn`: `str`
+
+<a id="describeidentityproviderconfigurationresponsetypedef"></a>
 
 ## DescribeIdentityProviderConfigurationResponseTypeDef
 
@@ -354,6 +400,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describewebsitecertificateauthorityrequestrequesttypedef"></a>
+
 ## DescribeWebsiteCertificateAuthorityRequestRequestTypeDef
 
 ```python
@@ -364,6 +412,8 @@ Required fields:
 
 - `FleetArn`: `str`
 - `WebsiteCaId`: `str`
+
+<a id="describewebsitecertificateauthorityresponsetypedef"></a>
 
 ## DescribeWebsiteCertificateAuthorityResponseTypeDef
 
@@ -379,6 +429,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="devicesummarytypedef"></a>
+
 ## DeviceSummaryTypeDef
 
 ```python
@@ -389,6 +441,8 @@ Optional fields:
 
 - `DeviceId`: `str`
 - `DeviceStatus`: [DeviceStatusType](./literals.md#devicestatustype)
+
+<a id="disassociatedomainrequestrequesttypedef"></a>
 
 ## DisassociateDomainRequestRequestTypeDef
 
@@ -401,6 +455,8 @@ Required fields:
 - `FleetArn`: `str`
 - `DomainName`: `str`
 
+<a id="disassociatewebsiteauthorizationproviderrequestrequesttypedef"></a>
+
 ## DisassociateWebsiteAuthorizationProviderRequestRequestTypeDef
 
 ```python
@@ -412,6 +468,8 @@ Required fields:
 - `FleetArn`: `str`
 - `AuthorizationProviderId`: `str`
 
+<a id="disassociatewebsitecertificateauthorityrequestrequesttypedef"></a>
+
 ## DisassociateWebsiteCertificateAuthorityRequestRequestTypeDef
 
 ```python
@@ -422,6 +480,8 @@ Required fields:
 
 - `FleetArn`: `str`
 - `WebsiteCaId`: `str`
+
+<a id="domainsummarytypedef"></a>
 
 ## DomainSummaryTypeDef
 
@@ -438,6 +498,8 @@ Required fields:
 Optional fields:
 
 - `DisplayName`: `str`
+
+<a id="fleetsummarytypedef"></a>
 
 ## FleetSummaryTypeDef
 
@@ -456,6 +518,8 @@ Optional fields:
 - `FleetStatus`: [FleetStatusType](./literals.md#fleetstatustype)
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="listdevicesrequestrequesttypedef"></a>
+
 ## ListDevicesRequestRequestTypeDef
 
 ```python
@@ -471,6 +535,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listdevicesresponsetypedef"></a>
+
 ## ListDevicesResponseTypeDef
 
 ```python
@@ -484,6 +550,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdomainsrequestrequesttypedef"></a>
 
 ## ListDomainsRequestRequestTypeDef
 
@@ -500,6 +568,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listdomainsresponsetypedef"></a>
+
 ## ListDomainsResponseTypeDef
 
 ```python
@@ -514,6 +584,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfleetsrequestrequesttypedef"></a>
+
 ## ListFleetsRequestRequestTypeDef
 
 ```python
@@ -524,6 +596,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listfleetsresponsetypedef"></a>
 
 ## ListFleetsResponseTypeDef
 
@@ -539,6 +613,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -548,6 +624,8 @@ from mypy_boto3_worklink.type_defs import ListTagsForResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -560,6 +638,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listwebsiteauthorizationprovidersrequestrequesttypedef"></a>
 
 ## ListWebsiteAuthorizationProvidersRequestRequestTypeDef
 
@@ -576,6 +656,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listwebsiteauthorizationprovidersresponsetypedef"></a>
+
 ## ListWebsiteAuthorizationProvidersResponseTypeDef
 
 ```python
@@ -589,6 +671,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listwebsitecertificateauthoritiesrequestrequesttypedef"></a>
 
 ## ListWebsiteCertificateAuthoritiesRequestRequestTypeDef
 
@@ -605,6 +689,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listwebsitecertificateauthoritiesresponsetypedef"></a>
+
 ## ListWebsiteCertificateAuthoritiesResponseTypeDef
 
 ```python
@@ -618,6 +704,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -633,6 +721,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="restoredomainaccessrequestrequesttypedef"></a>
+
 ## RestoreDomainAccessRequestRequestTypeDef
 
 ```python
@@ -643,6 +733,8 @@ Required fields:
 
 - `FleetArn`: `str`
 - `DomainName`: `str`
+
+<a id="revokedomainaccessrequestrequesttypedef"></a>
 
 ## RevokeDomainAccessRequestRequestTypeDef
 
@@ -655,6 +747,8 @@ Required fields:
 - `FleetArn`: `str`
 - `DomainName`: `str`
 
+<a id="signoutuserrequestrequesttypedef"></a>
+
 ## SignOutUserRequestRequestTypeDef
 
 ```python
@@ -665,6 +759,8 @@ Required fields:
 
 - `FleetArn`: `str`
 - `Username`: `str`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -677,6 +773,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -687,6 +785,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateauditstreamconfigurationrequestrequesttypedef"></a>
 
 ## UpdateAuditStreamConfigurationRequestRequestTypeDef
 
@@ -702,6 +802,8 @@ Optional fields:
 
 - `AuditStreamArn`: `str`
 
+<a id="updatecompanynetworkconfigurationrequestrequesttypedef"></a>
+
 ## UpdateCompanyNetworkConfigurationRequestRequestTypeDef
 
 ```python
@@ -714,6 +816,8 @@ Required fields:
 - `VpcId`: `str`
 - `SubnetIds`: `Sequence`\[`str`\]
 - `SecurityGroupIds`: `Sequence`\[`str`\]
+
+<a id="updatedevicepolicyconfigurationrequestrequesttypedef"></a>
 
 ## UpdateDevicePolicyConfigurationRequestRequestTypeDef
 
@@ -728,6 +832,8 @@ Required fields:
 Optional fields:
 
 - `DeviceCaCertificate`: `str`
+
+<a id="updatedomainmetadatarequestrequesttypedef"></a>
 
 ## UpdateDomainMetadataRequestRequestTypeDef
 
@@ -744,6 +850,8 @@ Optional fields:
 
 - `DisplayName`: `str`
 
+<a id="updatefleetmetadatarequestrequesttypedef"></a>
+
 ## UpdateFleetMetadataRequestRequestTypeDef
 
 ```python
@@ -758,6 +866,8 @@ Optional fields:
 
 - `DisplayName`: `str`
 - `OptimizeForEndUserLocation`: `bool`
+
+<a id="updateidentityproviderconfigurationrequestrequesttypedef"></a>
 
 ## UpdateIdentityProviderConfigurationRequestRequestTypeDef
 
@@ -775,6 +885,8 @@ Optional fields:
 
 - `IdentityProviderSamlMetadata`: `str`
 
+<a id="websiteauthorizationprovidersummarytypedef"></a>
+
 ## WebsiteAuthorizationProviderSummaryTypeDef
 
 ```python
@@ -791,6 +903,8 @@ Optional fields:
 - `AuthorizationProviderId`: `str`
 - `DomainName`: `str`
 - `CreatedTime`: `datetime`
+
+<a id="websitecasummarytypedef"></a>
 
 ## WebsiteCaSummaryTypeDef
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-applicationinsights-module"></a>
+
 # Typed dictionaries for boto3 ApplicationInsights module
 
 > [Index](..) > [ApplicationInsights](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
 type annotations stubs module
-[mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
+[mypy-boto3-application-insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
 - [Typed dictionaries for boto3 ApplicationInsights module](#typed-dictionaries-for-boto3-applicationinsights-module)
   - [ApplicationComponentTypeDef](#applicationcomponenttypedef)
@@ -64,6 +66,8 @@ type annotations stubs module
   - [UpdateLogPatternRequestRequestTypeDef](#updatelogpatternrequestrequesttypedef)
   - [UpdateLogPatternResponseTypeDef](#updatelogpatternresponsetypedef)
 
+<a id="applicationcomponenttypedef"></a>
+
 ## ApplicationComponentTypeDef
 
 ```python
@@ -80,6 +84,8 @@ Optional fields:
 - `Monitor`: `bool`
 - `DetectedWorkload`: `Dict`\[[TierType](./literals.md#tiertype),
   `Dict`\[`str`, `str`\]\]
+
+<a id="applicationinfotypedef"></a>
 
 ## ApplicationInfoTypeDef
 
@@ -98,6 +104,8 @@ Optional fields:
 - `AutoConfigEnabled`: `bool`
 - `DiscoveryType`: [DiscoveryTypeType](./literals.md#discoverytypetype)
 
+<a id="configurationeventtypedef"></a>
+
 ## ConfigurationEventTypeDef
 
 ```python
@@ -115,6 +123,8 @@ Optional fields:
 - `EventDetail`: `str`
 - `EventResourceName`: `str`
 
+<a id="createapplicationrequestrequesttypedef"></a>
+
 ## CreateApplicationRequestRequestTypeDef
 
 ```python
@@ -131,6 +141,8 @@ Optional fields:
 - `AutoConfigEnabled`: `bool`
 - `AutoCreate`: `bool`
 
+<a id="createapplicationresponsetypedef"></a>
+
 ## CreateApplicationResponseTypeDef
 
 ```python
@@ -144,6 +156,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createcomponentrequestrequesttypedef"></a>
+
 ## CreateComponentRequestRequestTypeDef
 
 ```python
@@ -155,6 +169,8 @@ Required fields:
 - `ResourceGroupName`: `str`
 - `ComponentName`: `str`
 - `ResourceList`: `Sequence`\[`str`\]
+
+<a id="createlogpatternrequestrequesttypedef"></a>
 
 ## CreateLogPatternRequestRequestTypeDef
 
@@ -170,6 +186,8 @@ Required fields:
 - `Pattern`: `str`
 - `Rank`: `int`
 
+<a id="createlogpatternresponsetypedef"></a>
+
 ## CreateLogPatternResponseTypeDef
 
 ```python
@@ -183,6 +201,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapplicationrequestrequesttypedef"></a>
+
 ## DeleteApplicationRequestRequestTypeDef
 
 ```python
@@ -192,6 +212,8 @@ from mypy_boto3_application_insights.type_defs import DeleteApplicationRequestRe
 Required fields:
 
 - `ResourceGroupName`: `str`
+
+<a id="deletecomponentrequestrequesttypedef"></a>
 
 ## DeleteComponentRequestRequestTypeDef
 
@@ -203,6 +225,8 @@ Required fields:
 
 - `ResourceGroupName`: `str`
 - `ComponentName`: `str`
+
+<a id="deletelogpatternrequestrequesttypedef"></a>
 
 ## DeleteLogPatternRequestRequestTypeDef
 
@@ -216,6 +240,8 @@ Required fields:
 - `PatternSetName`: `str`
 - `PatternName`: `str`
 
+<a id="describeapplicationrequestrequesttypedef"></a>
+
 ## DescribeApplicationRequestRequestTypeDef
 
 ```python
@@ -225,6 +251,8 @@ from mypy_boto3_application_insights.type_defs import DescribeApplicationRequest
 Required fields:
 
 - `ResourceGroupName`: `str`
+
+<a id="describeapplicationresponsetypedef"></a>
 
 ## DescribeApplicationResponseTypeDef
 
@@ -239,6 +267,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecomponentconfigurationrecommendationrequestrequesttypedef"></a>
+
 ## DescribeComponentConfigurationRecommendationRequestRequestTypeDef
 
 ```python
@@ -250,6 +280,8 @@ Required fields:
 - `ResourceGroupName`: `str`
 - `ComponentName`: `str`
 - `Tier`: [TierType](./literals.md#tiertype)
+
+<a id="describecomponentconfigurationrecommendationresponsetypedef"></a>
 
 ## DescribeComponentConfigurationRecommendationResponseTypeDef
 
@@ -263,6 +295,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecomponentconfigurationrequestrequesttypedef"></a>
+
 ## DescribeComponentConfigurationRequestRequestTypeDef
 
 ```python
@@ -273,6 +307,8 @@ Required fields:
 
 - `ResourceGroupName`: `str`
 - `ComponentName`: `str`
+
+<a id="describecomponentconfigurationresponsetypedef"></a>
 
 ## DescribeComponentConfigurationResponseTypeDef
 
@@ -288,6 +324,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecomponentrequestrequesttypedef"></a>
+
 ## DescribeComponentRequestRequestTypeDef
 
 ```python
@@ -298,6 +336,8 @@ Required fields:
 
 - `ResourceGroupName`: `str`
 - `ComponentName`: `str`
+
+<a id="describecomponentresponsetypedef"></a>
 
 ## DescribeComponentResponseTypeDef
 
@@ -313,6 +353,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelogpatternrequestrequesttypedef"></a>
+
 ## DescribeLogPatternRequestRequestTypeDef
 
 ```python
@@ -324,6 +366,8 @@ Required fields:
 - `ResourceGroupName`: `str`
 - `PatternSetName`: `str`
 - `PatternName`: `str`
+
+<a id="describelogpatternresponsetypedef"></a>
 
 ## DescribeLogPatternResponseTypeDef
 
@@ -338,6 +382,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeobservationrequestrequesttypedef"></a>
+
 ## DescribeObservationRequestRequestTypeDef
 
 ```python
@@ -347,6 +393,8 @@ from mypy_boto3_application_insights.type_defs import DescribeObservationRequest
 Required fields:
 
 - `ObservationId`: `str`
+
+<a id="describeobservationresponsetypedef"></a>
 
 ## DescribeObservationResponseTypeDef
 
@@ -360,6 +408,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeproblemobservationsrequestrequesttypedef"></a>
+
 ## DescribeProblemObservationsRequestRequestTypeDef
 
 ```python
@@ -369,6 +419,8 @@ from mypy_boto3_application_insights.type_defs import DescribeProblemObservation
 Required fields:
 
 - `ProblemId`: `str`
+
+<a id="describeproblemobservationsresponsetypedef"></a>
 
 ## DescribeProblemObservationsResponseTypeDef
 
@@ -383,6 +435,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeproblemrequestrequesttypedef"></a>
+
 ## DescribeProblemRequestRequestTypeDef
 
 ```python
@@ -392,6 +446,8 @@ from mypy_boto3_application_insights.type_defs import DescribeProblemRequestRequ
 Required fields:
 
 - `ProblemId`: `str`
+
+<a id="describeproblemresponsetypedef"></a>
 
 ## DescribeProblemResponseTypeDef
 
@@ -405,6 +461,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listapplicationsrequestrequesttypedef"></a>
+
 ## ListApplicationsRequestRequestTypeDef
 
 ```python
@@ -415,6 +473,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listapplicationsresponsetypedef"></a>
 
 ## ListApplicationsResponseTypeDef
 
@@ -429,6 +489,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcomponentsrequestrequesttypedef"></a>
 
 ## ListComponentsRequestRequestTypeDef
 
@@ -445,6 +507,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listcomponentsresponsetypedef"></a>
+
 ## ListComponentsResponseTypeDef
 
 ```python
@@ -458,6 +522,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listconfigurationhistoryrequestrequesttypedef"></a>
 
 ## ListConfigurationHistoryRequestRequestTypeDef
 
@@ -475,6 +541,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listconfigurationhistoryresponsetypedef"></a>
+
 ## ListConfigurationHistoryResponseTypeDef
 
 ```python
@@ -488,6 +556,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlogpatternsetsrequestrequesttypedef"></a>
 
 ## ListLogPatternSetsRequestRequestTypeDef
 
@@ -504,6 +574,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listlogpatternsetsresponsetypedef"></a>
+
 ## ListLogPatternSetsResponseTypeDef
 
 ```python
@@ -517,6 +589,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlogpatternsrequestrequesttypedef"></a>
 
 ## ListLogPatternsRequestRequestTypeDef
 
@@ -534,6 +608,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listlogpatternsresponsetypedef"></a>
+
 ## ListLogPatternsResponseTypeDef
 
 ```python
@@ -548,6 +624,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listproblemsrequestrequesttypedef"></a>
 
 ## ListProblemsRequestRequestTypeDef
 
@@ -564,6 +642,8 @@ Optional fields:
 - `NextToken`: `str`
 - `ComponentName`: `str`
 
+<a id="listproblemsresponsetypedef"></a>
+
 ## ListProblemsResponseTypeDef
 
 ```python
@@ -578,6 +658,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -587,6 +669,8 @@ from mypy_boto3_application_insights.type_defs import ListTagsForResourceRequest
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -600,6 +684,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logpatterntypedef"></a>
+
 ## LogPatternTypeDef
 
 ```python
@@ -612,6 +698,8 @@ Optional fields:
 - `PatternName`: `str`
 - `Pattern`: `str`
 - `Rank`: `int`
+
+<a id="observationtypedef"></a>
 
 ## ObservationTypeDef
 
@@ -668,6 +756,8 @@ Optional fields:
 - `XRayNodeName`: `str`
 - `XRayNodeType`: `str`
 
+<a id="problemtypedef"></a>
+
 ## ProblemTypeDef
 
 ```python
@@ -691,6 +781,8 @@ Optional fields:
 - `RecurringCount`: `int`
 - `LastRecurrenceTime`: `datetime`
 
+<a id="relatedobservationstypedef"></a>
+
 ## RelatedObservationsTypeDef
 
 ```python
@@ -701,6 +793,8 @@ Optional fields:
 
 - `ObservationList`:
   `List`\[[ObservationTypeDef](./type_defs.md#observationtypedef)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -716,6 +810,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -726,6 +822,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -738,6 +836,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -748,6 +848,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapplicationrequestrequesttypedef"></a>
 
 ## UpdateApplicationRequestRequestTypeDef
 
@@ -767,6 +869,8 @@ Optional fields:
 - `RemoveSNSTopic`: `bool`
 - `AutoConfigEnabled`: `bool`
 
+<a id="updateapplicationresponsetypedef"></a>
+
 ## UpdateApplicationResponseTypeDef
 
 ```python
@@ -779,6 +883,8 @@ Required fields:
   [ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecomponentconfigurationrequestrequesttypedef"></a>
 
 ## UpdateComponentConfigurationRequestRequestTypeDef
 
@@ -798,6 +904,8 @@ Optional fields:
 - `ComponentConfiguration`: `str`
 - `AutoConfigEnabled`: `bool`
 
+<a id="updatecomponentrequestrequesttypedef"></a>
+
 ## UpdateComponentRequestRequestTypeDef
 
 ```python
@@ -813,6 +921,8 @@ Optional fields:
 
 - `NewComponentName`: `str`
 - `ResourceList`: `Sequence`\[`str`\]
+
+<a id="updatelogpatternrequestrequesttypedef"></a>
 
 ## UpdateLogPatternRequestRequestTypeDef
 
@@ -830,6 +940,8 @@ Optional fields:
 
 - `Pattern`: `str`
 - `Rank`: `int`
+
+<a id="updatelogpatternresponsetypedef"></a>
 
 ## UpdateLogPatternResponseTypeDef
 

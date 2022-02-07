@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-opensearchservice-module"></a>
+
 # Typed dictionaries for boto3 OpenSearchService module
 
 > [Index](..) > [OpenSearchService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService)
 type annotations stubs module
-[mypy_boto3_opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
+[mypy-boto3-opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
 
 - [Typed dictionaries for boto3 OpenSearchService module](#typed-dictionaries-for-boto3-opensearchservice-module)
   - [AWSDomainInformationTypeDef](#awsdomaininformationtypedef)
@@ -165,6 +167,8 @@ type annotations stubs module
   - [VersionStatusTypeDef](#versionstatustypedef)
   - [ZoneAwarenessConfigTypeDef](#zoneawarenessconfigtypedef)
 
+<a id="awsdomaininformationtypedef"></a>
+
 ## AWSDomainInformationTypeDef
 
 ```python
@@ -180,6 +184,8 @@ Optional fields:
 - `OwnerId`: `str`
 - `Region`: `str`
 
+<a id="acceptinboundconnectionrequestrequesttypedef"></a>
+
 ## AcceptInboundConnectionRequestRequestTypeDef
 
 ```python
@@ -189,6 +195,8 @@ from mypy_boto3_opensearch.type_defs import AcceptInboundConnectionRequestReques
 Required fields:
 
 - `ConnectionId`: `str`
+
+<a id="acceptinboundconnectionresponsetypedef"></a>
 
 ## AcceptInboundConnectionResponseTypeDef
 
@@ -203,6 +211,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="accesspoliciesstatustypedef"></a>
+
 ## AccessPoliciesStatusTypeDef
 
 ```python
@@ -213,6 +223,8 @@ Required fields:
 
 - `Options`: `str`
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="addtagsrequestrequesttypedef"></a>
 
 ## AddTagsRequestRequestTypeDef
 
@@ -225,6 +237,8 @@ Required fields:
 - `ARN`: `str`
 - `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="additionallimittypedef"></a>
+
 ## AdditionalLimitTypeDef
 
 ```python
@@ -236,6 +250,8 @@ Optional fields:
 - `LimitName`: `str`
 - `LimitValues`: `List`\[`str`\]
 
+<a id="advancedoptionsstatustypedef"></a>
+
 ## AdvancedOptionsStatusTypeDef
 
 ```python
@@ -246,6 +262,8 @@ Required fields:
 
 - `Options`: `Dict`\[`str`, `str`\]
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="advancedsecurityoptionsinputtypedef"></a>
 
 ## AdvancedSecurityOptionsInputTypeDef
 
@@ -263,6 +281,8 @@ Optional fields:
   [SAMLOptionsInputTypeDef](./type_defs.md#samloptionsinputtypedef)
 - `AnonymousAuthEnabled`: `bool`
 
+<a id="advancedsecurityoptionsstatustypedef"></a>
+
 ## AdvancedSecurityOptionsStatusTypeDef
 
 ```python
@@ -274,6 +294,8 @@ Required fields:
 - `Options`:
   [AdvancedSecurityOptionsTypeDef](./type_defs.md#advancedsecurityoptionstypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="advancedsecurityoptionstypedef"></a>
 
 ## AdvancedSecurityOptionsTypeDef
 
@@ -290,6 +312,8 @@ Optional fields:
 - `AnonymousAuthDisableDate`: `datetime`
 - `AnonymousAuthEnabled`: `bool`
 
+<a id="associatepackagerequestrequesttypedef"></a>
+
 ## AssociatePackageRequestRequestTypeDef
 
 ```python
@@ -300,6 +324,8 @@ Required fields:
 
 - `PackageID`: `str`
 - `DomainName`: `str`
+
+<a id="associatepackageresponsetypedef"></a>
 
 ## AssociatePackageResponseTypeDef
 
@@ -314,6 +340,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="autotunedetailstypedef"></a>
+
 ## AutoTuneDetailsTypeDef
 
 ```python
@@ -324,6 +352,8 @@ Optional fields:
 
 - `ScheduledAutoTuneDetails`:
   [ScheduledAutoTuneDetailsTypeDef](./type_defs.md#scheduledautotunedetailstypedef)
+
+<a id="autotunemaintenancescheduletypedef"></a>
 
 ## AutoTuneMaintenanceScheduleTypeDef
 
@@ -336,6 +366,8 @@ Optional fields:
 - `StartAt`: `Union`\[`datetime`, `str`\]
 - `Duration`: [DurationTypeDef](./type_defs.md#durationtypedef)
 - `CronExpressionForRecurrence`: `str`
+
+<a id="autotuneoptionsinputtypedef"></a>
 
 ## AutoTuneOptionsInputTypeDef
 
@@ -350,6 +382,8 @@ Optional fields:
 - `MaintenanceSchedules`:
   `Sequence`\[[AutoTuneMaintenanceScheduleTypeDef](./type_defs.md#autotunemaintenancescheduletypedef)\]
 
+<a id="autotuneoptionsoutputtypedef"></a>
+
 ## AutoTuneOptionsOutputTypeDef
 
 ```python
@@ -361,6 +395,8 @@ Optional fields:
 - `State`: [AutoTuneStateType](./literals.md#autotunestatetype)
 - `ErrorMessage`: `str`
 
+<a id="autotuneoptionsstatustypedef"></a>
+
 ## AutoTuneOptionsStatusTypeDef
 
 ```python
@@ -371,6 +407,8 @@ Optional fields:
 
 - `Options`: [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
 - `Status`: [AutoTuneStatusTypeDef](./type_defs.md#autotunestatustypedef)
+
+<a id="autotuneoptionstypedef"></a>
 
 ## AutoTuneOptionsTypeDef
 
@@ -386,6 +424,8 @@ Optional fields:
   [RollbackOnDisableType](./literals.md#rollbackondisabletype)
 - `MaintenanceSchedules`:
   `List`\[[AutoTuneMaintenanceScheduleTypeDef](./type_defs.md#autotunemaintenancescheduletypedef)\]
+
+<a id="autotunestatustypedef"></a>
 
 ## AutoTuneStatusTypeDef
 
@@ -405,6 +445,8 @@ Optional fields:
 - `ErrorMessage`: `str`
 - `PendingDeletion`: `bool`
 
+<a id="autotunetypedef"></a>
+
 ## AutoTuneTypeDef
 
 ```python
@@ -418,6 +460,8 @@ Optional fields:
 - `AutoTuneDetails`:
   [AutoTuneDetailsTypeDef](./type_defs.md#autotunedetailstypedef)
 
+<a id="cancelservicesoftwareupdaterequestrequesttypedef"></a>
+
 ## CancelServiceSoftwareUpdateRequestRequestTypeDef
 
 ```python
@@ -427,6 +471,8 @@ from mypy_boto3_opensearch.type_defs import CancelServiceSoftwareUpdateRequestRe
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="cancelservicesoftwareupdateresponsetypedef"></a>
 
 ## CancelServiceSoftwareUpdateResponseTypeDef
 
@@ -441,6 +487,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="changeprogressdetailstypedef"></a>
+
 ## ChangeProgressDetailsTypeDef
 
 ```python
@@ -451,6 +499,8 @@ Optional fields:
 
 - `ChangeId`: `str`
 - `Message`: `str`
+
+<a id="changeprogressstagetypedef"></a>
 
 ## ChangeProgressStageTypeDef
 
@@ -464,6 +514,8 @@ Optional fields:
 - `Status`: `str`
 - `Description`: `str`
 - `LastUpdated`: `datetime`
+
+<a id="changeprogressstatusdetailstypedef"></a>
 
 ## ChangeProgressStatusDetailsTypeDef
 
@@ -482,6 +534,8 @@ Optional fields:
 - `ChangeProgressStages`:
   `List`\[[ChangeProgressStageTypeDef](./type_defs.md#changeprogressstagetypedef)\]
 
+<a id="clusterconfigstatustypedef"></a>
+
 ## ClusterConfigStatusTypeDef
 
 ```python
@@ -492,6 +546,8 @@ Required fields:
 
 - `Options`: [ClusterConfigTypeDef](./type_defs.md#clusterconfigtypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="clusterconfigtypedef"></a>
 
 ## ClusterConfigTypeDef
 
@@ -518,6 +574,8 @@ Optional fields:
 - `ColdStorageOptions`:
   [ColdStorageOptionsTypeDef](./type_defs.md#coldstorageoptionstypedef)
 
+<a id="cognitooptionsstatustypedef"></a>
+
 ## CognitoOptionsStatusTypeDef
 
 ```python
@@ -528,6 +586,8 @@ Required fields:
 
 - `Options`: [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="cognitooptionstypedef"></a>
 
 ## CognitoOptionsTypeDef
 
@@ -542,6 +602,8 @@ Optional fields:
 - `IdentityPoolId`: `str`
 - `RoleArn`: `str`
 
+<a id="coldstorageoptionstypedef"></a>
+
 ## ColdStorageOptionsTypeDef
 
 ```python
@@ -551,6 +613,8 @@ from mypy_boto3_opensearch.type_defs import ColdStorageOptionsTypeDef
 Required fields:
 
 - `Enabled`: `bool`
+
+<a id="compatibleversionsmaptypedef"></a>
 
 ## CompatibleVersionsMapTypeDef
 
@@ -562,6 +626,8 @@ Optional fields:
 
 - `SourceVersion`: `str`
 - `TargetVersions`: `List`\[`str`\]
+
+<a id="createdomainrequestrequesttypedef"></a>
 
 ## CreateDomainRequestRequestTypeDef
 
@@ -599,6 +665,8 @@ Optional fields:
 - `AutoTuneOptions`:
   [AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef)
 
+<a id="createdomainresponsetypedef"></a>
+
 ## CreateDomainResponseTypeDef
 
 ```python
@@ -610,6 +678,8 @@ Required fields:
 - `DomainStatus`: [DomainStatusTypeDef](./type_defs.md#domainstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createoutboundconnectionrequestrequesttypedef"></a>
 
 ## CreateOutboundConnectionRequestRequestTypeDef
 
@@ -624,6 +694,8 @@ Required fields:
 - `RemoteDomainInfo`:
   [DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef)
 - `ConnectionAlias`: `str`
+
+<a id="createoutboundconnectionresponsetypedef"></a>
 
 ## CreateOutboundConnectionResponseTypeDef
 
@@ -644,6 +716,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createpackagerequestrequesttypedef"></a>
+
 ## CreatePackageRequestRequestTypeDef
 
 ```python
@@ -661,6 +735,8 @@ Optional fields:
 
 - `PackageDescription`: `str`
 
+<a id="createpackageresponsetypedef"></a>
+
 ## CreatePackageResponseTypeDef
 
 ```python
@@ -674,6 +750,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedomainrequestrequesttypedef"></a>
+
 ## DeleteDomainRequestRequestTypeDef
 
 ```python
@@ -683,6 +761,8 @@ from mypy_boto3_opensearch.type_defs import DeleteDomainRequestRequestTypeDef
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="deletedomainresponsetypedef"></a>
 
 ## DeleteDomainResponseTypeDef
 
@@ -696,6 +776,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteinboundconnectionrequestrequesttypedef"></a>
+
 ## DeleteInboundConnectionRequestRequestTypeDef
 
 ```python
@@ -705,6 +787,8 @@ from mypy_boto3_opensearch.type_defs import DeleteInboundConnectionRequestReques
 Required fields:
 
 - `ConnectionId`: `str`
+
+<a id="deleteinboundconnectionresponsetypedef"></a>
 
 ## DeleteInboundConnectionResponseTypeDef
 
@@ -719,6 +803,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteoutboundconnectionrequestrequesttypedef"></a>
+
 ## DeleteOutboundConnectionRequestRequestTypeDef
 
 ```python
@@ -728,6 +814,8 @@ from mypy_boto3_opensearch.type_defs import DeleteOutboundConnectionRequestReque
 Required fields:
 
 - `ConnectionId`: `str`
+
+<a id="deleteoutboundconnectionresponsetypedef"></a>
 
 ## DeleteOutboundConnectionResponseTypeDef
 
@@ -742,6 +830,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletepackagerequestrequesttypedef"></a>
+
 ## DeletePackageRequestRequestTypeDef
 
 ```python
@@ -751,6 +841,8 @@ from mypy_boto3_opensearch.type_defs import DeletePackageRequestRequestTypeDef
 Required fields:
 
 - `PackageID`: `str`
+
+<a id="deletepackageresponsetypedef"></a>
 
 ## DeletePackageResponseTypeDef
 
@@ -764,6 +856,8 @@ Required fields:
   [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedomainautotunesrequestrequesttypedef"></a>
 
 ## DescribeDomainAutoTunesRequestRequestTypeDef
 
@@ -780,6 +874,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describedomainautotunesresponsetypedef"></a>
+
 ## DescribeDomainAutoTunesResponseTypeDef
 
 ```python
@@ -792,6 +888,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedomainchangeprogressrequestrequesttypedef"></a>
 
 ## DescribeDomainChangeProgressRequestRequestTypeDef
 
@@ -807,6 +905,8 @@ Optional fields:
 
 - `ChangeId`: `str`
 
+<a id="describedomainchangeprogressresponsetypedef"></a>
+
 ## DescribeDomainChangeProgressResponseTypeDef
 
 ```python
@@ -820,6 +920,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedomainconfigrequestrequesttypedef"></a>
+
 ## DescribeDomainConfigRequestRequestTypeDef
 
 ```python
@@ -829,6 +931,8 @@ from mypy_boto3_opensearch.type_defs import DescribeDomainConfigRequestRequestTy
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="describedomainconfigresponsetypedef"></a>
 
 ## DescribeDomainConfigResponseTypeDef
 
@@ -842,6 +946,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedomainrequestrequesttypedef"></a>
+
 ## DescribeDomainRequestRequestTypeDef
 
 ```python
@@ -851,6 +957,8 @@ from mypy_boto3_opensearch.type_defs import DescribeDomainRequestRequestTypeDef
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="describedomainresponsetypedef"></a>
 
 ## DescribeDomainResponseTypeDef
 
@@ -864,6 +972,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedomainsrequestrequesttypedef"></a>
+
 ## DescribeDomainsRequestRequestTypeDef
 
 ```python
@@ -873,6 +983,8 @@ from mypy_boto3_opensearch.type_defs import DescribeDomainsRequestRequestTypeDef
 Required fields:
 
 - `DomainNames`: `Sequence`\[`str`\]
+
+<a id="describedomainsresponsetypedef"></a>
 
 ## DescribeDomainsResponseTypeDef
 
@@ -887,6 +999,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeinboundconnectionsrequestrequesttypedef"></a>
+
 ## DescribeInboundConnectionsRequestRequestTypeDef
 
 ```python
@@ -898,6 +1012,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeinboundconnectionsresponsetypedef"></a>
 
 ## DescribeInboundConnectionsResponseTypeDef
 
@@ -912,6 +1028,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeinstancetypelimitsrequestrequesttypedef"></a>
 
 ## DescribeInstanceTypeLimitsRequestRequestTypeDef
 
@@ -929,6 +1047,8 @@ Optional fields:
 
 - `DomainName`: `str`
 
+<a id="describeinstancetypelimitsresponsetypedef"></a>
+
 ## DescribeInstanceTypeLimitsResponseTypeDef
 
 ```python
@@ -942,6 +1062,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeoutboundconnectionsrequestrequesttypedef"></a>
+
 ## DescribeOutboundConnectionsRequestRequestTypeDef
 
 ```python
@@ -953,6 +1075,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeoutboundconnectionsresponsetypedef"></a>
 
 ## DescribeOutboundConnectionsResponseTypeDef
 
@@ -968,6 +1092,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepackagesfiltertypedef"></a>
+
 ## DescribePackagesFilterTypeDef
 
 ```python
@@ -979,6 +1105,8 @@ Optional fields:
 - `Name`:
   [DescribePackagesFilterNameType](./literals.md#describepackagesfilternametype)
 - `Value`: `Sequence`\[`str`\]
+
+<a id="describepackagesrequestrequesttypedef"></a>
 
 ## DescribePackagesRequestRequestTypeDef
 
@@ -992,6 +1120,8 @@ Optional fields:
   `Sequence`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describepackagesresponsetypedef"></a>
 
 ## DescribePackagesResponseTypeDef
 
@@ -1007,6 +1137,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereservedinstanceofferingsrequestrequesttypedef"></a>
+
 ## DescribeReservedInstanceOfferingsRequestRequestTypeDef
 
 ```python
@@ -1018,6 +1150,8 @@ Optional fields:
 - `ReservedInstanceOfferingId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describereservedinstanceofferingsresponsetypedef"></a>
 
 ## DescribeReservedInstanceOfferingsResponseTypeDef
 
@@ -1033,6 +1167,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereservedinstancesrequestrequesttypedef"></a>
+
 ## DescribeReservedInstancesRequestRequestTypeDef
 
 ```python
@@ -1044,6 +1180,8 @@ Optional fields:
 - `ReservedInstanceId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describereservedinstancesresponsetypedef"></a>
 
 ## DescribeReservedInstancesResponseTypeDef
 
@@ -1059,6 +1197,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dissociatepackagerequestrequesttypedef"></a>
+
 ## DissociatePackageRequestRequestTypeDef
 
 ```python
@@ -1069,6 +1209,8 @@ Required fields:
 
 - `PackageID`: `str`
 - `DomainName`: `str`
+
+<a id="dissociatepackageresponsetypedef"></a>
 
 ## DissociatePackageResponseTypeDef
 
@@ -1082,6 +1224,8 @@ Required fields:
   [DomainPackageDetailsTypeDef](./type_defs.md#domainpackagedetailstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="domainconfigtypedef"></a>
 
 ## DomainConfigTypeDef
 
@@ -1121,6 +1265,8 @@ Optional fields:
 - `ChangeProgressDetails`:
   [ChangeProgressDetailsTypeDef](./type_defs.md#changeprogressdetailstypedef)
 
+<a id="domainendpointoptionsstatustypedef"></a>
+
 ## DomainEndpointOptionsStatusTypeDef
 
 ```python
@@ -1132,6 +1278,8 @@ Required fields:
 - `Options`:
   [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="domainendpointoptionstypedef"></a>
 
 ## DomainEndpointOptionsTypeDef
 
@@ -1148,6 +1296,8 @@ Optional fields:
 - `CustomEndpoint`: `str`
 - `CustomEndpointCertificateArn`: `str`
 
+<a id="domaininfotypedef"></a>
+
 ## DomainInfoTypeDef
 
 ```python
@@ -1159,6 +1309,8 @@ Optional fields:
 - `DomainName`: `str`
 - `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 
+<a id="domaininformationcontainertypedef"></a>
+
 ## DomainInformationContainerTypeDef
 
 ```python
@@ -1169,6 +1321,8 @@ Optional fields:
 
 - `AWSDomainInformation`:
   [AWSDomainInformationTypeDef](./type_defs.md#awsdomaininformationtypedef)
+
+<a id="domainpackagedetailstypedef"></a>
 
 ## DomainPackageDetailsTypeDef
 
@@ -1189,6 +1343,8 @@ Optional fields:
 - `PackageVersion`: `str`
 - `ReferencePath`: `str`
 - `ErrorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
+
+<a id="domainstatustypedef"></a>
 
 ## DomainStatusTypeDef
 
@@ -1237,6 +1393,8 @@ Optional fields:
 - `ChangeProgressDetails`:
   [ChangeProgressDetailsTypeDef](./type_defs.md#changeprogressdetailstypedef)
 
+<a id="dryrunresultstypedef"></a>
+
 ## DryRunResultsTypeDef
 
 ```python
@@ -1247,6 +1405,8 @@ Optional fields:
 
 - `DeploymentType`: `str`
 - `Message`: `str`
+
+<a id="durationtypedef"></a>
 
 ## DurationTypeDef
 
@@ -1259,6 +1419,8 @@ Optional fields:
 - `Value`: `int`
 - `Unit`: `Literal['HOURS']` (see [TimeUnitType](./literals.md#timeunittype))
 
+<a id="ebsoptionsstatustypedef"></a>
+
 ## EBSOptionsStatusTypeDef
 
 ```python
@@ -1269,6 +1431,8 @@ Required fields:
 
 - `Options`: [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="ebsoptionstypedef"></a>
 
 ## EBSOptionsTypeDef
 
@@ -1283,6 +1447,8 @@ Optional fields:
 - `VolumeSize`: `int`
 - `Iops`: `int`
 
+<a id="encryptionatrestoptionsstatustypedef"></a>
+
 ## EncryptionAtRestOptionsStatusTypeDef
 
 ```python
@@ -1295,6 +1461,8 @@ Required fields:
   [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
+<a id="encryptionatrestoptionstypedef"></a>
+
 ## EncryptionAtRestOptionsTypeDef
 
 ```python
@@ -1305,6 +1473,8 @@ Optional fields:
 
 - `Enabled`: `bool`
 - `KmsKeyId`: `str`
+
+<a id="errordetailstypedef"></a>
 
 ## ErrorDetailsTypeDef
 
@@ -1317,6 +1487,8 @@ Optional fields:
 - `ErrorType`: `str`
 - `ErrorMessage`: `str`
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -1328,6 +1500,8 @@ Optional fields:
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
 
+<a id="getcompatibleversionsrequestrequesttypedef"></a>
+
 ## GetCompatibleVersionsRequestRequestTypeDef
 
 ```python
@@ -1337,6 +1511,8 @@ from mypy_boto3_opensearch.type_defs import GetCompatibleVersionsRequestRequestT
 Optional fields:
 
 - `DomainName`: `str`
+
+<a id="getcompatibleversionsresponsetypedef"></a>
 
 ## GetCompatibleVersionsResponseTypeDef
 
@@ -1350,6 +1526,8 @@ Required fields:
   `List`\[[CompatibleVersionsMapTypeDef](./type_defs.md#compatibleversionsmaptypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getpackageversionhistoryrequestrequesttypedef"></a>
 
 ## GetPackageVersionHistoryRequestRequestTypeDef
 
@@ -1366,6 +1544,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getpackageversionhistoryresponsetypedef"></a>
+
 ## GetPackageVersionHistoryResponseTypeDef
 
 ```python
@@ -1380,6 +1560,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getupgradehistoryrequestrequesttypedef"></a>
 
 ## GetUpgradeHistoryRequestRequestTypeDef
 
@@ -1396,6 +1578,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getupgradehistoryresponsetypedef"></a>
+
 ## GetUpgradeHistoryResponseTypeDef
 
 ```python
@@ -1410,6 +1594,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getupgradestatusrequestrequesttypedef"></a>
+
 ## GetUpgradeStatusRequestRequestTypeDef
 
 ```python
@@ -1419,6 +1605,8 @@ from mypy_boto3_opensearch.type_defs import GetUpgradeStatusRequestRequestTypeDe
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="getupgradestatusresponsetypedef"></a>
 
 ## GetUpgradeStatusResponseTypeDef
 
@@ -1434,6 +1622,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="inboundconnectionstatustypedef"></a>
+
 ## InboundConnectionStatusTypeDef
 
 ```python
@@ -1445,6 +1635,8 @@ Optional fields:
 - `StatusCode`:
   [InboundConnectionStatusCodeType](./literals.md#inboundconnectionstatuscodetype)
 - `Message`: `str`
+
+<a id="inboundconnectiontypedef"></a>
 
 ## InboundConnectionTypeDef
 
@@ -1462,6 +1654,8 @@ Optional fields:
 - `ConnectionStatus`:
   [InboundConnectionStatusTypeDef](./type_defs.md#inboundconnectionstatustypedef)
 
+<a id="instancecountlimitstypedef"></a>
+
 ## InstanceCountLimitsTypeDef
 
 ```python
@@ -1473,6 +1667,8 @@ Optional fields:
 - `MinimumInstanceCount`: `int`
 - `MaximumInstanceCount`: `int`
 
+<a id="instancelimitstypedef"></a>
+
 ## InstanceLimitsTypeDef
 
 ```python
@@ -1483,6 +1679,8 @@ Optional fields:
 
 - `InstanceCountLimits`:
   [InstanceCountLimitsTypeDef](./type_defs.md#instancecountlimitstypedef)
+
+<a id="instancetypedetailstypedef"></a>
 
 ## InstanceTypeDetailsTypeDef
 
@@ -1501,6 +1699,8 @@ Optional fields:
 - `WarmEnabled`: `bool`
 - `InstanceRole`: `List`\[`str`\]
 
+<a id="limitstypedef"></a>
+
 ## LimitsTypeDef
 
 ```python
@@ -1516,6 +1716,8 @@ Optional fields:
 - `AdditionalLimits`:
   `List`\[[AdditionalLimitTypeDef](./type_defs.md#additionallimittypedef)\]
 
+<a id="listdomainnamesrequestrequesttypedef"></a>
+
 ## ListDomainNamesRequestRequestTypeDef
 
 ```python
@@ -1525,6 +1727,8 @@ from mypy_boto3_opensearch.type_defs import ListDomainNamesRequestRequestTypeDef
 Optional fields:
 
 - `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
+
+<a id="listdomainnamesresponsetypedef"></a>
 
 ## ListDomainNamesResponseTypeDef
 
@@ -1538,6 +1742,8 @@ Required fields:
   `List`\[[DomainInfoTypeDef](./type_defs.md#domaininfotypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdomainsforpackagerequestrequesttypedef"></a>
 
 ## ListDomainsForPackageRequestRequestTypeDef
 
@@ -1554,6 +1760,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listdomainsforpackageresponsetypedef"></a>
+
 ## ListDomainsForPackageResponseTypeDef
 
 ```python
@@ -1567,6 +1775,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listinstancetypedetailsrequestrequesttypedef"></a>
 
 ## ListInstanceTypeDetailsRequestRequestTypeDef
 
@@ -1584,6 +1794,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listinstancetypedetailsresponsetypedef"></a>
+
 ## ListInstanceTypeDetailsResponseTypeDef
 
 ```python
@@ -1597,6 +1809,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpackagesfordomainrequestrequesttypedef"></a>
 
 ## ListPackagesForDomainRequestRequestTypeDef
 
@@ -1613,6 +1827,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listpackagesfordomainresponsetypedef"></a>
+
 ## ListPackagesForDomainResponseTypeDef
 
 ```python
@@ -1627,6 +1843,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsrequestrequesttypedef"></a>
+
 ## ListTagsRequestRequestTypeDef
 
 ```python
@@ -1636,6 +1854,8 @@ from mypy_boto3_opensearch.type_defs import ListTagsRequestRequestTypeDef
 Required fields:
 
 - `ARN`: `str`
+
+<a id="listtagsresponsetypedef"></a>
 
 ## ListTagsResponseTypeDef
 
@@ -1649,6 +1869,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listversionsrequestrequesttypedef"></a>
+
 ## ListVersionsRequestRequestTypeDef
 
 ```python
@@ -1659,6 +1881,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listversionsresponsetypedef"></a>
 
 ## ListVersionsResponseTypeDef
 
@@ -1673,6 +1897,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logpublishingoptiontypedef"></a>
+
 ## LogPublishingOptionTypeDef
 
 ```python
@@ -1683,6 +1909,8 @@ Optional fields:
 
 - `CloudWatchLogsLogGroupArn`: `str`
 - `Enabled`: `bool`
+
+<a id="logpublishingoptionsstatustypedef"></a>
 
 ## LogPublishingOptionsStatusTypeDef
 
@@ -1696,6 +1924,8 @@ Optional fields:
   [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
+<a id="masteruseroptionstypedef"></a>
+
 ## MasterUserOptionsTypeDef
 
 ```python
@@ -1707,6 +1937,8 @@ Optional fields:
 - `MasterUserARN`: `str`
 - `MasterUserName`: `str`
 - `MasterUserPassword`: `str`
+
+<a id="nodetonodeencryptionoptionsstatustypedef"></a>
 
 ## NodeToNodeEncryptionOptionsStatusTypeDef
 
@@ -1720,6 +1952,8 @@ Required fields:
   [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
+<a id="nodetonodeencryptionoptionstypedef"></a>
+
 ## NodeToNodeEncryptionOptionsTypeDef
 
 ```python
@@ -1729,6 +1963,8 @@ from mypy_boto3_opensearch.type_defs import NodeToNodeEncryptionOptionsTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
+
+<a id="optionstatustypedef"></a>
 
 ## OptionStatusTypeDef
 
@@ -1747,6 +1983,8 @@ Optional fields:
 - `UpdateVersion`: `int`
 - `PendingDeletion`: `bool`
 
+<a id="outboundconnectionstatustypedef"></a>
+
 ## OutboundConnectionStatusTypeDef
 
 ```python
@@ -1758,6 +1996,8 @@ Optional fields:
 - `StatusCode`:
   [OutboundConnectionStatusCodeType](./literals.md#outboundconnectionstatuscodetype)
 - `Message`: `str`
+
+<a id="outboundconnectiontypedef"></a>
 
 ## OutboundConnectionTypeDef
 
@@ -1775,6 +2015,8 @@ Optional fields:
 - `ConnectionAlias`: `str`
 - `ConnectionStatus`:
   [OutboundConnectionStatusTypeDef](./type_defs.md#outboundconnectionstatustypedef)
+
+<a id="packagedetailstypedef"></a>
 
 ## PackageDetailsTypeDef
 
@@ -1795,6 +2037,8 @@ Optional fields:
 - `AvailablePackageVersion`: `str`
 - `ErrorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
 
+<a id="packagesourcetypedef"></a>
+
 ## PackageSourceTypeDef
 
 ```python
@@ -1805,6 +2049,8 @@ Optional fields:
 
 - `S3BucketName`: `str`
 - `S3Key`: `str`
+
+<a id="packageversionhistorytypedef"></a>
 
 ## PackageVersionHistoryTypeDef
 
@@ -1817,6 +2063,8 @@ Optional fields:
 - `PackageVersion`: `str`
 - `CommitMessage`: `str`
 - `CreatedAt`: `datetime`
+
+<a id="purchasereservedinstanceofferingrequestrequesttypedef"></a>
 
 ## PurchaseReservedInstanceOfferingRequestRequestTypeDef
 
@@ -1833,6 +2081,8 @@ Optional fields:
 
 - `InstanceCount`: `int`
 
+<a id="purchasereservedinstanceofferingresponsetypedef"></a>
+
 ## PurchaseReservedInstanceOfferingResponseTypeDef
 
 ```python
@@ -1846,6 +2096,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="recurringchargetypedef"></a>
+
 ## RecurringChargeTypeDef
 
 ```python
@@ -1857,6 +2109,8 @@ Optional fields:
 - `RecurringChargeAmount`: `float`
 - `RecurringChargeFrequency`: `str`
 
+<a id="rejectinboundconnectionrequestrequesttypedef"></a>
+
 ## RejectInboundConnectionRequestRequestTypeDef
 
 ```python
@@ -1866,6 +2120,8 @@ from mypy_boto3_opensearch.type_defs import RejectInboundConnectionRequestReques
 Required fields:
 
 - `ConnectionId`: `str`
+
+<a id="rejectinboundconnectionresponsetypedef"></a>
 
 ## RejectInboundConnectionResponseTypeDef
 
@@ -1880,6 +2136,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removetagsrequestrequesttypedef"></a>
+
 ## RemoveTagsRequestRequestTypeDef
 
 ```python
@@ -1890,6 +2148,8 @@ Required fields:
 
 - `ARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="reservedinstanceofferingtypedef"></a>
 
 ## ReservedInstanceOfferingTypeDef
 
@@ -1910,6 +2170,8 @@ Optional fields:
   [ReservedInstancePaymentOptionType](./literals.md#reservedinstancepaymentoptiontype)
 - `RecurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
+
+<a id="reservedinstancetypedef"></a>
 
 ## ReservedInstanceTypeDef
 
@@ -1937,6 +2199,8 @@ Optional fields:
 - `RecurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1951,6 +2215,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="samlidptypedef"></a>
+
 ## SAMLIdpTypeDef
 
 ```python
@@ -1961,6 +2227,8 @@ Required fields:
 
 - `MetadataContent`: `str`
 - `EntityId`: `str`
+
+<a id="samloptionsinputtypedef"></a>
 
 ## SAMLOptionsInputTypeDef
 
@@ -1978,6 +2246,8 @@ Optional fields:
 - `RolesKey`: `str`
 - `SessionTimeoutMinutes`: `int`
 
+<a id="samloptionsoutputtypedef"></a>
+
 ## SAMLOptionsOutputTypeDef
 
 ```python
@@ -1991,6 +2261,8 @@ Optional fields:
 - `SubjectKey`: `str`
 - `RolesKey`: `str`
 - `SessionTimeoutMinutes`: `int`
+
+<a id="scheduledautotunedetailstypedef"></a>
 
 ## ScheduledAutoTuneDetailsTypeDef
 
@@ -2006,6 +2278,8 @@ Optional fields:
 - `Action`: `str`
 - `Severity`:
   [ScheduledAutoTuneSeverityTypeType](./literals.md#scheduledautotuneseveritytypetype)
+
+<a id="servicesoftwareoptionstypedef"></a>
 
 ## ServiceSoftwareOptionsTypeDef
 
@@ -2024,6 +2298,8 @@ Optional fields:
 - `AutomatedUpdateDate`: `datetime`
 - `OptionalDeployment`: `bool`
 
+<a id="snapshotoptionsstatustypedef"></a>
+
 ## SnapshotOptionsStatusTypeDef
 
 ```python
@@ -2035,6 +2311,8 @@ Required fields:
 - `Options`: [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
+<a id="snapshotoptionstypedef"></a>
+
 ## SnapshotOptionsTypeDef
 
 ```python
@@ -2045,6 +2323,8 @@ Optional fields:
 
 - `AutomatedSnapshotStartHour`: `int`
 
+<a id="startservicesoftwareupdaterequestrequesttypedef"></a>
+
 ## StartServiceSoftwareUpdateRequestRequestTypeDef
 
 ```python
@@ -2054,6 +2334,8 @@ from mypy_boto3_opensearch.type_defs import StartServiceSoftwareUpdateRequestReq
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="startservicesoftwareupdateresponsetypedef"></a>
 
 ## StartServiceSoftwareUpdateResponseTypeDef
 
@@ -2068,6 +2350,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="storagetypelimittypedef"></a>
+
 ## StorageTypeLimitTypeDef
 
 ```python
@@ -2078,6 +2362,8 @@ Optional fields:
 
 - `LimitName`: `str`
 - `LimitValues`: `List`\[`str`\]
+
+<a id="storagetypetypedef"></a>
 
 ## StorageTypeTypeDef
 
@@ -2092,6 +2378,8 @@ Optional fields:
 - `StorageTypeLimits`:
   `List`\[[StorageTypeLimitTypeDef](./type_defs.md#storagetypelimittypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2102,6 +2390,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="updatedomainconfigrequestrequesttypedef"></a>
 
 ## UpdateDomainConfigRequestRequestTypeDef
 
@@ -2138,6 +2428,8 @@ Optional fields:
   [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
 - `DryRun`: `bool`
 
+<a id="updatedomainconfigresponsetypedef"></a>
+
 ## UpdateDomainConfigResponseTypeDef
 
 ```python
@@ -2150,6 +2442,8 @@ Required fields:
 - `DryRunResults`: [DryRunResultsTypeDef](./type_defs.md#dryrunresultstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatepackagerequestrequesttypedef"></a>
 
 ## UpdatePackageRequestRequestTypeDef
 
@@ -2167,6 +2461,8 @@ Optional fields:
 - `PackageDescription`: `str`
 - `CommitMessage`: `str`
 
+<a id="updatepackageresponsetypedef"></a>
+
 ## UpdatePackageResponseTypeDef
 
 ```python
@@ -2179,6 +2475,8 @@ Required fields:
   [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="upgradedomainrequestrequesttypedef"></a>
 
 ## UpgradeDomainRequestRequestTypeDef
 
@@ -2195,6 +2493,8 @@ Optional fields:
 
 - `PerformCheckOnly`: `bool`
 - `AdvancedOptions`: `Mapping`\[`str`, `str`\]
+
+<a id="upgradedomainresponsetypedef"></a>
 
 ## UpgradeDomainResponseTypeDef
 
@@ -2214,6 +2514,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="upgradehistorytypedef"></a>
+
 ## UpgradeHistoryTypeDef
 
 ```python
@@ -2228,6 +2530,8 @@ Optional fields:
 - `StepsList`:
   `List`\[[UpgradeStepItemTypeDef](./type_defs.md#upgradestepitemtypedef)\]
 
+<a id="upgradestepitemtypedef"></a>
+
 ## UpgradeStepItemTypeDef
 
 ```python
@@ -2241,6 +2545,8 @@ Optional fields:
 - `Issues`: `List`\[`str`\]
 - `ProgressPercent`: `float`
 
+<a id="vpcderivedinfostatustypedef"></a>
+
 ## VPCDerivedInfoStatusTypeDef
 
 ```python
@@ -2251,6 +2557,8 @@ Required fields:
 
 - `Options`: [VPCDerivedInfoTypeDef](./type_defs.md#vpcderivedinfotypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="vpcderivedinfotypedef"></a>
 
 ## VPCDerivedInfoTypeDef
 
@@ -2265,6 +2573,8 @@ Optional fields:
 - `AvailabilityZones`: `List`\[`str`\]
 - `SecurityGroupIds`: `List`\[`str`\]
 
+<a id="vpcoptionstypedef"></a>
+
 ## VPCOptionsTypeDef
 
 ```python
@@ -2276,6 +2586,8 @@ Optional fields:
 - `SubnetIds`: `Sequence`\[`str`\]
 - `SecurityGroupIds`: `Sequence`\[`str`\]
 
+<a id="versionstatustypedef"></a>
+
 ## VersionStatusTypeDef
 
 ```python
@@ -2286,6 +2598,8 @@ Required fields:
 
 - `Options`: `str`
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="zoneawarenessconfigtypedef"></a>
 
 ## ZoneAwarenessConfigTypeDef
 

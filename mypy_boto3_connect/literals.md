@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-connect-module"></a>
+
 # Literals for boto3 Connect module
 
 > [Index](..) > [Connect](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
 type annotations stubs module
-[mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
+[mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
 
 - [Literals for boto3 Connect module](#literals-for-boto3-connect-module)
   - [AgentStatusStateType](#agentstatusstatetype)
@@ -77,6 +79,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="agentstatusstatetype"></a>
+
 ## AgentStatusStateType
 
 ```python
@@ -87,6 +91,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="agentstatustypetype"></a>
 
 ## AgentStatusTypeType
 
@@ -100,6 +106,8 @@ Values:
 - `OFFLINE`
 - `ROUTABLE`
 
+<a id="channeltype"></a>
+
 ## ChannelType
 
 ```python
@@ -112,6 +120,8 @@ Values:
 - `TASK`
 - `VOICE`
 
+<a id="comparisontype"></a>
+
 ## ComparisonType
 
 ```python
@@ -121,6 +131,8 @@ from mypy_boto3_connect.literals import ComparisonType
 Values:
 
 - `LT`
+
+<a id="contactflowmodulestatetype"></a>
 
 ## ContactFlowModuleStateType
 
@@ -133,6 +145,8 @@ Values:
 - `ACTIVE`
 - `ARCHIVED`
 
+<a id="contactflowmodulestatustype"></a>
+
 ## ContactFlowModuleStatusType
 
 ```python
@@ -144,6 +158,8 @@ Values:
 - `PUBLISHED`
 - `SAVED`
 
+<a id="contactflowstatetype"></a>
+
 ## ContactFlowStateType
 
 ```python
@@ -154,6 +170,8 @@ Values:
 
 - `ACTIVE`
 - `ARCHIVED`
+
+<a id="contactflowtypetype"></a>
 
 ## ContactFlowTypeType
 
@@ -173,6 +191,8 @@ Values:
 - `OUTBOUND_WHISPER`
 - `QUEUE_TRANSFER`
 
+<a id="contactinitiationmethodtype"></a>
+
 ## ContactInitiationMethodType
 
 ```python
@@ -187,6 +207,8 @@ Values:
 - `OUTBOUND`
 - `QUEUE_TRANSFER`
 - `TRANSFER`
+
+<a id="currentmetricnametype"></a>
 
 ## CurrentMetricNameType
 
@@ -210,6 +232,8 @@ Values:
 - `SLOTS_ACTIVE`
 - `SLOTS_AVAILABLE`
 
+<a id="directorytypetype"></a>
+
 ## DirectoryTypeType
 
 ```python
@@ -222,6 +246,8 @@ Values:
 - `EXISTING_DIRECTORY`
 - `SAML`
 
+<a id="encryptiontypetype"></a>
+
 ## EncryptionTypeType
 
 ```python
@@ -231,6 +257,8 @@ from mypy_boto3_connect.literals import EncryptionTypeType
 Values:
 
 - `KMS`
+
+<a id="getmetricdatapaginatorname"></a>
 
 ## GetMetricDataPaginatorName
 
@@ -242,6 +270,8 @@ Values:
 
 - `get_metric_data`
 
+<a id="groupingtype"></a>
+
 ## GroupingType
 
 ```python
@@ -252,6 +282,8 @@ Values:
 
 - `CHANNEL`
 - `QUEUE`
+
+<a id="historicalmetricnametype"></a>
 
 ## HistoricalMetricNameType
 
@@ -287,6 +319,8 @@ Values:
 - `QUEUED_TIME`
 - `SERVICE_LEVEL`
 
+<a id="hoursofoperationdaystype"></a>
+
 ## HoursOfOperationDaysType
 
 ```python
@@ -302,6 +336,8 @@ Values:
 - `THURSDAY`
 - `TUESDAY`
 - `WEDNESDAY`
+
+<a id="instanceattributetypetype"></a>
 
 ## InstanceAttributeTypeType
 
@@ -319,6 +355,8 @@ Values:
 - `OUTBOUND_CALLS`
 - `USE_CUSTOM_TTS_VOICES`
 
+<a id="instancestatustype"></a>
+
 ## InstanceStatusType
 
 ```python
@@ -330,6 +368,8 @@ Values:
 - `ACTIVE`
 - `CREATION_FAILED`
 - `CREATION_IN_PROGRESS`
+
+<a id="instancestorageresourcetypetype"></a>
 
 ## InstanceStorageResourceTypeType
 
@@ -346,6 +386,8 @@ Values:
 - `MEDIA_STREAMS`
 - `SCHEDULED_REPORTS`
 
+<a id="integrationtypetype"></a>
+
 ## IntegrationTypeType
 
 ```python
@@ -360,6 +402,8 @@ Values:
 - `WISDOM_ASSISTANT`
 - `WISDOM_KNOWLEDGE_BASE`
 
+<a id="lexversiontype"></a>
+
 ## LexVersionType
 
 ```python
@@ -371,6 +415,8 @@ Values:
 - `V1`
 - `V2`
 
+<a id="listagentstatusespaginatorname"></a>
+
 ## ListAgentStatusesPaginatorName
 
 ```python
@@ -380,6 +426,8 @@ from mypy_boto3_connect.literals import ListAgentStatusesPaginatorName
 Values:
 
 - `list_agent_statuses`
+
+<a id="listapprovedoriginspaginatorname"></a>
 
 ## ListApprovedOriginsPaginatorName
 
@@ -391,6 +439,8 @@ Values:
 
 - `list_approved_origins`
 
+<a id="listbotspaginatorname"></a>
+
 ## ListBotsPaginatorName
 
 ```python
@@ -400,6 +450,8 @@ from mypy_boto3_connect.literals import ListBotsPaginatorName
 Values:
 
 - `list_bots`
+
+<a id="listcontactflowmodulespaginatorname"></a>
 
 ## ListContactFlowModulesPaginatorName
 
@@ -411,6 +463,8 @@ Values:
 
 - `list_contact_flow_modules`
 
+<a id="listcontactflowspaginatorname"></a>
+
 ## ListContactFlowsPaginatorName
 
 ```python
@@ -420,6 +474,8 @@ from mypy_boto3_connect.literals import ListContactFlowsPaginatorName
 Values:
 
 - `list_contact_flows`
+
+<a id="listcontactreferencespaginatorname"></a>
 
 ## ListContactReferencesPaginatorName
 
@@ -431,6 +487,8 @@ Values:
 
 - `list_contact_references`
 
+<a id="listdefaultvocabulariespaginatorname"></a>
+
 ## ListDefaultVocabulariesPaginatorName
 
 ```python
@@ -440,6 +498,8 @@ from mypy_boto3_connect.literals import ListDefaultVocabulariesPaginatorName
 Values:
 
 - `list_default_vocabularies`
+
+<a id="listhoursofoperationspaginatorname"></a>
 
 ## ListHoursOfOperationsPaginatorName
 
@@ -451,6 +511,8 @@ Values:
 
 - `list_hours_of_operations`
 
+<a id="listinstanceattributespaginatorname"></a>
+
 ## ListInstanceAttributesPaginatorName
 
 ```python
@@ -460,6 +522,8 @@ from mypy_boto3_connect.literals import ListInstanceAttributesPaginatorName
 Values:
 
 - `list_instance_attributes`
+
+<a id="listinstancestorageconfigspaginatorname"></a>
 
 ## ListInstanceStorageConfigsPaginatorName
 
@@ -471,6 +535,8 @@ Values:
 
 - `list_instance_storage_configs`
 
+<a id="listinstancespaginatorname"></a>
+
 ## ListInstancesPaginatorName
 
 ```python
@@ -480,6 +546,8 @@ from mypy_boto3_connect.literals import ListInstancesPaginatorName
 Values:
 
 - `list_instances`
+
+<a id="listintegrationassociationspaginatorname"></a>
 
 ## ListIntegrationAssociationsPaginatorName
 
@@ -491,6 +559,8 @@ Values:
 
 - `list_integration_associations`
 
+<a id="listlambdafunctionspaginatorname"></a>
+
 ## ListLambdaFunctionsPaginatorName
 
 ```python
@@ -500,6 +570,8 @@ from mypy_boto3_connect.literals import ListLambdaFunctionsPaginatorName
 Values:
 
 - `list_lambda_functions`
+
+<a id="listlexbotspaginatorname"></a>
 
 ## ListLexBotsPaginatorName
 
@@ -511,6 +583,8 @@ Values:
 
 - `list_lex_bots`
 
+<a id="listphonenumberspaginatorname"></a>
+
 ## ListPhoneNumbersPaginatorName
 
 ```python
@@ -520,6 +594,8 @@ from mypy_boto3_connect.literals import ListPhoneNumbersPaginatorName
 Values:
 
 - `list_phone_numbers`
+
+<a id="listpromptspaginatorname"></a>
 
 ## ListPromptsPaginatorName
 
@@ -531,6 +607,8 @@ Values:
 
 - `list_prompts`
 
+<a id="listqueuequickconnectspaginatorname"></a>
+
 ## ListQueueQuickConnectsPaginatorName
 
 ```python
@@ -540,6 +618,8 @@ from mypy_boto3_connect.literals import ListQueueQuickConnectsPaginatorName
 Values:
 
 - `list_queue_quick_connects`
+
+<a id="listqueuespaginatorname"></a>
 
 ## ListQueuesPaginatorName
 
@@ -551,6 +631,8 @@ Values:
 
 - `list_queues`
 
+<a id="listquickconnectspaginatorname"></a>
+
 ## ListQuickConnectsPaginatorName
 
 ```python
@@ -560,6 +642,8 @@ from mypy_boto3_connect.literals import ListQuickConnectsPaginatorName
 Values:
 
 - `list_quick_connects`
+
+<a id="listroutingprofilequeuespaginatorname"></a>
 
 ## ListRoutingProfileQueuesPaginatorName
 
@@ -571,6 +655,8 @@ Values:
 
 - `list_routing_profile_queues`
 
+<a id="listroutingprofilespaginatorname"></a>
+
 ## ListRoutingProfilesPaginatorName
 
 ```python
@@ -580,6 +666,8 @@ from mypy_boto3_connect.literals import ListRoutingProfilesPaginatorName
 Values:
 
 - `list_routing_profiles`
+
+<a id="listsecuritykeyspaginatorname"></a>
 
 ## ListSecurityKeysPaginatorName
 
@@ -591,6 +679,8 @@ Values:
 
 - `list_security_keys`
 
+<a id="listsecurityprofilepermissionspaginatorname"></a>
+
 ## ListSecurityProfilePermissionsPaginatorName
 
 ```python
@@ -600,6 +690,8 @@ from mypy_boto3_connect.literals import ListSecurityProfilePermissionsPaginatorN
 Values:
 
 - `list_security_profile_permissions`
+
+<a id="listsecurityprofilespaginatorname"></a>
 
 ## ListSecurityProfilesPaginatorName
 
@@ -611,6 +703,8 @@ Values:
 
 - `list_security_profiles`
 
+<a id="listusecasespaginatorname"></a>
+
 ## ListUseCasesPaginatorName
 
 ```python
@@ -620,6 +714,8 @@ from mypy_boto3_connect.literals import ListUseCasesPaginatorName
 Values:
 
 - `list_use_cases`
+
+<a id="listuserhierarchygroupspaginatorname"></a>
 
 ## ListUserHierarchyGroupsPaginatorName
 
@@ -631,6 +727,8 @@ Values:
 
 - `list_user_hierarchy_groups`
 
+<a id="listuserspaginatorname"></a>
+
 ## ListUsersPaginatorName
 
 ```python
@@ -640,6 +738,8 @@ from mypy_boto3_connect.literals import ListUsersPaginatorName
 Values:
 
 - `list_users`
+
+<a id="phonenumbercountrycodetype"></a>
 
 ## PhoneNumberCountryCodeType
 
@@ -887,6 +987,8 @@ Values:
 - `ZM`
 - `ZW`
 
+<a id="phonenumbertypetype"></a>
+
 ## PhoneNumberTypeType
 
 ```python
@@ -897,6 +999,8 @@ Values:
 
 - `DID`
 - `TOLL_FREE`
+
+<a id="phonetypetype"></a>
 
 ## PhoneTypeType
 
@@ -909,6 +1013,8 @@ Values:
 - `DESK_PHONE`
 - `SOFT_PHONE`
 
+<a id="queuestatustype"></a>
+
 ## QueueStatusType
 
 ```python
@@ -920,6 +1026,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="queuetypetype"></a>
+
 ## QueueTypeType
 
 ```python
@@ -930,6 +1038,8 @@ Values:
 
 - `AGENT`
 - `STANDARD`
+
+<a id="quickconnecttypetype"></a>
 
 ## QuickConnectTypeType
 
@@ -943,6 +1053,8 @@ Values:
 - `QUEUE`
 - `USER`
 
+<a id="referencestatustype"></a>
+
 ## ReferenceStatusType
 
 ```python
@@ -953,6 +1065,8 @@ Values:
 
 - `APPROVED`
 - `REJECTED`
+
+<a id="referencetypetype"></a>
 
 ## ReferenceTypeType
 
@@ -965,6 +1079,8 @@ Values:
 - `ATTACHMENT`
 - `URL`
 
+<a id="searchvocabulariespaginatorname"></a>
+
 ## SearchVocabulariesPaginatorName
 
 ```python
@@ -974,6 +1090,8 @@ from mypy_boto3_connect.literals import SearchVocabulariesPaginatorName
 Values:
 
 - `search_vocabularies`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -986,6 +1104,8 @@ Values:
 - `SALESFORCE`
 - `ZENDESK`
 
+<a id="statistictype"></a>
+
 ## StatisticType
 
 ```python
@@ -997,6 +1117,8 @@ Values:
 - `AVG`
 - `MAX`
 - `SUM`
+
+<a id="storagetypetype"></a>
 
 ## StorageTypeType
 
@@ -1011,6 +1133,8 @@ Values:
 - `KINESIS_VIDEO_STREAM`
 - `S3`
 
+<a id="traffictypetype"></a>
+
 ## TrafficTypeType
 
 ```python
@@ -1021,6 +1145,8 @@ Values:
 
 - `CAMPAIGN`
 - `GENERAL`
+
+<a id="unittype"></a>
 
 ## UnitType
 
@@ -1034,6 +1160,8 @@ Values:
 - `PERCENT`
 - `SECONDS`
 
+<a id="usecasetypetype"></a>
+
 ## UseCaseTypeType
 
 ```python
@@ -1044,6 +1172,8 @@ Values:
 
 - `CONNECT_CAMPAIGNS`
 - `RULES_EVALUATION`
+
+<a id="vocabularylanguagecodetype"></a>
 
 ## VocabularyLanguageCodeType
 
@@ -1075,6 +1205,8 @@ Values:
 - `pt-PT`
 - `zh-CN`
 
+<a id="vocabularystatetype"></a>
+
 ## VocabularyStateType
 
 ```python
@@ -1088,6 +1220,8 @@ Values:
 - `CREATION_IN_PROGRESS`
 - `DELETE_IN_PROGRESS`
 
+<a id="voicerecordingtracktype"></a>
+
 ## VoiceRecordingTrackType
 
 ```python
@@ -1099,6 +1233,8 @@ Values:
 - `ALL`
 - `FROM_AGENT`
 - `TO_AGENT`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1407,6 +1543,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

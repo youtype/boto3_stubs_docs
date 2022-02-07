@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-sagemaker-module"></a>
+
 # Paginators for boto3 SageMaker module
 
 > [Index](..) > [SageMaker](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module
-[mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
+[mypy-boto3-sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
 - [Paginators for boto3 SageMaker module](#paginators-for-boto3-sagemaker-module)
   - [ListActionsPaginator](#listactionspaginator)
@@ -66,6 +68,8 @@ type annotations stubs module
   - [ListWorkteamsPaginator](#listworkteamspaginator)
   - [SearchPaginator](#searchpaginator)
 
+<a id="listactionspaginator"></a>
+
 ## ListActionsPaginator
 
 Type annotations for `boto3.client("sagemaker").get_paginator("list_actions")`.
@@ -73,10 +77,12 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_actions")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListActionsPaginator
 
 def get_list_actions_paginator() -> ListActionsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_actions")
+    return Session().client("sagemaker").get_paginator("list_actions")
 ```
 
 Boto3 documentation:
@@ -96,6 +102,8 @@ Arguments for `ListActionsPaginator.paginate` method:
 `ListActionsPaginator.paginate` returns
 `_PageIterator`\[[ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef)\].
 
+<a id="listalgorithmspaginator"></a>
+
 ## ListAlgorithmsPaginator
 
 Type annotations for
@@ -104,10 +112,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListAlgorithmsPaginator
 
 def get_list_algorithms_paginator() -> ListAlgorithmsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_algorithms")
+    return Session().client("sagemaker").get_paginator("list_algorithms")
 ```
 
 Boto3 documentation:
@@ -126,6 +136,8 @@ Arguments for `ListAlgorithmsPaginator.paginate` method:
 `ListAlgorithmsPaginator.paginate` returns
 `_PageIterator`\[[ListAlgorithmsOutputTypeDef](./type_defs.md#listalgorithmsoutputtypedef)\].
 
+<a id="listappimageconfigspaginator"></a>
+
 ## ListAppImageConfigsPaginator
 
 Type annotations for
@@ -134,10 +146,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListAppImageConfigsPaginator
 
 def get_list_app_image_configs_paginator() -> ListAppImageConfigsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_app_image_configs")
+    return Session().client("sagemaker").get_paginator("list_app_image_configs")
 ```
 
 Boto3 documentation:
@@ -159,6 +173,8 @@ Arguments for `ListAppImageConfigsPaginator.paginate` method:
 `ListAppImageConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListAppImageConfigsResponseTypeDef](./type_defs.md#listappimageconfigsresponsetypedef)\].
 
+<a id="listappspaginator"></a>
+
 ## ListAppsPaginator
 
 Type annotations for `boto3.client("sagemaker").get_paginator("list_apps")`.
@@ -166,10 +182,12 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_apps")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListAppsPaginator
 
 def get_list_apps_paginator() -> ListAppsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_apps")
+    return Session().client("sagemaker").get_paginator("list_apps")
 ```
 
 Boto3 documentation:
@@ -188,6 +206,8 @@ Arguments for `ListAppsPaginator.paginate` method:
 `ListAppsPaginator.paginate` returns
 `_PageIterator`\[[ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef)\].
 
+<a id="listartifactspaginator"></a>
+
 ## ListArtifactsPaginator
 
 Type annotations for
@@ -196,10 +216,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListArtifactsPaginator
 
 def get_list_artifacts_paginator() -> ListArtifactsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_artifacts")
+    return Session().client("sagemaker").get_paginator("list_artifacts")
 ```
 
 Boto3 documentation:
@@ -220,6 +242,8 @@ Arguments for `ListArtifactsPaginator.paginate` method:
 `ListArtifactsPaginator.paginate` returns
 `_PageIterator`\[[ListArtifactsResponseTypeDef](./type_defs.md#listartifactsresponsetypedef)\].
 
+<a id="listassociationspaginator"></a>
+
 ## ListAssociationsPaginator
 
 Type annotations for
@@ -228,10 +252,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListAssociationsPaginator
 
 def get_list_associations_paginator() -> ListAssociationsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_associations")
+    return Session().client("sagemaker").get_paginator("list_associations")
 ```
 
 Boto3 documentation:
@@ -255,6 +281,8 @@ Arguments for `ListAssociationsPaginator.paginate` method:
 `ListAssociationsPaginator.paginate` returns
 `_PageIterator`\[[ListAssociationsResponseTypeDef](./type_defs.md#listassociationsresponsetypedef)\].
 
+<a id="listautomljobspaginator"></a>
+
 ## ListAutoMLJobsPaginator
 
 Type annotations for
@@ -263,10 +291,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListAutoMLJobsPaginator
 
 def get_list_auto_ml_jobs_paginator() -> ListAutoMLJobsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_auto_ml_jobs")
+    return Session().client("sagemaker").get_paginator("list_auto_ml_jobs")
 ```
 
 Boto3 documentation:
@@ -288,6 +318,8 @@ Arguments for `ListAutoMLJobsPaginator.paginate` method:
 `ListAutoMLJobsPaginator.paginate` returns
 `_PageIterator`\[[ListAutoMLJobsResponseTypeDef](./type_defs.md#listautomljobsresponsetypedef)\].
 
+<a id="listcandidatesforautomljobpaginator"></a>
+
 ## ListCandidatesForAutoMLJobPaginator
 
 Type annotations for
@@ -296,10 +328,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListCandidatesForAutoMLJobPaginator
 
 def get_list_candidates_for_auto_ml_job_paginator() -> ListCandidatesForAutoMLJobPaginator:
-    return boto3.client("sagemaker").get_paginator("list_candidates_for_auto_ml_job")
+    return Session().client("sagemaker").get_paginator("list_candidates_for_auto_ml_job")
 ```
 
 Boto3 documentation:
@@ -318,6 +352,8 @@ Arguments for `ListCandidatesForAutoMLJobPaginator.paginate` method:
 `ListCandidatesForAutoMLJobPaginator.paginate` returns
 `_PageIterator`\[[ListCandidatesForAutoMLJobResponseTypeDef](./type_defs.md#listcandidatesforautomljobresponsetypedef)\].
 
+<a id="listcoderepositoriespaginator"></a>
+
 ## ListCodeRepositoriesPaginator
 
 Type annotations for
@@ -326,10 +362,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListCodeRepositoriesPaginator
 
 def get_list_code_repositories_paginator() -> ListCodeRepositoriesPaginator:
-    return boto3.client("sagemaker").get_paginator("list_code_repositories")
+    return Session().client("sagemaker").get_paginator("list_code_repositories")
 ```
 
 Boto3 documentation:
@@ -351,6 +389,8 @@ Arguments for `ListCodeRepositoriesPaginator.paginate` method:
 `ListCodeRepositoriesPaginator.paginate` returns
 `_PageIterator`\[[ListCodeRepositoriesOutputTypeDef](./type_defs.md#listcoderepositoriesoutputtypedef)\].
 
+<a id="listcompilationjobspaginator"></a>
+
 ## ListCompilationJobsPaginator
 
 Type annotations for
@@ -359,10 +399,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListCompilationJobsPaginator
 
 def get_list_compilation_jobs_paginator() -> ListCompilationJobsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_compilation_jobs")
+    return Session().client("sagemaker").get_paginator("list_compilation_jobs")
 ```
 
 Boto3 documentation:
@@ -386,6 +428,8 @@ Arguments for `ListCompilationJobsPaginator.paginate` method:
 `ListCompilationJobsPaginator.paginate` returns
 `_PageIterator`\[[ListCompilationJobsResponseTypeDef](./type_defs.md#listcompilationjobsresponsetypedef)\].
 
+<a id="listcontextspaginator"></a>
+
 ## ListContextsPaginator
 
 Type annotations for
@@ -394,10 +438,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListContextsPaginator
 
 def get_list_contexts_paginator() -> ListContextsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_contexts")
+    return Session().client("sagemaker").get_paginator("list_contexts")
 ```
 
 Boto3 documentation:
@@ -417,6 +463,8 @@ Arguments for `ListContextsPaginator.paginate` method:
 `ListContextsPaginator.paginate` returns
 `_PageIterator`\[[ListContextsResponseTypeDef](./type_defs.md#listcontextsresponsetypedef)\].
 
+<a id="listdataqualityjobdefinitionspaginator"></a>
+
 ## ListDataQualityJobDefinitionsPaginator
 
 Type annotations for
@@ -425,10 +473,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListDataQualityJobDefinitionsPaginator
 
 def get_list_data_quality_job_definitions_paginator() -> ListDataQualityJobDefinitionsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_data_quality_job_definitions")
+    return Session().client("sagemaker").get_paginator("list_data_quality_job_definitions")
 ```
 
 Boto3 documentation:
@@ -449,6 +499,8 @@ Arguments for `ListDataQualityJobDefinitionsPaginator.paginate` method:
 `ListDataQualityJobDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListDataQualityJobDefinitionsResponseTypeDef](./type_defs.md#listdataqualityjobdefinitionsresponsetypedef)\].
 
+<a id="listdevicefleetspaginator"></a>
+
 ## ListDeviceFleetsPaginator
 
 Type annotations for
@@ -457,10 +509,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListDeviceFleetsPaginator
 
 def get_list_device_fleets_paginator() -> ListDeviceFleetsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_device_fleets")
+    return Session().client("sagemaker").get_paginator("list_device_fleets")
 ```
 
 Boto3 documentation:
@@ -482,6 +536,8 @@ Arguments for `ListDeviceFleetsPaginator.paginate` method:
 `ListDeviceFleetsPaginator.paginate` returns
 `_PageIterator`\[[ListDeviceFleetsResponseTypeDef](./type_defs.md#listdevicefleetsresponsetypedef)\].
 
+<a id="listdevicespaginator"></a>
+
 ## ListDevicesPaginator
 
 Type annotations for `boto3.client("sagemaker").get_paginator("list_devices")`.
@@ -489,10 +545,12 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_devices")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListDevicesPaginator
 
 def get_list_devices_paginator() -> ListDevicesPaginator:
-    return boto3.client("sagemaker").get_paginator("list_devices")
+    return Session().client("sagemaker").get_paginator("list_devices")
 ```
 
 Boto3 documentation:
@@ -509,6 +567,8 @@ Arguments for `ListDevicesPaginator.paginate` method:
 `ListDevicesPaginator.paginate` returns
 `_PageIterator`\[[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef)\].
 
+<a id="listdomainspaginator"></a>
+
 ## ListDomainsPaginator
 
 Type annotations for `boto3.client("sagemaker").get_paginator("list_domains")`.
@@ -516,10 +576,12 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_domains")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListDomainsPaginator
 
 def get_list_domains_paginator() -> ListDomainsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_domains")
+    return Session().client("sagemaker").get_paginator("list_domains")
 ```
 
 Boto3 documentation:
@@ -533,6 +595,8 @@ Arguments for `ListDomainsPaginator.paginate` method:
 `ListDomainsPaginator.paginate` returns
 `_PageIterator`\[[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef)\].
 
+<a id="listedgepackagingjobspaginator"></a>
+
 ## ListEdgePackagingJobsPaginator
 
 Type annotations for
@@ -541,10 +605,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListEdgePackagingJobsPaginator
 
 def get_list_edge_packaging_jobs_paginator() -> ListEdgePackagingJobsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_edge_packaging_jobs")
+    return Session().client("sagemaker").get_paginator("list_edge_packaging_jobs")
 ```
 
 Boto3 documentation:
@@ -569,6 +635,8 @@ Arguments for `ListEdgePackagingJobsPaginator.paginate` method:
 `ListEdgePackagingJobsPaginator.paginate` returns
 `_PageIterator`\[[ListEdgePackagingJobsResponseTypeDef](./type_defs.md#listedgepackagingjobsresponsetypedef)\].
 
+<a id="listendpointconfigspaginator"></a>
+
 ## ListEndpointConfigsPaginator
 
 Type annotations for
@@ -577,10 +645,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListEndpointConfigsPaginator
 
 def get_list_endpoint_configs_paginator() -> ListEndpointConfigsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_endpoint_configs")
+    return Session().client("sagemaker").get_paginator("list_endpoint_configs")
 ```
 
 Boto3 documentation:
@@ -600,6 +670,8 @@ Arguments for `ListEndpointConfigsPaginator.paginate` method:
 `ListEndpointConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListEndpointConfigsOutputTypeDef](./type_defs.md#listendpointconfigsoutputtypedef)\].
 
+<a id="listendpointspaginator"></a>
+
 ## ListEndpointsPaginator
 
 Type annotations for
@@ -608,10 +680,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListEndpointsPaginator
 
 def get_list_endpoints_paginator() -> ListEndpointsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_endpoints")
+    return Session().client("sagemaker").get_paginator("list_endpoints")
 ```
 
 Boto3 documentation:
@@ -633,6 +707,8 @@ Arguments for `ListEndpointsPaginator.paginate` method:
 `ListEndpointsPaginator.paginate` returns
 `_PageIterator`\[[ListEndpointsOutputTypeDef](./type_defs.md#listendpointsoutputtypedef)\].
 
+<a id="listexperimentspaginator"></a>
+
 ## ListExperimentsPaginator
 
 Type annotations for
@@ -641,10 +717,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListExperimentsPaginator
 
 def get_list_experiments_paginator() -> ListExperimentsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_experiments")
+    return Session().client("sagemaker").get_paginator("list_experiments")
 ```
 
 Boto3 documentation:
@@ -662,6 +740,8 @@ Arguments for `ListExperimentsPaginator.paginate` method:
 `ListExperimentsPaginator.paginate` returns
 `_PageIterator`\[[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef)\].
 
+<a id="listfeaturegroupspaginator"></a>
+
 ## ListFeatureGroupsPaginator
 
 Type annotations for
@@ -670,10 +750,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListFeatureGroupsPaginator
 
 def get_list_feature_groups_paginator() -> ListFeatureGroupsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_feature_groups")
+    return Session().client("sagemaker").get_paginator("list_feature_groups")
 ```
 
 Boto3 documentation:
@@ -697,6 +779,8 @@ Arguments for `ListFeatureGroupsPaginator.paginate` method:
 `ListFeatureGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListFeatureGroupsResponseTypeDef](./type_defs.md#listfeaturegroupsresponsetypedef)\].
 
+<a id="listflowdefinitionspaginator"></a>
+
 ## ListFlowDefinitionsPaginator
 
 Type annotations for
@@ -705,10 +789,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListFlowDefinitionsPaginator
 
 def get_list_flow_definitions_paginator() -> ListFlowDefinitionsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_flow_definitions")
+    return Session().client("sagemaker").get_paginator("list_flow_definitions")
 ```
 
 Boto3 documentation:
@@ -725,6 +811,8 @@ Arguments for `ListFlowDefinitionsPaginator.paginate` method:
 `ListFlowDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListFlowDefinitionsResponseTypeDef](./type_defs.md#listflowdefinitionsresponsetypedef)\].
 
+<a id="listhumantaskuispaginator"></a>
+
 ## ListHumanTaskUisPaginator
 
 Type annotations for
@@ -733,10 +821,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListHumanTaskUisPaginator
 
 def get_list_human_task_uis_paginator() -> ListHumanTaskUisPaginator:
-    return boto3.client("sagemaker").get_paginator("list_human_task_uis")
+    return Session().client("sagemaker").get_paginator("list_human_task_uis")
 ```
 
 Boto3 documentation:
@@ -753,6 +843,8 @@ Arguments for `ListHumanTaskUisPaginator.paginate` method:
 `ListHumanTaskUisPaginator.paginate` returns
 `_PageIterator`\[[ListHumanTaskUisResponseTypeDef](./type_defs.md#listhumantaskuisresponsetypedef)\].
 
+<a id="listhyperparametertuningjobspaginator"></a>
+
 ## ListHyperParameterTuningJobsPaginator
 
 Type annotations for
@@ -761,10 +853,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListHyperParameterTuningJobsPaginator
 
 def get_list_hyper_parameter_tuning_jobs_paginator() -> ListHyperParameterTuningJobsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_hyper_parameter_tuning_jobs")
+    return Session().client("sagemaker").get_paginator("list_hyper_parameter_tuning_jobs")
 ```
 
 Boto3 documentation:
@@ -788,6 +882,8 @@ Arguments for `ListHyperParameterTuningJobsPaginator.paginate` method:
 `ListHyperParameterTuningJobsPaginator.paginate` returns
 `_PageIterator`\[[ListHyperParameterTuningJobsResponseTypeDef](./type_defs.md#listhyperparametertuningjobsresponsetypedef)\].
 
+<a id="listimageversionspaginator"></a>
+
 ## ListImageVersionsPaginator
 
 Type annotations for
@@ -796,10 +892,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListImageVersionsPaginator
 
 def get_list_image_versions_paginator() -> ListImageVersionsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_image_versions")
+    return Session().client("sagemaker").get_paginator("list_image_versions")
 ```
 
 Boto3 documentation:
@@ -821,6 +919,8 @@ Arguments for `ListImageVersionsPaginator.paginate` method:
 `ListImageVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListImageVersionsResponseTypeDef](./type_defs.md#listimageversionsresponsetypedef)\].
 
+<a id="listimagespaginator"></a>
+
 ## ListImagesPaginator
 
 Type annotations for `boto3.client("sagemaker").get_paginator("list_images")`.
@@ -828,10 +928,12 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_images")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListImagesPaginator
 
 def get_list_images_paginator() -> ListImagesPaginator:
-    return boto3.client("sagemaker").get_paginator("list_images")
+    return Session().client("sagemaker").get_paginator("list_images")
 ```
 
 Boto3 documentation:
@@ -852,6 +954,8 @@ Arguments for `ListImagesPaginator.paginate` method:
 `ListImagesPaginator.paginate` returns
 `_PageIterator`\[[ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef)\].
 
+<a id="listinferencerecommendationsjobspaginator"></a>
+
 ## ListInferenceRecommendationsJobsPaginator
 
 Type annotations for
@@ -860,10 +964,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListInferenceRecommendationsJobsPaginator
 
 def get_list_inference_recommendations_jobs_paginator() -> ListInferenceRecommendationsJobsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_inference_recommendations_jobs")
+    return Session().client("sagemaker").get_paginator("list_inference_recommendations_jobs")
 ```
 
 Boto3 documentation:
@@ -887,6 +993,8 @@ Arguments for `ListInferenceRecommendationsJobsPaginator.paginate` method:
 `ListInferenceRecommendationsJobsPaginator.paginate` returns
 `_PageIterator`\[[ListInferenceRecommendationsJobsResponseTypeDef](./type_defs.md#listinferencerecommendationsjobsresponsetypedef)\].
 
+<a id="listlabelingjobspaginator"></a>
+
 ## ListLabelingJobsPaginator
 
 Type annotations for
@@ -895,10 +1003,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListLabelingJobsPaginator
 
 def get_list_labeling_jobs_paginator() -> ListLabelingJobsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_labeling_jobs")
+    return Session().client("sagemaker").get_paginator("list_labeling_jobs")
 ```
 
 Boto3 documentation:
@@ -920,6 +1030,8 @@ Arguments for `ListLabelingJobsPaginator.paginate` method:
 `ListLabelingJobsPaginator.paginate` returns
 `_PageIterator`\[[ListLabelingJobsResponseTypeDef](./type_defs.md#listlabelingjobsresponsetypedef)\].
 
+<a id="listlabelingjobsforworkteampaginator"></a>
+
 ## ListLabelingJobsForWorkteamPaginator
 
 Type annotations for
@@ -928,10 +1040,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListLabelingJobsForWorkteamPaginator
 
 def get_list_labeling_jobs_for_workteam_paginator() -> ListLabelingJobsForWorkteamPaginator:
-    return boto3.client("sagemaker").get_paginator("list_labeling_jobs_for_workteam")
+    return Session().client("sagemaker").get_paginator("list_labeling_jobs_for_workteam")
 ```
 
 Boto3 documentation:
@@ -952,6 +1066,8 @@ Arguments for `ListLabelingJobsForWorkteamPaginator.paginate` method:
 `ListLabelingJobsForWorkteamPaginator.paginate` returns
 `_PageIterator`\[[ListLabelingJobsForWorkteamResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponsetypedef)\].
 
+<a id="listlineagegroupspaginator"></a>
+
 ## ListLineageGroupsPaginator
 
 Type annotations for
@@ -960,10 +1076,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListLineageGroupsPaginator
 
 def get_list_lineage_groups_paginator() -> ListLineageGroupsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_lineage_groups")
+    return Session().client("sagemaker").get_paginator("list_lineage_groups")
 ```
 
 Boto3 documentation:
@@ -981,6 +1099,8 @@ Arguments for `ListLineageGroupsPaginator.paginate` method:
 `ListLineageGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListLineageGroupsResponseTypeDef](./type_defs.md#listlineagegroupsresponsetypedef)\].
 
+<a id="listmodelbiasjobdefinitionspaginator"></a>
+
 ## ListModelBiasJobDefinitionsPaginator
 
 Type annotations for
@@ -989,10 +1109,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListModelBiasJobDefinitionsPaginator
 
 def get_list_model_bias_job_definitions_paginator() -> ListModelBiasJobDefinitionsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_model_bias_job_definitions")
+    return Session().client("sagemaker").get_paginator("list_model_bias_job_definitions")
 ```
 
 Boto3 documentation:
@@ -1013,6 +1135,8 @@ Arguments for `ListModelBiasJobDefinitionsPaginator.paginate` method:
 `ListModelBiasJobDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListModelBiasJobDefinitionsResponseTypeDef](./type_defs.md#listmodelbiasjobdefinitionsresponsetypedef)\].
 
+<a id="listmodelexplainabilityjobdefinitionspaginator"></a>
+
 ## ListModelExplainabilityJobDefinitionsPaginator
 
 Type annotations for
@@ -1021,10 +1145,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListModelExplainabilityJobDefinitionsPaginator
 
 def get_list_model_explainability_job_definitions_paginator() -> ListModelExplainabilityJobDefinitionsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_model_explainability_job_definitions")
+    return Session().client("sagemaker").get_paginator("list_model_explainability_job_definitions")
 ```
 
 Boto3 documentation:
@@ -1045,6 +1171,8 @@ Arguments for `ListModelExplainabilityJobDefinitionsPaginator.paginate` method:
 `ListModelExplainabilityJobDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListModelExplainabilityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponsetypedef)\].
 
+<a id="listmodelmetadatapaginator"></a>
+
 ## ListModelMetadataPaginator
 
 Type annotations for
@@ -1053,10 +1181,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListModelMetadataPaginator
 
 def get_list_model_metadata_paginator() -> ListModelMetadataPaginator:
-    return boto3.client("sagemaker").get_paginator("list_model_metadata")
+    return Session().client("sagemaker").get_paginator("list_model_metadata")
 ```
 
 Boto3 documentation:
@@ -1072,6 +1202,8 @@ Arguments for `ListModelMetadataPaginator.paginate` method:
 `ListModelMetadataPaginator.paginate` returns
 `_PageIterator`\[[ListModelMetadataResponseTypeDef](./type_defs.md#listmodelmetadataresponsetypedef)\].
 
+<a id="listmodelpackagegroupspaginator"></a>
+
 ## ListModelPackageGroupsPaginator
 
 Type annotations for
@@ -1080,10 +1212,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListModelPackageGroupsPaginator
 
 def get_list_model_package_groups_paginator() -> ListModelPackageGroupsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_model_package_groups")
+    return Session().client("sagemaker").get_paginator("list_model_package_groups")
 ```
 
 Boto3 documentation:
@@ -1103,6 +1237,8 @@ Arguments for `ListModelPackageGroupsPaginator.paginate` method:
 `ListModelPackageGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListModelPackageGroupsOutputTypeDef](./type_defs.md#listmodelpackagegroupsoutputtypedef)\].
 
+<a id="listmodelpackagespaginator"></a>
+
 ## ListModelPackagesPaginator
 
 Type annotations for
@@ -1111,10 +1247,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListModelPackagesPaginator
 
 def get_list_model_packages_paginator() -> ListModelPackagesPaginator:
-    return boto3.client("sagemaker").get_paginator("list_model_packages")
+    return Session().client("sagemaker").get_paginator("list_model_packages")
 ```
 
 Boto3 documentation:
@@ -1138,6 +1276,8 @@ Arguments for `ListModelPackagesPaginator.paginate` method:
 `ListModelPackagesPaginator.paginate` returns
 `_PageIterator`\[[ListModelPackagesOutputTypeDef](./type_defs.md#listmodelpackagesoutputtypedef)\].
 
+<a id="listmodelqualityjobdefinitionspaginator"></a>
+
 ## ListModelQualityJobDefinitionsPaginator
 
 Type annotations for
@@ -1146,10 +1286,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListModelQualityJobDefinitionsPaginator
 
 def get_list_model_quality_job_definitions_paginator() -> ListModelQualityJobDefinitionsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_model_quality_job_definitions")
+    return Session().client("sagemaker").get_paginator("list_model_quality_job_definitions")
 ```
 
 Boto3 documentation:
@@ -1170,6 +1312,8 @@ Arguments for `ListModelQualityJobDefinitionsPaginator.paginate` method:
 `ListModelQualityJobDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListModelQualityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelqualityjobdefinitionsresponsetypedef)\].
 
+<a id="listmodelspaginator"></a>
+
 ## ListModelsPaginator
 
 Type annotations for `boto3.client("sagemaker").get_paginator("list_models")`.
@@ -1177,10 +1321,12 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_models")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListModelsPaginator
 
 def get_list_models_paginator() -> ListModelsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_models")
+    return Session().client("sagemaker").get_paginator("list_models")
 ```
 
 Boto3 documentation:
@@ -1199,6 +1345,8 @@ Arguments for `ListModelsPaginator.paginate` method:
 `ListModelsPaginator.paginate` returns
 `_PageIterator`\[[ListModelsOutputTypeDef](./type_defs.md#listmodelsoutputtypedef)\].
 
+<a id="listmonitoringexecutionspaginator"></a>
+
 ## ListMonitoringExecutionsPaginator
 
 Type annotations for
@@ -1207,10 +1355,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListMonitoringExecutionsPaginator
 
 def get_list_monitoring_executions_paginator() -> ListMonitoringExecutionsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_monitoring_executions")
+    return Session().client("sagemaker").get_paginator("list_monitoring_executions")
 ```
 
 Boto3 documentation:
@@ -1239,6 +1389,8 @@ Arguments for `ListMonitoringExecutionsPaginator.paginate` method:
 `ListMonitoringExecutionsPaginator.paginate` returns
 `_PageIterator`\[[ListMonitoringExecutionsResponseTypeDef](./type_defs.md#listmonitoringexecutionsresponsetypedef)\].
 
+<a id="listmonitoringschedulespaginator"></a>
+
 ## ListMonitoringSchedulesPaginator
 
 Type annotations for
@@ -1247,10 +1399,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListMonitoringSchedulesPaginator
 
 def get_list_monitoring_schedules_paginator() -> ListMonitoringSchedulesPaginator:
-    return boto3.client("sagemaker").get_paginator("list_monitoring_schedules")
+    return Session().client("sagemaker").get_paginator("list_monitoring_schedules")
 ```
 
 Boto3 documentation:
@@ -1277,6 +1431,8 @@ Arguments for `ListMonitoringSchedulesPaginator.paginate` method:
 `ListMonitoringSchedulesPaginator.paginate` returns
 `_PageIterator`\[[ListMonitoringSchedulesResponseTypeDef](./type_defs.md#listmonitoringschedulesresponsetypedef)\].
 
+<a id="listnotebookinstancelifecycleconfigspaginator"></a>
+
 ## ListNotebookInstanceLifecycleConfigsPaginator
 
 Type annotations for
@@ -1285,10 +1441,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListNotebookInstanceLifecycleConfigsPaginator
 
 def get_list_notebook_instance_lifecycle_configs_paginator() -> ListNotebookInstanceLifecycleConfigsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_notebook_instance_lifecycle_configs")
+    return Session().client("sagemaker").get_paginator("list_notebook_instance_lifecycle_configs")
 ```
 
 Boto3 documentation:
@@ -1311,6 +1469,8 @@ Arguments for `ListNotebookInstanceLifecycleConfigsPaginator.paginate` method:
 `ListNotebookInstanceLifecycleConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListNotebookInstanceLifecycleConfigsOutputTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsoutputtypedef)\].
 
+<a id="listnotebookinstancespaginator"></a>
+
 ## ListNotebookInstancesPaginator
 
 Type annotations for
@@ -1319,10 +1479,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListNotebookInstancesPaginator
 
 def get_list_notebook_instances_paginator() -> ListNotebookInstancesPaginator:
-    return boto3.client("sagemaker").get_paginator("list_notebook_instances")
+    return Session().client("sagemaker").get_paginator("list_notebook_instances")
 ```
 
 Boto3 documentation:
@@ -1350,6 +1512,8 @@ Arguments for `ListNotebookInstancesPaginator.paginate` method:
 `ListNotebookInstancesPaginator.paginate` returns
 `_PageIterator`\[[ListNotebookInstancesOutputTypeDef](./type_defs.md#listnotebookinstancesoutputtypedef)\].
 
+<a id="listpipelineexecutionstepspaginator"></a>
+
 ## ListPipelineExecutionStepsPaginator
 
 Type annotations for
@@ -1358,10 +1522,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListPipelineExecutionStepsPaginator
 
 def get_list_pipeline_execution_steps_paginator() -> ListPipelineExecutionStepsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_pipeline_execution_steps")
+    return Session().client("sagemaker").get_paginator("list_pipeline_execution_steps")
 ```
 
 Boto3 documentation:
@@ -1377,6 +1543,8 @@ Arguments for `ListPipelineExecutionStepsPaginator.paginate` method:
 `ListPipelineExecutionStepsPaginator.paginate` returns
 `_PageIterator`\[[ListPipelineExecutionStepsResponseTypeDef](./type_defs.md#listpipelineexecutionstepsresponsetypedef)\].
 
+<a id="listpipelineexecutionspaginator"></a>
+
 ## ListPipelineExecutionsPaginator
 
 Type annotations for
@@ -1385,10 +1553,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListPipelineExecutionsPaginator
 
 def get_list_pipeline_executions_paginator() -> ListPipelineExecutionsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_pipeline_executions")
+    return Session().client("sagemaker").get_paginator("list_pipeline_executions")
 ```
 
 Boto3 documentation:
@@ -1408,6 +1578,8 @@ Arguments for `ListPipelineExecutionsPaginator.paginate` method:
 `ListPipelineExecutionsPaginator.paginate` returns
 `_PageIterator`\[[ListPipelineExecutionsResponseTypeDef](./type_defs.md#listpipelineexecutionsresponsetypedef)\].
 
+<a id="listpipelineparametersforexecutionpaginator"></a>
+
 ## ListPipelineParametersForExecutionPaginator
 
 Type annotations for
@@ -1416,10 +1588,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListPipelineParametersForExecutionPaginator
 
 def get_list_pipeline_parameters_for_execution_paginator() -> ListPipelineParametersForExecutionPaginator:
-    return boto3.client("sagemaker").get_paginator("list_pipeline_parameters_for_execution")
+    return Session().client("sagemaker").get_paginator("list_pipeline_parameters_for_execution")
 ```
 
 Boto3 documentation:
@@ -1434,6 +1608,8 @@ Arguments for `ListPipelineParametersForExecutionPaginator.paginate` method:
 `ListPipelineParametersForExecutionPaginator.paginate` returns
 `_PageIterator`\[[ListPipelineParametersForExecutionResponseTypeDef](./type_defs.md#listpipelineparametersforexecutionresponsetypedef)\].
 
+<a id="listpipelinespaginator"></a>
+
 ## ListPipelinesPaginator
 
 Type annotations for
@@ -1442,10 +1618,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListPipelinesPaginator
 
 def get_list_pipelines_paginator() -> ListPipelinesPaginator:
-    return boto3.client("sagemaker").get_paginator("list_pipelines")
+    return Session().client("sagemaker").get_paginator("list_pipelines")
 ```
 
 Boto3 documentation:
@@ -1464,6 +1642,8 @@ Arguments for `ListPipelinesPaginator.paginate` method:
 `ListPipelinesPaginator.paginate` returns
 `_PageIterator`\[[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef)\].
 
+<a id="listprocessingjobspaginator"></a>
+
 ## ListProcessingJobsPaginator
 
 Type annotations for
@@ -1472,10 +1652,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListProcessingJobsPaginator
 
 def get_list_processing_jobs_paginator() -> ListProcessingJobsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_processing_jobs")
+    return Session().client("sagemaker").get_paginator("list_processing_jobs")
 ```
 
 Boto3 documentation:
@@ -1498,6 +1680,8 @@ Arguments for `ListProcessingJobsPaginator.paginate` method:
 `ListProcessingJobsPaginator.paginate` returns
 `_PageIterator`\[[ListProcessingJobsResponseTypeDef](./type_defs.md#listprocessingjobsresponsetypedef)\].
 
+<a id="liststudiolifecycleconfigspaginator"></a>
+
 ## ListStudioLifecycleConfigsPaginator
 
 Type annotations for
@@ -1506,10 +1690,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListStudioLifecycleConfigsPaginator
 
 def get_list_studio_lifecycle_configs_paginator() -> ListStudioLifecycleConfigsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_studio_lifecycle_configs")
+    return Session().client("sagemaker").get_paginator("list_studio_lifecycle_configs")
 ```
 
 Boto3 documentation:
@@ -1533,6 +1719,8 @@ Arguments for `ListStudioLifecycleConfigsPaginator.paginate` method:
 `ListStudioLifecycleConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListStudioLifecycleConfigsResponseTypeDef](./type_defs.md#liststudiolifecycleconfigsresponsetypedef)\].
 
+<a id="listsubscribedworkteamspaginator"></a>
+
 ## ListSubscribedWorkteamsPaginator
 
 Type annotations for
@@ -1541,10 +1729,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListSubscribedWorkteamsPaginator
 
 def get_list_subscribed_workteams_paginator() -> ListSubscribedWorkteamsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_subscribed_workteams")
+    return Session().client("sagemaker").get_paginator("list_subscribed_workteams")
 ```
 
 Boto3 documentation:
@@ -1559,6 +1749,8 @@ Arguments for `ListSubscribedWorkteamsPaginator.paginate` method:
 `ListSubscribedWorkteamsPaginator.paginate` returns
 `_PageIterator`\[[ListSubscribedWorkteamsResponseTypeDef](./type_defs.md#listsubscribedworkteamsresponsetypedef)\].
 
+<a id="listtagspaginator"></a>
+
 ## ListTagsPaginator
 
 Type annotations for `boto3.client("sagemaker").get_paginator("list_tags")`.
@@ -1566,10 +1758,12 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_tags")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListTagsPaginator
 
 def get_list_tags_paginator() -> ListTagsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_tags")
+    return Session().client("sagemaker").get_paginator("list_tags")
 ```
 
 Boto3 documentation:
@@ -1584,6 +1778,8 @@ Arguments for `ListTagsPaginator.paginate` method:
 `ListTagsPaginator.paginate` returns
 `_PageIterator`\[[ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef)\].
 
+<a id="listtrainingjobspaginator"></a>
+
 ## ListTrainingJobsPaginator
 
 Type annotations for
@@ -1592,10 +1788,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListTrainingJobsPaginator
 
 def get_list_training_jobs_paginator() -> ListTrainingJobsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_training_jobs")
+    return Session().client("sagemaker").get_paginator("list_training_jobs")
 ```
 
 Boto3 documentation:
@@ -1617,6 +1815,8 @@ Arguments for `ListTrainingJobsPaginator.paginate` method:
 `ListTrainingJobsPaginator.paginate` returns
 `_PageIterator`\[[ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef)\].
 
+<a id="listtrainingjobsforhyperparametertuningjobpaginator"></a>
+
 ## ListTrainingJobsForHyperParameterTuningJobPaginator
 
 Type annotations for
@@ -1625,10 +1825,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListTrainingJobsForHyperParameterTuningJobPaginator
 
 def get_list_training_jobs_for_hyper_parameter_tuning_job_paginator() -> ListTrainingJobsForHyperParameterTuningJobPaginator:
-    return boto3.client("sagemaker").get_paginator("list_training_jobs_for_hyper_parameter_tuning_job")
+    return Session().client("sagemaker").get_paginator("list_training_jobs_for_hyper_parameter_tuning_job")
 ```
 
 Boto3 documentation:
@@ -1648,6 +1850,8 @@ method:
 `ListTrainingJobsForHyperParameterTuningJobPaginator.paginate` returns
 `_PageIterator`\[[ListTrainingJobsForHyperParameterTuningJobResponseTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobresponsetypedef)\].
 
+<a id="listtransformjobspaginator"></a>
+
 ## ListTransformJobsPaginator
 
 Type annotations for
@@ -1656,10 +1860,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListTransformJobsPaginator
 
 def get_list_transform_jobs_paginator() -> ListTransformJobsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_transform_jobs")
+    return Session().client("sagemaker").get_paginator("list_transform_jobs")
 ```
 
 Boto3 documentation:
@@ -1682,6 +1888,8 @@ Arguments for `ListTransformJobsPaginator.paginate` method:
 `ListTransformJobsPaginator.paginate` returns
 `_PageIterator`\[[ListTransformJobsResponseTypeDef](./type_defs.md#listtransformjobsresponsetypedef)\].
 
+<a id="listtrialcomponentspaginator"></a>
+
 ## ListTrialComponentsPaginator
 
 Type annotations for
@@ -1690,10 +1898,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListTrialComponentsPaginator
 
 def get_list_trial_components_paginator() -> ListTrialComponentsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_trial_components")
+    return Session().client("sagemaker").get_paginator("list_trial_components")
 ```
 
 Boto3 documentation:
@@ -1715,6 +1925,8 @@ Arguments for `ListTrialComponentsPaginator.paginate` method:
 `ListTrialComponentsPaginator.paginate` returns
 `_PageIterator`\[[ListTrialComponentsResponseTypeDef](./type_defs.md#listtrialcomponentsresponsetypedef)\].
 
+<a id="listtrialspaginator"></a>
+
 ## ListTrialsPaginator
 
 Type annotations for `boto3.client("sagemaker").get_paginator("list_trials")`.
@@ -1722,10 +1934,12 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_trials")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListTrialsPaginator
 
 def get_list_trials_paginator() -> ListTrialsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_trials")
+    return Session().client("sagemaker").get_paginator("list_trials")
 ```
 
 Boto3 documentation:
@@ -1745,6 +1959,8 @@ Arguments for `ListTrialsPaginator.paginate` method:
 `ListTrialsPaginator.paginate` returns
 `_PageIterator`\[[ListTrialsResponseTypeDef](./type_defs.md#listtrialsresponsetypedef)\].
 
+<a id="listuserprofilespaginator"></a>
+
 ## ListUserProfilesPaginator
 
 Type annotations for
@@ -1753,10 +1969,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListUserProfilesPaginator
 
 def get_list_user_profiles_paginator() -> ListUserProfilesPaginator:
-    return boto3.client("sagemaker").get_paginator("list_user_profiles")
+    return Session().client("sagemaker").get_paginator("list_user_profiles")
 ```
 
 Boto3 documentation:
@@ -1774,6 +1992,8 @@ Arguments for `ListUserProfilesPaginator.paginate` method:
 `ListUserProfilesPaginator.paginate` returns
 `_PageIterator`\[[ListUserProfilesResponseTypeDef](./type_defs.md#listuserprofilesresponsetypedef)\].
 
+<a id="listworkforcespaginator"></a>
+
 ## ListWorkforcesPaginator
 
 Type annotations for
@@ -1782,10 +2002,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListWorkforcesPaginator
 
 def get_list_workforces_paginator() -> ListWorkforcesPaginator:
-    return boto3.client("sagemaker").get_paginator("list_workforces")
+    return Session().client("sagemaker").get_paginator("list_workforces")
 ```
 
 Boto3 documentation:
@@ -1803,6 +2025,8 @@ Arguments for `ListWorkforcesPaginator.paginate` method:
 `ListWorkforcesPaginator.paginate` returns
 `_PageIterator`\[[ListWorkforcesResponseTypeDef](./type_defs.md#listworkforcesresponsetypedef)\].
 
+<a id="listworkteamspaginator"></a>
+
 ## ListWorkteamsPaginator
 
 Type annotations for
@@ -1811,10 +2035,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import ListWorkteamsPaginator
 
 def get_list_workteams_paginator() -> ListWorkteamsPaginator:
-    return boto3.client("sagemaker").get_paginator("list_workteams")
+    return Session().client("sagemaker").get_paginator("list_workteams")
 ```
 
 Boto3 documentation:
@@ -1832,6 +2058,8 @@ Arguments for `ListWorkteamsPaginator.paginate` method:
 `ListWorkteamsPaginator.paginate` returns
 `_PageIterator`\[[ListWorkteamsResponseTypeDef](./type_defs.md#listworkteamsresponsetypedef)\].
 
+<a id="searchpaginator"></a>
+
 ## SearchPaginator
 
 Type annotations for `boto3.client("sagemaker").get_paginator("search")`.
@@ -1839,10 +2067,12 @@ Type annotations for `boto3.client("sagemaker").get_paginator("search")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.paginator import SearchPaginator
 
 def get_search_paginator() -> SearchPaginator:
-    return boto3.client("sagemaker").get_paginator("search")
+    return Session().client("sagemaker").get_paginator("search")
 ```
 
 Boto3 documentation:

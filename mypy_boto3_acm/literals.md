@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-acm-module"></a>
+
 # Literals for boto3 ACM module
 
 > [Index](..) > [ACM](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
 type annotations stubs module
-[mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
+[mypy-boto3-acm](https://pypi.org/project/mypy-boto3-acm/).
 
 - [Literals for boto3 ACM module](#literals-for-boto3-acm-module)
   - [CertificateStatusType](#certificatestatustype)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="certificatestatustype"></a>
+
 ## CertificateStatusType
 
 ```python
@@ -43,6 +47,8 @@ Values:
 - `REVOKED`
 - `VALIDATION_TIMED_OUT`
 
+<a id="certificatetransparencyloggingpreferencetype"></a>
+
 ## CertificateTransparencyLoggingPreferenceType
 
 ```python
@@ -53,6 +59,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="certificatetypetype"></a>
 
 ## CertificateTypeType
 
@@ -66,6 +74,8 @@ Values:
 - `IMPORTED`
 - `PRIVATE`
 
+<a id="certificatevalidatedwaitername"></a>
+
 ## CertificateValidatedWaiterName
 
 ```python
@@ -75,6 +85,8 @@ from mypy_boto3_acm.literals import CertificateValidatedWaiterName
 Values:
 
 - `certificate_validated`
+
+<a id="domainstatustype"></a>
 
 ## DomainStatusType
 
@@ -87,6 +99,8 @@ Values:
 - `FAILED`
 - `PENDING_VALIDATION`
 - `SUCCESS`
+
+<a id="extendedkeyusagenametype"></a>
 
 ## ExtendedKeyUsageNameType
 
@@ -108,6 +122,8 @@ Values:
 - `TIME_STAMPING`
 - `TLS_WEB_CLIENT_AUTHENTICATION`
 - `TLS_WEB_SERVER_AUTHENTICATION`
+
+<a id="failurereasontype"></a>
 
 ## FailureReasonType
 
@@ -135,6 +151,8 @@ Values:
 - `PCA_RESOURCE_NOT_FOUND`
 - `SLR_NOT_FOUND`
 
+<a id="keyalgorithmtype"></a>
+
 ## KeyAlgorithmType
 
 ```python
@@ -150,6 +168,8 @@ Values:
 - `RSA_2048`
 - `RSA_3072`
 - `RSA_4096`
+
+<a id="keyusagenametype"></a>
 
 ## KeyUsageNameType
 
@@ -171,6 +191,8 @@ Values:
 - `KEY_ENCIPHERMENT`
 - `NON_REPUDIATION`
 
+<a id="listcertificatespaginatorname"></a>
+
 ## ListCertificatesPaginatorName
 
 ```python
@@ -180,6 +202,8 @@ from mypy_boto3_acm.literals import ListCertificatesPaginatorName
 Values:
 
 - `list_certificates`
+
+<a id="recordtypetype"></a>
 
 ## RecordTypeType
 
@@ -191,6 +215,8 @@ Values:
 
 - `CNAME`
 
+<a id="renewaleligibilitytype"></a>
+
 ## RenewalEligibilityType
 
 ```python
@@ -201,6 +227,8 @@ Values:
 
 - `ELIGIBLE`
 - `INELIGIBLE`
+
+<a id="renewalstatustype"></a>
 
 ## RenewalStatusType
 
@@ -214,6 +242,8 @@ Values:
 - `PENDING_AUTO_RENEWAL`
 - `PENDING_VALIDATION`
 - `SUCCESS`
+
+<a id="revocationreasontype"></a>
 
 ## RevocationReasonType
 
@@ -234,6 +264,8 @@ Values:
 - `SUPERCEDED`
 - `UNSPECIFIED`
 
+<a id="validationmethodtype"></a>
+
 ## ValidationMethodType
 
 ```python
@@ -244,6 +276,8 @@ Values:
 
 - `DNS`
 - `EMAIL`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -553,6 +587,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -562,6 +598,8 @@ from mypy_boto3_acm.literals import PaginatorName
 Values:
 
 - `list_certificates`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

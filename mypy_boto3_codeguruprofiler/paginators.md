@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-codeguruprofiler-module"></a>
+
 # Paginators for boto3 CodeGuruProfiler module
 
 > [Index](..) > [CodeGuruProfiler](.) > Paginators
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
 type annotations stubs module
-[mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
+[mypy-boto3-codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
 - [Paginators for boto3 CodeGuruProfiler module](#paginators-for-boto3-codeguruprofiler-module)
   - [ListProfileTimesPaginator](#listprofiletimespaginator)
+
+<a id="listprofiletimespaginator"></a>
 
 ## ListProfileTimesPaginator
 
@@ -18,10 +22,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codeguruprofiler.paginator import ListProfileTimesPaginator
 
 def get_list_profile_times_paginator() -> ListProfileTimesPaginator:
-    return boto3.client("codeguruprofiler").get_paginator("list_profile_times")
+    return Session().client("codeguruprofiler").get_paginator("list_profile_times")
 ```
 
 Boto3 documentation:

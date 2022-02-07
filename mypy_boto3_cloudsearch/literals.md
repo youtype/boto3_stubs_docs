@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloudsearch-module"></a>
+
 # Literals for boto3 CloudSearch module
 
 > [Index](..) > [CloudSearch](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
 type annotations stubs module
-[mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
+[mypy-boto3-cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
 - [Literals for boto3 CloudSearch module](#literals-for-boto3-cloudsearch-module)
   - [AlgorithmicStemmingType](#algorithmicstemmingtype)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [SuggesterFuzzyMatchingType](#suggesterfuzzymatchingtype)
   - [TLSSecurityPolicyType](#tlssecuritypolicytype)
   - [ServiceName](#servicename)
+
+<a id="algorithmicstemmingtype"></a>
 
 ## AlgorithmicStemmingType
 
@@ -29,6 +33,8 @@ Values:
 - `light`
 - `minimal`
 - `none`
+
+<a id="analysisschemelanguagetype"></a>
 
 ## AnalysisSchemeLanguageType
 
@@ -74,6 +80,8 @@ Values:
 - `zh-Hans`
 - `zh-Hant`
 
+<a id="indexfieldtypetype"></a>
+
 ## IndexFieldTypeType
 
 ```python
@@ -94,6 +102,8 @@ Values:
 - `text`
 - `text-array`
 
+<a id="optionstatetype"></a>
+
 ## OptionStateType
 
 ```python
@@ -106,6 +116,8 @@ Values:
 - `FailedToValidate`
 - `Processing`
 - `RequiresIndexDocuments`
+
+<a id="partitioninstancetypetype"></a>
 
 ## PartitionInstanceTypeType
 
@@ -133,6 +145,8 @@ Values:
 - `search.small`
 - `search.xlarge`
 
+<a id="suggesterfuzzymatchingtype"></a>
+
 ## SuggesterFuzzyMatchingType
 
 ```python
@@ -145,6 +159,8 @@ Values:
 - `low`
 - `none`
 
+<a id="tlssecuritypolicytype"></a>
+
 ## TLSSecurityPolicyType
 
 ```python
@@ -155,6 +171,8 @@ Values:
 
 - `Policy-Min-TLS-1-0-2019-07`
 - `Policy-Min-TLS-1-2-2019-07`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

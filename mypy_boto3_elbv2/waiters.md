@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-elasticloadbalancingv2-module"></a>
+
 # Waiters for boto3 ElasticLoadBalancingv2 module
 
 > [Index](..) > [ElasticLoadBalancingv2](.) > Waiters
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
 type annotations stubs module
-[mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
+[mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
 - [Waiters for boto3 ElasticLoadBalancingv2 module](#waiters-for-boto3-elasticloadbalancingv2-module)
   - [LoadBalancerAvailableWaiter](#loadbalanceravailablewaiter)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [LoadBalancersDeletedWaiter](#loadbalancersdeletedwaiter)
   - [TargetDeregisteredWaiter](#targetderegisteredwaiter)
   - [TargetInServiceWaiter](#targetinservicewaiter)
+
+<a id="loadbalanceravailablewaiter"></a>
 
 ## LoadBalancerAvailableWaiter
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elbv2.waiter import LoadBalancerAvailableWaiter
 
 def get_load_balancer_available_waiter() -> LoadBalancerAvailableWaiter:
-    return boto3.client("elbv2").get_waiter("load_balancer_available")
+    return Session().client("elbv2").get_waiter("load_balancer_available")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `LoadBalancerAvailableWaiter.wait` method:
 - `PageSize`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="loadbalancerexistswaiter"></a>
+
 ## LoadBalancerExistsWaiter
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elbv2.waiter import LoadBalancerExistsWaiter
 
 def get_load_balancer_exists_waiter() -> LoadBalancerExistsWaiter:
-    return boto3.client("elbv2").get_waiter("load_balancer_exists")
+    return Session().client("elbv2").get_waiter("load_balancer_exists")
 ```
 
 Boto3 documentation:
@@ -64,6 +74,8 @@ Arguments for `LoadBalancerExistsWaiter.wait` method:
 - `PageSize`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="loadbalancersdeletedwaiter"></a>
+
 ## LoadBalancersDeletedWaiter
 
 Type annotations for
@@ -72,10 +84,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elbv2.waiter import LoadBalancersDeletedWaiter
 
 def get_load_balancers_deleted_waiter() -> LoadBalancersDeletedWaiter:
-    return boto3.client("elbv2").get_waiter("load_balancers_deleted")
+    return Session().client("elbv2").get_waiter("load_balancers_deleted")
 ```
 
 Boto3 documentation:
@@ -89,6 +103,8 @@ Arguments for `LoadBalancersDeletedWaiter.wait` method:
 - `PageSize`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="targetderegisteredwaiter"></a>
+
 ## TargetDeregisteredWaiter
 
 Type annotations for `boto3.client("elbv2").get_waiter("target_deregistered")`.
@@ -96,10 +112,12 @@ Type annotations for `boto3.client("elbv2").get_waiter("target_deregistered")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elbv2.waiter import TargetDeregisteredWaiter
 
 def get_target_deregistered_waiter() -> TargetDeregisteredWaiter:
-    return boto3.client("elbv2").get_waiter("target_deregistered")
+    return Session().client("elbv2").get_waiter("target_deregistered")
 ```
 
 Boto3 documentation:
@@ -112,6 +130,8 @@ Arguments for `TargetDeregisteredWaiter.wait` method:
   `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="targetinservicewaiter"></a>
+
 ## TargetInServiceWaiter
 
 Type annotations for `boto3.client("elbv2").get_waiter("target_in_service")`.
@@ -119,10 +139,12 @@ Type annotations for `boto3.client("elbv2").get_waiter("target_in_service")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elbv2.waiter import TargetInServiceWaiter
 
 def get_target_in_service_waiter() -> TargetInServiceWaiter:
-    return boto3.client("elbv2").get_waiter("target_in_service")
+    return Session().client("elbv2").get_waiter("target_in_service")
 ```
 
 Boto3 documentation:

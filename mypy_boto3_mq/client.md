@@ -1,3 +1,5 @@
+<a id="mqclient-for-boto3-mq-module"></a>
+
 # MQClient for boto3 MQ module
 
 > [Index](..) > [MQ](.) > MQClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
 type annotations stubs module
-[mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
+[mypy-boto3-mq](https://pypi.org/project/mypy-boto3-mq/).
 
 - [MQClient for boto3 MQ module](#mqclient-for-boto3-mq-module)
   - [MQClient](#mqclient)
@@ -38,6 +40,8 @@ type annotations stubs module
     - [update_user](#update_user)
     - [get_paginator](#get_paginator)
 
+<a id="mqclient"></a>
+
 ## MQClient
 
 Type annotations for `boto3.client("mq")`
@@ -45,14 +49,17 @@ Type annotations for `boto3.client("mq")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mq.client import MQClient
 
 def get_mq_client() -> MQClient:
-    return boto3.client("mq")
+    return Session().client("mq")
 ```
 
 Boto3 documentation:
 [MQ.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -76,7 +83,11 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -88,6 +99,8 @@ Boto3 documentation:
 [MQ.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -103,6 +116,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_broker"></a>
 
 ### create_broker
 
@@ -147,6 +162,8 @@ Keyword-only arguments:
 Returns
 [CreateBrokerResponseTypeDef](./type_defs.md#createbrokerresponsetypedef).
 
+<a id="create_configuration"></a>
+
 ### create_configuration
 
 Creates a new configuration for the specified configuration name.
@@ -171,6 +188,8 @@ Keyword-only arguments:
 Returns
 [CreateConfigurationResponseTypeDef](./type_defs.md#createconfigurationresponsetypedef).
 
+<a id="create_tags"></a>
+
 ### create_tags
 
 Add a tag to a resource.
@@ -187,6 +206,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="create_user"></a>
 
 ### create_user
 
@@ -210,6 +231,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_broker"></a>
+
 ### delete_broker
 
 Deletes a broker.
@@ -229,6 +252,8 @@ Keyword-only arguments:
 Returns
 [DeleteBrokerResponseTypeDef](./type_defs.md#deletebrokerresponsetypedef).
 
+<a id="delete_tags"></a>
+
 ### delete_tags
 
 Removes a tag from a resource.
@@ -245,6 +270,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="delete_user"></a>
 
 ### delete_user
 
@@ -265,6 +292,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_broker"></a>
+
 ### describe_broker
 
 Returns information about the specified broker.
@@ -283,6 +312,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBrokerResponseTypeDef](./type_defs.md#describebrokerresponsetypedef).
+
+<a id="describe_broker_engine_types"></a>
 
 ### describe_broker_engine_types
 
@@ -304,6 +335,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBrokerEngineTypesResponseTypeDef](./type_defs.md#describebrokerenginetypesresponsetypedef).
+
+<a id="describe_broker_instance_options"></a>
 
 ### describe_broker_instance_options
 
@@ -329,6 +362,8 @@ Keyword-only arguments:
 Returns
 [DescribeBrokerInstanceOptionsResponseTypeDef](./type_defs.md#describebrokerinstanceoptionsresponsetypedef).
 
+<a id="describe_configuration"></a>
+
 ### describe_configuration
 
 Returns information about the specified configuration.
@@ -347,6 +382,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeConfigurationResponseTypeDef](./type_defs.md#describeconfigurationresponsetypedef).
+
+<a id="describe_configuration_revision"></a>
 
 ### describe_configuration_revision
 
@@ -369,6 +406,8 @@ Keyword-only arguments:
 Returns
 [DescribeConfigurationRevisionResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponsetypedef).
 
+<a id="describe_user"></a>
+
 ### describe_user
 
 Returns information about an ActiveMQ user.
@@ -389,6 +428,8 @@ Keyword-only arguments:
 Returns
 [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -406,6 +447,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_brokers"></a>
 
 ### list_brokers
 
@@ -426,6 +469,8 @@ Keyword-only arguments:
 
 Returns
 [ListBrokersResponseTypeDef](./type_defs.md#listbrokersresponsetypedef).
+
+<a id="list_configuration_revisions"></a>
 
 ### list_configuration_revisions
 
@@ -448,6 +493,8 @@ Keyword-only arguments:
 Returns
 [ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef).
 
+<a id="list_configurations"></a>
+
 ### list_configurations
 
 Returns a list of all configurations.
@@ -468,6 +515,8 @@ Keyword-only arguments:
 Returns
 [ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
 
+<a id="list_tags"></a>
+
 ### list_tags
 
 Lists tags for a resource.
@@ -485,6 +534,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+
+<a id="list_users"></a>
 
 ### list_users
 
@@ -506,6 +557,8 @@ Keyword-only arguments:
 
 Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
+<a id="reboot_broker"></a>
+
 ### reboot_broker
 
 Reboots a broker.
@@ -523,6 +576,8 @@ Keyword-only arguments:
 - `BrokerId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_broker"></a>
 
 ### update_broker
 
@@ -556,6 +611,8 @@ Keyword-only arguments:
 Returns
 [UpdateBrokerResponseTypeDef](./type_defs.md#updatebrokerresponsetypedef).
 
+<a id="update_configuration"></a>
+
 ### update_configuration
 
 Updates the specified configuration.
@@ -576,6 +633,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef).
+
+<a id="update_user"></a>
 
 ### update_user
 
@@ -598,6 +657,8 @@ Keyword-only arguments:
 - `Password`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

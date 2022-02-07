@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-elasticloadbalancing-module"></a>
+
 # Waiters for boto3 ElasticLoadBalancing module
 
 > [Index](..) > [ElasticLoadBalancing](.) > Waiters
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
 type annotations stubs module
-[mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
+[mypy-boto3-elb](https://pypi.org/project/mypy-boto3-elb/).
 
 - [Waiters for boto3 ElasticLoadBalancing module](#waiters-for-boto3-elasticloadbalancing-module)
   - [AnyInstanceInServiceWaiter](#anyinstanceinservicewaiter)
   - [InstanceDeregisteredWaiter](#instancederegisteredwaiter)
   - [InstanceInServiceWaiter](#instanceinservicewaiter)
+
+<a id="anyinstanceinservicewaiter"></a>
 
 ## AnyInstanceInServiceWaiter
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elb.waiter import AnyInstanceInServiceWaiter
 
 def get_any_instance_in_service_waiter() -> AnyInstanceInServiceWaiter:
-    return boto3.client("elb").get_waiter("any_instance_in_service")
+    return Session().client("elb").get_waiter("any_instance_in_service")
 ```
 
 Boto3 documentation:
@@ -35,6 +41,8 @@ Arguments for `AnyInstanceInServiceWaiter.wait` method:
 - `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="instancederegisteredwaiter"></a>
+
 ## InstanceDeregisteredWaiter
 
 Type annotations for `boto3.client("elb").get_waiter("instance_deregistered")`.
@@ -42,10 +50,12 @@ Type annotations for `boto3.client("elb").get_waiter("instance_deregistered")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elb.waiter import InstanceDeregisteredWaiter
 
 def get_instance_deregistered_waiter() -> InstanceDeregisteredWaiter:
-    return boto3.client("elb").get_waiter("instance_deregistered")
+    return Session().client("elb").get_waiter("instance_deregistered")
 ```
 
 Boto3 documentation:
@@ -57,6 +67,8 @@ Arguments for `InstanceDeregisteredWaiter.wait` method:
 - `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="instanceinservicewaiter"></a>
+
 ## InstanceInServiceWaiter
 
 Type annotations for `boto3.client("elb").get_waiter("instance_in_service")`.
@@ -64,10 +76,12 @@ Type annotations for `boto3.client("elb").get_waiter("instance_in_service")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elb.waiter import InstanceInServiceWaiter
 
 def get_instance_in_service_waiter() -> InstanceInServiceWaiter:
-    return boto3.client("elb").get_waiter("instance_in_service")
+    return Session().client("elb").get_waiter("instance_in_service")
 ```
 
 Boto3 documentation:

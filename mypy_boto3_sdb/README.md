@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-simpledb-module"></a>
+
 # Type annotations for boto3 SimpleDB module
 
 > [Index](..) > SimpleDB
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
 type annotations stubs module
-[mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
+[mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sdb]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sdb]'
+
+# standalone installation
 pip install mypy-boto3-sdb
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-sdb
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="simpledbclient"></a>
+
 ## SimpleDBClient
 
 Type annotations for `boto3.client("sdb")` as [SimpleDBClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_sdb.client import SimpleDBClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -45,6 +59,8 @@ from mypy_boto3_sdb.client import SimpleDBClient
 - [list_domains](./client.md#list_domains)
 - [put_attributes](./client.md#put_attributes)
 - [select](./client.md#select)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -69,6 +85,8 @@ SimpleDBClient [exceptions](./client.md#exceptions)
 - RequestTimeout
 - TooManyRequestedAttributes
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -77,11 +95,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_sdb.paginators import ListDomainsPaginator, ...
+from mypy_boto3_sdb.paginator import ListDomainsPaginator, ...
 ```
 
 - [ListDomainsPaginator](./paginators.md#listdomainspaginator)
 - [SelectPaginator](./paginators.md#selectpaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -97,6 +117,8 @@ from mypy_boto3_sdb.literals import ListDomainsPaginatorName, ...
 - [SelectPaginatorName](./literals.md#selectpaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

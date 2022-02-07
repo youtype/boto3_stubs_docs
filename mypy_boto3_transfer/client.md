@@ -1,3 +1,5 @@
+<a id="transferclient-for-boto3-transfer-module"></a>
+
 # TransferClient for boto3 Transfer module
 
 > [Index](..) > [Transfer](.) > TransferClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
 type annotations stubs module
-[mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
+[mypy-boto3-transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 - [TransferClient for boto3 Transfer module](#transferclient-for-boto3-transfer-module)
   - [TransferClient](#transferclient)
@@ -48,6 +50,8 @@ type annotations stubs module
     - [update_user](#update_user)
     - [get_paginator](#get_paginator)
 
+<a id="transferclient"></a>
+
 ## TransferClient
 
 Type annotations for `boto3.client("transfer")`
@@ -55,14 +59,17 @@ Type annotations for `boto3.client("transfer")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_transfer.client import TransferClient
 
 def get_transfer_client() -> TransferClient:
-    return boto3.client("transfer")
+    return Session().client("transfer")
 ```
 
 Boto3 documentation:
 [Transfer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -89,7 +96,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -101,6 +112,8 @@ Boto3 documentation:
 [Transfer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -116,6 +129,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_access"></a>
 
 ### create_access
 
@@ -146,6 +161,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAccessResponseTypeDef](./type_defs.md#createaccessresponsetypedef).
+
+<a id="create_server"></a>
 
 ### create_server
 
@@ -184,6 +201,8 @@ Keyword-only arguments:
 Returns
 [CreateServerResponseTypeDef](./type_defs.md#createserverresponsetypedef).
 
+<a id="create_user"></a>
+
 ### create_user
 
 Creates a user and associates them with an existing file transfer protocol-
@@ -214,6 +233,8 @@ Keyword-only arguments:
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
+<a id="create_workflow"></a>
+
 ### create_workflow
 
 Allows you to create a workflow with specified steps and step details the
@@ -240,6 +261,8 @@ Keyword-only arguments:
 Returns
 [CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef).
 
+<a id="delete_access"></a>
+
 ### delete_access
 
 Allows you to delete the access specified in the `ServerID` and `ExternalID`
@@ -258,6 +281,8 @@ Keyword-only arguments:
 - `ServerId`: `str` *(required)*
 - `ExternalId`: `str` *(required)*
 
+<a id="delete_server"></a>
+
 ### delete_server
 
 Deletes the file transfer protocol-enabled server that you specify.
@@ -273,6 +298,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
+
+<a id="delete_ssh_public_key"></a>
 
 ### delete_ssh_public_key
 
@@ -292,6 +319,8 @@ Keyword-only arguments:
 - `SshPublicKeyId`: `str` *(required)*
 - `UserName`: `str` *(required)*
 
+<a id="delete_user"></a>
+
 ### delete_user
 
 Deletes the user belonging to a file transfer protocol-enabled server you
@@ -310,6 +339,8 @@ Keyword-only arguments:
 - `ServerId`: `str` *(required)*
 - `UserName`: `str` *(required)*
 
+<a id="delete_workflow"></a>
+
 ### delete_workflow
 
 Deletes the specified workflow.
@@ -325,6 +356,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `WorkflowId`: `str` *(required)*
+
+<a id="describe_access"></a>
 
 ### describe_access
 
@@ -347,6 +380,8 @@ Keyword-only arguments:
 Returns
 [DescribeAccessResponseTypeDef](./type_defs.md#describeaccessresponsetypedef).
 
+<a id="describe_execution"></a>
+
 ### describe_execution
 
 You can use `DescribeExecution` to check the details of the execution of the
@@ -367,6 +402,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeExecutionResponseTypeDef](./type_defs.md#describeexecutionresponsetypedef).
+
+<a id="describe_security_policy"></a>
 
 ### describe_security_policy
 
@@ -389,6 +426,8 @@ Keyword-only arguments:
 Returns
 [DescribeSecurityPolicyResponseTypeDef](./type_defs.md#describesecuritypolicyresponsetypedef).
 
+<a id="describe_server"></a>
+
 ### describe_server
 
 Describes a file transfer protocol-enabled server that you specify by passing
@@ -408,6 +447,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeServerResponseTypeDef](./type_defs.md#describeserverresponsetypedef).
+
+<a id="describe_user"></a>
 
 ### describe_user
 
@@ -430,6 +471,8 @@ Keyword-only arguments:
 Returns
 [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
+<a id="describe_workflow"></a>
+
 ### describe_workflow
 
 Describes the specified workflow.
@@ -449,6 +492,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorkflowResponseTypeDef](./type_defs.md#describeworkflowresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -466,6 +511,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="import_ssh_public_key"></a>
 
 ### import_ssh_public_key
 
@@ -490,6 +537,8 @@ Keyword-only arguments:
 Returns
 [ImportSshPublicKeyResponseTypeDef](./type_defs.md#importsshpublickeyresponsetypedef).
 
+<a id="list_accesses"></a>
+
 ### list_accesses
 
 Lists the details for all the accesses you have on your server.
@@ -510,6 +559,8 @@ Keyword-only arguments:
 
 Returns
 [ListAccessesResponseTypeDef](./type_defs.md#listaccessesresponsetypedef).
+
+<a id="list_executions"></a>
 
 ### list_executions
 
@@ -532,6 +583,8 @@ Keyword-only arguments:
 Returns
 [ListExecutionsResponseTypeDef](./type_defs.md#listexecutionsresponsetypedef).
 
+<a id="list_security_policies"></a>
+
 ### list_security_policies
 
 Lists the security policies that are attached to your file transfer protocol-
@@ -553,6 +606,8 @@ Keyword-only arguments:
 Returns
 [ListSecurityPoliciesResponseTypeDef](./type_defs.md#listsecuritypoliciesresponsetypedef).
 
+<a id="list_servers"></a>
+
 ### list_servers
 
 Lists the file transfer protocol-enabled servers that are associated with your
@@ -573,6 +628,8 @@ Keyword-only arguments:
 
 Returns
 [ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -596,6 +653,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="list_users"></a>
+
 ### list_users
 
 Lists the users for a file transfer protocol-enabled server that you specify by
@@ -617,6 +676,8 @@ Keyword-only arguments:
 
 Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
+<a id="list_workflows"></a>
+
 ### list_workflows
 
 Lists all of your workflows.
@@ -636,6 +697,8 @@ Keyword-only arguments:
 
 Returns
 [ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef).
+
+<a id="send_workflow_step_state"></a>
 
 ### send_workflow_step_state
 
@@ -660,6 +723,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="start_server"></a>
+
 ### start_server
 
 Changes the state of a file transfer protocol-enabled server from `OFFLINE` to
@@ -676,6 +741,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
+
+<a id="stop_server"></a>
 
 ### stop_server
 
@@ -694,6 +761,8 @@ Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Attaches a key-value pair to a resource, as identified by its Amazon Resource
@@ -711,6 +780,8 @@ Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="test_identity_provider"></a>
 
 ### test_identity_provider
 
@@ -737,6 +808,8 @@ Keyword-only arguments:
 Returns
 [TestIdentityProviderResponseTypeDef](./type_defs.md#testidentityproviderresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Detaches a key-value pair from a resource, as identified by its Amazon Resource
@@ -754,6 +827,8 @@ Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_access"></a>
 
 ### update_access
 
@@ -783,6 +858,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAccessResponseTypeDef](./type_defs.md#updateaccessresponsetypedef).
+
+<a id="update_server"></a>
 
 ### update_server
 
@@ -818,6 +895,8 @@ Keyword-only arguments:
 Returns
 [UpdateServerResponseTypeDef](./type_defs.md#updateserverresponsetypedef).
 
+<a id="update_user"></a>
+
 ### update_user
 
 Assigns new properties to a user.
@@ -844,6 +923,8 @@ Keyword-only arguments:
 - `Role`: `str`
 
 Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

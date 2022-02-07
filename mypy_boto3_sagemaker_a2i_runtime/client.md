@@ -1,3 +1,5 @@
+<a id="augmentedairuntimeclient-for-boto3-augmentedairuntime-module"></a>
+
 # AugmentedAIRuntimeClient for boto3 AugmentedAIRuntime module
 
 > [Index](..) > [AugmentedAIRuntime](.) > AugmentedAIRuntimeClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
 type annotations stubs module
-[mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
+[mypy-boto3-sagemaker-a2i-runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
 - [AugmentedAIRuntimeClient for boto3 AugmentedAIRuntime module](#augmentedairuntimeclient-for-boto3-augmentedairuntime-module)
   - [AugmentedAIRuntimeClient](#augmentedairuntimeclient)
@@ -21,6 +23,8 @@ type annotations stubs module
     - [stop_human_loop](#stop_human_loop)
     - [get_paginator](#get_paginator)
 
+<a id="augmentedairuntimeclient"></a>
+
 ## AugmentedAIRuntimeClient
 
 Type annotations for `boto3.client("sagemaker-a2i-runtime")`
@@ -28,14 +32,17 @@ Type annotations for `boto3.client("sagemaker-a2i-runtime")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sagemaker_a2i_runtime.client import AugmentedAIRuntimeClient
 
 def get_sagemaker-a2i-runtime_client() -> AugmentedAIRuntimeClient:
-    return boto3.client("sagemaker-a2i-runtime")
+    return Session().client("sagemaker-a2i-runtime")
 ```
 
 Boto3 documentation:
 [AugmentedAIRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -59,7 +66,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -71,6 +82,8 @@ Boto3 documentation:
 [AugmentedAIRuntime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -87,6 +100,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_human_loop"></a>
 
 ### delete_human_loop
 
@@ -106,6 +121,8 @@ Keyword-only arguments:
 - `HumanLoopName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_human_loop"></a>
 
 ### describe_human_loop
 
@@ -127,6 +144,8 @@ Keyword-only arguments:
 Returns
 [DescribeHumanLoopResponseTypeDef](./type_defs.md#describehumanloopresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -145,6 +164,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_human_loops"></a>
 
 ### list_human_loops
 
@@ -171,6 +192,8 @@ Keyword-only arguments:
 Returns
 [ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef).
 
+<a id="start_human_loop"></a>
+
 ### start_human_loop
 
 Starts a human loop, provided that at least one activation condition is met.
@@ -196,6 +219,8 @@ Keyword-only arguments:
 Returns
 [StartHumanLoopResponseTypeDef](./type_defs.md#starthumanloopresponsetypedef).
 
+<a id="stop_human_loop"></a>
+
 ### stop_human_loop
 
 Stops the specified human loop.
@@ -214,6 +239,8 @@ Keyword-only arguments:
 - `HumanLoopName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="datapipelineclient-for-boto3-datapipeline-module"></a>
+
 # DataPipelineClient for boto3 DataPipeline module
 
 > [Index](..) > [DataPipeline](.) > DataPipelineClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
 type annotations stubs module
-[mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
+[mypy-boto3-datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
 - [DataPipelineClient for boto3 DataPipeline module](#datapipelineclient-for-boto3-datapipeline-module)
   - [DataPipelineClient](#datapipelineclient)
@@ -35,6 +37,8 @@ type annotations stubs module
     - [validate_pipeline_definition](#validate_pipeline_definition)
     - [get_paginator](#get_paginator)
 
+<a id="datapipelineclient"></a>
+
 ## DataPipelineClient
 
 Type annotations for `boto3.client("datapipeline")`
@@ -42,14 +46,17 @@ Type annotations for `boto3.client("datapipeline")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_datapipeline.client import DataPipelineClient
 
 def get_datapipeline_client() -> DataPipelineClient:
-    return boto3.client("datapipeline")
+    return Session().client("datapipeline")
 ```
 
 Boto3 documentation:
 [DataPipeline.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -72,7 +79,11 @@ Exceptions:
 - `Exceptions.PipelineNotFoundException`
 - `Exceptions.TaskNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -84,6 +95,8 @@ Boto3 documentation:
 [DataPipeline.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="activate_pipeline"></a>
 
 ### activate_pipeline
 
@@ -106,6 +119,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="add_tags"></a>
+
 ### add_tags
 
 Adds or modifies tags for the specified pipeline.
@@ -125,6 +140,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -139,6 +156,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_pipeline"></a>
 
 ### create_pipeline
 
@@ -162,6 +181,8 @@ Keyword-only arguments:
 Returns
 [CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef).
 
+<a id="deactivate_pipeline"></a>
+
 ### deactivate_pipeline
 
 Deactivates the specified running pipeline.
@@ -181,6 +202,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_pipeline"></a>
+
 ### delete_pipeline
 
 Deletes a pipeline, its pipeline definition, and its run history.
@@ -196,6 +219,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
+
+<a id="describe_objects"></a>
 
 ### describe_objects
 
@@ -219,6 +244,8 @@ Keyword-only arguments:
 Returns
 [DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef).
 
+<a id="describe_pipelines"></a>
+
 ### describe_pipelines
 
 Retrieves metadata about one or more pipelines.
@@ -237,6 +264,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePipelinesOutputTypeDef](./type_defs.md#describepipelinesoutputtypedef).
+
+<a id="evaluate_expression"></a>
 
 ### evaluate_expression
 
@@ -260,6 +289,8 @@ Keyword-only arguments:
 Returns
 [EvaluateExpressionOutputTypeDef](./type_defs.md#evaluateexpressionoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -278,6 +309,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_pipeline_definition"></a>
 
 ### get_pipeline_definition
 
@@ -300,6 +333,8 @@ Keyword-only arguments:
 Returns
 [GetPipelineDefinitionOutputTypeDef](./type_defs.md#getpipelinedefinitionoutputtypedef).
 
+<a id="list_pipelines"></a>
+
 ### list_pipelines
 
 Lists the pipeline identifiers for all active pipelines that you have
@@ -319,6 +354,8 @@ Keyword-only arguments:
 
 Returns
 [ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef).
+
+<a id="poll_for_task"></a>
 
 ### poll_for_task
 
@@ -341,6 +378,8 @@ Keyword-only arguments:
   [InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef)
 
 Returns [PollForTaskOutputTypeDef](./type_defs.md#pollfortaskoutputtypedef).
+
+<a id="put_pipeline_definition"></a>
 
 ### put_pipeline_definition
 
@@ -369,6 +408,8 @@ Keyword-only arguments:
 Returns
 [PutPipelineDefinitionOutputTypeDef](./type_defs.md#putpipelinedefinitionoutputtypedef).
 
+<a id="query_objects"></a>
+
 ### query_objects
 
 Queries the specified pipeline for the names of objects that match the
@@ -392,6 +433,8 @@ Keyword-only arguments:
 
 Returns [QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef).
 
+<a id="remove_tags"></a>
+
 ### remove_tags
 
 Removes existing tags from the specified pipeline.
@@ -410,6 +453,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="report_task_progress"></a>
 
 ### report_task_progress
 
@@ -432,6 +477,8 @@ Keyword-only arguments:
 
 Returns
 [ReportTaskProgressOutputTypeDef](./type_defs.md#reporttaskprogressoutputtypedef).
+
+<a id="report_task_runner_heartbeat"></a>
 
 ### report_task_runner_heartbeat
 
@@ -456,6 +503,8 @@ Keyword-only arguments:
 Returns
 [ReportTaskRunnerHeartbeatOutputTypeDef](./type_defs.md#reporttaskrunnerheartbeatoutputtypedef).
 
+<a id="set_status"></a>
+
 ### set_status
 
 Requests that the status of the specified physical or logical pipeline objects
@@ -474,6 +523,8 @@ Keyword-only arguments:
 - `pipelineId`: `str` *(required)*
 - `objectIds`: `Sequence`\[`str`\] *(required)*
 - `status`: `str` *(required)*
+
+<a id="set_task_status"></a>
 
 ### set_task_status
 
@@ -497,6 +548,8 @@ Keyword-only arguments:
 - `errorStackTrace`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="validate_pipeline_definition"></a>
 
 ### validate_pipeline_definition
 
@@ -525,6 +578,8 @@ Keyword-only arguments:
 
 Returns
 [ValidatePipelineDefinitionOutputTypeDef](./type_defs.md#validatepipelinedefinitionoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

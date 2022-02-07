@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-personalizeevents-module"></a>
+
 # Literals for boto3 PersonalizeEvents module
 
 > [Index](..) > [PersonalizeEvents](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)
 type annotations stubs module
-[mypy_boto3_personalize_events](https://pypi.org/project/mypy-boto3-personalize-events/).
+[mypy-boto3-personalize-events](https://pypi.org/project/mypy-boto3-personalize-events/).
 
 - [Literals for boto3 PersonalizeEvents module](#literals-for-boto3-personalizeevents-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

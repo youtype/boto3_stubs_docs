@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-mediapackage-module"></a>
+
 # Typed dictionaries for boto3 MediaPackage module
 
 > [Index](..) > [MediaPackage](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
 type annotations stubs module
-[mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
+[mypy-boto3-mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
 - [Typed dictionaries for boto3 MediaPackage module](#typed-dictionaries-for-boto3-mediapackage-module)
   - [AuthorizationTypeDef](#authorizationtypedef)
@@ -68,6 +70,8 @@ type annotations stubs module
   - [UpdateOriginEndpointRequestRequestTypeDef](#updateoriginendpointrequestrequesttypedef)
   - [UpdateOriginEndpointResponseTypeDef](#updateoriginendpointresponsetypedef)
 
+<a id="authorizationtypedef"></a>
+
 ## AuthorizationTypeDef
 
 ```python
@@ -78,6 +82,8 @@ Required fields:
 
 - `CdnIdentifierSecret`: `str`
 - `SecretsRoleArn`: `str`
+
+<a id="channeltypedef"></a>
 
 ## ChannelTypeDef
 
@@ -97,6 +103,8 @@ Optional fields:
   [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="cmafencryptiontypedef"></a>
+
 ## CmafEncryptionTypeDef
 
 ```python
@@ -112,6 +120,8 @@ Optional fields:
 
 - `ConstantInitializationVector`: `str`
 - `KeyRotationIntervalSeconds`: `int`
+
+<a id="cmafpackagecreateorupdateparameterstypedef"></a>
 
 ## CmafPackageCreateOrUpdateParametersTypeDef
 
@@ -129,6 +139,8 @@ Optional fields:
 - `StreamSelection`:
   [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
 
+<a id="cmafpackagetypedef"></a>
+
 ## CmafPackageTypeDef
 
 ```python
@@ -144,6 +156,8 @@ Optional fields:
 - `SegmentPrefix`: `str`
 - `StreamSelection`:
   [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
+
+<a id="configurelogsrequestrequesttypedef"></a>
 
 ## ConfigureLogsRequestRequestTypeDef
 
@@ -161,6 +175,8 @@ Optional fields:
   [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
 - `IngressAccessLogs`:
   [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
+
+<a id="configurelogsresponsetypedef"></a>
 
 ## ConfigureLogsResponseTypeDef
 
@@ -182,6 +198,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createchannelrequestrequesttypedef"></a>
+
 ## CreateChannelRequestRequestTypeDef
 
 ```python
@@ -196,6 +214,8 @@ Optional fields:
 
 - `Description`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createchannelresponsetypedef"></a>
 
 ## CreateChannelResponseTypeDef
 
@@ -217,6 +237,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createharvestjobrequestrequesttypedef"></a>
+
 ## CreateHarvestJobRequestRequestTypeDef
 
 ```python
@@ -230,6 +252,8 @@ Required fields:
 - `OriginEndpointId`: `str`
 - `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `StartTime`: `str`
+
+<a id="createharvestjobresponsetypedef"></a>
 
 ## CreateHarvestJobResponseTypeDef
 
@@ -250,6 +274,8 @@ Required fields:
 - `Status`: [StatusType](./literals.md#statustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createoriginendpointrequestrequesttypedef"></a>
 
 ## CreateOriginEndpointRequestRequestTypeDef
 
@@ -278,6 +304,8 @@ Optional fields:
 - `TimeDelaySeconds`: `int`
 - `Whitelist`: `Sequence`\[`str`\]
 
+<a id="createoriginendpointresponsetypedef"></a>
+
 ## CreateOriginEndpointResponseTypeDef
 
 ```python
@@ -305,6 +333,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dashencryptiontypedef"></a>
+
 ## DashEncryptionTypeDef
 
 ```python
@@ -319,6 +349,8 @@ Required fields:
 Optional fields:
 
 - `KeyRotationIntervalSeconds`: `int`
+
+<a id="dashpackagetypedef"></a>
 
 ## DashPackageTypeDef
 
@@ -349,6 +381,8 @@ Optional fields:
 - `UtcTiming`: [UtcTimingType](./literals.md#utctimingtype)
 - `UtcTimingUri`: `str`
 
+<a id="deletechannelrequestrequesttypedef"></a>
+
 ## DeleteChannelRequestRequestTypeDef
 
 ```python
@@ -358,6 +392,8 @@ from mypy_boto3_mediapackage.type_defs import DeleteChannelRequestRequestTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="deleteoriginendpointrequestrequesttypedef"></a>
 
 ## DeleteOriginEndpointRequestRequestTypeDef
 
@@ -369,6 +405,8 @@ Required fields:
 
 - `Id`: `str`
 
+<a id="describechannelrequestrequesttypedef"></a>
+
 ## DescribeChannelRequestRequestTypeDef
 
 ```python
@@ -378,6 +416,8 @@ from mypy_boto3_mediapackage.type_defs import DescribeChannelRequestRequestTypeD
 Required fields:
 
 - `Id`: `str`
+
+<a id="describechannelresponsetypedef"></a>
 
 ## DescribeChannelResponseTypeDef
 
@@ -399,6 +439,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeharvestjobrequestrequesttypedef"></a>
+
 ## DescribeHarvestJobRequestRequestTypeDef
 
 ```python
@@ -408,6 +450,8 @@ from mypy_boto3_mediapackage.type_defs import DescribeHarvestJobRequestRequestTy
 Required fields:
 
 - `Id`: `str`
+
+<a id="describeharvestjobresponsetypedef"></a>
 
 ## DescribeHarvestJobResponseTypeDef
 
@@ -429,6 +473,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeoriginendpointrequestrequesttypedef"></a>
+
 ## DescribeOriginEndpointRequestRequestTypeDef
 
 ```python
@@ -438,6 +484,8 @@ from mypy_boto3_mediapackage.type_defs import DescribeOriginEndpointRequestReque
 Required fields:
 
 - `Id`: `str`
+
+<a id="describeoriginendpointresponsetypedef"></a>
 
 ## DescribeOriginEndpointResponseTypeDef
 
@@ -466,6 +514,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="egressaccesslogstypedef"></a>
+
 ## EgressAccessLogsTypeDef
 
 ```python
@@ -475,6 +525,8 @@ from mypy_boto3_mediapackage.type_defs import EgressAccessLogsTypeDef
 Optional fields:
 
 - `LogGroupName`: `str`
+
+<a id="encryptioncontractconfigurationtypedef"></a>
 
 ## EncryptionContractConfigurationTypeDef
 
@@ -488,6 +540,8 @@ Required fields:
   [PresetSpeke20AudioType](./literals.md#presetspeke20audiotype))
 - `PresetSpeke20Video`: `Literal['PRESET-VIDEO-1']` (see
   [PresetSpeke20VideoType](./literals.md#presetspeke20videotype))
+
+<a id="harvestjobtypedef"></a>
 
 ## HarvestJobTypeDef
 
@@ -506,6 +560,8 @@ Optional fields:
 - `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `StartTime`: `str`
 - `Status`: [StatusType](./literals.md#statustype)
+
+<a id="hlsencryptiontypedef"></a>
 
 ## HlsEncryptionTypeDef
 
@@ -526,6 +582,8 @@ Optional fields:
 - `KeyRotationIntervalSeconds`: `int`
 - `RepeatExtXKey`: `bool`
 
+<a id="hlsingesttypedef"></a>
+
 ## HlsIngestTypeDef
 
 ```python
@@ -536,6 +594,8 @@ Optional fields:
 
 - `IngestEndpoints`:
   `List`\[[IngestEndpointTypeDef](./type_defs.md#ingestendpointtypedef)\]
+
+<a id="hlsmanifestcreateorupdateparameterstypedef"></a>
 
 ## HlsManifestCreateOrUpdateParametersTypeDef
 
@@ -560,6 +620,8 @@ Optional fields:
 - `PlaylistWindowSeconds`: `int`
 - `ProgramDateTimeIntervalSeconds`: `int`
 
+<a id="hlsmanifesttypedef"></a>
+
 ## HlsManifestTypeDef
 
 ```python
@@ -579,6 +641,8 @@ Optional fields:
 - `PlaylistWindowSeconds`: `int`
 - `ProgramDateTimeIntervalSeconds`: `int`
 - `Url`: `str`
+
+<a id="hlspackagetypedef"></a>
 
 ## HlsPackageTypeDef
 
@@ -604,6 +668,8 @@ Optional fields:
   [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
 - `UseAudioRenditionGroup`: `bool`
 
+<a id="ingestendpointtypedef"></a>
+
 ## IngestEndpointTypeDef
 
 ```python
@@ -617,6 +683,8 @@ Optional fields:
 - `Url`: `str`
 - `Username`: `str`
 
+<a id="ingressaccesslogstypedef"></a>
+
 ## IngressAccessLogsTypeDef
 
 ```python
@@ -626,6 +694,8 @@ from mypy_boto3_mediapackage.type_defs import IngressAccessLogsTypeDef
 Optional fields:
 
 - `LogGroupName`: `str`
+
+<a id="listchannelsrequestrequesttypedef"></a>
 
 ## ListChannelsRequestRequestTypeDef
 
@@ -637,6 +707,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listchannelsresponsetypedef"></a>
 
 ## ListChannelsResponseTypeDef
 
@@ -651,6 +723,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listharvestjobsrequestrequesttypedef"></a>
+
 ## ListHarvestJobsRequestRequestTypeDef
 
 ```python
@@ -663,6 +737,8 @@ Optional fields:
 - `IncludeStatus`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listharvestjobsresponsetypedef"></a>
 
 ## ListHarvestJobsResponseTypeDef
 
@@ -678,6 +754,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listoriginendpointsrequestrequesttypedef"></a>
+
 ## ListOriginEndpointsRequestRequestTypeDef
 
 ```python
@@ -689,6 +767,8 @@ Optional fields:
 - `ChannelId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listoriginendpointsresponsetypedef"></a>
 
 ## ListOriginEndpointsResponseTypeDef
 
@@ -704,6 +784,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -713,6 +795,8 @@ from mypy_boto3_mediapackage.type_defs import ListTagsForResourceRequestRequestT
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -726,6 +810,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="mssencryptiontypedef"></a>
+
 ## MssEncryptionTypeDef
 
 ```python
@@ -736,6 +822,8 @@ Required fields:
 
 - `SpekeKeyProvider`:
   [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
+
+<a id="msspackagetypedef"></a>
 
 ## MssPackageTypeDef
 
@@ -750,6 +838,8 @@ Optional fields:
 - `SegmentDurationSeconds`: `int`
 - `StreamSelection`:
   [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
+
+<a id="originendpointtypedef"></a>
 
 ## OriginEndpointTypeDef
 
@@ -776,6 +866,8 @@ Optional fields:
 - `Url`: `str`
 - `Whitelist`: `List`\[`str`\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -787,6 +879,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -802,6 +896,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="rotatechannelcredentialsrequestrequesttypedef"></a>
+
 ## RotateChannelCredentialsRequestRequestTypeDef
 
 ```python
@@ -811,6 +907,8 @@ from mypy_boto3_mediapackage.type_defs import RotateChannelCredentialsRequestReq
 Required fields:
 
 - `Id`: `str`
+
+<a id="rotatechannelcredentialsresponsetypedef"></a>
 
 ## RotateChannelCredentialsResponseTypeDef
 
@@ -832,6 +930,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="rotateingestendpointcredentialsrequestrequesttypedef"></a>
+
 ## RotateIngestEndpointCredentialsRequestRequestTypeDef
 
 ```python
@@ -842,6 +942,8 @@ Required fields:
 
 - `Id`: `str`
 - `IngestEndpointId`: `str`
+
+<a id="rotateingestendpointcredentialsresponsetypedef"></a>
 
 ## RotateIngestEndpointCredentialsResponseTypeDef
 
@@ -863,6 +965,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="s3destinationtypedef"></a>
+
 ## S3DestinationTypeDef
 
 ```python
@@ -874,6 +978,8 @@ Required fields:
 - `BucketName`: `str`
 - `ManifestKey`: `str`
 - `RoleArn`: `str`
+
+<a id="spekekeyprovidertypedef"></a>
 
 ## SpekeKeyProviderTypeDef
 
@@ -894,6 +1000,8 @@ Optional fields:
 - `EncryptionContractConfiguration`:
   [EncryptionContractConfigurationTypeDef](./type_defs.md#encryptioncontractconfigurationtypedef)
 
+<a id="streamselectiontypedef"></a>
+
 ## StreamSelectionTypeDef
 
 ```python
@@ -906,6 +1014,8 @@ Optional fields:
 - `MinVideoBitsPerSecond`: `int`
 - `StreamOrder`: [StreamOrderType](./literals.md#streamordertype)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -917,6 +1027,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -927,6 +1039,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatechannelrequestrequesttypedef"></a>
 
 ## UpdateChannelRequestRequestTypeDef
 
@@ -941,6 +1055,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="updatechannelresponsetypedef"></a>
 
 ## UpdateChannelResponseTypeDef
 
@@ -961,6 +1077,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateoriginendpointrequestrequesttypedef"></a>
 
 ## UpdateOriginEndpointRequestRequestTypeDef
 
@@ -986,6 +1104,8 @@ Optional fields:
 - `StartoverWindowSeconds`: `int`
 - `TimeDelaySeconds`: `int`
 - `Whitelist`: `Sequence`\[`str`\]
+
+<a id="updateoriginendpointresponsetypedef"></a>
 
 ## UpdateOriginEndpointResponseTypeDef
 

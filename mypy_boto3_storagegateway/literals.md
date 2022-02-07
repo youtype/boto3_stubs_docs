@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-storagegateway-module"></a>
+
 # Literals for boto3 StorageGateway module
 
 > [Index](..) > [StorageGateway](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
 type annotations stubs module
-[mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
+[mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 - [Literals for boto3 StorageGateway module](#literals-for-boto3-storagegateway-module)
   - [ActiveDirectoryStatusType](#activedirectorystatustype)
@@ -33,6 +35,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="activedirectorystatustype"></a>
+
 ## ActiveDirectoryStatusType
 
 ```python
@@ -49,6 +53,8 @@ Values:
 - `TIMEOUT`
 - `UNKNOWN_ERROR`
 
+<a id="availabilitymonitorteststatustype"></a>
+
 ## AvailabilityMonitorTestStatusType
 
 ```python
@@ -61,6 +67,8 @@ Values:
 - `FAILED`
 - `PENDING`
 
+<a id="casesensitivitytype"></a>
+
 ## CaseSensitivityType
 
 ```python
@@ -72,6 +80,8 @@ Values:
 - `CaseSensitive`
 - `ClientSpecified`
 
+<a id="describetapearchivespaginatorname"></a>
+
 ## DescribeTapeArchivesPaginatorName
 
 ```python
@@ -81,6 +91,8 @@ from mypy_boto3_storagegateway.literals import DescribeTapeArchivesPaginatorName
 Values:
 
 - `describe_tape_archives`
+
+<a id="describetaperecoverypointspaginatorname"></a>
 
 ## DescribeTapeRecoveryPointsPaginatorName
 
@@ -92,6 +104,8 @@ Values:
 
 - `describe_tape_recovery_points`
 
+<a id="describetapespaginatorname"></a>
+
 ## DescribeTapesPaginatorName
 
 ```python
@@ -102,6 +116,8 @@ Values:
 
 - `describe_tapes`
 
+<a id="describevtldevicespaginatorname"></a>
+
 ## DescribeVTLDevicesPaginatorName
 
 ```python
@@ -111,6 +127,8 @@ from mypy_boto3_storagegateway.literals import DescribeVTLDevicesPaginatorName
 Values:
 
 - `describe_vtl_devices`
+
+<a id="filesharetypetype"></a>
 
 ## FileShareTypeType
 
@@ -123,6 +141,8 @@ Values:
 - `NFS`
 - `SMB`
 
+<a id="gatewaycapacitytype"></a>
+
 ## GatewayCapacityType
 
 ```python
@@ -134,6 +154,8 @@ Values:
 - `Large`
 - `Medium`
 - `Small`
+
+<a id="hostenvironmenttype"></a>
 
 ## HostEnvironmentType
 
@@ -150,6 +172,8 @@ Values:
 - `SNOWBALL`
 - `VMWARE`
 
+<a id="listfilesharespaginatorname"></a>
+
 ## ListFileSharesPaginatorName
 
 ```python
@@ -159,6 +183,8 @@ from mypy_boto3_storagegateway.literals import ListFileSharesPaginatorName
 Values:
 
 - `list_file_shares`
+
+<a id="listfilesystemassociationspaginatorname"></a>
 
 ## ListFileSystemAssociationsPaginatorName
 
@@ -170,6 +196,8 @@ Values:
 
 - `list_file_system_associations`
 
+<a id="listgatewayspaginatorname"></a>
+
 ## ListGatewaysPaginatorName
 
 ```python
@@ -179,6 +207,8 @@ from mypy_boto3_storagegateway.literals import ListGatewaysPaginatorName
 Values:
 
 - `list_gateways`
+
+<a id="listtagsforresourcepaginatorname"></a>
 
 ## ListTagsForResourcePaginatorName
 
@@ -190,6 +220,8 @@ Values:
 
 - `list_tags_for_resource`
 
+<a id="listtapepoolspaginatorname"></a>
+
 ## ListTapePoolsPaginatorName
 
 ```python
@@ -199,6 +231,8 @@ from mypy_boto3_storagegateway.literals import ListTapePoolsPaginatorName
 Values:
 
 - `list_tape_pools`
+
+<a id="listtapespaginatorname"></a>
 
 ## ListTapesPaginatorName
 
@@ -210,6 +244,8 @@ Values:
 
 - `list_tapes`
 
+<a id="listvolumespaginatorname"></a>
+
 ## ListVolumesPaginatorName
 
 ```python
@@ -219,6 +255,8 @@ from mypy_boto3_storagegateway.literals import ListVolumesPaginatorName
 Values:
 
 - `list_volumes`
+
+<a id="objectacltype"></a>
 
 ## ObjectACLType
 
@@ -236,6 +274,8 @@ Values:
 - `public-read`
 - `public-read-write`
 
+<a id="poolstatustype"></a>
+
 ## PoolStatusType
 
 ```python
@@ -246,6 +286,8 @@ Values:
 
 - `ACTIVE`
 - `DELETED`
+
+<a id="retentionlocktypetype"></a>
 
 ## RetentionLockTypeType
 
@@ -259,6 +301,8 @@ Values:
 - `GOVERNANCE`
 - `NONE`
 
+<a id="smbsecuritystrategytype"></a>
+
 ## SMBSecurityStrategyType
 
 ```python
@@ -271,6 +315,8 @@ Values:
 - `MandatoryEncryption`
 - `MandatorySigning`
 
+<a id="tapestorageclasstype"></a>
+
 ## TapeStorageClassType
 
 ```python
@@ -281,6 +327,8 @@ Values:
 
 - `DEEP_ARCHIVE`
 - `GLACIER`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -589,6 +637,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

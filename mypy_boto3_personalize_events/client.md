@@ -1,3 +1,5 @@
+<a id="personalizeeventsclient-for-boto3-personalizeevents-module"></a>
+
 # PersonalizeEventsClient for boto3 PersonalizeEvents module
 
 > [Index](..) > [PersonalizeEvents](.) > PersonalizeEventsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)
 type annotations stubs module
-[mypy_boto3_personalize_events](https://pypi.org/project/mypy-boto3-personalize-events/).
+[mypy-boto3-personalize-events](https://pypi.org/project/mypy-boto3-personalize-events/).
 
 - [PersonalizeEventsClient for boto3 PersonalizeEvents module](#personalizeeventsclient-for-boto3-personalizeevents-module)
   - [PersonalizeEventsClient](#personalizeeventsclient)
@@ -18,6 +20,8 @@ type annotations stubs module
     - [put_items](#put_items)
     - [put_users](#put_users)
 
+<a id="personalizeeventsclient"></a>
+
 ## PersonalizeEventsClient
 
 Type annotations for `boto3.client("personalize-events")`
@@ -25,14 +29,17 @@ Type annotations for `boto3.client("personalize-events")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_personalize_events.client import PersonalizeEventsClient
 
 def get_personalize-events_client() -> PersonalizeEventsClient:
-    return boto3.client("personalize-events")
+    return Session().client("personalize-events")
 ```
 
 Boto3 documentation:
 [PersonalizeEvents.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -53,7 +60,11 @@ Exceptions:
 - `Exceptions.ResourceInUseException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -65,6 +76,8 @@ Boto3 documentation:
 [PersonalizeEvents.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -80,6 +93,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -99,6 +114,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="put_events"></a>
 
 ### put_events
 
@@ -120,6 +137,8 @@ Keyword-only arguments:
   *(required)*
 - `userId`: `str`
 
+<a id="put_items"></a>
+
 ### put_items
 
 Adds one or more items to an Items dataset.
@@ -136,6 +155,8 @@ Keyword-only arguments:
 
 - `datasetArn`: `str` *(required)*
 - `items`: `Sequence`\[[ItemTypeDef](./type_defs.md#itemtypedef)\] *(required)*
+
+<a id="put_users"></a>
 
 ### put_users
 

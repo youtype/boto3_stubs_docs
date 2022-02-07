@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cognitoidentity-module"></a>
+
 # Literals for boto3 CognitoIdentity module
 
 > [Index](..) > [CognitoIdentity](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
 type annotations stubs module
-[mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
+[mypy-boto3-cognito-identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
 - [Literals for boto3 CognitoIdentity module](#literals-for-boto3-cognitoidentity-module)
   - [AmbiguousRoleResolutionTypeType](#ambiguousroleresolutiontypetype)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [RoleMappingTypeType](#rolemappingtypetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="ambiguousroleresolutiontypetype"></a>
 
 ## AmbiguousRoleResolutionTypeType
 
@@ -27,6 +31,8 @@ Values:
 - `AuthenticatedRole`
 - `Deny`
 
+<a id="errorcodetype"></a>
+
 ## ErrorCodeType
 
 ```python
@@ -38,6 +44,8 @@ Values:
 - `AccessDenied`
 - `InternalServerError`
 
+<a id="listidentitypoolspaginatorname"></a>
+
 ## ListIdentityPoolsPaginatorName
 
 ```python
@@ -47,6 +55,8 @@ from mypy_boto3_cognito_identity.literals import ListIdentityPoolsPaginatorName
 Values:
 
 - `list_identity_pools`
+
+<a id="mappingrulematchtypetype"></a>
 
 ## MappingRuleMatchTypeType
 
@@ -61,6 +71,8 @@ Values:
 - `NotEqual`
 - `StartsWith`
 
+<a id="rolemappingtypetype"></a>
+
 ## RoleMappingTypeType
 
 ```python
@@ -71,6 +83,8 @@ Values:
 
 - `Rules`
 - `Token`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -379,6 +393,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

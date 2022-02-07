@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ssoadmin-module"></a>
+
 # Type annotations for boto3 SSOAdmin module
 
 > [Index](..) > SSOAdmin
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
 type annotations stubs module
-[mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
+[mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sso-admin]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sso-admin]'
+
+# standalone installation
 pip install mypy-boto3-sso-admin
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-sso-admin
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="ssoadminclient"></a>
+
 ## SSOAdminClient
 
 Type annotations for `boto3.client("sso-admin")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_sso_admin.client import SSOAdminClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -68,6 +82,8 @@ from mypy_boto3_sso_admin.client import SSOAdminClient
 - [update_instance_access_control_attribute_configuration](./client.md#update_instance_access_control_attribute_configuration)
 - [update_permission_set](./client.md#update_permission_set)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SSOAdminClient [exceptions](./client.md#exceptions)
@@ -81,6 +97,8 @@ SSOAdminClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -89,7 +107,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.paginators import ListAccountAssignmentCreationStatusPaginator, ...
+from mypy_boto3_sso_admin.paginator import ListAccountAssignmentCreationStatusPaginator, ...
 ```
 
 - [ListAccountAssignmentCreationStatusPaginator](./paginators.md#listaccountassignmentcreationstatuspaginator)
@@ -102,6 +120,8 @@ from mypy_boto3_sso_admin.paginators import ListAccountAssignmentCreationStatusP
 - [ListPermissionSetsPaginator](./paginators.md#listpermissionsetspaginator)
 - [ListPermissionSetsProvisionedToAccountPaginator](./paginators.md#listpermissionsetsprovisionedtoaccountpaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -131,6 +151,8 @@ from mypy_boto3_sso_admin.literals import InstanceAccessControlAttributeConfigur
 - [TargetTypeType](./literals.md#targettypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

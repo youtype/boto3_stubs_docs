@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-emrcontainers-module"></a>
+
 # Type annotations for boto3 EMRContainers module
 
 > [Index](..) > EMRContainers
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
 type annotations stubs module
-[mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
+[mypy-boto3-emr-containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[emr-containers]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[emr-containers]'
+
+# standalone installation
 pip install mypy-boto3-emr-containers
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-emr-containers
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="emrcontainersclient"></a>
+
 ## EMRContainersClient
 
 Type annotations for `boto3.client("emr-containers")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_emr_containers.client import EMRContainersClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -52,6 +66,8 @@ from mypy_boto3_emr_containers.client import EMRContainersClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 EMRContainersClient [exceptions](./client.md#exceptions)
@@ -61,6 +77,8 @@ EMRContainersClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -69,12 +87,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_emr_containers.paginators import ListJobRunsPaginator, ...
+from mypy_boto3_emr_containers.paginator import ListJobRunsPaginator, ...
 ```
 
 - [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
 - [ListManagedEndpointsPaginator](./paginators.md#listmanagedendpointspaginator)
 - [ListVirtualClustersPaginator](./paginators.md#listvirtualclusterspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -97,6 +117,8 @@ from mypy_boto3_emr_containers.literals import ContainerProviderTypeType, ...
 - [VirtualClusterStateType](./literals.md#virtualclusterstatetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

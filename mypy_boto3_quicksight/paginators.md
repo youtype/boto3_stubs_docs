@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-quicksight-module"></a>
+
 # Paginators for boto3 QuickSight module
 
 > [Index](..) > [QuickSight](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
 type annotations stubs module
-[mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
+[mypy-boto3-quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
 - [Paginators for boto3 QuickSight module](#paginators-for-boto3-quicksight-module)
   - [ListAnalysesPaginator](#listanalysespaginator)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [SearchAnalysesPaginator](#searchanalysespaginator)
   - [SearchDashboardsPaginator](#searchdashboardspaginator)
 
+<a id="listanalysespaginator"></a>
+
 ## ListAnalysesPaginator
 
 Type annotations for
@@ -31,10 +35,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListAnalysesPaginator
 
 def get_list_analyses_paginator() -> ListAnalysesPaginator:
-    return boto3.client("quicksight").get_paginator("list_analyses")
+    return Session().client("quicksight").get_paginator("list_analyses")
 ```
 
 Boto3 documentation:
@@ -49,6 +55,8 @@ Arguments for `ListAnalysesPaginator.paginate` method:
 `ListAnalysesPaginator.paginate` returns
 `_PageIterator`\[[ListAnalysesResponseTypeDef](./type_defs.md#listanalysesresponsetypedef)\].
 
+<a id="listdashboardversionspaginator"></a>
+
 ## ListDashboardVersionsPaginator
 
 Type annotations for
@@ -57,10 +65,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListDashboardVersionsPaginator
 
 def get_list_dashboard_versions_paginator() -> ListDashboardVersionsPaginator:
-    return boto3.client("quicksight").get_paginator("list_dashboard_versions")
+    return Session().client("quicksight").get_paginator("list_dashboard_versions")
 ```
 
 Boto3 documentation:
@@ -76,6 +86,8 @@ Arguments for `ListDashboardVersionsPaginator.paginate` method:
 `ListDashboardVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListDashboardVersionsResponseTypeDef](./type_defs.md#listdashboardversionsresponsetypedef)\].
 
+<a id="listdashboardspaginator"></a>
+
 ## ListDashboardsPaginator
 
 Type annotations for
@@ -84,10 +96,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListDashboardsPaginator
 
 def get_list_dashboards_paginator() -> ListDashboardsPaginator:
-    return boto3.client("quicksight").get_paginator("list_dashboards")
+    return Session().client("quicksight").get_paginator("list_dashboards")
 ```
 
 Boto3 documentation:
@@ -102,6 +116,8 @@ Arguments for `ListDashboardsPaginator.paginate` method:
 `ListDashboardsPaginator.paginate` returns
 `_PageIterator`\[[ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef)\].
 
+<a id="listdatasetspaginator"></a>
+
 ## ListDataSetsPaginator
 
 Type annotations for
@@ -110,10 +126,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListDataSetsPaginator
 
 def get_list_data_sets_paginator() -> ListDataSetsPaginator:
-    return boto3.client("quicksight").get_paginator("list_data_sets")
+    return Session().client("quicksight").get_paginator("list_data_sets")
 ```
 
 Boto3 documentation:
@@ -128,6 +146,8 @@ Arguments for `ListDataSetsPaginator.paginate` method:
 `ListDataSetsPaginator.paginate` returns
 `_PageIterator`\[[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
 
+<a id="listdatasourcespaginator"></a>
+
 ## ListDataSourcesPaginator
 
 Type annotations for
@@ -136,10 +156,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListDataSourcesPaginator
 
 def get_list_data_sources_paginator() -> ListDataSourcesPaginator:
-    return boto3.client("quicksight").get_paginator("list_data_sources")
+    return Session().client("quicksight").get_paginator("list_data_sources")
 ```
 
 Boto3 documentation:
@@ -154,6 +176,8 @@ Arguments for `ListDataSourcesPaginator.paginate` method:
 `ListDataSourcesPaginator.paginate` returns
 `_PageIterator`\[[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef)\].
 
+<a id="listingestionspaginator"></a>
+
 ## ListIngestionsPaginator
 
 Type annotations for
@@ -162,10 +186,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListIngestionsPaginator
 
 def get_list_ingestions_paginator() -> ListIngestionsPaginator:
-    return boto3.client("quicksight").get_paginator("list_ingestions")
+    return Session().client("quicksight").get_paginator("list_ingestions")
 ```
 
 Boto3 documentation:
@@ -181,6 +207,8 @@ Arguments for `ListIngestionsPaginator.paginate` method:
 `ListIngestionsPaginator.paginate` returns
 `_PageIterator`\[[ListIngestionsResponseTypeDef](./type_defs.md#listingestionsresponsetypedef)\].
 
+<a id="listnamespacespaginator"></a>
+
 ## ListNamespacesPaginator
 
 Type annotations for
@@ -189,10 +217,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListNamespacesPaginator
 
 def get_list_namespaces_paginator() -> ListNamespacesPaginator:
-    return boto3.client("quicksight").get_paginator("list_namespaces")
+    return Session().client("quicksight").get_paginator("list_namespaces")
 ```
 
 Boto3 documentation:
@@ -207,6 +237,8 @@ Arguments for `ListNamespacesPaginator.paginate` method:
 `ListNamespacesPaginator.paginate` returns
 `_PageIterator`\[[ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef)\].
 
+<a id="listtemplatealiasespaginator"></a>
+
 ## ListTemplateAliasesPaginator
 
 Type annotations for
@@ -215,10 +247,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListTemplateAliasesPaginator
 
 def get_list_template_aliases_paginator() -> ListTemplateAliasesPaginator:
-    return boto3.client("quicksight").get_paginator("list_template_aliases")
+    return Session().client("quicksight").get_paginator("list_template_aliases")
 ```
 
 Boto3 documentation:
@@ -234,6 +268,8 @@ Arguments for `ListTemplateAliasesPaginator.paginate` method:
 `ListTemplateAliasesPaginator.paginate` returns
 `_PageIterator`\[[ListTemplateAliasesResponseTypeDef](./type_defs.md#listtemplatealiasesresponsetypedef)\].
 
+<a id="listtemplateversionspaginator"></a>
+
 ## ListTemplateVersionsPaginator
 
 Type annotations for
@@ -242,10 +278,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListTemplateVersionsPaginator
 
 def get_list_template_versions_paginator() -> ListTemplateVersionsPaginator:
-    return boto3.client("quicksight").get_paginator("list_template_versions")
+    return Session().client("quicksight").get_paginator("list_template_versions")
 ```
 
 Boto3 documentation:
@@ -261,6 +299,8 @@ Arguments for `ListTemplateVersionsPaginator.paginate` method:
 `ListTemplateVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListTemplateVersionsResponseTypeDef](./type_defs.md#listtemplateversionsresponsetypedef)\].
 
+<a id="listtemplatespaginator"></a>
+
 ## ListTemplatesPaginator
 
 Type annotations for
@@ -269,10 +309,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListTemplatesPaginator
 
 def get_list_templates_paginator() -> ListTemplatesPaginator:
-    return boto3.client("quicksight").get_paginator("list_templates")
+    return Session().client("quicksight").get_paginator("list_templates")
 ```
 
 Boto3 documentation:
@@ -287,6 +329,8 @@ Arguments for `ListTemplatesPaginator.paginate` method:
 `ListTemplatesPaginator.paginate` returns
 `_PageIterator`\[[ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef)\].
 
+<a id="listthemeversionspaginator"></a>
+
 ## ListThemeVersionsPaginator
 
 Type annotations for
@@ -295,10 +339,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListThemeVersionsPaginator
 
 def get_list_theme_versions_paginator() -> ListThemeVersionsPaginator:
-    return boto3.client("quicksight").get_paginator("list_theme_versions")
+    return Session().client("quicksight").get_paginator("list_theme_versions")
 ```
 
 Boto3 documentation:
@@ -314,6 +360,8 @@ Arguments for `ListThemeVersionsPaginator.paginate` method:
 `ListThemeVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListThemeVersionsResponseTypeDef](./type_defs.md#listthemeversionsresponsetypedef)\].
 
+<a id="listthemespaginator"></a>
+
 ## ListThemesPaginator
 
 Type annotations for `boto3.client("quicksight").get_paginator("list_themes")`.
@@ -321,10 +369,12 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_themes")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import ListThemesPaginator
 
 def get_list_themes_paginator() -> ListThemesPaginator:
-    return boto3.client("quicksight").get_paginator("list_themes")
+    return Session().client("quicksight").get_paginator("list_themes")
 ```
 
 Boto3 documentation:
@@ -340,6 +390,8 @@ Arguments for `ListThemesPaginator.paginate` method:
 `ListThemesPaginator.paginate` returns
 `_PageIterator`\[[ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef)\].
 
+<a id="searchanalysespaginator"></a>
+
 ## SearchAnalysesPaginator
 
 Type annotations for
@@ -348,10 +400,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import SearchAnalysesPaginator
 
 def get_search_analyses_paginator() -> SearchAnalysesPaginator:
-    return boto3.client("quicksight").get_paginator("search_analyses")
+    return Session().client("quicksight").get_paginator("search_analyses")
 ```
 
 Boto3 documentation:
@@ -369,6 +423,8 @@ Arguments for `SearchAnalysesPaginator.paginate` method:
 `SearchAnalysesPaginator.paginate` returns
 `_PageIterator`\[[SearchAnalysesResponseTypeDef](./type_defs.md#searchanalysesresponsetypedef)\].
 
+<a id="searchdashboardspaginator"></a>
+
 ## SearchDashboardsPaginator
 
 Type annotations for
@@ -377,10 +433,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_quicksight.paginator import SearchDashboardsPaginator
 
 def get_search_dashboards_paginator() -> SearchDashboardsPaginator:
-    return boto3.client("quicksight").get_paginator("search_dashboards")
+    return Session().client("quicksight").get_paginator("search_dashboards")
 ```
 
 Boto3 documentation:

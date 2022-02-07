@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-sfn-module"></a>
+
 # Paginators for boto3 SFN module
 
 > [Index](..) > [SFN](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
 type annotations stubs module
-[mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+[mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 - [Paginators for boto3 SFN module](#paginators-for-boto3-sfn-module)
   - [GetExecutionHistoryPaginator](#getexecutionhistorypaginator)
   - [ListActivitiesPaginator](#listactivitiespaginator)
   - [ListExecutionsPaginator](#listexecutionspaginator)
   - [ListStateMachinesPaginator](#liststatemachinespaginator)
+
+<a id="getexecutionhistorypaginator"></a>
 
 ## GetExecutionHistoryPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_stepfunctions.paginator import GetExecutionHistoryPaginator
 
 def get_get_execution_history_paginator() -> GetExecutionHistoryPaginator:
-    return boto3.client("stepfunctions").get_paginator("get_execution_history")
+    return Session().client("stepfunctions").get_paginator("get_execution_history")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `GetExecutionHistoryPaginator.paginate` method:
 `GetExecutionHistoryPaginator.paginate` returns
 `_PageIterator`\[[GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef)\].
 
+<a id="listactivitiespaginator"></a>
+
 ## ListActivitiesPaginator
 
 Type annotations for
@@ -49,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_stepfunctions.paginator import ListActivitiesPaginator
 
 def get_list_activities_paginator() -> ListActivitiesPaginator:
-    return boto3.client("stepfunctions").get_paginator("list_activities")
+    return Session().client("stepfunctions").get_paginator("list_activities")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `ListActivitiesPaginator.paginate` method:
 `ListActivitiesPaginator.paginate` returns
 `_PageIterator`\[[ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef)\].
 
+<a id="listexecutionspaginator"></a>
+
 ## ListExecutionsPaginator
 
 Type annotations for
@@ -74,10 +86,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_stepfunctions.paginator import ListExecutionsPaginator
 
 def get_list_executions_paginator() -> ListExecutionsPaginator:
-    return boto3.client("stepfunctions").get_paginator("list_executions")
+    return Session().client("stepfunctions").get_paginator("list_executions")
 ```
 
 Boto3 documentation:
@@ -93,6 +107,8 @@ Arguments for `ListExecutionsPaginator.paginate` method:
 `ListExecutionsPaginator.paginate` returns
 `_PageIterator`\[[ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef)\].
 
+<a id="liststatemachinespaginator"></a>
+
 ## ListStateMachinesPaginator
 
 Type annotations for
@@ -101,10 +117,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_stepfunctions.paginator import ListStateMachinesPaginator
 
 def get_list_state_machines_paginator() -> ListStateMachinesPaginator:
-    return boto3.client("stepfunctions").get_paginator("list_state_machines")
+    return Session().client("stepfunctions").get_paginator("list_state_machines")
 ```
 
 Boto3 documentation:

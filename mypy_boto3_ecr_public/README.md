@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ecrpublic-module"></a>
+
 # Type annotations for boto3 ECRPublic module
 
 > [Index](..) > ECRPublic
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
 type annotations stubs module
-[mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
+[mypy-boto3-ecr-public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ecr-public]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ecr-public]'
+
+# standalone installation
 pip install mypy-boto3-ecr-public
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-ecr-public
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="ecrpublicclient"></a>
+
 ## ECRPublicClient
 
 Type annotations for `boto3.client("ecr-public")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ecr_public.client import ECRPublicClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -60,6 +74,8 @@ from mypy_boto3_ecr_public.client import ECRPublicClient
 - [untag_resource](./client.md#untag_resource)
 - [upload_layer_part](./client.md#upload_layer_part)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ECRPublicClient [exceptions](./client.md#exceptions)
@@ -89,6 +105,8 @@ ECRPublicClient [exceptions](./client.md#exceptions)
 - UnsupportedCommandException
 - UploadNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -97,13 +115,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ecr_public.paginators import DescribeImageTagsPaginator, ...
+from mypy_boto3_ecr_public.paginator import DescribeImageTagsPaginator, ...
 ```
 
 - [DescribeImageTagsPaginator](./paginators.md#describeimagetagspaginator)
 - [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
 - [DescribeRegistriesPaginator](./paginators.md#describeregistriespaginator)
 - [DescribeRepositoriesPaginator](./paginators.md#describerepositoriespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -125,6 +145,8 @@ from mypy_boto3_ecr_public.literals import DescribeImageTagsPaginatorName, ...
 - [RegistryAliasStatusType](./literals.md#registryaliasstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-greengrass-module"></a>
+
 # Paginators for boto3 Greengrass module
 
 > [Index](..) > [Greengrass](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
 type annotations stubs module
-[mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
+[mypy-boto3-greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 - [Paginators for boto3 Greengrass module](#paginators-for-boto3-greengrass-module)
   - [ListBulkDeploymentDetailedReportsPaginator](#listbulkdeploymentdetailedreportspaginator)
@@ -28,6 +30,8 @@ type annotations stubs module
   - [ListSubscriptionDefinitionVersionsPaginator](#listsubscriptiondefinitionversionspaginator)
   - [ListSubscriptionDefinitionsPaginator](#listsubscriptiondefinitionspaginator)
 
+<a id="listbulkdeploymentdetailedreportspaginator"></a>
+
 ## ListBulkDeploymentDetailedReportsPaginator
 
 Type annotations for
@@ -36,10 +40,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListBulkDeploymentDetailedReportsPaginator
 
 def get_list_bulk_deployment_detailed_reports_paginator() -> ListBulkDeploymentDetailedReportsPaginator:
-    return boto3.client("greengrass").get_paginator("list_bulk_deployment_detailed_reports")
+    return Session().client("greengrass").get_paginator("list_bulk_deployment_detailed_reports")
 ```
 
 Boto3 documentation:
@@ -54,6 +60,8 @@ Arguments for `ListBulkDeploymentDetailedReportsPaginator.paginate` method:
 `ListBulkDeploymentDetailedReportsPaginator.paginate` returns
 `_PageIterator`\[[ListBulkDeploymentDetailedReportsResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponsetypedef)\].
 
+<a id="listbulkdeploymentspaginator"></a>
+
 ## ListBulkDeploymentsPaginator
 
 Type annotations for
@@ -62,10 +70,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListBulkDeploymentsPaginator
 
 def get_list_bulk_deployments_paginator() -> ListBulkDeploymentsPaginator:
-    return boto3.client("greengrass").get_paginator("list_bulk_deployments")
+    return Session().client("greengrass").get_paginator("list_bulk_deployments")
 ```
 
 Boto3 documentation:
@@ -79,6 +89,8 @@ Arguments for `ListBulkDeploymentsPaginator.paginate` method:
 `ListBulkDeploymentsPaginator.paginate` returns
 `_PageIterator`\[[ListBulkDeploymentsResponseTypeDef](./type_defs.md#listbulkdeploymentsresponsetypedef)\].
 
+<a id="listconnectordefinitionversionspaginator"></a>
+
 ## ListConnectorDefinitionVersionsPaginator
 
 Type annotations for
@@ -87,10 +99,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListConnectorDefinitionVersionsPaginator
 
 def get_list_connector_definition_versions_paginator() -> ListConnectorDefinitionVersionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_connector_definition_versions")
+    return Session().client("greengrass").get_paginator("list_connector_definition_versions")
 ```
 
 Boto3 documentation:
@@ -105,6 +119,8 @@ Arguments for `ListConnectorDefinitionVersionsPaginator.paginate` method:
 `ListConnectorDefinitionVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListConnectorDefinitionVersionsResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponsetypedef)\].
 
+<a id="listconnectordefinitionspaginator"></a>
+
 ## ListConnectorDefinitionsPaginator
 
 Type annotations for
@@ -113,10 +129,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListConnectorDefinitionsPaginator
 
 def get_list_connector_definitions_paginator() -> ListConnectorDefinitionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_connector_definitions")
+    return Session().client("greengrass").get_paginator("list_connector_definitions")
 ```
 
 Boto3 documentation:
@@ -130,6 +148,8 @@ Arguments for `ListConnectorDefinitionsPaginator.paginate` method:
 `ListConnectorDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListConnectorDefinitionsResponseTypeDef](./type_defs.md#listconnectordefinitionsresponsetypedef)\].
 
+<a id="listcoredefinitionversionspaginator"></a>
+
 ## ListCoreDefinitionVersionsPaginator
 
 Type annotations for
@@ -138,10 +158,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListCoreDefinitionVersionsPaginator
 
 def get_list_core_definition_versions_paginator() -> ListCoreDefinitionVersionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_core_definition_versions")
+    return Session().client("greengrass").get_paginator("list_core_definition_versions")
 ```
 
 Boto3 documentation:
@@ -156,6 +178,8 @@ Arguments for `ListCoreDefinitionVersionsPaginator.paginate` method:
 `ListCoreDefinitionVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListCoreDefinitionVersionsResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponsetypedef)\].
 
+<a id="listcoredefinitionspaginator"></a>
+
 ## ListCoreDefinitionsPaginator
 
 Type annotations for
@@ -164,10 +188,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListCoreDefinitionsPaginator
 
 def get_list_core_definitions_paginator() -> ListCoreDefinitionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_core_definitions")
+    return Session().client("greengrass").get_paginator("list_core_definitions")
 ```
 
 Boto3 documentation:
@@ -181,6 +207,8 @@ Arguments for `ListCoreDefinitionsPaginator.paginate` method:
 `ListCoreDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListCoreDefinitionsResponseTypeDef](./type_defs.md#listcoredefinitionsresponsetypedef)\].
 
+<a id="listdeploymentspaginator"></a>
+
 ## ListDeploymentsPaginator
 
 Type annotations for
@@ -189,10 +217,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListDeploymentsPaginator
 
 def get_list_deployments_paginator() -> ListDeploymentsPaginator:
-    return boto3.client("greengrass").get_paginator("list_deployments")
+    return Session().client("greengrass").get_paginator("list_deployments")
 ```
 
 Boto3 documentation:
@@ -207,6 +237,8 @@ Arguments for `ListDeploymentsPaginator.paginate` method:
 `ListDeploymentsPaginator.paginate` returns
 `_PageIterator`\[[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef)\].
 
+<a id="listdevicedefinitionversionspaginator"></a>
+
 ## ListDeviceDefinitionVersionsPaginator
 
 Type annotations for
@@ -215,10 +247,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListDeviceDefinitionVersionsPaginator
 
 def get_list_device_definition_versions_paginator() -> ListDeviceDefinitionVersionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_device_definition_versions")
+    return Session().client("greengrass").get_paginator("list_device_definition_versions")
 ```
 
 Boto3 documentation:
@@ -233,6 +267,8 @@ Arguments for `ListDeviceDefinitionVersionsPaginator.paginate` method:
 `ListDeviceDefinitionVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListDeviceDefinitionVersionsResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponsetypedef)\].
 
+<a id="listdevicedefinitionspaginator"></a>
+
 ## ListDeviceDefinitionsPaginator
 
 Type annotations for
@@ -241,10 +277,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListDeviceDefinitionsPaginator
 
 def get_list_device_definitions_paginator() -> ListDeviceDefinitionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_device_definitions")
+    return Session().client("greengrass").get_paginator("list_device_definitions")
 ```
 
 Boto3 documentation:
@@ -258,6 +296,8 @@ Arguments for `ListDeviceDefinitionsPaginator.paginate` method:
 `ListDeviceDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListDeviceDefinitionsResponseTypeDef](./type_defs.md#listdevicedefinitionsresponsetypedef)\].
 
+<a id="listfunctiondefinitionversionspaginator"></a>
+
 ## ListFunctionDefinitionVersionsPaginator
 
 Type annotations for
@@ -266,10 +306,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListFunctionDefinitionVersionsPaginator
 
 def get_list_function_definition_versions_paginator() -> ListFunctionDefinitionVersionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_function_definition_versions")
+    return Session().client("greengrass").get_paginator("list_function_definition_versions")
 ```
 
 Boto3 documentation:
@@ -284,6 +326,8 @@ Arguments for `ListFunctionDefinitionVersionsPaginator.paginate` method:
 `ListFunctionDefinitionVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListFunctionDefinitionVersionsResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponsetypedef)\].
 
+<a id="listfunctiondefinitionspaginator"></a>
+
 ## ListFunctionDefinitionsPaginator
 
 Type annotations for
@@ -292,10 +336,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListFunctionDefinitionsPaginator
 
 def get_list_function_definitions_paginator() -> ListFunctionDefinitionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_function_definitions")
+    return Session().client("greengrass").get_paginator("list_function_definitions")
 ```
 
 Boto3 documentation:
@@ -309,6 +355,8 @@ Arguments for `ListFunctionDefinitionsPaginator.paginate` method:
 `ListFunctionDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListFunctionDefinitionsResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponsetypedef)\].
 
+<a id="listgroupversionspaginator"></a>
+
 ## ListGroupVersionsPaginator
 
 Type annotations for
@@ -317,10 +365,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListGroupVersionsPaginator
 
 def get_list_group_versions_paginator() -> ListGroupVersionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_group_versions")
+    return Session().client("greengrass").get_paginator("list_group_versions")
 ```
 
 Boto3 documentation:
@@ -335,6 +385,8 @@ Arguments for `ListGroupVersionsPaginator.paginate` method:
 `ListGroupVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListGroupVersionsResponseTypeDef](./type_defs.md#listgroupversionsresponsetypedef)\].
 
+<a id="listgroupspaginator"></a>
+
 ## ListGroupsPaginator
 
 Type annotations for `boto3.client("greengrass").get_paginator("list_groups")`.
@@ -342,10 +394,12 @@ Type annotations for `boto3.client("greengrass").get_paginator("list_groups")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListGroupsPaginator
 
 def get_list_groups_paginator() -> ListGroupsPaginator:
-    return boto3.client("greengrass").get_paginator("list_groups")
+    return Session().client("greengrass").get_paginator("list_groups")
 ```
 
 Boto3 documentation:
@@ -359,6 +413,8 @@ Arguments for `ListGroupsPaginator.paginate` method:
 `ListGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
 
+<a id="listloggerdefinitionversionspaginator"></a>
+
 ## ListLoggerDefinitionVersionsPaginator
 
 Type annotations for
@@ -367,10 +423,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListLoggerDefinitionVersionsPaginator
 
 def get_list_logger_definition_versions_paginator() -> ListLoggerDefinitionVersionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_logger_definition_versions")
+    return Session().client("greengrass").get_paginator("list_logger_definition_versions")
 ```
 
 Boto3 documentation:
@@ -385,6 +443,8 @@ Arguments for `ListLoggerDefinitionVersionsPaginator.paginate` method:
 `ListLoggerDefinitionVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListLoggerDefinitionVersionsResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponsetypedef)\].
 
+<a id="listloggerdefinitionspaginator"></a>
+
 ## ListLoggerDefinitionsPaginator
 
 Type annotations for
@@ -393,10 +453,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListLoggerDefinitionsPaginator
 
 def get_list_logger_definitions_paginator() -> ListLoggerDefinitionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_logger_definitions")
+    return Session().client("greengrass").get_paginator("list_logger_definitions")
 ```
 
 Boto3 documentation:
@@ -410,6 +472,8 @@ Arguments for `ListLoggerDefinitionsPaginator.paginate` method:
 `ListLoggerDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListLoggerDefinitionsResponseTypeDef](./type_defs.md#listloggerdefinitionsresponsetypedef)\].
 
+<a id="listresourcedefinitionversionspaginator"></a>
+
 ## ListResourceDefinitionVersionsPaginator
 
 Type annotations for
@@ -418,10 +482,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListResourceDefinitionVersionsPaginator
 
 def get_list_resource_definition_versions_paginator() -> ListResourceDefinitionVersionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_resource_definition_versions")
+    return Session().client("greengrass").get_paginator("list_resource_definition_versions")
 ```
 
 Boto3 documentation:
@@ -436,6 +502,8 @@ Arguments for `ListResourceDefinitionVersionsPaginator.paginate` method:
 `ListResourceDefinitionVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListResourceDefinitionVersionsResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponsetypedef)\].
 
+<a id="listresourcedefinitionspaginator"></a>
+
 ## ListResourceDefinitionsPaginator
 
 Type annotations for
@@ -444,10 +512,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListResourceDefinitionsPaginator
 
 def get_list_resource_definitions_paginator() -> ListResourceDefinitionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_resource_definitions")
+    return Session().client("greengrass").get_paginator("list_resource_definitions")
 ```
 
 Boto3 documentation:
@@ -461,6 +531,8 @@ Arguments for `ListResourceDefinitionsPaginator.paginate` method:
 `ListResourceDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListResourceDefinitionsResponseTypeDef](./type_defs.md#listresourcedefinitionsresponsetypedef)\].
 
+<a id="listsubscriptiondefinitionversionspaginator"></a>
+
 ## ListSubscriptionDefinitionVersionsPaginator
 
 Type annotations for
@@ -469,10 +541,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListSubscriptionDefinitionVersionsPaginator
 
 def get_list_subscription_definition_versions_paginator() -> ListSubscriptionDefinitionVersionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_subscription_definition_versions")
+    return Session().client("greengrass").get_paginator("list_subscription_definition_versions")
 ```
 
 Boto3 documentation:
@@ -487,6 +561,8 @@ Arguments for `ListSubscriptionDefinitionVersionsPaginator.paginate` method:
 `ListSubscriptionDefinitionVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListSubscriptionDefinitionVersionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponsetypedef)\].
 
+<a id="listsubscriptiondefinitionspaginator"></a>
+
 ## ListSubscriptionDefinitionsPaginator
 
 Type annotations for
@@ -495,10 +571,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrass.paginator import ListSubscriptionDefinitionsPaginator
 
 def get_list_subscription_definitions_paginator() -> ListSubscriptionDefinitionsPaginator:
-    return boto3.client("greengrass").get_paginator("list_subscription_definitions")
+    return Session().client("greengrass").get_paginator("list_subscription_definitions")
 ```
 
 Boto3 documentation:

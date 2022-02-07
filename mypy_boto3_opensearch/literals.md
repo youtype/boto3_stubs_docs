@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-opensearchservice-module"></a>
+
 # Literals for boto3 OpenSearchService module
 
 > [Index](..) > [OpenSearchService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService)
 type annotations stubs module
-[mypy_boto3_opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
+[mypy-boto3-opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
 
 - [Literals for boto3 OpenSearchService module](#literals-for-boto3-opensearchservice-module)
   - [AutoTuneDesiredStateType](#autotunedesiredstatetype)
@@ -35,6 +37,8 @@ type annotations stubs module
   - [VolumeTypeType](#volumetypetype)
   - [ServiceName](#servicename)
 
+<a id="autotunedesiredstatetype"></a>
+
 ## AutoTuneDesiredStateType
 
 ```python
@@ -45,6 +49,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="autotunestatetype"></a>
 
 ## AutoTuneStateType
 
@@ -64,6 +70,8 @@ Values:
 - `ENABLED`
 - `ERROR`
 
+<a id="autotunetypetype"></a>
+
 ## AutoTuneTypeType
 
 ```python
@@ -73,6 +81,8 @@ from mypy_boto3_opensearch.literals import AutoTuneTypeType
 Values:
 
 - `SCHEDULED_ACTION`
+
+<a id="deploymentstatustype"></a>
 
 ## DeploymentStatusType
 
@@ -88,6 +98,8 @@ Values:
 - `NOT_ELIGIBLE`
 - `PENDING_UPDATE`
 
+<a id="describepackagesfilternametype"></a>
+
 ## DescribePackagesFilterNameType
 
 ```python
@@ -99,6 +111,8 @@ Values:
 - `PackageID`
 - `PackageName`
 - `PackageStatus`
+
+<a id="domainpackagestatustype"></a>
 
 ## DomainPackageStatusType
 
@@ -114,6 +128,8 @@ Values:
 - `DISSOCIATING`
 - `DISSOCIATION_FAILED`
 
+<a id="enginetypetype"></a>
+
 ## EngineTypeType
 
 ```python
@@ -124,6 +140,8 @@ Values:
 
 - `Elasticsearch`
 - `OpenSearch`
+
+<a id="inboundconnectionstatuscodetype"></a>
 
 ## InboundConnectionStatusCodeType
 
@@ -142,6 +160,8 @@ Values:
 - `REJECTED`
 - `REJECTING`
 
+<a id="logtypetype"></a>
+
 ## LogTypeType
 
 ```python
@@ -154,6 +174,8 @@ Values:
 - `ES_APPLICATION_LOGS`
 - `INDEX_SLOW_LOGS`
 - `SEARCH_SLOW_LOGS`
+
+<a id="opensearchpartitioninstancetypetype"></a>
 
 ## OpenSearchPartitionInstanceTypeType
 
@@ -259,6 +281,8 @@ Values:
 - `ultrawarm1.medium.search`
 - `ultrawarm1.xlarge.search`
 
+<a id="opensearchwarmpartitioninstancetypetype"></a>
+
 ## OpenSearchWarmPartitionInstanceTypeType
 
 ```python
@@ -271,6 +295,8 @@ Values:
 - `ultrawarm1.medium.search`
 - `ultrawarm1.xlarge.search`
 
+<a id="optionstatetype"></a>
+
 ## OptionStateType
 
 ```python
@@ -282,6 +308,8 @@ Values:
 - `Active`
 - `Processing`
 - `RequiresIndexDocuments`
+
+<a id="outboundconnectionstatuscodetype"></a>
 
 ## OutboundConnectionStatusCodeType
 
@@ -302,6 +330,8 @@ Values:
 - `VALIDATING`
 - `VALIDATION_FAILED`
 
+<a id="overallchangestatustype"></a>
+
 ## OverallChangeStatusType
 
 ```python
@@ -314,6 +344,8 @@ Values:
 - `FAILED`
 - `PENDING`
 - `PROCESSING`
+
+<a id="packagestatustype"></a>
 
 ## PackageStatusType
 
@@ -332,6 +364,8 @@ Values:
 - `VALIDATING`
 - `VALIDATION_FAILED`
 
+<a id="packagetypetype"></a>
+
 ## PackageTypeType
 
 ```python
@@ -341,6 +375,8 @@ from mypy_boto3_opensearch.literals import PackageTypeType
 Values:
 
 - `TXT-DICTIONARY`
+
+<a id="reservedinstancepaymentoptiontype"></a>
 
 ## ReservedInstancePaymentOptionType
 
@@ -354,6 +390,8 @@ Values:
 - `NO_UPFRONT`
 - `PARTIAL_UPFRONT`
 
+<a id="rollbackondisabletype"></a>
+
 ## RollbackOnDisableType
 
 ```python
@@ -365,6 +403,8 @@ Values:
 - `DEFAULT_ROLLBACK`
 - `NO_ROLLBACK`
 
+<a id="scheduledautotuneactiontypetype"></a>
+
 ## ScheduledAutoTuneActionTypeType
 
 ```python
@@ -375,6 +415,8 @@ Values:
 
 - `JVM_HEAP_SIZE_TUNING`
 - `JVM_YOUNG_GEN_TUNING`
+
+<a id="scheduledautotuneseveritytypetype"></a>
 
 ## ScheduledAutoTuneSeverityTypeType
 
@@ -388,6 +430,8 @@ Values:
 - `LOW`
 - `MEDIUM`
 
+<a id="tlssecuritypolicytype"></a>
+
 ## TLSSecurityPolicyType
 
 ```python
@@ -399,6 +443,8 @@ Values:
 - `Policy-Min-TLS-1-0-2019-07`
 - `Policy-Min-TLS-1-2-2019-07`
 
+<a id="timeunittype"></a>
+
 ## TimeUnitType
 
 ```python
@@ -408,6 +454,8 @@ from mypy_boto3_opensearch.literals import TimeUnitType
 Values:
 
 - `HOURS`
+
+<a id="upgradestatustype"></a>
 
 ## UpgradeStatusType
 
@@ -422,6 +470,8 @@ Values:
 - `SUCCEEDED`
 - `SUCCEEDED_WITH_ISSUES`
 
+<a id="upgradesteptype"></a>
+
 ## UpgradeStepType
 
 ```python
@@ -434,6 +484,8 @@ Values:
 - `SNAPSHOT`
 - `UPGRADE`
 
+<a id="volumetypetype"></a>
+
 ## VolumeTypeType
 
 ```python
@@ -445,6 +497,8 @@ Values:
 - `gp2`
 - `io1`
 - `standard`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

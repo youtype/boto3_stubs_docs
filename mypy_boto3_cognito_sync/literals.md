@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cognitosync-module"></a>
+
 # Literals for boto3 CognitoSync module
 
 > [Index](..) > [CognitoSync](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
 type annotations stubs module
-[mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
+[mypy-boto3-cognito-sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
 - [Literals for boto3 CognitoSync module](#literals-for-boto3-cognitosync-module)
   - [BulkPublishStatusType](#bulkpublishstatustype)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [PlatformType](#platformtype)
   - [StreamingStatusType](#streamingstatustype)
   - [ServiceName](#servicename)
+
+<a id="bulkpublishstatustype"></a>
 
 ## BulkPublishStatusType
 
@@ -27,6 +31,8 @@ Values:
 - `NOT_STARTED`
 - `SUCCEEDED`
 
+<a id="operationtype"></a>
+
 ## OperationType
 
 ```python
@@ -37,6 +43,8 @@ Values:
 
 - `remove`
 - `replace`
+
+<a id="platformtype"></a>
 
 ## PlatformType
 
@@ -51,6 +59,8 @@ Values:
 - `APNS_SANDBOX`
 - `GCM`
 
+<a id="streamingstatustype"></a>
+
 ## StreamingStatusType
 
 ```python
@@ -61,6 +71,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

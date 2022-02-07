@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iot1clickprojects-module"></a>
+
 # Typed dictionaries for boto3 IoT1ClickProjects module
 
 > [Index](..) > [IoT1ClickProjects](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
 type annotations stubs module
-[mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
+[mypy-boto3-iot1click-projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
 - [Typed dictionaries for boto3 IoT1ClickProjects module](#typed-dictionaries-for-boto3-iot1clickprojects-module)
   - [AssociateDeviceWithPlacementRequestRequestTypeDef](#associatedevicewithplacementrequestrequesttypedef)
@@ -39,6 +41,8 @@ type annotations stubs module
   - [UpdatePlacementRequestRequestTypeDef](#updateplacementrequestrequesttypedef)
   - [UpdateProjectRequestRequestTypeDef](#updateprojectrequestrequesttypedef)
 
+<a id="associatedevicewithplacementrequestrequesttypedef"></a>
+
 ## AssociateDeviceWithPlacementRequestRequestTypeDef
 
 ```python
@@ -51,6 +55,8 @@ Required fields:
 - `placementName`: `str`
 - `deviceId`: `str`
 - `deviceTemplateName`: `str`
+
+<a id="createplacementrequestrequesttypedef"></a>
 
 ## CreatePlacementRequestRequestTypeDef
 
@@ -66,6 +72,8 @@ Required fields:
 Optional fields:
 
 - `attributes`: `Mapping`\[`str`, `str`\]
+
+<a id="createprojectrequestrequesttypedef"></a>
 
 ## CreateProjectRequestRequestTypeDef
 
@@ -84,6 +92,8 @@ Optional fields:
   [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="deleteplacementrequestrequesttypedef"></a>
+
 ## DeletePlacementRequestRequestTypeDef
 
 ```python
@@ -95,6 +105,8 @@ Required fields:
 - `placementName`: `str`
 - `projectName`: `str`
 
+<a id="deleteprojectrequestrequesttypedef"></a>
+
 ## DeleteProjectRequestRequestTypeDef
 
 ```python
@@ -104,6 +116,8 @@ from mypy_boto3_iot1click_projects.type_defs import DeleteProjectRequestRequestT
 Required fields:
 
 - `projectName`: `str`
+
+<a id="describeplacementrequestrequesttypedef"></a>
 
 ## DescribePlacementRequestRequestTypeDef
 
@@ -115,6 +129,8 @@ Required fields:
 
 - `placementName`: `str`
 - `projectName`: `str`
+
+<a id="describeplacementresponsetypedef"></a>
 
 ## DescribePlacementResponseTypeDef
 
@@ -129,6 +145,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeprojectrequestrequesttypedef"></a>
+
 ## DescribeProjectRequestRequestTypeDef
 
 ```python
@@ -138,6 +156,8 @@ from mypy_boto3_iot1click_projects.type_defs import DescribeProjectRequestReques
 Required fields:
 
 - `projectName`: `str`
+
+<a id="describeprojectresponsetypedef"></a>
 
 ## DescribeProjectResponseTypeDef
 
@@ -152,6 +172,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="devicetemplatetypedef"></a>
+
 ## DeviceTemplateTypeDef
 
 ```python
@@ -162,6 +184,8 @@ Optional fields:
 
 - `deviceType`: `str`
 - `callbackOverrides`: `Mapping`\[`str`, `str`\]
+
+<a id="disassociatedevicefromplacementrequestrequesttypedef"></a>
 
 ## DisassociateDeviceFromPlacementRequestRequestTypeDef
 
@@ -175,6 +199,8 @@ Required fields:
 - `placementName`: `str`
 - `deviceTemplateName`: `str`
 
+<a id="getdevicesinplacementrequestrequesttypedef"></a>
+
 ## GetDevicesInPlacementRequestRequestTypeDef
 
 ```python
@@ -185,6 +211,8 @@ Required fields:
 
 - `projectName`: `str`
 - `placementName`: `str`
+
+<a id="getdevicesinplacementresponsetypedef"></a>
 
 ## GetDevicesInPlacementResponseTypeDef
 
@@ -197,6 +225,8 @@ Required fields:
 - `devices`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listplacementsrequestrequesttypedef"></a>
 
 ## ListPlacementsRequestRequestTypeDef
 
@@ -213,6 +243,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listplacementsresponsetypedef"></a>
+
 ## ListPlacementsResponseTypeDef
 
 ```python
@@ -227,6 +259,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listprojectsrequestrequesttypedef"></a>
+
 ## ListProjectsRequestRequestTypeDef
 
 ```python
@@ -237,6 +271,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listprojectsresponsetypedef"></a>
 
 ## ListProjectsResponseTypeDef
 
@@ -252,6 +288,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -261,6 +299,8 @@ from mypy_boto3_iot1click_projects.type_defs import ListTagsForResourceRequestRe
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -274,6 +314,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -285,6 +327,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="placementdescriptiontypedef"></a>
 
 ## PlacementDescriptionTypeDef
 
@@ -300,6 +344,8 @@ Required fields:
 - `createdDate`: `datetime`
 - `updatedDate`: `datetime`
 
+<a id="placementsummarytypedef"></a>
+
 ## PlacementSummaryTypeDef
 
 ```python
@@ -313,6 +359,8 @@ Required fields:
 - `createdDate`: `datetime`
 - `updatedDate`: `datetime`
 
+<a id="placementtemplatetypedef"></a>
+
 ## PlacementTemplateTypeDef
 
 ```python
@@ -324,6 +372,8 @@ Optional fields:
 - `defaultAttributes`: `Mapping`\[`str`, `str`\]
 - `deviceTemplates`: `Mapping`\[`str`,
   [DeviceTemplateTypeDef](./type_defs.md#devicetemplatetypedef)\]
+
+<a id="projectdescriptiontypedef"></a>
 
 ## ProjectDescriptionTypeDef
 
@@ -345,6 +395,8 @@ Optional fields:
   [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="projectsummarytypedef"></a>
+
 ## ProjectSummaryTypeDef
 
 ```python
@@ -362,6 +414,8 @@ Optional fields:
 - `arn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -376,6 +430,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -387,6 +443,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -397,6 +455,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateplacementrequestrequesttypedef"></a>
 
 ## UpdatePlacementRequestRequestTypeDef
 
@@ -412,6 +472,8 @@ Required fields:
 Optional fields:
 
 - `attributes`: `Mapping`\[`str`, `str`\]
+
+<a id="updateprojectrequestrequesttypedef"></a>
 
 ## UpdateProjectRequestRequestTypeDef
 

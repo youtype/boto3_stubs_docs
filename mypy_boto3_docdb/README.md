@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-docdb-module"></a>
+
 # Type annotations for boto3 DocDB module
 
 > [Index](..) > DocDB
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
 type annotations stubs module
-[mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
+[mypy-boto3-docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[docdb]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[docdb]'
+
+# standalone installation
 pip install mypy-boto3-docdb
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-docdb
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="docdbclient"></a>
+
 ## DocDBClient
 
 Type annotations for `boto3.client("docdb")` as [DocDBClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_docdb.client import DocDBClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -90,6 +104,8 @@ from mypy_boto3_docdb.client import DocDBClient
 - [restore_db_cluster_to_point_in_time](./client.md#restore_db_cluster_to_point_in_time)
 - [start_db_cluster](./client.md#start_db_cluster)
 - [stop_db_cluster](./client.md#stop_db_cluster)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -154,6 +170,8 @@ DocDBClient [exceptions](./client.md#exceptions)
 - SubscriptionCategoryNotFoundFault
 - SubscriptionNotFoundFault
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -162,7 +180,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeCertificatesPaginator, ...
+from mypy_boto3_docdb.paginator import DescribeCertificatesPaginator, ...
 ```
 
 - [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
@@ -179,6 +197,8 @@ from mypy_boto3_docdb.paginators import DescribeCertificatesPaginator, ...
 - [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
 - [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -187,11 +207,13 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.waiters import DBInstanceAvailableWaiter, ...
+from mypy_boto3_docdb.waiter import DBInstanceAvailableWaiter, ...
 ```
 
 - [DBInstanceAvailableWaiter](./waiters.md#dbinstanceavailablewaiter)
 - [DBInstanceDeletedWaiter](./waiters.md#dbinstancedeletedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -223,6 +245,8 @@ from mypy_boto3_docdb.literals import ApplyMethodType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

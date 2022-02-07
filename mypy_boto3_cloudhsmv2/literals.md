@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloudhsmv2-module"></a>
+
 # Literals for boto3 CloudHSMV2 module
 
 > [Index](..) > [CloudHSMV2](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
 type annotations stubs module
-[mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
+[mypy-boto3-cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
 - [Literals for boto3 CloudHSMV2 module](#literals-for-boto3-cloudhsmv2-module)
   - [BackupPolicyType](#backuppolicytype)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="backuppolicytype"></a>
+
 ## BackupPolicyType
 
 ```python
@@ -29,6 +33,8 @@ Values:
 
 - `DEFAULT`
 
+<a id="backupretentiontypetype"></a>
+
 ## BackupRetentionTypeType
 
 ```python
@@ -38,6 +44,8 @@ from mypy_boto3_cloudhsmv2.literals import BackupRetentionTypeType
 Values:
 
 - `DAYS`
+
+<a id="backupstatetype"></a>
 
 ## BackupStateType
 
@@ -51,6 +59,8 @@ Values:
 - `DELETED`
 - `PENDING_DELETION`
 - `READY`
+
+<a id="clusterstatetype"></a>
 
 ## ClusterStateType
 
@@ -70,6 +80,8 @@ Values:
 - `UNINITIALIZED`
 - `UPDATE_IN_PROGRESS`
 
+<a id="describebackupspaginatorname"></a>
+
 ## DescribeBackupsPaginatorName
 
 ```python
@@ -80,6 +92,8 @@ Values:
 
 - `describe_backups`
 
+<a id="describeclusterspaginatorname"></a>
+
 ## DescribeClustersPaginatorName
 
 ```python
@@ -89,6 +103,8 @@ from mypy_boto3_cloudhsmv2.literals import DescribeClustersPaginatorName
 Values:
 
 - `describe_clusters`
+
+<a id="hsmstatetype"></a>
 
 ## HsmStateType
 
@@ -104,6 +120,8 @@ Values:
 - `DELETE_IN_PROGRESS`
 - `DELETED`
 
+<a id="listtagspaginatorname"></a>
+
 ## ListTagsPaginatorName
 
 ```python
@@ -113,6 +131,8 @@ from mypy_boto3_cloudhsmv2.literals import ListTagsPaginatorName
 Values:
 
 - `list_tags`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -421,6 +441,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

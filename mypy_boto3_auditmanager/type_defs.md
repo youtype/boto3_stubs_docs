@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-auditmanager-module"></a>
+
 # Typed dictionaries for boto3 AuditManager module
 
 > [Index](..) > [AuditManager](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
 type annotations stubs module
-[mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
+[mypy-boto3-auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
 - [Typed dictionaries for boto3 AuditManager module](#typed-dictionaries-for-boto3-auditmanager-module)
   - [AWSAccountTypeDef](#awsaccounttypedef)
@@ -166,6 +168,8 @@ type annotations stubs module
   - [ValidateAssessmentReportIntegrityRequestRequestTypeDef](#validateassessmentreportintegrityrequestrequesttypedef)
   - [ValidateAssessmentReportIntegrityResponseTypeDef](#validateassessmentreportintegrityresponsetypedef)
 
+<a id="awsaccounttypedef"></a>
+
 ## AWSAccountTypeDef
 
 ```python
@@ -178,6 +182,8 @@ Optional fields:
 - `emailAddress`: `str`
 - `name`: `str`
 
+<a id="awsservicetypedef"></a>
+
 ## AWSServiceTypeDef
 
 ```python
@@ -187,6 +193,8 @@ from mypy_boto3_auditmanager.type_defs import AWSServiceTypeDef
 Optional fields:
 
 - `serviceName`: `str`
+
+<a id="assessmentcontrolsettypedef"></a>
 
 ## AssessmentControlSetTypeDef
 
@@ -207,6 +215,8 @@ Optional fields:
 - `systemEvidenceCount`: `int`
 - `manualEvidenceCount`: `int`
 
+<a id="assessmentcontroltypedef"></a>
+
 ## AssessmentControlTypeDef
 
 ```python
@@ -225,6 +235,8 @@ Optional fields:
 - `evidenceSources`: `List`\[`str`\]
 - `evidenceCount`: `int`
 - `assessmentReportEvidenceCount`: `int`
+
+<a id="assessmentevidencefoldertypedef"></a>
 
 ## AssessmentEvidenceFolderTypeDef
 
@@ -253,6 +265,8 @@ Optional fields:
 - `evidenceByTypeUserActivityCount`: `int`
 - `evidenceAwsServiceSourceCount`: `int`
 
+<a id="assessmentframeworkmetadatatypedef"></a>
+
 ## AssessmentFrameworkMetadataTypeDef
 
 ```python
@@ -272,6 +286,8 @@ Optional fields:
 - `controlSetsCount`: `int`
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
+
+<a id="assessmentframeworksharerequesttypedef"></a>
 
 ## AssessmentFrameworkShareRequestTypeDef
 
@@ -297,6 +313,8 @@ Optional fields:
 - `customControlsCount`: `int`
 - `complianceType`: `str`
 
+<a id="assessmentframeworktypedef"></a>
+
 ## AssessmentFrameworkTypeDef
 
 ```python
@@ -311,6 +329,8 @@ Optional fields:
   [FrameworkMetadataTypeDef](./type_defs.md#frameworkmetadatatypedef)
 - `controlSets`:
   `List`\[[AssessmentControlSetTypeDef](./type_defs.md#assessmentcontrolsettypedef)\]
+
+<a id="assessmentmetadataitemtypedef"></a>
 
 ## AssessmentMetadataItemTypeDef
 
@@ -329,6 +349,8 @@ Optional fields:
   `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
 - `creationTime`: `datetime`
 - `lastUpdated`: `datetime`
+
+<a id="assessmentmetadatatypedef"></a>
 
 ## AssessmentMetadataTypeDef
 
@@ -352,6 +374,8 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdated`: `datetime`
 
+<a id="assessmentreportevidenceerrortypedef"></a>
+
 ## AssessmentReportEvidenceErrorTypeDef
 
 ```python
@@ -363,6 +387,8 @@ Optional fields:
 - `evidenceId`: `str`
 - `errorCode`: `str`
 - `errorMessage`: `str`
+
+<a id="assessmentreportmetadatatypedef"></a>
 
 ## AssessmentReportMetadataTypeDef
 
@@ -381,6 +407,8 @@ Optional fields:
 - `status`:
   [AssessmentReportStatusType](./literals.md#assessmentreportstatustype)
 - `creationTime`: `datetime`
+
+<a id="assessmentreporttypedef"></a>
 
 ## AssessmentReportTypeDef
 
@@ -401,6 +429,8 @@ Optional fields:
   [AssessmentReportStatusType](./literals.md#assessmentreportstatustype)
 - `creationTime`: `datetime`
 
+<a id="assessmentreportsdestinationtypedef"></a>
+
 ## AssessmentReportsDestinationTypeDef
 
 ```python
@@ -412,6 +442,8 @@ Optional fields:
 - `destinationType`: `Literal['S3']` (see
   [AssessmentReportDestinationTypeType](./literals.md#assessmentreportdestinationtypetype))
 - `destination`: `str`
+
+<a id="assessmenttypedef"></a>
 
 ## AssessmentTypeDef
 
@@ -429,6 +461,8 @@ Optional fields:
   [AssessmentFrameworkTypeDef](./type_defs.md#assessmentframeworktypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="associateassessmentreportevidencefolderrequestrequesttypedef"></a>
+
 ## AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef
 
 ```python
@@ -439,6 +473,8 @@ Required fields:
 
 - `assessmentId`: `str`
 - `evidenceFolderId`: `str`
+
+<a id="batchassociateassessmentreportevidencerequestrequesttypedef"></a>
 
 ## BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef
 
@@ -451,6 +487,8 @@ Required fields:
 - `assessmentId`: `str`
 - `evidenceFolderId`: `str`
 - `evidenceIds`: `Sequence`\[`str`\]
+
+<a id="batchassociateassessmentreportevidenceresponsetypedef"></a>
 
 ## BatchAssociateAssessmentReportEvidenceResponseTypeDef
 
@@ -466,6 +504,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchcreatedelegationbyassessmenterrortypedef"></a>
+
 ## BatchCreateDelegationByAssessmentErrorTypeDef
 
 ```python
@@ -479,6 +519,8 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
+<a id="batchcreatedelegationbyassessmentrequestrequesttypedef"></a>
+
 ## BatchCreateDelegationByAssessmentRequestRequestTypeDef
 
 ```python
@@ -490,6 +532,8 @@ Required fields:
 - `createDelegationRequests`:
   `Sequence`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
 - `assessmentId`: `str`
+
+<a id="batchcreatedelegationbyassessmentresponsetypedef"></a>
 
 ## BatchCreateDelegationByAssessmentResponseTypeDef
 
@@ -506,6 +550,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdeletedelegationbyassessmenterrortypedef"></a>
+
 ## BatchDeleteDelegationByAssessmentErrorTypeDef
 
 ```python
@@ -518,6 +564,8 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
+<a id="batchdeletedelegationbyassessmentrequestrequesttypedef"></a>
+
 ## BatchDeleteDelegationByAssessmentRequestRequestTypeDef
 
 ```python
@@ -528,6 +576,8 @@ Required fields:
 
 - `delegationIds`: `Sequence`\[`str`\]
 - `assessmentId`: `str`
+
+<a id="batchdeletedelegationbyassessmentresponsetypedef"></a>
 
 ## BatchDeleteDelegationByAssessmentResponseTypeDef
 
@@ -542,6 +592,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdisassociateassessmentreportevidencerequestrequesttypedef"></a>
+
 ## BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef
 
 ```python
@@ -553,6 +605,8 @@ Required fields:
 - `assessmentId`: `str`
 - `evidenceFolderId`: `str`
 - `evidenceIds`: `Sequence`\[`str`\]
+
+<a id="batchdisassociateassessmentreportevidenceresponsetypedef"></a>
 
 ## BatchDisassociateAssessmentReportEvidenceResponseTypeDef
 
@@ -568,6 +622,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchimportevidencetoassessmentcontrolerrortypedef"></a>
+
 ## BatchImportEvidenceToAssessmentControlErrorTypeDef
 
 ```python
@@ -580,6 +636,8 @@ Optional fields:
   [ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)
 - `errorCode`: `str`
 - `errorMessage`: `str`
+
+<a id="batchimportevidencetoassessmentcontrolrequestrequesttypedef"></a>
 
 ## BatchImportEvidenceToAssessmentControlRequestRequestTypeDef
 
@@ -595,6 +653,8 @@ Required fields:
 - `manualEvidence`:
   `Sequence`\[[ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)\]
 
+<a id="batchimportevidencetoassessmentcontrolresponsetypedef"></a>
+
 ## BatchImportEvidenceToAssessmentControlResponseTypeDef
 
 ```python
@@ -607,6 +667,8 @@ Required fields:
   `List`\[[BatchImportEvidenceToAssessmentControlErrorTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="changelogtypedef"></a>
 
 ## ChangeLogTypeDef
 
@@ -622,6 +684,8 @@ Optional fields:
 - `createdAt`: `datetime`
 - `createdBy`: `str`
 
+<a id="controlcommenttypedef"></a>
+
 ## ControlCommentTypeDef
 
 ```python
@@ -633,6 +697,8 @@ Optional fields:
 - `authorName`: `str`
 - `commentBody`: `str`
 - `postedDate`: `datetime`
+
+<a id="controldomaininsightstypedef"></a>
 
 ## ControlDomainInsightsTypeDef
 
@@ -650,6 +716,8 @@ Optional fields:
   [EvidenceInsightsTypeDef](./type_defs.md#evidenceinsightstypedef)
 - `lastUpdated`: `datetime`
 
+<a id="controlinsightsmetadatabyassessmentitemtypedef"></a>
+
 ## ControlInsightsMetadataByAssessmentItemTypeDef
 
 ```python
@@ -665,6 +733,8 @@ Optional fields:
 - `controlSetName`: `str`
 - `lastUpdated`: `datetime`
 
+<a id="controlinsightsmetadataitemtypedef"></a>
+
 ## ControlInsightsMetadataItemTypeDef
 
 ```python
@@ -678,6 +748,8 @@ Optional fields:
 - `evidenceInsights`:
   [EvidenceInsightsTypeDef](./type_defs.md#evidenceinsightstypedef)
 - `lastUpdated`: `datetime`
+
+<a id="controlmappingsourcetypedef"></a>
 
 ## ControlMappingSourceTypeDef
 
@@ -697,6 +769,8 @@ Optional fields:
 - `sourceFrequency`: [SourceFrequencyType](./literals.md#sourcefrequencytype)
 - `troubleshootingText`: `str`
 
+<a id="controlmetadatatypedef"></a>
+
 ## ControlMetadataTypeDef
 
 ```python
@@ -712,6 +786,8 @@ Optional fields:
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 
+<a id="controlsettypedef"></a>
+
 ## ControlSetTypeDef
 
 ```python
@@ -723,6 +799,8 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 - `controls`: `List`\[[ControlTypeDef](./type_defs.md#controltypedef)\]
+
+<a id="controltypedef"></a>
 
 ## ControlTypeDef
 
@@ -749,6 +827,8 @@ Optional fields:
 - `lastUpdatedBy`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="createassessmentframeworkcontrolsettypedef"></a>
+
 ## CreateAssessmentFrameworkControlSetTypeDef
 
 ```python
@@ -764,15 +844,19 @@ Optional fields:
 - `controls`:
   `Sequence`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
 
+<a id="createassessmentframeworkcontroltypedef"></a>
+
 ## CreateAssessmentFrameworkControlTypeDef
 
 ```python
 from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkControlTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `id`: `str`
+
+<a id="createassessmentframeworkrequestrequesttypedef"></a>
 
 ## CreateAssessmentFrameworkRequestRequestTypeDef
 
@@ -792,6 +876,8 @@ Optional fields:
 - `complianceType`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createassessmentframeworkresponsetypedef"></a>
+
 ## CreateAssessmentFrameworkResponseTypeDef
 
 ```python
@@ -803,6 +889,8 @@ Required fields:
 - `framework`: [FrameworkTypeDef](./type_defs.md#frameworktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createassessmentreportrequestrequesttypedef"></a>
 
 ## CreateAssessmentReportRequestRequestTypeDef
 
@@ -819,6 +907,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="createassessmentreportresponsetypedef"></a>
+
 ## CreateAssessmentReportResponseTypeDef
 
 ```python
@@ -831,6 +921,8 @@ Required fields:
   [AssessmentReportTypeDef](./type_defs.md#assessmentreporttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createassessmentrequestrequesttypedef"></a>
 
 ## CreateAssessmentRequestRequestTypeDef
 
@@ -852,6 +944,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createassessmentresponsetypedef"></a>
+
 ## CreateAssessmentResponseTypeDef
 
 ```python
@@ -863,6 +957,8 @@ Required fields:
 - `assessment`: [AssessmentTypeDef](./type_defs.md#assessmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcontrolmappingsourcetypedef"></a>
 
 ## CreateControlMappingSourceTypeDef
 
@@ -880,6 +976,8 @@ Optional fields:
 - `sourceKeyword`: [SourceKeywordTypeDef](./type_defs.md#sourcekeywordtypedef)
 - `sourceFrequency`: [SourceFrequencyType](./literals.md#sourcefrequencytype)
 - `troubleshootingText`: `str`
+
+<a id="createcontrolrequestrequesttypedef"></a>
 
 ## CreateControlRequestRequestTypeDef
 
@@ -901,6 +999,8 @@ Optional fields:
 - `actionPlanInstructions`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createcontrolresponsetypedef"></a>
+
 ## CreateControlResponseTypeDef
 
 ```python
@@ -912,6 +1012,8 @@ Required fields:
 - `control`: [ControlTypeDef](./type_defs.md#controltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdelegationrequesttypedef"></a>
 
 ## CreateDelegationRequestTypeDef
 
@@ -925,6 +1027,8 @@ Optional fields:
 - `controlSetId`: `str`
 - `roleArn`: `str`
 - `roleType`: [RoleTypeType](./literals.md#roletypetype)
+
+<a id="delegationmetadatatypedef"></a>
 
 ## DelegationMetadataTypeDef
 
@@ -941,6 +1045,8 @@ Optional fields:
 - `roleArn`: `str`
 - `creationTime`: `datetime`
 - `controlSetName`: `str`
+
+<a id="delegationtypedef"></a>
 
 ## DelegationTypeDef
 
@@ -962,6 +1068,8 @@ Optional fields:
 - `comment`: `str`
 - `createdBy`: `str`
 
+<a id="deleteassessmentframeworkrequestrequesttypedef"></a>
+
 ## DeleteAssessmentFrameworkRequestRequestTypeDef
 
 ```python
@@ -971,6 +1079,8 @@ from mypy_boto3_auditmanager.type_defs import DeleteAssessmentFrameworkRequestRe
 Required fields:
 
 - `frameworkId`: `str`
+
+<a id="deleteassessmentframeworksharerequestrequesttypedef"></a>
 
 ## DeleteAssessmentFrameworkShareRequestRequestTypeDef
 
@@ -983,6 +1093,8 @@ Required fields:
 - `requestId`: `str`
 - `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
 
+<a id="deleteassessmentreportrequestrequesttypedef"></a>
+
 ## DeleteAssessmentReportRequestRequestTypeDef
 
 ```python
@@ -994,6 +1106,8 @@ Required fields:
 - `assessmentId`: `str`
 - `assessmentReportId`: `str`
 
+<a id="deleteassessmentrequestrequesttypedef"></a>
+
 ## DeleteAssessmentRequestRequestTypeDef
 
 ```python
@@ -1004,6 +1118,8 @@ Required fields:
 
 - `assessmentId`: `str`
 
+<a id="deletecontrolrequestrequesttypedef"></a>
+
 ## DeleteControlRequestRequestTypeDef
 
 ```python
@@ -1013,6 +1129,8 @@ from mypy_boto3_auditmanager.type_defs import DeleteControlRequestRequestTypeDef
 Required fields:
 
 - `controlId`: `str`
+
+<a id="deregisteraccountresponsetypedef"></a>
 
 ## DeregisterAccountResponseTypeDef
 
@@ -1026,6 +1144,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deregisterorganizationadminaccountrequestrequesttypedef"></a>
+
 ## DeregisterOrganizationAdminAccountRequestRequestTypeDef
 
 ```python
@@ -1035,6 +1155,8 @@ from mypy_boto3_auditmanager.type_defs import DeregisterOrganizationAdminAccount
 Optional fields:
 
 - `adminAccountId`: `str`
+
+<a id="disassociateassessmentreportevidencefolderrequestrequesttypedef"></a>
 
 ## DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef
 
@@ -1047,6 +1169,8 @@ Required fields:
 - `assessmentId`: `str`
 - `evidenceFolderId`: `str`
 
+<a id="evidenceinsightstypedef"></a>
+
 ## EvidenceInsightsTypeDef
 
 ```python
@@ -1058,6 +1182,8 @@ Optional fields:
 - `noncompliantEvidenceCount`: `int`
 - `compliantEvidenceCount`: `int`
 - `inconclusiveEvidenceCount`: `int`
+
+<a id="evidencetypedef"></a>
 
 ## EvidenceTypeDef
 
@@ -1084,6 +1210,8 @@ Optional fields:
 - `id`: `str`
 - `assessmentReportSelection`: `str`
 
+<a id="frameworkmetadatatypedef"></a>
+
 ## FrameworkMetadataTypeDef
 
 ```python
@@ -1096,6 +1224,8 @@ Optional fields:
 - `description`: `str`
 - `logo`: `str`
 - `complianceType`: `str`
+
+<a id="frameworktypedef"></a>
 
 ## FrameworkTypeDef
 
@@ -1121,6 +1251,8 @@ Optional fields:
 - `lastUpdatedBy`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="getaccountstatusresponsetypedef"></a>
+
 ## GetAccountStatusResponseTypeDef
 
 ```python
@@ -1133,6 +1265,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getassessmentframeworkrequestrequesttypedef"></a>
+
 ## GetAssessmentFrameworkRequestRequestTypeDef
 
 ```python
@@ -1142,6 +1276,8 @@ from mypy_boto3_auditmanager.type_defs import GetAssessmentFrameworkRequestReque
 Required fields:
 
 - `frameworkId`: `str`
+
+<a id="getassessmentframeworkresponsetypedef"></a>
 
 ## GetAssessmentFrameworkResponseTypeDef
 
@@ -1155,6 +1291,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getassessmentreporturlrequestrequesttypedef"></a>
+
 ## GetAssessmentReportUrlRequestRequestTypeDef
 
 ```python
@@ -1165,6 +1303,8 @@ Required fields:
 
 - `assessmentReportId`: `str`
 - `assessmentId`: `str`
+
+<a id="getassessmentreporturlresponsetypedef"></a>
 
 ## GetAssessmentReportUrlResponseTypeDef
 
@@ -1178,6 +1318,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getassessmentrequestrequesttypedef"></a>
+
 ## GetAssessmentRequestRequestTypeDef
 
 ```python
@@ -1187,6 +1329,8 @@ from mypy_boto3_auditmanager.type_defs import GetAssessmentRequestRequestTypeDef
 Required fields:
 
 - `assessmentId`: `str`
+
+<a id="getassessmentresponsetypedef"></a>
 
 ## GetAssessmentResponseTypeDef
 
@@ -1200,6 +1344,8 @@ Required fields:
 - `userRole`: [RoleTypeDef](./type_defs.md#roletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getchangelogsrequestrequesttypedef"></a>
 
 ## GetChangeLogsRequestRequestTypeDef
 
@@ -1218,6 +1364,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getchangelogsresponsetypedef"></a>
+
 ## GetChangeLogsResponseTypeDef
 
 ```python
@@ -1231,6 +1379,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcontrolrequestrequesttypedef"></a>
+
 ## GetControlRequestRequestTypeDef
 
 ```python
@@ -1240,6 +1390,8 @@ from mypy_boto3_auditmanager.type_defs import GetControlRequestRequestTypeDef
 Required fields:
 
 - `controlId`: `str`
+
+<a id="getcontrolresponsetypedef"></a>
 
 ## GetControlResponseTypeDef
 
@@ -1253,6 +1405,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdelegationsrequestrequesttypedef"></a>
+
 ## GetDelegationsRequestRequestTypeDef
 
 ```python
@@ -1263,6 +1417,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getdelegationsresponsetypedef"></a>
 
 ## GetDelegationsResponseTypeDef
 
@@ -1277,6 +1433,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getevidencebyevidencefolderrequestrequesttypedef"></a>
 
 ## GetEvidenceByEvidenceFolderRequestRequestTypeDef
 
@@ -1295,6 +1453,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getevidencebyevidencefolderresponsetypedef"></a>
+
 ## GetEvidenceByEvidenceFolderResponseTypeDef
 
 ```python
@@ -1308,6 +1468,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getevidencefolderrequestrequesttypedef"></a>
+
 ## GetEvidenceFolderRequestRequestTypeDef
 
 ```python
@@ -1319,6 +1481,8 @@ Required fields:
 - `assessmentId`: `str`
 - `controlSetId`: `str`
 - `evidenceFolderId`: `str`
+
+<a id="getevidencefolderresponsetypedef"></a>
 
 ## GetEvidenceFolderResponseTypeDef
 
@@ -1332,6 +1496,8 @@ Required fields:
   [AssessmentEvidenceFolderTypeDef](./type_defs.md#assessmentevidencefoldertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getevidencefoldersbyassessmentcontrolrequestrequesttypedef"></a>
 
 ## GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef
 
@@ -1350,6 +1516,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getevidencefoldersbyassessmentcontrolresponsetypedef"></a>
+
 ## GetEvidenceFoldersByAssessmentControlResponseTypeDef
 
 ```python
@@ -1363,6 +1531,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getevidencefoldersbyassessmentrequestrequesttypedef"></a>
 
 ## GetEvidenceFoldersByAssessmentRequestRequestTypeDef
 
@@ -1379,6 +1549,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getevidencefoldersbyassessmentresponsetypedef"></a>
+
 ## GetEvidenceFoldersByAssessmentResponseTypeDef
 
 ```python
@@ -1393,6 +1565,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getevidencerequestrequesttypedef"></a>
+
 ## GetEvidenceRequestRequestTypeDef
 
 ```python
@@ -1406,6 +1580,8 @@ Required fields:
 - `evidenceFolderId`: `str`
 - `evidenceId`: `str`
 
+<a id="getevidenceresponsetypedef"></a>
+
 ## GetEvidenceResponseTypeDef
 
 ```python
@@ -1418,6 +1594,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinsightsbyassessmentrequestrequesttypedef"></a>
+
 ## GetInsightsByAssessmentRequestRequestTypeDef
 
 ```python
@@ -1427,6 +1605,8 @@ from mypy_boto3_auditmanager.type_defs import GetInsightsByAssessmentRequestRequ
 Required fields:
 
 - `assessmentId`: `str`
+
+<a id="getinsightsbyassessmentresponsetypedef"></a>
 
 ## GetInsightsByAssessmentResponseTypeDef
 
@@ -1441,6 +1621,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinsightsresponsetypedef"></a>
+
 ## GetInsightsResponseTypeDef
 
 ```python
@@ -1452,6 +1634,8 @@ Required fields:
 - `insights`: [InsightsTypeDef](./type_defs.md#insightstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getorganizationadminaccountresponsetypedef"></a>
 
 ## GetOrganizationAdminAccountResponseTypeDef
 
@@ -1466,6 +1650,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getservicesinscoperesponsetypedef"></a>
+
 ## GetServicesInScopeResponseTypeDef
 
 ```python
@@ -1479,6 +1665,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsettingsrequestrequesttypedef"></a>
+
 ## GetSettingsRequestRequestTypeDef
 
 ```python
@@ -1488,6 +1676,8 @@ from mypy_boto3_auditmanager.type_defs import GetSettingsRequestRequestTypeDef
 Required fields:
 
 - `attribute`: [SettingAttributeType](./literals.md#settingattributetype)
+
+<a id="getsettingsresponsetypedef"></a>
 
 ## GetSettingsResponseTypeDef
 
@@ -1500,6 +1690,8 @@ Required fields:
 - `settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="insightsbyassessmenttypedef"></a>
 
 ## InsightsByAssessmentTypeDef
 
@@ -1515,6 +1707,8 @@ Optional fields:
 - `assessmentControlsCountByNoncompliantEvidence`: `int`
 - `totalAssessmentControlsCount`: `int`
 - `lastUpdated`: `datetime`
+
+<a id="insightstypedef"></a>
 
 ## InsightsTypeDef
 
@@ -1532,6 +1726,8 @@ Optional fields:
 - `totalAssessmentControlsCount`: `int`
 - `lastUpdated`: `datetime`
 
+<a id="listassessmentcontrolinsightsbycontroldomainrequestrequesttypedef"></a>
+
 ## ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef
 
 ```python
@@ -1548,6 +1744,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassessmentcontrolinsightsbycontroldomainresponsetypedef"></a>
+
 ## ListAssessmentControlInsightsByControlDomainResponseTypeDef
 
 ```python
@@ -1561,6 +1759,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassessmentframeworksharerequestsrequestrequesttypedef"></a>
 
 ## ListAssessmentFrameworkShareRequestsRequestRequestTypeDef
 
@@ -1577,6 +1777,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassessmentframeworksharerequestsresponsetypedef"></a>
+
 ## ListAssessmentFrameworkShareRequestsResponseTypeDef
 
 ```python
@@ -1590,6 +1792,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassessmentframeworksrequestrequesttypedef"></a>
 
 ## ListAssessmentFrameworksRequestRequestTypeDef
 
@@ -1606,6 +1810,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassessmentframeworksresponsetypedef"></a>
+
 ## ListAssessmentFrameworksResponseTypeDef
 
 ```python
@@ -1620,6 +1826,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listassessmentreportsrequestrequesttypedef"></a>
+
 ## ListAssessmentReportsRequestRequestTypeDef
 
 ```python
@@ -1630,6 +1838,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listassessmentreportsresponsetypedef"></a>
 
 ## ListAssessmentReportsResponseTypeDef
 
@@ -1645,6 +1855,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listassessmentsrequestrequesttypedef"></a>
+
 ## ListAssessmentsRequestRequestTypeDef
 
 ```python
@@ -1656,6 +1868,8 @@ Optional fields:
 - `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listassessmentsresponsetypedef"></a>
 
 ## ListAssessmentsResponseTypeDef
 
@@ -1670,6 +1884,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcontroldomaininsightsbyassessmentrequestrequesttypedef"></a>
 
 ## ListControlDomainInsightsByAssessmentRequestRequestTypeDef
 
@@ -1686,6 +1902,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listcontroldomaininsightsbyassessmentresponsetypedef"></a>
+
 ## ListControlDomainInsightsByAssessmentResponseTypeDef
 
 ```python
@@ -1700,6 +1918,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcontroldomaininsightsrequestrequesttypedef"></a>
+
 ## ListControlDomainInsightsRequestRequestTypeDef
 
 ```python
@@ -1710,6 +1930,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listcontroldomaininsightsresponsetypedef"></a>
 
 ## ListControlDomainInsightsResponseTypeDef
 
@@ -1724,6 +1946,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcontrolinsightsbycontroldomainrequestrequesttypedef"></a>
 
 ## ListControlInsightsByControlDomainRequestRequestTypeDef
 
@@ -1740,6 +1964,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listcontrolinsightsbycontroldomainresponsetypedef"></a>
+
 ## ListControlInsightsByControlDomainResponseTypeDef
 
 ```python
@@ -1753,6 +1979,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcontrolsrequestrequesttypedef"></a>
 
 ## ListControlsRequestRequestTypeDef
 
@@ -1769,6 +1997,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listcontrolsresponsetypedef"></a>
+
 ## ListControlsResponseTypeDef
 
 ```python
@@ -1782,6 +2012,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listkeywordsfordatasourcerequestrequesttypedef"></a>
 
 ## ListKeywordsForDataSourceRequestRequestTypeDef
 
@@ -1798,6 +2030,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listkeywordsfordatasourceresponsetypedef"></a>
+
 ## ListKeywordsForDataSourceResponseTypeDef
 
 ```python
@@ -1811,6 +2045,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listnotificationsrequestrequesttypedef"></a>
+
 ## ListNotificationsRequestRequestTypeDef
 
 ```python
@@ -1821,6 +2057,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listnotificationsresponsetypedef"></a>
 
 ## ListNotificationsResponseTypeDef
 
@@ -1836,6 +2074,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1845,6 +2085,8 @@ from mypy_boto3_auditmanager.type_defs import ListTagsForResourceRequestRequestT
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1858,6 +2100,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="manualevidencetypedef"></a>
+
 ## ManualEvidenceTypeDef
 
 ```python
@@ -1867,6 +2111,8 @@ from mypy_boto3_auditmanager.type_defs import ManualEvidenceTypeDef
 Optional fields:
 
 - `s3ResourcePath`: `str`
+
+<a id="notificationtypedef"></a>
 
 ## NotificationTypeDef
 
@@ -1885,6 +2131,8 @@ Optional fields:
 - `eventTime`: `datetime`
 - `source`: `str`
 
+<a id="registeraccountrequestrequesttypedef"></a>
+
 ## RegisterAccountRequestRequestTypeDef
 
 ```python
@@ -1895,6 +2143,8 @@ Optional fields:
 
 - `kmsKey`: `str`
 - `delegatedAdminAccount`: `str`
+
+<a id="registeraccountresponsetypedef"></a>
 
 ## RegisterAccountResponseTypeDef
 
@@ -1908,6 +2158,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="registerorganizationadminaccountrequestrequesttypedef"></a>
+
 ## RegisterOrganizationAdminAccountRequestRequestTypeDef
 
 ```python
@@ -1917,6 +2169,8 @@ from mypy_boto3_auditmanager.type_defs import RegisterOrganizationAdminAccountRe
 Required fields:
 
 - `adminAccountId`: `str`
+
+<a id="registerorganizationadminaccountresponsetypedef"></a>
 
 ## RegisterOrganizationAdminAccountResponseTypeDef
 
@@ -1931,6 +2185,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resourcetypedef"></a>
+
 ## ResourceTypeDef
 
 ```python
@@ -1941,6 +2197,8 @@ Optional fields:
 
 - `arn`: `str`
 - `value`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1956,6 +2214,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="roletypedef"></a>
+
 ## RoleTypeDef
 
 ```python
@@ -1966,6 +2226,8 @@ Optional fields:
 
 - `roleType`: [RoleTypeType](./literals.md#roletypetype)
 - `roleArn`: `str`
+
+<a id="scopetypedef"></a>
 
 ## ScopeTypeDef
 
@@ -1980,6 +2242,8 @@ Optional fields:
 - `awsServices`:
   `Sequence`\[[AWSServiceTypeDef](./type_defs.md#awsservicetypedef)\]
 
+<a id="servicemetadatatypedef"></a>
+
 ## ServiceMetadataTypeDef
 
 ```python
@@ -1992,6 +2256,8 @@ Optional fields:
 - `displayName`: `str`
 - `description`: `str`
 - `category`: `str`
+
+<a id="settingstypedef"></a>
 
 ## SettingsTypeDef
 
@@ -2008,6 +2274,8 @@ Optional fields:
 - `defaultProcessOwners`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 - `kmsKey`: `str`
 
+<a id="sourcekeywordtypedef"></a>
+
 ## SourceKeywordTypeDef
 
 ```python
@@ -2019,6 +2287,8 @@ Optional fields:
 - `keywordInputType`: `Literal['SELECT_FROM_LIST']` (see
   [KeywordInputTypeType](./literals.md#keywordinputtypetype))
 - `keywordValue`: `str`
+
+<a id="startassessmentframeworksharerequestrequesttypedef"></a>
 
 ## StartAssessmentFrameworkShareRequestRequestTypeDef
 
@@ -2036,6 +2306,8 @@ Optional fields:
 
 - `comment`: `str`
 
+<a id="startassessmentframeworkshareresponsetypedef"></a>
+
 ## StartAssessmentFrameworkShareResponseTypeDef
 
 ```python
@@ -2049,6 +2321,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2059,6 +2333,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="urltypedef"></a>
 
 ## URLTypeDef
 
@@ -2071,6 +2347,8 @@ Optional fields:
 - `hyperlinkName`: `str`
 - `link`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2081,6 +2359,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateassessmentcontrolrequestrequesttypedef"></a>
 
 ## UpdateAssessmentControlRequestRequestTypeDef
 
@@ -2099,6 +2379,8 @@ Optional fields:
 - `controlStatus`: [ControlStatusType](./literals.md#controlstatustype)
 - `commentBody`: `str`
 
+<a id="updateassessmentcontrolresponsetypedef"></a>
+
 ## UpdateAssessmentControlResponseTypeDef
 
 ```python
@@ -2111,6 +2393,8 @@ Required fields:
   [AssessmentControlTypeDef](./type_defs.md#assessmentcontroltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateassessmentcontrolsetstatusrequestrequesttypedef"></a>
 
 ## UpdateAssessmentControlSetStatusRequestRequestTypeDef
 
@@ -2125,6 +2409,8 @@ Required fields:
 - `status`: [ControlSetStatusType](./literals.md#controlsetstatustype)
 - `comment`: `str`
 
+<a id="updateassessmentcontrolsetstatusresponsetypedef"></a>
+
 ## UpdateAssessmentControlSetStatusResponseTypeDef
 
 ```python
@@ -2138,6 +2424,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateassessmentframeworkcontrolsettypedef"></a>
+
 ## UpdateAssessmentFrameworkControlSetTypeDef
 
 ```python
@@ -2147,12 +2435,14 @@ from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkControlSe
 Required fields:
 
 - `name`: `str`
+- `controls`:
+  `Sequence`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
 
 Optional fields:
 
 - `id`: `str`
-- `controls`:
-  `Sequence`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
+
+<a id="updateassessmentframeworkrequestrequesttypedef"></a>
 
 ## UpdateAssessmentFrameworkRequestRequestTypeDef
 
@@ -2172,6 +2462,8 @@ Optional fields:
 - `description`: `str`
 - `complianceType`: `str`
 
+<a id="updateassessmentframeworkresponsetypedef"></a>
+
 ## UpdateAssessmentFrameworkResponseTypeDef
 
 ```python
@@ -2183,6 +2475,8 @@ Required fields:
 - `framework`: [FrameworkTypeDef](./type_defs.md#frameworktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateassessmentframeworksharerequestrequesttypedef"></a>
 
 ## UpdateAssessmentFrameworkShareRequestRequestTypeDef
 
@@ -2196,6 +2490,8 @@ Required fields:
 - `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
 - `action`: [ShareRequestActionType](./literals.md#sharerequestactiontype)
 
+<a id="updateassessmentframeworkshareresponsetypedef"></a>
+
 ## UpdateAssessmentFrameworkShareResponseTypeDef
 
 ```python
@@ -2208,6 +2504,8 @@ Required fields:
   [AssessmentFrameworkShareRequestTypeDef](./type_defs.md#assessmentframeworksharerequesttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateassessmentrequestrequesttypedef"></a>
 
 ## UpdateAssessmentRequestRequestTypeDef
 
@@ -2228,6 +2526,8 @@ Optional fields:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
 - `roles`: `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 
+<a id="updateassessmentresponsetypedef"></a>
+
 ## UpdateAssessmentResponseTypeDef
 
 ```python
@@ -2240,6 +2540,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateassessmentstatusrequestrequesttypedef"></a>
+
 ## UpdateAssessmentStatusRequestRequestTypeDef
 
 ```python
@@ -2250,6 +2552,8 @@ Required fields:
 
 - `assessmentId`: `str`
 - `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
+
+<a id="updateassessmentstatusresponsetypedef"></a>
 
 ## UpdateAssessmentStatusResponseTypeDef
 
@@ -2262,6 +2566,8 @@ Required fields:
 - `assessment`: [AssessmentTypeDef](./type_defs.md#assessmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecontrolrequestrequesttypedef"></a>
 
 ## UpdateControlRequestRequestTypeDef
 
@@ -2283,6 +2589,8 @@ Optional fields:
 - `actionPlanTitle`: `str`
 - `actionPlanInstructions`: `str`
 
+<a id="updatecontrolresponsetypedef"></a>
+
 ## UpdateControlResponseTypeDef
 
 ```python
@@ -2294,6 +2602,8 @@ Required fields:
 - `control`: [ControlTypeDef](./type_defs.md#controltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesettingsrequestrequesttypedef"></a>
 
 ## UpdateSettingsRequestRequestTypeDef
 
@@ -2310,6 +2620,8 @@ Optional fields:
   `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 - `kmsKey`: `str`
 
+<a id="updatesettingsresponsetypedef"></a>
+
 ## UpdateSettingsResponseTypeDef
 
 ```python
@@ -2322,6 +2634,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="validateassessmentreportintegrityrequestrequesttypedef"></a>
+
 ## ValidateAssessmentReportIntegrityRequestRequestTypeDef
 
 ```python
@@ -2331,6 +2645,8 @@ from mypy_boto3_auditmanager.type_defs import ValidateAssessmentReportIntegrityR
 Required fields:
 
 - `s3RelativePath`: `str`
+
+<a id="validateassessmentreportintegrityresponsetypedef"></a>
 
 ## ValidateAssessmentReportIntegrityResponseTypeDef
 

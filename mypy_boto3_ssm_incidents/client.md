@@ -1,3 +1,5 @@
+<a id="ssmincidentsclient-for-boto3-ssmincidents-module"></a>
+
 # SSMIncidentsClient for boto3 SSMIncidents module
 
 > [Index](..) > [SSMIncidents](.) > SSMIncidentsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
 type annotations stubs module
-[mypy_boto3_ssm_incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
+[mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
 - [SSMIncidentsClient for boto3 SSMIncidents module](#ssmincidentsclient-for-boto3-ssmincidents-module)
   - [SSMIncidentsClient](#ssmincidentsclient)
@@ -46,6 +48,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="ssmincidentsclient"></a>
+
 ## SSMIncidentsClient
 
 Type annotations for `boto3.client("ssm-incidents")`
@@ -53,14 +57,17 @@ Type annotations for `boto3.client("ssm-incidents")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ssm_incidents.client import SSMIncidentsClient
 
 def get_ssm-incidents_client() -> SSMIncidentsClient:
-    return boto3.client("ssm-incidents")
+    return Session().client("ssm-incidents")
 ```
 
 Boto3 documentation:
 [SSMIncidents.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -85,7 +92,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -97,6 +108,8 @@ Boto3 documentation:
 [SSMIncidents.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -112,6 +125,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_replication_set"></a>
 
 ### create_replication_set
 
@@ -136,6 +151,8 @@ Keyword-only arguments:
 
 Returns
 [CreateReplicationSetOutputTypeDef](./type_defs.md#createreplicationsetoutputtypedef).
+
+<a id="create_response_plan"></a>
 
 ### create_response_plan
 
@@ -166,6 +183,8 @@ Keyword-only arguments:
 Returns
 [CreateResponsePlanOutputTypeDef](./type_defs.md#createresponseplanoutputtypedef).
 
+<a id="create_timeline_event"></a>
+
 ### create_timeline_event
 
 Creates a custom timeline event on the incident details page of an incident
@@ -191,6 +210,8 @@ Keyword-only arguments:
 Returns
 [CreateTimelineEventOutputTypeDef](./type_defs.md#createtimelineeventoutputtypedef).
 
+<a id="delete_incident_record"></a>
+
 ### delete_incident_record
 
 Delete an incident record from Incident Manager.
@@ -210,6 +231,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_replication_set"></a>
+
 ### delete_replication_set
 
 Deletes all Regions in your replication set.
@@ -228,6 +251,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_resource_policy"></a>
 
 ### delete_resource_policy
 
@@ -250,6 +275,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_response_plan"></a>
+
 ### delete_response_plan
 
 Deletes the specified response plan.
@@ -268,6 +295,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_timeline_event"></a>
 
 ### delete_timeline_event
 
@@ -289,6 +318,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -307,6 +338,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_incident_record"></a>
 
 ### get_incident_record
 
@@ -328,6 +361,8 @@ Keyword-only arguments:
 Returns
 [GetIncidentRecordOutputTypeDef](./type_defs.md#getincidentrecordoutputtypedef).
 
+<a id="get_replication_set"></a>
+
 ### get_replication_set
 
 Retrieve your Incident Manager replication set.
@@ -347,6 +382,8 @@ Keyword-only arguments:
 
 Returns
 [GetReplicationSetOutputTypeDef](./type_defs.md#getreplicationsetoutputtypedef).
+
+<a id="get_resource_policies"></a>
 
 ### get_resource_policies
 
@@ -370,6 +407,8 @@ Keyword-only arguments:
 Returns
 [GetResourcePoliciesOutputTypeDef](./type_defs.md#getresourcepoliciesoutputtypedef).
 
+<a id="get_response_plan"></a>
+
 ### get_response_plan
 
 Retrieves the details of the specified response plan.
@@ -388,6 +427,8 @@ Keyword-only arguments:
 
 Returns
 [GetResponsePlanOutputTypeDef](./type_defs.md#getresponseplanoutputtypedef).
+
+<a id="get_timeline_event"></a>
 
 ### get_timeline_event
 
@@ -408,6 +449,8 @@ Keyword-only arguments:
 
 Returns
 [GetTimelineEventOutputTypeDef](./type_defs.md#gettimelineeventoutputtypedef).
+
+<a id="list_incident_records"></a>
 
 ### list_incident_records
 
@@ -431,6 +474,8 @@ Keyword-only arguments:
 Returns
 [ListIncidentRecordsOutputTypeDef](./type_defs.md#listincidentrecordsoutputtypedef).
 
+<a id="list_related_items"></a>
+
 ### list_related_items
 
 List all related items for an incident record.
@@ -451,6 +496,8 @@ Keyword-only arguments:
 
 Returns
 [ListRelatedItemsOutputTypeDef](./type_defs.md#listrelateditemsoutputtypedef).
+
+<a id="list_replication_sets"></a>
 
 ### list_replication_sets
 
@@ -473,6 +520,8 @@ Keyword-only arguments:
 Returns
 [ListReplicationSetsOutputTypeDef](./type_defs.md#listreplicationsetsoutputtypedef).
 
+<a id="list_response_plans"></a>
+
 ### list_response_plans
 
 Lists all response plans in your account.
@@ -494,6 +543,8 @@ Keyword-only arguments:
 Returns
 [ListResponsePlansOutputTypeDef](./type_defs.md#listresponseplansoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags that are attached to the specified response plan.
@@ -513,6 +564,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_timeline_events"></a>
 
 ### list_timeline_events
 
@@ -540,6 +593,8 @@ Keyword-only arguments:
 Returns
 [ListTimelineEventsOutputTypeDef](./type_defs.md#listtimelineeventsoutputtypedef).
 
+<a id="put_resource_policy"></a>
+
 ### put_resource_policy
 
 Adds a resource policy to the specified response plan.
@@ -560,6 +615,8 @@ Keyword-only arguments:
 
 Returns
 [PutResourcePolicyOutputTypeDef](./type_defs.md#putresourcepolicyoutputtypedef).
+
+<a id="start_incident"></a>
 
 ### start_incident
 
@@ -588,6 +645,8 @@ Keyword-only arguments:
 Returns
 [StartIncidentOutputTypeDef](./type_defs.md#startincidentoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds a tag to a response plan.
@@ -607,6 +666,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from a resource.
@@ -625,6 +686,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_deletion_protection"></a>
 
 ### update_deletion_protection
 
@@ -647,6 +710,8 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_incident_record"></a>
 
 ### update_incident_record
 
@@ -675,6 +740,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_related_items"></a>
+
 ### update_related_items
 
 Add or remove related items from the related items tab of an incident record.
@@ -698,6 +765,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_replication_set"></a>
+
 ### update_replication_set
 
 Add or delete Regions from your replication set.
@@ -720,6 +789,8 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_response_plan"></a>
 
 ### update_response_plan
 
@@ -751,6 +822,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_timeline_event"></a>
+
 ### update_timeline_event
 
 Updates a timeline event.
@@ -775,6 +848,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("ssm-incidents").get_paginator` method with
@@ -792,6 +867,8 @@ overloads.
   [ListResponsePlansPaginator](./paginators.md#listresponseplanspaginator)
 - `client.get_paginator("list_timeline_events")` ->
   [ListTimelineEventsPaginator](./paginators.md#listtimelineeventspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

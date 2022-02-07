@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-resiliencehub-module"></a>
+
 # Literals for boto3 ResilienceHub module
 
 > [Index](..) > [ResilienceHub](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
 type annotations stubs module
-[mypy_boto3_resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
+[mypy-boto3-resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
 
 - [Literals for boto3 ResilienceHub module](#literals-for-boto3-resiliencehub-module)
   - [AlarmTypeType](#alarmtypetype)
@@ -34,6 +36,8 @@ type annotations stubs module
   - [TestTypeType](#testtypetype)
   - [ServiceName](#servicename)
 
+<a id="alarmtypetype"></a>
+
 ## AlarmTypeType
 
 ```python
@@ -48,6 +52,8 @@ Values:
 - `Logs`
 - `Metric`
 
+<a id="appcompliancestatustypetype"></a>
+
 ## AppComplianceStatusTypeType
 
 ```python
@@ -61,6 +67,8 @@ Values:
 - `PolicyBreached`
 - `PolicyMet`
 
+<a id="appstatustypetype"></a>
+
 ## AppStatusTypeType
 
 ```python
@@ -72,6 +80,8 @@ Values:
 - `Active`
 - `Deleting`
 
+<a id="assessmentinvokertype"></a>
+
 ## AssessmentInvokerType
 
 ```python
@@ -82,6 +92,8 @@ Values:
 
 - `System`
 - `User`
+
+<a id="assessmentstatustype"></a>
 
 ## AssessmentStatusType
 
@@ -96,6 +108,8 @@ Values:
 - `Pending`
 - `Success`
 
+<a id="compliancestatustype"></a>
+
 ## ComplianceStatusType
 
 ```python
@@ -106,6 +120,8 @@ Values:
 
 - `PolicyBreached`
 - `PolicyMet`
+
+<a id="configrecommendationoptimizationtypetype"></a>
 
 ## ConfigRecommendationOptimizationTypeType
 
@@ -121,6 +137,8 @@ Values:
 - `LeastCost`
 - `LeastErrors`
 
+<a id="costfrequencytype"></a>
+
 ## CostFrequencyType
 
 ```python
@@ -134,6 +152,8 @@ Values:
 - `Monthly`
 - `Yearly`
 
+<a id="datalocationconstrainttype"></a>
+
 ## DataLocationConstraintType
 
 ```python
@@ -145,6 +165,8 @@ Values:
 - `AnyLocation`
 - `SameContinent`
 - `SameCountry`
+
+<a id="disruptiontypetype"></a>
 
 ## DisruptionTypeType
 
@@ -159,6 +181,8 @@ Values:
 - `Region`
 - `Software`
 
+<a id="estimatedcosttiertype"></a>
+
 ## EstimatedCostTierType
 
 ```python
@@ -171,6 +195,8 @@ Values:
 - `L2`
 - `L3`
 - `L4`
+
+<a id="haarchitecturetype"></a>
 
 ## HaArchitectureType
 
@@ -186,6 +212,8 @@ Values:
 - `PilotLight`
 - `WarmStandby`
 
+<a id="physicalidentifiertypetype"></a>
+
 ## PhysicalIdentifierTypeType
 
 ```python
@@ -196,6 +224,8 @@ Values:
 
 - `Arn`
 - `Native`
+
+<a id="recommendationcompliancestatustype"></a>
 
 ## RecommendationComplianceStatusType
 
@@ -208,6 +238,8 @@ Values:
 - `BreachedCanMeet`
 - `BreachedUnattainable`
 - `MetCanImprove`
+
+<a id="recommendationtemplatestatustype"></a>
 
 ## RecommendationTemplateStatusType
 
@@ -222,6 +254,8 @@ Values:
 - `Pending`
 - `Success`
 
+<a id="renderrecommendationtypetype"></a>
+
 ## RenderRecommendationTypeType
 
 ```python
@@ -233,6 +267,8 @@ Values:
 - `Alarm`
 - `Sop`
 - `Test`
+
+<a id="resiliencypolicytiertype"></a>
 
 ## ResiliencyPolicyTierType
 
@@ -248,6 +284,8 @@ Values:
 - `MissionCritical`
 - `NonCritical`
 
+<a id="resourceimportstatustypetype"></a>
+
 ## ResourceImportStatusTypeType
 
 ```python
@@ -260,6 +298,8 @@ Values:
 - `InProgress`
 - `Pending`
 - `Success`
+
+<a id="resourcemappingtypetype"></a>
 
 ## ResourceMappingTypeType
 
@@ -274,6 +314,8 @@ Values:
 - `Resource`
 - `ResourceGroup`
 
+<a id="resourceresolutionstatustypetype"></a>
+
 ## ResourceResolutionStatusTypeType
 
 ```python
@@ -287,6 +329,8 @@ Values:
 - `Pending`
 - `Success`
 
+<a id="sopservicetypetype"></a>
+
 ## SopServiceTypeType
 
 ```python
@@ -296,6 +340,8 @@ from mypy_boto3_resiliencehub.literals import SopServiceTypeType
 Values:
 
 - `SSM`
+
+<a id="templateformattype"></a>
 
 ## TemplateFormatType
 
@@ -307,6 +353,8 @@ Values:
 
 - `CfnJson`
 - `CfnYaml`
+
+<a id="testrisktype"></a>
 
 ## TestRiskType
 
@@ -320,6 +368,8 @@ Values:
 - `Medium`
 - `Small`
 
+<a id="testtypetype"></a>
+
 ## TestTypeType
 
 ```python
@@ -332,6 +382,8 @@ Values:
 - `Hardware`
 - `Region`
 - `Software`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

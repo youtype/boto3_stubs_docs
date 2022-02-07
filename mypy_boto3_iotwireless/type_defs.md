@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iotwireless-module"></a>
+
 # Typed dictionaries for boto3 IoTWireless module
 
 > [Index](..) > [IoTWireless](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
 type annotations stubs module
-[mypy_boto3_iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
+[mypy-boto3-iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
 - [Typed dictionaries for boto3 IoTWireless module](#typed-dictionaries-for-boto3-iotwireless-module)
   - [AbpV1_0_xTypeDef](#abpv1_0_xtypedef)
@@ -199,6 +201,8 @@ type annotations stubs module
   - [WirelessGatewayStatisticsTypeDef](#wirelessgatewaystatisticstypedef)
   - [WirelessMetadataTypeDef](#wirelessmetadatatypedef)
 
+<a id="abpv1_0_xtypedef"></a>
+
 ## AbpV1_0_xTypeDef
 
 ```python
@@ -211,6 +215,8 @@ Optional fields:
 - `SessionKeys`:
   [SessionKeysAbpV1_0_xTypeDef](./type_defs.md#sessionkeysabpv1_0_xtypedef)
 
+<a id="abpv1_1typedef"></a>
+
 ## AbpV1_1TypeDef
 
 ```python
@@ -222,6 +228,8 @@ Optional fields:
 - `DevAddr`: `str`
 - `SessionKeys`:
   [SessionKeysAbpV1_1TypeDef](./type_defs.md#sessionkeysabpv1_1typedef)
+
+<a id="associateawsaccountwithpartneraccountrequestrequesttypedef"></a>
 
 ## AssociateAwsAccountWithPartnerAccountRequestRequestTypeDef
 
@@ -239,6 +247,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="associateawsaccountwithpartneraccountresponsetypedef"></a>
+
 ## AssociateAwsAccountWithPartnerAccountResponseTypeDef
 
 ```python
@@ -253,6 +263,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associatemulticastgroupwithfuotataskrequestrequesttypedef"></a>
+
 ## AssociateMulticastGroupWithFuotaTaskRequestRequestTypeDef
 
 ```python
@@ -263,6 +275,8 @@ Required fields:
 
 - `Id`: `str`
 - `MulticastGroupId`: `str`
+
+<a id="associatewirelessdevicewithfuotataskrequestrequesttypedef"></a>
 
 ## AssociateWirelessDeviceWithFuotaTaskRequestRequestTypeDef
 
@@ -275,6 +289,8 @@ Required fields:
 - `Id`: `str`
 - `WirelessDeviceId`: `str`
 
+<a id="associatewirelessdevicewithmulticastgrouprequestrequesttypedef"></a>
+
 ## AssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef
 
 ```python
@@ -285,6 +301,8 @@ Required fields:
 
 - `Id`: `str`
 - `WirelessDeviceId`: `str`
+
+<a id="associatewirelessdevicewiththingrequestrequesttypedef"></a>
 
 ## AssociateWirelessDeviceWithThingRequestRequestTypeDef
 
@@ -297,6 +315,8 @@ Required fields:
 - `Id`: `str`
 - `ThingArn`: `str`
 
+<a id="associatewirelessgatewaywithcertificaterequestrequesttypedef"></a>
+
 ## AssociateWirelessGatewayWithCertificateRequestRequestTypeDef
 
 ```python
@@ -307,6 +327,8 @@ Required fields:
 
 - `Id`: `str`
 - `IotCertificateId`: `str`
+
+<a id="associatewirelessgatewaywithcertificateresponsetypedef"></a>
 
 ## AssociateWirelessGatewayWithCertificateResponseTypeDef
 
@@ -320,6 +342,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associatewirelessgatewaywiththingrequestrequesttypedef"></a>
+
 ## AssociateWirelessGatewayWithThingRequestRequestTypeDef
 
 ```python
@@ -331,6 +355,8 @@ Required fields:
 - `Id`: `str`
 - `ThingArn`: `str`
 
+<a id="cancelmulticastgroupsessionrequestrequesttypedef"></a>
+
 ## CancelMulticastGroupSessionRequestRequestTypeDef
 
 ```python
@@ -340,6 +366,8 @@ from mypy_boto3_iotwireless.type_defs import CancelMulticastGroupSessionRequestR
 Required fields:
 
 - `Id`: `str`
+
+<a id="certificatelisttypedef"></a>
 
 ## CertificateListTypeDef
 
@@ -351,6 +379,8 @@ Required fields:
 
 - `SigningAlg`: [SigningAlgType](./literals.md#signingalgtype)
 - `Value`: `str`
+
+<a id="createdestinationrequestrequesttypedef"></a>
 
 ## CreateDestinationRequestRequestTypeDef
 
@@ -371,6 +401,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
+<a id="createdestinationresponsetypedef"></a>
+
 ## CreateDestinationResponseTypeDef
 
 ```python
@@ -383,6 +415,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdeviceprofilerequestrequesttypedef"></a>
 
 ## CreateDeviceProfileRequestRequestTypeDef
 
@@ -398,6 +432,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
+<a id="createdeviceprofileresponsetypedef"></a>
+
 ## CreateDeviceProfileResponseTypeDef
 
 ```python
@@ -410,6 +446,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfuotataskrequestrequesttypedef"></a>
 
 ## CreateFuotaTaskRequestRequestTypeDef
 
@@ -430,6 +468,8 @@ Optional fields:
 - `LoRaWAN`: [LoRaWANFuotaTaskTypeDef](./type_defs.md#lorawanfuotatasktypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createfuotataskresponsetypedef"></a>
+
 ## CreateFuotaTaskResponseTypeDef
 
 ```python
@@ -442,6 +482,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmulticastgrouprequestrequesttypedef"></a>
 
 ## CreateMulticastGroupRequestRequestTypeDef
 
@@ -460,6 +502,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createmulticastgroupresponsetypedef"></a>
+
 ## CreateMulticastGroupResponseTypeDef
 
 ```python
@@ -472,6 +516,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createserviceprofilerequestrequesttypedef"></a>
 
 ## CreateServiceProfileRequestRequestTypeDef
 
@@ -487,6 +533,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
+<a id="createserviceprofileresponsetypedef"></a>
+
 ## CreateServiceProfileResponseTypeDef
 
 ```python
@@ -499,6 +547,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createwirelessdevicerequestrequesttypedef"></a>
 
 ## CreateWirelessDeviceRequestRequestTypeDef
 
@@ -519,6 +569,8 @@ Optional fields:
 - `LoRaWAN`: [LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createwirelessdeviceresponsetypedef"></a>
+
 ## CreateWirelessDeviceResponseTypeDef
 
 ```python
@@ -531,6 +583,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createwirelessgatewayrequestrequesttypedef"></a>
 
 ## CreateWirelessGatewayRequestRequestTypeDef
 
@@ -549,6 +603,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
+<a id="createwirelessgatewayresponsetypedef"></a>
+
 ## CreateWirelessGatewayResponseTypeDef
 
 ```python
@@ -561,6 +617,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createwirelessgatewaytaskdefinitionrequestrequesttypedef"></a>
 
 ## CreateWirelessGatewayTaskDefinitionRequestRequestTypeDef
 
@@ -580,6 +638,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createwirelessgatewaytaskdefinitionresponsetypedef"></a>
+
 ## CreateWirelessGatewayTaskDefinitionResponseTypeDef
 
 ```python
@@ -593,6 +653,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createwirelessgatewaytaskrequestrequesttypedef"></a>
+
 ## CreateWirelessGatewayTaskRequestRequestTypeDef
 
 ```python
@@ -603,6 +665,8 @@ Required fields:
 
 - `Id`: `str`
 - `WirelessGatewayTaskDefinitionId`: `str`
+
+<a id="createwirelessgatewaytaskresponsetypedef"></a>
 
 ## CreateWirelessGatewayTaskResponseTypeDef
 
@@ -618,6 +682,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedestinationrequestrequesttypedef"></a>
+
 ## DeleteDestinationRequestRequestTypeDef
 
 ```python
@@ -627,6 +693,8 @@ from mypy_boto3_iotwireless.type_defs import DeleteDestinationRequestRequestType
 Required fields:
 
 - `Name`: `str`
+
+<a id="deletedeviceprofilerequestrequesttypedef"></a>
 
 ## DeleteDeviceProfileRequestRequestTypeDef
 
@@ -638,6 +706,8 @@ Required fields:
 
 - `Id`: `str`
 
+<a id="deletefuotataskrequestrequesttypedef"></a>
+
 ## DeleteFuotaTaskRequestRequestTypeDef
 
 ```python
@@ -648,6 +718,8 @@ Required fields:
 
 - `Id`: `str`
 
+<a id="deletemulticastgrouprequestrequesttypedef"></a>
+
 ## DeleteMulticastGroupRequestRequestTypeDef
 
 ```python
@@ -657,6 +729,8 @@ from mypy_boto3_iotwireless.type_defs import DeleteMulticastGroupRequestRequestT
 Required fields:
 
 - `Id`: `str`
+
+<a id="deletequeuedmessagesrequestrequesttypedef"></a>
 
 ## DeleteQueuedMessagesRequestRequestTypeDef
 
@@ -674,6 +748,8 @@ Optional fields:
 - `WirelessDeviceType`:
   [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
 
+<a id="deleteserviceprofilerequestrequesttypedef"></a>
+
 ## DeleteServiceProfileRequestRequestTypeDef
 
 ```python
@@ -683,6 +759,8 @@ from mypy_boto3_iotwireless.type_defs import DeleteServiceProfileRequestRequestT
 Required fields:
 
 - `Id`: `str`
+
+<a id="deletewirelessdevicerequestrequesttypedef"></a>
 
 ## DeleteWirelessDeviceRequestRequestTypeDef
 
@@ -694,6 +772,8 @@ Required fields:
 
 - `Id`: `str`
 
+<a id="deletewirelessgatewayrequestrequesttypedef"></a>
+
 ## DeleteWirelessGatewayRequestRequestTypeDef
 
 ```python
@@ -703,6 +783,8 @@ from mypy_boto3_iotwireless.type_defs import DeleteWirelessGatewayRequestRequest
 Required fields:
 
 - `Id`: `str`
+
+<a id="deletewirelessgatewaytaskdefinitionrequestrequesttypedef"></a>
 
 ## DeleteWirelessGatewayTaskDefinitionRequestRequestTypeDef
 
@@ -714,6 +796,8 @@ Required fields:
 
 - `Id`: `str`
 
+<a id="deletewirelessgatewaytaskrequestrequesttypedef"></a>
+
 ## DeleteWirelessGatewayTaskRequestRequestTypeDef
 
 ```python
@@ -723,6 +807,8 @@ from mypy_boto3_iotwireless.type_defs import DeleteWirelessGatewayTaskRequestReq
 Required fields:
 
 - `Id`: `str`
+
+<a id="destinationstypedef"></a>
 
 ## DestinationsTypeDef
 
@@ -739,6 +825,8 @@ Optional fields:
 - `Description`: `str`
 - `RoleArn`: `str`
 
+<a id="deviceprofiletypedef"></a>
+
 ## DeviceProfileTypeDef
 
 ```python
@@ -751,6 +839,8 @@ Optional fields:
 - `Name`: `str`
 - `Id`: `str`
 
+<a id="deviceregistrationstateeventconfigurationtypedef"></a>
+
 ## DeviceRegistrationStateEventConfigurationTypeDef
 
 ```python
@@ -761,6 +851,8 @@ Optional fields:
 
 - `Sidewalk`:
   [SidewalkEventNotificationConfigurationsTypeDef](./type_defs.md#sidewalkeventnotificationconfigurationstypedef)
+
+<a id="disassociateawsaccountfrompartneraccountrequestrequesttypedef"></a>
 
 ## DisassociateAwsAccountFromPartnerAccountRequestRequestTypeDef
 
@@ -774,6 +866,8 @@ Required fields:
 - `PartnerType`: `Literal['Sidewalk']` (see
   [PartnerTypeType](./literals.md#partnertypetype))
 
+<a id="disassociatemulticastgroupfromfuotataskrequestrequesttypedef"></a>
+
 ## DisassociateMulticastGroupFromFuotaTaskRequestRequestTypeDef
 
 ```python
@@ -784,6 +878,8 @@ Required fields:
 
 - `Id`: `str`
 - `MulticastGroupId`: `str`
+
+<a id="disassociatewirelessdevicefromfuotataskrequestrequesttypedef"></a>
 
 ## DisassociateWirelessDeviceFromFuotaTaskRequestRequestTypeDef
 
@@ -796,6 +892,8 @@ Required fields:
 - `Id`: `str`
 - `WirelessDeviceId`: `str`
 
+<a id="disassociatewirelessdevicefrommulticastgrouprequestrequesttypedef"></a>
+
 ## DisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef
 
 ```python
@@ -807,6 +905,8 @@ Required fields:
 - `Id`: `str`
 - `WirelessDeviceId`: `str`
 
+<a id="disassociatewirelessdevicefromthingrequestrequesttypedef"></a>
+
 ## DisassociateWirelessDeviceFromThingRequestRequestTypeDef
 
 ```python
@@ -816,6 +916,8 @@ from mypy_boto3_iotwireless.type_defs import DisassociateWirelessDeviceFromThing
 Required fields:
 
 - `Id`: `str`
+
+<a id="disassociatewirelessgatewayfromcertificaterequestrequesttypedef"></a>
 
 ## DisassociateWirelessGatewayFromCertificateRequestRequestTypeDef
 
@@ -827,6 +929,8 @@ Required fields:
 
 - `Id`: `str`
 
+<a id="disassociatewirelessgatewayfromthingrequestrequesttypedef"></a>
+
 ## DisassociateWirelessGatewayFromThingRequestRequestTypeDef
 
 ```python
@@ -836,6 +940,8 @@ from mypy_boto3_iotwireless.type_defs import DisassociateWirelessGatewayFromThin
 Required fields:
 
 - `Id`: `str`
+
+<a id="downlinkqueuemessagetypedef"></a>
 
 ## DownlinkQueueMessageTypeDef
 
@@ -851,6 +957,8 @@ Optional fields:
 - `LoRaWAN`:
   [LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef)
 
+<a id="fportstypedef"></a>
+
 ## FPortsTypeDef
 
 ```python
@@ -862,6 +970,8 @@ Optional fields:
 - `Fuota`: `int`
 - `Multicast`: `int`
 - `ClockSync`: `int`
+
+<a id="fuotatasktypedef"></a>
 
 ## FuotaTaskTypeDef
 
@@ -875,6 +985,8 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 
+<a id="getdestinationrequestrequesttypedef"></a>
+
 ## GetDestinationRequestRequestTypeDef
 
 ```python
@@ -884,6 +996,8 @@ from mypy_boto3_iotwireless.type_defs import GetDestinationRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getdestinationresponsetypedef"></a>
 
 ## GetDestinationResponseTypeDef
 
@@ -902,6 +1016,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdeviceprofilerequestrequesttypedef"></a>
+
 ## GetDeviceProfileRequestRequestTypeDef
 
 ```python
@@ -911,6 +1027,8 @@ from mypy_boto3_iotwireless.type_defs import GetDeviceProfileRequestRequestTypeD
 Required fields:
 
 - `Id`: `str`
+
+<a id="getdeviceprofileresponsetypedef"></a>
 
 ## GetDeviceProfileResponseTypeDef
 
@@ -928,6 +1046,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfuotataskrequestrequesttypedef"></a>
+
 ## GetFuotaTaskRequestRequestTypeDef
 
 ```python
@@ -937,6 +1057,8 @@ from mypy_boto3_iotwireless.type_defs import GetFuotaTaskRequestRequestTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="getfuotataskresponsetypedef"></a>
 
 ## GetFuotaTaskResponseTypeDef
 
@@ -959,6 +1081,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getloglevelsbyresourcetypesresponsetypedef"></a>
+
 ## GetLogLevelsByResourceTypesResponseTypeDef
 
 ```python
@@ -975,6 +1099,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmulticastgrouprequestrequesttypedef"></a>
+
 ## GetMulticastGroupRequestRequestTypeDef
 
 ```python
@@ -984,6 +1110,8 @@ from mypy_boto3_iotwireless.type_defs import GetMulticastGroupRequestRequestType
 Required fields:
 
 - `Id`: `str`
+
+<a id="getmulticastgroupresponsetypedef"></a>
 
 ## GetMulticastGroupResponseTypeDef
 
@@ -1004,6 +1132,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmulticastgroupsessionrequestrequesttypedef"></a>
+
 ## GetMulticastGroupSessionRequestRequestTypeDef
 
 ```python
@@ -1013,6 +1143,8 @@ from mypy_boto3_iotwireless.type_defs import GetMulticastGroupSessionRequestRequ
 Required fields:
 
 - `Id`: `str`
+
+<a id="getmulticastgroupsessionresponsetypedef"></a>
 
 ## GetMulticastGroupSessionResponseTypeDef
 
@@ -1027,6 +1159,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getnetworkanalyzerconfigurationrequestrequesttypedef"></a>
+
 ## GetNetworkAnalyzerConfigurationRequestRequestTypeDef
 
 ```python
@@ -1036,6 +1170,8 @@ from mypy_boto3_iotwireless.type_defs import GetNetworkAnalyzerConfigurationRequ
 Required fields:
 
 - `ConfigurationName`: `str`
+
+<a id="getnetworkanalyzerconfigurationresponsetypedef"></a>
 
 ## GetNetworkAnalyzerConfigurationResponseTypeDef
 
@@ -1051,6 +1187,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpartneraccountrequestrequesttypedef"></a>
+
 ## GetPartnerAccountRequestRequestTypeDef
 
 ```python
@@ -1062,6 +1200,8 @@ Required fields:
 - `PartnerAccountId`: `str`
 - `PartnerType`: `Literal['Sidewalk']` (see
   [PartnerTypeType](./literals.md#partnertypetype))
+
+<a id="getpartneraccountresponsetypedef"></a>
 
 ## GetPartnerAccountResponseTypeDef
 
@@ -1076,6 +1216,8 @@ Required fields:
 - `AccountLinked`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getresourceeventconfigurationrequestrequesttypedef"></a>
 
 ## GetResourceEventConfigurationRequestRequestTypeDef
 
@@ -1094,6 +1236,8 @@ Optional fields:
 - `PartnerType`: `Literal['Sidewalk']` (see
   [EventNotificationPartnerTypeType](./literals.md#eventnotificationpartnertypetype))
 
+<a id="getresourceeventconfigurationresponsetypedef"></a>
+
 ## GetResourceEventConfigurationResponseTypeDef
 
 ```python
@@ -1109,6 +1253,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourceloglevelrequestrequesttypedef"></a>
+
 ## GetResourceLogLevelRequestRequestTypeDef
 
 ```python
@@ -1119,6 +1265,8 @@ Required fields:
 
 - `ResourceIdentifier`: `str`
 - `ResourceType`: `str`
+
+<a id="getresourceloglevelresponsetypedef"></a>
 
 ## GetResourceLogLevelResponseTypeDef
 
@@ -1132,6 +1280,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getserviceendpointrequestrequesttypedef"></a>
+
 ## GetServiceEndpointRequestRequestTypeDef
 
 ```python
@@ -1142,6 +1292,8 @@ Optional fields:
 
 - `ServiceType`:
   [WirelessGatewayServiceTypeType](./literals.md#wirelessgatewayservicetypetype)
+
+<a id="getserviceendpointresponsetypedef"></a>
 
 ## GetServiceEndpointResponseTypeDef
 
@@ -1158,6 +1310,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getserviceprofilerequestrequesttypedef"></a>
+
 ## GetServiceProfileRequestRequestTypeDef
 
 ```python
@@ -1167,6 +1321,8 @@ from mypy_boto3_iotwireless.type_defs import GetServiceProfileRequestRequestType
 Required fields:
 
 - `Id`: `str`
+
+<a id="getserviceprofileresponsetypedef"></a>
 
 ## GetServiceProfileResponseTypeDef
 
@@ -1184,6 +1340,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwirelessdevicerequestrequesttypedef"></a>
+
 ## GetWirelessDeviceRequestRequestTypeDef
 
 ```python
@@ -1195,6 +1353,8 @@ Required fields:
 - `Identifier`: `str`
 - `IdentifierType`:
   [WirelessDeviceIdTypeType](./literals.md#wirelessdeviceidtypetype)
+
+<a id="getwirelessdeviceresponsetypedef"></a>
 
 ## GetWirelessDeviceResponseTypeDef
 
@@ -1217,6 +1377,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwirelessdevicestatisticsrequestrequesttypedef"></a>
+
 ## GetWirelessDeviceStatisticsRequestRequestTypeDef
 
 ```python
@@ -1226,6 +1388,8 @@ from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceStatisticsRequestR
 Required fields:
 
 - `WirelessDeviceId`: `str`
+
+<a id="getwirelessdevicestatisticsresponsetypedef"></a>
 
 ## GetWirelessDeviceStatisticsResponseTypeDef
 
@@ -1244,6 +1408,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwirelessgatewaycertificaterequestrequesttypedef"></a>
+
 ## GetWirelessGatewayCertificateRequestRequestTypeDef
 
 ```python
@@ -1253,6 +1419,8 @@ from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayCertificateReques
 Required fields:
 
 - `Id`: `str`
+
+<a id="getwirelessgatewaycertificateresponsetypedef"></a>
 
 ## GetWirelessGatewayCertificateResponseTypeDef
 
@@ -1267,6 +1435,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwirelessgatewayfirmwareinformationrequestrequesttypedef"></a>
+
 ## GetWirelessGatewayFirmwareInformationRequestRequestTypeDef
 
 ```python
@@ -1276,6 +1446,8 @@ from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayFirmwareInformati
 Required fields:
 
 - `Id`: `str`
+
+<a id="getwirelessgatewayfirmwareinformationresponsetypedef"></a>
 
 ## GetWirelessGatewayFirmwareInformationResponseTypeDef
 
@@ -1290,6 +1462,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwirelessgatewayrequestrequesttypedef"></a>
+
 ## GetWirelessGatewayRequestRequestTypeDef
 
 ```python
@@ -1301,6 +1475,8 @@ Required fields:
 - `Identifier`: `str`
 - `IdentifierType`:
   [WirelessGatewayIdTypeType](./literals.md#wirelessgatewayidtypetype)
+
+<a id="getwirelessgatewayresponsetypedef"></a>
 
 ## GetWirelessGatewayResponseTypeDef
 
@@ -1320,6 +1496,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwirelessgatewaystatisticsrequestrequesttypedef"></a>
+
 ## GetWirelessGatewayStatisticsRequestRequestTypeDef
 
 ```python
@@ -1329,6 +1507,8 @@ from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayStatisticsRequest
 Required fields:
 
 - `WirelessGatewayId`: `str`
+
+<a id="getwirelessgatewaystatisticsresponsetypedef"></a>
 
 ## GetWirelessGatewayStatisticsResponseTypeDef
 
@@ -1345,6 +1525,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwirelessgatewaytaskdefinitionrequestrequesttypedef"></a>
+
 ## GetWirelessGatewayTaskDefinitionRequestRequestTypeDef
 
 ```python
@@ -1354,6 +1536,8 @@ from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskDefinitionReq
 Required fields:
 
 - `Id`: `str`
+
+<a id="getwirelessgatewaytaskdefinitionresponsetypedef"></a>
 
 ## GetWirelessGatewayTaskDefinitionResponseTypeDef
 
@@ -1371,6 +1555,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwirelessgatewaytaskrequestrequesttypedef"></a>
+
 ## GetWirelessGatewayTaskRequestRequestTypeDef
 
 ```python
@@ -1380,6 +1566,8 @@ from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskRequestReques
 Required fields:
 
 - `Id`: `str`
+
+<a id="getwirelessgatewaytaskresponsetypedef"></a>
 
 ## GetWirelessGatewayTaskResponseTypeDef
 
@@ -1398,6 +1586,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdestinationsrequestrequesttypedef"></a>
+
 ## ListDestinationsRequestRequestTypeDef
 
 ```python
@@ -1408,6 +1598,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listdestinationsresponsetypedef"></a>
 
 ## ListDestinationsResponseTypeDef
 
@@ -1423,6 +1615,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdeviceprofilesrequestrequesttypedef"></a>
+
 ## ListDeviceProfilesRequestRequestTypeDef
 
 ```python
@@ -1433,6 +1627,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdeviceprofilesresponsetypedef"></a>
 
 ## ListDeviceProfilesResponseTypeDef
 
@@ -1448,6 +1644,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfuotatasksrequestrequesttypedef"></a>
+
 ## ListFuotaTasksRequestRequestTypeDef
 
 ```python
@@ -1458,6 +1656,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listfuotatasksresponsetypedef"></a>
 
 ## ListFuotaTasksResponseTypeDef
 
@@ -1472,6 +1672,8 @@ Required fields:
   `List`\[[FuotaTaskTypeDef](./type_defs.md#fuotatasktypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmulticastgroupsbyfuotataskrequestrequesttypedef"></a>
 
 ## ListMulticastGroupsByFuotaTaskRequestRequestTypeDef
 
@@ -1488,6 +1690,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listmulticastgroupsbyfuotataskresponsetypedef"></a>
+
 ## ListMulticastGroupsByFuotaTaskResponseTypeDef
 
 ```python
@@ -1502,6 +1706,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmulticastgroupsrequestrequesttypedef"></a>
+
 ## ListMulticastGroupsRequestRequestTypeDef
 
 ```python
@@ -1512,6 +1718,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listmulticastgroupsresponsetypedef"></a>
 
 ## ListMulticastGroupsResponseTypeDef
 
@@ -1527,6 +1735,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpartneraccountsrequestrequesttypedef"></a>
+
 ## ListPartnerAccountsRequestRequestTypeDef
 
 ```python
@@ -1537,6 +1747,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listpartneraccountsresponsetypedef"></a>
 
 ## ListPartnerAccountsResponseTypeDef
 
@@ -1551,6 +1763,8 @@ Required fields:
   `List`\[[SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listqueuedmessagesrequestrequesttypedef"></a>
 
 ## ListQueuedMessagesRequestRequestTypeDef
 
@@ -1569,6 +1783,8 @@ Optional fields:
 - `WirelessDeviceType`:
   [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
 
+<a id="listqueuedmessagesresponsetypedef"></a>
+
 ## ListQueuedMessagesResponseTypeDef
 
 ```python
@@ -1583,6 +1799,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listserviceprofilesrequestrequesttypedef"></a>
+
 ## ListServiceProfilesRequestRequestTypeDef
 
 ```python
@@ -1593,6 +1811,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listserviceprofilesresponsetypedef"></a>
 
 ## ListServiceProfilesResponseTypeDef
 
@@ -1608,6 +1828,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1617,6 +1839,8 @@ from mypy_boto3_iotwireless.type_defs import ListTagsForResourceRequestRequestTy
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1629,6 +1853,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listwirelessdevicesrequestrequesttypedef"></a>
 
 ## ListWirelessDevicesRequestRequestTypeDef
 
@@ -1648,6 +1874,8 @@ Optional fields:
 - `FuotaTaskId`: `str`
 - `MulticastGroupId`: `str`
 
+<a id="listwirelessdevicesresponsetypedef"></a>
+
 ## ListWirelessDevicesResponseTypeDef
 
 ```python
@@ -1662,6 +1890,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listwirelessgatewaytaskdefinitionsrequestrequesttypedef"></a>
+
 ## ListWirelessGatewayTaskDefinitionsRequestRequestTypeDef
 
 ```python
@@ -1674,6 +1904,8 @@ Optional fields:
 - `NextToken`: `str`
 - `TaskDefinitionType`: `Literal['UPDATE']` (see
   [WirelessGatewayTaskDefinitionTypeType](./literals.md#wirelessgatewaytaskdefinitiontypetype))
+
+<a id="listwirelessgatewaytaskdefinitionsresponsetypedef"></a>
 
 ## ListWirelessGatewayTaskDefinitionsResponseTypeDef
 
@@ -1689,6 +1921,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listwirelessgatewaysrequestrequesttypedef"></a>
+
 ## ListWirelessGatewaysRequestRequestTypeDef
 
 ```python
@@ -1699,6 +1933,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listwirelessgatewaysresponsetypedef"></a>
 
 ## ListWirelessGatewaysResponseTypeDef
 
@@ -1713,6 +1949,8 @@ Required fields:
   `List`\[[WirelessGatewayStatisticsTypeDef](./type_defs.md#wirelessgatewaystatisticstypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="lorawandevicemetadatatypedef"></a>
 
 ## LoRaWANDeviceMetadataTypeDef
 
@@ -1729,6 +1967,8 @@ Optional fields:
 - `Timestamp`: `str`
 - `Gateways`:
   `List`\[[LoRaWANGatewayMetadataTypeDef](./type_defs.md#lorawangatewaymetadatatypedef)\]
+
+<a id="lorawandeviceprofiletypedef"></a>
 
 ## LoRaWANDeviceProfileTypeDef
 
@@ -1758,6 +1998,8 @@ Optional fields:
 - `SupportsJoin`: `bool`
 - `Supports32BitFCnt`: `bool`
 
+<a id="lorawandevicetypedef"></a>
+
 ## LoRaWANDeviceTypeDef
 
 ```python
@@ -1775,6 +2017,8 @@ Optional fields:
 - `AbpV1_0_x`: [AbpV1_0_xTypeDef](./type_defs.md#abpv1_0_xtypedef)
 - `FPorts`: [FPortsTypeDef](./type_defs.md#fportstypedef)
 
+<a id="lorawanfuotataskgetinfotypedef"></a>
+
 ## LoRaWANFuotaTaskGetInfoTypeDef
 
 ```python
@@ -1786,6 +2030,8 @@ Optional fields:
 - `RfRegion`: `str`
 - `StartTime`: `datetime`
 
+<a id="lorawanfuotatasktypedef"></a>
+
 ## LoRaWANFuotaTaskTypeDef
 
 ```python
@@ -1795,6 +2041,8 @@ from mypy_boto3_iotwireless.type_defs import LoRaWANFuotaTaskTypeDef
 Optional fields:
 
 - `RfRegion`: [SupportedRfRegionType](./literals.md#supportedrfregiontype)
+
+<a id="lorawangatewaycurrentversiontypedef"></a>
 
 ## LoRaWANGatewayCurrentVersionTypeDef
 
@@ -1807,6 +2055,8 @@ Optional fields:
 - `CurrentVersion`:
   [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
 
+<a id="lorawangatewaymetadatatypedef"></a>
+
 ## LoRaWANGatewayMetadataTypeDef
 
 ```python
@@ -1818,6 +2068,8 @@ Optional fields:
 - `GatewayEui`: `str`
 - `Snr`: `float`
 - `Rssi`: `float`
+
+<a id="lorawangatewaytypedef"></a>
 
 ## LoRaWANGatewayTypeDef
 
@@ -1833,6 +2085,8 @@ Optional fields:
 - `NetIdFilters`: `Sequence`\[`str`\]
 - `SubBands`: `Sequence`\[`int`\]
 
+<a id="lorawangatewayversiontypedef"></a>
+
 ## LoRaWANGatewayVersionTypeDef
 
 ```python
@@ -1844,6 +2098,8 @@ Optional fields:
 - `PackageVersion`: `str`
 - `Model`: `str`
 - `Station`: `str`
+
+<a id="lorawangetserviceprofileinfotypedef"></a>
 
 ## LoRaWANGetServiceProfileInfoTypeDef
 
@@ -1873,6 +2129,8 @@ Optional fields:
 - `TargetPer`: `int`
 - `MinGwDiversity`: `int`
 
+<a id="lorawanlistdevicetypedef"></a>
+
 ## LoRaWANListDeviceTypeDef
 
 ```python
@@ -1882,6 +2140,8 @@ from mypy_boto3_iotwireless.type_defs import LoRaWANListDeviceTypeDef
 Optional fields:
 
 - `DevEui`: `str`
+
+<a id="lorawanmulticastgettypedef"></a>
 
 ## LoRaWANMulticastGetTypeDef
 
@@ -1896,6 +2156,8 @@ Optional fields:
 - `NumberOfDevicesRequested`: `int`
 - `NumberOfDevicesInGroup`: `int`
 
+<a id="lorawanmulticastmetadatatypedef"></a>
+
 ## LoRaWANMulticastMetadataTypeDef
 
 ```python
@@ -1905,6 +2167,8 @@ from mypy_boto3_iotwireless.type_defs import LoRaWANMulticastMetadataTypeDef
 Optional fields:
 
 - `FPort`: `int`
+
+<a id="lorawanmulticastsessiontypedef"></a>
 
 ## LoRaWANMulticastSessionTypeDef
 
@@ -1919,6 +2183,8 @@ Optional fields:
 - `SessionStartTime`: `datetime`
 - `SessionTimeout`: `int`
 
+<a id="lorawanmulticasttypedef"></a>
+
 ## LoRaWANMulticastTypeDef
 
 ```python
@@ -1930,6 +2196,8 @@ Optional fields:
 - `RfRegion`: [SupportedRfRegionType](./literals.md#supportedrfregiontype)
 - `DlClass`: [DlClassType](./literals.md#dlclasstype)
 
+<a id="lorawansenddatatodevicetypedef"></a>
+
 ## LoRaWANSendDataToDeviceTypeDef
 
 ```python
@@ -1939,6 +2207,8 @@ from mypy_boto3_iotwireless.type_defs import LoRaWANSendDataToDeviceTypeDef
 Optional fields:
 
 - `FPort`: `int`
+
+<a id="lorawanserviceprofiletypedef"></a>
 
 ## LoRaWANServiceProfileTypeDef
 
@@ -1950,6 +2220,8 @@ Optional fields:
 
 - `AddGwMetadata`: `bool`
 
+<a id="lorawanstartfuotatasktypedef"></a>
+
 ## LoRaWANStartFuotaTaskTypeDef
 
 ```python
@@ -1959,6 +2231,8 @@ from mypy_boto3_iotwireless.type_defs import LoRaWANStartFuotaTaskTypeDef
 Optional fields:
 
 - `StartTime`: `Union`\[`datetime`, `str`\]
+
+<a id="lorawanupdatedevicetypedef"></a>
 
 ## LoRaWANUpdateDeviceTypeDef
 
@@ -1970,6 +2244,8 @@ Optional fields:
 
 - `DeviceProfileId`: `str`
 - `ServiceProfileId`: `str`
+
+<a id="lorawanupdategatewaytaskcreatetypedef"></a>
 
 ## LoRaWANUpdateGatewayTaskCreateTypeDef
 
@@ -1986,6 +2262,8 @@ Optional fields:
 - `UpdateVersion`:
   [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
 
+<a id="lorawanupdategatewaytaskentrytypedef"></a>
+
 ## LoRaWANUpdateGatewayTaskEntryTypeDef
 
 ```python
@@ -1999,6 +2277,8 @@ Optional fields:
 - `UpdateVersion`:
   [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
 
+<a id="multicastgroupbyfuotatasktypedef"></a>
+
 ## MulticastGroupByFuotaTaskTypeDef
 
 ```python
@@ -2008,6 +2288,8 @@ from mypy_boto3_iotwireless.type_defs import MulticastGroupByFuotaTaskTypeDef
 Optional fields:
 
 - `Id`: `str`
+
+<a id="multicastgrouptypedef"></a>
 
 ## MulticastGroupTypeDef
 
@@ -2021,6 +2303,8 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 
+<a id="multicastwirelessmetadatatypedef"></a>
+
 ## MulticastWirelessMetadataTypeDef
 
 ```python
@@ -2031,6 +2315,8 @@ Optional fields:
 
 - `LoRaWAN`:
   [LoRaWANMulticastMetadataTypeDef](./type_defs.md#lorawanmulticastmetadatatypedef)
+
+<a id="otaav1_0_xtypedef"></a>
 
 ## OtaaV1_0_xTypeDef
 
@@ -2044,6 +2330,8 @@ Optional fields:
 - `AppEui`: `str`
 - `GenAppKey`: `str`
 
+<a id="otaav1_1typedef"></a>
+
 ## OtaaV1_1TypeDef
 
 ```python
@@ -2056,6 +2344,8 @@ Optional fields:
 - `NwkKey`: `str`
 - `JoinEui`: `str`
 
+<a id="proximityeventconfigurationtypedef"></a>
+
 ## ProximityEventConfigurationTypeDef
 
 ```python
@@ -2066,6 +2356,8 @@ Optional fields:
 
 - `Sidewalk`:
   [SidewalkEventNotificationConfigurationsTypeDef](./type_defs.md#sidewalkeventnotificationconfigurationstypedef)
+
+<a id="putresourceloglevelrequestrequesttypedef"></a>
 
 ## PutResourceLogLevelRequestRequestTypeDef
 
@@ -2079,6 +2371,8 @@ Required fields:
 - `ResourceType`: `str`
 - `LogLevel`: [LogLevelType](./literals.md#logleveltype)
 
+<a id="resetresourceloglevelrequestrequesttypedef"></a>
+
 ## ResetResourceLogLevelRequestRequestTypeDef
 
 ```python
@@ -2089,6 +2383,8 @@ Required fields:
 
 - `ResourceIdentifier`: `str`
 - `ResourceType`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2104,6 +2400,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="senddatatomulticastgrouprequestrequesttypedef"></a>
+
 ## SendDataToMulticastGroupRequestRequestTypeDef
 
 ```python
@@ -2117,6 +2415,8 @@ Required fields:
 - `WirelessMetadata`:
   [MulticastWirelessMetadataTypeDef](./type_defs.md#multicastwirelessmetadatatypedef)
 
+<a id="senddatatomulticastgroupresponsetypedef"></a>
+
 ## SendDataToMulticastGroupResponseTypeDef
 
 ```python
@@ -2128,6 +2428,8 @@ Required fields:
 - `MessageId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="senddatatowirelessdevicerequestrequesttypedef"></a>
 
 ## SendDataToWirelessDeviceRequestRequestTypeDef
 
@@ -2146,6 +2448,8 @@ Optional fields:
 - `WirelessMetadata`:
   [WirelessMetadataTypeDef](./type_defs.md#wirelessmetadatatypedef)
 
+<a id="senddatatowirelessdeviceresponsetypedef"></a>
+
 ## SendDataToWirelessDeviceResponseTypeDef
 
 ```python
@@ -2157,6 +2461,8 @@ Required fields:
 - `MessageId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="serviceprofiletypedef"></a>
 
 ## ServiceProfileTypeDef
 
@@ -2170,6 +2476,8 @@ Optional fields:
 - `Name`: `str`
 - `Id`: `str`
 
+<a id="sessionkeysabpv1_0_xtypedef"></a>
+
 ## SessionKeysAbpV1_0_xTypeDef
 
 ```python
@@ -2180,6 +2488,8 @@ Optional fields:
 
 - `NwkSKey`: `str`
 - `AppSKey`: `str`
+
+<a id="sessionkeysabpv1_1typedef"></a>
 
 ## SessionKeysAbpV1_1TypeDef
 
@@ -2194,6 +2504,8 @@ Optional fields:
 - `NwkSEncKey`: `str`
 - `AppSKey`: `str`
 
+<a id="sidewalkaccountinfotypedef"></a>
+
 ## SidewalkAccountInfoTypeDef
 
 ```python
@@ -2204,6 +2516,8 @@ Optional fields:
 
 - `AmazonId`: `str`
 - `AppServerPrivateKey`: `str`
+
+<a id="sidewalkaccountinfowithfingerprinttypedef"></a>
 
 ## SidewalkAccountInfoWithFingerprintTypeDef
 
@@ -2217,6 +2531,8 @@ Optional fields:
 - `Fingerprint`: `str`
 - `Arn`: `str`
 
+<a id="sidewalkdevicemetadatatypedef"></a>
+
 ## SidewalkDeviceMetadataTypeDef
 
 ```python
@@ -2229,6 +2545,8 @@ Optional fields:
 - `BatteryLevel`: [BatteryLevelType](./literals.md#batteryleveltype)
 - `Event`: [EventType](./literals.md#eventtype)
 - `DeviceState`: [DeviceStateType](./literals.md#devicestatetype)
+
+<a id="sidewalkdevicetypedef"></a>
 
 ## SidewalkDeviceTypeDef
 
@@ -2244,6 +2562,8 @@ Optional fields:
 - `DeviceCertificates`:
   `List`\[[CertificateListTypeDef](./type_defs.md#certificatelisttypedef)\]
 
+<a id="sidewalkeventnotificationconfigurationstypedef"></a>
+
 ## SidewalkEventNotificationConfigurationsTypeDef
 
 ```python
@@ -2254,6 +2574,8 @@ Optional fields:
 
 - `AmazonIdEventTopic`:
   [EventNotificationTopicStatusType](./literals.md#eventnotificationtopicstatustype)
+
+<a id="sidewalklistdevicetypedef"></a>
 
 ## SidewalkListDeviceTypeDef
 
@@ -2269,6 +2591,8 @@ Optional fields:
 - `DeviceCertificates`:
   `List`\[[CertificateListTypeDef](./type_defs.md#certificatelisttypedef)\]
 
+<a id="sidewalksenddatatodevicetypedef"></a>
+
 ## SidewalkSendDataToDeviceTypeDef
 
 ```python
@@ -2280,6 +2604,8 @@ Optional fields:
 - `Seq`: `int`
 - `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 
+<a id="sidewalkupdateaccounttypedef"></a>
+
 ## SidewalkUpdateAccountTypeDef
 
 ```python
@@ -2289,6 +2615,8 @@ from mypy_boto3_iotwireless.type_defs import SidewalkUpdateAccountTypeDef
 Optional fields:
 
 - `AppServerPrivateKey`: `str`
+
+<a id="startbulkassociatewirelessdevicewithmulticastgrouprequestrequesttypedef"></a>
 
 ## StartBulkAssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef
 
@@ -2305,6 +2633,8 @@ Optional fields:
 - `QueryString`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="startbulkdisassociatewirelessdevicefrommulticastgrouprequestrequesttypedef"></a>
+
 ## StartBulkDisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef
 
 ```python
@@ -2319,6 +2649,8 @@ Optional fields:
 
 - `QueryString`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="startfuotataskrequestrequesttypedef"></a>
 
 ## StartFuotaTaskRequestRequestTypeDef
 
@@ -2335,6 +2667,8 @@ Optional fields:
 - `LoRaWAN`:
   [LoRaWANStartFuotaTaskTypeDef](./type_defs.md#lorawanstartfuotatasktypedef)
 
+<a id="startmulticastgroupsessionrequestrequesttypedef"></a>
+
 ## StartMulticastGroupSessionRequestRequestTypeDef
 
 ```python
@@ -2347,6 +2681,8 @@ Required fields:
 - `LoRaWAN`:
   [LoRaWANMulticastSessionTypeDef](./type_defs.md#lorawanmulticastsessiontypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2357,6 +2693,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -2369,6 +2707,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="testwirelessdevicerequestrequesttypedef"></a>
+
 ## TestWirelessDeviceRequestRequestTypeDef
 
 ```python
@@ -2378,6 +2718,8 @@ from mypy_boto3_iotwireless.type_defs import TestWirelessDeviceRequestRequestTyp
 Required fields:
 
 - `Id`: `str`
+
+<a id="testwirelessdeviceresponsetypedef"></a>
 
 ## TestWirelessDeviceResponseTypeDef
 
@@ -2391,6 +2733,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tracecontenttypedef"></a>
+
 ## TraceContentTypeDef
 
 ```python
@@ -2403,6 +2747,8 @@ Optional fields:
   [WirelessDeviceFrameInfoType](./literals.md#wirelessdeviceframeinfotype)
 - `LogLevel`: [LogLevelType](./literals.md#logleveltype)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2413,6 +2759,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedestinationrequestrequesttypedef"></a>
 
 ## UpdateDestinationRequestRequestTypeDef
 
@@ -2430,6 +2778,8 @@ Optional fields:
 - `Expression`: `str`
 - `Description`: `str`
 - `RoleArn`: `str`
+
+<a id="updatefuotataskrequestrequesttypedef"></a>
 
 ## UpdateFuotaTaskRequestRequestTypeDef
 
@@ -2449,6 +2799,8 @@ Optional fields:
 - `FirmwareUpdateImage`: `str`
 - `FirmwareUpdateRole`: `str`
 
+<a id="updateloglevelsbyresourcetypesrequestrequesttypedef"></a>
+
 ## UpdateLogLevelsByResourceTypesRequestRequestTypeDef
 
 ```python
@@ -2462,6 +2814,8 @@ Optional fields:
   `Sequence`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
 - `WirelessGatewayLogOptions`:
   `Sequence`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
+
+<a id="updatemulticastgrouprequestrequesttypedef"></a>
 
 ## UpdateMulticastGroupRequestRequestTypeDef
 
@@ -2478,6 +2832,8 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `LoRaWAN`: [LoRaWANMulticastTypeDef](./type_defs.md#lorawanmulticasttypedef)
+
+<a id="updatenetworkanalyzerconfigurationrequestrequesttypedef"></a>
 
 ## UpdateNetworkAnalyzerConfigurationRequestRequestTypeDef
 
@@ -2497,6 +2853,8 @@ Optional fields:
 - `WirelessGatewaysToAdd`: `Sequence`\[`str`\]
 - `WirelessGatewaysToRemove`: `Sequence`\[`str`\]
 
+<a id="updatepartneraccountrequestrequesttypedef"></a>
+
 ## UpdatePartnerAccountRequestRequestTypeDef
 
 ```python
@@ -2510,6 +2868,8 @@ Required fields:
 - `PartnerAccountId`: `str`
 - `PartnerType`: `Literal['Sidewalk']` (see
   [PartnerTypeType](./literals.md#partnertypetype))
+
+<a id="updateresourceeventconfigurationrequestrequesttypedef"></a>
 
 ## UpdateResourceEventConfigurationRequestRequestTypeDef
 
@@ -2532,6 +2892,8 @@ Optional fields:
 - `Proximity`:
   [ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef)
 
+<a id="updatewirelessdevicerequestrequesttypedef"></a>
+
 ## UpdateWirelessDeviceRequestRequestTypeDef
 
 ```python
@@ -2550,6 +2912,8 @@ Optional fields:
 - `LoRaWAN`:
   [LoRaWANUpdateDeviceTypeDef](./type_defs.md#lorawanupdatedevicetypedef)
 
+<a id="updatewirelessgatewayrequestrequesttypedef"></a>
+
 ## UpdateWirelessGatewayRequestRequestTypeDef
 
 ```python
@@ -2567,6 +2931,8 @@ Optional fields:
 - `JoinEuiFilters`: `Sequence`\[`Sequence`\[`str`\]\]
 - `NetIdFilters`: `Sequence`\[`str`\]
 
+<a id="updatewirelessgatewaytaskcreatetypedef"></a>
+
 ## UpdateWirelessGatewayTaskCreateTypeDef
 
 ```python
@@ -2579,6 +2945,8 @@ Optional fields:
 - `UpdateDataRole`: `str`
 - `LoRaWAN`:
   [LoRaWANUpdateGatewayTaskCreateTypeDef](./type_defs.md#lorawanupdategatewaytaskcreatetypedef)
+
+<a id="updatewirelessgatewaytaskentrytypedef"></a>
 
 ## UpdateWirelessGatewayTaskEntryTypeDef
 
@@ -2593,6 +2961,8 @@ Optional fields:
   [LoRaWANUpdateGatewayTaskEntryTypeDef](./type_defs.md#lorawanupdategatewaytaskentrytypedef)
 - `Arn`: `str`
 
+<a id="wirelessdeviceeventlogoptiontypedef"></a>
+
 ## WirelessDeviceEventLogOptionTypeDef
 
 ```python
@@ -2603,6 +2973,8 @@ Required fields:
 
 - `Event`: [WirelessDeviceEventType](./literals.md#wirelessdeviceeventtype)
 - `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+
+<a id="wirelessdevicelogoptiontypedef"></a>
 
 ## WirelessDeviceLogOptionTypeDef
 
@@ -2619,6 +2991,8 @@ Optional fields:
 
 - `Events`:
   `List`\[[WirelessDeviceEventLogOptionTypeDef](./type_defs.md#wirelessdeviceeventlogoptiontypedef)\]
+
+<a id="wirelessdevicestatisticstypedef"></a>
 
 ## WirelessDeviceStatisticsTypeDef
 
@@ -2643,6 +3017,8 @@ Optional fields:
 - `MulticastDeviceStatus`: `str`
 - `McGroupId`: `int`
 
+<a id="wirelessgatewayeventlogoptiontypedef"></a>
+
 ## WirelessGatewayEventLogOptionTypeDef
 
 ```python
@@ -2653,6 +3029,8 @@ Required fields:
 
 - `Event`: [WirelessGatewayEventType](./literals.md#wirelessgatewayeventtype)
 - `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+
+<a id="wirelessgatewaylogoptiontypedef"></a>
 
 ## WirelessGatewayLogOptionTypeDef
 
@@ -2671,6 +3049,8 @@ Optional fields:
 - `Events`:
   `List`\[[WirelessGatewayEventLogOptionTypeDef](./type_defs.md#wirelessgatewayeventlogoptiontypedef)\]
 
+<a id="wirelessgatewaystatisticstypedef"></a>
+
 ## WirelessGatewayStatisticsTypeDef
 
 ```python
@@ -2685,6 +3065,8 @@ Optional fields:
 - `Description`: `str`
 - `LoRaWAN`: [LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef)
 - `LastUplinkReceivedAt`: `str`
+
+<a id="wirelessmetadatatypedef"></a>
 
 ## WirelessMetadataTypeDef
 

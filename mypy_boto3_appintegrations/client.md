@@ -1,3 +1,5 @@
+<a id="appintegrationsserviceclient-for-boto3-appintegrationsservice-module"></a>
+
 # AppIntegrationsServiceClient for boto3 AppIntegrationsService module
 
 > [Index](..) > [AppIntegrationsService](.) > AppIntegrationsServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
 type annotations stubs module
-[mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
+[mypy-boto3-appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 - [AppIntegrationsServiceClient for boto3 AppIntegrationsService module](#appintegrationsserviceclient-for-boto3-appintegrationsservice-module)
   - [AppIntegrationsServiceClient](#appintegrationsserviceclient)
@@ -30,6 +32,8 @@ type annotations stubs module
     - [update_data_integration](#update_data_integration)
     - [update_event_integration](#update_event_integration)
 
+<a id="appintegrationsserviceclient"></a>
+
 ## AppIntegrationsServiceClient
 
 Type annotations for `boto3.client("appintegrations")`
@@ -37,14 +41,17 @@ Type annotations for `boto3.client("appintegrations")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_appintegrations.client import AppIntegrationsServiceClient
 
 def get_appintegrations_client() -> AppIntegrationsServiceClient:
-    return boto3.client("appintegrations")
+    return Session().client("appintegrations")
 ```
 
 Boto3 documentation:
 [AppIntegrationsService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -69,7 +76,11 @@ Exceptions:
 - `Exceptions.ResourceQuotaExceededException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -81,6 +92,8 @@ Boto3 documentation:
 [AppIntegrationsService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -96,6 +109,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_data_integration"></a>
 
 ### create_data_integration
 
@@ -123,6 +138,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDataIntegrationResponseTypeDef](./type_defs.md#createdataintegrationresponsetypedef).
+
+<a id="create_event_integration"></a>
 
 ### create_event_integration
 
@@ -152,6 +169,8 @@ Keyword-only arguments:
 Returns
 [CreateEventIntegrationResponseTypeDef](./type_defs.md#createeventintegrationresponsetypedef).
 
+<a id="delete_data_integration"></a>
+
 ### delete_data_integration
 
 Deletes the DataIntegration.
@@ -170,6 +189,8 @@ Keyword-only arguments:
 - `DataIntegrationIdentifier`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_event_integration"></a>
 
 ### delete_event_integration
 
@@ -190,6 +211,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -208,6 +231,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_data_integration"></a>
 
 ### get_data_integration
 
@@ -229,6 +254,8 @@ Keyword-only arguments:
 Returns
 [GetDataIntegrationResponseTypeDef](./type_defs.md#getdataintegrationresponsetypedef).
 
+<a id="get_event_integration"></a>
+
 ### get_event_integration
 
 Returns information about the event integration.
@@ -248,6 +275,8 @@ Keyword-only arguments:
 
 Returns
 [GetEventIntegrationResponseTypeDef](./type_defs.md#geteventintegrationresponsetypedef).
+
+<a id="list_data_integration_associations"></a>
 
 ### list_data_integration_associations
 
@@ -271,6 +300,8 @@ Keyword-only arguments:
 Returns
 [ListDataIntegrationAssociationsResponseTypeDef](./type_defs.md#listdataintegrationassociationsresponsetypedef).
 
+<a id="list_data_integrations"></a>
+
 ### list_data_integrations
 
 Returns a paginated list of DataIntegrations in the account.
@@ -291,6 +322,8 @@ Keyword-only arguments:
 
 Returns
 [ListDataIntegrationsResponseTypeDef](./type_defs.md#listdataintegrationsresponsetypedef).
+
+<a id="list_event_integration_associations"></a>
 
 ### list_event_integration_associations
 
@@ -314,6 +347,8 @@ Keyword-only arguments:
 Returns
 [ListEventIntegrationAssociationsResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponsetypedef).
 
+<a id="list_event_integrations"></a>
+
 ### list_event_integrations
 
 Returns a paginated list of event integrations in the account.
@@ -335,6 +370,8 @@ Keyword-only arguments:
 Returns
 [ListEventIntegrationsResponseTypeDef](./type_defs.md#listeventintegrationsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags for the specified resource.
@@ -355,6 +392,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tags to the specified resource.
@@ -374,6 +413,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the specified tags from the specified resource.
@@ -392,6 +433,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_data_integration"></a>
 
 ### update_data_integration
 
@@ -413,6 +456,8 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_event_integration"></a>
 
 ### update_event_integration
 

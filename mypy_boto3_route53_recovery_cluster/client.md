@@ -1,3 +1,5 @@
+<a id="route53recoveryclusterclient-for-boto3-route53recoverycluster-module"></a>
+
 # Route53RecoveryClusterClient for boto3 Route53RecoveryCluster module
 
 > [Index](..) > [Route53RecoveryCluster](.) > Route53RecoveryClusterClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53RecoveryCluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster)
 type annotations stubs module
-[mypy_boto3_route53_recovery_cluster](https://pypi.org/project/mypy-boto3-route53-recovery-cluster/).
+[mypy-boto3-route53-recovery-cluster](https://pypi.org/project/mypy-boto3-route53-recovery-cluster/).
 
 - [Route53RecoveryClusterClient for boto3 Route53RecoveryCluster module](#route53recoveryclusterclient-for-boto3-route53recoverycluster-module)
   - [Route53RecoveryClusterClient](#route53recoveryclusterclient)
@@ -18,6 +20,8 @@ type annotations stubs module
     - [update_routing_control_state](#update_routing_control_state)
     - [update_routing_control_states](#update_routing_control_states)
 
+<a id="route53recoveryclusterclient"></a>
+
 ## Route53RecoveryClusterClient
 
 Type annotations for `boto3.client("route53-recovery-cluster")`
@@ -25,14 +29,17 @@ Type annotations for `boto3.client("route53-recovery-cluster")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_route53_recovery_cluster.client import Route53RecoveryClusterClient
 
 def get_route53-recovery-cluster_client() -> Route53RecoveryClusterClient:
-    return boto3.client("route53-recovery-cluster")
+    return Session().client("route53-recovery-cluster")
 ```
 
 Boto3 documentation:
 [Route53RecoveryCluster.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -57,7 +64,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -70,6 +81,8 @@ Boto3 documentation:
 [Route53RecoveryCluster.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -86,6 +99,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -105,6 +120,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_routing_control_state"></a>
 
 ### get_routing_control_state
 
@@ -126,6 +143,8 @@ Keyword-only arguments:
 Returns
 [GetRoutingControlStateResponseTypeDef](./type_defs.md#getroutingcontrolstateresponsetypedef).
 
+<a id="update_routing_control_state"></a>
+
 ### update_routing_control_state
 
 Set the state of the routing control to reroute traffic.
@@ -146,6 +165,8 @@ Keyword-only arguments:
   [RoutingControlStateType](./literals.md#routingcontrolstatetype) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_routing_control_states"></a>
 
 ### update_routing_control_states
 

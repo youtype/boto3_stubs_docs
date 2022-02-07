@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-networkmanager-module"></a>
+
 # Type annotations for boto3 NetworkManager module
 
 > [Index](..) > NetworkManager
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
 type annotations stubs module
-[mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
+[mypy-boto3-networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[networkmanager]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[networkmanager]'
+
+# standalone installation
 pip install mypy-boto3-networkmanager
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-networkmanager
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="networkmanagerclient"></a>
+
 ## NetworkManagerClient
 
 Type annotations for `boto3.client("networkmanager")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_networkmanager.client import NetworkManagerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -113,6 +127,8 @@ from mypy_boto3_networkmanager.client import NetworkManagerClient
 - [update_site](./client.md#update_site)
 - [update_vpc_attachment](./client.md#update_vpc_attachment)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 NetworkManagerClient [exceptions](./client.md#exceptions)
@@ -127,6 +143,8 @@ NetworkManagerClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -135,7 +153,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_networkmanager.paginators import DescribeGlobalNetworksPaginator, ...
+from mypy_boto3_networkmanager.paginator import DescribeGlobalNetworksPaginator, ...
 ```
 
 - [DescribeGlobalNetworksPaginator](./paginators.md#describeglobalnetworkspaginator)
@@ -157,6 +175,8 @@ from mypy_boto3_networkmanager.paginators import DescribeGlobalNetworksPaginator
 - [ListConnectPeersPaginator](./paginators.md#listconnectpeerspaginator)
 - [ListCoreNetworkPolicyVersionsPaginator](./paginators.md#listcorenetworkpolicyversionspaginator)
 - [ListCoreNetworksPaginator](./paginators.md#listcorenetworkspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -216,6 +236,8 @@ from mypy_boto3_networkmanager.literals import AttachmentStateType, ...
 - [TunnelProtocolType](./literals.md#tunnelprotocoltype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

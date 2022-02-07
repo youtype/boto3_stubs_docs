@@ -1,3 +1,5 @@
+<a id="mgnclient-for-boto3-mgn-module"></a>
+
 # mgnClient for boto3 mgn module
 
 > [Index](..) > [mgn](.) > mgnClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
 type annotations stubs module
-[mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
+[mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 - [mgnClient for boto3 mgn module](#mgnclient-for-boto3-mgn-module)
   - [mgnClient](#mgnclient)
@@ -45,6 +47,8 @@ type annotations stubs module
     - [update_source_server_replication_type](#update_source_server_replication_type)
     - [get_paginator](#get_paginator)
 
+<a id="mgnclient"></a>
+
 ## mgnClient
 
 Type annotations for `boto3.client("mgn")`
@@ -52,14 +56,17 @@ Type annotations for `boto3.client("mgn")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mgn.client import mgnClient
 
 def get_mgn_client() -> mgnClient:
-    return boto3.client("mgn")
+    return Session().client("mgn")
 ```
 
 Boto3 documentation:
 [mgn.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -85,7 +92,11 @@ Exceptions:
 - `Exceptions.UninitializedAccountException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -97,6 +108,8 @@ Boto3 documentation:
 [mgn.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -112,6 +125,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="change_server_life_cycle_state"></a>
 
 ### change_server_life_cycle_state
 
@@ -136,6 +151,8 @@ Keyword-only arguments:
 
 Returns
 [SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+
+<a id="create_replication_configuration_template"></a>
 
 ### create_replication_configuration_template
 
@@ -175,6 +192,8 @@ Keyword-only arguments:
 Returns
 [ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
 
+<a id="delete_job"></a>
+
 ### delete_job
 
 Deletes a single Job by ID.
@@ -192,6 +211,8 @@ Keyword-only arguments:
 - `jobID`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_replication_configuration_template"></a>
 
 ### delete_replication_configuration_template
 
@@ -213,6 +234,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_source_server"></a>
+
 ### delete_source_server
 
 Deletes a single source server by ID.
@@ -231,6 +254,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_vcenter_client"></a>
+
 ### delete_vcenter_client
 
 Deletes a single vCenter client by ID.
@@ -246,6 +271,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `vcenterClientID`: `str` *(required)*
+
+<a id="describe_job_log_items"></a>
 
 ### describe_job_log_items
 
@@ -267,6 +294,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef).
+
+<a id="describe_jobs"></a>
 
 ### describe_jobs
 
@@ -291,6 +320,8 @@ Keyword-only arguments:
 Returns
 [DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
 
+<a id="describe_replication_configuration_templates"></a>
+
 ### describe_replication_configuration_templates
 
 Lists all ReplicationConfigurationTemplates, filtered by Source Server IDs.
@@ -312,6 +343,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef).
+
+<a id="describe_source_servers"></a>
 
 ### describe_source_servers
 
@@ -336,6 +369,8 @@ Keyword-only arguments:
 Returns
 [DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef).
 
+<a id="describe_vcenter_clients"></a>
+
 ### describe_vcenter_clients
 
 Lists all vCenter clients.
@@ -356,6 +391,8 @@ Keyword-only arguments:
 Returns
 [DescribeVcenterClientsResponseTypeDef](./type_defs.md#describevcenterclientsresponsetypedef).
 
+<a id="disconnect_from_service"></a>
+
 ### disconnect_from_service
 
 Disconnects specific Source Servers from Application Migration Service.
@@ -374,6 +411,8 @@ Keyword-only arguments:
 
 Returns
 [SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+
+<a id="finalize_cutover"></a>
 
 ### finalize_cutover
 
@@ -394,6 +433,8 @@ Keyword-only arguments:
 Returns
 [SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -411,6 +452,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_launch_configuration"></a>
 
 ### get_launch_configuration
 
@@ -430,6 +473,8 @@ Keyword-only arguments:
 
 Returns
 [LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
+
+<a id="get_replication_configuration"></a>
 
 ### get_replication_configuration
 
@@ -451,6 +496,8 @@ Keyword-only arguments:
 Returns
 [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
 
+<a id="initialize_service"></a>
+
 ### initialize_service
 
 Initialize Application Migration Service.
@@ -461,6 +508,8 @@ Boto3 documentation:
 [mgn.Client.initialize_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.initialize_service)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -481,6 +530,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="mark_as_archived"></a>
+
 ### mark_as_archived
 
 Archives specific Source Servers by setting the SourceServer.isArchived
@@ -500,6 +551,8 @@ Keyword-only arguments:
 
 Returns
 [SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+
+<a id="retry_data_replication"></a>
 
 ### retry_data_replication
 
@@ -522,6 +575,8 @@ Keyword-only arguments:
 Returns
 [SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
 
+<a id="start_cutover"></a>
+
 ### start_cutover
 
 Launches a Cutover Instance for specific Source Servers.
@@ -542,6 +597,8 @@ Keyword-only arguments:
 Returns
 [StartCutoverResponseTypeDef](./type_defs.md#startcutoverresponsetypedef).
 
+<a id="start_replication"></a>
+
 ### start_replication
 
 Starts replication on source server by ID.
@@ -560,6 +617,8 @@ Keyword-only arguments:
 
 Returns
 [SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+
+<a id="start_test"></a>
 
 ### start_test
 
@@ -580,6 +639,8 @@ Keyword-only arguments:
 
 Returns [StartTestResponseTypeDef](./type_defs.md#starttestresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or overwrites only the specified tags for the specified Application
@@ -597,6 +658,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
+
+<a id="terminate_target_instances"></a>
 
 ### terminate_target_instances
 
@@ -618,6 +681,8 @@ Keyword-only arguments:
 Returns
 [TerminateTargetInstancesResponseTypeDef](./type_defs.md#terminatetargetinstancesresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes the specified set of tags from the specified set of Application
@@ -635,6 +700,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_launch_configuration"></a>
 
 ### update_launch_configuration
 
@@ -662,6 +729,8 @@ Keyword-only arguments:
 
 Returns
 [LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
+
+<a id="update_replication_configuration"></a>
 
 ### update_replication_configuration
 
@@ -701,6 +770,8 @@ Keyword-only arguments:
 Returns
 [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
 
+<a id="update_replication_configuration_template"></a>
+
 ### update_replication_configuration_template
 
 Updates multiple ReplicationConfigurationTemplates by ID.
@@ -737,6 +808,8 @@ Keyword-only arguments:
 Returns
 [ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
 
+<a id="update_source_server_replication_type"></a>
+
 ### update_source_server_replication_type
 
 Updates source server Replication Type by ID.
@@ -758,6 +831,8 @@ Keyword-only arguments:
 
 Returns
 [SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

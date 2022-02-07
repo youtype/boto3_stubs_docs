@@ -1,3 +1,5 @@
+<a id="globalacceleratorclient-for-boto3-globalaccelerator-module"></a>
+
 # GlobalAcceleratorClient for boto3 GlobalAccelerator module
 
 > [Index](..) > [GlobalAccelerator](.) > GlobalAcceleratorClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
 type annotations stubs module
-[mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+[mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 - [GlobalAcceleratorClient for boto3 GlobalAccelerator module](#globalacceleratorclient-for-boto3-globalaccelerator-module)
   - [GlobalAcceleratorClient](#globalacceleratorclient)
@@ -63,6 +65,8 @@ type annotations stubs module
     - [withdraw_byoip_cidr](#withdraw_byoip_cidr)
     - [get_paginator](#get_paginator)
 
+<a id="globalacceleratorclient"></a>
+
 ## GlobalAcceleratorClient
 
 Type annotations for `boto3.client("globalaccelerator")`
@@ -70,14 +74,17 @@ Type annotations for `boto3.client("globalaccelerator")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_globalaccelerator.client import GlobalAcceleratorClient
 
 def get_globalaccelerator_client() -> GlobalAcceleratorClient:
-    return boto3.client("globalaccelerator")
+    return Session().client("globalaccelerator")
 ```
 
 Boto3 documentation:
 [GlobalAccelerator.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -113,7 +120,11 @@ Exceptions:
 - `Exceptions.LimitExceededException`
 - `Exceptions.ListenerNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -125,6 +136,8 @@ Boto3 documentation:
 [GlobalAccelerator.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_custom_routing_endpoints"></a>
 
 ### add_custom_routing_endpoints
 
@@ -150,6 +163,8 @@ Keyword-only arguments:
 Returns
 [AddCustomRoutingEndpointsResponseTypeDef](./type_defs.md#addcustomroutingendpointsresponsetypedef).
 
+<a id="advertise_byoip_cidr"></a>
+
 ### advertise_byoip_cidr
 
 Advertises an IPv4 address range that is provisioned for use with your AWS
@@ -170,6 +185,8 @@ Keyword-only arguments:
 
 Returns
 [AdvertiseByoipCidrResponseTypeDef](./type_defs.md#advertisebyoipcidrresponsetypedef).
+
+<a id="allow_custom_routing_traffic"></a>
 
 ### allow_custom_routing_traffic
 
@@ -193,6 +210,8 @@ Keyword-only arguments:
 - `DestinationPorts`: `Sequence`\[`int`\]
 - `AllowAllTrafficToEndpoint`: `bool`
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -207,6 +226,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_accelerator"></a>
 
 ### create_accelerator
 
@@ -234,6 +255,8 @@ Keyword-only arguments:
 Returns
 [CreateAcceleratorResponseTypeDef](./type_defs.md#createacceleratorresponsetypedef).
 
+<a id="create_custom_routing_accelerator"></a>
+
 ### create_custom_routing_accelerator
 
 Create a custom routing accelerator.
@@ -259,6 +282,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#createcustomroutingacceleratorresponsetypedef).
+
+<a id="create_custom_routing_endpoint_group"></a>
 
 ### create_custom_routing_endpoint_group
 
@@ -287,6 +312,8 @@ Keyword-only arguments:
 Returns
 [CreateCustomRoutingEndpointGroupResponseTypeDef](./type_defs.md#createcustomroutingendpointgroupresponsetypedef).
 
+<a id="create_custom_routing_listener"></a>
+
 ### create_custom_routing_listener
 
 Create a listener to process inbound connections from clients to a custom
@@ -311,6 +338,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCustomRoutingListenerResponseTypeDef](./type_defs.md#createcustomroutinglistenerresponsetypedef).
+
+<a id="create_endpoint_group"></a>
 
 ### create_endpoint_group
 
@@ -345,6 +374,8 @@ Keyword-only arguments:
 Returns
 [CreateEndpointGroupResponseTypeDef](./type_defs.md#createendpointgroupresponsetypedef).
 
+<a id="create_listener"></a>
+
 ### create_listener
 
 Create a listener to process inbound connections from clients to an
@@ -372,6 +403,8 @@ Keyword-only arguments:
 Returns
 [CreateListenerResponseTypeDef](./type_defs.md#createlistenerresponsetypedef).
 
+<a id="delete_accelerator"></a>
+
 ### delete_accelerator
 
 Delete an accelerator.
@@ -389,6 +422,8 @@ Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 
+<a id="delete_custom_routing_accelerator"></a>
+
 ### delete_custom_routing_accelerator
 
 Delete a custom routing accelerator.
@@ -405,6 +440,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
+
+<a id="delete_custom_routing_endpoint_group"></a>
 
 ### delete_custom_routing_endpoint_group
 
@@ -424,6 +461,8 @@ Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 
+<a id="delete_custom_routing_listener"></a>
+
 ### delete_custom_routing_listener
 
 Delete a listener for a custom routing accelerator.
@@ -440,6 +479,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
+
+<a id="delete_endpoint_group"></a>
 
 ### delete_endpoint_group
 
@@ -458,6 +499,8 @@ Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 
+<a id="delete_listener"></a>
+
 ### delete_listener
 
 Delete a listener from an accelerator.
@@ -474,6 +517,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
+
+<a id="deny_custom_routing_traffic"></a>
 
 ### deny_custom_routing_traffic
 
@@ -497,6 +542,8 @@ Keyword-only arguments:
 - `DestinationPorts`: `Sequence`\[`int`\]
 - `DenyAllTrafficToEndpoint`: `bool`
 
+<a id="deprovision_byoip_cidr"></a>
+
 ### deprovision_byoip_cidr
 
 Releases the specified address range that you provisioned to use with your AWS
@@ -519,6 +566,8 @@ Keyword-only arguments:
 Returns
 [DeprovisionByoipCidrResponseTypeDef](./type_defs.md#deprovisionbyoipcidrresponsetypedef).
 
+<a id="describe_accelerator"></a>
+
 ### describe_accelerator
 
 Describe an accelerator.
@@ -538,6 +587,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAcceleratorResponseTypeDef](./type_defs.md#describeacceleratorresponsetypedef).
+
+<a id="describe_accelerator_attributes"></a>
 
 ### describe_accelerator_attributes
 
@@ -559,6 +610,8 @@ Keyword-only arguments:
 Returns
 [DescribeAcceleratorAttributesResponseTypeDef](./type_defs.md#describeacceleratorattributesresponsetypedef).
 
+<a id="describe_custom_routing_accelerator"></a>
+
 ### describe_custom_routing_accelerator
 
 Describe a custom routing accelerator.
@@ -578,6 +631,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#describecustomroutingacceleratorresponsetypedef).
+
+<a id="describe_custom_routing_accelerator_attributes"></a>
 
 ### describe_custom_routing_accelerator_attributes
 
@@ -600,6 +655,8 @@ Keyword-only arguments:
 Returns
 [DescribeCustomRoutingAcceleratorAttributesResponseTypeDef](./type_defs.md#describecustomroutingacceleratorattributesresponsetypedef).
 
+<a id="describe_custom_routing_endpoint_group"></a>
+
 ### describe_custom_routing_endpoint_group
 
 Describe an endpoint group for a custom routing accelerator.
@@ -621,6 +678,8 @@ Keyword-only arguments:
 Returns
 [DescribeCustomRoutingEndpointGroupResponseTypeDef](./type_defs.md#describecustomroutingendpointgroupresponsetypedef).
 
+<a id="describe_custom_routing_listener"></a>
+
 ### describe_custom_routing_listener
 
 The description of a listener for a custom routing accelerator.
@@ -640,6 +699,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCustomRoutingListenerResponseTypeDef](./type_defs.md#describecustomroutinglistenerresponsetypedef).
+
+<a id="describe_endpoint_group"></a>
 
 ### describe_endpoint_group
 
@@ -661,6 +722,8 @@ Keyword-only arguments:
 Returns
 [DescribeEndpointGroupResponseTypeDef](./type_defs.md#describeendpointgroupresponsetypedef).
 
+<a id="describe_listener"></a>
+
 ### describe_listener
 
 Describe a listener.
@@ -681,6 +744,8 @@ Keyword-only arguments:
 Returns
 [DescribeListenerResponseTypeDef](./type_defs.md#describelistenerresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -699,6 +764,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_accelerators"></a>
 
 ### list_accelerators
 
@@ -720,6 +787,8 @@ Keyword-only arguments:
 
 Returns
 [ListAcceleratorsResponseTypeDef](./type_defs.md#listacceleratorsresponsetypedef).
+
+<a id="list_byoip_cidrs"></a>
 
 ### list_byoip_cidrs
 
@@ -745,6 +814,8 @@ Keyword-only arguments:
 Returns
 [ListByoipCidrsResponseTypeDef](./type_defs.md#listbyoipcidrsresponsetypedef).
 
+<a id="list_custom_routing_accelerators"></a>
+
 ### list_custom_routing_accelerators
 
 List the custom routing accelerators for an AWS account.
@@ -765,6 +836,8 @@ Keyword-only arguments:
 
 Returns
 [ListCustomRoutingAcceleratorsResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponsetypedef).
+
+<a id="list_custom_routing_endpoint_groups"></a>
 
 ### list_custom_routing_endpoint_groups
 
@@ -789,6 +862,8 @@ Keyword-only arguments:
 Returns
 [ListCustomRoutingEndpointGroupsResponseTypeDef](./type_defs.md#listcustomroutingendpointgroupsresponsetypedef).
 
+<a id="list_custom_routing_listeners"></a>
+
 ### list_custom_routing_listeners
 
 List the listeners for a custom routing accelerator.
@@ -810,6 +885,8 @@ Keyword-only arguments:
 
 Returns
 [ListCustomRoutingListenersResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponsetypedef).
+
+<a id="list_custom_routing_port_mappings"></a>
 
 ### list_custom_routing_port_mappings
 
@@ -836,6 +913,8 @@ Keyword-only arguments:
 Returns
 [ListCustomRoutingPortMappingsResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponsetypedef).
 
+<a id="list_custom_routing_port_mappings_by_destination"></a>
+
 ### list_custom_routing_port_mappings_by_destination
 
 List the port mappings for a specific EC2 instance (destination) in a VPC
@@ -861,6 +940,8 @@ Keyword-only arguments:
 Returns
 [ListCustomRoutingPortMappingsByDestinationResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponsetypedef).
 
+<a id="list_endpoint_groups"></a>
+
 ### list_endpoint_groups
 
 List the endpoint groups that are associated with a listener.
@@ -883,6 +964,8 @@ Keyword-only arguments:
 Returns
 [ListEndpointGroupsResponseTypeDef](./type_defs.md#listendpointgroupsresponsetypedef).
 
+<a id="list_listeners"></a>
+
 ### list_listeners
 
 List the listeners for an accelerator.
@@ -904,6 +987,8 @@ Keyword-only arguments:
 Returns
 [ListListenersResponseTypeDef](./type_defs.md#listlistenersresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List all tags for an accelerator.
@@ -923,6 +1008,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="provision_byoip_cidr"></a>
 
 ### provision_byoip_cidr
 
@@ -948,6 +1035,8 @@ Keyword-only arguments:
 Returns
 [ProvisionByoipCidrResponseTypeDef](./type_defs.md#provisionbyoipcidrresponsetypedef).
 
+<a id="remove_custom_routing_endpoints"></a>
+
 ### remove_custom_routing_endpoints
 
 Remove endpoints from a custom routing accelerator.
@@ -965,6 +1054,8 @@ Keyword-only arguments:
 
 - `EndpointIds`: `Sequence`\[`str`\] *(required)*
 - `EndpointGroupArn`: `str` *(required)*
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -985,6 +1076,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Remove tags from a Global Accelerator resource.
@@ -1003,6 +1096,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_accelerator"></a>
 
 ### update_accelerator
 
@@ -1028,6 +1123,8 @@ Keyword-only arguments:
 Returns
 [UpdateAcceleratorResponseTypeDef](./type_defs.md#updateacceleratorresponsetypedef).
 
+<a id="update_accelerator_attributes"></a>
+
 ### update_accelerator_attributes
 
 Update the attributes for an accelerator.
@@ -1050,6 +1147,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAcceleratorAttributesResponseTypeDef](./type_defs.md#updateacceleratorattributesresponsetypedef).
+
+<a id="update_custom_routing_accelerator"></a>
 
 ### update_custom_routing_accelerator
 
@@ -1075,6 +1174,8 @@ Keyword-only arguments:
 Returns
 [UpdateCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorresponsetypedef).
 
+<a id="update_custom_routing_accelerator_attributes"></a>
+
 ### update_custom_routing_accelerator_attributes
 
 Update the attributes for a custom routing accelerator.
@@ -1099,6 +1200,8 @@ Keyword-only arguments:
 Returns
 [UpdateCustomRoutingAcceleratorAttributesResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorattributesresponsetypedef).
 
+<a id="update_custom_routing_listener"></a>
+
 ### update_custom_routing_listener
 
 Update a listener for a custom routing accelerator.
@@ -1121,6 +1224,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateCustomRoutingListenerResponseTypeDef](./type_defs.md#updatecustomroutinglistenerresponsetypedef).
+
+<a id="update_endpoint_group"></a>
 
 ### update_endpoint_group
 
@@ -1153,6 +1258,8 @@ Keyword-only arguments:
 Returns
 [UpdateEndpointGroupResponseTypeDef](./type_defs.md#updateendpointgroupresponsetypedef).
 
+<a id="update_listener"></a>
+
 ### update_listener
 
 Update a listener.
@@ -1177,6 +1284,8 @@ Keyword-only arguments:
 Returns
 [UpdateListenerResponseTypeDef](./type_defs.md#updatelistenerresponsetypedef).
 
+<a id="withdraw_byoip_cidr"></a>
+
 ### withdraw_byoip_cidr
 
 Stops advertising an address range that is provisioned as an address pool.
@@ -1196,6 +1305,8 @@ Keyword-only arguments:
 
 Returns
 [WithdrawByoipCidrResponseTypeDef](./type_defs.md#withdrawbyoipcidrresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

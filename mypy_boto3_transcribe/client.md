@@ -1,3 +1,5 @@
+<a id="transcribeserviceclient-for-boto3-transcribeservice-module"></a>
+
 # TranscribeServiceClient for boto3 TranscribeService module
 
 > [Index](..) > [TranscribeService](.) > TranscribeServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
 type annotations stubs module
-[mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
+[mypy-boto3-transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
 - [TranscribeServiceClient for boto3 TranscribeService module](#transcribeserviceclient-for-boto3-transcribeservice-module)
   - [TranscribeServiceClient](#transcribeserviceclient)
@@ -54,6 +56,8 @@ type annotations stubs module
     - [update_vocabulary](#update_vocabulary)
     - [update_vocabulary_filter](#update_vocabulary_filter)
 
+<a id="transcribeserviceclient"></a>
+
 ## TranscribeServiceClient
 
 Type annotations for `boto3.client("transcribe")`
@@ -61,14 +65,17 @@ Type annotations for `boto3.client("transcribe")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_transcribe.client import TranscribeServiceClient
 
 def get_transcribe_client() -> TranscribeServiceClient:
-    return boto3.client("transcribe")
+    return Session().client("transcribe")
 ```
 
 Boto3 documentation:
 [TranscribeService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -91,7 +98,11 @@ Exceptions:
 - `Exceptions.LimitExceededException`
 - `Exceptions.NotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -103,6 +114,8 @@ Boto3 documentation:
 [TranscribeService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -118,6 +131,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_call_analytics_category"></a>
 
 ### create_call_analytics_category
 
@@ -139,6 +154,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#createcallanalyticscategoryresponsetypedef).
+
+<a id="create_language_model"></a>
 
 ### create_language_model
 
@@ -166,6 +183,8 @@ Keyword-only arguments:
 Returns
 [CreateLanguageModelResponseTypeDef](./type_defs.md#createlanguagemodelresponsetypedef).
 
+<a id="create_medical_vocabulary"></a>
+
 ### create_medical_vocabulary
 
 Creates a new custom vocabulary that you can use to modify how Amazon
@@ -191,6 +210,8 @@ Keyword-only arguments:
 Returns
 [CreateMedicalVocabularyResponseTypeDef](./type_defs.md#createmedicalvocabularyresponsetypedef).
 
+<a id="create_vocabulary"></a>
+
 ### create_vocabulary
 
 Creates a new custom vocabulary that you can use to change the way Amazon
@@ -215,6 +236,8 @@ Keyword-only arguments:
 
 Returns
 [CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef).
+
+<a id="create_vocabulary_filter"></a>
 
 ### create_vocabulary_filter
 
@@ -242,6 +265,8 @@ Keyword-only arguments:
 Returns
 [CreateVocabularyFilterResponseTypeDef](./type_defs.md#createvocabularyfilterresponsetypedef).
 
+<a id="delete_call_analytics_category"></a>
+
 ### delete_call_analytics_category
 
 Deletes a call analytics category using its name.
@@ -260,6 +285,8 @@ Keyword-only arguments:
 - `CategoryName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_call_analytics_job"></a>
 
 ### delete_call_analytics_job
 
@@ -280,6 +307,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_language_model"></a>
+
 ### delete_language_model
 
 Deletes a custom language model using its name.
@@ -295,6 +324,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
+
+<a id="delete_medical_transcription_job"></a>
 
 ### delete_medical_transcription_job
 
@@ -314,6 +345,8 @@ Keyword-only arguments:
 
 - `MedicalTranscriptionJobName`: `str` *(required)*
 
+<a id="delete_medical_vocabulary"></a>
+
 ### delete_medical_vocabulary
 
 Deletes a vocabulary from Amazon Transcribe Medical.
@@ -330,6 +363,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
+
+<a id="delete_transcription_job"></a>
 
 ### delete_transcription_job
 
@@ -349,6 +384,8 @@ Keyword-only arguments:
 
 - `TranscriptionJobName`: `str` *(required)*
 
+<a id="delete_vocabulary"></a>
+
 ### delete_vocabulary
 
 Deletes a vocabulary from Amazon Transcribe.
@@ -364,6 +401,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
+
+<a id="delete_vocabulary_filter"></a>
 
 ### delete_vocabulary_filter
 
@@ -381,6 +420,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VocabularyFilterName`: `str` *(required)*
+
+<a id="describe_language_model"></a>
 
 ### describe_language_model
 
@@ -402,6 +443,8 @@ Keyword-only arguments:
 Returns
 [DescribeLanguageModelResponseTypeDef](./type_defs.md#describelanguagemodelresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -420,6 +463,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_call_analytics_category"></a>
 
 ### get_call_analytics_category
 
@@ -441,6 +486,8 @@ Keyword-only arguments:
 Returns
 [GetCallAnalyticsCategoryResponseTypeDef](./type_defs.md#getcallanalyticscategoryresponsetypedef).
 
+<a id="get_call_analytics_job"></a>
+
 ### get_call_analytics_job
 
 Returns information about a call analytics job.
@@ -460,6 +507,8 @@ Keyword-only arguments:
 
 Returns
 [GetCallAnalyticsJobResponseTypeDef](./type_defs.md#getcallanalyticsjobresponsetypedef).
+
+<a id="get_medical_transcription_job"></a>
 
 ### get_medical_transcription_job
 
@@ -481,6 +530,8 @@ Keyword-only arguments:
 Returns
 [GetMedicalTranscriptionJobResponseTypeDef](./type_defs.md#getmedicaltranscriptionjobresponsetypedef).
 
+<a id="get_medical_vocabulary"></a>
+
 ### get_medical_vocabulary
 
 Retrieves information about a medical vocabulary.
@@ -501,6 +552,8 @@ Keyword-only arguments:
 Returns
 [GetMedicalVocabularyResponseTypeDef](./type_defs.md#getmedicalvocabularyresponsetypedef).
 
+<a id="get_transcription_job"></a>
+
 ### get_transcription_job
 
 Returns information about a transcription job.
@@ -519,6 +572,8 @@ Keyword-only arguments:
 
 Returns
 [GetTranscriptionJobResponseTypeDef](./type_defs.md#gettranscriptionjobresponsetypedef).
+
+<a id="get_vocabulary"></a>
 
 ### get_vocabulary
 
@@ -539,6 +594,8 @@ Keyword-only arguments:
 Returns
 [GetVocabularyResponseTypeDef](./type_defs.md#getvocabularyresponsetypedef).
 
+<a id="get_vocabulary_filter"></a>
+
 ### get_vocabulary_filter
 
 Returns information about a vocabulary filter.
@@ -557,6 +614,8 @@ Keyword-only arguments:
 
 Returns
 [GetVocabularyFilterResponseTypeDef](./type_defs.md#getvocabularyfilterresponsetypedef).
+
+<a id="list_call_analytics_categories"></a>
 
 ### list_call_analytics_categories
 
@@ -579,6 +638,8 @@ Keyword-only arguments:
 
 Returns
 [ListCallAnalyticsCategoriesResponseTypeDef](./type_defs.md#listcallanalyticscategoriesresponsetypedef).
+
+<a id="list_call_analytics_jobs"></a>
 
 ### list_call_analytics_jobs
 
@@ -605,6 +666,8 @@ Keyword-only arguments:
 Returns
 [ListCallAnalyticsJobsResponseTypeDef](./type_defs.md#listcallanalyticsjobsresponsetypedef).
 
+<a id="list_language_models"></a>
+
 ### list_language_models
 
 Provides more information about the custom language models you've created.
@@ -626,6 +689,8 @@ Keyword-only arguments:
 
 Returns
 [ListLanguageModelsResponseTypeDef](./type_defs.md#listlanguagemodelsresponsetypedef).
+
+<a id="list_medical_transcription_jobs"></a>
 
 ### list_medical_transcription_jobs
 
@@ -652,6 +717,8 @@ Keyword-only arguments:
 Returns
 [ListMedicalTranscriptionJobsResponseTypeDef](./type_defs.md#listmedicaltranscriptionjobsresponsetypedef).
 
+<a id="list_medical_vocabularies"></a>
+
 ### list_medical_vocabularies
 
 Returns a list of vocabularies that match the specified criteria.
@@ -675,6 +742,8 @@ Keyword-only arguments:
 Returns
 [ListMedicalVocabulariesResponseTypeDef](./type_defs.md#listmedicalvocabulariesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all tags associated with a given transcription job, vocabulary, or
@@ -695,6 +764,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_transcription_jobs"></a>
 
 ### list_transcription_jobs
 
@@ -720,6 +791,8 @@ Keyword-only arguments:
 Returns
 [ListTranscriptionJobsResponseTypeDef](./type_defs.md#listtranscriptionjobsresponsetypedef).
 
+<a id="list_vocabularies"></a>
+
 ### list_vocabularies
 
 Returns a list of vocabularies that match the specified criteria.
@@ -742,6 +815,8 @@ Keyword-only arguments:
 Returns
 [ListVocabulariesResponseTypeDef](./type_defs.md#listvocabulariesresponsetypedef).
 
+<a id="list_vocabulary_filters"></a>
+
 ### list_vocabulary_filters
 
 Gets information about vocabulary filters.
@@ -763,6 +838,8 @@ Keyword-only arguments:
 
 Returns
 [ListVocabularyFiltersResponseTypeDef](./type_defs.md#listvocabularyfiltersresponsetypedef).
+
+<a id="start_call_analytics_job"></a>
 
 ### start_call_analytics_job
 
@@ -792,6 +869,8 @@ Keyword-only arguments:
 
 Returns
 [StartCallAnalyticsJobResponseTypeDef](./type_defs.md#startcallanalyticsjobresponsetypedef).
+
+<a id="start_medical_transcription_job"></a>
 
 ### start_medical_transcription_job
 
@@ -829,6 +908,8 @@ Keyword-only arguments:
 
 Returns
 [StartMedicalTranscriptionJobResponseTypeDef](./type_defs.md#startmedicaltranscriptionjobresponsetypedef).
+
+<a id="start_transcription_job"></a>
 
 ### start_transcription_job
 
@@ -872,6 +953,8 @@ Keyword-only arguments:
 Returns
 [StartTranscriptionJobResponseTypeDef](./type_defs.md#starttranscriptionjobresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Tags an Amazon Transcribe resource with the given list of tags.
@@ -891,6 +974,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes specified tags from a specified Amazon Transcribe resource.
@@ -909,6 +994,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_call_analytics_category"></a>
 
 ### update_call_analytics_category
 
@@ -930,6 +1017,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#updatecallanalyticscategoryresponsetypedef).
+
+<a id="update_medical_vocabulary"></a>
 
 ### update_medical_vocabulary
 
@@ -955,6 +1044,8 @@ Keyword-only arguments:
 Returns
 [UpdateMedicalVocabularyResponseTypeDef](./type_defs.md#updatemedicalvocabularyresponsetypedef).
 
+<a id="update_vocabulary"></a>
+
 ### update_vocabulary
 
 Updates an existing vocabulary with new values.
@@ -977,6 +1068,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVocabularyResponseTypeDef](./type_defs.md#updatevocabularyresponsetypedef).
+
+<a id="update_vocabulary_filter"></a>
 
 ### update_vocabulary_filter
 

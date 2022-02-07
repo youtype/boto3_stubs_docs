@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-codestarconnections-module"></a>
+
 # Literals for boto3 CodeStarconnections module
 
 > [Index](..) > [CodeStarconnections](.) > Literals
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
 type annotations stubs module
-[mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
+[mypy-boto3-codestar-connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
 - [Literals for boto3 CodeStarconnections module](#literals-for-boto3-codestarconnections-module)
   - [ConnectionStatusType](#connectionstatustype)
   - [ProviderTypeType](#providertypetype)
   - [ServiceName](#servicename)
+
+<a id="connectionstatustype"></a>
 
 ## ConnectionStatusType
 
@@ -24,6 +28,8 @@ Values:
 - `ERROR`
 - `PENDING`
 
+<a id="providertypetype"></a>
+
 ## ProviderTypeType
 
 ```python
@@ -35,6 +41,8 @@ Values:
 - `Bitbucket`
 - `GitHub`
 - `GitHubEnterpriseServer`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

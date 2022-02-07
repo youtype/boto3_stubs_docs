@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-dataexchange-module"></a>
+
 # Typed dictionaries for boto3 DataExchange module
 
 > [Index](..) > [DataExchange](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module
-[mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
+[mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 - [Typed dictionaries for boto3 DataExchange module](#typed-dictionaries-for-boto3-dataexchange-module)
   - [ActionTypeDef](#actiontypedef)
@@ -98,6 +100,8 @@ type annotations stubs module
   - [UpdateRevisionRequestRequestTypeDef](#updaterevisionrequestrequesttypedef)
   - [UpdateRevisionResponseTypeDef](#updaterevisionresponsetypedef)
 
+<a id="actiontypedef"></a>
+
 ## ActionTypeDef
 
 ```python
@@ -108,6 +112,8 @@ Optional fields:
 
 - `ExportRevisionToS3`:
   [AutoExportRevisionToS3RequestDetailsTypeDef](./type_defs.md#autoexportrevisiontos3requestdetailstypedef)
+
+<a id="apigatewayapiassettypedef"></a>
 
 ## ApiGatewayApiAssetTypeDef
 
@@ -128,6 +134,8 @@ Optional fields:
   [ProtocolTypeType](./literals.md#protocoltypetype))
 - `Stage`: `str`
 
+<a id="assetdestinationentrytypedef"></a>
+
 ## AssetDestinationEntryTypeDef
 
 ```python
@@ -143,6 +151,8 @@ Optional fields:
 
 - `Key`: `str`
 
+<a id="assetdetailstypedef"></a>
+
 ## AssetDetailsTypeDef
 
 ```python
@@ -157,6 +167,8 @@ Optional fields:
   [RedshiftDataShareAssetTypeDef](./type_defs.md#redshiftdatashareassettypedef)
 - `ApiGatewayApiAsset`:
   [ApiGatewayApiAssetTypeDef](./type_defs.md#apigatewayapiassettypedef)
+
+<a id="assetentrytypedef"></a>
 
 ## AssetEntryTypeDef
 
@@ -180,6 +192,8 @@ Optional fields:
 
 - `SourceId`: `str`
 
+<a id="assetsourceentrytypedef"></a>
+
 ## AssetSourceEntryTypeDef
 
 ```python
@@ -190,6 +204,8 @@ Required fields:
 
 - `Bucket`: `str`
 - `Key`: `str`
+
+<a id="autoexportrevisiondestinationentrytypedef"></a>
 
 ## AutoExportRevisionDestinationEntryTypeDef
 
@@ -204,6 +220,8 @@ Required fields:
 Optional fields:
 
 - `KeyPattern`: `str`
+
+<a id="autoexportrevisiontos3requestdetailstypedef"></a>
 
 ## AutoExportRevisionToS3RequestDetailsTypeDef
 
@@ -221,6 +239,8 @@ Optional fields:
 - `Encryption`:
   [ExportServerSideEncryptionTypeDef](./type_defs.md#exportserversideencryptiontypedef)
 
+<a id="canceljobrequestrequesttypedef"></a>
+
 ## CancelJobRequestRequestTypeDef
 
 ```python
@@ -230,6 +250,8 @@ from mypy_boto3_dataexchange.type_defs import CancelJobRequestRequestTypeDef
 Required fields:
 
 - `JobId`: `str`
+
+<a id="createdatasetrequestrequesttypedef"></a>
 
 ## CreateDataSetRequestRequestTypeDef
 
@@ -246,6 +268,8 @@ Required fields:
 Optional fields:
 
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createdatasetresponsetypedef"></a>
 
 ## CreateDataSetResponseTypeDef
 
@@ -269,6 +293,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createeventactionrequestrequesttypedef"></a>
+
 ## CreateEventActionRequestRequestTypeDef
 
 ```python
@@ -279,6 +305,8 @@ Required fields:
 
 - `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
 - `Event`: [EventTypeDef](./type_defs.md#eventtypedef)
+
+<a id="createeventactionresponsetypedef"></a>
 
 ## CreateEventActionResponseTypeDef
 
@@ -297,6 +325,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createjobrequestrequesttypedef"></a>
+
 ## CreateJobRequestRequestTypeDef
 
 ```python
@@ -307,6 +337,8 @@ Required fields:
 
 - `Details`: [RequestDetailsTypeDef](./type_defs.md#requestdetailstypedef)
 - `Type`: [TypeType](./literals.md#typetype)
+
+<a id="createjobresponsetypedef"></a>
 
 ## CreateJobResponseTypeDef
 
@@ -327,6 +359,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createrevisionrequestrequesttypedef"></a>
+
 ## CreateRevisionRequestRequestTypeDef
 
 ```python
@@ -341,6 +375,8 @@ Optional fields:
 
 - `Comment`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createrevisionresponsetypedef"></a>
 
 ## CreateRevisionResponseTypeDef
 
@@ -361,6 +397,8 @@ Required fields:
 - `UpdatedAt`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="datasetentrytypedef"></a>
 
 ## DataSetEntryTypeDef
 
@@ -384,6 +422,8 @@ Optional fields:
 - `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
 
+<a id="deleteassetrequestrequesttypedef"></a>
+
 ## DeleteAssetRequestRequestTypeDef
 
 ```python
@@ -396,6 +436,8 @@ Required fields:
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
+<a id="deletedatasetrequestrequesttypedef"></a>
+
 ## DeleteDataSetRequestRequestTypeDef
 
 ```python
@@ -405,6 +447,8 @@ from mypy_boto3_dataexchange.type_defs import DeleteDataSetRequestRequestTypeDef
 Required fields:
 
 - `DataSetId`: `str`
+
+<a id="deleteeventactionrequestrequesttypedef"></a>
 
 ## DeleteEventActionRequestRequestTypeDef
 
@@ -416,6 +460,8 @@ Required fields:
 
 - `EventActionId`: `str`
 
+<a id="deleterevisionrequestrequesttypedef"></a>
+
 ## DeleteRevisionRequestRequestTypeDef
 
 ```python
@@ -426,6 +472,8 @@ Required fields:
 
 - `DataSetId`: `str`
 - `RevisionId`: `str`
+
+<a id="detailstypedef"></a>
 
 ## DetailsTypeDef
 
@@ -439,6 +487,8 @@ Optional fields:
   [ImportAssetFromSignedUrlJobErrorDetailsTypeDef](./type_defs.md#importassetfromsignedurljoberrordetailstypedef)
 - `ImportAssetsFromS3JobErrorDetails`:
   `List`\[[AssetSourceEntryTypeDef](./type_defs.md#assetsourceentrytypedef)\]
+
+<a id="eventactionentrytypedef"></a>
 
 ## EventActionEntryTypeDef
 
@@ -455,6 +505,8 @@ Required fields:
 - `Id`: `str`
 - `UpdatedAt`: `datetime`
 
+<a id="eventtypedef"></a>
+
 ## EventTypeDef
 
 ```python
@@ -465,6 +517,8 @@ Optional fields:
 
 - `RevisionPublished`:
   [RevisionPublishedTypeDef](./type_defs.md#revisionpublishedtypedef)
+
+<a id="exportassettosignedurlrequestdetailstypedef"></a>
 
 ## ExportAssetToSignedUrlRequestDetailsTypeDef
 
@@ -477,6 +531,8 @@ Required fields:
 - `AssetId`: `str`
 - `DataSetId`: `str`
 - `RevisionId`: `str`
+
+<a id="exportassettosignedurlresponsedetailstypedef"></a>
 
 ## ExportAssetToSignedUrlResponseDetailsTypeDef
 
@@ -494,6 +550,8 @@ Optional fields:
 
 - `SignedUrl`: `str`
 - `SignedUrlExpiresAt`: `datetime`
+
+<a id="exportassetstos3requestdetailstypedef"></a>
 
 ## ExportAssetsToS3RequestDetailsTypeDef
 
@@ -513,6 +571,8 @@ Optional fields:
 - `Encryption`:
   [ExportServerSideEncryptionTypeDef](./type_defs.md#exportserversideencryptiontypedef)
 
+<a id="exportassetstos3responsedetailstypedef"></a>
+
 ## ExportAssetsToS3ResponseDetailsTypeDef
 
 ```python
@@ -531,6 +591,8 @@ Optional fields:
 - `Encryption`:
   [ExportServerSideEncryptionTypeDef](./type_defs.md#exportserversideencryptiontypedef)
 
+<a id="exportrevisionstos3requestdetailstypedef"></a>
+
 ## ExportRevisionsToS3RequestDetailsTypeDef
 
 ```python
@@ -547,6 +609,8 @@ Optional fields:
 
 - `Encryption`:
   [ExportServerSideEncryptionTypeDef](./type_defs.md#exportserversideencryptiontypedef)
+
+<a id="exportrevisionstos3responsedetailstypedef"></a>
 
 ## ExportRevisionsToS3ResponseDetailsTypeDef
 
@@ -566,6 +630,8 @@ Optional fields:
   [ExportServerSideEncryptionTypeDef](./type_defs.md#exportserversideencryptiontypedef)
 - `EventActionArn`: `str`
 
+<a id="exportserversideencryptiontypedef"></a>
+
 ## ExportServerSideEncryptionTypeDef
 
 ```python
@@ -581,6 +647,8 @@ Optional fields:
 
 - `KmsKeyArn`: `str`
 
+<a id="getassetrequestrequesttypedef"></a>
+
 ## GetAssetRequestRequestTypeDef
 
 ```python
@@ -592,6 +660,8 @@ Required fields:
 - `AssetId`: `str`
 - `DataSetId`: `str`
 - `RevisionId`: `str`
+
+<a id="getassetresponsetypedef"></a>
 
 ## GetAssetResponseTypeDef
 
@@ -614,6 +684,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdatasetrequestrequesttypedef"></a>
+
 ## GetDataSetRequestRequestTypeDef
 
 ```python
@@ -623,6 +695,8 @@ from mypy_boto3_dataexchange.type_defs import GetDataSetRequestRequestTypeDef
 Required fields:
 
 - `DataSetId`: `str`
+
+<a id="getdatasetresponsetypedef"></a>
 
 ## GetDataSetResponseTypeDef
 
@@ -646,6 +720,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="geteventactionrequestrequesttypedef"></a>
+
 ## GetEventActionRequestRequestTypeDef
 
 ```python
@@ -655,6 +731,8 @@ from mypy_boto3_dataexchange.type_defs import GetEventActionRequestRequestTypeDe
 Required fields:
 
 - `EventActionId`: `str`
+
+<a id="geteventactionresponsetypedef"></a>
 
 ## GetEventActionResponseTypeDef
 
@@ -673,6 +751,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getjobrequestrequesttypedef"></a>
+
 ## GetJobRequestRequestTypeDef
 
 ```python
@@ -682,6 +762,8 @@ from mypy_boto3_dataexchange.type_defs import GetJobRequestRequestTypeDef
 Required fields:
 
 - `JobId`: `str`
+
+<a id="getjobresponsetypedef"></a>
 
 ## GetJobResponseTypeDef
 
@@ -702,6 +784,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrevisionrequestrequesttypedef"></a>
+
 ## GetRevisionRequestRequestTypeDef
 
 ```python
@@ -712,6 +796,8 @@ Required fields:
 
 - `DataSetId`: `str`
 - `RevisionId`: `str`
+
+<a id="getrevisionresponsetypedef"></a>
 
 ## GetRevisionResponseTypeDef
 
@@ -732,6 +818,8 @@ Required fields:
 - `UpdatedAt`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="importassetfromapigatewayapirequestdetailstypedef"></a>
 
 ## ImportAssetFromApiGatewayApiRequestDetailsTypeDef
 
@@ -754,6 +842,8 @@ Optional fields:
 
 - `ApiDescription`: `str`
 - `ApiKey`: `str`
+
+<a id="importassetfromapigatewayapiresponsedetailstypedef"></a>
 
 ## ImportAssetFromApiGatewayApiResponseDetailsTypeDef
 
@@ -779,6 +869,8 @@ Optional fields:
 - `ApiDescription`: `str`
 - `ApiKey`: `str`
 
+<a id="importassetfromsignedurljoberrordetailstypedef"></a>
+
 ## ImportAssetFromSignedUrlJobErrorDetailsTypeDef
 
 ```python
@@ -788,6 +880,8 @@ from mypy_boto3_dataexchange.type_defs import ImportAssetFromSignedUrlJobErrorDe
 Required fields:
 
 - `AssetName`: `str`
+
+<a id="importassetfromsignedurlrequestdetailstypedef"></a>
 
 ## ImportAssetFromSignedUrlRequestDetailsTypeDef
 
@@ -801,6 +895,8 @@ Required fields:
 - `DataSetId`: `str`
 - `Md5Hash`: `str`
 - `RevisionId`: `str`
+
+<a id="importassetfromsignedurlresponsedetailstypedef"></a>
 
 ## ImportAssetFromSignedUrlResponseDetailsTypeDef
 
@@ -820,6 +916,8 @@ Optional fields:
 - `SignedUrl`: `str`
 - `SignedUrlExpiresAt`: `datetime`
 
+<a id="importassetsfromredshiftdatasharesrequestdetailstypedef"></a>
+
 ## ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef
 
 ```python
@@ -832,6 +930,8 @@ Required fields:
   `Sequence`\[[RedshiftDataShareAssetSourceEntryTypeDef](./type_defs.md#redshiftdatashareassetsourceentrytypedef)\]
 - `DataSetId`: `str`
 - `RevisionId`: `str`
+
+<a id="importassetsfromredshiftdatasharesresponsedetailstypedef"></a>
 
 ## ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef
 
@@ -846,6 +946,8 @@ Required fields:
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
+<a id="importassetsfroms3requestdetailstypedef"></a>
+
 ## ImportAssetsFromS3RequestDetailsTypeDef
 
 ```python
@@ -859,6 +961,8 @@ Required fields:
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
+<a id="importassetsfroms3responsedetailstypedef"></a>
+
 ## ImportAssetsFromS3ResponseDetailsTypeDef
 
 ```python
@@ -871,6 +975,8 @@ Required fields:
   `List`\[[AssetSourceEntryTypeDef](./type_defs.md#assetsourceentrytypedef)\]
 - `DataSetId`: `str`
 - `RevisionId`: `str`
+
+<a id="jobentrytypedef"></a>
 
 ## JobEntryTypeDef
 
@@ -892,6 +998,8 @@ Optional fields:
 
 - `Errors`: `List`\[[JobErrorTypeDef](./type_defs.md#joberrortypedef)\]
 
+<a id="joberrortypedef"></a>
+
 ## JobErrorTypeDef
 
 ```python
@@ -912,6 +1020,8 @@ Optional fields:
 - `ResourceType`:
   [JobErrorResourceTypesType](./literals.md#joberrorresourcetypestype)
 
+<a id="listdatasetrevisionsrequestrequesttypedef"></a>
+
 ## ListDataSetRevisionsRequestRequestTypeDef
 
 ```python
@@ -927,6 +1037,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listdatasetrevisionsresponsetypedef"></a>
+
 ## ListDataSetRevisionsResponseTypeDef
 
 ```python
@@ -941,6 +1053,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatasetsrequestrequesttypedef"></a>
+
 ## ListDataSetsRequestRequestTypeDef
 
 ```python
@@ -952,6 +1066,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Origin`: `str`
+
+<a id="listdatasetsresponsetypedef"></a>
 
 ## ListDataSetsResponseTypeDef
 
@@ -967,6 +1083,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listeventactionsrequestrequesttypedef"></a>
+
 ## ListEventActionsRequestRequestTypeDef
 
 ```python
@@ -978,6 +1096,8 @@ Optional fields:
 - `EventSourceId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listeventactionsresponsetypedef"></a>
 
 ## ListEventActionsResponseTypeDef
 
@@ -993,6 +1113,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listjobsrequestrequesttypedef"></a>
+
 ## ListJobsRequestRequestTypeDef
 
 ```python
@@ -1006,6 +1128,8 @@ Optional fields:
 - `NextToken`: `str`
 - `RevisionId`: `str`
 
+<a id="listjobsresponsetypedef"></a>
+
 ## ListJobsResponseTypeDef
 
 ```python
@@ -1018,6 +1142,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrevisionassetsrequestrequesttypedef"></a>
 
 ## ListRevisionAssetsRequestRequestTypeDef
 
@@ -1035,6 +1161,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listrevisionassetsresponsetypedef"></a>
+
 ## ListRevisionAssetsResponseTypeDef
 
 ```python
@@ -1048,6 +1176,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1057,6 +1187,8 @@ from mypy_boto3_dataexchange.type_defs import ListTagsForResourceRequestRequestT
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1070,6 +1202,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="origindetailstypedef"></a>
+
 ## OriginDetailsTypeDef
 
 ```python
@@ -1079,6 +1213,8 @@ from mypy_boto3_dataexchange.type_defs import OriginDetailsTypeDef
 Required fields:
 
 - `ProductId`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1092,6 +1228,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="redshiftdatashareassetsourceentrytypedef"></a>
+
 ## RedshiftDataShareAssetSourceEntryTypeDef
 
 ```python
@@ -1102,6 +1240,8 @@ Required fields:
 
 - `DataShareArn`: `str`
 
+<a id="redshiftdatashareassettypedef"></a>
+
 ## RedshiftDataShareAssetTypeDef
 
 ```python
@@ -1111,6 +1251,8 @@ from mypy_boto3_dataexchange.type_defs import RedshiftDataShareAssetTypeDef
 Required fields:
 
 - `Arn`: `str`
+
+<a id="requestdetailstypedef"></a>
 
 ## RequestDetailsTypeDef
 
@@ -1135,6 +1277,8 @@ Optional fields:
 - `ImportAssetFromApiGatewayApi`:
   [ImportAssetFromApiGatewayApiRequestDetailsTypeDef](./type_defs.md#importassetfromapigatewayapirequestdetailstypedef)
 
+<a id="responsedetailstypedef"></a>
+
 ## ResponseDetailsTypeDef
 
 ```python
@@ -1158,6 +1302,8 @@ Optional fields:
 - `ImportAssetFromApiGatewayApi`:
   [ImportAssetFromApiGatewayApiResponseDetailsTypeDef](./type_defs.md#importassetfromapigatewayapiresponsedetailstypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1171,6 +1317,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="revisiondestinationentrytypedef"></a>
 
 ## RevisionDestinationEntryTypeDef
 
@@ -1186,6 +1334,8 @@ Required fields:
 Optional fields:
 
 - `KeyPattern`: `str`
+
+<a id="revisionentrytypedef"></a>
 
 ## RevisionEntryTypeDef
 
@@ -1207,6 +1357,8 @@ Optional fields:
 - `Finalized`: `bool`
 - `SourceId`: `str`
 
+<a id="revisionpublishedtypedef"></a>
+
 ## RevisionPublishedTypeDef
 
 ```python
@@ -1217,6 +1369,8 @@ Required fields:
 
 - `DataSetId`: `str`
 
+<a id="s3snapshotassettypedef"></a>
+
 ## S3SnapshotAssetTypeDef
 
 ```python
@@ -1226,6 +1380,8 @@ from mypy_boto3_dataexchange.type_defs import S3SnapshotAssetTypeDef
 Required fields:
 
 - `Size`: `float`
+
+<a id="sendapiassetrequestrequesttypedef"></a>
 
 ## SendApiAssetRequestRequestTypeDef
 
@@ -1247,6 +1403,8 @@ Optional fields:
 - `Method`: `str`
 - `Path`: `str`
 
+<a id="sendapiassetresponsetypedef"></a>
+
 ## SendApiAssetResponseTypeDef
 
 ```python
@@ -1260,6 +1418,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startjobrequestrequesttypedef"></a>
+
 ## StartJobRequestRequestTypeDef
 
 ```python
@@ -1269,6 +1429,8 @@ from mypy_boto3_dataexchange.type_defs import StartJobRequestRequestTypeDef
 Required fields:
 
 - `JobId`: `str`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1281,6 +1443,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1291,6 +1455,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateassetrequestrequesttypedef"></a>
 
 ## UpdateAssetRequestRequestTypeDef
 
@@ -1304,6 +1470,8 @@ Required fields:
 - `DataSetId`: `str`
 - `Name`: `str`
 - `RevisionId`: `str`
+
+<a id="updateassetresponsetypedef"></a>
 
 ## UpdateAssetResponseTypeDef
 
@@ -1326,6 +1494,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatedatasetrequestrequesttypedef"></a>
+
 ## UpdateDataSetRequestRequestTypeDef
 
 ```python
@@ -1340,6 +1510,8 @@ Optional fields:
 
 - `Description`: `str`
 - `Name`: `str`
+
+<a id="updatedatasetresponsetypedef"></a>
 
 ## UpdateDataSetResponseTypeDef
 
@@ -1362,6 +1534,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateeventactionrequestrequesttypedef"></a>
+
 ## UpdateEventActionRequestRequestTypeDef
 
 ```python
@@ -1375,6 +1549,8 @@ Required fields:
 Optional fields:
 
 - `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+
+<a id="updateeventactionresponsetypedef"></a>
 
 ## UpdateEventActionResponseTypeDef
 
@@ -1393,6 +1569,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updaterevisionrequestrequesttypedef"></a>
+
 ## UpdateRevisionRequestRequestTypeDef
 
 ```python
@@ -1408,6 +1586,8 @@ Optional fields:
 
 - `Comment`: `str`
 - `Finalized`: `bool`
+
+<a id="updaterevisionresponsetypedef"></a>
 
 ## UpdateRevisionResponseTypeDef
 

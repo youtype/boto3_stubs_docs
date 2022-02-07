@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-computeoptimizer-module"></a>
+
 # Type annotations for boto3 ComputeOptimizer module
 
 > [Index](..) > ComputeOptimizer
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
-[mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
+[mypy-boto3-compute-optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[compute-optimizer]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[compute-optimizer]'
+
+# standalone installation
 pip install mypy-boto3-compute-optimizer
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-compute-optimizer
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="computeoptimizerclient"></a>
 
 ## ComputeOptimizerClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -53,6 +67,8 @@ from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
 - [put_recommendation_preferences](./client.md#put_recommendation_preferences)
 - [update_enrollment_status](./client.md#update_enrollment_status)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ComputeOptimizerClient [exceptions](./client.md#exceptions)
@@ -67,6 +83,8 @@ ComputeOptimizerClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ServiceUnavailableException
 - ThrottlingException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -116,6 +134,8 @@ from mypy_boto3_compute_optimizer.literals import CpuVendorArchitectureType, ...
 - [ScopeNameType](./literals.md#scopenametype)
 - [StatusType](./literals.md#statustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

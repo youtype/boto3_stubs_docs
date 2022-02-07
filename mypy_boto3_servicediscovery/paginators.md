@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-servicediscovery-module"></a>
+
 # Paginators for boto3 ServiceDiscovery module
 
 > [Index](..) > [ServiceDiscovery](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
 type annotations stubs module
-[mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
+[mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 - [Paginators for boto3 ServiceDiscovery module](#paginators-for-boto3-servicediscovery-module)
   - [ListInstancesPaginator](#listinstancespaginator)
   - [ListNamespacesPaginator](#listnamespacespaginator)
   - [ListOperationsPaginator](#listoperationspaginator)
   - [ListServicesPaginator](#listservicespaginator)
+
+<a id="listinstancespaginator"></a>
 
 ## ListInstancesPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicediscovery.paginator import ListInstancesPaginator
 
 def get_list_instances_paginator() -> ListInstancesPaginator:
-    return boto3.client("servicediscovery").get_paginator("list_instances")
+    return Session().client("servicediscovery").get_paginator("list_instances")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `ListInstancesPaginator.paginate` method:
 `ListInstancesPaginator.paginate` returns
 `_PageIterator`\[[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef)\].
 
+<a id="listnamespacespaginator"></a>
+
 ## ListNamespacesPaginator
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicediscovery.paginator import ListNamespacesPaginator
 
 def get_list_namespaces_paginator() -> ListNamespacesPaginator:
-    return boto3.client("servicediscovery").get_paginator("list_namespaces")
+    return Session().client("servicediscovery").get_paginator("list_namespaces")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `ListNamespacesPaginator.paginate` method:
 `ListNamespacesPaginator.paginate` returns
 `_PageIterator`\[[ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef)\].
 
+<a id="listoperationspaginator"></a>
+
 ## ListOperationsPaginator
 
 Type annotations for
@@ -74,10 +86,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicediscovery.paginator import ListOperationsPaginator
 
 def get_list_operations_paginator() -> ListOperationsPaginator:
-    return boto3.client("servicediscovery").get_paginator("list_operations")
+    return Session().client("servicediscovery").get_paginator("list_operations")
 ```
 
 Boto3 documentation:
@@ -93,6 +107,8 @@ Arguments for `ListOperationsPaginator.paginate` method:
 `ListOperationsPaginator.paginate` returns
 `_PageIterator`\[[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef)\].
 
+<a id="listservicespaginator"></a>
+
 ## ListServicesPaginator
 
 Type annotations for
@@ -101,10 +117,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicediscovery.paginator import ListServicesPaginator
 
 def get_list_services_paginator() -> ListServicesPaginator:
-    return boto3.client("servicediscovery").get_paginator("list_services")
+    return Session().client("servicediscovery").get_paginator("list_services")
 ```
 
 Boto3 documentation:

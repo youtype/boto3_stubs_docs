@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iotjobsdataplane-module"></a>
+
 # Type annotations for boto3 IoTJobsDataPlane module
 
 > [Index](..) > IoTJobsDataPlane
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
 type annotations stubs module
-[mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
+[mypy-boto3-iot-jobs-data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iot-jobs-data]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iot-jobs-data]'
+
+# standalone installation
 pip install mypy-boto3-iot-jobs-data
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-iot-jobs-data
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="iotjobsdataplaneclient"></a>
 
 ## IoTJobsDataPlaneClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_iot_jobs_data.client import IoTJobsDataPlaneClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -38,6 +52,8 @@ from mypy_boto3_iot_jobs_data.client import IoTJobsDataPlaneClient
 - [get_pending_job_executions](./client.md#get_pending_job_executions)
 - [start_next_pending_job_execution](./client.md#start_next_pending_job_execution)
 - [update_job_execution](./client.md#update_job_execution)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -52,6 +68,8 @@ IoTJobsDataPlaneClient [exceptions](./client.md#exceptions)
 - TerminalStateException
 - ThrottlingException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -64,6 +82,8 @@ from mypy_boto3_iot_jobs_data.literals import JobExecutionStatusType, ...
 
 - [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

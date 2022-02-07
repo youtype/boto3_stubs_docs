@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-efs-module"></a>
+
 # Type annotations for boto3 EFS module
 
 > [Index](..) > EFS
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
 type annotations stubs module
-[mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
+[mypy-boto3-efs](https://pypi.org/project/mypy-boto3-efs/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[efs]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[efs]'
+
+# standalone installation
 pip install mypy-boto3-efs
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-efs
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="efsclient"></a>
+
 ## EFSClient
 
 Type annotations for `boto3.client("efs")` as [EFSClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_efs.client import EFSClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -66,6 +80,8 @@ from mypy_boto3_efs.client import EFSClient
 - [untag_resource](./client.md#untag_resource)
 - [update_file_system](./client.md#update_file_system)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 EFSClient [exceptions](./client.md#exceptions)
@@ -101,6 +117,8 @@ EFSClient [exceptions](./client.md#exceptions)
 - UnsupportedAvailabilityZone
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -109,12 +127,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_efs.paginators import DescribeFileSystemsPaginator, ...
+from mypy_boto3_efs.paginator import DescribeFileSystemsPaginator, ...
 ```
 
 - [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
 - [DescribeMountTargetsPaginator](./paginators.md#describemounttargetspaginator)
 - [DescribeTagsPaginator](./paginators.md#describetagspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -140,6 +160,8 @@ from mypy_boto3_efs.literals import DescribeFileSystemsPaginatorName, ...
 - [TransitionToPrimaryStorageClassRulesType](./literals.md#transitiontoprimarystorageclassrulestype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

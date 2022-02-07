@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-fms-module"></a>
+
 # Paginators for boto3 FMS module
 
 > [Index](..) > [FMS](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
 type annotations stubs module
-[mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
+[mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
 
 - [Paginators for boto3 FMS module](#paginators-for-boto3-fms-module)
   - [ListAppsListsPaginator](#listappslistspaginator)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [ListPoliciesPaginator](#listpoliciespaginator)
   - [ListProtocolsListsPaginator](#listprotocolslistspaginator)
 
+<a id="listappslistspaginator"></a>
+
 ## ListAppsListsPaginator
 
 Type annotations for `boto3.client("fms").get_paginator("list_apps_lists")`.
@@ -21,10 +25,12 @@ Type annotations for `boto3.client("fms").get_paginator("list_apps_lists")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_fms.paginator import ListAppsListsPaginator
 
 def get_list_apps_lists_paginator() -> ListAppsListsPaginator:
-    return boto3.client("fms").get_paginator("list_apps_lists")
+    return Session().client("fms").get_paginator("list_apps_lists")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `ListAppsListsPaginator.paginate` method:
 `ListAppsListsPaginator.paginate` returns
 `_PageIterator`\[[ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef)\].
 
+<a id="listcompliancestatuspaginator"></a>
+
 ## ListComplianceStatusPaginator
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_fms.paginator import ListComplianceStatusPaginator
 
 def get_list_compliance_status_paginator() -> ListComplianceStatusPaginator:
-    return boto3.client("fms").get_paginator("list_compliance_status")
+    return Session().client("fms").get_paginator("list_compliance_status")
 ```
 
 Boto3 documentation:
@@ -65,6 +75,8 @@ Arguments for `ListComplianceStatusPaginator.paginate` method:
 `ListComplianceStatusPaginator.paginate` returns
 `_PageIterator`\[[ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef)\].
 
+<a id="listmemberaccountspaginator"></a>
+
 ## ListMemberAccountsPaginator
 
 Type annotations for
@@ -73,10 +85,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_fms.paginator import ListMemberAccountsPaginator
 
 def get_list_member_accounts_paginator() -> ListMemberAccountsPaginator:
-    return boto3.client("fms").get_paginator("list_member_accounts")
+    return Session().client("fms").get_paginator("list_member_accounts")
 ```
 
 Boto3 documentation:
@@ -90,6 +104,8 @@ Arguments for `ListMemberAccountsPaginator.paginate` method:
 `ListMemberAccountsPaginator.paginate` returns
 `_PageIterator`\[[ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef)\].
 
+<a id="listpoliciespaginator"></a>
+
 ## ListPoliciesPaginator
 
 Type annotations for `boto3.client("fms").get_paginator("list_policies")`.
@@ -97,10 +113,12 @@ Type annotations for `boto3.client("fms").get_paginator("list_policies")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_fms.paginator import ListPoliciesPaginator
 
 def get_list_policies_paginator() -> ListPoliciesPaginator:
-    return boto3.client("fms").get_paginator("list_policies")
+    return Session().client("fms").get_paginator("list_policies")
 ```
 
 Boto3 documentation:
@@ -114,6 +132,8 @@ Arguments for `ListPoliciesPaginator.paginate` method:
 `ListPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
 
+<a id="listprotocolslistspaginator"></a>
+
 ## ListProtocolsListsPaginator
 
 Type annotations for
@@ -122,10 +142,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_fms.paginator import ListProtocolsListsPaginator
 
 def get_list_protocols_lists_paginator() -> ListProtocolsListsPaginator:
-    return boto3.client("fms").get_paginator("list_protocols_lists")
+    return Session().client("fms").get_paginator("list_protocols_lists")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="lexruntimeserviceclient-for-boto3-lexruntimeservice-module"></a>
+
 # LexRuntimeServiceClient for boto3 LexRuntimeService module
 
 > [Index](..) > [LexRuntimeService](.) > LexRuntimeServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
 type annotations stubs module
-[mypy_boto3_lex_runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
+[mypy-boto3-lex-runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
 
 - [LexRuntimeServiceClient for boto3 LexRuntimeService module](#lexruntimeserviceclient-for-boto3-lexruntimeservice-module)
   - [LexRuntimeServiceClient](#lexruntimeserviceclient)
@@ -20,6 +22,8 @@ type annotations stubs module
     - [post_text](#post_text)
     - [put_session](#put_session)
 
+<a id="lexruntimeserviceclient"></a>
+
 ## LexRuntimeServiceClient
 
 Type annotations for `boto3.client("lex-runtime")`
@@ -27,14 +31,17 @@ Type annotations for `boto3.client("lex-runtime")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_lex_runtime.client import LexRuntimeServiceClient
 
 def get_lex-runtime_client() -> LexRuntimeServiceClient:
-    return boto3.client("lex-runtime")
+    return Session().client("lex-runtime")
 ```
 
 Boto3 documentation:
 [LexRuntimeService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -63,7 +70,11 @@ Exceptions:
 - `Exceptions.RequestTimeoutException`
 - `Exceptions.UnsupportedMediaTypeException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -75,6 +86,8 @@ Boto3 documentation:
 [LexRuntimeService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -90,6 +103,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_session"></a>
 
 ### delete_session
 
@@ -112,6 +127,8 @@ Keyword-only arguments:
 Returns
 [DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -130,6 +147,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_session"></a>
 
 ### get_session
 
@@ -151,6 +170,8 @@ Keyword-only arguments:
 - `checkpointLabelFilter`: `str`
 
 Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
+
+<a id="post_content"></a>
 
 ### post_content
 
@@ -180,6 +201,8 @@ Keyword-only arguments:
 Returns
 [PostContentResponseTypeDef](./type_defs.md#postcontentresponsetypedef).
 
+<a id="post_text"></a>
+
 ### post_text
 
 Sends user input to Amazon Lex.
@@ -204,6 +227,8 @@ Keyword-only arguments:
   `Sequence`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
 Returns [PostTextResponseTypeDef](./type_defs.md#posttextresponsetypedef).
+
+<a id="put_session"></a>
 
 ### put_session
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-iotanalytics-module"></a>
+
 # Literals for boto3 IoTAnalytics module
 
 > [Index](..) > [IoTAnalytics](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module
-[mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
+[mypy-boto3-iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
 - [Literals for boto3 IoTAnalytics module](#literals-for-boto3-iotanalytics-module)
   - [ChannelStatusType](#channelstatustype)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="channelstatustype"></a>
+
 ## ChannelStatusType
 
 ```python
@@ -37,6 +41,8 @@ Values:
 - `CREATING`
 - `DELETING`
 
+<a id="computetypetype"></a>
+
 ## ComputeTypeType
 
 ```python
@@ -48,6 +54,8 @@ Values:
 - `ACU_1`
 - `ACU_2`
 
+<a id="datasetactiontypetype"></a>
+
 ## DatasetActionTypeType
 
 ```python
@@ -58,6 +66,8 @@ Values:
 
 - `CONTAINER`
 - `QUERY`
+
+<a id="datasetcontentstatetype"></a>
 
 ## DatasetContentStateType
 
@@ -71,6 +81,8 @@ Values:
 - `FAILED`
 - `SUCCEEDED`
 
+<a id="datasetstatustype"></a>
+
 ## DatasetStatusType
 
 ```python
@@ -82,6 +94,8 @@ Values:
 - `ACTIVE`
 - `CREATING`
 - `DELETING`
+
+<a id="datastorestatustype"></a>
 
 ## DatastoreStatusType
 
@@ -95,6 +109,8 @@ Values:
 - `CREATING`
 - `DELETING`
 
+<a id="fileformattypetype"></a>
+
 ## FileFormatTypeType
 
 ```python
@@ -106,6 +122,8 @@ Values:
 - `JSON`
 - `PARQUET`
 
+<a id="listchannelspaginatorname"></a>
+
 ## ListChannelsPaginatorName
 
 ```python
@@ -115,6 +133,8 @@ from mypy_boto3_iotanalytics.literals import ListChannelsPaginatorName
 Values:
 
 - `list_channels`
+
+<a id="listdatasetcontentspaginatorname"></a>
 
 ## ListDatasetContentsPaginatorName
 
@@ -126,6 +146,8 @@ Values:
 
 - `list_dataset_contents`
 
+<a id="listdatasetspaginatorname"></a>
+
 ## ListDatasetsPaginatorName
 
 ```python
@@ -135,6 +157,8 @@ from mypy_boto3_iotanalytics.literals import ListDatasetsPaginatorName
 Values:
 
 - `list_datasets`
+
+<a id="listdatastorespaginatorname"></a>
 
 ## ListDatastoresPaginatorName
 
@@ -146,6 +170,8 @@ Values:
 
 - `list_datastores`
 
+<a id="listpipelinespaginatorname"></a>
+
 ## ListPipelinesPaginatorName
 
 ```python
@@ -156,6 +182,8 @@ Values:
 
 - `list_pipelines`
 
+<a id="loggingleveltype"></a>
+
 ## LoggingLevelType
 
 ```python
@@ -165,6 +193,8 @@ from mypy_boto3_iotanalytics.literals import LoggingLevelType
 Values:
 
 - `ERROR`
+
+<a id="reprocessingstatustype"></a>
 
 ## ReprocessingStatusType
 
@@ -178,6 +208,8 @@ Values:
 - `FAILED`
 - `RUNNING`
 - `SUCCEEDED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -486,6 +518,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-cloudhsm-module"></a>
+
 # Paginators for boto3 CloudHSM module
 
 > [Index](..) > [CloudHSM](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module
-[mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
+[mypy-boto3-cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
 - [Paginators for boto3 CloudHSM module](#paginators-for-boto3-cloudhsm-module)
   - [ListHapgsPaginator](#listhapgspaginator)
   - [ListHsmsPaginator](#listhsmspaginator)
   - [ListLunaClientsPaginator](#listlunaclientspaginator)
+
+<a id="listhapgspaginator"></a>
 
 ## ListHapgsPaginator
 
@@ -19,10 +23,12 @@ Type annotations for `boto3.client("cloudhsm").get_paginator("list_hapgs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudhsm.paginator import ListHapgsPaginator
 
 def get_list_hapgs_paginator() -> ListHapgsPaginator:
-    return boto3.client("cloudhsm").get_paginator("list_hapgs")
+    return Session().client("cloudhsm").get_paginator("list_hapgs")
 ```
 
 Boto3 documentation:
@@ -36,6 +42,8 @@ Arguments for `ListHapgsPaginator.paginate` method:
 `ListHapgsPaginator.paginate` returns
 `_PageIterator`\[[ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef)\].
 
+<a id="listhsmspaginator"></a>
+
 ## ListHsmsPaginator
 
 Type annotations for `boto3.client("cloudhsm").get_paginator("list_hsms")`.
@@ -43,10 +51,12 @@ Type annotations for `boto3.client("cloudhsm").get_paginator("list_hsms")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudhsm.paginator import ListHsmsPaginator
 
 def get_list_hsms_paginator() -> ListHsmsPaginator:
-    return boto3.client("cloudhsm").get_paginator("list_hsms")
+    return Session().client("cloudhsm").get_paginator("list_hsms")
 ```
 
 Boto3 documentation:
@@ -60,6 +70,8 @@ Arguments for `ListHsmsPaginator.paginate` method:
 `ListHsmsPaginator.paginate` returns
 `_PageIterator`\[[ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef)\].
 
+<a id="listlunaclientspaginator"></a>
+
 ## ListLunaClientsPaginator
 
 Type annotations for
@@ -68,10 +80,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudhsm.paginator import ListLunaClientsPaginator
 
 def get_list_luna_clients_paginator() -> ListLunaClientsPaginator:
-    return boto3.client("cloudhsm").get_paginator("list_luna_clients")
+    return Session().client("cloudhsm").get_paginator("list_luna_clients")
 ```
 
 Boto3 documentation:

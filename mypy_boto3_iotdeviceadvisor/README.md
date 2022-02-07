@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iotdeviceadvisor-module"></a>
+
 # Type annotations for boto3 IoTDeviceAdvisor module
 
 > [Index](..) > IoTDeviceAdvisor
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
 type annotations stubs module
-[mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
+[mypy-boto3-iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iotdeviceadvisor]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iotdeviceadvisor]'
+
+# standalone installation
 pip install mypy-boto3-iotdeviceadvisor
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-iotdeviceadvisor
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="iotdeviceadvisorclient"></a>
 
 ## IoTDeviceAdvisorClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iotdeviceadvisor.client import IoTDeviceAdvisorClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -49,6 +63,8 @@ from mypy_boto3_iotdeviceadvisor.client import IoTDeviceAdvisorClient
 - [untag_resource](./client.md#untag_resource)
 - [update_suite_definition](./client.md#update_suite_definition)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoTDeviceAdvisorClient [exceptions](./client.md#exceptions)
@@ -58,6 +74,8 @@ IoTDeviceAdvisorClient [exceptions](./client.md#exceptions)
 - InternalServerException
 - ResourceNotFoundException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -72,6 +90,8 @@ from mypy_boto3_iotdeviceadvisor.literals import StatusType, ...
 - [StatusType](./literals.md#statustype)
 - [SuiteRunStatusType](./literals.md#suiterunstatustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

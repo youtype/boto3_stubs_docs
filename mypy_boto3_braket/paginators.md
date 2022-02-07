@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-braket-module"></a>
+
 # Paginators for boto3 Braket module
 
 > [Index](..) > [Braket](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
 type annotations stubs module
-[mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
+[mypy-boto3-braket](https://pypi.org/project/mypy-boto3-braket/).
 
 - [Paginators for boto3 Braket module](#paginators-for-boto3-braket-module)
   - [SearchDevicesPaginator](#searchdevicespaginator)
   - [SearchJobsPaginator](#searchjobspaginator)
   - [SearchQuantumTasksPaginator](#searchquantumtaskspaginator)
+
+<a id="searchdevicespaginator"></a>
 
 ## SearchDevicesPaginator
 
@@ -19,10 +23,12 @@ Type annotations for `boto3.client("braket").get_paginator("search_devices")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_braket.paginator import SearchDevicesPaginator
 
 def get_search_devices_paginator() -> SearchDevicesPaginator:
-    return boto3.client("braket").get_paginator("search_devices")
+    return Session().client("braket").get_paginator("search_devices")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `SearchDevicesPaginator.paginate` method:
 `SearchDevicesPaginator.paginate` returns
 `_PageIterator`\[[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef)\].
 
+<a id="searchjobspaginator"></a>
+
 ## SearchJobsPaginator
 
 Type annotations for `boto3.client("braket").get_paginator("search_jobs")`.
@@ -46,10 +54,12 @@ Type annotations for `boto3.client("braket").get_paginator("search_jobs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_braket.paginator import SearchJobsPaginator
 
 def get_search_jobs_paginator() -> SearchJobsPaginator:
-    return boto3.client("braket").get_paginator("search_jobs")
+    return Session().client("braket").get_paginator("search_jobs")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `SearchJobsPaginator.paginate` method:
 `SearchJobsPaginator.paginate` returns
 `_PageIterator`\[[SearchJobsResponseTypeDef](./type_defs.md#searchjobsresponsetypedef)\].
 
+<a id="searchquantumtaskspaginator"></a>
+
 ## SearchQuantumTasksPaginator
 
 Type annotations for
@@ -74,10 +86,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_braket.paginator import SearchQuantumTasksPaginator
 
 def get_search_quantum_tasks_paginator() -> SearchQuantumTasksPaginator:
-    return boto3.client("braket").get_paginator("search_quantum_tasks")
+    return Session().client("braket").get_paginator("search_quantum_tasks")
 ```
 
 Boto3 documentation:

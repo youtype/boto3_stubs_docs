@@ -1,3 +1,5 @@
+<a id="docdbclient-for-boto3-docdb-module"></a>
+
 # DocDBClient for boto3 DocDB module
 
 > [Index](..) > [DocDB](.) > DocDBClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
 type annotations stubs module
-[mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
+[mypy-boto3-docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
 - [DocDBClient for boto3 DocDB module](#docdbclient-for-boto3-docdb-module)
   - [DocDBClient](#docdbclient)
@@ -70,6 +72,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="docdbclient"></a>
+
 ## DocDBClient
 
 Type annotations for `boto3.client("docdb")`
@@ -77,14 +81,17 @@ Type annotations for `boto3.client("docdb")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_docdb.client import DocDBClient
 
 def get_docdb_client() -> DocDBClient:
-    return boto3.client("docdb")
+    return Session().client("docdb")
 ```
 
 Boto3 documentation:
 [DocDB.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -159,7 +166,11 @@ Exceptions:
 - `Exceptions.SubscriptionCategoryNotFoundFault`
 - `Exceptions.SubscriptionNotFoundFault`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -171,6 +182,8 @@ Boto3 documentation:
 [DocDB.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_source_identifier_to_subscription"></a>
 
 ### add_source_identifier_to_subscription
 
@@ -193,6 +206,8 @@ Keyword-only arguments:
 Returns
 [AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef).
 
+<a id="add_tags_to_resource"></a>
+
 ### add_tags_to_resource
 
 Adds metadata tags to an Amazon DocumentDB resource.
@@ -209,6 +224,8 @@ Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="apply_pending_maintenance_action"></a>
 
 ### apply_pending_maintenance_action
 
@@ -233,6 +250,8 @@ Keyword-only arguments:
 Returns
 [ApplyPendingMaintenanceActionResultTypeDef](./type_defs.md#applypendingmaintenanceactionresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -247,6 +266,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="copy_db_cluster_parameter_group"></a>
 
 ### copy_db_cluster_parameter_group
 
@@ -270,6 +291,8 @@ Keyword-only arguments:
 
 Returns
 [CopyDBClusterParameterGroupResultTypeDef](./type_defs.md#copydbclusterparametergroupresulttypedef).
+
+<a id="copy_db_cluster_snapshot"></a>
 
 ### copy_db_cluster_snapshot
 
@@ -295,6 +318,8 @@ Keyword-only arguments:
 
 Returns
 [CopyDBClusterSnapshotResultTypeDef](./type_defs.md#copydbclustersnapshotresulttypedef).
+
+<a id="create_db_cluster"></a>
 
 ### create_db_cluster
 
@@ -335,6 +360,8 @@ Keyword-only arguments:
 Returns
 [CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef).
 
+<a id="create_db_cluster_parameter_group"></a>
+
 ### create_db_cluster_parameter_group
 
 Creates a new cluster parameter group.
@@ -358,6 +385,8 @@ Keyword-only arguments:
 Returns
 [CreateDBClusterParameterGroupResultTypeDef](./type_defs.md#createdbclusterparametergroupresulttypedef).
 
+<a id="create_db_cluster_snapshot"></a>
+
 ### create_db_cluster_snapshot
 
 Creates a snapshot of a cluster.
@@ -378,6 +407,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDBClusterSnapshotResultTypeDef](./type_defs.md#createdbclustersnapshotresulttypedef).
+
+<a id="create_db_instance"></a>
 
 ### create_db_instance
 
@@ -406,6 +437,8 @@ Keyword-only arguments:
 Returns
 [CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef).
 
+<a id="create_db_subnet_group"></a>
+
 ### create_db_subnet_group
 
 Creates a new subnet group.
@@ -427,6 +460,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDBSubnetGroupResultTypeDef](./type_defs.md#createdbsubnetgroupresulttypedef).
+
+<a id="create_event_subscription"></a>
 
 ### create_event_subscription
 
@@ -452,6 +487,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
+
+<a id="create_global_cluster"></a>
 
 ### create_global_cluster
 
@@ -479,6 +516,8 @@ Keyword-only arguments:
 Returns
 [CreateGlobalClusterResultTypeDef](./type_defs.md#createglobalclusterresulttypedef).
 
+<a id="delete_db_cluster"></a>
+
 ### delete_db_cluster
 
 Deletes a previously provisioned cluster.
@@ -500,6 +539,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBClusterResultTypeDef](./type_defs.md#deletedbclusterresulttypedef).
 
+<a id="delete_db_cluster_parameter_group"></a>
+
 ### delete_db_cluster_parameter_group
 
 Deletes a specified cluster parameter group.
@@ -516,6 +557,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
+
+<a id="delete_db_cluster_snapshot"></a>
 
 ### delete_db_cluster_snapshot
 
@@ -536,6 +579,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBClusterSnapshotResultTypeDef](./type_defs.md#deletedbclustersnapshotresulttypedef).
 
+<a id="delete_db_instance"></a>
+
 ### delete_db_instance
 
 Deletes a previously provisioned instance.
@@ -555,6 +600,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBInstanceResultTypeDef](./type_defs.md#deletedbinstanceresulttypedef).
 
+<a id="delete_db_subnet_group"></a>
+
 ### delete_db_subnet_group
 
 Deletes a subnet group.
@@ -570,6 +617,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBSubnetGroupName`: `str` *(required)*
+
+<a id="delete_event_subscription"></a>
 
 ### delete_event_subscription
 
@@ -590,6 +639,8 @@ Keyword-only arguments:
 Returns
 [DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef).
 
+<a id="delete_global_cluster"></a>
+
 ### delete_global_cluster
 
 Deletes a global cluster.
@@ -608,6 +659,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteGlobalClusterResultTypeDef](./type_defs.md#deleteglobalclusterresulttypedef).
+
+<a id="describe_certificates"></a>
 
 ### describe_certificates
 
@@ -631,6 +684,8 @@ Keyword-only arguments:
 
 Returns [CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef).
 
+<a id="describe_db_cluster_parameter_groups"></a>
+
 ### describe_db_cluster_parameter_groups
 
 Returns a list of `DBClusterParameterGroup` descriptions.
@@ -653,6 +708,8 @@ Keyword-only arguments:
 
 Returns
 [DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef).
+
+<a id="describe_db_cluster_parameters"></a>
 
 ### describe_db_cluster_parameters
 
@@ -678,6 +735,8 @@ Keyword-only arguments:
 Returns
 [DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef).
 
+<a id="describe_db_cluster_snapshot_attributes"></a>
+
 ### describe_db_cluster_snapshot_attributes
 
 Returns a list of cluster snapshot attribute names and values for a manual DB
@@ -698,6 +757,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef).
+
+<a id="describe_db_cluster_snapshots"></a>
 
 ### describe_db_cluster_snapshots
 
@@ -726,6 +787,8 @@ Keyword-only arguments:
 Returns
 [DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef).
 
+<a id="describe_db_clusters"></a>
+
 ### describe_db_clusters
 
 Returns information about provisioned Amazon DocumentDB clusters.
@@ -746,6 +809,8 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns [DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef).
+
+<a id="describe_db_engine_versions"></a>
 
 ### describe_db_engine_versions
 
@@ -775,6 +840,8 @@ Keyword-only arguments:
 Returns
 [DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef).
 
+<a id="describe_db_instances"></a>
+
 ### describe_db_instances
 
 Returns information about provisioned Amazon DocumentDB instances.
@@ -795,6 +862,8 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns [DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef).
+
+<a id="describe_db_subnet_groups"></a>
 
 ### describe_db_subnet_groups
 
@@ -817,6 +886,8 @@ Keyword-only arguments:
 
 Returns
 [DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef).
+
+<a id="describe_engine_default_cluster_parameters"></a>
 
 ### describe_engine_default_cluster_parameters
 
@@ -842,6 +913,8 @@ Keyword-only arguments:
 Returns
 [DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef).
 
+<a id="describe_event_categories"></a>
+
 ### describe_event_categories
 
 Displays a list of categories for all event source types, or, if specified, for
@@ -862,6 +935,8 @@ Keyword-only arguments:
 
 Returns
 [EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef).
+
+<a id="describe_event_subscriptions"></a>
 
 ### describe_event_subscriptions
 
@@ -885,6 +960,8 @@ Keyword-only arguments:
 
 Returns
 [EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
+
+<a id="describe_events"></a>
 
 ### describe_events
 
@@ -913,6 +990,8 @@ Keyword-only arguments:
 
 Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
+<a id="describe_global_clusters"></a>
+
 ### describe_global_clusters
 
 Returns information about Amazon DocumentDB global clusters.
@@ -934,6 +1013,8 @@ Keyword-only arguments:
 
 Returns
 [GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef).
+
+<a id="describe_orderable_db_instance_options"></a>
 
 ### describe_orderable_db_instance_options
 
@@ -962,6 +1043,8 @@ Keyword-only arguments:
 Returns
 [OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef).
 
+<a id="describe_pending_maintenance_actions"></a>
+
 ### describe_pending_maintenance_actions
 
 Returns a list of resources (for example, instances) that have at least one
@@ -986,6 +1069,8 @@ Keyword-only arguments:
 Returns
 [PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef).
 
+<a id="failover_db_cluster"></a>
+
 ### failover_db_cluster
 
 Forces a failover for a cluster.
@@ -1006,6 +1091,8 @@ Keyword-only arguments:
 Returns
 [FailoverDBClusterResultTypeDef](./type_defs.md#failoverdbclusterresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1023,6 +1110,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1042,6 +1131,8 @@ Keyword-only arguments:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
+
+<a id="modify_db_cluster"></a>
 
 ### modify_db_cluster
 
@@ -1075,6 +1166,8 @@ Keyword-only arguments:
 Returns
 [ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef).
 
+<a id="modify_db_cluster_parameter_group"></a>
+
 ### modify_db_cluster_parameter_group
 
 Modifies the parameters of a cluster parameter group.
@@ -1097,6 +1190,8 @@ Keyword-only arguments:
 
 Returns
 [DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
+
+<a id="modify_db_cluster_snapshot_attribute"></a>
 
 ### modify_db_cluster_snapshot_attribute
 
@@ -1121,6 +1216,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyDBClusterSnapshotAttributeResultTypeDef](./type_defs.md#modifydbclustersnapshotattributeresulttypedef).
+
+<a id="modify_db_instance"></a>
 
 ### modify_db_instance
 
@@ -1148,6 +1245,8 @@ Keyword-only arguments:
 Returns
 [ModifyDBInstanceResultTypeDef](./type_defs.md#modifydbinstanceresulttypedef).
 
+<a id="modify_db_subnet_group"></a>
+
 ### modify_db_subnet_group
 
 Modifies an existing subnet group.
@@ -1168,6 +1267,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyDBSubnetGroupResultTypeDef](./type_defs.md#modifydbsubnetgroupresulttypedef).
+
+<a id="modify_event_subscription"></a>
 
 ### modify_event_subscription
 
@@ -1192,6 +1293,8 @@ Keyword-only arguments:
 Returns
 [ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef).
 
+<a id="modify_global_cluster"></a>
+
 ### modify_global_cluster
 
 Modify a setting for an Amazon DocumentDB global cluster.
@@ -1213,6 +1316,8 @@ Keyword-only arguments:
 Returns
 [ModifyGlobalClusterResultTypeDef](./type_defs.md#modifyglobalclusterresulttypedef).
 
+<a id="reboot_db_instance"></a>
+
 ### reboot_db_instance
 
 You might need to reboot your instance, usually for maintenance reasons.
@@ -1233,6 +1338,8 @@ Keyword-only arguments:
 Returns
 [RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef).
 
+<a id="remove_from_global_cluster"></a>
+
 ### remove_from_global_cluster
 
 Detaches an Amazon DocumentDB secondary cluster from a global cluster.
@@ -1252,6 +1359,8 @@ Keyword-only arguments:
 
 Returns
 [RemoveFromGlobalClusterResultTypeDef](./type_defs.md#removefromglobalclusterresulttypedef).
+
+<a id="remove_source_identifier_from_subscription"></a>
 
 ### remove_source_identifier_from_subscription
 
@@ -1275,6 +1384,8 @@ Keyword-only arguments:
 Returns
 [RemoveSourceIdentifierFromSubscriptionResultTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresulttypedef).
 
+<a id="remove_tags_from_resource"></a>
+
 ### remove_tags_from_resource
 
 Removes metadata tags from an Amazon DocumentDB resource.
@@ -1291,6 +1402,8 @@ Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="reset_db_cluster_parameter_group"></a>
 
 ### reset_db_cluster_parameter_group
 
@@ -1314,6 +1427,8 @@ Keyword-only arguments:
 
 Returns
 [DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
+
+<a id="restore_db_cluster_from_snapshot"></a>
 
 ### restore_db_cluster_from_snapshot
 
@@ -1346,6 +1461,8 @@ Keyword-only arguments:
 Returns
 [RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef).
 
+<a id="restore_db_cluster_to_point_in_time"></a>
+
 ### restore_db_cluster_to_point_in_time
 
 Restores a cluster to an arbitrary point in time.
@@ -1376,6 +1493,8 @@ Keyword-only arguments:
 Returns
 [RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef).
 
+<a id="start_db_cluster"></a>
+
 ### start_db_cluster
 
 Restarts the stopped cluster that is specified by `DBClusterIdentifier`.
@@ -1395,6 +1514,8 @@ Keyword-only arguments:
 Returns
 [StartDBClusterResultTypeDef](./type_defs.md#startdbclusterresulttypedef).
 
+<a id="stop_db_cluster"></a>
+
 ### stop_db_cluster
 
 Stops the running cluster that is specified by `DBClusterIdentifier`.
@@ -1413,6 +1534,8 @@ Keyword-only arguments:
 
 Returns
 [StopDBClusterResultTypeDef](./type_defs.md#stopdbclusterresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -1445,6 +1568,8 @@ overloads.
   [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
 - `client.get_paginator("describe_pending_maintenance_actions")` ->
   [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

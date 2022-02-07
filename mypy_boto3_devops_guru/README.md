@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-devopsguru-module"></a>
+
 # Type annotations for boto3 DevOpsGuru module
 
 > [Index](..) > DevOpsGuru
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [DevOpsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru)
 type annotations stubs module
-[mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
+[mypy-boto3-devops-guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[devops-guru]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[devops-guru]'
+
+# standalone installation
 pip install mypy-boto3-devops-guru
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-devops-guru
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="devopsguruclient"></a>
+
 ## DevOpsGuruClient
 
 Type annotations for `boto3.client("devops-guru")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_devops_guru.client import DevOpsGuruClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -63,6 +77,8 @@ from mypy_boto3_devops_guru.client import DevOpsGuruClient
 - [update_resource_collection](./client.md#update_resource_collection)
 - [update_service_integration](./client.md#update_service_integration)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 DevOpsGuruClient [exceptions](./client.md#exceptions)
@@ -76,6 +92,8 @@ DevOpsGuruClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -84,7 +102,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.paginators import DescribeOrganizationResourceCollectionHealthPaginator, ...
+from mypy_boto3_devops_guru.paginator import DescribeOrganizationResourceCollectionHealthPaginator, ...
 ```
 
 - [DescribeOrganizationResourceCollectionHealthPaginator](./paginators.md#describeorganizationresourcecollectionhealthpaginator)
@@ -99,6 +117,8 @@ from mypy_boto3_devops_guru.paginators import DescribeOrganizationResourceCollec
 - [ListRecommendationsPaginator](./paginators.md#listrecommendationspaginator)
 - [SearchInsightsPaginator](./paginators.md#searchinsightspaginator)
 - [SearchOrganizationInsightsPaginator](./paginators.md#searchorganizationinsightspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -143,6 +163,8 @@ from mypy_boto3_devops_guru.literals import AnomalySeverityType, ...
 - [UpdateResourceCollectionActionType](./literals.md#updateresourcecollectionactiontype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

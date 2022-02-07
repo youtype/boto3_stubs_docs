@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-codegurureviewer-module"></a>
+
 # Paginators for boto3 CodeGuruReviewer module
 
 > [Index](..) > [CodeGuruReviewer](.) > Paginators
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
 type annotations stubs module
-[mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
+[mypy-boto3-codeguru-reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 - [Paginators for boto3 CodeGuruReviewer module](#paginators-for-boto3-codegurureviewer-module)
   - [ListRepositoryAssociationsPaginator](#listrepositoryassociationspaginator)
+
+<a id="listrepositoryassociationspaginator"></a>
 
 ## ListRepositoryAssociationsPaginator
 
@@ -18,10 +22,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codeguru_reviewer.paginator import ListRepositoryAssociationsPaginator
 
 def get_list_repository_associations_paginator() -> ListRepositoryAssociationsPaginator:
-    return boto3.client("codeguru-reviewer").get_paginator("list_repository_associations")
+    return Session().client("codeguru-reviewer").get_paginator("list_repository_associations")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ecrpublic-module"></a>
+
 # Typed dictionaries for boto3 ECRPublic module
 
 > [Index](..) > [ECRPublic](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
 type annotations stubs module
-[mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
+[mypy-boto3-ecr-public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
 - [Typed dictionaries for boto3 ECRPublic module](#typed-dictionaries-for-boto3-ecrpublic-module)
   - [AuthorizationDataTypeDef](#authorizationdatatypedef)
@@ -69,6 +71,8 @@ type annotations stubs module
   - [UploadLayerPartRequestRequestTypeDef](#uploadlayerpartrequestrequesttypedef)
   - [UploadLayerPartResponseTypeDef](#uploadlayerpartresponsetypedef)
 
+<a id="authorizationdatatypedef"></a>
+
 ## AuthorizationDataTypeDef
 
 ```python
@@ -79,6 +83,8 @@ Optional fields:
 
 - `authorizationToken`: `str`
 - `expiresAt`: `datetime`
+
+<a id="batchchecklayeravailabilityrequestrequesttypedef"></a>
 
 ## BatchCheckLayerAvailabilityRequestRequestTypeDef
 
@@ -95,6 +101,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="batchchecklayeravailabilityresponsetypedef"></a>
+
 ## BatchCheckLayerAvailabilityResponseTypeDef
 
 ```python
@@ -108,6 +116,8 @@ Required fields:
   `List`\[[LayerFailureTypeDef](./type_defs.md#layerfailuretypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="batchdeleteimagerequestrequesttypedef"></a>
 
 ## BatchDeleteImageRequestRequestTypeDef
 
@@ -125,6 +135,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="batchdeleteimageresponsetypedef"></a>
+
 ## BatchDeleteImageResponseTypeDef
 
 ```python
@@ -139,6 +151,8 @@ Required fields:
   `List`\[[ImageFailureTypeDef](./type_defs.md#imagefailuretypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="completelayeruploadrequestrequesttypedef"></a>
 
 ## CompleteLayerUploadRequestRequestTypeDef
 
@@ -156,6 +170,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="completelayeruploadresponsetypedef"></a>
+
 ## CompleteLayerUploadResponseTypeDef
 
 ```python
@@ -170,6 +186,8 @@ Required fields:
 - `layerDigest`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrepositoryrequestrequesttypedef"></a>
 
 ## CreateRepositoryRequestRequestTypeDef
 
@@ -187,6 +205,8 @@ Optional fields:
   [RepositoryCatalogDataInputTypeDef](./type_defs.md#repositorycatalogdatainputtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createrepositoryresponsetypedef"></a>
+
 ## CreateRepositoryResponseTypeDef
 
 ```python
@@ -200,6 +220,8 @@ Required fields:
   [RepositoryCatalogDataTypeDef](./type_defs.md#repositorycatalogdatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleterepositorypolicyrequestrequesttypedef"></a>
 
 ## DeleteRepositoryPolicyRequestRequestTypeDef
 
@@ -215,6 +237,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="deleterepositorypolicyresponsetypedef"></a>
+
 ## DeleteRepositoryPolicyResponseTypeDef
 
 ```python
@@ -228,6 +252,8 @@ Required fields:
 - `policyText`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleterepositoryrequestrequesttypedef"></a>
 
 ## DeleteRepositoryRequestRequestTypeDef
 
@@ -244,6 +270,8 @@ Optional fields:
 - `registryId`: `str`
 - `force`: `bool`
 
+<a id="deleterepositoryresponsetypedef"></a>
+
 ## DeleteRepositoryResponseTypeDef
 
 ```python
@@ -255,6 +283,8 @@ Required fields:
 - `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeimagetagsrequestrequesttypedef"></a>
 
 ## DescribeImageTagsRequestRequestTypeDef
 
@@ -272,6 +302,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describeimagetagsresponsetypedef"></a>
+
 ## DescribeImageTagsResponseTypeDef
 
 ```python
@@ -285,6 +317,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeimagesrequestrequesttypedef"></a>
 
 ## DescribeImagesRequestRequestTypeDef
 
@@ -304,6 +338,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describeimagesresponsetypedef"></a>
+
 ## DescribeImagesResponseTypeDef
 
 ```python
@@ -318,6 +354,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeregistriesrequestrequesttypedef"></a>
+
 ## DescribeRegistriesRequestRequestTypeDef
 
 ```python
@@ -328,6 +366,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="describeregistriesresponsetypedef"></a>
 
 ## DescribeRegistriesResponseTypeDef
 
@@ -342,6 +382,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerepositoriesrequestrequesttypedef"></a>
+
 ## DescribeRepositoriesRequestRequestTypeDef
 
 ```python
@@ -354,6 +396,8 @@ Optional fields:
 - `repositoryNames`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="describerepositoriesresponsetypedef"></a>
 
 ## DescribeRepositoriesResponseTypeDef
 
@@ -369,6 +413,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getauthorizationtokenresponsetypedef"></a>
+
 ## GetAuthorizationTokenResponseTypeDef
 
 ```python
@@ -382,6 +428,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getregistrycatalogdataresponsetypedef"></a>
+
 ## GetRegistryCatalogDataResponseTypeDef
 
 ```python
@@ -394,6 +442,8 @@ Required fields:
   [RegistryCatalogDataTypeDef](./type_defs.md#registrycatalogdatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrepositorycatalogdatarequestrequesttypedef"></a>
 
 ## GetRepositoryCatalogDataRequestRequestTypeDef
 
@@ -409,6 +459,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="getrepositorycatalogdataresponsetypedef"></a>
+
 ## GetRepositoryCatalogDataResponseTypeDef
 
 ```python
@@ -421,6 +473,8 @@ Required fields:
   [RepositoryCatalogDataTypeDef](./type_defs.md#repositorycatalogdatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrepositorypolicyrequestrequesttypedef"></a>
 
 ## GetRepositoryPolicyRequestRequestTypeDef
 
@@ -436,6 +490,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="getrepositorypolicyresponsetypedef"></a>
+
 ## GetRepositoryPolicyResponseTypeDef
 
 ```python
@@ -449,6 +505,8 @@ Required fields:
 - `policyText`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="imagedetailtypedef"></a>
 
 ## ImageDetailTypeDef
 
@@ -467,6 +525,8 @@ Optional fields:
 - `imageManifestMediaType`: `str`
 - `artifactMediaType`: `str`
 
+<a id="imagefailuretypedef"></a>
+
 ## ImageFailureTypeDef
 
 ```python
@@ -479,6 +539,8 @@ Optional fields:
 - `failureCode`: [ImageFailureCodeType](./literals.md#imagefailurecodetype)
 - `failureReason`: `str`
 
+<a id="imageidentifiertypedef"></a>
+
 ## ImageIdentifierTypeDef
 
 ```python
@@ -489,6 +551,8 @@ Optional fields:
 
 - `imageDigest`: `str`
 - `imageTag`: `str`
+
+<a id="imagetagdetailtypedef"></a>
 
 ## ImageTagDetailTypeDef
 
@@ -502,6 +566,8 @@ Optional fields:
 - `createdAt`: `datetime`
 - `imageDetail`:
   [ReferencedImageDetailTypeDef](./type_defs.md#referencedimagedetailtypedef)
+
+<a id="imagetypedef"></a>
 
 ## ImageTypeDef
 
@@ -517,6 +583,8 @@ Optional fields:
 - `imageManifest`: `str`
 - `imageManifestMediaType`: `str`
 
+<a id="initiatelayeruploadrequestrequesttypedef"></a>
+
 ## InitiateLayerUploadRequestRequestTypeDef
 
 ```python
@@ -531,6 +599,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="initiatelayeruploadresponsetypedef"></a>
+
 ## InitiateLayerUploadResponseTypeDef
 
 ```python
@@ -544,6 +614,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="layerfailuretypedef"></a>
+
 ## LayerFailureTypeDef
 
 ```python
@@ -555,6 +627,8 @@ Optional fields:
 - `layerDigest`: `str`
 - `failureCode`: [LayerFailureCodeType](./literals.md#layerfailurecodetype)
 - `failureReason`: `str`
+
+<a id="layertypedef"></a>
 
 ## LayerTypeDef
 
@@ -570,6 +644,8 @@ Optional fields:
 - `layerSize`: `int`
 - `mediaType`: `str`
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -579,6 +655,8 @@ from mypy_boto3_ecr_public.type_defs import ListTagsForResourceRequestRequestTyp
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -592,6 +670,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -603,6 +683,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putimagerequestrequesttypedef"></a>
 
 ## PutImageRequestRequestTypeDef
 
@@ -622,6 +704,8 @@ Optional fields:
 - `imageTag`: `str`
 - `imageDigest`: `str`
 
+<a id="putimageresponsetypedef"></a>
+
 ## PutImageResponseTypeDef
 
 ```python
@@ -634,6 +718,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putregistrycatalogdatarequestrequesttypedef"></a>
+
 ## PutRegistryCatalogDataRequestRequestTypeDef
 
 ```python
@@ -643,6 +729,8 @@ from mypy_boto3_ecr_public.type_defs import PutRegistryCatalogDataRequestRequest
 Optional fields:
 
 - `displayName`: `str`
+
+<a id="putregistrycatalogdataresponsetypedef"></a>
 
 ## PutRegistryCatalogDataResponseTypeDef
 
@@ -656,6 +744,8 @@ Required fields:
   [RegistryCatalogDataTypeDef](./type_defs.md#registrycatalogdatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putrepositorycatalogdatarequestrequesttypedef"></a>
 
 ## PutRepositoryCatalogDataRequestRequestTypeDef
 
@@ -673,6 +763,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="putrepositorycatalogdataresponsetypedef"></a>
+
 ## PutRepositoryCatalogDataResponseTypeDef
 
 ```python
@@ -685,6 +777,8 @@ Required fields:
   [RepositoryCatalogDataTypeDef](./type_defs.md#repositorycatalogdatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="referencedimagedetailtypedef"></a>
 
 ## ReferencedImageDetailTypeDef
 
@@ -700,6 +794,8 @@ Optional fields:
 - `imageManifestMediaType`: `str`
 - `artifactMediaType`: `str`
 
+<a id="registryaliastypedef"></a>
+
 ## RegistryAliasTypeDef
 
 ```python
@@ -713,6 +809,8 @@ Required fields:
 - `primaryRegistryAlias`: `bool`
 - `defaultRegistryAlias`: `bool`
 
+<a id="registrycatalogdatatypedef"></a>
+
 ## RegistryCatalogDataTypeDef
 
 ```python
@@ -722,6 +820,8 @@ from mypy_boto3_ecr_public.type_defs import RegistryCatalogDataTypeDef
 Optional fields:
 
 - `displayName`: `str`
+
+<a id="registrytypedef"></a>
 
 ## RegistryTypeDef
 
@@ -738,6 +838,8 @@ Required fields:
 - `aliases`:
   `List`\[[RegistryAliasTypeDef](./type_defs.md#registryaliastypedef)\]
 
+<a id="repositorycatalogdatainputtypedef"></a>
+
 ## RepositoryCatalogDataInputTypeDef
 
 ```python
@@ -752,6 +854,8 @@ Optional fields:
 - `logoImageBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `aboutText`: `str`
 - `usageText`: `str`
+
+<a id="repositorycatalogdatatypedef"></a>
 
 ## RepositoryCatalogDataTypeDef
 
@@ -769,6 +873,8 @@ Optional fields:
 - `usageText`: `str`
 - `marketplaceCertified`: `bool`
 
+<a id="repositorytypedef"></a>
+
 ## RepositoryTypeDef
 
 ```python
@@ -783,6 +889,8 @@ Optional fields:
 - `repositoryUri`: `str`
 - `createdAt`: `datetime`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -796,6 +904,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="setrepositorypolicyrequestrequesttypedef"></a>
 
 ## SetRepositoryPolicyRequestRequestTypeDef
 
@@ -813,6 +923,8 @@ Optional fields:
 - `registryId`: `str`
 - `force`: `bool`
 
+<a id="setrepositorypolicyresponsetypedef"></a>
+
 ## SetRepositoryPolicyResponseTypeDef
 
 ```python
@@ -827,6 +939,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -837,6 +951,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -849,6 +965,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -859,6 +977,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="uploadlayerpartrequestrequesttypedef"></a>
 
 ## UploadLayerPartRequestRequestTypeDef
 
@@ -877,6 +997,8 @@ Required fields:
 Optional fields:
 
 - `registryId`: `str`
+
+<a id="uploadlayerpartresponsetypedef"></a>
 
 ## UploadLayerPartResponseTypeDef
 

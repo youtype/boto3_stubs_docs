@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-emr-module"></a>
+
 # Paginators for boto3 EMR module
 
 > [Index](..) > [EMR](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
 type annotations stubs module
-[mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
+[mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
 
 - [Paginators for boto3 EMR module](#paginators-for-boto3-emr-module)
   - [ListBootstrapActionsPaginator](#listbootstrapactionspaginator)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ListStudioSessionMappingsPaginator](#liststudiosessionmappingspaginator)
   - [ListStudiosPaginator](#liststudiospaginator)
 
+<a id="listbootstrapactionspaginator"></a>
+
 ## ListBootstrapActionsPaginator
 
 Type annotations for
@@ -27,10 +31,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.paginator import ListBootstrapActionsPaginator
 
 def get_list_bootstrap_actions_paginator() -> ListBootstrapActionsPaginator:
-    return boto3.client("emr").get_paginator("list_bootstrap_actions")
+    return Session().client("emr").get_paginator("list_bootstrap_actions")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `ListBootstrapActionsPaginator.paginate` method:
 `ListBootstrapActionsPaginator.paginate` returns
 `_PageIterator`\[[ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef)\].
 
+<a id="listclusterspaginator"></a>
+
 ## ListClustersPaginator
 
 Type annotations for `boto3.client("emr").get_paginator("list_clusters")`.
@@ -52,10 +60,12 @@ Type annotations for `boto3.client("emr").get_paginator("list_clusters")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.paginator import ListClustersPaginator
 
 def get_list_clusters_paginator() -> ListClustersPaginator:
-    return boto3.client("emr").get_paginator("list_clusters")
+    return Session().client("emr").get_paginator("list_clusters")
 ```
 
 Boto3 documentation:
@@ -73,6 +83,8 @@ Arguments for `ListClustersPaginator.paginate` method:
 `ListClustersPaginator.paginate` returns
 `_PageIterator`\[[ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef)\].
 
+<a id="listinstancefleetspaginator"></a>
+
 ## ListInstanceFleetsPaginator
 
 Type annotations for
@@ -81,10 +93,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.paginator import ListInstanceFleetsPaginator
 
 def get_list_instance_fleets_paginator() -> ListInstanceFleetsPaginator:
-    return boto3.client("emr").get_paginator("list_instance_fleets")
+    return Session().client("emr").get_paginator("list_instance_fleets")
 ```
 
 Boto3 documentation:
@@ -99,6 +113,8 @@ Arguments for `ListInstanceFleetsPaginator.paginate` method:
 `ListInstanceFleetsPaginator.paginate` returns
 `_PageIterator`\[[ListInstanceFleetsOutputTypeDef](./type_defs.md#listinstancefleetsoutputtypedef)\].
 
+<a id="listinstancegroupspaginator"></a>
+
 ## ListInstanceGroupsPaginator
 
 Type annotations for
@@ -107,10 +123,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.paginator import ListInstanceGroupsPaginator
 
 def get_list_instance_groups_paginator() -> ListInstanceGroupsPaginator:
-    return boto3.client("emr").get_paginator("list_instance_groups")
+    return Session().client("emr").get_paginator("list_instance_groups")
 ```
 
 Boto3 documentation:
@@ -125,6 +143,8 @@ Arguments for `ListInstanceGroupsPaginator.paginate` method:
 `ListInstanceGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListInstanceGroupsOutputTypeDef](./type_defs.md#listinstancegroupsoutputtypedef)\].
 
+<a id="listinstancespaginator"></a>
+
 ## ListInstancesPaginator
 
 Type annotations for `boto3.client("emr").get_paginator("list_instances")`.
@@ -132,10 +152,12 @@ Type annotations for `boto3.client("emr").get_paginator("list_instances")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.paginator import ListInstancesPaginator
 
 def get_list_instances_paginator() -> ListInstancesPaginator:
-    return boto3.client("emr").get_paginator("list_instances")
+    return Session().client("emr").get_paginator("list_instances")
 ```
 
 Boto3 documentation:
@@ -158,6 +180,8 @@ Arguments for `ListInstancesPaginator.paginate` method:
 `ListInstancesPaginator.paginate` returns
 `_PageIterator`\[[ListInstancesOutputTypeDef](./type_defs.md#listinstancesoutputtypedef)\].
 
+<a id="listnotebookexecutionspaginator"></a>
+
 ## ListNotebookExecutionsPaginator
 
 Type annotations for
@@ -166,10 +190,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.paginator import ListNotebookExecutionsPaginator
 
 def get_list_notebook_executions_paginator() -> ListNotebookExecutionsPaginator:
-    return boto3.client("emr").get_paginator("list_notebook_executions")
+    return Session().client("emr").get_paginator("list_notebook_executions")
 ```
 
 Boto3 documentation:
@@ -188,6 +214,8 @@ Arguments for `ListNotebookExecutionsPaginator.paginate` method:
 `ListNotebookExecutionsPaginator.paginate` returns
 `_PageIterator`\[[ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef)\].
 
+<a id="listsecurityconfigurationspaginator"></a>
+
 ## ListSecurityConfigurationsPaginator
 
 Type annotations for
@@ -196,10 +224,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.paginator import ListSecurityConfigurationsPaginator
 
 def get_list_security_configurations_paginator() -> ListSecurityConfigurationsPaginator:
-    return boto3.client("emr").get_paginator("list_security_configurations")
+    return Session().client("emr").get_paginator("list_security_configurations")
 ```
 
 Boto3 documentation:
@@ -213,6 +243,8 @@ Arguments for `ListSecurityConfigurationsPaginator.paginate` method:
 `ListSecurityConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[ListSecurityConfigurationsOutputTypeDef](./type_defs.md#listsecurityconfigurationsoutputtypedef)\].
 
+<a id="liststepspaginator"></a>
+
 ## ListStepsPaginator
 
 Type annotations for `boto3.client("emr").get_paginator("list_steps")`.
@@ -220,10 +252,12 @@ Type annotations for `boto3.client("emr").get_paginator("list_steps")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.paginator import ListStepsPaginator
 
 def get_list_steps_paginator() -> ListStepsPaginator:
-    return boto3.client("emr").get_paginator("list_steps")
+    return Session().client("emr").get_paginator("list_steps")
 ```
 
 Boto3 documentation:
@@ -240,6 +274,8 @@ Arguments for `ListStepsPaginator.paginate` method:
 `ListStepsPaginator.paginate` returns
 `_PageIterator`\[[ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef)\].
 
+<a id="liststudiosessionmappingspaginator"></a>
+
 ## ListStudioSessionMappingsPaginator
 
 Type annotations for
@@ -248,10 +284,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.paginator import ListStudioSessionMappingsPaginator
 
 def get_list_studio_session_mappings_paginator() -> ListStudioSessionMappingsPaginator:
-    return boto3.client("emr").get_paginator("list_studio_session_mappings")
+    return Session().client("emr").get_paginator("list_studio_session_mappings")
 ```
 
 Boto3 documentation:
@@ -267,6 +305,8 @@ Arguments for `ListStudioSessionMappingsPaginator.paginate` method:
 `ListStudioSessionMappingsPaginator.paginate` returns
 `_PageIterator`\[[ListStudioSessionMappingsOutputTypeDef](./type_defs.md#liststudiosessionmappingsoutputtypedef)\].
 
+<a id="liststudiospaginator"></a>
+
 ## ListStudiosPaginator
 
 Type annotations for `boto3.client("emr").get_paginator("list_studios")`.
@@ -274,10 +314,12 @@ Type annotations for `boto3.client("emr").get_paginator("list_studios")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.paginator import ListStudiosPaginator
 
 def get_list_studios_paginator() -> ListStudiosPaginator:
-    return boto3.client("emr").get_paginator("list_studios")
+    return Session().client("emr").get_paginator("list_studios")
 ```
 
 Boto3 documentation:

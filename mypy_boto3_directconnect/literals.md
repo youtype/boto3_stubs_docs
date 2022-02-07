@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-directconnect-module"></a>
+
 # Literals for boto3 DirectConnect module
 
 > [Index](..) > [DirectConnect](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
 type annotations stubs module
-[mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
+[mypy-boto3-directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
 - [Literals for boto3 DirectConnect module](#literals-for-boto3-directconnect-module)
   - [AddressFamilyType](#addressfamilytype)
@@ -30,6 +32,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="addressfamilytype"></a>
+
 ## AddressFamilyType
 
 ```python
@@ -40,6 +44,8 @@ Values:
 
 - `ipv4`
 - `ipv6`
+
+<a id="bgppeerstatetype"></a>
 
 ## BGPPeerStateType
 
@@ -55,6 +61,8 @@ Values:
 - `pending`
 - `verifying`
 
+<a id="bgpstatustype"></a>
+
 ## BGPStatusType
 
 ```python
@@ -66,6 +74,8 @@ Values:
 - `down`
 - `unknown`
 - `up`
+
+<a id="connectionstatetype"></a>
 
 ## ConnectionStateType
 
@@ -85,6 +95,8 @@ Values:
 - `requested`
 - `unknown`
 
+<a id="describedirectconnectgatewayassociationspaginatorname"></a>
+
 ## DescribeDirectConnectGatewayAssociationsPaginatorName
 
 ```python
@@ -94,6 +106,8 @@ from mypy_boto3_directconnect.literals import DescribeDirectConnectGatewayAssoci
 Values:
 
 - `describe_direct_connect_gateway_associations`
+
+<a id="describedirectconnectgatewayattachmentspaginatorname"></a>
 
 ## DescribeDirectConnectGatewayAttachmentsPaginatorName
 
@@ -105,6 +119,8 @@ Values:
 
 - `describe_direct_connect_gateway_attachments`
 
+<a id="describedirectconnectgatewayspaginatorname"></a>
+
 ## DescribeDirectConnectGatewaysPaginatorName
 
 ```python
@@ -114,6 +130,8 @@ from mypy_boto3_directconnect.literals import DescribeDirectConnectGatewaysPagin
 Values:
 
 - `describe_direct_connect_gateways`
+
+<a id="directconnectgatewayassociationproposalstatetype"></a>
 
 ## DirectConnectGatewayAssociationProposalStateType
 
@@ -126,6 +144,8 @@ Values:
 - `accepted`
 - `deleted`
 - `requested`
+
+<a id="directconnectgatewayassociationstatetype"></a>
 
 ## DirectConnectGatewayAssociationStateType
 
@@ -141,6 +161,8 @@ Values:
 - `disassociating`
 - `updating`
 
+<a id="directconnectgatewayattachmentstatetype"></a>
+
 ## DirectConnectGatewayAttachmentStateType
 
 ```python
@@ -154,6 +176,8 @@ Values:
 - `detached`
 - `detaching`
 
+<a id="directconnectgatewayattachmenttypetype"></a>
+
 ## DirectConnectGatewayAttachmentTypeType
 
 ```python
@@ -164,6 +188,8 @@ Values:
 
 - `PrivateVirtualInterface`
 - `TransitVirtualInterface`
+
+<a id="directconnectgatewaystatetype"></a>
 
 ## DirectConnectGatewayStateType
 
@@ -178,6 +204,8 @@ Values:
 - `deleting`
 - `pending`
 
+<a id="gatewaytypetype"></a>
+
 ## GatewayTypeType
 
 ```python
@@ -188,6 +216,8 @@ Values:
 
 - `transitGateway`
 - `virtualPrivateGateway`
+
+<a id="haslogicalredundancytype"></a>
 
 ## HasLogicalRedundancyType
 
@@ -200,6 +230,8 @@ Values:
 - `no`
 - `unknown`
 - `yes`
+
+<a id="interconnectstatetype"></a>
 
 ## InterconnectStateType
 
@@ -217,6 +249,8 @@ Values:
 - `requested`
 - `unknown`
 
+<a id="lagstatetype"></a>
+
 ## LagStateType
 
 ```python
@@ -233,6 +267,8 @@ Values:
 - `requested`
 - `unknown`
 
+<a id="loacontenttypetype"></a>
+
 ## LoaContentTypeType
 
 ```python
@@ -242,6 +278,8 @@ from mypy_boto3_directconnect.literals import LoaContentTypeType
 Values:
 
 - `application/pdf`
+
+<a id="nnipartnertypetype"></a>
 
 ## NniPartnerTypeType
 
@@ -254,6 +292,8 @@ Values:
 - `nonPartner`
 - `v1`
 - `v2`
+
+<a id="virtualinterfacestatetype"></a>
 
 ## VirtualInterfaceStateType
 
@@ -272,6 +312,8 @@ Values:
 - `rejected`
 - `unknown`
 - `verifying`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -580,6 +622,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

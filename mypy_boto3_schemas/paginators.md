@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-schemas-module"></a>
+
 # Paginators for boto3 Schemas module
 
 > [Index](..) > [Schemas](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
 type annotations stubs module
-[mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
+[mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 - [Paginators for boto3 Schemas module](#paginators-for-boto3-schemas-module)
   - [ListDiscoverersPaginator](#listdiscovererspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListSchemaVersionsPaginator](#listschemaversionspaginator)
   - [ListSchemasPaginator](#listschemaspaginator)
   - [SearchSchemasPaginator](#searchschemaspaginator)
+
+<a id="listdiscovererspaginator"></a>
 
 ## ListDiscoverersPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_schemas.paginator import ListDiscoverersPaginator
 
 def get_list_discoverers_paginator() -> ListDiscoverersPaginator:
-    return boto3.client("schemas").get_paginator("list_discoverers")
+    return Session().client("schemas").get_paginator("list_discoverers")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `ListDiscoverersPaginator.paginate` method:
 `ListDiscoverersPaginator.paginate` returns
 `_PageIterator`\[[ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef)\].
 
+<a id="listregistriespaginator"></a>
+
 ## ListRegistriesPaginator
 
 Type annotations for
@@ -49,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_schemas.paginator import ListRegistriesPaginator
 
 def get_list_registries_paginator() -> ListRegistriesPaginator:
-    return boto3.client("schemas").get_paginator("list_registries")
+    return Session().client("schemas").get_paginator("list_registries")
 ```
 
 Boto3 documentation:
@@ -68,6 +78,8 @@ Arguments for `ListRegistriesPaginator.paginate` method:
 `ListRegistriesPaginator.paginate` returns
 `_PageIterator`\[[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef)\].
 
+<a id="listschemaversionspaginator"></a>
+
 ## ListSchemaVersionsPaginator
 
 Type annotations for
@@ -76,10 +88,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_schemas.paginator import ListSchemaVersionsPaginator
 
 def get_list_schema_versions_paginator() -> ListSchemaVersionsPaginator:
-    return boto3.client("schemas").get_paginator("list_schema_versions")
+    return Session().client("schemas").get_paginator("list_schema_versions")
 ```
 
 Boto3 documentation:
@@ -95,6 +109,8 @@ Arguments for `ListSchemaVersionsPaginator.paginate` method:
 `ListSchemaVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef)\].
 
+<a id="listschemaspaginator"></a>
+
 ## ListSchemasPaginator
 
 Type annotations for `boto3.client("schemas").get_paginator("list_schemas")`.
@@ -102,10 +118,12 @@ Type annotations for `boto3.client("schemas").get_paginator("list_schemas")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_schemas.paginator import ListSchemasPaginator
 
 def get_list_schemas_paginator() -> ListSchemasPaginator:
-    return boto3.client("schemas").get_paginator("list_schemas")
+    return Session().client("schemas").get_paginator("list_schemas")
 ```
 
 Boto3 documentation:
@@ -121,6 +139,8 @@ Arguments for `ListSchemasPaginator.paginate` method:
 `ListSchemasPaginator.paginate` returns
 `_PageIterator`\[[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)\].
 
+<a id="searchschemaspaginator"></a>
+
 ## SearchSchemasPaginator
 
 Type annotations for `boto3.client("schemas").get_paginator("search_schemas")`.
@@ -128,10 +148,12 @@ Type annotations for `boto3.client("schemas").get_paginator("search_schemas")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_schemas.paginator import SearchSchemasPaginator
 
 def get_search_schemas_paginator() -> SearchSchemasPaginator:
-    return boto3.client("schemas").get_paginator("search_schemas")
+    return Session().client("schemas").get_paginator("search_schemas")
 ```
 
 Boto3 documentation:

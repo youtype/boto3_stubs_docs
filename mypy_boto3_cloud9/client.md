@@ -1,3 +1,5 @@
+<a id="cloud9client-for-boto3-cloud9-module"></a>
+
 # Cloud9Client for boto3 Cloud9 module
 
 > [Index](..) > [Cloud9](.) > Cloud9Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
 type annotations stubs module
-[mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+[mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 - [Cloud9Client for boto3 Cloud9 module](#cloud9client-for-boto3-cloud9-module)
   - [Cloud9Client](#cloud9client)
@@ -29,6 +31,8 @@ type annotations stubs module
     - [update_environment_membership](#update_environment_membership)
     - [get_paginator](#get_paginator)
 
+<a id="cloud9client"></a>
+
 ## Cloud9Client
 
 Type annotations for `boto3.client("cloud9")`
@@ -36,14 +40,17 @@ Type annotations for `boto3.client("cloud9")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cloud9.client import Cloud9Client
 
 def get_cloud9_client() -> Cloud9Client:
-    return boto3.client("cloud9")
+    return Session().client("cloud9")
 ```
 
 Boto3 documentation:
 [Cloud9.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -69,7 +76,11 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -81,6 +92,8 @@ Boto3 documentation:
 [Cloud9.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -96,6 +109,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_environment_ec2"></a>
 
 ### create_environment_ec2
 
@@ -128,6 +143,8 @@ Keyword-only arguments:
 Returns
 [CreateEnvironmentEC2ResultTypeDef](./type_defs.md#createenvironmentec2resulttypedef).
 
+<a id="create_environment_membership"></a>
+
 ### create_environment_membership
 
 Adds an environment member to an Cloud9 development environment.
@@ -151,6 +168,8 @@ Keyword-only arguments:
 Returns
 [CreateEnvironmentMembershipResultTypeDef](./type_defs.md#createenvironmentmembershipresulttypedef).
 
+<a id="delete_environment"></a>
+
 ### delete_environment
 
 Deletes an Cloud9 development environment.
@@ -168,6 +187,8 @@ Keyword-only arguments:
 - `environmentId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_environment_membership"></a>
 
 ### delete_environment_membership
 
@@ -188,6 +209,8 @@ Keyword-only arguments:
 - `userArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_environment_memberships"></a>
 
 ### describe_environment_memberships
 
@@ -214,6 +237,8 @@ Keyword-only arguments:
 Returns
 [DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef).
 
+<a id="describe_environment_status"></a>
+
 ### describe_environment_status
 
 Gets status information for an Cloud9 development environment.
@@ -234,6 +259,8 @@ Keyword-only arguments:
 Returns
 [DescribeEnvironmentStatusResultTypeDef](./type_defs.md#describeenvironmentstatusresulttypedef).
 
+<a id="describe_environments"></a>
+
 ### describe_environments
 
 Gets information about Cloud9 development environments.
@@ -253,6 +280,8 @@ Keyword-only arguments:
 Returns
 [DescribeEnvironmentsResultTypeDef](./type_defs.md#describeenvironmentsresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -270,6 +299,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_environments"></a>
 
 ### list_environments
 
@@ -291,6 +322,8 @@ Keyword-only arguments:
 Returns
 [ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Gets a list of the tags associated with an Cloud9 development environment.
@@ -309,6 +342,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -329,6 +364,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from an Cloud9 development environment.
@@ -347,6 +384,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_environment"></a>
 
 ### update_environment
 
@@ -369,6 +408,8 @@ Keyword-only arguments:
   [ManagedCredentialsActionType](./literals.md#managedcredentialsactiontype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_environment_membership"></a>
 
 ### update_environment_membership
 
@@ -393,6 +434,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateEnvironmentMembershipResultTypeDef](./type_defs.md#updateenvironmentmembershipresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

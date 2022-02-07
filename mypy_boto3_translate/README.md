@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-translate-module"></a>
+
 # Type annotations for boto3 Translate module
 
 > [Index](..) > Translate
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
 type annotations stubs module
-[mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
+[mypy-boto3-translate](https://pypi.org/project/mypy-boto3-translate/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[translate]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[translate]'
+
+# standalone installation
 pip install mypy-boto3-translate
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-translate
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="translateclient"></a>
+
 ## TranslateClient
 
 Type annotations for `boto3.client("translate")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_translate.client import TranslateClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -51,6 +65,8 @@ from mypy_boto3_translate.client import TranslateClient
 - [translate_text](./client.md#translate_text)
 - [update_parallel_data](./client.md#update_parallel_data)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 TranslateClient [exceptions](./client.md#exceptions)
@@ -70,6 +86,8 @@ TranslateClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - UnsupportedLanguagePairException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -78,10 +96,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_translate.paginators import ListTerminologiesPaginator, ...
+from mypy_boto3_translate.paginator import ListTerminologiesPaginator, ...
 ```
 
 - [ListTerminologiesPaginator](./paginators.md#listterminologiespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -104,6 +124,8 @@ from mypy_boto3_translate.literals import DirectionalityType, ...
 - [TerminologyDataFormatType](./literals.md#terminologydataformattype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

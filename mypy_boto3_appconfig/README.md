@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-appconfig-module"></a>
+
 # Type annotations for boto3 AppConfig module
 
 > [Index](..) > AppConfig
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
 type annotations stubs module
-[mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
+[mypy-boto3-appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[appconfig]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[appconfig]'
+
+# standalone installation
 pip install mypy-boto3-appconfig
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-appconfig
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="appconfigclient"></a>
 
 ## AppConfigClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_appconfig.client import AppConfigClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -68,6 +82,8 @@ from mypy_boto3_appconfig.client import AppConfigClient
 - [update_environment](./client.md#update_environment)
 - [validate_configuration](./client.md#validate_configuration)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AppConfigClient [exceptions](./client.md#exceptions)
@@ -79,6 +95,8 @@ AppConfigClient [exceptions](./client.md#exceptions)
 - PayloadTooLargeException
 - ResourceNotFoundException
 - ServiceQuotaExceededException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -98,6 +116,8 @@ from mypy_boto3_appconfig.literals import DeploymentEventTypeType, ...
 - [TriggeredByType](./literals.md#triggeredbytype)
 - [ValidatorTypeType](./literals.md#validatortypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

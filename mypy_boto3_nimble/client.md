@@ -1,3 +1,5 @@
+<a id="nimblestudioclient-for-boto3-nimblestudio-module"></a>
+
 # NimbleStudioClient for boto3 NimbleStudio module
 
 > [Index](..) > [NimbleStudio](.) > NimbleStudioClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
 type annotations stubs module
-[mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
+[mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 - [NimbleStudioClient for boto3 NimbleStudio module](#nimblestudioclient-for-boto3-nimblestudio-module)
   - [NimbleStudioClient](#nimblestudioclient)
@@ -64,6 +66,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="nimblestudioclient"></a>
+
 ## NimbleStudioClient
 
 Type annotations for `boto3.client("nimble")`
@@ -71,14 +75,17 @@ Type annotations for `boto3.client("nimble")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_nimble.client import NimbleStudioClient
 
 def get_nimble_client() -> NimbleStudioClient:
-    return boto3.client("nimble")
+    return Session().client("nimble")
 ```
 
 Boto3 documentation:
 [NimbleStudio.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -103,7 +110,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -115,6 +126,8 @@ Boto3 documentation:
 [NimbleStudio.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_eulas"></a>
 
 ### accept_eulas
 
@@ -137,6 +150,8 @@ Keyword-only arguments:
 Returns
 [AcceptEulasResponseTypeDef](./type_defs.md#accepteulasresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -151,6 +166,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_launch_profile"></a>
 
 ### create_launch_profile
 
@@ -181,6 +198,8 @@ Keyword-only arguments:
 Returns
 [CreateLaunchProfileResponseTypeDef](./type_defs.md#createlaunchprofileresponsetypedef).
 
+<a id="create_streaming_image"></a>
+
 ### create_streaming_image
 
 Creates a streaming image resource in a studio.
@@ -204,6 +223,8 @@ Keyword-only arguments:
 
 Returns
 [CreateStreamingImageResponseTypeDef](./type_defs.md#createstreamingimageresponsetypedef).
+
+<a id="create_streaming_session"></a>
 
 ### create_streaming_session
 
@@ -231,6 +252,8 @@ Keyword-only arguments:
 Returns
 [CreateStreamingSessionResponseTypeDef](./type_defs.md#createstreamingsessionresponsetypedef).
 
+<a id="create_streaming_session_stream"></a>
+
 ### create_streaming_session_stream
 
 Creates a streaming session stream for a streaming session.
@@ -253,6 +276,8 @@ Keyword-only arguments:
 
 Returns
 [CreateStreamingSessionStreamResponseTypeDef](./type_defs.md#createstreamingsessionstreamresponsetypedef).
+
+<a id="create_studio"></a>
 
 ### create_studio
 
@@ -279,6 +304,8 @@ Keyword-only arguments:
 
 Returns
 [CreateStudioResponseTypeDef](./type_defs.md#createstudioresponsetypedef).
+
+<a id="create_studio_component"></a>
 
 ### create_studio_component
 
@@ -314,6 +341,8 @@ Keyword-only arguments:
 Returns
 [CreateStudioComponentResponseTypeDef](./type_defs.md#createstudiocomponentresponsetypedef).
 
+<a id="delete_launch_profile"></a>
+
 ### delete_launch_profile
 
 Permanently delete a launch profile.
@@ -334,6 +363,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteLaunchProfileResponseTypeDef](./type_defs.md#deletelaunchprofileresponsetypedef).
+
+<a id="delete_launch_profile_member"></a>
 
 ### delete_launch_profile_member
 
@@ -357,6 +388,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_streaming_image"></a>
+
 ### delete_streaming_image
 
 Delete streaming image.
@@ -377,6 +410,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteStreamingImageResponseTypeDef](./type_defs.md#deletestreamingimageresponsetypedef).
+
+<a id="delete_streaming_session"></a>
 
 ### delete_streaming_session
 
@@ -399,6 +434,8 @@ Keyword-only arguments:
 Returns
 [DeleteStreamingSessionResponseTypeDef](./type_defs.md#deletestreamingsessionresponsetypedef).
 
+<a id="delete_studio"></a>
+
 ### delete_studio
 
 Delete a studio resource.
@@ -418,6 +455,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteStudioResponseTypeDef](./type_defs.md#deletestudioresponsetypedef).
+
+<a id="delete_studio_component"></a>
 
 ### delete_studio_component
 
@@ -440,6 +479,8 @@ Keyword-only arguments:
 Returns
 [DeleteStudioComponentResponseTypeDef](./type_defs.md#deletestudiocomponentresponsetypedef).
 
+<a id="delete_studio_member"></a>
+
 ### delete_studio_member
 
 Delete a user from studio membership.
@@ -460,6 +501,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -478,6 +521,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_eula"></a>
+
 ### get_eula
 
 Get Eula.
@@ -495,6 +540,8 @@ Keyword-only arguments:
 - `eulaId`: `str` *(required)*
 
 Returns [GetEulaResponseTypeDef](./type_defs.md#geteularesponsetypedef).
+
+<a id="get_launch_profile"></a>
 
 ### get_launch_profile
 
@@ -515,6 +562,8 @@ Keyword-only arguments:
 
 Returns
 [GetLaunchProfileResponseTypeDef](./type_defs.md#getlaunchprofileresponsetypedef).
+
+<a id="get_launch_profile_details"></a>
 
 ### get_launch_profile_details
 
@@ -537,6 +586,8 @@ Keyword-only arguments:
 
 Returns
 [GetLaunchProfileDetailsResponseTypeDef](./type_defs.md#getlaunchprofiledetailsresponsetypedef).
+
+<a id="get_launch_profile_initialization"></a>
 
 ### get_launch_profile_initialization
 
@@ -562,6 +613,8 @@ Keyword-only arguments:
 Returns
 [GetLaunchProfileInitializationResponseTypeDef](./type_defs.md#getlaunchprofileinitializationresponsetypedef).
 
+<a id="get_launch_profile_member"></a>
+
 ### get_launch_profile_member
 
 Get a user persona in launch profile membership.
@@ -583,6 +636,8 @@ Keyword-only arguments:
 Returns
 [GetLaunchProfileMemberResponseTypeDef](./type_defs.md#getlaunchprofilememberresponsetypedef).
 
+<a id="get_streaming_image"></a>
+
 ### get_streaming_image
 
 Get streaming image.
@@ -603,6 +658,8 @@ Keyword-only arguments:
 Returns
 [GetStreamingImageResponseTypeDef](./type_defs.md#getstreamingimageresponsetypedef).
 
+<a id="get_streaming_session"></a>
+
 ### get_streaming_session
 
 Gets StreamingSession resource.
@@ -622,6 +679,8 @@ Keyword-only arguments:
 
 Returns
 [GetStreamingSessionResponseTypeDef](./type_defs.md#getstreamingsessionresponsetypedef).
+
+<a id="get_streaming_session_stream"></a>
 
 ### get_streaming_session_stream
 
@@ -645,6 +704,8 @@ Keyword-only arguments:
 Returns
 [GetStreamingSessionStreamResponseTypeDef](./type_defs.md#getstreamingsessionstreamresponsetypedef).
 
+<a id="get_studio"></a>
+
 ### get_studio
 
 Get a Studio resource.
@@ -662,6 +723,8 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns [GetStudioResponseTypeDef](./type_defs.md#getstudioresponsetypedef).
+
+<a id="get_studio_component"></a>
 
 ### get_studio_component
 
@@ -683,6 +746,8 @@ Keyword-only arguments:
 Returns
 [GetStudioComponentResponseTypeDef](./type_defs.md#getstudiocomponentresponsetypedef).
 
+<a id="get_studio_member"></a>
+
 ### get_studio_member
 
 Get a user's membership in a studio.
@@ -702,6 +767,8 @@ Keyword-only arguments:
 
 Returns
 [GetStudioMemberResponseTypeDef](./type_defs.md#getstudiomemberresponsetypedef).
+
+<a id="list_eula_acceptances"></a>
 
 ### list_eula_acceptances
 
@@ -724,6 +791,8 @@ Keyword-only arguments:
 Returns
 [ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef).
 
+<a id="list_eulas"></a>
+
 ### list_eulas
 
 List Eulas.
@@ -742,6 +811,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef).
+
+<a id="list_launch_profile_members"></a>
 
 ### list_launch_profile_members
 
@@ -765,6 +836,8 @@ Keyword-only arguments:
 
 Returns
 [ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef).
+
+<a id="list_launch_profiles"></a>
 
 ### list_launch_profiles
 
@@ -790,6 +863,8 @@ Keyword-only arguments:
 Returns
 [ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef).
 
+<a id="list_streaming_images"></a>
+
 ### list_streaming_images
 
 List the streaming image resources available to this studio.
@@ -810,6 +885,8 @@ Keyword-only arguments:
 
 Returns
 [ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef).
+
+<a id="list_streaming_sessions"></a>
 
 ### list_streaming_sessions
 
@@ -833,6 +910,8 @@ Keyword-only arguments:
 
 Returns
 [ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef).
+
+<a id="list_studio_components"></a>
 
 ### list_studio_components
 
@@ -859,6 +938,8 @@ Keyword-only arguments:
 Returns
 [ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef).
 
+<a id="list_studio_members"></a>
+
 ### list_studio_members
 
 Get all users in a given studio membership.
@@ -880,6 +961,8 @@ Keyword-only arguments:
 Returns
 [ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef).
 
+<a id="list_studios"></a>
+
 ### list_studios
 
 List studios in your Amazon Web Services account in the requested Amazon Web
@@ -900,6 +983,8 @@ Keyword-only arguments:
 Returns
 [ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Gets the tags for a resource, given its Amazon Resource Names (ARN).
@@ -918,6 +1003,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_launch_profile_members"></a>
 
 ### put_launch_profile_members
 
@@ -944,6 +1031,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_studio_members"></a>
+
 ### put_studio_members
 
 Add/update users with given persona to studio membership.
@@ -967,6 +1056,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="start_streaming_session"></a>
+
 ### start_streaming_session
 
 Transitions sessions from the STOPPED state into the READY state.
@@ -987,6 +1078,8 @@ Keyword-only arguments:
 
 Returns
 [StartStreamingSessionResponseTypeDef](./type_defs.md#startstreamingsessionresponsetypedef).
+
+<a id="start_studio_sso_configuration_repair"></a>
 
 ### start_studio_sso_configuration_repair
 
@@ -1009,6 +1102,8 @@ Keyword-only arguments:
 Returns
 [StartStudioSSOConfigurationRepairResponseTypeDef](./type_defs.md#startstudiossoconfigurationrepairresponsetypedef).
 
+<a id="stop_streaming_session"></a>
+
 ### stop_streaming_session
 
 Transitions sessions from the READY state into the STOPPED state.
@@ -1030,6 +1125,8 @@ Keyword-only arguments:
 Returns
 [StopStreamingSessionResponseTypeDef](./type_defs.md#stopstreamingsessionresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Creates tags for a resource, given its ARN.
@@ -1049,6 +1146,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes the tags for a resource.
@@ -1067,6 +1166,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_launch_profile"></a>
 
 ### update_launch_profile
 
@@ -1095,6 +1196,8 @@ Keyword-only arguments:
 Returns
 [UpdateLaunchProfileResponseTypeDef](./type_defs.md#updatelaunchprofileresponsetypedef).
 
+<a id="update_launch_profile_member"></a>
+
 ### update_launch_profile_member
 
 Update a user persona in launch profile membership.
@@ -1121,6 +1224,8 @@ Keyword-only arguments:
 Returns
 [UpdateLaunchProfileMemberResponseTypeDef](./type_defs.md#updatelaunchprofilememberresponsetypedef).
 
+<a id="update_streaming_image"></a>
+
 ### update_streaming_image
 
 Update streaming image.
@@ -1144,6 +1249,8 @@ Keyword-only arguments:
 Returns
 [UpdateStreamingImageResponseTypeDef](./type_defs.md#updatestreamingimageresponsetypedef).
 
+<a id="update_studio"></a>
+
 ### update_studio
 
 Update a Studio resource.
@@ -1166,6 +1273,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateStudioResponseTypeDef](./type_defs.md#updatestudioresponsetypedef).
+
+<a id="update_studio_component"></a>
 
 ### update_studio_component
 
@@ -1200,6 +1309,8 @@ Keyword-only arguments:
 Returns
 [UpdateStudioComponentResponseTypeDef](./type_defs.md#updatestudiocomponentresponsetypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("nimble").get_paginator` method with
@@ -1223,6 +1334,8 @@ overloads.
   [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)
 - `client.get_paginator("list_studios")` ->
   [ListStudiosPaginator](./paginators.md#liststudiospaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

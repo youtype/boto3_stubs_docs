@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-recyclebin-module"></a>
+
 # Typed dictionaries for boto3 RecycleBin module
 
 > [Index](..) > [RecycleBin](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin)
 type annotations stubs module
-[mypy_boto3_rbin](https://pypi.org/project/mypy-boto3-rbin/).
+[mypy-boto3-rbin](https://pypi.org/project/mypy-boto3-rbin/).
 
 - [Typed dictionaries for boto3 RecycleBin module](#typed-dictionaries-for-boto3-recyclebin-module)
   - [CreateRuleRequestRequestTypeDef](#createrulerequestrequesttypedef)
@@ -28,6 +30,8 @@ type annotations stubs module
   - [UpdateRuleRequestRequestTypeDef](#updaterulerequestrequesttypedef)
   - [UpdateRuleResponseTypeDef](#updateruleresponsetypedef)
 
+<a id="createrulerequestrequesttypedef"></a>
+
 ## CreateRuleRequestRequestTypeDef
 
 ```python
@@ -46,6 +50,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResourceTags`:
   `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+
+<a id="createruleresponsetypedef"></a>
 
 ## CreateRuleResponseTypeDef
 
@@ -67,6 +73,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleterulerequestrequesttypedef"></a>
+
 ## DeleteRuleRequestRequestTypeDef
 
 ```python
@@ -77,6 +85,8 @@ Required fields:
 
 - `Identifier`: `str`
 
+<a id="getrulerequestrequesttypedef"></a>
+
 ## GetRuleRequestRequestTypeDef
 
 ```python
@@ -86,6 +96,8 @@ from mypy_boto3_rbin.type_defs import GetRuleRequestRequestTypeDef
 Required fields:
 
 - `Identifier`: `str`
+
+<a id="getruleresponsetypedef"></a>
 
 ## GetRuleResponseTypeDef
 
@@ -106,6 +118,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrulesrequestrequesttypedef"></a>
+
 ## ListRulesRequestRequestTypeDef
 
 ```python
@@ -123,6 +137,8 @@ Optional fields:
 - `ResourceTags`:
   `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
+<a id="listrulesresponsetypedef"></a>
+
 ## ListRulesResponseTypeDef
 
 ```python
@@ -136,6 +152,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -145,6 +163,8 @@ from mypy_boto3_rbin.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -158,6 +178,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -169,6 +191,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="resourcetagtypedef"></a>
 
 ## ResourceTagTypeDef
 
@@ -184,6 +208,8 @@ Optional fields:
 
 - `ResourceTagValue`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -198,6 +224,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retentionperiodtypedef"></a>
+
 ## RetentionPeriodTypeDef
 
 ```python
@@ -209,6 +237,8 @@ Required fields:
 - `RetentionPeriodValue`: `int`
 - `RetentionPeriodUnit`: `Literal['DAYS']` (see
   [RetentionPeriodUnitType](./literals.md#retentionperiodunittype))
+
+<a id="rulesummarytypedef"></a>
 
 ## RuleSummaryTypeDef
 
@@ -223,6 +253,8 @@ Optional fields:
 - `RetentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -233,6 +265,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -245,6 +279,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -255,6 +291,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updaterulerequestrequesttypedef"></a>
 
 ## UpdateRuleRequestRequestTypeDef
 
@@ -274,6 +312,8 @@ Optional fields:
 - `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `ResourceTags`:
   `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+
+<a id="updateruleresponsetypedef"></a>
 
 ## UpdateRuleResponseTypeDef
 

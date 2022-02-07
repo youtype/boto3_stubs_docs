@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-sts-module"></a>
+
 # Typed dictionaries for boto3 STS module
 
 > [Index](..) > [STS](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
 type annotations stubs module
-[mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
+[mypy-boto3-sts](https://pypi.org/project/mypy-boto3-sts/).
 
 - [Typed dictionaries for boto3 STS module](#typed-dictionaries-for-boto3-sts-module)
   - [AssumeRoleRequestRequestTypeDef](#assumerolerequestrequesttypedef)
@@ -29,6 +31,8 @@ type annotations stubs module
   - [PolicyDescriptorTypeTypeDef](#policydescriptortypetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagTypeDef](#tagtypedef)
+
+<a id="assumerolerequestrequesttypedef"></a>
 
 ## AssumeRoleRequestRequestTypeDef
 
@@ -54,6 +58,8 @@ Optional fields:
 - `TokenCode`: `str`
 - `SourceIdentity`: `str`
 
+<a id="assumeroleresponsetypedef"></a>
+
 ## AssumeRoleResponseTypeDef
 
 ```python
@@ -69,6 +75,8 @@ Required fields:
 - `SourceIdentity`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="assumerolewithsamlrequestrequesttypedef"></a>
 
 ## AssumeRoleWithSAMLRequestRequestTypeDef
 
@@ -88,6 +96,8 @@ Optional fields:
   `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `Policy`: `str`
 - `DurationSeconds`: `int`
+
+<a id="assumerolewithsamlresponsetypedef"></a>
 
 ## AssumeRoleWithSAMLResponseTypeDef
 
@@ -110,6 +120,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="assumerolewithwebidentityrequestrequesttypedef"></a>
+
 ## AssumeRoleWithWebIdentityRequestRequestTypeDef
 
 ```python
@@ -130,6 +142,8 @@ Optional fields:
 - `Policy`: `str`
 - `DurationSeconds`: `int`
 
+<a id="assumerolewithwebidentityresponsetypedef"></a>
+
 ## AssumeRoleWithWebIdentityResponseTypeDef
 
 ```python
@@ -149,6 +163,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="assumedroleusertypedef"></a>
+
 ## AssumedRoleUserTypeDef
 
 ```python
@@ -159,6 +175,8 @@ Required fields:
 
 - `AssumedRoleId`: `str`
 - `Arn`: `str`
+
+<a id="credentialstypedef"></a>
 
 ## CredentialsTypeDef
 
@@ -173,6 +191,8 @@ Required fields:
 - `SessionToken`: `str`
 - `Expiration`: `datetime`
 
+<a id="decodeauthorizationmessagerequestrequesttypedef"></a>
+
 ## DecodeAuthorizationMessageRequestRequestTypeDef
 
 ```python
@@ -182,6 +202,8 @@ from mypy_boto3_sts.type_defs import DecodeAuthorizationMessageRequestRequestTyp
 Required fields:
 
 - `EncodedMessage`: `str`
+
+<a id="decodeauthorizationmessageresponsetypedef"></a>
 
 ## DecodeAuthorizationMessageResponseTypeDef
 
@@ -195,6 +217,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="federatedusertypedef"></a>
+
 ## FederatedUserTypeDef
 
 ```python
@@ -206,6 +230,8 @@ Required fields:
 - `FederatedUserId`: `str`
 - `Arn`: `str`
 
+<a id="getaccesskeyinforequestrequesttypedef"></a>
+
 ## GetAccessKeyInfoRequestRequestTypeDef
 
 ```python
@@ -215,6 +241,8 @@ from mypy_boto3_sts.type_defs import GetAccessKeyInfoRequestRequestTypeDef
 Required fields:
 
 - `AccessKeyId`: `str`
+
+<a id="getaccesskeyinforesponsetypedef"></a>
 
 ## GetAccessKeyInfoResponseTypeDef
 
@@ -227,6 +255,8 @@ Required fields:
 - `Account`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcalleridentityresponsetypedef"></a>
 
 ## GetCallerIdentityResponseTypeDef
 
@@ -241,6 +271,8 @@ Required fields:
 - `Arn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getfederationtokenrequestrequesttypedef"></a>
 
 ## GetFederationTokenRequestRequestTypeDef
 
@@ -260,6 +292,8 @@ Optional fields:
 - `DurationSeconds`: `int`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="getfederationtokenresponsetypedef"></a>
+
 ## GetFederationTokenResponseTypeDef
 
 ```python
@@ -274,6 +308,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsessiontokenrequestrequesttypedef"></a>
+
 ## GetSessionTokenRequestRequestTypeDef
 
 ```python
@@ -285,6 +321,8 @@ Optional fields:
 - `DurationSeconds`: `int`
 - `SerialNumber`: `str`
 - `TokenCode`: `str`
+
+<a id="getsessiontokenresponsetypedef"></a>
 
 ## GetSessionTokenResponseTypeDef
 
@@ -298,6 +336,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="policydescriptortypetypedef"></a>
+
 ## PolicyDescriptorTypeTypeDef
 
 ```python
@@ -307,6 +347,8 @@ from mypy_boto3_sts.type_defs import PolicyDescriptorTypeTypeDef
 Optional fields:
 
 - `arn`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -321,6 +363,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 

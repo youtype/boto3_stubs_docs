@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-swf-module"></a>
+
 # Typed dictionaries for boto3 SWF module
 
 > [Index](..) > [SWF](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
 type annotations stubs module
-[mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
+[mypy-boto3-swf](https://pypi.org/project/mypy-boto3-swf/).
 
 - [Typed dictionaries for boto3 SWF module](#typed-dictionaries-for-boto3-swf-module)
   - [ActivityTaskCancelRequestedEventAttributesTypeDef](#activitytaskcancelrequestedeventattributestypedef)
@@ -152,6 +154,8 @@ type annotations stubs module
   - [WorkflowTypeInfosTypeDef](#workflowtypeinfostypedef)
   - [WorkflowTypeTypeDef](#workflowtypetypedef)
 
+<a id="activitytaskcancelrequestedeventattributestypedef"></a>
+
 ## ActivityTaskCancelRequestedEventAttributesTypeDef
 
 ```python
@@ -162,6 +166,8 @@ Required fields:
 
 - `decisionTaskCompletedEventId`: `int`
 - `activityId`: `str`
+
+<a id="activitytaskcanceledeventattributestypedef"></a>
 
 ## ActivityTaskCanceledEventAttributesTypeDef
 
@@ -179,6 +185,8 @@ Optional fields:
 - `details`: `str`
 - `latestCancelRequestedEventId`: `int`
 
+<a id="activitytaskcompletedeventattributestypedef"></a>
+
 ## ActivityTaskCompletedEventAttributesTypeDef
 
 ```python
@@ -193,6 +201,8 @@ Required fields:
 Optional fields:
 
 - `result`: `str`
+
+<a id="activitytaskfailedeventattributestypedef"></a>
 
 ## ActivityTaskFailedEventAttributesTypeDef
 
@@ -209,6 +219,8 @@ Optional fields:
 
 - `reason`: `str`
 - `details`: `str`
+
+<a id="activitytaskscheduledeventattributestypedef"></a>
 
 ## ActivityTaskScheduledEventAttributesTypeDef
 
@@ -233,6 +245,8 @@ Optional fields:
 - `taskPriority`: `str`
 - `heartbeatTimeout`: `str`
 
+<a id="activitytaskstartedeventattributestypedef"></a>
+
 ## ActivityTaskStartedEventAttributesTypeDef
 
 ```python
@@ -247,6 +261,8 @@ Optional fields:
 
 - `identity`: `str`
 
+<a id="activitytaskstatustypedef"></a>
+
 ## ActivityTaskStatusTypeDef
 
 ```python
@@ -258,6 +274,8 @@ Required fields:
 - `cancelRequested`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="activitytasktimedouteventattributestypedef"></a>
 
 ## ActivityTaskTimedOutEventAttributesTypeDef
 
@@ -275,6 +293,8 @@ Required fields:
 Optional fields:
 
 - `details`: `str`
+
+<a id="activitytasktypedef"></a>
 
 ## ActivityTaskTypeDef
 
@@ -294,6 +314,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="activitytypeconfigurationtypedef"></a>
+
 ## ActivityTypeConfigurationTypeDef
 
 ```python
@@ -309,6 +331,8 @@ Optional fields:
 - `defaultTaskScheduleToStartTimeout`: `str`
 - `defaultTaskScheduleToCloseTimeout`: `str`
 
+<a id="activitytypedetailtypedef"></a>
+
 ## ActivityTypeDetailTypeDef
 
 ```python
@@ -322,6 +346,8 @@ Required fields:
   [ActivityTypeConfigurationTypeDef](./type_defs.md#activitytypeconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="activitytypeinfotypedef"></a>
 
 ## ActivityTypeInfoTypeDef
 
@@ -340,6 +366,8 @@ Optional fields:
 - `description`: `str`
 - `deprecationDate`: `datetime`
 
+<a id="activitytypeinfostypedef"></a>
+
 ## ActivityTypeInfosTypeDef
 
 ```python
@@ -354,6 +382,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="activitytypetypedef"></a>
+
 ## ActivityTypeTypeDef
 
 ```python
@@ -365,6 +395,8 @@ Required fields:
 - `name`: `str`
 - `version`: `str`
 
+<a id="canceltimerdecisionattributestypedef"></a>
+
 ## CancelTimerDecisionAttributesTypeDef
 
 ```python
@@ -374,6 +406,8 @@ from mypy_boto3_swf.type_defs import CancelTimerDecisionAttributesTypeDef
 Required fields:
 
 - `timerId`: `str`
+
+<a id="canceltimerfailedeventattributestypedef"></a>
 
 ## CancelTimerFailedEventAttributesTypeDef
 
@@ -388,6 +422,8 @@ Required fields:
   [CancelTimerFailedCauseType](./literals.md#canceltimerfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
 
+<a id="cancelworkflowexecutiondecisionattributestypedef"></a>
+
 ## CancelWorkflowExecutionDecisionAttributesTypeDef
 
 ```python
@@ -397,6 +433,8 @@ from mypy_boto3_swf.type_defs import CancelWorkflowExecutionDecisionAttributesTy
 Optional fields:
 
 - `details`: `str`
+
+<a id="cancelworkflowexecutionfailedeventattributestypedef"></a>
 
 ## CancelWorkflowExecutionFailedEventAttributesTypeDef
 
@@ -409,6 +447,8 @@ Required fields:
 - `cause`:
   [CancelWorkflowExecutionFailedCauseType](./literals.md#cancelworkflowexecutionfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
+
+<a id="childworkflowexecutioncanceledeventattributestypedef"></a>
 
 ## ChildWorkflowExecutionCanceledEventAttributesTypeDef
 
@@ -428,6 +468,8 @@ Optional fields:
 
 - `details`: `str`
 
+<a id="childworkflowexecutioncompletedeventattributestypedef"></a>
+
 ## ChildWorkflowExecutionCompletedEventAttributesTypeDef
 
 ```python
@@ -445,6 +487,8 @@ Required fields:
 Optional fields:
 
 - `result`: `str`
+
+<a id="childworkflowexecutionfailedeventattributestypedef"></a>
 
 ## ChildWorkflowExecutionFailedEventAttributesTypeDef
 
@@ -465,6 +509,8 @@ Optional fields:
 - `reason`: `str`
 - `details`: `str`
 
+<a id="childworkflowexecutionstartedeventattributestypedef"></a>
+
 ## ChildWorkflowExecutionStartedEventAttributesTypeDef
 
 ```python
@@ -477,6 +523,8 @@ Required fields:
   [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `initiatedEventId`: `int`
+
+<a id="childworkflowexecutionterminatedeventattributestypedef"></a>
 
 ## ChildWorkflowExecutionTerminatedEventAttributesTypeDef
 
@@ -491,6 +539,8 @@ Required fields:
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `initiatedEventId`: `int`
 - `startedEventId`: `int`
+
+<a id="childworkflowexecutiontimedouteventattributestypedef"></a>
 
 ## ChildWorkflowExecutionTimedOutEventAttributesTypeDef
 
@@ -508,6 +558,8 @@ Required fields:
 - `initiatedEventId`: `int`
 - `startedEventId`: `int`
 
+<a id="closestatusfiltertypedef"></a>
+
 ## CloseStatusFilterTypeDef
 
 ```python
@@ -518,6 +570,8 @@ Required fields:
 
 - `status`: [CloseStatusType](./literals.md#closestatustype)
 
+<a id="completeworkflowexecutiondecisionattributestypedef"></a>
+
 ## CompleteWorkflowExecutionDecisionAttributesTypeDef
 
 ```python
@@ -527,6 +581,8 @@ from mypy_boto3_swf.type_defs import CompleteWorkflowExecutionDecisionAttributes
 Optional fields:
 
 - `result`: `str`
+
+<a id="completeworkflowexecutionfailedeventattributestypedef"></a>
 
 ## CompleteWorkflowExecutionFailedEventAttributesTypeDef
 
@@ -539,6 +595,8 @@ Required fields:
 - `cause`:
   [CompleteWorkflowExecutionFailedCauseType](./literals.md#completeworkflowexecutionfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
+
+<a id="continueasnewworkflowexecutiondecisionattributestypedef"></a>
 
 ## ContinueAsNewWorkflowExecutionDecisionAttributesTypeDef
 
@@ -558,6 +616,8 @@ Optional fields:
 - `workflowTypeVersion`: `str`
 - `lambdaRole`: `str`
 
+<a id="continueasnewworkflowexecutionfailedeventattributestypedef"></a>
+
 ## ContinueAsNewWorkflowExecutionFailedEventAttributesTypeDef
 
 ```python
@@ -569,6 +629,8 @@ Required fields:
 - `cause`:
   [ContinueAsNewWorkflowExecutionFailedCauseType](./literals.md#continueasnewworkflowexecutionfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
+
+<a id="countclosedworkflowexecutionsinputrequesttypedef"></a>
 
 ## CountClosedWorkflowExecutionsInputRequestTypeDef
 
@@ -594,6 +656,8 @@ Optional fields:
 - `closeStatusFilter`:
   [CloseStatusFilterTypeDef](./type_defs.md#closestatusfiltertypedef)
 
+<a id="countopenworkflowexecutionsinputrequesttypedef"></a>
+
 ## CountOpenWorkflowExecutionsInputRequestTypeDef
 
 ```python
@@ -614,6 +678,8 @@ Optional fields:
 - `executionFilter`:
   [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 
+<a id="countpendingactivitytasksinputrequesttypedef"></a>
+
 ## CountPendingActivityTasksInputRequestTypeDef
 
 ```python
@@ -625,6 +691,8 @@ Required fields:
 - `domain`: `str`
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 
+<a id="countpendingdecisiontasksinputrequesttypedef"></a>
+
 ## CountPendingDecisionTasksInputRequestTypeDef
 
 ```python
@@ -635,6 +703,8 @@ Required fields:
 
 - `domain`: `str`
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
+
+<a id="decisiontaskcompletedeventattributestypedef"></a>
 
 ## DecisionTaskCompletedEventAttributesTypeDef
 
@@ -651,6 +721,8 @@ Optional fields:
 
 - `executionContext`: `str`
 
+<a id="decisiontaskscheduledeventattributestypedef"></a>
+
 ## DecisionTaskScheduledEventAttributesTypeDef
 
 ```python
@@ -666,6 +738,8 @@ Optional fields:
 - `taskPriority`: `str`
 - `startToCloseTimeout`: `str`
 
+<a id="decisiontaskstartedeventattributestypedef"></a>
+
 ## DecisionTaskStartedEventAttributesTypeDef
 
 ```python
@@ -680,6 +754,8 @@ Optional fields:
 
 - `identity`: `str`
 
+<a id="decisiontasktimedouteventattributestypedef"></a>
+
 ## DecisionTaskTimedOutEventAttributesTypeDef
 
 ```python
@@ -692,6 +768,8 @@ Required fields:
   [DecisionTaskTimeoutTypeType](./literals.md#decisiontasktimeouttypetype))
 - `scheduledEventId`: `int`
 - `startedEventId`: `int`
+
+<a id="decisiontasktypedef"></a>
 
 ## DecisionTaskTypeDef
 
@@ -711,6 +789,8 @@ Required fields:
 - `previousStartedEventId`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="decisiontypedef"></a>
 
 ## DecisionTypeDef
 
@@ -751,6 +831,8 @@ Optional fields:
 - `scheduleLambdaFunctionDecisionAttributes`:
   [ScheduleLambdaFunctionDecisionAttributesTypeDef](./type_defs.md#schedulelambdafunctiondecisionattributestypedef)
 
+<a id="deprecateactivitytypeinputrequesttypedef"></a>
+
 ## DeprecateActivityTypeInputRequestTypeDef
 
 ```python
@@ -762,6 +844,8 @@ Required fields:
 - `domain`: `str`
 - `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
 
+<a id="deprecatedomaininputrequesttypedef"></a>
+
 ## DeprecateDomainInputRequestTypeDef
 
 ```python
@@ -771,6 +855,8 @@ from mypy_boto3_swf.type_defs import DeprecateDomainInputRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="deprecateworkflowtypeinputrequesttypedef"></a>
 
 ## DeprecateWorkflowTypeInputRequestTypeDef
 
@@ -783,6 +869,8 @@ Required fields:
 - `domain`: `str`
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 
+<a id="describeactivitytypeinputrequesttypedef"></a>
+
 ## DescribeActivityTypeInputRequestTypeDef
 
 ```python
@@ -794,6 +882,8 @@ Required fields:
 - `domain`: `str`
 - `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
 
+<a id="describedomaininputrequesttypedef"></a>
+
 ## DescribeDomainInputRequestTypeDef
 
 ```python
@@ -803,6 +893,8 @@ from mypy_boto3_swf.type_defs import DescribeDomainInputRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="describeworkflowexecutioninputrequesttypedef"></a>
 
 ## DescribeWorkflowExecutionInputRequestTypeDef
 
@@ -816,6 +908,8 @@ Required fields:
 - `execution`:
   [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 
+<a id="describeworkflowtypeinputrequesttypedef"></a>
+
 ## DescribeWorkflowTypeInputRequestTypeDef
 
 ```python
@@ -827,6 +921,8 @@ Required fields:
 - `domain`: `str`
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 
+<a id="domainconfigurationtypedef"></a>
+
 ## DomainConfigurationTypeDef
 
 ```python
@@ -836,6 +932,8 @@ from mypy_boto3_swf.type_defs import DomainConfigurationTypeDef
 Required fields:
 
 - `workflowExecutionRetentionPeriodInDays`: `str`
+
+<a id="domaindetailtypedef"></a>
 
 ## DomainDetailTypeDef
 
@@ -850,6 +948,8 @@ Required fields:
   [DomainConfigurationTypeDef](./type_defs.md#domainconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="domaininfotypedef"></a>
 
 ## DomainInfoTypeDef
 
@@ -867,6 +967,8 @@ Optional fields:
 - `description`: `str`
 - `arn`: `str`
 
+<a id="domaininfostypedef"></a>
+
 ## DomainInfosTypeDef
 
 ```python
@@ -880,6 +982,8 @@ Required fields:
 - `nextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="executiontimefiltertypedef"></a>
 
 ## ExecutionTimeFilterTypeDef
 
@@ -895,6 +999,8 @@ Optional fields:
 
 - `latestDate`: `Union`\[`datetime`, `str`\]
 
+<a id="externalworkflowexecutioncancelrequestedeventattributestypedef"></a>
+
 ## ExternalWorkflowExecutionCancelRequestedEventAttributesTypeDef
 
 ```python
@@ -906,6 +1012,8 @@ Required fields:
 - `workflowExecution`:
   [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `initiatedEventId`: `int`
+
+<a id="externalworkflowexecutionsignaledeventattributestypedef"></a>
 
 ## ExternalWorkflowExecutionSignaledEventAttributesTypeDef
 
@@ -919,6 +1027,8 @@ Required fields:
   [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `initiatedEventId`: `int`
 
+<a id="failworkflowexecutiondecisionattributestypedef"></a>
+
 ## FailWorkflowExecutionDecisionAttributesTypeDef
 
 ```python
@@ -929,6 +1039,8 @@ Optional fields:
 
 - `reason`: `str`
 - `details`: `str`
+
+<a id="failworkflowexecutionfailedeventattributestypedef"></a>
 
 ## FailWorkflowExecutionFailedEventAttributesTypeDef
 
@@ -941,6 +1053,8 @@ Required fields:
 - `cause`:
   [FailWorkflowExecutionFailedCauseType](./literals.md#failworkflowexecutionfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
+
+<a id="getworkflowexecutionhistoryinputrequesttypedef"></a>
 
 ## GetWorkflowExecutionHistoryInputRequestTypeDef
 
@@ -959,6 +1073,8 @@ Optional fields:
 - `nextPageToken`: `str`
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
+
+<a id="historyeventtypedef"></a>
 
 ## HistoryEventTypeDef
 
@@ -1083,6 +1199,8 @@ Optional fields:
 - `startLambdaFunctionFailedEventAttributes`:
   [StartLambdaFunctionFailedEventAttributesTypeDef](./type_defs.md#startlambdafunctionfailedeventattributestypedef)
 
+<a id="historytypedef"></a>
+
 ## HistoryTypeDef
 
 ```python
@@ -1095,6 +1213,8 @@ Required fields:
 - `nextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="lambdafunctioncompletedeventattributestypedef"></a>
 
 ## LambdaFunctionCompletedEventAttributesTypeDef
 
@@ -1111,6 +1231,8 @@ Optional fields:
 
 - `result`: `str`
 
+<a id="lambdafunctionfailedeventattributestypedef"></a>
+
 ## LambdaFunctionFailedEventAttributesTypeDef
 
 ```python
@@ -1126,6 +1248,8 @@ Optional fields:
 
 - `reason`: `str`
 - `details`: `str`
+
+<a id="lambdafunctionscheduledeventattributestypedef"></a>
 
 ## LambdaFunctionScheduledEventAttributesTypeDef
 
@@ -1145,6 +1269,8 @@ Optional fields:
 - `input`: `str`
 - `startToCloseTimeout`: `str`
 
+<a id="lambdafunctionstartedeventattributestypedef"></a>
+
 ## LambdaFunctionStartedEventAttributesTypeDef
 
 ```python
@@ -1154,6 +1280,8 @@ from mypy_boto3_swf.type_defs import LambdaFunctionStartedEventAttributesTypeDef
 Required fields:
 
 - `scheduledEventId`: `int`
+
+<a id="lambdafunctiontimedouteventattributestypedef"></a>
 
 ## LambdaFunctionTimedOutEventAttributesTypeDef
 
@@ -1170,6 +1298,8 @@ Optional fields:
 
 - `timeoutType`: `Literal['START_TO_CLOSE']` (see
   [LambdaFunctionTimeoutTypeType](./literals.md#lambdafunctiontimeouttypetype))
+
+<a id="listactivitytypesinputrequesttypedef"></a>
 
 ## ListActivityTypesInputRequestTypeDef
 
@@ -1189,6 +1319,8 @@ Optional fields:
 - `nextPageToken`: `str`
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
+
+<a id="listclosedworkflowexecutionsinputrequesttypedef"></a>
 
 ## ListClosedWorkflowExecutionsInputRequestTypeDef
 
@@ -1217,6 +1349,8 @@ Optional fields:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
+<a id="listdomainsinputrequesttypedef"></a>
+
 ## ListDomainsInputRequestTypeDef
 
 ```python
@@ -1233,6 +1367,8 @@ Optional fields:
 - `nextPageToken`: `str`
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
+
+<a id="listopenworkflowexecutionsinputrequesttypedef"></a>
 
 ## ListOpenWorkflowExecutionsInputRequestTypeDef
 
@@ -1257,6 +1393,8 @@ Optional fields:
 - `executionFilter`:
   [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -1266,6 +1404,8 @@ from mypy_boto3_swf.type_defs import ListTagsForResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceoutputtypedef"></a>
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -1278,6 +1418,8 @@ Required fields:
 - `tags`: `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listworkflowtypesinputrequesttypedef"></a>
 
 ## ListWorkflowTypesInputRequestTypeDef
 
@@ -1298,6 +1440,8 @@ Optional fields:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
+<a id="markerrecordedeventattributestypedef"></a>
+
 ## MarkerRecordedEventAttributesTypeDef
 
 ```python
@@ -1313,6 +1457,8 @@ Optional fields:
 
 - `details`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1324,6 +1470,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="pendingtaskcounttypedef"></a>
 
 ## PendingTaskCountTypeDef
 
@@ -1337,6 +1485,8 @@ Required fields:
 - `truncated`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="pollforactivitytaskinputrequesttypedef"></a>
 
 ## PollForActivityTaskInputRequestTypeDef
 
@@ -1352,6 +1502,8 @@ Required fields:
 Optional fields:
 
 - `identity`: `str`
+
+<a id="pollfordecisiontaskinputrequesttypedef"></a>
 
 ## PollForDecisionTaskInputRequestTypeDef
 
@@ -1371,6 +1523,8 @@ Optional fields:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
+<a id="recordactivitytaskheartbeatinputrequesttypedef"></a>
+
 ## RecordActivityTaskHeartbeatInputRequestTypeDef
 
 ```python
@@ -1384,6 +1538,8 @@ Required fields:
 Optional fields:
 
 - `details`: `str`
+
+<a id="recordmarkerdecisionattributestypedef"></a>
 
 ## RecordMarkerDecisionAttributesTypeDef
 
@@ -1399,6 +1555,8 @@ Optional fields:
 
 - `details`: `str`
 
+<a id="recordmarkerfailedeventattributestypedef"></a>
+
 ## RecordMarkerFailedEventAttributesTypeDef
 
 ```python
@@ -1411,6 +1569,8 @@ Required fields:
 - `cause`: `Literal['OPERATION_NOT_PERMITTED']` (see
   [RecordMarkerFailedCauseType](./literals.md#recordmarkerfailedcausetype))
 - `decisionTaskCompletedEventId`: `int`
+
+<a id="registeractivitytypeinputrequesttypedef"></a>
 
 ## RegisterActivityTypeInputRequestTypeDef
 
@@ -1434,6 +1594,8 @@ Optional fields:
 - `defaultTaskScheduleToStartTimeout`: `str`
 - `defaultTaskScheduleToCloseTimeout`: `str`
 
+<a id="registerdomaininputrequesttypedef"></a>
+
 ## RegisterDomainInputRequestTypeDef
 
 ```python
@@ -1449,6 +1611,8 @@ Optional fields:
 
 - `description`: `str`
 - `tags`: `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+
+<a id="registerworkflowtypeinputrequesttypedef"></a>
 
 ## RegisterWorkflowTypeInputRequestTypeDef
 
@@ -1472,6 +1636,8 @@ Optional fields:
 - `defaultChildPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `defaultLambdaRole`: `str`
 
+<a id="requestcancelactivitytaskdecisionattributestypedef"></a>
+
 ## RequestCancelActivityTaskDecisionAttributesTypeDef
 
 ```python
@@ -1481,6 +1647,8 @@ from mypy_boto3_swf.type_defs import RequestCancelActivityTaskDecisionAttributes
 Required fields:
 
 - `activityId`: `str`
+
+<a id="requestcancelactivitytaskfailedeventattributestypedef"></a>
 
 ## RequestCancelActivityTaskFailedEventAttributesTypeDef
 
@@ -1494,6 +1662,8 @@ Required fields:
 - `cause`:
   [RequestCancelActivityTaskFailedCauseType](./literals.md#requestcancelactivitytaskfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
+
+<a id="requestcancelexternalworkflowexecutiondecisionattributestypedef"></a>
 
 ## RequestCancelExternalWorkflowExecutionDecisionAttributesTypeDef
 
@@ -1509,6 +1679,8 @@ Optional fields:
 
 - `runId`: `str`
 - `control`: `str`
+
+<a id="requestcancelexternalworkflowexecutionfailedeventattributestypedef"></a>
 
 ## RequestCancelExternalWorkflowExecutionFailedEventAttributesTypeDef
 
@@ -1529,6 +1701,8 @@ Optional fields:
 - `runId`: `str`
 - `control`: `str`
 
+<a id="requestcancelexternalworkflowexecutioninitiatedeventattributestypedef"></a>
+
 ## RequestCancelExternalWorkflowExecutionInitiatedEventAttributesTypeDef
 
 ```python
@@ -1545,6 +1719,8 @@ Optional fields:
 - `runId`: `str`
 - `control`: `str`
 
+<a id="requestcancelworkflowexecutioninputrequesttypedef"></a>
+
 ## RequestCancelWorkflowExecutionInputRequestTypeDef
 
 ```python
@@ -1560,6 +1736,8 @@ Optional fields:
 
 - `runId`: `str`
 
+<a id="resourcetagtypedef"></a>
+
 ## ResourceTagTypeDef
 
 ```python
@@ -1573,6 +1751,8 @@ Required fields:
 Optional fields:
 
 - `value`: `str`
+
+<a id="respondactivitytaskcanceledinputrequesttypedef"></a>
 
 ## RespondActivityTaskCanceledInputRequestTypeDef
 
@@ -1588,6 +1768,8 @@ Optional fields:
 
 - `details`: `str`
 
+<a id="respondactivitytaskcompletedinputrequesttypedef"></a>
+
 ## RespondActivityTaskCompletedInputRequestTypeDef
 
 ```python
@@ -1601,6 +1783,8 @@ Required fields:
 Optional fields:
 
 - `result`: `str`
+
+<a id="respondactivitytaskfailedinputrequesttypedef"></a>
 
 ## RespondActivityTaskFailedInputRequestTypeDef
 
@@ -1617,6 +1801,8 @@ Optional fields:
 - `reason`: `str`
 - `details`: `str`
 
+<a id="responddecisiontaskcompletedinputrequesttypedef"></a>
+
 ## RespondDecisionTaskCompletedInputRequestTypeDef
 
 ```python
@@ -1632,6 +1818,8 @@ Optional fields:
 - `decisions`: `Sequence`\[[DecisionTypeDef](./type_defs.md#decisiontypedef)\]
 - `executionContext`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1646,6 +1834,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="runtypedef"></a>
+
 ## RunTypeDef
 
 ```python
@@ -1657,6 +1847,8 @@ Required fields:
 - `runId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="scheduleactivitytaskdecisionattributestypedef"></a>
 
 ## ScheduleActivityTaskDecisionAttributesTypeDef
 
@@ -1680,6 +1872,8 @@ Optional fields:
 - `startToCloseTimeout`: `str`
 - `heartbeatTimeout`: `str`
 
+<a id="scheduleactivitytaskfailedeventattributestypedef"></a>
+
 ## ScheduleActivityTaskFailedEventAttributesTypeDef
 
 ```python
@@ -1693,6 +1887,8 @@ Required fields:
 - `cause`:
   [ScheduleActivityTaskFailedCauseType](./literals.md#scheduleactivitytaskfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
+
+<a id="schedulelambdafunctiondecisionattributestypedef"></a>
 
 ## ScheduleLambdaFunctionDecisionAttributesTypeDef
 
@@ -1711,6 +1907,8 @@ Optional fields:
 - `input`: `str`
 - `startToCloseTimeout`: `str`
 
+<a id="schedulelambdafunctionfailedeventattributestypedef"></a>
+
 ## ScheduleLambdaFunctionFailedEventAttributesTypeDef
 
 ```python
@@ -1724,6 +1922,8 @@ Required fields:
 - `cause`:
   [ScheduleLambdaFunctionFailedCauseType](./literals.md#schedulelambdafunctionfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
+
+<a id="signalexternalworkflowexecutiondecisionattributestypedef"></a>
 
 ## SignalExternalWorkflowExecutionDecisionAttributesTypeDef
 
@@ -1741,6 +1941,8 @@ Optional fields:
 - `runId`: `str`
 - `input`: `str`
 - `control`: `str`
+
+<a id="signalexternalworkflowexecutionfailedeventattributestypedef"></a>
 
 ## SignalExternalWorkflowExecutionFailedEventAttributesTypeDef
 
@@ -1761,6 +1963,8 @@ Optional fields:
 - `runId`: `str`
 - `control`: `str`
 
+<a id="signalexternalworkflowexecutioninitiatedeventattributestypedef"></a>
+
 ## SignalExternalWorkflowExecutionInitiatedEventAttributesTypeDef
 
 ```python
@@ -1779,6 +1983,8 @@ Optional fields:
 - `input`: `str`
 - `control`: `str`
 
+<a id="signalworkflowexecutioninputrequesttypedef"></a>
+
 ## SignalWorkflowExecutionInputRequestTypeDef
 
 ```python
@@ -1795,6 +2001,8 @@ Optional fields:
 
 - `runId`: `str`
 - `input`: `str`
+
+<a id="startchildworkflowexecutiondecisionattributestypedef"></a>
 
 ## StartChildWorkflowExecutionDecisionAttributesTypeDef
 
@@ -1819,6 +2027,8 @@ Optional fields:
 - `tagList`: `Sequence`\[`str`\]
 - `lambdaRole`: `str`
 
+<a id="startchildworkflowexecutionfailedeventattributestypedef"></a>
+
 ## StartChildWorkflowExecutionFailedEventAttributesTypeDef
 
 ```python
@@ -1837,6 +2047,8 @@ Required fields:
 Optional fields:
 
 - `control`: `str`
+
+<a id="startchildworkflowexecutioninitiatedeventattributestypedef"></a>
 
 ## StartChildWorkflowExecutionInitiatedEventAttributesTypeDef
 
@@ -1862,6 +2074,8 @@ Optional fields:
 - `tagList`: `List`\[`str`\]
 - `lambdaRole`: `str`
 
+<a id="startlambdafunctionfailedeventattributestypedef"></a>
+
 ## StartLambdaFunctionFailedEventAttributesTypeDef
 
 ```python
@@ -1874,6 +2088,8 @@ Optional fields:
 - `cause`: `Literal['ASSUME_ROLE_FAILED']` (see
   [StartLambdaFunctionFailedCauseType](./literals.md#startlambdafunctionfailedcausetype))
 - `message`: `str`
+
+<a id="starttimerdecisionattributestypedef"></a>
 
 ## StartTimerDecisionAttributesTypeDef
 
@@ -1890,6 +2106,8 @@ Optional fields:
 
 - `control`: `str`
 
+<a id="starttimerfailedeventattributestypedef"></a>
+
 ## StartTimerFailedEventAttributesTypeDef
 
 ```python
@@ -1901,6 +2119,8 @@ Required fields:
 - `timerId`: `str`
 - `cause`: [StartTimerFailedCauseType](./literals.md#starttimerfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
+
+<a id="startworkflowexecutioninputrequesttypedef"></a>
 
 ## StartWorkflowExecutionInputRequestTypeDef
 
@@ -1925,6 +2145,8 @@ Optional fields:
 - `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `lambdaRole`: `str`
 
+<a id="tagfiltertypedef"></a>
+
 ## TagFilterTypeDef
 
 ```python
@@ -1934,6 +2156,8 @@ from mypy_boto3_swf.type_defs import TagFilterTypeDef
 Required fields:
 
 - `tag`: `str`
+
+<a id="tagresourceinputrequesttypedef"></a>
 
 ## TagResourceInputRequestTypeDef
 
@@ -1946,6 +2170,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
+<a id="tasklisttypedef"></a>
+
 ## TaskListTypeDef
 
 ```python
@@ -1955,6 +2181,8 @@ from mypy_boto3_swf.type_defs import TaskListTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="terminateworkflowexecutioninputrequesttypedef"></a>
 
 ## TerminateWorkflowExecutionInputRequestTypeDef
 
@@ -1974,6 +2202,8 @@ Optional fields:
 - `details`: `str`
 - `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 
+<a id="timercanceledeventattributestypedef"></a>
+
 ## TimerCanceledEventAttributesTypeDef
 
 ```python
@@ -1986,6 +2216,8 @@ Required fields:
 - `startedEventId`: `int`
 - `decisionTaskCompletedEventId`: `int`
 
+<a id="timerfiredeventattributestypedef"></a>
+
 ## TimerFiredEventAttributesTypeDef
 
 ```python
@@ -1996,6 +2228,8 @@ Required fields:
 
 - `timerId`: `str`
 - `startedEventId`: `int`
+
+<a id="timerstartedeventattributestypedef"></a>
 
 ## TimerStartedEventAttributesTypeDef
 
@@ -2013,6 +2247,8 @@ Optional fields:
 
 - `control`: `str`
 
+<a id="undeprecateactivitytypeinputrequesttypedef"></a>
+
 ## UndeprecateActivityTypeInputRequestTypeDef
 
 ```python
@@ -2024,6 +2260,8 @@ Required fields:
 - `domain`: `str`
 - `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
 
+<a id="undeprecatedomaininputrequesttypedef"></a>
+
 ## UndeprecateDomainInputRequestTypeDef
 
 ```python
@@ -2033,6 +2271,8 @@ from mypy_boto3_swf.type_defs import UndeprecateDomainInputRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="undeprecateworkflowtypeinputrequesttypedef"></a>
 
 ## UndeprecateWorkflowTypeInputRequestTypeDef
 
@@ -2045,6 +2285,8 @@ Required fields:
 - `domain`: `str`
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -2055,6 +2297,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="workflowexecutioncancelrequestedeventattributestypedef"></a>
 
 ## WorkflowExecutionCancelRequestedEventAttributesTypeDef
 
@@ -2070,6 +2314,8 @@ Optional fields:
 - `cause`: `Literal['CHILD_POLICY_APPLIED']` (see
   [WorkflowExecutionCancelRequestedCauseType](./literals.md#workflowexecutioncancelrequestedcausetype))
 
+<a id="workflowexecutioncanceledeventattributestypedef"></a>
+
 ## WorkflowExecutionCanceledEventAttributesTypeDef
 
 ```python
@@ -2084,6 +2330,8 @@ Optional fields:
 
 - `details`: `str`
 
+<a id="workflowexecutioncompletedeventattributestypedef"></a>
+
 ## WorkflowExecutionCompletedEventAttributesTypeDef
 
 ```python
@@ -2097,6 +2345,8 @@ Required fields:
 Optional fields:
 
 - `result`: `str`
+
+<a id="workflowexecutionconfigurationtypedef"></a>
 
 ## WorkflowExecutionConfigurationTypeDef
 
@@ -2115,6 +2365,8 @@ Optional fields:
 
 - `taskPriority`: `str`
 - `lambdaRole`: `str`
+
+<a id="workflowexecutioncontinuedasneweventattributestypedef"></a>
 
 ## WorkflowExecutionContinuedAsNewEventAttributesTypeDef
 
@@ -2139,6 +2391,8 @@ Optional fields:
 - `tagList`: `List`\[`str`\]
 - `lambdaRole`: `str`
 
+<a id="workflowexecutioncounttypedef"></a>
+
 ## WorkflowExecutionCountTypeDef
 
 ```python
@@ -2151,6 +2405,8 @@ Required fields:
 - `truncated`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="workflowexecutiondetailtypedef"></a>
 
 ## WorkflowExecutionDetailTypeDef
 
@@ -2171,6 +2427,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="workflowexecutionfailedeventattributestypedef"></a>
+
 ## WorkflowExecutionFailedEventAttributesTypeDef
 
 ```python
@@ -2186,6 +2444,8 @@ Optional fields:
 - `reason`: `str`
 - `details`: `str`
 
+<a id="workflowexecutionfiltertypedef"></a>
+
 ## WorkflowExecutionFilterTypeDef
 
 ```python
@@ -2195,6 +2455,8 @@ from mypy_boto3_swf.type_defs import WorkflowExecutionFilterTypeDef
 Required fields:
 
 - `workflowId`: `str`
+
+<a id="workflowexecutioninfotypedef"></a>
 
 ## WorkflowExecutionInfoTypeDef
 
@@ -2218,6 +2480,8 @@ Optional fields:
 - `tagList`: `List`\[`str`\]
 - `cancelRequested`: `bool`
 
+<a id="workflowexecutioninfostypedef"></a>
+
 ## WorkflowExecutionInfosTypeDef
 
 ```python
@@ -2231,6 +2495,8 @@ Required fields:
 - `nextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="workflowexecutionopencountstypedef"></a>
 
 ## WorkflowExecutionOpenCountsTypeDef
 
@@ -2249,6 +2515,8 @@ Optional fields:
 
 - `openLambdaFunctions`: `int`
 
+<a id="workflowexecutionsignaledeventattributestypedef"></a>
+
 ## WorkflowExecutionSignaledEventAttributesTypeDef
 
 ```python
@@ -2265,6 +2533,8 @@ Optional fields:
 - `externalWorkflowExecution`:
   [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `externalInitiatedEventId`: `int`
+
+<a id="workflowexecutionstartedeventattributestypedef"></a>
 
 ## WorkflowExecutionStartedEventAttributesTypeDef
 
@@ -2291,6 +2561,8 @@ Optional fields:
 - `parentInitiatedEventId`: `int`
 - `lambdaRole`: `str`
 
+<a id="workflowexecutionterminatedeventattributestypedef"></a>
+
 ## WorkflowExecutionTerminatedEventAttributesTypeDef
 
 ```python
@@ -2308,6 +2580,8 @@ Optional fields:
 - `cause`:
   [WorkflowExecutionTerminatedCauseType](./literals.md#workflowexecutionterminatedcausetype)
 
+<a id="workflowexecutiontimedouteventattributestypedef"></a>
+
 ## WorkflowExecutionTimedOutEventAttributesTypeDef
 
 ```python
@@ -2320,6 +2594,8 @@ Required fields:
   [WorkflowExecutionTimeoutTypeType](./literals.md#workflowexecutiontimeouttypetype))
 - `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 
+<a id="workflowexecutiontypedef"></a>
+
 ## WorkflowExecutionTypeDef
 
 ```python
@@ -2330,6 +2606,8 @@ Required fields:
 
 - `workflowId`: `str`
 - `runId`: `str`
+
+<a id="workflowtypeconfigurationtypedef"></a>
 
 ## WorkflowTypeConfigurationTypeDef
 
@@ -2346,6 +2624,8 @@ Optional fields:
 - `defaultChildPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `defaultLambdaRole`: `str`
 
+<a id="workflowtypedetailtypedef"></a>
+
 ## WorkflowTypeDetailTypeDef
 
 ```python
@@ -2360,6 +2640,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="workflowtypefiltertypedef"></a>
+
 ## WorkflowTypeFilterTypeDef
 
 ```python
@@ -2373,6 +2655,8 @@ Required fields:
 Optional fields:
 
 - `version`: `str`
+
+<a id="workflowtypeinfotypedef"></a>
 
 ## WorkflowTypeInfoTypeDef
 
@@ -2391,6 +2675,8 @@ Optional fields:
 - `description`: `str`
 - `deprecationDate`: `datetime`
 
+<a id="workflowtypeinfostypedef"></a>
+
 ## WorkflowTypeInfosTypeDef
 
 ```python
@@ -2404,6 +2690,8 @@ Required fields:
 - `nextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="workflowtypetypedef"></a>
 
 ## WorkflowTypeTypeDef
 

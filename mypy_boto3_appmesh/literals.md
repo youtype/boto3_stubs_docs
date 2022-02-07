@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-appmesh-module"></a>
+
 # Literals for boto3 AppMesh module
 
 > [Index](..) > [AppMesh](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
 type annotations stubs module
-[mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
+[mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 - [Literals for boto3 AppMesh module](#literals-for-boto3-appmesh-module)
   - [DefaultGatewayRouteRewriteType](#defaultgatewayrouterewritetype)
@@ -38,6 +40,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="defaultgatewayrouterewritetype"></a>
+
 ## DefaultGatewayRouteRewriteType
 
 ```python
@@ -48,6 +52,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="dnsresponsetypetype"></a>
 
 ## DnsResponseTypeType
 
@@ -60,6 +66,8 @@ Values:
 - `ENDPOINTS`
 - `LOADBALANCER`
 
+<a id="durationunittype"></a>
+
 ## DurationUnitType
 
 ```python
@@ -70,6 +78,8 @@ Values:
 
 - `ms`
 - `s`
+
+<a id="egressfiltertypetype"></a>
 
 ## EgressFilterTypeType
 
@@ -82,6 +92,8 @@ Values:
 - `ALLOW_ALL`
 - `DROP_ALL`
 
+<a id="gatewayroutestatuscodetype"></a>
+
 ## GatewayRouteStatusCodeType
 
 ```python
@@ -93,6 +105,8 @@ Values:
 - `ACTIVE`
 - `DELETED`
 - `INACTIVE`
+
+<a id="grpcretrypolicyeventtype"></a>
 
 ## GrpcRetryPolicyEventType
 
@@ -107,6 +121,8 @@ Values:
 - `internal`
 - `resource-exhausted`
 - `unavailable`
+
+<a id="httpmethodtype"></a>
 
 ## HttpMethodType
 
@@ -126,6 +142,8 @@ Values:
 - `PUT`
 - `TRACE`
 
+<a id="httpschemetype"></a>
+
 ## HttpSchemeType
 
 ```python
@@ -137,6 +155,8 @@ Values:
 - `http`
 - `https`
 
+<a id="listgatewayroutespaginatorname"></a>
+
 ## ListGatewayRoutesPaginatorName
 
 ```python
@@ -146,6 +166,8 @@ from mypy_boto3_appmesh.literals import ListGatewayRoutesPaginatorName
 Values:
 
 - `list_gateway_routes`
+
+<a id="listmeshespaginatorname"></a>
 
 ## ListMeshesPaginatorName
 
@@ -157,6 +179,8 @@ Values:
 
 - `list_meshes`
 
+<a id="listroutespaginatorname"></a>
+
 ## ListRoutesPaginatorName
 
 ```python
@@ -166,6 +190,8 @@ from mypy_boto3_appmesh.literals import ListRoutesPaginatorName
 Values:
 
 - `list_routes`
+
+<a id="listtagsforresourcepaginatorname"></a>
 
 ## ListTagsForResourcePaginatorName
 
@@ -177,6 +203,8 @@ Values:
 
 - `list_tags_for_resource`
 
+<a id="listvirtualgatewayspaginatorname"></a>
+
 ## ListVirtualGatewaysPaginatorName
 
 ```python
@@ -186,6 +214,8 @@ from mypy_boto3_appmesh.literals import ListVirtualGatewaysPaginatorName
 Values:
 
 - `list_virtual_gateways`
+
+<a id="listvirtualnodespaginatorname"></a>
 
 ## ListVirtualNodesPaginatorName
 
@@ -197,6 +227,8 @@ Values:
 
 - `list_virtual_nodes`
 
+<a id="listvirtualrouterspaginatorname"></a>
+
 ## ListVirtualRoutersPaginatorName
 
 ```python
@@ -207,6 +239,8 @@ Values:
 
 - `list_virtual_routers`
 
+<a id="listvirtualservicespaginatorname"></a>
+
 ## ListVirtualServicesPaginatorName
 
 ```python
@@ -216,6 +250,8 @@ from mypy_boto3_appmesh.literals import ListVirtualServicesPaginatorName
 Values:
 
 - `list_virtual_services`
+
+<a id="listenertlsmodetype"></a>
 
 ## ListenerTlsModeType
 
@@ -229,6 +265,8 @@ Values:
 - `PERMISSIVE`
 - `STRICT`
 
+<a id="meshstatuscodetype"></a>
+
 ## MeshStatusCodeType
 
 ```python
@@ -240,6 +278,8 @@ Values:
 - `ACTIVE`
 - `DELETED`
 - `INACTIVE`
+
+<a id="portprotocoltype"></a>
 
 ## PortProtocolType
 
@@ -254,6 +294,8 @@ Values:
 - `http2`
 - `tcp`
 
+<a id="routestatuscodetype"></a>
+
 ## RouteStatusCodeType
 
 ```python
@@ -266,6 +308,8 @@ Values:
 - `DELETED`
 - `INACTIVE`
 
+<a id="tcpretrypolicyeventtype"></a>
+
 ## TcpRetryPolicyEventType
 
 ```python
@@ -275,6 +319,8 @@ from mypy_boto3_appmesh.literals import TcpRetryPolicyEventType
 Values:
 
 - `connection-error`
+
+<a id="virtualgatewaylistenertlsmodetype"></a>
 
 ## VirtualGatewayListenerTlsModeType
 
@@ -288,6 +334,8 @@ Values:
 - `PERMISSIVE`
 - `STRICT`
 
+<a id="virtualgatewayportprotocoltype"></a>
+
 ## VirtualGatewayPortProtocolType
 
 ```python
@@ -299,6 +347,8 @@ Values:
 - `grpc`
 - `http`
 - `http2`
+
+<a id="virtualgatewaystatuscodetype"></a>
 
 ## VirtualGatewayStatusCodeType
 
@@ -312,6 +362,8 @@ Values:
 - `DELETED`
 - `INACTIVE`
 
+<a id="virtualnodestatuscodetype"></a>
+
 ## VirtualNodeStatusCodeType
 
 ```python
@@ -323,6 +375,8 @@ Values:
 - `ACTIVE`
 - `DELETED`
 - `INACTIVE`
+
+<a id="virtualrouterstatuscodetype"></a>
 
 ## VirtualRouterStatusCodeType
 
@@ -336,6 +390,8 @@ Values:
 - `DELETED`
 - `INACTIVE`
 
+<a id="virtualservicestatuscodetype"></a>
+
 ## VirtualServiceStatusCodeType
 
 ```python
@@ -347,6 +403,8 @@ Values:
 - `ACTIVE`
 - `DELETED`
 - `INACTIVE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -655,6 +713,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

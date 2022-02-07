@@ -1,3 +1,5 @@
+<a id="rekognitionclient-for-boto3-rekognition-module"></a>
+
 # RekognitionClient for boto3 Rekognition module
 
 > [Index](..) > [Rekognition](.) > RekognitionClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
-[mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
+[mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 - [RekognitionClient for boto3 Rekognition module](#rekognitionclient-for-boto3-rekognition-module)
   - [RekognitionClient](#rekognitionclient)
@@ -75,6 +77,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="rekognitionclient"></a>
+
 ## RekognitionClient
 
 Type annotations for `boto3.client("rekognition")`
@@ -82,14 +86,17 @@ Type annotations for `boto3.client("rekognition")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_rekognition.client import RekognitionClient
 
 def get_rekognition_client() -> RekognitionClient:
-    return boto3.client("rekognition")
+    return Session().client("rekognition")
 ```
 
 Boto3 documentation:
 [Rekognition.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -125,7 +132,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.VideoTooLargeException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -137,6 +148,8 @@ Boto3 documentation:
 [Rekognition.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -152,6 +165,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="compare_faces"></a>
 
 ### compare_faces
 
@@ -176,6 +191,8 @@ Keyword-only arguments:
 Returns
 [CompareFacesResponseTypeDef](./type_defs.md#comparefacesresponsetypedef).
 
+<a id="create_collection"></a>
+
 ### create_collection
 
 Creates a collection in an AWS Region.
@@ -195,6 +212,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCollectionResponseTypeDef](./type_defs.md#createcollectionresponsetypedef).
+
+<a id="create_dataset"></a>
 
 ### create_dataset
 
@@ -217,6 +236,8 @@ Keyword-only arguments:
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
+<a id="create_project"></a>
+
 ### create_project
 
 Creates a new Amazon Rekognition Custom Labels project.
@@ -235,6 +256,8 @@ Keyword-only arguments:
 
 Returns
 [CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
+
+<a id="create_project_version"></a>
 
 ### create_project_version
 
@@ -262,6 +285,8 @@ Keyword-only arguments:
 
 Returns
 [CreateProjectVersionResponseTypeDef](./type_defs.md#createprojectversionresponsetypedef).
+
+<a id="create_stream_processor"></a>
 
 ### create_stream_processor
 
@@ -295,6 +320,8 @@ Keyword-only arguments:
 Returns
 [CreateStreamProcessorResponseTypeDef](./type_defs.md#createstreamprocessorresponsetypedef).
 
+<a id="delete_collection"></a>
+
 ### delete_collection
 
 Deletes the specified collection.
@@ -314,6 +341,8 @@ Keyword-only arguments:
 Returns
 [DeleteCollectionResponseTypeDef](./type_defs.md#deletecollectionresponsetypedef).
 
+<a id="delete_dataset"></a>
+
 ### delete_dataset
 
 Deletes an existing Amazon Rekognition Custom Labels dataset.
@@ -331,6 +360,8 @@ Keyword-only arguments:
 - `DatasetArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_faces"></a>
 
 ### delete_faces
 
@@ -352,6 +383,8 @@ Keyword-only arguments:
 Returns
 [DeleteFacesResponseTypeDef](./type_defs.md#deletefacesresponsetypedef).
 
+<a id="delete_project"></a>
+
 ### delete_project
 
 Deletes an Amazon Rekognition Custom Labels project.
@@ -370,6 +403,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
+
+<a id="delete_project_version"></a>
 
 ### delete_project_version
 
@@ -391,6 +426,8 @@ Keyword-only arguments:
 Returns
 [DeleteProjectVersionResponseTypeDef](./type_defs.md#deleteprojectversionresponsetypedef).
 
+<a id="delete_stream_processor"></a>
+
 ### delete_stream_processor
 
 Deletes the stream processor identified by `Name`.
@@ -409,6 +446,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_collection"></a>
 
 ### describe_collection
 
@@ -429,6 +468,8 @@ Keyword-only arguments:
 Returns
 [DescribeCollectionResponseTypeDef](./type_defs.md#describecollectionresponsetypedef).
 
+<a id="describe_dataset"></a>
+
 ### describe_dataset
 
 Describes an Amazon Rekognition Custom Labels dataset.
@@ -447,6 +488,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+
+<a id="describe_project_versions"></a>
 
 ### describe_project_versions
 
@@ -472,6 +515,8 @@ Keyword-only arguments:
 Returns
 [DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef).
 
+<a id="describe_projects"></a>
+
 ### describe_projects
 
 Gets information about your Amazon Rekognition Custom Labels projects.
@@ -493,6 +538,8 @@ Keyword-only arguments:
 Returns
 [DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef).
 
+<a id="describe_stream_processor"></a>
+
 ### describe_stream_processor
 
 Provides information about a stream processor created by CreateStreamProcessor.
@@ -512,6 +559,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStreamProcessorResponseTypeDef](./type_defs.md#describestreamprocessorresponsetypedef).
+
+<a id="detect_custom_labels"></a>
 
 ### detect_custom_labels
 
@@ -536,6 +585,8 @@ Keyword-only arguments:
 Returns
 [DetectCustomLabelsResponseTypeDef](./type_defs.md#detectcustomlabelsresponsetypedef).
 
+<a id="detect_faces"></a>
+
 ### detect_faces
 
 Detects faces within an image that is provided as input.
@@ -555,6 +606,8 @@ Keyword-only arguments:
 
 Returns
 [DetectFacesResponseTypeDef](./type_defs.md#detectfacesresponsetypedef).
+
+<a id="detect_labels"></a>
 
 ### detect_labels
 
@@ -577,6 +630,8 @@ Keyword-only arguments:
 
 Returns
 [DetectLabelsResponseTypeDef](./type_defs.md#detectlabelsresponsetypedef).
+
+<a id="detect_moderation_labels"></a>
 
 ### detect_moderation_labels
 
@@ -601,6 +656,8 @@ Keyword-only arguments:
 Returns
 [DetectModerationLabelsResponseTypeDef](./type_defs.md#detectmoderationlabelsresponsetypedef).
 
+<a id="detect_protective_equipment"></a>
+
 ### detect_protective_equipment
 
 Detects Personal Protective Equipment (PPE) worn by people detected in an
@@ -624,6 +681,8 @@ Keyword-only arguments:
 Returns
 [DetectProtectiveEquipmentResponseTypeDef](./type_defs.md#detectprotectiveequipmentresponsetypedef).
 
+<a id="detect_text"></a>
+
 ### detect_text
 
 Detects text in the input image and converts it into machine-readable text.
@@ -643,6 +702,8 @@ Keyword-only arguments:
   [DetectTextFiltersTypeDef](./type_defs.md#detecttextfilterstypedef)
 
 Returns [DetectTextResponseTypeDef](./type_defs.md#detecttextresponsetypedef).
+
+<a id="distribute_dataset_entries"></a>
 
 ### distribute_dataset_entries
 
@@ -666,6 +727,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -684,6 +747,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_celebrity_info"></a>
 
 ### get_celebrity_info
 
@@ -704,6 +769,8 @@ Keyword-only arguments:
 
 Returns
 [GetCelebrityInfoResponseTypeDef](./type_defs.md#getcelebrityinforesponsetypedef).
+
+<a id="get_celebrity_recognition"></a>
 
 ### get_celebrity_recognition
 
@@ -730,6 +797,8 @@ Keyword-only arguments:
 Returns
 [GetCelebrityRecognitionResponseTypeDef](./type_defs.md#getcelebrityrecognitionresponsetypedef).
 
+<a id="get_content_moderation"></a>
+
 ### get_content_moderation
 
 Gets the inappropriate, unwanted, or offensive content analysis results for a
@@ -755,6 +824,8 @@ Keyword-only arguments:
 Returns
 [GetContentModerationResponseTypeDef](./type_defs.md#getcontentmoderationresponsetypedef).
 
+<a id="get_face_detection"></a>
+
 ### get_face_detection
 
 Gets face detection results for a Amazon Rekognition Video analysis started by
@@ -776,6 +847,8 @@ Keyword-only arguments:
 
 Returns
 [GetFaceDetectionResponseTypeDef](./type_defs.md#getfacedetectionresponsetypedef).
+
+<a id="get_face_search"></a>
 
 ### get_face_search
 
@@ -800,6 +873,8 @@ Keyword-only arguments:
 Returns
 [GetFaceSearchResponseTypeDef](./type_defs.md#getfacesearchresponsetypedef).
 
+<a id="get_label_detection"></a>
+
 ### get_label_detection
 
 Gets the label detection results of a Amazon Rekognition Video analysis started
@@ -822,6 +897,8 @@ Keyword-only arguments:
 
 Returns
 [GetLabelDetectionResponseTypeDef](./type_defs.md#getlabeldetectionresponsetypedef).
+
+<a id="get_person_tracking"></a>
 
 ### get_person_tracking
 
@@ -846,6 +923,8 @@ Keyword-only arguments:
 Returns
 [GetPersonTrackingResponseTypeDef](./type_defs.md#getpersontrackingresponsetypedef).
 
+<a id="get_segment_detection"></a>
+
 ### get_segment_detection
 
 Gets the segment detection results of a Amazon Rekognition Video analysis
@@ -869,6 +948,8 @@ Keyword-only arguments:
 Returns
 [GetSegmentDetectionResponseTypeDef](./type_defs.md#getsegmentdetectionresponsetypedef).
 
+<a id="get_text_detection"></a>
+
 ### get_text_detection
 
 Gets the text detection results of a Amazon Rekognition Video analysis started
@@ -890,6 +971,8 @@ Keyword-only arguments:
 
 Returns
 [GetTextDetectionResponseTypeDef](./type_defs.md#gettextdetectionresponsetypedef).
+
+<a id="index_faces"></a>
 
 ### index_faces
 
@@ -915,6 +998,8 @@ Keyword-only arguments:
 
 Returns [IndexFacesResponseTypeDef](./type_defs.md#indexfacesresponsetypedef).
 
+<a id="list_collections"></a>
+
 ### list_collections
 
 Returns list of collection IDs in your account.
@@ -934,6 +1019,8 @@ Keyword-only arguments:
 
 Returns
 [ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef).
+
+<a id="list_dataset_entries"></a>
 
 ### list_dataset_entries
 
@@ -960,6 +1047,8 @@ Keyword-only arguments:
 Returns
 [ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef).
 
+<a id="list_dataset_labels"></a>
+
 ### list_dataset_labels
 
 Lists the labels in a dataset.
@@ -981,6 +1070,8 @@ Keyword-only arguments:
 Returns
 [ListDatasetLabelsResponseTypeDef](./type_defs.md#listdatasetlabelsresponsetypedef).
 
+<a id="list_faces"></a>
+
 ### list_faces
 
 Returns metadata for faces in the specified collection.
@@ -1000,6 +1091,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef).
+
+<a id="list_stream_processors"></a>
 
 ### list_stream_processors
 
@@ -1023,6 +1116,8 @@ Keyword-only arguments:
 Returns
 [ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of tags in an Amazon Rekognition collection, stream processor,
@@ -1044,6 +1139,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="recognize_celebrities"></a>
+
 ### recognize_celebrities
 
 Returns an array of celebrities recognized in the input image.
@@ -1063,6 +1160,8 @@ Keyword-only arguments:
 
 Returns
 [RecognizeCelebritiesResponseTypeDef](./type_defs.md#recognizecelebritiesresponsetypedef).
+
+<a id="search_faces"></a>
 
 ### search_faces
 
@@ -1086,6 +1185,8 @@ Keyword-only arguments:
 
 Returns
 [SearchFacesResponseTypeDef](./type_defs.md#searchfacesresponsetypedef).
+
+<a id="search_faces_by_image"></a>
 
 ### search_faces_by_image
 
@@ -1112,6 +1213,8 @@ Keyword-only arguments:
 Returns
 [SearchFacesByImageResponseTypeDef](./type_defs.md#searchfacesbyimageresponsetypedef).
 
+<a id="start_celebrity_recognition"></a>
+
 ### start_celebrity_recognition
 
 Starts asynchronous recognition of celebrities in a stored video.
@@ -1135,6 +1238,8 @@ Keyword-only arguments:
 
 Returns
 [StartCelebrityRecognitionResponseTypeDef](./type_defs.md#startcelebrityrecognitionresponsetypedef).
+
+<a id="start_content_moderation"></a>
 
 ### start_content_moderation
 
@@ -1162,6 +1267,8 @@ Keyword-only arguments:
 Returns
 [StartContentModerationResponseTypeDef](./type_defs.md#startcontentmoderationresponsetypedef).
 
+<a id="start_face_detection"></a>
+
 ### start_face_detection
 
 Starts asynchronous detection of faces in a stored video.
@@ -1185,6 +1292,8 @@ Keyword-only arguments:
 
 Returns
 [StartFaceDetectionResponseTypeDef](./type_defs.md#startfacedetectionresponsetypedef).
+
+<a id="start_face_search"></a>
 
 ### start_face_search
 
@@ -1212,6 +1321,8 @@ Keyword-only arguments:
 Returns
 [StartFaceSearchResponseTypeDef](./type_defs.md#startfacesearchresponsetypedef).
 
+<a id="start_label_detection"></a>
+
 ### start_label_detection
 
 Starts asynchronous detection of labels in a stored video.
@@ -1237,6 +1348,8 @@ Keyword-only arguments:
 Returns
 [StartLabelDetectionResponseTypeDef](./type_defs.md#startlabeldetectionresponsetypedef).
 
+<a id="start_person_tracking"></a>
+
 ### start_person_tracking
 
 Starts the asynchronous tracking of a person's path in a stored video.
@@ -1261,6 +1374,8 @@ Keyword-only arguments:
 Returns
 [StartPersonTrackingResponseTypeDef](./type_defs.md#startpersontrackingresponsetypedef).
 
+<a id="start_project_version"></a>
+
 ### start_project_version
 
 Starts the running of the version of a model.
@@ -1281,6 +1396,8 @@ Keyword-only arguments:
 
 Returns
 [StartProjectVersionResponseTypeDef](./type_defs.md#startprojectversionresponsetypedef).
+
+<a id="start_segment_detection"></a>
 
 ### start_segment_detection
 
@@ -1310,6 +1427,8 @@ Keyword-only arguments:
 Returns
 [StartSegmentDetectionResponseTypeDef](./type_defs.md#startsegmentdetectionresponsetypedef).
 
+<a id="start_stream_processor"></a>
+
 ### start_stream_processor
 
 Starts processing a stream processor.
@@ -1328,6 +1447,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_text_detection"></a>
 
 ### start_text_detection
 
@@ -1354,6 +1475,8 @@ Keyword-only arguments:
 Returns
 [StartTextDetectionResponseTypeDef](./type_defs.md#starttextdetectionresponsetypedef).
 
+<a id="stop_project_version"></a>
+
 ### stop_project_version
 
 Stops a running model.
@@ -1373,6 +1496,8 @@ Keyword-only arguments:
 Returns
 [StopProjectVersionResponseTypeDef](./type_defs.md#stopprojectversionresponsetypedef).
 
+<a id="stop_stream_processor"></a>
+
 ### stop_stream_processor
 
 Stops a running stream processor that was created by CreateStreamProcessor .
@@ -1391,6 +1516,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -1412,6 +1539,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from an Amazon Rekognition collection, stream
@@ -1431,6 +1560,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_dataset_entries"></a>
 
 ### update_dataset_entries
 
@@ -1453,6 +1584,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("rekognition").get_paginator` method with
@@ -1472,6 +1605,8 @@ overloads.
   [ListFacesPaginator](./paginators.md#listfacespaginator)
 - `client.get_paginator("list_stream_processors")` ->
   [ListStreamProcessorsPaginator](./paginators.md#liststreamprocessorspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

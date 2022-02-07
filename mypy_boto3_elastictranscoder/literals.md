@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-elastictranscoder-module"></a>
+
 # Literals for boto3 ElasticTranscoder module
 
 > [Index](..) > [ElasticTranscoder](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module
-[mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+[mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 - [Literals for boto3 ElasticTranscoder module](#literals-for-boto3-elastictranscoder-module)
   - [JobCompleteWaiterName](#jobcompletewaitername)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="jobcompletewaitername"></a>
+
 ## JobCompleteWaiterName
 
 ```python
@@ -26,6 +30,8 @@ from mypy_boto3_elastictranscoder.literals import JobCompleteWaiterName
 Values:
 
 - `job_complete`
+
+<a id="listjobsbypipelinepaginatorname"></a>
 
 ## ListJobsByPipelinePaginatorName
 
@@ -37,6 +43,8 @@ Values:
 
 - `list_jobs_by_pipeline`
 
+<a id="listjobsbystatuspaginatorname"></a>
+
 ## ListJobsByStatusPaginatorName
 
 ```python
@@ -46,6 +54,8 @@ from mypy_boto3_elastictranscoder.literals import ListJobsByStatusPaginatorName
 Values:
 
 - `list_jobs_by_status`
+
+<a id="listpipelinespaginatorname"></a>
 
 ## ListPipelinesPaginatorName
 
@@ -57,6 +67,8 @@ Values:
 
 - `list_pipelines`
 
+<a id="listpresetspaginatorname"></a>
+
 ## ListPresetsPaginatorName
 
 ```python
@@ -66,6 +78,8 @@ from mypy_boto3_elastictranscoder.literals import ListPresetsPaginatorName
 Values:
 
 - `list_presets`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -375,6 +389,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -387,6 +403,8 @@ Values:
 - `list_jobs_by_status`
 - `list_pipelines`
 - `list_presets`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

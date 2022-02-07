@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-mediaconnect-module"></a>
+
 # Type annotations for boto3 MediaConnect module
 
 > [Index](..) > MediaConnect
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
-[mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
+[mypy-boto3-mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[mediaconnect]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[mediaconnect]'
+
+# standalone installation
 pip install mypy-boto3-mediaconnect
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-mediaconnect
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="mediaconnectclient"></a>
+
 ## MediaConnectClient
 
 Type annotations for `boto3.client("mediaconnect")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_mediaconnect.client import MediaConnectClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -69,6 +83,8 @@ from mypy_boto3_mediaconnect.client import MediaConnectClient
 - [update_flow_output](./client.md#update_flow_output)
 - [update_flow_source](./client.md#update_flow_source)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MediaConnectClient [exceptions](./client.md#exceptions)
@@ -84,6 +100,8 @@ MediaConnectClient [exceptions](./client.md#exceptions)
 - ServiceUnavailableException
 - TooManyRequestsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -92,13 +110,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconnect.paginators import ListEntitlementsPaginator, ...
+from mypy_boto3_mediaconnect.paginator import ListEntitlementsPaginator, ...
 ```
 
 - [ListEntitlementsPaginator](./paginators.md#listentitlementspaginator)
 - [ListFlowsPaginator](./paginators.md#listflowspaginator)
 - [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
 - [ListReservationsPaginator](./paginators.md#listreservationspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -108,12 +128,14 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconnect.waiters import FlowActiveWaiter, ...
+from mypy_boto3_mediaconnect.waiter import FlowActiveWaiter, ...
 ```
 
 - [FlowActiveWaiter](./waiters.md#flowactivewaiter)
 - [FlowDeletedWaiter](./waiters.md#flowdeletedwaiter)
 - [FlowStandbyWaiter](./waiters.md#flowstandbywaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -155,6 +177,8 @@ from mypy_boto3_mediaconnect.literals import AlgorithmType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

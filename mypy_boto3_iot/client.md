@@ -1,3 +1,5 @@
+<a id="iotclient-for-boto3-iot-module"></a>
+
 # IoTClient for boto3 IoT module
 
 > [Index](..) > [IoT](.) > IoTClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
 type annotations stubs module
-[mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
+[mypy-boto3-iot](https://pypi.org/project/mypy-boto3-iot/).
 
 - [IoTClient for boto3 IoT module](#iotclient-for-boto3-iot-module)
   - [IoTClient](#iotclient)
@@ -252,6 +254,8 @@ type annotations stubs module
     - [validate_security_profile_behaviors](#validate_security_profile_behaviors)
     - [get_paginator](#get_paginator)
 
+<a id="iotclient"></a>
+
 ## IoTClient
 
 Type annotations for `boto3.client("iot")`
@@ -259,14 +263,17 @@ Type annotations for `boto3.client("iot")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iot.client import IoTClient
 
 def get_iot_client() -> IoTClient:
-    return boto3.client("iot")
+    return Session().client("iot")
 ```
 
 Boto3 documentation:
 [IoT.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -315,7 +322,11 @@ Exceptions:
 - `Exceptions.VersionConflictException`
 - `Exceptions.VersionsLimitExceededException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -327,6 +338,8 @@ Boto3 documentation:
 [IoT.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_certificate_transfer"></a>
 
 ### accept_certificate_transfer
 
@@ -344,6 +357,8 @@ Keyword-only arguments:
 
 - `certificateId`: `str` *(required)*
 - `setAsActive`: `bool`
+
+<a id="add_thing_to_billing_group"></a>
 
 ### add_thing_to_billing_group
 
@@ -365,6 +380,8 @@ Keyword-only arguments:
 - `thingArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="add_thing_to_thing_group"></a>
 
 ### add_thing_to_thing_group
 
@@ -388,6 +405,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_targets_with_job"></a>
+
 ### associate_targets_with_job
 
 Associates a group with a continuous job.
@@ -410,6 +429,8 @@ Keyword-only arguments:
 Returns
 [AssociateTargetsWithJobResponseTypeDef](./type_defs.md#associatetargetswithjobresponsetypedef).
 
+<a id="attach_policy"></a>
+
 ### attach_policy
 
 Attaches the specified policy to the specified principal (certificate or other
@@ -428,6 +449,8 @@ Keyword-only arguments:
 - `policyName`: `str` *(required)*
 - `target`: `str` *(required)*
 
+<a id="attach_principal_policy"></a>
+
 ### attach_principal_policy
 
 Attaches the specified policy to the specified principal (certificate or other
@@ -445,6 +468,8 @@ Keyword-only arguments:
 
 - `policyName`: `str` *(required)*
 - `principal`: `str` *(required)*
+
+<a id="attach_security_profile"></a>
 
 ### attach_security_profile
 
@@ -466,6 +491,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="attach_thing_principal"></a>
+
 ### attach_thing_principal
 
 Attaches the specified principal to the specified thing.
@@ -485,6 +512,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -499,6 +528,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_audit_mitigation_actions_task"></a>
 
 ### cancel_audit_mitigation_actions_task
 
@@ -519,6 +550,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="cancel_audit_task"></a>
+
 ### cancel_audit_task
 
 Cancels an audit that is in progress.
@@ -537,6 +570,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="cancel_certificate_transfer"></a>
+
 ### cancel_certificate_transfer
 
 Cancels a pending transfer for the specified certificate.
@@ -552,6 +587,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `certificateId`: `str` *(required)*
+
+<a id="cancel_detect_mitigation_actions_task"></a>
 
 ### cancel_detect_mitigation_actions_task
 
@@ -571,6 +608,8 @@ Keyword-only arguments:
 - `taskId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="cancel_job"></a>
 
 ### cancel_job
 
@@ -593,6 +632,8 @@ Keyword-only arguments:
 
 Returns [CancelJobResponseTypeDef](./type_defs.md#canceljobresponsetypedef).
 
+<a id="cancel_job_execution"></a>
+
 ### cancel_job_execution
 
 Cancels the execution of a job for a given thing.
@@ -613,6 +654,8 @@ Keyword-only arguments:
 - `expectedVersion`: `int`
 - `statusDetails`: `Mapping`\[`str`, `str`\]
 
+<a id="clear_default_authorizer"></a>
+
 ### clear_default_authorizer
 
 Clears the default authorizer.
@@ -623,6 +666,8 @@ Boto3 documentation:
 [IoT.Client.clear_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.clear_default_authorizer)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="confirm_topic_rule_destination"></a>
 
 ### confirm_topic_rule_destination
 
@@ -642,6 +687,8 @@ Keyword-only arguments:
 - `confirmationToken`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_audit_suppression"></a>
 
 ### create_audit_suppression
 
@@ -667,6 +714,8 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_authorizer"></a>
 
 ### create_authorizer
 
@@ -694,6 +743,8 @@ Keyword-only arguments:
 Returns
 [CreateAuthorizerResponseTypeDef](./type_defs.md#createauthorizerresponsetypedef).
 
+<a id="create_billing_group"></a>
+
 ### create_billing_group
 
 Creates a billing group.
@@ -716,6 +767,8 @@ Keyword-only arguments:
 Returns
 [CreateBillingGroupResponseTypeDef](./type_defs.md#createbillinggroupresponsetypedef).
 
+<a id="create_certificate_from_csr"></a>
+
 ### create_certificate_from_csr
 
 Creates an X.509 certificate using the specified certificate signing request.
@@ -735,6 +788,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCertificateFromCsrResponseTypeDef](./type_defs.md#createcertificatefromcsrresponsetypedef).
+
+<a id="create_custom_metric"></a>
 
 ### create_custom_metric
 
@@ -761,6 +816,8 @@ Keyword-only arguments:
 Returns
 [CreateCustomMetricResponseTypeDef](./type_defs.md#createcustommetricresponsetypedef).
 
+<a id="create_dimension"></a>
+
 ### create_dimension
 
 Create a dimension that you can use to limit the scope of a metric used in a
@@ -785,6 +842,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDimensionResponseTypeDef](./type_defs.md#createdimensionresponsetypedef).
+
+<a id="create_domain_configuration"></a>
 
 ### create_domain_configuration
 
@@ -812,6 +871,8 @@ Keyword-only arguments:
 Returns
 [CreateDomainConfigurationResponseTypeDef](./type_defs.md#createdomainconfigurationresponsetypedef).
 
+<a id="create_dynamic_thing_group"></a>
+
 ### create_dynamic_thing_group
 
 Creates a dynamic thing group.
@@ -836,6 +897,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDynamicThingGroupResponseTypeDef](./type_defs.md#createdynamicthinggroupresponsetypedef).
+
+<a id="create_fleet_metric"></a>
 
 ### create_fleet_metric
 
@@ -865,6 +928,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFleetMetricResponseTypeDef](./type_defs.md#createfleetmetricresponsetypedef).
+
+<a id="create_job"></a>
 
 ### create_job
 
@@ -901,6 +966,8 @@ Keyword-only arguments:
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
+<a id="create_job_template"></a>
+
 ### create_job_template
 
 Creates a job template.
@@ -933,6 +1000,8 @@ Keyword-only arguments:
 Returns
 [CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
 
+<a id="create_keys_and_certificate"></a>
+
 ### create_keys_and_certificate
 
 Creates a 2048-bit RSA key pair and issues an X.509 certificate using the
@@ -952,6 +1021,8 @@ Keyword-only arguments:
 
 Returns
 [CreateKeysAndCertificateResponseTypeDef](./type_defs.md#createkeysandcertificateresponsetypedef).
+
+<a id="create_mitigation_action"></a>
 
 ### create_mitigation_action
 
@@ -977,6 +1048,8 @@ Keyword-only arguments:
 
 Returns
 [CreateMitigationActionResponseTypeDef](./type_defs.md#createmitigationactionresponsetypedef).
+
+<a id="create_ota_update"></a>
 
 ### create_ota_update
 
@@ -1015,6 +1088,8 @@ Keyword-only arguments:
 Returns
 [CreateOTAUpdateResponseTypeDef](./type_defs.md#createotaupdateresponsetypedef).
 
+<a id="create_policy"></a>
+
 ### create_policy
 
 Creates an IoT policy.
@@ -1035,6 +1110,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
+
+<a id="create_policy_version"></a>
 
 ### create_policy_version
 
@@ -1057,6 +1134,8 @@ Keyword-only arguments:
 Returns
 [CreatePolicyVersionResponseTypeDef](./type_defs.md#createpolicyversionresponsetypedef).
 
+<a id="create_provisioning_claim"></a>
+
 ### create_provisioning_claim
 
 Creates a provisioning claim.
@@ -1075,6 +1154,8 @@ Keyword-only arguments:
 
 Returns
 [CreateProvisioningClaimResponseTypeDef](./type_defs.md#createprovisioningclaimresponsetypedef).
+
+<a id="create_provisioning_template"></a>
 
 ### create_provisioning_template
 
@@ -1102,6 +1183,8 @@ Keyword-only arguments:
 Returns
 [CreateProvisioningTemplateResponseTypeDef](./type_defs.md#createprovisioningtemplateresponsetypedef).
 
+<a id="create_provisioning_template_version"></a>
+
 ### create_provisioning_template_version
 
 Creates a new version of a fleet provisioning template.
@@ -1124,6 +1207,8 @@ Keyword-only arguments:
 Returns
 [CreateProvisioningTemplateVersionResponseTypeDef](./type_defs.md#createprovisioningtemplateversionresponsetypedef).
 
+<a id="create_role_alias"></a>
+
 ### create_role_alias
 
 Creates a role alias.
@@ -1145,6 +1230,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRoleAliasResponseTypeDef](./type_defs.md#createrolealiasresponsetypedef).
+
+<a id="create_scheduled_audit"></a>
 
 ### create_scheduled_audit
 
@@ -1170,6 +1257,8 @@ Keyword-only arguments:
 
 Returns
 [CreateScheduledAuditResponseTypeDef](./type_defs.md#createscheduledauditresponsetypedef).
+
+<a id="create_security_profile"></a>
 
 ### create_security_profile
 
@@ -1199,6 +1288,8 @@ Keyword-only arguments:
 Returns
 [CreateSecurityProfileResponseTypeDef](./type_defs.md#createsecurityprofileresponsetypedef).
 
+<a id="create_stream"></a>
+
 ### create_stream
 
 Creates a stream for delivering one or more large files in chunks over MQTT.
@@ -1223,6 +1314,8 @@ Keyword-only arguments:
 Returns
 [CreateStreamResponseTypeDef](./type_defs.md#createstreamresponsetypedef).
 
+<a id="create_thing"></a>
+
 ### create_thing
 
 Creates a thing record in the registry.
@@ -1245,6 +1338,8 @@ Keyword-only arguments:
 
 Returns
 [CreateThingResponseTypeDef](./type_defs.md#createthingresponsetypedef).
+
+<a id="create_thing_group"></a>
 
 ### create_thing_group
 
@@ -1269,6 +1364,8 @@ Keyword-only arguments:
 Returns
 [CreateThingGroupResponseTypeDef](./type_defs.md#createthinggroupresponsetypedef).
 
+<a id="create_thing_type"></a>
+
 ### create_thing_type
 
 Creates a new thing type.
@@ -1291,6 +1388,8 @@ Keyword-only arguments:
 Returns
 [CreateThingTypeResponseTypeDef](./type_defs.md#createthingtyperesponsetypedef).
 
+<a id="create_topic_rule"></a>
+
 ### create_topic_rule
 
 .
@@ -1310,6 +1409,8 @@ Keyword-only arguments:
   [TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef)
   *(required)*
 - `tags`: `str`
+
+<a id="create_topic_rule_destination"></a>
 
 ### create_topic_rule_destination
 
@@ -1333,6 +1434,8 @@ Keyword-only arguments:
 Returns
 [CreateTopicRuleDestinationResponseTypeDef](./type_defs.md#createtopicruledestinationresponsetypedef).
 
+<a id="delete_account_audit_configuration"></a>
+
 ### delete_account_audit_configuration
 
 Restores the default settings for Device Defender audits for this account.
@@ -1351,6 +1454,8 @@ Keyword-only arguments:
 - `deleteScheduledAudits`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_audit_suppression"></a>
 
 ### delete_audit_suppression
 
@@ -1373,6 +1478,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_authorizer"></a>
+
 ### delete_authorizer
 
 Deletes an authorizer.
@@ -1390,6 +1497,8 @@ Keyword-only arguments:
 - `authorizerName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_billing_group"></a>
 
 ### delete_billing_group
 
@@ -1410,6 +1519,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_ca_certificate"></a>
+
 ### delete_ca_certificate
 
 Deletes a registered CA certificate.
@@ -1428,6 +1539,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_certificate"></a>
+
 ### delete_certificate
 
 Deletes the specified certificate.
@@ -1444,6 +1557,8 @@ Keyword-only arguments:
 
 - `certificateId`: `str` *(required)*
 - `forceDelete`: `bool`
+
+<a id="delete_custom_metric"></a>
 
 ### delete_custom_metric
 
@@ -1463,6 +1578,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_dimension"></a>
+
 ### delete_dimension
 
 Removes the specified dimension from your Amazon Web Services accounts.
@@ -1481,6 +1598,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_domain_configuration"></a>
+
 ### delete_domain_configuration
 
 Deletes the specified domain configuration.
@@ -1498,6 +1617,8 @@ Keyword-only arguments:
 - `domainConfigurationName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_dynamic_thing_group"></a>
 
 ### delete_dynamic_thing_group
 
@@ -1518,6 +1639,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_fleet_metric"></a>
+
 ### delete_fleet_metric
 
 Deletes the specified fleet metric.
@@ -1534,6 +1657,8 @@ Keyword-only arguments:
 
 - `metricName`: `str` *(required)*
 - `expectedVersion`: `int`
+
+<a id="delete_job"></a>
 
 ### delete_job
 
@@ -1552,6 +1677,8 @@ Keyword-only arguments:
 - `jobId`: `str` *(required)*
 - `force`: `bool`
 - `namespaceId`: `str`
+
+<a id="delete_job_execution"></a>
 
 ### delete_job_execution
 
@@ -1573,6 +1700,8 @@ Keyword-only arguments:
 - `force`: `bool`
 - `namespaceId`: `str`
 
+<a id="delete_job_template"></a>
+
 ### delete_job_template
 
 Deletes the specified job template.
@@ -1588,6 +1717,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `jobTemplateId`: `str` *(required)*
+
+<a id="delete_mitigation_action"></a>
 
 ### delete_mitigation_action
 
@@ -1606,6 +1737,8 @@ Keyword-only arguments:
 - `actionName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_ota_update"></a>
 
 ### delete_ota_update
 
@@ -1627,6 +1760,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_policy"></a>
+
 ### delete_policy
 
 Deletes the specified policy.
@@ -1642,6 +1777,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `policyName`: `str` *(required)*
+
+<a id="delete_policy_version"></a>
 
 ### delete_policy_version
 
@@ -1660,6 +1797,8 @@ Keyword-only arguments:
 - `policyName`: `str` *(required)*
 - `policyVersionId`: `str` *(required)*
 
+<a id="delete_provisioning_template"></a>
+
 ### delete_provisioning_template
 
 Deletes a fleet provisioning template.
@@ -1677,6 +1816,8 @@ Keyword-only arguments:
 - `templateName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_provisioning_template_version"></a>
 
 ### delete_provisioning_template_version
 
@@ -1698,6 +1839,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_registration_code"></a>
+
 ### delete_registration_code
 
 Deletes a CA certificate registration code.
@@ -1708,6 +1851,8 @@ Boto3 documentation:
 [IoT.Client.delete_registration_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_registration_code)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_role_alias"></a>
 
 ### delete_role_alias
 
@@ -1730,6 +1875,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_scheduled_audit"></a>
+
 ### delete_scheduled_audit
 
 Deletes a scheduled audit.
@@ -1747,6 +1894,8 @@ Keyword-only arguments:
 - `scheduledAuditName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_security_profile"></a>
 
 ### delete_security_profile
 
@@ -1767,6 +1916,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_stream"></a>
+
 ### delete_stream
 
 Deletes a stream.
@@ -1784,6 +1935,8 @@ Keyword-only arguments:
 - `streamId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_thing"></a>
 
 ### delete_thing
 
@@ -1804,6 +1957,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_thing_group"></a>
+
 ### delete_thing_group
 
 Deletes a thing group.
@@ -1823,6 +1978,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_thing_type"></a>
+
 ### delete_thing_type
 
 Deletes the specified thing type.
@@ -1841,6 +1998,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_topic_rule"></a>
+
 ### delete_topic_rule
 
 Deletes the rule.
@@ -1856,6 +2015,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ruleName`: `str` *(required)*
+
+<a id="delete_topic_rule_destination"></a>
 
 ### delete_topic_rule_destination
 
@@ -1876,6 +2037,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_v2_logging_level"></a>
+
 ### delete_v2_logging_level
 
 Deletes a logging level.
@@ -1893,6 +2056,8 @@ Keyword-only arguments:
 - `targetType`: [LogTargetTypeType](./literals.md#logtargettypetype)
   *(required)*
 - `targetName`: `str` *(required)*
+
+<a id="deprecate_thing_type"></a>
 
 ### deprecate_thing_type
 
@@ -1913,6 +2078,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_account_audit_configuration"></a>
+
 ### describe_account_audit_configuration
 
 Gets information about the Device Defender audit settings for this account.
@@ -1925,6 +2092,8 @@ Boto3 documentation:
 
 Returns
 [DescribeAccountAuditConfigurationResponseTypeDef](./type_defs.md#describeaccountauditconfigurationresponsetypedef).
+
+<a id="describe_audit_finding"></a>
 
 ### describe_audit_finding
 
@@ -1944,6 +2113,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAuditFindingResponseTypeDef](./type_defs.md#describeauditfindingresponsetypedef).
+
+<a id="describe_audit_mitigation_actions_task"></a>
 
 ### describe_audit_mitigation_actions_task
 
@@ -1965,6 +2136,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAuditMitigationActionsTaskResponseTypeDef](./type_defs.md#describeauditmitigationactionstaskresponsetypedef).
+
+<a id="describe_audit_suppression"></a>
 
 ### describe_audit_suppression
 
@@ -1988,6 +2161,8 @@ Keyword-only arguments:
 Returns
 [DescribeAuditSuppressionResponseTypeDef](./type_defs.md#describeauditsuppressionresponsetypedef).
 
+<a id="describe_audit_task"></a>
+
 ### describe_audit_task
 
 Gets information about a Device Defender audit.
@@ -2006,6 +2181,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAuditTaskResponseTypeDef](./type_defs.md#describeaudittaskresponsetypedef).
+
+<a id="describe_authorizer"></a>
 
 ### describe_authorizer
 
@@ -2026,6 +2203,8 @@ Keyword-only arguments:
 Returns
 [DescribeAuthorizerResponseTypeDef](./type_defs.md#describeauthorizerresponsetypedef).
 
+<a id="describe_billing_group"></a>
+
 ### describe_billing_group
 
 Returns information about a billing group.
@@ -2044,6 +2223,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBillingGroupResponseTypeDef](./type_defs.md#describebillinggroupresponsetypedef).
+
+<a id="describe_ca_certificate"></a>
 
 ### describe_ca_certificate
 
@@ -2064,6 +2245,8 @@ Keyword-only arguments:
 Returns
 [DescribeCACertificateResponseTypeDef](./type_defs.md#describecacertificateresponsetypedef).
 
+<a id="describe_certificate"></a>
+
 ### describe_certificate
 
 Gets information about the specified certificate.
@@ -2082,6 +2265,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef).
+
+<a id="describe_custom_metric"></a>
 
 ### describe_custom_metric
 
@@ -2102,6 +2287,8 @@ Keyword-only arguments:
 Returns
 [DescribeCustomMetricResponseTypeDef](./type_defs.md#describecustommetricresponsetypedef).
 
+<a id="describe_default_authorizer"></a>
+
 ### describe_default_authorizer
 
 Describes the default authorizer.
@@ -2113,6 +2300,8 @@ Boto3 documentation:
 
 Returns
 [DescribeDefaultAuthorizerResponseTypeDef](./type_defs.md#describedefaultauthorizerresponsetypedef).
+
+<a id="describe_detect_mitigation_actions_task"></a>
 
 ### describe_detect_mitigation_actions_task
 
@@ -2134,6 +2323,8 @@ Keyword-only arguments:
 Returns
 [DescribeDetectMitigationActionsTaskResponseTypeDef](./type_defs.md#describedetectmitigationactionstaskresponsetypedef).
 
+<a id="describe_dimension"></a>
+
 ### describe_dimension
 
 Provides details about a dimension that is defined in your Amazon Web Services
@@ -2153,6 +2344,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDimensionResponseTypeDef](./type_defs.md#describedimensionresponsetypedef).
+
+<a id="describe_domain_configuration"></a>
 
 ### describe_domain_configuration
 
@@ -2174,6 +2367,8 @@ Keyword-only arguments:
 Returns
 [DescribeDomainConfigurationResponseTypeDef](./type_defs.md#describedomainconfigurationresponsetypedef).
 
+<a id="describe_endpoint"></a>
+
 ### describe_endpoint
 
 Returns a unique endpoint specific to the Amazon Web Services account making
@@ -2194,6 +2389,8 @@ Keyword-only arguments:
 Returns
 [DescribeEndpointResponseTypeDef](./type_defs.md#describeendpointresponsetypedef).
 
+<a id="describe_event_configurations"></a>
+
 ### describe_event_configurations
 
 Describes event configurations.
@@ -2206,6 +2403,8 @@ Boto3 documentation:
 
 Returns
 [DescribeEventConfigurationsResponseTypeDef](./type_defs.md#describeeventconfigurationsresponsetypedef).
+
+<a id="describe_fleet_metric"></a>
 
 ### describe_fleet_metric
 
@@ -2226,6 +2425,8 @@ Keyword-only arguments:
 Returns
 [DescribeFleetMetricResponseTypeDef](./type_defs.md#describefleetmetricresponsetypedef).
 
+<a id="describe_index"></a>
+
 ### describe_index
 
 Describes a search index.
@@ -2245,6 +2446,8 @@ Keyword-only arguments:
 Returns
 [DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef).
 
+<a id="describe_job"></a>
+
 ### describe_job
 
 Describes a job.
@@ -2263,6 +2466,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeJobResponseTypeDef](./type_defs.md#describejobresponsetypedef).
+
+<a id="describe_job_execution"></a>
 
 ### describe_job_execution
 
@@ -2285,6 +2490,8 @@ Keyword-only arguments:
 Returns
 [DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef).
 
+<a id="describe_job_template"></a>
+
 ### describe_job_template
 
 Returns information about a job template.
@@ -2303,6 +2510,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeJobTemplateResponseTypeDef](./type_defs.md#describejobtemplateresponsetypedef).
+
+<a id="describe_managed_job_template"></a>
 
 ### describe_managed_job_template
 
@@ -2325,6 +2534,8 @@ Keyword-only arguments:
 Returns
 [DescribeManagedJobTemplateResponseTypeDef](./type_defs.md#describemanagedjobtemplateresponsetypedef).
 
+<a id="describe_mitigation_action"></a>
+
 ### describe_mitigation_action
 
 Gets information about a mitigation action.
@@ -2343,6 +2554,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeMitigationActionResponseTypeDef](./type_defs.md#describemitigationactionresponsetypedef).
+
+<a id="describe_provisioning_template"></a>
 
 ### describe_provisioning_template
 
@@ -2363,6 +2576,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeProvisioningTemplateResponseTypeDef](./type_defs.md#describeprovisioningtemplateresponsetypedef).
+
+<a id="describe_provisioning_template_version"></a>
 
 ### describe_provisioning_template_version
 
@@ -2385,6 +2600,8 @@ Keyword-only arguments:
 Returns
 [DescribeProvisioningTemplateVersionResponseTypeDef](./type_defs.md#describeprovisioningtemplateversionresponsetypedef).
 
+<a id="describe_role_alias"></a>
+
 ### describe_role_alias
 
 Describes a role alias.
@@ -2403,6 +2620,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRoleAliasResponseTypeDef](./type_defs.md#describerolealiasresponsetypedef).
+
+<a id="describe_scheduled_audit"></a>
 
 ### describe_scheduled_audit
 
@@ -2423,6 +2642,8 @@ Keyword-only arguments:
 Returns
 [DescribeScheduledAuditResponseTypeDef](./type_defs.md#describescheduledauditresponsetypedef).
 
+<a id="describe_security_profile"></a>
+
 ### describe_security_profile
 
 Gets information about a Device Defender security profile.
@@ -2441,6 +2662,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSecurityProfileResponseTypeDef](./type_defs.md#describesecurityprofileresponsetypedef).
+
+<a id="describe_stream"></a>
 
 ### describe_stream
 
@@ -2461,6 +2684,8 @@ Keyword-only arguments:
 Returns
 [DescribeStreamResponseTypeDef](./type_defs.md#describestreamresponsetypedef).
 
+<a id="describe_thing"></a>
+
 ### describe_thing
 
 Gets information about the specified thing.
@@ -2480,6 +2705,8 @@ Keyword-only arguments:
 Returns
 [DescribeThingResponseTypeDef](./type_defs.md#describethingresponsetypedef).
 
+<a id="describe_thing_group"></a>
+
 ### describe_thing_group
 
 Describe a thing group.
@@ -2498,6 +2725,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeThingGroupResponseTypeDef](./type_defs.md#describethinggroupresponsetypedef).
+
+<a id="describe_thing_registration_task"></a>
 
 ### describe_thing_registration_task
 
@@ -2519,6 +2748,8 @@ Keyword-only arguments:
 Returns
 [DescribeThingRegistrationTaskResponseTypeDef](./type_defs.md#describethingregistrationtaskresponsetypedef).
 
+<a id="describe_thing_type"></a>
+
 ### describe_thing_type
 
 Gets information about the specified thing type.
@@ -2538,6 +2769,8 @@ Keyword-only arguments:
 Returns
 [DescribeThingTypeResponseTypeDef](./type_defs.md#describethingtyperesponsetypedef).
 
+<a id="detach_policy"></a>
+
 ### detach_policy
 
 Detaches a policy from the specified target.
@@ -2555,6 +2788,8 @@ Keyword-only arguments:
 - `policyName`: `str` *(required)*
 - `target`: `str` *(required)*
 
+<a id="detach_principal_policy"></a>
+
 ### detach_principal_policy
 
 Removes the specified policy from the specified certificate.
@@ -2571,6 +2806,8 @@ Keyword-only arguments:
 
 - `policyName`: `str` *(required)*
 - `principal`: `str` *(required)*
+
+<a id="detach_security_profile"></a>
 
 ### detach_security_profile
 
@@ -2592,6 +2829,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="detach_thing_principal"></a>
+
 ### detach_thing_principal
 
 Detaches the specified principal from the specified thing.
@@ -2611,6 +2850,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disable_topic_rule"></a>
+
 ### disable_topic_rule
 
 Disables the rule.
@@ -2627,6 +2868,8 @@ Keyword-only arguments:
 
 - `ruleName`: `str` *(required)*
 
+<a id="enable_topic_rule"></a>
+
 ### enable_topic_rule
 
 Enables the rule.
@@ -2642,6 +2885,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ruleName`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -2660,6 +2905,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_behavior_model_training_summaries"></a>
 
 ### get_behavior_model_training_summaries
 
@@ -2682,6 +2929,8 @@ Keyword-only arguments:
 
 Returns
 [GetBehaviorModelTrainingSummariesResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponsetypedef).
+
+<a id="get_buckets_aggregation"></a>
 
 ### get_buckets_aggregation
 
@@ -2708,6 +2957,8 @@ Keyword-only arguments:
 Returns
 [GetBucketsAggregationResponseTypeDef](./type_defs.md#getbucketsaggregationresponsetypedef).
 
+<a id="get_cardinality"></a>
+
 ### get_cardinality
 
 Returns the approximate count of unique values that match the query.
@@ -2729,6 +2980,8 @@ Keyword-only arguments:
 
 Returns
 [GetCardinalityResponseTypeDef](./type_defs.md#getcardinalityresponsetypedef).
+
+<a id="get_effective_policies"></a>
 
 ### get_effective_policies
 
@@ -2752,6 +3005,8 @@ Keyword-only arguments:
 Returns
 [GetEffectivePoliciesResponseTypeDef](./type_defs.md#geteffectivepoliciesresponsetypedef).
 
+<a id="get_indexing_configuration"></a>
+
 ### get_indexing_configuration
 
 Gets the indexing configuration.
@@ -2763,6 +3018,8 @@ Boto3 documentation:
 
 Returns
 [GetIndexingConfigurationResponseTypeDef](./type_defs.md#getindexingconfigurationresponsetypedef).
+
+<a id="get_job_document"></a>
 
 ### get_job_document
 
@@ -2783,6 +3040,8 @@ Keyword-only arguments:
 Returns
 [GetJobDocumentResponseTypeDef](./type_defs.md#getjobdocumentresponsetypedef).
 
+<a id="get_logging_options"></a>
+
 ### get_logging_options
 
 Gets the logging options.
@@ -2794,6 +3053,8 @@ Boto3 documentation:
 
 Returns
 [GetLoggingOptionsResponseTypeDef](./type_defs.md#getloggingoptionsresponsetypedef).
+
+<a id="get_ota_update"></a>
 
 ### get_ota_update
 
@@ -2813,6 +3074,8 @@ Keyword-only arguments:
 
 Returns
 [GetOTAUpdateResponseTypeDef](./type_defs.md#getotaupdateresponsetypedef).
+
+<a id="get_percentiles"></a>
 
 ### get_percentiles
 
@@ -2837,6 +3100,8 @@ Keyword-only arguments:
 Returns
 [GetPercentilesResponseTypeDef](./type_defs.md#getpercentilesresponsetypedef).
 
+<a id="get_policy"></a>
+
 ### get_policy
 
 Gets information about the specified policy with the policy document of the
@@ -2855,6 +3120,8 @@ Keyword-only arguments:
 - `policyName`: `str` *(required)*
 
 Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+
+<a id="get_policy_version"></a>
 
 ### get_policy_version
 
@@ -2876,6 +3143,8 @@ Keyword-only arguments:
 Returns
 [GetPolicyVersionResponseTypeDef](./type_defs.md#getpolicyversionresponsetypedef).
 
+<a id="get_registration_code"></a>
+
 ### get_registration_code
 
 Gets a registration code used to register a CA certificate with IoT.
@@ -2887,6 +3156,8 @@ Boto3 documentation:
 
 Returns
 [GetRegistrationCodeResponseTypeDef](./type_defs.md#getregistrationcoderesponsetypedef).
+
+<a id="get_statistics"></a>
 
 ### get_statistics
 
@@ -2911,6 +3182,8 @@ Keyword-only arguments:
 Returns
 [GetStatisticsResponseTypeDef](./type_defs.md#getstatisticsresponsetypedef).
 
+<a id="get_topic_rule"></a>
+
 ### get_topic_rule
 
 .
@@ -2929,6 +3202,8 @@ Keyword-only arguments:
 
 Returns
 [GetTopicRuleResponseTypeDef](./type_defs.md#gettopicruleresponsetypedef).
+
+<a id="get_topic_rule_destination"></a>
 
 ### get_topic_rule_destination
 
@@ -2949,6 +3224,8 @@ Keyword-only arguments:
 Returns
 [GetTopicRuleDestinationResponseTypeDef](./type_defs.md#gettopicruledestinationresponsetypedef).
 
+<a id="get_v2_logging_options"></a>
+
 ### get_v2_logging_options
 
 Gets the fine grained logging options.
@@ -2960,6 +3237,8 @@ Boto3 documentation:
 
 Returns
 [GetV2LoggingOptionsResponseTypeDef](./type_defs.md#getv2loggingoptionsresponsetypedef).
+
+<a id="list_active_violations"></a>
 
 ### list_active_violations
 
@@ -2988,6 +3267,8 @@ Keyword-only arguments:
 Returns
 [ListActiveViolationsResponseTypeDef](./type_defs.md#listactiveviolationsresponsetypedef).
 
+<a id="list_attached_policies"></a>
+
 ### list_attached_policies
 
 Lists the policies attached to the specified thing group.
@@ -3009,6 +3290,8 @@ Keyword-only arguments:
 
 Returns
 [ListAttachedPoliciesResponseTypeDef](./type_defs.md#listattachedpoliciesresponsetypedef).
+
+<a id="list_audit_findings"></a>
 
 ### list_audit_findings
 
@@ -3038,6 +3321,8 @@ Keyword-only arguments:
 Returns
 [ListAuditFindingsResponseTypeDef](./type_defs.md#listauditfindingsresponsetypedef).
 
+<a id="list_audit_mitigation_actions_executions"></a>
+
 ### list_audit_mitigation_actions_executions
 
 Gets the status of audit mitigation action tasks that were executed.
@@ -3062,6 +3347,8 @@ Keyword-only arguments:
 
 Returns
 [ListAuditMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listauditmitigationactionsexecutionsresponsetypedef).
+
+<a id="list_audit_mitigation_actions_tasks"></a>
 
 ### list_audit_mitigation_actions_tasks
 
@@ -3090,6 +3377,8 @@ Keyword-only arguments:
 Returns
 [ListAuditMitigationActionsTasksResponseTypeDef](./type_defs.md#listauditmitigationactionstasksresponsetypedef).
 
+<a id="list_audit_suppressions"></a>
+
 ### list_audit_suppressions
 
 Lists your Device Defender audit listings.
@@ -3113,6 +3402,8 @@ Keyword-only arguments:
 
 Returns
 [ListAuditSuppressionsResponseTypeDef](./type_defs.md#listauditsuppressionsresponsetypedef).
+
+<a id="list_audit_tasks"></a>
 
 ### list_audit_tasks
 
@@ -3139,6 +3430,8 @@ Keyword-only arguments:
 Returns
 [ListAuditTasksResponseTypeDef](./type_defs.md#listaudittasksresponsetypedef).
 
+<a id="list_authorizers"></a>
+
 ### list_authorizers
 
 Lists the authorizers registered in your account.
@@ -3161,6 +3454,8 @@ Keyword-only arguments:
 Returns
 [ListAuthorizersResponseTypeDef](./type_defs.md#listauthorizersresponsetypedef).
 
+<a id="list_billing_groups"></a>
+
 ### list_billing_groups
 
 Lists the billing groups you have created.
@@ -3181,6 +3476,8 @@ Keyword-only arguments:
 
 Returns
 [ListBillingGroupsResponseTypeDef](./type_defs.md#listbillinggroupsresponsetypedef).
+
+<a id="list_ca_certificates"></a>
 
 ### list_ca_certificates
 
@@ -3203,6 +3500,8 @@ Keyword-only arguments:
 Returns
 [ListCACertificatesResponseTypeDef](./type_defs.md#listcacertificatesresponsetypedef).
 
+<a id="list_certificates"></a>
+
 ### list_certificates
 
 Lists the certificates registered in your Amazon Web Services account.
@@ -3223,6 +3522,8 @@ Keyword-only arguments:
 
 Returns
 [ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef).
+
+<a id="list_certificates_by_ca"></a>
 
 ### list_certificates_by_ca
 
@@ -3246,6 +3547,8 @@ Keyword-only arguments:
 Returns
 [ListCertificatesByCAResponseTypeDef](./type_defs.md#listcertificatesbycaresponsetypedef).
 
+<a id="list_custom_metrics"></a>
+
 ### list_custom_metrics
 
 Lists your Device Defender detect custom metrics.
@@ -3265,6 +3568,8 @@ Keyword-only arguments:
 
 Returns
 [ListCustomMetricsResponseTypeDef](./type_defs.md#listcustommetricsresponsetypedef).
+
+<a id="list_detect_mitigation_actions_executions"></a>
 
 ### list_detect_mitigation_actions_executions
 
@@ -3293,6 +3598,8 @@ Keyword-only arguments:
 Returns
 [ListDetectMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsresponsetypedef).
 
+<a id="list_detect_mitigation_actions_tasks"></a>
+
 ### list_detect_mitigation_actions_tasks
 
 List of Device Defender ML Detect mitigation actions tasks.
@@ -3316,6 +3623,8 @@ Keyword-only arguments:
 Returns
 [ListDetectMitigationActionsTasksResponseTypeDef](./type_defs.md#listdetectmitigationactionstasksresponsetypedef).
 
+<a id="list_dimensions"></a>
+
 ### list_dimensions
 
 List the set of dimensions that are defined for your Amazon Web Services
@@ -3336,6 +3645,8 @@ Keyword-only arguments:
 
 Returns
 [ListDimensionsResponseTypeDef](./type_defs.md#listdimensionsresponsetypedef).
+
+<a id="list_domain_configurations"></a>
 
 ### list_domain_configurations
 
@@ -3358,6 +3669,8 @@ Keyword-only arguments:
 Returns
 [ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef).
 
+<a id="list_fleet_metrics"></a>
+
 ### list_fleet_metrics
 
 Lists all your fleet metrics.
@@ -3378,6 +3691,8 @@ Keyword-only arguments:
 Returns
 [ListFleetMetricsResponseTypeDef](./type_defs.md#listfleetmetricsresponsetypedef).
 
+<a id="list_indices"></a>
+
 ### list_indices
 
 Lists the search indices.
@@ -3397,6 +3712,8 @@ Keyword-only arguments:
 
 Returns
 [ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef).
+
+<a id="list_job_executions_for_job"></a>
 
 ### list_job_executions_for_job
 
@@ -3419,6 +3736,8 @@ Keyword-only arguments:
 
 Returns
 [ListJobExecutionsForJobResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponsetypedef).
+
+<a id="list_job_executions_for_thing"></a>
 
 ### list_job_executions_for_thing
 
@@ -3445,6 +3764,8 @@ Keyword-only arguments:
 Returns
 [ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef).
 
+<a id="list_job_templates"></a>
+
 ### list_job_templates
 
 Returns a list of job templates.
@@ -3464,6 +3785,8 @@ Keyword-only arguments:
 
 Returns
 [ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef).
+
+<a id="list_jobs"></a>
 
 ### list_jobs
 
@@ -3489,6 +3812,8 @@ Keyword-only arguments:
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
+<a id="list_managed_job_templates"></a>
+
 ### list_managed_job_templates
 
 Returns a list of managed job templates.
@@ -3509,6 +3834,8 @@ Keyword-only arguments:
 
 Returns
 [ListManagedJobTemplatesResponseTypeDef](./type_defs.md#listmanagedjobtemplatesresponsetypedef).
+
+<a id="list_mitigation_actions"></a>
 
 ### list_mitigation_actions
 
@@ -3532,6 +3859,8 @@ Keyword-only arguments:
 Returns
 [ListMitigationActionsResponseTypeDef](./type_defs.md#listmitigationactionsresponsetypedef).
 
+<a id="list_ota_updates"></a>
+
 ### list_ota_updates
 
 Lists OTA updates.
@@ -3552,6 +3881,8 @@ Keyword-only arguments:
 
 Returns
 [ListOTAUpdatesResponseTypeDef](./type_defs.md#listotaupdatesresponsetypedef).
+
+<a id="list_outgoing_certificates"></a>
 
 ### list_outgoing_certificates
 
@@ -3574,6 +3905,8 @@ Keyword-only arguments:
 Returns
 [ListOutgoingCertificatesResponseTypeDef](./type_defs.md#listoutgoingcertificatesresponsetypedef).
 
+<a id="list_policies"></a>
+
 ### list_policies
 
 Lists your policies.
@@ -3594,6 +3927,8 @@ Keyword-only arguments:
 
 Returns
 [ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
+
+<a id="list_policy_principals"></a>
 
 ### list_policy_principals
 
@@ -3617,6 +3952,8 @@ Keyword-only arguments:
 Returns
 [ListPolicyPrincipalsResponseTypeDef](./type_defs.md#listpolicyprincipalsresponsetypedef).
 
+<a id="list_policy_versions"></a>
+
 ### list_policy_versions
 
 Lists the versions of the specified policy and identifies the default version.
@@ -3635,6 +3972,8 @@ Keyword-only arguments:
 
 Returns
 [ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef).
+
+<a id="list_principal_policies"></a>
 
 ### list_principal_policies
 
@@ -3658,6 +3997,8 @@ Keyword-only arguments:
 Returns
 [ListPrincipalPoliciesResponseTypeDef](./type_defs.md#listprincipalpoliciesresponsetypedef).
 
+<a id="list_principal_things"></a>
+
 ### list_principal_things
 
 Lists the things associated with the specified principal.
@@ -3678,6 +4019,8 @@ Keyword-only arguments:
 
 Returns
 [ListPrincipalThingsResponseTypeDef](./type_defs.md#listprincipalthingsresponsetypedef).
+
+<a id="list_provisioning_template_versions"></a>
 
 ### list_provisioning_template_versions
 
@@ -3701,6 +4044,8 @@ Keyword-only arguments:
 Returns
 [ListProvisioningTemplateVersionsResponseTypeDef](./type_defs.md#listprovisioningtemplateversionsresponsetypedef).
 
+<a id="list_provisioning_templates"></a>
+
 ### list_provisioning_templates
 
 Lists the fleet provisioning templates in your Amazon Web Services account.
@@ -3720,6 +4065,8 @@ Keyword-only arguments:
 
 Returns
 [ListProvisioningTemplatesResponseTypeDef](./type_defs.md#listprovisioningtemplatesresponsetypedef).
+
+<a id="list_role_aliases"></a>
 
 ### list_role_aliases
 
@@ -3742,6 +4089,8 @@ Keyword-only arguments:
 Returns
 [ListRoleAliasesResponseTypeDef](./type_defs.md#listrolealiasesresponsetypedef).
 
+<a id="list_scheduled_audits"></a>
+
 ### list_scheduled_audits
 
 Lists all of your scheduled audits.
@@ -3761,6 +4110,8 @@ Keyword-only arguments:
 
 Returns
 [ListScheduledAuditsResponseTypeDef](./type_defs.md#listscheduledauditsresponsetypedef).
+
+<a id="list_security_profiles"></a>
 
 ### list_security_profiles
 
@@ -3783,6 +4134,8 @@ Keyword-only arguments:
 
 Returns
 [ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef).
+
+<a id="list_security_profiles_for_target"></a>
 
 ### list_security_profiles_for_target
 
@@ -3807,6 +4160,8 @@ Keyword-only arguments:
 Returns
 [ListSecurityProfilesForTargetResponseTypeDef](./type_defs.md#listsecurityprofilesfortargetresponsetypedef).
 
+<a id="list_streams"></a>
+
 ### list_streams
 
 Lists all of the streams in your Amazon Web Services account.
@@ -3828,6 +4183,8 @@ Keyword-only arguments:
 Returns
 [ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags (metadata) you have assigned to the resource.
@@ -3847,6 +4204,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_targets_for_policy"></a>
 
 ### list_targets_for_policy
 
@@ -3868,6 +4227,8 @@ Keyword-only arguments:
 
 Returns
 [ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef).
+
+<a id="list_targets_for_security_profile"></a>
 
 ### list_targets_for_security_profile
 
@@ -3892,6 +4253,8 @@ Keyword-only arguments:
 Returns
 [ListTargetsForSecurityProfileResponseTypeDef](./type_defs.md#listtargetsforsecurityprofileresponsetypedef).
 
+<a id="list_thing_groups"></a>
+
 ### list_thing_groups
 
 List the thing groups in your account.
@@ -3915,6 +4278,8 @@ Keyword-only arguments:
 Returns
 [ListThingGroupsResponseTypeDef](./type_defs.md#listthinggroupsresponsetypedef).
 
+<a id="list_thing_groups_for_thing"></a>
+
 ### list_thing_groups_for_thing
 
 List the thing groups to which the specified thing belongs.
@@ -3936,6 +4301,8 @@ Keyword-only arguments:
 Returns
 [ListThingGroupsForThingResponseTypeDef](./type_defs.md#listthinggroupsforthingresponsetypedef).
 
+<a id="list_thing_principals"></a>
+
 ### list_thing_principals
 
 Lists the principals associated with the specified thing.
@@ -3956,6 +4323,8 @@ Keyword-only arguments:
 
 Returns
 [ListThingPrincipalsResponseTypeDef](./type_defs.md#listthingprincipalsresponsetypedef).
+
+<a id="list_thing_registration_task_reports"></a>
 
 ### list_thing_registration_task_reports
 
@@ -3980,6 +4349,8 @@ Keyword-only arguments:
 Returns
 [ListThingRegistrationTaskReportsResponseTypeDef](./type_defs.md#listthingregistrationtaskreportsresponsetypedef).
 
+<a id="list_thing_registration_tasks"></a>
+
 ### list_thing_registration_tasks
 
 List bulk thing provisioning tasks.
@@ -4002,6 +4373,8 @@ Keyword-only arguments:
 Returns
 [ListThingRegistrationTasksResponseTypeDef](./type_defs.md#listthingregistrationtasksresponsetypedef).
 
+<a id="list_thing_types"></a>
+
 ### list_thing_types
 
 Lists the existing thing types.
@@ -4022,6 +4395,8 @@ Keyword-only arguments:
 
 Returns
 [ListThingTypesResponseTypeDef](./type_defs.md#listthingtypesresponsetypedef).
+
+<a id="list_things"></a>
 
 ### list_things
 
@@ -4046,6 +4421,8 @@ Keyword-only arguments:
 
 Returns [ListThingsResponseTypeDef](./type_defs.md#listthingsresponsetypedef).
 
+<a id="list_things_in_billing_group"></a>
+
 ### list_things_in_billing_group
 
 Lists the things you have added to the given billing group.
@@ -4066,6 +4443,8 @@ Keyword-only arguments:
 
 Returns
 [ListThingsInBillingGroupResponseTypeDef](./type_defs.md#listthingsinbillinggroupresponsetypedef).
+
+<a id="list_things_in_thing_group"></a>
 
 ### list_things_in_thing_group
 
@@ -4089,6 +4468,8 @@ Keyword-only arguments:
 Returns
 [ListThingsInThingGroupResponseTypeDef](./type_defs.md#listthingsinthinggroupresponsetypedef).
 
+<a id="list_topic_rule_destinations"></a>
+
 ### list_topic_rule_destinations
 
 Lists all the topic rule destinations in your Amazon Web Services account.
@@ -4108,6 +4489,8 @@ Keyword-only arguments:
 
 Returns
 [ListTopicRuleDestinationsResponseTypeDef](./type_defs.md#listtopicruledestinationsresponsetypedef).
+
+<a id="list_topic_rules"></a>
 
 ### list_topic_rules
 
@@ -4131,6 +4514,8 @@ Keyword-only arguments:
 Returns
 [ListTopicRulesResponseTypeDef](./type_defs.md#listtopicrulesresponsetypedef).
 
+<a id="list_v2_logging_levels"></a>
+
 ### list_v2_logging_levels
 
 Lists logging levels.
@@ -4151,6 +4536,8 @@ Keyword-only arguments:
 
 Returns
 [ListV2LoggingLevelsResponseTypeDef](./type_defs.md#listv2logginglevelsresponsetypedef).
+
+<a id="list_violation_events"></a>
 
 ### list_violation_events
 
@@ -4182,6 +4569,8 @@ Keyword-only arguments:
 Returns
 [ListViolationEventsResponseTypeDef](./type_defs.md#listviolationeventsresponsetypedef).
 
+<a id="put_verification_state_on_violation"></a>
+
 ### put_verification_state_on_violation
 
 Set a verification state and provide a description of that verification state
@@ -4204,6 +4593,8 @@ Keyword-only arguments:
 - `verificationStateDescription`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="register_ca_certificate"></a>
 
 ### register_ca_certificate
 
@@ -4230,6 +4621,8 @@ Keyword-only arguments:
 Returns
 [RegisterCACertificateResponseTypeDef](./type_defs.md#registercacertificateresponsetypedef).
 
+<a id="register_certificate"></a>
+
 ### register_certificate
 
 Registers a device certificate with IoT.
@@ -4252,6 +4645,8 @@ Keyword-only arguments:
 Returns
 [RegisterCertificateResponseTypeDef](./type_defs.md#registercertificateresponsetypedef).
 
+<a id="register_certificate_without_ca"></a>
+
 ### register_certificate_without_ca
 
 Register a certificate that does not have a certificate authority (CA).
@@ -4273,6 +4668,8 @@ Keyword-only arguments:
 Returns
 [RegisterCertificateWithoutCAResponseTypeDef](./type_defs.md#registercertificatewithoutcaresponsetypedef).
 
+<a id="register_thing"></a>
+
 ### register_thing
 
 Provisions a thing in the device registry.
@@ -4293,6 +4690,8 @@ Keyword-only arguments:
 Returns
 [RegisterThingResponseTypeDef](./type_defs.md#registerthingresponsetypedef).
 
+<a id="reject_certificate_transfer"></a>
+
 ### reject_certificate_transfer
 
 Rejects a pending certificate transfer.
@@ -4309,6 +4708,8 @@ Keyword-only arguments:
 
 - `certificateId`: `str` *(required)*
 - `rejectReason`: `str`
+
+<a id="remove_thing_from_billing_group"></a>
 
 ### remove_thing_from_billing_group
 
@@ -4332,6 +4733,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="remove_thing_from_thing_group"></a>
+
 ### remove_thing_from_thing_group
 
 Remove the specified thing from the specified group.
@@ -4354,6 +4757,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="replace_topic_rule"></a>
+
 ### replace_topic_rule
 
 .
@@ -4372,6 +4777,8 @@ Keyword-only arguments:
 - `topicRulePayload`:
   [TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef)
   *(required)*
+
+<a id="search_index"></a>
 
 ### search_index
 
@@ -4396,6 +4803,8 @@ Keyword-only arguments:
 Returns
 [SearchIndexResponseTypeDef](./type_defs.md#searchindexresponsetypedef).
 
+<a id="set_default_authorizer"></a>
+
 ### set_default_authorizer
 
 Sets the default authorizer.
@@ -4415,6 +4824,8 @@ Keyword-only arguments:
 Returns
 [SetDefaultAuthorizerResponseTypeDef](./type_defs.md#setdefaultauthorizerresponsetypedef).
 
+<a id="set_default_policy_version"></a>
+
 ### set_default_policy_version
 
 Sets the specified version of the specified policy as the policy's default
@@ -4432,6 +4843,8 @@ Keyword-only arguments:
 
 - `policyName`: `str` *(required)*
 - `policyVersionId`: `str` *(required)*
+
+<a id="set_logging_options"></a>
 
 ### set_logging_options
 
@@ -4451,6 +4864,8 @@ Keyword-only arguments:
   [LoggingOptionsPayloadTypeDef](./type_defs.md#loggingoptionspayloadtypedef)
   *(required)*
 
+<a id="set_v2_logging_level"></a>
+
 ### set_v2_logging_level
 
 Sets the logging level.
@@ -4467,6 +4882,8 @@ Keyword-only arguments:
 
 - `logTarget`: [LogTargetTypeDef](./type_defs.md#logtargettypedef) *(required)*
 - `logLevel`: [LogLevelType](./literals.md#logleveltype) *(required)*
+
+<a id="set_v2_logging_options"></a>
 
 ### set_v2_logging_options
 
@@ -4485,6 +4902,8 @@ Keyword-only arguments:
 - `roleArn`: `str`
 - `defaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
 - `disableAllLogs`: `bool`
+
+<a id="start_audit_mitigation_actions_task"></a>
 
 ### start_audit_mitigation_actions_task
 
@@ -4511,6 +4930,8 @@ Keyword-only arguments:
 
 Returns
 [StartAuditMitigationActionsTaskResponseTypeDef](./type_defs.md#startauditmitigationactionstaskresponsetypedef).
+
+<a id="start_detect_mitigation_actions_task"></a>
 
 ### start_detect_mitigation_actions_task
 
@@ -4541,6 +4962,8 @@ Keyword-only arguments:
 Returns
 [StartDetectMitigationActionsTaskResponseTypeDef](./type_defs.md#startdetectmitigationactionstaskresponsetypedef).
 
+<a id="start_on_demand_audit_task"></a>
+
 ### start_on_demand_audit_task
 
 Starts an on-demand Device Defender audit.
@@ -4559,6 +4982,8 @@ Keyword-only arguments:
 
 Returns
 [StartOnDemandAuditTaskResponseTypeDef](./type_defs.md#startondemandaudittaskresponsetypedef).
+
+<a id="start_thing_registration_task"></a>
 
 ### start_thing_registration_task
 
@@ -4583,6 +5008,8 @@ Keyword-only arguments:
 Returns
 [StartThingRegistrationTaskResponseTypeDef](./type_defs.md#startthingregistrationtaskresponsetypedef).
 
+<a id="stop_thing_registration_task"></a>
+
 ### stop_thing_registration_task
 
 Cancels a bulk thing provisioning task.
@@ -4600,6 +5027,8 @@ Keyword-only arguments:
 - `taskId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -4619,6 +5048,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="test_authorization"></a>
 
 ### test_authorization
 
@@ -4646,6 +5077,8 @@ Keyword-only arguments:
 Returns
 [TestAuthorizationResponseTypeDef](./type_defs.md#testauthorizationresponsetypedef).
 
+<a id="test_invoke_authorizer"></a>
+
 ### test_invoke_authorizer
 
 Tests a custom authorization behavior by invoking a specified custom
@@ -4671,6 +5104,8 @@ Keyword-only arguments:
 Returns
 [TestInvokeAuthorizerResponseTypeDef](./type_defs.md#testinvokeauthorizerresponsetypedef).
 
+<a id="transfer_certificate"></a>
+
 ### transfer_certificate
 
 Transfers the specified certificate to the specified Amazon Web Services
@@ -4693,6 +5128,8 @@ Keyword-only arguments:
 Returns
 [TransferCertificateResponseTypeDef](./type_defs.md#transfercertificateresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the given tags (metadata) from the resource.
@@ -4711,6 +5148,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_account_audit_configuration"></a>
 
 ### update_account_audit_configuration
 
@@ -4736,6 +5175,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_audit_suppression"></a>
+
 ### update_audit_suppression
 
 Updates a Device Defender audit suppression.
@@ -4759,6 +5200,8 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_authorizer"></a>
 
 ### update_authorizer
 
@@ -4784,6 +5227,8 @@ Keyword-only arguments:
 Returns
 [UpdateAuthorizerResponseTypeDef](./type_defs.md#updateauthorizerresponsetypedef).
 
+<a id="update_billing_group"></a>
+
 ### update_billing_group
 
 Updates information about the billing group.
@@ -4807,6 +5252,8 @@ Keyword-only arguments:
 Returns
 [UpdateBillingGroupResponseTypeDef](./type_defs.md#updatebillinggroupresponsetypedef).
 
+<a id="update_ca_certificate"></a>
+
 ### update_ca_certificate
 
 Updates a registered CA certificate.
@@ -4829,6 +5276,8 @@ Keyword-only arguments:
   [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
 - `removeAutoRegistration`: `bool`
 
+<a id="update_certificate"></a>
+
 ### update_certificate
 
 Updates the status of the specified certificate.
@@ -4846,6 +5295,8 @@ Keyword-only arguments:
 - `certificateId`: `str` *(required)*
 - `newStatus`: [CertificateStatusType](./literals.md#certificatestatustype)
   *(required)*
+
+<a id="update_custom_metric"></a>
 
 ### update_custom_metric
 
@@ -4867,6 +5318,8 @@ Keyword-only arguments:
 Returns
 [UpdateCustomMetricResponseTypeDef](./type_defs.md#updatecustommetricresponsetypedef).
 
+<a id="update_dimension"></a>
+
 ### update_dimension
 
 Updates the definition for a dimension.
@@ -4886,6 +5339,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDimensionResponseTypeDef](./type_defs.md#updatedimensionresponsetypedef).
+
+<a id="update_domain_configuration"></a>
 
 ### update_domain_configuration
 
@@ -4910,6 +5365,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDomainConfigurationResponseTypeDef](./type_defs.md#updatedomainconfigurationresponsetypedef).
+
+<a id="update_dynamic_thing_group"></a>
 
 ### update_dynamic_thing_group
 
@@ -4937,6 +5394,8 @@ Keyword-only arguments:
 Returns
 [UpdateDynamicThingGroupResponseTypeDef](./type_defs.md#updatedynamicthinggroupresponsetypedef).
 
+<a id="update_event_configurations"></a>
+
 ### update_event_configurations
 
 Updates the event configurations.
@@ -4956,6 +5415,8 @@ Keyword-only arguments:
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_fleet_metric"></a>
 
 ### update_fleet_metric
 
@@ -4983,6 +5444,8 @@ Keyword-only arguments:
 - `unit`: [FleetMetricUnitType](./literals.md#fleetmetricunittype)
 - `expectedVersion`: `int`
 
+<a id="update_indexing_configuration"></a>
+
 ### update_indexing_configuration
 
 Updates the search configuration.
@@ -5004,6 +5467,8 @@ Keyword-only arguments:
   [ThingGroupIndexingConfigurationTypeDef](./type_defs.md#thinggroupindexingconfigurationtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_job"></a>
 
 ### update_job
 
@@ -5031,6 +5496,8 @@ Keyword-only arguments:
 - `jobExecutionsRetryConfig`:
   [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
 
+<a id="update_mitigation_action"></a>
+
 ### update_mitigation_action
 
 Updates the definition for the specified mitigation action.
@@ -5052,6 +5519,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateMitigationActionResponseTypeDef](./type_defs.md#updatemitigationactionresponsetypedef).
+
+<a id="update_provisioning_template"></a>
 
 ### update_provisioning_template
 
@@ -5078,6 +5547,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_role_alias"></a>
+
 ### update_role_alias
 
 Updates a role alias.
@@ -5098,6 +5569,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRoleAliasResponseTypeDef](./type_defs.md#updaterolealiasresponsetypedef).
+
+<a id="update_scheduled_audit"></a>
 
 ### update_scheduled_audit
 
@@ -5122,6 +5595,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateScheduledAuditResponseTypeDef](./type_defs.md#updatescheduledauditresponsetypedef).
+
+<a id="update_security_profile"></a>
 
 ### update_security_profile
 
@@ -5154,6 +5629,8 @@ Keyword-only arguments:
 Returns
 [UpdateSecurityProfileResponseTypeDef](./type_defs.md#updatesecurityprofileresponsetypedef).
 
+<a id="update_stream"></a>
+
 ### update_stream
 
 Updates an existing stream.
@@ -5175,6 +5652,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateStreamResponseTypeDef](./type_defs.md#updatestreamresponsetypedef).
+
+<a id="update_thing"></a>
 
 ### update_thing
 
@@ -5199,6 +5678,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_thing_group"></a>
+
 ### update_thing_group
 
 Update a thing group.
@@ -5222,6 +5703,8 @@ Keyword-only arguments:
 Returns
 [UpdateThingGroupResponseTypeDef](./type_defs.md#updatethinggroupresponsetypedef).
 
+<a id="update_thing_groups_for_thing"></a>
+
 ### update_thing_groups_for_thing
 
 Updates the groups to which the thing belongs.
@@ -5243,6 +5726,8 @@ Keyword-only arguments:
 - `overrideDynamicGroups`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_topic_rule_destination"></a>
 
 ### update_topic_rule_destination
 
@@ -5266,6 +5751,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="validate_security_profile_behaviors"></a>
+
 ### validate_security_profile_behaviors
 
 Validates a Device Defender security profile behaviors specification.
@@ -5286,6 +5773,8 @@ Keyword-only arguments:
 
 Returns
 [ValidateSecurityProfileBehaviorsResponseTypeDef](./type_defs.md#validatesecurityprofilebehaviorsresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

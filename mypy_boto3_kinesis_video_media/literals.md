@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-kinesisvideomedia-module"></a>
+
 # Literals for boto3 KinesisVideoMedia module
 
 > [Index](..) > [KinesisVideoMedia](.) > Literals
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
 type annotations stubs module
-[mypy_boto3_kinesis_video_media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
+[mypy-boto3-kinesis-video-media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
 
 - [Literals for boto3 KinesisVideoMedia module](#literals-for-boto3-kinesisvideomedia-module)
   - [StartSelectorTypeType](#startselectortypetype)
   - [ServiceName](#servicename)
+
+<a id="startselectortypetype"></a>
 
 ## StartSelectorTypeType
 
@@ -25,6 +29,8 @@ Values:
 - `NOW`
 - `PRODUCER_TIMESTAMP`
 - `SERVER_TIMESTAMP`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

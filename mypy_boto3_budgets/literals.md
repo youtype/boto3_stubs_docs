@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-budgets-module"></a>
+
 # Literals for boto3 Budgets module
 
 > [Index](..) > [Budgets](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
 type annotations stubs module
-[mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
+[mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 - [Literals for boto3 Budgets module](#literals-for-boto3-budgets-module)
   - [ActionStatusType](#actionstatustype)
@@ -31,6 +33,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="actionstatustype"></a>
+
 ## ActionStatusType
 
 ```python
@@ -50,6 +54,8 @@ Values:
 - `REVERSE_SUCCESS`
 - `STANDBY`
 
+<a id="actionsubtypetype"></a>
+
 ## ActionSubTypeType
 
 ```python
@@ -60,6 +66,8 @@ Values:
 
 - `STOP_EC2_INSTANCES`
 - `STOP_RDS_INSTANCES`
+
+<a id="actiontypetype"></a>
 
 ## ActionTypeType
 
@@ -73,6 +81,8 @@ Values:
 - `APPLY_SCP_POLICY`
 - `RUN_SSM_DOCUMENTS`
 
+<a id="approvalmodeltype"></a>
+
 ## ApprovalModelType
 
 ```python
@@ -83,6 +93,8 @@ Values:
 
 - `AUTOMATIC`
 - `MANUAL`
+
+<a id="budgettypetype"></a>
 
 ## BudgetTypeType
 
@@ -99,6 +111,8 @@ Values:
 - `SAVINGS_PLANS_UTILIZATION`
 - `USAGE`
 
+<a id="comparisonoperatortype"></a>
+
 ## ComparisonOperatorType
 
 ```python
@@ -111,6 +125,8 @@ Values:
 - `GREATER_THAN`
 - `LESS_THAN`
 
+<a id="describebudgetactionhistoriespaginatorname"></a>
+
 ## DescribeBudgetActionHistoriesPaginatorName
 
 ```python
@@ -120,6 +136,8 @@ from mypy_boto3_budgets.literals import DescribeBudgetActionHistoriesPaginatorNa
 Values:
 
 - `describe_budget_action_histories`
+
+<a id="describebudgetactionsforaccountpaginatorname"></a>
 
 ## DescribeBudgetActionsForAccountPaginatorName
 
@@ -131,6 +149,8 @@ Values:
 
 - `describe_budget_actions_for_account`
 
+<a id="describebudgetactionsforbudgetpaginatorname"></a>
+
 ## DescribeBudgetActionsForBudgetPaginatorName
 
 ```python
@@ -140,6 +160,8 @@ from mypy_boto3_budgets.literals import DescribeBudgetActionsForBudgetPaginatorN
 Values:
 
 - `describe_budget_actions_for_budget`
+
+<a id="describebudgetperformancehistorypaginatorname"></a>
 
 ## DescribeBudgetPerformanceHistoryPaginatorName
 
@@ -151,6 +173,8 @@ Values:
 
 - `describe_budget_performance_history`
 
+<a id="describebudgetspaginatorname"></a>
+
 ## DescribeBudgetsPaginatorName
 
 ```python
@@ -160,6 +184,8 @@ from mypy_boto3_budgets.literals import DescribeBudgetsPaginatorName
 Values:
 
 - `describe_budgets`
+
+<a id="describenotificationsforbudgetpaginatorname"></a>
 
 ## DescribeNotificationsForBudgetPaginatorName
 
@@ -171,6 +197,8 @@ Values:
 
 - `describe_notifications_for_budget`
 
+<a id="describesubscribersfornotificationpaginatorname"></a>
+
 ## DescribeSubscribersForNotificationPaginatorName
 
 ```python
@@ -180,6 +208,8 @@ from mypy_boto3_budgets.literals import DescribeSubscribersForNotificationPagina
 Values:
 
 - `describe_subscribers_for_notification`
+
+<a id="eventtypetype"></a>
 
 ## EventTypeType
 
@@ -195,6 +225,8 @@ Values:
 - `SYSTEM`
 - `UPDATE_ACTION`
 
+<a id="executiontypetype"></a>
+
 ## ExecutionTypeType
 
 ```python
@@ -208,6 +240,8 @@ Values:
 - `RETRY_BUDGET_ACTION`
 - `REVERSE_BUDGET_ACTION`
 
+<a id="notificationstatetype"></a>
+
 ## NotificationStateType
 
 ```python
@@ -218,6 +252,8 @@ Values:
 
 - `ALARM`
 - `OK`
+
+<a id="notificationtypetype"></a>
 
 ## NotificationTypeType
 
@@ -230,6 +266,8 @@ Values:
 - `ACTUAL`
 - `FORECASTED`
 
+<a id="subscriptiontypetype"></a>
+
 ## SubscriptionTypeType
 
 ```python
@@ -241,6 +279,8 @@ Values:
 - `EMAIL`
 - `SNS`
 
+<a id="thresholdtypetype"></a>
+
 ## ThresholdTypeType
 
 ```python
@@ -251,6 +291,8 @@ Values:
 
 - `ABSOLUTE_VALUE`
 - `PERCENTAGE`
+
+<a id="timeunittype"></a>
 
 ## TimeUnitType
 
@@ -264,6 +306,8 @@ Values:
 - `DAILY`
 - `MONTHLY`
 - `QUARTERLY`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -572,6 +616,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

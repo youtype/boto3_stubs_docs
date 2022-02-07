@@ -1,3 +1,5 @@
+<a id="emrcontainersclient-for-boto3-emrcontainers-module"></a>
+
 # EMRContainersClient for boto3 EMRContainers module
 
 > [Index](..) > [EMRContainers](.) > EMRContainersClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
 type annotations stubs module
-[mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
+[mypy-boto3-emr-containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 - [EMRContainersClient for boto3 EMRContainers module](#emrcontainersclient-for-boto3-emrcontainers-module)
   - [EMRContainersClient](#emrcontainersclient)
@@ -31,6 +33,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="emrcontainersclient"></a>
+
 ## EMRContainersClient
 
 Type annotations for `boto3.client("emr-containers")`
@@ -38,14 +42,17 @@ Type annotations for `boto3.client("emr-containers")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_emr_containers.client import EMRContainersClient
 
 def get_emr-containers_client() -> EMRContainersClient:
-    return boto3.client("emr-containers")
+    return Session().client("emr-containers")
 ```
 
 Boto3 documentation:
 [EMRContainers.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -66,7 +73,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -78,6 +89,8 @@ Boto3 documentation:
 [EMRContainers.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -93,6 +106,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_job_run"></a>
 
 ### cancel_job_run
 
@@ -113,6 +128,8 @@ Keyword-only arguments:
 
 Returns
 [CancelJobRunResponseTypeDef](./type_defs.md#canceljobrunresponsetypedef).
+
+<a id="create_managed_endpoint"></a>
 
 ### create_managed_endpoint
 
@@ -143,6 +160,8 @@ Keyword-only arguments:
 Returns
 [CreateManagedEndpointResponseTypeDef](./type_defs.md#createmanagedendpointresponsetypedef).
 
+<a id="create_virtual_cluster"></a>
+
 ### create_virtual_cluster
 
 Creates a virtual cluster.
@@ -168,6 +187,8 @@ Keyword-only arguments:
 Returns
 [CreateVirtualClusterResponseTypeDef](./type_defs.md#createvirtualclusterresponsetypedef).
 
+<a id="delete_managed_endpoint"></a>
+
 ### delete_managed_endpoint
 
 Deletes a managed endpoint.
@@ -189,6 +210,8 @@ Keyword-only arguments:
 Returns
 [DeleteManagedEndpointResponseTypeDef](./type_defs.md#deletemanagedendpointresponsetypedef).
 
+<a id="delete_virtual_cluster"></a>
+
 ### delete_virtual_cluster
 
 Deletes a virtual cluster.
@@ -209,6 +232,8 @@ Keyword-only arguments:
 Returns
 [DeleteVirtualClusterResponseTypeDef](./type_defs.md#deletevirtualclusterresponsetypedef).
 
+<a id="describe_job_run"></a>
+
 ### describe_job_run
 
 Displays detailed information about a job run.
@@ -228,6 +253,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeJobRunResponseTypeDef](./type_defs.md#describejobrunresponsetypedef).
+
+<a id="describe_managed_endpoint"></a>
 
 ### describe_managed_endpoint
 
@@ -250,6 +277,8 @@ Keyword-only arguments:
 Returns
 [DescribeManagedEndpointResponseTypeDef](./type_defs.md#describemanagedendpointresponsetypedef).
 
+<a id="describe_virtual_cluster"></a>
+
 ### describe_virtual_cluster
 
 Displays detailed information about a specified virtual cluster.
@@ -270,6 +299,8 @@ Keyword-only arguments:
 Returns
 [DescribeVirtualClusterResponseTypeDef](./type_defs.md#describevirtualclusterresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -288,6 +319,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_job_runs"></a>
 
 ### list_job_runs
 
@@ -313,6 +346,8 @@ Keyword-only arguments:
 
 Returns
 [ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef).
+
+<a id="list_managed_endpoints"></a>
 
 ### list_managed_endpoints
 
@@ -340,6 +375,8 @@ Keyword-only arguments:
 Returns
 [ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags assigned to the resources.
@@ -359,6 +396,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_virtual_clusters"></a>
 
 ### list_virtual_clusters
 
@@ -388,6 +427,8 @@ Keyword-only arguments:
 Returns
 [ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef).
 
+<a id="start_job_run"></a>
+
 ### start_job_run
 
 Starts a job run.
@@ -415,6 +456,8 @@ Keyword-only arguments:
 Returns
 [StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns tags to resources.
@@ -434,6 +477,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from resources.
@@ -452,6 +497,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

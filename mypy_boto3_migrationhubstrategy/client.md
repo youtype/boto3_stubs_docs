@@ -1,3 +1,5 @@
+<a id="migrationhubstrategyrecommendationsclient-for-boto3-migrationhubstrategyrecommendations-module"></a>
+
 # MigrationHubStrategyRecommendationsClient for boto3 MigrationHubStrategyRecommendations module
 
 > [Index](..) > [MigrationHubStrategyRecommendations](.) >
@@ -6,7 +8,7 @@
 Auto-generated documentation for
 [MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
 type annotations stubs module
-[mypy_boto3_migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
+[mypy-boto3-migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
 
 - [MigrationHubStrategyRecommendationsClient for boto3 MigrationHubStrategyRecommendations module](#migrationhubstrategyrecommendationsclient-for-boto3-migrationhubstrategyrecommendations-module)
   - [MigrationHubStrategyRecommendationsClient](#migrationhubstrategyrecommendationsclient)
@@ -37,6 +39,8 @@ type annotations stubs module
     - [update_server_config](#update_server_config)
     - [get_paginator](#get_paginator)
 
+<a id="migrationhubstrategyrecommendationsclient"></a>
+
 ## MigrationHubStrategyRecommendationsClient
 
 Type annotations for `boto3.client("migrationhubstrategy")`
@@ -44,14 +48,17 @@ Type annotations for `boto3.client("migrationhubstrategy")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_migrationhubstrategy.client import MigrationHubStrategyRecommendationsClient
 
 def get_migrationhubstrategy_client() -> MigrationHubStrategyRecommendationsClient:
-    return boto3.client("migrationhubstrategy")
+    return Session().client("migrationhubstrategy")
 ```
 
 Boto3 documentation:
 [MigrationHubStrategyRecommendations.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -77,7 +84,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -89,6 +100,8 @@ Boto3 documentation:
 [MigrationHubStrategyRecommendations.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -105,6 +118,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -124,6 +139,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_application_component_details"></a>
 
 ### get_application_component_details
 
@@ -145,6 +162,8 @@ Keyword-only arguments:
 
 Returns
 [GetApplicationComponentDetailsResponseTypeDef](./type_defs.md#getapplicationcomponentdetailsresponsetypedef).
+
+<a id="get_application_component_strategies"></a>
 
 ### get_application_component_strategies
 
@@ -168,6 +187,8 @@ Keyword-only arguments:
 Returns
 [GetApplicationComponentStrategiesResponseTypeDef](./type_defs.md#getapplicationcomponentstrategiesresponsetypedef).
 
+<a id="get_assessment"></a>
+
 ### get_assessment
 
 Retrieves the status of an on-going assessment.
@@ -187,6 +208,8 @@ Keyword-only arguments:
 
 Returns
 [GetAssessmentResponseTypeDef](./type_defs.md#getassessmentresponsetypedef).
+
+<a id="get_import_file_task"></a>
 
 ### get_import_file_task
 
@@ -208,6 +231,8 @@ Keyword-only arguments:
 Returns
 [GetImportFileTaskResponseTypeDef](./type_defs.md#getimportfiletaskresponsetypedef).
 
+<a id="get_portfolio_preferences"></a>
+
 ### get_portfolio_preferences
 
 Retrieves your migration and modernization preferences.
@@ -220,6 +245,8 @@ Boto3 documentation:
 
 Returns
 [GetPortfolioPreferencesResponseTypeDef](./type_defs.md#getportfoliopreferencesresponsetypedef).
+
+<a id="get_portfolio_summary"></a>
 
 ### get_portfolio_summary
 
@@ -234,6 +261,8 @@ Boto3 documentation:
 
 Returns
 [GetPortfolioSummaryResponseTypeDef](./type_defs.md#getportfoliosummaryresponsetypedef).
+
+<a id="get_recommendation_report_details"></a>
 
 ### get_recommendation_report_details
 
@@ -255,6 +284,8 @@ Keyword-only arguments:
 
 Returns
 [GetRecommendationReportDetailsResponseTypeDef](./type_defs.md#getrecommendationreportdetailsresponsetypedef).
+
+<a id="get_server_details"></a>
 
 ### get_server_details
 
@@ -278,6 +309,8 @@ Keyword-only arguments:
 Returns
 [GetServerDetailsResponseTypeDef](./type_defs.md#getserverdetailsresponsetypedef).
 
+<a id="get_server_strategies"></a>
+
 ### get_server_strategies
 
 Retrieves recommended strategies and tools for the specified server.
@@ -297,6 +330,8 @@ Keyword-only arguments:
 
 Returns
 [GetServerStrategiesResponseTypeDef](./type_defs.md#getserverstrategiesresponsetypedef).
+
+<a id="list_application_components"></a>
 
 ### list_application_components
 
@@ -324,6 +359,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationComponentsResponseTypeDef](./type_defs.md#listapplicationcomponentsresponsetypedef).
 
+<a id="list_collectors"></a>
+
 ### list_collectors
 
 Retrieves a list of all the installed collectors.
@@ -345,6 +382,8 @@ Keyword-only arguments:
 Returns
 [ListCollectorsResponseTypeDef](./type_defs.md#listcollectorsresponsetypedef).
 
+<a id="list_import_file_task"></a>
+
 ### list_import_file_task
 
 Retrieves a list of all the imports performed.
@@ -365,6 +404,8 @@ Keyword-only arguments:
 
 Returns
 [ListImportFileTaskResponseTypeDef](./type_defs.md#listimportfiletaskresponsetypedef).
+
+<a id="list_servers"></a>
 
 ### list_servers
 
@@ -391,6 +432,8 @@ Keyword-only arguments:
 Returns
 [ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef).
 
+<a id="put_portfolio_preferences"></a>
+
 ### put_portfolio_preferences
 
 Saves the specified migration and modernization preferences.
@@ -415,6 +458,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="start_assessment"></a>
+
 ### start_assessment
 
 Starts the assessment of an on-premises environment.
@@ -435,6 +480,8 @@ Keyword-only arguments:
 
 Returns
 [StartAssessmentResponseTypeDef](./type_defs.md#startassessmentresponsetypedef).
+
+<a id="start_import_file_task"></a>
 
 ### start_import_file_task
 
@@ -461,6 +508,8 @@ Keyword-only arguments:
 Returns
 [StartImportFileTaskResponseTypeDef](./type_defs.md#startimportfiletaskresponsetypedef).
 
+<a id="start_recommendation_report_generation"></a>
+
 ### start_recommendation_report_generation
 
 Starts generating a recommendation report.
@@ -483,6 +532,8 @@ Keyword-only arguments:
 Returns
 [StartRecommendationReportGenerationResponseTypeDef](./type_defs.md#startrecommendationreportgenerationresponsetypedef).
 
+<a id="stop_assessment"></a>
+
 ### stop_assessment
 
 Stops the assessment of an on-premises environment.
@@ -501,6 +552,8 @@ Keyword-only arguments:
 - `assessmentId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_application_component_config"></a>
 
 ### update_application_component_config
 
@@ -528,6 +581,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_server_config"></a>
+
 ### update_server_config
 
 Updates the configuration of the specified server.
@@ -548,6 +603,8 @@ Keyword-only arguments:
   [StrategyOptionTypeDef](./type_defs.md#strategyoptiontypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

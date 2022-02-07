@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-servicediscovery-module"></a>
+
 # Typed dictionaries for boto3 ServiceDiscovery module
 
 > [Index](..) > [ServiceDiscovery](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
 type annotations stubs module
-[mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
+[mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 - [Typed dictionaries for boto3 ServiceDiscovery module](#typed-dictionaries-for-boto3-servicediscovery-module)
   - [CreateHttpNamespaceRequestRequestTypeDef](#createhttpnamespacerequestrequesttypedef)
@@ -94,6 +96,8 @@ type annotations stubs module
   - [UpdateServiceRequestRequestTypeDef](#updateservicerequestrequesttypedef)
   - [UpdateServiceResponseTypeDef](#updateserviceresponsetypedef)
 
+<a id="createhttpnamespacerequestrequesttypedef"></a>
+
 ## CreateHttpNamespaceRequestRequestTypeDef
 
 ```python
@@ -110,6 +114,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createhttpnamespaceresponsetypedef"></a>
+
 ## CreateHttpNamespaceResponseTypeDef
 
 ```python
@@ -121,6 +127,8 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprivatednsnamespacerequestrequesttypedef"></a>
 
 ## CreatePrivateDnsNamespaceRequestRequestTypeDef
 
@@ -141,6 +149,8 @@ Optional fields:
 - `Properties`:
   [PrivateDnsNamespacePropertiesTypeDef](./type_defs.md#privatednsnamespacepropertiestypedef)
 
+<a id="createprivatednsnamespaceresponsetypedef"></a>
+
 ## CreatePrivateDnsNamespaceResponseTypeDef
 
 ```python
@@ -152,6 +162,8 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpublicdnsnamespacerequestrequesttypedef"></a>
 
 ## CreatePublicDnsNamespaceRequestRequestTypeDef
 
@@ -171,6 +183,8 @@ Optional fields:
 - `Properties`:
   [PublicDnsNamespacePropertiesTypeDef](./type_defs.md#publicdnsnamespacepropertiestypedef)
 
+<a id="createpublicdnsnamespaceresponsetypedef"></a>
+
 ## CreatePublicDnsNamespaceResponseTypeDef
 
 ```python
@@ -182,6 +196,8 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createservicerequestrequesttypedef"></a>
 
 ## CreateServiceRequestRequestTypeDef
 
@@ -207,6 +223,8 @@ Optional fields:
 - `Type`: `Literal['HTTP']` (see
   [ServiceTypeOptionType](./literals.md#servicetypeoptiontype))
 
+<a id="createserviceresponsetypedef"></a>
+
 ## CreateServiceResponseTypeDef
 
 ```python
@@ -219,6 +237,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletenamespacerequestrequesttypedef"></a>
+
 ## DeleteNamespaceRequestRequestTypeDef
 
 ```python
@@ -228,6 +248,8 @@ from mypy_boto3_servicediscovery.type_defs import DeleteNamespaceRequestRequestT
 Required fields:
 
 - `Id`: `str`
+
+<a id="deletenamespaceresponsetypedef"></a>
 
 ## DeleteNamespaceResponseTypeDef
 
@@ -241,6 +263,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteservicerequestrequesttypedef"></a>
+
 ## DeleteServiceRequestRequestTypeDef
 
 ```python
@@ -250,6 +274,8 @@ from mypy_boto3_servicediscovery.type_defs import DeleteServiceRequestRequestTyp
 Required fields:
 
 - `Id`: `str`
+
+<a id="deregisterinstancerequestrequesttypedef"></a>
 
 ## DeregisterInstanceRequestRequestTypeDef
 
@@ -262,6 +288,8 @@ Required fields:
 - `ServiceId`: `str`
 - `InstanceId`: `str`
 
+<a id="deregisterinstanceresponsetypedef"></a>
+
 ## DeregisterInstanceResponseTypeDef
 
 ```python
@@ -273,6 +301,8 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="discoverinstancesrequestrequesttypedef"></a>
 
 ## DiscoverInstancesRequestRequestTypeDef
 
@@ -293,6 +323,8 @@ Optional fields:
 - `HealthStatus`:
   [HealthStatusFilterType](./literals.md#healthstatusfiltertype)
 
+<a id="discoverinstancesresponsetypedef"></a>
+
 ## DiscoverInstancesResponseTypeDef
 
 ```python
@@ -306,6 +338,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dnsconfigchangetypedef"></a>
+
 ## DnsConfigChangeTypeDef
 
 ```python
@@ -316,6 +350,8 @@ Required fields:
 
 - `DnsRecords`:
   `Sequence`\[[DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)\]
+
+<a id="dnsconfigtypedef"></a>
 
 ## DnsConfigTypeDef
 
@@ -333,6 +369,8 @@ Optional fields:
 - `NamespaceId`: `str`
 - `RoutingPolicy`: [RoutingPolicyType](./literals.md#routingpolicytype)
 
+<a id="dnspropertiestypedef"></a>
+
 ## DnsPropertiesTypeDef
 
 ```python
@@ -343,6 +381,8 @@ Optional fields:
 
 - `HostedZoneId`: `str`
 - `SOA`: [SOATypeDef](./type_defs.md#soatypedef)
+
+<a id="dnsrecordtypedef"></a>
 
 ## DnsRecordTypeDef
 
@@ -355,6 +395,8 @@ Required fields:
 - `Type`: [RecordTypeType](./literals.md#recordtypetype)
 - `TTL`: `int`
 
+<a id="getinstancerequestrequesttypedef"></a>
+
 ## GetInstanceRequestRequestTypeDef
 
 ```python
@@ -365,6 +407,8 @@ Required fields:
 
 - `ServiceId`: `str`
 - `InstanceId`: `str`
+
+<a id="getinstanceresponsetypedef"></a>
 
 ## GetInstanceResponseTypeDef
 
@@ -377,6 +421,8 @@ Required fields:
 - `Instance`: [InstanceTypeDef](./type_defs.md#instancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getinstanceshealthstatusrequestrequesttypedef"></a>
 
 ## GetInstancesHealthStatusRequestRequestTypeDef
 
@@ -394,6 +440,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getinstanceshealthstatusresponsetypedef"></a>
+
 ## GetInstancesHealthStatusResponseTypeDef
 
 ```python
@@ -407,6 +455,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getnamespacerequestrequesttypedef"></a>
+
 ## GetNamespaceRequestRequestTypeDef
 
 ```python
@@ -416,6 +466,8 @@ from mypy_boto3_servicediscovery.type_defs import GetNamespaceRequestRequestType
 Required fields:
 
 - `Id`: `str`
+
+<a id="getnamespaceresponsetypedef"></a>
 
 ## GetNamespaceResponseTypeDef
 
@@ -429,6 +481,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getoperationrequestrequesttypedef"></a>
+
 ## GetOperationRequestRequestTypeDef
 
 ```python
@@ -438,6 +492,8 @@ from mypy_boto3_servicediscovery.type_defs import GetOperationRequestRequestType
 Required fields:
 
 - `OperationId`: `str`
+
+<a id="getoperationresponsetypedef"></a>
 
 ## GetOperationResponseTypeDef
 
@@ -451,6 +507,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getservicerequestrequesttypedef"></a>
+
 ## GetServiceRequestRequestTypeDef
 
 ```python
@@ -460,6 +518,8 @@ from mypy_boto3_servicediscovery.type_defs import GetServiceRequestRequestTypeDe
 Required fields:
 
 - `Id`: `str`
+
+<a id="getserviceresponsetypedef"></a>
 
 ## GetServiceResponseTypeDef
 
@@ -472,6 +532,8 @@ Required fields:
 - `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="healthcheckconfigtypedef"></a>
 
 ## HealthCheckConfigTypeDef
 
@@ -488,6 +550,8 @@ Optional fields:
 - `ResourcePath`: `str`
 - `FailureThreshold`: `int`
 
+<a id="healthcheckcustomconfigtypedef"></a>
+
 ## HealthCheckCustomConfigTypeDef
 
 ```python
@@ -497,6 +561,8 @@ from mypy_boto3_servicediscovery.type_defs import HealthCheckCustomConfigTypeDef
 Optional fields:
 
 - `FailureThreshold`: `int`
+
+<a id="httpinstancesummarytypedef"></a>
 
 ## HttpInstanceSummaryTypeDef
 
@@ -512,6 +578,8 @@ Optional fields:
 - `HealthStatus`: [HealthStatusType](./literals.md#healthstatustype)
 - `Attributes`: `Dict`\[`str`, `str`\]
 
+<a id="httpnamespacechangetypedef"></a>
+
 ## HttpNamespaceChangeTypeDef
 
 ```python
@@ -521,6 +589,8 @@ from mypy_boto3_servicediscovery.type_defs import HttpNamespaceChangeTypeDef
 Required fields:
 
 - `Description`: `str`
+
+<a id="httppropertiestypedef"></a>
 
 ## HttpPropertiesTypeDef
 
@@ -532,6 +602,8 @@ Optional fields:
 
 - `HttpName`: `str`
 
+<a id="instancesummarytypedef"></a>
+
 ## InstanceSummaryTypeDef
 
 ```python
@@ -542,6 +614,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Attributes`: `Dict`\[`str`, `str`\]
+
+<a id="instancetypedef"></a>
 
 ## InstanceTypeDef
 
@@ -558,6 +632,8 @@ Optional fields:
 - `CreatorRequestId`: `str`
 - `Attributes`: `Dict`\[`str`, `str`\]
 
+<a id="listinstancesrequestrequesttypedef"></a>
+
 ## ListInstancesRequestRequestTypeDef
 
 ```python
@@ -573,6 +649,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listinstancesresponsetypedef"></a>
+
 ## ListInstancesResponseTypeDef
 
 ```python
@@ -587,6 +665,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listnamespacesrequestrequesttypedef"></a>
+
 ## ListNamespacesRequestRequestTypeDef
 
 ```python
@@ -599,6 +679,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Filters`:
   `Sequence`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
+
+<a id="listnamespacesresponsetypedef"></a>
 
 ## ListNamespacesResponseTypeDef
 
@@ -614,6 +696,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listoperationsrequestrequesttypedef"></a>
+
 ## ListOperationsRequestRequestTypeDef
 
 ```python
@@ -626,6 +710,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Filters`:
   `Sequence`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
+
+<a id="listoperationsresponsetypedef"></a>
 
 ## ListOperationsResponseTypeDef
 
@@ -641,6 +727,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listservicesrequestrequesttypedef"></a>
+
 ## ListServicesRequestRequestTypeDef
 
 ```python
@@ -653,6 +741,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Filters`:
   `Sequence`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
+
+<a id="listservicesresponsetypedef"></a>
 
 ## ListServicesResponseTypeDef
 
@@ -668,6 +758,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -677,6 +769,8 @@ from mypy_boto3_servicediscovery.type_defs import ListTagsForResourceRequestRequ
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -689,6 +783,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="namespacefiltertypedef"></a>
 
 ## NamespaceFilterTypeDef
 
@@ -706,6 +802,8 @@ Optional fields:
 
 - `Condition`: [FilterConditionType](./literals.md#filterconditiontype)
 
+<a id="namespacepropertiestypedef"></a>
+
 ## NamespacePropertiesTypeDef
 
 ```python
@@ -717,6 +815,8 @@ Optional fields:
 - `DnsProperties`: [DnsPropertiesTypeDef](./type_defs.md#dnspropertiestypedef)
 - `HttpProperties`:
   [HttpPropertiesTypeDef](./type_defs.md#httppropertiestypedef)
+
+<a id="namespacesummarytypedef"></a>
 
 ## NamespaceSummaryTypeDef
 
@@ -735,6 +835,8 @@ Optional fields:
 - `Properties`:
   [NamespacePropertiesTypeDef](./type_defs.md#namespacepropertiestypedef)
 - `CreateDate`: `datetime`
+
+<a id="namespacetypedef"></a>
 
 ## NamespaceTypeDef
 
@@ -755,6 +857,8 @@ Optional fields:
 - `CreateDate`: `datetime`
 - `CreatorRequestId`: `str`
 
+<a id="operationfiltertypedef"></a>
+
 ## OperationFilterTypeDef
 
 ```python
@@ -770,6 +874,8 @@ Optional fields:
 
 - `Condition`: [FilterConditionType](./literals.md#filterconditiontype)
 
+<a id="operationsummarytypedef"></a>
+
 ## OperationSummaryTypeDef
 
 ```python
@@ -780,6 +886,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Status`: [OperationStatusType](./literals.md#operationstatustype)
+
+<a id="operationtypedef"></a>
 
 ## OperationTypeDef
 
@@ -800,6 +908,8 @@ Optional fields:
   `Dict`\[[OperationTargetTypeType](./literals.md#operationtargettypetype),
   `str`\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -811,6 +921,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="privatednsnamespacechangetypedef"></a>
 
 ## PrivateDnsNamespaceChangeTypeDef
 
@@ -824,6 +936,8 @@ Optional fields:
 - `Properties`:
   [PrivateDnsNamespacePropertiesChangeTypeDef](./type_defs.md#privatednsnamespacepropertieschangetypedef)
 
+<a id="privatednsnamespacepropertieschangetypedef"></a>
+
 ## PrivateDnsNamespacePropertiesChangeTypeDef
 
 ```python
@@ -834,6 +948,8 @@ Required fields:
 
 - `DnsProperties`:
   [PrivateDnsPropertiesMutableChangeTypeDef](./type_defs.md#privatednspropertiesmutablechangetypedef)
+
+<a id="privatednsnamespacepropertiestypedef"></a>
 
 ## PrivateDnsNamespacePropertiesTypeDef
 
@@ -846,6 +962,8 @@ Required fields:
 - `DnsProperties`:
   [PrivateDnsPropertiesMutableTypeDef](./type_defs.md#privatednspropertiesmutabletypedef)
 
+<a id="privatednspropertiesmutablechangetypedef"></a>
+
 ## PrivateDnsPropertiesMutableChangeTypeDef
 
 ```python
@@ -856,6 +974,8 @@ Required fields:
 
 - `SOA`: [SOAChangeTypeDef](./type_defs.md#soachangetypedef)
 
+<a id="privatednspropertiesmutabletypedef"></a>
+
 ## PrivateDnsPropertiesMutableTypeDef
 
 ```python
@@ -865,6 +985,8 @@ from mypy_boto3_servicediscovery.type_defs import PrivateDnsPropertiesMutableTyp
 Required fields:
 
 - `SOA`: [SOATypeDef](./type_defs.md#soatypedef)
+
+<a id="publicdnsnamespacechangetypedef"></a>
 
 ## PublicDnsNamespaceChangeTypeDef
 
@@ -878,6 +1000,8 @@ Optional fields:
 - `Properties`:
   [PublicDnsNamespacePropertiesChangeTypeDef](./type_defs.md#publicdnsnamespacepropertieschangetypedef)
 
+<a id="publicdnsnamespacepropertieschangetypedef"></a>
+
 ## PublicDnsNamespacePropertiesChangeTypeDef
 
 ```python
@@ -888,6 +1012,8 @@ Required fields:
 
 - `DnsProperties`:
   [PublicDnsPropertiesMutableChangeTypeDef](./type_defs.md#publicdnspropertiesmutablechangetypedef)
+
+<a id="publicdnsnamespacepropertiestypedef"></a>
 
 ## PublicDnsNamespacePropertiesTypeDef
 
@@ -900,6 +1026,8 @@ Required fields:
 - `DnsProperties`:
   [PublicDnsPropertiesMutableTypeDef](./type_defs.md#publicdnspropertiesmutabletypedef)
 
+<a id="publicdnspropertiesmutablechangetypedef"></a>
+
 ## PublicDnsPropertiesMutableChangeTypeDef
 
 ```python
@@ -910,6 +1038,8 @@ Required fields:
 
 - `SOA`: [SOAChangeTypeDef](./type_defs.md#soachangetypedef)
 
+<a id="publicdnspropertiesmutabletypedef"></a>
+
 ## PublicDnsPropertiesMutableTypeDef
 
 ```python
@@ -919,6 +1049,8 @@ from mypy_boto3_servicediscovery.type_defs import PublicDnsPropertiesMutableType
 Required fields:
 
 - `SOA`: [SOATypeDef](./type_defs.md#soatypedef)
+
+<a id="registerinstancerequestrequesttypedef"></a>
 
 ## RegisterInstanceRequestRequestTypeDef
 
@@ -936,6 +1068,8 @@ Optional fields:
 
 - `CreatorRequestId`: `str`
 
+<a id="registerinstanceresponsetypedef"></a>
+
 ## RegisterInstanceResponseTypeDef
 
 ```python
@@ -947,6 +1081,8 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -962,6 +1098,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="soachangetypedef"></a>
+
 ## SOAChangeTypeDef
 
 ```python
@@ -972,6 +1110,8 @@ Required fields:
 
 - `TTL`: `int`
 
+<a id="soatypedef"></a>
+
 ## SOATypeDef
 
 ```python
@@ -981,6 +1121,8 @@ from mypy_boto3_servicediscovery.type_defs import SOATypeDef
 Required fields:
 
 - `TTL`: `int`
+
+<a id="servicechangetypedef"></a>
 
 ## ServiceChangeTypeDef
 
@@ -994,6 +1136,8 @@ Optional fields:
 - `DnsConfig`: [DnsConfigChangeTypeDef](./type_defs.md#dnsconfigchangetypedef)
 - `HealthCheckConfig`:
   [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
+
+<a id="servicefiltertypedef"></a>
 
 ## ServiceFilterTypeDef
 
@@ -1010,6 +1154,8 @@ Required fields:
 Optional fields:
 
 - `Condition`: [FilterConditionType](./literals.md#filterconditiontype)
+
+<a id="servicesummarytypedef"></a>
 
 ## ServiceSummaryTypeDef
 
@@ -1031,6 +1177,8 @@ Optional fields:
 - `HealthCheckCustomConfig`:
   [HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef)
 - `CreateDate`: `datetime`
+
+<a id="servicetypedef"></a>
 
 ## ServiceTypeDef
 
@@ -1055,6 +1203,8 @@ Optional fields:
 - `CreateDate`: `datetime`
 - `CreatorRequestId`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1065,6 +1215,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1077,6 +1229,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1087,6 +1241,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatehttpnamespacerequestrequesttypedef"></a>
 
 ## UpdateHttpNamespaceRequestRequestTypeDef
 
@@ -1104,6 +1260,8 @@ Optional fields:
 
 - `UpdaterRequestId`: `str`
 
+<a id="updatehttpnamespaceresponsetypedef"></a>
+
 ## UpdateHttpNamespaceResponseTypeDef
 
 ```python
@@ -1116,6 +1274,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateinstancecustomhealthstatusrequestrequesttypedef"></a>
+
 ## UpdateInstanceCustomHealthStatusRequestRequestTypeDef
 
 ```python
@@ -1127,6 +1287,8 @@ Required fields:
 - `ServiceId`: `str`
 - `InstanceId`: `str`
 - `Status`: [CustomHealthStatusType](./literals.md#customhealthstatustype)
+
+<a id="updateprivatednsnamespacerequestrequesttypedef"></a>
 
 ## UpdatePrivateDnsNamespaceRequestRequestTypeDef
 
@@ -1144,6 +1306,8 @@ Optional fields:
 
 - `UpdaterRequestId`: `str`
 
+<a id="updateprivatednsnamespaceresponsetypedef"></a>
+
 ## UpdatePrivateDnsNamespaceResponseTypeDef
 
 ```python
@@ -1155,6 +1319,8 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatepublicdnsnamespacerequestrequesttypedef"></a>
 
 ## UpdatePublicDnsNamespaceRequestRequestTypeDef
 
@@ -1172,6 +1338,8 @@ Optional fields:
 
 - `UpdaterRequestId`: `str`
 
+<a id="updatepublicdnsnamespaceresponsetypedef"></a>
+
 ## UpdatePublicDnsNamespaceResponseTypeDef
 
 ```python
@@ -1184,6 +1352,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateservicerequestrequesttypedef"></a>
+
 ## UpdateServiceRequestRequestTypeDef
 
 ```python
@@ -1194,6 +1364,8 @@ Required fields:
 
 - `Id`: `str`
 - `Service`: [ServiceChangeTypeDef](./type_defs.md#servicechangetypedef)
+
+<a id="updateserviceresponsetypedef"></a>
 
 ## UpdateServiceResponseTypeDef
 

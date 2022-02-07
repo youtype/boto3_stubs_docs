@@ -1,3 +1,5 @@
+<a id="elasticinferenceclient-for-boto3-elasticinference-module"></a>
+
 # ElasticInferenceClient for boto3 ElasticInference module
 
 > [Index](..) > [ElasticInference](.) > ElasticInferenceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
 type annotations stubs module
-[mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
+[mypy-boto3-elastic-inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
 - [ElasticInferenceClient for boto3 ElasticInference module](#elasticinferenceclient-for-boto3-elasticinference-module)
   - [ElasticInferenceClient](#elasticinferenceclient)
@@ -22,6 +24,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="elasticinferenceclient"></a>
+
 ## ElasticInferenceClient
 
 Type annotations for `boto3.client("elastic-inference")`
@@ -29,14 +33,17 @@ Type annotations for `boto3.client("elastic-inference")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_elastic_inference.client import ElasticInferenceClient
 
 def get_elastic-inference_client() -> ElasticInferenceClient:
-    return boto3.client("elastic-inference")
+    return Session().client("elastic-inference")
 ```
 
 Boto3 documentation:
 [ElasticInference.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -57,7 +64,11 @@ Exceptions:
 - `Exceptions.InternalServerException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -69,6 +80,8 @@ Boto3 documentation:
 [ElasticInference.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -84,6 +97,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="describe_accelerator_offerings"></a>
 
 ### describe_accelerator_offerings
 
@@ -108,6 +123,8 @@ Keyword-only arguments:
 Returns
 [DescribeAcceleratorOfferingsResponseTypeDef](./type_defs.md#describeacceleratorofferingsresponsetypedef).
 
+<a id="describe_accelerator_types"></a>
+
 ### describe_accelerator_types
 
 Describes the accelerator types available in a given region, as well as their
@@ -121,6 +138,8 @@ Boto3 documentation:
 
 Returns
 [DescribeAcceleratorTypesResponseTypeDef](./type_defs.md#describeacceleratortypesresponsetypedef).
+
+<a id="describe_accelerators"></a>
 
 ### describe_accelerators
 
@@ -146,6 +165,8 @@ Keyword-only arguments:
 Returns
 [DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -164,6 +185,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -185,6 +208,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tags to an Elastic Inference Accelerator.
@@ -204,6 +229,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the specified tags from an Elastic Inference Accelerator.
@@ -222,6 +249,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

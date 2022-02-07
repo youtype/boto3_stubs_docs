@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-s3-module"></a>
+
 # Type annotations for boto3 S3 module
 
 > [Index](..) > S3
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
 type annotations stubs module
-[mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
+[mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[s3]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[s3]'
+
+# standalone installation
 pip install mypy-boto3-s3
 ```
 
@@ -23,6 +33,8 @@ pip install mypy-boto3-s3
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="s3client"></a>
+
 ## S3Client
 
 Type annotations for `boto3.client("s3")` as [S3Client](./client.md)
@@ -32,6 +44,8 @@ Can be used directly:
 ```python
 from mypy_boto3_s3.client import S3Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -143,6 +157,8 @@ from mypy_boto3_s3.client import S3Client
 - [upload_part_copy](./client.md#upload_part_copy)
 - [write_get_object_response](./client.md#write_get_object_response)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 S3Client [exceptions](./client.md#exceptions)
@@ -157,6 +173,8 @@ S3Client [exceptions](./client.md#exceptions)
 - ObjectAlreadyInActiveTierError
 - ObjectNotInActiveTierError
 
+<a id="s3serviceresource"></a>
+
 ## S3ServiceResource
 
 Type annotations for `boto3.resource("s3")` as
@@ -167,6 +185,8 @@ Can be used directly:
 ```python
 from mypy_boto3_s3.service_resource import S3ServiceResource
 ```
+
+<a id="collections"></a>
 
 ### Collections
 
@@ -179,6 +199,8 @@ from mypy_boto3_s3.service_resource import ServiceResourceBucketsCollection, ...
 ```
 
 - [ServiceResourceBucketsCollection](./service_resource.md#s3serviceresourcebuckets)
+
+<a id="resources"></a>
 
 ### Resources
 
@@ -209,6 +231,8 @@ from mypy_boto3_s3.service_resource import Bucket, ...
 - [ObjectSummary](./service_resource.md#objectsummary)
 - [ObjectVersion](./service_resource.md#objectversion)
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -217,7 +241,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_s3.paginators import ListMultipartUploadsPaginator, ...
+from mypy_boto3_s3.paginator import ListMultipartUploadsPaginator, ...
 ```
 
 - [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
@@ -225,6 +249,8 @@ from mypy_boto3_s3.paginators import ListMultipartUploadsPaginator, ...
 - [ListObjectsPaginator](./paginators.md#listobjectspaginator)
 - [ListObjectsV2Paginator](./paginators.md#listobjectsv2paginator)
 - [ListPartsPaginator](./paginators.md#listpartspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -234,13 +260,15 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_s3.waiters import BucketExistsWaiter, ...
+from mypy_boto3_s3.waiter import BucketExistsWaiter, ...
 ```
 
 - [BucketExistsWaiter](./waiters.md#bucketexistswaiter)
 - [BucketNotExistsWaiter](./waiters.md#bucketnotexistswaiter)
 - [ObjectExistsWaiter](./waiters.md#objectexistswaiter)
 - [ObjectNotExistsWaiter](./waiters.md#objectnotexistswaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -319,6 +347,8 @@ from mypy_boto3_s3.literals import AnalyticsS3ExportFileFormatType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

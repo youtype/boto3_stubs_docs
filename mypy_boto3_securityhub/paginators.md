@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-securityhub-module"></a>
+
 # Paginators for boto3 SecurityHub module
 
 > [Index](..) > [SecurityHub](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
 type annotations stubs module
-[mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
+[mypy-boto3-securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
 - [Paginators for boto3 SecurityHub module](#paginators-for-boto3-securityhub-module)
   - [DescribeActionTargetsPaginator](#describeactiontargetspaginator)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [ListMembersPaginator](#listmemberspaginator)
   - [ListOrganizationAdminAccountsPaginator](#listorganizationadminaccountspaginator)
 
+<a id="describeactiontargetspaginator"></a>
+
 ## DescribeActionTargetsPaginator
 
 Type annotations for
@@ -29,10 +33,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import DescribeActionTargetsPaginator
 
 def get_describe_action_targets_paginator() -> DescribeActionTargetsPaginator:
-    return boto3.client("securityhub").get_paginator("describe_action_targets")
+    return Session().client("securityhub").get_paginator("describe_action_targets")
 ```
 
 Boto3 documentation:
@@ -47,6 +53,8 @@ Arguments for `DescribeActionTargetsPaginator.paginate` method:
 `DescribeActionTargetsPaginator.paginate` returns
 `_PageIterator`\[[DescribeActionTargetsResponseTypeDef](./type_defs.md#describeactiontargetsresponsetypedef)\].
 
+<a id="describeproductspaginator"></a>
+
 ## DescribeProductsPaginator
 
 Type annotations for
@@ -55,10 +63,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import DescribeProductsPaginator
 
 def get_describe_products_paginator() -> DescribeProductsPaginator:
-    return boto3.client("securityhub").get_paginator("describe_products")
+    return Session().client("securityhub").get_paginator("describe_products")
 ```
 
 Boto3 documentation:
@@ -73,6 +83,8 @@ Arguments for `DescribeProductsPaginator.paginate` method:
 `DescribeProductsPaginator.paginate` returns
 `_PageIterator`\[[DescribeProductsResponseTypeDef](./type_defs.md#describeproductsresponsetypedef)\].
 
+<a id="describestandardspaginator"></a>
+
 ## DescribeStandardsPaginator
 
 Type annotations for
@@ -81,10 +93,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import DescribeStandardsPaginator
 
 def get_describe_standards_paginator() -> DescribeStandardsPaginator:
-    return boto3.client("securityhub").get_paginator("describe_standards")
+    return Session().client("securityhub").get_paginator("describe_standards")
 ```
 
 Boto3 documentation:
@@ -98,6 +112,8 @@ Arguments for `DescribeStandardsPaginator.paginate` method:
 `DescribeStandardsPaginator.paginate` returns
 `_PageIterator`\[[DescribeStandardsResponseTypeDef](./type_defs.md#describestandardsresponsetypedef)\].
 
+<a id="describestandardscontrolspaginator"></a>
+
 ## DescribeStandardsControlsPaginator
 
 Type annotations for
@@ -106,10 +122,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import DescribeStandardsControlsPaginator
 
 def get_describe_standards_controls_paginator() -> DescribeStandardsControlsPaginator:
-    return boto3.client("securityhub").get_paginator("describe_standards_controls")
+    return Session().client("securityhub").get_paginator("describe_standards_controls")
 ```
 
 Boto3 documentation:
@@ -124,6 +142,8 @@ Arguments for `DescribeStandardsControlsPaginator.paginate` method:
 `DescribeStandardsControlsPaginator.paginate` returns
 `_PageIterator`\[[DescribeStandardsControlsResponseTypeDef](./type_defs.md#describestandardscontrolsresponsetypedef)\].
 
+<a id="getenabledstandardspaginator"></a>
+
 ## GetEnabledStandardsPaginator
 
 Type annotations for
@@ -132,10 +152,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import GetEnabledStandardsPaginator
 
 def get_get_enabled_standards_paginator() -> GetEnabledStandardsPaginator:
-    return boto3.client("securityhub").get_paginator("get_enabled_standards")
+    return Session().client("securityhub").get_paginator("get_enabled_standards")
 ```
 
 Boto3 documentation:
@@ -150,6 +172,8 @@ Arguments for `GetEnabledStandardsPaginator.paginate` method:
 `GetEnabledStandardsPaginator.paginate` returns
 `_PageIterator`\[[GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef)\].
 
+<a id="getfindingspaginator"></a>
+
 ## GetFindingsPaginator
 
 Type annotations for
@@ -158,10 +182,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import GetFindingsPaginator
 
 def get_get_findings_paginator() -> GetFindingsPaginator:
-    return boto3.client("securityhub").get_paginator("get_findings")
+    return Session().client("securityhub").get_paginator("get_findings")
 ```
 
 Boto3 documentation:
@@ -179,6 +205,8 @@ Arguments for `GetFindingsPaginator.paginate` method:
 `GetFindingsPaginator.paginate` returns
 `_PageIterator`\[[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef)\].
 
+<a id="getinsightspaginator"></a>
+
 ## GetInsightsPaginator
 
 Type annotations for
@@ -187,10 +215,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import GetInsightsPaginator
 
 def get_get_insights_paginator() -> GetInsightsPaginator:
-    return boto3.client("securityhub").get_paginator("get_insights")
+    return Session().client("securityhub").get_paginator("get_insights")
 ```
 
 Boto3 documentation:
@@ -205,6 +235,8 @@ Arguments for `GetInsightsPaginator.paginate` method:
 `GetInsightsPaginator.paginate` returns
 `_PageIterator`\[[GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef)\].
 
+<a id="listenabledproductsforimportpaginator"></a>
+
 ## ListEnabledProductsForImportPaginator
 
 Type annotations for
@@ -213,10 +245,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import ListEnabledProductsForImportPaginator
 
 def get_list_enabled_products_for_import_paginator() -> ListEnabledProductsForImportPaginator:
-    return boto3.client("securityhub").get_paginator("list_enabled_products_for_import")
+    return Session().client("securityhub").get_paginator("list_enabled_products_for_import")
 ```
 
 Boto3 documentation:
@@ -230,6 +264,8 @@ Arguments for `ListEnabledProductsForImportPaginator.paginate` method:
 `ListEnabledProductsForImportPaginator.paginate` returns
 `_PageIterator`\[[ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef)\].
 
+<a id="listfindingaggregatorspaginator"></a>
+
 ## ListFindingAggregatorsPaginator
 
 Type annotations for
@@ -238,10 +274,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import ListFindingAggregatorsPaginator
 
 def get_list_finding_aggregators_paginator() -> ListFindingAggregatorsPaginator:
-    return boto3.client("securityhub").get_paginator("list_finding_aggregators")
+    return Session().client("securityhub").get_paginator("list_finding_aggregators")
 ```
 
 Boto3 documentation:
@@ -255,6 +293,8 @@ Arguments for `ListFindingAggregatorsPaginator.paginate` method:
 `ListFindingAggregatorsPaginator.paginate` returns
 `_PageIterator`\[[ListFindingAggregatorsResponseTypeDef](./type_defs.md#listfindingaggregatorsresponsetypedef)\].
 
+<a id="listinvitationspaginator"></a>
+
 ## ListInvitationsPaginator
 
 Type annotations for
@@ -263,10 +303,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import ListInvitationsPaginator
 
 def get_list_invitations_paginator() -> ListInvitationsPaginator:
-    return boto3.client("securityhub").get_paginator("list_invitations")
+    return Session().client("securityhub").get_paginator("list_invitations")
 ```
 
 Boto3 documentation:
@@ -280,6 +322,8 @@ Arguments for `ListInvitationsPaginator.paginate` method:
 `ListInvitationsPaginator.paginate` returns
 `_PageIterator`\[[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)\].
 
+<a id="listmemberspaginator"></a>
+
 ## ListMembersPaginator
 
 Type annotations for
@@ -288,10 +332,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import ListMembersPaginator
 
 def get_list_members_paginator() -> ListMembersPaginator:
-    return boto3.client("securityhub").get_paginator("list_members")
+    return Session().client("securityhub").get_paginator("list_members")
 ```
 
 Boto3 documentation:
@@ -306,6 +352,8 @@ Arguments for `ListMembersPaginator.paginate` method:
 `ListMembersPaginator.paginate` returns
 `_PageIterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].
 
+<a id="listorganizationadminaccountspaginator"></a>
+
 ## ListOrganizationAdminAccountsPaginator
 
 Type annotations for
@@ -314,10 +362,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_securityhub.paginator import ListOrganizationAdminAccountsPaginator
 
 def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAccountsPaginator:
-    return boto3.client("securityhub").get_paginator("list_organization_admin_accounts")
+    return Session().client("securityhub").get_paginator("list_organization_admin_accounts")
 ```
 
 Boto3 documentation:

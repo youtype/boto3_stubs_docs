@@ -1,3 +1,5 @@
+<a id="healthclient-for-boto3-health-module"></a>
+
 # HealthClient for boto3 Health module
 
 > [Index](..) > [Health](.) > HealthClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
 type annotations stubs module
-[mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
+[mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
 
 - [HealthClient for boto3 Health module](#healthclient-for-boto3-health-module)
   - [HealthClient](#healthclient)
@@ -29,6 +31,8 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [get_paginator](#get_paginator)
 
+<a id="healthclient"></a>
+
 ## HealthClient
 
 Type annotations for `boto3.client("health")`
@@ -36,14 +40,17 @@ Type annotations for `boto3.client("health")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_health.client import HealthClient
 
 def get_health_client() -> HealthClient:
-    return boto3.client("health")
+    return Session().client("health")
 ```
 
 Boto3 documentation:
 [Health.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -64,7 +71,11 @@ Exceptions:
 - `Exceptions.InvalidPaginationToken`
 - `Exceptions.UnsupportedLocale`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -76,6 +87,8 @@ Boto3 documentation:
 [Health.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -91,6 +104,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="describe_affected_accounts_for_organization"></a>
 
 ### describe_affected_accounts_for_organization
 
@@ -114,6 +129,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef).
+
+<a id="describe_affected_entities"></a>
 
 ### describe_affected_entities
 
@@ -139,6 +156,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef).
+
+<a id="describe_affected_entities_for_organization"></a>
 
 ### describe_affected_entities_for_organization
 
@@ -167,6 +186,8 @@ Keyword-only arguments:
 Returns
 [DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef).
 
+<a id="describe_entity_aggregates"></a>
+
 ### describe_entity_aggregates
 
 Returns the number of entities that are affected by each of the specified
@@ -187,6 +208,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEntityAggregatesResponseTypeDef](./type_defs.md#describeentityaggregatesresponsetypedef).
+
+<a id="describe_event_aggregates"></a>
 
 ### describe_event_aggregates
 
@@ -213,6 +236,8 @@ Keyword-only arguments:
 Returns
 [DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef).
 
+<a id="describe_event_details"></a>
+
 ### describe_event_details
 
 Returns detailed information about one or more specified events.
@@ -232,6 +257,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEventDetailsResponseTypeDef](./type_defs.md#describeeventdetailsresponsetypedef).
+
+<a id="describe_event_details_for_organization"></a>
 
 ### describe_event_details_for_organization
 
@@ -257,6 +284,8 @@ Keyword-only arguments:
 Returns
 [DescribeEventDetailsForOrganizationResponseTypeDef](./type_defs.md#describeeventdetailsfororganizationresponsetypedef).
 
+<a id="describe_event_types"></a>
+
 ### describe_event_types
 
 Returns the event types that meet the specified filter criteria.
@@ -279,6 +308,8 @@ Keyword-only arguments:
 Returns
 [DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef).
 
+<a id="describe_events"></a>
+
 ### describe_events
 
 Returns information about events that meet the specified filter criteria.
@@ -300,6 +331,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
+
+<a id="describe_events_for_organization"></a>
 
 ### describe_events_for_organization
 
@@ -325,6 +358,8 @@ Keyword-only arguments:
 Returns
 [DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef).
 
+<a id="describe_health_service_status_for_organization"></a>
+
 ### describe_health_service_status_for_organization
 
 This operation provides status information on enabling or disabling Health to
@@ -340,6 +375,8 @@ Boto3 documentation:
 Returns
 [DescribeHealthServiceStatusForOrganizationResponseTypeDef](./type_defs.md#describehealthservicestatusfororganizationresponsetypedef).
 
+<a id="disable_health_service_access_for_organization"></a>
+
 ### disable_health_service_access_for_organization
 
 Disables Health from working with Organizations.
@@ -350,6 +387,8 @@ Type annotations for
 Boto3 documentation:
 [Health.Client.disable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.disable_health_service_access_for_organization)
 
+<a id="enable_health_service_access_for_organization"></a>
+
 ### enable_health_service_access_for_organization
 
 Enables Health to work with Organizations.
@@ -359,6 +398,8 @@ Type annotations for
 
 Boto3 documentation:
 [Health.Client.enable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.enable_health_service_access_for_organization)
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -377,6 +418,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

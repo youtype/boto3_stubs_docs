@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-frauddetector-module"></a>
+
 # Literals for boto3 FraudDetector module
 
 > [Index](..) > [FraudDetector](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
 type annotations stubs module
-[mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
+[mypy-boto3-frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
 - [Literals for boto3 FraudDetector module](#literals-for-boto3-frauddetector-module)
   - [AsyncJobStatusType](#asyncjobstatustype)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [UnlabeledEventsTreatmentType](#unlabeledeventstreatmenttype)
   - [ServiceName](#servicename)
 
+<a id="asyncjobstatustype"></a>
+
 ## AsyncJobStatusType
 
 ```python
@@ -40,6 +44,8 @@ Values:
 - `IN_PROGRESS`
 - `IN_PROGRESS_INITIALIZING`
 
+<a id="datasourcetype"></a>
+
 ## DataSourceType
 
 ```python
@@ -51,6 +57,8 @@ Values:
 - `EVENT`
 - `EXTERNAL_MODEL_SCORE`
 - `MODEL_SCORE`
+
+<a id="datatypetype"></a>
 
 ## DataTypeType
 
@@ -65,6 +73,8 @@ Values:
 - `INTEGER`
 - `STRING`
 
+<a id="detectorversionstatustype"></a>
+
 ## DetectorVersionStatusType
 
 ```python
@@ -77,6 +87,8 @@ Values:
 - `DRAFT`
 - `INACTIVE`
 
+<a id="eventingestiontype"></a>
+
 ## EventIngestionType
 
 ```python
@@ -88,6 +100,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="languagetype"></a>
+
 ## LanguageType
 
 ```python
@@ -97,6 +111,8 @@ from mypy_boto3_frauddetector.literals import LanguageType
 Values:
 
 - `DETECTORPL`
+
+<a id="modelendpointstatustype"></a>
 
 ## ModelEndpointStatusType
 
@@ -109,6 +125,8 @@ Values:
 - `ASSOCIATED`
 - `DISSOCIATED`
 
+<a id="modelinputdataformattype"></a>
+
 ## ModelInputDataFormatType
 
 ```python
@@ -119,6 +137,8 @@ Values:
 
 - `APPLICATION_JSON`
 - `TEXT_CSV`
+
+<a id="modeloutputdataformattype"></a>
 
 ## ModelOutputDataFormatType
 
@@ -131,6 +151,8 @@ Values:
 - `APPLICATION_JSONLINES`
 - `TEXT_CSV`
 
+<a id="modelsourcetype"></a>
+
 ## ModelSourceType
 
 ```python
@@ -140,6 +162,8 @@ from mypy_boto3_frauddetector.literals import ModelSourceType
 Values:
 
 - `SAGEMAKER`
+
+<a id="modeltypeenumtype"></a>
 
 ## ModelTypeEnumType
 
@@ -151,6 +175,8 @@ Values:
 
 - `ONLINE_FRAUD_INSIGHTS`
 - `TRANSACTION_FRAUD_INSIGHTS`
+
+<a id="modelversionstatustype"></a>
 
 ## ModelVersionStatusType
 
@@ -164,6 +190,8 @@ Values:
 - `INACTIVE`
 - `TRAINING_CANCELLED`
 
+<a id="ruleexecutionmodetype"></a>
+
 ## RuleExecutionModeType
 
 ```python
@@ -174,6 +202,8 @@ Values:
 
 - `ALL_MATCHED`
 - `FIRST_MATCHED`
+
+<a id="trainingdatasourceenumtype"></a>
 
 ## TrainingDataSourceEnumType
 
@@ -186,6 +216,8 @@ Values:
 - `EXTERNAL_EVENTS`
 - `INGESTED_EVENTS`
 
+<a id="unlabeledeventstreatmenttype"></a>
+
 ## UnlabeledEventsTreatmentType
 
 ```python
@@ -197,6 +229,8 @@ Values:
 - `FRAUD`
 - `IGNORE`
 - `LEGIT`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

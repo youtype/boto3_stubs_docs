@@ -1,3 +1,5 @@
+<a id="daxclient-for-boto3-dax-module"></a>
+
 # DAXClient for boto3 DAX module
 
 > [Index](..) > [DAX](.) > DAXClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
 type annotations stubs module
-[mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
+[mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
 
 - [DAXClient for boto3 DAX module](#daxclient-for-boto3-dax-module)
   - [DAXClient](#daxclient)
@@ -37,6 +39,8 @@ type annotations stubs module
     - [update_subnet_group](#update_subnet_group)
     - [get_paginator](#get_paginator)
 
+<a id="daxclient"></a>
+
 ## DAXClient
 
 Type annotations for `boto3.client("dax")`
@@ -44,14 +48,17 @@ Type annotations for `boto3.client("dax")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_dax.client import DAXClient
 
 def get_dax_client() -> DAXClient:
-    return boto3.client("dax")
+    return Session().client("dax")
 ```
 
 Boto3 documentation:
 [DAX.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -96,7 +103,11 @@ Exceptions:
 - `Exceptions.TagNotFoundFault`
 - `Exceptions.TagQuotaPerResourceExceeded`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -108,6 +119,8 @@ Boto3 documentation:
 [DAX.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -123,6 +136,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_cluster"></a>
 
 ### create_cluster
 
@@ -158,6 +173,8 @@ Keyword-only arguments:
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
+<a id="create_parameter_group"></a>
+
 ### create_parameter_group
 
 Creates a new parameter group.
@@ -177,6 +194,8 @@ Keyword-only arguments:
 
 Returns
 [CreateParameterGroupResponseTypeDef](./type_defs.md#createparametergroupresponsetypedef).
+
+<a id="create_subnet_group"></a>
 
 ### create_subnet_group
 
@@ -198,6 +217,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSubnetGroupResponseTypeDef](./type_defs.md#createsubnetgroupresponsetypedef).
+
+<a id="decrease_replication_factor"></a>
 
 ### decrease_replication_factor
 
@@ -221,6 +242,8 @@ Keyword-only arguments:
 Returns
 [DecreaseReplicationFactorResponseTypeDef](./type_defs.md#decreasereplicationfactorresponsetypedef).
 
+<a id="delete_cluster"></a>
+
 ### delete_cluster
 
 Deletes a previously provisioned DAX cluster.
@@ -239,6 +262,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
+
+<a id="delete_parameter_group"></a>
 
 ### delete_parameter_group
 
@@ -259,6 +284,8 @@ Keyword-only arguments:
 Returns
 [DeleteParameterGroupResponseTypeDef](./type_defs.md#deleteparametergroupresponsetypedef).
 
+<a id="delete_subnet_group"></a>
+
 ### delete_subnet_group
 
 Deletes a subnet group.
@@ -277,6 +304,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteSubnetGroupResponseTypeDef](./type_defs.md#deletesubnetgroupresponsetypedef).
+
+<a id="describe_clusters"></a>
 
 ### describe_clusters
 
@@ -301,6 +330,8 @@ Keyword-only arguments:
 Returns
 [DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
 
+<a id="describe_default_parameters"></a>
+
 ### describe_default_parameters
 
 Returns the default system parameter information for the DAX caching software.
@@ -320,6 +351,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDefaultParametersResponseTypeDef](./type_defs.md#describedefaultparametersresponsetypedef).
+
+<a id="describe_events"></a>
 
 ### describe_events
 
@@ -346,6 +379,8 @@ Keyword-only arguments:
 Returns
 [DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
 
+<a id="describe_parameter_groups"></a>
+
 ### describe_parameter_groups
 
 Returns a list of parameter group descriptions.
@@ -366,6 +401,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef).
+
+<a id="describe_parameters"></a>
 
 ### describe_parameters
 
@@ -389,6 +426,8 @@ Keyword-only arguments:
 Returns
 [DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef).
 
+<a id="describe_subnet_groups"></a>
+
 ### describe_subnet_groups
 
 Returns a list of subnet group descriptions.
@@ -410,6 +449,8 @@ Keyword-only arguments:
 Returns
 [DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -427,6 +468,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="increase_replication_factor"></a>
 
 ### increase_replication_factor
 
@@ -449,6 +492,8 @@ Keyword-only arguments:
 Returns
 [IncreaseReplicationFactorResponseTypeDef](./type_defs.md#increasereplicationfactorresponsetypedef).
 
+<a id="list_tags"></a>
+
 ### list_tags
 
 List all of the tags for a DAX cluster.
@@ -468,6 +513,8 @@ Keyword-only arguments:
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
+<a id="reboot_node"></a>
+
 ### reboot_node
 
 Reboots a single node of a DAX cluster.
@@ -486,6 +533,8 @@ Keyword-only arguments:
 - `NodeId`: `str` *(required)*
 
 Returns [RebootNodeResponseTypeDef](./type_defs.md#rebootnoderesponsetypedef).
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -507,6 +556,8 @@ Keyword-only arguments:
 Returns
 [TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the association of tags from a DAX resource.
@@ -526,6 +577,8 @@ Keyword-only arguments:
 
 Returns
 [UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
+
+<a id="update_cluster"></a>
 
 ### update_cluster
 
@@ -552,6 +605,8 @@ Keyword-only arguments:
 Returns
 [UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef).
 
+<a id="update_parameter_group"></a>
+
 ### update_parameter_group
 
 Modifies the parameters of a parameter group.
@@ -574,6 +629,8 @@ Keyword-only arguments:
 Returns
 [UpdateParameterGroupResponseTypeDef](./type_defs.md#updateparametergroupresponsetypedef).
 
+<a id="update_subnet_group"></a>
+
 ### update_subnet_group
 
 Modifies an existing subnet group.
@@ -594,6 +651,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSubnetGroupResponseTypeDef](./type_defs.md#updatesubnetgroupresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

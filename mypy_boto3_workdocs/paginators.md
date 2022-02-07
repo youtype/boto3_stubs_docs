@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-workdocs-module"></a>
+
 # Paginators for boto3 WorkDocs module
 
 > [Index](..) > [WorkDocs](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
 type annotations stubs module
-[mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
+[mypy-boto3-workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 - [Paginators for boto3 WorkDocs module](#paginators-for-boto3-workdocs-module)
   - [DescribeActivitiesPaginator](#describeactivitiespaginator)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [DescribeRootFoldersPaginator](#describerootfolderspaginator)
   - [DescribeUsersPaginator](#describeuserspaginator)
 
+<a id="describeactivitiespaginator"></a>
+
 ## DescribeActivitiesPaginator
 
 Type annotations for
@@ -26,10 +30,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workdocs.paginator import DescribeActivitiesPaginator
 
 def get_describe_activities_paginator() -> DescribeActivitiesPaginator:
-    return boto3.client("workdocs").get_paginator("describe_activities")
+    return Session().client("workdocs").get_paginator("describe_activities")
 ```
 
 Boto3 documentation:
@@ -51,6 +57,8 @@ Arguments for `DescribeActivitiesPaginator.paginate` method:
 `DescribeActivitiesPaginator.paginate` returns
 `_PageIterator`\[[DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef)\].
 
+<a id="describecommentspaginator"></a>
+
 ## DescribeCommentsPaginator
 
 Type annotations for
@@ -59,10 +67,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workdocs.paginator import DescribeCommentsPaginator
 
 def get_describe_comments_paginator() -> DescribeCommentsPaginator:
-    return boto3.client("workdocs").get_paginator("describe_comments")
+    return Session().client("workdocs").get_paginator("describe_comments")
 ```
 
 Boto3 documentation:
@@ -79,6 +89,8 @@ Arguments for `DescribeCommentsPaginator.paginate` method:
 `DescribeCommentsPaginator.paginate` returns
 `_PageIterator`\[[DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef)\].
 
+<a id="describedocumentversionspaginator"></a>
+
 ## DescribeDocumentVersionsPaginator
 
 Type annotations for
@@ -87,10 +99,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workdocs.paginator import DescribeDocumentVersionsPaginator
 
 def get_describe_document_versions_paginator() -> DescribeDocumentVersionsPaginator:
-    return boto3.client("workdocs").get_paginator("describe_document_versions")
+    return Session().client("workdocs").get_paginator("describe_document_versions")
 ```
 
 Boto3 documentation:
@@ -108,6 +122,8 @@ Arguments for `DescribeDocumentVersionsPaginator.paginate` method:
 `DescribeDocumentVersionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef)\].
 
+<a id="describefoldercontentspaginator"></a>
+
 ## DescribeFolderContentsPaginator
 
 Type annotations for
@@ -116,10 +132,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workdocs.paginator import DescribeFolderContentsPaginator
 
 def get_describe_folder_contents_paginator() -> DescribeFolderContentsPaginator:
-    return boto3.client("workdocs").get_paginator("describe_folder_contents")
+    return Session().client("workdocs").get_paginator("describe_folder_contents")
 ```
 
 Boto3 documentation:
@@ -139,6 +157,8 @@ Arguments for `DescribeFolderContentsPaginator.paginate` method:
 `DescribeFolderContentsPaginator.paginate` returns
 `_PageIterator`\[[DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef)\].
 
+<a id="describegroupspaginator"></a>
+
 ## DescribeGroupsPaginator
 
 Type annotations for
@@ -147,10 +167,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workdocs.paginator import DescribeGroupsPaginator
 
 def get_describe_groups_paginator() -> DescribeGroupsPaginator:
-    return boto3.client("workdocs").get_paginator("describe_groups")
+    return Session().client("workdocs").get_paginator("describe_groups")
 ```
 
 Boto3 documentation:
@@ -167,6 +189,8 @@ Arguments for `DescribeGroupsPaginator.paginate` method:
 `DescribeGroupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef)\].
 
+<a id="describenotificationsubscriptionspaginator"></a>
+
 ## DescribeNotificationSubscriptionsPaginator
 
 Type annotations for
@@ -175,10 +199,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workdocs.paginator import DescribeNotificationSubscriptionsPaginator
 
 def get_describe_notification_subscriptions_paginator() -> DescribeNotificationSubscriptionsPaginator:
-    return boto3.client("workdocs").get_paginator("describe_notification_subscriptions")
+    return Session().client("workdocs").get_paginator("describe_notification_subscriptions")
 ```
 
 Boto3 documentation:
@@ -193,6 +219,8 @@ Arguments for `DescribeNotificationSubscriptionsPaginator.paginate` method:
 `DescribeNotificationSubscriptionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef)\].
 
+<a id="describeresourcepermissionspaginator"></a>
+
 ## DescribeResourcePermissionsPaginator
 
 Type annotations for
@@ -201,10 +229,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workdocs.paginator import DescribeResourcePermissionsPaginator
 
 def get_describe_resource_permissions_paginator() -> DescribeResourcePermissionsPaginator:
-    return boto3.client("workdocs").get_paginator("describe_resource_permissions")
+    return Session().client("workdocs").get_paginator("describe_resource_permissions")
 ```
 
 Boto3 documentation:
@@ -221,6 +251,8 @@ Arguments for `DescribeResourcePermissionsPaginator.paginate` method:
 `DescribeResourcePermissionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef)\].
 
+<a id="describerootfolderspaginator"></a>
+
 ## DescribeRootFoldersPaginator
 
 Type annotations for
@@ -229,10 +261,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workdocs.paginator import DescribeRootFoldersPaginator
 
 def get_describe_root_folders_paginator() -> DescribeRootFoldersPaginator:
-    return boto3.client("workdocs").get_paginator("describe_root_folders")
+    return Session().client("workdocs").get_paginator("describe_root_folders")
 ```
 
 Boto3 documentation:
@@ -247,6 +281,8 @@ Arguments for `DescribeRootFoldersPaginator.paginate` method:
 `DescribeRootFoldersPaginator.paginate` returns
 `_PageIterator`\[[DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef)\].
 
+<a id="describeuserspaginator"></a>
+
 ## DescribeUsersPaginator
 
 Type annotations for
@@ -255,10 +291,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workdocs.paginator import DescribeUsersPaginator
 
 def get_describe_users_paginator() -> DescribeUsersPaginator:
-    return boto3.client("workdocs").get_paginator("describe_users")
+    return Session().client("workdocs").get_paginator("describe_users")
 ```
 
 Boto3 documentation:

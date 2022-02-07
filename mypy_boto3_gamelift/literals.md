@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-gamelift-module"></a>
+
 # Literals for boto3 GameLift module
 
 > [Index](..) > [GameLift](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
 type annotations stubs module
-[mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+[mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 - [Literals for boto3 GameLift module](#literals-for-boto3-gamelift-module)
   - [AcceptanceTypeType](#acceptancetypetype)
@@ -70,6 +72,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="acceptancetypetype"></a>
+
 ## AcceptanceTypeType
 
 ```python
@@ -81,6 +85,8 @@ Values:
 - `ACCEPT`
 - `REJECT`
 
+<a id="backfillmodetype"></a>
+
 ## BackfillModeType
 
 ```python
@@ -91,6 +97,8 @@ Values:
 
 - `AUTOMATIC`
 - `MANUAL`
+
+<a id="balancingstrategytype"></a>
 
 ## BalancingStrategyType
 
@@ -104,6 +112,8 @@ Values:
 - `SPOT_ONLY`
 - `SPOT_PREFERRED`
 
+<a id="buildstatustype"></a>
+
 ## BuildStatusType
 
 ```python
@@ -116,6 +126,8 @@ Values:
 - `INITIALIZED`
 - `READY`
 
+<a id="certificatetypetype"></a>
+
 ## CertificateTypeType
 
 ```python
@@ -126,6 +138,8 @@ Values:
 
 - `DISABLED`
 - `GENERATED`
+
+<a id="comparisonoperatortypetype"></a>
 
 ## ComparisonOperatorTypeType
 
@@ -140,6 +154,8 @@ Values:
 - `LessThanOrEqualToThreshold`
 - `LessThanThreshold`
 
+<a id="describefleetattributespaginatorname"></a>
+
 ## DescribeFleetAttributesPaginatorName
 
 ```python
@@ -149,6 +165,8 @@ from mypy_boto3_gamelift.literals import DescribeFleetAttributesPaginatorName
 Values:
 
 - `describe_fleet_attributes`
+
+<a id="describefleetcapacitypaginatorname"></a>
 
 ## DescribeFleetCapacityPaginatorName
 
@@ -160,6 +178,8 @@ Values:
 
 - `describe_fleet_capacity`
 
+<a id="describefleeteventspaginatorname"></a>
+
 ## DescribeFleetEventsPaginatorName
 
 ```python
@@ -169,6 +189,8 @@ from mypy_boto3_gamelift.literals import DescribeFleetEventsPaginatorName
 Values:
 
 - `describe_fleet_events`
+
+<a id="describefleetutilizationpaginatorname"></a>
 
 ## DescribeFleetUtilizationPaginatorName
 
@@ -180,6 +202,8 @@ Values:
 
 - `describe_fleet_utilization`
 
+<a id="describegameserverinstancespaginatorname"></a>
+
 ## DescribeGameServerInstancesPaginatorName
 
 ```python
@@ -189,6 +213,8 @@ from mypy_boto3_gamelift.literals import DescribeGameServerInstancesPaginatorNam
 Values:
 
 - `describe_game_server_instances`
+
+<a id="describegamesessiondetailspaginatorname"></a>
 
 ## DescribeGameSessionDetailsPaginatorName
 
@@ -200,6 +226,8 @@ Values:
 
 - `describe_game_session_details`
 
+<a id="describegamesessionqueuespaginatorname"></a>
+
 ## DescribeGameSessionQueuesPaginatorName
 
 ```python
@@ -209,6 +237,8 @@ from mypy_boto3_gamelift.literals import DescribeGameSessionQueuesPaginatorName
 Values:
 
 - `describe_game_session_queues`
+
+<a id="describegamesessionspaginatorname"></a>
 
 ## DescribeGameSessionsPaginatorName
 
@@ -220,6 +250,8 @@ Values:
 
 - `describe_game_sessions`
 
+<a id="describeinstancespaginatorname"></a>
+
 ## DescribeInstancesPaginatorName
 
 ```python
@@ -229,6 +261,8 @@ from mypy_boto3_gamelift.literals import DescribeInstancesPaginatorName
 Values:
 
 - `describe_instances`
+
+<a id="describematchmakingconfigurationspaginatorname"></a>
 
 ## DescribeMatchmakingConfigurationsPaginatorName
 
@@ -240,6 +274,8 @@ Values:
 
 - `describe_matchmaking_configurations`
 
+<a id="describematchmakingrulesetspaginatorname"></a>
+
 ## DescribeMatchmakingRuleSetsPaginatorName
 
 ```python
@@ -249,6 +285,8 @@ from mypy_boto3_gamelift.literals import DescribeMatchmakingRuleSetsPaginatorNam
 Values:
 
 - `describe_matchmaking_rule_sets`
+
+<a id="describeplayersessionspaginatorname"></a>
 
 ## DescribePlayerSessionsPaginatorName
 
@@ -260,6 +298,8 @@ Values:
 
 - `describe_player_sessions`
 
+<a id="describescalingpoliciespaginatorname"></a>
+
 ## DescribeScalingPoliciesPaginatorName
 
 ```python
@@ -269,6 +309,8 @@ from mypy_boto3_gamelift.literals import DescribeScalingPoliciesPaginatorName
 Values:
 
 - `describe_scaling_policies`
+
+<a id="ec2instancetypetype"></a>
 
 ## EC2InstanceTypeType
 
@@ -361,6 +403,8 @@ Values:
 - `t2.micro`
 - `t2.small`
 
+<a id="eventcodetype"></a>
+
 ## EventCodeType
 
 ```python
@@ -403,6 +447,8 @@ Values:
 - `SERVER_PROCESS_SDK_INITIALIZATION_TIMEOUT`
 - `SERVER_PROCESS_TERMINATED_UNHEALTHY`
 
+<a id="fleetactiontype"></a>
+
 ## FleetActionType
 
 ```python
@@ -412,6 +458,8 @@ from mypy_boto3_gamelift.literals import FleetActionType
 Values:
 
 - `AUTO_SCALING`
+
+<a id="fleetstatustype"></a>
 
 ## FleetStatusType
 
@@ -431,6 +479,8 @@ Values:
 - `TERMINATED`
 - `VALIDATING`
 
+<a id="fleettypetype"></a>
+
 ## FleetTypeType
 
 ```python
@@ -441,6 +491,8 @@ Values:
 
 - `ON_DEMAND`
 - `SPOT`
+
+<a id="flexmatchmodetype"></a>
 
 ## FlexMatchModeType
 
@@ -453,6 +505,8 @@ Values:
 - `STANDALONE`
 - `WITH_QUEUE`
 
+<a id="gameserverclaimstatustype"></a>
+
 ## GameServerClaimStatusType
 
 ```python
@@ -463,6 +517,8 @@ Values:
 
 - `CLAIMED`
 
+<a id="gameservergroupactiontype"></a>
+
 ## GameServerGroupActionType
 
 ```python
@@ -472,6 +528,8 @@ from mypy_boto3_gamelift.literals import GameServerGroupActionType
 Values:
 
 - `REPLACE_INSTANCE_TYPES`
+
+<a id="gameservergroupdeleteoptiontype"></a>
 
 ## GameServerGroupDeleteOptionType
 
@@ -484,6 +542,8 @@ Values:
 - `FORCE_DELETE`
 - `RETAIN`
 - `SAFE_DELETE`
+
+<a id="gameservergroupinstancetypetype"></a>
 
 ## GameServerGroupInstanceTypeType
 
@@ -582,6 +642,8 @@ Values:
 - `r6g.medium`
 - `r6g.xlarge`
 
+<a id="gameservergroupstatustype"></a>
+
 ## GameServerGroupStatusType
 
 ```python
@@ -598,6 +660,8 @@ Values:
 - `ERROR`
 - `NEW`
 
+<a id="gameserverhealthchecktype"></a>
+
 ## GameServerHealthCheckType
 
 ```python
@@ -607,6 +671,8 @@ from mypy_boto3_gamelift.literals import GameServerHealthCheckType
 Values:
 
 - `HEALTHY`
+
+<a id="gameserverinstancestatustype"></a>
 
 ## GameServerInstanceStatusType
 
@@ -620,6 +686,8 @@ Values:
 - `DRAINING`
 - `SPOT_TERMINATING`
 
+<a id="gameserverprotectionpolicytype"></a>
+
 ## GameServerProtectionPolicyType
 
 ```python
@@ -631,6 +699,8 @@ Values:
 - `FULL_PROTECTION`
 - `NO_PROTECTION`
 
+<a id="gameserverutilizationstatustype"></a>
+
 ## GameServerUtilizationStatusType
 
 ```python
@@ -641,6 +711,8 @@ Values:
 
 - `AVAILABLE`
 - `UTILIZED`
+
+<a id="gamesessionplacementstatetype"></a>
 
 ## GameSessionPlacementStateType
 
@@ -656,6 +728,8 @@ Values:
 - `PENDING`
 - `TIMED_OUT`
 
+<a id="gamesessionstatusreasontype"></a>
+
 ## GameSessionStatusReasonType
 
 ```python
@@ -665,6 +739,8 @@ from mypy_boto3_gamelift.literals import GameSessionStatusReasonType
 Values:
 
 - `INTERRUPTED`
+
+<a id="gamesessionstatustype"></a>
 
 ## GameSessionStatusType
 
@@ -680,6 +756,8 @@ Values:
 - `TERMINATED`
 - `TERMINATING`
 
+<a id="instancestatustype"></a>
+
 ## InstanceStatusType
 
 ```python
@@ -692,6 +770,8 @@ Values:
 - `PENDING`
 - `TERMINATING`
 
+<a id="ipprotocoltype"></a>
+
 ## IpProtocolType
 
 ```python
@@ -703,6 +783,8 @@ Values:
 - `TCP`
 - `UDP`
 
+<a id="listaliasespaginatorname"></a>
+
 ## ListAliasesPaginatorName
 
 ```python
@@ -712,6 +794,8 @@ from mypy_boto3_gamelift.literals import ListAliasesPaginatorName
 Values:
 
 - `list_aliases`
+
+<a id="listbuildspaginatorname"></a>
 
 ## ListBuildsPaginatorName
 
@@ -723,6 +807,8 @@ Values:
 
 - `list_builds`
 
+<a id="listfleetspaginatorname"></a>
+
 ## ListFleetsPaginatorName
 
 ```python
@@ -732,6 +818,8 @@ from mypy_boto3_gamelift.literals import ListFleetsPaginatorName
 Values:
 
 - `list_fleets`
+
+<a id="listgameservergroupspaginatorname"></a>
 
 ## ListGameServerGroupsPaginatorName
 
@@ -743,6 +831,8 @@ Values:
 
 - `list_game_server_groups`
 
+<a id="listgameserverspaginatorname"></a>
+
 ## ListGameServersPaginatorName
 
 ```python
@@ -752,6 +842,8 @@ from mypy_boto3_gamelift.literals import ListGameServersPaginatorName
 Values:
 
 - `list_game_servers`
+
+<a id="listscriptspaginatorname"></a>
 
 ## ListScriptsPaginatorName
 
@@ -763,6 +855,8 @@ Values:
 
 - `list_scripts`
 
+<a id="locationupdatestatustype"></a>
+
 ## LocationUpdateStatusType
 
 ```python
@@ -772,6 +866,8 @@ from mypy_boto3_gamelift.literals import LocationUpdateStatusType
 Values:
 
 - `PENDING_UPDATE`
+
+<a id="matchmakingconfigurationstatustype"></a>
 
 ## MatchmakingConfigurationStatusType
 
@@ -789,6 +885,8 @@ Values:
 - `REQUIRES_ACCEPTANCE`
 - `SEARCHING`
 - `TIMED_OUT`
+
+<a id="metricnametype"></a>
 
 ## MetricNameType
 
@@ -810,6 +908,8 @@ Values:
 - `QueueDepth`
 - `WaitTime`
 
+<a id="operatingsystemtype"></a>
+
 ## OperatingSystemType
 
 ```python
@@ -822,6 +922,8 @@ Values:
 - `AMAZON_LINUX_2`
 - `WINDOWS_2012`
 
+<a id="playersessioncreationpolicytype"></a>
+
 ## PlayerSessionCreationPolicyType
 
 ```python
@@ -832,6 +934,8 @@ Values:
 
 - `ACCEPT_ALL`
 - `DENY_ALL`
+
+<a id="playersessionstatustype"></a>
 
 ## PlayerSessionStatusType
 
@@ -846,6 +950,8 @@ Values:
 - `RESERVED`
 - `TIMEDOUT`
 
+<a id="policytypetype"></a>
+
 ## PolicyTypeType
 
 ```python
@@ -856,6 +962,8 @@ Values:
 
 - `RuleBased`
 - `TargetBased`
+
+<a id="prioritytypetype"></a>
 
 ## PriorityTypeType
 
@@ -870,6 +978,8 @@ Values:
 - `LATENCY`
 - `LOCATION`
 
+<a id="protectionpolicytype"></a>
+
 ## ProtectionPolicyType
 
 ```python
@@ -880,6 +990,8 @@ Values:
 
 - `FullProtection`
 - `NoProtection`
+
+<a id="routingstrategytypetype"></a>
 
 ## RoutingStrategyTypeType
 
@@ -892,6 +1004,8 @@ Values:
 - `SIMPLE`
 - `TERMINAL`
 
+<a id="scalingadjustmenttypetype"></a>
+
 ## ScalingAdjustmentTypeType
 
 ```python
@@ -903,6 +1017,8 @@ Values:
 - `ChangeInCapacity`
 - `ExactCapacity`
 - `PercentChangeInCapacity`
+
+<a id="scalingstatustypetype"></a>
 
 ## ScalingStatusTypeType
 
@@ -920,6 +1036,8 @@ Values:
 - `UPDATE_REQUESTED`
 - `UPDATING`
 
+<a id="searchgamesessionspaginatorname"></a>
+
 ## SearchGameSessionsPaginatorName
 
 ```python
@@ -929,6 +1047,8 @@ from mypy_boto3_gamelift.literals import SearchGameSessionsPaginatorName
 Values:
 
 - `search_game_sessions`
+
+<a id="sortordertype"></a>
 
 ## SortOrderType
 
@@ -940,6 +1060,8 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1248,6 +1370,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

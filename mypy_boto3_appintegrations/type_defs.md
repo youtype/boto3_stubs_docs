@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-appintegrationsservice-module"></a>
+
 # Typed dictionaries for boto3 AppIntegrationsService module
 
 > [Index](..) > [AppIntegrationsService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
 type annotations stubs module
-[mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
+[mypy-boto3-appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 - [Typed dictionaries for boto3 AppIntegrationsService module](#typed-dictionaries-for-boto3-appintegrationsservice-module)
   - [CreateDataIntegrationRequestRequestTypeDef](#createdataintegrationrequestrequesttypedef)
@@ -40,6 +42,8 @@ type annotations stubs module
   - [UpdateDataIntegrationRequestRequestTypeDef](#updatedataintegrationrequestrequesttypedef)
   - [UpdateEventIntegrationRequestRequestTypeDef](#updateeventintegrationrequestrequesttypedef)
 
+<a id="createdataintegrationrequestrequesttypedef"></a>
+
 ## CreateDataIntegrationRequestRequestTypeDef
 
 ```python
@@ -59,6 +63,8 @@ Optional fields:
   [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `ClientToken`: `str`
+
+<a id="createdataintegrationresponsetypedef"></a>
 
 ## CreateDataIntegrationResponseTypeDef
 
@@ -81,6 +87,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createeventintegrationrequestrequesttypedef"></a>
+
 ## CreateEventIntegrationRequestRequestTypeDef
 
 ```python
@@ -99,6 +107,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createeventintegrationresponsetypedef"></a>
+
 ## CreateEventIntegrationResponseTypeDef
 
 ```python
@@ -110,6 +120,8 @@ Required fields:
 - `EventIntegrationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dataintegrationassociationsummarytypedef"></a>
 
 ## DataIntegrationAssociationSummaryTypeDef
 
@@ -123,6 +135,8 @@ Optional fields:
 - `DataIntegrationArn`: `str`
 - `ClientId`: `str`
 
+<a id="dataintegrationsummarytypedef"></a>
+
 ## DataIntegrationSummaryTypeDef
 
 ```python
@@ -135,6 +149,8 @@ Optional fields:
 - `Name`: `str`
 - `SourceURI`: `str`
 
+<a id="deletedataintegrationrequestrequesttypedef"></a>
+
 ## DeleteDataIntegrationRequestRequestTypeDef
 
 ```python
@@ -144,6 +160,8 @@ from mypy_boto3_appintegrations.type_defs import DeleteDataIntegrationRequestReq
 Required fields:
 
 - `DataIntegrationIdentifier`: `str`
+
+<a id="deleteeventintegrationrequestrequesttypedef"></a>
 
 ## DeleteEventIntegrationRequestRequestTypeDef
 
@@ -155,6 +173,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="eventfiltertypedef"></a>
+
 ## EventFilterTypeDef
 
 ```python
@@ -164,6 +184,8 @@ from mypy_boto3_appintegrations.type_defs import EventFilterTypeDef
 Required fields:
 
 - `Source`: `str`
+
+<a id="eventintegrationassociationtypedef"></a>
 
 ## EventIntegrationAssociationTypeDef
 
@@ -180,6 +202,8 @@ Optional fields:
 - `EventBridgeRuleName`: `str`
 - `ClientAssociationMetadata`: `Dict`\[`str`, `str`\]
 
+<a id="eventintegrationtypedef"></a>
+
 ## EventIntegrationTypeDef
 
 ```python
@@ -195,6 +219,8 @@ Optional fields:
 - `EventBridgeBus`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="getdataintegrationrequestrequesttypedef"></a>
+
 ## GetDataIntegrationRequestRequestTypeDef
 
 ```python
@@ -204,6 +230,8 @@ from mypy_boto3_appintegrations.type_defs import GetDataIntegrationRequestReques
 Required fields:
 
 - `Identifier`: `str`
+
+<a id="getdataintegrationresponsetypedef"></a>
 
 ## GetDataIntegrationResponseTypeDef
 
@@ -225,6 +253,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="geteventintegrationrequestrequesttypedef"></a>
+
 ## GetEventIntegrationRequestRequestTypeDef
 
 ```python
@@ -234,6 +264,8 @@ from mypy_boto3_appintegrations.type_defs import GetEventIntegrationRequestReque
 Required fields:
 
 - `Name`: `str`
+
+<a id="geteventintegrationresponsetypedef"></a>
 
 ## GetEventIntegrationResponseTypeDef
 
@@ -252,6 +284,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdataintegrationassociationsrequestrequesttypedef"></a>
+
 ## ListDataIntegrationAssociationsRequestRequestTypeDef
 
 ```python
@@ -267,6 +301,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listdataintegrationassociationsresponsetypedef"></a>
+
 ## ListDataIntegrationAssociationsResponseTypeDef
 
 ```python
@@ -281,6 +317,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdataintegrationsrequestrequesttypedef"></a>
+
 ## ListDataIntegrationsRequestRequestTypeDef
 
 ```python
@@ -291,6 +329,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdataintegrationsresponsetypedef"></a>
 
 ## ListDataIntegrationsResponseTypeDef
 
@@ -305,6 +345,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listeventintegrationassociationsrequestrequesttypedef"></a>
 
 ## ListEventIntegrationAssociationsRequestRequestTypeDef
 
@@ -321,6 +363,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listeventintegrationassociationsresponsetypedef"></a>
+
 ## ListEventIntegrationAssociationsResponseTypeDef
 
 ```python
@@ -335,6 +379,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listeventintegrationsrequestrequesttypedef"></a>
+
 ## ListEventIntegrationsRequestRequestTypeDef
 
 ```python
@@ -345,6 +391,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listeventintegrationsresponsetypedef"></a>
 
 ## ListEventIntegrationsResponseTypeDef
 
@@ -360,6 +408,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -369,6 +419,8 @@ from mypy_boto3_appintegrations.type_defs import ListTagsForResourceRequestReque
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -381,6 +433,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -396,6 +450,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="scheduleconfigurationtypedef"></a>
+
 ## ScheduleConfigurationTypeDef
 
 ```python
@@ -408,6 +464,8 @@ Optional fields:
 - `Object`: `str`
 - `ScheduleExpression`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -419,6 +477,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -429,6 +489,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedataintegrationrequestrequesttypedef"></a>
 
 ## UpdateDataIntegrationRequestRequestTypeDef
 
@@ -444,6 +506,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
+
+<a id="updateeventintegrationrequestrequesttypedef"></a>
 
 ## UpdateEventIntegrationRequestRequestTypeDef
 

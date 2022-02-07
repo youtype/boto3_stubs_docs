@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-kinesisvideoarchivedmedia-module"></a>
+
 # Type annotations for boto3 KinesisVideoArchivedMedia module
 
 > [Index](..) > KinesisVideoArchivedMedia
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
 type annotations stubs module
-[mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
+[mypy-boto3-kinesis-video-archived-media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[kinesis-video-archived-media]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[kinesis-video-archived-media]'
+
+# standalone installation
 pip install mypy-boto3-kinesis-video-archived-media
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-kinesis-video-archived-media
   - [Paginators](#paginators)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="kinesisvideoarchivedmediaclient"></a>
 
 ## KinesisVideoArchivedMediaClient
 
@@ -30,6 +42,8 @@ Can be used directly:
 from mypy_boto3_kinesis_video_archived_media.client import KinesisVideoArchivedMediaClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -41,6 +55,8 @@ from mypy_boto3_kinesis_video_archived_media.client import KinesisVideoArchivedM
 - [get_media_for_fragment_list](./client.md#get_media_for_fragment_list)
 - [get_paginator](./client.md#get_paginator)
 - [list_fragments](./client.md#list_fragments)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -57,6 +73,8 @@ KinesisVideoArchivedMediaClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - UnsupportedStreamMediaTypeException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -65,10 +83,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.paginators import ListFragmentsPaginator, ...
+from mypy_boto3_kinesis_video_archived_media.paginator import ListFragmentsPaginator, ...
 ```
 
 - [ListFragmentsPaginator](./paginators.md#listfragmentspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -94,6 +114,8 @@ from mypy_boto3_kinesis_video_archived_media.literals import ClipFragmentSelecto
 - [ListFragmentsPaginatorName](./literals.md#listfragmentspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

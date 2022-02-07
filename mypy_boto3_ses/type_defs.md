@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ses-module"></a>
+
 # Typed dictionaries for boto3 SES module
 
 > [Index](..) > [SES](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
 type annotations stubs module
-[mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
+[mypy-boto3-ses](https://pypi.org/project/mypy-boto3-ses/).
 
 - [Typed dictionaries for boto3 SES module](#typed-dictionaries-for-boto3-ses-module)
   - [AddHeaderActionTypeDef](#addheaderactiontypedef)
@@ -149,6 +151,8 @@ type annotations stubs module
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WorkmailActionTypeDef](#workmailactiontypedef)
 
+<a id="addheaderactiontypedef"></a>
+
 ## AddHeaderActionTypeDef
 
 ```python
@@ -160,6 +164,8 @@ Required fields:
 - `HeaderName`: `str`
 - `HeaderValue`: `str`
 
+<a id="bodytypedef"></a>
+
 ## BodyTypeDef
 
 ```python
@@ -170,6 +176,8 @@ Optional fields:
 
 - `Text`: [ContentTypeDef](./type_defs.md#contenttypedef)
 - `Html`: [ContentTypeDef](./type_defs.md#contenttypedef)
+
+<a id="bounceactiontypedef"></a>
 
 ## BounceActionTypeDef
 
@@ -188,6 +196,8 @@ Optional fields:
 - `TopicArn`: `str`
 - `StatusCode`: `str`
 
+<a id="bouncedrecipientinfotypedef"></a>
+
 ## BouncedRecipientInfoTypeDef
 
 ```python
@@ -205,6 +215,8 @@ Optional fields:
 - `RecipientDsnFields`:
   [RecipientDsnFieldsTypeDef](./type_defs.md#recipientdsnfieldstypedef)
 
+<a id="bulkemaildestinationstatustypedef"></a>
+
 ## BulkEmailDestinationStatusTypeDef
 
 ```python
@@ -216,6 +228,8 @@ Optional fields:
 - `Status`: [BulkEmailStatusType](./literals.md#bulkemailstatustype)
 - `Error`: `str`
 - `MessageId`: `str`
+
+<a id="bulkemaildestinationtypedef"></a>
 
 ## BulkEmailDestinationTypeDef
 
@@ -233,6 +247,8 @@ Optional fields:
   `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ReplacementTemplateData`: `str`
 
+<a id="clonereceiptrulesetrequestrequesttypedef"></a>
+
 ## CloneReceiptRuleSetRequestRequestTypeDef
 
 ```python
@@ -244,6 +260,8 @@ Required fields:
 - `RuleSetName`: `str`
 - `OriginalRuleSetName`: `str`
 
+<a id="cloudwatchdestinationtypedef"></a>
+
 ## CloudWatchDestinationTypeDef
 
 ```python
@@ -254,6 +272,8 @@ Required fields:
 
 - `DimensionConfigurations`:
   `Sequence`\[[CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef)\]
+
+<a id="cloudwatchdimensionconfigurationtypedef"></a>
 
 ## CloudWatchDimensionConfigurationTypeDef
 
@@ -268,6 +288,8 @@ Required fields:
   [DimensionValueSourceType](./literals.md#dimensionvaluesourcetype)
 - `DefaultDimensionValue`: `str`
 
+<a id="configurationsettypedef"></a>
+
 ## ConfigurationSetTypeDef
 
 ```python
@@ -277,6 +299,8 @@ from mypy_boto3_ses.type_defs import ConfigurationSetTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="contenttypedef"></a>
 
 ## ContentTypeDef
 
@@ -292,6 +316,8 @@ Optional fields:
 
 - `Charset`: `str`
 
+<a id="createconfigurationseteventdestinationrequestrequesttypedef"></a>
+
 ## CreateConfigurationSetEventDestinationRequestRequestTypeDef
 
 ```python
@@ -304,6 +330,8 @@ Required fields:
 - `EventDestination`:
   [EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef)
 
+<a id="createconfigurationsetrequestrequesttypedef"></a>
+
 ## CreateConfigurationSetRequestRequestTypeDef
 
 ```python
@@ -314,6 +342,8 @@ Required fields:
 
 - `ConfigurationSet`:
   [ConfigurationSetTypeDef](./type_defs.md#configurationsettypedef)
+
+<a id="createconfigurationsettrackingoptionsrequestrequesttypedef"></a>
 
 ## CreateConfigurationSetTrackingOptionsRequestRequestTypeDef
 
@@ -326,6 +356,8 @@ Required fields:
 - `ConfigurationSetName`: `str`
 - `TrackingOptions`:
   [TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef)
+
+<a id="createcustomverificationemailtemplaterequestrequesttypedef"></a>
 
 ## CreateCustomVerificationEmailTemplateRequestRequestTypeDef
 
@@ -342,6 +374,8 @@ Required fields:
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
 
+<a id="createreceiptfilterrequestrequesttypedef"></a>
+
 ## CreateReceiptFilterRequestRequestTypeDef
 
 ```python
@@ -351,6 +385,8 @@ from mypy_boto3_ses.type_defs import CreateReceiptFilterRequestRequestTypeDef
 Required fields:
 
 - `Filter`: [ReceiptFilterTypeDef](./type_defs.md#receiptfiltertypedef)
+
+<a id="createreceiptrulerequestrequesttypedef"></a>
 
 ## CreateReceiptRuleRequestRequestTypeDef
 
@@ -367,6 +403,8 @@ Optional fields:
 
 - `After`: `str`
 
+<a id="createreceiptrulesetrequestrequesttypedef"></a>
+
 ## CreateReceiptRuleSetRequestRequestTypeDef
 
 ```python
@@ -377,6 +415,8 @@ Required fields:
 
 - `RuleSetName`: `str`
 
+<a id="createtemplaterequestrequesttypedef"></a>
+
 ## CreateTemplateRequestRequestTypeDef
 
 ```python
@@ -386,6 +426,8 @@ from mypy_boto3_ses.type_defs import CreateTemplateRequestRequestTypeDef
 Required fields:
 
 - `Template`: [TemplateTypeDef](./type_defs.md#templatetypedef)
+
+<a id="customverificationemailtemplatetypedef"></a>
 
 ## CustomVerificationEmailTemplateTypeDef
 
@@ -401,6 +443,8 @@ Optional fields:
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
 
+<a id="deleteconfigurationseteventdestinationrequestrequesttypedef"></a>
+
 ## DeleteConfigurationSetEventDestinationRequestRequestTypeDef
 
 ```python
@@ -412,6 +456,8 @@ Required fields:
 - `ConfigurationSetName`: `str`
 - `EventDestinationName`: `str`
 
+<a id="deleteconfigurationsetrequestrequesttypedef"></a>
+
 ## DeleteConfigurationSetRequestRequestTypeDef
 
 ```python
@@ -421,6 +467,8 @@ from mypy_boto3_ses.type_defs import DeleteConfigurationSetRequestRequestTypeDef
 Required fields:
 
 - `ConfigurationSetName`: `str`
+
+<a id="deleteconfigurationsettrackingoptionsrequestrequesttypedef"></a>
 
 ## DeleteConfigurationSetTrackingOptionsRequestRequestTypeDef
 
@@ -432,6 +480,8 @@ Required fields:
 
 - `ConfigurationSetName`: `str`
 
+<a id="deletecustomverificationemailtemplaterequestrequesttypedef"></a>
+
 ## DeleteCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python
@@ -441,6 +491,8 @@ from mypy_boto3_ses.type_defs import DeleteCustomVerificationEmailTemplateReques
 Required fields:
 
 - `TemplateName`: `str`
+
+<a id="deleteidentitypolicyrequestrequesttypedef"></a>
 
 ## DeleteIdentityPolicyRequestRequestTypeDef
 
@@ -453,6 +505,8 @@ Required fields:
 - `Identity`: `str`
 - `PolicyName`: `str`
 
+<a id="deleteidentityrequestrequesttypedef"></a>
+
 ## DeleteIdentityRequestRequestTypeDef
 
 ```python
@@ -463,6 +517,8 @@ Required fields:
 
 - `Identity`: `str`
 
+<a id="deletereceiptfilterrequestrequesttypedef"></a>
+
 ## DeleteReceiptFilterRequestRequestTypeDef
 
 ```python
@@ -472,6 +528,8 @@ from mypy_boto3_ses.type_defs import DeleteReceiptFilterRequestRequestTypeDef
 Required fields:
 
 - `FilterName`: `str`
+
+<a id="deletereceiptrulerequestrequesttypedef"></a>
 
 ## DeleteReceiptRuleRequestRequestTypeDef
 
@@ -484,6 +542,8 @@ Required fields:
 - `RuleSetName`: `str`
 - `RuleName`: `str`
 
+<a id="deletereceiptrulesetrequestrequesttypedef"></a>
+
 ## DeleteReceiptRuleSetRequestRequestTypeDef
 
 ```python
@@ -493,6 +553,8 @@ from mypy_boto3_ses.type_defs import DeleteReceiptRuleSetRequestRequestTypeDef
 Required fields:
 
 - `RuleSetName`: `str`
+
+<a id="deletetemplaterequestrequesttypedef"></a>
 
 ## DeleteTemplateRequestRequestTypeDef
 
@@ -504,6 +566,8 @@ Required fields:
 
 - `TemplateName`: `str`
 
+<a id="deleteverifiedemailaddressrequestrequesttypedef"></a>
+
 ## DeleteVerifiedEmailAddressRequestRequestTypeDef
 
 ```python
@@ -514,6 +578,8 @@ Required fields:
 
 - `EmailAddress`: `str`
 
+<a id="deliveryoptionstypedef"></a>
+
 ## DeliveryOptionsTypeDef
 
 ```python
@@ -523,6 +589,8 @@ from mypy_boto3_ses.type_defs import DeliveryOptionsTypeDef
 Optional fields:
 
 - `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
+
+<a id="describeactivereceiptrulesetresponsetypedef"></a>
 
 ## DescribeActiveReceiptRuleSetResponseTypeDef
 
@@ -538,6 +606,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconfigurationsetrequestrequesttypedef"></a>
+
 ## DescribeConfigurationSetRequestRequestTypeDef
 
 ```python
@@ -552,6 +622,8 @@ Optional fields:
 
 - `ConfigurationSetAttributeNames`:
   `Sequence`\[[ConfigurationSetAttributeType](./literals.md#configurationsetattributetype)\]
+
+<a id="describeconfigurationsetresponsetypedef"></a>
 
 ## DescribeConfigurationSetResponseTypeDef
 
@@ -574,6 +646,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereceiptrulerequestrequesttypedef"></a>
+
 ## DescribeReceiptRuleRequestRequestTypeDef
 
 ```python
@@ -584,6 +658,8 @@ Required fields:
 
 - `RuleSetName`: `str`
 - `RuleName`: `str`
+
+<a id="describereceiptruleresponsetypedef"></a>
 
 ## DescribeReceiptRuleResponseTypeDef
 
@@ -597,6 +673,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereceiptrulesetrequestrequesttypedef"></a>
+
 ## DescribeReceiptRuleSetRequestRequestTypeDef
 
 ```python
@@ -606,6 +684,8 @@ from mypy_boto3_ses.type_defs import DescribeReceiptRuleSetRequestRequestTypeDef
 Required fields:
 
 - `RuleSetName`: `str`
+
+<a id="describereceiptrulesetresponsetypedef"></a>
 
 ## DescribeReceiptRuleSetResponseTypeDef
 
@@ -621,6 +701,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="destinationtypedef"></a>
+
 ## DestinationTypeDef
 
 ```python
@@ -632,6 +714,8 @@ Optional fields:
 - `ToAddresses`: `Sequence`\[`str`\]
 - `CcAddresses`: `Sequence`\[`str`\]
 - `BccAddresses`: `Sequence`\[`str`\]
+
+<a id="eventdestinationtypedef"></a>
 
 ## EventDestinationTypeDef
 
@@ -655,6 +739,8 @@ Optional fields:
 - `SNSDestination`:
   [SNSDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 
+<a id="extensionfieldtypedef"></a>
+
 ## ExtensionFieldTypeDef
 
 ```python
@@ -665,6 +751,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="getaccountsendingenabledresponsetypedef"></a>
 
 ## GetAccountSendingEnabledResponseTypeDef
 
@@ -678,6 +766,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcustomverificationemailtemplaterequestrequesttypedef"></a>
+
 ## GetCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python
@@ -687,6 +777,8 @@ from mypy_boto3_ses.type_defs import GetCustomVerificationEmailTemplateRequestRe
 Required fields:
 
 - `TemplateName`: `str`
+
+<a id="getcustomverificationemailtemplateresponsetypedef"></a>
 
 ## GetCustomVerificationEmailTemplateResponseTypeDef
 
@@ -705,6 +797,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getidentitydkimattributesrequestrequesttypedef"></a>
+
 ## GetIdentityDkimAttributesRequestRequestTypeDef
 
 ```python
@@ -714,6 +808,8 @@ from mypy_boto3_ses.type_defs import GetIdentityDkimAttributesRequestRequestType
 Required fields:
 
 - `Identities`: `Sequence`\[`str`\]
+
+<a id="getidentitydkimattributesresponsetypedef"></a>
 
 ## GetIdentityDkimAttributesResponseTypeDef
 
@@ -728,6 +824,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getidentitymailfromdomainattributesrequestrequesttypedef"></a>
+
 ## GetIdentityMailFromDomainAttributesRequestRequestTypeDef
 
 ```python
@@ -737,6 +835,8 @@ from mypy_boto3_ses.type_defs import GetIdentityMailFromDomainAttributesRequestR
 Required fields:
 
 - `Identities`: `Sequence`\[`str`\]
+
+<a id="getidentitymailfromdomainattributesresponsetypedef"></a>
 
 ## GetIdentityMailFromDomainAttributesResponseTypeDef
 
@@ -751,6 +851,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getidentitynotificationattributesrequestrequesttypedef"></a>
+
 ## GetIdentityNotificationAttributesRequestRequestTypeDef
 
 ```python
@@ -760,6 +862,8 @@ from mypy_boto3_ses.type_defs import GetIdentityNotificationAttributesRequestReq
 Required fields:
 
 - `Identities`: `Sequence`\[`str`\]
+
+<a id="getidentitynotificationattributesresponsetypedef"></a>
 
 ## GetIdentityNotificationAttributesResponseTypeDef
 
@@ -774,6 +878,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getidentitypoliciesrequestrequesttypedef"></a>
+
 ## GetIdentityPoliciesRequestRequestTypeDef
 
 ```python
@@ -784,6 +890,8 @@ Required fields:
 
 - `Identity`: `str`
 - `PolicyNames`: `Sequence`\[`str`\]
+
+<a id="getidentitypoliciesresponsetypedef"></a>
 
 ## GetIdentityPoliciesResponseTypeDef
 
@@ -797,6 +905,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getidentityverificationattributesrequestrequesttypedef"></a>
+
 ## GetIdentityVerificationAttributesRequestRequestTypeDef
 
 ```python
@@ -806,6 +916,8 @@ from mypy_boto3_ses.type_defs import GetIdentityVerificationAttributesRequestReq
 Required fields:
 
 - `Identities`: `Sequence`\[`str`\]
+
+<a id="getidentityverificationattributesresponsetypedef"></a>
 
 ## GetIdentityVerificationAttributesResponseTypeDef
 
@@ -819,6 +931,8 @@ Required fields:
   [IdentityVerificationAttributesTypeDef](./type_defs.md#identityverificationattributestypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsendquotaresponsetypedef"></a>
 
 ## GetSendQuotaResponseTypeDef
 
@@ -834,6 +948,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsendstatisticsresponsetypedef"></a>
+
 ## GetSendStatisticsResponseTypeDef
 
 ```python
@@ -847,6 +963,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettemplaterequestrequesttypedef"></a>
+
 ## GetTemplateRequestRequestTypeDef
 
 ```python
@@ -856,6 +974,8 @@ from mypy_boto3_ses.type_defs import GetTemplateRequestRequestTypeDef
 Required fields:
 
 - `TemplateName`: `str`
+
+<a id="gettemplateresponsetypedef"></a>
 
 ## GetTemplateResponseTypeDef
 
@@ -868,6 +988,8 @@ Required fields:
 - `Template`: [TemplateTypeDef](./type_defs.md#templatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="identitydkimattributestypedef"></a>
 
 ## IdentityDkimAttributesTypeDef
 
@@ -885,6 +1007,8 @@ Optional fields:
 
 - `DkimTokens`: `List`\[`str`\]
 
+<a id="identitymailfromdomainattributestypedef"></a>
+
 ## IdentityMailFromDomainAttributesTypeDef
 
 ```python
@@ -898,6 +1022,8 @@ Required fields:
   [CustomMailFromStatusType](./literals.md#custommailfromstatustype)
 - `BehaviorOnMXFailure`:
   [BehaviorOnMXFailureType](./literals.md#behavioronmxfailuretype)
+
+<a id="identitynotificationattributestypedef"></a>
 
 ## IdentityNotificationAttributesTypeDef
 
@@ -918,6 +1044,8 @@ Optional fields:
 - `HeadersInComplaintNotificationsEnabled`: `bool`
 - `HeadersInDeliveryNotificationsEnabled`: `bool`
 
+<a id="identityverificationattributestypedef"></a>
+
 ## IdentityVerificationAttributesTypeDef
 
 ```python
@@ -933,6 +1061,8 @@ Optional fields:
 
 - `VerificationToken`: `str`
 
+<a id="kinesisfirehosedestinationtypedef"></a>
+
 ## KinesisFirehoseDestinationTypeDef
 
 ```python
@@ -943,6 +1073,8 @@ Required fields:
 
 - `IAMRoleARN`: `str`
 - `DeliveryStreamARN`: `str`
+
+<a id="lambdaactiontypedef"></a>
 
 ## LambdaActionTypeDef
 
@@ -959,6 +1091,8 @@ Optional fields:
 - `TopicArn`: `str`
 - `InvocationType`: [InvocationTypeType](./literals.md#invocationtypetype)
 
+<a id="listconfigurationsetsrequestrequesttypedef"></a>
+
 ## ListConfigurationSetsRequestRequestTypeDef
 
 ```python
@@ -969,6 +1103,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxItems`: `int`
+
+<a id="listconfigurationsetsresponsetypedef"></a>
 
 ## ListConfigurationSetsResponseTypeDef
 
@@ -984,6 +1120,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcustomverificationemailtemplatesrequestrequesttypedef"></a>
+
 ## ListCustomVerificationEmailTemplatesRequestRequestTypeDef
 
 ```python
@@ -994,6 +1132,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listcustomverificationemailtemplatesresponsetypedef"></a>
 
 ## ListCustomVerificationEmailTemplatesResponseTypeDef
 
@@ -1009,6 +1149,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listidentitiesrequestrequesttypedef"></a>
+
 ## ListIdentitiesRequestRequestTypeDef
 
 ```python
@@ -1020,6 +1162,8 @@ Optional fields:
 - `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `NextToken`: `str`
 - `MaxItems`: `int`
+
+<a id="listidentitiesresponsetypedef"></a>
 
 ## ListIdentitiesResponseTypeDef
 
@@ -1034,6 +1178,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listidentitypoliciesrequestrequesttypedef"></a>
+
 ## ListIdentityPoliciesRequestRequestTypeDef
 
 ```python
@@ -1043,6 +1189,8 @@ from mypy_boto3_ses.type_defs import ListIdentityPoliciesRequestRequestTypeDef
 Required fields:
 
 - `Identity`: `str`
+
+<a id="listidentitypoliciesresponsetypedef"></a>
 
 ## ListIdentityPoliciesResponseTypeDef
 
@@ -1055,6 +1203,8 @@ Required fields:
 - `PolicyNames`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listreceiptfiltersresponsetypedef"></a>
 
 ## ListReceiptFiltersResponseTypeDef
 
@@ -1069,6 +1219,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listreceiptrulesetsrequestrequesttypedef"></a>
+
 ## ListReceiptRuleSetsRequestRequestTypeDef
 
 ```python
@@ -1078,6 +1230,8 @@ from mypy_boto3_ses.type_defs import ListReceiptRuleSetsRequestRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listreceiptrulesetsresponsetypedef"></a>
 
 ## ListReceiptRuleSetsResponseTypeDef
 
@@ -1093,6 +1247,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtemplatesrequestrequesttypedef"></a>
+
 ## ListTemplatesRequestRequestTypeDef
 
 ```python
@@ -1103,6 +1259,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxItems`: `int`
+
+<a id="listtemplatesresponsetypedef"></a>
 
 ## ListTemplatesResponseTypeDef
 
@@ -1118,6 +1276,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listverifiedemailaddressesresponsetypedef"></a>
+
 ## ListVerifiedEmailAddressesResponseTypeDef
 
 ```python
@@ -1129,6 +1289,8 @@ Required fields:
 - `VerifiedEmailAddresses`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="messagedsntypedef"></a>
 
 ## MessageDsnTypeDef
 
@@ -1146,6 +1308,8 @@ Optional fields:
 - `ExtensionFields`:
   `Sequence`\[[ExtensionFieldTypeDef](./type_defs.md#extensionfieldtypedef)\]
 
+<a id="messagetagtypedef"></a>
+
 ## MessageTagTypeDef
 
 ```python
@@ -1156,6 +1320,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="messagetypedef"></a>
 
 ## MessageTypeDef
 
@@ -1168,6 +1334,8 @@ Required fields:
 - `Subject`: [ContentTypeDef](./type_defs.md#contenttypedef)
 - `Body`: [BodyTypeDef](./type_defs.md#bodytypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1179,6 +1347,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putconfigurationsetdeliveryoptionsrequestrequesttypedef"></a>
 
 ## PutConfigurationSetDeliveryOptionsRequestRequestTypeDef
 
@@ -1195,6 +1365,8 @@ Optional fields:
 - `DeliveryOptions`:
   [DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef)
 
+<a id="putidentitypolicyrequestrequesttypedef"></a>
+
 ## PutIdentityPolicyRequestRequestTypeDef
 
 ```python
@@ -1207,6 +1379,8 @@ Required fields:
 - `PolicyName`: `str`
 - `Policy`: `str`
 
+<a id="rawmessagetypedef"></a>
+
 ## RawMessageTypeDef
 
 ```python
@@ -1216,6 +1390,8 @@ from mypy_boto3_ses.type_defs import RawMessageTypeDef
 Required fields:
 
 - `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="receiptactiontypedef"></a>
 
 ## ReceiptActionTypeDef
 
@@ -1235,6 +1411,8 @@ Optional fields:
   [AddHeaderActionTypeDef](./type_defs.md#addheaderactiontypedef)
 - `SNSAction`: [SNSActionTypeDef](./type_defs.md#snsactiontypedef)
 
+<a id="receiptfiltertypedef"></a>
+
 ## ReceiptFilterTypeDef
 
 ```python
@@ -1245,6 +1423,8 @@ Required fields:
 
 - `Name`: `str`
 - `IpFilter`: [ReceiptIpFilterTypeDef](./type_defs.md#receiptipfiltertypedef)
+
+<a id="receiptipfiltertypedef"></a>
 
 ## ReceiptIpFilterTypeDef
 
@@ -1257,6 +1437,8 @@ Required fields:
 - `Policy`: [ReceiptFilterPolicyType](./literals.md#receiptfilterpolicytype)
 - `Cidr`: `str`
 
+<a id="receiptrulesetmetadatatypedef"></a>
+
 ## ReceiptRuleSetMetadataTypeDef
 
 ```python
@@ -1267,6 +1449,8 @@ Optional fields:
 
 - `Name`: `str`
 - `CreatedTimestamp`: `datetime`
+
+<a id="receiptruletypedef"></a>
 
 ## ReceiptRuleTypeDef
 
@@ -1286,6 +1470,8 @@ Optional fields:
 - `Actions`:
   `Sequence`\[[ReceiptActionTypeDef](./type_defs.md#receiptactiontypedef)\]
 - `ScanEnabled`: `bool`
+
+<a id="recipientdsnfieldstypedef"></a>
 
 ## RecipientDsnFieldsTypeDef
 
@@ -1307,6 +1493,8 @@ Optional fields:
 - `ExtensionFields`:
   `Sequence`\[[ExtensionFieldTypeDef](./type_defs.md#extensionfieldtypedef)\]
 
+<a id="reorderreceiptrulesetrequestrequesttypedef"></a>
+
 ## ReorderReceiptRuleSetRequestRequestTypeDef
 
 ```python
@@ -1317,6 +1505,8 @@ Required fields:
 
 - `RuleSetName`: `str`
 - `RuleNames`: `Sequence`\[`str`\]
+
+<a id="reputationoptionstypedef"></a>
 
 ## ReputationOptionsTypeDef
 
@@ -1329,6 +1519,8 @@ Optional fields:
 - `SendingEnabled`: `bool`
 - `ReputationMetricsEnabled`: `bool`
 - `LastFreshStart`: `datetime`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1343,6 +1535,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3actiontypedef"></a>
 
 ## S3ActionTypeDef
 
@@ -1360,6 +1554,8 @@ Optional fields:
 - `ObjectKeyPrefix`: `str`
 - `KmsKeyArn`: `str`
 
+<a id="snsactiontypedef"></a>
+
 ## SNSActionTypeDef
 
 ```python
@@ -1374,6 +1570,8 @@ Optional fields:
 
 - `Encoding`: [SNSActionEncodingType](./literals.md#snsactionencodingtype)
 
+<a id="snsdestinationtypedef"></a>
+
 ## SNSDestinationTypeDef
 
 ```python
@@ -1383,6 +1581,8 @@ from mypy_boto3_ses.type_defs import SNSDestinationTypeDef
 Required fields:
 
 - `TopicARN`: `str`
+
+<a id="sendbouncerequestrequesttypedef"></a>
 
 ## SendBounceRequestRequestTypeDef
 
@@ -1403,6 +1603,8 @@ Optional fields:
 - `MessageDsn`: [MessageDsnTypeDef](./type_defs.md#messagedsntypedef)
 - `BounceSenderArn`: `str`
 
+<a id="sendbounceresponsetypedef"></a>
+
 ## SendBounceResponseTypeDef
 
 ```python
@@ -1414,6 +1616,8 @@ Required fields:
 - `MessageId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendbulktemplatedemailrequestrequesttypedef"></a>
 
 ## SendBulkTemplatedEmailRequestRequestTypeDef
 
@@ -1440,6 +1644,8 @@ Optional fields:
 - `TemplateArn`: `str`
 - `DefaultTemplateData`: `str`
 
+<a id="sendbulktemplatedemailresponsetypedef"></a>
+
 ## SendBulkTemplatedEmailResponseTypeDef
 
 ```python
@@ -1452,6 +1658,8 @@ Required fields:
   `List`\[[BulkEmailDestinationStatusTypeDef](./type_defs.md#bulkemaildestinationstatustypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendcustomverificationemailrequestrequesttypedef"></a>
 
 ## SendCustomVerificationEmailRequestRequestTypeDef
 
@@ -1468,6 +1676,8 @@ Optional fields:
 
 - `ConfigurationSetName`: `str`
 
+<a id="sendcustomverificationemailresponsetypedef"></a>
+
 ## SendCustomVerificationEmailResponseTypeDef
 
 ```python
@@ -1479,6 +1689,8 @@ Required fields:
 - `MessageId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="senddatapointtypedef"></a>
 
 ## SendDataPointTypeDef
 
@@ -1493,6 +1705,8 @@ Optional fields:
 - `Bounces`: `int`
 - `Complaints`: `int`
 - `Rejects`: `int`
+
+<a id="sendemailrequestrequesttypedef"></a>
 
 ## SendEmailRequestRequestTypeDef
 
@@ -1515,6 +1729,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
+<a id="sendemailresponsetypedef"></a>
+
 ## SendEmailResponseTypeDef
 
 ```python
@@ -1526,6 +1742,8 @@ Required fields:
 - `MessageId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendrawemailrequestrequesttypedef"></a>
 
 ## SendRawEmailRequestRequestTypeDef
 
@@ -1547,6 +1765,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
+<a id="sendrawemailresponsetypedef"></a>
+
 ## SendRawEmailResponseTypeDef
 
 ```python
@@ -1558,6 +1778,8 @@ Required fields:
 - `MessageId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendtemplatedemailrequestrequesttypedef"></a>
 
 ## SendTemplatedEmailRequestRequestTypeDef
 
@@ -1582,6 +1804,8 @@ Optional fields:
 - `ConfigurationSetName`: `str`
 - `TemplateArn`: `str`
 
+<a id="sendtemplatedemailresponsetypedef"></a>
+
 ## SendTemplatedEmailResponseTypeDef
 
 ```python
@@ -1594,6 +1818,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="setactivereceiptrulesetrequestrequesttypedef"></a>
+
 ## SetActiveReceiptRuleSetRequestRequestTypeDef
 
 ```python
@@ -1603,6 +1829,8 @@ from mypy_boto3_ses.type_defs import SetActiveReceiptRuleSetRequestRequestTypeDe
 Optional fields:
 
 - `RuleSetName`: `str`
+
+<a id="setidentitydkimenabledrequestrequesttypedef"></a>
 
 ## SetIdentityDkimEnabledRequestRequestTypeDef
 
@@ -1615,6 +1843,8 @@ Required fields:
 - `Identity`: `str`
 - `DkimEnabled`: `bool`
 
+<a id="setidentityfeedbackforwardingenabledrequestrequesttypedef"></a>
+
 ## SetIdentityFeedbackForwardingEnabledRequestRequestTypeDef
 
 ```python
@@ -1625,6 +1855,8 @@ Required fields:
 
 - `Identity`: `str`
 - `ForwardingEnabled`: `bool`
+
+<a id="setidentityheadersinnotificationsenabledrequestrequesttypedef"></a>
 
 ## SetIdentityHeadersInNotificationsEnabledRequestRequestTypeDef
 
@@ -1638,6 +1870,8 @@ Required fields:
 - `NotificationType`:
   [NotificationTypeType](./literals.md#notificationtypetype)
 - `Enabled`: `bool`
+
+<a id="setidentitymailfromdomainrequestrequesttypedef"></a>
 
 ## SetIdentityMailFromDomainRequestRequestTypeDef
 
@@ -1655,6 +1889,8 @@ Optional fields:
 - `BehaviorOnMXFailure`:
   [BehaviorOnMXFailureType](./literals.md#behavioronmxfailuretype)
 
+<a id="setidentitynotificationtopicrequestrequesttypedef"></a>
+
 ## SetIdentityNotificationTopicRequestRequestTypeDef
 
 ```python
@@ -1671,6 +1907,8 @@ Optional fields:
 
 - `SnsTopic`: `str`
 
+<a id="setreceiptrulepositionrequestrequesttypedef"></a>
+
 ## SetReceiptRulePositionRequestRequestTypeDef
 
 ```python
@@ -1685,6 +1923,8 @@ Required fields:
 Optional fields:
 
 - `After`: `str`
+
+<a id="stopactiontypedef"></a>
 
 ## StopActionTypeDef
 
@@ -1701,6 +1941,8 @@ Optional fields:
 
 - `TopicArn`: `str`
 
+<a id="templatemetadatatypedef"></a>
+
 ## TemplateMetadataTypeDef
 
 ```python
@@ -1711,6 +1953,8 @@ Optional fields:
 
 - `Name`: `str`
 - `CreatedTimestamp`: `datetime`
+
+<a id="templatetypedef"></a>
 
 ## TemplateTypeDef
 
@@ -1728,6 +1972,8 @@ Optional fields:
 - `TextPart`: `str`
 - `HtmlPart`: `str`
 
+<a id="testrendertemplaterequestrequesttypedef"></a>
+
 ## TestRenderTemplateRequestRequestTypeDef
 
 ```python
@@ -1738,6 +1984,8 @@ Required fields:
 
 - `TemplateName`: `str`
 - `TemplateData`: `str`
+
+<a id="testrendertemplateresponsetypedef"></a>
 
 ## TestRenderTemplateResponseTypeDef
 
@@ -1751,6 +1999,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="trackingoptionstypedef"></a>
+
 ## TrackingOptionsTypeDef
 
 ```python
@@ -1761,6 +2011,8 @@ Optional fields:
 
 - `CustomRedirectDomain`: `str`
 
+<a id="updateaccountsendingenabledrequestrequesttypedef"></a>
+
 ## UpdateAccountSendingEnabledRequestRequestTypeDef
 
 ```python
@@ -1770,6 +2022,8 @@ from mypy_boto3_ses.type_defs import UpdateAccountSendingEnabledRequestRequestTy
 Optional fields:
 
 - `Enabled`: `bool`
+
+<a id="updateconfigurationseteventdestinationrequestrequesttypedef"></a>
 
 ## UpdateConfigurationSetEventDestinationRequestRequestTypeDef
 
@@ -1783,6 +2037,8 @@ Required fields:
 - `EventDestination`:
   [EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef)
 
+<a id="updateconfigurationsetreputationmetricsenabledrequestrequesttypedef"></a>
+
 ## UpdateConfigurationSetReputationMetricsEnabledRequestRequestTypeDef
 
 ```python
@@ -1793,6 +2049,8 @@ Required fields:
 
 - `ConfigurationSetName`: `str`
 - `Enabled`: `bool`
+
+<a id="updateconfigurationsetsendingenabledrequestrequesttypedef"></a>
 
 ## UpdateConfigurationSetSendingEnabledRequestRequestTypeDef
 
@@ -1805,6 +2063,8 @@ Required fields:
 - `ConfigurationSetName`: `str`
 - `Enabled`: `bool`
 
+<a id="updateconfigurationsettrackingoptionsrequestrequesttypedef"></a>
+
 ## UpdateConfigurationSetTrackingOptionsRequestRequestTypeDef
 
 ```python
@@ -1816,6 +2076,8 @@ Required fields:
 - `ConfigurationSetName`: `str`
 - `TrackingOptions`:
   [TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef)
+
+<a id="updatecustomverificationemailtemplaterequestrequesttypedef"></a>
 
 ## UpdateCustomVerificationEmailTemplateRequestRequestTypeDef
 
@@ -1835,6 +2097,8 @@ Optional fields:
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
 
+<a id="updatereceiptrulerequestrequesttypedef"></a>
+
 ## UpdateReceiptRuleRequestRequestTypeDef
 
 ```python
@@ -1846,6 +2110,8 @@ Required fields:
 - `RuleSetName`: `str`
 - `Rule`: [ReceiptRuleTypeDef](./type_defs.md#receiptruletypedef)
 
+<a id="updatetemplaterequestrequesttypedef"></a>
+
 ## UpdateTemplateRequestRequestTypeDef
 
 ```python
@@ -1856,6 +2122,8 @@ Required fields:
 
 - `Template`: [TemplateTypeDef](./type_defs.md#templatetypedef)
 
+<a id="verifydomaindkimrequestrequesttypedef"></a>
+
 ## VerifyDomainDkimRequestRequestTypeDef
 
 ```python
@@ -1865,6 +2133,8 @@ from mypy_boto3_ses.type_defs import VerifyDomainDkimRequestRequestTypeDef
 Required fields:
 
 - `Domain`: `str`
+
+<a id="verifydomaindkimresponsetypedef"></a>
 
 ## VerifyDomainDkimResponseTypeDef
 
@@ -1878,6 +2148,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="verifydomainidentityrequestrequesttypedef"></a>
+
 ## VerifyDomainIdentityRequestRequestTypeDef
 
 ```python
@@ -1887,6 +2159,8 @@ from mypy_boto3_ses.type_defs import VerifyDomainIdentityRequestRequestTypeDef
 Required fields:
 
 - `Domain`: `str`
+
+<a id="verifydomainidentityresponsetypedef"></a>
 
 ## VerifyDomainIdentityResponseTypeDef
 
@@ -1900,6 +2174,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="verifyemailaddressrequestrequesttypedef"></a>
+
 ## VerifyEmailAddressRequestRequestTypeDef
 
 ```python
@@ -1909,6 +2185,8 @@ from mypy_boto3_ses.type_defs import VerifyEmailAddressRequestRequestTypeDef
 Required fields:
 
 - `EmailAddress`: `str`
+
+<a id="verifyemailidentityrequestrequesttypedef"></a>
 
 ## VerifyEmailIdentityRequestRequestTypeDef
 
@@ -1920,6 +2198,8 @@ Required fields:
 
 - `EmailAddress`: `str`
 
+<a id="waiterconfigtypedef"></a>
+
 ## WaiterConfigTypeDef
 
 ```python
@@ -1930,6 +2210,8 @@ Optional fields:
 
 - `Delay`: `int`
 - `MaxAttempts`: `int`
+
+<a id="workmailactiontypedef"></a>
 
 ## WorkmailActionTypeDef
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-cognitoidentityprovider-module"></a>
+
 # Paginators for boto3 CognitoIdentityProvider module
 
 > [Index](..) > [CognitoIdentityProvider](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
 type annotations stubs module
-[mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
+[mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 - [Paginators for boto3 CognitoIdentityProvider module](#paginators-for-boto3-cognitoidentityprovider-module)
   - [AdminListGroupsForUserPaginator](#adminlistgroupsforuserpaginator)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [ListUsersPaginator](#listuserspaginator)
   - [ListUsersInGroupPaginator](#listusersingrouppaginator)
 
+<a id="adminlistgroupsforuserpaginator"></a>
+
 ## AdminListGroupsForUserPaginator
 
 Type annotations for
@@ -26,10 +30,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cognito_idp.paginator import AdminListGroupsForUserPaginator
 
 def get_admin_list_groups_for_user_paginator() -> AdminListGroupsForUserPaginator:
-    return boto3.client("cognito-idp").get_paginator("admin_list_groups_for_user")
+    return Session().client("cognito-idp").get_paginator("admin_list_groups_for_user")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `AdminListGroupsForUserPaginator.paginate` method:
 `AdminListGroupsForUserPaginator.paginate` returns
 `_PageIterator`\[[AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef)\].
 
+<a id="adminlistuserautheventspaginator"></a>
+
 ## AdminListUserAuthEventsPaginator
 
 Type annotations for
@@ -53,10 +61,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cognito_idp.paginator import AdminListUserAuthEventsPaginator
 
 def get_admin_list_user_auth_events_paginator() -> AdminListUserAuthEventsPaginator:
-    return boto3.client("cognito-idp").get_paginator("admin_list_user_auth_events")
+    return Session().client("cognito-idp").get_paginator("admin_list_user_auth_events")
 ```
 
 Boto3 documentation:
@@ -72,6 +82,8 @@ Arguments for `AdminListUserAuthEventsPaginator.paginate` method:
 `AdminListUserAuthEventsPaginator.paginate` returns
 `_PageIterator`\[[AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef)\].
 
+<a id="listgroupspaginator"></a>
+
 ## ListGroupsPaginator
 
 Type annotations for
@@ -80,10 +92,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cognito_idp.paginator import ListGroupsPaginator
 
 def get_list_groups_paginator() -> ListGroupsPaginator:
-    return boto3.client("cognito-idp").get_paginator("list_groups")
+    return Session().client("cognito-idp").get_paginator("list_groups")
 ```
 
 Boto3 documentation:
@@ -98,6 +112,8 @@ Arguments for `ListGroupsPaginator.paginate` method:
 `ListGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
 
+<a id="listidentityproviderspaginator"></a>
+
 ## ListIdentityProvidersPaginator
 
 Type annotations for
@@ -106,10 +122,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cognito_idp.paginator import ListIdentityProvidersPaginator
 
 def get_list_identity_providers_paginator() -> ListIdentityProvidersPaginator:
-    return boto3.client("cognito-idp").get_paginator("list_identity_providers")
+    return Session().client("cognito-idp").get_paginator("list_identity_providers")
 ```
 
 Boto3 documentation:
@@ -124,6 +142,8 @@ Arguments for `ListIdentityProvidersPaginator.paginate` method:
 `ListIdentityProvidersPaginator.paginate` returns
 `_PageIterator`\[[ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef)\].
 
+<a id="listresourceserverspaginator"></a>
+
 ## ListResourceServersPaginator
 
 Type annotations for
@@ -132,10 +152,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cognito_idp.paginator import ListResourceServersPaginator
 
 def get_list_resource_servers_paginator() -> ListResourceServersPaginator:
-    return boto3.client("cognito-idp").get_paginator("list_resource_servers")
+    return Session().client("cognito-idp").get_paginator("list_resource_servers")
 ```
 
 Boto3 documentation:
@@ -150,6 +172,8 @@ Arguments for `ListResourceServersPaginator.paginate` method:
 `ListResourceServersPaginator.paginate` returns
 `_PageIterator`\[[ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef)\].
 
+<a id="listuserpoolclientspaginator"></a>
+
 ## ListUserPoolClientsPaginator
 
 Type annotations for
@@ -158,10 +182,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cognito_idp.paginator import ListUserPoolClientsPaginator
 
 def get_list_user_pool_clients_paginator() -> ListUserPoolClientsPaginator:
-    return boto3.client("cognito-idp").get_paginator("list_user_pool_clients")
+    return Session().client("cognito-idp").get_paginator("list_user_pool_clients")
 ```
 
 Boto3 documentation:
@@ -176,6 +202,8 @@ Arguments for `ListUserPoolClientsPaginator.paginate` method:
 `ListUserPoolClientsPaginator.paginate` returns
 `_PageIterator`\[[ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef)\].
 
+<a id="listuserpoolspaginator"></a>
+
 ## ListUserPoolsPaginator
 
 Type annotations for
@@ -184,10 +212,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cognito_idp.paginator import ListUserPoolsPaginator
 
 def get_list_user_pools_paginator() -> ListUserPoolsPaginator:
-    return boto3.client("cognito-idp").get_paginator("list_user_pools")
+    return Session().client("cognito-idp").get_paginator("list_user_pools")
 ```
 
 Boto3 documentation:
@@ -201,6 +231,8 @@ Arguments for `ListUserPoolsPaginator.paginate` method:
 `ListUserPoolsPaginator.paginate` returns
 `_PageIterator`\[[ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef)\].
 
+<a id="listuserspaginator"></a>
+
 ## ListUsersPaginator
 
 Type annotations for `boto3.client("cognito-idp").get_paginator("list_users")`.
@@ -208,10 +240,12 @@ Type annotations for `boto3.client("cognito-idp").get_paginator("list_users")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cognito_idp.paginator import ListUsersPaginator
 
 def get_list_users_paginator() -> ListUsersPaginator:
-    return boto3.client("cognito-idp").get_paginator("list_users")
+    return Session().client("cognito-idp").get_paginator("list_users")
 ```
 
 Boto3 documentation:
@@ -228,6 +262,8 @@ Arguments for `ListUsersPaginator.paginate` method:
 `ListUsersPaginator.paginate` returns
 `_PageIterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
 
+<a id="listusersingrouppaginator"></a>
+
 ## ListUsersInGroupPaginator
 
 Type annotations for
@@ -236,10 +272,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cognito_idp.paginator import ListUsersInGroupPaginator
 
 def get_list_users_in_group_paginator() -> ListUsersInGroupPaginator:
-    return boto3.client("cognito-idp").get_paginator("list_users_in_group")
+    return Session().client("cognito-idp").get_paginator("list_users_in_group")
 ```
 
 Boto3 documentation:

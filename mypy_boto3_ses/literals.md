@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ses-module"></a>
+
 # Literals for boto3 SES module
 
 > [Index](..) > [SES](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
 type annotations stubs module
-[mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
+[mypy-boto3-ses](https://pypi.org/project/mypy-boto3-ses/).
 
 - [Literals for boto3 SES module](#literals-for-boto3-ses-module)
   - [BehaviorOnMXFailureType](#behavioronmxfailuretype)
@@ -34,6 +36,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="behavioronmxfailuretype"></a>
+
 ## BehaviorOnMXFailureType
 
 ```python
@@ -44,6 +48,8 @@ Values:
 
 - `RejectMessage`
 - `UseDefaultValue`
+
+<a id="bouncetypetype"></a>
 
 ## BounceTypeType
 
@@ -59,6 +65,8 @@ Values:
 - `MessageTooLarge`
 - `TemporaryFailure`
 - `Undefined`
+
+<a id="bulkemailstatustype"></a>
 
 ## BulkEmailStatusType
 
@@ -83,6 +91,8 @@ Values:
 - `TemplateDoesNotExist`
 - `TransientFailure`
 
+<a id="configurationsetattributetype"></a>
+
 ## ConfigurationSetAttributeType
 
 ```python
@@ -95,6 +105,8 @@ Values:
 - `eventDestinations`
 - `reputationOptions`
 - `trackingOptions`
+
+<a id="custommailfromstatustype"></a>
 
 ## CustomMailFromStatusType
 
@@ -109,6 +121,8 @@ Values:
 - `Success`
 - `TemporaryFailure`
 
+<a id="dimensionvaluesourcetype"></a>
+
 ## DimensionValueSourceType
 
 ```python
@@ -120,6 +134,8 @@ Values:
 - `emailHeader`
 - `linkTag`
 - `messageTag`
+
+<a id="dsnactiontype"></a>
 
 ## DsnActionType
 
@@ -134,6 +150,8 @@ Values:
 - `expanded`
 - `failed`
 - `relayed`
+
+<a id="eventtypetype"></a>
 
 ## EventTypeType
 
@@ -152,6 +170,8 @@ Values:
 - `renderingFailure`
 - `send`
 
+<a id="identityexistswaitername"></a>
+
 ## IdentityExistsWaiterName
 
 ```python
@@ -161,6 +181,8 @@ from mypy_boto3_ses.literals import IdentityExistsWaiterName
 Values:
 
 - `identity_exists`
+
+<a id="identitytypetype"></a>
 
 ## IdentityTypeType
 
@@ -173,6 +195,8 @@ Values:
 - `Domain`
 - `EmailAddress`
 
+<a id="invocationtypetype"></a>
+
 ## InvocationTypeType
 
 ```python
@@ -184,6 +208,8 @@ Values:
 - `Event`
 - `RequestResponse`
 
+<a id="listconfigurationsetspaginatorname"></a>
+
 ## ListConfigurationSetsPaginatorName
 
 ```python
@@ -193,6 +219,8 @@ from mypy_boto3_ses.literals import ListConfigurationSetsPaginatorName
 Values:
 
 - `list_configuration_sets`
+
+<a id="listcustomverificationemailtemplatespaginatorname"></a>
 
 ## ListCustomVerificationEmailTemplatesPaginatorName
 
@@ -204,6 +232,8 @@ Values:
 
 - `list_custom_verification_email_templates`
 
+<a id="listidentitiespaginatorname"></a>
+
 ## ListIdentitiesPaginatorName
 
 ```python
@@ -213,6 +243,8 @@ from mypy_boto3_ses.literals import ListIdentitiesPaginatorName
 Values:
 
 - `list_identities`
+
+<a id="listreceiptrulesetspaginatorname"></a>
 
 ## ListReceiptRuleSetsPaginatorName
 
@@ -224,6 +256,8 @@ Values:
 
 - `list_receipt_rule_sets`
 
+<a id="listtemplatespaginatorname"></a>
+
 ## ListTemplatesPaginatorName
 
 ```python
@@ -233,6 +267,8 @@ from mypy_boto3_ses.literals import ListTemplatesPaginatorName
 Values:
 
 - `list_templates`
+
+<a id="notificationtypetype"></a>
 
 ## NotificationTypeType
 
@@ -246,6 +282,8 @@ Values:
 - `Complaint`
 - `Delivery`
 
+<a id="receiptfilterpolicytype"></a>
+
 ## ReceiptFilterPolicyType
 
 ```python
@@ -256,6 +294,8 @@ Values:
 
 - `Allow`
 - `Block`
+
+<a id="snsactionencodingtype"></a>
 
 ## SNSActionEncodingType
 
@@ -268,6 +308,8 @@ Values:
 - `Base64`
 - `UTF-8`
 
+<a id="stopscopetype"></a>
+
 ## StopScopeType
 
 ```python
@@ -277,6 +319,8 @@ from mypy_boto3_ses.literals import StopScopeType
 Values:
 
 - `RuleSet`
+
+<a id="tlspolicytype"></a>
 
 ## TlsPolicyType
 
@@ -288,6 +332,8 @@ Values:
 
 - `Optional`
 - `Require`
+
+<a id="verificationstatustype"></a>
 
 ## VerificationStatusType
 
@@ -302,6 +348,8 @@ Values:
 - `Pending`
 - `Success`
 - `TemporaryFailure`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -611,6 +659,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -624,6 +674,8 @@ Values:
 - `list_identities`
 - `list_receipt_rule_sets`
 - `list_templates`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

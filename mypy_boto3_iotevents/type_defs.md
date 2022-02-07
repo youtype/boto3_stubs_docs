@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iotevents-module"></a>
+
 # Typed dictionaries for boto3 IoTEvents module
 
 > [Index](..) > [IoTEvents](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
 type annotations stubs module
-[mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
+[mypy-boto3-iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
 - [Typed dictionaries for boto3 IoTEvents module](#typed-dictionaries-for-boto3-iotevents-module)
   - [AcknowledgeFlowTypeDef](#acknowledgeflowtypedef)
@@ -117,6 +119,8 @@ type annotations stubs module
   - [UpdateInputRequestRequestTypeDef](#updateinputrequestrequesttypedef)
   - [UpdateInputResponseTypeDef](#updateinputresponsetypedef)
 
+<a id="acknowledgeflowtypedef"></a>
+
 ## AcknowledgeFlowTypeDef
 
 ```python
@@ -126,6 +130,8 @@ from mypy_boto3_iotevents.type_defs import AcknowledgeFlowTypeDef
 Required fields:
 
 - `enabled`: `bool`
+
+<a id="actiontypedef"></a>
 
 ## ActionTypeDef
 
@@ -156,6 +162,8 @@ Optional fields:
 - `iotSiteWise`:
   [IotSiteWiseActionTypeDef](./type_defs.md#iotsitewiseactiontypedef)
 
+<a id="alarmactiontypedef"></a>
+
 ## AlarmActionTypeDef
 
 ```python
@@ -178,6 +186,8 @@ Optional fields:
 - `iotSiteWise`:
   [IotSiteWiseActionTypeDef](./type_defs.md#iotsitewiseactiontypedef)
 
+<a id="alarmcapabilitiestypedef"></a>
+
 ## AlarmCapabilitiesTypeDef
 
 ```python
@@ -191,6 +201,8 @@ Optional fields:
 - `acknowledgeFlow`:
   [AcknowledgeFlowTypeDef](./type_defs.md#acknowledgeflowtypedef)
 
+<a id="alarmeventactionstypedef"></a>
+
 ## AlarmEventActionsTypeDef
 
 ```python
@@ -201,6 +213,8 @@ Optional fields:
 
 - `alarmActions`:
   `Sequence`\[[AlarmActionTypeDef](./type_defs.md#alarmactiontypedef)\]
+
+<a id="alarmmodelsummarytypedef"></a>
 
 ## AlarmModelSummaryTypeDef
 
@@ -213,6 +227,8 @@ Optional fields:
 - `creationTime`: `datetime`
 - `alarmModelDescription`: `str`
 - `alarmModelName`: `str`
+
+<a id="alarmmodelversionsummarytypedef"></a>
 
 ## AlarmModelVersionSummaryTypeDef
 
@@ -232,6 +248,8 @@ Optional fields:
   [AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype)
 - `statusMessage`: `str`
 
+<a id="alarmnotificationtypedef"></a>
+
 ## AlarmNotificationTypeDef
 
 ```python
@@ -243,6 +261,8 @@ Optional fields:
 - `notificationActions`:
   `Sequence`\[[NotificationActionTypeDef](./type_defs.md#notificationactiontypedef)\]
 
+<a id="alarmruletypedef"></a>
+
 ## AlarmRuleTypeDef
 
 ```python
@@ -253,6 +273,8 @@ Optional fields:
 
 - `simpleRule`: [SimpleRuleTypeDef](./type_defs.md#simpleruletypedef)
 
+<a id="analysisresultlocationtypedef"></a>
+
 ## AnalysisResultLocationTypeDef
 
 ```python
@@ -262,6 +284,8 @@ from mypy_boto3_iotevents.type_defs import AnalysisResultLocationTypeDef
 Optional fields:
 
 - `path`: `str`
+
+<a id="analysisresulttypedef"></a>
 
 ## AnalysisResultTypeDef
 
@@ -277,6 +301,8 @@ Optional fields:
 - `locations`:
   `List`\[[AnalysisResultLocationTypeDef](./type_defs.md#analysisresultlocationtypedef)\]
 
+<a id="assetpropertytimestamptypedef"></a>
+
 ## AssetPropertyTimestampTypeDef
 
 ```python
@@ -290,6 +316,8 @@ Required fields:
 Optional fields:
 
 - `offsetInNanos`: `str`
+
+<a id="assetpropertyvaluetypedef"></a>
 
 ## AssetPropertyValueTypeDef
 
@@ -305,6 +333,8 @@ Optional fields:
   [AssetPropertyTimestampTypeDef](./type_defs.md#assetpropertytimestamptypedef)
 - `quality`: `str`
 
+<a id="assetpropertyvarianttypedef"></a>
+
 ## AssetPropertyVariantTypeDef
 
 ```python
@@ -318,6 +348,8 @@ Optional fields:
 - `doubleValue`: `str`
 - `booleanValue`: `str`
 
+<a id="attributetypedef"></a>
+
 ## AttributeTypeDef
 
 ```python
@@ -328,6 +360,8 @@ Required fields:
 
 - `jsonPath`: `str`
 
+<a id="cleartimeractiontypedef"></a>
+
 ## ClearTimerActionTypeDef
 
 ```python
@@ -337,6 +371,8 @@ from mypy_boto3_iotevents.type_defs import ClearTimerActionTypeDef
 Required fields:
 
 - `timerName`: `str`
+
+<a id="createalarmmodelrequestrequesttypedef"></a>
 
 ## CreateAlarmModelRequestRequestTypeDef
 
@@ -363,6 +399,8 @@ Optional fields:
 - `alarmCapabilities`:
   [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
 
+<a id="createalarmmodelresponsetypedef"></a>
+
 ## CreateAlarmModelResponseTypeDef
 
 ```python
@@ -379,6 +417,8 @@ Required fields:
   [AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdetectormodelrequestrequesttypedef"></a>
 
 ## CreateDetectorModelRequestRequestTypeDef
 
@@ -401,6 +441,8 @@ Optional fields:
 - `evaluationMethod`:
   [EvaluationMethodType](./literals.md#evaluationmethodtype)
 
+<a id="createdetectormodelresponsetypedef"></a>
+
 ## CreateDetectorModelResponseTypeDef
 
 ```python
@@ -413,6 +455,8 @@ Required fields:
   [DetectorModelConfigurationTypeDef](./type_defs.md#detectormodelconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createinputrequestrequesttypedef"></a>
 
 ## CreateInputRequestRequestTypeDef
 
@@ -431,6 +475,8 @@ Optional fields:
 - `inputDescription`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createinputresponsetypedef"></a>
+
 ## CreateInputResponseTypeDef
 
 ```python
@@ -444,6 +490,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletealarmmodelrequestrequesttypedef"></a>
+
 ## DeleteAlarmModelRequestRequestTypeDef
 
 ```python
@@ -453,6 +501,8 @@ from mypy_boto3_iotevents.type_defs import DeleteAlarmModelRequestRequestTypeDef
 Required fields:
 
 - `alarmModelName`: `str`
+
+<a id="deletedetectormodelrequestrequesttypedef"></a>
 
 ## DeleteDetectorModelRequestRequestTypeDef
 
@@ -464,6 +514,8 @@ Required fields:
 
 - `detectorModelName`: `str`
 
+<a id="deleteinputrequestrequesttypedef"></a>
+
 ## DeleteInputRequestRequestTypeDef
 
 ```python
@@ -473,6 +525,8 @@ from mypy_boto3_iotevents.type_defs import DeleteInputRequestRequestTypeDef
 Required fields:
 
 - `inputName`: `str`
+
+<a id="describealarmmodelrequestrequesttypedef"></a>
 
 ## DescribeAlarmModelRequestRequestTypeDef
 
@@ -487,6 +541,8 @@ Required fields:
 Optional fields:
 
 - `alarmModelVersion`: `str`
+
+<a id="describealarmmodelresponsetypedef"></a>
 
 ## DescribeAlarmModelResponseTypeDef
 
@@ -518,6 +574,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedetectormodelanalysisrequestrequesttypedef"></a>
+
 ## DescribeDetectorModelAnalysisRequestRequestTypeDef
 
 ```python
@@ -527,6 +585,8 @@ from mypy_boto3_iotevents.type_defs import DescribeDetectorModelAnalysisRequestR
 Required fields:
 
 - `analysisId`: `str`
+
+<a id="describedetectormodelanalysisresponsetypedef"></a>
 
 ## DescribeDetectorModelAnalysisResponseTypeDef
 
@@ -539,6 +599,8 @@ Required fields:
 - `status`: [AnalysisStatusType](./literals.md#analysisstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedetectormodelrequestrequesttypedef"></a>
 
 ## DescribeDetectorModelRequestRequestTypeDef
 
@@ -554,6 +616,8 @@ Optional fields:
 
 - `detectorModelVersion`: `str`
 
+<a id="describedetectormodelresponsetypedef"></a>
+
 ## DescribeDetectorModelResponseTypeDef
 
 ```python
@@ -566,6 +630,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeinputrequestrequesttypedef"></a>
+
 ## DescribeInputRequestRequestTypeDef
 
 ```python
@@ -575,6 +641,8 @@ from mypy_boto3_iotevents.type_defs import DescribeInputRequestRequestTypeDef
 Required fields:
 
 - `inputName`: `str`
+
+<a id="describeinputresponsetypedef"></a>
 
 ## DescribeInputResponseTypeDef
 
@@ -587,6 +655,8 @@ Required fields:
 - `input`: [InputTypeDef](./type_defs.md#inputtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeloggingoptionsresponsetypedef"></a>
 
 ## DescribeLoggingOptionsResponseTypeDef
 
@@ -601,6 +671,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectordebugoptiontypedef"></a>
+
 ## DetectorDebugOptionTypeDef
 
 ```python
@@ -614,6 +686,8 @@ Required fields:
 Optional fields:
 
 - `keyValue`: `str`
+
+<a id="detectormodelconfigurationtypedef"></a>
 
 ## DetectorModelConfigurationTypeDef
 
@@ -636,6 +710,8 @@ Optional fields:
 - `evaluationMethod`:
   [EvaluationMethodType](./literals.md#evaluationmethodtype)
 
+<a id="detectormodeldefinitiontypedef"></a>
+
 ## DetectorModelDefinitionTypeDef
 
 ```python
@@ -646,6 +722,8 @@ Required fields:
 
 - `states`: `Sequence`\[[StateTypeDef](./type_defs.md#statetypedef)\]
 - `initialStateName`: `str`
+
+<a id="detectormodelsummarytypedef"></a>
 
 ## DetectorModelSummaryTypeDef
 
@@ -659,6 +737,8 @@ Optional fields:
 - `detectorModelDescription`: `str`
 - `creationTime`: `datetime`
 
+<a id="detectormodeltypedef"></a>
+
 ## DetectorModelTypeDef
 
 ```python
@@ -671,6 +751,8 @@ Optional fields:
   [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
 - `detectorModelConfiguration`:
   [DetectorModelConfigurationTypeDef](./type_defs.md#detectormodelconfigurationtypedef)
+
+<a id="detectormodelversionsummarytypedef"></a>
 
 ## DetectorModelVersionSummaryTypeDef
 
@@ -690,6 +772,8 @@ Optional fields:
   [DetectorModelVersionStatusType](./literals.md#detectormodelversionstatustype)
 - `evaluationMethod`:
   [EvaluationMethodType](./literals.md#evaluationmethodtype)
+
+<a id="dynamodbactiontypedef"></a>
 
 ## DynamoDBActionTypeDef
 
@@ -713,6 +797,8 @@ Optional fields:
 - `payloadField`: `str`
 - `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
 
+<a id="dynamodbv2actiontypedef"></a>
+
 ## DynamoDBv2ActionTypeDef
 
 ```python
@@ -726,6 +812,8 @@ Required fields:
 Optional fields:
 
 - `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
+
+<a id="emailconfigurationtypedef"></a>
 
 ## EmailConfigurationTypeDef
 
@@ -742,6 +830,8 @@ Optional fields:
 
 - `content`: [EmailContentTypeDef](./type_defs.md#emailcontenttypedef)
 
+<a id="emailcontenttypedef"></a>
+
 ## EmailContentTypeDef
 
 ```python
@@ -753,6 +843,8 @@ Optional fields:
 - `subject`: `str`
 - `additionalMessage`: `str`
 
+<a id="emailrecipientstypedef"></a>
+
 ## EmailRecipientsTypeDef
 
 ```python
@@ -763,6 +855,8 @@ Optional fields:
 
 - `to`:
   `Sequence`\[[RecipientDetailTypeDef](./type_defs.md#recipientdetailtypedef)\]
+
+<a id="eventtypedef"></a>
 
 ## EventTypeDef
 
@@ -779,6 +873,8 @@ Optional fields:
 - `condition`: `str`
 - `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
+<a id="firehoseactiontypedef"></a>
+
 ## FirehoseActionTypeDef
 
 ```python
@@ -793,6 +889,8 @@ Optional fields:
 
 - `separator`: `str`
 - `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
+
+<a id="getdetectormodelanalysisresultsrequestrequesttypedef"></a>
 
 ## GetDetectorModelAnalysisResultsRequestRequestTypeDef
 
@@ -809,6 +907,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getdetectormodelanalysisresultsresponsetypedef"></a>
+
 ## GetDetectorModelAnalysisResultsResponseTypeDef
 
 ```python
@@ -823,6 +923,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="initializationconfigurationtypedef"></a>
+
 ## InitializationConfigurationTypeDef
 
 ```python
@@ -832,6 +934,8 @@ from mypy_boto3_iotevents.type_defs import InitializationConfigurationTypeDef
 Required fields:
 
 - `disabledOnInitialization`: `bool`
+
+<a id="inputconfigurationtypedef"></a>
 
 ## InputConfigurationTypeDef
 
@@ -851,6 +955,8 @@ Optional fields:
 
 - `inputDescription`: `str`
 
+<a id="inputdefinitiontypedef"></a>
+
 ## InputDefinitionTypeDef
 
 ```python
@@ -861,6 +967,8 @@ Required fields:
 
 - `attributes`:
   `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+
+<a id="inputidentifiertypedef"></a>
 
 ## InputIdentifierTypeDef
 
@@ -874,6 +982,8 @@ Optional fields:
   [IotEventsInputIdentifierTypeDef](./type_defs.md#ioteventsinputidentifiertypedef)
 - `iotSiteWiseInputIdentifier`:
   [IotSiteWiseInputIdentifierTypeDef](./type_defs.md#iotsitewiseinputidentifiertypedef)
+
+<a id="inputsummarytypedef"></a>
 
 ## InputSummaryTypeDef
 
@@ -890,6 +1000,8 @@ Optional fields:
 - `lastUpdateTime`: `datetime`
 - `status`: [InputStatusType](./literals.md#inputstatustype)
 
+<a id="inputtypedef"></a>
+
 ## InputTypeDef
 
 ```python
@@ -902,6 +1014,8 @@ Optional fields:
   [InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)
 - `inputDefinition`:
   [InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef)
+
+<a id="ioteventsactiontypedef"></a>
 
 ## IotEventsActionTypeDef
 
@@ -917,6 +1031,8 @@ Optional fields:
 
 - `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
 
+<a id="ioteventsinputidentifiertypedef"></a>
+
 ## IotEventsInputIdentifierTypeDef
 
 ```python
@@ -926,6 +1042,8 @@ from mypy_boto3_iotevents.type_defs import IotEventsInputIdentifierTypeDef
 Required fields:
 
 - `inputName`: `str`
+
+<a id="iotsitewiseactiontypedef"></a>
 
 ## IotSiteWiseActionTypeDef
 
@@ -942,6 +1060,8 @@ Optional fields:
 - `propertyValue`:
   [AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)
 
+<a id="iotsitewiseassetmodelpropertyidentifiertypedef"></a>
+
 ## IotSiteWiseAssetModelPropertyIdentifierTypeDef
 
 ```python
@@ -953,6 +1073,8 @@ Required fields:
 - `assetModelId`: `str`
 - `propertyId`: `str`
 
+<a id="iotsitewiseinputidentifiertypedef"></a>
+
 ## IotSiteWiseInputIdentifierTypeDef
 
 ```python
@@ -963,6 +1085,8 @@ Optional fields:
 
 - `iotSiteWiseAssetModelPropertyIdentifier`:
   [IotSiteWiseAssetModelPropertyIdentifierTypeDef](./type_defs.md#iotsitewiseassetmodelpropertyidentifiertypedef)
+
+<a id="iottopicpublishactiontypedef"></a>
 
 ## IotTopicPublishActionTypeDef
 
@@ -978,6 +1102,8 @@ Optional fields:
 
 - `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
 
+<a id="lambdaactiontypedef"></a>
+
 ## LambdaActionTypeDef
 
 ```python
@@ -991,6 +1117,8 @@ Required fields:
 Optional fields:
 
 - `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
+
+<a id="listalarmmodelversionsrequestrequesttypedef"></a>
 
 ## ListAlarmModelVersionsRequestRequestTypeDef
 
@@ -1007,6 +1135,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listalarmmodelversionsresponsetypedef"></a>
+
 ## ListAlarmModelVersionsResponseTypeDef
 
 ```python
@@ -1021,6 +1151,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listalarmmodelsrequestrequesttypedef"></a>
+
 ## ListAlarmModelsRequestRequestTypeDef
 
 ```python
@@ -1031,6 +1163,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listalarmmodelsresponsetypedef"></a>
 
 ## ListAlarmModelsResponseTypeDef
 
@@ -1045,6 +1179,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdetectormodelversionsrequestrequesttypedef"></a>
 
 ## ListDetectorModelVersionsRequestRequestTypeDef
 
@@ -1061,6 +1197,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listdetectormodelversionsresponsetypedef"></a>
+
 ## ListDetectorModelVersionsResponseTypeDef
 
 ```python
@@ -1075,6 +1213,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdetectormodelsrequestrequesttypedef"></a>
+
 ## ListDetectorModelsRequestRequestTypeDef
 
 ```python
@@ -1085,6 +1225,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listdetectormodelsresponsetypedef"></a>
 
 ## ListDetectorModelsResponseTypeDef
 
@@ -1099,6 +1241,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listinputroutingsrequestrequesttypedef"></a>
 
 ## ListInputRoutingsRequestRequestTypeDef
 
@@ -1116,6 +1260,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listinputroutingsresponsetypedef"></a>
+
 ## ListInputRoutingsResponseTypeDef
 
 ```python
@@ -1130,6 +1276,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listinputsrequestrequesttypedef"></a>
+
 ## ListInputsRequestRequestTypeDef
 
 ```python
@@ -1140,6 +1288,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listinputsresponsetypedef"></a>
 
 ## ListInputsResponseTypeDef
 
@@ -1155,6 +1305,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1164,6 +1316,8 @@ from mypy_boto3_iotevents.type_defs import ListTagsForResourceRequestRequestType
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1176,6 +1330,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="loggingoptionstypedef"></a>
 
 ## LoggingOptionsTypeDef
 
@@ -1193,6 +1349,8 @@ Optional fields:
 
 - `detectorDebugOptions`:
   `List`\[[DetectorDebugOptionTypeDef](./type_defs.md#detectordebugoptiontypedef)\]
+
+<a id="notificationactiontypedef"></a>
 
 ## NotificationActionTypeDef
 
@@ -1212,6 +1370,8 @@ Optional fields:
 - `emailConfigurations`:
   `Sequence`\[[EmailConfigurationTypeDef](./type_defs.md#emailconfigurationtypedef)\]
 
+<a id="notificationtargetactionstypedef"></a>
+
 ## NotificationTargetActionsTypeDef
 
 ```python
@@ -1221,6 +1381,8 @@ from mypy_boto3_iotevents.type_defs import NotificationTargetActionsTypeDef
 Optional fields:
 
 - `lambdaAction`: [LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef)
+
+<a id="onenterlifecycletypedef"></a>
 
 ## OnEnterLifecycleTypeDef
 
@@ -1232,6 +1394,8 @@ Optional fields:
 
 - `events`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 
+<a id="onexitlifecycletypedef"></a>
+
 ## OnExitLifecycleTypeDef
 
 ```python
@@ -1241,6 +1405,8 @@ from mypy_boto3_iotevents.type_defs import OnExitLifecycleTypeDef
 Optional fields:
 
 - `events`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
+
+<a id="oninputlifecycletypedef"></a>
 
 ## OnInputLifecycleTypeDef
 
@@ -1254,6 +1420,8 @@ Optional fields:
 - `transitionEvents`:
   `Sequence`\[[TransitionEventTypeDef](./type_defs.md#transitioneventtypedef)\]
 
+<a id="payloadtypedef"></a>
+
 ## PayloadTypeDef
 
 ```python
@@ -1264,6 +1432,8 @@ Required fields:
 
 - `contentExpression`: `str`
 - `type`: [PayloadTypeType](./literals.md#payloadtypetype)
+
+<a id="putloggingoptionsrequestrequesttypedef"></a>
 
 ## PutLoggingOptionsRequestRequestTypeDef
 
@@ -1276,6 +1446,8 @@ Required fields:
 - `loggingOptions`:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
 
+<a id="recipientdetailtypedef"></a>
+
 ## RecipientDetailTypeDef
 
 ```python
@@ -1286,6 +1458,8 @@ Optional fields:
 
 - `ssoIdentity`: [SSOIdentityTypeDef](./type_defs.md#ssoidentitytypedef)
 
+<a id="resettimeractiontypedef"></a>
+
 ## ResetTimerActionTypeDef
 
 ```python
@@ -1295,6 +1469,8 @@ from mypy_boto3_iotevents.type_defs import ResetTimerActionTypeDef
 Required fields:
 
 - `timerName`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1310,6 +1486,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="routedresourcetypedef"></a>
+
 ## RoutedResourceTypeDef
 
 ```python
@@ -1320,6 +1498,8 @@ Optional fields:
 
 - `name`: `str`
 - `arn`: `str`
+
+<a id="smsconfigurationtypedef"></a>
 
 ## SMSConfigurationTypeDef
 
@@ -1337,6 +1517,8 @@ Optional fields:
 - `senderId`: `str`
 - `additionalMessage`: `str`
 
+<a id="snstopicpublishactiontypedef"></a>
+
 ## SNSTopicPublishActionTypeDef
 
 ```python
@@ -1351,6 +1533,8 @@ Optional fields:
 
 - `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
 
+<a id="ssoidentitytypedef"></a>
+
 ## SSOIdentityTypeDef
 
 ```python
@@ -1364,6 +1548,8 @@ Required fields:
 Optional fields:
 
 - `userId`: `str`
+
+<a id="settimeractiontypedef"></a>
 
 ## SetTimerActionTypeDef
 
@@ -1380,6 +1566,8 @@ Optional fields:
 - `seconds`: `int`
 - `durationExpression`: `str`
 
+<a id="setvariableactiontypedef"></a>
+
 ## SetVariableActionTypeDef
 
 ```python
@@ -1390,6 +1578,8 @@ Required fields:
 
 - `variableName`: `str`
 - `value`: `str`
+
+<a id="simpleruletypedef"></a>
 
 ## SimpleRuleTypeDef
 
@@ -1403,6 +1593,8 @@ Required fields:
 - `comparisonOperator`:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `threshold`: `str`
+
+<a id="sqsactiontypedef"></a>
 
 ## SqsActionTypeDef
 
@@ -1419,6 +1611,8 @@ Optional fields:
 - `useBase64`: `bool`
 - `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
 
+<a id="startdetectormodelanalysisrequestrequesttypedef"></a>
+
 ## StartDetectorModelAnalysisRequestRequestTypeDef
 
 ```python
@@ -1429,6 +1623,8 @@ Required fields:
 
 - `detectorModelDefinition`:
   [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
+
+<a id="startdetectormodelanalysisresponsetypedef"></a>
 
 ## StartDetectorModelAnalysisResponseTypeDef
 
@@ -1441,6 +1637,8 @@ Required fields:
 - `analysisId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="statetypedef"></a>
 
 ## StateTypeDef
 
@@ -1458,6 +1656,8 @@ Optional fields:
 - `onEnter`: [OnEnterLifecycleTypeDef](./type_defs.md#onenterlifecycletypedef)
 - `onExit`: [OnExitLifecycleTypeDef](./type_defs.md#onexitlifecycletypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1469,6 +1669,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1479,6 +1681,8 @@ Required fields:
 
 - `key`: `str`
 - `value`: `str`
+
+<a id="transitioneventtypedef"></a>
 
 ## TransitionEventTypeDef
 
@@ -1496,6 +1700,8 @@ Optional fields:
 
 - `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1506,6 +1712,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatealarmmodelrequestrequesttypedef"></a>
 
 ## UpdateAlarmModelRequestRequestTypeDef
 
@@ -1530,6 +1738,8 @@ Optional fields:
 - `alarmCapabilities`:
   [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
 
+<a id="updatealarmmodelresponsetypedef"></a>
+
 ## UpdateAlarmModelResponseTypeDef
 
 ```python
@@ -1546,6 +1756,8 @@ Required fields:
   [AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedetectormodelrequestrequesttypedef"></a>
 
 ## UpdateDetectorModelRequestRequestTypeDef
 
@@ -1566,6 +1778,8 @@ Optional fields:
 - `evaluationMethod`:
   [EvaluationMethodType](./literals.md#evaluationmethodtype)
 
+<a id="updatedetectormodelresponsetypedef"></a>
+
 ## UpdateDetectorModelResponseTypeDef
 
 ```python
@@ -1578,6 +1792,8 @@ Required fields:
   [DetectorModelConfigurationTypeDef](./type_defs.md#detectormodelconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateinputrequestrequesttypedef"></a>
 
 ## UpdateInputRequestRequestTypeDef
 
@@ -1594,6 +1810,8 @@ Required fields:
 Optional fields:
 
 - `inputDescription`: `str`
+
+<a id="updateinputresponsetypedef"></a>
 
 ## UpdateInputResponseTypeDef
 

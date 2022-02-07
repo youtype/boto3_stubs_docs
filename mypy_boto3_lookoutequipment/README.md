@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-lookoutequipment-module"></a>
+
 # Type annotations for boto3 LookoutEquipment module
 
 > [Index](..) > LookoutEquipment
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
 type annotations stubs module
-[mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
+[mypy-boto3-lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[lookoutequipment]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[lookoutequipment]'
+
+# standalone installation
 pip install mypy-boto3-lookoutequipment
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-lookoutequipment
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="lookoutequipmentclient"></a>
 
 ## LookoutEquipmentClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_lookoutequipment.client import LookoutEquipmentClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -57,6 +71,8 @@ from mypy_boto3_lookoutequipment.client import LookoutEquipmentClient
 - [untag_resource](./client.md#untag_resource)
 - [update_inference_scheduler](./client.md#update_inference_scheduler)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 LookoutEquipmentClient [exceptions](./client.md#exceptions)
@@ -69,6 +85,8 @@ LookoutEquipmentClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - ThrottlingException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -88,6 +106,8 @@ from mypy_boto3_lookoutequipment.literals import DataUploadFrequencyType, ...
 - [ModelStatusType](./literals.md#modelstatustype)
 - [TargetSamplingRateType](./literals.md#targetsamplingratetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

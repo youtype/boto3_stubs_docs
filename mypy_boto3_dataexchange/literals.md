@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-dataexchange-module"></a>
+
 # Literals for boto3 DataExchange module
 
 > [Index](..) > [DataExchange](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module
-[mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
+[mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 - [Literals for boto3 DataExchange module](#literals-for-boto3-dataexchange-module)
   - [AssetTypeType](#assettypetype)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="assettypetype"></a>
+
 ## AssetTypeType
 
 ```python
@@ -36,6 +40,8 @@ Values:
 - `API_GATEWAY_API`
 - `REDSHIFT_DATA_SHARE`
 - `S3_SNAPSHOT`
+
+<a id="codetype"></a>
 
 ## CodeType
 
@@ -53,6 +59,8 @@ Values:
 - `SERVICE_QUOTA_EXCEEDED_EXCEPTION`
 - `VALIDATION_EXCEPTION`
 
+<a id="joberrorlimitnametype"></a>
+
 ## JobErrorLimitNameType
 
 ```python
@@ -64,6 +72,8 @@ Values:
 - `Amazon Redshift datashare assets per revision`
 - `Asset size in GB`
 - `Assets per revision`
+
+<a id="joberrorresourcetypestype"></a>
 
 ## JobErrorResourceTypesType
 
@@ -77,6 +87,8 @@ Values:
 - `DATA_SET`
 - `REVISION`
 
+<a id="listdatasetrevisionspaginatorname"></a>
+
 ## ListDataSetRevisionsPaginatorName
 
 ```python
@@ -86,6 +98,8 @@ from mypy_boto3_dataexchange.literals import ListDataSetRevisionsPaginatorName
 Values:
 
 - `list_data_set_revisions`
+
+<a id="listdatasetspaginatorname"></a>
 
 ## ListDataSetsPaginatorName
 
@@ -97,6 +111,8 @@ Values:
 
 - `list_data_sets`
 
+<a id="listeventactionspaginatorname"></a>
+
 ## ListEventActionsPaginatorName
 
 ```python
@@ -106,6 +122,8 @@ from mypy_boto3_dataexchange.literals import ListEventActionsPaginatorName
 Values:
 
 - `list_event_actions`
+
+<a id="listjobspaginatorname"></a>
 
 ## ListJobsPaginatorName
 
@@ -117,6 +135,8 @@ Values:
 
 - `list_jobs`
 
+<a id="listrevisionassetspaginatorname"></a>
+
 ## ListRevisionAssetsPaginatorName
 
 ```python
@@ -126,6 +146,8 @@ from mypy_boto3_dataexchange.literals import ListRevisionAssetsPaginatorName
 Values:
 
 - `list_revision_assets`
+
+<a id="origintype"></a>
 
 ## OriginType
 
@@ -138,6 +160,8 @@ Values:
 - `ENTITLED`
 - `OWNED`
 
+<a id="protocoltypetype"></a>
+
 ## ProtocolTypeType
 
 ```python
@@ -147,6 +171,8 @@ from mypy_boto3_dataexchange.literals import ProtocolTypeType
 Values:
 
 - `REST`
+
+<a id="serversideencryptiontypestype"></a>
 
 ## ServerSideEncryptionTypesType
 
@@ -158,6 +184,8 @@ Values:
 
 - `AES256`
 - `aws:kms`
+
+<a id="statetype"></a>
 
 ## StateType
 
@@ -174,6 +202,8 @@ Values:
 - `TIMED_OUT`
 - `WAITING`
 
+<a id="typetype"></a>
+
 ## TypeType
 
 ```python
@@ -189,6 +219,8 @@ Values:
 - `IMPORT_ASSET_FROM_SIGNED_URL`
 - `IMPORT_ASSETS_FROM_REDSHIFT_DATA_SHARES`
 - `IMPORT_ASSETS_FROM_S3`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -497,6 +529,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

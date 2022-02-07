@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iam-module"></a>
+
 # Type annotations for boto3 IAM module
 
 > [Index](..) > IAM
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
 type annotations stubs module
-[mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
+[mypy-boto3-iam](https://pypi.org/project/mypy-boto3-iam/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iam]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iam]'
+
+# standalone installation
 pip install mypy-boto3-iam
 ```
 
@@ -23,6 +33,8 @@ pip install mypy-boto3-iam
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="iamclient"></a>
+
 ## IAMClient
 
 Type annotations for `boto3.client("iam")` as [IAMClient](./client.md)
@@ -32,6 +44,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iam.client import IAMClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -199,6 +213,8 @@ from mypy_boto3_iam.client import IAMClient
 - [upload_signing_certificate](./client.md#upload_signing_certificate)
 - [upload_ssh_public_key](./client.md#upload_ssh_public_key)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IAMClient [exceptions](./client.md#exceptions)
@@ -232,6 +248,8 @@ IAMClient [exceptions](./client.md#exceptions)
 - UnmodifiableEntityException
 - UnrecognizedPublicKeyEncodingException
 
+<a id="iamserviceresource"></a>
+
 ## IAMServiceResource
 
 Type annotations for `boto3.resource("iam")` as
@@ -242,6 +260,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iam.service_resource import IAMServiceResource
 ```
+
+<a id="collections"></a>
 
 ### Collections
 
@@ -261,6 +281,8 @@ from mypy_boto3_iam.service_resource import ServiceResourceGroupsCollection, ...
 - [ServiceResourceServerCertificatesCollection](./service_resource.md#iamserviceresourceserver_certificates)
 - [ServiceResourceUsersCollection](./service_resource.md#iamserviceresourceusers)
 - [ServiceResourceVirtualMfaDevicesCollection](./service_resource.md#iamserviceresourcevirtual_mfa_devices)
+
+<a id="resources"></a>
 
 ### Resources
 
@@ -294,6 +316,8 @@ from mypy_boto3_iam.service_resource import AccessKey, ...
 - [UserPolicy](./service_resource.md#userpolicy)
 - [VirtualMfaDevice](./service_resource.md#virtualmfadevice)
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -302,7 +326,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import GetAccountAuthorizationDetailsPaginator, ...
+from mypy_boto3_iam.paginator import GetAccountAuthorizationDetailsPaginator, ...
 ```
 
 - [GetAccountAuthorizationDetailsPaginator](./paginators.md#getaccountauthorizationdetailspaginator)
@@ -333,6 +357,8 @@ from mypy_boto3_iam.paginators import GetAccountAuthorizationDetailsPaginator, .
 - [SimulateCustomPolicyPaginator](./paginators.md#simulatecustompolicypaginator)
 - [SimulatePrincipalPolicyPaginator](./paginators.md#simulateprincipalpolicypaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -341,13 +367,15 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.waiters import InstanceProfileExistsWaiter, ...
+from mypy_boto3_iam.waiter import InstanceProfileExistsWaiter, ...
 ```
 
 - [InstanceProfileExistsWaiter](./waiters.md#instanceprofileexistswaiter)
 - [PolicyExistsWaiter](./waiters.md#policyexistswaiter)
 - [RoleExistsWaiter](./waiters.md#roleexistswaiter)
 - [UserExistsWaiter](./waiters.md#userexistswaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -413,6 +441,8 @@ from mypy_boto3_iam.literals import AccessAdvisorUsageGranularityTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

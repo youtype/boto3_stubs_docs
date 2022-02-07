@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-applicationautoscaling-module"></a>
+
 # Paginators for boto3 ApplicationAutoScaling module
 
 > [Index](..) > [ApplicationAutoScaling](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module
-[mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
+[mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 - [Paginators for boto3 ApplicationAutoScaling module](#paginators-for-boto3-applicationautoscaling-module)
   - [DescribeScalableTargetsPaginator](#describescalabletargetspaginator)
   - [DescribeScalingActivitiesPaginator](#describescalingactivitiespaginator)
   - [DescribeScalingPoliciesPaginator](#describescalingpoliciespaginator)
   - [DescribeScheduledActionsPaginator](#describescheduledactionspaginator)
+
+<a id="describescalabletargetspaginator"></a>
 
 ## DescribeScalableTargetsPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_application_autoscaling.paginator import DescribeScalableTargetsPaginator
 
 def get_describe_scalable_targets_paginator() -> DescribeScalableTargetsPaginator:
-    return boto3.client("application-autoscaling").get_paginator("describe_scalable_targets")
+    return Session().client("application-autoscaling").get_paginator("describe_scalable_targets")
 ```
 
 Boto3 documentation:
@@ -43,6 +49,8 @@ Arguments for `DescribeScalableTargetsPaginator.paginate` method:
 `DescribeScalableTargetsPaginator.paginate` returns
 `_PageIterator`\[[DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef)\].
 
+<a id="describescalingactivitiespaginator"></a>
+
 ## DescribeScalingActivitiesPaginator
 
 Type annotations for
@@ -51,10 +59,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_application_autoscaling.paginator import DescribeScalingActivitiesPaginator
 
 def get_describe_scaling_activities_paginator() -> DescribeScalingActivitiesPaginator:
-    return boto3.client("application-autoscaling").get_paginator("describe_scaling_activities")
+    return Session().client("application-autoscaling").get_paginator("describe_scaling_activities")
 ```
 
 Boto3 documentation:
@@ -73,6 +83,8 @@ Arguments for `DescribeScalingActivitiesPaginator.paginate` method:
 `DescribeScalingActivitiesPaginator.paginate` returns
 `_PageIterator`\[[DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef)\].
 
+<a id="describescalingpoliciespaginator"></a>
+
 ## DescribeScalingPoliciesPaginator
 
 Type annotations for
@@ -81,10 +93,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_application_autoscaling.paginator import DescribeScalingPoliciesPaginator
 
 def get_describe_scaling_policies_paginator() -> DescribeScalingPoliciesPaginator:
-    return boto3.client("application-autoscaling").get_paginator("describe_scaling_policies")
+    return Session().client("application-autoscaling").get_paginator("describe_scaling_policies")
 ```
 
 Boto3 documentation:
@@ -104,6 +118,8 @@ Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
 `DescribeScalingPoliciesPaginator.paginate` returns
 `_PageIterator`\[[DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef)\].
 
+<a id="describescheduledactionspaginator"></a>
+
 ## DescribeScheduledActionsPaginator
 
 Type annotations for
@@ -112,10 +128,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_application_autoscaling.paginator import DescribeScheduledActionsPaginator
 
 def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPaginator:
-    return boto3.client("application-autoscaling").get_paginator("describe_scheduled_actions")
+    return Session().client("application-autoscaling").get_paginator("describe_scheduled_actions")
 ```
 
 Boto3 documentation:

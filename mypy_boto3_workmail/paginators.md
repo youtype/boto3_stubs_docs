@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-workmail-module"></a>
+
 # Paginators for boto3 WorkMail module
 
 > [Index](..) > [WorkMail](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
 type annotations stubs module
-[mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
+[mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 - [Paginators for boto3 WorkMail module](#paginators-for-boto3-workmail-module)
   - [ListAliasesPaginator](#listaliasespaginator)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [ListResourcesPaginator](#listresourcespaginator)
   - [ListUsersPaginator](#listuserspaginator)
 
+<a id="listaliasespaginator"></a>
+
 ## ListAliasesPaginator
 
 Type annotations for `boto3.client("workmail").get_paginator("list_aliases")`.
@@ -24,10 +28,12 @@ Type annotations for `boto3.client("workmail").get_paginator("list_aliases")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workmail.paginator import ListAliasesPaginator
 
 def get_list_aliases_paginator() -> ListAliasesPaginator:
-    return boto3.client("workmail").get_paginator("list_aliases")
+    return Session().client("workmail").get_paginator("list_aliases")
 ```
 
 Boto3 documentation:
@@ -43,6 +49,8 @@ Arguments for `ListAliasesPaginator.paginate` method:
 `ListAliasesPaginator.paginate` returns
 `_PageIterator`\[[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)\].
 
+<a id="listgroupmemberspaginator"></a>
+
 ## ListGroupMembersPaginator
 
 Type annotations for
@@ -51,10 +59,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workmail.paginator import ListGroupMembersPaginator
 
 def get_list_group_members_paginator() -> ListGroupMembersPaginator:
-    return boto3.client("workmail").get_paginator("list_group_members")
+    return Session().client("workmail").get_paginator("list_group_members")
 ```
 
 Boto3 documentation:
@@ -70,6 +80,8 @@ Arguments for `ListGroupMembersPaginator.paginate` method:
 `ListGroupMembersPaginator.paginate` returns
 `_PageIterator`\[[ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef)\].
 
+<a id="listgroupspaginator"></a>
+
 ## ListGroupsPaginator
 
 Type annotations for `boto3.client("workmail").get_paginator("list_groups")`.
@@ -77,10 +89,12 @@ Type annotations for `boto3.client("workmail").get_paginator("list_groups")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workmail.paginator import ListGroupsPaginator
 
 def get_list_groups_paginator() -> ListGroupsPaginator:
-    return boto3.client("workmail").get_paginator("list_groups")
+    return Session().client("workmail").get_paginator("list_groups")
 ```
 
 Boto3 documentation:
@@ -95,6 +109,8 @@ Arguments for `ListGroupsPaginator.paginate` method:
 `ListGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
 
+<a id="listmailboxpermissionspaginator"></a>
+
 ## ListMailboxPermissionsPaginator
 
 Type annotations for
@@ -103,10 +119,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workmail.paginator import ListMailboxPermissionsPaginator
 
 def get_list_mailbox_permissions_paginator() -> ListMailboxPermissionsPaginator:
-    return boto3.client("workmail").get_paginator("list_mailbox_permissions")
+    return Session().client("workmail").get_paginator("list_mailbox_permissions")
 ```
 
 Boto3 documentation:
@@ -122,6 +140,8 @@ Arguments for `ListMailboxPermissionsPaginator.paginate` method:
 `ListMailboxPermissionsPaginator.paginate` returns
 `_PageIterator`\[[ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef)\].
 
+<a id="listorganizationspaginator"></a>
+
 ## ListOrganizationsPaginator
 
 Type annotations for
@@ -130,10 +150,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workmail.paginator import ListOrganizationsPaginator
 
 def get_list_organizations_paginator() -> ListOrganizationsPaginator:
-    return boto3.client("workmail").get_paginator("list_organizations")
+    return Session().client("workmail").get_paginator("list_organizations")
 ```
 
 Boto3 documentation:
@@ -147,6 +169,8 @@ Arguments for `ListOrganizationsPaginator.paginate` method:
 `ListOrganizationsPaginator.paginate` returns
 `_PageIterator`\[[ListOrganizationsResponseTypeDef](./type_defs.md#listorganizationsresponsetypedef)\].
 
+<a id="listresourcedelegatespaginator"></a>
+
 ## ListResourceDelegatesPaginator
 
 Type annotations for
@@ -155,10 +179,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workmail.paginator import ListResourceDelegatesPaginator
 
 def get_list_resource_delegates_paginator() -> ListResourceDelegatesPaginator:
-    return boto3.client("workmail").get_paginator("list_resource_delegates")
+    return Session().client("workmail").get_paginator("list_resource_delegates")
 ```
 
 Boto3 documentation:
@@ -174,6 +200,8 @@ Arguments for `ListResourceDelegatesPaginator.paginate` method:
 `ListResourceDelegatesPaginator.paginate` returns
 `_PageIterator`\[[ListResourceDelegatesResponseTypeDef](./type_defs.md#listresourcedelegatesresponsetypedef)\].
 
+<a id="listresourcespaginator"></a>
+
 ## ListResourcesPaginator
 
 Type annotations for
@@ -182,10 +210,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workmail.paginator import ListResourcesPaginator
 
 def get_list_resources_paginator() -> ListResourcesPaginator:
-    return boto3.client("workmail").get_paginator("list_resources")
+    return Session().client("workmail").get_paginator("list_resources")
 ```
 
 Boto3 documentation:
@@ -200,6 +230,8 @@ Arguments for `ListResourcesPaginator.paginate` method:
 `ListResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef)\].
 
+<a id="listuserspaginator"></a>
+
 ## ListUsersPaginator
 
 Type annotations for `boto3.client("workmail").get_paginator("list_users")`.
@@ -207,10 +239,12 @@ Type annotations for `boto3.client("workmail").get_paginator("list_users")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workmail.paginator import ListUsersPaginator
 
 def get_list_users_paginator() -> ListUsersPaginator:
-    return boto3.client("workmail").get_paginator("list_users")
+    return Session().client("workmail").get_paginator("list_users")
 ```
 
 Boto3 documentation:

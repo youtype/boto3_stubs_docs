@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloudwatchlogs-module"></a>
+
 # Typed dictionaries for boto3 CloudWatchLogs module
 
 > [Index](..) > [CloudWatchLogs](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
-[mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
+[mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
 
 - [Typed dictionaries for boto3 CloudWatchLogs module](#typed-dictionaries-for-boto3-cloudwatchlogs-module)
   - [AssociateKmsKeyRequestRequestTypeDef](#associatekmskeyrequestrequesttypedef)
@@ -98,6 +100,8 @@ type annotations stubs module
   - [TestMetricFilterResponseTypeDef](#testmetricfilterresponsetypedef)
   - [UntagLogGroupRequestRequestTypeDef](#untagloggrouprequestrequesttypedef)
 
+<a id="associatekmskeyrequestrequesttypedef"></a>
+
 ## AssociateKmsKeyRequestRequestTypeDef
 
 ```python
@@ -109,6 +113,8 @@ Required fields:
 - `logGroupName`: `str`
 - `kmsKeyId`: `str`
 
+<a id="cancelexporttaskrequestrequesttypedef"></a>
+
 ## CancelExportTaskRequestRequestTypeDef
 
 ```python
@@ -118,6 +124,8 @@ from mypy_boto3_logs.type_defs import CancelExportTaskRequestRequestTypeDef
 Required fields:
 
 - `taskId`: `str`
+
+<a id="createexporttaskrequestrequesttypedef"></a>
 
 ## CreateExportTaskRequestRequestTypeDef
 
@@ -138,6 +146,8 @@ Optional fields:
 - `logStreamNamePrefix`: `str`
 - `destinationPrefix`: `str`
 
+<a id="createexporttaskresponsetypedef"></a>
+
 ## CreateExportTaskResponseTypeDef
 
 ```python
@@ -149,6 +159,8 @@ Required fields:
 - `taskId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createloggrouprequestrequesttypedef"></a>
 
 ## CreateLogGroupRequestRequestTypeDef
 
@@ -165,6 +177,8 @@ Optional fields:
 - `kmsKeyId`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createlogstreamrequestrequesttypedef"></a>
+
 ## CreateLogStreamRequestRequestTypeDef
 
 ```python
@@ -176,6 +190,8 @@ Required fields:
 - `logGroupName`: `str`
 - `logStreamName`: `str`
 
+<a id="deletedestinationrequestrequesttypedef"></a>
+
 ## DeleteDestinationRequestRequestTypeDef
 
 ```python
@@ -186,6 +202,8 @@ Required fields:
 
 - `destinationName`: `str`
 
+<a id="deleteloggrouprequestrequesttypedef"></a>
+
 ## DeleteLogGroupRequestRequestTypeDef
 
 ```python
@@ -195,6 +213,8 @@ from mypy_boto3_logs.type_defs import DeleteLogGroupRequestRequestTypeDef
 Required fields:
 
 - `logGroupName`: `str`
+
+<a id="deletelogstreamrequestrequesttypedef"></a>
 
 ## DeleteLogStreamRequestRequestTypeDef
 
@@ -207,6 +227,8 @@ Required fields:
 - `logGroupName`: `str`
 - `logStreamName`: `str`
 
+<a id="deletemetricfilterrequestrequesttypedef"></a>
+
 ## DeleteMetricFilterRequestRequestTypeDef
 
 ```python
@@ -218,6 +240,8 @@ Required fields:
 - `logGroupName`: `str`
 - `filterName`: `str`
 
+<a id="deletequerydefinitionrequestrequesttypedef"></a>
+
 ## DeleteQueryDefinitionRequestRequestTypeDef
 
 ```python
@@ -227,6 +251,8 @@ from mypy_boto3_logs.type_defs import DeleteQueryDefinitionRequestRequestTypeDef
 Required fields:
 
 - `queryDefinitionId`: `str`
+
+<a id="deletequerydefinitionresponsetypedef"></a>
 
 ## DeleteQueryDefinitionResponseTypeDef
 
@@ -240,6 +266,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteresourcepolicyrequestrequesttypedef"></a>
+
 ## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -250,6 +278,8 @@ Optional fields:
 
 - `policyName`: `str`
 
+<a id="deleteretentionpolicyrequestrequesttypedef"></a>
+
 ## DeleteRetentionPolicyRequestRequestTypeDef
 
 ```python
@@ -259,6 +289,8 @@ from mypy_boto3_logs.type_defs import DeleteRetentionPolicyRequestRequestTypeDef
 Required fields:
 
 - `logGroupName`: `str`
+
+<a id="deletesubscriptionfilterrequestrequesttypedef"></a>
 
 ## DeleteSubscriptionFilterRequestRequestTypeDef
 
@@ -271,6 +303,8 @@ Required fields:
 - `logGroupName`: `str`
 - `filterName`: `str`
 
+<a id="describedestinationsrequestrequesttypedef"></a>
+
 ## DescribeDestinationsRequestRequestTypeDef
 
 ```python
@@ -282,6 +316,8 @@ Optional fields:
 - `DestinationNamePrefix`: `str`
 - `nextToken`: `str`
 - `limit`: `int`
+
+<a id="describedestinationsresponsetypedef"></a>
 
 ## DescribeDestinationsResponseTypeDef
 
@@ -297,6 +333,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeexporttasksrequestrequesttypedef"></a>
+
 ## DescribeExportTasksRequestRequestTypeDef
 
 ```python
@@ -310,6 +348,8 @@ Optional fields:
   [ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype)
 - `nextToken`: `str`
 - `limit`: `int`
+
+<a id="describeexporttasksresponsetypedef"></a>
 
 ## DescribeExportTasksResponseTypeDef
 
@@ -325,6 +365,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeloggroupsrequestrequesttypedef"></a>
+
 ## DescribeLogGroupsRequestRequestTypeDef
 
 ```python
@@ -336,6 +378,8 @@ Optional fields:
 - `logGroupNamePrefix`: `str`
 - `nextToken`: `str`
 - `limit`: `int`
+
+<a id="describeloggroupsresponsetypedef"></a>
 
 ## DescribeLogGroupsResponseTypeDef
 
@@ -349,6 +393,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describelogstreamsrequestrequesttypedef"></a>
 
 ## DescribeLogStreamsRequestRequestTypeDef
 
@@ -368,6 +414,8 @@ Optional fields:
 - `nextToken`: `str`
 - `limit`: `int`
 
+<a id="describelogstreamsresponsetypedef"></a>
+
 ## DescribeLogStreamsResponseTypeDef
 
 ```python
@@ -380,6 +428,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemetricfiltersrequestrequesttypedef"></a>
 
 ## DescribeMetricFiltersRequestRequestTypeDef
 
@@ -396,6 +446,8 @@ Optional fields:
 - `metricName`: `str`
 - `metricNamespace`: `str`
 
+<a id="describemetricfiltersresponsetypedef"></a>
+
 ## DescribeMetricFiltersResponseTypeDef
 
 ```python
@@ -410,6 +462,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describequeriesrequestrequesttypedef"></a>
+
 ## DescribeQueriesRequestRequestTypeDef
 
 ```python
@@ -422,6 +476,8 @@ Optional fields:
 - `status`: [QueryStatusType](./literals.md#querystatustype)
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describequeriesresponsetypedef"></a>
 
 ## DescribeQueriesResponseTypeDef
 
@@ -436,6 +492,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describequerydefinitionsrequestrequesttypedef"></a>
+
 ## DescribeQueryDefinitionsRequestRequestTypeDef
 
 ```python
@@ -447,6 +505,8 @@ Optional fields:
 - `queryDefinitionNamePrefix`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describequerydefinitionsresponsetypedef"></a>
 
 ## DescribeQueryDefinitionsResponseTypeDef
 
@@ -462,6 +522,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeresourcepoliciesrequestrequesttypedef"></a>
+
 ## DescribeResourcePoliciesRequestRequestTypeDef
 
 ```python
@@ -472,6 +534,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `limit`: `int`
+
+<a id="describeresourcepoliciesresponsetypedef"></a>
 
 ## DescribeResourcePoliciesResponseTypeDef
 
@@ -486,6 +550,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describesubscriptionfiltersrequestrequesttypedef"></a>
 
 ## DescribeSubscriptionFiltersRequestRequestTypeDef
 
@@ -503,6 +569,8 @@ Optional fields:
 - `nextToken`: `str`
 - `limit`: `int`
 
+<a id="describesubscriptionfiltersresponsetypedef"></a>
+
 ## DescribeSubscriptionFiltersResponseTypeDef
 
 ```python
@@ -516,6 +584,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="destinationtypedef"></a>
 
 ## DestinationTypeDef
 
@@ -532,6 +602,8 @@ Optional fields:
 - `arn`: `str`
 - `creationTime`: `int`
 
+<a id="disassociatekmskeyrequestrequesttypedef"></a>
+
 ## DisassociateKmsKeyRequestRequestTypeDef
 
 ```python
@@ -541,6 +613,8 @@ from mypy_boto3_logs.type_defs import DisassociateKmsKeyRequestRequestTypeDef
 Required fields:
 
 - `logGroupName`: `str`
+
+<a id="exporttaskexecutioninfotypedef"></a>
 
 ## ExportTaskExecutionInfoTypeDef
 
@@ -553,6 +627,8 @@ Optional fields:
 - `creationTime`: `int`
 - `completionTime`: `int`
 
+<a id="exporttaskstatustypedef"></a>
+
 ## ExportTaskStatusTypeDef
 
 ```python
@@ -563,6 +639,8 @@ Optional fields:
 
 - `code`: [ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype)
 - `message`: `str`
+
+<a id="exporttasktypedef"></a>
 
 ## ExportTaskTypeDef
 
@@ -582,6 +660,8 @@ Optional fields:
 - `status`: [ExportTaskStatusTypeDef](./type_defs.md#exporttaskstatustypedef)
 - `executionInfo`:
   [ExportTaskExecutionInfoTypeDef](./type_defs.md#exporttaskexecutioninfotypedef)
+
+<a id="filterlogeventsrequestrequesttypedef"></a>
 
 ## FilterLogEventsRequestRequestTypeDef
 
@@ -604,6 +684,8 @@ Optional fields:
 - `limit`: `int`
 - `interleaved`: `bool`
 
+<a id="filterlogeventsresponsetypedef"></a>
+
 ## FilterLogEventsResponseTypeDef
 
 ```python
@@ -620,6 +702,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="filteredlogeventtypedef"></a>
+
 ## FilteredLogEventTypeDef
 
 ```python
@@ -633,6 +717,8 @@ Optional fields:
 - `message`: `str`
 - `ingestionTime`: `int`
 - `eventId`: `str`
+
+<a id="getlogeventsrequestrequesttypedef"></a>
 
 ## GetLogEventsRequestRequestTypeDef
 
@@ -653,6 +739,8 @@ Optional fields:
 - `limit`: `int`
 - `startFromHead`: `bool`
 
+<a id="getlogeventsresponsetypedef"></a>
+
 ## GetLogEventsResponseTypeDef
 
 ```python
@@ -668,6 +756,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getloggroupfieldsrequestrequesttypedef"></a>
+
 ## GetLogGroupFieldsRequestRequestTypeDef
 
 ```python
@@ -682,6 +772,8 @@ Optional fields:
 
 - `time`: `int`
 
+<a id="getloggroupfieldsresponsetypedef"></a>
+
 ## GetLogGroupFieldsResponseTypeDef
 
 ```python
@@ -695,6 +787,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlogrecordrequestrequesttypedef"></a>
+
 ## GetLogRecordRequestRequestTypeDef
 
 ```python
@@ -704,6 +798,8 @@ from mypy_boto3_logs.type_defs import GetLogRecordRequestRequestTypeDef
 Required fields:
 
 - `logRecordPointer`: `str`
+
+<a id="getlogrecordresponsetypedef"></a>
 
 ## GetLogRecordResponseTypeDef
 
@@ -717,6 +813,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getqueryresultsrequestrequesttypedef"></a>
+
 ## GetQueryResultsRequestRequestTypeDef
 
 ```python
@@ -726,6 +824,8 @@ from mypy_boto3_logs.type_defs import GetQueryResultsRequestRequestTypeDef
 Required fields:
 
 - `queryId`: `str`
+
+<a id="getqueryresultsresponsetypedef"></a>
 
 ## GetQueryResultsResponseTypeDef
 
@@ -742,6 +842,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="inputlogeventtypedef"></a>
+
 ## InputLogEventTypeDef
 
 ```python
@@ -753,6 +855,8 @@ Required fields:
 - `timestamp`: `int`
 - `message`: `str`
 
+<a id="listtagsloggrouprequestrequesttypedef"></a>
+
 ## ListTagsLogGroupRequestRequestTypeDef
 
 ```python
@@ -762,6 +866,8 @@ from mypy_boto3_logs.type_defs import ListTagsLogGroupRequestRequestTypeDef
 Required fields:
 
 - `logGroupName`: `str`
+
+<a id="listtagsloggroupresponsetypedef"></a>
 
 ## ListTagsLogGroupResponseTypeDef
 
@@ -775,6 +881,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="loggroupfieldtypedef"></a>
+
 ## LogGroupFieldTypeDef
 
 ```python
@@ -785,6 +893,8 @@ Optional fields:
 
 - `name`: `str`
 - `percent`: `int`
+
+<a id="loggrouptypedef"></a>
 
 ## LogGroupTypeDef
 
@@ -801,6 +911,8 @@ Optional fields:
 - `arn`: `str`
 - `storedBytes`: `int`
 - `kmsKeyId`: `str`
+
+<a id="logstreamtypedef"></a>
 
 ## LogStreamTypeDef
 
@@ -819,6 +931,8 @@ Optional fields:
 - `arn`: `str`
 - `storedBytes`: `int`
 
+<a id="metricfiltermatchrecordtypedef"></a>
+
 ## MetricFilterMatchRecordTypeDef
 
 ```python
@@ -830,6 +944,8 @@ Optional fields:
 - `eventNumber`: `int`
 - `eventMessage`: `str`
 - `extractedValues`: `Dict`\[`str`, `str`\]
+
+<a id="metricfiltertypedef"></a>
 
 ## MetricFilterTypeDef
 
@@ -845,6 +961,8 @@ Optional fields:
   `List`\[[MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef)\]
 - `creationTime`: `int`
 - `logGroupName`: `str`
+
+<a id="metrictransformationtypedef"></a>
 
 ## MetricTransformationTypeDef
 
@@ -864,6 +982,8 @@ Optional fields:
 - `dimensions`: `Dict`\[`str`, `str`\]
 - `unit`: [StandardUnitType](./literals.md#standardunittype)
 
+<a id="outputlogeventtypedef"></a>
+
 ## OutputLogEventTypeDef
 
 ```python
@@ -876,6 +996,8 @@ Optional fields:
 - `message`: `str`
 - `ingestionTime`: `int`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -887,6 +1009,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putdestinationpolicyrequestrequesttypedef"></a>
 
 ## PutDestinationPolicyRequestRequestTypeDef
 
@@ -903,6 +1027,8 @@ Optional fields:
 
 - `forceUpdate`: `bool`
 
+<a id="putdestinationrequestrequesttypedef"></a>
+
 ## PutDestinationRequestRequestTypeDef
 
 ```python
@@ -915,6 +1041,8 @@ Required fields:
 - `targetArn`: `str`
 - `roleArn`: `str`
 
+<a id="putdestinationresponsetypedef"></a>
+
 ## PutDestinationResponseTypeDef
 
 ```python
@@ -926,6 +1054,8 @@ Required fields:
 - `destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putlogeventsrequestrequesttypedef"></a>
 
 ## PutLogEventsRequestRequestTypeDef
 
@@ -944,6 +1074,8 @@ Optional fields:
 
 - `sequenceToken`: `str`
 
+<a id="putlogeventsresponsetypedef"></a>
+
 ## PutLogEventsResponseTypeDef
 
 ```python
@@ -958,6 +1090,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putmetricfilterrequestrequesttypedef"></a>
+
 ## PutMetricFilterRequestRequestTypeDef
 
 ```python
@@ -971,6 +1105,8 @@ Required fields:
 - `filterPattern`: `str`
 - `metricTransformations`:
   `Sequence`\[[MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef)\]
+
+<a id="putquerydefinitionrequestrequesttypedef"></a>
 
 ## PutQueryDefinitionRequestRequestTypeDef
 
@@ -988,6 +1124,8 @@ Optional fields:
 - `queryDefinitionId`: `str`
 - `logGroupNames`: `Sequence`\[`str`\]
 
+<a id="putquerydefinitionresponsetypedef"></a>
+
 ## PutQueryDefinitionResponseTypeDef
 
 ```python
@@ -1000,6 +1138,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putresourcepolicyrequestrequesttypedef"></a>
+
 ## PutResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -1010,6 +1150,8 @@ Optional fields:
 
 - `policyName`: `str`
 - `policyDocument`: `str`
+
+<a id="putresourcepolicyresponsetypedef"></a>
 
 ## PutResourcePolicyResponseTypeDef
 
@@ -1024,6 +1166,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putretentionpolicyrequestrequesttypedef"></a>
+
 ## PutRetentionPolicyRequestRequestTypeDef
 
 ```python
@@ -1034,6 +1178,8 @@ Required fields:
 
 - `logGroupName`: `str`
 - `retentionInDays`: `int`
+
+<a id="putsubscriptionfilterrequestrequesttypedef"></a>
 
 ## PutSubscriptionFilterRequestRequestTypeDef
 
@@ -1053,6 +1199,8 @@ Optional fields:
 - `roleArn`: `str`
 - `distribution`: [DistributionType](./literals.md#distributiontype)
 
+<a id="querydefinitiontypedef"></a>
+
 ## QueryDefinitionTypeDef
 
 ```python
@@ -1066,6 +1214,8 @@ Optional fields:
 - `queryString`: `str`
 - `lastModified`: `int`
 - `logGroupNames`: `List`\[`str`\]
+
+<a id="queryinfotypedef"></a>
 
 ## QueryInfoTypeDef
 
@@ -1081,6 +1231,8 @@ Optional fields:
 - `createTime`: `int`
 - `logGroupName`: `str`
 
+<a id="querystatisticstypedef"></a>
+
 ## QueryStatisticsTypeDef
 
 ```python
@@ -1092,6 +1244,8 @@ Optional fields:
 - `recordsMatched`: `float`
 - `recordsScanned`: `float`
 - `bytesScanned`: `float`
+
+<a id="rejectedlogeventsinfotypedef"></a>
 
 ## RejectedLogEventsInfoTypeDef
 
@@ -1105,6 +1259,8 @@ Optional fields:
 - `tooOldLogEventEndIndex`: `int`
 - `expiredLogEventEndIndex`: `int`
 
+<a id="resourcepolicytypedef"></a>
+
 ## ResourcePolicyTypeDef
 
 ```python
@@ -1116,6 +1272,8 @@ Optional fields:
 - `policyName`: `str`
 - `policyDocument`: `str`
 - `lastUpdatedTime`: `int`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1131,6 +1289,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="resultfieldtypedef"></a>
+
 ## ResultFieldTypeDef
 
 ```python
@@ -1142,6 +1302,8 @@ Optional fields:
 - `field`: `str`
 - `value`: `str`
 
+<a id="searchedlogstreamtypedef"></a>
+
 ## SearchedLogStreamTypeDef
 
 ```python
@@ -1152,6 +1314,8 @@ Optional fields:
 
 - `logStreamName`: `str`
 - `searchedCompletely`: `bool`
+
+<a id="startqueryrequestrequesttypedef"></a>
 
 ## StartQueryRequestRequestTypeDef
 
@@ -1171,6 +1335,8 @@ Optional fields:
 - `logGroupNames`: `Sequence`\[`str`\]
 - `limit`: `int`
 
+<a id="startqueryresponsetypedef"></a>
+
 ## StartQueryResponseTypeDef
 
 ```python
@@ -1183,6 +1349,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopqueryrequestrequesttypedef"></a>
+
 ## StopQueryRequestRequestTypeDef
 
 ```python
@@ -1192,6 +1360,8 @@ from mypy_boto3_logs.type_defs import StopQueryRequestRequestTypeDef
 Required fields:
 
 - `queryId`: `str`
+
+<a id="stopqueryresponsetypedef"></a>
 
 ## StopQueryResponseTypeDef
 
@@ -1204,6 +1374,8 @@ Required fields:
 - `success`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="subscriptionfiltertypedef"></a>
 
 ## SubscriptionFilterTypeDef
 
@@ -1221,6 +1393,8 @@ Optional fields:
 - `distribution`: [DistributionType](./literals.md#distributiontype)
 - `creationTime`: `int`
 
+<a id="tagloggrouprequestrequesttypedef"></a>
+
 ## TagLogGroupRequestRequestTypeDef
 
 ```python
@@ -1232,6 +1406,8 @@ Required fields:
 - `logGroupName`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="testmetricfilterrequestrequesttypedef"></a>
+
 ## TestMetricFilterRequestRequestTypeDef
 
 ```python
@@ -1242,6 +1418,8 @@ Required fields:
 
 - `filterPattern`: `str`
 - `logEventMessages`: `Sequence`\[`str`\]
+
+<a id="testmetricfilterresponsetypedef"></a>
 
 ## TestMetricFilterResponseTypeDef
 
@@ -1255,6 +1433,8 @@ Required fields:
   `List`\[[MetricFilterMatchRecordTypeDef](./type_defs.md#metricfiltermatchrecordtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="untagloggrouprequestrequesttypedef"></a>
 
 ## UntagLogGroupRequestRequestTypeDef
 

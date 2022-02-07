@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-polly-module"></a>
+
 # Type annotations for boto3 Polly module
 
 > [Index](..) > Polly
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
 type annotations stubs module
-[mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
+[mypy-boto3-polly](https://pypi.org/project/mypy-boto3-polly/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[polly]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[polly]'
+
+# standalone installation
 pip install mypy-boto3-polly
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-polly
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="pollyclient"></a>
+
 ## PollyClient
 
 Type annotations for `boto3.client("polly")` as [PollyClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_polly.client import PollyClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -44,6 +58,8 @@ from mypy_boto3_polly.client import PollyClient
 - [put_lexicon](./client.md#put_lexicon)
 - [start_speech_synthesis_task](./client.md#start_speech_synthesis_task)
 - [synthesize_speech](./client.md#synthesize_speech)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -72,6 +88,8 @@ PollyClient [exceptions](./client.md#exceptions)
 - UnsupportedPlsAlphabetException
 - UnsupportedPlsLanguageException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -80,12 +98,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_polly.paginators import DescribeVoicesPaginator, ...
+from mypy_boto3_polly.paginator import DescribeVoicesPaginator, ...
 ```
 
 - [DescribeVoicesPaginator](./paginators.md#describevoicespaginator)
 - [ListLexiconsPaginator](./paginators.md#listlexiconspaginator)
 - [ListSpeechSynthesisTasksPaginator](./paginators.md#listspeechsynthesistaskspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -110,6 +130,8 @@ from mypy_boto3_polly.literals import DescribeVoicesPaginatorName, ...
 - [VoiceIdType](./literals.md#voiceidtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

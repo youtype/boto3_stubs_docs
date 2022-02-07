@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-forecastservice-module"></a>
+
 # Paginators for boto3 ForecastService module
 
 > [Index](..) > [ForecastService](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
 type annotations stubs module
-[mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
+[mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 - [Paginators for boto3 ForecastService module](#paginators-for-boto3-forecastservice-module)
   - [ListDatasetGroupsPaginator](#listdatasetgroupspaginator)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [ListPredictorBacktestExportJobsPaginator](#listpredictorbacktestexportjobspaginator)
   - [ListPredictorsPaginator](#listpredictorspaginator)
 
+<a id="listdatasetgroupspaginator"></a>
+
 ## ListDatasetGroupsPaginator
 
 Type annotations for
@@ -24,10 +28,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_forecast.paginator import ListDatasetGroupsPaginator
 
 def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
-    return boto3.client("forecast").get_paginator("list_dataset_groups")
+    return Session().client("forecast").get_paginator("list_dataset_groups")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `ListDatasetGroupsPaginator.paginate` method:
 `ListDatasetGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef)\].
 
+<a id="listdatasetimportjobspaginator"></a>
+
 ## ListDatasetImportJobsPaginator
 
 Type annotations for
@@ -49,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_forecast.paginator import ListDatasetImportJobsPaginator
 
 def get_list_dataset_import_jobs_paginator() -> ListDatasetImportJobsPaginator:
-    return boto3.client("forecast").get_paginator("list_dataset_import_jobs")
+    return Session().client("forecast").get_paginator("list_dataset_import_jobs")
 ```
 
 Boto3 documentation:
@@ -67,6 +77,8 @@ Arguments for `ListDatasetImportJobsPaginator.paginate` method:
 `ListDatasetImportJobsPaginator.paginate` returns
 `_PageIterator`\[[ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef)\].
 
+<a id="listdatasetspaginator"></a>
+
 ## ListDatasetsPaginator
 
 Type annotations for `boto3.client("forecast").get_paginator("list_datasets")`.
@@ -74,10 +86,12 @@ Type annotations for `boto3.client("forecast").get_paginator("list_datasets")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_forecast.paginator import ListDatasetsPaginator
 
 def get_list_datasets_paginator() -> ListDatasetsPaginator:
-    return boto3.client("forecast").get_paginator("list_datasets")
+    return Session().client("forecast").get_paginator("list_datasets")
 ```
 
 Boto3 documentation:
@@ -91,6 +105,8 @@ Arguments for `ListDatasetsPaginator.paginate` method:
 `ListDatasetsPaginator.paginate` returns
 `_PageIterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
 
+<a id="listforecastexportjobspaginator"></a>
+
 ## ListForecastExportJobsPaginator
 
 Type annotations for
@@ -99,10 +115,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_forecast.paginator import ListForecastExportJobsPaginator
 
 def get_list_forecast_export_jobs_paginator() -> ListForecastExportJobsPaginator:
-    return boto3.client("forecast").get_paginator("list_forecast_export_jobs")
+    return Session().client("forecast").get_paginator("list_forecast_export_jobs")
 ```
 
 Boto3 documentation:
@@ -117,6 +135,8 @@ Arguments for `ListForecastExportJobsPaginator.paginate` method:
 `ListForecastExportJobsPaginator.paginate` returns
 `_PageIterator`\[[ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef)\].
 
+<a id="listforecastspaginator"></a>
+
 ## ListForecastsPaginator
 
 Type annotations for
@@ -125,10 +145,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_forecast.paginator import ListForecastsPaginator
 
 def get_list_forecasts_paginator() -> ListForecastsPaginator:
-    return boto3.client("forecast").get_paginator("list_forecasts")
+    return Session().client("forecast").get_paginator("list_forecasts")
 ```
 
 Boto3 documentation:
@@ -143,6 +165,8 @@ Arguments for `ListForecastsPaginator.paginate` method:
 `ListForecastsPaginator.paginate` returns
 `_PageIterator`\[[ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef)\].
 
+<a id="listpredictorbacktestexportjobspaginator"></a>
+
 ## ListPredictorBacktestExportJobsPaginator
 
 Type annotations for
@@ -151,10 +175,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_forecast.paginator import ListPredictorBacktestExportJobsPaginator
 
 def get_list_predictor_backtest_export_jobs_paginator() -> ListPredictorBacktestExportJobsPaginator:
-    return boto3.client("forecast").get_paginator("list_predictor_backtest_export_jobs")
+    return Session().client("forecast").get_paginator("list_predictor_backtest_export_jobs")
 ```
 
 Boto3 documentation:
@@ -169,6 +195,8 @@ Arguments for `ListPredictorBacktestExportJobsPaginator.paginate` method:
 `ListPredictorBacktestExportJobsPaginator.paginate` returns
 `_PageIterator`\[[ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef)\].
 
+<a id="listpredictorspaginator"></a>
+
 ## ListPredictorsPaginator
 
 Type annotations for
@@ -177,10 +205,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_forecast.paginator import ListPredictorsPaginator
 
 def get_list_predictors_paginator() -> ListPredictorsPaginator:
-    return boto3.client("forecast").get_paginator("list_predictors")
+    return Session().client("forecast").get_paginator("list_predictors")
 ```
 
 Boto3 documentation:

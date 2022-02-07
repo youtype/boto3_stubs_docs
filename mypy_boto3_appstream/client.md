@@ -1,3 +1,5 @@
+<a id="appstreamclient-for-boto3-appstream-module"></a>
+
 # AppStreamClient for boto3 AppStream module
 
 > [Index](..) > [AppStream](.) > AppStreamClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
 type annotations stubs module
-[mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
+[mypy-boto3-appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
 - [AppStreamClient for boto3 AppStream module](#appstreamclient-for-boto3-appstream-module)
   - [AppStreamClient](#appstreamclient)
@@ -82,6 +84,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="appstreamclient"></a>
+
 ## AppStreamClient
 
 Type annotations for `boto3.client("appstream")`
@@ -89,14 +93,17 @@ Type annotations for `boto3.client("appstream")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_appstream.client import AppStreamClient
 
 def get_appstream_client() -> AppStreamClient:
-    return boto3.client("appstream")
+    return Session().client("appstream")
 ```
 
 Boto3 documentation:
 [AppStream.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -128,7 +135,11 @@ Exceptions:
 - `Exceptions.ResourceNotAvailableException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -140,6 +151,8 @@ Boto3 documentation:
 [AppStream.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_application_fleet"></a>
 
 ### associate_application_fleet
 
@@ -162,6 +175,8 @@ Keyword-only arguments:
 Returns
 [AssociateApplicationFleetResultTypeDef](./type_defs.md#associateapplicationfleetresulttypedef).
 
+<a id="associate_application_to_entitlement"></a>
+
 ### associate_application_to_entitlement
 
 Associates an application to entitle.
@@ -183,6 +198,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_fleet"></a>
+
 ### associate_fleet
 
 Associates the specified fleet with the specified stack.
@@ -201,6 +218,8 @@ Keyword-only arguments:
 - `StackName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="batch_associate_user_stack"></a>
 
 ### batch_associate_user_stack
 
@@ -224,6 +243,8 @@ Keyword-only arguments:
 Returns
 [BatchAssociateUserStackResultTypeDef](./type_defs.md#batchassociateuserstackresulttypedef).
 
+<a id="batch_disassociate_user_stack"></a>
+
 ### batch_disassociate_user_stack
 
 Disassociates the specified users from the specified stacks.
@@ -246,6 +267,8 @@ Keyword-only arguments:
 Returns
 [BatchDisassociateUserStackResultTypeDef](./type_defs.md#batchdisassociateuserstackresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -260,6 +283,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="copy_image"></a>
 
 ### copy_image
 
@@ -282,6 +307,8 @@ Keyword-only arguments:
 - `DestinationImageDescription`: `str`
 
 Returns [CopyImageResponseTypeDef](./type_defs.md#copyimageresponsetypedef).
+
+<a id="create_app_block"></a>
 
 ### create_app_block
 
@@ -308,6 +335,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAppBlockResultTypeDef](./type_defs.md#createappblockresulttypedef).
+
+<a id="create_application"></a>
 
 ### create_application
 
@@ -340,6 +369,8 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResultTypeDef](./type_defs.md#createapplicationresulttypedef).
 
+<a id="create_directory_config"></a>
+
 ### create_directory_config
 
 Creates a Directory Config object in AppStream 2.0.
@@ -362,6 +393,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDirectoryConfigResultTypeDef](./type_defs.md#createdirectoryconfigresulttypedef).
+
+<a id="create_entitlement"></a>
 
 ### create_entitlement
 
@@ -388,6 +421,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEntitlementResultTypeDef](./type_defs.md#createentitlementresulttypedef).
+
+<a id="create_fleet"></a>
 
 ### create_fleet
 
@@ -428,6 +463,8 @@ Keyword-only arguments:
 
 Returns [CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef).
 
+<a id="create_image_builder"></a>
+
 ### create_image_builder
 
 Creates an image builder.
@@ -461,6 +498,8 @@ Keyword-only arguments:
 Returns
 [CreateImageBuilderResultTypeDef](./type_defs.md#createimagebuilderresulttypedef).
 
+<a id="create_image_builder_streaming_url"></a>
+
 ### create_image_builder_streaming_url
 
 Creates a URL to start an image builder streaming session.
@@ -481,6 +520,8 @@ Keyword-only arguments:
 
 Returns
 [CreateImageBuilderStreamingURLResultTypeDef](./type_defs.md#createimagebuilderstreamingurlresulttypedef).
+
+<a id="create_stack"></a>
 
 ### create_stack
 
@@ -514,6 +555,8 @@ Keyword-only arguments:
 
 Returns [CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef).
 
+<a id="create_streaming_url"></a>
+
 ### create_streaming_url
 
 Creates a temporary URL to start an AppStream 2.0 streaming session for the
@@ -538,6 +581,8 @@ Keyword-only arguments:
 
 Returns
 [CreateStreamingURLResultTypeDef](./type_defs.md#createstreamingurlresulttypedef).
+
+<a id="create_updated_image"></a>
 
 ### create_updated_image
 
@@ -564,6 +609,8 @@ Keyword-only arguments:
 Returns
 [CreateUpdatedImageResultTypeDef](./type_defs.md#createupdatedimageresulttypedef).
 
+<a id="create_usage_report_subscription"></a>
+
 ### create_usage_report_subscription
 
 Creates a usage report subscription.
@@ -576,6 +623,8 @@ Boto3 documentation:
 
 Returns
 [CreateUsageReportSubscriptionResultTypeDef](./type_defs.md#createusagereportsubscriptionresulttypedef).
+
+<a id="create_user"></a>
 
 ### create_user
 
@@ -600,6 +649,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_app_block"></a>
+
 ### delete_app_block
 
 Deletes an app block.
@@ -618,6 +669,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_application"></a>
+
 ### delete_application
 
 Deletes an application.
@@ -635,6 +688,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_directory_config"></a>
 
 ### delete_directory_config
 
@@ -655,6 +710,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_entitlement"></a>
+
 ### delete_entitlement
 
 Deletes the specified entitlement.
@@ -674,6 +731,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_fleet"></a>
+
 ### delete_fleet
 
 Deletes the specified fleet.
@@ -691,6 +750,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_image"></a>
 
 ### delete_image
 
@@ -710,6 +771,8 @@ Keyword-only arguments:
 
 Returns [DeleteImageResultTypeDef](./type_defs.md#deleteimageresulttypedef).
 
+<a id="delete_image_builder"></a>
+
 ### delete_image_builder
 
 Deletes the specified image builder and releases the capacity.
@@ -728,6 +791,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteImageBuilderResultTypeDef](./type_defs.md#deleteimagebuilderresulttypedef).
+
+<a id="delete_image_permissions"></a>
 
 ### delete_image_permissions
 
@@ -749,6 +814,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_stack"></a>
+
 ### delete_stack
 
 Deletes the specified stack.
@@ -767,6 +834,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_usage_report_subscription"></a>
+
 ### delete_usage_report_subscription
 
 Disables usage report generation.
@@ -778,6 +847,8 @@ Boto3 documentation:
 [AppStream.Client.delete_usage_report_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_usage_report_subscription)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_user"></a>
 
 ### delete_user
 
@@ -799,6 +870,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_app_blocks"></a>
+
 ### describe_app_blocks
 
 Retrieves a list that describes one or more app blocks.
@@ -819,6 +892,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAppBlocksResultTypeDef](./type_defs.md#describeappblocksresulttypedef).
+
+<a id="describe_application_fleet_associations"></a>
 
 ### describe_application_fleet_associations
 
@@ -843,6 +918,8 @@ Keyword-only arguments:
 Returns
 [DescribeApplicationFleetAssociationsResultTypeDef](./type_defs.md#describeapplicationfleetassociationsresulttypedef).
 
+<a id="describe_applications"></a>
+
 ### describe_applications
 
 Retrieves a list that describes one or more applications.
@@ -863,6 +940,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeApplicationsResultTypeDef](./type_defs.md#describeapplicationsresulttypedef).
+
+<a id="describe_directory_configs"></a>
 
 ### describe_directory_configs
 
@@ -887,6 +966,8 @@ Keyword-only arguments:
 Returns
 [DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef).
 
+<a id="describe_entitlements"></a>
+
 ### describe_entitlements
 
 Retrieves a list that describes one of more entitlements.
@@ -909,6 +990,8 @@ Keyword-only arguments:
 Returns
 [DescribeEntitlementsResultTypeDef](./type_defs.md#describeentitlementsresulttypedef).
 
+<a id="describe_fleets"></a>
+
 ### describe_fleets
 
 Retrieves a list that describes one or more specified fleets, if the fleet
@@ -929,6 +1012,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef).
+
+<a id="describe_image_builders"></a>
 
 ### describe_image_builders
 
@@ -952,6 +1037,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef).
+
+<a id="describe_image_permissions"></a>
 
 ### describe_image_permissions
 
@@ -977,6 +1064,8 @@ Keyword-only arguments:
 Returns
 [DescribeImagePermissionsResultTypeDef](./type_defs.md#describeimagepermissionsresulttypedef).
 
+<a id="describe_images"></a>
+
 ### describe_images
 
 Retrieves a list that describes one or more specified images, if the image
@@ -1000,6 +1089,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef).
+
+<a id="describe_sessions"></a>
 
 ### describe_sessions
 
@@ -1027,6 +1118,8 @@ Keyword-only arguments:
 Returns
 [DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef).
 
+<a id="describe_stacks"></a>
+
 ### describe_stacks
 
 Retrieves a list that describes one or more specified stacks, if the stack
@@ -1048,6 +1141,8 @@ Keyword-only arguments:
 Returns
 [DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef).
 
+<a id="describe_usage_report_subscriptions"></a>
+
 ### describe_usage_report_subscriptions
 
 Retrieves a list that describes one or more usage report subscriptions.
@@ -1068,6 +1163,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUsageReportSubscriptionsResultTypeDef](./type_defs.md#describeusagereportsubscriptionsresulttypedef).
+
+<a id="describe_user_stack_associations"></a>
 
 ### describe_user_stack_associations
 
@@ -1094,6 +1191,8 @@ Keyword-only arguments:
 Returns
 [DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef).
 
+<a id="describe_users"></a>
+
 ### describe_users
 
 Retrieves a list that describes one or more specified users in the user pool.
@@ -1116,6 +1215,8 @@ Keyword-only arguments:
 Returns
 [DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef).
 
+<a id="disable_user"></a>
+
 ### disable_user
 
 Disables the specified user in the user pool.
@@ -1136,6 +1237,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_application_fleet"></a>
+
 ### disassociate_application_fleet
 
 Disassociates the specified application from the fleet.
@@ -1155,6 +1258,8 @@ Keyword-only arguments:
 - `ApplicationArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_application_from_entitlement"></a>
 
 ### disassociate_application_from_entitlement
 
@@ -1177,6 +1282,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_fleet"></a>
+
 ### disassociate_fleet
 
 Disassociates the specified fleet from the specified stack.
@@ -1195,6 +1302,8 @@ Keyword-only arguments:
 - `StackName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="enable_user"></a>
 
 ### enable_user
 
@@ -1216,6 +1325,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="expire_session"></a>
+
 ### expire_session
 
 Immediately stops the specified streaming session.
@@ -1234,6 +1345,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1251,6 +1364,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_associated_fleets"></a>
 
 ### list_associated_fleets
 
@@ -1272,6 +1387,8 @@ Keyword-only arguments:
 Returns
 [ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef).
 
+<a id="list_associated_stacks"></a>
+
 ### list_associated_stacks
 
 Retrieves the name of the stack with which the specified fleet is associated.
@@ -1291,6 +1408,8 @@ Keyword-only arguments:
 
 Returns
 [ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef).
+
+<a id="list_entitled_applications"></a>
 
 ### list_entitled_applications
 
@@ -1315,6 +1434,8 @@ Keyword-only arguments:
 Returns
 [ListEntitledApplicationsResultTypeDef](./type_defs.md#listentitledapplicationsresulttypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves a list of all tags for the specified AppStream 2.0 resource.
@@ -1334,6 +1455,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="start_fleet"></a>
+
 ### start_fleet
 
 Starts the specified fleet.
@@ -1351,6 +1474,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_image_builder"></a>
 
 ### start_image_builder
 
@@ -1372,6 +1497,8 @@ Keyword-only arguments:
 Returns
 [StartImageBuilderResultTypeDef](./type_defs.md#startimagebuilderresulttypedef).
 
+<a id="stop_fleet"></a>
+
 ### stop_fleet
 
 Stops the specified fleet.
@@ -1389,6 +1516,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="stop_image_builder"></a>
 
 ### stop_image_builder
 
@@ -1409,6 +1538,8 @@ Keyword-only arguments:
 Returns
 [StopImageBuilderResultTypeDef](./type_defs.md#stopimagebuilderresulttypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or overwrites one or more tags for the specified AppStream 2.0 resource.
@@ -1427,6 +1558,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -1447,6 +1580,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_application"></a>
 
 ### update_application
 
@@ -1476,6 +1611,8 @@ Keyword-only arguments:
 Returns
 [UpdateApplicationResultTypeDef](./type_defs.md#updateapplicationresulttypedef).
 
+<a id="update_directory_config"></a>
+
 ### update_directory_config
 
 Updates the specified Directory Config object in AppStream 2.0.
@@ -1498,6 +1635,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDirectoryConfigResultTypeDef](./type_defs.md#updatedirectoryconfigresulttypedef).
+
+<a id="update_entitlement"></a>
 
 ### update_entitlement
 
@@ -1522,6 +1661,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateEntitlementResultTypeDef](./type_defs.md#updateentitlementresulttypedef).
+
+<a id="update_fleet"></a>
 
 ### update_fleet
 
@@ -1563,6 +1704,8 @@ Keyword-only arguments:
 
 Returns [UpdateFleetResultTypeDef](./type_defs.md#updatefleetresulttypedef).
 
+<a id="update_image_permissions"></a>
+
 ### update_image_permissions
 
 Adds or updates permissions for the specified private image.
@@ -1585,6 +1728,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_stack"></a>
 
 ### update_stack
 
@@ -1620,6 +1765,8 @@ Keyword-only arguments:
 
 Returns [UpdateStackResultTypeDef](./type_defs.md#updatestackresulttypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("appstream").get_paginator` method with
@@ -1645,6 +1792,8 @@ overloads.
   [ListAssociatedFleetsPaginator](./paginators.md#listassociatedfleetspaginator)
 - `client.get_paginator("list_associated_stacks")` ->
   [ListAssociatedStacksPaginator](./paginators.md#listassociatedstackspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

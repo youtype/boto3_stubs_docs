@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-lakeformation-module"></a>
+
 # Type annotations for boto3 LakeFormation module
 
 > [Index](..) > LakeFormation
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module
-[mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
+[mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[lakeformation]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[lakeformation]'
+
+# standalone installation
 pip install mypy-boto3-lakeformation
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-lakeformation
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="lakeformationclient"></a>
+
 ## LakeFormationClient
 
 Type annotations for `boto3.client("lakeformation")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_lakeformation.client import LakeFormationClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -81,6 +95,8 @@ from mypy_boto3_lakeformation.client import LakeFormationClient
 - [update_table_objects](./client.md#update_table_objects)
 - [update_table_storage_optimizer](./client.md#update_table_storage_optimizer)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 LakeFormationClient [exceptions](./client.md#exceptions)
@@ -105,6 +121,8 @@ LakeFormationClient [exceptions](./client.md#exceptions)
 - TransactionCommittedException
 - WorkUnitsNotReadyYetException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -113,7 +131,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_lakeformation.paginators import GetWorkUnitsPaginator, ...
+from mypy_boto3_lakeformation.paginator import GetWorkUnitsPaginator, ...
 ```
 
 - [GetWorkUnitsPaginator](./paginators.md#getworkunitspaginator)
@@ -121,6 +139,8 @@ from mypy_boto3_lakeformation.paginators import GetWorkUnitsPaginator, ...
 - [ListLFTagsPaginator](./paginators.md#listlftagspaginator)
 - [SearchDatabasesByLFTagsPaginator](./paginators.md#searchdatabasesbylftagspaginator)
 - [SearchTablesByLFTagsPaginator](./paginators.md#searchtablesbylftagspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -151,6 +171,8 @@ from mypy_boto3_lakeformation.literals import ComparisonOperatorType, ...
 - [TransactionTypeType](./literals.md#transactiontypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

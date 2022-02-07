@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-managedblockchain-module"></a>
+
 # Literals for boto3 ManagedBlockchain module
 
 > [Index](..) > [ManagedBlockchain](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
 type annotations stubs module
-[mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
+[mypy-boto3-managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
 - [Literals for boto3 ManagedBlockchain module](#literals-for-boto3-managedblockchain-module)
   - [EditionType](#editiontype)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [VoteValueType](#votevaluetype)
   - [ServiceName](#servicename)
 
+<a id="editiontype"></a>
+
 ## EditionType
 
 ```python
@@ -31,6 +35,8 @@ Values:
 - `STANDARD`
 - `STARTER`
 
+<a id="frameworktype"></a>
+
 ## FrameworkType
 
 ```python
@@ -41,6 +47,8 @@ Values:
 
 - `ETHEREUM`
 - `HYPERLEDGER_FABRIC`
+
+<a id="invitationstatustype"></a>
 
 ## InvitationStatusType
 
@@ -55,6 +63,8 @@ Values:
 - `EXPIRED`
 - `PENDING`
 - `REJECTED`
+
+<a id="memberstatustype"></a>
 
 ## MemberStatusType
 
@@ -72,6 +82,8 @@ Values:
 - `INACCESSIBLE_ENCRYPTION_KEY`
 - `UPDATING`
 
+<a id="networkstatustype"></a>
+
 ## NetworkStatusType
 
 ```python
@@ -85,6 +97,8 @@ Values:
 - `CREATING`
 - `DELETED`
 - `DELETING`
+
+<a id="nodestatustype"></a>
 
 ## NodeStatusType
 
@@ -104,6 +118,8 @@ Values:
 - `UNHEALTHY`
 - `UPDATING`
 
+<a id="proposalstatustype"></a>
+
 ## ProposalStatusType
 
 ```python
@@ -118,6 +134,8 @@ Values:
 - `IN_PROGRESS`
 - `REJECTED`
 
+<a id="statedbtypetype"></a>
+
 ## StateDBTypeType
 
 ```python
@@ -128,6 +146,8 @@ Values:
 
 - `CouchDB`
 - `LevelDB`
+
+<a id="thresholdcomparatortype"></a>
 
 ## ThresholdComparatorType
 
@@ -140,6 +160,8 @@ Values:
 - `GREATER_THAN`
 - `GREATER_THAN_OR_EQUAL_TO`
 
+<a id="votevaluetype"></a>
+
 ## VoteValueType
 
 ```python
@@ -150,6 +172,8 @@ Values:
 
 - `NO`
 - `YES`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

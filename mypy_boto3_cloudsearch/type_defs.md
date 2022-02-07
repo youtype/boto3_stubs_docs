@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloudsearch-module"></a>
+
 # Typed dictionaries for boto3 CloudSearch module
 
 > [Index](..) > [CloudSearch](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
 type annotations stubs module
-[mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
+[mypy-boto3-cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
 - [Typed dictionaries for boto3 CloudSearch module](#typed-dictionaries-for-boto3-cloudsearch-module)
   - [AccessPoliciesStatusTypeDef](#accesspoliciesstatustypedef)
@@ -92,6 +94,8 @@ type annotations stubs module
   - [UpdateServiceAccessPoliciesRequestRequestTypeDef](#updateserviceaccesspoliciesrequestrequesttypedef)
   - [UpdateServiceAccessPoliciesResponseTypeDef](#updateserviceaccesspoliciesresponsetypedef)
 
+<a id="accesspoliciesstatustypedef"></a>
+
 ## AccessPoliciesStatusTypeDef
 
 ```python
@@ -102,6 +106,8 @@ Required fields:
 
 - `Options`: `str`
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="analysisoptionstypedef"></a>
 
 ## AnalysisOptionsTypeDef
 
@@ -118,6 +124,8 @@ Optional fields:
 - `AlgorithmicStemming`:
   [AlgorithmicStemmingType](./literals.md#algorithmicstemmingtype)
 
+<a id="analysisschemestatustypedef"></a>
+
 ## AnalysisSchemeStatusTypeDef
 
 ```python
@@ -128,6 +136,8 @@ Required fields:
 
 - `Options`: [AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="analysisschemetypedef"></a>
 
 ## AnalysisSchemeTypeDef
 
@@ -146,6 +156,8 @@ Optional fields:
 - `AnalysisOptions`:
   [AnalysisOptionsTypeDef](./type_defs.md#analysisoptionstypedef)
 
+<a id="availabilityoptionsstatustypedef"></a>
+
 ## AvailabilityOptionsStatusTypeDef
 
 ```python
@@ -157,6 +169,8 @@ Required fields:
 - `Options`: `bool`
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
+<a id="buildsuggestersrequestrequesttypedef"></a>
+
 ## BuildSuggestersRequestRequestTypeDef
 
 ```python
@@ -166,6 +180,8 @@ from mypy_boto3_cloudsearch.type_defs import BuildSuggestersRequestRequestTypeDe
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="buildsuggestersresponsetypedef"></a>
 
 ## BuildSuggestersResponseTypeDef
 
@@ -179,6 +195,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createdomainrequestrequesttypedef"></a>
+
 ## CreateDomainRequestRequestTypeDef
 
 ```python
@@ -188,6 +206,8 @@ from mypy_boto3_cloudsearch.type_defs import CreateDomainRequestRequestTypeDef
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="createdomainresponsetypedef"></a>
 
 ## CreateDomainResponseTypeDef
 
@@ -200,6 +220,8 @@ Required fields:
 - `DomainStatus`: [DomainStatusTypeDef](./type_defs.md#domainstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="datearrayoptionstypedef"></a>
 
 ## DateArrayOptionsTypeDef
 
@@ -214,6 +236,8 @@ Optional fields:
 - `FacetEnabled`: `bool`
 - `SearchEnabled`: `bool`
 - `ReturnEnabled`: `bool`
+
+<a id="dateoptionstypedef"></a>
 
 ## DateOptionsTypeDef
 
@@ -230,6 +254,8 @@ Optional fields:
 - `ReturnEnabled`: `bool`
 - `SortEnabled`: `bool`
 
+<a id="defineanalysisschemerequestrequesttypedef"></a>
+
 ## DefineAnalysisSchemeRequestRequestTypeDef
 
 ```python
@@ -241,6 +267,8 @@ Required fields:
 - `DomainName`: `str`
 - `AnalysisScheme`:
   [AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef)
+
+<a id="defineanalysisschemeresponsetypedef"></a>
 
 ## DefineAnalysisSchemeResponseTypeDef
 
@@ -255,6 +283,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="defineexpressionrequestrequesttypedef"></a>
+
 ## DefineExpressionRequestRequestTypeDef
 
 ```python
@@ -265,6 +295,8 @@ Required fields:
 
 - `DomainName`: `str`
 - `Expression`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
+
+<a id="defineexpressionresponsetypedef"></a>
 
 ## DefineExpressionResponseTypeDef
 
@@ -279,6 +311,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="defineindexfieldrequestrequesttypedef"></a>
+
 ## DefineIndexFieldRequestRequestTypeDef
 
 ```python
@@ -289,6 +323,8 @@ Required fields:
 
 - `DomainName`: `str`
 - `IndexField`: [IndexFieldTypeDef](./type_defs.md#indexfieldtypedef)
+
+<a id="defineindexfieldresponsetypedef"></a>
 
 ## DefineIndexFieldResponseTypeDef
 
@@ -303,6 +339,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="definesuggesterrequestrequesttypedef"></a>
+
 ## DefineSuggesterRequestRequestTypeDef
 
 ```python
@@ -313,6 +351,8 @@ Required fields:
 
 - `DomainName`: `str`
 - `Suggester`: [SuggesterTypeDef](./type_defs.md#suggestertypedef)
+
+<a id="definesuggesterresponsetypedef"></a>
 
 ## DefineSuggesterResponseTypeDef
 
@@ -326,6 +366,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteanalysisschemerequestrequesttypedef"></a>
+
 ## DeleteAnalysisSchemeRequestRequestTypeDef
 
 ```python
@@ -336,6 +378,8 @@ Required fields:
 
 - `DomainName`: `str`
 - `AnalysisSchemeName`: `str`
+
+<a id="deleteanalysisschemeresponsetypedef"></a>
 
 ## DeleteAnalysisSchemeResponseTypeDef
 
@@ -350,6 +394,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedomainrequestrequesttypedef"></a>
+
 ## DeleteDomainRequestRequestTypeDef
 
 ```python
@@ -359,6 +405,8 @@ from mypy_boto3_cloudsearch.type_defs import DeleteDomainRequestRequestTypeDef
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="deletedomainresponsetypedef"></a>
 
 ## DeleteDomainResponseTypeDef
 
@@ -372,6 +420,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteexpressionrequestrequesttypedef"></a>
+
 ## DeleteExpressionRequestRequestTypeDef
 
 ```python
@@ -382,6 +432,8 @@ Required fields:
 
 - `DomainName`: `str`
 - `ExpressionName`: `str`
+
+<a id="deleteexpressionresponsetypedef"></a>
 
 ## DeleteExpressionResponseTypeDef
 
@@ -396,6 +448,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteindexfieldrequestrequesttypedef"></a>
+
 ## DeleteIndexFieldRequestRequestTypeDef
 
 ```python
@@ -406,6 +460,8 @@ Required fields:
 
 - `DomainName`: `str`
 - `IndexFieldName`: `str`
+
+<a id="deleteindexfieldresponsetypedef"></a>
 
 ## DeleteIndexFieldResponseTypeDef
 
@@ -420,6 +476,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletesuggesterrequestrequesttypedef"></a>
+
 ## DeleteSuggesterRequestRequestTypeDef
 
 ```python
@@ -430,6 +488,8 @@ Required fields:
 
 - `DomainName`: `str`
 - `SuggesterName`: `str`
+
+<a id="deletesuggesterresponsetypedef"></a>
 
 ## DeleteSuggesterResponseTypeDef
 
@@ -442,6 +502,8 @@ Required fields:
 - `Suggester`: [SuggesterStatusTypeDef](./type_defs.md#suggesterstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeanalysisschemesrequestrequesttypedef"></a>
 
 ## DescribeAnalysisSchemesRequestRequestTypeDef
 
@@ -458,6 +520,8 @@ Optional fields:
 - `AnalysisSchemeNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
+<a id="describeanalysisschemesresponsetypedef"></a>
+
 ## DescribeAnalysisSchemesResponseTypeDef
 
 ```python
@@ -470,6 +534,8 @@ Required fields:
   `List`\[[AnalysisSchemeStatusTypeDef](./type_defs.md#analysisschemestatustypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeavailabilityoptionsrequestrequesttypedef"></a>
 
 ## DescribeAvailabilityOptionsRequestRequestTypeDef
 
@@ -485,6 +551,8 @@ Optional fields:
 
 - `Deployed`: `bool`
 
+<a id="describeavailabilityoptionsresponsetypedef"></a>
+
 ## DescribeAvailabilityOptionsResponseTypeDef
 
 ```python
@@ -497,6 +565,8 @@ Required fields:
   [AvailabilityOptionsStatusTypeDef](./type_defs.md#availabilityoptionsstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedomainendpointoptionsrequestrequesttypedef"></a>
 
 ## DescribeDomainEndpointOptionsRequestRequestTypeDef
 
@@ -512,6 +582,8 @@ Optional fields:
 
 - `Deployed`: `bool`
 
+<a id="describedomainendpointoptionsresponsetypedef"></a>
+
 ## DescribeDomainEndpointOptionsResponseTypeDef
 
 ```python
@@ -525,6 +597,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedomainsrequestrequesttypedef"></a>
+
 ## DescribeDomainsRequestRequestTypeDef
 
 ```python
@@ -534,6 +608,8 @@ from mypy_boto3_cloudsearch.type_defs import DescribeDomainsRequestRequestTypeDe
 Optional fields:
 
 - `DomainNames`: `Sequence`\[`str`\]
+
+<a id="describedomainsresponsetypedef"></a>
 
 ## DescribeDomainsResponseTypeDef
 
@@ -547,6 +623,8 @@ Required fields:
   `List`\[[DomainStatusTypeDef](./type_defs.md#domainstatustypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeexpressionsrequestrequesttypedef"></a>
 
 ## DescribeExpressionsRequestRequestTypeDef
 
@@ -563,6 +641,8 @@ Optional fields:
 - `ExpressionNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
+<a id="describeexpressionsresponsetypedef"></a>
+
 ## DescribeExpressionsResponseTypeDef
 
 ```python
@@ -575,6 +655,8 @@ Required fields:
   `List`\[[ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeindexfieldsrequestrequesttypedef"></a>
 
 ## DescribeIndexFieldsRequestRequestTypeDef
 
@@ -591,6 +673,8 @@ Optional fields:
 - `FieldNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
+<a id="describeindexfieldsresponsetypedef"></a>
+
 ## DescribeIndexFieldsResponseTypeDef
 
 ```python
@@ -604,6 +688,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describescalingparametersrequestrequesttypedef"></a>
+
 ## DescribeScalingParametersRequestRequestTypeDef
 
 ```python
@@ -613,6 +699,8 @@ from mypy_boto3_cloudsearch.type_defs import DescribeScalingParametersRequestReq
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="describescalingparametersresponsetypedef"></a>
 
 ## DescribeScalingParametersResponseTypeDef
 
@@ -626,6 +714,8 @@ Required fields:
   [ScalingParametersStatusTypeDef](./type_defs.md#scalingparametersstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeserviceaccesspoliciesrequestrequesttypedef"></a>
 
 ## DescribeServiceAccessPoliciesRequestRequestTypeDef
 
@@ -641,6 +731,8 @@ Optional fields:
 
 - `Deployed`: `bool`
 
+<a id="describeserviceaccesspoliciesresponsetypedef"></a>
+
 ## DescribeServiceAccessPoliciesResponseTypeDef
 
 ```python
@@ -653,6 +745,8 @@ Required fields:
   [AccessPoliciesStatusTypeDef](./type_defs.md#accesspoliciesstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describesuggestersrequestrequesttypedef"></a>
 
 ## DescribeSuggestersRequestRequestTypeDef
 
@@ -669,6 +763,8 @@ Optional fields:
 - `SuggesterNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
+<a id="describesuggestersresponsetypedef"></a>
+
 ## DescribeSuggestersResponseTypeDef
 
 ```python
@@ -681,6 +777,8 @@ Required fields:
   `List`\[[SuggesterStatusTypeDef](./type_defs.md#suggesterstatustypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="documentsuggesteroptionstypedef"></a>
 
 ## DocumentSuggesterOptionsTypeDef
 
@@ -698,6 +796,8 @@ Optional fields:
   [SuggesterFuzzyMatchingType](./literals.md#suggesterfuzzymatchingtype)
 - `SortExpression`: `str`
 
+<a id="domainendpointoptionsstatustypedef"></a>
+
 ## DomainEndpointOptionsStatusTypeDef
 
 ```python
@@ -710,6 +810,8 @@ Required fields:
   [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
+<a id="domainendpointoptionstypedef"></a>
+
 ## DomainEndpointOptionsTypeDef
 
 ```python
@@ -721,6 +823,8 @@ Optional fields:
 - `EnforceHTTPS`: `bool`
 - `TLSSecurityPolicy`:
   [TLSSecurityPolicyType](./literals.md#tlssecuritypolicytype)
+
+<a id="domainstatustypedef"></a>
 
 ## DomainStatusTypeDef
 
@@ -748,6 +852,8 @@ Optional fields:
 - `SearchInstanceCount`: `int`
 - `Limits`: [LimitsTypeDef](./type_defs.md#limitstypedef)
 
+<a id="doublearrayoptionstypedef"></a>
+
 ## DoubleArrayOptionsTypeDef
 
 ```python
@@ -761,6 +867,8 @@ Optional fields:
 - `FacetEnabled`: `bool`
 - `SearchEnabled`: `bool`
 - `ReturnEnabled`: `bool`
+
+<a id="doubleoptionstypedef"></a>
 
 ## DoubleOptionsTypeDef
 
@@ -777,6 +885,8 @@ Optional fields:
 - `ReturnEnabled`: `bool`
 - `SortEnabled`: `bool`
 
+<a id="expressionstatustypedef"></a>
+
 ## ExpressionStatusTypeDef
 
 ```python
@@ -787,6 +897,8 @@ Required fields:
 
 - `Options`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="expressiontypedef"></a>
 
 ## ExpressionTypeDef
 
@@ -799,6 +911,8 @@ Required fields:
 - `ExpressionName`: `str`
 - `ExpressionValue`: `str`
 
+<a id="indexdocumentsrequestrequesttypedef"></a>
+
 ## IndexDocumentsRequestRequestTypeDef
 
 ```python
@@ -808,6 +922,8 @@ from mypy_boto3_cloudsearch.type_defs import IndexDocumentsRequestRequestTypeDef
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="indexdocumentsresponsetypedef"></a>
 
 ## IndexDocumentsResponseTypeDef
 
@@ -821,6 +937,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="indexfieldstatustypedef"></a>
+
 ## IndexFieldStatusTypeDef
 
 ```python
@@ -831,6 +949,8 @@ Required fields:
 
 - `Options`: [IndexFieldTypeDef](./type_defs.md#indexfieldtypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="indexfieldtypedef"></a>
 
 ## IndexFieldTypeDef
 
@@ -863,6 +983,8 @@ Optional fields:
 - `DateArrayOptions`:
   [DateArrayOptionsTypeDef](./type_defs.md#datearrayoptionstypedef)
 
+<a id="intarrayoptionstypedef"></a>
+
 ## IntArrayOptionsTypeDef
 
 ```python
@@ -876,6 +998,8 @@ Optional fields:
 - `FacetEnabled`: `bool`
 - `SearchEnabled`: `bool`
 - `ReturnEnabled`: `bool`
+
+<a id="intoptionstypedef"></a>
 
 ## IntOptionsTypeDef
 
@@ -892,6 +1016,8 @@ Optional fields:
 - `ReturnEnabled`: `bool`
 - `SortEnabled`: `bool`
 
+<a id="latlonoptionstypedef"></a>
+
 ## LatLonOptionsTypeDef
 
 ```python
@@ -907,6 +1033,8 @@ Optional fields:
 - `ReturnEnabled`: `bool`
 - `SortEnabled`: `bool`
 
+<a id="limitstypedef"></a>
+
 ## LimitsTypeDef
 
 ```python
@@ -917,6 +1045,8 @@ Required fields:
 
 - `MaximumReplicationCount`: `int`
 - `MaximumPartitionCount`: `int`
+
+<a id="listdomainnamesresponsetypedef"></a>
 
 ## ListDomainNamesResponseTypeDef
 
@@ -929,6 +1059,8 @@ Required fields:
 - `DomainNames`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="literalarrayoptionstypedef"></a>
 
 ## LiteralArrayOptionsTypeDef
 
@@ -944,6 +1076,8 @@ Optional fields:
 - `SearchEnabled`: `bool`
 - `ReturnEnabled`: `bool`
 
+<a id="literaloptionstypedef"></a>
+
 ## LiteralOptionsTypeDef
 
 ```python
@@ -958,6 +1092,8 @@ Optional fields:
 - `SearchEnabled`: `bool`
 - `ReturnEnabled`: `bool`
 - `SortEnabled`: `bool`
+
+<a id="optionstatustypedef"></a>
 
 ## OptionStatusTypeDef
 
@@ -976,6 +1112,8 @@ Optional fields:
 - `UpdateVersion`: `int`
 - `PendingDeletion`: `bool`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -990,6 +1128,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="scalingparametersstatustypedef"></a>
+
 ## ScalingParametersStatusTypeDef
 
 ```python
@@ -1001,6 +1141,8 @@ Required fields:
 - `Options`:
   [ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+<a id="scalingparameterstypedef"></a>
 
 ## ScalingParametersTypeDef
 
@@ -1015,6 +1157,8 @@ Optional fields:
 - `DesiredReplicationCount`: `int`
 - `DesiredPartitionCount`: `int`
 
+<a id="serviceendpointtypedef"></a>
+
 ## ServiceEndpointTypeDef
 
 ```python
@@ -1024,6 +1168,8 @@ from mypy_boto3_cloudsearch.type_defs import ServiceEndpointTypeDef
 Optional fields:
 
 - `Endpoint`: `str`
+
+<a id="suggesterstatustypedef"></a>
 
 ## SuggesterStatusTypeDef
 
@@ -1036,6 +1182,8 @@ Required fields:
 - `Options`: [SuggesterTypeDef](./type_defs.md#suggestertypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
+<a id="suggestertypedef"></a>
+
 ## SuggesterTypeDef
 
 ```python
@@ -1047,6 +1195,8 @@ Required fields:
 - `SuggesterName`: `str`
 - `DocumentSuggesterOptions`:
   [DocumentSuggesterOptionsTypeDef](./type_defs.md#documentsuggesteroptionstypedef)
+
+<a id="textarrayoptionstypedef"></a>
 
 ## TextArrayOptionsTypeDef
 
@@ -1061,6 +1211,8 @@ Optional fields:
 - `ReturnEnabled`: `bool`
 - `HighlightEnabled`: `bool`
 - `AnalysisScheme`: `str`
+
+<a id="textoptionstypedef"></a>
 
 ## TextOptionsTypeDef
 
@@ -1077,6 +1229,8 @@ Optional fields:
 - `HighlightEnabled`: `bool`
 - `AnalysisScheme`: `str`
 
+<a id="updateavailabilityoptionsrequestrequesttypedef"></a>
+
 ## UpdateAvailabilityOptionsRequestRequestTypeDef
 
 ```python
@@ -1087,6 +1241,8 @@ Required fields:
 
 - `DomainName`: `str`
 - `MultiAZ`: `bool`
+
+<a id="updateavailabilityoptionsresponsetypedef"></a>
 
 ## UpdateAvailabilityOptionsResponseTypeDef
 
@@ -1101,6 +1257,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatedomainendpointoptionsrequestrequesttypedef"></a>
+
 ## UpdateDomainEndpointOptionsRequestRequestTypeDef
 
 ```python
@@ -1112,6 +1270,8 @@ Required fields:
 - `DomainName`: `str`
 - `DomainEndpointOptions`:
   [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
+
+<a id="updatedomainendpointoptionsresponsetypedef"></a>
 
 ## UpdateDomainEndpointOptionsResponseTypeDef
 
@@ -1126,6 +1286,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatescalingparametersrequestrequesttypedef"></a>
+
 ## UpdateScalingParametersRequestRequestTypeDef
 
 ```python
@@ -1137,6 +1299,8 @@ Required fields:
 - `DomainName`: `str`
 - `ScalingParameters`:
   [ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef)
+
+<a id="updatescalingparametersresponsetypedef"></a>
 
 ## UpdateScalingParametersResponseTypeDef
 
@@ -1151,6 +1315,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateserviceaccesspoliciesrequestrequesttypedef"></a>
+
 ## UpdateServiceAccessPoliciesRequestRequestTypeDef
 
 ```python
@@ -1161,6 +1327,8 @@ Required fields:
 
 - `DomainName`: `str`
 - `AccessPolicies`: `str`
+
+<a id="updateserviceaccesspoliciesresponsetypedef"></a>
 
 ## UpdateServiceAccessPoliciesResponseTypeDef
 

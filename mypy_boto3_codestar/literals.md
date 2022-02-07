@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-codestar-module"></a>
+
 # Literals for boto3 CodeStar module
 
 > [Index](..) > [CodeStar](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
 type annotations stubs module
-[mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
+[mypy-boto3-codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 - [Literals for boto3 CodeStar module](#literals-for-boto3-codestar-module)
   - [ListProjectsPaginatorName](#listprojectspaginatorname)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [ListUserProfilesPaginatorName](#listuserprofilespaginatorname)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="listprojectspaginatorname"></a>
 
 ## ListProjectsPaginatorName
 
@@ -25,6 +29,8 @@ Values:
 
 - `list_projects`
 
+<a id="listresourcespaginatorname"></a>
+
 ## ListResourcesPaginatorName
 
 ```python
@@ -34,6 +40,8 @@ from mypy_boto3_codestar.literals import ListResourcesPaginatorName
 Values:
 
 - `list_resources`
+
+<a id="listteammemberspaginatorname"></a>
 
 ## ListTeamMembersPaginatorName
 
@@ -45,6 +53,8 @@ Values:
 
 - `list_team_members`
 
+<a id="listuserprofilespaginatorname"></a>
+
 ## ListUserProfilesPaginatorName
 
 ```python
@@ -54,6 +64,8 @@ from mypy_boto3_codestar.literals import ListUserProfilesPaginatorName
 Values:
 
 - `list_user_profiles`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -362,6 +374,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

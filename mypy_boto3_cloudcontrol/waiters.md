@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-cloudcontrolapi-module"></a>
+
 # Waiters for boto3 CloudControlApi module
 
 > [Index](..) > [CloudControlApi](.) > Waiters
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
 type annotations stubs module
-[mypy_boto3_cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
+[mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
 
 - [Waiters for boto3 CloudControlApi module](#waiters-for-boto3-cloudcontrolapi-module)
   - [ResourceRequestSuccessWaiter](#resourcerequestsuccesswaiter)
+
+<a id="resourcerequestsuccesswaiter"></a>
 
 ## ResourceRequestSuccessWaiter
 
@@ -18,10 +22,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudcontrol.waiter import ResourceRequestSuccessWaiter
 
 def get_resource_request_success_waiter() -> ResourceRequestSuccessWaiter:
-    return boto3.client("cloudcontrol").get_waiter("resource_request_success")
+    return Session().client("cloudcontrol").get_waiter("resource_request_success")
 ```
 
 Boto3 documentation:

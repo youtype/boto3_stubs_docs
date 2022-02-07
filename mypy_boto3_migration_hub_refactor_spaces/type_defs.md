@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-migrationhubrefactorspaces-module"></a>
+
 # Typed dictionaries for boto3 MigrationHubRefactorSpaces module
 
 > [Index](..) > [MigrationHubRefactorSpaces](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
 type annotations stubs module
-[mypy_boto3_migration_hub_refactor_spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
+[mypy-boto3-migration-hub-refactor-spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
 
 - [Typed dictionaries for boto3 MigrationHubRefactorSpaces module](#typed-dictionaries-for-boto3-migrationhubrefactorspaces-module)
   - [ApiGatewayProxyConfigTypeDef](#apigatewayproxyconfigtypedef)
@@ -69,6 +71,8 @@ type annotations stubs module
   - [UrlEndpointInputTypeDef](#urlendpointinputtypedef)
   - [UrlEndpointSummaryTypeDef](#urlendpointsummarytypedef)
 
+<a id="apigatewayproxyconfigtypedef"></a>
+
 ## ApiGatewayProxyConfigTypeDef
 
 ```python
@@ -86,6 +90,8 @@ Optional fields:
 - `StageName`: `str`
 - `VpcLinkId`: `str`
 
+<a id="apigatewayproxyinputtypedef"></a>
+
 ## ApiGatewayProxyInputTypeDef
 
 ```python
@@ -97,6 +103,8 @@ Optional fields:
 - `EndpointType`:
   [ApiGatewayEndpointTypeType](./literals.md#apigatewayendpointtypetype)
 - `StageName`: `str`
+
+<a id="apigatewayproxysummarytypedef"></a>
 
 ## ApiGatewayProxySummaryTypeDef
 
@@ -114,6 +122,8 @@ Optional fields:
 - `ProxyUrl`: `str`
 - `StageName`: `str`
 - `VpcLinkId`: `str`
+
+<a id="applicationsummarytypedef"></a>
 
 ## ApplicationSummaryTypeDef
 
@@ -140,6 +150,8 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `VpcId`: `str`
 
+<a id="createapplicationrequestrequesttypedef"></a>
+
 ## CreateApplicationRequestRequestTypeDef
 
 ```python
@@ -160,6 +172,8 @@ Optional fields:
   [ApiGatewayProxyInputTypeDef](./type_defs.md#apigatewayproxyinputtypedef)
 - `ClientToken`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createapplicationresponsetypedef"></a>
 
 ## CreateApplicationResponseTypeDef
 
@@ -187,6 +201,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createenvironmentrequestrequesttypedef"></a>
+
 ## CreateEnvironmentRequestRequestTypeDef
 
 ```python
@@ -204,6 +220,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `Description`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createenvironmentresponsetypedef"></a>
 
 ## CreateEnvironmentResponseTypeDef
 
@@ -227,6 +245,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createrouterequestrequesttypedef"></a>
+
 ## CreateRouteRequestRequestTypeDef
 
 ```python
@@ -246,6 +266,8 @@ Optional fields:
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `UriPathRoute`:
   [UriPathRouteInputTypeDef](./type_defs.md#uripathrouteinputtypedef)
+
+<a id="createrouteresponsetypedef"></a>
 
 ## CreateRouteResponseTypeDef
 
@@ -271,6 +293,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createservicerequestrequesttypedef"></a>
+
 ## CreateServiceRequestRequestTypeDef
 
 ```python
@@ -295,6 +319,8 @@ Optional fields:
 - `UrlEndpoint`:
   [UrlEndpointInputTypeDef](./type_defs.md#urlendpointinputtypedef)
 - `VpcId`: `str`
+
+<a id="createserviceresponsetypedef"></a>
 
 ## CreateServiceResponseTypeDef
 
@@ -326,6 +352,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapplicationrequestrequesttypedef"></a>
+
 ## DeleteApplicationRequestRequestTypeDef
 
 ```python
@@ -336,6 +364,8 @@ Required fields:
 
 - `ApplicationIdentifier`: `str`
 - `EnvironmentIdentifier`: `str`
+
+<a id="deleteapplicationresponsetypedef"></a>
 
 ## DeleteApplicationResponseTypeDef
 
@@ -354,6 +384,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteenvironmentrequestrequesttypedef"></a>
+
 ## DeleteEnvironmentRequestRequestTypeDef
 
 ```python
@@ -363,6 +395,8 @@ from mypy_boto3_migration_hub_refactor_spaces.type_defs import DeleteEnvironment
 Required fields:
 
 - `EnvironmentIdentifier`: `str`
+
+<a id="deleteenvironmentresponsetypedef"></a>
 
 ## DeleteEnvironmentResponseTypeDef
 
@@ -380,6 +414,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteresourcepolicyrequestrequesttypedef"></a>
+
 ## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -389,6 +425,8 @@ from mypy_boto3_migration_hub_refactor_spaces.type_defs import DeleteResourcePol
 Required fields:
 
 - `Identifier`: `str`
+
+<a id="deleterouterequestrequesttypedef"></a>
 
 ## DeleteRouteRequestRequestTypeDef
 
@@ -401,6 +439,8 @@ Required fields:
 - `ApplicationIdentifier`: `str`
 - `EnvironmentIdentifier`: `str`
 - `RouteIdentifier`: `str`
+
+<a id="deleterouteresponsetypedef"></a>
 
 ## DeleteRouteResponseTypeDef
 
@@ -419,6 +459,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteservicerequestrequesttypedef"></a>
+
 ## DeleteServiceRequestRequestTypeDef
 
 ```python
@@ -430,6 +472,8 @@ Required fields:
 - `ApplicationIdentifier`: `str`
 - `EnvironmentIdentifier`: `str`
 - `ServiceIdentifier`: `str`
+
+<a id="deleteserviceresponsetypedef"></a>
 
 ## DeleteServiceResponseTypeDef
 
@@ -448,6 +492,8 @@ Required fields:
 - `State`: [ServiceStateType](./literals.md#servicestatetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="environmentsummarytypedef"></a>
 
 ## EnvironmentSummaryTypeDef
 
@@ -471,6 +517,8 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TransitGatewayId`: `str`
 
+<a id="environmentvpctypedef"></a>
+
 ## EnvironmentVpcTypeDef
 
 ```python
@@ -487,6 +535,8 @@ Optional fields:
 - `VpcId`: `str`
 - `VpcName`: `str`
 
+<a id="errorresponsetypedef"></a>
+
 ## ErrorResponseTypeDef
 
 ```python
@@ -502,6 +552,8 @@ Optional fields:
 - `ResourceIdentifier`: `str`
 - `ResourceType`: [ErrorResourceTypeType](./literals.md#errorresourcetypetype)
 
+<a id="getapplicationrequestrequesttypedef"></a>
+
 ## GetApplicationRequestRequestTypeDef
 
 ```python
@@ -512,6 +564,8 @@ Required fields:
 
 - `ApplicationIdentifier`: `str`
 - `EnvironmentIdentifier`: `str`
+
+<a id="getapplicationresponsetypedef"></a>
 
 ## GetApplicationResponseTypeDef
 
@@ -540,6 +594,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getenvironmentrequestrequesttypedef"></a>
+
 ## GetEnvironmentRequestRequestTypeDef
 
 ```python
@@ -549,6 +605,8 @@ from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetEnvironmentReq
 Required fields:
 
 - `EnvironmentIdentifier`: `str`
+
+<a id="getenvironmentresponsetypedef"></a>
 
 ## GetEnvironmentResponseTypeDef
 
@@ -574,6 +632,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourcepolicyrequestrequesttypedef"></a>
+
 ## GetResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -583,6 +643,8 @@ from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetResourcePolicy
 Required fields:
 
 - `Identifier`: `str`
+
+<a id="getresourcepolicyresponsetypedef"></a>
 
 ## GetResourcePolicyResponseTypeDef
 
@@ -596,6 +658,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrouterequestrequesttypedef"></a>
+
 ## GetRouteRequestRequestTypeDef
 
 ```python
@@ -607,6 +671,8 @@ Required fields:
 - `ApplicationIdentifier`: `str`
 - `EnvironmentIdentifier`: `str`
 - `RouteIdentifier`: `str`
+
+<a id="getrouteresponsetypedef"></a>
 
 ## GetRouteResponseTypeDef
 
@@ -636,6 +702,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getservicerequestrequesttypedef"></a>
+
 ## GetServiceRequestRequestTypeDef
 
 ```python
@@ -647,6 +715,8 @@ Required fields:
 - `ApplicationIdentifier`: `str`
 - `EnvironmentIdentifier`: `str`
 - `ServiceIdentifier`: `str`
+
+<a id="getserviceresponsetypedef"></a>
 
 ## GetServiceResponseTypeDef
 
@@ -679,6 +749,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="lambdaendpointconfigtypedef"></a>
+
 ## LambdaEndpointConfigTypeDef
 
 ```python
@@ -688,6 +760,8 @@ from mypy_boto3_migration_hub_refactor_spaces.type_defs import LambdaEndpointCon
 Optional fields:
 
 - `Arn`: `str`
+
+<a id="lambdaendpointinputtypedef"></a>
 
 ## LambdaEndpointInputTypeDef
 
@@ -699,6 +773,8 @@ Required fields:
 
 - `Arn`: `str`
 
+<a id="lambdaendpointsummarytypedef"></a>
+
 ## LambdaEndpointSummaryTypeDef
 
 ```python
@@ -708,6 +784,8 @@ from mypy_boto3_migration_hub_refactor_spaces.type_defs import LambdaEndpointSum
 Optional fields:
 
 - `Arn`: `str`
+
+<a id="listapplicationsrequestrequesttypedef"></a>
 
 ## ListApplicationsRequestRequestTypeDef
 
@@ -724,6 +802,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listapplicationsresponsetypedef"></a>
+
 ## ListApplicationsResponseTypeDef
 
 ```python
@@ -737,6 +817,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listenvironmentvpcsrequestrequesttypedef"></a>
 
 ## ListEnvironmentVpcsRequestRequestTypeDef
 
@@ -753,6 +835,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listenvironmentvpcsresponsetypedef"></a>
+
 ## ListEnvironmentVpcsResponseTypeDef
 
 ```python
@@ -767,6 +851,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listenvironmentsrequestrequesttypedef"></a>
+
 ## ListEnvironmentsRequestRequestTypeDef
 
 ```python
@@ -777,6 +863,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listenvironmentsresponsetypedef"></a>
 
 ## ListEnvironmentsResponseTypeDef
 
@@ -791,6 +879,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listroutesrequestrequesttypedef"></a>
 
 ## ListRoutesRequestRequestTypeDef
 
@@ -808,6 +898,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listroutesresponsetypedef"></a>
+
 ## ListRoutesResponseTypeDef
 
 ```python
@@ -821,6 +913,8 @@ Required fields:
   `List`\[[RouteSummaryTypeDef](./type_defs.md#routesummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listservicesrequestrequesttypedef"></a>
 
 ## ListServicesRequestRequestTypeDef
 
@@ -838,6 +932,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listservicesresponsetypedef"></a>
+
 ## ListServicesResponseTypeDef
 
 ```python
@@ -852,6 +948,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -861,6 +959,8 @@ from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListTagsForResour
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -874,6 +974,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -886,6 +988,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="putresourcepolicyrequestrequesttypedef"></a>
+
 ## PutResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -896,6 +1000,8 @@ Required fields:
 
 - `Policy`: `str`
 - `ResourceArn`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -910,6 +1016,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="routesummarytypedef"></a>
 
 ## RouteSummaryTypeDef
 
@@ -936,6 +1044,8 @@ Optional fields:
 - `SourcePath`: `str`
 - `State`: [RouteStateType](./literals.md#routestatetype)
 - `Tags`: `Dict`\[`str`, `str`\]
+
+<a id="servicesummarytypedef"></a>
 
 ## ServiceSummaryTypeDef
 
@@ -966,6 +1076,8 @@ Optional fields:
   [UrlEndpointSummaryTypeDef](./type_defs.md#urlendpointsummarytypedef)
 - `VpcId`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -977,6 +1089,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -987,6 +1101,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="uripathrouteinputtypedef"></a>
 
 ## UriPathRouteInputTypeDef
 
@@ -1005,6 +1121,8 @@ Optional fields:
 - `IncludeChildPaths`: `bool`
 - `Methods`: `Sequence`\[[HttpMethodType](./literals.md#httpmethodtype)\]
 
+<a id="urlendpointconfigtypedef"></a>
+
 ## UrlEndpointConfigTypeDef
 
 ```python
@@ -1015,6 +1133,8 @@ Optional fields:
 
 - `HealthUrl`: `str`
 - `Url`: `str`
+
+<a id="urlendpointinputtypedef"></a>
 
 ## UrlEndpointInputTypeDef
 
@@ -1029,6 +1149,8 @@ Required fields:
 Optional fields:
 
 - `HealthUrl`: `str`
+
+<a id="urlendpointsummarytypedef"></a>
 
 ## UrlEndpointSummaryTypeDef
 

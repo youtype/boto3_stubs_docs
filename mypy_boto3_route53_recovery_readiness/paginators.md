@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-route53recoveryreadiness-module"></a>
+
 # Paginators for boto3 Route53RecoveryReadiness module
 
 > [Index](..) > [Route53RecoveryReadiness](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53RecoveryReadiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness)
 type annotations stubs module
-[mypy_boto3_route53_recovery_readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
+[mypy-boto3-route53-recovery-readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
 
 - [Paginators for boto3 Route53RecoveryReadiness module](#paginators-for-boto3-route53recoveryreadiness-module)
   - [GetCellReadinessSummaryPaginator](#getcellreadinesssummarypaginator)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ListResourceSetsPaginator](#listresourcesetspaginator)
   - [ListRulesPaginator](#listrulespaginator)
 
+<a id="getcellreadinesssummarypaginator"></a>
+
 ## GetCellReadinessSummaryPaginator
 
 Type annotations for
@@ -27,10 +31,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53_recovery_readiness.paginator import GetCellReadinessSummaryPaginator
 
 def get_get_cell_readiness_summary_paginator() -> GetCellReadinessSummaryPaginator:
-    return boto3.client("route53-recovery-readiness").get_paginator("get_cell_readiness_summary")
+    return Session().client("route53-recovery-readiness").get_paginator("get_cell_readiness_summary")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `GetCellReadinessSummaryPaginator.paginate` method:
 `GetCellReadinessSummaryPaginator.paginate` returns
 `_PageIterator`\[[GetCellReadinessSummaryResponseTypeDef](./type_defs.md#getcellreadinesssummaryresponsetypedef)\].
 
+<a id="getreadinesscheckresourcestatuspaginator"></a>
+
 ## GetReadinessCheckResourceStatusPaginator
 
 Type annotations for
@@ -53,10 +61,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53_recovery_readiness.paginator import GetReadinessCheckResourceStatusPaginator
 
 def get_get_readiness_check_resource_status_paginator() -> GetReadinessCheckResourceStatusPaginator:
-    return boto3.client("route53-recovery-readiness").get_paginator("get_readiness_check_resource_status")
+    return Session().client("route53-recovery-readiness").get_paginator("get_readiness_check_resource_status")
 ```
 
 Boto3 documentation:
@@ -72,6 +82,8 @@ Arguments for `GetReadinessCheckResourceStatusPaginator.paginate` method:
 `GetReadinessCheckResourceStatusPaginator.paginate` returns
 `_PageIterator`\[[GetReadinessCheckResourceStatusResponseTypeDef](./type_defs.md#getreadinesscheckresourcestatusresponsetypedef)\].
 
+<a id="getreadinesscheckstatuspaginator"></a>
+
 ## GetReadinessCheckStatusPaginator
 
 Type annotations for
@@ -80,10 +92,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53_recovery_readiness.paginator import GetReadinessCheckStatusPaginator
 
 def get_get_readiness_check_status_paginator() -> GetReadinessCheckStatusPaginator:
-    return boto3.client("route53-recovery-readiness").get_paginator("get_readiness_check_status")
+    return Session().client("route53-recovery-readiness").get_paginator("get_readiness_check_status")
 ```
 
 Boto3 documentation:
@@ -98,6 +112,8 @@ Arguments for `GetReadinessCheckStatusPaginator.paginate` method:
 `GetReadinessCheckStatusPaginator.paginate` returns
 `_PageIterator`\[[GetReadinessCheckStatusResponseTypeDef](./type_defs.md#getreadinesscheckstatusresponsetypedef)\].
 
+<a id="getrecoverygroupreadinesssummarypaginator"></a>
+
 ## GetRecoveryGroupReadinessSummaryPaginator
 
 Type annotations for
@@ -106,10 +122,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53_recovery_readiness.paginator import GetRecoveryGroupReadinessSummaryPaginator
 
 def get_get_recovery_group_readiness_summary_paginator() -> GetRecoveryGroupReadinessSummaryPaginator:
-    return boto3.client("route53-recovery-readiness").get_paginator("get_recovery_group_readiness_summary")
+    return Session().client("route53-recovery-readiness").get_paginator("get_recovery_group_readiness_summary")
 ```
 
 Boto3 documentation:
@@ -124,6 +142,8 @@ Arguments for `GetRecoveryGroupReadinessSummaryPaginator.paginate` method:
 `GetRecoveryGroupReadinessSummaryPaginator.paginate` returns
 `_PageIterator`\[[GetRecoveryGroupReadinessSummaryResponseTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryresponsetypedef)\].
 
+<a id="listcellspaginator"></a>
+
 ## ListCellsPaginator
 
 Type annotations for
@@ -132,10 +152,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53_recovery_readiness.paginator import ListCellsPaginator
 
 def get_list_cells_paginator() -> ListCellsPaginator:
-    return boto3.client("route53-recovery-readiness").get_paginator("list_cells")
+    return Session().client("route53-recovery-readiness").get_paginator("list_cells")
 ```
 
 Boto3 documentation:
@@ -149,6 +171,8 @@ Arguments for `ListCellsPaginator.paginate` method:
 `ListCellsPaginator.paginate` returns
 `_PageIterator`\[[ListCellsResponseTypeDef](./type_defs.md#listcellsresponsetypedef)\].
 
+<a id="listcrossaccountauthorizationspaginator"></a>
+
 ## ListCrossAccountAuthorizationsPaginator
 
 Type annotations for
@@ -157,10 +181,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53_recovery_readiness.paginator import ListCrossAccountAuthorizationsPaginator
 
 def get_list_cross_account_authorizations_paginator() -> ListCrossAccountAuthorizationsPaginator:
-    return boto3.client("route53-recovery-readiness").get_paginator("list_cross_account_authorizations")
+    return Session().client("route53-recovery-readiness").get_paginator("list_cross_account_authorizations")
 ```
 
 Boto3 documentation:
@@ -174,6 +200,8 @@ Arguments for `ListCrossAccountAuthorizationsPaginator.paginate` method:
 `ListCrossAccountAuthorizationsPaginator.paginate` returns
 `_PageIterator`\[[ListCrossAccountAuthorizationsResponseTypeDef](./type_defs.md#listcrossaccountauthorizationsresponsetypedef)\].
 
+<a id="listreadinesscheckspaginator"></a>
+
 ## ListReadinessChecksPaginator
 
 Type annotations for
@@ -182,10 +210,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53_recovery_readiness.paginator import ListReadinessChecksPaginator
 
 def get_list_readiness_checks_paginator() -> ListReadinessChecksPaginator:
-    return boto3.client("route53-recovery-readiness").get_paginator("list_readiness_checks")
+    return Session().client("route53-recovery-readiness").get_paginator("list_readiness_checks")
 ```
 
 Boto3 documentation:
@@ -199,6 +229,8 @@ Arguments for `ListReadinessChecksPaginator.paginate` method:
 `ListReadinessChecksPaginator.paginate` returns
 `_PageIterator`\[[ListReadinessChecksResponseTypeDef](./type_defs.md#listreadinesschecksresponsetypedef)\].
 
+<a id="listrecoverygroupspaginator"></a>
+
 ## ListRecoveryGroupsPaginator
 
 Type annotations for
@@ -207,10 +239,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53_recovery_readiness.paginator import ListRecoveryGroupsPaginator
 
 def get_list_recovery_groups_paginator() -> ListRecoveryGroupsPaginator:
-    return boto3.client("route53-recovery-readiness").get_paginator("list_recovery_groups")
+    return Session().client("route53-recovery-readiness").get_paginator("list_recovery_groups")
 ```
 
 Boto3 documentation:
@@ -224,6 +258,8 @@ Arguments for `ListRecoveryGroupsPaginator.paginate` method:
 `ListRecoveryGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListRecoveryGroupsResponseTypeDef](./type_defs.md#listrecoverygroupsresponsetypedef)\].
 
+<a id="listresourcesetspaginator"></a>
+
 ## ListResourceSetsPaginator
 
 Type annotations for
@@ -232,10 +268,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53_recovery_readiness.paginator import ListResourceSetsPaginator
 
 def get_list_resource_sets_paginator() -> ListResourceSetsPaginator:
-    return boto3.client("route53-recovery-readiness").get_paginator("list_resource_sets")
+    return Session().client("route53-recovery-readiness").get_paginator("list_resource_sets")
 ```
 
 Boto3 documentation:
@@ -249,6 +287,8 @@ Arguments for `ListResourceSetsPaginator.paginate` method:
 `ListResourceSetsPaginator.paginate` returns
 `_PageIterator`\[[ListResourceSetsResponseTypeDef](./type_defs.md#listresourcesetsresponsetypedef)\].
 
+<a id="listrulespaginator"></a>
+
 ## ListRulesPaginator
 
 Type annotations for
@@ -257,10 +297,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53_recovery_readiness.paginator import ListRulesPaginator
 
 def get_list_rules_paginator() -> ListRulesPaginator:
-    return boto3.client("route53-recovery-readiness").get_paginator("list_rules")
+    return Session().client("route53-recovery-readiness").get_paginator("list_rules")
 ```
 
 Boto3 documentation:

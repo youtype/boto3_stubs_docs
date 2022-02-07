@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-codegurureviewer-module"></a>
+
 # Type annotations for boto3 CodeGuruReviewer module
 
 > [Index](..) > CodeGuruReviewer
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
 type annotations stubs module
-[mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
+[mypy-boto3-codeguru-reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[codeguru-reviewer]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[codeguru-reviewer]'
+
+# standalone installation
 pip install mypy-boto3-codeguru-reviewer
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-codeguru-reviewer
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="codegurureviewerclient"></a>
+
 ## CodeGuruReviewerClient
 
 Type annotations for `boto3.client("codeguru-reviewer")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_codeguru_reviewer.client import CodeGuruReviewerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -53,6 +67,8 @@ from mypy_boto3_codeguru_reviewer.client import CodeGuruReviewerClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CodeGuruReviewerClient [exceptions](./client.md#exceptions)
@@ -66,6 +82,8 @@ CodeGuruReviewerClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -74,10 +92,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_codeguru_reviewer.paginators import ListRepositoryAssociationsPaginator, ...
+from mypy_boto3_codeguru_reviewer.paginator import ListRepositoryAssociationsPaginator, ...
 ```
 
 - [ListRepositoryAssociationsPaginator](./paginators.md#listrepositoryassociationspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -87,11 +107,13 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_codeguru_reviewer.waiters import CodeReviewCompletedWaiter, ...
+from mypy_boto3_codeguru_reviewer.waiter import CodeReviewCompletedWaiter, ...
 ```
 
 - [CodeReviewCompletedWaiter](./waiters.md#codereviewcompletedwaiter)
 - [RepositoryAssociationSucceededWaiter](./waiters.md#repositoryassociationsucceededwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -119,6 +141,8 @@ from mypy_boto3_codeguru_reviewer.literals import AnalysisTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

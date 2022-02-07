@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iotdataplane-module"></a>
+
 # Type annotations for boto3 IoTDataPlane module
 
 > [Index](..) > IoTDataPlane
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
 type annotations stubs module
-[mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
+[mypy-boto3-iot-data](https://pypi.org/project/mypy-boto3-iot-data/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iot-data]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iot-data]'
+
+# standalone installation
 pip install mypy-boto3-iot-data
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-iot-data
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="iotdataplaneclient"></a>
+
 ## IoTDataPlaneClient
 
 Type annotations for `boto3.client("iot-data")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iot_data.client import IoTDataPlaneClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -43,6 +57,8 @@ from mypy_boto3_iot_data.client import IoTDataPlaneClient
 - [list_retained_messages](./client.md#list_retained_messages)
 - [publish](./client.md#publish)
 - [update_thing_shadow](./client.md#update_thing_shadow)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -60,6 +76,8 @@ IoTDataPlaneClient [exceptions](./client.md#exceptions)
 - UnauthorizedException
 - UnsupportedDocumentEncodingException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -68,10 +86,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_iot_data.paginators import ListRetainedMessagesPaginator, ...
+from mypy_boto3_iot_data.paginator import ListRetainedMessagesPaginator, ...
 ```
 
 - [ListRetainedMessagesPaginator](./paginators.md#listretainedmessagespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -86,6 +106,8 @@ from mypy_boto3_iot_data.literals import ListRetainedMessagesPaginatorName, ...
 - [ListRetainedMessagesPaginatorName](./literals.md#listretainedmessagespaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

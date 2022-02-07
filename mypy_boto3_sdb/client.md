@@ -1,3 +1,5 @@
+<a id="simpledbclient-for-boto3-simpledb-module"></a>
+
 # SimpleDBClient for boto3 SimpleDB module
 
 > [Index](..) > [SimpleDB](.) > SimpleDBClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
 type annotations stubs module
-[mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
+[mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 - [SimpleDBClient for boto3 SimpleDB module](#simpledbclient-for-boto3-simpledb-module)
   - [SimpleDBClient](#simpledbclient)
@@ -26,6 +28,8 @@ type annotations stubs module
     - [select](#select)
     - [get_paginator](#get_paginator)
 
+<a id="simpledbclient"></a>
+
 ## SimpleDBClient
 
 Type annotations for `boto3.client("sdb")`
@@ -33,14 +37,17 @@ Type annotations for `boto3.client("sdb")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sdb.client import SimpleDBClient
 
 def get_sdb_client() -> SimpleDBClient:
-    return boto3.client("sdb")
+    return Session().client("sdb")
 ```
 
 Boto3 documentation:
 [SimpleDB.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -75,7 +82,11 @@ Exceptions:
 - `Exceptions.RequestTimeout`
 - `Exceptions.TooManyRequestedAttributes`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -87,6 +98,8 @@ Boto3 documentation:
 [SimpleDB.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_delete_attributes"></a>
 
 ### batch_delete_attributes
 
@@ -108,6 +121,8 @@ Keyword-only arguments:
   `Sequence`\[[DeletableItemTypeDef](./type_defs.md#deletableitemtypedef)\]
   *(required)*
 
+<a id="batch_put_attributes"></a>
+
 ### batch_put_attributes
 
 The `BatchPutAttributes` operation creates or replaces attributes within one or
@@ -128,6 +143,8 @@ Keyword-only arguments:
   `Sequence`\[[ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)\]
   *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -142,6 +159,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_domain"></a>
 
 ### create_domain
 
@@ -158,6 +177,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
+
+<a id="delete_attributes"></a>
 
 ### delete_attributes
 
@@ -179,6 +200,8 @@ Keyword-only arguments:
   `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
 
+<a id="delete_domain"></a>
+
 ### delete_domain
 
 The `DeleteDomain` operation deletes a domain.
@@ -194,6 +217,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
+
+<a id="domain_metadata"></a>
 
 ### domain_metadata
 
@@ -216,6 +241,8 @@ Keyword-only arguments:
 Returns
 [DomainMetadataResultTypeDef](./type_defs.md#domainmetadataresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -233,6 +260,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_attributes"></a>
 
 ### get_attributes
 
@@ -256,6 +285,8 @@ Keyword-only arguments:
 Returns
 [GetAttributesResultTypeDef](./type_defs.md#getattributesresulttypedef).
 
+<a id="list_domains"></a>
+
 ### list_domains
 
 The `ListDomains` operation lists all domains associated with the Access Key
@@ -275,6 +306,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef).
+
+<a id="put_attributes"></a>
 
 ### put_attributes
 
@@ -297,6 +330,8 @@ Keyword-only arguments:
   *(required)*
 - `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
 
+<a id="select"></a>
+
 ### select
 
 The `Select` operation returns a set of attributes for `ItemNames` that match
@@ -317,6 +352,8 @@ Keyword-only arguments:
 - `ConsistentRead`: `bool`
 
 Returns [SelectResultTypeDef](./type_defs.md#selectresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

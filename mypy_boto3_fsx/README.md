@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-fsx-module"></a>
+
 # Type annotations for boto3 FSx module
 
 > [Index](..) > FSx
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
 type annotations stubs module
-[mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
+[mypy-boto3-fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[fsx]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[fsx]'
+
+# standalone installation
 pip install mypy-boto3-fsx
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-fsx
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="fsxclient"></a>
+
 ## FSxClient
 
 Type annotations for `boto3.client("fsx")` as [FSxClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_fsx.client import FSxClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -73,6 +87,8 @@ from mypy_boto3_fsx.client import FSxClient
 - [update_storage_virtual_machine](./client.md#update_storage_virtual_machine)
 - [update_volume](./client.md#update_volume)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 FSxClient [exceptions](./client.md#exceptions)
@@ -112,6 +128,8 @@ FSxClient [exceptions](./client.md#exceptions)
 - UnsupportedOperation
 - VolumeNotFound
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -120,12 +138,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_fsx.paginators import DescribeBackupsPaginator, ...
+from mypy_boto3_fsx.paginator import DescribeBackupsPaginator, ...
 ```
 
 - [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
 - [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -188,6 +208,8 @@ from mypy_boto3_fsx.literals import AdministrativeActionTypeType, ...
 - [WindowsDeploymentTypeType](./literals.md#windowsdeploymenttypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

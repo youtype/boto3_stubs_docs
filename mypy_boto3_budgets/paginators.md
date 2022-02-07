@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-budgets-module"></a>
+
 # Paginators for boto3 Budgets module
 
 > [Index](..) > [Budgets](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
 type annotations stubs module
-[mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
+[mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 - [Paginators for boto3 Budgets module](#paginators-for-boto3-budgets-module)
   - [DescribeBudgetActionHistoriesPaginator](#describebudgetactionhistoriespaginator)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [DescribeNotificationsForBudgetPaginator](#describenotificationsforbudgetpaginator)
   - [DescribeSubscribersForNotificationPaginator](#describesubscribersfornotificationpaginator)
 
+<a id="describebudgetactionhistoriespaginator"></a>
+
 ## DescribeBudgetActionHistoriesPaginator
 
 Type annotations for
@@ -24,10 +28,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_budgets.paginator import DescribeBudgetActionHistoriesPaginator
 
 def get_describe_budget_action_histories_paginator() -> DescribeBudgetActionHistoriesPaginator:
-    return boto3.client("budgets").get_paginator("describe_budget_action_histories")
+    return Session().client("budgets").get_paginator("describe_budget_action_histories")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `DescribeBudgetActionHistoriesPaginator.paginate` method:
 `DescribeBudgetActionHistoriesPaginator.paginate` returns
 `_PageIterator`\[[DescribeBudgetActionHistoriesResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponsetypedef)\].
 
+<a id="describebudgetactionsforaccountpaginator"></a>
+
 ## DescribeBudgetActionsForAccountPaginator
 
 Type annotations for
@@ -53,10 +61,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_budgets.paginator import DescribeBudgetActionsForAccountPaginator
 
 def get_describe_budget_actions_for_account_paginator() -> DescribeBudgetActionsForAccountPaginator:
-    return boto3.client("budgets").get_paginator("describe_budget_actions_for_account")
+    return Session().client("budgets").get_paginator("describe_budget_actions_for_account")
 ```
 
 Boto3 documentation:
@@ -71,6 +81,8 @@ Arguments for `DescribeBudgetActionsForAccountPaginator.paginate` method:
 `DescribeBudgetActionsForAccountPaginator.paginate` returns
 `_PageIterator`\[[DescribeBudgetActionsForAccountResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponsetypedef)\].
 
+<a id="describebudgetactionsforbudgetpaginator"></a>
+
 ## DescribeBudgetActionsForBudgetPaginator
 
 Type annotations for
@@ -79,10 +91,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_budgets.paginator import DescribeBudgetActionsForBudgetPaginator
 
 def get_describe_budget_actions_for_budget_paginator() -> DescribeBudgetActionsForBudgetPaginator:
-    return boto3.client("budgets").get_paginator("describe_budget_actions_for_budget")
+    return Session().client("budgets").get_paginator("describe_budget_actions_for_budget")
 ```
 
 Boto3 documentation:
@@ -98,6 +112,8 @@ Arguments for `DescribeBudgetActionsForBudgetPaginator.paginate` method:
 `DescribeBudgetActionsForBudgetPaginator.paginate` returns
 `_PageIterator`\[[DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef)\].
 
+<a id="describebudgetperformancehistorypaginator"></a>
+
 ## DescribeBudgetPerformanceHistoryPaginator
 
 Type annotations for
@@ -106,10 +122,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_budgets.paginator import DescribeBudgetPerformanceHistoryPaginator
 
 def get_describe_budget_performance_history_paginator() -> DescribeBudgetPerformanceHistoryPaginator:
-    return boto3.client("budgets").get_paginator("describe_budget_performance_history")
+    return Session().client("budgets").get_paginator("describe_budget_performance_history")
 ```
 
 Boto3 documentation:
@@ -126,6 +144,8 @@ Arguments for `DescribeBudgetPerformanceHistoryPaginator.paginate` method:
 `DescribeBudgetPerformanceHistoryPaginator.paginate` returns
 `_PageIterator`\[[DescribeBudgetPerformanceHistoryResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponsetypedef)\].
 
+<a id="describebudgetspaginator"></a>
+
 ## DescribeBudgetsPaginator
 
 Type annotations for
@@ -134,10 +154,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_budgets.paginator import DescribeBudgetsPaginator
 
 def get_describe_budgets_paginator() -> DescribeBudgetsPaginator:
-    return boto3.client("budgets").get_paginator("describe_budgets")
+    return Session().client("budgets").get_paginator("describe_budgets")
 ```
 
 Boto3 documentation:
@@ -152,6 +174,8 @@ Arguments for `DescribeBudgetsPaginator.paginate` method:
 `DescribeBudgetsPaginator.paginate` returns
 `_PageIterator`\[[DescribeBudgetsResponseTypeDef](./type_defs.md#describebudgetsresponsetypedef)\].
 
+<a id="describenotificationsforbudgetpaginator"></a>
+
 ## DescribeNotificationsForBudgetPaginator
 
 Type annotations for
@@ -160,10 +184,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_budgets.paginator import DescribeNotificationsForBudgetPaginator
 
 def get_describe_notifications_for_budget_paginator() -> DescribeNotificationsForBudgetPaginator:
-    return boto3.client("budgets").get_paginator("describe_notifications_for_budget")
+    return Session().client("budgets").get_paginator("describe_notifications_for_budget")
 ```
 
 Boto3 documentation:
@@ -179,6 +205,8 @@ Arguments for `DescribeNotificationsForBudgetPaginator.paginate` method:
 `DescribeNotificationsForBudgetPaginator.paginate` returns
 `_PageIterator`\[[DescribeNotificationsForBudgetResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponsetypedef)\].
 
+<a id="describesubscribersfornotificationpaginator"></a>
+
 ## DescribeSubscribersForNotificationPaginator
 
 Type annotations for
@@ -187,10 +215,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_budgets.paginator import DescribeSubscribersForNotificationPaginator
 
 def get_describe_subscribers_for_notification_paginator() -> DescribeSubscribersForNotificationPaginator:
-    return boto3.client("budgets").get_paginator("describe_subscribers_for_notification")
+    return Session().client("budgets").get_paginator("describe_subscribers_for_notification")
 ```
 
 Boto3 documentation:

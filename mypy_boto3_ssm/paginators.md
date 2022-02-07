@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-ssm-module"></a>
+
 # Paginators for boto3 SSM module
 
 > [Index](..) > [SSM](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
 type annotations stubs module
-[mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
+[mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 - [Paginators for boto3 SSM module](#paginators-for-boto3-ssm-module)
   - [DescribeActivationsPaginator](#describeactivationspaginator)
@@ -55,6 +57,8 @@ type annotations stubs module
   - [ListResourceComplianceSummariesPaginator](#listresourcecompliancesummariespaginator)
   - [ListResourceDataSyncPaginator](#listresourcedatasyncpaginator)
 
+<a id="describeactivationspaginator"></a>
+
 ## DescribeActivationsPaginator
 
 Type annotations for
@@ -63,10 +67,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeActivationsPaginator
 
 def get_describe_activations_paginator() -> DescribeActivationsPaginator:
-    return boto3.client("ssm").get_paginator("describe_activations")
+    return Session().client("ssm").get_paginator("describe_activations")
 ```
 
 Boto3 documentation:
@@ -82,6 +88,8 @@ Arguments for `DescribeActivationsPaginator.paginate` method:
 `DescribeActivationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeActivationsResultTypeDef](./type_defs.md#describeactivationsresulttypedef)\].
 
+<a id="describeassociationexecutiontargetspaginator"></a>
+
 ## DescribeAssociationExecutionTargetsPaginator
 
 Type annotations for
@@ -90,10 +98,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeAssociationExecutionTargetsPaginator
 
 def get_describe_association_execution_targets_paginator() -> DescribeAssociationExecutionTargetsPaginator:
-    return boto3.client("ssm").get_paginator("describe_association_execution_targets")
+    return Session().client("ssm").get_paginator("describe_association_execution_targets")
 ```
 
 Boto3 documentation:
@@ -111,6 +121,8 @@ Arguments for `DescribeAssociationExecutionTargetsPaginator.paginate` method:
 `DescribeAssociationExecutionTargetsPaginator.paginate` returns
 `_PageIterator`\[[DescribeAssociationExecutionTargetsResultTypeDef](./type_defs.md#describeassociationexecutiontargetsresulttypedef)\].
 
+<a id="describeassociationexecutionspaginator"></a>
+
 ## DescribeAssociationExecutionsPaginator
 
 Type annotations for
@@ -119,10 +131,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeAssociationExecutionsPaginator
 
 def get_describe_association_executions_paginator() -> DescribeAssociationExecutionsPaginator:
-    return boto3.client("ssm").get_paginator("describe_association_executions")
+    return Session().client("ssm").get_paginator("describe_association_executions")
 ```
 
 Boto3 documentation:
@@ -139,6 +153,8 @@ Arguments for `DescribeAssociationExecutionsPaginator.paginate` method:
 `DescribeAssociationExecutionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeAssociationExecutionsResultTypeDef](./type_defs.md#describeassociationexecutionsresulttypedef)\].
 
+<a id="describeautomationexecutionspaginator"></a>
+
 ## DescribeAutomationExecutionsPaginator
 
 Type annotations for
@@ -147,10 +163,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeAutomationExecutionsPaginator
 
 def get_describe_automation_executions_paginator() -> DescribeAutomationExecutionsPaginator:
-    return boto3.client("ssm").get_paginator("describe_automation_executions")
+    return Session().client("ssm").get_paginator("describe_automation_executions")
 ```
 
 Boto3 documentation:
@@ -166,6 +184,8 @@ Arguments for `DescribeAutomationExecutionsPaginator.paginate` method:
 `DescribeAutomationExecutionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeAutomationExecutionsResultTypeDef](./type_defs.md#describeautomationexecutionsresulttypedef)\].
 
+<a id="describeautomationstepexecutionspaginator"></a>
+
 ## DescribeAutomationStepExecutionsPaginator
 
 Type annotations for
@@ -174,10 +194,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeAutomationStepExecutionsPaginator
 
 def get_describe_automation_step_executions_paginator() -> DescribeAutomationStepExecutionsPaginator:
-    return boto3.client("ssm").get_paginator("describe_automation_step_executions")
+    return Session().client("ssm").get_paginator("describe_automation_step_executions")
 ```
 
 Boto3 documentation:
@@ -195,6 +217,8 @@ Arguments for `DescribeAutomationStepExecutionsPaginator.paginate` method:
 `DescribeAutomationStepExecutionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeAutomationStepExecutionsResultTypeDef](./type_defs.md#describeautomationstepexecutionsresulttypedef)\].
 
+<a id="describeavailablepatchespaginator"></a>
+
 ## DescribeAvailablePatchesPaginator
 
 Type annotations for
@@ -203,10 +227,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeAvailablePatchesPaginator
 
 def get_describe_available_patches_paginator() -> DescribeAvailablePatchesPaginator:
-    return boto3.client("ssm").get_paginator("describe_available_patches")
+    return Session().client("ssm").get_paginator("describe_available_patches")
 ```
 
 Boto3 documentation:
@@ -222,6 +248,8 @@ Arguments for `DescribeAvailablePatchesPaginator.paginate` method:
 `DescribeAvailablePatchesPaginator.paginate` returns
 `_PageIterator`\[[DescribeAvailablePatchesResultTypeDef](./type_defs.md#describeavailablepatchesresulttypedef)\].
 
+<a id="describeeffectiveinstanceassociationspaginator"></a>
+
 ## DescribeEffectiveInstanceAssociationsPaginator
 
 Type annotations for
@@ -230,10 +258,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeEffectiveInstanceAssociationsPaginator
 
 def get_describe_effective_instance_associations_paginator() -> DescribeEffectiveInstanceAssociationsPaginator:
-    return boto3.client("ssm").get_paginator("describe_effective_instance_associations")
+    return Session().client("ssm").get_paginator("describe_effective_instance_associations")
 ```
 
 Boto3 documentation:
@@ -248,6 +278,8 @@ Arguments for `DescribeEffectiveInstanceAssociationsPaginator.paginate` method:
 `DescribeEffectiveInstanceAssociationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeEffectiveInstanceAssociationsResultTypeDef](./type_defs.md#describeeffectiveinstanceassociationsresulttypedef)\].
 
+<a id="describeeffectivepatchesforpatchbaselinepaginator"></a>
+
 ## DescribeEffectivePatchesForPatchBaselinePaginator
 
 Type annotations for
@@ -256,10 +288,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeEffectivePatchesForPatchBaselinePaginator
 
 def get_describe_effective_patches_for_patch_baseline_paginator() -> DescribeEffectivePatchesForPatchBaselinePaginator:
-    return boto3.client("ssm").get_paginator("describe_effective_patches_for_patch_baseline")
+    return Session().client("ssm").get_paginator("describe_effective_patches_for_patch_baseline")
 ```
 
 Boto3 documentation:
@@ -275,6 +309,8 @@ method:
 `DescribeEffectivePatchesForPatchBaselinePaginator.paginate` returns
 `_PageIterator`\[[DescribeEffectivePatchesForPatchBaselineResultTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselineresulttypedef)\].
 
+<a id="describeinstanceassociationsstatuspaginator"></a>
+
 ## DescribeInstanceAssociationsStatusPaginator
 
 Type annotations for
@@ -283,10 +319,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeInstanceAssociationsStatusPaginator
 
 def get_describe_instance_associations_status_paginator() -> DescribeInstanceAssociationsStatusPaginator:
-    return boto3.client("ssm").get_paginator("describe_instance_associations_status")
+    return Session().client("ssm").get_paginator("describe_instance_associations_status")
 ```
 
 Boto3 documentation:
@@ -301,6 +339,8 @@ Arguments for `DescribeInstanceAssociationsStatusPaginator.paginate` method:
 `DescribeInstanceAssociationsStatusPaginator.paginate` returns
 `_PageIterator`\[[DescribeInstanceAssociationsStatusResultTypeDef](./type_defs.md#describeinstanceassociationsstatusresulttypedef)\].
 
+<a id="describeinstanceinformationpaginator"></a>
+
 ## DescribeInstanceInformationPaginator
 
 Type annotations for
@@ -309,10 +349,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeInstanceInformationPaginator
 
 def get_describe_instance_information_paginator() -> DescribeInstanceInformationPaginator:
-    return boto3.client("ssm").get_paginator("describe_instance_information")
+    return Session().client("ssm").get_paginator("describe_instance_information")
 ```
 
 Boto3 documentation:
@@ -330,6 +372,8 @@ Arguments for `DescribeInstanceInformationPaginator.paginate` method:
 `DescribeInstanceInformationPaginator.paginate` returns
 `_PageIterator`\[[DescribeInstanceInformationResultTypeDef](./type_defs.md#describeinstanceinformationresulttypedef)\].
 
+<a id="describeinstancepatchstatespaginator"></a>
+
 ## DescribeInstancePatchStatesPaginator
 
 Type annotations for
@@ -338,10 +382,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeInstancePatchStatesPaginator
 
 def get_describe_instance_patch_states_paginator() -> DescribeInstancePatchStatesPaginator:
-    return boto3.client("ssm").get_paginator("describe_instance_patch_states")
+    return Session().client("ssm").get_paginator("describe_instance_patch_states")
 ```
 
 Boto3 documentation:
@@ -356,6 +402,8 @@ Arguments for `DescribeInstancePatchStatesPaginator.paginate` method:
 `DescribeInstancePatchStatesPaginator.paginate` returns
 `_PageIterator`\[[DescribeInstancePatchStatesResultTypeDef](./type_defs.md#describeinstancepatchstatesresulttypedef)\].
 
+<a id="describeinstancepatchstatesforpatchgrouppaginator"></a>
+
 ## DescribeInstancePatchStatesForPatchGroupPaginator
 
 Type annotations for
@@ -364,10 +412,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeInstancePatchStatesForPatchGroupPaginator
 
 def get_describe_instance_patch_states_for_patch_group_paginator() -> DescribeInstancePatchStatesForPatchGroupPaginator:
-    return boto3.client("ssm").get_paginator("describe_instance_patch_states_for_patch_group")
+    return Session().client("ssm").get_paginator("describe_instance_patch_states_for_patch_group")
 ```
 
 Boto3 documentation:
@@ -385,6 +435,8 @@ method:
 `DescribeInstancePatchStatesForPatchGroupPaginator.paginate` returns
 `_PageIterator`\[[DescribeInstancePatchStatesForPatchGroupResultTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgroupresulttypedef)\].
 
+<a id="describeinstancepatchespaginator"></a>
+
 ## DescribeInstancePatchesPaginator
 
 Type annotations for
@@ -393,10 +445,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeInstancePatchesPaginator
 
 def get_describe_instance_patches_paginator() -> DescribeInstancePatchesPaginator:
-    return boto3.client("ssm").get_paginator("describe_instance_patches")
+    return Session().client("ssm").get_paginator("describe_instance_patches")
 ```
 
 Boto3 documentation:
@@ -413,6 +467,8 @@ Arguments for `DescribeInstancePatchesPaginator.paginate` method:
 `DescribeInstancePatchesPaginator.paginate` returns
 `_PageIterator`\[[DescribeInstancePatchesResultTypeDef](./type_defs.md#describeinstancepatchesresulttypedef)\].
 
+<a id="describeinventorydeletionspaginator"></a>
+
 ## DescribeInventoryDeletionsPaginator
 
 Type annotations for
@@ -421,10 +477,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeInventoryDeletionsPaginator
 
 def get_describe_inventory_deletions_paginator() -> DescribeInventoryDeletionsPaginator:
-    return boto3.client("ssm").get_paginator("describe_inventory_deletions")
+    return Session().client("ssm").get_paginator("describe_inventory_deletions")
 ```
 
 Boto3 documentation:
@@ -439,6 +497,8 @@ Arguments for `DescribeInventoryDeletionsPaginator.paginate` method:
 `DescribeInventoryDeletionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeInventoryDeletionsResultTypeDef](./type_defs.md#describeinventorydeletionsresulttypedef)\].
 
+<a id="describemaintenancewindowexecutiontaskinvocationspaginator"></a>
+
 ## DescribeMaintenanceWindowExecutionTaskInvocationsPaginator
 
 Type annotations for
@@ -447,10 +507,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionTaskInvocationsPaginator
 
 def get_describe_maintenance_window_execution_task_invocations_paginator() -> DescribeMaintenanceWindowExecutionTaskInvocationsPaginator:
-    return boto3.client("ssm").get_paginator("describe_maintenance_window_execution_task_invocations")
+    return Session().client("ssm").get_paginator("describe_maintenance_window_execution_task_invocations")
 ```
 
 Boto3 documentation:
@@ -469,6 +531,8 @@ Arguments for
 `DescribeMaintenanceWindowExecutionTaskInvocationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsresulttypedef)\].
 
+<a id="describemaintenancewindowexecutiontaskspaginator"></a>
+
 ## DescribeMaintenanceWindowExecutionTasksPaginator
 
 Type annotations for
@@ -477,10 +541,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionTasksPaginator
 
 def get_describe_maintenance_window_execution_tasks_paginator() -> DescribeMaintenanceWindowExecutionTasksPaginator:
-    return boto3.client("ssm").get_paginator("describe_maintenance_window_execution_tasks")
+    return Session().client("ssm").get_paginator("describe_maintenance_window_execution_tasks")
 ```
 
 Boto3 documentation:
@@ -498,6 +564,8 @@ method:
 `DescribeMaintenanceWindowExecutionTasksPaginator.paginate` returns
 `_PageIterator`\[[DescribeMaintenanceWindowExecutionTasksResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksresulttypedef)\].
 
+<a id="describemaintenancewindowexecutionspaginator"></a>
+
 ## DescribeMaintenanceWindowExecutionsPaginator
 
 Type annotations for
@@ -506,10 +574,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionsPaginator
 
 def get_describe_maintenance_window_executions_paginator() -> DescribeMaintenanceWindowExecutionsPaginator:
-    return boto3.client("ssm").get_paginator("describe_maintenance_window_executions")
+    return Session().client("ssm").get_paginator("describe_maintenance_window_executions")
 ```
 
 Boto3 documentation:
@@ -526,6 +596,8 @@ Arguments for `DescribeMaintenanceWindowExecutionsPaginator.paginate` method:
 `DescribeMaintenanceWindowExecutionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeMaintenanceWindowExecutionsResultTypeDef](./type_defs.md#describemaintenancewindowexecutionsresulttypedef)\].
 
+<a id="describemaintenancewindowschedulepaginator"></a>
+
 ## DescribeMaintenanceWindowSchedulePaginator
 
 Type annotations for
@@ -534,10 +606,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowSchedulePaginator
 
 def get_describe_maintenance_window_schedule_paginator() -> DescribeMaintenanceWindowSchedulePaginator:
-    return boto3.client("ssm").get_paginator("describe_maintenance_window_schedule")
+    return Session().client("ssm").get_paginator("describe_maintenance_window_schedule")
 ```
 
 Boto3 documentation:
@@ -557,6 +631,8 @@ Arguments for `DescribeMaintenanceWindowSchedulePaginator.paginate` method:
 `DescribeMaintenanceWindowSchedulePaginator.paginate` returns
 `_PageIterator`\[[DescribeMaintenanceWindowScheduleResultTypeDef](./type_defs.md#describemaintenancewindowscheduleresulttypedef)\].
 
+<a id="describemaintenancewindowtargetspaginator"></a>
+
 ## DescribeMaintenanceWindowTargetsPaginator
 
 Type annotations for
@@ -565,10 +641,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowTargetsPaginator
 
 def get_describe_maintenance_window_targets_paginator() -> DescribeMaintenanceWindowTargetsPaginator:
-    return boto3.client("ssm").get_paginator("describe_maintenance_window_targets")
+    return Session().client("ssm").get_paginator("describe_maintenance_window_targets")
 ```
 
 Boto3 documentation:
@@ -585,6 +663,8 @@ Arguments for `DescribeMaintenanceWindowTargetsPaginator.paginate` method:
 `DescribeMaintenanceWindowTargetsPaginator.paginate` returns
 `_PageIterator`\[[DescribeMaintenanceWindowTargetsResultTypeDef](./type_defs.md#describemaintenancewindowtargetsresulttypedef)\].
 
+<a id="describemaintenancewindowtaskspaginator"></a>
+
 ## DescribeMaintenanceWindowTasksPaginator
 
 Type annotations for
@@ -593,10 +673,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowTasksPaginator
 
 def get_describe_maintenance_window_tasks_paginator() -> DescribeMaintenanceWindowTasksPaginator:
-    return boto3.client("ssm").get_paginator("describe_maintenance_window_tasks")
+    return Session().client("ssm").get_paginator("describe_maintenance_window_tasks")
 ```
 
 Boto3 documentation:
@@ -613,6 +695,8 @@ Arguments for `DescribeMaintenanceWindowTasksPaginator.paginate` method:
 `DescribeMaintenanceWindowTasksPaginator.paginate` returns
 `_PageIterator`\[[DescribeMaintenanceWindowTasksResultTypeDef](./type_defs.md#describemaintenancewindowtasksresulttypedef)\].
 
+<a id="describemaintenancewindowspaginator"></a>
+
 ## DescribeMaintenanceWindowsPaginator
 
 Type annotations for
@@ -621,10 +705,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowsPaginator
 
 def get_describe_maintenance_windows_paginator() -> DescribeMaintenanceWindowsPaginator:
-    return boto3.client("ssm").get_paginator("describe_maintenance_windows")
+    return Session().client("ssm").get_paginator("describe_maintenance_windows")
 ```
 
 Boto3 documentation:
@@ -640,6 +726,8 @@ Arguments for `DescribeMaintenanceWindowsPaginator.paginate` method:
 `DescribeMaintenanceWindowsPaginator.paginate` returns
 `_PageIterator`\[[DescribeMaintenanceWindowsResultTypeDef](./type_defs.md#describemaintenancewindowsresulttypedef)\].
 
+<a id="describemaintenancewindowsfortargetpaginator"></a>
+
 ## DescribeMaintenanceWindowsForTargetPaginator
 
 Type annotations for
@@ -648,10 +736,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowsForTargetPaginator
 
 def get_describe_maintenance_windows_for_target_paginator() -> DescribeMaintenanceWindowsForTargetPaginator:
-    return boto3.client("ssm").get_paginator("describe_maintenance_windows_for_target")
+    return Session().client("ssm").get_paginator("describe_maintenance_windows_for_target")
 ```
 
 Boto3 documentation:
@@ -670,6 +760,8 @@ Arguments for `DescribeMaintenanceWindowsForTargetPaginator.paginate` method:
 `DescribeMaintenanceWindowsForTargetPaginator.paginate` returns
 `_PageIterator`\[[DescribeMaintenanceWindowsForTargetResultTypeDef](./type_defs.md#describemaintenancewindowsfortargetresulttypedef)\].
 
+<a id="describeopsitemspaginator"></a>
+
 ## DescribeOpsItemsPaginator
 
 Type annotations for `boto3.client("ssm").get_paginator("describe_ops_items")`.
@@ -677,10 +769,12 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_ops_items")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeOpsItemsPaginator
 
 def get_describe_ops_items_paginator() -> DescribeOpsItemsPaginator:
-    return boto3.client("ssm").get_paginator("describe_ops_items")
+    return Session().client("ssm").get_paginator("describe_ops_items")
 ```
 
 Boto3 documentation:
@@ -696,6 +790,8 @@ Arguments for `DescribeOpsItemsPaginator.paginate` method:
 `DescribeOpsItemsPaginator.paginate` returns
 `_PageIterator`\[[DescribeOpsItemsResponseTypeDef](./type_defs.md#describeopsitemsresponsetypedef)\].
 
+<a id="describeparameterspaginator"></a>
+
 ## DescribeParametersPaginator
 
 Type annotations for
@@ -704,10 +800,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeParametersPaginator
 
 def get_describe_parameters_paginator() -> DescribeParametersPaginator:
-    return boto3.client("ssm").get_paginator("describe_parameters")
+    return Session().client("ssm").get_paginator("describe_parameters")
 ```
 
 Boto3 documentation:
@@ -725,6 +823,8 @@ Arguments for `DescribeParametersPaginator.paginate` method:
 `DescribeParametersPaginator.paginate` returns
 `_PageIterator`\[[DescribeParametersResultTypeDef](./type_defs.md#describeparametersresulttypedef)\].
 
+<a id="describepatchbaselinespaginator"></a>
+
 ## DescribePatchBaselinesPaginator
 
 Type annotations for
@@ -733,10 +833,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribePatchBaselinesPaginator
 
 def get_describe_patch_baselines_paginator() -> DescribePatchBaselinesPaginator:
-    return boto3.client("ssm").get_paginator("describe_patch_baselines")
+    return Session().client("ssm").get_paginator("describe_patch_baselines")
 ```
 
 Boto3 documentation:
@@ -752,6 +854,8 @@ Arguments for `DescribePatchBaselinesPaginator.paginate` method:
 `DescribePatchBaselinesPaginator.paginate` returns
 `_PageIterator`\[[DescribePatchBaselinesResultTypeDef](./type_defs.md#describepatchbaselinesresulttypedef)\].
 
+<a id="describepatchgroupspaginator"></a>
+
 ## DescribePatchGroupsPaginator
 
 Type annotations for
@@ -760,10 +864,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribePatchGroupsPaginator
 
 def get_describe_patch_groups_paginator() -> DescribePatchGroupsPaginator:
-    return boto3.client("ssm").get_paginator("describe_patch_groups")
+    return Session().client("ssm").get_paginator("describe_patch_groups")
 ```
 
 Boto3 documentation:
@@ -779,6 +885,8 @@ Arguments for `DescribePatchGroupsPaginator.paginate` method:
 `DescribePatchGroupsPaginator.paginate` returns
 `_PageIterator`\[[DescribePatchGroupsResultTypeDef](./type_defs.md#describepatchgroupsresulttypedef)\].
 
+<a id="describepatchpropertiespaginator"></a>
+
 ## DescribePatchPropertiesPaginator
 
 Type annotations for
@@ -787,10 +895,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribePatchPropertiesPaginator
 
 def get_describe_patch_properties_paginator() -> DescribePatchPropertiesPaginator:
-    return boto3.client("ssm").get_paginator("describe_patch_properties")
+    return Session().client("ssm").get_paginator("describe_patch_properties")
 ```
 
 Boto3 documentation:
@@ -808,6 +918,8 @@ Arguments for `DescribePatchPropertiesPaginator.paginate` method:
 `DescribePatchPropertiesPaginator.paginate` returns
 `_PageIterator`\[[DescribePatchPropertiesResultTypeDef](./type_defs.md#describepatchpropertiesresulttypedef)\].
 
+<a id="describesessionspaginator"></a>
+
 ## DescribeSessionsPaginator
 
 Type annotations for `boto3.client("ssm").get_paginator("describe_sessions")`.
@@ -815,10 +927,12 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_sessions")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import DescribeSessionsPaginator
 
 def get_describe_sessions_paginator() -> DescribeSessionsPaginator:
-    return boto3.client("ssm").get_paginator("describe_sessions")
+    return Session().client("ssm").get_paginator("describe_sessions")
 ```
 
 Boto3 documentation:
@@ -835,6 +949,8 @@ Arguments for `DescribeSessionsPaginator.paginate` method:
 `DescribeSessionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeSessionsResponseTypeDef](./type_defs.md#describesessionsresponsetypedef)\].
 
+<a id="getinventorypaginator"></a>
+
 ## GetInventoryPaginator
 
 Type annotations for `boto3.client("ssm").get_paginator("get_inventory")`.
@@ -842,10 +958,12 @@ Type annotations for `boto3.client("ssm").get_paginator("get_inventory")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import GetInventoryPaginator
 
 def get_get_inventory_paginator() -> GetInventoryPaginator:
-    return boto3.client("ssm").get_paginator("get_inventory")
+    return Session().client("ssm").get_paginator("get_inventory")
 ```
 
 Boto3 documentation:
@@ -865,6 +983,8 @@ Arguments for `GetInventoryPaginator.paginate` method:
 `GetInventoryPaginator.paginate` returns
 `_PageIterator`\[[GetInventoryResultTypeDef](./type_defs.md#getinventoryresulttypedef)\].
 
+<a id="getinventoryschemapaginator"></a>
+
 ## GetInventorySchemaPaginator
 
 Type annotations for
@@ -873,10 +993,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import GetInventorySchemaPaginator
 
 def get_get_inventory_schema_paginator() -> GetInventorySchemaPaginator:
-    return boto3.client("ssm").get_paginator("get_inventory_schema")
+    return Session().client("ssm").get_paginator("get_inventory_schema")
 ```
 
 Boto3 documentation:
@@ -893,6 +1015,8 @@ Arguments for `GetInventorySchemaPaginator.paginate` method:
 `GetInventorySchemaPaginator.paginate` returns
 `_PageIterator`\[[GetInventorySchemaResultTypeDef](./type_defs.md#getinventoryschemaresulttypedef)\].
 
+<a id="getopssummarypaginator"></a>
+
 ## GetOpsSummaryPaginator
 
 Type annotations for `boto3.client("ssm").get_paginator("get_ops_summary")`.
@@ -900,10 +1024,12 @@ Type annotations for `boto3.client("ssm").get_paginator("get_ops_summary")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import GetOpsSummaryPaginator
 
 def get_get_ops_summary_paginator() -> GetOpsSummaryPaginator:
-    return boto3.client("ssm").get_paginator("get_ops_summary")
+    return Session().client("ssm").get_paginator("get_ops_summary")
 ```
 
 Boto3 documentation:
@@ -923,6 +1049,8 @@ Arguments for `GetOpsSummaryPaginator.paginate` method:
 `GetOpsSummaryPaginator.paginate` returns
 `_PageIterator`\[[GetOpsSummaryResultTypeDef](./type_defs.md#getopssummaryresulttypedef)\].
 
+<a id="getparameterhistorypaginator"></a>
+
 ## GetParameterHistoryPaginator
 
 Type annotations for
@@ -931,10 +1059,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import GetParameterHistoryPaginator
 
 def get_get_parameter_history_paginator() -> GetParameterHistoryPaginator:
-    return boto3.client("ssm").get_paginator("get_parameter_history")
+    return Session().client("ssm").get_paginator("get_parameter_history")
 ```
 
 Boto3 documentation:
@@ -950,6 +1080,8 @@ Arguments for `GetParameterHistoryPaginator.paginate` method:
 `GetParameterHistoryPaginator.paginate` returns
 `_PageIterator`\[[GetParameterHistoryResultTypeDef](./type_defs.md#getparameterhistoryresulttypedef)\].
 
+<a id="getparametersbypathpaginator"></a>
+
 ## GetParametersByPathPaginator
 
 Type annotations for
@@ -958,10 +1090,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import GetParametersByPathPaginator
 
 def get_get_parameters_by_path_paginator() -> GetParametersByPathPaginator:
-    return boto3.client("ssm").get_paginator("get_parameters_by_path")
+    return Session().client("ssm").get_paginator("get_parameters_by_path")
 ```
 
 Boto3 documentation:
@@ -980,6 +1114,8 @@ Arguments for `GetParametersByPathPaginator.paginate` method:
 `GetParametersByPathPaginator.paginate` returns
 `_PageIterator`\[[GetParametersByPathResultTypeDef](./type_defs.md#getparametersbypathresulttypedef)\].
 
+<a id="listassociationversionspaginator"></a>
+
 ## ListAssociationVersionsPaginator
 
 Type annotations for
@@ -988,10 +1124,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListAssociationVersionsPaginator
 
 def get_list_association_versions_paginator() -> ListAssociationVersionsPaginator:
-    return boto3.client("ssm").get_paginator("list_association_versions")
+    return Session().client("ssm").get_paginator("list_association_versions")
 ```
 
 Boto3 documentation:
@@ -1006,6 +1144,8 @@ Arguments for `ListAssociationVersionsPaginator.paginate` method:
 `ListAssociationVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListAssociationVersionsResultTypeDef](./type_defs.md#listassociationversionsresulttypedef)\].
 
+<a id="listassociationspaginator"></a>
+
 ## ListAssociationsPaginator
 
 Type annotations for `boto3.client("ssm").get_paginator("list_associations")`.
@@ -1013,10 +1153,12 @@ Type annotations for `boto3.client("ssm").get_paginator("list_associations")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListAssociationsPaginator
 
 def get_list_associations_paginator() -> ListAssociationsPaginator:
-    return boto3.client("ssm").get_paginator("list_associations")
+    return Session().client("ssm").get_paginator("list_associations")
 ```
 
 Boto3 documentation:
@@ -1032,6 +1174,8 @@ Arguments for `ListAssociationsPaginator.paginate` method:
 `ListAssociationsPaginator.paginate` returns
 `_PageIterator`\[[ListAssociationsResultTypeDef](./type_defs.md#listassociationsresulttypedef)\].
 
+<a id="listcommandinvocationspaginator"></a>
+
 ## ListCommandInvocationsPaginator
 
 Type annotations for
@@ -1040,10 +1184,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListCommandInvocationsPaginator
 
 def get_list_command_invocations_paginator() -> ListCommandInvocationsPaginator:
-    return boto3.client("ssm").get_paginator("list_command_invocations")
+    return Session().client("ssm").get_paginator("list_command_invocations")
 ```
 
 Boto3 documentation:
@@ -1062,6 +1208,8 @@ Arguments for `ListCommandInvocationsPaginator.paginate` method:
 `ListCommandInvocationsPaginator.paginate` returns
 `_PageIterator`\[[ListCommandInvocationsResultTypeDef](./type_defs.md#listcommandinvocationsresulttypedef)\].
 
+<a id="listcommandspaginator"></a>
+
 ## ListCommandsPaginator
 
 Type annotations for `boto3.client("ssm").get_paginator("list_commands")`.
@@ -1069,10 +1217,12 @@ Type annotations for `boto3.client("ssm").get_paginator("list_commands")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListCommandsPaginator
 
 def get_list_commands_paginator() -> ListCommandsPaginator:
-    return boto3.client("ssm").get_paginator("list_commands")
+    return Session().client("ssm").get_paginator("list_commands")
 ```
 
 Boto3 documentation:
@@ -1090,6 +1240,8 @@ Arguments for `ListCommandsPaginator.paginate` method:
 `ListCommandsPaginator.paginate` returns
 `_PageIterator`\[[ListCommandsResultTypeDef](./type_defs.md#listcommandsresulttypedef)\].
 
+<a id="listcomplianceitemspaginator"></a>
+
 ## ListComplianceItemsPaginator
 
 Type annotations for
@@ -1098,10 +1250,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListComplianceItemsPaginator
 
 def get_list_compliance_items_paginator() -> ListComplianceItemsPaginator:
-    return boto3.client("ssm").get_paginator("list_compliance_items")
+    return Session().client("ssm").get_paginator("list_compliance_items")
 ```
 
 Boto3 documentation:
@@ -1119,6 +1273,8 @@ Arguments for `ListComplianceItemsPaginator.paginate` method:
 `ListComplianceItemsPaginator.paginate` returns
 `_PageIterator`\[[ListComplianceItemsResultTypeDef](./type_defs.md#listcomplianceitemsresulttypedef)\].
 
+<a id="listcompliancesummariespaginator"></a>
+
 ## ListComplianceSummariesPaginator
 
 Type annotations for
@@ -1127,10 +1283,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListComplianceSummariesPaginator
 
 def get_list_compliance_summaries_paginator() -> ListComplianceSummariesPaginator:
-    return boto3.client("ssm").get_paginator("list_compliance_summaries")
+    return Session().client("ssm").get_paginator("list_compliance_summaries")
 ```
 
 Boto3 documentation:
@@ -1146,6 +1304,8 @@ Arguments for `ListComplianceSummariesPaginator.paginate` method:
 `ListComplianceSummariesPaginator.paginate` returns
 `_PageIterator`\[[ListComplianceSummariesResultTypeDef](./type_defs.md#listcompliancesummariesresulttypedef)\].
 
+<a id="listdocumentversionspaginator"></a>
+
 ## ListDocumentVersionsPaginator
 
 Type annotations for
@@ -1154,10 +1314,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListDocumentVersionsPaginator
 
 def get_list_document_versions_paginator() -> ListDocumentVersionsPaginator:
-    return boto3.client("ssm").get_paginator("list_document_versions")
+    return Session().client("ssm").get_paginator("list_document_versions")
 ```
 
 Boto3 documentation:
@@ -1172,6 +1334,8 @@ Arguments for `ListDocumentVersionsPaginator.paginate` method:
 `ListDocumentVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListDocumentVersionsResultTypeDef](./type_defs.md#listdocumentversionsresulttypedef)\].
 
+<a id="listdocumentspaginator"></a>
+
 ## ListDocumentsPaginator
 
 Type annotations for `boto3.client("ssm").get_paginator("list_documents")`.
@@ -1179,10 +1343,12 @@ Type annotations for `boto3.client("ssm").get_paginator("list_documents")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListDocumentsPaginator
 
 def get_list_documents_paginator() -> ListDocumentsPaginator:
-    return boto3.client("ssm").get_paginator("list_documents")
+    return Session().client("ssm").get_paginator("list_documents")
 ```
 
 Boto3 documentation:
@@ -1200,6 +1366,8 @@ Arguments for `ListDocumentsPaginator.paginate` method:
 `ListDocumentsPaginator.paginate` returns
 `_PageIterator`\[[ListDocumentsResultTypeDef](./type_defs.md#listdocumentsresulttypedef)\].
 
+<a id="listopsitemeventspaginator"></a>
+
 ## ListOpsItemEventsPaginator
 
 Type annotations for
@@ -1208,10 +1376,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListOpsItemEventsPaginator
 
 def get_list_ops_item_events_paginator() -> ListOpsItemEventsPaginator:
-    return boto3.client("ssm").get_paginator("list_ops_item_events")
+    return Session().client("ssm").get_paginator("list_ops_item_events")
 ```
 
 Boto3 documentation:
@@ -1227,6 +1397,8 @@ Arguments for `ListOpsItemEventsPaginator.paginate` method:
 `ListOpsItemEventsPaginator.paginate` returns
 `_PageIterator`\[[ListOpsItemEventsResponseTypeDef](./type_defs.md#listopsitemeventsresponsetypedef)\].
 
+<a id="listopsitemrelateditemspaginator"></a>
+
 ## ListOpsItemRelatedItemsPaginator
 
 Type annotations for
@@ -1235,10 +1407,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListOpsItemRelatedItemsPaginator
 
 def get_list_ops_item_related_items_paginator() -> ListOpsItemRelatedItemsPaginator:
-    return boto3.client("ssm").get_paginator("list_ops_item_related_items")
+    return Session().client("ssm").get_paginator("list_ops_item_related_items")
 ```
 
 Boto3 documentation:
@@ -1255,6 +1429,8 @@ Arguments for `ListOpsItemRelatedItemsPaginator.paginate` method:
 `ListOpsItemRelatedItemsPaginator.paginate` returns
 `_PageIterator`\[[ListOpsItemRelatedItemsResponseTypeDef](./type_defs.md#listopsitemrelateditemsresponsetypedef)\].
 
+<a id="listopsmetadatapaginator"></a>
+
 ## ListOpsMetadataPaginator
 
 Type annotations for `boto3.client("ssm").get_paginator("list_ops_metadata")`.
@@ -1262,10 +1438,12 @@ Type annotations for `boto3.client("ssm").get_paginator("list_ops_metadata")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListOpsMetadataPaginator
 
 def get_list_ops_metadata_paginator() -> ListOpsMetadataPaginator:
-    return boto3.client("ssm").get_paginator("list_ops_metadata")
+    return Session().client("ssm").get_paginator("list_ops_metadata")
 ```
 
 Boto3 documentation:
@@ -1281,6 +1459,8 @@ Arguments for `ListOpsMetadataPaginator.paginate` method:
 `ListOpsMetadataPaginator.paginate` returns
 `_PageIterator`\[[ListOpsMetadataResultTypeDef](./type_defs.md#listopsmetadataresulttypedef)\].
 
+<a id="listresourcecompliancesummariespaginator"></a>
+
 ## ListResourceComplianceSummariesPaginator
 
 Type annotations for
@@ -1289,10 +1469,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListResourceComplianceSummariesPaginator
 
 def get_list_resource_compliance_summaries_paginator() -> ListResourceComplianceSummariesPaginator:
-    return boto3.client("ssm").get_paginator("list_resource_compliance_summaries")
+    return Session().client("ssm").get_paginator("list_resource_compliance_summaries")
 ```
 
 Boto3 documentation:
@@ -1308,6 +1490,8 @@ Arguments for `ListResourceComplianceSummariesPaginator.paginate` method:
 `ListResourceComplianceSummariesPaginator.paginate` returns
 `_PageIterator`\[[ListResourceComplianceSummariesResultTypeDef](./type_defs.md#listresourcecompliancesummariesresulttypedef)\].
 
+<a id="listresourcedatasyncpaginator"></a>
+
 ## ListResourceDataSyncPaginator
 
 Type annotations for
@@ -1316,10 +1500,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm.paginator import ListResourceDataSyncPaginator
 
 def get_list_resource_data_sync_paginator() -> ListResourceDataSyncPaginator:
-    return boto3.client("ssm").get_paginator("list_resource_data_sync")
+    return Session().client("ssm").get_paginator("list_resource_data_sync")
 ```
 
 Boto3 documentation:

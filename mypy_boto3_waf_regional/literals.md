@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-wafregional-module"></a>
+
 # Literals for boto3 WAFRegional module
 
 > [Index](..) > [WAFRegional](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)
 type annotations stubs module
-[mypy_boto3_waf_regional](https://pypi.org/project/mypy-boto3-waf-regional/).
+[mypy-boto3-waf-regional](https://pypi.org/project/mypy-boto3-waf-regional/).
 
 - [Literals for boto3 WAFRegional module](#literals-for-boto3-wafregional-module)
   - [ChangeActionType](#changeactiontype)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [WafRuleTypeType](#wafruletypetype)
   - [ServiceName](#servicename)
 
+<a id="changeactiontype"></a>
+
 ## ChangeActionType
 
 ```python
@@ -35,6 +39,8 @@ Values:
 
 - `DELETE`
 - `INSERT`
+
+<a id="changetokenstatustype"></a>
 
 ## ChangeTokenStatusType
 
@@ -47,6 +53,8 @@ Values:
 - `INSYNC`
 - `PENDING`
 - `PROVISIONED`
+
+<a id="comparisonoperatortype"></a>
 
 ## ComparisonOperatorType
 
@@ -63,6 +71,8 @@ Values:
 - `LT`
 - `NE`
 
+<a id="geomatchconstrainttypetype"></a>
+
 ## GeoMatchConstraintTypeType
 
 ```python
@@ -72,6 +82,8 @@ from mypy_boto3_waf_regional.literals import GeoMatchConstraintTypeType
 Values:
 
 - `Country`
+
+<a id="geomatchconstraintvaluetype"></a>
 
 ## GeoMatchConstraintValueType
 
@@ -331,6 +343,8 @@ Values:
 - `ZM`
 - `ZW`
 
+<a id="ipsetdescriptortypetype"></a>
+
 ## IPSetDescriptorTypeType
 
 ```python
@@ -341,6 +355,8 @@ Values:
 
 - `IPV4`
 - `IPV6`
+
+<a id="matchfieldtypetype"></a>
 
 ## MatchFieldTypeType
 
@@ -358,6 +374,8 @@ Values:
 - `SINGLE_QUERY_ARG`
 - `URI`
 
+<a id="positionalconstrainttype"></a>
+
 ## PositionalConstraintType
 
 ```python
@@ -371,6 +389,8 @@ Values:
 - `ENDS_WITH`
 - `EXACTLY`
 - `STARTS_WITH`
+
+<a id="predicatetypetype"></a>
 
 ## PredicateTypeType
 
@@ -388,6 +408,8 @@ Values:
 - `SqlInjectionMatch`
 - `XssMatch`
 
+<a id="ratekeytype"></a>
+
 ## RateKeyType
 
 ```python
@@ -397,6 +419,8 @@ from mypy_boto3_waf_regional.literals import RateKeyType
 Values:
 
 - `IP`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -408,6 +432,8 @@ Values:
 
 - `API_GATEWAY`
 - `APPLICATION_LOAD_BALANCER`
+
+<a id="texttransformationtype"></a>
 
 ## TextTransformationType
 
@@ -424,6 +450,8 @@ Values:
 - `NONE`
 - `URL_DECODE`
 
+<a id="wafactiontypetype"></a>
+
 ## WafActionTypeType
 
 ```python
@@ -436,6 +464,8 @@ Values:
 - `BLOCK`
 - `COUNT`
 
+<a id="wafoverrideactiontypetype"></a>
+
 ## WafOverrideActionTypeType
 
 ```python
@@ -446,6 +476,8 @@ Values:
 
 - `COUNT`
 - `NONE`
+
+<a id="wafruletypetype"></a>
 
 ## WafRuleTypeType
 
@@ -458,6 +490,8 @@ Values:
 - `GROUP`
 - `RATE_BASED`
 - `REGULAR`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

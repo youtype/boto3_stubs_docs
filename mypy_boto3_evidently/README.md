@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cloudwatchevidently-module"></a>
+
 # Type annotations for boto3 CloudWatchEvidently module
 
 > [Index](..) > CloudWatchEvidently
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
 type annotations stubs module
-[mypy_boto3_evidently](https://pypi.org/project/mypy-boto3-evidently/).
+[mypy-boto3-evidently](https://pypi.org/project/mypy-boto3-evidently/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[evidently]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[evidently]'
+
+# standalone installation
 pip install mypy-boto3-evidently
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-evidently
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="cloudwatchevidentlyclient"></a>
+
 ## CloudWatchEvidentlyClient
 
 Type annotations for `boto3.client("evidently")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_evidently.client import CloudWatchEvidentlyClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -69,6 +83,8 @@ from mypy_boto3_evidently.client import CloudWatchEvidentlyClient
 - [update_project](./client.md#update_project)
 - [update_project_data_delivery](./client.md#update_project_data_delivery)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CloudWatchEvidentlyClient [exceptions](./client.md#exceptions)
@@ -83,6 +99,8 @@ CloudWatchEvidentlyClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -91,13 +109,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_evidently.paginators import ListExperimentsPaginator, ...
+from mypy_boto3_evidently.paginator import ListExperimentsPaginator, ...
 ```
 
 - [ListExperimentsPaginator](./paginators.md#listexperimentspaginator)
 - [ListFeaturesPaginator](./paginators.md#listfeaturespaginator)
 - [ListLaunchesPaginator](./paginators.md#listlaunchespaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -131,6 +151,8 @@ from mypy_boto3_evidently.literals import ChangeDirectionEnumType, ...
 - [VariationValueTypeType](./literals.md#variationvaluetypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

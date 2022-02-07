@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-imagebuilder-module"></a>
+
 # Type annotations for boto3 imagebuilder module
 
 > [Index](..) > imagebuilder
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
 type annotations stubs module
-[mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
+[mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[imagebuilder]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[imagebuilder]'
+
+# standalone installation
 pip install mypy-boto3-imagebuilder
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-imagebuilder
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="imagebuilderclient"></a>
 
 ## imagebuilderClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_imagebuilder.client import imagebuilderClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -85,6 +99,8 @@ from mypy_boto3_imagebuilder.client import imagebuilderClient
 - [update_image_pipeline](./client.md#update_image_pipeline)
 - [update_infrastructure_configuration](./client.md#update_infrastructure_configuration)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 imagebuilderClient [exceptions](./client.md#exceptions)
@@ -107,6 +123,8 @@ imagebuilderClient [exceptions](./client.md#exceptions)
 - ServiceException
 - ServiceQuotaExceededException
 - ServiceUnavailableException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -133,6 +151,8 @@ from mypy_boto3_imagebuilder.literals import BuildTypeType, ...
 - [PipelineStatusType](./literals.md#pipelinestatustype)
 - [PlatformType](./literals.md#platformtype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

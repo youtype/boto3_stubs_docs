@@ -1,3 +1,5 @@
+<a id="robomakerclient-for-boto3-robomaker-module"></a>
+
 # RoboMakerClient for boto3 RoboMaker module
 
 > [Index](..) > [RoboMaker](.) > RoboMakerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
 type annotations stubs module
-[mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
+[mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 - [RoboMakerClient for boto3 RoboMaker module](#robomakerclient-for-boto3-robomaker-module)
   - [RoboMakerClient](#robomakerclient)
@@ -73,6 +75,8 @@ type annotations stubs module
     - [update_world_template](#update_world_template)
     - [get_paginator](#get_paginator)
 
+<a id="robomakerclient"></a>
+
 ## RoboMakerClient
 
 Type annotations for `boto3.client("robomaker")`
@@ -80,14 +84,17 @@ Type annotations for `boto3.client("robomaker")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_robomaker.client import RoboMakerClient
 
 def get_robomaker_client() -> RoboMakerClient:
-    return boto3.client("robomaker")
+    return Session().client("robomaker")
 ```
 
 Boto3 documentation:
 [RoboMaker.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -114,7 +121,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -126,6 +137,8 @@ Boto3 documentation:
 [RoboMaker.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_delete_worlds"></a>
 
 ### batch_delete_worlds
 
@@ -145,6 +158,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDeleteWorldsResponseTypeDef](./type_defs.md#batchdeleteworldsresponsetypedef).
+
+<a id="batch_describe_simulation_job"></a>
 
 ### batch_describe_simulation_job
 
@@ -166,6 +181,8 @@ Keyword-only arguments:
 Returns
 [BatchDescribeSimulationJobResponseTypeDef](./type_defs.md#batchdescribesimulationjobresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -180,6 +197,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_deployment_job"></a>
 
 ### cancel_deployment_job
 
@@ -199,6 +218,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="cancel_simulation_job"></a>
+
 ### cancel_simulation_job
 
 Cancels the specified simulation job.
@@ -216,6 +237,8 @@ Keyword-only arguments:
 - `job`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="cancel_simulation_job_batch"></a>
 
 ### cancel_simulation_job_batch
 
@@ -236,6 +259,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="cancel_world_export_job"></a>
+
 ### cancel_world_export_job
 
 Cancels the specified export job.
@@ -255,6 +280,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="cancel_world_generation_job"></a>
+
 ### cancel_world_generation_job
 
 Cancels the specified world generator job.
@@ -273,6 +300,8 @@ Keyword-only arguments:
 - `job`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_deployment_job"></a>
 
 ### create_deployment_job
 
@@ -300,6 +329,8 @@ Keyword-only arguments:
 Returns
 [CreateDeploymentJobResponseTypeDef](./type_defs.md#createdeploymentjobresponsetypedef).
 
+<a id="create_fleet"></a>
+
 ### create_fleet
 
 Creates a fleet, a logical group of robots running the same robot application.
@@ -319,6 +350,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFleetResponseTypeDef](./type_defs.md#createfleetresponsetypedef).
+
+<a id="create_robot"></a>
 
 ### create_robot
 
@@ -342,6 +375,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRobotResponseTypeDef](./type_defs.md#createrobotresponsetypedef).
+
+<a id="create_robot_application"></a>
 
 ### create_robot_application
 
@@ -370,6 +405,8 @@ Keyword-only arguments:
 Returns
 [CreateRobotApplicationResponseTypeDef](./type_defs.md#createrobotapplicationresponsetypedef).
 
+<a id="create_robot_application_version"></a>
+
 ### create_robot_application_version
 
 Creates a version of a robot application.
@@ -392,6 +429,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRobotApplicationVersionResponseTypeDef](./type_defs.md#createrobotapplicationversionresponsetypedef).
+
+<a id="create_simulation_application"></a>
 
 ### create_simulation_application
 
@@ -425,6 +464,8 @@ Keyword-only arguments:
 Returns
 [CreateSimulationApplicationResponseTypeDef](./type_defs.md#createsimulationapplicationresponsetypedef).
 
+<a id="create_simulation_application_version"></a>
+
 ### create_simulation_application_version
 
 Creates a simulation application with a specific revision id.
@@ -447,6 +488,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSimulationApplicationVersionResponseTypeDef](./type_defs.md#createsimulationapplicationversionresponsetypedef).
+
+<a id="create_simulation_job"></a>
 
 ### create_simulation_job
 
@@ -482,6 +525,8 @@ Keyword-only arguments:
 Returns
 [CreateSimulationJobResponseTypeDef](./type_defs.md#createsimulationjobresponsetypedef).
 
+<a id="create_world_export_job"></a>
+
 ### create_world_export_job
 
 Creates a world export job.
@@ -506,6 +551,8 @@ Keyword-only arguments:
 
 Returns
 [CreateWorldExportJobResponseTypeDef](./type_defs.md#createworldexportjobresponsetypedef).
+
+<a id="create_world_generation_job"></a>
 
 ### create_world_generation_job
 
@@ -532,6 +579,8 @@ Keyword-only arguments:
 Returns
 [CreateWorldGenerationJobResponseTypeDef](./type_defs.md#createworldgenerationjobresponsetypedef).
 
+<a id="create_world_template"></a>
+
 ### create_world_template
 
 Creates a world template.
@@ -556,6 +605,8 @@ Keyword-only arguments:
 Returns
 [CreateWorldTemplateResponseTypeDef](./type_defs.md#createworldtemplateresponsetypedef).
 
+<a id="delete_fleet"></a>
+
 ### delete_fleet
 
 Deletes a fleet.
@@ -574,6 +625,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_robot"></a>
+
 ### delete_robot
 
 Deletes a robot.
@@ -591,6 +644,8 @@ Keyword-only arguments:
 - `robot`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_robot_application"></a>
 
 ### delete_robot_application
 
@@ -612,6 +667,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_simulation_application"></a>
+
 ### delete_simulation_application
 
 Deletes a simulation application.
@@ -632,6 +689,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_world_template"></a>
+
 ### delete_world_template
 
 Deletes a world template.
@@ -649,6 +708,8 @@ Keyword-only arguments:
 - `template`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="deregister_robot"></a>
 
 ### deregister_robot
 
@@ -670,6 +731,8 @@ Keyword-only arguments:
 Returns
 [DeregisterRobotResponseTypeDef](./type_defs.md#deregisterrobotresponsetypedef).
 
+<a id="describe_deployment_job"></a>
+
 ### describe_deployment_job
 
 Describes a deployment job.
@@ -690,6 +753,8 @@ Keyword-only arguments:
 Returns
 [DescribeDeploymentJobResponseTypeDef](./type_defs.md#describedeploymentjobresponsetypedef).
 
+<a id="describe_fleet"></a>
+
 ### describe_fleet
 
 Describes a fleet.
@@ -709,6 +774,8 @@ Keyword-only arguments:
 Returns
 [DescribeFleetResponseTypeDef](./type_defs.md#describefleetresponsetypedef).
 
+<a id="describe_robot"></a>
+
 ### describe_robot
 
 Describes a robot.
@@ -727,6 +794,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRobotResponseTypeDef](./type_defs.md#describerobotresponsetypedef).
+
+<a id="describe_robot_application"></a>
 
 ### describe_robot_application
 
@@ -749,6 +818,8 @@ Keyword-only arguments:
 Returns
 [DescribeRobotApplicationResponseTypeDef](./type_defs.md#describerobotapplicationresponsetypedef).
 
+<a id="describe_simulation_application"></a>
+
 ### describe_simulation_application
 
 Describes a simulation application.
@@ -770,6 +841,8 @@ Keyword-only arguments:
 Returns
 [DescribeSimulationApplicationResponseTypeDef](./type_defs.md#describesimulationapplicationresponsetypedef).
 
+<a id="describe_simulation_job"></a>
+
 ### describe_simulation_job
 
 Describes a simulation job.
@@ -789,6 +862,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSimulationJobResponseTypeDef](./type_defs.md#describesimulationjobresponsetypedef).
+
+<a id="describe_simulation_job_batch"></a>
 
 ### describe_simulation_job_batch
 
@@ -810,6 +885,8 @@ Keyword-only arguments:
 Returns
 [DescribeSimulationJobBatchResponseTypeDef](./type_defs.md#describesimulationjobbatchresponsetypedef).
 
+<a id="describe_world"></a>
+
 ### describe_world
 
 Describes a world.
@@ -828,6 +905,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeWorldResponseTypeDef](./type_defs.md#describeworldresponsetypedef).
+
+<a id="describe_world_export_job"></a>
 
 ### describe_world_export_job
 
@@ -849,6 +928,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorldExportJobResponseTypeDef](./type_defs.md#describeworldexportjobresponsetypedef).
 
+<a id="describe_world_generation_job"></a>
+
 ### describe_world_generation_job
 
 Describes a world generation job.
@@ -868,6 +949,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeWorldGenerationJobResponseTypeDef](./type_defs.md#describeworldgenerationjobresponsetypedef).
+
+<a id="describe_world_template"></a>
 
 ### describe_world_template
 
@@ -889,6 +972,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorldTemplateResponseTypeDef](./type_defs.md#describeworldtemplateresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -906,6 +991,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_world_template_body"></a>
 
 ### get_world_template_body
 
@@ -928,6 +1015,8 @@ Keyword-only arguments:
 Returns
 [GetWorldTemplateBodyResponseTypeDef](./type_defs.md#getworldtemplatebodyresponsetypedef).
 
+<a id="list_deployment_jobs"></a>
+
 ### list_deployment_jobs
 
 Returns a list of deployment jobs for a fleet.
@@ -949,6 +1038,8 @@ Keyword-only arguments:
 Returns
 [ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef).
 
+<a id="list_fleets"></a>
+
 ### list_fleets
 
 Returns a list of fleets.
@@ -968,6 +1059,8 @@ Keyword-only arguments:
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns [ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef).
+
+<a id="list_robot_applications"></a>
 
 ### list_robot_applications
 
@@ -992,6 +1085,8 @@ Keyword-only arguments:
 Returns
 [ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef).
 
+<a id="list_robots"></a>
+
 ### list_robots
 
 Returns a list of robots.
@@ -1011,6 +1106,8 @@ Keyword-only arguments:
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns [ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef).
+
+<a id="list_simulation_applications"></a>
 
 ### list_simulation_applications
 
@@ -1035,6 +1132,8 @@ Keyword-only arguments:
 Returns
 [ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef).
 
+<a id="list_simulation_job_batches"></a>
+
 ### list_simulation_job_batches
 
 Returns a list simulation job batches.
@@ -1057,6 +1156,8 @@ Keyword-only arguments:
 Returns
 [ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef).
 
+<a id="list_simulation_jobs"></a>
+
 ### list_simulation_jobs
 
 Returns a list of simulation jobs.
@@ -1078,6 +1179,8 @@ Keyword-only arguments:
 Returns
 [ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all tags on a AWS RoboMaker resource.
@@ -1096,6 +1199,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_world_export_jobs"></a>
 
 ### list_world_export_jobs
 
@@ -1117,6 +1222,8 @@ Keyword-only arguments:
 
 Returns
 [ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef).
+
+<a id="list_world_generation_jobs"></a>
 
 ### list_world_generation_jobs
 
@@ -1140,6 +1247,8 @@ Keyword-only arguments:
 Returns
 [ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef).
 
+<a id="list_world_templates"></a>
+
 ### list_world_templates
 
 Lists world templates.
@@ -1159,6 +1268,8 @@ Keyword-only arguments:
 
 Returns
 [ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef).
+
+<a id="list_worlds"></a>
 
 ### list_worlds
 
@@ -1180,6 +1291,8 @@ Keyword-only arguments:
 
 Returns [ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef).
 
+<a id="register_robot"></a>
+
 ### register_robot
 
 Registers a robot with a fleet.
@@ -1200,6 +1313,8 @@ Keyword-only arguments:
 Returns
 [RegisterRobotResponseTypeDef](./type_defs.md#registerrobotresponsetypedef).
 
+<a id="restart_simulation_job"></a>
+
 ### restart_simulation_job
 
 Restarts a running simulation job.
@@ -1217,6 +1332,8 @@ Keyword-only arguments:
 - `job`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_simulation_job_batch"></a>
 
 ### start_simulation_job_batch
 
@@ -1243,6 +1360,8 @@ Keyword-only arguments:
 Returns
 [StartSimulationJobBatchResponseTypeDef](./type_defs.md#startsimulationjobbatchresponsetypedef).
 
+<a id="sync_deployment_job"></a>
+
 ### sync_deployment_job
 
 Syncrhonizes robots in a fleet to the latest deployment.
@@ -1263,6 +1382,8 @@ Keyword-only arguments:
 Returns
 [SyncDeploymentJobResponseTypeDef](./type_defs.md#syncdeploymentjobresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or edits tags for a AWS RoboMaker resource.
@@ -1282,6 +1403,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 .
@@ -1300,6 +1423,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_robot_application"></a>
 
 ### update_robot_application
 
@@ -1327,6 +1452,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRobotApplicationResponseTypeDef](./type_defs.md#updaterobotapplicationresponsetypedef).
+
+<a id="update_simulation_application"></a>
 
 ### update_simulation_application
 
@@ -1360,6 +1487,8 @@ Keyword-only arguments:
 Returns
 [UpdateSimulationApplicationResponseTypeDef](./type_defs.md#updatesimulationapplicationresponsetypedef).
 
+<a id="update_world_template"></a>
+
 ### update_world_template
 
 Updates a world template.
@@ -1382,6 +1511,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateWorldTemplateResponseTypeDef](./type_defs.md#updateworldtemplateresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

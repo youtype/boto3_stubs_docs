@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-finspacedata-module"></a>
+
 # Paginators for boto3 FinSpaceData module
 
 > [Index](..) > [FinSpaceData](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
 type annotations stubs module
-[mypy_boto3_finspace_data](https://pypi.org/project/mypy-boto3-finspace-data/).
+[mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 - [Paginators for boto3 FinSpaceData module](#paginators-for-boto3-finspacedata-module)
   - [ListChangesetsPaginator](#listchangesetspaginator)
   - [ListDataViewsPaginator](#listdataviewspaginator)
   - [ListDatasetsPaginator](#listdatasetspaginator)
+
+<a id="listchangesetspaginator"></a>
 
 ## ListChangesetsPaginator
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_finspace_data.paginator import ListChangesetsPaginator
 
 def get_list_changesets_paginator() -> ListChangesetsPaginator:
-    return boto3.client("finspace-data").get_paginator("list_changesets")
+    return Session().client("finspace-data").get_paginator("list_changesets")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `ListChangesetsPaginator.paginate` method:
 `ListChangesetsPaginator.paginate` returns
 `_PageIterator`\[[ListChangesetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef)\].
 
+<a id="listdataviewspaginator"></a>
+
 ## ListDataViewsPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_finspace_data.paginator import ListDataViewsPaginator
 
 def get_list_data_views_paginator() -> ListDataViewsPaginator:
-    return boto3.client("finspace-data").get_paginator("list_data_views")
+    return Session().client("finspace-data").get_paginator("list_data_views")
 ```
 
 Boto3 documentation:
@@ -64,6 +74,8 @@ Arguments for `ListDataViewsPaginator.paginate` method:
 `ListDataViewsPaginator.paginate` returns
 `_PageIterator`\[[ListDataViewsResponseTypeDef](./type_defs.md#listdataviewsresponsetypedef)\].
 
+<a id="listdatasetspaginator"></a>
+
 ## ListDatasetsPaginator
 
 Type annotations for
@@ -72,10 +84,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_finspace_data.paginator import ListDatasetsPaginator
 
 def get_list_datasets_paginator() -> ListDatasetsPaginator:
-    return boto3.client("finspace-data").get_paginator("list_datasets")
+    return Session().client("finspace-data").get_paginator("list_datasets")
 ```
 
 Boto3 documentation:

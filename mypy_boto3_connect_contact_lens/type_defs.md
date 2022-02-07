@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-connectcontactlens-module"></a>
+
 # Typed dictionaries for boto3 ConnectContactLens module
 
 > [Index](..) > [ConnectContactLens](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
 type annotations stubs module
-[mypy_boto3_connect_contact_lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
+[mypy-boto3-connect-contact-lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
 
 - [Typed dictionaries for boto3 ConnectContactLens module](#typed-dictionaries-for-boto3-connectcontactlens-module)
   - [CategoriesTypeDef](#categoriestypedef)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TranscriptTypeDef](#transcripttypedef)
 
+<a id="categoriestypedef"></a>
+
 ## CategoriesTypeDef
 
 ```python
@@ -31,6 +35,8 @@ Required fields:
 - `MatchedDetails`: `Dict`\[`str`,
   [CategoryDetailsTypeDef](./type_defs.md#categorydetailstypedef)\]
 
+<a id="categorydetailstypedef"></a>
+
 ## CategoryDetailsTypeDef
 
 ```python
@@ -41,6 +47,8 @@ Required fields:
 
 - `PointsOfInterest`:
   `List`\[[PointOfInterestTypeDef](./type_defs.md#pointofinteresttypedef)\]
+
+<a id="characteroffsetstypedef"></a>
 
 ## CharacterOffsetsTypeDef
 
@@ -53,6 +61,8 @@ Required fields:
 - `BeginOffsetChar`: `int`
 - `EndOffsetChar`: `int`
 
+<a id="issuedetectedtypedef"></a>
+
 ## IssueDetectedTypeDef
 
 ```python
@@ -63,6 +73,8 @@ Required fields:
 
 - `CharacterOffsets`:
   [CharacterOffsetsTypeDef](./type_defs.md#characteroffsetstypedef)
+
+<a id="listrealtimecontactanalysissegmentsrequestrequesttypedef"></a>
 
 ## ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef
 
@@ -80,6 +92,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listrealtimecontactanalysissegmentsresponsetypedef"></a>
+
 ## ListRealtimeContactAnalysisSegmentsResponseTypeDef
 
 ```python
@@ -94,6 +108,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="pointofinteresttypedef"></a>
+
 ## PointOfInterestTypeDef
 
 ```python
@@ -105,6 +121,8 @@ Required fields:
 - `BeginOffsetMillis`: `int`
 - `EndOffsetMillis`: `int`
 
+<a id="realtimecontactanalysissegmenttypedef"></a>
+
 ## RealtimeContactAnalysisSegmentTypeDef
 
 ```python
@@ -115,6 +133,8 @@ Optional fields:
 
 - `Transcript`: [TranscriptTypeDef](./type_defs.md#transcripttypedef)
 - `Categories`: [CategoriesTypeDef](./type_defs.md#categoriestypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -129,6 +149,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="transcripttypedef"></a>
 
 ## TranscriptTypeDef
 

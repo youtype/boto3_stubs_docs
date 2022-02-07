@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-mobile-module"></a>
+
 # Type annotations for boto3 Mobile module
 
 > [Index](..) > Mobile
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
 type annotations stubs module
-[mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
+[mypy-boto3-mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[mobile]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[mobile]'
+
+# standalone installation
 pip install mypy-boto3-mobile
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-mobile
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="mobileclient"></a>
+
 ## MobileClient
 
 Type annotations for `boto3.client("mobile")` as [MobileClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_mobile.client import MobileClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -45,6 +59,8 @@ from mypy_boto3_mobile.client import MobileClient
 - [list_projects](./client.md#list_projects)
 - [update_project](./client.md#update_project)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MobileClient [exceptions](./client.md#exceptions)
@@ -59,6 +75,8 @@ MobileClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - UnauthorizedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -67,11 +85,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_mobile.paginators import ListBundlesPaginator, ...
+from mypy_boto3_mobile.paginator import ListBundlesPaginator, ...
 ```
 
 - [ListBundlesPaginator](./paginators.md#listbundlespaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -89,6 +109,8 @@ from mypy_boto3_mobile.literals import ListBundlesPaginatorName, ...
 - [ProjectStateType](./literals.md#projectstatetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

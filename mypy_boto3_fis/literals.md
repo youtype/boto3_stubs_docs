@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-fis-module"></a>
+
 # Literals for boto3 FIS module
 
 > [Index](..) > [FIS](.) > Literals
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
 type annotations stubs module
-[mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
+[mypy-boto3-fis](https://pypi.org/project/mypy-boto3-fis/).
 
 - [Literals for boto3 FIS module](#literals-for-boto3-fis-module)
   - [ExperimentActionStatusType](#experimentactionstatustype)
   - [ExperimentStatusType](#experimentstatustype)
   - [ServiceName](#servicename)
+
+<a id="experimentactionstatustype"></a>
 
 ## ExperimentActionStatusType
 
@@ -29,6 +33,8 @@ Values:
 - `stopped`
 - `stopping`
 
+<a id="experimentstatustype"></a>
+
 ## ExperimentStatusType
 
 ```python
@@ -44,6 +50,8 @@ Values:
 - `running`
 - `stopped`
 - `stopping`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

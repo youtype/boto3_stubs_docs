@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-networkfirewall-module"></a>
+
 # Paginators for boto3 NetworkFirewall module
 
 > [Index](..) > [NetworkFirewall](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
 type annotations stubs module
-[mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
+[mypy-boto3-network-firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 - [Paginators for boto3 NetworkFirewall module](#paginators-for-boto3-networkfirewall-module)
   - [ListFirewallPoliciesPaginator](#listfirewallpoliciespaginator)
   - [ListFirewallsPaginator](#listfirewallspaginator)
   - [ListRuleGroupsPaginator](#listrulegroupspaginator)
   - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
+
+<a id="listfirewallpoliciespaginator"></a>
 
 ## ListFirewallPoliciesPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_network_firewall.paginator import ListFirewallPoliciesPaginator
 
 def get_list_firewall_policies_paginator() -> ListFirewallPoliciesPaginator:
-    return boto3.client("network-firewall").get_paginator("list_firewall_policies")
+    return Session().client("network-firewall").get_paginator("list_firewall_policies")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `ListFirewallPoliciesPaginator.paginate` method:
 `ListFirewallPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListFirewallPoliciesResponseTypeDef](./type_defs.md#listfirewallpoliciesresponsetypedef)\].
 
+<a id="listfirewallspaginator"></a>
+
 ## ListFirewallsPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_network_firewall.paginator import ListFirewallsPaginator
 
 def get_list_firewalls_paginator() -> ListFirewallsPaginator:
-    return boto3.client("network-firewall").get_paginator("list_firewalls")
+    return Session().client("network-firewall").get_paginator("list_firewalls")
 ```
 
 Boto3 documentation:
@@ -64,6 +74,8 @@ Arguments for `ListFirewallsPaginator.paginate` method:
 `ListFirewallsPaginator.paginate` returns
 `_PageIterator`\[[ListFirewallsResponseTypeDef](./type_defs.md#listfirewallsresponsetypedef)\].
 
+<a id="listrulegroupspaginator"></a>
+
 ## ListRuleGroupsPaginator
 
 Type annotations for
@@ -72,10 +84,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_network_firewall.paginator import ListRuleGroupsPaginator
 
 def get_list_rule_groups_paginator() -> ListRuleGroupsPaginator:
-    return boto3.client("network-firewall").get_paginator("list_rule_groups")
+    return Session().client("network-firewall").get_paginator("list_rule_groups")
 ```
 
 Boto3 documentation:
@@ -90,6 +104,8 @@ Arguments for `ListRuleGroupsPaginator.paginate` method:
 `ListRuleGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -98,10 +114,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_network_firewall.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("network-firewall").get_paginator("list_tags_for_resource")
+    return Session().client("network-firewall").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:

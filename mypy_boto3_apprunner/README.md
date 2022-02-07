@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-apprunner-module"></a>
+
 # Type annotations for boto3 AppRunner module
 
 > [Index](..) > AppRunner
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AppRunner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner)
 type annotations stubs module
-[mypy_boto3_apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
+[mypy-boto3-apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[apprunner]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[apprunner]'
+
+# standalone installation
 pip install mypy-boto3-apprunner
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-apprunner
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="apprunnerclient"></a>
 
 ## AppRunnerClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_apprunner.client import AppRunnerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -57,6 +71,8 @@ from mypy_boto3_apprunner.client import AppRunnerClient
 - [untag_resource](./client.md#untag_resource)
 - [update_service](./client.md#update_service)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AppRunnerClient [exceptions](./client.md#exceptions)
@@ -67,6 +83,8 @@ AppRunnerClient [exceptions](./client.md#exceptions)
 - InvalidStateException
 - ResourceNotFoundException
 - ServiceQuotaExceededException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -92,6 +110,8 @@ from mypy_boto3_apprunner.literals import AutoScalingConfigurationStatusType, ..
 - [ServiceStatusType](./literals.md#servicestatustype)
 - [SourceCodeVersionTypeType](./literals.md#sourcecodeversiontypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

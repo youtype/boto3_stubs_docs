@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-connectparticipant-module"></a>
+
 # Typed dictionaries for boto3 ConnectParticipant module
 
 > [Index](..) > [ConnectParticipant](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
 type annotations stubs module
-[mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
+[mypy-boto3-connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
 - [Typed dictionaries for boto3 ConnectParticipant module](#typed-dictionaries-for-boto3-connectparticipant-module)
   - [AttachmentItemTypeDef](#attachmentitemtypedef)
@@ -30,6 +32,8 @@ type annotations stubs module
   - [UploadMetadataTypeDef](#uploadmetadatatypedef)
   - [WebsocketTypeDef](#websockettypedef)
 
+<a id="attachmentitemtypedef"></a>
+
 ## AttachmentItemTypeDef
 
 ```python
@@ -43,6 +47,8 @@ Optional fields:
 - `AttachmentName`: `str`
 - `Status`: [ArtifactStatusType](./literals.md#artifactstatustype)
 
+<a id="completeattachmentuploadrequestrequesttypedef"></a>
+
 ## CompleteAttachmentUploadRequestRequestTypeDef
 
 ```python
@@ -55,6 +61,8 @@ Required fields:
 - `ClientToken`: `str`
 - `ConnectionToken`: `str`
 
+<a id="connectioncredentialstypedef"></a>
+
 ## ConnectionCredentialsTypeDef
 
 ```python
@@ -65,6 +73,8 @@ Optional fields:
 
 - `ConnectionToken`: `str`
 - `Expiry`: `str`
+
+<a id="createparticipantconnectionrequestrequesttypedef"></a>
 
 ## CreateParticipantConnectionRequestRequestTypeDef
 
@@ -81,6 +91,8 @@ Optional fields:
 
 - `ConnectParticipant`: `bool`
 
+<a id="createparticipantconnectionresponsetypedef"></a>
+
 ## CreateParticipantConnectionResponseTypeDef
 
 ```python
@@ -94,6 +106,8 @@ Required fields:
   [ConnectionCredentialsTypeDef](./type_defs.md#connectioncredentialstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="disconnectparticipantrequestrequesttypedef"></a>
 
 ## DisconnectParticipantRequestRequestTypeDef
 
@@ -109,6 +123,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="getattachmentrequestrequesttypedef"></a>
+
 ## GetAttachmentRequestRequestTypeDef
 
 ```python
@@ -119,6 +135,8 @@ Required fields:
 
 - `AttachmentId`: `str`
 - `ConnectionToken`: `str`
+
+<a id="getattachmentresponsetypedef"></a>
 
 ## GetAttachmentResponseTypeDef
 
@@ -132,6 +150,8 @@ Required fields:
 - `UrlExpiry`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gettranscriptrequestrequesttypedef"></a>
 
 ## GetTranscriptRequestRequestTypeDef
 
@@ -152,6 +172,8 @@ Optional fields:
 - `SortOrder`: [SortKeyType](./literals.md#sortkeytype)
 - `StartPosition`: [StartPositionTypeDef](./type_defs.md#startpositiontypedef)
 
+<a id="gettranscriptresponsetypedef"></a>
+
 ## GetTranscriptResponseTypeDef
 
 ```python
@@ -165,6 +187,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="itemtypedef"></a>
 
 ## ItemTypeDef
 
@@ -185,6 +209,8 @@ Optional fields:
 - `Attachments`:
   `List`\[[AttachmentItemTypeDef](./type_defs.md#attachmentitemtypedef)\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -198,6 +224,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="sendeventrequestrequesttypedef"></a>
 
 ## SendEventRequestRequestTypeDef
 
@@ -215,6 +243,8 @@ Optional fields:
 - `Content`: `str`
 - `ClientToken`: `str`
 
+<a id="sendeventresponsetypedef"></a>
+
 ## SendEventResponseTypeDef
 
 ```python
@@ -227,6 +257,8 @@ Required fields:
 - `AbsoluteTime`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendmessagerequestrequesttypedef"></a>
 
 ## SendMessageRequestRequestTypeDef
 
@@ -244,6 +276,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="sendmessageresponsetypedef"></a>
+
 ## SendMessageResponseTypeDef
 
 ```python
@@ -256,6 +290,8 @@ Required fields:
 - `AbsoluteTime`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startattachmentuploadrequestrequesttypedef"></a>
 
 ## StartAttachmentUploadRequestRequestTypeDef
 
@@ -271,6 +307,8 @@ Required fields:
 - `ClientToken`: `str`
 - `ConnectionToken`: `str`
 
+<a id="startattachmentuploadresponsetypedef"></a>
+
 ## StartAttachmentUploadResponseTypeDef
 
 ```python
@@ -285,6 +323,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startpositiontypedef"></a>
+
 ## StartPositionTypeDef
 
 ```python
@@ -297,6 +337,8 @@ Optional fields:
 - `AbsoluteTime`: `str`
 - `MostRecent`: `int`
 
+<a id="uploadmetadatatypedef"></a>
+
 ## UploadMetadataTypeDef
 
 ```python
@@ -308,6 +350,8 @@ Optional fields:
 - `Url`: `str`
 - `UrlExpiry`: `str`
 - `HeadersToInclude`: `Dict`\[`str`, `str`\]
+
+<a id="websockettypedef"></a>
 
 ## WebsocketTypeDef
 

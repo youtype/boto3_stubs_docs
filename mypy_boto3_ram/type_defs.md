@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ram-module"></a>
+
 # Typed dictionaries for boto3 RAM module
 
 > [Index](..) > [RAM](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
 type annotations stubs module
-[mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
+[mypy-boto3-ram](https://pypi.org/project/mypy-boto3-ram/).
 
 - [Typed dictionaries for boto3 RAM module](#typed-dictionaries-for-boto3-ram-module)
   - [AcceptResourceShareInvitationRequestRequestTypeDef](#acceptresourceshareinvitationrequestrequesttypedef)
@@ -68,6 +70,8 @@ type annotations stubs module
   - [UpdateResourceShareRequestRequestTypeDef](#updateresourcesharerequestrequesttypedef)
   - [UpdateResourceShareResponseTypeDef](#updateresourceshareresponsetypedef)
 
+<a id="acceptresourceshareinvitationrequestrequesttypedef"></a>
+
 ## AcceptResourceShareInvitationRequestRequestTypeDef
 
 ```python
@@ -82,6 +86,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="acceptresourceshareinvitationresponsetypedef"></a>
+
 ## AcceptResourceShareInvitationResponseTypeDef
 
 ```python
@@ -95,6 +101,8 @@ Required fields:
 - `clientToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associateresourcesharepermissionrequestrequesttypedef"></a>
 
 ## AssociateResourceSharePermissionRequestRequestTypeDef
 
@@ -113,6 +121,8 @@ Optional fields:
 - `clientToken`: `str`
 - `permissionVersion`: `int`
 
+<a id="associateresourcesharepermissionresponsetypedef"></a>
+
 ## AssociateResourceSharePermissionResponseTypeDef
 
 ```python
@@ -125,6 +135,8 @@ Required fields:
 - `clientToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associateresourcesharerequestrequesttypedef"></a>
 
 ## AssociateResourceShareRequestRequestTypeDef
 
@@ -142,6 +154,8 @@ Optional fields:
 - `principals`: `Sequence`\[`str`\]
 - `clientToken`: `str`
 
+<a id="associateresourceshareresponsetypedef"></a>
+
 ## AssociateResourceShareResponseTypeDef
 
 ```python
@@ -155,6 +169,8 @@ Required fields:
 - `clientToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createresourcesharerequestrequesttypedef"></a>
 
 ## CreateResourceShareRequestRequestTypeDef
 
@@ -175,6 +191,8 @@ Optional fields:
 - `clientToken`: `str`
 - `permissionArns`: `Sequence`\[`str`\]
 
+<a id="createresourceshareresponsetypedef"></a>
+
 ## CreateResourceShareResponseTypeDef
 
 ```python
@@ -187,6 +205,8 @@ Required fields:
 - `clientToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteresourcesharerequestrequesttypedef"></a>
 
 ## DeleteResourceShareRequestRequestTypeDef
 
@@ -202,6 +222,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deleteresourceshareresponsetypedef"></a>
+
 ## DeleteResourceShareResponseTypeDef
 
 ```python
@@ -214,6 +236,8 @@ Required fields:
 - `clientToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="disassociateresourcesharepermissionrequestrequesttypedef"></a>
 
 ## DisassociateResourceSharePermissionRequestRequestTypeDef
 
@@ -230,6 +254,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="disassociateresourcesharepermissionresponsetypedef"></a>
+
 ## DisassociateResourceSharePermissionResponseTypeDef
 
 ```python
@@ -242,6 +268,8 @@ Required fields:
 - `clientToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="disassociateresourcesharerequestrequesttypedef"></a>
 
 ## DisassociateResourceShareRequestRequestTypeDef
 
@@ -259,6 +287,8 @@ Optional fields:
 - `principals`: `Sequence`\[`str`\]
 - `clientToken`: `str`
 
+<a id="disassociateresourceshareresponsetypedef"></a>
+
 ## DisassociateResourceShareResponseTypeDef
 
 ```python
@@ -273,6 +303,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="enablesharingwithawsorganizationresponsetypedef"></a>
+
 ## EnableSharingWithAwsOrganizationResponseTypeDef
 
 ```python
@@ -284,6 +316,8 @@ Required fields:
 - `returnValue`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getpermissionrequestrequesttypedef"></a>
 
 ## GetPermissionRequestRequestTypeDef
 
@@ -299,6 +333,8 @@ Optional fields:
 
 - `permissionVersion`: `int`
 
+<a id="getpermissionresponsetypedef"></a>
+
 ## GetPermissionResponseTypeDef
 
 ```python
@@ -311,6 +347,8 @@ Required fields:
   [ResourceSharePermissionDetailTypeDef](./type_defs.md#resourcesharepermissiondetailtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getresourcepoliciesrequestrequesttypedef"></a>
 
 ## GetResourcePoliciesRequestRequestTypeDef
 
@@ -328,6 +366,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getresourcepoliciesresponsetypedef"></a>
+
 ## GetResourcePoliciesResponseTypeDef
 
 ```python
@@ -340,6 +380,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getresourceshareassociationsrequestrequesttypedef"></a>
 
 ## GetResourceShareAssociationsRequestRequestTypeDef
 
@@ -362,6 +404,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getresourceshareassociationsresponsetypedef"></a>
+
 ## GetResourceShareAssociationsResponseTypeDef
 
 ```python
@@ -376,6 +420,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourceshareinvitationsrequestrequesttypedef"></a>
+
 ## GetResourceShareInvitationsRequestRequestTypeDef
 
 ```python
@@ -388,6 +434,8 @@ Optional fields:
 - `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getresourceshareinvitationsresponsetypedef"></a>
 
 ## GetResourceShareInvitationsResponseTypeDef
 
@@ -402,6 +450,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getresourcesharesrequestrequesttypedef"></a>
 
 ## GetResourceSharesRequestRequestTypeDef
 
@@ -425,6 +475,8 @@ Optional fields:
 - `maxResults`: `int`
 - `permissionArn`: `str`
 
+<a id="getresourcesharesresponsetypedef"></a>
+
 ## GetResourceSharesResponseTypeDef
 
 ```python
@@ -438,6 +490,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpendinginvitationresourcesrequestrequesttypedef"></a>
 
 ## ListPendingInvitationResourcesRequestRequestTypeDef
 
@@ -456,6 +510,8 @@ Optional fields:
 - `resourceRegionScope`:
   [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
 
+<a id="listpendinginvitationresourcesresponsetypedef"></a>
+
 ## ListPendingInvitationResourcesResponseTypeDef
 
 ```python
@@ -468,6 +524,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpermissionversionsrequestrequesttypedef"></a>
 
 ## ListPermissionVersionsRequestRequestTypeDef
 
@@ -484,6 +542,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listpermissionversionsresponsetypedef"></a>
+
 ## ListPermissionVersionsResponseTypeDef
 
 ```python
@@ -498,6 +558,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpermissionsrequestrequesttypedef"></a>
+
 ## ListPermissionsRequestRequestTypeDef
 
 ```python
@@ -509,6 +571,8 @@ Optional fields:
 - `resourceType`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listpermissionsresponsetypedef"></a>
 
 ## ListPermissionsResponseTypeDef
 
@@ -523,6 +587,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listprincipalsrequestrequesttypedef"></a>
 
 ## ListPrincipalsRequestRequestTypeDef
 
@@ -543,6 +609,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listprincipalsresponsetypedef"></a>
+
 ## ListPrincipalsResponseTypeDef
 
 ```python
@@ -555,6 +623,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listresourcesharepermissionsrequestrequesttypedef"></a>
 
 ## ListResourceSharePermissionsRequestRequestTypeDef
 
@@ -571,6 +641,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listresourcesharepermissionsresponsetypedef"></a>
+
 ## ListResourceSharePermissionsResponseTypeDef
 
 ```python
@@ -585,6 +657,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresourcetypesrequestrequesttypedef"></a>
+
 ## ListResourceTypesRequestRequestTypeDef
 
 ```python
@@ -597,6 +671,8 @@ Optional fields:
 - `maxResults`: `int`
 - `resourceRegionScope`:
   [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
+
+<a id="listresourcetypesresponsetypedef"></a>
 
 ## ListResourceTypesResponseTypeDef
 
@@ -611,6 +687,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listresourcesrequestrequesttypedef"></a>
 
 ## ListResourcesRequestRequestTypeDef
 
@@ -633,6 +711,8 @@ Optional fields:
 - `resourceRegionScope`:
   [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
 
+<a id="listresourcesresponsetypedef"></a>
+
 ## ListResourcesResponseTypeDef
 
 ```python
@@ -646,6 +726,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -657,6 +739,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="principaltypedef"></a>
 
 ## PrincipalTypeDef
 
@@ -672,6 +756,8 @@ Optional fields:
 - `lastUpdatedTime`: `datetime`
 - `external`: `bool`
 
+<a id="promoteresourcesharecreatedfrompolicyrequestrequesttypedef"></a>
+
 ## PromoteResourceShareCreatedFromPolicyRequestRequestTypeDef
 
 ```python
@@ -681,6 +767,8 @@ from mypy_boto3_ram.type_defs import PromoteResourceShareCreatedFromPolicyReques
 Required fields:
 
 - `resourceShareArn`: `str`
+
+<a id="promoteresourcesharecreatedfrompolicyresponsetypedef"></a>
 
 ## PromoteResourceShareCreatedFromPolicyResponseTypeDef
 
@@ -693,6 +781,8 @@ Required fields:
 - `returnValue`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="rejectresourceshareinvitationrequestrequesttypedef"></a>
 
 ## RejectResourceShareInvitationRequestRequestTypeDef
 
@@ -708,6 +798,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="rejectresourceshareinvitationresponsetypedef"></a>
+
 ## RejectResourceShareInvitationResponseTypeDef
 
 ```python
@@ -721,6 +813,8 @@ Required fields:
 - `clientToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="resourceshareassociationtypedef"></a>
 
 ## ResourceShareAssociationTypeDef
 
@@ -742,6 +836,8 @@ Optional fields:
 - `lastUpdatedTime`: `datetime`
 - `external`: `bool`
 
+<a id="resourceshareinvitationtypedef"></a>
+
 ## ResourceShareInvitationTypeDef
 
 ```python
@@ -762,6 +858,8 @@ Optional fields:
   `List`\[[ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef)\]
 - `receiverArn`: `str`
 
+<a id="resourcesharepermissiondetailtypedef"></a>
+
 ## ResourceSharePermissionDetailTypeDef
 
 ```python
@@ -780,6 +878,8 @@ Optional fields:
 - `lastUpdatedTime`: `datetime`
 - `isResourceTypeDefault`: `bool`
 
+<a id="resourcesharepermissionsummarytypedef"></a>
+
 ## ResourceSharePermissionSummaryTypeDef
 
 ```python
@@ -797,6 +897,8 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
 - `isResourceTypeDefault`: `bool`
+
+<a id="resourcesharetypedef"></a>
 
 ## ResourceShareTypeDef
 
@@ -818,6 +920,8 @@ Optional fields:
 - `featureSet`:
   [ResourceShareFeatureSetType](./literals.md#resourcesharefeaturesettype)
 
+<a id="resourcetypedef"></a>
+
 ## ResourceTypeDef
 
 ```python
@@ -837,6 +941,8 @@ Optional fields:
 - `resourceRegionScope`:
   [ResourceRegionScopeType](./literals.md#resourceregionscopetype)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -851,6 +957,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="servicenameandresourcetypetypedef"></a>
+
 ## ServiceNameAndResourceTypeTypeDef
 
 ```python
@@ -864,6 +972,8 @@ Optional fields:
 - `resourceRegionScope`:
   [ResourceRegionScopeType](./literals.md#resourceregionscopetype)
 
+<a id="tagfiltertypedef"></a>
+
 ## TagFilterTypeDef
 
 ```python
@@ -874,6 +984,8 @@ Optional fields:
 
 - `tagKey`: `str`
 - `tagValues`: `Sequence`\[`str`\]
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -886,6 +998,8 @@ Required fields:
 - `resourceShareArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -897,6 +1011,8 @@ Optional fields:
 - `key`: `str`
 - `value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -907,6 +1023,8 @@ Required fields:
 
 - `resourceShareArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateresourcesharerequestrequesttypedef"></a>
 
 ## UpdateResourceShareRequestRequestTypeDef
 
@@ -923,6 +1041,8 @@ Optional fields:
 - `name`: `str`
 - `allowExternalPrincipals`: `bool`
 - `clientToken`: `str`
+
+<a id="updateresourceshareresponsetypedef"></a>
 
 ## UpdateResourceShareResponseTypeDef
 

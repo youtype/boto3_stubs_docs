@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-proton-module"></a>
+
 # Type annotations for boto3 Proton module
 
 > [Index](..) > Proton
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
 type annotations stubs module
-[mypy_boto3_proton](https://pypi.org/project/mypy-boto3-proton/).
+[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[proton]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[proton]'
+
+# standalone installation
 pip install mypy-boto3-proton
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-proton
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="protonclient"></a>
+
 ## ProtonClient
 
 Type annotations for `boto3.client("proton")` as [ProtonClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_proton.client import ProtonClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -105,6 +119,8 @@ from mypy_boto3_proton.client import ProtonClient
 - [update_service_template_version](./client.md#update_service_template_version)
 - [update_template_sync_config](./client.md#update_template_sync_config)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ProtonClient [exceptions](./client.md#exceptions)
@@ -118,6 +134,8 @@ ProtonClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -126,7 +144,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_proton.paginators import ListEnvironmentAccountConnectionsPaginator, ...
+from mypy_boto3_proton.paginator import ListEnvironmentAccountConnectionsPaginator, ...
 ```
 
 - [ListEnvironmentAccountConnectionsPaginator](./paginators.md#listenvironmentaccountconnectionspaginator)
@@ -147,6 +165,8 @@ from mypy_boto3_proton.paginators import ListEnvironmentAccountConnectionsPagina
 - [ListServicesPaginator](./paginators.md#listservicespaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -155,7 +175,7 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_proton.waiters import EnvironmentDeployedWaiter, ...
+from mypy_boto3_proton.waiter import EnvironmentDeployedWaiter, ...
 ```
 
 - [EnvironmentDeployedWaiter](./waiters.md#environmentdeployedwaiter)
@@ -166,6 +186,8 @@ from mypy_boto3_proton.waiters import EnvironmentDeployedWaiter, ...
 - [ServicePipelineDeployedWaiter](./waiters.md#servicepipelinedeployedwaiter)
 - [ServiceTemplateVersionRegisteredWaiter](./waiters.md#servicetemplateversionregisteredwaiter)
 - [ServiceUpdatedWaiter](./waiters.md#serviceupdatedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -219,6 +241,8 @@ from mypy_boto3_proton.literals import DeploymentStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

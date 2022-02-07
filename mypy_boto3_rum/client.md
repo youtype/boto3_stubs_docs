@@ -1,3 +1,5 @@
+<a id="cloudwatchrumclient-for-boto3-cloudwatchrum-module"></a>
+
 # CloudWatchRUMClient for boto3 CloudWatchRUM module
 
 > [Index](..) > [CloudWatchRUM](.) > CloudWatchRUMClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
 type annotations stubs module
-[mypy_boto3_rum](https://pypi.org/project/mypy-boto3-rum/).
+[mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
 
 - [CloudWatchRUMClient for boto3 CloudWatchRUM module](#cloudwatchrumclient-for-boto3-cloudwatchrum-module)
   - [CloudWatchRUMClient](#cloudwatchrumclient)
@@ -26,6 +28,8 @@ type annotations stubs module
     - [update_app_monitor](#update_app_monitor)
     - [get_paginator](#get_paginator)
 
+<a id="cloudwatchrumclient"></a>
+
 ## CloudWatchRUMClient
 
 Type annotations for `boto3.client("rum")`
@@ -33,14 +37,17 @@ Type annotations for `boto3.client("rum")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_rum.client import CloudWatchRUMClient
 
 def get_rum_client() -> CloudWatchRUMClient:
-    return boto3.client("rum")
+    return Session().client("rum")
 ```
 
 Boto3 documentation:
 [CloudWatchRUM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -65,7 +72,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -77,6 +88,8 @@ Boto3 documentation:
 [CloudWatchRUM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -92,6 +105,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_app_monitor"></a>
 
 ### create_app_monitor
 
@@ -118,6 +133,8 @@ Keyword-only arguments:
 Returns
 [CreateAppMonitorResponseTypeDef](./type_defs.md#createappmonitorresponsetypedef).
 
+<a id="delete_app_monitor"></a>
+
 ### delete_app_monitor
 
 Deletes an existing app monitor.
@@ -135,6 +152,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -154,6 +173,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_app_monitor"></a>
+
 ### get_app_monitor
 
 Retrieves the complete configuration information for one app monitor.
@@ -172,6 +193,8 @@ Keyword-only arguments:
 
 Returns
 [GetAppMonitorResponseTypeDef](./type_defs.md#getappmonitorresponsetypedef).
+
+<a id="get_app_monitor_data"></a>
 
 ### get_app_monitor_data
 
@@ -198,6 +221,8 @@ Keyword-only arguments:
 Returns
 [GetAppMonitorDataResponseTypeDef](./type_defs.md#getappmonitordataresponsetypedef).
 
+<a id="list_app_monitors"></a>
+
 ### list_app_monitors
 
 Returns a list of the Amazon CloudWatch RUM app monitors in the account.
@@ -218,6 +243,8 @@ Keyword-only arguments:
 Returns
 [ListAppMonitorsResponseTypeDef](./type_defs.md#listappmonitorsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Displays the tags associated with a CloudWatch RUM resource.
@@ -236,6 +263,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_rum_events"></a>
 
 ### put_rum_events
 
@@ -264,6 +293,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns one or more tags (key-value pairs) to the specified CloudWatch RUM
@@ -284,6 +315,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from the specified resource.
@@ -302,6 +335,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_app_monitor"></a>
 
 ### update_app_monitor
 
@@ -324,6 +359,8 @@ Keyword-only arguments:
 - `Domain`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

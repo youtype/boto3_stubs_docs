@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ses-module"></a>
+
 # Type annotations for boto3 SES module
 
 > [Index](..) > SES
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
 type annotations stubs module
-[mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
+[mypy-boto3-ses](https://pypi.org/project/mypy-boto3-ses/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ses]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ses]'
+
+# standalone installation
 pip install mypy-boto3-ses
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-ses
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="sesclient"></a>
+
 ## SESClient
 
 Type annotations for `boto3.client("ses")` as [SESClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ses.client import SESClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -109,6 +123,8 @@ from mypy_boto3_ses.client import SESClient
 - [verify_email_address](./client.md#verify_email_address)
 - [verify_email_identity](./client.md#verify_email_identity)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SESClient [exceptions](./client.md#exceptions)
@@ -149,6 +165,8 @@ SESClient [exceptions](./client.md#exceptions)
 - TrackingOptionsAlreadyExistsException
 - TrackingOptionsDoesNotExistException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -157,7 +175,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ses.paginators import ListConfigurationSetsPaginator, ...
+from mypy_boto3_ses.paginator import ListConfigurationSetsPaginator, ...
 ```
 
 - [ListConfigurationSetsPaginator](./paginators.md#listconfigurationsetspaginator)
@@ -165,6 +183,8 @@ from mypy_boto3_ses.paginators import ListConfigurationSetsPaginator, ...
 - [ListIdentitiesPaginator](./paginators.md#listidentitiespaginator)
 - [ListReceiptRuleSetsPaginator](./paginators.md#listreceiptrulesetspaginator)
 - [ListTemplatesPaginator](./paginators.md#listtemplatespaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -174,10 +194,12 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ses.waiters import IdentityExistsWaiter, ...
+from mypy_boto3_ses.waiter import IdentityExistsWaiter, ...
 ```
 
 - [IdentityExistsWaiter](./waiters.md#identityexistswaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -214,6 +236,8 @@ from mypy_boto3_ses.literals import BehaviorOnMXFailureType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

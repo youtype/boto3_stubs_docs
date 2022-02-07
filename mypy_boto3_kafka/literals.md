@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-kafka-module"></a>
+
 # Literals for boto3 Kafka module
 
 > [Index](..) > [Kafka](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
 type annotations stubs module
-[mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
+[mypy-boto3-kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
 - [Literals for boto3 Kafka module](#literals-for-boto3-kafka-module)
   - [BrokerAZDistributionType](#brokerazdistributiontype)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="brokerazdistributiontype"></a>
+
 ## BrokerAZDistributionType
 
 ```python
@@ -36,6 +40,8 @@ from mypy_boto3_kafka.literals import BrokerAZDistributionType
 Values:
 
 - `DEFAULT`
+
+<a id="clientbrokertype"></a>
 
 ## ClientBrokerType
 
@@ -48,6 +54,8 @@ Values:
 - `PLAINTEXT`
 - `TLS`
 - `TLS_PLAINTEXT`
+
+<a id="clusterstatetype"></a>
 
 ## ClusterStateType
 
@@ -66,6 +74,8 @@ Values:
 - `REBOOTING_BROKER`
 - `UPDATING`
 
+<a id="clustertypetype"></a>
+
 ## ClusterTypeType
 
 ```python
@@ -76,6 +86,8 @@ Values:
 
 - `PROVISIONED`
 - `SERVERLESS`
+
+<a id="configurationstatetype"></a>
 
 ## ConfigurationStateType
 
@@ -88,6 +100,8 @@ Values:
 - `ACTIVE`
 - `DELETE_FAILED`
 - `DELETING`
+
+<a id="enhancedmonitoringtype"></a>
 
 ## EnhancedMonitoringType
 
@@ -102,6 +116,8 @@ Values:
 - `PER_TOPIC_PER_BROKER`
 - `PER_TOPIC_PER_PARTITION`
 
+<a id="kafkaversionstatustype"></a>
+
 ## KafkaVersionStatusType
 
 ```python
@@ -113,6 +129,8 @@ Values:
 - `ACTIVE`
 - `DEPRECATED`
 
+<a id="listclusteroperationspaginatorname"></a>
+
 ## ListClusterOperationsPaginatorName
 
 ```python
@@ -122,6 +140,8 @@ from mypy_boto3_kafka.literals import ListClusterOperationsPaginatorName
 Values:
 
 - `list_cluster_operations`
+
+<a id="listclusterspaginatorname"></a>
 
 ## ListClustersPaginatorName
 
@@ -133,6 +153,8 @@ Values:
 
 - `list_clusters`
 
+<a id="listclustersv2paginatorname"></a>
+
 ## ListClustersV2PaginatorName
 
 ```python
@@ -142,6 +164,8 @@ from mypy_boto3_kafka.literals import ListClustersV2PaginatorName
 Values:
 
 - `list_clusters_v2`
+
+<a id="listconfigurationrevisionspaginatorname"></a>
 
 ## ListConfigurationRevisionsPaginatorName
 
@@ -153,6 +177,8 @@ Values:
 
 - `list_configuration_revisions`
 
+<a id="listconfigurationspaginatorname"></a>
+
 ## ListConfigurationsPaginatorName
 
 ```python
@@ -162,6 +188,8 @@ from mypy_boto3_kafka.literals import ListConfigurationsPaginatorName
 Values:
 
 - `list_configurations`
+
+<a id="listkafkaversionspaginatorname"></a>
 
 ## ListKafkaVersionsPaginatorName
 
@@ -173,6 +201,8 @@ Values:
 
 - `list_kafka_versions`
 
+<a id="listnodespaginatorname"></a>
+
 ## ListNodesPaginatorName
 
 ```python
@@ -182,6 +212,8 @@ from mypy_boto3_kafka.literals import ListNodesPaginatorName
 Values:
 
 - `list_nodes`
+
+<a id="listscramsecretspaginatorname"></a>
 
 ## ListScramSecretsPaginatorName
 
@@ -193,6 +225,8 @@ Values:
 
 - `list_scram_secrets`
 
+<a id="nodetypetype"></a>
+
 ## NodeTypeType
 
 ```python
@@ -202,6 +236,8 @@ from mypy_boto3_kafka.literals import NodeTypeType
 Values:
 
 - `BROKER`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -510,6 +546,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-cloudwatchevidently-module"></a>
+
 # Paginators for boto3 CloudWatchEvidently module
 
 > [Index](..) > [CloudWatchEvidently](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
 type annotations stubs module
-[mypy_boto3_evidently](https://pypi.org/project/mypy-boto3-evidently/).
+[mypy-boto3-evidently](https://pypi.org/project/mypy-boto3-evidently/).
 
 - [Paginators for boto3 CloudWatchEvidently module](#paginators-for-boto3-cloudwatchevidently-module)
   - [ListExperimentsPaginator](#listexperimentspaginator)
   - [ListFeaturesPaginator](#listfeaturespaginator)
   - [ListLaunchesPaginator](#listlaunchespaginator)
   - [ListProjectsPaginator](#listprojectspaginator)
+
+<a id="listexperimentspaginator"></a>
 
 ## ListExperimentsPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_evidently.paginator import ListExperimentsPaginator
 
 def get_list_experiments_paginator() -> ListExperimentsPaginator:
-    return boto3.client("evidently").get_paginator("list_experiments")
+    return Session().client("evidently").get_paginator("list_experiments")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `ListExperimentsPaginator.paginate` method:
 `ListExperimentsPaginator.paginate` returns
 `_PageIterator`\[[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef)\].
 
+<a id="listfeaturespaginator"></a>
+
 ## ListFeaturesPaginator
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_evidently.paginator import ListFeaturesPaginator
 
 def get_list_features_paginator() -> ListFeaturesPaginator:
-    return boto3.client("evidently").get_paginator("list_features")
+    return Session().client("evidently").get_paginator("list_features")
 ```
 
 Boto3 documentation:
@@ -65,6 +75,8 @@ Arguments for `ListFeaturesPaginator.paginate` method:
 `ListFeaturesPaginator.paginate` returns
 `_PageIterator`\[[ListFeaturesResponseTypeDef](./type_defs.md#listfeaturesresponsetypedef)\].
 
+<a id="listlaunchespaginator"></a>
+
 ## ListLaunchesPaginator
 
 Type annotations for
@@ -73,10 +85,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_evidently.paginator import ListLaunchesPaginator
 
 def get_list_launches_paginator() -> ListLaunchesPaginator:
-    return boto3.client("evidently").get_paginator("list_launches")
+    return Session().client("evidently").get_paginator("list_launches")
 ```
 
 Boto3 documentation:
@@ -91,6 +105,8 @@ Arguments for `ListLaunchesPaginator.paginate` method:
 `ListLaunchesPaginator.paginate` returns
 `_PageIterator`\[[ListLaunchesResponseTypeDef](./type_defs.md#listlaunchesresponsetypedef)\].
 
+<a id="listprojectspaginator"></a>
+
 ## ListProjectsPaginator
 
 Type annotations for
@@ -99,10 +115,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_evidently.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
-    return boto3.client("evidently").get_paginator("list_projects")
+    return Session().client("evidently").get_paginator("list_projects")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-dataexchange-module"></a>
+
 # Type annotations for boto3 DataExchange module
 
 > [Index](..) > DataExchange
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module
-[mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
+[mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[dataexchange]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[dataexchange]'
+
+# standalone installation
 pip install mypy-boto3-dataexchange
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-dataexchange
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="dataexchangeclient"></a>
+
 ## DataExchangeClient
 
 Type annotations for `boto3.client("dataexchange")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_dataexchange.client import DataExchangeClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -65,6 +79,8 @@ from mypy_boto3_dataexchange.client import DataExchangeClient
 - [update_event_action](./client.md#update_event_action)
 - [update_revision](./client.md#update_revision)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 DataExchangeClient [exceptions](./client.md#exceptions)
@@ -78,6 +94,8 @@ DataExchangeClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -86,7 +104,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_dataexchange.paginators import ListDataSetRevisionsPaginator, ...
+from mypy_boto3_dataexchange.paginator import ListDataSetRevisionsPaginator, ...
 ```
 
 - [ListDataSetRevisionsPaginator](./paginators.md#listdatasetrevisionspaginator)
@@ -94,6 +112,8 @@ from mypy_boto3_dataexchange.paginators import ListDataSetRevisionsPaginator, ..
 - [ListEventActionsPaginator](./paginators.md#listeventactionspaginator)
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
 - [ListRevisionAssetsPaginator](./paginators.md#listrevisionassetspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -121,6 +141,8 @@ from mypy_boto3_dataexchange.literals import AssetTypeType, ...
 - [TypeType](./literals.md#typetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-fms-module"></a>
+
 # Literals for boto3 FMS module
 
 > [Index](..) > [FMS](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
 type annotations stubs module
-[mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
+[mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
 
 - [Literals for boto3 FMS module](#literals-for-boto3-fms-module)
   - [AccountRoleStatusType](#accountrolestatustype)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="accountrolestatustype"></a>
+
 ## AccountRoleStatusType
 
 ```python
@@ -39,6 +43,8 @@ Values:
 - `PENDING_DELETION`
 - `READY`
 
+<a id="customerpolicyscopeidtypetype"></a>
+
 ## CustomerPolicyScopeIdTypeType
 
 ```python
@@ -49,6 +55,8 @@ Values:
 
 - `ACCOUNT`
 - `ORG_UNIT`
+
+<a id="dependentservicenametype"></a>
 
 ## DependentServiceNameType
 
@@ -63,6 +71,8 @@ Values:
 - `AWSVPC`
 - `AWSWAF`
 
+<a id="destinationtypetype"></a>
+
 ## DestinationTypeType
 
 ```python
@@ -75,6 +85,8 @@ Values:
 - `IPV6`
 - `PREFIX_LIST`
 
+<a id="listappslistspaginatorname"></a>
+
 ## ListAppsListsPaginatorName
 
 ```python
@@ -84,6 +96,8 @@ from mypy_boto3_fms.literals import ListAppsListsPaginatorName
 Values:
 
 - `list_apps_lists`
+
+<a id="listcompliancestatuspaginatorname"></a>
 
 ## ListComplianceStatusPaginatorName
 
@@ -95,6 +109,8 @@ Values:
 
 - `list_compliance_status`
 
+<a id="listmemberaccountspaginatorname"></a>
+
 ## ListMemberAccountsPaginatorName
 
 ```python
@@ -104,6 +120,8 @@ from mypy_boto3_fms.literals import ListMemberAccountsPaginatorName
 Values:
 
 - `list_member_accounts`
+
+<a id="listpoliciespaginatorname"></a>
 
 ## ListPoliciesPaginatorName
 
@@ -115,6 +133,8 @@ Values:
 
 - `list_policies`
 
+<a id="listprotocolslistspaginatorname"></a>
+
 ## ListProtocolsListsPaginatorName
 
 ```python
@@ -124,6 +144,8 @@ from mypy_boto3_fms.literals import ListProtocolsListsPaginatorName
 Values:
 
 - `list_protocols_lists`
+
+<a id="policycompliancestatustypetype"></a>
 
 ## PolicyComplianceStatusTypeType
 
@@ -136,6 +158,8 @@ Values:
 - `COMPLIANT`
 - `NON_COMPLIANT`
 
+<a id="remediationactiontypetype"></a>
+
 ## RemediationActionTypeType
 
 ```python
@@ -146,6 +170,8 @@ Values:
 
 - `MODIFY`
 - `REMOVE`
+
+<a id="securityservicetypetype"></a>
 
 ## SecurityServiceTypeType
 
@@ -163,6 +189,8 @@ Values:
 - `SHIELD_ADVANCED`
 - `WAF`
 - `WAFV2`
+
+<a id="targettypetype"></a>
 
 ## TargetTypeType
 
@@ -182,6 +210,8 @@ Values:
 - `TRANSIT_GATEWAY`
 - `VPC_ENDPOINT`
 - `VPC_PEERING_CONNECTION`
+
+<a id="violationreasontype"></a>
 
 ## ViolationReasonType
 
@@ -216,6 +246,8 @@ Values:
 - `UNEXPECTED_FIREWALL_ROUTES`
 - `UNEXPECTED_TARGET_GATEWAY_ROUTES`
 - `WEB_ACL_MISSING_RULE_GROUP`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -524,6 +556,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

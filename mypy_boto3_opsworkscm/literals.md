@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-opsworkscm-module"></a>
+
 # Literals for boto3 OpsWorksCM module
 
 > [Index](..) > [OpsWorksCM](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
 type annotations stubs module
-[mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
+[mypy-boto3-opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 - [Literals for boto3 OpsWorksCM module](#literals-for-boto3-opsworkscm-module)
   - [BackupStatusType](#backupstatustype)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="backupstatustype"></a>
+
 ## BackupStatusType
 
 ```python
@@ -35,6 +39,8 @@ Values:
 - `IN_PROGRESS`
 - `OK`
 
+<a id="backuptypetype"></a>
+
 ## BackupTypeType
 
 ```python
@@ -46,6 +52,8 @@ Values:
 - `AUTOMATED`
 - `MANUAL`
 
+<a id="describebackupspaginatorname"></a>
+
 ## DescribeBackupsPaginatorName
 
 ```python
@@ -55,6 +63,8 @@ from mypy_boto3_opsworkscm.literals import DescribeBackupsPaginatorName
 Values:
 
 - `describe_backups`
+
+<a id="describeeventspaginatorname"></a>
 
 ## DescribeEventsPaginatorName
 
@@ -66,6 +76,8 @@ Values:
 
 - `describe_events`
 
+<a id="describeserverspaginatorname"></a>
+
 ## DescribeServersPaginatorName
 
 ```python
@@ -76,6 +88,8 @@ Values:
 
 - `describe_servers`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -85,6 +99,8 @@ from mypy_boto3_opsworkscm.literals import ListTagsForResourcePaginatorName
 Values:
 
 - `list_tags_for_resource`
+
+<a id="maintenancestatustype"></a>
 
 ## MaintenanceStatusType
 
@@ -97,6 +113,8 @@ Values:
 - `FAILED`
 - `SUCCESS`
 
+<a id="nodeassociatedwaitername"></a>
+
 ## NodeAssociatedWaiterName
 
 ```python
@@ -106,6 +124,8 @@ from mypy_boto3_opsworkscm.literals import NodeAssociatedWaiterName
 Values:
 
 - `node_associated`
+
+<a id="nodeassociationstatustype"></a>
 
 ## NodeAssociationStatusType
 
@@ -118,6 +138,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `SUCCESS`
+
+<a id="serverstatustype"></a>
 
 ## ServerStatusType
 
@@ -140,6 +162,8 @@ Values:
 - `TERMINATED`
 - `UNDER_MAINTENANCE`
 - `UNHEALTHY`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -449,6 +473,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -461,6 +487,8 @@ Values:
 - `describe_events`
 - `describe_servers`
 - `list_tags_for_resource`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

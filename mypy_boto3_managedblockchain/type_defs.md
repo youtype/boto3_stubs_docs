@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-managedblockchain-module"></a>
+
 # Typed dictionaries for boto3 ManagedBlockchain module
 
 > [Index](..) > [ManagedBlockchain](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
 type annotations stubs module
-[mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
+[mypy-boto3-managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
 - [Typed dictionaries for boto3 ManagedBlockchain module](#typed-dictionaries-for-boto3-managedblockchain-module)
   - [ApprovalThresholdPolicyTypeDef](#approvalthresholdpolicytypedef)
@@ -83,6 +85,8 @@ type annotations stubs module
   - [VoteSummaryTypeDef](#votesummarytypedef)
   - [VotingPolicyTypeDef](#votingpolicytypedef)
 
+<a id="approvalthresholdpolicytypedef"></a>
+
 ## ApprovalThresholdPolicyTypeDef
 
 ```python
@@ -95,6 +99,8 @@ Optional fields:
 - `ProposalDurationInHours`: `int`
 - `ThresholdComparator`:
   [ThresholdComparatorType](./literals.md#thresholdcomparatortype)
+
+<a id="creatememberinputrequesttypedef"></a>
 
 ## CreateMemberInputRequestTypeDef
 
@@ -110,6 +116,8 @@ Required fields:
 - `MemberConfiguration`:
   [MemberConfigurationTypeDef](./type_defs.md#memberconfigurationtypedef)
 
+<a id="creatememberoutputtypedef"></a>
+
 ## CreateMemberOutputTypeDef
 
 ```python
@@ -121,6 +129,8 @@ Required fields:
 - `MemberId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createnetworkinputrequesttypedef"></a>
 
 ## CreateNetworkInputRequestTypeDef
 
@@ -145,6 +155,8 @@ Optional fields:
   [NetworkFrameworkConfigurationTypeDef](./type_defs.md#networkframeworkconfigurationtypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createnetworkoutputtypedef"></a>
+
 ## CreateNetworkOutputTypeDef
 
 ```python
@@ -157,6 +169,8 @@ Required fields:
 - `MemberId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createnodeinputrequesttypedef"></a>
 
 ## CreateNodeInputRequestTypeDef
 
@@ -176,6 +190,8 @@ Optional fields:
 - `MemberId`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createnodeoutputtypedef"></a>
+
 ## CreateNodeOutputTypeDef
 
 ```python
@@ -187,6 +203,8 @@ Required fields:
 - `NodeId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createproposalinputrequesttypedef"></a>
 
 ## CreateProposalInputRequestTypeDef
 
@@ -206,6 +224,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createproposaloutputtypedef"></a>
+
 ## CreateProposalOutputTypeDef
 
 ```python
@@ -218,6 +238,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletememberinputrequesttypedef"></a>
+
 ## DeleteMemberInputRequestTypeDef
 
 ```python
@@ -228,6 +250,8 @@ Required fields:
 
 - `NetworkId`: `str`
 - `MemberId`: `str`
+
+<a id="deletenodeinputrequesttypedef"></a>
 
 ## DeleteNodeInputRequestTypeDef
 
@@ -244,6 +268,8 @@ Optional fields:
 
 - `MemberId`: `str`
 
+<a id="getmemberinputrequesttypedef"></a>
+
 ## GetMemberInputRequestTypeDef
 
 ```python
@@ -254,6 +280,8 @@ Required fields:
 
 - `NetworkId`: `str`
 - `MemberId`: `str`
+
+<a id="getmemberoutputtypedef"></a>
 
 ## GetMemberOutputTypeDef
 
@@ -267,6 +295,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getnetworkinputrequesttypedef"></a>
+
 ## GetNetworkInputRequestTypeDef
 
 ```python
@@ -276,6 +306,8 @@ from mypy_boto3_managedblockchain.type_defs import GetNetworkInputRequestTypeDef
 Required fields:
 
 - `NetworkId`: `str`
+
+<a id="getnetworkoutputtypedef"></a>
 
 ## GetNetworkOutputTypeDef
 
@@ -288,6 +320,8 @@ Required fields:
 - `Network`: [NetworkTypeDef](./type_defs.md#networktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getnodeinputrequesttypedef"></a>
 
 ## GetNodeInputRequestTypeDef
 
@@ -304,6 +338,8 @@ Optional fields:
 
 - `MemberId`: `str`
 
+<a id="getnodeoutputtypedef"></a>
+
 ## GetNodeOutputTypeDef
 
 ```python
@@ -316,6 +352,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getproposalinputrequesttypedef"></a>
+
 ## GetProposalInputRequestTypeDef
 
 ```python
@@ -326,6 +364,8 @@ Required fields:
 
 - `NetworkId`: `str`
 - `ProposalId`: `str`
+
+<a id="getproposaloutputtypedef"></a>
 
 ## GetProposalOutputTypeDef
 
@@ -338,6 +378,8 @@ Required fields:
 - `Proposal`: [ProposalTypeDef](./type_defs.md#proposaltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="invitationtypedef"></a>
 
 ## InvitationTypeDef
 
@@ -355,6 +397,8 @@ Optional fields:
   [NetworkSummaryTypeDef](./type_defs.md#networksummarytypedef)
 - `Arn`: `str`
 
+<a id="inviteactiontypedef"></a>
+
 ## InviteActionTypeDef
 
 ```python
@@ -364,6 +408,8 @@ from mypy_boto3_managedblockchain.type_defs import InviteActionTypeDef
 Required fields:
 
 - `Principal`: `str`
+
+<a id="listinvitationsinputrequesttypedef"></a>
 
 ## ListInvitationsInputRequestTypeDef
 
@@ -375,6 +421,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listinvitationsoutputtypedef"></a>
 
 ## ListInvitationsOutputTypeDef
 
@@ -389,6 +437,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmembersinputrequesttypedef"></a>
 
 ## ListMembersInputRequestTypeDef
 
@@ -408,6 +458,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listmembersoutputtypedef"></a>
+
 ## ListMembersOutputTypeDef
 
 ```python
@@ -421,6 +473,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listnetworksinputrequesttypedef"></a>
 
 ## ListNetworksInputRequestTypeDef
 
@@ -436,6 +490,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listnetworksoutputtypedef"></a>
+
 ## ListNetworksOutputTypeDef
 
 ```python
@@ -449,6 +505,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listnodesinputrequesttypedef"></a>
 
 ## ListNodesInputRequestTypeDef
 
@@ -467,6 +525,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listnodesoutputtypedef"></a>
+
 ## ListNodesOutputTypeDef
 
 ```python
@@ -479,6 +539,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listproposalvotesinputrequesttypedef"></a>
 
 ## ListProposalVotesInputRequestTypeDef
 
@@ -496,6 +558,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listproposalvotesoutputtypedef"></a>
+
 ## ListProposalVotesOutputTypeDef
 
 ```python
@@ -509,6 +573,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listproposalsinputrequesttypedef"></a>
 
 ## ListProposalsInputRequestTypeDef
 
@@ -525,6 +591,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listproposalsoutputtypedef"></a>
+
 ## ListProposalsOutputTypeDef
 
 ```python
@@ -539,6 +607,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -548,6 +618,8 @@ from mypy_boto3_managedblockchain.type_defs import ListTagsForResourceRequestReq
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -561,6 +633,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logconfigurationtypedef"></a>
+
 ## LogConfigurationTypeDef
 
 ```python
@@ -570,6 +644,8 @@ from mypy_boto3_managedblockchain.type_defs import LogConfigurationTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
+
+<a id="logconfigurationstypedef"></a>
 
 ## LogConfigurationsTypeDef
 
@@ -581,6 +657,8 @@ Optional fields:
 
 - `Cloudwatch`:
   [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
+
+<a id="memberconfigurationtypedef"></a>
 
 ## MemberConfigurationTypeDef
 
@@ -602,6 +680,8 @@ Optional fields:
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `KmsKeyArn`: `str`
 
+<a id="memberfabricattributestypedef"></a>
+
 ## MemberFabricAttributesTypeDef
 
 ```python
@@ -612,6 +692,8 @@ Optional fields:
 
 - `AdminUsername`: `str`
 - `CaEndpoint`: `str`
+
+<a id="memberfabricconfigurationtypedef"></a>
 
 ## MemberFabricConfigurationTypeDef
 
@@ -624,6 +706,8 @@ Required fields:
 - `AdminUsername`: `str`
 - `AdminPassword`: `str`
 
+<a id="memberfabriclogpublishingconfigurationtypedef"></a>
+
 ## MemberFabricLogPublishingConfigurationTypeDef
 
 ```python
@@ -633,6 +717,8 @@ from mypy_boto3_managedblockchain.type_defs import MemberFabricLogPublishingConf
 Optional fields:
 
 - `CaLogs`: [LogConfigurationsTypeDef](./type_defs.md#logconfigurationstypedef)
+
+<a id="memberframeworkattributestypedef"></a>
 
 ## MemberFrameworkAttributesTypeDef
 
@@ -645,6 +731,8 @@ Optional fields:
 - `Fabric`:
   [MemberFabricAttributesTypeDef](./type_defs.md#memberfabricattributestypedef)
 
+<a id="memberframeworkconfigurationtypedef"></a>
+
 ## MemberFrameworkConfigurationTypeDef
 
 ```python
@@ -656,6 +744,8 @@ Optional fields:
 - `Fabric`:
   [MemberFabricConfigurationTypeDef](./type_defs.md#memberfabricconfigurationtypedef)
 
+<a id="memberlogpublishingconfigurationtypedef"></a>
+
 ## MemberLogPublishingConfigurationTypeDef
 
 ```python
@@ -666,6 +756,8 @@ Optional fields:
 
 - `Fabric`:
   [MemberFabricLogPublishingConfigurationTypeDef](./type_defs.md#memberfabriclogpublishingconfigurationtypedef)
+
+<a id="membersummarytypedef"></a>
 
 ## MemberSummaryTypeDef
 
@@ -682,6 +774,8 @@ Optional fields:
 - `CreationDate`: `datetime`
 - `IsOwned`: `bool`
 - `Arn`: `str`
+
+<a id="membertypedef"></a>
 
 ## MemberTypeDef
 
@@ -705,6 +799,8 @@ Optional fields:
 - `Arn`: `str`
 - `KmsKeyArn`: `str`
 
+<a id="networkethereumattributestypedef"></a>
+
 ## NetworkEthereumAttributesTypeDef
 
 ```python
@@ -714,6 +810,8 @@ from mypy_boto3_managedblockchain.type_defs import NetworkEthereumAttributesType
 Optional fields:
 
 - `ChainId`: `str`
+
+<a id="networkfabricattributestypedef"></a>
 
 ## NetworkFabricAttributesTypeDef
 
@@ -726,6 +824,8 @@ Optional fields:
 - `OrderingServiceEndpoint`: `str`
 - `Edition`: [EditionType](./literals.md#editiontype)
 
+<a id="networkfabricconfigurationtypedef"></a>
+
 ## NetworkFabricConfigurationTypeDef
 
 ```python
@@ -735,6 +835,8 @@ from mypy_boto3_managedblockchain.type_defs import NetworkFabricConfigurationTyp
 Required fields:
 
 - `Edition`: [EditionType](./literals.md#editiontype)
+
+<a id="networkframeworkattributestypedef"></a>
 
 ## NetworkFrameworkAttributesTypeDef
 
@@ -749,6 +851,8 @@ Optional fields:
 - `Ethereum`:
   [NetworkEthereumAttributesTypeDef](./type_defs.md#networkethereumattributestypedef)
 
+<a id="networkframeworkconfigurationtypedef"></a>
+
 ## NetworkFrameworkConfigurationTypeDef
 
 ```python
@@ -759,6 +863,8 @@ Optional fields:
 
 - `Fabric`:
   [NetworkFabricConfigurationTypeDef](./type_defs.md#networkfabricconfigurationtypedef)
+
+<a id="networksummarytypedef"></a>
 
 ## NetworkSummaryTypeDef
 
@@ -776,6 +882,8 @@ Optional fields:
 - `Status`: [NetworkStatusType](./literals.md#networkstatustype)
 - `CreationDate`: `datetime`
 - `Arn`: `str`
+
+<a id="networktypedef"></a>
 
 ## NetworkTypeDef
 
@@ -799,6 +907,8 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
 
+<a id="nodeconfigurationtypedef"></a>
+
 ## NodeConfigurationTypeDef
 
 ```python
@@ -816,6 +926,8 @@ Optional fields:
   [NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef)
 - `StateDB`: [StateDBTypeType](./literals.md#statedbtypetype)
 
+<a id="nodeethereumattributestypedef"></a>
+
 ## NodeEthereumAttributesTypeDef
 
 ```python
@@ -827,6 +939,8 @@ Optional fields:
 - `HttpEndpoint`: `str`
 - `WebSocketEndpoint`: `str`
 
+<a id="nodefabricattributestypedef"></a>
+
 ## NodeFabricAttributesTypeDef
 
 ```python
@@ -837,6 +951,8 @@ Optional fields:
 
 - `PeerEndpoint`: `str`
 - `PeerEventEndpoint`: `str`
+
+<a id="nodefabriclogpublishingconfigurationtypedef"></a>
 
 ## NodeFabricLogPublishingConfigurationTypeDef
 
@@ -851,6 +967,8 @@ Optional fields:
 - `PeerLogs`:
   [LogConfigurationsTypeDef](./type_defs.md#logconfigurationstypedef)
 
+<a id="nodeframeworkattributestypedef"></a>
+
 ## NodeFrameworkAttributesTypeDef
 
 ```python
@@ -864,6 +982,8 @@ Optional fields:
 - `Ethereum`:
   [NodeEthereumAttributesTypeDef](./type_defs.md#nodeethereumattributestypedef)
 
+<a id="nodelogpublishingconfigurationtypedef"></a>
+
 ## NodeLogPublishingConfigurationTypeDef
 
 ```python
@@ -874,6 +994,8 @@ Optional fields:
 
 - `Fabric`:
   [NodeFabricLogPublishingConfigurationTypeDef](./type_defs.md#nodefabriclogpublishingconfigurationtypedef)
+
+<a id="nodesummarytypedef"></a>
 
 ## NodeSummaryTypeDef
 
@@ -889,6 +1011,8 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `InstanceType`: `str`
 - `Arn`: `str`
+
+<a id="nodetypedef"></a>
 
 ## NodeTypeDef
 
@@ -914,6 +1038,8 @@ Optional fields:
 - `Arn`: `str`
 - `KmsKeyArn`: `str`
 
+<a id="proposalactionstypedef"></a>
+
 ## ProposalActionsTypeDef
 
 ```python
@@ -926,6 +1052,8 @@ Optional fields:
   `Sequence`\[[InviteActionTypeDef](./type_defs.md#inviteactiontypedef)\]
 - `Removals`:
   `Sequence`\[[RemoveActionTypeDef](./type_defs.md#removeactiontypedef)\]
+
+<a id="proposalsummarytypedef"></a>
 
 ## ProposalSummaryTypeDef
 
@@ -943,6 +1071,8 @@ Optional fields:
 - `CreationDate`: `datetime`
 - `ExpirationDate`: `datetime`
 - `Arn`: `str`
+
+<a id="proposaltypedef"></a>
 
 ## ProposalTypeDef
 
@@ -967,6 +1097,8 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
 
+<a id="rejectinvitationinputrequesttypedef"></a>
+
 ## RejectInvitationInputRequestTypeDef
 
 ```python
@@ -977,6 +1109,8 @@ Required fields:
 
 - `InvitationId`: `str`
 
+<a id="removeactiontypedef"></a>
+
 ## RemoveActionTypeDef
 
 ```python
@@ -986,6 +1120,8 @@ from mypy_boto3_managedblockchain.type_defs import RemoveActionTypeDef
 Required fields:
 
 - `MemberId`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1001,6 +1137,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1012,6 +1150,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1022,6 +1162,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatememberinputrequesttypedef"></a>
 
 ## UpdateMemberInputRequestTypeDef
 
@@ -1038,6 +1180,8 @@ Optional fields:
 
 - `LogPublishingConfiguration`:
   [MemberLogPublishingConfigurationTypeDef](./type_defs.md#memberlogpublishingconfigurationtypedef)
+
+<a id="updatenodeinputrequesttypedef"></a>
 
 ## UpdateNodeInputRequestTypeDef
 
@@ -1056,6 +1200,8 @@ Optional fields:
 - `LogPublishingConfiguration`:
   [NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef)
 
+<a id="voteonproposalinputrequesttypedef"></a>
+
 ## VoteOnProposalInputRequestTypeDef
 
 ```python
@@ -1069,6 +1215,8 @@ Required fields:
 - `VoterMemberId`: `str`
 - `Vote`: [VoteValueType](./literals.md#votevaluetype)
 
+<a id="votesummarytypedef"></a>
+
 ## VoteSummaryTypeDef
 
 ```python
@@ -1080,6 +1228,8 @@ Optional fields:
 - `Vote`: [VoteValueType](./literals.md#votevaluetype)
 - `MemberName`: `str`
 - `MemberId`: `str`
+
+<a id="votingpolicytypedef"></a>
 
 ## VotingPolicyTypeDef
 

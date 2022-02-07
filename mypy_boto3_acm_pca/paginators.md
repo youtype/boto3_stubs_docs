@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-acmpca-module"></a>
+
 # Paginators for boto3 ACMPCA module
 
 > [Index](..) > [ACMPCA](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
-[mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
+[mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 - [Paginators for boto3 ACMPCA module](#paginators-for-boto3-acmpca-module)
   - [ListCertificateAuthoritiesPaginator](#listcertificateauthoritiespaginator)
   - [ListPermissionsPaginator](#listpermissionspaginator)
   - [ListTagsPaginator](#listtagspaginator)
+
+<a id="listcertificateauthoritiespaginator"></a>
 
 ## ListCertificateAuthoritiesPaginator
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_acm_pca.paginator import ListCertificateAuthoritiesPaginator
 
 def get_list_certificate_authorities_paginator() -> ListCertificateAuthoritiesPaginator:
-    return boto3.client("acm-pca").get_paginator("list_certificate_authorities")
+    return Session().client("acm-pca").get_paginator("list_certificate_authorities")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `ListCertificateAuthoritiesPaginator.paginate` method:
 `ListCertificateAuthoritiesPaginator.paginate` returns
 `_PageIterator`\[[ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef)\].
 
+<a id="listpermissionspaginator"></a>
+
 ## ListPermissionsPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_acm_pca.paginator import ListPermissionsPaginator
 
 def get_list_permissions_paginator() -> ListPermissionsPaginator:
-    return boto3.client("acm-pca").get_paginator("list_permissions")
+    return Session().client("acm-pca").get_paginator("list_permissions")
 ```
 
 Boto3 documentation:
@@ -64,6 +74,8 @@ Arguments for `ListPermissionsPaginator.paginate` method:
 `ListPermissionsPaginator.paginate` returns
 `_PageIterator`\[[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef)\].
 
+<a id="listtagspaginator"></a>
+
 ## ListTagsPaginator
 
 Type annotations for `boto3.client("acm-pca").get_paginator("list_tags")`.
@@ -71,10 +83,12 @@ Type annotations for `boto3.client("acm-pca").get_paginator("list_tags")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_acm_pca.paginator import ListTagsPaginator
 
 def get_list_tags_paginator() -> ListTagsPaginator:
-    return boto3.client("acm-pca").get_paginator("list_tags")
+    return Session().client("acm-pca").get_paginator("list_tags")
 ```
 
 Boto3 documentation:

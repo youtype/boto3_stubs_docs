@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-sagemakeredgemanager-module"></a>
+
 # Typed dictionaries for boto3 SagemakerEdgeManager module
 
 > [Index](..) > [SagemakerEdgeManager](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
 type annotations stubs module
-[mypy_boto3_sagemaker_edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
+[mypy-boto3-sagemaker-edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
 
 - [Typed dictionaries for boto3 SagemakerEdgeManager module](#typed-dictionaries-for-boto3-sagemakeredgemanager-module)
   - [EdgeMetricTypeDef](#edgemetrictypedef)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [ModelTypeDef](#modeltypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SendHeartbeatRequestRequestTypeDef](#sendheartbeatrequestrequesttypedef)
+
+<a id="edgemetrictypedef"></a>
 
 ## EdgeMetricTypeDef
 
@@ -28,6 +32,8 @@ Optional fields:
 - `Value`: `float`
 - `Timestamp`: `Union`\[`datetime`, `str`\]
 
+<a id="getdeviceregistrationrequestrequesttypedef"></a>
+
 ## GetDeviceRegistrationRequestRequestTypeDef
 
 ```python
@@ -38,6 +44,8 @@ Required fields:
 
 - `DeviceName`: `str`
 - `DeviceFleetName`: `str`
+
+<a id="getdeviceregistrationresulttypedef"></a>
 
 ## GetDeviceRegistrationResultTypeDef
 
@@ -51,6 +59,8 @@ Required fields:
 - `CacheTTL`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modeltypedef"></a>
 
 ## ModelTypeDef
 
@@ -67,6 +77,8 @@ Optional fields:
 - `ModelMetrics`:
   `Sequence`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -80,6 +92,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="sendheartbeatrequestrequesttypedef"></a>
 
 ## SendHeartbeatRequestRequestTypeDef
 

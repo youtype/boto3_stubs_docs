@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-honeycode-module"></a>
+
 # Literals for boto3 Honeycode module
 
 > [Index](..) > [Honeycode](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
 type annotations stubs module
-[mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
+[mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 - [Literals for boto3 Honeycode module](#literals-for-boto3-honeycode-module)
   - [ErrorCodeType](#errorcodetype)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [UpsertActionType](#upsertactiontype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="errorcodetype"></a>
 
 ## ErrorCodeType
 
@@ -44,6 +48,8 @@ Values:
 - `TABLE_NOT_FOUND_ERROR`
 - `UNKNOWN_ERROR`
 
+<a id="formattype"></a>
+
 ## FormatType
 
 ```python
@@ -65,6 +71,8 @@ Values:
 - `TEXT`
 - `TIME`
 
+<a id="importdatacharacterencodingtype"></a>
+
 ## ImportDataCharacterEncodingType
 
 ```python
@@ -80,6 +88,8 @@ Values:
 - `UTF-16LE`
 - `UTF-8`
 
+<a id="importsourcedataformattype"></a>
+
 ## ImportSourceDataFormatType
 
 ```python
@@ -89,6 +99,8 @@ from mypy_boto3_honeycode.literals import ImportSourceDataFormatType
 Values:
 
 - `DELIMITED_TEXT`
+
+<a id="listtablecolumnspaginatorname"></a>
 
 ## ListTableColumnsPaginatorName
 
@@ -100,6 +112,8 @@ Values:
 
 - `list_table_columns`
 
+<a id="listtablerowspaginatorname"></a>
+
 ## ListTableRowsPaginatorName
 
 ```python
@@ -109,6 +123,8 @@ from mypy_boto3_honeycode.literals import ListTableRowsPaginatorName
 Values:
 
 - `list_table_rows`
+
+<a id="listtablespaginatorname"></a>
 
 ## ListTablesPaginatorName
 
@@ -120,6 +136,8 @@ Values:
 
 - `list_tables`
 
+<a id="querytablerowspaginatorname"></a>
+
 ## QueryTableRowsPaginatorName
 
 ```python
@@ -129,6 +147,8 @@ from mypy_boto3_honeycode.literals import QueryTableRowsPaginatorName
 Values:
 
 - `query_table_rows`
+
+<a id="tabledataimportjobstatustype"></a>
 
 ## TableDataImportJobStatusType
 
@@ -143,6 +163,8 @@ Values:
 - `IN_PROGRESS`
 - `SUBMITTED`
 
+<a id="upsertactiontype"></a>
+
 ## UpsertActionType
 
 ```python
@@ -153,6 +175,8 @@ Values:
 
 - `APPENDED`
 - `UPDATED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -461,6 +485,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

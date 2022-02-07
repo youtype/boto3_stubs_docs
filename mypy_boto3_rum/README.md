@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cloudwatchrum-module"></a>
+
 # Type annotations for boto3 CloudWatchRUM module
 
 > [Index](..) > CloudWatchRUM
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
 type annotations stubs module
-[mypy_boto3_rum](https://pypi.org/project/mypy-boto3-rum/).
+[mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[rum]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[rum]'
+
+# standalone installation
 pip install mypy-boto3-rum
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-rum
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="cloudwatchrumclient"></a>
+
 ## CloudWatchRUMClient
 
 Type annotations for `boto3.client("rum")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_rum.client import CloudWatchRUMClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -47,6 +61,8 @@ from mypy_boto3_rum.client import CloudWatchRUMClient
 - [untag_resource](./client.md#untag_resource)
 - [update_app_monitor](./client.md#update_app_monitor)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CloudWatchRUMClient [exceptions](./client.md#exceptions)
@@ -60,6 +76,8 @@ CloudWatchRUMClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -68,11 +86,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_rum.paginators import GetAppMonitorDataPaginator, ...
+from mypy_boto3_rum.paginator import GetAppMonitorDataPaginator, ...
 ```
 
 - [GetAppMonitorDataPaginator](./paginators.md#getappmonitordatapaginator)
 - [ListAppMonitorsPaginator](./paginators.md#listappmonitorspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -90,6 +110,8 @@ from mypy_boto3_rum.literals import GetAppMonitorDataPaginatorName, ...
 - [TelemetryType](./literals.md#telemetrytype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

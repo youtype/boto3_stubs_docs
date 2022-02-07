@@ -1,3 +1,5 @@
+<a id="autoscalingclient-for-boto3-autoscaling-module"></a>
+
 # AutoScalingClient for boto3 AutoScaling module
 
 > [Index](..) > [AutoScaling](.) > AutoScalingClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module
-[mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
+[mypy-boto3-autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 - [AutoScalingClient for boto3 AutoScaling module](#autoscalingclient-for-boto3-autoscaling-module)
   - [AutoScalingClient](#autoscalingclient)
@@ -77,6 +79,8 @@ type annotations stubs module
     - [update_auto_scaling_group](#update_auto_scaling_group)
     - [get_paginator](#get_paginator)
 
+<a id="autoscalingclient"></a>
+
 ## AutoScalingClient
 
 Type annotations for `boto3.client("autoscaling")`
@@ -84,14 +88,17 @@ Type annotations for `boto3.client("autoscaling")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_autoscaling.client import AutoScalingClient
 
 def get_autoscaling_client() -> AutoScalingClient:
-    return boto3.client("autoscaling")
+    return Session().client("autoscaling")
 ```
 
 Boto3 documentation:
 [AutoScaling.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -118,7 +125,11 @@ Exceptions:
 - `Exceptions.ScalingActivityInProgressFault`
 - `Exceptions.ServiceLinkedRoleFailure`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -130,6 +141,8 @@ Boto3 documentation:
 [AutoScaling.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="attach_instances"></a>
 
 ### attach_instances
 
@@ -147,6 +160,8 @@ Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `InstanceIds`: `Sequence`\[`str`\]
+
+<a id="attach_load_balancer_target_groups"></a>
 
 ### attach_load_balancer_target_groups
 
@@ -168,6 +183,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="attach_load_balancers"></a>
+
 ### attach_load_balancers
 
 .
@@ -187,6 +204,8 @@ Keyword-only arguments:
 - `LoadBalancerNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="batch_delete_scheduled_action"></a>
 
 ### batch_delete_scheduled_action
 
@@ -208,6 +227,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDeleteScheduledActionAnswerTypeDef](./type_defs.md#batchdeletescheduledactionanswertypedef).
+
+<a id="batch_put_scheduled_update_group_action"></a>
 
 ### batch_put_scheduled_update_group_action
 
@@ -233,6 +254,8 @@ Keyword-only arguments:
 Returns
 [BatchPutScheduledUpdateGroupActionAnswerTypeDef](./type_defs.md#batchputscheduledupdategroupactionanswertypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -247,6 +270,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_instance_refresh"></a>
 
 ### cancel_instance_refresh
 
@@ -267,6 +292,8 @@ Keyword-only arguments:
 
 Returns
 [CancelInstanceRefreshAnswerTypeDef](./type_defs.md#cancelinstancerefreshanswertypedef).
+
+<a id="complete_lifecycle_action"></a>
 
 ### complete_lifecycle_action
 
@@ -291,6 +318,8 @@ Keyword-only arguments:
 - `InstanceId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_auto_scaling_group"></a>
 
 ### create_auto_scaling_group
 
@@ -338,6 +367,8 @@ Keyword-only arguments:
 - `Context`: `str`
 - `DesiredCapacityType`: `str`
 
+<a id="create_launch_configuration"></a>
+
 ### create_launch_configuration
 
 Creates a launch configuration.
@@ -376,6 +407,8 @@ Keyword-only arguments:
 - `MetadataOptions`:
   [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 
+<a id="create_or_update_tags"></a>
+
 ### create_or_update_tags
 
 Creates or updates tags for the specified Auto Scaling group.
@@ -392,6 +425,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="delete_auto_scaling_group"></a>
 
 ### delete_auto_scaling_group
 
@@ -411,6 +446,8 @@ Keyword-only arguments:
 - `AutoScalingGroupName`: `str` *(required)*
 - `ForceDelete`: `bool`
 
+<a id="delete_launch_configuration"></a>
+
 ### delete_launch_configuration
 
 Deletes the specified launch configuration.
@@ -427,6 +464,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LaunchConfigurationName`: `str` *(required)*
+
+<a id="delete_lifecycle_hook"></a>
 
 ### delete_lifecycle_hook
 
@@ -448,6 +487,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_notification_configuration"></a>
+
 ### delete_notification_configuration
 
 Deletes the specified notification.
@@ -466,6 +507,8 @@ Keyword-only arguments:
 - `AutoScalingGroupName`: `str` *(required)*
 - `TopicARN`: `str` *(required)*
 
+<a id="delete_policy"></a>
+
 ### delete_policy
 
 Deletes the specified scaling policy.
@@ -482,6 +525,8 @@ Keyword-only arguments:
 
 - `PolicyName`: `str` *(required)*
 - `AutoScalingGroupName`: `str`
+
+<a id="delete_scheduled_action"></a>
 
 ### delete_scheduled_action
 
@@ -501,6 +546,8 @@ Keyword-only arguments:
 - `AutoScalingGroupName`: `str` *(required)*
 - `ScheduledActionName`: `str` *(required)*
 
+<a id="delete_tags"></a>
+
 ### delete_tags
 
 Deletes the specified tags.
@@ -516,6 +563,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="delete_warm_pool"></a>
 
 ### delete_warm_pool
 
@@ -536,6 +585,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_account_limits"></a>
+
 ### describe_account_limits
 
 Describes the current Amazon EC2 Auto Scaling resource quotas for your account.
@@ -548,6 +599,8 @@ Boto3 documentation:
 
 Returns
 [DescribeAccountLimitsAnswerTypeDef](./type_defs.md#describeaccountlimitsanswertypedef).
+
+<a id="describe_adjustment_types"></a>
 
 ### describe_adjustment_types
 
@@ -562,6 +615,8 @@ Boto3 documentation:
 
 Returns
 [DescribeAdjustmentTypesAnswerTypeDef](./type_defs.md#describeadjustmenttypesanswertypedef).
+
+<a id="describe_auto_scaling_groups"></a>
 
 ### describe_auto_scaling_groups
 
@@ -586,6 +641,8 @@ Keyword-only arguments:
 Returns
 [AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef).
 
+<a id="describe_auto_scaling_instances"></a>
+
 ### describe_auto_scaling_instances
 
 Gets information about the Auto Scaling instances in the account and Region.
@@ -608,6 +665,8 @@ Keyword-only arguments:
 Returns
 [AutoScalingInstancesTypeTypeDef](./type_defs.md#autoscalinginstancestypetypedef).
 
+<a id="describe_auto_scaling_notification_types"></a>
+
 ### describe_auto_scaling_notification_types
 
 Describes the notification types that are supported by Amazon EC2 Auto Scaling.
@@ -620,6 +679,8 @@ Boto3 documentation:
 
 Returns
 [DescribeAutoScalingNotificationTypesAnswerTypeDef](./type_defs.md#describeautoscalingnotificationtypesanswertypedef).
+
+<a id="describe_instance_refreshes"></a>
 
 ### describe_instance_refreshes
 
@@ -645,6 +706,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstanceRefreshesAnswerTypeDef](./type_defs.md#describeinstancerefreshesanswertypedef).
 
+<a id="describe_launch_configurations"></a>
+
 ### describe_launch_configurations
 
 Gets information about the launch configurations in the account and Region.
@@ -667,6 +730,8 @@ Keyword-only arguments:
 Returns
 [LaunchConfigurationsTypeTypeDef](./type_defs.md#launchconfigurationstypetypedef).
 
+<a id="describe_lifecycle_hook_types"></a>
+
 ### describe_lifecycle_hook_types
 
 Describes the available types of lifecycle hooks.
@@ -679,6 +744,8 @@ Boto3 documentation:
 
 Returns
 [DescribeLifecycleHookTypesAnswerTypeDef](./type_defs.md#describelifecyclehooktypesanswertypedef).
+
+<a id="describe_lifecycle_hooks"></a>
 
 ### describe_lifecycle_hooks
 
@@ -701,6 +768,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLifecycleHooksAnswerTypeDef](./type_defs.md#describelifecyclehooksanswertypedef).
+
+<a id="describe_load_balancer_target_groups"></a>
 
 ### describe_load_balancer_target_groups
 
@@ -725,6 +794,8 @@ Keyword-only arguments:
 Returns
 [DescribeLoadBalancerTargetGroupsResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponsetypedef).
 
+<a id="describe_load_balancers"></a>
+
 ### describe_load_balancers
 
 Gets information about the load balancers for the specified Auto Scaling group.
@@ -747,6 +818,8 @@ Keyword-only arguments:
 Returns
 [DescribeLoadBalancersResponseTypeDef](./type_defs.md#describeloadbalancersresponsetypedef).
 
+<a id="describe_metric_collection_types"></a>
+
 ### describe_metric_collection_types
 
 Describes the available CloudWatch metrics for Amazon EC2 Auto Scaling.
@@ -759,6 +832,8 @@ Boto3 documentation:
 
 Returns
 [DescribeMetricCollectionTypesAnswerTypeDef](./type_defs.md#describemetriccollectiontypesanswertypedef).
+
+<a id="describe_notification_configurations"></a>
 
 ### describe_notification_configurations
 
@@ -783,6 +858,8 @@ Keyword-only arguments:
 Returns
 [DescribeNotificationConfigurationsAnswerTypeDef](./type_defs.md#describenotificationconfigurationsanswertypedef).
 
+<a id="describe_policies"></a>
+
 ### describe_policies
 
 Gets information about the scaling policies in the account and Region.
@@ -804,6 +881,8 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns [PoliciesTypeTypeDef](./type_defs.md#policiestypetypedef).
+
+<a id="describe_scaling_activities"></a>
 
 ### describe_scaling_activities
 
@@ -828,6 +907,8 @@ Keyword-only arguments:
 
 Returns [ActivitiesTypeTypeDef](./type_defs.md#activitiestypetypedef).
 
+<a id="describe_scaling_process_types"></a>
+
 ### describe_scaling_process_types
 
 Describes the scaling process types for use with the ResumeProcesses and
@@ -840,6 +921,8 @@ Boto3 documentation:
 [AutoScaling.Client.describe_scaling_process_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_process_types)
 
 Returns [ProcessesTypeTypeDef](./type_defs.md#processestypetypedef).
+
+<a id="describe_scheduled_actions"></a>
 
 ### describe_scheduled_actions
 
@@ -867,6 +950,8 @@ Keyword-only arguments:
 Returns
 [ScheduledActionsTypeTypeDef](./type_defs.md#scheduledactionstypetypedef).
 
+<a id="describe_tags"></a>
+
 ### describe_tags
 
 Describes the specified tags.
@@ -887,6 +972,8 @@ Keyword-only arguments:
 
 Returns [TagsTypeTypeDef](./type_defs.md#tagstypetypedef).
 
+<a id="describe_termination_policy_types"></a>
+
 ### describe_termination_policy_types
 
 Describes the termination policies supported by Amazon EC2 Auto Scaling.
@@ -899,6 +986,8 @@ Boto3 documentation:
 
 Returns
 [DescribeTerminationPolicyTypesAnswerTypeDef](./type_defs.md#describeterminationpolicytypesanswertypedef).
+
+<a id="describe_warm_pool"></a>
 
 ### describe_warm_pool
 
@@ -921,6 +1010,8 @@ Keyword-only arguments:
 Returns
 [DescribeWarmPoolAnswerTypeDef](./type_defs.md#describewarmpoolanswertypedef).
 
+<a id="detach_instances"></a>
+
 ### detach_instances
 
 Removes one or more instances from the specified Auto Scaling group.
@@ -942,6 +1033,8 @@ Keyword-only arguments:
 Returns
 [DetachInstancesAnswerTypeDef](./type_defs.md#detachinstancesanswertypedef).
 
+<a id="detach_load_balancer_target_groups"></a>
+
 ### detach_load_balancer_target_groups
 
 Detaches one or more target groups from the specified Auto Scaling group.
@@ -961,6 +1054,8 @@ Keyword-only arguments:
 - `TargetGroupARNs`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="detach_load_balancers"></a>
 
 ### detach_load_balancers
 
@@ -983,6 +1078,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disable_metrics_collection"></a>
+
 ### disable_metrics_collection
 
 Disables group metrics for the specified Auto Scaling group.
@@ -1000,6 +1097,8 @@ Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `Metrics`: `Sequence`\[`str`\]
+
+<a id="enable_metrics_collection"></a>
 
 ### enable_metrics_collection
 
@@ -1019,6 +1118,8 @@ Keyword-only arguments:
 - `AutoScalingGroupName`: `str` *(required)*
 - `Granularity`: `str` *(required)*
 - `Metrics`: `Sequence`\[`str`\]
+
+<a id="enter_standby"></a>
 
 ### enter_standby
 
@@ -1040,6 +1141,8 @@ Keyword-only arguments:
 
 Returns [EnterStandbyAnswerTypeDef](./type_defs.md#enterstandbyanswertypedef).
 
+<a id="execute_policy"></a>
+
 ### execute_policy
 
 Executes the specified policy.
@@ -1060,6 +1163,8 @@ Keyword-only arguments:
 - `MetricValue`: `float`
 - `BreachThreshold`: `float`
 
+<a id="exit_standby"></a>
+
 ### exit_standby
 
 Moves the specified instances out of the standby state.
@@ -1079,6 +1184,8 @@ Keyword-only arguments:
 
 Returns [ExitStandbyAnswerTypeDef](./type_defs.md#exitstandbyanswertypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1097,6 +1204,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_predictive_scaling_forecast"></a>
 
 ### get_predictive_scaling_forecast
 
@@ -1120,6 +1229,8 @@ Keyword-only arguments:
 
 Returns
 [GetPredictiveScalingForecastAnswerTypeDef](./type_defs.md#getpredictivescalingforecastanswertypedef).
+
+<a id="put_lifecycle_hook"></a>
 
 ### put_lifecycle_hook
 
@@ -1146,6 +1257,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_notification_configuration"></a>
+
 ### put_notification_configuration
 
 Configures an Auto Scaling group to send notifications when specified events
@@ -1165,6 +1278,8 @@ Keyword-only arguments:
 - `AutoScalingGroupName`: `str` *(required)*
 - `TopicARN`: `str` *(required)*
 - `NotificationTypes`: `Sequence`\[`str`\] *(required)*
+
+<a id="put_scaling_policy"></a>
 
 ### put_scaling_policy
 
@@ -1200,6 +1315,8 @@ Keyword-only arguments:
 
 Returns [PolicyARNTypeTypeDef](./type_defs.md#policyarntypetypedef).
 
+<a id="put_scheduled_update_group_action"></a>
+
 ### put_scheduled_update_group_action
 
 Creates or updates a scheduled scaling action for an Auto Scaling group.
@@ -1226,6 +1343,8 @@ Keyword-only arguments:
 - `DesiredCapacity`: `int`
 - `TimeZone`: `str`
 
+<a id="put_warm_pool"></a>
+
 ### put_warm_pool
 
 Creates or updates a warm pool for the specified Auto Scaling group.
@@ -1246,6 +1365,8 @@ Keyword-only arguments:
 - `PoolState`: [WarmPoolStateType](./literals.md#warmpoolstatetype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="record_lifecycle_action_heartbeat"></a>
 
 ### record_lifecycle_action_heartbeat
 
@@ -1270,6 +1391,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="resume_processes"></a>
+
 ### resume_processes
 
 Resumes the specified suspended auto scaling processes, or all suspended
@@ -1287,6 +1410,8 @@ Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ScalingProcesses`: `Sequence`\[`str`\]
+
+<a id="set_desired_capacity"></a>
 
 ### set_desired_capacity
 
@@ -1306,6 +1431,8 @@ Keyword-only arguments:
 - `DesiredCapacity`: `int` *(required)*
 - `HonorCooldown`: `bool`
 
+<a id="set_instance_health"></a>
+
 ### set_instance_health
 
 Sets the health status of the specified instance.
@@ -1323,6 +1450,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `HealthStatus`: `str` *(required)*
 - `ShouldRespectGracePeriod`: `bool`
+
+<a id="set_instance_protection"></a>
 
 ### set_instance_protection
 
@@ -1344,6 +1473,8 @@ Keyword-only arguments:
 - `ProtectedFromScaleIn`: `bool` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_instance_refresh"></a>
 
 ### start_instance_refresh
 
@@ -1371,6 +1502,8 @@ Keyword-only arguments:
 Returns
 [StartInstanceRefreshAnswerTypeDef](./type_defs.md#startinstancerefreshanswertypedef).
 
+<a id="suspend_processes"></a>
+
 ### suspend_processes
 
 Suspends the specified auto scaling processes, or all processes, for the
@@ -1388,6 +1521,8 @@ Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ScalingProcesses`: `Sequence`\[`str`\]
+
+<a id="terminate_instance_in_auto_scaling_group"></a>
 
 ### terminate_instance_in_auto_scaling_group
 
@@ -1409,6 +1544,8 @@ Keyword-only arguments:
 - `ShouldDecrementDesiredCapacity`: `bool` *(required)*
 
 Returns [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef).
+
+<a id="update_auto_scaling_group"></a>
 
 ### update_auto_scaling_group
 
@@ -1449,6 +1586,8 @@ Keyword-only arguments:
 - `CapacityRebalance`: `bool`
 - `Context`: `str`
 - `DesiredCapacityType`: `str`
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

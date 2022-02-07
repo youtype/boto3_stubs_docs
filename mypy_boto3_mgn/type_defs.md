@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-mgn-module"></a>
+
 # Typed dictionaries for boto3 mgn module
 
 > [Index](..) > [mgn](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
 type annotations stubs module
-[mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
+[mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 - [Typed dictionaries for boto3 mgn module](#typed-dictionaries-for-boto3-mgn-module)
   - [CPUTypeDef](#cputypedef)
@@ -85,6 +87,8 @@ type annotations stubs module
   - [UpdateSourceServerReplicationTypeRequestRequestTypeDef](#updatesourceserverreplicationtyperequestrequesttypedef)
   - [VcenterClientTypeDef](#vcenterclienttypedef)
 
+<a id="cputypedef"></a>
+
 ## CPUTypeDef
 
 ```python
@@ -95,6 +99,8 @@ Optional fields:
 
 - `cores`: `int`
 - `modelName`: `str`
+
+<a id="changeserverlifecyclestaterequestrequesttypedef"></a>
 
 ## ChangeServerLifeCycleStateRequestRequestTypeDef
 
@@ -108,6 +114,8 @@ Required fields:
   [ChangeServerLifeCycleStateSourceServerLifecycleTypeDef](./type_defs.md#changeserverlifecyclestatesourceserverlifecycletypedef)
 - `sourceServerID`: `str`
 
+<a id="changeserverlifecyclestatesourceserverlifecycletypedef"></a>
+
 ## ChangeServerLifeCycleStateSourceServerLifecycleTypeDef
 
 ```python
@@ -118,6 +126,8 @@ Required fields:
 
 - `state`:
   [ChangeServerLifeCycleStateSourceServerLifecycleStateType](./literals.md#changeserverlifecyclestatesourceserverlifecyclestatetype)
+
+<a id="createreplicationconfigurationtemplaterequestrequesttypedef"></a>
 
 ## CreateReplicationConfigurationTemplateRequestRequestTypeDef
 
@@ -147,6 +157,8 @@ Optional fields:
 - `ebsEncryptionKeyArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="datareplicationerrortypedef"></a>
+
 ## DataReplicationErrorTypeDef
 
 ```python
@@ -158,6 +170,8 @@ Optional fields:
 - `error`:
   [DataReplicationErrorStringType](./literals.md#datareplicationerrorstringtype)
 - `rawError`: `str`
+
+<a id="datareplicationinforeplicateddisktypedef"></a>
 
 ## DataReplicationInfoReplicatedDiskTypeDef
 
@@ -172,6 +186,8 @@ Optional fields:
 - `replicatedStorageBytes`: `int`
 - `rescannedStorageBytes`: `int`
 - `totalStorageBytes`: `int`
+
+<a id="datareplicationinfotypedef"></a>
 
 ## DataReplicationInfoTypeDef
 
@@ -193,6 +209,8 @@ Optional fields:
 - `replicatedDisks`:
   `List`\[[DataReplicationInfoReplicatedDiskTypeDef](./type_defs.md#datareplicationinforeplicateddisktypedef)\]
 
+<a id="datareplicationinitiationsteptypedef"></a>
+
 ## DataReplicationInitiationStepTypeDef
 
 ```python
@@ -205,6 +223,8 @@ Optional fields:
   [DataReplicationInitiationStepNameType](./literals.md#datareplicationinitiationstepnametype)
 - `status`:
   [DataReplicationInitiationStepStatusType](./literals.md#datareplicationinitiationstepstatustype)
+
+<a id="datareplicationinitiationtypedef"></a>
 
 ## DataReplicationInitiationTypeDef
 
@@ -219,6 +239,8 @@ Optional fields:
 - `steps`:
   `List`\[[DataReplicationInitiationStepTypeDef](./type_defs.md#datareplicationinitiationsteptypedef)\]
 
+<a id="deletejobrequestrequesttypedef"></a>
+
 ## DeleteJobRequestRequestTypeDef
 
 ```python
@@ -228,6 +250,8 @@ from mypy_boto3_mgn.type_defs import DeleteJobRequestRequestTypeDef
 Required fields:
 
 - `jobID`: `str`
+
+<a id="deletereplicationconfigurationtemplaterequestrequesttypedef"></a>
 
 ## DeleteReplicationConfigurationTemplateRequestRequestTypeDef
 
@@ -239,6 +263,8 @@ Required fields:
 
 - `replicationConfigurationTemplateID`: `str`
 
+<a id="deletesourceserverrequestrequesttypedef"></a>
+
 ## DeleteSourceServerRequestRequestTypeDef
 
 ```python
@@ -249,6 +275,8 @@ Required fields:
 
 - `sourceServerID`: `str`
 
+<a id="deletevcenterclientrequestrequesttypedef"></a>
+
 ## DeleteVcenterClientRequestRequestTypeDef
 
 ```python
@@ -258,6 +286,8 @@ from mypy_boto3_mgn.type_defs import DeleteVcenterClientRequestRequestTypeDef
 Required fields:
 
 - `vcenterClientID`: `str`
+
+<a id="describejoblogitemsrequestrequesttypedef"></a>
 
 ## DescribeJobLogItemsRequestRequestTypeDef
 
@@ -274,6 +304,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="describejoblogitemsresponsetypedef"></a>
+
 ## DescribeJobLogItemsResponseTypeDef
 
 ```python
@@ -287,6 +319,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describejobsrequestfilterstypedef"></a>
+
 ## DescribeJobsRequestFiltersTypeDef
 
 ```python
@@ -298,6 +332,8 @@ Optional fields:
 - `fromDate`: `str`
 - `jobIDs`: `Sequence`\[`str`\]
 - `toDate`: `str`
+
+<a id="describejobsrequestrequesttypedef"></a>
 
 ## DescribeJobsRequestRequestTypeDef
 
@@ -315,6 +351,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="describejobsresponsetypedef"></a>
+
 ## DescribeJobsResponseTypeDef
 
 ```python
@@ -327,6 +365,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describereplicationconfigurationtemplatesrequestrequesttypedef"></a>
 
 ## DescribeReplicationConfigurationTemplatesRequestRequestTypeDef
 
@@ -343,6 +383,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="describereplicationconfigurationtemplatesresponsetypedef"></a>
+
 ## DescribeReplicationConfigurationTemplatesResponseTypeDef
 
 ```python
@@ -356,6 +398,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describesourceserversrequestfilterstypedef"></a>
 
 ## DescribeSourceServersRequestFiltersTypeDef
 
@@ -371,6 +415,8 @@ Optional fields:
 - `replicationTypes`:
   `Sequence`\[[ReplicationTypeType](./literals.md#replicationtypetype)\]
 - `sourceServerIDs`: `Sequence`\[`str`\]
+
+<a id="describesourceserversrequestrequesttypedef"></a>
 
 ## DescribeSourceServersRequestRequestTypeDef
 
@@ -388,6 +434,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="describesourceserversresponsetypedef"></a>
+
 ## DescribeSourceServersResponseTypeDef
 
 ```python
@@ -401,6 +449,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describevcenterclientsrequestrequesttypedef"></a>
+
 ## DescribeVcenterClientsRequestRequestTypeDef
 
 ```python
@@ -411,6 +461,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describevcenterclientsresponsetypedef"></a>
 
 ## DescribeVcenterClientsResponseTypeDef
 
@@ -426,6 +478,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disconnectfromservicerequestrequesttypedef"></a>
+
 ## DisconnectFromServiceRequestRequestTypeDef
 
 ```python
@@ -435,6 +489,8 @@ from mypy_boto3_mgn.type_defs import DisconnectFromServiceRequestRequestTypeDef
 Required fields:
 
 - `sourceServerID`: `str`
+
+<a id="disktypedef"></a>
 
 ## DiskTypeDef
 
@@ -447,6 +503,8 @@ Optional fields:
 - `bytes`: `int`
 - `deviceName`: `str`
 
+<a id="finalizecutoverrequestrequesttypedef"></a>
+
 ## FinalizeCutoverRequestRequestTypeDef
 
 ```python
@@ -456,6 +514,8 @@ from mypy_boto3_mgn.type_defs import FinalizeCutoverRequestRequestTypeDef
 Required fields:
 
 - `sourceServerID`: `str`
+
+<a id="getlaunchconfigurationrequestrequesttypedef"></a>
 
 ## GetLaunchConfigurationRequestRequestTypeDef
 
@@ -467,6 +527,8 @@ Required fields:
 
 - `sourceServerID`: `str`
 
+<a id="getreplicationconfigurationrequestrequesttypedef"></a>
+
 ## GetReplicationConfigurationRequestRequestTypeDef
 
 ```python
@@ -476,6 +538,8 @@ from mypy_boto3_mgn.type_defs import GetReplicationConfigurationRequestRequestTy
 Required fields:
 
 - `sourceServerID`: `str`
+
+<a id="identificationhintstypedef"></a>
 
 ## IdentificationHintsTypeDef
 
@@ -491,6 +555,8 @@ Optional fields:
 - `vmPath`: `str`
 - `vmWareUuid`: `str`
 
+<a id="joblogeventdatatypedef"></a>
+
 ## JobLogEventDataTypeDef
 
 ```python
@@ -504,6 +570,8 @@ Optional fields:
 - `sourceServerID`: `str`
 - `targetInstanceID`: `str`
 
+<a id="joblogtypedef"></a>
+
 ## JobLogTypeDef
 
 ```python
@@ -515,6 +583,8 @@ Optional fields:
 - `event`: [JobLogEventType](./literals.md#joblogeventtype)
 - `eventData`: [JobLogEventDataTypeDef](./type_defs.md#joblogeventdatatypedef)
 - `logDateTime`: `str`
+
+<a id="jobtypedef"></a>
 
 ## JobTypeDef
 
@@ -538,6 +608,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `type`: [JobTypeType](./literals.md#jobtypetype)
 
+<a id="launchconfigurationtypedef"></a>
+
 ## LaunchConfigurationTypeDef
 
 ```python
@@ -559,6 +631,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="launchedinstancetypedef"></a>
+
 ## LaunchedInstanceTypeDef
 
 ```python
@@ -571,6 +645,8 @@ Optional fields:
 - `firstBoot`: [FirstBootType](./literals.md#firstboottype)
 - `jobID`: `str`
 
+<a id="licensingtypedef"></a>
+
 ## LicensingTypeDef
 
 ```python
@@ -581,6 +657,8 @@ Optional fields:
 
 - `osByol`: `bool`
 
+<a id="lifecyclelastcutoverfinalizedtypedef"></a>
+
 ## LifeCycleLastCutoverFinalizedTypeDef
 
 ```python
@@ -590,6 +668,8 @@ from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverFinalizedTypeDef
 Optional fields:
 
 - `apiCallDateTime`: `str`
+
+<a id="lifecyclelastcutoverinitiatedtypedef"></a>
 
 ## LifeCycleLastCutoverInitiatedTypeDef
 
@@ -602,6 +682,8 @@ Optional fields:
 - `apiCallDateTime`: `str`
 - `jobID`: `str`
 
+<a id="lifecyclelastcutoverrevertedtypedef"></a>
+
 ## LifeCycleLastCutoverRevertedTypeDef
 
 ```python
@@ -611,6 +693,8 @@ from mypy_boto3_mgn.type_defs import LifeCycleLastCutoverRevertedTypeDef
 Optional fields:
 
 - `apiCallDateTime`: `str`
+
+<a id="lifecyclelastcutovertypedef"></a>
 
 ## LifeCycleLastCutoverTypeDef
 
@@ -627,6 +711,8 @@ Optional fields:
 - `reverted`:
   [LifeCycleLastCutoverRevertedTypeDef](./type_defs.md#lifecyclelastcutoverrevertedtypedef)
 
+<a id="lifecyclelasttestfinalizedtypedef"></a>
+
 ## LifeCycleLastTestFinalizedTypeDef
 
 ```python
@@ -636,6 +722,8 @@ from mypy_boto3_mgn.type_defs import LifeCycleLastTestFinalizedTypeDef
 Optional fields:
 
 - `apiCallDateTime`: `str`
+
+<a id="lifecyclelasttestinitiatedtypedef"></a>
 
 ## LifeCycleLastTestInitiatedTypeDef
 
@@ -648,6 +736,8 @@ Optional fields:
 - `apiCallDateTime`: `str`
 - `jobID`: `str`
 
+<a id="lifecyclelasttestrevertedtypedef"></a>
+
 ## LifeCycleLastTestRevertedTypeDef
 
 ```python
@@ -657,6 +747,8 @@ from mypy_boto3_mgn.type_defs import LifeCycleLastTestRevertedTypeDef
 Optional fields:
 
 - `apiCallDateTime`: `str`
+
+<a id="lifecyclelasttesttypedef"></a>
 
 ## LifeCycleLastTestTypeDef
 
@@ -672,6 +764,8 @@ Optional fields:
   [LifeCycleLastTestInitiatedTypeDef](./type_defs.md#lifecyclelasttestinitiatedtypedef)
 - `reverted`:
   [LifeCycleLastTestRevertedTypeDef](./type_defs.md#lifecyclelasttestrevertedtypedef)
+
+<a id="lifecycletypedef"></a>
 
 ## LifeCycleTypeDef
 
@@ -691,6 +785,8 @@ Optional fields:
   [LifeCycleLastTestTypeDef](./type_defs.md#lifecyclelasttesttypedef)
 - `state`: [LifeCycleStateType](./literals.md#lifecyclestatetype)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -700,6 +796,8 @@ from mypy_boto3_mgn.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -713,6 +811,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="markasarchivedrequestrequesttypedef"></a>
+
 ## MarkAsArchivedRequestRequestTypeDef
 
 ```python
@@ -722,6 +822,8 @@ from mypy_boto3_mgn.type_defs import MarkAsArchivedRequestRequestTypeDef
 Required fields:
 
 - `sourceServerID`: `str`
+
+<a id="networkinterfacetypedef"></a>
 
 ## NetworkInterfaceTypeDef
 
@@ -735,6 +837,8 @@ Optional fields:
 - `isPrimary`: `bool`
 - `macAddress`: `str`
 
+<a id="ostypedef"></a>
+
 ## OSTypeDef
 
 ```python
@@ -744,6 +848,8 @@ from mypy_boto3_mgn.type_defs import OSTypeDef
 Optional fields:
 
 - `fullString`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -757,6 +863,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="participatingservertypedef"></a>
+
 ## ParticipatingServerTypeDef
 
 ```python
@@ -767,6 +875,8 @@ Optional fields:
 
 - `launchStatus`: [LaunchStatusType](./literals.md#launchstatustype)
 - `sourceServerID`: `str`
+
+<a id="replicationconfigurationreplicateddisktypedef"></a>
 
 ## ReplicationConfigurationReplicatedDiskTypeDef
 
@@ -781,6 +891,8 @@ Optional fields:
 - `isBootDisk`: `bool`
 - `stagingDiskType`:
   [ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype)
+
+<a id="replicationconfigurationtemplateresponsemetadatatypedef"></a>
 
 ## ReplicationConfigurationTemplateResponseMetadataTypeDef
 
@@ -810,6 +922,8 @@ Required fields:
 - `useDedicatedReplicationServer`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="replicationconfigurationtemplatetypedef"></a>
 
 ## ReplicationConfigurationTemplateTypeDef
 
@@ -841,6 +955,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`
 
+<a id="replicationconfigurationtypedef"></a>
+
 ## ReplicationConfigurationTypeDef
 
 ```python
@@ -871,6 +987,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -885,6 +1003,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retrydatareplicationrequestrequesttypedef"></a>
+
 ## RetryDataReplicationRequestRequestTypeDef
 
 ```python
@@ -894,6 +1014,8 @@ from mypy_boto3_mgn.type_defs import RetryDataReplicationRequestRequestTypeDef
 Required fields:
 
 - `sourceServerID`: `str`
+
+<a id="sourcepropertiestypedef"></a>
 
 ## SourcePropertiesTypeDef
 
@@ -913,6 +1035,8 @@ Optional fields:
 - `os`: [OSTypeDef](./type_defs.md#ostypedef)
 - `ramBytes`: `int`
 - `recommendedInstanceType`: `str`
+
+<a id="sourceserverresponsemetadatatypedef"></a>
 
 ## SourceServerResponseMetadataTypeDef
 
@@ -938,6 +1062,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="sourceservertypedef"></a>
+
 ## SourceServerTypeDef
 
 ```python
@@ -960,6 +1086,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `vcenterClientID`: `str`
 
+<a id="startcutoverrequestrequesttypedef"></a>
+
 ## StartCutoverRequestRequestTypeDef
 
 ```python
@@ -974,6 +1102,8 @@ Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="startcutoverresponsetypedef"></a>
+
 ## StartCutoverResponseTypeDef
 
 ```python
@@ -986,6 +1116,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startreplicationrequestrequesttypedef"></a>
+
 ## StartReplicationRequestRequestTypeDef
 
 ```python
@@ -995,6 +1127,8 @@ from mypy_boto3_mgn.type_defs import StartReplicationRequestRequestTypeDef
 Required fields:
 
 - `sourceServerID`: `str`
+
+<a id="starttestrequestrequesttypedef"></a>
 
 ## StartTestRequestRequestTypeDef
 
@@ -1010,6 +1144,8 @@ Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="starttestresponsetypedef"></a>
+
 ## StartTestResponseTypeDef
 
 ```python
@@ -1022,6 +1158,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1032,6 +1170,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="terminatetargetinstancesrequestrequesttypedef"></a>
 
 ## TerminateTargetInstancesRequestRequestTypeDef
 
@@ -1047,6 +1187,8 @@ Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="terminatetargetinstancesresponsetypedef"></a>
+
 ## TerminateTargetInstancesResponseTypeDef
 
 ```python
@@ -1059,6 +1201,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1069,6 +1213,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatelaunchconfigurationrequestrequesttypedef"></a>
 
 ## UpdateLaunchConfigurationRequestRequestTypeDef
 
@@ -1090,6 +1236,8 @@ Optional fields:
 - `name`: `str`
 - `targetInstanceTypeRightSizingMethod`:
   [TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype)
+
+<a id="updatereplicationconfigurationrequestrequesttypedef"></a>
 
 ## UpdateReplicationConfigurationRequestRequestTypeDef
 
@@ -1122,6 +1270,8 @@ Optional fields:
 - `stagingAreaTags`: `Mapping`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`
 
+<a id="updatereplicationconfigurationtemplaterequestrequesttypedef"></a>
+
 ## UpdateReplicationConfigurationTemplateRequestRequestTypeDef
 
 ```python
@@ -1151,6 +1301,8 @@ Optional fields:
 - `stagingAreaTags`: `Mapping`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`
 
+<a id="updatesourceserverreplicationtyperequestrequesttypedef"></a>
+
 ## UpdateSourceServerReplicationTypeRequestRequestTypeDef
 
 ```python
@@ -1161,6 +1313,8 @@ Required fields:
 
 - `replicationType`: [ReplicationTypeType](./literals.md#replicationtypetype)
 - `sourceServerID`: `str`
+
+<a id="vcenterclienttypedef"></a>
 
 ## VcenterClientTypeDef
 

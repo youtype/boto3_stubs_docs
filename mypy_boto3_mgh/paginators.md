@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-migrationhub-module"></a>
+
 # Paginators for boto3 MigrationHub module
 
 > [Index](..) > [MigrationHub](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
 type annotations stubs module
-[mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
+[mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 - [Paginators for boto3 MigrationHub module](#paginators-for-boto3-migrationhub-module)
   - [ListApplicationStatesPaginator](#listapplicationstatespaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListDiscoveredResourcesPaginator](#listdiscoveredresourcespaginator)
   - [ListMigrationTasksPaginator](#listmigrationtaskspaginator)
   - [ListProgressUpdateStreamsPaginator](#listprogressupdatestreamspaginator)
+
+<a id="listapplicationstatespaginator"></a>
 
 ## ListApplicationStatesPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mgh.paginator import ListApplicationStatesPaginator
 
 def get_list_application_states_paginator() -> ListApplicationStatesPaginator:
-    return boto3.client("mgh").get_paginator("list_application_states")
+    return Session().client("mgh").get_paginator("list_application_states")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `ListApplicationStatesPaginator.paginate` method:
 `ListApplicationStatesPaginator.paginate` returns
 `_PageIterator`\[[ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef)\].
 
+<a id="listcreatedartifactspaginator"></a>
+
 ## ListCreatedArtifactsPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mgh.paginator import ListCreatedArtifactsPaginator
 
 def get_list_created_artifacts_paginator() -> ListCreatedArtifactsPaginator:
-    return boto3.client("mgh").get_paginator("list_created_artifacts")
+    return Session().client("mgh").get_paginator("list_created_artifacts")
 ```
 
 Boto3 documentation:
@@ -67,6 +77,8 @@ Arguments for `ListCreatedArtifactsPaginator.paginate` method:
 `ListCreatedArtifactsPaginator.paginate` returns
 `_PageIterator`\[[ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef)\].
 
+<a id="listdiscoveredresourcespaginator"></a>
+
 ## ListDiscoveredResourcesPaginator
 
 Type annotations for
@@ -75,10 +87,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mgh.paginator import ListDiscoveredResourcesPaginator
 
 def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginator:
-    return boto3.client("mgh").get_paginator("list_discovered_resources")
+    return Session().client("mgh").get_paginator("list_discovered_resources")
 ```
 
 Boto3 documentation:
@@ -94,6 +108,8 @@ Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
 `ListDiscoveredResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef)\].
 
+<a id="listmigrationtaskspaginator"></a>
+
 ## ListMigrationTasksPaginator
 
 Type annotations for
@@ -102,10 +118,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mgh.paginator import ListMigrationTasksPaginator
 
 def get_list_migration_tasks_paginator() -> ListMigrationTasksPaginator:
-    return boto3.client("mgh").get_paginator("list_migration_tasks")
+    return Session().client("mgh").get_paginator("list_migration_tasks")
 ```
 
 Boto3 documentation:
@@ -120,6 +138,8 @@ Arguments for `ListMigrationTasksPaginator.paginate` method:
 `ListMigrationTasksPaginator.paginate` returns
 `_PageIterator`\[[ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef)\].
 
+<a id="listprogressupdatestreamspaginator"></a>
+
 ## ListProgressUpdateStreamsPaginator
 
 Type annotations for
@@ -128,10 +148,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mgh.paginator import ListProgressUpdateStreamsPaginator
 
 def get_list_progress_update_streams_paginator() -> ListProgressUpdateStreamsPaginator:
-    return boto3.client("mgh").get_paginator("list_progress_update_streams")
+    return Session().client("mgh").get_paginator("list_progress_update_streams")
 ```
 
 Boto3 documentation:

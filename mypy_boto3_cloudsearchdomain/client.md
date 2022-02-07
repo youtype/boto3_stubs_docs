@@ -1,3 +1,5 @@
+<a id="cloudsearchdomainclient-for-boto3-cloudsearchdomain-module"></a>
+
 # CloudSearchDomainClient for boto3 CloudSearchDomain module
 
 > [Index](..) > [CloudSearchDomain](.) > CloudSearchDomainClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
 type annotations stubs module
-[mypy_boto3_cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
+[mypy-boto3-cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
 
 - [CloudSearchDomainClient for boto3 CloudSearchDomain module](#cloudsearchdomainclient-for-boto3-cloudsearchdomain-module)
   - [CloudSearchDomainClient](#cloudsearchdomainclient)
@@ -18,6 +20,8 @@ type annotations stubs module
     - [suggest](#suggest)
     - [upload_documents](#upload_documents)
 
+<a id="cloudsearchdomainclient"></a>
+
 ## CloudSearchDomainClient
 
 Type annotations for `boto3.client("cloudsearchdomain")`
@@ -25,14 +29,17 @@ Type annotations for `boto3.client("cloudsearchdomain")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cloudsearchdomain.client import CloudSearchDomainClient
 
 def get_cloudsearchdomain_client() -> CloudSearchDomainClient:
-    return boto3.client("cloudsearchdomain")
+    return Session().client("cloudsearchdomain")
 ```
 
 Boto3 documentation:
 [CloudSearchDomain.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -52,7 +59,11 @@ Exceptions:
 - `Exceptions.DocumentServiceException`
 - `Exceptions.SearchException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -64,6 +75,8 @@ Boto3 documentation:
 [CloudSearchDomain.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -79,6 +92,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -98,6 +113,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="search"></a>
 
 ### search
 
@@ -130,6 +147,8 @@ Keyword-only arguments:
 
 Returns [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef).
 
+<a id="suggest"></a>
+
 ### suggest
 
 Retrieves autocomplete suggestions for a partial query string.
@@ -149,6 +168,8 @@ Keyword-only arguments:
 - `size`: `int`
 
 Returns [SuggestResponseTypeDef](./type_defs.md#suggestresponsetypedef).
+
+<a id="upload_documents"></a>
 
 ### upload_documents
 

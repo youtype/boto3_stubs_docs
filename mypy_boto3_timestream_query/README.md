@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-timestreamquery-module"></a>
+
 # Type annotations for boto3 TimestreamQuery module
 
 > [Index](..) > TimestreamQuery
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
 type annotations stubs module
-[mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
+[mypy-boto3-timestream-query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[timestream-query]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[timestream-query]'
+
+# standalone installation
 pip install mypy-boto3-timestream-query
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-timestream-query
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="timestreamqueryclient"></a>
+
 ## TimestreamQueryClient
 
 Type annotations for `boto3.client("timestream-query")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_timestream_query.client import TimestreamQueryClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -50,6 +64,8 @@ from mypy_boto3_timestream_query.client import TimestreamQueryClient
 - [untag_resource](./client.md#untag_resource)
 - [update_scheduled_query](./client.md#update_scheduled_query)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 TimestreamQueryClient [exceptions](./client.md#exceptions)
@@ -65,6 +81,8 @@ TimestreamQueryClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -73,12 +91,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_timestream_query.paginators import ListScheduledQueriesPaginator, ...
+from mypy_boto3_timestream_query.paginator import ListScheduledQueriesPaginator, ...
 ```
 
 - [ListScheduledQueriesPaginator](./paginators.md#listscheduledqueriespaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 - [QueryPaginator](./paginators.md#querypaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -102,6 +122,8 @@ from mypy_boto3_timestream_query.literals import DimensionValueTypeType, ...
 - [ScheduledQueryStateType](./literals.md#scheduledquerystatetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

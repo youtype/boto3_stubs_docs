@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-fsx-module"></a>
+
 # Paginators for boto3 FSx module
 
 > [Index](..) > [FSx](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
 type annotations stubs module
-[mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
+[mypy-boto3-fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
 - [Paginators for boto3 FSx module](#paginators-for-boto3-fsx-module)
   - [DescribeBackupsPaginator](#describebackupspaginator)
   - [DescribeFileSystemsPaginator](#describefilesystemspaginator)
   - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
+
+<a id="describebackupspaginator"></a>
 
 ## DescribeBackupsPaginator
 
@@ -19,10 +23,12 @@ Type annotations for `boto3.client("fsx").get_paginator("describe_backups")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_fsx.paginator import DescribeBackupsPaginator
 
 def get_describe_backups_paginator() -> DescribeBackupsPaginator:
-    return boto3.client("fsx").get_paginator("describe_backups")
+    return Session().client("fsx").get_paginator("describe_backups")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `DescribeBackupsPaginator.paginate` method:
 `DescribeBackupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef)\].
 
+<a id="describefilesystemspaginator"></a>
+
 ## DescribeFileSystemsPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_fsx.paginator import DescribeFileSystemsPaginator
 
 def get_describe_file_systems_paginator() -> DescribeFileSystemsPaginator:
-    return boto3.client("fsx").get_paginator("describe_file_systems")
+    return Session().client("fsx").get_paginator("describe_file_systems")
 ```
 
 Boto3 documentation:
@@ -64,6 +74,8 @@ Arguments for `DescribeFileSystemsPaginator.paginate` method:
 `DescribeFileSystemsPaginator.paginate` returns
 `_PageIterator`\[[DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -72,10 +84,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_fsx.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("fsx").get_paginator("list_tags_for_resource")
+    return Session().client("fsx").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:

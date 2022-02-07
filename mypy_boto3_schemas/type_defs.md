@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-schemas-module"></a>
+
 # Typed dictionaries for boto3 Schemas module
 
 > [Index](..) > [Schemas](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
 type annotations stubs module
-[mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
+[mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 - [Typed dictionaries for boto3 Schemas module](#typed-dictionaries-for-boto3-schemas-module)
   - [CreateDiscovererRequestRequestTypeDef](#creatediscovererrequestrequesttypedef)
@@ -73,6 +75,8 @@ type annotations stubs module
   - [UpdateSchemaResponseTypeDef](#updateschemaresponsetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="creatediscovererrequestrequesttypedef"></a>
+
 ## CreateDiscovererRequestRequestTypeDef
 
 ```python
@@ -88,6 +92,8 @@ Optional fields:
 - `Description`: `str`
 - `CrossAccount`: `bool`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="creatediscovererresponsetypedef"></a>
 
 ## CreateDiscovererResponseTypeDef
 
@@ -107,6 +113,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createregistryrequestrequesttypedef"></a>
+
 ## CreateRegistryRequestRequestTypeDef
 
 ```python
@@ -122,6 +130,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createregistryresponsetypedef"></a>
+
 ## CreateRegistryResponseTypeDef
 
 ```python
@@ -136,6 +146,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createschemarequestrequesttypedef"></a>
 
 ## CreateSchemaRequestRequestTypeDef
 
@@ -154,6 +166,8 @@ Optional fields:
 
 - `Description`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createschemaresponsetypedef"></a>
 
 ## CreateSchemaResponseTypeDef
 
@@ -174,6 +188,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletediscovererrequestrequesttypedef"></a>
+
 ## DeleteDiscovererRequestRequestTypeDef
 
 ```python
@@ -183,6 +199,8 @@ from mypy_boto3_schemas.type_defs import DeleteDiscovererRequestRequestTypeDef
 Required fields:
 
 - `DiscovererId`: `str`
+
+<a id="deleteregistryrequestrequesttypedef"></a>
 
 ## DeleteRegistryRequestRequestTypeDef
 
@@ -194,6 +212,8 @@ Required fields:
 
 - `RegistryName`: `str`
 
+<a id="deleteresourcepolicyrequestrequesttypedef"></a>
+
 ## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -203,6 +223,8 @@ from mypy_boto3_schemas.type_defs import DeleteResourcePolicyRequestRequestTypeD
 Optional fields:
 
 - `RegistryName`: `str`
+
+<a id="deleteschemarequestrequesttypedef"></a>
 
 ## DeleteSchemaRequestRequestTypeDef
 
@@ -215,6 +237,8 @@ Required fields:
 - `RegistryName`: `str`
 - `SchemaName`: `str`
 
+<a id="deleteschemaversionrequestrequesttypedef"></a>
+
 ## DeleteSchemaVersionRequestRequestTypeDef
 
 ```python
@@ -226,6 +250,8 @@ Required fields:
 - `RegistryName`: `str`
 - `SchemaName`: `str`
 - `SchemaVersion`: `str`
+
+<a id="describecodebindingrequestrequesttypedef"></a>
 
 ## DescribeCodeBindingRequestRequestTypeDef
 
@@ -243,6 +269,8 @@ Optional fields:
 
 - `SchemaVersion`: `str`
 
+<a id="describecodebindingresponsetypedef"></a>
+
 ## DescribeCodeBindingResponseTypeDef
 
 ```python
@@ -258,6 +286,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describediscovererrequestrequesttypedef"></a>
+
 ## DescribeDiscovererRequestRequestTypeDef
 
 ```python
@@ -267,6 +297,8 @@ from mypy_boto3_schemas.type_defs import DescribeDiscovererRequestRequestTypeDef
 Required fields:
 
 - `DiscovererId`: `str`
+
+<a id="describediscovererresponsetypedef"></a>
 
 ## DescribeDiscovererResponseTypeDef
 
@@ -286,6 +318,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeregistryrequestrequesttypedef"></a>
+
 ## DescribeRegistryRequestRequestTypeDef
 
 ```python
@@ -295,6 +329,8 @@ from mypy_boto3_schemas.type_defs import DescribeRegistryRequestRequestTypeDef
 Required fields:
 
 - `RegistryName`: `str`
+
+<a id="describeregistryresponsetypedef"></a>
 
 ## DescribeRegistryResponseTypeDef
 
@@ -311,6 +347,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeschemarequestrequesttypedef"></a>
+
 ## DescribeSchemaRequestRequestTypeDef
 
 ```python
@@ -325,6 +363,8 @@ Required fields:
 Optional fields:
 
 - `SchemaVersion`: `str`
+
+<a id="describeschemaresponsetypedef"></a>
 
 ## DescribeSchemaResponseTypeDef
 
@@ -346,6 +386,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="discoverersummarytypedef"></a>
+
 ## DiscovererSummaryTypeDef
 
 ```python
@@ -360,6 +402,8 @@ Optional fields:
 - `State`: [DiscovererStateType](./literals.md#discovererstatetype)
 - `CrossAccount`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
+
+<a id="exportschemarequestrequesttypedef"></a>
 
 ## ExportSchemaRequestRequestTypeDef
 
@@ -377,6 +421,8 @@ Optional fields:
 
 - `SchemaVersion`: `str`
 
+<a id="exportschemaresponsetypedef"></a>
+
 ## ExportSchemaResponseTypeDef
 
 ```python
@@ -392,6 +438,8 @@ Required fields:
 - `Type`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcodebindingsourcerequestrequesttypedef"></a>
 
 ## GetCodeBindingSourceRequestRequestTypeDef
 
@@ -409,6 +457,8 @@ Optional fields:
 
 - `SchemaVersion`: `str`
 
+<a id="getcodebindingsourceresponsetypedef"></a>
+
 ## GetCodeBindingSourceResponseTypeDef
 
 ```python
@@ -421,6 +471,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdiscoveredschemarequestrequesttypedef"></a>
+
 ## GetDiscoveredSchemaRequestRequestTypeDef
 
 ```python
@@ -431,6 +483,8 @@ Required fields:
 
 - `Events`: `Sequence`\[`str`\]
 - `Type`: [TypeType](./literals.md#typetype)
+
+<a id="getdiscoveredschemaresponsetypedef"></a>
 
 ## GetDiscoveredSchemaResponseTypeDef
 
@@ -444,6 +498,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourcepolicyrequestrequesttypedef"></a>
+
 ## GetResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -453,6 +509,8 @@ from mypy_boto3_schemas.type_defs import GetResourcePolicyRequestRequestTypeDef
 Optional fields:
 
 - `RegistryName`: `str`
+
+<a id="getresourcepolicyresponsetypedef"></a>
 
 ## GetResourcePolicyResponseTypeDef
 
@@ -467,6 +525,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdiscoverersrequestrequesttypedef"></a>
+
 ## ListDiscoverersRequestRequestTypeDef
 
 ```python
@@ -479,6 +539,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 - `SourceArnPrefix`: `str`
+
+<a id="listdiscoverersresponsetypedef"></a>
 
 ## ListDiscoverersResponseTypeDef
 
@@ -494,6 +556,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listregistriesrequestrequesttypedef"></a>
+
 ## ListRegistriesRequestRequestTypeDef
 
 ```python
@@ -506,6 +570,8 @@ Optional fields:
 - `NextToken`: `str`
 - `RegistryNamePrefix`: `str`
 - `Scope`: `str`
+
+<a id="listregistriesresponsetypedef"></a>
 
 ## ListRegistriesResponseTypeDef
 
@@ -520,6 +586,8 @@ Required fields:
   `List`\[[RegistrySummaryTypeDef](./type_defs.md#registrysummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listschemaversionsrequestrequesttypedef"></a>
 
 ## ListSchemaVersionsRequestRequestTypeDef
 
@@ -537,6 +605,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="listschemaversionsresponsetypedef"></a>
+
 ## ListSchemaVersionsResponseTypeDef
 
 ```python
@@ -550,6 +620,8 @@ Required fields:
   `List`\[[SchemaVersionSummaryTypeDef](./type_defs.md#schemaversionsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listschemasrequestrequesttypedef"></a>
 
 ## ListSchemasRequestRequestTypeDef
 
@@ -567,6 +639,8 @@ Optional fields:
 - `NextToken`: `str`
 - `SchemaNamePrefix`: `str`
 
+<a id="listschemasresponsetypedef"></a>
+
 ## ListSchemasResponseTypeDef
 
 ```python
@@ -581,6 +655,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -590,6 +666,8 @@ from mypy_boto3_schemas.type_defs import ListTagsForResourceRequestRequestTypeDe
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -603,6 +681,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -614,6 +694,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putcodebindingrequestrequesttypedef"></a>
 
 ## PutCodeBindingRequestRequestTypeDef
 
@@ -631,6 +713,8 @@ Optional fields:
 
 - `SchemaVersion`: `str`
 
+<a id="putcodebindingresponsetypedef"></a>
+
 ## PutCodeBindingResponseTypeDef
 
 ```python
@@ -645,6 +729,8 @@ Required fields:
 - `Status`: [CodeGenerationStatusType](./literals.md#codegenerationstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putresourcepolicyrequestrequesttypedef"></a>
 
 ## PutResourcePolicyRequestRequestTypeDef
 
@@ -661,6 +747,8 @@ Optional fields:
 - `RegistryName`: `str`
 - `RevisionId`: `str`
 
+<a id="putresourcepolicyresponsetypedef"></a>
+
 ## PutResourcePolicyResponseTypeDef
 
 ```python
@@ -674,6 +762,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="registrysummarytypedef"></a>
+
 ## RegistrySummaryTypeDef
 
 ```python
@@ -685,6 +775,8 @@ Optional fields:
 - `RegistryArn`: `str`
 - `RegistryName`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -700,6 +792,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="schemasummarytypedef"></a>
+
 ## SchemaSummaryTypeDef
 
 ```python
@@ -714,6 +808,8 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `VersionCount`: `int`
 
+<a id="schemaversionsummarytypedef"></a>
+
 ## SchemaVersionSummaryTypeDef
 
 ```python
@@ -726,6 +822,8 @@ Optional fields:
 - `SchemaName`: `str`
 - `SchemaVersion`: `str`
 - `Type`: [TypeType](./literals.md#typetype)
+
+<a id="searchschemasummarytypedef"></a>
 
 ## SearchSchemaSummaryTypeDef
 
@@ -741,6 +839,8 @@ Optional fields:
 - `SchemaVersions`:
   `List`\[[SearchSchemaVersionSummaryTypeDef](./type_defs.md#searchschemaversionsummarytypedef)\]
 
+<a id="searchschemaversionsummarytypedef"></a>
+
 ## SearchSchemaVersionSummaryTypeDef
 
 ```python
@@ -752,6 +852,8 @@ Optional fields:
 - `CreatedDate`: `datetime`
 - `SchemaVersion`: `str`
 - `Type`: [TypeType](./literals.md#typetype)
+
+<a id="searchschemasrequestrequesttypedef"></a>
 
 ## SearchSchemasRequestRequestTypeDef
 
@@ -769,6 +871,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="searchschemasresponsetypedef"></a>
+
 ## SearchSchemasResponseTypeDef
 
 ```python
@@ -783,6 +887,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startdiscovererrequestrequesttypedef"></a>
+
 ## StartDiscovererRequestRequestTypeDef
 
 ```python
@@ -792,6 +898,8 @@ from mypy_boto3_schemas.type_defs import StartDiscovererRequestRequestTypeDef
 Required fields:
 
 - `DiscovererId`: `str`
+
+<a id="startdiscovererresponsetypedef"></a>
 
 ## StartDiscovererResponseTypeDef
 
@@ -806,6 +914,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopdiscovererrequestrequesttypedef"></a>
+
 ## StopDiscovererRequestRequestTypeDef
 
 ```python
@@ -815,6 +925,8 @@ from mypy_boto3_schemas.type_defs import StopDiscovererRequestRequestTypeDef
 Required fields:
 
 - `DiscovererId`: `str`
+
+<a id="stopdiscovererresponsetypedef"></a>
 
 ## StopDiscovererResponseTypeDef
 
@@ -829,6 +941,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -840,6 +954,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -850,6 +966,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatediscovererrequestrequesttypedef"></a>
 
 ## UpdateDiscovererRequestRequestTypeDef
 
@@ -865,6 +983,8 @@ Optional fields:
 
 - `Description`: `str`
 - `CrossAccount`: `bool`
+
+<a id="updatediscovererresponsetypedef"></a>
 
 ## UpdateDiscovererResponseTypeDef
 
@@ -884,6 +1004,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateregistryrequestrequesttypedef"></a>
+
 ## UpdateRegistryRequestRequestTypeDef
 
 ```python
@@ -897,6 +1019,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="updateregistryresponsetypedef"></a>
 
 ## UpdateRegistryResponseTypeDef
 
@@ -912,6 +1036,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateschemarequestrequesttypedef"></a>
 
 ## UpdateSchemaRequestRequestTypeDef
 
@@ -931,6 +1057,8 @@ Optional fields:
 - `Description`: `str`
 - `Type`: [TypeType](./literals.md#typetype)
 
+<a id="updateschemaresponsetypedef"></a>
+
 ## UpdateSchemaResponseTypeDef
 
 ```python
@@ -949,6 +1077,8 @@ Required fields:
 - `VersionCreatedDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-qldb-module"></a>
+
 # Literals for boto3 QLDB module
 
 > [Index](..) > [QLDB](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
 type annotations stubs module
-[mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
+[mypy-boto3-qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
 - [Literals for boto3 QLDB module](#literals-for-boto3-qldb-module)
   - [EncryptionStatusType](#encryptionstatustype)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [S3ObjectEncryptionTypeType](#s3objectencryptiontypetype)
   - [StreamStatusType](#streamstatustype)
   - [ServiceName](#servicename)
+
+<a id="encryptionstatustype"></a>
 
 ## EncryptionStatusType
 
@@ -30,6 +34,8 @@ Values:
 - `KMS_KEY_INACCESSIBLE`
 - `UPDATING`
 
+<a id="errorcausetype"></a>
+
 ## ErrorCauseType
 
 ```python
@@ -40,6 +46,8 @@ Values:
 
 - `IAM_PERMISSION_REVOKED`
 - `KINESIS_STREAM_NOT_FOUND`
+
+<a id="exportstatustype"></a>
 
 ## ExportStatusType
 
@@ -52,6 +60,8 @@ Values:
 - `CANCELLED`
 - `COMPLETED`
 - `IN_PROGRESS`
+
+<a id="ledgerstatetype"></a>
 
 ## LedgerStateType
 
@@ -66,6 +76,8 @@ Values:
 - `DELETED`
 - `DELETING`
 
+<a id="outputformattype"></a>
+
 ## OutputFormatType
 
 ```python
@@ -78,6 +90,8 @@ Values:
 - `ION_TEXT`
 - `JSON`
 
+<a id="permissionsmodetype"></a>
+
 ## PermissionsModeType
 
 ```python
@@ -88,6 +102,8 @@ Values:
 
 - `ALLOW_ALL`
 - `STANDARD`
+
+<a id="s3objectencryptiontypetype"></a>
 
 ## S3ObjectEncryptionTypeType
 
@@ -100,6 +116,8 @@ Values:
 - `NO_ENCRYPTION`
 - `SSE_KMS`
 - `SSE_S3`
+
+<a id="streamstatustype"></a>
 
 ## StreamStatusType
 
@@ -114,6 +132,8 @@ Values:
 - `COMPLETED`
 - `FAILED`
 - `IMPAIRED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

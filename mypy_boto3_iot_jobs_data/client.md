@@ -1,3 +1,5 @@
+<a id="iotjobsdataplaneclient-for-boto3-iotjobsdataplane-module"></a>
+
 # IoTJobsDataPlaneClient for boto3 IoTJobsDataPlane module
 
 > [Index](..) > [IoTJobsDataPlane](.) > IoTJobsDataPlaneClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
 type annotations stubs module
-[mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
+[mypy-boto3-iot-jobs-data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 - [IoTJobsDataPlaneClient for boto3 IoTJobsDataPlane module](#iotjobsdataplaneclient-for-boto3-iotjobsdataplane-module)
   - [IoTJobsDataPlaneClient](#iotjobsdataplaneclient)
@@ -19,6 +21,8 @@ type annotations stubs module
     - [start_next_pending_job_execution](#start_next_pending_job_execution)
     - [update_job_execution](#update_job_execution)
 
+<a id="iotjobsdataplaneclient"></a>
+
 ## IoTJobsDataPlaneClient
 
 Type annotations for `boto3.client("iot-jobs-data")`
@@ -26,14 +30,17 @@ Type annotations for `boto3.client("iot-jobs-data")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iot_jobs_data.client import IoTJobsDataPlaneClient
 
 def get_iot-jobs-data_client() -> IoTJobsDataPlaneClient:
-    return boto3.client("iot-jobs-data")
+    return Session().client("iot-jobs-data")
 ```
 
 Boto3 documentation:
 [IoTJobsDataPlane.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -58,7 +65,11 @@ Exceptions:
 - `Exceptions.TerminalStateException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -70,6 +81,8 @@ Boto3 documentation:
 [IoTJobsDataPlane.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -85,6 +98,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="describe_job_execution"></a>
 
 ### describe_job_execution
 
@@ -109,6 +124,8 @@ Keyword-only arguments:
 Returns
 [DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -127,6 +144,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_pending_job_executions"></a>
 
 ### get_pending_job_executions
 
@@ -147,6 +166,8 @@ Keyword-only arguments:
 
 Returns
 [GetPendingJobExecutionsResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponsetypedef).
+
+<a id="start_next_pending_job_execution"></a>
 
 ### start_next_pending_job_execution
 
@@ -170,6 +191,8 @@ Keyword-only arguments:
 
 Returns
 [StartNextPendingJobExecutionResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponsetypedef).
+
+<a id="update_job_execution"></a>
 
 ### update_job_execution
 

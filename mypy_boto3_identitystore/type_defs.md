@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-identitystore-module"></a>
+
 # Typed dictionaries for boto3 IdentityStore module
 
 > [Index](..) > [IdentityStore](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
 type annotations stubs module
-[mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
+[mypy-boto3-identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
 - [Typed dictionaries for boto3 IdentityStore module](#typed-dictionaries-for-boto3-identitystore-module)
   - [DescribeGroupRequestRequestTypeDef](#describegrouprequestrequesttypedef)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [UserTypeDef](#usertypedef)
 
+<a id="describegrouprequestrequesttypedef"></a>
+
 ## DescribeGroupRequestRequestTypeDef
 
 ```python
@@ -31,6 +35,8 @@ Required fields:
 
 - `IdentityStoreId`: `str`
 - `GroupId`: `str`
+
+<a id="describegroupresponsetypedef"></a>
 
 ## DescribeGroupResponseTypeDef
 
@@ -45,6 +51,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeuserrequestrequesttypedef"></a>
+
 ## DescribeUserRequestRequestTypeDef
 
 ```python
@@ -55,6 +63,8 @@ Required fields:
 
 - `IdentityStoreId`: `str`
 - `UserId`: `str`
+
+<a id="describeuserresponsetypedef"></a>
 
 ## DescribeUserResponseTypeDef
 
@@ -69,6 +79,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -80,6 +92,8 @@ Required fields:
 - `AttributePath`: `str`
 - `AttributeValue`: `str`
 
+<a id="grouptypedef"></a>
+
 ## GroupTypeDef
 
 ```python
@@ -90,6 +104,8 @@ Required fields:
 
 - `GroupId`: `str`
 - `DisplayName`: `str`
+
+<a id="listgroupsrequestrequesttypedef"></a>
 
 ## ListGroupsRequestRequestTypeDef
 
@@ -107,6 +123,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
+<a id="listgroupsresponsetypedef"></a>
+
 ## ListGroupsResponseTypeDef
 
 ```python
@@ -119,6 +137,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listusersrequestrequesttypedef"></a>
 
 ## ListUsersRequestRequestTypeDef
 
@@ -136,6 +156,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
+<a id="listusersresponsetypedef"></a>
+
 ## ListUsersResponseTypeDef
 
 ```python
@@ -148,6 +170,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -162,6 +186,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="usertypedef"></a>
 
 ## UserTypeDef
 

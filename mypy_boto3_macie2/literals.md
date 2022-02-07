@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-macie2-module"></a>
+
 # Literals for boto3 Macie2 module
 
 > [Index](..) > [Macie2](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
 type annotations stubs module
-[mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
+[mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 - [Literals for boto3 Macie2 module](#literals-for-boto3-macie2-module)
   - [AdminStatusType](#adminstatustype)
@@ -67,6 +69,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="adminstatustype"></a>
+
 ## AdminStatusType
 
 ```python
@@ -77,6 +81,8 @@ Values:
 
 - `DISABLING_IN_PROGRESS`
 - `ENABLED`
+
+<a id="allowsunencryptedobjectuploadstype"></a>
 
 ## AllowsUnencryptedObjectUploadsType
 
@@ -90,6 +96,8 @@ Values:
 - `TRUE`
 - `UNKNOWN`
 
+<a id="bucketmetadataerrorcodetype"></a>
+
 ## BucketMetadataErrorCodeType
 
 ```python
@@ -100,6 +108,8 @@ Values:
 
 - `ACCESS_DENIED`
 
+<a id="currencytype"></a>
+
 ## CurrencyType
 
 ```python
@@ -109,6 +119,8 @@ from mypy_boto3_macie2.literals import CurrencyType
 Values:
 
 - `USD`
+
+<a id="dataidentifierseveritytype"></a>
 
 ## DataIdentifierSeverityType
 
@@ -121,6 +133,8 @@ Values:
 - `HIGH`
 - `LOW`
 - `MEDIUM`
+
+<a id="dayofweektype"></a>
 
 ## DayOfWeekType
 
@@ -138,6 +152,8 @@ Values:
 - `TUESDAY`
 - `WEDNESDAY`
 
+<a id="describebucketspaginatorname"></a>
+
 ## DescribeBucketsPaginatorName
 
 ```python
@@ -147,6 +163,8 @@ from mypy_boto3_macie2.literals import DescribeBucketsPaginatorName
 Values:
 
 - `describe_buckets`
+
+<a id="effectivepermissiontype"></a>
 
 ## EffectivePermissionType
 
@@ -159,6 +177,8 @@ Values:
 - `NOT_PUBLIC`
 - `PUBLIC`
 - `UNKNOWN`
+
+<a id="encryptiontypetype"></a>
 
 ## EncryptionTypeType
 
@@ -173,6 +193,8 @@ Values:
 - `NONE`
 - `UNKNOWN`
 
+<a id="errorcodetype"></a>
+
 ## ErrorCodeType
 
 ```python
@@ -184,6 +206,8 @@ Values:
 - `ClientError`
 - `InternalError`
 
+<a id="findingactiontypetype"></a>
+
 ## FindingActionTypeType
 
 ```python
@@ -193,6 +217,8 @@ from mypy_boto3_macie2.literals import FindingActionTypeType
 Values:
 
 - `AWS_API_CALL`
+
+<a id="findingcategorytype"></a>
 
 ## FindingCategoryType
 
@@ -204,6 +230,8 @@ Values:
 
 - `CLASSIFICATION`
 - `POLICY`
+
+<a id="findingpublishingfrequencytype"></a>
 
 ## FindingPublishingFrequencyType
 
@@ -217,6 +245,8 @@ Values:
 - `ONE_HOUR`
 - `SIX_HOURS`
 
+<a id="findingstatisticssortattributenametype"></a>
+
 ## FindingStatisticsSortAttributeNameType
 
 ```python
@@ -227,6 +257,8 @@ Values:
 
 - `count`
 - `groupKey`
+
+<a id="findingtypetype"></a>
 
 ## FindingTypeType
 
@@ -247,6 +279,8 @@ Values:
 - `SensitiveData:S3Object/Multiple`
 - `SensitiveData:S3Object/Personal`
 
+<a id="findingsfilteractiontype"></a>
+
 ## FindingsFilterActionType
 
 ```python
@@ -258,6 +292,8 @@ Values:
 - `ARCHIVE`
 - `NOOP`
 
+<a id="getusagestatisticspaginatorname"></a>
+
 ## GetUsageStatisticsPaginatorName
 
 ```python
@@ -267,6 +303,8 @@ from mypy_boto3_macie2.literals import GetUsageStatisticsPaginatorName
 Values:
 
 - `get_usage_statistics`
+
+<a id="groupbytype"></a>
 
 ## GroupByType
 
@@ -281,6 +319,8 @@ Values:
 - `severity.description`
 - `type`
 
+<a id="isdefinedinjobtype"></a>
+
 ## IsDefinedInJobType
 
 ```python
@@ -293,6 +333,8 @@ Values:
 - `TRUE`
 - `UNKNOWN`
 
+<a id="ismonitoredbyjobtype"></a>
+
 ## IsMonitoredByJobType
 
 ```python
@@ -304,6 +346,8 @@ Values:
 - `FALSE`
 - `TRUE`
 - `UNKNOWN`
+
+<a id="jobcomparatortype"></a>
 
 ## JobComparatorType
 
@@ -322,6 +366,8 @@ Values:
 - `NE`
 - `STARTS_WITH`
 
+<a id="jobstatustype"></a>
+
 ## JobStatusType
 
 ```python
@@ -337,6 +383,8 @@ Values:
 - `RUNNING`
 - `USER_PAUSED`
 
+<a id="jobtypetype"></a>
+
 ## JobTypeType
 
 ```python
@@ -347,6 +395,8 @@ Values:
 
 - `ONE_TIME`
 - `SCHEDULED`
+
+<a id="lastrunerrorstatuscodetype"></a>
 
 ## LastRunErrorStatusCodeType
 
@@ -359,6 +409,8 @@ Values:
 - `ERROR`
 - `NONE`
 
+<a id="listclassificationjobspaginatorname"></a>
+
 ## ListClassificationJobsPaginatorName
 
 ```python
@@ -368,6 +420,8 @@ from mypy_boto3_macie2.literals import ListClassificationJobsPaginatorName
 Values:
 
 - `list_classification_jobs`
+
+<a id="listcustomdataidentifierspaginatorname"></a>
 
 ## ListCustomDataIdentifiersPaginatorName
 
@@ -379,6 +433,8 @@ Values:
 
 - `list_custom_data_identifiers`
 
+<a id="listfindingsfilterspaginatorname"></a>
+
 ## ListFindingsFiltersPaginatorName
 
 ```python
@@ -388,6 +444,8 @@ from mypy_boto3_macie2.literals import ListFindingsFiltersPaginatorName
 Values:
 
 - `list_findings_filters`
+
+<a id="listfindingspaginatorname"></a>
 
 ## ListFindingsPaginatorName
 
@@ -399,6 +457,8 @@ Values:
 
 - `list_findings`
 
+<a id="listinvitationspaginatorname"></a>
+
 ## ListInvitationsPaginatorName
 
 ```python
@@ -408,6 +468,8 @@ from mypy_boto3_macie2.literals import ListInvitationsPaginatorName
 Values:
 
 - `list_invitations`
+
+<a id="listjobsfilterkeytype"></a>
 
 ## ListJobsFilterKeyType
 
@@ -422,6 +484,8 @@ Values:
 - `jobType`
 - `name`
 
+<a id="listjobssortattributenametype"></a>
+
 ## ListJobsSortAttributeNameType
 
 ```python
@@ -435,6 +499,8 @@ Values:
 - `jobType`
 - `name`
 
+<a id="listmemberspaginatorname"></a>
+
 ## ListMembersPaginatorName
 
 ```python
@@ -444,6 +510,8 @@ from mypy_boto3_macie2.literals import ListMembersPaginatorName
 Values:
 
 - `list_members`
+
+<a id="listorganizationadminaccountspaginatorname"></a>
 
 ## ListOrganizationAdminAccountsPaginatorName
 
@@ -455,6 +523,8 @@ Values:
 
 - `list_organization_admin_accounts`
 
+<a id="maciestatustype"></a>
+
 ## MacieStatusType
 
 ```python
@@ -465,6 +535,8 @@ Values:
 
 - `ENABLED`
 - `PAUSED`
+
+<a id="manageddataidentifierselectortype"></a>
 
 ## ManagedDataIdentifierSelectorType
 
@@ -479,6 +551,8 @@ Values:
 - `INCLUDE`
 - `NONE`
 
+<a id="orderbytype"></a>
+
 ## OrderByType
 
 ```python
@@ -489,6 +563,8 @@ Values:
 
 - `ASC`
 - `DESC`
+
+<a id="relationshipstatustype"></a>
 
 ## RelationshipStatusType
 
@@ -509,6 +585,8 @@ Values:
 - `Removed`
 - `Resigned`
 
+<a id="scopefilterkeytype"></a>
+
 ## ScopeFilterKeyType
 
 ```python
@@ -522,6 +600,8 @@ Values:
 - `OBJECT_LAST_MODIFIED_DATE`
 - `OBJECT_SIZE`
 
+<a id="searchresourcescomparatortype"></a>
+
 ## SearchResourcesComparatorType
 
 ```python
@@ -533,6 +613,8 @@ Values:
 - `EQ`
 - `NE`
 
+<a id="searchresourcespaginatorname"></a>
+
 ## SearchResourcesPaginatorName
 
 ```python
@@ -542,6 +624,8 @@ from mypy_boto3_macie2.literals import SearchResourcesPaginatorName
 Values:
 
 - `search_resources`
+
+<a id="searchresourcessimplecriterionkeytype"></a>
 
 ## SearchResourcesSimpleCriterionKeyType
 
@@ -556,6 +640,8 @@ Values:
 - `S3_BUCKET_NAME`
 - `S3_BUCKET_SHARED_ACCESS`
 
+<a id="searchresourcessortattributenametype"></a>
+
 ## SearchResourcesSortAttributeNameType
 
 ```python
@@ -568,6 +654,8 @@ Values:
 - `RESOURCE_NAME`
 - `S3_CLASSIFIABLE_OBJECT_COUNT`
 - `S3_CLASSIFIABLE_SIZE_IN_BYTES`
+
+<a id="sensitivedataitemcategorytype"></a>
 
 ## SensitiveDataItemCategoryType
 
@@ -582,6 +670,8 @@ Values:
 - `FINANCIAL_INFORMATION`
 - `PERSONAL_INFORMATION`
 
+<a id="severitydescriptiontype"></a>
+
 ## SeverityDescriptionType
 
 ```python
@@ -593,6 +683,8 @@ Values:
 - `High`
 - `Low`
 - `Medium`
+
+<a id="sharedaccesstype"></a>
 
 ## SharedAccessType
 
@@ -607,6 +699,8 @@ Values:
 - `NOT_SHARED`
 - `UNKNOWN`
 
+<a id="simplecriterionkeyforjobtype"></a>
+
 ## SimpleCriterionKeyForJobType
 
 ```python
@@ -619,6 +713,8 @@ Values:
 - `S3_BUCKET_EFFECTIVE_PERMISSION`
 - `S3_BUCKET_NAME`
 - `S3_BUCKET_SHARED_ACCESS`
+
+<a id="storageclasstype"></a>
 
 ## StorageClassType
 
@@ -636,6 +732,8 @@ Values:
 - `STANDARD`
 - `STANDARD_IA`
 
+<a id="tagtargettype"></a>
+
 ## TagTargetType
 
 ```python
@@ -645,6 +743,8 @@ from mypy_boto3_macie2.literals import TagTargetType
 Values:
 
 - `S3_OBJECT`
+
+<a id="timerangetype"></a>
 
 ## TimeRangeType
 
@@ -656,6 +756,8 @@ Values:
 
 - `MONTH_TO_DATE`
 - `PAST_30_DAYS`
+
+<a id="typetype"></a>
 
 ## TypeType
 
@@ -669,6 +771,8 @@ Values:
 - `aws:kms`
 - `NONE`
 
+<a id="unittype"></a>
+
 ## UnitType
 
 ```python
@@ -678,6 +782,8 @@ from mypy_boto3_macie2.literals import UnitType
 Values:
 
 - `TERABYTES`
+
+<a id="usagestatisticsfiltercomparatortype"></a>
 
 ## UsageStatisticsFilterComparatorType
 
@@ -695,6 +801,8 @@ Values:
 - `LTE`
 - `NE`
 
+<a id="usagestatisticsfilterkeytype"></a>
+
 ## UsageStatisticsFilterKeyType
 
 ```python
@@ -707,6 +815,8 @@ Values:
 - `freeTrialStartDate`
 - `serviceLimit`
 - `total`
+
+<a id="usagestatisticssortkeytype"></a>
 
 ## UsageStatisticsSortKeyType
 
@@ -721,6 +831,8 @@ Values:
 - `serviceLimitValue`
 - `total`
 
+<a id="usagetypetype"></a>
+
 ## UsageTypeType
 
 ```python
@@ -731,6 +843,8 @@ Values:
 
 - `DATA_INVENTORY_EVALUATION`
 - `SENSITIVE_DATA_DISCOVERY`
+
+<a id="useridentitytypetype"></a>
 
 ## UserIdentityTypeType
 
@@ -746,6 +860,8 @@ Values:
 - `FederatedUser`
 - `IAMUser`
 - `Root`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1054,6 +1170,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

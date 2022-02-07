@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ssmincidents-module"></a>
+
 # Typed dictionaries for boto3 SSMIncidents module
 
 > [Index](..) > [SSMIncidents](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
 type annotations stubs module
-[mypy_boto3_ssm_incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
+[mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
 - [Typed dictionaries for boto3 SSMIncidents module](#typed-dictionaries-for-boto3-ssmincidents-module)
   - [ActionTypeDef](#actiontypedef)
@@ -84,6 +86,8 @@ type annotations stubs module
   - [UpdateTimelineEventInputRequestTypeDef](#updatetimelineeventinputrequesttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="actiontypedef"></a>
+
 ## ActionTypeDef
 
 ```python
@@ -93,6 +97,8 @@ from mypy_boto3_ssm_incidents.type_defs import ActionTypeDef
 Optional fields:
 
 - `ssmAutomation`: [SsmAutomationTypeDef](./type_defs.md#ssmautomationtypedef)
+
+<a id="addregionactiontypedef"></a>
 
 ## AddRegionActionTypeDef
 
@@ -108,6 +114,8 @@ Optional fields:
 
 - `sseKmsKeyId`: `str`
 
+<a id="attributevaluelisttypedef"></a>
+
 ## AttributeValueListTypeDef
 
 ```python
@@ -119,6 +127,8 @@ Optional fields:
 - `integerValues`: `Sequence`\[`int`\]
 - `stringValues`: `Sequence`\[`str`\]
 
+<a id="automationexecutiontypedef"></a>
+
 ## AutomationExecutionTypeDef
 
 ```python
@@ -128,6 +138,8 @@ from mypy_boto3_ssm_incidents.type_defs import AutomationExecutionTypeDef
 Optional fields:
 
 - `ssmExecutionArn`: `str`
+
+<a id="chatchanneltypedef"></a>
 
 ## ChatChannelTypeDef
 
@@ -139,6 +151,8 @@ Optional fields:
 
 - `chatbotSns`: `Sequence`\[`str`\]
 - `empty`: `Mapping`\[`str`, `Any`\]
+
+<a id="conditiontypedef"></a>
 
 ## ConditionTypeDef
 
@@ -152,6 +166,8 @@ Optional fields:
 - `before`: `Union`\[`datetime`, `str`\]
 - `equals`:
   [AttributeValueListTypeDef](./type_defs.md#attributevaluelisttypedef)
+
+<a id="createreplicationsetinputrequesttypedef"></a>
 
 ## CreateReplicationSetInputRequestTypeDef
 
@@ -168,6 +184,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="createreplicationsetoutputtypedef"></a>
+
 ## CreateReplicationSetOutputTypeDef
 
 ```python
@@ -179,6 +197,8 @@ Required fields:
 - `arn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createresponseplaninputrequesttypedef"></a>
 
 ## CreateResponsePlanInputRequestTypeDef
 
@@ -201,6 +221,8 @@ Optional fields:
 - `engagements`: `Sequence`\[`str`\]
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createresponseplanoutputtypedef"></a>
+
 ## CreateResponsePlanOutputTypeDef
 
 ```python
@@ -212,6 +234,8 @@ Required fields:
 - `arn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtimelineeventinputrequesttypedef"></a>
 
 ## CreateTimelineEventInputRequestTypeDef
 
@@ -230,6 +254,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="createtimelineeventoutputtypedef"></a>
+
 ## CreateTimelineEventOutputTypeDef
 
 ```python
@@ -243,6 +269,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteincidentrecordinputrequesttypedef"></a>
+
 ## DeleteIncidentRecordInputRequestTypeDef
 
 ```python
@@ -252,6 +280,8 @@ from mypy_boto3_ssm_incidents.type_defs import DeleteIncidentRecordInputRequestT
 Required fields:
 
 - `arn`: `str`
+
+<a id="deleteregionactiontypedef"></a>
 
 ## DeleteRegionActionTypeDef
 
@@ -263,6 +293,8 @@ Required fields:
 
 - `regionName`: `str`
 
+<a id="deletereplicationsetinputrequesttypedef"></a>
+
 ## DeleteReplicationSetInputRequestTypeDef
 
 ```python
@@ -272,6 +304,8 @@ from mypy_boto3_ssm_incidents.type_defs import DeleteReplicationSetInputRequestT
 Required fields:
 
 - `arn`: `str`
+
+<a id="deleteresourcepolicyinputrequesttypedef"></a>
 
 ## DeleteResourcePolicyInputRequestTypeDef
 
@@ -284,6 +318,8 @@ Required fields:
 - `policyId`: `str`
 - `resourceArn`: `str`
 
+<a id="deleteresponseplaninputrequesttypedef"></a>
+
 ## DeleteResponsePlanInputRequestTypeDef
 
 ```python
@@ -293,6 +329,8 @@ from mypy_boto3_ssm_incidents.type_defs import DeleteResponsePlanInputRequestTyp
 Required fields:
 
 - `arn`: `str`
+
+<a id="deletetimelineeventinputrequesttypedef"></a>
 
 ## DeleteTimelineEventInputRequestTypeDef
 
@@ -304,6 +342,8 @@ Required fields:
 
 - `eventId`: `str`
 - `incidentRecordArn`: `str`
+
+<a id="eventsummarytypedef"></a>
 
 ## EventSummaryTypeDef
 
@@ -319,6 +359,8 @@ Required fields:
 - `eventUpdatedTime`: `datetime`
 - `incidentRecordArn`: `str`
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -330,6 +372,8 @@ Required fields:
 - `condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
 - `key`: `str`
 
+<a id="getincidentrecordinputrequesttypedef"></a>
+
 ## GetIncidentRecordInputRequestTypeDef
 
 ```python
@@ -339,6 +383,8 @@ from mypy_boto3_ssm_incidents.type_defs import GetIncidentRecordInputRequestType
 Required fields:
 
 - `arn`: `str`
+
+<a id="getincidentrecordoutputtypedef"></a>
 
 ## GetIncidentRecordOutputTypeDef
 
@@ -353,6 +399,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getreplicationsetinputrequesttypedef"></a>
+
 ## GetReplicationSetInputRequestTypeDef
 
 ```python
@@ -362,6 +410,8 @@ from mypy_boto3_ssm_incidents.type_defs import GetReplicationSetInputRequestType
 Required fields:
 
 - `arn`: `str`
+
+<a id="getreplicationsetoutputtypedef"></a>
 
 ## GetReplicationSetOutputTypeDef
 
@@ -375,6 +425,8 @@ Required fields:
   [ReplicationSetTypeDef](./type_defs.md#replicationsettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getresourcepoliciesinputrequesttypedef"></a>
 
 ## GetResourcePoliciesInputRequestTypeDef
 
@@ -391,6 +443,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="getresourcepoliciesoutputtypedef"></a>
+
 ## GetResourcePoliciesOutputTypeDef
 
 ```python
@@ -405,6 +459,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresponseplaninputrequesttypedef"></a>
+
 ## GetResponsePlanInputRequestTypeDef
 
 ```python
@@ -414,6 +470,8 @@ from mypy_boto3_ssm_incidents.type_defs import GetResponsePlanInputRequestTypeDe
 Required fields:
 
 - `arn`: `str`
+
+<a id="getresponseplanoutputtypedef"></a>
 
 ## GetResponsePlanOutputTypeDef
 
@@ -434,6 +492,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettimelineeventinputrequesttypedef"></a>
+
 ## GetTimelineEventInputRequestTypeDef
 
 ```python
@@ -444,6 +504,8 @@ Required fields:
 
 - `eventId`: `str`
 - `incidentRecordArn`: `str`
+
+<a id="gettimelineeventoutputtypedef"></a>
 
 ## GetTimelineEventOutputTypeDef
 
@@ -456,6 +518,8 @@ Required fields:
 - `event`: [TimelineEventTypeDef](./type_defs.md#timelineeventtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="incidentrecordsourcetypedef"></a>
 
 ## IncidentRecordSourceTypeDef
 
@@ -472,6 +536,8 @@ Optional fields:
 
 - `invokedBy`: `str`
 - `resourceArn`: `str`
+
+<a id="incidentrecordsummarytypedef"></a>
 
 ## IncidentRecordSummaryTypeDef
 
@@ -492,6 +558,8 @@ Required fields:
 Optional fields:
 
 - `resolvedTime`: `datetime`
+
+<a id="incidentrecordtypedef"></a>
 
 ## IncidentRecordTypeDef
 
@@ -522,6 +590,8 @@ Optional fields:
 - `resolvedTime`: `datetime`
 - `summary`: `str`
 
+<a id="incidenttemplatetypedef"></a>
+
 ## IncidentTemplateTypeDef
 
 ```python
@@ -540,6 +610,8 @@ Optional fields:
   `Sequence`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
 - `summary`: `str`
 
+<a id="itemidentifiertypedef"></a>
+
 ## ItemIdentifierTypeDef
 
 ```python
@@ -550,6 +622,8 @@ Required fields:
 
 - `type`: [ItemTypeType](./literals.md#itemtypetype)
 - `value`: [ItemValueTypeDef](./type_defs.md#itemvaluetypedef)
+
+<a id="itemvaluetypedef"></a>
 
 ## ItemValueTypeDef
 
@@ -563,6 +637,8 @@ Optional fields:
 - `metricDefinition`: `str`
 - `url`: `str`
 
+<a id="listincidentrecordsinputrequesttypedef"></a>
+
 ## ListIncidentRecordsInputRequestTypeDef
 
 ```python
@@ -574,6 +650,8 @@ Optional fields:
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listincidentrecordsoutputtypedef"></a>
 
 ## ListIncidentRecordsOutputTypeDef
 
@@ -588,6 +666,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrelateditemsinputrequesttypedef"></a>
 
 ## ListRelatedItemsInputRequestTypeDef
 
@@ -604,6 +684,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listrelateditemsoutputtypedef"></a>
+
 ## ListRelatedItemsOutputTypeDef
 
 ```python
@@ -618,6 +700,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listreplicationsetsinputrequesttypedef"></a>
+
 ## ListReplicationSetsInputRequestTypeDef
 
 ```python
@@ -628,6 +712,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listreplicationsetsoutputtypedef"></a>
 
 ## ListReplicationSetsOutputTypeDef
 
@@ -642,6 +728,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresponseplansinputrequesttypedef"></a>
+
 ## ListResponsePlansInputRequestTypeDef
 
 ```python
@@ -652,6 +740,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listresponseplansoutputtypedef"></a>
 
 ## ListResponsePlansOutputTypeDef
 
@@ -667,6 +757,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -676,6 +768,8 @@ from mypy_boto3_ssm_incidents.type_defs import ListTagsForResourceRequestRequest
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -688,6 +782,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtimelineeventsinputrequesttypedef"></a>
 
 ## ListTimelineEventsInputRequestTypeDef
 
@@ -708,6 +804,8 @@ Optional fields:
   [TimelineEventSortType](./literals.md#timelineeventsorttype))
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listtimelineeventsoutputtypedef"></a>
+
 ## ListTimelineEventsOutputTypeDef
 
 ```python
@@ -722,6 +820,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="notificationtargetitemtypedef"></a>
+
 ## NotificationTargetItemTypeDef
 
 ```python
@@ -731,6 +831,8 @@ from mypy_boto3_ssm_incidents.type_defs import NotificationTargetItemTypeDef
 Optional fields:
 
 - `snsTopicArn`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -744,6 +846,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="putresourcepolicyinputrequesttypedef"></a>
+
 ## PutResourcePolicyInputRequestTypeDef
 
 ```python
@@ -754,6 +858,8 @@ Required fields:
 
 - `policy`: `str`
 - `resourceArn`: `str`
+
+<a id="putresourcepolicyoutputtypedef"></a>
 
 ## PutResourcePolicyOutputTypeDef
 
@@ -766,6 +872,8 @@ Required fields:
 - `policyId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="regioninfotypedef"></a>
 
 ## RegionInfoTypeDef
 
@@ -783,6 +891,8 @@ Optional fields:
 - `sseKmsKeyId`: `str`
 - `statusMessage`: `str`
 
+<a id="regionmapinputvaluetypedef"></a>
+
 ## RegionMapInputValueTypeDef
 
 ```python
@@ -792,6 +902,8 @@ from mypy_boto3_ssm_incidents.type_defs import RegionMapInputValueTypeDef
 Optional fields:
 
 - `sseKmsKeyId`: `str`
+
+<a id="relateditemtypedef"></a>
 
 ## RelatedItemTypeDef
 
@@ -807,6 +919,8 @@ Optional fields:
 
 - `title`: `str`
 
+<a id="relateditemsupdatetypedef"></a>
+
 ## RelatedItemsUpdateTypeDef
 
 ```python
@@ -817,6 +931,8 @@ Optional fields:
 
 - `itemToAdd`: [RelatedItemTypeDef](./type_defs.md#relateditemtypedef)
 - `itemToRemove`: [ItemIdentifierTypeDef](./type_defs.md#itemidentifiertypedef)
+
+<a id="replicationsettypedef"></a>
 
 ## ReplicationSetTypeDef
 
@@ -839,6 +955,8 @@ Optional fields:
 
 - `arn`: `str`
 
+<a id="resourcepolicytypedef"></a>
+
 ## ResourcePolicyTypeDef
 
 ```python
@@ -850,6 +968,8 @@ Required fields:
 - `policyDocument`: `str`
 - `policyId`: `str`
 - `ramResourceShareRegion`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -865,6 +985,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="responseplansummarytypedef"></a>
+
 ## ResponsePlanSummaryTypeDef
 
 ```python
@@ -879,6 +1001,8 @@ Required fields:
 Optional fields:
 
 - `displayName`: `str`
+
+<a id="ssmautomationtypedef"></a>
 
 ## SsmAutomationTypeDef
 
@@ -896,6 +1020,8 @@ Optional fields:
 - `documentVersion`: `str`
 - `parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `targetAccount`: [SsmTargetAccountType](./literals.md#ssmtargetaccounttype)
+
+<a id="startincidentinputrequesttypedef"></a>
 
 ## StartIncidentInputRequestTypeDef
 
@@ -917,6 +1043,8 @@ Optional fields:
 - `triggerDetails`:
   [TriggerDetailsTypeDef](./type_defs.md#triggerdetailstypedef)
 
+<a id="startincidentoutputtypedef"></a>
+
 ## StartIncidentOutputTypeDef
 
 ```python
@@ -929,6 +1057,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -939,6 +1069,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="timelineeventtypedef"></a>
 
 ## TimelineEventTypeDef
 
@@ -954,6 +1086,8 @@ Required fields:
 - `eventType`: `str`
 - `eventUpdatedTime`: `datetime`
 - `incidentRecordArn`: `str`
+
+<a id="triggerdetailstypedef"></a>
 
 ## TriggerDetailsTypeDef
 
@@ -971,6 +1105,8 @@ Optional fields:
 - `rawData`: `str`
 - `triggerArn`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -981,6 +1117,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedeletionprotectioninputrequesttypedef"></a>
 
 ## UpdateDeletionProtectionInputRequestTypeDef
 
@@ -996,6 +1134,8 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
+
+<a id="updateincidentrecordinputrequesttypedef"></a>
 
 ## UpdateIncidentRecordInputRequestTypeDef
 
@@ -1018,6 +1158,8 @@ Optional fields:
 - `summary`: `str`
 - `title`: `str`
 
+<a id="updaterelateditemsinputrequesttypedef"></a>
+
 ## UpdateRelatedItemsInputRequestTypeDef
 
 ```python
@@ -1034,6 +1176,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="updatereplicationsetactiontypedef"></a>
+
 ## UpdateReplicationSetActionTypeDef
 
 ```python
@@ -1046,6 +1190,8 @@ Optional fields:
   [AddRegionActionTypeDef](./type_defs.md#addregionactiontypedef)
 - `deleteRegionAction`:
   [DeleteRegionActionTypeDef](./type_defs.md#deleteregionactiontypedef)
+
+<a id="updatereplicationsetinputrequesttypedef"></a>
 
 ## UpdateReplicationSetInputRequestTypeDef
 
@@ -1062,6 +1208,8 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
+
+<a id="updateresponseplaninputrequesttypedef"></a>
 
 ## UpdateResponsePlanInputRequestTypeDef
 
@@ -1087,6 +1235,8 @@ Optional fields:
 - `incidentTemplateSummary`: `str`
 - `incidentTemplateTitle`: `str`
 
+<a id="updatetimelineeventinputrequesttypedef"></a>
+
 ## UpdateTimelineEventInputRequestTypeDef
 
 ```python
@@ -1104,6 +1254,8 @@ Optional fields:
 - `eventData`: `str`
 - `eventTime`: `Union`\[`datetime`, `str`\]
 - `eventType`: `str`
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

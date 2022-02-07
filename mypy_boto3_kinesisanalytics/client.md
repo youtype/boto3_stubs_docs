@@ -1,3 +1,5 @@
+<a id="kinesisanalyticsclient-for-boto3-kinesisanalytics-module"></a>
+
 # KinesisAnalyticsClient for boto3 KinesisAnalytics module
 
 > [Index](..) > [KinesisAnalytics](.) > KinesisAnalyticsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
 type annotations stubs module
-[mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
+[mypy-boto3-kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
 - [KinesisAnalyticsClient for boto3 KinesisAnalytics module](#kinesisanalyticsclient-for-boto3-kinesisanalytics-module)
   - [KinesisAnalyticsClient](#kinesisanalyticsclient)
@@ -35,6 +37,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_application](#update_application)
 
+<a id="kinesisanalyticsclient"></a>
+
 ## KinesisAnalyticsClient
 
 Type annotations for `boto3.client("kinesisanalytics")`
@@ -42,14 +46,17 @@ Type annotations for `boto3.client("kinesisanalytics")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_kinesisanalytics.client import KinesisAnalyticsClient
 
 def get_kinesisanalytics_client() -> KinesisAnalyticsClient:
-    return boto3.client("kinesisanalytics")
+    return Session().client("kinesisanalytics")
 ```
 
 Boto3 documentation:
 [KinesisAnalytics.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -79,7 +86,11 @@ Exceptions:
 - `Exceptions.UnableToDetectSchemaException`
 - `Exceptions.UnsupportedOperationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -91,6 +102,8 @@ Boto3 documentation:
 [KinesisAnalytics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_application_cloud_watch_logging_option"></a>
 
 ### add_application_cloud_watch_logging_option
 
@@ -116,6 +129,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="add_application_input"></a>
+
 ### add_application_input
 
 .
@@ -136,6 +151,8 @@ Keyword-only arguments:
 - `Input`: [InputTypeDef](./type_defs.md#inputtypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="add_application_input_processing_configuration"></a>
 
 ### add_application_input_processing_configuration
 
@@ -162,6 +179,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="add_application_output"></a>
+
 ### add_application_output
 
 .
@@ -182,6 +201,8 @@ Keyword-only arguments:
 - `Output`: [OutputTypeDef](./type_defs.md#outputtypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="add_application_reference_data_source"></a>
 
 ### add_application_reference_data_source
 
@@ -207,6 +228,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -221,6 +244,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_application"></a>
 
 ### create_application
 
@@ -249,6 +274,8 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
+<a id="delete_application"></a>
+
 ### delete_application
 
 .
@@ -268,6 +295,8 @@ Keyword-only arguments:
 - `CreateTimestamp`: `Union`\[`datetime`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_application_cloud_watch_logging_option"></a>
 
 ### delete_application_cloud_watch_logging_option
 
@@ -291,6 +320,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_application_input_processing_configuration"></a>
+
 ### delete_application_input_processing_configuration
 
 .
@@ -313,6 +344,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_application_output"></a>
+
 ### delete_application_output
 
 .
@@ -333,6 +366,8 @@ Keyword-only arguments:
 - `OutputId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_application_reference_data_source"></a>
 
 ### delete_application_reference_data_source
 
@@ -356,6 +391,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_application"></a>
+
 ### describe_application
 
 .
@@ -375,6 +412,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
+
+<a id="discover_input_schema"></a>
 
 ### discover_input_schema
 
@@ -403,6 +442,8 @@ Keyword-only arguments:
 Returns
 [DiscoverInputSchemaResponseTypeDef](./type_defs.md#discoverinputschemaresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -421,6 +462,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_applications"></a>
 
 ### list_applications
 
@@ -443,6 +486,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves the list of key-value tags assigned to the application.
@@ -462,6 +507,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="start_application"></a>
 
 ### start_application
 
@@ -485,6 +532,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="stop_application"></a>
+
 ### stop_application
 
 .
@@ -503,6 +552,8 @@ Keyword-only arguments:
 - `ApplicationName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -523,6 +574,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from a Kinesis Analytics application.
@@ -541,6 +594,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_application"></a>
 
 ### update_application
 

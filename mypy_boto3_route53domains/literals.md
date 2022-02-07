@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-route53domains-module"></a>
+
 # Literals for boto3 Route53Domains module
 
 > [Index](..) > [Route53Domains](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
 type annotations stubs module
-[mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
+[mypy-boto3-route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 - [Literals for boto3 Route53Domains module](#literals-for-boto3-route53domains-module)
   - [ContactTypeType](#contacttypetype)
@@ -26,6 +28,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="contacttypetype"></a>
+
 ## ContactTypeType
 
 ```python
@@ -39,6 +43,8 @@ Values:
 - `PERSON`
 - `PUBLIC_BODY`
 - `RESELLER`
+
+<a id="countrycodetype"></a>
 
 ## CountryCodeType
 
@@ -300,6 +306,8 @@ Values:
 - `ZM`
 - `ZW`
 
+<a id="domainavailabilitytype"></a>
+
 ## DomainAvailabilityType
 
 ```python
@@ -316,6 +324,8 @@ Values:
 - `UNAVAILABLE`
 - `UNAVAILABLE_PREMIUM`
 - `UNAVAILABLE_RESTRICTED`
+
+<a id="extraparamnametype"></a>
 
 ## ExtraParamNameType
 
@@ -356,6 +366,8 @@ Values:
 - `UK_CONTACT_TYPE`
 - `VAT_NUMBER`
 
+<a id="listdomainsattributenametype"></a>
+
 ## ListDomainsAttributeNameType
 
 ```python
@@ -367,6 +379,8 @@ Values:
 - `DomainName`
 - `Expiry`
 
+<a id="listdomainspaginatorname"></a>
+
 ## ListDomainsPaginatorName
 
 ```python
@@ -376,6 +390,8 @@ from mypy_boto3_route53domains.literals import ListDomainsPaginatorName
 Values:
 
 - `list_domains`
+
+<a id="listoperationspaginatorname"></a>
 
 ## ListOperationsPaginatorName
 
@@ -387,6 +403,8 @@ Values:
 
 - `list_operations`
 
+<a id="listpricespaginatorname"></a>
+
 ## ListPricesPaginatorName
 
 ```python
@@ -396,6 +414,8 @@ from mypy_boto3_route53domains.literals import ListPricesPaginatorName
 Values:
 
 - `list_prices`
+
+<a id="operationstatustype"></a>
 
 ## OperationStatusType
 
@@ -410,6 +430,8 @@ Values:
 - `IN_PROGRESS`
 - `SUBMITTED`
 - `SUCCESSFUL`
+
+<a id="operationtypetype"></a>
 
 ## OperationTypeType
 
@@ -438,6 +460,8 @@ Values:
 - `UPDATE_DOMAIN_CONTACT`
 - `UPDATE_NAMESERVER`
 
+<a id="operatortype"></a>
+
 ## OperatorType
 
 ```python
@@ -449,6 +473,8 @@ Values:
 - `BEGINS_WITH`
 - `GE`
 - `LE`
+
+<a id="reachabilitystatustype"></a>
 
 ## ReachabilityStatusType
 
@@ -462,6 +488,8 @@ Values:
 - `EXPIRED`
 - `PENDING`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -472,6 +500,8 @@ Values:
 
 - `ASC`
 - `DESC`
+
+<a id="transferabletype"></a>
 
 ## TransferableType
 
@@ -485,6 +515,8 @@ Values:
 - `TRANSFERABLE`
 - `UNTRANSFERABLE`
 
+<a id="viewbillingpaginatorname"></a>
+
 ## ViewBillingPaginatorName
 
 ```python
@@ -494,6 +526,8 @@ from mypy_boto3_route53domains.literals import ViewBillingPaginatorName
 Values:
 
 - `view_billing`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -802,6 +836,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

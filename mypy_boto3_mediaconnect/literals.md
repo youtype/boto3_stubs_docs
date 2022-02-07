@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-mediaconnect-module"></a>
+
 # Literals for boto3 MediaConnect module
 
 > [Index](..) > [MediaConnect](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
-[mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
+[mypy-boto3-mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 - [Literals for boto3 MediaConnect module](#literals-for-boto3-mediaconnect-module)
   - [AlgorithmType](#algorithmtype)
@@ -39,6 +41,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="algorithmtype"></a>
+
 ## AlgorithmType
 
 ```python
@@ -50,6 +54,8 @@ Values:
 - `aes128`
 - `aes192`
 - `aes256`
+
+<a id="colorimetrytype"></a>
 
 ## ColorimetryType
 
@@ -67,6 +73,8 @@ Values:
 - `ST2065-3`
 - `XYZ`
 
+<a id="durationunitstype"></a>
+
 ## DurationUnitsType
 
 ```python
@@ -76,6 +84,8 @@ from mypy_boto3_mediaconnect.literals import DurationUnitsType
 Values:
 
 - `MONTHS`
+
+<a id="encoderprofiletype"></a>
 
 ## EncoderProfileType
 
@@ -87,6 +97,8 @@ Values:
 
 - `high`
 - `main`
+
+<a id="encodingnametype"></a>
 
 ## EncodingNameType
 
@@ -101,6 +113,8 @@ Values:
 - `raw`
 - `smpte291`
 
+<a id="entitlementstatustype"></a>
+
 ## EntitlementStatusType
 
 ```python
@@ -111,6 +125,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="failovermodetype"></a>
 
 ## FailoverModeType
 
@@ -123,6 +139,8 @@ Values:
 - `FAILOVER`
 - `MERGE`
 
+<a id="flowactivewaitername"></a>
+
 ## FlowActiveWaiterName
 
 ```python
@@ -132,6 +150,8 @@ from mypy_boto3_mediaconnect.literals import FlowActiveWaiterName
 Values:
 
 - `flow_active`
+
+<a id="flowdeletedwaitername"></a>
 
 ## FlowDeletedWaiterName
 
@@ -143,6 +163,8 @@ Values:
 
 - `flow_deleted`
 
+<a id="flowstandbywaitername"></a>
+
 ## FlowStandbyWaiterName
 
 ```python
@@ -152,6 +174,8 @@ from mypy_boto3_mediaconnect.literals import FlowStandbyWaiterName
 Values:
 
 - `flow_standby`
+
+<a id="keytypetype"></a>
 
 ## KeyTypeType
 
@@ -165,6 +189,8 @@ Values:
 - `srt-password`
 - `static-key`
 
+<a id="listentitlementspaginatorname"></a>
+
 ## ListEntitlementsPaginatorName
 
 ```python
@@ -174,6 +200,8 @@ from mypy_boto3_mediaconnect.literals import ListEntitlementsPaginatorName
 Values:
 
 - `list_entitlements`
+
+<a id="listflowspaginatorname"></a>
 
 ## ListFlowsPaginatorName
 
@@ -185,6 +213,8 @@ Values:
 
 - `list_flows`
 
+<a id="listofferingspaginatorname"></a>
+
 ## ListOfferingsPaginatorName
 
 ```python
@@ -195,6 +225,8 @@ Values:
 
 - `list_offerings`
 
+<a id="listreservationspaginatorname"></a>
+
 ## ListReservationsPaginatorName
 
 ```python
@@ -204,6 +236,8 @@ from mypy_boto3_mediaconnect.literals import ListReservationsPaginatorName
 Values:
 
 - `list_reservations`
+
+<a id="mediastreamtypetype"></a>
 
 ## MediaStreamTypeType
 
@@ -217,6 +251,8 @@ Values:
 - `audio`
 - `video`
 
+<a id="networkinterfacetypetype"></a>
+
 ## NetworkInterfaceTypeType
 
 ```python
@@ -228,6 +264,8 @@ Values:
 - `efa`
 - `ena`
 
+<a id="priceunitstype"></a>
+
 ## PriceUnitsType
 
 ```python
@@ -237,6 +275,8 @@ from mypy_boto3_mediaconnect.literals import PriceUnitsType
 Values:
 
 - `HOURLY`
+
+<a id="protocoltype"></a>
 
 ## ProtocolType
 
@@ -256,6 +296,8 @@ Values:
 - `zixi-pull`
 - `zixi-push`
 
+<a id="rangetype"></a>
+
 ## RangeType
 
 ```python
@@ -267,6 +309,8 @@ Values:
 - `FULL`
 - `FULLPROTECT`
 - `NARROW`
+
+<a id="reservationstatetype"></a>
 
 ## ReservationStateType
 
@@ -281,6 +325,8 @@ Values:
 - `EXPIRED`
 - `PROCESSING`
 
+<a id="resourcetypetype"></a>
+
 ## ResourceTypeType
 
 ```python
@@ -290,6 +336,8 @@ from mypy_boto3_mediaconnect.literals import ResourceTypeType
 Values:
 
 - `Mbps_Outbound_Bandwidth`
+
+<a id="scanmodetype"></a>
 
 ## ScanModeType
 
@@ -303,6 +351,8 @@ Values:
 - `progressive`
 - `progressive-segmented-frame`
 
+<a id="sourcetypetype"></a>
+
 ## SourceTypeType
 
 ```python
@@ -314,6 +364,8 @@ Values:
 - `ENTITLED`
 - `OWNED`
 
+<a id="statetype"></a>
+
 ## StateType
 
 ```python
@@ -324,6 +376,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="statustype"></a>
 
 ## StatusType
 
@@ -340,6 +394,8 @@ Values:
 - `STARTING`
 - `STOPPING`
 - `UPDATING`
+
+<a id="tcstype"></a>
 
 ## TcsType
 
@@ -358,6 +414,8 @@ Values:
 - `SDR`
 - `ST2065-1`
 - `ST428-1`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -667,6 +725,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -679,6 +739,8 @@ Values:
 - `list_flows`
 - `list_offerings`
 - `list_reservations`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

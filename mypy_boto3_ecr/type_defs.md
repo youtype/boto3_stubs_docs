@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ecr-module"></a>
+
 # Typed dictionaries for boto3 ECR module
 
 > [Index](..) > [ECR](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
 type annotations stubs module
-[mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
+[mypy-boto3-ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
 - [Typed dictionaries for boto3 ECR module](#typed-dictionaries-for-boto3-ecr-module)
   - [AttributeTypeDef](#attributetypedef)
@@ -133,6 +135,8 @@ type annotations stubs module
   - [VulnerablePackageTypeDef](#vulnerablepackagetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="attributetypedef"></a>
+
 ## AttributeTypeDef
 
 ```python
@@ -147,6 +151,8 @@ Optional fields:
 
 - `value`: `str`
 
+<a id="authorizationdatatypedef"></a>
+
 ## AuthorizationDataTypeDef
 
 ```python
@@ -158,6 +164,8 @@ Optional fields:
 - `authorizationToken`: `str`
 - `expiresAt`: `datetime`
 - `proxyEndpoint`: `str`
+
+<a id="awsecrcontainerimagedetailstypedef"></a>
 
 ## AwsEcrContainerImageDetailsTypeDef
 
@@ -176,6 +184,8 @@ Optional fields:
 - `registry`: `str`
 - `repositoryName`: `str`
 
+<a id="batchchecklayeravailabilityrequestrequesttypedef"></a>
+
 ## BatchCheckLayerAvailabilityRequestRequestTypeDef
 
 ```python
@@ -191,6 +201,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="batchchecklayeravailabilityresponsetypedef"></a>
+
 ## BatchCheckLayerAvailabilityResponseTypeDef
 
 ```python
@@ -204,6 +216,8 @@ Required fields:
   `List`\[[LayerFailureTypeDef](./type_defs.md#layerfailuretypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="batchdeleteimagerequestrequesttypedef"></a>
 
 ## BatchDeleteImageRequestRequestTypeDef
 
@@ -221,6 +235,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="batchdeleteimageresponsetypedef"></a>
+
 ## BatchDeleteImageResponseTypeDef
 
 ```python
@@ -235,6 +251,8 @@ Required fields:
   `List`\[[ImageFailureTypeDef](./type_defs.md#imagefailuretypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="batchgetimagerequestrequesttypedef"></a>
 
 ## BatchGetImageRequestRequestTypeDef
 
@@ -253,6 +271,8 @@ Optional fields:
 - `registryId`: `str`
 - `acceptedMediaTypes`: `Sequence`\[`str`\]
 
+<a id="batchgetimageresponsetypedef"></a>
+
 ## BatchGetImageResponseTypeDef
 
 ```python
@@ -267,6 +287,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetrepositoryscanningconfigurationrequestrequesttypedef"></a>
+
 ## BatchGetRepositoryScanningConfigurationRequestRequestTypeDef
 
 ```python
@@ -276,6 +298,8 @@ from mypy_boto3_ecr.type_defs import BatchGetRepositoryScanningConfigurationRequ
 Required fields:
 
 - `repositoryNames`: `Sequence`\[`str`\]
+
+<a id="batchgetrepositoryscanningconfigurationresponsetypedef"></a>
 
 ## BatchGetRepositoryScanningConfigurationResponseTypeDef
 
@@ -291,6 +315,8 @@ Required fields:
   `List`\[[RepositoryScanningConfigurationFailureTypeDef](./type_defs.md#repositoryscanningconfigurationfailuretypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="completelayeruploadrequestrequesttypedef"></a>
 
 ## CompleteLayerUploadRequestRequestTypeDef
 
@@ -308,6 +334,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="completelayeruploadresponsetypedef"></a>
+
 ## CompleteLayerUploadResponseTypeDef
 
 ```python
@@ -322,6 +350,8 @@ Required fields:
 - `layerDigest`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpullthroughcacherulerequestrequesttypedef"></a>
 
 ## CreatePullThroughCacheRuleRequestRequestTypeDef
 
@@ -338,6 +368,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="createpullthroughcacheruleresponsetypedef"></a>
+
 ## CreatePullThroughCacheRuleResponseTypeDef
 
 ```python
@@ -352,6 +384,8 @@ Required fields:
 - `registryId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrepositoryrequestrequesttypedef"></a>
 
 ## CreateRepositoryRequestRequestTypeDef
 
@@ -374,6 +408,8 @@ Optional fields:
 - `encryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 
+<a id="createrepositoryresponsetypedef"></a>
+
 ## CreateRepositoryResponseTypeDef
 
 ```python
@@ -386,6 +422,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cvssscoreadjustmenttypedef"></a>
+
 ## CvssScoreAdjustmentTypeDef
 
 ```python
@@ -396,6 +434,8 @@ Optional fields:
 
 - `metric`: `str`
 - `reason`: `str`
+
+<a id="cvssscoredetailstypedef"></a>
 
 ## CvssScoreDetailsTypeDef
 
@@ -412,6 +452,8 @@ Optional fields:
 - `scoringVector`: `str`
 - `version`: `str`
 
+<a id="cvssscoretypedef"></a>
+
 ## CvssScoreTypeDef
 
 ```python
@@ -424,6 +466,8 @@ Optional fields:
 - `scoringVector`: `str`
 - `source`: `str`
 - `version`: `str`
+
+<a id="deletelifecyclepolicyrequestrequesttypedef"></a>
 
 ## DeleteLifecyclePolicyRequestRequestTypeDef
 
@@ -438,6 +482,8 @@ Required fields:
 Optional fields:
 
 - `registryId`: `str`
+
+<a id="deletelifecyclepolicyresponsetypedef"></a>
 
 ## DeleteLifecyclePolicyResponseTypeDef
 
@@ -454,6 +500,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletepullthroughcacherulerequestrequesttypedef"></a>
+
 ## DeletePullThroughCacheRuleRequestRequestTypeDef
 
 ```python
@@ -467,6 +515,8 @@ Required fields:
 Optional fields:
 
 - `registryId`: `str`
+
+<a id="deletepullthroughcacheruleresponsetypedef"></a>
 
 ## DeletePullThroughCacheRuleResponseTypeDef
 
@@ -483,6 +533,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteregistrypolicyresponsetypedef"></a>
+
 ## DeleteRegistryPolicyResponseTypeDef
 
 ```python
@@ -495,6 +547,8 @@ Required fields:
 - `policyText`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleterepositorypolicyrequestrequesttypedef"></a>
 
 ## DeleteRepositoryPolicyRequestRequestTypeDef
 
@@ -510,6 +564,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="deleterepositorypolicyresponsetypedef"></a>
+
 ## DeleteRepositoryPolicyResponseTypeDef
 
 ```python
@@ -523,6 +579,8 @@ Required fields:
 - `policyText`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleterepositoryrequestrequesttypedef"></a>
 
 ## DeleteRepositoryRequestRequestTypeDef
 
@@ -539,6 +597,8 @@ Optional fields:
 - `registryId`: `str`
 - `force`: `bool`
 
+<a id="deleterepositoryresponsetypedef"></a>
+
 ## DeleteRepositoryResponseTypeDef
 
 ```python
@@ -550,6 +610,8 @@ Required fields:
 - `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeimagereplicationstatusrequestrequesttypedef"></a>
 
 ## DescribeImageReplicationStatusRequestRequestTypeDef
 
@@ -566,6 +628,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="describeimagereplicationstatusresponsetypedef"></a>
+
 ## DescribeImageReplicationStatusResponseTypeDef
 
 ```python
@@ -580,6 +644,8 @@ Required fields:
   `List`\[[ImageReplicationStatusTypeDef](./type_defs.md#imagereplicationstatustypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeimagescanfindingsrequestrequesttypedef"></a>
 
 ## DescribeImageScanFindingsRequestRequestTypeDef
 
@@ -597,6 +663,8 @@ Optional fields:
 - `registryId`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="describeimagescanfindingsresponsetypedef"></a>
 
 ## DescribeImageScanFindingsResponseTypeDef
 
@@ -617,6 +685,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeimagesfiltertypedef"></a>
+
 ## DescribeImagesFilterTypeDef
 
 ```python
@@ -626,6 +696,8 @@ from mypy_boto3_ecr.type_defs import DescribeImagesFilterTypeDef
 Optional fields:
 
 - `tagStatus`: [TagStatusType](./literals.md#tagstatustype)
+
+<a id="describeimagesrequestrequesttypedef"></a>
 
 ## DescribeImagesRequestRequestTypeDef
 
@@ -647,6 +719,8 @@ Optional fields:
 - `filter`:
   [DescribeImagesFilterTypeDef](./type_defs.md#describeimagesfiltertypedef)
 
+<a id="describeimagesresponsetypedef"></a>
+
 ## DescribeImagesResponseTypeDef
 
 ```python
@@ -661,6 +735,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepullthroughcacherulesrequestrequesttypedef"></a>
+
 ## DescribePullThroughCacheRulesRequestRequestTypeDef
 
 ```python
@@ -673,6 +749,8 @@ Optional fields:
 - `ecrRepositoryPrefixes`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="describepullthroughcacherulesresponsetypedef"></a>
 
 ## DescribePullThroughCacheRulesResponseTypeDef
 
@@ -688,6 +766,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeregistryresponsetypedef"></a>
+
 ## DescribeRegistryResponseTypeDef
 
 ```python
@@ -702,6 +782,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerepositoriesrequestrequesttypedef"></a>
+
 ## DescribeRepositoriesRequestRequestTypeDef
 
 ```python
@@ -714,6 +796,8 @@ Optional fields:
 - `repositoryNames`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="describerepositoriesresponsetypedef"></a>
 
 ## DescribeRepositoriesResponseTypeDef
 
@@ -729,6 +813,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="encryptionconfigurationtypedef"></a>
+
 ## EncryptionConfigurationTypeDef
 
 ```python
@@ -742,6 +828,8 @@ Required fields:
 Optional fields:
 
 - `kmsKey`: `str`
+
+<a id="enhancedimagescanfindingtypedef"></a>
 
 ## EnhancedImageScanFindingTypeDef
 
@@ -768,6 +856,8 @@ Optional fields:
 - `type`: `str`
 - `updatedAt`: `datetime`
 
+<a id="getauthorizationtokenrequestrequesttypedef"></a>
+
 ## GetAuthorizationTokenRequestRequestTypeDef
 
 ```python
@@ -777,6 +867,8 @@ from mypy_boto3_ecr.type_defs import GetAuthorizationTokenRequestRequestTypeDef
 Optional fields:
 
 - `registryIds`: `Sequence`\[`str`\]
+
+<a id="getauthorizationtokenresponsetypedef"></a>
 
 ## GetAuthorizationTokenResponseTypeDef
 
@@ -790,6 +882,8 @@ Required fields:
   `List`\[[AuthorizationDataTypeDef](./type_defs.md#authorizationdatatypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdownloadurlforlayerrequestrequesttypedef"></a>
 
 ## GetDownloadUrlForLayerRequestRequestTypeDef
 
@@ -806,6 +900,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="getdownloadurlforlayerresponsetypedef"></a>
+
 ## GetDownloadUrlForLayerResponseTypeDef
 
 ```python
@@ -818,6 +914,8 @@ Required fields:
 - `layerDigest`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getlifecyclepolicypreviewrequestrequesttypedef"></a>
 
 ## GetLifecyclePolicyPreviewRequestRequestTypeDef
 
@@ -838,6 +936,8 @@ Optional fields:
 - `maxResults`: `int`
 - `filter`:
   [LifecyclePolicyPreviewFilterTypeDef](./type_defs.md#lifecyclepolicypreviewfiltertypedef)
+
+<a id="getlifecyclepolicypreviewresponsetypedef"></a>
 
 ## GetLifecyclePolicyPreviewResponseTypeDef
 
@@ -860,6 +960,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlifecyclepolicyrequestrequesttypedef"></a>
+
 ## GetLifecyclePolicyRequestRequestTypeDef
 
 ```python
@@ -873,6 +975,8 @@ Required fields:
 Optional fields:
 
 - `registryId`: `str`
+
+<a id="getlifecyclepolicyresponsetypedef"></a>
 
 ## GetLifecyclePolicyResponseTypeDef
 
@@ -889,6 +993,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getregistrypolicyresponsetypedef"></a>
+
 ## GetRegistryPolicyResponseTypeDef
 
 ```python
@@ -901,6 +1007,8 @@ Required fields:
 - `policyText`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getregistryscanningconfigurationresponsetypedef"></a>
 
 ## GetRegistryScanningConfigurationResponseTypeDef
 
@@ -916,6 +1024,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrepositorypolicyrequestrequesttypedef"></a>
+
 ## GetRepositoryPolicyRequestRequestTypeDef
 
 ```python
@@ -930,6 +1040,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="getrepositorypolicyresponsetypedef"></a>
+
 ## GetRepositoryPolicyResponseTypeDef
 
 ```python
@@ -943,6 +1055,8 @@ Required fields:
 - `policyText`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="imagedetailtypedef"></a>
 
 ## ImageDetailTypeDef
 
@@ -965,6 +1079,8 @@ Optional fields:
 - `imageManifestMediaType`: `str`
 - `artifactMediaType`: `str`
 
+<a id="imagefailuretypedef"></a>
+
 ## ImageFailureTypeDef
 
 ```python
@@ -977,6 +1093,8 @@ Optional fields:
 - `failureCode`: [ImageFailureCodeType](./literals.md#imagefailurecodetype)
 - `failureReason`: `str`
 
+<a id="imageidentifiertypedef"></a>
+
 ## ImageIdentifierTypeDef
 
 ```python
@@ -987,6 +1105,8 @@ Optional fields:
 
 - `imageDigest`: `str`
 - `imageTag`: `str`
+
+<a id="imagereplicationstatustypedef"></a>
 
 ## ImageReplicationStatusTypeDef
 
@@ -1000,6 +1120,8 @@ Optional fields:
 - `registryId`: `str`
 - `status`: [ReplicationStatusType](./literals.md#replicationstatustype)
 - `failureCode`: `str`
+
+<a id="imagescanfindingtypedef"></a>
 
 ## ImageScanFindingTypeDef
 
@@ -1015,6 +1137,8 @@ Optional fields:
 - `severity`: [FindingSeverityType](./literals.md#findingseveritytype)
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
+<a id="imagescanfindingssummarytypedef"></a>
+
 ## ImageScanFindingsSummaryTypeDef
 
 ```python
@@ -1027,6 +1151,8 @@ Optional fields:
 - `vulnerabilitySourceUpdatedAt`: `datetime`
 - `findingSeverityCounts`:
   `Dict`\[[FindingSeverityType](./literals.md#findingseveritytype), `int`\]
+
+<a id="imagescanfindingstypedef"></a>
 
 ## ImageScanFindingsTypeDef
 
@@ -1045,6 +1171,8 @@ Optional fields:
 - `enhancedFindings`:
   `List`\[[EnhancedImageScanFindingTypeDef](./type_defs.md#enhancedimagescanfindingtypedef)\]
 
+<a id="imagescanstatustypedef"></a>
+
 ## ImageScanStatusTypeDef
 
 ```python
@@ -1056,6 +1184,8 @@ Optional fields:
 - `status`: [ScanStatusType](./literals.md#scanstatustype)
 - `description`: `str`
 
+<a id="imagescanningconfigurationtypedef"></a>
+
 ## ImageScanningConfigurationTypeDef
 
 ```python
@@ -1065,6 +1195,8 @@ from mypy_boto3_ecr.type_defs import ImageScanningConfigurationTypeDef
 Optional fields:
 
 - `scanOnPush`: `bool`
+
+<a id="imagetypedef"></a>
 
 ## ImageTypeDef
 
@@ -1080,6 +1212,8 @@ Optional fields:
 - `imageManifest`: `str`
 - `imageManifestMediaType`: `str`
 
+<a id="initiatelayeruploadrequestrequesttypedef"></a>
+
 ## InitiateLayerUploadRequestRequestTypeDef
 
 ```python
@@ -1094,6 +1228,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="initiatelayeruploadresponsetypedef"></a>
+
 ## InitiateLayerUploadResponseTypeDef
 
 ```python
@@ -1107,6 +1243,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="layerfailuretypedef"></a>
+
 ## LayerFailureTypeDef
 
 ```python
@@ -1118,6 +1256,8 @@ Optional fields:
 - `layerDigest`: `str`
 - `failureCode`: [LayerFailureCodeType](./literals.md#layerfailurecodetype)
 - `failureReason`: `str`
+
+<a id="layertypedef"></a>
 
 ## LayerTypeDef
 
@@ -1133,6 +1273,8 @@ Optional fields:
 - `layerSize`: `int`
 - `mediaType`: `str`
 
+<a id="lifecyclepolicypreviewfiltertypedef"></a>
+
 ## LifecyclePolicyPreviewFilterTypeDef
 
 ```python
@@ -1142,6 +1284,8 @@ from mypy_boto3_ecr.type_defs import LifecyclePolicyPreviewFilterTypeDef
 Optional fields:
 
 - `tagStatus`: [TagStatusType](./literals.md#tagstatustype)
+
+<a id="lifecyclepolicypreviewresulttypedef"></a>
 
 ## LifecyclePolicyPreviewResultTypeDef
 
@@ -1158,6 +1302,8 @@ Optional fields:
   [LifecyclePolicyRuleActionTypeDef](./type_defs.md#lifecyclepolicyruleactiontypedef)
 - `appliedRulePriority`: `int`
 
+<a id="lifecyclepolicypreviewsummarytypedef"></a>
+
 ## LifecyclePolicyPreviewSummaryTypeDef
 
 ```python
@@ -1167,6 +1313,8 @@ from mypy_boto3_ecr.type_defs import LifecyclePolicyPreviewSummaryTypeDef
 Optional fields:
 
 - `expiringImageTotalCount`: `int`
+
+<a id="lifecyclepolicyruleactiontypedef"></a>
 
 ## LifecyclePolicyRuleActionTypeDef
 
@@ -1179,6 +1327,8 @@ Optional fields:
 - `type`: `Literal['EXPIRE']` (see
   [ImageActionTypeType](./literals.md#imageactiontypetype))
 
+<a id="listimagesfiltertypedef"></a>
+
 ## ListImagesFilterTypeDef
 
 ```python
@@ -1188,6 +1338,8 @@ from mypy_boto3_ecr.type_defs import ListImagesFilterTypeDef
 Optional fields:
 
 - `tagStatus`: [TagStatusType](./literals.md#tagstatustype)
+
+<a id="listimagesrequestrequesttypedef"></a>
 
 ## ListImagesRequestRequestTypeDef
 
@@ -1206,6 +1358,8 @@ Optional fields:
 - `maxResults`: `int`
 - `filter`: [ListImagesFilterTypeDef](./type_defs.md#listimagesfiltertypedef)
 
+<a id="listimagesresponsetypedef"></a>
+
 ## ListImagesResponseTypeDef
 
 ```python
@@ -1220,6 +1374,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1229,6 +1385,8 @@ from mypy_boto3_ecr.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1241,6 +1399,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="packagevulnerabilitydetailstypedef"></a>
 
 ## PackageVulnerabilityDetailsTypeDef
 
@@ -1262,6 +1422,8 @@ Optional fields:
 - `vulnerablePackages`:
   `List`\[[VulnerablePackageTypeDef](./type_defs.md#vulnerablepackagetypedef)\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1273,6 +1435,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="pullthroughcacheruletypedef"></a>
 
 ## PullThroughCacheRuleTypeDef
 
@@ -1286,6 +1450,8 @@ Optional fields:
 - `upstreamRegistryUrl`: `str`
 - `createdAt`: `datetime`
 - `registryId`: `str`
+
+<a id="putimagerequestrequesttypedef"></a>
 
 ## PutImageRequestRequestTypeDef
 
@@ -1305,6 +1471,8 @@ Optional fields:
 - `imageTag`: `str`
 - `imageDigest`: `str`
 
+<a id="putimageresponsetypedef"></a>
+
 ## PutImageResponseTypeDef
 
 ```python
@@ -1316,6 +1484,8 @@ Required fields:
 - `image`: [ImageTypeDef](./type_defs.md#imagetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putimagescanningconfigurationrequestrequesttypedef"></a>
 
 ## PutImageScanningConfigurationRequestRequestTypeDef
 
@@ -1333,6 +1503,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="putimagescanningconfigurationresponsetypedef"></a>
+
 ## PutImageScanningConfigurationResponseTypeDef
 
 ```python
@@ -1347,6 +1519,8 @@ Required fields:
   [ImageScanningConfigurationTypeDef](./type_defs.md#imagescanningconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putimagetagmutabilityrequestrequesttypedef"></a>
 
 ## PutImageTagMutabilityRequestRequestTypeDef
 
@@ -1364,6 +1538,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="putimagetagmutabilityresponsetypedef"></a>
+
 ## PutImageTagMutabilityResponseTypeDef
 
 ```python
@@ -1378,6 +1554,8 @@ Required fields:
   [ImageTagMutabilityType](./literals.md#imagetagmutabilitytype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putlifecyclepolicyrequestrequesttypedef"></a>
 
 ## PutLifecyclePolicyRequestRequestTypeDef
 
@@ -1394,6 +1572,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="putlifecyclepolicyresponsetypedef"></a>
+
 ## PutLifecyclePolicyResponseTypeDef
 
 ```python
@@ -1408,6 +1588,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putregistrypolicyrequestrequesttypedef"></a>
+
 ## PutRegistryPolicyRequestRequestTypeDef
 
 ```python
@@ -1417,6 +1599,8 @@ from mypy_boto3_ecr.type_defs import PutRegistryPolicyRequestRequestTypeDef
 Required fields:
 
 - `policyText`: `str`
+
+<a id="putregistrypolicyresponsetypedef"></a>
 
 ## PutRegistryPolicyResponseTypeDef
 
@@ -1431,6 +1615,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putregistryscanningconfigurationrequestrequesttypedef"></a>
+
 ## PutRegistryScanningConfigurationRequestRequestTypeDef
 
 ```python
@@ -1442,6 +1628,8 @@ Optional fields:
 - `scanType`: [ScanTypeType](./literals.md#scantypetype)
 - `rules`:
   `Sequence`\[[RegistryScanningRuleTypeDef](./type_defs.md#registryscanningruletypedef)\]
+
+<a id="putregistryscanningconfigurationresponsetypedef"></a>
 
 ## PutRegistryScanningConfigurationResponseTypeDef
 
@@ -1456,6 +1644,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putreplicationconfigurationrequestrequesttypedef"></a>
+
 ## PutReplicationConfigurationRequestRequestTypeDef
 
 ```python
@@ -1466,6 +1656,8 @@ Required fields:
 
 - `replicationConfiguration`:
   [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef)
+
+<a id="putreplicationconfigurationresponsetypedef"></a>
 
 ## PutReplicationConfigurationResponseTypeDef
 
@@ -1480,6 +1672,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="recommendationtypedef"></a>
+
 ## RecommendationTypeDef
 
 ```python
@@ -1490,6 +1684,8 @@ Optional fields:
 
 - `url`: `str`
 - `text`: `str`
+
+<a id="registryscanningconfigurationtypedef"></a>
 
 ## RegistryScanningConfigurationTypeDef
 
@@ -1503,6 +1699,8 @@ Optional fields:
 - `rules`:
   `List`\[[RegistryScanningRuleTypeDef](./type_defs.md#registryscanningruletypedef)\]
 
+<a id="registryscanningruletypedef"></a>
+
 ## RegistryScanningRuleTypeDef
 
 ```python
@@ -1515,6 +1713,8 @@ Required fields:
 - `repositoryFilters`:
   `List`\[[ScanningRepositoryFilterTypeDef](./type_defs.md#scanningrepositoryfiltertypedef)\]
 
+<a id="remediationtypedef"></a>
+
 ## RemediationTypeDef
 
 ```python
@@ -1525,6 +1725,8 @@ Optional fields:
 
 - `recommendation`:
   [RecommendationTypeDef](./type_defs.md#recommendationtypedef)
+
+<a id="replicationconfigurationtypedef"></a>
 
 ## ReplicationConfigurationTypeDef
 
@@ -1537,6 +1739,8 @@ Required fields:
 - `rules`:
   `List`\[[ReplicationRuleTypeDef](./type_defs.md#replicationruletypedef)\]
 
+<a id="replicationdestinationtypedef"></a>
+
 ## ReplicationDestinationTypeDef
 
 ```python
@@ -1547,6 +1751,8 @@ Required fields:
 
 - `region`: `str`
 - `registryId`: `str`
+
+<a id="replicationruletypedef"></a>
 
 ## ReplicationRuleTypeDef
 
@@ -1564,6 +1770,8 @@ Optional fields:
 - `repositoryFilters`:
   `List`\[[RepositoryFilterTypeDef](./type_defs.md#repositoryfiltertypedef)\]
 
+<a id="repositoryfiltertypedef"></a>
+
 ## RepositoryFilterTypeDef
 
 ```python
@@ -1575,6 +1783,8 @@ Required fields:
 - `filter`: `str`
 - `filterType`: `Literal['PREFIX_MATCH']` (see
   [RepositoryFilterTypeType](./literals.md#repositoryfiltertypetype))
+
+<a id="repositoryscanningconfigurationfailuretypedef"></a>
 
 ## RepositoryScanningConfigurationFailureTypeDef
 
@@ -1588,6 +1798,8 @@ Optional fields:
 - `failureCode`: `Literal['REPOSITORY_NOT_FOUND']` (see
   [ScanningConfigurationFailureCodeType](./literals.md#scanningconfigurationfailurecodetype))
 - `failureReason`: `str`
+
+<a id="repositoryscanningconfigurationtypedef"></a>
 
 ## RepositoryScanningConfigurationTypeDef
 
@@ -1603,6 +1815,8 @@ Optional fields:
 - `scanFrequency`: [ScanFrequencyType](./literals.md#scanfrequencytype)
 - `appliedScanFilters`:
   `List`\[[ScanningRepositoryFilterTypeDef](./type_defs.md#scanningrepositoryfiltertypedef)\]
+
+<a id="repositorytypedef"></a>
 
 ## RepositoryTypeDef
 
@@ -1624,6 +1838,8 @@ Optional fields:
 - `encryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 
+<a id="resourcedetailstypedef"></a>
+
 ## ResourceDetailsTypeDef
 
 ```python
@@ -1634,6 +1850,8 @@ Optional fields:
 
 - `awsEcrContainerImage`:
   [AwsEcrContainerImageDetailsTypeDef](./type_defs.md#awsecrcontainerimagedetailstypedef)
+
+<a id="resourcetypedef"></a>
 
 ## ResourceTypeDef
 
@@ -1647,6 +1865,8 @@ Optional fields:
 - `id`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 - `type`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1662,6 +1882,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="scanningrepositoryfiltertypedef"></a>
+
 ## ScanningRepositoryFilterTypeDef
 
 ```python
@@ -1674,6 +1896,8 @@ Required fields:
 - `filterType`: `Literal['WILDCARD']` (see
   [ScanningRepositoryFilterTypeType](./literals.md#scanningrepositoryfiltertypetype))
 
+<a id="scoredetailstypedef"></a>
+
 ## ScoreDetailsTypeDef
 
 ```python
@@ -1683,6 +1907,8 @@ from mypy_boto3_ecr.type_defs import ScoreDetailsTypeDef
 Optional fields:
 
 - `cvss`: [CvssScoreDetailsTypeDef](./type_defs.md#cvssscoredetailstypedef)
+
+<a id="setrepositorypolicyrequestrequesttypedef"></a>
 
 ## SetRepositoryPolicyRequestRequestTypeDef
 
@@ -1700,6 +1926,8 @@ Optional fields:
 - `registryId`: `str`
 - `force`: `bool`
 
+<a id="setrepositorypolicyresponsetypedef"></a>
+
 ## SetRepositoryPolicyResponseTypeDef
 
 ```python
@@ -1713,6 +1941,8 @@ Required fields:
 - `policyText`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startimagescanrequestrequesttypedef"></a>
 
 ## StartImageScanRequestRequestTypeDef
 
@@ -1728,6 +1958,8 @@ Required fields:
 Optional fields:
 
 - `registryId`: `str`
+
+<a id="startimagescanresponsetypedef"></a>
 
 ## StartImageScanResponseTypeDef
 
@@ -1745,6 +1977,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startlifecyclepolicypreviewrequestrequesttypedef"></a>
+
 ## StartLifecyclePolicyPreviewRequestRequestTypeDef
 
 ```python
@@ -1759,6 +1993,8 @@ Optional fields:
 
 - `registryId`: `str`
 - `lifecyclePolicyText`: `str`
+
+<a id="startlifecyclepolicypreviewresponsetypedef"></a>
 
 ## StartLifecyclePolicyPreviewResponseTypeDef
 
@@ -1776,6 +2012,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1786,6 +2024,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1798,6 +2038,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1808,6 +2050,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="uploadlayerpartrequestrequesttypedef"></a>
 
 ## UploadLayerPartRequestRequestTypeDef
 
@@ -1827,6 +2071,8 @@ Optional fields:
 
 - `registryId`: `str`
 
+<a id="uploadlayerpartresponsetypedef"></a>
+
 ## UploadLayerPartResponseTypeDef
 
 ```python
@@ -1841,6 +2087,8 @@ Required fields:
 - `lastByteReceived`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="vulnerablepackagetypedef"></a>
 
 ## VulnerablePackageTypeDef
 
@@ -1858,6 +2106,8 @@ Optional fields:
 - `release`: `str`
 - `sourceLayerHash`: `str`
 - `version`: `str`
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

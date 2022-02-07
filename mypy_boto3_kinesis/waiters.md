@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-kinesis-module"></a>
+
 # Waiters for boto3 Kinesis module
 
 > [Index](..) > [Kinesis](.) > Waiters
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
 type annotations stubs module
-[mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
+[mypy-boto3-kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 - [Waiters for boto3 Kinesis module](#waiters-for-boto3-kinesis-module)
   - [StreamExistsWaiter](#streamexistswaiter)
   - [StreamNotExistsWaiter](#streamnotexistswaiter)
+
+<a id="streamexistswaiter"></a>
 
 ## StreamExistsWaiter
 
@@ -18,10 +22,12 @@ Type annotations for `boto3.client("kinesis").get_waiter("stream_exists")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kinesis.waiter import StreamExistsWaiter
 
 def get_stream_exists_waiter() -> StreamExistsWaiter:
-    return boto3.client("kinesis").get_waiter("stream_exists")
+    return Session().client("kinesis").get_waiter("stream_exists")
 ```
 
 Boto3 documentation:
@@ -34,6 +40,8 @@ Arguments for `StreamExistsWaiter.wait` method:
 - `ExclusiveStartShardId`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="streamnotexistswaiter"></a>
+
 ## StreamNotExistsWaiter
 
 Type annotations for `boto3.client("kinesis").get_waiter("stream_not_exists")`.
@@ -41,10 +49,12 @@ Type annotations for `boto3.client("kinesis").get_waiter("stream_not_exists")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kinesis.waiter import StreamNotExistsWaiter
 
 def get_stream_not_exists_waiter() -> StreamNotExistsWaiter:
-    return boto3.client("kinesis").get_waiter("stream_not_exists")
+    return Session().client("kinesis").get_waiter("stream_not_exists")
 ```
 
 Boto3 documentation:

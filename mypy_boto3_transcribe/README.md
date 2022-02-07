@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-transcribeservice-module"></a>
+
 # Type annotations for boto3 TranscribeService module
 
 > [Index](..) > TranscribeService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
 type annotations stubs module
-[mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
+[mypy-boto3-transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[transcribe]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[transcribe]'
+
+# standalone installation
 pip install mypy-boto3-transcribe
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-transcribe
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="transcribeserviceclient"></a>
 
 ## TranscribeServiceClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_transcribe.client import TranscribeServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -74,6 +88,8 @@ from mypy_boto3_transcribe.client import TranscribeServiceClient
 - [update_vocabulary](./client.md#update_vocabulary)
 - [update_vocabulary_filter](./client.md#update_vocabulary_filter)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 TranscribeServiceClient [exceptions](./client.md#exceptions)
@@ -84,6 +100,8 @@ TranscribeServiceClient [exceptions](./client.md#exceptions)
 - InternalFailureException
 - LimitExceededException
 - NotFoundException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -116,6 +134,8 @@ from mypy_boto3_transcribe.literals import BaseModelNameType, ...
 - [VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype)
 - [VocabularyStateType](./literals.md#vocabularystatetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

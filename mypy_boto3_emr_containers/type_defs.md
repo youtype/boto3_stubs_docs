@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-emrcontainers-module"></a>
+
 # Typed dictionaries for boto3 EMRContainers module
 
 > [Index](..) > [EMRContainers](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
 type annotations stubs module
-[mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
+[mypy-boto3-emr-containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 - [Typed dictionaries for boto3 EMRContainers module](#typed-dictionaries-for-boto3-emrcontainers-module)
   - [CancelJobRunRequestRequestTypeDef](#canceljobrunrequestrequesttypedef)
@@ -53,6 +55,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [VirtualClusterTypeDef](#virtualclustertypedef)
 
+<a id="canceljobrunrequestrequesttypedef"></a>
+
 ## CancelJobRunRequestRequestTypeDef
 
 ```python
@@ -63,6 +67,8 @@ Required fields:
 
 - `id`: `str`
 - `virtualClusterId`: `str`
+
+<a id="canceljobrunresponsetypedef"></a>
 
 ## CancelJobRunResponseTypeDef
 
@@ -77,6 +83,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="certificatetypedef"></a>
+
 ## CertificateTypeDef
 
 ```python
@@ -87,6 +95,8 @@ Optional fields:
 
 - `certificateArn`: `str`
 - `certificateData`: `str`
+
+<a id="cloudwatchmonitoringconfigurationtypedef"></a>
 
 ## CloudWatchMonitoringConfigurationTypeDef
 
@@ -102,6 +112,8 @@ Optional fields:
 
 - `logStreamNamePrefix`: `str`
 
+<a id="configurationoverridestypedef"></a>
+
 ## ConfigurationOverridesTypeDef
 
 ```python
@@ -114,6 +126,8 @@ Optional fields:
   `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `monitoringConfiguration`:
   [MonitoringConfigurationTypeDef](./type_defs.md#monitoringconfigurationtypedef)
+
+<a id="configurationtypedef"></a>
 
 ## ConfigurationTypeDef
 
@@ -131,6 +145,8 @@ Optional fields:
 - `configurations`:
   `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
+<a id="containerinfotypedef"></a>
+
 ## ContainerInfoTypeDef
 
 ```python
@@ -140,6 +156,8 @@ from mypy_boto3_emr_containers.type_defs import ContainerInfoTypeDef
 Optional fields:
 
 - `eksInfo`: [EksInfoTypeDef](./type_defs.md#eksinfotypedef)
+
+<a id="containerprovidertypedef"></a>
 
 ## ContainerProviderTypeDef
 
@@ -156,6 +174,8 @@ Required fields:
 Optional fields:
 
 - `info`: [ContainerInfoTypeDef](./type_defs.md#containerinfotypedef)
+
+<a id="createmanagedendpointrequestrequesttypedef"></a>
 
 ## CreateManagedEndpointRequestRequestTypeDef
 
@@ -179,6 +199,8 @@ Optional fields:
   [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createmanagedendpointresponsetypedef"></a>
+
 ## CreateManagedEndpointResponseTypeDef
 
 ```python
@@ -193,6 +215,8 @@ Required fields:
 - `virtualClusterId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createvirtualclusterrequestrequesttypedef"></a>
 
 ## CreateVirtualClusterRequestRequestTypeDef
 
@@ -211,6 +235,8 @@ Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createvirtualclusterresponsetypedef"></a>
+
 ## CreateVirtualClusterResponseTypeDef
 
 ```python
@@ -225,6 +251,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletemanagedendpointrequestrequesttypedef"></a>
+
 ## DeleteManagedEndpointRequestRequestTypeDef
 
 ```python
@@ -235,6 +263,8 @@ Required fields:
 
 - `id`: `str`
 - `virtualClusterId`: `str`
+
+<a id="deletemanagedendpointresponsetypedef"></a>
 
 ## DeleteManagedEndpointResponseTypeDef
 
@@ -249,6 +279,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletevirtualclusterrequestrequesttypedef"></a>
+
 ## DeleteVirtualClusterRequestRequestTypeDef
 
 ```python
@@ -258,6 +290,8 @@ from mypy_boto3_emr_containers.type_defs import DeleteVirtualClusterRequestReque
 Required fields:
 
 - `id`: `str`
+
+<a id="deletevirtualclusterresponsetypedef"></a>
 
 ## DeleteVirtualClusterResponseTypeDef
 
@@ -271,6 +305,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describejobrunrequestrequesttypedef"></a>
+
 ## DescribeJobRunRequestRequestTypeDef
 
 ```python
@@ -281,6 +317,8 @@ Required fields:
 
 - `id`: `str`
 - `virtualClusterId`: `str`
+
+<a id="describejobrunresponsetypedef"></a>
 
 ## DescribeJobRunResponseTypeDef
 
@@ -294,6 +332,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemanagedendpointrequestrequesttypedef"></a>
+
 ## DescribeManagedEndpointRequestRequestTypeDef
 
 ```python
@@ -304,6 +344,8 @@ Required fields:
 
 - `id`: `str`
 - `virtualClusterId`: `str`
+
+<a id="describemanagedendpointresponsetypedef"></a>
 
 ## DescribeManagedEndpointResponseTypeDef
 
@@ -317,6 +359,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describevirtualclusterrequestrequesttypedef"></a>
+
 ## DescribeVirtualClusterRequestRequestTypeDef
 
 ```python
@@ -326,6 +370,8 @@ from mypy_boto3_emr_containers.type_defs import DescribeVirtualClusterRequestReq
 Required fields:
 
 - `id`: `str`
+
+<a id="describevirtualclusterresponsetypedef"></a>
 
 ## DescribeVirtualClusterResponseTypeDef
 
@@ -340,6 +386,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="eksinfotypedef"></a>
+
 ## EksInfoTypeDef
 
 ```python
@@ -349,6 +397,8 @@ from mypy_boto3_emr_containers.type_defs import EksInfoTypeDef
 Optional fields:
 
 - `namespace`: `str`
+
+<a id="endpointtypedef"></a>
 
 ## EndpointTypeDef
 
@@ -379,6 +429,8 @@ Optional fields:
 - `failureReason`: [FailureReasonType](./literals.md#failurereasontype)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="jobdrivertypedef"></a>
+
 ## JobDriverTypeDef
 
 ```python
@@ -389,6 +441,8 @@ Optional fields:
 
 - `sparkSubmitJobDriver`:
   [SparkSubmitJobDriverTypeDef](./type_defs.md#sparksubmitjobdrivertypedef)
+
+<a id="jobruntypedef"></a>
 
 ## JobRunTypeDef
 
@@ -416,6 +470,8 @@ Optional fields:
 - `failureReason`: [FailureReasonType](./literals.md#failurereasontype)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="listjobrunsrequestrequesttypedef"></a>
+
 ## ListJobRunsRequestRequestTypeDef
 
 ```python
@@ -435,6 +491,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listjobrunsresponsetypedef"></a>
+
 ## ListJobRunsResponseTypeDef
 
 ```python
@@ -447,6 +505,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmanagedendpointsrequestrequesttypedef"></a>
 
 ## ListManagedEndpointsRequestRequestTypeDef
 
@@ -467,6 +527,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listmanagedendpointsresponsetypedef"></a>
+
 ## ListManagedEndpointsResponseTypeDef
 
 ```python
@@ -480,6 +542,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -489,6 +553,8 @@ from mypy_boto3_emr_containers.type_defs import ListTagsForResourceRequestReques
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -501,6 +567,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listvirtualclustersrequestrequesttypedef"></a>
 
 ## ListVirtualClustersRequestRequestTypeDef
 
@@ -520,6 +588,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listvirtualclustersresponsetypedef"></a>
+
 ## ListVirtualClustersResponseTypeDef
 
 ```python
@@ -533,6 +603,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="monitoringconfigurationtypedef"></a>
 
 ## MonitoringConfigurationTypeDef
 
@@ -548,6 +620,8 @@ Optional fields:
 - `s3MonitoringConfiguration`:
   [S3MonitoringConfigurationTypeDef](./type_defs.md#s3monitoringconfigurationtypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -559,6 +633,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -574,6 +650,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3monitoringconfigurationtypedef"></a>
+
 ## S3MonitoringConfigurationTypeDef
 
 ```python
@@ -583,6 +661,8 @@ from mypy_boto3_emr_containers.type_defs import S3MonitoringConfigurationTypeDef
 Required fields:
 
 - `logUri`: `str`
+
+<a id="sparksubmitjobdrivertypedef"></a>
 
 ## SparkSubmitJobDriverTypeDef
 
@@ -598,6 +678,8 @@ Optional fields:
 
 - `entryPointArguments`: `List`\[`str`\]
 - `sparkSubmitParameters`: `str`
+
+<a id="startjobrunrequestrequesttypedef"></a>
 
 ## StartJobRunRequestRequestTypeDef
 
@@ -620,6 +702,8 @@ Optional fields:
   [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="startjobrunresponsetypedef"></a>
+
 ## StartJobRunResponseTypeDef
 
 ```python
@@ -635,6 +719,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -646,6 +732,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -656,6 +744,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="virtualclustertypedef"></a>
 
 ## VirtualClusterTypeDef
 

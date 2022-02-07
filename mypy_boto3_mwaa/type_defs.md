@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-mwaa-module"></a>
+
 # Typed dictionaries for boto3 MWAA module
 
 > [Index](..) > [MWAA](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
 type annotations stubs module
-[mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
+[mypy-boto3-mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
 - [Typed dictionaries for boto3 MWAA module](#typed-dictionaries-for-boto3-mwaa-module)
   - [CreateCliTokenRequestRequestTypeDef](#createclitokenrequestrequesttypedef)
@@ -41,6 +43,8 @@ type annotations stubs module
   - [UpdateErrorTypeDef](#updateerrortypedef)
   - [UpdateNetworkConfigurationInputTypeDef](#updatenetworkconfigurationinputtypedef)
 
+<a id="createclitokenrequestrequesttypedef"></a>
+
 ## CreateCliTokenRequestRequestTypeDef
 
 ```python
@@ -50,6 +54,8 @@ from mypy_boto3_mwaa.type_defs import CreateCliTokenRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="createclitokenresponsetypedef"></a>
 
 ## CreateCliTokenResponseTypeDef
 
@@ -63,6 +69,8 @@ Required fields:
 - `WebServerHostname`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createenvironmentinputrequesttypedef"></a>
 
 ## CreateEnvironmentInputRequestTypeDef
 
@@ -99,6 +107,8 @@ Optional fields:
   [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
 - `WeeklyMaintenanceWindowStart`: `str`
 
+<a id="createenvironmentoutputtypedef"></a>
+
 ## CreateEnvironmentOutputTypeDef
 
 ```python
@@ -111,6 +121,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createweblogintokenrequestrequesttypedef"></a>
+
 ## CreateWebLoginTokenRequestRequestTypeDef
 
 ```python
@@ -120,6 +132,8 @@ from mypy_boto3_mwaa.type_defs import CreateWebLoginTokenRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="createweblogintokenresponsetypedef"></a>
 
 ## CreateWebLoginTokenResponseTypeDef
 
@@ -134,6 +148,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteenvironmentinputrequesttypedef"></a>
+
 ## DeleteEnvironmentInputRequestTypeDef
 
 ```python
@@ -143,6 +159,8 @@ from mypy_boto3_mwaa.type_defs import DeleteEnvironmentInputRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="dimensiontypedef"></a>
 
 ## DimensionTypeDef
 
@@ -154,6 +172,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="environmenttypedef"></a>
 
 ## EnvironmentTypeDef
 
@@ -193,6 +213,8 @@ Optional fields:
 - `WebserverUrl`: `str`
 - `WeeklyMaintenanceWindowStart`: `str`
 
+<a id="getenvironmentinputrequesttypedef"></a>
+
 ## GetEnvironmentInputRequestTypeDef
 
 ```python
@@ -202,6 +224,8 @@ from mypy_boto3_mwaa.type_defs import GetEnvironmentInputRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getenvironmentoutputtypedef"></a>
 
 ## GetEnvironmentOutputTypeDef
 
@@ -214,6 +238,8 @@ Required fields:
 - `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="lastupdatetypedef"></a>
 
 ## LastUpdateTypeDef
 
@@ -228,6 +254,8 @@ Optional fields:
 - `Source`: `str`
 - `Status`: [UpdateStatusType](./literals.md#updatestatustype)
 
+<a id="listenvironmentsinputrequesttypedef"></a>
+
 ## ListEnvironmentsInputRequestTypeDef
 
 ```python
@@ -238,6 +266,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listenvironmentsoutputtypedef"></a>
 
 ## ListEnvironmentsOutputTypeDef
 
@@ -252,6 +282,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -261,6 +293,8 @@ from mypy_boto3_mwaa.type_defs import ListTagsForResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceoutputtypedef"></a>
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -273,6 +307,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="loggingconfigurationinputtypedef"></a>
 
 ## LoggingConfigurationInputTypeDef
 
@@ -293,6 +329,8 @@ Optional fields:
 - `WorkerLogs`:
   [ModuleLoggingConfigurationInputTypeDef](./type_defs.md#moduleloggingconfigurationinputtypedef)
 
+<a id="loggingconfigurationtypedef"></a>
+
 ## LoggingConfigurationTypeDef
 
 ```python
@@ -311,6 +349,8 @@ Optional fields:
   [ModuleLoggingConfigurationTypeDef](./type_defs.md#moduleloggingconfigurationtypedef)
 - `WorkerLogs`:
   [ModuleLoggingConfigurationTypeDef](./type_defs.md#moduleloggingconfigurationtypedef)
+
+<a id="metricdatumtypedef"></a>
 
 ## MetricDatumTypeDef
 
@@ -331,6 +371,8 @@ Optional fields:
 - `Unit`: [UnitType](./literals.md#unittype)
 - `Value`: `float`
 
+<a id="moduleloggingconfigurationinputtypedef"></a>
+
 ## ModuleLoggingConfigurationInputTypeDef
 
 ```python
@@ -341,6 +383,8 @@ Required fields:
 
 - `Enabled`: `bool`
 - `LogLevel`: [LoggingLevelType](./literals.md#loggingleveltype)
+
+<a id="moduleloggingconfigurationtypedef"></a>
 
 ## ModuleLoggingConfigurationTypeDef
 
@@ -354,6 +398,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `LogLevel`: [LoggingLevelType](./literals.md#loggingleveltype)
 
+<a id="networkconfigurationtypedef"></a>
+
 ## NetworkConfigurationTypeDef
 
 ```python
@@ -364,6 +410,8 @@ Optional fields:
 
 - `SecurityGroupIds`: `Sequence`\[`str`\]
 - `SubnetIds`: `Sequence`\[`str`\]
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -377,6 +425,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="publishmetricsinputrequesttypedef"></a>
+
 ## PublishMetricsInputRequestTypeDef
 
 ```python
@@ -388,6 +438,8 @@ Required fields:
 - `EnvironmentName`: `str`
 - `MetricData`:
   `Sequence`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -403,6 +455,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="statisticsettypedef"></a>
+
 ## StatisticSetTypeDef
 
 ```python
@@ -416,6 +470,8 @@ Optional fields:
 - `SampleCount`: `int`
 - `Sum`: `float`
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -427,6 +483,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -437,6 +495,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateenvironmentinputrequesttypedef"></a>
 
 ## UpdateEnvironmentInputRequestTypeDef
 
@@ -471,6 +531,8 @@ Optional fields:
   [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
 - `WeeklyMaintenanceWindowStart`: `str`
 
+<a id="updateenvironmentoutputtypedef"></a>
+
 ## UpdateEnvironmentOutputTypeDef
 
 ```python
@@ -483,6 +545,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateerrortypedef"></a>
+
 ## UpdateErrorTypeDef
 
 ```python
@@ -493,6 +557,8 @@ Optional fields:
 
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
+
+<a id="updatenetworkconfigurationinputtypedef"></a>
 
 ## UpdateNetworkConfigurationInputTypeDef
 

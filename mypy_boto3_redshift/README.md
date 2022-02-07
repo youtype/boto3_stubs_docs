@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-redshift-module"></a>
+
 # Type annotations for boto3 Redshift module
 
 > [Index](..) > Redshift
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
 type annotations stubs module
-[mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
+[mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[redshift]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[redshift]'
+
+# standalone installation
 pip install mypy-boto3-redshift
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-redshift
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="redshiftclient"></a>
+
 ## RedshiftClient
 
 Type annotations for `boto3.client("redshift")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_redshift.client import RedshiftClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -156,6 +170,8 @@ from mypy_boto3_redshift.client import RedshiftClient
 - [revoke_snapshot_access](./client.md#revoke_snapshot_access)
 - [rotate_encryption_key](./client.md#rotate_encryption_key)
 - [update_partner_status](./client.md#update_partner_status)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -289,6 +305,8 @@ RedshiftClient [exceptions](./client.md#exceptions)
 - UsageLimitAlreadyExistsFault
 - UsageLimitNotFoundFault
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -297,7 +315,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeClusterDbRevisionsPaginator, ...
+from mypy_boto3_redshift.paginator import DescribeClusterDbRevisionsPaginator, ...
 ```
 
 - [DescribeClusterDbRevisionsPaginator](./paginators.md#describeclusterdbrevisionspaginator)
@@ -333,6 +351,8 @@ from mypy_boto3_redshift.paginators import DescribeClusterDbRevisionsPaginator, 
 - [GetReservedNodeExchangeConfigurationOptionsPaginator](./paginators.md#getreservednodeexchangeconfigurationoptionspaginator)
 - [GetReservedNodeExchangeOfferingsPaginator](./paginators.md#getreservednodeexchangeofferingspaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -341,13 +361,15 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.waiters import ClusterAvailableWaiter, ...
+from mypy_boto3_redshift.waiter import ClusterAvailableWaiter, ...
 ```
 
 - [ClusterAvailableWaiter](./waiters.md#clusteravailablewaiter)
 - [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
 - [ClusterRestoredWaiter](./waiters.md#clusterrestoredwaiter)
 - [SnapshotAvailableWaiter](./waiters.md#snapshotavailablewaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -425,6 +447,8 @@ from mypy_boto3_redshift.literals import ActionTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

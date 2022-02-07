@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-kafkaconnect-module"></a>
+
 # Type annotations for boto3 KafkaConnect module
 
 > [Index](..) > KafkaConnect
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
 type annotations stubs module
-[mypy_boto3_kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
+[mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[kafkaconnect]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[kafkaconnect]'
+
+# standalone installation
 pip install mypy-boto3-kafkaconnect
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-kafkaconnect
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="kafkaconnectclient"></a>
+
 ## KafkaConnectClient
 
 Type annotations for `boto3.client("kafkaconnect")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_kafkaconnect.client import KafkaConnectClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -48,6 +62,8 @@ from mypy_boto3_kafkaconnect.client import KafkaConnectClient
 - [list_worker_configurations](./client.md#list_worker_configurations)
 - [update_connector](./client.md#update_connector)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 KafkaConnectClient [exceptions](./client.md#exceptions)
@@ -62,6 +78,8 @@ KafkaConnectClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - UnauthorizedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -70,12 +88,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_kafkaconnect.paginators import ListConnectorsPaginator, ...
+from mypy_boto3_kafkaconnect.paginator import ListConnectorsPaginator, ...
 ```
 
 - [ListConnectorsPaginator](./paginators.md#listconnectorspaginator)
 - [ListCustomPluginsPaginator](./paginators.md#listcustompluginspaginator)
 - [ListWorkerConfigurationsPaginator](./paginators.md#listworkerconfigurationspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -97,6 +117,8 @@ from mypy_boto3_kafkaconnect.literals import ConnectorStateType, ...
 - [ListWorkerConfigurationsPaginatorName](./literals.md#listworkerconfigurationspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

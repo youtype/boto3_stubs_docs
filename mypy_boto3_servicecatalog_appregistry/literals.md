@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-appregistry-module"></a>
+
 # Literals for boto3 AppRegistry module
 
 > [Index](..) > [AppRegistry](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
 type annotations stubs module
-[mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
+[mypy-boto3-servicecatalog-appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
 - [Literals for boto3 AppRegistry module](#literals-for-boto3-appregistry-module)
   - [ListApplicationsPaginatorName](#listapplicationspaginatorname)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="listapplicationspaginatorname"></a>
+
 ## ListApplicationsPaginatorName
 
 ```python
@@ -27,6 +31,8 @@ from mypy_boto3_servicecatalog_appregistry.literals import ListApplicationsPagin
 Values:
 
 - `list_applications`
+
+<a id="listassociatedattributegroupspaginatorname"></a>
 
 ## ListAssociatedAttributeGroupsPaginatorName
 
@@ -38,6 +44,8 @@ Values:
 
 - `list_associated_attribute_groups`
 
+<a id="listassociatedresourcespaginatorname"></a>
+
 ## ListAssociatedResourcesPaginatorName
 
 ```python
@@ -48,6 +56,8 @@ Values:
 
 - `list_associated_resources`
 
+<a id="listattributegroupspaginatorname"></a>
+
 ## ListAttributeGroupsPaginatorName
 
 ```python
@@ -57,6 +67,8 @@ from mypy_boto3_servicecatalog_appregistry.literals import ListAttributeGroupsPa
 Values:
 
 - `list_attribute_groups`
+
+<a id="resourcegroupstatetype"></a>
 
 ## ResourceGroupStateType
 
@@ -73,6 +85,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATING`
 
+<a id="resourcetypetype"></a>
+
 ## ResourceTypeType
 
 ```python
@@ -82,6 +96,8 @@ from mypy_boto3_servicecatalog_appregistry.literals import ResourceTypeType
 Values:
 
 - `CFN_STACK`
+
+<a id="syncactiontype"></a>
 
 ## SyncActionType
 
@@ -93,6 +109,8 @@ Values:
 
 - `NO_ACTION`
 - `START_SYNC`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -401,6 +419,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-ecr-module"></a>
+
 # Paginators for boto3 ECR module
 
 > [Index](..) > [ECR](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
 type annotations stubs module
-[mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
+[mypy-boto3-ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
 - [Paginators for boto3 ECR module](#paginators-for-boto3-ecr-module)
   - [DescribeImageScanFindingsPaginator](#describeimagescanfindingspaginator)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [GetLifecyclePolicyPreviewPaginator](#getlifecyclepolicypreviewpaginator)
   - [ListImagesPaginator](#listimagespaginator)
 
+<a id="describeimagescanfindingspaginator"></a>
+
 ## DescribeImageScanFindingsPaginator
 
 Type annotations for
@@ -23,10 +27,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecr.paginator import DescribeImageScanFindingsPaginator
 
 def get_describe_image_scan_findings_paginator() -> DescribeImageScanFindingsPaginator:
-    return boto3.client("ecr").get_paginator("describe_image_scan_findings")
+    return Session().client("ecr").get_paginator("describe_image_scan_findings")
 ```
 
 Boto3 documentation:
@@ -44,6 +50,8 @@ Arguments for `DescribeImageScanFindingsPaginator.paginate` method:
 `DescribeImageScanFindingsPaginator.paginate` returns
 `_PageIterator`\[[DescribeImageScanFindingsResponseTypeDef](./type_defs.md#describeimagescanfindingsresponsetypedef)\].
 
+<a id="describeimagespaginator"></a>
+
 ## DescribeImagesPaginator
 
 Type annotations for `boto3.client("ecr").get_paginator("describe_images")`.
@@ -51,10 +59,12 @@ Type annotations for `boto3.client("ecr").get_paginator("describe_images")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecr.paginator import DescribeImagesPaginator
 
 def get_describe_images_paginator() -> DescribeImagesPaginator:
-    return boto3.client("ecr").get_paginator("describe_images")
+    return Session().client("ecr").get_paginator("describe_images")
 ```
 
 Boto3 documentation:
@@ -74,6 +84,8 @@ Arguments for `DescribeImagesPaginator.paginate` method:
 `DescribeImagesPaginator.paginate` returns
 `_PageIterator`\[[DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef)\].
 
+<a id="describepullthroughcacherulespaginator"></a>
+
 ## DescribePullThroughCacheRulesPaginator
 
 Type annotations for
@@ -82,10 +94,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecr.paginator import DescribePullThroughCacheRulesPaginator
 
 def get_describe_pull_through_cache_rules_paginator() -> DescribePullThroughCacheRulesPaginator:
-    return boto3.client("ecr").get_paginator("describe_pull_through_cache_rules")
+    return Session().client("ecr").get_paginator("describe_pull_through_cache_rules")
 ```
 
 Boto3 documentation:
@@ -101,6 +115,8 @@ Arguments for `DescribePullThroughCacheRulesPaginator.paginate` method:
 `DescribePullThroughCacheRulesPaginator.paginate` returns
 `_PageIterator`\[[DescribePullThroughCacheRulesResponseTypeDef](./type_defs.md#describepullthroughcacherulesresponsetypedef)\].
 
+<a id="describerepositoriespaginator"></a>
+
 ## DescribeRepositoriesPaginator
 
 Type annotations for
@@ -109,10 +125,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecr.paginator import DescribeRepositoriesPaginator
 
 def get_describe_repositories_paginator() -> DescribeRepositoriesPaginator:
-    return boto3.client("ecr").get_paginator("describe_repositories")
+    return Session().client("ecr").get_paginator("describe_repositories")
 ```
 
 Boto3 documentation:
@@ -128,6 +146,8 @@ Arguments for `DescribeRepositoriesPaginator.paginate` method:
 `DescribeRepositoriesPaginator.paginate` returns
 `_PageIterator`\[[DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef)\].
 
+<a id="getlifecyclepolicypreviewpaginator"></a>
+
 ## GetLifecyclePolicyPreviewPaginator
 
 Type annotations for
@@ -136,10 +156,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecr.paginator import GetLifecyclePolicyPreviewPaginator
 
 def get_get_lifecycle_policy_preview_paginator() -> GetLifecyclePolicyPreviewPaginator:
-    return boto3.client("ecr").get_paginator("get_lifecycle_policy_preview")
+    return Session().client("ecr").get_paginator("get_lifecycle_policy_preview")
 ```
 
 Boto3 documentation:
@@ -159,6 +181,8 @@ Arguments for `GetLifecyclePolicyPreviewPaginator.paginate` method:
 `GetLifecyclePolicyPreviewPaginator.paginate` returns
 `_PageIterator`\[[GetLifecyclePolicyPreviewResponseTypeDef](./type_defs.md#getlifecyclepolicypreviewresponsetypedef)\].
 
+<a id="listimagespaginator"></a>
+
 ## ListImagesPaginator
 
 Type annotations for `boto3.client("ecr").get_paginator("list_images")`.
@@ -166,10 +190,12 @@ Type annotations for `boto3.client("ecr").get_paginator("list_images")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecr.paginator import ListImagesPaginator
 
 def get_list_images_paginator() -> ListImagesPaginator:
-    return boto3.client("ecr").get_paginator("list_images")
+    return Session().client("ecr").get_paginator("list_images")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-mediaconnect-module"></a>
+
 # Typed dictionaries for boto3 MediaConnect module
 
 > [Index](..) > [MediaConnect](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
-[mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
+[mypy-boto3-mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 - [Typed dictionaries for boto3 MediaConnect module](#typed-dictionaries-for-boto3-mediaconnect-module)
   - [AddFlowMediaStreamsRequestRequestTypeDef](#addflowmediastreamsrequestrequesttypedef)
@@ -110,6 +112,8 @@ type annotations stubs module
   - [VpcInterfaceTypeDef](#vpcinterfacetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="addflowmediastreamsrequestrequesttypedef"></a>
+
 ## AddFlowMediaStreamsRequestRequestTypeDef
 
 ```python
@@ -121,6 +125,8 @@ Required fields:
 - `FlowArn`: `str`
 - `MediaStreams`:
   `Sequence`\[[AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)\]
+
+<a id="addflowmediastreamsresponsetypedef"></a>
 
 ## AddFlowMediaStreamsResponseTypeDef
 
@@ -136,6 +142,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="addflowoutputsrequestrequesttypedef"></a>
+
 ## AddFlowOutputsRequestRequestTypeDef
 
 ```python
@@ -147,6 +155,8 @@ Required fields:
 - `FlowArn`: `str`
 - `Outputs`:
   `Sequence`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
+
+<a id="addflowoutputsresponsetypedef"></a>
 
 ## AddFlowOutputsResponseTypeDef
 
@@ -161,6 +171,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="addflowsourcesrequestrequesttypedef"></a>
+
 ## AddFlowSourcesRequestRequestTypeDef
 
 ```python
@@ -172,6 +184,8 @@ Required fields:
 - `FlowArn`: `str`
 - `Sources`:
   `Sequence`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
+
+<a id="addflowsourcesresponsetypedef"></a>
 
 ## AddFlowSourcesResponseTypeDef
 
@@ -186,6 +200,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="addflowvpcinterfacesrequestrequesttypedef"></a>
+
 ## AddFlowVpcInterfacesRequestRequestTypeDef
 
 ```python
@@ -197,6 +213,8 @@ Required fields:
 - `FlowArn`: `str`
 - `VpcInterfaces`:
   `Sequence`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
+
+<a id="addflowvpcinterfacesresponsetypedef"></a>
 
 ## AddFlowVpcInterfacesResponseTypeDef
 
@@ -211,6 +229,8 @@ Required fields:
   `List`\[[VpcInterfaceTypeDef](./type_defs.md#vpcinterfacetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="addmediastreamrequesttypedef"></a>
 
 ## AddMediaStreamRequestTypeDef
 
@@ -231,6 +251,8 @@ Optional fields:
 - `ClockRate`: `int`
 - `Description`: `str`
 - `VideoFormat`: `str`
+
+<a id="addoutputrequesttypedef"></a>
 
 ## AddOutputRequestTypeDef
 
@@ -261,6 +283,8 @@ Optional fields:
 - `VpcInterfaceAttachment`:
   [VpcInterfaceAttachmentTypeDef](./type_defs.md#vpcinterfaceattachmenttypedef)
 
+<a id="createflowrequestrequesttypedef"></a>
+
 ## CreateFlowRequestRequestTypeDef
 
 ```python
@@ -288,6 +312,8 @@ Optional fields:
 - `VpcInterfaces`:
   `Sequence`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
 
+<a id="createflowresponsetypedef"></a>
+
 ## CreateFlowResponseTypeDef
 
 ```python
@@ -300,6 +326,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteflowrequestrequesttypedef"></a>
+
 ## DeleteFlowRequestRequestTypeDef
 
 ```python
@@ -309,6 +337,8 @@ from mypy_boto3_mediaconnect.type_defs import DeleteFlowRequestRequestTypeDef
 Required fields:
 
 - `FlowArn`: `str`
+
+<a id="deleteflowresponsetypedef"></a>
 
 ## DeleteFlowResponseTypeDef
 
@@ -323,6 +353,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeflowrequestrequesttypedef"></a>
+
 ## DescribeFlowRequestRequestTypeDef
 
 ```python
@@ -332,6 +364,8 @@ from mypy_boto3_mediaconnect.type_defs import DescribeFlowRequestRequestTypeDef
 Required fields:
 
 - `FlowArn`: `str`
+
+<a id="describeflowresponsetypedef"></a>
 
 ## DescribeFlowResponseTypeDef
 
@@ -346,6 +380,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeofferingrequestrequesttypedef"></a>
+
 ## DescribeOfferingRequestRequestTypeDef
 
 ```python
@@ -355,6 +391,8 @@ from mypy_boto3_mediaconnect.type_defs import DescribeOfferingRequestRequestType
 Required fields:
 
 - `OfferingArn`: `str`
+
+<a id="describeofferingresponsetypedef"></a>
 
 ## DescribeOfferingResponseTypeDef
 
@@ -368,6 +406,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereservationrequestrequesttypedef"></a>
+
 ## DescribeReservationRequestRequestTypeDef
 
 ```python
@@ -377,6 +417,8 @@ from mypy_boto3_mediaconnect.type_defs import DescribeReservationRequestRequestT
 Required fields:
 
 - `ReservationArn`: `str`
+
+<a id="describereservationresponsetypedef"></a>
 
 ## DescribeReservationResponseTypeDef
 
@@ -389,6 +431,8 @@ Required fields:
 - `Reservation`: [ReservationTypeDef](./type_defs.md#reservationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="destinationconfigurationrequesttypedef"></a>
 
 ## DestinationConfigurationRequestTypeDef
 
@@ -403,6 +447,8 @@ Required fields:
 - `Interface`:
   [InterfaceRequestTypeDef](./type_defs.md#interfacerequesttypedef)
 
+<a id="destinationconfigurationtypedef"></a>
+
 ## DestinationConfigurationTypeDef
 
 ```python
@@ -416,6 +462,8 @@ Required fields:
 - `Interface`: [InterfaceTypeDef](./type_defs.md#interfacetypedef)
 - `OutboundIp`: `str`
 
+<a id="encodingparametersrequesttypedef"></a>
+
 ## EncodingParametersRequestTypeDef
 
 ```python
@@ -427,6 +475,8 @@ Required fields:
 - `CompressionFactor`: `float`
 - `EncoderProfile`: [EncoderProfileType](./literals.md#encoderprofiletype)
 
+<a id="encodingparameterstypedef"></a>
+
 ## EncodingParametersTypeDef
 
 ```python
@@ -437,6 +487,8 @@ Required fields:
 
 - `CompressionFactor`: `float`
 - `EncoderProfile`: [EncoderProfileType](./literals.md#encoderprofiletype)
+
+<a id="encryptiontypedef"></a>
 
 ## EncryptionTypeDef
 
@@ -459,6 +511,8 @@ Optional fields:
 - `SecretArn`: `str`
 - `Url`: `str`
 
+<a id="entitlementtypedef"></a>
+
 ## EntitlementTypeDef
 
 ```python
@@ -479,6 +533,8 @@ Optional fields:
 - `EntitlementStatus`:
   [EntitlementStatusType](./literals.md#entitlementstatustype)
 
+<a id="failoverconfigtypedef"></a>
+
 ## FailoverConfigTypeDef
 
 ```python
@@ -492,6 +548,8 @@ Optional fields:
 - `SourcePriority`:
   [SourcePriorityTypeDef](./type_defs.md#sourceprioritytypedef)
 - `State`: [StateType](./literals.md#statetype)
+
+<a id="flowtypedef"></a>
 
 ## FlowTypeDef
 
@@ -522,6 +580,8 @@ Optional fields:
 - `VpcInterfaces`:
   `List`\[[VpcInterfaceTypeDef](./type_defs.md#vpcinterfacetypedef)\]
 
+<a id="fmtprequesttypedef"></a>
+
 ## FmtpRequestTypeDef
 
 ```python
@@ -538,6 +598,8 @@ Optional fields:
 - `ScanMode`: [ScanModeType](./literals.md#scanmodetype)
 - `Tcs`: [TcsType](./literals.md#tcstype)
 
+<a id="fmtptypedef"></a>
+
 ## FmtpTypeDef
 
 ```python
@@ -553,6 +615,8 @@ Optional fields:
 - `Range`: [RangeType](./literals.md#rangetype)
 - `ScanMode`: [ScanModeType](./literals.md#scanmodetype)
 - `Tcs`: [TcsType](./literals.md#tcstype)
+
+<a id="grantentitlementrequesttypedef"></a>
 
 ## GrantEntitlementRequestTypeDef
 
@@ -573,6 +637,8 @@ Optional fields:
   [EntitlementStatusType](./literals.md#entitlementstatustype)
 - `Name`: `str`
 
+<a id="grantflowentitlementsrequestrequesttypedef"></a>
+
 ## GrantFlowEntitlementsRequestRequestTypeDef
 
 ```python
@@ -584,6 +650,8 @@ Required fields:
 - `Entitlements`:
   `Sequence`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
 - `FlowArn`: `str`
+
+<a id="grantflowentitlementsresponsetypedef"></a>
 
 ## GrantFlowEntitlementsResponseTypeDef
 
@@ -599,6 +667,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="inputconfigurationrequesttypedef"></a>
+
 ## InputConfigurationRequestTypeDef
 
 ```python
@@ -610,6 +680,8 @@ Required fields:
 - `InputPort`: `int`
 - `Interface`:
   [InterfaceRequestTypeDef](./type_defs.md#interfacerequesttypedef)
+
+<a id="inputconfigurationtypedef"></a>
 
 ## InputConfigurationTypeDef
 
@@ -623,6 +695,8 @@ Required fields:
 - `InputPort`: `int`
 - `Interface`: [InterfaceTypeDef](./type_defs.md#interfacetypedef)
 
+<a id="interfacerequesttypedef"></a>
+
 ## InterfaceRequestTypeDef
 
 ```python
@@ -632,6 +706,8 @@ from mypy_boto3_mediaconnect.type_defs import InterfaceRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="interfacetypedef"></a>
 
 ## InterfaceTypeDef
 
@@ -643,6 +719,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="listentitlementsrequestrequesttypedef"></a>
+
 ## ListEntitlementsRequestRequestTypeDef
 
 ```python
@@ -653,6 +731,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listentitlementsresponsetypedef"></a>
 
 ## ListEntitlementsResponseTypeDef
 
@@ -668,6 +748,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listflowsrequestrequesttypedef"></a>
+
 ## ListFlowsRequestRequestTypeDef
 
 ```python
@@ -678,6 +760,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listflowsresponsetypedef"></a>
 
 ## ListFlowsResponseTypeDef
 
@@ -692,6 +776,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listofferingsrequestrequesttypedef"></a>
+
 ## ListOfferingsRequestRequestTypeDef
 
 ```python
@@ -702,6 +788,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listofferingsresponsetypedef"></a>
 
 ## ListOfferingsResponseTypeDef
 
@@ -716,6 +804,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listreservationsrequestrequesttypedef"></a>
+
 ## ListReservationsRequestRequestTypeDef
 
 ```python
@@ -726,6 +816,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listreservationsresponsetypedef"></a>
 
 ## ListReservationsResponseTypeDef
 
@@ -741,6 +833,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -750,6 +844,8 @@ from mypy_boto3_mediaconnect.type_defs import ListTagsForResourceRequestRequestT
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -762,6 +858,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listedentitlementtypedef"></a>
 
 ## ListedEntitlementTypeDef
 
@@ -778,6 +876,8 @@ Optional fields:
 
 - `DataTransferSubscriberFeePercent`: `int`
 
+<a id="listedflowtypedef"></a>
+
 ## ListedFlowTypeDef
 
 ```python
@@ -793,6 +893,8 @@ Required fields:
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Status`: [StatusType](./literals.md#statustype)
 
+<a id="mediastreamattributesrequesttypedef"></a>
+
 ## MediaStreamAttributesRequestTypeDef
 
 ```python
@@ -803,6 +905,8 @@ Optional fields:
 
 - `Fmtp`: [FmtpRequestTypeDef](./type_defs.md#fmtprequesttypedef)
 - `Lang`: `str`
+
+<a id="mediastreamattributestypedef"></a>
 
 ## MediaStreamAttributesTypeDef
 
@@ -817,6 +921,8 @@ Required fields:
 Optional fields:
 
 - `Lang`: `str`
+
+<a id="mediastreamoutputconfigurationrequesttypedef"></a>
 
 ## MediaStreamOutputConfigurationRequestTypeDef
 
@@ -836,6 +942,8 @@ Optional fields:
 - `EncodingParameters`:
   [EncodingParametersRequestTypeDef](./type_defs.md#encodingparametersrequesttypedef)
 
+<a id="mediastreamoutputconfigurationtypedef"></a>
+
 ## MediaStreamOutputConfigurationTypeDef
 
 ```python
@@ -854,6 +962,8 @@ Optional fields:
 - `EncodingParameters`:
   [EncodingParametersTypeDef](./type_defs.md#encodingparameterstypedef)
 
+<a id="mediastreamsourceconfigurationrequesttypedef"></a>
+
 ## MediaStreamSourceConfigurationRequestTypeDef
 
 ```python
@@ -870,6 +980,8 @@ Optional fields:
 - `InputConfigurations`:
   `Sequence`\[[InputConfigurationRequestTypeDef](./type_defs.md#inputconfigurationrequesttypedef)\]
 
+<a id="mediastreamsourceconfigurationtypedef"></a>
+
 ## MediaStreamSourceConfigurationTypeDef
 
 ```python
@@ -885,6 +997,8 @@ Optional fields:
 
 - `InputConfigurations`:
   `List`\[[InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)\]
+
+<a id="mediastreamtypedef"></a>
 
 ## MediaStreamTypeDef
 
@@ -907,6 +1021,8 @@ Optional fields:
 - `Description`: `str`
 - `VideoFormat`: `str`
 
+<a id="messagestypedef"></a>
+
 ## MessagesTypeDef
 
 ```python
@@ -916,6 +1032,8 @@ from mypy_boto3_mediaconnect.type_defs import MessagesTypeDef
 Required fields:
 
 - `Errors`: `List`\[`str`\]
+
+<a id="offeringtypedef"></a>
 
 ## OfferingTypeDef
 
@@ -936,6 +1054,8 @@ Required fields:
   [PriceUnitsType](./literals.md#priceunitstype))
 - `ResourceSpecification`:
   [ResourceSpecificationTypeDef](./type_defs.md#resourcespecificationtypedef)
+
+<a id="outputtypedef"></a>
 
 ## OutputTypeDef
 
@@ -964,6 +1084,8 @@ Optional fields:
 - `VpcInterfaceAttachment`:
   [VpcInterfaceAttachmentTypeDef](./type_defs.md#vpcinterfaceattachmenttypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -975,6 +1097,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="purchaseofferingrequestrequesttypedef"></a>
 
 ## PurchaseOfferingRequestRequestTypeDef
 
@@ -988,6 +1112,8 @@ Required fields:
 - `ReservationName`: `str`
 - `Start`: `str`
 
+<a id="purchaseofferingresponsetypedef"></a>
+
 ## PurchaseOfferingResponseTypeDef
 
 ```python
@@ -1000,6 +1126,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removeflowmediastreamrequestrequesttypedef"></a>
+
 ## RemoveFlowMediaStreamRequestRequestTypeDef
 
 ```python
@@ -1010,6 +1138,8 @@ Required fields:
 
 - `FlowArn`: `str`
 - `MediaStreamName`: `str`
+
+<a id="removeflowmediastreamresponsetypedef"></a>
 
 ## RemoveFlowMediaStreamResponseTypeDef
 
@@ -1024,6 +1154,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removeflowoutputrequestrequesttypedef"></a>
+
 ## RemoveFlowOutputRequestRequestTypeDef
 
 ```python
@@ -1034,6 +1166,8 @@ Required fields:
 
 - `FlowArn`: `str`
 - `OutputArn`: `str`
+
+<a id="removeflowoutputresponsetypedef"></a>
 
 ## RemoveFlowOutputResponseTypeDef
 
@@ -1048,6 +1182,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removeflowsourcerequestrequesttypedef"></a>
+
 ## RemoveFlowSourceRequestRequestTypeDef
 
 ```python
@@ -1058,6 +1194,8 @@ Required fields:
 
 - `FlowArn`: `str`
 - `SourceArn`: `str`
+
+<a id="removeflowsourceresponsetypedef"></a>
 
 ## RemoveFlowSourceResponseTypeDef
 
@@ -1072,6 +1210,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removeflowvpcinterfacerequestrequesttypedef"></a>
+
 ## RemoveFlowVpcInterfaceRequestRequestTypeDef
 
 ```python
@@ -1082,6 +1222,8 @@ Required fields:
 
 - `FlowArn`: `str`
 - `VpcInterfaceName`: `str`
+
+<a id="removeflowvpcinterfaceresponsetypedef"></a>
 
 ## RemoveFlowVpcInterfaceResponseTypeDef
 
@@ -1096,6 +1238,8 @@ Required fields:
 - `VpcInterfaceName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="reservationtypedef"></a>
 
 ## ReservationTypeDef
 
@@ -1123,6 +1267,8 @@ Required fields:
   [ResourceSpecificationTypeDef](./type_defs.md#resourcespecificationtypedef)
 - `Start`: `str`
 
+<a id="resourcespecificationtypedef"></a>
+
 ## ResourceSpecificationTypeDef
 
 ```python
@@ -1138,6 +1284,8 @@ Optional fields:
 
 - `ReservedBitrate`: `int`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1152,6 +1300,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="revokeflowentitlementrequestrequesttypedef"></a>
+
 ## RevokeFlowEntitlementRequestRequestTypeDef
 
 ```python
@@ -1162,6 +1312,8 @@ Required fields:
 
 - `EntitlementArn`: `str`
 - `FlowArn`: `str`
+
+<a id="revokeflowentitlementresponsetypedef"></a>
 
 ## RevokeFlowEntitlementResponseTypeDef
 
@@ -1175,6 +1327,8 @@ Required fields:
 - `FlowArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="setsourcerequesttypedef"></a>
 
 ## SetSourceRequestTypeDef
 
@@ -1202,6 +1356,8 @@ Optional fields:
 - `VpcInterfaceName`: `str`
 - `WhitelistCidr`: `str`
 
+<a id="sourceprioritytypedef"></a>
+
 ## SourcePriorityTypeDef
 
 ```python
@@ -1211,6 +1367,8 @@ from mypy_boto3_mediaconnect.type_defs import SourcePriorityTypeDef
 Optional fields:
 
 - `PrimarySource`: `str`
+
+<a id="sourcetypedef"></a>
 
 ## SourceTypeDef
 
@@ -1239,6 +1397,8 @@ Optional fields:
 - `VpcInterfaceName`: `str`
 - `WhitelistCidr`: `str`
 
+<a id="startflowrequestrequesttypedef"></a>
+
 ## StartFlowRequestRequestTypeDef
 
 ```python
@@ -1248,6 +1408,8 @@ from mypy_boto3_mediaconnect.type_defs import StartFlowRequestRequestTypeDef
 Required fields:
 
 - `FlowArn`: `str`
+
+<a id="startflowresponsetypedef"></a>
 
 ## StartFlowResponseTypeDef
 
@@ -1262,6 +1424,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopflowrequestrequesttypedef"></a>
+
 ## StopFlowRequestRequestTypeDef
 
 ```python
@@ -1271,6 +1435,8 @@ from mypy_boto3_mediaconnect.type_defs import StopFlowRequestRequestTypeDef
 Required fields:
 
 - `FlowArn`: `str`
+
+<a id="stopflowresponsetypedef"></a>
 
 ## StopFlowResponseTypeDef
 
@@ -1285,6 +1451,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1295,6 +1463,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="transporttypedef"></a>
 
 ## TransportTypeDef
 
@@ -1319,6 +1489,8 @@ Optional fields:
 - `SmoothingLatency`: `int`
 - `StreamId`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1329,6 +1501,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateencryptiontypedef"></a>
 
 ## UpdateEncryptionTypeDef
 
@@ -1348,6 +1522,8 @@ Optional fields:
 - `SecretArn`: `str`
 - `Url`: `str`
 
+<a id="updatefailoverconfigtypedef"></a>
+
 ## UpdateFailoverConfigTypeDef
 
 ```python
@@ -1361,6 +1537,8 @@ Optional fields:
 - `SourcePriority`:
   [SourcePriorityTypeDef](./type_defs.md#sourceprioritytypedef)
 - `State`: [StateType](./literals.md#statetype)
+
+<a id="updateflowentitlementrequestrequesttypedef"></a>
 
 ## UpdateFlowEntitlementRequestRequestTypeDef
 
@@ -1382,6 +1560,8 @@ Optional fields:
   [EntitlementStatusType](./literals.md#entitlementstatustype)
 - `Subscribers`: `Sequence`\[`str`\]
 
+<a id="updateflowentitlementresponsetypedef"></a>
+
 ## UpdateFlowEntitlementResponseTypeDef
 
 ```python
@@ -1394,6 +1574,8 @@ Required fields:
 - `FlowArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateflowmediastreamrequestrequesttypedef"></a>
 
 ## UpdateFlowMediaStreamRequestRequestTypeDef
 
@@ -1415,6 +1597,8 @@ Optional fields:
 - `MediaStreamType`: [MediaStreamTypeType](./literals.md#mediastreamtypetype)
 - `VideoFormat`: `str`
 
+<a id="updateflowmediastreamresponsetypedef"></a>
+
 ## UpdateFlowMediaStreamResponseTypeDef
 
 ```python
@@ -1427,6 +1611,8 @@ Required fields:
 - `MediaStream`: [MediaStreamTypeDef](./type_defs.md#mediastreamtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateflowoutputrequestrequesttypedef"></a>
 
 ## UpdateFlowOutputRequestRequestTypeDef
 
@@ -1460,6 +1646,8 @@ Optional fields:
 - `VpcInterfaceAttachment`:
   [VpcInterfaceAttachmentTypeDef](./type_defs.md#vpcinterfaceattachmenttypedef)
 
+<a id="updateflowoutputresponsetypedef"></a>
+
 ## UpdateFlowOutputResponseTypeDef
 
 ```python
@@ -1472,6 +1660,8 @@ Required fields:
 - `Output`: [OutputTypeDef](./type_defs.md#outputtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateflowrequestrequesttypedef"></a>
 
 ## UpdateFlowRequestRequestTypeDef
 
@@ -1488,6 +1678,8 @@ Optional fields:
 - `SourceFailoverConfig`:
   [UpdateFailoverConfigTypeDef](./type_defs.md#updatefailoverconfigtypedef)
 
+<a id="updateflowresponsetypedef"></a>
+
 ## UpdateFlowResponseTypeDef
 
 ```python
@@ -1499,6 +1691,8 @@ Required fields:
 - `Flow`: [FlowTypeDef](./type_defs.md#flowtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateflowsourcerequestrequesttypedef"></a>
 
 ## UpdateFlowSourceRequestRequestTypeDef
 
@@ -1531,6 +1725,8 @@ Optional fields:
 - `VpcInterfaceName`: `str`
 - `WhitelistCidr`: `str`
 
+<a id="updateflowsourceresponsetypedef"></a>
+
 ## UpdateFlowSourceResponseTypeDef
 
 ```python
@@ -1544,6 +1740,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="vpcinterfaceattachmenttypedef"></a>
+
 ## VpcInterfaceAttachmentTypeDef
 
 ```python
@@ -1553,6 +1751,8 @@ from mypy_boto3_mediaconnect.type_defs import VpcInterfaceAttachmentTypeDef
 Optional fields:
 
 - `VpcInterfaceName`: `str`
+
+<a id="vpcinterfacerequesttypedef"></a>
 
 ## VpcInterfaceRequestTypeDef
 
@@ -1572,6 +1772,8 @@ Optional fields:
 - `NetworkInterfaceType`:
   [NetworkInterfaceTypeType](./literals.md#networkinterfacetypetype)
 
+<a id="vpcinterfacetypedef"></a>
+
 ## VpcInterfaceTypeDef
 
 ```python
@@ -1587,6 +1789,8 @@ Required fields:
 - `RoleArn`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 - `SubnetId`: `str`
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

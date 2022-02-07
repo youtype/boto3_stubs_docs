@@ -1,3 +1,5 @@
+<a id="sagemakerfeaturestoreruntimeclient-for-boto3-sagemakerfeaturestoreruntime-module"></a>
+
 # SageMakerFeatureStoreRuntimeClient for boto3 SageMakerFeatureStoreRuntime module
 
 > [Index](..) > [SageMakerFeatureStoreRuntime](.) >
@@ -6,7 +8,7 @@
 Auto-generated documentation for
 [SageMakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime)
 type annotations stubs module
-[mypy_boto3_sagemaker_featurestore_runtime](https://pypi.org/project/mypy-boto3-sagemaker-featurestore-runtime/).
+[mypy-boto3-sagemaker-featurestore-runtime](https://pypi.org/project/mypy-boto3-sagemaker-featurestore-runtime/).
 
 - [SageMakerFeatureStoreRuntimeClient for boto3 SageMakerFeatureStoreRuntime module](#sagemakerfeaturestoreruntimeclient-for-boto3-sagemakerfeaturestoreruntime-module)
   - [SageMakerFeatureStoreRuntimeClient](#sagemakerfeaturestoreruntimeclient)
@@ -20,6 +22,8 @@ type annotations stubs module
     - [get_record](#get_record)
     - [put_record](#put_record)
 
+<a id="sagemakerfeaturestoreruntimeclient"></a>
+
 ## SageMakerFeatureStoreRuntimeClient
 
 Type annotations for `boto3.client("sagemaker-featurestore-runtime")`
@@ -27,14 +31,17 @@ Type annotations for `boto3.client("sagemaker-featurestore-runtime")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sagemaker_featurestore_runtime.client import SageMakerFeatureStoreRuntimeClient
 
 def get_sagemaker-featurestore-runtime_client() -> SageMakerFeatureStoreRuntimeClient:
-    return boto3.client("sagemaker-featurestore-runtime")
+    return Session().client("sagemaker-featurestore-runtime")
 ```
 
 Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -57,7 +64,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailable`
 - `Exceptions.ValidationError`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -70,6 +81,8 @@ Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_get_record"></a>
 
 ### batch_get_record
 
@@ -93,6 +106,8 @@ Keyword-only arguments:
 Returns
 [BatchGetRecordResponseTypeDef](./type_defs.md#batchgetrecordresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -108,6 +123,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_record"></a>
 
 ### delete_record
 
@@ -128,6 +145,8 @@ Keyword-only arguments:
 - `RecordIdentifierValueAsString`: `str` *(required)*
 - `EventTime`: `str` *(required)*
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -146,6 +165,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_record"></a>
 
 ### get_record
 
@@ -167,6 +188,8 @@ Keyword-only arguments:
 - `FeatureNames`: `Sequence`\[`str`\]
 
 Returns [GetRecordResponseTypeDef](./type_defs.md#getrecordresponsetypedef).
+
+<a id="put_record"></a>
 
 ### put_record
 

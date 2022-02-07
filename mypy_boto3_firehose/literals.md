@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-firehose-module"></a>
+
 # Literals for boto3 Firehose module
 
 > [Index](..) > [Firehose](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
 type annotations stubs module
-[mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
+[mypy-boto3-firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 - [Literals for boto3 Firehose module](#literals-for-boto3-firehose-module)
   - [AmazonopensearchserviceIndexRotationPeriodType](#amazonopensearchserviceindexrotationperiodtype)
@@ -33,6 +35,8 @@ type annotations stubs module
   - [SplunkS3BackupModeType](#splunks3backupmodetype)
   - [ServiceName](#servicename)
 
+<a id="amazonopensearchserviceindexrotationperiodtype"></a>
+
 ## AmazonopensearchserviceIndexRotationPeriodType
 
 ```python
@@ -47,6 +51,8 @@ Values:
 - `OneMonth`
 - `OneWeek`
 
+<a id="amazonopensearchservices3backupmodetype"></a>
+
 ## AmazonopensearchserviceS3BackupModeType
 
 ```python
@@ -57,6 +63,8 @@ Values:
 
 - `AllDocuments`
 - `FailedDocumentsOnly`
+
+<a id="compressionformattype"></a>
 
 ## CompressionFormatType
 
@@ -72,6 +80,8 @@ Values:
 - `UNCOMPRESSED`
 - `ZIP`
 
+<a id="contentencodingtype"></a>
+
 ## ContentEncodingType
 
 ```python
@@ -82,6 +92,8 @@ Values:
 
 - `GZIP`
 - `NONE`
+
+<a id="deliverystreamencryptionstatustype"></a>
 
 ## DeliveryStreamEncryptionStatusType
 
@@ -97,6 +109,8 @@ Values:
 - `ENABLED`
 - `ENABLING`
 - `ENABLING_FAILED`
+
+<a id="deliverystreamfailuretypetype"></a>
 
 ## DeliveryStreamFailureTypeType
 
@@ -122,6 +136,8 @@ Values:
 - `SUBNET_NOT_FOUND`
 - `UNKNOWN_ERROR`
 
+<a id="deliverystreamstatustype"></a>
+
 ## DeliveryStreamStatusType
 
 ```python
@@ -136,6 +152,8 @@ Values:
 - `DELETING`
 - `DELETING_FAILED`
 
+<a id="deliverystreamtypetype"></a>
+
 ## DeliveryStreamTypeType
 
 ```python
@@ -146,6 +164,8 @@ Values:
 
 - `DirectPut`
 - `KinesisStreamAsSource`
+
+<a id="elasticsearchindexrotationperiodtype"></a>
 
 ## ElasticsearchIndexRotationPeriodType
 
@@ -161,6 +181,8 @@ Values:
 - `OneMonth`
 - `OneWeek`
 
+<a id="elasticsearchs3backupmodetype"></a>
+
 ## ElasticsearchS3BackupModeType
 
 ```python
@@ -171,6 +193,8 @@ Values:
 
 - `AllDocuments`
 - `FailedDocumentsOnly`
+
+<a id="hecendpointtypetype"></a>
 
 ## HECEndpointTypeType
 
@@ -183,6 +207,8 @@ Values:
 - `Event`
 - `Raw`
 
+<a id="httpendpoints3backupmodetype"></a>
+
 ## HttpEndpointS3BackupModeType
 
 ```python
@@ -193,6 +219,8 @@ Values:
 
 - `AllData`
 - `FailedDataOnly`
+
+<a id="keytypetype"></a>
 
 ## KeyTypeType
 
@@ -205,6 +233,8 @@ Values:
 - `AWS_OWNED_CMK`
 - `CUSTOMER_MANAGED_CMK`
 
+<a id="noencryptionconfigtype"></a>
+
 ## NoEncryptionConfigType
 
 ```python
@@ -214,6 +244,8 @@ from mypy_boto3_firehose.literals import NoEncryptionConfigType
 Values:
 
 - `NoEncryption`
+
+<a id="orccompressiontype"></a>
 
 ## OrcCompressionType
 
@@ -227,6 +259,8 @@ Values:
 - `SNAPPY`
 - `ZLIB`
 
+<a id="orcformatversiontype"></a>
+
 ## OrcFormatVersionType
 
 ```python
@@ -237,6 +271,8 @@ Values:
 
 - `V0_11`
 - `V0_12`
+
+<a id="parquetcompressiontype"></a>
 
 ## ParquetCompressionType
 
@@ -250,6 +286,8 @@ Values:
 - `SNAPPY`
 - `UNCOMPRESSED`
 
+<a id="parquetwriterversiontype"></a>
+
 ## ParquetWriterVersionType
 
 ```python
@@ -260,6 +298,8 @@ Values:
 
 - `V1`
 - `V2`
+
+<a id="processorparameternametype"></a>
 
 ## ProcessorParameterNameType
 
@@ -279,6 +319,8 @@ Values:
 - `RoleArn`
 - `SubRecordType`
 
+<a id="processortypetype"></a>
+
 ## ProcessorTypeType
 
 ```python
@@ -292,6 +334,8 @@ Values:
 - `MetadataExtraction`
 - `RecordDeAggregation`
 
+<a id="redshifts3backupmodetype"></a>
+
 ## RedshiftS3BackupModeType
 
 ```python
@@ -302,6 +346,8 @@ Values:
 
 - `Disabled`
 - `Enabled`
+
+<a id="s3backupmodetype"></a>
 
 ## S3BackupModeType
 
@@ -314,6 +360,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="splunks3backupmodetype"></a>
+
 ## SplunkS3BackupModeType
 
 ```python
@@ -324,6 +372,8 @@ Values:
 
 - `AllEvents`
 - `FailedEventsOnly`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

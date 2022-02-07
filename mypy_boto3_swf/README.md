@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-swf-module"></a>
+
 # Type annotations for boto3 SWF module
 
 > [Index](..) > SWF
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
 type annotations stubs module
-[mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
+[mypy-boto3-swf](https://pypi.org/project/mypy-boto3-swf/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[swf]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[swf]'
+
+# standalone installation
 pip install mypy-boto3-swf
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-swf
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="swfclient"></a>
+
 ## SWFClient
 
 Type annotations for `boto3.client("swf")` as [SWFClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_swf.client import SWFClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -73,6 +87,8 @@ from mypy_boto3_swf.client import SWFClient
 - [undeprecate_workflow_type](./client.md#undeprecate_workflow_type)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SWFClient [exceptions](./client.md#exceptions)
@@ -89,6 +105,8 @@ SWFClient [exceptions](./client.md#exceptions)
 - UnknownResourceFault
 - WorkflowExecutionAlreadyStartedFault
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -97,7 +115,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_swf.paginators import GetWorkflowExecutionHistoryPaginator, ...
+from mypy_boto3_swf.paginator import GetWorkflowExecutionHistoryPaginator, ...
 ```
 
 - [GetWorkflowExecutionHistoryPaginator](./paginators.md#getworkflowexecutionhistorypaginator)
@@ -107,6 +125,8 @@ from mypy_boto3_swf.paginators import GetWorkflowExecutionHistoryPaginator, ...
 - [ListOpenWorkflowExecutionsPaginator](./paginators.md#listopenworkflowexecutionspaginator)
 - [ListWorkflowTypesPaginator](./paginators.md#listworkflowtypespaginator)
 - [PollForDecisionTaskPaginator](./paginators.md#pollfordecisiontaskpaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -153,6 +173,8 @@ from mypy_boto3_swf.literals import ActivityTaskTimeoutTypeType, ...
 - [WorkflowExecutionTimeoutTypeType](./literals.md#workflowexecutiontimeouttypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

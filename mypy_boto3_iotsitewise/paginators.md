@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-iotsitewise-module"></a>
+
 # Paginators for boto3 IoTSiteWise module
 
 > [Index](..) > [IoTSiteWise](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module
-[mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+[mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 - [Paginators for boto3 IoTSiteWise module](#paginators-for-boto3-iotsitewise-module)
   - [GetAssetPropertyAggregatesPaginator](#getassetpropertyaggregatespaginator)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [ListProjectsPaginator](#listprojectspaginator)
   - [ListTimeSeriesPaginator](#listtimeseriespaginator)
 
+<a id="getassetpropertyaggregatespaginator"></a>
+
 ## GetAssetPropertyAggregatesPaginator
 
 Type annotations for
@@ -31,10 +35,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import GetAssetPropertyAggregatesPaginator
 
 def get_get_asset_property_aggregates_paginator() -> GetAssetPropertyAggregatesPaginator:
-    return boto3.client("iotsitewise").get_paginator("get_asset_property_aggregates")
+    return Session().client("iotsitewise").get_paginator("get_asset_property_aggregates")
 ```
 
 Boto3 documentation:
@@ -59,6 +65,8 @@ Arguments for `GetAssetPropertyAggregatesPaginator.paginate` method:
 `GetAssetPropertyAggregatesPaginator.paginate` returns
 `_PageIterator`\[[GetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponsetypedef)\].
 
+<a id="getassetpropertyvaluehistorypaginator"></a>
+
 ## GetAssetPropertyValueHistoryPaginator
 
 Type annotations for
@@ -67,10 +75,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import GetAssetPropertyValueHistoryPaginator
 
 def get_get_asset_property_value_history_paginator() -> GetAssetPropertyValueHistoryPaginator:
-    return boto3.client("iotsitewise").get_paginator("get_asset_property_value_history")
+    return Session().client("iotsitewise").get_paginator("get_asset_property_value_history")
 ```
 
 Boto3 documentation:
@@ -91,6 +101,8 @@ Arguments for `GetAssetPropertyValueHistoryPaginator.paginate` method:
 `GetAssetPropertyValueHistoryPaginator.paginate` returns
 `_PageIterator`\[[GetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponsetypedef)\].
 
+<a id="getinterpolatedassetpropertyvaluespaginator"></a>
+
 ## GetInterpolatedAssetPropertyValuesPaginator
 
 Type annotations for
@@ -99,10 +111,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import GetInterpolatedAssetPropertyValuesPaginator
 
 def get_get_interpolated_asset_property_values_paginator() -> GetInterpolatedAssetPropertyValuesPaginator:
-    return boto3.client("iotsitewise").get_paginator("get_interpolated_asset_property_values")
+    return Session().client("iotsitewise").get_paginator("get_interpolated_asset_property_values")
 ```
 
 Boto3 documentation:
@@ -127,6 +141,8 @@ Arguments for `GetInterpolatedAssetPropertyValuesPaginator.paginate` method:
 `GetInterpolatedAssetPropertyValuesPaginator.paginate` returns
 `_PageIterator`\[[GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef)\].
 
+<a id="listaccesspoliciespaginator"></a>
+
 ## ListAccessPoliciesPaginator
 
 Type annotations for
@@ -135,10 +151,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import ListAccessPoliciesPaginator
 
 def get_list_access_policies_paginator() -> ListAccessPoliciesPaginator:
-    return boto3.client("iotsitewise").get_paginator("list_access_policies")
+    return Session().client("iotsitewise").get_paginator("list_access_policies")
 ```
 
 Boto3 documentation:
@@ -157,6 +175,8 @@ Arguments for `ListAccessPoliciesPaginator.paginate` method:
 `ListAccessPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListAccessPoliciesResponseTypeDef](./type_defs.md#listaccesspoliciesresponsetypedef)\].
 
+<a id="listassetmodelspaginator"></a>
+
 ## ListAssetModelsPaginator
 
 Type annotations for
@@ -165,10 +185,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import ListAssetModelsPaginator
 
 def get_list_asset_models_paginator() -> ListAssetModelsPaginator:
-    return boto3.client("iotsitewise").get_paginator("list_asset_models")
+    return Session().client("iotsitewise").get_paginator("list_asset_models")
 ```
 
 Boto3 documentation:
@@ -182,6 +204,8 @@ Arguments for `ListAssetModelsPaginator.paginate` method:
 `ListAssetModelsPaginator.paginate` returns
 `_PageIterator`\[[ListAssetModelsResponseTypeDef](./type_defs.md#listassetmodelsresponsetypedef)\].
 
+<a id="listassetrelationshipspaginator"></a>
+
 ## ListAssetRelationshipsPaginator
 
 Type annotations for
@@ -190,10 +214,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import ListAssetRelationshipsPaginator
 
 def get_list_asset_relationships_paginator() -> ListAssetRelationshipsPaginator:
-    return boto3.client("iotsitewise").get_paginator("list_asset_relationships")
+    return Session().client("iotsitewise").get_paginator("list_asset_relationships")
 ```
 
 Boto3 documentation:
@@ -210,6 +236,8 @@ Arguments for `ListAssetRelationshipsPaginator.paginate` method:
 `ListAssetRelationshipsPaginator.paginate` returns
 `_PageIterator`\[[ListAssetRelationshipsResponseTypeDef](./type_defs.md#listassetrelationshipsresponsetypedef)\].
 
+<a id="listassetspaginator"></a>
+
 ## ListAssetsPaginator
 
 Type annotations for
@@ -218,10 +246,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import ListAssetsPaginator
 
 def get_list_assets_paginator() -> ListAssetsPaginator:
-    return boto3.client("iotsitewise").get_paginator("list_assets")
+    return Session().client("iotsitewise").get_paginator("list_assets")
 ```
 
 Boto3 documentation:
@@ -237,6 +267,8 @@ Arguments for `ListAssetsPaginator.paginate` method:
 `ListAssetsPaginator.paginate` returns
 `_PageIterator`\[[ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef)\].
 
+<a id="listassociatedassetspaginator"></a>
+
 ## ListAssociatedAssetsPaginator
 
 Type annotations for
@@ -245,10 +277,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import ListAssociatedAssetsPaginator
 
 def get_list_associated_assets_paginator() -> ListAssociatedAssetsPaginator:
-    return boto3.client("iotsitewise").get_paginator("list_associated_assets")
+    return Session().client("iotsitewise").get_paginator("list_associated_assets")
 ```
 
 Boto3 documentation:
@@ -266,6 +300,8 @@ Arguments for `ListAssociatedAssetsPaginator.paginate` method:
 `ListAssociatedAssetsPaginator.paginate` returns
 `_PageIterator`\[[ListAssociatedAssetsResponseTypeDef](./type_defs.md#listassociatedassetsresponsetypedef)\].
 
+<a id="listdashboardspaginator"></a>
+
 ## ListDashboardsPaginator
 
 Type annotations for
@@ -274,10 +310,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import ListDashboardsPaginator
 
 def get_list_dashboards_paginator() -> ListDashboardsPaginator:
-    return boto3.client("iotsitewise").get_paginator("list_dashboards")
+    return Session().client("iotsitewise").get_paginator("list_dashboards")
 ```
 
 Boto3 documentation:
@@ -292,6 +330,8 @@ Arguments for `ListDashboardsPaginator.paginate` method:
 `ListDashboardsPaginator.paginate` returns
 `_PageIterator`\[[ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef)\].
 
+<a id="listgatewayspaginator"></a>
+
 ## ListGatewaysPaginator
 
 Type annotations for
@@ -300,10 +340,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import ListGatewaysPaginator
 
 def get_list_gateways_paginator() -> ListGatewaysPaginator:
-    return boto3.client("iotsitewise").get_paginator("list_gateways")
+    return Session().client("iotsitewise").get_paginator("list_gateways")
 ```
 
 Boto3 documentation:
@@ -317,6 +359,8 @@ Arguments for `ListGatewaysPaginator.paginate` method:
 `ListGatewaysPaginator.paginate` returns
 `_PageIterator`\[[ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef)\].
 
+<a id="listportalspaginator"></a>
+
 ## ListPortalsPaginator
 
 Type annotations for
@@ -325,10 +369,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import ListPortalsPaginator
 
 def get_list_portals_paginator() -> ListPortalsPaginator:
-    return boto3.client("iotsitewise").get_paginator("list_portals")
+    return Session().client("iotsitewise").get_paginator("list_portals")
 ```
 
 Boto3 documentation:
@@ -342,6 +388,8 @@ Arguments for `ListPortalsPaginator.paginate` method:
 `ListPortalsPaginator.paginate` returns
 `_PageIterator`\[[ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef)\].
 
+<a id="listprojectassetspaginator"></a>
+
 ## ListProjectAssetsPaginator
 
 Type annotations for
@@ -350,10 +398,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import ListProjectAssetsPaginator
 
 def get_list_project_assets_paginator() -> ListProjectAssetsPaginator:
-    return boto3.client("iotsitewise").get_paginator("list_project_assets")
+    return Session().client("iotsitewise").get_paginator("list_project_assets")
 ```
 
 Boto3 documentation:
@@ -368,6 +418,8 @@ Arguments for `ListProjectAssetsPaginator.paginate` method:
 `ListProjectAssetsPaginator.paginate` returns
 `_PageIterator`\[[ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef)\].
 
+<a id="listprojectspaginator"></a>
+
 ## ListProjectsPaginator
 
 Type annotations for
@@ -376,10 +428,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
-    return boto3.client("iotsitewise").get_paginator("list_projects")
+    return Session().client("iotsitewise").get_paginator("list_projects")
 ```
 
 Boto3 documentation:
@@ -394,6 +448,8 @@ Arguments for `ListProjectsPaginator.paginate` method:
 `ListProjectsPaginator.paginate` returns
 `_PageIterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].
 
+<a id="listtimeseriespaginator"></a>
+
 ## ListTimeSeriesPaginator
 
 Type annotations for
@@ -402,10 +458,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotsitewise.paginator import ListTimeSeriesPaginator
 
 def get_list_time_series_paginator() -> ListTimeSeriesPaginator:
-    return boto3.client("iotsitewise").get_paginator("list_time_series")
+    return Session().client("iotsitewise").get_paginator("list_time_series")
 ```
 
 Boto3 documentation:

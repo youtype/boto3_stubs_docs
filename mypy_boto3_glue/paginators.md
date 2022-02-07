@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-glue-module"></a>
+
 # Paginators for boto3 Glue module
 
 > [Index](..) > [Glue](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
 type annotations stubs module
-[mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
+[mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
 
 - [Paginators for boto3 Glue module](#paginators-for-boto3-glue-module)
   - [GetClassifiersPaginator](#getclassifierspaginator)
@@ -28,6 +30,8 @@ type annotations stubs module
   - [ListSchemaVersionsPaginator](#listschemaversionspaginator)
   - [ListSchemasPaginator](#listschemaspaginator)
 
+<a id="getclassifierspaginator"></a>
+
 ## GetClassifiersPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("get_classifiers")`.
@@ -35,10 +39,12 @@ Type annotations for `boto3.client("glue").get_paginator("get_classifiers")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetClassifiersPaginator
 
 def get_get_classifiers_paginator() -> GetClassifiersPaginator:
-    return boto3.client("glue").get_paginator("get_classifiers")
+    return Session().client("glue").get_paginator("get_classifiers")
 ```
 
 Boto3 documentation:
@@ -52,6 +58,8 @@ Arguments for `GetClassifiersPaginator.paginate` method:
 `GetClassifiersPaginator.paginate` returns
 `_PageIterator`\[[GetClassifiersResponseTypeDef](./type_defs.md#getclassifiersresponsetypedef)\].
 
+<a id="getconnectionspaginator"></a>
+
 ## GetConnectionsPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("get_connections")`.
@@ -59,10 +67,12 @@ Type annotations for `boto3.client("glue").get_paginator("get_connections")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetConnectionsPaginator
 
 def get_get_connections_paginator() -> GetConnectionsPaginator:
-    return boto3.client("glue").get_paginator("get_connections")
+    return Session().client("glue").get_paginator("get_connections")
 ```
 
 Boto3 documentation:
@@ -80,6 +90,8 @@ Arguments for `GetConnectionsPaginator.paginate` method:
 `GetConnectionsPaginator.paginate` returns
 `_PageIterator`\[[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)\].
 
+<a id="getcrawlermetricspaginator"></a>
+
 ## GetCrawlerMetricsPaginator
 
 Type annotations for
@@ -88,10 +100,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetCrawlerMetricsPaginator
 
 def get_get_crawler_metrics_paginator() -> GetCrawlerMetricsPaginator:
-    return boto3.client("glue").get_paginator("get_crawler_metrics")
+    return Session().client("glue").get_paginator("get_crawler_metrics")
 ```
 
 Boto3 documentation:
@@ -106,6 +120,8 @@ Arguments for `GetCrawlerMetricsPaginator.paginate` method:
 `GetCrawlerMetricsPaginator.paginate` returns
 `_PageIterator`\[[GetCrawlerMetricsResponseTypeDef](./type_defs.md#getcrawlermetricsresponsetypedef)\].
 
+<a id="getcrawlerspaginator"></a>
+
 ## GetCrawlersPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("get_crawlers")`.
@@ -113,10 +129,12 @@ Type annotations for `boto3.client("glue").get_paginator("get_crawlers")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetCrawlersPaginator
 
 def get_get_crawlers_paginator() -> GetCrawlersPaginator:
-    return boto3.client("glue").get_paginator("get_crawlers")
+    return Session().client("glue").get_paginator("get_crawlers")
 ```
 
 Boto3 documentation:
@@ -130,6 +148,8 @@ Arguments for `GetCrawlersPaginator.paginate` method:
 `GetCrawlersPaginator.paginate` returns
 `_PageIterator`\[[GetCrawlersResponseTypeDef](./type_defs.md#getcrawlersresponsetypedef)\].
 
+<a id="getdatabasespaginator"></a>
+
 ## GetDatabasesPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("get_databases")`.
@@ -137,10 +157,12 @@ Type annotations for `boto3.client("glue").get_paginator("get_databases")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetDatabasesPaginator
 
 def get_get_databases_paginator() -> GetDatabasesPaginator:
-    return boto3.client("glue").get_paginator("get_databases")
+    return Session().client("glue").get_paginator("get_databases")
 ```
 
 Boto3 documentation:
@@ -157,6 +179,8 @@ Arguments for `GetDatabasesPaginator.paginate` method:
 `GetDatabasesPaginator.paginate` returns
 `_PageIterator`\[[GetDatabasesResponseTypeDef](./type_defs.md#getdatabasesresponsetypedef)\].
 
+<a id="getdevendpointspaginator"></a>
+
 ## GetDevEndpointsPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("get_dev_endpoints")`.
@@ -164,10 +188,12 @@ Type annotations for `boto3.client("glue").get_paginator("get_dev_endpoints")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetDevEndpointsPaginator
 
 def get_get_dev_endpoints_paginator() -> GetDevEndpointsPaginator:
-    return boto3.client("glue").get_paginator("get_dev_endpoints")
+    return Session().client("glue").get_paginator("get_dev_endpoints")
 ```
 
 Boto3 documentation:
@@ -181,6 +207,8 @@ Arguments for `GetDevEndpointsPaginator.paginate` method:
 `GetDevEndpointsPaginator.paginate` returns
 `_PageIterator`\[[GetDevEndpointsResponseTypeDef](./type_defs.md#getdevendpointsresponsetypedef)\].
 
+<a id="getjobrunspaginator"></a>
+
 ## GetJobRunsPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("get_job_runs")`.
@@ -188,10 +216,12 @@ Type annotations for `boto3.client("glue").get_paginator("get_job_runs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetJobRunsPaginator
 
 def get_get_job_runs_paginator() -> GetJobRunsPaginator:
-    return boto3.client("glue").get_paginator("get_job_runs")
+    return Session().client("glue").get_paginator("get_job_runs")
 ```
 
 Boto3 documentation:
@@ -206,6 +236,8 @@ Arguments for `GetJobRunsPaginator.paginate` method:
 `GetJobRunsPaginator.paginate` returns
 `_PageIterator`\[[GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef)\].
 
+<a id="getjobspaginator"></a>
+
 ## GetJobsPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("get_jobs")`.
@@ -213,10 +245,12 @@ Type annotations for `boto3.client("glue").get_paginator("get_jobs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetJobsPaginator
 
 def get_get_jobs_paginator() -> GetJobsPaginator:
-    return boto3.client("glue").get_paginator("get_jobs")
+    return Session().client("glue").get_paginator("get_jobs")
 ```
 
 Boto3 documentation:
@@ -230,6 +264,8 @@ Arguments for `GetJobsPaginator.paginate` method:
 `GetJobsPaginator.paginate` returns
 `_PageIterator`\[[GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef)\].
 
+<a id="getpartitionindexespaginator"></a>
+
 ## GetPartitionIndexesPaginator
 
 Type annotations for
@@ -238,10 +274,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetPartitionIndexesPaginator
 
 def get_get_partition_indexes_paginator() -> GetPartitionIndexesPaginator:
-    return boto3.client("glue").get_paginator("get_partition_indexes")
+    return Session().client("glue").get_paginator("get_partition_indexes")
 ```
 
 Boto3 documentation:
@@ -258,6 +296,8 @@ Arguments for `GetPartitionIndexesPaginator.paginate` method:
 `GetPartitionIndexesPaginator.paginate` returns
 `_PageIterator`\[[GetPartitionIndexesResponseTypeDef](./type_defs.md#getpartitionindexesresponsetypedef)\].
 
+<a id="getpartitionspaginator"></a>
+
 ## GetPartitionsPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("get_partitions")`.
@@ -265,10 +305,12 @@ Type annotations for `boto3.client("glue").get_paginator("get_partitions")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetPartitionsPaginator
 
 def get_get_partitions_paginator() -> GetPartitionsPaginator:
-    return boto3.client("glue").get_paginator("get_partitions")
+    return Session().client("glue").get_paginator("get_partitions")
 ```
 
 Boto3 documentation:
@@ -290,6 +332,8 @@ Arguments for `GetPartitionsPaginator.paginate` method:
 `GetPartitionsPaginator.paginate` returns
 `_PageIterator`\[[GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef)\].
 
+<a id="getresourcepoliciespaginator"></a>
+
 ## GetResourcePoliciesPaginator
 
 Type annotations for
@@ -298,10 +342,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetResourcePoliciesPaginator
 
 def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
-    return boto3.client("glue").get_paginator("get_resource_policies")
+    return Session().client("glue").get_paginator("get_resource_policies")
 ```
 
 Boto3 documentation:
@@ -315,6 +361,8 @@ Arguments for `GetResourcePoliciesPaginator.paginate` method:
 `GetResourcePoliciesPaginator.paginate` returns
 `_PageIterator`\[[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef)\].
 
+<a id="getsecurityconfigurationspaginator"></a>
+
 ## GetSecurityConfigurationsPaginator
 
 Type annotations for
@@ -323,10 +371,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetSecurityConfigurationsPaginator
 
 def get_get_security_configurations_paginator() -> GetSecurityConfigurationsPaginator:
-    return boto3.client("glue").get_paginator("get_security_configurations")
+    return Session().client("glue").get_paginator("get_security_configurations")
 ```
 
 Boto3 documentation:
@@ -340,6 +390,8 @@ Arguments for `GetSecurityConfigurationsPaginator.paginate` method:
 `GetSecurityConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef)\].
 
+<a id="gettableversionspaginator"></a>
+
 ## GetTableVersionsPaginator
 
 Type annotations for
@@ -348,10 +400,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetTableVersionsPaginator
 
 def get_get_table_versions_paginator() -> GetTableVersionsPaginator:
-    return boto3.client("glue").get_paginator("get_table_versions")
+    return Session().client("glue").get_paginator("get_table_versions")
 ```
 
 Boto3 documentation:
@@ -368,6 +422,8 @@ Arguments for `GetTableVersionsPaginator.paginate` method:
 `GetTableVersionsPaginator.paginate` returns
 `_PageIterator`\[[GetTableVersionsResponseTypeDef](./type_defs.md#gettableversionsresponsetypedef)\].
 
+<a id="gettablespaginator"></a>
+
 ## GetTablesPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("get_tables")`.
@@ -375,10 +431,12 @@ Type annotations for `boto3.client("glue").get_paginator("get_tables")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetTablesPaginator
 
 def get_get_tables_paginator() -> GetTablesPaginator:
-    return boto3.client("glue").get_paginator("get_tables")
+    return Session().client("glue").get_paginator("get_tables")
 ```
 
 Boto3 documentation:
@@ -397,6 +455,8 @@ Arguments for `GetTablesPaginator.paginate` method:
 `GetTablesPaginator.paginate` returns
 `_PageIterator`\[[GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef)\].
 
+<a id="gettriggerspaginator"></a>
+
 ## GetTriggersPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("get_triggers")`.
@@ -404,10 +464,12 @@ Type annotations for `boto3.client("glue").get_paginator("get_triggers")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetTriggersPaginator
 
 def get_get_triggers_paginator() -> GetTriggersPaginator:
-    return boto3.client("glue").get_paginator("get_triggers")
+    return Session().client("glue").get_paginator("get_triggers")
 ```
 
 Boto3 documentation:
@@ -422,6 +484,8 @@ Arguments for `GetTriggersPaginator.paginate` method:
 `GetTriggersPaginator.paginate` returns
 `_PageIterator`\[[GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef)\].
 
+<a id="getuserdefinedfunctionspaginator"></a>
+
 ## GetUserDefinedFunctionsPaginator
 
 Type annotations for
@@ -430,10 +494,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import GetUserDefinedFunctionsPaginator
 
 def get_get_user_defined_functions_paginator() -> GetUserDefinedFunctionsPaginator:
-    return boto3.client("glue").get_paginator("get_user_defined_functions")
+    return Session().client("glue").get_paginator("get_user_defined_functions")
 ```
 
 Boto3 documentation:
@@ -450,6 +516,8 @@ Arguments for `GetUserDefinedFunctionsPaginator.paginate` method:
 `GetUserDefinedFunctionsPaginator.paginate` returns
 `_PageIterator`\[[GetUserDefinedFunctionsResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponsetypedef)\].
 
+<a id="listregistriespaginator"></a>
+
 ## ListRegistriesPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("list_registries")`.
@@ -457,10 +525,12 @@ Type annotations for `boto3.client("glue").get_paginator("list_registries")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import ListRegistriesPaginator
 
 def get_list_registries_paginator() -> ListRegistriesPaginator:
-    return boto3.client("glue").get_paginator("list_registries")
+    return Session().client("glue").get_paginator("list_registries")
 ```
 
 Boto3 documentation:
@@ -474,6 +544,8 @@ Arguments for `ListRegistriesPaginator.paginate` method:
 `ListRegistriesPaginator.paginate` returns
 `_PageIterator`\[[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef)\].
 
+<a id="listschemaversionspaginator"></a>
+
 ## ListSchemaVersionsPaginator
 
 Type annotations for
@@ -482,10 +554,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import ListSchemaVersionsPaginator
 
 def get_list_schema_versions_paginator() -> ListSchemaVersionsPaginator:
-    return boto3.client("glue").get_paginator("list_schema_versions")
+    return Session().client("glue").get_paginator("list_schema_versions")
 ```
 
 Boto3 documentation:
@@ -500,6 +574,8 @@ Arguments for `ListSchemaVersionsPaginator.paginate` method:
 `ListSchemaVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef)\].
 
+<a id="listschemaspaginator"></a>
+
 ## ListSchemasPaginator
 
 Type annotations for `boto3.client("glue").get_paginator("list_schemas")`.
@@ -507,10 +583,12 @@ Type annotations for `boto3.client("glue").get_paginator("list_schemas")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_glue.paginator import ListSchemasPaginator
 
 def get_list_schemas_paginator() -> ListSchemasPaginator:
-    return boto3.client("glue").get_paginator("list_schemas")
+    return Session().client("glue").get_paginator("list_schemas")
 ```
 
 Boto3 documentation:

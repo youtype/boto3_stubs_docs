@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-codeguruprofiler-module"></a>
+
 # Literals for boto3 CodeGuruProfiler module
 
 > [Index](..) > [CodeGuruProfiler](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
 type annotations stubs module
-[mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
+[mypy-boto3-codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
 - [Literals for boto3 CodeGuruProfiler module](#literals-for-boto3-codeguruprofiler-module)
   - [ActionGroupType](#actiongrouptype)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="actiongrouptype"></a>
+
 ## ActionGroupType
 
 ```python
@@ -30,6 +34,8 @@ from mypy_boto3_codeguruprofiler.literals import ActionGroupType
 Values:
 
 - `agentPermissions`
+
+<a id="agentparameterfieldtype"></a>
 
 ## AgentParameterFieldType
 
@@ -45,6 +51,8 @@ Values:
 - `ReportingIntervalInMilliseconds`
 - `SamplingIntervalInMilliseconds`
 
+<a id="aggregationperiodtype"></a>
+
 ## AggregationPeriodType
 
 ```python
@@ -57,6 +65,8 @@ Values:
 - `PT1H`
 - `PT5M`
 
+<a id="computeplatformtype"></a>
+
 ## ComputePlatformType
 
 ```python
@@ -68,6 +78,8 @@ Values:
 - `AWSLambda`
 - `Default`
 
+<a id="eventpublishertype"></a>
+
 ## EventPublisherType
 
 ```python
@@ -77,6 +89,8 @@ from mypy_boto3_codeguruprofiler.literals import EventPublisherType
 Values:
 
 - `AnomalyDetection`
+
+<a id="feedbacktypetype"></a>
 
 ## FeedbackTypeType
 
@@ -89,6 +103,8 @@ Values:
 - `Negative`
 - `Positive`
 
+<a id="listprofiletimespaginatorname"></a>
+
 ## ListProfileTimesPaginatorName
 
 ```python
@@ -98,6 +114,8 @@ from mypy_boto3_codeguruprofiler.literals import ListProfileTimesPaginatorName
 Values:
 
 - `list_profile_times`
+
+<a id="metadatafieldtype"></a>
 
 ## MetadataFieldType
 
@@ -117,6 +135,8 @@ Values:
 - `LambdaRemainingTimeInMilliseconds`
 - `LambdaTimeGapBetweenInvokesInMilliseconds`
 
+<a id="metrictypetype"></a>
+
 ## MetricTypeType
 
 ```python
@@ -126,6 +146,8 @@ from mypy_boto3_codeguruprofiler.literals import MetricTypeType
 Values:
 
 - `AggregatedRelativeTotalTime`
+
+<a id="orderbytype"></a>
 
 ## OrderByType
 
@@ -137,6 +159,8 @@ Values:
 
 - `TimestampAscending`
 - `TimestampDescending`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -445,6 +469,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

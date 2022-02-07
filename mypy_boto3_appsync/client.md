@@ -1,3 +1,5 @@
+<a id="appsyncclient-for-boto3-appsync-module"></a>
+
 # AppSyncClient for boto3 AppSync module
 
 > [Index](..) > [AppSync](.) > AppSyncClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
 type annotations stubs module
-[mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
+[mypy-boto3-appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
 - [AppSyncClient for boto3 AppSync module](#appsyncclient-for-boto3-appsync-module)
   - [AppSyncClient](#appsyncclient)
@@ -65,6 +67,8 @@ type annotations stubs module
     - [update_type](#update_type)
     - [get_paginator](#get_paginator)
 
+<a id="appsyncclient"></a>
+
 ## AppSyncClient
 
 Type annotations for `boto3.client("appsync")`
@@ -72,14 +76,17 @@ Type annotations for `boto3.client("appsync")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_appsync.client import AppSyncClient
 
 def get_appsync_client() -> AppSyncClient:
-    return boto3.client("appsync")
+    return Session().client("appsync")
 ```
 
 Boto3 documentation:
 [AppSync.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -108,7 +115,11 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -120,6 +131,8 @@ Boto3 documentation:
 [AppSync.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_api"></a>
 
 ### associate_api
 
@@ -141,6 +154,8 @@ Keyword-only arguments:
 Returns
 [AssociateApiResponseTypeDef](./type_defs.md#associateapiresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -155,6 +170,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_api_cache"></a>
 
 ### create_api_cache
 
@@ -181,6 +198,8 @@ Keyword-only arguments:
 Returns
 [CreateApiCacheResponseTypeDef](./type_defs.md#createapicacheresponsetypedef).
 
+<a id="create_api_key"></a>
+
 ### create_api_key
 
 Creates a unique key that you can distribute to clients who invoke your API.
@@ -201,6 +220,8 @@ Keyword-only arguments:
 
 Returns
 [CreateApiKeyResponseTypeDef](./type_defs.md#createapikeyresponsetypedef).
+
+<a id="create_data_source"></a>
 
 ### create_data_source
 
@@ -237,6 +258,8 @@ Keyword-only arguments:
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
 
+<a id="create_domain_name"></a>
+
 ### create_domain_name
 
 Creates a custom `DomainName` object.
@@ -257,6 +280,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDomainNameResponseTypeDef](./type_defs.md#createdomainnameresponsetypedef).
+
+<a id="create_function"></a>
 
 ### create_function
 
@@ -284,6 +309,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFunctionResponseTypeDef](./type_defs.md#createfunctionresponsetypedef).
+
+<a id="create_graphql_api"></a>
 
 ### create_graphql_api
 
@@ -317,6 +344,8 @@ Keyword-only arguments:
 Returns
 [CreateGraphqlApiResponseTypeDef](./type_defs.md#creategraphqlapiresponsetypedef).
 
+<a id="create_resolver"></a>
+
 ### create_resolver
 
 Creates a `Resolver` object.
@@ -347,6 +376,8 @@ Keyword-only arguments:
 Returns
 [CreateResolverResponseTypeDef](./type_defs.md#createresolverresponsetypedef).
 
+<a id="create_type"></a>
+
 ### create_type
 
 Creates a `Type` object.
@@ -368,6 +399,8 @@ Keyword-only arguments:
 
 Returns [CreateTypeResponseTypeDef](./type_defs.md#createtyperesponsetypedef).
 
+<a id="delete_api_cache"></a>
+
 ### delete_api_cache
 
 Deletes an `ApiCache` object.
@@ -385,6 +418,8 @@ Keyword-only arguments:
 - `apiId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_api_key"></a>
 
 ### delete_api_key
 
@@ -405,6 +440,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_data_source"></a>
+
 ### delete_data_source
 
 Deletes a `DataSource` object.
@@ -424,6 +461,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_domain_name"></a>
+
 ### delete_domain_name
 
 Deletes a custom `DomainName` object.
@@ -441,6 +480,8 @@ Keyword-only arguments:
 - `domainName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_function"></a>
 
 ### delete_function
 
@@ -461,6 +502,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_graphql_api"></a>
+
 ### delete_graphql_api
 
 Deletes a `GraphqlApi` object.
@@ -478,6 +521,8 @@ Keyword-only arguments:
 - `apiId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_resolver"></a>
 
 ### delete_resolver
 
@@ -499,6 +544,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_type"></a>
+
 ### delete_type
 
 Deletes a `Type` object.
@@ -518,6 +565,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_api"></a>
+
 ### disassociate_api
 
 Removes an `ApiAssociation` object from a custom domain.
@@ -535,6 +584,8 @@ Keyword-only arguments:
 - `domainName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="flush_api_cache"></a>
 
 ### flush_api_cache
 
@@ -554,6 +605,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -571,6 +624,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_api_association"></a>
 
 ### get_api_association
 
@@ -591,6 +646,8 @@ Keyword-only arguments:
 Returns
 [GetApiAssociationResponseTypeDef](./type_defs.md#getapiassociationresponsetypedef).
 
+<a id="get_api_cache"></a>
+
 ### get_api_cache
 
 Retrieves an `ApiCache` object.
@@ -609,6 +666,8 @@ Keyword-only arguments:
 
 Returns
 [GetApiCacheResponseTypeDef](./type_defs.md#getapicacheresponsetypedef).
+
+<a id="get_data_source"></a>
 
 ### get_data_source
 
@@ -630,6 +689,8 @@ Keyword-only arguments:
 Returns
 [GetDataSourceResponseTypeDef](./type_defs.md#getdatasourceresponsetypedef).
 
+<a id="get_domain_name"></a>
+
 ### get_domain_name
 
 Retrieves a custom `DomainName` object.
@@ -648,6 +709,8 @@ Keyword-only arguments:
 
 Returns
 [GetDomainNameResponseTypeDef](./type_defs.md#getdomainnameresponsetypedef).
+
+<a id="get_function"></a>
 
 ### get_function
 
@@ -669,6 +732,8 @@ Keyword-only arguments:
 Returns
 [GetFunctionResponseTypeDef](./type_defs.md#getfunctionresponsetypedef).
 
+<a id="get_graphql_api"></a>
+
 ### get_graphql_api
 
 Retrieves a `GraphqlApi` object.
@@ -687,6 +752,8 @@ Keyword-only arguments:
 
 Returns
 [GetGraphqlApiResponseTypeDef](./type_defs.md#getgraphqlapiresponsetypedef).
+
+<a id="get_introspection_schema"></a>
 
 ### get_introspection_schema
 
@@ -709,6 +776,8 @@ Keyword-only arguments:
 Returns
 [GetIntrospectionSchemaResponseTypeDef](./type_defs.md#getintrospectionschemaresponsetypedef).
 
+<a id="get_resolver"></a>
+
 ### get_resolver
 
 Retrieves a `Resolver` object.
@@ -730,6 +799,8 @@ Keyword-only arguments:
 Returns
 [GetResolverResponseTypeDef](./type_defs.md#getresolverresponsetypedef).
 
+<a id="get_schema_creation_status"></a>
+
 ### get_schema_creation_status
 
 Retrieves the current status of a schema creation operation.
@@ -749,6 +820,8 @@ Keyword-only arguments:
 
 Returns
 [GetSchemaCreationStatusResponseTypeDef](./type_defs.md#getschemacreationstatusresponsetypedef).
+
+<a id="get_type"></a>
 
 ### get_type
 
@@ -771,6 +844,8 @@ Keyword-only arguments:
 
 Returns [GetTypeResponseTypeDef](./type_defs.md#gettyperesponsetypedef).
 
+<a id="list_api_keys"></a>
+
 ### list_api_keys
 
 Lists the API keys for a given API.
@@ -791,6 +866,8 @@ Keyword-only arguments:
 
 Returns
 [ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef).
+
+<a id="list_data_sources"></a>
 
 ### list_data_sources
 
@@ -813,6 +890,8 @@ Keyword-only arguments:
 Returns
 [ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
 
+<a id="list_domain_names"></a>
+
 ### list_domain_names
 
 Lists multiple custom domain names.
@@ -832,6 +911,8 @@ Keyword-only arguments:
 
 Returns
 [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
+
+<a id="list_functions"></a>
 
 ### list_functions
 
@@ -854,6 +935,8 @@ Keyword-only arguments:
 Returns
 [ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef).
 
+<a id="list_graphql_apis"></a>
+
 ### list_graphql_apis
 
 Lists your GraphQL APIs.
@@ -873,6 +956,8 @@ Keyword-only arguments:
 
 Returns
 [ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef).
+
+<a id="list_resolvers"></a>
 
 ### list_resolvers
 
@@ -895,6 +980,8 @@ Keyword-only arguments:
 
 Returns
 [ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef).
+
+<a id="list_resolvers_by_function"></a>
 
 ### list_resolvers_by_function
 
@@ -919,6 +1006,8 @@ Keyword-only arguments:
 Returns
 [ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags for a resource.
@@ -937,6 +1026,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_types"></a>
 
 ### list_types
 
@@ -960,6 +1051,8 @@ Keyword-only arguments:
 
 Returns [ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef).
 
+<a id="start_schema_creation"></a>
+
 ### start_schema_creation
 
 Adds a new schema to your GraphQL API.
@@ -981,6 +1074,8 @@ Keyword-only arguments:
 Returns
 [StartSchemaCreationResponseTypeDef](./type_defs.md#startschemacreationresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Tags a resource with user-supplied tags.
@@ -1000,6 +1095,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Untags a resource.
@@ -1018,6 +1115,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_api_cache"></a>
 
 ### update_api_cache
 
@@ -1042,6 +1141,8 @@ Keyword-only arguments:
 Returns
 [UpdateApiCacheResponseTypeDef](./type_defs.md#updateapicacheresponsetypedef).
 
+<a id="update_api_key"></a>
+
 ### update_api_key
 
 Updates an API key.
@@ -1063,6 +1164,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateApiKeyResponseTypeDef](./type_defs.md#updateapikeyresponsetypedef).
+
+<a id="update_data_source"></a>
 
 ### update_data_source
 
@@ -1099,6 +1202,8 @@ Keyword-only arguments:
 Returns
 [UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef).
 
+<a id="update_domain_name"></a>
+
 ### update_domain_name
 
 Updates a custom `DomainName` object.
@@ -1118,6 +1223,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDomainNameResponseTypeDef](./type_defs.md#updatedomainnameresponsetypedef).
+
+<a id="update_function"></a>
 
 ### update_function
 
@@ -1146,6 +1253,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateFunctionResponseTypeDef](./type_defs.md#updatefunctionresponsetypedef).
+
+<a id="update_graphql_api"></a>
 
 ### update_graphql_api
 
@@ -1179,6 +1288,8 @@ Keyword-only arguments:
 Returns
 [UpdateGraphqlApiResponseTypeDef](./type_defs.md#updategraphqlapiresponsetypedef).
 
+<a id="update_resolver"></a>
+
 ### update_resolver
 
 Updates a `Resolver` object.
@@ -1209,6 +1320,8 @@ Keyword-only arguments:
 Returns
 [UpdateResolverResponseTypeDef](./type_defs.md#updateresolverresponsetypedef).
 
+<a id="update_type"></a>
+
 ### update_type
 
 Updates a `Type` object.
@@ -1230,6 +1343,8 @@ Keyword-only arguments:
 - `definition`: `str`
 
 Returns [UpdateTypeResponseTypeDef](./type_defs.md#updatetyperesponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

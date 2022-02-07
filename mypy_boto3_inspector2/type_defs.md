@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-inspector2-module"></a>
+
 # Typed dictionaries for boto3 Inspector2 module
 
 > [Index](..) > [Inspector2](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
 type annotations stubs module
-[mypy_boto3_inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
+[mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
 
 - [Typed dictionaries for boto3 Inspector2 module](#typed-dictionaries-for-boto3-inspector2-module)
   - [AccountAggregationResponseTypeDef](#accountaggregationresponsetypedef)
@@ -141,6 +143,8 @@ type annotations stubs module
   - [UsageTypeDef](#usagetypedef)
   - [VulnerablePackageTypeDef](#vulnerablepackagetypedef)
 
+<a id="accountaggregationresponsetypedef"></a>
+
 ## AccountAggregationResponseTypeDef
 
 ```python
@@ -152,6 +156,8 @@ Optional fields:
 - `accountId`: `str`
 - `severityCounts`:
   [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
+
+<a id="accountaggregationtypedef"></a>
 
 ## AccountAggregationTypeDef
 
@@ -168,6 +174,8 @@ Optional fields:
 - `sortBy`: [AccountSortByType](./literals.md#accountsortbytype)
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="accountstatetypedef"></a>
+
 ## AccountStateTypeDef
 
 ```python
@@ -179,6 +187,8 @@ Required fields:
 - `accountId`: `str`
 - `resourceState`: [ResourceStateTypeDef](./type_defs.md#resourcestatetypedef)
 - `state`: [StateTypeDef](./type_defs.md#statetypedef)
+
+<a id="accounttypedef"></a>
 
 ## AccountTypeDef
 
@@ -192,6 +202,8 @@ Required fields:
 - `resourceStatus`:
   [ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef)
 - `status`: [StatusType](./literals.md#statustype)
+
+<a id="aggregationrequesttypedef"></a>
 
 ## AggregationRequestTypeDef
 
@@ -220,6 +232,8 @@ Optional fields:
 - `titleAggregation`:
   [TitleAggregationTypeDef](./type_defs.md#titleaggregationtypedef)
 
+<a id="aggregationresponsetypedef"></a>
+
 ## AggregationResponseTypeDef
 
 ```python
@@ -247,6 +261,8 @@ Optional fields:
 - `titleAggregation`:
   [TitleAggregationResponseTypeDef](./type_defs.md#titleaggregationresponsetypedef)
 
+<a id="amiaggregationresponsetypedef"></a>
+
 ## AmiAggregationResponseTypeDef
 
 ```python
@@ -264,6 +280,8 @@ Optional fields:
 - `severityCounts`:
   [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
 
+<a id="amiaggregationtypedef"></a>
+
 ## AmiAggregationTypeDef
 
 ```python
@@ -277,6 +295,8 @@ Optional fields:
 - `sortBy`: [AmiSortByType](./literals.md#amisortbytype)
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="associatememberrequestrequesttypedef"></a>
+
 ## AssociateMemberRequestRequestTypeDef
 
 ```python
@@ -286,6 +306,8 @@ from mypy_boto3_inspector2.type_defs import AssociateMemberRequestRequestTypeDef
 Required fields:
 
 - `accountId`: `str`
+
+<a id="associatememberresponsetypedef"></a>
 
 ## AssociateMemberResponseTypeDef
 
@@ -299,6 +321,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="autoenabletypedef"></a>
+
 ## AutoEnableTypeDef
 
 ```python
@@ -309,6 +333,8 @@ Required fields:
 
 - `ec2`: `bool`
 - `ecr`: `bool`
+
+<a id="awsec2instancedetailstypedef"></a>
 
 ## AwsEc2InstanceDetailsTypeDef
 
@@ -329,6 +355,8 @@ Optional fields:
 - `type`: `str`
 - `vpcId`: `str`
 
+<a id="awsecrcontaineraggregationresponsetypedef"></a>
+
 ## AwsEcrContainerAggregationResponseTypeDef
 
 ```python
@@ -348,6 +376,8 @@ Optional fields:
 - `repository`: `str`
 - `severityCounts`:
   [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
+
+<a id="awsecrcontaineraggregationtypedef"></a>
 
 ## AwsEcrContainerAggregationTypeDef
 
@@ -371,6 +401,8 @@ Optional fields:
   [AwsEcrContainerSortByType](./literals.md#awsecrcontainersortbytype)
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="awsecrcontainerimagedetailstypedef"></a>
+
 ## AwsEcrContainerImageDetailsTypeDef
 
 ```python
@@ -391,6 +423,8 @@ Optional fields:
 - `platform`: `str`
 - `pushedAt`: `datetime`
 
+<a id="batchgetaccountstatusrequestrequesttypedef"></a>
+
 ## BatchGetAccountStatusRequestRequestTypeDef
 
 ```python
@@ -400,6 +434,8 @@ from mypy_boto3_inspector2.type_defs import BatchGetAccountStatusRequestRequestT
 Optional fields:
 
 - `accountIds`: `Sequence`\[`str`\]
+
+<a id="batchgetaccountstatusresponsetypedef"></a>
 
 ## BatchGetAccountStatusResponseTypeDef
 
@@ -416,6 +452,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetfreetrialinforequestrequesttypedef"></a>
+
 ## BatchGetFreeTrialInfoRequestRequestTypeDef
 
 ```python
@@ -425,6 +463,8 @@ from mypy_boto3_inspector2.type_defs import BatchGetFreeTrialInfoRequestRequestT
 Required fields:
 
 - `accountIds`: `Sequence`\[`str`\]
+
+<a id="batchgetfreetrialinforesponsetypedef"></a>
 
 ## BatchGetFreeTrialInfoResponseTypeDef
 
@@ -441,6 +481,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cancelfindingsreportrequestrequesttypedef"></a>
+
 ## CancelFindingsReportRequestRequestTypeDef
 
 ```python
@@ -450,6 +492,8 @@ from mypy_boto3_inspector2.type_defs import CancelFindingsReportRequestRequestTy
 Required fields:
 
 - `reportId`: `str`
+
+<a id="cancelfindingsreportresponsetypedef"></a>
 
 ## CancelFindingsReportResponseTypeDef
 
@@ -463,6 +507,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="countstypedef"></a>
+
 ## CountsTypeDef
 
 ```python
@@ -473,6 +519,8 @@ Optional fields:
 
 - `count`: `int`
 - `groupKey`: [GroupKeyType](./literals.md#groupkeytype)
+
+<a id="coveragefiltercriteriatypedef"></a>
 
 ## CoverageFilterCriteriaTypeDef
 
@@ -501,6 +549,8 @@ Optional fields:
 - `scanType`:
   `Sequence`\[[CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef)\]
 
+<a id="coveragemapfiltertypedef"></a>
+
 ## CoverageMapFilterTypeDef
 
 ```python
@@ -517,6 +567,8 @@ Optional fields:
 
 - `value`: `str`
 
+<a id="coveragestringfiltertypedef"></a>
+
 ## CoverageStringFilterTypeDef
 
 ```python
@@ -528,6 +580,8 @@ Required fields:
 - `comparison`:
   [CoverageStringComparisonType](./literals.md#coveragestringcomparisontype)
 - `value`: `str`
+
+<a id="coveredresourcetypedef"></a>
 
 ## CoveredResourceTypeDef
 
@@ -549,6 +603,8 @@ Optional fields:
   [ResourceScanMetadataTypeDef](./type_defs.md#resourcescanmetadatatypedef)
 - `scanStatus`: [ScanStatusTypeDef](./type_defs.md#scanstatustypedef)
 
+<a id="createfilterrequestrequesttypedef"></a>
+
 ## CreateFilterRequestRequestTypeDef
 
 ```python
@@ -567,6 +623,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createfilterresponsetypedef"></a>
+
 ## CreateFilterResponseTypeDef
 
 ```python
@@ -578,6 +636,8 @@ Required fields:
 - `arn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfindingsreportrequestrequesttypedef"></a>
 
 ## CreateFindingsReportRequestRequestTypeDef
 
@@ -595,6 +655,8 @@ Optional fields:
 - `filterCriteria`:
   [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
 
+<a id="createfindingsreportresponsetypedef"></a>
+
 ## CreateFindingsReportResponseTypeDef
 
 ```python
@@ -607,6 +669,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cvssscoreadjustmenttypedef"></a>
+
 ## CvssScoreAdjustmentTypeDef
 
 ```python
@@ -617,6 +681,8 @@ Required fields:
 
 - `metric`: `str`
 - `reason`: `str`
+
+<a id="cvssscoredetailstypedef"></a>
 
 ## CvssScoreDetailsTypeDef
 
@@ -637,6 +703,8 @@ Optional fields:
   `List`\[[CvssScoreAdjustmentTypeDef](./type_defs.md#cvssscoreadjustmenttypedef)\]
 - `cvssSource`: `str`
 
+<a id="cvssscoretypedef"></a>
+
 ## CvssScoreTypeDef
 
 ```python
@@ -650,6 +718,8 @@ Required fields:
 - `source`: `str`
 - `version`: `str`
 
+<a id="datefiltertypedef"></a>
+
 ## DateFilterTypeDef
 
 ```python
@@ -661,6 +731,8 @@ Optional fields:
 - `endInclusive`: `Union`\[`datetime`, `str`\]
 - `startInclusive`: `Union`\[`datetime`, `str`\]
 
+<a id="delegatedadminaccounttypedef"></a>
+
 ## DelegatedAdminAccountTypeDef
 
 ```python
@@ -671,6 +743,8 @@ Optional fields:
 
 - `accountId`: `str`
 - `status`: [DelegatedAdminStatusType](./literals.md#delegatedadminstatustype)
+
+<a id="delegatedadmintypedef"></a>
 
 ## DelegatedAdminTypeDef
 
@@ -684,6 +758,8 @@ Optional fields:
 - `relationshipStatus`:
   [RelationshipStatusType](./literals.md#relationshipstatustype)
 
+<a id="deletefilterrequestrequesttypedef"></a>
+
 ## DeleteFilterRequestRequestTypeDef
 
 ```python
@@ -693,6 +769,8 @@ from mypy_boto3_inspector2.type_defs import DeleteFilterRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="deletefilterresponsetypedef"></a>
 
 ## DeleteFilterResponseTypeDef
 
@@ -706,6 +784,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeorganizationconfigurationresponsetypedef"></a>
+
 ## DescribeOrganizationConfigurationResponseTypeDef
 
 ```python
@@ -718,6 +798,8 @@ Required fields:
 - `maxAccountLimitReached`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="destinationtypedef"></a>
 
 ## DestinationTypeDef
 
@@ -734,6 +816,8 @@ Optional fields:
 
 - `keyPrefix`: `str`
 
+<a id="disabledelegatedadminaccountrequestrequesttypedef"></a>
+
 ## DisableDelegatedAdminAccountRequestRequestTypeDef
 
 ```python
@@ -743,6 +827,8 @@ from mypy_boto3_inspector2.type_defs import DisableDelegatedAdminAccountRequestR
 Required fields:
 
 - `delegatedAdminAccountId`: `str`
+
+<a id="disabledelegatedadminaccountresponsetypedef"></a>
 
 ## DisableDelegatedAdminAccountResponseTypeDef
 
@@ -756,6 +842,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disablerequestrequesttypedef"></a>
+
 ## DisableRequestRequestTypeDef
 
 ```python
@@ -767,6 +855,8 @@ Optional fields:
 - `accountIds`: `Sequence`\[`str`\]
 - `resourceTypes`:
   `Sequence`\[[ResourceScanTypeType](./literals.md#resourcescantypetype)\]
+
+<a id="disableresponsetypedef"></a>
 
 ## DisableResponseTypeDef
 
@@ -782,6 +872,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociatememberrequestrequesttypedef"></a>
+
 ## DisassociateMemberRequestRequestTypeDef
 
 ```python
@@ -791,6 +883,8 @@ from mypy_boto3_inspector2.type_defs import DisassociateMemberRequestRequestType
 Required fields:
 
 - `accountId`: `str`
+
+<a id="disassociatememberresponsetypedef"></a>
 
 ## DisassociateMemberResponseTypeDef
 
@@ -803,6 +897,8 @@ Required fields:
 - `accountId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="ec2instanceaggregationresponsetypedef"></a>
 
 ## Ec2InstanceAggregationResponseTypeDef
 
@@ -824,6 +920,8 @@ Optional fields:
 - `severityCounts`:
   [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
 
+<a id="ec2instanceaggregationtypedef"></a>
+
 ## Ec2InstanceAggregationTypeDef
 
 ```python
@@ -843,6 +941,8 @@ Optional fields:
 - `sortBy`: [Ec2InstanceSortByType](./literals.md#ec2instancesortbytype)
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="ec2metadatatypedef"></a>
+
 ## Ec2MetadataTypeDef
 
 ```python
@@ -855,6 +955,8 @@ Optional fields:
 - `platform`: [Ec2PlatformType](./literals.md#ec2platformtype)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="ecrcontainerimagemetadatatypedef"></a>
+
 ## EcrContainerImageMetadataTypeDef
 
 ```python
@@ -864,6 +966,8 @@ from mypy_boto3_inspector2.type_defs import EcrContainerImageMetadataTypeDef
 Optional fields:
 
 - `tags`: `List`\[`str`\]
+
+<a id="ecrrepositorymetadatatypedef"></a>
 
 ## EcrRepositoryMetadataTypeDef
 
@@ -875,6 +979,8 @@ Optional fields:
 
 - `name`: `str`
 - `scanFrequency`: [EcrScanFrequencyType](./literals.md#ecrscanfrequencytype)
+
+<a id="enabledelegatedadminaccountrequestrequesttypedef"></a>
 
 ## EnableDelegatedAdminAccountRequestRequestTypeDef
 
@@ -890,6 +996,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="enabledelegatedadminaccountresponsetypedef"></a>
+
 ## EnableDelegatedAdminAccountResponseTypeDef
 
 ```python
@@ -901,6 +1009,8 @@ Required fields:
 - `delegatedAdminAccountId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="enablerequestrequesttypedef"></a>
 
 ## EnableRequestRequestTypeDef
 
@@ -918,6 +1028,8 @@ Optional fields:
 - `accountIds`: `Sequence`\[`str`\]
 - `clientToken`: `str`
 
+<a id="enableresponsetypedef"></a>
+
 ## EnableResponseTypeDef
 
 ```python
@@ -931,6 +1043,8 @@ Required fields:
   `List`\[[FailedAccountTypeDef](./type_defs.md#failedaccounttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="failedaccounttypedef"></a>
 
 ## FailedAccountTypeDef
 
@@ -949,6 +1063,8 @@ Optional fields:
 - `resourceStatus`:
   [ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef)
 - `status`: [StatusType](./literals.md#statustype)
+
+<a id="filtercriteriatypedef"></a>
 
 ## FilterCriteriaTypeDef
 
@@ -1021,6 +1137,8 @@ Optional fields:
 - `vulnerablePackages`:
   `Sequence`\[[PackageFilterTypeDef](./type_defs.md#packagefiltertypedef)\]
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -1043,6 +1161,8 @@ Optional fields:
 - `reason`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="findingtypeaggregationresponsetypedef"></a>
+
 ## FindingTypeAggregationResponseTypeDef
 
 ```python
@@ -1054,6 +1174,8 @@ Optional fields:
 - `accountId`: `str`
 - `severityCounts`:
   [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
+
+<a id="findingtypeaggregationtypedef"></a>
 
 ## FindingTypeAggregationTypeDef
 
@@ -1069,6 +1191,8 @@ Optional fields:
   [AggregationResourceTypeType](./literals.md#aggregationresourcetypetype)
 - `sortBy`: [FindingTypeSortByType](./literals.md#findingtypesortbytype)
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+<a id="findingtypedef"></a>
 
 ## FindingTypeDef
 
@@ -1101,6 +1225,8 @@ Optional fields:
 - `title`: `str`
 - `updatedAt`: `datetime`
 
+<a id="freetrialaccountinfotypedef"></a>
+
 ## FreeTrialAccountInfoTypeDef
 
 ```python
@@ -1112,6 +1238,8 @@ Required fields:
 - `accountId`: `str`
 - `freeTrialInfo`:
   `List`\[[FreeTrialInfoTypeDef](./type_defs.md#freetrialinfotypedef)\]
+
+<a id="freetrialinfoerrortypedef"></a>
 
 ## FreeTrialInfoErrorTypeDef
 
@@ -1126,6 +1254,8 @@ Required fields:
   [FreeTrialInfoErrorCodeType](./literals.md#freetrialinfoerrorcodetype)
 - `message`: `str`
 
+<a id="freetrialinfotypedef"></a>
+
 ## FreeTrialInfoTypeDef
 
 ```python
@@ -1138,6 +1268,8 @@ Required fields:
 - `start`: `datetime`
 - `status`: [FreeTrialStatusType](./literals.md#freetrialstatustype)
 - `type`: [FreeTrialTypeType](./literals.md#freetrialtypetype)
+
+<a id="getdelegatedadminaccountresponsetypedef"></a>
 
 ## GetDelegatedAdminAccountResponseTypeDef
 
@@ -1152,6 +1284,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfindingsreportstatusrequestrequesttypedef"></a>
+
 ## GetFindingsReportStatusRequestRequestTypeDef
 
 ```python
@@ -1161,6 +1295,8 @@ from mypy_boto3_inspector2.type_defs import GetFindingsReportStatusRequestReques
 Optional fields:
 
 - `reportId`: `str`
+
+<a id="getfindingsreportstatusresponsetypedef"></a>
 
 ## GetFindingsReportStatusResponseTypeDef
 
@@ -1180,6 +1316,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmemberrequestrequesttypedef"></a>
+
 ## GetMemberRequestRequestTypeDef
 
 ```python
@@ -1189,6 +1327,8 @@ from mypy_boto3_inspector2.type_defs import GetMemberRequestRequestTypeDef
 Required fields:
 
 - `accountId`: `str`
+
+<a id="getmemberresponsetypedef"></a>
 
 ## GetMemberResponseTypeDef
 
@@ -1201,6 +1341,8 @@ Required fields:
 - `member`: [MemberTypeDef](./type_defs.md#membertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="imagelayeraggregationresponsetypedef"></a>
 
 ## ImageLayerAggregationResponseTypeDef
 
@@ -1220,6 +1362,8 @@ Optional fields:
 - `severityCounts`:
   [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
 
+<a id="imagelayeraggregationtypedef"></a>
+
 ## ImageLayerAggregationTypeDef
 
 ```python
@@ -1237,6 +1381,8 @@ Optional fields:
 - `sortBy`: [ImageLayerSortByType](./literals.md#imagelayersortbytype)
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="inspectorscoredetailstypedef"></a>
+
 ## InspectorScoreDetailsTypeDef
 
 ```python
@@ -1247,6 +1393,8 @@ Optional fields:
 
 - `adjustedCvss`:
   [CvssScoreDetailsTypeDef](./type_defs.md#cvssscoredetailstypedef)
+
+<a id="listaccountpermissionsrequestrequesttypedef"></a>
 
 ## ListAccountPermissionsRequestRequestTypeDef
 
@@ -1259,6 +1407,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `service`: [ServiceType](./literals.md#servicetype)
+
+<a id="listaccountpermissionsresponsetypedef"></a>
 
 ## ListAccountPermissionsResponseTypeDef
 
@@ -1274,6 +1424,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcoveragerequestrequesttypedef"></a>
+
 ## ListCoverageRequestRequestTypeDef
 
 ```python
@@ -1286,6 +1438,8 @@ Optional fields:
   [CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listcoverageresponsetypedef"></a>
 
 ## ListCoverageResponseTypeDef
 
@@ -1301,6 +1455,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcoveragestatisticsrequestrequesttypedef"></a>
+
 ## ListCoverageStatisticsRequestRequestTypeDef
 
 ```python
@@ -1313,6 +1469,8 @@ Optional fields:
   [CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef)
 - `groupBy`: [GroupKeyType](./literals.md#groupkeytype)
 - `nextToken`: `str`
+
+<a id="listcoveragestatisticsresponsetypedef"></a>
 
 ## ListCoverageStatisticsResponseTypeDef
 
@@ -1328,6 +1486,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdelegatedadminaccountsrequestrequesttypedef"></a>
+
 ## ListDelegatedAdminAccountsRequestRequestTypeDef
 
 ```python
@@ -1338,6 +1498,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listdelegatedadminaccountsresponsetypedef"></a>
 
 ## ListDelegatedAdminAccountsResponseTypeDef
 
@@ -1353,6 +1515,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfiltersrequestrequesttypedef"></a>
+
 ## ListFiltersRequestRequestTypeDef
 
 ```python
@@ -1366,6 +1530,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listfiltersresponsetypedef"></a>
+
 ## ListFiltersResponseTypeDef
 
 ```python
@@ -1378,6 +1544,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfindingaggregationsrequestrequesttypedef"></a>
 
 ## ListFindingAggregationsRequestRequestTypeDef
 
@@ -1398,6 +1566,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listfindingaggregationsresponsetypedef"></a>
+
 ## ListFindingAggregationsResponseTypeDef
 
 ```python
@@ -1413,6 +1583,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfindingsrequestrequesttypedef"></a>
+
 ## ListFindingsRequestRequestTypeDef
 
 ```python
@@ -1427,6 +1599,8 @@ Optional fields:
 - `nextToken`: `str`
 - `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
+<a id="listfindingsresponsetypedef"></a>
+
 ## ListFindingsResponseTypeDef
 
 ```python
@@ -1440,6 +1614,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmembersrequestrequesttypedef"></a>
+
 ## ListMembersRequestRequestTypeDef
 
 ```python
@@ -1451,6 +1627,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `onlyAssociated`: `bool`
+
+<a id="listmembersresponsetypedef"></a>
 
 ## ListMembersResponseTypeDef
 
@@ -1465,6 +1643,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1474,6 +1654,8 @@ from mypy_boto3_inspector2.type_defs import ListTagsForResourceRequestRequestTyp
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1487,6 +1669,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listusagetotalsrequestrequesttypedef"></a>
+
 ## ListUsageTotalsRequestRequestTypeDef
 
 ```python
@@ -1498,6 +1682,8 @@ Optional fields:
 - `accountIds`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listusagetotalsresponsetypedef"></a>
 
 ## ListUsageTotalsResponseTypeDef
 
@@ -1511,6 +1697,8 @@ Required fields:
 - `totals`: `List`\[[UsageTotalTypeDef](./type_defs.md#usagetotaltypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mapfiltertypedef"></a>
 
 ## MapFilterTypeDef
 
@@ -1528,6 +1716,8 @@ Optional fields:
 
 - `value`: `str`
 
+<a id="membertypedef"></a>
+
 ## MemberTypeDef
 
 ```python
@@ -1542,6 +1732,8 @@ Optional fields:
   [RelationshipStatusType](./literals.md#relationshipstatustype)
 - `updatedAt`: `datetime`
 
+<a id="networkpathtypedef"></a>
+
 ## NetworkPathTypeDef
 
 ```python
@@ -1551,6 +1743,8 @@ from mypy_boto3_inspector2.type_defs import NetworkPathTypeDef
 Optional fields:
 
 - `steps`: `List`\[[StepTypeDef](./type_defs.md#steptypedef)\]
+
+<a id="networkreachabilitydetailstypedef"></a>
 
 ## NetworkReachabilityDetailsTypeDef
 
@@ -1564,6 +1758,8 @@ Required fields:
 - `openPortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
 - `protocol`: [NetworkProtocolType](./literals.md#networkprotocoltype)
 
+<a id="numberfiltertypedef"></a>
+
 ## NumberFilterTypeDef
 
 ```python
@@ -1574,6 +1770,8 @@ Optional fields:
 
 - `lowerInclusive`: `float`
 - `upperInclusive`: `float`
+
+<a id="packageaggregationresponsetypedef"></a>
 
 ## PackageAggregationResponseTypeDef
 
@@ -1591,6 +1789,8 @@ Optional fields:
 - `severityCounts`:
   [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
 
+<a id="packageaggregationtypedef"></a>
+
 ## PackageAggregationTypeDef
 
 ```python
@@ -1603,6 +1803,8 @@ Optional fields:
   `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `sortBy`: [PackageSortByType](./literals.md#packagesortbytype)
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+<a id="packagefiltertypedef"></a>
 
 ## PackageFilterTypeDef
 
@@ -1618,6 +1820,8 @@ Optional fields:
 - `release`: [StringFilterTypeDef](./type_defs.md#stringfiltertypedef)
 - `sourceLayerHash`: [StringFilterTypeDef](./type_defs.md#stringfiltertypedef)
 - `version`: [StringFilterTypeDef](./type_defs.md#stringfiltertypedef)
+
+<a id="packagevulnerabilitydetailstypedef"></a>
 
 ## PackageVulnerabilityDetailsTypeDef
 
@@ -1642,6 +1846,8 @@ Optional fields:
 - `vendorSeverity`: `str`
 - `vendorUpdatedAt`: `datetime`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1654,6 +1860,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="permissiontypedef"></a>
+
 ## PermissionTypeDef
 
 ```python
@@ -1664,6 +1872,8 @@ Required fields:
 
 - `operation`: [OperationType](./literals.md#operationtype)
 - `service`: [ServiceType](./literals.md#servicetype)
+
+<a id="portrangefiltertypedef"></a>
 
 ## PortRangeFilterTypeDef
 
@@ -1676,6 +1886,8 @@ Optional fields:
 - `beginInclusive`: `int`
 - `endInclusive`: `int`
 
+<a id="portrangetypedef"></a>
+
 ## PortRangeTypeDef
 
 ```python
@@ -1686,6 +1898,8 @@ Required fields:
 
 - `begin`: `int`
 - `end`: `int`
+
+<a id="recommendationtypedef"></a>
 
 ## RecommendationTypeDef
 
@@ -1698,6 +1912,8 @@ Optional fields:
 - `Url`: `str`
 - `text`: `str`
 
+<a id="remediationtypedef"></a>
+
 ## RemediationTypeDef
 
 ```python
@@ -1708,6 +1924,8 @@ Optional fields:
 
 - `recommendation`:
   [RecommendationTypeDef](./type_defs.md#recommendationtypedef)
+
+<a id="repositoryaggregationresponsetypedef"></a>
 
 ## RepositoryAggregationResponseTypeDef
 
@@ -1726,6 +1944,8 @@ Optional fields:
 - `severityCounts`:
   [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
 
+<a id="repositoryaggregationtypedef"></a>
+
 ## RepositoryAggregationTypeDef
 
 ```python
@@ -1739,6 +1959,8 @@ Optional fields:
 - `sortBy`: [RepositorySortByType](./literals.md#repositorysortbytype)
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="resourcedetailstypedef"></a>
+
 ## ResourceDetailsTypeDef
 
 ```python
@@ -1751,6 +1973,8 @@ Optional fields:
   [AwsEc2InstanceDetailsTypeDef](./type_defs.md#awsec2instancedetailstypedef)
 - `awsEcrContainerImage`:
   [AwsEcrContainerImageDetailsTypeDef](./type_defs.md#awsecrcontainerimagedetailstypedef)
+
+<a id="resourcescanmetadatatypedef"></a>
 
 ## ResourceScanMetadataTypeDef
 
@@ -1766,6 +1990,8 @@ Optional fields:
 - `ecrRepository`:
   [EcrRepositoryMetadataTypeDef](./type_defs.md#ecrrepositorymetadatatypedef)
 
+<a id="resourcestatetypedef"></a>
+
 ## ResourceStateTypeDef
 
 ```python
@@ -1777,6 +2003,8 @@ Required fields:
 - `ec2`: [StateTypeDef](./type_defs.md#statetypedef)
 - `ecr`: [StateTypeDef](./type_defs.md#statetypedef)
 
+<a id="resourcestatustypedef"></a>
+
 ## ResourceStatusTypeDef
 
 ```python
@@ -1787,6 +2015,8 @@ Required fields:
 
 - `ec2`: [StatusType](./literals.md#statustype)
 - `ecr`: [StatusType](./literals.md#statustype)
+
+<a id="resourcetypedef"></a>
 
 ## ResourceTypeDef
 
@@ -1806,6 +2036,8 @@ Optional fields:
 - `region`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1820,6 +2052,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="scanstatustypedef"></a>
+
 ## ScanStatusTypeDef
 
 ```python
@@ -1830,6 +2064,8 @@ Required fields:
 
 - `reason`: [ScanStatusReasonType](./literals.md#scanstatusreasontype)
 - `statusCode`: [ScanStatusCodeType](./literals.md#scanstatuscodetype)
+
+<a id="severitycountstypedef"></a>
 
 ## SeverityCountsTypeDef
 
@@ -1844,6 +2080,8 @@ Optional fields:
 - `high`: `int`
 - `medium`: `int`
 
+<a id="sortcriteriatypedef"></a>
+
 ## SortCriteriaTypeDef
 
 ```python
@@ -1854,6 +2092,8 @@ Required fields:
 
 - `field`: [SortFieldType](./literals.md#sortfieldtype)
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+<a id="statetypedef"></a>
 
 ## StateTypeDef
 
@@ -1867,6 +2107,8 @@ Required fields:
 - `errorMessage`: `str`
 - `status`: [StatusType](./literals.md#statustype)
 
+<a id="steptypedef"></a>
+
 ## StepTypeDef
 
 ```python
@@ -1877,6 +2119,8 @@ Required fields:
 
 - `componentId`: `str`
 - `componentType`: `str`
+
+<a id="stringfiltertypedef"></a>
 
 ## StringFilterTypeDef
 
@@ -1889,6 +2133,8 @@ Required fields:
 - `comparison`: [StringComparisonType](./literals.md#stringcomparisontype)
 - `value`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1899,6 +2145,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="titleaggregationresponsetypedef"></a>
 
 ## TitleAggregationResponseTypeDef
 
@@ -1917,6 +2165,8 @@ Optional fields:
   [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
 - `vulnerabilityId`: `str`
 
+<a id="titleaggregationtypedef"></a>
+
 ## TitleAggregationTypeDef
 
 ```python
@@ -1934,6 +2184,8 @@ Optional fields:
 - `vulnerabilityIds`:
   `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1944,6 +2196,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatefilterrequestrequesttypedef"></a>
 
 ## UpdateFilterRequestRequestTypeDef
 
@@ -1963,6 +2217,8 @@ Optional fields:
   [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
 - `name`: `str`
 
+<a id="updatefilterresponsetypedef"></a>
+
 ## UpdateFilterResponseTypeDef
 
 ```python
@@ -1975,6 +2231,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateorganizationconfigurationrequestrequesttypedef"></a>
+
 ## UpdateOrganizationConfigurationRequestRequestTypeDef
 
 ```python
@@ -1984,6 +2242,8 @@ from mypy_boto3_inspector2.type_defs import UpdateOrganizationConfigurationReque
 Required fields:
 
 - `autoEnable`: [AutoEnableTypeDef](./type_defs.md#autoenabletypedef)
+
+<a id="updateorganizationconfigurationresponsetypedef"></a>
 
 ## UpdateOrganizationConfigurationResponseTypeDef
 
@@ -1997,6 +2257,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="usagetotaltypedef"></a>
+
 ## UsageTotalTypeDef
 
 ```python
@@ -2007,6 +2269,8 @@ Optional fields:
 
 - `accountId`: `str`
 - `usage`: `List`\[[UsageTypeDef](./type_defs.md#usagetypedef)\]
+
+<a id="usagetypedef"></a>
 
 ## UsageTypeDef
 
@@ -2020,6 +2284,8 @@ Optional fields:
 - `estimatedMonthlyCost`: `float`
 - `total`: `float`
 - `type`: [UsageTypeType](./literals.md#usagetypetype)
+
+<a id="vulnerablepackagetypedef"></a>
 
 ## VulnerablePackageTypeDef
 

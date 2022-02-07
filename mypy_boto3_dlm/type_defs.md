@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-dlm-module"></a>
+
 # Typed dictionaries for boto3 DLM module
 
 > [Index](..) > [DLM](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
 type annotations stubs module
-[mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
+[mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
 - [Typed dictionaries for boto3 DLM module](#typed-dictionaries-for-boto3-dlm-module)
   - [ActionTypeDef](#actiontypedef)
@@ -41,6 +43,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateLifecyclePolicyRequestRequestTypeDef](#updatelifecyclepolicyrequestrequesttypedef)
 
+<a id="actiontypedef"></a>
+
 ## ActionTypeDef
 
 ```python
@@ -52,6 +56,8 @@ Required fields:
 - `Name`: `str`
 - `CrossRegionCopy`:
   `Sequence`\[[CrossRegionCopyActionTypeDef](./type_defs.md#crossregioncopyactiontypedef)\]
+
+<a id="createlifecyclepolicyrequestrequesttypedef"></a>
 
 ## CreateLifecyclePolicyRequestRequestTypeDef
 
@@ -71,6 +77,8 @@ Optional fields:
 
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createlifecyclepolicyresponsetypedef"></a>
+
 ## CreateLifecyclePolicyResponseTypeDef
 
 ```python
@@ -82,6 +90,8 @@ Required fields:
 - `PolicyId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createruletypedef"></a>
 
 ## CreateRuleTypeDef
 
@@ -97,6 +107,8 @@ Optional fields:
   [IntervalUnitValuesType](./literals.md#intervalunitvaluestype))
 - `Times`: `Sequence`\[`str`\]
 - `CronExpression`: `str`
+
+<a id="crossregioncopyactiontypedef"></a>
 
 ## CrossRegionCopyActionTypeDef
 
@@ -115,6 +127,8 @@ Optional fields:
 - `RetainRule`:
   [CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef)
 
+<a id="crossregioncopydeprecateruletypedef"></a>
+
 ## CrossRegionCopyDeprecateRuleTypeDef
 
 ```python
@@ -127,6 +141,8 @@ Optional fields:
 - `IntervalUnit`:
   [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 
+<a id="crossregioncopyretainruletypedef"></a>
+
 ## CrossRegionCopyRetainRuleTypeDef
 
 ```python
@@ -138,6 +154,8 @@ Optional fields:
 - `Interval`: `int`
 - `IntervalUnit`:
   [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
+
+<a id="crossregioncopyruletypedef"></a>
 
 ## CrossRegionCopyRuleTypeDef
 
@@ -160,6 +178,8 @@ Optional fields:
 - `DeprecateRule`:
   [CrossRegionCopyDeprecateRuleTypeDef](./type_defs.md#crossregioncopydeprecateruletypedef)
 
+<a id="deletelifecyclepolicyrequestrequesttypedef"></a>
+
 ## DeleteLifecyclePolicyRequestRequestTypeDef
 
 ```python
@@ -169,6 +189,8 @@ from mypy_boto3_dlm.type_defs import DeleteLifecyclePolicyRequestRequestTypeDef
 Required fields:
 
 - `PolicyId`: `str`
+
+<a id="deprecateruletypedef"></a>
 
 ## DeprecateRuleTypeDef
 
@@ -182,6 +204,8 @@ Optional fields:
 - `Interval`: `int`
 - `IntervalUnit`:
   [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
+
+<a id="encryptionconfigurationtypedef"></a>
 
 ## EncryptionConfigurationTypeDef
 
@@ -197,6 +221,8 @@ Optional fields:
 
 - `CmkArn`: `str`
 
+<a id="eventparameterstypedef"></a>
+
 ## EventParametersTypeDef
 
 ```python
@@ -209,6 +235,8 @@ Required fields:
   [EventTypeValuesType](./literals.md#eventtypevaluestype))
 - `SnapshotOwner`: `Sequence`\[`str`\]
 - `DescriptionRegex`: `str`
+
+<a id="eventsourcetypedef"></a>
 
 ## EventSourceTypeDef
 
@@ -224,6 +252,8 @@ Required fields:
 Optional fields:
 
 - `Parameters`: [EventParametersTypeDef](./type_defs.md#eventparameterstypedef)
+
+<a id="fastrestoreruletypedef"></a>
 
 ## FastRestoreRuleTypeDef
 
@@ -242,6 +272,8 @@ Optional fields:
 - `IntervalUnit`:
   [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 
+<a id="getlifecyclepoliciesrequestrequesttypedef"></a>
+
 ## GetLifecyclePoliciesRequestRequestTypeDef
 
 ```python
@@ -258,6 +290,8 @@ Optional fields:
 - `TargetTags`: `Sequence`\[`str`\]
 - `TagsToAdd`: `Sequence`\[`str`\]
 
+<a id="getlifecyclepoliciesresponsetypedef"></a>
+
 ## GetLifecyclePoliciesResponseTypeDef
 
 ```python
@@ -271,6 +305,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlifecyclepolicyrequestrequesttypedef"></a>
+
 ## GetLifecyclePolicyRequestRequestTypeDef
 
 ```python
@@ -280,6 +316,8 @@ from mypy_boto3_dlm.type_defs import GetLifecyclePolicyRequestRequestTypeDef
 Required fields:
 
 - `PolicyId`: `str`
+
+<a id="getlifecyclepolicyresponsetypedef"></a>
 
 ## GetLifecyclePolicyResponseTypeDef
 
@@ -292,6 +330,8 @@ Required fields:
 - `Policy`: [LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="lifecyclepolicysummarytypedef"></a>
 
 ## LifecyclePolicySummaryTypeDef
 
@@ -307,6 +347,8 @@ Optional fields:
   [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `PolicyType`: [PolicyTypeValuesType](./literals.md#policytypevaluestype)
+
+<a id="lifecyclepolicytypedef"></a>
 
 ## LifecyclePolicyTypeDef
 
@@ -328,6 +370,8 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `PolicyArn`: `str`
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -337,6 +381,8 @@ from mypy_boto3_dlm.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -350,6 +396,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="parameterstypedef"></a>
+
 ## ParametersTypeDef
 
 ```python
@@ -360,6 +408,8 @@ Optional fields:
 
 - `ExcludeBootVolume`: `bool`
 - `NoReboot`: `bool`
+
+<a id="policydetailstypedef"></a>
 
 ## PolicyDetailsTypeDef
 
@@ -380,6 +430,8 @@ Optional fields:
 - `EventSource`: [EventSourceTypeDef](./type_defs.md#eventsourcetypedef)
 - `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -394,6 +446,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retainruletypedef"></a>
+
 ## RetainRuleTypeDef
 
 ```python
@@ -406,6 +460,8 @@ Optional fields:
 - `Interval`: `int`
 - `IntervalUnit`:
   [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
+
+<a id="scheduletypedef"></a>
 
 ## ScheduleTypeDef
 
@@ -429,6 +485,8 @@ Optional fields:
   `Sequence`\[[ShareRuleTypeDef](./type_defs.md#shareruletypedef)\]
 - `DeprecateRule`: [DeprecateRuleTypeDef](./type_defs.md#deprecateruletypedef)
 
+<a id="shareruletypedef"></a>
+
 ## ShareRuleTypeDef
 
 ```python
@@ -445,6 +503,8 @@ Optional fields:
 - `UnshareIntervalUnit`:
   [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -455,6 +515,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -467,6 +529,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -477,6 +541,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatelifecyclepolicyrequestrequesttypedef"></a>
 
 ## UpdateLifecyclePolicyRequestRequestTypeDef
 

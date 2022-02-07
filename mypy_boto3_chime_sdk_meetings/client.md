@@ -1,3 +1,5 @@
+<a id="chimesdkmeetingsclient-for-boto3-chimesdkmeetings-module"></a>
+
 # ChimeSDKMeetingsClient for boto3 ChimeSDKMeetings module
 
 > [Index](..) > [ChimeSDKMeetings](.) > ChimeSDKMeetingsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
 type annotations stubs module
-[mypy_boto3_chime_sdk_meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
+[mypy-boto3-chime-sdk-meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
 
 - [ChimeSDKMeetingsClient for boto3 ChimeSDKMeetings module](#chimesdkmeetingsclient-for-boto3-chimesdkmeetings-module)
   - [ChimeSDKMeetingsClient](#chimesdkmeetingsclient)
@@ -26,6 +28,8 @@ type annotations stubs module
     - [start_meeting_transcription](#start_meeting_transcription)
     - [stop_meeting_transcription](#stop_meeting_transcription)
 
+<a id="chimesdkmeetingsclient"></a>
+
 ## ChimeSDKMeetingsClient
 
 Type annotations for `boto3.client("chime-sdk-meetings")`
@@ -33,14 +37,17 @@ Type annotations for `boto3.client("chime-sdk-meetings")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_chime_sdk_meetings.client import ChimeSDKMeetingsClient
 
 def get_chime-sdk-meetings_client() -> ChimeSDKMeetingsClient:
-    return boto3.client("chime-sdk-meetings")
+    return Session().client("chime-sdk-meetings")
 ```
 
 Boto3 documentation:
 [ChimeSDKMeetings.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -65,7 +72,11 @@ Exceptions:
 - `Exceptions.UnauthorizedException`
 - `Exceptions.UnprocessableEntityException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -77,6 +88,8 @@ Boto3 documentation:
 [ChimeSDKMeetings.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_create_attendee"></a>
 
 ### batch_create_attendee
 
@@ -101,6 +114,8 @@ Keyword-only arguments:
 Returns
 [BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -115,6 +130,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_attendee"></a>
 
 ### create_attendee
 
@@ -136,6 +153,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef).
+
+<a id="create_meeting"></a>
 
 ### create_meeting
 
@@ -164,6 +183,8 @@ Keyword-only arguments:
 
 Returns
 [CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef).
+
+<a id="create_meeting_with_attendees"></a>
 
 ### create_meeting_with_attendees
 
@@ -196,6 +217,8 @@ Keyword-only arguments:
 Returns
 [CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef).
 
+<a id="delete_attendee"></a>
+
 ### delete_attendee
 
 Deletes an attendee from the specified Amazon Chime SDK meeting and deletes
@@ -215,6 +238,8 @@ Keyword-only arguments:
 - `MeetingId`: `str` *(required)*
 - `AttendeeId`: `str` *(required)*
 
+<a id="delete_meeting"></a>
+
 ### delete_meeting
 
 Deletes the specified Amazon Chime SDK meeting.
@@ -231,6 +256,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -250,6 +277,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_attendee"></a>
 
 ### get_attendee
 
@@ -272,6 +301,8 @@ Keyword-only arguments:
 Returns
 [GetAttendeeResponseTypeDef](./type_defs.md#getattendeeresponsetypedef).
 
+<a id="get_meeting"></a>
+
 ### get_meeting
 
 Gets the Amazon Chime SDK meeting details for the specified meeting ID.
@@ -289,6 +320,8 @@ Keyword-only arguments:
 - `MeetingId`: `str` *(required)*
 
 Returns [GetMeetingResponseTypeDef](./type_defs.md#getmeetingresponsetypedef).
+
+<a id="list_attendees"></a>
 
 ### list_attendees
 
@@ -312,6 +345,8 @@ Keyword-only arguments:
 Returns
 [ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef).
 
+<a id="start_meeting_transcription"></a>
+
 ### start_meeting_transcription
 
 Starts transcription for the specified `meetingId` .
@@ -331,6 +366,8 @@ Keyword-only arguments:
 - `TranscriptionConfiguration`:
   [TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef)
   *(required)*
+
+<a id="stop_meeting_transcription"></a>
 
 ### stop_meeting_transcription
 

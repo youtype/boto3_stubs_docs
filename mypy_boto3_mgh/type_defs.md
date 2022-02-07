@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-migrationhub-module"></a>
+
 # Typed dictionaries for boto3 MigrationHub module
 
 > [Index](..) > [MigrationHub](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
 type annotations stubs module
-[mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
+[mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 - [Typed dictionaries for boto3 MigrationHub module](#typed-dictionaries-for-boto3-migrationhub-module)
   - [ApplicationStateTypeDef](#applicationstatetypedef)
@@ -43,6 +45,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TaskTypeDef](#tasktypedef)
 
+<a id="applicationstatetypedef"></a>
+
 ## ApplicationStateTypeDef
 
 ```python
@@ -55,6 +59,8 @@ Optional fields:
 - `ApplicationStatus`:
   [ApplicationStatusType](./literals.md#applicationstatustype)
 - `LastUpdatedTime`: `datetime`
+
+<a id="associatecreatedartifactrequestrequesttypedef"></a>
 
 ## AssociateCreatedArtifactRequestRequestTypeDef
 
@@ -73,6 +79,8 @@ Optional fields:
 
 - `DryRun`: `bool`
 
+<a id="associatediscoveredresourcerequestrequesttypedef"></a>
+
 ## AssociateDiscoveredResourceRequestRequestTypeDef
 
 ```python
@@ -90,6 +98,8 @@ Optional fields:
 
 - `DryRun`: `bool`
 
+<a id="createprogressupdatestreamrequestrequesttypedef"></a>
+
 ## CreateProgressUpdateStreamRequestRequestTypeDef
 
 ```python
@@ -103,6 +113,8 @@ Required fields:
 Optional fields:
 
 - `DryRun`: `bool`
+
+<a id="createdartifacttypedef"></a>
 
 ## CreatedArtifactTypeDef
 
@@ -118,6 +130,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="deleteprogressupdatestreamrequestrequesttypedef"></a>
+
 ## DeleteProgressUpdateStreamRequestRequestTypeDef
 
 ```python
@@ -132,6 +146,8 @@ Optional fields:
 
 - `DryRun`: `bool`
 
+<a id="describeapplicationstaterequestrequesttypedef"></a>
+
 ## DescribeApplicationStateRequestRequestTypeDef
 
 ```python
@@ -141,6 +157,8 @@ from mypy_boto3_mgh.type_defs import DescribeApplicationStateRequestRequestTypeD
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="describeapplicationstateresulttypedef"></a>
 
 ## DescribeApplicationStateResultTypeDef
 
@@ -156,6 +174,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemigrationtaskrequestrequesttypedef"></a>
+
 ## DescribeMigrationTaskRequestRequestTypeDef
 
 ```python
@@ -166,6 +186,8 @@ Required fields:
 
 - `ProgressUpdateStream`: `str`
 - `MigrationTaskName`: `str`
+
+<a id="describemigrationtaskresulttypedef"></a>
 
 ## DescribeMigrationTaskResultTypeDef
 
@@ -178,6 +200,8 @@ Required fields:
 - `MigrationTask`: [MigrationTaskTypeDef](./type_defs.md#migrationtasktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="disassociatecreatedartifactrequestrequesttypedef"></a>
 
 ## DisassociateCreatedArtifactRequestRequestTypeDef
 
@@ -195,6 +219,8 @@ Optional fields:
 
 - `DryRun`: `bool`
 
+<a id="disassociatediscoveredresourcerequestrequesttypedef"></a>
+
 ## DisassociateDiscoveredResourceRequestRequestTypeDef
 
 ```python
@@ -211,6 +237,8 @@ Optional fields:
 
 - `DryRun`: `bool`
 
+<a id="discoveredresourcetypedef"></a>
+
 ## DiscoveredResourceTypeDef
 
 ```python
@@ -224,6 +252,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="importmigrationtaskrequestrequesttypedef"></a>
 
 ## ImportMigrationTaskRequestRequestTypeDef
 
@@ -240,6 +270,8 @@ Optional fields:
 
 - `DryRun`: `bool`
 
+<a id="listapplicationstatesrequestrequesttypedef"></a>
+
 ## ListApplicationStatesRequestRequestTypeDef
 
 ```python
@@ -251,6 +283,8 @@ Optional fields:
 - `ApplicationIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listapplicationstatesresulttypedef"></a>
 
 ## ListApplicationStatesResultTypeDef
 
@@ -265,6 +299,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcreatedartifactsrequestrequesttypedef"></a>
 
 ## ListCreatedArtifactsRequestRequestTypeDef
 
@@ -282,6 +318,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listcreatedartifactsresulttypedef"></a>
+
 ## ListCreatedArtifactsResultTypeDef
 
 ```python
@@ -295,6 +333,8 @@ Required fields:
   `List`\[[CreatedArtifactTypeDef](./type_defs.md#createdartifacttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdiscoveredresourcesrequestrequesttypedef"></a>
 
 ## ListDiscoveredResourcesRequestRequestTypeDef
 
@@ -312,6 +352,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listdiscoveredresourcesresulttypedef"></a>
+
 ## ListDiscoveredResourcesResultTypeDef
 
 ```python
@@ -326,6 +368,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmigrationtasksrequestrequesttypedef"></a>
+
 ## ListMigrationTasksRequestRequestTypeDef
 
 ```python
@@ -337,6 +381,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `ResourceName`: `str`
+
+<a id="listmigrationtasksresulttypedef"></a>
 
 ## ListMigrationTasksResultTypeDef
 
@@ -352,6 +398,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listprogressupdatestreamsrequestrequesttypedef"></a>
+
 ## ListProgressUpdateStreamsRequestRequestTypeDef
 
 ```python
@@ -362,6 +410,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listprogressupdatestreamsresulttypedef"></a>
 
 ## ListProgressUpdateStreamsResultTypeDef
 
@@ -376,6 +426,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="migrationtasksummarytypedef"></a>
 
 ## MigrationTaskSummaryTypeDef
 
@@ -392,6 +444,8 @@ Optional fields:
 - `StatusDetail`: `str`
 - `UpdateDateTime`: `datetime`
 
+<a id="migrationtasktypedef"></a>
+
 ## MigrationTaskTypeDef
 
 ```python
@@ -406,6 +460,8 @@ Optional fields:
 - `UpdateDateTime`: `datetime`
 - `ResourceAttributeList`:
   `List`\[[ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)\]
+
+<a id="notifyapplicationstaterequestrequesttypedef"></a>
 
 ## NotifyApplicationStateRequestRequestTypeDef
 
@@ -422,6 +478,8 @@ Optional fields:
 
 - `UpdateDateTime`: `Union`\[`datetime`, `str`\]
 - `DryRun`: `bool`
+
+<a id="notifymigrationtaskstaterequestrequesttypedef"></a>
 
 ## NotifyMigrationTaskStateRequestRequestTypeDef
 
@@ -441,6 +499,8 @@ Optional fields:
 
 - `DryRun`: `bool`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -453,6 +513,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="progressupdatestreamsummarytypedef"></a>
+
 ## ProgressUpdateStreamSummaryTypeDef
 
 ```python
@@ -462,6 +524,8 @@ from mypy_boto3_mgh.type_defs import ProgressUpdateStreamSummaryTypeDef
 Optional fields:
 
 - `ProgressUpdateStreamName`: `str`
+
+<a id="putresourceattributesrequestrequesttypedef"></a>
 
 ## PutResourceAttributesRequestRequestTypeDef
 
@@ -480,6 +544,8 @@ Optional fields:
 
 - `DryRun`: `bool`
 
+<a id="resourceattributetypedef"></a>
+
 ## ResourceAttributeTypeDef
 
 ```python
@@ -490,6 +556,8 @@ Required fields:
 
 - `Type`: [ResourceAttributeTypeType](./literals.md#resourceattributetypetype)
 - `Value`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -504,6 +572,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="tasktypedef"></a>
 
 ## TaskTypeDef
 

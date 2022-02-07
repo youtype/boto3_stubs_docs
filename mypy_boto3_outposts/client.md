@@ -1,3 +1,5 @@
+<a id="outpostsclient-for-boto3-outposts-module"></a>
+
 # OutpostsClient for boto3 Outposts module
 
 > [Index](..) > [Outposts](.) > OutpostsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
 type annotations stubs module
-[mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
+[mypy-boto3-outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 - [OutpostsClient for boto3 Outposts module](#outpostsclient-for-boto3-outposts-module)
   - [OutpostsClient](#outpostsclient)
@@ -38,6 +40,8 @@ type annotations stubs module
     - [update_site_address](#update_site_address)
     - [update_site_rack_physical_properties](#update_site_rack_physical_properties)
 
+<a id="outpostsclient"></a>
+
 ## OutpostsClient
 
 Type annotations for `boto3.client("outposts")`
@@ -45,14 +49,17 @@ Type annotations for `boto3.client("outposts")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_outposts.client import OutpostsClient
 
 def get_outposts_client() -> OutpostsClient:
-    return boto3.client("outposts")
+    return Session().client("outposts")
 ```
 
 Boto3 documentation:
 [Outposts.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -76,7 +83,11 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -88,6 +99,8 @@ Boto3 documentation:
 [Outposts.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -103,6 +116,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_order"></a>
 
 ### cancel_order
 
@@ -121,6 +136,8 @@ Keyword-only arguments:
 - `OrderId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_order"></a>
 
 ### create_order
 
@@ -146,6 +163,8 @@ Keyword-only arguments:
   [PaymentTermType](./literals.md#paymenttermtype))
 
 Returns [CreateOrderOutputTypeDef](./type_defs.md#createorderoutputtypedef).
+
+<a id="create_outpost"></a>
 
 ### create_outpost
 
@@ -173,6 +192,8 @@ Keyword-only arguments:
 Returns
 [CreateOutpostOutputTypeDef](./type_defs.md#createoutpostoutputtypedef).
 
+<a id="create_site"></a>
+
 ### create_site
 
 Creates a site for an Outpost.
@@ -198,6 +219,8 @@ Keyword-only arguments:
 
 Returns [CreateSiteOutputTypeDef](./type_defs.md#createsiteoutputtypedef).
 
+<a id="delete_outpost"></a>
+
 ### delete_outpost
 
 Deletes the Outpost.
@@ -215,6 +238,8 @@ Keyword-only arguments:
 - `OutpostId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_site"></a>
 
 ### delete_site
 
@@ -234,6 +259,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -251,6 +278,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_catalog_item"></a>
 
 ### get_catalog_item
 
@@ -271,6 +300,8 @@ Keyword-only arguments:
 Returns
 [GetCatalogItemOutputTypeDef](./type_defs.md#getcatalogitemoutputtypedef).
 
+<a id="get_order"></a>
+
 ### get_order
 
 Gets an order.
@@ -289,6 +320,8 @@ Keyword-only arguments:
 
 Returns [GetOrderOutputTypeDef](./type_defs.md#getorderoutputtypedef).
 
+<a id="get_outpost"></a>
+
 ### get_outpost
 
 Gets information about the specified Outpost.
@@ -306,6 +339,8 @@ Keyword-only arguments:
 - `OutpostId`: `str` *(required)*
 
 Returns [GetOutpostOutputTypeDef](./type_defs.md#getoutpostoutputtypedef).
+
+<a id="get_outpost_instance_types"></a>
 
 ### get_outpost_instance_types
 
@@ -329,6 +364,8 @@ Keyword-only arguments:
 Returns
 [GetOutpostInstanceTypesOutputTypeDef](./type_defs.md#getoutpostinstancetypesoutputtypedef).
 
+<a id="get_site"></a>
+
 ### get_site
 
 Gets information about the specified Outpost site.
@@ -346,6 +383,8 @@ Keyword-only arguments:
 - `SiteId`: `str` *(required)*
 
 Returns [GetSiteOutputTypeDef](./type_defs.md#getsiteoutputtypedef).
+
+<a id="get_site_address"></a>
 
 ### get_site_address
 
@@ -366,6 +405,8 @@ Keyword-only arguments:
 
 Returns
 [GetSiteAddressOutputTypeDef](./type_defs.md#getsiteaddressoutputtypedef).
+
+<a id="list_catalog_items"></a>
 
 ### list_catalog_items
 
@@ -392,6 +433,8 @@ Keyword-only arguments:
 Returns
 [ListCatalogItemsOutputTypeDef](./type_defs.md#listcatalogitemsoutputtypedef).
 
+<a id="list_orders"></a>
+
 ### list_orders
 
 Create a list of the Outpost orders for your Amazon Web Services account.
@@ -411,6 +454,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListOrdersOutputTypeDef](./type_defs.md#listordersoutputtypedef).
+
+<a id="list_outposts"></a>
 
 ### list_outposts
 
@@ -434,6 +479,8 @@ Keyword-only arguments:
 
 Returns [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef).
 
+<a id="list_sites"></a>
+
 ### list_sites
 
 Lists the sites for your Amazon Web Services account.
@@ -452,6 +499,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListSitesOutputTypeDef](./type_defs.md#listsitesoutputtypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -472,6 +521,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to the specified resource.
@@ -491,6 +542,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from the specified resource.
@@ -509,6 +562,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_outpost"></a>
 
 ### update_outpost
 
@@ -533,6 +588,8 @@ Keyword-only arguments:
 Returns
 [UpdateOutpostOutputTypeDef](./type_defs.md#updateoutpostoutputtypedef).
 
+<a id="update_site"></a>
+
 ### update_site
 
 Updates the site.
@@ -554,6 +611,8 @@ Keyword-only arguments:
 
 Returns [UpdateSiteOutputTypeDef](./type_defs.md#updatesiteoutputtypedef).
 
+<a id="update_site_address"></a>
+
 ### update_site_address
 
 Updates the site address.
@@ -574,6 +633,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSiteAddressOutputTypeDef](./type_defs.md#updatesiteaddressoutputtypedef).
+
+<a id="update_site_rack_physical_properties"></a>
 
 ### update_site_rack_physical_properties
 

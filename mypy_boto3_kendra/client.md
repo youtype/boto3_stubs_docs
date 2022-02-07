@@ -1,3 +1,5 @@
+<a id="kendraclient-for-boto3-kendra-module"></a>
+
 # kendraClient for boto3 kendra module
 
 > [Index](..) > [kendra](.) > kendraClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
 type annotations stubs module
-[mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
+[mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
 - [kendraClient for boto3 kendra module](#kendraclient-for-boto3-kendra-module)
   - [kendraClient](#kendraclient)
@@ -70,6 +72,8 @@ type annotations stubs module
     - [update_query_suggestions_config](#update_query_suggestions_config)
     - [update_thesaurus](#update_thesaurus)
 
+<a id="kendraclient"></a>
+
 ## kendraClient
 
 Type annotations for `boto3.client("kendra")`
@@ -77,14 +81,17 @@ Type annotations for `boto3.client("kendra")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_kendra.client import kendraClient
 
 def get_kendra_client() -> kendraClient:
-    return boto3.client("kendra")
+    return Session().client("kendra")
 ```
 
 Boto3 documentation:
 [kendra.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -113,7 +120,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -125,6 +136,8 @@ Boto3 documentation:
 [kendra.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_entities_to_experience"></a>
 
 ### associate_entities_to_experience
 
@@ -151,6 +164,8 @@ Keyword-only arguments:
 Returns
 [AssociateEntitiesToExperienceResponseTypeDef](./type_defs.md#associateentitiestoexperienceresponsetypedef).
 
+<a id="associate_personas_to_entities"></a>
+
 ### associate_personas_to_entities
 
 Defines the specific permissions of users or groups in your Amazon Web Services
@@ -176,6 +191,8 @@ Keyword-only arguments:
 Returns
 [AssociatePersonasToEntitiesResponseTypeDef](./type_defs.md#associatepersonastoentitiesresponsetypedef).
 
+<a id="batch_delete_document"></a>
+
 ### batch_delete_document
 
 Removes one or more documents from an index.
@@ -197,6 +214,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDeleteDocumentResponseTypeDef](./type_defs.md#batchdeletedocumentresponsetypedef).
+
+<a id="batch_get_document_status"></a>
 
 ### batch_get_document_status
 
@@ -222,6 +241,8 @@ Keyword-only arguments:
 Returns
 [BatchGetDocumentStatusResponseTypeDef](./type_defs.md#batchgetdocumentstatusresponsetypedef).
 
+<a id="batch_put_document"></a>
+
 ### batch_put_document
 
 Adds one or more documents to an index.
@@ -246,6 +267,8 @@ Keyword-only arguments:
 Returns
 [BatchPutDocumentResponseTypeDef](./type_defs.md#batchputdocumentresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -260,6 +283,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="clear_query_suggestions"></a>
 
 ### clear_query_suggestions
 
@@ -276,6 +301,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
+
+<a id="create_data_source"></a>
 
 ### create_data_source
 
@@ -308,6 +335,8 @@ Keyword-only arguments:
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
 
+<a id="create_experience"></a>
+
 ### create_experience
 
 Creates an Amazon Kendra experience such as a search application.
@@ -332,6 +361,8 @@ Keyword-only arguments:
 
 Returns
 [CreateExperienceResponseTypeDef](./type_defs.md#createexperienceresponsetypedef).
+
+<a id="create_faq"></a>
 
 ### create_faq
 
@@ -358,6 +389,8 @@ Keyword-only arguments:
 - `LanguageCode`: `str`
 
 Returns [CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef).
+
+<a id="create_index"></a>
 
 ### create_index
 
@@ -391,6 +424,8 @@ Keyword-only arguments:
 Returns
 [CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
 
+<a id="create_query_suggestions_block_list"></a>
+
 ### create_query_suggestions_block_list
 
 Creates a block list to exlcude certain queries from suggestions.
@@ -417,6 +452,8 @@ Keyword-only arguments:
 Returns
 [CreateQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponsetypedef).
 
+<a id="create_thesaurus"></a>
+
 ### create_thesaurus
 
 Creates a thesaurus for an index.
@@ -442,6 +479,8 @@ Keyword-only arguments:
 Returns
 [CreateThesaurusResponseTypeDef](./type_defs.md#createthesaurusresponsetypedef).
 
+<a id="delete_data_source"></a>
+
 ### delete_data_source
 
 Deletes an Amazon Kendra data source.
@@ -458,6 +497,8 @@ Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
+
+<a id="delete_experience"></a>
 
 ### delete_experience
 
@@ -478,6 +519,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_faq"></a>
+
 ### delete_faq
 
 Removes an FAQ from an index.
@@ -495,6 +538,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
 
+<a id="delete_index"></a>
+
 ### delete_index
 
 Deletes an existing Amazon Kendra index.
@@ -510,6 +555,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
+
+<a id="delete_principal_mapping"></a>
 
 ### delete_principal_mapping
 
@@ -531,6 +578,8 @@ Keyword-only arguments:
 - `DataSourceId`: `str`
 - `OrderingId`: `int`
 
+<a id="delete_query_suggestions_block_list"></a>
+
 ### delete_query_suggestions_block_list
 
 Deletes a block list used for query suggestions for an index.
@@ -549,6 +598,8 @@ Keyword-only arguments:
 - `IndexId`: `str` *(required)*
 - `Id`: `str` *(required)*
 
+<a id="delete_thesaurus"></a>
+
 ### delete_thesaurus
 
 Deletes an existing Amazon Kendra thesaurus.
@@ -565,6 +616,8 @@ Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
+
+<a id="describe_data_source"></a>
 
 ### describe_data_source
 
@@ -585,6 +638,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef).
+
+<a id="describe_experience"></a>
 
 ### describe_experience
 
@@ -607,6 +662,8 @@ Keyword-only arguments:
 Returns
 [DescribeExperienceResponseTypeDef](./type_defs.md#describeexperienceresponsetypedef).
 
+<a id="describe_faq"></a>
+
 ### describe_faq
 
 Gets information about an FAQ list.
@@ -627,6 +684,8 @@ Keyword-only arguments:
 Returns
 [DescribeFaqResponseTypeDef](./type_defs.md#describefaqresponsetypedef).
 
+<a id="describe_index"></a>
+
 ### describe_index
 
 Describes an existing Amazon Kendra index See also:
@@ -646,6 +705,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef).
+
+<a id="describe_principal_mapping"></a>
 
 ### describe_principal_mapping
 
@@ -670,6 +731,8 @@ Keyword-only arguments:
 Returns
 [DescribePrincipalMappingResponseTypeDef](./type_defs.md#describeprincipalmappingresponsetypedef).
 
+<a id="describe_query_suggestions_block_list"></a>
+
 ### describe_query_suggestions_block_list
 
 Describes a block list used for query suggestions for an index.
@@ -691,6 +754,8 @@ Keyword-only arguments:
 Returns
 [DescribeQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#describequerysuggestionsblocklistresponsetypedef).
 
+<a id="describe_query_suggestions_config"></a>
+
 ### describe_query_suggestions_config
 
 Describes the settings of query suggestions for an index.
@@ -711,6 +776,8 @@ Keyword-only arguments:
 Returns
 [DescribeQuerySuggestionsConfigResponseTypeDef](./type_defs.md#describequerysuggestionsconfigresponsetypedef).
 
+<a id="describe_thesaurus"></a>
+
 ### describe_thesaurus
 
 Describes an existing Amazon Kendra thesaurus.
@@ -730,6 +797,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeThesaurusResponseTypeDef](./type_defs.md#describethesaurusresponsetypedef).
+
+<a id="disassociate_entities_from_experience"></a>
 
 ### disassociate_entities_from_experience
 
@@ -756,6 +825,8 @@ Keyword-only arguments:
 Returns
 [DisassociateEntitiesFromExperienceResponseTypeDef](./type_defs.md#disassociateentitiesfromexperienceresponsetypedef).
 
+<a id="disassociate_personas_from_entities"></a>
+
 ### disassociate_personas_from_entities
 
 Removes the specific permissions of users or groups in your Amazon Web Services
@@ -779,6 +850,8 @@ Keyword-only arguments:
 Returns
 [DisassociatePersonasFromEntitiesResponseTypeDef](./type_defs.md#disassociatepersonasfromentitiesresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -796,6 +869,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_query_suggestions"></a>
 
 ### get_query_suggestions
 
@@ -817,6 +892,8 @@ Keyword-only arguments:
 
 Returns
 [GetQuerySuggestionsResponseTypeDef](./type_defs.md#getquerysuggestionsresponsetypedef).
+
+<a id="get_snapshots"></a>
 
 ### get_snapshots
 
@@ -840,6 +917,8 @@ Keyword-only arguments:
 
 Returns
 [GetSnapshotsResponseTypeDef](./type_defs.md#getsnapshotsresponsetypedef).
+
+<a id="list_data_source_sync_jobs"></a>
 
 ### list_data_source_sync_jobs
 
@@ -867,6 +946,8 @@ Keyword-only arguments:
 Returns
 [ListDataSourceSyncJobsResponseTypeDef](./type_defs.md#listdatasourcesyncjobsresponsetypedef).
 
+<a id="list_data_sources"></a>
+
 ### list_data_sources
 
 Lists the data sources that you have created.
@@ -887,6 +968,8 @@ Keyword-only arguments:
 
 Returns
 [ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
+
+<a id="list_entity_personas"></a>
 
 ### list_entity_personas
 
@@ -911,6 +994,8 @@ Keyword-only arguments:
 Returns
 [ListEntityPersonasResponseTypeDef](./type_defs.md#listentitypersonasresponsetypedef).
 
+<a id="list_experience_entities"></a>
+
 ### list_experience_entities
 
 Lists users or groups in your Amazon Web Services SSO identity source that are
@@ -933,6 +1018,8 @@ Keyword-only arguments:
 Returns
 [ListExperienceEntitiesResponseTypeDef](./type_defs.md#listexperienceentitiesresponsetypedef).
 
+<a id="list_experiences"></a>
+
 ### list_experiences
 
 Lists one or more Amazon Kendra experiences.
@@ -954,6 +1041,8 @@ Keyword-only arguments:
 Returns
 [ListExperiencesResponseTypeDef](./type_defs.md#listexperiencesresponsetypedef).
 
+<a id="list_faqs"></a>
+
 ### list_faqs
 
 Gets a list of FAQ lists associated with an index.
@@ -973,6 +1062,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListFaqsResponseTypeDef](./type_defs.md#listfaqsresponsetypedef).
+
+<a id="list_groups_older_than_ordering_id"></a>
 
 ### list_groups_older_than_ordering_id
 
@@ -999,6 +1090,8 @@ Keyword-only arguments:
 Returns
 [ListGroupsOlderThanOrderingIdResponseTypeDef](./type_defs.md#listgroupsolderthanorderingidresponsetypedef).
 
+<a id="list_indices"></a>
+
 ### list_indices
 
 Lists the Amazon Kendra indexes that you have created.
@@ -1018,6 +1111,8 @@ Keyword-only arguments:
 
 Returns
 [ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef).
+
+<a id="list_query_suggestions_block_lists"></a>
 
 ### list_query_suggestions_block_lists
 
@@ -1041,6 +1136,8 @@ Keyword-only arguments:
 Returns
 [ListQuerySuggestionsBlockListsResponseTypeDef](./type_defs.md#listquerysuggestionsblocklistsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Gets a list of tags associated with a specified resource.
@@ -1059,6 +1156,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_thesauri"></a>
 
 ### list_thesauri
 
@@ -1080,6 +1179,8 @@ Keyword-only arguments:
 
 Returns
 [ListThesauriResponseTypeDef](./type_defs.md#listthesauriresponsetypedef).
+
+<a id="put_principal_mapping"></a>
 
 ### put_principal_mapping
 
@@ -1103,6 +1204,8 @@ Keyword-only arguments:
 - `DataSourceId`: `str`
 - `OrderingId`: `int`
 - `RoleArn`: `str`
+
+<a id="query"></a>
 
 ### query
 
@@ -1137,6 +1240,8 @@ Keyword-only arguments:
 
 Returns [QueryResultTypeDef](./type_defs.md#queryresulttypedef).
 
+<a id="start_data_source_sync_job"></a>
+
 ### start_data_source_sync_job
 
 Starts a synchronization job for a data source.
@@ -1158,6 +1263,8 @@ Keyword-only arguments:
 Returns
 [StartDataSourceSyncJobResponseTypeDef](./type_defs.md#startdatasourcesyncjobresponsetypedef).
 
+<a id="stop_data_source_sync_job"></a>
+
 ### stop_data_source_sync_job
 
 Stops a running synchronization job.
@@ -1174,6 +1281,8 @@ Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
+
+<a id="submit_feedback"></a>
 
 ### submit_feedback
 
@@ -1197,6 +1306,8 @@ Keyword-only arguments:
 - `RelevanceFeedbackItems`:
   `Sequence`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tag to the specified index, FAQ, or data source resource.
@@ -1216,6 +1327,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from an index, FAQ, or a data source.
@@ -1234,6 +1347,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_data_source"></a>
 
 ### update_data_source
 
@@ -1261,6 +1376,8 @@ Keyword-only arguments:
 - `CustomDocumentEnrichmentConfiguration`:
   [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
 
+<a id="update_experience"></a>
+
 ### update_experience
 
 Updates your Amazon Kendra experience such as a search application.
@@ -1282,6 +1399,8 @@ Keyword-only arguments:
 - `Configuration`:
   [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
 - `Description`: `str`
+
+<a id="update_index"></a>
 
 ### update_index
 
@@ -1312,6 +1431,8 @@ Keyword-only arguments:
 - `UserGroupResolutionConfiguration`:
   [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 
+<a id="update_query_suggestions_block_list"></a>
+
 ### update_query_suggestions_block_list
 
 Updates a block list used for query suggestions for an index.
@@ -1334,6 +1455,8 @@ Keyword-only arguments:
 - `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 - `RoleArn`: `str`
 
+<a id="update_query_suggestions_config"></a>
+
 ### update_query_suggestions_config
 
 Updates the settings of query suggestions for an index.
@@ -1355,6 +1478,8 @@ Keyword-only arguments:
 - `IncludeQueriesWithoutUserInformation`: `bool`
 - `MinimumNumberOfQueryingUsers`: `int`
 - `MinimumQueryCount`: `int`
+
+<a id="update_thesaurus"></a>
 
 ### update_thesaurus
 

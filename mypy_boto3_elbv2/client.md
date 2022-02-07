@@ -1,3 +1,5 @@
+<a id="elasticloadbalancingv2client-for-boto3-elasticloadbalancingv2-module"></a>
+
 # ElasticLoadBalancingv2Client for boto3 ElasticLoadBalancingv2 module
 
 > [Index](..) > [ElasticLoadBalancingv2](.) > ElasticLoadBalancingv2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
 type annotations stubs module
-[mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
+[mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
 - [ElasticLoadBalancingv2Client for boto3 ElasticLoadBalancingv2 module](#elasticloadbalancingv2client-for-boto3-elasticloadbalancingv2-module)
   - [ElasticLoadBalancingv2Client](#elasticloadbalancingv2client)
@@ -51,6 +53,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="elasticloadbalancingv2client"></a>
+
 ## ElasticLoadBalancingv2Client
 
 Type annotations for `boto3.client("elbv2")`
@@ -58,14 +62,17 @@ Type annotations for `boto3.client("elbv2")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_elbv2.client import ElasticLoadBalancingv2Client
 
 def get_elbv2_client() -> ElasticLoadBalancingv2Client:
-    return boto3.client("elbv2")
+    return Session().client("elbv2")
 ```
 
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -120,7 +127,11 @@ Exceptions:
 - `Exceptions.TooManyUniqueTargetGroupsPerLoadBalancerException`
 - `Exceptions.UnsupportedProtocolException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -132,6 +143,8 @@ Boto3 documentation:
 [ElasticLoadBalancingv2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_listener_certificates"></a>
 
 ### add_listener_certificates
 
@@ -156,6 +169,8 @@ Keyword-only arguments:
 Returns
 [AddListenerCertificatesOutputTypeDef](./type_defs.md#addlistenercertificatesoutputtypedef).
 
+<a id="add_tags"></a>
+
 ### add_tags
 
 Adds the specified tags to the specified Elastic Load Balancing resource.
@@ -175,6 +190,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -189,6 +206,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_listener"></a>
 
 ### create_listener
 
@@ -218,6 +237,8 @@ Keyword-only arguments:
 
 Returns
 [CreateListenerOutputTypeDef](./type_defs.md#createlisteneroutputtypedef).
+
+<a id="create_load_balancer"></a>
 
 ### create_load_balancer
 
@@ -249,6 +270,8 @@ Keyword-only arguments:
 Returns
 [CreateLoadBalancerOutputTypeDef](./type_defs.md#createloadbalanceroutputtypedef).
 
+<a id="create_rule"></a>
+
 ### create_rule
 
 Creates a rule for the specified listener.
@@ -273,6 +296,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateRuleOutputTypeDef](./type_defs.md#createruleoutputtypedef).
+
+<a id="create_target_group"></a>
 
 ### create_target_group
 
@@ -310,6 +335,8 @@ Keyword-only arguments:
 Returns
 [CreateTargetGroupOutputTypeDef](./type_defs.md#createtargetgroupoutputtypedef).
 
+<a id="delete_listener"></a>
+
 ### delete_listener
 
 Deletes the specified listener.
@@ -327,6 +354,8 @@ Keyword-only arguments:
 - `ListenerArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_load_balancer"></a>
 
 ### delete_load_balancer
 
@@ -347,6 +376,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_rule"></a>
+
 ### delete_rule
 
 Deletes the specified rule.
@@ -365,6 +396,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_target_group"></a>
+
 ### delete_target_group
 
 Deletes the specified target group.
@@ -382,6 +415,8 @@ Keyword-only arguments:
 - `TargetGroupArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="deregister_targets"></a>
 
 ### deregister_targets
 
@@ -404,6 +439,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_account_limits"></a>
+
 ### describe_account_limits
 
 Describes the current Elastic Load Balancing resource limits for your Amazon
@@ -424,6 +461,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
+
+<a id="describe_listener_certificates"></a>
 
 ### describe_listener_certificates
 
@@ -448,6 +487,8 @@ Keyword-only arguments:
 Returns
 [DescribeListenerCertificatesOutputTypeDef](./type_defs.md#describelistenercertificatesoutputtypedef).
 
+<a id="describe_listeners"></a>
+
 ### describe_listeners
 
 Describes the specified listeners or the listeners for the specified
@@ -471,6 +512,8 @@ Keyword-only arguments:
 Returns
 [DescribeListenersOutputTypeDef](./type_defs.md#describelistenersoutputtypedef).
 
+<a id="describe_load_balancer_attributes"></a>
+
 ### describe_load_balancer_attributes
 
 Describes the attributes for the specified Application Load Balancer, Network
@@ -491,6 +534,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLoadBalancerAttributesOutputTypeDef](./type_defs.md#describeloadbalancerattributesoutputtypedef).
+
+<a id="describe_load_balancers"></a>
 
 ### describe_load_balancers
 
@@ -514,6 +559,8 @@ Keyword-only arguments:
 Returns
 [DescribeLoadBalancersOutputTypeDef](./type_defs.md#describeloadbalancersoutputtypedef).
 
+<a id="describe_rules"></a>
+
 ### describe_rules
 
 Describes the specified rules or the rules for the specified listener.
@@ -535,6 +582,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRulesOutputTypeDef](./type_defs.md#describerulesoutputtypedef).
+
+<a id="describe_ssl_policies"></a>
 
 ### describe_ssl_policies
 
@@ -559,6 +608,8 @@ Keyword-only arguments:
 Returns
 [DescribeSSLPoliciesOutputTypeDef](./type_defs.md#describesslpoliciesoutputtypedef).
 
+<a id="describe_tags"></a>
+
 ### describe_tags
 
 Describes the tags for the specified Elastic Load Balancing resources.
@@ -576,6 +627,8 @@ Keyword-only arguments:
 - `ResourceArns`: `Sequence`\[`str`\] *(required)*
 
 Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
+
+<a id="describe_target_group_attributes"></a>
 
 ### describe_target_group_attributes
 
@@ -596,6 +649,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTargetGroupAttributesOutputTypeDef](./type_defs.md#describetargetgroupattributesoutputtypedef).
+
+<a id="describe_target_groups"></a>
 
 ### describe_target_groups
 
@@ -620,6 +675,8 @@ Keyword-only arguments:
 Returns
 [DescribeTargetGroupsOutputTypeDef](./type_defs.md#describetargetgroupsoutputtypedef).
 
+<a id="describe_target_health"></a>
+
 ### describe_target_health
 
 Describes the health of the specified targets or all of your targets.
@@ -641,6 +698,8 @@ Keyword-only arguments:
 Returns
 [DescribeTargetHealthOutputTypeDef](./type_defs.md#describetargethealthoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -658,6 +717,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="modify_listener"></a>
 
 ### modify_listener
 
@@ -685,6 +746,8 @@ Keyword-only arguments:
 Returns
 [ModifyListenerOutputTypeDef](./type_defs.md#modifylisteneroutputtypedef).
 
+<a id="modify_load_balancer_attributes"></a>
+
 ### modify_load_balancer_attributes
 
 Modifies the specified attributes of the specified Application Load Balancer,
@@ -709,6 +772,8 @@ Keyword-only arguments:
 Returns
 [ModifyLoadBalancerAttributesOutputTypeDef](./type_defs.md#modifyloadbalancerattributesoutputtypedef).
 
+<a id="modify_rule"></a>
+
 ### modify_rule
 
 Replaces the specified properties of the specified rule.
@@ -729,6 +794,8 @@ Keyword-only arguments:
 - `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 Returns [ModifyRuleOutputTypeDef](./type_defs.md#modifyruleoutputtypedef).
+
+<a id="modify_target_group"></a>
 
 ### modify_target_group
 
@@ -759,6 +826,8 @@ Keyword-only arguments:
 Returns
 [ModifyTargetGroupOutputTypeDef](./type_defs.md#modifytargetgroupoutputtypedef).
 
+<a id="modify_target_group_attributes"></a>
+
 ### modify_target_group_attributes
 
 Modifies the specified attributes of the specified target group.
@@ -782,6 +851,8 @@ Keyword-only arguments:
 Returns
 [ModifyTargetGroupAttributesOutputTypeDef](./type_defs.md#modifytargetgroupattributesoutputtypedef).
 
+<a id="register_targets"></a>
+
 ### register_targets
 
 Registers the specified targets with the specified target group.
@@ -802,6 +873,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="remove_listener_certificates"></a>
 
 ### remove_listener_certificates
 
@@ -826,6 +899,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="remove_tags"></a>
+
 ### remove_tags
 
 Removes the specified tags from the specified Elastic Load Balancing resources.
@@ -844,6 +919,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="set_ip_address_type"></a>
 
 ### set_ip_address_type
 
@@ -867,6 +944,8 @@ Keyword-only arguments:
 Returns
 [SetIpAddressTypeOutputTypeDef](./type_defs.md#setipaddresstypeoutputtypedef).
 
+<a id="set_rule_priorities"></a>
+
 ### set_rule_priorities
 
 Sets the priorities of the specified rules.
@@ -888,6 +967,8 @@ Keyword-only arguments:
 Returns
 [SetRulePrioritiesOutputTypeDef](./type_defs.md#setruleprioritiesoutputtypedef).
 
+<a id="set_security_groups"></a>
+
 ### set_security_groups
 
 Associates the specified security groups with the specified Application Load
@@ -908,6 +989,8 @@ Keyword-only arguments:
 
 Returns
 [SetSecurityGroupsOutputTypeDef](./type_defs.md#setsecuritygroupsoutputtypedef).
+
+<a id="set_subnets"></a>
 
 ### set_subnets
 
@@ -932,6 +1015,8 @@ Keyword-only arguments:
 
 Returns [SetSubnetsOutputTypeDef](./type_defs.md#setsubnetsoutputtypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("elbv2").get_paginator` method with
@@ -951,6 +1036,8 @@ overloads.
   [DescribeSSLPoliciesPaginator](./paginators.md#describesslpoliciespaginator)
 - `client.get_paginator("describe_target_groups")` ->
   [DescribeTargetGroupsPaginator](./paginators.md#describetargetgroupspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

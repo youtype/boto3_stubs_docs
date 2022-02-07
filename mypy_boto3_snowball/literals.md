@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-snowball-module"></a>
+
 # Literals for boto3 Snowball module
 
 > [Index](..) > [Snowball](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
 type annotations stubs module
-[mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
+[mypy-boto3-snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
 - [Literals for boto3 Snowball module](#literals-for-boto3-snowball-module)
   - [ClusterStateType](#clusterstatetype)
@@ -29,6 +31,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="clusterstatetype"></a>
+
 ## ClusterStateType
 
 ```python
@@ -43,6 +47,8 @@ Values:
 - `InUse`
 - `Pending`
 
+<a id="describeaddressespaginatorname"></a>
+
 ## DescribeAddressesPaginatorName
 
 ```python
@@ -52,6 +58,8 @@ from mypy_boto3_snowball.literals import DescribeAddressesPaginatorName
 Values:
 
 - `describe_addresses`
+
+<a id="deviceservicenametype"></a>
 
 ## DeviceServiceNameType
 
@@ -63,6 +71,8 @@ Values:
 
 - `NFS_ON_DEVICE_SERVICE`
 - `S3_ON_DEVICE_SERVICE`
+
+<a id="jobstatetype"></a>
 
 ## JobStateType
 
@@ -86,6 +96,8 @@ Values:
 - `WithAWSSortingFacility`
 - `WithCustomer`
 
+<a id="jobtypetype"></a>
+
 ## JobTypeType
 
 ```python
@@ -98,6 +110,8 @@ Values:
 - `IMPORT`
 - `LOCAL_USE`
 
+<a id="listclusterjobspaginatorname"></a>
+
 ## ListClusterJobsPaginatorName
 
 ```python
@@ -107,6 +121,8 @@ from mypy_boto3_snowball.literals import ListClusterJobsPaginatorName
 Values:
 
 - `list_cluster_jobs`
+
+<a id="listclusterspaginatorname"></a>
 
 ## ListClustersPaginatorName
 
@@ -118,6 +134,8 @@ Values:
 
 - `list_clusters`
 
+<a id="listcompatibleimagespaginatorname"></a>
+
 ## ListCompatibleImagesPaginatorName
 
 ```python
@@ -128,6 +146,8 @@ Values:
 
 - `list_compatible_images`
 
+<a id="listjobspaginatorname"></a>
+
 ## ListJobsPaginatorName
 
 ```python
@@ -137,6 +157,8 @@ from mypy_boto3_snowball.literals import ListJobsPaginatorName
 Values:
 
 - `list_jobs`
+
+<a id="longtermpricingtypetype"></a>
 
 ## LongTermPricingTypeType
 
@@ -149,6 +171,8 @@ Values:
 - `OneYear`
 - `ThreeYear`
 
+<a id="remotemanagementtype"></a>
+
 ## RemoteManagementType
 
 ```python
@@ -160,6 +184,8 @@ Values:
 - `INSTALLED_AUTOSTART`
 - `INSTALLED_ONLY`
 
+<a id="shipmentstatetype"></a>
+
 ## ShipmentStateType
 
 ```python
@@ -170,6 +196,8 @@ Values:
 
 - `RECEIVED`
 - `RETURNED`
+
+<a id="shippinglabelstatustype"></a>
 
 ## ShippingLabelStatusType
 
@@ -184,6 +212,8 @@ Values:
 - `Succeeded`
 - `TimedOut`
 
+<a id="shippingoptiontype"></a>
+
 ## ShippingOptionType
 
 ```python
@@ -196,6 +226,8 @@ Values:
 - `NEXT_DAY`
 - `SECOND_DAY`
 - `STANDARD`
+
+<a id="snowballcapacitytype"></a>
 
 ## SnowballCapacityType
 
@@ -214,6 +246,8 @@ Values:
 - `T80`
 - `T98`
 
+<a id="snowballtypetype"></a>
+
 ## SnowballTypeType
 
 ```python
@@ -230,6 +264,8 @@ Values:
 - `SNC1_SSD`
 - `STANDARD`
 
+<a id="storageunittype"></a>
+
 ## StorageUnitType
 
 ```python
@@ -239,6 +275,8 @@ from mypy_boto3_snowball.literals import StorageUnitType
 Values:
 
 - `TB`
+
+<a id="transferoptiontype"></a>
 
 ## TransferOptionType
 
@@ -251,6 +289,8 @@ Values:
 - `EXPORT`
 - `IMPORT`
 - `LOCAL_USE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -559,6 +599,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

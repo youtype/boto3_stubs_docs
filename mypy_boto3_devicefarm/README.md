@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-devicefarm-module"></a>
+
 # Type annotations for boto3 DeviceFarm module
 
 > [Index](..) > DeviceFarm
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module
-[mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
+[mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[devicefarm]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[devicefarm]'
+
+# standalone installation
 pip install mypy-boto3-devicefarm
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-devicefarm
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="devicefarmclient"></a>
+
 ## DeviceFarmClient
 
 Type annotations for `boto3.client("devicefarm")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_devicefarm.client import DeviceFarmClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -114,6 +128,8 @@ from mypy_boto3_devicefarm.client import DeviceFarmClient
 - [update_upload](./client.md#update_upload)
 - [update_vpce_configuration](./client.md#update_vpce_configuration)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 DeviceFarmClient [exceptions](./client.md#exceptions)
@@ -132,6 +148,8 @@ DeviceFarmClient [exceptions](./client.md#exceptions)
 - TagPolicyException
 - TooManyTagsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -140,7 +158,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import GetOfferingStatusPaginator, ...
+from mypy_boto3_devicefarm.paginator import GetOfferingStatusPaginator, ...
 ```
 
 - [GetOfferingStatusPaginator](./paginators.md#getofferingstatuspaginator)
@@ -163,6 +181,8 @@ from mypy_boto3_devicefarm.paginators import GetOfferingStatusPaginator, ...
 - [ListUniqueProblemsPaginator](./paginators.md#listuniqueproblemspaginator)
 - [ListUploadsPaginator](./paginators.md#listuploadspaginator)
 - [ListVPCEConfigurationsPaginator](./paginators.md#listvpceconfigurationspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -224,6 +244,8 @@ from mypy_boto3_devicefarm.literals import ArtifactCategoryType, ...
 - [UploadTypeType](./literals.md#uploadtypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-codestar-module"></a>
+
 # Typed dictionaries for boto3 CodeStar module
 
 > [Index](..) > [CodeStar](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
 type annotations stubs module
-[mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
+[mypy-boto3-codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 - [Typed dictionaries for boto3 CodeStar module](#typed-dictionaries-for-boto3-codestar-module)
   - [AssociateTeamMemberRequestRequestTypeDef](#associateteammemberrequestrequesttypedef)
@@ -57,6 +59,8 @@ type annotations stubs module
   - [UpdateUserProfileResultTypeDef](#updateuserprofileresulttypedef)
   - [UserProfileSummaryTypeDef](#userprofilesummarytypedef)
 
+<a id="associateteammemberrequestrequesttypedef"></a>
+
 ## AssociateTeamMemberRequestRequestTypeDef
 
 ```python
@@ -74,6 +78,8 @@ Optional fields:
 - `clientRequestToken`: `str`
 - `remoteAccessAllowed`: `bool`
 
+<a id="associateteammemberresulttypedef"></a>
+
 ## AssociateTeamMemberResultTypeDef
 
 ```python
@@ -86,6 +92,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="codecommitcodedestinationtypedef"></a>
+
 ## CodeCommitCodeDestinationTypeDef
 
 ```python
@@ -95,6 +103,8 @@ from mypy_boto3_codestar.type_defs import CodeCommitCodeDestinationTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="codedestinationtypedef"></a>
 
 ## CodeDestinationTypeDef
 
@@ -109,6 +119,8 @@ Optional fields:
 - `gitHub`:
   [GitHubCodeDestinationTypeDef](./type_defs.md#githubcodedestinationtypedef)
 
+<a id="codesourcetypedef"></a>
+
 ## CodeSourceTypeDef
 
 ```python
@@ -118,6 +130,8 @@ from mypy_boto3_codestar.type_defs import CodeSourceTypeDef
 Required fields:
 
 - `s3`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+<a id="codetypedef"></a>
 
 ## CodeTypeDef
 
@@ -130,6 +144,8 @@ Required fields:
 - `source`: [CodeSourceTypeDef](./type_defs.md#codesourcetypedef)
 - `destination`:
   [CodeDestinationTypeDef](./type_defs.md#codedestinationtypedef)
+
+<a id="createprojectrequestrequesttypedef"></a>
 
 ## CreateProjectRequestRequestTypeDef
 
@@ -150,6 +166,8 @@ Optional fields:
 - `toolchain`: [ToolchainTypeDef](./type_defs.md#toolchaintypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createprojectresulttypedef"></a>
+
 ## CreateProjectResultTypeDef
 
 ```python
@@ -164,6 +182,8 @@ Required fields:
 - `projectTemplateId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createuserprofilerequestrequesttypedef"></a>
 
 ## CreateUserProfileRequestRequestTypeDef
 
@@ -180,6 +200,8 @@ Required fields:
 Optional fields:
 
 - `sshPublicKey`: `str`
+
+<a id="createuserprofileresulttypedef"></a>
 
 ## CreateUserProfileResultTypeDef
 
@@ -198,6 +220,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteprojectrequestrequesttypedef"></a>
+
 ## DeleteProjectRequestRequestTypeDef
 
 ```python
@@ -213,6 +237,8 @@ Optional fields:
 - `clientRequestToken`: `str`
 - `deleteStack`: `bool`
 
+<a id="deleteprojectresulttypedef"></a>
+
 ## DeleteProjectResultTypeDef
 
 ```python
@@ -226,6 +252,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteuserprofilerequestrequesttypedef"></a>
+
 ## DeleteUserProfileRequestRequestTypeDef
 
 ```python
@@ -235,6 +263,8 @@ from mypy_boto3_codestar.type_defs import DeleteUserProfileRequestRequestTypeDef
 Required fields:
 
 - `userArn`: `str`
+
+<a id="deleteuserprofileresulttypedef"></a>
 
 ## DeleteUserProfileResultTypeDef
 
@@ -248,6 +278,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeprojectrequestrequesttypedef"></a>
+
 ## DescribeProjectRequestRequestTypeDef
 
 ```python
@@ -257,6 +289,8 @@ from mypy_boto3_codestar.type_defs import DescribeProjectRequestRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="describeprojectresulttypedef"></a>
 
 ## DescribeProjectResultTypeDef
 
@@ -278,6 +312,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeuserprofilerequestrequesttypedef"></a>
+
 ## DescribeUserProfileRequestRequestTypeDef
 
 ```python
@@ -287,6 +323,8 @@ from mypy_boto3_codestar.type_defs import DescribeUserProfileRequestRequestTypeD
 Required fields:
 
 - `userArn`: `str`
+
+<a id="describeuserprofileresulttypedef"></a>
 
 ## DescribeUserProfileResultTypeDef
 
@@ -305,6 +343,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateteammemberrequestrequesttypedef"></a>
+
 ## DisassociateTeamMemberRequestRequestTypeDef
 
 ```python
@@ -315,6 +355,8 @@ Required fields:
 
 - `projectId`: `str`
 - `userArn`: `str`
+
+<a id="githubcodedestinationtypedef"></a>
 
 ## GitHubCodeDestinationTypeDef
 
@@ -335,6 +377,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="listprojectsrequestrequesttypedef"></a>
+
 ## ListProjectsRequestRequestTypeDef
 
 ```python
@@ -345,6 +389,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listprojectsresulttypedef"></a>
 
 ## ListProjectsResultTypeDef
 
@@ -359,6 +405,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listresourcesrequestrequesttypedef"></a>
 
 ## ListResourcesRequestRequestTypeDef
 
@@ -375,6 +423,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listresourcesresulttypedef"></a>
+
 ## ListResourcesResultTypeDef
 
 ```python
@@ -387,6 +437,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforprojectrequestrequesttypedef"></a>
 
 ## ListTagsForProjectRequestRequestTypeDef
 
@@ -403,6 +455,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listtagsforprojectresulttypedef"></a>
+
 ## ListTagsForProjectResultTypeDef
 
 ```python
@@ -415,6 +469,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listteammembersrequestrequesttypedef"></a>
 
 ## ListTeamMembersRequestRequestTypeDef
 
@@ -431,6 +487,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listteammembersresulttypedef"></a>
+
 ## ListTeamMembersResultTypeDef
 
 ```python
@@ -445,6 +503,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listuserprofilesrequestrequesttypedef"></a>
+
 ## ListUserProfilesRequestRequestTypeDef
 
 ```python
@@ -455,6 +515,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listuserprofilesresulttypedef"></a>
 
 ## ListUserProfilesResultTypeDef
 
@@ -470,6 +532,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -481,6 +545,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="projectstatustypedef"></a>
 
 ## ProjectStatusTypeDef
 
@@ -496,6 +562,8 @@ Optional fields:
 
 - `reason`: `str`
 
+<a id="projectsummarytypedef"></a>
+
 ## ProjectSummaryTypeDef
 
 ```python
@@ -507,6 +575,8 @@ Optional fields:
 - `projectId`: `str`
 - `projectArn`: `str`
 
+<a id="resourcetypedef"></a>
+
 ## ResourceTypeDef
 
 ```python
@@ -516,6 +586,8 @@ from mypy_boto3_codestar.type_defs import ResourceTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -531,6 +603,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3locationtypedef"></a>
+
 ## S3LocationTypeDef
 
 ```python
@@ -541,6 +615,8 @@ Optional fields:
 
 - `bucketName`: `str`
 - `bucketKey`: `str`
+
+<a id="tagprojectrequestrequesttypedef"></a>
 
 ## TagProjectRequestRequestTypeDef
 
@@ -553,6 +629,8 @@ Required fields:
 - `id`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="tagprojectresulttypedef"></a>
+
 ## TagProjectResultTypeDef
 
 ```python
@@ -564,6 +642,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="teammembertypedef"></a>
 
 ## TeamMemberTypeDef
 
@@ -580,6 +660,8 @@ Optional fields:
 
 - `remoteAccessAllowed`: `bool`
 
+<a id="toolchainsourcetypedef"></a>
+
 ## ToolchainSourceTypeDef
 
 ```python
@@ -589,6 +671,8 @@ from mypy_boto3_codestar.type_defs import ToolchainSourceTypeDef
 Required fields:
 
 - `s3`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+<a id="toolchaintypedef"></a>
 
 ## ToolchainTypeDef
 
@@ -605,6 +689,8 @@ Optional fields:
 - `roleArn`: `str`
 - `stackParameters`: `Mapping`\[`str`, `str`\]
 
+<a id="untagprojectrequestrequesttypedef"></a>
+
 ## UntagProjectRequestRequestTypeDef
 
 ```python
@@ -615,6 +701,8 @@ Required fields:
 
 - `id`: `str`
 - `tags`: `Sequence`\[`str`\]
+
+<a id="updateprojectrequestrequesttypedef"></a>
 
 ## UpdateProjectRequestRequestTypeDef
 
@@ -630,6 +718,8 @@ Optional fields:
 
 - `name`: `str`
 - `description`: `str`
+
+<a id="updateteammemberrequestrequesttypedef"></a>
 
 ## UpdateTeamMemberRequestRequestTypeDef
 
@@ -647,6 +737,8 @@ Optional fields:
 - `projectRole`: `str`
 - `remoteAccessAllowed`: `bool`
 
+<a id="updateteammemberresulttypedef"></a>
+
 ## UpdateTeamMemberResultTypeDef
 
 ```python
@@ -660,6 +752,8 @@ Required fields:
 - `remoteAccessAllowed`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateuserprofilerequestrequesttypedef"></a>
 
 ## UpdateUserProfileRequestRequestTypeDef
 
@@ -677,6 +771,8 @@ Optional fields:
 - `emailAddress`: `str`
 - `sshPublicKey`: `str`
 
+<a id="updateuserprofileresulttypedef"></a>
+
 ## UpdateUserProfileResultTypeDef
 
 ```python
@@ -693,6 +789,8 @@ Required fields:
 - `lastModifiedTimestamp`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="userprofilesummarytypedef"></a>
 
 ## UserProfileSummaryTypeDef
 

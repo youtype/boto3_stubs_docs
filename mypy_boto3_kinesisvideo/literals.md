@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-kinesisvideo-module"></a>
+
 # Literals for boto3 KinesisVideo module
 
 > [Index](..) > [KinesisVideo](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
 type annotations stubs module
-[mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
+[mypy-boto3-kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
 - [Literals for boto3 KinesisVideo module](#literals-for-boto3-kinesisvideo-module)
   - [APINameType](#apinametype)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [UpdateDataRetentionOperationType](#updatedataretentionoperationtype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="apinametype"></a>
 
 ## APINameType
 
@@ -36,6 +40,8 @@ Values:
 - `LIST_FRAGMENTS`
 - `PUT_MEDIA`
 
+<a id="channelprotocoltype"></a>
+
 ## ChannelProtocolType
 
 ```python
@@ -46,6 +52,8 @@ Values:
 
 - `HTTPS`
 - `WSS`
+
+<a id="channelroletype"></a>
 
 ## ChannelRoleType
 
@@ -58,6 +66,8 @@ Values:
 - `MASTER`
 - `VIEWER`
 
+<a id="channeltypetype"></a>
+
 ## ChannelTypeType
 
 ```python
@@ -67,6 +77,8 @@ from mypy_boto3_kinesisvideo.literals import ChannelTypeType
 Values:
 
 - `SINGLE_MASTER`
+
+<a id="comparisonoperatortype"></a>
 
 ## ComparisonOperatorType
 
@@ -78,6 +90,8 @@ Values:
 
 - `BEGINS_WITH`
 
+<a id="listsignalingchannelspaginatorname"></a>
+
 ## ListSignalingChannelsPaginatorName
 
 ```python
@@ -88,6 +102,8 @@ Values:
 
 - `list_signaling_channels`
 
+<a id="liststreamspaginatorname"></a>
+
 ## ListStreamsPaginatorName
 
 ```python
@@ -97,6 +113,8 @@ from mypy_boto3_kinesisvideo.literals import ListStreamsPaginatorName
 Values:
 
 - `list_streams`
+
+<a id="statustype"></a>
 
 ## StatusType
 
@@ -111,6 +129,8 @@ Values:
 - `DELETING`
 - `UPDATING`
 
+<a id="updatedataretentionoperationtype"></a>
+
 ## UpdateDataRetentionOperationType
 
 ```python
@@ -121,6 +141,8 @@ Values:
 
 - `DECREASE_DATA_RETENTION`
 - `INCREASE_DATA_RETENTION`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -429,6 +451,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

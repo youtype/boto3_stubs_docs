@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-simpledb-module"></a>
+
 # Paginators for boto3 SimpleDB module
 
 > [Index](..) > [SimpleDB](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
 type annotations stubs module
-[mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
+[mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 - [Paginators for boto3 SimpleDB module](#paginators-for-boto3-simpledb-module)
   - [ListDomainsPaginator](#listdomainspaginator)
   - [SelectPaginator](#selectpaginator)
+
+<a id="listdomainspaginator"></a>
 
 ## ListDomainsPaginator
 
@@ -18,10 +22,12 @@ Type annotations for `boto3.client("sdb").get_paginator("list_domains")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sdb.paginator import ListDomainsPaginator
 
 def get_list_domains_paginator() -> ListDomainsPaginator:
-    return boto3.client("sdb").get_paginator("list_domains")
+    return Session().client("sdb").get_paginator("list_domains")
 ```
 
 Boto3 documentation:
@@ -35,6 +41,8 @@ Arguments for `ListDomainsPaginator.paginate` method:
 `ListDomainsPaginator.paginate` returns
 `_PageIterator`\[[ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef)\].
 
+<a id="selectpaginator"></a>
+
 ## SelectPaginator
 
 Type annotations for `boto3.client("sdb").get_paginator("select")`.
@@ -42,10 +50,12 @@ Type annotations for `boto3.client("sdb").get_paginator("select")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sdb.paginator import SelectPaginator
 
 def get_select_paginator() -> SelectPaginator:
-    return boto3.client("sdb").get_paginator("select")
+    return Session().client("sdb").get_paginator("select")
 ```
 
 Boto3 documentation:

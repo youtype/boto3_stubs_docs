@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-directconnect-module"></a>
+
 # Typed dictionaries for boto3 DirectConnect module
 
 > [Index](..) > [DirectConnect](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
 type annotations stubs module
-[mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
+[mypy-boto3-directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
 - [Typed dictionaries for boto3 DirectConnect module](#typed-dictionaries-for-boto3-directconnect-module)
   - [AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef](#acceptdirectconnectgatewayassociationproposalrequestrequesttypedef)
@@ -143,6 +145,8 @@ type annotations stubs module
   - [VirtualInterfaceTypeDef](#virtualinterfacetypedef)
   - [VirtualInterfacesTypeDef](#virtualinterfacestypedef)
 
+<a id="acceptdirectconnectgatewayassociationproposalrequestrequesttypedef"></a>
+
 ## AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef
 
 ```python
@@ -160,6 +164,8 @@ Optional fields:
 - `overrideAllowedPrefixesToDirectConnectGateway`:
   `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
+<a id="acceptdirectconnectgatewayassociationproposalresulttypedef"></a>
+
 ## AcceptDirectConnectGatewayAssociationProposalResultTypeDef
 
 ```python
@@ -172,6 +178,8 @@ Required fields:
   [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="allocateconnectiononinterconnectrequestrequesttypedef"></a>
 
 ## AllocateConnectionOnInterconnectRequestRequestTypeDef
 
@@ -186,6 +194,8 @@ Required fields:
 - `ownerAccount`: `str`
 - `interconnectId`: `str`
 - `vlan`: `int`
+
+<a id="allocatehostedconnectionrequestrequesttypedef"></a>
 
 ## AllocateHostedConnectionRequestRequestTypeDef
 
@@ -205,6 +215,8 @@ Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="allocateprivatevirtualinterfacerequestrequesttypedef"></a>
+
 ## AllocatePrivateVirtualInterfaceRequestRequestTypeDef
 
 ```python
@@ -217,6 +229,8 @@ Required fields:
 - `ownerAccount`: `str`
 - `newPrivateVirtualInterfaceAllocation`:
   [NewPrivateVirtualInterfaceAllocationTypeDef](./type_defs.md#newprivatevirtualinterfaceallocationtypedef)
+
+<a id="allocatepublicvirtualinterfacerequestrequesttypedef"></a>
 
 ## AllocatePublicVirtualInterfaceRequestRequestTypeDef
 
@@ -231,6 +245,8 @@ Required fields:
 - `newPublicVirtualInterfaceAllocation`:
   [NewPublicVirtualInterfaceAllocationTypeDef](./type_defs.md#newpublicvirtualinterfaceallocationtypedef)
 
+<a id="allocatetransitvirtualinterfacerequestrequesttypedef"></a>
+
 ## AllocateTransitVirtualInterfaceRequestRequestTypeDef
 
 ```python
@@ -243,6 +259,8 @@ Required fields:
 - `ownerAccount`: `str`
 - `newTransitVirtualInterfaceAllocation`:
   [NewTransitVirtualInterfaceAllocationTypeDef](./type_defs.md#newtransitvirtualinterfaceallocationtypedef)
+
+<a id="allocatetransitvirtualinterfaceresulttypedef"></a>
 
 ## AllocateTransitVirtualInterfaceResultTypeDef
 
@@ -257,6 +275,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associateconnectionwithlagrequestrequesttypedef"></a>
+
 ## AssociateConnectionWithLagRequestRequestTypeDef
 
 ```python
@@ -268,6 +288,8 @@ Required fields:
 - `connectionId`: `str`
 - `lagId`: `str`
 
+<a id="associatehostedconnectionrequestrequesttypedef"></a>
+
 ## AssociateHostedConnectionRequestRequestTypeDef
 
 ```python
@@ -278,6 +300,8 @@ Required fields:
 
 - `connectionId`: `str`
 - `parentConnectionId`: `str`
+
+<a id="associatemacseckeyrequestrequesttypedef"></a>
 
 ## AssociateMacSecKeyRequestRequestTypeDef
 
@@ -295,6 +319,8 @@ Optional fields:
 - `ckn`: `str`
 - `cak`: `str`
 
+<a id="associatemacseckeyresponsetypedef"></a>
+
 ## AssociateMacSecKeyResponseTypeDef
 
 ```python
@@ -308,6 +334,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associatevirtualinterfacerequestrequesttypedef"></a>
+
 ## AssociateVirtualInterfaceRequestRequestTypeDef
 
 ```python
@@ -318,6 +346,8 @@ Required fields:
 
 - `virtualInterfaceId`: `str`
 - `connectionId`: `str`
+
+<a id="associatedgatewaytypedef"></a>
 
 ## AssociatedGatewayTypeDef
 
@@ -331,6 +361,8 @@ Optional fields:
 - `type`: [GatewayTypeType](./literals.md#gatewaytypetype)
 - `ownerAccount`: `str`
 - `region`: `str`
+
+<a id="bgppeertypedef"></a>
 
 ## BGPPeerTypeDef
 
@@ -351,6 +383,8 @@ Optional fields:
 - `awsDeviceV2`: `str`
 - `awsLogicalDeviceId`: `str`
 
+<a id="confirmconnectionrequestrequesttypedef"></a>
+
 ## ConfirmConnectionRequestRequestTypeDef
 
 ```python
@@ -360,6 +394,8 @@ from mypy_boto3_directconnect.type_defs import ConfirmConnectionRequestRequestTy
 Required fields:
 
 - `connectionId`: `str`
+
+<a id="confirmconnectionresponsetypedef"></a>
 
 ## ConfirmConnectionResponseTypeDef
 
@@ -373,6 +409,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="confirmcustomeragreementrequestrequesttypedef"></a>
+
 ## ConfirmCustomerAgreementRequestRequestTypeDef
 
 ```python
@@ -382,6 +420,8 @@ from mypy_boto3_directconnect.type_defs import ConfirmCustomerAgreementRequestRe
 Optional fields:
 
 - `agreementName`: `str`
+
+<a id="confirmcustomeragreementresponsetypedef"></a>
 
 ## ConfirmCustomerAgreementResponseTypeDef
 
@@ -394,6 +434,8 @@ Required fields:
 - `status`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="confirmprivatevirtualinterfacerequestrequesttypedef"></a>
 
 ## ConfirmPrivateVirtualInterfaceRequestRequestTypeDef
 
@@ -410,6 +452,8 @@ Optional fields:
 - `virtualGatewayId`: `str`
 - `directConnectGatewayId`: `str`
 
+<a id="confirmprivatevirtualinterfaceresponsetypedef"></a>
+
 ## ConfirmPrivateVirtualInterfaceResponseTypeDef
 
 ```python
@@ -423,6 +467,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="confirmpublicvirtualinterfacerequestrequesttypedef"></a>
+
 ## ConfirmPublicVirtualInterfaceRequestRequestTypeDef
 
 ```python
@@ -432,6 +478,8 @@ from mypy_boto3_directconnect.type_defs import ConfirmPublicVirtualInterfaceRequ
 Required fields:
 
 - `virtualInterfaceId`: `str`
+
+<a id="confirmpublicvirtualinterfaceresponsetypedef"></a>
 
 ## ConfirmPublicVirtualInterfaceResponseTypeDef
 
@@ -446,6 +494,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="confirmtransitvirtualinterfacerequestrequesttypedef"></a>
+
 ## ConfirmTransitVirtualInterfaceRequestRequestTypeDef
 
 ```python
@@ -456,6 +506,8 @@ Required fields:
 
 - `virtualInterfaceId`: `str`
 - `directConnectGatewayId`: `str`
+
+<a id="confirmtransitvirtualinterfaceresponsetypedef"></a>
 
 ## ConfirmTransitVirtualInterfaceResponseTypeDef
 
@@ -469,6 +521,8 @@ Required fields:
   [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="connectionresponsemetadatatypedef"></a>
 
 ## ConnectionResponseMetadataTypeDef
 
@@ -504,6 +558,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="connectiontypedef"></a>
+
 ## ConnectionTypeDef
 
 ```python
@@ -536,6 +592,8 @@ Optional fields:
 - `encryptionMode`: `str`
 - `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
 
+<a id="connectionstypedef"></a>
+
 ## ConnectionsTypeDef
 
 ```python
@@ -549,6 +607,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createbgppeerrequestrequesttypedef"></a>
+
 ## CreateBGPPeerRequestRequestTypeDef
 
 ```python
@@ -559,6 +619,8 @@ Optional fields:
 
 - `virtualInterfaceId`: `str`
 - `newBGPPeer`: [NewBGPPeerTypeDef](./type_defs.md#newbgppeertypedef)
+
+<a id="createbgppeerresponsetypedef"></a>
 
 ## CreateBGPPeerResponseTypeDef
 
@@ -572,6 +634,8 @@ Required fields:
   [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createconnectionrequestrequesttypedef"></a>
 
 ## CreateConnectionRequestRequestTypeDef
 
@@ -592,6 +656,8 @@ Optional fields:
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
+<a id="createdirectconnectgatewayassociationproposalrequestrequesttypedef"></a>
+
 ## CreateDirectConnectGatewayAssociationProposalRequestRequestTypeDef
 
 ```python
@@ -611,6 +677,8 @@ Optional fields:
 - `removeAllowedPrefixesToDirectConnectGateway`:
   `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
+<a id="createdirectconnectgatewayassociationproposalresulttypedef"></a>
+
 ## CreateDirectConnectGatewayAssociationProposalResultTypeDef
 
 ```python
@@ -623,6 +691,8 @@ Required fields:
   [DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdirectconnectgatewayassociationrequestrequesttypedef"></a>
 
 ## CreateDirectConnectGatewayAssociationRequestRequestTypeDef
 
@@ -641,6 +711,8 @@ Optional fields:
   `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `virtualGatewayId`: `str`
 
+<a id="createdirectconnectgatewayassociationresulttypedef"></a>
+
 ## CreateDirectConnectGatewayAssociationResultTypeDef
 
 ```python
@@ -653,6 +725,8 @@ Required fields:
   [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdirectconnectgatewayrequestrequesttypedef"></a>
 
 ## CreateDirectConnectGatewayRequestRequestTypeDef
 
@@ -668,6 +742,8 @@ Optional fields:
 
 - `amazonSideAsn`: `int`
 
+<a id="createdirectconnectgatewayresulttypedef"></a>
+
 ## CreateDirectConnectGatewayResultTypeDef
 
 ```python
@@ -680,6 +756,8 @@ Required fields:
   [DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createinterconnectrequestrequesttypedef"></a>
 
 ## CreateInterconnectRequestRequestTypeDef
 
@@ -698,6 +776,8 @@ Optional fields:
 - `lagId`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
+
+<a id="createlagrequestrequesttypedef"></a>
 
 ## CreateLagRequestRequestTypeDef
 
@@ -720,6 +800,8 @@ Optional fields:
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
+<a id="createprivatevirtualinterfacerequestrequesttypedef"></a>
+
 ## CreatePrivateVirtualInterfaceRequestRequestTypeDef
 
 ```python
@@ -731,6 +813,8 @@ Required fields:
 - `connectionId`: `str`
 - `newPrivateVirtualInterface`:
   [NewPrivateVirtualInterfaceTypeDef](./type_defs.md#newprivatevirtualinterfacetypedef)
+
+<a id="createpublicvirtualinterfacerequestrequesttypedef"></a>
 
 ## CreatePublicVirtualInterfaceRequestRequestTypeDef
 
@@ -744,6 +828,8 @@ Required fields:
 - `newPublicVirtualInterface`:
   [NewPublicVirtualInterfaceTypeDef](./type_defs.md#newpublicvirtualinterfacetypedef)
 
+<a id="createtransitvirtualinterfacerequestrequesttypedef"></a>
+
 ## CreateTransitVirtualInterfaceRequestRequestTypeDef
 
 ```python
@@ -755,6 +841,8 @@ Required fields:
 - `connectionId`: `str`
 - `newTransitVirtualInterface`:
   [NewTransitVirtualInterfaceTypeDef](./type_defs.md#newtransitvirtualinterfacetypedef)
+
+<a id="createtransitvirtualinterfaceresulttypedef"></a>
 
 ## CreateTransitVirtualInterfaceResultTypeDef
 
@@ -769,6 +857,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="customeragreementtypedef"></a>
+
 ## CustomerAgreementTypeDef
 
 ```python
@@ -779,6 +869,8 @@ Optional fields:
 
 - `agreementName`: `str`
 - `status`: `str`
+
+<a id="deletebgppeerrequestrequesttypedef"></a>
 
 ## DeleteBGPPeerRequestRequestTypeDef
 
@@ -793,6 +885,8 @@ Optional fields:
 - `customerAddress`: `str`
 - `bgpPeerId`: `str`
 
+<a id="deletebgppeerresponsetypedef"></a>
+
 ## DeleteBGPPeerResponseTypeDef
 
 ```python
@@ -806,6 +900,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteconnectionrequestrequesttypedef"></a>
+
 ## DeleteConnectionRequestRequestTypeDef
 
 ```python
@@ -816,6 +912,8 @@ Required fields:
 
 - `connectionId`: `str`
 
+<a id="deletedirectconnectgatewayassociationproposalrequestrequesttypedef"></a>
+
 ## DeleteDirectConnectGatewayAssociationProposalRequestRequestTypeDef
 
 ```python
@@ -825,6 +923,8 @@ from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssocia
 Required fields:
 
 - `proposalId`: `str`
+
+<a id="deletedirectconnectgatewayassociationproposalresulttypedef"></a>
 
 ## DeleteDirectConnectGatewayAssociationProposalResultTypeDef
 
@@ -839,6 +939,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedirectconnectgatewayassociationrequestrequesttypedef"></a>
+
 ## DeleteDirectConnectGatewayAssociationRequestRequestTypeDef
 
 ```python
@@ -850,6 +952,8 @@ Optional fields:
 - `associationId`: `str`
 - `directConnectGatewayId`: `str`
 - `virtualGatewayId`: `str`
+
+<a id="deletedirectconnectgatewayassociationresulttypedef"></a>
 
 ## DeleteDirectConnectGatewayAssociationResultTypeDef
 
@@ -864,6 +968,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedirectconnectgatewayrequestrequesttypedef"></a>
+
 ## DeleteDirectConnectGatewayRequestRequestTypeDef
 
 ```python
@@ -873,6 +979,8 @@ from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayRequest
 Required fields:
 
 - `directConnectGatewayId`: `str`
+
+<a id="deletedirectconnectgatewayresulttypedef"></a>
 
 ## DeleteDirectConnectGatewayResultTypeDef
 
@@ -887,6 +995,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteinterconnectrequestrequesttypedef"></a>
+
 ## DeleteInterconnectRequestRequestTypeDef
 
 ```python
@@ -896,6 +1006,8 @@ from mypy_boto3_directconnect.type_defs import DeleteInterconnectRequestRequestT
 Required fields:
 
 - `interconnectId`: `str`
+
+<a id="deleteinterconnectresponsetypedef"></a>
 
 ## DeleteInterconnectResponseTypeDef
 
@@ -910,6 +1022,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletelagrequestrequesttypedef"></a>
+
 ## DeleteLagRequestRequestTypeDef
 
 ```python
@@ -920,6 +1034,8 @@ Required fields:
 
 - `lagId`: `str`
 
+<a id="deletevirtualinterfacerequestrequesttypedef"></a>
+
 ## DeleteVirtualInterfaceRequestRequestTypeDef
 
 ```python
@@ -929,6 +1045,8 @@ from mypy_boto3_directconnect.type_defs import DeleteVirtualInterfaceRequestRequ
 Required fields:
 
 - `virtualInterfaceId`: `str`
+
+<a id="deletevirtualinterfaceresponsetypedef"></a>
 
 ## DeleteVirtualInterfaceResponseTypeDef
 
@@ -942,6 +1060,8 @@ Required fields:
   [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeconnectionloarequestrequesttypedef"></a>
 
 ## DescribeConnectionLoaRequestRequestTypeDef
 
@@ -959,6 +1079,8 @@ Optional fields:
 - `loaContentType`: `Literal['application/pdf']` (see
   [LoaContentTypeType](./literals.md#loacontenttypetype))
 
+<a id="describeconnectionloaresponsetypedef"></a>
+
 ## DescribeConnectionLoaResponseTypeDef
 
 ```python
@@ -971,6 +1093,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconnectionsoninterconnectrequestrequesttypedef"></a>
+
 ## DescribeConnectionsOnInterconnectRequestRequestTypeDef
 
 ```python
@@ -981,6 +1105,8 @@ Required fields:
 
 - `interconnectId`: `str`
 
+<a id="describeconnectionsrequestrequesttypedef"></a>
+
 ## DescribeConnectionsRequestRequestTypeDef
 
 ```python
@@ -990,6 +1116,8 @@ from mypy_boto3_directconnect.type_defs import DescribeConnectionsRequestRequest
 Optional fields:
 
 - `connectionId`: `str`
+
+<a id="describecustomermetadataresponsetypedef"></a>
 
 ## DescribeCustomerMetadataResponseTypeDef
 
@@ -1005,6 +1133,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedirectconnectgatewayassociationproposalsrequestrequesttypedef"></a>
+
 ## DescribeDirectConnectGatewayAssociationProposalsRequestRequestTypeDef
 
 ```python
@@ -1019,6 +1149,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="describedirectconnectgatewayassociationproposalsresulttypedef"></a>
+
 ## DescribeDirectConnectGatewayAssociationProposalsResultTypeDef
 
 ```python
@@ -1032,6 +1164,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedirectconnectgatewayassociationsrequestrequesttypedef"></a>
 
 ## DescribeDirectConnectGatewayAssociationsRequestRequestTypeDef
 
@@ -1048,6 +1182,8 @@ Optional fields:
 - `nextToken`: `str`
 - `virtualGatewayId`: `str`
 
+<a id="describedirectconnectgatewayassociationsresulttypedef"></a>
+
 ## DescribeDirectConnectGatewayAssociationsResultTypeDef
 
 ```python
@@ -1062,6 +1198,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedirectconnectgatewayattachmentsrequestrequesttypedef"></a>
+
 ## DescribeDirectConnectGatewayAttachmentsRequestRequestTypeDef
 
 ```python
@@ -1074,6 +1212,8 @@ Optional fields:
 - `virtualInterfaceId`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describedirectconnectgatewayattachmentsresulttypedef"></a>
 
 ## DescribeDirectConnectGatewayAttachmentsResultTypeDef
 
@@ -1089,6 +1229,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedirectconnectgatewaysrequestrequesttypedef"></a>
+
 ## DescribeDirectConnectGatewaysRequestRequestTypeDef
 
 ```python
@@ -1100,6 +1242,8 @@ Optional fields:
 - `directConnectGatewayId`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describedirectconnectgatewaysresulttypedef"></a>
 
 ## DescribeDirectConnectGatewaysResultTypeDef
 
@@ -1115,6 +1259,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describehostedconnectionsrequestrequesttypedef"></a>
+
 ## DescribeHostedConnectionsRequestRequestTypeDef
 
 ```python
@@ -1124,6 +1270,8 @@ from mypy_boto3_directconnect.type_defs import DescribeHostedConnectionsRequestR
 Required fields:
 
 - `connectionId`: `str`
+
+<a id="describeinterconnectloarequestrequesttypedef"></a>
 
 ## DescribeInterconnectLoaRequestRequestTypeDef
 
@@ -1141,6 +1289,8 @@ Optional fields:
 - `loaContentType`: `Literal['application/pdf']` (see
   [LoaContentTypeType](./literals.md#loacontenttypetype))
 
+<a id="describeinterconnectloaresponsetypedef"></a>
+
 ## DescribeInterconnectLoaResponseTypeDef
 
 ```python
@@ -1153,6 +1303,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeinterconnectsrequestrequesttypedef"></a>
+
 ## DescribeInterconnectsRequestRequestTypeDef
 
 ```python
@@ -1163,6 +1315,8 @@ Optional fields:
 
 - `interconnectId`: `str`
 
+<a id="describelagsrequestrequesttypedef"></a>
+
 ## DescribeLagsRequestRequestTypeDef
 
 ```python
@@ -1172,6 +1326,8 @@ from mypy_boto3_directconnect.type_defs import DescribeLagsRequestRequestTypeDef
 Optional fields:
 
 - `lagId`: `str`
+
+<a id="describeloarequestrequesttypedef"></a>
 
 ## DescribeLoaRequestRequestTypeDef
 
@@ -1189,6 +1345,8 @@ Optional fields:
 - `loaContentType`: `Literal['application/pdf']` (see
   [LoaContentTypeType](./literals.md#loacontenttypetype))
 
+<a id="describerouterconfigurationrequestrequesttypedef"></a>
+
 ## DescribeRouterConfigurationRequestRequestTypeDef
 
 ```python
@@ -1202,6 +1360,8 @@ Required fields:
 Optional fields:
 
 - `routerTypeIdentifier`: `str`
+
+<a id="describerouterconfigurationresponsetypedef"></a>
 
 ## DescribeRouterConfigurationResponseTypeDef
 
@@ -1218,6 +1378,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetagsrequestrequesttypedef"></a>
+
 ## DescribeTagsRequestRequestTypeDef
 
 ```python
@@ -1227,6 +1389,8 @@ from mypy_boto3_directconnect.type_defs import DescribeTagsRequestRequestTypeDef
 Required fields:
 
 - `resourceArns`: `Sequence`\[`str`\]
+
+<a id="describetagsresponsetypedef"></a>
 
 ## DescribeTagsResponseTypeDef
 
@@ -1241,6 +1405,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describevirtualinterfacesrequestrequesttypedef"></a>
+
 ## DescribeVirtualInterfacesRequestRequestTypeDef
 
 ```python
@@ -1251,6 +1417,8 @@ Optional fields:
 
 - `connectionId`: `str`
 - `virtualInterfaceId`: `str`
+
+<a id="directconnectgatewayassociationproposaltypedef"></a>
 
 ## DirectConnectGatewayAssociationProposalTypeDef
 
@@ -1271,6 +1439,8 @@ Optional fields:
   `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `requestedAllowedPrefixesToDirectConnectGateway`:
   `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+
+<a id="directconnectgatewayassociationtypedef"></a>
 
 ## DirectConnectGatewayAssociationTypeDef
 
@@ -1294,6 +1464,8 @@ Optional fields:
 - `virtualGatewayRegion`: `str`
 - `virtualGatewayOwnerAccount`: `str`
 
+<a id="directconnectgatewayattachmenttypedef"></a>
+
 ## DirectConnectGatewayAttachmentTypeDef
 
 ```python
@@ -1312,6 +1484,8 @@ Optional fields:
   [DirectConnectGatewayAttachmentTypeType](./literals.md#directconnectgatewayattachmenttypetype)
 - `stateChangeError`: `str`
 
+<a id="directconnectgatewaytypedef"></a>
+
 ## DirectConnectGatewayTypeDef
 
 ```python
@@ -1328,6 +1502,8 @@ Optional fields:
   [DirectConnectGatewayStateType](./literals.md#directconnectgatewaystatetype)
 - `stateChangeError`: `str`
 
+<a id="disassociateconnectionfromlagrequestrequesttypedef"></a>
+
 ## DisassociateConnectionFromLagRequestRequestTypeDef
 
 ```python
@@ -1339,6 +1515,8 @@ Required fields:
 - `connectionId`: `str`
 - `lagId`: `str`
 
+<a id="disassociatemacseckeyrequestrequesttypedef"></a>
+
 ## DisassociateMacSecKeyRequestRequestTypeDef
 
 ```python
@@ -1349,6 +1527,8 @@ Required fields:
 
 - `connectionId`: `str`
 - `secretARN`: `str`
+
+<a id="disassociatemacseckeyresponsetypedef"></a>
 
 ## DisassociateMacSecKeyResponseTypeDef
 
@@ -1362,6 +1542,8 @@ Required fields:
 - `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="interconnectresponsemetadatatypedef"></a>
 
 ## InterconnectResponseMetadataTypeDef
 
@@ -1391,6 +1573,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="interconnecttypedef"></a>
+
 ## InterconnectTypeDef
 
 ```python
@@ -1417,6 +1601,8 @@ Optional fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 
+<a id="interconnectstypedef"></a>
+
 ## InterconnectsTypeDef
 
 ```python
@@ -1429,6 +1615,8 @@ Required fields:
   `List`\[[InterconnectTypeDef](./type_defs.md#interconnecttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="lagresponsemetadatatypedef"></a>
 
 ## LagResponseMetadataTypeDef
 
@@ -1464,6 +1652,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="lagtypedef"></a>
+
 ## LagTypeDef
 
 ```python
@@ -1496,6 +1686,8 @@ Optional fields:
 - `encryptionMode`: `str`
 - `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
 
+<a id="lagstypedef"></a>
+
 ## LagsTypeDef
 
 ```python
@@ -1507,6 +1699,8 @@ Required fields:
 - `lags`: `List`\[[LagTypeDef](./type_defs.md#lagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listvirtualinterfacetesthistoryrequestrequesttypedef"></a>
 
 ## ListVirtualInterfaceTestHistoryRequestRequestTypeDef
 
@@ -1523,6 +1717,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listvirtualinterfacetesthistoryresponsetypedef"></a>
+
 ## ListVirtualInterfaceTestHistoryResponseTypeDef
 
 ```python
@@ -1536,6 +1732,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="loaresponsemetadatatypedef"></a>
 
 ## LoaResponseMetadataTypeDef
 
@@ -1551,6 +1749,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="loatypedef"></a>
+
 ## LoaTypeDef
 
 ```python
@@ -1562,6 +1762,8 @@ Optional fields:
 - `loaContent`: `bytes`
 - `loaContentType`: `Literal['application/pdf']` (see
   [LoaContentTypeType](./literals.md#loacontenttypetype))
+
+<a id="locationtypedef"></a>
 
 ## LocationTypeDef
 
@@ -1578,6 +1780,8 @@ Optional fields:
 - `availableProviders`: `List`\[`str`\]
 - `availableMacSecPortSpeeds`: `List`\[`str`\]
 
+<a id="locationstypedef"></a>
+
 ## LocationsTypeDef
 
 ```python
@@ -1589,6 +1793,8 @@ Required fields:
 - `locations`: `List`\[[LocationTypeDef](./type_defs.md#locationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="macseckeytypedef"></a>
 
 ## MacSecKeyTypeDef
 
@@ -1603,6 +1809,8 @@ Optional fields:
 - `state`: `str`
 - `startOn`: `str`
 
+<a id="newbgppeertypedef"></a>
+
 ## NewBGPPeerTypeDef
 
 ```python
@@ -1616,6 +1824,8 @@ Optional fields:
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
+
+<a id="newprivatevirtualinterfaceallocationtypedef"></a>
 
 ## NewPrivateVirtualInterfaceAllocationTypeDef
 
@@ -1637,6 +1847,8 @@ Optional fields:
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `customerAddress`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="newprivatevirtualinterfacetypedef"></a>
 
 ## NewPrivateVirtualInterfaceTypeDef
 
@@ -1662,6 +1874,8 @@ Optional fields:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `enableSiteLink`: `bool`
 
+<a id="newpublicvirtualinterfaceallocationtypedef"></a>
+
 ## NewPublicVirtualInterfaceAllocationTypeDef
 
 ```python
@@ -1683,6 +1897,8 @@ Optional fields:
 - `routeFilterPrefixes`:
   `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="newpublicvirtualinterfacetypedef"></a>
 
 ## NewPublicVirtualInterfaceTypeDef
 
@@ -1706,6 +1922,8 @@ Optional fields:
   `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="newtransitvirtualinterfaceallocationtypedef"></a>
+
 ## NewTransitVirtualInterfaceAllocationTypeDef
 
 ```python
@@ -1723,6 +1941,8 @@ Optional fields:
 - `customerAddress`: `str`
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="newtransitvirtualinterfacetypedef"></a>
 
 ## NewTransitVirtualInterfaceTypeDef
 
@@ -1744,6 +1964,8 @@ Optional fields:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `enableSiteLink`: `bool`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1756,6 +1978,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="resourcetagtypedef"></a>
+
 ## ResourceTagTypeDef
 
 ```python
@@ -1766,6 +1990,8 @@ Optional fields:
 
 - `resourceArn`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1781,6 +2007,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="routefilterprefixtypedef"></a>
+
 ## RouteFilterPrefixTypeDef
 
 ```python
@@ -1790,6 +2018,8 @@ from mypy_boto3_directconnect.type_defs import RouteFilterPrefixTypeDef
 Optional fields:
 
 - `cidr`: `str`
+
+<a id="routertypetypedef"></a>
 
 ## RouterTypeTypeDef
 
@@ -1806,6 +2036,8 @@ Optional fields:
 - `xsltTemplateNameForMacSec`: `str`
 - `routerTypeIdentifier`: `str`
 
+<a id="startbgpfailovertestrequestrequesttypedef"></a>
+
 ## StartBgpFailoverTestRequestRequestTypeDef
 
 ```python
@@ -1821,6 +2053,8 @@ Optional fields:
 - `bgpPeers`: `Sequence`\[`str`\]
 - `testDurationInMinutes`: `int`
 
+<a id="startbgpfailovertestresponsetypedef"></a>
+
 ## StartBgpFailoverTestResponseTypeDef
 
 ```python
@@ -1834,6 +2068,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopbgpfailovertestrequestrequesttypedef"></a>
+
 ## StopBgpFailoverTestRequestRequestTypeDef
 
 ```python
@@ -1843,6 +2079,8 @@ from mypy_boto3_directconnect.type_defs import StopBgpFailoverTestRequestRequest
 Required fields:
 
 - `virtualInterfaceId`: `str`
+
+<a id="stopbgpfailovertestresponsetypedef"></a>
 
 ## StopBgpFailoverTestResponseTypeDef
 
@@ -1857,6 +2095,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1867,6 +2107,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1882,6 +2124,8 @@ Optional fields:
 
 - `value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1892,6 +2136,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateconnectionrequestrequesttypedef"></a>
 
 ## UpdateConnectionRequestRequestTypeDef
 
@@ -1908,6 +2154,8 @@ Optional fields:
 - `connectionName`: `str`
 - `encryptionMode`: `str`
 
+<a id="updatedirectconnectgatewayassociationrequestrequesttypedef"></a>
+
 ## UpdateDirectConnectGatewayAssociationRequestRequestTypeDef
 
 ```python
@@ -1922,6 +2170,8 @@ Optional fields:
 - `removeAllowedPrefixesToDirectConnectGateway`:
   `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
+<a id="updatedirectconnectgatewayassociationresulttypedef"></a>
+
 ## UpdateDirectConnectGatewayAssociationResultTypeDef
 
 ```python
@@ -1935,6 +2185,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatedirectconnectgatewayrequestrequesttypedef"></a>
+
 ## UpdateDirectConnectGatewayRequestRequestTypeDef
 
 ```python
@@ -1945,6 +2197,8 @@ Required fields:
 
 - `directConnectGatewayId`: `str`
 - `newDirectConnectGatewayName`: `str`
+
+<a id="updatedirectconnectgatewayresponsetypedef"></a>
 
 ## UpdateDirectConnectGatewayResponseTypeDef
 
@@ -1958,6 +2212,8 @@ Required fields:
   [DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatelagrequestrequesttypedef"></a>
 
 ## UpdateLagRequestRequestTypeDef
 
@@ -1975,6 +2231,8 @@ Optional fields:
 - `minimumLinks`: `int`
 - `encryptionMode`: `str`
 
+<a id="updatevirtualinterfaceattributesrequestrequesttypedef"></a>
+
 ## UpdateVirtualInterfaceAttributesRequestRequestTypeDef
 
 ```python
@@ -1991,6 +2249,8 @@ Optional fields:
 - `enableSiteLink`: `bool`
 - `virtualInterfaceName`: `str`
 
+<a id="virtualgatewaytypedef"></a>
+
 ## VirtualGatewayTypeDef
 
 ```python
@@ -2001,6 +2261,8 @@ Optional fields:
 
 - `virtualGatewayId`: `str`
 - `virtualGatewayState`: `str`
+
+<a id="virtualgatewaystypedef"></a>
 
 ## VirtualGatewaysTypeDef
 
@@ -2014,6 +2276,8 @@ Required fields:
   `List`\[[VirtualGatewayTypeDef](./type_defs.md#virtualgatewaytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="virtualinterfaceresponsemetadatatypedef"></a>
 
 ## VirtualInterfaceResponseMetadataTypeDef
 
@@ -2054,6 +2318,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="virtualinterfacetesthistorytypedef"></a>
+
 ## VirtualInterfaceTestHistoryTypeDef
 
 ```python
@@ -2070,6 +2336,8 @@ Optional fields:
 - `testDurationInMinutes`: `int`
 - `startTime`: `datetime`
 - `endTime`: `datetime`
+
+<a id="virtualinterfacetypedef"></a>
 
 ## VirtualInterfaceTypeDef
 
@@ -2107,6 +2375,8 @@ Optional fields:
 - `awsLogicalDeviceId`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `siteLinkEnabled`: `bool`
+
+<a id="virtualinterfacestypedef"></a>
 
 ## VirtualInterfacesTypeDef
 

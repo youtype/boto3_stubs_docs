@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-migrationhubstrategyrecommendations-module"></a>
+
 # Typed dictionaries for boto3 MigrationHubStrategyRecommendations module
 
 > [Index](..) > [MigrationHubStrategyRecommendations](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
 type annotations stubs module
-[mypy_boto3_migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
+[mypy-boto3-migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
 
 - [Typed dictionaries for boto3 MigrationHubStrategyRecommendations module](#typed-dictionaries-for-boto3-migrationhubstrategyrecommendations-module)
   - [AntipatternSeveritySummaryTypeDef](#antipatternseveritysummarytypedef)
@@ -82,6 +84,8 @@ type annotations stubs module
   - [UpdateApplicationComponentConfigRequestRequestTypeDef](#updateapplicationcomponentconfigrequestrequesttypedef)
   - [UpdateServerConfigRequestRequestTypeDef](#updateserverconfigrequestrequesttypedef)
 
+<a id="antipatternseveritysummarytypedef"></a>
+
 ## AntipatternSeveritySummaryTypeDef
 
 ```python
@@ -92,6 +96,8 @@ Optional fields:
 
 - `count`: `int`
 - `severity`: [SeverityType](./literals.md#severitytype)
+
+<a id="applicationcomponentdetailtypedef"></a>
 
 ## ApplicationComponentDetailTypeDef
 
@@ -128,6 +134,8 @@ Optional fields:
   `List`\[[SourceCodeRepositoryTypeDef](./type_defs.md#sourcecoderepositorytypedef)\]
 - `statusMessage`: `str`
 
+<a id="applicationcomponentstrategytypedef"></a>
+
 ## ApplicationComponentStrategyTypeDef
 
 ```python
@@ -142,6 +150,8 @@ Optional fields:
 - `status`:
   [StrategyRecommendationType](./literals.md#strategyrecommendationtype)
 
+<a id="applicationcomponentsummarytypedef"></a>
+
 ## ApplicationComponentSummaryTypeDef
 
 ```python
@@ -153,6 +163,8 @@ Optional fields:
 - `appType`: [AppTypeType](./literals.md#apptypetype)
 - `count`: `int`
 
+<a id="applicationpreferencestypedef"></a>
+
 ## ApplicationPreferencesTypeDef
 
 ```python
@@ -163,6 +175,8 @@ Optional fields:
 
 - `managementPreference`:
   [ManagementPreferenceTypeDef](./type_defs.md#managementpreferencetypedef)
+
+<a id="assessmentsummarytypedef"></a>
 
 ## AssessmentSummaryTypeDef
 
@@ -189,6 +203,8 @@ Optional fields:
 - `listServerSummary`:
   `List`\[[ServerSummaryTypeDef](./type_defs.md#serversummarytypedef)\]
 
+<a id="associatedapplicationtypedef"></a>
+
 ## AssociatedApplicationTypeDef
 
 ```python
@@ -200,6 +216,8 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 
+<a id="awsmanagedresourcestypedef"></a>
+
 ## AwsManagedResourcesTypeDef
 
 ```python
@@ -210,6 +228,8 @@ Required fields:
 
 - `targetDestination`:
   `List`\[[AwsManagedTargetDestinationType](./literals.md#awsmanagedtargetdestinationtype)\]
+
+<a id="businessgoalstypedef"></a>
 
 ## BusinessGoalsTypeDef
 
@@ -223,6 +243,8 @@ Optional fields:
 - `modernizeInfrastructureWithCloudNativeTechnologies`: `int`
 - `reduceOperationalOverheadWithManagedServices`: `int`
 - `speedOfMigration`: `int`
+
+<a id="collectortypedef"></a>
 
 ## CollectorTypeDef
 
@@ -240,6 +262,8 @@ Optional fields:
 - `lastActivityTimeStamp`: `str`
 - `registeredTimeStamp`: `str`
 
+<a id="datacollectiondetailstypedef"></a>
+
 ## DataCollectionDetailsTypeDef
 
 ```python
@@ -256,6 +280,8 @@ Optional fields:
 - `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
 - `success`: `int`
 
+<a id="databaseconfigdetailtypedef"></a>
+
 ## DatabaseConfigDetailTypeDef
 
 ```python
@@ -265,6 +291,8 @@ from mypy_boto3_migrationhubstrategy.type_defs import DatabaseConfigDetailTypeDe
 Optional fields:
 
 - `secretName`: `str`
+
+<a id="databasemigrationpreferencetypedef"></a>
 
 ## DatabaseMigrationPreferenceTypeDef
 
@@ -279,6 +307,8 @@ Optional fields:
 - `noPreference`:
   [NoDatabaseMigrationPreferenceTypeDef](./type_defs.md#nodatabasemigrationpreferencetypedef)
 
+<a id="databasepreferencestypedef"></a>
+
 ## DatabasePreferencesTypeDef
 
 ```python
@@ -292,6 +322,8 @@ Optional fields:
 - `databaseMigrationPreference`:
   [DatabaseMigrationPreferenceTypeDef](./type_defs.md#databasemigrationpreferencetypedef)
 
+<a id="getapplicationcomponentdetailsrequestrequesttypedef"></a>
+
 ## GetApplicationComponentDetailsRequestRequestTypeDef
 
 ```python
@@ -301,6 +333,8 @@ from mypy_boto3_migrationhubstrategy.type_defs import GetApplicationComponentDet
 Required fields:
 
 - `applicationComponentId`: `str`
+
+<a id="getapplicationcomponentdetailsresponsetypedef"></a>
 
 ## GetApplicationComponentDetailsResponseTypeDef
 
@@ -319,6 +353,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapplicationcomponentstrategiesrequestrequesttypedef"></a>
+
 ## GetApplicationComponentStrategiesRequestRequestTypeDef
 
 ```python
@@ -328,6 +364,8 @@ from mypy_boto3_migrationhubstrategy.type_defs import GetApplicationComponentStr
 Required fields:
 
 - `applicationComponentId`: `str`
+
+<a id="getapplicationcomponentstrategiesresponsetypedef"></a>
 
 ## GetApplicationComponentStrategiesResponseTypeDef
 
@@ -342,6 +380,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getassessmentrequestrequesttypedef"></a>
+
 ## GetAssessmentRequestRequestTypeDef
 
 ```python
@@ -351,6 +391,8 @@ from mypy_boto3_migrationhubstrategy.type_defs import GetAssessmentRequestReques
 Required fields:
 
 - `id`: `str`
+
+<a id="getassessmentresponsetypedef"></a>
 
 ## GetAssessmentResponseTypeDef
 
@@ -366,6 +408,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getimportfiletaskrequestrequesttypedef"></a>
+
 ## GetImportFileTaskRequestRequestTypeDef
 
 ```python
@@ -375,6 +419,8 @@ from mypy_boto3_migrationhubstrategy.type_defs import GetImportFileTaskRequestRe
 Required fields:
 
 - `id`: `str`
+
+<a id="getimportfiletaskresponsetypedef"></a>
 
 ## GetImportFileTaskResponseTypeDef
 
@@ -398,6 +444,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getportfoliopreferencesresponsetypedef"></a>
+
 ## GetPortfolioPreferencesResponseTypeDef
 
 ```python
@@ -415,6 +463,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getportfoliosummaryresponsetypedef"></a>
+
 ## GetPortfolioSummaryResponseTypeDef
 
 ```python
@@ -428,6 +478,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrecommendationreportdetailsrequestrequesttypedef"></a>
+
 ## GetRecommendationReportDetailsRequestRequestTypeDef
 
 ```python
@@ -437,6 +489,8 @@ from mypy_boto3_migrationhubstrategy.type_defs import GetRecommendationReportDet
 Required fields:
 
 - `id`: `str`
+
+<a id="getrecommendationreportdetailsresponsetypedef"></a>
 
 ## GetRecommendationReportDetailsResponseTypeDef
 
@@ -451,6 +505,8 @@ Required fields:
   [RecommendationReportDetailsTypeDef](./type_defs.md#recommendationreportdetailstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getserverdetailsrequestrequesttypedef"></a>
 
 ## GetServerDetailsRequestRequestTypeDef
 
@@ -467,6 +523,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="getserverdetailsresponsetypedef"></a>
+
 ## GetServerDetailsResponseTypeDef
 
 ```python
@@ -482,6 +540,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getserverstrategiesrequestrequesttypedef"></a>
+
 ## GetServerStrategiesRequestRequestTypeDef
 
 ```python
@@ -491,6 +551,8 @@ from mypy_boto3_migrationhubstrategy.type_defs import GetServerStrategiesRequest
 Required fields:
 
 - `serverId`: `str`
+
+<a id="getserverstrategiesresponsetypedef"></a>
 
 ## GetServerStrategiesResponseTypeDef
 
@@ -505,6 +567,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="grouptypedef"></a>
+
 ## GroupTypeDef
 
 ```python
@@ -517,6 +581,8 @@ Optional fields:
   [GroupNameType](./literals.md#groupnametype))
 - `value`: `str`
 
+<a id="heterogeneoustypedef"></a>
+
 ## HeterogeneousTypeDef
 
 ```python
@@ -528,6 +594,8 @@ Required fields:
 - `targetDatabaseEngine`:
   `List`\[[HeterogeneousTargetDatabaseEngineType](./literals.md#heterogeneoustargetdatabaseenginetype)\]
 
+<a id="homogeneoustypedef"></a>
+
 ## HomogeneousTypeDef
 
 ```python
@@ -538,6 +606,8 @@ Optional fields:
 
 - `targetDatabaseEngine`: `List`\[`Literal['None specified']` (see
   [HomogeneousTargetDatabaseEngineType](./literals.md#homogeneoustargetdatabaseenginetype))\]
+
+<a id="importfiletaskinformationtypedef"></a>
 
 ## ImportFileTaskInformationTypeDef
 
@@ -559,6 +629,8 @@ Optional fields:
 - `statusReportS3Bucket`: `str`
 - `statusReportS3Key`: `str`
 
+<a id="listapplicationcomponentsrequestrequesttypedef"></a>
+
 ## ListApplicationComponentsRequestRequestTypeDef
 
 ```python
@@ -575,6 +647,8 @@ Optional fields:
 - `nextToken`: `str`
 - `sort`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listapplicationcomponentsresponsetypedef"></a>
+
 ## ListApplicationComponentsResponseTypeDef
 
 ```python
@@ -589,6 +663,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcollectorsrequestrequesttypedef"></a>
+
 ## ListCollectorsRequestRequestTypeDef
 
 ```python
@@ -599,6 +675,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listcollectorsresponsetypedef"></a>
 
 ## ListCollectorsResponseTypeDef
 
@@ -613,6 +691,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listimportfiletaskrequestrequesttypedef"></a>
+
 ## ListImportFileTaskRequestRequestTypeDef
 
 ```python
@@ -623,6 +703,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listimportfiletaskresponsetypedef"></a>
 
 ## ListImportFileTaskResponseTypeDef
 
@@ -637,6 +719,8 @@ Required fields:
   `List`\[[ImportFileTaskInformationTypeDef](./type_defs.md#importfiletaskinformationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listserversrequestrequesttypedef"></a>
 
 ## ListServersRequestRequestTypeDef
 
@@ -653,6 +737,8 @@ Optional fields:
 - `serverCriteria`: [ServerCriteriaType](./literals.md#servercriteriatype)
 - `sort`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="listserversresponsetypedef"></a>
+
 ## ListServersResponseTypeDef
 
 ```python
@@ -666,6 +752,8 @@ Required fields:
   `List`\[[ServerDetailTypeDef](./type_defs.md#serverdetailtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="managementpreferencetypedef"></a>
 
 ## ManagementPreferenceTypeDef
 
@@ -682,6 +770,8 @@ Optional fields:
 - `selfManageResources`:
   [SelfManageResourcesTypeDef](./type_defs.md#selfmanageresourcestypedef)
 
+<a id="networkinfotypedef"></a>
+
 ## NetworkInfoTypeDef
 
 ```python
@@ -695,6 +785,8 @@ Required fields:
 - `macAddress`: `str`
 - `netMask`: `str`
 
+<a id="nodatabasemigrationpreferencetypedef"></a>
+
 ## NoDatabaseMigrationPreferenceTypeDef
 
 ```python
@@ -705,6 +797,8 @@ Required fields:
 
 - `targetDatabaseEngine`:
   `List`\[[TargetDatabaseEngineType](./literals.md#targetdatabaseenginetype)\]
+
+<a id="nomanagementpreferencetypedef"></a>
 
 ## NoManagementPreferenceTypeDef
 
@@ -717,6 +811,8 @@ Required fields:
 - `targetDestination`:
   `List`\[[NoPreferenceTargetDestinationType](./literals.md#nopreferencetargetdestinationtype)\]
 
+<a id="osinfotypedef"></a>
+
 ## OSInfoTypeDef
 
 ```python
@@ -727,6 +823,8 @@ Optional fields:
 
 - `type`: [OSTypeType](./literals.md#ostypetype)
 - `version`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -740,6 +838,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="prioritizebusinessgoalstypedef"></a>
+
 ## PrioritizeBusinessGoalsTypeDef
 
 ```python
@@ -749,6 +849,8 @@ from mypy_boto3_migrationhubstrategy.type_defs import PrioritizeBusinessGoalsTyp
 Optional fields:
 
 - `businessGoals`: [BusinessGoalsTypeDef](./type_defs.md#businessgoalstypedef)
+
+<a id="putportfoliopreferencesrequestrequesttypedef"></a>
 
 ## PutPortfolioPreferencesRequestRequestTypeDef
 
@@ -764,6 +866,8 @@ Optional fields:
   [DatabasePreferencesTypeDef](./type_defs.md#databasepreferencestypedef)
 - `prioritizeBusinessGoals`:
   [PrioritizeBusinessGoalsTypeDef](./type_defs.md#prioritizebusinessgoalstypedef)
+
+<a id="recommendationreportdetailstypedef"></a>
 
 ## RecommendationReportDetailsTypeDef
 
@@ -781,6 +885,8 @@ Optional fields:
   [RecommendationReportStatusType](./literals.md#recommendationreportstatustype)
 - `statusMessage`: `str`
 
+<a id="recommendationsettypedef"></a>
+
 ## RecommendationSetTypeDef
 
 ```python
@@ -794,6 +900,8 @@ Optional fields:
   [TargetDestinationType](./literals.md#targetdestinationtype)
 - `transformationTool`:
   [TransformationToolTypeDef](./type_defs.md#transformationtooltypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -809,6 +917,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3objecttypedef"></a>
+
 ## S3ObjectTypeDef
 
 ```python
@@ -820,6 +930,8 @@ Optional fields:
 - `s3Bucket`: `str`
 - `s3key`: `str`
 
+<a id="selfmanageresourcestypedef"></a>
+
 ## SelfManageResourcesTypeDef
 
 ```python
@@ -830,6 +942,8 @@ Required fields:
 
 - `targetDestination`:
   `List`\[[SelfManageTargetDestinationType](./literals.md#selfmanagetargetdestinationtype)\]
+
+<a id="serverdetailtypedef"></a>
 
 ## ServerDetailTypeDef
 
@@ -859,6 +973,8 @@ Optional fields:
 - `statusMessage`: `str`
 - `systemInfo`: [SystemInfoTypeDef](./type_defs.md#systeminfotypedef)
 
+<a id="serverstrategytypedef"></a>
+
 ## ServerStrategyTypeDef
 
 ```python
@@ -874,6 +990,8 @@ Optional fields:
 - `status`:
   [StrategyRecommendationType](./literals.md#strategyrecommendationtype)
 
+<a id="serversummarytypedef"></a>
+
 ## ServerSummaryTypeDef
 
 ```python
@@ -884,6 +1002,8 @@ Optional fields:
 
 - `ServerOsType`: [ServerOsTypeType](./literals.md#serverostypetype)
 - `count`: `int`
+
+<a id="sourcecoderepositorytypedef"></a>
 
 ## SourceCodeRepositoryTypeDef
 
@@ -897,6 +1017,8 @@ Optional fields:
 - `repository`: `str`
 - `versionControlType`: `str`
 
+<a id="sourcecodetypedef"></a>
+
 ## SourceCodeTypeDef
 
 ```python
@@ -909,6 +1031,8 @@ Optional fields:
 - `sourceVersion`: `str`
 - `versionControl`: [VersionControlType](./literals.md#versioncontroltype)
 
+<a id="startassessmentrequestrequesttypedef"></a>
+
 ## StartAssessmentRequestRequestTypeDef
 
 ```python
@@ -919,6 +1043,8 @@ Optional fields:
 
 - `s3bucketForAnalysisData`: `str`
 - `s3bucketForReportData`: `str`
+
+<a id="startassessmentresponsetypedef"></a>
 
 ## StartAssessmentResponseTypeDef
 
@@ -931,6 +1057,8 @@ Required fields:
 - `assessmentId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startimportfiletaskrequestrequesttypedef"></a>
 
 ## StartImportFileTaskRequestRequestTypeDef
 
@@ -950,6 +1078,8 @@ Optional fields:
 - `groupId`: `Sequence`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
 - `s3bucketForReportData`: `str`
 
+<a id="startimportfiletaskresponsetypedef"></a>
+
 ## StartImportFileTaskResponseTypeDef
 
 ```python
@@ -962,6 +1092,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startrecommendationreportgenerationrequestrequesttypedef"></a>
+
 ## StartRecommendationReportGenerationRequestRequestTypeDef
 
 ```python
@@ -972,6 +1104,8 @@ Optional fields:
 
 - `groupIdFilter`: `Sequence`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
 - `outputFormat`: [OutputFormatType](./literals.md#outputformattype)
+
+<a id="startrecommendationreportgenerationresponsetypedef"></a>
 
 ## StartRecommendationReportGenerationResponseTypeDef
 
@@ -985,6 +1119,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopassessmentrequestrequesttypedef"></a>
+
 ## StopAssessmentRequestRequestTypeDef
 
 ```python
@@ -994,6 +1130,8 @@ from mypy_boto3_migrationhubstrategy.type_defs import StopAssessmentRequestReque
 Required fields:
 
 - `assessmentId`: `str`
+
+<a id="strategyoptiontypedef"></a>
 
 ## StrategyOptionTypeDef
 
@@ -1010,6 +1148,8 @@ Optional fields:
 - `toolName`:
   [TransformationToolNameType](./literals.md#transformationtoolnametype)
 
+<a id="strategysummarytypedef"></a>
+
 ## StrategySummaryTypeDef
 
 ```python
@@ -1020,6 +1160,8 @@ Optional fields:
 
 - `count`: `int`
 - `strategy`: [StrategyType](./literals.md#strategytype)
+
+<a id="systeminfotypedef"></a>
 
 ## SystemInfoTypeDef
 
@@ -1035,6 +1177,8 @@ Optional fields:
   `List`\[[NetworkInfoTypeDef](./type_defs.md#networkinfotypedef)\]
 - `osInfo`: [OSInfoTypeDef](./type_defs.md#osinfotypedef)
 
+<a id="transformationtooltypedef"></a>
+
 ## TransformationToolTypeDef
 
 ```python
@@ -1047,6 +1191,8 @@ Optional fields:
 - `name`:
   [TransformationToolNameType](./literals.md#transformationtoolnametype)
 - `tranformationToolInstallationLink`: `str`
+
+<a id="updateapplicationcomponentconfigrequestrequesttypedef"></a>
 
 ## UpdateApplicationComponentConfigRequestRequestTypeDef
 
@@ -1066,6 +1212,8 @@ Optional fields:
   `Sequence`\[[SourceCodeTypeDef](./type_defs.md#sourcecodetypedef)\]
 - `strategyOption`:
   [StrategyOptionTypeDef](./type_defs.md#strategyoptiontypedef)
+
+<a id="updateserverconfigrequestrequesttypedef"></a>
 
 ## UpdateServerConfigRequestRequestTypeDef
 

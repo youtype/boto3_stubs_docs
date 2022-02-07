@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-chimesdkmeetings-module"></a>
+
 # Type annotations for boto3 ChimeSDKMeetings module
 
 > [Index](..) > ChimeSDKMeetings
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
 type annotations stubs module
-[mypy_boto3_chime_sdk_meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
+[mypy-boto3-chime-sdk-meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[chime-sdk-meetings]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[chime-sdk-meetings]'
+
+# standalone installation
 pip install mypy-boto3-chime-sdk-meetings
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-chime-sdk-meetings
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="chimesdkmeetingsclient"></a>
 
 ## ChimeSDKMeetingsClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_chime_sdk_meetings.client import ChimeSDKMeetingsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -46,6 +60,8 @@ from mypy_boto3_chime_sdk_meetings.client import ChimeSDKMeetingsClient
 - [start_meeting_transcription](./client.md#start_meeting_transcription)
 - [stop_meeting_transcription](./client.md#stop_meeting_transcription)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ChimeSDKMeetingsClient [exceptions](./client.md#exceptions)
@@ -58,6 +74,8 @@ ChimeSDKMeetingsClient [exceptions](./client.md#exceptions)
 - ServiceUnavailableException
 - UnauthorizedException
 - UnprocessableEntityException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -82,6 +100,8 @@ from mypy_boto3_chime_sdk_meetings.literals import MeetingFeatureStatusType, ...
 - [TranscribeRegionType](./literals.md#transcriberegiontype)
 - [TranscribeVocabularyFilterMethodType](./literals.md#transcribevocabularyfiltermethodtype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

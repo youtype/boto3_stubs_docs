@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-sns-module"></a>
+
 # Literals for boto3 SNS module
 
 > [Index](..) > [SNS](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
 type annotations stubs module
-[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 - [Literals for boto3 SNS module](#literals-for-boto3-sns-module)
   - [LanguageCodeStringType](#languagecodestringtype)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [SMSSandboxPhoneNumberVerificationStatusType](#smssandboxphonenumberverificationstatustype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="languagecodestringtype"></a>
 
 ## LanguageCodeStringType
 
@@ -45,6 +49,8 @@ Values:
 - `zh-CN`
 - `zh-TW`
 
+<a id="listendpointsbyplatformapplicationpaginatorname"></a>
+
 ## ListEndpointsByPlatformApplicationPaginatorName
 
 ```python
@@ -54,6 +60,8 @@ from mypy_boto3_sns.literals import ListEndpointsByPlatformApplicationPaginatorN
 Values:
 
 - `list_endpoints_by_platform_application`
+
+<a id="listoriginationnumberspaginatorname"></a>
 
 ## ListOriginationNumbersPaginatorName
 
@@ -65,6 +73,8 @@ Values:
 
 - `list_origination_numbers`
 
+<a id="listphonenumbersoptedoutpaginatorname"></a>
+
 ## ListPhoneNumbersOptedOutPaginatorName
 
 ```python
@@ -74,6 +84,8 @@ from mypy_boto3_sns.literals import ListPhoneNumbersOptedOutPaginatorName
 Values:
 
 - `list_phone_numbers_opted_out`
+
+<a id="listplatformapplicationspaginatorname"></a>
 
 ## ListPlatformApplicationsPaginatorName
 
@@ -85,6 +97,8 @@ Values:
 
 - `list_platform_applications`
 
+<a id="listsmssandboxphonenumberspaginatorname"></a>
+
 ## ListSMSSandboxPhoneNumbersPaginatorName
 
 ```python
@@ -94,6 +108,8 @@ from mypy_boto3_sns.literals import ListSMSSandboxPhoneNumbersPaginatorName
 Values:
 
 - `list_sms_sandbox_phone_numbers`
+
+<a id="listsubscriptionsbytopicpaginatorname"></a>
 
 ## ListSubscriptionsByTopicPaginatorName
 
@@ -105,6 +121,8 @@ Values:
 
 - `list_subscriptions_by_topic`
 
+<a id="listsubscriptionspaginatorname"></a>
+
 ## ListSubscriptionsPaginatorName
 
 ```python
@@ -115,6 +133,8 @@ Values:
 
 - `list_subscriptions`
 
+<a id="listtopicspaginatorname"></a>
+
 ## ListTopicsPaginatorName
 
 ```python
@@ -124,6 +144,8 @@ from mypy_boto3_sns.literals import ListTopicsPaginatorName
 Values:
 
 - `list_topics`
+
+<a id="numbercapabilitytype"></a>
 
 ## NumberCapabilityType
 
@@ -137,6 +159,8 @@ Values:
 - `SMS`
 - `VOICE`
 
+<a id="routetypetype"></a>
+
 ## RouteTypeType
 
 ```python
@@ -149,6 +173,8 @@ Values:
 - `Promotional`
 - `Transactional`
 
+<a id="smssandboxphonenumberverificationstatustype"></a>
+
 ## SMSSandboxPhoneNumberVerificationStatusType
 
 ```python
@@ -159,6 +185,8 @@ Values:
 
 - `Pending`
 - `Verified`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -467,6 +495,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

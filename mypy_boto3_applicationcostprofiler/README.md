@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-applicationcostprofiler-module"></a>
+
 # Type annotations for boto3 ApplicationCostProfiler module
 
 > [Index](..) > ApplicationCostProfiler
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ApplicationCostProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler)
 type annotations stubs module
-[mypy_boto3_applicationcostprofiler](https://pypi.org/project/mypy-boto3-applicationcostprofiler/).
+[mypy-boto3-applicationcostprofiler](https://pypi.org/project/mypy-boto3-applicationcostprofiler/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[applicationcostprofiler]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[applicationcostprofiler]'
+
+# standalone installation
 pip install mypy-boto3-applicationcostprofiler
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-applicationcostprofiler
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="applicationcostprofilerclient"></a>
+
 ## ApplicationCostProfilerClient
 
 Type annotations for `boto3.client("applicationcostprofiler")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_applicationcostprofiler.client import ApplicationCostProfilerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -43,6 +57,8 @@ from mypy_boto3_applicationcostprofiler.client import ApplicationCostProfilerCli
 - [put_report_definition](./client.md#put_report_definition)
 - [update_report_definition](./client.md#update_report_definition)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ApplicationCostProfilerClient [exceptions](./client.md#exceptions)
@@ -54,6 +70,8 @@ ApplicationCostProfilerClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -62,10 +80,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_applicationcostprofiler.paginators import ListReportDefinitionsPaginator, ...
+from mypy_boto3_applicationcostprofiler.paginator import ListReportDefinitionsPaginator, ...
 ```
 
 - [ListReportDefinitionsPaginator](./paginators.md#listreportdefinitionspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -83,6 +103,8 @@ from mypy_boto3_applicationcostprofiler.literals import FormatType, ...
 - [S3BucketRegionType](./literals.md#s3bucketregiontype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="licensemanagerclient-for-boto3-licensemanager-module"></a>
+
 # LicenseManagerClient for boto3 LicenseManager module
 
 > [Index](..) > [LicenseManager](.) > LicenseManagerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
-[mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
+[mypy-boto3-license-manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
 - [LicenseManagerClient for boto3 LicenseManager module](#licensemanagerclient-for-boto3-licensemanager-module)
   - [LicenseManagerClient](#licensemanagerclient)
@@ -64,6 +66,8 @@ type annotations stubs module
     - [update_service_settings](#update_service_settings)
     - [get_paginator](#get_paginator)
 
+<a id="licensemanagerclient"></a>
+
 ## LicenseManagerClient
 
 Type annotations for `boto3.client("license-manager")`
@@ -71,14 +75,17 @@ Type annotations for `boto3.client("license-manager")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_license_manager.client import LicenseManagerClient
 
 def get_license-manager_client() -> LicenseManagerClient:
-    return boto3.client("license-manager")
+    return Session().client("license-manager")
 ```
 
 Boto3 documentation:
 [LicenseManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -113,7 +120,11 @@ Exceptions:
 - `Exceptions.UnsupportedDigitalSignatureMethodException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -125,6 +136,8 @@ Boto3 documentation:
 [LicenseManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_grant"></a>
 
 ### accept_grant
 
@@ -145,6 +158,8 @@ Keyword-only arguments:
 Returns
 [AcceptGrantResponseTypeDef](./type_defs.md#acceptgrantresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -159,6 +174,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="check_in_license"></a>
 
 ### check_in_license
 
@@ -178,6 +195,8 @@ Keyword-only arguments:
 - `Beneficiary`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="checkout_borrow_license"></a>
 
 ### checkout_borrow_license
 
@@ -209,6 +228,8 @@ Keyword-only arguments:
 Returns
 [CheckoutBorrowLicenseResponseTypeDef](./type_defs.md#checkoutborrowlicenseresponsetypedef).
 
+<a id="checkout_license"></a>
+
 ### checkout_license
 
 Checks out the specified license.
@@ -237,6 +258,8 @@ Keyword-only arguments:
 Returns
 [CheckoutLicenseResponseTypeDef](./type_defs.md#checkoutlicenseresponsetypedef).
 
+<a id="create_grant"></a>
+
 ### create_grant
 
 Creates a grant for the specified license.
@@ -262,6 +285,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGrantResponseTypeDef](./type_defs.md#creategrantresponsetypedef).
+
+<a id="create_grant_version"></a>
 
 ### create_grant_version
 
@@ -289,6 +314,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGrantVersionResponseTypeDef](./type_defs.md#creategrantversionresponsetypedef).
+
+<a id="create_license"></a>
 
 ### create_license
 
@@ -325,6 +352,8 @@ Keyword-only arguments:
 Returns
 [CreateLicenseResponseTypeDef](./type_defs.md#createlicenseresponsetypedef).
 
+<a id="create_license_configuration"></a>
+
 ### create_license_configuration
 
 Creates a license configuration.
@@ -355,6 +384,8 @@ Keyword-only arguments:
 Returns
 [CreateLicenseConfigurationResponseTypeDef](./type_defs.md#createlicenseconfigurationresponsetypedef).
 
+<a id="create_license_conversion_task_for_resource"></a>
+
 ### create_license_conversion_task_for_resource
 
 Creates a new license conversion task.
@@ -381,6 +412,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLicenseConversionTaskForResourceResponseTypeDef](./type_defs.md#createlicenseconversiontaskforresourceresponsetypedef).
+
+<a id="create_license_manager_report_generator"></a>
 
 ### create_license_manager_report_generator
 
@@ -411,6 +444,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#createlicensemanagerreportgeneratorresponsetypedef).
+
+<a id="create_license_version"></a>
 
 ### create_license_version
 
@@ -449,6 +484,8 @@ Keyword-only arguments:
 Returns
 [CreateLicenseVersionResponseTypeDef](./type_defs.md#createlicenseversionresponsetypedef).
 
+<a id="create_token"></a>
+
 ### create_token
 
 Creates a long-lived token.
@@ -472,6 +509,8 @@ Keyword-only arguments:
 Returns
 [CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
 
+<a id="delete_grant"></a>
+
 ### delete_grant
 
 Deletes the specified grant.
@@ -493,6 +532,8 @@ Keyword-only arguments:
 Returns
 [DeleteGrantResponseTypeDef](./type_defs.md#deletegrantresponsetypedef).
 
+<a id="delete_license"></a>
+
 ### delete_license
 
 Deletes the specified license.
@@ -513,6 +554,8 @@ Keyword-only arguments:
 Returns
 [DeleteLicenseResponseTypeDef](./type_defs.md#deletelicenseresponsetypedef).
 
+<a id="delete_license_configuration"></a>
+
 ### delete_license_configuration
 
 Deletes the specified license configuration.
@@ -531,6 +574,8 @@ Keyword-only arguments:
 - `LicenseConfigurationArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_license_manager_report_generator"></a>
 
 ### delete_license_manager_report_generator
 
@@ -552,6 +597,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_token"></a>
+
 ### delete_token
 
 Deletes the specified token.
@@ -569,6 +616,8 @@ Keyword-only arguments:
 - `TokenId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="extend_license_consumption"></a>
 
 ### extend_license_consumption
 
@@ -591,6 +640,8 @@ Keyword-only arguments:
 Returns
 [ExtendLicenseConsumptionResponseTypeDef](./type_defs.md#extendlicenseconsumptionresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -609,6 +660,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_access_token"></a>
 
 ### get_access_token
 
@@ -630,6 +683,8 @@ Keyword-only arguments:
 Returns
 [GetAccessTokenResponseTypeDef](./type_defs.md#getaccesstokenresponsetypedef).
 
+<a id="get_grant"></a>
+
 ### get_grant
 
 Gets detailed information about the specified grant.
@@ -649,6 +704,8 @@ Keyword-only arguments:
 
 Returns [GetGrantResponseTypeDef](./type_defs.md#getgrantresponsetypedef).
 
+<a id="get_license"></a>
+
 ### get_license
 
 Gets detailed information about the specified license.
@@ -667,6 +724,8 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns [GetLicenseResponseTypeDef](./type_defs.md#getlicenseresponsetypedef).
+
+<a id="get_license_configuration"></a>
 
 ### get_license_configuration
 
@@ -688,6 +747,8 @@ Keyword-only arguments:
 Returns
 [GetLicenseConfigurationResponseTypeDef](./type_defs.md#getlicenseconfigurationresponsetypedef).
 
+<a id="get_license_conversion_task"></a>
+
 ### get_license_conversion_task
 
 Gets information about the specified license type conversion task.
@@ -707,6 +768,8 @@ Keyword-only arguments:
 
 Returns
 [GetLicenseConversionTaskResponseTypeDef](./type_defs.md#getlicenseconversiontaskresponsetypedef).
+
+<a id="get_license_manager_report_generator"></a>
 
 ### get_license_manager_report_generator
 
@@ -728,6 +791,8 @@ Keyword-only arguments:
 Returns
 [GetLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#getlicensemanagerreportgeneratorresponsetypedef).
 
+<a id="get_license_usage"></a>
+
 ### get_license_usage
 
 Gets detailed information about the usage of the specified license.
@@ -748,6 +813,8 @@ Keyword-only arguments:
 Returns
 [GetLicenseUsageResponseTypeDef](./type_defs.md#getlicenseusageresponsetypedef).
 
+<a id="get_service_settings"></a>
+
 ### get_service_settings
 
 Gets the License Manager settings for the current Region.
@@ -760,6 +827,8 @@ Boto3 documentation:
 
 Returns
 [GetServiceSettingsResponseTypeDef](./type_defs.md#getservicesettingsresponsetypedef).
+
+<a id="list_associations_for_license_configuration"></a>
 
 ### list_associations_for_license_configuration
 
@@ -784,6 +853,8 @@ Keyword-only arguments:
 Returns
 [ListAssociationsForLicenseConfigurationResponseTypeDef](./type_defs.md#listassociationsforlicenseconfigurationresponsetypedef).
 
+<a id="list_distributed_grants"></a>
+
 ### list_distributed_grants
 
 Lists the grants distributed for the specified license.
@@ -806,6 +877,8 @@ Keyword-only arguments:
 
 Returns
 [ListDistributedGrantsResponseTypeDef](./type_defs.md#listdistributedgrantsresponsetypedef).
+
+<a id="list_failures_for_license_configuration_operations"></a>
 
 ### list_failures_for_license_configuration_operations
 
@@ -830,6 +903,8 @@ Keyword-only arguments:
 Returns
 [ListFailuresForLicenseConfigurationOperationsResponseTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsresponsetypedef).
 
+<a id="list_license_configurations"></a>
+
 ### list_license_configurations
 
 Lists the license configurations for your account.
@@ -853,6 +928,8 @@ Keyword-only arguments:
 Returns
 [ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef).
 
+<a id="list_license_conversion_tasks"></a>
+
 ### list_license_conversion_tasks
 
 Lists the license type conversion tasks for your account.
@@ -874,6 +951,8 @@ Keyword-only arguments:
 
 Returns
 [ListLicenseConversionTasksResponseTypeDef](./type_defs.md#listlicenseconversiontasksresponsetypedef).
+
+<a id="list_license_manager_report_generators"></a>
 
 ### list_license_manager_report_generators
 
@@ -898,6 +977,8 @@ Keyword-only arguments:
 Returns
 [ListLicenseManagerReportGeneratorsResponseTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsresponsetypedef).
 
+<a id="list_license_specifications_for_resource"></a>
+
 ### list_license_specifications_for_resource
 
 Describes the license configurations for the specified resource.
@@ -921,6 +1002,8 @@ Keyword-only arguments:
 Returns
 [ListLicenseSpecificationsForResourceResponseTypeDef](./type_defs.md#listlicensespecificationsforresourceresponsetypedef).
 
+<a id="list_license_versions"></a>
+
 ### list_license_versions
 
 Lists all versions of the specified license.
@@ -943,6 +1026,8 @@ Keyword-only arguments:
 Returns
 [ListLicenseVersionsResponseTypeDef](./type_defs.md#listlicenseversionsresponsetypedef).
 
+<a id="list_licenses"></a>
+
 ### list_licenses
 
 Lists the licenses for your account.
@@ -964,6 +1049,8 @@ Keyword-only arguments:
 
 Returns
 [ListLicensesResponseTypeDef](./type_defs.md#listlicensesresponsetypedef).
+
+<a id="list_received_grants"></a>
 
 ### list_received_grants
 
@@ -988,6 +1075,8 @@ Keyword-only arguments:
 Returns
 [ListReceivedGrantsResponseTypeDef](./type_defs.md#listreceivedgrantsresponsetypedef).
 
+<a id="list_received_licenses"></a>
+
 ### list_received_licenses
 
 Lists received licenses.
@@ -1010,6 +1099,8 @@ Keyword-only arguments:
 
 Returns
 [ListReceivedLicensesResponseTypeDef](./type_defs.md#listreceivedlicensesresponsetypedef).
+
+<a id="list_resource_inventory"></a>
 
 ### list_resource_inventory
 
@@ -1034,6 +1125,8 @@ Keyword-only arguments:
 Returns
 [ListResourceInventoryResponseTypeDef](./type_defs.md#listresourceinventoryresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags for the specified license configuration.
@@ -1053,6 +1146,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_tokens"></a>
 
 ### list_tokens
 
@@ -1074,6 +1169,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListTokensResponseTypeDef](./type_defs.md#listtokensresponsetypedef).
+
+<a id="list_usage_for_license_configuration"></a>
 
 ### list_usage_for_license_configuration
 
@@ -1099,6 +1196,8 @@ Keyword-only arguments:
 Returns
 [ListUsageForLicenseConfigurationResponseTypeDef](./type_defs.md#listusageforlicenseconfigurationresponsetypedef).
 
+<a id="reject_grant"></a>
+
 ### reject_grant
 
 Rejects the specified grant.
@@ -1117,6 +1216,8 @@ Keyword-only arguments:
 
 Returns
 [RejectGrantResponseTypeDef](./type_defs.md#rejectgrantresponsetypedef).
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -1137,6 +1238,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the specified tags from the specified license configuration.
@@ -1155,6 +1258,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_license_configuration"></a>
 
 ### update_license_configuration
 
@@ -1185,6 +1290,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_license_manager_report_generator"></a>
+
 ### update_license_manager_report_generator
 
 Updates a report generator.
@@ -1214,6 +1321,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_license_specifications_for_resource"></a>
+
 ### update_license_specifications_for_resource
 
 Adds or removes the specified license configurations for the specified Amazon
@@ -1239,6 +1348,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_service_settings"></a>
+
 ### update_service_settings
 
 Updates License Manager settings for the current Region.
@@ -1261,6 +1372,8 @@ Keyword-only arguments:
 - `EnableCrossAccountsDiscovery`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

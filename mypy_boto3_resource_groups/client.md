@@ -1,3 +1,5 @@
+<a id="resourcegroupsclient-for-boto3-resourcegroups-module"></a>
+
 # ResourceGroupsClient for boto3 ResourceGroups module
 
 > [Index](..) > [ResourceGroups](.) > ResourceGroupsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
 type annotations stubs module
-[mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
+[mypy-boto3-resource-groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 - [ResourceGroupsClient for boto3 ResourceGroups module](#resourcegroupsclient-for-boto3-resourcegroups-module)
   - [ResourceGroupsClient](#resourcegroupsclient)
@@ -32,6 +34,8 @@ type annotations stubs module
     - [update_group_query](#update_group_query)
     - [get_paginator](#get_paginator)
 
+<a id="resourcegroupsclient"></a>
+
 ## ResourceGroupsClient
 
 Type annotations for `boto3.client("resource-groups")`
@@ -39,14 +43,17 @@ Type annotations for `boto3.client("resource-groups")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_resource_groups.client import ResourceGroupsClient
 
 def get_resource-groups_client() -> ResourceGroupsClient:
-    return boto3.client("resource-groups")
+    return Session().client("resource-groups")
 ```
 
 Boto3 documentation:
 [ResourceGroups.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -71,7 +78,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -83,6 +94,8 @@ Boto3 documentation:
 [ResourceGroups.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -98,6 +111,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_group"></a>
 
 ### create_group
 
@@ -122,6 +137,8 @@ Keyword-only arguments:
 
 Returns [CreateGroupOutputTypeDef](./type_defs.md#creategroupoutputtypedef).
 
+<a id="delete_group"></a>
+
 ### delete_group
 
 Deletes the specified resource group.
@@ -140,6 +157,8 @@ Keyword-only arguments:
 - `Group`: `str`
 
 Returns [DeleteGroupOutputTypeDef](./type_defs.md#deletegroupoutputtypedef).
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -160,6 +179,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_group"></a>
+
 ### get_group
 
 Returns information about a specified resource group.
@@ -178,6 +199,8 @@ Keyword-only arguments:
 - `Group`: `str`
 
 Returns [GetGroupOutputTypeDef](./type_defs.md#getgroupoutputtypedef).
+
+<a id="get_group_configuration"></a>
 
 ### get_group_configuration
 
@@ -199,6 +222,8 @@ Keyword-only arguments:
 Returns
 [GetGroupConfigurationOutputTypeDef](./type_defs.md#getgroupconfigurationoutputtypedef).
 
+<a id="get_group_query"></a>
+
 ### get_group_query
 
 Retrieves the resource query associated with the specified resource group.
@@ -219,6 +244,8 @@ Keyword-only arguments:
 Returns
 [GetGroupQueryOutputTypeDef](./type_defs.md#getgroupqueryoutputtypedef).
 
+<a id="get_tags"></a>
+
 ### get_tags
 
 Returns a list of tags that are associated with a resource group, specified by
@@ -237,6 +264,8 @@ Keyword-only arguments:
 - `Arn`: `str` *(required)*
 
 Returns [GetTagsOutputTypeDef](./type_defs.md#gettagsoutputtypedef).
+
+<a id="group_resources"></a>
 
 ### group_resources
 
@@ -257,6 +286,8 @@ Keyword-only arguments:
 
 Returns
 [GroupResourcesOutputTypeDef](./type_defs.md#groupresourcesoutputtypedef).
+
+<a id="list_group_resources"></a>
 
 ### list_group_resources
 
@@ -284,6 +315,8 @@ Keyword-only arguments:
 Returns
 [ListGroupResourcesOutputTypeDef](./type_defs.md#listgroupresourcesoutputtypedef).
 
+<a id="list_groups"></a>
+
 ### list_groups
 
 Returns a list of existing resource groups in your account.
@@ -305,6 +338,8 @@ Keyword-only arguments:
 
 Returns [ListGroupsOutputTypeDef](./type_defs.md#listgroupsoutputtypedef).
 
+<a id="put_group_configuration"></a>
+
 ### put_group_configuration
 
 Attaches a service configuration to the specified group.
@@ -325,6 +360,8 @@ Keyword-only arguments:
   `Sequence`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="search_resources"></a>
 
 ### search_resources
 
@@ -348,6 +385,8 @@ Keyword-only arguments:
 Returns
 [SearchResourcesOutputTypeDef](./type_defs.md#searchresourcesoutputtypedef).
 
+<a id="tag"></a>
+
 ### tag
 
 Adds tags to a resource group with the specified ARN.
@@ -366,6 +405,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns [TagOutputTypeDef](./type_defs.md#tagoutputtypedef).
+
+<a id="ungroup_resources"></a>
 
 ### ungroup_resources
 
@@ -388,6 +429,8 @@ Keyword-only arguments:
 Returns
 [UngroupResourcesOutputTypeDef](./type_defs.md#ungroupresourcesoutputtypedef).
 
+<a id="untag"></a>
+
 ### untag
 
 Deletes tags from a specified resource group.
@@ -406,6 +449,8 @@ Keyword-only arguments:
 - `Keys`: `Sequence`\[`str`\] *(required)*
 
 Returns [UntagOutputTypeDef](./type_defs.md#untagoutputtypedef).
+
+<a id="update_group"></a>
 
 ### update_group
 
@@ -426,6 +471,8 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns [UpdateGroupOutputTypeDef](./type_defs.md#updategroupoutputtypedef).
+
+<a id="update_group_query"></a>
 
 ### update_group_query
 
@@ -449,6 +496,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateGroupQueryOutputTypeDef](./type_defs.md#updategroupqueryoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

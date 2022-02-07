@@ -1,3 +1,5 @@
+<a id="opensearchserviceclient-for-boto3-opensearchservice-module"></a>
+
 # OpenSearchServiceClient for boto3 OpenSearchService module
 
 > [Index](..) > [OpenSearchService](.) > OpenSearchServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService)
 type annotations stubs module
-[mypy_boto3_opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
+[mypy-boto3-opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
 
 - [OpenSearchServiceClient for boto3 OpenSearchService module](#opensearchserviceclient-for-boto3-opensearchservice-module)
   - [OpenSearchServiceClient](#opensearchserviceclient)
@@ -55,6 +57,8 @@ type annotations stubs module
     - [update_package](#update_package)
     - [upgrade_domain](#upgrade_domain)
 
+<a id="opensearchserviceclient"></a>
+
 ## OpenSearchServiceClient
 
 Type annotations for `boto3.client("opensearch")`
@@ -62,14 +66,17 @@ Type annotations for `boto3.client("opensearch")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_opensearch.client import OpenSearchServiceClient
 
 def get_opensearch_client() -> OpenSearchServiceClient:
-    return boto3.client("opensearch")
+    return Session().client("opensearch")
 ```
 
 Boto3 documentation:
 [OpenSearchService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -98,7 +105,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -110,6 +121,8 @@ Boto3 documentation:
 [OpenSearchService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_inbound_connection"></a>
 
 ### accept_inbound_connection
 
@@ -132,6 +145,8 @@ Keyword-only arguments:
 Returns
 [AcceptInboundConnectionResponseTypeDef](./type_defs.md#acceptinboundconnectionresponsetypedef).
 
+<a id="add_tags"></a>
+
 ### add_tags
 
 Attaches tags to an existing domain.
@@ -148,6 +163,8 @@ Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
 - `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="associate_package"></a>
 
 ### associate_package
 
@@ -169,6 +186,8 @@ Keyword-only arguments:
 Returns
 [AssociatePackageResponseTypeDef](./type_defs.md#associatepackageresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -183,6 +202,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_service_software_update"></a>
 
 ### cancel_service_software_update
 
@@ -204,6 +225,8 @@ Keyword-only arguments:
 
 Returns
 [CancelServiceSoftwareUpdateResponseTypeDef](./type_defs.md#cancelservicesoftwareupdateresponsetypedef).
+
+<a id="create_domain"></a>
 
 ### create_domain
 
@@ -247,6 +270,8 @@ Keyword-only arguments:
 Returns
 [CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
 
+<a id="create_outbound_connection"></a>
+
 ### create_outbound_connection
 
 Creates a new cross-cluster connection from a local OpenSearch domain to a
@@ -274,6 +299,8 @@ Keyword-only arguments:
 Returns
 [CreateOutboundConnectionResponseTypeDef](./type_defs.md#createoutboundconnectionresponsetypedef).
 
+<a id="create_package"></a>
+
 ### create_package
 
 Create a package for use with Amazon OpenSearch Service domains.
@@ -298,6 +325,8 @@ Keyword-only arguments:
 Returns
 [CreatePackageResponseTypeDef](./type_defs.md#createpackageresponsetypedef).
 
+<a id="delete_domain"></a>
+
 ### delete_domain
 
 Permanently deletes the specified domain and all of its data.
@@ -316,6 +345,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef).
+
+<a id="delete_inbound_connection"></a>
 
 ### delete_inbound_connection
 
@@ -338,6 +369,8 @@ Keyword-only arguments:
 Returns
 [DeleteInboundConnectionResponseTypeDef](./type_defs.md#deleteinboundconnectionresponsetypedef).
 
+<a id="delete_outbound_connection"></a>
+
 ### delete_outbound_connection
 
 Allows the local domain owner to delete an existing outbound cross-cluster
@@ -359,6 +392,8 @@ Keyword-only arguments:
 Returns
 [DeleteOutboundConnectionResponseTypeDef](./type_defs.md#deleteoutboundconnectionresponsetypedef).
 
+<a id="delete_package"></a>
+
 ### delete_package
 
 Deletes the package.
@@ -377,6 +412,8 @@ Keyword-only arguments:
 
 Returns
 [DeletePackageResponseTypeDef](./type_defs.md#deletepackageresponsetypedef).
+
+<a id="describe_domain"></a>
 
 ### describe_domain
 
@@ -397,6 +434,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef).
+
+<a id="describe_domain_auto_tunes"></a>
 
 ### describe_domain_auto_tunes
 
@@ -421,6 +460,8 @@ Keyword-only arguments:
 Returns
 [DescribeDomainAutoTunesResponseTypeDef](./type_defs.md#describedomainautotunesresponsetypedef).
 
+<a id="describe_domain_change_progress"></a>
+
 ### describe_domain_change_progress
 
 Returns information about the current blue/green deployment happening on a
@@ -443,6 +484,8 @@ Keyword-only arguments:
 Returns
 [DescribeDomainChangeProgressResponseTypeDef](./type_defs.md#describedomainchangeprogressresponsetypedef).
 
+<a id="describe_domain_config"></a>
+
 ### describe_domain_config
 
 Provides cluster configuration information about the specified domain, such as
@@ -464,6 +507,8 @@ Keyword-only arguments:
 Returns
 [DescribeDomainConfigResponseTypeDef](./type_defs.md#describedomainconfigresponsetypedef).
 
+<a id="describe_domains"></a>
+
 ### describe_domains
 
 Returns domain configuration information about the specified domains, including
@@ -483,6 +528,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDomainsResponseTypeDef](./type_defs.md#describedomainsresponsetypedef).
+
+<a id="describe_inbound_connections"></a>
 
 ### describe_inbound_connections
 
@@ -505,6 +552,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInboundConnectionsResponseTypeDef](./type_defs.md#describeinboundconnectionsresponsetypedef).
+
+<a id="describe_instance_type_limits"></a>
 
 ### describe_instance_type_limits
 
@@ -531,6 +580,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstanceTypeLimitsResponseTypeDef](./type_defs.md#describeinstancetypelimitsresponsetypedef).
 
+<a id="describe_outbound_connections"></a>
+
 ### describe_outbound_connections
 
 Lists all the outbound cross-cluster connections for a local domain.
@@ -552,6 +603,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeOutboundConnectionsResponseTypeDef](./type_defs.md#describeoutboundconnectionsresponsetypedef).
+
+<a id="describe_packages"></a>
 
 ### describe_packages
 
@@ -575,6 +628,8 @@ Keyword-only arguments:
 Returns
 [DescribePackagesResponseTypeDef](./type_defs.md#describepackagesresponsetypedef).
 
+<a id="describe_reserved_instance_offerings"></a>
+
 ### describe_reserved_instance_offerings
 
 Lists available reserved OpenSearch instance offerings.
@@ -596,6 +651,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeReservedInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedinstanceofferingsresponsetypedef).
+
+<a id="describe_reserved_instances"></a>
 
 ### describe_reserved_instances
 
@@ -619,6 +676,8 @@ Keyword-only arguments:
 Returns
 [DescribeReservedInstancesResponseTypeDef](./type_defs.md#describereservedinstancesresponsetypedef).
 
+<a id="dissociate_package"></a>
+
 ### dissociate_package
 
 Dissociates a package from the Amazon OpenSearch Service domain.
@@ -639,6 +698,8 @@ Keyword-only arguments:
 Returns
 [DissociatePackageResponseTypeDef](./type_defs.md#dissociatepackageresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -657,6 +718,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_compatible_versions"></a>
 
 ### get_compatible_versions
 
@@ -677,6 +740,8 @@ Keyword-only arguments:
 
 Returns
 [GetCompatibleVersionsResponseTypeDef](./type_defs.md#getcompatibleversionsresponsetypedef).
+
+<a id="get_package_version_history"></a>
 
 ### get_package_version_history
 
@@ -701,6 +766,8 @@ Keyword-only arguments:
 Returns
 [GetPackageVersionHistoryResponseTypeDef](./type_defs.md#getpackageversionhistoryresponsetypedef).
 
+<a id="get_upgrade_history"></a>
+
 ### get_upgrade_history
 
 Retrieves the complete history of the last 10 upgrades performed on the domain.
@@ -722,6 +789,8 @@ Keyword-only arguments:
 Returns
 [GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef).
 
+<a id="get_upgrade_status"></a>
+
 ### get_upgrade_status
 
 Retrieves the latest status of the last upgrade or upgrade eligibility check
@@ -742,6 +811,8 @@ Keyword-only arguments:
 Returns
 [GetUpgradeStatusResponseTypeDef](./type_defs.md#getupgradestatusresponsetypedef).
 
+<a id="list_domain_names"></a>
+
 ### list_domain_names
 
 Returns the names of all domains owned by the current user's account.
@@ -760,6 +831,8 @@ Keyword-only arguments:
 
 Returns
 [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
+
+<a id="list_domains_for_package"></a>
 
 ### list_domains_for_package
 
@@ -782,6 +855,8 @@ Keyword-only arguments:
 
 Returns
 [ListDomainsForPackageResponseTypeDef](./type_defs.md#listdomainsforpackageresponsetypedef).
+
+<a id="list_instance_type_details"></a>
 
 ### list_instance_type_details
 
@@ -807,6 +882,8 @@ Keyword-only arguments:
 Returns
 [ListInstanceTypeDetailsResponseTypeDef](./type_defs.md#listinstancetypedetailsresponsetypedef).
 
+<a id="list_packages_for_domain"></a>
+
 ### list_packages_for_domain
 
 Lists all packages associated with the Amazon OpenSearch Service domain.
@@ -829,6 +906,8 @@ Keyword-only arguments:
 Returns
 [ListPackagesForDomainResponseTypeDef](./type_defs.md#listpackagesfordomainresponsetypedef).
 
+<a id="list_tags"></a>
+
 ### list_tags
 
 Returns all tags for the given domain.
@@ -846,6 +925,8 @@ Keyword-only arguments:
 - `ARN`: `str` *(required)*
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+
+<a id="list_versions"></a>
 
 ### list_versions
 
@@ -866,6 +947,8 @@ Keyword-only arguments:
 
 Returns
 [ListVersionsResponseTypeDef](./type_defs.md#listversionsresponsetypedef).
+
+<a id="purchase_reserved_instance_offering"></a>
 
 ### purchase_reserved_instance_offering
 
@@ -889,6 +972,8 @@ Keyword-only arguments:
 Returns
 [PurchaseReservedInstanceOfferingResponseTypeDef](./type_defs.md#purchasereservedinstanceofferingresponsetypedef).
 
+<a id="reject_inbound_connection"></a>
+
 ### reject_inbound_connection
 
 Allows the remote domain owner to reject an inbound cross-cluster connection
@@ -910,6 +995,8 @@ Keyword-only arguments:
 Returns
 [RejectInboundConnectionResponseTypeDef](./type_defs.md#rejectinboundconnectionresponsetypedef).
 
+<a id="remove_tags"></a>
+
 ### remove_tags
 
 Removes the specified set of tags from the given domain.
@@ -926,6 +1013,8 @@ Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="start_service_software_update"></a>
 
 ### start_service_software_update
 
@@ -946,6 +1035,8 @@ Keyword-only arguments:
 
 Returns
 [StartServiceSoftwareUpdateResponseTypeDef](./type_defs.md#startservicesoftwareupdateresponsetypedef).
+
+<a id="update_domain_config"></a>
 
 ### update_domain_config
 
@@ -989,6 +1080,8 @@ Keyword-only arguments:
 Returns
 [UpdateDomainConfigResponseTypeDef](./type_defs.md#updatedomainconfigresponsetypedef).
 
+<a id="update_package"></a>
+
 ### update_package
 
 Updates a package for use with Amazon OpenSearch Service domains.
@@ -1011,6 +1104,8 @@ Keyword-only arguments:
 
 Returns
 [UpdatePackageResponseTypeDef](./type_defs.md#updatepackageresponsetypedef).
+
+<a id="upgrade_domain"></a>
 
 ### upgrade_domain
 

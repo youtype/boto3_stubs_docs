@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-emrcontainers-module"></a>
+
 # Paginators for boto3 EMRContainers module
 
 > [Index](..) > [EMRContainers](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
 type annotations stubs module
-[mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
+[mypy-boto3-emr-containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 - [Paginators for boto3 EMRContainers module](#paginators-for-boto3-emrcontainers-module)
   - [ListJobRunsPaginator](#listjobrunspaginator)
   - [ListManagedEndpointsPaginator](#listmanagedendpointspaginator)
   - [ListVirtualClustersPaginator](#listvirtualclusterspaginator)
+
+<a id="listjobrunspaginator"></a>
 
 ## ListJobRunsPaginator
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr_containers.paginator import ListJobRunsPaginator
 
 def get_list_job_runs_paginator() -> ListJobRunsPaginator:
-    return boto3.client("emr-containers").get_paginator("list_job_runs")
+    return Session().client("emr-containers").get_paginator("list_job_runs")
 ```
 
 Boto3 documentation:
@@ -42,6 +48,8 @@ Arguments for `ListJobRunsPaginator.paginate` method:
 `ListJobRunsPaginator.paginate` returns
 `_PageIterator`\[[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)\].
 
+<a id="listmanagedendpointspaginator"></a>
+
 ## ListManagedEndpointsPaginator
 
 Type annotations for
@@ -50,10 +58,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr_containers.paginator import ListManagedEndpointsPaginator
 
 def get_list_managed_endpoints_paginator() -> ListManagedEndpointsPaginator:
-    return boto3.client("emr-containers").get_paginator("list_managed_endpoints")
+    return Session().client("emr-containers").get_paginator("list_managed_endpoints")
 ```
 
 Boto3 documentation:
@@ -72,6 +82,8 @@ Arguments for `ListManagedEndpointsPaginator.paginate` method:
 `ListManagedEndpointsPaginator.paginate` returns
 `_PageIterator`\[[ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef)\].
 
+<a id="listvirtualclusterspaginator"></a>
+
 ## ListVirtualClustersPaginator
 
 Type annotations for
@@ -80,10 +92,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr_containers.paginator import ListVirtualClustersPaginator
 
 def get_list_virtual_clusters_paginator() -> ListVirtualClustersPaginator:
-    return boto3.client("emr-containers").get_paginator("list_virtual_clusters")
+    return Session().client("emr-containers").get_paginator("list_virtual_clusters")
 ```
 
 Boto3 documentation:

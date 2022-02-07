@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-augmentedairuntime-module"></a>
+
 # Literals for boto3 AugmentedAIRuntime module
 
 > [Index](..) > [AugmentedAIRuntime](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
 type annotations stubs module
-[mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
+[mypy-boto3-sagemaker-a2i-runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
 - [Literals for boto3 AugmentedAIRuntime module](#literals-for-boto3-augmentedairuntime-module)
   - [ContentClassifierType](#contentclassifiertype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [SortOrderType](#sortordertype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="contentclassifiertype"></a>
 
 ## ContentClassifierType
 
@@ -25,6 +29,8 @@ Values:
 
 - `FreeOfAdultContent`
 - `FreeOfPersonallyIdentifiableInformation`
+
+<a id="humanloopstatustype"></a>
 
 ## HumanLoopStatusType
 
@@ -40,6 +46,8 @@ Values:
 - `Stopped`
 - `Stopping`
 
+<a id="listhumanloopspaginatorname"></a>
+
 ## ListHumanLoopsPaginatorName
 
 ```python
@@ -49,6 +57,8 @@ from mypy_boto3_sagemaker_a2i_runtime.literals import ListHumanLoopsPaginatorNam
 Values:
 
 - `list_human_loops`
+
+<a id="sortordertype"></a>
 
 ## SortOrderType
 
@@ -60,6 +70,8 @@ Values:
 
 - `Ascending`
 - `Descending`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -368,6 +380,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

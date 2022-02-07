@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-wafv2-module"></a>
+
 # Typed dictionaries for boto3 WAFV2 module
 
 > [Index](..) > [WAFV2](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
 type annotations stubs module
-[mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
+[mypy-boto3-wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 - [Typed dictionaries for boto3 WAFV2 module](#typed-dictionaries-for-boto3-wafv2-module)
   - [ActionConditionTypeDef](#actionconditiontypedef)
@@ -163,6 +165,8 @@ type annotations stubs module
   - [WebACLTypeDef](#webacltypedef)
   - [XssMatchStatementTypeDef](#xssmatchstatementtypedef)
 
+<a id="actionconditiontypedef"></a>
+
 ## ActionConditionTypeDef
 
 ```python
@@ -172,6 +176,8 @@ from mypy_boto3_wafv2.type_defs import ActionConditionTypeDef
 Required fields:
 
 - `Action`: [ActionValueType](./literals.md#actionvaluetype)
+
+<a id="allowactiontypedef"></a>
 
 ## AllowActionTypeDef
 
@@ -184,6 +190,8 @@ Optional fields:
 - `CustomRequestHandling`:
   [CustomRequestHandlingTypeDef](./type_defs.md#customrequesthandlingtypedef)
 
+<a id="andstatementtypedef"></a>
+
 ## AndStatementTypeDef
 
 ```python
@@ -194,6 +202,8 @@ Required fields:
 
 - `Statements`:
   `Sequence`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
+
+<a id="associatewebaclrequestrequesttypedef"></a>
 
 ## AssociateWebACLRequestRequestTypeDef
 
@@ -206,6 +216,8 @@ Required fields:
 - `WebACLArn`: `str`
 - `ResourceArn`: `str`
 
+<a id="blockactiontypedef"></a>
+
 ## BlockActionTypeDef
 
 ```python
@@ -216,6 +228,8 @@ Optional fields:
 
 - `CustomResponse`:
   [CustomResponseTypeDef](./type_defs.md#customresponsetypedef)
+
+<a id="bytematchstatementtypedef"></a>
 
 ## ByteMatchStatementTypeDef
 
@@ -232,6 +246,8 @@ Required fields:
 - `PositionalConstraint`:
   [PositionalConstraintType](./literals.md#positionalconstrainttype)
 
+<a id="captchaactiontypedef"></a>
+
 ## CaptchaActionTypeDef
 
 ```python
@@ -243,6 +259,8 @@ Optional fields:
 - `CustomRequestHandling`:
   [CustomRequestHandlingTypeDef](./type_defs.md#customrequesthandlingtypedef)
 
+<a id="captchaconfigtypedef"></a>
+
 ## CaptchaConfigTypeDef
 
 ```python
@@ -253,6 +271,8 @@ Optional fields:
 
 - `ImmunityTimeProperty`:
   [ImmunityTimePropertyTypeDef](./type_defs.md#immunitytimepropertytypedef)
+
+<a id="captcharesponsetypedef"></a>
 
 ## CaptchaResponseTypeDef
 
@@ -266,6 +286,8 @@ Optional fields:
 - `SolveTimestamp`: `int`
 - `FailureReason`: [FailureReasonType](./literals.md#failurereasontype)
 
+<a id="checkcapacityrequestrequesttypedef"></a>
+
 ## CheckCapacityRequestRequestTypeDef
 
 ```python
@@ -276,6 +298,8 @@ Required fields:
 
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+
+<a id="checkcapacityresponsetypedef"></a>
 
 ## CheckCapacityResponseTypeDef
 
@@ -288,6 +312,8 @@ Required fields:
 - `Capacity`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="conditiontypedef"></a>
 
 ## ConditionTypeDef
 
@@ -302,6 +328,8 @@ Optional fields:
 - `LabelNameCondition`:
   [LabelNameConditionTypeDef](./type_defs.md#labelnameconditiontypedef)
 
+<a id="countactiontypedef"></a>
+
 ## CountActionTypeDef
 
 ```python
@@ -312,6 +340,8 @@ Optional fields:
 
 - `CustomRequestHandling`:
   [CustomRequestHandlingTypeDef](./type_defs.md#customrequesthandlingtypedef)
+
+<a id="createipsetrequestrequesttypedef"></a>
 
 ## CreateIPSetRequestRequestTypeDef
 
@@ -332,6 +362,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createipsetresponsetypedef"></a>
+
 ## CreateIPSetResponseTypeDef
 
 ```python
@@ -343,6 +375,8 @@ Required fields:
 - `Summary`: [IPSetSummaryTypeDef](./type_defs.md#ipsetsummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createregexpatternsetrequestrequesttypedef"></a>
 
 ## CreateRegexPatternSetRequestRequestTypeDef
 
@@ -362,6 +396,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createregexpatternsetresponsetypedef"></a>
+
 ## CreateRegexPatternSetResponseTypeDef
 
 ```python
@@ -374,6 +410,8 @@ Required fields:
   [RegexPatternSetSummaryTypeDef](./type_defs.md#regexpatternsetsummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrulegrouprequestrequesttypedef"></a>
 
 ## CreateRuleGroupRequestRequestTypeDef
 
@@ -397,6 +435,8 @@ Optional fields:
 - `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
+<a id="createrulegroupresponsetypedef"></a>
+
 ## CreateRuleGroupResponseTypeDef
 
 ```python
@@ -408,6 +448,8 @@ Required fields:
 - `Summary`: [RuleGroupSummaryTypeDef](./type_defs.md#rulegroupsummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createwebaclrequestrequesttypedef"></a>
 
 ## CreateWebACLRequestRequestTypeDef
 
@@ -432,6 +474,8 @@ Optional fields:
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 - `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
 
+<a id="createwebaclresponsetypedef"></a>
+
 ## CreateWebACLResponseTypeDef
 
 ```python
@@ -444,6 +488,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="customhttpheadertypedef"></a>
+
 ## CustomHTTPHeaderTypeDef
 
 ```python
@@ -454,6 +500,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="customrequesthandlingtypedef"></a>
 
 ## CustomRequestHandlingTypeDef
 
@@ -466,6 +514,8 @@ Required fields:
 - `InsertHeaders`:
   `Sequence`\[[CustomHTTPHeaderTypeDef](./type_defs.md#customhttpheadertypedef)\]
 
+<a id="customresponsebodytypedef"></a>
+
 ## CustomResponseBodyTypeDef
 
 ```python
@@ -477,6 +527,8 @@ Required fields:
 - `ContentType`:
   [ResponseContentTypeType](./literals.md#responsecontenttypetype)
 - `Content`: `str`
+
+<a id="customresponsetypedef"></a>
 
 ## CustomResponseTypeDef
 
@@ -494,6 +546,8 @@ Optional fields:
 - `ResponseHeaders`:
   `Sequence`\[[CustomHTTPHeaderTypeDef](./type_defs.md#customhttpheadertypedef)\]
 
+<a id="defaultactiontypedef"></a>
+
 ## DefaultActionTypeDef
 
 ```python
@@ -504,6 +558,8 @@ Optional fields:
 
 - `Block`: [BlockActionTypeDef](./type_defs.md#blockactiontypedef)
 - `Allow`: [AllowActionTypeDef](./type_defs.md#allowactiontypedef)
+
+<a id="deletefirewallmanagerrulegroupsrequestrequesttypedef"></a>
 
 ## DeleteFirewallManagerRuleGroupsRequestRequestTypeDef
 
@@ -516,6 +572,8 @@ Required fields:
 - `WebACLArn`: `str`
 - `WebACLLockToken`: `str`
 
+<a id="deletefirewallmanagerrulegroupsresponsetypedef"></a>
+
 ## DeleteFirewallManagerRuleGroupsResponseTypeDef
 
 ```python
@@ -527,6 +585,8 @@ Required fields:
 - `NextWebACLLockToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteipsetrequestrequesttypedef"></a>
 
 ## DeleteIPSetRequestRequestTypeDef
 
@@ -541,6 +601,8 @@ Required fields:
 - `Id`: `str`
 - `LockToken`: `str`
 
+<a id="deleteloggingconfigurationrequestrequesttypedef"></a>
+
 ## DeleteLoggingConfigurationRequestRequestTypeDef
 
 ```python
@@ -551,6 +613,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 
+<a id="deletepermissionpolicyrequestrequesttypedef"></a>
+
 ## DeletePermissionPolicyRequestRequestTypeDef
 
 ```python
@@ -560,6 +624,8 @@ from mypy_boto3_wafv2.type_defs import DeletePermissionPolicyRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="deleteregexpatternsetrequestrequesttypedef"></a>
 
 ## DeleteRegexPatternSetRequestRequestTypeDef
 
@@ -574,6 +640,8 @@ Required fields:
 - `Id`: `str`
 - `LockToken`: `str`
 
+<a id="deleterulegrouprequestrequesttypedef"></a>
+
 ## DeleteRuleGroupRequestRequestTypeDef
 
 ```python
@@ -587,6 +655,8 @@ Required fields:
 - `Id`: `str`
 - `LockToken`: `str`
 
+<a id="deletewebaclrequestrequesttypedef"></a>
+
 ## DeleteWebACLRequestRequestTypeDef
 
 ```python
@@ -599,6 +669,8 @@ Required fields:
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `Id`: `str`
 - `LockToken`: `str`
+
+<a id="describemanagedrulegrouprequestrequesttypedef"></a>
 
 ## DescribeManagedRuleGroupRequestRequestTypeDef
 
@@ -615,6 +687,8 @@ Required fields:
 Optional fields:
 
 - `VersionName`: `str`
+
+<a id="describemanagedrulegroupresponsetypedef"></a>
 
 ## DescribeManagedRuleGroupResponseTypeDef
 
@@ -636,6 +710,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociatewebaclrequestrequesttypedef"></a>
+
 ## DisassociateWebACLRequestRequestTypeDef
 
 ```python
@@ -646,6 +722,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 
+<a id="excludedruletypedef"></a>
+
 ## ExcludedRuleTypeDef
 
 ```python
@@ -655,6 +733,8 @@ from mypy_boto3_wafv2.type_defs import ExcludedRuleTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="fieldtomatchtypedef"></a>
 
 ## FieldToMatchTypeDef
 
@@ -674,6 +754,8 @@ Optional fields:
 - `Method`: `Mapping`\[`str`, `Any`\]
 - `JsonBody`: [JsonBodyTypeDef](./type_defs.md#jsonbodytypedef)
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -685,6 +767,8 @@ Required fields:
 - `Behavior`: [FilterBehaviorType](./literals.md#filterbehaviortype)
 - `Requirement`: [FilterRequirementType](./literals.md#filterrequirementtype)
 - `Conditions`: `List`\[[ConditionTypeDef](./type_defs.md#conditiontypedef)\]
+
+<a id="firewallmanagerrulegrouptypedef"></a>
 
 ## FirewallManagerRuleGroupTypeDef
 
@@ -703,6 +787,8 @@ Required fields:
 - `VisibilityConfig`:
   [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
 
+<a id="firewallmanagerstatementtypedef"></a>
+
 ## FirewallManagerStatementTypeDef
 
 ```python
@@ -716,6 +802,8 @@ Optional fields:
 - `RuleGroupReferenceStatement`:
   [RuleGroupReferenceStatementTypeDef](./type_defs.md#rulegroupreferencestatementtypedef)
 
+<a id="forwardedipconfigtypedef"></a>
+
 ## ForwardedIPConfigTypeDef
 
 ```python
@@ -727,6 +815,8 @@ Required fields:
 - `HeaderName`: `str`
 - `FallbackBehavior`:
   [FallbackBehaviorType](./literals.md#fallbackbehaviortype)
+
+<a id="geomatchstatementtypedef"></a>
 
 ## GeoMatchStatementTypeDef
 
@@ -741,6 +831,8 @@ Optional fields:
 - `ForwardedIPConfig`:
   [ForwardedIPConfigTypeDef](./type_defs.md#forwardedipconfigtypedef)
 
+<a id="getipsetrequestrequesttypedef"></a>
+
 ## GetIPSetRequestRequestTypeDef
 
 ```python
@@ -752,6 +844,8 @@ Required fields:
 - `Name`: `str`
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `Id`: `str`
+
+<a id="getipsetresponsetypedef"></a>
 
 ## GetIPSetResponseTypeDef
 
@@ -766,6 +860,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getloggingconfigurationrequestrequesttypedef"></a>
+
 ## GetLoggingConfigurationRequestRequestTypeDef
 
 ```python
@@ -775,6 +871,8 @@ from mypy_boto3_wafv2.type_defs import GetLoggingConfigurationRequestRequestType
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="getloggingconfigurationresponsetypedef"></a>
 
 ## GetLoggingConfigurationResponseTypeDef
 
@@ -789,6 +887,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmanagedrulesetrequestrequesttypedef"></a>
+
 ## GetManagedRuleSetRequestRequestTypeDef
 
 ```python
@@ -800,6 +900,8 @@ Required fields:
 - `Name`: `str`
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `Id`: `str`
+
+<a id="getmanagedrulesetresponsetypedef"></a>
 
 ## GetManagedRuleSetResponseTypeDef
 
@@ -815,6 +917,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpermissionpolicyrequestrequesttypedef"></a>
+
 ## GetPermissionPolicyRequestRequestTypeDef
 
 ```python
@@ -824,6 +928,8 @@ from mypy_boto3_wafv2.type_defs import GetPermissionPolicyRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="getpermissionpolicyresponsetypedef"></a>
 
 ## GetPermissionPolicyResponseTypeDef
 
@@ -836,6 +942,8 @@ Required fields:
 - `Policy`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getratebasedstatementmanagedkeysrequestrequesttypedef"></a>
 
 ## GetRateBasedStatementManagedKeysRequestRequestTypeDef
 
@@ -854,6 +962,8 @@ Optional fields:
 
 - `RuleGroupRuleName`: `str`
 
+<a id="getratebasedstatementmanagedkeysresponsetypedef"></a>
+
 ## GetRateBasedStatementManagedKeysResponseTypeDef
 
 ```python
@@ -869,6 +979,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getregexpatternsetrequestrequesttypedef"></a>
+
 ## GetRegexPatternSetRequestRequestTypeDef
 
 ```python
@@ -880,6 +992,8 @@ Required fields:
 - `Name`: `str`
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `Id`: `str`
+
+<a id="getregexpatternsetresponsetypedef"></a>
 
 ## GetRegexPatternSetResponseTypeDef
 
@@ -895,6 +1009,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrulegrouprequestrequesttypedef"></a>
+
 ## GetRuleGroupRequestRequestTypeDef
 
 ```python
@@ -907,6 +1023,8 @@ Optional fields:
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `Id`: `str`
 - `ARN`: `str`
+
+<a id="getrulegroupresponsetypedef"></a>
 
 ## GetRuleGroupResponseTypeDef
 
@@ -921,6 +1039,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsampledrequestsrequestrequesttypedef"></a>
+
 ## GetSampledRequestsRequestRequestTypeDef
 
 ```python
@@ -934,6 +1054,8 @@ Required fields:
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `TimeWindow`: [TimeWindowTypeDef](./type_defs.md#timewindowtypedef)
 - `MaxItems`: `int`
+
+<a id="getsampledrequestsresponsetypedef"></a>
 
 ## GetSampledRequestsResponseTypeDef
 
@@ -950,6 +1072,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwebaclforresourcerequestrequesttypedef"></a>
+
 ## GetWebACLForResourceRequestRequestTypeDef
 
 ```python
@@ -959,6 +1083,8 @@ from mypy_boto3_wafv2.type_defs import GetWebACLForResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="getwebaclforresourceresponsetypedef"></a>
 
 ## GetWebACLForResourceResponseTypeDef
 
@@ -972,6 +1098,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwebaclrequestrequesttypedef"></a>
+
 ## GetWebACLRequestRequestTypeDef
 
 ```python
@@ -983,6 +1111,8 @@ Required fields:
 - `Name`: `str`
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `Id`: `str`
+
+<a id="getwebaclresponsetypedef"></a>
 
 ## GetWebACLResponseTypeDef
 
@@ -997,6 +1127,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="httpheadertypedef"></a>
+
 ## HTTPHeaderTypeDef
 
 ```python
@@ -1007,6 +1139,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="httprequesttypedef"></a>
 
 ## HTTPRequestTypeDef
 
@@ -1023,6 +1157,8 @@ Optional fields:
 - `HTTPVersion`: `str`
 - `Headers`: `List`\[[HTTPHeaderTypeDef](./type_defs.md#httpheadertypedef)\]
 
+<a id="ipsetforwardedipconfigtypedef"></a>
+
 ## IPSetForwardedIPConfigTypeDef
 
 ```python
@@ -1035,6 +1171,8 @@ Required fields:
 - `FallbackBehavior`:
   [FallbackBehaviorType](./literals.md#fallbackbehaviortype)
 - `Position`: [ForwardedIPPositionType](./literals.md#forwardedippositiontype)
+
+<a id="ipsetreferencestatementtypedef"></a>
 
 ## IPSetReferenceStatementTypeDef
 
@@ -1051,6 +1189,8 @@ Optional fields:
 - `IPSetForwardedIPConfig`:
   [IPSetForwardedIPConfigTypeDef](./type_defs.md#ipsetforwardedipconfigtypedef)
 
+<a id="ipsetsummarytypedef"></a>
+
 ## IPSetSummaryTypeDef
 
 ```python
@@ -1064,6 +1204,8 @@ Optional fields:
 - `Description`: `str`
 - `LockToken`: `str`
 - `ARN`: `str`
+
+<a id="ipsettypedef"></a>
 
 ## IPSetTypeDef
 
@@ -1084,6 +1226,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="immunitytimepropertytypedef"></a>
+
 ## ImmunityTimePropertyTypeDef
 
 ```python
@@ -1093,6 +1237,8 @@ from mypy_boto3_wafv2.type_defs import ImmunityTimePropertyTypeDef
 Required fields:
 
 - `ImmunityTime`: `int`
+
+<a id="jsonbodytypedef"></a>
 
 ## JsonBodyTypeDef
 
@@ -1111,6 +1257,8 @@ Optional fields:
 - `InvalidFallbackBehavior`:
   [BodyParsingFallbackBehaviorType](./literals.md#bodyparsingfallbackbehaviortype)
 
+<a id="jsonmatchpatterntypedef"></a>
+
 ## JsonMatchPatternTypeDef
 
 ```python
@@ -1121,6 +1269,8 @@ Optional fields:
 
 - `All`: `Mapping`\[`str`, `Any`\]
 - `IncludedPaths`: `Sequence`\[`str`\]
+
+<a id="labelmatchstatementtypedef"></a>
 
 ## LabelMatchStatementTypeDef
 
@@ -1133,6 +1283,8 @@ Required fields:
 - `Scope`: [LabelMatchScopeType](./literals.md#labelmatchscopetype)
 - `Key`: `str`
 
+<a id="labelnameconditiontypedef"></a>
+
 ## LabelNameConditionTypeDef
 
 ```python
@@ -1142,6 +1294,8 @@ from mypy_boto3_wafv2.type_defs import LabelNameConditionTypeDef
 Required fields:
 
 - `LabelName`: `str`
+
+<a id="labelsummarytypedef"></a>
 
 ## LabelSummaryTypeDef
 
@@ -1153,6 +1307,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="labeltypedef"></a>
+
 ## LabelTypeDef
 
 ```python
@@ -1162,6 +1318,8 @@ from mypy_boto3_wafv2.type_defs import LabelTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="listavailablemanagedrulegroupversionsrequestrequesttypedef"></a>
 
 ## ListAvailableManagedRuleGroupVersionsRequestRequestTypeDef
 
@@ -1180,6 +1338,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
+<a id="listavailablemanagedrulegroupversionsresponsetypedef"></a>
+
 ## ListAvailableManagedRuleGroupVersionsResponseTypeDef
 
 ```python
@@ -1193,6 +1353,8 @@ Required fields:
   `List`\[[ManagedRuleGroupVersionTypeDef](./type_defs.md#managedrulegroupversiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listavailablemanagedrulegroupsrequestrequesttypedef"></a>
 
 ## ListAvailableManagedRuleGroupsRequestRequestTypeDef
 
@@ -1209,6 +1371,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
+<a id="listavailablemanagedrulegroupsresponsetypedef"></a>
+
 ## ListAvailableManagedRuleGroupsResponseTypeDef
 
 ```python
@@ -1222,6 +1386,8 @@ Required fields:
   `List`\[[ManagedRuleGroupSummaryTypeDef](./type_defs.md#managedrulegroupsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listipsetsrequestrequesttypedef"></a>
 
 ## ListIPSetsRequestRequestTypeDef
 
@@ -1238,6 +1404,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
+<a id="listipsetsresponsetypedef"></a>
+
 ## ListIPSetsResponseTypeDef
 
 ```python
@@ -1250,6 +1418,8 @@ Required fields:
 - `IPSets`: `List`\[[IPSetSummaryTypeDef](./type_defs.md#ipsetsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listloggingconfigurationsrequestrequesttypedef"></a>
 
 ## ListLoggingConfigurationsRequestRequestTypeDef
 
@@ -1266,6 +1436,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
+<a id="listloggingconfigurationsresponsetypedef"></a>
+
 ## ListLoggingConfigurationsResponseTypeDef
 
 ```python
@@ -1279,6 +1451,8 @@ Required fields:
 - `NextMarker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmanagedrulesetsrequestrequesttypedef"></a>
 
 ## ListManagedRuleSetsRequestRequestTypeDef
 
@@ -1295,6 +1469,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
+<a id="listmanagedrulesetsresponsetypedef"></a>
+
 ## ListManagedRuleSetsResponseTypeDef
 
 ```python
@@ -1308,6 +1484,8 @@ Required fields:
   `List`\[[ManagedRuleSetSummaryTypeDef](./type_defs.md#managedrulesetsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listregexpatternsetsrequestrequesttypedef"></a>
 
 ## ListRegexPatternSetsRequestRequestTypeDef
 
@@ -1324,6 +1502,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
+<a id="listregexpatternsetsresponsetypedef"></a>
+
 ## ListRegexPatternSetsResponseTypeDef
 
 ```python
@@ -1337,6 +1517,8 @@ Required fields:
   `List`\[[RegexPatternSetSummaryTypeDef](./type_defs.md#regexpatternsetsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listresourcesforwebaclrequestrequesttypedef"></a>
 
 ## ListResourcesForWebACLRequestRequestTypeDef
 
@@ -1352,6 +1534,8 @@ Optional fields:
 
 - `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
+<a id="listresourcesforwebaclresponsetypedef"></a>
+
 ## ListResourcesForWebACLResponseTypeDef
 
 ```python
@@ -1363,6 +1547,8 @@ Required fields:
 - `ResourceArns`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrulegroupsrequestrequesttypedef"></a>
 
 ## ListRuleGroupsRequestRequestTypeDef
 
@@ -1379,6 +1565,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
+<a id="listrulegroupsresponsetypedef"></a>
+
 ## ListRuleGroupsResponseTypeDef
 
 ```python
@@ -1392,6 +1580,8 @@ Required fields:
   `List`\[[RuleGroupSummaryTypeDef](./type_defs.md#rulegroupsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -1408,6 +1598,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -1421,6 +1613,8 @@ Required fields:
   [TagInfoForResourceTypeDef](./type_defs.md#taginfoforresourcetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listwebaclsrequestrequesttypedef"></a>
 
 ## ListWebACLsRequestRequestTypeDef
 
@@ -1437,6 +1631,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
+<a id="listwebaclsresponsetypedef"></a>
+
 ## ListWebACLsResponseTypeDef
 
 ```python
@@ -1450,6 +1646,8 @@ Required fields:
   `List`\[[WebACLSummaryTypeDef](./type_defs.md#webaclsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="loggingconfigurationtypedef"></a>
 
 ## LoggingConfigurationTypeDef
 
@@ -1469,6 +1667,8 @@ Optional fields:
 - `ManagedByFirewallManager`: `bool`
 - `LoggingFilter`: [LoggingFilterTypeDef](./type_defs.md#loggingfiltertypedef)
 
+<a id="loggingfiltertypedef"></a>
+
 ## LoggingFilterTypeDef
 
 ```python
@@ -1479,6 +1679,8 @@ Required fields:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DefaultBehavior`: [FilterBehaviorType](./literals.md#filterbehaviortype)
+
+<a id="managedrulegroupstatementtypedef"></a>
 
 ## ManagedRuleGroupStatementTypeDef
 
@@ -1498,6 +1700,8 @@ Optional fields:
   `Sequence`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
 - `ScopeDownStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
 
+<a id="managedrulegroupsummarytypedef"></a>
+
 ## ManagedRuleGroupSummaryTypeDef
 
 ```python
@@ -1510,6 +1714,8 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 
+<a id="managedrulegroupversiontypedef"></a>
+
 ## ManagedRuleGroupVersionTypeDef
 
 ```python
@@ -1520,6 +1726,8 @@ Optional fields:
 
 - `Name`: `str`
 - `LastUpdateTimestamp`: `datetime`
+
+<a id="managedrulesetsummarytypedef"></a>
 
 ## ManagedRuleSetSummaryTypeDef
 
@@ -1535,6 +1743,8 @@ Optional fields:
 - `LockToken`: `str`
 - `ARN`: `str`
 - `LabelNamespace`: `str`
+
+<a id="managedrulesettypedef"></a>
 
 ## ManagedRuleSetTypeDef
 
@@ -1556,6 +1766,8 @@ Optional fields:
 - `RecommendedVersion`: `str`
 - `LabelNamespace`: `str`
 
+<a id="managedrulesetversiontypedef"></a>
+
 ## ManagedRuleSetVersionTypeDef
 
 ```python
@@ -1571,6 +1783,8 @@ Optional fields:
 - `LastUpdateTimestamp`: `datetime`
 - `ExpiryTimestamp`: `datetime`
 
+<a id="notstatementtypedef"></a>
+
 ## NotStatementTypeDef
 
 ```python
@@ -1580,6 +1794,8 @@ from mypy_boto3_wafv2.type_defs import NotStatementTypeDef
 Required fields:
 
 - `Statement`: [StatementTypeDef](./type_defs.md#statementtypedef)
+
+<a id="orstatementtypedef"></a>
 
 ## OrStatementTypeDef
 
@@ -1592,6 +1808,8 @@ Required fields:
 - `Statements`:
   `Sequence`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
 
+<a id="overrideactiontypedef"></a>
+
 ## OverrideActionTypeDef
 
 ```python
@@ -1603,6 +1821,8 @@ Optional fields:
 - `Count`: [CountActionTypeDef](./type_defs.md#countactiontypedef)
 - `None`: `Mapping`\[`str`, `Any`\]
 
+<a id="putloggingconfigurationrequestrequesttypedef"></a>
+
 ## PutLoggingConfigurationRequestRequestTypeDef
 
 ```python
@@ -1613,6 +1833,8 @@ Required fields:
 
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+
+<a id="putloggingconfigurationresponsetypedef"></a>
 
 ## PutLoggingConfigurationResponseTypeDef
 
@@ -1626,6 +1848,8 @@ Required fields:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putmanagedrulesetversionsrequestrequesttypedef"></a>
 
 ## PutManagedRuleSetVersionsRequestRequestTypeDef
 
@@ -1646,6 +1870,8 @@ Optional fields:
 - `VersionsToPublish`: `Mapping`\[`str`,
   [VersionToPublishTypeDef](./type_defs.md#versiontopublishtypedef)\]
 
+<a id="putmanagedrulesetversionsresponsetypedef"></a>
+
 ## PutManagedRuleSetVersionsResponseTypeDef
 
 ```python
@@ -1658,6 +1884,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putpermissionpolicyrequestrequesttypedef"></a>
+
 ## PutPermissionPolicyRequestRequestTypeDef
 
 ```python
@@ -1668,6 +1896,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Policy`: `str`
+
+<a id="ratebasedstatementmanagedkeysipsettypedef"></a>
 
 ## RateBasedStatementManagedKeysIPSetTypeDef
 
@@ -1680,6 +1910,8 @@ Optional fields:
 - `IPAddressVersion`:
   [IPAddressVersionType](./literals.md#ipaddressversiontype)
 - `Addresses`: `List`\[`str`\]
+
+<a id="ratebasedstatementtypedef"></a>
 
 ## RateBasedStatementTypeDef
 
@@ -1699,6 +1931,8 @@ Optional fields:
 - `ForwardedIPConfig`:
   [ForwardedIPConfigTypeDef](./type_defs.md#forwardedipconfigtypedef)
 
+<a id="regexmatchstatementtypedef"></a>
+
 ## RegexMatchStatementTypeDef
 
 ```python
@@ -1711,6 +1945,8 @@ Required fields:
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TextTransformations`:
   `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+
+<a id="regexpatternsetreferencestatementtypedef"></a>
 
 ## RegexPatternSetReferenceStatementTypeDef
 
@@ -1725,6 +1961,8 @@ Required fields:
 - `TextTransformations`:
   `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 
+<a id="regexpatternsetsummarytypedef"></a>
+
 ## RegexPatternSetSummaryTypeDef
 
 ```python
@@ -1738,6 +1976,8 @@ Optional fields:
 - `Description`: `str`
 - `LockToken`: `str`
 - `ARN`: `str`
+
+<a id="regexpatternsettypedef"></a>
 
 ## RegexPatternSetTypeDef
 
@@ -1754,6 +1994,8 @@ Optional fields:
 - `RegularExpressionList`:
   `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
 
+<a id="regextypedef"></a>
+
 ## RegexTypeDef
 
 ```python
@@ -1763,6 +2005,8 @@ from mypy_boto3_wafv2.type_defs import RegexTypeDef
 Optional fields:
 
 - `RegexString`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1778,6 +2022,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="ruleactiontypedef"></a>
+
 ## RuleActionTypeDef
 
 ```python
@@ -1790,6 +2036,8 @@ Optional fields:
 - `Allow`: [AllowActionTypeDef](./type_defs.md#allowactiontypedef)
 - `Count`: [CountActionTypeDef](./type_defs.md#countactiontypedef)
 - `Captcha`: [CaptchaActionTypeDef](./type_defs.md#captchaactiontypedef)
+
+<a id="rulegroupreferencestatementtypedef"></a>
 
 ## RuleGroupReferenceStatementTypeDef
 
@@ -1806,6 +2054,8 @@ Optional fields:
 - `ExcludedRules`:
   `Sequence`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
 
+<a id="rulegroupsummarytypedef"></a>
+
 ## RuleGroupSummaryTypeDef
 
 ```python
@@ -1819,6 +2069,8 @@ Optional fields:
 - `Description`: `str`
 - `LockToken`: `str`
 - `ARN`: `str`
+
+<a id="rulegrouptypedef"></a>
 
 ## RuleGroupTypeDef
 
@@ -1847,6 +2099,8 @@ Optional fields:
 - `ConsumedLabels`:
   `List`\[[LabelSummaryTypeDef](./type_defs.md#labelsummarytypedef)\]
 
+<a id="rulesummarytypedef"></a>
+
 ## RuleSummaryTypeDef
 
 ```python
@@ -1857,6 +2111,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Action`: [RuleActionTypeDef](./type_defs.md#ruleactiontypedef)
+
+<a id="ruletypedef"></a>
 
 ## RuleTypeDef
 
@@ -1879,6 +2135,8 @@ Optional fields:
   [OverrideActionTypeDef](./type_defs.md#overrideactiontypedef)
 - `RuleLabels`: `Sequence`\[[LabelTypeDef](./type_defs.md#labeltypedef)\]
 - `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
+
+<a id="sampledhttprequesttypedef"></a>
 
 ## SampledHTTPRequestTypeDef
 
@@ -1903,6 +2161,8 @@ Optional fields:
 - `CaptchaResponse`:
   [CaptchaResponseTypeDef](./type_defs.md#captcharesponsetypedef)
 
+<a id="singleheadertypedef"></a>
+
 ## SingleHeaderTypeDef
 
 ```python
@@ -1913,6 +2173,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="singlequeryargumenttypedef"></a>
+
 ## SingleQueryArgumentTypeDef
 
 ```python
@@ -1922,6 +2184,8 @@ from mypy_boto3_wafv2.type_defs import SingleQueryArgumentTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="sizeconstraintstatementtypedef"></a>
 
 ## SizeConstraintStatementTypeDef
 
@@ -1938,6 +2202,8 @@ Required fields:
 - `TextTransformations`:
   `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 
+<a id="sqlimatchstatementtypedef"></a>
+
 ## SqliMatchStatementTypeDef
 
 ```python
@@ -1949,6 +2215,8 @@ Required fields:
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TextTransformations`:
   `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+
+<a id="statementtypedef"></a>
 
 ## StatementTypeDef
 
@@ -1986,6 +2254,8 @@ Optional fields:
 - `RegexMatchStatement`:
   [RegexMatchStatementTypeDef](./type_defs.md#regexmatchstatementtypedef)
 
+<a id="taginfoforresourcetypedef"></a>
+
 ## TagInfoForResourceTypeDef
 
 ```python
@@ -1996,6 +2266,8 @@ Optional fields:
 
 - `ResourceARN`: `str`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -2008,6 +2280,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2018,6 +2292,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="texttransformationtypedef"></a>
 
 ## TextTransformationTypeDef
 
@@ -2031,6 +2307,8 @@ Required fields:
 - `Type`:
   [TextTransformationTypeType](./literals.md#texttransformationtypetype)
 
+<a id="timewindowtypedef"></a>
+
 ## TimeWindowTypeDef
 
 ```python
@@ -2042,6 +2320,8 @@ Required fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2052,6 +2332,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateipsetrequestrequesttypedef"></a>
 
 ## UpdateIPSetRequestRequestTypeDef
 
@@ -2071,6 +2353,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="updateipsetresponsetypedef"></a>
+
 ## UpdateIPSetResponseTypeDef
 
 ```python
@@ -2082,6 +2366,8 @@ Required fields:
 - `NextLockToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatemanagedrulesetversionexpirydaterequestrequesttypedef"></a>
 
 ## UpdateManagedRuleSetVersionExpiryDateRequestRequestTypeDef
 
@@ -2098,6 +2384,8 @@ Required fields:
 - `VersionToExpire`: `str`
 - `ExpiryTimestamp`: `Union`\[`datetime`, `str`\]
 
+<a id="updatemanagedrulesetversionexpirydateresponsetypedef"></a>
+
 ## UpdateManagedRuleSetVersionExpiryDateResponseTypeDef
 
 ```python
@@ -2111,6 +2399,8 @@ Required fields:
 - `NextLockToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateregexpatternsetrequestrequesttypedef"></a>
 
 ## UpdateRegexPatternSetRequestRequestTypeDef
 
@@ -2131,6 +2421,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="updateregexpatternsetresponsetypedef"></a>
+
 ## UpdateRegexPatternSetResponseTypeDef
 
 ```python
@@ -2142,6 +2434,8 @@ Required fields:
 - `NextLockToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterulegrouprequestrequesttypedef"></a>
 
 ## UpdateRuleGroupRequestRequestTypeDef
 
@@ -2165,6 +2459,8 @@ Optional fields:
 - `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
+<a id="updaterulegroupresponsetypedef"></a>
+
 ## UpdateRuleGroupResponseTypeDef
 
 ```python
@@ -2176,6 +2472,8 @@ Required fields:
 - `NextLockToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatewebaclrequestrequesttypedef"></a>
 
 ## UpdateWebACLRequestRequestTypeDef
 
@@ -2201,6 +2499,8 @@ Optional fields:
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 - `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
 
+<a id="updatewebaclresponsetypedef"></a>
+
 ## UpdateWebACLResponseTypeDef
 
 ```python
@@ -2213,6 +2513,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="versiontopublishtypedef"></a>
+
 ## VersionToPublishTypeDef
 
 ```python
@@ -2223,6 +2525,8 @@ Optional fields:
 
 - `AssociatedRuleGroupArn`: `str`
 - `ForecastedLifetime`: `int`
+
+<a id="visibilityconfigtypedef"></a>
 
 ## VisibilityConfigTypeDef
 
@@ -2235,6 +2539,8 @@ Required fields:
 - `SampledRequestsEnabled`: `bool`
 - `CloudWatchMetricsEnabled`: `bool`
 - `MetricName`: `str`
+
+<a id="webaclsummarytypedef"></a>
 
 ## WebACLSummaryTypeDef
 
@@ -2249,6 +2555,8 @@ Optional fields:
 - `Description`: `str`
 - `LockToken`: `str`
 - `ARN`: `str`
+
+<a id="webacltypedef"></a>
 
 ## WebACLTypeDef
 
@@ -2279,6 +2587,8 @@ Optional fields:
 - `CustomResponseBodies`: `Dict`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 - `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
+
+<a id="xssmatchstatementtypedef"></a>
 
 ## XssMatchStatementTypeDef
 

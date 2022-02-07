@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-codepipeline-module"></a>
+
 # Typed dictionaries for boto3 CodePipeline module
 
 > [Index](..) > [CodePipeline](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module
-[mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
+[mypy-boto3-codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
 - [Typed dictionaries for boto3 CodePipeline module](#typed-dictionaries-for-boto3-codepipeline-module)
   - [AWSSessionCredentialsTypeDef](#awssessioncredentialstypedef)
@@ -143,6 +145,8 @@ type annotations stubs module
   - [WebhookDefinitionTypeDef](#webhookdefinitiontypedef)
   - [WebhookFilterRuleTypeDef](#webhookfilterruletypedef)
 
+<a id="awssessioncredentialstypedef"></a>
+
 ## AWSSessionCredentialsTypeDef
 
 ```python
@@ -155,6 +159,8 @@ Required fields:
 - `secretAccessKey`: `str`
 - `sessionToken`: `str`
 
+<a id="acknowledgejobinputrequesttypedef"></a>
+
 ## AcknowledgeJobInputRequestTypeDef
 
 ```python
@@ -165,6 +171,8 @@ Required fields:
 
 - `jobId`: `str`
 - `nonce`: `str`
+
+<a id="acknowledgejoboutputtypedef"></a>
 
 ## AcknowledgeJobOutputTypeDef
 
@@ -178,6 +186,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="acknowledgethirdpartyjobinputrequesttypedef"></a>
+
 ## AcknowledgeThirdPartyJobInputRequestTypeDef
 
 ```python
@@ -190,6 +200,8 @@ Required fields:
 - `nonce`: `str`
 - `clientToken`: `str`
 
+<a id="acknowledgethirdpartyjoboutputtypedef"></a>
+
 ## AcknowledgeThirdPartyJobOutputTypeDef
 
 ```python
@@ -201,6 +213,8 @@ Required fields:
 - `status`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="actionconfigurationpropertytypedef"></a>
 
 ## ActionConfigurationPropertyTypeDef
 
@@ -222,6 +236,8 @@ Optional fields:
 - `type`:
   [ActionConfigurationPropertyTypeType](./literals.md#actionconfigurationpropertytypetype)
 
+<a id="actionconfigurationtypedef"></a>
+
 ## ActionConfigurationTypeDef
 
 ```python
@@ -231,6 +247,8 @@ from mypy_boto3_codepipeline.type_defs import ActionConfigurationTypeDef
 Optional fields:
 
 - `configuration`: `Dict`\[`str`, `str`\]
+
+<a id="actioncontexttypedef"></a>
 
 ## ActionContextTypeDef
 
@@ -242,6 +260,8 @@ Optional fields:
 
 - `name`: `str`
 - `actionExecutionId`: `str`
+
+<a id="actiondeclarationtypedef"></a>
 
 ## ActionDeclarationTypeDef
 
@@ -266,6 +286,8 @@ Optional fields:
 - `region`: `str`
 - `namespace`: `str`
 
+<a id="actionexecutiondetailtypedef"></a>
+
 ## ActionExecutionDetailTypeDef
 
 ```python
@@ -288,6 +310,8 @@ Optional fields:
 - `output`:
   [ActionExecutionOutputTypeDef](./type_defs.md#actionexecutionoutputtypedef)
 
+<a id="actionexecutionfiltertypedef"></a>
+
 ## ActionExecutionFilterTypeDef
 
 ```python
@@ -297,6 +321,8 @@ from mypy_boto3_codepipeline.type_defs import ActionExecutionFilterTypeDef
 Optional fields:
 
 - `pipelineExecutionId`: `str`
+
+<a id="actionexecutioninputtypedef"></a>
 
 ## ActionExecutionInputTypeDef
 
@@ -315,6 +341,8 @@ Optional fields:
   `List`\[[ArtifactDetailTypeDef](./type_defs.md#artifactdetailtypedef)\]
 - `namespace`: `str`
 
+<a id="actionexecutionoutputtypedef"></a>
+
 ## ActionExecutionOutputTypeDef
 
 ```python
@@ -329,6 +357,8 @@ Optional fields:
   [ActionExecutionResultTypeDef](./type_defs.md#actionexecutionresulttypedef)
 - `outputVariables`: `Dict`\[`str`, `str`\]
 
+<a id="actionexecutionresulttypedef"></a>
+
 ## ActionExecutionResultTypeDef
 
 ```python
@@ -340,6 +370,8 @@ Optional fields:
 - `externalExecutionId`: `str`
 - `externalExecutionSummary`: `str`
 - `externalExecutionUrl`: `str`
+
+<a id="actionexecutiontypedef"></a>
 
 ## ActionExecutionTypeDef
 
@@ -361,6 +393,8 @@ Optional fields:
 - `percentComplete`: `int`
 - `errorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
 
+<a id="actionrevisiontypedef"></a>
+
 ## ActionRevisionTypeDef
 
 ```python
@@ -372,6 +406,8 @@ Required fields:
 - `revisionId`: `str`
 - `revisionChangeId`: `str`
 - `created`: `datetime`
+
+<a id="actionstatetypedef"></a>
 
 ## ActionStateTypeDef
 
@@ -389,6 +425,8 @@ Optional fields:
 - `entityUrl`: `str`
 - `revisionUrl`: `str`
 
+<a id="actiontypeartifactdetailstypedef"></a>
+
 ## ActionTypeArtifactDetailsTypeDef
 
 ```python
@@ -399,6 +437,8 @@ Required fields:
 
 - `minimumCount`: `int`
 - `maximumCount`: `int`
+
+<a id="actiontypedeclarationtypedef"></a>
 
 ## ActionTypeDeclarationTypeDef
 
@@ -426,6 +466,8 @@ Optional fields:
   `List`\[[ActionTypePropertyTypeDef](./type_defs.md#actiontypepropertytypedef)\]
 - `urls`: [ActionTypeUrlsTypeDef](./type_defs.md#actiontypeurlstypedef)
 
+<a id="actiontypeexecutortypedef"></a>
+
 ## ActionTypeExecutorTypeDef
 
 ```python
@@ -443,6 +485,8 @@ Optional fields:
 - `policyStatementsTemplate`: `str`
 - `jobTimeout`: `int`
 
+<a id="actiontypeidtypedef"></a>
+
 ## ActionTypeIdTypeDef
 
 ```python
@@ -455,6 +499,8 @@ Required fields:
 - `owner`: [ActionOwnerType](./literals.md#actionownertype)
 - `provider`: `str`
 - `version`: `str`
+
+<a id="actiontypeidentifiertypedef"></a>
 
 ## ActionTypeIdentifierTypeDef
 
@@ -469,6 +515,8 @@ Required fields:
 - `provider`: `str`
 - `version`: `str`
 
+<a id="actiontypepermissionstypedef"></a>
+
 ## ActionTypePermissionsTypeDef
 
 ```python
@@ -478,6 +526,8 @@ from mypy_boto3_codepipeline.type_defs import ActionTypePermissionsTypeDef
 Required fields:
 
 - `allowedAccounts`: `List`\[`str`\]
+
+<a id="actiontypepropertytypedef"></a>
 
 ## ActionTypePropertyTypeDef
 
@@ -497,6 +547,8 @@ Optional fields:
 - `queryable`: `bool`
 - `description`: `str`
 
+<a id="actiontypesettingstypedef"></a>
+
 ## ActionTypeSettingsTypeDef
 
 ```python
@@ -509,6 +561,8 @@ Optional fields:
 - `entityUrlTemplate`: `str`
 - `executionUrlTemplate`: `str`
 - `revisionUrlTemplate`: `str`
+
+<a id="actiontypetypedef"></a>
 
 ## ActionTypeTypeDef
 
@@ -531,6 +585,8 @@ Optional fields:
 - `actionConfigurationProperties`:
   `List`\[[ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef)\]
 
+<a id="actiontypeurlstypedef"></a>
+
 ## ActionTypeUrlsTypeDef
 
 ```python
@@ -544,6 +600,8 @@ Optional fields:
 - `executionUrlTemplate`: `str`
 - `revisionUrlTemplate`: `str`
 
+<a id="approvalresulttypedef"></a>
+
 ## ApprovalResultTypeDef
 
 ```python
@@ -554,6 +612,8 @@ Required fields:
 
 - `summary`: `str`
 - `status`: [ApprovalStatusType](./literals.md#approvalstatustype)
+
+<a id="artifactdetailtypedef"></a>
 
 ## ArtifactDetailTypeDef
 
@@ -566,6 +626,8 @@ Optional fields:
 - `name`: `str`
 - `s3location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
+<a id="artifactdetailstypedef"></a>
+
 ## ArtifactDetailsTypeDef
 
 ```python
@@ -576,6 +638,8 @@ Required fields:
 
 - `minimumCount`: `int`
 - `maximumCount`: `int`
+
+<a id="artifactlocationtypedef"></a>
 
 ## ArtifactLocationTypeDef
 
@@ -589,6 +653,8 @@ Optional fields:
   [ArtifactLocationTypeType](./literals.md#artifactlocationtypetype))
 - `s3Location`:
   [S3ArtifactLocationTypeDef](./type_defs.md#s3artifactlocationtypedef)
+
+<a id="artifactrevisiontypedef"></a>
 
 ## ArtifactRevisionTypeDef
 
@@ -604,6 +670,8 @@ Optional fields:
 - `revisionSummary`: `str`
 - `created`: `datetime`
 - `revisionUrl`: `str`
+
+<a id="artifactstoretypedef"></a>
 
 ## ArtifactStoreTypeDef
 
@@ -621,6 +689,8 @@ Optional fields:
 
 - `encryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
+<a id="artifacttypedef"></a>
+
 ## ArtifactTypeDef
 
 ```python
@@ -633,6 +703,8 @@ Optional fields:
 - `revision`: `str`
 - `location`: [ArtifactLocationTypeDef](./type_defs.md#artifactlocationtypedef)
 
+<a id="blockerdeclarationtypedef"></a>
+
 ## BlockerDeclarationTypeDef
 
 ```python
@@ -644,6 +716,8 @@ Required fields:
 - `name`: `str`
 - `type`: `Literal['Schedule']` (see
   [BlockerTypeType](./literals.md#blockertypetype))
+
+<a id="createcustomactiontypeinputrequesttypedef"></a>
 
 ## CreateCustomActionTypeInputRequestTypeDef
 
@@ -669,6 +743,8 @@ Optional fields:
   `Sequence`\[[ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef)\]
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcustomactiontypeoutputtypedef"></a>
+
 ## CreateCustomActionTypeOutputTypeDef
 
 ```python
@@ -681,6 +757,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpipelineinputrequesttypedef"></a>
 
 ## CreatePipelineInputRequestTypeDef
 
@@ -697,6 +775,8 @@ Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createpipelineoutputtypedef"></a>
+
 ## CreatePipelineOutputTypeDef
 
 ```python
@@ -710,6 +790,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="currentrevisiontypedef"></a>
 
 ## CurrentRevisionTypeDef
 
@@ -727,6 +809,8 @@ Optional fields:
 - `created`: `Union`\[`datetime`, `str`\]
 - `revisionSummary`: `str`
 
+<a id="deletecustomactiontypeinputrequesttypedef"></a>
+
 ## DeleteCustomActionTypeInputRequestTypeDef
 
 ```python
@@ -739,6 +823,8 @@ Required fields:
 - `provider`: `str`
 - `version`: `str`
 
+<a id="deletepipelineinputrequesttypedef"></a>
+
 ## DeletePipelineInputRequestTypeDef
 
 ```python
@@ -748,6 +834,8 @@ from mypy_boto3_codepipeline.type_defs import DeletePipelineInputRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="deletewebhookinputrequesttypedef"></a>
 
 ## DeleteWebhookInputRequestTypeDef
 
@@ -759,6 +847,8 @@ Required fields:
 
 - `name`: `str`
 
+<a id="deregisterwebhookwiththirdpartyinputrequesttypedef"></a>
+
 ## DeregisterWebhookWithThirdPartyInputRequestTypeDef
 
 ```python
@@ -768,6 +858,8 @@ from mypy_boto3_codepipeline.type_defs import DeregisterWebhookWithThirdPartyInp
 Optional fields:
 
 - `webhookName`: `str`
+
+<a id="disablestagetransitioninputrequesttypedef"></a>
 
 ## DisableStageTransitionInputRequestTypeDef
 
@@ -783,6 +875,8 @@ Required fields:
   [StageTransitionTypeType](./literals.md#stagetransitiontypetype)
 - `reason`: `str`
 
+<a id="enablestagetransitioninputrequesttypedef"></a>
+
 ## EnableStageTransitionInputRequestTypeDef
 
 ```python
@@ -796,6 +890,8 @@ Required fields:
 - `transitionType`:
   [StageTransitionTypeType](./literals.md#stagetransitiontypetype)
 
+<a id="encryptionkeytypedef"></a>
+
 ## EncryptionKeyTypeDef
 
 ```python
@@ -808,6 +904,8 @@ Required fields:
 - `type`: `Literal['KMS']` (see
   [EncryptionKeyTypeType](./literals.md#encryptionkeytypetype))
 
+<a id="errordetailstypedef"></a>
+
 ## ErrorDetailsTypeDef
 
 ```python
@@ -818,6 +916,8 @@ Optional fields:
 
 - `code`: `str`
 - `message`: `str`
+
+<a id="executiondetailstypedef"></a>
 
 ## ExecutionDetailsTypeDef
 
@@ -831,6 +931,8 @@ Optional fields:
 - `externalExecutionId`: `str`
 - `percentComplete`: `int`
 
+<a id="executiontriggertypedef"></a>
+
 ## ExecutionTriggerTypeDef
 
 ```python
@@ -841,6 +943,8 @@ Optional fields:
 
 - `triggerType`: [TriggerTypeType](./literals.md#triggertypetype)
 - `triggerDetail`: `str`
+
+<a id="executorconfigurationtypedef"></a>
 
 ## ExecutorConfigurationTypeDef
 
@@ -854,6 +958,8 @@ Optional fields:
   [LambdaExecutorConfigurationTypeDef](./type_defs.md#lambdaexecutorconfigurationtypedef)
 - `jobWorkerExecutorConfiguration`:
   [JobWorkerExecutorConfigurationTypeDef](./type_defs.md#jobworkerexecutorconfigurationtypedef)
+
+<a id="failuredetailstypedef"></a>
 
 ## FailureDetailsTypeDef
 
@@ -870,6 +976,8 @@ Optional fields:
 
 - `externalExecutionId`: `str`
 
+<a id="getactiontypeinputrequesttypedef"></a>
+
 ## GetActionTypeInputRequestTypeDef
 
 ```python
@@ -882,6 +990,8 @@ Required fields:
 - `owner`: `str`
 - `provider`: `str`
 - `version`: `str`
+
+<a id="getactiontypeoutputtypedef"></a>
 
 ## GetActionTypeOutputTypeDef
 
@@ -896,6 +1006,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getjobdetailsinputrequesttypedef"></a>
+
 ## GetJobDetailsInputRequestTypeDef
 
 ```python
@@ -905,6 +1017,8 @@ from mypy_boto3_codepipeline.type_defs import GetJobDetailsInputRequestTypeDef
 Required fields:
 
 - `jobId`: `str`
+
+<a id="getjobdetailsoutputtypedef"></a>
 
 ## GetJobDetailsOutputTypeDef
 
@@ -918,6 +1032,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpipelineexecutioninputrequesttypedef"></a>
+
 ## GetPipelineExecutionInputRequestTypeDef
 
 ```python
@@ -928,6 +1044,8 @@ Required fields:
 
 - `pipelineName`: `str`
 - `pipelineExecutionId`: `str`
+
+<a id="getpipelineexecutionoutputtypedef"></a>
 
 ## GetPipelineExecutionOutputTypeDef
 
@@ -941,6 +1059,8 @@ Required fields:
   [PipelineExecutionTypeDef](./type_defs.md#pipelineexecutiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getpipelineinputrequesttypedef"></a>
 
 ## GetPipelineInputRequestTypeDef
 
@@ -956,6 +1076,8 @@ Optional fields:
 
 - `version`: `int`
 
+<a id="getpipelineoutputtypedef"></a>
+
 ## GetPipelineOutputTypeDef
 
 ```python
@@ -970,6 +1092,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpipelinestateinputrequesttypedef"></a>
+
 ## GetPipelineStateInputRequestTypeDef
 
 ```python
@@ -979,6 +1103,8 @@ from mypy_boto3_codepipeline.type_defs import GetPipelineStateInputRequestTypeDe
 Required fields:
 
 - `name`: `str`
+
+<a id="getpipelinestateoutputtypedef"></a>
 
 ## GetPipelineStateOutputTypeDef
 
@@ -997,6 +1123,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getthirdpartyjobdetailsinputrequesttypedef"></a>
+
 ## GetThirdPartyJobDetailsInputRequestTypeDef
 
 ```python
@@ -1007,6 +1135,8 @@ Required fields:
 
 - `jobId`: `str`
 - `clientToken`: `str`
+
+<a id="getthirdpartyjobdetailsoutputtypedef"></a>
 
 ## GetThirdPartyJobDetailsOutputTypeDef
 
@@ -1021,6 +1151,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="inputartifacttypedef"></a>
+
 ## InputArtifactTypeDef
 
 ```python
@@ -1030,6 +1162,8 @@ from mypy_boto3_codepipeline.type_defs import InputArtifactTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="jobdatatypedef"></a>
 
 ## JobDataTypeDef
 
@@ -1052,6 +1186,8 @@ Optional fields:
 - `continuationToken`: `str`
 - `encryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
+<a id="jobdetailstypedef"></a>
+
 ## JobDetailsTypeDef
 
 ```python
@@ -1063,6 +1199,8 @@ Optional fields:
 - `id`: `str`
 - `data`: [JobDataTypeDef](./type_defs.md#jobdatatypedef)
 - `accountId`: `str`
+
+<a id="jobtypedef"></a>
 
 ## JobTypeDef
 
@@ -1077,6 +1215,8 @@ Optional fields:
 - `nonce`: `str`
 - `accountId`: `str`
 
+<a id="jobworkerexecutorconfigurationtypedef"></a>
+
 ## JobWorkerExecutorConfigurationTypeDef
 
 ```python
@@ -1088,6 +1228,8 @@ Optional fields:
 - `pollingAccounts`: `List`\[`str`\]
 - `pollingServicePrincipals`: `List`\[`str`\]
 
+<a id="lambdaexecutorconfigurationtypedef"></a>
+
 ## LambdaExecutorConfigurationTypeDef
 
 ```python
@@ -1097,6 +1239,8 @@ from mypy_boto3_codepipeline.type_defs import LambdaExecutorConfigurationTypeDef
 Required fields:
 
 - `lambdaFunctionArn`: `str`
+
+<a id="listactionexecutionsinputrequesttypedef"></a>
 
 ## ListActionExecutionsInputRequestTypeDef
 
@@ -1115,6 +1259,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listactionexecutionsoutputtypedef"></a>
+
 ## ListActionExecutionsOutputTypeDef
 
 ```python
@@ -1129,6 +1275,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listactiontypesinputrequesttypedef"></a>
+
 ## ListActionTypesInputRequestTypeDef
 
 ```python
@@ -1140,6 +1288,8 @@ Optional fields:
 - `actionOwnerFilter`: [ActionOwnerType](./literals.md#actionownertype)
 - `nextToken`: `str`
 - `regionFilter`: `str`
+
+<a id="listactiontypesoutputtypedef"></a>
 
 ## ListActionTypesOutputTypeDef
 
@@ -1154,6 +1304,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpipelineexecutionsinputrequesttypedef"></a>
 
 ## ListPipelineExecutionsInputRequestTypeDef
 
@@ -1170,6 +1322,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listpipelineexecutionsoutputtypedef"></a>
+
 ## ListPipelineExecutionsOutputTypeDef
 
 ```python
@@ -1184,6 +1338,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpipelinesinputrequesttypedef"></a>
+
 ## ListPipelinesInputRequestTypeDef
 
 ```python
@@ -1194,6 +1350,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listpipelinesoutputtypedef"></a>
 
 ## ListPipelinesOutputTypeDef
 
@@ -1208,6 +1366,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourceinputrequesttypedef"></a>
 
 ## ListTagsForResourceInputRequestTypeDef
 
@@ -1224,6 +1384,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listtagsforresourceoutputtypedef"></a>
+
 ## ListTagsForResourceOutputTypeDef
 
 ```python
@@ -1236,6 +1398,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listwebhookitemtypedef"></a>
 
 ## ListWebhookItemTypeDef
 
@@ -1257,6 +1421,8 @@ Optional fields:
 - `arn`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="listwebhooksinputrequesttypedef"></a>
+
 ## ListWebhooksInputRequestTypeDef
 
 ```python
@@ -1267,6 +1433,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listwebhooksoutputtypedef"></a>
 
 ## ListWebhooksOutputTypeDef
 
@@ -1282,6 +1450,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="outputartifacttypedef"></a>
+
 ## OutputArtifactTypeDef
 
 ```python
@@ -1291,6 +1461,8 @@ from mypy_boto3_codepipeline.type_defs import OutputArtifactTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1303,6 +1475,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="pipelinecontexttypedef"></a>
 
 ## PipelineContextTypeDef
 
@@ -1317,6 +1491,8 @@ Optional fields:
 - `action`: [ActionContextTypeDef](./type_defs.md#actioncontexttypedef)
 - `pipelineArn`: `str`
 - `pipelineExecutionId`: `str`
+
+<a id="pipelinedeclarationtypedef"></a>
 
 ## PipelineDeclarationTypeDef
 
@@ -1338,6 +1514,8 @@ Optional fields:
   [ArtifactStoreTypeDef](./type_defs.md#artifactstoretypedef)\]
 - `version`: `int`
 
+<a id="pipelineexecutionsummarytypedef"></a>
+
 ## PipelineExecutionSummaryTypeDef
 
 ```python
@@ -1357,6 +1535,8 @@ Optional fields:
 - `stopTrigger`:
   [StopExecutionTriggerTypeDef](./type_defs.md#stopexecutiontriggertypedef)
 
+<a id="pipelineexecutiontypedef"></a>
+
 ## PipelineExecutionTypeDef
 
 ```python
@@ -1374,6 +1554,8 @@ Optional fields:
 - `artifactRevisions`:
   `List`\[[ArtifactRevisionTypeDef](./type_defs.md#artifactrevisiontypedef)\]
 
+<a id="pipelinemetadatatypedef"></a>
+
 ## PipelineMetadataTypeDef
 
 ```python
@@ -1385,6 +1567,8 @@ Optional fields:
 - `pipelineArn`: `str`
 - `created`: `datetime`
 - `updated`: `datetime`
+
+<a id="pipelinesummarytypedef"></a>
 
 ## PipelineSummaryTypeDef
 
@@ -1398,6 +1582,8 @@ Optional fields:
 - `version`: `int`
 - `created`: `datetime`
 - `updated`: `datetime`
+
+<a id="pollforjobsinputrequesttypedef"></a>
 
 ## PollForJobsInputRequestTypeDef
 
@@ -1414,6 +1600,8 @@ Optional fields:
 - `maxBatchSize`: `int`
 - `queryParam`: `Mapping`\[`str`, `str`\]
 
+<a id="pollforjobsoutputtypedef"></a>
+
 ## PollForJobsOutputTypeDef
 
 ```python
@@ -1425,6 +1613,8 @@ Required fields:
 - `jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="pollforthirdpartyjobsinputrequesttypedef"></a>
 
 ## PollForThirdPartyJobsInputRequestTypeDef
 
@@ -1440,6 +1630,8 @@ Optional fields:
 
 - `maxBatchSize`: `int`
 
+<a id="pollforthirdpartyjobsoutputtypedef"></a>
+
 ## PollForThirdPartyJobsOutputTypeDef
 
 ```python
@@ -1451,6 +1643,8 @@ Required fields:
 - `jobs`: `List`\[[ThirdPartyJobTypeDef](./type_defs.md#thirdpartyjobtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putactionrevisioninputrequesttypedef"></a>
 
 ## PutActionRevisionInputRequestTypeDef
 
@@ -1466,6 +1660,8 @@ Required fields:
 - `actionRevision`:
   [ActionRevisionTypeDef](./type_defs.md#actionrevisiontypedef)
 
+<a id="putactionrevisionoutputtypedef"></a>
+
 ## PutActionRevisionOutputTypeDef
 
 ```python
@@ -1478,6 +1674,8 @@ Required fields:
 - `pipelineExecutionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putapprovalresultinputrequesttypedef"></a>
 
 ## PutApprovalResultInputRequestTypeDef
 
@@ -1493,6 +1691,8 @@ Required fields:
 - `result`: [ApprovalResultTypeDef](./type_defs.md#approvalresulttypedef)
 - `token`: `str`
 
+<a id="putapprovalresultoutputtypedef"></a>
+
 ## PutApprovalResultOutputTypeDef
 
 ```python
@@ -1505,6 +1705,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putjobfailureresultinputrequesttypedef"></a>
+
 ## PutJobFailureResultInputRequestTypeDef
 
 ```python
@@ -1516,6 +1718,8 @@ Required fields:
 - `jobId`: `str`
 - `failureDetails`:
   [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
+
+<a id="putjobsuccessresultinputrequesttypedef"></a>
 
 ## PutJobSuccessResultInputRequestTypeDef
 
@@ -1536,6 +1740,8 @@ Optional fields:
   [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
 - `outputVariables`: `Mapping`\[`str`, `str`\]
 
+<a id="putthirdpartyjobfailureresultinputrequesttypedef"></a>
+
 ## PutThirdPartyJobFailureResultInputRequestTypeDef
 
 ```python
@@ -1548,6 +1754,8 @@ Required fields:
 - `clientToken`: `str`
 - `failureDetails`:
   [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
+
+<a id="putthirdpartyjobsuccessresultinputrequesttypedef"></a>
 
 ## PutThirdPartyJobSuccessResultInputRequestTypeDef
 
@@ -1568,6 +1776,8 @@ Optional fields:
 - `executionDetails`:
   [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
 
+<a id="putwebhookinputrequesttypedef"></a>
+
 ## PutWebhookInputRequestTypeDef
 
 ```python
@@ -1583,6 +1793,8 @@ Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="putwebhookoutputtypedef"></a>
+
 ## PutWebhookOutputTypeDef
 
 ```python
@@ -1595,6 +1807,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="registerwebhookwiththirdpartyinputrequesttypedef"></a>
+
 ## RegisterWebhookWithThirdPartyInputRequestTypeDef
 
 ```python
@@ -1604,6 +1818,8 @@ from mypy_boto3_codepipeline.type_defs import RegisterWebhookWithThirdPartyInput
 Optional fields:
 
 - `webhookName`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1619,6 +1835,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retrystageexecutioninputrequesttypedef"></a>
+
 ## RetryStageExecutionInputRequestTypeDef
 
 ```python
@@ -1633,6 +1851,8 @@ Required fields:
 - `retryMode`: `Literal['FAILED_ACTIONS']` (see
   [StageRetryModeType](./literals.md#stageretrymodetype))
 
+<a id="retrystageexecutionoutputtypedef"></a>
+
 ## RetryStageExecutionOutputTypeDef
 
 ```python
@@ -1645,6 +1865,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="s3artifactlocationtypedef"></a>
+
 ## S3ArtifactLocationTypeDef
 
 ```python
@@ -1656,6 +1878,8 @@ Required fields:
 - `bucketName`: `str`
 - `objectKey`: `str`
 
+<a id="s3locationtypedef"></a>
+
 ## S3LocationTypeDef
 
 ```python
@@ -1666,6 +1890,8 @@ Optional fields:
 
 - `bucket`: `str`
 - `key`: `str`
+
+<a id="sourcerevisiontypedef"></a>
 
 ## SourceRevisionTypeDef
 
@@ -1683,6 +1909,8 @@ Optional fields:
 - `revisionSummary`: `str`
 - `revisionUrl`: `str`
 
+<a id="stagecontexttypedef"></a>
+
 ## StageContextTypeDef
 
 ```python
@@ -1692,6 +1920,8 @@ from mypy_boto3_codepipeline.type_defs import StageContextTypeDef
 Optional fields:
 
 - `name`: `str`
+
+<a id="stagedeclarationtypedef"></a>
 
 ## StageDeclarationTypeDef
 
@@ -1710,6 +1940,8 @@ Optional fields:
 - `blockers`:
   `Sequence`\[[BlockerDeclarationTypeDef](./type_defs.md#blockerdeclarationtypedef)\]
 
+<a id="stageexecutiontypedef"></a>
+
 ## StageExecutionTypeDef
 
 ```python
@@ -1720,6 +1952,8 @@ Required fields:
 
 - `pipelineExecutionId`: `str`
 - `status`: [StageExecutionStatusType](./literals.md#stageexecutionstatustype)
+
+<a id="stagestatetypedef"></a>
 
 ## StageStateTypeDef
 
@@ -1739,6 +1973,8 @@ Optional fields:
 - `latestExecution`:
   [StageExecutionTypeDef](./type_defs.md#stageexecutiontypedef)
 
+<a id="startpipelineexecutioninputrequesttypedef"></a>
+
 ## StartPipelineExecutionInputRequestTypeDef
 
 ```python
@@ -1753,6 +1989,8 @@ Optional fields:
 
 - `clientRequestToken`: `str`
 
+<a id="startpipelineexecutionoutputtypedef"></a>
+
 ## StartPipelineExecutionOutputTypeDef
 
 ```python
@@ -1765,6 +2003,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopexecutiontriggertypedef"></a>
+
 ## StopExecutionTriggerTypeDef
 
 ```python
@@ -1774,6 +2014,8 @@ from mypy_boto3_codepipeline.type_defs import StopExecutionTriggerTypeDef
 Optional fields:
 
 - `reason`: `str`
+
+<a id="stoppipelineexecutioninputrequesttypedef"></a>
 
 ## StopPipelineExecutionInputRequestTypeDef
 
@@ -1791,6 +2033,8 @@ Optional fields:
 - `abandon`: `bool`
 - `reason`: `str`
 
+<a id="stoppipelineexecutionoutputtypedef"></a>
+
 ## StopPipelineExecutionOutputTypeDef
 
 ```python
@@ -1803,6 +2047,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -1814,6 +2060,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1824,6 +2072,8 @@ Required fields:
 
 - `key`: `str`
 - `value`: `str`
+
+<a id="thirdpartyjobdatatypedef"></a>
 
 ## ThirdPartyJobDataTypeDef
 
@@ -1846,6 +2096,8 @@ Optional fields:
 - `continuationToken`: `str`
 - `encryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
+<a id="thirdpartyjobdetailstypedef"></a>
+
 ## ThirdPartyJobDetailsTypeDef
 
 ```python
@@ -1858,6 +2110,8 @@ Optional fields:
 - `data`: [ThirdPartyJobDataTypeDef](./type_defs.md#thirdpartyjobdatatypedef)
 - `nonce`: `str`
 
+<a id="thirdpartyjobtypedef"></a>
+
 ## ThirdPartyJobTypeDef
 
 ```python
@@ -1868,6 +2122,8 @@ Optional fields:
 
 - `clientId`: `str`
 - `jobId`: `str`
+
+<a id="transitionstatetypedef"></a>
 
 ## TransitionStateTypeDef
 
@@ -1882,6 +2138,8 @@ Optional fields:
 - `lastChangedAt`: `datetime`
 - `disabledReason`: `str`
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -1892,6 +2150,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateactiontypeinputrequesttypedef"></a>
 
 ## UpdateActionTypeInputRequestTypeDef
 
@@ -1904,6 +2164,8 @@ Required fields:
 - `actionType`:
   [ActionTypeDeclarationTypeDef](./type_defs.md#actiontypedeclarationtypedef)
 
+<a id="updatepipelineinputrequesttypedef"></a>
+
 ## UpdatePipelineInputRequestTypeDef
 
 ```python
@@ -1914,6 +2176,8 @@ Required fields:
 
 - `pipeline`:
   [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
+
+<a id="updatepipelineoutputtypedef"></a>
 
 ## UpdatePipelineOutputTypeDef
 
@@ -1928,6 +2192,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="webhookauthconfigurationtypedef"></a>
+
 ## WebhookAuthConfigurationTypeDef
 
 ```python
@@ -1938,6 +2204,8 @@ Optional fields:
 
 - `AllowedIPRange`: `str`
 - `SecretToken`: `str`
+
+<a id="webhookdefinitiontypedef"></a>
 
 ## WebhookDefinitionTypeDef
 
@@ -1956,6 +2224,8 @@ Required fields:
   [WebhookAuthenticationTypeType](./literals.md#webhookauthenticationtypetype)
 - `authenticationConfiguration`:
   [WebhookAuthConfigurationTypeDef](./type_defs.md#webhookauthconfigurationtypedef)
+
+<a id="webhookfilterruletypedef"></a>
 
 ## WebhookFilterRuleTypeDef
 

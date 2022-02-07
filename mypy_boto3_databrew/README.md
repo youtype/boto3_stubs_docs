@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-gluedatabrew-module"></a>
+
 # Type annotations for boto3 GlueDataBrew module
 
 > [Index](..) > GlueDataBrew
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
 type annotations stubs module
-[mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
+[mypy-boto3-databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[databrew]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[databrew]'
+
+# standalone installation
 pip install mypy-boto3-databrew
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-databrew
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="gluedatabrewclient"></a>
+
 ## GlueDataBrewClient
 
 Type annotations for `boto3.client("databrew")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_databrew.client import GlueDataBrewClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -81,6 +95,8 @@ from mypy_boto3_databrew.client import GlueDataBrewClient
 - [update_ruleset](./client.md#update_ruleset)
 - [update_schedule](./client.md#update_schedule)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 GlueDataBrewClient [exceptions](./client.md#exceptions)
@@ -93,6 +109,8 @@ GlueDataBrewClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -101,7 +119,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_databrew.paginators import ListDatasetsPaginator, ...
+from mypy_boto3_databrew.paginator import ListDatasetsPaginator, ...
 ```
 
 - [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
@@ -112,6 +130,8 @@ from mypy_boto3_databrew.paginators import ListDatasetsPaginator, ...
 - [ListRecipesPaginator](./paginators.md#listrecipespaginator)
 - [ListRulesetsPaginator](./paginators.md#listrulesetspaginator)
 - [ListSchedulesPaginator](./paginators.md#listschedulespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -152,6 +172,8 @@ from mypy_boto3_databrew.literals import AnalyticsModeType, ...
 - [ValidationModeType](./literals.md#validationmodetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

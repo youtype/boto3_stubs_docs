@@ -1,3 +1,5 @@
+<a id="apigatewayv2client-for-boto3-apigatewayv2-module"></a>
+
 # ApiGatewayV2Client for boto3 ApiGatewayV2 module
 
 > [Index](..) > [ApiGatewayV2](.) > ApiGatewayV2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
 type annotations stubs module
-[mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
+[mypy-boto3-apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
 
 - [ApiGatewayV2Client for boto3 ApiGatewayV2 module](#apigatewayv2client-for-boto3-apigatewayv2-module)
   - [ApiGatewayV2Client](#apigatewayv2client)
@@ -88,6 +90,8 @@ type annotations stubs module
     - [update_vpc_link](#update_vpc_link)
     - [get_paginator](#get_paginator)
 
+<a id="apigatewayv2client"></a>
+
 ## ApiGatewayV2Client
 
 Type annotations for `boto3.client("apigatewayv2")`
@@ -95,14 +99,17 @@ Type annotations for `boto3.client("apigatewayv2")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_apigatewayv2.client import ApiGatewayV2Client
 
 def get_apigatewayv2_client() -> ApiGatewayV2Client:
-    return boto3.client("apigatewayv2")
+    return Session().client("apigatewayv2")
 ```
 
 Boto3 documentation:
 [ApiGatewayV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -125,7 +132,11 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -137,6 +148,8 @@ Boto3 documentation:
 [ApiGatewayV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -152,6 +165,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_api"></a>
 
 ### create_api
 
@@ -184,6 +199,8 @@ Keyword-only arguments:
 
 Returns [CreateApiResponseTypeDef](./type_defs.md#createapiresponsetypedef).
 
+<a id="create_api_mapping"></a>
+
 ### create_api_mapping
 
 Creates an API mapping.
@@ -205,6 +222,8 @@ Keyword-only arguments:
 
 Returns
 [CreateApiMappingResponseTypeDef](./type_defs.md#createapimappingresponsetypedef).
+
+<a id="create_authorizer"></a>
 
 ### create_authorizer
 
@@ -237,6 +256,8 @@ Keyword-only arguments:
 Returns
 [CreateAuthorizerResponseTypeDef](./type_defs.md#createauthorizerresponsetypedef).
 
+<a id="create_deployment"></a>
+
 ### create_deployment
 
 Creates a Deployment for an API.
@@ -257,6 +278,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
+
+<a id="create_domain_name"></a>
 
 ### create_domain_name
 
@@ -281,6 +304,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDomainNameResponseTypeDef](./type_defs.md#createdomainnameresponsetypedef).
+
+<a id="create_integration"></a>
 
 ### create_integration
 
@@ -321,6 +346,8 @@ Keyword-only arguments:
 Returns
 [CreateIntegrationResultTypeDef](./type_defs.md#createintegrationresulttypedef).
 
+<a id="create_integration_response"></a>
+
 ### create_integration_response
 
 Creates an IntegrationResponses.
@@ -348,6 +375,8 @@ Keyword-only arguments:
 Returns
 [CreateIntegrationResponseResponseTypeDef](./type_defs.md#createintegrationresponseresponsetypedef).
 
+<a id="create_model"></a>
+
 ### create_model
 
 Creates a Model for an API.
@@ -370,6 +399,8 @@ Keyword-only arguments:
 
 Returns
 [CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
+
+<a id="create_route"></a>
 
 ### create_route
 
@@ -402,6 +433,8 @@ Keyword-only arguments:
 
 Returns [CreateRouteResultTypeDef](./type_defs.md#createrouteresulttypedef).
 
+<a id="create_route_response"></a>
+
 ### create_route_response
 
 Creates a RouteResponse for a Route.
@@ -427,6 +460,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRouteResponseResponseTypeDef](./type_defs.md#createrouteresponseresponsetypedef).
+
+<a id="create_stage"></a>
 
 ### create_stage
 
@@ -460,6 +495,8 @@ Keyword-only arguments:
 Returns
 [CreateStageResponseTypeDef](./type_defs.md#createstageresponsetypedef).
 
+<a id="create_vpc_link"></a>
+
 ### create_vpc_link
 
 Creates a VPC link.
@@ -482,6 +519,8 @@ Keyword-only arguments:
 Returns
 [CreateVpcLinkResponseTypeDef](./type_defs.md#createvpclinkresponsetypedef).
 
+<a id="delete_access_log_settings"></a>
+
 ### delete_access_log_settings
 
 Deletes the AccessLogSettings for a Stage.
@@ -500,6 +539,8 @@ Keyword-only arguments:
 - `ApiId`: `str` *(required)*
 - `StageName`: `str` *(required)*
 
+<a id="delete_api"></a>
+
 ### delete_api
 
 Deletes an Api resource.
@@ -515,6 +556,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
+
+<a id="delete_api_mapping"></a>
 
 ### delete_api_mapping
 
@@ -533,6 +576,8 @@ Keyword-only arguments:
 - `ApiMappingId`: `str` *(required)*
 - `DomainName`: `str` *(required)*
 
+<a id="delete_authorizer"></a>
+
 ### delete_authorizer
 
 Deletes an Authorizer.
@@ -549,6 +594,8 @@ Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `AuthorizerId`: `str` *(required)*
+
+<a id="delete_cors_configuration"></a>
 
 ### delete_cors_configuration
 
@@ -567,6 +614,8 @@ Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 
+<a id="delete_deployment"></a>
+
 ### delete_deployment
 
 Deletes a Deployment.
@@ -584,6 +633,8 @@ Keyword-only arguments:
 - `ApiId`: `str` *(required)*
 - `DeploymentId`: `str` *(required)*
 
+<a id="delete_domain_name"></a>
+
 ### delete_domain_name
 
 Deletes a domain name.
@@ -599,6 +650,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
+
+<a id="delete_integration"></a>
 
 ### delete_integration
 
@@ -616,6 +669,8 @@ Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `IntegrationId`: `str` *(required)*
+
+<a id="delete_integration_response"></a>
 
 ### delete_integration_response
 
@@ -636,6 +691,8 @@ Keyword-only arguments:
 - `IntegrationId`: `str` *(required)*
 - `IntegrationResponseId`: `str` *(required)*
 
+<a id="delete_model"></a>
+
 ### delete_model
 
 Deletes a Model.
@@ -653,6 +710,8 @@ Keyword-only arguments:
 - `ApiId`: `str` *(required)*
 - `ModelId`: `str` *(required)*
 
+<a id="delete_route"></a>
+
 ### delete_route
 
 Deletes a Route.
@@ -669,6 +728,8 @@ Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `RouteId`: `str` *(required)*
+
+<a id="delete_route_request_parameter"></a>
 
 ### delete_route_request_parameter
 
@@ -689,6 +750,8 @@ Keyword-only arguments:
 - `RequestParameterKey`: `str` *(required)*
 - `RouteId`: `str` *(required)*
 
+<a id="delete_route_response"></a>
+
 ### delete_route_response
 
 Deletes a RouteResponse.
@@ -707,6 +770,8 @@ Keyword-only arguments:
 - `ApiId`: `str` *(required)*
 - `RouteId`: `str` *(required)*
 - `RouteResponseId`: `str` *(required)*
+
+<a id="delete_route_settings"></a>
 
 ### delete_route_settings
 
@@ -727,6 +792,8 @@ Keyword-only arguments:
 - `RouteKey`: `str` *(required)*
 - `StageName`: `str` *(required)*
 
+<a id="delete_stage"></a>
+
 ### delete_stage
 
 Deletes a Stage.
@@ -743,6 +810,8 @@ Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `StageName`: `str` *(required)*
+
+<a id="delete_vpc_link"></a>
 
 ### delete_vpc_link
 
@@ -761,6 +830,8 @@ Keyword-only arguments:
 - `VpcLinkId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="export_api"></a>
 
 ### export_api
 
@@ -787,6 +858,8 @@ Keyword-only arguments:
 
 Returns [ExportApiResponseTypeDef](./type_defs.md#exportapiresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -806,6 +879,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_api"></a>
+
 ### get_api
 
 Gets an Api resource.
@@ -823,6 +898,8 @@ Keyword-only arguments:
 - `ApiId`: `str` *(required)*
 
 Returns [GetApiResponseTypeDef](./type_defs.md#getapiresponsetypedef).
+
+<a id="get_api_mapping"></a>
 
 ### get_api_mapping
 
@@ -843,6 +920,8 @@ Keyword-only arguments:
 
 Returns
 [GetApiMappingResponseTypeDef](./type_defs.md#getapimappingresponsetypedef).
+
+<a id="get_api_mappings"></a>
 
 ### get_api_mappings
 
@@ -865,6 +944,8 @@ Keyword-only arguments:
 Returns
 [GetApiMappingsResponseTypeDef](./type_defs.md#getapimappingsresponsetypedef).
 
+<a id="get_apis"></a>
+
 ### get_apis
 
 Gets a collection of Api resources.
@@ -883,6 +964,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [GetApisResponseTypeDef](./type_defs.md#getapisresponsetypedef).
+
+<a id="get_authorizer"></a>
 
 ### get_authorizer
 
@@ -903,6 +986,8 @@ Keyword-only arguments:
 
 Returns
 [GetAuthorizerResponseTypeDef](./type_defs.md#getauthorizerresponsetypedef).
+
+<a id="get_authorizers"></a>
 
 ### get_authorizers
 
@@ -925,6 +1010,8 @@ Keyword-only arguments:
 Returns
 [GetAuthorizersResponseTypeDef](./type_defs.md#getauthorizersresponsetypedef).
 
+<a id="get_deployment"></a>
+
 ### get_deployment
 
 Gets a Deployment.
@@ -944,6 +1031,8 @@ Keyword-only arguments:
 
 Returns
 [GetDeploymentResponseTypeDef](./type_defs.md#getdeploymentresponsetypedef).
+
+<a id="get_deployments"></a>
 
 ### get_deployments
 
@@ -966,6 +1055,8 @@ Keyword-only arguments:
 Returns
 [GetDeploymentsResponseTypeDef](./type_defs.md#getdeploymentsresponsetypedef).
 
+<a id="get_domain_name"></a>
+
 ### get_domain_name
 
 Gets a domain name.
@@ -984,6 +1075,8 @@ Keyword-only arguments:
 
 Returns
 [GetDomainNameResponseTypeDef](./type_defs.md#getdomainnameresponsetypedef).
+
+<a id="get_domain_names"></a>
 
 ### get_domain_names
 
@@ -1005,6 +1098,8 @@ Keyword-only arguments:
 Returns
 [GetDomainNamesResponseTypeDef](./type_defs.md#getdomainnamesresponsetypedef).
 
+<a id="get_integration"></a>
+
 ### get_integration
 
 Gets an Integration.
@@ -1024,6 +1119,8 @@ Keyword-only arguments:
 
 Returns
 [GetIntegrationResultTypeDef](./type_defs.md#getintegrationresulttypedef).
+
+<a id="get_integration_response"></a>
 
 ### get_integration_response
 
@@ -1046,6 +1143,8 @@ Keyword-only arguments:
 
 Returns
 [GetIntegrationResponseResponseTypeDef](./type_defs.md#getintegrationresponseresponsetypedef).
+
+<a id="get_integration_responses"></a>
 
 ### get_integration_responses
 
@@ -1070,6 +1169,8 @@ Keyword-only arguments:
 Returns
 [GetIntegrationResponsesResponseTypeDef](./type_defs.md#getintegrationresponsesresponsetypedef).
 
+<a id="get_integrations"></a>
+
 ### get_integrations
 
 Gets the Integrations for an API.
@@ -1091,6 +1192,8 @@ Keyword-only arguments:
 Returns
 [GetIntegrationsResponseTypeDef](./type_defs.md#getintegrationsresponsetypedef).
 
+<a id="get_model"></a>
+
 ### get_model
 
 Gets a Model.
@@ -1109,6 +1212,8 @@ Keyword-only arguments:
 - `ModelId`: `str` *(required)*
 
 Returns [GetModelResponseTypeDef](./type_defs.md#getmodelresponsetypedef).
+
+<a id="get_model_template"></a>
 
 ### get_model_template
 
@@ -1130,6 +1235,8 @@ Keyword-only arguments:
 Returns
 [GetModelTemplateResponseTypeDef](./type_defs.md#getmodeltemplateresponsetypedef).
 
+<a id="get_models"></a>
+
 ### get_models
 
 Gets the Models for an API.
@@ -1150,6 +1257,8 @@ Keyword-only arguments:
 
 Returns [GetModelsResponseTypeDef](./type_defs.md#getmodelsresponsetypedef).
 
+<a id="get_route"></a>
+
 ### get_route
 
 Gets a Route.
@@ -1168,6 +1277,8 @@ Keyword-only arguments:
 - `RouteId`: `str` *(required)*
 
 Returns [GetRouteResultTypeDef](./type_defs.md#getrouteresulttypedef).
+
+<a id="get_route_response"></a>
 
 ### get_route_response
 
@@ -1189,6 +1300,8 @@ Keyword-only arguments:
 
 Returns
 [GetRouteResponseResponseTypeDef](./type_defs.md#getrouteresponseresponsetypedef).
+
+<a id="get_route_responses"></a>
 
 ### get_route_responses
 
@@ -1212,6 +1325,8 @@ Keyword-only arguments:
 Returns
 [GetRouteResponsesResponseTypeDef](./type_defs.md#getrouteresponsesresponsetypedef).
 
+<a id="get_routes"></a>
+
 ### get_routes
 
 Gets the Routes for an API.
@@ -1232,6 +1347,8 @@ Keyword-only arguments:
 
 Returns [GetRoutesResponseTypeDef](./type_defs.md#getroutesresponsetypedef).
 
+<a id="get_stage"></a>
+
 ### get_stage
 
 Gets a Stage.
@@ -1250,6 +1367,8 @@ Keyword-only arguments:
 - `StageName`: `str` *(required)*
 
 Returns [GetStageResponseTypeDef](./type_defs.md#getstageresponsetypedef).
+
+<a id="get_stages"></a>
 
 ### get_stages
 
@@ -1271,6 +1390,8 @@ Keyword-only arguments:
 
 Returns [GetStagesResponseTypeDef](./type_defs.md#getstagesresponsetypedef).
 
+<a id="get_tags"></a>
+
 ### get_tags
 
 Gets a collection of Tag resources.
@@ -1289,6 +1410,8 @@ Keyword-only arguments:
 
 Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
 
+<a id="get_vpc_link"></a>
+
 ### get_vpc_link
 
 Gets a VPC link.
@@ -1306,6 +1429,8 @@ Keyword-only arguments:
 - `VpcLinkId`: `str` *(required)*
 
 Returns [GetVpcLinkResponseTypeDef](./type_defs.md#getvpclinkresponsetypedef).
+
+<a id="get_vpc_links"></a>
 
 ### get_vpc_links
 
@@ -1327,6 +1452,8 @@ Keyword-only arguments:
 Returns
 [GetVpcLinksResponseTypeDef](./type_defs.md#getvpclinksresponsetypedef).
 
+<a id="import_api"></a>
+
 ### import_api
 
 Imports an API.
@@ -1346,6 +1473,8 @@ Keyword-only arguments:
 - `FailOnWarnings`: `bool`
 
 Returns [ImportApiResponseTypeDef](./type_defs.md#importapiresponsetypedef).
+
+<a id="reimport_api"></a>
 
 ### reimport_api
 
@@ -1369,6 +1498,8 @@ Keyword-only arguments:
 Returns
 [ReimportApiResponseTypeDef](./type_defs.md#reimportapiresponsetypedef).
 
+<a id="reset_authorizers_cache"></a>
+
 ### reset_authorizers_cache
 
 Resets all authorizer cache entries on a stage.
@@ -1386,6 +1517,8 @@ Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `StageName`: `str` *(required)*
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -1406,6 +1539,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes a Tag.
@@ -1422,6 +1557,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_api"></a>
 
 ### update_api
 
@@ -1452,6 +1589,8 @@ Keyword-only arguments:
 
 Returns [UpdateApiResponseTypeDef](./type_defs.md#updateapiresponsetypedef).
 
+<a id="update_api_mapping"></a>
+
 ### update_api_mapping
 
 The API mapping.
@@ -1474,6 +1613,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateApiMappingResponseTypeDef](./type_defs.md#updateapimappingresponsetypedef).
+
+<a id="update_authorizer"></a>
 
 ### update_authorizer
 
@@ -1506,6 +1647,8 @@ Keyword-only arguments:
 Returns
 [UpdateAuthorizerResponseTypeDef](./type_defs.md#updateauthorizerresponsetypedef).
 
+<a id="update_deployment"></a>
+
 ### update_deployment
 
 Updates a Deployment.
@@ -1526,6 +1669,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDeploymentResponseTypeDef](./type_defs.md#updatedeploymentresponsetypedef).
+
+<a id="update_domain_name"></a>
 
 ### update_domain_name
 
@@ -1549,6 +1694,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDomainNameResponseTypeDef](./type_defs.md#updatedomainnameresponsetypedef).
+
+<a id="update_integration"></a>
 
 ### update_integration
 
@@ -1589,6 +1736,8 @@ Keyword-only arguments:
 Returns
 [UpdateIntegrationResultTypeDef](./type_defs.md#updateintegrationresulttypedef).
 
+<a id="update_integration_response"></a>
+
 ### update_integration_response
 
 Updates an IntegrationResponses.
@@ -1617,6 +1766,8 @@ Keyword-only arguments:
 Returns
 [UpdateIntegrationResponseResponseTypeDef](./type_defs.md#updateintegrationresponseresponsetypedef).
 
+<a id="update_model"></a>
+
 ### update_model
 
 Updates a Model.
@@ -1640,6 +1791,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateModelResponseTypeDef](./type_defs.md#updatemodelresponsetypedef).
+
+<a id="update_route"></a>
 
 ### update_route
 
@@ -1673,6 +1826,8 @@ Keyword-only arguments:
 
 Returns [UpdateRouteResultTypeDef](./type_defs.md#updaterouteresulttypedef).
 
+<a id="update_route_response"></a>
+
 ### update_route_response
 
 Updates a RouteResponse.
@@ -1699,6 +1854,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRouteResponseResponseTypeDef](./type_defs.md#updaterouteresponseresponsetypedef).
+
+<a id="update_stage"></a>
 
 ### update_stage
 
@@ -1731,6 +1888,8 @@ Keyword-only arguments:
 Returns
 [UpdateStageResponseTypeDef](./type_defs.md#updatestageresponsetypedef).
 
+<a id="update_vpc_link"></a>
+
 ### update_vpc_link
 
 Updates a VPC link.
@@ -1750,6 +1909,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVpcLinkResponseTypeDef](./type_defs.md#updatevpclinkresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

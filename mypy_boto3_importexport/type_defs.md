@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-importexport-module"></a>
+
 # Typed dictionaries for boto3 ImportExport module
 
 > [Index](..) > [ImportExport](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
 type annotations stubs module
-[mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
+[mypy-boto3-importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
 - [Typed dictionaries for boto3 ImportExport module](#typed-dictionaries-for-boto3-importexport-module)
   - [ArtifactTypeDef](#artifacttypedef)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [UpdateJobInputRequestTypeDef](#updatejobinputrequesttypedef)
   - [UpdateJobOutputTypeDef](#updatejoboutputtypedef)
 
+<a id="artifacttypedef"></a>
+
 ## ArtifactTypeDef
 
 ```python
@@ -35,6 +39,8 @@ Optional fields:
 
 - `Description`: `str`
 - `URL`: `str`
+
+<a id="canceljobinputrequesttypedef"></a>
 
 ## CancelJobInputRequestTypeDef
 
@@ -50,6 +56,8 @@ Optional fields:
 
 - `APIVersion`: `str`
 
+<a id="canceljoboutputtypedef"></a>
+
 ## CancelJobOutputTypeDef
 
 ```python
@@ -61,6 +69,8 @@ Required fields:
 - `Success`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createjobinputrequesttypedef"></a>
 
 ## CreateJobInputRequestTypeDef
 
@@ -79,6 +89,8 @@ Optional fields:
 - `ManifestAddendum`: `str`
 - `APIVersion`: `str`
 
+<a id="createjoboutputtypedef"></a>
+
 ## CreateJobOutputTypeDef
 
 ```python
@@ -95,6 +107,8 @@ Required fields:
 - `ArtifactList`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getshippinglabelinputrequesttypedef"></a>
 
 ## GetShippingLabelInputRequestTypeDef
 
@@ -120,6 +134,8 @@ Optional fields:
 - `street3`: `str`
 - `APIVersion`: `str`
 
+<a id="getshippinglabeloutputtypedef"></a>
+
 ## GetShippingLabelOutputTypeDef
 
 ```python
@@ -132,6 +148,8 @@ Required fields:
 - `Warning`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getstatusinputrequesttypedef"></a>
 
 ## GetStatusInputRequestTypeDef
 
@@ -146,6 +164,8 @@ Required fields:
 Optional fields:
 
 - `APIVersion`: `str`
+
+<a id="getstatusoutputtypedef"></a>
 
 ## GetStatusOutputTypeDef
 
@@ -174,6 +194,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="jobtypedef"></a>
+
 ## JobTypeDef
 
 ```python
@@ -187,6 +209,8 @@ Optional fields:
 - `IsCanceled`: `bool`
 - `JobType`: [JobTypeType](./literals.md#jobtypetype)
 
+<a id="listjobsinputrequesttypedef"></a>
+
 ## ListJobsInputRequestTypeDef
 
 ```python
@@ -198,6 +222,8 @@ Optional fields:
 - `MaxJobs`: `int`
 - `Marker`: `str`
 - `APIVersion`: `str`
+
+<a id="listjobsoutputtypedef"></a>
 
 ## ListJobsOutputTypeDef
 
@@ -212,6 +238,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -223,6 +251,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -237,6 +267,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="updatejobinputrequesttypedef"></a>
 
 ## UpdateJobInputRequestTypeDef
 
@@ -254,6 +286,8 @@ Required fields:
 Optional fields:
 
 - `APIVersion`: `str`
+
+<a id="updatejoboutputtypedef"></a>
 
 ## UpdateJobOutputTypeDef
 

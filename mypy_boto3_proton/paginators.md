@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-proton-module"></a>
+
 # Paginators for boto3 Proton module
 
 > [Index](..) > [Proton](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
 type annotations stubs module
-[mypy_boto3_proton](https://pypi.org/project/mypy-boto3-proton/).
+[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 - [Paginators for boto3 Proton module](#paginators-for-boto3-proton-module)
   - [ListEnvironmentAccountConnectionsPaginator](#listenvironmentaccountconnectionspaginator)
@@ -26,6 +28,8 @@ type annotations stubs module
   - [ListServicesPaginator](#listservicespaginator)
   - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
 
+<a id="listenvironmentaccountconnectionspaginator"></a>
+
 ## ListEnvironmentAccountConnectionsPaginator
 
 Type annotations for
@@ -34,10 +38,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListEnvironmentAccountConnectionsPaginator
 
 def get_list_environment_account_connections_paginator() -> ListEnvironmentAccountConnectionsPaginator:
-    return boto3.client("proton").get_paginator("list_environment_account_connections")
+    return Session().client("proton").get_paginator("list_environment_account_connections")
 ```
 
 Boto3 documentation:
@@ -57,6 +63,8 @@ Arguments for `ListEnvironmentAccountConnectionsPaginator.paginate` method:
 `ListEnvironmentAccountConnectionsPaginator.paginate` returns
 `_PageIterator`\[[ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef)\].
 
+<a id="listenvironmentoutputspaginator"></a>
+
 ## ListEnvironmentOutputsPaginator
 
 Type annotations for
@@ -65,10 +73,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListEnvironmentOutputsPaginator
 
 def get_list_environment_outputs_paginator() -> ListEnvironmentOutputsPaginator:
-    return boto3.client("proton").get_paginator("list_environment_outputs")
+    return Session().client("proton").get_paginator("list_environment_outputs")
 ```
 
 Boto3 documentation:
@@ -83,6 +93,8 @@ Arguments for `ListEnvironmentOutputsPaginator.paginate` method:
 `ListEnvironmentOutputsPaginator.paginate` returns
 `_PageIterator`\[[ListEnvironmentOutputsOutputTypeDef](./type_defs.md#listenvironmentoutputsoutputtypedef)\].
 
+<a id="listenvironmentprovisionedresourcespaginator"></a>
+
 ## ListEnvironmentProvisionedResourcesPaginator
 
 Type annotations for
@@ -91,10 +103,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListEnvironmentProvisionedResourcesPaginator
 
 def get_list_environment_provisioned_resources_paginator() -> ListEnvironmentProvisionedResourcesPaginator:
-    return boto3.client("proton").get_paginator("list_environment_provisioned_resources")
+    return Session().client("proton").get_paginator("list_environment_provisioned_resources")
 ```
 
 Boto3 documentation:
@@ -109,6 +123,8 @@ Arguments for `ListEnvironmentProvisionedResourcesPaginator.paginate` method:
 `ListEnvironmentProvisionedResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListEnvironmentProvisionedResourcesOutputTypeDef](./type_defs.md#listenvironmentprovisionedresourcesoutputtypedef)\].
 
+<a id="listenvironmenttemplateversionspaginator"></a>
+
 ## ListEnvironmentTemplateVersionsPaginator
 
 Type annotations for
@@ -117,10 +133,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListEnvironmentTemplateVersionsPaginator
 
 def get_list_environment_template_versions_paginator() -> ListEnvironmentTemplateVersionsPaginator:
-    return boto3.client("proton").get_paginator("list_environment_template_versions")
+    return Session().client("proton").get_paginator("list_environment_template_versions")
 ```
 
 Boto3 documentation:
@@ -136,6 +154,8 @@ Arguments for `ListEnvironmentTemplateVersionsPaginator.paginate` method:
 `ListEnvironmentTemplateVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListEnvironmentTemplateVersionsOutputTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputtypedef)\].
 
+<a id="listenvironmenttemplatespaginator"></a>
+
 ## ListEnvironmentTemplatesPaginator
 
 Type annotations for
@@ -144,10 +164,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListEnvironmentTemplatesPaginator
 
 def get_list_environment_templates_paginator() -> ListEnvironmentTemplatesPaginator:
-    return boto3.client("proton").get_paginator("list_environment_templates")
+    return Session().client("proton").get_paginator("list_environment_templates")
 ```
 
 Boto3 documentation:
@@ -161,6 +183,8 @@ Arguments for `ListEnvironmentTemplatesPaginator.paginate` method:
 `ListEnvironmentTemplatesPaginator.paginate` returns
 `_PageIterator`\[[ListEnvironmentTemplatesOutputTypeDef](./type_defs.md#listenvironmenttemplatesoutputtypedef)\].
 
+<a id="listenvironmentspaginator"></a>
+
 ## ListEnvironmentsPaginator
 
 Type annotations for
@@ -169,10 +193,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListEnvironmentsPaginator
 
 def get_list_environments_paginator() -> ListEnvironmentsPaginator:
-    return boto3.client("proton").get_paginator("list_environments")
+    return Session().client("proton").get_paginator("list_environments")
 ```
 
 Boto3 documentation:
@@ -188,6 +214,8 @@ Arguments for `ListEnvironmentsPaginator.paginate` method:
 `ListEnvironmentsPaginator.paginate` returns
 `_PageIterator`\[[ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef)\].
 
+<a id="listrepositoriespaginator"></a>
+
 ## ListRepositoriesPaginator
 
 Type annotations for
@@ -196,10 +224,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListRepositoriesPaginator
 
 def get_list_repositories_paginator() -> ListRepositoriesPaginator:
-    return boto3.client("proton").get_paginator("list_repositories")
+    return Session().client("proton").get_paginator("list_repositories")
 ```
 
 Boto3 documentation:
@@ -213,6 +243,8 @@ Arguments for `ListRepositoriesPaginator.paginate` method:
 `ListRepositoriesPaginator.paginate` returns
 `_PageIterator`\[[ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef)\].
 
+<a id="listrepositorysyncdefinitionspaginator"></a>
+
 ## ListRepositorySyncDefinitionsPaginator
 
 Type annotations for
@@ -221,10 +253,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListRepositorySyncDefinitionsPaginator
 
 def get_list_repository_sync_definitions_paginator() -> ListRepositorySyncDefinitionsPaginator:
-    return boto3.client("proton").get_paginator("list_repository_sync_definitions")
+    return Session().client("proton").get_paginator("list_repository_sync_definitions")
 ```
 
 Boto3 documentation:
@@ -243,6 +277,8 @@ Arguments for `ListRepositorySyncDefinitionsPaginator.paginate` method:
 `ListRepositorySyncDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListRepositorySyncDefinitionsOutputTypeDef](./type_defs.md#listrepositorysyncdefinitionsoutputtypedef)\].
 
+<a id="listserviceinstanceoutputspaginator"></a>
+
 ## ListServiceInstanceOutputsPaginator
 
 Type annotations for
@@ -251,10 +287,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListServiceInstanceOutputsPaginator
 
 def get_list_service_instance_outputs_paginator() -> ListServiceInstanceOutputsPaginator:
-    return boto3.client("proton").get_paginator("list_service_instance_outputs")
+    return Session().client("proton").get_paginator("list_service_instance_outputs")
 ```
 
 Boto3 documentation:
@@ -270,6 +308,8 @@ Arguments for `ListServiceInstanceOutputsPaginator.paginate` method:
 `ListServiceInstanceOutputsPaginator.paginate` returns
 `_PageIterator`\[[ListServiceInstanceOutputsOutputTypeDef](./type_defs.md#listserviceinstanceoutputsoutputtypedef)\].
 
+<a id="listserviceinstanceprovisionedresourcespaginator"></a>
+
 ## ListServiceInstanceProvisionedResourcesPaginator
 
 Type annotations for
@@ -278,10 +318,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListServiceInstanceProvisionedResourcesPaginator
 
 def get_list_service_instance_provisioned_resources_paginator() -> ListServiceInstanceProvisionedResourcesPaginator:
-    return boto3.client("proton").get_paginator("list_service_instance_provisioned_resources")
+    return Session().client("proton").get_paginator("list_service_instance_provisioned_resources")
 ```
 
 Boto3 documentation:
@@ -298,6 +340,8 @@ method:
 `ListServiceInstanceProvisionedResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListServiceInstanceProvisionedResourcesOutputTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesoutputtypedef)\].
 
+<a id="listserviceinstancespaginator"></a>
+
 ## ListServiceInstancesPaginator
 
 Type annotations for
@@ -306,10 +350,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListServiceInstancesPaginator
 
 def get_list_service_instances_paginator() -> ListServiceInstancesPaginator:
-    return boto3.client("proton").get_paginator("list_service_instances")
+    return Session().client("proton").get_paginator("list_service_instances")
 ```
 
 Boto3 documentation:
@@ -324,6 +370,8 @@ Arguments for `ListServiceInstancesPaginator.paginate` method:
 `ListServiceInstancesPaginator.paginate` returns
 `_PageIterator`\[[ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef)\].
 
+<a id="listservicepipelineoutputspaginator"></a>
+
 ## ListServicePipelineOutputsPaginator
 
 Type annotations for
@@ -332,10 +380,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListServicePipelineOutputsPaginator
 
 def get_list_service_pipeline_outputs_paginator() -> ListServicePipelineOutputsPaginator:
-    return boto3.client("proton").get_paginator("list_service_pipeline_outputs")
+    return Session().client("proton").get_paginator("list_service_pipeline_outputs")
 ```
 
 Boto3 documentation:
@@ -350,6 +400,8 @@ Arguments for `ListServicePipelineOutputsPaginator.paginate` method:
 `ListServicePipelineOutputsPaginator.paginate` returns
 `_PageIterator`\[[ListServicePipelineOutputsOutputTypeDef](./type_defs.md#listservicepipelineoutputsoutputtypedef)\].
 
+<a id="listservicepipelineprovisionedresourcespaginator"></a>
+
 ## ListServicePipelineProvisionedResourcesPaginator
 
 Type annotations for
@@ -358,10 +410,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListServicePipelineProvisionedResourcesPaginator
 
 def get_list_service_pipeline_provisioned_resources_paginator() -> ListServicePipelineProvisionedResourcesPaginator:
-    return boto3.client("proton").get_paginator("list_service_pipeline_provisioned_resources")
+    return Session().client("proton").get_paginator("list_service_pipeline_provisioned_resources")
 ```
 
 Boto3 documentation:
@@ -377,6 +431,8 @@ method:
 `ListServicePipelineProvisionedResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListServicePipelineProvisionedResourcesOutputTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesoutputtypedef)\].
 
+<a id="listservicetemplateversionspaginator"></a>
+
 ## ListServiceTemplateVersionsPaginator
 
 Type annotations for
@@ -385,10 +441,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListServiceTemplateVersionsPaginator
 
 def get_list_service_template_versions_paginator() -> ListServiceTemplateVersionsPaginator:
-    return boto3.client("proton").get_paginator("list_service_template_versions")
+    return Session().client("proton").get_paginator("list_service_template_versions")
 ```
 
 Boto3 documentation:
@@ -404,6 +462,8 @@ Arguments for `ListServiceTemplateVersionsPaginator.paginate` method:
 `ListServiceTemplateVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListServiceTemplateVersionsOutputTypeDef](./type_defs.md#listservicetemplateversionsoutputtypedef)\].
 
+<a id="listservicetemplatespaginator"></a>
+
 ## ListServiceTemplatesPaginator
 
 Type annotations for
@@ -412,10 +472,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListServiceTemplatesPaginator
 
 def get_list_service_templates_paginator() -> ListServiceTemplatesPaginator:
-    return boto3.client("proton").get_paginator("list_service_templates")
+    return Session().client("proton").get_paginator("list_service_templates")
 ```
 
 Boto3 documentation:
@@ -429,6 +491,8 @@ Arguments for `ListServiceTemplatesPaginator.paginate` method:
 `ListServiceTemplatesPaginator.paginate` returns
 `_PageIterator`\[[ListServiceTemplatesOutputTypeDef](./type_defs.md#listservicetemplatesoutputtypedef)\].
 
+<a id="listservicespaginator"></a>
+
 ## ListServicesPaginator
 
 Type annotations for `boto3.client("proton").get_paginator("list_services")`.
@@ -436,10 +500,12 @@ Type annotations for `boto3.client("proton").get_paginator("list_services")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListServicesPaginator
 
 def get_list_services_paginator() -> ListServicesPaginator:
-    return boto3.client("proton").get_paginator("list_services")
+    return Session().client("proton").get_paginator("list_services")
 ```
 
 Boto3 documentation:
@@ -453,6 +519,8 @@ Arguments for `ListServicesPaginator.paginate` method:
 `ListServicesPaginator.paginate` returns
 `_PageIterator`\[[ListServicesOutputTypeDef](./type_defs.md#listservicesoutputtypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -461,10 +529,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("proton").get_paginator("list_tags_for_resource")
+    return Session().client("proton").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:

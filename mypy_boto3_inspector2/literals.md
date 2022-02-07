@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-inspector2-module"></a>
+
 # Literals for boto3 Inspector2 module
 
 > [Index](..) > [Inspector2](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
 type annotations stubs module
-[mypy_boto3_inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
+[mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
 
 - [Literals for boto3 Inspector2 module](#literals-for-boto3-inspector2-module)
   - [AccountSortByType](#accountsortbytype)
@@ -67,6 +69,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="accountsortbytype"></a>
+
 ## AccountSortByType
 
 ```python
@@ -79,6 +83,8 @@ Values:
 - `CRITICAL`
 - `HIGH`
 
+<a id="aggregationfindingtypetype"></a>
+
 ## AggregationFindingTypeType
 
 ```python
@@ -90,6 +96,8 @@ Values:
 - `NETWORK_REACHABILITY`
 - `PACKAGE_VULNERABILITY`
 
+<a id="aggregationresourcetypetype"></a>
+
 ## AggregationResourceTypeType
 
 ```python
@@ -100,6 +108,8 @@ Values:
 
 - `AWS_EC2_INSTANCE`
 - `AWS_ECR_CONTAINER_IMAGE`
+
+<a id="aggregationtypetype"></a>
 
 ## AggregationTypeType
 
@@ -119,6 +129,8 @@ Values:
 - `REPOSITORY`
 - `TITLE`
 
+<a id="amisortbytype"></a>
+
 ## AmiSortByType
 
 ```python
@@ -132,6 +144,8 @@ Values:
 - `CRITICAL`
 - `HIGH`
 
+<a id="awsecrcontainersortbytype"></a>
+
 ## AwsEcrContainerSortByType
 
 ```python
@@ -144,6 +158,8 @@ Values:
 - `CRITICAL`
 - `HIGH`
 
+<a id="coveragemapcomparisontype"></a>
+
 ## CoverageMapComparisonType
 
 ```python
@@ -153,6 +169,8 @@ from mypy_boto3_inspector2.literals import CoverageMapComparisonType
 Values:
 
 - `EQUALS`
+
+<a id="coverageresourcetypetype"></a>
 
 ## CoverageResourceTypeType
 
@@ -166,6 +184,8 @@ Values:
 - `AWS_ECR_CONTAINER_IMAGE`
 - `AWS_ECR_REPOSITORY`
 
+<a id="coveragestringcomparisontype"></a>
+
 ## CoverageStringComparisonType
 
 ```python
@@ -177,6 +197,8 @@ Values:
 - `EQUALS`
 - `NOT_EQUALS`
 
+<a id="currencytype"></a>
+
 ## CurrencyType
 
 ```python
@@ -186,6 +208,8 @@ from mypy_boto3_inspector2.literals import CurrencyType
 Values:
 
 - `USD`
+
+<a id="delegatedadminstatustype"></a>
 
 ## DelegatedAdminStatusType
 
@@ -197,6 +221,8 @@ Values:
 
 - `DISABLE_IN_PROGRESS`
 - `ENABLED`
+
+<a id="ec2instancesortbytype"></a>
 
 ## Ec2InstanceSortByType
 
@@ -211,6 +237,8 @@ Values:
 - `HIGH`
 - `NETWORK_FINDINGS`
 
+<a id="ec2platformtype"></a>
+
 ## Ec2PlatformType
 
 ```python
@@ -223,6 +251,8 @@ Values:
 - `UNKNOWN`
 - `WINDOWS`
 
+<a id="ecrscanfrequencytype"></a>
+
 ## EcrScanFrequencyType
 
 ```python
@@ -234,6 +264,8 @@ Values:
 - `CONTINUOUS_SCAN`
 - `MANUAL`
 - `SCAN_ON_PUSH`
+
+<a id="errorcodetype"></a>
 
 ## ErrorCodeType
 
@@ -257,6 +289,8 @@ Values:
 - `SSM_UNAVAILABLE`
 - `SUSPEND_IN_PROGRESS`
 
+<a id="externalreportstatustype"></a>
+
 ## ExternalReportStatusType
 
 ```python
@@ -270,6 +304,8 @@ Values:
 - `IN_PROGRESS`
 - `SUCCEEDED`
 
+<a id="filteractiontype"></a>
+
 ## FilterActionType
 
 ```python
@@ -280,6 +316,8 @@ Values:
 
 - `NONE`
 - `SUPPRESS`
+
+<a id="findingstatustype"></a>
 
 ## FindingStatusType
 
@@ -293,6 +331,8 @@ Values:
 - `CLOSED`
 - `SUPPRESSED`
 
+<a id="findingtypesortbytype"></a>
+
 ## FindingTypeSortByType
 
 ```python
@@ -305,6 +345,8 @@ Values:
 - `CRITICAL`
 - `HIGH`
 
+<a id="findingtypetype"></a>
+
 ## FindingTypeType
 
 ```python
@@ -315,6 +357,8 @@ Values:
 
 - `NETWORK_REACHABILITY`
 - `PACKAGE_VULNERABILITY`
+
+<a id="freetrialinfoerrorcodetype"></a>
 
 ## FreeTrialInfoErrorCodeType
 
@@ -327,6 +371,8 @@ Values:
 - `ACCESS_DENIED`
 - `INTERNAL_ERROR`
 
+<a id="freetrialstatustype"></a>
+
 ## FreeTrialStatusType
 
 ```python
@@ -338,6 +384,8 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
+<a id="freetrialtypetype"></a>
+
 ## FreeTrialTypeType
 
 ```python
@@ -348,6 +396,8 @@ Values:
 
 - `EC2`
 - `ECR`
+
+<a id="groupkeytype"></a>
 
 ## GroupKeyType
 
@@ -363,6 +413,8 @@ Values:
 - `SCAN_STATUS_CODE`
 - `SCAN_STATUS_REASON`
 
+<a id="imagelayersortbytype"></a>
+
 ## ImageLayerSortByType
 
 ```python
@@ -375,6 +427,8 @@ Values:
 - `CRITICAL`
 - `HIGH`
 
+<a id="listaccountpermissionspaginatorname"></a>
+
 ## ListAccountPermissionsPaginatorName
 
 ```python
@@ -384,6 +438,8 @@ from mypy_boto3_inspector2.literals import ListAccountPermissionsPaginatorName
 Values:
 
 - `list_account_permissions`
+
+<a id="listcoveragepaginatorname"></a>
 
 ## ListCoveragePaginatorName
 
@@ -395,6 +451,8 @@ Values:
 
 - `list_coverage`
 
+<a id="listcoveragestatisticspaginatorname"></a>
+
 ## ListCoverageStatisticsPaginatorName
 
 ```python
@@ -404,6 +462,8 @@ from mypy_boto3_inspector2.literals import ListCoverageStatisticsPaginatorName
 Values:
 
 - `list_coverage_statistics`
+
+<a id="listdelegatedadminaccountspaginatorname"></a>
 
 ## ListDelegatedAdminAccountsPaginatorName
 
@@ -415,6 +475,8 @@ Values:
 
 - `list_delegated_admin_accounts`
 
+<a id="listfilterspaginatorname"></a>
+
 ## ListFiltersPaginatorName
 
 ```python
@@ -424,6 +486,8 @@ from mypy_boto3_inspector2.literals import ListFiltersPaginatorName
 Values:
 
 - `list_filters`
+
+<a id="listfindingaggregationspaginatorname"></a>
 
 ## ListFindingAggregationsPaginatorName
 
@@ -435,6 +499,8 @@ Values:
 
 - `list_finding_aggregations`
 
+<a id="listfindingspaginatorname"></a>
+
 ## ListFindingsPaginatorName
 
 ```python
@@ -444,6 +510,8 @@ from mypy_boto3_inspector2.literals import ListFindingsPaginatorName
 Values:
 
 - `list_findings`
+
+<a id="listmemberspaginatorname"></a>
 
 ## ListMembersPaginatorName
 
@@ -455,6 +523,8 @@ Values:
 
 - `list_members`
 
+<a id="listusagetotalspaginatorname"></a>
+
 ## ListUsageTotalsPaginatorName
 
 ```python
@@ -464,6 +534,8 @@ from mypy_boto3_inspector2.literals import ListUsageTotalsPaginatorName
 Values:
 
 - `list_usage_totals`
+
+<a id="mapcomparisontype"></a>
 
 ## MapComparisonType
 
@@ -475,6 +547,8 @@ Values:
 
 - `EQUALS`
 
+<a id="networkprotocoltype"></a>
+
 ## NetworkProtocolType
 
 ```python
@@ -485,6 +559,8 @@ Values:
 
 - `TCP`
 - `UDP`
+
+<a id="operationtype"></a>
 
 ## OperationType
 
@@ -498,6 +574,8 @@ Values:
 - `DISABLE_SCANNING`
 - `ENABLE_REPOSITORY`
 - `ENABLE_SCANNING`
+
+<a id="packagemanagertype"></a>
 
 ## PackageManagerType
 
@@ -520,6 +598,8 @@ Values:
 - `POETRY`
 - `YARN`
 
+<a id="packagesortbytype"></a>
+
 ## PackageSortByType
 
 ```python
@@ -531,6 +611,8 @@ Values:
 - `ALL`
 - `CRITICAL`
 - `HIGH`
+
+<a id="relationshipstatustype"></a>
 
 ## RelationshipStatusType
 
@@ -553,6 +635,8 @@ Values:
 - `REMOVED`
 - `RESIGNED`
 
+<a id="reportformattype"></a>
+
 ## ReportFormatType
 
 ```python
@@ -564,6 +648,8 @@ Values:
 - `CSV`
 - `JSON`
 
+<a id="reportingerrorcodetype"></a>
+
 ## ReportingErrorCodeType
 
 ```python
@@ -574,6 +660,8 @@ Values:
 
 - `INTERNAL_ERROR`
 - `INVALID_PERMISSIONS`
+
+<a id="repositorysortbytype"></a>
 
 ## RepositorySortByType
 
@@ -588,6 +676,8 @@ Values:
 - `CRITICAL`
 - `HIGH`
 
+<a id="resourcescantypetype"></a>
+
 ## ResourceScanTypeType
 
 ```python
@@ -598,6 +688,8 @@ Values:
 
 - `EC2`
 - `ECR`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -611,6 +703,8 @@ Values:
 - `AWS_ECR_CONTAINER_IMAGE`
 - `AWS_ECR_REPOSITORY`
 
+<a id="scanstatuscodetype"></a>
+
 ## ScanStatusCodeType
 
 ```python
@@ -621,6 +715,8 @@ Values:
 
 - `ACTIVE`
 - `INACTIVE`
+
+<a id="scanstatusreasontype"></a>
 
 ## ScanStatusReasonType
 
@@ -644,6 +740,8 @@ Values:
 - `UNMANAGED_EC2_INSTANCE`
 - `UNSUPPORTED_OS`
 
+<a id="scantypetype"></a>
+
 ## ScanTypeType
 
 ```python
@@ -655,6 +753,8 @@ Values:
 - `NETWORK`
 - `PACKAGE`
 
+<a id="servicetype"></a>
+
 ## ServiceType
 
 ```python
@@ -665,6 +765,8 @@ Values:
 
 - `EC2`
 - `ECR`
+
+<a id="severitytype"></a>
 
 ## SeverityType
 
@@ -680,6 +782,8 @@ Values:
 - `LOW`
 - `MEDIUM`
 - `UNTRIAGED`
+
+<a id="sortfieldtype"></a>
 
 ## SortFieldType
 
@@ -706,6 +810,8 @@ Values:
 - `VULNERABILITY_ID`
 - `VULNERABILITY_SOURCE`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -716,6 +822,8 @@ Values:
 
 - `ASC`
 - `DESC`
+
+<a id="statustype"></a>
 
 ## StatusType
 
@@ -732,6 +840,8 @@ Values:
 - `SUSPENDED`
 - `SUSPENDING`
 
+<a id="stringcomparisontype"></a>
+
 ## StringComparisonType
 
 ```python
@@ -743,6 +853,8 @@ Values:
 - `EQUALS`
 - `NOT_EQUALS`
 - `PREFIX`
+
+<a id="titlesortbytype"></a>
 
 ## TitleSortByType
 
@@ -756,6 +868,8 @@ Values:
 - `CRITICAL`
 - `HIGH`
 
+<a id="usagetypetype"></a>
+
 ## UsageTypeType
 
 ```python
@@ -767,6 +881,8 @@ Values:
 - `EC2_INSTANCE_HOURS`
 - `ECR_INITIAL_SCAN`
 - `ECR_RESCAN`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1075,6 +1191,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

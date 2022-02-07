@@ -1,3 +1,5 @@
+<a id="braketclient-for-boto3-braket-module"></a>
+
 # BraketClient for boto3 Braket module
 
 > [Index](..) > [Braket](.) > BraketClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
 type annotations stubs module
-[mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
+[mypy-boto3-braket](https://pypi.org/project/mypy-boto3-braket/).
 
 - [BraketClient for boto3 Braket module](#braketclient-for-boto3-braket-module)
   - [BraketClient](#braketclient)
@@ -29,6 +31,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="braketclient"></a>
+
 ## BraketClient
 
 Type annotations for `boto3.client("braket")`
@@ -36,14 +40,17 @@ Type annotations for `boto3.client("braket")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_braket.client import BraketClient
 
 def get_braket_client() -> BraketClient:
-    return boto3.client("braket")
+    return Session().client("braket")
 ```
 
 Boto3 documentation:
 [Braket.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -70,7 +77,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -82,6 +93,8 @@ Boto3 documentation:
 [Braket.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -97,6 +110,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_job"></a>
 
 ### cancel_job
 
@@ -115,6 +130,8 @@ Keyword-only arguments:
 - `jobArn`: `str` *(required)*
 
 Returns [CancelJobResponseTypeDef](./type_defs.md#canceljobresponsetypedef).
+
+<a id="cancel_quantum_task"></a>
 
 ### cancel_quantum_task
 
@@ -135,6 +152,8 @@ Keyword-only arguments:
 
 Returns
 [CancelQuantumTaskResponseTypeDef](./type_defs.md#cancelquantumtaskresponsetypedef).
+
+<a id="create_job"></a>
 
 ### create_job
 
@@ -174,6 +193,8 @@ Keyword-only arguments:
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
+<a id="create_quantum_task"></a>
+
 ### create_quantum_task
 
 Creates a quantum task.
@@ -201,6 +222,8 @@ Keyword-only arguments:
 Returns
 [CreateQuantumTaskResponseTypeDef](./type_defs.md#createquantumtaskresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -218,6 +241,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_device"></a>
 
 ### get_device
 
@@ -237,6 +262,8 @@ Keyword-only arguments:
 
 Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 
+<a id="get_job"></a>
+
 ### get_job
 
 Retrieves the specified Amazon Braket job.
@@ -254,6 +281,8 @@ Keyword-only arguments:
 - `jobArn`: `str` *(required)*
 
 Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
+
+<a id="get_quantum_task"></a>
 
 ### get_quantum_task
 
@@ -274,6 +303,8 @@ Keyword-only arguments:
 Returns
 [GetQuantumTaskResponseTypeDef](./type_defs.md#getquantumtaskresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Shows the tags associated with this resource.
@@ -292,6 +323,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="search_devices"></a>
 
 ### search_devices
 
@@ -316,6 +349,8 @@ Keyword-only arguments:
 Returns
 [SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef).
 
+<a id="search_jobs"></a>
+
 ### search_jobs
 
 Searches for Amazon Braket jobs that match the specified filter values.
@@ -337,6 +372,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [SearchJobsResponseTypeDef](./type_defs.md#searchjobsresponsetypedef).
+
+<a id="search_quantum_tasks"></a>
 
 ### search_quantum_tasks
 
@@ -361,6 +398,8 @@ Keyword-only arguments:
 Returns
 [SearchQuantumTasksResponseTypeDef](./type_defs.md#searchquantumtasksresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Add a tag to the specified resource.
@@ -380,6 +419,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Remove tags from a resource.
@@ -398,6 +439,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

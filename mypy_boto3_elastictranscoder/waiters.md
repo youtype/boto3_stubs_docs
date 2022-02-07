@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-elastictranscoder-module"></a>
+
 # Waiters for boto3 ElasticTranscoder module
 
 > [Index](..) > [ElasticTranscoder](.) > Waiters
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module
-[mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+[mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 - [Waiters for boto3 ElasticTranscoder module](#waiters-for-boto3-elastictranscoder-module)
   - [JobCompleteWaiter](#jobcompletewaiter)
+
+<a id="jobcompletewaiter"></a>
 
 ## JobCompleteWaiter
 
@@ -18,10 +22,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elastictranscoder.waiter import JobCompleteWaiter
 
 def get_job_complete_waiter() -> JobCompleteWaiter:
-    return boto3.client("elastictranscoder").get_waiter("job_complete")
+    return Session().client("elastictranscoder").get_waiter("job_complete")
 ```
 
 Boto3 documentation:

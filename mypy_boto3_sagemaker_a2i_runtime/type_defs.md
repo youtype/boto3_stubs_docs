@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-augmentedairuntime-module"></a>
+
 # Typed dictionaries for boto3 AugmentedAIRuntime module
 
 > [Index](..) > [AugmentedAIRuntime](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
 type annotations stubs module
-[mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
+[mypy-boto3-sagemaker-a2i-runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
 - [Typed dictionaries for boto3 AugmentedAIRuntime module](#typed-dictionaries-for-boto3-augmentedairuntime-module)
   - [DeleteHumanLoopRequestRequestTypeDef](#deletehumanlooprequestrequesttypedef)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [StartHumanLoopResponseTypeDef](#starthumanloopresponsetypedef)
   - [StopHumanLoopRequestRequestTypeDef](#stophumanlooprequestrequesttypedef)
 
+<a id="deletehumanlooprequestrequesttypedef"></a>
+
 ## DeleteHumanLoopRequestRequestTypeDef
 
 ```python
@@ -33,6 +37,8 @@ Required fields:
 
 - `HumanLoopName`: `str`
 
+<a id="describehumanlooprequestrequesttypedef"></a>
+
 ## DescribeHumanLoopRequestRequestTypeDef
 
 ```python
@@ -42,6 +48,8 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import DescribeHumanLoopRequestR
 Required fields:
 
 - `HumanLoopName`: `str`
+
+<a id="describehumanloopresponsetypedef"></a>
 
 ## DescribeHumanLoopResponseTypeDef
 
@@ -63,6 +71,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="humanloopdataattributestypedef"></a>
+
 ## HumanLoopDataAttributesTypeDef
 
 ```python
@@ -74,6 +84,8 @@ Required fields:
 - `ContentClassifiers`:
   `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
 
+<a id="humanloopinputtypedef"></a>
+
 ## HumanLoopInputTypeDef
 
 ```python
@@ -84,6 +96,8 @@ Required fields:
 
 - `InputContent`: `str`
 
+<a id="humanloopoutputtypedef"></a>
+
 ## HumanLoopOutputTypeDef
 
 ```python
@@ -93,6 +107,8 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopOutputTypeDef
 Required fields:
 
 - `OutputS3Uri`: `str`
+
+<a id="humanloopsummarytypedef"></a>
 
 ## HumanLoopSummaryTypeDef
 
@@ -107,6 +123,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `FailureReason`: `str`
 - `FlowDefinitionArn`: `str`
+
+<a id="listhumanloopsrequestrequesttypedef"></a>
 
 ## ListHumanLoopsRequestRequestTypeDef
 
@@ -126,6 +144,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listhumanloopsresponsetypedef"></a>
+
 ## ListHumanLoopsResponseTypeDef
 
 ```python
@@ -140,6 +160,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -151,6 +173,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -165,6 +189,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="starthumanlooprequestrequesttypedef"></a>
 
 ## StartHumanLoopRequestRequestTypeDef
 
@@ -184,6 +210,8 @@ Optional fields:
 - `DataAttributes`:
   [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
 
+<a id="starthumanloopresponsetypedef"></a>
+
 ## StartHumanLoopResponseTypeDef
 
 ```python
@@ -195,6 +223,8 @@ Required fields:
 - `HumanLoopArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="stophumanlooprequestrequesttypedef"></a>
 
 ## StopHumanLoopRequestRequestTypeDef
 

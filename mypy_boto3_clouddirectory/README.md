@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-clouddirectory-module"></a>
+
 # Type annotations for boto3 CloudDirectory module
 
 > [Index](..) > CloudDirectory
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
 type annotations stubs module
-[mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
+[mypy-boto3-clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[clouddirectory]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[clouddirectory]'
+
+# standalone installation
 pip install mypy-boto3-clouddirectory
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-clouddirectory
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="clouddirectoryclient"></a>
+
 ## CloudDirectoryClient
 
 Type annotations for `boto3.client("clouddirectory")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_clouddirectory.client import CloudDirectoryClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -103,6 +117,8 @@ from mypy_boto3_clouddirectory.client import CloudDirectoryClient
 - [upgrade_applied_schema](./client.md#upgrade_applied_schema)
 - [upgrade_published_schema](./client.md#upgrade_published_schema)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CloudDirectoryClient [exceptions](./client.md#exceptions)
@@ -144,6 +160,8 @@ CloudDirectoryClient [exceptions](./client.md#exceptions)
 - UnsupportedIndexTypeException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -152,7 +170,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_clouddirectory.paginators import ListAppliedSchemaArnsPaginator, ...
+from mypy_boto3_clouddirectory.paginator import ListAppliedSchemaArnsPaginator, ...
 ```
 
 - [ListAppliedSchemaArnsPaginator](./paginators.md#listappliedschemaarnspaginator)
@@ -174,6 +192,8 @@ from mypy_boto3_clouddirectory.paginators import ListAppliedSchemaArnsPaginator,
 - [ListTypedLinkFacetAttributesPaginator](./paginators.md#listtypedlinkfacetattributespaginator)
 - [ListTypedLinkFacetNamesPaginator](./paginators.md#listtypedlinkfacetnamespaginator)
 - [LookupPolicyPaginator](./paginators.md#lookuppolicypaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -216,6 +236,8 @@ from mypy_boto3_clouddirectory.literals import BatchReadExceptionTypeType, ...
 - [UpdateActionTypeType](./literals.md#updateactiontypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

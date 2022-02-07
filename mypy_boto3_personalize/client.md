@@ -1,3 +1,5 @@
+<a id="personalizeclient-for-boto3-personalize-module"></a>
+
 # PersonalizeClient for boto3 Personalize module
 
 > [Index](..) > [Personalize](.) > PersonalizeClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
 type annotations stubs module
-[mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
+[mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 - [PersonalizeClient for boto3 Personalize module](#personalizeclient-for-boto3-personalize-module)
   - [PersonalizeClient](#personalizeclient)
@@ -71,6 +73,8 @@ type annotations stubs module
     - [update_recommender](#update_recommender)
     - [get_paginator](#get_paginator)
 
+<a id="personalizeclient"></a>
+
 ## PersonalizeClient
 
 Type annotations for `boto3.client("personalize")`
@@ -78,14 +82,17 @@ Type annotations for `boto3.client("personalize")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_personalize.client import PersonalizeClient
 
 def get_personalize_client() -> PersonalizeClient:
-    return boto3.client("personalize")
+    return Session().client("personalize")
 ```
 
 Boto3 documentation:
 [Personalize.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -109,7 +116,11 @@ Exceptions:
 - `Exceptions.ResourceInUseException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -121,6 +132,8 @@ Boto3 documentation:
 [Personalize.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -136,6 +149,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_batch_inference_job"></a>
 
 ### create_batch_inference_job
 
@@ -169,6 +184,8 @@ Keyword-only arguments:
 Returns
 [CreateBatchInferenceJobResponseTypeDef](./type_defs.md#createbatchinferencejobresponsetypedef).
 
+<a id="create_batch_segment_job"></a>
+
 ### create_batch_segment_job
 
 Creates a batch segment job.
@@ -199,6 +216,8 @@ Keyword-only arguments:
 Returns
 [CreateBatchSegmentJobResponseTypeDef](./type_defs.md#createbatchsegmentjobresponsetypedef).
 
+<a id="create_campaign"></a>
+
 ### create_campaign
 
 Creates a campaign that deploys a solution version.
@@ -222,6 +241,8 @@ Keyword-only arguments:
 Returns
 [CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef).
 
+<a id="create_dataset"></a>
+
 ### create_dataset
 
 Creates an empty dataset and adds it to the specified dataset group.
@@ -243,6 +264,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+
+<a id="create_dataset_export_job"></a>
 
 ### create_dataset_export_job
 
@@ -270,6 +293,8 @@ Keyword-only arguments:
 Returns
 [CreateDatasetExportJobResponseTypeDef](./type_defs.md#createdatasetexportjobresponsetypedef).
 
+<a id="create_dataset_group"></a>
+
 ### create_dataset_group
 
 Creates an empty dataset group.
@@ -291,6 +316,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef).
+
+<a id="create_dataset_import_job"></a>
 
 ### create_dataset_import_job
 
@@ -317,6 +344,8 @@ Keyword-only arguments:
 Returns
 [CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef).
 
+<a id="create_event_tracker"></a>
+
 ### create_event_tracker
 
 Creates an event tracker that you use when adding event data to a specified
@@ -340,6 +369,8 @@ Keyword-only arguments:
 Returns
 [CreateEventTrackerResponseTypeDef](./type_defs.md#createeventtrackerresponsetypedef).
 
+<a id="create_filter"></a>
+
 ### create_filter
 
 Creates a recommendation filter.
@@ -360,6 +391,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
+
+<a id="create_recommender"></a>
 
 ### create_recommender
 
@@ -385,6 +418,8 @@ Keyword-only arguments:
 Returns
 [CreateRecommenderResponseTypeDef](./type_defs.md#createrecommenderresponsetypedef).
 
+<a id="create_schema"></a>
+
 ### create_schema
 
 Creates an Amazon Personalize schema from the specified schema string.
@@ -405,6 +440,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
+
+<a id="create_solution"></a>
 
 ### create_solution
 
@@ -432,6 +469,8 @@ Keyword-only arguments:
 Returns
 [CreateSolutionResponseTypeDef](./type_defs.md#createsolutionresponsetypedef).
 
+<a id="create_solution_version"></a>
+
 ### create_solution_version
 
 Trains or retrains an active solution in a Custom dataset group.
@@ -453,6 +492,8 @@ Keyword-only arguments:
 Returns
 [CreateSolutionVersionResponseTypeDef](./type_defs.md#createsolutionversionresponsetypedef).
 
+<a id="delete_campaign"></a>
+
 ### delete_campaign
 
 Removes a campaign by deleting the solution deployment.
@@ -468,6 +509,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `campaignArn`: `str` *(required)*
+
+<a id="delete_dataset"></a>
 
 ### delete_dataset
 
@@ -485,6 +528,8 @@ Keyword-only arguments:
 
 - `datasetArn`: `str` *(required)*
 
+<a id="delete_dataset_group"></a>
+
 ### delete_dataset_group
 
 Deletes a dataset group.
@@ -500,6 +545,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `datasetGroupArn`: `str` *(required)*
+
+<a id="delete_event_tracker"></a>
 
 ### delete_event_tracker
 
@@ -517,6 +564,8 @@ Keyword-only arguments:
 
 - `eventTrackerArn`: `str` *(required)*
 
+<a id="delete_filter"></a>
+
 ### delete_filter
 
 Deletes a filter.
@@ -532,6 +581,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `filterArn`: `str` *(required)*
+
+<a id="delete_recommender"></a>
 
 ### delete_recommender
 
@@ -549,6 +600,8 @@ Keyword-only arguments:
 
 - `recommenderArn`: `str` *(required)*
 
+<a id="delete_schema"></a>
+
 ### delete_schema
 
 Deletes a schema.
@@ -565,6 +618,8 @@ Keyword-only arguments:
 
 - `schemaArn`: `str` *(required)*
 
+<a id="delete_solution"></a>
+
 ### delete_solution
 
 Deletes all versions of a solution and the `Solution` object itself.
@@ -580,6 +635,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `solutionArn`: `str` *(required)*
+
+<a id="describe_algorithm"></a>
 
 ### describe_algorithm
 
@@ -599,6 +656,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAlgorithmResponseTypeDef](./type_defs.md#describealgorithmresponsetypedef).
+
+<a id="describe_batch_inference_job"></a>
 
 ### describe_batch_inference_job
 
@@ -622,6 +681,8 @@ Keyword-only arguments:
 Returns
 [DescribeBatchInferenceJobResponseTypeDef](./type_defs.md#describebatchinferencejobresponsetypedef).
 
+<a id="describe_batch_segment_job"></a>
+
 ### describe_batch_segment_job
 
 Gets the properties of a batch segment job including name, Amazon Resource Name
@@ -644,6 +705,8 @@ Keyword-only arguments:
 Returns
 [DescribeBatchSegmentJobResponseTypeDef](./type_defs.md#describebatchsegmentjobresponsetypedef).
 
+<a id="describe_campaign"></a>
+
 ### describe_campaign
 
 Describes the given campaign, including its status.
@@ -663,6 +726,8 @@ Keyword-only arguments:
 Returns
 [DescribeCampaignResponseTypeDef](./type_defs.md#describecampaignresponsetypedef).
 
+<a id="describe_dataset"></a>
+
 ### describe_dataset
 
 Describes the given dataset.
@@ -681,6 +746,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+
+<a id="describe_dataset_export_job"></a>
 
 ### describe_dataset_export_job
 
@@ -703,6 +770,8 @@ Keyword-only arguments:
 Returns
 [DescribeDatasetExportJobResponseTypeDef](./type_defs.md#describedatasetexportjobresponsetypedef).
 
+<a id="describe_dataset_group"></a>
+
 ### describe_dataset_group
 
 Describes the given dataset group.
@@ -722,6 +791,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDatasetGroupResponseTypeDef](./type_defs.md#describedatasetgroupresponsetypedef).
+
+<a id="describe_dataset_import_job"></a>
 
 ### describe_dataset_import_job
 
@@ -744,6 +815,8 @@ Keyword-only arguments:
 Returns
 [DescribeDatasetImportJobResponseTypeDef](./type_defs.md#describedatasetimportjobresponsetypedef).
 
+<a id="describe_event_tracker"></a>
+
 ### describe_event_tracker
 
 Describes an event tracker.
@@ -763,6 +836,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEventTrackerResponseTypeDef](./type_defs.md#describeeventtrackerresponsetypedef).
+
+<a id="describe_feature_transformation"></a>
 
 ### describe_feature_transformation
 
@@ -784,6 +859,8 @@ Keyword-only arguments:
 Returns
 [DescribeFeatureTransformationResponseTypeDef](./type_defs.md#describefeaturetransformationresponsetypedef).
 
+<a id="describe_filter"></a>
+
 ### describe_filter
 
 Describes a filter's properties.
@@ -802,6 +879,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFilterResponseTypeDef](./type_defs.md#describefilterresponsetypedef).
+
+<a id="describe_recipe"></a>
 
 ### describe_recipe
 
@@ -822,6 +901,8 @@ Keyword-only arguments:
 Returns
 [DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef).
 
+<a id="describe_recommender"></a>
+
 ### describe_recommender
 
 Describes the given recommender, including its status.
@@ -840,6 +921,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRecommenderResponseTypeDef](./type_defs.md#describerecommenderresponsetypedef).
+
+<a id="describe_schema"></a>
 
 ### describe_schema
 
@@ -860,6 +943,8 @@ Keyword-only arguments:
 Returns
 [DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef).
 
+<a id="describe_solution"></a>
+
 ### describe_solution
 
 Describes a solution.
@@ -878,6 +963,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSolutionResponseTypeDef](./type_defs.md#describesolutionresponsetypedef).
+
+<a id="describe_solution_version"></a>
 
 ### describe_solution_version
 
@@ -899,6 +986,8 @@ Keyword-only arguments:
 Returns
 [DescribeSolutionVersionResponseTypeDef](./type_defs.md#describesolutionversionresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -918,6 +1007,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_solution_metrics"></a>
+
 ### get_solution_metrics
 
 Gets the metrics for the specified solution version.
@@ -936,6 +1027,8 @@ Keyword-only arguments:
 
 Returns
 [GetSolutionMetricsResponseTypeDef](./type_defs.md#getsolutionmetricsresponsetypedef).
+
+<a id="list_batch_inference_jobs"></a>
 
 ### list_batch_inference_jobs
 
@@ -960,6 +1053,8 @@ Keyword-only arguments:
 Returns
 [ListBatchInferenceJobsResponseTypeDef](./type_defs.md#listbatchinferencejobsresponsetypedef).
 
+<a id="list_batch_segment_jobs"></a>
+
 ### list_batch_segment_jobs
 
 Gets a list of the batch segment jobs that have been performed off of a
@@ -983,6 +1078,8 @@ Keyword-only arguments:
 Returns
 [ListBatchSegmentJobsResponseTypeDef](./type_defs.md#listbatchsegmentjobsresponsetypedef).
 
+<a id="list_campaigns"></a>
+
 ### list_campaigns
 
 Returns a list of campaigns that use the given solution.
@@ -1003,6 +1100,8 @@ Keyword-only arguments:
 
 Returns
 [ListCampaignsResponseTypeDef](./type_defs.md#listcampaignsresponsetypedef).
+
+<a id="list_dataset_export_jobs"></a>
 
 ### list_dataset_export_jobs
 
@@ -1026,6 +1125,8 @@ Keyword-only arguments:
 Returns
 [ListDatasetExportJobsResponseTypeDef](./type_defs.md#listdatasetexportjobsresponsetypedef).
 
+<a id="list_dataset_groups"></a>
+
 ### list_dataset_groups
 
 Returns a list of dataset groups.
@@ -1045,6 +1146,8 @@ Keyword-only arguments:
 
 Returns
 [ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef).
+
+<a id="list_dataset_import_jobs"></a>
 
 ### list_dataset_import_jobs
 
@@ -1068,6 +1171,8 @@ Keyword-only arguments:
 Returns
 [ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef).
 
+<a id="list_datasets"></a>
+
 ### list_datasets
 
 Returns the list of datasets contained in the given dataset group.
@@ -1088,6 +1193,8 @@ Keyword-only arguments:
 
 Returns
 [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+
+<a id="list_event_trackers"></a>
 
 ### list_event_trackers
 
@@ -1110,6 +1217,8 @@ Keyword-only arguments:
 Returns
 [ListEventTrackersResponseTypeDef](./type_defs.md#listeventtrackersresponsetypedef).
 
+<a id="list_filters"></a>
+
 ### list_filters
 
 Lists all filters that belong to a given dataset group.
@@ -1130,6 +1239,8 @@ Keyword-only arguments:
 
 Returns
 [ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef).
+
+<a id="list_recipes"></a>
 
 ### list_recipes
 
@@ -1154,6 +1265,8 @@ Keyword-only arguments:
 Returns
 [ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef).
 
+<a id="list_recommenders"></a>
+
 ### list_recommenders
 
 Returns a list of recommenders in a given Domain dataset group.
@@ -1175,6 +1288,8 @@ Keyword-only arguments:
 Returns
 [ListRecommendersResponseTypeDef](./type_defs.md#listrecommendersresponsetypedef).
 
+<a id="list_schemas"></a>
+
 ### list_schemas
 
 Returns the list of schemas associated with the account.
@@ -1194,6 +1309,8 @@ Keyword-only arguments:
 
 Returns
 [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
+
+<a id="list_solution_versions"></a>
 
 ### list_solution_versions
 
@@ -1217,6 +1334,8 @@ Keyword-only arguments:
 Returns
 [ListSolutionVersionsResponseTypeDef](./type_defs.md#listsolutionversionsresponsetypedef).
 
+<a id="list_solutions"></a>
+
 ### list_solutions
 
 Returns a list of solutions that use the given dataset group.
@@ -1238,6 +1357,8 @@ Keyword-only arguments:
 Returns
 [ListSolutionsResponseTypeDef](./type_defs.md#listsolutionsresponsetypedef).
 
+<a id="stop_solution_version_creation"></a>
+
 ### stop_solution_version_creation
 
 Stops creating a solution version that is in a state of CREATE_PENDING or
@@ -1255,6 +1376,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `solutionVersionArn`: `str` *(required)*
+
+<a id="update_campaign"></a>
 
 ### update_campaign
 
@@ -1280,6 +1403,8 @@ Keyword-only arguments:
 Returns
 [UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef).
 
+<a id="update_recommender"></a>
+
 ### update_recommender
 
 Updates the recommender to modify the recommender configuration.
@@ -1301,6 +1426,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRecommenderResponseTypeDef](./type_defs.md#updaterecommenderresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

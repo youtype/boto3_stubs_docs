@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-amplifybackend-module"></a>
+
 # Type annotations for boto3 AmplifyBackend module
 
 > [Index](..) > AmplifyBackend
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
 type annotations stubs module
-[mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
+[mypy-boto3-amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[amplifybackend]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[amplifybackend]'
+
+# standalone installation
 pip install mypy-boto3-amplifybackend
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-amplifybackend
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="amplifybackendclient"></a>
+
 ## AmplifyBackendClient
 
 Type annotations for `boto3.client("amplifybackend")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_amplifybackend.client import AmplifyBackendClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -68,6 +82,8 @@ from mypy_boto3_amplifybackend.client import AmplifyBackendClient
 - [update_backend_job](./client.md#update_backend_job)
 - [update_backend_storage](./client.md#update_backend_storage)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AmplifyBackendClient [exceptions](./client.md#exceptions)
@@ -78,6 +94,8 @@ AmplifyBackendClient [exceptions](./client.md#exceptions)
 - NotFoundException
 - TooManyRequestsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -86,10 +104,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_amplifybackend.paginators import ListBackendJobsPaginator, ...
+from mypy_boto3_amplifybackend.paginator import ListBackendJobsPaginator, ...
 ```
 
 - [ListBackendJobsPaginator](./paginators.md#listbackendjobspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -120,6 +140,8 @@ from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElementType,
 - [UnAuthenticatedElementType](./literals.md#unauthenticatedelementtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-signer-module"></a>
+
 # Paginators for boto3 signer module
 
 > [Index](..) > [signer](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
 type annotations stubs module
-[mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
+[mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
 
 - [Paginators for boto3 signer module](#paginators-for-boto3-signer-module)
   - [ListSigningJobsPaginator](#listsigningjobspaginator)
   - [ListSigningPlatformsPaginator](#listsigningplatformspaginator)
   - [ListSigningProfilesPaginator](#listsigningprofilespaginator)
+
+<a id="listsigningjobspaginator"></a>
 
 ## ListSigningJobsPaginator
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_signer.paginator import ListSigningJobsPaginator
 
 def get_list_signing_jobs_paginator() -> ListSigningJobsPaginator:
-    return boto3.client("signer").get_paginator("list_signing_jobs")
+    return Session().client("signer").get_paginator("list_signing_jobs")
 ```
 
 Boto3 documentation:
@@ -44,6 +50,8 @@ Arguments for `ListSigningJobsPaginator.paginate` method:
 `ListSigningJobsPaginator.paginate` returns
 `_PageIterator`\[[ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef)\].
 
+<a id="listsigningplatformspaginator"></a>
+
 ## ListSigningPlatformsPaginator
 
 Type annotations for
@@ -52,10 +60,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_signer.paginator import ListSigningPlatformsPaginator
 
 def get_list_signing_platforms_paginator() -> ListSigningPlatformsPaginator:
-    return boto3.client("signer").get_paginator("list_signing_platforms")
+    return Session().client("signer").get_paginator("list_signing_platforms")
 ```
 
 Boto3 documentation:
@@ -72,6 +82,8 @@ Arguments for `ListSigningPlatformsPaginator.paginate` method:
 `ListSigningPlatformsPaginator.paginate` returns
 `_PageIterator`\[[ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef)\].
 
+<a id="listsigningprofilespaginator"></a>
+
 ## ListSigningProfilesPaginator
 
 Type annotations for
@@ -80,10 +92,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_signer.paginator import ListSigningProfilesPaginator
 
 def get_list_signing_profiles_paginator() -> ListSigningProfilesPaginator:
-    return boto3.client("signer").get_paginator("list_signing_profiles")
+    return Session().client("signer").get_paginator("list_signing_profiles")
 ```
 
 Boto3 documentation:

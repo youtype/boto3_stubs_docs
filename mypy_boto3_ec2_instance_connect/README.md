@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ec2instanceconnect-module"></a>
+
 # Type annotations for boto3 EC2InstanceConnect module
 
 > [Index](..) > EC2InstanceConnect
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
 type annotations stubs module
-[mypy_boto3_ec2_instance_connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
+[mypy-boto3-ec2-instance-connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ec2-instance-connect]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ec2-instance-connect]'
+
+# standalone installation
 pip install mypy-boto3-ec2-instance-connect
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-ec2-instance-connect
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="ec2instanceconnectclient"></a>
 
 ## EC2InstanceConnectClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_ec2_instance_connect.client import EC2InstanceConnectClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -36,6 +50,8 @@ from mypy_boto3_ec2_instance_connect.client import EC2InstanceConnectClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [send_serial_console_ssh_public_key](./client.md#send_serial_console_ssh_public_key)
 - [send_ssh_public_key](./client.md#send_ssh_public_key)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -53,6 +69,8 @@ EC2InstanceConnectClient [exceptions](./client.md#exceptions)
 - ServiceException
 - ThrottlingException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -64,6 +82,8 @@ from mypy_boto3_ec2_instance_connect.literals import ServiceName, ...
 ```
 
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

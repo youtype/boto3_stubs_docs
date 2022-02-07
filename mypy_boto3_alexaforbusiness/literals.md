@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-alexaforbusiness-module"></a>
+
 # Literals for boto3 AlexaForBusiness module
 
 > [Index](..) > [AlexaForBusiness](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
 type annotations stubs module
-[mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
+[mypy-boto3-alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
 - [Literals for boto3 AlexaForBusiness module](#literals-for-boto3-alexaforbusiness-module)
   - [BusinessReportFailureCodeType](#businessreportfailurecodetype)
@@ -52,6 +54,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="businessreportfailurecodetype"></a>
+
 ## BusinessReportFailureCodeType
 
 ```python
@@ -64,6 +68,8 @@ Values:
 - `INTERNAL_FAILURE`
 - `NO_SUCH_BUCKET`
 
+<a id="businessreportformattype"></a>
+
 ## BusinessReportFormatType
 
 ```python
@@ -74,6 +80,8 @@ Values:
 
 - `CSV`
 - `CSV_ZIP`
+
+<a id="businessreportintervaltype"></a>
 
 ## BusinessReportIntervalType
 
@@ -87,6 +95,8 @@ Values:
 - `ONE_WEEK`
 - `THIRTY_DAYS`
 
+<a id="businessreportstatustype"></a>
+
 ## BusinessReportStatusType
 
 ```python
@@ -99,6 +109,8 @@ Values:
 - `RUNNING`
 - `SUCCEEDED`
 
+<a id="commsprotocoltype"></a>
+
 ## CommsProtocolType
 
 ```python
@@ -110,6 +122,8 @@ Values:
 - `H323`
 - `SIP`
 - `SIPS`
+
+<a id="conferenceprovidertypetype"></a>
 
 ## ConferenceProviderTypeType
 
@@ -130,6 +144,8 @@ Values:
 - `WEBEX`
 - `ZOOM`
 
+<a id="connectionstatustype"></a>
+
 ## ConnectionStatusType
 
 ```python
@@ -141,6 +157,8 @@ Values:
 - `OFFLINE`
 - `ONLINE`
 
+<a id="deviceeventtypetype"></a>
+
 ## DeviceEventTypeType
 
 ```python
@@ -151,6 +169,8 @@ Values:
 
 - `CONNECTION_STATUS`
 - `DEVICE_STATUS`
+
+<a id="devicestatusdetailcodetype"></a>
 
 ## DeviceStatusDetailCodeType
 
@@ -178,6 +198,8 @@ Values:
 - `TLS_VERSION_MISMATCH`
 - `UNKNOWN_FAILURE`
 
+<a id="devicestatustype"></a>
+
 ## DeviceStatusType
 
 ```python
@@ -192,6 +214,8 @@ Values:
 - `READY`
 - `WAS_OFFLINE`
 
+<a id="deviceusagetypetype"></a>
+
 ## DeviceUsageTypeType
 
 ```python
@@ -201,6 +225,8 @@ from mypy_boto3_alexaforbusiness.literals import DeviceUsageTypeType
 Values:
 
 - `VOICE`
+
+<a id="distanceunittype"></a>
 
 ## DistanceUnitType
 
@@ -213,6 +239,8 @@ Values:
 - `IMPERIAL`
 - `METRIC`
 
+<a id="enablementtypefiltertype"></a>
+
 ## EnablementTypeFilterType
 
 ```python
@@ -224,6 +252,8 @@ Values:
 - `ENABLED`
 - `PENDING`
 
+<a id="enablementtypetype"></a>
+
 ## EnablementTypeType
 
 ```python
@@ -234,6 +264,8 @@ Values:
 
 - `ENABLED`
 - `PENDING`
+
+<a id="endofmeetingremindertypetype"></a>
 
 ## EndOfMeetingReminderTypeType
 
@@ -248,6 +280,8 @@ Values:
 - `CHIME`
 - `KNOCK`
 
+<a id="enrollmentstatustype"></a>
+
 ## EnrollmentStatusType
 
 ```python
@@ -261,6 +295,8 @@ Values:
 - `INITIALIZED`
 - `PENDING`
 - `REGISTERED`
+
+<a id="featuretype"></a>
 
 ## FeatureType
 
@@ -279,6 +315,8 @@ Values:
 - `SKILLS`
 - `VOLUME`
 
+<a id="listbusinessreportschedulespaginatorname"></a>
+
 ## ListBusinessReportSchedulesPaginatorName
 
 ```python
@@ -288,6 +326,8 @@ from mypy_boto3_alexaforbusiness.literals import ListBusinessReportSchedulesPagi
 Values:
 
 - `list_business_report_schedules`
+
+<a id="listconferenceproviderspaginatorname"></a>
 
 ## ListConferenceProvidersPaginatorName
 
@@ -299,6 +339,8 @@ Values:
 
 - `list_conference_providers`
 
+<a id="listdeviceeventspaginatorname"></a>
+
 ## ListDeviceEventsPaginatorName
 
 ```python
@@ -308,6 +350,8 @@ from mypy_boto3_alexaforbusiness.literals import ListDeviceEventsPaginatorName
 Values:
 
 - `list_device_events`
+
+<a id="listskillspaginatorname"></a>
 
 ## ListSkillsPaginatorName
 
@@ -319,6 +363,8 @@ Values:
 
 - `list_skills`
 
+<a id="listskillsstorecategoriespaginatorname"></a>
+
 ## ListSkillsStoreCategoriesPaginatorName
 
 ```python
@@ -328,6 +374,8 @@ from mypy_boto3_alexaforbusiness.literals import ListSkillsStoreCategoriesPagina
 Values:
 
 - `list_skills_store_categories`
+
+<a id="listskillsstoreskillsbycategorypaginatorname"></a>
 
 ## ListSkillsStoreSkillsByCategoryPaginatorName
 
@@ -339,6 +387,8 @@ Values:
 
 - `list_skills_store_skills_by_category`
 
+<a id="listsmarthomeappliancespaginatorname"></a>
+
 ## ListSmartHomeAppliancesPaginatorName
 
 ```python
@@ -348,6 +398,8 @@ from mypy_boto3_alexaforbusiness.literals import ListSmartHomeAppliancesPaginato
 Values:
 
 - `list_smart_home_appliances`
+
+<a id="listtagspaginatorname"></a>
 
 ## ListTagsPaginatorName
 
@@ -359,6 +411,8 @@ Values:
 
 - `list_tags`
 
+<a id="localetype"></a>
+
 ## LocaleType
 
 ```python
@@ -369,6 +423,8 @@ Values:
 
 - `en-US`
 
+<a id="networkeapmethodtype"></a>
+
 ## NetworkEapMethodType
 
 ```python
@@ -378,6 +434,8 @@ from mypy_boto3_alexaforbusiness.literals import NetworkEapMethodType
 Values:
 
 - `EAP_TLS`
+
+<a id="networksecuritytypetype"></a>
 
 ## NetworkSecurityTypeType
 
@@ -393,6 +451,8 @@ Values:
 - `WPA2_PSK`
 - `WPA_PSK`
 
+<a id="phonenumbertypetype"></a>
+
 ## PhoneNumberTypeType
 
 ```python
@@ -404,6 +464,8 @@ Values:
 - `HOME`
 - `MOBILE`
 - `WORK`
+
+<a id="requirepintype"></a>
 
 ## RequirePinType
 
@@ -417,6 +479,8 @@ Values:
 - `OPTIONAL`
 - `YES`
 
+<a id="searchdevicespaginatorname"></a>
+
 ## SearchDevicesPaginatorName
 
 ```python
@@ -426,6 +490,8 @@ from mypy_boto3_alexaforbusiness.literals import SearchDevicesPaginatorName
 Values:
 
 - `search_devices`
+
+<a id="searchprofilespaginatorname"></a>
 
 ## SearchProfilesPaginatorName
 
@@ -437,6 +503,8 @@ Values:
 
 - `search_profiles`
 
+<a id="searchroomspaginatorname"></a>
+
 ## SearchRoomsPaginatorName
 
 ```python
@@ -446,6 +514,8 @@ from mypy_boto3_alexaforbusiness.literals import SearchRoomsPaginatorName
 Values:
 
 - `search_rooms`
+
+<a id="searchskillgroupspaginatorname"></a>
 
 ## SearchSkillGroupsPaginatorName
 
@@ -457,6 +527,8 @@ Values:
 
 - `search_skill_groups`
 
+<a id="searchuserspaginatorname"></a>
+
 ## SearchUsersPaginatorName
 
 ```python
@@ -467,6 +539,8 @@ Values:
 
 - `search_users`
 
+<a id="siptypetype"></a>
+
 ## SipTypeType
 
 ```python
@@ -476,6 +550,8 @@ from mypy_boto3_alexaforbusiness.literals import SipTypeType
 Values:
 
 - `WORK`
+
+<a id="skilltypefiltertype"></a>
 
 ## SkillTypeFilterType
 
@@ -489,6 +565,8 @@ Values:
 - `PRIVATE`
 - `PUBLIC`
 
+<a id="skilltypetype"></a>
+
 ## SkillTypeType
 
 ```python
@@ -499,6 +577,8 @@ Values:
 
 - `PRIVATE`
 - `PUBLIC`
+
+<a id="sortvaluetype"></a>
 
 ## SortValueType
 
@@ -511,6 +591,8 @@ Values:
 - `ASC`
 - `DESC`
 
+<a id="temperatureunittype"></a>
+
 ## TemperatureUnitType
 
 ```python
@@ -521,6 +603,8 @@ Values:
 
 - `CELSIUS`
 - `FAHRENHEIT`
+
+<a id="wakewordtype"></a>
 
 ## WakeWordType
 
@@ -534,6 +618,8 @@ Values:
 - `AMAZON`
 - `COMPUTER`
 - `ECHO`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -842,6 +928,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

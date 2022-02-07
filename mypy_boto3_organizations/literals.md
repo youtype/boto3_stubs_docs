@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-organizations-module"></a>
+
 # Literals for boto3 Organizations module
 
 > [Index](..) > [Organizations](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
 type annotations stubs module
-[mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
+[mypy-boto3-organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 - [Literals for boto3 Organizations module](#literals-for-boto3-organizations-module)
   - [AccountJoinedMethodType](#accountjoinedmethodtype)
@@ -43,6 +45,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="accountjoinedmethodtype"></a>
+
 ## AccountJoinedMethodType
 
 ```python
@@ -54,6 +58,8 @@ Values:
 - `CREATED`
 - `INVITED`
 
+<a id="accountstatustype"></a>
+
 ## AccountStatusType
 
 ```python
@@ -64,6 +70,8 @@ Values:
 
 - `ACTIVE`
 - `SUSPENDED`
+
+<a id="actiontypetype"></a>
 
 ## ActionTypeType
 
@@ -78,6 +86,8 @@ Values:
 - `ENABLE_ALL_FEATURES`
 - `INVITE`
 
+<a id="childtypetype"></a>
+
 ## ChildTypeType
 
 ```python
@@ -88,6 +98,8 @@ Values:
 
 - `ACCOUNT`
 - `ORGANIZATIONAL_UNIT`
+
+<a id="createaccountfailurereasontype"></a>
 
 ## CreateAccountFailureReasonType
 
@@ -111,6 +123,8 @@ Values:
 - `PENDING_BUSINESS_VALIDATION`
 - `UNKNOWN_BUSINESS_VALIDATION`
 
+<a id="createaccountstatetype"></a>
+
 ## CreateAccountStateType
 
 ```python
@@ -122,6 +136,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `SUCCEEDED`
+
+<a id="effectivepolicytypetype"></a>
 
 ## EffectivePolicyTypeType
 
@@ -135,6 +151,8 @@ Values:
 - `BACKUP_POLICY`
 - `TAG_POLICY`
 
+<a id="handshakepartytypetype"></a>
+
 ## HandshakePartyTypeType
 
 ```python
@@ -146,6 +164,8 @@ Values:
 - `ACCOUNT`
 - `EMAIL`
 - `ORGANIZATION`
+
+<a id="handshakeresourcetypetype"></a>
 
 ## HandshakeResourceTypeType
 
@@ -164,6 +184,8 @@ Values:
 - `ORGANIZATION_FEATURE_SET`
 - `PARENT_HANDSHAKE`
 
+<a id="handshakestatetype"></a>
+
 ## HandshakeStateType
 
 ```python
@@ -179,6 +201,8 @@ Values:
 - `OPEN`
 - `REQUESTED`
 
+<a id="iamuseraccesstobillingtype"></a>
+
 ## IAMUserAccessToBillingType
 
 ```python
@@ -190,6 +214,8 @@ Values:
 - `ALLOW`
 - `DENY`
 
+<a id="listawsserviceaccessfororganizationpaginatorname"></a>
+
 ## ListAWSServiceAccessForOrganizationPaginatorName
 
 ```python
@@ -199,6 +225,8 @@ from mypy_boto3_organizations.literals import ListAWSServiceAccessForOrganizatio
 Values:
 
 - `list_aws_service_access_for_organization`
+
+<a id="listaccountsforparentpaginatorname"></a>
 
 ## ListAccountsForParentPaginatorName
 
@@ -210,6 +238,8 @@ Values:
 
 - `list_accounts_for_parent`
 
+<a id="listaccountspaginatorname"></a>
+
 ## ListAccountsPaginatorName
 
 ```python
@@ -219,6 +249,8 @@ from mypy_boto3_organizations.literals import ListAccountsPaginatorName
 Values:
 
 - `list_accounts`
+
+<a id="listchildrenpaginatorname"></a>
 
 ## ListChildrenPaginatorName
 
@@ -230,6 +262,8 @@ Values:
 
 - `list_children`
 
+<a id="listcreateaccountstatuspaginatorname"></a>
+
 ## ListCreateAccountStatusPaginatorName
 
 ```python
@@ -239,6 +273,8 @@ from mypy_boto3_organizations.literals import ListCreateAccountStatusPaginatorNa
 Values:
 
 - `list_create_account_status`
+
+<a id="listdelegatedadministratorspaginatorname"></a>
 
 ## ListDelegatedAdministratorsPaginatorName
 
@@ -250,6 +286,8 @@ Values:
 
 - `list_delegated_administrators`
 
+<a id="listdelegatedservicesforaccountpaginatorname"></a>
+
 ## ListDelegatedServicesForAccountPaginatorName
 
 ```python
@@ -259,6 +297,8 @@ from mypy_boto3_organizations.literals import ListDelegatedServicesForAccountPag
 Values:
 
 - `list_delegated_services_for_account`
+
+<a id="listhandshakesforaccountpaginatorname"></a>
 
 ## ListHandshakesForAccountPaginatorName
 
@@ -270,6 +310,8 @@ Values:
 
 - `list_handshakes_for_account`
 
+<a id="listhandshakesfororganizationpaginatorname"></a>
+
 ## ListHandshakesForOrganizationPaginatorName
 
 ```python
@@ -279,6 +321,8 @@ from mypy_boto3_organizations.literals import ListHandshakesForOrganizationPagin
 Values:
 
 - `list_handshakes_for_organization`
+
+<a id="listorganizationalunitsforparentpaginatorname"></a>
 
 ## ListOrganizationalUnitsForParentPaginatorName
 
@@ -290,6 +334,8 @@ Values:
 
 - `list_organizational_units_for_parent`
 
+<a id="listparentspaginatorname"></a>
+
 ## ListParentsPaginatorName
 
 ```python
@@ -299,6 +345,8 @@ from mypy_boto3_organizations.literals import ListParentsPaginatorName
 Values:
 
 - `list_parents`
+
+<a id="listpoliciesfortargetpaginatorname"></a>
 
 ## ListPoliciesForTargetPaginatorName
 
@@ -310,6 +358,8 @@ Values:
 
 - `list_policies_for_target`
 
+<a id="listpoliciespaginatorname"></a>
+
 ## ListPoliciesPaginatorName
 
 ```python
@@ -319,6 +369,8 @@ from mypy_boto3_organizations.literals import ListPoliciesPaginatorName
 Values:
 
 - `list_policies`
+
+<a id="listrootspaginatorname"></a>
 
 ## ListRootsPaginatorName
 
@@ -330,6 +382,8 @@ Values:
 
 - `list_roots`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -340,6 +394,8 @@ Values:
 
 - `list_tags_for_resource`
 
+<a id="listtargetsforpolicypaginatorname"></a>
+
 ## ListTargetsForPolicyPaginatorName
 
 ```python
@@ -349,6 +405,8 @@ from mypy_boto3_organizations.literals import ListTargetsForPolicyPaginatorName
 Values:
 
 - `list_targets_for_policy`
+
+<a id="organizationfeaturesettype"></a>
 
 ## OrganizationFeatureSetType
 
@@ -361,6 +419,8 @@ Values:
 - `ALL`
 - `CONSOLIDATED_BILLING`
 
+<a id="parenttypetype"></a>
+
 ## ParentTypeType
 
 ```python
@@ -371,6 +431,8 @@ Values:
 
 - `ORGANIZATIONAL_UNIT`
 - `ROOT`
+
+<a id="policytypestatustype"></a>
 
 ## PolicyTypeStatusType
 
@@ -383,6 +445,8 @@ Values:
 - `ENABLED`
 - `PENDING_DISABLE`
 - `PENDING_ENABLE`
+
+<a id="policytypetype"></a>
 
 ## PolicyTypeType
 
@@ -397,6 +461,8 @@ Values:
 - `SERVICE_CONTROL_POLICY`
 - `TAG_POLICY`
 
+<a id="targettypetype"></a>
+
 ## TargetTypeType
 
 ```python
@@ -408,6 +474,8 @@ Values:
 - `ACCOUNT`
 - `ORGANIZATIONAL_UNIT`
 - `ROOT`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -716,6 +784,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

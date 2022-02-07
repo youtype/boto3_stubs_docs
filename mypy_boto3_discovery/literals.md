@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-applicationdiscoveryservice-module"></a>
+
 # Literals for boto3 ApplicationDiscoveryService module
 
 > [Index](..) > [ApplicationDiscoveryService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
 type annotations stubs module
-[mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
+[mypy-boto3-discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
 - [Literals for boto3 ApplicationDiscoveryService module](#literals-for-boto3-applicationdiscoveryservice-module)
   - [AgentStatusType](#agentstatustype)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="agentstatustype"></a>
+
 ## AgentStatusType
 
 ```python
@@ -42,6 +46,8 @@ Values:
 - `UNHEALTHY`
 - `UNKNOWN`
 
+<a id="batchdeleteimportdataerrorcodetype"></a>
+
 ## BatchDeleteImportDataErrorCodeType
 
 ```python
@@ -53,6 +59,8 @@ Values:
 - `INTERNAL_SERVER_ERROR`
 - `NOT_FOUND`
 - `OVER_LIMIT`
+
+<a id="configurationitemtypetype"></a>
 
 ## ConfigurationItemTypeType
 
@@ -66,6 +74,8 @@ Values:
 - `CONNECTION`
 - `PROCESS`
 - `SERVER`
+
+<a id="continuousexportstatustype"></a>
 
 ## ContinuousExportStatusType
 
@@ -83,6 +93,8 @@ Values:
 - `STOP_FAILED`
 - `STOP_IN_PROGRESS`
 
+<a id="datasourcetype"></a>
+
 ## DataSourceType
 
 ```python
@@ -92,6 +104,8 @@ from mypy_boto3_discovery.literals import DataSourceType
 Values:
 
 - `AGENT`
+
+<a id="describeagentspaginatorname"></a>
 
 ## DescribeAgentsPaginatorName
 
@@ -103,6 +117,8 @@ Values:
 
 - `describe_agents`
 
+<a id="describecontinuousexportspaginatorname"></a>
+
 ## DescribeContinuousExportsPaginatorName
 
 ```python
@@ -112,6 +128,8 @@ from mypy_boto3_discovery.literals import DescribeContinuousExportsPaginatorName
 Values:
 
 - `describe_continuous_exports`
+
+<a id="describeexportconfigurationspaginatorname"></a>
 
 ## DescribeExportConfigurationsPaginatorName
 
@@ -123,6 +141,8 @@ Values:
 
 - `describe_export_configurations`
 
+<a id="describeexporttaskspaginatorname"></a>
+
 ## DescribeExportTasksPaginatorName
 
 ```python
@@ -133,6 +153,8 @@ Values:
 
 - `describe_export_tasks`
 
+<a id="describetagspaginatorname"></a>
+
 ## DescribeTagsPaginatorName
 
 ```python
@@ -142,6 +164,8 @@ from mypy_boto3_discovery.literals import DescribeTagsPaginatorName
 Values:
 
 - `describe_tags`
+
+<a id="exportdataformattype"></a>
 
 ## ExportDataFormatType
 
@@ -154,6 +178,8 @@ Values:
 - `CSV`
 - `GRAPHML`
 
+<a id="exportstatustype"></a>
+
 ## ExportStatusType
 
 ```python
@@ -165,6 +191,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `SUCCEEDED`
+
+<a id="importstatustype"></a>
 
 ## ImportStatusType
 
@@ -186,6 +214,8 @@ Values:
 - `IMPORT_IN_PROGRESS`
 - `INTERNAL_ERROR`
 
+<a id="importtaskfilternametype"></a>
+
 ## ImportTaskFilterNameType
 
 ```python
@@ -198,6 +228,8 @@ Values:
 - `NAME`
 - `STATUS`
 
+<a id="listconfigurationspaginatorname"></a>
+
 ## ListConfigurationsPaginatorName
 
 ```python
@@ -207,6 +239,8 @@ from mypy_boto3_discovery.literals import ListConfigurationsPaginatorName
 Values:
 
 - `list_configurations`
+
+<a id="orderstringtype"></a>
 
 ## orderStringType
 
@@ -218,6 +252,8 @@ Values:
 
 - `ASC`
 - `DESC`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -526,6 +562,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

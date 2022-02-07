@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-resourcegroupstaggingapi-module"></a>
+
 # Typed dictionaries for boto3 ResourceGroupsTaggingAPI module
 
 > [Index](..) > [ResourceGroupsTaggingAPI](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module
-[mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
+[mypy-boto3-resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
 - [Typed dictionaries for boto3 ResourceGroupsTaggingAPI module](#typed-dictionaries-for-boto3-resourcegroupstaggingapi-module)
   - [ComplianceDetailsTypeDef](#compliancedetailstypedef)
@@ -31,6 +33,8 @@ type annotations stubs module
   - [UntagResourcesInputRequestTypeDef](#untagresourcesinputrequesttypedef)
   - [UntagResourcesOutputTypeDef](#untagresourcesoutputtypedef)
 
+<a id="compliancedetailstypedef"></a>
+
 ## ComplianceDetailsTypeDef
 
 ```python
@@ -42,6 +46,8 @@ Optional fields:
 - `NoncompliantKeys`: `List`\[`str`\]
 - `KeysWithNoncompliantValues`: `List`\[`str`\]
 - `ComplianceStatus`: `bool`
+
+<a id="describereportcreationoutputtypedef"></a>
 
 ## DescribeReportCreationOutputTypeDef
 
@@ -57,6 +63,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="failureinfotypedef"></a>
+
 ## FailureInfoTypeDef
 
 ```python
@@ -68,6 +76,8 @@ Optional fields:
 - `StatusCode`: `int`
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
+
+<a id="getcompliancesummaryinputrequesttypedef"></a>
 
 ## GetComplianceSummaryInputRequestTypeDef
 
@@ -86,6 +96,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `PaginationToken`: `str`
 
+<a id="getcompliancesummaryoutputtypedef"></a>
+
 ## GetComplianceSummaryOutputTypeDef
 
 ```python
@@ -98,6 +110,8 @@ Required fields:
 - `PaginationToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getresourcesinputrequesttypedef"></a>
 
 ## GetResourcesInputRequestTypeDef
 
@@ -117,6 +131,8 @@ Optional fields:
 - `ExcludeCompliantResources`: `bool`
 - `ResourceARNList`: `Sequence`\[`str`\]
 
+<a id="getresourcesoutputtypedef"></a>
+
 ## GetResourcesOutputTypeDef
 
 ```python
@@ -131,6 +147,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettagkeysinputrequesttypedef"></a>
+
 ## GetTagKeysInputRequestTypeDef
 
 ```python
@@ -140,6 +158,8 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysInputRequest
 Optional fields:
 
 - `PaginationToken`: `str`
+
+<a id="gettagkeysoutputtypedef"></a>
 
 ## GetTagKeysOutputTypeDef
 
@@ -153,6 +173,8 @@ Required fields:
 - `TagKeys`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gettagvaluesinputrequesttypedef"></a>
 
 ## GetTagValuesInputRequestTypeDef
 
@@ -168,6 +190,8 @@ Optional fields:
 
 - `PaginationToken`: `str`
 
+<a id="gettagvaluesoutputtypedef"></a>
+
 ## GetTagValuesOutputTypeDef
 
 ```python
@@ -181,6 +205,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -192,6 +218,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="resourcetagmappingtypedef"></a>
 
 ## ResourceTagMappingTypeDef
 
@@ -205,6 +233,8 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ComplianceDetails`:
   [ComplianceDetailsTypeDef](./type_defs.md#compliancedetailstypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -220,6 +250,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="startreportcreationinputrequesttypedef"></a>
+
 ## StartReportCreationInputRequestTypeDef
 
 ```python
@@ -229,6 +261,8 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import StartReportCreationInp
 Required fields:
 
 - `S3Bucket`: `str`
+
+<a id="summarytypedef"></a>
 
 ## SummaryTypeDef
 
@@ -245,6 +279,8 @@ Optional fields:
 - `ResourceType`: `str`
 - `NonCompliantResources`: `int`
 
+<a id="tagfiltertypedef"></a>
+
 ## TagFilterTypeDef
 
 ```python
@@ -256,6 +292,8 @@ Optional fields:
 - `Key`: `str`
 - `Values`: `Sequence`\[`str`\]
 
+<a id="tagresourcesinputrequesttypedef"></a>
+
 ## TagResourcesInputRequestTypeDef
 
 ```python
@@ -266,6 +304,8 @@ Required fields:
 
 - `ResourceARNList`: `Sequence`\[`str`\]
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="tagresourcesoutputtypedef"></a>
 
 ## TagResourcesOutputTypeDef
 
@@ -280,6 +320,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -291,6 +333,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcesinputrequesttypedef"></a>
+
 ## UntagResourcesInputRequestTypeDef
 
 ```python
@@ -301,6 +345,8 @@ Required fields:
 
 - `ResourceARNList`: `Sequence`\[`str`\]
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="untagresourcesoutputtypedef"></a>
 
 ## UntagResourcesOutputTypeDef
 

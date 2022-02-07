@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ssooidc-module"></a>
+
 # Typed dictionaries for boto3 SSOOIDC module
 
 > [Index](..) > [SSOOIDC](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)
 type annotations stubs module
-[mypy_boto3_sso_oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
+[mypy-boto3-sso-oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
 
 - [Typed dictionaries for boto3 SSOOIDC module](#typed-dictionaries-for-boto3-ssooidc-module)
   - [CreateTokenRequestRequestTypeDef](#createtokenrequestrequesttypedef)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StartDeviceAuthorizationRequestRequestTypeDef](#startdeviceauthorizationrequestrequesttypedef)
   - [StartDeviceAuthorizationResponseTypeDef](#startdeviceauthorizationresponsetypedef)
+
+<a id="createtokenrequestrequesttypedef"></a>
 
 ## CreateTokenRequestRequestTypeDef
 
@@ -36,6 +40,8 @@ Optional fields:
 - `scope`: `Sequence`\[`str`\]
 - `redirectUri`: `str`
 
+<a id="createtokenresponsetypedef"></a>
+
 ## CreateTokenResponseTypeDef
 
 ```python
@@ -52,6 +58,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="registerclientrequestrequesttypedef"></a>
+
 ## RegisterClientRequestRequestTypeDef
 
 ```python
@@ -66,6 +74,8 @@ Required fields:
 Optional fields:
 
 - `scopes`: `Sequence`\[`str`\]
+
+<a id="registerclientresponsetypedef"></a>
 
 ## RegisterClientResponseTypeDef
 
@@ -84,6 +94,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -98,6 +110,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="startdeviceauthorizationrequestrequesttypedef"></a>
+
 ## StartDeviceAuthorizationRequestRequestTypeDef
 
 ```python
@@ -109,6 +123,8 @@ Required fields:
 - `clientId`: `str`
 - `clientSecret`: `str`
 - `startUrl`: `str`
+
+<a id="startdeviceauthorizationresponsetypedef"></a>
 
 ## StartDeviceAuthorizationResponseTypeDef
 

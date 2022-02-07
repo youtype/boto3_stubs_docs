@@ -1,3 +1,5 @@
+<a id="accessanalyzerclient-for-boto3-accessanalyzer-module"></a>
+
 # AccessAnalyzerClient for boto3 AccessAnalyzer module
 
 > [Index](..) > [AccessAnalyzer](.) > AccessAnalyzerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
 type annotations stubs module
-[mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
+[mypy-boto3-accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
 - [AccessAnalyzerClient for boto3 AccessAnalyzer module](#accessanalyzerclient-for-boto3-accessanalyzer-module)
   - [AccessAnalyzerClient](#accessanalyzerclient)
@@ -44,6 +46,8 @@ type annotations stubs module
     - [validate_policy](#validate_policy)
     - [get_paginator](#get_paginator)
 
+<a id="accessanalyzerclient"></a>
+
 ## AccessAnalyzerClient
 
 Type annotations for `boto3.client("accessanalyzer")`
@@ -51,14 +55,17 @@ Type annotations for `boto3.client("accessanalyzer")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_accessanalyzer.client import AccessAnalyzerClient
 
 def get_accessanalyzer_client() -> AccessAnalyzerClient:
-    return boto3.client("accessanalyzer")
+    return Session().client("accessanalyzer")
 ```
 
 Boto3 documentation:
 [AccessAnalyzer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -83,7 +90,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -95,6 +106,8 @@ Boto3 documentation:
 [AccessAnalyzer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="apply_archive_rule"></a>
 
 ### apply_archive_rule
 
@@ -116,6 +129,8 @@ Keyword-only arguments:
 - `ruleName`: `str` *(required)*
 - `clientToken`: `str`
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -130,6 +145,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_policy_generation"></a>
 
 ### cancel_policy_generation
 
@@ -149,6 +166,8 @@ Keyword-only arguments:
 - `jobId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_access_preview"></a>
 
 ### create_access_preview
 
@@ -174,6 +193,8 @@ Keyword-only arguments:
 Returns
 [CreateAccessPreviewResponseTypeDef](./type_defs.md#createaccesspreviewresponsetypedef).
 
+<a id="create_analyzer"></a>
+
 ### create_analyzer
 
 Creates an analyzer for your account.
@@ -198,6 +219,8 @@ Keyword-only arguments:
 Returns
 [CreateAnalyzerResponseTypeDef](./type_defs.md#createanalyzerresponsetypedef).
 
+<a id="create_archive_rule"></a>
+
 ### create_archive_rule
 
 Creates an archive rule for the specified analyzer.
@@ -219,6 +242,8 @@ Keyword-only arguments:
 - `ruleName`: `str` *(required)*
 - `clientToken`: `str`
 
+<a id="delete_analyzer"></a>
+
 ### delete_analyzer
 
 Deletes the specified analyzer.
@@ -235,6 +260,8 @@ Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
 - `clientToken`: `str`
+
+<a id="delete_archive_rule"></a>
 
 ### delete_archive_rule
 
@@ -255,6 +282,8 @@ Keyword-only arguments:
 - `ruleName`: `str` *(required)*
 - `clientToken`: `str`
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -273,6 +302,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_access_preview"></a>
 
 ### get_access_preview
 
@@ -295,6 +326,8 @@ Keyword-only arguments:
 Returns
 [GetAccessPreviewResponseTypeDef](./type_defs.md#getaccesspreviewresponsetypedef).
 
+<a id="get_analyzed_resource"></a>
+
 ### get_analyzed_resource
 
 Retrieves information about a resource that was analyzed.
@@ -316,6 +349,8 @@ Keyword-only arguments:
 Returns
 [GetAnalyzedResourceResponseTypeDef](./type_defs.md#getanalyzedresourceresponsetypedef).
 
+<a id="get_analyzer"></a>
+
 ### get_analyzer
 
 Retrieves information about the specified analyzer.
@@ -334,6 +369,8 @@ Keyword-only arguments:
 
 Returns
 [GetAnalyzerResponseTypeDef](./type_defs.md#getanalyzerresponsetypedef).
+
+<a id="get_archive_rule"></a>
 
 ### get_archive_rule
 
@@ -355,6 +392,8 @@ Keyword-only arguments:
 Returns
 [GetArchiveRuleResponseTypeDef](./type_defs.md#getarchiveruleresponsetypedef).
 
+<a id="get_finding"></a>
+
 ### get_finding
 
 Retrieves information about the specified finding.
@@ -373,6 +412,8 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 
 Returns [GetFindingResponseTypeDef](./type_defs.md#getfindingresponsetypedef).
+
+<a id="get_generated_policy"></a>
 
 ### get_generated_policy
 
@@ -395,6 +436,8 @@ Keyword-only arguments:
 
 Returns
 [GetGeneratedPolicyResponseTypeDef](./type_defs.md#getgeneratedpolicyresponsetypedef).
+
+<a id="list_access_preview_findings"></a>
 
 ### list_access_preview_findings
 
@@ -422,6 +465,8 @@ Keyword-only arguments:
 Returns
 [ListAccessPreviewFindingsResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponsetypedef).
 
+<a id="list_access_previews"></a>
+
 ### list_access_previews
 
 Retrieves a list of access previews for the specified analyzer.
@@ -443,6 +488,8 @@ Keyword-only arguments:
 
 Returns
 [ListAccessPreviewsResponseTypeDef](./type_defs.md#listaccesspreviewsresponsetypedef).
+
+<a id="list_analyzed_resources"></a>
 
 ### list_analyzed_resources
 
@@ -468,6 +515,8 @@ Keyword-only arguments:
 Returns
 [ListAnalyzedResourcesResponseTypeDef](./type_defs.md#listanalyzedresourcesresponsetypedef).
 
+<a id="list_analyzers"></a>
+
 ### list_analyzers
 
 Retrieves a list of analyzers.
@@ -488,6 +537,8 @@ Keyword-only arguments:
 
 Returns
 [ListAnalyzersResponseTypeDef](./type_defs.md#listanalyzersresponsetypedef).
+
+<a id="list_archive_rules"></a>
 
 ### list_archive_rules
 
@@ -510,6 +561,8 @@ Keyword-only arguments:
 
 Returns
 [ListArchiveRulesResponseTypeDef](./type_defs.md#listarchiverulesresponsetypedef).
+
+<a id="list_findings"></a>
 
 ### list_findings
 
@@ -535,6 +588,8 @@ Keyword-only arguments:
 Returns
 [ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
+<a id="list_policy_generations"></a>
+
 ### list_policy_generations
 
 Lists all of the policy generations requested in the last seven days.
@@ -557,6 +612,8 @@ Keyword-only arguments:
 Returns
 [ListPolicyGenerationsResponseTypeDef](./type_defs.md#listpolicygenerationsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves a list of tags applied to the specified resource.
@@ -576,6 +633,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="start_policy_generation"></a>
 
 ### start_policy_generation
 
@@ -602,6 +661,8 @@ Keyword-only arguments:
 Returns
 [StartPolicyGenerationResponseTypeDef](./type_defs.md#startpolicygenerationresponsetypedef).
 
+<a id="start_resource_scan"></a>
+
 ### start_resource_scan
 
 Immediately starts a scan of the policies applied to the specified resource.
@@ -619,6 +680,8 @@ Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `resourceArn`: `str` *(required)*
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -639,6 +702,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from the specified resource.
@@ -657,6 +722,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_archive_rule"></a>
 
 ### update_archive_rule
 
@@ -679,6 +746,8 @@ Keyword-only arguments:
 - `ruleName`: `str` *(required)*
 - `clientToken`: `str`
 
+<a id="update_findings"></a>
+
 ### update_findings
 
 Updates the status for the specified findings.
@@ -699,6 +768,8 @@ Keyword-only arguments:
 - `clientToken`: `str`
 - `ids`: `Sequence`\[`str`\]
 - `resourceArn`: `str`
+
+<a id="validate_policy"></a>
 
 ### validate_policy
 
@@ -724,6 +795,8 @@ Keyword-only arguments:
 
 Returns
 [ValidatePolicyResponseTypeDef](./type_defs.md#validatepolicyresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

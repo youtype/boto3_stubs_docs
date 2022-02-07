@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-snowball-module"></a>
+
 # Type annotations for boto3 Snowball module
 
 > [Index](..) > Snowball
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
 type annotations stubs module
-[mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
+[mypy-boto3-snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[snowball]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[snowball]'
+
+# standalone installation
 pip install mypy-boto3-snowball
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-snowball
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="snowballclient"></a>
+
 ## SnowballClient
 
 Type annotations for `boto3.client("snowball")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_snowball.client import SnowballClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -62,6 +76,8 @@ from mypy_boto3_snowball.client import SnowballClient
 - [update_job_shipment_state](./client.md#update_job_shipment_state)
 - [update_long_term_pricing](./client.md#update_long_term_pricing)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SnowballClient [exceptions](./client.md#exceptions)
@@ -79,6 +95,8 @@ SnowballClient [exceptions](./client.md#exceptions)
 - ReturnShippingLabelAlreadyExistsException
 - UnsupportedAddressException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -87,7 +105,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_snowball.paginators import DescribeAddressesPaginator, ...
+from mypy_boto3_snowball.paginator import DescribeAddressesPaginator, ...
 ```
 
 - [DescribeAddressesPaginator](./paginators.md#describeaddressespaginator)
@@ -95,6 +113,8 @@ from mypy_boto3_snowball.paginators import DescribeAddressesPaginator, ...
 - [ListClustersPaginator](./paginators.md#listclusterspaginator)
 - [ListCompatibleImagesPaginator](./paginators.md#listcompatibleimagespaginator)
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -126,6 +146,8 @@ from mypy_boto3_snowball.literals import ClusterStateType, ...
 - [TransferOptionType](./literals.md#transferoptiontype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

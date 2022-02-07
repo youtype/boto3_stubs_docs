@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-forecastservice-module"></a>
+
 # Type annotations for boto3 ForecastService module
 
 > [Index](..) > ForecastService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
 type annotations stubs module
-[mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
+[mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[forecast]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[forecast]'
+
+# standalone installation
 pip install mypy-boto3-forecast
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-forecast
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="forecastserviceclient"></a>
+
 ## ForecastServiceClient
 
 Type annotations for `boto3.client("forecast")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_forecast.client import ForecastServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -82,6 +96,8 @@ from mypy_boto3_forecast.client import ForecastServiceClient
 - [untag_resource](./client.md#untag_resource)
 - [update_dataset_group](./client.md#update_dataset_group)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ForecastServiceClient [exceptions](./client.md#exceptions)
@@ -94,6 +110,8 @@ ForecastServiceClient [exceptions](./client.md#exceptions)
 - ResourceInUseException
 - ResourceNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -102,7 +120,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_forecast.paginators import ListDatasetGroupsPaginator, ...
+from mypy_boto3_forecast.paginator import ListDatasetGroupsPaginator, ...
 ```
 
 - [ListDatasetGroupsPaginator](./paginators.md#listdatasetgroupspaginator)
@@ -112,6 +130,8 @@ from mypy_boto3_forecast.paginators import ListDatasetGroupsPaginator, ...
 - [ListForecastsPaginator](./paginators.md#listforecastspaginator)
 - [ListPredictorBacktestExportJobsPaginator](./paginators.md#listpredictorbacktestexportjobspaginator)
 - [ListPredictorsPaginator](./paginators.md#listpredictorspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -144,6 +164,8 @@ from mypy_boto3_forecast.literals import AttributeTypeType, ...
 - [TimeSeriesGranularityType](./literals.md#timeseriesgranularitytype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

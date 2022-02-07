@@ -1,3 +1,5 @@
+<a id="frauddetectorclient-for-boto3-frauddetector-module"></a>
+
 # FraudDetectorClient for boto3 FraudDetector module
 
 > [Index](..) > [FraudDetector](.) > FraudDetectorClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
 type annotations stubs module
-[mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
+[mypy-boto3-frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
 - [FraudDetectorClient for boto3 FraudDetector module](#frauddetectorclient-for-boto3-frauddetector-module)
   - [FraudDetectorClient](#frauddetectorclient)
@@ -83,6 +85,8 @@ type annotations stubs module
     - [update_rule_version](#update_rule_version)
     - [update_variable](#update_variable)
 
+<a id="frauddetectorclient"></a>
+
 ## FraudDetectorClient
 
 Type annotations for `boto3.client("frauddetector")`
@@ -90,14 +94,17 @@ Type annotations for `boto3.client("frauddetector")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_frauddetector.client import FraudDetectorClient
 
 def get_frauddetector_client() -> FraudDetectorClient:
-    return boto3.client("frauddetector")
+    return Session().client("frauddetector")
 ```
 
 Boto3 documentation:
 [FraudDetector.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -122,7 +129,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -134,6 +145,8 @@ Boto3 documentation:
 [FraudDetector.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_create_variable"></a>
 
 ### batch_create_variable
 
@@ -158,6 +171,8 @@ Keyword-only arguments:
 Returns
 [BatchCreateVariableResultTypeDef](./type_defs.md#batchcreatevariableresulttypedef).
 
+<a id="batch_get_variable"></a>
+
 ### batch_get_variable
 
 Gets a batch of variables.
@@ -177,6 +192,8 @@ Keyword-only arguments:
 Returns
 [BatchGetVariableResultTypeDef](./type_defs.md#batchgetvariableresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -191,6 +208,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_batch_import_job"></a>
 
 ### cancel_batch_import_job
 
@@ -211,6 +230,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="cancel_batch_prediction_job"></a>
+
 ### cancel_batch_prediction_job
 
 Cancels the specified batch prediction job.
@@ -229,6 +250,8 @@ Keyword-only arguments:
 - `jobId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_batch_import_job"></a>
 
 ### create_batch_import_job
 
@@ -253,6 +276,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_batch_prediction_job"></a>
 
 ### create_batch_prediction_job
 
@@ -279,6 +304,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_detector_version"></a>
 
 ### create_detector_version
 
@@ -308,6 +335,8 @@ Keyword-only arguments:
 Returns
 [CreateDetectorVersionResultTypeDef](./type_defs.md#createdetectorversionresulttypedef).
 
+<a id="create_model"></a>
+
 ### create_model
 
 Creates a model using the specified model type.
@@ -330,6 +359,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_model_version"></a>
 
 ### create_model_version
 
@@ -364,6 +395,8 @@ Keyword-only arguments:
 Returns
 [CreateModelVersionResultTypeDef](./type_defs.md#createmodelversionresulttypedef).
 
+<a id="create_rule"></a>
+
 ### create_rule
 
 Creates a rule for use with the specified detector.
@@ -389,6 +422,8 @@ Keyword-only arguments:
 
 Returns [CreateRuleResultTypeDef](./type_defs.md#createruleresulttypedef).
 
+<a id="create_variable"></a>
+
 ### create_variable
 
 Creates a variable.
@@ -413,6 +448,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_batch_import_job"></a>
+
 ### delete_batch_import_job
 
 Deletes data that was batch imported to Amazon Fraud Detector.
@@ -431,6 +468,8 @@ Keyword-only arguments:
 - `jobId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_batch_prediction_job"></a>
 
 ### delete_batch_prediction_job
 
@@ -451,6 +490,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_detector"></a>
+
 ### delete_detector
 
 Deletes the detector.
@@ -468,6 +509,8 @@ Keyword-only arguments:
 - `detectorId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_detector_version"></a>
 
 ### delete_detector_version
 
@@ -489,6 +532,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_entity_type"></a>
+
 ### delete_entity_type
 
 Deletes an entity type.
@@ -506,6 +551,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_event"></a>
 
 ### delete_event
 
@@ -527,6 +574,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_event_type"></a>
+
 ### delete_event_type
 
 Deletes an event type.
@@ -544,6 +593,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_events_by_event_type"></a>
 
 ### delete_events_by_event_type
 
@@ -565,6 +616,8 @@ Keyword-only arguments:
 Returns
 [DeleteEventsByEventTypeResultTypeDef](./type_defs.md#deleteeventsbyeventtyperesulttypedef).
 
+<a id="delete_external_model"></a>
+
 ### delete_external_model
 
 Removes a SageMaker model from Amazon Fraud Detector.
@@ -584,6 +637,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_label"></a>
+
 ### delete_label
 
 Deletes a label.
@@ -601,6 +656,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_model"></a>
 
 ### delete_model
 
@@ -621,6 +678,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_model_version"></a>
 
 ### delete_model_version
 
@@ -644,6 +703,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_outcome"></a>
+
 ### delete_outcome
 
 Deletes an outcome.
@@ -661,6 +722,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_rule"></a>
 
 ### delete_rule
 
@@ -680,6 +743,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_variable"></a>
+
 ### delete_variable
 
 Deletes a variable.
@@ -697,6 +762,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_detector"></a>
 
 ### describe_detector
 
@@ -718,6 +785,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDetectorResultTypeDef](./type_defs.md#describedetectorresulttypedef).
+
+<a id="describe_model_versions"></a>
 
 ### describe_model_versions
 
@@ -744,6 +813,8 @@ Keyword-only arguments:
 Returns
 [DescribeModelVersionsResultTypeDef](./type_defs.md#describemodelversionsresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -762,6 +833,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_batch_import_jobs"></a>
 
 ### get_batch_import_jobs
 
@@ -785,6 +858,8 @@ Keyword-only arguments:
 Returns
 [GetBatchImportJobsResultTypeDef](./type_defs.md#getbatchimportjobsresulttypedef).
 
+<a id="get_batch_prediction_jobs"></a>
+
 ### get_batch_prediction_jobs
 
 Gets all batch prediction jobs or a specific job if you specify a job ID.
@@ -807,6 +882,8 @@ Keyword-only arguments:
 Returns
 [GetBatchPredictionJobsResultTypeDef](./type_defs.md#getbatchpredictionjobsresulttypedef).
 
+<a id="get_delete_events_by_event_type_status"></a>
+
 ### get_delete_events_by_event_type_status
 
 Retrieves the status of a `DeleteEventsByEventType` action.
@@ -826,6 +903,8 @@ Keyword-only arguments:
 
 Returns
 [GetDeleteEventsByEventTypeStatusResultTypeDef](./type_defs.md#getdeleteeventsbyeventtypestatusresulttypedef).
+
+<a id="get_detector_version"></a>
 
 ### get_detector_version
 
@@ -848,6 +927,8 @@ Keyword-only arguments:
 Returns
 [GetDetectorVersionResultTypeDef](./type_defs.md#getdetectorversionresulttypedef).
 
+<a id="get_detectors"></a>
+
 ### get_detectors
 
 Gets all detectors or a single detector if a `detectorId` is specified.
@@ -867,6 +948,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns [GetDetectorsResultTypeDef](./type_defs.md#getdetectorsresulttypedef).
+
+<a id="get_entity_types"></a>
 
 ### get_entity_types
 
@@ -889,6 +972,8 @@ Keyword-only arguments:
 Returns
 [GetEntityTypesResultTypeDef](./type_defs.md#getentitytypesresulttypedef).
 
+<a id="get_event"></a>
+
 ### get_event
 
 Retrieves details of events stored with Amazon Fraud Detector.
@@ -907,6 +992,8 @@ Keyword-only arguments:
 - `eventTypeName`: `str` *(required)*
 
 Returns [GetEventResultTypeDef](./type_defs.md#geteventresulttypedef).
+
+<a id="get_event_prediction"></a>
 
 ### get_event_prediction
 
@@ -937,6 +1024,8 @@ Keyword-only arguments:
 Returns
 [GetEventPredictionResultTypeDef](./type_defs.md#geteventpredictionresulttypedef).
 
+<a id="get_event_prediction_metadata"></a>
+
 ### get_event_prediction_metadata
 
 Gets details of the past fraud predictions for the specified event ID, event
@@ -963,6 +1052,8 @@ Keyword-only arguments:
 Returns
 [GetEventPredictionMetadataResultTypeDef](./type_defs.md#geteventpredictionmetadataresulttypedef).
 
+<a id="get_event_types"></a>
+
 ### get_event_types
 
 Gets all event types or a specific event type if name is provided.
@@ -983,6 +1074,8 @@ Keyword-only arguments:
 
 Returns
 [GetEventTypesResultTypeDef](./type_defs.md#geteventtypesresulttypedef).
+
+<a id="get_external_models"></a>
 
 ### get_external_models
 
@@ -1007,6 +1100,8 @@ Keyword-only arguments:
 Returns
 [GetExternalModelsResultTypeDef](./type_defs.md#getexternalmodelsresulttypedef).
 
+<a id="get_kms_encryption_key"></a>
+
 ### get_kms_encryption_key
 
 Gets the encryption key if a KMS key has been specified to be used to encrypt
@@ -1020,6 +1115,8 @@ Boto3 documentation:
 
 Returns
 [GetKMSEncryptionKeyResultTypeDef](./type_defs.md#getkmsencryptionkeyresulttypedef).
+
+<a id="get_labels"></a>
 
 ### get_labels
 
@@ -1040,6 +1137,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns [GetLabelsResultTypeDef](./type_defs.md#getlabelsresulttypedef).
+
+<a id="get_model_version"></a>
 
 ### get_model_version
 
@@ -1063,6 +1162,8 @@ Keyword-only arguments:
 Returns
 [GetModelVersionResultTypeDef](./type_defs.md#getmodelversionresulttypedef).
 
+<a id="get_models"></a>
+
 ### get_models
 
 Gets one or more models.
@@ -1084,6 +1185,8 @@ Keyword-only arguments:
 
 Returns [GetModelsResultTypeDef](./type_defs.md#getmodelsresulttypedef).
 
+<a id="get_outcomes"></a>
+
 ### get_outcomes
 
 Gets one or more outcomes.
@@ -1103,6 +1206,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns [GetOutcomesResultTypeDef](./type_defs.md#getoutcomesresulttypedef).
+
+<a id="get_rules"></a>
 
 ### get_rules
 
@@ -1127,6 +1232,8 @@ Keyword-only arguments:
 
 Returns [GetRulesResultTypeDef](./type_defs.md#getrulesresulttypedef).
 
+<a id="get_variables"></a>
+
 ### get_variables
 
 Gets all of the variables or the specific variable.
@@ -1146,6 +1253,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns [GetVariablesResultTypeDef](./type_defs.md#getvariablesresulttypedef).
+
+<a id="list_event_predictions"></a>
 
 ### list_event_predictions
 
@@ -1175,6 +1284,8 @@ Keyword-only arguments:
 Returns
 [ListEventPredictionsResultTypeDef](./type_defs.md#listeventpredictionsresulttypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all tags associated with the resource.
@@ -1197,6 +1308,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
+<a id="put_detector"></a>
+
 ### put_detector
 
 Creates or updates a detector.
@@ -1218,6 +1331,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_entity_type"></a>
+
 ### put_entity_type
 
 Creates or updates an entity type.
@@ -1237,6 +1352,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_event_type"></a>
 
 ### put_event_type
 
@@ -1261,6 +1378,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_external_model"></a>
 
 ### put_external_model
 
@@ -1292,6 +1411,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_kms_encryption_key"></a>
+
 ### put_kms_encryption_key
 
 Specifies the KMS key to be used to encrypt content in Amazon Fraud Detector.
@@ -1310,6 +1431,8 @@ Keyword-only arguments:
 - `kmsEncryptionKeyArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_label"></a>
 
 ### put_label
 
@@ -1331,6 +1454,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_outcome"></a>
+
 ### put_outcome
 
 Creates or updates an outcome.
@@ -1350,6 +1475,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="send_event"></a>
 
 ### send_event
 
@@ -1377,6 +1504,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns tags to a resource.
@@ -1396,6 +1525,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a resource.
@@ -1414,6 +1545,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_detector_version"></a>
 
 ### update_detector_version
 
@@ -1442,6 +1575,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_detector_version_metadata"></a>
+
 ### update_detector_version_metadata
 
 Updates the detector version's description.
@@ -1462,6 +1597,8 @@ Keyword-only arguments:
 - `description`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_detector_version_status"></a>
 
 ### update_detector_version_status
 
@@ -1486,6 +1623,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_event_label"></a>
+
 ### update_event_label
 
 Updates the specified event with a new label.
@@ -1507,6 +1646,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_model"></a>
+
 ### update_model
 
 Updates model description.
@@ -1527,6 +1668,8 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_model_version"></a>
 
 ### update_model_version
 
@@ -1556,6 +1699,8 @@ Keyword-only arguments:
 Returns
 [UpdateModelVersionResultTypeDef](./type_defs.md#updatemodelversionresulttypedef).
 
+<a id="update_model_version_status"></a>
+
 ### update_model_version_status
 
 Updates the status of a model version.
@@ -1580,6 +1725,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_rule_metadata"></a>
+
 ### update_rule_metadata
 
 Updates a rule's metadata.
@@ -1599,6 +1746,8 @@ Keyword-only arguments:
 - `description`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_rule_version"></a>
 
 ### update_rule_version
 
@@ -1625,6 +1774,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRuleVersionResultTypeDef](./type_defs.md#updateruleversionresulttypedef).
+
+<a id="update_variable"></a>
 
 ### update_variable
 

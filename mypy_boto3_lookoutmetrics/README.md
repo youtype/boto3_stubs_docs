@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-lookoutmetrics-module"></a>
+
 # Type annotations for boto3 LookoutMetrics module
 
 > [Index](..) > LookoutMetrics
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
 type annotations stubs module
-[mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
+[mypy-boto3-lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[lookoutmetrics]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[lookoutmetrics]'
+
+# standalone installation
 pip install mypy-boto3-lookoutmetrics
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-lookoutmetrics
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="lookoutmetricsclient"></a>
 
 ## LookoutMetricsClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_lookoutmetrics.client import LookoutMetricsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -62,6 +76,8 @@ from mypy_boto3_lookoutmetrics.client import LookoutMetricsClient
 - [update_anomaly_detector](./client.md#update_anomaly_detector)
 - [update_metric_set](./client.md#update_metric_set)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 LookoutMetricsClient [exceptions](./client.md#exceptions)
@@ -74,6 +90,8 @@ LookoutMetricsClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - TooManyRequestsException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -96,6 +114,8 @@ from mypy_boto3_lookoutmetrics.literals import AggregationFunctionType, ...
 - [JsonFileCompressionType](./literals.md#jsonfilecompressiontype)
 - [RelationshipTypeType](./literals.md#relationshiptypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

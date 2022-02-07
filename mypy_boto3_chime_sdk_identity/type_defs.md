@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-chimesdkidentity-module"></a>
+
 # Typed dictionaries for boto3 ChimeSDKIdentity module
 
 > [Index](..) > [ChimeSDKIdentity](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ChimeSDKIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity)
 type annotations stubs module
-[mypy_boto3_chime_sdk_identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
+[mypy-boto3-chime-sdk-identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
 
 - [Typed dictionaries for boto3 ChimeSDKIdentity module](#typed-dictionaries-for-boto3-chimesdkidentity-module)
   - [AppInstanceAdminSummaryTypeDef](#appinstanceadminsummarytypedef)
@@ -66,6 +68,8 @@ type annotations stubs module
   - [UpdateAppInstanceUserRequestRequestTypeDef](#updateappinstanceuserrequestrequesttypedef)
   - [UpdateAppInstanceUserResponseTypeDef](#updateappinstanceuserresponsetypedef)
 
+<a id="appinstanceadminsummarytypedef"></a>
+
 ## AppInstanceAdminSummaryTypeDef
 
 ```python
@@ -75,6 +79,8 @@ from mypy_boto3_chime_sdk_identity.type_defs import AppInstanceAdminSummaryTypeD
 Optional fields:
 
 - `Admin`: [IdentityTypeDef](./type_defs.md#identitytypedef)
+
+<a id="appinstanceadmintypedef"></a>
 
 ## AppInstanceAdminTypeDef
 
@@ -88,6 +94,8 @@ Optional fields:
 - `AppInstanceArn`: `str`
 - `CreatedTimestamp`: `datetime`
 
+<a id="appinstanceretentionsettingstypedef"></a>
+
 ## AppInstanceRetentionSettingsTypeDef
 
 ```python
@@ -98,6 +106,8 @@ Optional fields:
 
 - `ChannelRetentionSettings`:
   [ChannelRetentionSettingsTypeDef](./type_defs.md#channelretentionsettingstypedef)
+
+<a id="appinstancesummarytypedef"></a>
 
 ## AppInstanceSummaryTypeDef
 
@@ -110,6 +120,8 @@ Optional fields:
 - `AppInstanceArn`: `str`
 - `Name`: `str`
 - `Metadata`: `str`
+
+<a id="appinstancetypedef"></a>
 
 ## AppInstanceTypeDef
 
@@ -124,6 +136,8 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
 - `Metadata`: `str`
+
+<a id="appinstanceuserendpointsummarytypedef"></a>
 
 ## AppInstanceUserEndpointSummaryTypeDef
 
@@ -140,6 +154,8 @@ Optional fields:
   [AppInstanceUserEndpointTypeType](./literals.md#appinstanceuserendpointtypetype)
 - `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
 - `EndpointState`: [EndpointStateTypeDef](./type_defs.md#endpointstatetypedef)
+
+<a id="appinstanceuserendpointtypedef"></a>
 
 ## AppInstanceUserEndpointTypeDef
 
@@ -162,6 +178,8 @@ Optional fields:
 - `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
 - `EndpointState`: [EndpointStateTypeDef](./type_defs.md#endpointstatetypedef)
 
+<a id="appinstanceusersummarytypedef"></a>
+
 ## AppInstanceUserSummaryTypeDef
 
 ```python
@@ -173,6 +191,8 @@ Optional fields:
 - `AppInstanceUserArn`: `str`
 - `Name`: `str`
 - `Metadata`: `str`
+
+<a id="appinstanceusertypedef"></a>
 
 ## AppInstanceUserTypeDef
 
@@ -188,6 +208,8 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
 
+<a id="channelretentionsettingstypedef"></a>
+
 ## ChannelRetentionSettingsTypeDef
 
 ```python
@@ -197,6 +219,8 @@ from mypy_boto3_chime_sdk_identity.type_defs import ChannelRetentionSettingsType
 Optional fields:
 
 - `RetentionDays`: `int`
+
+<a id="createappinstanceadminrequestrequesttypedef"></a>
 
 ## CreateAppInstanceAdminRequestRequestTypeDef
 
@@ -208,6 +232,8 @@ Required fields:
 
 - `AppInstanceAdminArn`: `str`
 - `AppInstanceArn`: `str`
+
+<a id="createappinstanceadminresponsetypedef"></a>
 
 ## CreateAppInstanceAdminResponseTypeDef
 
@@ -221,6 +247,8 @@ Required fields:
 - `AppInstanceArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createappinstancerequestrequesttypedef"></a>
 
 ## CreateAppInstanceRequestRequestTypeDef
 
@@ -238,6 +266,8 @@ Optional fields:
 - `Metadata`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createappinstanceresponsetypedef"></a>
+
 ## CreateAppInstanceResponseTypeDef
 
 ```python
@@ -249,6 +279,8 @@ Required fields:
 - `AppInstanceArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createappinstanceuserrequestrequesttypedef"></a>
 
 ## CreateAppInstanceUserRequestRequestTypeDef
 
@@ -268,6 +300,8 @@ Optional fields:
 - `Metadata`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createappinstanceuserresponsetypedef"></a>
+
 ## CreateAppInstanceUserResponseTypeDef
 
 ```python
@@ -280,6 +314,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteappinstanceadminrequestrequesttypedef"></a>
+
 ## DeleteAppInstanceAdminRequestRequestTypeDef
 
 ```python
@@ -291,6 +327,8 @@ Required fields:
 - `AppInstanceAdminArn`: `str`
 - `AppInstanceArn`: `str`
 
+<a id="deleteappinstancerequestrequesttypedef"></a>
+
 ## DeleteAppInstanceRequestRequestTypeDef
 
 ```python
@@ -301,6 +339,8 @@ Required fields:
 
 - `AppInstanceArn`: `str`
 
+<a id="deleteappinstanceuserrequestrequesttypedef"></a>
+
 ## DeleteAppInstanceUserRequestRequestTypeDef
 
 ```python
@@ -310,6 +350,8 @@ from mypy_boto3_chime_sdk_identity.type_defs import DeleteAppInstanceUserRequest
 Required fields:
 
 - `AppInstanceUserArn`: `str`
+
+<a id="deregisterappinstanceuserendpointrequestrequesttypedef"></a>
 
 ## DeregisterAppInstanceUserEndpointRequestRequestTypeDef
 
@@ -322,6 +364,8 @@ Required fields:
 - `AppInstanceUserArn`: `str`
 - `EndpointId`: `str`
 
+<a id="describeappinstanceadminrequestrequesttypedef"></a>
+
 ## DescribeAppInstanceAdminRequestRequestTypeDef
 
 ```python
@@ -332,6 +376,8 @@ Required fields:
 
 - `AppInstanceAdminArn`: `str`
 - `AppInstanceArn`: `str`
+
+<a id="describeappinstanceadminresponsetypedef"></a>
 
 ## DescribeAppInstanceAdminResponseTypeDef
 
@@ -346,6 +392,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeappinstancerequestrequesttypedef"></a>
+
 ## DescribeAppInstanceRequestRequestTypeDef
 
 ```python
@@ -355,6 +403,8 @@ from mypy_boto3_chime_sdk_identity.type_defs import DescribeAppInstanceRequestRe
 Required fields:
 
 - `AppInstanceArn`: `str`
+
+<a id="describeappinstanceresponsetypedef"></a>
 
 ## DescribeAppInstanceResponseTypeDef
 
@@ -368,6 +418,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeappinstanceuserendpointrequestrequesttypedef"></a>
+
 ## DescribeAppInstanceUserEndpointRequestRequestTypeDef
 
 ```python
@@ -378,6 +430,8 @@ Required fields:
 
 - `AppInstanceUserArn`: `str`
 - `EndpointId`: `str`
+
+<a id="describeappinstanceuserendpointresponsetypedef"></a>
 
 ## DescribeAppInstanceUserEndpointResponseTypeDef
 
@@ -392,6 +446,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeappinstanceuserrequestrequesttypedef"></a>
+
 ## DescribeAppInstanceUserRequestRequestTypeDef
 
 ```python
@@ -401,6 +457,8 @@ from mypy_boto3_chime_sdk_identity.type_defs import DescribeAppInstanceUserReque
 Required fields:
 
 - `AppInstanceUserArn`: `str`
+
+<a id="describeappinstanceuserresponsetypedef"></a>
 
 ## DescribeAppInstanceUserResponseTypeDef
 
@@ -415,6 +473,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="endpointattributestypedef"></a>
+
 ## EndpointAttributesTypeDef
 
 ```python
@@ -428,6 +488,8 @@ Required fields:
 Optional fields:
 
 - `VoipDeviceToken`: `str`
+
+<a id="endpointstatetypedef"></a>
 
 ## EndpointStateTypeDef
 
@@ -444,6 +506,8 @@ Optional fields:
 - `StatusReason`:
   [EndpointStatusReasonType](./literals.md#endpointstatusreasontype)
 
+<a id="getappinstanceretentionsettingsrequestrequesttypedef"></a>
+
 ## GetAppInstanceRetentionSettingsRequestRequestTypeDef
 
 ```python
@@ -453,6 +517,8 @@ from mypy_boto3_chime_sdk_identity.type_defs import GetAppInstanceRetentionSetti
 Required fields:
 
 - `AppInstanceArn`: `str`
+
+<a id="getappinstanceretentionsettingsresponsetypedef"></a>
 
 ## GetAppInstanceRetentionSettingsResponseTypeDef
 
@@ -468,6 +534,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="identitytypedef"></a>
+
 ## IdentityTypeDef
 
 ```python
@@ -478,6 +546,8 @@ Optional fields:
 
 - `Arn`: `str`
 - `Name`: `str`
+
+<a id="listappinstanceadminsrequestrequesttypedef"></a>
 
 ## ListAppInstanceAdminsRequestRequestTypeDef
 
@@ -494,6 +564,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listappinstanceadminsresponsetypedef"></a>
+
 ## ListAppInstanceAdminsResponseTypeDef
 
 ```python
@@ -508,6 +580,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listappinstanceuserendpointsrequestrequesttypedef"></a>
 
 ## ListAppInstanceUserEndpointsRequestRequestTypeDef
 
@@ -524,6 +598,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listappinstanceuserendpointsresponsetypedef"></a>
+
 ## ListAppInstanceUserEndpointsResponseTypeDef
 
 ```python
@@ -537,6 +613,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listappinstanceusersrequestrequesttypedef"></a>
 
 ## ListAppInstanceUsersRequestRequestTypeDef
 
@@ -553,6 +631,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listappinstanceusersresponsetypedef"></a>
+
 ## ListAppInstanceUsersResponseTypeDef
 
 ```python
@@ -568,6 +648,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listappinstancesrequestrequesttypedef"></a>
+
 ## ListAppInstancesRequestRequestTypeDef
 
 ```python
@@ -578,6 +660,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listappinstancesresponsetypedef"></a>
 
 ## ListAppInstancesResponseTypeDef
 
@@ -593,6 +677,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -602,6 +688,8 @@ from mypy_boto3_chime_sdk_identity.type_defs import ListTagsForResourceRequestRe
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -615,6 +703,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putappinstanceretentionsettingsrequestrequesttypedef"></a>
+
 ## PutAppInstanceRetentionSettingsRequestRequestTypeDef
 
 ```python
@@ -626,6 +716,8 @@ Required fields:
 - `AppInstanceArn`: `str`
 - `AppInstanceRetentionSettings`:
   [AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef)
+
+<a id="putappinstanceretentionsettingsresponsetypedef"></a>
 
 ## PutAppInstanceRetentionSettingsResponseTypeDef
 
@@ -640,6 +732,8 @@ Required fields:
 - `InitiateDeletionTimestamp`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="registerappinstanceuserendpointrequestrequesttypedef"></a>
 
 ## RegisterAppInstanceUserEndpointRequestRequestTypeDef
 
@@ -662,6 +756,8 @@ Optional fields:
 - `Name`: `str`
 - `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
 
+<a id="registerappinstanceuserendpointresponsetypedef"></a>
+
 ## RegisterAppInstanceUserEndpointResponseTypeDef
 
 ```python
@@ -674,6 +770,8 @@ Required fields:
 - `EndpointId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -689,6 +787,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -699,6 +799,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -711,6 +813,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -721,6 +825,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateappinstancerequestrequesttypedef"></a>
 
 ## UpdateAppInstanceRequestRequestTypeDef
 
@@ -734,6 +840,8 @@ Required fields:
 - `Name`: `str`
 - `Metadata`: `str`
 
+<a id="updateappinstanceresponsetypedef"></a>
+
 ## UpdateAppInstanceResponseTypeDef
 
 ```python
@@ -745,6 +853,8 @@ Required fields:
 - `AppInstanceArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateappinstanceuserendpointrequestrequesttypedef"></a>
 
 ## UpdateAppInstanceUserEndpointRequestRequestTypeDef
 
@@ -762,6 +872,8 @@ Optional fields:
 - `Name`: `str`
 - `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
 
+<a id="updateappinstanceuserendpointresponsetypedef"></a>
+
 ## UpdateAppInstanceUserEndpointResponseTypeDef
 
 ```python
@@ -775,6 +887,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateappinstanceuserrequestrequesttypedef"></a>
+
 ## UpdateAppInstanceUserRequestRequestTypeDef
 
 ```python
@@ -786,6 +900,8 @@ Required fields:
 - `AppInstanceUserArn`: `str`
 - `Name`: `str`
 - `Metadata`: `str`
+
+<a id="updateappinstanceuserresponsetypedef"></a>
 
 ## UpdateAppInstanceUserResponseTypeDef
 

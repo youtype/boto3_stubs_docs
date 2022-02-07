@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-finspacedata-module"></a>
+
 # Typed dictionaries for boto3 FinSpaceData module
 
 > [Index](..) > [FinSpaceData](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
 type annotations stubs module
-[mypy_boto3_finspace_data](https://pypi.org/project/mypy-boto3-finspace-data/).
+[mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 - [Typed dictionaries for boto3 FinSpaceData module](#typed-dictionaries-for-boto3-finspacedata-module)
   - [ChangesetErrorInfoTypeDef](#changeseterrorinfotypedef)
@@ -52,6 +54,8 @@ type annotations stubs module
   - [UpdateDatasetRequestRequestTypeDef](#updatedatasetrequestrequesttypedef)
   - [UpdateDatasetResponseTypeDef](#updatedatasetresponsetypedef)
 
+<a id="changeseterrorinfotypedef"></a>
+
 ## ChangesetErrorInfoTypeDef
 
 ```python
@@ -62,6 +66,8 @@ Optional fields:
 
 - `errorMessage`: `str`
 - `errorCategory`: [ErrorCategoryType](./literals.md#errorcategorytype)
+
+<a id="changesetsummarytypedef"></a>
 
 ## ChangesetSummaryTypeDef
 
@@ -86,6 +92,8 @@ Optional fields:
 - `updatesChangesetId`: `str`
 - `updatedByChangesetId`: `str`
 
+<a id="columndefinitiontypedef"></a>
+
 ## ColumnDefinitionTypeDef
 
 ```python
@@ -97,6 +105,8 @@ Optional fields:
 - `dataType`: [ColumnDataTypeType](./literals.md#columndatatypetype)
 - `columnName`: `str`
 - `columnDescription`: `str`
+
+<a id="createchangesetrequestrequesttypedef"></a>
 
 ## CreateChangesetRequestRequestTypeDef
 
@@ -115,6 +125,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="createchangesetresponsetypedef"></a>
+
 ## CreateChangesetResponseTypeDef
 
 ```python
@@ -127,6 +139,8 @@ Required fields:
 - `changesetId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdataviewrequestrequesttypedef"></a>
 
 ## CreateDataViewRequestRequestTypeDef
 
@@ -148,6 +162,8 @@ Optional fields:
 - `partitionColumns`: `Sequence`\[`str`\]
 - `asOfTimestamp`: `int`
 
+<a id="createdataviewresponsetypedef"></a>
+
 ## CreateDataViewResponseTypeDef
 
 ```python
@@ -160,6 +176,8 @@ Required fields:
 - `dataViewId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasetrequestrequesttypedef"></a>
 
 ## CreateDatasetRequestRequestTypeDef
 
@@ -183,6 +201,8 @@ Optional fields:
 - `alias`: `str`
 - `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
 
+<a id="createdatasetresponsetypedef"></a>
+
 ## CreateDatasetResponseTypeDef
 
 ```python
@@ -195,6 +215,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="credentialstypedef"></a>
+
 ## CredentialsTypeDef
 
 ```python
@@ -206,6 +228,8 @@ Optional fields:
 - `accessKeyId`: `str`
 - `secretAccessKey`: `str`
 - `sessionToken`: `str`
+
+<a id="dataviewdestinationtypeparamstypedef"></a>
 
 ## DataViewDestinationTypeParamsTypeDef
 
@@ -223,6 +247,8 @@ Optional fields:
   [ExportFileFormatType](./literals.md#exportfileformattype)
 - `s3DestinationExportFileFormatOptions`: `Mapping`\[`str`, `str`\]
 
+<a id="dataviewerrorinfotypedef"></a>
+
 ## DataViewErrorInfoTypeDef
 
 ```python
@@ -233,6 +259,8 @@ Optional fields:
 
 - `errorMessage`: `str`
 - `errorCategory`: [ErrorCategoryType](./literals.md#errorcategorytype)
+
+<a id="dataviewsummarytypedef"></a>
 
 ## DataViewSummaryTypeDef
 
@@ -257,6 +285,8 @@ Optional fields:
 - `createTime`: `int`
 - `lastModifiedTime`: `int`
 
+<a id="datasetownerinfotypedef"></a>
+
 ## DatasetOwnerInfoTypeDef
 
 ```python
@@ -268,6 +298,8 @@ Optional fields:
 - `name`: `str`
 - `phoneNumber`: `str`
 - `email`: `str`
+
+<a id="datasettypedef"></a>
 
 ## DatasetTypeDef
 
@@ -289,6 +321,8 @@ Optional fields:
 - `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
 - `alias`: `str`
 
+<a id="deletedatasetrequestrequesttypedef"></a>
+
 ## DeleteDatasetRequestRequestTypeDef
 
 ```python
@@ -303,6 +337,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deletedatasetresponsetypedef"></a>
+
 ## DeleteDatasetResponseTypeDef
 
 ```python
@@ -315,6 +351,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getchangesetrequestrequesttypedef"></a>
+
 ## GetChangesetRequestRequestTypeDef
 
 ```python
@@ -325,6 +363,8 @@ Required fields:
 
 - `datasetId`: `str`
 - `changesetId`: `str`
+
+<a id="getchangesetresponsetypedef"></a>
 
 ## GetChangesetResponseTypeDef
 
@@ -351,6 +391,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdataviewrequestrequesttypedef"></a>
+
 ## GetDataViewRequestRequestTypeDef
 
 ```python
@@ -361,6 +403,8 @@ Required fields:
 
 - `dataViewId`: `str`
 - `datasetId`: `str`
+
+<a id="getdataviewresponsetypedef"></a>
 
 ## GetDataViewResponseTypeDef
 
@@ -387,6 +431,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdatasetrequestrequesttypedef"></a>
+
 ## GetDatasetRequestRequestTypeDef
 
 ```python
@@ -396,6 +442,8 @@ from mypy_boto3_finspace_data.type_defs import GetDatasetRequestRequestTypeDef
 Required fields:
 
 - `datasetId`: `str`
+
+<a id="getdatasetresponsetypedef"></a>
 
 ## GetDatasetResponseTypeDef
 
@@ -418,6 +466,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getprogrammaticaccesscredentialsrequestrequesttypedef"></a>
+
 ## GetProgrammaticAccessCredentialsRequestRequestTypeDef
 
 ```python
@@ -432,6 +482,8 @@ Optional fields:
 
 - `durationInMinutes`: `int`
 
+<a id="getprogrammaticaccesscredentialsresponsetypedef"></a>
+
 ## GetProgrammaticAccessCredentialsResponseTypeDef
 
 ```python
@@ -445,6 +497,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getworkinglocationrequestrequesttypedef"></a>
+
 ## GetWorkingLocationRequestRequestTypeDef
 
 ```python
@@ -454,6 +508,8 @@ from mypy_boto3_finspace_data.type_defs import GetWorkingLocationRequestRequestT
 Optional fields:
 
 - `locationType`: [locationTypeType](./literals.md#locationtypetype)
+
+<a id="getworkinglocationresponsetypedef"></a>
 
 ## GetWorkingLocationResponseTypeDef
 
@@ -468,6 +524,8 @@ Required fields:
 - `s3Bucket`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listchangesetsrequestrequesttypedef"></a>
 
 ## ListChangesetsRequestRequestTypeDef
 
@@ -484,6 +542,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listchangesetsresponsetypedef"></a>
+
 ## ListChangesetsResponseTypeDef
 
 ```python
@@ -497,6 +557,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdataviewsrequestrequesttypedef"></a>
 
 ## ListDataViewsRequestRequestTypeDef
 
@@ -513,6 +575,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listdataviewsresponsetypedef"></a>
+
 ## ListDataViewsResponseTypeDef
 
 ```python
@@ -527,6 +591,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatasetsrequestrequesttypedef"></a>
+
 ## ListDatasetsRequestRequestTypeDef
 
 ```python
@@ -537,6 +603,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listdatasetsresponsetypedef"></a>
 
 ## ListDatasetsResponseTypeDef
 
@@ -551,6 +619,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -562,6 +632,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="permissiongroupparamstypedef"></a>
 
 ## PermissionGroupParamsTypeDef
 
@@ -575,6 +647,8 @@ Optional fields:
 - `datasetPermissions`:
   `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
+<a id="resourcepermissiontypedef"></a>
+
 ## ResourcePermissionTypeDef
 
 ```python
@@ -584,6 +658,8 @@ from mypy_boto3_finspace_data.type_defs import ResourcePermissionTypeDef
 Optional fields:
 
 - `permission`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -599,6 +675,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="schemadefinitiontypedef"></a>
+
 ## SchemaDefinitionTypeDef
 
 ```python
@@ -611,6 +689,8 @@ Optional fields:
   `Sequence`\[[ColumnDefinitionTypeDef](./type_defs.md#columndefinitiontypedef)\]
 - `primaryKeyColumns`: `Sequence`\[`str`\]
 
+<a id="schemauniontypedef"></a>
+
 ## SchemaUnionTypeDef
 
 ```python
@@ -621,6 +701,8 @@ Optional fields:
 
 - `tabularSchemaConfig`:
   [SchemaDefinitionTypeDef](./type_defs.md#schemadefinitiontypedef)
+
+<a id="updatechangesetrequestrequesttypedef"></a>
 
 ## UpdateChangesetRequestRequestTypeDef
 
@@ -639,6 +721,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="updatechangesetresponsetypedef"></a>
+
 ## UpdateChangesetResponseTypeDef
 
 ```python
@@ -651,6 +735,8 @@ Required fields:
 - `datasetId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedatasetrequestrequesttypedef"></a>
 
 ## UpdateDatasetRequestRequestTypeDef
 
@@ -670,6 +756,8 @@ Optional fields:
 - `datasetDescription`: `str`
 - `alias`: `str`
 - `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
+
+<a id="updatedatasetresponsetypedef"></a>
 
 ## UpdateDatasetResponseTypeDef
 

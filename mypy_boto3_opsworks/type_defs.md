@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-opsworks-module"></a>
+
 # Typed dictionaries for boto3 OpsWorks module
 
 > [Index](..) > [OpsWorks](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
 type annotations stubs module
-[mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
+[mypy-boto3-opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 - [Typed dictionaries for boto3 OpsWorks module](#typed-dictionaries-for-boto3-opsworks-module)
   - [AgentVersionTypeDef](#agentversiontypedef)
@@ -175,6 +177,8 @@ type annotations stubs module
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WeeklyAutoScalingScheduleTypeDef](#weeklyautoscalingscheduletypedef)
 
+<a id="agentversiontypedef"></a>
+
 ## AgentVersionTypeDef
 
 ```python
@@ -186,6 +190,8 @@ Optional fields:
 - `Version`: `str`
 - `ConfigurationManager`:
   [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
+
+<a id="apptypedef"></a>
 
 ## AppTypeDef
 
@@ -214,6 +220,8 @@ Optional fields:
 - `Environment`:
   `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
+<a id="assigninstancerequestrequesttypedef"></a>
+
 ## AssignInstanceRequestRequestTypeDef
 
 ```python
@@ -224,6 +232,8 @@ Required fields:
 
 - `InstanceId`: `str`
 - `LayerIds`: `Sequence`\[`str`\]
+
+<a id="assignvolumerequestrequesttypedef"></a>
 
 ## AssignVolumeRequestRequestTypeDef
 
@@ -239,6 +249,8 @@ Optional fields:
 
 - `InstanceId`: `str`
 
+<a id="associateelasticiprequestrequesttypedef"></a>
+
 ## AssociateElasticIpRequestRequestTypeDef
 
 ```python
@@ -253,6 +265,8 @@ Optional fields:
 
 - `InstanceId`: `str`
 
+<a id="attachelasticloadbalancerrequestrequesttypedef"></a>
+
 ## AttachElasticLoadBalancerRequestRequestTypeDef
 
 ```python
@@ -263,6 +277,8 @@ Required fields:
 
 - `ElasticLoadBalancerName`: `str`
 - `LayerId`: `str`
+
+<a id="autoscalingthresholdstypedef"></a>
 
 ## AutoScalingThresholdsTypeDef
 
@@ -280,6 +296,8 @@ Optional fields:
 - `LoadThreshold`: `float`
 - `Alarms`: `List`\[`str`\]
 
+<a id="blockdevicemappingtypedef"></a>
+
 ## BlockDeviceMappingTypeDef
 
 ```python
@@ -292,6 +310,8 @@ Optional fields:
 - `NoDevice`: `str`
 - `VirtualName`: `str`
 - `Ebs`: [EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef)
+
+<a id="chefconfigurationresponsemetadatatypedef"></a>
 
 ## ChefConfigurationResponseMetadataTypeDef
 
@@ -306,6 +326,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="chefconfigurationtypedef"></a>
+
 ## ChefConfigurationTypeDef
 
 ```python
@@ -316,6 +338,8 @@ Optional fields:
 
 - `ManageBerkshelf`: `bool`
 - `BerkshelfVersion`: `str`
+
+<a id="clonestackrequestrequesttypedef"></a>
 
 ## CloneStackRequestRequestTypeDef
 
@@ -355,6 +379,8 @@ Optional fields:
   [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
 
+<a id="clonestackresulttypedef"></a>
+
 ## CloneStackResultTypeDef
 
 ```python
@@ -366,6 +392,8 @@ Required fields:
 - `StackId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="cloudwatchlogsconfigurationresponsemetadatatypedef"></a>
 
 ## CloudWatchLogsConfigurationResponseMetadataTypeDef
 
@@ -381,6 +409,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cloudwatchlogsconfigurationtypedef"></a>
+
 ## CloudWatchLogsConfigurationTypeDef
 
 ```python
@@ -392,6 +422,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `LogStreams`:
   `Sequence`\[[CloudWatchLogsLogStreamTypeDef](./type_defs.md#cloudwatchlogslogstreamtypedef)\]
+
+<a id="cloudwatchlogslogstreamtypedef"></a>
 
 ## CloudWatchLogsLogStreamTypeDef
 
@@ -416,6 +448,8 @@ Optional fields:
 - `BatchCount`: `int`
 - `BatchSize`: `int`
 
+<a id="commandtypedef"></a>
+
 ## CommandTypeDef
 
 ```python
@@ -434,6 +468,8 @@ Optional fields:
 - `ExitCode`: `int`
 - `LogUrl`: `str`
 - `Type`: `str`
+
+<a id="createapprequestrequesttypedef"></a>
 
 ## CreateAppRequestRequestTypeDef
 
@@ -464,6 +500,8 @@ Optional fields:
 - `Environment`:
   `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
+<a id="createappresulttypedef"></a>
+
 ## CreateAppResultTypeDef
 
 ```python
@@ -475,6 +513,8 @@ Required fields:
 - `AppId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdeploymentrequestrequesttypedef"></a>
 
 ## CreateDeploymentRequestRequestTypeDef
 
@@ -496,6 +536,8 @@ Optional fields:
 - `Comment`: `str`
 - `CustomJson`: `str`
 
+<a id="createdeploymentresulttypedef"></a>
+
 ## CreateDeploymentResultTypeDef
 
 ```python
@@ -507,6 +549,8 @@ Required fields:
 - `DeploymentId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createinstancerequestrequesttypedef"></a>
 
 ## CreateInstanceRequestRequestTypeDef
 
@@ -539,6 +583,8 @@ Optional fields:
 - `AgentVersion`: `str`
 - `Tenancy`: `str`
 
+<a id="createinstanceresulttypedef"></a>
+
 ## CreateInstanceResultTypeDef
 
 ```python
@@ -550,6 +596,8 @@ Required fields:
 - `InstanceId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlayerrequestrequesttypedef"></a>
 
 ## CreateLayerRequestRequestTypeDef
 
@@ -586,6 +634,8 @@ Optional fields:
 - `LifecycleEventConfiguration`:
   [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
 
+<a id="createlayerrequeststacktypedef"></a>
+
 ## CreateLayerRequestStackTypeDef
 
 ```python
@@ -620,6 +670,8 @@ Optional fields:
 - `LifecycleEventConfiguration`:
   [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
 
+<a id="createlayerresulttypedef"></a>
+
 ## CreateLayerResultTypeDef
 
 ```python
@@ -631,6 +683,8 @@ Required fields:
 - `LayerId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstackrequestrequesttypedef"></a>
 
 ## CreateStackRequestRequestTypeDef
 
@@ -667,6 +721,8 @@ Optional fields:
   [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
 
+<a id="createstackrequestserviceresourcetypedef"></a>
+
 ## CreateStackRequestServiceResourceTypeDef
 
 ```python
@@ -702,6 +758,8 @@ Optional fields:
   [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
 
+<a id="createstackresulttypedef"></a>
+
 ## CreateStackResultTypeDef
 
 ```python
@@ -713,6 +771,8 @@ Required fields:
 - `StackId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createuserprofilerequestrequesttypedef"></a>
 
 ## CreateUserProfileRequestRequestTypeDef
 
@@ -730,6 +790,8 @@ Optional fields:
 - `SshPublicKey`: `str`
 - `AllowSelfManagement`: `bool`
 
+<a id="createuserprofileresulttypedef"></a>
+
 ## CreateUserProfileResultTypeDef
 
 ```python
@@ -741,6 +803,8 @@ Required fields:
 - `IamUserArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="datasourcetypedef"></a>
 
 ## DataSourceTypeDef
 
@@ -754,6 +818,8 @@ Optional fields:
 - `Arn`: `str`
 - `DatabaseName`: `str`
 
+<a id="deleteapprequestrequesttypedef"></a>
+
 ## DeleteAppRequestRequestTypeDef
 
 ```python
@@ -763,6 +829,8 @@ from mypy_boto3_opsworks.type_defs import DeleteAppRequestRequestTypeDef
 Required fields:
 
 - `AppId`: `str`
+
+<a id="deleteinstancerequestrequesttypedef"></a>
 
 ## DeleteInstanceRequestRequestTypeDef
 
@@ -779,6 +847,8 @@ Optional fields:
 - `DeleteElasticIp`: `bool`
 - `DeleteVolumes`: `bool`
 
+<a id="deletelayerrequestrequesttypedef"></a>
+
 ## DeleteLayerRequestRequestTypeDef
 
 ```python
@@ -788,6 +858,8 @@ from mypy_boto3_opsworks.type_defs import DeleteLayerRequestRequestTypeDef
 Required fields:
 
 - `LayerId`: `str`
+
+<a id="deletestackrequestrequesttypedef"></a>
 
 ## DeleteStackRequestRequestTypeDef
 
@@ -799,6 +871,8 @@ Required fields:
 
 - `StackId`: `str`
 
+<a id="deleteuserprofilerequestrequesttypedef"></a>
+
 ## DeleteUserProfileRequestRequestTypeDef
 
 ```python
@@ -808,6 +882,8 @@ from mypy_boto3_opsworks.type_defs import DeleteUserProfileRequestRequestTypeDef
 Required fields:
 
 - `IamUserArn`: `str`
+
+<a id="deploymentcommandtypedef"></a>
 
 ## DeploymentCommandTypeDef
 
@@ -822,6 +898,8 @@ Required fields:
 Optional fields:
 
 - `Args`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+
+<a id="deploymenttypedef"></a>
 
 ## DeploymentTypeDef
 
@@ -845,6 +923,8 @@ Optional fields:
 - `CustomJson`: `str`
 - `InstanceIds`: `List`\[`str`\]
 
+<a id="deregisterecsclusterrequestrequesttypedef"></a>
+
 ## DeregisterEcsClusterRequestRequestTypeDef
 
 ```python
@@ -854,6 +934,8 @@ from mypy_boto3_opsworks.type_defs import DeregisterEcsClusterRequestRequestType
 Required fields:
 
 - `EcsClusterArn`: `str`
+
+<a id="deregisterelasticiprequestrequesttypedef"></a>
 
 ## DeregisterElasticIpRequestRequestTypeDef
 
@@ -865,6 +947,8 @@ Required fields:
 
 - `ElasticIp`: `str`
 
+<a id="deregisterinstancerequestrequesttypedef"></a>
+
 ## DeregisterInstanceRequestRequestTypeDef
 
 ```python
@@ -874,6 +958,8 @@ from mypy_boto3_opsworks.type_defs import DeregisterInstanceRequestRequestTypeDe
 Required fields:
 
 - `InstanceId`: `str`
+
+<a id="deregisterrdsdbinstancerequestrequesttypedef"></a>
 
 ## DeregisterRdsDbInstanceRequestRequestTypeDef
 
@@ -885,6 +971,8 @@ Required fields:
 
 - `RdsDbInstanceArn`: `str`
 
+<a id="deregistervolumerequestrequesttypedef"></a>
+
 ## DeregisterVolumeRequestRequestTypeDef
 
 ```python
@@ -894,6 +982,8 @@ from mypy_boto3_opsworks.type_defs import DeregisterVolumeRequestRequestTypeDef
 Required fields:
 
 - `VolumeId`: `str`
+
+<a id="describeagentversionsrequestrequesttypedef"></a>
 
 ## DescribeAgentVersionsRequestRequestTypeDef
 
@@ -906,6 +996,8 @@ Optional fields:
 - `StackId`: `str`
 - `ConfigurationManager`:
   [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
+
+<a id="describeagentversionsresulttypedef"></a>
 
 ## DescribeAgentVersionsResultTypeDef
 
@@ -920,6 +1012,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeappsrequestrequesttypedef"></a>
+
 ## DescribeAppsRequestRequestTypeDef
 
 ```python
@@ -930,6 +1024,8 @@ Optional fields:
 
 - `StackId`: `str`
 - `AppIds`: `Sequence`\[`str`\]
+
+<a id="describeappsresulttypedef"></a>
 
 ## DescribeAppsResultTypeDef
 
@@ -943,6 +1039,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecommandsrequestrequesttypedef"></a>
+
 ## DescribeCommandsRequestRequestTypeDef
 
 ```python
@@ -954,6 +1052,8 @@ Optional fields:
 - `DeploymentId`: `str`
 - `InstanceId`: `str`
 - `CommandIds`: `Sequence`\[`str`\]
+
+<a id="describecommandsresulttypedef"></a>
 
 ## DescribeCommandsResultTypeDef
 
@@ -967,6 +1067,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedeploymentsrequestrequesttypedef"></a>
+
 ## DescribeDeploymentsRequestRequestTypeDef
 
 ```python
@@ -978,6 +1080,8 @@ Optional fields:
 - `StackId`: `str`
 - `AppId`: `str`
 - `DeploymentIds`: `Sequence`\[`str`\]
+
+<a id="describedeploymentsresulttypedef"></a>
 
 ## DescribeDeploymentsResultTypeDef
 
@@ -992,6 +1096,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeecsclustersrequestrequesttypedef"></a>
+
 ## DescribeEcsClustersRequestRequestTypeDef
 
 ```python
@@ -1004,6 +1110,8 @@ Optional fields:
 - `StackId`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="describeecsclustersresulttypedef"></a>
 
 ## DescribeEcsClustersResultTypeDef
 
@@ -1019,6 +1127,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeelasticipsrequestrequesttypedef"></a>
+
 ## DescribeElasticIpsRequestRequestTypeDef
 
 ```python
@@ -1030,6 +1140,8 @@ Optional fields:
 - `InstanceId`: `str`
 - `StackId`: `str`
 - `Ips`: `Sequence`\[`str`\]
+
+<a id="describeelasticipsresulttypedef"></a>
 
 ## DescribeElasticIpsResultTypeDef
 
@@ -1043,6 +1155,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeelasticloadbalancersrequestrequesttypedef"></a>
+
 ## DescribeElasticLoadBalancersRequestRequestTypeDef
 
 ```python
@@ -1053,6 +1167,8 @@ Optional fields:
 
 - `StackId`: `str`
 - `LayerIds`: `Sequence`\[`str`\]
+
+<a id="describeelasticloadbalancersresulttypedef"></a>
 
 ## DescribeElasticLoadBalancersResultTypeDef
 
@@ -1067,6 +1183,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeinstancesrequestrequesttypedef"></a>
+
 ## DescribeInstancesRequestRequestTypeDef
 
 ```python
@@ -1078,6 +1196,8 @@ Optional fields:
 - `StackId`: `str`
 - `LayerId`: `str`
 - `InstanceIds`: `Sequence`\[`str`\]
+
+<a id="describeinstancesresulttypedef"></a>
 
 ## DescribeInstancesResultTypeDef
 
@@ -1091,6 +1211,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelayersrequestrequesttypedef"></a>
+
 ## DescribeLayersRequestRequestTypeDef
 
 ```python
@@ -1101,6 +1223,8 @@ Optional fields:
 
 - `StackId`: `str`
 - `LayerIds`: `Sequence`\[`str`\]
+
+<a id="describelayersresulttypedef"></a>
 
 ## DescribeLayersResultTypeDef
 
@@ -1114,6 +1238,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeloadbasedautoscalingrequestrequesttypedef"></a>
+
 ## DescribeLoadBasedAutoScalingRequestRequestTypeDef
 
 ```python
@@ -1123,6 +1249,8 @@ from mypy_boto3_opsworks.type_defs import DescribeLoadBasedAutoScalingRequestReq
 Required fields:
 
 - `LayerIds`: `Sequence`\[`str`\]
+
+<a id="describeloadbasedautoscalingresulttypedef"></a>
 
 ## DescribeLoadBasedAutoScalingResultTypeDef
 
@@ -1137,6 +1265,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemyuserprofileresulttypedef"></a>
+
 ## DescribeMyUserProfileResultTypeDef
 
 ```python
@@ -1149,6 +1279,8 @@ Required fields:
   [SelfUserProfileTypeDef](./type_defs.md#selfuserprofiletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeoperatingsystemsresponsetypedef"></a>
 
 ## DescribeOperatingSystemsResponseTypeDef
 
@@ -1163,6 +1295,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepermissionsrequestrequesttypedef"></a>
+
 ## DescribePermissionsRequestRequestTypeDef
 
 ```python
@@ -1173,6 +1307,8 @@ Optional fields:
 
 - `IamUserArn`: `str`
 - `StackId`: `str`
+
+<a id="describepermissionsresulttypedef"></a>
 
 ## DescribePermissionsResultTypeDef
 
@@ -1187,6 +1323,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeraidarraysrequestrequesttypedef"></a>
+
 ## DescribeRaidArraysRequestRequestTypeDef
 
 ```python
@@ -1199,6 +1337,8 @@ Optional fields:
 - `StackId`: `str`
 - `RaidArrayIds`: `Sequence`\[`str`\]
 
+<a id="describeraidarraysresulttypedef"></a>
+
 ## DescribeRaidArraysResultTypeDef
 
 ```python
@@ -1210,6 +1350,8 @@ Required fields:
 - `RaidArrays`: `List`\[[RaidArrayTypeDef](./type_defs.md#raidarraytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describerdsdbinstancesrequestrequesttypedef"></a>
 
 ## DescribeRdsDbInstancesRequestRequestTypeDef
 
@@ -1225,6 +1367,8 @@ Optional fields:
 
 - `RdsDbInstanceArns`: `Sequence`\[`str`\]
 
+<a id="describerdsdbinstancesresulttypedef"></a>
+
 ## DescribeRdsDbInstancesResultTypeDef
 
 ```python
@@ -1238,6 +1382,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeserviceerrorsrequestrequesttypedef"></a>
+
 ## DescribeServiceErrorsRequestRequestTypeDef
 
 ```python
@@ -1249,6 +1395,8 @@ Optional fields:
 - `StackId`: `str`
 - `InstanceId`: `str`
 - `ServiceErrorIds`: `Sequence`\[`str`\]
+
+<a id="describeserviceerrorsresulttypedef"></a>
 
 ## DescribeServiceErrorsResultTypeDef
 
@@ -1263,6 +1411,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestackprovisioningparametersrequestrequesttypedef"></a>
+
 ## DescribeStackProvisioningParametersRequestRequestTypeDef
 
 ```python
@@ -1272,6 +1422,8 @@ from mypy_boto3_opsworks.type_defs import DescribeStackProvisioningParametersReq
 Required fields:
 
 - `StackId`: `str`
+
+<a id="describestackprovisioningparametersresulttypedef"></a>
 
 ## DescribeStackProvisioningParametersResultTypeDef
 
@@ -1286,6 +1438,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestacksummaryrequestrequesttypedef"></a>
+
 ## DescribeStackSummaryRequestRequestTypeDef
 
 ```python
@@ -1295,6 +1449,8 @@ from mypy_boto3_opsworks.type_defs import DescribeStackSummaryRequestRequestType
 Required fields:
 
 - `StackId`: `str`
+
+<a id="describestacksummaryresulttypedef"></a>
 
 ## DescribeStackSummaryResultTypeDef
 
@@ -1308,6 +1464,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestacksrequestrequesttypedef"></a>
+
 ## DescribeStacksRequestRequestTypeDef
 
 ```python
@@ -1317,6 +1475,8 @@ from mypy_boto3_opsworks.type_defs import DescribeStacksRequestRequestTypeDef
 Optional fields:
 
 - `StackIds`: `Sequence`\[`str`\]
+
+<a id="describestacksresulttypedef"></a>
 
 ## DescribeStacksResultTypeDef
 
@@ -1330,6 +1490,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetimebasedautoscalingrequestrequesttypedef"></a>
+
 ## DescribeTimeBasedAutoScalingRequestRequestTypeDef
 
 ```python
@@ -1339,6 +1501,8 @@ from mypy_boto3_opsworks.type_defs import DescribeTimeBasedAutoScalingRequestReq
 Required fields:
 
 - `InstanceIds`: `Sequence`\[`str`\]
+
+<a id="describetimebasedautoscalingresulttypedef"></a>
 
 ## DescribeTimeBasedAutoScalingResultTypeDef
 
@@ -1353,6 +1517,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeuserprofilesrequestrequesttypedef"></a>
+
 ## DescribeUserProfilesRequestRequestTypeDef
 
 ```python
@@ -1362,6 +1528,8 @@ from mypy_boto3_opsworks.type_defs import DescribeUserProfilesRequestRequestType
 Optional fields:
 
 - `IamUserArns`: `Sequence`\[`str`\]
+
+<a id="describeuserprofilesresulttypedef"></a>
 
 ## DescribeUserProfilesResultTypeDef
 
@@ -1376,6 +1544,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describevolumesrequestrequesttypedef"></a>
+
 ## DescribeVolumesRequestRequestTypeDef
 
 ```python
@@ -1389,6 +1559,8 @@ Optional fields:
 - `RaidArrayId`: `str`
 - `VolumeIds`: `Sequence`\[`str`\]
 
+<a id="describevolumesresulttypedef"></a>
+
 ## DescribeVolumesResultTypeDef
 
 ```python
@@ -1401,6 +1573,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detachelasticloadbalancerrequestrequesttypedef"></a>
+
 ## DetachElasticLoadBalancerRequestRequestTypeDef
 
 ```python
@@ -1412,6 +1586,8 @@ Required fields:
 - `ElasticLoadBalancerName`: `str`
 - `LayerId`: `str`
 
+<a id="disassociateelasticiprequestrequesttypedef"></a>
+
 ## DisassociateElasticIpRequestRequestTypeDef
 
 ```python
@@ -1421,6 +1597,8 @@ from mypy_boto3_opsworks.type_defs import DisassociateElasticIpRequestRequestTyp
 Required fields:
 
 - `ElasticIp`: `str`
+
+<a id="ebsblockdevicetypedef"></a>
 
 ## EbsBlockDeviceTypeDef
 
@@ -1436,6 +1614,8 @@ Optional fields:
 - `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `DeleteOnTermination`: `bool`
 
+<a id="ecsclustertypedef"></a>
+
 ## EcsClusterTypeDef
 
 ```python
@@ -1448,6 +1628,8 @@ Optional fields:
 - `EcsClusterName`: `str`
 - `StackId`: `str`
 - `RegisteredAt`: `str`
+
+<a id="elasticiptypedef"></a>
 
 ## ElasticIpTypeDef
 
@@ -1462,6 +1644,8 @@ Optional fields:
 - `Domain`: `str`
 - `Region`: `str`
 - `InstanceId`: `str`
+
+<a id="elasticloadbalancertypedef"></a>
 
 ## ElasticLoadBalancerTypeDef
 
@@ -1481,6 +1665,8 @@ Optional fields:
 - `SubnetIds`: `List`\[`str`\]
 - `Ec2InstanceIds`: `List`\[`str`\]
 
+<a id="environmentvariabletypedef"></a>
+
 ## EnvironmentVariableTypeDef
 
 ```python
@@ -1496,6 +1682,8 @@ Optional fields:
 
 - `Secure`: `bool`
 
+<a id="gethostnamesuggestionrequestrequesttypedef"></a>
+
 ## GetHostnameSuggestionRequestRequestTypeDef
 
 ```python
@@ -1505,6 +1693,8 @@ from mypy_boto3_opsworks.type_defs import GetHostnameSuggestionRequestRequestTyp
 Required fields:
 
 - `LayerId`: `str`
+
+<a id="gethostnamesuggestionresulttypedef"></a>
 
 ## GetHostnameSuggestionResultTypeDef
 
@@ -1518,6 +1708,8 @@ Required fields:
 - `Hostname`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="grantaccessrequestrequesttypedef"></a>
 
 ## GrantAccessRequestRequestTypeDef
 
@@ -1533,6 +1725,8 @@ Optional fields:
 
 - `ValidForInMinutes`: `int`
 
+<a id="grantaccessresulttypedef"></a>
+
 ## GrantAccessResultTypeDef
 
 ```python
@@ -1546,6 +1740,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="instanceidentitytypedef"></a>
+
 ## InstanceIdentityTypeDef
 
 ```python
@@ -1556,6 +1752,8 @@ Optional fields:
 
 - `Document`: `str`
 - `Signature`: `str`
+
+<a id="instancetypedef"></a>
 
 ## InstanceTypeDef
 
@@ -1609,6 +1807,8 @@ Optional fields:
 - `VirtualizationType`:
   [VirtualizationTypeType](./literals.md#virtualizationtypetype)
 
+<a id="instancescountresponsemetadatatypedef"></a>
+
 ## InstancesCountResponseMetadataTypeDef
 
 ```python
@@ -1640,6 +1840,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="instancescounttypedef"></a>
+
 ## InstancesCountTypeDef
 
 ```python
@@ -1668,6 +1870,8 @@ Optional fields:
 - `Terminated`: `int`
 - `Terminating`: `int`
 - `Unassigning`: `int`
+
+<a id="layertypedef"></a>
 
 ## LayerTypeDef
 
@@ -1706,6 +1910,8 @@ Optional fields:
 - `LifecycleEventConfiguration`:
   [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
 
+<a id="lifecycleeventconfigurationresponsemetadatatypedef"></a>
+
 ## LifecycleEventConfigurationResponseMetadataTypeDef
 
 ```python
@@ -1719,6 +1925,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="lifecycleeventconfigurationtypedef"></a>
+
 ## LifecycleEventConfigurationTypeDef
 
 ```python
@@ -1729,6 +1937,8 @@ Optional fields:
 
 - `Shutdown`:
   [ShutdownEventConfigurationTypeDef](./type_defs.md#shutdowneventconfigurationtypedef)
+
+<a id="listtagsrequestrequesttypedef"></a>
 
 ## ListTagsRequestRequestTypeDef
 
@@ -1745,6 +1955,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtagsresulttypedef"></a>
+
 ## ListTagsResultTypeDef
 
 ```python
@@ -1757,6 +1969,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="loadbasedautoscalingconfigurationtypedef"></a>
 
 ## LoadBasedAutoScalingConfigurationTypeDef
 
@@ -1773,6 +1987,8 @@ Optional fields:
 - `DownScaling`:
   [AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef)
 
+<a id="operatingsystemconfigurationmanagertypedef"></a>
+
 ## OperatingSystemConfigurationManagerTypeDef
 
 ```python
@@ -1783,6 +1999,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Version`: `str`
+
+<a id="operatingsystemtypedef"></a>
 
 ## OperatingSystemTypeDef
 
@@ -1801,6 +2019,8 @@ Optional fields:
 - `ReportedVersion`: `str`
 - `Supported`: `bool`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1812,6 +2032,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="permissiontypedef"></a>
 
 ## PermissionTypeDef
 
@@ -1826,6 +2048,8 @@ Optional fields:
 - `AllowSsh`: `bool`
 - `AllowSudo`: `bool`
 - `Level`: `str`
+
+<a id="raidarraytypedef"></a>
 
 ## RaidArrayTypeDef
 
@@ -1849,6 +2073,8 @@ Optional fields:
 - `VolumeType`: `str`
 - `Iops`: `int`
 
+<a id="rdsdbinstancetypedef"></a>
+
 ## RdsDbInstanceTypeDef
 
 ```python
@@ -1867,6 +2093,8 @@ Optional fields:
 - `StackId`: `str`
 - `MissingOnRds`: `bool`
 
+<a id="rebootinstancerequestrequesttypedef"></a>
+
 ## RebootInstanceRequestRequestTypeDef
 
 ```python
@@ -1876,6 +2104,8 @@ from mypy_boto3_opsworks.type_defs import RebootInstanceRequestRequestTypeDef
 Required fields:
 
 - `InstanceId`: `str`
+
+<a id="recipesresponsemetadatatypedef"></a>
 
 ## RecipesResponseMetadataTypeDef
 
@@ -1893,6 +2123,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="recipestypedef"></a>
+
 ## RecipesTypeDef
 
 ```python
@@ -1907,6 +2139,8 @@ Optional fields:
 - `Undeploy`: `Sequence`\[`str`\]
 - `Shutdown`: `Sequence`\[`str`\]
 
+<a id="registerecsclusterrequestrequesttypedef"></a>
+
 ## RegisterEcsClusterRequestRequestTypeDef
 
 ```python
@@ -1917,6 +2151,8 @@ Required fields:
 
 - `EcsClusterArn`: `str`
 - `StackId`: `str`
+
+<a id="registerecsclusterresulttypedef"></a>
 
 ## RegisterEcsClusterResultTypeDef
 
@@ -1930,6 +2166,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="registerelasticiprequestrequesttypedef"></a>
+
 ## RegisterElasticIpRequestRequestTypeDef
 
 ```python
@@ -1940,6 +2178,8 @@ Required fields:
 
 - `ElasticIp`: `str`
 - `StackId`: `str`
+
+<a id="registerelasticipresulttypedef"></a>
 
 ## RegisterElasticIpResultTypeDef
 
@@ -1952,6 +2192,8 @@ Required fields:
 - `ElasticIp`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="registerinstancerequestrequesttypedef"></a>
 
 ## RegisterInstanceRequestRequestTypeDef
 
@@ -1973,6 +2215,8 @@ Optional fields:
 - `InstanceIdentity`:
   [InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef)
 
+<a id="registerinstanceresulttypedef"></a>
+
 ## RegisterInstanceResultTypeDef
 
 ```python
@@ -1984,6 +2228,8 @@ Required fields:
 - `InstanceId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="registerrdsdbinstancerequestrequesttypedef"></a>
 
 ## RegisterRdsDbInstanceRequestRequestTypeDef
 
@@ -1997,6 +2243,8 @@ Required fields:
 - `RdsDbInstanceArn`: `str`
 - `DbUser`: `str`
 - `DbPassword`: `str`
+
+<a id="registervolumerequestrequesttypedef"></a>
 
 ## RegisterVolumeRequestRequestTypeDef
 
@@ -2012,6 +2260,8 @@ Optional fields:
 
 - `Ec2VolumeId`: `str`
 
+<a id="registervolumeresulttypedef"></a>
+
 ## RegisterVolumeResultTypeDef
 
 ```python
@@ -2024,6 +2274,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="reportedostypedef"></a>
+
 ## ReportedOsTypeDef
 
 ```python
@@ -2035,6 +2287,8 @@ Optional fields:
 - `Family`: `str`
 - `Name`: `str`
 - `Version`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2050,6 +2304,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="selfuserprofiletypedef"></a>
+
 ## SelfUserProfileTypeDef
 
 ```python
@@ -2062,6 +2318,8 @@ Optional fields:
 - `Name`: `str`
 - `SshUsername`: `str`
 - `SshPublicKey`: `str`
+
+<a id="serviceerrortypedef"></a>
 
 ## ServiceErrorTypeDef
 
@@ -2078,6 +2336,8 @@ Optional fields:
 - `Message`: `str`
 - `CreatedAt`: `str`
 
+<a id="serviceresourcelayerrequesttypedef"></a>
+
 ## ServiceResourceLayerRequestTypeDef
 
 ```python
@@ -2087,6 +2347,8 @@ from mypy_boto3_opsworks.type_defs import ServiceResourceLayerRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="serviceresourcestackrequesttypedef"></a>
 
 ## ServiceResourceStackRequestTypeDef
 
@@ -2098,6 +2360,8 @@ Required fields:
 
 - `id`: `str`
 
+<a id="serviceresourcestacksummaryrequesttypedef"></a>
+
 ## ServiceResourceStackSummaryRequestTypeDef
 
 ```python
@@ -2107,6 +2371,8 @@ from mypy_boto3_opsworks.type_defs import ServiceResourceStackSummaryRequestType
 Required fields:
 
 - `stack_id`: `str`
+
+<a id="setloadbasedautoscalingrequestrequesttypedef"></a>
 
 ## SetLoadBasedAutoScalingRequestRequestTypeDef
 
@@ -2126,6 +2392,8 @@ Optional fields:
 - `DownScaling`:
   [AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef)
 
+<a id="setpermissionrequestrequesttypedef"></a>
+
 ## SetPermissionRequestRequestTypeDef
 
 ```python
@@ -2143,6 +2411,8 @@ Optional fields:
 - `AllowSudo`: `bool`
 - `Level`: `str`
 
+<a id="settimebasedautoscalingrequestrequesttypedef"></a>
+
 ## SetTimeBasedAutoScalingRequestRequestTypeDef
 
 ```python
@@ -2158,6 +2428,8 @@ Optional fields:
 - `AutoScalingSchedule`:
   [WeeklyAutoScalingScheduleTypeDef](./type_defs.md#weeklyautoscalingscheduletypedef)
 
+<a id="shutdowneventconfigurationtypedef"></a>
+
 ## ShutdownEventConfigurationTypeDef
 
 ```python
@@ -2168,6 +2440,8 @@ Optional fields:
 
 - `ExecutionTimeout`: `int`
 - `DelayUntilElbConnectionsDrained`: `bool`
+
+<a id="sourceresponsemetadatatypedef"></a>
 
 ## SourceResponseMetadataTypeDef
 
@@ -2186,6 +2460,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="sourcetypedef"></a>
+
 ## SourceTypeDef
 
 ```python
@@ -2200,6 +2476,8 @@ Optional fields:
 - `Password`: `str`
 - `SshKey`: `str`
 - `Revision`: `str`
+
+<a id="sslconfigurationtypedef"></a>
 
 ## SslConfigurationTypeDef
 
@@ -2216,6 +2494,8 @@ Optional fields:
 
 - `Chain`: `str`
 
+<a id="stackconfigurationmanagerresponsemetadatatypedef"></a>
+
 ## StackConfigurationManagerResponseMetadataTypeDef
 
 ```python
@@ -2229,6 +2509,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stackconfigurationmanagertypedef"></a>
+
 ## StackConfigurationManagerTypeDef
 
 ```python
@@ -2239,6 +2521,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Version`: `str`
+
+<a id="stacksummarytypedef"></a>
 
 ## StackSummaryTypeDef
 
@@ -2255,6 +2539,8 @@ Optional fields:
 - `AppsCount`: `int`
 - `InstancesCount`:
   [InstancesCountTypeDef](./type_defs.md#instancescounttypedef)
+
+<a id="stacktypedef"></a>
 
 ## StackTypeDef
 
@@ -2291,6 +2577,8 @@ Optional fields:
   [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
 
+<a id="startinstancerequestrequesttypedef"></a>
+
 ## StartInstanceRequestRequestTypeDef
 
 ```python
@@ -2301,6 +2589,8 @@ Required fields:
 
 - `InstanceId`: `str`
 
+<a id="startstackrequestrequesttypedef"></a>
+
 ## StartStackRequestRequestTypeDef
 
 ```python
@@ -2310,6 +2600,8 @@ from mypy_boto3_opsworks.type_defs import StartStackRequestRequestTypeDef
 Required fields:
 
 - `StackId`: `str`
+
+<a id="stopinstancerequestrequesttypedef"></a>
 
 ## StopInstanceRequestRequestTypeDef
 
@@ -2325,6 +2617,8 @@ Optional fields:
 
 - `Force`: `bool`
 
+<a id="stopstackrequestrequesttypedef"></a>
+
 ## StopStackRequestRequestTypeDef
 
 ```python
@@ -2334,6 +2628,8 @@ from mypy_boto3_opsworks.type_defs import StopStackRequestRequestTypeDef
 Required fields:
 
 - `StackId`: `str`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -2345,6 +2641,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="temporarycredentialtypedef"></a>
 
 ## TemporaryCredentialTypeDef
 
@@ -2359,6 +2657,8 @@ Optional fields:
 - `ValidForInMinutes`: `int`
 - `InstanceId`: `str`
 
+<a id="timebasedautoscalingconfigurationtypedef"></a>
+
 ## TimeBasedAutoScalingConfigurationTypeDef
 
 ```python
@@ -2371,6 +2671,8 @@ Optional fields:
 - `AutoScalingSchedule`:
   [WeeklyAutoScalingScheduleTypeDef](./type_defs.md#weeklyautoscalingscheduletypedef)
 
+<a id="unassigninstancerequestrequesttypedef"></a>
+
 ## UnassignInstanceRequestRequestTypeDef
 
 ```python
@@ -2380,6 +2682,8 @@ from mypy_boto3_opsworks.type_defs import UnassignInstanceRequestRequestTypeDef
 Required fields:
 
 - `InstanceId`: `str`
+
+<a id="unassignvolumerequestrequesttypedef"></a>
 
 ## UnassignVolumeRequestRequestTypeDef
 
@@ -2391,6 +2695,8 @@ Required fields:
 
 - `VolumeId`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2401,6 +2707,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapprequestrequesttypedef"></a>
 
 ## UpdateAppRequestRequestTypeDef
 
@@ -2430,6 +2738,8 @@ Optional fields:
 - `Environment`:
   `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
+<a id="updateelasticiprequestrequesttypedef"></a>
+
 ## UpdateElasticIpRequestRequestTypeDef
 
 ```python
@@ -2443,6 +2753,8 @@ Required fields:
 Optional fields:
 
 - `Name`: `str`
+
+<a id="updateinstancerequestrequesttypedef"></a>
 
 ## UpdateInstanceRequestRequestTypeDef
 
@@ -2467,6 +2779,8 @@ Optional fields:
 - `InstallUpdatesOnBoot`: `bool`
 - `EbsOptimized`: `bool`
 - `AgentVersion`: `str`
+
+<a id="updatelayerrequestrequesttypedef"></a>
 
 ## UpdateLayerRequestRequestTypeDef
 
@@ -2502,6 +2816,8 @@ Optional fields:
 - `LifecycleEventConfiguration`:
   [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
 
+<a id="updatemyuserprofilerequestrequesttypedef"></a>
+
 ## UpdateMyUserProfileRequestRequestTypeDef
 
 ```python
@@ -2511,6 +2827,8 @@ from mypy_boto3_opsworks.type_defs import UpdateMyUserProfileRequestRequestTypeD
 Optional fields:
 
 - `SshPublicKey`: `str`
+
+<a id="updaterdsdbinstancerequestrequesttypedef"></a>
 
 ## UpdateRdsDbInstanceRequestRequestTypeDef
 
@@ -2526,6 +2844,8 @@ Optional fields:
 
 - `DbUser`: `str`
 - `DbPassword`: `str`
+
+<a id="updatestackrequestrequesttypedef"></a>
 
 ## UpdateStackRequestRequestTypeDef
 
@@ -2561,6 +2881,8 @@ Optional fields:
 - `UseOpsworksSecurityGroups`: `bool`
 - `AgentVersion`: `str`
 
+<a id="updateuserprofilerequestrequesttypedef"></a>
+
 ## UpdateUserProfileRequestRequestTypeDef
 
 ```python
@@ -2577,6 +2899,8 @@ Optional fields:
 - `SshPublicKey`: `str`
 - `AllowSelfManagement`: `bool`
 
+<a id="updatevolumerequestrequesttypedef"></a>
+
 ## UpdateVolumeRequestRequestTypeDef
 
 ```python
@@ -2592,6 +2916,8 @@ Optional fields:
 - `Name`: `str`
 - `MountPoint`: `str`
 
+<a id="userprofiletypedef"></a>
+
 ## UserProfileTypeDef
 
 ```python
@@ -2605,6 +2931,8 @@ Optional fields:
 - `SshUsername`: `str`
 - `SshPublicKey`: `str`
 - `AllowSelfManagement`: `bool`
+
+<a id="volumeconfigurationtypedef"></a>
 
 ## VolumeConfigurationTypeDef
 
@@ -2624,6 +2952,8 @@ Optional fields:
 - `VolumeType`: `str`
 - `Iops`: `int`
 - `Encrypted`: `bool`
+
+<a id="volumetypedef"></a>
 
 ## VolumeTypeDef
 
@@ -2648,6 +2978,8 @@ Optional fields:
 - `Iops`: `int`
 - `Encrypted`: `bool`
 
+<a id="waiterconfigtypedef"></a>
+
 ## WaiterConfigTypeDef
 
 ```python
@@ -2658,6 +2990,8 @@ Optional fields:
 
 - `Delay`: `int`
 - `MaxAttempts`: `int`
+
+<a id="weeklyautoscalingscheduletypedef"></a>
 
 ## WeeklyAutoScalingScheduleTypeDef
 

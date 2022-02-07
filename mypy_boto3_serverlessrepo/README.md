@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-serverlessapplicationrepository-module"></a>
+
 # Type annotations for boto3 ServerlessApplicationRepository module
 
 > [Index](..) > ServerlessApplicationRepository
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
 type annotations stubs module
-[mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
+[mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[serverlessrepo]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[serverlessrepo]'
+
+# standalone installation
 pip install mypy-boto3-serverlessrepo
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-serverlessrepo
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="serverlessapplicationrepositoryclient"></a>
+
 ## ServerlessApplicationRepositoryClient
 
 Type annotations for `boto3.client("serverlessrepo")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_serverlessrepo.client import ServerlessApplicationRepositoryClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -51,6 +65,8 @@ from mypy_boto3_serverlessrepo.client import ServerlessApplicationRepositoryClie
 - [unshare_application](./client.md#unshare_application)
 - [update_application](./client.md#update_application)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ServerlessApplicationRepositoryClient [exceptions](./client.md#exceptions)
@@ -63,6 +79,8 @@ ServerlessApplicationRepositoryClient [exceptions](./client.md#exceptions)
 - NotFoundException
 - TooManyRequestsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -71,12 +89,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_serverlessrepo.paginators import ListApplicationDependenciesPaginator, ...
+from mypy_boto3_serverlessrepo.paginator import ListApplicationDependenciesPaginator, ...
 ```
 
 - [ListApplicationDependenciesPaginator](./paginators.md#listapplicationdependenciespaginator)
 - [ListApplicationVersionsPaginator](./paginators.md#listapplicationversionspaginator)
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -95,6 +115,8 @@ from mypy_boto3_serverlessrepo.literals import CapabilityType, ...
 - [StatusType](./literals.md#statustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

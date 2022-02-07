@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-mobile-module"></a>
+
 # Literals for boto3 Mobile module
 
 > [Index](..) > [Mobile](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
 type annotations stubs module
-[mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
+[mypy-boto3-mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 - [Literals for boto3 Mobile module](#literals-for-boto3-mobile-module)
   - [ListBundlesPaginatorName](#listbundlespaginatorname)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [ProjectStateType](#projectstatetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="listbundlespaginatorname"></a>
 
 ## ListBundlesPaginatorName
 
@@ -25,6 +29,8 @@ Values:
 
 - `list_bundles`
 
+<a id="listprojectspaginatorname"></a>
+
 ## ListProjectsPaginatorName
 
 ```python
@@ -34,6 +40,8 @@ from mypy_boto3_mobile.literals import ListProjectsPaginatorName
 Values:
 
 - `list_projects`
+
+<a id="platformtype"></a>
 
 ## PlatformType
 
@@ -51,6 +59,8 @@ Values:
 - `SWIFT`
 - `WINDOWS`
 
+<a id="projectstatetype"></a>
+
 ## ProjectStateType
 
 ```python
@@ -62,6 +72,8 @@ Values:
 - `IMPORTING`
 - `NORMAL`
 - `SYNCING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -370,6 +382,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

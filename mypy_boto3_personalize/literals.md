@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-personalize-module"></a>
+
 # Literals for boto3 Personalize module
 
 > [Index](..) > [Personalize](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
 type annotations stubs module
-[mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
+[mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 - [Literals for boto3 Personalize module](#literals-for-boto3-personalize-module)
   - [DomainType](#domaintype)
@@ -30,6 +32,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="domaintype"></a>
+
 ## DomainType
 
 ```python
@@ -40,6 +44,8 @@ Values:
 
 - `ECOMMERCE`
 - `VIDEO_ON_DEMAND`
+
+<a id="ingestionmodetype"></a>
 
 ## IngestionModeType
 
@@ -53,6 +59,8 @@ Values:
 - `BULK`
 - `PUT`
 
+<a id="listbatchinferencejobspaginatorname"></a>
+
 ## ListBatchInferenceJobsPaginatorName
 
 ```python
@@ -62,6 +70,8 @@ from mypy_boto3_personalize.literals import ListBatchInferenceJobsPaginatorName
 Values:
 
 - `list_batch_inference_jobs`
+
+<a id="listbatchsegmentjobspaginatorname"></a>
 
 ## ListBatchSegmentJobsPaginatorName
 
@@ -73,6 +83,8 @@ Values:
 
 - `list_batch_segment_jobs`
 
+<a id="listcampaignspaginatorname"></a>
+
 ## ListCampaignsPaginatorName
 
 ```python
@@ -82,6 +94,8 @@ from mypy_boto3_personalize.literals import ListCampaignsPaginatorName
 Values:
 
 - `list_campaigns`
+
+<a id="listdatasetexportjobspaginatorname"></a>
 
 ## ListDatasetExportJobsPaginatorName
 
@@ -93,6 +107,8 @@ Values:
 
 - `list_dataset_export_jobs`
 
+<a id="listdatasetgroupspaginatorname"></a>
+
 ## ListDatasetGroupsPaginatorName
 
 ```python
@@ -102,6 +118,8 @@ from mypy_boto3_personalize.literals import ListDatasetGroupsPaginatorName
 Values:
 
 - `list_dataset_groups`
+
+<a id="listdatasetimportjobspaginatorname"></a>
 
 ## ListDatasetImportJobsPaginatorName
 
@@ -113,6 +131,8 @@ Values:
 
 - `list_dataset_import_jobs`
 
+<a id="listdatasetspaginatorname"></a>
+
 ## ListDatasetsPaginatorName
 
 ```python
@@ -122,6 +142,8 @@ from mypy_boto3_personalize.literals import ListDatasetsPaginatorName
 Values:
 
 - `list_datasets`
+
+<a id="listeventtrackerspaginatorname"></a>
 
 ## ListEventTrackersPaginatorName
 
@@ -133,6 +155,8 @@ Values:
 
 - `list_event_trackers`
 
+<a id="listfilterspaginatorname"></a>
+
 ## ListFiltersPaginatorName
 
 ```python
@@ -142,6 +166,8 @@ from mypy_boto3_personalize.literals import ListFiltersPaginatorName
 Values:
 
 - `list_filters`
+
+<a id="listrecipespaginatorname"></a>
 
 ## ListRecipesPaginatorName
 
@@ -153,6 +179,8 @@ Values:
 
 - `list_recipes`
 
+<a id="listrecommenderspaginatorname"></a>
+
 ## ListRecommendersPaginatorName
 
 ```python
@@ -162,6 +190,8 @@ from mypy_boto3_personalize.literals import ListRecommendersPaginatorName
 Values:
 
 - `list_recommenders`
+
+<a id="listschemaspaginatorname"></a>
 
 ## ListSchemasPaginatorName
 
@@ -173,6 +203,8 @@ Values:
 
 - `list_schemas`
 
+<a id="listsolutionversionspaginatorname"></a>
+
 ## ListSolutionVersionsPaginatorName
 
 ```python
@@ -183,6 +215,8 @@ Values:
 
 - `list_solution_versions`
 
+<a id="listsolutionspaginatorname"></a>
+
 ## ListSolutionsPaginatorName
 
 ```python
@@ -192,6 +226,8 @@ from mypy_boto3_personalize.literals import ListSolutionsPaginatorName
 Values:
 
 - `list_solutions`
+
+<a id="objectivesensitivitytype"></a>
 
 ## ObjectiveSensitivityType
 
@@ -206,6 +242,8 @@ Values:
 - `MEDIUM`
 - `OFF`
 
+<a id="recipeprovidertype"></a>
+
 ## RecipeProviderType
 
 ```python
@@ -215,6 +253,8 @@ from mypy_boto3_personalize.literals import RecipeProviderType
 Values:
 
 - `SERVICE`
+
+<a id="trainingmodetype"></a>
 
 ## TrainingModeType
 
@@ -226,6 +266,8 @@ Values:
 
 - `FULL`
 - `UPDATE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -534,6 +576,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

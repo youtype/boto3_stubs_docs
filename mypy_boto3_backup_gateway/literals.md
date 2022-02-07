@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-backupgateway-module"></a>
+
 # Literals for boto3 BackupGateway module
 
 > [Index](..) > [BackupGateway](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [BackupGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway)
 type annotations stubs module
-[mypy_boto3_backup_gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
+[mypy-boto3-backup-gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
 
 - [Literals for boto3 BackupGateway module](#literals-for-boto3-backupgateway-module)
   - [GatewayTypeType](#gatewaytypetype)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="gatewaytypetype"></a>
+
 ## GatewayTypeType
 
 ```python
@@ -25,6 +29,8 @@ from mypy_boto3_backup_gateway.literals import GatewayTypeType
 Values:
 
 - `BACKUP_VM`
+
+<a id="hypervisorstatetype"></a>
 
 ## HypervisorStateType
 
@@ -39,6 +45,8 @@ Values:
 - `ONLINE`
 - `PENDING`
 
+<a id="listgatewayspaginatorname"></a>
+
 ## ListGatewaysPaginatorName
 
 ```python
@@ -48,6 +56,8 @@ from mypy_boto3_backup_gateway.literals import ListGatewaysPaginatorName
 Values:
 
 - `list_gateways`
+
+<a id="listhypervisorspaginatorname"></a>
 
 ## ListHypervisorsPaginatorName
 
@@ -59,6 +69,8 @@ Values:
 
 - `list_hypervisors`
 
+<a id="listvirtualmachinespaginatorname"></a>
+
 ## ListVirtualMachinesPaginatorName
 
 ```python
@@ -68,6 +80,8 @@ from mypy_boto3_backup_gateway.literals import ListVirtualMachinesPaginatorName
 Values:
 
 - `list_virtual_machines`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -376,6 +390,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

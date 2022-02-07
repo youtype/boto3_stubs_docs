@@ -1,3 +1,5 @@
+<a id="lexmodelbuildingserviceclient-for-boto3-lexmodelbuildingservice-module"></a>
+
 # LexModelBuildingServiceClient for boto3 LexModelBuildingService module
 
 > [Index](..) > [LexModelBuildingService](.) > LexModelBuildingServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
 type annotations stubs module
-[mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
+[mypy-boto3-lex-models](https://pypi.org/project/mypy-boto3-lex-models/).
 
 - [LexModelBuildingServiceClient for boto3 LexModelBuildingService module](#lexmodelbuildingserviceclient-for-boto3-lexmodelbuildingservice-module)
   - [LexModelBuildingServiceClient](#lexmodelbuildingserviceclient)
@@ -58,6 +60,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="lexmodelbuildingserviceclient"></a>
+
 ## LexModelBuildingServiceClient
 
 Type annotations for `boto3.client("lex-models")`
@@ -65,14 +69,17 @@ Type annotations for `boto3.client("lex-models")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_lex_models.client import LexModelBuildingServiceClient
 
 def get_lex-models_client() -> LexModelBuildingServiceClient:
-    return boto3.client("lex-models")
+    return Session().client("lex-models")
 ```
 
 Boto3 documentation:
 [LexModelBuildingService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -98,7 +105,11 @@ Exceptions:
 - `Exceptions.PreconditionFailedException`
 - `Exceptions.ResourceInUseException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -110,6 +121,8 @@ Boto3 documentation:
 [LexModelBuildingService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -125,6 +138,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_bot_version"></a>
 
 ### create_bot_version
 
@@ -146,6 +161,8 @@ Keyword-only arguments:
 Returns
 [CreateBotVersionResponseTypeDef](./type_defs.md#createbotversionresponsetypedef).
 
+<a id="create_intent_version"></a>
+
 ### create_intent_version
 
 Creates a new version of an intent based on the `$LATEST` version of the
@@ -166,6 +183,8 @@ Keyword-only arguments:
 
 Returns
 [CreateIntentVersionResponseTypeDef](./type_defs.md#createintentversionresponsetypedef).
+
+<a id="create_slot_type_version"></a>
 
 ### create_slot_type_version
 
@@ -189,6 +208,8 @@ Keyword-only arguments:
 Returns
 [CreateSlotTypeVersionResponseTypeDef](./type_defs.md#createslottypeversionresponsetypedef).
 
+<a id="delete_bot"></a>
+
 ### delete_bot
 
 Deletes all versions of the bot, including the `$LATEST` version.
@@ -204,6 +225,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
+
+<a id="delete_bot_alias"></a>
 
 ### delete_bot_alias
 
@@ -221,6 +244,8 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `botName`: `str` *(required)*
+
+<a id="delete_bot_channel_association"></a>
 
 ### delete_bot_channel_association
 
@@ -241,6 +266,8 @@ Keyword-only arguments:
 - `botName`: `str` *(required)*
 - `botAlias`: `str` *(required)*
 
+<a id="delete_bot_version"></a>
+
 ### delete_bot_version
 
 Deletes a specific version of a bot.
@@ -258,6 +285,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `version`: `str` *(required)*
 
+<a id="delete_intent"></a>
+
 ### delete_intent
 
 Deletes all versions of the intent, including the `$LATEST` version.
@@ -273,6 +302,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
+
+<a id="delete_intent_version"></a>
 
 ### delete_intent_version
 
@@ -291,6 +322,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `version`: `str` *(required)*
 
+<a id="delete_slot_type"></a>
+
 ### delete_slot_type
 
 Deletes all versions of the slot type, including the `$LATEST` version.
@@ -306,6 +339,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
+
+<a id="delete_slot_type_version"></a>
 
 ### delete_slot_type_version
 
@@ -325,6 +360,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `version`: `str` *(required)*
 
+<a id="delete_utterances"></a>
+
 ### delete_utterances
 
 Deletes stored utterances.
@@ -341,6 +378,8 @@ Keyword-only arguments:
 
 - `botName`: `str` *(required)*
 - `userId`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -361,6 +400,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_bot"></a>
+
 ### get_bot
 
 Returns metadata information for a specific bot.
@@ -379,6 +420,8 @@ Keyword-only arguments:
 - `versionOrAlias`: `str` *(required)*
 
 Returns [GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef).
+
+<a id="get_bot_alias"></a>
 
 ### get_bot_alias
 
@@ -399,6 +442,8 @@ Keyword-only arguments:
 
 Returns
 [GetBotAliasResponseTypeDef](./type_defs.md#getbotaliasresponsetypedef).
+
+<a id="get_bot_aliases"></a>
 
 ### get_bot_aliases
 
@@ -422,6 +467,8 @@ Keyword-only arguments:
 Returns
 [GetBotAliasesResponseTypeDef](./type_defs.md#getbotaliasesresponsetypedef).
 
+<a id="get_bot_channel_association"></a>
+
 ### get_bot_channel_association
 
 Returns information about the association between an Amazon Lex bot and a
@@ -444,6 +491,8 @@ Keyword-only arguments:
 
 Returns
 [GetBotChannelAssociationResponseTypeDef](./type_defs.md#getbotchannelassociationresponsetypedef).
+
+<a id="get_bot_channel_associations"></a>
 
 ### get_bot_channel_associations
 
@@ -469,6 +518,8 @@ Keyword-only arguments:
 Returns
 [GetBotChannelAssociationsResponseTypeDef](./type_defs.md#getbotchannelassociationsresponsetypedef).
 
+<a id="get_bot_versions"></a>
+
 ### get_bot_versions
 
 Gets information about all of the versions of a bot.
@@ -489,6 +540,8 @@ Keyword-only arguments:
 
 Returns
 [GetBotVersionsResponseTypeDef](./type_defs.md#getbotversionsresponsetypedef).
+
+<a id="get_bots"></a>
 
 ### get_bots
 
@@ -512,6 +565,8 @@ Keyword-only arguments:
 
 Returns [GetBotsResponseTypeDef](./type_defs.md#getbotsresponsetypedef).
 
+<a id="get_builtin_intent"></a>
+
 ### get_builtin_intent
 
 Returns information about a built-in intent.
@@ -530,6 +585,8 @@ Keyword-only arguments:
 
 Returns
 [GetBuiltinIntentResponseTypeDef](./type_defs.md#getbuiltinintentresponsetypedef).
+
+<a id="get_builtin_intents"></a>
 
 ### get_builtin_intents
 
@@ -552,6 +609,8 @@ Keyword-only arguments:
 
 Returns
 [GetBuiltinIntentsResponseTypeDef](./type_defs.md#getbuiltinintentsresponsetypedef).
+
+<a id="get_builtin_slot_types"></a>
 
 ### get_builtin_slot_types
 
@@ -576,6 +635,8 @@ Keyword-only arguments:
 Returns
 [GetBuiltinSlotTypesResponseTypeDef](./type_defs.md#getbuiltinslottypesresponsetypedef).
 
+<a id="get_export"></a>
+
 ### get_export
 
 Exports the contents of a Amazon Lex resource in a specified format.
@@ -598,6 +659,8 @@ Keyword-only arguments:
 
 Returns [GetExportResponseTypeDef](./type_defs.md#getexportresponsetypedef).
 
+<a id="get_import"></a>
+
 ### get_import
 
 Gets information about an import job started with the `StartImport` operation.
@@ -615,6 +678,8 @@ Keyword-only arguments:
 - `importId`: `str` *(required)*
 
 Returns [GetImportResponseTypeDef](./type_defs.md#getimportresponsetypedef).
+
+<a id="get_intent"></a>
 
 ### get_intent
 
@@ -634,6 +699,8 @@ Keyword-only arguments:
 - `version`: `str` *(required)*
 
 Returns [GetIntentResponseTypeDef](./type_defs.md#getintentresponsetypedef).
+
+<a id="get_intent_versions"></a>
 
 ### get_intent_versions
 
@@ -655,6 +722,8 @@ Keyword-only arguments:
 
 Returns
 [GetIntentVersionsResponseTypeDef](./type_defs.md#getintentversionsresponsetypedef).
+
+<a id="get_intents"></a>
 
 ### get_intents
 
@@ -678,6 +747,8 @@ Keyword-only arguments:
 
 Returns [GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef).
 
+<a id="get_migration"></a>
+
 ### get_migration
 
 Provides details about an ongoing or complete migration from an Amazon Lex V1
@@ -697,6 +768,8 @@ Keyword-only arguments:
 
 Returns
 [GetMigrationResponseTypeDef](./type_defs.md#getmigrationresponsetypedef).
+
+<a id="get_migrations"></a>
 
 ### get_migrations
 
@@ -724,6 +797,8 @@ Keyword-only arguments:
 Returns
 [GetMigrationsResponseTypeDef](./type_defs.md#getmigrationsresponsetypedef).
 
+<a id="get_slot_type"></a>
+
 ### get_slot_type
 
 Returns information about a specific version of a slot type.
@@ -743,6 +818,8 @@ Keyword-only arguments:
 
 Returns
 [GetSlotTypeResponseTypeDef](./type_defs.md#getslottyperesponsetypedef).
+
+<a id="get_slot_type_versions"></a>
 
 ### get_slot_type_versions
 
@@ -765,6 +842,8 @@ Keyword-only arguments:
 
 Returns
 [GetSlotTypeVersionsResponseTypeDef](./type_defs.md#getslottypeversionsresponsetypedef).
+
+<a id="get_slot_types"></a>
 
 ### get_slot_types
 
@@ -789,6 +868,8 @@ Keyword-only arguments:
 Returns
 [GetSlotTypesResponseTypeDef](./type_defs.md#getslottypesresponsetypedef).
 
+<a id="get_utterances_view"></a>
+
 ### get_utterances_view
 
 Use the `GetUtterancesView` operation to get information about the utterances
@@ -811,6 +892,8 @@ Keyword-only arguments:
 Returns
 [GetUtterancesViewResponseTypeDef](./type_defs.md#getutterancesviewresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Gets a list of tags associated with the specified resource.
@@ -830,6 +913,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_bot"></a>
 
 ### put_bot
 
@@ -864,6 +949,8 @@ Keyword-only arguments:
 
 Returns [PutBotResponseTypeDef](./type_defs.md#putbotresponsetypedef).
 
+<a id="put_bot_alias"></a>
+
 ### put_bot_alias
 
 Creates an alias for the specified version of the bot or replaces an alias for
@@ -890,6 +977,8 @@ Keyword-only arguments:
 
 Returns
 [PutBotAliasResponseTypeDef](./type_defs.md#putbotaliasresponsetypedef).
+
+<a id="put_intent"></a>
 
 ### put_intent
 
@@ -929,6 +1018,8 @@ Keyword-only arguments:
 
 Returns [PutIntentResponseTypeDef](./type_defs.md#putintentresponsetypedef).
 
+<a id="put_slot_type"></a>
+
 ### put_slot_type
 
 Creates a custom slot type or replaces an existing custom slot type.
@@ -958,6 +1049,8 @@ Keyword-only arguments:
 Returns
 [PutSlotTypeResponseTypeDef](./type_defs.md#putslottyperesponsetypedef).
 
+<a id="start_import"></a>
+
 ### start_import
 
 Starts a job to import a resource to Amazon Lex.
@@ -981,6 +1074,8 @@ Keyword-only arguments:
 
 Returns
 [StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef).
+
+<a id="start_migration"></a>
 
 ### start_migration
 
@@ -1006,6 +1101,8 @@ Keyword-only arguments:
 Returns
 [StartMigrationResponseTypeDef](./type_defs.md#startmigrationresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tags to the specified resource.
@@ -1025,6 +1122,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a bot, bot alias or bot channel.
@@ -1043,6 +1142,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

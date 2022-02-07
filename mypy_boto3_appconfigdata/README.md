@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-appconfigdata-module"></a>
+
 # Type annotations for boto3 AppConfigData module
 
 > [Index](..) > AppConfigData
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AppConfigData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfigdata.html#AppConfigData)
 type annotations stubs module
-[mypy_boto3_appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
+[mypy-boto3-appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[appconfigdata]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[appconfigdata]'
+
+# standalone installation
 pip install mypy-boto3-appconfigdata
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-appconfigdata
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="appconfigdataclient"></a>
 
 ## AppConfigDataClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_appconfigdata.client import AppConfigDataClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -36,6 +50,8 @@ from mypy_boto3_appconfigdata.client import AppConfigDataClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_latest_configuration](./client.md#get_latest_configuration)
 - [start_configuration_session](./client.md#start_configuration_session)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -46,6 +62,8 @@ AppConfigDataClient [exceptions](./client.md#exceptions)
 - InternalServerException
 - ResourceNotFoundException
 - ThrottlingException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -58,6 +76,8 @@ from mypy_boto3_appconfigdata.literals import ServiceName, ...
 ```
 
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

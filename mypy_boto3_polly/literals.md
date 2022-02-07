@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-polly-module"></a>
+
 # Literals for boto3 Polly module
 
 > [Index](..) > [Polly](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
 type annotations stubs module
-[mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
+[mypy-boto3-polly](https://pypi.org/project/mypy-boto3-polly/).
 
 - [Literals for boto3 Polly module](#literals-for-boto3-polly-module)
   - [DescribeVoicesPaginatorName](#describevoicespaginatorname)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="describevoicespaginatorname"></a>
+
 ## DescribeVoicesPaginatorName
 
 ```python
@@ -31,6 +35,8 @@ from mypy_boto3_polly.literals import DescribeVoicesPaginatorName
 Values:
 
 - `describe_voices`
+
+<a id="enginetype"></a>
 
 ## EngineType
 
@@ -43,6 +49,8 @@ Values:
 - `neural`
 - `standard`
 
+<a id="gendertype"></a>
+
 ## GenderType
 
 ```python
@@ -53,6 +61,8 @@ Values:
 
 - `Female`
 - `Male`
+
+<a id="languagecodetype"></a>
 
 ## LanguageCodeType
 
@@ -94,6 +104,8 @@ Values:
 - `sv-SE`
 - `tr-TR`
 
+<a id="listlexiconspaginatorname"></a>
+
 ## ListLexiconsPaginatorName
 
 ```python
@@ -104,6 +116,8 @@ Values:
 
 - `list_lexicons`
 
+<a id="listspeechsynthesistaskspaginatorname"></a>
+
 ## ListSpeechSynthesisTasksPaginatorName
 
 ```python
@@ -113,6 +127,8 @@ from mypy_boto3_polly.literals import ListSpeechSynthesisTasksPaginatorName
 Values:
 
 - `list_speech_synthesis_tasks`
+
+<a id="outputformattype"></a>
 
 ## OutputFormatType
 
@@ -127,6 +143,8 @@ Values:
 - `ogg_vorbis`
 - `pcm`
 
+<a id="speechmarktypetype"></a>
+
 ## SpeechMarkTypeType
 
 ```python
@@ -139,6 +157,8 @@ Values:
 - `ssml`
 - `viseme`
 - `word`
+
+<a id="taskstatustype"></a>
 
 ## TaskStatusType
 
@@ -153,6 +173,8 @@ Values:
 - `inProgress`
 - `scheduled`
 
+<a id="texttypetype"></a>
+
 ## TextTypeType
 
 ```python
@@ -163,6 +185,8 @@ Values:
 
 - `ssml`
 - `text`
+
+<a id="voiceidtype"></a>
 
 ## VoiceIdType
 
@@ -237,6 +261,8 @@ Values:
 - `Vitoria`
 - `Zeina`
 - `Zhiyu`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -545,6 +571,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

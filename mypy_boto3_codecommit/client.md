@@ -1,3 +1,5 @@
+<a id="codecommitclient-for-boto3-codecommit-module"></a>
+
 # CodeCommitClient for boto3 CodeCommit module
 
 > [Index](..) > [CodeCommit](.) > CodeCommitClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
 type annotations stubs module
-[mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
+[mypy-boto3-codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
 - [CodeCommitClient for boto3 CodeCommit module](#codecommitclient-for-boto3-codecommit-module)
   - [CodeCommitClient](#codecommitclient)
@@ -93,6 +95,8 @@ type annotations stubs module
     - [update_repository_name](#update_repository_name)
     - [get_paginator](#get_paginator)
 
+<a id="codecommitclient"></a>
+
 ## CodeCommitClient
 
 Type annotations for `boto3.client("codecommit")`
@@ -100,14 +104,17 @@ Type annotations for `boto3.client("codecommit")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_codecommit.client import CodeCommitClient
 
 def get_codecommit_client() -> CodeCommitClient:
-    return boto3.client("codecommit")
+    return Session().client("codecommit")
 ```
 
 Boto3 documentation:
 [CodeCommit.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -310,7 +317,11 @@ Exceptions:
 - `Exceptions.TitleRequiredException`
 - `Exceptions.TooManyTagsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -322,6 +333,8 @@ Boto3 documentation:
 [CodeCommit.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_approval_rule_template_with_repository"></a>
 
 ### associate_approval_rule_template_with_repository
 
@@ -342,6 +355,8 @@ Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `repositoryName`: `str` *(required)*
+
+<a id="batch_associate_approval_rule_template_with_repositories"></a>
 
 ### batch_associate_approval_rule_template_with_repositories
 
@@ -365,6 +380,8 @@ Keyword-only arguments:
 
 Returns
 [BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef](./type_defs.md#batchassociateapprovalruletemplatewithrepositoriesoutputtypedef).
+
+<a id="batch_describe_merge_conflicts"></a>
 
 ### batch_describe_merge_conflicts
 
@@ -399,6 +416,8 @@ Keyword-only arguments:
 Returns
 [BatchDescribeMergeConflictsOutputTypeDef](./type_defs.md#batchdescribemergeconflictsoutputtypedef).
 
+<a id="batch_disassociate_approval_rule_template_from_repositories"></a>
+
 ### batch_disassociate_approval_rule_template_from_repositories
 
 Removes the association between an approval rule template and one or more
@@ -422,6 +441,8 @@ Keyword-only arguments:
 Returns
 [BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef](./type_defs.md#batchdisassociateapprovalruletemplatefromrepositoriesoutputtypedef).
 
+<a id="batch_get_commits"></a>
+
 ### batch_get_commits
 
 Returns information about the contents of one or more commits in a repository.
@@ -441,6 +462,8 @@ Keyword-only arguments:
 
 Returns
 [BatchGetCommitsOutputTypeDef](./type_defs.md#batchgetcommitsoutputtypedef).
+
+<a id="batch_get_repositories"></a>
 
 ### batch_get_repositories
 
@@ -462,6 +485,8 @@ Keyword-only arguments:
 Returns
 [BatchGetRepositoriesOutputTypeDef](./type_defs.md#batchgetrepositoriesoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -476,6 +501,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_approval_rule_template"></a>
 
 ### create_approval_rule_template
 
@@ -500,6 +527,8 @@ Keyword-only arguments:
 Returns
 [CreateApprovalRuleTemplateOutputTypeDef](./type_defs.md#createapprovalruletemplateoutputtypedef).
 
+<a id="create_branch"></a>
+
 ### create_branch
 
 Creates a branch in a repository and points the branch to a commit.
@@ -517,6 +546,8 @@ Keyword-only arguments:
 - `repositoryName`: `str` *(required)*
 - `branchName`: `str` *(required)*
 - `commitId`: `str` *(required)*
+
+<a id="create_commit"></a>
 
 ### create_commit
 
@@ -548,6 +579,8 @@ Keyword-only arguments:
 
 Returns [CreateCommitOutputTypeDef](./type_defs.md#createcommitoutputtypedef).
 
+<a id="create_pull_request"></a>
+
 ### create_pull_request
 
 Creates a pull request in the specified repository.
@@ -571,6 +604,8 @@ Keyword-only arguments:
 Returns
 [CreatePullRequestOutputTypeDef](./type_defs.md#createpullrequestoutputtypedef).
 
+<a id="create_pull_request_approval_rule"></a>
+
 ### create_pull_request_approval_rule
 
 Creates an approval rule for a pull request.
@@ -593,6 +628,8 @@ Keyword-only arguments:
 Returns
 [CreatePullRequestApprovalRuleOutputTypeDef](./type_defs.md#createpullrequestapprovalruleoutputtypedef).
 
+<a id="create_repository"></a>
+
 ### create_repository
 
 Creates a new, empty repository.
@@ -613,6 +650,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRepositoryOutputTypeDef](./type_defs.md#createrepositoryoutputtypedef).
+
+<a id="create_unreferenced_merge_commit"></a>
 
 ### create_unreferenced_merge_commit
 
@@ -649,6 +688,8 @@ Keyword-only arguments:
 Returns
 [CreateUnreferencedMergeCommitOutputTypeDef](./type_defs.md#createunreferencedmergecommitoutputtypedef).
 
+<a id="delete_approval_rule_template"></a>
+
 ### delete_approval_rule_template
 
 Deletes a specified approval rule template.
@@ -668,6 +709,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteApprovalRuleTemplateOutputTypeDef](./type_defs.md#deleteapprovalruletemplateoutputtypedef).
+
+<a id="delete_branch"></a>
 
 ### delete_branch
 
@@ -689,6 +732,8 @@ Keyword-only arguments:
 
 Returns [DeleteBranchOutputTypeDef](./type_defs.md#deletebranchoutputtypedef).
 
+<a id="delete_comment_content"></a>
+
 ### delete_comment_content
 
 Deletes the content of a comment made on a change, file, or commit in a
@@ -709,6 +754,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteCommentContentOutputTypeDef](./type_defs.md#deletecommentcontentoutputtypedef).
+
+<a id="delete_file"></a>
 
 ### delete_file
 
@@ -735,6 +782,8 @@ Keyword-only arguments:
 
 Returns [DeleteFileOutputTypeDef](./type_defs.md#deletefileoutputtypedef).
 
+<a id="delete_pull_request_approval_rule"></a>
+
 ### delete_pull_request_approval_rule
 
 Deletes an approval rule from a specified pull request.
@@ -756,6 +805,8 @@ Keyword-only arguments:
 Returns
 [DeletePullRequestApprovalRuleOutputTypeDef](./type_defs.md#deletepullrequestapprovalruleoutputtypedef).
 
+<a id="delete_repository"></a>
+
 ### delete_repository
 
 Deletes a repository.
@@ -774,6 +825,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteRepositoryOutputTypeDef](./type_defs.md#deleterepositoryoutputtypedef).
+
+<a id="describe_merge_conflicts"></a>
 
 ### describe_merge_conflicts
 
@@ -807,6 +860,8 @@ Keyword-only arguments:
 Returns
 [DescribeMergeConflictsOutputTypeDef](./type_defs.md#describemergeconflictsoutputtypedef).
 
+<a id="describe_pull_request_events"></a>
+
 ### describe_pull_request_events
 
 Returns information about one or more pull request events.
@@ -832,6 +887,8 @@ Keyword-only arguments:
 Returns
 [DescribePullRequestEventsOutputTypeDef](./type_defs.md#describepullrequesteventsoutputtypedef).
 
+<a id="disassociate_approval_rule_template_from_repository"></a>
+
 ### disassociate_approval_rule_template_from_repository
 
 Removes the association between a template and a repository so that approval
@@ -852,6 +909,8 @@ Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `repositoryName`: `str` *(required)*
+
+<a id="evaluate_pull_request_approval_rules"></a>
 
 ### evaluate_pull_request_approval_rules
 
@@ -875,6 +934,8 @@ Keyword-only arguments:
 Returns
 [EvaluatePullRequestApprovalRulesOutputTypeDef](./type_defs.md#evaluatepullrequestapprovalrulesoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -893,6 +954,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_approval_rule_template"></a>
 
 ### get_approval_rule_template
 
@@ -914,6 +977,8 @@ Keyword-only arguments:
 Returns
 [GetApprovalRuleTemplateOutputTypeDef](./type_defs.md#getapprovalruletemplateoutputtypedef).
 
+<a id="get_blob"></a>
+
 ### get_blob
 
 Returns the base-64 encoded content of an individual blob in a repository.
@@ -932,6 +997,8 @@ Keyword-only arguments:
 - `blobId`: `str` *(required)*
 
 Returns [GetBlobOutputTypeDef](./type_defs.md#getbloboutputtypedef).
+
+<a id="get_branch"></a>
 
 ### get_branch
 
@@ -953,6 +1020,8 @@ Keyword-only arguments:
 
 Returns [GetBranchOutputTypeDef](./type_defs.md#getbranchoutputtypedef).
 
+<a id="get_comment"></a>
+
 ### get_comment
 
 Returns the content of a comment made on a change, file, or commit in a
@@ -971,6 +1040,8 @@ Keyword-only arguments:
 - `commentId`: `str` *(required)*
 
 Returns [GetCommentOutputTypeDef](./type_defs.md#getcommentoutputtypedef).
+
+<a id="get_comment_reactions"></a>
 
 ### get_comment_reactions
 
@@ -993,6 +1064,8 @@ Keyword-only arguments:
 
 Returns
 [GetCommentReactionsOutputTypeDef](./type_defs.md#getcommentreactionsoutputtypedef).
+
+<a id="get_comments_for_compared_commit"></a>
 
 ### get_comments_for_compared_commit
 
@@ -1017,6 +1090,8 @@ Keyword-only arguments:
 
 Returns
 [GetCommentsForComparedCommitOutputTypeDef](./type_defs.md#getcommentsforcomparedcommitoutputtypedef).
+
+<a id="get_comments_for_pull_request"></a>
 
 ### get_comments_for_pull_request
 
@@ -1043,6 +1118,8 @@ Keyword-only arguments:
 Returns
 [GetCommentsForPullRequestOutputTypeDef](./type_defs.md#getcommentsforpullrequestoutputtypedef).
 
+<a id="get_commit"></a>
+
 ### get_commit
 
 Returns information about a commit, including commit message and committer
@@ -1062,6 +1139,8 @@ Keyword-only arguments:
 - `commitId`: `str` *(required)*
 
 Returns [GetCommitOutputTypeDef](./type_defs.md#getcommitoutputtypedef).
+
+<a id="get_differences"></a>
 
 ### get_differences
 
@@ -1089,6 +1168,8 @@ Keyword-only arguments:
 Returns
 [GetDifferencesOutputTypeDef](./type_defs.md#getdifferencesoutputtypedef).
 
+<a id="get_file"></a>
+
 ### get_file
 
 Returns the base-64 encoded contents of a specified file and its metadata.
@@ -1109,6 +1190,8 @@ Keyword-only arguments:
 
 Returns [GetFileOutputTypeDef](./type_defs.md#getfileoutputtypedef).
 
+<a id="get_folder"></a>
+
 ### get_folder
 
 Returns the contents of a specified folder in a repository.
@@ -1128,6 +1211,8 @@ Keyword-only arguments:
 - `commitSpecifier`: `str`
 
 Returns [GetFolderOutputTypeDef](./type_defs.md#getfolderoutputtypedef).
+
+<a id="get_merge_commit"></a>
 
 ### get_merge_commit
 
@@ -1153,6 +1238,8 @@ Keyword-only arguments:
 
 Returns
 [GetMergeCommitOutputTypeDef](./type_defs.md#getmergecommitoutputtypedef).
+
+<a id="get_merge_conflicts"></a>
 
 ### get_merge_conflicts
 
@@ -1184,6 +1271,8 @@ Keyword-only arguments:
 Returns
 [GetMergeConflictsOutputTypeDef](./type_defs.md#getmergeconflictsoutputtypedef).
 
+<a id="get_merge_options"></a>
+
 ### get_merge_options
 
 Returns information about the merge options available for merging two specified
@@ -1210,6 +1299,8 @@ Keyword-only arguments:
 Returns
 [GetMergeOptionsOutputTypeDef](./type_defs.md#getmergeoptionsoutputtypedef).
 
+<a id="get_pull_request"></a>
+
 ### get_pull_request
 
 Gets information about a pull request in a specified repository.
@@ -1228,6 +1319,8 @@ Keyword-only arguments:
 
 Returns
 [GetPullRequestOutputTypeDef](./type_defs.md#getpullrequestoutputtypedef).
+
+<a id="get_pull_request_approval_states"></a>
 
 ### get_pull_request_approval_states
 
@@ -1249,6 +1342,8 @@ Keyword-only arguments:
 
 Returns
 [GetPullRequestApprovalStatesOutputTypeDef](./type_defs.md#getpullrequestapprovalstatesoutputtypedef).
+
+<a id="get_pull_request_override_state"></a>
 
 ### get_pull_request_override_state
 
@@ -1274,6 +1369,8 @@ Keyword-only arguments:
 Returns
 [GetPullRequestOverrideStateOutputTypeDef](./type_defs.md#getpullrequestoverridestateoutputtypedef).
 
+<a id="get_repository"></a>
+
 ### get_repository
 
 Returns information about a repository.
@@ -1292,6 +1389,8 @@ Keyword-only arguments:
 
 Returns
 [GetRepositoryOutputTypeDef](./type_defs.md#getrepositoryoutputtypedef).
+
+<a id="get_repository_triggers"></a>
 
 ### get_repository_triggers
 
@@ -1312,6 +1411,8 @@ Keyword-only arguments:
 
 Returns
 [GetRepositoryTriggersOutputTypeDef](./type_defs.md#getrepositorytriggersoutputtypedef).
+
+<a id="list_approval_rule_templates"></a>
 
 ### list_approval_rule_templates
 
@@ -1334,6 +1435,8 @@ Keyword-only arguments:
 
 Returns
 [ListApprovalRuleTemplatesOutputTypeDef](./type_defs.md#listapprovalruletemplatesoutputtypedef).
+
+<a id="list_associated_approval_rule_templates_for_repository"></a>
 
 ### list_associated_approval_rule_templates_for_repository
 
@@ -1359,6 +1462,8 @@ Keyword-only arguments:
 Returns
 [ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef](./type_defs.md#listassociatedapprovalruletemplatesforrepositoryoutputtypedef).
 
+<a id="list_branches"></a>
+
 ### list_branches
 
 Gets information about one or more branches in a repository.
@@ -1377,6 +1482,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListBranchesOutputTypeDef](./type_defs.md#listbranchesoutputtypedef).
+
+<a id="list_pull_requests"></a>
 
 ### list_pull_requests
 
@@ -1402,6 +1509,8 @@ Keyword-only arguments:
 Returns
 [ListPullRequestsOutputTypeDef](./type_defs.md#listpullrequestsoutputtypedef).
 
+<a id="list_repositories"></a>
+
 ### list_repositories
 
 Gets information about one or more repositories.
@@ -1422,6 +1531,8 @@ Keyword-only arguments:
 
 Returns
 [ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef).
+
+<a id="list_repositories_for_approval_rule_template"></a>
 
 ### list_repositories_for_approval_rule_template
 
@@ -1446,6 +1557,8 @@ Keyword-only arguments:
 Returns
 [ListRepositoriesForApprovalRuleTemplateOutputTypeDef](./type_defs.md#listrepositoriesforapprovalruletemplateoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Gets information about AWS tags for a specified Amazon Resource Name (ARN) in
@@ -1467,6 +1580,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+
+<a id="merge_branches_by_fast_forward"></a>
 
 ### merge_branches_by_fast_forward
 
@@ -1490,6 +1605,8 @@ Keyword-only arguments:
 
 Returns
 [MergeBranchesByFastForwardOutputTypeDef](./type_defs.md#mergebranchesbyfastforwardoutputtypedef).
+
+<a id="merge_branches_by_squash"></a>
 
 ### merge_branches_by_squash
 
@@ -1524,6 +1641,8 @@ Keyword-only arguments:
 Returns
 [MergeBranchesBySquashOutputTypeDef](./type_defs.md#mergebranchesbysquashoutputtypedef).
 
+<a id="merge_branches_by_three_way"></a>
+
 ### merge_branches_by_three_way
 
 Merges two specified branches using the three-way merge strategy.
@@ -1557,6 +1676,8 @@ Keyword-only arguments:
 Returns
 [MergeBranchesByThreeWayOutputTypeDef](./type_defs.md#mergebranchesbythreewayoutputtypedef).
 
+<a id="merge_pull_request_by_fast_forward"></a>
+
 ### merge_pull_request_by_fast_forward
 
 Attempts to merge the source commit of a pull request into the specified
@@ -1580,6 +1701,8 @@ Keyword-only arguments:
 
 Returns
 [MergePullRequestByFastForwardOutputTypeDef](./type_defs.md#mergepullrequestbyfastforwardoutputtypedef).
+
+<a id="merge_pull_request_by_squash"></a>
 
 ### merge_pull_request_by_squash
 
@@ -1615,6 +1738,8 @@ Keyword-only arguments:
 Returns
 [MergePullRequestBySquashOutputTypeDef](./type_defs.md#mergepullrequestbysquashoutputtypedef).
 
+<a id="merge_pull_request_by_three_way"></a>
+
 ### merge_pull_request_by_three_way
 
 Attempts to merge the source commit of a pull request into the specified
@@ -1649,6 +1774,8 @@ Keyword-only arguments:
 Returns
 [MergePullRequestByThreeWayOutputTypeDef](./type_defs.md#mergepullrequestbythreewayoutputtypedef).
 
+<a id="override_pull_request_approval_rules"></a>
+
 ### override_pull_request_approval_rules
 
 Sets aside (overrides) all approval rule requirements for a specified pull
@@ -1669,6 +1796,8 @@ Keyword-only arguments:
 - `revisionId`: `str` *(required)*
 - `overrideStatus`: [OverrideStatusType](./literals.md#overridestatustype)
   *(required)*
+
+<a id="post_comment_for_compared_commit"></a>
 
 ### post_comment_for_compared_commit
 
@@ -1694,6 +1823,8 @@ Keyword-only arguments:
 
 Returns
 [PostCommentForComparedCommitOutputTypeDef](./type_defs.md#postcommentforcomparedcommitoutputtypedef).
+
+<a id="post_comment_for_pull_request"></a>
 
 ### post_comment_for_pull_request
 
@@ -1721,6 +1852,8 @@ Keyword-only arguments:
 Returns
 [PostCommentForPullRequestOutputTypeDef](./type_defs.md#postcommentforpullrequestoutputtypedef).
 
+<a id="post_comment_reply"></a>
+
 ### post_comment_reply
 
 Posts a comment in reply to an existing comment on a comparison between commits
@@ -1743,6 +1876,8 @@ Keyword-only arguments:
 Returns
 [PostCommentReplyOutputTypeDef](./type_defs.md#postcommentreplyoutputtypedef).
 
+<a id="put_comment_reaction"></a>
+
 ### put_comment_reaction
 
 Adds or updates a reaction to a specified comment for the user whose identity
@@ -1760,6 +1895,8 @@ Keyword-only arguments:
 
 - `commentId`: `str` *(required)*
 - `reactionValue`: `str` *(required)*
+
+<a id="put_file"></a>
 
 ### put_file
 
@@ -1789,6 +1926,8 @@ Keyword-only arguments:
 
 Returns [PutFileOutputTypeDef](./type_defs.md#putfileoutputtypedef).
 
+<a id="put_repository_triggers"></a>
+
 ### put_repository_triggers
 
 Replaces all triggers for a repository.
@@ -1812,6 +1951,8 @@ Keyword-only arguments:
 Returns
 [PutRepositoryTriggersOutputTypeDef](./type_defs.md#putrepositorytriggersoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or updates tags for a resource in AWS CodeCommit.
@@ -1828,6 +1969,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
+
+<a id="test_repository_triggers"></a>
 
 ### test_repository_triggers
 
@@ -1853,6 +1996,8 @@ Keyword-only arguments:
 Returns
 [TestRepositoryTriggersOutputTypeDef](./type_defs.md#testrepositorytriggersoutputtypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags for a resource in AWS CodeCommit.
@@ -1869,6 +2014,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_approval_rule_template_content"></a>
 
 ### update_approval_rule_template_content
 
@@ -1892,6 +2039,8 @@ Keyword-only arguments:
 Returns
 [UpdateApprovalRuleTemplateContentOutputTypeDef](./type_defs.md#updateapprovalruletemplatecontentoutputtypedef).
 
+<a id="update_approval_rule_template_description"></a>
+
 ### update_approval_rule_template_description
 
 Updates the description for a specified approval rule template.
@@ -1912,6 +2061,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateApprovalRuleTemplateDescriptionOutputTypeDef](./type_defs.md#updateapprovalruletemplatedescriptionoutputtypedef).
+
+<a id="update_approval_rule_template_name"></a>
 
 ### update_approval_rule_template_name
 
@@ -1934,6 +2085,8 @@ Keyword-only arguments:
 Returns
 [UpdateApprovalRuleTemplateNameOutputTypeDef](./type_defs.md#updateapprovalruletemplatenameoutputtypedef).
 
+<a id="update_comment"></a>
+
 ### update_comment
 
 Replaces the contents of a comment.
@@ -1954,6 +2107,8 @@ Keyword-only arguments:
 Returns
 [UpdateCommentOutputTypeDef](./type_defs.md#updatecommentoutputtypedef).
 
+<a id="update_default_branch"></a>
+
 ### update_default_branch
 
 Sets or changes the default branch name for the specified repository.
@@ -1970,6 +2125,8 @@ Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `defaultBranchName`: `str` *(required)*
+
+<a id="update_pull_request_approval_rule_content"></a>
 
 ### update_pull_request_approval_rule_content
 
@@ -1995,6 +2152,8 @@ Keyword-only arguments:
 Returns
 [UpdatePullRequestApprovalRuleContentOutputTypeDef](./type_defs.md#updatepullrequestapprovalrulecontentoutputtypedef).
 
+<a id="update_pull_request_approval_state"></a>
+
 ### update_pull_request_approval_state
 
 Updates the state of a user's approval on a pull request.
@@ -2014,6 +2173,8 @@ Keyword-only arguments:
 - `revisionId`: `str` *(required)*
 - `approvalState`: [ApprovalStateType](./literals.md#approvalstatetype)
   *(required)*
+
+<a id="update_pull_request_description"></a>
 
 ### update_pull_request_description
 
@@ -2035,6 +2196,8 @@ Keyword-only arguments:
 
 Returns
 [UpdatePullRequestDescriptionOutputTypeDef](./type_defs.md#updatepullrequestdescriptionoutputtypedef).
+
+<a id="update_pull_request_status"></a>
 
 ### update_pull_request_status
 
@@ -2059,6 +2222,8 @@ Keyword-only arguments:
 Returns
 [UpdatePullRequestStatusOutputTypeDef](./type_defs.md#updatepullrequeststatusoutputtypedef).
 
+<a id="update_pull_request_title"></a>
+
 ### update_pull_request_title
 
 Replaces the title of a pull request.
@@ -2080,6 +2245,8 @@ Keyword-only arguments:
 Returns
 [UpdatePullRequestTitleOutputTypeDef](./type_defs.md#updatepullrequesttitleoutputtypedef).
 
+<a id="update_repository_description"></a>
+
 ### update_repository_description
 
 Sets or changes the comment or description for a repository.
@@ -2098,6 +2265,8 @@ Keyword-only arguments:
 - `repositoryName`: `str` *(required)*
 - `repositoryDescription`: `str`
 
+<a id="update_repository_name"></a>
+
 ### update_repository_name
 
 Renames a repository.
@@ -2115,6 +2284,8 @@ Keyword-only arguments:
 
 - `oldName`: `str` *(required)*
 - `newName`: `str` *(required)*
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

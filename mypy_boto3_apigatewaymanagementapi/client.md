@@ -1,3 +1,5 @@
+<a id="apigatewaymanagementapiclient-for-boto3-apigatewaymanagementapi-module"></a>
+
 # ApiGatewayManagementApiClient for boto3 ApiGatewayManagementApi module
 
 > [Index](..) > [ApiGatewayManagementApi](.) > ApiGatewayManagementApiClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
 type annotations stubs module
-[mypy_boto3_apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
+[mypy-boto3-apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
 
 - [ApiGatewayManagementApiClient for boto3 ApiGatewayManagementApi module](#apigatewaymanagementapiclient-for-boto3-apigatewaymanagementapi-module)
   - [ApiGatewayManagementApiClient](#apigatewaymanagementapiclient)
@@ -18,6 +20,8 @@ type annotations stubs module
     - [get_connection](#get_connection)
     - [post_to_connection](#post_to_connection)
 
+<a id="apigatewaymanagementapiclient"></a>
+
 ## ApiGatewayManagementApiClient
 
 Type annotations for `boto3.client("apigatewaymanagementapi")`
@@ -25,14 +29,17 @@ Type annotations for `boto3.client("apigatewaymanagementapi")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_apigatewaymanagementapi.client import ApiGatewayManagementApiClient
 
 def get_apigatewaymanagementapi_client() -> ApiGatewayManagementApiClient:
-    return boto3.client("apigatewaymanagementapi")
+    return Session().client("apigatewaymanagementapi")
 ```
 
 Boto3 documentation:
 [ApiGatewayManagementApi.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -54,7 +61,11 @@ Exceptions:
 - `Exceptions.LimitExceededException`
 - `Exceptions.PayloadTooLargeException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -67,6 +78,8 @@ Boto3 documentation:
 [ApiGatewayManagementApi.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -84,6 +97,8 @@ Arguments:
 
 Returns `bool`.
 
+<a id="delete_connection"></a>
+
 ### delete_connection
 
 Delete the connection with the provided id.
@@ -100,6 +115,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ConnectionId`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -120,6 +137,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_connection"></a>
+
 ### get_connection
 
 Get information about the connection with the provided id.
@@ -139,6 +158,8 @@ Keyword-only arguments:
 
 Returns
 [GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef).
+
+<a id="post_to_connection"></a>
 
 ### post_to_connection
 

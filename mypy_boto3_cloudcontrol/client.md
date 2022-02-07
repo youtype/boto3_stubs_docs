@@ -1,3 +1,5 @@
+<a id="cloudcontrolapiclient-for-boto3-cloudcontrolapi-module"></a>
+
 # CloudControlApiClient for boto3 CloudControlApi module
 
 > [Index](..) > [CloudControlApi](.) > CloudControlApiClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
 type annotations stubs module
-[mypy_boto3_cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
+[mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
 
 - [CloudControlApiClient for boto3 CloudControlApi module](#cloudcontrolapiclient-for-boto3-cloudcontrolapi-module)
   - [CloudControlApiClient](#cloudcontrolapiclient)
@@ -24,6 +26,8 @@ type annotations stubs module
     - [update_resource](#update_resource)
     - [get_waiter](#get_waiter)
 
+<a id="cloudcontrolapiclient"></a>
+
 ## CloudControlApiClient
 
 Type annotations for `boto3.client("cloudcontrol")`
@@ -31,14 +35,17 @@ Type annotations for `boto3.client("cloudcontrol")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cloudcontrol.client import CloudControlApiClient
 
 def get_cloudcontrol_client() -> CloudControlApiClient:
-    return boto3.client("cloudcontrol")
+    return Session().client("cloudcontrol")
 ```
 
 Boto3 documentation:
 [CloudControlApi.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -77,7 +84,11 @@ Exceptions:
 - `Exceptions.TypeNotFoundException`
 - `Exceptions.UnsupportedActionException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -89,6 +100,8 @@ Boto3 documentation:
 [CloudControlApi.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -104,6 +117,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_resource_request"></a>
 
 ### cancel_resource_request
 
@@ -124,6 +139,8 @@ Keyword-only arguments:
 
 Returns
 [CancelResourceRequestOutputTypeDef](./type_defs.md#cancelresourcerequestoutputtypedef).
+
+<a id="create_resource"></a>
 
 ### create_resource
 
@@ -148,6 +165,8 @@ Keyword-only arguments:
 Returns
 [CreateResourceOutputTypeDef](./type_defs.md#createresourceoutputtypedef).
 
+<a id="delete_resource"></a>
+
 ### delete_resource
 
 Deletes the specified resource.
@@ -171,6 +190,8 @@ Keyword-only arguments:
 Returns
 [DeleteResourceOutputTypeDef](./type_defs.md#deleteresourceoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -189,6 +210,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_resource"></a>
 
 ### get_resource
 
@@ -211,6 +234,8 @@ Keyword-only arguments:
 
 Returns [GetResourceOutputTypeDef](./type_defs.md#getresourceoutputtypedef).
 
+<a id="get_resource_request_status"></a>
+
 ### get_resource_request_status
 
 Returns the current status of a resource operation request.
@@ -230,6 +255,8 @@ Keyword-only arguments:
 
 Returns
 [GetResourceRequestStatusOutputTypeDef](./type_defs.md#getresourcerequeststatusoutputtypedef).
+
+<a id="list_resource_requests"></a>
 
 ### list_resource_requests
 
@@ -253,6 +280,8 @@ Keyword-only arguments:
 
 Returns
 [ListResourceRequestsOutputTypeDef](./type_defs.md#listresourcerequestsoutputtypedef).
+
+<a id="list_resources"></a>
 
 ### list_resources
 
@@ -278,6 +307,8 @@ Keyword-only arguments:
 Returns
 [ListResourcesOutputTypeDef](./type_defs.md#listresourcesoutputtypedef).
 
+<a id="update_resource"></a>
+
 ### update_resource
 
 .
@@ -301,6 +332,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateResourceOutputTypeDef](./type_defs.md#updateresourceoutputtypedef).
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

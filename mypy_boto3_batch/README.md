@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-batch-module"></a>
+
 # Type annotations for boto3 Batch module
 
 > [Index](..) > Batch
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
 type annotations stubs module
-[mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
+[mypy-boto3-batch](https://pypi.org/project/mypy-boto3-batch/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[batch]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[batch]'
+
+# standalone installation
 pip install mypy-boto3-batch
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-batch
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="batchclient"></a>
+
 ## BatchClient
 
 Type annotations for `boto3.client("batch")` as [BatchClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_batch.client import BatchClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -60,6 +74,8 @@ from mypy_boto3_batch.client import BatchClient
 - [update_job_queue](./client.md#update_job_queue)
 - [update_scheduling_policy](./client.md#update_scheduling_policy)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 BatchClient [exceptions](./client.md#exceptions)
@@ -67,6 +83,8 @@ BatchClient [exceptions](./client.md#exceptions)
 - ClientError
 - ClientException
 - ServerException
+
+<a id="paginators"></a>
 
 ## Paginators
 
@@ -76,7 +94,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_batch.paginators import DescribeComputeEnvironmentsPaginator, ...
+from mypy_boto3_batch.paginator import DescribeComputeEnvironmentsPaginator, ...
 ```
 
 - [DescribeComputeEnvironmentsPaginator](./paginators.md#describecomputeenvironmentspaginator)
@@ -84,6 +102,8 @@ from mypy_boto3_batch.paginators import DescribeComputeEnvironmentsPaginator, ..
 - [DescribeJobQueuesPaginator](./paginators.md#describejobqueuespaginator)
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
 - [ListSchedulingPoliciesPaginator](./paginators.md#listschedulingpoliciespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -120,6 +140,8 @@ from mypy_boto3_batch.literals import ArrayJobDependencyType, ...
 - [RetryActionType](./literals.md#retryactiontype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-batch-module"></a>
+
 # Typed dictionaries for boto3 Batch module
 
 > [Index](..) > [Batch](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
 type annotations stubs module
-[mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
+[mypy-boto3-batch](https://pypi.org/project/mypy-boto3-batch/).
 
 - [Typed dictionaries for boto3 Batch module](#typed-dictionaries-for-boto3-batch-module)
   - [ArrayPropertiesDetailTypeDef](#arraypropertiesdetailtypedef)
@@ -100,6 +102,8 @@ type annotations stubs module
   - [UpdateSchedulingPolicyRequestRequestTypeDef](#updateschedulingpolicyrequestrequesttypedef)
   - [VolumeTypeDef](#volumetypedef)
 
+<a id="arraypropertiesdetailtypedef"></a>
+
 ## ArrayPropertiesDetailTypeDef
 
 ```python
@@ -112,6 +116,8 @@ Optional fields:
 - `size`: `int`
 - `index`: `int`
 
+<a id="arraypropertiessummarytypedef"></a>
+
 ## ArrayPropertiesSummaryTypeDef
 
 ```python
@@ -123,6 +129,8 @@ Optional fields:
 - `size`: `int`
 - `index`: `int`
 
+<a id="arraypropertiestypedef"></a>
+
 ## ArrayPropertiesTypeDef
 
 ```python
@@ -132,6 +140,8 @@ from mypy_boto3_batch.type_defs import ArrayPropertiesTypeDef
 Optional fields:
 
 - `size`: `int`
+
+<a id="attemptcontainerdetailtypedef"></a>
 
 ## AttemptContainerDetailTypeDef
 
@@ -149,6 +159,8 @@ Optional fields:
 - `networkInterfaces`:
   `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 
+<a id="attemptdetailtypedef"></a>
+
 ## AttemptDetailTypeDef
 
 ```python
@@ -163,6 +175,8 @@ Optional fields:
 - `stoppedAt`: `int`
 - `statusReason`: `str`
 
+<a id="canceljobrequestrequesttypedef"></a>
+
 ## CancelJobRequestRequestTypeDef
 
 ```python
@@ -173,6 +187,8 @@ Required fields:
 
 - `jobId`: `str`
 - `reason`: `str`
+
+<a id="computeenvironmentdetailtypedef"></a>
 
 ## ComputeEnvironmentDetailTypeDef
 
@@ -198,6 +214,8 @@ Optional fields:
   [ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef)
 - `serviceRole`: `str`
 
+<a id="computeenvironmentordertypedef"></a>
+
 ## ComputeEnvironmentOrderTypeDef
 
 ```python
@@ -208,6 +226,8 @@ Required fields:
 
 - `order`: `int`
 - `computeEnvironment`: `str`
+
+<a id="computeresourcetypedef"></a>
 
 ## ComputeResourceTypeDef
 
@@ -241,6 +261,8 @@ Optional fields:
 - `ec2Configuration`:
   `Sequence`\[[Ec2ConfigurationTypeDef](./type_defs.md#ec2configurationtypedef)\]
 
+<a id="computeresourceupdatetypedef"></a>
+
 ## ComputeResourceUpdateTypeDef
 
 ```python
@@ -254,6 +276,8 @@ Optional fields:
 - `desiredvCpus`: `int`
 - `subnets`: `Sequence`\[`str`\]
 - `securityGroupIds`: `Sequence`\[`str`\]
+
+<a id="containerdetailtypedef"></a>
 
 ## ContainerDetailTypeDef
 
@@ -298,6 +322,8 @@ Optional fields:
 - `fargatePlatformConfiguration`:
   [FargatePlatformConfigurationTypeDef](./type_defs.md#fargateplatformconfigurationtypedef)
 
+<a id="containeroverridestypedef"></a>
+
 ## ContainerOverridesTypeDef
 
 ```python
@@ -314,6 +340,8 @@ Optional fields:
   `Sequence`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 - `resourceRequirements`:
   `Sequence`\[[ResourceRequirementTypeDef](./type_defs.md#resourcerequirementtypedef)\]
+
+<a id="containerpropertiestypedef"></a>
 
 ## ContainerPropertiesTypeDef
 
@@ -351,6 +379,8 @@ Optional fields:
 - `fargatePlatformConfiguration`:
   [FargatePlatformConfigurationTypeDef](./type_defs.md#fargateplatformconfigurationtypedef)
 
+<a id="containersummarytypedef"></a>
+
 ## ContainerSummaryTypeDef
 
 ```python
@@ -361,6 +391,8 @@ Optional fields:
 
 - `exitCode`: `int`
 - `reason`: `str`
+
+<a id="createcomputeenvironmentrequestrequesttypedef"></a>
 
 ## CreateComputeEnvironmentRequestRequestTypeDef
 
@@ -382,6 +414,8 @@ Optional fields:
 - `serviceRole`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createcomputeenvironmentresponsetypedef"></a>
+
 ## CreateComputeEnvironmentResponseTypeDef
 
 ```python
@@ -394,6 +428,8 @@ Required fields:
 - `computeEnvironmentArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createjobqueuerequestrequesttypedef"></a>
 
 ## CreateJobQueueRequestRequestTypeDef
 
@@ -414,6 +450,8 @@ Optional fields:
 - `schedulingPolicyArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createjobqueueresponsetypedef"></a>
+
 ## CreateJobQueueResponseTypeDef
 
 ```python
@@ -426,6 +464,8 @@ Required fields:
 - `jobQueueArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createschedulingpolicyrequestrequesttypedef"></a>
 
 ## CreateSchedulingPolicyRequestRequestTypeDef
 
@@ -443,6 +483,8 @@ Optional fields:
   [FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createschedulingpolicyresponsetypedef"></a>
+
 ## CreateSchedulingPolicyResponseTypeDef
 
 ```python
@@ -456,6 +498,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecomputeenvironmentrequestrequesttypedef"></a>
+
 ## DeleteComputeEnvironmentRequestRequestTypeDef
 
 ```python
@@ -465,6 +509,8 @@ from mypy_boto3_batch.type_defs import DeleteComputeEnvironmentRequestRequestTyp
 Required fields:
 
 - `computeEnvironment`: `str`
+
+<a id="deletejobqueuerequestrequesttypedef"></a>
 
 ## DeleteJobQueueRequestRequestTypeDef
 
@@ -476,6 +522,8 @@ Required fields:
 
 - `jobQueue`: `str`
 
+<a id="deleteschedulingpolicyrequestrequesttypedef"></a>
+
 ## DeleteSchedulingPolicyRequestRequestTypeDef
 
 ```python
@@ -486,6 +534,8 @@ Required fields:
 
 - `arn`: `str`
 
+<a id="deregisterjobdefinitionrequestrequesttypedef"></a>
+
 ## DeregisterJobDefinitionRequestRequestTypeDef
 
 ```python
@@ -495,6 +545,8 @@ from mypy_boto3_batch.type_defs import DeregisterJobDefinitionRequestRequestType
 Required fields:
 
 - `jobDefinition`: `str`
+
+<a id="describecomputeenvironmentsrequestrequesttypedef"></a>
 
 ## DescribeComputeEnvironmentsRequestRequestTypeDef
 
@@ -507,6 +559,8 @@ Optional fields:
 - `computeEnvironments`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describecomputeenvironmentsresponsetypedef"></a>
 
 ## DescribeComputeEnvironmentsResponseTypeDef
 
@@ -522,6 +576,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describejobdefinitionsrequestrequesttypedef"></a>
+
 ## DescribeJobDefinitionsRequestRequestTypeDef
 
 ```python
@@ -535,6 +591,8 @@ Optional fields:
 - `jobDefinitionName`: `str`
 - `status`: `str`
 - `nextToken`: `str`
+
+<a id="describejobdefinitionsresponsetypedef"></a>
 
 ## DescribeJobDefinitionsResponseTypeDef
 
@@ -550,6 +608,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describejobqueuesrequestrequesttypedef"></a>
+
 ## DescribeJobQueuesRequestRequestTypeDef
 
 ```python
@@ -561,6 +621,8 @@ Optional fields:
 - `jobQueues`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describejobqueuesresponsetypedef"></a>
 
 ## DescribeJobQueuesResponseTypeDef
 
@@ -576,6 +638,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describejobsrequestrequesttypedef"></a>
+
 ## DescribeJobsRequestRequestTypeDef
 
 ```python
@@ -585,6 +649,8 @@ from mypy_boto3_batch.type_defs import DescribeJobsRequestRequestTypeDef
 Required fields:
 
 - `jobs`: `Sequence`\[`str`\]
+
+<a id="describejobsresponsetypedef"></a>
 
 ## DescribeJobsResponseTypeDef
 
@@ -598,6 +664,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeschedulingpoliciesrequestrequesttypedef"></a>
+
 ## DescribeSchedulingPoliciesRequestRequestTypeDef
 
 ```python
@@ -607,6 +675,8 @@ from mypy_boto3_batch.type_defs import DescribeSchedulingPoliciesRequestRequestT
 Required fields:
 
 - `arns`: `Sequence`\[`str`\]
+
+<a id="describeschedulingpoliciesresponsetypedef"></a>
 
 ## DescribeSchedulingPoliciesResponseTypeDef
 
@@ -620,6 +690,8 @@ Required fields:
   `List`\[[SchedulingPolicyDetailTypeDef](./type_defs.md#schedulingpolicydetailtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="devicetypedef"></a>
 
 ## DeviceTypeDef
 
@@ -637,6 +709,8 @@ Optional fields:
 - `permissions`:
   `List`\[[DeviceCgroupPermissionType](./literals.md#devicecgrouppermissiontype)\]
 
+<a id="efsauthorizationconfigtypedef"></a>
+
 ## EFSAuthorizationConfigTypeDef
 
 ```python
@@ -648,6 +722,8 @@ Optional fields:
 - `accessPointId`: `str`
 - `iam`:
   [EFSAuthorizationConfigIAMType](./literals.md#efsauthorizationconfigiamtype)
+
+<a id="efsvolumeconfigurationtypedef"></a>
 
 ## EFSVolumeConfigurationTypeDef
 
@@ -668,6 +744,8 @@ Optional fields:
 - `authorizationConfig`:
   [EFSAuthorizationConfigTypeDef](./type_defs.md#efsauthorizationconfigtypedef)
 
+<a id="ec2configurationtypedef"></a>
+
 ## Ec2ConfigurationTypeDef
 
 ```python
@@ -681,6 +759,8 @@ Required fields:
 Optional fields:
 
 - `imageIdOverride`: `str`
+
+<a id="evaluateonexittypedef"></a>
 
 ## EvaluateOnExitTypeDef
 
@@ -698,6 +778,8 @@ Optional fields:
 - `onReason`: `str`
 - `onExitCode`: `str`
 
+<a id="fairsharepolicytypedef"></a>
+
 ## FairsharePolicyTypeDef
 
 ```python
@@ -711,6 +793,8 @@ Optional fields:
 - `shareDistribution`:
   `Sequence`\[[ShareAttributesTypeDef](./type_defs.md#shareattributestypedef)\]
 
+<a id="fargateplatformconfigurationtypedef"></a>
+
 ## FargatePlatformConfigurationTypeDef
 
 ```python
@@ -721,6 +805,8 @@ Optional fields:
 
 - `platformVersion`: `str`
 
+<a id="hosttypedef"></a>
+
 ## HostTypeDef
 
 ```python
@@ -730,6 +816,8 @@ from mypy_boto3_batch.type_defs import HostTypeDef
 Optional fields:
 
 - `sourcePath`: `str`
+
+<a id="jobdefinitiontypedef"></a>
 
 ## JobDefinitionTypeDef
 
@@ -760,6 +848,8 @@ Optional fields:
 - `platformCapabilities`:
   `List`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
 
+<a id="jobdependencytypedef"></a>
+
 ## JobDependencyTypeDef
 
 ```python
@@ -770,6 +860,8 @@ Optional fields:
 
 - `jobId`: `str`
 - `type`: [ArrayJobDependencyType](./literals.md#arrayjobdependencytype)
+
+<a id="jobdetailtypedef"></a>
 
 ## JobDetailTypeDef
 
@@ -812,6 +904,8 @@ Optional fields:
 - `platformCapabilities`:
   `List`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
 
+<a id="jobqueuedetailtypedef"></a>
+
 ## JobQueueDetailTypeDef
 
 ```python
@@ -833,6 +927,8 @@ Optional fields:
 - `status`: [JQStatusType](./literals.md#jqstatustype)
 - `statusReason`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="jobsummarytypedef"></a>
 
 ## JobSummaryTypeDef
 
@@ -861,6 +957,8 @@ Optional fields:
   [NodePropertiesSummaryTypeDef](./type_defs.md#nodepropertiessummarytypedef)
 - `jobDefinition`: `str`
 
+<a id="jobtimeouttypedef"></a>
+
 ## JobTimeoutTypeDef
 
 ```python
@@ -870,6 +968,8 @@ from mypy_boto3_batch.type_defs import JobTimeoutTypeDef
 Optional fields:
 
 - `attemptDurationSeconds`: `int`
+
+<a id="keyvaluepairtypedef"></a>
 
 ## KeyValuePairTypeDef
 
@@ -882,6 +982,8 @@ Optional fields:
 - `name`: `str`
 - `value`: `str`
 
+<a id="keyvaluespairtypedef"></a>
+
 ## KeyValuesPairTypeDef
 
 ```python
@@ -892,6 +994,8 @@ Optional fields:
 
 - `name`: `str`
 - `values`: `Sequence`\[`str`\]
+
+<a id="launchtemplatespecificationtypedef"></a>
 
 ## LaunchTemplateSpecificationTypeDef
 
@@ -904,6 +1008,8 @@ Optional fields:
 - `launchTemplateId`: `str`
 - `launchTemplateName`: `str`
 - `version`: `str`
+
+<a id="linuxparameterstypedef"></a>
 
 ## LinuxParametersTypeDef
 
@@ -919,6 +1025,8 @@ Optional fields:
 - `tmpfs`: `List`\[[TmpfsTypeDef](./type_defs.md#tmpfstypedef)\]
 - `maxSwap`: `int`
 - `swappiness`: `int`
+
+<a id="listjobsrequestrequesttypedef"></a>
 
 ## ListJobsRequestRequestTypeDef
 
@@ -937,6 +1045,8 @@ Optional fields:
 - `filters`:
   `Sequence`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
 
+<a id="listjobsresponsetypedef"></a>
+
 ## ListJobsResponseTypeDef
 
 ```python
@@ -951,6 +1061,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listschedulingpoliciesrequestrequesttypedef"></a>
+
 ## ListSchedulingPoliciesRequestRequestTypeDef
 
 ```python
@@ -961,6 +1073,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listschedulingpoliciesresponsetypedef"></a>
 
 ## ListSchedulingPoliciesResponseTypeDef
 
@@ -976,6 +1090,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -985,6 +1101,8 @@ from mypy_boto3_batch.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -997,6 +1115,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="logconfigurationtypedef"></a>
 
 ## LogConfigurationTypeDef
 
@@ -1013,6 +1133,8 @@ Optional fields:
 - `options`: `Dict`\[`str`, `str`\]
 - `secretOptions`: `List`\[[SecretTypeDef](./type_defs.md#secrettypedef)\]
 
+<a id="mountpointtypedef"></a>
+
 ## MountPointTypeDef
 
 ```python
@@ -1025,6 +1147,8 @@ Optional fields:
 - `readOnly`: `bool`
 - `sourceVolume`: `str`
 
+<a id="networkconfigurationtypedef"></a>
+
 ## NetworkConfigurationTypeDef
 
 ```python
@@ -1034,6 +1158,8 @@ from mypy_boto3_batch.type_defs import NetworkConfigurationTypeDef
 Optional fields:
 
 - `assignPublicIp`: [AssignPublicIpType](./literals.md#assignpubliciptype)
+
+<a id="networkinterfacetypedef"></a>
 
 ## NetworkInterfaceTypeDef
 
@@ -1047,6 +1173,8 @@ Optional fields:
 - `ipv6Address`: `str`
 - `privateIpv4Address`: `str`
 
+<a id="nodedetailstypedef"></a>
+
 ## NodeDetailsTypeDef
 
 ```python
@@ -1057,6 +1185,8 @@ Optional fields:
 
 - `nodeIndex`: `int`
 - `isMainNode`: `bool`
+
+<a id="nodeoverridestypedef"></a>
 
 ## NodeOverridesTypeDef
 
@@ -1070,6 +1200,8 @@ Optional fields:
 - `nodePropertyOverrides`:
   `Sequence`\[[NodePropertyOverrideTypeDef](./type_defs.md#nodepropertyoverridetypedef)\]
 
+<a id="nodepropertiessummarytypedef"></a>
+
 ## NodePropertiesSummaryTypeDef
 
 ```python
@@ -1081,6 +1213,8 @@ Optional fields:
 - `isMainNode`: `bool`
 - `numNodes`: `int`
 - `nodeIndex`: `int`
+
+<a id="nodepropertiestypedef"></a>
 
 ## NodePropertiesTypeDef
 
@@ -1094,6 +1228,8 @@ Required fields:
 - `mainNode`: `int`
 - `nodeRangeProperties`:
   `List`\[[NodeRangePropertyTypeDef](./type_defs.md#noderangepropertytypedef)\]
+
+<a id="nodepropertyoverridetypedef"></a>
 
 ## NodePropertyOverrideTypeDef
 
@@ -1110,6 +1246,8 @@ Optional fields:
 - `containerOverrides`:
   [ContainerOverridesTypeDef](./type_defs.md#containeroverridestypedef)
 
+<a id="noderangepropertytypedef"></a>
+
 ## NodeRangePropertyTypeDef
 
 ```python
@@ -1125,6 +1263,8 @@ Optional fields:
 - `container`:
   [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1136,6 +1276,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="registerjobdefinitionrequestrequesttypedef"></a>
 
 ## RegisterJobDefinitionRequestRequestTypeDef
 
@@ -1163,6 +1305,8 @@ Optional fields:
 - `platformCapabilities`:
   `Sequence`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
 
+<a id="registerjobdefinitionresponsetypedef"></a>
+
 ## RegisterJobDefinitionResponseTypeDef
 
 ```python
@@ -1177,6 +1321,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resourcerequirementtypedef"></a>
+
 ## ResourceRequirementTypeDef
 
 ```python
@@ -1187,6 +1333,8 @@ Required fields:
 
 - `value`: `str`
 - `type`: [ResourceTypeType](./literals.md#resourcetypetype)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1202,6 +1350,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retrystrategytypedef"></a>
+
 ## RetryStrategyTypeDef
 
 ```python
@@ -1213,6 +1363,8 @@ Optional fields:
 - `attempts`: `int`
 - `evaluateOnExit`:
   `List`\[[EvaluateOnExitTypeDef](./type_defs.md#evaluateonexittypedef)\]
+
+<a id="schedulingpolicydetailtypedef"></a>
 
 ## SchedulingPolicyDetailTypeDef
 
@@ -1231,6 +1383,8 @@ Optional fields:
   [FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="schedulingpolicylistingdetailtypedef"></a>
+
 ## SchedulingPolicyListingDetailTypeDef
 
 ```python
@@ -1240,6 +1394,8 @@ from mypy_boto3_batch.type_defs import SchedulingPolicyListingDetailTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="secrettypedef"></a>
 
 ## SecretTypeDef
 
@@ -1251,6 +1407,8 @@ Required fields:
 
 - `name`: `str`
 - `valueFrom`: `str`
+
+<a id="shareattributestypedef"></a>
 
 ## ShareAttributesTypeDef
 
@@ -1265,6 +1423,8 @@ Required fields:
 Optional fields:
 
 - `weightFactor`: `float`
+
+<a id="submitjobrequestrequesttypedef"></a>
 
 ## SubmitJobRequestRequestTypeDef
 
@@ -1295,6 +1455,8 @@ Optional fields:
 - `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="submitjobresponsetypedef"></a>
+
 ## SubmitJobResponseTypeDef
 
 ```python
@@ -1309,6 +1471,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1320,6 +1484,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="terminatejobrequestrequesttypedef"></a>
+
 ## TerminateJobRequestRequestTypeDef
 
 ```python
@@ -1330,6 +1496,8 @@ Required fields:
 
 - `jobId`: `str`
 - `reason`: `str`
+
+<a id="tmpfstypedef"></a>
 
 ## TmpfsTypeDef
 
@@ -1346,6 +1514,8 @@ Optional fields:
 
 - `mountOptions`: `List`\[`str`\]
 
+<a id="ulimittypedef"></a>
+
 ## UlimitTypeDef
 
 ```python
@@ -1358,6 +1528,8 @@ Required fields:
 - `name`: `str`
 - `softLimit`: `int`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1368,6 +1540,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatecomputeenvironmentrequestrequesttypedef"></a>
 
 ## UpdateComputeEnvironmentRequestRequestTypeDef
 
@@ -1387,6 +1561,8 @@ Optional fields:
   [ComputeResourceUpdateTypeDef](./type_defs.md#computeresourceupdatetypedef)
 - `serviceRole`: `str`
 
+<a id="updatecomputeenvironmentresponsetypedef"></a>
+
 ## UpdateComputeEnvironmentResponseTypeDef
 
 ```python
@@ -1399,6 +1575,8 @@ Required fields:
 - `computeEnvironmentArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatejobqueuerequestrequesttypedef"></a>
 
 ## UpdateJobQueueRequestRequestTypeDef
 
@@ -1418,6 +1596,8 @@ Optional fields:
 - `computeEnvironmentOrder`:
   `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
 
+<a id="updatejobqueueresponsetypedef"></a>
+
 ## UpdateJobQueueResponseTypeDef
 
 ```python
@@ -1430,6 +1610,8 @@ Required fields:
 - `jobQueueArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateschedulingpolicyrequestrequesttypedef"></a>
 
 ## UpdateSchedulingPolicyRequestRequestTypeDef
 
@@ -1445,6 +1627,8 @@ Optional fields:
 
 - `fairsharePolicy`:
   [FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef)
+
+<a id="volumetypedef"></a>
 
 ## VolumeTypeDef
 

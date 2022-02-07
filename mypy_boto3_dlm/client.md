@@ -1,3 +1,5 @@
+<a id="dlmclient-for-boto3-dlm-module"></a>
+
 # DLMClient for boto3 DLM module
 
 > [Index](..) > [DLM](.) > DLMClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
 type annotations stubs module
-[mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
+[mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
 - [DLMClient for boto3 DLM module](#dlmclient-for-boto3-dlm-module)
   - [DLMClient](#dlmclient)
@@ -23,6 +25,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_lifecycle_policy](#update_lifecycle_policy)
 
+<a id="dlmclient"></a>
+
 ## DLMClient
 
 Type annotations for `boto3.client("dlm")`
@@ -30,14 +34,17 @@ Type annotations for `boto3.client("dlm")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_dlm.client import DLMClient
 
 def get_dlm_client() -> DLMClient:
-    return boto3.client("dlm")
+    return Session().client("dlm")
 ```
 
 Boto3 documentation:
 [DLM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -59,7 +66,11 @@ Exceptions:
 - `Exceptions.LimitExceededException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -71,6 +82,8 @@ Boto3 documentation:
 [DLM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -86,6 +99,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_lifecycle_policy"></a>
 
 ### create_lifecycle_policy
 
@@ -114,6 +129,8 @@ Keyword-only arguments:
 Returns
 [CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef).
 
+<a id="delete_lifecycle_policy"></a>
+
 ### delete_lifecycle_policy
 
 Deletes the specified lifecycle policy and halts the automated operations that
@@ -133,6 +150,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -150,6 +169,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_lifecycle_policies"></a>
 
 ### get_lifecycle_policies
 
@@ -176,6 +197,8 @@ Keyword-only arguments:
 Returns
 [GetLifecyclePoliciesResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponsetypedef).
 
+<a id="get_lifecycle_policy"></a>
+
 ### get_lifecycle_policy
 
 Gets detailed information about the specified lifecycle policy.
@@ -194,6 +217,8 @@ Keyword-only arguments:
 
 Returns
 [GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -214,6 +239,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tags to the specified resource.
@@ -233,6 +260,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the specified tags from the specified resource.
@@ -251,6 +280,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_lifecycle_policy"></a>
 
 ### update_lifecycle_policy
 

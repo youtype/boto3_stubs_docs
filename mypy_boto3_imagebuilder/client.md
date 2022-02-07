@@ -1,3 +1,5 @@
+<a id="imagebuilderclient-for-boto3-imagebuilder-module"></a>
+
 # imagebuilderClient for boto3 imagebuilder module
 
 > [Index](..) > [imagebuilder](.) > imagebuilderClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
 type annotations stubs module
-[mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
+[mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 - [imagebuilderClient for boto3 imagebuilder module](#imagebuilderclient-for-boto3-imagebuilder-module)
   - [imagebuilderClient](#imagebuilderclient)
@@ -65,6 +67,8 @@ type annotations stubs module
     - [update_image_pipeline](#update_image_pipeline)
     - [update_infrastructure_configuration](#update_infrastructure_configuration)
 
+<a id="imagebuilderclient"></a>
+
 ## imagebuilderClient
 
 Type annotations for `boto3.client("imagebuilder")`
@@ -72,14 +76,17 @@ Type annotations for `boto3.client("imagebuilder")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_imagebuilder.client import imagebuilderClient
 
 def get_imagebuilder_client() -> imagebuilderClient:
-    return boto3.client("imagebuilder")
+    return Session().client("imagebuilder")
 ```
 
 Boto3 documentation:
 [imagebuilder.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -114,7 +121,11 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ServiceUnavailableException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -126,6 +137,8 @@ Boto3 documentation:
 [imagebuilder.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -141,6 +154,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_image_creation"></a>
 
 ### cancel_image_creation
 
@@ -162,6 +177,8 @@ Keyword-only arguments:
 
 Returns
 [CancelImageCreationResponseTypeDef](./type_defs.md#cancelimagecreationresponsetypedef).
+
+<a id="create_component"></a>
 
 ### create_component
 
@@ -192,6 +209,8 @@ Keyword-only arguments:
 
 Returns
 [CreateComponentResponseTypeDef](./type_defs.md#createcomponentresponsetypedef).
+
+<a id="create_container_recipe"></a>
 
 ### create_container_recipe
 
@@ -234,6 +253,8 @@ Keyword-only arguments:
 Returns
 [CreateContainerRecipeResponseTypeDef](./type_defs.md#createcontainerreciperesponsetypedef).
 
+<a id="create_distribution_configuration"></a>
+
 ### create_distribution_configuration
 
 Creates a new distribution configuration.
@@ -259,6 +280,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDistributionConfigurationResponseTypeDef](./type_defs.md#createdistributionconfigurationresponsetypedef).
+
+<a id="create_image"></a>
 
 ### create_image
 
@@ -286,6 +309,8 @@ Keyword-only arguments:
 
 Returns
 [CreateImageResponseTypeDef](./type_defs.md#createimageresponsetypedef).
+
+<a id="create_image_pipeline"></a>
 
 ### create_image_pipeline
 
@@ -319,6 +344,8 @@ Keyword-only arguments:
 Returns
 [CreateImagePipelineResponseTypeDef](./type_defs.md#createimagepipelineresponsetypedef).
 
+<a id="create_image_recipe"></a>
+
 ### create_image_recipe
 
 Creates a new image recipe.
@@ -350,6 +377,8 @@ Keyword-only arguments:
 
 Returns
 [CreateImageRecipeResponseTypeDef](./type_defs.md#createimagereciperesponsetypedef).
+
+<a id="create_infrastructure_configuration"></a>
 
 ### create_infrastructure_configuration
 
@@ -385,6 +414,8 @@ Keyword-only arguments:
 Returns
 [CreateInfrastructureConfigurationResponseTypeDef](./type_defs.md#createinfrastructureconfigurationresponsetypedef).
 
+<a id="delete_component"></a>
+
 ### delete_component
 
 Deletes a component build version.
@@ -403,6 +434,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteComponentResponseTypeDef](./type_defs.md#deletecomponentresponsetypedef).
+
+<a id="delete_container_recipe"></a>
 
 ### delete_container_recipe
 
@@ -424,6 +457,8 @@ Keyword-only arguments:
 Returns
 [DeleteContainerRecipeResponseTypeDef](./type_defs.md#deletecontainerreciperesponsetypedef).
 
+<a id="delete_distribution_configuration"></a>
+
 ### delete_distribution_configuration
 
 Deletes a distribution configuration.
@@ -444,6 +479,8 @@ Keyword-only arguments:
 Returns
 [DeleteDistributionConfigurationResponseTypeDef](./type_defs.md#deletedistributionconfigurationresponsetypedef).
 
+<a id="delete_image"></a>
+
 ### delete_image
 
 Deletes an Image Builder image resource.
@@ -462,6 +499,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteImageResponseTypeDef](./type_defs.md#deleteimageresponsetypedef).
+
+<a id="delete_image_pipeline"></a>
 
 ### delete_image_pipeline
 
@@ -483,6 +522,8 @@ Keyword-only arguments:
 Returns
 [DeleteImagePipelineResponseTypeDef](./type_defs.md#deleteimagepipelineresponsetypedef).
 
+<a id="delete_image_recipe"></a>
+
 ### delete_image_recipe
 
 Deletes an image recipe.
@@ -501,6 +542,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteImageRecipeResponseTypeDef](./type_defs.md#deleteimagereciperesponsetypedef).
+
+<a id="delete_infrastructure_configuration"></a>
 
 ### delete_infrastructure_configuration
 
@@ -522,6 +565,8 @@ Keyword-only arguments:
 Returns
 [DeleteInfrastructureConfigurationResponseTypeDef](./type_defs.md#deleteinfrastructureconfigurationresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -541,6 +586,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_component"></a>
+
 ### get_component
 
 Gets a component object.
@@ -559,6 +606,8 @@ Keyword-only arguments:
 
 Returns
 [GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef).
+
+<a id="get_component_policy"></a>
 
 ### get_component_policy
 
@@ -580,6 +629,8 @@ Keyword-only arguments:
 Returns
 [GetComponentPolicyResponseTypeDef](./type_defs.md#getcomponentpolicyresponsetypedef).
 
+<a id="get_container_recipe"></a>
+
 ### get_container_recipe
 
 Retrieves a container recipe.
@@ -599,6 +650,8 @@ Keyword-only arguments:
 
 Returns
 [GetContainerRecipeResponseTypeDef](./type_defs.md#getcontainerreciperesponsetypedef).
+
+<a id="get_container_recipe_policy"></a>
 
 ### get_container_recipe_policy
 
@@ -620,6 +673,8 @@ Keyword-only arguments:
 Returns
 [GetContainerRecipePolicyResponseTypeDef](./type_defs.md#getcontainerrecipepolicyresponsetypedef).
 
+<a id="get_distribution_configuration"></a>
+
 ### get_distribution_configuration
 
 Gets a distribution configuration.
@@ -640,6 +695,8 @@ Keyword-only arguments:
 Returns
 [GetDistributionConfigurationResponseTypeDef](./type_defs.md#getdistributionconfigurationresponsetypedef).
 
+<a id="get_image"></a>
+
 ### get_image
 
 Gets an image.
@@ -657,6 +714,8 @@ Keyword-only arguments:
 - `imageBuildVersionArn`: `str` *(required)*
 
 Returns [GetImageResponseTypeDef](./type_defs.md#getimageresponsetypedef).
+
+<a id="get_image_pipeline"></a>
 
 ### get_image_pipeline
 
@@ -677,6 +736,8 @@ Keyword-only arguments:
 Returns
 [GetImagePipelineResponseTypeDef](./type_defs.md#getimagepipelineresponsetypedef).
 
+<a id="get_image_policy"></a>
+
 ### get_image_policy
 
 Gets an image policy.
@@ -696,6 +757,8 @@ Keyword-only arguments:
 Returns
 [GetImagePolicyResponseTypeDef](./type_defs.md#getimagepolicyresponsetypedef).
 
+<a id="get_image_recipe"></a>
+
 ### get_image_recipe
 
 Gets an image recipe.
@@ -714,6 +777,8 @@ Keyword-only arguments:
 
 Returns
 [GetImageRecipeResponseTypeDef](./type_defs.md#getimagereciperesponsetypedef).
+
+<a id="get_image_recipe_policy"></a>
 
 ### get_image_recipe_policy
 
@@ -735,6 +800,8 @@ Keyword-only arguments:
 Returns
 [GetImageRecipePolicyResponseTypeDef](./type_defs.md#getimagerecipepolicyresponsetypedef).
 
+<a id="get_infrastructure_configuration"></a>
+
 ### get_infrastructure_configuration
 
 Gets an infrastructure configuration.
@@ -754,6 +821,8 @@ Keyword-only arguments:
 
 Returns
 [GetInfrastructureConfigurationResponseTypeDef](./type_defs.md#getinfrastructureconfigurationresponsetypedef).
+
+<a id="import_component"></a>
 
 ### import_component
 
@@ -786,6 +855,8 @@ Keyword-only arguments:
 Returns
 [ImportComponentResponseTypeDef](./type_defs.md#importcomponentresponsetypedef).
 
+<a id="import_vm_image"></a>
+
 ### import_vm_image
 
 When you export your virtual machine (VM) from its virtualization environment,
@@ -814,6 +885,8 @@ Keyword-only arguments:
 Returns
 [ImportVmImageResponseTypeDef](./type_defs.md#importvmimageresponsetypedef).
 
+<a id="list_component_build_versions"></a>
+
 ### list_component_build_versions
 
 Returns the list of component build versions for the specified semantic
@@ -836,6 +909,8 @@ Keyword-only arguments:
 
 Returns
 [ListComponentBuildVersionsResponseTypeDef](./type_defs.md#listcomponentbuildversionsresponsetypedef).
+
+<a id="list_components"></a>
 
 ### list_components
 
@@ -861,6 +936,8 @@ Keyword-only arguments:
 Returns
 [ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
 
+<a id="list_container_recipes"></a>
+
 ### list_container_recipes
 
 Returns a list of container recipes.
@@ -884,6 +961,8 @@ Keyword-only arguments:
 Returns
 [ListContainerRecipesResponseTypeDef](./type_defs.md#listcontainerrecipesresponsetypedef).
 
+<a id="list_distribution_configurations"></a>
+
 ### list_distribution_configurations
 
 Returns a list of distribution configurations.
@@ -905,6 +984,8 @@ Keyword-only arguments:
 
 Returns
 [ListDistributionConfigurationsResponseTypeDef](./type_defs.md#listdistributionconfigurationsresponsetypedef).
+
+<a id="list_image_build_versions"></a>
 
 ### list_image_build_versions
 
@@ -929,6 +1010,8 @@ Keyword-only arguments:
 Returns
 [ListImageBuildVersionsResponseTypeDef](./type_defs.md#listimagebuildversionsresponsetypedef).
 
+<a id="list_image_packages"></a>
+
 ### list_image_packages
 
 List the Packages that are associated with an Image Build Version, as
@@ -950,6 +1033,8 @@ Keyword-only arguments:
 
 Returns
 [ListImagePackagesResponseTypeDef](./type_defs.md#listimagepackagesresponsetypedef).
+
+<a id="list_image_pipeline_images"></a>
 
 ### list_image_pipeline_images
 
@@ -974,6 +1059,8 @@ Keyword-only arguments:
 Returns
 [ListImagePipelineImagesResponseTypeDef](./type_defs.md#listimagepipelineimagesresponsetypedef).
 
+<a id="list_image_pipelines"></a>
+
 ### list_image_pipelines
 
 Returns a list of image pipelines.
@@ -996,6 +1083,8 @@ Keyword-only arguments:
 Returns
 [ListImagePipelinesResponseTypeDef](./type_defs.md#listimagepipelinesresponsetypedef).
 
+<a id="list_image_recipes"></a>
+
 ### list_image_recipes
 
 Returns a list of image recipes.
@@ -1017,6 +1106,8 @@ Keyword-only arguments:
 
 Returns
 [ListImageRecipesResponseTypeDef](./type_defs.md#listimagerecipesresponsetypedef).
+
+<a id="list_images"></a>
 
 ### list_images
 
@@ -1041,6 +1132,8 @@ Keyword-only arguments:
 
 Returns [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef).
 
+<a id="list_infrastructure_configurations"></a>
+
 ### list_infrastructure_configurations
 
 Returns a list of infrastructure configurations.
@@ -1063,6 +1156,8 @@ Keyword-only arguments:
 Returns
 [ListInfrastructureConfigurationsResponseTypeDef](./type_defs.md#listinfrastructureconfigurationsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns the list of tags for the specified resource.
@@ -1082,6 +1177,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_component_policy"></a>
 
 ### put_component_policy
 
@@ -1104,6 +1201,8 @@ Keyword-only arguments:
 Returns
 [PutComponentPolicyResponseTypeDef](./type_defs.md#putcomponentpolicyresponsetypedef).
 
+<a id="put_container_recipe_policy"></a>
+
 ### put_container_recipe_policy
 
 Applies a policy to a container image.
@@ -1125,6 +1224,8 @@ Keyword-only arguments:
 Returns
 [PutContainerRecipePolicyResponseTypeDef](./type_defs.md#putcontainerrecipepolicyresponsetypedef).
 
+<a id="put_image_policy"></a>
+
 ### put_image_policy
 
 Applies a policy to an image.
@@ -1144,6 +1245,8 @@ Keyword-only arguments:
 
 Returns
 [PutImagePolicyResponseTypeDef](./type_defs.md#putimagepolicyresponsetypedef).
+
+<a id="put_image_recipe_policy"></a>
 
 ### put_image_recipe_policy
 
@@ -1166,6 +1269,8 @@ Keyword-only arguments:
 Returns
 [PutImageRecipePolicyResponseTypeDef](./type_defs.md#putimagerecipepolicyresponsetypedef).
 
+<a id="start_image_pipeline_execution"></a>
+
 ### start_image_pipeline_execution
 
 Manually triggers a pipeline to create an image.
@@ -1187,6 +1292,8 @@ Keyword-only arguments:
 Returns
 [StartImagePipelineExecutionResponseTypeDef](./type_defs.md#startimagepipelineexecutionresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds a tag to a resource.
@@ -1206,6 +1313,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from a resource.
@@ -1224,6 +1333,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_distribution_configuration"></a>
 
 ### update_distribution_configuration
 
@@ -1249,6 +1360,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDistributionConfigurationResponseTypeDef](./type_defs.md#updatedistributionconfigurationresponsetypedef).
+
+<a id="update_image_pipeline"></a>
 
 ### update_image_pipeline
 
@@ -1280,6 +1393,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateImagePipelineResponseTypeDef](./type_defs.md#updateimagepipelineresponsetypedef).
+
+<a id="update_infrastructure_configuration"></a>
 
 ### update_infrastructure_configuration
 

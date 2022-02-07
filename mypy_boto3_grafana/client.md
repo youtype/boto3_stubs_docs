@@ -1,3 +1,5 @@
+<a id="managedgrafanaclient-for-boto3-managedgrafana-module"></a>
+
 # ManagedGrafanaClient for boto3 ManagedGrafana module
 
 > [Index](..) > [ManagedGrafana](.) > ManagedGrafanaClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ManagedGrafana](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana)
 type annotations stubs module
-[mypy_boto3_grafana](https://pypi.org/project/mypy-boto3-grafana/).
+[mypy-boto3-grafana](https://pypi.org/project/mypy-boto3-grafana/).
 
 - [ManagedGrafanaClient for boto3 ManagedGrafana module](#managedgrafanaclient-for-boto3-managedgrafana-module)
   - [ManagedGrafanaClient](#managedgrafanaclient)
@@ -27,6 +29,8 @@ type annotations stubs module
     - [update_workspace_authentication](#update_workspace_authentication)
     - [get_paginator](#get_paginator)
 
+<a id="managedgrafanaclient"></a>
+
 ## ManagedGrafanaClient
 
 Type annotations for `boto3.client("grafana")`
@@ -34,14 +38,17 @@ Type annotations for `boto3.client("grafana")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_grafana.client import ManagedGrafanaClient
 
 def get_grafana_client() -> ManagedGrafanaClient:
-    return boto3.client("grafana")
+    return Session().client("grafana")
 ```
 
 Boto3 documentation:
 [ManagedGrafana.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -66,7 +73,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -78,6 +89,8 @@ Boto3 documentation:
 [ManagedGrafana.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_license"></a>
 
 ### associate_license
 
@@ -99,6 +112,8 @@ Keyword-only arguments:
 Returns
 [AssociateLicenseResponseTypeDef](./type_defs.md#associatelicenseresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -113,6 +128,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_workspace"></a>
 
 ### create_workspace
 
@@ -150,6 +167,8 @@ Keyword-only arguments:
 Returns
 [CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
 
+<a id="delete_workspace"></a>
+
 ### delete_workspace
 
 Deletes an Amazon Managed Grafana workspace.
@@ -169,6 +188,8 @@ Keyword-only arguments:
 Returns
 [DeleteWorkspaceResponseTypeDef](./type_defs.md#deleteworkspaceresponsetypedef).
 
+<a id="describe_workspace"></a>
+
 ### describe_workspace
 
 Displays information about one Amazon Managed Grafana workspace.
@@ -187,6 +208,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef).
+
+<a id="describe_workspace_authentication"></a>
 
 ### describe_workspace_authentication
 
@@ -209,6 +232,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceAuthenticationResponseTypeDef](./type_defs.md#describeworkspaceauthenticationresponsetypedef).
 
+<a id="disassociate_license"></a>
+
 ### disassociate_license
 
 Removes the Grafana Enterprise license from a workspace.
@@ -229,6 +254,8 @@ Keyword-only arguments:
 Returns
 [DisassociateLicenseResponseTypeDef](./type_defs.md#disassociatelicenseresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -246,6 +273,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_permissions"></a>
 
 ### list_permissions
 
@@ -272,6 +301,8 @@ Keyword-only arguments:
 Returns
 [ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
+<a id="list_workspaces"></a>
+
 ### list_workspaces
 
 Returns a list of Amazon Managed Grafana workspaces in the account, with some
@@ -292,6 +323,8 @@ Keyword-only arguments:
 
 Returns
 [ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
+
+<a id="update_permissions"></a>
 
 ### update_permissions
 
@@ -314,6 +347,8 @@ Keyword-only arguments:
 
 Returns
 [UpdatePermissionsResponseTypeDef](./type_defs.md#updatepermissionsresponsetypedef).
+
+<a id="update_workspace"></a>
 
 ### update_workspace
 
@@ -347,6 +382,8 @@ Keyword-only arguments:
 Returns
 [UpdateWorkspaceResponseTypeDef](./type_defs.md#updateworkspaceresponsetypedef).
 
+<a id="update_workspace_authentication"></a>
+
 ### update_workspace_authentication
 
 Use this operation to define the identity provider (IdP) that this workspace
@@ -372,6 +409,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateWorkspaceAuthenticationResponseTypeDef](./type_defs.md#updateworkspaceauthenticationresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloudwatch-module"></a>
+
 # Literals for boto3 CloudWatch module
 
 > [Index](..) > [CloudWatch](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
 type annotations stubs module
-[mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
+[mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 - [Literals for boto3 CloudWatch module](#literals-for-boto3-cloudwatch-module)
   - [AlarmExistsWaiterName](#alarmexistswaitername)
@@ -31,6 +33,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="alarmexistswaitername"></a>
+
 ## AlarmExistsWaiterName
 
 ```python
@@ -40,6 +44,8 @@ from mypy_boto3_cloudwatch.literals import AlarmExistsWaiterName
 Values:
 
 - `alarm_exists`
+
+<a id="alarmtypetype"></a>
 
 ## AlarmTypeType
 
@@ -51,6 +57,8 @@ Values:
 
 - `CompositeAlarm`
 - `MetricAlarm`
+
+<a id="anomalydetectorstatevaluetype"></a>
 
 ## AnomalyDetectorStateValueType
 
@@ -64,6 +72,8 @@ Values:
 - `TRAINED`
 - `TRAINED_INSUFFICIENT_DATA`
 
+<a id="anomalydetectortypetype"></a>
+
 ## AnomalyDetectorTypeType
 
 ```python
@@ -74,6 +84,8 @@ Values:
 
 - `METRIC_MATH`
 - `SINGLE_METRIC`
+
+<a id="comparisonoperatortype"></a>
 
 ## ComparisonOperatorType
 
@@ -91,6 +103,8 @@ Values:
 - `LessThanOrEqualToThreshold`
 - `LessThanThreshold`
 
+<a id="compositealarmexistswaitername"></a>
+
 ## CompositeAlarmExistsWaiterName
 
 ```python
@@ -100,6 +114,8 @@ from mypy_boto3_cloudwatch.literals import CompositeAlarmExistsWaiterName
 Values:
 
 - `composite_alarm_exists`
+
+<a id="describealarmhistorypaginatorname"></a>
 
 ## DescribeAlarmHistoryPaginatorName
 
@@ -111,6 +127,8 @@ Values:
 
 - `describe_alarm_history`
 
+<a id="describealarmspaginatorname"></a>
+
 ## DescribeAlarmsPaginatorName
 
 ```python
@@ -121,6 +139,8 @@ Values:
 
 - `describe_alarms`
 
+<a id="getmetricdatapaginatorname"></a>
+
 ## GetMetricDataPaginatorName
 
 ```python
@@ -130,6 +150,8 @@ from mypy_boto3_cloudwatch.literals import GetMetricDataPaginatorName
 Values:
 
 - `get_metric_data`
+
+<a id="historyitemtypetype"></a>
 
 ## HistoryItemTypeType
 
@@ -143,6 +165,8 @@ Values:
 - `ConfigurationUpdate`
 - `StateUpdate`
 
+<a id="listdashboardspaginatorname"></a>
+
 ## ListDashboardsPaginatorName
 
 ```python
@@ -153,6 +177,8 @@ Values:
 
 - `list_dashboards`
 
+<a id="listmetricspaginatorname"></a>
+
 ## ListMetricsPaginatorName
 
 ```python
@@ -162,6 +188,8 @@ from mypy_boto3_cloudwatch.literals import ListMetricsPaginatorName
 Values:
 
 - `list_metrics`
+
+<a id="metricstreamoutputformattype"></a>
 
 ## MetricStreamOutputFormatType
 
@@ -174,6 +202,8 @@ Values:
 - `json`
 - `opentelemetry0.7`
 
+<a id="recentlyactivetype"></a>
+
 ## RecentlyActiveType
 
 ```python
@@ -183,6 +213,8 @@ from mypy_boto3_cloudwatch.literals import RecentlyActiveType
 Values:
 
 - `PT3H`
+
+<a id="scanbytype"></a>
 
 ## ScanByType
 
@@ -194,6 +226,8 @@ Values:
 
 - `TimestampAscending`
 - `TimestampDescending`
+
+<a id="standardunittype"></a>
 
 ## StandardUnitType
 
@@ -231,6 +265,8 @@ Values:
 - `Terabytes`
 - `Terabytes/Second`
 
+<a id="statevaluetype"></a>
+
 ## StateValueType
 
 ```python
@@ -242,6 +278,8 @@ Values:
 - `ALARM`
 - `INSUFFICIENT_DATA`
 - `OK`
+
+<a id="statistictype"></a>
 
 ## StatisticType
 
@@ -257,6 +295,8 @@ Values:
 - `SampleCount`
 - `Sum`
 
+<a id="statuscodetype"></a>
+
 ## StatusCodeType
 
 ```python
@@ -268,6 +308,8 @@ Values:
 - `Complete`
 - `InternalError`
 - `PartialData`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -577,6 +619,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -590,6 +634,8 @@ Values:
 - `get_metric_data`
 - `list_dashboards`
 - `list_metrics`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

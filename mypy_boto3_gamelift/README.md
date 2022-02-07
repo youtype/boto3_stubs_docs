@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-gamelift-module"></a>
+
 # Type annotations for boto3 GameLift module
 
 > [Index](..) > GameLift
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
 type annotations stubs module
-[mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+[mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[gamelift]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[gamelift]'
+
+# standalone installation
 pip install mypy-boto3-gamelift
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-gamelift
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="gameliftclient"></a>
+
 ## GameLiftClient
 
 Type annotations for `boto3.client("gamelift")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_gamelift.client import GameLiftClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -132,6 +146,8 @@ from mypy_boto3_gamelift.client import GameLiftClient
 - [update_script](./client.md#update_script)
 - [validate_matchmaking_rule_set](./client.md#validate_matchmaking_rule_set)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 GameLiftClient [exceptions](./client.md#exceptions)
@@ -153,6 +169,8 @@ GameLiftClient [exceptions](./client.md#exceptions)
 - UnauthorizedException
 - UnsupportedRegionException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -161,7 +179,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_gamelift.paginators import DescribeFleetAttributesPaginator, ...
+from mypy_boto3_gamelift.paginator import DescribeFleetAttributesPaginator, ...
 ```
 
 - [DescribeFleetAttributesPaginator](./paginators.md#describefleetattributespaginator)
@@ -184,6 +202,8 @@ from mypy_boto3_gamelift.paginators import DescribeFleetAttributesPaginator, ...
 - [ListGameServersPaginator](./paginators.md#listgameserverspaginator)
 - [ListScriptsPaginator](./paginators.md#listscriptspaginator)
 - [SearchGameSessionsPaginator](./paginators.md#searchgamesessionspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -256,6 +276,8 @@ from mypy_boto3_gamelift.literals import AcceptanceTypeType, ...
 - [SortOrderType](./literals.md#sortordertype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

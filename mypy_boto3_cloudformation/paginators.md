@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-cloudformation-module"></a>
+
 # Paginators for boto3 CloudFormation module
 
 > [Index](..) > [CloudFormation](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
 type annotations stubs module
-[mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+[mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 - [Paginators for boto3 CloudFormation module](#paginators-for-boto3-cloudformation-module)
   - [DescribeAccountLimitsPaginator](#describeaccountlimitspaginator)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [ListStacksPaginator](#liststackspaginator)
   - [ListTypesPaginator](#listtypespaginator)
 
+<a id="describeaccountlimitspaginator"></a>
+
 ## DescribeAccountLimitsPaginator
 
 Type annotations for
@@ -31,10 +35,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import DescribeAccountLimitsPaginator
 
 def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
-    return boto3.client("cloudformation").get_paginator("describe_account_limits")
+    return Session().client("cloudformation").get_paginator("describe_account_limits")
 ```
 
 Boto3 documentation:
@@ -48,6 +54,8 @@ Arguments for `DescribeAccountLimitsPaginator.paginate` method:
 `DescribeAccountLimitsPaginator.paginate` returns
 `_PageIterator`\[[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)\].
 
+<a id="describechangesetpaginator"></a>
+
 ## DescribeChangeSetPaginator
 
 Type annotations for
@@ -56,10 +64,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import DescribeChangeSetPaginator
 
 def get_describe_change_set_paginator() -> DescribeChangeSetPaginator:
-    return boto3.client("cloudformation").get_paginator("describe_change_set")
+    return Session().client("cloudformation").get_paginator("describe_change_set")
 ```
 
 Boto3 documentation:
@@ -75,6 +85,8 @@ Arguments for `DescribeChangeSetPaginator.paginate` method:
 `DescribeChangeSetPaginator.paginate` returns
 `_PageIterator`\[[DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef)\].
 
+<a id="describestackeventspaginator"></a>
+
 ## DescribeStackEventsPaginator
 
 Type annotations for
@@ -83,10 +95,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import DescribeStackEventsPaginator
 
 def get_describe_stack_events_paginator() -> DescribeStackEventsPaginator:
-    return boto3.client("cloudformation").get_paginator("describe_stack_events")
+    return Session().client("cloudformation").get_paginator("describe_stack_events")
 ```
 
 Boto3 documentation:
@@ -101,6 +115,8 @@ Arguments for `DescribeStackEventsPaginator.paginate` method:
 `DescribeStackEventsPaginator.paginate` returns
 `_PageIterator`\[[DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef)\].
 
+<a id="describestackspaginator"></a>
+
 ## DescribeStacksPaginator
 
 Type annotations for
@@ -109,10 +125,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import DescribeStacksPaginator
 
 def get_describe_stacks_paginator() -> DescribeStacksPaginator:
-    return boto3.client("cloudformation").get_paginator("describe_stacks")
+    return Session().client("cloudformation").get_paginator("describe_stacks")
 ```
 
 Boto3 documentation:
@@ -127,6 +145,8 @@ Arguments for `DescribeStacksPaginator.paginate` method:
 `DescribeStacksPaginator.paginate` returns
 `_PageIterator`\[[DescribeStacksOutputTypeDef](./type_defs.md#describestacksoutputtypedef)\].
 
+<a id="listchangesetspaginator"></a>
+
 ## ListChangeSetsPaginator
 
 Type annotations for
@@ -135,10 +155,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import ListChangeSetsPaginator
 
 def get_list_change_sets_paginator() -> ListChangeSetsPaginator:
-    return boto3.client("cloudformation").get_paginator("list_change_sets")
+    return Session().client("cloudformation").get_paginator("list_change_sets")
 ```
 
 Boto3 documentation:
@@ -153,6 +175,8 @@ Arguments for `ListChangeSetsPaginator.paginate` method:
 `ListChangeSetsPaginator.paginate` returns
 `_PageIterator`\[[ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef)\].
 
+<a id="listexportspaginator"></a>
+
 ## ListExportsPaginator
 
 Type annotations for
@@ -161,10 +185,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import ListExportsPaginator
 
 def get_list_exports_paginator() -> ListExportsPaginator:
-    return boto3.client("cloudformation").get_paginator("list_exports")
+    return Session().client("cloudformation").get_paginator("list_exports")
 ```
 
 Boto3 documentation:
@@ -178,6 +204,8 @@ Arguments for `ListExportsPaginator.paginate` method:
 `ListExportsPaginator.paginate` returns
 `_PageIterator`\[[ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef)\].
 
+<a id="listimportspaginator"></a>
+
 ## ListImportsPaginator
 
 Type annotations for
@@ -186,10 +214,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import ListImportsPaginator
 
 def get_list_imports_paginator() -> ListImportsPaginator:
-    return boto3.client("cloudformation").get_paginator("list_imports")
+    return Session().client("cloudformation").get_paginator("list_imports")
 ```
 
 Boto3 documentation:
@@ -204,6 +234,8 @@ Arguments for `ListImportsPaginator.paginate` method:
 `ListImportsPaginator.paginate` returns
 `_PageIterator`\[[ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef)\].
 
+<a id="liststackinstancespaginator"></a>
+
 ## ListStackInstancesPaginator
 
 Type annotations for
@@ -212,10 +244,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import ListStackInstancesPaginator
 
 def get_list_stack_instances_paginator() -> ListStackInstancesPaginator:
-    return boto3.client("cloudformation").get_paginator("list_stack_instances")
+    return Session().client("cloudformation").get_paginator("list_stack_instances")
 ```
 
 Boto3 documentation:
@@ -235,6 +269,8 @@ Arguments for `ListStackInstancesPaginator.paginate` method:
 `ListStackInstancesPaginator.paginate` returns
 `_PageIterator`\[[ListStackInstancesOutputTypeDef](./type_defs.md#liststackinstancesoutputtypedef)\].
 
+<a id="liststackresourcespaginator"></a>
+
 ## ListStackResourcesPaginator
 
 Type annotations for
@@ -243,10 +279,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import ListStackResourcesPaginator
 
 def get_list_stack_resources_paginator() -> ListStackResourcesPaginator:
-    return boto3.client("cloudformation").get_paginator("list_stack_resources")
+    return Session().client("cloudformation").get_paginator("list_stack_resources")
 ```
 
 Boto3 documentation:
@@ -261,6 +299,8 @@ Arguments for `ListStackResourcesPaginator.paginate` method:
 `ListStackResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListStackResourcesOutputTypeDef](./type_defs.md#liststackresourcesoutputtypedef)\].
 
+<a id="liststacksetoperationresultspaginator"></a>
+
 ## ListStackSetOperationResultsPaginator
 
 Type annotations for
@@ -269,10 +309,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import ListStackSetOperationResultsPaginator
 
 def get_list_stack_set_operation_results_paginator() -> ListStackSetOperationResultsPaginator:
-    return boto3.client("cloudformation").get_paginator("list_stack_set_operation_results")
+    return Session().client("cloudformation").get_paginator("list_stack_set_operation_results")
 ```
 
 Boto3 documentation:
@@ -289,6 +331,8 @@ Arguments for `ListStackSetOperationResultsPaginator.paginate` method:
 `ListStackSetOperationResultsPaginator.paginate` returns
 `_PageIterator`\[[ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef)\].
 
+<a id="liststacksetoperationspaginator"></a>
+
 ## ListStackSetOperationsPaginator
 
 Type annotations for
@@ -297,10 +341,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import ListStackSetOperationsPaginator
 
 def get_list_stack_set_operations_paginator() -> ListStackSetOperationsPaginator:
-    return boto3.client("cloudformation").get_paginator("list_stack_set_operations")
+    return Session().client("cloudformation").get_paginator("list_stack_set_operations")
 ```
 
 Boto3 documentation:
@@ -316,6 +362,8 @@ Arguments for `ListStackSetOperationsPaginator.paginate` method:
 `ListStackSetOperationsPaginator.paginate` returns
 `_PageIterator`\[[ListStackSetOperationsOutputTypeDef](./type_defs.md#liststacksetoperationsoutputtypedef)\].
 
+<a id="liststacksetspaginator"></a>
+
 ## ListStackSetsPaginator
 
 Type annotations for
@@ -324,10 +372,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import ListStackSetsPaginator
 
 def get_list_stack_sets_paginator() -> ListStackSetsPaginator:
-    return boto3.client("cloudformation").get_paginator("list_stack_sets")
+    return Session().client("cloudformation").get_paginator("list_stack_sets")
 ```
 
 Boto3 documentation:
@@ -343,6 +393,8 @@ Arguments for `ListStackSetsPaginator.paginate` method:
 `ListStackSetsPaginator.paginate` returns
 `_PageIterator`\[[ListStackSetsOutputTypeDef](./type_defs.md#liststacksetsoutputtypedef)\].
 
+<a id="liststackspaginator"></a>
+
 ## ListStacksPaginator
 
 Type annotations for
@@ -351,10 +403,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import ListStacksPaginator
 
 def get_list_stacks_paginator() -> ListStacksPaginator:
-    return boto3.client("cloudformation").get_paginator("list_stacks")
+    return Session().client("cloudformation").get_paginator("list_stacks")
 ```
 
 Boto3 documentation:
@@ -370,6 +424,8 @@ Arguments for `ListStacksPaginator.paginate` method:
 `ListStacksPaginator.paginate` returns
 `_PageIterator`\[[ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef)\].
 
+<a id="listtypespaginator"></a>
+
 ## ListTypesPaginator
 
 Type annotations for
@@ -378,10 +434,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.paginator import ListTypesPaginator
 
 def get_list_types_paginator() -> ListTypesPaginator:
-    return boto3.client("cloudformation").get_paginator("list_types")
+    return Session().client("cloudformation").get_paginator("list_types")
 ```
 
 Boto3 documentation:

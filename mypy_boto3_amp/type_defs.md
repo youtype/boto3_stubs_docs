@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-prometheusservice-module"></a>
+
 # Typed dictionaries for boto3 PrometheusService module
 
 > [Index](..) > [PrometheusService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
 type annotations stubs module
-[mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
+[mypy-boto3-amp](https://pypi.org/project/mypy-boto3-amp/).
 
 - [Typed dictionaries for boto3 PrometheusService module](#typed-dictionaries-for-boto3-prometheusservice-module)
   - [AlertManagerDefinitionDescriptionTypeDef](#alertmanagerdefinitiondescriptiontypedef)
@@ -48,6 +50,8 @@ type annotations stubs module
   - [WorkspaceStatusTypeDef](#workspacestatustypedef)
   - [WorkspaceSummaryTypeDef](#workspacesummarytypedef)
 
+<a id="alertmanagerdefinitiondescriptiontypedef"></a>
+
 ## AlertManagerDefinitionDescriptionTypeDef
 
 ```python
@@ -61,6 +65,8 @@ Required fields:
 - `modifiedAt`: `datetime`
 - `status`:
   [AlertManagerDefinitionStatusTypeDef](./type_defs.md#alertmanagerdefinitionstatustypedef)
+
+<a id="alertmanagerdefinitionstatustypedef"></a>
 
 ## AlertManagerDefinitionStatusTypeDef
 
@@ -77,6 +83,8 @@ Optional fields:
 
 - `statusReason`: `str`
 
+<a id="createalertmanagerdefinitionrequestrequesttypedef"></a>
+
 ## CreateAlertManagerDefinitionRequestRequestTypeDef
 
 ```python
@@ -92,6 +100,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="createalertmanagerdefinitionresponsetypedef"></a>
+
 ## CreateAlertManagerDefinitionResponseTypeDef
 
 ```python
@@ -104,6 +114,8 @@ Required fields:
   [AlertManagerDefinitionStatusTypeDef](./type_defs.md#alertmanagerdefinitionstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrulegroupsnamespacerequestrequesttypedef"></a>
 
 ## CreateRuleGroupsNamespaceRequestRequestTypeDef
 
@@ -122,6 +134,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createrulegroupsnamespaceresponsetypedef"></a>
+
 ## CreateRuleGroupsNamespaceResponseTypeDef
 
 ```python
@@ -138,6 +152,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createworkspacerequestrequesttypedef"></a>
+
 ## CreateWorkspaceRequestRequestTypeDef
 
 ```python
@@ -149,6 +165,8 @@ Optional fields:
 - `alias`: `str`
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createworkspaceresponsetypedef"></a>
 
 ## CreateWorkspaceResponseTypeDef
 
@@ -165,6 +183,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletealertmanagerdefinitionrequestrequesttypedef"></a>
+
 ## DeleteAlertManagerDefinitionRequestRequestTypeDef
 
 ```python
@@ -178,6 +198,8 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
+
+<a id="deleterulegroupsnamespacerequestrequesttypedef"></a>
 
 ## DeleteRuleGroupsNamespaceRequestRequestTypeDef
 
@@ -194,6 +216,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deleteworkspacerequestrequesttypedef"></a>
+
 ## DeleteWorkspaceRequestRequestTypeDef
 
 ```python
@@ -208,6 +232,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="describealertmanagerdefinitionrequestrequesttypedef"></a>
+
 ## DescribeAlertManagerDefinitionRequestRequestTypeDef
 
 ```python
@@ -217,6 +243,8 @@ from mypy_boto3_amp.type_defs import DescribeAlertManagerDefinitionRequestReques
 Required fields:
 
 - `workspaceId`: `str`
+
+<a id="describealertmanagerdefinitionresponsetypedef"></a>
 
 ## DescribeAlertManagerDefinitionResponseTypeDef
 
@@ -231,6 +259,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerulegroupsnamespacerequestrequesttypedef"></a>
+
 ## DescribeRuleGroupsNamespaceRequestRequestTypeDef
 
 ```python
@@ -241,6 +271,8 @@ Required fields:
 
 - `name`: `str`
 - `workspaceId`: `str`
+
+<a id="describerulegroupsnamespaceresponsetypedef"></a>
 
 ## DescribeRuleGroupsNamespaceResponseTypeDef
 
@@ -255,6 +287,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeworkspacerequestrequesttypedef"></a>
+
 ## DescribeWorkspaceRequestRequestTypeDef
 
 ```python
@@ -264,6 +298,8 @@ from mypy_boto3_amp.type_defs import DescribeWorkspaceRequestRequestTypeDef
 Required fields:
 
 - `workspaceId`: `str`
+
+<a id="describeworkspaceresponsetypedef"></a>
 
 ## DescribeWorkspaceResponseTypeDef
 
@@ -277,6 +313,8 @@ Required fields:
   [WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrulegroupsnamespacesrequestrequesttypedef"></a>
 
 ## ListRuleGroupsNamespacesRequestRequestTypeDef
 
@@ -294,6 +332,8 @@ Optional fields:
 - `name`: `str`
 - `nextToken`: `str`
 
+<a id="listrulegroupsnamespacesresponsetypedef"></a>
+
 ## ListRuleGroupsNamespacesResponseTypeDef
 
 ```python
@@ -308,6 +348,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -317,6 +359,8 @@ from mypy_boto3_amp.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -330,6 +374,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listworkspacesrequestrequesttypedef"></a>
+
 ## ListWorkspacesRequestRequestTypeDef
 
 ```python
@@ -341,6 +387,8 @@ Optional fields:
 - `alias`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listworkspacesresponsetypedef"></a>
 
 ## ListWorkspacesResponseTypeDef
 
@@ -356,6 +404,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -367,6 +417,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putalertmanagerdefinitionrequestrequesttypedef"></a>
 
 ## PutAlertManagerDefinitionRequestRequestTypeDef
 
@@ -383,6 +435,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="putalertmanagerdefinitionresponsetypedef"></a>
+
 ## PutAlertManagerDefinitionResponseTypeDef
 
 ```python
@@ -395,6 +449,8 @@ Required fields:
   [AlertManagerDefinitionStatusTypeDef](./type_defs.md#alertmanagerdefinitionstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putrulegroupsnamespacerequestrequesttypedef"></a>
 
 ## PutRuleGroupsNamespaceRequestRequestTypeDef
 
@@ -412,6 +468,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="putrulegroupsnamespaceresponsetypedef"></a>
+
 ## PutRuleGroupsNamespaceResponseTypeDef
 
 ```python
@@ -428,6 +486,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -441,6 +501,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="rulegroupsnamespacedescriptiontypedef"></a>
 
 ## RuleGroupsNamespaceDescriptionTypeDef
 
@@ -462,6 +524,8 @@ Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="rulegroupsnamespacestatustypedef"></a>
+
 ## RuleGroupsNamespaceStatusTypeDef
 
 ```python
@@ -476,6 +540,8 @@ Required fields:
 Optional fields:
 
 - `statusReason`: `str`
+
+<a id="rulegroupsnamespacesummarytypedef"></a>
 
 ## RuleGroupsNamespaceSummaryTypeDef
 
@@ -496,6 +562,8 @@ Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -507,6 +575,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -517,6 +587,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateworkspacealiasrequestrequesttypedef"></a>
 
 ## UpdateWorkspaceAliasRequestRequestTypeDef
 
@@ -533,6 +605,8 @@ Optional fields:
 - `alias`: `str`
 - `clientToken`: `str`
 
+<a id="waiterconfigtypedef"></a>
+
 ## WaiterConfigTypeDef
 
 ```python
@@ -543,6 +617,8 @@ Optional fields:
 
 - `Delay`: `int`
 - `MaxAttempts`: `int`
+
+<a id="workspacedescriptiontypedef"></a>
 
 ## WorkspaceDescriptionTypeDef
 
@@ -563,6 +639,8 @@ Optional fields:
 - `prometheusEndpoint`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="workspacestatustypedef"></a>
+
 ## WorkspaceStatusTypeDef
 
 ```python
@@ -573,6 +651,8 @@ Required fields:
 
 - `statusCode`:
   [WorkspaceStatusCodeType](./literals.md#workspacestatuscodetype)
+
+<a id="workspacesummarytypedef"></a>
 
 ## WorkspaceSummaryTypeDef
 

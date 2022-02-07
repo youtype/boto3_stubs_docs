@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-fsx-module"></a>
+
 # Literals for boto3 FSx module
 
 > [Index](..) > [FSx](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
 type annotations stubs module
-[mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
+[mypy-boto3-fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
 - [Literals for boto3 FSx module](#literals-for-boto3-fsx-module)
   - [AdministrativeActionTypeType](#administrativeactiontypetype)
@@ -60,6 +62,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="administrativeactiontypetype"></a>
+
 ## AdministrativeActionTypeType
 
 ```python
@@ -76,6 +80,8 @@ Values:
 - `STORAGE_OPTIMIZATION`
 - `VOLUME_UPDATE`
 
+<a id="aliaslifecycletype"></a>
+
 ## AliasLifecycleType
 
 ```python
@@ -90,6 +96,8 @@ Values:
 - `DELETE_FAILED`
 - `DELETING`
 
+<a id="autoimportpolicytypetype"></a>
+
 ## AutoImportPolicyTypeType
 
 ```python
@@ -102,6 +110,8 @@ Values:
 - `NEW_CHANGED`
 - `NEW_CHANGED_DELETED`
 - `NONE`
+
+<a id="backuplifecycletype"></a>
 
 ## BackupLifecycleType
 
@@ -119,6 +129,8 @@ Values:
 - `PENDING`
 - `TRANSFERRING`
 
+<a id="backuptypetype"></a>
+
 ## BackupTypeType
 
 ```python
@@ -131,6 +143,8 @@ Values:
 - `AWS_BACKUP`
 - `USER_INITIATED`
 
+<a id="datacompressiontypetype"></a>
+
 ## DataCompressionTypeType
 
 ```python
@@ -141,6 +155,8 @@ Values:
 
 - `LZ4`
 - `NONE`
+
+<a id="datarepositorylifecycletype"></a>
 
 ## DataRepositoryLifecycleType
 
@@ -157,6 +173,8 @@ Values:
 - `MISCONFIGURED`
 - `UPDATING`
 
+<a id="datarepositorytaskfilternametype"></a>
+
 ## DataRepositoryTaskFilterNameType
 
 ```python
@@ -168,6 +186,8 @@ Values:
 - `data-repository-association-id`
 - `file-system-id`
 - `task-lifecycle`
+
+<a id="datarepositorytasklifecycletype"></a>
 
 ## DataRepositoryTaskLifecycleType
 
@@ -184,6 +204,8 @@ Values:
 - `PENDING`
 - `SUCCEEDED`
 
+<a id="datarepositorytasktypetype"></a>
+
 ## DataRepositoryTaskTypeType
 
 ```python
@@ -195,6 +217,8 @@ Values:
 - `EXPORT_TO_REPOSITORY`
 - `IMPORT_METADATA_FROM_REPOSITORY`
 
+<a id="deleteopenzfsvolumeoptiontype"></a>
+
 ## DeleteOpenZFSVolumeOptionType
 
 ```python
@@ -204,6 +228,8 @@ from mypy_boto3_fsx.literals import DeleteOpenZFSVolumeOptionType
 Values:
 
 - `DELETE_CHILD_VOLUMES_AND_SNAPSHOTS`
+
+<a id="describebackupspaginatorname"></a>
 
 ## DescribeBackupsPaginatorName
 
@@ -215,6 +241,8 @@ Values:
 
 - `describe_backups`
 
+<a id="describefilesystemspaginatorname"></a>
+
 ## DescribeFileSystemsPaginatorName
 
 ```python
@@ -224,6 +252,8 @@ from mypy_boto3_fsx.literals import DescribeFileSystemsPaginatorName
 Values:
 
 - `describe_file_systems`
+
+<a id="diskiopsconfigurationmodetype"></a>
 
 ## DiskIopsConfigurationModeType
 
@@ -236,6 +266,8 @@ Values:
 - `AUTOMATIC`
 - `USER_PROVISIONED`
 
+<a id="drivecachetypetype"></a>
+
 ## DriveCacheTypeType
 
 ```python
@@ -246,6 +278,8 @@ Values:
 
 - `NONE`
 - `READ`
+
+<a id="eventtypetype"></a>
 
 ## EventTypeType
 
@@ -258,6 +292,8 @@ Values:
 - `CHANGED`
 - `DELETED`
 - `NEW`
+
+<a id="filesystemlifecycletype"></a>
 
 ## FileSystemLifecycleType
 
@@ -274,6 +310,8 @@ Values:
 - `MISCONFIGURED`
 - `UPDATING`
 
+<a id="filesystemmaintenanceoperationtype"></a>
+
 ## FileSystemMaintenanceOperationType
 
 ```python
@@ -284,6 +322,8 @@ Values:
 
 - `BACKING_UP`
 - `PATCHING`
+
+<a id="filesystemtypetype"></a>
 
 ## FileSystemTypeType
 
@@ -297,6 +337,8 @@ Values:
 - `ONTAP`
 - `OPENZFS`
 - `WINDOWS`
+
+<a id="filternametype"></a>
 
 ## FilterNameType
 
@@ -312,6 +354,8 @@ Values:
 - `file-system-type`
 - `volume-id`
 
+<a id="flexcacheendpointtypetype"></a>
+
 ## FlexCacheEndpointTypeType
 
 ```python
@@ -324,6 +368,8 @@ Values:
 - `NONE`
 - `ORIGIN`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -333,6 +379,8 @@ from mypy_boto3_fsx.literals import ListTagsForResourcePaginatorName
 Values:
 
 - `list_tags_for_resource`
+
+<a id="lustreaccessauditlogleveltype"></a>
 
 ## LustreAccessAuditLogLevelType
 
@@ -347,6 +395,8 @@ Values:
 - `WARN_ERROR`
 - `WARN_ONLY`
 
+<a id="lustredeploymenttypetype"></a>
+
 ## LustreDeploymentTypeType
 
 ```python
@@ -360,6 +410,8 @@ Values:
 - `SCRATCH_1`
 - `SCRATCH_2`
 
+<a id="ontapdeploymenttypetype"></a>
+
 ## OntapDeploymentTypeType
 
 ```python
@@ -369,6 +421,8 @@ from mypy_boto3_fsx.literals import OntapDeploymentTypeType
 Values:
 
 - `MULTI_AZ_1`
+
+<a id="ontapvolumetypetype"></a>
 
 ## OntapVolumeTypeType
 
@@ -382,6 +436,8 @@ Values:
 - `LS`
 - `RW`
 
+<a id="openzfscopystrategytype"></a>
+
 ## OpenZFSCopyStrategyType
 
 ```python
@@ -392,6 +448,8 @@ Values:
 
 - `CLONE`
 - `FULL_COPY`
+
+<a id="openzfsdatacompressiontypetype"></a>
 
 ## OpenZFSDataCompressionTypeType
 
@@ -404,6 +462,8 @@ Values:
 - `NONE`
 - `ZSTD`
 
+<a id="openzfsdeploymenttypetype"></a>
+
 ## OpenZFSDeploymentTypeType
 
 ```python
@@ -413,6 +473,8 @@ from mypy_boto3_fsx.literals import OpenZFSDeploymentTypeType
 Values:
 
 - `SINGLE_AZ_1`
+
+<a id="openzfsquotatypetype"></a>
 
 ## OpenZFSQuotaTypeType
 
@@ -425,6 +487,8 @@ Values:
 - `GROUP`
 - `USER`
 
+<a id="reportformattype"></a>
+
 ## ReportFormatType
 
 ```python
@@ -435,6 +499,8 @@ Values:
 
 - `REPORT_CSV_20191124`
 
+<a id="reportscopetype"></a>
+
 ## ReportScopeType
 
 ```python
@@ -444,6 +510,8 @@ from mypy_boto3_fsx.literals import ReportScopeType
 Values:
 
 - `FAILED_FILES_ONLY`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -456,6 +524,8 @@ Values:
 - `FILE_SYSTEM`
 - `VOLUME`
 
+<a id="restoreopenzfsvolumeoptiontype"></a>
+
 ## RestoreOpenZFSVolumeOptionType
 
 ```python
@@ -466,6 +536,8 @@ Values:
 
 - `DELETE_CLONED_VOLUMES`
 - `DELETE_INTERMEDIATE_SNAPSHOTS`
+
+<a id="securitystyletype"></a>
 
 ## SecurityStyleType
 
@@ -479,6 +551,8 @@ Values:
 - `NTFS`
 - `UNIX`
 
+<a id="snapshotfilternametype"></a>
+
 ## SnapshotFilterNameType
 
 ```python
@@ -489,6 +563,8 @@ Values:
 
 - `file-system-id`
 - `volume-id`
+
+<a id="snapshotlifecycletype"></a>
 
 ## SnapshotLifecycleType
 
@@ -502,6 +578,8 @@ Values:
 - `CREATING`
 - `DELETING`
 - `PENDING`
+
+<a id="statustype"></a>
 
 ## StatusType
 
@@ -517,6 +595,8 @@ Values:
 - `PENDING`
 - `UPDATED_OPTIMIZING`
 
+<a id="storagetypetype"></a>
+
 ## StorageTypeType
 
 ```python
@@ -528,6 +608,8 @@ Values:
 - `HDD`
 - `SSD`
 
+<a id="storagevirtualmachinefilternametype"></a>
+
 ## StorageVirtualMachineFilterNameType
 
 ```python
@@ -537,6 +619,8 @@ from mypy_boto3_fsx.literals import StorageVirtualMachineFilterNameType
 Values:
 
 - `file-system-id`
+
+<a id="storagevirtualmachinelifecycletype"></a>
 
 ## StorageVirtualMachineLifecycleType
 
@@ -553,6 +637,8 @@ Values:
 - `MISCONFIGURED`
 - `PENDING`
 
+<a id="storagevirtualmachinerootvolumesecuritystyletype"></a>
+
 ## StorageVirtualMachineRootVolumeSecurityStyleType
 
 ```python
@@ -564,6 +650,8 @@ Values:
 - `MIXED`
 - `NTFS`
 - `UNIX`
+
+<a id="storagevirtualmachinesubtypetype"></a>
 
 ## StorageVirtualMachineSubtypeType
 
@@ -578,6 +666,8 @@ Values:
 - `SYNC_DESTINATION`
 - `SYNC_SOURCE`
 
+<a id="tieringpolicynametype"></a>
+
 ## TieringPolicyNameType
 
 ```python
@@ -591,6 +681,8 @@ Values:
 - `NONE`
 - `SNAPSHOT_ONLY`
 
+<a id="volumefilternametype"></a>
+
 ## VolumeFilterNameType
 
 ```python
@@ -601,6 +693,8 @@ Values:
 
 - `file-system-id`
 - `storage-virtual-machine-id`
+
+<a id="volumelifecycletype"></a>
 
 ## VolumeLifecycleType
 
@@ -618,6 +712,8 @@ Values:
 - `MISCONFIGURED`
 - `PENDING`
 
+<a id="volumetypetype"></a>
+
 ## VolumeTypeType
 
 ```python
@@ -628,6 +724,8 @@ Values:
 
 - `ONTAP`
 - `OPENZFS`
+
+<a id="windowsaccessauditlogleveltype"></a>
 
 ## WindowsAccessAuditLogLevelType
 
@@ -642,6 +740,8 @@ Values:
 - `SUCCESS_AND_FAILURE`
 - `SUCCESS_ONLY`
 
+<a id="windowsdeploymenttypetype"></a>
+
 ## WindowsDeploymentTypeType
 
 ```python
@@ -653,6 +753,8 @@ Values:
 - `MULTI_AZ_1`
 - `SINGLE_AZ_1`
 - `SINGLE_AZ_2`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -961,6 +1063,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

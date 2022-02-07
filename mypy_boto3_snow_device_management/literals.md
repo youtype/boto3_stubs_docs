@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-snowdevicemanagement-module"></a>
+
 # Literals for boto3 SnowDeviceManagement module
 
 > [Index](..) > [SnowDeviceManagement](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SnowDeviceManagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement)
 type annotations stubs module
-[mypy_boto3_snow_device_management](https://pypi.org/project/mypy-boto3-snow-device-management/).
+[mypy-boto3-snow-device-management](https://pypi.org/project/mypy-boto3-snow-device-management/).
 
 - [Literals for boto3 SnowDeviceManagement module](#literals-for-boto3-snowdevicemanagement-module)
   - [AttachmentStatusType](#attachmentstatustype)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="attachmentstatustype"></a>
+
 ## AttachmentStatusType
 
 ```python
@@ -34,6 +38,8 @@ Values:
 - `ATTACHING`
 - `DETACHED`
 - `DETACHING`
+
+<a id="executionstatetype"></a>
 
 ## ExecutionStateType
 
@@ -51,6 +57,8 @@ Values:
 - `SUCCEEDED`
 - `TIMED_OUT`
 
+<a id="instancestatenametype"></a>
+
 ## InstanceStateNameType
 
 ```python
@@ -66,6 +74,8 @@ Values:
 - `STOPPING`
 - `TERMINATED`
 
+<a id="ipaddressassignmenttype"></a>
+
 ## IpAddressAssignmentType
 
 ```python
@@ -77,6 +87,8 @@ Values:
 - `DHCP`
 - `STATIC`
 
+<a id="listdeviceresourcespaginatorname"></a>
+
 ## ListDeviceResourcesPaginatorName
 
 ```python
@@ -86,6 +98,8 @@ from mypy_boto3_snow_device_management.literals import ListDeviceResourcesPagina
 Values:
 
 - `list_device_resources`
+
+<a id="listdevicespaginatorname"></a>
 
 ## ListDevicesPaginatorName
 
@@ -97,6 +111,8 @@ Values:
 
 - `list_devices`
 
+<a id="listexecutionspaginatorname"></a>
+
 ## ListExecutionsPaginatorName
 
 ```python
@@ -107,6 +123,8 @@ Values:
 
 - `list_executions`
 
+<a id="listtaskspaginatorname"></a>
+
 ## ListTasksPaginatorName
 
 ```python
@@ -116,6 +134,8 @@ from mypy_boto3_snow_device_management.literals import ListTasksPaginatorName
 Values:
 
 - `list_tasks`
+
+<a id="physicalconnectortypetype"></a>
 
 ## PhysicalConnectorTypeType
 
@@ -131,6 +151,8 @@ Values:
 - `SFP_PLUS`
 - `WIFI`
 
+<a id="taskstatetype"></a>
+
 ## TaskStateType
 
 ```python
@@ -143,6 +165,8 @@ Values:
 - `COMPLETED`
 - `IN_PROGRESS`
 
+<a id="unlockstatetype"></a>
+
 ## UnlockStateType
 
 ```python
@@ -154,6 +178,8 @@ Values:
 - `LOCKED`
 - `UNLOCKED`
 - `UNLOCKING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -462,6 +488,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

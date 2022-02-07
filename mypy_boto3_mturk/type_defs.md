@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-mturk-module"></a>
+
 # Typed dictionaries for boto3 MTurk module
 
 > [Index](..) > [MTurk](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
 type annotations stubs module
-[mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
+[mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 - [Typed dictionaries for boto3 MTurk module](#typed-dictionaries-for-boto3-mturk-module)
   - [AcceptQualificationRequestRequestRequestTypeDef](#acceptqualificationrequestrequestrequesttypedef)
@@ -89,6 +91,8 @@ type annotations stubs module
   - [UpdateQualificationTypeResponseTypeDef](#updatequalificationtyperesponsetypedef)
   - [WorkerBlockTypeDef](#workerblocktypedef)
 
+<a id="acceptqualificationrequestrequestrequesttypedef"></a>
+
 ## AcceptQualificationRequestRequestRequestTypeDef
 
 ```python
@@ -102,6 +106,8 @@ Required fields:
 Optional fields:
 
 - `IntegerValue`: `int`
+
+<a id="approveassignmentrequestrequesttypedef"></a>
 
 ## ApproveAssignmentRequestRequestTypeDef
 
@@ -117,6 +123,8 @@ Optional fields:
 
 - `RequesterFeedback`: `str`
 - `OverrideRejection`: `bool`
+
+<a id="assignmenttypedef"></a>
 
 ## AssignmentTypeDef
 
@@ -140,6 +148,8 @@ Optional fields:
 - `Answer`: `str`
 - `RequesterFeedback`: `str`
 
+<a id="associatequalificationwithworkerrequestrequesttypedef"></a>
+
 ## AssociateQualificationWithWorkerRequestRequestTypeDef
 
 ```python
@@ -156,6 +166,8 @@ Optional fields:
 - `IntegerValue`: `int`
 - `SendNotification`: `bool`
 
+<a id="bonuspaymenttypedef"></a>
+
 ## BonusPaymentTypeDef
 
 ```python
@@ -169,6 +181,8 @@ Optional fields:
 - `AssignmentId`: `str`
 - `Reason`: `str`
 - `GrantTime`: `datetime`
+
+<a id="createadditionalassignmentsforhitrequestrequesttypedef"></a>
 
 ## CreateAdditionalAssignmentsForHITRequestRequestTypeDef
 
@@ -184,6 +198,8 @@ Required fields:
 Optional fields:
 
 - `UniqueRequestToken`: `str`
+
+<a id="createhitrequestrequesttypedef"></a>
 
 ## CreateHITRequestRequestTypeDef
 
@@ -216,6 +232,8 @@ Optional fields:
 - `HITLayoutParameters`:
   `Sequence`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
 
+<a id="createhitresponsetypedef"></a>
+
 ## CreateHITResponseTypeDef
 
 ```python
@@ -227,6 +245,8 @@ Required fields:
 - `HIT`: [HITTypeDef](./type_defs.md#hittypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createhittyperequestrequesttypedef"></a>
 
 ## CreateHITTypeRequestRequestTypeDef
 
@@ -248,6 +268,8 @@ Optional fields:
 - `QualificationRequirements`:
   `Sequence`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
 
+<a id="createhittyperesponsetypedef"></a>
+
 ## CreateHITTypeResponseTypeDef
 
 ```python
@@ -259,6 +281,8 @@ Required fields:
 - `HITTypeId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createhitwithhittyperequestrequesttypedef"></a>
 
 ## CreateHITWithHITTypeRequestRequestTypeDef
 
@@ -284,6 +308,8 @@ Optional fields:
 - `HITLayoutParameters`:
   `Sequence`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
 
+<a id="createhitwithhittyperesponsetypedef"></a>
+
 ## CreateHITWithHITTypeResponseTypeDef
 
 ```python
@@ -295,6 +321,8 @@ Required fields:
 - `HIT`: [HITTypeDef](./type_defs.md#hittypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createqualificationtyperequestrequesttypedef"></a>
 
 ## CreateQualificationTypeRequestRequestTypeDef
 
@@ -319,6 +347,8 @@ Optional fields:
 - `AutoGranted`: `bool`
 - `AutoGrantedValue`: `int`
 
+<a id="createqualificationtyperesponsetypedef"></a>
+
 ## CreateQualificationTypeResponseTypeDef
 
 ```python
@@ -332,6 +362,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createworkerblockrequestrequesttypedef"></a>
+
 ## CreateWorkerBlockRequestRequestTypeDef
 
 ```python
@@ -343,6 +375,8 @@ Required fields:
 - `WorkerId`: `str`
 - `Reason`: `str`
 
+<a id="deletehitrequestrequesttypedef"></a>
+
 ## DeleteHITRequestRequestTypeDef
 
 ```python
@@ -353,6 +387,8 @@ Required fields:
 
 - `HITId`: `str`
 
+<a id="deletequalificationtyperequestrequesttypedef"></a>
+
 ## DeleteQualificationTypeRequestRequestTypeDef
 
 ```python
@@ -362,6 +398,8 @@ from mypy_boto3_mturk.type_defs import DeleteQualificationTypeRequestRequestType
 Required fields:
 
 - `QualificationTypeId`: `str`
+
+<a id="deleteworkerblockrequestrequesttypedef"></a>
 
 ## DeleteWorkerBlockRequestRequestTypeDef
 
@@ -376,6 +414,8 @@ Required fields:
 Optional fields:
 
 - `Reason`: `str`
+
+<a id="disassociatequalificationfromworkerrequestrequesttypedef"></a>
 
 ## DisassociateQualificationFromWorkerRequestRequestTypeDef
 
@@ -392,6 +432,8 @@ Optional fields:
 
 - `Reason`: `str`
 
+<a id="getaccountbalanceresponsetypedef"></a>
+
 ## GetAccountBalanceResponseTypeDef
 
 ```python
@@ -405,6 +447,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getassignmentrequestrequesttypedef"></a>
+
 ## GetAssignmentRequestRequestTypeDef
 
 ```python
@@ -414,6 +458,8 @@ from mypy_boto3_mturk.type_defs import GetAssignmentRequestRequestTypeDef
 Required fields:
 
 - `AssignmentId`: `str`
+
+<a id="getassignmentresponsetypedef"></a>
 
 ## GetAssignmentResponseTypeDef
 
@@ -428,6 +474,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfileuploadurlrequestrequesttypedef"></a>
+
 ## GetFileUploadURLRequestRequestTypeDef
 
 ```python
@@ -438,6 +486,8 @@ Required fields:
 
 - `AssignmentId`: `str`
 - `QuestionIdentifier`: `str`
+
+<a id="getfileuploadurlresponsetypedef"></a>
 
 ## GetFileUploadURLResponseTypeDef
 
@@ -451,6 +501,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gethitrequestrequesttypedef"></a>
+
 ## GetHITRequestRequestTypeDef
 
 ```python
@@ -460,6 +512,8 @@ from mypy_boto3_mturk.type_defs import GetHITRequestRequestTypeDef
 Required fields:
 
 - `HITId`: `str`
+
+<a id="gethitresponsetypedef"></a>
 
 ## GetHITResponseTypeDef
 
@@ -473,6 +527,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getqualificationscorerequestrequesttypedef"></a>
+
 ## GetQualificationScoreRequestRequestTypeDef
 
 ```python
@@ -483,6 +539,8 @@ Required fields:
 
 - `QualificationTypeId`: `str`
 - `WorkerId`: `str`
+
+<a id="getqualificationscoreresponsetypedef"></a>
 
 ## GetQualificationScoreResponseTypeDef
 
@@ -496,6 +554,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getqualificationtyperequestrequesttypedef"></a>
+
 ## GetQualificationTypeRequestRequestTypeDef
 
 ```python
@@ -505,6 +565,8 @@ from mypy_boto3_mturk.type_defs import GetQualificationTypeRequestRequestTypeDef
 Required fields:
 
 - `QualificationTypeId`: `str`
+
+<a id="getqualificationtyperesponsetypedef"></a>
 
 ## GetQualificationTypeResponseTypeDef
 
@@ -519,6 +581,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="hitlayoutparametertypedef"></a>
+
 ## HITLayoutParameterTypeDef
 
 ```python
@@ -529,6 +593,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="hittypedef"></a>
 
 ## HITTypeDef
 
@@ -561,6 +627,8 @@ Optional fields:
 - `NumberOfAssignmentsAvailable`: `int`
 - `NumberOfAssignmentsCompleted`: `int`
 
+<a id="listassignmentsforhitrequestrequesttypedef"></a>
+
 ## ListAssignmentsForHITRequestRequestTypeDef
 
 ```python
@@ -578,6 +646,8 @@ Optional fields:
 - `AssignmentStatuses`:
   `Sequence`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
 
+<a id="listassignmentsforhitresponsetypedef"></a>
+
 ## ListAssignmentsForHITResponseTypeDef
 
 ```python
@@ -593,6 +663,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbonuspaymentsrequestrequesttypedef"></a>
+
 ## ListBonusPaymentsRequestRequestTypeDef
 
 ```python
@@ -605,6 +677,8 @@ Optional fields:
 - `AssignmentId`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listbonuspaymentsresponsetypedef"></a>
 
 ## ListBonusPaymentsResponseTypeDef
 
@@ -621,6 +695,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listhitsforqualificationtyperequestrequesttypedef"></a>
+
 ## ListHITsForQualificationTypeRequestRequestTypeDef
 
 ```python
@@ -636,6 +712,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listhitsforqualificationtyperesponsetypedef"></a>
+
 ## ListHITsForQualificationTypeResponseTypeDef
 
 ```python
@@ -650,6 +728,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listhitsrequestrequesttypedef"></a>
+
 ## ListHITsRequestRequestTypeDef
 
 ```python
@@ -660,6 +740,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listhitsresponsetypedef"></a>
 
 ## ListHITsResponseTypeDef
 
@@ -675,6 +757,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listqualificationrequestsrequestrequesttypedef"></a>
+
 ## ListQualificationRequestsRequestRequestTypeDef
 
 ```python
@@ -686,6 +770,8 @@ Optional fields:
 - `QualificationTypeId`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listqualificationrequestsresponsetypedef"></a>
 
 ## ListQualificationRequestsResponseTypeDef
 
@@ -701,6 +787,8 @@ Required fields:
   `List`\[[QualificationRequestTypeDef](./type_defs.md#qualificationrequesttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listqualificationtypesrequestrequesttypedef"></a>
 
 ## ListQualificationTypesRequestRequestTypeDef
 
@@ -719,6 +807,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listqualificationtypesresponsetypedef"></a>
+
 ## ListQualificationTypesResponseTypeDef
 
 ```python
@@ -733,6 +823,8 @@ Required fields:
   `List`\[[QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listreviewpolicyresultsforhitrequestrequesttypedef"></a>
 
 ## ListReviewPolicyResultsForHITRequestRequestTypeDef
 
@@ -753,6 +845,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listreviewpolicyresultsforhitresponsetypedef"></a>
+
 ## ListReviewPolicyResultsForHITResponseTypeDef
 
 ```python
@@ -772,6 +866,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listreviewablehitsrequestrequesttypedef"></a>
+
 ## ListReviewableHITsRequestRequestTypeDef
 
 ```python
@@ -784,6 +880,8 @@ Optional fields:
 - `Status`: [ReviewableHITStatusType](./literals.md#reviewablehitstatustype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listreviewablehitsresponsetypedef"></a>
 
 ## ListReviewableHITsResponseTypeDef
 
@@ -799,6 +897,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listworkerblocksrequestrequesttypedef"></a>
+
 ## ListWorkerBlocksRequestRequestTypeDef
 
 ```python
@@ -809,6 +909,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listworkerblocksresponsetypedef"></a>
 
 ## ListWorkerBlocksResponseTypeDef
 
@@ -824,6 +926,8 @@ Required fields:
   `List`\[[WorkerBlockTypeDef](./type_defs.md#workerblocktypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listworkerswithqualificationtyperequestrequesttypedef"></a>
 
 ## ListWorkersWithQualificationTypeRequestRequestTypeDef
 
@@ -841,6 +945,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listworkerswithqualificationtyperesponsetypedef"></a>
+
 ## ListWorkersWithQualificationTypeResponseTypeDef
 
 ```python
@@ -856,6 +962,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="localetypedef"></a>
+
 ## LocaleTypeDef
 
 ```python
@@ -869,6 +977,8 @@ Required fields:
 Optional fields:
 
 - `Subdivision`: `str`
+
+<a id="notificationspecificationtypedef"></a>
 
 ## NotificationSpecificationTypeDef
 
@@ -884,6 +994,8 @@ Required fields:
 - `Version`: `str`
 - `EventTypes`: `Sequence`\[[EventTypeType](./literals.md#eventtypetype)\]
 
+<a id="notifyworkersfailurestatustypedef"></a>
+
 ## NotifyWorkersFailureStatusTypeDef
 
 ```python
@@ -897,6 +1009,8 @@ Optional fields:
 - `NotifyWorkersFailureMessage`: `str`
 - `WorkerId`: `str`
 
+<a id="notifyworkersrequestrequesttypedef"></a>
+
 ## NotifyWorkersRequestRequestTypeDef
 
 ```python
@@ -908,6 +1022,8 @@ Required fields:
 - `Subject`: `str`
 - `MessageText`: `str`
 - `WorkerIds`: `Sequence`\[`str`\]
+
+<a id="notifyworkersresponsetypedef"></a>
 
 ## NotifyWorkersResponseTypeDef
 
@@ -922,6 +1038,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -934,6 +1052,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="parametermapentrytypedef"></a>
+
 ## ParameterMapEntryTypeDef
 
 ```python
@@ -944,6 +1064,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="policyparametertypedef"></a>
 
 ## PolicyParameterTypeDef
 
@@ -957,6 +1079,8 @@ Optional fields:
 - `Values`: `Sequence`\[`str`\]
 - `MapEntries`:
   `Sequence`\[[ParameterMapEntryTypeDef](./type_defs.md#parametermapentrytypedef)\]
+
+<a id="qualificationrequesttypedef"></a>
 
 ## QualificationRequestTypeDef
 
@@ -972,6 +1096,8 @@ Optional fields:
 - `Test`: `str`
 - `Answer`: `str`
 - `SubmitTime`: `datetime`
+
+<a id="qualificationrequirementtypedef"></a>
 
 ## QualificationRequirementTypeDef
 
@@ -991,6 +1117,8 @@ Optional fields:
 - `RequiredToPreview`: `bool`
 - `ActionsGuarded`: [HITAccessActionsType](./literals.md#hitaccessactionstype)
 
+<a id="qualificationtypedef"></a>
+
 ## QualificationTypeDef
 
 ```python
@@ -1005,6 +1133,8 @@ Optional fields:
 - `IntegerValue`: `int`
 - `LocaleValue`: [LocaleTypeDef](./type_defs.md#localetypedef)
 - `Status`: [QualificationStatusType](./literals.md#qualificationstatustype)
+
+<a id="qualificationtypetypedef"></a>
 
 ## QualificationTypeTypeDef
 
@@ -1029,6 +1159,8 @@ Optional fields:
 - `AutoGranted`: `bool`
 - `AutoGrantedValue`: `int`
 
+<a id="rejectassignmentrequestrequesttypedef"></a>
+
 ## RejectAssignmentRequestRequestTypeDef
 
 ```python
@@ -1039,6 +1171,8 @@ Required fields:
 
 - `AssignmentId`: `str`
 - `RequesterFeedback`: `str`
+
+<a id="rejectqualificationrequestrequestrequesttypedef"></a>
 
 ## RejectQualificationRequestRequestRequestTypeDef
 
@@ -1054,6 +1188,8 @@ Optional fields:
 
 - `Reason`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1067,6 +1203,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="reviewactiondetailtypedef"></a>
 
 ## ReviewActionDetailTypeDef
 
@@ -1085,6 +1223,8 @@ Optional fields:
 - `Result`: `str`
 - `ErrorCode`: `str`
 
+<a id="reviewpolicytypedef"></a>
+
 ## ReviewPolicyTypeDef
 
 ```python
@@ -1100,6 +1240,8 @@ Optional fields:
 - `Parameters`:
   `Sequence`\[[PolicyParameterTypeDef](./type_defs.md#policyparametertypedef)\]
 
+<a id="reviewreporttypedef"></a>
+
 ## ReviewReportTypeDef
 
 ```python
@@ -1112,6 +1254,8 @@ Optional fields:
   `List`\[[ReviewResultDetailTypeDef](./type_defs.md#reviewresultdetailtypedef)\]
 - `ReviewActions`:
   `List`\[[ReviewActionDetailTypeDef](./type_defs.md#reviewactiondetailtypedef)\]
+
+<a id="reviewresultdetailtypedef"></a>
 
 ## ReviewResultDetailTypeDef
 
@@ -1127,6 +1271,8 @@ Optional fields:
 - `QuestionId`: `str`
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="sendbonusrequestrequesttypedef"></a>
 
 ## SendBonusRequestRequestTypeDef
 
@@ -1145,6 +1291,8 @@ Optional fields:
 
 - `UniqueRequestToken`: `str`
 
+<a id="sendtesteventnotificationrequestrequesttypedef"></a>
+
 ## SendTestEventNotificationRequestRequestTypeDef
 
 ```python
@@ -1157,6 +1305,8 @@ Required fields:
   [NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef)
 - `TestEventType`: [EventTypeType](./literals.md#eventtypetype)
 
+<a id="updateexpirationforhitrequestrequesttypedef"></a>
+
 ## UpdateExpirationForHITRequestRequestTypeDef
 
 ```python
@@ -1167,6 +1317,8 @@ Required fields:
 
 - `HITId`: `str`
 - `ExpireAt`: `Union`\[`datetime`, `str`\]
+
+<a id="updatehitreviewstatusrequestrequesttypedef"></a>
 
 ## UpdateHITReviewStatusRequestRequestTypeDef
 
@@ -1182,6 +1334,8 @@ Optional fields:
 
 - `Revert`: `bool`
 
+<a id="updatehittypeofhitrequestrequesttypedef"></a>
+
 ## UpdateHITTypeOfHITRequestRequestTypeDef
 
 ```python
@@ -1192,6 +1346,8 @@ Required fields:
 
 - `HITId`: `str`
 - `HITTypeId`: `str`
+
+<a id="updatenotificationsettingsrequestrequesttypedef"></a>
 
 ## UpdateNotificationSettingsRequestRequestTypeDef
 
@@ -1208,6 +1364,8 @@ Optional fields:
 - `Notification`:
   [NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef)
 - `Active`: `bool`
+
+<a id="updatequalificationtyperequestrequesttypedef"></a>
 
 ## UpdateQualificationTypeRequestRequestTypeDef
 
@@ -1231,6 +1389,8 @@ Optional fields:
 - `AutoGranted`: `bool`
 - `AutoGrantedValue`: `int`
 
+<a id="updatequalificationtyperesponsetypedef"></a>
+
 ## UpdateQualificationTypeResponseTypeDef
 
 ```python
@@ -1243,6 +1403,8 @@ Required fields:
   [QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="workerblocktypedef"></a>
 
 ## WorkerBlockTypeDef
 

@@ -1,3 +1,5 @@
+<a id="cloudformationclient-for-boto3-cloudformation-module"></a>
+
 # CloudFormationClient for boto3 CloudFormation module
 
 > [Index](..) > [CloudFormation](.) > CloudFormationClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
 type annotations stubs module
-[mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+[mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 - [CloudFormationClient for boto3 CloudFormation module](#cloudformationclient-for-boto3-cloudformation-module)
   - [CloudFormationClient](#cloudformationclient)
@@ -82,6 +84,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="cloudformationclient"></a>
+
 ## CloudFormationClient
 
 Type annotations for `boto3.client("cloudformation")`
@@ -89,14 +93,17 @@ Type annotations for `boto3.client("cloudformation")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cloudformation.client import CloudFormationClient
 
 def get_cloudformation_client() -> CloudFormationClient:
-    return boto3.client("cloudformation")
+    return Session().client("cloudformation")
 ```
 
 Boto3 documentation:
 [CloudFormation.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -136,7 +143,11 @@ Exceptions:
 - `Exceptions.TypeConfigurationNotFoundException`
 - `Exceptions.TypeNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -148,6 +159,8 @@ Boto3 documentation:
 [CloudFormation.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="activate_type"></a>
 
 ### activate_type
 
@@ -177,6 +190,8 @@ Keyword-only arguments:
 
 Returns [ActivateTypeOutputTypeDef](./type_defs.md#activatetypeoutputtypedef).
 
+<a id="batch_describe_type_configurations"></a>
+
 ### batch_describe_type_configurations
 
 Returns configuration data for the specified CloudFormation extensions, from
@@ -200,6 +215,8 @@ Keyword-only arguments:
 Returns
 [BatchDescribeTypeConfigurationsOutputTypeDef](./type_defs.md#batchdescribetypeconfigurationsoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -214,6 +231,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_update_stack"></a>
 
 ### cancel_update_stack
 
@@ -232,6 +251,8 @@ Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `ClientRequestToken`: `str`
+
+<a id="continue_update_rollback"></a>
 
 ### continue_update_rollback
 
@@ -255,6 +276,8 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_change_set"></a>
 
 ### create_change_set
 
@@ -294,6 +317,8 @@ Keyword-only arguments:
 Returns
 [CreateChangeSetOutputTypeDef](./type_defs.md#createchangesetoutputtypedef).
 
+<a id="create_stack"></a>
+
 ### create_stack
 
 .
@@ -330,6 +355,8 @@ Keyword-only arguments:
 
 Returns [CreateStackOutputTypeDef](./type_defs.md#createstackoutputtypedef).
 
+<a id="create_stack_instances"></a>
+
 ### create_stack_instances
 
 .
@@ -359,6 +386,8 @@ Keyword-only arguments:
 
 Returns
 [CreateStackInstancesOutputTypeDef](./type_defs.md#createstackinstancesoutputtypedef).
+
+<a id="create_stack_set"></a>
 
 ### create_stack_set
 
@@ -396,6 +425,8 @@ Keyword-only arguments:
 Returns
 [CreateStackSetOutputTypeDef](./type_defs.md#createstacksetoutputtypedef).
 
+<a id="deactivate_type"></a>
+
 ### deactivate_type
 
 Deactivates a public extension that was previously activated in this account
@@ -417,6 +448,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_change_set"></a>
+
 ### delete_change_set
 
 Deletes the specified change set.
@@ -436,6 +469,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_stack"></a>
+
 ### delete_stack
 
 Deletes a specified stack.
@@ -454,6 +489,8 @@ Keyword-only arguments:
 - `RetainResources`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `ClientRequestToken`: `str`
+
+<a id="delete_stack_instances"></a>
 
 ### delete_stack_instances
 
@@ -484,6 +521,8 @@ Keyword-only arguments:
 Returns
 [DeleteStackInstancesOutputTypeDef](./type_defs.md#deletestackinstancesoutputtypedef).
 
+<a id="delete_stack_set"></a>
+
 ### delete_stack_set
 
 Deletes a stack set.
@@ -502,6 +541,8 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="deregister_type"></a>
 
 ### deregister_type
 
@@ -525,6 +566,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_account_limits"></a>
+
 ### describe_account_limits
 
 Retrieves your account's CloudFormation limits, such as the maximum number of
@@ -545,6 +588,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
+
+<a id="describe_change_set"></a>
 
 ### describe_change_set
 
@@ -568,6 +613,8 @@ Keyword-only arguments:
 Returns
 [DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef).
 
+<a id="describe_publisher"></a>
+
 ### describe_publisher
 
 Returns information about a CloudFormation extension publisher.
@@ -588,6 +635,8 @@ Keyword-only arguments:
 Returns
 [DescribePublisherOutputTypeDef](./type_defs.md#describepublisheroutputtypedef).
 
+<a id="describe_stack_drift_detection_status"></a>
+
 ### describe_stack_drift_detection_status
 
 Returns information about a stack drift detection operation.
@@ -607,6 +656,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStackDriftDetectionStatusOutputTypeDef](./type_defs.md#describestackdriftdetectionstatusoutputtypedef).
+
+<a id="describe_stack_events"></a>
 
 ### describe_stack_events
 
@@ -629,6 +680,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef).
+
+<a id="describe_stack_instance"></a>
 
 ### describe_stack_instance
 
@@ -653,6 +706,8 @@ Keyword-only arguments:
 Returns
 [DescribeStackInstanceOutputTypeDef](./type_defs.md#describestackinstanceoutputtypedef).
 
+<a id="describe_stack_resource"></a>
+
 ### describe_stack_resource
 
 Returns a description of the specified resource in the specified stack.
@@ -673,6 +728,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStackResourceOutputTypeDef](./type_defs.md#describestackresourceoutputtypedef).
+
+<a id="describe_stack_resource_drifts"></a>
 
 ### describe_stack_resource_drifts
 
@@ -699,6 +756,8 @@ Keyword-only arguments:
 Returns
 [DescribeStackResourceDriftsOutputTypeDef](./type_defs.md#describestackresourcedriftsoutputtypedef).
 
+<a id="describe_stack_resources"></a>
+
 ### describe_stack_resources
 
 Returns Amazon Web Services resource descriptions for running and deleted
@@ -722,6 +781,8 @@ Keyword-only arguments:
 Returns
 [DescribeStackResourcesOutputTypeDef](./type_defs.md#describestackresourcesoutputtypedef).
 
+<a id="describe_stack_set"></a>
+
 ### describe_stack_set
 
 .
@@ -742,6 +803,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStackSetOutputTypeDef](./type_defs.md#describestacksetoutputtypedef).
+
+<a id="describe_stack_set_operation"></a>
 
 ### describe_stack_set_operation
 
@@ -765,6 +828,8 @@ Keyword-only arguments:
 Returns
 [DescribeStackSetOperationOutputTypeDef](./type_defs.md#describestacksetoperationoutputtypedef).
 
+<a id="describe_stacks"></a>
+
 ### describe_stacks
 
 .
@@ -784,6 +849,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStacksOutputTypeDef](./type_defs.md#describestacksoutputtypedef).
+
+<a id="describe_type"></a>
 
 ### describe_type
 
@@ -808,6 +875,8 @@ Keyword-only arguments:
 
 Returns [DescribeTypeOutputTypeDef](./type_defs.md#describetypeoutputtypedef).
 
+<a id="describe_type_registration"></a>
+
 ### describe_type_registration
 
 Returns information about an extension's registration, including its current
@@ -828,6 +897,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTypeRegistrationOutputTypeDef](./type_defs.md#describetyperegistrationoutputtypedef).
+
+<a id="detect_stack_drift"></a>
 
 ### detect_stack_drift
 
@@ -852,6 +923,8 @@ Keyword-only arguments:
 Returns
 [DetectStackDriftOutputTypeDef](./type_defs.md#detectstackdriftoutputtypedef).
 
+<a id="detect_stack_resource_drift"></a>
+
 ### detect_stack_resource_drift
 
 Returns information about whether a resource's actual configuration differs, or
@@ -874,6 +947,8 @@ Keyword-only arguments:
 
 Returns
 [DetectStackResourceDriftOutputTypeDef](./type_defs.md#detectstackresourcedriftoutputtypedef).
+
+<a id="detect_stack_set_drift"></a>
 
 ### detect_stack_set_drift
 
@@ -899,6 +974,8 @@ Keyword-only arguments:
 Returns
 [DetectStackSetDriftOutputTypeDef](./type_defs.md#detectstacksetdriftoutputtypedef).
 
+<a id="estimate_template_cost"></a>
+
 ### estimate_template_cost
 
 .
@@ -921,6 +998,8 @@ Keyword-only arguments:
 
 Returns
 [EstimateTemplateCostOutputTypeDef](./type_defs.md#estimatetemplatecostoutputtypedef).
+
+<a id="execute_change_set"></a>
 
 ### execute_change_set
 
@@ -945,6 +1024,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -963,6 +1044,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_stack_policy"></a>
 
 ### get_stack_policy
 
@@ -983,6 +1066,8 @@ Keyword-only arguments:
 Returns
 [GetStackPolicyOutputTypeDef](./type_defs.md#getstackpolicyoutputtypedef).
 
+<a id="get_template"></a>
+
 ### get_template
 
 Returns the template body for a specified stack.
@@ -1002,6 +1087,8 @@ Keyword-only arguments:
 - `TemplateStage`: [TemplateStageType](./literals.md#templatestagetype)
 
 Returns [GetTemplateOutputTypeDef](./type_defs.md#gettemplateoutputtypedef).
+
+<a id="get_template_summary"></a>
 
 ### get_template_summary
 
@@ -1026,6 +1113,8 @@ Keyword-only arguments:
 
 Returns
 [GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef).
+
+<a id="import_stacks_to_stack_set"></a>
 
 ### import_stacks_to_stack_set
 
@@ -1054,6 +1143,8 @@ Keyword-only arguments:
 Returns
 [ImportStacksToStackSetOutputTypeDef](./type_defs.md#importstackstostacksetoutputtypedef).
 
+<a id="list_change_sets"></a>
+
 ### list_change_sets
 
 Returns the ID and status of each active change set for a stack.
@@ -1074,6 +1165,8 @@ Keyword-only arguments:
 Returns
 [ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef).
 
+<a id="list_exports"></a>
+
 ### list_exports
 
 .
@@ -1091,6 +1184,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef).
+
+<a id="list_imports"></a>
 
 ### list_imports
 
@@ -1110,6 +1205,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef).
+
+<a id="list_stack_instances"></a>
 
 ### list_stack_instances
 
@@ -1139,6 +1236,8 @@ Keyword-only arguments:
 Returns
 [ListStackInstancesOutputTypeDef](./type_defs.md#liststackinstancesoutputtypedef).
 
+<a id="list_stack_resources"></a>
+
 ### list_stack_resources
 
 Returns descriptions of all resources of the specified stack.
@@ -1159,6 +1258,8 @@ Keyword-only arguments:
 
 Returns
 [ListStackResourcesOutputTypeDef](./type_defs.md#liststackresourcesoutputtypedef).
+
+<a id="list_stack_set_operation_results"></a>
 
 ### list_stack_set_operation_results
 
@@ -1184,6 +1285,8 @@ Keyword-only arguments:
 Returns
 [ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef).
 
+<a id="list_stack_set_operations"></a>
+
 ### list_stack_set_operations
 
 Returns summary information about operations performed on a stack set.
@@ -1207,6 +1310,8 @@ Keyword-only arguments:
 Returns
 [ListStackSetOperationsOutputTypeDef](./type_defs.md#liststacksetoperationsoutputtypedef).
 
+<a id="list_stack_sets"></a>
+
 ### list_stack_sets
 
 Returns summary information about stack sets that are associated with the user.
@@ -1229,6 +1334,8 @@ Keyword-only arguments:
 Returns
 [ListStackSetsOutputTypeDef](./type_defs.md#liststacksetsoutputtypedef).
 
+<a id="list_stacks"></a>
+
 ### list_stacks
 
 Returns the summary information for stacks whose status matches the specified
@@ -1249,6 +1356,8 @@ Keyword-only arguments:
   `Sequence`\[[StackStatusType](./literals.md#stackstatustype)\]
 
 Returns [ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef).
+
+<a id="list_type_registrations"></a>
 
 ### list_type_registrations
 
@@ -1275,6 +1384,8 @@ Keyword-only arguments:
 
 Returns
 [ListTypeRegistrationsOutputTypeDef](./type_defs.md#listtyperegistrationsoutputtypedef).
+
+<a id="list_type_versions"></a>
 
 ### list_type_versions
 
@@ -1303,6 +1414,8 @@ Keyword-only arguments:
 Returns
 [ListTypeVersionsOutputTypeDef](./type_defs.md#listtypeversionsoutputtypedef).
 
+<a id="list_types"></a>
+
 ### list_types
 
 Returns summary information about extension that have been registered with
@@ -1330,6 +1443,8 @@ Keyword-only arguments:
 
 Returns [ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef).
 
+<a id="publish_type"></a>
+
 ### publish_type
 
 Publishes the specified extension to the CloudFormation registry as a public
@@ -1351,6 +1466,8 @@ Keyword-only arguments:
 - `PublicVersionNumber`: `str`
 
 Returns [PublishTypeOutputTypeDef](./type_defs.md#publishtypeoutputtypedef).
+
+<a id="record_handler_progress"></a>
 
 ### record_handler_progress
 
@@ -1379,6 +1496,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="register_publisher"></a>
+
 ### register_publisher
 
 Registers your account as a publisher of public extensions in the
@@ -1400,6 +1519,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterPublisherOutputTypeDef](./type_defs.md#registerpublisheroutputtypedef).
+
+<a id="register_type"></a>
 
 ### register_type
 
@@ -1424,6 +1545,8 @@ Keyword-only arguments:
 
 Returns [RegisterTypeOutputTypeDef](./type_defs.md#registertypeoutputtypedef).
 
+<a id="rollback_stack"></a>
+
 ### rollback_stack
 
 When specifying `RollbackStack` , you preserve the state of previously
@@ -1446,6 +1569,8 @@ Keyword-only arguments:
 Returns
 [RollbackStackOutputTypeDef](./type_defs.md#rollbackstackoutputtypedef).
 
+<a id="set_stack_policy"></a>
+
 ### set_stack_policy
 
 Sets a stack policy for a specified stack.
@@ -1463,6 +1588,8 @@ Keyword-only arguments:
 - `StackName`: `str` *(required)*
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
+
+<a id="set_type_configuration"></a>
 
 ### set_type_configuration
 
@@ -1489,6 +1616,8 @@ Keyword-only arguments:
 Returns
 [SetTypeConfigurationOutputTypeDef](./type_defs.md#settypeconfigurationoutputtypedef).
 
+<a id="set_type_default_version"></a>
+
 ### set_type_default_version
 
 Specify the default version of an extension.
@@ -1511,6 +1640,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="signal_resource"></a>
+
 ### signal_resource
 
 Sends a signal to the specified resource with a success or failure status.
@@ -1530,6 +1661,8 @@ Keyword-only arguments:
 - `UniqueId`: `str` *(required)*
 - `Status`: [ResourceSignalStatusType](./literals.md#resourcesignalstatustype)
   *(required)*
+
+<a id="stop_stack_set_operation"></a>
 
 ### stop_stack_set_operation
 
@@ -1553,6 +1686,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="test_type"></a>
+
 ### test_type
 
 Tests a registered extension to make sure it meets all necessary requirements
@@ -1575,6 +1710,8 @@ Keyword-only arguments:
 - `LogDeliveryBucket`: `str`
 
 Returns [TestTypeOutputTypeDef](./type_defs.md#testtypeoutputtypedef).
+
+<a id="update_stack"></a>
 
 ### update_stack
 
@@ -1612,6 +1749,8 @@ Keyword-only arguments:
 
 Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).
 
+<a id="update_stack_instances"></a>
+
 ### update_stack_instances
 
 .
@@ -1641,6 +1780,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateStackInstancesOutputTypeDef](./type_defs.md#updatestackinstancesoutputtypedef).
+
+<a id="update_stack_set"></a>
 
 ### update_stack_set
 
@@ -1684,6 +1825,8 @@ Keyword-only arguments:
 Returns
 [UpdateStackSetOutputTypeDef](./type_defs.md#updatestacksetoutputtypedef).
 
+<a id="update_termination_protection"></a>
+
 ### update_termination_protection
 
 Updates termination protection for the specified stack.
@@ -1705,6 +1848,8 @@ Keyword-only arguments:
 Returns
 [UpdateTerminationProtectionOutputTypeDef](./type_defs.md#updateterminationprotectionoutputtypedef).
 
+<a id="validate_template"></a>
+
 ### validate_template
 
 Validates a specified template.
@@ -1724,6 +1869,8 @@ Keyword-only arguments:
 
 Returns
 [ValidateTemplateOutputTypeDef](./type_defs.md#validatetemplateoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -1758,6 +1905,8 @@ overloads.
   [ListStacksPaginator](./paginators.md#liststackspaginator)
 - `client.get_paginator("list_types")` ->
   [ListTypesPaginator](./paginators.md#listtypespaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

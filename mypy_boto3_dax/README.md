@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-dax-module"></a>
+
 # Type annotations for boto3 DAX module
 
 > [Index](..) > DAX
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
 type annotations stubs module
-[mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
+[mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[dax]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[dax]'
+
+# standalone installation
 pip install mypy-boto3-dax
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-dax
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="daxclient"></a>
+
 ## DAXClient
 
 Type annotations for `boto3.client("dax")` as [DAXClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_dax.client import DAXClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -56,6 +70,8 @@ from mypy_boto3_dax.client import DAXClient
 - [update_cluster](./client.md#update_cluster)
 - [update_parameter_group](./client.md#update_parameter_group)
 - [update_subnet_group](./client.md#update_subnet_group)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -90,6 +106,8 @@ DAXClient [exceptions](./client.md#exceptions)
 - TagNotFoundFault
 - TagQuotaPerResourceExceeded
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -98,7 +116,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_dax.paginators import DescribeClustersPaginator, ...
+from mypy_boto3_dax.paginator import DescribeClustersPaginator, ...
 ```
 
 - [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
@@ -108,6 +126,8 @@ from mypy_boto3_dax.paginators import DescribeClustersPaginator, ...
 - [DescribeParametersPaginator](./paginators.md#describeparameterspaginator)
 - [DescribeSubnetGroupsPaginator](./paginators.md#describesubnetgroupspaginator)
 - [ListTagsPaginator](./paginators.md#listtagspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -134,6 +154,8 @@ from mypy_boto3_dax.literals import ChangeTypeType, ...
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

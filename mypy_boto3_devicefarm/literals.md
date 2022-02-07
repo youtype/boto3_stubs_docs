@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-devicefarm-module"></a>
+
 # Literals for boto3 DeviceFarm module
 
 > [Index](..) > [DeviceFarm](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module
-[mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
+[mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 - [Literals for boto3 DeviceFarm module](#literals-for-boto3-devicefarm-module)
   - [ArtifactCategoryType](#artifactcategorytype)
@@ -59,6 +61,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="artifactcategorytype"></a>
+
 ## ArtifactCategoryType
 
 ```python
@@ -70,6 +74,8 @@ Values:
 - `FILE`
 - `LOG`
 - `SCREENSHOT`
+
+<a id="artifacttypetype"></a>
 
 ## ArtifactTypeType
 
@@ -108,6 +114,8 @@ Values:
 - `WEBKIT_LOG`
 - `XCTEST_LOG`
 
+<a id="billingmethodtype"></a>
+
 ## BillingMethodType
 
 ```python
@@ -119,6 +127,8 @@ Values:
 - `METERED`
 - `UNMETERED`
 
+<a id="currencycodetype"></a>
+
 ## CurrencyCodeType
 
 ```python
@@ -128,6 +138,8 @@ from mypy_boto3_devicefarm.literals import CurrencyCodeType
 Values:
 
 - `USD`
+
+<a id="deviceattributetype"></a>
 
 ## DeviceAttributeType
 
@@ -151,6 +163,8 @@ Values:
 - `REMOTE_ACCESS_ENABLED`
 - `REMOTE_DEBUG_ENABLED`
 
+<a id="deviceavailabilitytype"></a>
+
 ## DeviceAvailabilityType
 
 ```python
@@ -163,6 +177,8 @@ Values:
 - `BUSY`
 - `HIGHLY_AVAILABLE`
 - `TEMPORARY_NOT_AVAILABLE`
+
+<a id="devicefilterattributetype"></a>
 
 ## DeviceFilterAttributeType
 
@@ -185,6 +201,8 @@ Values:
 - `REMOTE_ACCESS_ENABLED`
 - `REMOTE_DEBUG_ENABLED`
 
+<a id="deviceformfactortype"></a>
+
 ## DeviceFormFactorType
 
 ```python
@@ -195,6 +213,8 @@ Values:
 
 - `PHONE`
 - `TABLET`
+
+<a id="deviceplatformtype"></a>
 
 ## DevicePlatformType
 
@@ -207,6 +227,8 @@ Values:
 - `ANDROID`
 - `IOS`
 
+<a id="devicepooltypetype"></a>
+
 ## DevicePoolTypeType
 
 ```python
@@ -218,6 +240,8 @@ Values:
 - `CURATED`
 - `PRIVATE`
 
+<a id="executionresultcodetype"></a>
+
 ## ExecutionResultCodeType
 
 ```python
@@ -228,6 +252,8 @@ Values:
 
 - `PARSING_FAILED`
 - `VPC_ENDPOINT_SETUP_FAILED`
+
+<a id="executionresulttype"></a>
 
 ## ExecutionResultType
 
@@ -244,6 +270,8 @@ Values:
 - `SKIPPED`
 - `STOPPED`
 - `WARNED`
+
+<a id="executionstatustype"></a>
 
 ## ExecutionStatusType
 
@@ -263,6 +291,8 @@ Values:
 - `SCHEDULING`
 - `STOPPING`
 
+<a id="getofferingstatuspaginatorname"></a>
+
 ## GetOfferingStatusPaginatorName
 
 ```python
@@ -272,6 +302,8 @@ from mypy_boto3_devicefarm.literals import GetOfferingStatusPaginatorName
 Values:
 
 - `get_offering_status`
+
+<a id="instancestatustype"></a>
 
 ## InstanceStatusType
 
@@ -286,6 +318,8 @@ Values:
 - `NOT_AVAILABLE`
 - `PREPARING`
 
+<a id="interactionmodetype"></a>
+
 ## InteractionModeType
 
 ```python
@@ -298,6 +332,8 @@ Values:
 - `NO_VIDEO`
 - `VIDEO_ONLY`
 
+<a id="listartifactspaginatorname"></a>
+
 ## ListArtifactsPaginatorName
 
 ```python
@@ -307,6 +343,8 @@ from mypy_boto3_devicefarm.literals import ListArtifactsPaginatorName
 Values:
 
 - `list_artifacts`
+
+<a id="listdeviceinstancespaginatorname"></a>
 
 ## ListDeviceInstancesPaginatorName
 
@@ -318,6 +356,8 @@ Values:
 
 - `list_device_instances`
 
+<a id="listdevicepoolspaginatorname"></a>
+
 ## ListDevicePoolsPaginatorName
 
 ```python
@@ -327,6 +367,8 @@ from mypy_boto3_devicefarm.literals import ListDevicePoolsPaginatorName
 Values:
 
 - `list_device_pools`
+
+<a id="listdevicespaginatorname"></a>
 
 ## ListDevicesPaginatorName
 
@@ -338,6 +380,8 @@ Values:
 
 - `list_devices`
 
+<a id="listinstanceprofilespaginatorname"></a>
+
 ## ListInstanceProfilesPaginatorName
 
 ```python
@@ -347,6 +391,8 @@ from mypy_boto3_devicefarm.literals import ListInstanceProfilesPaginatorName
 Values:
 
 - `list_instance_profiles`
+
+<a id="listjobspaginatorname"></a>
 
 ## ListJobsPaginatorName
 
@@ -358,6 +404,8 @@ Values:
 
 - `list_jobs`
 
+<a id="listnetworkprofilespaginatorname"></a>
+
 ## ListNetworkProfilesPaginatorName
 
 ```python
@@ -367,6 +415,8 @@ from mypy_boto3_devicefarm.literals import ListNetworkProfilesPaginatorName
 Values:
 
 - `list_network_profiles`
+
+<a id="listofferingpromotionspaginatorname"></a>
 
 ## ListOfferingPromotionsPaginatorName
 
@@ -378,6 +428,8 @@ Values:
 
 - `list_offering_promotions`
 
+<a id="listofferingtransactionspaginatorname"></a>
+
 ## ListOfferingTransactionsPaginatorName
 
 ```python
@@ -387,6 +439,8 @@ from mypy_boto3_devicefarm.literals import ListOfferingTransactionsPaginatorName
 Values:
 
 - `list_offering_transactions`
+
+<a id="listofferingspaginatorname"></a>
 
 ## ListOfferingsPaginatorName
 
@@ -398,6 +452,8 @@ Values:
 
 - `list_offerings`
 
+<a id="listprojectspaginatorname"></a>
+
 ## ListProjectsPaginatorName
 
 ```python
@@ -407,6 +463,8 @@ from mypy_boto3_devicefarm.literals import ListProjectsPaginatorName
 Values:
 
 - `list_projects`
+
+<a id="listremoteaccesssessionspaginatorname"></a>
 
 ## ListRemoteAccessSessionsPaginatorName
 
@@ -418,6 +476,8 @@ Values:
 
 - `list_remote_access_sessions`
 
+<a id="listrunspaginatorname"></a>
+
 ## ListRunsPaginatorName
 
 ```python
@@ -427,6 +487,8 @@ from mypy_boto3_devicefarm.literals import ListRunsPaginatorName
 Values:
 
 - `list_runs`
+
+<a id="listsamplespaginatorname"></a>
 
 ## ListSamplesPaginatorName
 
@@ -438,6 +500,8 @@ Values:
 
 - `list_samples`
 
+<a id="listsuitespaginatorname"></a>
+
 ## ListSuitesPaginatorName
 
 ```python
@@ -447,6 +511,8 @@ from mypy_boto3_devicefarm.literals import ListSuitesPaginatorName
 Values:
 
 - `list_suites`
+
+<a id="listtestspaginatorname"></a>
 
 ## ListTestsPaginatorName
 
@@ -458,6 +524,8 @@ Values:
 
 - `list_tests`
 
+<a id="listuniqueproblemspaginatorname"></a>
+
 ## ListUniqueProblemsPaginatorName
 
 ```python
@@ -467,6 +535,8 @@ from mypy_boto3_devicefarm.literals import ListUniqueProblemsPaginatorName
 Values:
 
 - `list_unique_problems`
+
+<a id="listuploadspaginatorname"></a>
 
 ## ListUploadsPaginatorName
 
@@ -478,6 +548,8 @@ Values:
 
 - `list_uploads`
 
+<a id="listvpceconfigurationspaginatorname"></a>
+
 ## ListVPCEConfigurationsPaginatorName
 
 ```python
@@ -487,6 +559,8 @@ from mypy_boto3_devicefarm.literals import ListVPCEConfigurationsPaginatorName
 Values:
 
 - `list_vpce_configurations`
+
+<a id="networkprofiletypetype"></a>
 
 ## NetworkProfileTypeType
 
@@ -498,6 +572,8 @@ Values:
 
 - `CURATED`
 - `PRIVATE`
+
+<a id="offeringtransactiontypetype"></a>
 
 ## OfferingTransactionTypeType
 
@@ -511,6 +587,8 @@ Values:
 - `RENEW`
 - `SYSTEM`
 
+<a id="offeringtypetype"></a>
+
 ## OfferingTypeType
 
 ```python
@@ -521,6 +599,8 @@ Values:
 
 - `RECURRING`
 
+<a id="recurringchargefrequencytype"></a>
+
 ## RecurringChargeFrequencyType
 
 ```python
@@ -530,6 +610,8 @@ from mypy_boto3_devicefarm.literals import RecurringChargeFrequencyType
 Values:
 
 - `MONTHLY`
+
+<a id="ruleoperatortype"></a>
 
 ## RuleOperatorType
 
@@ -547,6 +629,8 @@ Values:
 - `LESS_THAN`
 - `LESS_THAN_OR_EQUALS`
 - `NOT_IN`
+
+<a id="sampletypetype"></a>
 
 ## SampleTypeType
 
@@ -574,6 +658,8 @@ Values:
 - `TX`
 - `TX_RATE`
 
+<a id="testgridsessionartifactcategorytype"></a>
+
 ## TestGridSessionArtifactCategoryType
 
 ```python
@@ -584,6 +670,8 @@ Values:
 
 - `LOG`
 - `VIDEO`
+
+<a id="testgridsessionartifacttypetype"></a>
 
 ## TestGridSessionArtifactTypeType
 
@@ -597,6 +685,8 @@ Values:
 - `UNKNOWN`
 - `VIDEO`
 
+<a id="testgridsessionstatustype"></a>
+
 ## TestGridSessionStatusType
 
 ```python
@@ -608,6 +698,8 @@ Values:
 - `ACTIVE`
 - `CLOSED`
 - `ERRORED`
+
+<a id="testtypetype"></a>
 
 ## TestTypeType
 
@@ -639,6 +731,8 @@ Values:
 - `XCTEST`
 - `XCTEST_UI`
 
+<a id="uploadcategorytype"></a>
+
 ## UploadCategoryType
 
 ```python
@@ -649,6 +743,8 @@ Values:
 
 - `CURATED`
 - `PRIVATE`
+
+<a id="uploadstatustype"></a>
 
 ## UploadStatusType
 
@@ -662,6 +758,8 @@ Values:
 - `INITIALIZED`
 - `PROCESSING`
 - `SUCCEEDED`
+
+<a id="uploadtypetype"></a>
 
 ## UploadTypeType
 
@@ -703,6 +801,8 @@ Values:
 - `XCTEST_TEST_PACKAGE`
 - `XCTEST_UI_TEST_PACKAGE`
 - `XCTEST_UI_TEST_SPEC`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1011,6 +1111,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

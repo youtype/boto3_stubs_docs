@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-kinesisvideoarchivedmedia-module"></a>
+
 # Literals for boto3 KinesisVideoArchivedMedia module
 
 > [Index](..) > [KinesisVideoArchivedMedia](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
 type annotations stubs module
-[mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
+[mypy-boto3-kinesis-video-archived-media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
 - [Literals for boto3 KinesisVideoArchivedMedia module](#literals-for-boto3-kinesisvideoarchivedmedia-module)
   - [ClipFragmentSelectorTypeType](#clipfragmentselectortypetype)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="clipfragmentselectortypetype"></a>
+
 ## ClipFragmentSelectorTypeType
 
 ```python
@@ -33,6 +37,8 @@ Values:
 
 - `PRODUCER_TIMESTAMP`
 - `SERVER_TIMESTAMP`
+
+<a id="containerformattype"></a>
 
 ## ContainerFormatType
 
@@ -45,6 +51,8 @@ Values:
 - `FRAGMENTED_MP4`
 - `MPEG_TS`
 
+<a id="dashdisplayfragmentnumbertype"></a>
+
 ## DASHDisplayFragmentNumberType
 
 ```python
@@ -55,6 +63,8 @@ Values:
 
 - `ALWAYS`
 - `NEVER`
+
+<a id="dashdisplayfragmenttimestamptype"></a>
 
 ## DASHDisplayFragmentTimestampType
 
@@ -67,6 +77,8 @@ Values:
 - `ALWAYS`
 - `NEVER`
 
+<a id="dashfragmentselectortypetype"></a>
+
 ## DASHFragmentSelectorTypeType
 
 ```python
@@ -77,6 +89,8 @@ Values:
 
 - `PRODUCER_TIMESTAMP`
 - `SERVER_TIMESTAMP`
+
+<a id="dashplaybackmodetype"></a>
 
 ## DASHPlaybackModeType
 
@@ -90,6 +104,8 @@ Values:
 - `LIVE_REPLAY`
 - `ON_DEMAND`
 
+<a id="fragmentselectortypetype"></a>
+
 ## FragmentSelectorTypeType
 
 ```python
@@ -100,6 +116,8 @@ Values:
 
 - `PRODUCER_TIMESTAMP`
 - `SERVER_TIMESTAMP`
+
+<a id="hlsdiscontinuitymodetype"></a>
 
 ## HLSDiscontinuityModeType
 
@@ -113,6 +131,8 @@ Values:
 - `NEVER`
 - `ON_DISCONTINUITY`
 
+<a id="hlsdisplayfragmenttimestamptype"></a>
+
 ## HLSDisplayFragmentTimestampType
 
 ```python
@@ -124,6 +144,8 @@ Values:
 - `ALWAYS`
 - `NEVER`
 
+<a id="hlsfragmentselectortypetype"></a>
+
 ## HLSFragmentSelectorTypeType
 
 ```python
@@ -134,6 +156,8 @@ Values:
 
 - `PRODUCER_TIMESTAMP`
 - `SERVER_TIMESTAMP`
+
+<a id="hlsplaybackmodetype"></a>
 
 ## HLSPlaybackModeType
 
@@ -147,6 +171,8 @@ Values:
 - `LIVE_REPLAY`
 - `ON_DEMAND`
 
+<a id="listfragmentspaginatorname"></a>
+
 ## ListFragmentsPaginatorName
 
 ```python
@@ -156,6 +182,8 @@ from mypy_boto3_kinesis_video_archived_media.literals import ListFragmentsPagina
 Values:
 
 - `list_fragments`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -464,6 +492,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

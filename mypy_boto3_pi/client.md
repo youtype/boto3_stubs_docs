@@ -1,3 +1,5 @@
+<a id="piclient-for-boto3-pi-module"></a>
+
 # PIClient for boto3 PI module
 
 > [Index](..) > [PI](.) > PIClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
 type annotations stubs module
-[mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
+[mypy-boto3-pi](https://pypi.org/project/mypy-boto3-pi/).
 
 - [PIClient for boto3 PI module](#piclient-for-boto3-pi-module)
   - [PIClient](#piclient)
@@ -21,6 +23,8 @@ type annotations stubs module
     - [list_available_resource_dimensions](#list_available_resource_dimensions)
     - [list_available_resource_metrics](#list_available_resource_metrics)
 
+<a id="piclient"></a>
+
 ## PIClient
 
 Type annotations for `boto3.client("pi")`
@@ -28,14 +32,17 @@ Type annotations for `boto3.client("pi")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_pi.client import PIClient
 
 def get_pi_client() -> PIClient:
-    return boto3.client("pi")
+    return Session().client("pi")
 ```
 
 Boto3 documentation:
 [PI.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -56,7 +63,11 @@ Exceptions:
 - `Exceptions.InvalidArgumentException`
 - `Exceptions.NotAuthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -68,6 +79,8 @@ Boto3 documentation:
 [PI.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -83,6 +96,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="describe_dimension_keys"></a>
 
 ### describe_dimension_keys
 
@@ -115,6 +130,8 @@ Keyword-only arguments:
 Returns
 [DescribeDimensionKeysResponseTypeDef](./type_defs.md#describedimensionkeysresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -132,6 +149,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_dimension_key_details"></a>
 
 ### get_dimension_key_details
 
@@ -157,6 +176,8 @@ Keyword-only arguments:
 Returns
 [GetDimensionKeyDetailsResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponsetypedef).
 
+<a id="get_resource_metadata"></a>
+
 ### get_resource_metadata
 
 Retrieve the metadata for different features.
@@ -176,6 +197,8 @@ Keyword-only arguments:
 
 Returns
 [GetResourceMetadataResponseTypeDef](./type_defs.md#getresourcemetadataresponsetypedef).
+
+<a id="get_resource_metrics"></a>
 
 ### get_resource_metrics
 
@@ -206,6 +229,8 @@ Keyword-only arguments:
 Returns
 [GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef).
 
+<a id="list_available_resource_dimensions"></a>
+
 ### list_available_resource_dimensions
 
 Retrieve the dimensions that can be queried for each specified metric type on a
@@ -230,6 +255,8 @@ Keyword-only arguments:
 
 Returns
 [ListAvailableResourceDimensionsResponseTypeDef](./type_defs.md#listavailableresourcedimensionsresponsetypedef).
+
+<a id="list_available_resource_metrics"></a>
 
 ### list_available_resource_metrics
 

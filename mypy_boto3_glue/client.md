@@ -1,3 +1,5 @@
+<a id="glueclient-for-boto3-glue-module"></a>
+
 # GlueClient for boto3 Glue module
 
 > [Index](..) > [Glue](.) > GlueClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
 type annotations stubs module
-[mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
+[mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
 
 - [GlueClient for boto3 Glue module](#glueclient-for-boto3-glue-module)
   - [GlueClient](#glueclient)
@@ -185,6 +187,8 @@ type annotations stubs module
     - [update_workflow](#update_workflow)
     - [get_paginator](#get_paginator)
 
+<a id="glueclient"></a>
+
 ## GlueClient
 
 Type annotations for `boto3.client("glue")`
@@ -192,14 +196,17 @@ Type annotations for `boto3.client("glue")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_glue.client import GlueClient
 
 def get_glue_client() -> GlueClient:
-    return boto3.client("glue")
+    return Session().client("glue")
 ```
 
 Boto3 documentation:
 [Glue.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -245,7 +252,11 @@ Exceptions:
 - `Exceptions.ValidationException`
 - `Exceptions.VersionMismatchException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -257,6 +268,8 @@ Boto3 documentation:
 [Glue.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_create_partition"></a>
 
 ### batch_create_partition
 
@@ -282,6 +295,8 @@ Keyword-only arguments:
 Returns
 [BatchCreatePartitionResponseTypeDef](./type_defs.md#batchcreatepartitionresponsetypedef).
 
+<a id="batch_delete_connection"></a>
+
 ### batch_delete_connection
 
 Deletes a list of connection definitions from the Data Catalog.
@@ -301,6 +316,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDeleteConnectionResponseTypeDef](./type_defs.md#batchdeleteconnectionresponsetypedef).
+
+<a id="batch_delete_partition"></a>
 
 ### batch_delete_partition
 
@@ -326,6 +343,8 @@ Keyword-only arguments:
 Returns
 [BatchDeletePartitionResponseTypeDef](./type_defs.md#batchdeletepartitionresponsetypedef).
 
+<a id="batch_delete_table"></a>
+
 ### batch_delete_table
 
 Deletes multiple tables at once.
@@ -347,6 +366,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDeleteTableResponseTypeDef](./type_defs.md#batchdeletetableresponsetypedef).
+
+<a id="batch_delete_table_version"></a>
 
 ### batch_delete_table_version
 
@@ -370,6 +391,8 @@ Keyword-only arguments:
 Returns
 [BatchDeleteTableVersionResponseTypeDef](./type_defs.md#batchdeletetableversionresponsetypedef).
 
+<a id="batch_get_blueprints"></a>
+
 ### batch_get_blueprints
 
 Retrieves information about a list of blueprints.
@@ -391,6 +414,8 @@ Keyword-only arguments:
 Returns
 [BatchGetBlueprintsResponseTypeDef](./type_defs.md#batchgetblueprintsresponsetypedef).
 
+<a id="batch_get_crawlers"></a>
+
 ### batch_get_crawlers
 
 Returns a list of resource metadata for a given list of crawler names.
@@ -409,6 +434,8 @@ Keyword-only arguments:
 
 Returns
 [BatchGetCrawlersResponseTypeDef](./type_defs.md#batchgetcrawlersresponsetypedef).
+
+<a id="batch_get_dev_endpoints"></a>
 
 ### batch_get_dev_endpoints
 
@@ -430,6 +457,8 @@ Keyword-only arguments:
 Returns
 [BatchGetDevEndpointsResponseTypeDef](./type_defs.md#batchgetdevendpointsresponsetypedef).
 
+<a id="batch_get_jobs"></a>
+
 ### batch_get_jobs
 
 Returns a list of resource metadata for a given list of job names.
@@ -448,6 +477,8 @@ Keyword-only arguments:
 
 Returns
 [BatchGetJobsResponseTypeDef](./type_defs.md#batchgetjobsresponsetypedef).
+
+<a id="batch_get_partition"></a>
 
 ### batch_get_partition
 
@@ -473,6 +504,8 @@ Keyword-only arguments:
 Returns
 [BatchGetPartitionResponseTypeDef](./type_defs.md#batchgetpartitionresponsetypedef).
 
+<a id="batch_get_triggers"></a>
+
 ### batch_get_triggers
 
 Returns a list of resource metadata for a given list of trigger names.
@@ -491,6 +524,8 @@ Keyword-only arguments:
 
 Returns
 [BatchGetTriggersResponseTypeDef](./type_defs.md#batchgettriggersresponsetypedef).
+
+<a id="batch_get_workflows"></a>
 
 ### batch_get_workflows
 
@@ -512,6 +547,8 @@ Keyword-only arguments:
 Returns
 [BatchGetWorkflowsResponseTypeDef](./type_defs.md#batchgetworkflowsresponsetypedef).
 
+<a id="batch_stop_job_run"></a>
+
 ### batch_stop_job_run
 
 Stops one or more job runs for a specified job definition.
@@ -531,6 +568,8 @@ Keyword-only arguments:
 
 Returns
 [BatchStopJobRunResponseTypeDef](./type_defs.md#batchstopjobrunresponsetypedef).
+
+<a id="batch_update_partition"></a>
 
 ### batch_update_partition
 
@@ -556,6 +595,8 @@ Keyword-only arguments:
 Returns
 [BatchUpdatePartitionResponseTypeDef](./type_defs.md#batchupdatepartitionresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -570,6 +611,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_ml_task_run"></a>
 
 ### cancel_ml_task_run
 
@@ -590,6 +633,8 @@ Keyword-only arguments:
 
 Returns
 [CancelMLTaskRunResponseTypeDef](./type_defs.md#cancelmltaskrunresponsetypedef).
+
+<a id="check_schema_version_validity"></a>
 
 ### check_schema_version_validity
 
@@ -612,6 +657,8 @@ Keyword-only arguments:
 Returns
 [CheckSchemaVersionValidityResponseTypeDef](./type_defs.md#checkschemaversionvalidityresponsetypedef).
 
+<a id="create_blueprint"></a>
+
 ### create_blueprint
 
 Registers a blueprint with Glue.
@@ -633,6 +680,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBlueprintResponseTypeDef](./type_defs.md#createblueprintresponsetypedef).
+
+<a id="create_classifier"></a>
 
 ### create_classifier
 
@@ -659,6 +708,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_connection"></a>
+
 ### create_connection
 
 Creates a connection definition in the Data Catalog.
@@ -679,6 +730,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_crawler"></a>
 
 ### create_crawler
 
@@ -717,6 +770,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_database"></a>
+
 ### create_database
 
 Creates a new database in a Data Catalog.
@@ -736,6 +791,8 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_dev_endpoint"></a>
 
 ### create_dev_endpoint
 
@@ -769,6 +826,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDevEndpointResponseTypeDef](./type_defs.md#createdevendpointresponsetypedef).
+
+<a id="create_job"></a>
 
 ### create_job
 
@@ -809,6 +868,8 @@ Keyword-only arguments:
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
+<a id="create_ml_transform"></a>
+
 ### create_ml_transform
 
 Creates an Glue machine learning transform.
@@ -845,6 +906,8 @@ Keyword-only arguments:
 Returns
 [CreateMLTransformResponseTypeDef](./type_defs.md#createmltransformresponsetypedef).
 
+<a id="create_partition"></a>
+
 ### create_partition
 
 Creates a new partition.
@@ -866,6 +929,8 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_partition_index"></a>
 
 ### create_partition_index
 
@@ -889,6 +954,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_registry"></a>
+
 ### create_registry
 
 Creates a new registry which may be used to hold a collection of schemas.
@@ -909,6 +976,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
+
+<a id="create_schema"></a>
 
 ### create_schema
 
@@ -935,6 +1004,8 @@ Keyword-only arguments:
 Returns
 [CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
 
+<a id="create_script"></a>
+
 ### create_script
 
 Transforms a directed acyclic graph (DAG) into code.
@@ -957,6 +1028,8 @@ Keyword-only arguments:
 
 Returns
 [CreateScriptResponseTypeDef](./type_defs.md#createscriptresponsetypedef).
+
+<a id="create_security_configuration"></a>
 
 ### create_security_configuration
 
@@ -981,6 +1054,8 @@ Keyword-only arguments:
 Returns
 [CreateSecurityConfigurationResponseTypeDef](./type_defs.md#createsecurityconfigurationresponsetypedef).
 
+<a id="create_table"></a>
+
 ### create_table
 
 Creates a new table definition in the Data Catalog.
@@ -1004,6 +1079,8 @@ Keyword-only arguments:
 - `TransactionId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_trigger"></a>
 
 ### create_trigger
 
@@ -1035,6 +1112,8 @@ Keyword-only arguments:
 Returns
 [CreateTriggerResponseTypeDef](./type_defs.md#createtriggerresponsetypedef).
 
+<a id="create_user_defined_function"></a>
+
 ### create_user_defined_function
 
 Creates a new function definition in the Data Catalog.
@@ -1057,6 +1136,8 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_workflow"></a>
 
 ### create_workflow
 
@@ -1081,6 +1162,8 @@ Keyword-only arguments:
 Returns
 [CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef).
 
+<a id="delete_blueprint"></a>
+
 ### delete_blueprint
 
 Deletes an existing blueprint.
@@ -1100,6 +1183,8 @@ Keyword-only arguments:
 Returns
 [DeleteBlueprintResponseTypeDef](./type_defs.md#deleteblueprintresponsetypedef).
 
+<a id="delete_classifier"></a>
+
 ### delete_classifier
 
 Removes a classifier from the Data Catalog.
@@ -1117,6 +1202,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_column_statistics_for_partition"></a>
 
 ### delete_column_statistics_for_partition
 
@@ -1141,6 +1228,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_column_statistics_for_table"></a>
+
 ### delete_column_statistics_for_table
 
 Retrieves table statistics of columns.
@@ -1163,6 +1252,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_connection"></a>
+
 ### delete_connection
 
 Deletes a connection from the Data Catalog.
@@ -1181,6 +1272,8 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_crawler"></a>
 
 ### delete_crawler
 
@@ -1201,6 +1294,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_database"></a>
+
 ### delete_database
 
 Removes a specified database from a Data Catalog.
@@ -1220,6 +1315,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_dev_endpoint"></a>
+
 ### delete_dev_endpoint
 
 Deletes a specified development endpoint.
@@ -1237,6 +1334,8 @@ Keyword-only arguments:
 - `EndpointName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_job"></a>
 
 ### delete_job
 
@@ -1256,6 +1355,8 @@ Keyword-only arguments:
 
 Returns [DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef).
 
+<a id="delete_ml_transform"></a>
+
 ### delete_ml_transform
 
 Deletes an Glue machine learning transform.
@@ -1274,6 +1375,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteMLTransformResponseTypeDef](./type_defs.md#deletemltransformresponsetypedef).
+
+<a id="delete_partition"></a>
 
 ### delete_partition
 
@@ -1296,6 +1399,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_partition_index"></a>
+
 ### delete_partition_index
 
 Deletes a specified partition index from an existing table.
@@ -1317,6 +1422,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_registry"></a>
+
 ### delete_registry
 
 Delete the entire registry including schema and all of its versions.
@@ -1337,6 +1444,8 @@ Keyword-only arguments:
 Returns
 [DeleteRegistryResponseTypeDef](./type_defs.md#deleteregistryresponsetypedef).
 
+<a id="delete_resource_policy"></a>
+
 ### delete_resource_policy
 
 Deletes a specified policy.
@@ -1355,6 +1464,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_schema"></a>
 
 ### delete_schema
 
@@ -1376,6 +1487,8 @@ Keyword-only arguments:
 Returns
 [DeleteSchemaResponseTypeDef](./type_defs.md#deleteschemaresponsetypedef).
 
+<a id="delete_schema_versions"></a>
+
 ### delete_schema_versions
 
 Remove versions from the specified schema.
@@ -1396,6 +1509,8 @@ Keyword-only arguments:
 Returns
 [DeleteSchemaVersionsResponseTypeDef](./type_defs.md#deleteschemaversionsresponsetypedef).
 
+<a id="delete_security_configuration"></a>
+
 ### delete_security_configuration
 
 Deletes a specified security configuration.
@@ -1414,6 +1529,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_table"></a>
 
 ### delete_table
 
@@ -1436,6 +1553,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_table_version"></a>
+
 ### delete_table_version
 
 Deletes a specified version of a table.
@@ -1457,6 +1576,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_trigger"></a>
+
 ### delete_trigger
 
 Deletes a specified trigger.
@@ -1475,6 +1596,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteTriggerResponseTypeDef](./type_defs.md#deletetriggerresponsetypedef).
+
+<a id="delete_user_defined_function"></a>
 
 ### delete_user_defined_function
 
@@ -1497,6 +1620,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_workflow"></a>
+
 ### delete_workflow
 
 Deletes a workflow.
@@ -1516,6 +1641,8 @@ Keyword-only arguments:
 Returns
 [DeleteWorkflowResponseTypeDef](./type_defs.md#deleteworkflowresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1533,6 +1660,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_blueprint"></a>
 
 ### get_blueprint
 
@@ -1555,6 +1684,8 @@ Keyword-only arguments:
 Returns
 [GetBlueprintResponseTypeDef](./type_defs.md#getblueprintresponsetypedef).
 
+<a id="get_blueprint_run"></a>
+
 ### get_blueprint_run
 
 Retrieves the details of a blueprint run.
@@ -1574,6 +1705,8 @@ Keyword-only arguments:
 
 Returns
 [GetBlueprintRunResponseTypeDef](./type_defs.md#getblueprintrunresponsetypedef).
+
+<a id="get_blueprint_runs"></a>
 
 ### get_blueprint_runs
 
@@ -1596,6 +1729,8 @@ Keyword-only arguments:
 Returns
 [GetBlueprintRunsResponseTypeDef](./type_defs.md#getblueprintrunsresponsetypedef).
 
+<a id="get_catalog_import_status"></a>
+
 ### get_catalog_import_status
 
 Retrieves the status of a migration operation.
@@ -1614,6 +1749,8 @@ Keyword-only arguments:
 
 Returns
 [GetCatalogImportStatusResponseTypeDef](./type_defs.md#getcatalogimportstatusresponsetypedef).
+
+<a id="get_classifier"></a>
 
 ### get_classifier
 
@@ -1634,6 +1771,8 @@ Keyword-only arguments:
 Returns
 [GetClassifierResponseTypeDef](./type_defs.md#getclassifierresponsetypedef).
 
+<a id="get_classifiers"></a>
+
 ### get_classifiers
 
 Lists all classifier objects in the Data Catalog.
@@ -1653,6 +1792,8 @@ Keyword-only arguments:
 
 Returns
 [GetClassifiersResponseTypeDef](./type_defs.md#getclassifiersresponsetypedef).
+
+<a id="get_column_statistics_for_partition"></a>
 
 ### get_column_statistics_for_partition
 
@@ -1678,6 +1819,8 @@ Keyword-only arguments:
 Returns
 [GetColumnStatisticsForPartitionResponseTypeDef](./type_defs.md#getcolumnstatisticsforpartitionresponsetypedef).
 
+<a id="get_column_statistics_for_table"></a>
+
 ### get_column_statistics_for_table
 
 Retrieves table statistics of columns.
@@ -1701,6 +1844,8 @@ Keyword-only arguments:
 Returns
 [GetColumnStatisticsForTableResponseTypeDef](./type_defs.md#getcolumnstatisticsfortableresponsetypedef).
 
+<a id="get_connection"></a>
+
 ### get_connection
 
 Retrieves a connection definition from the Data Catalog.
@@ -1721,6 +1866,8 @@ Keyword-only arguments:
 
 Returns
 [GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef).
+
+<a id="get_connections"></a>
 
 ### get_connections
 
@@ -1746,6 +1893,8 @@ Keyword-only arguments:
 Returns
 [GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef).
 
+<a id="get_crawler"></a>
+
 ### get_crawler
 
 Retrieves metadata for a specified crawler.
@@ -1763,6 +1912,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns [GetCrawlerResponseTypeDef](./type_defs.md#getcrawlerresponsetypedef).
+
+<a id="get_crawler_metrics"></a>
 
 ### get_crawler_metrics
 
@@ -1785,6 +1936,8 @@ Keyword-only arguments:
 Returns
 [GetCrawlerMetricsResponseTypeDef](./type_defs.md#getcrawlermetricsresponsetypedef).
 
+<a id="get_crawlers"></a>
+
 ### get_crawlers
 
 Retrieves metadata for all crawlers defined in the customer account.
@@ -1804,6 +1957,8 @@ Keyword-only arguments:
 
 Returns
 [GetCrawlersResponseTypeDef](./type_defs.md#getcrawlersresponsetypedef).
+
+<a id="get_data_catalog_encryption_settings"></a>
 
 ### get_data_catalog_encryption_settings
 
@@ -1825,6 +1980,8 @@ Keyword-only arguments:
 Returns
 [GetDataCatalogEncryptionSettingsResponseTypeDef](./type_defs.md#getdatacatalogencryptionsettingsresponsetypedef).
 
+<a id="get_database"></a>
+
 ### get_database
 
 Retrieves the definition of a specified database.
@@ -1844,6 +2001,8 @@ Keyword-only arguments:
 
 Returns
 [GetDatabaseResponseTypeDef](./type_defs.md#getdatabaseresponsetypedef).
+
+<a id="get_databases"></a>
 
 ### get_databases
 
@@ -1868,6 +2027,8 @@ Keyword-only arguments:
 Returns
 [GetDatabasesResponseTypeDef](./type_defs.md#getdatabasesresponsetypedef).
 
+<a id="get_dataflow_graph"></a>
+
 ### get_dataflow_graph
 
 Transforms a Python script into a directed acyclic graph (DAG).
@@ -1887,6 +2048,8 @@ Keyword-only arguments:
 Returns
 [GetDataflowGraphResponseTypeDef](./type_defs.md#getdataflowgraphresponsetypedef).
 
+<a id="get_dev_endpoint"></a>
+
 ### get_dev_endpoint
 
 Retrieves information about a specified development endpoint.
@@ -1905,6 +2068,8 @@ Keyword-only arguments:
 
 Returns
 [GetDevEndpointResponseTypeDef](./type_defs.md#getdevendpointresponsetypedef).
+
+<a id="get_dev_endpoints"></a>
 
 ### get_dev_endpoints
 
@@ -1926,6 +2091,8 @@ Keyword-only arguments:
 Returns
 [GetDevEndpointsResponseTypeDef](./type_defs.md#getdevendpointsresponsetypedef).
 
+<a id="get_job"></a>
+
 ### get_job
 
 Retrieves an existing job definition.
@@ -1943,6 +2110,8 @@ Keyword-only arguments:
 - `JobName`: `str` *(required)*
 
 Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
+
+<a id="get_job_bookmark"></a>
 
 ### get_job_bookmark
 
@@ -1964,6 +2133,8 @@ Keyword-only arguments:
 Returns
 [GetJobBookmarkResponseTypeDef](./type_defs.md#getjobbookmarkresponsetypedef).
 
+<a id="get_job_run"></a>
+
 ### get_job_run
 
 Retrieves the metadata for a given job run.
@@ -1983,6 +2154,8 @@ Keyword-only arguments:
 - `PredecessorsIncluded`: `bool`
 
 Returns [GetJobRunResponseTypeDef](./type_defs.md#getjobrunresponsetypedef).
+
+<a id="get_job_runs"></a>
 
 ### get_job_runs
 
@@ -2004,6 +2177,8 @@ Keyword-only arguments:
 
 Returns [GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef).
 
+<a id="get_jobs"></a>
+
 ### get_jobs
 
 Retrieves all current job definitions.
@@ -2022,6 +2197,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef).
+
+<a id="get_mapping"></a>
 
 ### get_mapping
 
@@ -2045,6 +2222,8 @@ Keyword-only arguments:
 
 Returns [GetMappingResponseTypeDef](./type_defs.md#getmappingresponsetypedef).
 
+<a id="get_ml_task_run"></a>
+
 ### get_ml_task_run
 
 Gets details for a specific task run on a machine learning transform.
@@ -2064,6 +2243,8 @@ Keyword-only arguments:
 
 Returns
 [GetMLTaskRunResponseTypeDef](./type_defs.md#getmltaskrunresponsetypedef).
+
+<a id="get_ml_task_runs"></a>
 
 ### get_ml_task_runs
 
@@ -2090,6 +2271,8 @@ Keyword-only arguments:
 Returns
 [GetMLTaskRunsResponseTypeDef](./type_defs.md#getmltaskrunsresponsetypedef).
 
+<a id="get_ml_transform"></a>
+
 ### get_ml_transform
 
 Gets an Glue machine learning transform artifact and all its corresponding
@@ -2109,6 +2292,8 @@ Keyword-only arguments:
 
 Returns
 [GetMLTransformResponseTypeDef](./type_defs.md#getmltransformresponsetypedef).
+
+<a id="get_ml_transforms"></a>
 
 ### get_ml_transforms
 
@@ -2134,6 +2319,8 @@ Keyword-only arguments:
 Returns
 [GetMLTransformsResponseTypeDef](./type_defs.md#getmltransformsresponsetypedef).
 
+<a id="get_partition"></a>
+
 ### get_partition
 
 Retrieves information about a specified partition.
@@ -2156,6 +2343,8 @@ Keyword-only arguments:
 Returns
 [GetPartitionResponseTypeDef](./type_defs.md#getpartitionresponsetypedef).
 
+<a id="get_partition_indexes"></a>
+
 ### get_partition_indexes
 
 Retrieves the partition indexes associated with a table.
@@ -2177,6 +2366,8 @@ Keyword-only arguments:
 
 Returns
 [GetPartitionIndexesResponseTypeDef](./type_defs.md#getpartitionindexesresponsetypedef).
+
+<a id="get_partitions"></a>
 
 ### get_partitions
 
@@ -2206,6 +2397,8 @@ Keyword-only arguments:
 Returns
 [GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef).
 
+<a id="get_plan"></a>
+
 ### get_plan
 
 Gets code to perform a specified mapping.
@@ -2233,6 +2426,8 @@ Keyword-only arguments:
 
 Returns [GetPlanResponseTypeDef](./type_defs.md#getplanresponsetypedef).
 
+<a id="get_registry"></a>
+
 ### get_registry
 
 Describes the specified registry in detail.
@@ -2252,6 +2447,8 @@ Keyword-only arguments:
 
 Returns
 [GetRegistryResponseTypeDef](./type_defs.md#getregistryresponsetypedef).
+
+<a id="get_resource_policies"></a>
 
 ### get_resource_policies
 
@@ -2274,6 +2471,8 @@ Keyword-only arguments:
 Returns
 [GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef).
 
+<a id="get_resource_policy"></a>
+
 ### get_resource_policy
 
 Retrieves a specified resource policy.
@@ -2293,6 +2492,8 @@ Keyword-only arguments:
 Returns
 [GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
+<a id="get_schema"></a>
+
 ### get_schema
 
 Describes the specified schema in detail.
@@ -2310,6 +2511,8 @@ Keyword-only arguments:
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 
 Returns [GetSchemaResponseTypeDef](./type_defs.md#getschemaresponsetypedef).
+
+<a id="get_schema_by_definition"></a>
 
 ### get_schema_by_definition
 
@@ -2330,6 +2533,8 @@ Keyword-only arguments:
 
 Returns
 [GetSchemaByDefinitionResponseTypeDef](./type_defs.md#getschemabydefinitionresponsetypedef).
+
+<a id="get_schema_version"></a>
 
 ### get_schema_version
 
@@ -2353,6 +2558,8 @@ Keyword-only arguments:
 
 Returns
 [GetSchemaVersionResponseTypeDef](./type_defs.md#getschemaversionresponsetypedef).
+
+<a id="get_schema_versions_diff"></a>
 
 ### get_schema_versions_diff
 
@@ -2382,6 +2589,8 @@ Keyword-only arguments:
 Returns
 [GetSchemaVersionsDiffResponseTypeDef](./type_defs.md#getschemaversionsdiffresponsetypedef).
 
+<a id="get_security_configuration"></a>
+
 ### get_security_configuration
 
 Retrieves a specified security configuration.
@@ -2400,6 +2609,8 @@ Keyword-only arguments:
 
 Returns
 [GetSecurityConfigurationResponseTypeDef](./type_defs.md#getsecurityconfigurationresponsetypedef).
+
+<a id="get_security_configurations"></a>
 
 ### get_security_configurations
 
@@ -2420,6 +2631,8 @@ Keyword-only arguments:
 
 Returns
 [GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef).
+
+<a id="get_table"></a>
 
 ### get_table
 
@@ -2443,6 +2656,8 @@ Keyword-only arguments:
 
 Returns [GetTableResponseTypeDef](./type_defs.md#gettableresponsetypedef).
 
+<a id="get_table_version"></a>
+
 ### get_table_version
 
 Retrieves a specified version of a table.
@@ -2464,6 +2679,8 @@ Keyword-only arguments:
 
 Returns
 [GetTableVersionResponseTypeDef](./type_defs.md#gettableversionresponsetypedef).
+
+<a id="get_table_versions"></a>
 
 ### get_table_versions
 
@@ -2489,6 +2706,8 @@ Keyword-only arguments:
 Returns
 [GetTableVersionsResponseTypeDef](./type_defs.md#gettableversionsresponsetypedef).
 
+<a id="get_tables"></a>
+
 ### get_tables
 
 Retrieves the definitions of some or all of the tables in a given `Database` .
@@ -2513,6 +2732,8 @@ Keyword-only arguments:
 
 Returns [GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef).
 
+<a id="get_tags"></a>
+
 ### get_tags
 
 Retrieves a list of tags associated with a resource.
@@ -2531,6 +2752,8 @@ Keyword-only arguments:
 
 Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
 
+<a id="get_trigger"></a>
+
 ### get_trigger
 
 Retrieves the definition of a trigger.
@@ -2548,6 +2771,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns [GetTriggerResponseTypeDef](./type_defs.md#gettriggerresponsetypedef).
+
+<a id="get_triggers"></a>
 
 ### get_triggers
 
@@ -2569,6 +2794,8 @@ Keyword-only arguments:
 
 Returns
 [GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef).
+
+<a id="get_unfiltered_partition_metadata"></a>
 
 ### get_unfiltered_partition_metadata
 
@@ -2597,6 +2824,8 @@ Keyword-only arguments:
 
 Returns
 [GetUnfilteredPartitionMetadataResponseTypeDef](./type_defs.md#getunfilteredpartitionmetadataresponsetypedef).
+
+<a id="get_unfiltered_partitions_metadata"></a>
 
 ### get_unfiltered_partitions_metadata
 
@@ -2629,6 +2858,8 @@ Keyword-only arguments:
 Returns
 [GetUnfilteredPartitionsMetadataResponseTypeDef](./type_defs.md#getunfilteredpartitionsmetadataresponsetypedef).
 
+<a id="get_unfiltered_table_metadata"></a>
+
 ### get_unfiltered_table_metadata
 
 See also:
@@ -2656,6 +2887,8 @@ Keyword-only arguments:
 Returns
 [GetUnfilteredTableMetadataResponseTypeDef](./type_defs.md#getunfilteredtablemetadataresponsetypedef).
 
+<a id="get_user_defined_function"></a>
+
 ### get_user_defined_function
 
 Retrieves a specified function definition from the Data Catalog.
@@ -2676,6 +2909,8 @@ Keyword-only arguments:
 
 Returns
 [GetUserDefinedFunctionResponseTypeDef](./type_defs.md#getuserdefinedfunctionresponsetypedef).
+
+<a id="get_user_defined_functions"></a>
 
 ### get_user_defined_functions
 
@@ -2700,6 +2935,8 @@ Keyword-only arguments:
 Returns
 [GetUserDefinedFunctionsResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponsetypedef).
 
+<a id="get_workflow"></a>
+
 ### get_workflow
 
 Retrieves resource metadata for a workflow.
@@ -2719,6 +2956,8 @@ Keyword-only arguments:
 
 Returns
 [GetWorkflowResponseTypeDef](./type_defs.md#getworkflowresponsetypedef).
+
+<a id="get_workflow_run"></a>
 
 ### get_workflow_run
 
@@ -2741,6 +2980,8 @@ Keyword-only arguments:
 Returns
 [GetWorkflowRunResponseTypeDef](./type_defs.md#getworkflowrunresponsetypedef).
 
+<a id="get_workflow_run_properties"></a>
+
 ### get_workflow_run_properties
 
 Retrieves the workflow run properties which were set during the run.
@@ -2760,6 +3001,8 @@ Keyword-only arguments:
 
 Returns
 [GetWorkflowRunPropertiesResponseTypeDef](./type_defs.md#getworkflowrunpropertiesresponsetypedef).
+
+<a id="get_workflow_runs"></a>
 
 ### get_workflow_runs
 
@@ -2783,6 +3026,8 @@ Keyword-only arguments:
 Returns
 [GetWorkflowRunsResponseTypeDef](./type_defs.md#getworkflowrunsresponsetypedef).
 
+<a id="import_catalog_to_glue"></a>
+
 ### import_catalog_to_glue
 
 Imports an existing Amazon Athena Data Catalog to Glue.
@@ -2800,6 +3045,8 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="list_blueprints"></a>
 
 ### list_blueprints
 
@@ -2821,6 +3068,8 @@ Keyword-only arguments:
 
 Returns
 [ListBlueprintsResponseTypeDef](./type_defs.md#listblueprintsresponsetypedef).
+
+<a id="list_crawlers"></a>
 
 ### list_crawlers
 
@@ -2844,6 +3093,8 @@ Keyword-only arguments:
 Returns
 [ListCrawlersResponseTypeDef](./type_defs.md#listcrawlersresponsetypedef).
 
+<a id="list_dev_endpoints"></a>
+
 ### list_dev_endpoints
 
 Retrieves the names of all `DevEndpoint` resources in this Amazon Web Services
@@ -2866,6 +3117,8 @@ Keyword-only arguments:
 Returns
 [ListDevEndpointsResponseTypeDef](./type_defs.md#listdevendpointsresponsetypedef).
 
+<a id="list_jobs"></a>
+
 ### list_jobs
 
 Retrieves the names of all job resources in this Amazon Web Services account,
@@ -2886,6 +3139,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+
+<a id="list_ml_transforms"></a>
 
 ### list_ml_transforms
 
@@ -2914,6 +3169,8 @@ Keyword-only arguments:
 Returns
 [ListMLTransformsResponseTypeDef](./type_defs.md#listmltransformsresponsetypedef).
 
+<a id="list_registries"></a>
+
 ### list_registries
 
 Returns a list of registries that you have created, with minimal registry
@@ -2934,6 +3191,8 @@ Keyword-only arguments:
 
 Returns
 [ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef).
+
+<a id="list_schema_versions"></a>
 
 ### list_schema_versions
 
@@ -2957,6 +3216,8 @@ Keyword-only arguments:
 Returns
 [ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef).
 
+<a id="list_schemas"></a>
+
 ### list_schemas
 
 Returns a list of schemas with minimal details.
@@ -2977,6 +3238,8 @@ Keyword-only arguments:
 
 Returns
 [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
+
+<a id="list_triggers"></a>
 
 ### list_triggers
 
@@ -3001,6 +3264,8 @@ Keyword-only arguments:
 Returns
 [ListTriggersResponseTypeDef](./type_defs.md#listtriggersresponsetypedef).
 
+<a id="list_workflows"></a>
+
 ### list_workflows
 
 Lists names of workflows created in the account.
@@ -3020,6 +3285,8 @@ Keyword-only arguments:
 
 Returns
 [ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef).
+
+<a id="put_data_catalog_encryption_settings"></a>
 
 ### put_data_catalog_encryption_settings
 
@@ -3042,6 +3309,8 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_resource_policy"></a>
 
 ### put_resource_policy
 
@@ -3068,6 +3337,8 @@ Keyword-only arguments:
 Returns
 [PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
+<a id="put_schema_version_metadata"></a>
+
 ### put_schema_version_metadata
 
 Puts the metadata key value pair for a specified schema version ID.
@@ -3093,6 +3364,8 @@ Keyword-only arguments:
 Returns
 [PutSchemaVersionMetadataResponseTypeDef](./type_defs.md#putschemaversionmetadataresponsetypedef).
 
+<a id="put_workflow_run_properties"></a>
+
 ### put_workflow_run_properties
 
 Puts the specified workflow run properties for the given workflow run.
@@ -3112,6 +3385,8 @@ Keyword-only arguments:
 - `RunProperties`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="query_schema_version_metadata"></a>
 
 ### query_schema_version_metadata
 
@@ -3140,6 +3415,8 @@ Keyword-only arguments:
 Returns
 [QuerySchemaVersionMetadataResponseTypeDef](./type_defs.md#queryschemaversionmetadataresponsetypedef).
 
+<a id="register_schema_version"></a>
+
 ### register_schema_version
 
 Adds a new version to the existing schema.
@@ -3159,6 +3436,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterSchemaVersionResponseTypeDef](./type_defs.md#registerschemaversionresponsetypedef).
+
+<a id="remove_schema_version_metadata"></a>
 
 ### remove_schema_version_metadata
 
@@ -3187,6 +3466,8 @@ Keyword-only arguments:
 Returns
 [RemoveSchemaVersionMetadataResponseTypeDef](./type_defs.md#removeschemaversionmetadataresponsetypedef).
 
+<a id="reset_job_bookmark"></a>
+
 ### reset_job_bookmark
 
 Resets a bookmark entry.
@@ -3206,6 +3487,8 @@ Keyword-only arguments:
 
 Returns
 [ResetJobBookmarkResponseTypeDef](./type_defs.md#resetjobbookmarkresponsetypedef).
+
+<a id="resume_workflow_run"></a>
 
 ### resume_workflow_run
 
@@ -3228,6 +3511,8 @@ Keyword-only arguments:
 
 Returns
 [ResumeWorkflowRunResponseTypeDef](./type_defs.md#resumeworkflowrunresponsetypedef).
+
+<a id="search_tables"></a>
 
 ### search_tables
 
@@ -3258,6 +3543,8 @@ Keyword-only arguments:
 Returns
 [SearchTablesResponseTypeDef](./type_defs.md#searchtablesresponsetypedef).
 
+<a id="start_blueprint_run"></a>
+
 ### start_blueprint_run
 
 Starts a new run of the specified blueprint.
@@ -3279,6 +3566,8 @@ Keyword-only arguments:
 Returns
 [StartBlueprintRunResponseTypeDef](./type_defs.md#startblueprintrunresponsetypedef).
 
+<a id="start_crawler"></a>
+
 ### start_crawler
 
 Starts a crawl using the specified crawler, regardless of what is scheduled.
@@ -3296,6 +3585,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_crawler_schedule"></a>
 
 ### start_crawler_schedule
 
@@ -3315,6 +3606,8 @@ Keyword-only arguments:
 - `CrawlerName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_export_labels_task_run"></a>
 
 ### start_export_labels_task_run
 
@@ -3338,6 +3631,8 @@ Keyword-only arguments:
 Returns
 [StartExportLabelsTaskRunResponseTypeDef](./type_defs.md#startexportlabelstaskrunresponsetypedef).
 
+<a id="start_import_labels_task_run"></a>
+
 ### start_import_labels_task_run
 
 Enables you to provide additional labels (examples of truth) to be used to
@@ -3360,6 +3655,8 @@ Keyword-only arguments:
 
 Returns
 [StartImportLabelsTaskRunResponseTypeDef](./type_defs.md#startimportlabelstaskrunresponsetypedef).
+
+<a id="start_job_run"></a>
 
 ### start_job_run
 
@@ -3390,6 +3687,8 @@ Keyword-only arguments:
 Returns
 [StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
 
+<a id="start_ml_evaluation_task_run"></a>
+
 ### start_ml_evaluation_task_run
 
 Starts a task to estimate the quality of the transform.
@@ -3409,6 +3708,8 @@ Keyword-only arguments:
 
 Returns
 [StartMLEvaluationTaskRunResponseTypeDef](./type_defs.md#startmlevaluationtaskrunresponsetypedef).
+
+<a id="start_ml_labeling_set_generation_task_run"></a>
 
 ### start_ml_labeling_set_generation_task_run
 
@@ -3432,6 +3733,8 @@ Keyword-only arguments:
 Returns
 [StartMLLabelingSetGenerationTaskRunResponseTypeDef](./type_defs.md#startmllabelingsetgenerationtaskrunresponsetypedef).
 
+<a id="start_trigger"></a>
+
 ### start_trigger
 
 Starts an existing trigger.
@@ -3450,6 +3753,8 @@ Keyword-only arguments:
 
 Returns
 [StartTriggerResponseTypeDef](./type_defs.md#starttriggerresponsetypedef).
+
+<a id="start_workflow_run"></a>
 
 ### start_workflow_run
 
@@ -3471,6 +3776,8 @@ Keyword-only arguments:
 Returns
 [StartWorkflowRunResponseTypeDef](./type_defs.md#startworkflowrunresponsetypedef).
 
+<a id="stop_crawler"></a>
+
 ### stop_crawler
 
 If the specified crawler is running, stops the crawl.
@@ -3488,6 +3795,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="stop_crawler_schedule"></a>
 
 ### stop_crawler_schedule
 
@@ -3508,6 +3817,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="stop_trigger"></a>
+
 ### stop_trigger
 
 Stops a specified trigger.
@@ -3526,6 +3837,8 @@ Keyword-only arguments:
 
 Returns
 [StopTriggerResponseTypeDef](./type_defs.md#stoptriggerresponsetypedef).
+
+<a id="stop_workflow_run"></a>
 
 ### stop_workflow_run
 
@@ -3546,6 +3859,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to a resource.
@@ -3565,6 +3880,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a resource.
@@ -3583,6 +3900,8 @@ Keyword-only arguments:
 - `TagsToRemove`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_blueprint"></a>
 
 ### update_blueprint
 
@@ -3604,6 +3923,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateBlueprintResponseTypeDef](./type_defs.md#updateblueprintresponsetypedef).
+
+<a id="update_classifier"></a>
 
 ### update_classifier
 
@@ -3631,6 +3952,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_column_statistics_for_partition"></a>
+
 ### update_column_statistics_for_partition
 
 Creates or updates partition statistics of columns.
@@ -3657,6 +3980,8 @@ Keyword-only arguments:
 Returns
 [UpdateColumnStatisticsForPartitionResponseTypeDef](./type_defs.md#updatecolumnstatisticsforpartitionresponsetypedef).
 
+<a id="update_column_statistics_for_table"></a>
+
 ### update_column_statistics_for_table
 
 Creates or updates table statistics of columns.
@@ -3682,6 +4007,8 @@ Keyword-only arguments:
 Returns
 [UpdateColumnStatisticsForTableResponseTypeDef](./type_defs.md#updatecolumnstatisticsfortableresponsetypedef).
 
+<a id="update_connection"></a>
+
 ### update_connection
 
 Updates a connection definition in the Data Catalog.
@@ -3702,6 +4029,8 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_crawler"></a>
 
 ### update_crawler
 
@@ -3737,6 +4066,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_crawler_schedule"></a>
+
 ### update_crawler_schedule
 
 Updates the schedule of a crawler using a `cron` expression.
@@ -3755,6 +4086,8 @@ Keyword-only arguments:
 - `Schedule`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_database"></a>
 
 ### update_database
 
@@ -3776,6 +4109,8 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_dev_endpoint"></a>
 
 ### update_dev_endpoint
 
@@ -3803,6 +4138,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_job"></a>
+
 ### update_job
 
 Updates an existing job definition.
@@ -3821,6 +4158,8 @@ Keyword-only arguments:
 - `JobUpdate`: [JobUpdateTypeDef](./type_defs.md#jobupdatetypedef) *(required)*
 
 Returns [UpdateJobResponseTypeDef](./type_defs.md#updatejobresponsetypedef).
+
+<a id="update_ml_transform"></a>
 
 ### update_ml_transform
 
@@ -3852,6 +4191,8 @@ Keyword-only arguments:
 Returns
 [UpdateMLTransformResponseTypeDef](./type_defs.md#updatemltransformresponsetypedef).
 
+<a id="update_partition"></a>
+
 ### update_partition
 
 Updates a partition.
@@ -3875,6 +4216,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_registry"></a>
+
 ### update_registry
 
 Updates an existing registry which is used to hold a collection of schemas.
@@ -3895,6 +4238,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef).
+
+<a id="update_schema"></a>
 
 ### update_schema
 
@@ -3920,6 +4265,8 @@ Keyword-only arguments:
 Returns
 [UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
 
+<a id="update_table"></a>
+
 ### update_table
 
 Updates a metadata table in the Data Catalog.
@@ -3943,6 +4290,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_trigger"></a>
+
 ### update_trigger
 
 Updates a trigger definition.
@@ -3963,6 +4312,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateTriggerResponseTypeDef](./type_defs.md#updatetriggerresponsetypedef).
+
+<a id="update_user_defined_function"></a>
 
 ### update_user_defined_function
 
@@ -3988,6 +4339,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_workflow"></a>
+
 ### update_workflow
 
 Updates an existing workflow.
@@ -4009,6 +4362,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateWorkflowResponseTypeDef](./type_defs.md#updateworkflowresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

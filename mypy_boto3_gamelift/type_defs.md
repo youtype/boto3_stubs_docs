@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-gamelift-module"></a>
+
 # Typed dictionaries for boto3 GameLift module
 
 > [Index](..) > [GameLift](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
 type annotations stubs module
-[mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+[mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 - [Typed dictionaries for boto3 GameLift module](#typed-dictionaries-for-boto3-gamelift-module)
   - [AcceptMatchInputRequestTypeDef](#acceptmatchinputrequesttypedef)
@@ -240,6 +242,8 @@ type annotations stubs module
   - [VpcPeeringConnectionStatusTypeDef](#vpcpeeringconnectionstatustypedef)
   - [VpcPeeringConnectionTypeDef](#vpcpeeringconnectiontypedef)
 
+<a id="acceptmatchinputrequesttypedef"></a>
+
 ## AcceptMatchInputRequestTypeDef
 
 ```python
@@ -251,6 +255,8 @@ Required fields:
 - `TicketId`: `str`
 - `PlayerIds`: `Sequence`\[`str`\]
 - `AcceptanceType`: [AcceptanceTypeType](./literals.md#acceptancetypetype)
+
+<a id="aliastypedef"></a>
 
 ## AliasTypeDef
 
@@ -269,6 +275,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 
+<a id="attributevaluetypedef"></a>
+
 ## AttributeValueTypeDef
 
 ```python
@@ -282,6 +290,8 @@ Optional fields:
 - `SL`: `List`\[`str`\]
 - `SDM`: `Dict`\[`str`, `float`\]
 
+<a id="awscredentialstypedef"></a>
+
 ## AwsCredentialsTypeDef
 
 ```python
@@ -293,6 +303,8 @@ Optional fields:
 - `AccessKeyId`: `str`
 - `SecretAccessKey`: `str`
 - `SessionToken`: `str`
+
+<a id="buildtypedef"></a>
 
 ## BuildTypeDef
 
@@ -311,6 +323,8 @@ Optional fields:
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `CreationTime`: `datetime`
 
+<a id="certificateconfigurationtypedef"></a>
+
 ## CertificateConfigurationTypeDef
 
 ```python
@@ -320,6 +334,8 @@ from mypy_boto3_gamelift.type_defs import CertificateConfigurationTypeDef
 Required fields:
 
 - `CertificateType`: [CertificateTypeType](./literals.md#certificatetypetype)
+
+<a id="claimgameserverinputrequesttypedef"></a>
 
 ## ClaimGameServerInputRequestTypeDef
 
@@ -336,6 +352,8 @@ Optional fields:
 - `GameServerId`: `str`
 - `GameServerData`: `str`
 
+<a id="claimgameserveroutputtypedef"></a>
+
 ## ClaimGameServerOutputTypeDef
 
 ```python
@@ -347,6 +365,8 @@ Required fields:
 - `GameServer`: [GameServerTypeDef](./type_defs.md#gameservertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createaliasinputrequesttypedef"></a>
 
 ## CreateAliasInputRequestTypeDef
 
@@ -365,6 +385,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createaliasoutputtypedef"></a>
+
 ## CreateAliasOutputTypeDef
 
 ```python
@@ -376,6 +398,8 @@ Required fields:
 - `Alias`: [AliasTypeDef](./type_defs.md#aliastypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createbuildinputrequesttypedef"></a>
 
 ## CreateBuildInputRequestTypeDef
 
@@ -391,6 +415,8 @@ Optional fields:
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createbuildoutputtypedef"></a>
+
 ## CreateBuildOutputTypeDef
 
 ```python
@@ -405,6 +431,8 @@ Required fields:
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfleetinputrequesttypedef"></a>
 
 ## CreateFleetInputRequestTypeDef
 
@@ -444,6 +472,8 @@ Optional fields:
   `Sequence`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createfleetlocationsinputrequesttypedef"></a>
+
 ## CreateFleetLocationsInputRequestTypeDef
 
 ```python
@@ -455,6 +485,8 @@ Required fields:
 - `FleetId`: `str`
 - `Locations`:
   `Sequence`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
+
+<a id="createfleetlocationsoutputtypedef"></a>
 
 ## CreateFleetLocationsOutputTypeDef
 
@@ -471,6 +503,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createfleetoutputtypedef"></a>
+
 ## CreateFleetOutputTypeDef
 
 ```python
@@ -485,6 +519,8 @@ Required fields:
   `List`\[[LocationStateTypeDef](./type_defs.md#locationstatetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creategameservergroupinputrequesttypedef"></a>
 
 ## CreateGameServerGroupInputRequestTypeDef
 
@@ -514,6 +550,8 @@ Optional fields:
 - `VpcSubnets`: `Sequence`\[`str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="creategameservergroupoutputtypedef"></a>
+
 ## CreateGameServerGroupOutputTypeDef
 
 ```python
@@ -526,6 +564,8 @@ Required fields:
   [GameServerGroupTypeDef](./type_defs.md#gameservergrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creategamesessioninputrequesttypedef"></a>
 
 ## CreateGameSessionInputRequestTypeDef
 
@@ -550,6 +590,8 @@ Optional fields:
 - `GameSessionData`: `str`
 - `Location`: `str`
 
+<a id="creategamesessionoutputtypedef"></a>
+
 ## CreateGameSessionOutputTypeDef
 
 ```python
@@ -561,6 +603,8 @@ Required fields:
 - `GameSession`: [GameSessionTypeDef](./type_defs.md#gamesessiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creategamesessionqueueinputrequesttypedef"></a>
 
 ## CreateGameSessionQueueInputRequestTypeDef
 
@@ -587,6 +631,8 @@ Optional fields:
 - `NotificationTarget`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="creategamesessionqueueoutputtypedef"></a>
+
 ## CreateGameSessionQueueOutputTypeDef
 
 ```python
@@ -599,6 +645,8 @@ Required fields:
   [GameSessionQueueTypeDef](./type_defs.md#gamesessionqueuetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creatematchmakingconfigurationinputrequesttypedef"></a>
 
 ## CreateMatchmakingConfigurationInputRequestTypeDef
 
@@ -628,6 +676,8 @@ Optional fields:
 - `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="creatematchmakingconfigurationoutputtypedef"></a>
+
 ## CreateMatchmakingConfigurationOutputTypeDef
 
 ```python
@@ -640,6 +690,8 @@ Required fields:
   [MatchmakingConfigurationTypeDef](./type_defs.md#matchmakingconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creatematchmakingrulesetinputrequesttypedef"></a>
 
 ## CreateMatchmakingRuleSetInputRequestTypeDef
 
@@ -656,6 +708,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="creatematchmakingrulesetoutputtypedef"></a>
+
 ## CreateMatchmakingRuleSetOutputTypeDef
 
 ```python
@@ -668,6 +722,8 @@ Required fields:
   [MatchmakingRuleSetTypeDef](./type_defs.md#matchmakingrulesettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createplayersessioninputrequesttypedef"></a>
 
 ## CreatePlayerSessionInputRequestTypeDef
 
@@ -684,6 +740,8 @@ Optional fields:
 
 - `PlayerData`: `str`
 
+<a id="createplayersessionoutputtypedef"></a>
+
 ## CreatePlayerSessionOutputTypeDef
 
 ```python
@@ -695,6 +753,8 @@ Required fields:
 - `PlayerSession`: [PlayerSessionTypeDef](./type_defs.md#playersessiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createplayersessionsinputrequesttypedef"></a>
 
 ## CreatePlayerSessionsInputRequestTypeDef
 
@@ -711,6 +771,8 @@ Optional fields:
 
 - `PlayerDataMap`: `Mapping`\[`str`, `str`\]
 
+<a id="createplayersessionsoutputtypedef"></a>
+
 ## CreatePlayerSessionsOutputTypeDef
 
 ```python
@@ -723,6 +785,8 @@ Required fields:
   `List`\[[PlayerSessionTypeDef](./type_defs.md#playersessiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createscriptinputrequesttypedef"></a>
 
 ## CreateScriptInputRequestTypeDef
 
@@ -738,6 +802,8 @@ Optional fields:
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createscriptoutputtypedef"></a>
+
 ## CreateScriptOutputTypeDef
 
 ```python
@@ -750,6 +816,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createvpcpeeringauthorizationinputrequesttypedef"></a>
+
 ## CreateVpcPeeringAuthorizationInputRequestTypeDef
 
 ```python
@@ -760,6 +828,8 @@ Required fields:
 
 - `GameLiftAwsAccountId`: `str`
 - `PeerVpcId`: `str`
+
+<a id="createvpcpeeringauthorizationoutputtypedef"></a>
 
 ## CreateVpcPeeringAuthorizationOutputTypeDef
 
@@ -774,6 +844,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createvpcpeeringconnectioninputrequesttypedef"></a>
+
 ## CreateVpcPeeringConnectionInputRequestTypeDef
 
 ```python
@@ -786,6 +858,8 @@ Required fields:
 - `PeerVpcAwsAccountId`: `str`
 - `PeerVpcId`: `str`
 
+<a id="deletealiasinputrequesttypedef"></a>
+
 ## DeleteAliasInputRequestTypeDef
 
 ```python
@@ -795,6 +869,8 @@ from mypy_boto3_gamelift.type_defs import DeleteAliasInputRequestTypeDef
 Required fields:
 
 - `AliasId`: `str`
+
+<a id="deletebuildinputrequesttypedef"></a>
 
 ## DeleteBuildInputRequestTypeDef
 
@@ -806,6 +882,8 @@ Required fields:
 
 - `BuildId`: `str`
 
+<a id="deletefleetinputrequesttypedef"></a>
+
 ## DeleteFleetInputRequestTypeDef
 
 ```python
@@ -815,6 +893,8 @@ from mypy_boto3_gamelift.type_defs import DeleteFleetInputRequestTypeDef
 Required fields:
 
 - `FleetId`: `str`
+
+<a id="deletefleetlocationsinputrequesttypedef"></a>
 
 ## DeleteFleetLocationsInputRequestTypeDef
 
@@ -826,6 +906,8 @@ Required fields:
 
 - `FleetId`: `str`
 - `Locations`: `Sequence`\[`str`\]
+
+<a id="deletefleetlocationsoutputtypedef"></a>
 
 ## DeleteFleetLocationsOutputTypeDef
 
@@ -842,6 +924,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletegameservergroupinputrequesttypedef"></a>
+
 ## DeleteGameServerGroupInputRequestTypeDef
 
 ```python
@@ -857,6 +941,8 @@ Optional fields:
 - `DeleteOption`:
   [GameServerGroupDeleteOptionType](./literals.md#gameservergroupdeleteoptiontype)
 
+<a id="deletegameservergroupoutputtypedef"></a>
+
 ## DeleteGameServerGroupOutputTypeDef
 
 ```python
@@ -870,6 +956,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletegamesessionqueueinputrequesttypedef"></a>
+
 ## DeleteGameSessionQueueInputRequestTypeDef
 
 ```python
@@ -879,6 +967,8 @@ from mypy_boto3_gamelift.type_defs import DeleteGameSessionQueueInputRequestType
 Required fields:
 
 - `Name`: `str`
+
+<a id="deletematchmakingconfigurationinputrequesttypedef"></a>
 
 ## DeleteMatchmakingConfigurationInputRequestTypeDef
 
@@ -890,6 +980,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="deletematchmakingrulesetinputrequesttypedef"></a>
+
 ## DeleteMatchmakingRuleSetInputRequestTypeDef
 
 ```python
@@ -899,6 +991,8 @@ from mypy_boto3_gamelift.type_defs import DeleteMatchmakingRuleSetInputRequestTy
 Required fields:
 
 - `Name`: `str`
+
+<a id="deletescalingpolicyinputrequesttypedef"></a>
 
 ## DeleteScalingPolicyInputRequestTypeDef
 
@@ -911,6 +1005,8 @@ Required fields:
 - `Name`: `str`
 - `FleetId`: `str`
 
+<a id="deletescriptinputrequesttypedef"></a>
+
 ## DeleteScriptInputRequestTypeDef
 
 ```python
@@ -920,6 +1016,8 @@ from mypy_boto3_gamelift.type_defs import DeleteScriptInputRequestTypeDef
 Required fields:
 
 - `ScriptId`: `str`
+
+<a id="deletevpcpeeringauthorizationinputrequesttypedef"></a>
 
 ## DeleteVpcPeeringAuthorizationInputRequestTypeDef
 
@@ -932,6 +1030,8 @@ Required fields:
 - `GameLiftAwsAccountId`: `str`
 - `PeerVpcId`: `str`
 
+<a id="deletevpcpeeringconnectioninputrequesttypedef"></a>
+
 ## DeleteVpcPeeringConnectionInputRequestTypeDef
 
 ```python
@@ -942,6 +1042,8 @@ Required fields:
 
 - `FleetId`: `str`
 - `VpcPeeringConnectionId`: `str`
+
+<a id="deregistergameserverinputrequesttypedef"></a>
 
 ## DeregisterGameServerInputRequestTypeDef
 
@@ -954,6 +1056,8 @@ Required fields:
 - `GameServerGroupName`: `str`
 - `GameServerId`: `str`
 
+<a id="describealiasinputrequesttypedef"></a>
+
 ## DescribeAliasInputRequestTypeDef
 
 ```python
@@ -963,6 +1067,8 @@ from mypy_boto3_gamelift.type_defs import DescribeAliasInputRequestTypeDef
 Required fields:
 
 - `AliasId`: `str`
+
+<a id="describealiasoutputtypedef"></a>
 
 ## DescribeAliasOutputTypeDef
 
@@ -976,6 +1082,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describebuildinputrequesttypedef"></a>
+
 ## DescribeBuildInputRequestTypeDef
 
 ```python
@@ -985,6 +1093,8 @@ from mypy_boto3_gamelift.type_defs import DescribeBuildInputRequestTypeDef
 Required fields:
 
 - `BuildId`: `str`
+
+<a id="describebuildoutputtypedef"></a>
 
 ## DescribeBuildOutputTypeDef
 
@@ -998,6 +1108,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeec2instancelimitsinputrequesttypedef"></a>
+
 ## DescribeEC2InstanceLimitsInputRequestTypeDef
 
 ```python
@@ -1008,6 +1120,8 @@ Optional fields:
 
 - `EC2InstanceType`: [EC2InstanceTypeType](./literals.md#ec2instancetypetype)
 - `Location`: `str`
+
+<a id="describeec2instancelimitsoutputtypedef"></a>
 
 ## DescribeEC2InstanceLimitsOutputTypeDef
 
@@ -1022,6 +1136,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefleetattributesinputrequesttypedef"></a>
+
 ## DescribeFleetAttributesInputRequestTypeDef
 
 ```python
@@ -1033,6 +1149,8 @@ Optional fields:
 - `FleetIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describefleetattributesoutputtypedef"></a>
 
 ## DescribeFleetAttributesOutputTypeDef
 
@@ -1048,6 +1166,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefleetcapacityinputrequesttypedef"></a>
+
 ## DescribeFleetCapacityInputRequestTypeDef
 
 ```python
@@ -1059,6 +1179,8 @@ Optional fields:
 - `FleetIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describefleetcapacityoutputtypedef"></a>
 
 ## DescribeFleetCapacityOutputTypeDef
 
@@ -1073,6 +1195,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describefleeteventsinputrequesttypedef"></a>
 
 ## DescribeFleetEventsInputRequestTypeDef
 
@@ -1091,6 +1215,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describefleeteventsoutputtypedef"></a>
+
 ## DescribeFleetEventsOutputTypeDef
 
 ```python
@@ -1103,6 +1229,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describefleetlocationattributesinputrequesttypedef"></a>
 
 ## DescribeFleetLocationAttributesInputRequestTypeDef
 
@@ -1120,6 +1248,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describefleetlocationattributesoutputtypedef"></a>
+
 ## DescribeFleetLocationAttributesOutputTypeDef
 
 ```python
@@ -1136,6 +1266,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefleetlocationcapacityinputrequesttypedef"></a>
+
 ## DescribeFleetLocationCapacityInputRequestTypeDef
 
 ```python
@@ -1146,6 +1278,8 @@ Required fields:
 
 - `FleetId`: `str`
 - `Location`: `str`
+
+<a id="describefleetlocationcapacityoutputtypedef"></a>
 
 ## DescribeFleetLocationCapacityOutputTypeDef
 
@@ -1159,6 +1293,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefleetlocationutilizationinputrequesttypedef"></a>
+
 ## DescribeFleetLocationUtilizationInputRequestTypeDef
 
 ```python
@@ -1169,6 +1305,8 @@ Required fields:
 
 - `FleetId`: `str`
 - `Location`: `str`
+
+<a id="describefleetlocationutilizationoutputtypedef"></a>
 
 ## DescribeFleetLocationUtilizationOutputTypeDef
 
@@ -1183,6 +1321,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefleetportsettingsinputrequesttypedef"></a>
+
 ## DescribeFleetPortSettingsInputRequestTypeDef
 
 ```python
@@ -1196,6 +1336,8 @@ Required fields:
 Optional fields:
 
 - `Location`: `str`
+
+<a id="describefleetportsettingsoutputtypedef"></a>
 
 ## DescribeFleetPortSettingsOutputTypeDef
 
@@ -1215,6 +1357,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefleetutilizationinputrequesttypedef"></a>
+
 ## DescribeFleetUtilizationInputRequestTypeDef
 
 ```python
@@ -1226,6 +1370,8 @@ Optional fields:
 - `FleetIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describefleetutilizationoutputtypedef"></a>
 
 ## DescribeFleetUtilizationOutputTypeDef
 
@@ -1241,6 +1387,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describegameservergroupinputrequesttypedef"></a>
+
 ## DescribeGameServerGroupInputRequestTypeDef
 
 ```python
@@ -1250,6 +1398,8 @@ from mypy_boto3_gamelift.type_defs import DescribeGameServerGroupInputRequestTyp
 Required fields:
 
 - `GameServerGroupName`: `str`
+
+<a id="describegameservergroupoutputtypedef"></a>
 
 ## DescribeGameServerGroupOutputTypeDef
 
@@ -1264,6 +1414,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describegameserverinputrequesttypedef"></a>
+
 ## DescribeGameServerInputRequestTypeDef
 
 ```python
@@ -1274,6 +1426,8 @@ Required fields:
 
 - `GameServerGroupName`: `str`
 - `GameServerId`: `str`
+
+<a id="describegameserverinstancesinputrequesttypedef"></a>
 
 ## DescribeGameServerInstancesInputRequestTypeDef
 
@@ -1291,6 +1445,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describegameserverinstancesoutputtypedef"></a>
+
 ## DescribeGameServerInstancesOutputTypeDef
 
 ```python
@@ -1305,6 +1461,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describegameserveroutputtypedef"></a>
+
 ## DescribeGameServerOutputTypeDef
 
 ```python
@@ -1316,6 +1474,8 @@ Required fields:
 - `GameServer`: [GameServerTypeDef](./type_defs.md#gameservertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describegamesessiondetailsinputrequesttypedef"></a>
 
 ## DescribeGameSessionDetailsInputRequestTypeDef
 
@@ -1333,6 +1493,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describegamesessiondetailsoutputtypedef"></a>
+
 ## DescribeGameSessionDetailsOutputTypeDef
 
 ```python
@@ -1347,6 +1509,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describegamesessionplacementinputrequesttypedef"></a>
+
 ## DescribeGameSessionPlacementInputRequestTypeDef
 
 ```python
@@ -1356,6 +1520,8 @@ from mypy_boto3_gamelift.type_defs import DescribeGameSessionPlacementInputReque
 Required fields:
 
 - `PlacementId`: `str`
+
+<a id="describegamesessionplacementoutputtypedef"></a>
 
 ## DescribeGameSessionPlacementOutputTypeDef
 
@@ -1370,6 +1536,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describegamesessionqueuesinputrequesttypedef"></a>
+
 ## DescribeGameSessionQueuesInputRequestTypeDef
 
 ```python
@@ -1381,6 +1549,8 @@ Optional fields:
 - `Names`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describegamesessionqueuesoutputtypedef"></a>
 
 ## DescribeGameSessionQueuesOutputTypeDef
 
@@ -1395,6 +1565,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describegamesessionsinputrequesttypedef"></a>
 
 ## DescribeGameSessionsInputRequestTypeDef
 
@@ -1412,6 +1584,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describegamesessionsoutputtypedef"></a>
+
 ## DescribeGameSessionsOutputTypeDef
 
 ```python
@@ -1425,6 +1599,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeinstancesinputrequesttypedef"></a>
 
 ## DescribeInstancesInputRequestTypeDef
 
@@ -1443,6 +1619,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Location`: `str`
 
+<a id="describeinstancesoutputtypedef"></a>
+
 ## DescribeInstancesOutputTypeDef
 
 ```python
@@ -1456,6 +1634,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describematchmakingconfigurationsinputrequesttypedef"></a>
+
 ## DescribeMatchmakingConfigurationsInputRequestTypeDef
 
 ```python
@@ -1468,6 +1648,8 @@ Optional fields:
 - `RuleSetName`: `str`
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describematchmakingconfigurationsoutputtypedef"></a>
 
 ## DescribeMatchmakingConfigurationsOutputTypeDef
 
@@ -1483,6 +1665,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describematchmakinginputrequesttypedef"></a>
+
 ## DescribeMatchmakingInputRequestTypeDef
 
 ```python
@@ -1492,6 +1676,8 @@ from mypy_boto3_gamelift.type_defs import DescribeMatchmakingInputRequestTypeDef
 Required fields:
 
 - `TicketIds`: `Sequence`\[`str`\]
+
+<a id="describematchmakingoutputtypedef"></a>
 
 ## DescribeMatchmakingOutputTypeDef
 
@@ -1506,6 +1692,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describematchmakingrulesetsinputrequesttypedef"></a>
+
 ## DescribeMatchmakingRuleSetsInputRequestTypeDef
 
 ```python
@@ -1517,6 +1705,8 @@ Optional fields:
 - `Names`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describematchmakingrulesetsoutputtypedef"></a>
 
 ## DescribeMatchmakingRuleSetsOutputTypeDef
 
@@ -1531,6 +1721,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeplayersessionsinputrequesttypedef"></a>
 
 ## DescribePlayerSessionsInputRequestTypeDef
 
@@ -1547,6 +1739,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describeplayersessionsoutputtypedef"></a>
+
 ## DescribePlayerSessionsOutputTypeDef
 
 ```python
@@ -1561,6 +1755,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeruntimeconfigurationinputrequesttypedef"></a>
+
 ## DescribeRuntimeConfigurationInputRequestTypeDef
 
 ```python
@@ -1570,6 +1766,8 @@ from mypy_boto3_gamelift.type_defs import DescribeRuntimeConfigurationInputReque
 Required fields:
 
 - `FleetId`: `str`
+
+<a id="describeruntimeconfigurationoutputtypedef"></a>
 
 ## DescribeRuntimeConfigurationOutputTypeDef
 
@@ -1583,6 +1781,8 @@ Required fields:
   [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describescalingpoliciesinputrequesttypedef"></a>
 
 ## DescribeScalingPoliciesInputRequestTypeDef
 
@@ -1601,6 +1801,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Location`: `str`
 
+<a id="describescalingpoliciesoutputtypedef"></a>
+
 ## DescribeScalingPoliciesOutputTypeDef
 
 ```python
@@ -1615,6 +1817,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describescriptinputrequesttypedef"></a>
+
 ## DescribeScriptInputRequestTypeDef
 
 ```python
@@ -1624,6 +1828,8 @@ from mypy_boto3_gamelift.type_defs import DescribeScriptInputRequestTypeDef
 Required fields:
 
 - `ScriptId`: `str`
+
+<a id="describescriptoutputtypedef"></a>
 
 ## DescribeScriptOutputTypeDef
 
@@ -1636,6 +1842,8 @@ Required fields:
 - `Script`: [ScriptTypeDef](./type_defs.md#scripttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describevpcpeeringauthorizationsoutputtypedef"></a>
 
 ## DescribeVpcPeeringAuthorizationsOutputTypeDef
 
@@ -1650,6 +1858,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describevpcpeeringconnectionsinputrequesttypedef"></a>
+
 ## DescribeVpcPeeringConnectionsInputRequestTypeDef
 
 ```python
@@ -1659,6 +1869,8 @@ from mypy_boto3_gamelift.type_defs import DescribeVpcPeeringConnectionsInputRequ
 Optional fields:
 
 - `FleetId`: `str`
+
+<a id="describevpcpeeringconnectionsoutputtypedef"></a>
 
 ## DescribeVpcPeeringConnectionsOutputTypeDef
 
@@ -1673,6 +1885,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="desiredplayersessiontypedef"></a>
+
 ## DesiredPlayerSessionTypeDef
 
 ```python
@@ -1683,6 +1897,8 @@ Optional fields:
 
 - `PlayerId`: `str`
 - `PlayerData`: `str`
+
+<a id="ec2instancecountstypedef"></a>
 
 ## EC2InstanceCountsTypeDef
 
@@ -1700,6 +1916,8 @@ Optional fields:
 - `IDLE`: `int`
 - `TERMINATING`: `int`
 
+<a id="ec2instancelimittypedef"></a>
+
 ## EC2InstanceLimitTypeDef
 
 ```python
@@ -1712,6 +1930,8 @@ Optional fields:
 - `CurrentInstances`: `int`
 - `InstanceLimit`: `int`
 - `Location`: `str`
+
+<a id="eventtypedef"></a>
 
 ## EventTypeDef
 
@@ -1728,6 +1948,8 @@ Optional fields:
 - `EventTime`: `datetime`
 - `PreSignedLogUrl`: `str`
 
+<a id="filterconfigurationtypedef"></a>
+
 ## FilterConfigurationTypeDef
 
 ```python
@@ -1737,6 +1959,8 @@ from mypy_boto3_gamelift.type_defs import FilterConfigurationTypeDef
 Optional fields:
 
 - `AllowedLocations`: `Sequence`\[`str`\]
+
+<a id="fleetattributestypedef"></a>
 
 ## FleetAttributesTypeDef
 
@@ -1774,6 +1998,8 @@ Optional fields:
 - `CertificateConfiguration`:
   [CertificateConfigurationTypeDef](./type_defs.md#certificateconfigurationtypedef)
 
+<a id="fleetcapacitytypedef"></a>
+
 ## FleetCapacityTypeDef
 
 ```python
@@ -1788,6 +2014,8 @@ Optional fields:
 - `InstanceCounts`:
   [EC2InstanceCountsTypeDef](./type_defs.md#ec2instancecountstypedef)
 - `Location`: `str`
+
+<a id="fleetutilizationtypedef"></a>
 
 ## FleetUtilizationTypeDef
 
@@ -1805,6 +2033,8 @@ Optional fields:
 - `MaximumPlayerSessionCount`: `int`
 - `Location`: `str`
 
+<a id="gamepropertytypedef"></a>
+
 ## GamePropertyTypeDef
 
 ```python
@@ -1815,6 +2045,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="gameservergroupautoscalingpolicytypedef"></a>
 
 ## GameServerGroupAutoScalingPolicyTypeDef
 
@@ -1830,6 +2062,8 @@ Required fields:
 Optional fields:
 
 - `EstimatedInstanceWarmup`: `int`
+
+<a id="gameservergrouptypedef"></a>
 
 ## GameServerGroupTypeDef
 
@@ -1857,6 +2091,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 
+<a id="gameserverinstancetypedef"></a>
+
 ## GameServerInstanceTypeDef
 
 ```python
@@ -1870,6 +2106,8 @@ Optional fields:
 - `InstanceId`: `str`
 - `InstanceStatus`:
   [GameServerInstanceStatusType](./literals.md#gameserverinstancestatustype)
+
+<a id="gameservertypedef"></a>
 
 ## GameServerTypeDef
 
@@ -1893,6 +2131,8 @@ Optional fields:
 - `LastClaimTime`: `datetime`
 - `LastHealthCheckTime`: `datetime`
 
+<a id="gamesessionconnectioninfotypedef"></a>
+
 ## GameSessionConnectionInfoTypeDef
 
 ```python
@@ -1908,6 +2148,8 @@ Optional fields:
 - `MatchedPlayerSessions`:
   `List`\[[MatchedPlayerSessionTypeDef](./type_defs.md#matchedplayersessiontypedef)\]
 
+<a id="gamesessiondetailtypedef"></a>
+
 ## GameSessionDetailTypeDef
 
 ```python
@@ -1919,6 +2161,8 @@ Optional fields:
 - `GameSession`: [GameSessionTypeDef](./type_defs.md#gamesessiontypedef)
 - `ProtectionPolicy`:
   [ProtectionPolicyType](./literals.md#protectionpolicytype)
+
+<a id="gamesessionplacementtypedef"></a>
 
 ## GameSessionPlacementTypeDef
 
@@ -1951,6 +2195,8 @@ Optional fields:
 - `GameSessionData`: `str`
 - `MatchmakerData`: `str`
 
+<a id="gamesessionqueuedestinationtypedef"></a>
+
 ## GameSessionQueueDestinationTypeDef
 
 ```python
@@ -1960,6 +2206,8 @@ from mypy_boto3_gamelift.type_defs import GameSessionQueueDestinationTypeDef
 Optional fields:
 
 - `DestinationArn`: `str`
+
+<a id="gamesessionqueuetypedef"></a>
 
 ## GameSessionQueueTypeDef
 
@@ -1982,6 +2230,8 @@ Optional fields:
   [PriorityConfigurationTypeDef](./type_defs.md#priorityconfigurationtypedef)
 - `CustomEventData`: `str`
 - `NotificationTarget`: `str`
+
+<a id="gamesessiontypedef"></a>
 
 ## GameSessionTypeDef
 
@@ -2014,6 +2264,8 @@ Optional fields:
 - `MatchmakerData`: `str`
 - `Location`: `str`
 
+<a id="getgamesessionlogurlinputrequesttypedef"></a>
+
 ## GetGameSessionLogUrlInputRequestTypeDef
 
 ```python
@@ -2023,6 +2275,8 @@ from mypy_boto3_gamelift.type_defs import GetGameSessionLogUrlInputRequestTypeDe
 Required fields:
 
 - `GameSessionId`: `str`
+
+<a id="getgamesessionlogurloutputtypedef"></a>
 
 ## GetGameSessionLogUrlOutputTypeDef
 
@@ -2036,6 +2290,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinstanceaccessinputrequesttypedef"></a>
+
 ## GetInstanceAccessInputRequestTypeDef
 
 ```python
@@ -2046,6 +2302,8 @@ Required fields:
 
 - `FleetId`: `str`
 - `InstanceId`: `str`
+
+<a id="getinstanceaccessoutputtypedef"></a>
 
 ## GetInstanceAccessOutputTypeDef
 
@@ -2059,6 +2317,8 @@ Required fields:
   [InstanceAccessTypeDef](./type_defs.md#instanceaccesstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="instanceaccesstypedef"></a>
 
 ## InstanceAccessTypeDef
 
@@ -2075,6 +2335,8 @@ Optional fields:
 - `Credentials`:
   [InstanceCredentialsTypeDef](./type_defs.md#instancecredentialstypedef)
 
+<a id="instancecredentialstypedef"></a>
+
 ## InstanceCredentialsTypeDef
 
 ```python
@@ -2085,6 +2347,8 @@ Optional fields:
 
 - `UserName`: `str`
 - `Secret`: `str`
+
+<a id="instancedefinitiontypedef"></a>
 
 ## InstanceDefinitionTypeDef
 
@@ -2100,6 +2364,8 @@ Required fields:
 Optional fields:
 
 - `WeightedCapacity`: `str`
+
+<a id="instancetypedef"></a>
 
 ## InstanceTypeDef
 
@@ -2120,6 +2386,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `Location`: `str`
 
+<a id="ippermissiontypedef"></a>
+
 ## IpPermissionTypeDef
 
 ```python
@@ -2133,6 +2401,8 @@ Required fields:
 - `IpRange`: `str`
 - `Protocol`: [IpProtocolType](./literals.md#ipprotocoltype)
 
+<a id="launchtemplatespecificationtypedef"></a>
+
 ## LaunchTemplateSpecificationTypeDef
 
 ```python
@@ -2144,6 +2414,8 @@ Optional fields:
 - `LaunchTemplateId`: `str`
 - `LaunchTemplateName`: `str`
 - `Version`: `str`
+
+<a id="listaliasesinputrequesttypedef"></a>
 
 ## ListAliasesInputRequestTypeDef
 
@@ -2159,6 +2431,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="listaliasesoutputtypedef"></a>
+
 ## ListAliasesOutputTypeDef
 
 ```python
@@ -2172,6 +2446,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbuildsinputrequesttypedef"></a>
+
 ## ListBuildsInputRequestTypeDef
 
 ```python
@@ -2183,6 +2459,8 @@ Optional fields:
 - `Status`: [BuildStatusType](./literals.md#buildstatustype)
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="listbuildsoutputtypedef"></a>
 
 ## ListBuildsOutputTypeDef
 
@@ -2197,6 +2475,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfleetsinputrequesttypedef"></a>
+
 ## ListFleetsInputRequestTypeDef
 
 ```python
@@ -2209,6 +2489,8 @@ Optional fields:
 - `ScriptId`: `str`
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="listfleetsoutputtypedef"></a>
 
 ## ListFleetsOutputTypeDef
 
@@ -2223,6 +2505,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgameservergroupsinputrequesttypedef"></a>
+
 ## ListGameServerGroupsInputRequestTypeDef
 
 ```python
@@ -2233,6 +2517,8 @@ Optional fields:
 
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="listgameservergroupsoutputtypedef"></a>
 
 ## ListGameServerGroupsOutputTypeDef
 
@@ -2247,6 +2533,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listgameserversinputrequesttypedef"></a>
 
 ## ListGameServersInputRequestTypeDef
 
@@ -2264,6 +2552,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="listgameserversoutputtypedef"></a>
+
 ## ListGameServersOutputTypeDef
 
 ```python
@@ -2278,6 +2568,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listscriptsinputrequesttypedef"></a>
+
 ## ListScriptsInputRequestTypeDef
 
 ```python
@@ -2288,6 +2580,8 @@ Optional fields:
 
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="listscriptsoutputtypedef"></a>
 
 ## ListScriptsOutputTypeDef
 
@@ -2302,6 +2596,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -2311,6 +2607,8 @@ from mypy_boto3_gamelift.type_defs import ListTagsForResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -2323,6 +2621,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="locationattributestypedef"></a>
 
 ## LocationAttributesTypeDef
 
@@ -2338,6 +2638,8 @@ Optional fields:
 - `UpdateStatus`: `Literal['PENDING_UPDATE']` (see
   [LocationUpdateStatusType](./literals.md#locationupdatestatustype))
 
+<a id="locationconfigurationtypedef"></a>
+
 ## LocationConfigurationTypeDef
 
 ```python
@@ -2347,6 +2649,8 @@ from mypy_boto3_gamelift.type_defs import LocationConfigurationTypeDef
 Optional fields:
 
 - `Location`: `str`
+
+<a id="locationstatetypedef"></a>
 
 ## LocationStateTypeDef
 
@@ -2359,6 +2663,8 @@ Optional fields:
 - `Location`: `str`
 - `Status`: [FleetStatusType](./literals.md#fleetstatustype)
 
+<a id="matchedplayersessiontypedef"></a>
+
 ## MatchedPlayerSessionTypeDef
 
 ```python
@@ -2369,6 +2675,8 @@ Optional fields:
 
 - `PlayerId`: `str`
 - `PlayerSessionId`: `str`
+
+<a id="matchmakingconfigurationtypedef"></a>
 
 ## MatchmakingConfigurationTypeDef
 
@@ -2397,6 +2705,8 @@ Optional fields:
 - `BackfillMode`: [BackfillModeType](./literals.md#backfillmodetype)
 - `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)
 
+<a id="matchmakingrulesettypedef"></a>
+
 ## MatchmakingRuleSetTypeDef
 
 ```python
@@ -2412,6 +2722,8 @@ Optional fields:
 - `RuleSetName`: `str`
 - `RuleSetArn`: `str`
 - `CreationTime`: `datetime`
+
+<a id="matchmakingtickettypedef"></a>
 
 ## MatchmakingTicketTypeDef
 
@@ -2435,6 +2747,8 @@ Optional fields:
   [GameSessionConnectionInfoTypeDef](./type_defs.md#gamesessionconnectioninfotypedef)
 - `EstimatedWaitTime`: `int`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -2447,6 +2761,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="placedplayersessiontypedef"></a>
+
 ## PlacedPlayerSessionTypeDef
 
 ```python
@@ -2457,6 +2773,8 @@ Optional fields:
 
 - `PlayerId`: `str`
 - `PlayerSessionId`: `str`
+
+<a id="playerlatencypolicytypedef"></a>
 
 ## PlayerLatencyPolicyTypeDef
 
@@ -2469,6 +2787,8 @@ Optional fields:
 - `MaximumIndividualPlayerLatencyMilliseconds`: `int`
 - `PolicyDurationSeconds`: `int`
 
+<a id="playerlatencytypedef"></a>
+
 ## PlayerLatencyTypeDef
 
 ```python
@@ -2480,6 +2800,8 @@ Optional fields:
 - `PlayerId`: `str`
 - `RegionIdentifier`: `str`
 - `LatencyInMilliseconds`: `float`
+
+<a id="playersessiontypedef"></a>
 
 ## PlayerSessionTypeDef
 
@@ -2502,6 +2824,8 @@ Optional fields:
 - `Port`: `int`
 - `PlayerData`: `str`
 
+<a id="playertypedef"></a>
+
 ## PlayerTypeDef
 
 ```python
@@ -2516,6 +2840,8 @@ Optional fields:
 - `Team`: `str`
 - `LatencyInMs`: `Dict`\[`str`, `int`\]
 
+<a id="priorityconfigurationtypedef"></a>
+
 ## PriorityConfigurationTypeDef
 
 ```python
@@ -2527,6 +2853,8 @@ Optional fields:
 - `PriorityOrder`:
   `Sequence`\[[PriorityTypeType](./literals.md#prioritytypetype)\]
 - `LocationOrder`: `Sequence`\[`str`\]
+
+<a id="putscalingpolicyinputrequesttypedef"></a>
 
 ## PutScalingPolicyInputRequestTypeDef
 
@@ -2553,6 +2881,8 @@ Optional fields:
 - `TargetConfiguration`:
   [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
 
+<a id="putscalingpolicyoutputtypedef"></a>
+
 ## PutScalingPolicyOutputTypeDef
 
 ```python
@@ -2564,6 +2894,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="registergameserverinputrequesttypedef"></a>
 
 ## RegisterGameServerInputRequestTypeDef
 
@@ -2582,6 +2914,8 @@ Optional fields:
 - `ConnectionInfo`: `str`
 - `GameServerData`: `str`
 
+<a id="registergameserveroutputtypedef"></a>
+
 ## RegisterGameServerOutputTypeDef
 
 ```python
@@ -2594,6 +2928,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="requestuploadcredentialsinputrequesttypedef"></a>
+
 ## RequestUploadCredentialsInputRequestTypeDef
 
 ```python
@@ -2603,6 +2939,8 @@ from mypy_boto3_gamelift.type_defs import RequestUploadCredentialsInputRequestTy
 Required fields:
 
 - `BuildId`: `str`
+
+<a id="requestuploadcredentialsoutputtypedef"></a>
 
 ## RequestUploadCredentialsOutputTypeDef
 
@@ -2618,6 +2956,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resolvealiasinputrequesttypedef"></a>
+
 ## ResolveAliasInputRequestTypeDef
 
 ```python
@@ -2627,6 +2967,8 @@ from mypy_boto3_gamelift.type_defs import ResolveAliasInputRequestTypeDef
 Required fields:
 
 - `AliasId`: `str`
+
+<a id="resolvealiasoutputtypedef"></a>
 
 ## ResolveAliasOutputTypeDef
 
@@ -2641,6 +2983,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resourcecreationlimitpolicytypedef"></a>
+
 ## ResourceCreationLimitPolicyTypeDef
 
 ```python
@@ -2651,6 +2995,8 @@ Optional fields:
 
 - `NewGameSessionsPerCreator`: `int`
 - `PolicyPeriodInMinutes`: `int`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2666,6 +3012,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="resumegameservergroupinputrequesttypedef"></a>
+
 ## ResumeGameServerGroupInputRequestTypeDef
 
 ```python
@@ -2677,6 +3025,8 @@ Required fields:
 - `GameServerGroupName`: `str`
 - `ResumeActions`: `Sequence`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
   [GameServerGroupActionType](./literals.md#gameservergroupactiontype))\]
+
+<a id="resumegameservergroupoutputtypedef"></a>
 
 ## ResumeGameServerGroupOutputTypeDef
 
@@ -2691,6 +3041,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="routingstrategytypedef"></a>
+
 ## RoutingStrategyTypeDef
 
 ```python
@@ -2702,6 +3054,8 @@ Optional fields:
 - `Type`: [RoutingStrategyTypeType](./literals.md#routingstrategytypetype)
 - `FleetId`: `str`
 - `Message`: `str`
+
+<a id="runtimeconfigurationtypedef"></a>
 
 ## RuntimeConfigurationTypeDef
 
@@ -2716,6 +3070,8 @@ Optional fields:
 - `MaxConcurrentGameSessionActivations`: `int`
 - `GameSessionActivationTimeoutSeconds`: `int`
 
+<a id="s3locationtypedef"></a>
+
 ## S3LocationTypeDef
 
 ```python
@@ -2728,6 +3084,8 @@ Optional fields:
 - `Key`: `str`
 - `RoleArn`: `str`
 - `ObjectVersion`: `str`
+
+<a id="scalingpolicytypedef"></a>
 
 ## ScalingPolicyTypeDef
 
@@ -2756,6 +3114,8 @@ Optional fields:
   [LocationUpdateStatusType](./literals.md#locationupdatestatustype))
 - `Location`: `str`
 
+<a id="scripttypedef"></a>
+
 ## ScriptTypeDef
 
 ```python
@@ -2771,6 +3131,8 @@ Optional fields:
 - `SizeOnDisk`: `int`
 - `CreationTime`: `datetime`
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+<a id="searchgamesessionsinputrequesttypedef"></a>
 
 ## SearchGameSessionsInputRequestTypeDef
 
@@ -2788,6 +3150,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="searchgamesessionsoutputtypedef"></a>
+
 ## SearchGameSessionsOutputTypeDef
 
 ```python
@@ -2801,6 +3165,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="serverprocesstypedef"></a>
 
 ## ServerProcessTypeDef
 
@@ -2816,6 +3182,8 @@ Required fields:
 Optional fields:
 
 - `Parameters`: `str`
+
+<a id="startfleetactionsinputrequesttypedef"></a>
 
 ## StartFleetActionsInputRequestTypeDef
 
@@ -2833,6 +3201,8 @@ Optional fields:
 
 - `Location`: `str`
 
+<a id="startfleetactionsoutputtypedef"></a>
+
 ## StartFleetActionsOutputTypeDef
 
 ```python
@@ -2845,6 +3215,8 @@ Required fields:
 - `FleetArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startgamesessionplacementinputrequesttypedef"></a>
 
 ## StartGameSessionPlacementInputRequestTypeDef
 
@@ -2869,6 +3241,8 @@ Optional fields:
   `Sequence`\[[DesiredPlayerSessionTypeDef](./type_defs.md#desiredplayersessiontypedef)\]
 - `GameSessionData`: `str`
 
+<a id="startgamesessionplacementoutputtypedef"></a>
+
 ## StartGameSessionPlacementOutputTypeDef
 
 ```python
@@ -2881,6 +3255,8 @@ Required fields:
   [GameSessionPlacementTypeDef](./type_defs.md#gamesessionplacementtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startmatchbackfillinputrequesttypedef"></a>
 
 ## StartMatchBackfillInputRequestTypeDef
 
@@ -2898,6 +3274,8 @@ Optional fields:
 - `TicketId`: `str`
 - `GameSessionArn`: `str`
 
+<a id="startmatchbackfilloutputtypedef"></a>
+
 ## StartMatchBackfillOutputTypeDef
 
 ```python
@@ -2910,6 +3288,8 @@ Required fields:
   [MatchmakingTicketTypeDef](./type_defs.md#matchmakingtickettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startmatchmakinginputrequesttypedef"></a>
 
 ## StartMatchmakingInputRequestTypeDef
 
@@ -2926,6 +3306,8 @@ Optional fields:
 
 - `TicketId`: `str`
 
+<a id="startmatchmakingoutputtypedef"></a>
+
 ## StartMatchmakingOutputTypeDef
 
 ```python
@@ -2938,6 +3320,8 @@ Required fields:
   [MatchmakingTicketTypeDef](./type_defs.md#matchmakingtickettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="stopfleetactionsinputrequesttypedef"></a>
 
 ## StopFleetActionsInputRequestTypeDef
 
@@ -2955,6 +3339,8 @@ Optional fields:
 
 - `Location`: `str`
 
+<a id="stopfleetactionsoutputtypedef"></a>
+
 ## StopFleetActionsOutputTypeDef
 
 ```python
@@ -2968,6 +3354,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopgamesessionplacementinputrequesttypedef"></a>
+
 ## StopGameSessionPlacementInputRequestTypeDef
 
 ```python
@@ -2977,6 +3365,8 @@ from mypy_boto3_gamelift.type_defs import StopGameSessionPlacementInputRequestTy
 Required fields:
 
 - `PlacementId`: `str`
+
+<a id="stopgamesessionplacementoutputtypedef"></a>
 
 ## StopGameSessionPlacementOutputTypeDef
 
@@ -2991,6 +3381,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopmatchmakinginputrequesttypedef"></a>
+
 ## StopMatchmakingInputRequestTypeDef
 
 ```python
@@ -3000,6 +3392,8 @@ from mypy_boto3_gamelift.type_defs import StopMatchmakingInputRequestTypeDef
 Required fields:
 
 - `TicketId`: `str`
+
+<a id="suspendgameservergroupinputrequesttypedef"></a>
 
 ## SuspendGameServerGroupInputRequestTypeDef
 
@@ -3012,6 +3406,8 @@ Required fields:
 - `GameServerGroupName`: `str`
 - `SuspendActions`: `Sequence`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
   [GameServerGroupActionType](./literals.md#gameservergroupactiontype))\]
+
+<a id="suspendgameservergroupoutputtypedef"></a>
 
 ## SuspendGameServerGroupOutputTypeDef
 
@@ -3026,6 +3422,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -3036,6 +3434,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -3048,6 +3448,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="targetconfigurationtypedef"></a>
+
 ## TargetConfigurationTypeDef
 
 ```python
@@ -3057,6 +3459,8 @@ from mypy_boto3_gamelift.type_defs import TargetConfigurationTypeDef
 Required fields:
 
 - `TargetValue`: `float`
+
+<a id="targettrackingconfigurationtypedef"></a>
 
 ## TargetTrackingConfigurationTypeDef
 
@@ -3068,6 +3472,8 @@ Required fields:
 
 - `TargetValue`: `float`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -3078,6 +3484,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatealiasinputrequesttypedef"></a>
 
 ## UpdateAliasInputRequestTypeDef
 
@@ -3096,6 +3504,8 @@ Optional fields:
 - `RoutingStrategy`:
   [RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef)
 
+<a id="updatealiasoutputtypedef"></a>
+
 ## UpdateAliasOutputTypeDef
 
 ```python
@@ -3107,6 +3517,8 @@ Required fields:
 - `Alias`: [AliasTypeDef](./type_defs.md#aliastypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatebuildinputrequesttypedef"></a>
 
 ## UpdateBuildInputRequestTypeDef
 
@@ -3123,6 +3535,8 @@ Optional fields:
 - `Name`: `str`
 - `Version`: `str`
 
+<a id="updatebuildoutputtypedef"></a>
+
 ## UpdateBuildOutputTypeDef
 
 ```python
@@ -3134,6 +3548,8 @@ Required fields:
 - `Build`: [BuildTypeDef](./type_defs.md#buildtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefleetattributesinputrequesttypedef"></a>
 
 ## UpdateFleetAttributesInputRequestTypeDef
 
@@ -3155,6 +3571,8 @@ Optional fields:
   [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
 - `MetricGroups`: `Sequence`\[`str`\]
 
+<a id="updatefleetattributesoutputtypedef"></a>
+
 ## UpdateFleetAttributesOutputTypeDef
 
 ```python
@@ -3166,6 +3584,8 @@ Required fields:
 - `FleetId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefleetcapacityinputrequesttypedef"></a>
 
 ## UpdateFleetCapacityInputRequestTypeDef
 
@@ -3184,6 +3604,8 @@ Optional fields:
 - `MaxSize`: `int`
 - `Location`: `str`
 
+<a id="updatefleetcapacityoutputtypedef"></a>
+
 ## UpdateFleetCapacityOutputTypeDef
 
 ```python
@@ -3197,6 +3619,8 @@ Required fields:
 - `Location`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefleetportsettingsinputrequesttypedef"></a>
 
 ## UpdateFleetPortSettingsInputRequestTypeDef
 
@@ -3215,6 +3639,8 @@ Optional fields:
 - `InboundPermissionRevocations`:
   `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 
+<a id="updatefleetportsettingsoutputtypedef"></a>
+
 ## UpdateFleetPortSettingsOutputTypeDef
 
 ```python
@@ -3226,6 +3652,8 @@ Required fields:
 - `FleetId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updategameservergroupinputrequesttypedef"></a>
 
 ## UpdateGameServerGroupInputRequestTypeDef
 
@@ -3247,6 +3675,8 @@ Optional fields:
 - `BalancingStrategy`:
   [BalancingStrategyType](./literals.md#balancingstrategytype)
 
+<a id="updategameservergroupoutputtypedef"></a>
+
 ## UpdateGameServerGroupOutputTypeDef
 
 ```python
@@ -3259,6 +3689,8 @@ Required fields:
   [GameServerGroupTypeDef](./type_defs.md#gameservergrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updategameserverinputrequesttypedef"></a>
 
 ## UpdateGameServerInputRequestTypeDef
 
@@ -3279,6 +3711,8 @@ Optional fields:
 - `HealthCheck`: `Literal['HEALTHY']` (see
   [GameServerHealthCheckType](./literals.md#gameserverhealthchecktype))
 
+<a id="updategameserveroutputtypedef"></a>
+
 ## UpdateGameServerOutputTypeDef
 
 ```python
@@ -3290,6 +3724,8 @@ Required fields:
 - `GameServer`: [GameServerTypeDef](./type_defs.md#gameservertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updategamesessioninputrequesttypedef"></a>
 
 ## UpdateGameSessionInputRequestTypeDef
 
@@ -3310,6 +3746,8 @@ Optional fields:
 - `ProtectionPolicy`:
   [ProtectionPolicyType](./literals.md#protectionpolicytype)
 
+<a id="updategamesessionoutputtypedef"></a>
+
 ## UpdateGameSessionOutputTypeDef
 
 ```python
@@ -3321,6 +3759,8 @@ Required fields:
 - `GameSession`: [GameSessionTypeDef](./type_defs.md#gamesessiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updategamesessionqueueinputrequesttypedef"></a>
 
 ## UpdateGameSessionQueueInputRequestTypeDef
 
@@ -3346,6 +3786,8 @@ Optional fields:
 - `CustomEventData`: `str`
 - `NotificationTarget`: `str`
 
+<a id="updategamesessionqueueoutputtypedef"></a>
+
 ## UpdateGameSessionQueueOutputTypeDef
 
 ```python
@@ -3358,6 +3800,8 @@ Required fields:
   [GameSessionQueueTypeDef](./type_defs.md#gamesessionqueuetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatematchmakingconfigurationinputrequesttypedef"></a>
 
 ## UpdateMatchmakingConfigurationInputRequestTypeDef
 
@@ -3386,6 +3830,8 @@ Optional fields:
 - `BackfillMode`: [BackfillModeType](./literals.md#backfillmodetype)
 - `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)
 
+<a id="updatematchmakingconfigurationoutputtypedef"></a>
+
 ## UpdateMatchmakingConfigurationOutputTypeDef
 
 ```python
@@ -3399,6 +3845,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateruntimeconfigurationinputrequesttypedef"></a>
+
 ## UpdateRuntimeConfigurationInputRequestTypeDef
 
 ```python
@@ -3410,6 +3858,8 @@ Required fields:
 - `FleetId`: `str`
 - `RuntimeConfiguration`:
   [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)
+
+<a id="updateruntimeconfigurationoutputtypedef"></a>
 
 ## UpdateRuntimeConfigurationOutputTypeDef
 
@@ -3423,6 +3873,8 @@ Required fields:
   [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatescriptinputrequesttypedef"></a>
 
 ## UpdateScriptInputRequestTypeDef
 
@@ -3441,6 +3893,8 @@ Optional fields:
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
+<a id="updatescriptoutputtypedef"></a>
+
 ## UpdateScriptOutputTypeDef
 
 ```python
@@ -3453,6 +3907,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="validatematchmakingrulesetinputrequesttypedef"></a>
+
 ## ValidateMatchmakingRuleSetInputRequestTypeDef
 
 ```python
@@ -3462,6 +3918,8 @@ from mypy_boto3_gamelift.type_defs import ValidateMatchmakingRuleSetInputRequest
 Required fields:
 
 - `RuleSetBody`: `str`
+
+<a id="validatematchmakingrulesetoutputtypedef"></a>
 
 ## ValidateMatchmakingRuleSetOutputTypeDef
 
@@ -3474,6 +3932,8 @@ Required fields:
 - `Valid`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="vpcpeeringauthorizationtypedef"></a>
 
 ## VpcPeeringAuthorizationTypeDef
 
@@ -3489,6 +3949,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `ExpirationTime`: `datetime`
 
+<a id="vpcpeeringconnectionstatustypedef"></a>
+
 ## VpcPeeringConnectionStatusTypeDef
 
 ```python
@@ -3499,6 +3961,8 @@ Optional fields:
 
 - `Code`: `str`
 - `Message`: `str`
+
+<a id="vpcpeeringconnectiontypedef"></a>
 
 ## VpcPeeringConnectionTypeDef
 

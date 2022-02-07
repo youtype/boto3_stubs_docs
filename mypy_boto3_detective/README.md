@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-detective-module"></a>
+
 # Type annotations for boto3 Detective module
 
 > [Index](..) > Detective
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
 type annotations stubs module
-[mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
+[mypy-boto3-detective](https://pypi.org/project/mypy-boto3-detective/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[detective]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[detective]'
+
+# standalone installation
 pip install mypy-boto3-detective
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-detective
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="detectiveclient"></a>
 
 ## DetectiveClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_detective.client import DetectiveClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -55,6 +69,8 @@ from mypy_boto3_detective.client import DetectiveClient
 - [untag_resource](./client.md#untag_resource)
 - [update_organization_configuration](./client.md#update_organization_configuration)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 DetectiveClient [exceptions](./client.md#exceptions)
@@ -66,6 +82,8 @@ DetectiveClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - TooManyRequestsException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -81,6 +99,8 @@ from mypy_boto3_detective.literals import InvitationTypeType, ...
 - [MemberDisabledReasonType](./literals.md#memberdisabledreasontype)
 - [MemberStatusType](./literals.md#memberstatustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

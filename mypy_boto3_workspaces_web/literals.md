@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-workspacesweb-module"></a>
+
 # Literals for boto3 WorkSpacesWeb module
 
 > [Index](..) > [WorkSpacesWeb](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkSpacesWeb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb)
 type annotations stubs module
-[mypy_boto3_workspaces_web](https://pypi.org/project/mypy-boto3-workspaces-web/).
+[mypy-boto3-workspaces-web](https://pypi.org/project/mypy-boto3-workspaces-web/).
 
 - [Literals for boto3 WorkSpacesWeb module](#literals-for-boto3-workspacesweb-module)
   - [BrowserTypeType](#browsertypetype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [PortalStatusType](#portalstatustype)
   - [RendererTypeType](#renderertypetype)
   - [ServiceName](#servicename)
+
+<a id="browsertypetype"></a>
 
 ## BrowserTypeType
 
@@ -25,6 +29,8 @@ Values:
 
 - `Chrome`
 
+<a id="enabledtypetype"></a>
+
 ## EnabledTypeType
 
 ```python
@@ -35,6 +41,8 @@ Values:
 
 - `Disabled`
 - `Enabled`
+
+<a id="identityprovidertypetype"></a>
 
 ## IdentityProviderTypeType
 
@@ -51,6 +59,8 @@ Values:
 - `SAML`
 - `SignInWithApple`
 
+<a id="portalstatustype"></a>
+
 ## PortalStatusType
 
 ```python
@@ -63,6 +73,8 @@ Values:
 - `Incomplete`
 - `Pending`
 
+<a id="renderertypetype"></a>
+
 ## RendererTypeType
 
 ```python
@@ -72,6 +84,8 @@ from mypy_boto3_workspaces_web.literals import RendererTypeType
 Values:
 
 - `AppStream`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

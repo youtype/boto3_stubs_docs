@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-elasticache-module"></a>
+
 # Literals for boto3 ElastiCache module
 
 > [Index](..) > [ElastiCache](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module
-[mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
+[mypy-boto3-elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 - [Literals for boto3 ElastiCache module](#literals-for-boto3-elasticache-module)
   - [AZModeType](#azmodetype)
@@ -55,6 +57,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="azmodetype"></a>
+
 ## AZModeType
 
 ```python
@@ -66,6 +70,8 @@ Values:
 - `cross-az`
 - `single-az`
 
+<a id="authtokenupdatestatustype"></a>
+
 ## AuthTokenUpdateStatusType
 
 ```python
@@ -76,6 +82,8 @@ Values:
 
 - `ROTATING`
 - `SETTING`
+
+<a id="authtokenupdatestrategytypetype"></a>
 
 ## AuthTokenUpdateStrategyTypeType
 
@@ -89,6 +97,8 @@ Values:
 - `ROTATE`
 - `SET`
 
+<a id="authenticationtypetype"></a>
+
 ## AuthenticationTypeType
 
 ```python
@@ -99,6 +109,8 @@ Values:
 
 - `no-password`
 - `password`
+
+<a id="automaticfailoverstatustype"></a>
 
 ## AutomaticFailoverStatusType
 
@@ -113,6 +125,8 @@ Values:
 - `enabled`
 - `enabling`
 
+<a id="cacheclusteravailablewaitername"></a>
+
 ## CacheClusterAvailableWaiterName
 
 ```python
@@ -123,6 +137,8 @@ Values:
 
 - `cache_cluster_available`
 
+<a id="cacheclusterdeletedwaitername"></a>
+
 ## CacheClusterDeletedWaiterName
 
 ```python
@@ -132,6 +148,8 @@ from mypy_boto3_elasticache.literals import CacheClusterDeletedWaiterName
 Values:
 
 - `cache_cluster_deleted`
+
+<a id="changetypetype"></a>
 
 ## ChangeTypeType
 
@@ -144,6 +162,8 @@ Values:
 - `immediate`
 - `requires-reboot`
 
+<a id="datatieringstatustype"></a>
+
 ## DataTieringStatusType
 
 ```python
@@ -155,6 +175,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="describecacheclusterspaginatorname"></a>
+
 ## DescribeCacheClustersPaginatorName
 
 ```python
@@ -164,6 +186,8 @@ from mypy_boto3_elasticache.literals import DescribeCacheClustersPaginatorName
 Values:
 
 - `describe_cache_clusters`
+
+<a id="describecacheengineversionspaginatorname"></a>
 
 ## DescribeCacheEngineVersionsPaginatorName
 
@@ -175,6 +199,8 @@ Values:
 
 - `describe_cache_engine_versions`
 
+<a id="describecacheparametergroupspaginatorname"></a>
+
 ## DescribeCacheParameterGroupsPaginatorName
 
 ```python
@@ -184,6 +210,8 @@ from mypy_boto3_elasticache.literals import DescribeCacheParameterGroupsPaginato
 Values:
 
 - `describe_cache_parameter_groups`
+
+<a id="describecacheparameterspaginatorname"></a>
 
 ## DescribeCacheParametersPaginatorName
 
@@ -195,6 +223,8 @@ Values:
 
 - `describe_cache_parameters`
 
+<a id="describecachesecuritygroupspaginatorname"></a>
+
 ## DescribeCacheSecurityGroupsPaginatorName
 
 ```python
@@ -204,6 +234,8 @@ from mypy_boto3_elasticache.literals import DescribeCacheSecurityGroupsPaginator
 Values:
 
 - `describe_cache_security_groups`
+
+<a id="describecachesubnetgroupspaginatorname"></a>
 
 ## DescribeCacheSubnetGroupsPaginatorName
 
@@ -215,6 +247,8 @@ Values:
 
 - `describe_cache_subnet_groups`
 
+<a id="describeenginedefaultparameterspaginatorname"></a>
+
 ## DescribeEngineDefaultParametersPaginatorName
 
 ```python
@@ -224,6 +258,8 @@ from mypy_boto3_elasticache.literals import DescribeEngineDefaultParametersPagin
 Values:
 
 - `describe_engine_default_parameters`
+
+<a id="describeeventspaginatorname"></a>
 
 ## DescribeEventsPaginatorName
 
@@ -235,6 +271,8 @@ Values:
 
 - `describe_events`
 
+<a id="describeglobalreplicationgroupspaginatorname"></a>
+
 ## DescribeGlobalReplicationGroupsPaginatorName
 
 ```python
@@ -244,6 +282,8 @@ from mypy_boto3_elasticache.literals import DescribeGlobalReplicationGroupsPagin
 Values:
 
 - `describe_global_replication_groups`
+
+<a id="describereplicationgroupspaginatorname"></a>
 
 ## DescribeReplicationGroupsPaginatorName
 
@@ -255,6 +295,8 @@ Values:
 
 - `describe_replication_groups`
 
+<a id="describereservedcachenodesofferingspaginatorname"></a>
+
 ## DescribeReservedCacheNodesOfferingsPaginatorName
 
 ```python
@@ -264,6 +306,8 @@ from mypy_boto3_elasticache.literals import DescribeReservedCacheNodesOfferingsP
 Values:
 
 - `describe_reserved_cache_nodes_offerings`
+
+<a id="describereservedcachenodespaginatorname"></a>
 
 ## DescribeReservedCacheNodesPaginatorName
 
@@ -275,6 +319,8 @@ Values:
 
 - `describe_reserved_cache_nodes`
 
+<a id="describeserviceupdatespaginatorname"></a>
+
 ## DescribeServiceUpdatesPaginatorName
 
 ```python
@@ -284,6 +330,8 @@ from mypy_boto3_elasticache.literals import DescribeServiceUpdatesPaginatorName
 Values:
 
 - `describe_service_updates`
+
+<a id="describesnapshotspaginatorname"></a>
 
 ## DescribeSnapshotsPaginatorName
 
@@ -295,6 +343,8 @@ Values:
 
 - `describe_snapshots`
 
+<a id="describeupdateactionspaginatorname"></a>
+
 ## DescribeUpdateActionsPaginatorName
 
 ```python
@@ -304,6 +354,8 @@ from mypy_boto3_elasticache.literals import DescribeUpdateActionsPaginatorName
 Values:
 
 - `describe_update_actions`
+
+<a id="describeusergroupspaginatorname"></a>
 
 ## DescribeUserGroupsPaginatorName
 
@@ -315,6 +367,8 @@ Values:
 
 - `describe_user_groups`
 
+<a id="describeuserspaginatorname"></a>
+
 ## DescribeUsersPaginatorName
 
 ```python
@@ -324,6 +378,8 @@ from mypy_boto3_elasticache.literals import DescribeUsersPaginatorName
 Values:
 
 - `describe_users`
+
+<a id="destinationtypetype"></a>
 
 ## DestinationTypeType
 
@@ -335,6 +391,8 @@ Values:
 
 - `cloudwatch-logs`
 - `kinesis-firehose`
+
+<a id="logdeliveryconfigurationstatustype"></a>
 
 ## LogDeliveryConfigurationStatusType
 
@@ -350,6 +408,8 @@ Values:
 - `error`
 - `modifying`
 
+<a id="logformattype"></a>
+
 ## LogFormatType
 
 ```python
@@ -360,6 +420,8 @@ Values:
 
 - `json`
 - `text`
+
+<a id="logtypetype"></a>
 
 ## LogTypeType
 
@@ -372,6 +434,8 @@ Values:
 - `engine-log`
 - `slow-log`
 
+<a id="multiazstatustype"></a>
+
 ## MultiAZStatusType
 
 ```python
@@ -383,6 +447,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="nodeupdateinitiatedbytype"></a>
+
 ## NodeUpdateInitiatedByType
 
 ```python
@@ -393,6 +459,8 @@ Values:
 
 - `customer`
 - `system`
+
+<a id="nodeupdatestatustype"></a>
 
 ## NodeUpdateStatusType
 
@@ -409,6 +477,8 @@ Values:
 - `stopping`
 - `waiting-to-start`
 
+<a id="outpostmodetype"></a>
+
 ## OutpostModeType
 
 ```python
@@ -419,6 +489,8 @@ Values:
 
 - `cross-outpost`
 - `single-outpost`
+
+<a id="pendingautomaticfailoverstatustype"></a>
 
 ## PendingAutomaticFailoverStatusType
 
@@ -431,6 +503,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="replicationgroupavailablewaitername"></a>
+
 ## ReplicationGroupAvailableWaiterName
 
 ```python
@@ -441,6 +515,8 @@ Values:
 
 - `replication_group_available`
 
+<a id="replicationgroupdeletedwaitername"></a>
+
 ## ReplicationGroupDeletedWaiterName
 
 ```python
@@ -450,6 +526,8 @@ from mypy_boto3_elasticache.literals import ReplicationGroupDeletedWaiterName
 Values:
 
 - `replication_group_deleted`
+
+<a id="serviceupdateseveritytype"></a>
 
 ## ServiceUpdateSeverityType
 
@@ -464,6 +542,8 @@ Values:
 - `low`
 - `medium`
 
+<a id="serviceupdatestatustype"></a>
+
 ## ServiceUpdateStatusType
 
 ```python
@@ -476,6 +556,8 @@ Values:
 - `cancelled`
 - `expired`
 
+<a id="serviceupdatetypetype"></a>
+
 ## ServiceUpdateTypeType
 
 ```python
@@ -485,6 +567,8 @@ from mypy_boto3_elasticache.literals import ServiceUpdateTypeType
 Values:
 
 - `security-update`
+
+<a id="slamettype"></a>
 
 ## SlaMetType
 
@@ -497,6 +581,8 @@ Values:
 - `n/a`
 - `no`
 - `yes`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -513,6 +599,8 @@ Values:
 - `replication-group`
 - `user`
 - `user-group`
+
+<a id="updateactionstatustype"></a>
 
 ## UpdateActionStatusType
 
@@ -531,6 +619,8 @@ Values:
 - `stopped`
 - `stopping`
 - `waiting-to-start`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -840,6 +930,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -865,6 +957,8 @@ Values:
 - `describe_update_actions`
 - `describe_user_groups`
 - `describe_users`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

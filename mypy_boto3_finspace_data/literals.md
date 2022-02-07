@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-finspacedata-module"></a>
+
 # Literals for boto3 FinSpaceData module
 
 > [Index](..) > [FinSpaceData](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
 type annotations stubs module
-[mypy_boto3_finspace_data](https://pypi.org/project/mypy-boto3-finspace-data/).
+[mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 - [Literals for boto3 FinSpaceData module](#literals-for-boto3-finspacedata-module)
   - [ChangeTypeType](#changetypetype)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="changetypetype"></a>
+
 ## ChangeTypeType
 
 ```python
@@ -34,6 +38,8 @@ Values:
 - `APPEND`
 - `MODIFY`
 - `REPLACE`
+
+<a id="columndatatypetype"></a>
 
 ## ColumnDataTypeType
 
@@ -56,6 +62,8 @@ Values:
 - `STRING`
 - `TINYINT`
 
+<a id="dataviewstatustype"></a>
+
 ## DataViewStatusType
 
 ```python
@@ -73,6 +81,8 @@ Values:
 - `SUCCESS`
 - `TIMEOUT`
 
+<a id="datasetkindtype"></a>
+
 ## DatasetKindType
 
 ```python
@@ -83,6 +93,8 @@ Values:
 
 - `NON_TABULAR`
 - `TABULAR`
+
+<a id="datasetstatustype"></a>
 
 ## DatasetStatusType
 
@@ -96,6 +108,8 @@ Values:
 - `PENDING`
 - `RUNNING`
 - `SUCCESS`
+
+<a id="errorcategorytype"></a>
 
 ## ErrorCategoryType
 
@@ -114,6 +128,8 @@ Values:
 - `USER_RECOVERABLE`
 - `VALIDATION`
 
+<a id="exportfileformattype"></a>
+
 ## ExportFileFormatType
 
 ```python
@@ -124,6 +140,8 @@ Values:
 
 - `DELIMITED_TEXT`
 - `PARQUET`
+
+<a id="ingestionstatustype"></a>
 
 ## IngestionStatusType
 
@@ -139,6 +157,8 @@ Values:
 - `STOP_REQUESTED`
 - `SUCCESS`
 
+<a id="listchangesetspaginatorname"></a>
+
 ## ListChangesetsPaginatorName
 
 ```python
@@ -148,6 +168,8 @@ from mypy_boto3_finspace_data.literals import ListChangesetsPaginatorName
 Values:
 
 - `list_changesets`
+
+<a id="listdataviewspaginatorname"></a>
 
 ## ListDataViewsPaginatorName
 
@@ -159,6 +181,8 @@ Values:
 
 - `list_data_views`
 
+<a id="listdatasetspaginatorname"></a>
+
 ## ListDatasetsPaginatorName
 
 ```python
@@ -168,6 +192,8 @@ from mypy_boto3_finspace_data.literals import ListDatasetsPaginatorName
 Values:
 
 - `list_datasets`
+
+<a id="locationtypetype"></a>
 
 ## locationTypeType
 
@@ -179,6 +205,8 @@ Values:
 
 - `INGESTION`
 - `SAGEMAKER`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -487,6 +515,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

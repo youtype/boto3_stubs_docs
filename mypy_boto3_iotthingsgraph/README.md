@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iotthingsgraph-module"></a>
+
 # Type annotations for boto3 IoTThingsGraph module
 
 > [Index](..) > IoTThingsGraph
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
 type annotations stubs module
-[mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
+[mypy-boto3-iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iotthingsgraph]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iotthingsgraph]'
+
+# standalone installation
 pip install mypy-boto3-iotthingsgraph
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-iotthingsgraph
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="iotthingsgraphclient"></a>
+
 ## IoTThingsGraphClient
 
 Type annotations for `boto3.client("iotthingsgraph")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iotthingsgraph.client import IoTThingsGraphClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -72,6 +86,8 @@ from mypy_boto3_iotthingsgraph.client import IoTThingsGraphClient
 - [update_system_template](./client.md#update_system_template)
 - [upload_entity_definitions](./client.md#upload_entity_definitions)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoTThingsGraphClient [exceptions](./client.md#exceptions)
@@ -85,6 +101,8 @@ IoTThingsGraphClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ThrottlingException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -93,7 +111,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.paginators import GetFlowTemplateRevisionsPaginator, ...
+from mypy_boto3_iotthingsgraph.paginator import GetFlowTemplateRevisionsPaginator, ...
 ```
 
 - [GetFlowTemplateRevisionsPaginator](./paginators.md#getflowtemplaterevisionspaginator)
@@ -106,6 +124,8 @@ from mypy_boto3_iotthingsgraph.paginators import GetFlowTemplateRevisionsPaginat
 - [SearchSystemInstancesPaginator](./paginators.md#searchsysteminstancespaginator)
 - [SearchSystemTemplatesPaginator](./paginators.md#searchsystemtemplatespaginator)
 - [SearchThingsPaginator](./paginators.md#searchthingspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -142,6 +162,8 @@ from mypy_boto3_iotthingsgraph.literals import DefinitionLanguageType, ...
 - [UploadStatusType](./literals.md#uploadstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

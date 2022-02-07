@@ -1,3 +1,5 @@
+<a id="chimesdkidentityclient-for-boto3-chimesdkidentity-module"></a>
+
 # ChimeSDKIdentityClient for boto3 ChimeSDKIdentity module
 
 > [Index](..) > [ChimeSDKIdentity](.) > ChimeSDKIdentityClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ChimeSDKIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity)
 type annotations stubs module
-[mypy_boto3_chime_sdk_identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
+[mypy-boto3-chime-sdk-identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
 
 - [ChimeSDKIdentityClient for boto3 ChimeSDKIdentity module](#chimesdkidentityclient-for-boto3-chimesdkidentity-module)
   - [ChimeSDKIdentityClient](#chimesdkidentityclient)
@@ -39,6 +41,8 @@ type annotations stubs module
     - [update_app_instance_user](#update_app_instance_user)
     - [update_app_instance_user_endpoint](#update_app_instance_user_endpoint)
 
+<a id="chimesdkidentityclient"></a>
+
 ## ChimeSDKIdentityClient
 
 Type annotations for `boto3.client("chime-sdk-identity")`
@@ -46,14 +50,17 @@ Type annotations for `boto3.client("chime-sdk-identity")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_chime_sdk_identity.client import ChimeSDKIdentityClient
 
 def get_chime-sdk-identity_client() -> ChimeSDKIdentityClient:
-    return boto3.client("chime-sdk-identity")
+    return Session().client("chime-sdk-identity")
 ```
 
 Boto3 documentation:
 [ChimeSDKIdentity.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -79,7 +86,11 @@ Exceptions:
 - `Exceptions.ThrottledClientException`
 - `Exceptions.UnauthorizedClientException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -91,6 +102,8 @@ Boto3 documentation:
 [ChimeSDKIdentity.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -106,6 +119,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_app_instance"></a>
 
 ### create_app_instance
 
@@ -130,6 +145,8 @@ Keyword-only arguments:
 Returns
 [CreateAppInstanceResponseTypeDef](./type_defs.md#createappinstanceresponsetypedef).
 
+<a id="create_app_instance_admin"></a>
+
 ### create_app_instance_admin
 
 Promotes an `AppInstanceUser` to an `AppInstanceAdmin`.
@@ -150,6 +167,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAppInstanceAdminResponseTypeDef](./type_defs.md#createappinstanceadminresponsetypedef).
+
+<a id="create_app_instance_user"></a>
 
 ### create_app_instance_user
 
@@ -176,6 +195,8 @@ Keyword-only arguments:
 Returns
 [CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef).
 
+<a id="delete_app_instance"></a>
+
 ### delete_app_instance
 
 Deletes an `AppInstance` and all associated data asynchronously.
@@ -192,6 +213,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
+
+<a id="delete_app_instance_admin"></a>
 
 ### delete_app_instance_admin
 
@@ -211,6 +234,8 @@ Keyword-only arguments:
 - `AppInstanceAdminArn`: `str` *(required)*
 - `AppInstanceArn`: `str` *(required)*
 
+<a id="delete_app_instance_user"></a>
+
 ### delete_app_instance_user
 
 Deletes an `AppInstanceUser` .
@@ -227,6 +252,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AppInstanceUserArn`: `str` *(required)*
+
+<a id="deregister_app_instance_user_endpoint"></a>
 
 ### deregister_app_instance_user_endpoint
 
@@ -247,6 +274,8 @@ Keyword-only arguments:
 - `AppInstanceUserArn`: `str` *(required)*
 - `EndpointId`: `str` *(required)*
 
+<a id="describe_app_instance"></a>
+
 ### describe_app_instance
 
 Returns the full details of an `AppInstance` .
@@ -266,6 +295,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAppInstanceResponseTypeDef](./type_defs.md#describeappinstanceresponsetypedef).
+
+<a id="describe_app_instance_admin"></a>
 
 ### describe_app_instance_admin
 
@@ -288,6 +319,8 @@ Keyword-only arguments:
 Returns
 [DescribeAppInstanceAdminResponseTypeDef](./type_defs.md#describeappinstanceadminresponsetypedef).
 
+<a id="describe_app_instance_user"></a>
+
 ### describe_app_instance_user
 
 Returns the full details of an `AppInstanceUser` .
@@ -307,6 +340,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAppInstanceUserResponseTypeDef](./type_defs.md#describeappinstanceuserresponsetypedef).
+
+<a id="describe_app_instance_user_endpoint"></a>
 
 ### describe_app_instance_user_endpoint
 
@@ -330,6 +365,8 @@ Keyword-only arguments:
 Returns
 [DescribeAppInstanceUserEndpointResponseTypeDef](./type_defs.md#describeappinstanceuserendpointresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -348,6 +385,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_app_instance_retention_settings"></a>
 
 ### get_app_instance_retention_settings
 
@@ -370,6 +409,8 @@ Keyword-only arguments:
 Returns
 [GetAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#getappinstanceretentionsettingsresponsetypedef).
 
+<a id="list_app_instance_admins"></a>
+
 ### list_app_instance_admins
 
 Returns a list of the administrators in the `AppInstance` .
@@ -391,6 +432,8 @@ Keyword-only arguments:
 
 Returns
 [ListAppInstanceAdminsResponseTypeDef](./type_defs.md#listappinstanceadminsresponsetypedef).
+
+<a id="list_app_instance_user_endpoints"></a>
 
 ### list_app_instance_user_endpoints
 
@@ -415,6 +458,8 @@ Keyword-only arguments:
 Returns
 [ListAppInstanceUserEndpointsResponseTypeDef](./type_defs.md#listappinstanceuserendpointsresponsetypedef).
 
+<a id="list_app_instance_users"></a>
+
 ### list_app_instance_users
 
 List all `AppInstanceUsers` created under a single `AppInstance` .
@@ -437,6 +482,8 @@ Keyword-only arguments:
 Returns
 [ListAppInstanceUsersResponseTypeDef](./type_defs.md#listappinstanceusersresponsetypedef).
 
+<a id="list_app_instances"></a>
+
 ### list_app_instances
 
 Lists all Amazon Chime `AppInstance` s created under a single AWS account.
@@ -458,6 +505,8 @@ Keyword-only arguments:
 Returns
 [ListAppInstancesResponseTypeDef](./type_defs.md#listappinstancesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags applied to an Amazon Chime SDK identity resource.
@@ -477,6 +526,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_app_instance_retention_settings"></a>
 
 ### put_app_instance_retention_settings
 
@@ -501,6 +552,8 @@ Keyword-only arguments:
 
 Returns
 [PutAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponsetypedef).
+
+<a id="register_app_instance_user_endpoint"></a>
 
 ### register_app_instance_user_endpoint
 
@@ -533,6 +586,8 @@ Keyword-only arguments:
 Returns
 [RegisterAppInstanceUserEndpointResponseTypeDef](./type_defs.md#registerappinstanceuserendpointresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Applies the specified tags to the specified Amazon Chime SDK identity resource.
@@ -549,6 +604,8 @@ Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -568,6 +625,8 @@ Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_app_instance"></a>
 
 ### update_app_instance
 
@@ -591,6 +650,8 @@ Keyword-only arguments:
 Returns
 [UpdateAppInstanceResponseTypeDef](./type_defs.md#updateappinstanceresponsetypedef).
 
+<a id="update_app_instance_user"></a>
+
 ### update_app_instance_user
 
 Updates the details of an `AppInstanceUser`.
@@ -612,6 +673,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAppInstanceUserResponseTypeDef](./type_defs.md#updateappinstanceuserresponsetypedef).
+
+<a id="update_app_instance_user_endpoint"></a>
 
 ### update_app_instance_user_endpoint
 

@@ -1,3 +1,5 @@
+<a id="clouddirectoryclient-for-boto3-clouddirectory-module"></a>
+
 # CloudDirectoryClient for boto3 CloudDirectory module
 
 > [Index](..) > [CloudDirectory](.) > CloudDirectoryClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
 type annotations stubs module
-[mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
+[mypy-boto3-clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
 - [CloudDirectoryClient for boto3 CloudDirectory module](#clouddirectoryclient-for-boto3-clouddirectory-module)
   - [CloudDirectoryClient](#clouddirectoryclient)
@@ -82,6 +84,8 @@ type annotations stubs module
     - [upgrade_published_schema](#upgrade_published_schema)
     - [get_paginator](#get_paginator)
 
+<a id="clouddirectoryclient"></a>
+
 ## CloudDirectoryClient
 
 Type annotations for `boto3.client("clouddirectory")`
@@ -89,14 +93,17 @@ Type annotations for `boto3.client("clouddirectory")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_clouddirectory.client import CloudDirectoryClient
 
 def get_clouddirectory_client() -> CloudDirectoryClient:
-    return boto3.client("clouddirectory")
+    return Session().client("clouddirectory")
 ```
 
 Boto3 documentation:
 [CloudDirectory.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -149,7 +156,11 @@ Exceptions:
 - `Exceptions.UnsupportedIndexTypeException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -161,6 +172,8 @@ Boto3 documentation:
 [CloudDirectory.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_facet_to_object"></a>
 
 ### add_facet_to_object
 
@@ -187,6 +200,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="apply_schema"></a>
+
 ### apply_schema
 
 Copies the input published schema, at the specified version, into the Directory
@@ -207,6 +222,8 @@ Keyword-only arguments:
 
 Returns
 [ApplySchemaResponseTypeDef](./type_defs.md#applyschemaresponsetypedef).
+
+<a id="attach_object"></a>
 
 ### attach_object
 
@@ -232,6 +249,8 @@ Keyword-only arguments:
 Returns
 [AttachObjectResponseTypeDef](./type_defs.md#attachobjectresponsetypedef).
 
+<a id="attach_policy"></a>
+
 ### attach_policy
 
 Attaches a policy object to a regular object.
@@ -253,6 +272,8 @@ Keyword-only arguments:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="attach_to_index"></a>
 
 ### attach_to_index
 
@@ -276,6 +297,8 @@ Keyword-only arguments:
 
 Returns
 [AttachToIndexResponseTypeDef](./type_defs.md#attachtoindexresponsetypedef).
+
+<a id="attach_typed_link"></a>
 
 ### attach_typed_link
 
@@ -306,6 +329,8 @@ Keyword-only arguments:
 Returns
 [AttachTypedLinkResponseTypeDef](./type_defs.md#attachtypedlinkresponsetypedef).
 
+<a id="batch_read"></a>
+
 ### batch_read
 
 Performs all the read operations in a batch.
@@ -329,6 +354,8 @@ Keyword-only arguments:
 
 Returns [BatchReadResponseTypeDef](./type_defs.md#batchreadresponsetypedef).
 
+<a id="batch_write"></a>
+
 ### batch_write
 
 Performs all the write operations in a batch.
@@ -350,6 +377,8 @@ Keyword-only arguments:
 
 Returns [BatchWriteResponseTypeDef](./type_defs.md#batchwriteresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -364,6 +393,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_directory"></a>
 
 ### create_directory
 
@@ -384,6 +415,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDirectoryResponseTypeDef](./type_defs.md#createdirectoryresponsetypedef).
+
+<a id="create_facet"></a>
 
 ### create_facet
 
@@ -407,6 +440,8 @@ Keyword-only arguments:
 - `FacetStyle`: [FacetStyleType](./literals.md#facetstyletype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_index"></a>
 
 ### create_index
 
@@ -433,6 +468,8 @@ Keyword-only arguments:
 
 Returns
 [CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
+
+<a id="create_object"></a>
 
 ### create_object
 
@@ -461,6 +498,8 @@ Keyword-only arguments:
 Returns
 [CreateObjectResponseTypeDef](./type_defs.md#createobjectresponsetypedef).
 
+<a id="create_schema"></a>
+
 ### create_schema
 
 Creates a new schema in a development state.
@@ -479,6 +518,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
+
+<a id="create_typed_link_facet"></a>
 
 ### create_typed_link_facet
 
@@ -501,6 +542,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_directory"></a>
+
 ### delete_directory
 
 Deletes a directory.
@@ -520,6 +563,8 @@ Keyword-only arguments:
 Returns
 [DeleteDirectoryResponseTypeDef](./type_defs.md#deletedirectoryresponsetypedef).
 
+<a id="delete_facet"></a>
+
 ### delete_facet
 
 Deletes a given Facet.
@@ -538,6 +583,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_object"></a>
 
 ### delete_object
 
@@ -559,6 +606,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_schema"></a>
+
 ### delete_schema
 
 Deletes a given schema.
@@ -577,6 +626,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteSchemaResponseTypeDef](./type_defs.md#deleteschemaresponsetypedef).
+
+<a id="delete_typed_link_facet"></a>
 
 ### delete_typed_link_facet
 
@@ -597,6 +648,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="detach_from_index"></a>
 
 ### detach_from_index
 
@@ -621,6 +674,8 @@ Keyword-only arguments:
 Returns
 [DetachFromIndexResponseTypeDef](./type_defs.md#detachfromindexresponsetypedef).
 
+<a id="detach_object"></a>
+
 ### detach_object
 
 Detaches a given object from the parent object.
@@ -642,6 +697,8 @@ Keyword-only arguments:
 
 Returns
 [DetachObjectResponseTypeDef](./type_defs.md#detachobjectresponsetypedef).
+
+<a id="detach_policy"></a>
 
 ### detach_policy
 
@@ -665,6 +722,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="detach_typed_link"></a>
+
 ### detach_typed_link
 
 Detaches a typed link from a specified source and target object.
@@ -683,6 +742,8 @@ Keyword-only arguments:
 - `TypedLinkSpecifier`:
   [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
   *(required)*
+
+<a id="disable_directory"></a>
 
 ### disable_directory
 
@@ -703,6 +764,8 @@ Keyword-only arguments:
 Returns
 [DisableDirectoryResponseTypeDef](./type_defs.md#disabledirectoryresponsetypedef).
 
+<a id="enable_directory"></a>
+
 ### enable_directory
 
 Enables the specified directory.
@@ -722,6 +785,8 @@ Keyword-only arguments:
 Returns
 [EnableDirectoryResponseTypeDef](./type_defs.md#enabledirectoryresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -740,6 +805,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_applied_schema_version"></a>
 
 ### get_applied_schema_version
 
@@ -761,6 +828,8 @@ Keyword-only arguments:
 Returns
 [GetAppliedSchemaVersionResponseTypeDef](./type_defs.md#getappliedschemaversionresponsetypedef).
 
+<a id="get_directory"></a>
+
 ### get_directory
 
 Retrieves metadata about a directory.
@@ -779,6 +848,8 @@ Keyword-only arguments:
 
 Returns
 [GetDirectoryResponseTypeDef](./type_defs.md#getdirectoryresponsetypedef).
+
+<a id="get_facet"></a>
 
 ### get_facet
 
@@ -799,6 +870,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns [GetFacetResponseTypeDef](./type_defs.md#getfacetresponsetypedef).
+
+<a id="get_link_attributes"></a>
 
 ### get_link_attributes
 
@@ -825,6 +898,8 @@ Keyword-only arguments:
 
 Returns
 [GetLinkAttributesResponseTypeDef](./type_defs.md#getlinkattributesresponsetypedef).
+
+<a id="get_object_attributes"></a>
 
 ### get_object_attributes
 
@@ -853,6 +928,8 @@ Keyword-only arguments:
 Returns
 [GetObjectAttributesResponseTypeDef](./type_defs.md#getobjectattributesresponsetypedef).
 
+<a id="get_object_information"></a>
+
 ### get_object_information
 
 Retrieves metadata about an object.
@@ -877,6 +954,8 @@ Keyword-only arguments:
 Returns
 [GetObjectInformationResponseTypeDef](./type_defs.md#getobjectinformationresponsetypedef).
 
+<a id="get_schema_as_json"></a>
+
 ### get_schema_as_json
 
 Retrieves a JSON representation of the schema.
@@ -896,6 +975,8 @@ Keyword-only arguments:
 
 Returns
 [GetSchemaAsJsonResponseTypeDef](./type_defs.md#getschemaasjsonresponsetypedef).
+
+<a id="get_typed_link_facet_information"></a>
 
 ### get_typed_link_facet_information
 
@@ -917,6 +998,8 @@ Keyword-only arguments:
 
 Returns
 [GetTypedLinkFacetInformationResponseTypeDef](./type_defs.md#gettypedlinkfacetinformationresponsetypedef).
+
+<a id="list_applied_schema_arns"></a>
 
 ### list_applied_schema_arns
 
@@ -940,6 +1023,8 @@ Keyword-only arguments:
 
 Returns
 [ListAppliedSchemaArnsResponseTypeDef](./type_defs.md#listappliedschemaarnsresponsetypedef).
+
+<a id="list_attached_indices"></a>
 
 ### list_attached_indices
 
@@ -967,6 +1052,8 @@ Keyword-only arguments:
 Returns
 [ListAttachedIndicesResponseTypeDef](./type_defs.md#listattachedindicesresponsetypedef).
 
+<a id="list_development_schema_arns"></a>
+
 ### list_development_schema_arns
 
 Retrieves each Amazon Resource Name (ARN) of schemas in the development state.
@@ -988,6 +1075,8 @@ Keyword-only arguments:
 Returns
 [ListDevelopmentSchemaArnsResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponsetypedef).
 
+<a id="list_directories"></a>
+
 ### list_directories
 
 Lists directories created within an account.
@@ -1008,6 +1097,8 @@ Keyword-only arguments:
 
 Returns
 [ListDirectoriesResponseTypeDef](./type_defs.md#listdirectoriesresponsetypedef).
+
+<a id="list_facet_attributes"></a>
 
 ### list_facet_attributes
 
@@ -1032,6 +1123,8 @@ Keyword-only arguments:
 Returns
 [ListFacetAttributesResponseTypeDef](./type_defs.md#listfacetattributesresponsetypedef).
 
+<a id="list_facet_names"></a>
+
 ### list_facet_names
 
 Retrieves the names of facets that exist in a schema.
@@ -1052,6 +1145,8 @@ Keyword-only arguments:
 
 Returns
 [ListFacetNamesResponseTypeDef](./type_defs.md#listfacetnamesresponsetypedef).
+
+<a id="list_incoming_typed_links"></a>
 
 ### list_incoming_typed_links
 
@@ -1084,6 +1179,8 @@ Keyword-only arguments:
 Returns
 [ListIncomingTypedLinksResponseTypeDef](./type_defs.md#listincomingtypedlinksresponsetypedef).
 
+<a id="list_index"></a>
+
 ### list_index
 
 Lists objects attached to the specified index.
@@ -1110,6 +1207,8 @@ Keyword-only arguments:
 
 Returns [ListIndexResponseTypeDef](./type_defs.md#listindexresponsetypedef).
 
+<a id="list_managed_schema_arns"></a>
+
 ### list_managed_schema_arns
 
 Lists the major version families of each managed schema.
@@ -1131,6 +1230,8 @@ Keyword-only arguments:
 
 Returns
 [ListManagedSchemaArnsResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponsetypedef).
+
+<a id="list_object_attributes"></a>
 
 ### list_object_attributes
 
@@ -1159,6 +1260,8 @@ Keyword-only arguments:
 Returns
 [ListObjectAttributesResponseTypeDef](./type_defs.md#listobjectattributesresponsetypedef).
 
+<a id="list_object_children"></a>
+
 ### list_object_children
 
 Returns a paginated list of child objects that are associated with a given
@@ -1186,6 +1289,8 @@ Keyword-only arguments:
 Returns
 [ListObjectChildrenResponseTypeDef](./type_defs.md#listobjectchildrenresponsetypedef).
 
+<a id="list_object_parent_paths"></a>
+
 ### list_object_parent_paths
 
 Retrieves all available parent paths for any object type such as node, leaf
@@ -1210,6 +1315,8 @@ Keyword-only arguments:
 
 Returns
 [ListObjectParentPathsResponseTypeDef](./type_defs.md#listobjectparentpathsresponsetypedef).
+
+<a id="list_object_parents"></a>
 
 ### list_object_parents
 
@@ -1239,6 +1346,8 @@ Keyword-only arguments:
 Returns
 [ListObjectParentsResponseTypeDef](./type_defs.md#listobjectparentsresponsetypedef).
 
+<a id="list_object_policies"></a>
+
 ### list_object_policies
 
 Returns policies attached to an object in pagination fashion.
@@ -1264,6 +1373,8 @@ Keyword-only arguments:
 
 Returns
 [ListObjectPoliciesResponseTypeDef](./type_defs.md#listobjectpoliciesresponsetypedef).
+
+<a id="list_outgoing_typed_links"></a>
 
 ### list_outgoing_typed_links
 
@@ -1296,6 +1407,8 @@ Keyword-only arguments:
 Returns
 [ListOutgoingTypedLinksResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponsetypedef).
 
+<a id="list_policy_attachments"></a>
+
 ### list_policy_attachments
 
 Returns all of the `ObjectIdentifiers` to which a given policy is attached.
@@ -1322,6 +1435,8 @@ Keyword-only arguments:
 Returns
 [ListPolicyAttachmentsResponseTypeDef](./type_defs.md#listpolicyattachmentsresponsetypedef).
 
+<a id="list_published_schema_arns"></a>
+
 ### list_published_schema_arns
 
 Lists the major version families of each published schema.
@@ -1344,6 +1459,8 @@ Keyword-only arguments:
 Returns
 [ListPublishedSchemaArnsResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns tags for a resource.
@@ -1365,6 +1482,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_typed_link_facet_attributes"></a>
 
 ### list_typed_link_facet_attributes
 
@@ -1390,6 +1509,8 @@ Keyword-only arguments:
 Returns
 [ListTypedLinkFacetAttributesResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponsetypedef).
 
+<a id="list_typed_link_facet_names"></a>
+
 ### list_typed_link_facet_names
 
 Returns a paginated list of `TypedLink` facet names for a particular schema.
@@ -1411,6 +1532,8 @@ Keyword-only arguments:
 
 Returns
 [ListTypedLinkFacetNamesResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponsetypedef).
+
+<a id="lookup_policy"></a>
 
 ### lookup_policy
 
@@ -1435,6 +1558,8 @@ Keyword-only arguments:
 Returns
 [LookupPolicyResponseTypeDef](./type_defs.md#lookuppolicyresponsetypedef).
 
+<a id="publish_schema"></a>
+
 ### publish_schema
 
 Publishes a development schema with a major version and a recommended minor
@@ -1458,6 +1583,8 @@ Keyword-only arguments:
 Returns
 [PublishSchemaResponseTypeDef](./type_defs.md#publishschemaresponsetypedef).
 
+<a id="put_schema_from_json"></a>
+
 ### put_schema_from_json
 
 Allows a schema to be updated using JSON upload.
@@ -1478,6 +1605,8 @@ Keyword-only arguments:
 
 Returns
 [PutSchemaFromJsonResponseTypeDef](./type_defs.md#putschemafromjsonresponsetypedef).
+
+<a id="remove_facet_from_object"></a>
 
 ### remove_facet_from_object
 
@@ -1502,6 +1631,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 An API operation for adding tags to a resource.
@@ -1521,6 +1652,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 An API operation for removing tags from a resource.
@@ -1539,6 +1672,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_facet"></a>
 
 ### update_facet
 
@@ -1561,6 +1696,8 @@ Keyword-only arguments:
 - `ObjectType`: [ObjectTypeType](./literals.md#objecttypetype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_link_attributes"></a>
 
 ### update_link_attributes
 
@@ -1587,6 +1724,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_object_attributes"></a>
+
 ### update_object_attributes
 
 Updates a given object's attributes.
@@ -1612,6 +1751,8 @@ Keyword-only arguments:
 Returns
 [UpdateObjectAttributesResponseTypeDef](./type_defs.md#updateobjectattributesresponsetypedef).
 
+<a id="update_schema"></a>
+
 ### update_schema
 
 Updates the schema name with a new name.
@@ -1631,6 +1772,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
+
+<a id="update_typed_link_facet"></a>
 
 ### update_typed_link_facet
 
@@ -1656,6 +1799,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="upgrade_applied_schema"></a>
+
 ### upgrade_applied_schema
 
 Upgrades a single directory in-place using the `PublishedSchemaArn` with schema
@@ -1678,6 +1823,8 @@ Keyword-only arguments:
 
 Returns
 [UpgradeAppliedSchemaResponseTypeDef](./type_defs.md#upgradeappliedschemaresponsetypedef).
+
+<a id="upgrade_published_schema"></a>
 
 ### upgrade_published_schema
 
@@ -1702,6 +1849,8 @@ Keyword-only arguments:
 
 Returns
 [UpgradePublishedSchemaResponseTypeDef](./type_defs.md#upgradepublishedschemaresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

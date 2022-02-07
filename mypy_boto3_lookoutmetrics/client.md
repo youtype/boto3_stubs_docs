@@ -1,3 +1,5 @@
+<a id="lookoutmetricsclient-for-boto3-lookoutmetrics-module"></a>
+
 # LookoutMetricsClient for boto3 LookoutMetrics module
 
 > [Index](..) > [LookoutMetrics](.) > LookoutMetricsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
 type annotations stubs module
-[mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
+[mypy-boto3-lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
 - [LookoutMetricsClient for boto3 LookoutMetrics module](#lookoutmetricsclient-for-boto3-lookoutmetrics-module)
   - [LookoutMetricsClient](#lookoutmetricsclient)
@@ -42,6 +44,8 @@ type annotations stubs module
     - [update_anomaly_detector](#update_anomaly_detector)
     - [update_metric_set](#update_metric_set)
 
+<a id="lookoutmetricsclient"></a>
+
 ## LookoutMetricsClient
 
 Type annotations for `boto3.client("lookoutmetrics")`
@@ -49,14 +53,17 @@ Type annotations for `boto3.client("lookoutmetrics")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_lookoutmetrics.client import LookoutMetricsClient
 
 def get_lookoutmetrics_client() -> LookoutMetricsClient:
-    return boto3.client("lookoutmetrics")
+    return Session().client("lookoutmetrics")
 ```
 
 Boto3 documentation:
 [LookoutMetrics.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -81,7 +88,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -93,6 +104,8 @@ Boto3 documentation:
 [LookoutMetrics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="activate_anomaly_detector"></a>
 
 ### activate_anomaly_detector
 
@@ -113,6 +126,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="back_test_anomaly_detector"></a>
+
 ### back_test_anomaly_detector
 
 Runs a backtest for anomaly detection for the specified resource.
@@ -132,6 +147,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -146,6 +163,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_alert"></a>
 
 ### create_alert
 
@@ -170,6 +189,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAlertResponseTypeDef](./type_defs.md#createalertresponsetypedef).
+
+<a id="create_anomaly_detector"></a>
 
 ### create_anomaly_detector
 
@@ -196,6 +217,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAnomalyDetectorResponseTypeDef](./type_defs.md#createanomalydetectorresponsetypedef).
+
+<a id="create_metric_set"></a>
 
 ### create_metric_set
 
@@ -229,6 +252,8 @@ Keyword-only arguments:
 Returns
 [CreateMetricSetResponseTypeDef](./type_defs.md#createmetricsetresponsetypedef).
 
+<a id="deactivate_anomaly_detector"></a>
+
 ### deactivate_anomaly_detector
 
 Deactivates an anomaly detector.
@@ -248,6 +273,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_alert"></a>
+
 ### delete_alert
 
 Deletes an alert.
@@ -265,6 +292,8 @@ Keyword-only arguments:
 - `AlertArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_anomaly_detector"></a>
 
 ### delete_anomaly_detector
 
@@ -285,6 +314,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_alert"></a>
+
 ### describe_alert
 
 Describes an alert.
@@ -303,6 +334,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAlertResponseTypeDef](./type_defs.md#describealertresponsetypedef).
+
+<a id="describe_anomaly_detection_executions"></a>
 
 ### describe_anomaly_detection_executions
 
@@ -327,6 +360,8 @@ Keyword-only arguments:
 Returns
 [DescribeAnomalyDetectionExecutionsResponseTypeDef](./type_defs.md#describeanomalydetectionexecutionsresponsetypedef).
 
+<a id="describe_anomaly_detector"></a>
+
 ### describe_anomaly_detector
 
 Describes a detector.
@@ -346,6 +381,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAnomalyDetectorResponseTypeDef](./type_defs.md#describeanomalydetectorresponsetypedef).
+
+<a id="describe_metric_set"></a>
 
 ### describe_metric_set
 
@@ -367,6 +404,8 @@ Keyword-only arguments:
 Returns
 [DescribeMetricSetResponseTypeDef](./type_defs.md#describemetricsetresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -385,6 +424,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_anomaly_group"></a>
 
 ### get_anomaly_group
 
@@ -405,6 +446,8 @@ Keyword-only arguments:
 
 Returns
 [GetAnomalyGroupResponseTypeDef](./type_defs.md#getanomalygroupresponsetypedef).
+
+<a id="get_feedback"></a>
 
 ### get_feedback
 
@@ -430,6 +473,8 @@ Keyword-only arguments:
 Returns
 [GetFeedbackResponseTypeDef](./type_defs.md#getfeedbackresponsetypedef).
 
+<a id="get_sample_data"></a>
+
 ### get_sample_data
 
 Returns a selection of sample records from an Amazon S3 datasource.
@@ -449,6 +494,8 @@ Keyword-only arguments:
 
 Returns
 [GetSampleDataResponseTypeDef](./type_defs.md#getsampledataresponsetypedef).
+
+<a id="list_alerts"></a>
 
 ### list_alerts
 
@@ -470,6 +517,8 @@ Keyword-only arguments:
 
 Returns [ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef).
 
+<a id="list_anomaly_detectors"></a>
+
 ### list_anomaly_detectors
 
 Lists the detectors in the current AWS Region.
@@ -490,6 +539,8 @@ Keyword-only arguments:
 
 Returns
 [ListAnomalyDetectorsResponseTypeDef](./type_defs.md#listanomalydetectorsresponsetypedef).
+
+<a id="list_anomaly_group_related_metrics"></a>
 
 ### list_anomaly_group_related_metrics
 
@@ -517,6 +568,8 @@ Keyword-only arguments:
 Returns
 [ListAnomalyGroupRelatedMetricsResponseTypeDef](./type_defs.md#listanomalygrouprelatedmetricsresponsetypedef).
 
+<a id="list_anomaly_group_summaries"></a>
+
 ### list_anomaly_group_summaries
 
 Returns a list of anomaly groups.
@@ -539,6 +592,8 @@ Keyword-only arguments:
 
 Returns
 [ListAnomalyGroupSummariesResponseTypeDef](./type_defs.md#listanomalygroupsummariesresponsetypedef).
+
+<a id="list_anomaly_group_time_series"></a>
 
 ### list_anomaly_group_time_series
 
@@ -564,6 +619,8 @@ Keyword-only arguments:
 Returns
 [ListAnomalyGroupTimeSeriesResponseTypeDef](./type_defs.md#listanomalygrouptimeseriesresponsetypedef).
 
+<a id="list_metric_sets"></a>
+
 ### list_metric_sets
 
 Lists the datasets in the current AWS Region.
@@ -584,6 +641,8 @@ Keyword-only arguments:
 
 Returns
 [ListMetricSetsResponseTypeDef](./type_defs.md#listmetricsetsresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -607,6 +666,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="put_feedback"></a>
+
 ### put_feedback
 
 Add feedback for an anomalous metric.
@@ -628,6 +689,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds \[tags\](https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors-
@@ -647,6 +710,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -668,6 +733,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_anomaly_detector"></a>
 
 ### update_anomaly_detector
 
@@ -692,6 +759,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAnomalyDetectorResponseTypeDef](./type_defs.md#updateanomalydetectorresponsetypedef).
+
+<a id="update_metric_set"></a>
 
 ### update_metric_set
 

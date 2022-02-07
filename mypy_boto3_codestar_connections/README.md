@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-codestarconnections-module"></a>
+
 # Type annotations for boto3 CodeStarconnections module
 
 > [Index](..) > CodeStarconnections
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
 type annotations stubs module
-[mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
+[mypy-boto3-codestar-connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[codestar-connections]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[codestar-connections]'
+
+# standalone installation
 pip install mypy-boto3-codestar-connections
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-codestar-connections
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="codestarconnectionsclient"></a>
 
 ## CodeStarconnectionsClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_codestar_connections.client import CodeStarconnectionsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -47,6 +61,8 @@ from mypy_boto3_codestar_connections.client import CodeStarconnectionsClient
 - [untag_resource](./client.md#untag_resource)
 - [update_host](./client.md#update_host)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CodeStarconnectionsClient [exceptions](./client.md#exceptions)
@@ -57,6 +73,8 @@ CodeStarconnectionsClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ResourceUnavailableException
 - UnsupportedOperationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -71,6 +89,8 @@ from mypy_boto3_codestar_connections.literals import ConnectionStatusType, ...
 - [ConnectionStatusType](./literals.md#connectionstatustype)
 - [ProviderTypeType](./literals.md#providertypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

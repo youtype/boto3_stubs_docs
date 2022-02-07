@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-appintegrationsservice-module"></a>
+
 # Type annotations for boto3 AppIntegrationsService module
 
 > [Index](..) > AppIntegrationsService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
 type annotations stubs module
-[mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
+[mypy-boto3-appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[appintegrations]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[appintegrations]'
+
+# standalone installation
 pip install mypy-boto3-appintegrations
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-appintegrations
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="appintegrationsserviceclient"></a>
 
 ## AppIntegrationsServiceClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_appintegrations.client import AppIntegrationsServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -50,6 +64,8 @@ from mypy_boto3_appintegrations.client import AppIntegrationsServiceClient
 - [update_data_integration](./client.md#update_data_integration)
 - [update_event_integration](./client.md#update_event_integration)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AppIntegrationsServiceClient [exceptions](./client.md#exceptions)
@@ -63,6 +79,8 @@ AppIntegrationsServiceClient [exceptions](./client.md#exceptions)
 - ResourceQuotaExceededException
 - ThrottlingException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -74,6 +92,8 @@ from mypy_boto3_appintegrations.literals import ServiceName, ...
 ```
 
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

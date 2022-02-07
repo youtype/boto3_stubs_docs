@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ivs-module"></a>
+
 # Type annotations for boto3 IVS module
 
 > [Index](..) > IVS
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
 type annotations stubs module
-[mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
+[mypy-boto3-ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ivs]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ivs]'
+
+# standalone installation
 pip install mypy-boto3-ivs
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-ivs
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="ivsclient"></a>
+
 ## IVSClient
 
 Type annotations for `boto3.client("ivs")` as [IVSClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ivs.client import IVSClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -64,6 +78,8 @@ from mypy_boto3_ivs.client import IVSClient
 - [untag_resource](./client.md#untag_resource)
 - [update_channel](./client.md#update_channel)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IVSClient [exceptions](./client.md#exceptions)
@@ -80,6 +96,8 @@ IVSClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -88,7 +106,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ivs.paginators import ListChannelsPaginator, ...
+from mypy_boto3_ivs.paginator import ListChannelsPaginator, ...
 ```
 
 - [ListChannelsPaginator](./paginators.md#listchannelspaginator)
@@ -96,6 +114,8 @@ from mypy_boto3_ivs.paginators import ListChannelsPaginator, ...
 - [ListRecordingConfigurationsPaginator](./paginators.md#listrecordingconfigurationspaginator)
 - [ListStreamKeysPaginator](./paginators.md#liststreamkeyspaginator)
 - [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -120,6 +140,8 @@ from mypy_boto3_ivs.literals import ChannelLatencyModeType, ...
 - [StreamStateType](./literals.md#streamstatetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

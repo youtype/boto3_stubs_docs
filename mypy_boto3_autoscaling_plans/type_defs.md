@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-autoscalingplans-module"></a>
+
 # Typed dictionaries for boto3 AutoScalingPlans module
 
 > [Index](..) > [AutoScalingPlans](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
 type annotations stubs module
-[mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
+[mypy-boto3-autoscaling-plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
 - [Typed dictionaries for boto3 AutoScalingPlans module](#typed-dictionaries-for-boto3-autoscalingplans-module)
   - [ApplicationSourceTypeDef](#applicationsourcetypedef)
@@ -34,6 +36,8 @@ type annotations stubs module
   - [TargetTrackingConfigurationTypeDef](#targettrackingconfigurationtypedef)
   - [UpdateScalingPlanRequestRequestTypeDef](#updatescalingplanrequestrequesttypedef)
 
+<a id="applicationsourcetypedef"></a>
+
 ## ApplicationSourceTypeDef
 
 ```python
@@ -45,6 +49,8 @@ Optional fields:
 - `CloudFormationStackARN`: `str`
 - `TagFilters`:
   `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+
+<a id="createscalingplanrequestrequesttypedef"></a>
 
 ## CreateScalingPlanRequestRequestTypeDef
 
@@ -60,6 +66,8 @@ Required fields:
 - `ScalingInstructions`:
   `Sequence`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
 
+<a id="createscalingplanresponsetypedef"></a>
+
 ## CreateScalingPlanResponseTypeDef
 
 ```python
@@ -71,6 +79,8 @@ Required fields:
 - `ScalingPlanVersion`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="customizedloadmetricspecificationtypedef"></a>
 
 ## CustomizedLoadMetricSpecificationTypeDef
 
@@ -90,6 +100,8 @@ Optional fields:
   `Sequence`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 - `Unit`: `str`
 
+<a id="customizedscalingmetricspecificationtypedef"></a>
+
 ## CustomizedScalingMetricSpecificationTypeDef
 
 ```python
@@ -108,6 +120,8 @@ Optional fields:
   `Sequence`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 - `Unit`: `str`
 
+<a id="datapointtypedef"></a>
+
 ## DatapointTypeDef
 
 ```python
@@ -119,6 +133,8 @@ Optional fields:
 - `Timestamp`: `datetime`
 - `Value`: `float`
 
+<a id="deletescalingplanrequestrequesttypedef"></a>
+
 ## DeleteScalingPlanRequestRequestTypeDef
 
 ```python
@@ -129,6 +145,8 @@ Required fields:
 
 - `ScalingPlanName`: `str`
 - `ScalingPlanVersion`: `int`
+
+<a id="describescalingplanresourcesrequestrequesttypedef"></a>
 
 ## DescribeScalingPlanResourcesRequestRequestTypeDef
 
@@ -146,6 +164,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describescalingplanresourcesresponsetypedef"></a>
+
 ## DescribeScalingPlanResourcesResponseTypeDef
 
 ```python
@@ -159,6 +179,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describescalingplansrequestrequesttypedef"></a>
 
 ## DescribeScalingPlansRequestRequestTypeDef
 
@@ -175,6 +197,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describescalingplansresponsetypedef"></a>
+
 ## DescribeScalingPlansResponseTypeDef
 
 ```python
@@ -188,6 +212,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getscalingplanresourceforecastdatarequestrequesttypedef"></a>
 
 ## GetScalingPlanResourceForecastDataRequestRequestTypeDef
 
@@ -209,6 +235,8 @@ Required fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 
+<a id="getscalingplanresourceforecastdataresponsetypedef"></a>
+
 ## GetScalingPlanResourceForecastDataResponseTypeDef
 
 ```python
@@ -221,6 +249,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="metricdimensiontypedef"></a>
+
 ## MetricDimensionTypeDef
 
 ```python
@@ -231,6 +261,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -243,6 +275,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="predefinedloadmetricspecificationtypedef"></a>
 
 ## PredefinedLoadMetricSpecificationTypeDef
 
@@ -259,6 +293,8 @@ Optional fields:
 
 - `ResourceLabel`: `str`
 
+<a id="predefinedscalingmetricspecificationtypedef"></a>
+
 ## PredefinedScalingMetricSpecificationTypeDef
 
 ```python
@@ -274,6 +310,8 @@ Optional fields:
 
 - `ResourceLabel`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -287,6 +325,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="scalinginstructiontypedef"></a>
 
 ## ScalingInstructionTypeDef
 
@@ -322,6 +362,8 @@ Optional fields:
   [ScalingPolicyUpdateBehaviorType](./literals.md#scalingpolicyupdatebehaviortype)
 - `DisableDynamicScaling`: `bool`
 
+<a id="scalingplanresourcetypedef"></a>
+
 ## ScalingPlanResourceTypeDef
 
 ```python
@@ -346,6 +388,8 @@ Optional fields:
   `List`\[[ScalingPolicyTypeDef](./type_defs.md#scalingpolicytypedef)\]
 - `ScalingStatusMessage`: `str`
 
+<a id="scalingplantypedef"></a>
+
 ## ScalingPlanTypeDef
 
 ```python
@@ -369,6 +413,8 @@ Optional fields:
 - `StatusStartTime`: `datetime`
 - `CreationTime`: `datetime`
 
+<a id="scalingpolicytypedef"></a>
+
 ## ScalingPolicyTypeDef
 
 ```python
@@ -386,6 +432,8 @@ Optional fields:
 - `TargetTrackingConfiguration`:
   [TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef)
 
+<a id="tagfiltertypedef"></a>
+
 ## TagFilterTypeDef
 
 ```python
@@ -396,6 +444,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="targettrackingconfigurationtypedef"></a>
 
 ## TargetTrackingConfigurationTypeDef
 
@@ -417,6 +467,8 @@ Optional fields:
 - `ScaleOutCooldown`: `int`
 - `ScaleInCooldown`: `int`
 - `EstimatedInstanceWarmup`: `int`
+
+<a id="updatescalingplanrequestrequesttypedef"></a>
 
 ## UpdateScalingPlanRequestRequestTypeDef
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iotthingsgraph-module"></a>
+
 # Typed dictionaries for boto3 IoTThingsGraph module
 
 > [Index](..) > [IoTThingsGraph](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
 type annotations stubs module
-[mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
+[mypy-boto3-iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 - [Typed dictionaries for boto3 IoTThingsGraph module](#typed-dictionaries-for-boto3-iotthingsgraph-module)
   - [AssociateEntityToThingRequestRequestTypeDef](#associateentitytothingrequestrequesttypedef)
@@ -88,6 +90,8 @@ type annotations stubs module
   - [UploadEntityDefinitionsRequestRequestTypeDef](#uploadentitydefinitionsrequestrequesttypedef)
   - [UploadEntityDefinitionsResponseTypeDef](#uploadentitydefinitionsresponsetypedef)
 
+<a id="associateentitytothingrequestrequesttypedef"></a>
+
 ## AssociateEntityToThingRequestRequestTypeDef
 
 ```python
@@ -102,6 +106,8 @@ Required fields:
 Optional fields:
 
 - `namespaceVersion`: `int`
+
+<a id="createflowtemplaterequestrequesttypedef"></a>
 
 ## CreateFlowTemplateRequestRequestTypeDef
 
@@ -118,6 +124,8 @@ Optional fields:
 
 - `compatibleNamespaceVersion`: `int`
 
+<a id="createflowtemplateresponsetypedef"></a>
+
 ## CreateFlowTemplateResponseTypeDef
 
 ```python
@@ -130,6 +138,8 @@ Required fields:
   [FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsysteminstancerequestrequesttypedef"></a>
 
 ## CreateSystemInstanceRequestRequestTypeDef
 
@@ -152,6 +162,8 @@ Optional fields:
   [MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef)
 - `flowActionsRoleArn`: `str`
 
+<a id="createsysteminstanceresponsetypedef"></a>
+
 ## CreateSystemInstanceResponseTypeDef
 
 ```python
@@ -164,6 +176,8 @@ Required fields:
   [SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsystemtemplaterequestrequesttypedef"></a>
 
 ## CreateSystemTemplateRequestRequestTypeDef
 
@@ -180,6 +194,8 @@ Optional fields:
 
 - `compatibleNamespaceVersion`: `int`
 
+<a id="createsystemtemplateresponsetypedef"></a>
+
 ## CreateSystemTemplateResponseTypeDef
 
 ```python
@@ -193,6 +209,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="definitiondocumenttypedef"></a>
+
 ## DefinitionDocumentTypeDef
 
 ```python
@@ -205,6 +223,8 @@ Required fields:
   [DefinitionLanguageType](./literals.md#definitionlanguagetype))
 - `text`: `str`
 
+<a id="deleteflowtemplaterequestrequesttypedef"></a>
+
 ## DeleteFlowTemplateRequestRequestTypeDef
 
 ```python
@@ -214,6 +234,8 @@ from mypy_boto3_iotthingsgraph.type_defs import DeleteFlowTemplateRequestRequest
 Required fields:
 
 - `id`: `str`
+
+<a id="deletenamespaceresponsetypedef"></a>
 
 ## DeleteNamespaceResponseTypeDef
 
@@ -228,6 +250,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletesysteminstancerequestrequesttypedef"></a>
+
 ## DeleteSystemInstanceRequestRequestTypeDef
 
 ```python
@@ -238,6 +262,8 @@ Optional fields:
 
 - `id`: `str`
 
+<a id="deletesystemtemplaterequestrequesttypedef"></a>
+
 ## DeleteSystemTemplateRequestRequestTypeDef
 
 ```python
@@ -247,6 +273,8 @@ from mypy_boto3_iotthingsgraph.type_defs import DeleteSystemTemplateRequestReque
 Required fields:
 
 - `id`: `str`
+
+<a id="dependencyrevisiontypedef"></a>
 
 ## DependencyRevisionTypeDef
 
@@ -259,6 +287,8 @@ Optional fields:
 - `id`: `str`
 - `revisionNumber`: `int`
 
+<a id="deploysysteminstancerequestrequesttypedef"></a>
+
 ## DeploySystemInstanceRequestRequestTypeDef
 
 ```python
@@ -268,6 +298,8 @@ from mypy_boto3_iotthingsgraph.type_defs import DeploySystemInstanceRequestReque
 Optional fields:
 
 - `id`: `str`
+
+<a id="deploysysteminstanceresponsetypedef"></a>
 
 ## DeploySystemInstanceResponseTypeDef
 
@@ -283,6 +315,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deprecateflowtemplaterequestrequesttypedef"></a>
+
 ## DeprecateFlowTemplateRequestRequestTypeDef
 
 ```python
@@ -292,6 +326,8 @@ from mypy_boto3_iotthingsgraph.type_defs import DeprecateFlowTemplateRequestRequ
 Required fields:
 
 - `id`: `str`
+
+<a id="deprecatesystemtemplaterequestrequesttypedef"></a>
 
 ## DeprecateSystemTemplateRequestRequestTypeDef
 
@@ -303,6 +339,8 @@ Required fields:
 
 - `id`: `str`
 
+<a id="describenamespacerequestrequesttypedef"></a>
+
 ## DescribeNamespaceRequestRequestTypeDef
 
 ```python
@@ -312,6 +350,8 @@ from mypy_boto3_iotthingsgraph.type_defs import DescribeNamespaceRequestRequestT
 Optional fields:
 
 - `namespaceName`: `str`
+
+<a id="describenamespaceresponsetypedef"></a>
 
 ## DescribeNamespaceResponseTypeDef
 
@@ -329,6 +369,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dissociateentityfromthingrequestrequesttypedef"></a>
+
 ## DissociateEntityFromThingRequestRequestTypeDef
 
 ```python
@@ -339,6 +381,8 @@ Required fields:
 
 - `thingName`: `str`
 - `entityType`: [EntityTypeType](./literals.md#entitytypetype)
+
+<a id="entitydescriptiontypedef"></a>
 
 ## EntityDescriptionTypeDef
 
@@ -355,6 +399,8 @@ Optional fields:
 - `definition`:
   [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
 
+<a id="entityfiltertypedef"></a>
+
 ## EntityFilterTypeDef
 
 ```python
@@ -365,6 +411,8 @@ Optional fields:
 
 - `name`: [EntityFilterNameType](./literals.md#entityfilternametype)
 - `value`: `Sequence`\[`str`\]
+
+<a id="flowexecutionmessagetypedef"></a>
 
 ## FlowExecutionMessageTypeDef
 
@@ -379,6 +427,8 @@ Optional fields:
   [FlowExecutionEventTypeType](./literals.md#flowexecutioneventtypetype)
 - `timestamp`: `datetime`
 - `payload`: `str`
+
+<a id="flowexecutionsummarytypedef"></a>
 
 ## FlowExecutionSummaryTypeDef
 
@@ -395,6 +445,8 @@ Optional fields:
 - `createdAt`: `datetime`
 - `updatedAt`: `datetime`
 
+<a id="flowtemplatedescriptiontypedef"></a>
+
 ## FlowTemplateDescriptionTypeDef
 
 ```python
@@ -409,6 +461,8 @@ Optional fields:
   [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
 - `validatedNamespaceVersion`: `int`
 
+<a id="flowtemplatefiltertypedef"></a>
+
 ## FlowTemplateFilterTypeDef
 
 ```python
@@ -420,6 +474,8 @@ Required fields:
 - `name`: `Literal['DEVICE_MODEL_ID']` (see
   [FlowTemplateFilterNameType](./literals.md#flowtemplatefilternametype))
 - `value`: `Sequence`\[`str`\]
+
+<a id="flowtemplatesummarytypedef"></a>
 
 ## FlowTemplateSummaryTypeDef
 
@@ -433,6 +489,8 @@ Optional fields:
 - `arn`: `str`
 - `revisionNumber`: `int`
 - `createdAt`: `datetime`
+
+<a id="getentitiesrequestrequesttypedef"></a>
 
 ## GetEntitiesRequestRequestTypeDef
 
@@ -448,6 +506,8 @@ Optional fields:
 
 - `namespaceVersion`: `int`
 
+<a id="getentitiesresponsetypedef"></a>
+
 ## GetEntitiesResponseTypeDef
 
 ```python
@@ -460,6 +520,8 @@ Required fields:
   `List`\[[EntityDescriptionTypeDef](./type_defs.md#entitydescriptiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getflowtemplaterequestrequesttypedef"></a>
 
 ## GetFlowTemplateRequestRequestTypeDef
 
@@ -475,6 +537,8 @@ Optional fields:
 
 - `revisionNumber`: `int`
 
+<a id="getflowtemplateresponsetypedef"></a>
+
 ## GetFlowTemplateResponseTypeDef
 
 ```python
@@ -487,6 +551,8 @@ Required fields:
   [FlowTemplateDescriptionTypeDef](./type_defs.md#flowtemplatedescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getflowtemplaterevisionsrequestrequesttypedef"></a>
 
 ## GetFlowTemplateRevisionsRequestRequestTypeDef
 
@@ -503,6 +569,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getflowtemplaterevisionsresponsetypedef"></a>
+
 ## GetFlowTemplateRevisionsResponseTypeDef
 
 ```python
@@ -516,6 +584,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getnamespacedeletionstatusresponsetypedef"></a>
 
 ## GetNamespaceDeletionStatusResponseTypeDef
 
@@ -535,6 +605,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsysteminstancerequestrequesttypedef"></a>
+
 ## GetSystemInstanceRequestRequestTypeDef
 
 ```python
@@ -544,6 +616,8 @@ from mypy_boto3_iotthingsgraph.type_defs import GetSystemInstanceRequestRequestT
 Required fields:
 
 - `id`: `str`
+
+<a id="getsysteminstanceresponsetypedef"></a>
 
 ## GetSystemInstanceResponseTypeDef
 
@@ -557,6 +631,8 @@ Required fields:
   [SystemInstanceDescriptionTypeDef](./type_defs.md#systeminstancedescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsystemtemplaterequestrequesttypedef"></a>
 
 ## GetSystemTemplateRequestRequestTypeDef
 
@@ -572,6 +648,8 @@ Optional fields:
 
 - `revisionNumber`: `int`
 
+<a id="getsystemtemplateresponsetypedef"></a>
+
 ## GetSystemTemplateResponseTypeDef
 
 ```python
@@ -584,6 +662,8 @@ Required fields:
   [SystemTemplateDescriptionTypeDef](./type_defs.md#systemtemplatedescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsystemtemplaterevisionsrequestrequesttypedef"></a>
 
 ## GetSystemTemplateRevisionsRequestRequestTypeDef
 
@@ -600,6 +680,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getsystemtemplaterevisionsresponsetypedef"></a>
+
 ## GetSystemTemplateRevisionsResponseTypeDef
 
 ```python
@@ -614,6 +696,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getuploadstatusrequestrequesttypedef"></a>
+
 ## GetUploadStatusRequestRequestTypeDef
 
 ```python
@@ -623,6 +707,8 @@ from mypy_boto3_iotthingsgraph.type_defs import GetUploadStatusRequestRequestTyp
 Required fields:
 
 - `uploadId`: `str`
+
+<a id="getuploadstatusresponsetypedef"></a>
 
 ## GetUploadStatusResponseTypeDef
 
@@ -642,6 +728,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listflowexecutionmessagesrequestrequesttypedef"></a>
+
 ## ListFlowExecutionMessagesRequestRequestTypeDef
 
 ```python
@@ -657,6 +745,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listflowexecutionmessagesresponsetypedef"></a>
+
 ## ListFlowExecutionMessagesResponseTypeDef
 
 ```python
@@ -670,6 +760,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -686,6 +778,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -699,6 +793,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="metricsconfigurationtypedef"></a>
+
 ## MetricsConfigurationTypeDef
 
 ```python
@@ -709,6 +805,8 @@ Optional fields:
 
 - `cloudMetricEnabled`: `bool`
 - `metricRuleRoleArn`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -721,6 +819,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -735,6 +835,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="searchentitiesrequestrequesttypedef"></a>
 
 ## SearchEntitiesRequestRequestTypeDef
 
@@ -754,6 +856,8 @@ Optional fields:
 - `maxResults`: `int`
 - `namespaceVersion`: `int`
 
+<a id="searchentitiesresponsetypedef"></a>
+
 ## SearchEntitiesResponseTypeDef
 
 ```python
@@ -767,6 +871,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="searchflowexecutionsrequestrequesttypedef"></a>
 
 ## SearchFlowExecutionsRequestRequestTypeDef
 
@@ -786,6 +892,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="searchflowexecutionsresponsetypedef"></a>
+
 ## SearchFlowExecutionsResponseTypeDef
 
 ```python
@@ -800,6 +908,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchflowtemplatesrequestrequesttypedef"></a>
+
 ## SearchFlowTemplatesRequestRequestTypeDef
 
 ```python
@@ -812,6 +922,8 @@ Optional fields:
   `Sequence`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="searchflowtemplatesresponsetypedef"></a>
 
 ## SearchFlowTemplatesResponseTypeDef
 
@@ -827,6 +939,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchsysteminstancesrequestrequesttypedef"></a>
+
 ## SearchSystemInstancesRequestRequestTypeDef
 
 ```python
@@ -839,6 +953,8 @@ Optional fields:
   `Sequence`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="searchsysteminstancesresponsetypedef"></a>
 
 ## SearchSystemInstancesResponseTypeDef
 
@@ -854,6 +970,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchsystemtemplatesrequestrequesttypedef"></a>
+
 ## SearchSystemTemplatesRequestRequestTypeDef
 
 ```python
@@ -866,6 +984,8 @@ Optional fields:
   `Sequence`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="searchsystemtemplatesresponsetypedef"></a>
 
 ## SearchSystemTemplatesResponseTypeDef
 
@@ -880,6 +1000,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="searchthingsrequestrequesttypedef"></a>
 
 ## SearchThingsRequestRequestTypeDef
 
@@ -897,6 +1019,8 @@ Optional fields:
 - `maxResults`: `int`
 - `namespaceVersion`: `int`
 
+<a id="searchthingsresponsetypedef"></a>
+
 ## SearchThingsResponseTypeDef
 
 ```python
@@ -909,6 +1033,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="systeminstancedescriptiontypedef"></a>
 
 ## SystemInstanceDescriptionTypeDef
 
@@ -930,6 +1056,8 @@ Optional fields:
   `List`\[[DependencyRevisionTypeDef](./type_defs.md#dependencyrevisiontypedef)\]
 - `flowActionsRoleArn`: `str`
 
+<a id="systeminstancefiltertypedef"></a>
+
 ## SystemInstanceFilterTypeDef
 
 ```python
@@ -941,6 +1069,8 @@ Optional fields:
 - `name`:
   [SystemInstanceFilterNameType](./literals.md#systeminstancefilternametype)
 - `value`: `Sequence`\[`str`\]
+
+<a id="systeminstancesummarytypedef"></a>
 
 ## SystemInstanceSummaryTypeDef
 
@@ -961,6 +1091,8 @@ Optional fields:
 - `greengrassGroupId`: `str`
 - `greengrassGroupVersionId`: `str`
 
+<a id="systemtemplatedescriptiontypedef"></a>
+
 ## SystemTemplateDescriptionTypeDef
 
 ```python
@@ -975,6 +1107,8 @@ Optional fields:
   [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
 - `validatedNamespaceVersion`: `int`
 
+<a id="systemtemplatefiltertypedef"></a>
+
 ## SystemTemplateFilterTypeDef
 
 ```python
@@ -986,6 +1120,8 @@ Required fields:
 - `name`: `Literal['FLOW_TEMPLATE_ID']` (see
   [SystemTemplateFilterNameType](./literals.md#systemtemplatefilternametype))
 - `value`: `Sequence`\[`str`\]
+
+<a id="systemtemplatesummarytypedef"></a>
 
 ## SystemTemplateSummaryTypeDef
 
@@ -1000,6 +1136,8 @@ Optional fields:
 - `revisionNumber`: `int`
 - `createdAt`: `datetime`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1010,6 +1148,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1022,6 +1162,8 @@ Required fields:
 - `key`: `str`
 - `value`: `str`
 
+<a id="thingtypedef"></a>
+
 ## ThingTypeDef
 
 ```python
@@ -1033,6 +1175,8 @@ Optional fields:
 - `thingArn`: `str`
 - `thingName`: `str`
 
+<a id="undeploysysteminstancerequestrequesttypedef"></a>
+
 ## UndeploySystemInstanceRequestRequestTypeDef
 
 ```python
@@ -1042,6 +1186,8 @@ from mypy_boto3_iotthingsgraph.type_defs import UndeploySystemInstanceRequestReq
 Optional fields:
 
 - `id`: `str`
+
+<a id="undeploysysteminstanceresponsetypedef"></a>
 
 ## UndeploySystemInstanceResponseTypeDef
 
@@ -1056,6 +1202,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1066,6 +1214,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateflowtemplaterequestrequesttypedef"></a>
 
 ## UpdateFlowTemplateRequestRequestTypeDef
 
@@ -1083,6 +1233,8 @@ Optional fields:
 
 - `compatibleNamespaceVersion`: `int`
 
+<a id="updateflowtemplateresponsetypedef"></a>
+
 ## UpdateFlowTemplateResponseTypeDef
 
 ```python
@@ -1095,6 +1247,8 @@ Required fields:
   [FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesystemtemplaterequestrequesttypedef"></a>
 
 ## UpdateSystemTemplateRequestRequestTypeDef
 
@@ -1112,6 +1266,8 @@ Optional fields:
 
 - `compatibleNamespaceVersion`: `int`
 
+<a id="updatesystemtemplateresponsetypedef"></a>
+
 ## UpdateSystemTemplateResponseTypeDef
 
 ```python
@@ -1125,6 +1281,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="uploadentitydefinitionsrequestrequesttypedef"></a>
+
 ## UploadEntityDefinitionsRequestRequestTypeDef
 
 ```python
@@ -1137,6 +1295,8 @@ Optional fields:
   [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
 - `syncWithPublicNamespace`: `bool`
 - `deprecateExistingEntities`: `bool`
+
+<a id="uploadentitydefinitionsresponsetypedef"></a>
 
 ## UploadEntityDefinitionsResponseTypeDef
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-applicationautoscaling-module"></a>
+
 # Typed dictionaries for boto3 ApplicationAutoScaling module
 
 > [Index](..) > [ApplicationAutoScaling](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module
-[mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
+[mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 - [Typed dictionaries for boto3 ApplicationAutoScaling module](#typed-dictionaries-for-boto3-applicationautoscaling-module)
   - [AlarmTypeDef](#alarmtypedef)
@@ -39,6 +41,8 @@ type annotations stubs module
   - [SuspendedStateTypeDef](#suspendedstatetypedef)
   - [TargetTrackingScalingPolicyConfigurationTypeDef](#targettrackingscalingpolicyconfigurationtypedef)
 
+<a id="alarmtypedef"></a>
+
 ## AlarmTypeDef
 
 ```python
@@ -49,6 +53,8 @@ Required fields:
 
 - `AlarmName`: `str`
 - `AlarmARN`: `str`
+
+<a id="customizedmetricspecificationtypedef"></a>
 
 ## CustomizedMetricSpecificationTypeDef
 
@@ -68,6 +74,8 @@ Optional fields:
   `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 - `Unit`: `str`
 
+<a id="deletescalingpolicyrequestrequesttypedef"></a>
+
 ## DeleteScalingPolicyRequestRequestTypeDef
 
 ```python
@@ -82,6 +90,8 @@ Required fields:
 - `ResourceId`: `str`
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
+
+<a id="deletescheduledactionrequestrequesttypedef"></a>
 
 ## DeleteScheduledActionRequestRequestTypeDef
 
@@ -98,6 +108,8 @@ Required fields:
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
 
+<a id="deregisterscalabletargetrequestrequesttypedef"></a>
+
 ## DeregisterScalableTargetRequestRequestTypeDef
 
 ```python
@@ -111,6 +123,8 @@ Required fields:
 - `ResourceId`: `str`
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
+
+<a id="describescalabletargetsrequestrequesttypedef"></a>
 
 ## DescribeScalableTargetsRequestRequestTypeDef
 
@@ -131,6 +145,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describescalabletargetsresponsetypedef"></a>
+
 ## DescribeScalableTargetsResponseTypeDef
 
 ```python
@@ -144,6 +160,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describescalingactivitiesrequestrequesttypedef"></a>
 
 ## DescribeScalingActivitiesRequestRequestTypeDef
 
@@ -164,6 +182,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describescalingactivitiesresponsetypedef"></a>
+
 ## DescribeScalingActivitiesResponseTypeDef
 
 ```python
@@ -177,6 +197,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describescalingpoliciesrequestrequesttypedef"></a>
 
 ## DescribeScalingPoliciesRequestRequestTypeDef
 
@@ -198,6 +220,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describescalingpoliciesresponsetypedef"></a>
+
 ## DescribeScalingPoliciesResponseTypeDef
 
 ```python
@@ -211,6 +235,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describescheduledactionsrequestrequesttypedef"></a>
 
 ## DescribeScheduledActionsRequestRequestTypeDef
 
@@ -232,6 +258,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describescheduledactionsresponsetypedef"></a>
+
 ## DescribeScheduledActionsResponseTypeDef
 
 ```python
@@ -246,6 +274,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="metricdimensiontypedef"></a>
+
 ## MetricDimensionTypeDef
 
 ```python
@@ -256,6 +286,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -268,6 +300,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="predefinedmetricspecificationtypedef"></a>
 
 ## PredefinedMetricSpecificationTypeDef
 
@@ -282,6 +316,8 @@ Required fields:
 Optional fields:
 
 - `ResourceLabel`: `str`
+
+<a id="putscalingpolicyrequestrequesttypedef"></a>
 
 ## PutScalingPolicyRequestRequestTypeDef
 
@@ -306,6 +342,8 @@ Optional fields:
 - `TargetTrackingScalingPolicyConfiguration`:
   [TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef)
 
+<a id="putscalingpolicyresponsetypedef"></a>
+
 ## PutScalingPolicyResponseTypeDef
 
 ```python
@@ -318,6 +356,8 @@ Required fields:
 - `Alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putscheduledactionrequestrequesttypedef"></a>
 
 ## PutScheduledActionRequestRequestTypeDef
 
@@ -343,6 +383,8 @@ Optional fields:
 - `ScalableTargetAction`:
   [ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef)
 
+<a id="registerscalabletargetrequestrequesttypedef"></a>
+
 ## RegisterScalableTargetRequestRequestTypeDef
 
 ```python
@@ -365,6 +407,8 @@ Optional fields:
 - `SuspendedState`:
   [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -379,6 +423,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="scalabletargetactiontypedef"></a>
+
 ## ScalableTargetActionTypeDef
 
 ```python
@@ -389,6 +435,8 @@ Optional fields:
 
 - `MinCapacity`: `int`
 - `MaxCapacity`: `int`
+
+<a id="scalabletargettypedef"></a>
 
 ## ScalableTargetTypeDef
 
@@ -412,6 +460,8 @@ Optional fields:
 
 - `SuspendedState`:
   [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
+
+<a id="scalingactivitytypedef"></a>
 
 ## ScalingActivityTypeDef
 
@@ -439,6 +489,8 @@ Optional fields:
 - `StatusMessage`: `str`
 - `Details`: `str`
 
+<a id="scalingpolicytypedef"></a>
+
 ## ScalingPolicyTypeDef
 
 ```python
@@ -464,6 +516,8 @@ Optional fields:
 - `TargetTrackingScalingPolicyConfiguration`:
   [TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef)
 - `Alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
+
+<a id="scheduledactiontypedef"></a>
 
 ## ScheduledActionTypeDef
 
@@ -491,6 +545,8 @@ Optional fields:
 - `ScalableTargetAction`:
   [ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef)
 
+<a id="stepadjustmenttypedef"></a>
+
 ## StepAdjustmentTypeDef
 
 ```python
@@ -505,6 +561,8 @@ Optional fields:
 
 - `MetricIntervalLowerBound`: `float`
 - `MetricIntervalUpperBound`: `float`
+
+<a id="stepscalingpolicyconfigurationtypedef"></a>
 
 ## StepScalingPolicyConfigurationTypeDef
 
@@ -522,6 +580,8 @@ Optional fields:
 - `MetricAggregationType`:
   [MetricAggregationTypeType](./literals.md#metricaggregationtypetype)
 
+<a id="suspendedstatetypedef"></a>
+
 ## SuspendedStateTypeDef
 
 ```python
@@ -533,6 +593,8 @@ Optional fields:
 - `DynamicScalingInSuspended`: `bool`
 - `DynamicScalingOutSuspended`: `bool`
 - `ScheduledScalingSuspended`: `bool`
+
+<a id="targettrackingscalingpolicyconfigurationtypedef"></a>
 
 ## TargetTrackingScalingPolicyConfigurationTypeDef
 

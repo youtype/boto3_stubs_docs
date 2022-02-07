@@ -1,3 +1,5 @@
+<a id="ecrpublicclient-for-boto3-ecrpublic-module"></a>
+
 # ECRPublicClient for boto3 ECRPublic module
 
 > [Index](..) > [ECRPublic](.) > ECRPublicClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
 type annotations stubs module
-[mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
+[mypy-boto3-ecr-public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
 - [ECRPublicClient for boto3 ECRPublic module](#ecrpublicclient-for-boto3-ecrpublic-module)
   - [ECRPublicClient](#ecrpublicclient)
@@ -39,6 +41,8 @@ type annotations stubs module
     - [upload_layer_part](#upload_layer_part)
     - [get_paginator](#get_paginator)
 
+<a id="ecrpublicclient"></a>
+
 ## ECRPublicClient
 
 Type annotations for `boto3.client("ecr-public")`
@@ -46,14 +50,17 @@ Type annotations for `boto3.client("ecr-public")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ecr_public.client import ECRPublicClient
 
 def get_ecr-public_client() -> ECRPublicClient:
-    return boto3.client("ecr-public")
+    return Session().client("ecr-public")
 ```
 
 Boto3 documentation:
 [ECRPublic.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -94,7 +101,11 @@ Exceptions:
 - `Exceptions.UnsupportedCommandException`
 - `Exceptions.UploadNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -106,6 +117,8 @@ Boto3 documentation:
 [ECRPublic.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_check_layer_availability"></a>
 
 ### batch_check_layer_availability
 
@@ -130,6 +143,8 @@ Keyword-only arguments:
 Returns
 [BatchCheckLayerAvailabilityResponseTypeDef](./type_defs.md#batchchecklayeravailabilityresponsetypedef).
 
+<a id="batch_delete_image"></a>
+
 ### batch_delete_image
 
 Deletes a list of specified images within a repository in a public registry.
@@ -153,6 +168,8 @@ Keyword-only arguments:
 Returns
 [BatchDeleteImageResponseTypeDef](./type_defs.md#batchdeleteimageresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -167,6 +184,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="complete_layer_upload"></a>
 
 ### complete_layer_upload
 
@@ -191,6 +210,8 @@ Keyword-only arguments:
 Returns
 [CompleteLayerUploadResponseTypeDef](./type_defs.md#completelayeruploadresponsetypedef).
 
+<a id="create_repository"></a>
+
 ### create_repository
 
 Creates a repository in a public registry.
@@ -213,6 +234,8 @@ Keyword-only arguments:
 Returns
 [CreateRepositoryResponseTypeDef](./type_defs.md#createrepositoryresponsetypedef).
 
+<a id="delete_repository"></a>
+
 ### delete_repository
 
 Deletes a repository in a public registry.
@@ -233,6 +256,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteRepositoryResponseTypeDef](./type_defs.md#deleterepositoryresponsetypedef).
+
+<a id="delete_repository_policy"></a>
 
 ### delete_repository_policy
 
@@ -255,6 +280,8 @@ Keyword-only arguments:
 Returns
 [DeleteRepositoryPolicyResponseTypeDef](./type_defs.md#deleterepositorypolicyresponsetypedef).
 
+<a id="describe_image_tags"></a>
+
 ### describe_image_tags
 
 Returns the image tag details for a repository in a public registry.
@@ -276,6 +303,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeImageTagsResponseTypeDef](./type_defs.md#describeimagetagsresponsetypedef).
+
+<a id="describe_images"></a>
 
 ### describe_images
 
@@ -301,6 +330,8 @@ Keyword-only arguments:
 Returns
 [DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef).
 
+<a id="describe_registries"></a>
+
 ### describe_registries
 
 Returns details for a public registry.
@@ -320,6 +351,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRegistriesResponseTypeDef](./type_defs.md#describeregistriesresponsetypedef).
+
+<a id="describe_repositories"></a>
 
 ### describe_repositories
 
@@ -343,6 +376,8 @@ Keyword-only arguments:
 Returns
 [DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -362,6 +397,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_authorization_token"></a>
+
 ### get_authorization_token
 
 Retrieves an authorization token.
@@ -375,6 +412,8 @@ Boto3 documentation:
 Returns
 [GetAuthorizationTokenResponseTypeDef](./type_defs.md#getauthorizationtokenresponsetypedef).
 
+<a id="get_registry_catalog_data"></a>
+
 ### get_registry_catalog_data
 
 Retrieves catalog metadata for a public registry.
@@ -387,6 +426,8 @@ Boto3 documentation:
 
 Returns
 [GetRegistryCatalogDataResponseTypeDef](./type_defs.md#getregistrycatalogdataresponsetypedef).
+
+<a id="get_repository_catalog_data"></a>
 
 ### get_repository_catalog_data
 
@@ -409,6 +450,8 @@ Keyword-only arguments:
 Returns
 [GetRepositoryCatalogDataResponseTypeDef](./type_defs.md#getrepositorycatalogdataresponsetypedef).
 
+<a id="get_repository_policy"></a>
+
 ### get_repository_policy
 
 Retrieves the repository policy for the specified repository.
@@ -428,6 +471,8 @@ Keyword-only arguments:
 
 Returns
 [GetRepositoryPolicyResponseTypeDef](./type_defs.md#getrepositorypolicyresponsetypedef).
+
+<a id="initiate_layer_upload"></a>
 
 ### initiate_layer_upload
 
@@ -449,6 +494,8 @@ Keyword-only arguments:
 Returns
 [InitiateLayerUploadResponseTypeDef](./type_defs.md#initiatelayeruploadresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List the tags for an Amazon ECR Public resource.
@@ -468,6 +515,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_image"></a>
 
 ### put_image
 
@@ -492,6 +541,8 @@ Keyword-only arguments:
 
 Returns [PutImageResponseTypeDef](./type_defs.md#putimageresponsetypedef).
 
+<a id="put_registry_catalog_data"></a>
+
 ### put_registry_catalog_data
 
 Create or updates the catalog data for a public registry.
@@ -511,6 +562,8 @@ Keyword-only arguments:
 
 Returns
 [PutRegistryCatalogDataResponseTypeDef](./type_defs.md#putregistrycatalogdataresponsetypedef).
+
+<a id="put_repository_catalog_data"></a>
 
 ### put_repository_catalog_data
 
@@ -536,6 +589,8 @@ Keyword-only arguments:
 Returns
 [PutRepositoryCatalogDataResponseTypeDef](./type_defs.md#putrepositorycatalogdataresponsetypedef).
 
+<a id="set_repository_policy"></a>
+
 ### set_repository_policy
 
 Applies a repository policy to the specified public repository to control
@@ -559,6 +614,8 @@ Keyword-only arguments:
 Returns
 [SetRepositoryPolicyResponseTypeDef](./type_defs.md#setrepositorypolicyresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
@@ -578,6 +635,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes specified tags from a resource.
@@ -596,6 +655,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="upload_layer_part"></a>
 
 ### upload_layer_part
 
@@ -621,6 +682,8 @@ Keyword-only arguments:
 
 Returns
 [UploadLayerPartResponseTypeDef](./type_defs.md#uploadlayerpartresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

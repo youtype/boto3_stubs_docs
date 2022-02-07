@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-licensemanager-module"></a>
+
 # Type annotations for boto3 LicenseManager module
 
 > [Index](..) > LicenseManager
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
-[mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
+[mypy-boto3-license-manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[license-manager]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[license-manager]'
+
+# standalone installation
 pip install mypy-boto3-license-manager
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-license-manager
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="licensemanagerclient"></a>
+
 ## LicenseManagerClient
 
 Type annotations for `boto3.client("license-manager")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_license_manager.client import LicenseManagerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -85,6 +99,8 @@ from mypy_boto3_license_manager.client import LicenseManagerClient
 - [update_license_specifications_for_resource](./client.md#update_license_specifications_for_resource)
 - [update_service_settings](./client.md#update_service_settings)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 LicenseManagerClient [exceptions](./client.md#exceptions)
@@ -108,6 +124,8 @@ LicenseManagerClient [exceptions](./client.md#exceptions)
 - UnsupportedDigitalSignatureMethodException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -116,7 +134,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_license_manager.paginators import ListAssociationsForLicenseConfigurationPaginator, ...
+from mypy_boto3_license_manager.paginator import ListAssociationsForLicenseConfigurationPaginator, ...
 ```
 
 - [ListAssociationsForLicenseConfigurationPaginator](./paginators.md#listassociationsforlicenseconfigurationpaginator)
@@ -124,6 +142,8 @@ from mypy_boto3_license_manager.paginators import ListAssociationsForLicenseConf
 - [ListLicenseSpecificationsForResourcePaginator](./paginators.md#listlicensespecificationsforresourcepaginator)
 - [ListResourceInventoryPaginator](./paginators.md#listresourceinventorypaginator)
 - [ListUsageForLicenseConfigurationPaginator](./paginators.md#listusageforlicenseconfigurationpaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -160,6 +180,8 @@ from mypy_boto3_license_manager.literals import AllowedOperationType, ...
 - [TokenTypeType](./literals.md#tokentypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

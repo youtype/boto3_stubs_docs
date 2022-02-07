@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-elastictranscoder-module"></a>
+
 # Type annotations for boto3 ElasticTranscoder module
 
 > [Index](..) > ElasticTranscoder
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module
-[mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+[mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[elastictranscoder]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[elastictranscoder]'
+
+# standalone installation
 pip install mypy-boto3-elastictranscoder
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-elastictranscoder
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="elastictranscoderclient"></a>
+
 ## ElasticTranscoderClient
 
 Type annotations for `boto3.client("elastictranscoder")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_elastictranscoder.client import ElasticTranscoderClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -56,6 +70,8 @@ from mypy_boto3_elastictranscoder.client import ElasticTranscoderClient
 - [update_pipeline_notifications](./client.md#update_pipeline_notifications)
 - [update_pipeline_status](./client.md#update_pipeline_status)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ElasticTranscoderClient [exceptions](./client.md#exceptions)
@@ -69,6 +85,8 @@ ElasticTranscoderClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -77,13 +95,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_elastictranscoder.paginators import ListJobsByPipelinePaginator, ...
+from mypy_boto3_elastictranscoder.paginator import ListJobsByPipelinePaginator, ...
 ```
 
 - [ListJobsByPipelinePaginator](./paginators.md#listjobsbypipelinepaginator)
 - [ListJobsByStatusPaginator](./paginators.md#listjobsbystatuspaginator)
 - [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
 - [ListPresetsPaginator](./paginators.md#listpresetspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -93,10 +113,12 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_elastictranscoder.waiters import JobCompleteWaiter, ...
+from mypy_boto3_elastictranscoder.waiter import JobCompleteWaiter, ...
 ```
 
 - [JobCompleteWaiter](./waiters.md#jobcompletewaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -116,6 +138,8 @@ from mypy_boto3_elastictranscoder.literals import JobCompleteWaiterName, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="devopsguruclient-for-boto3-devopsguru-module"></a>
+
 # DevOpsGuruClient for boto3 DevOpsGuru module
 
 > [Index](..) > [DevOpsGuru](.) > DevOpsGuruClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DevOpsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru)
 type annotations stubs module
-[mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
+[mypy-boto3-devops-guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 - [DevOpsGuruClient for boto3 DevOpsGuru module](#devopsguruclient-for-boto3-devopsguru-module)
   - [DevOpsGuruClient](#devopsguruclient)
@@ -42,6 +44,8 @@ type annotations stubs module
     - [update_service_integration](#update_service_integration)
     - [get_paginator](#get_paginator)
 
+<a id="devopsguruclient"></a>
+
 ## DevOpsGuruClient
 
 Type annotations for `boto3.client("devops-guru")`
@@ -49,14 +53,17 @@ Type annotations for `boto3.client("devops-guru")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_devops_guru.client import DevOpsGuruClient
 
 def get_devops-guru_client() -> DevOpsGuruClient:
-    return boto3.client("devops-guru")
+    return Session().client("devops-guru")
 ```
 
 Boto3 documentation:
 [DevOpsGuru.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -81,7 +88,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -93,6 +104,8 @@ Boto3 documentation:
 [DevOpsGuru.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_notification_channel"></a>
 
 ### add_notification_channel
 
@@ -116,6 +129,8 @@ Keyword-only arguments:
 Returns
 [AddNotificationChannelResponseTypeDef](./type_defs.md#addnotificationchannelresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -131,6 +146,8 @@ Arguments:
 
 Returns `bool`.
 
+<a id="describe_account_health"></a>
+
 ### describe_account_health
 
 Returns the number of open reactive insights, the number of open proactive
@@ -145,6 +162,8 @@ Boto3 documentation:
 
 Returns
 [DescribeAccountHealthResponseTypeDef](./type_defs.md#describeaccounthealthresponsetypedef).
+
+<a id="describe_account_overview"></a>
 
 ### describe_account_overview
 
@@ -169,6 +188,8 @@ Keyword-only arguments:
 Returns
 [DescribeAccountOverviewResponseTypeDef](./type_defs.md#describeaccountoverviewresponsetypedef).
 
+<a id="describe_anomaly"></a>
+
 ### describe_anomaly
 
 Returns details about an anomaly that you specify using its ID.
@@ -188,6 +209,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAnomalyResponseTypeDef](./type_defs.md#describeanomalyresponsetypedef).
+
+<a id="describe_feedback"></a>
 
 ### describe_feedback
 
@@ -209,6 +232,8 @@ Keyword-only arguments:
 Returns
 [DescribeFeedbackResponseTypeDef](./type_defs.md#describefeedbackresponsetypedef).
 
+<a id="describe_insight"></a>
+
 ### describe_insight
 
 Returns details about an insight that you specify using its ID.
@@ -228,6 +253,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInsightResponseTypeDef](./type_defs.md#describeinsightresponsetypedef).
+
+<a id="describe_organization_health"></a>
 
 ### describe_organization_health
 
@@ -250,6 +277,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeOrganizationHealthResponseTypeDef](./type_defs.md#describeorganizationhealthresponsetypedef).
+
+<a id="describe_organization_overview"></a>
 
 ### describe_organization_overview
 
@@ -274,6 +303,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeOrganizationOverviewResponseTypeDef](./type_defs.md#describeorganizationoverviewresponsetypedef).
+
+<a id="describe_organization_resource_collection_health"></a>
 
 ### describe_organization_resource_collection_health
 
@@ -302,6 +333,8 @@ Keyword-only arguments:
 Returns
 [DescribeOrganizationResourceCollectionHealthResponseTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthresponsetypedef).
 
+<a id="describe_resource_collection_health"></a>
+
 ### describe_resource_collection_health
 
 Returns the number of open proactive insights, open reactive insights, and the
@@ -327,6 +360,8 @@ Keyword-only arguments:
 Returns
 [DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef).
 
+<a id="describe_service_integration"></a>
+
 ### describe_service_integration
 
 Returns the integration status of services that are integrated with DevOps
@@ -340,6 +375,8 @@ Boto3 documentation:
 
 Returns
 [DescribeServiceIntegrationResponseTypeDef](./type_defs.md#describeserviceintegrationresponsetypedef).
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -360,6 +397,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_cost_estimation"></a>
+
 ### get_cost_estimation
 
 Returns an estimate of the monthly cost for DevOps Guru to analyze your Amazon
@@ -379,6 +418,8 @@ Keyword-only arguments:
 
 Returns
 [GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef).
+
+<a id="get_resource_collection"></a>
 
 ### get_resource_collection
 
@@ -403,6 +444,8 @@ Keyword-only arguments:
 
 Returns
 [GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef).
+
+<a id="list_anomalies_for_insight"></a>
 
 ### list_anomalies_for_insight
 
@@ -430,6 +473,8 @@ Keyword-only arguments:
 Returns
 [ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef).
 
+<a id="list_events"></a>
+
 ### list_events
 
 Returns a list of the events emitted by the resources that are evaluated by
@@ -454,6 +499,8 @@ Keyword-only arguments:
 
 Returns [ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef).
 
+<a id="list_insights"></a>
+
 ### list_insights
 
 Returns a list of insights in your Amazon Web Services account.
@@ -477,6 +524,8 @@ Keyword-only arguments:
 Returns
 [ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef).
 
+<a id="list_notification_channels"></a>
+
 ### list_notification_channels
 
 Returns a list of notification channels configured for DevOps Guru.
@@ -496,6 +545,8 @@ Keyword-only arguments:
 
 Returns
 [ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef).
+
+<a id="list_organization_insights"></a>
 
 ### list_organization_insights
 
@@ -523,6 +574,8 @@ Keyword-only arguments:
 Returns
 [ListOrganizationInsightsResponseTypeDef](./type_defs.md#listorganizationinsightsresponsetypedef).
 
+<a id="list_recommendations"></a>
+
 ### list_recommendations
 
 Returns a list of a specified insight's recommendations.
@@ -545,6 +598,8 @@ Keyword-only arguments:
 Returns
 [ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
 
+<a id="put_feedback"></a>
+
 ### put_feedback
 
 Collects customer feedback about the specified insight.
@@ -564,6 +619,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="remove_notification_channel"></a>
+
 ### remove_notification_channel
 
 Removes a notification channel from DevOps Guru.
@@ -582,6 +639,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="search_insights"></a>
 
 ### search_insights
 
@@ -607,6 +666,8 @@ Keyword-only arguments:
 
 Returns
 [SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef).
+
+<a id="search_organization_insights"></a>
 
 ### search_organization_insights
 
@@ -635,6 +696,8 @@ Keyword-only arguments:
 Returns
 [SearchOrganizationInsightsResponseTypeDef](./type_defs.md#searchorganizationinsightsresponsetypedef).
 
+<a id="start_cost_estimation"></a>
+
 ### start_cost_estimation
 
 Starts the creation of an estimate of the monthly cost to analyze your Amazon
@@ -657,6 +720,8 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_resource_collection"></a>
 
 ### update_resource_collection
 
@@ -682,6 +747,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_service_integration"></a>
+
 ### update_service_integration
 
 Enables or disables integration with a service that can be integrated with
@@ -703,6 +770,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

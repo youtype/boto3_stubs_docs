@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-mwaa-module"></a>
+
 # Literals for boto3 MWAA module
 
 > [Index](..) > [MWAA](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
 type annotations stubs module
-[mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
+[mypy-boto3-mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
 - [Literals for boto3 MWAA module](#literals-for-boto3-mwaa-module)
   - [EnvironmentStatusType](#environmentstatustype)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [WebserverAccessModeType](#webserveraccessmodetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="environmentstatustype"></a>
 
 ## EnvironmentStatusType
 
@@ -34,6 +38,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATING`
 
+<a id="listenvironmentspaginatorname"></a>
+
 ## ListEnvironmentsPaginatorName
 
 ```python
@@ -43,6 +49,8 @@ from mypy_boto3_mwaa.literals import ListEnvironmentsPaginatorName
 Values:
 
 - `list_environments`
+
+<a id="loggingleveltype"></a>
 
 ## LoggingLevelType
 
@@ -57,6 +65,8 @@ Values:
 - `ERROR`
 - `INFO`
 - `WARNING`
+
+<a id="unittype"></a>
 
 ## UnitType
 
@@ -94,6 +104,8 @@ Values:
 - `Terabytes`
 - `Terabytes/Second`
 
+<a id="updatestatustype"></a>
+
 ## UpdateStatusType
 
 ```python
@@ -106,6 +118,8 @@ Values:
 - `PENDING`
 - `SUCCESS`
 
+<a id="webserveraccessmodetype"></a>
+
 ## WebserverAccessModeType
 
 ```python
@@ -116,6 +130,8 @@ Values:
 
 - `PRIVATE_ONLY`
 - `PUBLIC_ONLY`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -424,6 +440,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

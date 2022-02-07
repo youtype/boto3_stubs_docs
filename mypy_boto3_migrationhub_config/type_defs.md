@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-migrationhubconfig-module"></a>
+
 # Typed dictionaries for boto3 MigrationHubConfig module
 
 > [Index](..) > [MigrationHubConfig](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
 type annotations stubs module
-[mypy_boto3_migrationhub_config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
+[mypy-boto3-migrationhub-config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
 
 - [Typed dictionaries for boto3 MigrationHubConfig module](#typed-dictionaries-for-boto3-migrationhubconfig-module)
   - [CreateHomeRegionControlRequestRequestTypeDef](#createhomeregioncontrolrequestrequesttypedef)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [HomeRegionControlTypeDef](#homeregioncontroltypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TargetTypeDef](#targettypedef)
+
+<a id="createhomeregioncontrolrequestrequesttypedef"></a>
 
 ## CreateHomeRegionControlRequestRequestTypeDef
 
@@ -32,6 +36,8 @@ Optional fields:
 
 - `DryRun`: `bool`
 
+<a id="createhomeregioncontrolresulttypedef"></a>
+
 ## CreateHomeRegionControlResultTypeDef
 
 ```python
@@ -44,6 +50,8 @@ Required fields:
   [HomeRegionControlTypeDef](./type_defs.md#homeregioncontroltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describehomeregioncontrolsrequestrequesttypedef"></a>
 
 ## DescribeHomeRegionControlsRequestRequestTypeDef
 
@@ -59,6 +67,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describehomeregioncontrolsresulttypedef"></a>
+
 ## DescribeHomeRegionControlsResultTypeDef
 
 ```python
@@ -73,6 +83,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gethomeregionresulttypedef"></a>
+
 ## GetHomeRegionResultTypeDef
 
 ```python
@@ -84,6 +96,8 @@ Required fields:
 - `HomeRegion`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="homeregioncontroltypedef"></a>
 
 ## HomeRegionControlTypeDef
 
@@ -98,6 +112,8 @@ Optional fields:
 - `Target`: [TargetTypeDef](./type_defs.md#targettypedef)
 - `RequestedTime`: `datetime`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -111,6 +127,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="targettypedef"></a>
 
 ## TargetTypeDef
 

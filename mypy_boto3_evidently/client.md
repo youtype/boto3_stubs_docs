@@ -1,3 +1,5 @@
+<a id="cloudwatchevidentlyclient-for-boto3-cloudwatchevidently-module"></a>
+
 # CloudWatchEvidentlyClient for boto3 CloudWatchEvidently module
 
 > [Index](..) > [CloudWatchEvidently](.) > CloudWatchEvidentlyClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
 type annotations stubs module
-[mypy_boto3_evidently](https://pypi.org/project/mypy-boto3-evidently/).
+[mypy-boto3-evidently](https://pypi.org/project/mypy-boto3-evidently/).
 
 - [CloudWatchEvidentlyClient for boto3 CloudWatchEvidently module](#cloudwatchevidentlyclient-for-boto3-cloudwatchevidently-module)
   - [CloudWatchEvidentlyClient](#cloudwatchevidentlyclient)
@@ -48,6 +50,8 @@ type annotations stubs module
     - [update_project_data_delivery](#update_project_data_delivery)
     - [get_paginator](#get_paginator)
 
+<a id="cloudwatchevidentlyclient"></a>
+
 ## CloudWatchEvidentlyClient
 
 Type annotations for `boto3.client("evidently")`
@@ -55,14 +59,17 @@ Type annotations for `boto3.client("evidently")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_evidently.client import CloudWatchEvidentlyClient
 
 def get_evidently_client() -> CloudWatchEvidentlyClient:
-    return boto3.client("evidently")
+    return Session().client("evidently")
 ```
 
 Boto3 documentation:
 [CloudWatchEvidently.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -88,7 +95,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -100,6 +111,8 @@ Boto3 documentation:
 [CloudWatchEvidently.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_evaluate_feature"></a>
 
 ### batch_evaluate_feature
 
@@ -123,6 +136,8 @@ Keyword-only arguments:
 Returns
 [BatchEvaluateFeatureResponseTypeDef](./type_defs.md#batchevaluatefeatureresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -137,6 +152,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_experiment"></a>
 
 ### create_experiment
 
@@ -170,6 +187,8 @@ Keyword-only arguments:
 Returns
 [CreateExperimentResponseTypeDef](./type_defs.md#createexperimentresponsetypedef).
 
+<a id="create_feature"></a>
+
 ### create_feature
 
 Creates an Evidently *feature* that you want to launch or test.
@@ -198,6 +217,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFeatureResponseTypeDef](./type_defs.md#createfeatureresponsetypedef).
+
+<a id="create_launch"></a>
 
 ### create_launch
 
@@ -229,6 +250,8 @@ Keyword-only arguments:
 Returns
 [CreateLaunchResponseTypeDef](./type_defs.md#createlaunchresponsetypedef).
 
+<a id="create_project"></a>
+
 ### create_project
 
 Creates a project, which is the logical object in Evidently that can contain
@@ -253,6 +276,8 @@ Keyword-only arguments:
 Returns
 [CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
+<a id="delete_experiment"></a>
+
 ### delete_experiment
 
 Deletes an Evidently experiment.
@@ -271,6 +296,8 @@ Keyword-only arguments:
 - `project`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_feature"></a>
 
 ### delete_feature
 
@@ -291,6 +318,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_launch"></a>
+
 ### delete_launch
 
 Deletes an Evidently launch.
@@ -310,6 +339,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_project"></a>
+
 ### delete_project
 
 Deletes an Evidently project.
@@ -327,6 +358,8 @@ Keyword-only arguments:
 - `project`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="evaluate_feature"></a>
 
 ### evaluate_feature
 
@@ -350,6 +383,8 @@ Keyword-only arguments:
 Returns
 [EvaluateFeatureResponseTypeDef](./type_defs.md#evaluatefeatureresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -367,6 +402,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_experiment"></a>
 
 ### get_experiment
 
@@ -387,6 +424,8 @@ Keyword-only arguments:
 
 Returns
 [GetExperimentResponseTypeDef](./type_defs.md#getexperimentresponsetypedef).
+
+<a id="get_experiment_results"></a>
 
 ### get_experiment_results
 
@@ -419,6 +458,8 @@ Keyword-only arguments:
 Returns
 [GetExperimentResultsResponseTypeDef](./type_defs.md#getexperimentresultsresponsetypedef).
 
+<a id="get_feature"></a>
+
 ### get_feature
 
 Returns the details about one feature.
@@ -437,6 +478,8 @@ Keyword-only arguments:
 - `project`: `str` *(required)*
 
 Returns [GetFeatureResponseTypeDef](./type_defs.md#getfeatureresponsetypedef).
+
+<a id="get_launch"></a>
 
 ### get_launch
 
@@ -457,6 +500,8 @@ Keyword-only arguments:
 
 Returns [GetLaunchResponseTypeDef](./type_defs.md#getlaunchresponsetypedef).
 
+<a id="get_project"></a>
+
 ### get_project
 
 Returns the details about one launch.
@@ -474,6 +519,8 @@ Keyword-only arguments:
 - `project`: `str` *(required)*
 
 Returns [GetProjectResponseTypeDef](./type_defs.md#getprojectresponsetypedef).
+
+<a id="list_experiments"></a>
 
 ### list_experiments
 
@@ -497,6 +544,8 @@ Keyword-only arguments:
 Returns
 [ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
 
+<a id="list_features"></a>
+
 ### list_features
 
 Returns configuration details about all the features in the specified project.
@@ -517,6 +566,8 @@ Keyword-only arguments:
 
 Returns
 [ListFeaturesResponseTypeDef](./type_defs.md#listfeaturesresponsetypedef).
+
+<a id="list_launches"></a>
 
 ### list_launches
 
@@ -539,6 +590,8 @@ Keyword-only arguments:
 Returns
 [ListLaunchesResponseTypeDef](./type_defs.md#listlaunchesresponsetypedef).
 
+<a id="list_projects"></a>
+
 ### list_projects
 
 Returns configuration details about all the projects in the current Region in
@@ -560,6 +613,8 @@ Keyword-only arguments:
 Returns
 [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Displays the tags associated with an Evidently resource.
@@ -578,6 +633,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_project_events"></a>
 
 ### put_project_events
 
@@ -600,6 +657,8 @@ Keyword-only arguments:
 Returns
 [PutProjectEventsResponseTypeDef](./type_defs.md#putprojecteventsresponsetypedef).
 
+<a id="start_experiment"></a>
+
 ### start_experiment
 
 Starts an existing experiment.
@@ -621,6 +680,8 @@ Keyword-only arguments:
 Returns
 [StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef).
 
+<a id="start_launch"></a>
+
 ### start_launch
 
 Starts an existing launch.
@@ -640,6 +701,8 @@ Keyword-only arguments:
 
 Returns
 [StartLaunchResponseTypeDef](./type_defs.md#startlaunchresponsetypedef).
+
+<a id="stop_experiment"></a>
 
 ### stop_experiment
 
@@ -664,6 +727,8 @@ Keyword-only arguments:
 Returns
 [StopExperimentResponseTypeDef](./type_defs.md#stopexperimentresponsetypedef).
 
+<a id="stop_launch"></a>
+
 ### stop_launch
 
 Stops a launch that is currently running.
@@ -686,6 +751,8 @@ Keyword-only arguments:
 
 Returns [StopLaunchResponseTypeDef](./type_defs.md#stoplaunchresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns one or more tags (key-value pairs) to the specified CloudWatch
@@ -706,6 +773,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from the specified resource.
@@ -724,6 +793,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_experiment"></a>
 
 ### update_experiment
 
@@ -754,6 +825,8 @@ Keyword-only arguments:
 Returns
 [UpdateExperimentResponseTypeDef](./type_defs.md#updateexperimentresponsetypedef).
 
+<a id="update_feature"></a>
+
 ### update_feature
 
 Updates an existing feature.
@@ -781,6 +854,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateFeatureResponseTypeDef](./type_defs.md#updatefeatureresponsetypedef).
+
+<a id="update_launch"></a>
 
 ### update_launch
 
@@ -810,6 +885,8 @@ Keyword-only arguments:
 Returns
 [UpdateLaunchResponseTypeDef](./type_defs.md#updatelaunchresponsetypedef).
 
+<a id="update_project"></a>
+
 ### update_project
 
 Updates the description of an existing project.
@@ -829,6 +906,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef).
+
+<a id="update_project_data_delivery"></a>
 
 ### update_project_data_delivery
 
@@ -853,6 +932,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateProjectDataDeliveryResponseTypeDef](./type_defs.md#updateprojectdatadeliveryresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

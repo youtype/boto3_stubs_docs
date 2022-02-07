@@ -1,3 +1,5 @@
+<a id="elasticbeanstalkclient-for-boto3-elasticbeanstalk-module"></a>
+
 # ElasticBeanstalkClient for boto3 ElasticBeanstalk module
 
 > [Index](..) > [ElasticBeanstalk](.) > ElasticBeanstalkClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module
-[mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+[mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 - [ElasticBeanstalkClient for boto3 ElasticBeanstalk module](#elasticbeanstalkclient-for-boto3-elasticbeanstalk-module)
   - [ElasticBeanstalkClient](#elasticbeanstalkclient)
@@ -64,6 +66,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="elasticbeanstalkclient"></a>
+
 ## ElasticBeanstalkClient
 
 Type annotations for `boto3.client("elasticbeanstalk")`
@@ -71,14 +75,17 @@ Type annotations for `boto3.client("elasticbeanstalk")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
 
 def get_elasticbeanstalk_client() -> ElasticBeanstalkClient:
-    return boto3.client("elasticbeanstalk")
+    return Session().client("elasticbeanstalk")
 ```
 
 Boto3 documentation:
 [ElasticBeanstalk.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -115,7 +122,11 @@ Exceptions:
 - `Exceptions.TooManyPlatformsException`
 - `Exceptions.TooManyTagsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -127,6 +138,8 @@ Boto3 documentation:
 [ElasticBeanstalk.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="abort_environment_update"></a>
 
 ### abort_environment_update
 
@@ -146,6 +159,8 @@ Keyword-only arguments:
 
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
+
+<a id="apply_environment_managed_action"></a>
 
 ### apply_environment_managed_action
 
@@ -169,6 +184,8 @@ Keyword-only arguments:
 Returns
 [ApplyEnvironmentManagedActionResultTypeDef](./type_defs.md#applyenvironmentmanagedactionresulttypedef).
 
+<a id="associate_environment_operations_role"></a>
+
 ### associate_environment_operations_role
 
 Add or change the operations role used by an environment.
@@ -188,6 +205,8 @@ Keyword-only arguments:
 - `EnvironmentName`: `str` *(required)*
 - `OperationsRole`: `str` *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -202,6 +221,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="check_dns_availability"></a>
 
 ### check_dns_availability
 
@@ -222,6 +243,8 @@ Keyword-only arguments:
 
 Returns
 [CheckDNSAvailabilityResultMessageTypeDef](./type_defs.md#checkdnsavailabilityresultmessagetypedef).
+
+<a id="compose_environments"></a>
 
 ### compose_environments
 
@@ -245,6 +268,8 @@ Keyword-only arguments:
 
 Returns
 [EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef).
+
+<a id="create_application"></a>
 
 ### create_application
 
@@ -270,6 +295,8 @@ Keyword-only arguments:
 
 Returns
 [ApplicationDescriptionMessageTypeDef](./type_defs.md#applicationdescriptionmessagetypedef).
+
+<a id="create_application_version"></a>
 
 ### create_application_version
 
@@ -301,6 +328,8 @@ Keyword-only arguments:
 Returns
 [ApplicationVersionDescriptionMessageTypeDef](./type_defs.md#applicationversiondescriptionmessagetypedef).
 
+<a id="create_configuration_template"></a>
+
 ### create_configuration_template
 
 .
@@ -330,6 +359,8 @@ Keyword-only arguments:
 
 Returns
 [ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef).
+
+<a id="create_environment"></a>
 
 ### create_environment
 
@@ -367,6 +398,8 @@ Keyword-only arguments:
 Returns
 [EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
 
+<a id="create_platform_version"></a>
+
 ### create_platform_version
 
 Create a new version of your custom platform.
@@ -394,6 +427,8 @@ Keyword-only arguments:
 Returns
 [CreatePlatformVersionResultTypeDef](./type_defs.md#createplatformversionresulttypedef).
 
+<a id="create_storage_location"></a>
+
 ### create_storage_location
 
 Creates a bucket in Amazon S3 to store application versions, logs, and other
@@ -407,6 +442,8 @@ Boto3 documentation:
 
 Returns
 [CreateStorageLocationResultMessageTypeDef](./type_defs.md#createstoragelocationresultmessagetypedef).
+
+<a id="delete_application"></a>
 
 ### delete_application
 
@@ -427,6 +464,8 @@ Keyword-only arguments:
 - `ApplicationName`: `str` *(required)*
 - `TerminateEnvByForce`: `bool`
 
+<a id="delete_application_version"></a>
+
 ### delete_application_version
 
 Deletes the specified version from the specified application.
@@ -446,6 +485,8 @@ Keyword-only arguments:
 - `VersionLabel`: `str` *(required)*
 - `DeleteSourceBundle`: `bool`
 
+<a id="delete_configuration_template"></a>
+
 ### delete_configuration_template
 
 Deletes the specified configuration template.
@@ -464,6 +505,8 @@ Keyword-only arguments:
 - `ApplicationName`: `str` *(required)*
 - `TemplateName`: `str` *(required)*
 
+<a id="delete_environment_configuration"></a>
+
 ### delete_environment_configuration
 
 Deletes the draft configuration associated with the running environment.
@@ -481,6 +524,8 @@ Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `EnvironmentName`: `str` *(required)*
+
+<a id="delete_platform_version"></a>
 
 ### delete_platform_version
 
@@ -502,6 +547,8 @@ Keyword-only arguments:
 Returns
 [DeletePlatformVersionResultTypeDef](./type_defs.md#deleteplatformversionresulttypedef).
 
+<a id="describe_account_attributes"></a>
+
 ### describe_account_attributes
 
 Returns attributes related to AWS Elastic Beanstalk that are associated with
@@ -515,6 +562,8 @@ Boto3 documentation:
 
 Returns
 [DescribeAccountAttributesResultTypeDef](./type_defs.md#describeaccountattributesresulttypedef).
+
+<a id="describe_application_versions"></a>
 
 ### describe_application_versions
 
@@ -539,6 +588,8 @@ Keyword-only arguments:
 Returns
 [ApplicationVersionDescriptionsMessageTypeDef](./type_defs.md#applicationversiondescriptionsmessagetypedef).
 
+<a id="describe_applications"></a>
+
 ### describe_applications
 
 Returns the descriptions of existing applications.
@@ -558,6 +609,8 @@ Keyword-only arguments:
 
 Returns
 [ApplicationDescriptionsMessageTypeDef](./type_defs.md#applicationdescriptionsmessagetypedef).
+
+<a id="describe_configuration_options"></a>
 
 ### describe_configuration_options
 
@@ -586,6 +639,8 @@ Keyword-only arguments:
 Returns
 [ConfigurationOptionsDescriptionTypeDef](./type_defs.md#configurationoptionsdescriptiontypedef).
 
+<a id="describe_configuration_settings"></a>
+
 ### describe_configuration_settings
 
 Returns a description of the settings for the specified configuration set, that
@@ -610,6 +665,8 @@ Keyword-only arguments:
 Returns
 [ConfigurationSettingsDescriptionsTypeDef](./type_defs.md#configurationsettingsdescriptionstypedef).
 
+<a id="describe_environment_health"></a>
+
 ### describe_environment_health
 
 Returns information about the overall health of the specified environment.
@@ -632,6 +689,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEnvironmentHealthResultTypeDef](./type_defs.md#describeenvironmenthealthresulttypedef).
+
+<a id="describe_environment_managed_action_history"></a>
 
 ### describe_environment_managed_action_history
 
@@ -657,6 +716,8 @@ Keyword-only arguments:
 Returns
 [DescribeEnvironmentManagedActionHistoryResultTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresulttypedef).
 
+<a id="describe_environment_managed_actions"></a>
+
 ### describe_environment_managed_actions
 
 Lists an environment's upcoming and in-progress managed actions.
@@ -679,6 +740,8 @@ Keyword-only arguments:
 Returns
 [DescribeEnvironmentManagedActionsResultTypeDef](./type_defs.md#describeenvironmentmanagedactionsresulttypedef).
 
+<a id="describe_environment_resources"></a>
+
 ### describe_environment_resources
 
 Returns AWS resources for this environment.
@@ -699,6 +762,8 @@ Keyword-only arguments:
 
 Returns
 [EnvironmentResourceDescriptionsMessageTypeDef](./type_defs.md#environmentresourcedescriptionsmessagetypedef).
+
+<a id="describe_environments"></a>
 
 ### describe_environments
 
@@ -726,6 +791,8 @@ Keyword-only arguments:
 
 Returns
 [EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef).
+
+<a id="describe_events"></a>
 
 ### describe_events
 
@@ -757,6 +824,8 @@ Keyword-only arguments:
 Returns
 [EventDescriptionsMessageTypeDef](./type_defs.md#eventdescriptionsmessagetypedef).
 
+<a id="describe_instances_health"></a>
+
 ### describe_instances_health
 
 Retrieves detailed information about the health of instances in your AWS
@@ -782,6 +851,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstancesHealthResultTypeDef](./type_defs.md#describeinstanceshealthresulttypedef).
 
+<a id="describe_platform_version"></a>
+
 ### describe_platform_version
 
 Describes a platform version.
@@ -802,6 +873,8 @@ Keyword-only arguments:
 Returns
 [DescribePlatformVersionResultTypeDef](./type_defs.md#describeplatformversionresulttypedef).
 
+<a id="disassociate_environment_operations_role"></a>
+
 ### disassociate_environment_operations_role
 
 Disassociate the operations role from an environment.
@@ -819,6 +892,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EnvironmentName`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -839,6 +914,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="list_available_solution_stacks"></a>
+
 ### list_available_solution_stacks
 
 Returns a list of the available solution stack names, with the public version
@@ -852,6 +929,8 @@ Boto3 documentation:
 
 Returns
 [ListAvailableSolutionStacksResultMessageTypeDef](./type_defs.md#listavailablesolutionstacksresultmessagetypedef).
+
+<a id="list_platform_branches"></a>
 
 ### list_platform_branches
 
@@ -876,6 +955,8 @@ Keyword-only arguments:
 Returns
 [ListPlatformBranchesResultTypeDef](./type_defs.md#listplatformbranchesresulttypedef).
 
+<a id="list_platform_versions"></a>
+
 ### list_platform_versions
 
 Lists the platform versions available for your account in an AWS Region.
@@ -899,6 +980,8 @@ Keyword-only arguments:
 Returns
 [ListPlatformVersionsResultTypeDef](./type_defs.md#listplatformversionsresulttypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Return the tags applied to an AWS Elastic Beanstalk resource.
@@ -919,6 +1002,8 @@ Keyword-only arguments:
 Returns
 [ResourceTagsDescriptionMessageTypeDef](./type_defs.md#resourcetagsdescriptionmessagetypedef).
 
+<a id="rebuild_environment"></a>
+
 ### rebuild_environment
 
 Deletes and recreates all of the AWS resources (for example: the Auto Scaling
@@ -937,6 +1022,8 @@ Keyword-only arguments:
 
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
+
+<a id="request_environment_info"></a>
 
 ### request_environment_info
 
@@ -959,6 +1046,8 @@ Keyword-only arguments:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
+<a id="restart_app_server"></a>
+
 ### restart_app_server
 
 Causes the environment to restart the application container server running on
@@ -977,6 +1066,8 @@ Keyword-only arguments:
 
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
+
+<a id="retrieve_environment_info"></a>
 
 ### retrieve_environment_info
 
@@ -1001,6 +1092,8 @@ Keyword-only arguments:
 Returns
 [RetrieveEnvironmentInfoResultMessageTypeDef](./type_defs.md#retrieveenvironmentinforesultmessagetypedef).
 
+<a id="swap_environment_cnames"></a>
+
 ### swap_environment_cnames
 
 Swaps the CNAMEs of two environments.
@@ -1020,6 +1113,8 @@ Keyword-only arguments:
 - `SourceEnvironmentName`: `str`
 - `DestinationEnvironmentId`: `str`
 - `DestinationEnvironmentName`: `str`
+
+<a id="terminate_environment"></a>
 
 ### terminate_environment
 
@@ -1044,6 +1139,8 @@ Keyword-only arguments:
 Returns
 [EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
 
+<a id="update_application"></a>
+
 ### update_application
 
 Updates the specified application to have the specified properties.
@@ -1064,6 +1161,8 @@ Keyword-only arguments:
 
 Returns
 [ApplicationDescriptionMessageTypeDef](./type_defs.md#applicationdescriptionmessagetypedef).
+
+<a id="update_application_resource_lifecycle"></a>
 
 ### update_application_resource_lifecycle
 
@@ -1089,6 +1188,8 @@ Keyword-only arguments:
 Returns
 [ApplicationResourceLifecycleDescriptionMessageTypeDef](./type_defs.md#applicationresourcelifecycledescriptionmessagetypedef).
 
+<a id="update_application_version"></a>
+
 ### update_application_version
 
 Updates the specified application version to have the specified properties.
@@ -1110,6 +1211,8 @@ Keyword-only arguments:
 
 Returns
 [ApplicationVersionDescriptionMessageTypeDef](./type_defs.md#applicationversiondescriptionmessagetypedef).
+
+<a id="update_configuration_template"></a>
 
 ### update_configuration_template
 
@@ -1137,6 +1240,8 @@ Keyword-only arguments:
 
 Returns
 [ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef).
+
+<a id="update_environment"></a>
 
 ### update_environment
 
@@ -1173,6 +1278,8 @@ Keyword-only arguments:
 Returns
 [EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
 
+<a id="update_tags_for_resource"></a>
+
 ### update_tags_for_resource
 
 Update the list of tags applied to an AWS Elastic Beanstalk resource.
@@ -1191,6 +1298,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `TagsToAdd`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TagsToRemove`: `Sequence`\[`str`\]
+
+<a id="validate_configuration_settings"></a>
 
 ### validate_configuration_settings
 
@@ -1218,6 +1327,8 @@ Keyword-only arguments:
 Returns
 [ConfigurationSettingsValidationMessagesTypeDef](./type_defs.md#configurationsettingsvalidationmessagestypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("elasticbeanstalk").get_paginator` method
@@ -1233,6 +1344,8 @@ with overloads.
   [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
 - `client.get_paginator("list_platform_versions")` ->
   [ListPlatformVersionsPaginator](./paginators.md#listplatformversionspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

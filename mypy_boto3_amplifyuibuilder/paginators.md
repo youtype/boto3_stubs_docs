@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-amplifyuibuilder-module"></a>
+
 # Paginators for boto3 AmplifyUIBuilder module
 
 > [Index](..) > [AmplifyUIBuilder](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [AmplifyUIBuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder)
 type annotations stubs module
-[mypy_boto3_amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
+[mypy-boto3-amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
 
 - [Paginators for boto3 AmplifyUIBuilder module](#paginators-for-boto3-amplifyuibuilder-module)
   - [ListComponentsPaginator](#listcomponentspaginator)
   - [ListThemesPaginator](#listthemespaginator)
+
+<a id="listcomponentspaginator"></a>
 
 ## ListComponentsPaginator
 
@@ -19,10 +23,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_amplifyuibuilder.paginator import ListComponentsPaginator
 
 def get_list_components_paginator() -> ListComponentsPaginator:
-    return boto3.client("amplifyuibuilder").get_paginator("list_components")
+    return Session().client("amplifyuibuilder").get_paginator("list_components")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `ListComponentsPaginator.paginate` method:
 `ListComponentsPaginator.paginate` returns
 `_PageIterator`\[[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef)\].
 
+<a id="listthemespaginator"></a>
+
 ## ListThemesPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_amplifyuibuilder.paginator import ListThemesPaginator
 
 def get_list_themes_paginator() -> ListThemesPaginator:
-    return boto3.client("amplifyuibuilder").get_paginator("list_themes")
+    return Session().client("amplifyuibuilder").get_paginator("list_themes")
 ```
 
 Boto3 documentation:

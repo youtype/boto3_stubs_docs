@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-datapipeline-module"></a>
+
 # Paginators for boto3 DataPipeline module
 
 > [Index](..) > [DataPipeline](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
 type annotations stubs module
-[mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
+[mypy-boto3-datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
 - [Paginators for boto3 DataPipeline module](#paginators-for-boto3-datapipeline-module)
   - [DescribeObjectsPaginator](#describeobjectspaginator)
   - [ListPipelinesPaginator](#listpipelinespaginator)
   - [QueryObjectsPaginator](#queryobjectspaginator)
+
+<a id="describeobjectspaginator"></a>
 
 ## DescribeObjectsPaginator
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_datapipeline.paginator import DescribeObjectsPaginator
 
 def get_describe_objects_paginator() -> DescribeObjectsPaginator:
-    return boto3.client("datapipeline").get_paginator("describe_objects")
+    return Session().client("datapipeline").get_paginator("describe_objects")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `DescribeObjectsPaginator.paginate` method:
 `DescribeObjectsPaginator.paginate` returns
 `_PageIterator`\[[DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef)\].
 
+<a id="listpipelinespaginator"></a>
+
 ## ListPipelinesPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_datapipeline.paginator import ListPipelinesPaginator
 
 def get_list_pipelines_paginator() -> ListPipelinesPaginator:
-    return boto3.client("datapipeline").get_paginator("list_pipelines")
+    return Session().client("datapipeline").get_paginator("list_pipelines")
 ```
 
 Boto3 documentation:
@@ -65,6 +75,8 @@ Arguments for `ListPipelinesPaginator.paginate` method:
 `ListPipelinesPaginator.paginate` returns
 `_PageIterator`\[[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef)\].
 
+<a id="queryobjectspaginator"></a>
+
 ## QueryObjectsPaginator
 
 Type annotations for
@@ -73,10 +85,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_datapipeline.paginator import QueryObjectsPaginator
 
 def get_query_objects_paginator() -> QueryObjectsPaginator:
-    return boto3.client("datapipeline").get_paginator("query_objects")
+    return Session().client("datapipeline").get_paginator("query_objects")
 ```
 
 Boto3 documentation:

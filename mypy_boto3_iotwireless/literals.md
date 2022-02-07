@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-iotwireless-module"></a>
+
 # Literals for boto3 IoTWireless module
 
 > [Index](..) > [IoTWireless](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
 type annotations stubs module
-[mypy_boto3_iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
+[mypy-boto3-iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
 - [Literals for boto3 IoTWireless module](#literals-for-boto3-iotwireless-module)
   - [BatteryLevelType](#batteryleveltype)
@@ -36,6 +38,8 @@ type annotations stubs module
   - [WirelessGatewayTypeType](#wirelessgatewaytypetype)
   - [ServiceName](#servicename)
 
+<a id="batteryleveltype"></a>
+
 ## BatteryLevelType
 
 ```python
@@ -48,6 +52,8 @@ Values:
 - `low`
 - `normal`
 
+<a id="connectionstatustype"></a>
+
 ## ConnectionStatusType
 
 ```python
@@ -58,6 +64,8 @@ Values:
 
 - `Connected`
 - `Disconnected`
+
+<a id="devicestatetype"></a>
 
 ## DeviceStateType
 
@@ -72,6 +80,8 @@ Values:
 - `RegisteredReachable`
 - `RegisteredUnreachable`
 
+<a id="dlclasstype"></a>
+
 ## DlClassType
 
 ```python
@@ -83,6 +93,8 @@ Values:
 - `ClassB`
 - `ClassC`
 
+<a id="eventnotificationpartnertypetype"></a>
+
 ## EventNotificationPartnerTypeType
 
 ```python
@@ -92,6 +104,8 @@ from mypy_boto3_iotwireless.literals import EventNotificationPartnerTypeType
 Values:
 
 - `Sidewalk`
+
+<a id="eventnotificationtopicstatustype"></a>
 
 ## EventNotificationTopicStatusType
 
@@ -103,6 +117,8 @@ Values:
 
 - `Disabled`
 - `Enabled`
+
+<a id="eventtype"></a>
 
 ## EventType
 
@@ -118,6 +134,8 @@ Values:
 - `nack`
 - `passthrough`
 
+<a id="expressiontypetype"></a>
+
 ## ExpressionTypeType
 
 ```python
@@ -128,6 +146,8 @@ Values:
 
 - `MqttTopic`
 - `RuleName`
+
+<a id="fuotadevicestatustype"></a>
 
 ## FuotaDeviceStatusType
 
@@ -149,6 +169,8 @@ Values:
 - `Successful`
 - `Wrong_descriptor`
 
+<a id="fuotataskstatustype"></a>
+
 ## FuotaTaskStatusType
 
 ```python
@@ -163,6 +185,8 @@ Values:
 - `In_FuotaSession`
 - `Pending`
 
+<a id="identifiertypetype"></a>
+
 ## IdentifierTypeType
 
 ```python
@@ -172,6 +196,8 @@ from mypy_boto3_iotwireless.literals import IdentifierTypeType
 Values:
 
 - `PartnerAccountId`
+
+<a id="logleveltype"></a>
 
 ## LogLevelType
 
@@ -184,6 +210,8 @@ Values:
 - `DISABLED`
 - `ERROR`
 - `INFO`
+
+<a id="messagetypetype"></a>
 
 ## MessageTypeType
 
@@ -198,6 +226,8 @@ Values:
 - `CUSTOM_COMMAND_ID_RESP`
 - `CUSTOM_COMMAND_ID_SET`
 
+<a id="partnertypetype"></a>
+
 ## PartnerTypeType
 
 ```python
@@ -207,6 +237,8 @@ from mypy_boto3_iotwireless.literals import PartnerTypeType
 Values:
 
 - `Sidewalk`
+
+<a id="signingalgtype"></a>
 
 ## SigningAlgType
 
@@ -218,6 +250,8 @@ Values:
 
 - `Ed25519`
 - `P256r1`
+
+<a id="supportedrfregiontype"></a>
 
 ## SupportedRfRegionType
 
@@ -231,6 +265,8 @@ Values:
 - `AU915`
 - `EU868`
 - `US915`
+
+<a id="wirelessdeviceeventtype"></a>
 
 ## WirelessDeviceEventType
 
@@ -246,6 +282,8 @@ Values:
 - `Rejoin`
 - `Uplink_Data`
 
+<a id="wirelessdeviceframeinfotype"></a>
+
 ## WirelessDeviceFrameInfoType
 
 ```python
@@ -256,6 +294,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="wirelessdeviceidtypetype"></a>
 
 ## WirelessDeviceIdTypeType
 
@@ -270,6 +310,8 @@ Values:
 - `ThingName`
 - `WirelessDeviceId`
 
+<a id="wirelessdevicetypetype"></a>
+
 ## WirelessDeviceTypeType
 
 ```python
@@ -281,6 +323,8 @@ Values:
 - `LoRaWAN`
 - `Sidewalk`
 
+<a id="wirelessgatewayeventtype"></a>
+
 ## WirelessGatewayEventType
 
 ```python
@@ -291,6 +335,8 @@ Values:
 
 - `Certificate`
 - `CUPS_Request`
+
+<a id="wirelessgatewayidtypetype"></a>
 
 ## WirelessGatewayIdTypeType
 
@@ -304,6 +350,8 @@ Values:
 - `ThingName`
 - `WirelessGatewayId`
 
+<a id="wirelessgatewayservicetypetype"></a>
+
 ## WirelessGatewayServiceTypeType
 
 ```python
@@ -315,6 +363,8 @@ Values:
 - `CUPS`
 - `LNS`
 
+<a id="wirelessgatewaytaskdefinitiontypetype"></a>
+
 ## WirelessGatewayTaskDefinitionTypeType
 
 ```python
@@ -324,6 +374,8 @@ from mypy_boto3_iotwireless.literals import WirelessGatewayTaskDefinitionTypeTyp
 Values:
 
 - `UPDATE`
+
+<a id="wirelessgatewaytaskstatustype"></a>
 
 ## WirelessGatewayTaskStatusType
 
@@ -340,6 +392,8 @@ Values:
 - `PENDING`
 - `SECOND_RETRY`
 
+<a id="wirelessgatewaytypetype"></a>
+
 ## WirelessGatewayTypeType
 
 ```python
@@ -349,6 +403,8 @@ from mypy_boto3_iotwireless.literals import WirelessGatewayTypeType
 Values:
 
 - `LoRaWAN`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

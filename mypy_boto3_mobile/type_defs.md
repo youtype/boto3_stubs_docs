@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-mobile-module"></a>
+
 # Typed dictionaries for boto3 Mobile module
 
 > [Index](..) > [Mobile](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
 type annotations stubs module
-[mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
+[mypy-boto3-mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 - [Typed dictionaries for boto3 Mobile module](#typed-dictionaries-for-boto3-mobile-module)
   - [BundleDetailsTypeDef](#bundledetailstypedef)
@@ -33,6 +35,8 @@ type annotations stubs module
   - [UpdateProjectRequestRequestTypeDef](#updateprojectrequestrequesttypedef)
   - [UpdateProjectResultTypeDef](#updateprojectresulttypedef)
 
+<a id="bundledetailstypedef"></a>
+
 ## BundleDetailsTypeDef
 
 ```python
@@ -48,6 +52,8 @@ Optional fields:
 - `iconUrl`: `str`
 - `availablePlatforms`: `List`\[[PlatformType](./literals.md#platformtype)\]
 
+<a id="createprojectrequestrequesttypedef"></a>
+
 ## CreateProjectRequestRequestTypeDef
 
 ```python
@@ -61,6 +67,8 @@ Optional fields:
 - `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `snapshotId`: `str`
 
+<a id="createprojectresulttypedef"></a>
+
 ## CreateProjectResultTypeDef
 
 ```python
@@ -73,6 +81,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteprojectrequestrequesttypedef"></a>
+
 ## DeleteProjectRequestRequestTypeDef
 
 ```python
@@ -82,6 +92,8 @@ from mypy_boto3_mobile.type_defs import DeleteProjectRequestRequestTypeDef
 Required fields:
 
 - `projectId`: `str`
+
+<a id="deleteprojectresulttypedef"></a>
 
 ## DeleteProjectResultTypeDef
 
@@ -98,6 +110,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describebundlerequestrequesttypedef"></a>
+
 ## DescribeBundleRequestRequestTypeDef
 
 ```python
@@ -107,6 +121,8 @@ from mypy_boto3_mobile.type_defs import DescribeBundleRequestRequestTypeDef
 Required fields:
 
 - `bundleId`: `str`
+
+<a id="describebundleresulttypedef"></a>
 
 ## DescribeBundleResultTypeDef
 
@@ -119,6 +135,8 @@ Required fields:
 - `details`: [BundleDetailsTypeDef](./type_defs.md#bundledetailstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeprojectrequestrequesttypedef"></a>
 
 ## DescribeProjectRequestRequestTypeDef
 
@@ -134,6 +152,8 @@ Optional fields:
 
 - `syncFromResources`: `bool`
 
+<a id="describeprojectresulttypedef"></a>
+
 ## DescribeProjectResultTypeDef
 
 ```python
@@ -145,6 +165,8 @@ Required fields:
 - `details`: [ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="exportbundlerequestrequesttypedef"></a>
 
 ## ExportBundleRequestRequestTypeDef
 
@@ -161,6 +183,8 @@ Optional fields:
 - `projectId`: `str`
 - `platform`: [PlatformType](./literals.md#platformtype)
 
+<a id="exportbundleresulttypedef"></a>
+
 ## ExportBundleResultTypeDef
 
 ```python
@@ -173,6 +197,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="exportprojectrequestrequesttypedef"></a>
+
 ## ExportProjectRequestRequestTypeDef
 
 ```python
@@ -182,6 +208,8 @@ from mypy_boto3_mobile.type_defs import ExportProjectRequestRequestTypeDef
 Required fields:
 
 - `projectId`: `str`
+
+<a id="exportprojectresulttypedef"></a>
 
 ## ExportProjectResultTypeDef
 
@@ -197,6 +225,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbundlesrequestrequesttypedef"></a>
+
 ## ListBundlesRequestRequestTypeDef
 
 ```python
@@ -207,6 +237,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listbundlesresulttypedef"></a>
 
 ## ListBundlesResultTypeDef
 
@@ -222,6 +254,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listprojectsrequestrequesttypedef"></a>
+
 ## ListProjectsRequestRequestTypeDef
 
 ```python
@@ -232,6 +266,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listprojectsresulttypedef"></a>
 
 ## ListProjectsResultTypeDef
 
@@ -247,6 +283,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -258,6 +296,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="projectdetailstypedef"></a>
 
 ## ProjectDetailsTypeDef
 
@@ -276,6 +316,8 @@ Optional fields:
 - `consoleUrl`: `str`
 - `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
+<a id="projectsummarytypedef"></a>
+
 ## ProjectSummaryTypeDef
 
 ```python
@@ -286,6 +328,8 @@ Optional fields:
 
 - `name`: `str`
 - `projectId`: `str`
+
+<a id="resourcetypedef"></a>
 
 ## ResourceTypeDef
 
@@ -301,6 +345,8 @@ Optional fields:
 - `feature`: `str`
 - `attributes`: `Dict`\[`str`, `str`\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -315,6 +361,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="updateprojectrequestrequesttypedef"></a>
+
 ## UpdateProjectRequestRequestTypeDef
 
 ```python
@@ -328,6 +376,8 @@ Required fields:
 Optional fields:
 
 - `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="updateprojectresulttypedef"></a>
 
 ## UpdateProjectResultTypeDef
 

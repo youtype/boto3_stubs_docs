@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-robomaker-module"></a>
+
 # Type annotations for boto3 RoboMaker module
 
 > [Index](..) > RoboMaker
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
 type annotations stubs module
-[mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
+[mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[robomaker]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[robomaker]'
+
+# standalone installation
 pip install mypy-boto3-robomaker
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-robomaker
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="robomakerclient"></a>
+
 ## RoboMakerClient
 
 Type annotations for `boto3.client("robomaker")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_robomaker.client import RoboMakerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -94,6 +108,8 @@ from mypy_boto3_robomaker.client import RoboMakerClient
 - [update_simulation_application](./client.md#update_simulation_application)
 - [update_world_template](./client.md#update_world_template)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 RoboMakerClient [exceptions](./client.md#exceptions)
@@ -109,6 +125,8 @@ RoboMakerClient [exceptions](./client.md#exceptions)
 - ServiceUnavailableException
 - ThrottlingException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -117,7 +135,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_robomaker.paginators import ListDeploymentJobsPaginator, ...
+from mypy_boto3_robomaker.paginator import ListDeploymentJobsPaginator, ...
 ```
 
 - [ListDeploymentJobsPaginator](./paginators.md#listdeploymentjobspaginator)
@@ -131,6 +149,8 @@ from mypy_boto3_robomaker.paginators import ListDeploymentJobsPaginator, ...
 - [ListWorldGenerationJobsPaginator](./paginators.md#listworldgenerationjobspaginator)
 - [ListWorldTemplatesPaginator](./paginators.md#listworldtemplatespaginator)
 - [ListWorldsPaginator](./paginators.md#listworldspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -177,6 +197,8 @@ from mypy_boto3_robomaker.literals import ArchitectureType, ...
 - [WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

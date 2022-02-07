@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ivs-module"></a>
+
 # Literals for boto3 IVS module
 
 > [Index](..) > [IVS](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
 type annotations stubs module
-[mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
+[mypy-boto3-ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 - [Literals for boto3 IVS module](#literals-for-boto3-ivs-module)
   - [ChannelLatencyModeType](#channellatencymodetype)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="channellatencymodetype"></a>
+
 ## ChannelLatencyModeType
 
 ```python
@@ -32,6 +36,8 @@ Values:
 
 - `LOW`
 - `NORMAL`
+
+<a id="channeltypetype"></a>
 
 ## ChannelTypeType
 
@@ -44,6 +50,8 @@ Values:
 - `BASIC`
 - `STANDARD`
 
+<a id="listchannelspaginatorname"></a>
+
 ## ListChannelsPaginatorName
 
 ```python
@@ -53,6 +61,8 @@ from mypy_boto3_ivs.literals import ListChannelsPaginatorName
 Values:
 
 - `list_channels`
+
+<a id="listplaybackkeypairspaginatorname"></a>
 
 ## ListPlaybackKeyPairsPaginatorName
 
@@ -64,6 +74,8 @@ Values:
 
 - `list_playback_key_pairs`
 
+<a id="listrecordingconfigurationspaginatorname"></a>
+
 ## ListRecordingConfigurationsPaginatorName
 
 ```python
@@ -73,6 +85,8 @@ from mypy_boto3_ivs.literals import ListRecordingConfigurationsPaginatorName
 Values:
 
 - `list_recording_configurations`
+
+<a id="liststreamkeyspaginatorname"></a>
 
 ## ListStreamKeysPaginatorName
 
@@ -84,6 +98,8 @@ Values:
 
 - `list_stream_keys`
 
+<a id="liststreamspaginatorname"></a>
+
 ## ListStreamsPaginatorName
 
 ```python
@@ -93,6 +109,8 @@ from mypy_boto3_ivs.literals import ListStreamsPaginatorName
 Values:
 
 - `list_streams`
+
+<a id="recordingconfigurationstatetype"></a>
 
 ## RecordingConfigurationStateType
 
@@ -106,6 +124,8 @@ Values:
 - `CREATE_FAILED`
 - `CREATING`
 
+<a id="recordingmodetype"></a>
+
 ## RecordingModeType
 
 ```python
@@ -116,6 +136,8 @@ Values:
 
 - `DISABLED`
 - `INTERVAL`
+
+<a id="streamhealthtype"></a>
 
 ## StreamHealthType
 
@@ -129,6 +151,8 @@ Values:
 - `STARVING`
 - `UNKNOWN`
 
+<a id="streamstatetype"></a>
+
 ## StreamStateType
 
 ```python
@@ -139,6 +163,8 @@ Values:
 
 - `LIVE`
 - `OFFLINE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -447,6 +473,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

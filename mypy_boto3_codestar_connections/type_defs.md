@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-codestarconnections-module"></a>
+
 # Typed dictionaries for boto3 CodeStarconnections module
 
 > [Index](..) > [CodeStarconnections](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
 type annotations stubs module
-[mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
+[mypy-boto3-codestar-connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
 - [Typed dictionaries for boto3 CodeStarconnections module](#typed-dictionaries-for-boto3-codestarconnections-module)
   - [ConnectionTypeDef](#connectiontypedef)
@@ -33,6 +35,8 @@ type annotations stubs module
   - [UpdateHostInputRequestTypeDef](#updatehostinputrequesttypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
 
+<a id="connectiontypedef"></a>
+
 ## ConnectionTypeDef
 
 ```python
@@ -48,6 +52,8 @@ Optional fields:
 - `ConnectionStatus`:
   [ConnectionStatusType](./literals.md#connectionstatustype)
 - `HostArn`: `str`
+
+<a id="createconnectioninputrequesttypedef"></a>
 
 ## CreateConnectionInputRequestTypeDef
 
@@ -65,6 +71,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `HostArn`: `str`
 
+<a id="createconnectionoutputtypedef"></a>
+
 ## CreateConnectionOutputTypeDef
 
 ```python
@@ -77,6 +85,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createhostinputrequesttypedef"></a>
 
 ## CreateHostInputRequestTypeDef
 
@@ -96,6 +106,8 @@ Optional fields:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createhostoutputtypedef"></a>
+
 ## CreateHostOutputTypeDef
 
 ```python
@@ -109,6 +121,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteconnectioninputrequesttypedef"></a>
+
 ## DeleteConnectionInputRequestTypeDef
 
 ```python
@@ -118,6 +132,8 @@ from mypy_boto3_codestar_connections.type_defs import DeleteConnectionInputReque
 Required fields:
 
 - `ConnectionArn`: `str`
+
+<a id="deletehostinputrequesttypedef"></a>
 
 ## DeleteHostInputRequestTypeDef
 
@@ -129,6 +145,8 @@ Required fields:
 
 - `HostArn`: `str`
 
+<a id="getconnectioninputrequesttypedef"></a>
+
 ## GetConnectionInputRequestTypeDef
 
 ```python
@@ -138,6 +156,8 @@ from mypy_boto3_codestar_connections.type_defs import GetConnectionInputRequestT
 Required fields:
 
 - `ConnectionArn`: `str`
+
+<a id="getconnectionoutputtypedef"></a>
 
 ## GetConnectionOutputTypeDef
 
@@ -151,6 +171,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gethostinputrequesttypedef"></a>
+
 ## GetHostInputRequestTypeDef
 
 ```python
@@ -160,6 +182,8 @@ from mypy_boto3_codestar_connections.type_defs import GetHostInputRequestTypeDef
 Required fields:
 
 - `HostArn`: `str`
+
+<a id="gethostoutputtypedef"></a>
 
 ## GetHostOutputTypeDef
 
@@ -178,6 +202,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="hosttypedef"></a>
+
 ## HostTypeDef
 
 ```python
@@ -195,6 +221,8 @@ Optional fields:
 - `Status`: `str`
 - `StatusMessage`: `str`
 
+<a id="listconnectionsinputrequesttypedef"></a>
+
 ## ListConnectionsInputRequestTypeDef
 
 ```python
@@ -207,6 +235,8 @@ Optional fields:
 - `HostArnFilter`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listconnectionsoutputtypedef"></a>
 
 ## ListConnectionsOutputTypeDef
 
@@ -222,6 +252,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listhostsinputrequesttypedef"></a>
+
 ## ListHostsInputRequestTypeDef
 
 ```python
@@ -232,6 +264,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listhostsoutputtypedef"></a>
 
 ## ListHostsOutputTypeDef
 
@@ -246,6 +280,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -255,6 +291,8 @@ from mypy_boto3_codestar_connections.type_defs import ListTagsForResourceInputRe
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceoutputtypedef"></a>
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -267,6 +305,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -282,6 +322,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -292,6 +334,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -304,6 +348,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -314,6 +360,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatehostinputrequesttypedef"></a>
 
 ## UpdateHostInputRequestTypeDef
 
@@ -330,6 +378,8 @@ Optional fields:
 - `ProviderEndpoint`: `str`
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
+
+<a id="vpcconfigurationtypedef"></a>
 
 ## VpcConfigurationTypeDef
 

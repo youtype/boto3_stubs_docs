@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-redshiftdataapiservice-module"></a>
+
 # Paginators for boto3 RedshiftDataAPIService module
 
 > [Index](..) > [RedshiftDataAPIService](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
 type annotations stubs module
-[mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
+[mypy-boto3-redshift-data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
 - [Paginators for boto3 RedshiftDataAPIService module](#paginators-for-boto3-redshiftdataapiservice-module)
   - [DescribeTablePaginator](#describetablepaginator)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [ListStatementsPaginator](#liststatementspaginator)
   - [ListTablesPaginator](#listtablespaginator)
 
+<a id="describetablepaginator"></a>
+
 ## DescribeTablePaginator
 
 Type annotations for
@@ -23,10 +27,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift_data.paginator import DescribeTablePaginator
 
 def get_describe_table_paginator() -> DescribeTablePaginator:
-    return boto3.client("redshift-data").get_paginator("describe_table")
+    return Session().client("redshift-data").get_paginator("describe_table")
 ```
 
 Boto3 documentation:
@@ -47,6 +53,8 @@ Arguments for `DescribeTablePaginator.paginate` method:
 `DescribeTablePaginator.paginate` returns
 `_PageIterator`\[[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef)\].
 
+<a id="getstatementresultpaginator"></a>
+
 ## GetStatementResultPaginator
 
 Type annotations for
@@ -55,10 +63,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift_data.paginator import GetStatementResultPaginator
 
 def get_get_statement_result_paginator() -> GetStatementResultPaginator:
-    return boto3.client("redshift-data").get_paginator("get_statement_result")
+    return Session().client("redshift-data").get_paginator("get_statement_result")
 ```
 
 Boto3 documentation:
@@ -73,6 +83,8 @@ Arguments for `GetStatementResultPaginator.paginate` method:
 `GetStatementResultPaginator.paginate` returns
 `_PageIterator`\[[GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef)\].
 
+<a id="listdatabasespaginator"></a>
+
 ## ListDatabasesPaginator
 
 Type annotations for
@@ -81,10 +93,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift_data.paginator import ListDatabasesPaginator
 
 def get_list_databases_paginator() -> ListDatabasesPaginator:
-    return boto3.client("redshift-data").get_paginator("list_databases")
+    return Session().client("redshift-data").get_paginator("list_databases")
 ```
 
 Boto3 documentation:
@@ -102,6 +116,8 @@ Arguments for `ListDatabasesPaginator.paginate` method:
 `ListDatabasesPaginator.paginate` returns
 `_PageIterator`\[[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef)\].
 
+<a id="listschemaspaginator"></a>
+
 ## ListSchemasPaginator
 
 Type annotations for
@@ -110,10 +126,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift_data.paginator import ListSchemasPaginator
 
 def get_list_schemas_paginator() -> ListSchemasPaginator:
-    return boto3.client("redshift-data").get_paginator("list_schemas")
+    return Session().client("redshift-data").get_paginator("list_schemas")
 ```
 
 Boto3 documentation:
@@ -133,6 +151,8 @@ Arguments for `ListSchemasPaginator.paginate` method:
 `ListSchemasPaginator.paginate` returns
 `_PageIterator`\[[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)\].
 
+<a id="liststatementspaginator"></a>
+
 ## ListStatementsPaginator
 
 Type annotations for
@@ -141,10 +161,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift_data.paginator import ListStatementsPaginator
 
 def get_list_statements_paginator() -> ListStatementsPaginator:
-    return boto3.client("redshift-data").get_paginator("list_statements")
+    return Session().client("redshift-data").get_paginator("list_statements")
 ```
 
 Boto3 documentation:
@@ -161,6 +183,8 @@ Arguments for `ListStatementsPaginator.paginate` method:
 `ListStatementsPaginator.paginate` returns
 `_PageIterator`\[[ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef)\].
 
+<a id="listtablespaginator"></a>
+
 ## ListTablesPaginator
 
 Type annotations for
@@ -169,10 +193,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift_data.paginator import ListTablesPaginator
 
 def get_list_tables_paginator() -> ListTablesPaginator:
-    return boto3.client("redshift-data").get_paginator("list_tables")
+    return Session().client("redshift-data").get_paginator("list_tables")
 ```
 
 Boto3 documentation:

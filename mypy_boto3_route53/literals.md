@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-route53-module"></a>
+
 # Literals for boto3 Route53 module
 
 > [Index](..) > [Route53](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
 type annotations stubs module
-[mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
+[mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
 - [Literals for boto3 Route53 module](#literals-for-boto3-route53-module)
   - [AccountLimitTypeType](#accountlimittypetype)
@@ -35,6 +37,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="accountlimittypetype"></a>
+
 ## AccountLimitTypeType
 
 ```python
@@ -49,6 +53,8 @@ Values:
 - `MAX_TRAFFIC_POLICIES_BY_OWNER`
 - `MAX_TRAFFIC_POLICY_INSTANCES_BY_OWNER`
 
+<a id="changeactiontype"></a>
+
 ## ChangeActionType
 
 ```python
@@ -61,6 +67,8 @@ Values:
 - `DELETE`
 - `UPSERT`
 
+<a id="changestatustype"></a>
+
 ## ChangeStatusType
 
 ```python
@@ -71,6 +79,8 @@ Values:
 
 - `INSYNC`
 - `PENDING`
+
+<a id="cloudwatchregiontype"></a>
 
 ## CloudWatchRegionType
 
@@ -110,6 +120,8 @@ Values:
 - `us-west-1`
 - `us-west-2`
 
+<a id="comparisonoperatortype"></a>
+
 ## ComparisonOperatorType
 
 ```python
@@ -122,6 +134,8 @@ Values:
 - `GreaterThanThreshold`
 - `LessThanOrEqualToThreshold`
 - `LessThanThreshold`
+
+<a id="healthcheckregiontype"></a>
 
 ## HealthCheckRegionType
 
@@ -140,6 +154,8 @@ Values:
 - `us-west-1`
 - `us-west-2`
 
+<a id="healthchecktypetype"></a>
+
 ## HealthCheckTypeType
 
 ```python
@@ -157,6 +173,8 @@ Values:
 - `RECOVERY_CONTROL`
 - `TCP`
 
+<a id="hostedzonelimittypetype"></a>
+
 ## HostedZoneLimitTypeType
 
 ```python
@@ -167,6 +185,8 @@ Values:
 
 - `MAX_RRSETS_BY_ZONE`
 - `MAX_VPCS_ASSOCIATED_BY_ZONE`
+
+<a id="insufficientdatahealthstatustype"></a>
 
 ## InsufficientDataHealthStatusType
 
@@ -180,6 +200,8 @@ Values:
 - `LastKnownStatus`
 - `Unhealthy`
 
+<a id="listhealthcheckspaginatorname"></a>
+
 ## ListHealthChecksPaginatorName
 
 ```python
@@ -189,6 +211,8 @@ from mypy_boto3_route53.literals import ListHealthChecksPaginatorName
 Values:
 
 - `list_health_checks`
+
+<a id="listhostedzonespaginatorname"></a>
 
 ## ListHostedZonesPaginatorName
 
@@ -200,6 +224,8 @@ Values:
 
 - `list_hosted_zones`
 
+<a id="listqueryloggingconfigspaginatorname"></a>
+
 ## ListQueryLoggingConfigsPaginatorName
 
 ```python
@@ -209,6 +235,8 @@ from mypy_boto3_route53.literals import ListQueryLoggingConfigsPaginatorName
 Values:
 
 - `list_query_logging_configs`
+
+<a id="listresourcerecordsetspaginatorname"></a>
 
 ## ListResourceRecordSetsPaginatorName
 
@@ -220,6 +248,8 @@ Values:
 
 - `list_resource_record_sets`
 
+<a id="listvpcassociationauthorizationspaginatorname"></a>
+
 ## ListVPCAssociationAuthorizationsPaginatorName
 
 ```python
@@ -229,6 +259,8 @@ from mypy_boto3_route53.literals import ListVPCAssociationAuthorizationsPaginato
 Values:
 
 - `list_vpc_association_authorizations`
+
+<a id="rrtypetype"></a>
 
 ## RRTypeType
 
@@ -252,6 +284,8 @@ Values:
 - `SRV`
 - `TXT`
 
+<a id="resettableelementnametype"></a>
+
 ## ResettableElementNameType
 
 ```python
@@ -265,6 +299,8 @@ Values:
 - `Regions`
 - `ResourcePath`
 
+<a id="resourcerecordsetfailovertype"></a>
+
 ## ResourceRecordSetFailoverType
 
 ```python
@@ -275,6 +311,8 @@ Values:
 
 - `PRIMARY`
 - `SECONDARY`
+
+<a id="resourcerecordsetregiontype"></a>
 
 ## ResourceRecordSetRegionType
 
@@ -309,6 +347,8 @@ Values:
 - `us-west-1`
 - `us-west-2`
 
+<a id="resourcerecordsetschangedwaitername"></a>
+
 ## ResourceRecordSetsChangedWaiterName
 
 ```python
@@ -319,6 +359,8 @@ Values:
 
 - `resource_record_sets_changed`
 
+<a id="reusabledelegationsetlimittypetype"></a>
+
 ## ReusableDelegationSetLimitTypeType
 
 ```python
@@ -328,6 +370,8 @@ from mypy_boto3_route53.literals import ReusableDelegationSetLimitTypeType
 Values:
 
 - `MAX_ZONES_BY_REUSABLE_DELEGATION_SET`
+
+<a id="statistictype"></a>
 
 ## StatisticType
 
@@ -343,6 +387,8 @@ Values:
 - `SampleCount`
 - `Sum`
 
+<a id="tagresourcetypetype"></a>
+
 ## TagResourceTypeType
 
 ```python
@@ -353,6 +399,8 @@ Values:
 
 - `healthcheck`
 - `hostedzone`
+
+<a id="vpcregiontype"></a>
 
 ## VPCRegionType
 
@@ -390,6 +438,8 @@ Values:
 - `us-isob-east-1`
 - `us-west-1`
 - `us-west-2`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -699,6 +749,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -712,6 +764,8 @@ Values:
 - `list_query_logging_configs`
 - `list_resource_record_sets`
 - `list_vpc_association_authorizations`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

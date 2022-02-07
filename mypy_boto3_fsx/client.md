@@ -1,3 +1,5 @@
+<a id="fsxclient-for-boto3-fsx-module"></a>
+
 # FSxClient for boto3 FSx module
 
 > [Index](..) > [FSx](.) > FSxClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
 type annotations stubs module
-[mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
+[mypy-boto3-fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
 - [FSxClient for boto3 FSx module](#fsxclient-for-boto3-fsx-module)
   - [FSxClient](#fsxclient)
@@ -53,6 +55,8 @@ type annotations stubs module
     - [update_volume](#update_volume)
     - [get_paginator](#get_paginator)
 
+<a id="fsxclient"></a>
+
 ## FSxClient
 
 Type annotations for `boto3.client("fsx")`
@@ -60,14 +64,17 @@ Type annotations for `boto3.client("fsx")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_fsx.client import FSxClient
 
 def get_fsx_client() -> FSxClient:
-    return boto3.client("fsx")
+    return Session().client("fsx")
 ```
 
 Boto3 documentation:
 [FSx.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -118,7 +125,11 @@ Exceptions:
 - `Exceptions.UnsupportedOperation`
 - `Exceptions.VolumeNotFound`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -130,6 +141,8 @@ Boto3 documentation:
 [FSx.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_file_system_aliases"></a>
 
 ### associate_file_system_aliases
 
@@ -154,6 +167,8 @@ Keyword-only arguments:
 Returns
 [AssociateFileSystemAliasesResponseTypeDef](./type_defs.md#associatefilesystemaliasesresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -168,6 +183,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_data_repository_task"></a>
 
 ### cancel_data_repository_task
 
@@ -188,6 +205,8 @@ Keyword-only arguments:
 
 Returns
 [CancelDataRepositoryTaskResponseTypeDef](./type_defs.md#canceldatarepositorytaskresponsetypedef).
+
+<a id="copy_backup"></a>
 
 ### copy_backup
 
@@ -214,6 +233,8 @@ Keyword-only arguments:
 
 Returns [CopyBackupResponseTypeDef](./type_defs.md#copybackupresponsetypedef).
 
+<a id="create_backup"></a>
+
 ### create_backup
 
 Creates a backup of an existing Amazon FSx for Windows File Server file system,
@@ -237,6 +258,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef).
+
+<a id="create_data_repository_association"></a>
 
 ### create_data_repository_association
 
@@ -266,6 +289,8 @@ Keyword-only arguments:
 Returns
 [CreateDataRepositoryAssociationResponseTypeDef](./type_defs.md#createdatarepositoryassociationresponsetypedef).
 
+<a id="create_data_repository_task"></a>
+
 ### create_data_repository_task
 
 Creates an Amazon FSx for Lustre data repository task.
@@ -292,6 +317,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDataRepositoryTaskResponseTypeDef](./type_defs.md#createdatarepositorytaskresponsetypedef).
+
+<a id="create_file_system"></a>
 
 ### create_file_system
 
@@ -329,6 +356,8 @@ Keyword-only arguments:
 Returns
 [CreateFileSystemResponseTypeDef](./type_defs.md#createfilesystemresponsetypedef).
 
+<a id="create_file_system_from_backup"></a>
+
 ### create_file_system_from_backup
 
 Creates a new Amazon FSx for Lustre, Amazon FSx for Windows File Server, or
@@ -363,6 +392,8 @@ Keyword-only arguments:
 Returns
 [CreateFileSystemFromBackupResponseTypeDef](./type_defs.md#createfilesystemfrombackupresponsetypedef).
 
+<a id="create_snapshot"></a>
+
 ### create_snapshot
 
 Creates a snapshot of an existing Amazon FSx for OpenZFS file system.
@@ -384,6 +415,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSnapshotResponseTypeDef](./type_defs.md#createsnapshotresponsetypedef).
+
+<a id="create_storage_virtual_machine"></a>
 
 ### create_storage_virtual_machine
 
@@ -414,6 +447,8 @@ Keyword-only arguments:
 Returns
 [CreateStorageVirtualMachineResponseTypeDef](./type_defs.md#createstoragevirtualmachineresponsetypedef).
 
+<a id="create_volume"></a>
+
 ### create_volume
 
 Creates an Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS storage
@@ -441,6 +476,8 @@ Keyword-only arguments:
 Returns
 [CreateVolumeResponseTypeDef](./type_defs.md#createvolumeresponsetypedef).
 
+<a id="create_volume_from_backup"></a>
+
 ### create_volume_from_backup
 
 Creates a new Amazon FSx for NetApp ONTAP volume from an existing Amazon FSx
@@ -466,6 +503,8 @@ Keyword-only arguments:
 Returns
 [CreateVolumeFromBackupResponseTypeDef](./type_defs.md#createvolumefrombackupresponsetypedef).
 
+<a id="delete_backup"></a>
+
 ### delete_backup
 
 Deletes an Amazon FSx backup.
@@ -485,6 +524,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef).
+
+<a id="delete_data_repository_association"></a>
 
 ### delete_data_repository_association
 
@@ -507,6 +548,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteDataRepositoryAssociationResponseTypeDef](./type_defs.md#deletedatarepositoryassociationresponsetypedef).
+
+<a id="delete_file_system"></a>
 
 ### delete_file_system
 
@@ -534,6 +577,8 @@ Keyword-only arguments:
 Returns
 [DeleteFileSystemResponseTypeDef](./type_defs.md#deletefilesystemresponsetypedef).
 
+<a id="delete_snapshot"></a>
+
 ### delete_snapshot
 
 Deletes the Amazon FSx snapshot.
@@ -553,6 +598,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteSnapshotResponseTypeDef](./type_defs.md#deletesnapshotresponsetypedef).
+
+<a id="delete_storage_virtual_machine"></a>
 
 ### delete_storage_virtual_machine
 
@@ -574,6 +621,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteStorageVirtualMachineResponseTypeDef](./type_defs.md#deletestoragevirtualmachineresponsetypedef).
+
+<a id="delete_volume"></a>
 
 ### delete_volume
 
@@ -599,6 +648,8 @@ Keyword-only arguments:
 Returns
 [DeleteVolumeResponseTypeDef](./type_defs.md#deletevolumeresponsetypedef).
 
+<a id="describe_backups"></a>
+
 ### describe_backups
 
 Returns the description of a specific Amazon FSx backup, if a `BackupIds` value
@@ -621,6 +672,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
+
+<a id="describe_data_repository_associations"></a>
 
 ### describe_data_repository_associations
 
@@ -646,6 +699,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDataRepositoryAssociationsResponseTypeDef](./type_defs.md#describedatarepositoryassociationsresponsetypedef).
+
+<a id="describe_data_repository_tasks"></a>
 
 ### describe_data_repository_tasks
 
@@ -673,6 +728,8 @@ Keyword-only arguments:
 Returns
 [DescribeDataRepositoryTasksResponseTypeDef](./type_defs.md#describedatarepositorytasksresponsetypedef).
 
+<a id="describe_file_system_aliases"></a>
+
 ### describe_file_system_aliases
 
 Returns the DNS aliases that are associated with the specified Amazon FSx for
@@ -696,6 +753,8 @@ Keyword-only arguments:
 Returns
 [DescribeFileSystemAliasesResponseTypeDef](./type_defs.md#describefilesystemaliasesresponsetypedef).
 
+<a id="describe_file_systems"></a>
+
 ### describe_file_systems
 
 Returns the description of specific Amazon FSx file systems, if a
@@ -717,6 +776,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
+
+<a id="describe_snapshots"></a>
 
 ### describe_snapshots
 
@@ -741,6 +802,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSnapshotsResponseTypeDef](./type_defs.md#describesnapshotsresponsetypedef).
+
+<a id="describe_storage_virtual_machines"></a>
 
 ### describe_storage_virtual_machines
 
@@ -767,6 +830,8 @@ Keyword-only arguments:
 Returns
 [DescribeStorageVirtualMachinesResponseTypeDef](./type_defs.md#describestoragevirtualmachinesresponsetypedef).
 
+<a id="describe_volumes"></a>
+
 ### describe_volumes
 
 Describes one or more Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS
@@ -791,6 +856,8 @@ Keyword-only arguments:
 Returns
 [DescribeVolumesResponseTypeDef](./type_defs.md#describevolumesresponsetypedef).
 
+<a id="disassociate_file_system_aliases"></a>
+
 ### disassociate_file_system_aliases
 
 Use this action to disassociate, or remove, one or more Domain Name Service
@@ -814,6 +881,8 @@ Keyword-only arguments:
 Returns
 [DisassociateFileSystemAliasesResponseTypeDef](./type_defs.md#disassociatefilesystemaliasesresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -831,6 +900,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -854,6 +925,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="release_file_system_nfs_v3_locks"></a>
+
 ### release_file_system_nfs_v3_locks
 
 Releases the file system lock from an Amazon FSx for OpenZFS file system.
@@ -874,6 +947,8 @@ Keyword-only arguments:
 
 Returns
 [ReleaseFileSystemNfsV3LocksResponseTypeDef](./type_defs.md#releasefilesystemnfsv3locksresponsetypedef).
+
+<a id="restore_volume_from_snapshot"></a>
 
 ### restore_volume_from_snapshot
 
@@ -899,6 +974,8 @@ Keyword-only arguments:
 Returns
 [RestoreVolumeFromSnapshotResponseTypeDef](./type_defs.md#restorevolumefromsnapshotresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Tags an Amazon FSx resource.
@@ -918,6 +995,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 This action removes a tag from an Amazon FSx resource.
@@ -936,6 +1015,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_data_repository_association"></a>
 
 ### update_data_repository_association
 
@@ -961,6 +1042,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDataRepositoryAssociationResponseTypeDef](./type_defs.md#updatedatarepositoryassociationresponsetypedef).
+
+<a id="update_file_system"></a>
 
 ### update_file_system
 
@@ -992,6 +1075,8 @@ Keyword-only arguments:
 Returns
 [UpdateFileSystemResponseTypeDef](./type_defs.md#updatefilesystemresponsetypedef).
 
+<a id="update_snapshot"></a>
+
 ### update_snapshot
 
 Updates the name of a snapshot.
@@ -1012,6 +1097,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSnapshotResponseTypeDef](./type_defs.md#updatesnapshotresponsetypedef).
+
+<a id="update_storage_virtual_machine"></a>
 
 ### update_storage_virtual_machine
 
@@ -1036,6 +1123,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateStorageVirtualMachineResponseTypeDef](./type_defs.md#updatestoragevirtualmachineresponsetypedef).
+
+<a id="update_volume"></a>
 
 ### update_volume
 
@@ -1062,6 +1151,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVolumeResponseTypeDef](./type_defs.md#updatevolumeresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

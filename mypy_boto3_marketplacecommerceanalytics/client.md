@@ -1,3 +1,5 @@
+<a id="marketplacecommerceanalyticsclient-for-boto3-marketplacecommerceanalytics-module"></a>
+
 # MarketplaceCommerceAnalyticsClient for boto3 MarketplaceCommerceAnalytics module
 
 > [Index](..) > [MarketplaceCommerceAnalytics](.) >
@@ -6,7 +8,7 @@
 Auto-generated documentation for
 [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
 type annotations stubs module
-[mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
+[mypy-boto3-marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 
 - [MarketplaceCommerceAnalyticsClient for boto3 MarketplaceCommerceAnalytics module](#marketplacecommerceanalyticsclient-for-boto3-marketplacecommerceanalytics-module)
   - [MarketplaceCommerceAnalyticsClient](#marketplacecommerceanalyticsclient)
@@ -18,6 +20,8 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [start_support_data_export](#start_support_data_export)
 
+<a id="marketplacecommerceanalyticsclient"></a>
+
 ## MarketplaceCommerceAnalyticsClient
 
 Type annotations for `boto3.client("marketplacecommerceanalytics")`
@@ -25,14 +29,17 @@ Type annotations for `boto3.client("marketplacecommerceanalytics")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_marketplacecommerceanalytics.client import MarketplaceCommerceAnalyticsClient
 
 def get_marketplacecommerceanalytics_client() -> MarketplaceCommerceAnalyticsClient:
-    return boto3.client("marketplacecommerceanalytics")
+    return Session().client("marketplacecommerceanalytics")
 ```
 
 Boto3 documentation:
 [MarketplaceCommerceAnalytics.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -51,7 +58,11 @@ Exceptions:
 - `Exceptions.ClientError`
 - `Exceptions.MarketplaceCommerceAnalyticsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -64,6 +75,8 @@ Boto3 documentation:
 [MarketplaceCommerceAnalytics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -80,6 +93,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_data_set"></a>
 
 ### generate_data_set
 
@@ -109,6 +124,8 @@ Keyword-only arguments:
 Returns
 [GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -127,6 +144,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="start_support_data_export"></a>
 
 ### start_support_data_export
 

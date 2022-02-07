@@ -1,3 +1,5 @@
+<a id="wafv2client-for-boto3-wafv2-module"></a>
+
 # WAFV2Client for boto3 WAFV2 module
 
 > [Index](..) > [WAFV2](.) > WAFV2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
 type annotations stubs module
-[mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
+[mypy-boto3-wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 - [WAFV2Client for boto3 WAFV2 module](#wafv2client-for-boto3-wafv2-module)
   - [WAFV2Client](#wafv2client)
@@ -60,6 +62,8 @@ type annotations stubs module
     - [update_rule_group](#update_rule_group)
     - [update_web_acl](#update_web_acl)
 
+<a id="wafv2client"></a>
+
 ## WAFV2Client
 
 Type annotations for `boto3.client("wafv2")`
@@ -67,14 +71,17 @@ Type annotations for `boto3.client("wafv2")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_wafv2.client import WAFV2Client
 
 def get_wafv2_client() -> WAFV2Client:
-    return boto3.client("wafv2")
+    return Session().client("wafv2")
 ```
 
 Boto3 documentation:
 [WAFV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -109,7 +116,11 @@ Exceptions:
 - `Exceptions.WAFTagOperationInternalErrorException`
 - `Exceptions.WAFUnavailableEntityException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -121,6 +132,8 @@ Boto3 documentation:
 [WAFV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_web_acl"></a>
 
 ### associate_web_acl
 
@@ -142,6 +155,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -156,6 +171,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="check_capacity"></a>
 
 ### check_capacity
 
@@ -177,6 +194,8 @@ Keyword-only arguments:
 
 Returns
 [CheckCapacityResponseTypeDef](./type_defs.md#checkcapacityresponsetypedef).
+
+<a id="create_ip_set"></a>
 
 ### create_ip_set
 
@@ -204,6 +223,8 @@ Keyword-only arguments:
 Returns
 [CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
 
+<a id="create_regex_pattern_set"></a>
+
 ### create_regex_pattern_set
 
 Creates a RegexPatternSet , which you reference in a
@@ -229,6 +250,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRegexPatternSetResponseTypeDef](./type_defs.md#createregexpatternsetresponsetypedef).
+
+<a id="create_rule_group"></a>
 
 ### create_rule_group
 
@@ -258,6 +281,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
+
+<a id="create_web_acl"></a>
 
 ### create_web_acl
 
@@ -290,6 +315,8 @@ Keyword-only arguments:
 Returns
 [CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef).
 
+<a id="delete_firewall_manager_rule_groups"></a>
+
 ### delete_firewall_manager_rule_groups
 
 Deletes all rule groups that are managed by Firewall Manager for the specified
@@ -312,6 +339,8 @@ Keyword-only arguments:
 Returns
 [DeleteFirewallManagerRuleGroupsResponseTypeDef](./type_defs.md#deletefirewallmanagerrulegroupsresponsetypedef).
 
+<a id="delete_ip_set"></a>
+
 ### delete_ip_set
 
 Deletes the specified IPSet .
@@ -333,6 +362,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_logging_configuration"></a>
+
 ### delete_logging_configuration
 
 Deletes the LoggingConfiguration from the specified web ACL.
@@ -352,6 +383,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_permission_policy"></a>
+
 ### delete_permission_policy
 
 Permanently deletes an IAM policy from the specified rule group.
@@ -369,6 +402,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_regex_pattern_set"></a>
 
 ### delete_regex_pattern_set
 
@@ -391,6 +426,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_rule_group"></a>
+
 ### delete_rule_group
 
 Deletes the specified RuleGroup .
@@ -412,6 +449,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_web_acl"></a>
+
 ### delete_web_acl
 
 Deletes the specified WebACL .
@@ -432,6 +471,8 @@ Keyword-only arguments:
 - `LockToken`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_managed_rule_group"></a>
 
 ### describe_managed_rule_group
 
@@ -457,6 +498,8 @@ Keyword-only arguments:
 Returns
 [DescribeManagedRuleGroupResponseTypeDef](./type_defs.md#describemanagedrulegroupresponsetypedef).
 
+<a id="disassociate_web_acl"></a>
+
 ### disassociate_web_acl
 
 Disassociates a web ACL from a regional application resource.
@@ -475,6 +518,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -492,6 +537,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_ip_set"></a>
 
 ### get_ip_set
 
@@ -513,6 +560,8 @@ Keyword-only arguments:
 
 Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
 
+<a id="get_logging_configuration"></a>
+
 ### get_logging_configuration
 
 Returns the LoggingConfiguration for the specified web ACL.
@@ -531,6 +580,8 @@ Keyword-only arguments:
 
 Returns
 [GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef).
+
+<a id="get_managed_rule_set"></a>
 
 ### get_managed_rule_set
 
@@ -553,6 +604,8 @@ Keyword-only arguments:
 Returns
 [GetManagedRuleSetResponseTypeDef](./type_defs.md#getmanagedrulesetresponsetypedef).
 
+<a id="get_permission_policy"></a>
+
 ### get_permission_policy
 
 Returns the IAM policy that is attached to the specified rule group.
@@ -571,6 +624,8 @@ Keyword-only arguments:
 
 Returns
 [GetPermissionPolicyResponseTypeDef](./type_defs.md#getpermissionpolicyresponsetypedef).
+
+<a id="get_rate_based_statement_managed_keys"></a>
 
 ### get_rate_based_statement_managed_keys
 
@@ -596,6 +651,8 @@ Keyword-only arguments:
 Returns
 [GetRateBasedStatementManagedKeysResponseTypeDef](./type_defs.md#getratebasedstatementmanagedkeysresponsetypedef).
 
+<a id="get_regex_pattern_set"></a>
+
 ### get_regex_pattern_set
 
 Retrieves the specified RegexPatternSet .
@@ -616,6 +673,8 @@ Keyword-only arguments:
 
 Returns
 [GetRegexPatternSetResponseTypeDef](./type_defs.md#getregexpatternsetresponsetypedef).
+
+<a id="get_rule_group"></a>
 
 ### get_rule_group
 
@@ -638,6 +697,8 @@ Keyword-only arguments:
 
 Returns
 [GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef).
+
+<a id="get_sampled_requests"></a>
 
 ### get_sampled_requests
 
@@ -665,6 +726,8 @@ Keyword-only arguments:
 Returns
 [GetSampledRequestsResponseTypeDef](./type_defs.md#getsampledrequestsresponsetypedef).
 
+<a id="get_web_acl"></a>
+
 ### get_web_acl
 
 Retrieves the specified WebACL .
@@ -685,6 +748,8 @@ Keyword-only arguments:
 
 Returns [GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef).
 
+<a id="get_web_acl_for_resource"></a>
+
 ### get_web_acl_for_resource
 
 Retrieves the WebACL for the specified resource.
@@ -703,6 +768,8 @@ Keyword-only arguments:
 
 Returns
 [GetWebACLForResourceResponseTypeDef](./type_defs.md#getwebaclforresourceresponsetypedef).
+
+<a id="list_available_managed_rule_group_versions"></a>
 
 ### list_available_managed_rule_group_versions
 
@@ -728,6 +795,8 @@ Keyword-only arguments:
 Returns
 [ListAvailableManagedRuleGroupVersionsResponseTypeDef](./type_defs.md#listavailablemanagedrulegroupversionsresponsetypedef).
 
+<a id="list_available_managed_rule_groups"></a>
+
 ### list_available_managed_rule_groups
 
 Retrieves an array of managed rule groups that are available for you to use.
@@ -750,6 +819,8 @@ Keyword-only arguments:
 Returns
 [ListAvailableManagedRuleGroupsResponseTypeDef](./type_defs.md#listavailablemanagedrulegroupsresponsetypedef).
 
+<a id="list_ip_sets"></a>
+
 ### list_ip_sets
 
 Retrieves an array of IPSetSummary objects for the IP sets that you manage.
@@ -769,6 +840,8 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
+
+<a id="list_logging_configurations"></a>
 
 ### list_logging_configurations
 
@@ -792,6 +865,8 @@ Keyword-only arguments:
 Returns
 [ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef).
 
+<a id="list_managed_rule_sets"></a>
+
 ### list_managed_rule_sets
 
 Retrieves the managed rule sets that you own.
@@ -812,6 +887,8 @@ Keyword-only arguments:
 
 Returns
 [ListManagedRuleSetsResponseTypeDef](./type_defs.md#listmanagedrulesetsresponsetypedef).
+
+<a id="list_regex_pattern_sets"></a>
 
 ### list_regex_pattern_sets
 
@@ -835,6 +912,8 @@ Keyword-only arguments:
 Returns
 [ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef).
 
+<a id="list_resources_for_web_acl"></a>
+
 ### list_resources_for_web_acl
 
 Retrieves an array of the Amazon Resource Names (ARNs) for the regional
@@ -855,6 +934,8 @@ Keyword-only arguments:
 
 Returns
 [ListResourcesForWebACLResponseTypeDef](./type_defs.md#listresourcesforwebaclresponsetypedef).
+
+<a id="list_rule_groups"></a>
 
 ### list_rule_groups
 
@@ -878,6 +959,8 @@ Keyword-only arguments:
 Returns
 [ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves the TagInfoForResource for the specified resource.
@@ -898,6 +981,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_web_acls"></a>
 
 ### list_web_acls
 
@@ -920,6 +1005,8 @@ Keyword-only arguments:
 Returns
 [ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef).
 
+<a id="put_logging_configuration"></a>
+
 ### put_logging_configuration
 
 Enables the specified LoggingConfiguration , to start logging from a web ACL,
@@ -941,6 +1028,8 @@ Keyword-only arguments:
 
 Returns
 [PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef).
+
+<a id="put_managed_rule_set_versions"></a>
 
 ### put_managed_rule_set_versions
 
@@ -969,6 +1058,8 @@ Keyword-only arguments:
 Returns
 [PutManagedRuleSetVersionsResponseTypeDef](./type_defs.md#putmanagedrulesetversionsresponsetypedef).
 
+<a id="put_permission_policy"></a>
+
 ### put_permission_policy
 
 Attaches an IAM policy to the specified resource.
@@ -987,6 +1078,8 @@ Keyword-only arguments:
 - `Policy`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -1007,6 +1100,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Disassociates tags from an Amazon Web Services resource.
@@ -1025,6 +1120,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_ip_set"></a>
 
 ### update_ip_set
 
@@ -1049,6 +1146,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateIPSetResponseTypeDef](./type_defs.md#updateipsetresponsetypedef).
+
+<a id="update_managed_rule_set_version_expiry_date"></a>
 
 ### update_managed_rule_set_version_expiry_date
 
@@ -1075,6 +1174,8 @@ Keyword-only arguments:
 Returns
 [UpdateManagedRuleSetVersionExpiryDateResponseTypeDef](./type_defs.md#updatemanagedrulesetversionexpirydateresponsetypedef).
 
+<a id="update_regex_pattern_set"></a>
+
 ### update_regex_pattern_set
 
 Updates the specified RegexPatternSet .
@@ -1099,6 +1200,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRegexPatternSetResponseTypeDef](./type_defs.md#updateregexpatternsetresponsetypedef).
+
+<a id="update_rule_group"></a>
 
 ### update_rule_group
 
@@ -1128,6 +1231,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef).
+
+<a id="update_web_acl"></a>
 
 ### update_web_acl
 

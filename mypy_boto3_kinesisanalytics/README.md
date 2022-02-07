@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-kinesisanalytics-module"></a>
+
 # Type annotations for boto3 KinesisAnalytics module
 
 > [Index](..) > KinesisAnalytics
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
 type annotations stubs module
-[mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
+[mypy-boto3-kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[kinesisanalytics]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[kinesisanalytics]'
+
+# standalone installation
 pip install mypy-boto3-kinesisanalytics
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-kinesisanalytics
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="kinesisanalyticsclient"></a>
 
 ## KinesisAnalyticsClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_kinesisanalytics.client import KinesisAnalyticsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -55,6 +69,8 @@ from mypy_boto3_kinesisanalytics.client import KinesisAnalyticsClient
 - [untag_resource](./client.md#untag_resource)
 - [update_application](./client.md#update_application)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 KinesisAnalyticsClient [exceptions](./client.md#exceptions)
@@ -73,6 +89,8 @@ KinesisAnalyticsClient [exceptions](./client.md#exceptions)
 - UnableToDetectSchemaException
 - UnsupportedOperationException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -87,6 +105,8 @@ from mypy_boto3_kinesisanalytics.literals import ApplicationStatusType, ...
 - [InputStartingPositionType](./literals.md#inputstartingpositiontype)
 - [RecordFormatTypeType](./literals.md#recordformattypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

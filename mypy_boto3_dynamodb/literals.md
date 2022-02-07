@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-dynamodb-module"></a>
+
 # Literals for boto3 DynamoDB module
 
 > [Index](..) > [DynamoDB](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
-[mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+[mypy-boto3-dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 - [Literals for boto3 DynamoDB module](#literals-for-boto3-dynamodb-module)
   - [AttributeActionType](#attributeactiontype)
@@ -52,6 +54,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="attributeactiontype"></a>
+
 ## AttributeActionType
 
 ```python
@@ -64,6 +68,8 @@ Values:
 - `DELETE`
 - `PUT`
 
+<a id="backupstatustype"></a>
+
 ## BackupStatusType
 
 ```python
@@ -75,6 +81,8 @@ Values:
 - `AVAILABLE`
 - `CREATING`
 - `DELETED`
+
+<a id="backuptypefiltertype"></a>
 
 ## BackupTypeFilterType
 
@@ -89,6 +97,8 @@ Values:
 - `SYSTEM`
 - `USER`
 
+<a id="backuptypetype"></a>
+
 ## BackupTypeType
 
 ```python
@@ -100,6 +110,8 @@ Values:
 - `AWS_BACKUP`
 - `SYSTEM`
 - `USER`
+
+<a id="batchstatementerrorcodeenumtype"></a>
 
 ## BatchStatementErrorCodeEnumType
 
@@ -121,6 +133,8 @@ Values:
 - `TransactionConflict`
 - `ValidationError`
 
+<a id="billingmodetype"></a>
+
 ## BillingModeType
 
 ```python
@@ -131,6 +145,8 @@ Values:
 
 - `PAY_PER_REQUEST`
 - `PROVISIONED`
+
+<a id="comparisonoperatortype"></a>
 
 ## ComparisonOperatorType
 
@@ -154,6 +170,8 @@ Values:
 - `NOT_NULL`
 - `NULL`
 
+<a id="conditionaloperatortype"></a>
+
 ## ConditionalOperatorType
 
 ```python
@@ -164,6 +182,8 @@ Values:
 
 - `AND`
 - `OR`
+
+<a id="continuousbackupsstatustype"></a>
 
 ## ContinuousBackupsStatusType
 
@@ -176,6 +196,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="contributorinsightsactiontype"></a>
+
 ## ContributorInsightsActionType
 
 ```python
@@ -186,6 +208,8 @@ Values:
 
 - `DISABLE`
 - `ENABLE`
+
+<a id="contributorinsightsstatustype"></a>
 
 ## ContributorInsightsStatusType
 
@@ -201,6 +225,8 @@ Values:
 - `ENABLING`
 - `FAILED`
 
+<a id="destinationstatustype"></a>
+
 ## DestinationStatusType
 
 ```python
@@ -215,6 +241,8 @@ Values:
 - `ENABLE_FAILED`
 - `ENABLING`
 
+<a id="exportformattype"></a>
+
 ## ExportFormatType
 
 ```python
@@ -225,6 +253,8 @@ Values:
 
 - `DYNAMODB_JSON`
 - `ION`
+
+<a id="exportstatustype"></a>
 
 ## ExportStatusType
 
@@ -237,6 +267,8 @@ Values:
 - `COMPLETED`
 - `FAILED`
 - `IN_PROGRESS`
+
+<a id="globaltablestatustype"></a>
 
 ## GlobalTableStatusType
 
@@ -251,6 +283,8 @@ Values:
 - `DELETING`
 - `UPDATING`
 
+<a id="indexstatustype"></a>
+
 ## IndexStatusType
 
 ```python
@@ -264,6 +298,8 @@ Values:
 - `DELETING`
 - `UPDATING`
 
+<a id="keytypetype"></a>
+
 ## KeyTypeType
 
 ```python
@@ -275,6 +311,8 @@ Values:
 - `HASH`
 - `RANGE`
 
+<a id="listbackupspaginatorname"></a>
+
 ## ListBackupsPaginatorName
 
 ```python
@@ -284,6 +322,8 @@ from mypy_boto3_dynamodb.literals import ListBackupsPaginatorName
 Values:
 
 - `list_backups`
+
+<a id="listtablespaginatorname"></a>
 
 ## ListTablesPaginatorName
 
@@ -295,6 +335,8 @@ Values:
 
 - `list_tables`
 
+<a id="listtagsofresourcepaginatorname"></a>
+
 ## ListTagsOfResourcePaginatorName
 
 ```python
@@ -304,6 +346,8 @@ from mypy_boto3_dynamodb.literals import ListTagsOfResourcePaginatorName
 Values:
 
 - `list_tags_of_resource`
+
+<a id="pointintimerecoverystatustype"></a>
 
 ## PointInTimeRecoveryStatusType
 
@@ -315,6 +359,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="projectiontypetype"></a>
 
 ## ProjectionTypeType
 
@@ -328,6 +374,8 @@ Values:
 - `INCLUDE`
 - `KEYS_ONLY`
 
+<a id="querypaginatorname"></a>
+
 ## QueryPaginatorName
 
 ```python
@@ -337,6 +385,8 @@ from mypy_boto3_dynamodb.literals import QueryPaginatorName
 Values:
 
 - `query`
+
+<a id="replicastatustype"></a>
 
 ## ReplicaStatusType
 
@@ -354,6 +404,8 @@ Values:
 - `REGION_DISABLED`
 - `UPDATING`
 
+<a id="returnconsumedcapacitytype"></a>
+
 ## ReturnConsumedCapacityType
 
 ```python
@@ -366,6 +418,8 @@ Values:
 - `NONE`
 - `TOTAL`
 
+<a id="returnitemcollectionmetricstype"></a>
+
 ## ReturnItemCollectionMetricsType
 
 ```python
@@ -376,6 +430,8 @@ Values:
 
 - `NONE`
 - `SIZE`
+
+<a id="returnvaluetype"></a>
 
 ## ReturnValueType
 
@@ -391,6 +447,8 @@ Values:
 - `UPDATED_NEW`
 - `UPDATED_OLD`
 
+<a id="returnvaluesonconditioncheckfailuretype"></a>
+
 ## ReturnValuesOnConditionCheckFailureType
 
 ```python
@@ -402,6 +460,8 @@ Values:
 - `ALL_OLD`
 - `NONE`
 
+<a id="s3ssealgorithmtype"></a>
+
 ## S3SseAlgorithmType
 
 ```python
@@ -412,6 +472,8 @@ Values:
 
 - `AES256`
 - `KMS`
+
+<a id="ssestatustype"></a>
 
 ## SSEStatusType
 
@@ -427,6 +489,8 @@ Values:
 - `ENABLING`
 - `UPDATING`
 
+<a id="ssetypetype"></a>
+
 ## SSETypeType
 
 ```python
@@ -437,6 +501,8 @@ Values:
 
 - `AES256`
 - `KMS`
+
+<a id="scalarattributetypetype"></a>
 
 ## ScalarAttributeTypeType
 
@@ -450,6 +516,8 @@ Values:
 - `N`
 - `S`
 
+<a id="scanpaginatorname"></a>
+
 ## ScanPaginatorName
 
 ```python
@@ -459,6 +527,8 @@ from mypy_boto3_dynamodb.literals import ScanPaginatorName
 Values:
 
 - `scan`
+
+<a id="selecttype"></a>
 
 ## SelectType
 
@@ -473,6 +543,8 @@ Values:
 - `COUNT`
 - `SPECIFIC_ATTRIBUTES`
 
+<a id="streamviewtypetype"></a>
+
 ## StreamViewTypeType
 
 ```python
@@ -486,6 +558,8 @@ Values:
 - `NEW_IMAGE`
 - `OLD_IMAGE`
 
+<a id="tableclasstype"></a>
+
 ## TableClassType
 
 ```python
@@ -497,6 +571,8 @@ Values:
 - `STANDARD`
 - `STANDARD_INFREQUENT_ACCESS`
 
+<a id="tableexistswaitername"></a>
+
 ## TableExistsWaiterName
 
 ```python
@@ -507,6 +583,8 @@ Values:
 
 - `table_exists`
 
+<a id="tablenotexistswaitername"></a>
+
 ## TableNotExistsWaiterName
 
 ```python
@@ -516,6 +594,8 @@ from mypy_boto3_dynamodb.literals import TableNotExistsWaiterName
 Values:
 
 - `table_not_exists`
+
+<a id="tablestatustype"></a>
 
 ## TableStatusType
 
@@ -533,6 +613,8 @@ Values:
 - `INACCESSIBLE_ENCRYPTION_CREDENTIALS`
 - `UPDATING`
 
+<a id="timetolivestatustype"></a>
+
 ## TimeToLiveStatusType
 
 ```python
@@ -545,6 +627,8 @@ Values:
 - `DISABLING`
 - `ENABLED`
 - `ENABLING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -854,6 +938,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -867,6 +953,8 @@ Values:
 - `list_tags_of_resource`
 - `query`
 - `scan`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

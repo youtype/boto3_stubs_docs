@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-forecastservice-module"></a>
+
 # Literals for boto3 ForecastService module
 
 > [Index](..) > [ForecastService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
 type annotations stubs module
-[mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
+[mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 - [Literals for boto3 ForecastService module](#literals-for-boto3-forecastservice-module)
   - [AttributeTypeType](#attributetypetype)
@@ -30,6 +32,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="attributetypetype"></a>
+
 ## AttributeTypeType
 
 ```python
@@ -44,6 +48,8 @@ Values:
 - `string`
 - `timestamp`
 
+<a id="automloverridestrategytype"></a>
+
 ## AutoMLOverrideStrategyType
 
 ```python
@@ -54,6 +60,8 @@ Values:
 
 - `AccuracyOptimized`
 - `LatencyOptimized`
+
+<a id="datasettypetype"></a>
 
 ## DatasetTypeType
 
@@ -66,6 +74,8 @@ Values:
 - `ITEM_METADATA`
 - `RELATED_TIME_SERIES`
 - `TARGET_TIME_SERIES`
+
+<a id="domaintype"></a>
 
 ## DomainType
 
@@ -83,6 +93,8 @@ Values:
 - `WEB_TRAFFIC`
 - `WORK_FORCE`
 
+<a id="evaluationtypetype"></a>
+
 ## EvaluationTypeType
 
 ```python
@@ -94,6 +106,8 @@ Values:
 - `COMPUTED`
 - `SUMMARY`
 
+<a id="featurizationmethodnametype"></a>
+
 ## FeaturizationMethodNameType
 
 ```python
@@ -103,6 +117,8 @@ from mypy_boto3_forecast.literals import FeaturizationMethodNameType
 Values:
 
 - `filling`
+
+<a id="filterconditionstringtype"></a>
 
 ## FilterConditionStringType
 
@@ -115,6 +131,8 @@ Values:
 - `IS`
 - `IS_NOT`
 
+<a id="listdatasetgroupspaginatorname"></a>
+
 ## ListDatasetGroupsPaginatorName
 
 ```python
@@ -124,6 +142,8 @@ from mypy_boto3_forecast.literals import ListDatasetGroupsPaginatorName
 Values:
 
 - `list_dataset_groups`
+
+<a id="listdatasetimportjobspaginatorname"></a>
 
 ## ListDatasetImportJobsPaginatorName
 
@@ -135,6 +155,8 @@ Values:
 
 - `list_dataset_import_jobs`
 
+<a id="listdatasetspaginatorname"></a>
+
 ## ListDatasetsPaginatorName
 
 ```python
@@ -144,6 +166,8 @@ from mypy_boto3_forecast.literals import ListDatasetsPaginatorName
 Values:
 
 - `list_datasets`
+
+<a id="listforecastexportjobspaginatorname"></a>
 
 ## ListForecastExportJobsPaginatorName
 
@@ -155,6 +179,8 @@ Values:
 
 - `list_forecast_export_jobs`
 
+<a id="listforecastspaginatorname"></a>
+
 ## ListForecastsPaginatorName
 
 ```python
@@ -164,6 +190,8 @@ from mypy_boto3_forecast.literals import ListForecastsPaginatorName
 Values:
 
 - `list_forecasts`
+
+<a id="listpredictorbacktestexportjobspaginatorname"></a>
 
 ## ListPredictorBacktestExportJobsPaginatorName
 
@@ -175,6 +203,8 @@ Values:
 
 - `list_predictor_backtest_export_jobs`
 
+<a id="listpredictorspaginatorname"></a>
+
 ## ListPredictorsPaginatorName
 
 ```python
@@ -184,6 +214,8 @@ from mypy_boto3_forecast.literals import ListPredictorsPaginatorName
 Values:
 
 - `list_predictors`
+
+<a id="optimizationmetrictype"></a>
 
 ## OptimizationMetricType
 
@@ -199,6 +231,8 @@ Values:
 - `RMSE`
 - `WAPE`
 
+<a id="scalingtypetype"></a>
+
 ## ScalingTypeType
 
 ```python
@@ -212,6 +246,8 @@ Values:
 - `Logarithmic`
 - `ReverseLogarithmic`
 
+<a id="statetype"></a>
+
 ## StateType
 
 ```python
@@ -222,6 +258,8 @@ Values:
 
 - `Active`
 - `Deleted`
+
+<a id="timepointgranularitytype"></a>
 
 ## TimePointGranularityType
 
@@ -234,6 +272,8 @@ Values:
 - `ALL`
 - `SPECIFIC`
 
+<a id="timeseriesgranularitytype"></a>
+
 ## TimeSeriesGranularityType
 
 ```python
@@ -244,6 +284,8 @@ Values:
 
 - `ALL`
 - `SPECIFIC`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -552,6 +594,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

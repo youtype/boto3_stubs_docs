@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-kinesis-module"></a>
+
 # Paginators for boto3 Kinesis module
 
 > [Index](..) > [Kinesis](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
 type annotations stubs module
-[mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
+[mypy-boto3-kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 - [Paginators for boto3 Kinesis module](#paginators-for-boto3-kinesis-module)
   - [DescribeStreamPaginator](#describestreampaginator)
   - [ListShardsPaginator](#listshardspaginator)
   - [ListStreamConsumersPaginator](#liststreamconsumerspaginator)
   - [ListStreamsPaginator](#liststreamspaginator)
+
+<a id="describestreampaginator"></a>
 
 ## DescribeStreamPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kinesis.paginator import DescribeStreamPaginator
 
 def get_describe_stream_paginator() -> DescribeStreamPaginator:
-    return boto3.client("kinesis").get_paginator("describe_stream")
+    return Session().client("kinesis").get_paginator("describe_stream")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `DescribeStreamPaginator.paginate` method:
 `DescribeStreamPaginator.paginate` returns
 `_PageIterator`\[[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef)\].
 
+<a id="listshardspaginator"></a>
+
 ## ListShardsPaginator
 
 Type annotations for `boto3.client("kinesis").get_paginator("list_shards")`.
@@ -46,10 +54,12 @@ Type annotations for `boto3.client("kinesis").get_paginator("list_shards")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kinesis.paginator import ListShardsPaginator
 
 def get_list_shards_paginator() -> ListShardsPaginator:
-    return boto3.client("kinesis").get_paginator("list_shards")
+    return Session().client("kinesis").get_paginator("list_shards")
 ```
 
 Boto3 documentation:
@@ -67,6 +77,8 @@ Arguments for `ListShardsPaginator.paginate` method:
 `ListShardsPaginator.paginate` returns
 `_PageIterator`\[[ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef)\].
 
+<a id="liststreamconsumerspaginator"></a>
+
 ## ListStreamConsumersPaginator
 
 Type annotations for
@@ -75,10 +87,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kinesis.paginator import ListStreamConsumersPaginator
 
 def get_list_stream_consumers_paginator() -> ListStreamConsumersPaginator:
-    return boto3.client("kinesis").get_paginator("list_stream_consumers")
+    return Session().client("kinesis").get_paginator("list_stream_consumers")
 ```
 
 Boto3 documentation:
@@ -94,6 +108,8 @@ Arguments for `ListStreamConsumersPaginator.paginate` method:
 `ListStreamConsumersPaginator.paginate` returns
 `_PageIterator`\[[ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef)\].
 
+<a id="liststreamspaginator"></a>
+
 ## ListStreamsPaginator
 
 Type annotations for `boto3.client("kinesis").get_paginator("list_streams")`.
@@ -101,10 +117,12 @@ Type annotations for `boto3.client("kinesis").get_paginator("list_streams")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kinesis.paginator import ListStreamsPaginator
 
 def get_list_streams_paginator() -> ListStreamsPaginator:
-    return boto3.client("kinesis").get_paginator("list_streams")
+    return Session().client("kinesis").get_paginator("list_streams")
 ```
 
 Boto3 documentation:

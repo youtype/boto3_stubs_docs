@@ -1,3 +1,5 @@
+<a id="protonclient-for-boto3-proton-module"></a>
+
 # ProtonClient for boto3 Proton module
 
 > [Index](..) > [Proton](.) > ProtonClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
 type annotations stubs module
-[mypy_boto3_proton](https://pypi.org/project/mypy-boto3-proton/).
+[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 - [ProtonClient for boto3 Proton module](#protonclient-for-boto3-proton-module)
   - [ProtonClient](#protonclient)
@@ -84,6 +86,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="protonclient"></a>
+
 ## ProtonClient
 
 Type annotations for `boto3.client("proton")`
@@ -91,14 +95,17 @@ Type annotations for `boto3.client("proton")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_proton.client import ProtonClient
 
 def get_proton_client() -> ProtonClient:
-    return boto3.client("proton")
+    return Session().client("proton")
 ```
 
 Boto3 documentation:
 [Proton.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -123,7 +130,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -135,6 +146,8 @@ Boto3 documentation:
 [Proton.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_environment_account_connection"></a>
 
 ### accept_environment_account_connection
 
@@ -156,6 +169,8 @@ Keyword-only arguments:
 Returns
 [AcceptEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#acceptenvironmentaccountconnectionoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -170,6 +185,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_environment_deployment"></a>
 
 ### cancel_environment_deployment
 
@@ -191,6 +208,8 @@ Keyword-only arguments:
 
 Returns
 [CancelEnvironmentDeploymentOutputTypeDef](./type_defs.md#cancelenvironmentdeploymentoutputtypedef).
+
+<a id="cancel_service_instance_deployment"></a>
 
 ### cancel_service_instance_deployment
 
@@ -214,6 +233,8 @@ Keyword-only arguments:
 Returns
 [CancelServiceInstanceDeploymentOutputTypeDef](./type_defs.md#cancelserviceinstancedeploymentoutputtypedef).
 
+<a id="cancel_service_pipeline_deployment"></a>
+
 ### cancel_service_pipeline_deployment
 
 Attempts to cancel a service pipeline deployment on an UpdateServicePipeline
@@ -234,6 +255,8 @@ Keyword-only arguments:
 
 Returns
 [CancelServicePipelineDeploymentOutputTypeDef](./type_defs.md#cancelservicepipelinedeploymentoutputtypedef).
+
+<a id="create_environment"></a>
 
 ### create_environment
 
@@ -264,6 +287,8 @@ Keyword-only arguments:
 Returns
 [CreateEnvironmentOutputTypeDef](./type_defs.md#createenvironmentoutputtypedef).
 
+<a id="create_environment_account_connection"></a>
+
 ### create_environment_account_connection
 
 Create an environment account connection in an environment account so that
@@ -290,6 +315,8 @@ Keyword-only arguments:
 Returns
 [CreateEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#createenvironmentaccountconnectionoutputtypedef).
 
+<a id="create_environment_template"></a>
+
 ### create_environment_template
 
 Create an environment template for Proton.
@@ -315,6 +342,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEnvironmentTemplateOutputTypeDef](./type_defs.md#createenvironmenttemplateoutputtypedef).
+
+<a id="create_environment_template_version"></a>
 
 ### create_environment_template_version
 
@@ -343,6 +372,8 @@ Keyword-only arguments:
 Returns
 [CreateEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#createenvironmenttemplateversionoutputtypedef).
 
+<a id="create_repository"></a>
+
 ### create_repository
 
 Create and register a link to a repository that can be used with pull request
@@ -366,6 +397,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRepositoryOutputTypeDef](./type_defs.md#createrepositoryoutputtypedef).
+
+<a id="create_service"></a>
 
 ### create_service
 
@@ -395,6 +428,8 @@ Keyword-only arguments:
 Returns
 [CreateServiceOutputTypeDef](./type_defs.md#createserviceoutputtypedef).
 
+<a id="create_service_template"></a>
+
 ### create_service_template
 
 Create a service template.
@@ -419,6 +454,8 @@ Keyword-only arguments:
 
 Returns
 [CreateServiceTemplateOutputTypeDef](./type_defs.md#createservicetemplateoutputtypedef).
+
+<a id="create_service_template_version"></a>
 
 ### create_service_template_version
 
@@ -450,6 +487,8 @@ Keyword-only arguments:
 Returns
 [CreateServiceTemplateVersionOutputTypeDef](./type_defs.md#createservicetemplateversionoutputtypedef).
 
+<a id="create_template_sync_config"></a>
+
 ### create_template_sync_config
 
 Set up a template for automated template version creation.
@@ -477,6 +516,8 @@ Keyword-only arguments:
 Returns
 [CreateTemplateSyncConfigOutputTypeDef](./type_defs.md#createtemplatesyncconfigoutputtypedef).
 
+<a id="delete_environment"></a>
+
 ### delete_environment
 
 Delete an environment.
@@ -495,6 +536,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteEnvironmentOutputTypeDef](./type_defs.md#deleteenvironmentoutputtypedef).
+
+<a id="delete_environment_account_connection"></a>
 
 ### delete_environment_account_connection
 
@@ -516,6 +559,8 @@ Keyword-only arguments:
 Returns
 [DeleteEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#deleteenvironmentaccountconnectionoutputtypedef).
 
+<a id="delete_environment_template"></a>
+
 ### delete_environment_template
 
 If no other major or minor versions of an environment template exist, delete
@@ -536,6 +581,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteEnvironmentTemplateOutputTypeDef](./type_defs.md#deleteenvironmenttemplateoutputtypedef).
+
+<a id="delete_environment_template_version"></a>
 
 ### delete_environment_template_version
 
@@ -560,6 +607,8 @@ Keyword-only arguments:
 Returns
 [DeleteEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#deleteenvironmenttemplateversionoutputtypedef).
 
+<a id="delete_repository"></a>
+
 ### delete_repository
 
 De-register and unlink your repository.
@@ -581,6 +630,8 @@ Keyword-only arguments:
 Returns
 [DeleteRepositoryOutputTypeDef](./type_defs.md#deleterepositoryoutputtypedef).
 
+<a id="delete_service"></a>
+
 ### delete_service
 
 Delete a service.
@@ -599,6 +650,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteServiceOutputTypeDef](./type_defs.md#deleteserviceoutputtypedef).
+
+<a id="delete_service_template"></a>
 
 ### delete_service_template
 
@@ -619,6 +672,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteServiceTemplateOutputTypeDef](./type_defs.md#deleteservicetemplateoutputtypedef).
+
+<a id="delete_service_template_version"></a>
 
 ### delete_service_template_version
 
@@ -643,6 +698,8 @@ Keyword-only arguments:
 Returns
 [DeleteServiceTemplateVersionOutputTypeDef](./type_defs.md#deleteservicetemplateversionoutputtypedef).
 
+<a id="delete_template_sync_config"></a>
+
 ### delete_template_sync_config
 
 Delete a template sync configuration.
@@ -665,6 +722,8 @@ Keyword-only arguments:
 Returns
 [DeleteTemplateSyncConfigOutputTypeDef](./type_defs.md#deletetemplatesyncconfigoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -683,6 +742,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_account_settings"></a>
+
 ### get_account_settings
 
 Get detail data for the Proton pipeline service role.
@@ -694,6 +755,8 @@ Boto3 documentation:
 
 Returns
 [GetAccountSettingsOutputTypeDef](./type_defs.md#getaccountsettingsoutputtypedef).
+
+<a id="get_environment"></a>
 
 ### get_environment
 
@@ -713,6 +776,8 @@ Keyword-only arguments:
 
 Returns
 [GetEnvironmentOutputTypeDef](./type_defs.md#getenvironmentoutputtypedef).
+
+<a id="get_environment_account_connection"></a>
 
 ### get_environment_account_connection
 
@@ -735,6 +800,8 @@ Keyword-only arguments:
 Returns
 [GetEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#getenvironmentaccountconnectionoutputtypedef).
 
+<a id="get_environment_template"></a>
+
 ### get_environment_template
 
 Get detail data for an environment template.
@@ -753,6 +820,8 @@ Keyword-only arguments:
 
 Returns
 [GetEnvironmentTemplateOutputTypeDef](./type_defs.md#getenvironmenttemplateoutputtypedef).
+
+<a id="get_environment_template_version"></a>
 
 ### get_environment_template_version
 
@@ -776,6 +845,8 @@ Keyword-only arguments:
 Returns
 [GetEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#getenvironmenttemplateversionoutputtypedef).
 
+<a id="get_repository"></a>
+
 ### get_repository
 
 Get detail data for a repository.
@@ -796,6 +867,8 @@ Keyword-only arguments:
 
 Returns
 [GetRepositoryOutputTypeDef](./type_defs.md#getrepositoryoutputtypedef).
+
+<a id="get_repository_sync_status"></a>
 
 ### get_repository_sync_status
 
@@ -822,6 +895,8 @@ Keyword-only arguments:
 Returns
 [GetRepositorySyncStatusOutputTypeDef](./type_defs.md#getrepositorysyncstatusoutputtypedef).
 
+<a id="get_service"></a>
+
 ### get_service
 
 Get detail data for a service.
@@ -839,6 +914,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 
 Returns [GetServiceOutputTypeDef](./type_defs.md#getserviceoutputtypedef).
+
+<a id="get_service_instance"></a>
 
 ### get_service_instance
 
@@ -860,6 +937,8 @@ Keyword-only arguments:
 Returns
 [GetServiceInstanceOutputTypeDef](./type_defs.md#getserviceinstanceoutputtypedef).
 
+<a id="get_service_template"></a>
+
 ### get_service_template
 
 Get detail data for a service template.
@@ -878,6 +957,8 @@ Keyword-only arguments:
 
 Returns
 [GetServiceTemplateOutputTypeDef](./type_defs.md#getservicetemplateoutputtypedef).
+
+<a id="get_service_template_version"></a>
 
 ### get_service_template_version
 
@@ -901,6 +982,8 @@ Keyword-only arguments:
 Returns
 [GetServiceTemplateVersionOutputTypeDef](./type_defs.md#getservicetemplateversionoutputtypedef).
 
+<a id="get_template_sync_config"></a>
+
 ### get_template_sync_config
 
 Get detail data for a template sync configuration.
@@ -921,6 +1004,8 @@ Keyword-only arguments:
 
 Returns
 [GetTemplateSyncConfigOutputTypeDef](./type_defs.md#gettemplatesyncconfigoutputtypedef).
+
+<a id="get_template_sync_status"></a>
 
 ### get_template_sync_status
 
@@ -943,6 +1028,8 @@ Keyword-only arguments:
 
 Returns
 [GetTemplateSyncStatusOutputTypeDef](./type_defs.md#gettemplatesyncstatusoutputtypedef).
+
+<a id="list_environment_account_connections"></a>
 
 ### list_environment_account_connections
 
@@ -971,6 +1058,8 @@ Keyword-only arguments:
 Returns
 [ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef).
 
+<a id="list_environment_outputs"></a>
+
 ### list_environment_outputs
 
 List the infrastructure as code outputs for your environment.
@@ -990,6 +1079,8 @@ Keyword-only arguments:
 
 Returns
 [ListEnvironmentOutputsOutputTypeDef](./type_defs.md#listenvironmentoutputsoutputtypedef).
+
+<a id="list_environment_provisioned_resources"></a>
 
 ### list_environment_provisioned_resources
 
@@ -1011,6 +1102,8 @@ Keyword-only arguments:
 
 Returns
 [ListEnvironmentProvisionedResourcesOutputTypeDef](./type_defs.md#listenvironmentprovisionedresourcesoutputtypedef).
+
+<a id="list_environment_template_versions"></a>
 
 ### list_environment_template_versions
 
@@ -1035,6 +1128,8 @@ Keyword-only arguments:
 Returns
 [ListEnvironmentTemplateVersionsOutputTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputtypedef).
 
+<a id="list_environment_templates"></a>
+
 ### list_environment_templates
 
 List environment templates.
@@ -1055,6 +1150,8 @@ Keyword-only arguments:
 
 Returns
 [ListEnvironmentTemplatesOutputTypeDef](./type_defs.md#listenvironmenttemplatesoutputtypedef).
+
+<a id="list_environments"></a>
 
 ### list_environments
 
@@ -1078,6 +1175,8 @@ Keyword-only arguments:
 Returns
 [ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef).
 
+<a id="list_repositories"></a>
+
 ### list_repositories
 
 List repositories with detail data.
@@ -1097,6 +1196,8 @@ Keyword-only arguments:
 
 Returns
 [ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef).
+
+<a id="list_repository_sync_definitions"></a>
 
 ### list_repository_sync_definitions
 
@@ -1123,6 +1224,8 @@ Keyword-only arguments:
 Returns
 [ListRepositorySyncDefinitionsOutputTypeDef](./type_defs.md#listrepositorysyncdefinitionsoutputtypedef).
 
+<a id="list_service_instance_outputs"></a>
+
 ### list_service_instance_outputs
 
 View a list service instance infrastructure as code outputs with detail data.
@@ -1144,6 +1247,8 @@ Keyword-only arguments:
 
 Returns
 [ListServiceInstanceOutputsOutputTypeDef](./type_defs.md#listserviceinstanceoutputsoutputtypedef).
+
+<a id="list_service_instance_provisioned_resources"></a>
 
 ### list_service_instance_provisioned_resources
 
@@ -1167,6 +1272,8 @@ Keyword-only arguments:
 Returns
 [ListServiceInstanceProvisionedResourcesOutputTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesoutputtypedef).
 
+<a id="list_service_instances"></a>
+
 ### list_service_instances
 
 List service instances with summaries of detail data.
@@ -1187,6 +1294,8 @@ Keyword-only arguments:
 
 Returns
 [ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef).
+
+<a id="list_service_pipeline_outputs"></a>
 
 ### list_service_pipeline_outputs
 
@@ -1209,6 +1318,8 @@ Keyword-only arguments:
 Returns
 [ListServicePipelineOutputsOutputTypeDef](./type_defs.md#listservicepipelineoutputsoutputtypedef).
 
+<a id="list_service_pipeline_provisioned_resources"></a>
+
 ### list_service_pipeline_provisioned_resources
 
 List provisioned resources for a service and pipeline with details.
@@ -1229,6 +1340,8 @@ Keyword-only arguments:
 
 Returns
 [ListServicePipelineProvisionedResourcesOutputTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesoutputtypedef).
+
+<a id="list_service_template_versions"></a>
 
 ### list_service_template_versions
 
@@ -1253,6 +1366,8 @@ Keyword-only arguments:
 Returns
 [ListServiceTemplateVersionsOutputTypeDef](./type_defs.md#listservicetemplateversionsoutputtypedef).
 
+<a id="list_service_templates"></a>
+
 ### list_service_templates
 
 List service templates with detail data.
@@ -1273,6 +1388,8 @@ Keyword-only arguments:
 Returns
 [ListServiceTemplatesOutputTypeDef](./type_defs.md#listservicetemplatesoutputtypedef).
 
+<a id="list_services"></a>
+
 ### list_services
 
 List services with summaries of detail data.
@@ -1291,6 +1408,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListServicesOutputTypeDef](./type_defs.md#listservicesoutputtypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1312,6 +1431,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+
+<a id="notify_resource_deployment_status_change"></a>
 
 ### notify_resource_deployment_status_change
 
@@ -1339,6 +1460,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="reject_environment_account_connection"></a>
+
 ### reject_environment_account_connection
 
 In a management account, reject an environment account connection from another
@@ -1360,6 +1483,8 @@ Keyword-only arguments:
 Returns
 [RejectEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#rejectenvironmentaccountconnectionoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Tag a resource.
@@ -1379,6 +1504,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Remove a tag from a resource.
@@ -1397,6 +1524,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_account_settings"></a>
 
 ### update_account_settings
 
@@ -1418,6 +1547,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAccountSettingsOutputTypeDef](./type_defs.md#updateaccountsettingsoutputtypedef).
+
+<a id="update_environment"></a>
 
 ### update_environment
 
@@ -1449,6 +1580,8 @@ Keyword-only arguments:
 Returns
 [UpdateEnvironmentOutputTypeDef](./type_defs.md#updateenvironmentoutputtypedef).
 
+<a id="update_environment_account_connection"></a>
+
 ### update_environment_account_connection
 
 In an environment account, update an environment account connection to use a
@@ -1471,6 +1604,8 @@ Keyword-only arguments:
 Returns
 [UpdateEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#updateenvironmentaccountconnectionoutputtypedef).
 
+<a id="update_environment_template"></a>
+
 ### update_environment_template
 
 Update an environment template.
@@ -1492,6 +1627,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateEnvironmentTemplateOutputTypeDef](./type_defs.md#updateenvironmenttemplateoutputtypedef).
+
+<a id="update_environment_template_version"></a>
 
 ### update_environment_template_version
 
@@ -1518,6 +1655,8 @@ Keyword-only arguments:
 Returns
 [UpdateEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#updateenvironmenttemplateversionoutputtypedef).
 
+<a id="update_service"></a>
+
 ### update_service
 
 Edit a service description or use a spec to add and delete service instances.
@@ -1538,6 +1677,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateServiceOutputTypeDef](./type_defs.md#updateserviceoutputtypedef).
+
+<a id="update_service_instance"></a>
 
 ### update_service_instance
 
@@ -1565,6 +1706,8 @@ Keyword-only arguments:
 Returns
 [UpdateServiceInstanceOutputTypeDef](./type_defs.md#updateserviceinstanceoutputtypedef).
 
+<a id="update_service_pipeline"></a>
+
 ### update_service_pipeline
 
 Update the service pipeline.
@@ -1590,6 +1733,8 @@ Keyword-only arguments:
 Returns
 [UpdateServicePipelineOutputTypeDef](./type_defs.md#updateservicepipelineoutputtypedef).
 
+<a id="update_service_template"></a>
+
 ### update_service_template
 
 Update a service template.
@@ -1610,6 +1755,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateServiceTemplateOutputTypeDef](./type_defs.md#updateservicetemplateoutputtypedef).
+
+<a id="update_service_template_version"></a>
 
 ### update_service_template_version
 
@@ -1638,6 +1785,8 @@ Keyword-only arguments:
 Returns
 [UpdateServiceTemplateVersionOutputTypeDef](./type_defs.md#updateservicetemplateversionoutputtypedef).
 
+<a id="update_template_sync_config"></a>
+
 ### update_template_sync_config
 
 Update template sync configuration parameters, except for the `templateName`
@@ -1665,6 +1814,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateTemplateSyncConfigOutputTypeDef](./type_defs.md#updatetemplatesyncconfigoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -1705,6 +1856,8 @@ overloads.
   [ListServicesPaginator](./paginators.md#listservicespaginator)
 - `client.get_paginator("list_tags_for_resource")` ->
   [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

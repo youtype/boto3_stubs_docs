@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-configservice-module"></a>
+
 # Literals for boto3 ConfigService module
 
 > [Index](..) > [ConfigService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
 type annotations stubs module
-[mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
+[mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
 
 - [Literals for boto3 ConfigService module](#literals-for-boto3-configservice-module)
   - [AggregateConformancePackComplianceSummaryGroupKeyType](#aggregateconformancepackcompliancesummarygroupkeytype)
@@ -68,6 +70,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="aggregateconformancepackcompliancesummarygroupkeytype"></a>
+
 ## AggregateConformancePackComplianceSummaryGroupKeyType
 
 ```python
@@ -78,6 +82,8 @@ Values:
 
 - `ACCOUNT_ID`
 - `AWS_REGION`
+
+<a id="aggregatedsourcestatustypetype"></a>
 
 ## AggregatedSourceStatusTypeType
 
@@ -91,6 +97,8 @@ Values:
 - `OUTDATED`
 - `SUCCEEDED`
 
+<a id="aggregatedsourcetypetype"></a>
+
 ## AggregatedSourceTypeType
 
 ```python
@@ -102,6 +110,8 @@ Values:
 - `ACCOUNT`
 - `ORGANIZATION`
 
+<a id="chronologicalordertype"></a>
+
 ## ChronologicalOrderType
 
 ```python
@@ -112,6 +122,8 @@ Values:
 
 - `Forward`
 - `Reverse`
+
+<a id="compliancetypetype"></a>
 
 ## ComplianceTypeType
 
@@ -126,6 +138,8 @@ Values:
 - `NON_COMPLIANT`
 - `NOT_APPLICABLE`
 
+<a id="configrulecompliancesummarygroupkeytype"></a>
+
 ## ConfigRuleComplianceSummaryGroupKeyType
 
 ```python
@@ -136,6 +150,8 @@ Values:
 
 - `ACCOUNT_ID`
 - `AWS_REGION`
+
+<a id="configrulestatetype"></a>
 
 ## ConfigRuleStateType
 
@@ -149,6 +165,8 @@ Values:
 - `DELETING`
 - `DELETING_RESULTS`
 - `EVALUATING`
+
+<a id="configurationitemstatustype"></a>
 
 ## ConfigurationItemStatusType
 
@@ -164,6 +182,8 @@ Values:
 - `ResourceDiscovered`
 - `ResourceNotRecorded`
 
+<a id="conformancepackcompliancetypetype"></a>
+
 ## ConformancePackComplianceTypeType
 
 ```python
@@ -175,6 +195,8 @@ Values:
 - `COMPLIANT`
 - `INSUFFICIENT_DATA`
 - `NON_COMPLIANT`
+
+<a id="conformancepackstatetype"></a>
 
 ## ConformancePackStateType
 
@@ -190,6 +212,8 @@ Values:
 - `DELETE_FAILED`
 - `DELETE_IN_PROGRESS`
 
+<a id="deliverystatustype"></a>
+
 ## DeliveryStatusType
 
 ```python
@@ -202,6 +226,8 @@ Values:
 - `Not_Applicable`
 - `Success`
 
+<a id="describeaggregatecompliancebyconfigrulespaginatorname"></a>
+
 ## DescribeAggregateComplianceByConfigRulesPaginatorName
 
 ```python
@@ -211,6 +237,8 @@ from mypy_boto3_config.literals import DescribeAggregateComplianceByConfigRulesP
 Values:
 
 - `describe_aggregate_compliance_by_config_rules`
+
+<a id="describeaggregatecompliancebyconformancepackspaginatorname"></a>
 
 ## DescribeAggregateComplianceByConformancePacksPaginatorName
 
@@ -222,6 +250,8 @@ Values:
 
 - `describe_aggregate_compliance_by_conformance_packs`
 
+<a id="describeaggregationauthorizationspaginatorname"></a>
+
 ## DescribeAggregationAuthorizationsPaginatorName
 
 ```python
@@ -231,6 +261,8 @@ from mypy_boto3_config.literals import DescribeAggregationAuthorizationsPaginato
 Values:
 
 - `describe_aggregation_authorizations`
+
+<a id="describecompliancebyconfigrulepaginatorname"></a>
 
 ## DescribeComplianceByConfigRulePaginatorName
 
@@ -242,6 +274,8 @@ Values:
 
 - `describe_compliance_by_config_rule`
 
+<a id="describecompliancebyresourcepaginatorname"></a>
+
 ## DescribeComplianceByResourcePaginatorName
 
 ```python
@@ -251,6 +285,8 @@ from mypy_boto3_config.literals import DescribeComplianceByResourcePaginatorName
 Values:
 
 - `describe_compliance_by_resource`
+
+<a id="describeconfigruleevaluationstatuspaginatorname"></a>
 
 ## DescribeConfigRuleEvaluationStatusPaginatorName
 
@@ -262,6 +298,8 @@ Values:
 
 - `describe_config_rule_evaluation_status`
 
+<a id="describeconfigrulespaginatorname"></a>
+
 ## DescribeConfigRulesPaginatorName
 
 ```python
@@ -271,6 +309,8 @@ from mypy_boto3_config.literals import DescribeConfigRulesPaginatorName
 Values:
 
 - `describe_config_rules`
+
+<a id="describeconfigurationaggregatorsourcesstatuspaginatorname"></a>
 
 ## DescribeConfigurationAggregatorSourcesStatusPaginatorName
 
@@ -282,6 +322,8 @@ Values:
 
 - `describe_configuration_aggregator_sources_status`
 
+<a id="describeconfigurationaggregatorspaginatorname"></a>
+
 ## DescribeConfigurationAggregatorsPaginatorName
 
 ```python
@@ -291,6 +333,8 @@ from mypy_boto3_config.literals import DescribeConfigurationAggregatorsPaginator
 Values:
 
 - `describe_configuration_aggregators`
+
+<a id="describeconformancepackstatuspaginatorname"></a>
 
 ## DescribeConformancePackStatusPaginatorName
 
@@ -302,6 +346,8 @@ Values:
 
 - `describe_conformance_pack_status`
 
+<a id="describeconformancepackspaginatorname"></a>
+
 ## DescribeConformancePacksPaginatorName
 
 ```python
@@ -311,6 +357,8 @@ from mypy_boto3_config.literals import DescribeConformancePacksPaginatorName
 Values:
 
 - `describe_conformance_packs`
+
+<a id="describeorganizationconfigrulestatusespaginatorname"></a>
 
 ## DescribeOrganizationConfigRuleStatusesPaginatorName
 
@@ -322,6 +370,8 @@ Values:
 
 - `describe_organization_config_rule_statuses`
 
+<a id="describeorganizationconfigrulespaginatorname"></a>
+
 ## DescribeOrganizationConfigRulesPaginatorName
 
 ```python
@@ -331,6 +381,8 @@ from mypy_boto3_config.literals import DescribeOrganizationConfigRulesPaginatorN
 Values:
 
 - `describe_organization_config_rules`
+
+<a id="describeorganizationconformancepackstatusespaginatorname"></a>
 
 ## DescribeOrganizationConformancePackStatusesPaginatorName
 
@@ -342,6 +394,8 @@ Values:
 
 - `describe_organization_conformance_pack_statuses`
 
+<a id="describeorganizationconformancepackspaginatorname"></a>
+
 ## DescribeOrganizationConformancePacksPaginatorName
 
 ```python
@@ -351,6 +405,8 @@ from mypy_boto3_config.literals import DescribeOrganizationConformancePacksPagin
 Values:
 
 - `describe_organization_conformance_packs`
+
+<a id="describependingaggregationrequestspaginatorname"></a>
 
 ## DescribePendingAggregationRequestsPaginatorName
 
@@ -362,6 +418,8 @@ Values:
 
 - `describe_pending_aggregation_requests`
 
+<a id="describeremediationexecutionstatuspaginatorname"></a>
+
 ## DescribeRemediationExecutionStatusPaginatorName
 
 ```python
@@ -371,6 +429,8 @@ from mypy_boto3_config.literals import DescribeRemediationExecutionStatusPaginat
 Values:
 
 - `describe_remediation_execution_status`
+
+<a id="describeretentionconfigurationspaginatorname"></a>
 
 ## DescribeRetentionConfigurationsPaginatorName
 
@@ -382,6 +442,8 @@ Values:
 
 - `describe_retention_configurations`
 
+<a id="eventsourcetype"></a>
+
 ## EventSourceType
 
 ```python
@@ -391,6 +453,8 @@ from mypy_boto3_config.literals import EventSourceType
 Values:
 
 - `aws.config`
+
+<a id="getaggregatecompliancedetailsbyconfigrulepaginatorname"></a>
 
 ## GetAggregateComplianceDetailsByConfigRulePaginatorName
 
@@ -402,6 +466,8 @@ Values:
 
 - `get_aggregate_compliance_details_by_config_rule`
 
+<a id="getcompliancedetailsbyconfigrulepaginatorname"></a>
+
 ## GetComplianceDetailsByConfigRulePaginatorName
 
 ```python
@@ -411,6 +477,8 @@ from mypy_boto3_config.literals import GetComplianceDetailsByConfigRulePaginator
 Values:
 
 - `get_compliance_details_by_config_rule`
+
+<a id="getcompliancedetailsbyresourcepaginatorname"></a>
 
 ## GetComplianceDetailsByResourcePaginatorName
 
@@ -422,6 +490,8 @@ Values:
 
 - `get_compliance_details_by_resource`
 
+<a id="getconformancepackcompliancesummarypaginatorname"></a>
+
 ## GetConformancePackComplianceSummaryPaginatorName
 
 ```python
@@ -431,6 +501,8 @@ from mypy_boto3_config.literals import GetConformancePackComplianceSummaryPagina
 Values:
 
 - `get_conformance_pack_compliance_summary`
+
+<a id="getorganizationconfigruledetailedstatuspaginatorname"></a>
 
 ## GetOrganizationConfigRuleDetailedStatusPaginatorName
 
@@ -442,6 +514,8 @@ Values:
 
 - `get_organization_config_rule_detailed_status`
 
+<a id="getorganizationconformancepackdetailedstatuspaginatorname"></a>
+
 ## GetOrganizationConformancePackDetailedStatusPaginatorName
 
 ```python
@@ -451,6 +525,8 @@ from mypy_boto3_config.literals import GetOrganizationConformancePackDetailedSta
 Values:
 
 - `get_organization_conformance_pack_detailed_status`
+
+<a id="getresourceconfighistorypaginatorname"></a>
 
 ## GetResourceConfigHistoryPaginatorName
 
@@ -462,6 +538,8 @@ Values:
 
 - `get_resource_config_history`
 
+<a id="listaggregatediscoveredresourcespaginatorname"></a>
+
 ## ListAggregateDiscoveredResourcesPaginatorName
 
 ```python
@@ -471,6 +549,8 @@ from mypy_boto3_config.literals import ListAggregateDiscoveredResourcesPaginator
 Values:
 
 - `list_aggregate_discovered_resources`
+
+<a id="listdiscoveredresourcespaginatorname"></a>
 
 ## ListDiscoveredResourcesPaginatorName
 
@@ -482,6 +562,8 @@ Values:
 
 - `list_discovered_resources`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -491,6 +573,8 @@ from mypy_boto3_config.literals import ListTagsForResourcePaginatorName
 Values:
 
 - `list_tags_for_resource`
+
+<a id="maximumexecutionfrequencytype"></a>
 
 ## MaximumExecutionFrequencyType
 
@@ -505,6 +589,8 @@ Values:
 - `Three_Hours`
 - `Twelve_Hours`
 - `TwentyFour_Hours`
+
+<a id="memberaccountrulestatustype"></a>
 
 ## MemberAccountRuleStatusType
 
@@ -524,6 +610,8 @@ Values:
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_SUCCESSFUL`
 
+<a id="messagetypetype"></a>
+
 ## MessageTypeType
 
 ```python
@@ -537,6 +625,8 @@ Values:
 - `OversizedConfigurationItemChangeNotification`
 - `ScheduledNotification`
 
+<a id="organizationconfigruletriggertypetype"></a>
+
 ## OrganizationConfigRuleTriggerTypeType
 
 ```python
@@ -548,6 +638,8 @@ Values:
 - `ConfigurationItemChangeNotification`
 - `OversizedConfigurationItemChangeNotification`
 - `ScheduledNotification`
+
+<a id="organizationresourcedetailedstatustype"></a>
 
 ## OrganizationResourceDetailedStatusType
 
@@ -567,6 +659,8 @@ Values:
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_SUCCESSFUL`
 
+<a id="organizationresourcestatustype"></a>
+
 ## OrganizationResourceStatusType
 
 ```python
@@ -584,6 +678,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_SUCCESSFUL`
+
+<a id="organizationrulestatustype"></a>
 
 ## OrganizationRuleStatusType
 
@@ -603,6 +699,8 @@ Values:
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_SUCCESSFUL`
 
+<a id="ownertype"></a>
+
 ## OwnerType
 
 ```python
@@ -613,6 +711,8 @@ Values:
 
 - `AWS`
 - `CUSTOM_LAMBDA`
+
+<a id="recorderstatustype"></a>
 
 ## RecorderStatusType
 
@@ -625,6 +725,8 @@ Values:
 - `Failure`
 - `Pending`
 - `Success`
+
+<a id="remediationexecutionstatetype"></a>
 
 ## RemediationExecutionStateType
 
@@ -639,6 +741,8 @@ Values:
 - `QUEUED`
 - `SUCCEEDED`
 
+<a id="remediationexecutionstepstatetype"></a>
+
 ## RemediationExecutionStepStateType
 
 ```python
@@ -651,6 +755,8 @@ Values:
 - `PENDING`
 - `SUCCEEDED`
 
+<a id="remediationtargettypetype"></a>
+
 ## RemediationTargetTypeType
 
 ```python
@@ -660,6 +766,8 @@ from mypy_boto3_config.literals import RemediationTargetTypeType
 Values:
 
 - `SSM_DOCUMENT`
+
+<a id="resourcecountgroupkeytype"></a>
 
 ## ResourceCountGroupKeyType
 
@@ -672,6 +780,8 @@ Values:
 - `ACCOUNT_ID`
 - `AWS_REGION`
 - `RESOURCE_TYPE`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -797,6 +907,8 @@ Values:
 - `AWS::WAFv2::WebACL`
 - `AWS::XRay::EncryptionConfig`
 
+<a id="resourcevaluetypetype"></a>
+
 ## ResourceValueTypeType
 
 ```python
@@ -806,6 +918,8 @@ from mypy_boto3_config.literals import ResourceValueTypeType
 Values:
 
 - `RESOURCE_ID`
+
+<a id="selectaggregateresourceconfigpaginatorname"></a>
 
 ## SelectAggregateResourceConfigPaginatorName
 
@@ -817,6 +931,8 @@ Values:
 
 - `select_aggregate_resource_config`
 
+<a id="selectresourceconfigpaginatorname"></a>
+
 ## SelectResourceConfigPaginatorName
 
 ```python
@@ -826,6 +942,8 @@ from mypy_boto3_config.literals import SelectResourceConfigPaginatorName
 Values:
 
 - `select_resource_config`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1134,6 +1252,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

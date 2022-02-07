@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-apigateway-module"></a>
+
 # Literals for boto3 APIGateway module
 
 > [Index](..) > [APIGateway](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
 type annotations stubs module
-[mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
+[mypy-boto3-apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
 - [Literals for boto3 APIGateway module](#literals-for-boto3-apigateway-module)
   - [ApiKeySourceTypeType](#apikeysourcetypetype)
@@ -48,6 +50,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="apikeysourcetypetype"></a>
+
 ## ApiKeySourceTypeType
 
 ```python
@@ -59,6 +63,8 @@ Values:
 - `AUTHORIZER`
 - `HEADER`
 
+<a id="apikeysformattype"></a>
+
 ## ApiKeysFormatType
 
 ```python
@@ -68,6 +74,8 @@ from mypy_boto3_apigateway.literals import ApiKeysFormatType
 Values:
 
 - `csv`
+
+<a id="authorizertypetype"></a>
 
 ## AuthorizerTypeType
 
@@ -80,6 +88,8 @@ Values:
 - `COGNITO_USER_POOLS`
 - `REQUEST`
 - `TOKEN`
+
+<a id="cacheclustersizetype"></a>
 
 ## CacheClusterSizeType
 
@@ -98,6 +108,8 @@ Values:
 - `58.2`
 - `6.1`
 
+<a id="cacheclusterstatustype"></a>
+
 ## CacheClusterStatusType
 
 ```python
@@ -112,6 +124,8 @@ Values:
 - `FLUSH_IN_PROGRESS`
 - `NOT_AVAILABLE`
 
+<a id="connectiontypetype"></a>
+
 ## ConnectionTypeType
 
 ```python
@@ -123,6 +137,8 @@ Values:
 - `INTERNET`
 - `VPC_LINK`
 
+<a id="contenthandlingstrategytype"></a>
+
 ## ContentHandlingStrategyType
 
 ```python
@@ -133,6 +149,8 @@ Values:
 
 - `CONVERT_TO_BINARY`
 - `CONVERT_TO_TEXT`
+
+<a id="documentationparttypetype"></a>
 
 ## DocumentationPartTypeType
 
@@ -155,6 +173,8 @@ Values:
 - `RESPONSE_BODY`
 - `RESPONSE_HEADER`
 
+<a id="domainnamestatustype"></a>
+
 ## DomainNameStatusType
 
 ```python
@@ -169,6 +189,8 @@ Values:
 - `PENDING_OWNERSHIP_VERIFICATION`
 - `UPDATING`
 
+<a id="endpointtypetype"></a>
+
 ## EndpointTypeType
 
 ```python
@@ -180,6 +202,8 @@ Values:
 - `EDGE`
 - `PRIVATE`
 - `REGIONAL`
+
+<a id="gatewayresponsetypetype"></a>
 
 ## GatewayResponseTypeType
 
@@ -211,6 +235,8 @@ Values:
 - `UNSUPPORTED_MEDIA_TYPE`
 - `WAF_FILTERED`
 
+<a id="getapikeyspaginatorname"></a>
+
 ## GetApiKeysPaginatorName
 
 ```python
@@ -220,6 +246,8 @@ from mypy_boto3_apigateway.literals import GetApiKeysPaginatorName
 Values:
 
 - `get_api_keys`
+
+<a id="getauthorizerspaginatorname"></a>
 
 ## GetAuthorizersPaginatorName
 
@@ -231,6 +259,8 @@ Values:
 
 - `get_authorizers`
 
+<a id="getbasepathmappingspaginatorname"></a>
+
 ## GetBasePathMappingsPaginatorName
 
 ```python
@@ -240,6 +270,8 @@ from mypy_boto3_apigateway.literals import GetBasePathMappingsPaginatorName
 Values:
 
 - `get_base_path_mappings`
+
+<a id="getclientcertificatespaginatorname"></a>
 
 ## GetClientCertificatesPaginatorName
 
@@ -251,6 +283,8 @@ Values:
 
 - `get_client_certificates`
 
+<a id="getdeploymentspaginatorname"></a>
+
 ## GetDeploymentsPaginatorName
 
 ```python
@@ -260,6 +294,8 @@ from mypy_boto3_apigateway.literals import GetDeploymentsPaginatorName
 Values:
 
 - `get_deployments`
+
+<a id="getdocumentationpartspaginatorname"></a>
 
 ## GetDocumentationPartsPaginatorName
 
@@ -271,6 +307,8 @@ Values:
 
 - `get_documentation_parts`
 
+<a id="getdocumentationversionspaginatorname"></a>
+
 ## GetDocumentationVersionsPaginatorName
 
 ```python
@@ -280,6 +318,8 @@ from mypy_boto3_apigateway.literals import GetDocumentationVersionsPaginatorName
 Values:
 
 - `get_documentation_versions`
+
+<a id="getdomainnamespaginatorname"></a>
 
 ## GetDomainNamesPaginatorName
 
@@ -291,6 +331,8 @@ Values:
 
 - `get_domain_names`
 
+<a id="getgatewayresponsespaginatorname"></a>
+
 ## GetGatewayResponsesPaginatorName
 
 ```python
@@ -300,6 +342,8 @@ from mypy_boto3_apigateway.literals import GetGatewayResponsesPaginatorName
 Values:
 
 - `get_gateway_responses`
+
+<a id="getmodelspaginatorname"></a>
 
 ## GetModelsPaginatorName
 
@@ -311,6 +355,8 @@ Values:
 
 - `get_models`
 
+<a id="getrequestvalidatorspaginatorname"></a>
+
 ## GetRequestValidatorsPaginatorName
 
 ```python
@@ -320,6 +366,8 @@ from mypy_boto3_apigateway.literals import GetRequestValidatorsPaginatorName
 Values:
 
 - `get_request_validators`
+
+<a id="getresourcespaginatorname"></a>
 
 ## GetResourcesPaginatorName
 
@@ -331,6 +379,8 @@ Values:
 
 - `get_resources`
 
+<a id="getrestapispaginatorname"></a>
+
 ## GetRestApisPaginatorName
 
 ```python
@@ -340,6 +390,8 @@ from mypy_boto3_apigateway.literals import GetRestApisPaginatorName
 Values:
 
 - `get_rest_apis`
+
+<a id="getsdktypespaginatorname"></a>
 
 ## GetSdkTypesPaginatorName
 
@@ -351,6 +403,8 @@ Values:
 
 - `get_sdk_types`
 
+<a id="getusagepaginatorname"></a>
+
 ## GetUsagePaginatorName
 
 ```python
@@ -360,6 +414,8 @@ from mypy_boto3_apigateway.literals import GetUsagePaginatorName
 Values:
 
 - `get_usage`
+
+<a id="getusageplankeyspaginatorname"></a>
 
 ## GetUsagePlanKeysPaginatorName
 
@@ -371,6 +427,8 @@ Values:
 
 - `get_usage_plan_keys`
 
+<a id="getusageplanspaginatorname"></a>
+
 ## GetUsagePlansPaginatorName
 
 ```python
@@ -381,6 +439,8 @@ Values:
 
 - `get_usage_plans`
 
+<a id="getvpclinkspaginatorname"></a>
+
 ## GetVpcLinksPaginatorName
 
 ```python
@@ -390,6 +450,8 @@ from mypy_boto3_apigateway.literals import GetVpcLinksPaginatorName
 Values:
 
 - `get_vpc_links`
+
+<a id="integrationtypetype"></a>
 
 ## IntegrationTypeType
 
@@ -405,6 +467,8 @@ Values:
 - `HTTP_PROXY`
 - `MOCK`
 
+<a id="locationstatustypetype"></a>
+
 ## LocationStatusTypeType
 
 ```python
@@ -415,6 +479,8 @@ Values:
 
 - `DOCUMENTED`
 - `UNDOCUMENTED`
+
+<a id="optype"></a>
 
 ## OpType
 
@@ -431,6 +497,8 @@ Values:
 - `replace`
 - `test`
 
+<a id="putmodetype"></a>
+
 ## PutModeType
 
 ```python
@@ -441,6 +509,8 @@ Values:
 
 - `merge`
 - `overwrite`
+
+<a id="quotaperiodtypetype"></a>
 
 ## QuotaPeriodTypeType
 
@@ -454,6 +524,8 @@ Values:
 - `MONTH`
 - `WEEK`
 
+<a id="securitypolicytype"></a>
+
 ## SecurityPolicyType
 
 ```python
@@ -464,6 +536,8 @@ Values:
 
 - `TLS_1_0`
 - `TLS_1_2`
+
+<a id="unauthorizedcachecontrolheaderstrategytype"></a>
 
 ## UnauthorizedCacheControlHeaderStrategyType
 
@@ -477,6 +551,8 @@ Values:
 - `SUCCEED_WITH_RESPONSE_HEADER`
 - `SUCCEED_WITHOUT_RESPONSE_HEADER`
 
+<a id="vpclinkstatustype"></a>
+
 ## VpcLinkStatusType
 
 ```python
@@ -489,6 +565,8 @@ Values:
 - `DELETING`
 - `FAILED`
 - `PENDING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -797,6 +875,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

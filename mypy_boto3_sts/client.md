@@ -1,3 +1,5 @@
+<a id="stsclient-for-boto3-sts-module"></a>
+
 # STSClient for boto3 STS module
 
 > [Index](..) > [STS](.) > STSClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
 type annotations stubs module
-[mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
+[mypy-boto3-sts](https://pypi.org/project/mypy-boto3-sts/).
 
 - [STSClient for boto3 STS module](#stsclient-for-boto3-sts-module)
   - [STSClient](#stsclient)
@@ -23,6 +25,8 @@ type annotations stubs module
     - [get_federation_token](#get_federation_token)
     - [get_session_token](#get_session_token)
 
+<a id="stsclient"></a>
+
 ## STSClient
 
 Type annotations for `boto3.client("sts")`
@@ -30,14 +34,17 @@ Type annotations for `boto3.client("sts")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sts.client import STSClient
 
 def get_sts_client() -> STSClient:
-    return boto3.client("sts")
+    return Session().client("sts")
 ```
 
 Boto3 documentation:
 [STS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -63,7 +70,11 @@ Exceptions:
 - `Exceptions.PackedPolicyTooLargeException`
 - `Exceptions.RegionDisabledException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -75,6 +86,8 @@ Boto3 documentation:
 [STS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="assume_role"></a>
 
 ### assume_role
 
@@ -106,6 +119,8 @@ Keyword-only arguments:
 
 Returns [AssumeRoleResponseTypeDef](./type_defs.md#assumeroleresponsetypedef).
 
+<a id="assume_role_with_saml"></a>
+
 ### assume_role_with_saml
 
 Returns a set of temporary security credentials for users who have been
@@ -131,6 +146,8 @@ Keyword-only arguments:
 
 Returns
 [AssumeRoleWithSAMLResponseTypeDef](./type_defs.md#assumerolewithsamlresponsetypedef).
+
+<a id="assume_role_with_web_identity"></a>
 
 ### assume_role_with_web_identity
 
@@ -160,6 +177,8 @@ Keyword-only arguments:
 Returns
 [AssumeRoleWithWebIdentityResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -174,6 +193,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="decode_authorization_message"></a>
 
 ### decode_authorization_message
 
@@ -195,6 +216,8 @@ Keyword-only arguments:
 Returns
 [DecodeAuthorizationMessageResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -212,6 +235,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_access_key_info"></a>
 
 ### get_access_key_info
 
@@ -232,6 +257,8 @@ Keyword-only arguments:
 Returns
 [GetAccessKeyInfoResponseTypeDef](./type_defs.md#getaccesskeyinforesponsetypedef).
 
+<a id="get_caller_identity"></a>
+
 ### get_caller_identity
 
 Returns details about the IAM user or role whose credentials are used to call
@@ -244,6 +271,8 @@ Boto3 documentation:
 
 Returns
 [GetCallerIdentityResponseTypeDef](./type_defs.md#getcalleridentityresponsetypedef).
+
+<a id="get_federation_token"></a>
 
 ### get_federation_token
 
@@ -269,6 +298,8 @@ Keyword-only arguments:
 
 Returns
 [GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef).
+
+<a id="get_session_token"></a>
 
 ### get_session_token
 

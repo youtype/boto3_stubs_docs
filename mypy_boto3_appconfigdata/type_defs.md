@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-appconfigdata-module"></a>
+
 # Typed dictionaries for boto3 AppConfigData module
 
 > [Index](..) > [AppConfigData](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppConfigData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfigdata.html#AppConfigData)
 type annotations stubs module
-[mypy_boto3_appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
+[mypy-boto3-appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
 
 - [Typed dictionaries for boto3 AppConfigData module](#typed-dictionaries-for-boto3-appconfigdata-module)
   - [GetLatestConfigurationRequestRequestTypeDef](#getlatestconfigurationrequestrequesttypedef)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StartConfigurationSessionRequestRequestTypeDef](#startconfigurationsessionrequestrequesttypedef)
   - [StartConfigurationSessionResponseTypeDef](#startconfigurationsessionresponsetypedef)
+
+<a id="getlatestconfigurationrequestrequesttypedef"></a>
 
 ## GetLatestConfigurationRequestRequestTypeDef
 
@@ -23,6 +27,8 @@ from mypy_boto3_appconfigdata.type_defs import GetLatestConfigurationRequestRequ
 Required fields:
 
 - `ConfigurationToken`: `str`
+
+<a id="getlatestconfigurationresponsetypedef"></a>
 
 ## GetLatestConfigurationResponseTypeDef
 
@@ -39,6 +45,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -52,6 +60,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="startconfigurationsessionrequestrequesttypedef"></a>
 
 ## StartConfigurationSessionRequestRequestTypeDef
 
@@ -68,6 +78,8 @@ Required fields:
 Optional fields:
 
 - `RequiredMinimumPollIntervalInSeconds`: `int`
+
+<a id="startconfigurationsessionresponsetypedef"></a>
 
 ## StartConfigurationSessionResponseTypeDef
 

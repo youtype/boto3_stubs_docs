@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-elasticsearchservice-module"></a>
+
 # Paginators for boto3 ElasticsearchService module
 
 > [Index](..) > [ElasticsearchService](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
 type annotations stubs module
-[mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
+[mypy-boto3-es](https://pypi.org/project/mypy-boto3-es/).
 
 - [Paginators for boto3 ElasticsearchService module](#paginators-for-boto3-elasticsearchservice-module)
   - [DescribeReservedElasticsearchInstanceOfferingsPaginator](#describereservedelasticsearchinstanceofferingspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [GetUpgradeHistoryPaginator](#getupgradehistorypaginator)
   - [ListElasticsearchInstanceTypesPaginator](#listelasticsearchinstancetypespaginator)
   - [ListElasticsearchVersionsPaginator](#listelasticsearchversionspaginator)
+
+<a id="describereservedelasticsearchinstanceofferingspaginator"></a>
 
 ## DescribeReservedElasticsearchInstanceOfferingsPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstanceOfferingsPaginator
 
 def get_describe_reserved_elasticsearch_instance_offerings_paginator() -> DescribeReservedElasticsearchInstanceOfferingsPaginator:
-    return boto3.client("es").get_paginator("describe_reserved_elasticsearch_instance_offerings")
+    return Session().client("es").get_paginator("describe_reserved_elasticsearch_instance_offerings")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for
 `DescribeReservedElasticsearchInstanceOfferingsPaginator.paginate` returns
 `_PageIterator`\[[DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef)\].
 
+<a id="describereservedelasticsearchinstancespaginator"></a>
+
 ## DescribeReservedElasticsearchInstancesPaginator
 
 Type annotations for
@@ -49,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstancesPaginator
 
 def get_describe_reserved_elasticsearch_instances_paginator() -> DescribeReservedElasticsearchInstancesPaginator:
-    return boto3.client("es").get_paginator("describe_reserved_elasticsearch_instances")
+    return Session().client("es").get_paginator("describe_reserved_elasticsearch_instances")
 ```
 
 Boto3 documentation:
@@ -68,6 +78,8 @@ method:
 `DescribeReservedElasticsearchInstancesPaginator.paginate` returns
 `_PageIterator`\[[DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef)\].
 
+<a id="getupgradehistorypaginator"></a>
+
 ## GetUpgradeHistoryPaginator
 
 Type annotations for `boto3.client("es").get_paginator("get_upgrade_history")`.
@@ -75,10 +87,12 @@ Type annotations for `boto3.client("es").get_paginator("get_upgrade_history")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_es.paginator import GetUpgradeHistoryPaginator
 
 def get_get_upgrade_history_paginator() -> GetUpgradeHistoryPaginator:
-    return boto3.client("es").get_paginator("get_upgrade_history")
+    return Session().client("es").get_paginator("get_upgrade_history")
 ```
 
 Boto3 documentation:
@@ -93,6 +107,8 @@ Arguments for `GetUpgradeHistoryPaginator.paginate` method:
 `GetUpgradeHistoryPaginator.paginate` returns
 `_PageIterator`\[[GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef)\].
 
+<a id="listelasticsearchinstancetypespaginator"></a>
+
 ## ListElasticsearchInstanceTypesPaginator
 
 Type annotations for
@@ -101,10 +117,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_es.paginator import ListElasticsearchInstanceTypesPaginator
 
 def get_list_elasticsearch_instance_types_paginator() -> ListElasticsearchInstanceTypesPaginator:
-    return boto3.client("es").get_paginator("list_elasticsearch_instance_types")
+    return Session().client("es").get_paginator("list_elasticsearch_instance_types")
 ```
 
 Boto3 documentation:
@@ -120,6 +138,8 @@ Arguments for `ListElasticsearchInstanceTypesPaginator.paginate` method:
 `ListElasticsearchInstanceTypesPaginator.paginate` returns
 `_PageIterator`\[[ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef)\].
 
+<a id="listelasticsearchversionspaginator"></a>
+
 ## ListElasticsearchVersionsPaginator
 
 Type annotations for
@@ -128,10 +148,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_es.paginator import ListElasticsearchVersionsPaginator
 
 def get_list_elasticsearch_versions_paginator() -> ListElasticsearchVersionsPaginator:
-    return boto3.client("es").get_paginator("list_elasticsearch_versions")
+    return Session().client("es").get_paginator("list_elasticsearch_versions")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="qldbsessionclient-for-boto3-qldbsession-module"></a>
+
 # QLDBSessionClient for boto3 QLDBSession module
 
 > [Index](..) > [QLDBSession](.) > QLDBSessionClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
 type annotations stubs module
-[mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
+[mypy-boto3-qldb-session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
 - [QLDBSessionClient for boto3 QLDBSession module](#qldbsessionclient-for-boto3-qldbsession-module)
   - [QLDBSessionClient](#qldbsessionclient)
@@ -16,6 +18,8 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [send_command](#send_command)
 
+<a id="qldbsessionclient"></a>
+
 ## QLDBSessionClient
 
 Type annotations for `boto3.client("qldb-session")`
@@ -23,14 +27,17 @@ Type annotations for `boto3.client("qldb-session")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_qldb_session.client import QLDBSessionClient
 
 def get_qldb-session_client() -> QLDBSessionClient:
-    return boto3.client("qldb-session")
+    return Session().client("qldb-session")
 ```
 
 Boto3 documentation:
 [QLDBSession.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -54,7 +61,11 @@ Exceptions:
 - `Exceptions.OccConflictException`
 - `Exceptions.RateExceededException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -66,6 +77,8 @@ Boto3 documentation:
 [QLDBSession.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -81,6 +94,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -100,6 +115,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="send_command"></a>
 
 ### send_command
 

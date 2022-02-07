@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-mediastore-module"></a>
+
 # Type annotations for boto3 MediaStore module
 
 > [Index](..) > MediaStore
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
 type annotations stubs module
-[mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
+[mypy-boto3-mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[mediastore]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[mediastore]'
+
+# standalone installation
 pip install mypy-boto3-mediastore
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-mediastore
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="mediastoreclient"></a>
+
 ## MediaStoreClient
 
 Type annotations for `boto3.client("mediastore")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_mediastore.client import MediaStoreClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -58,6 +72,8 @@ from mypy_boto3_mediastore.client import MediaStoreClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MediaStoreClient [exceptions](./client.md#exceptions)
@@ -70,6 +86,8 @@ MediaStoreClient [exceptions](./client.md#exceptions)
 - LimitExceededException
 - PolicyNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -78,10 +96,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_mediastore.paginators import ListContainersPaginator, ...
+from mypy_boto3_mediastore.paginator import ListContainersPaginator, ...
 ```
 
 - [ListContainersPaginator](./paginators.md#listcontainerspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -99,6 +119,8 @@ from mypy_boto3_mediastore.literals import ContainerLevelMetricsType, ...
 - [MethodNameType](./literals.md#methodnametype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

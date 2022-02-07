@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-codedeploy-module"></a>
+
 # Literals for boto3 CodeDeploy module
 
 > [Index](..) > [CodeDeploy](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
 type annotations stubs module
-[mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
+[mypy-boto3-codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 - [Literals for boto3 CodeDeploy module](#literals-for-boto3-codedeploy-module)
   - [ApplicationRevisionSortByType](#applicationrevisionsortbytype)
@@ -55,6 +57,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="applicationrevisionsortbytype"></a>
+
 ## ApplicationRevisionSortByType
 
 ```python
@@ -67,6 +71,8 @@ Values:
 - `lastUsedTime`
 - `registerTime`
 
+<a id="autorollbackeventtype"></a>
+
 ## AutoRollbackEventType
 
 ```python
@@ -78,6 +84,8 @@ Values:
 - `DEPLOYMENT_FAILURE`
 - `DEPLOYMENT_STOP_ON_ALARM`
 - `DEPLOYMENT_STOP_ON_REQUEST`
+
+<a id="bundletypetype"></a>
 
 ## BundleTypeType
 
@@ -93,6 +101,8 @@ Values:
 - `YAML`
 - `zip`
 
+<a id="computeplatformtype"></a>
+
 ## ComputePlatformType
 
 ```python
@@ -104,6 +114,8 @@ Values:
 - `ECS`
 - `Lambda`
 - `Server`
+
+<a id="deploymentcreatortype"></a>
 
 ## DeploymentCreatorType
 
@@ -121,6 +133,8 @@ Values:
 - `codeDeployRollback`
 - `user`
 
+<a id="deploymentoptiontype"></a>
+
 ## DeploymentOptionType
 
 ```python
@@ -132,6 +146,8 @@ Values:
 - `WITH_TRAFFIC_CONTROL`
 - `WITHOUT_TRAFFIC_CONTROL`
 
+<a id="deploymentreadyactiontype"></a>
+
 ## DeploymentReadyActionType
 
 ```python
@@ -142,6 +158,8 @@ Values:
 
 - `CONTINUE_DEPLOYMENT`
 - `STOP_DEPLOYMENT`
+
+<a id="deploymentstatustype"></a>
 
 ## DeploymentStatusType
 
@@ -160,6 +178,8 @@ Values:
 - `Stopped`
 - `Succeeded`
 
+<a id="deploymentsuccessfulwaitername"></a>
+
 ## DeploymentSuccessfulWaiterName
 
 ```python
@@ -169,6 +189,8 @@ from mypy_boto3_codedeploy.literals import DeploymentSuccessfulWaiterName
 Values:
 
 - `deployment_successful`
+
+<a id="deploymenttargettypetype"></a>
 
 ## DeploymentTargetTypeType
 
@@ -183,6 +205,8 @@ Values:
 - `InstanceTarget`
 - `LambdaTarget`
 
+<a id="deploymenttypetype"></a>
+
 ## DeploymentTypeType
 
 ```python
@@ -193,6 +217,8 @@ Values:
 
 - `BLUE_GREEN`
 - `IN_PLACE`
+
+<a id="deploymentwaittypetype"></a>
 
 ## DeploymentWaitTypeType
 
@@ -205,6 +231,8 @@ Values:
 - `READY_WAIT`
 - `TERMINATION_WAIT`
 
+<a id="ec2tagfiltertypetype"></a>
+
 ## EC2TagFilterTypeType
 
 ```python
@@ -216,6 +244,8 @@ Values:
 - `KEY_AND_VALUE`
 - `KEY_ONLY`
 - `VALUE_ONLY`
+
+<a id="errorcodetype"></a>
 
 ## ErrorCodeType
 
@@ -260,6 +290,8 @@ Values:
 - `THROTTLED`
 - `TIMEOUT`
 
+<a id="fileexistsbehaviortype"></a>
+
 ## FileExistsBehaviorType
 
 ```python
@@ -272,6 +304,8 @@ Values:
 - `OVERWRITE`
 - `RETAIN`
 
+<a id="greenfleetprovisioningactiontype"></a>
+
 ## GreenFleetProvisioningActionType
 
 ```python
@@ -283,6 +317,8 @@ Values:
 - `COPY_AUTO_SCALING_GROUP`
 - `DISCOVER_EXISTING`
 
+<a id="instanceactiontype"></a>
+
 ## InstanceActionType
 
 ```python
@@ -293,6 +329,8 @@ Values:
 
 - `KEEP_ALIVE`
 - `TERMINATE`
+
+<a id="instancestatustype"></a>
 
 ## InstanceStatusType
 
@@ -310,6 +348,8 @@ Values:
 - `Succeeded`
 - `Unknown`
 
+<a id="instancetypetype"></a>
+
 ## InstanceTypeType
 
 ```python
@@ -320,6 +360,8 @@ Values:
 
 - `Blue`
 - `Green`
+
+<a id="lifecycleerrorcodetype"></a>
 
 ## LifecycleErrorCodeType
 
@@ -336,6 +378,8 @@ Values:
 - `Success`
 - `UnknownError`
 
+<a id="lifecycleeventstatustype"></a>
+
 ## LifecycleEventStatusType
 
 ```python
@@ -351,6 +395,8 @@ Values:
 - `Succeeded`
 - `Unknown`
 
+<a id="listapplicationrevisionspaginatorname"></a>
+
 ## ListApplicationRevisionsPaginatorName
 
 ```python
@@ -360,6 +406,8 @@ from mypy_boto3_codedeploy.literals import ListApplicationRevisionsPaginatorName
 Values:
 
 - `list_application_revisions`
+
+<a id="listapplicationspaginatorname"></a>
 
 ## ListApplicationsPaginatorName
 
@@ -371,6 +419,8 @@ Values:
 
 - `list_applications`
 
+<a id="listdeploymentconfigspaginatorname"></a>
+
 ## ListDeploymentConfigsPaginatorName
 
 ```python
@@ -380,6 +430,8 @@ from mypy_boto3_codedeploy.literals import ListDeploymentConfigsPaginatorName
 Values:
 
 - `list_deployment_configs`
+
+<a id="listdeploymentgroupspaginatorname"></a>
 
 ## ListDeploymentGroupsPaginatorName
 
@@ -391,6 +443,8 @@ Values:
 
 - `list_deployment_groups`
 
+<a id="listdeploymentinstancespaginatorname"></a>
+
 ## ListDeploymentInstancesPaginatorName
 
 ```python
@@ -400,6 +454,8 @@ from mypy_boto3_codedeploy.literals import ListDeploymentInstancesPaginatorName
 Values:
 
 - `list_deployment_instances`
+
+<a id="listdeploymenttargetspaginatorname"></a>
 
 ## ListDeploymentTargetsPaginatorName
 
@@ -411,6 +467,8 @@ Values:
 
 - `list_deployment_targets`
 
+<a id="listdeploymentspaginatorname"></a>
+
 ## ListDeploymentsPaginatorName
 
 ```python
@@ -420,6 +478,8 @@ from mypy_boto3_codedeploy.literals import ListDeploymentsPaginatorName
 Values:
 
 - `list_deployments`
+
+<a id="listgithubaccounttokennamespaginatorname"></a>
 
 ## ListGitHubAccountTokenNamesPaginatorName
 
@@ -431,6 +491,8 @@ Values:
 
 - `list_git_hub_account_token_names`
 
+<a id="listonpremisesinstancespaginatorname"></a>
+
 ## ListOnPremisesInstancesPaginatorName
 
 ```python
@@ -440,6 +502,8 @@ from mypy_boto3_codedeploy.literals import ListOnPremisesInstancesPaginatorName
 Values:
 
 - `list_on_premises_instances`
+
+<a id="liststatefilteractiontype"></a>
 
 ## ListStateFilterActionType
 
@@ -453,6 +517,8 @@ Values:
 - `ignore`
 - `include`
 
+<a id="minimumhealthyhoststypetype"></a>
+
 ## MinimumHealthyHostsTypeType
 
 ```python
@@ -463,6 +529,8 @@ Values:
 
 - `FLEET_PERCENT`
 - `HOST_COUNT`
+
+<a id="outdatedinstancesstrategytype"></a>
 
 ## OutdatedInstancesStrategyType
 
@@ -475,6 +543,8 @@ Values:
 - `IGNORE`
 - `UPDATE`
 
+<a id="registrationstatustype"></a>
+
 ## RegistrationStatusType
 
 ```python
@@ -485,6 +555,8 @@ Values:
 
 - `Deregistered`
 - `Registered`
+
+<a id="revisionlocationtypetype"></a>
 
 ## RevisionLocationTypeType
 
@@ -499,6 +571,8 @@ Values:
 - `S3`
 - `String`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -510,6 +584,8 @@ Values:
 - `ascending`
 - `descending`
 
+<a id="stopstatustype"></a>
+
 ## StopStatusType
 
 ```python
@@ -520,6 +596,8 @@ Values:
 
 - `Pending`
 - `Succeeded`
+
+<a id="tagfiltertypetype"></a>
 
 ## TagFilterTypeType
 
@@ -533,6 +611,8 @@ Values:
 - `KEY_ONLY`
 - `VALUE_ONLY`
 
+<a id="targetfilternametype"></a>
+
 ## TargetFilterNameType
 
 ```python
@@ -544,6 +624,8 @@ Values:
 - `ServerInstanceLabel`
 - `TargetStatus`
 
+<a id="targetlabeltype"></a>
+
 ## TargetLabelType
 
 ```python
@@ -554,6 +636,8 @@ Values:
 
 - `Blue`
 - `Green`
+
+<a id="targetstatustype"></a>
 
 ## TargetStatusType
 
@@ -571,6 +655,8 @@ Values:
 - `Succeeded`
 - `Unknown`
 
+<a id="trafficroutingtypetype"></a>
+
 ## TrafficRoutingTypeType
 
 ```python
@@ -582,6 +668,8 @@ Values:
 - `AllAtOnce`
 - `TimeBasedCanary`
 - `TimeBasedLinear`
+
+<a id="triggereventtypetype"></a>
 
 ## TriggerEventTypeType
 
@@ -601,6 +689,8 @@ Values:
 - `InstanceReady`
 - `InstanceStart`
 - `InstanceSuccess`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -910,6 +1000,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -927,6 +1019,8 @@ Values:
 - `list_deployments`
 - `list_git_hub_account_token_names`
 - `list_on_premises_instances`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

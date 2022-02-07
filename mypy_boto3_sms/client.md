@@ -1,3 +1,5 @@
+<a id="smsclient-for-boto3-sms-module"></a>
+
 # SMSClient for boto3 SMS module
 
 > [Index](..) > [SMS](.) > SMSClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
 type annotations stubs module
-[mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
+[mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
 
 - [SMSClient for boto3 SMS module](#smsclient-for-boto3-sms-module)
   - [SMSClient](#smsclient)
@@ -51,6 +53,8 @@ type annotations stubs module
     - [update_replication_job](#update_replication_job)
     - [get_paginator](#get_paginator)
 
+<a id="smsclient"></a>
+
 ## SMSClient
 
 Type annotations for `boto3.client("sms")`
@@ -58,14 +62,17 @@ Type annotations for `boto3.client("sms")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sms.client import SMSClient
 
 def get_sms_client() -> SMSClient:
-    return boto3.client("sms")
+    return Session().client("sms")
 ```
 
 Boto3 documentation:
 [SMS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -95,7 +102,11 @@ Exceptions:
 - `Exceptions.TemporarilyUnavailableException`
 - `Exceptions.UnauthorizedOperationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -107,6 +118,8 @@ Boto3 documentation:
 [SMS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -122,6 +135,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_app"></a>
 
 ### create_app
 
@@ -146,6 +161,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
+
+<a id="create_replication_job"></a>
 
 ### create_replication_job
 
@@ -175,6 +192,8 @@ Keyword-only arguments:
 Returns
 [CreateReplicationJobResponseTypeDef](./type_defs.md#createreplicationjobresponsetypedef).
 
+<a id="delete_app"></a>
+
 ### delete_app
 
 Deletes the specified application.
@@ -195,6 +214,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_app_launch_configuration"></a>
+
 ### delete_app_launch_configuration
 
 Deletes the launch configuration for the specified application.
@@ -213,6 +234,8 @@ Keyword-only arguments:
 - `appId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_app_replication_configuration"></a>
 
 ### delete_app_replication_configuration
 
@@ -233,6 +256,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_app_validation_configuration"></a>
+
 ### delete_app_validation_configuration
 
 Deletes the validation configuration for the specified application.
@@ -252,6 +277,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_replication_job"></a>
+
 ### delete_replication_job
 
 Deletes the specified replication job.
@@ -270,6 +297,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_server_catalog"></a>
+
 ### delete_server_catalog
 
 Deletes all servers from your server catalog.
@@ -280,6 +309,8 @@ Boto3 documentation:
 [SMS.Client.delete_server_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_server_catalog)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_connector"></a>
 
 ### disassociate_connector
 
@@ -298,6 +329,8 @@ Keyword-only arguments:
 - `connectorId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_change_set"></a>
 
 ### generate_change_set
 
@@ -320,6 +353,8 @@ Keyword-only arguments:
 Returns
 [GenerateChangeSetResponseTypeDef](./type_defs.md#generatechangesetresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -337,6 +372,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="generate_template"></a>
 
 ### generate_template
 
@@ -359,6 +396,8 @@ Keyword-only arguments:
 Returns
 [GenerateTemplateResponseTypeDef](./type_defs.md#generatetemplateresponsetypedef).
 
+<a id="get_app"></a>
+
 ### get_app
 
 Retrieve information about the specified application.
@@ -376,6 +415,8 @@ Keyword-only arguments:
 - `appId`: `str`
 
 Returns [GetAppResponseTypeDef](./type_defs.md#getappresponsetypedef).
+
+<a id="get_app_launch_configuration"></a>
 
 ### get_app_launch_configuration
 
@@ -396,6 +437,8 @@ Keyword-only arguments:
 
 Returns
 [GetAppLaunchConfigurationResponseTypeDef](./type_defs.md#getapplaunchconfigurationresponsetypedef).
+
+<a id="get_app_replication_configuration"></a>
 
 ### get_app_replication_configuration
 
@@ -418,6 +461,8 @@ Keyword-only arguments:
 Returns
 [GetAppReplicationConfigurationResponseTypeDef](./type_defs.md#getappreplicationconfigurationresponsetypedef).
 
+<a id="get_app_validation_configuration"></a>
+
 ### get_app_validation_configuration
 
 Retrieves information about a configuration for validating an application.
@@ -438,6 +483,8 @@ Keyword-only arguments:
 Returns
 [GetAppValidationConfigurationResponseTypeDef](./type_defs.md#getappvalidationconfigurationresponsetypedef).
 
+<a id="get_app_validation_output"></a>
+
 ### get_app_validation_output
 
 Retrieves output from validating an application.
@@ -456,6 +503,8 @@ Keyword-only arguments:
 
 Returns
 [GetAppValidationOutputResponseTypeDef](./type_defs.md#getappvalidationoutputresponsetypedef).
+
+<a id="get_connectors"></a>
 
 ### get_connectors
 
@@ -476,6 +525,8 @@ Keyword-only arguments:
 
 Returns
 [GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef).
+
+<a id="get_replication_jobs"></a>
 
 ### get_replication_jobs
 
@@ -498,6 +549,8 @@ Keyword-only arguments:
 Returns
 [GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef).
 
+<a id="get_replication_runs"></a>
+
 ### get_replication_runs
 
 Describes the replication runs for the specified replication job.
@@ -518,6 +571,8 @@ Keyword-only arguments:
 
 Returns
 [GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef).
+
+<a id="get_servers"></a>
 
 ### get_servers
 
@@ -540,6 +595,8 @@ Keyword-only arguments:
 
 Returns [GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef).
 
+<a id="import_app_catalog"></a>
+
 ### import_app_catalog
 
 Allows application import from Migration Hub.
@@ -558,6 +615,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="import_server_catalog"></a>
+
 ### import_server_catalog
 
 Gathers a complete list of on-premises servers.
@@ -568,6 +627,8 @@ Boto3 documentation:
 [SMS.Client.import_server_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.import_server_catalog)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="launch_app"></a>
 
 ### launch_app
 
@@ -586,6 +647,8 @@ Keyword-only arguments:
 - `appId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="list_apps"></a>
 
 ### list_apps
 
@@ -607,6 +670,8 @@ Keyword-only arguments:
 
 Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
 
+<a id="notify_app_validation_output"></a>
+
 ### notify_app_validation_output
 
 Provides information to Server Migration Service about whether application
@@ -627,6 +692,8 @@ Keyword-only arguments:
   [NotificationContextTypeDef](./type_defs.md#notificationcontexttypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_app_launch_configuration"></a>
 
 ### put_app_launch_configuration
 
@@ -650,6 +717,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_app_replication_configuration"></a>
+
 ### put_app_replication_configuration
 
 Creates or updates the replication configuration for the specified application.
@@ -670,6 +739,8 @@ Keyword-only arguments:
   `Sequence`\[[ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_app_validation_configuration"></a>
 
 ### put_app_validation_configuration
 
@@ -694,6 +765,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="start_app_replication"></a>
+
 ### start_app_replication
 
 Starts replicating the specified application by creating replication jobs for
@@ -712,6 +785,8 @@ Keyword-only arguments:
 - `appId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_on_demand_app_replication"></a>
 
 ### start_on_demand_app_replication
 
@@ -732,6 +807,8 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_on_demand_replication_run"></a>
 
 ### start_on_demand_replication_run
 
@@ -754,6 +831,8 @@ Keyword-only arguments:
 Returns
 [StartOnDemandReplicationRunResponseTypeDef](./type_defs.md#startondemandreplicationrunresponsetypedef).
 
+<a id="stop_app_replication"></a>
+
 ### stop_app_replication
 
 Stops replicating the specified application by deleting the replication job for
@@ -773,6 +852,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="terminate_app"></a>
+
 ### terminate_app
 
 Terminates the stack for the specified application.
@@ -790,6 +871,8 @@ Keyword-only arguments:
 - `appId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_app"></a>
 
 ### update_app
 
@@ -814,6 +897,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef).
+
+<a id="update_replication_job"></a>
 
 ### update_replication_job
 
@@ -840,6 +925,8 @@ Keyword-only arguments:
 - `kmsKeyId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

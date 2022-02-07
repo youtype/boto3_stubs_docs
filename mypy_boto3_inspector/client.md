@@ -1,3 +1,5 @@
+<a id="inspectorclient-for-boto3-inspector-module"></a>
+
 # InspectorClient for boto3 Inspector module
 
 > [Index](..) > [Inspector](.) > InspectorClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
 type annotations stubs module
-[mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
+[mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 - [InspectorClient for boto3 Inspector module](#inspectorclient-for-boto3-inspector-module)
   - [InspectorClient](#inspectorclient)
@@ -53,6 +55,8 @@ type annotations stubs module
     - [update_assessment_target](#update_assessment_target)
     - [get_paginator](#get_paginator)
 
+<a id="inspectorclient"></a>
+
 ## InspectorClient
 
 Type annotations for `boto3.client("inspector")`
@@ -60,14 +64,17 @@ Type annotations for `boto3.client("inspector")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_inspector.client import InspectorClient
 
 def get_inspector_client() -> InspectorClient:
-    return boto3.client("inspector")
+    return Session().client("inspector")
 ```
 
 Boto3 documentation:
 [Inspector.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -96,7 +103,11 @@ Exceptions:
 - `Exceptions.ServiceTemporarilyUnavailableException`
 - `Exceptions.UnsupportedFeatureException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -108,6 +119,8 @@ Boto3 documentation:
 [Inspector.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_attributes_to_findings"></a>
 
 ### add_attributes_to_findings
 
@@ -133,6 +146,8 @@ Keyword-only arguments:
 Returns
 [AddAttributesToFindingsResponseTypeDef](./type_defs.md#addattributestofindingsresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -147,6 +162,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_assessment_target"></a>
 
 ### create_assessment_target
 
@@ -169,6 +186,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAssessmentTargetResponseTypeDef](./type_defs.md#createassessmenttargetresponsetypedef).
+
+<a id="create_assessment_template"></a>
 
 ### create_assessment_template
 
@@ -196,6 +215,8 @@ Keyword-only arguments:
 Returns
 [CreateAssessmentTemplateResponseTypeDef](./type_defs.md#createassessmenttemplateresponsetypedef).
 
+<a id="create_exclusions_preview"></a>
+
 ### create_exclusions_preview
 
 Starts the generation of an exclusions preview for the specified assessment
@@ -216,6 +237,8 @@ Keyword-only arguments:
 
 Returns
 [CreateExclusionsPreviewResponseTypeDef](./type_defs.md#createexclusionspreviewresponsetypedef).
+
+<a id="create_resource_group"></a>
 
 ### create_resource_group
 
@@ -240,6 +263,8 @@ Keyword-only arguments:
 Returns
 [CreateResourceGroupResponseTypeDef](./type_defs.md#createresourcegroupresponsetypedef).
 
+<a id="delete_assessment_run"></a>
+
 ### delete_assessment_run
 
 Deletes the assessment run that is specified by the ARN of the assessment run.
@@ -255,6 +280,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `assessmentRunArn`: `str` *(required)*
+
+<a id="delete_assessment_target"></a>
 
 ### delete_assessment_target
 
@@ -274,6 +301,8 @@ Keyword-only arguments:
 
 - `assessmentTargetArn`: `str` *(required)*
 
+<a id="delete_assessment_template"></a>
+
 ### delete_assessment_template
 
 Deletes the assessment template that is specified by the ARN of the assessment
@@ -291,6 +320,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `assessmentTemplateArn`: `str` *(required)*
+
+<a id="describe_assessment_runs"></a>
 
 ### describe_assessment_runs
 
@@ -313,6 +344,8 @@ Keyword-only arguments:
 Returns
 [DescribeAssessmentRunsResponseTypeDef](./type_defs.md#describeassessmentrunsresponsetypedef).
 
+<a id="describe_assessment_targets"></a>
+
 ### describe_assessment_targets
 
 Describes the assessment targets that are specified by the ARNs of the
@@ -333,6 +366,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAssessmentTargetsResponseTypeDef](./type_defs.md#describeassessmenttargetsresponsetypedef).
+
+<a id="describe_assessment_templates"></a>
 
 ### describe_assessment_templates
 
@@ -355,6 +390,8 @@ Keyword-only arguments:
 Returns
 [DescribeAssessmentTemplatesResponseTypeDef](./type_defs.md#describeassessmenttemplatesresponsetypedef).
 
+<a id="describe_cross_account_access_role"></a>
+
 ### describe_cross_account_access_role
 
 Describes the IAM role that enables Amazon Inspector to access your AWS
@@ -368,6 +405,8 @@ Boto3 documentation:
 
 Returns
 [DescribeCrossAccountAccessRoleResponseTypeDef](./type_defs.md#describecrossaccountaccessroleresponsetypedef).
+
+<a id="describe_exclusions"></a>
 
 ### describe_exclusions
 
@@ -389,6 +428,8 @@ Keyword-only arguments:
 Returns
 [DescribeExclusionsResponseTypeDef](./type_defs.md#describeexclusionsresponsetypedef).
 
+<a id="describe_findings"></a>
+
 ### describe_findings
 
 Describes the findings that are specified by the ARNs of the findings.
@@ -408,6 +449,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFindingsResponseTypeDef](./type_defs.md#describefindingsresponsetypedef).
+
+<a id="describe_resource_groups"></a>
 
 ### describe_resource_groups
 
@@ -429,6 +472,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeResourceGroupsResponseTypeDef](./type_defs.md#describeresourcegroupsresponsetypedef).
+
+<a id="describe_rules_packages"></a>
 
 ### describe_rules_packages
 
@@ -452,6 +497,8 @@ Keyword-only arguments:
 Returns
 [DescribeRulesPackagesResponseTypeDef](./type_defs.md#describerulespackagesresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -469,6 +516,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_assessment_report"></a>
 
 ### get_assessment_report
 
@@ -492,6 +541,8 @@ Keyword-only arguments:
 
 Returns
 [GetAssessmentReportResponseTypeDef](./type_defs.md#getassessmentreportresponsetypedef).
+
+<a id="get_exclusions_preview"></a>
 
 ### get_exclusions_preview
 
@@ -517,6 +568,8 @@ Keyword-only arguments:
 Returns
 [GetExclusionsPreviewResponseTypeDef](./type_defs.md#getexclusionspreviewresponsetypedef).
 
+<a id="get_telemetry_metadata"></a>
+
 ### get_telemetry_metadata
 
 Information about the data that is collected for the specified assessment run.
@@ -535,6 +588,8 @@ Keyword-only arguments:
 
 Returns
 [GetTelemetryMetadataResponseTypeDef](./type_defs.md#gettelemetrymetadataresponsetypedef).
+
+<a id="list_assessment_run_agents"></a>
 
 ### list_assessment_run_agents
 
@@ -560,6 +615,8 @@ Keyword-only arguments:
 Returns
 [ListAssessmentRunAgentsResponseTypeDef](./type_defs.md#listassessmentrunagentsresponsetypedef).
 
+<a id="list_assessment_runs"></a>
+
 ### list_assessment_runs
 
 Lists the assessment runs that correspond to the assessment templates that are
@@ -584,6 +641,8 @@ Keyword-only arguments:
 Returns
 [ListAssessmentRunsResponseTypeDef](./type_defs.md#listassessmentrunsresponsetypedef).
 
+<a id="list_assessment_targets"></a>
+
 ### list_assessment_targets
 
 Lists the ARNs of the assessment targets within this AWS account.
@@ -606,6 +665,8 @@ Keyword-only arguments:
 
 Returns
 [ListAssessmentTargetsResponseTypeDef](./type_defs.md#listassessmenttargetsresponsetypedef).
+
+<a id="list_assessment_templates"></a>
 
 ### list_assessment_templates
 
@@ -632,6 +693,8 @@ Keyword-only arguments:
 Returns
 [ListAssessmentTemplatesResponseTypeDef](./type_defs.md#listassessmenttemplatesresponsetypedef).
 
+<a id="list_event_subscriptions"></a>
+
 ### list_event_subscriptions
 
 Lists all the event subscriptions for the assessment template that is specified
@@ -655,6 +718,8 @@ Keyword-only arguments:
 Returns
 [ListEventSubscriptionsResponseTypeDef](./type_defs.md#listeventsubscriptionsresponsetypedef).
 
+<a id="list_exclusions"></a>
+
 ### list_exclusions
 
 List exclusions that are generated by the assessment run.
@@ -675,6 +740,8 @@ Keyword-only arguments:
 
 Returns
 [ListExclusionsResponseTypeDef](./type_defs.md#listexclusionsresponsetypedef).
+
+<a id="list_findings"></a>
 
 ### list_findings
 
@@ -699,6 +766,8 @@ Keyword-only arguments:
 Returns
 [ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
+<a id="list_rules_packages"></a>
+
 ### list_rules_packages
 
 Lists all available Amazon Inspector rules packages.
@@ -719,6 +788,8 @@ Keyword-only arguments:
 Returns
 [ListRulesPackagesResponseTypeDef](./type_defs.md#listrulespackagesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all tags associated with an assessment template.
@@ -737,6 +808,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="preview_agents"></a>
 
 ### preview_agents
 
@@ -760,6 +833,8 @@ Keyword-only arguments:
 Returns
 [PreviewAgentsResponseTypeDef](./type_defs.md#previewagentsresponsetypedef).
 
+<a id="register_cross_account_access_role"></a>
+
 ### register_cross_account_access_role
 
 Registers the IAM role that grants Amazon Inspector access to AWS Services
@@ -777,6 +852,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `roleArn`: `str` *(required)*
+
+<a id="remove_attributes_from_findings"></a>
 
 ### remove_attributes_from_findings
 
@@ -801,6 +878,8 @@ Keyword-only arguments:
 Returns
 [RemoveAttributesFromFindingsResponseTypeDef](./type_defs.md#removeattributesfromfindingsresponsetypedef).
 
+<a id="set_tags_for_resource"></a>
+
 ### set_tags_for_resource
 
 Sets tags (key and value pairs) to the assessment template that is specified by
@@ -818,6 +897,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="start_assessment_run"></a>
 
 ### start_assessment_run
 
@@ -839,6 +920,8 @@ Keyword-only arguments:
 Returns
 [StartAssessmentRunResponseTypeDef](./type_defs.md#startassessmentrunresponsetypedef).
 
+<a id="stop_assessment_run"></a>
+
 ### stop_assessment_run
 
 Stops the assessment run that is specified by the ARN of the assessment run.
@@ -855,6 +938,8 @@ Keyword-only arguments:
 
 - `assessmentRunArn`: `str` *(required)*
 - `stopAction`: [StopActionType](./literals.md#stopactiontype)
+
+<a id="subscribe_to_event"></a>
 
 ### subscribe_to_event
 
@@ -875,6 +960,8 @@ Keyword-only arguments:
 - `event`: [InspectorEventType](./literals.md#inspectoreventtype) *(required)*
 - `topicArn`: `str` *(required)*
 
+<a id="unsubscribe_from_event"></a>
+
 ### unsubscribe_from_event
 
 Disables the process of sending Amazon Simple Notification Service (SNS)
@@ -893,6 +980,8 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 - `event`: [InspectorEventType](./literals.md#inspectoreventtype) *(required)*
 - `topicArn`: `str` *(required)*
+
+<a id="update_assessment_target"></a>
 
 ### update_assessment_target
 
@@ -913,6 +1002,8 @@ Keyword-only arguments:
 - `assessmentTargetArn`: `str` *(required)*
 - `assessmentTargetName`: `str` *(required)*
 - `resourceGroupArn`: `str`
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

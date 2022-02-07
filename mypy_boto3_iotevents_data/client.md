@@ -1,3 +1,5 @@
+<a id="ioteventsdataclient-for-boto3-ioteventsdata-module"></a>
+
 # IoTEventsDataClient for boto3 IoTEventsData module
 
 > [Index](..) > [IoTEventsData](.) > IoTEventsDataClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
 type annotations stubs module
-[mypy_boto3_iotevents_data](https://pypi.org/project/mypy-boto3-iotevents-data/).
+[mypy-boto3-iotevents-data](https://pypi.org/project/mypy-boto3-iotevents-data/).
 
 - [IoTEventsDataClient for boto3 IoTEventsData module](#ioteventsdataclient-for-boto3-ioteventsdata-module)
   - [IoTEventsDataClient](#ioteventsdataclient)
@@ -26,6 +28,8 @@ type annotations stubs module
     - [list_alarms](#list_alarms)
     - [list_detectors](#list_detectors)
 
+<a id="ioteventsdataclient"></a>
+
 ## IoTEventsDataClient
 
 Type annotations for `boto3.client("iotevents-data")`
@@ -33,14 +37,17 @@ Type annotations for `boto3.client("iotevents-data")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iotevents_data.client import IoTEventsDataClient
 
 def get_iotevents-data_client() -> IoTEventsDataClient:
-    return boto3.client("iotevents-data")
+    return Session().client("iotevents-data")
 ```
 
 Boto3 documentation:
 [IoTEventsData.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -63,7 +70,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -75,6 +86,8 @@ Boto3 documentation:
 [IoTEventsData.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_acknowledge_alarm"></a>
 
 ### batch_acknowledge_alarm
 
@@ -98,6 +111,8 @@ Keyword-only arguments:
 Returns
 [BatchAcknowledgeAlarmResponseTypeDef](./type_defs.md#batchacknowledgealarmresponsetypedef).
 
+<a id="batch_disable_alarm"></a>
+
 ### batch_disable_alarm
 
 Disables one or more alarms.
@@ -119,6 +134,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDisableAlarmResponseTypeDef](./type_defs.md#batchdisablealarmresponsetypedef).
+
+<a id="batch_enable_alarm"></a>
 
 ### batch_enable_alarm
 
@@ -142,6 +159,8 @@ Keyword-only arguments:
 Returns
 [BatchEnableAlarmResponseTypeDef](./type_defs.md#batchenablealarmresponsetypedef).
 
+<a id="batch_put_message"></a>
+
 ### batch_put_message
 
 Sends a set of messages to the IoT Events system.
@@ -161,6 +180,8 @@ Keyword-only arguments:
 
 Returns
 [BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef).
+
+<a id="batch_reset_alarm"></a>
 
 ### batch_reset_alarm
 
@@ -183,6 +204,8 @@ Keyword-only arguments:
 Returns
 [BatchResetAlarmResponseTypeDef](./type_defs.md#batchresetalarmresponsetypedef).
 
+<a id="batch_snooze_alarm"></a>
+
 ### batch_snooze_alarm
 
 Changes one or more alarms to the snooze mode.
@@ -204,6 +227,8 @@ Keyword-only arguments:
 
 Returns
 [BatchSnoozeAlarmResponseTypeDef](./type_defs.md#batchsnoozealarmresponsetypedef).
+
+<a id="batch_update_detector"></a>
 
 ### batch_update_detector
 
@@ -228,6 +253,8 @@ Keyword-only arguments:
 Returns
 [BatchUpdateDetectorResponseTypeDef](./type_defs.md#batchupdatedetectorresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -242,6 +269,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="describe_alarm"></a>
 
 ### describe_alarm
 
@@ -263,6 +292,8 @@ Keyword-only arguments:
 Returns
 [DescribeAlarmResponseTypeDef](./type_defs.md#describealarmresponsetypedef).
 
+<a id="describe_detector"></a>
+
 ### describe_detector
 
 Returns information about the specified detector (instance).
@@ -283,6 +314,8 @@ Keyword-only arguments:
 Returns
 [DescribeDetectorResponseTypeDef](./type_defs.md#describedetectorresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -301,6 +334,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_alarms"></a>
 
 ### list_alarms
 
@@ -321,6 +356,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns [ListAlarmsResponseTypeDef](./type_defs.md#listalarmsresponsetypedef).
+
+<a id="list_detectors"></a>
 
 ### list_detectors
 

@@ -1,3 +1,5 @@
+<a id="iottwinmakerclient-for-boto3-iottwinmaker-module"></a>
+
 # IoTTwinMakerClient for boto3 IoTTwinMaker module
 
 > [Index](..) > [IoTTwinMaker](.) > IoTTwinMakerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
 type annotations stubs module
-[mypy_boto3_iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
+[mypy-boto3-iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
 
 - [IoTTwinMakerClient for boto3 IoTTwinMaker module](#iottwinmakerclient-for-boto3-iottwinmaker-module)
   - [IoTTwinMakerClient](#iottwinmakerclient)
@@ -41,6 +43,8 @@ type annotations stubs module
     - [update_scene](#update_scene)
     - [update_workspace](#update_workspace)
 
+<a id="iottwinmakerclient"></a>
+
 ## IoTTwinMakerClient
 
 Type annotations for `boto3.client("iottwinmaker")`
@@ -48,14 +52,17 @@ Type annotations for `boto3.client("iottwinmaker")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iottwinmaker.client import IoTTwinMakerClient
 
 def get_iottwinmaker_client() -> IoTTwinMakerClient:
-    return boto3.client("iottwinmaker")
+    return Session().client("iottwinmaker")
 ```
 
 Boto3 documentation:
 [IoTTwinMaker.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -83,7 +90,11 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -95,6 +106,8 @@ Boto3 documentation:
 [IoTTwinMaker.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_put_property_values"></a>
 
 ### batch_put_property_values
 
@@ -119,6 +132,8 @@ Keyword-only arguments:
 Returns
 [BatchPutPropertyValuesResponseTypeDef](./type_defs.md#batchputpropertyvaluesresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -133,6 +148,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_component_type"></a>
 
 ### create_component_type
 
@@ -163,6 +180,8 @@ Keyword-only arguments:
 Returns
 [CreateComponentTypeResponseTypeDef](./type_defs.md#createcomponenttyperesponsetypedef).
 
+<a id="create_entity"></a>
+
 ### create_entity
 
 Creates an entity.
@@ -189,6 +208,8 @@ Keyword-only arguments:
 Returns
 [CreateEntityResponseTypeDef](./type_defs.md#createentityresponsetypedef).
 
+<a id="create_scene"></a>
+
 ### create_scene
 
 Creates a scene.
@@ -213,6 +234,8 @@ Keyword-only arguments:
 Returns
 [CreateSceneResponseTypeDef](./type_defs.md#createsceneresponsetypedef).
 
+<a id="create_workspace"></a>
+
 ### create_workspace
 
 Creates a workplace.
@@ -236,6 +259,8 @@ Keyword-only arguments:
 Returns
 [CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
 
+<a id="delete_component_type"></a>
+
 ### delete_component_type
 
 Deletes a component type.
@@ -256,6 +281,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteComponentTypeResponseTypeDef](./type_defs.md#deletecomponenttyperesponsetypedef).
+
+<a id="delete_entity"></a>
 
 ### delete_entity
 
@@ -278,6 +305,8 @@ Keyword-only arguments:
 Returns
 [DeleteEntityResponseTypeDef](./type_defs.md#deleteentityresponsetypedef).
 
+<a id="delete_scene"></a>
+
 ### delete_scene
 
 Deletes a scene.
@@ -297,6 +326,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_workspace"></a>
+
 ### delete_workspace
 
 Deletes a workspace.
@@ -314,6 +345,8 @@ Keyword-only arguments:
 - `workspaceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -333,6 +366,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_component_type"></a>
 
 ### get_component_type
 
@@ -354,6 +389,8 @@ Keyword-only arguments:
 Returns
 [GetComponentTypeResponseTypeDef](./type_defs.md#getcomponenttyperesponsetypedef).
 
+<a id="get_entity"></a>
+
 ### get_entity
 
 Retrieves information about an entity.
@@ -372,6 +409,8 @@ Keyword-only arguments:
 - `workspaceId`: `str` *(required)*
 
 Returns [GetEntityResponseTypeDef](./type_defs.md#getentityresponsetypedef).
+
+<a id="get_property_value"></a>
 
 ### get_property_value
 
@@ -395,6 +434,8 @@ Keyword-only arguments:
 
 Returns
 [GetPropertyValueResponseTypeDef](./type_defs.md#getpropertyvalueresponsetypedef).
+
+<a id="get_property_value_history"></a>
 
 ### get_property_value_history
 
@@ -430,6 +471,8 @@ Keyword-only arguments:
 Returns
 [GetPropertyValueHistoryResponseTypeDef](./type_defs.md#getpropertyvaluehistoryresponsetypedef).
 
+<a id="get_scene"></a>
+
 ### get_scene
 
 Retrieves information about a scene.
@@ -449,6 +492,8 @@ Keyword-only arguments:
 
 Returns [GetSceneResponseTypeDef](./type_defs.md#getsceneresponsetypedef).
 
+<a id="get_workspace"></a>
+
 ### get_workspace
 
 Retrieves information about a workspace.
@@ -467,6 +512,8 @@ Keyword-only arguments:
 
 Returns
 [GetWorkspaceResponseTypeDef](./type_defs.md#getworkspaceresponsetypedef).
+
+<a id="list_component_types"></a>
 
 ### list_component_types
 
@@ -492,6 +539,8 @@ Keyword-only arguments:
 Returns
 [ListComponentTypesResponseTypeDef](./type_defs.md#listcomponenttypesresponsetypedef).
 
+<a id="list_entities"></a>
+
 ### list_entities
 
 Lists all entities in a workspace.
@@ -515,6 +564,8 @@ Keyword-only arguments:
 Returns
 [ListEntitiesResponseTypeDef](./type_defs.md#listentitiesresponsetypedef).
 
+<a id="list_scenes"></a>
+
 ### list_scenes
 
 Lists all scenes in a workspace.
@@ -534,6 +585,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListScenesResponseTypeDef](./type_defs.md#listscenesresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -557,6 +610,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="list_workspaces"></a>
+
 ### list_workspaces
 
 Retrieves information about workspaces in the current account.
@@ -577,6 +632,8 @@ Keyword-only arguments:
 Returns
 [ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to a resource.
@@ -596,6 +653,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a resource.
@@ -614,6 +673,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_component_type"></a>
 
 ### update_component_type
 
@@ -643,6 +704,8 @@ Keyword-only arguments:
 Returns
 [UpdateComponentTypeResponseTypeDef](./type_defs.md#updatecomponenttyperesponsetypedef).
 
+<a id="update_entity"></a>
+
 ### update_entity
 
 Updates an entity.
@@ -669,6 +732,8 @@ Keyword-only arguments:
 Returns
 [UpdateEntityResponseTypeDef](./type_defs.md#updateentityresponsetypedef).
 
+<a id="update_scene"></a>
+
 ### update_scene
 
 Updates a scene.
@@ -691,6 +756,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSceneResponseTypeDef](./type_defs.md#updatesceneresponsetypedef).
+
+<a id="update_workspace"></a>
 
 ### update_workspace
 

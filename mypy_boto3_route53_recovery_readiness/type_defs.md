@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-route53recoveryreadiness-module"></a>
+
 # Typed dictionaries for boto3 Route53RecoveryReadiness module
 
 > [Index](..) > [Route53RecoveryReadiness](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53RecoveryReadiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness)
 type annotations stubs module
-[mypy_boto3_route53_recovery_readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
+[mypy-boto3-route53-recovery-readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
 
 - [Typed dictionaries for boto3 Route53RecoveryReadiness module](#typed-dictionaries-for-boto3-route53recoveryreadiness-module)
   - [CellOutputTypeDef](#celloutputtypedef)
@@ -83,6 +85,8 @@ type annotations stubs module
   - [UpdateResourceSetRequestRequestTypeDef](#updateresourcesetrequestrequesttypedef)
   - [UpdateResourceSetResponseTypeDef](#updateresourcesetresponsetypedef)
 
+<a id="celloutputtypedef"></a>
+
 ## CellOutputTypeDef
 
 ```python
@@ -100,6 +104,8 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="createcellrequestrequesttypedef"></a>
+
 ## CreateCellRequestRequestTypeDef
 
 ```python
@@ -114,6 +120,8 @@ Optional fields:
 
 - `Cells`: `Sequence`\[`str`\]
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createcellresponsetypedef"></a>
 
 ## CreateCellResponseTypeDef
 
@@ -131,6 +139,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createcrossaccountauthorizationrequestrequesttypedef"></a>
+
 ## CreateCrossAccountAuthorizationRequestRequestTypeDef
 
 ```python
@@ -140,6 +150,8 @@ from mypy_boto3_route53_recovery_readiness.type_defs import CreateCrossAccountAu
 Required fields:
 
 - `CrossAccountAuthorization`: `str`
+
+<a id="createcrossaccountauthorizationresponsetypedef"></a>
 
 ## CreateCrossAccountAuthorizationResponseTypeDef
 
@@ -152,6 +164,8 @@ Required fields:
 - `CrossAccountAuthorization`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createreadinesscheckrequestrequesttypedef"></a>
 
 ## CreateReadinessCheckRequestRequestTypeDef
 
@@ -168,6 +182,8 @@ Optional fields:
 
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createreadinesscheckresponsetypedef"></a>
+
 ## CreateReadinessCheckResponseTypeDef
 
 ```python
@@ -182,6 +198,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrecoverygrouprequestrequesttypedef"></a>
 
 ## CreateRecoveryGroupRequestRequestTypeDef
 
@@ -198,6 +216,8 @@ Optional fields:
 - `Cells`: `Sequence`\[`str`\]
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createrecoverygroupresponsetypedef"></a>
+
 ## CreateRecoveryGroupResponseTypeDef
 
 ```python
@@ -212,6 +232,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createresourcesetrequestrequesttypedef"></a>
 
 ## CreateResourceSetRequestRequestTypeDef
 
@@ -229,6 +251,8 @@ Optional fields:
 
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createresourcesetresponsetypedef"></a>
+
 ## CreateResourceSetResponseTypeDef
 
 ```python
@@ -245,6 +269,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dnstargetresourcetypedef"></a>
+
 ## DNSTargetResourceTypeDef
 
 ```python
@@ -260,6 +286,8 @@ Optional fields:
 - `TargetResource`:
   [TargetResourceTypeDef](./type_defs.md#targetresourcetypedef)
 
+<a id="deletecellrequestrequesttypedef"></a>
+
 ## DeleteCellRequestRequestTypeDef
 
 ```python
@@ -269,6 +297,8 @@ from mypy_boto3_route53_recovery_readiness.type_defs import DeleteCellRequestReq
 Required fields:
 
 - `CellName`: `str`
+
+<a id="deletecrossaccountauthorizationrequestrequesttypedef"></a>
 
 ## DeleteCrossAccountAuthorizationRequestRequestTypeDef
 
@@ -280,6 +310,8 @@ Required fields:
 
 - `CrossAccountAuthorization`: `str`
 
+<a id="deletereadinesscheckrequestrequesttypedef"></a>
+
 ## DeleteReadinessCheckRequestRequestTypeDef
 
 ```python
@@ -289,6 +321,8 @@ from mypy_boto3_route53_recovery_readiness.type_defs import DeleteReadinessCheck
 Required fields:
 
 - `ReadinessCheckName`: `str`
+
+<a id="deleterecoverygrouprequestrequesttypedef"></a>
 
 ## DeleteRecoveryGroupRequestRequestTypeDef
 
@@ -300,6 +334,8 @@ Required fields:
 
 - `RecoveryGroupName`: `str`
 
+<a id="deleteresourcesetrequestrequesttypedef"></a>
+
 ## DeleteResourceSetRequestRequestTypeDef
 
 ```python
@@ -309,6 +345,8 @@ from mypy_boto3_route53_recovery_readiness.type_defs import DeleteResourceSetReq
 Required fields:
 
 - `ResourceSetName`: `str`
+
+<a id="getarchitecturerecommendationsrequestrequesttypedef"></a>
 
 ## GetArchitectureRecommendationsRequestRequestTypeDef
 
@@ -325,6 +363,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getarchitecturerecommendationsresponsetypedef"></a>
+
 ## GetArchitectureRecommendationsResponseTypeDef
 
 ```python
@@ -339,6 +379,8 @@ Required fields:
   `List`\[[RecommendationTypeDef](./type_defs.md#recommendationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcellreadinesssummaryrequestrequesttypedef"></a>
 
 ## GetCellReadinessSummaryRequestRequestTypeDef
 
@@ -355,6 +397,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getcellreadinesssummaryresponsetypedef"></a>
+
 ## GetCellReadinessSummaryResponseTypeDef
 
 ```python
@@ -370,6 +414,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcellrequestrequesttypedef"></a>
+
 ## GetCellRequestRequestTypeDef
 
 ```python
@@ -379,6 +425,8 @@ from mypy_boto3_route53_recovery_readiness.type_defs import GetCellRequestReques
 Required fields:
 
 - `CellName`: `str`
+
+<a id="getcellresponsetypedef"></a>
 
 ## GetCellResponseTypeDef
 
@@ -396,6 +444,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getreadinesscheckrequestrequesttypedef"></a>
+
 ## GetReadinessCheckRequestRequestTypeDef
 
 ```python
@@ -405,6 +455,8 @@ from mypy_boto3_route53_recovery_readiness.type_defs import GetReadinessCheckReq
 Required fields:
 
 - `ReadinessCheckName`: `str`
+
+<a id="getreadinesscheckresourcestatusrequestrequesttypedef"></a>
 
 ## GetReadinessCheckResourceStatusRequestRequestTypeDef
 
@@ -422,6 +474,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getreadinesscheckresourcestatusresponsetypedef"></a>
+
 ## GetReadinessCheckResourceStatusResponseTypeDef
 
 ```python
@@ -435,6 +489,8 @@ Required fields:
 - `Rules`: `List`\[[RuleResultTypeDef](./type_defs.md#ruleresulttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getreadinesscheckresponsetypedef"></a>
 
 ## GetReadinessCheckResponseTypeDef
 
@@ -451,6 +507,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getreadinesscheckstatusrequestrequesttypedef"></a>
+
 ## GetReadinessCheckStatusRequestRequestTypeDef
 
 ```python
@@ -465,6 +523,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="getreadinesscheckstatusresponsetypedef"></a>
 
 ## GetReadinessCheckStatusResponseTypeDef
 
@@ -482,6 +542,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrecoverygroupreadinesssummaryrequestrequesttypedef"></a>
+
 ## GetRecoveryGroupReadinessSummaryRequestRequestTypeDef
 
 ```python
@@ -496,6 +558,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="getrecoverygroupreadinesssummaryresponsetypedef"></a>
 
 ## GetRecoveryGroupReadinessSummaryResponseTypeDef
 
@@ -512,6 +576,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrecoverygrouprequestrequesttypedef"></a>
+
 ## GetRecoveryGroupRequestRequestTypeDef
 
 ```python
@@ -521,6 +587,8 @@ from mypy_boto3_route53_recovery_readiness.type_defs import GetRecoveryGroupRequ
 Required fields:
 
 - `RecoveryGroupName`: `str`
+
+<a id="getrecoverygroupresponsetypedef"></a>
 
 ## GetRecoveryGroupResponseTypeDef
 
@@ -537,6 +605,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourcesetrequestrequesttypedef"></a>
+
 ## GetResourceSetRequestRequestTypeDef
 
 ```python
@@ -546,6 +616,8 @@ from mypy_boto3_route53_recovery_readiness.type_defs import GetResourceSetReques
 Required fields:
 
 - `ResourceSetName`: `str`
+
+<a id="getresourcesetresponsetypedef"></a>
 
 ## GetResourceSetResponseTypeDef
 
@@ -563,6 +635,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcellsrequestrequesttypedef"></a>
+
 ## ListCellsRequestRequestTypeDef
 
 ```python
@@ -573,6 +647,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listcellsresponsetypedef"></a>
 
 ## ListCellsResponseTypeDef
 
@@ -587,6 +663,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcrossaccountauthorizationsrequestrequesttypedef"></a>
+
 ## ListCrossAccountAuthorizationsRequestRequestTypeDef
 
 ```python
@@ -597,6 +675,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listcrossaccountauthorizationsresponsetypedef"></a>
 
 ## ListCrossAccountAuthorizationsResponseTypeDef
 
@@ -611,6 +691,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listreadinesschecksrequestrequesttypedef"></a>
+
 ## ListReadinessChecksRequestRequestTypeDef
 
 ```python
@@ -621,6 +703,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listreadinesschecksresponsetypedef"></a>
 
 ## ListReadinessChecksResponseTypeDef
 
@@ -636,6 +720,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrecoverygroupsrequestrequesttypedef"></a>
+
 ## ListRecoveryGroupsRequestRequestTypeDef
 
 ```python
@@ -646,6 +732,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listrecoverygroupsresponsetypedef"></a>
 
 ## ListRecoveryGroupsResponseTypeDef
 
@@ -661,6 +749,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresourcesetsrequestrequesttypedef"></a>
+
 ## ListResourceSetsRequestRequestTypeDef
 
 ```python
@@ -671,6 +761,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listresourcesetsresponsetypedef"></a>
 
 ## ListResourceSetsResponseTypeDef
 
@@ -686,6 +778,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrulesoutputtypedef"></a>
+
 ## ListRulesOutputTypeDef
 
 ```python
@@ -698,6 +792,8 @@ Required fields:
 - `RuleDescription`: `str`
 - `RuleId`: `str`
 
+<a id="listrulesrequestrequesttypedef"></a>
+
 ## ListRulesRequestRequestTypeDef
 
 ```python
@@ -709,6 +805,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `ResourceType`: `str`
+
+<a id="listrulesresponsetypedef"></a>
 
 ## ListRulesResponseTypeDef
 
@@ -724,6 +822,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcesrequestrequesttypedef"></a>
+
 ## ListTagsForResourcesRequestRequestTypeDef
 
 ```python
@@ -733,6 +833,8 @@ from mypy_boto3_route53_recovery_readiness.type_defs import ListTagsForResources
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourcesresponsetypedef"></a>
 
 ## ListTagsForResourcesResponseTypeDef
 
@@ -746,6 +848,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="messagetypedef"></a>
+
 ## MessageTypeDef
 
 ```python
@@ -756,6 +860,8 @@ Optional fields:
 
 - `MessageText`: `str`
 
+<a id="nlbresourcetypedef"></a>
+
 ## NLBResourceTypeDef
 
 ```python
@@ -765,6 +871,8 @@ from mypy_boto3_route53_recovery_readiness.type_defs import NLBResourceTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -778,6 +886,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="r53resourcerecordtypedef"></a>
+
 ## R53ResourceRecordTypeDef
 
 ```python
@@ -788,6 +898,8 @@ Optional fields:
 
 - `DomainName`: `str`
 - `RecordSetId`: `str`
+
+<a id="readinesscheckoutputtypedef"></a>
 
 ## ReadinessCheckOutputTypeDef
 
@@ -805,6 +917,8 @@ Optional fields:
 - `ReadinessCheckName`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="readinesschecksummarytypedef"></a>
+
 ## ReadinessCheckSummaryTypeDef
 
 ```python
@@ -816,6 +930,8 @@ Optional fields:
 - `Readiness`: [ReadinessType](./literals.md#readinesstype)
 - `ReadinessCheckName`: `str`
 
+<a id="recommendationtypedef"></a>
+
 ## RecommendationTypeDef
 
 ```python
@@ -825,6 +941,8 @@ from mypy_boto3_route53_recovery_readiness.type_defs import RecommendationTypeDe
 Required fields:
 
 - `RecommendationText`: `str`
+
+<a id="recoverygroupoutputtypedef"></a>
 
 ## RecoveryGroupOutputTypeDef
 
@@ -842,6 +960,8 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="resourceresulttypedef"></a>
+
 ## ResourceResultTypeDef
 
 ```python
@@ -857,6 +977,8 @@ Optional fields:
 
 - `ComponentId`: `str`
 - `ResourceArn`: `str`
+
+<a id="resourcesetoutputtypedef"></a>
 
 ## ResourceSetOutputTypeDef
 
@@ -875,6 +997,8 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="resourcetypedef"></a>
+
 ## ResourceTypeDef
 
 ```python
@@ -888,6 +1012,8 @@ Optional fields:
   [DNSTargetResourceTypeDef](./type_defs.md#dnstargetresourcetypedef)
 - `ReadinessScopes`: `Sequence`\[`str`\]
 - `ResourceArn`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -903,6 +1029,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="ruleresulttypedef"></a>
+
 ## RuleResultTypeDef
 
 ```python
@@ -916,6 +1044,8 @@ Required fields:
 - `Readiness`: [ReadinessType](./literals.md#readinesstype)
 - `RuleId`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -926,6 +1056,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="targetresourcetypedef"></a>
 
 ## TargetResourceTypeDef
 
@@ -939,6 +1071,8 @@ Optional fields:
 - `R53Resource`:
   [R53ResourceRecordTypeDef](./type_defs.md#r53resourcerecordtypedef)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -950,6 +1084,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
 
+<a id="updatecellrequestrequesttypedef"></a>
+
 ## UpdateCellRequestRequestTypeDef
 
 ```python
@@ -960,6 +1096,8 @@ Required fields:
 
 - `CellName`: `str`
 - `Cells`: `Sequence`\[`str`\]
+
+<a id="updatecellresponsetypedef"></a>
 
 ## UpdateCellResponseTypeDef
 
@@ -977,6 +1115,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatereadinesscheckrequestrequesttypedef"></a>
+
 ## UpdateReadinessCheckRequestRequestTypeDef
 
 ```python
@@ -987,6 +1127,8 @@ Required fields:
 
 - `ReadinessCheckName`: `str`
 - `ResourceSetName`: `str`
+
+<a id="updatereadinesscheckresponsetypedef"></a>
 
 ## UpdateReadinessCheckResponseTypeDef
 
@@ -1003,6 +1145,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updaterecoverygrouprequestrequesttypedef"></a>
+
 ## UpdateRecoveryGroupRequestRequestTypeDef
 
 ```python
@@ -1013,6 +1157,8 @@ Required fields:
 
 - `Cells`: `Sequence`\[`str`\]
 - `RecoveryGroupName`: `str`
+
+<a id="updaterecoverygroupresponsetypedef"></a>
 
 ## UpdateRecoveryGroupResponseTypeDef
 
@@ -1029,6 +1175,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateresourcesetrequestrequesttypedef"></a>
+
 ## UpdateResourceSetRequestRequestTypeDef
 
 ```python
@@ -1040,6 +1188,8 @@ Required fields:
 - `ResourceSetName`: `str`
 - `ResourceSetType`: `str`
 - `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+
+<a id="updateresourcesetresponsetypedef"></a>
 
 ## UpdateResourceSetResponseTypeDef
 

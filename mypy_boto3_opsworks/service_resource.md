@@ -1,3 +1,5 @@
+<a id="opsworksserviceresource-for-boto3-opsworks-module"></a>
+
 # OpsWorksServiceResource for boto3 OpsWorks module
 
 > [Index](..) > [OpsWorks](.) > OpsWorksServiceResource
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
 type annotations stubs module
-[mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
+[mypy-boto3-opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 - [OpsWorksServiceResource for boto3 OpsWorks module](#opsworksserviceresource-for-boto3-opsworks-module)
   - [OpsWorksServiceResource](#opsworksserviceresource)
@@ -29,6 +31,8 @@ type annotations stubs module
     - [StackSummary attributes](#stacksummary-attributes)
     - [StackSummary methods](#stacksummary-methods)
 
+<a id="opsworksserviceresource"></a>
+
 ## OpsWorksServiceResource
 
 Type annotations for `boto3.resource("opsworks")`, included resources and
@@ -46,13 +50,19 @@ def get_opsworks_resource() -> OpsWorksServiceResource:
 Boto3 documentation:
 [OpsWorks.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource)
 
+<a id="attributes"></a>
+
 ## Attributes
 
 - `meta`: [OpsWorksResourceMeta](#opsworksresourcemeta)
 
 - `stacks`: [ServiceResourceStacksCollection](#serviceresourcestackscollection)
 
+<a id="collections"></a>
+
 ## Collections
+
+<a id="serviceresourcestackscollection"></a>
 
 ### ServiceResourceStacksCollection
 
@@ -72,7 +82,11 @@ Provides access to [Stack](#stack) resource.
 Boto3 documentation:
 [OpsWorks.ServiceResource.stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.stacks)
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="opsworksserviceresourcelayer-method"></a>
 
 ### OpsWorksServiceResource.Layer method
 
@@ -92,6 +106,8 @@ Arguments:
 
 Returns [Layer](#layer).
 
+<a id="opsworksserviceresourcestack-method"></a>
+
 ### OpsWorksServiceResource.Stack method
 
 Creates a Stack resource.
@@ -110,6 +126,8 @@ Arguments:
 
 Returns [Stack](#stack).
 
+<a id="opsworksserviceresourcestacksummary-method"></a>
+
 ### OpsWorksServiceResource.StackSummary method
 
 Creates a StackSummary resource.
@@ -127,6 +145,8 @@ Arguments:
 - `stack_id`: `str` *(required)*
 
 Returns [StackSummary](#stacksummary).
+
+<a id="opsworksserviceresourcecreate_stack-method"></a>
 
 ### OpsWorksServiceResource.create_stack method
 
@@ -168,6 +188,8 @@ Keyword-only arguments:
 
 Returns [Stack](#stack).
 
+<a id="opsworksserviceresourceget_available_subresources-method"></a>
+
 ### OpsWorksServiceResource.get_available_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
@@ -179,6 +201,8 @@ Boto3 documentation:
 [OpsWorks.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.get_available_subresources)
 
 Returns `Sequence`\[`str`\].
+
+<a id="layer"></a>
 
 ## Layer
 
@@ -195,6 +219,8 @@ def get_resource() -> Layer:
 
 Boto3 documentation:
 [OpsWorks.Layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Layer)
+
+<a id="layer-attributes"></a>
 
 ### Layer attributes
 
@@ -231,7 +257,11 @@ Boto3 documentation:
 - `id`: `str`
 - `stack`: [Stack](#stack)
 
+<a id="layer-methods"></a>
+
 ### Layer methods
+
+<a id="layerdelete-method"></a>
 
 #### Layer.delete method
 
@@ -241,6 +271,8 @@ Type annotations for `boto3.resource("opsworks").delete` method.
 
 Boto3 documentation:
 [OpsWorks.Layer.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.delete)
+
+<a id="layerget_available_subresources-method"></a>
 
 #### Layer.get_available_subresources method
 
@@ -254,6 +286,8 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
+<a id="layerload-method"></a>
+
 #### Layer.load method
 
 Calls :py:meth:`OpsWorks.Client.describe_layers` to update the attributes of
@@ -264,6 +298,8 @@ Type annotations for `boto3.resource("opsworks").load` method.
 Boto3 documentation:
 [OpsWorks.Layer.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.load)
 
+<a id="layerreload-method"></a>
+
 #### Layer.reload method
 
 Calls :py:meth:`OpsWorks.Client.describe_layers` to update the attributes of
@@ -273,6 +309,8 @@ Type annotations for `boto3.resource("opsworks").reload` method.
 
 Boto3 documentation:
 [OpsWorks.Layer.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.reload)
+
+<a id="stack"></a>
 
 ## Stack
 
@@ -289,6 +327,8 @@ def get_resource() -> Stack:
 
 Boto3 documentation:
 [OpsWorks.Stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Stack)
+
+<a id="stack-attributes"></a>
 
 ### Stack attributes
 
@@ -322,7 +362,11 @@ Boto3 documentation:
 - `id`: `str`
 - `layers`: [StackLayersCollection](#stacklayerscollection)
 
+<a id="stack-collections"></a>
+
 ### Stack collections
+
+<a id="stacklayers"></a>
 
 #### Stack.layers
 
@@ -343,7 +387,11 @@ Provides access to [Layer](#layer) resource.
 Boto3 documentation:
 [OpsWorks.Stack.StackLayersCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.layers)
 
+<a id="stack-methods"></a>
+
 ### Stack methods
+
+<a id="stacksummary-method"></a>
 
 #### Stack.Summary method
 
@@ -355,6 +403,8 @@ Boto3 documentation:
 [OpsWorks.Stack.Summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.Summary)
 
 Returns [StackSummary](#stacksummary).
+
+<a id="stackcreate_layer-method"></a>
 
 #### Stack.create_layer method
 
@@ -395,6 +445,8 @@ Keyword-only arguments:
 
 Returns [Layer](#layer).
 
+<a id="stackdelete-method"></a>
+
 #### Stack.delete method
 
 Deletes a specified stack.
@@ -403,6 +455,8 @@ Type annotations for `boto3.resource("opsworks").delete` method.
 
 Boto3 documentation:
 [OpsWorks.Stack.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.delete)
+
+<a id="stackget_available_subresources-method"></a>
 
 #### Stack.get_available_subresources method
 
@@ -416,6 +470,8 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
+<a id="stackload-method"></a>
+
 #### Stack.load method
 
 Calls :py:meth:`OpsWorks.Client.describe_stacks` to update the attributes of
@@ -426,6 +482,8 @@ Type annotations for `boto3.resource("opsworks").load` method.
 Boto3 documentation:
 [OpsWorks.Stack.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.load)
 
+<a id="stackreload-method"></a>
+
 #### Stack.reload method
 
 Calls :py:meth:`OpsWorks.Client.describe_stacks` to update the attributes of
@@ -435,6 +493,8 @@ Type annotations for `boto3.resource("opsworks").reload` method.
 
 Boto3 documentation:
 [OpsWorks.Stack.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.reload)
+
+<a id="stacksummary"></a>
 
 ## StackSummary
 
@@ -452,6 +512,8 @@ def get_resource() -> StackSummary:
 Boto3 documentation:
 [OpsWorks.StackSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.StackSummary)
 
+<a id="stacksummary-attributes"></a>
+
 ### StackSummary attributes
 
 - `name`: `str`
@@ -462,7 +524,11 @@ Boto3 documentation:
   [InstancesCountResponseMetadataTypeDef](./type_defs.md#instancescountresponsemetadatatypedef)
 - `stack_id`: `str`
 
+<a id="stacksummary-methods"></a>
+
 ### StackSummary methods
+
+<a id="stacksummarystack-method"></a>
 
 #### StackSummary.Stack method
 
@@ -474,6 +540,8 @@ Boto3 documentation:
 [OpsWorks.StackSummary.Stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.Stack)
 
 Returns [Stack](#stack).
+
+<a id="stacksummaryget_available_subresources-method"></a>
 
 #### StackSummary.get_available_subresources method
 
@@ -487,6 +555,8 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
+<a id="stacksummaryload-method"></a>
+
 #### StackSummary.load method
 
 Calls :py:meth:`OpsWorks.Client.describe_stack_summary` to update the
@@ -496,6 +566,8 @@ Type annotations for `boto3.resource("opsworks").load` method.
 
 Boto3 documentation:
 [OpsWorks.StackSummary.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.load)
+
+<a id="stacksummaryreload-method"></a>
 
 #### StackSummary.reload method
 

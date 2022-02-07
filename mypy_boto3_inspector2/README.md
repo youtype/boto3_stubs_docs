@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-inspector2-module"></a>
+
 # Type annotations for boto3 Inspector2 module
 
 > [Index](..) > Inspector2
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
 type annotations stubs module
-[mypy_boto3_inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
+[mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[inspector2]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[inspector2]'
+
+# standalone installation
 pip install mypy-boto3-inspector2
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-inspector2
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="inspector2client"></a>
+
 ## Inspector2Client
 
 Type annotations for `boto3.client("inspector2")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_inspector2.client import Inspector2Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -67,6 +81,8 @@ from mypy_boto3_inspector2.client import Inspector2Client
 - [update_filter](./client.md#update_filter)
 - [update_organization_configuration](./client.md#update_organization_configuration)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 Inspector2Client [exceptions](./client.md#exceptions)
@@ -81,6 +97,8 @@ Inspector2Client [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -89,7 +107,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_inspector2.paginators import ListAccountPermissionsPaginator, ...
+from mypy_boto3_inspector2.paginator import ListAccountPermissionsPaginator, ...
 ```
 
 - [ListAccountPermissionsPaginator](./paginators.md#listaccountpermissionspaginator)
@@ -101,6 +119,8 @@ from mypy_boto3_inspector2.paginators import ListAccountPermissionsPaginator, ..
 - [ListFindingsPaginator](./paginators.md#listfindingspaginator)
 - [ListMembersPaginator](./paginators.md#listmemberspaginator)
 - [ListUsageTotalsPaginator](./paginators.md#listusagetotalspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -170,6 +190,8 @@ from mypy_boto3_inspector2.literals import AccountSortByType, ...
 - [UsageTypeType](./literals.md#usagetypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

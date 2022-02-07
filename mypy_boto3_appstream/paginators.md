@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-appstream-module"></a>
+
 # Paginators for boto3 AppStream module
 
 > [Index](..) > [AppStream](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
 type annotations stubs module
-[mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
+[mypy-boto3-appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
 - [Paginators for boto3 AppStream module](#paginators-for-boto3-appstream-module)
   - [DescribeDirectoryConfigsPaginator](#describedirectoryconfigspaginator)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ListAssociatedFleetsPaginator](#listassociatedfleetspaginator)
   - [ListAssociatedStacksPaginator](#listassociatedstackspaginator)
 
+<a id="describedirectoryconfigspaginator"></a>
+
 ## DescribeDirectoryConfigsPaginator
 
 Type annotations for
@@ -27,10 +31,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appstream.paginator import DescribeDirectoryConfigsPaginator
 
 def get_describe_directory_configs_paginator() -> DescribeDirectoryConfigsPaginator:
-    return boto3.client("appstream").get_paginator("describe_directory_configs")
+    return Session().client("appstream").get_paginator("describe_directory_configs")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `DescribeDirectoryConfigsPaginator.paginate` method:
 `DescribeDirectoryConfigsPaginator.paginate` returns
 `_PageIterator`\[[DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef)\].
 
+<a id="describefleetspaginator"></a>
+
 ## DescribeFleetsPaginator
 
 Type annotations for
@@ -53,10 +61,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appstream.paginator import DescribeFleetsPaginator
 
 def get_describe_fleets_paginator() -> DescribeFleetsPaginator:
-    return boto3.client("appstream").get_paginator("describe_fleets")
+    return Session().client("appstream").get_paginator("describe_fleets")
 ```
 
 Boto3 documentation:
@@ -71,6 +81,8 @@ Arguments for `DescribeFleetsPaginator.paginate` method:
 `DescribeFleetsPaginator.paginate` returns
 `_PageIterator`\[[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)\].
 
+<a id="describeimagebuilderspaginator"></a>
+
 ## DescribeImageBuildersPaginator
 
 Type annotations for
@@ -79,10 +91,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appstream.paginator import DescribeImageBuildersPaginator
 
 def get_describe_image_builders_paginator() -> DescribeImageBuildersPaginator:
-    return boto3.client("appstream").get_paginator("describe_image_builders")
+    return Session().client("appstream").get_paginator("describe_image_builders")
 ```
 
 Boto3 documentation:
@@ -97,6 +111,8 @@ Arguments for `DescribeImageBuildersPaginator.paginate` method:
 `DescribeImageBuildersPaginator.paginate` returns
 `_PageIterator`\[[DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef)\].
 
+<a id="describeimagespaginator"></a>
+
 ## DescribeImagesPaginator
 
 Type annotations for
@@ -105,10 +121,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appstream.paginator import DescribeImagesPaginator
 
 def get_describe_images_paginator() -> DescribeImagesPaginator:
-    return boto3.client("appstream").get_paginator("describe_images")
+    return Session().client("appstream").get_paginator("describe_images")
 ```
 
 Boto3 documentation:
@@ -125,6 +143,8 @@ Arguments for `DescribeImagesPaginator.paginate` method:
 `DescribeImagesPaginator.paginate` returns
 `_PageIterator`\[[DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef)\].
 
+<a id="describesessionspaginator"></a>
+
 ## DescribeSessionsPaginator
 
 Type annotations for
@@ -133,10 +153,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appstream.paginator import DescribeSessionsPaginator
 
 def get_describe_sessions_paginator() -> DescribeSessionsPaginator:
-    return boto3.client("appstream").get_paginator("describe_sessions")
+    return Session().client("appstream").get_paginator("describe_sessions")
 ```
 
 Boto3 documentation:
@@ -155,6 +177,8 @@ Arguments for `DescribeSessionsPaginator.paginate` method:
 `DescribeSessionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef)\].
 
+<a id="describestackspaginator"></a>
+
 ## DescribeStacksPaginator
 
 Type annotations for
@@ -163,10 +187,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appstream.paginator import DescribeStacksPaginator
 
 def get_describe_stacks_paginator() -> DescribeStacksPaginator:
-    return boto3.client("appstream").get_paginator("describe_stacks")
+    return Session().client("appstream").get_paginator("describe_stacks")
 ```
 
 Boto3 documentation:
@@ -181,6 +207,8 @@ Arguments for `DescribeStacksPaginator.paginate` method:
 `DescribeStacksPaginator.paginate` returns
 `_PageIterator`\[[DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef)\].
 
+<a id="describeuserstackassociationspaginator"></a>
+
 ## DescribeUserStackAssociationsPaginator
 
 Type annotations for
@@ -189,10 +217,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appstream.paginator import DescribeUserStackAssociationsPaginator
 
 def get_describe_user_stack_associations_paginator() -> DescribeUserStackAssociationsPaginator:
-    return boto3.client("appstream").get_paginator("describe_user_stack_associations")
+    return Session().client("appstream").get_paginator("describe_user_stack_associations")
 ```
 
 Boto3 documentation:
@@ -210,6 +240,8 @@ Arguments for `DescribeUserStackAssociationsPaginator.paginate` method:
 `DescribeUserStackAssociationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef)\].
 
+<a id="describeuserspaginator"></a>
+
 ## DescribeUsersPaginator
 
 Type annotations for
@@ -218,10 +250,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appstream.paginator import DescribeUsersPaginator
 
 def get_describe_users_paginator() -> DescribeUsersPaginator:
-    return boto3.client("appstream").get_paginator("describe_users")
+    return Session().client("appstream").get_paginator("describe_users")
 ```
 
 Boto3 documentation:
@@ -237,6 +271,8 @@ Arguments for `DescribeUsersPaginator.paginate` method:
 `DescribeUsersPaginator.paginate` returns
 `_PageIterator`\[[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef)\].
 
+<a id="listassociatedfleetspaginator"></a>
+
 ## ListAssociatedFleetsPaginator
 
 Type annotations for
@@ -245,10 +281,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appstream.paginator import ListAssociatedFleetsPaginator
 
 def get_list_associated_fleets_paginator() -> ListAssociatedFleetsPaginator:
-    return boto3.client("appstream").get_paginator("list_associated_fleets")
+    return Session().client("appstream").get_paginator("list_associated_fleets")
 ```
 
 Boto3 documentation:
@@ -263,6 +301,8 @@ Arguments for `ListAssociatedFleetsPaginator.paginate` method:
 `ListAssociatedFleetsPaginator.paginate` returns
 `_PageIterator`\[[ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef)\].
 
+<a id="listassociatedstackspaginator"></a>
+
 ## ListAssociatedStacksPaginator
 
 Type annotations for
@@ -271,10 +311,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appstream.paginator import ListAssociatedStacksPaginator
 
 def get_list_associated_stacks_paginator() -> ListAssociatedStacksPaginator:
-    return boto3.client("appstream").get_paginator("list_associated_stacks")
+    return Session().client("appstream").get_paginator("list_associated_stacks")
 ```
 
 Boto3 documentation:

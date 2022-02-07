@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-codeartifact-module"></a>
+
 # Typed dictionaries for boto3 CodeArtifact module
 
 > [Index](..) > [CodeArtifact](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module
-[mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
+[mypy-boto3-codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 - [Typed dictionaries for boto3 CodeArtifact module](#typed-dictionaries-for-boto3-codeartifact-module)
   - [AssetSummaryTypeDef](#assetsummarytypedef)
@@ -94,6 +96,8 @@ type annotations stubs module
   - [UpstreamRepositoryInfoTypeDef](#upstreamrepositoryinfotypedef)
   - [UpstreamRepositoryTypeDef](#upstreamrepositorytypedef)
 
+<a id="assetsummarytypedef"></a>
+
 ## AssetSummaryTypeDef
 
 ```python
@@ -109,6 +113,8 @@ Optional fields:
 - `size`: `int`
 - `hashes`: `Dict`\[[HashAlgorithmType](./literals.md#hashalgorithmtype),
   `str`\]
+
+<a id="associateexternalconnectionrequestrequesttypedef"></a>
 
 ## AssociateExternalConnectionRequestRequestTypeDef
 
@@ -126,6 +132,8 @@ Optional fields:
 
 - `domainOwner`: `str`
 
+<a id="associateexternalconnectionresulttypedef"></a>
+
 ## AssociateExternalConnectionResultTypeDef
 
 ```python
@@ -138,6 +146,8 @@ Required fields:
   [RepositoryDescriptionTypeDef](./type_defs.md#repositorydescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="copypackageversionsrequestrequesttypedef"></a>
 
 ## CopyPackageVersionsRequestRequestTypeDef
 
@@ -162,6 +172,8 @@ Optional fields:
 - `allowOverwrite`: `bool`
 - `includeFromUpstream`: `bool`
 
+<a id="copypackageversionsresulttypedef"></a>
+
 ## CopyPackageVersionsResultTypeDef
 
 ```python
@@ -176,6 +188,8 @@ Required fields:
   [PackageVersionErrorTypeDef](./type_defs.md#packageversionerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdomainrequestrequesttypedef"></a>
 
 ## CreateDomainRequestRequestTypeDef
 
@@ -192,6 +206,8 @@ Optional fields:
 - `encryptionKey`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdomainresulttypedef"></a>
+
 ## CreateDomainResultTypeDef
 
 ```python
@@ -203,6 +219,8 @@ Required fields:
 - `domain`: [DomainDescriptionTypeDef](./type_defs.md#domaindescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrepositoryrequestrequesttypedef"></a>
 
 ## CreateRepositoryRequestRequestTypeDef
 
@@ -223,6 +241,8 @@ Optional fields:
   `Sequence`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createrepositoryresulttypedef"></a>
+
 ## CreateRepositoryResultTypeDef
 
 ```python
@@ -235,6 +255,8 @@ Required fields:
   [RepositoryDescriptionTypeDef](./type_defs.md#repositorydescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletedomainpermissionspolicyrequestrequesttypedef"></a>
 
 ## DeleteDomainPermissionsPolicyRequestRequestTypeDef
 
@@ -251,6 +273,8 @@ Optional fields:
 - `domainOwner`: `str`
 - `policyRevision`: `str`
 
+<a id="deletedomainpermissionspolicyresulttypedef"></a>
+
 ## DeleteDomainPermissionsPolicyResultTypeDef
 
 ```python
@@ -262,6 +286,8 @@ Required fields:
 - `policy`: [ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletedomainrequestrequesttypedef"></a>
 
 ## DeleteDomainRequestRequestTypeDef
 
@@ -277,6 +303,8 @@ Optional fields:
 
 - `domainOwner`: `str`
 
+<a id="deletedomainresulttypedef"></a>
+
 ## DeleteDomainResultTypeDef
 
 ```python
@@ -288,6 +316,8 @@ Required fields:
 - `domain`: [DomainDescriptionTypeDef](./type_defs.md#domaindescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletepackageversionsrequestrequesttypedef"></a>
 
 ## DeletePackageVersionsRequestRequestTypeDef
 
@@ -310,6 +340,8 @@ Optional fields:
 - `expectedStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
+<a id="deletepackageversionsresulttypedef"></a>
+
 ## DeletePackageVersionsResultTypeDef
 
 ```python
@@ -324,6 +356,8 @@ Required fields:
   [PackageVersionErrorTypeDef](./type_defs.md#packageversionerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleterepositorypermissionspolicyrequestrequesttypedef"></a>
 
 ## DeleteRepositoryPermissionsPolicyRequestRequestTypeDef
 
@@ -341,6 +375,8 @@ Optional fields:
 - `domainOwner`: `str`
 - `policyRevision`: `str`
 
+<a id="deleterepositorypermissionspolicyresulttypedef"></a>
+
 ## DeleteRepositoryPermissionsPolicyResultTypeDef
 
 ```python
@@ -352,6 +388,8 @@ Required fields:
 - `policy`: [ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleterepositoryrequestrequesttypedef"></a>
 
 ## DeleteRepositoryRequestRequestTypeDef
 
@@ -368,6 +406,8 @@ Optional fields:
 
 - `domainOwner`: `str`
 
+<a id="deleterepositoryresulttypedef"></a>
+
 ## DeleteRepositoryResultTypeDef
 
 ```python
@@ -380,6 +420,8 @@ Required fields:
   [RepositoryDescriptionTypeDef](./type_defs.md#repositorydescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedomainrequestrequesttypedef"></a>
 
 ## DescribeDomainRequestRequestTypeDef
 
@@ -395,6 +437,8 @@ Optional fields:
 
 - `domainOwner`: `str`
 
+<a id="describedomainresulttypedef"></a>
+
 ## DescribeDomainResultTypeDef
 
 ```python
@@ -406,6 +450,8 @@ Required fields:
 - `domain`: [DomainDescriptionTypeDef](./type_defs.md#domaindescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describepackageversionrequestrequesttypedef"></a>
 
 ## DescribePackageVersionRequestRequestTypeDef
 
@@ -426,6 +472,8 @@ Optional fields:
 - `domainOwner`: `str`
 - `namespace`: `str`
 
+<a id="describepackageversionresulttypedef"></a>
+
 ## DescribePackageVersionResultTypeDef
 
 ```python
@@ -438,6 +486,8 @@ Required fields:
   [PackageVersionDescriptionTypeDef](./type_defs.md#packageversiondescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describerepositoryrequestrequesttypedef"></a>
 
 ## DescribeRepositoryRequestRequestTypeDef
 
@@ -454,6 +504,8 @@ Optional fields:
 
 - `domainOwner`: `str`
 
+<a id="describerepositoryresulttypedef"></a>
+
 ## DescribeRepositoryResultTypeDef
 
 ```python
@@ -466,6 +518,8 @@ Required fields:
   [RepositoryDescriptionTypeDef](./type_defs.md#repositorydescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="disassociateexternalconnectionrequestrequesttypedef"></a>
 
 ## DisassociateExternalConnectionRequestRequestTypeDef
 
@@ -483,6 +537,8 @@ Optional fields:
 
 - `domainOwner`: `str`
 
+<a id="disassociateexternalconnectionresulttypedef"></a>
+
 ## DisassociateExternalConnectionResultTypeDef
 
 ```python
@@ -495,6 +551,8 @@ Required fields:
   [RepositoryDescriptionTypeDef](./type_defs.md#repositorydescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="disposepackageversionsrequestrequesttypedef"></a>
 
 ## DisposePackageVersionsRequestRequestTypeDef
 
@@ -518,6 +576,8 @@ Optional fields:
 - `expectedStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
+<a id="disposepackageversionsresulttypedef"></a>
+
 ## DisposePackageVersionsResultTypeDef
 
 ```python
@@ -532,6 +592,8 @@ Required fields:
   [PackageVersionErrorTypeDef](./type_defs.md#packageversionerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="domaindescriptiontypedef"></a>
 
 ## DomainDescriptionTypeDef
 
@@ -551,6 +613,8 @@ Optional fields:
 - `assetSizeBytes`: `int`
 - `s3BucketArn`: `str`
 
+<a id="domainsummarytypedef"></a>
+
 ## DomainSummaryTypeDef
 
 ```python
@@ -565,6 +629,8 @@ Optional fields:
 - `status`: [DomainStatusType](./literals.md#domainstatustype)
 - `createdTime`: `datetime`
 - `encryptionKey`: `str`
+
+<a id="getauthorizationtokenrequestrequesttypedef"></a>
 
 ## GetAuthorizationTokenRequestRequestTypeDef
 
@@ -581,6 +647,8 @@ Optional fields:
 - `domainOwner`: `str`
 - `durationSeconds`: `int`
 
+<a id="getauthorizationtokenresulttypedef"></a>
+
 ## GetAuthorizationTokenResultTypeDef
 
 ```python
@@ -593,6 +661,8 @@ Required fields:
 - `expiration`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdomainpermissionspolicyrequestrequesttypedef"></a>
 
 ## GetDomainPermissionsPolicyRequestRequestTypeDef
 
@@ -608,6 +678,8 @@ Optional fields:
 
 - `domainOwner`: `str`
 
+<a id="getdomainpermissionspolicyresulttypedef"></a>
+
 ## GetDomainPermissionsPolicyResultTypeDef
 
 ```python
@@ -619,6 +691,8 @@ Required fields:
 - `policy`: [ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getpackageversionassetrequestrequesttypedef"></a>
 
 ## GetPackageVersionAssetRequestRequestTypeDef
 
@@ -641,6 +715,8 @@ Optional fields:
 - `namespace`: `str`
 - `packageVersionRevision`: `str`
 
+<a id="getpackageversionassetresulttypedef"></a>
+
 ## GetPackageVersionAssetResultTypeDef
 
 ```python
@@ -655,6 +731,8 @@ Required fields:
 - `packageVersionRevision`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getpackageversionreadmerequestrequesttypedef"></a>
 
 ## GetPackageVersionReadmeRequestRequestTypeDef
 
@@ -675,6 +753,8 @@ Optional fields:
 - `domainOwner`: `str`
 - `namespace`: `str`
 
+<a id="getpackageversionreadmeresulttypedef"></a>
+
 ## GetPackageVersionReadmeResultTypeDef
 
 ```python
@@ -692,6 +772,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrepositoryendpointrequestrequesttypedef"></a>
+
 ## GetRepositoryEndpointRequestRequestTypeDef
 
 ```python
@@ -708,6 +790,8 @@ Optional fields:
 
 - `domainOwner`: `str`
 
+<a id="getrepositoryendpointresulttypedef"></a>
+
 ## GetRepositoryEndpointResultTypeDef
 
 ```python
@@ -719,6 +803,8 @@ Required fields:
 - `repositoryEndpoint`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrepositorypermissionspolicyrequestrequesttypedef"></a>
 
 ## GetRepositoryPermissionsPolicyRequestRequestTypeDef
 
@@ -735,6 +821,8 @@ Optional fields:
 
 - `domainOwner`: `str`
 
+<a id="getrepositorypermissionspolicyresulttypedef"></a>
+
 ## GetRepositoryPermissionsPolicyResultTypeDef
 
 ```python
@@ -747,6 +835,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="licenseinfotypedef"></a>
+
 ## LicenseInfoTypeDef
 
 ```python
@@ -758,6 +848,8 @@ Optional fields:
 - `name`: `str`
 - `url`: `str`
 
+<a id="listdomainsrequestrequesttypedef"></a>
+
 ## ListDomainsRequestRequestTypeDef
 
 ```python
@@ -768,6 +860,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listdomainsresulttypedef"></a>
 
 ## ListDomainsResultTypeDef
 
@@ -782,6 +876,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpackageversionassetsrequestrequesttypedef"></a>
 
 ## ListPackageVersionAssetsRequestRequestTypeDef
 
@@ -804,6 +900,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listpackageversionassetsresulttypedef"></a>
+
 ## ListPackageVersionAssetsResultTypeDef
 
 ```python
@@ -821,6 +919,8 @@ Required fields:
 - `assets`: `List`\[[AssetSummaryTypeDef](./type_defs.md#assetsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpackageversiondependenciesrequestrequesttypedef"></a>
 
 ## ListPackageVersionDependenciesRequestRequestTypeDef
 
@@ -842,6 +942,8 @@ Optional fields:
 - `namespace`: `str`
 - `nextToken`: `str`
 
+<a id="listpackageversiondependenciesresulttypedef"></a>
+
 ## ListPackageVersionDependenciesResultTypeDef
 
 ```python
@@ -860,6 +962,8 @@ Required fields:
   `List`\[[PackageDependencyTypeDef](./type_defs.md#packagedependencytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpackageversionsrequestrequesttypedef"></a>
 
 ## ListPackageVersionsRequestRequestTypeDef
 
@@ -884,6 +988,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listpackageversionsresulttypedef"></a>
+
 ## ListPackageVersionsResultTypeDef
 
 ```python
@@ -901,6 +1007,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpackagesrequestrequesttypedef"></a>
 
 ## ListPackagesRequestRequestTypeDef
 
@@ -922,6 +1030,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listpackagesresulttypedef"></a>
+
 ## ListPackagesResultTypeDef
 
 ```python
@@ -935,6 +1045,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrepositoriesindomainrequestrequesttypedef"></a>
 
 ## ListRepositoriesInDomainRequestRequestTypeDef
 
@@ -954,6 +1066,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listrepositoriesindomainresulttypedef"></a>
+
 ## ListRepositoriesInDomainResultTypeDef
 
 ```python
@@ -968,6 +1082,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrepositoriesrequestrequesttypedef"></a>
+
 ## ListRepositoriesRequestRequestTypeDef
 
 ```python
@@ -979,6 +1095,8 @@ Optional fields:
 - `repositoryPrefix`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listrepositoriesresulttypedef"></a>
 
 ## ListRepositoriesResultTypeDef
 
@@ -994,6 +1112,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1003,6 +1123,8 @@ from mypy_boto3_codeartifact.type_defs import ListTagsForResourceRequestRequestT
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresulttypedef"></a>
 
 ## ListTagsForResourceResultTypeDef
 
@@ -1015,6 +1137,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="packagedependencytypedef"></a>
 
 ## PackageDependencyTypeDef
 
@@ -1029,6 +1153,8 @@ Optional fields:
 - `dependencyType`: `str`
 - `versionRequirement`: `str`
 
+<a id="packagesummarytypedef"></a>
+
 ## PackageSummaryTypeDef
 
 ```python
@@ -1040,6 +1166,8 @@ Optional fields:
 - `format`: [PackageFormatType](./literals.md#packageformattype)
 - `namespace`: `str`
 - `package`: `str`
+
+<a id="packageversiondescriptiontypedef"></a>
 
 ## PackageVersionDescriptionTypeDef
 
@@ -1062,6 +1190,8 @@ Optional fields:
 - `revision`: `str`
 - `status`: [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
+<a id="packageversionerrortypedef"></a>
+
 ## PackageVersionErrorTypeDef
 
 ```python
@@ -1073,6 +1203,8 @@ Optional fields:
 - `errorCode`:
   [PackageVersionErrorCodeType](./literals.md#packageversionerrorcodetype)
 - `errorMessage`: `str`
+
+<a id="packageversionsummarytypedef"></a>
 
 ## PackageVersionSummaryTypeDef
 
@@ -1089,6 +1221,8 @@ Optional fields:
 
 - `revision`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1100,6 +1234,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putdomainpermissionspolicyrequestrequesttypedef"></a>
 
 ## PutDomainPermissionsPolicyRequestRequestTypeDef
 
@@ -1117,6 +1253,8 @@ Optional fields:
 - `domainOwner`: `str`
 - `policyRevision`: `str`
 
+<a id="putdomainpermissionspolicyresulttypedef"></a>
+
 ## PutDomainPermissionsPolicyResultTypeDef
 
 ```python
@@ -1128,6 +1266,8 @@ Required fields:
 - `policy`: [ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putrepositorypermissionspolicyrequestrequesttypedef"></a>
 
 ## PutRepositoryPermissionsPolicyRequestRequestTypeDef
 
@@ -1146,6 +1286,8 @@ Optional fields:
 - `domainOwner`: `str`
 - `policyRevision`: `str`
 
+<a id="putrepositorypermissionspolicyresulttypedef"></a>
+
 ## PutRepositoryPermissionsPolicyResultTypeDef
 
 ```python
@@ -1157,6 +1299,8 @@ Required fields:
 - `policy`: [ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="repositorydescriptiontypedef"></a>
 
 ## RepositoryDescriptionTypeDef
 
@@ -1177,6 +1321,8 @@ Optional fields:
 - `externalConnections`:
   `List`\[[RepositoryExternalConnectionInfoTypeDef](./type_defs.md#repositoryexternalconnectioninfotypedef)\]
 
+<a id="repositoryexternalconnectioninfotypedef"></a>
+
 ## RepositoryExternalConnectionInfoTypeDef
 
 ```python
@@ -1189,6 +1335,8 @@ Optional fields:
 - `packageFormat`: [PackageFormatType](./literals.md#packageformattype)
 - `status`: `Literal['Available']` (see
   [ExternalConnectionStatusType](./literals.md#externalconnectionstatustype))
+
+<a id="repositorysummarytypedef"></a>
 
 ## RepositorySummaryTypeDef
 
@@ -1205,6 +1353,8 @@ Optional fields:
 - `arn`: `str`
 - `description`: `str`
 
+<a id="resourcepolicytypedef"></a>
+
 ## ResourcePolicyTypeDef
 
 ```python
@@ -1216,6 +1366,8 @@ Optional fields:
 - `resourceArn`: `str`
 - `revision`: `str`
 - `document`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1231,6 +1383,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="successfulpackageversioninfotypedef"></a>
+
 ## SuccessfulPackageVersionInfoTypeDef
 
 ```python
@@ -1241,6 +1395,8 @@ Optional fields:
 
 - `revision`: `str`
 - `status`: [PackageVersionStatusType](./literals.md#packageversionstatustype)
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1253,6 +1409,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1264,6 +1422,8 @@ Required fields:
 - `key`: `str`
 - `value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1274,6 +1434,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatepackageversionsstatusrequestrequesttypedef"></a>
 
 ## UpdatePackageVersionsStatusRequestRequestTypeDef
 
@@ -1299,6 +1461,8 @@ Optional fields:
 - `expectedStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
+<a id="updatepackageversionsstatusresulttypedef"></a>
+
 ## UpdatePackageVersionsStatusResultTypeDef
 
 ```python
@@ -1313,6 +1477,8 @@ Required fields:
   [PackageVersionErrorTypeDef](./type_defs.md#packageversionerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterepositoryrequestrequesttypedef"></a>
 
 ## UpdateRepositoryRequestRequestTypeDef
 
@@ -1332,6 +1498,8 @@ Optional fields:
 - `upstreams`:
   `Sequence`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
 
+<a id="updaterepositoryresulttypedef"></a>
+
 ## UpdateRepositoryResultTypeDef
 
 ```python
@@ -1345,6 +1513,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="upstreamrepositoryinfotypedef"></a>
+
 ## UpstreamRepositoryInfoTypeDef
 
 ```python
@@ -1354,6 +1524,8 @@ from mypy_boto3_codeartifact.type_defs import UpstreamRepositoryInfoTypeDef
 Optional fields:
 
 - `repositoryName`: `str`
+
+<a id="upstreamrepositorytypedef"></a>
 
 ## UpstreamRepositoryTypeDef
 

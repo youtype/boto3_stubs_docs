@@ -1,3 +1,5 @@
+<a id="voiceidclient-for-boto3-voiceid-module"></a>
+
 # VoiceIDClient for boto3 VoiceID module
 
 > [Index](..) > [VoiceID](.) > VoiceIDClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [VoiceID](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID)
 type annotations stubs module
-[mypy_boto3_voice_id](https://pypi.org/project/mypy-boto3-voice-id/).
+[mypy-boto3-voice-id](https://pypi.org/project/mypy-boto3-voice-id/).
 
 - [VoiceIDClient for boto3 VoiceID module](#voiceidclient-for-boto3-voiceid-module)
   - [VoiceIDClient](#voiceidclient)
@@ -36,6 +38,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_domain](#update_domain)
 
+<a id="voiceidclient"></a>
+
 ## VoiceIDClient
 
 Type annotations for `boto3.client("voice-id")`
@@ -43,14 +47,17 @@ Type annotations for `boto3.client("voice-id")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_voice_id.client import VoiceIDClient
 
 def get_voice-id_client() -> VoiceIDClient:
-    return boto3.client("voice-id")
+    return Session().client("voice-id")
 ```
 
 Boto3 documentation:
 [VoiceID.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -75,7 +82,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -87,6 +98,8 @@ Boto3 documentation:
 [VoiceID.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -102,6 +115,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_domain"></a>
 
 ### create_domain
 
@@ -129,6 +144,8 @@ Keyword-only arguments:
 Returns
 [CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
 
+<a id="delete_domain"></a>
+
 ### delete_domain
 
 Deletes the specified domain from the Amazon Connect Voice ID system.
@@ -144,6 +161,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DomainId`: `str` *(required)*
+
+<a id="delete_fraudster"></a>
 
 ### delete_fraudster
 
@@ -162,6 +181,8 @@ Keyword-only arguments:
 - `DomainId`: `str` *(required)*
 - `FraudsterId`: `str` *(required)*
 
+<a id="delete_speaker"></a>
+
 ### delete_speaker
 
 Deletes the specified speaker from the Amazon Connect Voice ID system.
@@ -178,6 +199,8 @@ Keyword-only arguments:
 
 - `DomainId`: `str` *(required)*
 - `SpeakerId`: `str` *(required)*
+
+<a id="describe_domain"></a>
 
 ### describe_domain
 
@@ -198,6 +221,8 @@ Keyword-only arguments:
 Returns
 [DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef).
 
+<a id="describe_fraudster"></a>
+
 ### describe_fraudster
 
 Describes the specified fraudster.
@@ -217,6 +242,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFraudsterResponseTypeDef](./type_defs.md#describefraudsterresponsetypedef).
+
+<a id="describe_fraudster_registration_job"></a>
 
 ### describe_fraudster_registration_job
 
@@ -239,6 +266,8 @@ Keyword-only arguments:
 Returns
 [DescribeFraudsterRegistrationJobResponseTypeDef](./type_defs.md#describefraudsterregistrationjobresponsetypedef).
 
+<a id="describe_speaker"></a>
+
 ### describe_speaker
 
 Describes the specified speaker.
@@ -258,6 +287,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSpeakerResponseTypeDef](./type_defs.md#describespeakerresponsetypedef).
+
+<a id="describe_speaker_enrollment_job"></a>
 
 ### describe_speaker_enrollment_job
 
@@ -280,6 +311,8 @@ Keyword-only arguments:
 Returns
 [DescribeSpeakerEnrollmentJobResponseTypeDef](./type_defs.md#describespeakerenrollmentjobresponsetypedef).
 
+<a id="evaluate_session"></a>
+
 ### evaluate_session
 
 Evaluates a specified session based on audio data accumulated during a
@@ -301,6 +334,8 @@ Keyword-only arguments:
 Returns
 [EvaluateSessionResponseTypeDef](./type_defs.md#evaluatesessionresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -318,6 +353,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_domains"></a>
 
 ### list_domains
 
@@ -338,6 +375,8 @@ Keyword-only arguments:
 
 Returns
 [ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
+
+<a id="list_fraudster_registration_jobs"></a>
 
 ### list_fraudster_registration_jobs
 
@@ -364,6 +403,8 @@ Keyword-only arguments:
 Returns
 [ListFraudsterRegistrationJobsResponseTypeDef](./type_defs.md#listfraudsterregistrationjobsresponsetypedef).
 
+<a id="list_speaker_enrollment_jobs"></a>
+
 ### list_speaker_enrollment_jobs
 
 Lists all the speaker enrollment jobs in the domain with the specified
@@ -389,6 +430,8 @@ Keyword-only arguments:
 Returns
 [ListSpeakerEnrollmentJobsResponseTypeDef](./type_defs.md#listspeakerenrollmentjobsresponsetypedef).
 
+<a id="list_speakers"></a>
+
 ### list_speakers
 
 Lists all speakers in a specified domain.
@@ -410,6 +453,8 @@ Keyword-only arguments:
 Returns
 [ListSpeakersResponseTypeDef](./type_defs.md#listspeakersresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all tags associated with a specified Voice ID resource.
@@ -428,6 +473,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="opt_out_speaker"></a>
 
 ### opt_out_speaker
 
@@ -448,6 +495,8 @@ Keyword-only arguments:
 
 Returns
 [OptOutSpeakerResponseTypeDef](./type_defs.md#optoutspeakerresponsetypedef).
+
+<a id="start_fraudster_registration_job"></a>
 
 ### start_fraudster_registration_job
 
@@ -479,6 +528,8 @@ Keyword-only arguments:
 Returns
 [StartFraudsterRegistrationJobResponseTypeDef](./type_defs.md#startfraudsterregistrationjobresponsetypedef).
 
+<a id="start_speaker_enrollment_job"></a>
+
 ### start_speaker_enrollment_job
 
 Starts a new batch speaker enrollment job using specified details.
@@ -509,6 +560,8 @@ Keyword-only arguments:
 Returns
 [StartSpeakerEnrollmentJobResponseTypeDef](./type_defs.md#startspeakerenrollmentjobresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Tags an Amazon Connect Voice ID resource with the provided list of tags.
@@ -528,6 +581,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes specified tags from a specified Amazon Connect Voice ID resource.
@@ -546,6 +601,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_domain"></a>
 
 ### update_domain
 

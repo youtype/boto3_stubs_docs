@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-medialive-module"></a>
+
 # Type annotations for boto3 MediaLive module
 
 > [Index](..) > MediaLive
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
 type annotations stubs module
-[mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
+[mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[medialive]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[medialive]'
+
+# standalone installation
 pip install mypy-boto3-medialive
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-medialive
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="medialiveclient"></a>
+
 ## MediaLiveClient
 
 Type annotations for `boto3.client("medialive")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_medialive.client import MediaLiveClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -96,6 +110,8 @@ from mypy_boto3_medialive.client import MediaLiveClient
 - [update_multiplex_program](./client.md#update_multiplex_program)
 - [update_reservation](./client.md#update_reservation)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MediaLiveClient [exceptions](./client.md#exceptions)
@@ -111,6 +127,8 @@ MediaLiveClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - UnprocessableEntityException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -119,7 +137,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.paginators import DescribeSchedulePaginator, ...
+from mypy_boto3_medialive.paginator import DescribeSchedulePaginator, ...
 ```
 
 - [DescribeSchedulePaginator](./paginators.md#describeschedulepaginator)
@@ -133,6 +151,8 @@ from mypy_boto3_medialive.paginators import DescribeSchedulePaginator, ...
 - [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
 - [ListReservationsPaginator](./paginators.md#listreservationspaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -141,7 +161,7 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.waiters import ChannelCreatedWaiter, ...
+from mypy_boto3_medialive.waiter import ChannelCreatedWaiter, ...
 ```
 
 - [ChannelCreatedWaiter](./waiters.md#channelcreatedwaiter)
@@ -155,6 +175,8 @@ from mypy_boto3_medialive.waiters import ChannelCreatedWaiter, ...
 - [MultiplexDeletedWaiter](./waiters.md#multiplexdeletedwaiter)
 - [MultiplexRunningWaiter](./waiters.md#multiplexrunningwaiter)
 - [MultiplexStoppedWaiter](./waiters.md#multiplexstoppedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -443,6 +465,8 @@ from mypy_boto3_medialive.literals import AacCodingModeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

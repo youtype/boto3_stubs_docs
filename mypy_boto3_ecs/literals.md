@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ecs-module"></a>
+
 # Literals for boto3 ECS module
 
 > [Index](..) > [ECS](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
 type annotations stubs module
-[mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
+[mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 - [Literals for boto3 ECS module](#literals-for-boto3-ecs-module)
   - [AgentUpdateStatusType](#agentupdatestatustype)
@@ -81,6 +83,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="agentupdatestatustype"></a>
+
 ## AgentUpdateStatusType
 
 ```python
@@ -96,6 +100,8 @@ Values:
 - `UPDATED`
 - `UPDATING`
 
+<a id="assignpubliciptype"></a>
+
 ## AssignPublicIpType
 
 ```python
@@ -106,6 +112,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="cpuarchitecturetype"></a>
 
 ## CPUArchitectureType
 
@@ -118,6 +126,8 @@ Values:
 - `ARM64`
 - `X86_64`
 
+<a id="capacityproviderfieldtype"></a>
+
 ## CapacityProviderFieldType
 
 ```python
@@ -127,6 +137,8 @@ from mypy_boto3_ecs.literals import CapacityProviderFieldType
 Values:
 
 - `TAGS`
+
+<a id="capacityproviderstatustype"></a>
 
 ## CapacityProviderStatusType
 
@@ -138,6 +150,8 @@ Values:
 
 - `ACTIVE`
 - `INACTIVE`
+
+<a id="capacityproviderupdatestatustype"></a>
 
 ## CapacityProviderUpdateStatusType
 
@@ -154,6 +168,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
 
+<a id="clusterfieldtype"></a>
+
 ## ClusterFieldType
 
 ```python
@@ -168,6 +184,8 @@ Values:
 - `STATISTICS`
 - `TAGS`
 
+<a id="clustersettingnametype"></a>
+
 ## ClusterSettingNameType
 
 ```python
@@ -177,6 +195,8 @@ from mypy_boto3_ecs.literals import ClusterSettingNameType
 Values:
 
 - `containerInsights`
+
+<a id="compatibilitytype"></a>
 
 ## CompatibilityType
 
@@ -190,6 +210,8 @@ Values:
 - `EXTERNAL`
 - `FARGATE`
 
+<a id="connectivitytype"></a>
+
 ## ConnectivityType
 
 ```python
@@ -200,6 +222,8 @@ Values:
 
 - `CONNECTED`
 - `DISCONNECTED`
+
+<a id="containerconditiontype"></a>
 
 ## ContainerConditionType
 
@@ -214,6 +238,8 @@ Values:
 - `START`
 - `SUCCESS`
 
+<a id="containerinstancefieldtype"></a>
+
 ## ContainerInstanceFieldType
 
 ```python
@@ -224,6 +250,8 @@ Values:
 
 - `CONTAINER_INSTANCE_HEALTH`
 - `TAGS`
+
+<a id="containerinstancestatustype"></a>
 
 ## ContainerInstanceStatusType
 
@@ -239,6 +267,8 @@ Values:
 - `REGISTERING`
 - `REGISTRATION_FAILED`
 
+<a id="deploymentcontrollertypetype"></a>
+
 ## DeploymentControllerTypeType
 
 ```python
@@ -250,6 +280,8 @@ Values:
 - `CODE_DEPLOY`
 - `ECS`
 - `EXTERNAL`
+
+<a id="deploymentrolloutstatetype"></a>
 
 ## DeploymentRolloutStateType
 
@@ -263,6 +295,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
+<a id="desiredstatustype"></a>
+
 ## DesiredStatusType
 
 ```python
@@ -274,6 +308,8 @@ Values:
 - `PENDING`
 - `RUNNING`
 - `STOPPED`
+
+<a id="devicecgrouppermissiontype"></a>
 
 ## DeviceCgroupPermissionType
 
@@ -287,6 +323,8 @@ Values:
 - `read`
 - `write`
 
+<a id="efsauthorizationconfigiamtype"></a>
+
 ## EFSAuthorizationConfigIAMType
 
 ```python
@@ -297,6 +335,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="efstransitencryptiontype"></a>
 
 ## EFSTransitEncryptionType
 
@@ -309,6 +349,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="environmentfiletypetype"></a>
+
 ## EnvironmentFileTypeType
 
 ```python
@@ -318,6 +360,8 @@ from mypy_boto3_ecs.literals import EnvironmentFileTypeType
 Values:
 
 - `s3`
+
+<a id="executecommandloggingtype"></a>
 
 ## ExecuteCommandLoggingType
 
@@ -331,6 +375,8 @@ Values:
 - `NONE`
 - `OVERRIDE`
 
+<a id="firelensconfigurationtypetype"></a>
+
 ## FirelensConfigurationTypeType
 
 ```python
@@ -341,6 +387,8 @@ Values:
 
 - `fluentbit`
 - `fluentd`
+
+<a id="healthstatustype"></a>
 
 ## HealthStatusType
 
@@ -353,6 +401,8 @@ Values:
 - `HEALTHY`
 - `UNHEALTHY`
 - `UNKNOWN`
+
+<a id="instancehealthcheckstatetype"></a>
 
 ## InstanceHealthCheckStateType
 
@@ -367,6 +417,8 @@ Values:
 - `INSUFFICIENT_DATA`
 - `OK`
 
+<a id="instancehealthchecktypetype"></a>
+
 ## InstanceHealthCheckTypeType
 
 ```python
@@ -376,6 +428,8 @@ from mypy_boto3_ecs.literals import InstanceHealthCheckTypeType
 Values:
 
 - `CONTAINER_RUNTIME`
+
+<a id="ipcmodetype"></a>
 
 ## IpcModeType
 
@@ -389,6 +443,8 @@ Values:
 - `none`
 - `task`
 
+<a id="launchtypetype"></a>
+
 ## LaunchTypeType
 
 ```python
@@ -401,6 +457,8 @@ Values:
 - `EXTERNAL`
 - `FARGATE`
 
+<a id="listaccountsettingspaginatorname"></a>
+
 ## ListAccountSettingsPaginatorName
 
 ```python
@@ -410,6 +468,8 @@ from mypy_boto3_ecs.literals import ListAccountSettingsPaginatorName
 Values:
 
 - `list_account_settings`
+
+<a id="listattributespaginatorname"></a>
 
 ## ListAttributesPaginatorName
 
@@ -421,6 +481,8 @@ Values:
 
 - `list_attributes`
 
+<a id="listclusterspaginatorname"></a>
+
 ## ListClustersPaginatorName
 
 ```python
@@ -430,6 +492,8 @@ from mypy_boto3_ecs.literals import ListClustersPaginatorName
 Values:
 
 - `list_clusters`
+
+<a id="listcontainerinstancespaginatorname"></a>
 
 ## ListContainerInstancesPaginatorName
 
@@ -441,6 +505,8 @@ Values:
 
 - `list_container_instances`
 
+<a id="listservicespaginatorname"></a>
+
 ## ListServicesPaginatorName
 
 ```python
@@ -450,6 +516,8 @@ from mypy_boto3_ecs.literals import ListServicesPaginatorName
 Values:
 
 - `list_services`
+
+<a id="listtaskdefinitionfamiliespaginatorname"></a>
 
 ## ListTaskDefinitionFamiliesPaginatorName
 
@@ -461,6 +529,8 @@ Values:
 
 - `list_task_definition_families`
 
+<a id="listtaskdefinitionspaginatorname"></a>
+
 ## ListTaskDefinitionsPaginatorName
 
 ```python
@@ -471,6 +541,8 @@ Values:
 
 - `list_task_definitions`
 
+<a id="listtaskspaginatorname"></a>
+
 ## ListTasksPaginatorName
 
 ```python
@@ -480,6 +552,8 @@ from mypy_boto3_ecs.literals import ListTasksPaginatorName
 Values:
 
 - `list_tasks`
+
+<a id="logdrivertype"></a>
 
 ## LogDriverType
 
@@ -498,6 +572,8 @@ Values:
 - `splunk`
 - `syslog`
 
+<a id="managedagentnametype"></a>
+
 ## ManagedAgentNameType
 
 ```python
@@ -507,6 +583,8 @@ from mypy_boto3_ecs.literals import ManagedAgentNameType
 Values:
 
 - `ExecuteCommandAgent`
+
+<a id="managedscalingstatustype"></a>
 
 ## ManagedScalingStatusType
 
@@ -519,6 +597,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="managedterminationprotectiontype"></a>
+
 ## ManagedTerminationProtectionType
 
 ```python
@@ -529,6 +609,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="networkmodetype"></a>
 
 ## NetworkModeType
 
@@ -542,6 +624,8 @@ Values:
 - `bridge`
 - `host`
 - `none`
+
+<a id="osfamilytype"></a>
 
 ## OSFamilyType
 
@@ -560,6 +644,8 @@ Values:
 - `WINDOWS_SERVER_2022_FULL`
 - `WINDOWS_SERVER_20H2_CORE`
 
+<a id="pidmodetype"></a>
+
 ## PidModeType
 
 ```python
@@ -571,6 +657,8 @@ Values:
 - `host`
 - `task`
 
+<a id="placementconstrainttypetype"></a>
+
 ## PlacementConstraintTypeType
 
 ```python
@@ -581,6 +669,8 @@ Values:
 
 - `distinctInstance`
 - `memberOf`
+
+<a id="placementstrategytypetype"></a>
 
 ## PlacementStrategyTypeType
 
@@ -594,6 +684,8 @@ Values:
 - `random`
 - `spread`
 
+<a id="platformdevicetypetype"></a>
+
 ## PlatformDeviceTypeType
 
 ```python
@@ -603,6 +695,8 @@ from mypy_boto3_ecs.literals import PlatformDeviceTypeType
 Values:
 
 - `GPU`
+
+<a id="propagatetagstype"></a>
 
 ## PropagateTagsType
 
@@ -615,6 +709,8 @@ Values:
 - `SERVICE`
 - `TASK_DEFINITION`
 
+<a id="proxyconfigurationtypetype"></a>
+
 ## ProxyConfigurationTypeType
 
 ```python
@@ -624,6 +720,8 @@ from mypy_boto3_ecs.literals import ProxyConfigurationTypeType
 Values:
 
 - `APPMESH`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -636,6 +734,8 @@ Values:
 - `GPU`
 - `InferenceAccelerator`
 
+<a id="scaleunittype"></a>
+
 ## ScaleUnitType
 
 ```python
@@ -645,6 +745,8 @@ from mypy_boto3_ecs.literals import ScaleUnitType
 Values:
 
 - `PERCENT`
+
+<a id="schedulingstrategytype"></a>
 
 ## SchedulingStrategyType
 
@@ -657,6 +759,8 @@ Values:
 - `DAEMON`
 - `REPLICA`
 
+<a id="scopetype"></a>
+
 ## ScopeType
 
 ```python
@@ -668,6 +772,8 @@ Values:
 - `shared`
 - `task`
 
+<a id="servicefieldtype"></a>
+
 ## ServiceFieldType
 
 ```python
@@ -677,6 +783,8 @@ from mypy_boto3_ecs.literals import ServiceFieldType
 Values:
 
 - `TAGS`
+
+<a id="servicesinactivewaitername"></a>
 
 ## ServicesInactiveWaiterName
 
@@ -688,6 +796,8 @@ Values:
 
 - `services_inactive`
 
+<a id="servicesstablewaitername"></a>
+
 ## ServicesStableWaiterName
 
 ```python
@@ -697,6 +807,8 @@ from mypy_boto3_ecs.literals import ServicesStableWaiterName
 Values:
 
 - `services_stable`
+
+<a id="settingnametype"></a>
 
 ## SettingNameType
 
@@ -712,6 +824,8 @@ Values:
 - `serviceLongArnFormat`
 - `taskLongArnFormat`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -722,6 +836,8 @@ Values:
 
 - `ASC`
 - `DESC`
+
+<a id="stabilitystatustype"></a>
 
 ## StabilityStatusType
 
@@ -734,6 +850,8 @@ Values:
 - `STABILIZING`
 - `STEADY_STATE`
 
+<a id="targettypetype"></a>
+
 ## TargetTypeType
 
 ```python
@@ -743,6 +861,8 @@ from mypy_boto3_ecs.literals import TargetTypeType
 Values:
 
 - `container-instance`
+
+<a id="taskdefinitionfamilystatustype"></a>
 
 ## TaskDefinitionFamilyStatusType
 
@@ -756,6 +876,8 @@ Values:
 - `ALL`
 - `INACTIVE`
 
+<a id="taskdefinitionfieldtype"></a>
+
 ## TaskDefinitionFieldType
 
 ```python
@@ -766,6 +888,8 @@ Values:
 
 - `TAGS`
 
+<a id="taskdefinitionplacementconstrainttypetype"></a>
+
 ## TaskDefinitionPlacementConstraintTypeType
 
 ```python
@@ -775,6 +899,8 @@ from mypy_boto3_ecs.literals import TaskDefinitionPlacementConstraintTypeType
 Values:
 
 - `memberOf`
+
+<a id="taskdefinitionstatustype"></a>
 
 ## TaskDefinitionStatusType
 
@@ -787,6 +913,8 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
+<a id="taskfieldtype"></a>
+
 ## TaskFieldType
 
 ```python
@@ -797,6 +925,8 @@ Values:
 
 - `TAGS`
 
+<a id="tasksetfieldtype"></a>
+
 ## TaskSetFieldType
 
 ```python
@@ -806,6 +936,8 @@ from mypy_boto3_ecs.literals import TaskSetFieldType
 Values:
 
 - `TAGS`
+
+<a id="taskstopcodetype"></a>
 
 ## TaskStopCodeType
 
@@ -819,6 +951,8 @@ Values:
 - `TaskFailedToStart`
 - `UserInitiated`
 
+<a id="tasksrunningwaitername"></a>
+
 ## TasksRunningWaiterName
 
 ```python
@@ -828,6 +962,8 @@ from mypy_boto3_ecs.literals import TasksRunningWaiterName
 Values:
 
 - `tasks_running`
+
+<a id="tasksstoppedwaitername"></a>
 
 ## TasksStoppedWaiterName
 
@@ -839,6 +975,8 @@ Values:
 
 - `tasks_stopped`
 
+<a id="transportprotocoltype"></a>
+
 ## TransportProtocolType
 
 ```python
@@ -849,6 +987,8 @@ Values:
 
 - `tcp`
 - `udp`
+
+<a id="ulimitnametype"></a>
 
 ## UlimitNameType
 
@@ -873,6 +1013,8 @@ Values:
 - `rttime`
 - `sigpending`
 - `stack`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1182,6 +1324,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -1198,6 +1342,8 @@ Values:
 - `list_task_definition_families`
 - `list_task_definitions`
 - `list_tasks`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-waf-module"></a>
+
 # Typed dictionaries for boto3 WAF module
 
 > [Index](..) > [WAF](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
 type annotations stubs module
-[mypy_boto3_waf](https://pypi.org/project/mypy-boto3-waf/).
+[mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
 
 - [Typed dictionaries for boto3 WAF module](#typed-dictionaries-for-boto3-waf-module)
   - [ActivatedRuleTypeDef](#activatedruletypedef)
@@ -214,6 +216,8 @@ type annotations stubs module
   - [XssMatchSetUpdateTypeDef](#xssmatchsetupdatetypedef)
   - [XssMatchTupleTypeDef](#xssmatchtupletypedef)
 
+<a id="activatedruletypedef"></a>
+
 ## ActivatedRuleTypeDef
 
 ```python
@@ -234,6 +238,8 @@ Optional fields:
 - `ExcludedRules`:
   `List`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
 
+<a id="bytematchsetsummarytypedef"></a>
+
 ## ByteMatchSetSummaryTypeDef
 
 ```python
@@ -244,6 +250,8 @@ Required fields:
 
 - `ByteMatchSetId`: `str`
 - `Name`: `str`
+
+<a id="bytematchsettypedef"></a>
 
 ## ByteMatchSetTypeDef
 
@@ -261,6 +269,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="bytematchsetupdatetypedef"></a>
+
 ## ByteMatchSetUpdateTypeDef
 
 ```python
@@ -272,6 +282,8 @@ Required fields:
 - `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `ByteMatchTuple`:
   [ByteMatchTupleTypeDef](./type_defs.md#bytematchtupletypedef)
+
+<a id="bytematchtupletypedef"></a>
 
 ## ByteMatchTupleTypeDef
 
@@ -288,6 +300,8 @@ Required fields:
 - `PositionalConstraint`:
   [PositionalConstraintType](./literals.md#positionalconstrainttype)
 
+<a id="createbytematchsetrequestrequesttypedef"></a>
+
 ## CreateByteMatchSetRequestRequestTypeDef
 
 ```python
@@ -298,6 +312,8 @@ Required fields:
 
 - `Name`: `str`
 - `ChangeToken`: `str`
+
+<a id="createbytematchsetresponsetypedef"></a>
 
 ## CreateByteMatchSetResponseTypeDef
 
@@ -312,6 +328,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="creategeomatchsetrequestrequesttypedef"></a>
+
 ## CreateGeoMatchSetRequestRequestTypeDef
 
 ```python
@@ -322,6 +340,8 @@ Required fields:
 
 - `Name`: `str`
 - `ChangeToken`: `str`
+
+<a id="creategeomatchsetresponsetypedef"></a>
 
 ## CreateGeoMatchSetResponseTypeDef
 
@@ -336,6 +356,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createipsetrequestrequesttypedef"></a>
+
 ## CreateIPSetRequestRequestTypeDef
 
 ```python
@@ -346,6 +368,8 @@ Required fields:
 
 - `Name`: `str`
 - `ChangeToken`: `str`
+
+<a id="createipsetresponsetypedef"></a>
 
 ## CreateIPSetResponseTypeDef
 
@@ -359,6 +383,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createratebasedrulerequestrequesttypedef"></a>
 
 ## CreateRateBasedRuleRequestRequestTypeDef
 
@@ -378,6 +404,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createratebasedruleresponsetypedef"></a>
+
 ## CreateRateBasedRuleResponseTypeDef
 
 ```python
@@ -391,6 +419,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createregexmatchsetrequestrequesttypedef"></a>
+
 ## CreateRegexMatchSetRequestRequestTypeDef
 
 ```python
@@ -401,6 +431,8 @@ Required fields:
 
 - `Name`: `str`
 - `ChangeToken`: `str`
+
+<a id="createregexmatchsetresponsetypedef"></a>
 
 ## CreateRegexMatchSetResponseTypeDef
 
@@ -415,6 +447,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createregexpatternsetrequestrequesttypedef"></a>
+
 ## CreateRegexPatternSetRequestRequestTypeDef
 
 ```python
@@ -425,6 +459,8 @@ Required fields:
 
 - `Name`: `str`
 - `ChangeToken`: `str`
+
+<a id="createregexpatternsetresponsetypedef"></a>
 
 ## CreateRegexPatternSetResponseTypeDef
 
@@ -439,6 +475,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrulegrouprequestrequesttypedef"></a>
 
 ## CreateRuleGroupRequestRequestTypeDef
 
@@ -456,6 +494,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createrulegroupresponsetypedef"></a>
+
 ## CreateRuleGroupResponseTypeDef
 
 ```python
@@ -468,6 +508,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrulerequestrequesttypedef"></a>
 
 ## CreateRuleRequestRequestTypeDef
 
@@ -485,6 +527,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createruleresponsetypedef"></a>
+
 ## CreateRuleResponseTypeDef
 
 ```python
@@ -498,6 +542,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createsizeconstraintsetrequestrequesttypedef"></a>
+
 ## CreateSizeConstraintSetRequestRequestTypeDef
 
 ```python
@@ -508,6 +554,8 @@ Required fields:
 
 - `Name`: `str`
 - `ChangeToken`: `str`
+
+<a id="createsizeconstraintsetresponsetypedef"></a>
 
 ## CreateSizeConstraintSetResponseTypeDef
 
@@ -523,6 +571,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createsqlinjectionmatchsetrequestrequesttypedef"></a>
+
 ## CreateSqlInjectionMatchSetRequestRequestTypeDef
 
 ```python
@@ -533,6 +583,8 @@ Required fields:
 
 - `Name`: `str`
 - `ChangeToken`: `str`
+
+<a id="createsqlinjectionmatchsetresponsetypedef"></a>
 
 ## CreateSqlInjectionMatchSetResponseTypeDef
 
@@ -548,6 +600,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createwebaclmigrationstackrequestrequesttypedef"></a>
+
 ## CreateWebACLMigrationStackRequestRequestTypeDef
 
 ```python
@@ -560,6 +614,8 @@ Required fields:
 - `S3BucketName`: `str`
 - `IgnoreUnsupportedType`: `bool`
 
+<a id="createwebaclmigrationstackresponsetypedef"></a>
+
 ## CreateWebACLMigrationStackResponseTypeDef
 
 ```python
@@ -571,6 +627,8 @@ Required fields:
 - `S3ObjectUrl`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createwebaclrequestrequesttypedef"></a>
 
 ## CreateWebACLRequestRequestTypeDef
 
@@ -589,6 +647,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createwebaclresponsetypedef"></a>
+
 ## CreateWebACLResponseTypeDef
 
 ```python
@@ -602,6 +662,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createxssmatchsetrequestrequesttypedef"></a>
+
 ## CreateXssMatchSetRequestRequestTypeDef
 
 ```python
@@ -612,6 +674,8 @@ Required fields:
 
 - `Name`: `str`
 - `ChangeToken`: `str`
+
+<a id="createxssmatchsetresponsetypedef"></a>
 
 ## CreateXssMatchSetResponseTypeDef
 
@@ -626,6 +690,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebytematchsetrequestrequesttypedef"></a>
+
 ## DeleteByteMatchSetRequestRequestTypeDef
 
 ```python
@@ -636,6 +702,8 @@ Required fields:
 
 - `ByteMatchSetId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deletebytematchsetresponsetypedef"></a>
 
 ## DeleteByteMatchSetResponseTypeDef
 
@@ -649,6 +717,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletegeomatchsetrequestrequesttypedef"></a>
+
 ## DeleteGeoMatchSetRequestRequestTypeDef
 
 ```python
@@ -659,6 +729,8 @@ Required fields:
 
 - `GeoMatchSetId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deletegeomatchsetresponsetypedef"></a>
 
 ## DeleteGeoMatchSetResponseTypeDef
 
@@ -672,6 +744,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteipsetrequestrequesttypedef"></a>
+
 ## DeleteIPSetRequestRequestTypeDef
 
 ```python
@@ -682,6 +756,8 @@ Required fields:
 
 - `IPSetId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deleteipsetresponsetypedef"></a>
 
 ## DeleteIPSetResponseTypeDef
 
@@ -695,6 +771,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteloggingconfigurationrequestrequesttypedef"></a>
+
 ## DeleteLoggingConfigurationRequestRequestTypeDef
 
 ```python
@@ -704,6 +782,8 @@ from mypy_boto3_waf.type_defs import DeleteLoggingConfigurationRequestRequestTyp
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="deletepermissionpolicyrequestrequesttypedef"></a>
 
 ## DeletePermissionPolicyRequestRequestTypeDef
 
@@ -715,6 +795,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 
+<a id="deleteratebasedrulerequestrequesttypedef"></a>
+
 ## DeleteRateBasedRuleRequestRequestTypeDef
 
 ```python
@@ -725,6 +807,8 @@ Required fields:
 
 - `RuleId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deleteratebasedruleresponsetypedef"></a>
 
 ## DeleteRateBasedRuleResponseTypeDef
 
@@ -738,6 +822,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteregexmatchsetrequestrequesttypedef"></a>
+
 ## DeleteRegexMatchSetRequestRequestTypeDef
 
 ```python
@@ -748,6 +834,8 @@ Required fields:
 
 - `RegexMatchSetId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deleteregexmatchsetresponsetypedef"></a>
 
 ## DeleteRegexMatchSetResponseTypeDef
 
@@ -761,6 +849,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteregexpatternsetrequestrequesttypedef"></a>
+
 ## DeleteRegexPatternSetRequestRequestTypeDef
 
 ```python
@@ -771,6 +861,8 @@ Required fields:
 
 - `RegexPatternSetId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deleteregexpatternsetresponsetypedef"></a>
 
 ## DeleteRegexPatternSetResponseTypeDef
 
@@ -784,6 +876,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleterulegrouprequestrequesttypedef"></a>
+
 ## DeleteRuleGroupRequestRequestTypeDef
 
 ```python
@@ -794,6 +888,8 @@ Required fields:
 
 - `RuleGroupId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deleterulegroupresponsetypedef"></a>
 
 ## DeleteRuleGroupResponseTypeDef
 
@@ -807,6 +903,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleterulerequestrequesttypedef"></a>
+
 ## DeleteRuleRequestRequestTypeDef
 
 ```python
@@ -817,6 +915,8 @@ Required fields:
 
 - `RuleId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deleteruleresponsetypedef"></a>
 
 ## DeleteRuleResponseTypeDef
 
@@ -830,6 +930,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletesizeconstraintsetrequestrequesttypedef"></a>
+
 ## DeleteSizeConstraintSetRequestRequestTypeDef
 
 ```python
@@ -840,6 +942,8 @@ Required fields:
 
 - `SizeConstraintSetId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deletesizeconstraintsetresponsetypedef"></a>
 
 ## DeleteSizeConstraintSetResponseTypeDef
 
@@ -853,6 +957,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletesqlinjectionmatchsetrequestrequesttypedef"></a>
+
 ## DeleteSqlInjectionMatchSetRequestRequestTypeDef
 
 ```python
@@ -863,6 +969,8 @@ Required fields:
 
 - `SqlInjectionMatchSetId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deletesqlinjectionmatchsetresponsetypedef"></a>
 
 ## DeleteSqlInjectionMatchSetResponseTypeDef
 
@@ -876,6 +984,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletewebaclrequestrequesttypedef"></a>
+
 ## DeleteWebACLRequestRequestTypeDef
 
 ```python
@@ -886,6 +996,8 @@ Required fields:
 
 - `WebACLId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deletewebaclresponsetypedef"></a>
 
 ## DeleteWebACLResponseTypeDef
 
@@ -899,6 +1011,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletexssmatchsetrequestrequesttypedef"></a>
+
 ## DeleteXssMatchSetRequestRequestTypeDef
 
 ```python
@@ -909,6 +1023,8 @@ Required fields:
 
 - `XssMatchSetId`: `str`
 - `ChangeToken`: `str`
+
+<a id="deletexssmatchsetresponsetypedef"></a>
 
 ## DeleteXssMatchSetResponseTypeDef
 
@@ -922,6 +1038,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="excludedruletypedef"></a>
+
 ## ExcludedRuleTypeDef
 
 ```python
@@ -931,6 +1049,8 @@ from mypy_boto3_waf.type_defs import ExcludedRuleTypeDef
 Required fields:
 
 - `RuleId`: `str`
+
+<a id="fieldtomatchtypedef"></a>
 
 ## FieldToMatchTypeDef
 
@@ -946,6 +1066,8 @@ Optional fields:
 
 - `Data`: `str`
 
+<a id="geomatchconstrainttypedef"></a>
+
 ## GeoMatchConstraintTypeDef
 
 ```python
@@ -959,6 +1081,8 @@ Required fields:
 - `Value`:
   [GeoMatchConstraintValueType](./literals.md#geomatchconstraintvaluetype)
 
+<a id="geomatchsetsummarytypedef"></a>
+
 ## GeoMatchSetSummaryTypeDef
 
 ```python
@@ -969,6 +1093,8 @@ Required fields:
 
 - `GeoMatchSetId`: `str`
 - `Name`: `str`
+
+<a id="geomatchsettypedef"></a>
 
 ## GeoMatchSetTypeDef
 
@@ -986,6 +1112,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="geomatchsetupdatetypedef"></a>
+
 ## GeoMatchSetUpdateTypeDef
 
 ```python
@@ -998,6 +1126,8 @@ Required fields:
 - `GeoMatchConstraint`:
   [GeoMatchConstraintTypeDef](./type_defs.md#geomatchconstrainttypedef)
 
+<a id="getbytematchsetrequestrequesttypedef"></a>
+
 ## GetByteMatchSetRequestRequestTypeDef
 
 ```python
@@ -1007,6 +1137,8 @@ from mypy_boto3_waf.type_defs import GetByteMatchSetRequestRequestTypeDef
 Required fields:
 
 - `ByteMatchSetId`: `str`
+
+<a id="getbytematchsetresponsetypedef"></a>
 
 ## GetByteMatchSetResponseTypeDef
 
@@ -1020,6 +1152,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getchangetokenresponsetypedef"></a>
+
 ## GetChangeTokenResponseTypeDef
 
 ```python
@@ -1032,6 +1166,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getchangetokenstatusrequestrequesttypedef"></a>
+
 ## GetChangeTokenStatusRequestRequestTypeDef
 
 ```python
@@ -1041,6 +1177,8 @@ from mypy_boto3_waf.type_defs import GetChangeTokenStatusRequestRequestTypeDef
 Required fields:
 
 - `ChangeToken`: `str`
+
+<a id="getchangetokenstatusresponsetypedef"></a>
 
 ## GetChangeTokenStatusResponseTypeDef
 
@@ -1055,6 +1193,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgeomatchsetrequestrequesttypedef"></a>
+
 ## GetGeoMatchSetRequestRequestTypeDef
 
 ```python
@@ -1064,6 +1204,8 @@ from mypy_boto3_waf.type_defs import GetGeoMatchSetRequestRequestTypeDef
 Required fields:
 
 - `GeoMatchSetId`: `str`
+
+<a id="getgeomatchsetresponsetypedef"></a>
 
 ## GetGeoMatchSetResponseTypeDef
 
@@ -1077,6 +1219,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getipsetrequestrequesttypedef"></a>
+
 ## GetIPSetRequestRequestTypeDef
 
 ```python
@@ -1086,6 +1230,8 @@ from mypy_boto3_waf.type_defs import GetIPSetRequestRequestTypeDef
 Required fields:
 
 - `IPSetId`: `str`
+
+<a id="getipsetresponsetypedef"></a>
 
 ## GetIPSetResponseTypeDef
 
@@ -1099,6 +1245,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getloggingconfigurationrequestrequesttypedef"></a>
+
 ## GetLoggingConfigurationRequestRequestTypeDef
 
 ```python
@@ -1108,6 +1256,8 @@ from mypy_boto3_waf.type_defs import GetLoggingConfigurationRequestRequestTypeDe
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="getloggingconfigurationresponsetypedef"></a>
 
 ## GetLoggingConfigurationResponseTypeDef
 
@@ -1122,6 +1272,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpermissionpolicyrequestrequesttypedef"></a>
+
 ## GetPermissionPolicyRequestRequestTypeDef
 
 ```python
@@ -1131,6 +1283,8 @@ from mypy_boto3_waf.type_defs import GetPermissionPolicyRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="getpermissionpolicyresponsetypedef"></a>
 
 ## GetPermissionPolicyResponseTypeDef
 
@@ -1143,6 +1297,8 @@ Required fields:
 - `Policy`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getratebasedrulemanagedkeysrequestrequesttypedef"></a>
 
 ## GetRateBasedRuleManagedKeysRequestRequestTypeDef
 
@@ -1158,6 +1314,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 
+<a id="getratebasedrulemanagedkeysresponsetypedef"></a>
+
 ## GetRateBasedRuleManagedKeysResponseTypeDef
 
 ```python
@@ -1171,6 +1329,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getratebasedrulerequestrequesttypedef"></a>
+
 ## GetRateBasedRuleRequestRequestTypeDef
 
 ```python
@@ -1180,6 +1340,8 @@ from mypy_boto3_waf.type_defs import GetRateBasedRuleRequestRequestTypeDef
 Required fields:
 
 - `RuleId`: `str`
+
+<a id="getratebasedruleresponsetypedef"></a>
 
 ## GetRateBasedRuleResponseTypeDef
 
@@ -1193,6 +1355,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getregexmatchsetrequestrequesttypedef"></a>
+
 ## GetRegexMatchSetRequestRequestTypeDef
 
 ```python
@@ -1202,6 +1366,8 @@ from mypy_boto3_waf.type_defs import GetRegexMatchSetRequestRequestTypeDef
 Required fields:
 
 - `RegexMatchSetId`: `str`
+
+<a id="getregexmatchsetresponsetypedef"></a>
 
 ## GetRegexMatchSetResponseTypeDef
 
@@ -1215,6 +1381,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getregexpatternsetrequestrequesttypedef"></a>
+
 ## GetRegexPatternSetRequestRequestTypeDef
 
 ```python
@@ -1224,6 +1392,8 @@ from mypy_boto3_waf.type_defs import GetRegexPatternSetRequestRequestTypeDef
 Required fields:
 
 - `RegexPatternSetId`: `str`
+
+<a id="getregexpatternsetresponsetypedef"></a>
 
 ## GetRegexPatternSetResponseTypeDef
 
@@ -1238,6 +1408,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrulegrouprequestrequesttypedef"></a>
+
 ## GetRuleGroupRequestRequestTypeDef
 
 ```python
@@ -1247,6 +1419,8 @@ from mypy_boto3_waf.type_defs import GetRuleGroupRequestRequestTypeDef
 Required fields:
 
 - `RuleGroupId`: `str`
+
+<a id="getrulegroupresponsetypedef"></a>
 
 ## GetRuleGroupResponseTypeDef
 
@@ -1260,6 +1434,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrulerequestrequesttypedef"></a>
+
 ## GetRuleRequestRequestTypeDef
 
 ```python
@@ -1269,6 +1445,8 @@ from mypy_boto3_waf.type_defs import GetRuleRequestRequestTypeDef
 Required fields:
 
 - `RuleId`: `str`
+
+<a id="getruleresponsetypedef"></a>
 
 ## GetRuleResponseTypeDef
 
@@ -1282,6 +1460,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsampledrequestsrequestrequesttypedef"></a>
+
 ## GetSampledRequestsRequestRequestTypeDef
 
 ```python
@@ -1294,6 +1474,8 @@ Required fields:
 - `RuleId`: `str`
 - `TimeWindow`: [TimeWindowTypeDef](./type_defs.md#timewindowtypedef)
 - `MaxItems`: `int`
+
+<a id="getsampledrequestsresponsetypedef"></a>
 
 ## GetSampledRequestsResponseTypeDef
 
@@ -1310,6 +1492,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsizeconstraintsetrequestrequesttypedef"></a>
+
 ## GetSizeConstraintSetRequestRequestTypeDef
 
 ```python
@@ -1319,6 +1503,8 @@ from mypy_boto3_waf.type_defs import GetSizeConstraintSetRequestRequestTypeDef
 Required fields:
 
 - `SizeConstraintSetId`: `str`
+
+<a id="getsizeconstraintsetresponsetypedef"></a>
 
 ## GetSizeConstraintSetResponseTypeDef
 
@@ -1333,6 +1519,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsqlinjectionmatchsetrequestrequesttypedef"></a>
+
 ## GetSqlInjectionMatchSetRequestRequestTypeDef
 
 ```python
@@ -1342,6 +1530,8 @@ from mypy_boto3_waf.type_defs import GetSqlInjectionMatchSetRequestRequestTypeDe
 Required fields:
 
 - `SqlInjectionMatchSetId`: `str`
+
+<a id="getsqlinjectionmatchsetresponsetypedef"></a>
 
 ## GetSqlInjectionMatchSetResponseTypeDef
 
@@ -1356,6 +1546,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwebaclrequestrequesttypedef"></a>
+
 ## GetWebACLRequestRequestTypeDef
 
 ```python
@@ -1365,6 +1557,8 @@ from mypy_boto3_waf.type_defs import GetWebACLRequestRequestTypeDef
 Required fields:
 
 - `WebACLId`: `str`
+
+<a id="getwebaclresponsetypedef"></a>
 
 ## GetWebACLResponseTypeDef
 
@@ -1378,6 +1572,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getxssmatchsetrequestrequesttypedef"></a>
+
 ## GetXssMatchSetRequestRequestTypeDef
 
 ```python
@@ -1387,6 +1583,8 @@ from mypy_boto3_waf.type_defs import GetXssMatchSetRequestRequestTypeDef
 Required fields:
 
 - `XssMatchSetId`: `str`
+
+<a id="getxssmatchsetresponsetypedef"></a>
 
 ## GetXssMatchSetResponseTypeDef
 
@@ -1400,6 +1598,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="httpheadertypedef"></a>
+
 ## HTTPHeaderTypeDef
 
 ```python
@@ -1410,6 +1610,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="httprequesttypedef"></a>
 
 ## HTTPRequestTypeDef
 
@@ -1426,6 +1628,8 @@ Optional fields:
 - `HTTPVersion`: `str`
 - `Headers`: `List`\[[HTTPHeaderTypeDef](./type_defs.md#httpheadertypedef)\]
 
+<a id="ipsetdescriptortypedef"></a>
+
 ## IPSetDescriptorTypeDef
 
 ```python
@@ -1437,6 +1641,8 @@ Required fields:
 - `Type`: [IPSetDescriptorTypeType](./literals.md#ipsetdescriptortypetype)
 - `Value`: `str`
 
+<a id="ipsetsummarytypedef"></a>
+
 ## IPSetSummaryTypeDef
 
 ```python
@@ -1447,6 +1653,8 @@ Required fields:
 
 - `IPSetId`: `str`
 - `Name`: `str`
+
+<a id="ipsettypedef"></a>
 
 ## IPSetTypeDef
 
@@ -1464,6 +1672,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="ipsetupdatetypedef"></a>
+
 ## IPSetUpdateTypeDef
 
 ```python
@@ -1476,6 +1686,8 @@ Required fields:
 - `IPSetDescriptor`:
   [IPSetDescriptorTypeDef](./type_defs.md#ipsetdescriptortypedef)
 
+<a id="listactivatedrulesinrulegrouprequestrequesttypedef"></a>
+
 ## ListActivatedRulesInRuleGroupRequestRequestTypeDef
 
 ```python
@@ -1487,6 +1699,8 @@ Optional fields:
 - `RuleGroupId`: `str`
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listactivatedrulesinrulegroupresponsetypedef"></a>
 
 ## ListActivatedRulesInRuleGroupResponseTypeDef
 
@@ -1502,6 +1716,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbytematchsetsrequestrequesttypedef"></a>
+
 ## ListByteMatchSetsRequestRequestTypeDef
 
 ```python
@@ -1512,6 +1728,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listbytematchsetsresponsetypedef"></a>
 
 ## ListByteMatchSetsResponseTypeDef
 
@@ -1527,6 +1745,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgeomatchsetsrequestrequesttypedef"></a>
+
 ## ListGeoMatchSetsRequestRequestTypeDef
 
 ```python
@@ -1537,6 +1757,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listgeomatchsetsresponsetypedef"></a>
 
 ## ListGeoMatchSetsResponseTypeDef
 
@@ -1552,6 +1774,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listipsetsrequestrequesttypedef"></a>
+
 ## ListIPSetsRequestRequestTypeDef
 
 ```python
@@ -1562,6 +1786,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listipsetsresponsetypedef"></a>
 
 ## ListIPSetsResponseTypeDef
 
@@ -1576,6 +1802,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listloggingconfigurationsrequestrequesttypedef"></a>
+
 ## ListLoggingConfigurationsRequestRequestTypeDef
 
 ```python
@@ -1586,6 +1814,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listloggingconfigurationsresponsetypedef"></a>
 
 ## ListLoggingConfigurationsResponseTypeDef
 
@@ -1601,6 +1831,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listratebasedrulesrequestrequesttypedef"></a>
+
 ## ListRateBasedRulesRequestRequestTypeDef
 
 ```python
@@ -1611,6 +1843,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listratebasedrulesresponsetypedef"></a>
 
 ## ListRateBasedRulesResponseTypeDef
 
@@ -1625,6 +1859,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listregexmatchsetsrequestrequesttypedef"></a>
+
 ## ListRegexMatchSetsRequestRequestTypeDef
 
 ```python
@@ -1635,6 +1871,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listregexmatchsetsresponsetypedef"></a>
 
 ## ListRegexMatchSetsResponseTypeDef
 
@@ -1650,6 +1888,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listregexpatternsetsrequestrequesttypedef"></a>
+
 ## ListRegexPatternSetsRequestRequestTypeDef
 
 ```python
@@ -1660,6 +1900,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listregexpatternsetsresponsetypedef"></a>
 
 ## ListRegexPatternSetsResponseTypeDef
 
@@ -1675,6 +1917,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrulegroupsrequestrequesttypedef"></a>
+
 ## ListRuleGroupsRequestRequestTypeDef
 
 ```python
@@ -1685,6 +1929,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listrulegroupsresponsetypedef"></a>
 
 ## ListRuleGroupsResponseTypeDef
 
@@ -1700,6 +1946,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrulesrequestrequesttypedef"></a>
+
 ## ListRulesRequestRequestTypeDef
 
 ```python
@@ -1710,6 +1958,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listrulesresponsetypedef"></a>
 
 ## ListRulesResponseTypeDef
 
@@ -1724,6 +1974,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsizeconstraintsetsrequestrequesttypedef"></a>
+
 ## ListSizeConstraintSetsRequestRequestTypeDef
 
 ```python
@@ -1734,6 +1986,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listsizeconstraintsetsresponsetypedef"></a>
 
 ## ListSizeConstraintSetsResponseTypeDef
 
@@ -1749,6 +2003,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsqlinjectionmatchsetsrequestrequesttypedef"></a>
+
 ## ListSqlInjectionMatchSetsRequestRequestTypeDef
 
 ```python
@@ -1759,6 +2015,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listsqlinjectionmatchsetsresponsetypedef"></a>
 
 ## ListSqlInjectionMatchSetsResponseTypeDef
 
@@ -1774,6 +2032,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsubscribedrulegroupsrequestrequesttypedef"></a>
+
 ## ListSubscribedRuleGroupsRequestRequestTypeDef
 
 ```python
@@ -1784,6 +2044,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listsubscribedrulegroupsresponsetypedef"></a>
 
 ## ListSubscribedRuleGroupsResponseTypeDef
 
@@ -1798,6 +2060,8 @@ Required fields:
   `List`\[[SubscribedRuleGroupSummaryTypeDef](./type_defs.md#subscribedrulegroupsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -1814,6 +2078,8 @@ Optional fields:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -1828,6 +2094,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listwebaclsrequestrequesttypedef"></a>
+
 ## ListWebACLsRequestRequestTypeDef
 
 ```python
@@ -1838,6 +2106,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listwebaclsresponsetypedef"></a>
 
 ## ListWebACLsResponseTypeDef
 
@@ -1853,6 +2123,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listxssmatchsetsrequestrequesttypedef"></a>
+
 ## ListXssMatchSetsRequestRequestTypeDef
 
 ```python
@@ -1863,6 +2135,8 @@ Optional fields:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
+
+<a id="listxssmatchsetsresponsetypedef"></a>
 
 ## ListXssMatchSetsResponseTypeDef
 
@@ -1877,6 +2151,8 @@ Required fields:
   `List`\[[XssMatchSetSummaryTypeDef](./type_defs.md#xssmatchsetsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="loggingconfigurationtypedef"></a>
 
 ## LoggingConfigurationTypeDef
 
@@ -1894,6 +2170,8 @@ Optional fields:
 - `RedactedFields`:
   `List`\[[FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1905,6 +2183,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="predicatetypedef"></a>
 
 ## PredicateTypeDef
 
@@ -1918,6 +2198,8 @@ Required fields:
 - `Type`: [PredicateTypeType](./literals.md#predicatetypetype)
 - `DataId`: `str`
 
+<a id="putloggingconfigurationrequestrequesttypedef"></a>
+
 ## PutLoggingConfigurationRequestRequestTypeDef
 
 ```python
@@ -1928,6 +2210,8 @@ Required fields:
 
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+
+<a id="putloggingconfigurationresponsetypedef"></a>
 
 ## PutLoggingConfigurationResponseTypeDef
 
@@ -1942,6 +2226,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putpermissionpolicyrequestrequesttypedef"></a>
+
 ## PutPermissionPolicyRequestRequestTypeDef
 
 ```python
@@ -1952,6 +2238,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Policy`: `str`
+
+<a id="ratebasedruletypedef"></a>
 
 ## RateBasedRuleTypeDef
 
@@ -1972,6 +2260,8 @@ Optional fields:
 - `Name`: `str`
 - `MetricName`: `str`
 
+<a id="regexmatchsetsummarytypedef"></a>
+
 ## RegexMatchSetSummaryTypeDef
 
 ```python
@@ -1982,6 +2272,8 @@ Required fields:
 
 - `RegexMatchSetId`: `str`
 - `Name`: `str`
+
+<a id="regexmatchsettypedef"></a>
 
 ## RegexMatchSetTypeDef
 
@@ -1996,6 +2288,8 @@ Optional fields:
 - `RegexMatchTuples`:
   `List`\[[RegexMatchTupleTypeDef](./type_defs.md#regexmatchtupletypedef)\]
 
+<a id="regexmatchsetupdatetypedef"></a>
+
 ## RegexMatchSetUpdateTypeDef
 
 ```python
@@ -2007,6 +2301,8 @@ Required fields:
 - `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `RegexMatchTuple`:
   [RegexMatchTupleTypeDef](./type_defs.md#regexmatchtupletypedef)
+
+<a id="regexmatchtupletypedef"></a>
 
 ## RegexMatchTupleTypeDef
 
@@ -2021,6 +2317,8 @@ Required fields:
   [TextTransformationType](./literals.md#texttransformationtype)
 - `RegexPatternSetId`: `str`
 
+<a id="regexpatternsetsummarytypedef"></a>
+
 ## RegexPatternSetSummaryTypeDef
 
 ```python
@@ -2031,6 +2329,8 @@ Required fields:
 
 - `RegexPatternSetId`: `str`
 - `Name`: `str`
+
+<a id="regexpatternsettypedef"></a>
 
 ## RegexPatternSetTypeDef
 
@@ -2047,6 +2347,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="regexpatternsetupdatetypedef"></a>
+
 ## RegexPatternSetUpdateTypeDef
 
 ```python
@@ -2057,6 +2359,8 @@ Required fields:
 
 - `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `RegexPatternString`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2072,6 +2376,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="rulegroupsummarytypedef"></a>
+
 ## RuleGroupSummaryTypeDef
 
 ```python
@@ -2082,6 +2388,8 @@ Required fields:
 
 - `RuleGroupId`: `str`
 - `Name`: `str`
+
+<a id="rulegrouptypedef"></a>
 
 ## RuleGroupTypeDef
 
@@ -2098,6 +2406,8 @@ Optional fields:
 - `Name`: `str`
 - `MetricName`: `str`
 
+<a id="rulegroupupdatetypedef"></a>
+
 ## RuleGroupUpdateTypeDef
 
 ```python
@@ -2109,6 +2419,8 @@ Required fields:
 - `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `ActivatedRule`: [ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef)
 
+<a id="rulesummarytypedef"></a>
+
 ## RuleSummaryTypeDef
 
 ```python
@@ -2119,6 +2431,8 @@ Required fields:
 
 - `RuleId`: `str`
 - `Name`: `str`
+
+<a id="ruletypedef"></a>
 
 ## RuleTypeDef
 
@@ -2136,6 +2450,8 @@ Optional fields:
 - `Name`: `str`
 - `MetricName`: `str`
 
+<a id="ruleupdatetypedef"></a>
+
 ## RuleUpdateTypeDef
 
 ```python
@@ -2146,6 +2462,8 @@ Required fields:
 
 - `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
+
+<a id="sampledhttprequesttypedef"></a>
 
 ## SampledHTTPRequestTypeDef
 
@@ -2164,6 +2482,8 @@ Optional fields:
 - `Action`: `str`
 - `RuleWithinRuleGroup`: `str`
 
+<a id="sizeconstraintsetsummarytypedef"></a>
+
 ## SizeConstraintSetSummaryTypeDef
 
 ```python
@@ -2174,6 +2494,8 @@ Required fields:
 
 - `SizeConstraintSetId`: `str`
 - `Name`: `str`
+
+<a id="sizeconstraintsettypedef"></a>
 
 ## SizeConstraintSetTypeDef
 
@@ -2191,6 +2513,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="sizeconstraintsetupdatetypedef"></a>
+
 ## SizeConstraintSetUpdateTypeDef
 
 ```python
@@ -2202,6 +2526,8 @@ Required fields:
 - `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `SizeConstraint`:
   [SizeConstraintTypeDef](./type_defs.md#sizeconstrainttypedef)
+
+<a id="sizeconstrainttypedef"></a>
 
 ## SizeConstraintTypeDef
 
@@ -2218,6 +2544,8 @@ Required fields:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `Size`: `int`
 
+<a id="sqlinjectionmatchsetsummarytypedef"></a>
+
 ## SqlInjectionMatchSetSummaryTypeDef
 
 ```python
@@ -2228,6 +2556,8 @@ Required fields:
 
 - `SqlInjectionMatchSetId`: `str`
 - `Name`: `str`
+
+<a id="sqlinjectionmatchsettypedef"></a>
 
 ## SqlInjectionMatchSetTypeDef
 
@@ -2245,6 +2575,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="sqlinjectionmatchsetupdatetypedef"></a>
+
 ## SqlInjectionMatchSetUpdateTypeDef
 
 ```python
@@ -2256,6 +2588,8 @@ Required fields:
 - `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `SqlInjectionMatchTuple`:
   [SqlInjectionMatchTupleTypeDef](./type_defs.md#sqlinjectionmatchtupletypedef)
+
+<a id="sqlinjectionmatchtupletypedef"></a>
 
 ## SqlInjectionMatchTupleTypeDef
 
@@ -2269,6 +2603,8 @@ Required fields:
 - `TextTransformation`:
   [TextTransformationType](./literals.md#texttransformationtype)
 
+<a id="subscribedrulegroupsummarytypedef"></a>
+
 ## SubscribedRuleGroupSummaryTypeDef
 
 ```python
@@ -2281,6 +2617,8 @@ Required fields:
 - `Name`: `str`
 - `MetricName`: `str`
 
+<a id="taginfoforresourcetypedef"></a>
+
 ## TagInfoForResourceTypeDef
 
 ```python
@@ -2291,6 +2629,8 @@ Optional fields:
 
 - `ResourceARN`: `str`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -2303,6 +2643,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2313,6 +2655,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="timewindowtypedef"></a>
 
 ## TimeWindowTypeDef
 
@@ -2325,6 +2669,8 @@ Required fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2335,6 +2681,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatebytematchsetrequestrequesttypedef"></a>
 
 ## UpdateByteMatchSetRequestRequestTypeDef
 
@@ -2349,6 +2697,8 @@ Required fields:
 - `Updates`:
   `Sequence`\[[ByteMatchSetUpdateTypeDef](./type_defs.md#bytematchsetupdatetypedef)\]
 
+<a id="updatebytematchsetresponsetypedef"></a>
+
 ## UpdateByteMatchSetResponseTypeDef
 
 ```python
@@ -2360,6 +2710,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updategeomatchsetrequestrequesttypedef"></a>
 
 ## UpdateGeoMatchSetRequestRequestTypeDef
 
@@ -2374,6 +2726,8 @@ Required fields:
 - `Updates`:
   `Sequence`\[[GeoMatchSetUpdateTypeDef](./type_defs.md#geomatchsetupdatetypedef)\]
 
+<a id="updategeomatchsetresponsetypedef"></a>
+
 ## UpdateGeoMatchSetResponseTypeDef
 
 ```python
@@ -2385,6 +2739,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateipsetrequestrequesttypedef"></a>
 
 ## UpdateIPSetRequestRequestTypeDef
 
@@ -2399,6 +2755,8 @@ Required fields:
 - `Updates`:
   `Sequence`\[[IPSetUpdateTypeDef](./type_defs.md#ipsetupdatetypedef)\]
 
+<a id="updateipsetresponsetypedef"></a>
+
 ## UpdateIPSetResponseTypeDef
 
 ```python
@@ -2410,6 +2768,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateratebasedrulerequestrequesttypedef"></a>
 
 ## UpdateRateBasedRuleRequestRequestTypeDef
 
@@ -2425,6 +2785,8 @@ Required fields:
   `Sequence`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
 - `RateLimit`: `int`
 
+<a id="updateratebasedruleresponsetypedef"></a>
+
 ## UpdateRateBasedRuleResponseTypeDef
 
 ```python
@@ -2436,6 +2798,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateregexmatchsetrequestrequesttypedef"></a>
 
 ## UpdateRegexMatchSetRequestRequestTypeDef
 
@@ -2450,6 +2814,8 @@ Required fields:
   `Sequence`\[[RegexMatchSetUpdateTypeDef](./type_defs.md#regexmatchsetupdatetypedef)\]
 - `ChangeToken`: `str`
 
+<a id="updateregexmatchsetresponsetypedef"></a>
+
 ## UpdateRegexMatchSetResponseTypeDef
 
 ```python
@@ -2461,6 +2827,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateregexpatternsetrequestrequesttypedef"></a>
 
 ## UpdateRegexPatternSetRequestRequestTypeDef
 
@@ -2475,6 +2843,8 @@ Required fields:
   `Sequence`\[[RegexPatternSetUpdateTypeDef](./type_defs.md#regexpatternsetupdatetypedef)\]
 - `ChangeToken`: `str`
 
+<a id="updateregexpatternsetresponsetypedef"></a>
+
 ## UpdateRegexPatternSetResponseTypeDef
 
 ```python
@@ -2486,6 +2856,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterulegrouprequestrequesttypedef"></a>
 
 ## UpdateRuleGroupRequestRequestTypeDef
 
@@ -2500,6 +2872,8 @@ Required fields:
   `Sequence`\[[RuleGroupUpdateTypeDef](./type_defs.md#rulegroupupdatetypedef)\]
 - `ChangeToken`: `str`
 
+<a id="updaterulegroupresponsetypedef"></a>
+
 ## UpdateRuleGroupResponseTypeDef
 
 ```python
@@ -2511,6 +2885,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterulerequestrequesttypedef"></a>
 
 ## UpdateRuleRequestRequestTypeDef
 
@@ -2525,6 +2901,8 @@ Required fields:
 - `Updates`:
   `Sequence`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
 
+<a id="updateruleresponsetypedef"></a>
+
 ## UpdateRuleResponseTypeDef
 
 ```python
@@ -2536,6 +2914,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesizeconstraintsetrequestrequesttypedef"></a>
 
 ## UpdateSizeConstraintSetRequestRequestTypeDef
 
@@ -2550,6 +2930,8 @@ Required fields:
 - `Updates`:
   `Sequence`\[[SizeConstraintSetUpdateTypeDef](./type_defs.md#sizeconstraintsetupdatetypedef)\]
 
+<a id="updatesizeconstraintsetresponsetypedef"></a>
+
 ## UpdateSizeConstraintSetResponseTypeDef
 
 ```python
@@ -2561,6 +2943,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesqlinjectionmatchsetrequestrequesttypedef"></a>
 
 ## UpdateSqlInjectionMatchSetRequestRequestTypeDef
 
@@ -2575,6 +2959,8 @@ Required fields:
 - `Updates`:
   `Sequence`\[[SqlInjectionMatchSetUpdateTypeDef](./type_defs.md#sqlinjectionmatchsetupdatetypedef)\]
 
+<a id="updatesqlinjectionmatchsetresponsetypedef"></a>
+
 ## UpdateSqlInjectionMatchSetResponseTypeDef
 
 ```python
@@ -2586,6 +2972,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatewebaclrequestrequesttypedef"></a>
 
 ## UpdateWebACLRequestRequestTypeDef
 
@@ -2604,6 +2992,8 @@ Optional fields:
   `Sequence`\[[WebACLUpdateTypeDef](./type_defs.md#webaclupdatetypedef)\]
 - `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
 
+<a id="updatewebaclresponsetypedef"></a>
+
 ## UpdateWebACLResponseTypeDef
 
 ```python
@@ -2615,6 +3005,8 @@ Required fields:
 - `ChangeToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatexssmatchsetrequestrequesttypedef"></a>
 
 ## UpdateXssMatchSetRequestRequestTypeDef
 
@@ -2629,6 +3021,8 @@ Required fields:
 - `Updates`:
   `Sequence`\[[XssMatchSetUpdateTypeDef](./type_defs.md#xssmatchsetupdatetypedef)\]
 
+<a id="updatexssmatchsetresponsetypedef"></a>
+
 ## UpdateXssMatchSetResponseTypeDef
 
 ```python
@@ -2641,6 +3035,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="wafactiontypedef"></a>
+
 ## WafActionTypeDef
 
 ```python
@@ -2650,6 +3046,8 @@ from mypy_boto3_waf.type_defs import WafActionTypeDef
 Required fields:
 
 - `Type`: [WafActionTypeType](./literals.md#wafactiontypetype)
+
+<a id="wafoverrideactiontypedef"></a>
 
 ## WafOverrideActionTypeDef
 
@@ -2661,6 +3059,8 @@ Required fields:
 
 - `Type`: [WafOverrideActionTypeType](./literals.md#wafoverrideactiontypetype)
 
+<a id="webaclsummarytypedef"></a>
+
 ## WebACLSummaryTypeDef
 
 ```python
@@ -2671,6 +3071,8 @@ Required fields:
 
 - `WebACLId`: `str`
 - `Name`: `str`
+
+<a id="webacltypedef"></a>
 
 ## WebACLTypeDef
 
@@ -2691,6 +3093,8 @@ Optional fields:
 - `MetricName`: `str`
 - `WebACLArn`: `str`
 
+<a id="webaclupdatetypedef"></a>
+
 ## WebACLUpdateTypeDef
 
 ```python
@@ -2702,6 +3106,8 @@ Required fields:
 - `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `ActivatedRule`: [ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef)
 
+<a id="xssmatchsetsummarytypedef"></a>
+
 ## XssMatchSetSummaryTypeDef
 
 ```python
@@ -2712,6 +3118,8 @@ Required fields:
 
 - `XssMatchSetId`: `str`
 - `Name`: `str`
+
+<a id="xssmatchsettypedef"></a>
 
 ## XssMatchSetTypeDef
 
@@ -2729,6 +3137,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="xssmatchsetupdatetypedef"></a>
+
 ## XssMatchSetUpdateTypeDef
 
 ```python
@@ -2739,6 +3149,8 @@ Required fields:
 
 - `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `XssMatchTuple`: [XssMatchTupleTypeDef](./type_defs.md#xssmatchtupletypedef)
+
+<a id="xssmatchtupletypedef"></a>
 
 ## XssMatchTupleTypeDef
 

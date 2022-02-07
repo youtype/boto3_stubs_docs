@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-cloudtrail-module"></a>
+
 # Paginators for boto3 CloudTrail module
 
 > [Index](..) > [CloudTrail](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
 type annotations stubs module
-[mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
+[mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 - [Paginators for boto3 CloudTrail module](#paginators-for-boto3-cloudtrail-module)
   - [ListPublicKeysPaginator](#listpublickeyspaginator)
   - [ListTagsPaginator](#listtagspaginator)
   - [ListTrailsPaginator](#listtrailspaginator)
   - [LookupEventsPaginator](#lookupeventspaginator)
+
+<a id="listpublickeyspaginator"></a>
 
 ## ListPublicKeysPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudtrail.paginator import ListPublicKeysPaginator
 
 def get_list_public_keys_paginator() -> ListPublicKeysPaginator:
-    return boto3.client("cloudtrail").get_paginator("list_public_keys")
+    return Session().client("cloudtrail").get_paginator("list_public_keys")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `ListPublicKeysPaginator.paginate` method:
 `ListPublicKeysPaginator.paginate` returns
 `_PageIterator`\[[ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef)\].
 
+<a id="listtagspaginator"></a>
+
 ## ListTagsPaginator
 
 Type annotations for `boto3.client("cloudtrail").get_paginator("list_tags")`.
@@ -47,10 +55,12 @@ Type annotations for `boto3.client("cloudtrail").get_paginator("list_tags")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudtrail.paginator import ListTagsPaginator
 
 def get_list_tags_paginator() -> ListTagsPaginator:
-    return boto3.client("cloudtrail").get_paginator("list_tags")
+    return Session().client("cloudtrail").get_paginator("list_tags")
 ```
 
 Boto3 documentation:
@@ -65,6 +75,8 @@ Arguments for `ListTagsPaginator.paginate` method:
 `ListTagsPaginator.paginate` returns
 `_PageIterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].
 
+<a id="listtrailspaginator"></a>
+
 ## ListTrailsPaginator
 
 Type annotations for `boto3.client("cloudtrail").get_paginator("list_trails")`.
@@ -72,10 +84,12 @@ Type annotations for `boto3.client("cloudtrail").get_paginator("list_trails")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudtrail.paginator import ListTrailsPaginator
 
 def get_list_trails_paginator() -> ListTrailsPaginator:
-    return boto3.client("cloudtrail").get_paginator("list_trails")
+    return Session().client("cloudtrail").get_paginator("list_trails")
 ```
 
 Boto3 documentation:
@@ -89,6 +103,8 @@ Arguments for `ListTrailsPaginator.paginate` method:
 `ListTrailsPaginator.paginate` returns
 `_PageIterator`\[[ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef)\].
 
+<a id="lookupeventspaginator"></a>
+
 ## LookupEventsPaginator
 
 Type annotations for
@@ -97,10 +113,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudtrail.paginator import LookupEventsPaginator
 
 def get_lookup_events_paginator() -> LookupEventsPaginator:
-    return boto3.client("cloudtrail").get_paginator("lookup_events")
+    return Session().client("cloudtrail").get_paginator("lookup_events")
 ```
 
 Boto3 documentation:

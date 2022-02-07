@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-pricing-module"></a>
+
 # Type annotations for boto3 Pricing module
 
 > [Index](..) > Pricing
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
 type annotations stubs module
-[mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
+[mypy-boto3-pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[pricing]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[pricing]'
+
+# standalone installation
 pip install mypy-boto3-pricing
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-pricing
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="pricingclient"></a>
+
 ## PricingClient
 
 Type annotations for `boto3.client("pricing")` as [PricingClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_pricing.client import PricingClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -38,6 +52,8 @@ from mypy_boto3_pricing.client import PricingClient
 - [get_attribute_values](./client.md#get_attribute_values)
 - [get_paginator](./client.md#get_paginator)
 - [get_products](./client.md#get_products)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -50,6 +66,8 @@ PricingClient [exceptions](./client.md#exceptions)
 - InvalidParameterException
 - NotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -58,12 +76,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_pricing.paginators import DescribeServicesPaginator, ...
+from mypy_boto3_pricing.paginator import DescribeServicesPaginator, ...
 ```
 
 - [DescribeServicesPaginator](./paginators.md#describeservicespaginator)
 - [GetAttributeValuesPaginator](./paginators.md#getattributevaluespaginator)
 - [GetProductsPaginator](./paginators.md#getproductspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -81,6 +101,8 @@ from mypy_boto3_pricing.literals import DescribeServicesPaginatorName, ...
 - [GetProductsPaginatorName](./literals.md#getproductspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

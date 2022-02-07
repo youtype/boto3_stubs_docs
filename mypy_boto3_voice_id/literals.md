@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-voiceid-module"></a>
+
 # Literals for boto3 VoiceID module
 
 > [Index](..) > [VoiceID](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [VoiceID](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID)
 type annotations stubs module
-[mypy_boto3_voice_id](https://pypi.org/project/mypy-boto3-voice-id/).
+[mypy-boto3-voice-id](https://pypi.org/project/mypy-boto3-voice-id/).
 
 - [Literals for boto3 VoiceID module](#literals-for-boto3-voiceid-module)
   - [AuthenticationDecisionType](#authenticationdecisiontype)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [SpeakerStatusType](#speakerstatustype)
   - [StreamingStatusType](#streamingstatustype)
   - [ServiceName](#servicename)
+
+<a id="authenticationdecisiontype"></a>
 
 ## AuthenticationDecisionType
 
@@ -36,6 +40,8 @@ Values:
 - `SPEAKER_NOT_ENROLLED`
 - `SPEAKER_OPTED_OUT`
 
+<a id="domainstatustype"></a>
+
 ## DomainStatusType
 
 ```python
@@ -48,6 +54,8 @@ Values:
 - `PENDING`
 - `SUSPENDED`
 
+<a id="duplicateregistrationactiontype"></a>
+
 ## DuplicateRegistrationActionType
 
 ```python
@@ -58,6 +66,8 @@ Values:
 
 - `REGISTER_AS_NEW`
 - `SKIP`
+
+<a id="existingenrollmentactiontype"></a>
 
 ## ExistingEnrollmentActionType
 
@@ -70,6 +80,8 @@ Values:
 - `OVERWRITE`
 - `SKIP`
 
+<a id="frauddetectionactiontype"></a>
+
 ## FraudDetectionActionType
 
 ```python
@@ -80,6 +92,8 @@ Values:
 
 - `FAIL`
 - `IGNORE`
+
+<a id="frauddetectiondecisiontype"></a>
 
 ## FraudDetectionDecisionType
 
@@ -93,6 +107,8 @@ Values:
 - `LOW_RISK`
 - `NOT_ENOUGH_SPEECH`
 
+<a id="frauddetectionreasontype"></a>
+
 ## FraudDetectionReasonType
 
 ```python
@@ -102,6 +118,8 @@ from mypy_boto3_voice_id.literals import FraudDetectionReasonType
 Values:
 
 - `KNOWN_FRAUDSTER`
+
+<a id="fraudsterregistrationjobstatustype"></a>
 
 ## FraudsterRegistrationJobStatusType
 
@@ -117,6 +135,8 @@ Values:
 - `IN_PROGRESS`
 - `SUBMITTED`
 
+<a id="speakerenrollmentjobstatustype"></a>
+
 ## SpeakerEnrollmentJobStatusType
 
 ```python
@@ -131,6 +151,8 @@ Values:
 - `IN_PROGRESS`
 - `SUBMITTED`
 
+<a id="speakerstatustype"></a>
+
 ## SpeakerStatusType
 
 ```python
@@ -144,6 +166,8 @@ Values:
 - `OPTED_OUT`
 - `PENDING`
 
+<a id="streamingstatustype"></a>
+
 ## StreamingStatusType
 
 ```python
@@ -155,6 +179,8 @@ Values:
 - `ENDED`
 - `ONGOING`
 - `PENDING_CONFIGURATION`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

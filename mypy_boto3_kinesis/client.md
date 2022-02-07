@@ -1,3 +1,5 @@
+<a id="kinesisclient-for-boto3-kinesis-module"></a>
+
 # KinesisClient for boto3 Kinesis module
 
 > [Index](..) > [Kinesis](.) > KinesisClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
 type annotations stubs module
-[mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
+[mypy-boto3-kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 - [KinesisClient for boto3 Kinesis module](#kinesisclient-for-boto3-kinesis-module)
   - [KinesisClient](#kinesisclient)
@@ -46,6 +48,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="kinesisclient"></a>
+
 ## KinesisClient
 
 Type annotations for `boto3.client("kinesis")`
@@ -53,14 +57,17 @@ Type annotations for `boto3.client("kinesis")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_kinesis.client import KinesisClient
 
 def get_kinesis_client() -> KinesisClient:
-    return boto3.client("kinesis")
+    return Session().client("kinesis")
 ```
 
 Boto3 documentation:
 [Kinesis.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -93,7 +100,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -105,6 +116,8 @@ Boto3 documentation:
 [Kinesis.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_tags_to_stream"></a>
 
 ### add_tags_to_stream
 
@@ -123,6 +136,8 @@ Keyword-only arguments:
 - `StreamName`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -137,6 +152,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_stream"></a>
 
 ### create_stream
 
@@ -157,6 +174,8 @@ Keyword-only arguments:
 - `StreamModeDetails`:
   [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
 
+<a id="decrease_stream_retention_period"></a>
+
 ### decrease_stream_retention_period
 
 Decreases the Kinesis data stream's retention period, which is the length of
@@ -176,6 +195,8 @@ Keyword-only arguments:
 - `StreamName`: `str` *(required)*
 - `RetentionPeriodHours`: `int` *(required)*
 
+<a id="delete_stream"></a>
+
 ### delete_stream
 
 Deletes a Kinesis data stream and all its shards and data.
@@ -192,6 +213,8 @@ Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `EnforceConsumerDeletion`: `bool`
+
+<a id="deregister_stream_consumer"></a>
 
 ### deregister_stream_consumer
 
@@ -212,6 +235,8 @@ Keyword-only arguments:
 - `ConsumerName`: `str`
 - `ConsumerARN`: `str`
 
+<a id="describe_limits"></a>
+
 ### describe_limits
 
 Describes the shard limits and usage for the account.
@@ -223,6 +248,8 @@ Boto3 documentation:
 
 Returns
 [DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef).
+
+<a id="describe_stream"></a>
 
 ### describe_stream
 
@@ -244,6 +271,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
+
+<a id="describe_stream_consumer"></a>
 
 ### describe_stream_consumer
 
@@ -267,6 +296,8 @@ Keyword-only arguments:
 Returns
 [DescribeStreamConsumerOutputTypeDef](./type_defs.md#describestreamconsumeroutputtypedef).
 
+<a id="describe_stream_summary"></a>
+
 ### describe_stream_summary
 
 Provides a summarized description of the specified Kinesis data stream without
@@ -286,6 +317,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStreamSummaryOutputTypeDef](./type_defs.md#describestreamsummaryoutputtypedef).
+
+<a id="disable_enhanced_monitoring"></a>
 
 ### disable_enhanced_monitoring
 
@@ -309,6 +342,8 @@ Keyword-only arguments:
 Returns
 [EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
 
+<a id="enable_enhanced_monitoring"></a>
+
 ### enable_enhanced_monitoring
 
 Enables enhanced Kinesis data stream monitoring for shard-level metrics.
@@ -331,6 +366,8 @@ Keyword-only arguments:
 Returns
 [EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -348,6 +385,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_records"></a>
 
 ### get_records
 
@@ -367,6 +406,8 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef).
+
+<a id="get_shard_iterator"></a>
 
 ### get_shard_iterator
 
@@ -392,6 +433,8 @@ Keyword-only arguments:
 Returns
 [GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef).
 
+<a id="increase_stream_retention_period"></a>
+
 ### increase_stream_retention_period
 
 Increases the Kinesis data stream's retention period, which is the length of
@@ -410,6 +453,8 @@ Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `RetentionPeriodHours`: `int` *(required)*
+
+<a id="list_shards"></a>
 
 ### list_shards
 
@@ -434,6 +479,8 @@ Keyword-only arguments:
 
 Returns [ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef).
 
+<a id="list_stream_consumers"></a>
+
 ### list_stream_consumers
 
 Lists the consumers registered to receive data from a stream using enhanced
@@ -457,6 +504,8 @@ Keyword-only arguments:
 Returns
 [ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef).
 
+<a id="list_streams"></a>
+
 ### list_streams
 
 Lists your Kinesis data streams.
@@ -475,6 +524,8 @@ Keyword-only arguments:
 - `ExclusiveStartStreamName`: `str`
 
 Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
+
+<a id="list_tags_for_stream"></a>
 
 ### list_tags_for_stream
 
@@ -497,6 +548,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef).
 
+<a id="merge_shards"></a>
+
 ### merge_shards
 
 Merges two adjacent shards in a Kinesis data stream and combines them into a
@@ -515,6 +568,8 @@ Keyword-only arguments:
 - `StreamName`: `str` *(required)*
 - `ShardToMerge`: `str` *(required)*
 - `AdjacentShardToMerge`: `str` *(required)*
+
+<a id="put_record"></a>
 
 ### put_record
 
@@ -538,6 +593,8 @@ Keyword-only arguments:
 
 Returns [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef).
 
+<a id="put_records"></a>
+
 ### put_records
 
 Writes multiple data records into a Kinesis data stream in a single call (also
@@ -560,6 +617,8 @@ Keyword-only arguments:
 
 Returns [PutRecordsOutputTypeDef](./type_defs.md#putrecordsoutputtypedef).
 
+<a id="register_stream_consumer"></a>
+
 ### register_stream_consumer
 
 Registers a consumer with a Kinesis data stream.
@@ -580,6 +639,8 @@ Keyword-only arguments:
 Returns
 [RegisterStreamConsumerOutputTypeDef](./type_defs.md#registerstreamconsumeroutputtypedef).
 
+<a id="remove_tags_from_stream"></a>
+
 ### remove_tags_from_stream
 
 Removes tags from the specified Kinesis data stream.
@@ -596,6 +657,8 @@ Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="split_shard"></a>
 
 ### split_shard
 
@@ -615,6 +678,8 @@ Keyword-only arguments:
 - `StreamName`: `str` *(required)*
 - `ShardToSplit`: `str` *(required)*
 - `NewStartingHashKey`: `str` *(required)*
+
+<a id="start_stream_encryption"></a>
 
 ### start_stream_encryption
 
@@ -636,6 +701,8 @@ Keyword-only arguments:
   *(required)*
 - `KeyId`: `str` *(required)*
 
+<a id="stop_stream_encryption"></a>
+
 ### stop_stream_encryption
 
 Disables server-side encryption for a specified stream.
@@ -654,6 +721,8 @@ Keyword-only arguments:
 - `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
   *(required)*
 - `KeyId`: `str` *(required)*
+
+<a id="subscribe_to_shard"></a>
 
 ### subscribe_to_shard
 
@@ -680,6 +749,8 @@ Keyword-only arguments:
 Returns
 [SubscribeToShardOutputTypeDef](./type_defs.md#subscribetoshardoutputtypedef).
 
+<a id="update_shard_count"></a>
+
 ### update_shard_count
 
 Updates the shard count of the specified stream to the specified number of
@@ -703,6 +774,8 @@ Keyword-only arguments:
 Returns
 [UpdateShardCountOutputTypeDef](./type_defs.md#updateshardcountoutputtypedef).
 
+<a id="update_stream_mode"></a>
+
 ### update_stream_mode
 
 Updates the capacity mode of the data stream.
@@ -722,6 +795,8 @@ Keyword-only arguments:
   [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
   *(required)*
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("kinesis").get_paginator` method with
@@ -735,6 +810,8 @@ overloads.
   [ListStreamConsumersPaginator](./paginators.md#liststreamconsumerspaginator)
 - `client.get_paginator("list_streams")` ->
   [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

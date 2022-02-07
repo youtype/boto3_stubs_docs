@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-elasticinference-module"></a>
+
 # Paginators for boto3 ElasticInference module
 
 > [Index](..) > [ElasticInference](.) > Paginators
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
 type annotations stubs module
-[mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
+[mypy-boto3-elastic-inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
 - [Paginators for boto3 ElasticInference module](#paginators-for-boto3-elasticinference-module)
   - [DescribeAcceleratorsPaginator](#describeacceleratorspaginator)
+
+<a id="describeacceleratorspaginator"></a>
 
 ## DescribeAcceleratorsPaginator
 
@@ -18,10 +22,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elastic_inference.paginator import DescribeAcceleratorsPaginator
 
 def get_describe_accelerators_paginator() -> DescribeAcceleratorsPaginator:
-    return boto3.client("elastic-inference").get_paginator("describe_accelerators")
+    return Session().client("elastic-inference").get_paginator("describe_accelerators")
 ```
 
 Boto3 documentation:

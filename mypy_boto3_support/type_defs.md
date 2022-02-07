@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-support-module"></a>
+
 # Typed dictionaries for boto3 Support module
 
 > [Index](..) > [Support](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
 type annotations stubs module
-[mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
+[mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
 
 - [Typed dictionaries for boto3 Support module](#typed-dictionaries-for-boto3-support-module)
   - [AddAttachmentsToSetRequestRequestTypeDef](#addattachmentstosetrequestrequesttypedef)
@@ -55,6 +57,8 @@ type annotations stubs module
   - [TrustedAdvisorResourceDetailTypeDef](#trustedadvisorresourcedetailtypedef)
   - [TrustedAdvisorResourcesSummaryTypeDef](#trustedadvisorresourcessummarytypedef)
 
+<a id="addattachmentstosetrequestrequesttypedef"></a>
+
 ## AddAttachmentsToSetRequestRequestTypeDef
 
 ```python
@@ -70,6 +74,8 @@ Optional fields:
 
 - `attachmentSetId`: `str`
 
+<a id="addattachmentstosetresponsetypedef"></a>
+
 ## AddAttachmentsToSetResponseTypeDef
 
 ```python
@@ -82,6 +88,8 @@ Required fields:
 - `expiryTime`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="addcommunicationtocaserequestrequesttypedef"></a>
 
 ## AddCommunicationToCaseRequestRequestTypeDef
 
@@ -99,6 +107,8 @@ Optional fields:
 - `ccEmailAddresses`: `Sequence`\[`str`\]
 - `attachmentSetId`: `str`
 
+<a id="addcommunicationtocaseresponsetypedef"></a>
+
 ## AddCommunicationToCaseResponseTypeDef
 
 ```python
@@ -111,6 +121,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="attachmentdetailstypedef"></a>
+
 ## AttachmentDetailsTypeDef
 
 ```python
@@ -122,6 +134,8 @@ Optional fields:
 - `attachmentId`: `str`
 - `fileName`: `str`
 
+<a id="attachmenttypedef"></a>
+
 ## AttachmentTypeDef
 
 ```python
@@ -132,6 +146,8 @@ Optional fields:
 
 - `fileName`: `str`
 - `data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="casedetailstypedef"></a>
 
 ## CaseDetailsTypeDef
 
@@ -155,6 +171,8 @@ Optional fields:
 - `ccEmailAddresses`: `List`\[`str`\]
 - `language`: `str`
 
+<a id="categorytypedef"></a>
+
 ## CategoryTypeDef
 
 ```python
@@ -165,6 +183,8 @@ Optional fields:
 
 - `code`: `str`
 - `name`: `str`
+
+<a id="communicationtypedef"></a>
 
 ## CommunicationTypeDef
 
@@ -180,6 +200,8 @@ Optional fields:
 - `timeCreated`: `str`
 - `attachmentSet`:
   `List`\[[AttachmentDetailsTypeDef](./type_defs.md#attachmentdetailstypedef)\]
+
+<a id="createcaserequestrequesttypedef"></a>
 
 ## CreateCaseRequestRequestTypeDef
 
@@ -202,6 +224,8 @@ Optional fields:
 - `issueType`: `str`
 - `attachmentSetId`: `str`
 
+<a id="createcaseresponsetypedef"></a>
+
 ## CreateCaseResponseTypeDef
 
 ```python
@@ -214,6 +238,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeattachmentrequestrequesttypedef"></a>
+
 ## DescribeAttachmentRequestRequestTypeDef
 
 ```python
@@ -223,6 +249,8 @@ from mypy_boto3_support.type_defs import DescribeAttachmentRequestRequestTypeDef
 Required fields:
 
 - `attachmentId`: `str`
+
+<a id="describeattachmentresponsetypedef"></a>
 
 ## DescribeAttachmentResponseTypeDef
 
@@ -235,6 +263,8 @@ Required fields:
 - `attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describecasesrequestrequesttypedef"></a>
 
 ## DescribeCasesRequestRequestTypeDef
 
@@ -254,6 +284,8 @@ Optional fields:
 - `language`: `str`
 - `includeCommunications`: `bool`
 
+<a id="describecasesresponsetypedef"></a>
+
 ## DescribeCasesResponseTypeDef
 
 ```python
@@ -266,6 +298,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describecommunicationsrequestrequesttypedef"></a>
 
 ## DescribeCommunicationsRequestRequestTypeDef
 
@@ -284,6 +318,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describecommunicationsresponsetypedef"></a>
+
 ## DescribeCommunicationsResponseTypeDef
 
 ```python
@@ -298,6 +334,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeservicesrequestrequesttypedef"></a>
+
 ## DescribeServicesRequestRequestTypeDef
 
 ```python
@@ -308,6 +346,8 @@ Optional fields:
 
 - `serviceCodeList`: `Sequence`\[`str`\]
 - `language`: `str`
+
+<a id="describeservicesresponsetypedef"></a>
 
 ## DescribeServicesResponseTypeDef
 
@@ -321,6 +361,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeseveritylevelsrequestrequesttypedef"></a>
+
 ## DescribeSeverityLevelsRequestRequestTypeDef
 
 ```python
@@ -330,6 +372,8 @@ from mypy_boto3_support.type_defs import DescribeSeverityLevelsRequestRequestTyp
 Optional fields:
 
 - `language`: `str`
+
+<a id="describeseveritylevelsresponsetypedef"></a>
 
 ## DescribeSeverityLevelsResponseTypeDef
 
@@ -344,6 +388,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetrustedadvisorcheckrefreshstatusesrequestrequesttypedef"></a>
+
 ## DescribeTrustedAdvisorCheckRefreshStatusesRequestRequestTypeDef
 
 ```python
@@ -353,6 +399,8 @@ from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckRefreshStatu
 Required fields:
 
 - `checkIds`: `Sequence`\[`str`\]
+
+<a id="describetrustedadvisorcheckrefreshstatusesresponsetypedef"></a>
 
 ## DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef
 
@@ -366,6 +414,8 @@ Required fields:
   `List`\[[TrustedAdvisorCheckRefreshStatusTypeDef](./type_defs.md#trustedadvisorcheckrefreshstatustypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describetrustedadvisorcheckresultrequestrequesttypedef"></a>
 
 ## DescribeTrustedAdvisorCheckResultRequestRequestTypeDef
 
@@ -381,6 +431,8 @@ Optional fields:
 
 - `language`: `str`
 
+<a id="describetrustedadvisorcheckresultresponsetypedef"></a>
+
 ## DescribeTrustedAdvisorCheckResultResponseTypeDef
 
 ```python
@@ -394,6 +446,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetrustedadvisorchecksummariesrequestrequesttypedef"></a>
+
 ## DescribeTrustedAdvisorCheckSummariesRequestRequestTypeDef
 
 ```python
@@ -403,6 +457,8 @@ from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckSummariesReq
 Required fields:
 
 - `checkIds`: `Sequence`\[`str`\]
+
+<a id="describetrustedadvisorchecksummariesresponsetypedef"></a>
 
 ## DescribeTrustedAdvisorCheckSummariesResponseTypeDef
 
@@ -417,6 +473,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetrustedadvisorchecksrequestrequesttypedef"></a>
+
 ## DescribeTrustedAdvisorChecksRequestRequestTypeDef
 
 ```python
@@ -426,6 +484,8 @@ from mypy_boto3_support.type_defs import DescribeTrustedAdvisorChecksRequestRequ
 Required fields:
 
 - `language`: `str`
+
+<a id="describetrustedadvisorchecksresponsetypedef"></a>
 
 ## DescribeTrustedAdvisorChecksResponseTypeDef
 
@@ -440,6 +500,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -451,6 +513,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="recentcasecommunicationstypedef"></a>
 
 ## RecentCaseCommunicationsTypeDef
 
@@ -464,6 +528,8 @@ Optional fields:
   `List`\[[CommunicationTypeDef](./type_defs.md#communicationtypedef)\]
 - `nextToken`: `str`
 
+<a id="refreshtrustedadvisorcheckrequestrequesttypedef"></a>
+
 ## RefreshTrustedAdvisorCheckRequestRequestTypeDef
 
 ```python
@@ -473,6 +539,8 @@ from mypy_boto3_support.type_defs import RefreshTrustedAdvisorCheckRequestReques
 Required fields:
 
 - `checkId`: `str`
+
+<a id="refreshtrustedadvisorcheckresponsetypedef"></a>
 
 ## RefreshTrustedAdvisorCheckResponseTypeDef
 
@@ -487,6 +555,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resolvecaserequestrequesttypedef"></a>
+
 ## ResolveCaseRequestRequestTypeDef
 
 ```python
@@ -496,6 +566,8 @@ from mypy_boto3_support.type_defs import ResolveCaseRequestRequestTypeDef
 Optional fields:
 
 - `caseId`: `str`
+
+<a id="resolvecaseresponsetypedef"></a>
 
 ## ResolveCaseResponseTypeDef
 
@@ -509,6 +581,8 @@ Required fields:
 - `finalCaseStatus`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -524,6 +598,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="servicetypedef"></a>
+
 ## ServiceTypeDef
 
 ```python
@@ -536,6 +612,8 @@ Optional fields:
 - `name`: `str`
 - `categories`: `List`\[[CategoryTypeDef](./type_defs.md#categorytypedef)\]
 
+<a id="severityleveltypedef"></a>
+
 ## SeverityLevelTypeDef
 
 ```python
@@ -547,6 +625,8 @@ Optional fields:
 - `code`: `str`
 - `name`: `str`
 
+<a id="trustedadvisorcategoryspecificsummarytypedef"></a>
+
 ## TrustedAdvisorCategorySpecificSummaryTypeDef
 
 ```python
@@ -557,6 +637,8 @@ Optional fields:
 
 - `costOptimizing`:
   [TrustedAdvisorCostOptimizingSummaryTypeDef](./type_defs.md#trustedadvisorcostoptimizingsummarytypedef)
+
+<a id="trustedadvisorcheckdescriptiontypedef"></a>
 
 ## TrustedAdvisorCheckDescriptionTypeDef
 
@@ -572,6 +654,8 @@ Required fields:
 - `category`: `str`
 - `metadata`: `List`\[`str`\]
 
+<a id="trustedadvisorcheckrefreshstatustypedef"></a>
+
 ## TrustedAdvisorCheckRefreshStatusTypeDef
 
 ```python
@@ -583,6 +667,8 @@ Required fields:
 - `checkId`: `str`
 - `status`: `str`
 - `millisUntilNextRefreshable`: `int`
+
+<a id="trustedadvisorcheckresulttypedef"></a>
 
 ## TrustedAdvisorCheckResultTypeDef
 
@@ -601,6 +687,8 @@ Required fields:
   [TrustedAdvisorCategorySpecificSummaryTypeDef](./type_defs.md#trustedadvisorcategoryspecificsummarytypedef)
 - `flaggedResources`:
   `List`\[[TrustedAdvisorResourceDetailTypeDef](./type_defs.md#trustedadvisorresourcedetailtypedef)\]
+
+<a id="trustedadvisorchecksummarytypedef"></a>
 
 ## TrustedAdvisorCheckSummaryTypeDef
 
@@ -622,6 +710,8 @@ Optional fields:
 
 - `hasFlaggedResources`: `bool`
 
+<a id="trustedadvisorcostoptimizingsummarytypedef"></a>
+
 ## TrustedAdvisorCostOptimizingSummaryTypeDef
 
 ```python
@@ -632,6 +722,8 @@ Required fields:
 
 - `estimatedMonthlySavings`: `float`
 - `estimatedPercentMonthlySavings`: `float`
+
+<a id="trustedadvisorresourcedetailtypedef"></a>
 
 ## TrustedAdvisorResourceDetailTypeDef
 
@@ -649,6 +741,8 @@ Optional fields:
 
 - `region`: `str`
 - `isSuppressed`: `bool`
+
+<a id="trustedadvisorresourcessummarytypedef"></a>
 
 ## TrustedAdvisorResourcesSummaryTypeDef
 

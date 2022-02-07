@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-codebuild-module"></a>
+
 # Type annotations for boto3 CodeBuild module
 
 > [Index](..) > CodeBuild
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module
-[mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
+[mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[codebuild]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[codebuild]'
+
+# standalone installation
 pip install mypy-boto3-codebuild
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-codebuild
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="codebuildclient"></a>
+
 ## CodeBuildClient
 
 Type annotations for `boto3.client("codebuild")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_codebuild.client import CodeBuildClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -82,6 +96,8 @@ from mypy_boto3_codebuild.client import CodeBuildClient
 - [update_report_group](./client.md#update_report_group)
 - [update_webhook](./client.md#update_webhook)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CodeBuildClient [exceptions](./client.md#exceptions)
@@ -93,6 +109,8 @@ CodeBuildClient [exceptions](./client.md#exceptions)
 - ResourceAlreadyExistsException
 - ResourceNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -101,7 +119,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import DescribeCodeCoveragesPaginator, ...
+from mypy_boto3_codebuild.paginator import DescribeCodeCoveragesPaginator, ...
 ```
 
 - [DescribeCodeCoveragesPaginator](./paginators.md#describecodecoveragespaginator)
@@ -116,6 +134,8 @@ from mypy_boto3_codebuild.paginators import DescribeCodeCoveragesPaginator, ...
 - [ListReportsForReportGroupPaginator](./paginators.md#listreportsforreportgrouppaginator)
 - [ListSharedProjectsPaginator](./paginators.md#listsharedprojectspaginator)
 - [ListSharedReportGroupsPaginator](./paginators.md#listsharedreportgroupspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -179,6 +199,8 @@ from mypy_boto3_codebuild.literals import ArtifactNamespaceType, ...
 - [WebhookFilterTypeType](./literals.md#webhookfiltertypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

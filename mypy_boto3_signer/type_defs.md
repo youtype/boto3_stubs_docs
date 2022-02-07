@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-signer-module"></a>
+
 # Typed dictionaries for boto3 signer module
 
 > [Index](..) > [signer](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
 type annotations stubs module
-[mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
+[mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
 
 - [Typed dictionaries for boto3 signer module](#typed-dictionaries-for-boto3-signer-module)
   - [AddProfilePermissionRequestRequestTypeDef](#addprofilepermissionrequestrequesttypedef)
@@ -61,6 +63,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="addprofilepermissionrequestrequesttypedef"></a>
+
 ## AddProfilePermissionRequestRequestTypeDef
 
 ```python
@@ -79,6 +83,8 @@ Optional fields:
 - `profileVersion`: `str`
 - `revisionId`: `str`
 
+<a id="addprofilepermissionresponsetypedef"></a>
+
 ## AddProfilePermissionResponseTypeDef
 
 ```python
@@ -91,6 +97,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cancelsigningprofilerequestrequesttypedef"></a>
+
 ## CancelSigningProfileRequestRequestTypeDef
 
 ```python
@@ -101,6 +109,8 @@ Required fields:
 
 - `profileName`: `str`
 
+<a id="describesigningjobrequestrequesttypedef"></a>
+
 ## DescribeSigningJobRequestRequestTypeDef
 
 ```python
@@ -110,6 +120,8 @@ from mypy_boto3_signer.type_defs import DescribeSigningJobRequestRequestTypeDef
 Required fields:
 
 - `jobId`: `str`
+
+<a id="describesigningjobresponsetypedef"></a>
 
 ## DescribeSigningJobResponseTypeDef
 
@@ -144,6 +156,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="destinationtypedef"></a>
+
 ## DestinationTypeDef
 
 ```python
@@ -153,6 +167,8 @@ from mypy_boto3_signer.type_defs import DestinationTypeDef
 Optional fields:
 
 - `s3`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
+
+<a id="encryptionalgorithmoptionstypedef"></a>
 
 ## EncryptionAlgorithmOptionsTypeDef
 
@@ -167,6 +183,8 @@ Required fields:
 - `defaultValue`:
   [EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype)
 
+<a id="getsigningplatformrequestrequesttypedef"></a>
+
 ## GetSigningPlatformRequestRequestTypeDef
 
 ```python
@@ -176,6 +194,8 @@ from mypy_boto3_signer.type_defs import GetSigningPlatformRequestRequestTypeDef
 Required fields:
 
 - `platformId`: `str`
+
+<a id="getsigningplatformresponsetypedef"></a>
 
 ## GetSigningPlatformResponseTypeDef
 
@@ -200,6 +220,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsigningprofilerequestrequesttypedef"></a>
+
 ## GetSigningProfileRequestRequestTypeDef
 
 ```python
@@ -213,6 +235,8 @@ Required fields:
 Optional fields:
 
 - `profileOwner`: `str`
+
+<a id="getsigningprofileresponsetypedef"></a>
 
 ## GetSigningProfileResponseTypeDef
 
@@ -243,6 +267,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="hashalgorithmoptionstypedef"></a>
+
 ## HashAlgorithmOptionsTypeDef
 
 ```python
@@ -254,6 +280,8 @@ Required fields:
 - `allowedValues`:
   `List`\[[HashAlgorithmType](./literals.md#hashalgorithmtype)\]
 - `defaultValue`: [HashAlgorithmType](./literals.md#hashalgorithmtype)
+
+<a id="listprofilepermissionsrequestrequesttypedef"></a>
 
 ## ListProfilePermissionsRequestRequestTypeDef
 
@@ -268,6 +296,8 @@ Required fields:
 Optional fields:
 
 - `nextToken`: `str`
+
+<a id="listprofilepermissionsresponsetypedef"></a>
 
 ## ListProfilePermissionsResponseTypeDef
 
@@ -284,6 +314,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsigningjobsrequestrequesttypedef"></a>
 
 ## ListSigningJobsRequestRequestTypeDef
 
@@ -303,6 +335,8 @@ Optional fields:
 - `signatureExpiresAfter`: `Union`\[`datetime`, `str`\]
 - `jobInvoker`: `str`
 
+<a id="listsigningjobsresponsetypedef"></a>
+
 ## ListSigningJobsResponseTypeDef
 
 ```python
@@ -315,6 +349,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsigningplatformsrequestrequesttypedef"></a>
 
 ## ListSigningPlatformsRequestRequestTypeDef
 
@@ -330,6 +366,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listsigningplatformsresponsetypedef"></a>
+
 ## ListSigningPlatformsResponseTypeDef
 
 ```python
@@ -343,6 +381,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsigningprofilesrequestrequesttypedef"></a>
 
 ## ListSigningProfilesRequestRequestTypeDef
 
@@ -359,6 +399,8 @@ Optional fields:
 - `statuses`:
   `Sequence`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
 
+<a id="listsigningprofilesresponsetypedef"></a>
+
 ## ListSigningProfilesResponseTypeDef
 
 ```python
@@ -373,6 +415,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -382,6 +426,8 @@ from mypy_boto3_signer.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -395,6 +441,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -406,6 +454,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="permissiontypedef"></a>
 
 ## PermissionTypeDef
 
@@ -419,6 +469,8 @@ Optional fields:
 - `principal`: `str`
 - `statementId`: `str`
 - `profileVersion`: `str`
+
+<a id="putsigningprofilerequestrequesttypedef"></a>
 
 ## PutSigningProfileRequestRequestTypeDef
 
@@ -442,6 +494,8 @@ Optional fields:
 - `signingParameters`: `Mapping`\[`str`, `str`\]
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="putsigningprofileresponsetypedef"></a>
+
 ## PutSigningProfileResponseTypeDef
 
 ```python
@@ -456,6 +510,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removeprofilepermissionrequestrequesttypedef"></a>
+
 ## RemoveProfilePermissionRequestRequestTypeDef
 
 ```python
@@ -468,6 +524,8 @@ Required fields:
 - `revisionId`: `str`
 - `statementId`: `str`
 
+<a id="removeprofilepermissionresponsetypedef"></a>
+
 ## RemoveProfilePermissionResponseTypeDef
 
 ```python
@@ -479,6 +537,8 @@ Required fields:
 - `revisionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -493,6 +553,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="revokesignaturerequestrequesttypedef"></a>
 
 ## RevokeSignatureRequestRequestTypeDef
 
@@ -509,6 +571,8 @@ Optional fields:
 
 - `jobOwner`: `str`
 
+<a id="revokesigningprofilerequestrequesttypedef"></a>
+
 ## RevokeSigningProfileRequestRequestTypeDef
 
 ```python
@@ -522,6 +586,8 @@ Required fields:
 - `reason`: `str`
 - `effectiveTime`: `Union`\[`datetime`, `str`\]
 
+<a id="s3destinationtypedef"></a>
+
 ## S3DestinationTypeDef
 
 ```python
@@ -533,6 +599,8 @@ Optional fields:
 - `bucketName`: `str`
 - `prefix`: `str`
 
+<a id="s3signedobjecttypedef"></a>
+
 ## S3SignedObjectTypeDef
 
 ```python
@@ -543,6 +611,8 @@ Optional fields:
 
 - `bucketName`: `str`
 - `key`: `str`
+
+<a id="s3sourcetypedef"></a>
 
 ## S3SourceTypeDef
 
@@ -556,6 +626,8 @@ Required fields:
 - `key`: `str`
 - `version`: `str`
 
+<a id="signaturevalidityperiodtypedef"></a>
+
 ## SignatureValidityPeriodTypeDef
 
 ```python
@@ -567,6 +639,8 @@ Optional fields:
 - `value`: `int`
 - `type`: [ValidityTypeType](./literals.md#validitytypetype)
 
+<a id="signedobjecttypedef"></a>
+
 ## SignedObjectTypeDef
 
 ```python
@@ -576,6 +650,8 @@ from mypy_boto3_signer.type_defs import SignedObjectTypeDef
 Optional fields:
 
 - `s3`: [S3SignedObjectTypeDef](./type_defs.md#s3signedobjecttypedef)
+
+<a id="signingconfigurationoverridestypedef"></a>
 
 ## SigningConfigurationOverridesTypeDef
 
@@ -588,6 +664,8 @@ Optional fields:
 - `encryptionAlgorithm`:
   [EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype)
 - `hashAlgorithm`: [HashAlgorithmType](./literals.md#hashalgorithmtype)
+
+<a id="signingconfigurationtypedef"></a>
 
 ## SigningConfigurationTypeDef
 
@@ -602,6 +680,8 @@ Required fields:
 - `hashAlgorithmOptions`:
   [HashAlgorithmOptionsTypeDef](./type_defs.md#hashalgorithmoptionstypedef)
 
+<a id="signingimageformattypedef"></a>
+
 ## SigningImageFormatTypeDef
 
 ```python
@@ -614,6 +694,8 @@ Required fields:
   `List`\[[ImageFormatType](./literals.md#imageformattype)\]
 - `defaultFormat`: [ImageFormatType](./literals.md#imageformattype)
 
+<a id="signingjobrevocationrecordtypedef"></a>
+
 ## SigningJobRevocationRecordTypeDef
 
 ```python
@@ -625,6 +707,8 @@ Optional fields:
 - `reason`: `str`
 - `revokedAt`: `datetime`
 - `revokedBy`: `str`
+
+<a id="signingjobtypedef"></a>
 
 ## SigningJobTypeDef
 
@@ -650,6 +734,8 @@ Optional fields:
 - `jobOwner`: `str`
 - `jobInvoker`: `str`
 
+<a id="signingmaterialtypedef"></a>
+
 ## SigningMaterialTypeDef
 
 ```python
@@ -659,6 +745,8 @@ from mypy_boto3_signer.type_defs import SigningMaterialTypeDef
 Required fields:
 
 - `certificateArn`: `str`
+
+<a id="signingplatformoverridestypedef"></a>
 
 ## SigningPlatformOverridesTypeDef
 
@@ -671,6 +759,8 @@ Optional fields:
 - `signingConfiguration`:
   [SigningConfigurationOverridesTypeDef](./type_defs.md#signingconfigurationoverridestypedef)
 - `signingImageFormat`: [ImageFormatType](./literals.md#imageformattype)
+
+<a id="signingplatformtypedef"></a>
 
 ## SigningPlatformTypeDef
 
@@ -693,6 +783,8 @@ Optional fields:
 - `maxSizeInMB`: `int`
 - `revocationSupported`: `bool`
 
+<a id="signingprofilerevocationrecordtypedef"></a>
+
 ## SigningProfileRevocationRecordTypeDef
 
 ```python
@@ -704,6 +796,8 @@ Optional fields:
 - `revocationEffectiveFrom`: `datetime`
 - `revokedAt`: `datetime`
 - `revokedBy`: `str`
+
+<a id="signingprofiletypedef"></a>
 
 ## SigningProfileTypeDef
 
@@ -727,6 +821,8 @@ Optional fields:
 - `arn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="sourcetypedef"></a>
+
 ## SourceTypeDef
 
 ```python
@@ -736,6 +832,8 @@ from mypy_boto3_signer.type_defs import SourceTypeDef
 Optional fields:
 
 - `s3`: [S3SourceTypeDef](./type_defs.md#s3sourcetypedef)
+
+<a id="startsigningjobrequestrequesttypedef"></a>
 
 ## StartSigningJobRequestRequestTypeDef
 
@@ -754,6 +852,8 @@ Optional fields:
 
 - `profileOwner`: `str`
 
+<a id="startsigningjobresponsetypedef"></a>
+
 ## StartSigningJobResponseTypeDef
 
 ```python
@@ -767,6 +867,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -778,6 +880,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -788,6 +892,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

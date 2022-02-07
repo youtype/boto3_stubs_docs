@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-migrationhubstrategyrecommendations-module"></a>
+
 # Paginators for boto3 MigrationHubStrategyRecommendations module
 
 > [Index](..) > [MigrationHubStrategyRecommendations](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
 type annotations stubs module
-[mypy_boto3_migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
+[mypy-boto3-migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
 
 - [Paginators for boto3 MigrationHubStrategyRecommendations module](#paginators-for-boto3-migrationhubstrategyrecommendations-module)
   - [GetServerDetailsPaginator](#getserverdetailspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListCollectorsPaginator](#listcollectorspaginator)
   - [ListImportFileTaskPaginator](#listimportfiletaskpaginator)
   - [ListServersPaginator](#listserverspaginator)
+
+<a id="getserverdetailspaginator"></a>
 
 ## GetServerDetailsPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_migrationhubstrategy.paginator import GetServerDetailsPaginator
 
 def get_get_server_details_paginator() -> GetServerDetailsPaginator:
-    return boto3.client("migrationhubstrategy").get_paginator("get_server_details")
+    return Session().client("migrationhubstrategy").get_paginator("get_server_details")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `GetServerDetailsPaginator.paginate` method:
 `GetServerDetailsPaginator.paginate` returns
 `_PageIterator`\[[GetServerDetailsResponseTypeDef](./type_defs.md#getserverdetailsresponsetypedef)\].
 
+<a id="listapplicationcomponentspaginator"></a>
+
 ## ListApplicationComponentsPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_migrationhubstrategy.paginator import ListApplicationComponentsPaginator
 
 def get_list_application_components_paginator() -> ListApplicationComponentsPaginator:
-    return boto3.client("migrationhubstrategy").get_paginator("list_application_components")
+    return Session().client("migrationhubstrategy").get_paginator("list_application_components")
 ```
 
 Boto3 documentation:
@@ -70,6 +80,8 @@ Arguments for `ListApplicationComponentsPaginator.paginate` method:
 `ListApplicationComponentsPaginator.paginate` returns
 `_PageIterator`\[[ListApplicationComponentsResponseTypeDef](./type_defs.md#listapplicationcomponentsresponsetypedef)\].
 
+<a id="listcollectorspaginator"></a>
+
 ## ListCollectorsPaginator
 
 Type annotations for
@@ -78,10 +90,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_migrationhubstrategy.paginator import ListCollectorsPaginator
 
 def get_list_collectors_paginator() -> ListCollectorsPaginator:
-    return boto3.client("migrationhubstrategy").get_paginator("list_collectors")
+    return Session().client("migrationhubstrategy").get_paginator("list_collectors")
 ```
 
 Boto3 documentation:
@@ -95,6 +109,8 @@ Arguments for `ListCollectorsPaginator.paginate` method:
 `ListCollectorsPaginator.paginate` returns
 `_PageIterator`\[[ListCollectorsResponseTypeDef](./type_defs.md#listcollectorsresponsetypedef)\].
 
+<a id="listimportfiletaskpaginator"></a>
+
 ## ListImportFileTaskPaginator
 
 Type annotations for
@@ -103,10 +119,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_migrationhubstrategy.paginator import ListImportFileTaskPaginator
 
 def get_list_import_file_task_paginator() -> ListImportFileTaskPaginator:
-    return boto3.client("migrationhubstrategy").get_paginator("list_import_file_task")
+    return Session().client("migrationhubstrategy").get_paginator("list_import_file_task")
 ```
 
 Boto3 documentation:
@@ -120,6 +138,8 @@ Arguments for `ListImportFileTaskPaginator.paginate` method:
 `ListImportFileTaskPaginator.paginate` returns
 `_PageIterator`\[[ListImportFileTaskResponseTypeDef](./type_defs.md#listimportfiletaskresponsetypedef)\].
 
+<a id="listserverspaginator"></a>
+
 ## ListServersPaginator
 
 Type annotations for
@@ -128,10 +148,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_migrationhubstrategy.paginator import ListServersPaginator
 
 def get_list_servers_paginator() -> ListServersPaginator:
-    return boto3.client("migrationhubstrategy").get_paginator("list_servers")
+    return Session().client("migrationhubstrategy").get_paginator("list_servers")
 ```
 
 Boto3 documentation:

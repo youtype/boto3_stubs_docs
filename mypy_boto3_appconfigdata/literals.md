@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-appconfigdata-module"></a>
+
 # Literals for boto3 AppConfigData module
 
 > [Index](..) > [AppConfigData](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [AppConfigData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfigdata.html#AppConfigData)
 type annotations stubs module
-[mypy_boto3_appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
+[mypy-boto3-appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
 
 - [Literals for boto3 AppConfigData module](#literals-for-boto3-appconfigdata-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

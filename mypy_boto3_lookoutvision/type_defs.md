@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-lookoutforvision-module"></a>
+
 # Typed dictionaries for boto3 LookoutforVision module
 
 > [Index](..) > [LookoutforVision](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
 type annotations stubs module
-[mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
+[mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 - [Typed dictionaries for boto3 LookoutforVision module](#typed-dictionaries-for-boto3-lookoutforvision-module)
   - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
@@ -76,6 +78,8 @@ type annotations stubs module
   - [UpdateDatasetEntriesRequestRequestTypeDef](#updatedatasetentriesrequestrequesttypedef)
   - [UpdateDatasetEntriesResponseTypeDef](#updatedatasetentriesresponsetypedef)
 
+<a id="createdatasetrequestrequesttypedef"></a>
+
 ## CreateDatasetRequestRequestTypeDef
 
 ```python
@@ -92,6 +96,8 @@ Optional fields:
 - `DatasetSource`: [DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef)
 - `ClientToken`: `str`
 
+<a id="createdatasetresponsetypedef"></a>
+
 ## CreateDatasetResponseTypeDef
 
 ```python
@@ -104,6 +110,8 @@ Required fields:
   [DatasetMetadataTypeDef](./type_defs.md#datasetmetadatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmodelrequestrequesttypedef"></a>
 
 ## CreateModelRequestRequestTypeDef
 
@@ -123,6 +131,8 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createmodelresponsetypedef"></a>
+
 ## CreateModelResponseTypeDef
 
 ```python
@@ -134,6 +144,8 @@ Required fields:
 - `ModelMetadata`: [ModelMetadataTypeDef](./type_defs.md#modelmetadatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprojectrequestrequesttypedef"></a>
 
 ## CreateProjectRequestRequestTypeDef
 
@@ -149,6 +161,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="createprojectresponsetypedef"></a>
+
 ## CreateProjectResponseTypeDef
 
 ```python
@@ -161,6 +175,8 @@ Required fields:
   [ProjectMetadataTypeDef](./type_defs.md#projectmetadatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="datasetdescriptiontypedef"></a>
 
 ## DatasetDescriptionTypeDef
 
@@ -179,6 +195,8 @@ Optional fields:
 - `ImageStats`:
   [DatasetImageStatsTypeDef](./type_defs.md#datasetimagestatstypedef)
 
+<a id="datasetgroundtruthmanifesttypedef"></a>
+
 ## DatasetGroundTruthManifestTypeDef
 
 ```python
@@ -188,6 +206,8 @@ from mypy_boto3_lookoutvision.type_defs import DatasetGroundTruthManifestTypeDef
 Optional fields:
 
 - `S3Object`: [InputS3ObjectTypeDef](./type_defs.md#inputs3objecttypedef)
+
+<a id="datasetimagestatstypedef"></a>
 
 ## DatasetImageStatsTypeDef
 
@@ -202,6 +222,8 @@ Optional fields:
 - `Normal`: `int`
 - `Anomaly`: `int`
 
+<a id="datasetmetadatatypedef"></a>
+
 ## DatasetMetadataTypeDef
 
 ```python
@@ -215,6 +237,8 @@ Optional fields:
 - `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
 - `StatusMessage`: `str`
 
+<a id="datasetsourcetypedef"></a>
+
 ## DatasetSourceTypeDef
 
 ```python
@@ -225,6 +249,8 @@ Optional fields:
 
 - `GroundTruthManifest`:
   [DatasetGroundTruthManifestTypeDef](./type_defs.md#datasetgroundtruthmanifesttypedef)
+
+<a id="deletedatasetrequestrequesttypedef"></a>
 
 ## DeleteDatasetRequestRequestTypeDef
 
@@ -241,6 +267,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="deletemodelrequestrequesttypedef"></a>
+
 ## DeleteModelRequestRequestTypeDef
 
 ```python
@@ -256,6 +284,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="deletemodelresponsetypedef"></a>
+
 ## DeleteModelResponseTypeDef
 
 ```python
@@ -267,6 +297,8 @@ Required fields:
 - `ModelArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteprojectrequestrequesttypedef"></a>
 
 ## DeleteProjectRequestRequestTypeDef
 
@@ -282,6 +314,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="deleteprojectresponsetypedef"></a>
+
 ## DeleteProjectResponseTypeDef
 
 ```python
@@ -294,6 +328,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetrequestrequesttypedef"></a>
+
 ## DescribeDatasetRequestRequestTypeDef
 
 ```python
@@ -304,6 +340,8 @@ Required fields:
 
 - `ProjectName`: `str`
 - `DatasetType`: `str`
+
+<a id="describedatasetresponsetypedef"></a>
 
 ## DescribeDatasetResponseTypeDef
 
@@ -318,6 +356,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemodelpackagingjobrequestrequesttypedef"></a>
+
 ## DescribeModelPackagingJobRequestRequestTypeDef
 
 ```python
@@ -328,6 +368,8 @@ Required fields:
 
 - `ProjectName`: `str`
 - `JobName`: `str`
+
+<a id="describemodelpackagingjobresponsetypedef"></a>
 
 ## DescribeModelPackagingJobResponseTypeDef
 
@@ -342,6 +384,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemodelrequestrequesttypedef"></a>
+
 ## DescribeModelRequestRequestTypeDef
 
 ```python
@@ -352,6 +396,8 @@ Required fields:
 
 - `ProjectName`: `str`
 - `ModelVersion`: `str`
+
+<a id="describemodelresponsetypedef"></a>
 
 ## DescribeModelResponseTypeDef
 
@@ -366,6 +412,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeprojectrequestrequesttypedef"></a>
+
 ## DescribeProjectRequestRequestTypeDef
 
 ```python
@@ -375,6 +423,8 @@ from mypy_boto3_lookoutvision.type_defs import DescribeProjectRequestRequestType
 Required fields:
 
 - `ProjectName`: `str`
+
+<a id="describeprojectresponsetypedef"></a>
 
 ## DescribeProjectResponseTypeDef
 
@@ -389,6 +439,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectanomaliesrequestrequesttypedef"></a>
+
 ## DetectAnomaliesRequestRequestTypeDef
 
 ```python
@@ -401,6 +453,8 @@ Required fields:
 - `ModelVersion`: `str`
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentType`: `str`
+
+<a id="detectanomaliesresponsetypedef"></a>
 
 ## DetectAnomaliesResponseTypeDef
 
@@ -415,6 +469,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectanomalyresulttypedef"></a>
+
 ## DetectAnomalyResultTypeDef
 
 ```python
@@ -426,6 +482,8 @@ Optional fields:
 - `Source`: [ImageSourceTypeDef](./type_defs.md#imagesourcetypedef)
 - `IsAnomalous`: `bool`
 - `Confidence`: `float`
+
+<a id="greengrassconfigurationtypedef"></a>
 
 ## GreengrassConfigurationTypeDef
 
@@ -449,6 +507,8 @@ Optional fields:
 - `ComponentDescription`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="greengrassoutputdetailstypedef"></a>
+
 ## GreengrassOutputDetailsTypeDef
 
 ```python
@@ -461,6 +521,8 @@ Optional fields:
 - `ComponentName`: `str`
 - `ComponentVersion`: `str`
 
+<a id="imagesourcetypedef"></a>
+
 ## ImageSourceTypeDef
 
 ```python
@@ -470,6 +532,8 @@ from mypy_boto3_lookoutvision.type_defs import ImageSourceTypeDef
 Optional fields:
 
 - `Type`: `str`
+
+<a id="inputs3objecttypedef"></a>
 
 ## InputS3ObjectTypeDef
 
@@ -485,6 +549,8 @@ Required fields:
 Optional fields:
 
 - `VersionId`: `str`
+
+<a id="listdatasetentriesrequestrequesttypedef"></a>
 
 ## ListDatasetEntriesRequestRequestTypeDef
 
@@ -507,6 +573,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `SourceRefContains`: `str`
 
+<a id="listdatasetentriesresponsetypedef"></a>
+
 ## ListDatasetEntriesResponseTypeDef
 
 ```python
@@ -519,6 +587,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmodelpackagingjobsrequestrequesttypedef"></a>
 
 ## ListModelPackagingJobsRequestRequestTypeDef
 
@@ -535,6 +605,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listmodelpackagingjobsresponsetypedef"></a>
+
 ## ListModelPackagingJobsResponseTypeDef
 
 ```python
@@ -548,6 +620,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmodelsrequestrequesttypedef"></a>
 
 ## ListModelsRequestRequestTypeDef
 
@@ -564,6 +638,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listmodelsresponsetypedef"></a>
+
 ## ListModelsResponseTypeDef
 
 ```python
@@ -578,6 +654,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listprojectsrequestrequesttypedef"></a>
+
 ## ListProjectsRequestRequestTypeDef
 
 ```python
@@ -588,6 +666,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listprojectsresponsetypedef"></a>
 
 ## ListProjectsResponseTypeDef
 
@@ -603,6 +683,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -612,6 +694,8 @@ from mypy_boto3_lookoutvision.type_defs import ListTagsForResourceRequestRequest
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -624,6 +708,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modeldescriptiontypedef"></a>
 
 ## ModelDescriptionTypeDef
 
@@ -649,6 +735,8 @@ Optional fields:
 - `EvaluationEndTimestamp`: `datetime`
 - `KmsKeyId`: `str`
 
+<a id="modelmetadatatypedef"></a>
+
 ## ModelMetadataTypeDef
 
 ```python
@@ -666,6 +754,8 @@ Optional fields:
 - `Performance`:
   [ModelPerformanceTypeDef](./type_defs.md#modelperformancetypedef)
 
+<a id="modelpackagingconfigurationtypedef"></a>
+
 ## ModelPackagingConfigurationTypeDef
 
 ```python
@@ -676,6 +766,8 @@ Required fields:
 
 - `Greengrass`:
   [GreengrassConfigurationTypeDef](./type_defs.md#greengrassconfigurationtypedef)
+
+<a id="modelpackagingdescriptiontypedef"></a>
 
 ## ModelPackagingDescriptionTypeDef
 
@@ -700,6 +792,8 @@ Optional fields:
 - `CreationTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
 
+<a id="modelpackagingjobmetadatatypedef"></a>
+
 ## ModelPackagingJobMetadataTypeDef
 
 ```python
@@ -719,6 +813,8 @@ Optional fields:
 - `CreationTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
 
+<a id="modelpackagingoutputdetailstypedef"></a>
+
 ## ModelPackagingOutputDetailsTypeDef
 
 ```python
@@ -729,6 +825,8 @@ Optional fields:
 
 - `Greengrass`:
   [GreengrassOutputDetailsTypeDef](./type_defs.md#greengrassoutputdetailstypedef)
+
+<a id="modelperformancetypedef"></a>
 
 ## ModelPerformanceTypeDef
 
@@ -742,6 +840,8 @@ Optional fields:
 - `Recall`: `float`
 - `Precision`: `float`
 
+<a id="outputconfigtypedef"></a>
+
 ## OutputConfigTypeDef
 
 ```python
@@ -751,6 +851,8 @@ from mypy_boto3_lookoutvision.type_defs import OutputConfigTypeDef
 Required fields:
 
 - `S3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+<a id="outputs3objecttypedef"></a>
 
 ## OutputS3ObjectTypeDef
 
@@ -763,6 +865,8 @@ Required fields:
 - `Bucket`: `str`
 - `Key`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -774,6 +878,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="projectdescriptiontypedef"></a>
 
 ## ProjectDescriptionTypeDef
 
@@ -789,6 +895,8 @@ Optional fields:
 - `Datasets`:
   `List`\[[DatasetMetadataTypeDef](./type_defs.md#datasetmetadatatypedef)\]
 
+<a id="projectmetadatatypedef"></a>
+
 ## ProjectMetadataTypeDef
 
 ```python
@@ -800,6 +908,8 @@ Optional fields:
 - `ProjectArn`: `str`
 - `ProjectName`: `str`
 - `CreationTimestamp`: `datetime`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -815,6 +925,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3locationtypedef"></a>
+
 ## S3LocationTypeDef
 
 ```python
@@ -828,6 +940,8 @@ Required fields:
 Optional fields:
 
 - `Prefix`: `str`
+
+<a id="startmodelpackagingjobrequestrequesttypedef"></a>
 
 ## StartModelPackagingJobRequestRequestTypeDef
 
@@ -848,6 +962,8 @@ Optional fields:
 - `Description`: `str`
 - `ClientToken`: `str`
 
+<a id="startmodelpackagingjobresponsetypedef"></a>
+
 ## StartModelPackagingJobResponseTypeDef
 
 ```python
@@ -859,6 +975,8 @@ Required fields:
 - `JobName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startmodelrequestrequesttypedef"></a>
 
 ## StartModelRequestRequestTypeDef
 
@@ -876,6 +994,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="startmodelresponsetypedef"></a>
+
 ## StartModelResponseTypeDef
 
 ```python
@@ -887,6 +1007,8 @@ Required fields:
 - `Status`: [ModelHostingStatusType](./literals.md#modelhostingstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="stopmodelrequestrequesttypedef"></a>
 
 ## StopModelRequestRequestTypeDef
 
@@ -903,6 +1025,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="stopmodelresponsetypedef"></a>
+
 ## StopModelResponseTypeDef
 
 ```python
@@ -915,6 +1039,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -926,6 +1052,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -936,6 +1064,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="targetplatformtypedef"></a>
 
 ## TargetPlatformTypeDef
 
@@ -951,6 +1081,8 @@ Required fields:
 - `Accelerator`: `Literal['NVIDIA']` (see
   [TargetPlatformAcceleratorType](./literals.md#targetplatformacceleratortype))
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -961,6 +1093,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedatasetentriesrequestrequesttypedef"></a>
 
 ## UpdateDatasetEntriesRequestRequestTypeDef
 
@@ -977,6 +1111,8 @@ Required fields:
 Optional fields:
 
 - `ClientToken`: `str`
+
+<a id="updatedatasetentriesresponsetypedef"></a>
 
 ## UpdateDatasetEntriesResponseTypeDef
 

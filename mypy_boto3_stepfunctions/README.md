@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-sfn-module"></a>
+
 # Type annotations for boto3 SFN module
 
 > [Index](..) > SFN
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
 type annotations stubs module
-[mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+[mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[stepfunctions]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[stepfunctions]'
+
+# standalone installation
 pip install mypy-boto3-stepfunctions
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-stepfunctions
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="sfnclient"></a>
+
 ## SFNClient
 
 Type annotations for `boto3.client("stepfunctions")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_stepfunctions.client import SFNClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -60,6 +74,8 @@ from mypy_boto3_stepfunctions.client import SFNClient
 - [untag_resource](./client.md#untag_resource)
 - [update_state_machine](./client.md#update_state_machine)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SFNClient [exceptions](./client.md#exceptions)
@@ -90,6 +106,8 @@ SFNClient [exceptions](./client.md#exceptions)
 - TaskTimedOut
 - TooManyTags
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -98,13 +116,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_stepfunctions.paginators import GetExecutionHistoryPaginator, ...
+from mypy_boto3_stepfunctions.paginator import GetExecutionHistoryPaginator, ...
 ```
 
 - [GetExecutionHistoryPaginator](./paginators.md#getexecutionhistorypaginator)
 - [ListActivitiesPaginator](./paginators.md#listactivitiespaginator)
 - [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
 - [ListStateMachinesPaginator](./paginators.md#liststatemachinespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -128,6 +148,8 @@ from mypy_boto3_stepfunctions.literals import ExecutionStatusType, ...
 - [SyncExecutionStatusType](./literals.md#syncexecutionstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

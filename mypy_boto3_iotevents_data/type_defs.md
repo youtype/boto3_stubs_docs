@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ioteventsdata-module"></a>
+
 # Typed dictionaries for boto3 IoTEventsData module
 
 > [Index](..) > [IoTEventsData](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
 type annotations stubs module
-[mypy_boto3_iotevents_data](https://pypi.org/project/mypy-boto3-iotevents-data/).
+[mypy-boto3-iotevents-data](https://pypi.org/project/mypy-boto3-iotevents-data/).
 
 - [Typed dictionaries for boto3 IoTEventsData module](#typed-dictionaries-for-boto3-ioteventsdata-module)
   - [AcknowledgeActionConfigurationTypeDef](#acknowledgeactionconfigurationtypedef)
@@ -65,6 +67,8 @@ type annotations stubs module
   - [VariableDefinitionTypeDef](#variabledefinitiontypedef)
   - [VariableTypeDef](#variabletypedef)
 
+<a id="acknowledgeactionconfigurationtypedef"></a>
+
 ## AcknowledgeActionConfigurationTypeDef
 
 ```python
@@ -74,6 +78,8 @@ from mypy_boto3_iotevents_data.type_defs import AcknowledgeActionConfigurationTy
 Optional fields:
 
 - `note`: `str`
+
+<a id="acknowledgealarmactionrequesttypedef"></a>
 
 ## AcknowledgeAlarmActionRequestTypeDef
 
@@ -91,6 +97,8 @@ Optional fields:
 - `keyValue`: `str`
 - `note`: `str`
 
+<a id="alarmstatetypedef"></a>
+
 ## AlarmStateTypeDef
 
 ```python
@@ -106,6 +114,8 @@ Optional fields:
   [CustomerActionTypeDef](./type_defs.md#customeractiontypedef)
 - `systemEvent`: [SystemEventTypeDef](./type_defs.md#systemeventtypedef)
 
+<a id="alarmsummarytypedef"></a>
+
 ## AlarmSummaryTypeDef
 
 ```python
@@ -120,6 +130,8 @@ Optional fields:
 - `stateName`: [AlarmStateNameType](./literals.md#alarmstatenametype)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
+
+<a id="alarmtypedef"></a>
 
 ## AlarmTypeDef
 
@@ -137,6 +149,8 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 
+<a id="batchacknowledgealarmrequestrequesttypedef"></a>
+
 ## BatchAcknowledgeAlarmRequestRequestTypeDef
 
 ```python
@@ -147,6 +161,8 @@ Required fields:
 
 - `acknowledgeActionRequests`:
   `Sequence`\[[AcknowledgeAlarmActionRequestTypeDef](./type_defs.md#acknowledgealarmactionrequesttypedef)\]
+
+<a id="batchacknowledgealarmresponsetypedef"></a>
 
 ## BatchAcknowledgeAlarmResponseTypeDef
 
@@ -161,6 +177,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchalarmactionerrorentrytypedef"></a>
+
 ## BatchAlarmActionErrorEntryTypeDef
 
 ```python
@@ -173,6 +191,8 @@ Optional fields:
 - `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 
+<a id="batchdisablealarmrequestrequesttypedef"></a>
+
 ## BatchDisableAlarmRequestRequestTypeDef
 
 ```python
@@ -183,6 +203,8 @@ Required fields:
 
 - `disableActionRequests`:
   `Sequence`\[[DisableAlarmActionRequestTypeDef](./type_defs.md#disablealarmactionrequesttypedef)\]
+
+<a id="batchdisablealarmresponsetypedef"></a>
 
 ## BatchDisableAlarmResponseTypeDef
 
@@ -197,6 +219,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchenablealarmrequestrequesttypedef"></a>
+
 ## BatchEnableAlarmRequestRequestTypeDef
 
 ```python
@@ -207,6 +231,8 @@ Required fields:
 
 - `enableActionRequests`:
   `Sequence`\[[EnableAlarmActionRequestTypeDef](./type_defs.md#enablealarmactionrequesttypedef)\]
+
+<a id="batchenablealarmresponsetypedef"></a>
 
 ## BatchEnableAlarmResponseTypeDef
 
@@ -221,6 +247,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchputmessageerrorentrytypedef"></a>
+
 ## BatchPutMessageErrorEntryTypeDef
 
 ```python
@@ -233,6 +261,8 @@ Optional fields:
 - `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 
+<a id="batchputmessagerequestrequesttypedef"></a>
+
 ## BatchPutMessageRequestRequestTypeDef
 
 ```python
@@ -242,6 +272,8 @@ from mypy_boto3_iotevents_data.type_defs import BatchPutMessageRequestRequestTyp
 Required fields:
 
 - `messages`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
+
+<a id="batchputmessageresponsetypedef"></a>
 
 ## BatchPutMessageResponseTypeDef
 
@@ -256,6 +288,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchresetalarmrequestrequesttypedef"></a>
+
 ## BatchResetAlarmRequestRequestTypeDef
 
 ```python
@@ -266,6 +300,8 @@ Required fields:
 
 - `resetActionRequests`:
   `Sequence`\[[ResetAlarmActionRequestTypeDef](./type_defs.md#resetalarmactionrequesttypedef)\]
+
+<a id="batchresetalarmresponsetypedef"></a>
 
 ## BatchResetAlarmResponseTypeDef
 
@@ -280,6 +316,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchsnoozealarmrequestrequesttypedef"></a>
+
 ## BatchSnoozeAlarmRequestRequestTypeDef
 
 ```python
@@ -290,6 +328,8 @@ Required fields:
 
 - `snoozeActionRequests`:
   `Sequence`\[[SnoozeAlarmActionRequestTypeDef](./type_defs.md#snoozealarmactionrequesttypedef)\]
+
+<a id="batchsnoozealarmresponsetypedef"></a>
 
 ## BatchSnoozeAlarmResponseTypeDef
 
@@ -304,6 +344,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchupdatedetectorerrorentrytypedef"></a>
+
 ## BatchUpdateDetectorErrorEntryTypeDef
 
 ```python
@@ -316,6 +358,8 @@ Optional fields:
 - `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 
+<a id="batchupdatedetectorrequestrequesttypedef"></a>
+
 ## BatchUpdateDetectorRequestRequestTypeDef
 
 ```python
@@ -326,6 +370,8 @@ Required fields:
 
 - `detectors`:
   `Sequence`\[[UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef)\]
+
+<a id="batchupdatedetectorresponsetypedef"></a>
 
 ## BatchUpdateDetectorResponseTypeDef
 
@@ -339,6 +385,8 @@ Required fields:
   `List`\[[BatchUpdateDetectorErrorEntryTypeDef](./type_defs.md#batchupdatedetectorerrorentrytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="customeractiontypedef"></a>
 
 ## CustomerActionTypeDef
 
@@ -360,6 +408,8 @@ Optional fields:
 - `resetActionConfiguration`:
   [ResetActionConfigurationTypeDef](./type_defs.md#resetactionconfigurationtypedef)
 
+<a id="describealarmrequestrequesttypedef"></a>
+
 ## DescribeAlarmRequestRequestTypeDef
 
 ```python
@@ -374,6 +424,8 @@ Optional fields:
 
 - `keyValue`: `str`
 
+<a id="describealarmresponsetypedef"></a>
+
 ## DescribeAlarmResponseTypeDef
 
 ```python
@@ -385,6 +437,8 @@ Required fields:
 - `alarm`: [AlarmTypeDef](./type_defs.md#alarmtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedetectorrequestrequesttypedef"></a>
 
 ## DescribeDetectorRequestRequestTypeDef
 
@@ -400,6 +454,8 @@ Optional fields:
 
 - `keyValue`: `str`
 
+<a id="describedetectorresponsetypedef"></a>
+
 ## DescribeDetectorResponseTypeDef
 
 ```python
@@ -411,6 +467,8 @@ Required fields:
 - `detector`: [DetectorTypeDef](./type_defs.md#detectortypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="detectorstatedefinitiontypedef"></a>
 
 ## DetectorStateDefinitionTypeDef
 
@@ -426,6 +484,8 @@ Required fields:
 - `timers`:
   `Sequence`\[[TimerDefinitionTypeDef](./type_defs.md#timerdefinitiontypedef)\]
 
+<a id="detectorstatesummarytypedef"></a>
+
 ## DetectorStateSummaryTypeDef
 
 ```python
@@ -435,6 +495,8 @@ from mypy_boto3_iotevents_data.type_defs import DetectorStateSummaryTypeDef
 Optional fields:
 
 - `stateName`: `str`
+
+<a id="detectorstatetypedef"></a>
 
 ## DetectorStateTypeDef
 
@@ -447,6 +509,8 @@ Required fields:
 - `stateName`: `str`
 - `variables`: `List`\[[VariableTypeDef](./type_defs.md#variabletypedef)\]
 - `timers`: `List`\[[TimerTypeDef](./type_defs.md#timertypedef)\]
+
+<a id="detectorsummarytypedef"></a>
 
 ## DetectorSummaryTypeDef
 
@@ -464,6 +528,8 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 
+<a id="detectortypedef"></a>
+
 ## DetectorTypeDef
 
 ```python
@@ -479,6 +545,8 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 
+<a id="disableactionconfigurationtypedef"></a>
+
 ## DisableActionConfigurationTypeDef
 
 ```python
@@ -488,6 +556,8 @@ from mypy_boto3_iotevents_data.type_defs import DisableActionConfigurationTypeDe
 Optional fields:
 
 - `note`: `str`
+
+<a id="disablealarmactionrequesttypedef"></a>
 
 ## DisableAlarmActionRequestTypeDef
 
@@ -505,6 +575,8 @@ Optional fields:
 - `keyValue`: `str`
 - `note`: `str`
 
+<a id="enableactionconfigurationtypedef"></a>
+
 ## EnableActionConfigurationTypeDef
 
 ```python
@@ -514,6 +586,8 @@ from mypy_boto3_iotevents_data.type_defs import EnableActionConfigurationTypeDef
 Optional fields:
 
 - `note`: `str`
+
+<a id="enablealarmactionrequesttypedef"></a>
 
 ## EnableAlarmActionRequestTypeDef
 
@@ -531,6 +605,8 @@ Optional fields:
 - `keyValue`: `str`
 - `note`: `str`
 
+<a id="listalarmsrequestrequesttypedef"></a>
+
 ## ListAlarmsRequestRequestTypeDef
 
 ```python
@@ -546,6 +622,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listalarmsresponsetypedef"></a>
+
 ## ListAlarmsResponseTypeDef
 
 ```python
@@ -559,6 +637,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdetectorsrequestrequesttypedef"></a>
 
 ## ListDetectorsRequestRequestTypeDef
 
@@ -576,6 +656,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listdetectorsresponsetypedef"></a>
+
 ## ListDetectorsResponseTypeDef
 
 ```python
@@ -589,6 +671,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="messagetypedef"></a>
 
 ## MessageTypeDef
 
@@ -606,6 +690,8 @@ Optional fields:
 
 - `timestamp`: [TimestampValueTypeDef](./type_defs.md#timestampvaluetypedef)
 
+<a id="resetactionconfigurationtypedef"></a>
+
 ## ResetActionConfigurationTypeDef
 
 ```python
@@ -615,6 +701,8 @@ from mypy_boto3_iotevents_data.type_defs import ResetActionConfigurationTypeDef
 Optional fields:
 
 - `note`: `str`
+
+<a id="resetalarmactionrequesttypedef"></a>
 
 ## ResetAlarmActionRequestTypeDef
 
@@ -632,6 +720,8 @@ Optional fields:
 - `keyValue`: `str`
 - `note`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -646,6 +736,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="ruleevaluationtypedef"></a>
+
 ## RuleEvaluationTypeDef
 
 ```python
@@ -656,6 +748,8 @@ Optional fields:
 
 - `simpleRuleEvaluation`:
   [SimpleRuleEvaluationTypeDef](./type_defs.md#simpleruleevaluationtypedef)
+
+<a id="simpleruleevaluationtypedef"></a>
 
 ## SimpleRuleEvaluationTypeDef
 
@@ -669,6 +763,8 @@ Optional fields:
 - `operator`: [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `thresholdValue`: `str`
 
+<a id="snoozeactionconfigurationtypedef"></a>
+
 ## SnoozeActionConfigurationTypeDef
 
 ```python
@@ -679,6 +775,8 @@ Optional fields:
 
 - `snoozeDuration`: `int`
 - `note`: `str`
+
+<a id="snoozealarmactionrequesttypedef"></a>
 
 ## SnoozeAlarmActionRequestTypeDef
 
@@ -697,6 +795,8 @@ Optional fields:
 - `keyValue`: `str`
 - `note`: `str`
 
+<a id="statechangeconfigurationtypedef"></a>
+
 ## StateChangeConfigurationTypeDef
 
 ```python
@@ -707,6 +807,8 @@ Optional fields:
 
 - `triggerType`: `Literal['SNOOZE_TIMEOUT']` (see
   [TriggerTypeType](./literals.md#triggertypetype))
+
+<a id="systemeventtypedef"></a>
 
 ## SystemEventTypeDef
 
@@ -721,6 +823,8 @@ Optional fields:
 - `stateChangeConfiguration`:
   [StateChangeConfigurationTypeDef](./type_defs.md#statechangeconfigurationtypedef)
 
+<a id="timerdefinitiontypedef"></a>
+
 ## TimerDefinitionTypeDef
 
 ```python
@@ -731,6 +835,8 @@ Required fields:
 
 - `name`: `str`
 - `seconds`: `int`
+
+<a id="timertypedef"></a>
 
 ## TimerTypeDef
 
@@ -743,6 +849,8 @@ Required fields:
 - `name`: `str`
 - `timestamp`: `datetime`
 
+<a id="timestampvaluetypedef"></a>
+
 ## TimestampValueTypeDef
 
 ```python
@@ -752,6 +860,8 @@ from mypy_boto3_iotevents_data.type_defs import TimestampValueTypeDef
 Optional fields:
 
 - `timeInMillis`: `int`
+
+<a id="updatedetectorrequesttypedef"></a>
 
 ## UpdateDetectorRequestTypeDef
 
@@ -770,6 +880,8 @@ Optional fields:
 
 - `keyValue`: `str`
 
+<a id="variabledefinitiontypedef"></a>
+
 ## VariableDefinitionTypeDef
 
 ```python
@@ -780,6 +892,8 @@ Required fields:
 
 - `name`: `str`
 - `value`: `str`
+
+<a id="variabletypedef"></a>
 
 ## VariableTypeDef
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloudformation-module"></a>
+
 # Typed dictionaries for boto3 CloudFormation module
 
 > [Index](..) > [CloudFormation](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
 type annotations stubs module
-[mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+[mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 - [Typed dictionaries for boto3 CloudFormation module](#typed-dictionaries-for-boto3-cloudformation-module)
   - [AccountGateResultTypeDef](#accountgateresulttypedef)
@@ -197,6 +199,8 @@ type annotations stubs module
   - [ValidateTemplateOutputTypeDef](#validatetemplateoutputtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="accountgateresulttypedef"></a>
+
 ## AccountGateResultTypeDef
 
 ```python
@@ -208,6 +212,8 @@ Optional fields:
 - `Status`: [AccountGateStatusType](./literals.md#accountgatestatustype)
 - `StatusReason`: `str`
 
+<a id="accountlimittypedef"></a>
+
 ## AccountLimitTypeDef
 
 ```python
@@ -218,6 +224,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Value`: `int`
+
+<a id="activatetypeinputrequesttypedef"></a>
 
 ## ActivateTypeInputRequestTypeDef
 
@@ -238,6 +246,8 @@ Optional fields:
 - `VersionBump`: [VersionBumpType](./literals.md#versionbumptype)
 - `MajorVersion`: `int`
 
+<a id="activatetypeoutputtypedef"></a>
+
 ## ActivateTypeOutputTypeDef
 
 ```python
@@ -250,6 +260,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="autodeploymenttypedef"></a>
+
 ## AutoDeploymentTypeDef
 
 ```python
@@ -260,6 +272,8 @@ Optional fields:
 
 - `Enabled`: `bool`
 - `RetainStacksOnAccountRemoval`: `bool`
+
+<a id="batchdescribetypeconfigurationserrortypedef"></a>
 
 ## BatchDescribeTypeConfigurationsErrorTypeDef
 
@@ -274,6 +288,8 @@ Optional fields:
 - `TypeConfigurationIdentifier`:
   [TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)
 
+<a id="batchdescribetypeconfigurationsinputrequesttypedef"></a>
+
 ## BatchDescribeTypeConfigurationsInputRequestTypeDef
 
 ```python
@@ -284,6 +300,8 @@ Required fields:
 
 - `TypeConfigurationIdentifiers`:
   `Sequence`\[[TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)\]
+
+<a id="batchdescribetypeconfigurationsoutputtypedef"></a>
 
 ## BatchDescribeTypeConfigurationsOutputTypeDef
 
@@ -302,6 +320,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cancelupdatestackinputrequesttypedef"></a>
+
 ## CancelUpdateStackInputRequestTypeDef
 
 ```python
@@ -316,6 +336,8 @@ Optional fields:
 
 - `ClientRequestToken`: `str`
 
+<a id="cancelupdatestackinputstacktypedef"></a>
+
 ## CancelUpdateStackInputStackTypeDef
 
 ```python
@@ -325,6 +347,8 @@ from mypy_boto3_cloudformation.type_defs import CancelUpdateStackInputStackTypeD
 Optional fields:
 
 - `ClientRequestToken`: `str`
+
+<a id="changesetsummarytypedef"></a>
 
 ## ChangeSetSummaryTypeDef
 
@@ -347,6 +371,8 @@ Optional fields:
 - `ParentChangeSetId`: `str`
 - `RootChangeSetId`: `str`
 
+<a id="changetypedef"></a>
+
 ## ChangeTypeDef
 
 ```python
@@ -359,6 +385,8 @@ Optional fields:
   [ChangeTypeType](./literals.md#changetypetype))
 - `ResourceChange`:
   [ResourceChangeTypeDef](./type_defs.md#resourcechangetypedef)
+
+<a id="continueupdaterollbackinputrequesttypedef"></a>
 
 ## ContinueUpdateRollbackInputRequestTypeDef
 
@@ -375,6 +403,8 @@ Optional fields:
 - `RoleARN`: `str`
 - `ResourcesToSkip`: `Sequence`\[`str`\]
 - `ClientRequestToken`: `str`
+
+<a id="createchangesetinputrequesttypedef"></a>
 
 ## CreateChangeSetInputRequestTypeDef
 
@@ -408,6 +438,8 @@ Optional fields:
   `Sequence`\[[ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef)\]
 - `IncludeNestedStacks`: `bool`
 
+<a id="createchangesetoutputtypedef"></a>
+
 ## CreateChangeSetOutputTypeDef
 
 ```python
@@ -420,6 +452,8 @@ Required fields:
 - `StackId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstackinputrequesttypedef"></a>
 
 ## CreateStackInputRequestTypeDef
 
@@ -452,6 +486,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `EnableTerminationProtection`: `bool`
 
+<a id="createstackinputserviceresourcetypedef"></a>
+
 ## CreateStackInputServiceResourceTypeDef
 
 ```python
@@ -483,6 +519,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `EnableTerminationProtection`: `bool`
 
+<a id="createstackinstancesinputrequesttypedef"></a>
+
 ## CreateStackInstancesInputRequestTypeDef
 
 ```python
@@ -506,6 +544,8 @@ Optional fields:
 - `OperationId`: `str`
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="createstackinstancesoutputtypedef"></a>
+
 ## CreateStackInstancesOutputTypeDef
 
 ```python
@@ -518,6 +558,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createstackoutputtypedef"></a>
+
 ## CreateStackOutputTypeDef
 
 ```python
@@ -529,6 +571,8 @@ Required fields:
 - `StackId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstacksetinputrequesttypedef"></a>
 
 ## CreateStackSetInputRequestTypeDef
 
@@ -560,6 +604,8 @@ Optional fields:
 - `ManagedExecution`:
   [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
 
+<a id="createstacksetoutputtypedef"></a>
+
 ## CreateStackSetOutputTypeDef
 
 ```python
@@ -572,6 +618,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deactivatetypeinputrequesttypedef"></a>
+
 ## DeactivateTypeInputRequestTypeDef
 
 ```python
@@ -583,6 +631,8 @@ Optional fields:
 - `TypeName`: `str`
 - `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
 - `Arn`: `str`
+
+<a id="deletechangesetinputrequesttypedef"></a>
 
 ## DeleteChangeSetInputRequestTypeDef
 
@@ -597,6 +647,8 @@ Required fields:
 Optional fields:
 
 - `StackName`: `str`
+
+<a id="deletestackinputrequesttypedef"></a>
 
 ## DeleteStackInputRequestTypeDef
 
@@ -614,6 +666,8 @@ Optional fields:
 - `RoleARN`: `str`
 - `ClientRequestToken`: `str`
 
+<a id="deletestackinputstacktypedef"></a>
+
 ## DeleteStackInputStackTypeDef
 
 ```python
@@ -625,6 +679,8 @@ Optional fields:
 - `RetainResources`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `ClientRequestToken`: `str`
+
+<a id="deletestackinstancesinputrequesttypedef"></a>
 
 ## DeleteStackInstancesInputRequestTypeDef
 
@@ -648,6 +704,8 @@ Optional fields:
 - `OperationId`: `str`
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="deletestackinstancesoutputtypedef"></a>
+
 ## DeleteStackInstancesOutputTypeDef
 
 ```python
@@ -659,6 +717,8 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletestacksetinputrequesttypedef"></a>
 
 ## DeleteStackSetInputRequestTypeDef
 
@@ -674,6 +734,8 @@ Optional fields:
 
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="deploymenttargetstypedef"></a>
+
 ## DeploymentTargetsTypeDef
 
 ```python
@@ -685,6 +747,8 @@ Optional fields:
 - `Accounts`: `Sequence`\[`str`\]
 - `AccountsUrl`: `str`
 - `OrganizationalUnitIds`: `Sequence`\[`str`\]
+
+<a id="deregistertypeinputrequesttypedef"></a>
 
 ## DeregisterTypeInputRequestTypeDef
 
@@ -699,6 +763,8 @@ Optional fields:
 - `TypeName`: `str`
 - `VersionId`: `str`
 
+<a id="describeaccountlimitsinputrequesttypedef"></a>
+
 ## DescribeAccountLimitsInputRequestTypeDef
 
 ```python
@@ -708,6 +774,8 @@ from mypy_boto3_cloudformation.type_defs import DescribeAccountLimitsInputReques
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="describeaccountlimitsoutputtypedef"></a>
 
 ## DescribeAccountLimitsOutputTypeDef
 
@@ -723,6 +791,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describechangesetinputrequesttypedef"></a>
+
 ## DescribeChangeSetInputRequestTypeDef
 
 ```python
@@ -737,6 +807,8 @@ Optional fields:
 
 - `StackName`: `str`
 - `NextToken`: `str`
+
+<a id="describechangesetoutputtypedef"></a>
 
 ## DescribeChangeSetOutputTypeDef
 
@@ -769,6 +841,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepublisherinputrequesttypedef"></a>
+
 ## DescribePublisherInputRequestTypeDef
 
 ```python
@@ -778,6 +852,8 @@ from mypy_boto3_cloudformation.type_defs import DescribePublisherInputRequestTyp
 Optional fields:
 
 - `PublisherId`: `str`
+
+<a id="describepublisheroutputtypedef"></a>
 
 ## DescribePublisherOutputTypeDef
 
@@ -795,6 +871,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestackdriftdetectionstatusinputrequesttypedef"></a>
+
 ## DescribeStackDriftDetectionStatusInputRequestTypeDef
 
 ```python
@@ -804,6 +882,8 @@ from mypy_boto3_cloudformation.type_defs import DescribeStackDriftDetectionStatu
 Required fields:
 
 - `StackDriftDetectionId`: `str`
+
+<a id="describestackdriftdetectionstatusoutputtypedef"></a>
 
 ## DescribeStackDriftDetectionStatusOutputTypeDef
 
@@ -825,6 +905,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestackeventsinputrequesttypedef"></a>
+
 ## DescribeStackEventsInputRequestTypeDef
 
 ```python
@@ -835,6 +917,8 @@ Optional fields:
 
 - `StackName`: `str`
 - `NextToken`: `str`
+
+<a id="describestackeventsoutputtypedef"></a>
 
 ## DescribeStackEventsOutputTypeDef
 
@@ -849,6 +933,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describestackinstanceinputrequesttypedef"></a>
 
 ## DescribeStackInstanceInputRequestTypeDef
 
@@ -866,6 +952,8 @@ Optional fields:
 
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="describestackinstanceoutputtypedef"></a>
+
 ## DescribeStackInstanceOutputTypeDef
 
 ```python
@@ -877,6 +965,8 @@ Required fields:
 - `StackInstance`: [StackInstanceTypeDef](./type_defs.md#stackinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describestackresourcedriftsinputrequesttypedef"></a>
 
 ## DescribeStackResourceDriftsInputRequestTypeDef
 
@@ -895,6 +985,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="describestackresourcedriftsoutputtypedef"></a>
+
 ## DescribeStackResourceDriftsOutputTypeDef
 
 ```python
@@ -909,6 +1001,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestackresourceinputrequesttypedef"></a>
+
 ## DescribeStackResourceInputRequestTypeDef
 
 ```python
@@ -919,6 +1013,8 @@ Required fields:
 
 - `StackName`: `str`
 - `LogicalResourceId`: `str`
+
+<a id="describestackresourceoutputtypedef"></a>
 
 ## DescribeStackResourceOutputTypeDef
 
@@ -933,6 +1029,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestackresourcesinputrequesttypedef"></a>
+
 ## DescribeStackResourcesInputRequestTypeDef
 
 ```python
@@ -944,6 +1042,8 @@ Optional fields:
 - `StackName`: `str`
 - `LogicalResourceId`: `str`
 - `PhysicalResourceId`: `str`
+
+<a id="describestackresourcesoutputtypedef"></a>
 
 ## DescribeStackResourcesOutputTypeDef
 
@@ -958,6 +1058,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestacksetinputrequesttypedef"></a>
+
 ## DescribeStackSetInputRequestTypeDef
 
 ```python
@@ -971,6 +1073,8 @@ Required fields:
 Optional fields:
 
 - `CallAs`: [CallAsType](./literals.md#callastype)
+
+<a id="describestacksetoperationinputrequesttypedef"></a>
 
 ## DescribeStackSetOperationInputRequestTypeDef
 
@@ -987,6 +1091,8 @@ Optional fields:
 
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="describestacksetoperationoutputtypedef"></a>
+
 ## DescribeStackSetOperationOutputTypeDef
 
 ```python
@@ -1000,6 +1106,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestacksetoutputtypedef"></a>
+
 ## DescribeStackSetOutputTypeDef
 
 ```python
@@ -1012,6 +1120,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestacksinputrequesttypedef"></a>
+
 ## DescribeStacksInputRequestTypeDef
 
 ```python
@@ -1022,6 +1132,8 @@ Optional fields:
 
 - `StackName`: `str`
 - `NextToken`: `str`
+
+<a id="describestacksoutputtypedef"></a>
 
 ## DescribeStacksOutputTypeDef
 
@@ -1035,6 +1147,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describetypeinputrequesttypedef"></a>
 
 ## DescribeTypeInputRequestTypeDef
 
@@ -1050,6 +1164,8 @@ Optional fields:
 - `VersionId`: `str`
 - `PublisherId`: `str`
 - `PublicVersionNumber`: `str`
+
+<a id="describetypeoutputtypedef"></a>
 
 ## DescribeTypeOutputTypeDef
 
@@ -1092,6 +1208,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetyperegistrationinputrequesttypedef"></a>
+
 ## DescribeTypeRegistrationInputRequestTypeDef
 
 ```python
@@ -1101,6 +1219,8 @@ from mypy_boto3_cloudformation.type_defs import DescribeTypeRegistrationInputReq
 Required fields:
 
 - `RegistrationToken`: `str`
+
+<a id="describetyperegistrationoutputtypedef"></a>
 
 ## DescribeTypeRegistrationOutputTypeDef
 
@@ -1118,6 +1238,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectstackdriftinputrequesttypedef"></a>
+
 ## DetectStackDriftInputRequestTypeDef
 
 ```python
@@ -1132,6 +1254,8 @@ Optional fields:
 
 - `LogicalResourceIds`: `Sequence`\[`str`\]
 
+<a id="detectstackdriftoutputtypedef"></a>
+
 ## DetectStackDriftOutputTypeDef
 
 ```python
@@ -1144,6 +1268,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectstackresourcedriftinputrequesttypedef"></a>
+
 ## DetectStackResourceDriftInputRequestTypeDef
 
 ```python
@@ -1154,6 +1280,8 @@ Required fields:
 
 - `StackName`: `str`
 - `LogicalResourceId`: `str`
+
+<a id="detectstackresourcedriftoutputtypedef"></a>
 
 ## DetectStackResourceDriftOutputTypeDef
 
@@ -1167,6 +1295,8 @@ Required fields:
   [StackResourceDriftTypeDef](./type_defs.md#stackresourcedrifttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="detectstacksetdriftinputrequesttypedef"></a>
 
 ## DetectStackSetDriftInputRequestTypeDef
 
@@ -1185,6 +1315,8 @@ Optional fields:
 - `OperationId`: `str`
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="detectstacksetdriftoutputtypedef"></a>
+
 ## DetectStackSetDriftOutputTypeDef
 
 ```python
@@ -1196,6 +1328,8 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="estimatetemplatecostinputrequesttypedef"></a>
 
 ## EstimateTemplateCostInputRequestTypeDef
 
@@ -1210,6 +1344,8 @@ Optional fields:
 - `Parameters`:
   `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
+<a id="estimatetemplatecostoutputtypedef"></a>
+
 ## EstimateTemplateCostOutputTypeDef
 
 ```python
@@ -1221,6 +1357,8 @@ Required fields:
 - `Url`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="executechangesetinputrequesttypedef"></a>
 
 ## ExecuteChangeSetInputRequestTypeDef
 
@@ -1238,6 +1376,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `DisableRollback`: `bool`
 
+<a id="exporttypedef"></a>
+
 ## ExportTypeDef
 
 ```python
@@ -1250,6 +1390,8 @@ Optional fields:
 - `Name`: `str`
 - `Value`: `str`
 
+<a id="getstackpolicyinputrequesttypedef"></a>
+
 ## GetStackPolicyInputRequestTypeDef
 
 ```python
@@ -1259,6 +1401,8 @@ from mypy_boto3_cloudformation.type_defs import GetStackPolicyInputRequestTypeDe
 Required fields:
 
 - `StackName`: `str`
+
+<a id="getstackpolicyoutputtypedef"></a>
 
 ## GetStackPolicyOutputTypeDef
 
@@ -1272,6 +1416,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettemplateinputrequesttypedef"></a>
+
 ## GetTemplateInputRequestTypeDef
 
 ```python
@@ -1283,6 +1429,8 @@ Optional fields:
 - `StackName`: `str`
 - `ChangeSetName`: `str`
 - `TemplateStage`: [TemplateStageType](./literals.md#templatestagetype)
+
+<a id="gettemplateoutputtypedef"></a>
 
 ## GetTemplateOutputTypeDef
 
@@ -1298,6 +1446,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettemplatesummaryinputrequesttypedef"></a>
+
 ## GetTemplateSummaryInputRequestTypeDef
 
 ```python
@@ -1311,6 +1461,8 @@ Optional fields:
 - `StackName`: `str`
 - `StackSetName`: `str`
 - `CallAs`: [CallAsType](./literals.md#callastype)
+
+<a id="gettemplatesummaryoutputtypedef"></a>
 
 ## GetTemplateSummaryOutputTypeDef
 
@@ -1334,6 +1486,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="importstackstostacksetinputrequesttypedef"></a>
+
 ## ImportStacksToStackSetInputRequestTypeDef
 
 ```python
@@ -1354,6 +1508,8 @@ Optional fields:
 - `OperationId`: `str`
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="importstackstostacksetoutputtypedef"></a>
+
 ## ImportStacksToStackSetOutputTypeDef
 
 ```python
@@ -1365,6 +1521,8 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listchangesetsinputrequesttypedef"></a>
 
 ## ListChangeSetsInputRequestTypeDef
 
@@ -1380,6 +1538,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listchangesetsoutputtypedef"></a>
+
 ## ListChangeSetsOutputTypeDef
 
 ```python
@@ -1394,6 +1554,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listexportsinputrequesttypedef"></a>
+
 ## ListExportsInputRequestTypeDef
 
 ```python
@@ -1403,6 +1565,8 @@ from mypy_boto3_cloudformation.type_defs import ListExportsInputRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listexportsoutputtypedef"></a>
 
 ## ListExportsOutputTypeDef
 
@@ -1416,6 +1580,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listimportsinputrequesttypedef"></a>
 
 ## ListImportsInputRequestTypeDef
 
@@ -1431,6 +1597,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listimportsoutputtypedef"></a>
+
 ## ListImportsOutputTypeDef
 
 ```python
@@ -1443,6 +1611,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststackinstancesinputrequesttypedef"></a>
 
 ## ListStackInstancesInputRequestTypeDef
 
@@ -1464,6 +1634,8 @@ Optional fields:
 - `StackInstanceRegion`: `str`
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="liststackinstancesoutputtypedef"></a>
+
 ## ListStackInstancesOutputTypeDef
 
 ```python
@@ -1477,6 +1649,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststackresourcesinputrequesttypedef"></a>
 
 ## ListStackResourcesInputRequestTypeDef
 
@@ -1492,6 +1666,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="liststackresourcesoutputtypedef"></a>
+
 ## ListStackResourcesOutputTypeDef
 
 ```python
@@ -1505,6 +1681,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststacksetoperationresultsinputrequesttypedef"></a>
 
 ## ListStackSetOperationResultsInputRequestTypeDef
 
@@ -1523,6 +1701,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="liststacksetoperationresultsoutputtypedef"></a>
+
 ## ListStackSetOperationResultsOutputTypeDef
 
 ```python
@@ -1536,6 +1716,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststacksetoperationsinputrequesttypedef"></a>
 
 ## ListStackSetOperationsInputRequestTypeDef
 
@@ -1553,6 +1735,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="liststacksetoperationsoutputtypedef"></a>
+
 ## ListStackSetOperationsOutputTypeDef
 
 ```python
@@ -1567,6 +1751,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="liststacksetsinputrequesttypedef"></a>
+
 ## ListStackSetsInputRequestTypeDef
 
 ```python
@@ -1579,6 +1765,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Status`: [StackSetStatusType](./literals.md#stacksetstatustype)
 - `CallAs`: [CallAsType](./literals.md#callastype)
+
+<a id="liststacksetsoutputtypedef"></a>
 
 ## ListStackSetsOutputTypeDef
 
@@ -1594,6 +1782,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="liststacksinputrequesttypedef"></a>
+
 ## ListStacksInputRequestTypeDef
 
 ```python
@@ -1605,6 +1795,8 @@ Optional fields:
 - `NextToken`: `str`
 - `StackStatusFilter`:
   `Sequence`\[[StackStatusType](./literals.md#stackstatustype)\]
+
+<a id="liststacksoutputtypedef"></a>
 
 ## ListStacksOutputTypeDef
 
@@ -1619,6 +1811,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtyperegistrationsinputrequesttypedef"></a>
 
 ## ListTypeRegistrationsInputRequestTypeDef
 
@@ -1636,6 +1830,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtyperegistrationsoutputtypedef"></a>
+
 ## ListTypeRegistrationsOutputTypeDef
 
 ```python
@@ -1648,6 +1844,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtypeversionsinputrequesttypedef"></a>
 
 ## ListTypeVersionsInputRequestTypeDef
 
@@ -1666,6 +1864,8 @@ Optional fields:
   [DeprecatedStatusType](./literals.md#deprecatedstatustype)
 - `PublisherId`: `str`
 
+<a id="listtypeversionsoutputtypedef"></a>
+
 ## ListTypeVersionsOutputTypeDef
 
 ```python
@@ -1679,6 +1879,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtypesinputrequesttypedef"></a>
 
 ## ListTypesInputRequestTypeDef
 
@@ -1698,6 +1900,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtypesoutputtypedef"></a>
+
 ## ListTypesOutputTypeDef
 
 ```python
@@ -1712,6 +1916,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="loggingconfigtypedef"></a>
+
 ## LoggingConfigTypeDef
 
 ```python
@@ -1723,6 +1929,8 @@ Required fields:
 - `LogRoleArn`: `str`
 - `LogGroupName`: `str`
 
+<a id="managedexecutiontypedef"></a>
+
 ## ManagedExecutionTypeDef
 
 ```python
@@ -1732,6 +1940,8 @@ from mypy_boto3_cloudformation.type_defs import ManagedExecutionTypeDef
 Optional fields:
 
 - `Active`: `bool`
+
+<a id="moduleinforesponsemetadatatypedef"></a>
 
 ## ModuleInfoResponseMetadataTypeDef
 
@@ -1746,6 +1956,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="moduleinfotypedef"></a>
+
 ## ModuleInfoTypeDef
 
 ```python
@@ -1756,6 +1968,8 @@ Optional fields:
 
 - `TypeHierarchy`: `str`
 - `LogicalIdHierarchy`: `str`
+
+<a id="outputtypedef"></a>
 
 ## OutputTypeDef
 
@@ -1770,6 +1984,8 @@ Optional fields:
 - `Description`: `str`
 - `ExportName`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1782,6 +1998,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="parameterconstraintstypedef"></a>
+
 ## ParameterConstraintsTypeDef
 
 ```python
@@ -1791,6 +2009,8 @@ from mypy_boto3_cloudformation.type_defs import ParameterConstraintsTypeDef
 Optional fields:
 
 - `AllowedValues`: `List`\[`str`\]
+
+<a id="parameterdeclarationtypedef"></a>
 
 ## ParameterDeclarationTypeDef
 
@@ -1808,6 +2028,8 @@ Optional fields:
 - `ParameterConstraints`:
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)
 
+<a id="parametertypedef"></a>
+
 ## ParameterTypeDef
 
 ```python
@@ -1821,6 +2043,8 @@ Optional fields:
 - `UsePreviousValue`: `bool`
 - `ResolvedValue`: `str`
 
+<a id="physicalresourceidcontextkeyvaluepairtypedef"></a>
+
 ## PhysicalResourceIdContextKeyValuePairTypeDef
 
 ```python
@@ -1831,6 +2055,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="propertydifferencetypedef"></a>
 
 ## PropertyDifferenceTypeDef
 
@@ -1845,6 +2071,8 @@ Required fields:
 - `ActualValue`: `str`
 - `DifferenceType`: [DifferenceTypeType](./literals.md#differencetypetype)
 
+<a id="publishtypeinputrequesttypedef"></a>
+
 ## PublishTypeInputRequestTypeDef
 
 ```python
@@ -1858,6 +2086,8 @@ Optional fields:
 - `TypeName`: `str`
 - `PublicVersionNumber`: `str`
 
+<a id="publishtypeoutputtypedef"></a>
+
 ## PublishTypeOutputTypeDef
 
 ```python
@@ -1869,6 +2099,8 @@ Required fields:
 - `PublicTypeArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="recordhandlerprogressinputrequesttypedef"></a>
 
 ## RecordHandlerProgressInputRequestTypeDef
 
@@ -1890,6 +2122,8 @@ Optional fields:
 - `ResourceModel`: `str`
 - `ClientRequestToken`: `str`
 
+<a id="registerpublisherinputrequesttypedef"></a>
+
 ## RegisterPublisherInputRequestTypeDef
 
 ```python
@@ -1900,6 +2134,8 @@ Optional fields:
 
 - `AcceptTermsAndConditions`: `bool`
 - `ConnectionArn`: `str`
+
+<a id="registerpublisheroutputtypedef"></a>
 
 ## RegisterPublisherOutputTypeDef
 
@@ -1912,6 +2148,8 @@ Required fields:
 - `PublisherId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="registertypeinputrequesttypedef"></a>
 
 ## RegisterTypeInputRequestTypeDef
 
@@ -1931,6 +2169,8 @@ Optional fields:
 - `ExecutionRoleArn`: `str`
 - `ClientRequestToken`: `str`
 
+<a id="registertypeoutputtypedef"></a>
+
 ## RegisterTypeOutputTypeDef
 
 ```python
@@ -1942,6 +2182,8 @@ Required fields:
 - `RegistrationToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="requiredactivatedtypetypedef"></a>
 
 ## RequiredActivatedTypeTypeDef
 
@@ -1956,6 +2198,8 @@ Optional fields:
 - `PublisherId`: `str`
 - `SupportedMajorVersions`: `List`\[`int`\]
 
+<a id="resourcechangedetailtypedef"></a>
+
 ## ResourceChangeDetailTypeDef
 
 ```python
@@ -1969,6 +2213,8 @@ Optional fields:
 - `Evaluation`: [EvaluationTypeType](./literals.md#evaluationtypetype)
 - `ChangeSource`: [ChangeSourceType](./literals.md#changesourcetype)
 - `CausingEntity`: `str`
+
+<a id="resourcechangetypedef"></a>
 
 ## ResourceChangeTypeDef
 
@@ -1990,6 +2236,8 @@ Optional fields:
 - `ChangeSetId`: `str`
 - `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
 
+<a id="resourceidentifiersummarytypedef"></a>
+
 ## ResourceIdentifierSummaryTypeDef
 
 ```python
@@ -2001,6 +2249,8 @@ Optional fields:
 - `ResourceType`: `str`
 - `LogicalResourceIds`: `List`\[`str`\]
 - `ResourceIdentifiers`: `List`\[`str`\]
+
+<a id="resourcetargetdefinitiontypedef"></a>
 
 ## ResourceTargetDefinitionTypeDef
 
@@ -2015,6 +2265,8 @@ Optional fields:
 - `RequiresRecreation`:
   [RequiresRecreationType](./literals.md#requiresrecreationtype)
 
+<a id="resourcetoimporttypedef"></a>
+
 ## ResourceToImportTypeDef
 
 ```python
@@ -2026,6 +2278,8 @@ Required fields:
 - `ResourceType`: `str`
 - `LogicalResourceId`: `str`
 - `ResourceIdentifier`: `Mapping`\[`str`, `str`\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2041,6 +2295,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="rollbackconfigurationresponsemetadatatypedef"></a>
+
 ## RollbackConfigurationResponseMetadataTypeDef
 
 ```python
@@ -2055,6 +2311,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="rollbackconfigurationtypedef"></a>
+
 ## RollbackConfigurationTypeDef
 
 ```python
@@ -2066,6 +2324,8 @@ Optional fields:
 - `RollbackTriggers`:
   `Sequence`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
 - `MonitoringTimeInMinutes`: `int`
+
+<a id="rollbackstackinputrequesttypedef"></a>
 
 ## RollbackStackInputRequestTypeDef
 
@@ -2082,6 +2342,8 @@ Optional fields:
 - `RoleARN`: `str`
 - `ClientRequestToken`: `str`
 
+<a id="rollbackstackoutputtypedef"></a>
+
 ## RollbackStackOutputTypeDef
 
 ```python
@@ -2094,6 +2356,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="rollbacktriggertypedef"></a>
+
 ## RollbackTriggerTypeDef
 
 ```python
@@ -2105,6 +2369,8 @@ Required fields:
 - `Arn`: `str`
 - `Type`: `str`
 
+<a id="serviceresourceeventrequesttypedef"></a>
+
 ## ServiceResourceEventRequestTypeDef
 
 ```python
@@ -2115,6 +2381,8 @@ Required fields:
 
 - `id`: `str`
 
+<a id="serviceresourcestackrequesttypedef"></a>
+
 ## ServiceResourceStackRequestTypeDef
 
 ```python
@@ -2124,6 +2392,8 @@ from mypy_boto3_cloudformation.type_defs import ServiceResourceStackRequestTypeD
 Required fields:
 
 - `name`: `str`
+
+<a id="serviceresourcestackresourcerequesttypedef"></a>
 
 ## ServiceResourceStackResourceRequestTypeDef
 
@@ -2136,6 +2406,8 @@ Required fields:
 - `stack_name`: `str`
 - `logical_id`: `str`
 
+<a id="serviceresourcestackresourcesummaryrequesttypedef"></a>
+
 ## ServiceResourceStackResourceSummaryRequestTypeDef
 
 ```python
@@ -2146,6 +2418,8 @@ Required fields:
 
 - `stack_name`: `str`
 - `logical_id`: `str`
+
+<a id="setstackpolicyinputrequesttypedef"></a>
 
 ## SetStackPolicyInputRequestTypeDef
 
@@ -2161,6 +2435,8 @@ Optional fields:
 
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
+
+<a id="settypeconfigurationinputrequesttypedef"></a>
 
 ## SetTypeConfigurationInputRequestTypeDef
 
@@ -2179,6 +2455,8 @@ Optional fields:
 - `TypeName`: `str`
 - `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
 
+<a id="settypeconfigurationoutputtypedef"></a>
+
 ## SetTypeConfigurationOutputTypeDef
 
 ```python
@@ -2190,6 +2468,8 @@ Required fields:
 - `ConfigurationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="settypedefaultversioninputrequesttypedef"></a>
 
 ## SetTypeDefaultVersionInputRequestTypeDef
 
@@ -2204,6 +2484,8 @@ Optional fields:
 - `TypeName`: `str`
 - `VersionId`: `str`
 
+<a id="signalresourceinputrequesttypedef"></a>
+
 ## SignalResourceInputRequestTypeDef
 
 ```python
@@ -2216,6 +2498,8 @@ Required fields:
 - `LogicalResourceId`: `str`
 - `UniqueId`: `str`
 - `Status`: [ResourceSignalStatusType](./literals.md#resourcesignalstatustype)
+
+<a id="stackdriftinformationresponsemetadatatypedef"></a>
 
 ## StackDriftInformationResponseMetadataTypeDef
 
@@ -2230,6 +2514,8 @@ Required fields:
 - `LastCheckTimestamp`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="stackdriftinformationsummarytypedef"></a>
 
 ## StackDriftInformationSummaryTypeDef
 
@@ -2246,6 +2532,8 @@ Optional fields:
 
 - `LastCheckTimestamp`: `datetime`
 
+<a id="stackdriftinformationtypedef"></a>
+
 ## StackDriftInformationTypeDef
 
 ```python
@@ -2260,6 +2548,8 @@ Required fields:
 Optional fields:
 
 - `LastCheckTimestamp`: `datetime`
+
+<a id="stackeventtypedef"></a>
 
 ## StackEventTypeDef
 
@@ -2284,6 +2574,8 @@ Optional fields:
 - `ResourceProperties`: `str`
 - `ClientRequestToken`: `str`
 
+<a id="stackinstancecomprehensivestatustypedef"></a>
+
 ## StackInstanceComprehensiveStatusTypeDef
 
 ```python
@@ -2294,6 +2586,8 @@ Optional fields:
 
 - `DetailedStatus`:
   [StackInstanceDetailedStatusType](./literals.md#stackinstancedetailedstatustype)
+
+<a id="stackinstancefiltertypedef"></a>
 
 ## StackInstanceFilterTypeDef
 
@@ -2306,6 +2600,8 @@ Optional fields:
 - `Name`: `Literal['DETAILED_STATUS']` (see
   [StackInstanceFilterNameType](./literals.md#stackinstancefilternametype))
 - `Values`: `str`
+
+<a id="stackinstancesummarytypedef"></a>
 
 ## StackInstanceSummaryTypeDef
 
@@ -2326,6 +2622,8 @@ Optional fields:
 - `OrganizationalUnitId`: `str`
 - `DriftStatus`: [StackDriftStatusType](./literals.md#stackdriftstatustype)
 - `LastDriftCheckTimestamp`: `datetime`
+
+<a id="stackinstancetypedef"></a>
 
 ## StackInstanceTypeDef
 
@@ -2348,6 +2646,8 @@ Optional fields:
 - `OrganizationalUnitId`: `str`
 - `DriftStatus`: [StackDriftStatusType](./literals.md#stackdriftstatustype)
 - `LastDriftCheckTimestamp`: `datetime`
+
+<a id="stackresourcedetailtypedef"></a>
 
 ## StackResourceDetailTypeDef
 
@@ -2374,6 +2674,8 @@ Optional fields:
   [StackResourceDriftInformationTypeDef](./type_defs.md#stackresourcedriftinformationtypedef)
 - `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
 
+<a id="stackresourcedriftinformationresponsemetadatatypedef"></a>
+
 ## StackResourceDriftInformationResponseMetadataTypeDef
 
 ```python
@@ -2388,6 +2690,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stackresourcedriftinformationsummaryresponsemetadatatypedef"></a>
+
 ## StackResourceDriftInformationSummaryResponseMetadataTypeDef
 
 ```python
@@ -2401,6 +2705,8 @@ Required fields:
 - `LastCheckTimestamp`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="stackresourcedriftinformationsummarytypedef"></a>
 
 ## StackResourceDriftInformationSummaryTypeDef
 
@@ -2417,6 +2723,8 @@ Optional fields:
 
 - `LastCheckTimestamp`: `datetime`
 
+<a id="stackresourcedriftinformationtypedef"></a>
+
 ## StackResourceDriftInformationTypeDef
 
 ```python
@@ -2431,6 +2739,8 @@ Required fields:
 Optional fields:
 
 - `LastCheckTimestamp`: `datetime`
+
+<a id="stackresourcedrifttypedef"></a>
 
 ## StackResourceDriftTypeDef
 
@@ -2458,6 +2768,8 @@ Optional fields:
   `List`\[[PropertyDifferenceTypeDef](./type_defs.md#propertydifferencetypedef)\]
 - `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
 
+<a id="stackresourcerequesttypedef"></a>
+
 ## StackResourceRequestTypeDef
 
 ```python
@@ -2467,6 +2779,8 @@ from mypy_boto3_cloudformation.type_defs import StackResourceRequestTypeDef
 Required fields:
 
 - `logical_id`: `str`
+
+<a id="stackresourcesummarytypedef"></a>
 
 ## StackResourceSummaryTypeDef
 
@@ -2488,6 +2802,8 @@ Optional fields:
 - `DriftInformation`:
   [StackResourceDriftInformationSummaryTypeDef](./type_defs.md#stackresourcedriftinformationsummarytypedef)
 - `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
+
+<a id="stackresourcetypedef"></a>
 
 ## StackResourceTypeDef
 
@@ -2513,6 +2829,8 @@ Optional fields:
   [StackResourceDriftInformationTypeDef](./type_defs.md#stackresourcedriftinformationtypedef)
 - `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
 
+<a id="stacksetdriftdetectiondetailstypedef"></a>
+
 ## StackSetDriftDetectionDetailsTypeDef
 
 ```python
@@ -2532,6 +2850,8 @@ Optional fields:
 - `InProgressStackInstancesCount`: `int`
 - `FailedStackInstancesCount`: `int`
 
+<a id="stacksetoperationpreferencestypedef"></a>
+
 ## StackSetOperationPreferencesTypeDef
 
 ```python
@@ -2547,6 +2867,8 @@ Optional fields:
 - `FailureTolerancePercentage`: `int`
 - `MaxConcurrentCount`: `int`
 - `MaxConcurrentPercentage`: `int`
+
+<a id="stacksetoperationresultsummarytypedef"></a>
 
 ## StackSetOperationResultSummaryTypeDef
 
@@ -2565,6 +2887,8 @@ Optional fields:
   [AccountGateResultTypeDef](./type_defs.md#accountgateresulttypedef)
 - `OrganizationalUnitId`: `str`
 
+<a id="stacksetoperationsummarytypedef"></a>
+
 ## StackSetOperationSummaryTypeDef
 
 ```python
@@ -2580,6 +2904,8 @@ Optional fields:
   [StackSetOperationStatusType](./literals.md#stacksetoperationstatustype)
 - `CreationTimestamp`: `datetime`
 - `EndTimestamp`: `datetime`
+
+<a id="stacksetoperationtypedef"></a>
 
 ## StackSetOperationTypeDef
 
@@ -2607,6 +2933,8 @@ Optional fields:
 - `StackSetDriftDetectionDetails`:
   [StackSetDriftDetectionDetailsTypeDef](./type_defs.md#stacksetdriftdetectiondetailstypedef)
 
+<a id="stacksetsummarytypedef"></a>
+
 ## StackSetSummaryTypeDef
 
 ```python
@@ -2626,6 +2954,8 @@ Optional fields:
 - `LastDriftCheckTimestamp`: `datetime`
 - `ManagedExecution`:
   [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
+
+<a id="stacksettypedef"></a>
 
 ## StackSetTypeDef
 
@@ -2655,6 +2985,8 @@ Optional fields:
 - `ManagedExecution`:
   [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
 
+<a id="stacksummarytypedef"></a>
+
 ## StackSummaryTypeDef
 
 ```python
@@ -2678,6 +3010,8 @@ Optional fields:
 - `RootId`: `str`
 - `DriftInformation`:
   [StackDriftInformationSummaryTypeDef](./type_defs.md#stackdriftinformationsummarytypedef)
+
+<a id="stacktypedef"></a>
 
 ## StackTypeDef
 
@@ -2715,6 +3049,8 @@ Optional fields:
 - `DriftInformation`:
   [StackDriftInformationTypeDef](./type_defs.md#stackdriftinformationtypedef)
 
+<a id="stopstacksetoperationinputrequesttypedef"></a>
+
 ## StopStackSetOperationInputRequestTypeDef
 
 ```python
@@ -2730,6 +3066,8 @@ Optional fields:
 
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2740,6 +3078,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="templateparametertypedef"></a>
 
 ## TemplateParameterTypeDef
 
@@ -2753,6 +3093,8 @@ Optional fields:
 - `DefaultValue`: `str`
 - `NoEcho`: `bool`
 - `Description`: `str`
+
+<a id="testtypeinputrequesttypedef"></a>
 
 ## TestTypeInputRequestTypeDef
 
@@ -2768,6 +3110,8 @@ Optional fields:
 - `VersionId`: `str`
 - `LogDeliveryBucket`: `str`
 
+<a id="testtypeoutputtypedef"></a>
+
 ## TestTypeOutputTypeDef
 
 ```python
@@ -2779,6 +3123,8 @@ Required fields:
 - `TypeVersionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="typeconfigurationdetailstypedef"></a>
 
 ## TypeConfigurationDetailsTypeDef
 
@@ -2796,6 +3142,8 @@ Optional fields:
 - `TypeName`: `str`
 - `IsDefaultConfiguration`: `bool`
 
+<a id="typeconfigurationidentifiertypedef"></a>
+
 ## TypeConfigurationIdentifierTypeDef
 
 ```python
@@ -2810,6 +3158,8 @@ Optional fields:
 - `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
 - `TypeName`: `str`
 
+<a id="typefilterstypedef"></a>
+
 ## TypeFiltersTypeDef
 
 ```python
@@ -2821,6 +3171,8 @@ Optional fields:
 - `Category`: [CategoryType](./literals.md#categorytype)
 - `PublisherId`: `str`
 - `TypeNamePrefix`: `str`
+
+<a id="typesummarytypedef"></a>
 
 ## TypeSummaryTypeDef
 
@@ -2845,6 +3197,8 @@ Optional fields:
 - `PublisherName`: `str`
 - `IsActivated`: `bool`
 
+<a id="typeversionsummarytypedef"></a>
+
 ## TypeVersionSummaryTypeDef
 
 ```python
@@ -2861,6 +3215,8 @@ Optional fields:
 - `TimeCreated`: `datetime`
 - `Description`: `str`
 - `PublicVersionNumber`: `str`
+
+<a id="updatestackinputrequesttypedef"></a>
 
 ## UpdateStackInputRequestTypeDef
 
@@ -2893,6 +3249,8 @@ Optional fields:
 - `DisableRollback`: `bool`
 - `ClientRequestToken`: `str`
 
+<a id="updatestackinputstacktypedef"></a>
+
 ## UpdateStackInputStackTypeDef
 
 ```python
@@ -2920,6 +3278,8 @@ Optional fields:
 - `DisableRollback`: `bool`
 - `ClientRequestToken`: `str`
 
+<a id="updatestackinstancesinputrequesttypedef"></a>
+
 ## UpdateStackInstancesInputRequestTypeDef
 
 ```python
@@ -2943,6 +3303,8 @@ Optional fields:
 - `OperationId`: `str`
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
+<a id="updatestackinstancesoutputtypedef"></a>
+
 ## UpdateStackInstancesOutputTypeDef
 
 ```python
@@ -2955,6 +3317,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatestackoutputtypedef"></a>
+
 ## UpdateStackOutputTypeDef
 
 ```python
@@ -2966,6 +3330,8 @@ Required fields:
 - `StackId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatestacksetinputrequesttypedef"></a>
 
 ## UpdateStackSetInputRequestTypeDef
 
@@ -3003,6 +3369,8 @@ Optional fields:
 - `ManagedExecution`:
   [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
 
+<a id="updatestacksetoutputtypedef"></a>
+
 ## UpdateStackSetOutputTypeDef
 
 ```python
@@ -3015,6 +3383,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateterminationprotectioninputrequesttypedef"></a>
+
 ## UpdateTerminationProtectionInputRequestTypeDef
 
 ```python
@@ -3025,6 +3395,8 @@ Required fields:
 
 - `EnableTerminationProtection`: `bool`
 - `StackName`: `str`
+
+<a id="updateterminationprotectionoutputtypedef"></a>
 
 ## UpdateTerminationProtectionOutputTypeDef
 
@@ -3038,6 +3410,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="validatetemplateinputrequesttypedef"></a>
+
 ## ValidateTemplateInputRequestTypeDef
 
 ```python
@@ -3048,6 +3422,8 @@ Optional fields:
 
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
+
+<a id="validatetemplateoutputtypedef"></a>
 
 ## ValidateTemplateOutputTypeDef
 
@@ -3065,6 +3441,8 @@ Required fields:
 - `DeclaredTransforms`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

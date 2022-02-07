@@ -1,3 +1,5 @@
+<a id="appregistryclient-for-boto3-appregistry-module"></a>
+
 # AppRegistryClient for boto3 AppRegistry module
 
 > [Index](..) > [AppRegistry](.) > AppRegistryClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
 type annotations stubs module
-[mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
+[mypy-boto3-servicecatalog-appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
 - [AppRegistryClient for boto3 AppRegistry module](#appregistryclient-for-boto3-appregistry-module)
   - [AppRegistryClient](#appregistryclient)
@@ -37,6 +39,8 @@ type annotations stubs module
     - [update_attribute_group](#update_attribute_group)
     - [get_paginator](#get_paginator)
 
+<a id="appregistryclient"></a>
+
 ## AppRegistryClient
 
 Type annotations for `boto3.client("servicecatalog-appregistry")`
@@ -44,14 +48,17 @@ Type annotations for `boto3.client("servicecatalog-appregistry")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_servicecatalog_appregistry.client import AppRegistryClient
 
 def get_servicecatalog-appregistry_client() -> AppRegistryClient:
-    return boto3.client("servicecatalog-appregistry")
+    return Session().client("servicecatalog-appregistry")
 ```
 
 Boto3 documentation:
 [AppRegistry.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -74,7 +81,11 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -87,6 +98,8 @@ Boto3 documentation:
 [AppRegistry.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_attribute_group"></a>
 
 ### associate_attribute_group
 
@@ -109,6 +122,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateAttributeGroupResponseTypeDef](./type_defs.md#associateattributegroupresponsetypedef).
+
+<a id="associate_resource"></a>
 
 ### associate_resource
 
@@ -133,6 +148,8 @@ Keyword-only arguments:
 Returns
 [AssociateResourceResponseTypeDef](./type_defs.md#associateresourceresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -148,6 +165,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_application"></a>
 
 ### create_application
 
@@ -173,6 +192,8 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
+<a id="create_attribute_group"></a>
+
 ### create_attribute_group
 
 Creates a new attribute group as a container for user-defined attributes.
@@ -197,6 +218,8 @@ Keyword-only arguments:
 Returns
 [CreateAttributeGroupResponseTypeDef](./type_defs.md#createattributegroupresponsetypedef).
 
+<a id="delete_application"></a>
+
 ### delete_application
 
 Deletes an application that is specified either by its application ID or name.
@@ -217,6 +240,8 @@ Keyword-only arguments:
 Returns
 [DeleteApplicationResponseTypeDef](./type_defs.md#deleteapplicationresponsetypedef).
 
+<a id="delete_attribute_group"></a>
+
 ### delete_attribute_group
 
 Deletes an attribute group, specified either by its attribute group ID or name.
@@ -236,6 +261,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteAttributeGroupResponseTypeDef](./type_defs.md#deleteattributegroupresponsetypedef).
+
+<a id="disassociate_attribute_group"></a>
 
 ### disassociate_attribute_group
 
@@ -260,6 +287,8 @@ Keyword-only arguments:
 Returns
 [DisassociateAttributeGroupResponseTypeDef](./type_defs.md#disassociateattributegroupresponsetypedef).
 
+<a id="disassociate_resource"></a>
+
 ### disassociate_resource
 
 Disassociates a resource from application.
@@ -283,6 +312,8 @@ Keyword-only arguments:
 Returns
 [DisassociateResourceResponseTypeDef](./type_defs.md#disassociateresourceresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -301,6 +332,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_application"></a>
 
 ### get_application
 
@@ -321,6 +354,8 @@ Keyword-only arguments:
 
 Returns
 [GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef).
+
+<a id="get_associated_resource"></a>
 
 ### get_associated_resource
 
@@ -345,6 +380,8 @@ Keyword-only arguments:
 Returns
 [GetAssociatedResourceResponseTypeDef](./type_defs.md#getassociatedresourceresponsetypedef).
 
+<a id="get_attribute_group"></a>
+
 ### get_attribute_group
 
 Retrieves an attribute group, either by its name or its ID.
@@ -364,6 +401,8 @@ Keyword-only arguments:
 
 Returns
 [GetAttributeGroupResponseTypeDef](./type_defs.md#getattributegroupresponsetypedef).
+
+<a id="list_applications"></a>
 
 ### list_applications
 
@@ -385,6 +424,8 @@ Keyword-only arguments:
 
 Returns
 [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
+
+<a id="list_associated_attribute_groups"></a>
 
 ### list_associated_attribute_groups
 
@@ -409,6 +450,8 @@ Keyword-only arguments:
 Returns
 [ListAssociatedAttributeGroupsResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponsetypedef).
 
+<a id="list_associated_resources"></a>
+
 ### list_associated_resources
 
 Lists all resources that are associated with specified application.
@@ -431,6 +474,8 @@ Keyword-only arguments:
 Returns
 [ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef).
 
+<a id="list_attribute_groups"></a>
+
 ### list_attribute_groups
 
 Lists all attribute groups which you have access to.
@@ -452,6 +497,8 @@ Keyword-only arguments:
 Returns
 [ListAttributeGroupsResponseTypeDef](./type_defs.md#listattributegroupsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all of the tags on the resource.
@@ -471,6 +518,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="sync_resource"></a>
 
 ### sync_resource
 
@@ -494,6 +543,8 @@ Keyword-only arguments:
 Returns
 [SyncResourceResponseTypeDef](./type_defs.md#syncresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns one or more tags (key-value pairs) to the specified resource.
@@ -514,6 +565,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a resource.
@@ -533,6 +586,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_application"></a>
 
 ### update_application
 
@@ -556,6 +611,8 @@ Keyword-only arguments:
 Returns
 [UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
 
+<a id="update_attribute_group"></a>
+
 ### update_attribute_group
 
 Updates an existing attribute group with new details.
@@ -578,6 +635,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAttributeGroupResponseTypeDef](./type_defs.md#updateattributegroupresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

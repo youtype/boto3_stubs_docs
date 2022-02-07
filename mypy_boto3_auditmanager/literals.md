@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-auditmanager-module"></a>
+
 # Literals for boto3 AuditManager module
 
 > [Index](..) > [AuditManager](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
 type annotations stubs module
-[mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
+[mypy-boto3-auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
 - [Literals for boto3 AuditManager module](#literals-for-boto3-auditmanager-module)
   - [AccountStatusType](#accountstatustype)
@@ -31,6 +33,8 @@ type annotations stubs module
   - [SourceTypeType](#sourcetypetype)
   - [ServiceName](#servicename)
 
+<a id="accountstatustype"></a>
+
 ## AccountStatusType
 
 ```python
@@ -42,6 +46,8 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 - `PENDING_ACTIVATION`
+
+<a id="actionenumtype"></a>
 
 ## ActionEnumType
 
@@ -60,6 +66,8 @@ Values:
 - `UNDER_REVIEW`
 - `UPDATE_METADATA`
 
+<a id="assessmentreportdestinationtypetype"></a>
+
 ## AssessmentReportDestinationTypeType
 
 ```python
@@ -69,6 +77,8 @@ from mypy_boto3_auditmanager.literals import AssessmentReportDestinationTypeType
 Values:
 
 - `S3`
+
+<a id="assessmentreportstatustype"></a>
 
 ## AssessmentReportStatusType
 
@@ -82,6 +92,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
+<a id="assessmentstatustype"></a>
+
 ## AssessmentStatusType
 
 ```python
@@ -92,6 +104,8 @@ Values:
 
 - `ACTIVE`
 - `INACTIVE`
+
+<a id="controlresponsetype"></a>
 
 ## ControlResponseType
 
@@ -106,6 +120,8 @@ Values:
 - `IGNORE`
 - `MANUAL`
 
+<a id="controlsetstatustype"></a>
+
 ## ControlSetStatusType
 
 ```python
@@ -117,6 +133,8 @@ Values:
 - `ACTIVE`
 - `REVIEWED`
 - `UNDER_REVIEW`
+
+<a id="controlstatustype"></a>
 
 ## ControlStatusType
 
@@ -130,6 +148,8 @@ Values:
 - `REVIEWED`
 - `UNDER_REVIEW`
 
+<a id="controltypetype"></a>
+
 ## ControlTypeType
 
 ```python
@@ -140,6 +160,8 @@ Values:
 
 - `Custom`
 - `Standard`
+
+<a id="delegationstatustype"></a>
 
 ## DelegationStatusType
 
@@ -153,6 +175,8 @@ Values:
 - `IN_PROGRESS`
 - `UNDER_REVIEW`
 
+<a id="frameworktypetype"></a>
+
 ## FrameworkTypeType
 
 ```python
@@ -164,6 +188,8 @@ Values:
 - `Custom`
 - `Standard`
 
+<a id="keywordinputtypetype"></a>
+
 ## KeywordInputTypeType
 
 ```python
@@ -173,6 +199,8 @@ from mypy_boto3_auditmanager.literals import KeywordInputTypeType
 Values:
 
 - `SELECT_FROM_LIST`
+
+<a id="objecttypeenumtype"></a>
 
 ## ObjectTypeEnumType
 
@@ -188,6 +216,8 @@ Values:
 - `CONTROL_SET`
 - `DELEGATION`
 
+<a id="roletypetype"></a>
+
 ## RoleTypeType
 
 ```python
@@ -198,6 +228,8 @@ Values:
 
 - `PROCESS_OWNER`
 - `RESOURCE_OWNER`
+
+<a id="settingattributetype"></a>
 
 ## SettingAttributeType
 
@@ -213,6 +245,8 @@ Values:
 - `IS_AWS_ORG_ENABLED`
 - `SNS_TOPIC`
 
+<a id="sharerequestactiontype"></a>
+
 ## ShareRequestActionType
 
 ```python
@@ -224,6 +258,8 @@ Values:
 - `ACCEPT`
 - `DECLINE`
 - `REVOKE`
+
+<a id="sharerequeststatustype"></a>
 
 ## ShareRequestStatusType
 
@@ -242,6 +278,8 @@ Values:
 - `REVOKED`
 - `SHARED`
 
+<a id="sharerequesttypetype"></a>
+
 ## ShareRequestTypeType
 
 ```python
@@ -252,6 +290,8 @@ Values:
 
 - `RECEIVED`
 - `SENT`
+
+<a id="sourcefrequencytype"></a>
 
 ## SourceFrequencyType
 
@@ -265,6 +305,8 @@ Values:
 - `MONTHLY`
 - `WEEKLY`
 
+<a id="sourcesetupoptiontype"></a>
+
 ## SourceSetUpOptionType
 
 ```python
@@ -275,6 +317,8 @@ Values:
 
 - `Procedural_Controls_Mapping`
 - `System_Controls_Mapping`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -289,6 +333,8 @@ Values:
 - `AWS_Config`
 - `AWS_Security_Hub`
 - `MANUAL`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

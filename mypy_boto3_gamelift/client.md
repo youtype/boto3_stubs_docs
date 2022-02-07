@@ -1,3 +1,5 @@
+<a id="gameliftclient-for-boto3-gamelift-module"></a>
+
 # GameLiftClient for boto3 GameLift module
 
 > [Index](..) > [GameLift](.) > GameLiftClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
 type annotations stubs module
-[mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+[mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 - [GameLiftClient for boto3 GameLift module](#gameliftclient-for-boto3-gamelift-module)
   - [GameLiftClient](#gameliftclient)
@@ -111,6 +113,8 @@ type annotations stubs module
     - [validate_matchmaking_rule_set](#validate_matchmaking_rule_set)
     - [get_paginator](#get_paginator)
 
+<a id="gameliftclient"></a>
+
 ## GameLiftClient
 
 Type annotations for `boto3.client("gamelift")`
@@ -118,14 +122,17 @@ Type annotations for `boto3.client("gamelift")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_gamelift.client import GameLiftClient
 
 def get_gamelift_client() -> GameLiftClient:
-    return boto3.client("gamelift")
+    return Session().client("gamelift")
 ```
 
 Boto3 documentation:
 [GameLift.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -158,7 +165,11 @@ Exceptions:
 - `Exceptions.UnauthorizedException`
 - `Exceptions.UnsupportedRegionException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -170,6 +181,8 @@ Boto3 documentation:
 [GameLift.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_match"></a>
 
 ### accept_match
 
@@ -192,6 +205,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -206,6 +221,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="claim_game_server"></a>
 
 ### claim_game_server
 
@@ -230,6 +247,8 @@ Keyword-only arguments:
 Returns
 [ClaimGameServerOutputTypeDef](./type_defs.md#claimgameserveroutputtypedef).
 
+<a id="create_alias"></a>
+
 ### create_alias
 
 Creates an alias for a fleet.
@@ -252,6 +271,8 @@ Keyword-only arguments:
 
 Returns [CreateAliasOutputTypeDef](./type_defs.md#createaliasoutputtypedef).
 
+<a id="create_build"></a>
+
 ### create_build
 
 Creates a new Amazon GameLift build resource for your game server binary files.
@@ -273,6 +294,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateBuildOutputTypeDef](./type_defs.md#createbuildoutputtypedef).
+
+<a id="create_fleet"></a>
 
 ### create_fleet
 
@@ -319,6 +342,8 @@ Keyword-only arguments:
 
 Returns [CreateFleetOutputTypeDef](./type_defs.md#createfleetoutputtypedef).
 
+<a id="create_fleet_locations"></a>
+
 ### create_fleet_locations
 
 Adds remote locations to a fleet and begins populating the new locations with
@@ -341,6 +366,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFleetLocationsOutputTypeDef](./type_defs.md#createfleetlocationsoutputtypedef).
+
+<a id="create_game_server_group"></a>
 
 ### create_game_server_group
 
@@ -381,6 +408,8 @@ Keyword-only arguments:
 Returns
 [CreateGameServerGroupOutputTypeDef](./type_defs.md#creategameservergroupoutputtypedef).
 
+<a id="create_game_session"></a>
+
 ### create_game_session
 
 Creates a multiplayer game session for players in a specific fleet location.
@@ -409,6 +438,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGameSessionOutputTypeDef](./type_defs.md#creategamesessionoutputtypedef).
+
+<a id="create_game_session_queue"></a>
 
 ### create_game_session_queue
 
@@ -441,6 +472,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGameSessionQueueOutputTypeDef](./type_defs.md#creategamesessionqueueoutputtypedef).
+
+<a id="create_matchmaking_configuration"></a>
 
 ### create_matchmaking_configuration
 
@@ -477,6 +510,8 @@ Keyword-only arguments:
 Returns
 [CreateMatchmakingConfigurationOutputTypeDef](./type_defs.md#creatematchmakingconfigurationoutputtypedef).
 
+<a id="create_matchmaking_rule_set"></a>
+
 ### create_matchmaking_rule_set
 
 Creates a new rule set for FlexMatch matchmaking.
@@ -499,6 +534,8 @@ Keyword-only arguments:
 Returns
 [CreateMatchmakingRuleSetOutputTypeDef](./type_defs.md#creatematchmakingrulesetoutputtypedef).
 
+<a id="create_player_session"></a>
+
 ### create_player_session
 
 Reserves an open player slot in a game session for a player.
@@ -519,6 +556,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePlayerSessionOutputTypeDef](./type_defs.md#createplayersessionoutputtypedef).
+
+<a id="create_player_sessions"></a>
 
 ### create_player_sessions
 
@@ -541,6 +580,8 @@ Keyword-only arguments:
 Returns
 [CreatePlayerSessionsOutputTypeDef](./type_defs.md#createplayersessionsoutputtypedef).
 
+<a id="create_script"></a>
+
 ### create_script
 
 Creates a new script record for your Realtime Servers script.
@@ -562,6 +603,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateScriptOutputTypeDef](./type_defs.md#createscriptoutputtypedef).
+
+<a id="create_vpc_peering_authorization"></a>
 
 ### create_vpc_peering_authorization
 
@@ -586,6 +629,8 @@ Keyword-only arguments:
 Returns
 [CreateVpcPeeringAuthorizationOutputTypeDef](./type_defs.md#createvpcpeeringauthorizationoutputtypedef).
 
+<a id="create_vpc_peering_connection"></a>
+
 ### create_vpc_peering_connection
 
 Establishes a VPC peering connection between a virtual private cloud (VPC) in
@@ -608,6 +653,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_alias"></a>
+
 ### delete_alias
 
 Deletes an alias.
@@ -623,6 +670,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AliasId`: `str` *(required)*
+
+<a id="delete_build"></a>
 
 ### delete_build
 
@@ -640,6 +689,8 @@ Keyword-only arguments:
 
 - `BuildId`: `str` *(required)*
 
+<a id="delete_fleet"></a>
+
 ### delete_fleet
 
 Deletes all resources and information related a fleet.
@@ -655,6 +706,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
+
+<a id="delete_fleet_locations"></a>
 
 ### delete_fleet_locations
 
@@ -675,6 +728,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteFleetLocationsOutputTypeDef](./type_defs.md#deletefleetlocationsoutputtypedef).
+
+<a id="delete_game_server_group"></a>
 
 ### delete_game_server_group
 
@@ -700,6 +755,8 @@ Keyword-only arguments:
 Returns
 [DeleteGameServerGroupOutputTypeDef](./type_defs.md#deletegameservergroupoutputtypedef).
 
+<a id="delete_game_session_queue"></a>
+
 ### delete_game_session_queue
 
 Deletes a game session queue.
@@ -718,6 +775,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_matchmaking_configuration"></a>
 
 ### delete_matchmaking_configuration
 
@@ -738,6 +797,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_matchmaking_rule_set"></a>
+
 ### delete_matchmaking_rule_set
 
 Deletes an existing matchmaking rule set.
@@ -757,6 +818,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_scaling_policy"></a>
+
 ### delete_scaling_policy
 
 Deletes a fleet scaling policy.
@@ -774,6 +837,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `FleetId`: `str` *(required)*
 
+<a id="delete_script"></a>
+
 ### delete_script
 
 Deletes a Realtime script.
@@ -789,6 +854,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ScriptId`: `str` *(required)*
+
+<a id="delete_vpc_peering_authorization"></a>
 
 ### delete_vpc_peering_authorization
 
@@ -810,6 +877,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_vpc_peering_connection"></a>
+
 ### delete_vpc_peering_connection
 
 Removes a VPC peering connection.
@@ -830,6 +899,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="deregister_game_server"></a>
+
 ### deregister_game_server
 
 **This operation is used with the GameLift FleetIQ solution and game server
@@ -847,6 +918,8 @@ Keyword-only arguments:
 
 - `GameServerGroupName`: `str` *(required)*
 - `GameServerId`: `str` *(required)*
+
+<a id="describe_alias"></a>
 
 ### describe_alias
 
@@ -867,6 +940,8 @@ Keyword-only arguments:
 Returns
 [DescribeAliasOutputTypeDef](./type_defs.md#describealiasoutputtypedef).
 
+<a id="describe_build"></a>
+
 ### describe_build
 
 Retrieves properties for a custom game build.
@@ -885,6 +960,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBuildOutputTypeDef](./type_defs.md#describebuildoutputtypedef).
+
+<a id="describe_ec2_instance_limits"></a>
 
 ### describe_ec2_instance_limits
 
@@ -907,6 +984,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEC2InstanceLimitsOutputTypeDef](./type_defs.md#describeec2instancelimitsoutputtypedef).
+
+<a id="describe_fleet_attributes"></a>
 
 ### describe_fleet_attributes
 
@@ -931,6 +1010,8 @@ Keyword-only arguments:
 Returns
 [DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef).
 
+<a id="describe_fleet_capacity"></a>
+
 ### describe_fleet_capacity
 
 Retrieves the resource capacity settings for one or more fleets.
@@ -951,6 +1032,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef).
+
+<a id="describe_fleet_events"></a>
 
 ### describe_fleet_events
 
@@ -974,6 +1057,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef).
+
+<a id="describe_fleet_location_attributes"></a>
 
 ### describe_fleet_location_attributes
 
@@ -999,6 +1084,8 @@ Keyword-only arguments:
 Returns
 [DescribeFleetLocationAttributesOutputTypeDef](./type_defs.md#describefleetlocationattributesoutputtypedef).
 
+<a id="describe_fleet_location_capacity"></a>
+
 ### describe_fleet_location_capacity
 
 Retrieves the resource capacity settings for a fleet location.
@@ -1019,6 +1106,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFleetLocationCapacityOutputTypeDef](./type_defs.md#describefleetlocationcapacityoutputtypedef).
+
+<a id="describe_fleet_location_utilization"></a>
 
 ### describe_fleet_location_utilization
 
@@ -1041,6 +1130,8 @@ Keyword-only arguments:
 Returns
 [DescribeFleetLocationUtilizationOutputTypeDef](./type_defs.md#describefleetlocationutilizationoutputtypedef).
 
+<a id="describe_fleet_port_settings"></a>
+
 ### describe_fleet_port_settings
 
 Retrieves a fleet's inbound connection permissions.
@@ -1061,6 +1152,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFleetPortSettingsOutputTypeDef](./type_defs.md#describefleetportsettingsoutputtypedef).
+
+<a id="describe_fleet_utilization"></a>
 
 ### describe_fleet_utilization
 
@@ -1084,6 +1177,8 @@ Keyword-only arguments:
 Returns
 [DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef).
 
+<a id="describe_game_server"></a>
+
 ### describe_game_server
 
 **This operation is used with the GameLift FleetIQ solution and game server
@@ -1105,6 +1200,8 @@ Keyword-only arguments:
 Returns
 [DescribeGameServerOutputTypeDef](./type_defs.md#describegameserveroutputtypedef).
 
+<a id="describe_game_server_group"></a>
+
 ### describe_game_server_group
 
 **This operation is used with the GameLift FleetIQ solution and game server
@@ -1125,6 +1222,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeGameServerGroupOutputTypeDef](./type_defs.md#describegameservergroupoutputtypedef).
+
+<a id="describe_game_server_instances"></a>
 
 ### describe_game_server_instances
 
@@ -1150,6 +1249,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef).
+
+<a id="describe_game_session_details"></a>
 
 ### describe_game_session_details
 
@@ -1179,6 +1280,8 @@ Keyword-only arguments:
 Returns
 [DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef).
 
+<a id="describe_game_session_placement"></a>
+
 ### describe_game_session_placement
 
 Retrieves information, including current status, about a game session placement
@@ -1199,6 +1302,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeGameSessionPlacementOutputTypeDef](./type_defs.md#describegamesessionplacementoutputtypedef).
+
+<a id="describe_game_session_queues"></a>
 
 ### describe_game_session_queues
 
@@ -1221,6 +1326,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef).
+
+<a id="describe_game_sessions"></a>
 
 ### describe_game_sessions
 
@@ -1247,6 +1354,8 @@ Keyword-only arguments:
 Returns
 [DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef).
 
+<a id="describe_instances"></a>
+
 ### describe_instances
 
 Retrieves information about a fleet's instances, including instance IDs,
@@ -1271,6 +1380,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef).
 
+<a id="describe_matchmaking"></a>
+
 ### describe_matchmaking
 
 Retrieves one or more matchmaking tickets.
@@ -1289,6 +1400,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeMatchmakingOutputTypeDef](./type_defs.md#describematchmakingoutputtypedef).
+
+<a id="describe_matchmaking_configurations"></a>
 
 ### describe_matchmaking_configurations
 
@@ -1313,6 +1426,8 @@ Keyword-only arguments:
 Returns
 [DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef).
 
+<a id="describe_matchmaking_rule_sets"></a>
+
 ### describe_matchmaking_rule_sets
 
 Retrieves the details for FlexMatch matchmaking rule sets.
@@ -1334,6 +1449,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef).
+
+<a id="describe_player_sessions"></a>
 
 ### describe_player_sessions
 
@@ -1360,6 +1477,8 @@ Keyword-only arguments:
 Returns
 [DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef).
 
+<a id="describe_runtime_configuration"></a>
+
 ### describe_runtime_configuration
 
 Retrieves a fleet's runtime configuration settings.
@@ -1379,6 +1498,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRuntimeConfigurationOutputTypeDef](./type_defs.md#describeruntimeconfigurationoutputtypedef).
+
+<a id="describe_scaling_policies"></a>
 
 ### describe_scaling_policies
 
@@ -1404,6 +1525,8 @@ Keyword-only arguments:
 Returns
 [DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef).
 
+<a id="describe_script"></a>
+
 ### describe_script
 
 Retrieves properties for a Realtime script.
@@ -1423,6 +1546,8 @@ Keyword-only arguments:
 Returns
 [DescribeScriptOutputTypeDef](./type_defs.md#describescriptoutputtypedef).
 
+<a id="describe_vpc_peering_authorizations"></a>
+
 ### describe_vpc_peering_authorizations
 
 Retrieves valid VPC peering authorizations that are pending for the AWS
@@ -1436,6 +1561,8 @@ Boto3 documentation:
 
 Returns
 [DescribeVpcPeeringAuthorizationsOutputTypeDef](./type_defs.md#describevpcpeeringauthorizationsoutputtypedef).
+
+<a id="describe_vpc_peering_connections"></a>
 
 ### describe_vpc_peering_connections
 
@@ -1457,6 +1584,8 @@ Keyword-only arguments:
 Returns
 [DescribeVpcPeeringConnectionsOutputTypeDef](./type_defs.md#describevpcpeeringconnectionsoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1474,6 +1603,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_game_session_log_url"></a>
 
 ### get_game_session_log_url
 
@@ -1496,6 +1627,8 @@ Keyword-only arguments:
 Returns
 [GetGameSessionLogUrlOutputTypeDef](./type_defs.md#getgamesessionlogurloutputtypedef).
 
+<a id="get_instance_access"></a>
+
 ### get_instance_access
 
 Requests remote access to a fleet instance.
@@ -1515,6 +1648,8 @@ Keyword-only arguments:
 
 Returns
 [GetInstanceAccessOutputTypeDef](./type_defs.md#getinstanceaccessoutputtypedef).
+
+<a id="list_aliases"></a>
 
 ### list_aliases
 
@@ -1538,6 +1673,8 @@ Keyword-only arguments:
 
 Returns [ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef).
 
+<a id="list_builds"></a>
+
 ### list_builds
 
 Retrieves build resources for all builds associated with the AWS account in
@@ -1558,6 +1695,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef).
+
+<a id="list_fleets"></a>
 
 ### list_fleets
 
@@ -1580,6 +1719,8 @@ Keyword-only arguments:
 
 Returns [ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef).
 
+<a id="list_game_server_groups"></a>
+
 ### list_game_server_groups
 
 **This operation is used with the GameLift FleetIQ solution and game server
@@ -1601,6 +1742,8 @@ Keyword-only arguments:
 
 Returns
 [ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef).
+
+<a id="list_game_servers"></a>
 
 ### list_game_servers
 
@@ -1626,6 +1769,8 @@ Keyword-only arguments:
 Returns
 [ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef).
 
+<a id="list_scripts"></a>
+
 ### list_scripts
 
 Retrieves script records for all Realtime scripts that are associated with the
@@ -1646,6 +1791,8 @@ Keyword-only arguments:
 
 Returns [ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves all tags that are assigned to a GameLift resource.
@@ -1664,6 +1811,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_scaling_policy"></a>
 
 ### put_scaling_policy
 
@@ -1696,6 +1845,8 @@ Keyword-only arguments:
 Returns
 [PutScalingPolicyOutputTypeDef](./type_defs.md#putscalingpolicyoutputtypedef).
 
+<a id="register_game_server"></a>
+
 ### register_game_server
 
 **This operation is used with the GameLift FleetIQ solution and game server
@@ -1721,6 +1872,8 @@ Keyword-only arguments:
 Returns
 [RegisterGameServerOutputTypeDef](./type_defs.md#registergameserveroutputtypedef).
 
+<a id="request_upload_credentials"></a>
+
 ### request_upload_credentials
 
 Retrieves a fresh set of credentials for use when uploading a new set of game
@@ -1742,6 +1895,8 @@ Keyword-only arguments:
 Returns
 [RequestUploadCredentialsOutputTypeDef](./type_defs.md#requestuploadcredentialsoutputtypedef).
 
+<a id="resolve_alias"></a>
+
 ### resolve_alias
 
 Retrieves the fleet ID that an alias is currently pointing to.
@@ -1759,6 +1914,8 @@ Keyword-only arguments:
 - `AliasId`: `str` *(required)*
 
 Returns [ResolveAliasOutputTypeDef](./type_defs.md#resolvealiasoutputtypedef).
+
+<a id="resume_game_server_group"></a>
 
 ### resume_game_server_group
 
@@ -1784,6 +1941,8 @@ Keyword-only arguments:
 
 Returns
 [ResumeGameServerGroupOutputTypeDef](./type_defs.md#resumegameservergroupoutputtypedef).
+
+<a id="search_game_sessions"></a>
 
 ### search_game_sessions
 
@@ -1811,6 +1970,8 @@ Keyword-only arguments:
 Returns
 [SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef).
 
+<a id="start_fleet_actions"></a>
+
 ### start_fleet_actions
 
 Resumes certain types of activity on fleet instances that were suspended with
@@ -1833,6 +1994,8 @@ Keyword-only arguments:
 
 Returns
 [StartFleetActionsOutputTypeDef](./type_defs.md#startfleetactionsoutputtypedef).
+
+<a id="start_game_session_placement"></a>
 
 ### start_game_session_placement
 
@@ -1865,6 +2028,8 @@ Keyword-only arguments:
 Returns
 [StartGameSessionPlacementOutputTypeDef](./type_defs.md#startgamesessionplacementoutputtypedef).
 
+<a id="start_match_backfill"></a>
+
 ### start_match_backfill
 
 Finds new players to fill open slots in currently running game sessions.
@@ -1887,6 +2052,8 @@ Keyword-only arguments:
 
 Returns
 [StartMatchBackfillOutputTypeDef](./type_defs.md#startmatchbackfilloutputtypedef).
+
+<a id="start_matchmaking"></a>
 
 ### start_matchmaking
 
@@ -1911,6 +2078,8 @@ Keyword-only arguments:
 Returns
 [StartMatchmakingOutputTypeDef](./type_defs.md#startmatchmakingoutputtypedef).
 
+<a id="stop_fleet_actions"></a>
+
 ### stop_fleet_actions
 
 Suspends certain types of activity in a fleet location.
@@ -1933,6 +2102,8 @@ Keyword-only arguments:
 Returns
 [StopFleetActionsOutputTypeDef](./type_defs.md#stopfleetactionsoutputtypedef).
 
+<a id="stop_game_session_placement"></a>
+
 ### stop_game_session_placement
 
 Cancels a game session placement that is in `PENDING` status.
@@ -1953,6 +2124,8 @@ Keyword-only arguments:
 Returns
 [StopGameSessionPlacementOutputTypeDef](./type_defs.md#stopgamesessionplacementoutputtypedef).
 
+<a id="stop_matchmaking"></a>
+
 ### stop_matchmaking
 
 Cancels a matchmaking ticket or match backfill ticket that is currently being
@@ -1971,6 +2144,8 @@ Keyword-only arguments:
 - `TicketId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="suspend_game_server_group"></a>
 
 ### suspend_game_server_group
 
@@ -1997,6 +2172,8 @@ Keyword-only arguments:
 Returns
 [SuspendGameServerGroupOutputTypeDef](./type_defs.md#suspendgameservergroupoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns a tag to a GameLift resource.
@@ -2016,6 +2193,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag that is assigned to a GameLift resource.
@@ -2034,6 +2213,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_alias"></a>
 
 ### update_alias
 
@@ -2057,6 +2238,8 @@ Keyword-only arguments:
 
 Returns [UpdateAliasOutputTypeDef](./type_defs.md#updatealiasoutputtypedef).
 
+<a id="update_build"></a>
+
 ### update_build
 
 Updates metadata in a build resource, including the build name and version.
@@ -2076,6 +2259,8 @@ Keyword-only arguments:
 - `Version`: `str`
 
 Returns [UpdateBuildOutputTypeDef](./type_defs.md#updatebuildoutputtypedef).
+
+<a id="update_fleet_attributes"></a>
 
 ### update_fleet_attributes
 
@@ -2104,6 +2289,8 @@ Keyword-only arguments:
 Returns
 [UpdateFleetAttributesOutputTypeDef](./type_defs.md#updatefleetattributesoutputtypedef).
 
+<a id="update_fleet_capacity"></a>
+
 ### update_fleet_capacity
 
 Updates capacity settings for a fleet.
@@ -2126,6 +2313,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateFleetCapacityOutputTypeDef](./type_defs.md#updatefleetcapacityoutputtypedef).
+
+<a id="update_fleet_port_settings"></a>
 
 ### update_fleet_port_settings
 
@@ -2151,6 +2340,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateFleetPortSettingsOutputTypeDef](./type_defs.md#updatefleetportsettingsoutputtypedef).
+
+<a id="update_game_server"></a>
 
 ### update_game_server
 
@@ -2178,6 +2369,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateGameServerOutputTypeDef](./type_defs.md#updategameserveroutputtypedef).
+
+<a id="update_game_server_group"></a>
 
 ### update_game_server_group
 
@@ -2207,6 +2400,8 @@ Keyword-only arguments:
 Returns
 [UpdateGameServerGroupOutputTypeDef](./type_defs.md#updategameservergroupoutputtypedef).
 
+<a id="update_game_session"></a>
+
 ### update_game_session
 
 Updates the mutable properties of a game session.
@@ -2231,6 +2426,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateGameSessionOutputTypeDef](./type_defs.md#updategamesessionoutputtypedef).
+
+<a id="update_game_session_queue"></a>
 
 ### update_game_session_queue
 
@@ -2263,6 +2460,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateGameSessionQueueOutputTypeDef](./type_defs.md#updategamesessionqueueoutputtypedef).
+
+<a id="update_matchmaking_configuration"></a>
 
 ### update_matchmaking_configuration
 
@@ -2298,6 +2497,8 @@ Keyword-only arguments:
 Returns
 [UpdateMatchmakingConfigurationOutputTypeDef](./type_defs.md#updatematchmakingconfigurationoutputtypedef).
 
+<a id="update_runtime_configuration"></a>
+
 ### update_runtime_configuration
 
 Updates the current runtime configuration for the specified fleet, which tells
@@ -2322,6 +2523,8 @@ Keyword-only arguments:
 Returns
 [UpdateRuntimeConfigurationOutputTypeDef](./type_defs.md#updateruntimeconfigurationoutputtypedef).
 
+<a id="update_script"></a>
+
 ### update_script
 
 Updates Realtime script metadata and content.
@@ -2344,6 +2547,8 @@ Keyword-only arguments:
 
 Returns [UpdateScriptOutputTypeDef](./type_defs.md#updatescriptoutputtypedef).
 
+<a id="validate_matchmaking_rule_set"></a>
+
 ### validate_matchmaking_rule_set
 
 Validates the syntax of a matchmaking rule or rule set.
@@ -2363,6 +2568,8 @@ Keyword-only arguments:
 
 Returns
 [ValidateMatchmakingRuleSetOutputTypeDef](./type_defs.md#validatematchmakingrulesetoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

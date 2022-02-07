@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-route53domains-module"></a>
+
 # Type annotations for boto3 Route53Domains module
 
 > [Index](..) > Route53Domains
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
 type annotations stubs module
-[mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
+[mypy-boto3-route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[route53domains]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[route53domains]'
+
+# standalone installation
 pip install mypy-boto3-route53domains
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-route53domains
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="route53domainsclient"></a>
+
 ## Route53DomainsClient
 
 Type annotations for `boto3.client("route53domains")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_route53domains.client import Route53DomainsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -67,6 +81,8 @@ from mypy_boto3_route53domains.client import Route53DomainsClient
 - [update_tags_for_domain](./client.md#update_tags_for_domain)
 - [view_billing](./client.md#view_billing)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 Route53DomainsClient [exceptions](./client.md#exceptions)
@@ -79,6 +95,8 @@ Route53DomainsClient [exceptions](./client.md#exceptions)
 - TLDRulesViolation
 - UnsupportedTLD
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -87,13 +105,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_route53domains.paginators import ListDomainsPaginator, ...
+from mypy_boto3_route53domains.paginator import ListDomainsPaginator, ...
 ```
 
 - [ListDomainsPaginator](./paginators.md#listdomainspaginator)
 - [ListOperationsPaginator](./paginators.md#listoperationspaginator)
 - [ListPricesPaginator](./paginators.md#listpricespaginator)
 - [ViewBillingPaginator](./paginators.md#viewbillingpaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -122,6 +142,8 @@ from mypy_boto3_route53domains.literals import ContactTypeType, ...
 - [ViewBillingPaginatorName](./literals.md#viewbillingpaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

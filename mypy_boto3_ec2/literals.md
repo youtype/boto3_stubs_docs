@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ec2-module"></a>
+
 # Literals for boto3 EC2 module
 
 > [Index](..) > [EC2](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
 type annotations stubs module
-[mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
+[mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 - [Literals for boto3 EC2 module](#literals-for-boto3-ec2-module)
   - [AcceleratorManufacturerType](#acceleratormanufacturertype)
@@ -435,6 +437,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="acceleratormanufacturertype"></a>
+
 ## AcceleratorManufacturerType
 
 ```python
@@ -447,6 +451,8 @@ Values:
 - `amd`
 - `nvidia`
 - `xilinx`
+
+<a id="acceleratornametype"></a>
 
 ## AcceleratorNameType
 
@@ -464,6 +470,8 @@ Values:
 - `v100`
 - `vu9p`
 
+<a id="acceleratortypetype"></a>
+
 ## AcceleratorTypeType
 
 ```python
@@ -476,6 +484,8 @@ Values:
 - `gpu`
 - `inference`
 
+<a id="accountattributenametype"></a>
+
 ## AccountAttributeNameType
 
 ```python
@@ -486,6 +496,8 @@ Values:
 
 - `default-vpc`
 - `supported-platforms`
+
+<a id="activitystatustype"></a>
 
 ## ActivityStatusType
 
@@ -500,6 +512,8 @@ Values:
 - `pending_fulfillment`
 - `pending_termination`
 
+<a id="addressattributenametype"></a>
+
 ## AddressAttributeNameType
 
 ```python
@@ -509,6 +523,8 @@ from mypy_boto3_ec2.literals import AddressAttributeNameType
 Values:
 
 - `domain-name`
+
+<a id="addressfamilytype"></a>
 
 ## AddressFamilyType
 
@@ -521,6 +537,8 @@ Values:
 - `ipv4`
 - `ipv6`
 
+<a id="affinitytype"></a>
+
 ## AffinityType
 
 ```python
@@ -531,6 +549,8 @@ Values:
 
 - `default`
 - `host`
+
+<a id="allocationstatetype"></a>
 
 ## AllocationStateType
 
@@ -547,6 +567,8 @@ Values:
 - `released-permanent-failure`
 - `under-assessment`
 
+<a id="allocationstrategytype"></a>
+
 ## AllocationStrategyType
 
 ```python
@@ -560,6 +582,8 @@ Values:
 - `diversified`
 - `lowestPrice`
 
+<a id="allowsmultipleinstancetypestype"></a>
+
 ## AllowsMultipleInstanceTypesType
 
 ```python
@@ -570,6 +594,8 @@ Values:
 
 - `off`
 - `on`
+
+<a id="analysisstatustype"></a>
 
 ## AnalysisStatusType
 
@@ -583,6 +609,8 @@ Values:
 - `running`
 - `succeeded`
 
+<a id="appliancemodesupportvaluetype"></a>
+
 ## ApplianceModeSupportValueType
 
 ```python
@@ -593,6 +621,8 @@ Values:
 
 - `disable`
 - `enable`
+
+<a id="architecturetypetype"></a>
 
 ## ArchitectureTypeType
 
@@ -607,6 +637,8 @@ Values:
 - `x86_64`
 - `x86_64_mac`
 
+<a id="architecturevaluestype"></a>
+
 ## ArchitectureValuesType
 
 ```python
@@ -620,6 +652,8 @@ Values:
 - `x86_64`
 - `x86_64_mac`
 
+<a id="associatednetworktypetype"></a>
+
 ## AssociatedNetworkTypeType
 
 ```python
@@ -629,6 +663,8 @@ from mypy_boto3_ec2.literals import AssociatedNetworkTypeType
 Values:
 
 - `vpc`
+
+<a id="associationstatuscodetype"></a>
 
 ## AssociationStatusCodeType
 
@@ -644,6 +680,8 @@ Values:
 - `disassociated`
 - `disassociating`
 
+<a id="attachmentstatustype"></a>
+
 ## AttachmentStatusType
 
 ```python
@@ -657,6 +695,8 @@ Values:
 - `detached`
 - `detaching`
 
+<a id="autoacceptsharedassociationsvaluetype"></a>
+
 ## AutoAcceptSharedAssociationsValueType
 
 ```python
@@ -667,6 +707,8 @@ Values:
 
 - `disable`
 - `enable`
+
+<a id="autoacceptsharedattachmentsvaluetype"></a>
 
 ## AutoAcceptSharedAttachmentsValueType
 
@@ -679,6 +721,8 @@ Values:
 - `disable`
 - `enable`
 
+<a id="autoplacementtype"></a>
+
 ## AutoPlacementType
 
 ```python
@@ -689,6 +733,8 @@ Values:
 
 - `off`
 - `on`
+
+<a id="availabilityzoneoptinstatustype"></a>
 
 ## AvailabilityZoneOptInStatusType
 
@@ -701,6 +747,8 @@ Values:
 - `not-opted-in`
 - `opt-in-not-required`
 - `opted-in`
+
+<a id="availabilityzonestatetype"></a>
 
 ## AvailabilityZoneStateType
 
@@ -715,6 +763,8 @@ Values:
 - `information`
 - `unavailable`
 
+<a id="baremetaltype"></a>
+
 ## BareMetalType
 
 ```python
@@ -726,6 +776,8 @@ Values:
 - `excluded`
 - `included`
 - `required`
+
+<a id="batchstatetype"></a>
 
 ## BatchStateType
 
@@ -743,6 +795,8 @@ Values:
 - `modifying`
 - `submitted`
 
+<a id="bgpstatustype"></a>
+
 ## BgpStatusType
 
 ```python
@@ -753,6 +807,8 @@ Values:
 
 - `down`
 - `up`
+
+<a id="bootmodetypetype"></a>
 
 ## BootModeTypeType
 
@@ -765,6 +821,8 @@ Values:
 - `legacy-bios`
 - `uefi`
 
+<a id="bootmodevaluestype"></a>
+
 ## BootModeValuesType
 
 ```python
@@ -776,6 +834,8 @@ Values:
 - `legacy-bios`
 - `uefi`
 
+<a id="bundletaskcompletewaitername"></a>
+
 ## BundleTaskCompleteWaiterName
 
 ```python
@@ -785,6 +845,8 @@ from mypy_boto3_ec2.literals import BundleTaskCompleteWaiterName
 Values:
 
 - `bundle_task_complete`
+
+<a id="bundletaskstatetype"></a>
 
 ## BundleTaskStateType
 
@@ -802,6 +864,8 @@ Values:
 - `storing`
 - `waiting-for-shutdown`
 
+<a id="burstableperformancetype"></a>
+
 ## BurstablePerformanceType
 
 ```python
@@ -813,6 +877,8 @@ Values:
 - `excluded`
 - `included`
 - `required`
+
+<a id="byoipcidrstatetype"></a>
 
 ## ByoipCidrStateType
 
@@ -831,6 +897,8 @@ Values:
 - `provisioned`
 - `provisioned-not-publicly-advertisable`
 
+<a id="cancelbatcherrorcodetype"></a>
+
 ## CancelBatchErrorCodeType
 
 ```python
@@ -843,6 +911,8 @@ Values:
 - `fleetRequestIdMalformed`
 - `fleetRequestNotInCancellableState`
 - `unexpectedError`
+
+<a id="cancelspotinstancerequeststatetype"></a>
 
 ## CancelSpotInstanceRequestStateType
 
@@ -857,6 +927,8 @@ Values:
 - `closed`
 - `completed`
 - `open`
+
+<a id="capacityreservationfleetstatetype"></a>
 
 ## CapacityReservationFleetStateType
 
@@ -875,6 +947,8 @@ Values:
 - `modifying`
 - `partially_fulfilled`
 - `submitted`
+
+<a id="capacityreservationinstanceplatformtype"></a>
 
 ## CapacityReservationInstancePlatformType
 
@@ -902,6 +976,8 @@ Values:
 - `Windows with SQL Server Standard`
 - `Windows with SQL Server Web`
 
+<a id="capacityreservationpreferencetype"></a>
+
 ## CapacityReservationPreferenceType
 
 ```python
@@ -912,6 +988,8 @@ Values:
 
 - `none`
 - `open`
+
+<a id="capacityreservationstatetype"></a>
 
 ## CapacityReservationStateType
 
@@ -927,6 +1005,8 @@ Values:
 - `failed`
 - `pending`
 
+<a id="capacityreservationtenancytype"></a>
+
 ## CapacityReservationTenancyType
 
 ```python
@@ -937,6 +1017,8 @@ Values:
 
 - `dedicated`
 - `default`
+
+<a id="carriergatewaystatetype"></a>
 
 ## CarrierGatewayStateType
 
@@ -951,6 +1033,8 @@ Values:
 - `deleting`
 - `pending`
 
+<a id="clientcertificaterevocationliststatuscodetype"></a>
+
 ## ClientCertificateRevocationListStatusCodeType
 
 ```python
@@ -961,6 +1045,8 @@ Values:
 
 - `active`
 - `pending`
+
+<a id="clientvpnauthenticationtypetype"></a>
 
 ## ClientVpnAuthenticationTypeType
 
@@ -973,6 +1059,8 @@ Values:
 - `certificate-authentication`
 - `directory-service-authentication`
 - `federated-authentication`
+
+<a id="clientvpnauthorizationrulestatuscodetype"></a>
 
 ## ClientVpnAuthorizationRuleStatusCodeType
 
@@ -987,6 +1075,8 @@ Values:
 - `failed`
 - `revoking`
 
+<a id="clientvpnconnectionstatuscodetype"></a>
+
 ## ClientVpnConnectionStatusCodeType
 
 ```python
@@ -1000,6 +1090,8 @@ Values:
 - `terminated`
 - `terminating`
 
+<a id="clientvpnendpointattributestatuscodetype"></a>
+
 ## ClientVpnEndpointAttributeStatusCodeType
 
 ```python
@@ -1010,6 +1102,8 @@ Values:
 
 - `applied`
 - `applying`
+
+<a id="clientvpnendpointstatuscodetype"></a>
 
 ## ClientVpnEndpointStatusCodeType
 
@@ -1024,6 +1118,8 @@ Values:
 - `deleting`
 - `pending-associate`
 
+<a id="clientvpnroutestatuscodetype"></a>
+
 ## ClientVpnRouteStatusCodeType
 
 ```python
@@ -1037,6 +1133,8 @@ Values:
 - `deleting`
 - `failed`
 
+<a id="connectionnotificationstatetype"></a>
+
 ## ConnectionNotificationStateType
 
 ```python
@@ -1048,6 +1146,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="connectionnotificationtypetype"></a>
+
 ## ConnectionNotificationTypeType
 
 ```python
@@ -1057,6 +1157,8 @@ from mypy_boto3_ec2.literals import ConnectionNotificationTypeType
 Values:
 
 - `Topic`
+
+<a id="connectivitytypetype"></a>
 
 ## ConnectivityTypeType
 
@@ -1069,6 +1171,8 @@ Values:
 - `private`
 - `public`
 
+<a id="containerformattype"></a>
+
 ## ContainerFormatType
 
 ```python
@@ -1078,6 +1182,8 @@ from mypy_boto3_ec2.literals import ContainerFormatType
 Values:
 
 - `ova`
+
+<a id="conversiontaskcancelledwaitername"></a>
 
 ## ConversionTaskCancelledWaiterName
 
@@ -1089,6 +1195,8 @@ Values:
 
 - `conversion_task_cancelled`
 
+<a id="conversiontaskcompletedwaitername"></a>
+
 ## ConversionTaskCompletedWaiterName
 
 ```python
@@ -1099,6 +1207,8 @@ Values:
 
 - `conversion_task_completed`
 
+<a id="conversiontaskdeletedwaitername"></a>
+
 ## ConversionTaskDeletedWaiterName
 
 ```python
@@ -1108,6 +1218,8 @@ from mypy_boto3_ec2.literals import ConversionTaskDeletedWaiterName
 Values:
 
 - `conversion_task_deleted`
+
+<a id="conversiontaskstatetype"></a>
 
 ## ConversionTaskStateType
 
@@ -1122,6 +1234,8 @@ Values:
 - `cancelling`
 - `completed`
 
+<a id="copytagsfromsourcetype"></a>
+
 ## CopyTagsFromSourceType
 
 ```python
@@ -1131,6 +1245,8 @@ from mypy_boto3_ec2.literals import CopyTagsFromSourceType
 Values:
 
 - `volume`
+
+<a id="cpumanufacturertype"></a>
 
 ## CpuManufacturerType
 
@@ -1144,6 +1260,8 @@ Values:
 - `amd`
 - `intel`
 
+<a id="currencycodevaluestype"></a>
+
 ## CurrencyCodeValuesType
 
 ```python
@@ -1154,6 +1272,8 @@ Values:
 
 - `USD`
 
+<a id="customergatewayavailablewaitername"></a>
+
 ## CustomerGatewayAvailableWaiterName
 
 ```python
@@ -1163,6 +1283,8 @@ from mypy_boto3_ec2.literals import CustomerGatewayAvailableWaiterName
 Values:
 
 - `customer_gateway_available`
+
+<a id="datafeedsubscriptionstatetype"></a>
 
 ## DatafeedSubscriptionStateType
 
@@ -1175,6 +1297,8 @@ Values:
 - `Active`
 - `Inactive`
 
+<a id="defaultroutetableassociationvaluetype"></a>
+
 ## DefaultRouteTableAssociationValueType
 
 ```python
@@ -1185,6 +1309,8 @@ Values:
 
 - `disable`
 - `enable`
+
+<a id="defaultroutetablepropagationvaluetype"></a>
 
 ## DefaultRouteTablePropagationValueType
 
@@ -1197,6 +1323,8 @@ Values:
 - `disable`
 - `enable`
 
+<a id="defaulttargetcapacitytypetype"></a>
+
 ## DefaultTargetCapacityTypeType
 
 ```python
@@ -1207,6 +1335,8 @@ Values:
 
 - `on-demand`
 - `spot`
+
+<a id="deletefleeterrorcodetype"></a>
 
 ## DeleteFleetErrorCodeType
 
@@ -1221,6 +1351,8 @@ Values:
 - `fleetNotInDeletableState`
 - `unexpectedError`
 
+<a id="deletequeuedreservedinstanceserrorcodetype"></a>
+
 ## DeleteQueuedReservedInstancesErrorCodeType
 
 ```python
@@ -1233,6 +1365,8 @@ Values:
 - `reserved-instances-not-in-queued-state`
 - `unexpected-error`
 
+<a id="describeaddressesattributepaginatorname"></a>
+
 ## DescribeAddressesAttributePaginatorName
 
 ```python
@@ -1242,6 +1376,8 @@ from mypy_boto3_ec2.literals import DescribeAddressesAttributePaginatorName
 Values:
 
 - `describe_addresses_attribute`
+
+<a id="describebyoipcidrspaginatorname"></a>
 
 ## DescribeByoipCidrsPaginatorName
 
@@ -1253,6 +1389,8 @@ Values:
 
 - `describe_byoip_cidrs`
 
+<a id="describecapacityreservationfleetspaginatorname"></a>
+
 ## DescribeCapacityReservationFleetsPaginatorName
 
 ```python
@@ -1262,6 +1400,8 @@ from mypy_boto3_ec2.literals import DescribeCapacityReservationFleetsPaginatorNa
 Values:
 
 - `describe_capacity_reservation_fleets`
+
+<a id="describecapacityreservationspaginatorname"></a>
 
 ## DescribeCapacityReservationsPaginatorName
 
@@ -1273,6 +1413,8 @@ Values:
 
 - `describe_capacity_reservations`
 
+<a id="describecarriergatewayspaginatorname"></a>
+
 ## DescribeCarrierGatewaysPaginatorName
 
 ```python
@@ -1282,6 +1424,8 @@ from mypy_boto3_ec2.literals import DescribeCarrierGatewaysPaginatorName
 Values:
 
 - `describe_carrier_gateways`
+
+<a id="describeclassiclinkinstancespaginatorname"></a>
 
 ## DescribeClassicLinkInstancesPaginatorName
 
@@ -1293,6 +1437,8 @@ Values:
 
 - `describe_classic_link_instances`
 
+<a id="describeclientvpnauthorizationrulespaginatorname"></a>
+
 ## DescribeClientVpnAuthorizationRulesPaginatorName
 
 ```python
@@ -1302,6 +1448,8 @@ from mypy_boto3_ec2.literals import DescribeClientVpnAuthorizationRulesPaginator
 Values:
 
 - `describe_client_vpn_authorization_rules`
+
+<a id="describeclientvpnconnectionspaginatorname"></a>
 
 ## DescribeClientVpnConnectionsPaginatorName
 
@@ -1313,6 +1461,8 @@ Values:
 
 - `describe_client_vpn_connections`
 
+<a id="describeclientvpnendpointspaginatorname"></a>
+
 ## DescribeClientVpnEndpointsPaginatorName
 
 ```python
@@ -1322,6 +1472,8 @@ from mypy_boto3_ec2.literals import DescribeClientVpnEndpointsPaginatorName
 Values:
 
 - `describe_client_vpn_endpoints`
+
+<a id="describeclientvpnroutespaginatorname"></a>
 
 ## DescribeClientVpnRoutesPaginatorName
 
@@ -1333,6 +1485,8 @@ Values:
 
 - `describe_client_vpn_routes`
 
+<a id="describeclientvpntargetnetworkspaginatorname"></a>
+
 ## DescribeClientVpnTargetNetworksPaginatorName
 
 ```python
@@ -1342,6 +1496,8 @@ from mypy_boto3_ec2.literals import DescribeClientVpnTargetNetworksPaginatorName
 Values:
 
 - `describe_client_vpn_target_networks`
+
+<a id="describecoippoolspaginatorname"></a>
 
 ## DescribeCoipPoolsPaginatorName
 
@@ -1353,6 +1509,8 @@ Values:
 
 - `describe_coip_pools`
 
+<a id="describedhcpoptionspaginatorname"></a>
+
 ## DescribeDhcpOptionsPaginatorName
 
 ```python
@@ -1362,6 +1520,8 @@ from mypy_boto3_ec2.literals import DescribeDhcpOptionsPaginatorName
 Values:
 
 - `describe_dhcp_options`
+
+<a id="describeegressonlyinternetgatewayspaginatorname"></a>
 
 ## DescribeEgressOnlyInternetGatewaysPaginatorName
 
@@ -1373,6 +1533,8 @@ Values:
 
 - `describe_egress_only_internet_gateways`
 
+<a id="describeexportimagetaskspaginatorname"></a>
+
 ## DescribeExportImageTasksPaginatorName
 
 ```python
@@ -1382,6 +1544,8 @@ from mypy_boto3_ec2.literals import DescribeExportImageTasksPaginatorName
 Values:
 
 - `describe_export_image_tasks`
+
+<a id="describefastlaunchimagespaginatorname"></a>
 
 ## DescribeFastLaunchImagesPaginatorName
 
@@ -1393,6 +1557,8 @@ Values:
 
 - `describe_fast_launch_images`
 
+<a id="describefastsnapshotrestorespaginatorname"></a>
+
 ## DescribeFastSnapshotRestoresPaginatorName
 
 ```python
@@ -1402,6 +1568,8 @@ from mypy_boto3_ec2.literals import DescribeFastSnapshotRestoresPaginatorName
 Values:
 
 - `describe_fast_snapshot_restores`
+
+<a id="describefleetspaginatorname"></a>
 
 ## DescribeFleetsPaginatorName
 
@@ -1413,6 +1581,8 @@ Values:
 
 - `describe_fleets`
 
+<a id="describeflowlogspaginatorname"></a>
+
 ## DescribeFlowLogsPaginatorName
 
 ```python
@@ -1422,6 +1592,8 @@ from mypy_boto3_ec2.literals import DescribeFlowLogsPaginatorName
 Values:
 
 - `describe_flow_logs`
+
+<a id="describefpgaimagespaginatorname"></a>
 
 ## DescribeFpgaImagesPaginatorName
 
@@ -1433,6 +1605,8 @@ Values:
 
 - `describe_fpga_images`
 
+<a id="describehostreservationofferingspaginatorname"></a>
+
 ## DescribeHostReservationOfferingsPaginatorName
 
 ```python
@@ -1442,6 +1616,8 @@ from mypy_boto3_ec2.literals import DescribeHostReservationOfferingsPaginatorNam
 Values:
 
 - `describe_host_reservation_offerings`
+
+<a id="describehostreservationspaginatorname"></a>
 
 ## DescribeHostReservationsPaginatorName
 
@@ -1453,6 +1629,8 @@ Values:
 
 - `describe_host_reservations`
 
+<a id="describehostspaginatorname"></a>
+
 ## DescribeHostsPaginatorName
 
 ```python
@@ -1462,6 +1640,8 @@ from mypy_boto3_ec2.literals import DescribeHostsPaginatorName
 Values:
 
 - `describe_hosts`
+
+<a id="describeiaminstanceprofileassociationspaginatorname"></a>
 
 ## DescribeIamInstanceProfileAssociationsPaginatorName
 
@@ -1473,6 +1653,8 @@ Values:
 
 - `describe_iam_instance_profile_associations`
 
+<a id="describeimportimagetaskspaginatorname"></a>
+
 ## DescribeImportImageTasksPaginatorName
 
 ```python
@@ -1482,6 +1664,8 @@ from mypy_boto3_ec2.literals import DescribeImportImageTasksPaginatorName
 Values:
 
 - `describe_import_image_tasks`
+
+<a id="describeimportsnapshottaskspaginatorname"></a>
 
 ## DescribeImportSnapshotTasksPaginatorName
 
@@ -1493,6 +1677,8 @@ Values:
 
 - `describe_import_snapshot_tasks`
 
+<a id="describeinstancecreditspecificationspaginatorname"></a>
+
 ## DescribeInstanceCreditSpecificationsPaginatorName
 
 ```python
@@ -1502,6 +1688,8 @@ from mypy_boto3_ec2.literals import DescribeInstanceCreditSpecificationsPaginato
 Values:
 
 - `describe_instance_credit_specifications`
+
+<a id="describeinstanceeventwindowspaginatorname"></a>
 
 ## DescribeInstanceEventWindowsPaginatorName
 
@@ -1513,6 +1701,8 @@ Values:
 
 - `describe_instance_event_windows`
 
+<a id="describeinstancestatuspaginatorname"></a>
+
 ## DescribeInstanceStatusPaginatorName
 
 ```python
@@ -1522,6 +1712,8 @@ from mypy_boto3_ec2.literals import DescribeInstanceStatusPaginatorName
 Values:
 
 - `describe_instance_status`
+
+<a id="describeinstancetypeofferingspaginatorname"></a>
 
 ## DescribeInstanceTypeOfferingsPaginatorName
 
@@ -1533,6 +1725,8 @@ Values:
 
 - `describe_instance_type_offerings`
 
+<a id="describeinstancetypespaginatorname"></a>
+
 ## DescribeInstanceTypesPaginatorName
 
 ```python
@@ -1542,6 +1736,8 @@ from mypy_boto3_ec2.literals import DescribeInstanceTypesPaginatorName
 Values:
 
 - `describe_instance_types`
+
+<a id="describeinstancespaginatorname"></a>
 
 ## DescribeInstancesPaginatorName
 
@@ -1553,6 +1749,8 @@ Values:
 
 - `describe_instances`
 
+<a id="describeinternetgatewayspaginatorname"></a>
+
 ## DescribeInternetGatewaysPaginatorName
 
 ```python
@@ -1562,6 +1760,8 @@ from mypy_boto3_ec2.literals import DescribeInternetGatewaysPaginatorName
 Values:
 
 - `describe_internet_gateways`
+
+<a id="describeipampoolspaginatorname"></a>
 
 ## DescribeIpamPoolsPaginatorName
 
@@ -1573,6 +1773,8 @@ Values:
 
 - `describe_ipam_pools`
 
+<a id="describeipamscopespaginatorname"></a>
+
 ## DescribeIpamScopesPaginatorName
 
 ```python
@@ -1582,6 +1784,8 @@ from mypy_boto3_ec2.literals import DescribeIpamScopesPaginatorName
 Values:
 
 - `describe_ipam_scopes`
+
+<a id="describeipamspaginatorname"></a>
 
 ## DescribeIpamsPaginatorName
 
@@ -1593,6 +1797,8 @@ Values:
 
 - `describe_ipams`
 
+<a id="describeipv6poolspaginatorname"></a>
+
 ## DescribeIpv6PoolsPaginatorName
 
 ```python
@@ -1602,6 +1808,8 @@ from mypy_boto3_ec2.literals import DescribeIpv6PoolsPaginatorName
 Values:
 
 - `describe_ipv6_pools`
+
+<a id="describelaunchtemplateversionspaginatorname"></a>
 
 ## DescribeLaunchTemplateVersionsPaginatorName
 
@@ -1613,6 +1821,8 @@ Values:
 
 - `describe_launch_template_versions`
 
+<a id="describelaunchtemplatespaginatorname"></a>
+
 ## DescribeLaunchTemplatesPaginatorName
 
 ```python
@@ -1622,6 +1832,8 @@ from mypy_boto3_ec2.literals import DescribeLaunchTemplatesPaginatorName
 Values:
 
 - `describe_launch_templates`
+
+<a id="describelocalgatewayroutetablevirtualinterfacegroupassociationspaginatorname"></a>
 
 ## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginatorName
 
@@ -1633,6 +1845,8 @@ Values:
 
 - `describe_local_gateway_route_table_virtual_interface_group_associations`
 
+<a id="describelocalgatewayroutetablevpcassociationspaginatorname"></a>
+
 ## DescribeLocalGatewayRouteTableVpcAssociationsPaginatorName
 
 ```python
@@ -1642,6 +1856,8 @@ from mypy_boto3_ec2.literals import DescribeLocalGatewayRouteTableVpcAssociation
 Values:
 
 - `describe_local_gateway_route_table_vpc_associations`
+
+<a id="describelocalgatewayroutetablespaginatorname"></a>
 
 ## DescribeLocalGatewayRouteTablesPaginatorName
 
@@ -1653,6 +1869,8 @@ Values:
 
 - `describe_local_gateway_route_tables`
 
+<a id="describelocalgatewayvirtualinterfacegroupspaginatorname"></a>
+
 ## DescribeLocalGatewayVirtualInterfaceGroupsPaginatorName
 
 ```python
@@ -1662,6 +1880,8 @@ from mypy_boto3_ec2.literals import DescribeLocalGatewayVirtualInterfaceGroupsPa
 Values:
 
 - `describe_local_gateway_virtual_interface_groups`
+
+<a id="describelocalgatewayvirtualinterfacespaginatorname"></a>
 
 ## DescribeLocalGatewayVirtualInterfacesPaginatorName
 
@@ -1673,6 +1893,8 @@ Values:
 
 - `describe_local_gateway_virtual_interfaces`
 
+<a id="describelocalgatewayspaginatorname"></a>
+
 ## DescribeLocalGatewaysPaginatorName
 
 ```python
@@ -1682,6 +1904,8 @@ from mypy_boto3_ec2.literals import DescribeLocalGatewaysPaginatorName
 Values:
 
 - `describe_local_gateways`
+
+<a id="describemanagedprefixlistspaginatorname"></a>
 
 ## DescribeManagedPrefixListsPaginatorName
 
@@ -1693,6 +1917,8 @@ Values:
 
 - `describe_managed_prefix_lists`
 
+<a id="describemovingaddressespaginatorname"></a>
+
 ## DescribeMovingAddressesPaginatorName
 
 ```python
@@ -1702,6 +1928,8 @@ from mypy_boto3_ec2.literals import DescribeMovingAddressesPaginatorName
 Values:
 
 - `describe_moving_addresses`
+
+<a id="describenatgatewayspaginatorname"></a>
 
 ## DescribeNatGatewaysPaginatorName
 
@@ -1713,6 +1941,8 @@ Values:
 
 - `describe_nat_gateways`
 
+<a id="describenetworkaclspaginatorname"></a>
+
 ## DescribeNetworkAclsPaginatorName
 
 ```python
@@ -1722,6 +1952,8 @@ from mypy_boto3_ec2.literals import DescribeNetworkAclsPaginatorName
 Values:
 
 - `describe_network_acls`
+
+<a id="describenetworkinsightsaccessscopeanalysespaginatorname"></a>
 
 ## DescribeNetworkInsightsAccessScopeAnalysesPaginatorName
 
@@ -1733,6 +1965,8 @@ Values:
 
 - `describe_network_insights_access_scope_analyses`
 
+<a id="describenetworkinsightsaccessscopespaginatorname"></a>
+
 ## DescribeNetworkInsightsAccessScopesPaginatorName
 
 ```python
@@ -1742,6 +1976,8 @@ from mypy_boto3_ec2.literals import DescribeNetworkInsightsAccessScopesPaginator
 Values:
 
 - `describe_network_insights_access_scopes`
+
+<a id="describenetworkinsightsanalysespaginatorname"></a>
 
 ## DescribeNetworkInsightsAnalysesPaginatorName
 
@@ -1753,6 +1989,8 @@ Values:
 
 - `describe_network_insights_analyses`
 
+<a id="describenetworkinsightspathspaginatorname"></a>
+
 ## DescribeNetworkInsightsPathsPaginatorName
 
 ```python
@@ -1762,6 +2000,8 @@ from mypy_boto3_ec2.literals import DescribeNetworkInsightsPathsPaginatorName
 Values:
 
 - `describe_network_insights_paths`
+
+<a id="describenetworkinterfacepermissionspaginatorname"></a>
 
 ## DescribeNetworkInterfacePermissionsPaginatorName
 
@@ -1773,6 +2013,8 @@ Values:
 
 - `describe_network_interface_permissions`
 
+<a id="describenetworkinterfacespaginatorname"></a>
+
 ## DescribeNetworkInterfacesPaginatorName
 
 ```python
@@ -1782,6 +2024,8 @@ from mypy_boto3_ec2.literals import DescribeNetworkInterfacesPaginatorName
 Values:
 
 - `describe_network_interfaces`
+
+<a id="describeprefixlistspaginatorname"></a>
 
 ## DescribePrefixListsPaginatorName
 
@@ -1793,6 +2037,8 @@ Values:
 
 - `describe_prefix_lists`
 
+<a id="describeprincipalidformatpaginatorname"></a>
+
 ## DescribePrincipalIdFormatPaginatorName
 
 ```python
@@ -1802,6 +2048,8 @@ from mypy_boto3_ec2.literals import DescribePrincipalIdFormatPaginatorName
 Values:
 
 - `describe_principal_id_format`
+
+<a id="describepublicipv4poolspaginatorname"></a>
 
 ## DescribePublicIpv4PoolsPaginatorName
 
@@ -1813,6 +2061,8 @@ Values:
 
 - `describe_public_ipv4_pools`
 
+<a id="describereplacerootvolumetaskspaginatorname"></a>
+
 ## DescribeReplaceRootVolumeTasksPaginatorName
 
 ```python
@@ -1822,6 +2072,8 @@ from mypy_boto3_ec2.literals import DescribeReplaceRootVolumeTasksPaginatorName
 Values:
 
 - `describe_replace_root_volume_tasks`
+
+<a id="describereservedinstancesmodificationspaginatorname"></a>
 
 ## DescribeReservedInstancesModificationsPaginatorName
 
@@ -1833,6 +2085,8 @@ Values:
 
 - `describe_reserved_instances_modifications`
 
+<a id="describereservedinstancesofferingspaginatorname"></a>
+
 ## DescribeReservedInstancesOfferingsPaginatorName
 
 ```python
@@ -1842,6 +2096,8 @@ from mypy_boto3_ec2.literals import DescribeReservedInstancesOfferingsPaginatorN
 Values:
 
 - `describe_reserved_instances_offerings`
+
+<a id="describeroutetablespaginatorname"></a>
 
 ## DescribeRouteTablesPaginatorName
 
@@ -1853,6 +2109,8 @@ Values:
 
 - `describe_route_tables`
 
+<a id="describescheduledinstanceavailabilitypaginatorname"></a>
+
 ## DescribeScheduledInstanceAvailabilityPaginatorName
 
 ```python
@@ -1862,6 +2120,8 @@ from mypy_boto3_ec2.literals import DescribeScheduledInstanceAvailabilityPaginat
 Values:
 
 - `describe_scheduled_instance_availability`
+
+<a id="describescheduledinstancespaginatorname"></a>
 
 ## DescribeScheduledInstancesPaginatorName
 
@@ -1873,6 +2133,8 @@ Values:
 
 - `describe_scheduled_instances`
 
+<a id="describesecuritygrouprulespaginatorname"></a>
+
 ## DescribeSecurityGroupRulesPaginatorName
 
 ```python
@@ -1882,6 +2144,8 @@ from mypy_boto3_ec2.literals import DescribeSecurityGroupRulesPaginatorName
 Values:
 
 - `describe_security_group_rules`
+
+<a id="describesecuritygroupspaginatorname"></a>
 
 ## DescribeSecurityGroupsPaginatorName
 
@@ -1893,6 +2157,8 @@ Values:
 
 - `describe_security_groups`
 
+<a id="describesnapshottierstatuspaginatorname"></a>
+
 ## DescribeSnapshotTierStatusPaginatorName
 
 ```python
@@ -1902,6 +2168,8 @@ from mypy_boto3_ec2.literals import DescribeSnapshotTierStatusPaginatorName
 Values:
 
 - `describe_snapshot_tier_status`
+
+<a id="describesnapshotspaginatorname"></a>
 
 ## DescribeSnapshotsPaginatorName
 
@@ -1913,6 +2181,8 @@ Values:
 
 - `describe_snapshots`
 
+<a id="describespotfleetinstancespaginatorname"></a>
+
 ## DescribeSpotFleetInstancesPaginatorName
 
 ```python
@@ -1922,6 +2192,8 @@ from mypy_boto3_ec2.literals import DescribeSpotFleetInstancesPaginatorName
 Values:
 
 - `describe_spot_fleet_instances`
+
+<a id="describespotfleetrequestspaginatorname"></a>
 
 ## DescribeSpotFleetRequestsPaginatorName
 
@@ -1933,6 +2205,8 @@ Values:
 
 - `describe_spot_fleet_requests`
 
+<a id="describespotinstancerequestspaginatorname"></a>
+
 ## DescribeSpotInstanceRequestsPaginatorName
 
 ```python
@@ -1942,6 +2216,8 @@ from mypy_boto3_ec2.literals import DescribeSpotInstanceRequestsPaginatorName
 Values:
 
 - `describe_spot_instance_requests`
+
+<a id="describespotpricehistorypaginatorname"></a>
 
 ## DescribeSpotPriceHistoryPaginatorName
 
@@ -1953,6 +2229,8 @@ Values:
 
 - `describe_spot_price_history`
 
+<a id="describestalesecuritygroupspaginatorname"></a>
+
 ## DescribeStaleSecurityGroupsPaginatorName
 
 ```python
@@ -1962,6 +2240,8 @@ from mypy_boto3_ec2.literals import DescribeStaleSecurityGroupsPaginatorName
 Values:
 
 - `describe_stale_security_groups`
+
+<a id="describestoreimagetaskspaginatorname"></a>
 
 ## DescribeStoreImageTasksPaginatorName
 
@@ -1973,6 +2253,8 @@ Values:
 
 - `describe_store_image_tasks`
 
+<a id="describesubnetspaginatorname"></a>
+
 ## DescribeSubnetsPaginatorName
 
 ```python
@@ -1982,6 +2264,8 @@ from mypy_boto3_ec2.literals import DescribeSubnetsPaginatorName
 Values:
 
 - `describe_subnets`
+
+<a id="describetagspaginatorname"></a>
 
 ## DescribeTagsPaginatorName
 
@@ -1993,6 +2277,8 @@ Values:
 
 - `describe_tags`
 
+<a id="describetrafficmirrorfilterspaginatorname"></a>
+
 ## DescribeTrafficMirrorFiltersPaginatorName
 
 ```python
@@ -2002,6 +2288,8 @@ from mypy_boto3_ec2.literals import DescribeTrafficMirrorFiltersPaginatorName
 Values:
 
 - `describe_traffic_mirror_filters`
+
+<a id="describetrafficmirrorsessionspaginatorname"></a>
 
 ## DescribeTrafficMirrorSessionsPaginatorName
 
@@ -2013,6 +2301,8 @@ Values:
 
 - `describe_traffic_mirror_sessions`
 
+<a id="describetrafficmirrortargetspaginatorname"></a>
+
 ## DescribeTrafficMirrorTargetsPaginatorName
 
 ```python
@@ -2022,6 +2312,8 @@ from mypy_boto3_ec2.literals import DescribeTrafficMirrorTargetsPaginatorName
 Values:
 
 - `describe_traffic_mirror_targets`
+
+<a id="describetransitgatewayattachmentspaginatorname"></a>
 
 ## DescribeTransitGatewayAttachmentsPaginatorName
 
@@ -2033,6 +2325,8 @@ Values:
 
 - `describe_transit_gateway_attachments`
 
+<a id="describetransitgatewayconnectpeerspaginatorname"></a>
+
 ## DescribeTransitGatewayConnectPeersPaginatorName
 
 ```python
@@ -2042,6 +2336,8 @@ from mypy_boto3_ec2.literals import DescribeTransitGatewayConnectPeersPaginatorN
 Values:
 
 - `describe_transit_gateway_connect_peers`
+
+<a id="describetransitgatewayconnectspaginatorname"></a>
 
 ## DescribeTransitGatewayConnectsPaginatorName
 
@@ -2053,6 +2349,8 @@ Values:
 
 - `describe_transit_gateway_connects`
 
+<a id="describetransitgatewaymulticastdomainspaginatorname"></a>
+
 ## DescribeTransitGatewayMulticastDomainsPaginatorName
 
 ```python
@@ -2062,6 +2360,8 @@ from mypy_boto3_ec2.literals import DescribeTransitGatewayMulticastDomainsPagina
 Values:
 
 - `describe_transit_gateway_multicast_domains`
+
+<a id="describetransitgatewaypeeringattachmentspaginatorname"></a>
 
 ## DescribeTransitGatewayPeeringAttachmentsPaginatorName
 
@@ -2073,6 +2373,8 @@ Values:
 
 - `describe_transit_gateway_peering_attachments`
 
+<a id="describetransitgatewayroutetablespaginatorname"></a>
+
 ## DescribeTransitGatewayRouteTablesPaginatorName
 
 ```python
@@ -2082,6 +2384,8 @@ from mypy_boto3_ec2.literals import DescribeTransitGatewayRouteTablesPaginatorNa
 Values:
 
 - `describe_transit_gateway_route_tables`
+
+<a id="describetransitgatewayvpcattachmentspaginatorname"></a>
 
 ## DescribeTransitGatewayVpcAttachmentsPaginatorName
 
@@ -2093,6 +2397,8 @@ Values:
 
 - `describe_transit_gateway_vpc_attachments`
 
+<a id="describetransitgatewayspaginatorname"></a>
+
 ## DescribeTransitGatewaysPaginatorName
 
 ```python
@@ -2102,6 +2408,8 @@ from mypy_boto3_ec2.literals import DescribeTransitGatewaysPaginatorName
 Values:
 
 - `describe_transit_gateways`
+
+<a id="describetrunkinterfaceassociationspaginatorname"></a>
 
 ## DescribeTrunkInterfaceAssociationsPaginatorName
 
@@ -2113,6 +2421,8 @@ Values:
 
 - `describe_trunk_interface_associations`
 
+<a id="describevolumestatuspaginatorname"></a>
+
 ## DescribeVolumeStatusPaginatorName
 
 ```python
@@ -2122,6 +2432,8 @@ from mypy_boto3_ec2.literals import DescribeVolumeStatusPaginatorName
 Values:
 
 - `describe_volume_status`
+
+<a id="describevolumesmodificationspaginatorname"></a>
 
 ## DescribeVolumesModificationsPaginatorName
 
@@ -2133,6 +2445,8 @@ Values:
 
 - `describe_volumes_modifications`
 
+<a id="describevolumespaginatorname"></a>
+
 ## DescribeVolumesPaginatorName
 
 ```python
@@ -2142,6 +2456,8 @@ from mypy_boto3_ec2.literals import DescribeVolumesPaginatorName
 Values:
 
 - `describe_volumes`
+
+<a id="describevpcclassiclinkdnssupportpaginatorname"></a>
 
 ## DescribeVpcClassicLinkDnsSupportPaginatorName
 
@@ -2153,6 +2469,8 @@ Values:
 
 - `describe_vpc_classic_link_dns_support`
 
+<a id="describevpcendpointconnectionnotificationspaginatorname"></a>
+
 ## DescribeVpcEndpointConnectionNotificationsPaginatorName
 
 ```python
@@ -2162,6 +2480,8 @@ from mypy_boto3_ec2.literals import DescribeVpcEndpointConnectionNotificationsPa
 Values:
 
 - `describe_vpc_endpoint_connection_notifications`
+
+<a id="describevpcendpointconnectionspaginatorname"></a>
 
 ## DescribeVpcEndpointConnectionsPaginatorName
 
@@ -2173,6 +2493,8 @@ Values:
 
 - `describe_vpc_endpoint_connections`
 
+<a id="describevpcendpointserviceconfigurationspaginatorname"></a>
+
 ## DescribeVpcEndpointServiceConfigurationsPaginatorName
 
 ```python
@@ -2182,6 +2504,8 @@ from mypy_boto3_ec2.literals import DescribeVpcEndpointServiceConfigurationsPagi
 Values:
 
 - `describe_vpc_endpoint_service_configurations`
+
+<a id="describevpcendpointservicepermissionspaginatorname"></a>
 
 ## DescribeVpcEndpointServicePermissionsPaginatorName
 
@@ -2193,6 +2517,8 @@ Values:
 
 - `describe_vpc_endpoint_service_permissions`
 
+<a id="describevpcendpointservicespaginatorname"></a>
+
 ## DescribeVpcEndpointServicesPaginatorName
 
 ```python
@@ -2202,6 +2528,8 @@ from mypy_boto3_ec2.literals import DescribeVpcEndpointServicesPaginatorName
 Values:
 
 - `describe_vpc_endpoint_services`
+
+<a id="describevpcendpointspaginatorname"></a>
 
 ## DescribeVpcEndpointsPaginatorName
 
@@ -2213,6 +2541,8 @@ Values:
 
 - `describe_vpc_endpoints`
 
+<a id="describevpcpeeringconnectionspaginatorname"></a>
+
 ## DescribeVpcPeeringConnectionsPaginatorName
 
 ```python
@@ -2223,6 +2553,8 @@ Values:
 
 - `describe_vpc_peering_connections`
 
+<a id="describevpcspaginatorname"></a>
+
 ## DescribeVpcsPaginatorName
 
 ```python
@@ -2232,6 +2564,8 @@ from mypy_boto3_ec2.literals import DescribeVpcsPaginatorName
 Values:
 
 - `describe_vpcs`
+
+<a id="destinationfileformattype"></a>
 
 ## DestinationFileFormatType
 
@@ -2244,6 +2578,8 @@ Values:
 - `parquet`
 - `plain-text`
 
+<a id="devicetypetype"></a>
+
 ## DeviceTypeType
 
 ```python
@@ -2254,6 +2590,8 @@ Values:
 
 - `ebs`
 - `instance-store`
+
+<a id="diskimageformattype"></a>
 
 ## DiskImageFormatType
 
@@ -2267,6 +2605,8 @@ Values:
 - `VHD`
 - `VMDK`
 
+<a id="disktypetype"></a>
+
 ## DiskTypeType
 
 ```python
@@ -2277,6 +2617,8 @@ Values:
 
 - `hdd`
 - `ssd`
+
+<a id="dnsnamestatetype"></a>
 
 ## DnsNameStateType
 
@@ -2290,6 +2632,8 @@ Values:
 - `pendingVerification`
 - `verified`
 
+<a id="dnssupportvaluetype"></a>
+
 ## DnsSupportValueType
 
 ```python
@@ -2300,6 +2644,8 @@ Values:
 
 - `disable`
 - `enable`
+
+<a id="domaintypetype"></a>
 
 ## DomainTypeType
 
@@ -2312,6 +2658,8 @@ Values:
 - `standard`
 - `vpc`
 
+<a id="ebsencryptionsupporttype"></a>
+
 ## EbsEncryptionSupportType
 
 ```python
@@ -2322,6 +2670,8 @@ Values:
 
 - `supported`
 - `unsupported`
+
+<a id="ebsnvmesupporttype"></a>
 
 ## EbsNvmeSupportType
 
@@ -2335,6 +2685,8 @@ Values:
 - `supported`
 - `unsupported`
 
+<a id="ebsoptimizedsupporttype"></a>
+
 ## EbsOptimizedSupportType
 
 ```python
@@ -2347,6 +2699,8 @@ Values:
 - `supported`
 - `unsupported`
 
+<a id="elasticgpustatetype"></a>
+
 ## ElasticGpuStateType
 
 ```python
@@ -2356,6 +2710,8 @@ from mypy_boto3_ec2.literals import ElasticGpuStateType
 Values:
 
 - `ATTACHED`
+
+<a id="elasticgpustatustype"></a>
 
 ## ElasticGpuStatusType
 
@@ -2367,6 +2723,8 @@ Values:
 
 - `IMPAIRED`
 - `OK`
+
+<a id="enasupporttype"></a>
 
 ## EnaSupportType
 
@@ -2380,6 +2738,8 @@ Values:
 - `supported`
 - `unsupported`
 
+<a id="enddatetypetype"></a>
+
 ## EndDateTypeType
 
 ```python
@@ -2390,6 +2750,8 @@ Values:
 
 - `limited`
 - `unlimited`
+
+<a id="ephemeralnvmesupporttype"></a>
 
 ## EphemeralNvmeSupportType
 
@@ -2402,6 +2764,8 @@ Values:
 - `required`
 - `supported`
 - `unsupported`
+
+<a id="eventcodetype"></a>
 
 ## EventCodeType
 
@@ -2417,6 +2781,8 @@ Values:
 - `system-maintenance`
 - `system-reboot`
 
+<a id="eventtypetype"></a>
+
 ## EventTypeType
 
 ```python
@@ -2430,6 +2796,8 @@ Values:
 - `information`
 - `instanceChange`
 
+<a id="excesscapacityterminationpolicytype"></a>
+
 ## ExcessCapacityTerminationPolicyType
 
 ```python
@@ -2440,6 +2808,8 @@ Values:
 
 - `default`
 - `noTermination`
+
+<a id="exportenvironmenttype"></a>
 
 ## ExportEnvironmentType
 
@@ -2453,6 +2823,8 @@ Values:
 - `microsoft`
 - `vmware`
 
+<a id="exporttaskcancelledwaitername"></a>
+
 ## ExportTaskCancelledWaiterName
 
 ```python
@@ -2463,6 +2835,8 @@ Values:
 
 - `export_task_cancelled`
 
+<a id="exporttaskcompletedwaitername"></a>
+
 ## ExportTaskCompletedWaiterName
 
 ```python
@@ -2472,6 +2846,8 @@ from mypy_boto3_ec2.literals import ExportTaskCompletedWaiterName
 Values:
 
 - `export_task_completed`
+
+<a id="exporttaskstatetype"></a>
 
 ## ExportTaskStateType
 
@@ -2486,6 +2862,8 @@ Values:
 - `cancelling`
 - `completed`
 
+<a id="fastlaunchresourcetypetype"></a>
+
 ## FastLaunchResourceTypeType
 
 ```python
@@ -2495,6 +2873,8 @@ from mypy_boto3_ec2.literals import FastLaunchResourceTypeType
 Values:
 
 - `snapshot`
+
+<a id="fastlaunchstatecodetype"></a>
 
 ## FastLaunchStateCodeType
 
@@ -2511,6 +2891,8 @@ Values:
 - `enabling`
 - `enabling-failed`
 
+<a id="fastsnapshotrestorestatecodetype"></a>
+
 ## FastSnapshotRestoreStateCodeType
 
 ```python
@@ -2525,6 +2907,8 @@ Values:
 - `enabling`
 - `optimizing`
 
+<a id="findingsfoundtype"></a>
+
 ## FindingsFoundType
 
 ```python
@@ -2536,6 +2920,8 @@ Values:
 - `false`
 - `true`
 - `unknown`
+
+<a id="fleetactivitystatustype"></a>
 
 ## FleetActivityStatusType
 
@@ -2550,6 +2936,8 @@ Values:
 - `pending_fulfillment`
 - `pending_termination`
 
+<a id="fleetcapacityreservationtenancytype"></a>
+
 ## FleetCapacityReservationTenancyType
 
 ```python
@@ -2560,6 +2948,8 @@ Values:
 
 - `default`
 
+<a id="fleetcapacityreservationusagestrategytype"></a>
+
 ## FleetCapacityReservationUsageStrategyType
 
 ```python
@@ -2569,6 +2959,8 @@ from mypy_boto3_ec2.literals import FleetCapacityReservationUsageStrategyType
 Values:
 
 - `use-capacity-reservations-first`
+
+<a id="fleeteventtypetype"></a>
 
 ## FleetEventTypeType
 
@@ -2582,6 +2974,8 @@ Values:
 - `instance-change`
 - `service-error`
 
+<a id="fleetexcesscapacityterminationpolicytype"></a>
+
 ## FleetExcessCapacityTerminationPolicyType
 
 ```python
@@ -2593,6 +2987,8 @@ Values:
 - `no-termination`
 - `termination`
 
+<a id="fleetinstancematchcriteriatype"></a>
+
 ## FleetInstanceMatchCriteriaType
 
 ```python
@@ -2602,6 +2998,8 @@ from mypy_boto3_ec2.literals import FleetInstanceMatchCriteriaType
 Values:
 
 - `open`
+
+<a id="fleetondemandallocationstrategytype"></a>
 
 ## FleetOnDemandAllocationStrategyType
 
@@ -2614,6 +3012,8 @@ Values:
 - `lowest-price`
 - `prioritized`
 
+<a id="fleetreplacementstrategytype"></a>
+
 ## FleetReplacementStrategyType
 
 ```python
@@ -2624,6 +3024,8 @@ Values:
 
 - `launch`
 - `launch-before-terminate`
+
+<a id="fleetstatecodetype"></a>
 
 ## FleetStateCodeType
 
@@ -2641,6 +3043,8 @@ Values:
 - `modifying`
 - `submitted`
 
+<a id="fleettypetype"></a>
+
 ## FleetTypeType
 
 ```python
@@ -2653,6 +3057,8 @@ Values:
 - `maintain`
 - `request`
 
+<a id="flowlogsresourcetypetype"></a>
+
 ## FlowLogsResourceTypeType
 
 ```python
@@ -2664,6 +3070,8 @@ Values:
 - `NetworkInterface`
 - `Subnet`
 - `VPC`
+
+<a id="fpgaimageattributenametype"></a>
 
 ## FpgaImageAttributeNameType
 
@@ -2678,6 +3086,8 @@ Values:
 - `name`
 - `productCodes`
 
+<a id="fpgaimagestatecodetype"></a>
+
 ## FpgaImageStateCodeType
 
 ```python
@@ -2690,6 +3100,8 @@ Values:
 - `failed`
 - `pending`
 - `unavailable`
+
+<a id="gatewayassociationstatetype"></a>
 
 ## GatewayAssociationStateType
 
@@ -2704,6 +3116,8 @@ Values:
 - `disassociating`
 - `not-associated`
 
+<a id="gatewaytypetype"></a>
+
 ## GatewayTypeType
 
 ```python
@@ -2713,6 +3127,8 @@ from mypy_boto3_ec2.literals import GatewayTypeType
 Values:
 
 - `ipsec.1`
+
+<a id="getassociatedipv6poolcidrspaginatorname"></a>
 
 ## GetAssociatedIpv6PoolCidrsPaginatorName
 
@@ -2724,6 +3140,8 @@ Values:
 
 - `get_associated_ipv6_pool_cidrs`
 
+<a id="getgroupsforcapacityreservationpaginatorname"></a>
+
 ## GetGroupsForCapacityReservationPaginatorName
 
 ```python
@@ -2733,6 +3151,8 @@ from mypy_boto3_ec2.literals import GetGroupsForCapacityReservationPaginatorName
 Values:
 
 - `get_groups_for_capacity_reservation`
+
+<a id="getinstancetypesfrominstancerequirementspaginatorname"></a>
 
 ## GetInstanceTypesFromInstanceRequirementsPaginatorName
 
@@ -2744,6 +3164,8 @@ Values:
 
 - `get_instance_types_from_instance_requirements`
 
+<a id="getipamaddresshistorypaginatorname"></a>
+
 ## GetIpamAddressHistoryPaginatorName
 
 ```python
@@ -2753,6 +3175,8 @@ from mypy_boto3_ec2.literals import GetIpamAddressHistoryPaginatorName
 Values:
 
 - `get_ipam_address_history`
+
+<a id="getipampoolallocationspaginatorname"></a>
 
 ## GetIpamPoolAllocationsPaginatorName
 
@@ -2764,6 +3188,8 @@ Values:
 
 - `get_ipam_pool_allocations`
 
+<a id="getipampoolcidrspaginatorname"></a>
+
 ## GetIpamPoolCidrsPaginatorName
 
 ```python
@@ -2773,6 +3199,8 @@ from mypy_boto3_ec2.literals import GetIpamPoolCidrsPaginatorName
 Values:
 
 - `get_ipam_pool_cidrs`
+
+<a id="getipamresourcecidrspaginatorname"></a>
 
 ## GetIpamResourceCidrsPaginatorName
 
@@ -2784,6 +3212,8 @@ Values:
 
 - `get_ipam_resource_cidrs`
 
+<a id="getmanagedprefixlistassociationspaginatorname"></a>
+
 ## GetManagedPrefixListAssociationsPaginatorName
 
 ```python
@@ -2793,6 +3223,8 @@ from mypy_boto3_ec2.literals import GetManagedPrefixListAssociationsPaginatorNam
 Values:
 
 - `get_managed_prefix_list_associations`
+
+<a id="getmanagedprefixlistentriespaginatorname"></a>
 
 ## GetManagedPrefixListEntriesPaginatorName
 
@@ -2804,6 +3236,8 @@ Values:
 
 - `get_managed_prefix_list_entries`
 
+<a id="getspotplacementscorespaginatorname"></a>
+
 ## GetSpotPlacementScoresPaginatorName
 
 ```python
@@ -2813,6 +3247,8 @@ from mypy_boto3_ec2.literals import GetSpotPlacementScoresPaginatorName
 Values:
 
 - `get_spot_placement_scores`
+
+<a id="gettransitgatewayattachmentpropagationspaginatorname"></a>
 
 ## GetTransitGatewayAttachmentPropagationsPaginatorName
 
@@ -2824,6 +3260,8 @@ Values:
 
 - `get_transit_gateway_attachment_propagations`
 
+<a id="gettransitgatewaymulticastdomainassociationspaginatorname"></a>
+
 ## GetTransitGatewayMulticastDomainAssociationsPaginatorName
 
 ```python
@@ -2833,6 +3271,8 @@ from mypy_boto3_ec2.literals import GetTransitGatewayMulticastDomainAssociations
 Values:
 
 - `get_transit_gateway_multicast_domain_associations`
+
+<a id="gettransitgatewayprefixlistreferencespaginatorname"></a>
 
 ## GetTransitGatewayPrefixListReferencesPaginatorName
 
@@ -2844,6 +3284,8 @@ Values:
 
 - `get_transit_gateway_prefix_list_references`
 
+<a id="gettransitgatewayroutetableassociationspaginatorname"></a>
+
 ## GetTransitGatewayRouteTableAssociationsPaginatorName
 
 ```python
@@ -2853,6 +3295,8 @@ from mypy_boto3_ec2.literals import GetTransitGatewayRouteTableAssociationsPagin
 Values:
 
 - `get_transit_gateway_route_table_associations`
+
+<a id="gettransitgatewayroutetablepropagationspaginatorname"></a>
 
 ## GetTransitGatewayRouteTablePropagationsPaginatorName
 
@@ -2864,6 +3308,8 @@ Values:
 
 - `get_transit_gateway_route_table_propagations`
 
+<a id="getvpnconnectiondevicetypespaginatorname"></a>
+
 ## GetVpnConnectionDeviceTypesPaginatorName
 
 ```python
@@ -2873,6 +3319,8 @@ from mypy_boto3_ec2.literals import GetVpnConnectionDeviceTypesPaginatorName
 Values:
 
 - `get_vpn_connection_device_types`
+
+<a id="hostrecoverytype"></a>
 
 ## HostRecoveryType
 
@@ -2885,6 +3333,8 @@ Values:
 - `off`
 - `on`
 
+<a id="hosttenancytype"></a>
+
 ## HostTenancyType
 
 ```python
@@ -2895,6 +3345,8 @@ Values:
 
 - `dedicated`
 - `host`
+
+<a id="hostnametypetype"></a>
 
 ## HostnameTypeType
 
@@ -2907,6 +3359,8 @@ Values:
 - `ip-name`
 - `resource-name`
 
+<a id="httptokensstatetype"></a>
+
 ## HttpTokensStateType
 
 ```python
@@ -2918,6 +3372,8 @@ Values:
 - `optional`
 - `required`
 
+<a id="hypervisortypetype"></a>
+
 ## HypervisorTypeType
 
 ```python
@@ -2928,6 +3384,8 @@ Values:
 
 - `ovm`
 - `xen`
+
+<a id="iaminstanceprofileassociationstatetype"></a>
 
 ## IamInstanceProfileAssociationStateType
 
@@ -2942,6 +3400,8 @@ Values:
 - `disassociated`
 - `disassociating`
 
+<a id="igmpv2supportvaluetype"></a>
+
 ## Igmpv2SupportValueType
 
 ```python
@@ -2952,6 +3412,8 @@ Values:
 
 - `disable`
 - `enable`
+
+<a id="imageattributenametype"></a>
 
 ## ImageAttributeNameType
 
@@ -2970,6 +3432,8 @@ Values:
 - `ramdisk`
 - `sriovNetSupport`
 
+<a id="imageavailablewaitername"></a>
+
 ## ImageAvailableWaiterName
 
 ```python
@@ -2980,6 +3444,8 @@ Values:
 
 - `image_available`
 
+<a id="imageexistswaitername"></a>
+
 ## ImageExistsWaiterName
 
 ```python
@@ -2989,6 +3455,8 @@ from mypy_boto3_ec2.literals import ImageExistsWaiterName
 Values:
 
 - `image_exists`
+
+<a id="imagestatetype"></a>
 
 ## ImageStateType
 
@@ -3006,6 +3474,8 @@ Values:
 - `pending`
 - `transient`
 
+<a id="imagetypevaluestype"></a>
+
 ## ImageTypeValuesType
 
 ```python
@@ -3017,6 +3487,8 @@ Values:
 - `kernel`
 - `machine`
 - `ramdisk`
+
+<a id="instanceattributenametype"></a>
 
 ## InstanceAttributeNameType
 
@@ -3042,6 +3514,8 @@ Values:
 - `sriovNetSupport`
 - `userData`
 
+<a id="instanceeventwindowstatetype"></a>
+
 ## InstanceEventWindowStateType
 
 ```python
@@ -3055,6 +3529,8 @@ Values:
 - `deleted`
 - `deleting`
 
+<a id="instanceexistswaitername"></a>
+
 ## InstanceExistsWaiterName
 
 ```python
@@ -3064,6 +3540,8 @@ from mypy_boto3_ec2.literals import InstanceExistsWaiterName
 Values:
 
 - `instance_exists`
+
+<a id="instancegenerationtype"></a>
 
 ## InstanceGenerationType
 
@@ -3076,6 +3554,8 @@ Values:
 - `current`
 - `previous`
 
+<a id="instancehealthstatustype"></a>
+
 ## InstanceHealthStatusType
 
 ```python
@@ -3086,6 +3566,8 @@ Values:
 
 - `healthy`
 - `unhealthy`
+
+<a id="instanceinterruptionbehaviortype"></a>
 
 ## InstanceInterruptionBehaviorType
 
@@ -3099,6 +3581,8 @@ Values:
 - `stop`
 - `terminate`
 
+<a id="instancelifecycletype"></a>
+
 ## InstanceLifecycleType
 
 ```python
@@ -3109,6 +3593,8 @@ Values:
 
 - `on-demand`
 - `spot`
+
+<a id="instancelifecycletypetype"></a>
 
 ## InstanceLifecycleTypeType
 
@@ -3121,6 +3607,8 @@ Values:
 - `scheduled`
 - `spot`
 
+<a id="instancematchcriteriatype"></a>
+
 ## InstanceMatchCriteriaType
 
 ```python
@@ -3131,6 +3619,8 @@ Values:
 
 - `open`
 - `targeted`
+
+<a id="instancemetadataendpointstatetype"></a>
 
 ## InstanceMetadataEndpointStateType
 
@@ -3143,6 +3633,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="instancemetadataoptionsstatetype"></a>
+
 ## InstanceMetadataOptionsStateType
 
 ```python
@@ -3153,6 +3645,8 @@ Values:
 
 - `applied`
 - `pending`
+
+<a id="instancemetadataprotocolstatetype"></a>
 
 ## InstanceMetadataProtocolStateType
 
@@ -3165,6 +3659,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="instancemetadatatagsstatetype"></a>
+
 ## InstanceMetadataTagsStateType
 
 ```python
@@ -3176,6 +3672,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="instancerunningwaitername"></a>
+
 ## InstanceRunningWaiterName
 
 ```python
@@ -3185,6 +3683,8 @@ from mypy_boto3_ec2.literals import InstanceRunningWaiterName
 Values:
 
 - `instance_running`
+
+<a id="instancestatenametype"></a>
 
 ## InstanceStateNameType
 
@@ -3201,6 +3701,8 @@ Values:
 - `stopping`
 - `terminated`
 
+<a id="instancestatusokwaitername"></a>
+
 ## InstanceStatusOkWaiterName
 
 ```python
@@ -3211,6 +3713,8 @@ Values:
 
 - `instance_status_ok`
 
+<a id="instancestoppedwaitername"></a>
+
 ## InstanceStoppedWaiterName
 
 ```python
@@ -3220,6 +3724,8 @@ from mypy_boto3_ec2.literals import InstanceStoppedWaiterName
 Values:
 
 - `instance_stopped`
+
+<a id="instancestorageencryptionsupporttype"></a>
 
 ## InstanceStorageEncryptionSupportType
 
@@ -3232,6 +3738,8 @@ Values:
 - `required`
 - `unsupported`
 
+<a id="instanceterminatedwaitername"></a>
+
 ## InstanceTerminatedWaiterName
 
 ```python
@@ -3241,6 +3749,8 @@ from mypy_boto3_ec2.literals import InstanceTerminatedWaiterName
 Values:
 
 - `instance_terminated`
+
+<a id="instancetypehypervisortype"></a>
 
 ## InstanceTypeHypervisorType
 
@@ -3252,6 +3762,8 @@ Values:
 
 - `nitro`
 - `xen`
+
+<a id="instancetypetype"></a>
 
 ## InstanceTypeType
 
@@ -3747,6 +4259,8 @@ Values:
 - `z1d.metal`
 - `z1d.xlarge`
 
+<a id="interfacepermissiontypetype"></a>
+
 ## InterfacePermissionTypeType
 
 ```python
@@ -3757,6 +4271,8 @@ Values:
 
 - `EIP-ASSOCIATE`
 - `INSTANCE-ATTACH`
+
+<a id="interfaceprotocoltypetype"></a>
 
 ## InterfaceProtocolTypeType
 
@@ -3769,6 +4285,8 @@ Values:
 - `GRE`
 - `VLAN`
 
+<a id="internetgatewayexistswaitername"></a>
+
 ## InternetGatewayExistsWaiterName
 
 ```python
@@ -3778,6 +4296,8 @@ from mypy_boto3_ec2.literals import InternetGatewayExistsWaiterName
 Values:
 
 - `internet_gateway_exists`
+
+<a id="ipamaddresshistoryresourcetypetype"></a>
 
 ## IpamAddressHistoryResourceTypeType
 
@@ -3793,6 +4313,8 @@ Values:
 - `subnet`
 - `vpc`
 
+<a id="ipamcompliancestatustype"></a>
+
 ## IpamComplianceStatusType
 
 ```python
@@ -3806,6 +4328,8 @@ Values:
 - `noncompliant`
 - `unmanaged`
 
+<a id="ipammanagementstatetype"></a>
+
 ## IpamManagementStateType
 
 ```python
@@ -3818,6 +4342,8 @@ Values:
 - `managed`
 - `unmanaged`
 
+<a id="ipamoverlapstatustype"></a>
+
 ## IpamOverlapStatusType
 
 ```python
@@ -3829,6 +4355,8 @@ Values:
 - `ignored`
 - `nonoverlapping`
 - `overlapping`
+
+<a id="ipampoolallocationresourcetypetype"></a>
 
 ## IpamPoolAllocationResourceTypeType
 
@@ -3843,6 +4371,8 @@ Values:
 - `ipam-pool`
 - `vpc`
 
+<a id="ipampoolawsservicetype"></a>
+
 ## IpamPoolAwsServiceType
 
 ```python
@@ -3853,6 +4383,8 @@ Values:
 
 - `ec2`
 
+<a id="ipampoolcidrfailurecodetype"></a>
+
 ## IpamPoolCidrFailureCodeType
 
 ```python
@@ -3862,6 +4394,8 @@ from mypy_boto3_ec2.literals import IpamPoolCidrFailureCodeType
 Values:
 
 - `cidr-not-available`
+
+<a id="ipampoolcidrstatetype"></a>
 
 ## IpamPoolCidrStateType
 
@@ -3879,6 +4413,8 @@ Values:
 - `pending-import`
 - `pending-provision`
 - `provisioned`
+
+<a id="ipampoolstatetype"></a>
 
 ## IpamPoolStateType
 
@@ -3898,6 +4434,8 @@ Values:
 - `modify-failed`
 - `modify-in-progress`
 
+<a id="ipamresourcetypetype"></a>
+
 ## IpamResourceTypeType
 
 ```python
@@ -3911,6 +4449,8 @@ Values:
 - `public-ipv4-pool`
 - `subnet`
 - `vpc`
+
+<a id="ipamscopestatetype"></a>
 
 ## IpamScopeStateType
 
@@ -3930,6 +4470,8 @@ Values:
 - `modify-failed`
 - `modify-in-progress`
 
+<a id="ipamscopetypetype"></a>
+
 ## IpamScopeTypeType
 
 ```python
@@ -3940,6 +4482,8 @@ Values:
 
 - `private`
 - `public`
+
+<a id="ipamstatetype"></a>
 
 ## IpamStateType
 
@@ -3959,6 +4503,8 @@ Values:
 - `modify-failed`
 - `modify-in-progress`
 
+<a id="ipv6supportvaluetype"></a>
+
 ## Ipv6SupportValueType
 
 ```python
@@ -3970,6 +4516,8 @@ Values:
 - `disable`
 - `enable`
 
+<a id="keypairexistswaitername"></a>
+
 ## KeyPairExistsWaiterName
 
 ```python
@@ -3979,6 +4527,8 @@ from mypy_boto3_ec2.literals import KeyPairExistsWaiterName
 Values:
 
 - `key_pair_exists`
+
+<a id="keytypetype"></a>
 
 ## KeyTypeType
 
@@ -3990,6 +4540,8 @@ Values:
 
 - `ed25519`
 - `rsa`
+
+<a id="launchtemplateerrorcodetype"></a>
 
 ## LaunchTemplateErrorCodeType
 
@@ -4006,6 +4558,8 @@ Values:
 - `launchTemplateVersionDoesNotExist`
 - `unexpectedError`
 
+<a id="launchtemplatehttptokensstatetype"></a>
+
 ## LaunchTemplateHttpTokensStateType
 
 ```python
@@ -4016,6 +4570,8 @@ Values:
 
 - `optional`
 - `required`
+
+<a id="launchtemplateinstancemetadataendpointstatetype"></a>
 
 ## LaunchTemplateInstanceMetadataEndpointStateType
 
@@ -4028,6 +4584,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="launchtemplateinstancemetadataoptionsstatetype"></a>
+
 ## LaunchTemplateInstanceMetadataOptionsStateType
 
 ```python
@@ -4038,6 +4596,8 @@ Values:
 
 - `applied`
 - `pending`
+
+<a id="launchtemplateinstancemetadataprotocolipv6type"></a>
 
 ## LaunchTemplateInstanceMetadataProtocolIpv6Type
 
@@ -4050,6 +4610,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="launchtemplateinstancemetadatatagsstatetype"></a>
+
 ## LaunchTemplateInstanceMetadataTagsStateType
 
 ```python
@@ -4061,6 +4623,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="listimagesinrecyclebinpaginatorname"></a>
+
 ## ListImagesInRecycleBinPaginatorName
 
 ```python
@@ -4071,6 +4635,8 @@ Values:
 
 - `list_images_in_recycle_bin`
 
+<a id="listsnapshotsinrecyclebinpaginatorname"></a>
+
 ## ListSnapshotsInRecycleBinPaginatorName
 
 ```python
@@ -4080,6 +4646,8 @@ from mypy_boto3_ec2.literals import ListSnapshotsInRecycleBinPaginatorName
 Values:
 
 - `list_snapshots_in_recycle_bin`
+
+<a id="listingstatetype"></a>
 
 ## ListingStateType
 
@@ -4094,6 +4662,8 @@ Values:
 - `pending`
 - `sold`
 
+<a id="listingstatustype"></a>
+
 ## ListingStatusType
 
 ```python
@@ -4106,6 +4676,8 @@ Values:
 - `cancelled`
 - `closed`
 - `pending`
+
+<a id="localgatewayroutestatetype"></a>
 
 ## LocalGatewayRouteStateType
 
@@ -4121,6 +4693,8 @@ Values:
 - `deleting`
 - `pending`
 
+<a id="localgatewayroutetypetype"></a>
+
 ## LocalGatewayRouteTypeType
 
 ```python
@@ -4131,6 +4705,8 @@ Values:
 
 - `propagated`
 - `static`
+
+<a id="localstoragetype"></a>
 
 ## LocalStorageType
 
@@ -4144,6 +4720,8 @@ Values:
 - `included`
 - `required`
 
+<a id="localstoragetypetype"></a>
+
 ## LocalStorageTypeType
 
 ```python
@@ -4154,6 +4732,8 @@ Values:
 
 - `hdd`
 - `ssd`
+
+<a id="locationtypetype"></a>
 
 ## LocationTypeType
 
@@ -4167,6 +4747,8 @@ Values:
 - `availability-zone-id`
 - `region`
 
+<a id="logdestinationtypetype"></a>
+
 ## LogDestinationTypeType
 
 ```python
@@ -4178,6 +4760,8 @@ Values:
 - `cloud-watch-logs`
 - `s3`
 
+<a id="markettypetype"></a>
+
 ## MarketTypeType
 
 ```python
@@ -4187,6 +4771,8 @@ from mypy_boto3_ec2.literals import MarketTypeType
 Values:
 
 - `spot`
+
+<a id="membershiptypetype"></a>
 
 ## MembershipTypeType
 
@@ -4199,6 +4785,8 @@ Values:
 - `igmp`
 - `static`
 
+<a id="modifyavailabilityzoneoptinstatustype"></a>
+
 ## ModifyAvailabilityZoneOptInStatusType
 
 ```python
@@ -4209,6 +4797,8 @@ Values:
 
 - `not-opted-in`
 - `opted-in`
+
+<a id="monitoringstatetype"></a>
 
 ## MonitoringStateType
 
@@ -4223,6 +4813,8 @@ Values:
 - `enabled`
 - `pending`
 
+<a id="movestatustype"></a>
+
 ## MoveStatusType
 
 ```python
@@ -4233,6 +4825,8 @@ Values:
 
 - `movingToVpc`
 - `restoringToClassic`
+
+<a id="multicastsupportvaluetype"></a>
 
 ## MulticastSupportValueType
 
@@ -4245,6 +4839,8 @@ Values:
 - `disable`
 - `enable`
 
+<a id="natgatewayavailablewaitername"></a>
+
 ## NatGatewayAvailableWaiterName
 
 ```python
@@ -4254,6 +4850,8 @@ from mypy_boto3_ec2.literals import NatGatewayAvailableWaiterName
 Values:
 
 - `nat_gateway_available`
+
+<a id="natgatewaystatetype"></a>
 
 ## NatGatewayStateType
 
@@ -4269,6 +4867,8 @@ Values:
 - `failed`
 - `pending`
 
+<a id="networkinterfaceattributetype"></a>
+
 ## NetworkInterfaceAttributeType
 
 ```python
@@ -4282,6 +4882,8 @@ Values:
 - `groupSet`
 - `sourceDestCheck`
 
+<a id="networkinterfaceavailablewaitername"></a>
+
 ## NetworkInterfaceAvailableWaiterName
 
 ```python
@@ -4291,6 +4893,8 @@ from mypy_boto3_ec2.literals import NetworkInterfaceAvailableWaiterName
 Values:
 
 - `network_interface_available`
+
+<a id="networkinterfacecreationtypetype"></a>
 
 ## NetworkInterfaceCreationTypeType
 
@@ -4304,6 +4908,8 @@ Values:
 - `efa`
 - `trunk`
 
+<a id="networkinterfacepermissionstatecodetype"></a>
+
 ## NetworkInterfacePermissionStateCodeType
 
 ```python
@@ -4316,6 +4922,8 @@ Values:
 - `pending`
 - `revoked`
 - `revoking`
+
+<a id="networkinterfacestatustype"></a>
 
 ## NetworkInterfaceStatusType
 
@@ -4331,6 +4939,8 @@ Values:
 - `detaching`
 - `in-use`
 
+<a id="networkinterfacetypetype"></a>
+
 ## NetworkInterfaceTypeType
 
 ```python
@@ -4344,6 +4954,8 @@ Values:
 - `natGateway`
 - `trunk`
 
+<a id="offeringclasstypetype"></a>
+
 ## OfferingClassTypeType
 
 ```python
@@ -4354,6 +4966,8 @@ Values:
 
 - `convertible`
 - `standard`
+
+<a id="offeringtypevaluestype"></a>
 
 ## OfferingTypeValuesType
 
@@ -4370,6 +4984,8 @@ Values:
 - `No Upfront`
 - `Partial Upfront`
 
+<a id="ondemandallocationstrategytype"></a>
+
 ## OnDemandAllocationStrategyType
 
 ```python
@@ -4381,6 +4997,8 @@ Values:
 - `lowestPrice`
 - `prioritized`
 
+<a id="operationtypetype"></a>
+
 ## OperationTypeType
 
 ```python
@@ -4391,6 +5009,8 @@ Values:
 
 - `add`
 - `remove`
+
+<a id="partitionloadfrequencytype"></a>
 
 ## PartitionLoadFrequencyType
 
@@ -4405,6 +5025,8 @@ Values:
 - `none`
 - `weekly`
 
+<a id="passworddataavailablewaitername"></a>
+
 ## PasswordDataAvailableWaiterName
 
 ```python
@@ -4415,6 +5037,8 @@ Values:
 
 - `password_data_available`
 
+<a id="payerresponsibilitytype"></a>
+
 ## PayerResponsibilityType
 
 ```python
@@ -4424,6 +5048,8 @@ from mypy_boto3_ec2.literals import PayerResponsibilityType
 Values:
 
 - `ServiceOwner`
+
+<a id="paymentoptiontype"></a>
 
 ## PaymentOptionType
 
@@ -4437,6 +5063,8 @@ Values:
 - `NoUpfront`
 - `PartialUpfront`
 
+<a id="permissiongrouptype"></a>
+
 ## PermissionGroupType
 
 ```python
@@ -4446,6 +5074,8 @@ from mypy_boto3_ec2.literals import PermissionGroupType
 Values:
 
 - `all`
+
+<a id="placementgroupstatetype"></a>
 
 ## PlacementGroupStateType
 
@@ -4460,6 +5090,8 @@ Values:
 - `deleting`
 - `pending`
 
+<a id="placementgroupstrategytype"></a>
+
 ## PlacementGroupStrategyType
 
 ```python
@@ -4471,6 +5103,8 @@ Values:
 - `cluster`
 - `partition`
 - `spread`
+
+<a id="placementstrategytype"></a>
 
 ## PlacementStrategyType
 
@@ -4484,6 +5118,8 @@ Values:
 - `partition`
 - `spread`
 
+<a id="platformvaluestype"></a>
+
 ## PlatformValuesType
 
 ```python
@@ -4493,6 +5129,8 @@ from mypy_boto3_ec2.literals import PlatformValuesType
 Values:
 
 - `Windows`
+
+<a id="prefixliststatetype"></a>
 
 ## PrefixListStateType
 
@@ -4515,6 +5153,8 @@ Values:
 - `restore-failed`
 - `restore-in-progress`
 
+<a id="principaltypetype"></a>
+
 ## PrincipalTypeType
 
 ```python
@@ -4530,6 +5170,8 @@ Values:
 - `Service`
 - `User`
 
+<a id="productcodevaluestype"></a>
+
 ## ProductCodeValuesType
 
 ```python
@@ -4540,6 +5182,8 @@ Values:
 
 - `devpay`
 - `marketplace`
+
+<a id="protocoltype"></a>
 
 ## ProtocolType
 
@@ -4552,6 +5196,8 @@ Values:
 - `tcp`
 - `udp`
 
+<a id="protocolvaluetype"></a>
+
 ## ProtocolValueType
 
 ```python
@@ -4561,6 +5207,8 @@ from mypy_boto3_ec2.literals import ProtocolValueType
 Values:
 
 - `gre`
+
+<a id="riproductdescriptiontype"></a>
 
 ## RIProductDescriptionType
 
@@ -4575,6 +5223,8 @@ Values:
 - `Windows`
 - `Windows (Amazon VPC)`
 
+<a id="recurringchargefrequencytype"></a>
+
 ## RecurringChargeFrequencyType
 
 ```python
@@ -4584,6 +5234,8 @@ from mypy_boto3_ec2.literals import RecurringChargeFrequencyType
 Values:
 
 - `Hourly`
+
+<a id="replacerootvolumetaskstatetype"></a>
 
 ## ReplaceRootVolumeTaskStateType
 
@@ -4600,6 +5252,8 @@ Values:
 - `pending`
 - `succeeded`
 
+<a id="replacementstrategytype"></a>
+
 ## ReplacementStrategyType
 
 ```python
@@ -4610,6 +5264,8 @@ Values:
 
 - `launch`
 - `launch-before-terminate`
+
+<a id="reportinstancereasoncodestype"></a>
 
 ## ReportInstanceReasonCodesType
 
@@ -4629,6 +5285,8 @@ Values:
 - `performance-other`
 - `unresponsive`
 
+<a id="reportstatustypetype"></a>
+
 ## ReportStatusTypeType
 
 ```python
@@ -4639,6 +5297,8 @@ Values:
 
 - `impaired`
 - `ok`
+
+<a id="reservationstatetype"></a>
 
 ## ReservationStateType
 
@@ -4652,6 +5312,8 @@ Values:
 - `payment-failed`
 - `payment-pending`
 - `retired`
+
+<a id="reservedinstancestatetype"></a>
 
 ## ReservedInstanceStateType
 
@@ -4668,6 +5330,8 @@ Values:
 - `queued-deleted`
 - `retired`
 
+<a id="resetfpgaimageattributenametype"></a>
+
 ## ResetFpgaImageAttributeNameType
 
 ```python
@@ -4678,6 +5342,8 @@ Values:
 
 - `loadPermission`
 
+<a id="resetimageattributenametype"></a>
+
 ## ResetImageAttributeNameType
 
 ```python
@@ -4687,6 +5353,8 @@ from mypy_boto3_ec2.literals import ResetImageAttributeNameType
 Values:
 
 - `launchPermission`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -4764,6 +5432,8 @@ Values:
 - `vpn-connection`
 - `vpn-gateway`
 
+<a id="rootdevicetypetype"></a>
+
 ## RootDeviceTypeType
 
 ```python
@@ -4774,6 +5444,8 @@ Values:
 
 - `ebs`
 - `instance-store`
+
+<a id="routeorigintype"></a>
 
 ## RouteOriginType
 
@@ -4787,6 +5459,8 @@ Values:
 - `CreateRouteTable`
 - `EnableVgwRoutePropagation`
 
+<a id="routestatetype"></a>
+
 ## RouteStateType
 
 ```python
@@ -4797,6 +5471,8 @@ Values:
 
 - `active`
 - `blackhole`
+
+<a id="routetableassociationstatecodetype"></a>
 
 ## RouteTableAssociationStateCodeType
 
@@ -4812,6 +5488,8 @@ Values:
 - `disassociating`
 - `failed`
 
+<a id="ruleactiontype"></a>
+
 ## RuleActionType
 
 ```python
@@ -4823,6 +5501,8 @@ Values:
 - `allow`
 - `deny`
 
+<a id="searchlocalgatewayroutespaginatorname"></a>
+
 ## SearchLocalGatewayRoutesPaginatorName
 
 ```python
@@ -4832,6 +5512,8 @@ from mypy_boto3_ec2.literals import SearchLocalGatewayRoutesPaginatorName
 Values:
 
 - `search_local_gateway_routes`
+
+<a id="searchtransitgatewaymulticastgroupspaginatorname"></a>
 
 ## SearchTransitGatewayMulticastGroupsPaginatorName
 
@@ -4843,6 +5525,8 @@ Values:
 
 - `search_transit_gateway_multicast_groups`
 
+<a id="securitygroupexistswaitername"></a>
+
 ## SecurityGroupExistsWaiterName
 
 ```python
@@ -4852,6 +5536,8 @@ from mypy_boto3_ec2.literals import SecurityGroupExistsWaiterName
 Values:
 
 - `security_group_exists`
+
+<a id="selfserviceportaltype"></a>
 
 ## SelfServicePortalType
 
@@ -4863,6 +5549,8 @@ Values:
 
 - `disabled`
 - `enabled`
+
+<a id="servicestatetype"></a>
 
 ## ServiceStateType
 
@@ -4878,6 +5566,8 @@ Values:
 - `Failed`
 - `Pending`
 
+<a id="servicetypetype"></a>
+
 ## ServiceTypeType
 
 ```python
@@ -4890,6 +5580,8 @@ Values:
 - `GatewayLoadBalancer`
 - `Interface`
 
+<a id="shutdownbehaviortype"></a>
+
 ## ShutdownBehaviorType
 
 ```python
@@ -4900,6 +5592,8 @@ Values:
 
 - `stop`
 - `terminate`
+
+<a id="snapshotattributenametype"></a>
 
 ## SnapshotAttributeNameType
 
@@ -4912,6 +5606,8 @@ Values:
 - `createVolumePermission`
 - `productCodes`
 
+<a id="snapshotcompletedwaitername"></a>
+
 ## SnapshotCompletedWaiterName
 
 ```python
@@ -4921,6 +5617,8 @@ from mypy_boto3_ec2.literals import SnapshotCompletedWaiterName
 Values:
 
 - `snapshot_completed`
+
+<a id="snapshotstatetype"></a>
 
 ## SnapshotStateType
 
@@ -4936,6 +5634,8 @@ Values:
 - `recoverable`
 - `recovering`
 
+<a id="spotallocationstrategytype"></a>
+
 ## SpotAllocationStrategyType
 
 ```python
@@ -4949,6 +5649,8 @@ Values:
 - `diversified`
 - `lowest-price`
 
+<a id="spotinstanceinterruptionbehaviortype"></a>
+
 ## SpotInstanceInterruptionBehaviorType
 
 ```python
@@ -4961,6 +5663,8 @@ Values:
 - `stop`
 - `terminate`
 
+<a id="spotinstancerequestfulfilledwaitername"></a>
+
 ## SpotInstanceRequestFulfilledWaiterName
 
 ```python
@@ -4970,6 +5674,8 @@ from mypy_boto3_ec2.literals import SpotInstanceRequestFulfilledWaiterName
 Values:
 
 - `spot_instance_request_fulfilled`
+
+<a id="spotinstancestatetype"></a>
 
 ## SpotInstanceStateType
 
@@ -4985,6 +5691,8 @@ Values:
 - `failed`
 - `open`
 
+<a id="spotinstancetypetype"></a>
+
 ## SpotInstanceTypeType
 
 ```python
@@ -4995,6 +5703,8 @@ Values:
 
 - `one-time`
 - `persistent`
+
+<a id="statetype"></a>
 
 ## StateType
 
@@ -5013,6 +5723,8 @@ Values:
 - `PendingAcceptance`
 - `Rejected`
 
+<a id="staticsourcessupportvaluetype"></a>
+
 ## StaticSourcesSupportValueType
 
 ```python
@@ -5024,6 +5736,8 @@ Values:
 - `disable`
 - `enable`
 
+<a id="statusnametype"></a>
+
 ## StatusNameType
 
 ```python
@@ -5033,6 +5747,8 @@ from mypy_boto3_ec2.literals import StatusNameType
 Values:
 
 - `reachability`
+
+<a id="statustype"></a>
 
 ## StatusType
 
@@ -5045,6 +5761,8 @@ Values:
 - `InClassic`
 - `InVpc`
 - `MoveInProgress`
+
+<a id="statustypetype"></a>
 
 ## StatusTypeType
 
@@ -5059,6 +5777,8 @@ Values:
 - `insufficient-data`
 - `passed`
 
+<a id="storagetiertype"></a>
+
 ## StorageTierType
 
 ```python
@@ -5070,6 +5790,8 @@ Values:
 - `archive`
 - `standard`
 
+<a id="subnetavailablewaitername"></a>
+
 ## SubnetAvailableWaiterName
 
 ```python
@@ -5079,6 +5801,8 @@ from mypy_boto3_ec2.literals import SubnetAvailableWaiterName
 Values:
 
 - `subnet_available`
+
+<a id="subnetcidrblockstatecodetype"></a>
 
 ## SubnetCidrBlockStateCodeType
 
@@ -5095,6 +5819,8 @@ Values:
 - `failed`
 - `failing`
 
+<a id="subnetcidrreservationtypetype"></a>
+
 ## SubnetCidrReservationTypeType
 
 ```python
@@ -5106,6 +5832,8 @@ Values:
 - `explicit`
 - `prefix`
 
+<a id="subnetstatetype"></a>
+
 ## SubnetStateType
 
 ```python
@@ -5116,6 +5844,8 @@ Values:
 
 - `available`
 - `pending`
+
+<a id="summarystatustype"></a>
 
 ## SummaryStatusType
 
@@ -5131,6 +5861,8 @@ Values:
 - `not-applicable`
 - `ok`
 
+<a id="systemstatusokwaitername"></a>
+
 ## SystemStatusOkWaiterName
 
 ```python
@@ -5140,6 +5872,8 @@ from mypy_boto3_ec2.literals import SystemStatusOkWaiterName
 Values:
 
 - `system_status_ok`
+
+<a id="targetcapacityunittypetype"></a>
 
 ## TargetCapacityUnitTypeType
 
@@ -5153,6 +5887,8 @@ Values:
 - `units`
 - `vcpu`
 
+<a id="targetstoragetiertype"></a>
+
 ## TargetStorageTierType
 
 ```python
@@ -5162,6 +5898,8 @@ from mypy_boto3_ec2.literals import TargetStorageTierType
 Values:
 
 - `archive`
+
+<a id="telemetrystatustype"></a>
 
 ## TelemetryStatusType
 
@@ -5174,6 +5912,8 @@ Values:
 - `DOWN`
 - `UP`
 
+<a id="tenancytype"></a>
+
 ## TenancyType
 
 ```python
@@ -5185,6 +5925,8 @@ Values:
 - `dedicated`
 - `default`
 - `host`
+
+<a id="tieringoperationstatustype"></a>
 
 ## TieringOperationStatusType
 
@@ -5204,6 +5946,8 @@ Values:
 - `temporary-restore-failed`
 - `temporary-restore-in-progress`
 
+<a id="trafficdirectiontype"></a>
+
 ## TrafficDirectionType
 
 ```python
@@ -5214,6 +5958,8 @@ Values:
 
 - `egress`
 - `ingress`
+
+<a id="trafficmirrorfilterrulefieldtype"></a>
 
 ## TrafficMirrorFilterRuleFieldType
 
@@ -5228,6 +5974,8 @@ Values:
 - `protocol`
 - `source-port-range`
 
+<a id="trafficmirrornetworkservicetype"></a>
+
 ## TrafficMirrorNetworkServiceType
 
 ```python
@@ -5237,6 +5985,8 @@ from mypy_boto3_ec2.literals import TrafficMirrorNetworkServiceType
 Values:
 
 - `amazon-dns`
+
+<a id="trafficmirrorruleactiontype"></a>
 
 ## TrafficMirrorRuleActionType
 
@@ -5248,6 +5998,8 @@ Values:
 
 - `accept`
 - `reject`
+
+<a id="trafficmirrorsessionfieldtype"></a>
 
 ## TrafficMirrorSessionFieldType
 
@@ -5261,6 +6013,8 @@ Values:
 - `packet-length`
 - `virtual-network-id`
 
+<a id="trafficmirrortargettypetype"></a>
+
 ## TrafficMirrorTargetTypeType
 
 ```python
@@ -5271,6 +6025,8 @@ Values:
 
 - `network-interface`
 - `network-load-balancer`
+
+<a id="traffictypetype"></a>
 
 ## TrafficTypeType
 
@@ -5284,6 +6040,8 @@ Values:
 - `ALL`
 - `REJECT`
 
+<a id="transitgatewayassociationstatetype"></a>
+
 ## TransitGatewayAssociationStateType
 
 ```python
@@ -5296,6 +6054,8 @@ Values:
 - `associating`
 - `disassociated`
 - `disassociating`
+
+<a id="transitgatewayattachmentresourcetypetype"></a>
 
 ## TransitGatewayAttachmentResourceTypeType
 
@@ -5311,6 +6071,8 @@ Values:
 - `tgw-peering`
 - `vpc`
 - `vpn`
+
+<a id="transitgatewayattachmentstatetype"></a>
 
 ## TransitGatewayAttachmentStateType
 
@@ -5334,6 +6096,8 @@ Values:
 - `rejecting`
 - `rollingBack`
 
+<a id="transitgatewayconnectpeerstatetype"></a>
+
 ## TransitGatewayConnectPeerStateType
 
 ```python
@@ -5346,6 +6110,8 @@ Values:
 - `deleted`
 - `deleting`
 - `pending`
+
+<a id="transitgatewaymulitcastdomainassociationstatetype"></a>
 
 ## TransitGatewayMulitcastDomainAssociationStateType
 
@@ -5363,6 +6129,8 @@ Values:
 - `pendingAcceptance`
 - `rejected`
 
+<a id="transitgatewaymulticastdomainstatetype"></a>
+
 ## TransitGatewayMulticastDomainStateType
 
 ```python
@@ -5375,6 +6143,8 @@ Values:
 - `deleted`
 - `deleting`
 - `pending`
+
+<a id="transitgatewayprefixlistreferencestatetype"></a>
 
 ## TransitGatewayPrefixListReferenceStateType
 
@@ -5389,6 +6159,8 @@ Values:
 - `modifying`
 - `pending`
 
+<a id="transitgatewaypropagationstatetype"></a>
+
 ## TransitGatewayPropagationStateType
 
 ```python
@@ -5401,6 +6173,8 @@ Values:
 - `disabling`
 - `enabled`
 - `enabling`
+
+<a id="transitgatewayroutestatetype"></a>
 
 ## TransitGatewayRouteStateType
 
@@ -5416,6 +6190,8 @@ Values:
 - `deleting`
 - `pending`
 
+<a id="transitgatewayroutetablestatetype"></a>
+
 ## TransitGatewayRouteTableStateType
 
 ```python
@@ -5429,6 +6205,8 @@ Values:
 - `deleting`
 - `pending`
 
+<a id="transitgatewayroutetypetype"></a>
+
 ## TransitGatewayRouteTypeType
 
 ```python
@@ -5439,6 +6217,8 @@ Values:
 
 - `propagated`
 - `static`
+
+<a id="transitgatewaystatetype"></a>
 
 ## TransitGatewayStateType
 
@@ -5454,6 +6234,8 @@ Values:
 - `modifying`
 - `pending`
 
+<a id="transportprotocoltype"></a>
+
 ## TransportProtocolType
 
 ```python
@@ -5465,6 +6247,8 @@ Values:
 - `tcp`
 - `udp`
 
+<a id="tunnelinsideipversiontype"></a>
+
 ## TunnelInsideIpVersionType
 
 ```python
@@ -5475,6 +6259,8 @@ Values:
 
 - `ipv4`
 - `ipv6`
+
+<a id="unlimitedsupportedinstancefamilytype"></a>
 
 ## UnlimitedSupportedInstanceFamilyType
 
@@ -5489,6 +6275,8 @@ Values:
 - `t3a`
 - `t4g`
 
+<a id="unsuccessfulinstancecreditspecificationerrorcodetype"></a>
+
 ## UnsuccessfulInstanceCreditSpecificationErrorCodeType
 
 ```python
@@ -5502,6 +6290,8 @@ Values:
 - `InvalidInstanceID.Malformed`
 - `InvalidInstanceID.NotFound`
 
+<a id="usageclasstypetype"></a>
+
 ## UsageClassTypeType
 
 ```python
@@ -5513,6 +6303,8 @@ Values:
 - `on-demand`
 - `spot`
 
+<a id="virtualizationtypetype"></a>
+
 ## VirtualizationTypeType
 
 ```python
@@ -5523,6 +6315,8 @@ Values:
 
 - `hvm`
 - `paravirtual`
+
+<a id="volumeattachmentstatetype"></a>
 
 ## VolumeAttachmentStateType
 
@@ -5538,6 +6332,8 @@ Values:
 - `detached`
 - `detaching`
 
+<a id="volumeattributenametype"></a>
+
 ## VolumeAttributeNameType
 
 ```python
@@ -5549,6 +6345,8 @@ Values:
 - `autoEnableIO`
 - `productCodes`
 
+<a id="volumeavailablewaitername"></a>
+
 ## VolumeAvailableWaiterName
 
 ```python
@@ -5558,6 +6356,8 @@ from mypy_boto3_ec2.literals import VolumeAvailableWaiterName
 Values:
 
 - `volume_available`
+
+<a id="volumedeletedwaitername"></a>
 
 ## VolumeDeletedWaiterName
 
@@ -5569,6 +6369,8 @@ Values:
 
 - `volume_deleted`
 
+<a id="volumeinusewaitername"></a>
+
 ## VolumeInUseWaiterName
 
 ```python
@@ -5578,6 +6380,8 @@ from mypy_boto3_ec2.literals import VolumeInUseWaiterName
 Values:
 
 - `volume_in_use`
+
+<a id="volumemodificationstatetype"></a>
 
 ## VolumeModificationStateType
 
@@ -5591,6 +6395,8 @@ Values:
 - `failed`
 - `modifying`
 - `optimizing`
+
+<a id="volumestatetype"></a>
 
 ## VolumeStateType
 
@@ -5607,6 +6413,8 @@ Values:
 - `error`
 - `in-use`
 
+<a id="volumestatusinfostatustype"></a>
+
 ## VolumeStatusInfoStatusType
 
 ```python
@@ -5619,6 +6427,8 @@ Values:
 - `insufficient-data`
 - `ok`
 
+<a id="volumestatusnametype"></a>
+
 ## VolumeStatusNameType
 
 ```python
@@ -5629,6 +6439,8 @@ Values:
 
 - `io-enabled`
 - `io-performance`
+
+<a id="volumetypetype"></a>
 
 ## VolumeTypeType
 
@@ -5646,6 +6458,8 @@ Values:
 - `st1`
 - `standard`
 
+<a id="vpcattributenametype"></a>
+
 ## VpcAttributeNameType
 
 ```python
@@ -5657,6 +6471,8 @@ Values:
 - `enableDnsHostnames`
 - `enableDnsSupport`
 
+<a id="vpcavailablewaitername"></a>
+
 ## VpcAvailableWaiterName
 
 ```python
@@ -5666,6 +6482,8 @@ from mypy_boto3_ec2.literals import VpcAvailableWaiterName
 Values:
 
 - `vpc_available`
+
+<a id="vpccidrblockstatecodetype"></a>
 
 ## VpcCidrBlockStateCodeType
 
@@ -5682,6 +6500,8 @@ Values:
 - `failed`
 - `failing`
 
+<a id="vpcendpointtypetype"></a>
+
 ## VpcEndpointTypeType
 
 ```python
@@ -5694,6 +6514,8 @@ Values:
 - `GatewayLoadBalancer`
 - `Interface`
 
+<a id="vpcexistswaitername"></a>
+
 ## VpcExistsWaiterName
 
 ```python
@@ -5703,6 +6525,8 @@ from mypy_boto3_ec2.literals import VpcExistsWaiterName
 Values:
 
 - `vpc_exists`
+
+<a id="vpcpeeringconnectiondeletedwaitername"></a>
 
 ## VpcPeeringConnectionDeletedWaiterName
 
@@ -5714,6 +6538,8 @@ Values:
 
 - `vpc_peering_connection_deleted`
 
+<a id="vpcpeeringconnectionexistswaitername"></a>
+
 ## VpcPeeringConnectionExistsWaiterName
 
 ```python
@@ -5723,6 +6549,8 @@ from mypy_boto3_ec2.literals import VpcPeeringConnectionExistsWaiterName
 Values:
 
 - `vpc_peering_connection_exists`
+
+<a id="vpcpeeringconnectionstatereasoncodetype"></a>
 
 ## VpcPeeringConnectionStateReasonCodeType
 
@@ -5742,6 +6570,8 @@ Values:
 - `provisioning`
 - `rejected`
 
+<a id="vpcstatetype"></a>
+
 ## VpcStateType
 
 ```python
@@ -5753,6 +6583,8 @@ Values:
 - `available`
 - `pending`
 
+<a id="vpctenancytype"></a>
+
 ## VpcTenancyType
 
 ```python
@@ -5762,6 +6594,8 @@ from mypy_boto3_ec2.literals import VpcTenancyType
 Values:
 
 - `default`
+
+<a id="vpnconnectionavailablewaitername"></a>
 
 ## VpnConnectionAvailableWaiterName
 
@@ -5773,6 +6607,8 @@ Values:
 
 - `vpn_connection_available`
 
+<a id="vpnconnectiondeletedwaitername"></a>
+
 ## VpnConnectionDeletedWaiterName
 
 ```python
@@ -5782,6 +6618,8 @@ from mypy_boto3_ec2.literals import VpnConnectionDeletedWaiterName
 Values:
 
 - `vpn_connection_deleted`
+
+<a id="vpnecmpsupportvaluetype"></a>
 
 ## VpnEcmpSupportValueType
 
@@ -5794,6 +6632,8 @@ Values:
 - `disable`
 - `enable`
 
+<a id="vpnprotocoltype"></a>
+
 ## VpnProtocolType
 
 ```python
@@ -5803,6 +6643,8 @@ from mypy_boto3_ec2.literals import VpnProtocolType
 Values:
 
 - `openvpn`
+
+<a id="vpnstatetype"></a>
 
 ## VpnStateType
 
@@ -5817,6 +6659,8 @@ Values:
 - `deleting`
 - `pending`
 
+<a id="vpnstaticroutesourcetype"></a>
+
 ## VpnStaticRouteSourceType
 
 ```python
@@ -5826,6 +6670,8 @@ from mypy_boto3_ec2.literals import VpnStaticRouteSourceType
 Values:
 
 - `Static`
+
+<a id="weekdaytype"></a>
 
 ## WeekDayType
 
@@ -5843,6 +6689,8 @@ Values:
 - `tuesday`
 - `wednesday`
 
+<a id="scopetype"></a>
+
 ## scopeType
 
 ```python
@@ -5853,6 +6701,8 @@ Values:
 
 - `Availability Zone`
 - `Region`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -6162,6 +7012,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -6290,6 +7142,8 @@ Values:
 - `list_snapshots_in_recycle_bin`
 - `search_local_gateway_routes`
 - `search_transit_gateway_multicast_groups`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-lookoutequipment-module"></a>
+
 # Typed dictionaries for boto3 LookoutEquipment module
 
 > [Index](..) > [LookoutEquipment](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
 type annotations stubs module
-[mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
+[mypy-boto3-lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
 - [Typed dictionaries for boto3 LookoutEquipment module](#typed-dictionaries-for-boto3-lookoutequipment-module)
   - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
@@ -66,6 +68,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateInferenceSchedulerRequestRequestTypeDef](#updateinferenceschedulerrequestrequesttypedef)
 
+<a id="createdatasetrequestrequesttypedef"></a>
+
 ## CreateDatasetRequestRequestTypeDef
 
 ```python
@@ -83,6 +87,8 @@ Optional fields:
 - `ServerSideKmsKeyId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdatasetresponsetypedef"></a>
+
 ## CreateDatasetResponseTypeDef
 
 ```python
@@ -96,6 +102,8 @@ Required fields:
 - `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createinferenceschedulerrequestrequesttypedef"></a>
 
 ## CreateInferenceSchedulerRequestRequestTypeDef
 
@@ -122,6 +130,8 @@ Optional fields:
 - `ServerSideKmsKeyId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createinferenceschedulerresponsetypedef"></a>
+
 ## CreateInferenceSchedulerResponseTypeDef
 
 ```python
@@ -136,6 +146,8 @@ Required fields:
   [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmodelrequestrequesttypedef"></a>
 
 ## CreateModelRequestRequestTypeDef
 
@@ -165,6 +177,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OffCondition`: `str`
 
+<a id="createmodelresponsetypedef"></a>
+
 ## CreateModelResponseTypeDef
 
 ```python
@@ -177,6 +191,8 @@ Required fields:
 - `Status`: [ModelStatusType](./literals.md#modelstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dataingestionjobsummarytypedef"></a>
 
 ## DataIngestionJobSummaryTypeDef
 
@@ -193,6 +209,8 @@ Optional fields:
   [IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef)
 - `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
 
+<a id="datapreprocessingconfigurationtypedef"></a>
+
 ## DataPreProcessingConfigurationTypeDef
 
 ```python
@@ -204,6 +222,8 @@ Optional fields:
 - `TargetSamplingRate`:
   [TargetSamplingRateType](./literals.md#targetsamplingratetype)
 
+<a id="datasetschematypedef"></a>
+
 ## DatasetSchemaTypeDef
 
 ```python
@@ -213,6 +233,8 @@ from mypy_boto3_lookoutequipment.type_defs import DatasetSchemaTypeDef
 Optional fields:
 
 - `InlineDataSchema`: `str`
+
+<a id="datasetsummarytypedef"></a>
 
 ## DatasetSummaryTypeDef
 
@@ -227,6 +249,8 @@ Optional fields:
 - `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
 - `CreatedAt`: `datetime`
 
+<a id="deletedatasetrequestrequesttypedef"></a>
+
 ## DeleteDatasetRequestRequestTypeDef
 
 ```python
@@ -236,6 +260,8 @@ from mypy_boto3_lookoutequipment.type_defs import DeleteDatasetRequestRequestTyp
 Required fields:
 
 - `DatasetName`: `str`
+
+<a id="deleteinferenceschedulerrequestrequesttypedef"></a>
 
 ## DeleteInferenceSchedulerRequestRequestTypeDef
 
@@ -247,6 +273,8 @@ Required fields:
 
 - `InferenceSchedulerName`: `str`
 
+<a id="deletemodelrequestrequesttypedef"></a>
+
 ## DeleteModelRequestRequestTypeDef
 
 ```python
@@ -257,6 +285,8 @@ Required fields:
 
 - `ModelName`: `str`
 
+<a id="describedataingestionjobrequestrequesttypedef"></a>
+
 ## DescribeDataIngestionJobRequestRequestTypeDef
 
 ```python
@@ -266,6 +296,8 @@ from mypy_boto3_lookoutequipment.type_defs import DescribeDataIngestionJobReques
 Required fields:
 
 - `JobId`: `str`
+
+<a id="describedataingestionjobresponsetypedef"></a>
 
 ## DescribeDataIngestionJobResponseTypeDef
 
@@ -286,6 +318,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetrequestrequesttypedef"></a>
+
 ## DescribeDatasetRequestRequestTypeDef
 
 ```python
@@ -295,6 +329,8 @@ from mypy_boto3_lookoutequipment.type_defs import DescribeDatasetRequestRequestT
 Required fields:
 
 - `DatasetName`: `str`
+
+<a id="describedatasetresponsetypedef"></a>
 
 ## DescribeDatasetResponseTypeDef
 
@@ -316,6 +352,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeinferenceschedulerrequestrequesttypedef"></a>
+
 ## DescribeInferenceSchedulerRequestRequestTypeDef
 
 ```python
@@ -325,6 +363,8 @@ from mypy_boto3_lookoutequipment.type_defs import DescribeInferenceSchedulerRequ
 Required fields:
 
 - `InferenceSchedulerName`: `str`
+
+<a id="describeinferenceschedulerresponsetypedef"></a>
 
 ## DescribeInferenceSchedulerResponseTypeDef
 
@@ -354,6 +394,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemodelrequestrequesttypedef"></a>
+
 ## DescribeModelRequestRequestTypeDef
 
 ```python
@@ -363,6 +405,8 @@ from mypy_boto3_lookoutequipment.type_defs import DescribeModelRequestRequestTyp
 Required fields:
 
 - `ModelName`: `str`
+
+<a id="describemodelresponsetypedef"></a>
 
 ## DescribeModelResponseTypeDef
 
@@ -398,6 +442,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="inferenceexecutionsummarytypedef"></a>
+
 ## InferenceExecutionSummaryTypeDef
 
 ```python
@@ -422,6 +468,8 @@ Optional fields:
   [InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype)
 - `FailedReason`: `str`
 
+<a id="inferenceinputconfigurationtypedef"></a>
+
 ## InferenceInputConfigurationTypeDef
 
 ```python
@@ -436,6 +484,8 @@ Optional fields:
 - `InferenceInputNameConfiguration`:
   [InferenceInputNameConfigurationTypeDef](./type_defs.md#inferenceinputnameconfigurationtypedef)
 
+<a id="inferenceinputnameconfigurationtypedef"></a>
+
 ## InferenceInputNameConfigurationTypeDef
 
 ```python
@@ -446,6 +496,8 @@ Optional fields:
 
 - `TimestampFormat`: `str`
 - `ComponentTimestampDelimiter`: `str`
+
+<a id="inferenceoutputconfigurationtypedef"></a>
 
 ## InferenceOutputConfigurationTypeDef
 
@@ -462,6 +514,8 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+<a id="inferences3inputconfigurationtypedef"></a>
+
 ## InferenceS3InputConfigurationTypeDef
 
 ```python
@@ -476,6 +530,8 @@ Optional fields:
 
 - `Prefix`: `str`
 
+<a id="inferences3outputconfigurationtypedef"></a>
+
 ## InferenceS3OutputConfigurationTypeDef
 
 ```python
@@ -489,6 +545,8 @@ Required fields:
 Optional fields:
 
 - `Prefix`: `str`
+
+<a id="inferenceschedulersummarytypedef"></a>
 
 ## InferenceSchedulerSummaryTypeDef
 
@@ -508,6 +566,8 @@ Optional fields:
 - `DataUploadFrequency`:
   [DataUploadFrequencyType](./literals.md#datauploadfrequencytype)
 
+<a id="ingestioninputconfigurationtypedef"></a>
+
 ## IngestionInputConfigurationTypeDef
 
 ```python
@@ -518,6 +578,8 @@ Required fields:
 
 - `S3InputConfiguration`:
   [IngestionS3InputConfigurationTypeDef](./type_defs.md#ingestions3inputconfigurationtypedef)
+
+<a id="ingestions3inputconfigurationtypedef"></a>
 
 ## IngestionS3InputConfigurationTypeDef
 
@@ -533,6 +595,8 @@ Optional fields:
 
 - `Prefix`: `str`
 
+<a id="labelsinputconfigurationtypedef"></a>
+
 ## LabelsInputConfigurationTypeDef
 
 ```python
@@ -543,6 +607,8 @@ Required fields:
 
 - `S3InputConfiguration`:
   [LabelsS3InputConfigurationTypeDef](./type_defs.md#labelss3inputconfigurationtypedef)
+
+<a id="labelss3inputconfigurationtypedef"></a>
 
 ## LabelsS3InputConfigurationTypeDef
 
@@ -558,6 +624,8 @@ Optional fields:
 
 - `Prefix`: `str`
 
+<a id="listdataingestionjobsrequestrequesttypedef"></a>
+
 ## ListDataIngestionJobsRequestRequestTypeDef
 
 ```python
@@ -570,6 +638,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
+
+<a id="listdataingestionjobsresponsetypedef"></a>
 
 ## ListDataIngestionJobsResponseTypeDef
 
@@ -585,6 +655,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatasetsrequestrequesttypedef"></a>
+
 ## ListDatasetsRequestRequestTypeDef
 
 ```python
@@ -596,6 +668,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `DatasetNameBeginsWith`: `str`
+
+<a id="listdatasetsresponsetypedef"></a>
 
 ## ListDatasetsResponseTypeDef
 
@@ -610,6 +684,8 @@ Required fields:
   `List`\[[DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listinferenceexecutionsrequestrequesttypedef"></a>
 
 ## ListInferenceExecutionsRequestRequestTypeDef
 
@@ -630,6 +706,8 @@ Optional fields:
 - `Status`:
   [InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype)
 
+<a id="listinferenceexecutionsresponsetypedef"></a>
+
 ## ListInferenceExecutionsResponseTypeDef
 
 ```python
@@ -644,6 +722,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listinferenceschedulersrequestrequesttypedef"></a>
+
 ## ListInferenceSchedulersRequestRequestTypeDef
 
 ```python
@@ -656,6 +736,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `InferenceSchedulerNameBeginsWith`: `str`
 - `ModelName`: `str`
+
+<a id="listinferenceschedulersresponsetypedef"></a>
 
 ## ListInferenceSchedulersResponseTypeDef
 
@@ -671,6 +753,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmodelsrequestrequesttypedef"></a>
+
 ## ListModelsRequestRequestTypeDef
 
 ```python
@@ -684,6 +768,8 @@ Optional fields:
 - `Status`: [ModelStatusType](./literals.md#modelstatustype)
 - `ModelNameBeginsWith`: `str`
 - `DatasetNameBeginsWith`: `str`
+
+<a id="listmodelsresponsetypedef"></a>
 
 ## ListModelsResponseTypeDef
 
@@ -699,6 +785,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -708,6 +796,8 @@ from mypy_boto3_lookoutequipment.type_defs import ListTagsForResourceRequestRequ
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -720,6 +810,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modelsummarytypedef"></a>
 
 ## ModelSummaryTypeDef
 
@@ -736,6 +828,8 @@ Optional fields:
 - `Status`: [ModelStatusType](./literals.md#modelstatustype)
 - `CreatedAt`: `datetime`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -750,6 +844,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3objecttypedef"></a>
+
 ## S3ObjectTypeDef
 
 ```python
@@ -760,6 +856,8 @@ Required fields:
 
 - `Bucket`: `str`
 - `Key`: `str`
+
+<a id="startdataingestionjobrequestrequesttypedef"></a>
 
 ## StartDataIngestionJobRequestRequestTypeDef
 
@@ -775,6 +873,8 @@ Required fields:
 - `RoleArn`: `str`
 - `ClientToken`: `str`
 
+<a id="startdataingestionjobresponsetypedef"></a>
+
 ## StartDataIngestionJobResponseTypeDef
 
 ```python
@@ -788,6 +888,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startinferenceschedulerrequestrequesttypedef"></a>
+
 ## StartInferenceSchedulerRequestRequestTypeDef
 
 ```python
@@ -797,6 +899,8 @@ from mypy_boto3_lookoutequipment.type_defs import StartInferenceSchedulerRequest
 Required fields:
 
 - `InferenceSchedulerName`: `str`
+
+<a id="startinferenceschedulerresponsetypedef"></a>
 
 ## StartInferenceSchedulerResponseTypeDef
 
@@ -815,6 +919,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopinferenceschedulerrequestrequesttypedef"></a>
+
 ## StopInferenceSchedulerRequestRequestTypeDef
 
 ```python
@@ -824,6 +930,8 @@ from mypy_boto3_lookoutequipment.type_defs import StopInferenceSchedulerRequestR
 Required fields:
 
 - `InferenceSchedulerName`: `str`
+
+<a id="stopinferenceschedulerresponsetypedef"></a>
 
 ## StopInferenceSchedulerResponseTypeDef
 
@@ -842,6 +950,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -852,6 +962,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -864,6 +976,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -874,6 +988,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateinferenceschedulerrequestrequesttypedef"></a>
 
 ## UpdateInferenceSchedulerRequestRequestTypeDef
 

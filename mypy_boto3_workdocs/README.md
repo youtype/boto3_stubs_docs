@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-workdocs-module"></a>
+
 # Type annotations for boto3 WorkDocs module
 
 > [Index](..) > WorkDocs
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
 type annotations stubs module
-[mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
+[mypy-boto3-workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[workdocs]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[workdocs]'
+
+# standalone installation
 pip install mypy-boto3-workdocs
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-workdocs
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="workdocsclient"></a>
+
 ## WorkDocsClient
 
 Type annotations for `boto3.client("workdocs")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_workdocs.client import WorkDocsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -78,6 +92,8 @@ from mypy_boto3_workdocs.client import WorkDocsClient
 - [update_folder](./client.md#update_folder)
 - [update_user](./client.md#update_user)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 WorkDocsClient [exceptions](./client.md#exceptions)
@@ -109,6 +125,8 @@ WorkDocsClient [exceptions](./client.md#exceptions)
 - UnauthorizedOperationException
 - UnauthorizedResourceAccessException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -117,7 +135,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_workdocs.paginators import DescribeActivitiesPaginator, ...
+from mypy_boto3_workdocs.paginator import DescribeActivitiesPaginator, ...
 ```
 
 - [DescribeActivitiesPaginator](./paginators.md#describeactivitiespaginator)
@@ -129,6 +147,8 @@ from mypy_boto3_workdocs.paginators import DescribeActivitiesPaginator, ...
 - [DescribeResourcePermissionsPaginator](./paginators.md#describeresourcepermissionspaginator)
 - [DescribeRootFoldersPaginator](./paginators.md#describerootfolderspaginator)
 - [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -177,6 +197,8 @@ from mypy_boto3_workdocs.literals import ActivityTypeType, ...
 - [UserTypeType](./literals.md#usertypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

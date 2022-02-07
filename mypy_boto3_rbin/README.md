@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-recyclebin-module"></a>
+
 # Type annotations for boto3 RecycleBin module
 
 > [Index](..) > RecycleBin
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [RecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin)
 type annotations stubs module
-[mypy_boto3_rbin](https://pypi.org/project/mypy-boto3-rbin/).
+[mypy-boto3-rbin](https://pypi.org/project/mypy-boto3-rbin/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[rbin]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[rbin]'
+
+# standalone installation
 pip install mypy-boto3-rbin
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-rbin
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="recyclebinclient"></a>
+
 ## RecycleBinClient
 
 Type annotations for `boto3.client("rbin")` as [RecycleBinClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_rbin.client import RecycleBinClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -44,6 +58,8 @@ from mypy_boto3_rbin.client import RecycleBinClient
 - [untag_resource](./client.md#untag_resource)
 - [update_rule](./client.md#update_rule)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 RecycleBinClient [exceptions](./client.md#exceptions)
@@ -54,6 +70,8 @@ RecycleBinClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -62,10 +80,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_rbin.paginators import ListRulesPaginator, ...
+from mypy_boto3_rbin.paginator import ListRulesPaginator, ...
 ```
 
 - [ListRulesPaginator](./paginators.md#listrulespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -83,6 +103,8 @@ from mypy_boto3_rbin.literals import ListRulesPaginatorName, ...
 - [RuleStatusType](./literals.md#rulestatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

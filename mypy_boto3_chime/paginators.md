@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-chime-module"></a>
+
 # Paginators for boto3 Chime module
 
 > [Index](..) > [Chime](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
 type annotations stubs module
-[mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
+[mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
 
 - [Paginators for boto3 Chime module](#paginators-for-boto3-chime-module)
   - [ListAccountsPaginator](#listaccountspaginator)
   - [ListUsersPaginator](#listuserspaginator)
+
+<a id="listaccountspaginator"></a>
 
 ## ListAccountsPaginator
 
@@ -18,10 +22,12 @@ Type annotations for `boto3.client("chime").get_paginator("list_accounts")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_chime.paginator import ListAccountsPaginator
 
 def get_list_accounts_paginator() -> ListAccountsPaginator:
-    return boto3.client("chime").get_paginator("list_accounts")
+    return Session().client("chime").get_paginator("list_accounts")
 ```
 
 Boto3 documentation:
@@ -37,6 +43,8 @@ Arguments for `ListAccountsPaginator.paginate` method:
 `ListAccountsPaginator.paginate` returns
 `_PageIterator`\[[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)\].
 
+<a id="listuserspaginator"></a>
+
 ## ListUsersPaginator
 
 Type annotations for `boto3.client("chime").get_paginator("list_users")`.
@@ -44,10 +52,12 @@ Type annotations for `boto3.client("chime").get_paginator("list_users")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_chime.paginator import ListUsersPaginator
 
 def get_list_users_paginator() -> ListUsersPaginator:
-    return boto3.client("chime").get_paginator("list_users")
+    return Session().client("chime").get_paginator("list_users")
 ```
 
 Boto3 documentation:

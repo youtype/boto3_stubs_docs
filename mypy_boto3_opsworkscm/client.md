@@ -1,3 +1,5 @@
+<a id="opsworkscmclient-for-boto3-opsworkscm-module"></a>
+
 # OpsWorksCMClient for boto3 OpsWorksCM module
 
 > [Index](..) > [OpsWorksCM](.) > OpsWorksCMClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
 type annotations stubs module
-[mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
+[mypy-boto3-opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 - [OpsWorksCMClient for boto3 OpsWorksCM module](#opsworkscmclient-for-boto3-opsworkscm-module)
   - [OpsWorksCMClient](#opsworkscmclient)
@@ -36,6 +38,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="opsworkscmclient"></a>
+
 ## OpsWorksCMClient
 
 Type annotations for `boto3.client("opsworkscm")`
@@ -43,14 +47,17 @@ Type annotations for `boto3.client("opsworkscm")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_opsworkscm.client import OpsWorksCMClient
 
 def get_opsworkscm_client() -> OpsWorksCMClient:
-    return boto3.client("opsworkscm")
+    return Session().client("opsworkscm")
 ```
 
 Boto3 documentation:
 [OpsWorksCM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -74,7 +81,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -86,6 +97,8 @@ Boto3 documentation:
 [OpsWorksCM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_node"></a>
 
 ### associate_node
 
@@ -110,6 +123,8 @@ Keyword-only arguments:
 Returns
 [AssociateNodeResponseTypeDef](./type_defs.md#associatenoderesponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -124,6 +139,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_backup"></a>
 
 ### create_backup
 
@@ -145,6 +162,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef).
+
+<a id="create_server"></a>
 
 ### create_server
 
@@ -186,6 +205,8 @@ Keyword-only arguments:
 Returns
 [CreateServerResponseTypeDef](./type_defs.md#createserverresponsetypedef).
 
+<a id="delete_backup"></a>
+
 ### delete_backup
 
 Deletes a backup.
@@ -203,6 +224,8 @@ Keyword-only arguments:
 - `BackupId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_server"></a>
 
 ### delete_server
 
@@ -223,6 +246,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_account_attributes"></a>
+
 ### describe_account_attributes
 
 Describes your OpsWorks-CM account attributes.
@@ -235,6 +260,8 @@ Boto3 documentation:
 
 Returns
 [DescribeAccountAttributesResponseTypeDef](./type_defs.md#describeaccountattributesresponsetypedef).
+
+<a id="describe_backups"></a>
 
 ### describe_backups
 
@@ -258,6 +285,8 @@ Keyword-only arguments:
 Returns
 [DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
 
+<a id="describe_events"></a>
+
 ### describe_events
 
 Describes events for a specified server.
@@ -278,6 +307,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
+
+<a id="describe_node_association_status"></a>
 
 ### describe_node_association_status
 
@@ -301,6 +332,8 @@ Keyword-only arguments:
 Returns
 [DescribeNodeAssociationStatusResponseTypeDef](./type_defs.md#describenodeassociationstatusresponsetypedef).
 
+<a id="describe_servers"></a>
+
 ### describe_servers
 
 Lists all configuration management servers that are identified with your
@@ -322,6 +355,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeServersResponseTypeDef](./type_defs.md#describeserversresponsetypedef).
+
+<a id="disassociate_node"></a>
 
 ### disassociate_node
 
@@ -346,6 +381,8 @@ Keyword-only arguments:
 Returns
 [DisassociateNodeResponseTypeDef](./type_defs.md#disassociatenoderesponsetypedef).
 
+<a id="export_server_engine_attribute"></a>
+
 ### export_server_engine_attribute
 
 Exports a specified server engine attribute as a base64-encoded string.
@@ -369,6 +406,8 @@ Keyword-only arguments:
 Returns
 [ExportServerEngineAttributeResponseTypeDef](./type_defs.md#exportserverengineattributeresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -387,6 +426,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -411,6 +452,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="restore_server"></a>
+
 ### restore_server
 
 Restores a backup to a server that is in a `CONNECTION_LOST` , `HEALTHY` ,
@@ -434,6 +477,8 @@ Keyword-only arguments:
 Returns
 [RestoreServerResponseTypeDef](./type_defs.md#restoreserverresponsetypedef).
 
+<a id="start_maintenance"></a>
+
 ### start_maintenance
 
 Manually starts server maintenance.
@@ -455,6 +500,8 @@ Keyword-only arguments:
 Returns
 [StartMaintenanceResponseTypeDef](./type_defs.md#startmaintenanceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Applies tags to an AWS OpsWorks for Chef Automate or AWS OpsWorks for Puppet
@@ -475,6 +522,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes specified tags from an AWS OpsWorks-CM server or backup.
@@ -493,6 +542,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_server"></a>
 
 ### update_server
 
@@ -517,6 +568,8 @@ Keyword-only arguments:
 Returns
 [UpdateServerResponseTypeDef](./type_defs.md#updateserverresponsetypedef).
 
+<a id="update_server_engine_attributes"></a>
+
 ### update_server_engine_attributes
 
 Updates engine-specific attributes on a specified server.
@@ -539,6 +592,8 @@ Keyword-only arguments:
 Returns
 [UpdateServerEngineAttributesResponseTypeDef](./type_defs.md#updateserverengineattributesresponsetypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("opsworkscm").get_paginator` method with
@@ -552,6 +607,8 @@ overloads.
   [DescribeServersPaginator](./paginators.md#describeserverspaginator)
 - `client.get_paginator("list_tags_for_resource")` ->
   [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-appconfig-module"></a>
+
 # Literals for boto3 AppConfig module
 
 > [Index](..) > [AppConfig](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
 type annotations stubs module
-[mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
+[mypy-boto3-appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
 - [Literals for boto3 AppConfig module](#literals-for-boto3-appconfig-module)
   - [DeploymentEventTypeType](#deploymenteventtypetype)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [TriggeredByType](#triggeredbytype)
   - [ValidatorTypeType](#validatortypetype)
   - [ServiceName](#servicename)
+
+<a id="deploymenteventtypetype"></a>
 
 ## DeploymentEventTypeType
 
@@ -32,6 +36,8 @@ Values:
 - `ROLLBACK_COMPLETED`
 - `ROLLBACK_STARTED`
 
+<a id="deploymentstatetype"></a>
+
 ## DeploymentStateType
 
 ```python
@@ -47,6 +53,8 @@ Values:
 - `ROLLING_BACK`
 - `VALIDATING`
 
+<a id="environmentstatetype"></a>
+
 ## EnvironmentStateType
 
 ```python
@@ -60,6 +68,8 @@ Values:
 - `ROLLED_BACK`
 - `ROLLING_BACK`
 
+<a id="growthtypetype"></a>
+
 ## GrowthTypeType
 
 ```python
@@ -71,6 +81,8 @@ Values:
 - `EXPONENTIAL`
 - `LINEAR`
 
+<a id="replicatetotype"></a>
+
 ## ReplicateToType
 
 ```python
@@ -81,6 +93,8 @@ Values:
 
 - `NONE`
 - `SSM_DOCUMENT`
+
+<a id="triggeredbytype"></a>
 
 ## TriggeredByType
 
@@ -95,6 +109,8 @@ Values:
 - `INTERNAL_ERROR`
 - `USER`
 
+<a id="validatortypetype"></a>
+
 ## ValidatorTypeType
 
 ```python
@@ -105,6 +121,8 @@ Values:
 
 - `JSON_SCHEMA`
 - `LAMBDA`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

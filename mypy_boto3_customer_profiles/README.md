@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-customerprofiles-module"></a>
+
 # Type annotations for boto3 CustomerProfiles module
 
 > [Index](..) > CustomerProfiles
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
 type annotations stubs module
-[mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
+[mypy-boto3-customer-profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[customer-profiles]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[customer-profiles]'
+
+# standalone installation
 pip install mypy-boto3-customer-profiles
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-customer-profiles
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="customerprofilesclient"></a>
 
 ## CustomerProfilesClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_customer_profiles.client import CustomerProfilesClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -68,6 +82,8 @@ from mypy_boto3_customer_profiles.client import CustomerProfilesClient
 - [update_domain](./client.md#update_domain)
 - [update_profile](./client.md#update_profile)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CustomerProfilesClient [exceptions](./client.md#exceptions)
@@ -78,6 +94,8 @@ CustomerProfilesClient [exceptions](./client.md#exceptions)
 - InternalServerException
 - ResourceNotFoundException
 - ThrottlingException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -107,6 +125,8 @@ from mypy_boto3_customer_profiles.literals import ConflictResolvingModelType, ..
 - [TriggerTypeType](./literals.md#triggertypetype)
 - [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

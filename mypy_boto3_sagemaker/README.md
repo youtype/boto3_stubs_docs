@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-sagemaker-module"></a>
+
 # Type annotations for boto3 SageMaker module
 
 > [Index](..) > SageMaker
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module
-[mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
+[mypy-boto3-sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sagemaker]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sagemaker]'
+
+# standalone installation
 pip install mypy-boto3-sagemaker
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-sagemaker
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="sagemakerclient"></a>
+
 ## SageMakerClient
 
 Type annotations for `boto3.client("sagemaker")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_sagemaker.client import SageMakerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -290,6 +304,8 @@ from mypy_boto3_sagemaker.client import SageMakerClient
 - [update_workforce](./client.md#update_workforce)
 - [update_workteam](./client.md#update_workteam)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SageMakerClient [exceptions](./client.md#exceptions)
@@ -300,6 +316,8 @@ SageMakerClient [exceptions](./client.md#exceptions)
 - ResourceLimitExceeded
 - ResourceNotFound
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -308,7 +326,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListActionsPaginator, ...
+from mypy_boto3_sagemaker.paginator import ListActionsPaginator, ...
 ```
 
 - [ListActionsPaginator](./paginators.md#listactionspaginator)
@@ -369,6 +387,8 @@ from mypy_boto3_sagemaker.paginators import ListActionsPaginator, ...
 - [ListWorkteamsPaginator](./paginators.md#listworkteamspaginator)
 - [SearchPaginator](./paginators.md#searchpaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -377,7 +397,7 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.waiters import EndpointDeletedWaiter, ...
+from mypy_boto3_sagemaker.waiter import EndpointDeletedWaiter, ...
 ```
 
 - [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
@@ -393,6 +413,8 @@ from mypy_boto3_sagemaker.waiters import EndpointDeletedWaiter, ...
 - [ProcessingJobCompletedOrStoppedWaiter](./waiters.md#processingjobcompletedorstoppedwaiter)
 - [TrainingJobCompletedOrStoppedWaiter](./waiters.md#trainingjobcompletedorstoppedwaiter)
 - [TransformJobCompletedOrStoppedWaiter](./waiters.md#transformjobcompletedorstoppedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -658,6 +680,8 @@ from mypy_boto3_sagemaker.literals import ActionStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

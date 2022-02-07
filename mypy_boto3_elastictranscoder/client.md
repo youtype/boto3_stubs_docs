@@ -1,3 +1,5 @@
+<a id="elastictranscoderclient-for-boto3-elastictranscoder-module"></a>
+
 # ElasticTranscoderClient for boto3 ElasticTranscoder module
 
 > [Index](..) > [ElasticTranscoder](.) > ElasticTranscoderClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module
-[mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+[mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 - [ElasticTranscoderClient for boto3 ElasticTranscoder module](#elastictranscoderclient-for-boto3-elastictranscoder-module)
   - [ElasticTranscoderClient](#elastictranscoderclient)
@@ -34,6 +36,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="elastictranscoderclient"></a>
+
 ## ElasticTranscoderClient
 
 Type annotations for `boto3.client("elastictranscoder")`
@@ -41,14 +45,17 @@ Type annotations for `boto3.client("elastictranscoder")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_elastictranscoder.client import ElasticTranscoderClient
 
 def get_elastictranscoder_client() -> ElasticTranscoderClient:
-    return boto3.client("elastictranscoder")
+    return Session().client("elastictranscoder")
 ```
 
 Boto3 documentation:
 [ElasticTranscoder.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -73,7 +80,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -85,6 +96,8 @@ Boto3 documentation:
 [ElasticTranscoder.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -100,6 +113,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_job"></a>
 
 ### cancel_job
 
@@ -118,6 +133,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_job"></a>
 
 ### create_job
 
@@ -146,6 +163,8 @@ Keyword-only arguments:
 - `UserMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
+
+<a id="create_pipeline"></a>
 
 ### create_pipeline
 
@@ -176,6 +195,8 @@ Keyword-only arguments:
 Returns
 [CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
 
+<a id="create_preset"></a>
+
 ### create_preset
 
 The CreatePreset operation creates a preset with settings that you specify.
@@ -200,6 +221,8 @@ Keyword-only arguments:
 Returns
 [CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef).
 
+<a id="delete_pipeline"></a>
+
 ### delete_pipeline
 
 The DeletePipeline operation removes a pipeline.
@@ -219,6 +242,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_preset"></a>
+
 ### delete_preset
 
 The DeletePreset operation removes a preset that you've added in an AWS region.
@@ -236,6 +261,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -255,6 +282,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_jobs_by_pipeline"></a>
 
 ### list_jobs_by_pipeline
 
@@ -279,6 +308,8 @@ Keyword-only arguments:
 Returns
 [ListJobsByPipelineResponseTypeDef](./type_defs.md#listjobsbypipelineresponsetypedef).
 
+<a id="list_jobs_by_status"></a>
+
 ### list_jobs_by_status
 
 The ListJobsByStatus operation gets a list of jobs that have a specified
@@ -302,6 +333,8 @@ Keyword-only arguments:
 Returns
 [ListJobsByStatusResponseTypeDef](./type_defs.md#listjobsbystatusresponsetypedef).
 
+<a id="list_pipelines"></a>
+
 ### list_pipelines
 
 The ListPipelines operation gets a list of the pipelines associated with the
@@ -322,6 +355,8 @@ Keyword-only arguments:
 
 Returns
 [ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef).
+
+<a id="list_presets"></a>
 
 ### list_presets
 
@@ -344,6 +379,8 @@ Keyword-only arguments:
 Returns
 [ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef).
 
+<a id="read_job"></a>
+
 ### read_job
 
 The ReadJob operation returns detailed information about a job.
@@ -361,6 +398,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns [ReadJobResponseTypeDef](./type_defs.md#readjobresponsetypedef).
+
+<a id="read_pipeline"></a>
 
 ### read_pipeline
 
@@ -381,6 +420,8 @@ Keyword-only arguments:
 Returns
 [ReadPipelineResponseTypeDef](./type_defs.md#readpipelineresponsetypedef).
 
+<a id="read_preset"></a>
+
 ### read_preset
 
 The ReadPreset operation gets detailed information about a preset.
@@ -398,6 +439,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns [ReadPresetResponseTypeDef](./type_defs.md#readpresetresponsetypedef).
+
+<a id="test_role"></a>
 
 ### test_role
 
@@ -419,6 +462,8 @@ Keyword-only arguments:
 - `Topics`: `Sequence`\[`str`\] *(required)*
 
 Returns [TestRoleResponseTypeDef](./type_defs.md#testroleresponsetypedef).
+
+<a id="update_pipeline"></a>
 
 ### update_pipeline
 
@@ -449,6 +494,8 @@ Keyword-only arguments:
 Returns
 [UpdatePipelineResponseTypeDef](./type_defs.md#updatepipelineresponsetypedef).
 
+<a id="update_pipeline_notifications"></a>
+
 ### update_pipeline_notifications
 
 With the UpdatePipelineNotifications operation, you can update Amazon Simple
@@ -472,6 +519,8 @@ Keyword-only arguments:
 Returns
 [UpdatePipelineNotificationsResponseTypeDef](./type_defs.md#updatepipelinenotificationsresponsetypedef).
 
+<a id="update_pipeline_status"></a>
+
 ### update_pipeline_status
 
 The UpdatePipelineStatus operation pauses or reactivates a pipeline, so that
@@ -494,6 +543,8 @@ Keyword-only arguments:
 Returns
 [UpdatePipelineStatusResponseTypeDef](./type_defs.md#updatepipelinestatusresponsetypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("elastictranscoder").get_paginator` method
@@ -507,6 +558,8 @@ with overloads.
   [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
 - `client.get_paginator("list_presets")` ->
   [ListPresetsPaginator](./paginators.md#listpresetspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

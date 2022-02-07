@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ioteventsdata-module"></a>
+
 # Type annotations for boto3 IoTEventsData module
 
 > [Index](..) > IoTEventsData
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
 type annotations stubs module
-[mypy_boto3_iotevents_data](https://pypi.org/project/mypy-boto3-iotevents-data/).
+[mypy-boto3-iotevents-data](https://pypi.org/project/mypy-boto3-iotevents-data/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iotevents-data]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iotevents-data]'
+
+# standalone installation
 pip install mypy-boto3-iotevents-data
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-iotevents-data
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="ioteventsdataclient"></a>
 
 ## IoTEventsDataClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iotevents_data.client import IoTEventsDataClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -46,6 +60,8 @@ from mypy_boto3_iotevents_data.client import IoTEventsDataClient
 - [list_alarms](./client.md#list_alarms)
 - [list_detectors](./client.md#list_detectors)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoTEventsDataClient [exceptions](./client.md#exceptions)
@@ -56,6 +72,8 @@ IoTEventsDataClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ServiceUnavailableException
 - ThrottlingException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -74,6 +92,8 @@ from mypy_boto3_iotevents_data.literals import AlarmStateNameType, ...
 - [EventTypeType](./literals.md#eventtypetype)
 - [TriggerTypeType](./literals.md#triggertypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

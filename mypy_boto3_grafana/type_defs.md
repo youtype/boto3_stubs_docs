@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-managedgrafana-module"></a>
+
 # Typed dictionaries for boto3 ManagedGrafana module
 
 > [Index](..) > [ManagedGrafana](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ManagedGrafana](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana)
 type annotations stubs module
-[mypy_boto3_grafana](https://pypi.org/project/mypy-boto3-grafana/).
+[mypy-boto3-grafana](https://pypi.org/project/mypy-boto3-grafana/).
 
 - [Typed dictionaries for boto3 ManagedGrafana module](#typed-dictionaries-for-boto3-managedgrafana-module)
   - [AssertionAttributesTypeDef](#assertionattributestypedef)
@@ -47,6 +49,8 @@ type annotations stubs module
   - [WorkspaceDescriptionTypeDef](#workspacedescriptiontypedef)
   - [WorkspaceSummaryTypeDef](#workspacesummarytypedef)
 
+<a id="assertionattributestypedef"></a>
+
 ## AssertionAttributesTypeDef
 
 ```python
@@ -62,6 +66,8 @@ Optional fields:
 - `org`: `str`
 - `role`: `str`
 
+<a id="associatelicenserequestrequesttypedef"></a>
+
 ## AssociateLicenseRequestRequestTypeDef
 
 ```python
@@ -72,6 +78,8 @@ Required fields:
 
 - `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
 - `workspaceId`: `str`
+
+<a id="associatelicenseresponsetypedef"></a>
 
 ## AssociateLicenseResponseTypeDef
 
@@ -85,6 +93,8 @@ Required fields:
   [WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="authenticationdescriptiontypedef"></a>
 
 ## AuthenticationDescriptionTypeDef
 
@@ -103,6 +113,8 @@ Optional fields:
   [AwsSsoAuthenticationTypeDef](./type_defs.md#awsssoauthenticationtypedef)
 - `saml`: [SamlAuthenticationTypeDef](./type_defs.md#samlauthenticationtypedef)
 
+<a id="authenticationsummarytypedef"></a>
+
 ## AuthenticationSummaryTypeDef
 
 ```python
@@ -119,6 +131,8 @@ Optional fields:
 - `samlConfigurationStatus`:
   [SamlConfigurationStatusType](./literals.md#samlconfigurationstatustype)
 
+<a id="awsssoauthenticationtypedef"></a>
+
 ## AwsSsoAuthenticationTypeDef
 
 ```python
@@ -128,6 +142,8 @@ from mypy_boto3_grafana.type_defs import AwsSsoAuthenticationTypeDef
 Optional fields:
 
 - `ssoClientId`: `str`
+
+<a id="createworkspacerequestrequesttypedef"></a>
 
 ## CreateWorkspaceRequestRequestTypeDef
 
@@ -157,6 +173,8 @@ Optional fields:
 - `workspaceOrganizationalUnits`: `Sequence`\[`str`\]
 - `workspaceRoleArn`: `str`
 
+<a id="createworkspaceresponsetypedef"></a>
+
 ## CreateWorkspaceResponseTypeDef
 
 ```python
@@ -170,6 +188,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteworkspacerequestrequesttypedef"></a>
+
 ## DeleteWorkspaceRequestRequestTypeDef
 
 ```python
@@ -179,6 +199,8 @@ from mypy_boto3_grafana.type_defs import DeleteWorkspaceRequestRequestTypeDef
 Required fields:
 
 - `workspaceId`: `str`
+
+<a id="deleteworkspaceresponsetypedef"></a>
 
 ## DeleteWorkspaceResponseTypeDef
 
@@ -193,6 +215,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeworkspaceauthenticationrequestrequesttypedef"></a>
+
 ## DescribeWorkspaceAuthenticationRequestRequestTypeDef
 
 ```python
@@ -202,6 +226,8 @@ from mypy_boto3_grafana.type_defs import DescribeWorkspaceAuthenticationRequestR
 Required fields:
 
 - `workspaceId`: `str`
+
+<a id="describeworkspaceauthenticationresponsetypedef"></a>
 
 ## DescribeWorkspaceAuthenticationResponseTypeDef
 
@@ -216,6 +242,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeworkspacerequestrequesttypedef"></a>
+
 ## DescribeWorkspaceRequestRequestTypeDef
 
 ```python
@@ -225,6 +253,8 @@ from mypy_boto3_grafana.type_defs import DescribeWorkspaceRequestRequestTypeDef
 Required fields:
 
 - `workspaceId`: `str`
+
+<a id="describeworkspaceresponsetypedef"></a>
 
 ## DescribeWorkspaceResponseTypeDef
 
@@ -239,6 +269,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociatelicenserequestrequesttypedef"></a>
+
 ## DisassociateLicenseRequestRequestTypeDef
 
 ```python
@@ -249,6 +281,8 @@ Required fields:
 
 - `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
 - `workspaceId`: `str`
+
+<a id="disassociatelicenseresponsetypedef"></a>
 
 ## DisassociateLicenseResponseTypeDef
 
@@ -263,6 +297,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="idpmetadatatypedef"></a>
+
 ## IdpMetadataTypeDef
 
 ```python
@@ -273,6 +309,8 @@ Optional fields:
 
 - `url`: `str`
 - `xml`: `str`
+
+<a id="listpermissionsrequestrequesttypedef"></a>
 
 ## ListPermissionsRequestRequestTypeDef
 
@@ -292,6 +330,8 @@ Optional fields:
 - `userId`: `str`
 - `userType`: [UserTypeType](./literals.md#usertypetype)
 
+<a id="listpermissionsresponsetypedef"></a>
+
 ## ListPermissionsResponseTypeDef
 
 ```python
@@ -306,6 +346,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listworkspacesrequestrequesttypedef"></a>
+
 ## ListWorkspacesRequestRequestTypeDef
 
 ```python
@@ -316,6 +358,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listworkspacesresponsetypedef"></a>
 
 ## ListWorkspacesResponseTypeDef
 
@@ -331,6 +375,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -343,6 +389,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="permissionentrytypedef"></a>
+
 ## PermissionEntryTypeDef
 
 ```python
@@ -353,6 +401,8 @@ Required fields:
 
 - `role`: [RoleType](./literals.md#roletype)
 - `user`: [UserTypeDef](./type_defs.md#usertypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -368,6 +418,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="rolevaluestypedef"></a>
+
 ## RoleValuesTypeDef
 
 ```python
@@ -378,6 +430,8 @@ Optional fields:
 
 - `admin`: `List`\[`str`\]
 - `editor`: `List`\[`str`\]
+
+<a id="samlauthenticationtypedef"></a>
 
 ## SamlAuthenticationTypeDef
 
@@ -394,6 +448,8 @@ Optional fields:
 
 - `configuration`:
   [SamlConfigurationTypeDef](./type_defs.md#samlconfigurationtypedef)
+
+<a id="samlconfigurationtypedef"></a>
 
 ## SamlConfigurationTypeDef
 
@@ -413,6 +469,8 @@ Optional fields:
 - `loginValidityDuration`: `int`
 - `roleValues`: [RoleValuesTypeDef](./type_defs.md#rolevaluestypedef)
 
+<a id="updateerrortypedef"></a>
+
 ## UpdateErrorTypeDef
 
 ```python
@@ -426,6 +484,8 @@ Required fields:
 - `code`: `int`
 - `message`: `str`
 
+<a id="updateinstructiontypedef"></a>
+
 ## UpdateInstructionTypeDef
 
 ```python
@@ -437,6 +497,8 @@ Required fields:
 - `action`: [UpdateActionType](./literals.md#updateactiontype)
 - `role`: [RoleType](./literals.md#roletype)
 - `users`: `Sequence`\[[UserTypeDef](./type_defs.md#usertypedef)\]
+
+<a id="updatepermissionsrequestrequesttypedef"></a>
 
 ## UpdatePermissionsRequestRequestTypeDef
 
@@ -450,6 +512,8 @@ Required fields:
   `Sequence`\[[UpdateInstructionTypeDef](./type_defs.md#updateinstructiontypedef)\]
 - `workspaceId`: `str`
 
+<a id="updatepermissionsresponsetypedef"></a>
+
 ## UpdatePermissionsResponseTypeDef
 
 ```python
@@ -461,6 +525,8 @@ Required fields:
 - `errors`: `List`\[[UpdateErrorTypeDef](./type_defs.md#updateerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateworkspaceauthenticationrequestrequesttypedef"></a>
 
 ## UpdateWorkspaceAuthenticationRequestRequestTypeDef
 
@@ -479,6 +545,8 @@ Optional fields:
 - `samlConfiguration`:
   [SamlConfigurationTypeDef](./type_defs.md#samlconfigurationtypedef)
 
+<a id="updateworkspaceauthenticationresponsetypedef"></a>
+
 ## UpdateWorkspaceAuthenticationResponseTypeDef
 
 ```python
@@ -491,6 +559,8 @@ Required fields:
   [AuthenticationDescriptionTypeDef](./type_defs.md#authenticationdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateworkspacerequestrequesttypedef"></a>
 
 ## UpdateWorkspaceRequestRequestTypeDef
 
@@ -518,6 +588,8 @@ Optional fields:
 - `workspaceOrganizationalUnits`: `Sequence`\[`str`\]
 - `workspaceRoleArn`: `str`
 
+<a id="updateworkspaceresponsetypedef"></a>
+
 ## UpdateWorkspaceResponseTypeDef
 
 ```python
@@ -531,6 +603,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="usertypedef"></a>
+
 ## UserTypeDef
 
 ```python
@@ -541,6 +615,8 @@ Required fields:
 
 - `id`: `str`
 - `type`: [UserTypeType](./literals.md#usertypetype)
+
+<a id="workspacedescriptiontypedef"></a>
 
 ## WorkspaceDescriptionTypeDef
 
@@ -578,6 +654,8 @@ Optional fields:
 - `permissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
 - `stackSetName`: `str`
 - `workspaceRoleArn`: `str`
+
+<a id="workspacesummarytypedef"></a>
 
 ## WorkspaceSummaryTypeDef
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-managedgrafana-module"></a>
+
 # Type annotations for boto3 ManagedGrafana module
 
 > [Index](..) > ManagedGrafana
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ManagedGrafana](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana)
 type annotations stubs module
-[mypy_boto3_grafana](https://pypi.org/project/mypy-boto3-grafana/).
+[mypy-boto3-grafana](https://pypi.org/project/mypy-boto3-grafana/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[grafana]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[grafana]'
+
+# standalone installation
 pip install mypy-boto3-grafana
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-grafana
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="managedgrafanaclient"></a>
+
 ## ManagedGrafanaClient
 
 Type annotations for `boto3.client("grafana")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_grafana.client import ManagedGrafanaClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -48,6 +62,8 @@ from mypy_boto3_grafana.client import ManagedGrafanaClient
 - [update_workspace](./client.md#update_workspace)
 - [update_workspace_authentication](./client.md#update_workspace_authentication)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ManagedGrafanaClient [exceptions](./client.md#exceptions)
@@ -61,6 +77,8 @@ ManagedGrafanaClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -69,11 +87,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_grafana.paginators import ListPermissionsPaginator, ...
+from mypy_boto3_grafana.paginator import ListPermissionsPaginator, ...
 ```
 
 - [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
 - [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -100,6 +120,8 @@ from mypy_boto3_grafana.literals import AccountAccessTypeType, ...
 - [WorkspaceStatusType](./literals.md#workspacestatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-locationservice-module"></a>
+
 # Literals for boto3 LocationService module
 
 > [Index](..) > [LocationService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
 type annotations stubs module
-[mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
+[mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
 
 - [Literals for boto3 LocationService module](#literals-for-boto3-locationservice-module)
   - [BatchItemErrorCodeType](#batchitemerrorcodetype)
@@ -29,6 +31,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="batchitemerrorcodetype"></a>
+
 ## BatchItemErrorCodeType
 
 ```python
@@ -44,6 +48,8 @@ Values:
 - `ThrottlingError`
 - `ValidationError`
 
+<a id="dimensionunittype"></a>
+
 ## DimensionUnitType
 
 ```python
@@ -54,6 +60,8 @@ Values:
 
 - `Feet`
 - `Meters`
+
+<a id="distanceunittype"></a>
 
 ## DistanceUnitType
 
@@ -66,6 +74,8 @@ Values:
 - `Kilometers`
 - `Miles`
 
+<a id="getdevicepositionhistorypaginatorname"></a>
+
 ## GetDevicePositionHistoryPaginatorName
 
 ```python
@@ -75,6 +85,8 @@ from mypy_boto3_location.literals import GetDevicePositionHistoryPaginatorName
 Values:
 
 - `get_device_position_history`
+
+<a id="intendedusetype"></a>
 
 ## IntendedUseType
 
@@ -87,6 +99,8 @@ Values:
 - `SingleUse`
 - `Storage`
 
+<a id="listdevicepositionspaginatorname"></a>
+
 ## ListDevicePositionsPaginatorName
 
 ```python
@@ -96,6 +110,8 @@ from mypy_boto3_location.literals import ListDevicePositionsPaginatorName
 Values:
 
 - `list_device_positions`
+
+<a id="listgeofencecollectionspaginatorname"></a>
 
 ## ListGeofenceCollectionsPaginatorName
 
@@ -107,6 +123,8 @@ Values:
 
 - `list_geofence_collections`
 
+<a id="listgeofencespaginatorname"></a>
+
 ## ListGeofencesPaginatorName
 
 ```python
@@ -116,6 +134,8 @@ from mypy_boto3_location.literals import ListGeofencesPaginatorName
 Values:
 
 - `list_geofences`
+
+<a id="listmapspaginatorname"></a>
 
 ## ListMapsPaginatorName
 
@@ -127,6 +147,8 @@ Values:
 
 - `list_maps`
 
+<a id="listplaceindexespaginatorname"></a>
+
 ## ListPlaceIndexesPaginatorName
 
 ```python
@@ -136,6 +158,8 @@ from mypy_boto3_location.literals import ListPlaceIndexesPaginatorName
 Values:
 
 - `list_place_indexes`
+
+<a id="listroutecalculatorspaginatorname"></a>
 
 ## ListRouteCalculatorsPaginatorName
 
@@ -147,6 +171,8 @@ Values:
 
 - `list_route_calculators`
 
+<a id="listtrackerconsumerspaginatorname"></a>
+
 ## ListTrackerConsumersPaginatorName
 
 ```python
@@ -157,6 +183,8 @@ Values:
 
 - `list_tracker_consumers`
 
+<a id="listtrackerspaginatorname"></a>
+
 ## ListTrackersPaginatorName
 
 ```python
@@ -166,6 +194,8 @@ from mypy_boto3_location.literals import ListTrackersPaginatorName
 Values:
 
 - `list_trackers`
+
+<a id="positionfilteringtype"></a>
 
 ## PositionFilteringType
 
@@ -179,6 +209,8 @@ Values:
 - `DistanceBased`
 - `TimeBased`
 
+<a id="pricingplantype"></a>
+
 ## PricingPlanType
 
 ```python
@@ -190,6 +222,8 @@ Values:
 - `MobileAssetManagement`
 - `MobileAssetTracking`
 - `RequestBasedUsage`
+
+<a id="routematrixerrorcodetype"></a>
 
 ## RouteMatrixErrorCodeType
 
@@ -206,6 +240,8 @@ Values:
 - `RouteNotFound`
 - `RouteTooLong`
 
+<a id="travelmodetype"></a>
+
 ## TravelModeType
 
 ```python
@@ -218,6 +254,8 @@ Values:
 - `Truck`
 - `Walking`
 
+<a id="vehicleweightunittype"></a>
+
 ## VehicleWeightUnitType
 
 ```python
@@ -228,6 +266,8 @@ Values:
 
 - `Kilograms`
 - `Pounds`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -536,6 +576,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

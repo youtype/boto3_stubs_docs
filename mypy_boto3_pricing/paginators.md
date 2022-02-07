@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-pricing-module"></a>
+
 # Paginators for boto3 Pricing module
 
 > [Index](..) > [Pricing](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
 type annotations stubs module
-[mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
+[mypy-boto3-pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 - [Paginators for boto3 Pricing module](#paginators-for-boto3-pricing-module)
   - [DescribeServicesPaginator](#describeservicespaginator)
   - [GetAttributeValuesPaginator](#getattributevaluespaginator)
   - [GetProductsPaginator](#getproductspaginator)
+
+<a id="describeservicespaginator"></a>
 
 ## DescribeServicesPaginator
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_pricing.paginator import DescribeServicesPaginator
 
 def get_describe_services_paginator() -> DescribeServicesPaginator:
-    return boto3.client("pricing").get_paginator("describe_services")
+    return Session().client("pricing").get_paginator("describe_services")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `DescribeServicesPaginator.paginate` method:
 `DescribeServicesPaginator.paginate` returns
 `_PageIterator`\[[DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef)\].
 
+<a id="getattributevaluespaginator"></a>
+
 ## GetAttributeValuesPaginator
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_pricing.paginator import GetAttributeValuesPaginator
 
 def get_get_attribute_values_paginator() -> GetAttributeValuesPaginator:
-    return boto3.client("pricing").get_paginator("get_attribute_values")
+    return Session().client("pricing").get_paginator("get_attribute_values")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `GetAttributeValuesPaginator.paginate` method:
 `GetAttributeValuesPaginator.paginate` returns
 `_PageIterator`\[[GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef)\].
 
+<a id="getproductspaginator"></a>
+
 ## GetProductsPaginator
 
 Type annotations for `boto3.client("pricing").get_paginator("get_products")`.
@@ -73,10 +85,12 @@ Type annotations for `boto3.client("pricing").get_paginator("get_products")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_pricing.paginator import GetProductsPaginator
 
 def get_get_products_paginator() -> GetProductsPaginator:
-    return boto3.client("pricing").get_paginator("get_products")
+    return Session().client("pricing").get_paginator("get_products")
 ```
 
 Boto3 documentation:

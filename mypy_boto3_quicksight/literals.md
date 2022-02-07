@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-quicksight-module"></a>
+
 # Literals for boto3 QuickSight module
 
 > [Index](..) > [QuickSight](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
 type annotations stubs module
-[mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
+[mypy-boto3-quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
 - [Literals for boto3 QuickSight module](#literals-for-boto3-quicksight-module)
   - [AnalysisErrorTypeType](#analysiserrortypetype)
@@ -66,6 +68,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="analysiserrortypetype"></a>
+
 ## AnalysisErrorTypeType
 
 ```python
@@ -85,6 +89,8 @@ Values:
 - `PARAMETER_VALUE_INCOMPATIBLE`
 - `SOURCE_NOT_FOUND`
 
+<a id="analysisfilterattributetype"></a>
+
 ## AnalysisFilterAttributeType
 
 ```python
@@ -94,6 +100,8 @@ from mypy_boto3_quicksight.literals import AnalysisFilterAttributeType
 Values:
 
 - `QUICKSIGHT_USER`
+
+<a id="assignmentstatustype"></a>
 
 ## AssignmentStatusType
 
@@ -106,6 +114,8 @@ Values:
 - `DISABLED`
 - `DRAFT`
 - `ENABLED`
+
+<a id="columndatatypetype"></a>
 
 ## ColumnDataTypeType
 
@@ -120,6 +130,8 @@ Values:
 - `INTEGER`
 - `STRING`
 
+<a id="columntagnametype"></a>
+
 ## ColumnTagNameType
 
 ```python
@@ -131,6 +143,8 @@ Values:
 - `COLUMN_DESCRIPTION`
 - `COLUMN_GEOGRAPHIC_ROLE`
 
+<a id="dashboardbehaviortype"></a>
+
 ## DashboardBehaviorType
 
 ```python
@@ -141,6 +155,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="dashboarderrortypetype"></a>
 
 ## DashboardErrorTypeType
 
@@ -161,6 +177,8 @@ Values:
 - `PARAMETER_VALUE_INCOMPATIBLE`
 - `SOURCE_NOT_FOUND`
 
+<a id="dashboardfilterattributetype"></a>
+
 ## DashboardFilterAttributeType
 
 ```python
@@ -170,6 +188,8 @@ from mypy_boto3_quicksight.literals import DashboardFilterAttributeType
 Values:
 
 - `QUICKSIGHT_USER`
+
+<a id="dashboarduistatetype"></a>
 
 ## DashboardUIStateType
 
@@ -182,6 +202,8 @@ Values:
 - `COLLAPSED`
 - `EXPANDED`
 
+<a id="datasetimportmodetype"></a>
+
 ## DataSetImportModeType
 
 ```python
@@ -192,6 +214,8 @@ Values:
 
 - `DIRECT_QUERY`
 - `SPICE`
+
+<a id="datasourceerrorinfotypetype"></a>
 
 ## DataSourceErrorInfoTypeType
 
@@ -209,6 +233,8 @@ Values:
 - `TIMEOUT`
 - `UNKNOWN`
 - `UNKNOWN_HOST`
+
+<a id="datasourcetypetype"></a>
 
 ## DataSourceTypeType
 
@@ -244,6 +270,8 @@ Values:
 - `TIMESTREAM`
 - `TWITTER`
 
+<a id="editiontype"></a>
+
 ## EditionType
 
 ```python
@@ -254,6 +282,8 @@ Values:
 
 - `ENTERPRISE`
 - `STANDARD`
+
+<a id="embeddingidentitytypetype"></a>
 
 ## EmbeddingIdentityTypeType
 
@@ -266,6 +296,8 @@ Values:
 - `ANONYMOUS`
 - `IAM`
 - `QUICKSIGHT`
+
+<a id="fileformattype"></a>
 
 ## FileFormatType
 
@@ -282,6 +314,8 @@ Values:
 - `TSV`
 - `XLSX`
 
+<a id="filteroperatortype"></a>
+
 ## FilterOperatorType
 
 ```python
@@ -291,6 +325,8 @@ from mypy_boto3_quicksight.literals import FilterOperatorType
 Values:
 
 - `StringEquals`
+
+<a id="folderfilterattributetype"></a>
 
 ## FolderFilterAttributeType
 
@@ -302,6 +338,8 @@ Values:
 
 - `PARENT_FOLDER_ARN`
 
+<a id="foldertypetype"></a>
+
 ## FolderTypeType
 
 ```python
@@ -312,6 +350,8 @@ Values:
 
 - `SHARED`
 
+<a id="geospatialcountrycodetype"></a>
+
 ## GeoSpatialCountryCodeType
 
 ```python
@@ -321,6 +361,8 @@ from mypy_boto3_quicksight.literals import GeoSpatialCountryCodeType
 Values:
 
 - `US`
+
+<a id="geospatialdataroletype"></a>
 
 ## GeoSpatialDataRoleType
 
@@ -338,6 +380,8 @@ Values:
 - `POSTCODE`
 - `STATE`
 
+<a id="identitystoretype"></a>
+
 ## IdentityStoreType
 
 ```python
@@ -347,6 +391,8 @@ from mypy_boto3_quicksight.literals import IdentityStoreType
 Values:
 
 - `QUICKSIGHT`
+
+<a id="identitytypetype"></a>
 
 ## IdentityTypeType
 
@@ -358,6 +404,8 @@ Values:
 
 - `IAM`
 - `QUICKSIGHT`
+
+<a id="ingestionerrortypetype"></a>
 
 ## IngestionErrorTypeType
 
@@ -412,6 +460,8 @@ Values:
 - `UNRESOLVABLE_HOST`
 - `UNROUTABLE_HOST`
 
+<a id="ingestionrequestsourcetype"></a>
+
 ## IngestionRequestSourceType
 
 ```python
@@ -422,6 +472,8 @@ Values:
 
 - `MANUAL`
 - `SCHEDULED`
+
+<a id="ingestionrequesttypetype"></a>
 
 ## IngestionRequestTypeType
 
@@ -435,6 +487,8 @@ Values:
 - `FULL_REFRESH`
 - `INCREMENTAL_REFRESH`
 - `INITIAL_INGESTION`
+
+<a id="ingestionstatustype"></a>
 
 ## IngestionStatusType
 
@@ -451,6 +505,8 @@ Values:
 - `QUEUED`
 - `RUNNING`
 
+<a id="ingestiontypetype"></a>
+
 ## IngestionTypeType
 
 ```python
@@ -461,6 +517,8 @@ Values:
 
 - `FULL_REFRESH`
 - `INCREMENTAL_REFRESH`
+
+<a id="inputcolumndatatypetype"></a>
 
 ## InputColumnDataTypeType
 
@@ -478,6 +536,8 @@ Values:
 - `JSON`
 - `STRING`
 
+<a id="jointypetype"></a>
+
 ## JoinTypeType
 
 ```python
@@ -491,6 +551,8 @@ Values:
 - `OUTER`
 - `RIGHT`
 
+<a id="listanalysespaginatorname"></a>
+
 ## ListAnalysesPaginatorName
 
 ```python
@@ -500,6 +562,8 @@ from mypy_boto3_quicksight.literals import ListAnalysesPaginatorName
 Values:
 
 - `list_analyses`
+
+<a id="listdashboardversionspaginatorname"></a>
 
 ## ListDashboardVersionsPaginatorName
 
@@ -511,6 +575,8 @@ Values:
 
 - `list_dashboard_versions`
 
+<a id="listdashboardspaginatorname"></a>
+
 ## ListDashboardsPaginatorName
 
 ```python
@@ -520,6 +586,8 @@ from mypy_boto3_quicksight.literals import ListDashboardsPaginatorName
 Values:
 
 - `list_dashboards`
+
+<a id="listdatasetspaginatorname"></a>
 
 ## ListDataSetsPaginatorName
 
@@ -531,6 +599,8 @@ Values:
 
 - `list_data_sets`
 
+<a id="listdatasourcespaginatorname"></a>
+
 ## ListDataSourcesPaginatorName
 
 ```python
@@ -540,6 +610,8 @@ from mypy_boto3_quicksight.literals import ListDataSourcesPaginatorName
 Values:
 
 - `list_data_sources`
+
+<a id="listingestionspaginatorname"></a>
 
 ## ListIngestionsPaginatorName
 
@@ -551,6 +623,8 @@ Values:
 
 - `list_ingestions`
 
+<a id="listnamespacespaginatorname"></a>
+
 ## ListNamespacesPaginatorName
 
 ```python
@@ -560,6 +634,8 @@ from mypy_boto3_quicksight.literals import ListNamespacesPaginatorName
 Values:
 
 - `list_namespaces`
+
+<a id="listtemplatealiasespaginatorname"></a>
 
 ## ListTemplateAliasesPaginatorName
 
@@ -571,6 +647,8 @@ Values:
 
 - `list_template_aliases`
 
+<a id="listtemplateversionspaginatorname"></a>
+
 ## ListTemplateVersionsPaginatorName
 
 ```python
@@ -580,6 +658,8 @@ from mypy_boto3_quicksight.literals import ListTemplateVersionsPaginatorName
 Values:
 
 - `list_template_versions`
+
+<a id="listtemplatespaginatorname"></a>
 
 ## ListTemplatesPaginatorName
 
@@ -591,6 +671,8 @@ Values:
 
 - `list_templates`
 
+<a id="listthemeversionspaginatorname"></a>
+
 ## ListThemeVersionsPaginatorName
 
 ```python
@@ -601,6 +683,8 @@ Values:
 
 - `list_theme_versions`
 
+<a id="listthemespaginatorname"></a>
+
 ## ListThemesPaginatorName
 
 ```python
@@ -610,6 +694,8 @@ from mypy_boto3_quicksight.literals import ListThemesPaginatorName
 Values:
 
 - `list_themes`
+
+<a id="membertypetype"></a>
 
 ## MemberTypeType
 
@@ -623,6 +709,8 @@ Values:
 - `DASHBOARD`
 - `DATASET`
 
+<a id="namespaceerrortypetype"></a>
+
 ## NamespaceErrorTypeType
 
 ```python
@@ -633,6 +721,8 @@ Values:
 
 - `INTERNAL_SERVICE_ERROR`
 - `PERMISSION_DENIED`
+
+<a id="namespacestatustype"></a>
 
 ## NamespaceStatusType
 
@@ -647,6 +737,8 @@ Values:
 - `DELETING`
 - `NON_RETRYABLE_FAILURE`
 - `RETRYABLE_FAILURE`
+
+<a id="resourcestatustype"></a>
 
 ## ResourceStatusType
 
@@ -664,6 +756,8 @@ Values:
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_SUCCESSFUL`
 
+<a id="rowlevelpermissionformatversiontype"></a>
+
 ## RowLevelPermissionFormatVersionType
 
 ```python
@@ -674,6 +768,8 @@ Values:
 
 - `VERSION_1`
 - `VERSION_2`
+
+<a id="rowlevelpermissionpolicytype"></a>
 
 ## RowLevelPermissionPolicyType
 
@@ -686,6 +782,8 @@ Values:
 - `DENY_ACCESS`
 - `GRANT_ACCESS`
 
+<a id="searchanalysespaginatorname"></a>
+
 ## SearchAnalysesPaginatorName
 
 ```python
@@ -695,6 +793,8 @@ from mypy_boto3_quicksight.literals import SearchAnalysesPaginatorName
 Values:
 
 - `search_analyses`
+
+<a id="searchdashboardspaginatorname"></a>
 
 ## SearchDashboardsPaginatorName
 
@@ -706,6 +806,8 @@ Values:
 
 - `search_dashboards`
 
+<a id="statustype"></a>
+
 ## StatusType
 
 ```python
@@ -716,6 +818,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="templateerrortypetype"></a>
 
 ## TemplateErrorTypeType
 
@@ -730,6 +834,8 @@ Values:
 - `INTERNAL_FAILURE`
 - `SOURCE_NOT_FOUND`
 
+<a id="textqualifiertype"></a>
+
 ## TextQualifierType
 
 ```python
@@ -741,6 +847,8 @@ Values:
 - `DOUBLE_QUOTE`
 - `SINGLE_QUOTE`
 
+<a id="themeerrortypetype"></a>
+
 ## ThemeErrorTypeType
 
 ```python
@@ -750,6 +858,8 @@ from mypy_boto3_quicksight.literals import ThemeErrorTypeType
 Values:
 
 - `INTERNAL_FAILURE`
+
+<a id="themetypetype"></a>
 
 ## ThemeTypeType
 
@@ -762,6 +872,8 @@ Values:
 - `ALL`
 - `CUSTOM`
 - `QUICKSIGHT`
+
+<a id="userroletype"></a>
 
 ## UserRoleType
 
@@ -776,6 +888,8 @@ Values:
 - `READER`
 - `RESTRICTED_AUTHOR`
 - `RESTRICTED_READER`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1084,6 +1198,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloud9-module"></a>
+
 # Literals for boto3 Cloud9 module
 
 > [Index](..) > [Cloud9](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
 type annotations stubs module
-[mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+[mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 - [Literals for boto3 Cloud9 module](#literals-for-boto3-cloud9-module)
   - [ConnectionTypeType](#connectiontypetype)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="connectiontypetype"></a>
+
 ## ConnectionTypeType
 
 ```python
@@ -32,6 +36,8 @@ Values:
 - `CONNECT_SSH`
 - `CONNECT_SSM`
 
+<a id="describeenvironmentmembershipspaginatorname"></a>
+
 ## DescribeEnvironmentMembershipsPaginatorName
 
 ```python
@@ -41,6 +47,8 @@ from mypy_boto3_cloud9.literals import DescribeEnvironmentMembershipsPaginatorNa
 Values:
 
 - `describe_environment_memberships`
+
+<a id="environmentlifecyclestatustype"></a>
 
 ## EnvironmentLifecycleStatusType
 
@@ -55,6 +63,8 @@ Values:
 - `CREATING`
 - `DELETE_FAILED`
 - `DELETING`
+
+<a id="environmentstatustype"></a>
 
 ## EnvironmentStatusType
 
@@ -72,6 +82,8 @@ Values:
 - `stopped`
 - `stopping`
 
+<a id="environmenttypetype"></a>
+
 ## EnvironmentTypeType
 
 ```python
@@ -83,6 +95,8 @@ Values:
 - `ec2`
 - `ssh`
 
+<a id="listenvironmentspaginatorname"></a>
+
 ## ListEnvironmentsPaginatorName
 
 ```python
@@ -92,6 +106,8 @@ from mypy_boto3_cloud9.literals import ListEnvironmentsPaginatorName
 Values:
 
 - `list_environments`
+
+<a id="managedcredentialsactiontype"></a>
 
 ## ManagedCredentialsActionType
 
@@ -103,6 +119,8 @@ Values:
 
 - `DISABLE`
 - `ENABLE`
+
+<a id="managedcredentialsstatustype"></a>
 
 ## ManagedCredentialsStatusType
 
@@ -124,6 +142,8 @@ Values:
 - `PENDING_START_REMOVAL_BY_COLLABORATOR`
 - `PENDING_START_REMOVAL_BY_OWNER`
 
+<a id="memberpermissionstype"></a>
+
 ## MemberPermissionsType
 
 ```python
@@ -134,6 +154,8 @@ Values:
 
 - `read-only`
 - `read-write`
+
+<a id="permissionstype"></a>
 
 ## PermissionsType
 
@@ -146,6 +168,8 @@ Values:
 - `owner`
 - `read-only`
 - `read-write`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -454,6 +478,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

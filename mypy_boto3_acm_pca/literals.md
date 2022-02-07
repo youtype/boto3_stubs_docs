@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-acmpca-module"></a>
+
 # Literals for boto3 ACMPCA module
 
 > [Index](..) > [ACMPCA](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
-[mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
+[mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 - [Literals for boto3 ACMPCA module](#literals-for-boto3-acmpca-module)
   - [AccessMethodTypeType](#accessmethodtypetype)
@@ -34,6 +36,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="accessmethodtypetype"></a>
+
 ## AccessMethodTypeType
 
 ```python
@@ -45,6 +49,8 @@ Values:
 - `CA_REPOSITORY`
 - `RESOURCE_PKI_MANIFEST`
 - `RESOURCE_PKI_NOTIFY`
+
+<a id="actiontypetype"></a>
 
 ## ActionTypeType
 
@@ -58,6 +64,8 @@ Values:
 - `IssueCertificate`
 - `ListPermissions`
 
+<a id="auditreportcreatedwaitername"></a>
+
 ## AuditReportCreatedWaiterName
 
 ```python
@@ -67,6 +75,8 @@ from mypy_boto3_acm_pca.literals import AuditReportCreatedWaiterName
 Values:
 
 - `audit_report_created`
+
+<a id="auditreportresponseformattype"></a>
 
 ## AuditReportResponseFormatType
 
@@ -78,6 +88,8 @@ Values:
 
 - `CSV`
 - `JSON`
+
+<a id="auditreportstatustype"></a>
 
 ## AuditReportStatusType
 
@@ -91,6 +103,8 @@ Values:
 - `FAILED`
 - `SUCCESS`
 
+<a id="certificateauthoritycsrcreatedwaitername"></a>
+
 ## CertificateAuthorityCSRCreatedWaiterName
 
 ```python
@@ -100,6 +114,8 @@ from mypy_boto3_acm_pca.literals import CertificateAuthorityCSRCreatedWaiterName
 Values:
 
 - `certificate_authority_csr_created`
+
+<a id="certificateauthoritystatustype"></a>
 
 ## CertificateAuthorityStatusType
 
@@ -117,6 +133,8 @@ Values:
 - `FAILED`
 - `PENDING_CERTIFICATE`
 
+<a id="certificateauthoritytypetype"></a>
+
 ## CertificateAuthorityTypeType
 
 ```python
@@ -128,6 +146,8 @@ Values:
 - `ROOT`
 - `SUBORDINATE`
 
+<a id="certificateissuedwaitername"></a>
+
 ## CertificateIssuedWaiterName
 
 ```python
@@ -137,6 +157,8 @@ from mypy_boto3_acm_pca.literals import CertificateIssuedWaiterName
 Values:
 
 - `certificate_issued`
+
+<a id="extendedkeyusagetypetype"></a>
 
 ## ExtendedKeyUsageTypeType
 
@@ -156,6 +178,8 @@ Values:
 - `SMART_CARD_LOGIN`
 - `TIME_STAMPING`
 
+<a id="failurereasontype"></a>
+
 ## FailureReasonType
 
 ```python
@@ -167,6 +191,8 @@ Values:
 - `OTHER`
 - `REQUEST_TIMED_OUT`
 - `UNSUPPORTED_ALGORITHM`
+
+<a id="keyalgorithmtype"></a>
 
 ## KeyAlgorithmType
 
@@ -181,6 +207,8 @@ Values:
 - `RSA_2048`
 - `RSA_4096`
 
+<a id="keystoragesecuritystandardtype"></a>
+
 ## KeyStorageSecurityStandardType
 
 ```python
@@ -192,6 +220,8 @@ Values:
 - `FIPS_140_2_LEVEL_2_OR_HIGHER`
 - `FIPS_140_2_LEVEL_3_OR_HIGHER`
 
+<a id="listcertificateauthoritiespaginatorname"></a>
+
 ## ListCertificateAuthoritiesPaginatorName
 
 ```python
@@ -201,6 +231,8 @@ from mypy_boto3_acm_pca.literals import ListCertificateAuthoritiesPaginatorName
 Values:
 
 - `list_certificate_authorities`
+
+<a id="listpermissionspaginatorname"></a>
 
 ## ListPermissionsPaginatorName
 
@@ -212,6 +244,8 @@ Values:
 
 - `list_permissions`
 
+<a id="listtagspaginatorname"></a>
+
 ## ListTagsPaginatorName
 
 ```python
@@ -221,6 +255,8 @@ from mypy_boto3_acm_pca.literals import ListTagsPaginatorName
 Values:
 
 - `list_tags`
+
+<a id="policyqualifieridtype"></a>
 
 ## PolicyQualifierIdType
 
@@ -232,6 +268,8 @@ Values:
 
 - `CPS`
 
+<a id="resourceownertype"></a>
+
 ## ResourceOwnerType
 
 ```python
@@ -242,6 +280,8 @@ Values:
 
 - `OTHER_ACCOUNTS`
 - `SELF`
+
+<a id="revocationreasontype"></a>
 
 ## RevocationReasonType
 
@@ -260,6 +300,8 @@ Values:
 - `SUPERSEDED`
 - `UNSPECIFIED`
 
+<a id="s3objectacltype"></a>
+
 ## S3ObjectAclType
 
 ```python
@@ -270,6 +312,8 @@ Values:
 
 - `BUCKET_OWNER_FULL_CONTROL`
 - `PUBLIC_READ`
+
+<a id="signingalgorithmtype"></a>
 
 ## SigningAlgorithmType
 
@@ -286,6 +330,8 @@ Values:
 - `SHA512WITHECDSA`
 - `SHA512WITHRSA`
 
+<a id="validityperiodtypetype"></a>
+
 ## ValidityPeriodTypeType
 
 ```python
@@ -299,6 +345,8 @@ Values:
 - `END_DATE`
 - `MONTHS`
 - `YEARS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -608,6 +656,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -619,6 +669,8 @@ Values:
 - `list_certificate_authorities`
 - `list_permissions`
 - `list_tags`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

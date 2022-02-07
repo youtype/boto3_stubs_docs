@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-pricing-module"></a>
+
 # Typed dictionaries for boto3 Pricing module
 
 > [Index](..) > [Pricing](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
 type annotations stubs module
-[mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
+[mypy-boto3-pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 - [Typed dictionaries for boto3 Pricing module](#typed-dictionaries-for-boto3-pricing-module)
   - [AttributeValueTypeDef](#attributevaluetypedef)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ServiceTypeDef](#servicetypedef)
 
+<a id="attributevaluetypedef"></a>
+
 ## AttributeValueTypeDef
 
 ```python
@@ -29,6 +33,8 @@ from mypy_boto3_pricing.type_defs import AttributeValueTypeDef
 Optional fields:
 
 - `Value`: `str`
+
+<a id="describeservicesrequestrequesttypedef"></a>
 
 ## DescribeServicesRequestRequestTypeDef
 
@@ -42,6 +48,8 @@ Optional fields:
 - `FormatVersion`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="describeservicesresponsetypedef"></a>
 
 ## DescribeServicesResponseTypeDef
 
@@ -57,6 +65,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -69,6 +79,8 @@ Required fields:
   [FilterTypeType](./literals.md#filtertypetype))
 - `Field`: `str`
 - `Value`: `str`
+
+<a id="getattributevaluesrequestrequesttypedef"></a>
 
 ## GetAttributeValuesRequestRequestTypeDef
 
@@ -86,6 +98,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="getattributevaluesresponsetypedef"></a>
+
 ## GetAttributeValuesResponseTypeDef
 
 ```python
@@ -99,6 +113,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getproductsrequestrequesttypedef"></a>
 
 ## GetProductsRequestRequestTypeDef
 
@@ -114,6 +130,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="getproductsresponsetypedef"></a>
+
 ## GetProductsResponseTypeDef
 
 ```python
@@ -128,6 +146,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -139,6 +159,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -153,6 +175,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="servicetypedef"></a>
 
 ## ServiceTypeDef
 

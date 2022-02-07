@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-route53-module"></a>
+
 # Waiters for boto3 Route53 module
 
 > [Index](..) > [Route53](.) > Waiters
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
 type annotations stubs module
-[mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
+[mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
 - [Waiters for boto3 Route53 module](#waiters-for-boto3-route53-module)
   - [ResourceRecordSetsChangedWaiter](#resourcerecordsetschangedwaiter)
+
+<a id="resourcerecordsetschangedwaiter"></a>
 
 ## ResourceRecordSetsChangedWaiter
 
@@ -18,10 +22,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53.waiter import ResourceRecordSetsChangedWaiter
 
 def get_resource_record_sets_changed_waiter() -> ResourceRecordSetsChangedWaiter:
-    return boto3.client("route53").get_waiter("resource_record_sets_changed")
+    return Session().client("route53").get_waiter("resource_record_sets_changed")
 ```
 
 Boto3 documentation:

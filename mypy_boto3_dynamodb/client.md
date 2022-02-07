@@ -1,3 +1,5 @@
+<a id="dynamodbclient-for-boto3-dynamodb-module"></a>
+
 # DynamoDBClient for boto3 DynamoDB module
 
 > [Index](..) > [DynamoDB](.) > DynamoDBClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
-[mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+[mypy-boto3-dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 - [DynamoDBClient for boto3 DynamoDB module](#dynamodbclient-for-boto3-dynamodb-module)
   - [DynamoDBClient](#dynamodbclient)
@@ -67,6 +69,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="dynamodbclient"></a>
+
 ## DynamoDBClient
 
 Type annotations for `boto3.client("dynamodb")`
@@ -74,14 +78,17 @@ Type annotations for `boto3.client("dynamodb")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_dynamodb.client import DynamoDBClient
 
 def get_dynamodb_client() -> DynamoDBClient:
-    return boto3.client("dynamodb")
+    return Session().client("dynamodb")
 ```
 
 Boto3 documentation:
 [DynamoDB.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -128,7 +135,11 @@ Exceptions:
 - `Exceptions.TransactionConflictException`
 - `Exceptions.TransactionInProgressException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -140,6 +151,8 @@ Boto3 documentation:
 [DynamoDB.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_execute_statement"></a>
 
 ### batch_execute_statement
 
@@ -165,6 +178,8 @@ Keyword-only arguments:
 Returns
 [BatchExecuteStatementOutputTypeDef](./type_defs.md#batchexecutestatementoutputtypedef).
 
+<a id="batch_get_item"></a>
+
 ### batch_get_item
 
 The `BatchGetItem` operation returns the attributes of one or more items from
@@ -187,6 +202,8 @@ Keyword-only arguments:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
 Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
+
+<a id="batch_write_item"></a>
 
 ### batch_write_item
 
@@ -214,6 +231,8 @@ Keyword-only arguments:
 Returns
 [BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -228,6 +247,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_backup"></a>
 
 ### create_backup
 
@@ -247,6 +268,8 @@ Keyword-only arguments:
 - `BackupName`: `str` *(required)*
 
 Returns [CreateBackupOutputTypeDef](./type_defs.md#createbackupoutputtypedef).
+
+<a id="create_global_table"></a>
 
 ### create_global_table
 
@@ -268,6 +291,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGlobalTableOutputTypeDef](./type_defs.md#createglobaltableoutputtypedef).
+
+<a id="create_table"></a>
 
 ### create_table
 
@@ -306,6 +331,8 @@ Keyword-only arguments:
 
 Returns [CreateTableOutputTypeDef](./type_defs.md#createtableoutputtypedef).
 
+<a id="delete_backup"></a>
+
 ### delete_backup
 
 Deletes an existing backup of a table.
@@ -323,6 +350,8 @@ Keyword-only arguments:
 - `BackupArn`: `str` *(required)*
 
 Returns [DeleteBackupOutputTypeDef](./type_defs.md#deletebackupoutputtypedef).
+
+<a id="delete_item"></a>
 
 ### delete_item
 
@@ -361,6 +390,8 @@ Keyword-only arguments:
 
 Returns [DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef).
 
+<a id="delete_table"></a>
+
 ### delete_table
 
 The `DeleteTable` operation deletes a table and all of its items.
@@ -378,6 +409,8 @@ Keyword-only arguments:
 - `TableName`: `str` *(required)*
 
 Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
+
+<a id="describe_backup"></a>
 
 ### describe_backup
 
@@ -397,6 +430,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBackupOutputTypeDef](./type_defs.md#describebackupoutputtypedef).
+
+<a id="describe_continuous_backups"></a>
 
 ### describe_continuous_backups
 
@@ -418,6 +453,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeContinuousBackupsOutputTypeDef](./type_defs.md#describecontinuousbackupsoutputtypedef).
+
+<a id="describe_contributor_insights"></a>
 
 ### describe_contributor_insights
 
@@ -441,6 +478,8 @@ Keyword-only arguments:
 Returns
 [DescribeContributorInsightsOutputTypeDef](./type_defs.md#describecontributorinsightsoutputtypedef).
 
+<a id="describe_endpoints"></a>
+
 ### describe_endpoints
 
 Returns the regional endpoint information.
@@ -452,6 +491,8 @@ Boto3 documentation:
 
 Returns
 [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
+
+<a id="describe_export"></a>
 
 ### describe_export
 
@@ -472,6 +513,8 @@ Keyword-only arguments:
 Returns
 [DescribeExportOutputTypeDef](./type_defs.md#describeexportoutputtypedef).
 
+<a id="describe_global_table"></a>
+
 ### describe_global_table
 
 Returns information about the specified global table.
@@ -490,6 +533,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeGlobalTableOutputTypeDef](./type_defs.md#describeglobaltableoutputtypedef).
+
+<a id="describe_global_table_settings"></a>
 
 ### describe_global_table_settings
 
@@ -511,6 +556,8 @@ Keyword-only arguments:
 Returns
 [DescribeGlobalTableSettingsOutputTypeDef](./type_defs.md#describeglobaltablesettingsoutputtypedef).
 
+<a id="describe_kinesis_streaming_destination"></a>
+
 ### describe_kinesis_streaming_destination
 
 Returns information about the status of Kinesis streaming.
@@ -531,6 +578,8 @@ Keyword-only arguments:
 Returns
 [DescribeKinesisStreamingDestinationOutputTypeDef](./type_defs.md#describekinesisstreamingdestinationoutputtypedef).
 
+<a id="describe_limits"></a>
+
 ### describe_limits
 
 Returns the current provisioned-capacity quotas for your Amazon Web Services
@@ -544,6 +593,8 @@ Boto3 documentation:
 
 Returns
 [DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef).
+
+<a id="describe_table"></a>
 
 ### describe_table
 
@@ -565,6 +616,8 @@ Keyword-only arguments:
 Returns
 [DescribeTableOutputTypeDef](./type_defs.md#describetableoutputtypedef).
 
+<a id="describe_table_replica_auto_scaling"></a>
+
 ### describe_table_replica_auto_scaling
 
 Describes auto scaling settings across replicas of the global table at once.
@@ -585,6 +638,8 @@ Keyword-only arguments:
 Returns
 [DescribeTableReplicaAutoScalingOutputTypeDef](./type_defs.md#describetablereplicaautoscalingoutputtypedef).
 
+<a id="describe_time_to_live"></a>
+
 ### describe_time_to_live
 
 Gives a description of the Time to Live (TTL) status on the specified table.
@@ -603,6 +658,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTimeToLiveOutputTypeDef](./type_defs.md#describetimetoliveoutputtypedef).
+
+<a id="disable_kinesis_streaming_destination"></a>
 
 ### disable_kinesis_streaming_destination
 
@@ -625,6 +682,8 @@ Keyword-only arguments:
 Returns
 [KinesisStreamingDestinationOutputTypeDef](./type_defs.md#kinesisstreamingdestinationoutputtypedef).
 
+<a id="enable_kinesis_streaming_destination"></a>
+
 ### enable_kinesis_streaming_destination
 
 Starts table data replication to the specified Kinesis data stream at a
@@ -646,6 +705,8 @@ Keyword-only arguments:
 
 Returns
 [KinesisStreamingDestinationOutputTypeDef](./type_defs.md#kinesisstreamingdestinationoutputtypedef).
+
+<a id="execute_statement"></a>
 
 ### execute_statement
 
@@ -675,6 +736,8 @@ Keyword-only arguments:
 Returns
 [ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef).
 
+<a id="execute_transaction"></a>
+
 ### execute_transaction
 
 This operation allows you to perform transactional reads or writes on data
@@ -699,6 +762,8 @@ Keyword-only arguments:
 
 Returns
 [ExecuteTransactionOutputTypeDef](./type_defs.md#executetransactionoutputtypedef).
+
+<a id="export_table_to_point_in_time"></a>
 
 ### export_table_to_point_in_time
 
@@ -728,6 +793,8 @@ Keyword-only arguments:
 Returns
 [ExportTableToPointInTimeOutputTypeDef](./type_defs.md#exporttabletopointintimeoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -745,6 +812,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_item"></a>
 
 ### get_item
 
@@ -775,6 +844,8 @@ Keyword-only arguments:
 
 Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
 
+<a id="list_backups"></a>
+
 ### list_backups
 
 List backups associated with an Amazon Web Services account.
@@ -797,6 +868,8 @@ Keyword-only arguments:
 - `BackupType`: [BackupTypeFilterType](./literals.md#backuptypefiltertype)
 
 Returns [ListBackupsOutputTypeDef](./type_defs.md#listbackupsoutputtypedef).
+
+<a id="list_contributor_insights"></a>
 
 ### list_contributor_insights
 
@@ -821,6 +894,8 @@ Keyword-only arguments:
 Returns
 [ListContributorInsightsOutputTypeDef](./type_defs.md#listcontributorinsightsoutputtypedef).
 
+<a id="list_exports"></a>
+
 ### list_exports
 
 Lists completed exports within the past 90 days.
@@ -840,6 +915,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef).
+
+<a id="list_global_tables"></a>
 
 ### list_global_tables
 
@@ -862,6 +939,8 @@ Keyword-only arguments:
 Returns
 [ListGlobalTablesOutputTypeDef](./type_defs.md#listglobaltablesoutputtypedef).
 
+<a id="list_tables"></a>
+
 ### list_tables
 
 Returns an array of table names associated with the current account and
@@ -882,6 +961,8 @@ Keyword-only arguments:
 
 Returns [ListTablesOutputTypeDef](./type_defs.md#listtablesoutputtypedef).
 
+<a id="list_tags_of_resource"></a>
+
 ### list_tags_of_resource
 
 List all tags on an Amazon DynamoDB resource.
@@ -901,6 +982,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsOfResourceOutputTypeDef](./type_defs.md#listtagsofresourceoutputtypedef).
+
+<a id="put_item"></a>
 
 ### put_item
 
@@ -938,6 +1021,8 @@ Keyword-only arguments:
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
+
+<a id="query"></a>
 
 ### query
 
@@ -984,6 +1069,8 @@ Keyword-only arguments:
 
 Returns [QueryOutputTypeDef](./type_defs.md#queryoutputtypedef).
 
+<a id="restore_table_from_backup"></a>
+
 ### restore_table_from_backup
 
 Creates a new table from an existing backup.
@@ -1013,6 +1100,8 @@ Keyword-only arguments:
 
 Returns
 [RestoreTableFromBackupOutputTypeDef](./type_defs.md#restoretablefrombackupoutputtypedef).
+
+<a id="restore_table_to_point_in_time"></a>
 
 ### restore_table_to_point_in_time
 
@@ -1047,6 +1136,8 @@ Keyword-only arguments:
 
 Returns
 [RestoreTableToPointInTimeOutputTypeDef](./type_defs.md#restoretabletopointintimeoutputtypedef).
+
+<a id="scan"></a>
 
 ### scan
 
@@ -1091,6 +1182,8 @@ Keyword-only arguments:
 
 Returns [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associate a set of tags with an Amazon DynamoDB resource.
@@ -1107,6 +1200,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="transact_get_items"></a>
 
 ### transact_get_items
 
@@ -1132,6 +1227,8 @@ Keyword-only arguments:
 
 Returns
 [TransactGetItemsOutputTypeDef](./type_defs.md#transactgetitemsoutputtypedef).
+
+<a id="transact_write_items"></a>
 
 ### transact_write_items
 
@@ -1160,6 +1257,8 @@ Keyword-only arguments:
 Returns
 [TransactWriteItemsOutputTypeDef](./type_defs.md#transactwriteitemsoutputtypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the association of tags from an Amazon DynamoDB resource.
@@ -1176,6 +1275,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_continuous_backups"></a>
 
 ### update_continuous_backups
 
@@ -1201,6 +1302,8 @@ Keyword-only arguments:
 Returns
 [UpdateContinuousBackupsOutputTypeDef](./type_defs.md#updatecontinuousbackupsoutputtypedef).
 
+<a id="update_contributor_insights"></a>
+
 ### update_contributor_insights
 
 Updates the status for contributor insights for a specific table or index.
@@ -1225,6 +1328,8 @@ Keyword-only arguments:
 Returns
 [UpdateContributorInsightsOutputTypeDef](./type_defs.md#updatecontributorinsightsoutputtypedef).
 
+<a id="update_global_table"></a>
+
 ### update_global_table
 
 Adds or removes replicas in the specified global table.
@@ -1246,6 +1351,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateGlobalTableOutputTypeDef](./type_defs.md#updateglobaltableoutputtypedef).
+
+<a id="update_global_table_settings"></a>
 
 ### update_global_table_settings
 
@@ -1274,6 +1381,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateGlobalTableSettingsOutputTypeDef](./type_defs.md#updateglobaltablesettingsoutputtypedef).
+
+<a id="update_item"></a>
 
 ### update_item
 
@@ -1316,6 +1425,8 @@ Keyword-only arguments:
 
 Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
 
+<a id="update_table"></a>
+
 ### update_table
 
 Modifies the provisioned throughput settings, global secondary indexes, or
@@ -1349,6 +1460,8 @@ Keyword-only arguments:
 
 Returns [UpdateTableOutputTypeDef](./type_defs.md#updatetableoutputtypedef).
 
+<a id="update_table_replica_auto_scaling"></a>
+
 ### update_table_replica_auto_scaling
 
 Updates auto scaling settings on your global tables at once.
@@ -1375,6 +1488,8 @@ Keyword-only arguments:
 Returns
 [UpdateTableReplicaAutoScalingOutputTypeDef](./type_defs.md#updatetablereplicaautoscalingoutputtypedef).
 
+<a id="update_time_to_live"></a>
+
 ### update_time_to_live
 
 The `UpdateTimeToLive` method enables or disables Time to Live (TTL) for the
@@ -1398,6 +1513,8 @@ Keyword-only arguments:
 Returns
 [UpdateTimeToLiveOutputTypeDef](./type_defs.md#updatetimetoliveoutputtypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("dynamodb").get_paginator` method with
@@ -1413,6 +1530,8 @@ overloads.
   [QueryPaginator](./paginators.md#querypaginator)
 - `client.get_paginator("scan")` ->
   [ScanPaginator](./paginators.md#scanpaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

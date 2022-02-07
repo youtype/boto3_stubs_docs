@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-mediapackagevod-module"></a>
+
 # Literals for boto3 MediaPackageVod module
 
 > [Index](..) > [MediaPackageVod](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
 type annotations stubs module
-[mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
+[mypy-boto3-mediapackage-vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
 - [Literals for boto3 MediaPackageVod module](#literals-for-boto3-mediapackagevod-module)
   - [AdMarkersType](#admarkerstype)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="admarkerstype"></a>
+
 ## AdMarkersType
 
 ```python
@@ -33,6 +37,8 @@ Values:
 - `PASSTHROUGH`
 - `SCTE35_ENHANCED`
 
+<a id="encryptionmethodtype"></a>
+
 ## EncryptionMethodType
 
 ```python
@@ -44,6 +50,8 @@ Values:
 - `AES_128`
 - `SAMPLE_AES`
 
+<a id="listassetspaginatorname"></a>
+
 ## ListAssetsPaginatorName
 
 ```python
@@ -53,6 +61,8 @@ from mypy_boto3_mediapackage_vod.literals import ListAssetsPaginatorName
 Values:
 
 - `list_assets`
+
+<a id="listpackagingconfigurationspaginatorname"></a>
 
 ## ListPackagingConfigurationsPaginatorName
 
@@ -64,6 +74,8 @@ Values:
 
 - `list_packaging_configurations`
 
+<a id="listpackaginggroupspaginatorname"></a>
+
 ## ListPackagingGroupsPaginatorName
 
 ```python
@@ -73,6 +85,8 @@ from mypy_boto3_mediapackage_vod.literals import ListPackagingGroupsPaginatorNam
 Values:
 
 - `list_packaging_groups`
+
+<a id="manifestlayouttype"></a>
 
 ## ManifestLayoutType
 
@@ -85,6 +99,8 @@ Values:
 - `COMPACT`
 - `FULL`
 
+<a id="periodtriggerselementtype"></a>
+
 ## PeriodTriggersElementType
 
 ```python
@@ -94,6 +110,8 @@ from mypy_boto3_mediapackage_vod.literals import PeriodTriggersElementType
 Values:
 
 - `ADS`
+
+<a id="profiletype"></a>
 
 ## ProfileType
 
@@ -105,6 +123,8 @@ Values:
 
 - `HBBTV_1_5`
 - `NONE`
+
+<a id="segmenttemplateformattype"></a>
 
 ## SegmentTemplateFormatType
 
@@ -118,6 +138,8 @@ Values:
 - `NUMBER_WITH_TIMELINE`
 - `TIME_WITH_TIMELINE`
 
+<a id="streamordertype"></a>
+
 ## StreamOrderType
 
 ```python
@@ -129,6 +151,8 @@ Values:
 - `ORIGINAL`
 - `VIDEO_BITRATE_ASCENDING`
 - `VIDEO_BITRATE_DESCENDING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -437,6 +461,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

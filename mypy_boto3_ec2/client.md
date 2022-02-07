@@ -1,3 +1,5 @@
+<a id="ec2client-for-boto3-ec2-module"></a>
+
 # EC2Client for boto3 EC2 module
 
 > [Index](..) > [EC2](.) > EC2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
 type annotations stubs module
-[mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
+[mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 - [EC2Client for boto3 EC2 module](#ec2client-for-boto3-ec2-module)
   - [EC2Client](#ec2client)
@@ -538,6 +540,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="ec2client"></a>
+
 ## EC2Client
 
 Type annotations for `boto3.client("ec2")`
@@ -545,14 +549,17 @@ Type annotations for `boto3.client("ec2")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ec2.client import EC2Client
 
 def get_ec2_client() -> EC2Client:
-    return boto3.client("ec2")
+    return Session().client("ec2")
 ```
 
 Boto3 documentation:
 [EC2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -570,7 +577,11 @@ Exceptions:
 
 - `Exceptions.ClientError`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -582,6 +593,8 @@ Boto3 documentation:
 [EC2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_reserved_instances_exchange_quote"></a>
 
 ### accept_reserved_instances_exchange_quote
 
@@ -607,6 +620,8 @@ Keyword-only arguments:
 Returns
 [AcceptReservedInstancesExchangeQuoteResultTypeDef](./type_defs.md#acceptreservedinstancesexchangequoteresulttypedef).
 
+<a id="accept_transit_gateway_multicast_domain_associations"></a>
+
 ### accept_transit_gateway_multicast_domain_associations
 
 Accepts a request to associate subnets with a transit gateway multicast domain.
@@ -631,6 +646,8 @@ Keyword-only arguments:
 Returns
 [AcceptTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#accepttransitgatewaymulticastdomainassociationsresulttypedef).
 
+<a id="accept_transit_gateway_peering_attachment"></a>
+
 ### accept_transit_gateway_peering_attachment
 
 Accepts a transit gateway peering attachment request.
@@ -652,6 +669,8 @@ Keyword-only arguments:
 Returns
 [AcceptTransitGatewayPeeringAttachmentResultTypeDef](./type_defs.md#accepttransitgatewaypeeringattachmentresulttypedef).
 
+<a id="accept_transit_gateway_vpc_attachment"></a>
+
 ### accept_transit_gateway_vpc_attachment
 
 Accepts a request to attach a VPC to a transit gateway.
@@ -672,6 +691,8 @@ Keyword-only arguments:
 
 Returns
 [AcceptTransitGatewayVpcAttachmentResultTypeDef](./type_defs.md#accepttransitgatewayvpcattachmentresulttypedef).
+
+<a id="accept_vpc_endpoint_connections"></a>
 
 ### accept_vpc_endpoint_connections
 
@@ -696,6 +717,8 @@ Keyword-only arguments:
 Returns
 [AcceptVpcEndpointConnectionsResultTypeDef](./type_defs.md#acceptvpcendpointconnectionsresulttypedef).
 
+<a id="accept_vpc_peering_connection"></a>
+
 ### accept_vpc_peering_connection
 
 Accept a VPC peering connection request.
@@ -717,6 +740,8 @@ Keyword-only arguments:
 Returns
 [AcceptVpcPeeringConnectionResultTypeDef](./type_defs.md#acceptvpcpeeringconnectionresulttypedef).
 
+<a id="advertise_byoip_cidr"></a>
+
 ### advertise_byoip_cidr
 
 Advertises an IPv4 or IPv6 address range that is provisioned for use with your
@@ -737,6 +762,8 @@ Keyword-only arguments:
 
 Returns
 [AdvertiseByoipCidrResultTypeDef](./type_defs.md#advertisebyoipcidrresulttypedef).
+
+<a id="allocate_address"></a>
 
 ### allocate_address
 
@@ -763,6 +790,8 @@ Keyword-only arguments:
 
 Returns
 [AllocateAddressResultTypeDef](./type_defs.md#allocateaddressresulttypedef).
+
+<a id="allocate_hosts"></a>
 
 ### allocate_hosts
 
@@ -791,6 +820,8 @@ Keyword-only arguments:
 Returns
 [AllocateHostsResultTypeDef](./type_defs.md#allocatehostsresulttypedef).
 
+<a id="allocate_ipam_pool_cidr"></a>
+
 ### allocate_ipam_pool_cidr
 
 Allocate a CIDR from an IPAM pool.
@@ -817,6 +848,8 @@ Keyword-only arguments:
 Returns
 [AllocateIpamPoolCidrResultTypeDef](./type_defs.md#allocateipampoolcidrresulttypedef).
 
+<a id="apply_security_groups_to_client_vpn_target_network"></a>
+
 ### apply_security_groups_to_client_vpn_target_network
 
 Applies a security group to the association between the target network and the
@@ -842,6 +875,8 @@ Keyword-only arguments:
 Returns
 [ApplySecurityGroupsToClientVpnTargetNetworkResultTypeDef](./type_defs.md#applysecuritygroupstoclientvpntargetnetworkresulttypedef).
 
+<a id="assign_ipv6_addresses"></a>
+
 ### assign_ipv6_addresses
 
 Assigns one or more IPv6 addresses to the specified network interface.
@@ -864,6 +899,8 @@ Keyword-only arguments:
 
 Returns
 [AssignIpv6AddressesResultTypeDef](./type_defs.md#assignipv6addressesresulttypedef).
+
+<a id="assign_private_ip_addresses"></a>
 
 ### assign_private_ip_addresses
 
@@ -889,6 +926,8 @@ Keyword-only arguments:
 
 Returns
 [AssignPrivateIpAddressesResultTypeDef](./type_defs.md#assignprivateipaddressesresulttypedef).
+
+<a id="associate_address"></a>
 
 ### associate_address
 
@@ -916,6 +955,8 @@ Keyword-only arguments:
 Returns
 [AssociateAddressResultTypeDef](./type_defs.md#associateaddressresulttypedef).
 
+<a id="associate_client_vpn_target_network"></a>
+
 ### associate_client_vpn_target_network
 
 Associates a target network with a Client VPN endpoint.
@@ -939,6 +980,8 @@ Keyword-only arguments:
 Returns
 [AssociateClientVpnTargetNetworkResultTypeDef](./type_defs.md#associateclientvpntargetnetworkresulttypedef).
 
+<a id="associate_dhcp_options"></a>
+
 ### associate_dhcp_options
 
 Associates a set of DHCP options (that you've previously created) with the
@@ -957,6 +1000,8 @@ Keyword-only arguments:
 - `DhcpOptionsId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="associate_enclave_certificate_iam_role"></a>
 
 ### associate_enclave_certificate_iam_role
 
@@ -981,6 +1026,8 @@ Keyword-only arguments:
 Returns
 [AssociateEnclaveCertificateIamRoleResultTypeDef](./type_defs.md#associateenclavecertificateiamroleresulttypedef).
 
+<a id="associate_iam_instance_profile"></a>
+
 ### associate_iam_instance_profile
 
 Associates an IAM instance profile with a running or stopped instance.
@@ -1003,6 +1050,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateIamInstanceProfileResultTypeDef](./type_defs.md#associateiaminstanceprofileresulttypedef).
+
+<a id="associate_instance_event_window"></a>
 
 ### associate_instance_event_window
 
@@ -1028,6 +1077,8 @@ Keyword-only arguments:
 Returns
 [AssociateInstanceEventWindowResultTypeDef](./type_defs.md#associateinstanceeventwindowresulttypedef).
 
+<a id="associate_route_table"></a>
+
 ### associate_route_table
 
 Associates a subnet in your VPC or an internet gateway or virtual private
@@ -1051,6 +1102,8 @@ Keyword-only arguments:
 Returns
 [AssociateRouteTableResultTypeDef](./type_defs.md#associateroutetableresulttypedef).
 
+<a id="associate_subnet_cidr_block"></a>
+
 ### associate_subnet_cidr_block
 
 Associates a CIDR block with your subnet.
@@ -1070,6 +1123,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateSubnetCidrBlockResultTypeDef](./type_defs.md#associatesubnetcidrblockresulttypedef).
+
+<a id="associate_transit_gateway_multicast_domain"></a>
 
 ### associate_transit_gateway_multicast_domain
 
@@ -1095,6 +1150,8 @@ Keyword-only arguments:
 Returns
 [AssociateTransitGatewayMulticastDomainResultTypeDef](./type_defs.md#associatetransitgatewaymulticastdomainresulttypedef).
 
+<a id="associate_transit_gateway_route_table"></a>
+
 ### associate_transit_gateway_route_table
 
 Associates the specified attachment with the specified transit gateway route
@@ -1117,6 +1174,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateTransitGatewayRouteTableResultTypeDef](./type_defs.md#associatetransitgatewayroutetableresulttypedef).
+
+<a id="associate_trunk_interface"></a>
 
 ### associate_trunk_interface
 
@@ -1141,6 +1200,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateTrunkInterfaceResultTypeDef](./type_defs.md#associatetrunkinterfaceresulttypedef).
+
+<a id="associate_vpc_cidr_block"></a>
 
 ### associate_vpc_cidr_block
 
@@ -1170,6 +1231,8 @@ Keyword-only arguments:
 Returns
 [AssociateVpcCidrBlockResultTypeDef](./type_defs.md#associatevpccidrblockresulttypedef).
 
+<a id="attach_classic_link_vpc"></a>
+
 ### attach_classic_link_vpc
 
 Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more
@@ -1193,6 +1256,8 @@ Keyword-only arguments:
 Returns
 [AttachClassicLinkVpcResultTypeDef](./type_defs.md#attachclassiclinkvpcresulttypedef).
 
+<a id="attach_internet_gateway"></a>
+
 ### attach_internet_gateway
 
 Attaches an internet gateway or a virtual private gateway to a VPC, enabling
@@ -1211,6 +1276,8 @@ Keyword-only arguments:
 - `InternetGatewayId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="attach_network_interface"></a>
 
 ### attach_network_interface
 
@@ -1235,6 +1302,8 @@ Keyword-only arguments:
 Returns
 [AttachNetworkInterfaceResultTypeDef](./type_defs.md#attachnetworkinterfaceresulttypedef).
 
+<a id="attach_volume"></a>
+
 ### attach_volume
 
 Attaches an EBS volume to a running or stopped instance and exposes it to the
@@ -1258,6 +1327,8 @@ Keyword-only arguments:
 Returns
 [VolumeAttachmentResponseMetadataTypeDef](./type_defs.md#volumeattachmentresponsemetadatatypedef).
 
+<a id="attach_vpn_gateway"></a>
+
 ### attach_vpn_gateway
 
 Attaches a virtual private gateway to a VPC.
@@ -1278,6 +1349,8 @@ Keyword-only arguments:
 
 Returns
 [AttachVpnGatewayResultTypeDef](./type_defs.md#attachvpngatewayresulttypedef).
+
+<a id="authorize_client_vpn_ingress"></a>
 
 ### authorize_client_vpn_ingress
 
@@ -1303,6 +1376,8 @@ Keyword-only arguments:
 
 Returns
 [AuthorizeClientVpnIngressResultTypeDef](./type_defs.md#authorizeclientvpningressresulttypedef).
+
+<a id="authorize_security_group_egress"></a>
 
 ### authorize_security_group_egress
 
@@ -1332,6 +1407,8 @@ Keyword-only arguments:
 
 Returns
 [AuthorizeSecurityGroupEgressResultTypeDef](./type_defs.md#authorizesecuritygroupegressresulttypedef).
+
+<a id="authorize_security_group_ingress"></a>
 
 ### authorize_security_group_ingress
 
@@ -1365,6 +1442,8 @@ Keyword-only arguments:
 Returns
 [AuthorizeSecurityGroupIngressResultTypeDef](./type_defs.md#authorizesecuritygroupingressresulttypedef).
 
+<a id="bundle_instance"></a>
+
 ### bundle_instance
 
 Bundles an Amazon instance store-backed Windows instance.
@@ -1386,6 +1465,8 @@ Keyword-only arguments:
 Returns
 [BundleInstanceResultTypeDef](./type_defs.md#bundleinstanceresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -1400,6 +1481,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_bundle_task"></a>
 
 ### cancel_bundle_task
 
@@ -1420,6 +1503,8 @@ Keyword-only arguments:
 
 Returns
 [CancelBundleTaskResultTypeDef](./type_defs.md#cancelbundletaskresulttypedef).
+
+<a id="cancel_capacity_reservation"></a>
 
 ### cancel_capacity_reservation
 
@@ -1442,6 +1527,8 @@ Keyword-only arguments:
 Returns
 [CancelCapacityReservationResultTypeDef](./type_defs.md#cancelcapacityreservationresulttypedef).
 
+<a id="cancel_capacity_reservation_fleets"></a>
+
 ### cancel_capacity_reservation_fleets
 
 Cancels one or more Capacity Reservation Fleets.
@@ -1463,6 +1550,8 @@ Keyword-only arguments:
 Returns
 [CancelCapacityReservationFleetsResultTypeDef](./type_defs.md#cancelcapacityreservationfleetsresulttypedef).
 
+<a id="cancel_conversion_task"></a>
+
 ### cancel_conversion_task
 
 Cancels an active conversion task.
@@ -1481,6 +1570,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `ReasonMessage`: `str`
 
+<a id="cancel_export_task"></a>
+
 ### cancel_export_task
 
 Cancels an active export task.
@@ -1496,6 +1587,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ExportTaskId`: `str` *(required)*
+
+<a id="cancel_import_task"></a>
 
 ### cancel_import_task
 
@@ -1518,6 +1611,8 @@ Keyword-only arguments:
 Returns
 [CancelImportTaskResultTypeDef](./type_defs.md#cancelimporttaskresulttypedef).
 
+<a id="cancel_reserved_instances_listing"></a>
+
 ### cancel_reserved_instances_listing
 
 Cancels the specified Reserved Instance listing in the Reserved Instance
@@ -1538,6 +1633,8 @@ Keyword-only arguments:
 
 Returns
 [CancelReservedInstancesListingResultTypeDef](./type_defs.md#cancelreservedinstanceslistingresulttypedef).
+
+<a id="cancel_spot_fleet_requests"></a>
 
 ### cancel_spot_fleet_requests
 
@@ -1560,6 +1657,8 @@ Keyword-only arguments:
 Returns
 [CancelSpotFleetRequestsResponseTypeDef](./type_defs.md#cancelspotfleetrequestsresponsetypedef).
 
+<a id="cancel_spot_instance_requests"></a>
+
 ### cancel_spot_instance_requests
 
 Cancels one or more Spot Instance requests.
@@ -1581,6 +1680,8 @@ Keyword-only arguments:
 Returns
 [CancelSpotInstanceRequestsResultTypeDef](./type_defs.md#cancelspotinstancerequestsresulttypedef).
 
+<a id="confirm_product_instance"></a>
+
 ### confirm_product_instance
 
 Determines whether a product code is associated with an instance.
@@ -1601,6 +1702,8 @@ Keyword-only arguments:
 
 Returns
 [ConfirmProductInstanceResultTypeDef](./type_defs.md#confirmproductinstanceresulttypedef).
+
+<a id="copy_fpga_image"></a>
 
 ### copy_fpga_image
 
@@ -1625,6 +1728,8 @@ Keyword-only arguments:
 
 Returns
 [CopyFpgaImageResultTypeDef](./type_defs.md#copyfpgaimageresulttypedef).
+
+<a id="copy_image"></a>
 
 ### copy_image
 
@@ -1651,6 +1756,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns [CopyImageResultTypeDef](./type_defs.md#copyimageresulttypedef).
+
+<a id="copy_snapshot"></a>
 
 ### copy_snapshot
 
@@ -1679,6 +1786,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
+
+<a id="create_capacity_reservation"></a>
 
 ### create_capacity_reservation
 
@@ -1719,6 +1828,8 @@ Keyword-only arguments:
 Returns
 [CreateCapacityReservationResultTypeDef](./type_defs.md#createcapacityreservationresulttypedef).
 
+<a id="create_capacity_reservation_fleet"></a>
+
 ### create_capacity_reservation_fleet
 
 Creates a Capacity Reservation Fleet.
@@ -1752,6 +1863,8 @@ Keyword-only arguments:
 Returns
 [CreateCapacityReservationFleetResultTypeDef](./type_defs.md#createcapacityreservationfleetresulttypedef).
 
+<a id="create_carrier_gateway"></a>
+
 ### create_carrier_gateway
 
 Creates a carrier gateway.
@@ -1774,6 +1887,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCarrierGatewayResultTypeDef](./type_defs.md#createcarriergatewayresulttypedef).
+
+<a id="create_client_vpn_endpoint"></a>
 
 ### create_client_vpn_endpoint
 
@@ -1820,6 +1935,8 @@ Keyword-only arguments:
 Returns
 [CreateClientVpnEndpointResultTypeDef](./type_defs.md#createclientvpnendpointresulttypedef).
 
+<a id="create_client_vpn_route"></a>
+
 ### create_client_vpn_route
 
 Adds a route to a network to a Client VPN endpoint.
@@ -1843,6 +1960,8 @@ Keyword-only arguments:
 
 Returns
 [CreateClientVpnRouteResultTypeDef](./type_defs.md#createclientvpnrouteresulttypedef).
+
+<a id="create_customer_gateway"></a>
 
 ### create_customer_gateway
 
@@ -1872,6 +1991,8 @@ Keyword-only arguments:
 Returns
 [CreateCustomerGatewayResultTypeDef](./type_defs.md#createcustomergatewayresulttypedef).
 
+<a id="create_default_subnet"></a>
+
 ### create_default_subnet
 
 Creates a default subnet with a size `/20` IPv4 CIDR block in the specified
@@ -1894,6 +2015,8 @@ Keyword-only arguments:
 Returns
 [CreateDefaultSubnetResultTypeDef](./type_defs.md#createdefaultsubnetresulttypedef).
 
+<a id="create_default_vpc"></a>
+
 ### create_default_vpc
 
 Creates a default VPC with a size `/16` IPv4 CIDR block and a default subnet in
@@ -1913,6 +2036,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDefaultVpcResultTypeDef](./type_defs.md#createdefaultvpcresulttypedef).
+
+<a id="create_dhcp_options"></a>
 
 ### create_dhcp_options
 
@@ -1938,6 +2063,8 @@ Keyword-only arguments:
 Returns
 [CreateDhcpOptionsResultTypeDef](./type_defs.md#createdhcpoptionsresulttypedef).
 
+<a id="create_egress_only_internet_gateway"></a>
+
 ### create_egress_only_internet_gateway
 
 Type annotations for `boto3.client("ec2").create_egress_only_internet_gateway`
@@ -1959,6 +2086,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEgressOnlyInternetGatewayResultTypeDef](./type_defs.md#createegressonlyinternetgatewayresulttypedef).
+
+<a id="create_fleet"></a>
 
 ### create_fleet
 
@@ -1999,6 +2128,8 @@ Keyword-only arguments:
 
 Returns [CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef).
 
+<a id="create_flow_logs"></a>
+
 ### create_flow_logs
 
 Creates one or more flow logs to capture information about IP traffic for a
@@ -2036,6 +2167,8 @@ Keyword-only arguments:
 Returns
 [CreateFlowLogsResultTypeDef](./type_defs.md#createflowlogsresulttypedef).
 
+<a id="create_fpga_image"></a>
+
 ### create_fpga_image
 
 Creates an Amazon FPGA Image (AFI) from the specified design checkpoint (DCP).
@@ -2064,6 +2197,8 @@ Keyword-only arguments:
 Returns
 [CreateFpgaImageResultTypeDef](./type_defs.md#createfpgaimageresulttypedef).
 
+<a id="create_image"></a>
+
 ### create_image
 
 Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is
@@ -2091,6 +2226,8 @@ Keyword-only arguments:
 
 Returns [CreateImageResultTypeDef](./type_defs.md#createimageresulttypedef).
 
+<a id="create_instance_event_window"></a>
+
 ### create_instance_event_window
 
 Creates an event window in which scheduled events for the associated Amazon EC2
@@ -2116,6 +2253,8 @@ Keyword-only arguments:
 
 Returns
 [CreateInstanceEventWindowResultTypeDef](./type_defs.md#createinstanceeventwindowresulttypedef).
+
+<a id="create_instance_export_task"></a>
 
 ### create_instance_export_task
 
@@ -2144,6 +2283,8 @@ Keyword-only arguments:
 Returns
 [CreateInstanceExportTaskResultTypeDef](./type_defs.md#createinstanceexporttaskresulttypedef).
 
+<a id="create_internet_gateway"></a>
+
 ### create_internet_gateway
 
 Creates an internet gateway for use with a VPC.
@@ -2164,6 +2305,8 @@ Keyword-only arguments:
 
 Returns
 [CreateInternetGatewayResultTypeDef](./type_defs.md#createinternetgatewayresulttypedef).
+
+<a id="create_ipam"></a>
 
 ### create_ipam
 
@@ -2188,6 +2331,8 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns [CreateIpamResultTypeDef](./type_defs.md#createipamresulttypedef).
+
+<a id="create_ipam_pool"></a>
 
 ### create_ipam_pool
 
@@ -2225,6 +2370,8 @@ Keyword-only arguments:
 Returns
 [CreateIpamPoolResultTypeDef](./type_defs.md#createipampoolresulttypedef).
 
+<a id="create_ipam_scope"></a>
+
 ### create_ipam_scope
 
 Create an IPAM scope.
@@ -2249,6 +2396,8 @@ Keyword-only arguments:
 Returns
 [CreateIpamScopeResultTypeDef](./type_defs.md#createipamscoperesulttypedef).
 
+<a id="create_key_pair"></a>
+
 ### create_key_pair
 
 Creates an ED25519 or 2048-bit RSA key pair with the specified name.
@@ -2270,6 +2419,8 @@ Keyword-only arguments:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [KeyPairTypeDef](./type_defs.md#keypairtypedef).
+
+<a id="create_launch_template"></a>
 
 ### create_launch_template
 
@@ -2297,6 +2448,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLaunchTemplateResultTypeDef](./type_defs.md#createlaunchtemplateresulttypedef).
+
+<a id="create_launch_template_version"></a>
 
 ### create_launch_template_version
 
@@ -2326,6 +2479,8 @@ Keyword-only arguments:
 Returns
 [CreateLaunchTemplateVersionResultTypeDef](./type_defs.md#createlaunchtemplateversionresulttypedef).
 
+<a id="create_local_gateway_route"></a>
+
 ### create_local_gateway_route
 
 Creates a static route for the specified local gateway route table.
@@ -2347,6 +2502,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLocalGatewayRouteResultTypeDef](./type_defs.md#createlocalgatewayrouteresulttypedef).
+
+<a id="create_local_gateway_route_table_vpc_association"></a>
 
 ### create_local_gateway_route_table_vpc_association
 
@@ -2371,6 +2528,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLocalGatewayRouteTableVpcAssociationResultTypeDef](./type_defs.md#createlocalgatewayroutetablevpcassociationresulttypedef).
+
+<a id="create_managed_prefix_list"></a>
 
 ### create_managed_prefix_list
 
@@ -2399,6 +2558,8 @@ Keyword-only arguments:
 Returns
 [CreateManagedPrefixListResultTypeDef](./type_defs.md#createmanagedprefixlistresulttypedef).
 
+<a id="create_nat_gateway"></a>
+
 ### create_nat_gateway
 
 Creates a NAT gateway in the specified subnet.
@@ -2425,6 +2586,8 @@ Keyword-only arguments:
 Returns
 [CreateNatGatewayResultTypeDef](./type_defs.md#createnatgatewayresulttypedef).
 
+<a id="create_network_acl"></a>
+
 ### create_network_acl
 
 Creates a network ACL in a VPC.
@@ -2446,6 +2609,8 @@ Keyword-only arguments:
 
 Returns
 [CreateNetworkAclResultTypeDef](./type_defs.md#createnetworkaclresulttypedef).
+
+<a id="create_network_acl_entry"></a>
 
 ### create_network_acl_entry
 
@@ -2471,6 +2636,8 @@ Keyword-only arguments:
 - `IcmpTypeCode`: [IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef)
 - `Ipv6CidrBlock`: `str`
 - `PortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
+
+<a id="create_network_insights_access_scope"></a>
 
 ### create_network_insights_access_scope
 
@@ -2499,6 +2666,8 @@ Keyword-only arguments:
 Returns
 [CreateNetworkInsightsAccessScopeResultTypeDef](./type_defs.md#createnetworkinsightsaccessscoperesulttypedef).
 
+<a id="create_network_insights_path"></a>
+
 ### create_network_insights_path
 
 Creates a path to analyze for reachability.
@@ -2526,6 +2695,8 @@ Keyword-only arguments:
 
 Returns
 [CreateNetworkInsightsPathResultTypeDef](./type_defs.md#createnetworkinsightspathresulttypedef).
+
+<a id="create_network_interface"></a>
 
 ### create_network_interface
 
@@ -2567,6 +2738,8 @@ Keyword-only arguments:
 Returns
 [CreateNetworkInterfaceResultTypeDef](./type_defs.md#createnetworkinterfaceresulttypedef).
 
+<a id="create_network_interface_permission"></a>
+
 ### create_network_interface_permission
 
 Grants an Amazon Web Services-authorized account permission to attach the
@@ -2594,6 +2767,8 @@ Keyword-only arguments:
 Returns
 [CreateNetworkInterfacePermissionResultTypeDef](./type_defs.md#createnetworkinterfacepermissionresulttypedef).
 
+<a id="create_placement_group"></a>
+
 ### create_placement_group
 
 Creates a placement group in which to launch instances.
@@ -2618,6 +2793,8 @@ Keyword-only arguments:
 Returns
 [CreatePlacementGroupResultTypeDef](./type_defs.md#createplacementgroupresulttypedef).
 
+<a id="create_public_ipv4_pool"></a>
+
 ### create_public_ipv4_pool
 
 Creates a public IPv4 address pool.
@@ -2638,6 +2815,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePublicIpv4PoolResultTypeDef](./type_defs.md#createpublicipv4poolresulttypedef).
+
+<a id="create_replace_root_volume_task"></a>
 
 ### create_replace_root_volume_task
 
@@ -2663,6 +2842,8 @@ Keyword-only arguments:
 
 Returns
 [CreateReplaceRootVolumeTaskResultTypeDef](./type_defs.md#createreplacerootvolumetaskresulttypedef).
+
+<a id="create_reserved_instances_listing"></a>
 
 ### create_reserved_instances_listing
 
@@ -2690,6 +2871,8 @@ Keyword-only arguments:
 Returns
 [CreateReservedInstancesListingResultTypeDef](./type_defs.md#createreservedinstanceslistingresulttypedef).
 
+<a id="create_restore_image_task"></a>
+
 ### create_restore_image_task
 
 Starts a task that restores an AMI from an Amazon S3 object that was previously
@@ -2716,6 +2899,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRestoreImageTaskResultTypeDef](./type_defs.md#createrestoreimagetaskresulttypedef).
+
+<a id="create_route"></a>
 
 ### create_route
 
@@ -2750,6 +2935,8 @@ Keyword-only arguments:
 
 Returns [CreateRouteResultTypeDef](./type_defs.md#createrouteresulttypedef).
 
+<a id="create_route_table"></a>
+
 ### create_route_table
 
 Creates a route table for the specified VPC.
@@ -2771,6 +2958,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRouteTableResultTypeDef](./type_defs.md#createroutetableresulttypedef).
+
+<a id="create_security_group"></a>
 
 ### create_security_group
 
@@ -2796,6 +2985,8 @@ Keyword-only arguments:
 Returns
 [CreateSecurityGroupResultTypeDef](./type_defs.md#createsecuritygroupresulttypedef).
 
+<a id="create_snapshot"></a>
+
 ### create_snapshot
 
 Creates a snapshot of an EBS volume and stores it in Amazon S3.
@@ -2819,6 +3010,8 @@ Keyword-only arguments:
 
 Returns
 [SnapshotResponseMetadataTypeDef](./type_defs.md#snapshotresponsemetadatatypedef).
+
+<a id="create_snapshots"></a>
 
 ### create_snapshots
 
@@ -2849,6 +3042,8 @@ Keyword-only arguments:
 Returns
 [CreateSnapshotsResultTypeDef](./type_defs.md#createsnapshotsresulttypedef).
 
+<a id="create_spot_datafeed_subscription"></a>
+
 ### create_spot_datafeed_subscription
 
 Creates a data feed for Spot Instances, enabling you to view Spot Instance
@@ -2872,6 +3067,8 @@ Keyword-only arguments:
 Returns
 [CreateSpotDatafeedSubscriptionResultTypeDef](./type_defs.md#createspotdatafeedsubscriptionresulttypedef).
 
+<a id="create_store_image_task"></a>
+
 ### create_store_image_task
 
 Stores an AMI as a single object in an Amazon S3 bucket.
@@ -2894,6 +3091,8 @@ Keyword-only arguments:
 
 Returns
 [CreateStoreImageTaskResultTypeDef](./type_defs.md#createstoreimagetaskresulttypedef).
+
+<a id="create_subnet"></a>
 
 ### create_subnet
 
@@ -2921,6 +3120,8 @@ Keyword-only arguments:
 - `Ipv6Native`: `bool`
 
 Returns [CreateSubnetResultTypeDef](./type_defs.md#createsubnetresulttypedef).
+
+<a id="create_subnet_cidr_reservation"></a>
 
 ### create_subnet_cidr_reservation
 
@@ -2950,6 +3151,8 @@ Keyword-only arguments:
 Returns
 [CreateSubnetCidrReservationResultTypeDef](./type_defs.md#createsubnetcidrreservationresulttypedef).
 
+<a id="create_tags"></a>
+
 ### create_tags
 
 Adds or overwrites only the specified tags for the specified Amazon EC2
@@ -2969,6 +3172,8 @@ Keyword-only arguments:
 - `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
 - `DryRun`: `bool`
+
+<a id="create_traffic_mirror_filter"></a>
 
 ### create_traffic_mirror_filter
 
@@ -2992,6 +3197,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTrafficMirrorFilterResultTypeDef](./type_defs.md#createtrafficmirrorfilterresulttypedef).
+
+<a id="create_traffic_mirror_filter_rule"></a>
 
 ### create_traffic_mirror_filter_rule
 
@@ -3029,6 +3236,8 @@ Keyword-only arguments:
 Returns
 [CreateTrafficMirrorFilterRuleResultTypeDef](./type_defs.md#createtrafficmirrorfilterruleresulttypedef).
 
+<a id="create_traffic_mirror_session"></a>
+
 ### create_traffic_mirror_session
 
 Creates a Traffic Mirror session.
@@ -3059,6 +3268,8 @@ Keyword-only arguments:
 Returns
 [CreateTrafficMirrorSessionResultTypeDef](./type_defs.md#createtrafficmirrorsessionresulttypedef).
 
+<a id="create_traffic_mirror_target"></a>
+
 ### create_traffic_mirror_target
 
 Creates a target for your Traffic Mirror session.
@@ -3084,6 +3295,8 @@ Keyword-only arguments:
 Returns
 [CreateTrafficMirrorTargetResultTypeDef](./type_defs.md#createtrafficmirrortargetresulttypedef).
 
+<a id="create_transit_gateway"></a>
+
 ### create_transit_gateway
 
 Creates a transit gateway.
@@ -3107,6 +3320,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTransitGatewayResultTypeDef](./type_defs.md#createtransitgatewayresulttypedef).
+
+<a id="create_transit_gateway_connect"></a>
 
 ### create_transit_gateway_connect
 
@@ -3133,6 +3348,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTransitGatewayConnectResultTypeDef](./type_defs.md#createtransitgatewayconnectresulttypedef).
+
+<a id="create_transit_gateway_connect_peer"></a>
 
 ### create_transit_gateway_connect_peer
 
@@ -3163,6 +3380,8 @@ Keyword-only arguments:
 Returns
 [CreateTransitGatewayConnectPeerResultTypeDef](./type_defs.md#createtransitgatewayconnectpeerresulttypedef).
 
+<a id="create_transit_gateway_multicast_domain"></a>
+
 ### create_transit_gateway_multicast_domain
 
 Creates a multicast domain using the specified transit gateway.
@@ -3187,6 +3406,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTransitGatewayMulticastDomainResultTypeDef](./type_defs.md#createtransitgatewaymulticastdomainresulttypedef).
+
+<a id="create_transit_gateway_peering_attachment"></a>
 
 ### create_transit_gateway_peering_attachment
 
@@ -3215,6 +3436,8 @@ Keyword-only arguments:
 Returns
 [CreateTransitGatewayPeeringAttachmentResultTypeDef](./type_defs.md#createtransitgatewaypeeringattachmentresulttypedef).
 
+<a id="create_transit_gateway_prefix_list_reference"></a>
+
 ### create_transit_gateway_prefix_list_reference
 
 Creates a reference (route) to a prefix list in a specified transit gateway
@@ -3240,6 +3463,8 @@ Keyword-only arguments:
 Returns
 [CreateTransitGatewayPrefixListReferenceResultTypeDef](./type_defs.md#createtransitgatewayprefixlistreferenceresulttypedef).
 
+<a id="create_transit_gateway_route"></a>
+
 ### create_transit_gateway_route
 
 Creates a static route for the specified transit gateway route table.
@@ -3263,6 +3488,8 @@ Keyword-only arguments:
 Returns
 [CreateTransitGatewayRouteResultTypeDef](./type_defs.md#createtransitgatewayrouteresulttypedef).
 
+<a id="create_transit_gateway_route_table"></a>
+
 ### create_transit_gateway_route_table
 
 Creates a route table for the specified transit gateway.
@@ -3285,6 +3512,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTransitGatewayRouteTableResultTypeDef](./type_defs.md#createtransitgatewayroutetableresulttypedef).
+
+<a id="create_transit_gateway_vpc_attachment"></a>
 
 ### create_transit_gateway_vpc_attachment
 
@@ -3312,6 +3541,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTransitGatewayVpcAttachmentResultTypeDef](./type_defs.md#createtransitgatewayvpcattachmentresulttypedef).
+
+<a id="create_volume"></a>
 
 ### create_volume
 
@@ -3346,6 +3577,8 @@ Keyword-only arguments:
 Returns
 [VolumeResponseMetadataTypeDef](./type_defs.md#volumeresponsemetadatatypedef).
 
+<a id="create_vpc"></a>
+
 ### create_vpc
 
 Creates a VPC with the specified IPv4 CIDR block.
@@ -3375,6 +3608,8 @@ Keyword-only arguments:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [CreateVpcResultTypeDef](./type_defs.md#createvpcresulttypedef).
+
+<a id="create_vpc_endpoint"></a>
 
 ### create_vpc_endpoint
 
@@ -3406,6 +3641,8 @@ Keyword-only arguments:
 Returns
 [CreateVpcEndpointResultTypeDef](./type_defs.md#createvpcendpointresulttypedef).
 
+<a id="create_vpc_endpoint_connection_notification"></a>
+
 ### create_vpc_endpoint_connection_notification
 
 Creates a connection notification for a specified VPC endpoint or VPC endpoint
@@ -3431,6 +3668,8 @@ Keyword-only arguments:
 
 Returns
 [CreateVpcEndpointConnectionNotificationResultTypeDef](./type_defs.md#createvpcendpointconnectionnotificationresulttypedef).
+
+<a id="create_vpc_endpoint_service_configuration"></a>
 
 ### create_vpc_endpoint_service_configuration
 
@@ -3460,6 +3699,8 @@ Keyword-only arguments:
 Returns
 [CreateVpcEndpointServiceConfigurationResultTypeDef](./type_defs.md#createvpcendpointserviceconfigurationresulttypedef).
 
+<a id="create_vpc_peering_connection"></a>
+
 ### create_vpc_peering_connection
 
 Requests a VPC peering connection between two VPCs: a requester VPC that you
@@ -3486,6 +3727,8 @@ Keyword-only arguments:
 
 Returns
 [CreateVpcPeeringConnectionResultTypeDef](./type_defs.md#createvpcpeeringconnectionresulttypedef).
+
+<a id="create_vpn_connection"></a>
 
 ### create_vpn_connection
 
@@ -3515,6 +3758,8 @@ Keyword-only arguments:
 Returns
 [CreateVpnConnectionResultTypeDef](./type_defs.md#createvpnconnectionresulttypedef).
 
+<a id="create_vpn_connection_route"></a>
+
 ### create_vpn_connection_route
 
 Creates a static route associated with a VPN connection between an existing
@@ -3532,6 +3777,8 @@ Keyword-only arguments:
 
 - `DestinationCidrBlock`: `str` *(required)*
 - `VpnConnectionId`: `str` *(required)*
+
+<a id="create_vpn_gateway"></a>
 
 ### create_vpn_gateway
 
@@ -3558,6 +3805,8 @@ Keyword-only arguments:
 Returns
 [CreateVpnGatewayResultTypeDef](./type_defs.md#createvpngatewayresulttypedef).
 
+<a id="delete_carrier_gateway"></a>
+
 ### delete_carrier_gateway
 
 Deletes a carrier gateway.
@@ -3578,6 +3827,8 @@ Keyword-only arguments:
 Returns
 [DeleteCarrierGatewayResultTypeDef](./type_defs.md#deletecarriergatewayresulttypedef).
 
+<a id="delete_client_vpn_endpoint"></a>
+
 ### delete_client_vpn_endpoint
 
 Deletes the specified Client VPN endpoint.
@@ -3597,6 +3848,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteClientVpnEndpointResultTypeDef](./type_defs.md#deleteclientvpnendpointresulttypedef).
+
+<a id="delete_client_vpn_route"></a>
 
 ### delete_client_vpn_route
 
@@ -3620,6 +3873,8 @@ Keyword-only arguments:
 Returns
 [DeleteClientVpnRouteResultTypeDef](./type_defs.md#deleteclientvpnrouteresulttypedef).
 
+<a id="delete_customer_gateway"></a>
+
 ### delete_customer_gateway
 
 Deletes the specified customer gateway.
@@ -3637,6 +3892,8 @@ Keyword-only arguments:
 - `CustomerGatewayId`: `str` *(required)*
 - `DryRun`: `bool`
 
+<a id="delete_dhcp_options"></a>
+
 ### delete_dhcp_options
 
 Deletes the specified set of DHCP options.
@@ -3653,6 +3910,8 @@ Keyword-only arguments:
 
 - `DhcpOptionsId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="delete_egress_only_internet_gateway"></a>
 
 ### delete_egress_only_internet_gateway
 
@@ -3675,6 +3934,8 @@ Keyword-only arguments:
 Returns
 [DeleteEgressOnlyInternetGatewayResultTypeDef](./type_defs.md#deleteegressonlyinternetgatewayresulttypedef).
 
+<a id="delete_fleets"></a>
+
 ### delete_fleets
 
 Deletes the specified EC2 Fleet.
@@ -3694,6 +3955,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns [DeleteFleetsResultTypeDef](./type_defs.md#deletefleetsresulttypedef).
+
+<a id="delete_flow_logs"></a>
 
 ### delete_flow_logs
 
@@ -3715,6 +3978,8 @@ Keyword-only arguments:
 Returns
 [DeleteFlowLogsResultTypeDef](./type_defs.md#deleteflowlogsresulttypedef).
 
+<a id="delete_fpga_image"></a>
+
 ### delete_fpga_image
 
 Deletes the specified Amazon FPGA Image (AFI).
@@ -3734,6 +3999,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteFpgaImageResultTypeDef](./type_defs.md#deletefpgaimageresulttypedef).
+
+<a id="delete_instance_event_window"></a>
 
 ### delete_instance_event_window
 
@@ -3756,6 +4023,8 @@ Keyword-only arguments:
 Returns
 [DeleteInstanceEventWindowResultTypeDef](./type_defs.md#deleteinstanceeventwindowresulttypedef).
 
+<a id="delete_internet_gateway"></a>
+
 ### delete_internet_gateway
 
 Deletes the specified internet gateway.
@@ -3772,6 +4041,8 @@ Keyword-only arguments:
 
 - `InternetGatewayId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="delete_ipam"></a>
 
 ### delete_ipam
 
@@ -3791,6 +4062,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns [DeleteIpamResultTypeDef](./type_defs.md#deleteipamresulttypedef).
+
+<a id="delete_ipam_pool"></a>
 
 ### delete_ipam_pool
 
@@ -3812,6 +4085,8 @@ Keyword-only arguments:
 Returns
 [DeleteIpamPoolResultTypeDef](./type_defs.md#deleteipampoolresulttypedef).
 
+<a id="delete_ipam_scope"></a>
+
 ### delete_ipam_scope
 
 Delete the scope for an IPAM.
@@ -3832,6 +4107,8 @@ Keyword-only arguments:
 Returns
 [DeleteIpamScopeResultTypeDef](./type_defs.md#deleteipamscoperesulttypedef).
 
+<a id="delete_key_pair"></a>
+
 ### delete_key_pair
 
 Deletes the specified key pair, by removing the public key from Amazon EC2.
@@ -3849,6 +4126,8 @@ Keyword-only arguments:
 - `KeyName`: `str`
 - `KeyPairId`: `str`
 - `DryRun`: `bool`
+
+<a id="delete_launch_template"></a>
 
 ### delete_launch_template
 
@@ -3870,6 +4149,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteLaunchTemplateResultTypeDef](./type_defs.md#deletelaunchtemplateresulttypedef).
+
+<a id="delete_launch_template_versions"></a>
 
 ### delete_launch_template_versions
 
@@ -3894,6 +4175,8 @@ Keyword-only arguments:
 Returns
 [DeleteLaunchTemplateVersionsResultTypeDef](./type_defs.md#deletelaunchtemplateversionsresulttypedef).
 
+<a id="delete_local_gateway_route"></a>
+
 ### delete_local_gateway_route
 
 Deletes the specified route from the specified local gateway route table.
@@ -3914,6 +4197,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteLocalGatewayRouteResultTypeDef](./type_defs.md#deletelocalgatewayrouteresulttypedef).
+
+<a id="delete_local_gateway_route_table_vpc_association"></a>
 
 ### delete_local_gateway_route_table_vpc_association
 
@@ -3936,6 +4221,8 @@ Keyword-only arguments:
 Returns
 [DeleteLocalGatewayRouteTableVpcAssociationResultTypeDef](./type_defs.md#deletelocalgatewayroutetablevpcassociationresulttypedef).
 
+<a id="delete_managed_prefix_list"></a>
+
 ### delete_managed_prefix_list
 
 Deletes the specified managed prefix list.
@@ -3955,6 +4242,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteManagedPrefixListResultTypeDef](./type_defs.md#deletemanagedprefixlistresulttypedef).
+
+<a id="delete_nat_gateway"></a>
 
 ### delete_nat_gateway
 
@@ -3976,6 +4265,8 @@ Keyword-only arguments:
 Returns
 [DeleteNatGatewayResultTypeDef](./type_defs.md#deletenatgatewayresulttypedef).
 
+<a id="delete_network_acl"></a>
+
 ### delete_network_acl
 
 Deletes the specified network ACL.
@@ -3992,6 +4283,8 @@ Keyword-only arguments:
 
 - `NetworkAclId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="delete_network_acl_entry"></a>
 
 ### delete_network_acl_entry
 
@@ -4012,6 +4305,8 @@ Keyword-only arguments:
 - `NetworkAclId`: `str` *(required)*
 - `RuleNumber`: `int` *(required)*
 - `DryRun`: `bool`
+
+<a id="delete_network_insights_access_scope"></a>
 
 ### delete_network_insights_access_scope
 
@@ -4034,6 +4329,8 @@ Keyword-only arguments:
 Returns
 [DeleteNetworkInsightsAccessScopeResultTypeDef](./type_defs.md#deletenetworkinsightsaccessscoperesulttypedef).
 
+<a id="delete_network_insights_access_scope_analysis"></a>
+
 ### delete_network_insights_access_scope_analysis
 
 Deletes the specified Network Access Scope analysis.
@@ -4054,6 +4351,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteNetworkInsightsAccessScopeAnalysisResultTypeDef](./type_defs.md#deletenetworkinsightsaccessscopeanalysisresulttypedef).
+
+<a id="delete_network_insights_analysis"></a>
 
 ### delete_network_insights_analysis
 
@@ -4076,6 +4375,8 @@ Keyword-only arguments:
 Returns
 [DeleteNetworkInsightsAnalysisResultTypeDef](./type_defs.md#deletenetworkinsightsanalysisresulttypedef).
 
+<a id="delete_network_insights_path"></a>
+
 ### delete_network_insights_path
 
 Deletes the specified path.
@@ -4096,6 +4397,8 @@ Keyword-only arguments:
 Returns
 [DeleteNetworkInsightsPathResultTypeDef](./type_defs.md#deletenetworkinsightspathresulttypedef).
 
+<a id="delete_network_interface"></a>
+
 ### delete_network_interface
 
 Deletes the specified network interface.
@@ -4112,6 +4415,8 @@ Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="delete_network_interface_permission"></a>
 
 ### delete_network_interface_permission
 
@@ -4135,6 +4440,8 @@ Keyword-only arguments:
 Returns
 [DeleteNetworkInterfacePermissionResultTypeDef](./type_defs.md#deletenetworkinterfacepermissionresulttypedef).
 
+<a id="delete_placement_group"></a>
+
 ### delete_placement_group
 
 Deletes the specified placement group.
@@ -4151,6 +4458,8 @@ Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="delete_public_ipv4_pool"></a>
 
 ### delete_public_ipv4_pool
 
@@ -4171,6 +4480,8 @@ Keyword-only arguments:
 
 Returns
 [DeletePublicIpv4PoolResultTypeDef](./type_defs.md#deletepublicipv4poolresulttypedef).
+
+<a id="delete_queued_reserved_instances"></a>
 
 ### delete_queued_reserved_instances
 
@@ -4193,6 +4504,8 @@ Keyword-only arguments:
 Returns
 [DeleteQueuedReservedInstancesResultTypeDef](./type_defs.md#deletequeuedreservedinstancesresulttypedef).
 
+<a id="delete_route"></a>
+
 ### delete_route
 
 Deletes the specified route from the specified route table.
@@ -4213,6 +4526,8 @@ Keyword-only arguments:
 - `DestinationPrefixListId`: `str`
 - `DryRun`: `bool`
 
+<a id="delete_route_table"></a>
+
 ### delete_route_table
 
 Deletes the specified route table.
@@ -4229,6 +4544,8 @@ Keyword-only arguments:
 
 - `RouteTableId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="delete_security_group"></a>
 
 ### delete_security_group
 
@@ -4248,6 +4565,8 @@ Keyword-only arguments:
 - `GroupName`: `str`
 - `DryRun`: `bool`
 
+<a id="delete_snapshot"></a>
+
 ### delete_snapshot
 
 Deletes the specified snapshot.
@@ -4264,6 +4583,8 @@ Keyword-only arguments:
 
 - `SnapshotId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="delete_spot_datafeed_subscription"></a>
 
 ### delete_spot_datafeed_subscription
 
@@ -4282,6 +4603,8 @@ Keyword-only arguments:
 
 - `DryRun`: `bool`
 
+<a id="delete_subnet"></a>
+
 ### delete_subnet
 
 Deletes the specified subnet.
@@ -4298,6 +4621,8 @@ Keyword-only arguments:
 
 - `SubnetId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="delete_subnet_cidr_reservation"></a>
 
 ### delete_subnet_cidr_reservation
 
@@ -4320,6 +4645,8 @@ Keyword-only arguments:
 Returns
 [DeleteSubnetCidrReservationResultTypeDef](./type_defs.md#deletesubnetcidrreservationresulttypedef).
 
+<a id="delete_tags"></a>
+
 ### delete_tags
 
 Deletes the specified set of tags from the specified set of resources.
@@ -4337,6 +4664,8 @@ Keyword-only arguments:
 - `Resources`: `Sequence`\[`Any`\] *(required)*
 - `DryRun`: `bool`
 - `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+<a id="delete_traffic_mirror_filter"></a>
 
 ### delete_traffic_mirror_filter
 
@@ -4357,6 +4686,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteTrafficMirrorFilterResultTypeDef](./type_defs.md#deletetrafficmirrorfilterresulttypedef).
+
+<a id="delete_traffic_mirror_filter_rule"></a>
 
 ### delete_traffic_mirror_filter_rule
 
@@ -4379,6 +4710,8 @@ Keyword-only arguments:
 Returns
 [DeleteTrafficMirrorFilterRuleResultTypeDef](./type_defs.md#deletetrafficmirrorfilterruleresulttypedef).
 
+<a id="delete_traffic_mirror_session"></a>
+
 ### delete_traffic_mirror_session
 
 Deletes the specified Traffic Mirror session.
@@ -4400,6 +4733,8 @@ Keyword-only arguments:
 Returns
 [DeleteTrafficMirrorSessionResultTypeDef](./type_defs.md#deletetrafficmirrorsessionresulttypedef).
 
+<a id="delete_traffic_mirror_target"></a>
+
 ### delete_traffic_mirror_target
 
 Deletes the specified Traffic Mirror target.
@@ -4420,6 +4755,8 @@ Keyword-only arguments:
 Returns
 [DeleteTrafficMirrorTargetResultTypeDef](./type_defs.md#deletetrafficmirrortargetresulttypedef).
 
+<a id="delete_transit_gateway"></a>
+
 ### delete_transit_gateway
 
 Deletes the specified transit gateway.
@@ -4439,6 +4776,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteTransitGatewayResultTypeDef](./type_defs.md#deletetransitgatewayresulttypedef).
+
+<a id="delete_transit_gateway_connect"></a>
 
 ### delete_transit_gateway_connect
 
@@ -4461,6 +4800,8 @@ Keyword-only arguments:
 Returns
 [DeleteTransitGatewayConnectResultTypeDef](./type_defs.md#deletetransitgatewayconnectresulttypedef).
 
+<a id="delete_transit_gateway_connect_peer"></a>
+
 ### delete_transit_gateway_connect_peer
 
 Deletes the specified Connect peer.
@@ -4481,6 +4822,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteTransitGatewayConnectPeerResultTypeDef](./type_defs.md#deletetransitgatewayconnectpeerresulttypedef).
+
+<a id="delete_transit_gateway_multicast_domain"></a>
 
 ### delete_transit_gateway_multicast_domain
 
@@ -4503,6 +4846,8 @@ Keyword-only arguments:
 Returns
 [DeleteTransitGatewayMulticastDomainResultTypeDef](./type_defs.md#deletetransitgatewaymulticastdomainresulttypedef).
 
+<a id="delete_transit_gateway_peering_attachment"></a>
+
 ### delete_transit_gateway_peering_attachment
 
 Deletes a transit gateway peering attachment.
@@ -4523,6 +4868,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteTransitGatewayPeeringAttachmentResultTypeDef](./type_defs.md#deletetransitgatewaypeeringattachmentresulttypedef).
+
+<a id="delete_transit_gateway_prefix_list_reference"></a>
 
 ### delete_transit_gateway_prefix_list_reference
 
@@ -4547,6 +4894,8 @@ Keyword-only arguments:
 Returns
 [DeleteTransitGatewayPrefixListReferenceResultTypeDef](./type_defs.md#deletetransitgatewayprefixlistreferenceresulttypedef).
 
+<a id="delete_transit_gateway_route"></a>
+
 ### delete_transit_gateway_route
 
 Deletes the specified route from the specified transit gateway route table.
@@ -4567,6 +4916,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteTransitGatewayRouteResultTypeDef](./type_defs.md#deletetransitgatewayrouteresulttypedef).
+
+<a id="delete_transit_gateway_route_table"></a>
 
 ### delete_transit_gateway_route_table
 
@@ -4589,6 +4940,8 @@ Keyword-only arguments:
 Returns
 [DeleteTransitGatewayRouteTableResultTypeDef](./type_defs.md#deletetransitgatewayroutetableresulttypedef).
 
+<a id="delete_transit_gateway_vpc_attachment"></a>
+
 ### delete_transit_gateway_vpc_attachment
 
 Deletes the specified VPC attachment.
@@ -4610,6 +4963,8 @@ Keyword-only arguments:
 Returns
 [DeleteTransitGatewayVpcAttachmentResultTypeDef](./type_defs.md#deletetransitgatewayvpcattachmentresulttypedef).
 
+<a id="delete_volume"></a>
+
 ### delete_volume
 
 Deletes the specified EBS volume.
@@ -4627,6 +4982,8 @@ Keyword-only arguments:
 - `VolumeId`: `str` *(required)*
 - `DryRun`: `bool`
 
+<a id="delete_vpc"></a>
+
 ### delete_vpc
 
 Deletes the specified VPC.
@@ -4643,6 +5000,8 @@ Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="delete_vpc_endpoint_connection_notifications"></a>
 
 ### delete_vpc_endpoint_connection_notifications
 
@@ -4665,6 +5024,8 @@ Keyword-only arguments:
 Returns
 [DeleteVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#deletevpcendpointconnectionnotificationsresulttypedef).
 
+<a id="delete_vpc_endpoint_service_configurations"></a>
+
 ### delete_vpc_endpoint_service_configurations
 
 Deletes one or more VPC endpoint service configurations in your account.
@@ -4686,6 +5047,8 @@ Keyword-only arguments:
 Returns
 [DeleteVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#deletevpcendpointserviceconfigurationsresulttypedef).
 
+<a id="delete_vpc_endpoints"></a>
+
 ### delete_vpc_endpoints
 
 Deletes one or more specified VPC endpoints.
@@ -4705,6 +5068,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteVpcEndpointsResultTypeDef](./type_defs.md#deletevpcendpointsresulttypedef).
+
+<a id="delete_vpc_peering_connection"></a>
 
 ### delete_vpc_peering_connection
 
@@ -4727,6 +5092,8 @@ Keyword-only arguments:
 Returns
 [DeleteVpcPeeringConnectionResultTypeDef](./type_defs.md#deletevpcpeeringconnectionresulttypedef).
 
+<a id="delete_vpn_connection"></a>
+
 ### delete_vpn_connection
 
 Deletes the specified VPN connection.
@@ -4743,6 +5110,8 @@ Keyword-only arguments:
 
 - `VpnConnectionId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="delete_vpn_connection_route"></a>
 
 ### delete_vpn_connection_route
 
@@ -4762,6 +5131,8 @@ Keyword-only arguments:
 - `DestinationCidrBlock`: `str` *(required)*
 - `VpnConnectionId`: `str` *(required)*
 
+<a id="delete_vpn_gateway"></a>
+
 ### delete_vpn_gateway
 
 Deletes the specified virtual private gateway.
@@ -4778,6 +5149,8 @@ Keyword-only arguments:
 
 - `VpnGatewayId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="deprovision_byoip_cidr"></a>
 
 ### deprovision_byoip_cidr
 
@@ -4801,6 +5174,8 @@ Keyword-only arguments:
 Returns
 [DeprovisionByoipCidrResultTypeDef](./type_defs.md#deprovisionbyoipcidrresulttypedef).
 
+<a id="deprovision_ipam_pool_cidr"></a>
+
 ### deprovision_ipam_pool_cidr
 
 Deprovision a CIDR provisioned from an IPAM pool.
@@ -4821,6 +5196,8 @@ Keyword-only arguments:
 
 Returns
 [DeprovisionIpamPoolCidrResultTypeDef](./type_defs.md#deprovisionipampoolcidrresulttypedef).
+
+<a id="deprovision_public_ipv4_pool_cidr"></a>
 
 ### deprovision_public_ipv4_pool_cidr
 
@@ -4844,6 +5221,8 @@ Keyword-only arguments:
 Returns
 [DeprovisionPublicIpv4PoolCidrResultTypeDef](./type_defs.md#deprovisionpublicipv4poolcidrresulttypedef).
 
+<a id="deregister_image"></a>
+
 ### deregister_image
 
 Deregisters the specified AMI.
@@ -4860,6 +5239,8 @@ Keyword-only arguments:
 
 - `ImageId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="deregister_instance_event_notification_attributes"></a>
 
 ### deregister_instance_event_notification_attributes
 
@@ -4883,6 +5264,8 @@ Keyword-only arguments:
 
 Returns
 [DeregisterInstanceEventNotificationAttributesResultTypeDef](./type_defs.md#deregisterinstanceeventnotificationattributesresulttypedef).
+
+<a id="deregister_transit_gateway_multicast_group_members"></a>
 
 ### deregister_transit_gateway_multicast_group_members
 
@@ -4909,6 +5292,8 @@ Keyword-only arguments:
 Returns
 [DeregisterTransitGatewayMulticastGroupMembersResultTypeDef](./type_defs.md#deregistertransitgatewaymulticastgroupmembersresulttypedef).
 
+<a id="deregister_transit_gateway_multicast_group_sources"></a>
+
 ### deregister_transit_gateway_multicast_group_sources
 
 Deregisters the specified sources (network interfaces) from the transit gateway
@@ -4934,6 +5319,8 @@ Keyword-only arguments:
 Returns
 [DeregisterTransitGatewayMulticastGroupSourcesResultTypeDef](./type_defs.md#deregistertransitgatewaymulticastgroupsourcesresulttypedef).
 
+<a id="describe_account_attributes"></a>
+
 ### describe_account_attributes
 
 Describes attributes of your Amazon Web Services account.
@@ -4954,6 +5341,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAccountAttributesResultTypeDef](./type_defs.md#describeaccountattributesresulttypedef).
+
+<a id="describe_addresses"></a>
 
 ### describe_addresses
 
@@ -4977,6 +5366,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef).
+
+<a id="describe_addresses_attribute"></a>
 
 ### describe_addresses_attribute
 
@@ -5002,6 +5393,8 @@ Keyword-only arguments:
 Returns
 [DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef).
 
+<a id="describe_aggregate_id_format"></a>
+
 ### describe_aggregate_id_format
 
 Describes the longer ID format settings for all resource types in a specific
@@ -5021,6 +5414,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAggregateIdFormatResultTypeDef](./type_defs.md#describeaggregateidformatresulttypedef).
+
+<a id="describe_availability_zones"></a>
 
 ### describe_availability_zones
 
@@ -5046,6 +5441,8 @@ Keyword-only arguments:
 Returns
 [DescribeAvailabilityZonesResultTypeDef](./type_defs.md#describeavailabilityzonesresulttypedef).
 
+<a id="describe_bundle_tasks"></a>
+
 ### describe_bundle_tasks
 
 Describes the specified bundle tasks or all of your bundle tasks.
@@ -5066,6 +5463,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBundleTasksResultTypeDef](./type_defs.md#describebundletasksresulttypedef).
+
+<a id="describe_byoip_cidrs"></a>
 
 ### describe_byoip_cidrs
 
@@ -5088,6 +5487,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef).
+
+<a id="describe_capacity_reservation_fleets"></a>
 
 ### describe_capacity_reservation_fleets
 
@@ -5113,6 +5514,8 @@ Keyword-only arguments:
 Returns
 [DescribeCapacityReservationFleetsResultTypeDef](./type_defs.md#describecapacityreservationfleetsresulttypedef).
 
+<a id="describe_capacity_reservations"></a>
+
 ### describe_capacity_reservations
 
 Describes one or more of your Capacity Reservations.
@@ -5137,6 +5540,8 @@ Keyword-only arguments:
 Returns
 [DescribeCapacityReservationsResultTypeDef](./type_defs.md#describecapacityreservationsresulttypedef).
 
+<a id="describe_carrier_gateways"></a>
+
 ### describe_carrier_gateways
 
 Describes one or more of your carrier gateways.
@@ -5159,6 +5564,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCarrierGatewaysResultTypeDef](./type_defs.md#describecarriergatewaysresulttypedef).
+
+<a id="describe_classic_link_instances"></a>
 
 ### describe_classic_link_instances
 
@@ -5184,6 +5591,8 @@ Keyword-only arguments:
 Returns
 [DescribeClassicLinkInstancesResultTypeDef](./type_defs.md#describeclassiclinkinstancesresulttypedef).
 
+<a id="describe_client_vpn_authorization_rules"></a>
+
 ### describe_client_vpn_authorization_rules
 
 Describes the authorization rules for a specified Client VPN endpoint.
@@ -5207,6 +5616,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeClientVpnAuthorizationRulesResultTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresulttypedef).
+
+<a id="describe_client_vpn_connections"></a>
 
 ### describe_client_vpn_connections
 
@@ -5233,6 +5644,8 @@ Keyword-only arguments:
 Returns
 [DescribeClientVpnConnectionsResultTypeDef](./type_defs.md#describeclientvpnconnectionsresulttypedef).
 
+<a id="describe_client_vpn_endpoints"></a>
+
 ### describe_client_vpn_endpoints
 
 Describes one or more Client VPN endpoints in the account.
@@ -5257,6 +5670,8 @@ Keyword-only arguments:
 Returns
 [DescribeClientVpnEndpointsResultTypeDef](./type_defs.md#describeclientvpnendpointsresulttypedef).
 
+<a id="describe_client_vpn_routes"></a>
+
 ### describe_client_vpn_routes
 
 Describes the routes for the specified Client VPN endpoint.
@@ -5279,6 +5694,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeClientVpnRoutesResultTypeDef](./type_defs.md#describeclientvpnroutesresulttypedef).
+
+<a id="describe_client_vpn_target_networks"></a>
 
 ### describe_client_vpn_target_networks
 
@@ -5306,6 +5723,8 @@ Keyword-only arguments:
 Returns
 [DescribeClientVpnTargetNetworksResultTypeDef](./type_defs.md#describeclientvpntargetnetworksresulttypedef).
 
+<a id="describe_coip_pools"></a>
+
 ### describe_coip_pools
 
 Describes the specified customer-owned address pools or all of your customer-
@@ -5330,6 +5749,8 @@ Keyword-only arguments:
 Returns
 [DescribeCoipPoolsResultTypeDef](./type_defs.md#describecoippoolsresulttypedef).
 
+<a id="describe_conversion_tasks"></a>
+
 ### describe_conversion_tasks
 
 Describes the specified conversion tasks or all your conversion tasks.
@@ -5349,6 +5770,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeConversionTasksResultTypeDef](./type_defs.md#describeconversiontasksresulttypedef).
+
+<a id="describe_customer_gateways"></a>
 
 ### describe_customer_gateways
 
@@ -5370,6 +5793,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCustomerGatewaysResultTypeDef](./type_defs.md#describecustomergatewaysresulttypedef).
+
+<a id="describe_dhcp_options"></a>
 
 ### describe_dhcp_options
 
@@ -5393,6 +5818,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDhcpOptionsResultTypeDef](./type_defs.md#describedhcpoptionsresulttypedef).
+
+<a id="describe_egress_only_internet_gateways"></a>
 
 ### describe_egress_only_internet_gateways
 
@@ -5418,6 +5845,8 @@ Keyword-only arguments:
 Returns
 [DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef).
 
+<a id="describe_elastic_gpus"></a>
+
 ### describe_elastic_gpus
 
 Describes the Elastic Graphics accelerator associated with your instances.
@@ -5440,6 +5869,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeElasticGpusResultTypeDef](./type_defs.md#describeelasticgpusresulttypedef).
+
+<a id="describe_export_image_tasks"></a>
 
 ### describe_export_image_tasks
 
@@ -5464,6 +5895,8 @@ Keyword-only arguments:
 Returns
 [DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef).
 
+<a id="describe_export_tasks"></a>
+
 ### describe_export_tasks
 
 Describes the specified export instance tasks or all of your export instance
@@ -5484,6 +5917,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeExportTasksResultTypeDef](./type_defs.md#describeexporttasksresulttypedef).
+
+<a id="describe_fast_launch_images"></a>
 
 ### describe_fast_launch_images
 
@@ -5508,6 +5943,8 @@ Keyword-only arguments:
 Returns
 [DescribeFastLaunchImagesResultTypeDef](./type_defs.md#describefastlaunchimagesresulttypedef).
 
+<a id="describe_fast_snapshot_restores"></a>
+
 ### describe_fast_snapshot_restores
 
 Describes the state of fast snapshot restores for your snapshots.
@@ -5530,6 +5967,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFastSnapshotRestoresResultTypeDef](./type_defs.md#describefastsnapshotrestoresresulttypedef).
+
+<a id="describe_fleet_history"></a>
 
 ### describe_fleet_history
 
@@ -5555,6 +5994,8 @@ Keyword-only arguments:
 Returns
 [DescribeFleetHistoryResultTypeDef](./type_defs.md#describefleethistoryresulttypedef).
 
+<a id="describe_fleet_instances"></a>
+
 ### describe_fleet_instances
 
 Describes the running instances for the specified EC2 Fleet.
@@ -5577,6 +6018,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFleetInstancesResultTypeDef](./type_defs.md#describefleetinstancesresulttypedef).
+
+<a id="describe_fleets"></a>
 
 ### describe_fleets
 
@@ -5601,6 +6044,8 @@ Keyword-only arguments:
 Returns
 [DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef).
 
+<a id="describe_flow_logs"></a>
+
 ### describe_flow_logs
 
 Describes one or more flow logs.
@@ -5623,6 +6068,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFlowLogsResultTypeDef](./type_defs.md#describeflowlogsresulttypedef).
+
+<a id="describe_fpga_image_attribute"></a>
 
 ### describe_fpga_image_attribute
 
@@ -5648,6 +6095,8 @@ Keyword-only arguments:
 Returns
 [DescribeFpgaImageAttributeResultTypeDef](./type_defs.md#describefpgaimageattributeresulttypedef).
 
+<a id="describe_fpga_images"></a>
+
 ### describe_fpga_images
 
 Describes the Amazon FPGA Images (AFIs) available to you.
@@ -5671,6 +6120,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFpgaImagesResultTypeDef](./type_defs.md#describefpgaimagesresulttypedef).
+
+<a id="describe_host_reservation_offerings"></a>
 
 ### describe_host_reservation_offerings
 
@@ -5697,6 +6148,8 @@ Keyword-only arguments:
 Returns
 [DescribeHostReservationOfferingsResultTypeDef](./type_defs.md#describehostreservationofferingsresulttypedef).
 
+<a id="describe_host_reservations"></a>
+
 ### describe_host_reservations
 
 Describes reservations that are associated with Dedicated Hosts in your
@@ -5720,6 +6173,8 @@ Keyword-only arguments:
 Returns
 [DescribeHostReservationsResultTypeDef](./type_defs.md#describehostreservationsresulttypedef).
 
+<a id="describe_hosts"></a>
+
 ### describe_hosts
 
 Describes the specified Dedicated Hosts or all your Dedicated Hosts.
@@ -5741,6 +6196,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeHostsResultTypeDef](./type_defs.md#describehostsresulttypedef).
+
+<a id="describe_iam_instance_profile_associations"></a>
 
 ### describe_iam_instance_profile_associations
 
@@ -5765,6 +6222,8 @@ Keyword-only arguments:
 Returns
 [DescribeIamInstanceProfileAssociationsResultTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresulttypedef).
 
+<a id="describe_id_format"></a>
+
 ### describe_id_format
 
 Describes the ID format settings for your resources on a per-Region basis, for
@@ -5784,6 +6243,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeIdFormatResultTypeDef](./type_defs.md#describeidformatresulttypedef).
+
+<a id="describe_identity_id_format"></a>
 
 ### describe_identity_id_format
 
@@ -5806,6 +6267,8 @@ Keyword-only arguments:
 Returns
 [DescribeIdentityIdFormatResultTypeDef](./type_defs.md#describeidentityidformatresulttypedef).
 
+<a id="describe_image_attribute"></a>
+
 ### describe_image_attribute
 
 Describes the specified attribute of the specified AMI.
@@ -5826,6 +6289,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns [ImageAttributeTypeDef](./type_defs.md#imageattributetypedef).
+
+<a id="describe_images"></a>
 
 ### describe_images
 
@@ -5852,6 +6317,8 @@ Keyword-only arguments:
 Returns
 [DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef).
 
+<a id="describe_import_image_tasks"></a>
+
 ### describe_import_image_tasks
 
 Displays details about an import virtual machine or import snapshot tasks that
@@ -5875,6 +6342,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeImportImageTasksResultTypeDef](./type_defs.md#describeimportimagetasksresulttypedef).
+
+<a id="describe_import_snapshot_tasks"></a>
 
 ### describe_import_snapshot_tasks
 
@@ -5900,6 +6369,8 @@ Keyword-only arguments:
 Returns
 [DescribeImportSnapshotTasksResultTypeDef](./type_defs.md#describeimportsnapshottasksresulttypedef).
 
+<a id="describe_instance_attribute"></a>
+
 ### describe_instance_attribute
 
 Describes the specified attribute of the specified instance.
@@ -5921,6 +6392,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns [InstanceAttributeTypeDef](./type_defs.md#instanceattributetypedef).
+
+<a id="describe_instance_credit_specifications"></a>
 
 ### describe_instance_credit_specifications
 
@@ -5947,6 +6420,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef).
 
+<a id="describe_instance_event_notification_attributes"></a>
+
 ### describe_instance_event_notification_attributes
 
 Describes the tag keys that are registered to appear in scheduled event
@@ -5967,6 +6442,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInstanceEventNotificationAttributesResultTypeDef](./type_defs.md#describeinstanceeventnotificationattributesresulttypedef).
+
+<a id="describe_instance_event_windows"></a>
 
 ### describe_instance_event_windows
 
@@ -5992,6 +6469,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstanceEventWindowsResultTypeDef](./type_defs.md#describeinstanceeventwindowsresulttypedef).
 
+<a id="describe_instance_status"></a>
+
 ### describe_instance_status
 
 Describes the status of the specified instances or all of your instances.
@@ -6015,6 +6494,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInstanceStatusResultTypeDef](./type_defs.md#describeinstancestatusresulttypedef).
+
+<a id="describe_instance_type_offerings"></a>
 
 ### describe_instance_type_offerings
 
@@ -6040,6 +6521,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstanceTypeOfferingsResultTypeDef](./type_defs.md#describeinstancetypeofferingsresulttypedef).
 
+<a id="describe_instance_types"></a>
+
 ### describe_instance_types
 
 Describes the details of the instance types that are offered in a location.
@@ -6064,6 +6547,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstanceTypesResultTypeDef](./type_defs.md#describeinstancetypesresulttypedef).
 
+<a id="describe_instances"></a>
+
 ### describe_instances
 
 Describes the specified instances or all instances.
@@ -6086,6 +6571,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef).
+
+<a id="describe_internet_gateways"></a>
 
 ### describe_internet_gateways
 
@@ -6110,6 +6597,8 @@ Keyword-only arguments:
 Returns
 [DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef).
 
+<a id="describe_ipam_pools"></a>
+
 ### describe_ipam_pools
 
 Get information about your IPAM pools.
@@ -6132,6 +6621,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeIpamPoolsResultTypeDef](./type_defs.md#describeipampoolsresulttypedef).
+
+<a id="describe_ipam_scopes"></a>
 
 ### describe_ipam_scopes
 
@@ -6156,6 +6647,8 @@ Keyword-only arguments:
 Returns
 [DescribeIpamScopesResultTypeDef](./type_defs.md#describeipamscopesresulttypedef).
 
+<a id="describe_ipams"></a>
+
 ### describe_ipams
 
 Get information about your IPAM pools.
@@ -6178,6 +6671,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeIpamsResultTypeDef](./type_defs.md#describeipamsresulttypedef).
+
+<a id="describe_ipv6_pools"></a>
 
 ### describe_ipv6_pools
 
@@ -6202,6 +6697,8 @@ Keyword-only arguments:
 Returns
 [DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef).
 
+<a id="describe_key_pairs"></a>
+
 ### describe_key_pairs
 
 Describes the specified key pairs or all of your key pairs.
@@ -6223,6 +6720,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeKeyPairsResultTypeDef](./type_defs.md#describekeypairsresulttypedef).
+
+<a id="describe_launch_template_versions"></a>
 
 ### describe_launch_template_versions
 
@@ -6252,6 +6751,8 @@ Keyword-only arguments:
 Returns
 [DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef).
 
+<a id="describe_launch_templates"></a>
+
 ### describe_launch_templates
 
 Describes one or more launch templates.
@@ -6275,6 +6776,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLaunchTemplatesResultTypeDef](./type_defs.md#describelaunchtemplatesresulttypedef).
+
+<a id="describe_local_gateway_route_table_virtual_interface_group_associations"></a>
 
 ### describe_local_gateway_route_table_virtual_interface_group_associations
 
@@ -6303,6 +6806,8 @@ Keyword-only arguments:
 Returns
 [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef).
 
+<a id="describe_local_gateway_route_table_vpc_associations"></a>
+
 ### describe_local_gateway_route_table_vpc_associations
 
 Describes the specified associations between VPCs and local gateway route
@@ -6329,6 +6834,8 @@ Keyword-only arguments:
 Returns
 [DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresulttypedef).
 
+<a id="describe_local_gateway_route_tables"></a>
+
 ### describe_local_gateway_route_tables
 
 Describes one or more local gateway route tables.
@@ -6352,6 +6859,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLocalGatewayRouteTablesResultTypeDef](./type_defs.md#describelocalgatewayroutetablesresulttypedef).
+
+<a id="describe_local_gateway_virtual_interface_groups"></a>
 
 ### describe_local_gateway_virtual_interface_groups
 
@@ -6377,6 +6886,8 @@ Keyword-only arguments:
 Returns
 [DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresulttypedef).
 
+<a id="describe_local_gateway_virtual_interfaces"></a>
+
 ### describe_local_gateway_virtual_interfaces
 
 Describes the specified local gateway virtual interfaces.
@@ -6401,6 +6912,8 @@ Keyword-only arguments:
 Returns
 [DescribeLocalGatewayVirtualInterfacesResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresulttypedef).
 
+<a id="describe_local_gateways"></a>
+
 ### describe_local_gateways
 
 Describes one or more local gateways.
@@ -6423,6 +6936,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLocalGatewaysResultTypeDef](./type_defs.md#describelocalgatewaysresulttypedef).
+
+<a id="describe_managed_prefix_lists"></a>
 
 ### describe_managed_prefix_lists
 
@@ -6449,6 +6964,8 @@ Keyword-only arguments:
 Returns
 [DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef).
 
+<a id="describe_moving_addresses"></a>
+
 ### describe_moving_addresses
 
 Describes your Elastic IP addresses that are being moved to the EC2-VPC
@@ -6473,6 +6990,8 @@ Keyword-only arguments:
 Returns
 [DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef).
 
+<a id="describe_nat_gateways"></a>
+
 ### describe_nat_gateways
 
 Describes one or more of your NAT gateways.
@@ -6496,6 +7015,8 @@ Keyword-only arguments:
 Returns
 [DescribeNatGatewaysResultTypeDef](./type_defs.md#describenatgatewaysresulttypedef).
 
+<a id="describe_network_acls"></a>
+
 ### describe_network_acls
 
 Describes one or more of your network ACLs.
@@ -6518,6 +7039,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef).
+
+<a id="describe_network_insights_access_scope_analyses"></a>
 
 ### describe_network_insights_access_scope_analyses
 
@@ -6546,6 +7069,8 @@ Keyword-only arguments:
 Returns
 [DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesresulttypedef).
 
+<a id="describe_network_insights_access_scopes"></a>
+
 ### describe_network_insights_access_scopes
 
 Describes the specified Network Access Scopes.
@@ -6569,6 +7094,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeNetworkInsightsAccessScopesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopesresulttypedef).
+
+<a id="describe_network_insights_analyses"></a>
 
 ### describe_network_insights_analyses
 
@@ -6597,6 +7124,8 @@ Keyword-only arguments:
 Returns
 [DescribeNetworkInsightsAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsanalysesresulttypedef).
 
+<a id="describe_network_insights_paths"></a>
+
 ### describe_network_insights_paths
 
 Describes one or more of your paths.
@@ -6621,6 +7150,8 @@ Keyword-only arguments:
 Returns
 [DescribeNetworkInsightsPathsResultTypeDef](./type_defs.md#describenetworkinsightspathsresulttypedef).
 
+<a id="describe_network_interface_attribute"></a>
+
 ### describe_network_interface_attribute
 
 Describes a network interface attribute.
@@ -6643,6 +7174,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeNetworkInterfaceAttributeResultTypeDef](./type_defs.md#describenetworkinterfaceattributeresulttypedef).
+
+<a id="describe_network_interface_permissions"></a>
 
 ### describe_network_interface_permissions
 
@@ -6667,6 +7200,8 @@ Keyword-only arguments:
 Returns
 [DescribeNetworkInterfacePermissionsResultTypeDef](./type_defs.md#describenetworkinterfacepermissionsresulttypedef).
 
+<a id="describe_network_interfaces"></a>
+
 ### describe_network_interfaces
 
 Describes one or more of your network interfaces.
@@ -6690,6 +7225,8 @@ Keyword-only arguments:
 Returns
 [DescribeNetworkInterfacesResultTypeDef](./type_defs.md#describenetworkinterfacesresulttypedef).
 
+<a id="describe_placement_groups"></a>
+
 ### describe_placement_groups
 
 Describes the specified placement groups or all of your placement groups.
@@ -6711,6 +7248,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePlacementGroupsResultTypeDef](./type_defs.md#describeplacementgroupsresulttypedef).
+
+<a id="describe_prefix_lists"></a>
 
 ### describe_prefix_lists
 
@@ -6737,6 +7276,8 @@ Keyword-only arguments:
 Returns
 [DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef).
 
+<a id="describe_principal_id_format"></a>
+
 ### describe_principal_id_format
 
 Describes the ID format settings for the root user and all IAM roles and IAM
@@ -6760,6 +7301,8 @@ Keyword-only arguments:
 Returns
 [DescribePrincipalIdFormatResultTypeDef](./type_defs.md#describeprincipalidformatresulttypedef).
 
+<a id="describe_public_ipv4_pools"></a>
+
 ### describe_public_ipv4_pools
 
 Describes the specified IPv4 address pools.
@@ -6782,6 +7325,8 @@ Keyword-only arguments:
 Returns
 [DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef).
 
+<a id="describe_regions"></a>
+
 ### describe_regions
 
 Describes the Regions that are enabled for your account, or all Regions.
@@ -6803,6 +7348,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef).
+
+<a id="describe_replace_root_volume_tasks"></a>
 
 ### describe_replace_root_volume_tasks
 
@@ -6828,6 +7375,8 @@ Keyword-only arguments:
 Returns
 [DescribeReplaceRootVolumeTasksResultTypeDef](./type_defs.md#describereplacerootvolumetasksresulttypedef).
 
+<a id="describe_reserved_instances"></a>
+
 ### describe_reserved_instances
 
 Describes one or more of the Reserved Instances that you purchased.
@@ -6852,6 +7401,8 @@ Keyword-only arguments:
 Returns
 [DescribeReservedInstancesResultTypeDef](./type_defs.md#describereservedinstancesresulttypedef).
 
+<a id="describe_reserved_instances_listings"></a>
+
 ### describe_reserved_instances_listings
 
 Describes your account's Reserved Instance listings in the Reserved Instance
@@ -6875,6 +7426,8 @@ Keyword-only arguments:
 Returns
 [DescribeReservedInstancesListingsResultTypeDef](./type_defs.md#describereservedinstanceslistingsresulttypedef).
 
+<a id="describe_reserved_instances_modifications"></a>
+
 ### describe_reserved_instances_modifications
 
 Describes the modifications made to your Reserved Instances.
@@ -6896,6 +7449,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeReservedInstancesModificationsResultTypeDef](./type_defs.md#describereservedinstancesmodificationsresulttypedef).
+
+<a id="describe_reserved_instances_offerings"></a>
 
 ### describe_reserved_instances_offerings
 
@@ -6933,6 +7488,8 @@ Keyword-only arguments:
 Returns
 [DescribeReservedInstancesOfferingsResultTypeDef](./type_defs.md#describereservedinstancesofferingsresulttypedef).
 
+<a id="describe_route_tables"></a>
+
 ### describe_route_tables
 
 Describes one or more of your route tables.
@@ -6955,6 +7512,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRouteTablesResultTypeDef](./type_defs.md#describeroutetablesresulttypedef).
+
+<a id="describe_scheduled_instance_availability"></a>
 
 ### describe_scheduled_instance_availability
 
@@ -6987,6 +7546,8 @@ Keyword-only arguments:
 Returns
 [DescribeScheduledInstanceAvailabilityResultTypeDef](./type_defs.md#describescheduledinstanceavailabilityresulttypedef).
 
+<a id="describe_scheduled_instances"></a>
+
 ### describe_scheduled_instances
 
 Describes the specified Scheduled Instances or all your Scheduled Instances.
@@ -7012,6 +7573,8 @@ Keyword-only arguments:
 Returns
 [DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef).
 
+<a id="describe_security_group_references"></a>
+
 ### describe_security_group_references
 
 Type annotations for `boto3.client("ec2").describe_security_group_references`
@@ -7030,6 +7593,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSecurityGroupReferencesResultTypeDef](./type_defs.md#describesecuritygroupreferencesresulttypedef).
+
+<a id="describe_security_group_rules"></a>
 
 ### describe_security_group_rules
 
@@ -7055,6 +7620,8 @@ Keyword-only arguments:
 Returns
 [DescribeSecurityGroupRulesResultTypeDef](./type_defs.md#describesecuritygrouprulesresulttypedef).
 
+<a id="describe_security_groups"></a>
+
 ### describe_security_groups
 
 Describes the specified security groups or all of your security groups.
@@ -7079,6 +7646,8 @@ Keyword-only arguments:
 Returns
 [DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef).
 
+<a id="describe_snapshot_attribute"></a>
+
 ### describe_snapshot_attribute
 
 Describes the specified attribute of the specified snapshot.
@@ -7102,6 +7671,8 @@ Keyword-only arguments:
 Returns
 [DescribeSnapshotAttributeResultTypeDef](./type_defs.md#describesnapshotattributeresulttypedef).
 
+<a id="describe_snapshot_tier_status"></a>
+
 ### describe_snapshot_tier_status
 
 Describes the storage tier status of one or more Amazon EBS snapshots.
@@ -7124,6 +7695,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSnapshotTierStatusResultTypeDef](./type_defs.md#describesnapshottierstatusresulttypedef).
+
+<a id="describe_snapshots"></a>
 
 ### describe_snapshots
 
@@ -7151,6 +7724,8 @@ Keyword-only arguments:
 Returns
 [DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef).
 
+<a id="describe_spot_datafeed_subscription"></a>
+
 ### describe_spot_datafeed_subscription
 
 Describes the data feed for Spot Instances.
@@ -7170,6 +7745,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSpotDatafeedSubscriptionResultTypeDef](./type_defs.md#describespotdatafeedsubscriptionresulttypedef).
+
+<a id="describe_spot_fleet_instances"></a>
 
 ### describe_spot_fleet_instances
 
@@ -7193,6 +7770,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSpotFleetInstancesResponseTypeDef](./type_defs.md#describespotfleetinstancesresponsetypedef).
+
+<a id="describe_spot_fleet_request_history"></a>
 
 ### describe_spot_fleet_request_history
 
@@ -7220,6 +7799,8 @@ Keyword-only arguments:
 Returns
 [DescribeSpotFleetRequestHistoryResponseTypeDef](./type_defs.md#describespotfleetrequesthistoryresponsetypedef).
 
+<a id="describe_spot_fleet_requests"></a>
+
 ### describe_spot_fleet_requests
 
 .
@@ -7241,6 +7822,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef).
+
+<a id="describe_spot_instance_requests"></a>
 
 ### describe_spot_instance_requests
 
@@ -7265,6 +7848,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSpotInstanceRequestsResultTypeDef](./type_defs.md#describespotinstancerequestsresulttypedef).
+
+<a id="describe_spot_price_history"></a>
 
 ### describe_spot_price_history
 
@@ -7294,6 +7879,8 @@ Keyword-only arguments:
 Returns
 [DescribeSpotPriceHistoryResultTypeDef](./type_defs.md#describespotpricehistoryresulttypedef).
 
+<a id="describe_stale_security_groups"></a>
+
 ### describe_stale_security_groups
 
 Type annotations for `boto3.client("ec2").describe_stale_security_groups`
@@ -7314,6 +7901,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStaleSecurityGroupsResultTypeDef](./type_defs.md#describestalesecuritygroupsresulttypedef).
+
+<a id="describe_store_image_tasks"></a>
 
 ### describe_store_image_tasks
 
@@ -7338,6 +7927,8 @@ Keyword-only arguments:
 Returns
 [DescribeStoreImageTasksResultTypeDef](./type_defs.md#describestoreimagetasksresulttypedef).
 
+<a id="describe_subnets"></a>
+
 ### describe_subnets
 
 Describes one or more of your subnets.
@@ -7361,6 +7952,8 @@ Keyword-only arguments:
 Returns
 [DescribeSubnetsResultTypeDef](./type_defs.md#describesubnetsresulttypedef).
 
+<a id="describe_tags"></a>
+
 ### describe_tags
 
 Describes the specified tags for your EC2 resources.
@@ -7381,6 +7974,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef).
+
+<a id="describe_traffic_mirror_filters"></a>
 
 ### describe_traffic_mirror_filters
 
@@ -7406,6 +8001,8 @@ Keyword-only arguments:
 Returns
 [DescribeTrafficMirrorFiltersResultTypeDef](./type_defs.md#describetrafficmirrorfiltersresulttypedef).
 
+<a id="describe_traffic_mirror_sessions"></a>
+
 ### describe_traffic_mirror_sessions
 
 Describes one or more Traffic Mirror sessions.
@@ -7429,6 +8026,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTrafficMirrorSessionsResultTypeDef](./type_defs.md#describetrafficmirrorsessionsresulttypedef).
+
+<a id="describe_traffic_mirror_targets"></a>
 
 ### describe_traffic_mirror_targets
 
@@ -7454,6 +8053,8 @@ Keyword-only arguments:
 Returns
 [DescribeTrafficMirrorTargetsResultTypeDef](./type_defs.md#describetrafficmirrortargetsresulttypedef).
 
+<a id="describe_transit_gateway_attachments"></a>
+
 ### describe_transit_gateway_attachments
 
 Describes one or more attachments between resources and transit gateways.
@@ -7477,6 +8078,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTransitGatewayAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayattachmentsresulttypedef).
+
+<a id="describe_transit_gateway_connect_peers"></a>
 
 ### describe_transit_gateway_connect_peers
 
@@ -7502,6 +8105,8 @@ Keyword-only arguments:
 Returns
 [DescribeTransitGatewayConnectPeersResultTypeDef](./type_defs.md#describetransitgatewayconnectpeersresulttypedef).
 
+<a id="describe_transit_gateway_connects"></a>
+
 ### describe_transit_gateway_connects
 
 Describes one or more Connect attachments.
@@ -7525,6 +8130,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTransitGatewayConnectsResultTypeDef](./type_defs.md#describetransitgatewayconnectsresulttypedef).
+
+<a id="describe_transit_gateway_multicast_domains"></a>
 
 ### describe_transit_gateway_multicast_domains
 
@@ -7550,6 +8157,8 @@ Keyword-only arguments:
 Returns
 [DescribeTransitGatewayMulticastDomainsResultTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresulttypedef).
 
+<a id="describe_transit_gateway_peering_attachments"></a>
+
 ### describe_transit_gateway_peering_attachments
 
 Describes your transit gateway peering attachments.
@@ -7573,6 +8182,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTransitGatewayPeeringAttachmentsResultTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresulttypedef).
+
+<a id="describe_transit_gateway_route_tables"></a>
 
 ### describe_transit_gateway_route_tables
 
@@ -7598,6 +8209,8 @@ Keyword-only arguments:
 Returns
 [DescribeTransitGatewayRouteTablesResultTypeDef](./type_defs.md#describetransitgatewayroutetablesresulttypedef).
 
+<a id="describe_transit_gateway_vpc_attachments"></a>
+
 ### describe_transit_gateway_vpc_attachments
 
 Describes one or more VPC attachments.
@@ -7622,6 +8235,8 @@ Keyword-only arguments:
 Returns
 [DescribeTransitGatewayVpcAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresulttypedef).
 
+<a id="describe_transit_gateways"></a>
+
 ### describe_transit_gateways
 
 Describes one or more transit gateways.
@@ -7644,6 +8259,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef).
+
+<a id="describe_trunk_interface_associations"></a>
 
 ### describe_trunk_interface_associations
 
@@ -7669,6 +8286,8 @@ Keyword-only arguments:
 Returns
 [DescribeTrunkInterfaceAssociationsResultTypeDef](./type_defs.md#describetrunkinterfaceassociationsresulttypedef).
 
+<a id="describe_volume_attribute"></a>
+
 ### describe_volume_attribute
 
 Describes the specified attribute of the specified volume.
@@ -7690,6 +8309,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeVolumeAttributeResultTypeDef](./type_defs.md#describevolumeattributeresulttypedef).
+
+<a id="describe_volume_status"></a>
 
 ### describe_volume_status
 
@@ -7714,6 +8335,8 @@ Keyword-only arguments:
 Returns
 [DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef).
 
+<a id="describe_volumes"></a>
+
 ### describe_volumes
 
 Describes the specified EBS volumes or all of your EBS volumes.
@@ -7736,6 +8359,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef).
+
+<a id="describe_volumes_modifications"></a>
 
 ### describe_volumes_modifications
 
@@ -7762,6 +8387,8 @@ Keyword-only arguments:
 Returns
 [DescribeVolumesModificationsResultTypeDef](./type_defs.md#describevolumesmodificationsresulttypedef).
 
+<a id="describe_vpc_attribute"></a>
+
 ### describe_vpc_attribute
 
 Describes the specified attribute of the specified VPC.
@@ -7784,6 +8411,8 @@ Keyword-only arguments:
 Returns
 [DescribeVpcAttributeResultTypeDef](./type_defs.md#describevpcattributeresulttypedef).
 
+<a id="describe_vpc_classic_link"></a>
+
 ### describe_vpc_classic_link
 
 Describes the ClassicLink status of one or more VPCs.
@@ -7804,6 +8433,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeVpcClassicLinkResultTypeDef](./type_defs.md#describevpcclassiclinkresulttypedef).
+
+<a id="describe_vpc_classic_link_dns_support"></a>
 
 ### describe_vpc_classic_link_dns_support
 
@@ -7826,6 +8457,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef).
+
+<a id="describe_vpc_endpoint_connection_notifications"></a>
 
 ### describe_vpc_endpoint_connection_notifications
 
@@ -7852,6 +8485,8 @@ Keyword-only arguments:
 Returns
 [DescribeVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresulttypedef).
 
+<a id="describe_vpc_endpoint_connections"></a>
+
 ### describe_vpc_endpoint_connections
 
 Describes the VPC endpoint connections to your VPC endpoint services, including
@@ -7875,6 +8510,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeVpcEndpointConnectionsResultTypeDef](./type_defs.md#describevpcendpointconnectionsresulttypedef).
+
+<a id="describe_vpc_endpoint_service_configurations"></a>
 
 ### describe_vpc_endpoint_service_configurations
 
@@ -7901,6 +8538,8 @@ Keyword-only arguments:
 Returns
 [DescribeVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresulttypedef).
 
+<a id="describe_vpc_endpoint_service_permissions"></a>
+
 ### describe_vpc_endpoint_service_permissions
 
 Describes the principals (service consumers) that are permitted to discover
@@ -7926,6 +8565,8 @@ Keyword-only arguments:
 Returns
 [DescribeVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#describevpcendpointservicepermissionsresulttypedef).
 
+<a id="describe_vpc_endpoint_services"></a>
+
 ### describe_vpc_endpoint_services
 
 Describes available services to which you can create a VPC endpoint.
@@ -7950,6 +8591,8 @@ Keyword-only arguments:
 Returns
 [DescribeVpcEndpointServicesResultTypeDef](./type_defs.md#describevpcendpointservicesresulttypedef).
 
+<a id="describe_vpc_endpoints"></a>
+
 ### describe_vpc_endpoints
 
 Describes one or more of your VPC endpoints.
@@ -7972,6 +8615,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeVpcEndpointsResultTypeDef](./type_defs.md#describevpcendpointsresulttypedef).
+
+<a id="describe_vpc_peering_connections"></a>
 
 ### describe_vpc_peering_connections
 
@@ -7997,6 +8642,8 @@ Keyword-only arguments:
 Returns
 [DescribeVpcPeeringConnectionsResultTypeDef](./type_defs.md#describevpcpeeringconnectionsresulttypedef).
 
+<a id="describe_vpcs"></a>
+
 ### describe_vpcs
 
 Describes one or more of your VPCs.
@@ -8019,6 +8666,8 @@ Keyword-only arguments:
 
 Returns [DescribeVpcsResultTypeDef](./type_defs.md#describevpcsresulttypedef).
 
+<a id="describe_vpn_connections"></a>
+
 ### describe_vpn_connections
 
 Describes one or more of your VPN connections.
@@ -8039,6 +8688,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeVpnConnectionsResultTypeDef](./type_defs.md#describevpnconnectionsresulttypedef).
+
+<a id="describe_vpn_gateways"></a>
 
 ### describe_vpn_gateways
 
@@ -8061,6 +8712,8 @@ Keyword-only arguments:
 Returns
 [DescribeVpnGatewaysResultTypeDef](./type_defs.md#describevpngatewaysresulttypedef).
 
+<a id="detach_classic_link_vpc"></a>
+
 ### detach_classic_link_vpc
 
 Unlinks (detaches) a linked EC2-Classic instance from a VPC.
@@ -8082,6 +8735,8 @@ Keyword-only arguments:
 Returns
 [DetachClassicLinkVpcResultTypeDef](./type_defs.md#detachclassiclinkvpcresulttypedef).
 
+<a id="detach_internet_gateway"></a>
+
 ### detach_internet_gateway
 
 Detaches an internet gateway from a VPC, disabling connectivity between the
@@ -8101,6 +8756,8 @@ Keyword-only arguments:
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
 
+<a id="detach_network_interface"></a>
+
 ### detach_network_interface
 
 Detaches a network interface from an instance.
@@ -8118,6 +8775,8 @@ Keyword-only arguments:
 - `AttachmentId`: `str` *(required)*
 - `DryRun`: `bool`
 - `Force`: `bool`
+
+<a id="detach_volume"></a>
 
 ### detach_volume
 
@@ -8142,6 +8801,8 @@ Keyword-only arguments:
 Returns
 [VolumeAttachmentResponseMetadataTypeDef](./type_defs.md#volumeattachmentresponsemetadatatypedef).
 
+<a id="detach_vpn_gateway"></a>
+
 ### detach_vpn_gateway
 
 Detaches a virtual private gateway from a VPC.
@@ -8159,6 +8820,8 @@ Keyword-only arguments:
 - `VpcId`: `str` *(required)*
 - `VpnGatewayId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="disable_ebs_encryption_by_default"></a>
 
 ### disable_ebs_encryption_by_default
 
@@ -8179,6 +8842,8 @@ Keyword-only arguments:
 
 Returns
 [DisableEbsEncryptionByDefaultResultTypeDef](./type_defs.md#disableebsencryptionbydefaultresulttypedef).
+
+<a id="disable_fast_launch"></a>
 
 ### disable_fast_launch
 
@@ -8201,6 +8866,8 @@ Keyword-only arguments:
 
 Returns
 [DisableFastLaunchResultTypeDef](./type_defs.md#disablefastlaunchresulttypedef).
+
+<a id="disable_fast_snapshot_restores"></a>
 
 ### disable_fast_snapshot_restores
 
@@ -8225,6 +8892,8 @@ Keyword-only arguments:
 Returns
 [DisableFastSnapshotRestoresResultTypeDef](./type_defs.md#disablefastsnapshotrestoresresulttypedef).
 
+<a id="disable_image_deprecation"></a>
+
 ### disable_image_deprecation
 
 Cancels the deprecation of the specified AMI.
@@ -8244,6 +8913,8 @@ Keyword-only arguments:
 
 Returns
 [DisableImageDeprecationResultTypeDef](./type_defs.md#disableimagedeprecationresulttypedef).
+
+<a id="disable_ipam_organization_admin_account"></a>
 
 ### disable_ipam_organization_admin_account
 
@@ -8266,6 +8937,8 @@ Keyword-only arguments:
 Returns
 [DisableIpamOrganizationAdminAccountResultTypeDef](./type_defs.md#disableipamorganizationadminaccountresulttypedef).
 
+<a id="disable_serial_console_access"></a>
+
 ### disable_serial_console_access
 
 Disables access to the EC2 serial console of all instances for your account.
@@ -8285,6 +8958,8 @@ Keyword-only arguments:
 
 Returns
 [DisableSerialConsoleAccessResultTypeDef](./type_defs.md#disableserialconsoleaccessresulttypedef).
+
+<a id="disable_transit_gateway_route_table_propagation"></a>
 
 ### disable_transit_gateway_route_table_propagation
 
@@ -8309,6 +8984,8 @@ Keyword-only arguments:
 Returns
 [DisableTransitGatewayRouteTablePropagationResultTypeDef](./type_defs.md#disabletransitgatewayroutetablepropagationresulttypedef).
 
+<a id="disable_vgw_route_propagation"></a>
+
 ### disable_vgw_route_propagation
 
 Disables a virtual private gateway (VGW) from propagating routes to a specified
@@ -8328,6 +9005,8 @@ Keyword-only arguments:
 - `GatewayId`: `str` *(required)*
 - `RouteTableId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="disable_vpc_classic_link"></a>
 
 ### disable_vpc_classic_link
 
@@ -8349,6 +9028,8 @@ Keyword-only arguments:
 Returns
 [DisableVpcClassicLinkResultTypeDef](./type_defs.md#disablevpcclassiclinkresulttypedef).
 
+<a id="disable_vpc_classic_link_dns_support"></a>
+
 ### disable_vpc_classic_link_dns_support
 
 Disables ClassicLink DNS support for a VPC.
@@ -8369,6 +9050,8 @@ Keyword-only arguments:
 Returns
 [DisableVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#disablevpcclassiclinkdnssupportresulttypedef).
 
+<a id="disassociate_address"></a>
+
 ### disassociate_address
 
 Disassociates an Elastic IP address from the instance or network interface it's
@@ -8387,6 +9070,8 @@ Keyword-only arguments:
 - `AssociationId`: `str`
 - `PublicIp`: `str`
 - `DryRun`: `bool`
+
+<a id="disassociate_client_vpn_target_network"></a>
 
 ### disassociate_client_vpn_target_network
 
@@ -8410,6 +9095,8 @@ Keyword-only arguments:
 Returns
 [DisassociateClientVpnTargetNetworkResultTypeDef](./type_defs.md#disassociateclientvpntargetnetworkresulttypedef).
 
+<a id="disassociate_enclave_certificate_iam_role"></a>
+
 ### disassociate_enclave_certificate_iam_role
 
 Disassociates an IAM role from an Certificate Manager (ACM) certificate.
@@ -8432,6 +9119,8 @@ Keyword-only arguments:
 Returns
 [DisassociateEnclaveCertificateIamRoleResultTypeDef](./type_defs.md#disassociateenclavecertificateiamroleresulttypedef).
 
+<a id="disassociate_iam_instance_profile"></a>
+
 ### disassociate_iam_instance_profile
 
 Disassociates an IAM instance profile from a running or stopped instance.
@@ -8451,6 +9140,8 @@ Keyword-only arguments:
 
 Returns
 [DisassociateIamInstanceProfileResultTypeDef](./type_defs.md#disassociateiaminstanceprofileresulttypedef).
+
+<a id="disassociate_instance_event_window"></a>
 
 ### disassociate_instance_event_window
 
@@ -8476,6 +9167,8 @@ Keyword-only arguments:
 Returns
 [DisassociateInstanceEventWindowResultTypeDef](./type_defs.md#disassociateinstanceeventwindowresulttypedef).
 
+<a id="disassociate_route_table"></a>
+
 ### disassociate_route_table
 
 Disassociates a subnet or gateway from a route table.
@@ -8492,6 +9185,8 @@ Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="disassociate_subnet_cidr_block"></a>
 
 ### disassociate_subnet_cidr_block
 
@@ -8512,6 +9207,8 @@ Keyword-only arguments:
 
 Returns
 [DisassociateSubnetCidrBlockResultTypeDef](./type_defs.md#disassociatesubnetcidrblockresulttypedef).
+
+<a id="disassociate_transit_gateway_multicast_domain"></a>
 
 ### disassociate_transit_gateway_multicast_domain
 
@@ -8536,6 +9233,8 @@ Keyword-only arguments:
 Returns
 [DisassociateTransitGatewayMulticastDomainResultTypeDef](./type_defs.md#disassociatetransitgatewaymulticastdomainresulttypedef).
 
+<a id="disassociate_transit_gateway_route_table"></a>
+
 ### disassociate_transit_gateway_route_table
 
 Disassociates a resource attachment from a transit gateway route table.
@@ -8558,6 +9257,8 @@ Keyword-only arguments:
 Returns
 [DisassociateTransitGatewayRouteTableResultTypeDef](./type_defs.md#disassociatetransitgatewayroutetableresulttypedef).
 
+<a id="disassociate_trunk_interface"></a>
+
 ### disassociate_trunk_interface
 
 .
@@ -8579,6 +9280,8 @@ Keyword-only arguments:
 Returns
 [DisassociateTrunkInterfaceResultTypeDef](./type_defs.md#disassociatetrunkinterfaceresulttypedef).
 
+<a id="disassociate_vpc_cidr_block"></a>
+
 ### disassociate_vpc_cidr_block
 
 Disassociates a CIDR block from a VPC.
@@ -8597,6 +9300,8 @@ Keyword-only arguments:
 
 Returns
 [DisassociateVpcCidrBlockResultTypeDef](./type_defs.md#disassociatevpccidrblockresulttypedef).
+
+<a id="enable_ebs_encryption_by_default"></a>
 
 ### enable_ebs_encryption_by_default
 
@@ -8617,6 +9322,8 @@ Keyword-only arguments:
 
 Returns
 [EnableEbsEncryptionByDefaultResultTypeDef](./type_defs.md#enableebsencryptionbydefaultresulttypedef).
+
+<a id="enable_fast_launch"></a>
 
 ### enable_fast_launch
 
@@ -8645,6 +9352,8 @@ Keyword-only arguments:
 Returns
 [EnableFastLaunchResultTypeDef](./type_defs.md#enablefastlaunchresulttypedef).
 
+<a id="enable_fast_snapshot_restores"></a>
+
 ### enable_fast_snapshot_restores
 
 Enables fast snapshot restores for the specified snapshots in the specified
@@ -8668,6 +9377,8 @@ Keyword-only arguments:
 Returns
 [EnableFastSnapshotRestoresResultTypeDef](./type_defs.md#enablefastsnapshotrestoresresulttypedef).
 
+<a id="enable_image_deprecation"></a>
+
 ### enable_image_deprecation
 
 Enables deprecation of the specified AMI at the specified date and time.
@@ -8688,6 +9399,8 @@ Keyword-only arguments:
 
 Returns
 [EnableImageDeprecationResultTypeDef](./type_defs.md#enableimagedeprecationresulttypedef).
+
+<a id="enable_ipam_organization_admin_account"></a>
 
 ### enable_ipam_organization_admin_account
 
@@ -8710,6 +9423,8 @@ Keyword-only arguments:
 Returns
 [EnableIpamOrganizationAdminAccountResultTypeDef](./type_defs.md#enableipamorganizationadminaccountresulttypedef).
 
+<a id="enable_serial_console_access"></a>
+
 ### enable_serial_console_access
 
 Enables access to the EC2 serial console of all instances for your account.
@@ -8728,6 +9443,8 @@ Keyword-only arguments:
 
 Returns
 [EnableSerialConsoleAccessResultTypeDef](./type_defs.md#enableserialconsoleaccessresulttypedef).
+
+<a id="enable_transit_gateway_route_table_propagation"></a>
 
 ### enable_transit_gateway_route_table_propagation
 
@@ -8752,6 +9469,8 @@ Keyword-only arguments:
 Returns
 [EnableTransitGatewayRouteTablePropagationResultTypeDef](./type_defs.md#enabletransitgatewayroutetablepropagationresulttypedef).
 
+<a id="enable_vgw_route_propagation"></a>
+
 ### enable_vgw_route_propagation
 
 Enables a virtual private gateway (VGW) to propagate routes to the specified
@@ -8771,6 +9490,8 @@ Keyword-only arguments:
 - `RouteTableId`: `str` *(required)*
 - `DryRun`: `bool`
 
+<a id="enable_volume_io"></a>
+
 ### enable_volume_io
 
 Enables I/O operations for a volume that had I/O operations disabled because
@@ -8788,6 +9509,8 @@ Keyword-only arguments:
 
 - `VolumeId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="enable_vpc_classic_link"></a>
 
 ### enable_vpc_classic_link
 
@@ -8809,6 +9532,8 @@ Keyword-only arguments:
 Returns
 [EnableVpcClassicLinkResultTypeDef](./type_defs.md#enablevpcclassiclinkresulttypedef).
 
+<a id="enable_vpc_classic_link_dns_support"></a>
+
 ### enable_vpc_classic_link_dns_support
 
 Enables a VPC to support DNS hostname resolution for ClassicLink.
@@ -8828,6 +9553,8 @@ Keyword-only arguments:
 
 Returns
 [EnableVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#enablevpcclassiclinkdnssupportresulttypedef).
+
+<a id="export_client_vpn_client_certificate_revocation_list"></a>
 
 ### export_client_vpn_client_certificate_revocation_list
 
@@ -8852,6 +9579,8 @@ Keyword-only arguments:
 Returns
 [ExportClientVpnClientCertificateRevocationListResultTypeDef](./type_defs.md#exportclientvpnclientcertificaterevocationlistresulttypedef).
 
+<a id="export_client_vpn_client_configuration"></a>
+
 ### export_client_vpn_client_configuration
 
 Downloads the contents of the Client VPN endpoint configuration file for the
@@ -8873,6 +9602,8 @@ Keyword-only arguments:
 
 Returns
 [ExportClientVpnClientConfigurationResultTypeDef](./type_defs.md#exportclientvpnclientconfigurationresulttypedef).
+
+<a id="export_image"></a>
 
 ### export_image
 
@@ -8903,6 +9634,8 @@ Keyword-only arguments:
 
 Returns [ExportImageResultTypeDef](./type_defs.md#exportimageresulttypedef).
 
+<a id="export_transit_gateway_routes"></a>
+
 ### export_transit_gateway_routes
 
 Exports routes from the specified transit gateway route table to the specified
@@ -8927,6 +9660,8 @@ Keyword-only arguments:
 Returns
 [ExportTransitGatewayRoutesResultTypeDef](./type_defs.md#exporttransitgatewayroutesresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -8944,6 +9679,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_associated_enclave_certificate_iam_roles"></a>
 
 ### get_associated_enclave_certificate_iam_roles
 
@@ -8966,6 +9703,8 @@ Keyword-only arguments:
 
 Returns
 [GetAssociatedEnclaveCertificateIamRolesResultTypeDef](./type_defs.md#getassociatedenclavecertificateiamrolesresulttypedef).
+
+<a id="get_associated_ipv6_pool_cidrs"></a>
 
 ### get_associated_ipv6_pool_cidrs
 
@@ -8991,6 +9730,8 @@ Keyword-only arguments:
 Returns
 [GetAssociatedIpv6PoolCidrsResultTypeDef](./type_defs.md#getassociatedipv6poolcidrsresulttypedef).
 
+<a id="get_capacity_reservation_usage"></a>
+
 ### get_capacity_reservation_usage
 
 Gets usage information about a Capacity Reservation.
@@ -9013,6 +9754,8 @@ Keyword-only arguments:
 
 Returns
 [GetCapacityReservationUsageResultTypeDef](./type_defs.md#getcapacityreservationusageresulttypedef).
+
+<a id="get_coip_pool_usage"></a>
 
 ### get_coip_pool_usage
 
@@ -9037,6 +9780,8 @@ Keyword-only arguments:
 Returns
 [GetCoipPoolUsageResultTypeDef](./type_defs.md#getcoippoolusageresulttypedef).
 
+<a id="get_console_output"></a>
+
 ### get_console_output
 
 Gets the console output for the specified instance.
@@ -9057,6 +9802,8 @@ Keyword-only arguments:
 
 Returns
 [GetConsoleOutputResultTypeDef](./type_defs.md#getconsoleoutputresulttypedef).
+
+<a id="get_console_screenshot"></a>
 
 ### get_console_screenshot
 
@@ -9079,6 +9826,8 @@ Keyword-only arguments:
 
 Returns
 [GetConsoleScreenshotResultTypeDef](./type_defs.md#getconsolescreenshotresulttypedef).
+
+<a id="get_default_credit_specification"></a>
 
 ### get_default_credit_specification
 
@@ -9104,6 +9853,8 @@ Keyword-only arguments:
 Returns
 [GetDefaultCreditSpecificationResultTypeDef](./type_defs.md#getdefaultcreditspecificationresulttypedef).
 
+<a id="get_ebs_default_kms_key_id"></a>
+
 ### get_ebs_default_kms_key_id
 
 Describes the default KMS key for EBS encryption by default for your account in
@@ -9123,6 +9874,8 @@ Keyword-only arguments:
 
 Returns
 [GetEbsDefaultKmsKeyIdResultTypeDef](./type_defs.md#getebsdefaultkmskeyidresulttypedef).
+
+<a id="get_ebs_encryption_by_default"></a>
 
 ### get_ebs_encryption_by_default
 
@@ -9144,6 +9897,8 @@ Keyword-only arguments:
 
 Returns
 [GetEbsEncryptionByDefaultResultTypeDef](./type_defs.md#getebsencryptionbydefaultresulttypedef).
+
+<a id="get_flow_logs_integration_template"></a>
 
 ### get_flow_logs_integration_template
 
@@ -9171,6 +9926,8 @@ Keyword-only arguments:
 Returns
 [GetFlowLogsIntegrationTemplateResultTypeDef](./type_defs.md#getflowlogsintegrationtemplateresulttypedef).
 
+<a id="get_groups_for_capacity_reservation"></a>
+
 ### get_groups_for_capacity_reservation
 
 Lists the resource groups to which a Capacity Reservation has been added.
@@ -9194,6 +9951,8 @@ Keyword-only arguments:
 Returns
 [GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef).
 
+<a id="get_host_reservation_purchase_preview"></a>
+
 ### get_host_reservation_purchase_preview
 
 Preview a reservation purchase with configurations that match those of your
@@ -9215,6 +9974,8 @@ Keyword-only arguments:
 
 Returns
 [GetHostReservationPurchasePreviewResultTypeDef](./type_defs.md#gethostreservationpurchasepreviewresulttypedef).
+
+<a id="get_instance_types_from_instance_requirements"></a>
 
 ### get_instance_types_from_instance_requirements
 
@@ -9247,6 +10008,8 @@ Keyword-only arguments:
 Returns
 [GetInstanceTypesFromInstanceRequirementsResultTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsresulttypedef).
 
+<a id="get_ipam_address_history"></a>
+
 ### get_ipam_address_history
 
 Retrieve historical information about a CIDR within an IPAM scope.
@@ -9273,6 +10036,8 @@ Keyword-only arguments:
 Returns
 [GetIpamAddressHistoryResultTypeDef](./type_defs.md#getipamaddresshistoryresulttypedef).
 
+<a id="get_ipam_pool_allocations"></a>
+
 ### get_ipam_pool_allocations
 
 Get a list of all the CIDR allocations in an IPAM pool.
@@ -9297,6 +10062,8 @@ Keyword-only arguments:
 Returns
 [GetIpamPoolAllocationsResultTypeDef](./type_defs.md#getipampoolallocationsresulttypedef).
 
+<a id="get_ipam_pool_cidrs"></a>
+
 ### get_ipam_pool_cidrs
 
 Get the CIDRs provisioned to an IPAM pool.
@@ -9319,6 +10086,8 @@ Keyword-only arguments:
 
 Returns
 [GetIpamPoolCidrsResultTypeDef](./type_defs.md#getipampoolcidrsresulttypedef).
+
+<a id="get_ipam_resource_cidrs"></a>
 
 ### get_ipam_resource_cidrs
 
@@ -9349,6 +10118,8 @@ Keyword-only arguments:
 Returns
 [GetIpamResourceCidrsResultTypeDef](./type_defs.md#getipamresourcecidrsresulttypedef).
 
+<a id="get_launch_template_data"></a>
+
 ### get_launch_template_data
 
 Retrieves the configuration data of the specified instance.
@@ -9368,6 +10139,8 @@ Keyword-only arguments:
 
 Returns
 [GetLaunchTemplateDataResultTypeDef](./type_defs.md#getlaunchtemplatedataresulttypedef).
+
+<a id="get_managed_prefix_list_associations"></a>
 
 ### get_managed_prefix_list_associations
 
@@ -9393,6 +10166,8 @@ Keyword-only arguments:
 Returns
 [GetManagedPrefixListAssociationsResultTypeDef](./type_defs.md#getmanagedprefixlistassociationsresulttypedef).
 
+<a id="get_managed_prefix_list_entries"></a>
+
 ### get_managed_prefix_list_entries
 
 Gets information about the entries for a specified managed prefix list.
@@ -9416,6 +10191,8 @@ Keyword-only arguments:
 
 Returns
 [GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef).
+
+<a id="get_network_insights_access_scope_analysis_findings"></a>
 
 ### get_network_insights_access_scope_analysis_findings
 
@@ -9441,6 +10218,8 @@ Keyword-only arguments:
 Returns
 [GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef](./type_defs.md#getnetworkinsightsaccessscopeanalysisfindingsresulttypedef).
 
+<a id="get_network_insights_access_scope_content"></a>
+
 ### get_network_insights_access_scope_content
 
 Gets the content for the specified Network Access Scope.
@@ -9462,6 +10241,8 @@ Keyword-only arguments:
 Returns
 [GetNetworkInsightsAccessScopeContentResultTypeDef](./type_defs.md#getnetworkinsightsaccessscopecontentresulttypedef).
 
+<a id="get_password_data"></a>
+
 ### get_password_data
 
 Retrieves the encrypted administrator password for a running Windows instance.
@@ -9481,6 +10262,8 @@ Keyword-only arguments:
 
 Returns
 [GetPasswordDataResultTypeDef](./type_defs.md#getpassworddataresulttypedef).
+
+<a id="get_reserved_instances_exchange_quote"></a>
 
 ### get_reserved_instances_exchange_quote
 
@@ -9506,6 +10289,8 @@ Keyword-only arguments:
 Returns
 [GetReservedInstancesExchangeQuoteResultTypeDef](./type_defs.md#getreservedinstancesexchangequoteresulttypedef).
 
+<a id="get_serial_console_access_status"></a>
+
 ### get_serial_console_access_status
 
 Retrieves the access status of your account to the EC2 serial console of all
@@ -9526,6 +10311,8 @@ Keyword-only arguments:
 
 Returns
 [GetSerialConsoleAccessStatusResultTypeDef](./type_defs.md#getserialconsoleaccessstatusresulttypedef).
+
+<a id="get_spot_placement_scores"></a>
 
 ### get_spot_placement_scores
 
@@ -9557,6 +10344,8 @@ Keyword-only arguments:
 Returns
 [GetSpotPlacementScoresResultTypeDef](./type_defs.md#getspotplacementscoresresulttypedef).
 
+<a id="get_subnet_cidr_reservations"></a>
+
 ### get_subnet_cidr_reservations
 
 Gets information about the subnet CIDR reservations.
@@ -9579,6 +10368,8 @@ Keyword-only arguments:
 
 Returns
 [GetSubnetCidrReservationsResultTypeDef](./type_defs.md#getsubnetcidrreservationsresulttypedef).
+
+<a id="get_transit_gateway_attachment_propagations"></a>
 
 ### get_transit_gateway_attachment_propagations
 
@@ -9605,6 +10396,8 @@ Keyword-only arguments:
 Returns
 [GetTransitGatewayAttachmentPropagationsResultTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresulttypedef).
 
+<a id="get_transit_gateway_multicast_domain_associations"></a>
+
 ### get_transit_gateway_multicast_domain_associations
 
 Gets information about the associations for the transit gateway multicast
@@ -9629,6 +10422,8 @@ Keyword-only arguments:
 
 Returns
 [GetTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresulttypedef).
+
+<a id="get_transit_gateway_prefix_list_references"></a>
 
 ### get_transit_gateway_prefix_list_references
 
@@ -9655,6 +10450,8 @@ Keyword-only arguments:
 Returns
 [GetTransitGatewayPrefixListReferencesResultTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresulttypedef).
 
+<a id="get_transit_gateway_route_table_associations"></a>
+
 ### get_transit_gateway_route_table_associations
 
 Gets information about the associations for the specified transit gateway route
@@ -9679,6 +10476,8 @@ Keyword-only arguments:
 
 Returns
 [GetTransitGatewayRouteTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresulttypedef).
+
+<a id="get_transit_gateway_route_table_propagations"></a>
 
 ### get_transit_gateway_route_table_propagations
 
@@ -9705,6 +10504,8 @@ Keyword-only arguments:
 Returns
 [GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef).
 
+<a id="get_vpn_connection_device_sample_configuration"></a>
+
 ### get_vpn_connection_device_sample_configuration
 
 Download an Amazon Web Services-provided sample configuration file to be used
@@ -9730,6 +10531,8 @@ Keyword-only arguments:
 Returns
 [GetVpnConnectionDeviceSampleConfigurationResultTypeDef](./type_defs.md#getvpnconnectiondevicesampleconfigurationresulttypedef).
 
+<a id="get_vpn_connection_device_types"></a>
+
 ### get_vpn_connection_device_types
 
 Obtain a list of customer gateway devices for which sample configuration files
@@ -9752,6 +10555,8 @@ Keyword-only arguments:
 
 Returns
 [GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef).
+
+<a id="import_client_vpn_client_certificate_revocation_list"></a>
 
 ### import_client_vpn_client_certificate_revocation_list
 
@@ -9776,6 +10581,8 @@ Keyword-only arguments:
 
 Returns
 [ImportClientVpnClientCertificateRevocationListResultTypeDef](./type_defs.md#importclientvpnclientcertificaterevocationlistresulttypedef).
+
+<a id="import_image"></a>
 
 ### import_image
 
@@ -9814,6 +10621,8 @@ Keyword-only arguments:
 
 Returns [ImportImageResultTypeDef](./type_defs.md#importimageresulttypedef).
 
+<a id="import_instance"></a>
+
 ### import_instance
 
 Creates an import instance task using metadata from the specified disk image.
@@ -9840,6 +10649,8 @@ Keyword-only arguments:
 Returns
 [ImportInstanceResultTypeDef](./type_defs.md#importinstanceresulttypedef).
 
+<a id="import_key_pair"></a>
+
 ### import_key_pair
 
 Imports the public key from an RSA or ED25519 key pair that you created with a
@@ -9864,6 +10675,8 @@ Keyword-only arguments:
 
 Returns
 [ImportKeyPairResultTypeDef](./type_defs.md#importkeypairresulttypedef).
+
+<a id="import_snapshot"></a>
 
 ### import_snapshot
 
@@ -9894,6 +10707,8 @@ Keyword-only arguments:
 Returns
 [ImportSnapshotResultTypeDef](./type_defs.md#importsnapshotresulttypedef).
 
+<a id="import_volume"></a>
+
 ### import_volume
 
 Creates an import volume task using metadata from the specified disk image.
@@ -9918,6 +10733,8 @@ Keyword-only arguments:
 
 Returns [ImportVolumeResultTypeDef](./type_defs.md#importvolumeresulttypedef).
 
+<a id="list_images_in_recycle_bin"></a>
+
 ### list_images_in_recycle_bin
 
 Lists one or more AMIs that are currently in the Recycle Bin.
@@ -9939,6 +10756,8 @@ Keyword-only arguments:
 
 Returns
 [ListImagesInRecycleBinResultTypeDef](./type_defs.md#listimagesinrecyclebinresulttypedef).
+
+<a id="list_snapshots_in_recycle_bin"></a>
 
 ### list_snapshots_in_recycle_bin
 
@@ -9963,6 +10782,8 @@ Keyword-only arguments:
 Returns
 [ListSnapshotsInRecycleBinResultTypeDef](./type_defs.md#listsnapshotsinrecyclebinresulttypedef).
 
+<a id="modify_address_attribute"></a>
+
 ### modify_address_attribute
 
 Modifies an attribute of the specified Elastic IP address.
@@ -9983,6 +10804,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyAddressAttributeResultTypeDef](./type_defs.md#modifyaddressattributeresulttypedef).
+
+<a id="modify_availability_zone_group"></a>
 
 ### modify_availability_zone_group
 
@@ -10008,6 +10831,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyAvailabilityZoneGroupResultTypeDef](./type_defs.md#modifyavailabilityzonegroupresulttypedef).
+
+<a id="modify_capacity_reservation"></a>
 
 ### modify_capacity_reservation
 
@@ -10035,6 +10860,8 @@ Keyword-only arguments:
 Returns
 [ModifyCapacityReservationResultTypeDef](./type_defs.md#modifycapacityreservationresulttypedef).
 
+<a id="modify_capacity_reservation_fleet"></a>
+
 ### modify_capacity_reservation_fleet
 
 Modifies a Capacity Reservation Fleet.
@@ -10058,6 +10885,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyCapacityReservationFleetResultTypeDef](./type_defs.md#modifycapacityreservationfleetresulttypedef).
+
+<a id="modify_client_vpn_endpoint"></a>
 
 ### modify_client_vpn_endpoint
 
@@ -10096,6 +10925,8 @@ Keyword-only arguments:
 Returns
 [ModifyClientVpnEndpointResultTypeDef](./type_defs.md#modifyclientvpnendpointresulttypedef).
 
+<a id="modify_default_credit_specification"></a>
+
 ### modify_default_credit_specification
 
 Modifies the default credit option for CPU usage of burstable performance
@@ -10121,6 +10952,8 @@ Keyword-only arguments:
 Returns
 [ModifyDefaultCreditSpecificationResultTypeDef](./type_defs.md#modifydefaultcreditspecificationresulttypedef).
 
+<a id="modify_ebs_default_kms_key_id"></a>
+
 ### modify_ebs_default_kms_key_id
 
 Changes the default KMS key for EBS encryption by default for your account in
@@ -10142,6 +10975,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyEbsDefaultKmsKeyIdResultTypeDef](./type_defs.md#modifyebsdefaultkmskeyidresulttypedef).
+
+<a id="modify_fleet"></a>
 
 ### modify_fleet
 
@@ -10168,6 +11003,8 @@ Keyword-only arguments:
 - `Context`: `str`
 
 Returns [ModifyFleetResultTypeDef](./type_defs.md#modifyfleetresulttypedef).
+
+<a id="modify_fpga_image_attribute"></a>
 
 ### modify_fpga_image_attribute
 
@@ -10199,6 +11036,8 @@ Keyword-only arguments:
 Returns
 [ModifyFpgaImageAttributeResultTypeDef](./type_defs.md#modifyfpgaimageattributeresulttypedef).
 
+<a id="modify_hosts"></a>
+
 ### modify_hosts
 
 Modify the auto-placement setting of a Dedicated Host.
@@ -10221,6 +11060,8 @@ Keyword-only arguments:
 
 Returns [ModifyHostsResultTypeDef](./type_defs.md#modifyhostsresulttypedef).
 
+<a id="modify_id_format"></a>
+
 ### modify_id_format
 
 Modifies the ID format for the specified resource on a per-Region basis.
@@ -10237,6 +11078,8 @@ Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 - `UseLongIds`: `bool` *(required)*
+
+<a id="modify_identity_id_format"></a>
 
 ### modify_identity_id_format
 
@@ -10257,6 +11100,8 @@ Keyword-only arguments:
 - `PrincipalArn`: `str` *(required)*
 - `Resource`: `str` *(required)*
 - `UseLongIds`: `bool` *(required)*
+
+<a id="modify_image_attribute"></a>
 
 ### modify_image_attribute
 
@@ -10285,6 +11130,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `OrganizationArns`: `Sequence`\[`str`\]
 - `OrganizationalUnitArns`: `Sequence`\[`str`\]
+
+<a id="modify_instance_attribute"></a>
 
 ### modify_instance_attribute
 
@@ -10326,6 +11173,8 @@ Keyword-only arguments:
   [BlobAttributeValueTypeDef](./type_defs.md#blobattributevaluetypedef)
 - `Value`: `str`
 
+<a id="modify_instance_capacity_reservation_attributes"></a>
+
 ### modify_instance_capacity_reservation_attributes
 
 Modifies the Capacity Reservation settings for a stopped instance.
@@ -10349,6 +11198,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyInstanceCapacityReservationAttributesResultTypeDef](./type_defs.md#modifyinstancecapacityreservationattributesresulttypedef).
+
+<a id="modify_instance_credit_specification"></a>
 
 ### modify_instance_credit_specification
 
@@ -10375,6 +11226,8 @@ Keyword-only arguments:
 Returns
 [ModifyInstanceCreditSpecificationResultTypeDef](./type_defs.md#modifyinstancecreditspecificationresulttypedef).
 
+<a id="modify_instance_event_start_time"></a>
+
 ### modify_instance_event_start_time
 
 Modifies the start time for a scheduled Amazon EC2 instance event.
@@ -10397,6 +11250,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyInstanceEventStartTimeResultTypeDef](./type_defs.md#modifyinstanceeventstarttimeresulttypedef).
+
+<a id="modify_instance_event_window"></a>
 
 ### modify_instance_event_window
 
@@ -10421,6 +11276,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyInstanceEventWindowResultTypeDef](./type_defs.md#modifyinstanceeventwindowresulttypedef).
+
+<a id="modify_instance_metadata_options"></a>
 
 ### modify_instance_metadata_options
 
@@ -10451,6 +11308,8 @@ Keyword-only arguments:
 Returns
 [ModifyInstanceMetadataOptionsResultTypeDef](./type_defs.md#modifyinstancemetadataoptionsresulttypedef).
 
+<a id="modify_instance_placement"></a>
+
 ### modify_instance_placement
 
 Modifies the placement attributes for a specified instance.
@@ -10476,6 +11335,8 @@ Keyword-only arguments:
 Returns
 [ModifyInstancePlacementResultTypeDef](./type_defs.md#modifyinstanceplacementresulttypedef).
 
+<a id="modify_ipam"></a>
+
 ### modify_ipam
 
 Modify the configurations of an IPAM.
@@ -10499,6 +11360,8 @@ Keyword-only arguments:
   `Sequence`\[[RemoveIpamOperatingRegionTypeDef](./type_defs.md#removeipamoperatingregiontypedef)\]
 
 Returns [ModifyIpamResultTypeDef](./type_defs.md#modifyipamresulttypedef).
+
+<a id="modify_ipam_pool"></a>
 
 ### modify_ipam_pool
 
@@ -10530,6 +11393,8 @@ Keyword-only arguments:
 Returns
 [ModifyIpamPoolResultTypeDef](./type_defs.md#modifyipampoolresulttypedef).
 
+<a id="modify_ipam_resource_cidr"></a>
+
 ### modify_ipam_resource_cidr
 
 Modify a resource CIDR.
@@ -10555,6 +11420,8 @@ Keyword-only arguments:
 Returns
 [ModifyIpamResourceCidrResultTypeDef](./type_defs.md#modifyipamresourcecidrresulttypedef).
 
+<a id="modify_ipam_scope"></a>
+
 ### modify_ipam_scope
 
 Modify an IPAM scope.
@@ -10575,6 +11442,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyIpamScopeResultTypeDef](./type_defs.md#modifyipamscoperesulttypedef).
+
+<a id="modify_launch_template"></a>
 
 ### modify_launch_template
 
@@ -10598,6 +11467,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyLaunchTemplateResultTypeDef](./type_defs.md#modifylaunchtemplateresulttypedef).
+
+<a id="modify_managed_prefix_list"></a>
 
 ### modify_managed_prefix_list
 
@@ -10626,6 +11497,8 @@ Keyword-only arguments:
 Returns
 [ModifyManagedPrefixListResultTypeDef](./type_defs.md#modifymanagedprefixlistresulttypedef).
 
+<a id="modify_network_interface_attribute"></a>
+
 ### modify_network_interface_attribute
 
 Modifies the specified network interface attribute.
@@ -10649,6 +11522,8 @@ Keyword-only arguments:
 - `Groups`: `Sequence`\[`str`\]
 - `SourceDestCheck`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+
+<a id="modify_private_dns_name_options"></a>
 
 ### modify_private_dns_name_options
 
@@ -10674,6 +11549,8 @@ Keyword-only arguments:
 Returns
 [ModifyPrivateDnsNameOptionsResultTypeDef](./type_defs.md#modifyprivatednsnameoptionsresulttypedef).
 
+<a id="modify_reserved_instances"></a>
+
 ### modify_reserved_instances
 
 Modifies the Availability Zone, instance count, instance type, or network
@@ -10698,6 +11575,8 @@ Keyword-only arguments:
 Returns
 [ModifyReservedInstancesResultTypeDef](./type_defs.md#modifyreservedinstancesresulttypedef).
 
+<a id="modify_security_group_rules"></a>
+
 ### modify_security_group_rules
 
 Modifies the rules of a security group.
@@ -10720,6 +11599,8 @@ Keyword-only arguments:
 
 Returns
 [ModifySecurityGroupRulesResultTypeDef](./type_defs.md#modifysecuritygrouprulesresulttypedef).
+
+<a id="modify_snapshot_attribute"></a>
 
 ### modify_snapshot_attribute
 
@@ -10745,6 +11626,8 @@ Keyword-only arguments:
 - `UserIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
+<a id="modify_snapshot_tier"></a>
+
 ### modify_snapshot_tier
 
 Archives an Amazon EBS snapshot.
@@ -10766,6 +11649,8 @@ Keyword-only arguments:
 
 Returns
 [ModifySnapshotTierResultTypeDef](./type_defs.md#modifysnapshottierresulttypedef).
+
+<a id="modify_spot_fleet_request"></a>
 
 ### modify_spot_fleet_request
 
@@ -10792,6 +11677,8 @@ Keyword-only arguments:
 
 Returns
 [ModifySpotFleetRequestResponseTypeDef](./type_defs.md#modifyspotfleetrequestresponsetypedef).
+
+<a id="modify_subnet_attribute"></a>
 
 ### modify_subnet_attribute
 
@@ -10827,6 +11714,8 @@ Keyword-only arguments:
 - `DisableLniAtDeviceIndex`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
+<a id="modify_traffic_mirror_filter_network_services"></a>
+
 ### modify_traffic_mirror_filter_network_services
 
 Allows or restricts mirroring network services.
@@ -10851,6 +11740,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyTrafficMirrorFilterNetworkServicesResultTypeDef](./type_defs.md#modifytrafficmirrorfilternetworkservicesresulttypedef).
+
+<a id="modify_traffic_mirror_filter_rule"></a>
 
 ### modify_traffic_mirror_filter_rule
 
@@ -10888,6 +11779,8 @@ Keyword-only arguments:
 Returns
 [ModifyTrafficMirrorFilterRuleResultTypeDef](./type_defs.md#modifytrafficmirrorfilterruleresulttypedef).
 
+<a id="modify_traffic_mirror_session"></a>
+
 ### modify_traffic_mirror_session
 
 Modifies a Traffic Mirror session.
@@ -10917,6 +11810,8 @@ Keyword-only arguments:
 Returns
 [ModifyTrafficMirrorSessionResultTypeDef](./type_defs.md#modifytrafficmirrorsessionresulttypedef).
 
+<a id="modify_transit_gateway"></a>
+
 ### modify_transit_gateway
 
 Modifies the specified transit gateway.
@@ -10939,6 +11834,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyTransitGatewayResultTypeDef](./type_defs.md#modifytransitgatewayresulttypedef).
+
+<a id="modify_transit_gateway_prefix_list_reference"></a>
 
 ### modify_transit_gateway_prefix_list_reference
 
@@ -10965,6 +11862,8 @@ Keyword-only arguments:
 Returns
 [ModifyTransitGatewayPrefixListReferenceResultTypeDef](./type_defs.md#modifytransitgatewayprefixlistreferenceresulttypedef).
 
+<a id="modify_transit_gateway_vpc_attachment"></a>
+
 ### modify_transit_gateway_vpc_attachment
 
 Modifies the specified VPC attachment.
@@ -10989,6 +11888,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyTransitGatewayVpcAttachmentResultTypeDef](./type_defs.md#modifytransitgatewayvpcattachmentresulttypedef).
+
+<a id="modify_volume"></a>
 
 ### modify_volume
 
@@ -11015,6 +11916,8 @@ Keyword-only arguments:
 
 Returns [ModifyVolumeResultTypeDef](./type_defs.md#modifyvolumeresulttypedef).
 
+<a id="modify_volume_attribute"></a>
+
 ### modify_volume_attribute
 
 Modifies a volume attribute.
@@ -11033,6 +11936,8 @@ Keyword-only arguments:
 - `AutoEnableIO`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `DryRun`: `bool`
+
+<a id="modify_vpc_attribute"></a>
 
 ### modify_vpc_attribute
 
@@ -11053,6 +11958,8 @@ Keyword-only arguments:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `EnableDnsSupport`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+
+<a id="modify_vpc_endpoint"></a>
 
 ### modify_vpc_endpoint
 
@@ -11083,6 +11990,8 @@ Keyword-only arguments:
 Returns
 [ModifyVpcEndpointResultTypeDef](./type_defs.md#modifyvpcendpointresulttypedef).
 
+<a id="modify_vpc_endpoint_connection_notification"></a>
+
 ### modify_vpc_endpoint_connection_notification
 
 Modifies a connection notification for VPC endpoint or VPC endpoint service.
@@ -11105,6 +12014,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyVpcEndpointConnectionNotificationResultTypeDef](./type_defs.md#modifyvpcendpointconnectionnotificationresulttypedef).
+
+<a id="modify_vpc_endpoint_service_configuration"></a>
 
 ### modify_vpc_endpoint_service_configuration
 
@@ -11134,6 +12045,8 @@ Keyword-only arguments:
 Returns
 [ModifyVpcEndpointServiceConfigurationResultTypeDef](./type_defs.md#modifyvpcendpointserviceconfigurationresulttypedef).
 
+<a id="modify_vpc_endpoint_service_payer_responsibility"></a>
+
 ### modify_vpc_endpoint_service_payer_responsibility
 
 Modifies the payer responsibility for your VPC endpoint service.
@@ -11157,6 +12070,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyVpcEndpointServicePayerResponsibilityResultTypeDef](./type_defs.md#modifyvpcendpointservicepayerresponsibilityresulttypedef).
+
+<a id="modify_vpc_endpoint_service_permissions"></a>
 
 ### modify_vpc_endpoint_service_permissions
 
@@ -11182,6 +12097,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#modifyvpcendpointservicepermissionsresulttypedef).
+
+<a id="modify_vpc_peering_connection_options"></a>
 
 ### modify_vpc_peering_connection_options
 
@@ -11209,6 +12126,8 @@ Keyword-only arguments:
 Returns
 [ModifyVpcPeeringConnectionOptionsResultTypeDef](./type_defs.md#modifyvpcpeeringconnectionoptionsresulttypedef).
 
+<a id="modify_vpc_tenancy"></a>
+
 ### modify_vpc_tenancy
 
 Modifies the instance tenancy attribute of the specified VPC.
@@ -11230,6 +12149,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyVpcTenancyResultTypeDef](./type_defs.md#modifyvpctenancyresulttypedef).
+
+<a id="modify_vpn_connection"></a>
 
 ### modify_vpn_connection
 
@@ -11254,6 +12175,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyVpnConnectionResultTypeDef](./type_defs.md#modifyvpnconnectionresulttypedef).
+
+<a id="modify_vpn_connection_options"></a>
 
 ### modify_vpn_connection_options
 
@@ -11280,6 +12203,8 @@ Keyword-only arguments:
 Returns
 [ModifyVpnConnectionOptionsResultTypeDef](./type_defs.md#modifyvpnconnectionoptionsresulttypedef).
 
+<a id="modify_vpn_tunnel_certificate"></a>
+
 ### modify_vpn_tunnel_certificate
 
 Modifies the VPN tunnel endpoint certificate.
@@ -11301,6 +12226,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyVpnTunnelCertificateResultTypeDef](./type_defs.md#modifyvpntunnelcertificateresulttypedef).
+
+<a id="modify_vpn_tunnel_options"></a>
 
 ### modify_vpn_tunnel_options
 
@@ -11327,6 +12254,8 @@ Keyword-only arguments:
 Returns
 [ModifyVpnTunnelOptionsResultTypeDef](./type_defs.md#modifyvpntunneloptionsresulttypedef).
 
+<a id="monitor_instances"></a>
+
 ### monitor_instances
 
 Enables detailed monitoring for a running instance.
@@ -11346,6 +12275,8 @@ Keyword-only arguments:
 
 Returns
 [MonitorInstancesResultTypeDef](./type_defs.md#monitorinstancesresulttypedef).
+
+<a id="move_address_to_vpc"></a>
 
 ### move_address_to_vpc
 
@@ -11368,6 +12299,8 @@ Keyword-only arguments:
 Returns
 [MoveAddressToVpcResultTypeDef](./type_defs.md#moveaddresstovpcresulttypedef).
 
+<a id="move_byoip_cidr_to_ipam"></a>
+
 ### move_byoip_cidr_to_ipam
 
 Move an BYOIP IPv4 CIDR to IPAM from a public IPv4 pool.
@@ -11389,6 +12322,8 @@ Keyword-only arguments:
 
 Returns
 [MoveByoipCidrToIpamResultTypeDef](./type_defs.md#movebyoipcidrtoipamresulttypedef).
+
+<a id="provision_byoip_cidr"></a>
 
 ### provision_byoip_cidr
 
@@ -11419,6 +12354,8 @@ Keyword-only arguments:
 Returns
 [ProvisionByoipCidrResultTypeDef](./type_defs.md#provisionbyoipcidrresulttypedef).
 
+<a id="provision_ipam_pool_cidr"></a>
+
 ### provision_ipam_pool_cidr
 
 Provision a CIDR to an IPAM pool.
@@ -11442,6 +12379,8 @@ Keyword-only arguments:
 Returns
 [ProvisionIpamPoolCidrResultTypeDef](./type_defs.md#provisionipampoolcidrresulttypedef).
 
+<a id="provision_public_ipv4_pool_cidr"></a>
+
 ### provision_public_ipv4_pool_cidr
 
 Provision a CIDR to a public IPv4 pool.
@@ -11464,6 +12403,8 @@ Keyword-only arguments:
 
 Returns
 [ProvisionPublicIpv4PoolCidrResultTypeDef](./type_defs.md#provisionpublicipv4poolcidrresulttypedef).
+
+<a id="purchase_host_reservation"></a>
 
 ### purchase_host_reservation
 
@@ -11492,6 +12433,8 @@ Keyword-only arguments:
 Returns
 [PurchaseHostReservationResultTypeDef](./type_defs.md#purchasehostreservationresulttypedef).
 
+<a id="purchase_reserved_instances_offering"></a>
+
 ### purchase_reserved_instances_offering
 
 Purchases a Reserved Instance for use with your account.
@@ -11517,6 +12460,8 @@ Keyword-only arguments:
 Returns
 [PurchaseReservedInstancesOfferingResultTypeDef](./type_defs.md#purchasereservedinstancesofferingresulttypedef).
 
+<a id="purchase_scheduled_instances"></a>
+
 ### purchase_scheduled_instances
 
 Purchases the Scheduled Instances with the specified schedule.
@@ -11540,6 +12485,8 @@ Keyword-only arguments:
 Returns
 [PurchaseScheduledInstancesResultTypeDef](./type_defs.md#purchasescheduledinstancesresulttypedef).
 
+<a id="reboot_instances"></a>
+
 ### reboot_instances
 
 Requests a reboot of the specified instances.
@@ -11556,6 +12503,8 @@ Keyword-only arguments:
 
 - `InstanceIds`: `Sequence`\[`str`\] *(required)*
 - `DryRun`: `bool`
+
+<a id="register_image"></a>
 
 ### register_image
 
@@ -11591,6 +12540,8 @@ Keyword-only arguments:
 Returns
 [RegisterImageResultTypeDef](./type_defs.md#registerimageresulttypedef).
 
+<a id="register_instance_event_notification_attributes"></a>
+
 ### register_instance_event_notification_attributes
 
 Registers a set of tag keys to include in scheduled event notifications for
@@ -11613,6 +12564,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterInstanceEventNotificationAttributesResultTypeDef](./type_defs.md#registerinstanceeventnotificationattributesresulttypedef).
+
+<a id="register_transit_gateway_multicast_group_members"></a>
 
 ### register_transit_gateway_multicast_group_members
 
@@ -11638,6 +12591,8 @@ Keyword-only arguments:
 Returns
 [RegisterTransitGatewayMulticastGroupMembersResultTypeDef](./type_defs.md#registertransitgatewaymulticastgroupmembersresulttypedef).
 
+<a id="register_transit_gateway_multicast_group_sources"></a>
+
 ### register_transit_gateway_multicast_group_sources
 
 Registers sources (network interfaces) with the specified transit gateway
@@ -11661,6 +12616,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterTransitGatewayMulticastGroupSourcesResultTypeDef](./type_defs.md#registertransitgatewaymulticastgroupsourcesresulttypedef).
+
+<a id="reject_transit_gateway_multicast_domain_associations"></a>
 
 ### reject_transit_gateway_multicast_domain_associations
 
@@ -11687,6 +12644,8 @@ Keyword-only arguments:
 Returns
 [RejectTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#rejecttransitgatewaymulticastdomainassociationsresulttypedef).
 
+<a id="reject_transit_gateway_peering_attachment"></a>
+
 ### reject_transit_gateway_peering_attachment
 
 Rejects a transit gateway peering attachment request.
@@ -11708,6 +12667,8 @@ Keyword-only arguments:
 Returns
 [RejectTransitGatewayPeeringAttachmentResultTypeDef](./type_defs.md#rejecttransitgatewaypeeringattachmentresulttypedef).
 
+<a id="reject_transit_gateway_vpc_attachment"></a>
+
 ### reject_transit_gateway_vpc_attachment
 
 Rejects a request to attach a VPC to a transit gateway.
@@ -11728,6 +12689,8 @@ Keyword-only arguments:
 
 Returns
 [RejectTransitGatewayVpcAttachmentResultTypeDef](./type_defs.md#rejecttransitgatewayvpcattachmentresulttypedef).
+
+<a id="reject_vpc_endpoint_connections"></a>
 
 ### reject_vpc_endpoint_connections
 
@@ -11752,6 +12715,8 @@ Keyword-only arguments:
 Returns
 [RejectVpcEndpointConnectionsResultTypeDef](./type_defs.md#rejectvpcendpointconnectionsresulttypedef).
 
+<a id="reject_vpc_peering_connection"></a>
+
 ### reject_vpc_peering_connection
 
 Rejects a VPC peering connection request.
@@ -11773,6 +12738,8 @@ Keyword-only arguments:
 Returns
 [RejectVpcPeeringConnectionResultTypeDef](./type_defs.md#rejectvpcpeeringconnectionresulttypedef).
 
+<a id="release_address"></a>
+
 ### release_address
 
 Releases the specified Elastic IP address.
@@ -11792,6 +12759,8 @@ Keyword-only arguments:
 - `NetworkBorderGroup`: `str`
 - `DryRun`: `bool`
 
+<a id="release_hosts"></a>
+
 ### release_hosts
 
 When you no longer want to use an On-Demand Dedicated Host it can be released.
@@ -11809,6 +12778,8 @@ Keyword-only arguments:
 - `HostIds`: `Sequence`\[`str`\] *(required)*
 
 Returns [ReleaseHostsResultTypeDef](./type_defs.md#releasehostsresulttypedef).
+
+<a id="release_ipam_pool_allocation"></a>
 
 ### release_ipam_pool_allocation
 
@@ -11831,6 +12802,8 @@ Keyword-only arguments:
 
 Returns
 [ReleaseIpamPoolAllocationResultTypeDef](./type_defs.md#releaseipampoolallocationresulttypedef).
+
+<a id="replace_iam_instance_profile_association"></a>
 
 ### replace_iam_instance_profile_association
 
@@ -11855,6 +12828,8 @@ Keyword-only arguments:
 Returns
 [ReplaceIamInstanceProfileAssociationResultTypeDef](./type_defs.md#replaceiaminstanceprofileassociationresulttypedef).
 
+<a id="replace_network_acl_association"></a>
+
 ### replace_network_acl_association
 
 Changes which network ACL a subnet is associated with.
@@ -11876,6 +12851,8 @@ Keyword-only arguments:
 
 Returns
 [ReplaceNetworkAclAssociationResultTypeDef](./type_defs.md#replacenetworkaclassociationresulttypedef).
+
+<a id="replace_network_acl_entry"></a>
 
 ### replace_network_acl_entry
 
@@ -11901,6 +12878,8 @@ Keyword-only arguments:
 - `IcmpTypeCode`: [IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef)
 - `Ipv6CidrBlock`: `str`
 - `PortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
+
+<a id="replace_route"></a>
 
 ### replace_route
 
@@ -11934,6 +12913,8 @@ Keyword-only arguments:
 - `VpcPeeringConnectionId`: `str`
 - `CoreNetworkArn`: `str`
 
+<a id="replace_route_table_association"></a>
+
 ### replace_route_table_association
 
 Changes the route table associated with a given subnet, internet gateway, or
@@ -11956,6 +12937,8 @@ Keyword-only arguments:
 
 Returns
 [ReplaceRouteTableAssociationResultTypeDef](./type_defs.md#replaceroutetableassociationresulttypedef).
+
+<a id="replace_transit_gateway_route"></a>
 
 ### replace_transit_gateway_route
 
@@ -11980,6 +12963,8 @@ Keyword-only arguments:
 
 Returns
 [ReplaceTransitGatewayRouteResultTypeDef](./type_defs.md#replacetransitgatewayrouteresulttypedef).
+
+<a id="report_instance_status"></a>
 
 ### report_instance_status
 
@@ -12006,6 +12991,8 @@ Keyword-only arguments:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 
+<a id="request_spot_fleet"></a>
+
 ### request_spot_fleet
 
 .
@@ -12027,6 +13014,8 @@ Keyword-only arguments:
 
 Returns
 [RequestSpotFleetResponseTypeDef](./type_defs.md#requestspotfleetresponsetypedef).
+
+<a id="request_spot_instances"></a>
 
 ### request_spot_instances
 
@@ -12062,6 +13051,8 @@ Keyword-only arguments:
 Returns
 [RequestSpotInstancesResultTypeDef](./type_defs.md#requestspotinstancesresulttypedef).
 
+<a id="reset_address_attribute"></a>
+
 ### reset_address_attribute
 
 Resets the attribute of the specified IP address.
@@ -12085,6 +13076,8 @@ Keyword-only arguments:
 Returns
 [ResetAddressAttributeResultTypeDef](./type_defs.md#resetaddressattributeresulttypedef).
 
+<a id="reset_ebs_default_kms_key_id"></a>
+
 ### reset_ebs_default_kms_key_id
 
 Resets the default KMS key for EBS encryption for your account in this Region
@@ -12104,6 +13097,8 @@ Keyword-only arguments:
 
 Returns
 [ResetEbsDefaultKmsKeyIdResultTypeDef](./type_defs.md#resetebsdefaultkmskeyidresulttypedef).
+
+<a id="reset_fpga_image_attribute"></a>
 
 ### reset_fpga_image_attribute
 
@@ -12128,6 +13123,8 @@ Keyword-only arguments:
 Returns
 [ResetFpgaImageAttributeResultTypeDef](./type_defs.md#resetfpgaimageattributeresulttypedef).
 
+<a id="reset_image_attribute"></a>
+
 ### reset_image_attribute
 
 Resets an attribute of an AMI to its default value.
@@ -12147,6 +13144,8 @@ Keyword-only arguments:
   *(required)*
 - `ImageId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="reset_instance_attribute"></a>
 
 ### reset_instance_attribute
 
@@ -12168,6 +13167,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `DryRun`: `bool`
 
+<a id="reset_network_interface_attribute"></a>
+
 ### reset_network_interface_attribute
 
 Resets a network interface attribute.
@@ -12186,6 +13187,8 @@ Keyword-only arguments:
 - `NetworkInterfaceId`: `str` *(required)*
 - `DryRun`: `bool`
 - `SourceDestCheck`: `str`
+
+<a id="reset_snapshot_attribute"></a>
 
 ### reset_snapshot_attribute
 
@@ -12206,6 +13209,8 @@ Keyword-only arguments:
   *(required)*
 - `SnapshotId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="restore_address_to_classic"></a>
 
 ### restore_address_to_classic
 
@@ -12228,6 +13233,8 @@ Keyword-only arguments:
 Returns
 [RestoreAddressToClassicResultTypeDef](./type_defs.md#restoreaddresstoclassicresulttypedef).
 
+<a id="restore_image_from_recycle_bin"></a>
+
 ### restore_image_from_recycle_bin
 
 Restores an AMI from the Recycle Bin.
@@ -12248,6 +13255,8 @@ Keyword-only arguments:
 
 Returns
 [RestoreImageFromRecycleBinResultTypeDef](./type_defs.md#restoreimagefromrecyclebinresulttypedef).
+
+<a id="restore_managed_prefix_list_version"></a>
 
 ### restore_managed_prefix_list_version
 
@@ -12273,6 +13282,8 @@ Keyword-only arguments:
 Returns
 [RestoreManagedPrefixListVersionResultTypeDef](./type_defs.md#restoremanagedprefixlistversionresulttypedef).
 
+<a id="restore_snapshot_from_recycle_bin"></a>
+
 ### restore_snapshot_from_recycle_bin
 
 Restores a snapshot from the Recycle Bin.
@@ -12293,6 +13304,8 @@ Keyword-only arguments:
 
 Returns
 [RestoreSnapshotFromRecycleBinResultTypeDef](./type_defs.md#restoresnapshotfromrecyclebinresulttypedef).
+
+<a id="restore_snapshot_tier"></a>
 
 ### restore_snapshot_tier
 
@@ -12318,6 +13331,8 @@ Keyword-only arguments:
 Returns
 [RestoreSnapshotTierResultTypeDef](./type_defs.md#restoresnapshottierresulttypedef).
 
+<a id="revoke_client_vpn_ingress"></a>
+
 ### revoke_client_vpn_ingress
 
 Removes an ingress authorization rule from a Client VPN endpoint.
@@ -12340,6 +13355,8 @@ Keyword-only arguments:
 
 Returns
 [RevokeClientVpnIngressResultTypeDef](./type_defs.md#revokeclientvpningressresulttypedef).
+
+<a id="revoke_security_group_egress"></a>
 
 ### revoke_security_group_egress
 
@@ -12367,6 +13384,8 @@ Keyword-only arguments:
 
 Returns
 [RevokeSecurityGroupEgressResultTypeDef](./type_defs.md#revokesecuritygroupegressresulttypedef).
+
+<a id="revoke_security_group_ingress"></a>
 
 ### revoke_security_group_ingress
 
@@ -12398,6 +13417,8 @@ Keyword-only arguments:
 
 Returns
 [RevokeSecurityGroupIngressResultTypeDef](./type_defs.md#revokesecuritygroupingressresulttypedef).
+
+<a id="run_instances"></a>
 
 ### run_instances
 
@@ -12475,6 +13496,8 @@ Keyword-only arguments:
 Returns
 [ReservationResponseMetadataTypeDef](./type_defs.md#reservationresponsemetadatatypedef).
 
+<a id="run_scheduled_instances"></a>
+
 ### run_scheduled_instances
 
 Launches the specified Scheduled Instances.
@@ -12500,6 +13523,8 @@ Keyword-only arguments:
 Returns
 [RunScheduledInstancesResultTypeDef](./type_defs.md#runscheduledinstancesresulttypedef).
 
+<a id="search_local_gateway_routes"></a>
+
 ### search_local_gateway_routes
 
 Searches for routes in the specified local gateway route table.
@@ -12522,6 +13547,8 @@ Keyword-only arguments:
 
 Returns
 [SearchLocalGatewayRoutesResultTypeDef](./type_defs.md#searchlocalgatewayroutesresulttypedef).
+
+<a id="search_transit_gateway_multicast_groups"></a>
 
 ### search_transit_gateway_multicast_groups
 
@@ -12548,6 +13575,8 @@ Keyword-only arguments:
 Returns
 [SearchTransitGatewayMulticastGroupsResultTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresulttypedef).
 
+<a id="search_transit_gateway_routes"></a>
+
 ### search_transit_gateway_routes
 
 Searches for routes in the specified transit gateway route table.
@@ -12572,6 +13601,8 @@ Keyword-only arguments:
 Returns
 [SearchTransitGatewayRoutesResultTypeDef](./type_defs.md#searchtransitgatewayroutesresulttypedef).
 
+<a id="send_diagnostic_interrupt"></a>
+
 ### send_diagnostic_interrupt
 
 Sends a diagnostic interrupt to the specified Amazon EC2 instance to trigger a
@@ -12590,6 +13621,8 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `DryRun`: `bool`
+
+<a id="start_instances"></a>
 
 ### start_instances
 
@@ -12611,6 +13644,8 @@ Keyword-only arguments:
 
 Returns
 [StartInstancesResultTypeDef](./type_defs.md#startinstancesresulttypedef).
+
+<a id="start_network_insights_access_scope_analysis"></a>
 
 ### start_network_insights_access_scope_analysis
 
@@ -12635,6 +13670,8 @@ Keyword-only arguments:
 
 Returns
 [StartNetworkInsightsAccessScopeAnalysisResultTypeDef](./type_defs.md#startnetworkinsightsaccessscopeanalysisresulttypedef).
+
+<a id="start_network_insights_analysis"></a>
 
 ### start_network_insights_analysis
 
@@ -12661,6 +13698,8 @@ Keyword-only arguments:
 Returns
 [StartNetworkInsightsAnalysisResultTypeDef](./type_defs.md#startnetworkinsightsanalysisresulttypedef).
 
+<a id="start_vpc_endpoint_service_private_dns_verification"></a>
+
 ### start_vpc_endpoint_service_private_dns_verification
 
 Initiates the verification process to prove that the service provider owns the
@@ -12684,6 +13723,8 @@ Keyword-only arguments:
 Returns
 [StartVpcEndpointServicePrivateDnsVerificationResultTypeDef](./type_defs.md#startvpcendpointserviceprivatednsverificationresulttypedef).
 
+<a id="stop_instances"></a>
+
 ### stop_instances
 
 Stops an Amazon EBS-backed instance.
@@ -12705,6 +13746,8 @@ Keyword-only arguments:
 
 Returns
 [StopInstancesResultTypeDef](./type_defs.md#stopinstancesresulttypedef).
+
+<a id="terminate_client_vpn_connections"></a>
 
 ### terminate_client_vpn_connections
 
@@ -12729,6 +13772,8 @@ Keyword-only arguments:
 Returns
 [TerminateClientVpnConnectionsResultTypeDef](./type_defs.md#terminateclientvpnconnectionsresulttypedef).
 
+<a id="terminate_instances"></a>
+
 ### terminate_instances
 
 Shuts down the specified instances.
@@ -12748,6 +13793,8 @@ Keyword-only arguments:
 
 Returns
 [TerminateInstancesResultTypeDef](./type_defs.md#terminateinstancesresulttypedef).
+
+<a id="unassign_ipv6_addresses"></a>
 
 ### unassign_ipv6_addresses
 
@@ -12771,6 +13818,8 @@ Keyword-only arguments:
 Returns
 [UnassignIpv6AddressesResultTypeDef](./type_defs.md#unassignipv6addressesresulttypedef).
 
+<a id="unassign_private_ip_addresses"></a>
+
 ### unassign_private_ip_addresses
 
 Unassigns one or more secondary private IP addresses, or IPv4 Prefix Delegation
@@ -12791,6 +13840,8 @@ Keyword-only arguments:
 - `PrivateIpAddresses`: `Sequence`\[`str`\]
 - `Ipv4Prefixes`: `Sequence`\[`str`\]
 
+<a id="unmonitor_instances"></a>
+
 ### unmonitor_instances
 
 Disables detailed monitoring for a running instance.
@@ -12810,6 +13861,8 @@ Keyword-only arguments:
 
 Returns
 [UnmonitorInstancesResultTypeDef](./type_defs.md#unmonitorinstancesresulttypedef).
+
+<a id="update_security_group_rule_descriptions_egress"></a>
 
 ### update_security_group_rule_descriptions_egress
 
@@ -12834,6 +13887,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSecurityGroupRuleDescriptionsEgressResultTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsegressresulttypedef).
+
+<a id="update_security_group_rule_descriptions_ingress"></a>
 
 ### update_security_group_rule_descriptions_ingress
 
@@ -12861,6 +13916,8 @@ Keyword-only arguments:
 Returns
 [UpdateSecurityGroupRuleDescriptionsIngressResultTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsingressresulttypedef).
 
+<a id="withdraw_byoip_cidr"></a>
+
 ### withdraw_byoip_cidr
 
 Stops advertising an address range that is provisioned as an address pool.
@@ -12880,6 +13937,8 @@ Keyword-only arguments:
 
 Returns
 [WithdrawByoipCidrResultTypeDef](./type_defs.md#withdrawbyoipcidrresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -13128,6 +14187,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [SearchLocalGatewayRoutesPaginator](./paginators.md#searchlocalgatewayroutespaginator)
 - `client.get_paginator("search_transit_gateway_multicast_groups")` ->
   [SearchTransitGatewayMulticastGroupsPaginator](./paginators.md#searchtransitgatewaymulticastgroupspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

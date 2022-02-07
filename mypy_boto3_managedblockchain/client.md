@@ -1,3 +1,5 @@
+<a id="managedblockchainclient-for-boto3-managedblockchain-module"></a>
+
 # ManagedBlockchainClient for boto3 ManagedBlockchain module
 
 > [Index](..) > [ManagedBlockchain](.) > ManagedBlockchainClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
 type annotations stubs module
-[mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
+[mypy-boto3-managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
 - [ManagedBlockchainClient for boto3 ManagedBlockchain module](#managedblockchainclient-for-boto3-managedblockchain-module)
   - [ManagedBlockchainClient](#managedblockchainclient)
@@ -38,6 +40,8 @@ type annotations stubs module
     - [update_node](#update_node)
     - [vote_on_proposal](#vote_on_proposal)
 
+<a id="managedblockchainclient"></a>
+
 ## ManagedBlockchainClient
 
 Type annotations for `boto3.client("managedblockchain")`
@@ -45,14 +49,17 @@ Type annotations for `boto3.client("managedblockchain")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
 
 def get_managedblockchain_client() -> ManagedBlockchainClient:
-    return boto3.client("managedblockchain")
+    return Session().client("managedblockchain")
 ```
 
 Boto3 documentation:
 [ManagedBlockchain.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -80,7 +87,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.TooManyTagsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -92,6 +103,8 @@ Boto3 documentation:
 [ManagedBlockchain.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -107,6 +120,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_member"></a>
 
 ### create_member
 
@@ -130,6 +145,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns [CreateMemberOutputTypeDef](./type_defs.md#creatememberoutputtypedef).
+
+<a id="create_network"></a>
 
 ### create_network
 
@@ -162,6 +179,8 @@ Keyword-only arguments:
 Returns
 [CreateNetworkOutputTypeDef](./type_defs.md#createnetworkoutputtypedef).
 
+<a id="create_node"></a>
+
 ### create_node
 
 Creates a node on the specified blockchain network.
@@ -185,6 +204,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateNodeOutputTypeDef](./type_defs.md#createnodeoutputtypedef).
+
+<a id="create_proposal"></a>
 
 ### create_proposal
 
@@ -214,6 +235,8 @@ Keyword-only arguments:
 Returns
 [CreateProposalOutputTypeDef](./type_defs.md#createproposaloutputtypedef).
 
+<a id="delete_member"></a>
+
 ### delete_member
 
 Deletes a member.
@@ -232,6 +255,8 @@ Keyword-only arguments:
 - `MemberId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_node"></a>
 
 ### delete_node
 
@@ -253,6 +278,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -271,6 +298,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_member"></a>
 
 ### get_member
 
@@ -291,6 +320,8 @@ Keyword-only arguments:
 
 Returns [GetMemberOutputTypeDef](./type_defs.md#getmemberoutputtypedef).
 
+<a id="get_network"></a>
+
 ### get_network
 
 Returns detailed information about a network.
@@ -308,6 +339,8 @@ Keyword-only arguments:
 - `NetworkId`: `str` *(required)*
 
 Returns [GetNetworkOutputTypeDef](./type_defs.md#getnetworkoutputtypedef).
+
+<a id="get_node"></a>
 
 ### get_node
 
@@ -329,6 +362,8 @@ Keyword-only arguments:
 
 Returns [GetNodeOutputTypeDef](./type_defs.md#getnodeoutputtypedef).
 
+<a id="get_proposal"></a>
+
 ### get_proposal
 
 Returns detailed information about a proposal.
@@ -347,6 +382,8 @@ Keyword-only arguments:
 - `ProposalId`: `str` *(required)*
 
 Returns [GetProposalOutputTypeDef](./type_defs.md#getproposaloutputtypedef).
+
+<a id="list_invitations"></a>
 
 ### list_invitations
 
@@ -368,6 +405,8 @@ Keyword-only arguments:
 
 Returns
 [ListInvitationsOutputTypeDef](./type_defs.md#listinvitationsoutputtypedef).
+
+<a id="list_members"></a>
 
 ### list_members
 
@@ -393,6 +432,8 @@ Keyword-only arguments:
 
 Returns [ListMembersOutputTypeDef](./type_defs.md#listmembersoutputtypedef).
 
+<a id="list_networks"></a>
+
 ### list_networks
 
 Returns information about the networks in which the current AWS account
@@ -416,6 +457,8 @@ Keyword-only arguments:
 
 Returns [ListNetworksOutputTypeDef](./type_defs.md#listnetworksoutputtypedef).
 
+<a id="list_nodes"></a>
+
 ### list_nodes
 
 Returns information about the nodes within a network.
@@ -437,6 +480,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListNodesOutputTypeDef](./type_defs.md#listnodesoutputtypedef).
+
+<a id="list_proposal_votes"></a>
 
 ### list_proposal_votes
 
@@ -462,6 +507,8 @@ Keyword-only arguments:
 Returns
 [ListProposalVotesOutputTypeDef](./type_defs.md#listproposalvotesoutputtypedef).
 
+<a id="list_proposals"></a>
+
 ### list_proposals
 
 Returns a list of proposals for the network.
@@ -483,6 +530,8 @@ Keyword-only arguments:
 Returns
 [ListProposalsOutputTypeDef](./type_defs.md#listproposalsoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of tags for the specified resource.
@@ -503,6 +552,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="reject_invitation"></a>
+
 ### reject_invitation
 
 Rejects an invitation to join a network.
@@ -521,6 +572,8 @@ Keyword-only arguments:
 - `InvitationId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -542,6 +595,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the specified tags from the Amazon Managed Blockchain resource.
@@ -560,6 +615,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_member"></a>
 
 ### update_member
 
@@ -582,6 +639,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_node"></a>
+
 ### update_node
 
 Updates a node configuration with new parameters.
@@ -603,6 +662,8 @@ Keyword-only arguments:
   [NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="vote_on_proposal"></a>
 
 ### vote_on_proposal
 

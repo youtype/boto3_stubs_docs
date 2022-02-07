@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-emr-module"></a>
+
 # Literals for boto3 EMR module
 
 > [Index](..) > [EMR](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
 type annotations stubs module
-[mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
+[mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
 
 - [Literals for boto3 EMR module](#literals-for-boto3-emr-module)
   - [ActionOnFailureType](#actiononfailuretype)
@@ -64,6 +66,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="actiononfailuretype"></a>
+
 ## ActionOnFailureType
 
 ```python
@@ -77,6 +81,8 @@ Values:
 - `TERMINATE_CLUSTER`
 - `TERMINATE_JOB_FLOW`
 
+<a id="adjustmenttypetype"></a>
+
 ## AdjustmentTypeType
 
 ```python
@@ -89,6 +95,8 @@ Values:
 - `EXACT_CAPACITY`
 - `PERCENT_CHANGE_IN_CAPACITY`
 
+<a id="authmodetype"></a>
+
 ## AuthModeType
 
 ```python
@@ -99,6 +107,8 @@ Values:
 
 - `IAM`
 - `SSO`
+
+<a id="autoscalingpolicystatechangereasoncodetype"></a>
 
 ## AutoScalingPolicyStateChangeReasonCodeType
 
@@ -111,6 +121,8 @@ Values:
 - `CLEANUP_FAILURE`
 - `PROVISION_FAILURE`
 - `USER_REQUEST`
+
+<a id="autoscalingpolicystatetype"></a>
 
 ## AutoScalingPolicyStateType
 
@@ -127,6 +139,8 @@ Values:
 - `FAILED`
 - `PENDING`
 
+<a id="cancelstepsrequeststatustype"></a>
+
 ## CancelStepsRequestStatusType
 
 ```python
@@ -138,6 +152,8 @@ Values:
 - `FAILED`
 - `SUBMITTED`
 
+<a id="clusterrunningwaitername"></a>
+
 ## ClusterRunningWaiterName
 
 ```python
@@ -147,6 +163,8 @@ from mypy_boto3_emr.literals import ClusterRunningWaiterName
 Values:
 
 - `cluster_running`
+
+<a id="clusterstatechangereasoncodetype"></a>
 
 ## ClusterStateChangeReasonCodeType
 
@@ -165,6 +183,8 @@ Values:
 - `USER_REQUEST`
 - `VALIDATION_ERROR`
 
+<a id="clusterstatetype"></a>
+
 ## ClusterStateType
 
 ```python
@@ -181,6 +201,8 @@ Values:
 - `TERMINATING`
 - `WAITING`
 
+<a id="clusterterminatedwaitername"></a>
+
 ## ClusterTerminatedWaiterName
 
 ```python
@@ -190,6 +212,8 @@ from mypy_boto3_emr.literals import ClusterTerminatedWaiterName
 Values:
 
 - `cluster_terminated`
+
+<a id="comparisonoperatortype"></a>
 
 ## ComparisonOperatorType
 
@@ -204,6 +228,8 @@ Values:
 - `LESS_THAN`
 - `LESS_THAN_OR_EQUAL`
 
+<a id="computelimitsunittypetype"></a>
+
 ## ComputeLimitsUnitTypeType
 
 ```python
@@ -216,6 +242,8 @@ Values:
 - `Instances`
 - `VCPU`
 
+<a id="executionenginetypetype"></a>
+
 ## ExecutionEngineTypeType
 
 ```python
@@ -225,6 +253,8 @@ from mypy_boto3_emr.literals import ExecutionEngineTypeType
 Values:
 
 - `EMR`
+
+<a id="identitytypetype"></a>
 
 ## IdentityTypeType
 
@@ -237,6 +267,8 @@ Values:
 - `GROUP`
 - `USER`
 
+<a id="instancecollectiontypetype"></a>
+
 ## InstanceCollectionTypeType
 
 ```python
@@ -247,6 +279,8 @@ Values:
 
 - `INSTANCE_FLEET`
 - `INSTANCE_GROUP`
+
+<a id="instancefleetstatechangereasoncodetype"></a>
 
 ## InstanceFleetStateChangeReasonCodeType
 
@@ -260,6 +294,8 @@ Values:
 - `INSTANCE_FAILURE`
 - `INTERNAL_ERROR`
 - `VALIDATION_ERROR`
+
+<a id="instancefleetstatetype"></a>
 
 ## InstanceFleetStateType
 
@@ -277,6 +313,8 @@ Values:
 - `TERMINATED`
 - `TERMINATING`
 
+<a id="instancefleettypetype"></a>
+
 ## InstanceFleetTypeType
 
 ```python
@@ -288,6 +326,8 @@ Values:
 - `CORE`
 - `MASTER`
 - `TASK`
+
+<a id="instancegroupstatechangereasoncodetype"></a>
 
 ## InstanceGroupStateChangeReasonCodeType
 
@@ -301,6 +341,8 @@ Values:
 - `INSTANCE_FAILURE`
 - `INTERNAL_ERROR`
 - `VALIDATION_ERROR`
+
+<a id="instancegroupstatetype"></a>
 
 ## InstanceGroupStateType
 
@@ -322,6 +364,8 @@ Values:
 - `TERMINATED`
 - `TERMINATING`
 
+<a id="instancegrouptypetype"></a>
+
 ## InstanceGroupTypeType
 
 ```python
@@ -334,6 +378,8 @@ Values:
 - `MASTER`
 - `TASK`
 
+<a id="instanceroletypetype"></a>
+
 ## InstanceRoleTypeType
 
 ```python
@@ -345,6 +391,8 @@ Values:
 - `CORE`
 - `MASTER`
 - `TASK`
+
+<a id="instancestatechangereasoncodetype"></a>
 
 ## InstanceStateChangeReasonCodeType
 
@@ -360,6 +408,8 @@ Values:
 - `INTERNAL_ERROR`
 - `VALIDATION_ERROR`
 
+<a id="instancestatetype"></a>
+
 ## InstanceStateType
 
 ```python
@@ -373,6 +423,8 @@ Values:
 - `PROVISIONING`
 - `RUNNING`
 - `TERMINATED`
+
+<a id="jobflowexecutionstatetype"></a>
 
 ## JobFlowExecutionStateType
 
@@ -391,6 +443,8 @@ Values:
 - `TERMINATED`
 - `WAITING`
 
+<a id="listbootstrapactionspaginatorname"></a>
+
 ## ListBootstrapActionsPaginatorName
 
 ```python
@@ -400,6 +454,8 @@ from mypy_boto3_emr.literals import ListBootstrapActionsPaginatorName
 Values:
 
 - `list_bootstrap_actions`
+
+<a id="listclusterspaginatorname"></a>
 
 ## ListClustersPaginatorName
 
@@ -411,6 +467,8 @@ Values:
 
 - `list_clusters`
 
+<a id="listinstancefleetspaginatorname"></a>
+
 ## ListInstanceFleetsPaginatorName
 
 ```python
@@ -420,6 +478,8 @@ from mypy_boto3_emr.literals import ListInstanceFleetsPaginatorName
 Values:
 
 - `list_instance_fleets`
+
+<a id="listinstancegroupspaginatorname"></a>
 
 ## ListInstanceGroupsPaginatorName
 
@@ -431,6 +491,8 @@ Values:
 
 - `list_instance_groups`
 
+<a id="listinstancespaginatorname"></a>
+
 ## ListInstancesPaginatorName
 
 ```python
@@ -440,6 +502,8 @@ from mypy_boto3_emr.literals import ListInstancesPaginatorName
 Values:
 
 - `list_instances`
+
+<a id="listnotebookexecutionspaginatorname"></a>
 
 ## ListNotebookExecutionsPaginatorName
 
@@ -451,6 +515,8 @@ Values:
 
 - `list_notebook_executions`
 
+<a id="listsecurityconfigurationspaginatorname"></a>
+
 ## ListSecurityConfigurationsPaginatorName
 
 ```python
@@ -460,6 +526,8 @@ from mypy_boto3_emr.literals import ListSecurityConfigurationsPaginatorName
 Values:
 
 - `list_security_configurations`
+
+<a id="liststepspaginatorname"></a>
 
 ## ListStepsPaginatorName
 
@@ -471,6 +539,8 @@ Values:
 
 - `list_steps`
 
+<a id="liststudiosessionmappingspaginatorname"></a>
+
 ## ListStudioSessionMappingsPaginatorName
 
 ```python
@@ -480,6 +550,8 @@ from mypy_boto3_emr.literals import ListStudioSessionMappingsPaginatorName
 Values:
 
 - `list_studio_session_mappings`
+
+<a id="liststudiospaginatorname"></a>
 
 ## ListStudiosPaginatorName
 
@@ -491,6 +563,8 @@ Values:
 
 - `list_studios`
 
+<a id="markettypetype"></a>
+
 ## MarketTypeType
 
 ```python
@@ -501,6 +575,8 @@ Values:
 
 - `ON_DEMAND`
 - `SPOT`
+
+<a id="notebookexecutionstatustype"></a>
 
 ## NotebookExecutionStatusType
 
@@ -521,6 +597,8 @@ Values:
 - `STOPPED`
 - `STOPPING`
 
+<a id="ondemandcapacityreservationpreferencetype"></a>
+
 ## OnDemandCapacityReservationPreferenceType
 
 ```python
@@ -532,6 +610,8 @@ Values:
 - `none`
 - `open`
 
+<a id="ondemandcapacityreservationusagestrategytype"></a>
+
 ## OnDemandCapacityReservationUsageStrategyType
 
 ```python
@@ -542,6 +622,8 @@ Values:
 
 - `use-capacity-reservations-first`
 
+<a id="ondemandprovisioningallocationstrategytype"></a>
+
 ## OnDemandProvisioningAllocationStrategyType
 
 ```python
@@ -551,6 +633,8 @@ from mypy_boto3_emr.literals import OnDemandProvisioningAllocationStrategyType
 Values:
 
 - `lowest-price`
+
+<a id="placementgroupstrategytype"></a>
 
 ## PlacementGroupStrategyType
 
@@ -565,6 +649,8 @@ Values:
 - `PARTITION`
 - `SPREAD`
 
+<a id="repoupgradeonboottype"></a>
+
 ## RepoUpgradeOnBootType
 
 ```python
@@ -575,6 +661,8 @@ Values:
 
 - `NONE`
 - `SECURITY`
+
+<a id="scaledownbehaviortype"></a>
 
 ## ScaleDownBehaviorType
 
@@ -587,6 +675,8 @@ Values:
 - `TERMINATE_AT_INSTANCE_HOUR`
 - `TERMINATE_AT_TASK_COMPLETION`
 
+<a id="spotprovisioningallocationstrategytype"></a>
+
 ## SpotProvisioningAllocationStrategyType
 
 ```python
@@ -596,6 +686,8 @@ from mypy_boto3_emr.literals import SpotProvisioningAllocationStrategyType
 Values:
 
 - `capacity-optimized`
+
+<a id="spotprovisioningtimeoutactiontype"></a>
 
 ## SpotProvisioningTimeoutActionType
 
@@ -607,6 +699,8 @@ Values:
 
 - `SWITCH_TO_ON_DEMAND`
 - `TERMINATE_CLUSTER`
+
+<a id="statistictype"></a>
 
 ## StatisticType
 
@@ -622,6 +716,8 @@ Values:
 - `SAMPLE_COUNT`
 - `SUM`
 
+<a id="stepcancellationoptiontype"></a>
+
 ## StepCancellationOptionType
 
 ```python
@@ -633,6 +729,8 @@ Values:
 - `SEND_INTERRUPT`
 - `TERMINATE_PROCESS`
 
+<a id="stepcompletewaitername"></a>
+
 ## StepCompleteWaiterName
 
 ```python
@@ -642,6 +740,8 @@ from mypy_boto3_emr.literals import StepCompleteWaiterName
 Values:
 
 - `step_complete`
+
+<a id="stepexecutionstatetype"></a>
 
 ## StepExecutionStateType
 
@@ -659,6 +759,8 @@ Values:
 - `PENDING`
 - `RUNNING`
 
+<a id="stepstatechangereasoncodetype"></a>
+
 ## StepStateChangeReasonCodeType
 
 ```python
@@ -668,6 +770,8 @@ from mypy_boto3_emr.literals import StepStateChangeReasonCodeType
 Values:
 
 - `NONE`
+
+<a id="stepstatetype"></a>
 
 ## StepStateType
 
@@ -684,6 +788,8 @@ Values:
 - `INTERRUPTED`
 - `PENDING`
 - `RUNNING`
+
+<a id="unittype"></a>
 
 ## UnitType
 
@@ -720,6 +826,8 @@ Values:
 - `TERA_BITS_PER_SECOND`
 - `TERA_BYTES`
 - `TERA_BYTES_PER_SECOND`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1029,6 +1137,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -1047,6 +1157,8 @@ Values:
 - `list_steps`
 - `list_studio_session_mappings`
 - `list_studios`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

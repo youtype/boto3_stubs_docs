@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-connectparticipant-module"></a>
+
 # Literals for boto3 ConnectParticipant module
 
 > [Index](..) > [ConnectParticipant](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
 type annotations stubs module
-[mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
+[mypy-boto3-connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
 - [Literals for boto3 ConnectParticipant module](#literals-for-boto3-connectparticipant-module)
   - [ArtifactStatusType](#artifactstatustype)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [ScanDirectionType](#scandirectiontype)
   - [SortKeyType](#sortkeytype)
   - [ServiceName](#servicename)
+
+<a id="artifactstatustype"></a>
 
 ## ArtifactStatusType
 
@@ -27,6 +31,8 @@ Values:
 - `APPROVED`
 - `IN_PROGRESS`
 - `REJECTED`
+
+<a id="chatitemtypetype"></a>
 
 ## ChatItemTypeType
 
@@ -47,6 +53,8 @@ Values:
 - `TRANSFER_SUCCEEDED`
 - `TYPING`
 
+<a id="connectiontypetype"></a>
+
 ## ConnectionTypeType
 
 ```python
@@ -57,6 +65,8 @@ Values:
 
 - `CONNECTION_CREDENTIALS`
 - `WEBSOCKET`
+
+<a id="participantroletype"></a>
 
 ## ParticipantRoleType
 
@@ -70,6 +80,8 @@ Values:
 - `CUSTOMER`
 - `SYSTEM`
 
+<a id="scandirectiontype"></a>
+
 ## ScanDirectionType
 
 ```python
@@ -81,6 +93,8 @@ Values:
 - `BACKWARD`
 - `FORWARD`
 
+<a id="sortkeytype"></a>
+
 ## SortKeyType
 
 ```python
@@ -91,6 +105,8 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

@@ -1,3 +1,5 @@
+<a id="applicationautoscalingclient-for-boto3-applicationautoscaling-module"></a>
+
 # ApplicationAutoScalingClient for boto3 ApplicationAutoScaling module
 
 > [Index](..) > [ApplicationAutoScaling](.) > ApplicationAutoScalingClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module
-[mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
+[mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 - [ApplicationAutoScalingClient for boto3 ApplicationAutoScaling module](#applicationautoscalingclient-for-boto3-applicationautoscaling-module)
   - [ApplicationAutoScalingClient](#applicationautoscalingclient)
@@ -26,6 +28,8 @@ type annotations stubs module
     - [register_scalable_target](#register_scalable_target)
     - [get_paginator](#get_paginator)
 
+<a id="applicationautoscalingclient"></a>
+
 ## ApplicationAutoScalingClient
 
 Type annotations for `boto3.client("application-autoscaling")`
@@ -33,14 +37,17 @@ Type annotations for `boto3.client("application-autoscaling")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_application_autoscaling.client import ApplicationAutoScalingClient
 
 def get_application-autoscaling_client() -> ApplicationAutoScalingClient:
-    return boto3.client("application-autoscaling")
+    return Session().client("application-autoscaling")
 ```
 
 Boto3 documentation:
 [ApplicationAutoScaling.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -65,7 +72,11 @@ Exceptions:
 - `Exceptions.ObjectNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -78,6 +89,8 @@ Boto3 documentation:
 [ApplicationAutoScaling.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -94,6 +107,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_scaling_policy"></a>
 
 ### delete_scaling_policy
 
@@ -120,6 +135,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_scheduled_action"></a>
+
 ### delete_scheduled_action
 
 Deletes the specified scheduled action for an Application Auto Scaling scalable
@@ -145,6 +162,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="deregister_scalable_target"></a>
+
 ### deregister_scalable_target
 
 Deregisters an Application Auto Scaling scalable target when you have finished
@@ -168,6 +187,8 @@ Keyword-only arguments:
   [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_scalable_targets"></a>
 
 ### describe_scalable_targets
 
@@ -195,6 +216,8 @@ Keyword-only arguments:
 Returns
 [DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef).
 
+<a id="describe_scaling_activities"></a>
+
 ### describe_scaling_activities
 
 Provides descriptive information about the scaling activities in the specified
@@ -221,6 +244,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef).
+
+<a id="describe_scaling_policies"></a>
 
 ### describe_scaling_policies
 
@@ -250,6 +275,8 @@ Keyword-only arguments:
 Returns
 [DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef).
 
+<a id="describe_scheduled_actions"></a>
+
 ### describe_scheduled_actions
 
 Describes the Application Auto Scaling scheduled actions for the specified
@@ -278,6 +305,8 @@ Keyword-only arguments:
 Returns
 [DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -296,6 +325,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="put_scaling_policy"></a>
 
 ### put_scaling_policy
 
@@ -328,6 +359,8 @@ Keyword-only arguments:
 Returns
 [PutScalingPolicyResponseTypeDef](./type_defs.md#putscalingpolicyresponsetypedef).
 
+<a id="put_scheduled_action"></a>
+
 ### put_scheduled_action
 
 Creates or updates a scheduled action for an Application Auto Scaling scalable
@@ -359,6 +392,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="register_scalable_target"></a>
+
 ### register_scalable_target
 
 Registers or updates a scalable target.
@@ -386,6 +421,8 @@ Keyword-only arguments:
   [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

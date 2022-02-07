@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-codecommit-module"></a>
+
 # Paginators for boto3 CodeCommit module
 
 > [Index](..) > [CodeCommit](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
 type annotations stubs module
-[mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
+[mypy-boto3-codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
 - [Paginators for boto3 CodeCommit module](#paginators-for-boto3-codecommit-module)
   - [DescribePullRequestEventsPaginator](#describepullrequesteventspaginator)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [ListPullRequestsPaginator](#listpullrequestspaginator)
   - [ListRepositoriesPaginator](#listrepositoriespaginator)
 
+<a id="describepullrequesteventspaginator"></a>
+
 ## DescribePullRequestEventsPaginator
 
 Type annotations for
@@ -24,10 +28,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codecommit.paginator import DescribePullRequestEventsPaginator
 
 def get_describe_pull_request_events_paginator() -> DescribePullRequestEventsPaginator:
-    return boto3.client("codecommit").get_paginator("describe_pull_request_events")
+    return Session().client("codecommit").get_paginator("describe_pull_request_events")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `DescribePullRequestEventsPaginator.paginate` method:
 `DescribePullRequestEventsPaginator.paginate` returns
 `_PageIterator`\[[DescribePullRequestEventsOutputTypeDef](./type_defs.md#describepullrequesteventsoutputtypedef)\].
 
+<a id="getcommentsforcomparedcommitpaginator"></a>
+
 ## GetCommentsForComparedCommitPaginator
 
 Type annotations for
@@ -53,10 +61,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codecommit.paginator import GetCommentsForComparedCommitPaginator
 
 def get_get_comments_for_compared_commit_paginator() -> GetCommentsForComparedCommitPaginator:
-    return boto3.client("codecommit").get_paginator("get_comments_for_compared_commit")
+    return Session().client("codecommit").get_paginator("get_comments_for_compared_commit")
 ```
 
 Boto3 documentation:
@@ -73,6 +83,8 @@ Arguments for `GetCommentsForComparedCommitPaginator.paginate` method:
 `GetCommentsForComparedCommitPaginator.paginate` returns
 `_PageIterator`\[[GetCommentsForComparedCommitOutputTypeDef](./type_defs.md#getcommentsforcomparedcommitoutputtypedef)\].
 
+<a id="getcommentsforpullrequestpaginator"></a>
+
 ## GetCommentsForPullRequestPaginator
 
 Type annotations for
@@ -81,10 +93,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codecommit.paginator import GetCommentsForPullRequestPaginator
 
 def get_get_comments_for_pull_request_paginator() -> GetCommentsForPullRequestPaginator:
-    return boto3.client("codecommit").get_paginator("get_comments_for_pull_request")
+    return Session().client("codecommit").get_paginator("get_comments_for_pull_request")
 ```
 
 Boto3 documentation:
@@ -102,6 +116,8 @@ Arguments for `GetCommentsForPullRequestPaginator.paginate` method:
 `GetCommentsForPullRequestPaginator.paginate` returns
 `_PageIterator`\[[GetCommentsForPullRequestOutputTypeDef](./type_defs.md#getcommentsforpullrequestoutputtypedef)\].
 
+<a id="getdifferencespaginator"></a>
+
 ## GetDifferencesPaginator
 
 Type annotations for
@@ -110,10 +126,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codecommit.paginator import GetDifferencesPaginator
 
 def get_get_differences_paginator() -> GetDifferencesPaginator:
-    return boto3.client("codecommit").get_paginator("get_differences")
+    return Session().client("codecommit").get_paginator("get_differences")
 ```
 
 Boto3 documentation:
@@ -132,6 +150,8 @@ Arguments for `GetDifferencesPaginator.paginate` method:
 `GetDifferencesPaginator.paginate` returns
 `_PageIterator`\[[GetDifferencesOutputTypeDef](./type_defs.md#getdifferencesoutputtypedef)\].
 
+<a id="listbranchespaginator"></a>
+
 ## ListBranchesPaginator
 
 Type annotations for
@@ -140,10 +160,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codecommit.paginator import ListBranchesPaginator
 
 def get_list_branches_paginator() -> ListBranchesPaginator:
-    return boto3.client("codecommit").get_paginator("list_branches")
+    return Session().client("codecommit").get_paginator("list_branches")
 ```
 
 Boto3 documentation:
@@ -158,6 +180,8 @@ Arguments for `ListBranchesPaginator.paginate` method:
 `ListBranchesPaginator.paginate` returns
 `_PageIterator`\[[ListBranchesOutputTypeDef](./type_defs.md#listbranchesoutputtypedef)\].
 
+<a id="listpullrequestspaginator"></a>
+
 ## ListPullRequestsPaginator
 
 Type annotations for
@@ -166,10 +190,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codecommit.paginator import ListPullRequestsPaginator
 
 def get_list_pull_requests_paginator() -> ListPullRequestsPaginator:
-    return boto3.client("codecommit").get_paginator("list_pull_requests")
+    return Session().client("codecommit").get_paginator("list_pull_requests")
 ```
 
 Boto3 documentation:
@@ -187,6 +213,8 @@ Arguments for `ListPullRequestsPaginator.paginate` method:
 `ListPullRequestsPaginator.paginate` returns
 `_PageIterator`\[[ListPullRequestsOutputTypeDef](./type_defs.md#listpullrequestsoutputtypedef)\].
 
+<a id="listrepositoriespaginator"></a>
+
 ## ListRepositoriesPaginator
 
 Type annotations for
@@ -195,10 +223,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codecommit.paginator import ListRepositoriesPaginator
 
 def get_list_repositories_paginator() -> ListRepositoriesPaginator:
-    return boto3.client("codecommit").get_paginator("list_repositories")
+    return Session().client("codecommit").get_paginator("list_repositories")
 ```
 
 Boto3 documentation:

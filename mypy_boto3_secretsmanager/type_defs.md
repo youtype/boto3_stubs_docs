@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-secretsmanager-module"></a>
+
 # Typed dictionaries for boto3 SecretsManager module
 
 > [Index](..) > [SecretsManager](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
 type annotations stubs module
-[mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
+[mypy-boto3-secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 - [Typed dictionaries for boto3 SecretsManager module](#typed-dictionaries-for-boto3-secretsmanager-module)
   - [CancelRotateSecretRequestRequestTypeDef](#cancelrotatesecretrequestrequesttypedef)
@@ -61,6 +63,8 @@ type annotations stubs module
   - [ValidateResourcePolicyResponseTypeDef](#validateresourcepolicyresponsetypedef)
   - [ValidationErrorsEntryTypeDef](#validationerrorsentrytypedef)
 
+<a id="cancelrotatesecretrequestrequesttypedef"></a>
+
 ## CancelRotateSecretRequestRequestTypeDef
 
 ```python
@@ -70,6 +74,8 @@ from mypy_boto3_secretsmanager.type_defs import CancelRotateSecretRequestRequest
 Required fields:
 
 - `SecretId`: `str`
+
+<a id="cancelrotatesecretresponsetypedef"></a>
 
 ## CancelRotateSecretResponseTypeDef
 
@@ -84,6 +90,8 @@ Required fields:
 - `VersionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsecretrequestrequesttypedef"></a>
 
 ## CreateSecretRequestRequestTypeDef
 
@@ -107,6 +115,8 @@ Optional fields:
   `Sequence`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
 - `ForceOverwriteReplicaSecret`: `bool`
 
+<a id="createsecretresponsetypedef"></a>
+
 ## CreateSecretResponseTypeDef
 
 ```python
@@ -123,6 +133,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteresourcepolicyrequestrequesttypedef"></a>
+
 ## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -132,6 +144,8 @@ from mypy_boto3_secretsmanager.type_defs import DeleteResourcePolicyRequestReque
 Required fields:
 
 - `SecretId`: `str`
+
+<a id="deleteresourcepolicyresponsetypedef"></a>
 
 ## DeleteResourcePolicyResponseTypeDef
 
@@ -145,6 +159,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletesecretrequestrequesttypedef"></a>
 
 ## DeleteSecretRequestRequestTypeDef
 
@@ -161,6 +177,8 @@ Optional fields:
 - `RecoveryWindowInDays`: `int`
 - `ForceDeleteWithoutRecovery`: `bool`
 
+<a id="deletesecretresponsetypedef"></a>
+
 ## DeleteSecretResponseTypeDef
 
 ```python
@@ -175,6 +193,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesecretrequestrequesttypedef"></a>
+
 ## DescribeSecretRequestRequestTypeDef
 
 ```python
@@ -184,6 +204,8 @@ from mypy_boto3_secretsmanager.type_defs import DescribeSecretRequestRequestType
 Required fields:
 
 - `SecretId`: `str`
+
+<a id="describesecretresponsetypedef"></a>
 
 ## DescribeSecretResponseTypeDef
 
@@ -215,6 +237,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -225,6 +249,8 @@ Optional fields:
 
 - `Key`: [FilterNameStringTypeType](./literals.md#filternamestringtypetype)
 - `Values`: `Sequence`\[`str`\]
+
+<a id="getrandompasswordrequestrequesttypedef"></a>
 
 ## GetRandomPasswordRequestRequestTypeDef
 
@@ -243,6 +269,8 @@ Optional fields:
 - `IncludeSpace`: `bool`
 - `RequireEachIncludedType`: `bool`
 
+<a id="getrandompasswordresponsetypedef"></a>
+
 ## GetRandomPasswordResponseTypeDef
 
 ```python
@@ -255,6 +283,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourcepolicyrequestrequesttypedef"></a>
+
 ## GetResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -264,6 +294,8 @@ from mypy_boto3_secretsmanager.type_defs import GetResourcePolicyRequestRequestT
 Required fields:
 
 - `SecretId`: `str`
+
+<a id="getresourcepolicyresponsetypedef"></a>
 
 ## GetResourcePolicyResponseTypeDef
 
@@ -279,6 +311,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsecretvaluerequestrequesttypedef"></a>
+
 ## GetSecretValueRequestRequestTypeDef
 
 ```python
@@ -293,6 +327,8 @@ Optional fields:
 
 - `VersionId`: `str`
 - `VersionStage`: `str`
+
+<a id="getsecretvalueresponsetypedef"></a>
 
 ## GetSecretValueResponseTypeDef
 
@@ -312,6 +348,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsecretversionidsrequestrequesttypedef"></a>
+
 ## ListSecretVersionIdsRequestRequestTypeDef
 
 ```python
@@ -327,6 +365,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `IncludeDeprecated`: `bool`
+
+<a id="listsecretversionidsresponsetypedef"></a>
 
 ## ListSecretVersionIdsResponseTypeDef
 
@@ -344,6 +384,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsecretsrequestrequesttypedef"></a>
+
 ## ListSecretsRequestRequestTypeDef
 
 ```python
@@ -356,6 +398,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+
+<a id="listsecretsresponsetypedef"></a>
 
 ## ListSecretsResponseTypeDef
 
@@ -371,6 +415,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -382,6 +428,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putresourcepolicyrequestrequesttypedef"></a>
 
 ## PutResourcePolicyRequestRequestTypeDef
 
@@ -398,6 +446,8 @@ Optional fields:
 
 - `BlockPublicPolicy`: `bool`
 
+<a id="putresourcepolicyresponsetypedef"></a>
+
 ## PutResourcePolicyResponseTypeDef
 
 ```python
@@ -410,6 +460,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putsecretvaluerequestrequesttypedef"></a>
 
 ## PutSecretValueRequestRequestTypeDef
 
@@ -428,6 +480,8 @@ Optional fields:
 - `SecretString`: `str`
 - `VersionStages`: `Sequence`\[`str`\]
 
+<a id="putsecretvalueresponsetypedef"></a>
+
 ## PutSecretValueResponseTypeDef
 
 ```python
@@ -443,6 +497,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removeregionsfromreplicationrequestrequesttypedef"></a>
+
 ## RemoveRegionsFromReplicationRequestRequestTypeDef
 
 ```python
@@ -453,6 +509,8 @@ Required fields:
 
 - `SecretId`: `str`
 - `RemoveReplicaRegions`: `Sequence`\[`str`\]
+
+<a id="removeregionsfromreplicationresponsetypedef"></a>
 
 ## RemoveRegionsFromReplicationResponseTypeDef
 
@@ -468,6 +526,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="replicaregiontypetypedef"></a>
+
 ## ReplicaRegionTypeTypeDef
 
 ```python
@@ -478,6 +538,8 @@ Optional fields:
 
 - `Region`: `str`
 - `KmsKeyId`: `str`
+
+<a id="replicatesecrettoregionsrequestrequesttypedef"></a>
 
 ## ReplicateSecretToRegionsRequestRequestTypeDef
 
@@ -495,6 +557,8 @@ Optional fields:
 
 - `ForceOverwriteReplicaSecret`: `bool`
 
+<a id="replicatesecrettoregionsresponsetypedef"></a>
+
 ## ReplicateSecretToRegionsResponseTypeDef
 
 ```python
@@ -508,6 +572,8 @@ Required fields:
   `List`\[[ReplicationStatusTypeTypeDef](./type_defs.md#replicationstatustypetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="replicationstatustypetypedef"></a>
 
 ## ReplicationStatusTypeTypeDef
 
@@ -523,6 +589,8 @@ Optional fields:
 - `StatusMessage`: `str`
 - `LastAccessedDate`: `datetime`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -537,6 +605,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="restoresecretrequestrequesttypedef"></a>
+
 ## RestoreSecretRequestRequestTypeDef
 
 ```python
@@ -546,6 +616,8 @@ from mypy_boto3_secretsmanager.type_defs import RestoreSecretRequestRequestTypeD
 Required fields:
 
 - `SecretId`: `str`
+
+<a id="restoresecretresponsetypedef"></a>
 
 ## RestoreSecretResponseTypeDef
 
@@ -559,6 +631,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="rotatesecretrequestrequesttypedef"></a>
 
 ## RotateSecretRequestRequestTypeDef
 
@@ -578,6 +652,8 @@ Optional fields:
   [RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef)
 - `RotateImmediately`: `bool`
 
+<a id="rotatesecretresponsetypedef"></a>
+
 ## RotateSecretResponseTypeDef
 
 ```python
@@ -592,6 +668,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="rotationrulestypetypedef"></a>
+
 ## RotationRulesTypeTypeDef
 
 ```python
@@ -603,6 +681,8 @@ Optional fields:
 - `AutomaticallyAfterDays`: `int`
 - `Duration`: `str`
 - `ScheduleExpression`: `str`
+
+<a id="secretlistentrytypedef"></a>
 
 ## SecretListEntryTypeDef
 
@@ -630,6 +710,8 @@ Optional fields:
 - `CreatedDate`: `datetime`
 - `PrimaryRegion`: `str`
 
+<a id="secretversionslistentrytypedef"></a>
+
 ## SecretVersionsListEntryTypeDef
 
 ```python
@@ -644,6 +726,8 @@ Optional fields:
 - `CreatedDate`: `datetime`
 - `KmsKeyIds`: `List`\[`str`\]
 
+<a id="stopreplicationtoreplicarequestrequesttypedef"></a>
+
 ## StopReplicationToReplicaRequestRequestTypeDef
 
 ```python
@@ -653,6 +737,8 @@ from mypy_boto3_secretsmanager.type_defs import StopReplicationToReplicaRequestR
 Required fields:
 
 - `SecretId`: `str`
+
+<a id="stopreplicationtoreplicaresponsetypedef"></a>
 
 ## StopReplicationToReplicaResponseTypeDef
 
@@ -666,6 +752,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -676,6 +764,8 @@ Required fields:
 
 - `SecretId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -688,6 +778,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -698,6 +790,8 @@ Required fields:
 
 - `SecretId`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatesecretrequestrequesttypedef"></a>
 
 ## UpdateSecretRequestRequestTypeDef
 
@@ -717,6 +811,8 @@ Optional fields:
 - `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SecretString`: `str`
 
+<a id="updatesecretresponsetypedef"></a>
+
 ## UpdateSecretResponseTypeDef
 
 ```python
@@ -730,6 +826,8 @@ Required fields:
 - `VersionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesecretversionstagerequestrequesttypedef"></a>
 
 ## UpdateSecretVersionStageRequestRequestTypeDef
 
@@ -747,6 +845,8 @@ Optional fields:
 - `RemoveFromVersionId`: `str`
 - `MoveToVersionId`: `str`
 
+<a id="updatesecretversionstageresponsetypedef"></a>
+
 ## UpdateSecretVersionStageResponseTypeDef
 
 ```python
@@ -759,6 +859,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="validateresourcepolicyrequestrequesttypedef"></a>
 
 ## ValidateResourcePolicyRequestRequestTypeDef
 
@@ -774,6 +876,8 @@ Optional fields:
 
 - `SecretId`: `str`
 
+<a id="validateresourcepolicyresponsetypedef"></a>
+
 ## ValidateResourcePolicyResponseTypeDef
 
 ```python
@@ -787,6 +891,8 @@ Required fields:
   `List`\[[ValidationErrorsEntryTypeDef](./type_defs.md#validationerrorsentrytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="validationerrorsentrytypedef"></a>
 
 ## ValidationErrorsEntryTypeDef
 

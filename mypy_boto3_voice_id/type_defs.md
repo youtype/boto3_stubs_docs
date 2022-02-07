@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-voiceid-module"></a>
+
 # Typed dictionaries for boto3 VoiceID module
 
 > [Index](..) > [VoiceID](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [VoiceID](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID)
 type annotations stubs module
-[mypy_boto3_voice_id](https://pypi.org/project/mypy-boto3-voice-id/).
+[mypy-boto3-voice-id](https://pypi.org/project/mypy-boto3-voice-id/).
 
 - [Typed dictionaries for boto3 VoiceID module](#typed-dictionaries-for-boto3-voiceid-module)
   - [AuthenticationConfigurationTypeDef](#authenticationconfigurationtypedef)
@@ -71,6 +73,8 @@ type annotations stubs module
   - [UpdateDomainRequestRequestTypeDef](#updatedomainrequestrequesttypedef)
   - [UpdateDomainResponseTypeDef](#updatedomainresponsetypedef)
 
+<a id="authenticationconfigurationtypedef"></a>
+
 ## AuthenticationConfigurationTypeDef
 
 ```python
@@ -80,6 +84,8 @@ from mypy_boto3_voice_id.type_defs import AuthenticationConfigurationTypeDef
 Required fields:
 
 - `AcceptanceThreshold`: `int`
+
+<a id="authenticationresulttypedef"></a>
 
 ## AuthenticationResultTypeDef
 
@@ -100,6 +106,8 @@ Optional fields:
 - `GeneratedSpeakerId`: `str`
 - `Score`: `int`
 
+<a id="createdomainrequestrequesttypedef"></a>
+
 ## CreateDomainRequestRequestTypeDef
 
 ```python
@@ -118,6 +126,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdomainresponsetypedef"></a>
+
 ## CreateDomainResponseTypeDef
 
 ```python
@@ -130,6 +140,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedomainrequestrequesttypedef"></a>
+
 ## DeleteDomainRequestRequestTypeDef
 
 ```python
@@ -139,6 +151,8 @@ from mypy_boto3_voice_id.type_defs import DeleteDomainRequestRequestTypeDef
 Required fields:
 
 - `DomainId`: `str`
+
+<a id="deletefraudsterrequestrequesttypedef"></a>
 
 ## DeleteFraudsterRequestRequestTypeDef
 
@@ -151,6 +165,8 @@ Required fields:
 - `DomainId`: `str`
 - `FraudsterId`: `str`
 
+<a id="deletespeakerrequestrequesttypedef"></a>
+
 ## DeleteSpeakerRequestRequestTypeDef
 
 ```python
@@ -162,6 +178,8 @@ Required fields:
 - `DomainId`: `str`
 - `SpeakerId`: `str`
 
+<a id="describedomainrequestrequesttypedef"></a>
+
 ## DescribeDomainRequestRequestTypeDef
 
 ```python
@@ -171,6 +189,8 @@ from mypy_boto3_voice_id.type_defs import DescribeDomainRequestRequestTypeDef
 Required fields:
 
 - `DomainId`: `str`
+
+<a id="describedomainresponsetypedef"></a>
 
 ## DescribeDomainResponseTypeDef
 
@@ -184,6 +204,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefraudsterregistrationjobrequestrequesttypedef"></a>
+
 ## DescribeFraudsterRegistrationJobRequestRequestTypeDef
 
 ```python
@@ -194,6 +216,8 @@ Required fields:
 
 - `DomainId`: `str`
 - `JobId`: `str`
+
+<a id="describefraudsterregistrationjobresponsetypedef"></a>
 
 ## DescribeFraudsterRegistrationJobResponseTypeDef
 
@@ -208,6 +232,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefraudsterrequestrequesttypedef"></a>
+
 ## DescribeFraudsterRequestRequestTypeDef
 
 ```python
@@ -218,6 +244,8 @@ Required fields:
 
 - `DomainId`: `str`
 - `FraudsterId`: `str`
+
+<a id="describefraudsterresponsetypedef"></a>
 
 ## DescribeFraudsterResponseTypeDef
 
@@ -231,6 +259,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describespeakerenrollmentjobrequestrequesttypedef"></a>
+
 ## DescribeSpeakerEnrollmentJobRequestRequestTypeDef
 
 ```python
@@ -241,6 +271,8 @@ Required fields:
 
 - `DomainId`: `str`
 - `JobId`: `str`
+
+<a id="describespeakerenrollmentjobresponsetypedef"></a>
 
 ## DescribeSpeakerEnrollmentJobResponseTypeDef
 
@@ -255,6 +287,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describespeakerrequestrequesttypedef"></a>
+
 ## DescribeSpeakerRequestRequestTypeDef
 
 ```python
@@ -265,6 +299,8 @@ Required fields:
 
 - `DomainId`: `str`
 - `SpeakerId`: `str`
+
+<a id="describespeakerresponsetypedef"></a>
 
 ## DescribeSpeakerResponseTypeDef
 
@@ -277,6 +313,8 @@ Required fields:
 - `Speaker`: [SpeakerTypeDef](./type_defs.md#speakertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="domainsummarytypedef"></a>
 
 ## DomainSummaryTypeDef
 
@@ -296,6 +334,8 @@ Optional fields:
   [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - `UpdatedAt`: `datetime`
 
+<a id="domaintypedef"></a>
+
 ## DomainTypeDef
 
 ```python
@@ -314,6 +354,8 @@ Optional fields:
   [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - `UpdatedAt`: `datetime`
 
+<a id="enrollmentconfigtypedef"></a>
+
 ## EnrollmentConfigTypeDef
 
 ```python
@@ -327,6 +369,8 @@ Optional fields:
 - `FraudDetectionConfig`:
   [EnrollmentJobFraudDetectionConfigTypeDef](./type_defs.md#enrollmentjobfrauddetectionconfigtypedef)
 
+<a id="enrollmentjobfrauddetectionconfigtypedef"></a>
+
 ## EnrollmentJobFraudDetectionConfigTypeDef
 
 ```python
@@ -339,6 +383,8 @@ Optional fields:
   [FraudDetectionActionType](./literals.md#frauddetectionactiontype)
 - `RiskThreshold`: `int`
 
+<a id="evaluatesessionrequestrequesttypedef"></a>
+
 ## EvaluateSessionRequestRequestTypeDef
 
 ```python
@@ -349,6 +395,8 @@ Required fields:
 
 - `DomainId`: `str`
 - `SessionNameOrId`: `str`
+
+<a id="evaluatesessionresponsetypedef"></a>
 
 ## EvaluateSessionResponseTypeDef
 
@@ -369,6 +417,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="failuredetailstypedef"></a>
+
 ## FailureDetailsTypeDef
 
 ```python
@@ -380,6 +430,8 @@ Optional fields:
 - `Message`: `str`
 - `StatusCode`: `int`
 
+<a id="frauddetectionconfigurationtypedef"></a>
+
 ## FraudDetectionConfigurationTypeDef
 
 ```python
@@ -389,6 +441,8 @@ from mypy_boto3_voice_id.type_defs import FraudDetectionConfigurationTypeDef
 Required fields:
 
 - `RiskThreshold`: `int`
+
+<a id="frauddetectionresulttypedef"></a>
 
 ## FraudDetectionResultTypeDef
 
@@ -410,6 +464,8 @@ Optional fields:
 - `RiskDetails`:
   [FraudRiskDetailsTypeDef](./type_defs.md#fraudriskdetailstypedef)
 
+<a id="fraudriskdetailstypedef"></a>
+
 ## FraudRiskDetailsTypeDef
 
 ```python
@@ -420,6 +476,8 @@ Required fields:
 
 - `KnownFraudsterRisk`:
   [KnownFraudsterRiskTypeDef](./type_defs.md#knownfraudsterrisktypedef)
+
+<a id="fraudsterregistrationjobsummarytypedef"></a>
 
 ## FraudsterRegistrationJobSummaryTypeDef
 
@@ -439,6 +497,8 @@ Optional fields:
 - `JobProgress`: [JobProgressTypeDef](./type_defs.md#jobprogresstypedef)
 - `JobStatus`:
   [FraudsterRegistrationJobStatusType](./literals.md#fraudsterregistrationjobstatustype)
+
+<a id="fraudsterregistrationjobtypedef"></a>
 
 ## FraudsterRegistrationJobTypeDef
 
@@ -466,6 +526,8 @@ Optional fields:
 - `RegistrationConfig`:
   [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
 
+<a id="fraudstertypedef"></a>
+
 ## FraudsterTypeDef
 
 ```python
@@ -478,6 +540,8 @@ Optional fields:
 - `DomainId`: `str`
 - `GeneratedFraudsterId`: `str`
 
+<a id="inputdataconfigtypedef"></a>
+
 ## InputDataConfigTypeDef
 
 ```python
@@ -488,6 +552,8 @@ Required fields:
 
 - `S3Uri`: `str`
 
+<a id="jobprogresstypedef"></a>
+
 ## JobProgressTypeDef
 
 ```python
@@ -497,6 +563,8 @@ from mypy_boto3_voice_id.type_defs import JobProgressTypeDef
 Optional fields:
 
 - `PercentComplete`: `int`
+
+<a id="knownfraudsterrisktypedef"></a>
 
 ## KnownFraudsterRiskTypeDef
 
@@ -512,6 +580,8 @@ Optional fields:
 
 - `GeneratedFraudsterId`: `str`
 
+<a id="listdomainsrequestrequesttypedef"></a>
+
 ## ListDomainsRequestRequestTypeDef
 
 ```python
@@ -522,6 +592,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listdomainsresponsetypedef"></a>
 
 ## ListDomainsResponseTypeDef
 
@@ -536,6 +608,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfraudsterregistrationjobsrequestrequesttypedef"></a>
 
 ## ListFraudsterRegistrationJobsRequestRequestTypeDef
 
@@ -554,6 +628,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listfraudsterregistrationjobsresponsetypedef"></a>
+
 ## ListFraudsterRegistrationJobsResponseTypeDef
 
 ```python
@@ -567,6 +643,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listspeakerenrollmentjobsrequestrequesttypedef"></a>
 
 ## ListSpeakerEnrollmentJobsRequestRequestTypeDef
 
@@ -585,6 +663,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listspeakerenrollmentjobsresponsetypedef"></a>
+
 ## ListSpeakerEnrollmentJobsResponseTypeDef
 
 ```python
@@ -598,6 +678,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listspeakersrequestrequesttypedef"></a>
 
 ## ListSpeakersRequestRequestTypeDef
 
@@ -614,6 +696,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listspeakersresponsetypedef"></a>
+
 ## ListSpeakersResponseTypeDef
 
 ```python
@@ -628,6 +712,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -637,6 +723,8 @@ from mypy_boto3_voice_id.type_defs import ListTagsForResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -650,6 +738,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="optoutspeakerrequestrequesttypedef"></a>
+
 ## OptOutSpeakerRequestRequestTypeDef
 
 ```python
@@ -660,6 +750,8 @@ Required fields:
 
 - `DomainId`: `str`
 - `SpeakerId`: `str`
+
+<a id="optoutspeakerresponsetypedef"></a>
 
 ## OptOutSpeakerResponseTypeDef
 
@@ -672,6 +764,8 @@ Required fields:
 - `Speaker`: [SpeakerTypeDef](./type_defs.md#speakertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="outputdataconfigtypedef"></a>
 
 ## OutputDataConfigTypeDef
 
@@ -687,6 +781,8 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+<a id="registrationconfigtypedef"></a>
+
 ## RegistrationConfigTypeDef
 
 ```python
@@ -698,6 +794,8 @@ Optional fields:
 - `DuplicateRegistrationAction`:
   [DuplicateRegistrationActionType](./literals.md#duplicateregistrationactiontype)
 - `FraudsterSimilarityThreshold`: `int`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -713,6 +811,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="serversideencryptionconfigurationtypedef"></a>
+
 ## ServerSideEncryptionConfigurationTypeDef
 
 ```python
@@ -722,6 +822,8 @@ from mypy_boto3_voice_id.type_defs import ServerSideEncryptionConfigurationTypeD
 Required fields:
 
 - `KmsKeyId`: `str`
+
+<a id="speakerenrollmentjobsummarytypedef"></a>
 
 ## SpeakerEnrollmentJobSummaryTypeDef
 
@@ -741,6 +843,8 @@ Optional fields:
 - `JobProgress`: [JobProgressTypeDef](./type_defs.md#jobprogresstypedef)
 - `JobStatus`:
   [SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype)
+
+<a id="speakerenrollmentjobtypedef"></a>
 
 ## SpeakerEnrollmentJobTypeDef
 
@@ -768,6 +872,8 @@ Optional fields:
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 
+<a id="speakersummarytypedef"></a>
+
 ## SpeakerSummaryTypeDef
 
 ```python
@@ -783,6 +889,8 @@ Optional fields:
 - `Status`: [SpeakerStatusType](./literals.md#speakerstatustype)
 - `UpdatedAt`: `datetime`
 
+<a id="speakertypedef"></a>
+
 ## SpeakerTypeDef
 
 ```python
@@ -797,6 +905,8 @@ Optional fields:
 - `GeneratedSpeakerId`: `str`
 - `Status`: [SpeakerStatusType](./literals.md#speakerstatustype)
 - `UpdatedAt`: `datetime`
+
+<a id="startfraudsterregistrationjobrequestrequesttypedef"></a>
 
 ## StartFraudsterRegistrationJobRequestRequestTypeDef
 
@@ -820,6 +930,8 @@ Optional fields:
 - `RegistrationConfig`:
   [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
 
+<a id="startfraudsterregistrationjobresponsetypedef"></a>
+
 ## StartFraudsterRegistrationJobResponseTypeDef
 
 ```python
@@ -832,6 +944,8 @@ Required fields:
   [FraudsterRegistrationJobTypeDef](./type_defs.md#fraudsterregistrationjobtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startspeakerenrollmentjobrequestrequesttypedef"></a>
 
 ## StartSpeakerEnrollmentJobRequestRequestTypeDef
 
@@ -855,6 +969,8 @@ Optional fields:
   [EnrollmentConfigTypeDef](./type_defs.md#enrollmentconfigtypedef)
 - `JobName`: `str`
 
+<a id="startspeakerenrollmentjobresponsetypedef"></a>
+
 ## StartSpeakerEnrollmentJobResponseTypeDef
 
 ```python
@@ -868,6 +984,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -878,6 +996,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -890,6 +1010,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -900,6 +1022,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedomainrequestrequesttypedef"></a>
 
 ## UpdateDomainRequestRequestTypeDef
 
@@ -917,6 +1041,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="updatedomainresponsetypedef"></a>
 
 ## UpdateDomainResponseTypeDef
 

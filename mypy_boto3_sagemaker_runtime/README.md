@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-sagemakerruntime-module"></a>
+
 # Type annotations for boto3 SageMakerRuntime module
 
 > [Index](..) > SageMakerRuntime
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
 type annotations stubs module
-[mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
+[mypy-boto3-sagemaker-runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sagemaker-runtime]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sagemaker-runtime]'
+
+# standalone installation
 pip install mypy-boto3-sagemaker-runtime
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-sagemaker-runtime
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="sagemakerruntimeclient"></a>
 
 ## SageMakerRuntimeClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_sagemaker_runtime.client import SageMakerRuntimeClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -36,6 +50,8 @@ from mypy_boto3_sagemaker_runtime.client import SageMakerRuntimeClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [invoke_endpoint](./client.md#invoke_endpoint)
 - [invoke_endpoint_async](./client.md#invoke_endpoint_async)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -49,6 +65,8 @@ SageMakerRuntimeClient [exceptions](./client.md#exceptions)
 - ServiceUnavailable
 - ValidationError
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -60,6 +78,8 @@ from mypy_boto3_sagemaker_runtime.literals import ServiceName, ...
 ```
 
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

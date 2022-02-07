@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-backupgateway-module"></a>
+
 # Type annotations for boto3 BackupGateway module
 
 > [Index](..) > BackupGateway
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [BackupGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway)
 type annotations stubs module
-[mypy_boto3_backup_gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
+[mypy-boto3-backup-gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[backup-gateway]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[backup-gateway]'
+
+# standalone installation
 pip install mypy-boto3-backup-gateway
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-backup-gateway
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="backupgatewayclient"></a>
+
 ## BackupGatewayClient
 
 Type annotations for `boto3.client("backup-gateway")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_backup_gateway.client import BackupGatewayClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -53,6 +67,8 @@ from mypy_boto3_backup_gateway.client import BackupGatewayClient
 - [update_gateway_information](./client.md#update_gateway_information)
 - [update_hypervisor](./client.md#update_hypervisor)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 BackupGatewayClient [exceptions](./client.md#exceptions)
@@ -64,6 +80,8 @@ BackupGatewayClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -72,12 +90,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_backup_gateway.paginators import ListGatewaysPaginator, ...
+from mypy_boto3_backup_gateway.paginator import ListGatewaysPaginator, ...
 ```
 
 - [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
 - [ListHypervisorsPaginator](./paginators.md#listhypervisorspaginator)
 - [ListVirtualMachinesPaginator](./paginators.md#listvirtualmachinespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -96,6 +116,8 @@ from mypy_boto3_backup_gateway.literals import GatewayTypeType, ...
 - [ListVirtualMachinesPaginatorName](./literals.md#listvirtualmachinespaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

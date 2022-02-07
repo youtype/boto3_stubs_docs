@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-mq-module"></a>
+
 # Type annotations for boto3 MQ module
 
 > [Index](..) > MQ
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
 type annotations stubs module
-[mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
+[mypy-boto3-mq](https://pypi.org/project/mypy-boto3-mq/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[mq]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[mq]'
+
+# standalone installation
 pip install mypy-boto3-mq
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-mq
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="mqclient"></a>
+
 ## MQClient
 
 Type annotations for `boto3.client("mq")` as [MQClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_mq.client import MQClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -58,6 +72,8 @@ from mypy_boto3_mq.client import MQClient
 - [update_configuration](./client.md#update_configuration)
 - [update_user](./client.md#update_user)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MQClient [exceptions](./client.md#exceptions)
@@ -70,6 +86,8 @@ MQClient [exceptions](./client.md#exceptions)
 - NotFoundException
 - UnauthorizedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -78,10 +96,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_mq.paginators import ListBrokersPaginator, ...
+from mypy_boto3_mq.paginator import ListBrokersPaginator, ...
 ```
 
 - [ListBrokersPaginator](./paginators.md#listbrokerspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -104,6 +124,8 @@ from mypy_boto3_mq.literals import AuthenticationStrategyType, ...
 - [SanitizationWarningReasonType](./literals.md#sanitizationwarningreasontype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

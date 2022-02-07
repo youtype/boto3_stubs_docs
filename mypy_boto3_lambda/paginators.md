@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-lambda-module"></a>
+
 # Paginators for boto3 Lambda module
 
 > [Index](..) > [Lambda](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
 type annotations stubs module
-[mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
+[mypy-boto3-lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
 - [Paginators for boto3 Lambda module](#paginators-for-boto3-lambda-module)
   - [ListAliasesPaginator](#listaliasespaginator)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ListProvisionedConcurrencyConfigsPaginator](#listprovisionedconcurrencyconfigspaginator)
   - [ListVersionsByFunctionPaginator](#listversionsbyfunctionpaginator)
 
+<a id="listaliasespaginator"></a>
+
 ## ListAliasesPaginator
 
 Type annotations for `boto3.client("lambda").get_paginator("list_aliases")`.
@@ -26,10 +30,12 @@ Type annotations for `boto3.client("lambda").get_paginator("list_aliases")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lambda.paginator import ListAliasesPaginator
 
 def get_list_aliases_paginator() -> ListAliasesPaginator:
-    return boto3.client("lambda").get_paginator("list_aliases")
+    return Session().client("lambda").get_paginator("list_aliases")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `ListAliasesPaginator.paginate` method:
 `ListAliasesPaginator.paginate` returns
 `_PageIterator`\[[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)\].
 
+<a id="listcodesigningconfigspaginator"></a>
+
 ## ListCodeSigningConfigsPaginator
 
 Type annotations for
@@ -53,10 +61,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lambda.paginator import ListCodeSigningConfigsPaginator
 
 def get_list_code_signing_configs_paginator() -> ListCodeSigningConfigsPaginator:
-    return boto3.client("lambda").get_paginator("list_code_signing_configs")
+    return Session().client("lambda").get_paginator("list_code_signing_configs")
 ```
 
 Boto3 documentation:
@@ -70,6 +80,8 @@ Arguments for `ListCodeSigningConfigsPaginator.paginate` method:
 `ListCodeSigningConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListCodeSigningConfigsResponseTypeDef](./type_defs.md#listcodesigningconfigsresponsetypedef)\].
 
+<a id="listeventsourcemappingspaginator"></a>
+
 ## ListEventSourceMappingsPaginator
 
 Type annotations for
@@ -78,10 +90,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lambda.paginator import ListEventSourceMappingsPaginator
 
 def get_list_event_source_mappings_paginator() -> ListEventSourceMappingsPaginator:
-    return boto3.client("lambda").get_paginator("list_event_source_mappings")
+    return Session().client("lambda").get_paginator("list_event_source_mappings")
 ```
 
 Boto3 documentation:
@@ -97,6 +111,8 @@ Arguments for `ListEventSourceMappingsPaginator.paginate` method:
 `ListEventSourceMappingsPaginator.paginate` returns
 `_PageIterator`\[[ListEventSourceMappingsResponseTypeDef](./type_defs.md#listeventsourcemappingsresponsetypedef)\].
 
+<a id="listfunctioneventinvokeconfigspaginator"></a>
+
 ## ListFunctionEventInvokeConfigsPaginator
 
 Type annotations for
@@ -105,10 +121,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lambda.paginator import ListFunctionEventInvokeConfigsPaginator
 
 def get_list_function_event_invoke_configs_paginator() -> ListFunctionEventInvokeConfigsPaginator:
-    return boto3.client("lambda").get_paginator("list_function_event_invoke_configs")
+    return Session().client("lambda").get_paginator("list_function_event_invoke_configs")
 ```
 
 Boto3 documentation:
@@ -123,6 +141,8 @@ Arguments for `ListFunctionEventInvokeConfigsPaginator.paginate` method:
 `ListFunctionEventInvokeConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef)\].
 
+<a id="listfunctionspaginator"></a>
+
 ## ListFunctionsPaginator
 
 Type annotations for `boto3.client("lambda").get_paginator("list_functions")`.
@@ -130,10 +150,12 @@ Type annotations for `boto3.client("lambda").get_paginator("list_functions")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lambda.paginator import ListFunctionsPaginator
 
 def get_list_functions_paginator() -> ListFunctionsPaginator:
-    return boto3.client("lambda").get_paginator("list_functions")
+    return Session().client("lambda").get_paginator("list_functions")
 ```
 
 Boto3 documentation:
@@ -150,6 +172,8 @@ Arguments for `ListFunctionsPaginator.paginate` method:
 `ListFunctionsPaginator.paginate` returns
 `_PageIterator`\[[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef)\].
 
+<a id="listfunctionsbycodesigningconfigpaginator"></a>
+
 ## ListFunctionsByCodeSigningConfigPaginator
 
 Type annotations for
@@ -158,10 +182,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lambda.paginator import ListFunctionsByCodeSigningConfigPaginator
 
 def get_list_functions_by_code_signing_config_paginator() -> ListFunctionsByCodeSigningConfigPaginator:
-    return boto3.client("lambda").get_paginator("list_functions_by_code_signing_config")
+    return Session().client("lambda").get_paginator("list_functions_by_code_signing_config")
 ```
 
 Boto3 documentation:
@@ -176,6 +202,8 @@ Arguments for `ListFunctionsByCodeSigningConfigPaginator.paginate` method:
 `ListFunctionsByCodeSigningConfigPaginator.paginate` returns
 `_PageIterator`\[[ListFunctionsByCodeSigningConfigResponseTypeDef](./type_defs.md#listfunctionsbycodesigningconfigresponsetypedef)\].
 
+<a id="listlayerversionspaginator"></a>
+
 ## ListLayerVersionsPaginator
 
 Type annotations for
@@ -184,10 +212,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lambda.paginator import ListLayerVersionsPaginator
 
 def get_list_layer_versions_paginator() -> ListLayerVersionsPaginator:
-    return boto3.client("lambda").get_paginator("list_layer_versions")
+    return Session().client("lambda").get_paginator("list_layer_versions")
 ```
 
 Boto3 documentation:
@@ -204,6 +234,8 @@ Arguments for `ListLayerVersionsPaginator.paginate` method:
 `ListLayerVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef)\].
 
+<a id="listlayerspaginator"></a>
+
 ## ListLayersPaginator
 
 Type annotations for `boto3.client("lambda").get_paginator("list_layers")`.
@@ -211,10 +243,12 @@ Type annotations for `boto3.client("lambda").get_paginator("list_layers")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lambda.paginator import ListLayersPaginator
 
 def get_list_layers_paginator() -> ListLayersPaginator:
-    return boto3.client("lambda").get_paginator("list_layers")
+    return Session().client("lambda").get_paginator("list_layers")
 ```
 
 Boto3 documentation:
@@ -230,6 +264,8 @@ Arguments for `ListLayersPaginator.paginate` method:
 `ListLayersPaginator.paginate` returns
 `_PageIterator`\[[ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef)\].
 
+<a id="listprovisionedconcurrencyconfigspaginator"></a>
+
 ## ListProvisionedConcurrencyConfigsPaginator
 
 Type annotations for
@@ -238,10 +274,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lambda.paginator import ListProvisionedConcurrencyConfigsPaginator
 
 def get_list_provisioned_concurrency_configs_paginator() -> ListProvisionedConcurrencyConfigsPaginator:
-    return boto3.client("lambda").get_paginator("list_provisioned_concurrency_configs")
+    return Session().client("lambda").get_paginator("list_provisioned_concurrency_configs")
 ```
 
 Boto3 documentation:
@@ -256,6 +294,8 @@ Arguments for `ListProvisionedConcurrencyConfigsPaginator.paginate` method:
 `ListProvisionedConcurrencyConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListProvisionedConcurrencyConfigsResponseTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsresponsetypedef)\].
 
+<a id="listversionsbyfunctionpaginator"></a>
+
 ## ListVersionsByFunctionPaginator
 
 Type annotations for
@@ -264,10 +304,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lambda.paginator import ListVersionsByFunctionPaginator
 
 def get_list_versions_by_function_paginator() -> ListVersionsByFunctionPaginator:
-    return boto3.client("lambda").get_paginator("list_versions_by_function")
+    return Session().client("lambda").get_paginator("list_versions_by_function")
 ```
 
 Boto3 documentation:

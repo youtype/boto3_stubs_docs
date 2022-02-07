@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-workspaces-module"></a>
+
 # Paginators for boto3 WorkSpaces module
 
 > [Index](..) > [WorkSpaces](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
 type annotations stubs module
-[mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
+[mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 - [Paginators for boto3 WorkSpaces module](#paginators-for-boto3-workspaces-module)
   - [DescribeAccountModificationsPaginator](#describeaccountmodificationspaginator)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [DescribeWorkspacesConnectionStatusPaginator](#describeworkspacesconnectionstatuspaginator)
   - [ListAvailableManagementCidrRangesPaginator](#listavailablemanagementcidrrangespaginator)
 
+<a id="describeaccountmodificationspaginator"></a>
+
 ## DescribeAccountModificationsPaginator
 
 Type annotations for
@@ -25,10 +29,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workspaces.paginator import DescribeAccountModificationsPaginator
 
 def get_describe_account_modifications_paginator() -> DescribeAccountModificationsPaginator:
-    return boto3.client("workspaces").get_paginator("describe_account_modifications")
+    return Session().client("workspaces").get_paginator("describe_account_modifications")
 ```
 
 Boto3 documentation:
@@ -42,6 +48,8 @@ Arguments for `DescribeAccountModificationsPaginator.paginate` method:
 `DescribeAccountModificationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef)\].
 
+<a id="describeipgroupspaginator"></a>
+
 ## DescribeIpGroupsPaginator
 
 Type annotations for
@@ -50,10 +58,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workspaces.paginator import DescribeIpGroupsPaginator
 
 def get_describe_ip_groups_paginator() -> DescribeIpGroupsPaginator:
-    return boto3.client("workspaces").get_paginator("describe_ip_groups")
+    return Session().client("workspaces").get_paginator("describe_ip_groups")
 ```
 
 Boto3 documentation:
@@ -68,6 +78,8 @@ Arguments for `DescribeIpGroupsPaginator.paginate` method:
 `DescribeIpGroupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef)\].
 
+<a id="describeworkspacebundlespaginator"></a>
+
 ## DescribeWorkspaceBundlesPaginator
 
 Type annotations for
@@ -76,10 +88,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workspaces.paginator import DescribeWorkspaceBundlesPaginator
 
 def get_describe_workspace_bundles_paginator() -> DescribeWorkspaceBundlesPaginator:
-    return boto3.client("workspaces").get_paginator("describe_workspace_bundles")
+    return Session().client("workspaces").get_paginator("describe_workspace_bundles")
 ```
 
 Boto3 documentation:
@@ -95,6 +109,8 @@ Arguments for `DescribeWorkspaceBundlesPaginator.paginate` method:
 `DescribeWorkspaceBundlesPaginator.paginate` returns
 `_PageIterator`\[[DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef)\].
 
+<a id="describeworkspacedirectoriespaginator"></a>
+
 ## DescribeWorkspaceDirectoriesPaginator
 
 Type annotations for
@@ -103,10 +119,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workspaces.paginator import DescribeWorkspaceDirectoriesPaginator
 
 def get_describe_workspace_directories_paginator() -> DescribeWorkspaceDirectoriesPaginator:
-    return boto3.client("workspaces").get_paginator("describe_workspace_directories")
+    return Session().client("workspaces").get_paginator("describe_workspace_directories")
 ```
 
 Boto3 documentation:
@@ -122,6 +140,8 @@ Arguments for `DescribeWorkspaceDirectoriesPaginator.paginate` method:
 `DescribeWorkspaceDirectoriesPaginator.paginate` returns
 `_PageIterator`\[[DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef)\].
 
+<a id="describeworkspaceimagespaginator"></a>
+
 ## DescribeWorkspaceImagesPaginator
 
 Type annotations for
@@ -130,10 +150,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workspaces.paginator import DescribeWorkspaceImagesPaginator
 
 def get_describe_workspace_images_paginator() -> DescribeWorkspaceImagesPaginator:
-    return boto3.client("workspaces").get_paginator("describe_workspace_images")
+    return Session().client("workspaces").get_paginator("describe_workspace_images")
 ```
 
 Boto3 documentation:
@@ -149,6 +171,8 @@ Arguments for `DescribeWorkspaceImagesPaginator.paginate` method:
 `DescribeWorkspaceImagesPaginator.paginate` returns
 `_PageIterator`\[[DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef)\].
 
+<a id="describeworkspacespaginator"></a>
+
 ## DescribeWorkspacesPaginator
 
 Type annotations for
@@ -157,10 +181,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workspaces.paginator import DescribeWorkspacesPaginator
 
 def get_describe_workspaces_paginator() -> DescribeWorkspacesPaginator:
-    return boto3.client("workspaces").get_paginator("describe_workspaces")
+    return Session().client("workspaces").get_paginator("describe_workspaces")
 ```
 
 Boto3 documentation:
@@ -178,6 +204,8 @@ Arguments for `DescribeWorkspacesPaginator.paginate` method:
 `DescribeWorkspacesPaginator.paginate` returns
 `_PageIterator`\[[DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef)\].
 
+<a id="describeworkspacesconnectionstatuspaginator"></a>
+
 ## DescribeWorkspacesConnectionStatusPaginator
 
 Type annotations for
@@ -186,10 +214,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workspaces.paginator import DescribeWorkspacesConnectionStatusPaginator
 
 def get_describe_workspaces_connection_status_paginator() -> DescribeWorkspacesConnectionStatusPaginator:
-    return boto3.client("workspaces").get_paginator("describe_workspaces_connection_status")
+    return Session().client("workspaces").get_paginator("describe_workspaces_connection_status")
 ```
 
 Boto3 documentation:
@@ -204,6 +234,8 @@ Arguments for `DescribeWorkspacesConnectionStatusPaginator.paginate` method:
 `DescribeWorkspacesConnectionStatusPaginator.paginate` returns
 `_PageIterator`\[[DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef)\].
 
+<a id="listavailablemanagementcidrrangespaginator"></a>
+
 ## ListAvailableManagementCidrRangesPaginator
 
 Type annotations for
@@ -212,10 +244,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_workspaces.paginator import ListAvailableManagementCidrRangesPaginator
 
 def get_list_available_management_cidr_ranges_paginator() -> ListAvailableManagementCidrRangesPaginator:
-    return boto3.client("workspaces").get_paginator("list_available_management_cidr_ranges")
+    return Session().client("workspaces").get_paginator("list_available_management_cidr_ranges")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="ssoclient-for-boto3-sso-module"></a>
+
 # SSOClient for boto3 SSO module
 
 > [Index](..) > [SSO](.) > SSOClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
 type annotations stubs module
-[mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
+[mypy-boto3-sso](https://pypi.org/project/mypy-boto3-sso/).
 
 - [SSOClient for boto3 SSO module](#ssoclient-for-boto3-sso-module)
   - [SSOClient](#ssoclient)
@@ -20,6 +22,8 @@ type annotations stubs module
     - [logout](#logout)
     - [get_paginator](#get_paginator)
 
+<a id="ssoclient"></a>
+
 ## SSOClient
 
 Type annotations for `boto3.client("sso")`
@@ -27,14 +31,17 @@ Type annotations for `boto3.client("sso")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sso.client import SSOClient
 
 def get_sso_client() -> SSOClient:
-    return boto3.client("sso")
+    return Session().client("sso")
 ```
 
 Boto3 documentation:
 [SSO.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -56,7 +63,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -68,6 +79,8 @@ Boto3 documentation:
 [SSO.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -83,6 +96,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -101,6 +116,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_role_credentials"></a>
 
 ### get_role_credentials
 
@@ -124,6 +141,8 @@ Keyword-only arguments:
 Returns
 [GetRoleCredentialsResponseTypeDef](./type_defs.md#getrolecredentialsresponsetypedef).
 
+<a id="list_account_roles"></a>
+
 ### list_account_roles
 
 Lists all roles that are assigned to the user for a given AWS account.
@@ -146,6 +165,8 @@ Keyword-only arguments:
 Returns
 [ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef).
 
+<a id="list_accounts"></a>
+
 ### list_accounts
 
 Lists all AWS accounts assigned to the user.
@@ -167,6 +188,8 @@ Keyword-only arguments:
 Returns
 [ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
 
+<a id="logout"></a>
+
 ### logout
 
 Removes the client- and server-side session that is associated with the user.
@@ -182,6 +205,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `accessToken`: `str` *(required)*
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-kinesisvideo-module"></a>
+
 # Typed dictionaries for boto3 KinesisVideo module
 
 > [Index](..) > [KinesisVideo](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
 type annotations stubs module
-[mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
+[mypy-boto3-kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
 - [Typed dictionaries for boto3 KinesisVideo module](#typed-dictionaries-for-boto3-kinesisvideo-module)
   - [ChannelInfoTypeDef](#channelinfotypedef)
@@ -48,6 +50,8 @@ type annotations stubs module
   - [UpdateSignalingChannelInputRequestTypeDef](#updatesignalingchannelinputrequesttypedef)
   - [UpdateStreamInputRequestTypeDef](#updatestreaminputrequesttypedef)
 
+<a id="channelinfotypedef"></a>
+
 ## ChannelInfoTypeDef
 
 ```python
@@ -66,6 +70,8 @@ Optional fields:
   [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
 - `Version`: `str`
 
+<a id="channelnameconditiontypedef"></a>
+
 ## ChannelNameConditionTypeDef
 
 ```python
@@ -77,6 +83,8 @@ Optional fields:
 - `ComparisonOperator`: `Literal['BEGINS_WITH']` (see
   [ComparisonOperatorType](./literals.md#comparisonoperatortype))
 - `ComparisonValue`: `str`
+
+<a id="createsignalingchannelinputrequesttypedef"></a>
 
 ## CreateSignalingChannelInputRequestTypeDef
 
@@ -96,6 +104,8 @@ Optional fields:
   [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createsignalingchanneloutputtypedef"></a>
+
 ## CreateSignalingChannelOutputTypeDef
 
 ```python
@@ -107,6 +117,8 @@ Required fields:
 - `ChannelARN`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstreaminputrequesttypedef"></a>
 
 ## CreateStreamInputRequestTypeDef
 
@@ -126,6 +138,8 @@ Optional fields:
 - `DataRetentionInHours`: `int`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createstreamoutputtypedef"></a>
+
 ## CreateStreamOutputTypeDef
 
 ```python
@@ -137,6 +151,8 @@ Required fields:
 - `StreamARN`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletesignalingchannelinputrequesttypedef"></a>
 
 ## DeleteSignalingChannelInputRequestTypeDef
 
@@ -152,6 +168,8 @@ Optional fields:
 
 - `CurrentVersion`: `str`
 
+<a id="deletestreaminputrequesttypedef"></a>
+
 ## DeleteStreamInputRequestTypeDef
 
 ```python
@@ -166,6 +184,8 @@ Optional fields:
 
 - `CurrentVersion`: `str`
 
+<a id="describesignalingchannelinputrequesttypedef"></a>
+
 ## DescribeSignalingChannelInputRequestTypeDef
 
 ```python
@@ -176,6 +196,8 @@ Optional fields:
 
 - `ChannelName`: `str`
 - `ChannelARN`: `str`
+
+<a id="describesignalingchanneloutputtypedef"></a>
 
 ## DescribeSignalingChannelOutputTypeDef
 
@@ -189,6 +211,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestreaminputrequesttypedef"></a>
+
 ## DescribeStreamInputRequestTypeDef
 
 ```python
@@ -199,6 +223,8 @@ Optional fields:
 
 - `StreamName`: `str`
 - `StreamARN`: `str`
+
+<a id="describestreamoutputtypedef"></a>
 
 ## DescribeStreamOutputTypeDef
 
@@ -211,6 +237,8 @@ Required fields:
 - `StreamInfo`: [StreamInfoTypeDef](./type_defs.md#streaminfotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdataendpointinputrequesttypedef"></a>
 
 ## GetDataEndpointInputRequestTypeDef
 
@@ -227,6 +255,8 @@ Optional fields:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
+<a id="getdataendpointoutputtypedef"></a>
+
 ## GetDataEndpointOutputTypeDef
 
 ```python
@@ -238,6 +268,8 @@ Required fields:
 - `DataEndpoint`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsignalingchannelendpointinputrequesttypedef"></a>
 
 ## GetSignalingChannelEndpointInputRequestTypeDef
 
@@ -254,6 +286,8 @@ Optional fields:
 - `SingleMasterChannelEndpointConfiguration`:
   [SingleMasterChannelEndpointConfigurationTypeDef](./type_defs.md#singlemasterchannelendpointconfigurationtypedef)
 
+<a id="getsignalingchannelendpointoutputtypedef"></a>
+
 ## GetSignalingChannelEndpointOutputTypeDef
 
 ```python
@@ -267,6 +301,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsignalingchannelsinputrequesttypedef"></a>
+
 ## ListSignalingChannelsInputRequestTypeDef
 
 ```python
@@ -279,6 +315,8 @@ Optional fields:
 - `NextToken`: `str`
 - `ChannelNameCondition`:
   [ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef)
+
+<a id="listsignalingchannelsoutputtypedef"></a>
 
 ## ListSignalingChannelsOutputTypeDef
 
@@ -294,6 +332,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="liststreamsinputrequesttypedef"></a>
+
 ## ListStreamsInputRequestTypeDef
 
 ```python
@@ -306,6 +346,8 @@ Optional fields:
 - `NextToken`: `str`
 - `StreamNameCondition`:
   [StreamNameConditionTypeDef](./type_defs.md#streamnameconditiontypedef)
+
+<a id="liststreamsoutputtypedef"></a>
 
 ## ListStreamsOutputTypeDef
 
@@ -321,6 +363,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -335,6 +379,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listtagsforresourceoutputtypedef"></a>
+
 ## ListTagsForResourceOutputTypeDef
 
 ```python
@@ -348,6 +394,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforstreaminputrequesttypedef"></a>
+
 ## ListTagsForStreamInputRequestTypeDef
 
 ```python
@@ -359,6 +407,8 @@ Optional fields:
 - `NextToken`: `str`
 - `StreamARN`: `str`
 - `StreamName`: `str`
+
+<a id="listtagsforstreamoutputtypedef"></a>
 
 ## ListTagsForStreamOutputTypeDef
 
@@ -373,6 +423,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -385,6 +437,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="resourceendpointlistitemtypedef"></a>
+
 ## ResourceEndpointListItemTypeDef
 
 ```python
@@ -395,6 +449,8 @@ Optional fields:
 
 - `Protocol`: [ChannelProtocolType](./literals.md#channelprotocoltype)
 - `ResourceEndpoint`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -410,6 +466,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="singlemasterchannelendpointconfigurationtypedef"></a>
+
 ## SingleMasterChannelEndpointConfigurationTypeDef
 
 ```python
@@ -422,6 +480,8 @@ Optional fields:
   `Sequence`\[[ChannelProtocolType](./literals.md#channelprotocoltype)\]
 - `Role`: [ChannelRoleType](./literals.md#channelroletype)
 
+<a id="singlemasterconfigurationtypedef"></a>
+
 ## SingleMasterConfigurationTypeDef
 
 ```python
@@ -431,6 +491,8 @@ from mypy_boto3_kinesisvideo.type_defs import SingleMasterConfigurationTypeDef
 Optional fields:
 
 - `MessageTtlSeconds`: `int`
+
+<a id="streaminfotypedef"></a>
 
 ## StreamInfoTypeDef
 
@@ -450,6 +512,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `DataRetentionInHours`: `int`
 
+<a id="streamnameconditiontypedef"></a>
+
 ## StreamNameConditionTypeDef
 
 ```python
@@ -462,6 +526,8 @@ Optional fields:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype))
 - `ComparisonValue`: `str`
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -472,6 +538,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagstreaminputrequesttypedef"></a>
 
 ## TagStreamInputRequestTypeDef
 
@@ -488,6 +556,8 @@ Optional fields:
 - `StreamARN`: `str`
 - `StreamName`: `str`
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -499,6 +569,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -509,6 +581,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeyList`: `Sequence`\[`str`\]
+
+<a id="untagstreaminputrequesttypedef"></a>
 
 ## UntagStreamInputRequestTypeDef
 
@@ -524,6 +598,8 @@ Optional fields:
 
 - `StreamARN`: `str`
 - `StreamName`: `str`
+
+<a id="updatedataretentioninputrequesttypedef"></a>
 
 ## UpdateDataRetentionInputRequestTypeDef
 
@@ -543,6 +619,8 @@ Optional fields:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
+<a id="updatesignalingchannelinputrequesttypedef"></a>
+
 ## UpdateSignalingChannelInputRequestTypeDef
 
 ```python
@@ -558,6 +636,8 @@ Optional fields:
 
 - `SingleMasterConfiguration`:
   [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
+
+<a id="updatestreaminputrequesttypedef"></a>
 
 ## UpdateStreamInputRequestTypeDef
 

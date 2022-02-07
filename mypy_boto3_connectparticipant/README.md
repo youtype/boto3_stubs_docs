@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-connectparticipant-module"></a>
+
 # Type annotations for boto3 ConnectParticipant module
 
 > [Index](..) > ConnectParticipant
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
 type annotations stubs module
-[mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
+[mypy-boto3-connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[connectparticipant]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[connectparticipant]'
+
+# standalone installation
 pip install mypy-boto3-connectparticipant
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-connectparticipant
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="connectparticipantclient"></a>
 
 ## ConnectParticipantClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_connectparticipant.client import ConnectParticipantClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -43,6 +57,8 @@ from mypy_boto3_connectparticipant.client import ConnectParticipantClient
 - [send_message](./client.md#send_message)
 - [start_attachment_upload](./client.md#start_attachment_upload)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ConnectParticipantClient [exceptions](./client.md#exceptions)
@@ -54,6 +70,8 @@ ConnectParticipantClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - ThrottlingException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -72,6 +90,8 @@ from mypy_boto3_connectparticipant.literals import ArtifactStatusType, ...
 - [ScanDirectionType](./literals.md#scandirectiontype)
 - [SortKeyType](./literals.md#sortkeytype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

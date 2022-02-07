@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-chimesdkmeetings-module"></a>
+
 # Literals for boto3 ChimeSDKMeetings module
 
 > [Index](..) > [ChimeSDKMeetings](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
 type annotations stubs module
-[mypy_boto3_chime_sdk_meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
+[mypy-boto3-chime-sdk-meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
 
 - [Literals for boto3 ChimeSDKMeetings module](#literals-for-boto3-chimesdkmeetings-module)
   - [MeetingFeatureStatusType](#meetingfeaturestatustype)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [TranscribeVocabularyFilterMethodType](#transcribevocabularyfiltermethodtype)
   - [ServiceName](#servicename)
 
+<a id="meetingfeaturestatustype"></a>
+
 ## MeetingFeatureStatusType
 
 ```python
@@ -33,6 +37,8 @@ Values:
 - `AVAILABLE`
 - `UNAVAILABLE`
 
+<a id="transcribecontentidentificationtypetype"></a>
+
 ## TranscribeContentIdentificationTypeType
 
 ```python
@@ -43,6 +49,8 @@ Values:
 
 - `PII`
 
+<a id="transcribecontentredactiontypetype"></a>
+
 ## TranscribeContentRedactionTypeType
 
 ```python
@@ -52,6 +60,8 @@ from mypy_boto3_chime_sdk_meetings.literals import TranscribeContentRedactionTyp
 Values:
 
 - `PII`
+
+<a id="transcribelanguagecodetype"></a>
 
 ## TranscribeLanguageCodeType
 
@@ -74,6 +84,8 @@ Values:
 - `pt-BR`
 - `zh-CN`
 
+<a id="transcribemedicalcontentidentificationtypetype"></a>
+
 ## TranscribeMedicalContentIdentificationTypeType
 
 ```python
@@ -84,6 +96,8 @@ Values:
 
 - `PHI`
 
+<a id="transcribemedicallanguagecodetype"></a>
+
 ## TranscribeMedicalLanguageCodeType
 
 ```python
@@ -93,6 +107,8 @@ from mypy_boto3_chime_sdk_meetings.literals import TranscribeMedicalLanguageCode
 Values:
 
 - `en-US`
+
+<a id="transcribemedicalregiontype"></a>
 
 ## TranscribeMedicalRegionType
 
@@ -110,6 +126,8 @@ Values:
 - `us-east-2`
 - `us-west-2`
 
+<a id="transcribemedicalspecialtytype"></a>
+
 ## TranscribeMedicalSpecialtyType
 
 ```python
@@ -125,6 +143,8 @@ Values:
 - `RADIOLOGY`
 - `UROLOGY`
 
+<a id="transcribemedicaltypetype"></a>
+
 ## TranscribeMedicalTypeType
 
 ```python
@@ -135,6 +155,8 @@ Values:
 
 - `CONVERSATION`
 - `DICTATION`
+
+<a id="transcribepartialresultsstabilitytype"></a>
 
 ## TranscribePartialResultsStabilityType
 
@@ -147,6 +169,8 @@ Values:
 - `high`
 - `low`
 - `medium`
+
+<a id="transcriberegiontype"></a>
 
 ## TranscribeRegionType
 
@@ -169,6 +193,8 @@ Values:
 - `us-east-2`
 - `us-west-2`
 
+<a id="transcribevocabularyfiltermethodtype"></a>
+
 ## TranscribeVocabularyFilterMethodType
 
 ```python
@@ -180,6 +206,8 @@ Values:
 - `mask`
 - `remove`
 - `tag`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

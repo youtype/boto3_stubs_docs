@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-datapipeline-module"></a>
+
 # Literals for boto3 DataPipeline module
 
 > [Index](..) > [DataPipeline](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
 type annotations stubs module
-[mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
+[mypy-boto3-datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
 - [Literals for boto3 DataPipeline module](#literals-for-boto3-datapipeline-module)
   - [DescribeObjectsPaginatorName](#describeobjectspaginatorname)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [TaskStatusType](#taskstatustype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="describeobjectspaginatorname"></a>
 
 ## DescribeObjectsPaginatorName
 
@@ -26,6 +30,8 @@ Values:
 
 - `describe_objects`
 
+<a id="listpipelinespaginatorname"></a>
+
 ## ListPipelinesPaginatorName
 
 ```python
@@ -35,6 +41,8 @@ from mypy_boto3_datapipeline.literals import ListPipelinesPaginatorName
 Values:
 
 - `list_pipelines`
+
+<a id="operatortypetype"></a>
 
 ## OperatorTypeType
 
@@ -50,6 +58,8 @@ Values:
 - `LE`
 - `REF_EQ`
 
+<a id="queryobjectspaginatorname"></a>
+
 ## QueryObjectsPaginatorName
 
 ```python
@@ -59,6 +69,8 @@ from mypy_boto3_datapipeline.literals import QueryObjectsPaginatorName
 Values:
 
 - `query_objects`
+
+<a id="taskstatustype"></a>
 
 ## TaskStatusType
 
@@ -71,6 +83,8 @@ Values:
 - `FAILED`
 - `FALSE`
 - `FINISHED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -379,6 +393,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

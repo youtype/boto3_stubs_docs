@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-support-module"></a>
+
 # Literals for boto3 Support module
 
 > [Index](..) > [Support](.) > Literals
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
 type annotations stubs module
-[mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
+[mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
 
 - [Literals for boto3 Support module](#literals-for-boto3-support-module)
   - [DescribeCasesPaginatorName](#describecasespaginatorname)
   - [DescribeCommunicationsPaginatorName](#describecommunicationspaginatorname)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="describecasespaginatorname"></a>
 
 ## DescribeCasesPaginatorName
 
@@ -23,6 +27,8 @@ Values:
 
 - `describe_cases`
 
+<a id="describecommunicationspaginatorname"></a>
+
 ## DescribeCommunicationsPaginatorName
 
 ```python
@@ -32,6 +38,8 @@ from mypy_boto3_support.literals import DescribeCommunicationsPaginatorName
 Values:
 
 - `describe_communications`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -340,6 +348,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

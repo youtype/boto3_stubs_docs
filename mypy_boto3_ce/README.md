@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-costexplorer-module"></a>
+
 # Type annotations for boto3 CostExplorer module
 
 > [Index](..) > CostExplorer
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
 type annotations stubs module
-[mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
+[mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ce]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ce]'
+
+# standalone installation
 pip install mypy-boto3-ce
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-ce
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="costexplorerclient"></a>
+
 ## CostExplorerClient
 
 Type annotations for `boto3.client("ce")` as [CostExplorerClient](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ce.client import CostExplorerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -64,6 +78,8 @@ from mypy_boto3_ce.client import CostExplorerClient
 - [update_anomaly_subscription](./client.md#update_anomaly_subscription)
 - [update_cost_category_definition](./client.md#update_cost_category_definition)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CostExplorerClient [exceptions](./client.md#exceptions)
@@ -79,6 +95,8 @@ CostExplorerClient [exceptions](./client.md#exceptions)
 - UnknownMonitorException
 - UnknownSubscriptionException
 - UnresolvableUsageUnitException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -123,6 +141,8 @@ from mypy_boto3_ce.literals import AccountScopeType, ...
 - [SupportedSavingsPlansTypeType](./literals.md#supportedsavingsplanstypetype)
 - [TermInYearsType](./literals.md#terminyearstype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

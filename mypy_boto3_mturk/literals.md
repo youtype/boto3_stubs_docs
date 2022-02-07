@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-mturk-module"></a>
+
 # Literals for boto3 MTurk module
 
 > [Index](..) > [MTurk](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
 type annotations stubs module
-[mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
+[mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 - [Literals for boto3 MTurk module](#literals-for-boto3-mturk-module)
   - [AssignmentStatusType](#assignmentstatustype)
@@ -33,6 +35,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="assignmentstatustype"></a>
+
 ## AssignmentStatusType
 
 ```python
@@ -44,6 +48,8 @@ Values:
 - `Approved`
 - `Rejected`
 - `Submitted`
+
+<a id="comparatortype"></a>
 
 ## ComparatorType
 
@@ -63,6 +69,8 @@ Values:
 - `LessThanOrEqualTo`
 - `NotEqualTo`
 - `NotIn`
+
+<a id="eventtypetype"></a>
 
 ## EventTypeType
 
@@ -85,6 +93,8 @@ Values:
 - `HITReviewable`
 - `Ping`
 
+<a id="hitaccessactionstype"></a>
+
 ## HITAccessActionsType
 
 ```python
@@ -96,6 +106,8 @@ Values:
 - `Accept`
 - `DiscoverPreviewAndAccept`
 - `PreviewAndAccept`
+
+<a id="hitreviewstatustype"></a>
 
 ## HITReviewStatusType
 
@@ -109,6 +121,8 @@ Values:
 - `NotReviewed`
 - `ReviewedAppropriate`
 - `ReviewedInappropriate`
+
+<a id="hitstatustype"></a>
 
 ## HITStatusType
 
@@ -124,6 +138,8 @@ Values:
 - `Reviewing`
 - `Unassignable`
 
+<a id="listassignmentsforhitpaginatorname"></a>
+
 ## ListAssignmentsForHITPaginatorName
 
 ```python
@@ -133,6 +149,8 @@ from mypy_boto3_mturk.literals import ListAssignmentsForHITPaginatorName
 Values:
 
 - `list_assignments_for_hit`
+
+<a id="listbonuspaymentspaginatorname"></a>
 
 ## ListBonusPaymentsPaginatorName
 
@@ -144,6 +162,8 @@ Values:
 
 - `list_bonus_payments`
 
+<a id="listhitsforqualificationtypepaginatorname"></a>
+
 ## ListHITsForQualificationTypePaginatorName
 
 ```python
@@ -153,6 +173,8 @@ from mypy_boto3_mturk.literals import ListHITsForQualificationTypePaginatorName
 Values:
 
 - `list_hits_for_qualification_type`
+
+<a id="listhitspaginatorname"></a>
 
 ## ListHITsPaginatorName
 
@@ -164,6 +186,8 @@ Values:
 
 - `list_hits`
 
+<a id="listqualificationrequestspaginatorname"></a>
+
 ## ListQualificationRequestsPaginatorName
 
 ```python
@@ -173,6 +197,8 @@ from mypy_boto3_mturk.literals import ListQualificationRequestsPaginatorName
 Values:
 
 - `list_qualification_requests`
+
+<a id="listqualificationtypespaginatorname"></a>
 
 ## ListQualificationTypesPaginatorName
 
@@ -184,6 +210,8 @@ Values:
 
 - `list_qualification_types`
 
+<a id="listreviewablehitspaginatorname"></a>
+
 ## ListReviewableHITsPaginatorName
 
 ```python
@@ -193,6 +221,8 @@ from mypy_boto3_mturk.literals import ListReviewableHITsPaginatorName
 Values:
 
 - `list_reviewable_hits`
+
+<a id="listworkerblockspaginatorname"></a>
 
 ## ListWorkerBlocksPaginatorName
 
@@ -204,6 +234,8 @@ Values:
 
 - `list_worker_blocks`
 
+<a id="listworkerswithqualificationtypepaginatorname"></a>
+
 ## ListWorkersWithQualificationTypePaginatorName
 
 ```python
@@ -213,6 +245,8 @@ from mypy_boto3_mturk.literals import ListWorkersWithQualificationTypePaginatorN
 Values:
 
 - `list_workers_with_qualification_type`
+
+<a id="notificationtransporttype"></a>
 
 ## NotificationTransportType
 
@@ -226,6 +260,8 @@ Values:
 - `SNS`
 - `SQS`
 
+<a id="notifyworkersfailurecodetype"></a>
+
 ## NotifyWorkersFailureCodeType
 
 ```python
@@ -236,6 +272,8 @@ Values:
 
 - `HardFailure`
 - `SoftFailure`
+
+<a id="qualificationstatustype"></a>
 
 ## QualificationStatusType
 
@@ -248,6 +286,8 @@ Values:
 - `Granted`
 - `Revoked`
 
+<a id="qualificationtypestatustype"></a>
+
 ## QualificationTypeStatusType
 
 ```python
@@ -258,6 +298,8 @@ Values:
 
 - `Active`
 - `Inactive`
+
+<a id="reviewactionstatustype"></a>
 
 ## ReviewActionStatusType
 
@@ -272,6 +314,8 @@ Values:
 - `Intended`
 - `Succeeded`
 
+<a id="reviewpolicyleveltype"></a>
+
 ## ReviewPolicyLevelType
 
 ```python
@@ -283,6 +327,8 @@ Values:
 - `Assignment`
 - `HIT`
 
+<a id="reviewablehitstatustype"></a>
+
 ## ReviewableHITStatusType
 
 ```python
@@ -293,6 +339,8 @@ Values:
 
 - `Reviewable`
 - `Reviewing`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -601,6 +649,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

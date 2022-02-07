@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-nimblestudio-module"></a>
+
 # Type annotations for boto3 NimbleStudio module
 
 > [Index](..) > NimbleStudio
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
 type annotations stubs module
-[mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
+[mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[nimble]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[nimble]'
+
+# standalone installation
 pip install mypy-boto3-nimble
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-nimble
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="nimblestudioclient"></a>
+
 ## NimbleStudioClient
 
 Type annotations for `boto3.client("nimble")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_nimble.client import NimbleStudioClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -86,6 +100,8 @@ from mypy_boto3_nimble.client import NimbleStudioClient
 - [update_studio](./client.md#update_studio)
 - [update_studio_component](./client.md#update_studio_component)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 NimbleStudioClient [exceptions](./client.md#exceptions)
@@ -99,6 +115,8 @@ NimbleStudioClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -107,7 +125,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_nimble.paginators import ListEulaAcceptancesPaginator, ...
+from mypy_boto3_nimble.paginator import ListEulaAcceptancesPaginator, ...
 ```
 
 - [ListEulaAcceptancesPaginator](./paginators.md#listeulaacceptancespaginator)
@@ -120,6 +138,8 @@ from mypy_boto3_nimble.paginators import ListEulaAcceptancesPaginator, ...
 - [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)
 - [ListStudiosPaginator](./paginators.md#liststudiospaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -128,7 +148,7 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_nimble.waiters import LaunchProfileDeletedWaiter, ...
+from mypy_boto3_nimble.waiter import LaunchProfileDeletedWaiter, ...
 ```
 
 - [LaunchProfileDeletedWaiter](./waiters.md#launchprofiledeletedwaiter)
@@ -143,6 +163,8 @@ from mypy_boto3_nimble.waiters import LaunchProfileDeletedWaiter, ...
 - [StudioComponentReadyWaiter](./waiters.md#studiocomponentreadywaiter)
 - [StudioDeletedWaiter](./waiters.md#studiodeletedwaiter)
 - [StudioReadyWaiter](./waiters.md#studioreadywaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -204,6 +226,8 @@ from mypy_boto3_nimble.literals import LaunchProfileDeletedWaiterName, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

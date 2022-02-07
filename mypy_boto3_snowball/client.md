@@ -1,3 +1,5 @@
+<a id="snowballclient-for-boto3-snowball-module"></a>
+
 # SnowballClient for boto3 Snowball module
 
 > [Index](..) > [Snowball](.) > SnowballClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
 type annotations stubs module
-[mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
+[mypy-boto3-snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
 - [SnowballClient for boto3 Snowball module](#snowballclient-for-boto3-snowball-module)
   - [SnowballClient](#snowballclient)
@@ -41,6 +43,8 @@ type annotations stubs module
     - [update_long_term_pricing](#update_long_term_pricing)
     - [get_paginator](#get_paginator)
 
+<a id="snowballclient"></a>
+
 ## SnowballClient
 
 Type annotations for `boto3.client("snowball")`
@@ -48,14 +52,17 @@ Type annotations for `boto3.client("snowball")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_snowball.client import SnowballClient
 
 def get_snowball_client() -> SnowballClient:
-    return boto3.client("snowball")
+    return Session().client("snowball")
 ```
 
 Boto3 documentation:
 [Snowball.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -84,7 +91,11 @@ Exceptions:
 - `Exceptions.ReturnShippingLabelAlreadyExistsException`
 - `Exceptions.UnsupportedAddressException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -96,6 +107,8 @@ Boto3 documentation:
 [Snowball.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -111,6 +124,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_cluster"></a>
 
 ### cancel_cluster
 
@@ -130,6 +145,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="cancel_job"></a>
+
 ### cancel_job
 
 Cancels the specified job.
@@ -147,6 +164,8 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_address"></a>
 
 ### create_address
 
@@ -166,6 +185,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAddressResultTypeDef](./type_defs.md#createaddressresulttypedef).
+
+<a id="create_cluster"></a>
 
 ### create_cluster
 
@@ -202,6 +223,8 @@ Keyword-only arguments:
 
 Returns
 [CreateClusterResultTypeDef](./type_defs.md#createclusterresulttypedef).
+
+<a id="create_job"></a>
 
 ### create_job
 
@@ -242,6 +265,8 @@ Keyword-only arguments:
 
 Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
 
+<a id="create_long_term_pricing"></a>
+
 ### create_long_term_pricing
 
 Creates a job with the long-term usage option for a device.
@@ -265,6 +290,8 @@ Keyword-only arguments:
 Returns
 [CreateLongTermPricingResultTypeDef](./type_defs.md#createlongtermpricingresulttypedef).
 
+<a id="create_return_shipping_label"></a>
+
 ### create_return_shipping_label
 
 Creates a shipping label that will be used to return the Snow device to Amazon
@@ -287,6 +314,8 @@ Keyword-only arguments:
 Returns
 [CreateReturnShippingLabelResultTypeDef](./type_defs.md#createreturnshippinglabelresulttypedef).
 
+<a id="describe_address"></a>
+
 ### describe_address
 
 Takes an `AddressId` and returns specific details about that address in the
@@ -306,6 +335,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAddressResultTypeDef](./type_defs.md#describeaddressresulttypedef).
+
+<a id="describe_addresses"></a>
 
 ### describe_addresses
 
@@ -327,6 +358,8 @@ Keyword-only arguments:
 Returns
 [DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef).
 
+<a id="describe_cluster"></a>
+
 ### describe_cluster
 
 Returns information about a specific cluster including shipping information,
@@ -347,6 +380,8 @@ Keyword-only arguments:
 Returns
 [DescribeClusterResultTypeDef](./type_defs.md#describeclusterresulttypedef).
 
+<a id="describe_job"></a>
+
 ### describe_job
 
 Returns information about a specific job including shipping information, job
@@ -365,6 +400,8 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns [DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef).
+
+<a id="describe_return_shipping_label"></a>
 
 ### describe_return_shipping_label
 
@@ -387,6 +424,8 @@ Keyword-only arguments:
 Returns
 [DescribeReturnShippingLabelResultTypeDef](./type_defs.md#describereturnshippinglabelresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -404,6 +443,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_job_manifest"></a>
 
 ### get_job_manifest
 
@@ -425,6 +466,8 @@ Keyword-only arguments:
 Returns
 [GetJobManifestResultTypeDef](./type_defs.md#getjobmanifestresulttypedef).
 
+<a id="get_job_unlock_code"></a>
+
 ### get_job_unlock_code
 
 Returns the `UnlockCode` code value for the specified job.
@@ -444,6 +487,8 @@ Keyword-only arguments:
 Returns
 [GetJobUnlockCodeResultTypeDef](./type_defs.md#getjobunlockcoderesulttypedef).
 
+<a id="get_snowball_usage"></a>
+
 ### get_snowball_usage
 
 Returns information about the Snow Family service limit for your account, and
@@ -456,6 +501,8 @@ Boto3 documentation:
 
 Returns
 [GetSnowballUsageResultTypeDef](./type_defs.md#getsnowballusageresulttypedef).
+
+<a id="get_software_updates"></a>
 
 ### get_software_updates
 
@@ -476,6 +523,8 @@ Keyword-only arguments:
 
 Returns
 [GetSoftwareUpdatesResultTypeDef](./type_defs.md#getsoftwareupdatesresulttypedef).
+
+<a id="list_cluster_jobs"></a>
 
 ### list_cluster_jobs
 
@@ -498,6 +547,8 @@ Keyword-only arguments:
 Returns
 [ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef).
 
+<a id="list_clusters"></a>
+
 ### list_clusters
 
 Returns an array of `ClusterListEntry` objects of the specified length.
@@ -516,6 +567,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef).
+
+<a id="list_compatible_images"></a>
 
 ### list_compatible_images
 
@@ -539,6 +592,8 @@ Keyword-only arguments:
 Returns
 [ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef).
 
+<a id="list_jobs"></a>
+
 ### list_jobs
 
 Returns an array of `JobListEntry` objects of the specified length.
@@ -557,6 +612,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
+
+<a id="list_long_term_pricing"></a>
 
 ### list_long_term_pricing
 
@@ -577,6 +634,8 @@ Keyword-only arguments:
 
 Returns
 [ListLongTermPricingResultTypeDef](./type_defs.md#listlongtermpricingresulttypedef).
+
+<a id="update_cluster"></a>
 
 ### update_cluster
 
@@ -605,6 +664,8 @@ Keyword-only arguments:
 - `ForwardingAddressId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_job"></a>
 
 ### update_job
 
@@ -636,6 +697,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_job_shipment_state"></a>
+
 ### update_job_shipment_state
 
 Updates the state when a shipment state changes to a different state.
@@ -657,6 +720,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_long_term_pricing"></a>
+
 ### update_long_term_pricing
 
 Updates the long-term pricing type.
@@ -677,6 +742,8 @@ Keyword-only arguments:
 - `IsLongTermPricingAutoRenew`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

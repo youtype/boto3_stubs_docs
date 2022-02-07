@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-xray-module"></a>
+
 # Typed dictionaries for boto3 XRay module
 
 > [Index](..) > [XRay](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
 type annotations stubs module
-[mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
+[mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
 
 - [Typed dictionaries for boto3 XRay module](#typed-dictionaries-for-boto3-xray-module)
   - [AliasTypeDef](#aliastypedef)
@@ -114,6 +116,8 @@ type annotations stubs module
   - [UpdateSamplingRuleResultTypeDef](#updatesamplingruleresulttypedef)
   - [ValueWithServiceIdsTypeDef](#valuewithserviceidstypedef)
 
+<a id="aliastypedef"></a>
+
 ## AliasTypeDef
 
 ```python
@@ -125,6 +129,8 @@ Optional fields:
 - `Name`: `str`
 - `Names`: `List`\[`str`\]
 - `Type`: `str`
+
+<a id="annotationvaluetypedef"></a>
 
 ## AnnotationValueTypeDef
 
@@ -138,6 +144,8 @@ Optional fields:
 - `BooleanValue`: `bool`
 - `StringValue`: `str`
 
+<a id="anomalousservicetypedef"></a>
+
 ## AnomalousServiceTypeDef
 
 ```python
@@ -148,6 +156,8 @@ Optional fields:
 
 - `ServiceId`: [ServiceIdTypeDef](./type_defs.md#serviceidtypedef)
 
+<a id="availabilityzonedetailtypedef"></a>
+
 ## AvailabilityZoneDetailTypeDef
 
 ```python
@@ -157,6 +167,8 @@ from mypy_boto3_xray.type_defs import AvailabilityZoneDetailTypeDef
 Optional fields:
 
 - `Name`: `str`
+
+<a id="backendconnectionerrorstypedef"></a>
 
 ## BackendConnectionErrorsTypeDef
 
@@ -173,6 +185,8 @@ Optional fields:
 - `UnknownHostCount`: `int`
 - `OtherCount`: `int`
 
+<a id="batchgettracesrequestrequesttypedef"></a>
+
 ## BatchGetTracesRequestRequestTypeDef
 
 ```python
@@ -187,6 +201,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="batchgettracesresulttypedef"></a>
+
 ## BatchGetTracesResultTypeDef
 
 ```python
@@ -200,6 +216,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creategrouprequestrequesttypedef"></a>
 
 ## CreateGroupRequestRequestTypeDef
 
@@ -218,6 +236,8 @@ Optional fields:
   [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="creategroupresulttypedef"></a>
+
 ## CreateGroupResultTypeDef
 
 ```python
@@ -229,6 +249,8 @@ Required fields:
 - `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsamplingrulerequestrequesttypedef"></a>
 
 ## CreateSamplingRuleRequestRequestTypeDef
 
@@ -244,6 +266,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createsamplingruleresulttypedef"></a>
+
 ## CreateSamplingRuleResultTypeDef
 
 ```python
@@ -257,6 +281,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletegrouprequestrequesttypedef"></a>
+
 ## DeleteGroupRequestRequestTypeDef
 
 ```python
@@ -268,6 +294,8 @@ Optional fields:
 - `GroupName`: `str`
 - `GroupARN`: `str`
 
+<a id="deletesamplingrulerequestrequesttypedef"></a>
+
 ## DeleteSamplingRuleRequestRequestTypeDef
 
 ```python
@@ -278,6 +306,8 @@ Optional fields:
 
 - `RuleName`: `str`
 - `RuleARN`: `str`
+
+<a id="deletesamplingruleresulttypedef"></a>
 
 ## DeleteSamplingRuleResultTypeDef
 
@@ -291,6 +321,8 @@ Required fields:
   [SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="edgestatisticstypedef"></a>
 
 ## EdgeStatisticsTypeDef
 
@@ -307,6 +339,8 @@ Optional fields:
   [FaultStatisticsTypeDef](./type_defs.md#faultstatisticstypedef)
 - `TotalCount`: `int`
 - `TotalResponseTime`: `float`
+
+<a id="edgetypedef"></a>
 
 ## EdgeTypeDef
 
@@ -325,6 +359,8 @@ Optional fields:
   `List`\[[HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef)\]
 - `Aliases`: `List`\[[AliasTypeDef](./type_defs.md#aliastypedef)\]
 
+<a id="encryptionconfigtypedef"></a>
+
 ## EncryptionConfigTypeDef
 
 ```python
@@ -336,6 +372,8 @@ Optional fields:
 - `KeyId`: `str`
 - `Status`: [EncryptionStatusType](./literals.md#encryptionstatustype)
 - `Type`: [EncryptionTypeType](./literals.md#encryptiontypetype)
+
+<a id="errorrootcauseentitytypedef"></a>
 
 ## ErrorRootCauseEntityTypeDef
 
@@ -349,6 +387,8 @@ Optional fields:
 - `Exceptions`:
   `List`\[[RootCauseExceptionTypeDef](./type_defs.md#rootcauseexceptiontypedef)\]
 - `Remote`: `bool`
+
+<a id="errorrootcauseservicetypedef"></a>
 
 ## ErrorRootCauseServiceTypeDef
 
@@ -366,6 +406,8 @@ Optional fields:
   `List`\[[ErrorRootCauseEntityTypeDef](./type_defs.md#errorrootcauseentitytypedef)\]
 - `Inferred`: `bool`
 
+<a id="errorrootcausetypedef"></a>
+
 ## ErrorRootCauseTypeDef
 
 ```python
@@ -377,6 +419,8 @@ Optional fields:
 - `Services`:
   `List`\[[ErrorRootCauseServiceTypeDef](./type_defs.md#errorrootcauseservicetypedef)\]
 - `ClientImpacting`: `bool`
+
+<a id="errorstatisticstypedef"></a>
 
 ## ErrorStatisticsTypeDef
 
@@ -390,6 +434,8 @@ Optional fields:
 - `OtherCount`: `int`
 - `TotalCount`: `int`
 
+<a id="faultrootcauseentitytypedef"></a>
+
 ## FaultRootCauseEntityTypeDef
 
 ```python
@@ -402,6 +448,8 @@ Optional fields:
 - `Exceptions`:
   `List`\[[RootCauseExceptionTypeDef](./type_defs.md#rootcauseexceptiontypedef)\]
 - `Remote`: `bool`
+
+<a id="faultrootcauseservicetypedef"></a>
 
 ## FaultRootCauseServiceTypeDef
 
@@ -419,6 +467,8 @@ Optional fields:
   `List`\[[FaultRootCauseEntityTypeDef](./type_defs.md#faultrootcauseentitytypedef)\]
 - `Inferred`: `bool`
 
+<a id="faultrootcausetypedef"></a>
+
 ## FaultRootCauseTypeDef
 
 ```python
@@ -431,6 +481,8 @@ Optional fields:
   `List`\[[FaultRootCauseServiceTypeDef](./type_defs.md#faultrootcauseservicetypedef)\]
 - `ClientImpacting`: `bool`
 
+<a id="faultstatisticstypedef"></a>
+
 ## FaultStatisticsTypeDef
 
 ```python
@@ -442,6 +494,8 @@ Optional fields:
 - `OtherCount`: `int`
 - `TotalCount`: `int`
 
+<a id="forecaststatisticstypedef"></a>
+
 ## ForecastStatisticsTypeDef
 
 ```python
@@ -452,6 +506,8 @@ Optional fields:
 
 - `FaultCountHigh`: `int`
 - `FaultCountLow`: `int`
+
+<a id="getencryptionconfigresulttypedef"></a>
 
 ## GetEncryptionConfigResultTypeDef
 
@@ -466,6 +522,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgrouprequestrequesttypedef"></a>
+
 ## GetGroupRequestRequestTypeDef
 
 ```python
@@ -476,6 +534,8 @@ Optional fields:
 
 - `GroupName`: `str`
 - `GroupARN`: `str`
+
+<a id="getgroupresulttypedef"></a>
 
 ## GetGroupResultTypeDef
 
@@ -489,6 +549,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgroupsrequestrequesttypedef"></a>
+
 ## GetGroupsRequestRequestTypeDef
 
 ```python
@@ -498,6 +560,8 @@ from mypy_boto3_xray.type_defs import GetGroupsRequestRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="getgroupsresulttypedef"></a>
 
 ## GetGroupsResultTypeDef
 
@@ -511,6 +575,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getinsighteventsrequestrequesttypedef"></a>
 
 ## GetInsightEventsRequestRequestTypeDef
 
@@ -527,6 +593,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getinsighteventsresulttypedef"></a>
+
 ## GetInsightEventsResultTypeDef
 
 ```python
@@ -540,6 +608,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getinsightimpactgraphrequestrequesttypedef"></a>
 
 ## GetInsightImpactGraphRequestRequestTypeDef
 
@@ -556,6 +626,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="getinsightimpactgraphresulttypedef"></a>
 
 ## GetInsightImpactGraphResultTypeDef
 
@@ -576,6 +648,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinsightrequestrequesttypedef"></a>
+
 ## GetInsightRequestRequestTypeDef
 
 ```python
@@ -585,6 +659,8 @@ from mypy_boto3_xray.type_defs import GetInsightRequestRequestTypeDef
 Required fields:
 
 - `InsightId`: `str`
+
+<a id="getinsightresulttypedef"></a>
 
 ## GetInsightResultTypeDef
 
@@ -597,6 +673,8 @@ Required fields:
 - `Insight`: [InsightTypeDef](./type_defs.md#insighttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getinsightsummariesrequestrequesttypedef"></a>
 
 ## GetInsightSummariesRequestRequestTypeDef
 
@@ -617,6 +695,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getinsightsummariesresulttypedef"></a>
+
 ## GetInsightSummariesResultTypeDef
 
 ```python
@@ -631,6 +711,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsamplingrulesrequestrequesttypedef"></a>
+
 ## GetSamplingRulesRequestRequestTypeDef
 
 ```python
@@ -640,6 +722,8 @@ from mypy_boto3_xray.type_defs import GetSamplingRulesRequestRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="getsamplingrulesresulttypedef"></a>
 
 ## GetSamplingRulesResultTypeDef
 
@@ -655,6 +739,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsamplingstatisticsummariesrequestrequesttypedef"></a>
+
 ## GetSamplingStatisticSummariesRequestRequestTypeDef
 
 ```python
@@ -664,6 +750,8 @@ from mypy_boto3_xray.type_defs import GetSamplingStatisticSummariesRequestReques
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="getsamplingstatisticsummariesresulttypedef"></a>
 
 ## GetSamplingStatisticSummariesResultTypeDef
 
@@ -679,6 +767,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsamplingtargetsrequestrequesttypedef"></a>
+
 ## GetSamplingTargetsRequestRequestTypeDef
 
 ```python
@@ -689,6 +779,8 @@ Required fields:
 
 - `SamplingStatisticsDocuments`:
   `Sequence`\[[SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef)\]
+
+<a id="getsamplingtargetsresulttypedef"></a>
 
 ## GetSamplingTargetsResultTypeDef
 
@@ -705,6 +797,8 @@ Required fields:
   `List`\[[UnprocessedStatisticsTypeDef](./type_defs.md#unprocessedstatisticstypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getservicegraphrequestrequesttypedef"></a>
 
 ## GetServiceGraphRequestRequestTypeDef
 
@@ -723,6 +817,8 @@ Optional fields:
 - `GroupARN`: `str`
 - `NextToken`: `str`
 
+<a id="getservicegraphresulttypedef"></a>
+
 ## GetServiceGraphResultTypeDef
 
 ```python
@@ -738,6 +834,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gettimeseriesservicestatisticsrequestrequesttypedef"></a>
 
 ## GetTimeSeriesServiceStatisticsRequestRequestTypeDef
 
@@ -759,6 +857,8 @@ Optional fields:
 - `ForecastStatistics`: `bool`
 - `NextToken`: `str`
 
+<a id="gettimeseriesservicestatisticsresulttypedef"></a>
+
 ## GetTimeSeriesServiceStatisticsResultTypeDef
 
 ```python
@@ -774,6 +874,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettracegraphrequestrequesttypedef"></a>
+
 ## GetTraceGraphRequestRequestTypeDef
 
 ```python
@@ -788,6 +890,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="gettracegraphresulttypedef"></a>
+
 ## GetTraceGraphResultTypeDef
 
 ```python
@@ -800,6 +904,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gettracesummariesrequestrequesttypedef"></a>
 
 ## GetTraceSummariesRequestRequestTypeDef
 
@@ -821,6 +927,8 @@ Optional fields:
 - `FilterExpression`: `str`
 - `NextToken`: `str`
 
+<a id="gettracesummariesresulttypedef"></a>
+
 ## GetTraceSummariesResultTypeDef
 
 ```python
@@ -837,6 +945,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="groupsummarytypedef"></a>
+
 ## GroupSummaryTypeDef
 
 ```python
@@ -850,6 +960,8 @@ Optional fields:
 - `FilterExpression`: `str`
 - `InsightsConfiguration`:
   [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
+
+<a id="grouptypedef"></a>
 
 ## GroupTypeDef
 
@@ -865,6 +977,8 @@ Optional fields:
 - `InsightsConfiguration`:
   [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
 
+<a id="histogramentrytypedef"></a>
+
 ## HistogramEntryTypeDef
 
 ```python
@@ -875,6 +989,8 @@ Optional fields:
 
 - `Value`: `float`
 - `Count`: `int`
+
+<a id="httptypedef"></a>
 
 ## HttpTypeDef
 
@@ -889,6 +1005,8 @@ Optional fields:
 - `HttpMethod`: `str`
 - `UserAgent`: `str`
 - `ClientIp`: `str`
+
+<a id="insighteventtypedef"></a>
 
 ## InsightEventTypeDef
 
@@ -907,6 +1025,8 @@ Optional fields:
 - `TopAnomalousServices`:
   `List`\[[AnomalousServiceTypeDef](./type_defs.md#anomalousservicetypedef)\]
 
+<a id="insightimpactgraphedgetypedef"></a>
+
 ## InsightImpactGraphEdgeTypeDef
 
 ```python
@@ -916,6 +1036,8 @@ from mypy_boto3_xray.type_defs import InsightImpactGraphEdgeTypeDef
 Optional fields:
 
 - `ReferenceId`: `int`
+
+<a id="insightimpactgraphservicetypedef"></a>
 
 ## InsightImpactGraphServiceTypeDef
 
@@ -932,6 +1054,8 @@ Optional fields:
 - `AccountId`: `str`
 - `Edges`:
   `List`\[[InsightImpactGraphEdgeTypeDef](./type_defs.md#insightimpactgraphedgetypedef)\]
+
+<a id="insightsummarytypedef"></a>
 
 ## InsightSummaryTypeDef
 
@@ -959,6 +1083,8 @@ Optional fields:
   `List`\[[AnomalousServiceTypeDef](./type_defs.md#anomalousservicetypedef)\]
 - `LastUpdateTime`: `datetime`
 
+<a id="insighttypedef"></a>
+
 ## InsightTypeDef
 
 ```python
@@ -984,6 +1110,8 @@ Optional fields:
 - `TopAnomalousServices`:
   `List`\[[AnomalousServiceTypeDef](./type_defs.md#anomalousservicetypedef)\]
 
+<a id="insightsconfigurationtypedef"></a>
+
 ## InsightsConfigurationTypeDef
 
 ```python
@@ -995,6 +1123,8 @@ Optional fields:
 - `InsightsEnabled`: `bool`
 - `NotificationsEnabled`: `bool`
 
+<a id="instanceiddetailtypedef"></a>
+
 ## InstanceIdDetailTypeDef
 
 ```python
@@ -1004,6 +1134,8 @@ from mypy_boto3_xray.type_defs import InstanceIdDetailTypeDef
 Optional fields:
 
 - `Id`: `str`
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -1019,6 +1151,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -1032,6 +1166,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1043,6 +1179,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putencryptionconfigrequestrequesttypedef"></a>
 
 ## PutEncryptionConfigRequestRequestTypeDef
 
@@ -1058,6 +1196,8 @@ Optional fields:
 
 - `KeyId`: `str`
 
+<a id="putencryptionconfigresulttypedef"></a>
+
 ## PutEncryptionConfigResultTypeDef
 
 ```python
@@ -1070,6 +1210,8 @@ Required fields:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="puttelemetryrecordsrequestrequesttypedef"></a>
 
 ## PutTelemetryRecordsRequestRequestTypeDef
 
@@ -1088,6 +1230,8 @@ Optional fields:
 - `Hostname`: `str`
 - `ResourceARN`: `str`
 
+<a id="puttracesegmentsrequestrequesttypedef"></a>
+
 ## PutTraceSegmentsRequestRequestTypeDef
 
 ```python
@@ -1097,6 +1241,8 @@ from mypy_boto3_xray.type_defs import PutTraceSegmentsRequestRequestTypeDef
 Required fields:
 
 - `TraceSegmentDocuments`: `Sequence`\[`str`\]
+
+<a id="puttracesegmentsresulttypedef"></a>
 
 ## PutTraceSegmentsResultTypeDef
 
@@ -1111,6 +1257,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="requestimpactstatisticstypedef"></a>
+
 ## RequestImpactStatisticsTypeDef
 
 ```python
@@ -1123,6 +1271,8 @@ Optional fields:
 - `OkCount`: `int`
 - `TotalCount`: `int`
 
+<a id="resourcearndetailtypedef"></a>
+
 ## ResourceARNDetailTypeDef
 
 ```python
@@ -1132,6 +1282,8 @@ from mypy_boto3_xray.type_defs import ResourceARNDetailTypeDef
 Optional fields:
 
 - `ARN`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1147,6 +1299,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="responsetimerootcauseentitytypedef"></a>
+
 ## ResponseTimeRootCauseEntityTypeDef
 
 ```python
@@ -1158,6 +1312,8 @@ Optional fields:
 - `Name`: `str`
 - `Coverage`: `float`
 - `Remote`: `bool`
+
+<a id="responsetimerootcauseservicetypedef"></a>
 
 ## ResponseTimeRootCauseServiceTypeDef
 
@@ -1175,6 +1331,8 @@ Optional fields:
   `List`\[[ResponseTimeRootCauseEntityTypeDef](./type_defs.md#responsetimerootcauseentitytypedef)\]
 - `Inferred`: `bool`
 
+<a id="responsetimerootcausetypedef"></a>
+
 ## ResponseTimeRootCauseTypeDef
 
 ```python
@@ -1187,6 +1345,8 @@ Optional fields:
   `List`\[[ResponseTimeRootCauseServiceTypeDef](./type_defs.md#responsetimerootcauseservicetypedef)\]
 - `ClientImpacting`: `bool`
 
+<a id="rootcauseexceptiontypedef"></a>
+
 ## RootCauseExceptionTypeDef
 
 ```python
@@ -1197,6 +1357,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Message`: `str`
+
+<a id="samplingrulerecordtypedef"></a>
 
 ## SamplingRuleRecordTypeDef
 
@@ -1209,6 +1371,8 @@ Optional fields:
 - `SamplingRule`: [SamplingRuleTypeDef](./type_defs.md#samplingruletypedef)
 - `CreatedAt`: `datetime`
 - `ModifiedAt`: `datetime`
+
+<a id="samplingruletypedef"></a>
 
 ## SamplingRuleTypeDef
 
@@ -1235,6 +1399,8 @@ Optional fields:
 - `RuleARN`: `str`
 - `Attributes`: `Mapping`\[`str`, `str`\]
 
+<a id="samplingruleupdatetypedef"></a>
+
 ## SamplingRuleUpdateTypeDef
 
 ```python
@@ -1256,6 +1422,8 @@ Optional fields:
 - `URLPath`: `str`
 - `Attributes`: `Mapping`\[`str`, `str`\]
 
+<a id="samplingstatisticsummarytypedef"></a>
+
 ## SamplingStatisticSummaryTypeDef
 
 ```python
@@ -1269,6 +1437,8 @@ Optional fields:
 - `RequestCount`: `int`
 - `BorrowCount`: `int`
 - `SampledCount`: `int`
+
+<a id="samplingstatisticsdocumenttypedef"></a>
 
 ## SamplingStatisticsDocumentTypeDef
 
@@ -1288,6 +1458,8 @@ Optional fields:
 
 - `BorrowCount`: `int`
 
+<a id="samplingstrategytypedef"></a>
+
 ## SamplingStrategyTypeDef
 
 ```python
@@ -1298,6 +1470,8 @@ Optional fields:
 
 - `Name`: [SamplingStrategyNameType](./literals.md#samplingstrategynametype)
 - `Value`: `float`
+
+<a id="samplingtargetdocumenttypedef"></a>
 
 ## SamplingTargetDocumentTypeDef
 
@@ -1313,6 +1487,8 @@ Optional fields:
 - `ReservoirQuotaTTL`: `datetime`
 - `Interval`: `int`
 
+<a id="segmenttypedef"></a>
+
 ## SegmentTypeDef
 
 ```python
@@ -1323,6 +1499,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Document`: `str`
+
+<a id="serviceidtypedef"></a>
 
 ## ServiceIdTypeDef
 
@@ -1336,6 +1514,8 @@ Optional fields:
 - `Names`: `List`\[`str`\]
 - `AccountId`: `str`
 - `Type`: `str`
+
+<a id="servicestatisticstypedef"></a>
 
 ## ServiceStatisticsTypeDef
 
@@ -1352,6 +1532,8 @@ Optional fields:
   [FaultStatisticsTypeDef](./type_defs.md#faultstatisticstypedef)
 - `TotalCount`: `int`
 - `TotalResponseTime`: `float`
+
+<a id="servicetypedef"></a>
 
 ## ServiceTypeDef
 
@@ -1378,6 +1560,8 @@ Optional fields:
 - `ResponseTimeHistogram`:
   `List`\[[HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef)\]
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1389,6 +1573,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1399,6 +1585,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="telemetryrecordtypedef"></a>
 
 ## TelemetryRecordTypeDef
 
@@ -1419,6 +1607,8 @@ Optional fields:
 - `BackendConnectionErrors`:
   [BackendConnectionErrorsTypeDef](./type_defs.md#backendconnectionerrorstypedef)
 
+<a id="timeseriesservicestatisticstypedef"></a>
+
 ## TimeSeriesServiceStatisticsTypeDef
 
 ```python
@@ -1436,6 +1626,8 @@ Optional fields:
   [ForecastStatisticsTypeDef](./type_defs.md#forecaststatisticstypedef)
 - `ResponseTimeHistogram`:
   `List`\[[HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef)\]
+
+<a id="tracesummarytypedef"></a>
 
 ## TraceSummaryTypeDef
 
@@ -1473,6 +1665,8 @@ Optional fields:
 - `Revision`: `int`
 - `MatchedEventTime`: `datetime`
 
+<a id="tracetypedef"></a>
+
 ## TraceTypeDef
 
 ```python
@@ -1486,6 +1680,8 @@ Optional fields:
 - `LimitExceeded`: `bool`
 - `Segments`: `List`\[[SegmentTypeDef](./type_defs.md#segmenttypedef)\]
 
+<a id="traceusertypedef"></a>
+
 ## TraceUserTypeDef
 
 ```python
@@ -1496,6 +1692,8 @@ Optional fields:
 
 - `UserName`: `str`
 - `ServiceIds`: `List`\[[ServiceIdTypeDef](./type_defs.md#serviceidtypedef)\]
+
+<a id="unprocessedstatisticstypedef"></a>
 
 ## UnprocessedStatisticsTypeDef
 
@@ -1509,6 +1707,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `Message`: `str`
 
+<a id="unprocessedtracesegmenttypedef"></a>
+
 ## UnprocessedTraceSegmentTypeDef
 
 ```python
@@ -1521,6 +1721,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `Message`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1531,6 +1733,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updategrouprequestrequesttypedef"></a>
 
 ## UpdateGroupRequestRequestTypeDef
 
@@ -1546,6 +1750,8 @@ Optional fields:
 - `InsightsConfiguration`:
   [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
 
+<a id="updategroupresulttypedef"></a>
+
 ## UpdateGroupResultTypeDef
 
 ```python
@@ -1558,6 +1764,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatesamplingrulerequestrequesttypedef"></a>
+
 ## UpdateSamplingRuleRequestRequestTypeDef
 
 ```python
@@ -1568,6 +1776,8 @@ Required fields:
 
 - `SamplingRuleUpdate`:
   [SamplingRuleUpdateTypeDef](./type_defs.md#samplingruleupdatetypedef)
+
+<a id="updatesamplingruleresulttypedef"></a>
 
 ## UpdateSamplingRuleResultTypeDef
 
@@ -1581,6 +1791,8 @@ Required fields:
   [SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="valuewithserviceidstypedef"></a>
 
 ## ValueWithServiceIdsTypeDef
 

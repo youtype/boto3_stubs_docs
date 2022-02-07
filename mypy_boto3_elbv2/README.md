@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-elasticloadbalancingv2-module"></a>
+
 # Type annotations for boto3 ElasticLoadBalancingv2 module
 
 > [Index](..) > ElasticLoadBalancingv2
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
 type annotations stubs module
-[mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
+[mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[elbv2]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[elbv2]'
+
+# standalone installation
 pip install mypy-boto3-elbv2
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-elbv2
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="elasticloadbalancingv2client"></a>
+
 ## ElasticLoadBalancingv2Client
 
 Type annotations for `boto3.client("elbv2")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_elbv2.client import ElasticLoadBalancingv2Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -72,6 +86,8 @@ from mypy_boto3_elbv2.client import ElasticLoadBalancingv2Client
 - [set_rule_priorities](./client.md#set_rule_priorities)
 - [set_security_groups](./client.md#set_security_groups)
 - [set_subnets](./client.md#set_subnets)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -116,6 +132,8 @@ ElasticLoadBalancingv2Client [exceptions](./client.md#exceptions)
 - TooManyUniqueTargetGroupsPerLoadBalancerException
 - UnsupportedProtocolException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -124,7 +142,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.paginators import DescribeAccountLimitsPaginator, ...
+from mypy_boto3_elbv2.paginator import DescribeAccountLimitsPaginator, ...
 ```
 
 - [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
@@ -135,6 +153,8 @@ from mypy_boto3_elbv2.paginators import DescribeAccountLimitsPaginator, ...
 - [DescribeSSLPoliciesPaginator](./paginators.md#describesslpoliciespaginator)
 - [DescribeTargetGroupsPaginator](./paginators.md#describetargetgroupspaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -143,7 +163,7 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.waiters import LoadBalancerAvailableWaiter, ...
+from mypy_boto3_elbv2.waiter import LoadBalancerAvailableWaiter, ...
 ```
 
 - [LoadBalancerAvailableWaiter](./waiters.md#loadbalanceravailablewaiter)
@@ -151,6 +171,8 @@ from mypy_boto3_elbv2.waiters import LoadBalancerAvailableWaiter, ...
 - [LoadBalancersDeletedWaiter](./waiters.md#loadbalancersdeletedwaiter)
 - [TargetDeregisteredWaiter](./waiters.md#targetderegisteredwaiter)
 - [TargetInServiceWaiter](./waiters.md#targetinservicewaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -190,6 +212,8 @@ from mypy_boto3_elbv2.literals import ActionTypeEnumType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

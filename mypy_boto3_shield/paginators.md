@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-shield-module"></a>
+
 # Paginators for boto3 Shield module
 
 > [Index](..) > [Shield](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
 type annotations stubs module
-[mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
+[mypy-boto3-shield](https://pypi.org/project/mypy-boto3-shield/).
 
 - [Paginators for boto3 Shield module](#paginators-for-boto3-shield-module)
   - [ListAttacksPaginator](#listattackspaginator)
   - [ListProtectionsPaginator](#listprotectionspaginator)
+
+<a id="listattackspaginator"></a>
 
 ## ListAttacksPaginator
 
@@ -18,10 +22,12 @@ Type annotations for `boto3.client("shield").get_paginator("list_attacks")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_shield.paginator import ListAttacksPaginator
 
 def get_list_attacks_paginator() -> ListAttacksPaginator:
-    return boto3.client("shield").get_paginator("list_attacks")
+    return Session().client("shield").get_paginator("list_attacks")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `ListAttacksPaginator.paginate` method:
 `ListAttacksPaginator.paginate` returns
 `_PageIterator`\[[ListAttacksResponseTypeDef](./type_defs.md#listattacksresponsetypedef)\].
 
+<a id="listprotectionspaginator"></a>
+
 ## ListProtectionsPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_shield.paginator import ListProtectionsPaginator
 
 def get_list_protections_paginator() -> ListProtectionsPaginator:
-    return boto3.client("shield").get_paginator("list_protections")
+    return Session().client("shield").get_paginator("list_protections")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-accessanalyzer-module"></a>
+
 # Type annotations for boto3 AccessAnalyzer module
 
 > [Index](..) > AccessAnalyzer
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
 type annotations stubs module
-[mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
+[mypy-boto3-accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[accessanalyzer]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[accessanalyzer]'
+
+# standalone installation
 pip install mypy-boto3-accessanalyzer
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-accessanalyzer
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="accessanalyzerclient"></a>
+
 ## AccessAnalyzerClient
 
 Type annotations for `boto3.client("accessanalyzer")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_accessanalyzer.client import AccessAnalyzerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -65,6 +79,8 @@ from mypy_boto3_accessanalyzer.client import AccessAnalyzerClient
 - [update_findings](./client.md#update_findings)
 - [validate_policy](./client.md#validate_policy)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AccessAnalyzerClient [exceptions](./client.md#exceptions)
@@ -78,6 +94,8 @@ AccessAnalyzerClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -86,7 +104,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_accessanalyzer.paginators import ListAccessPreviewFindingsPaginator, ...
+from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewFindingsPaginator, ...
 ```
 
 - [ListAccessPreviewFindingsPaginator](./paginators.md#listaccesspreviewfindingspaginator)
@@ -97,6 +115,8 @@ from mypy_boto3_accessanalyzer.paginators import ListAccessPreviewFindingsPagina
 - [ListFindingsPaginator](./paginators.md#listfindingspaginator)
 - [ListPolicyGenerationsPaginator](./paginators.md#listpolicygenerationspaginator)
 - [ValidatePolicyPaginator](./paginators.md#validatepolicypaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -137,6 +157,8 @@ from mypy_boto3_accessanalyzer.literals import AccessPreviewStatusReasonCodeType
 - [ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

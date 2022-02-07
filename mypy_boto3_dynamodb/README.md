@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-dynamodb-module"></a>
+
 # Type annotations for boto3 DynamoDB module
 
 > [Index](..) > DynamoDB
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
-[mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+[mypy-boto3-dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[dynamodb]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[dynamodb]'
+
+# standalone installation
 pip install mypy-boto3-dynamodb
 ```
 
@@ -23,6 +33,8 @@ pip install mypy-boto3-dynamodb
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="dynamodbclient"></a>
+
 ## DynamoDBClient
 
 Type annotations for `boto3.client("dynamodb")` as
@@ -33,6 +45,8 @@ Can be used directly:
 ```python
 from mypy_boto3_dynamodb.client import DynamoDBClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -92,6 +106,8 @@ from mypy_boto3_dynamodb.client import DynamoDBClient
 - [update_table_replica_auto_scaling](./client.md#update_table_replica_auto_scaling)
 - [update_time_to_live](./client.md#update_time_to_live)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 DynamoDBClient [exceptions](./client.md#exceptions)
@@ -127,6 +143,8 @@ DynamoDBClient [exceptions](./client.md#exceptions)
 - TransactionConflictException
 - TransactionInProgressException
 
+<a id="dynamodbserviceresource"></a>
+
 ## DynamoDBServiceResource
 
 Type annotations for `boto3.resource("dynamodb")` as
@@ -137,6 +155,8 @@ Can be used directly:
 ```python
 from mypy_boto3_dynamodb.service_resource import DynamoDBServiceResource
 ```
+
+<a id="collections"></a>
 
 ### Collections
 
@@ -150,6 +170,8 @@ from mypy_boto3_dynamodb.service_resource import ServiceResourceTablesCollection
 
 - [ServiceResourceTablesCollection](./service_resource.md#dynamodbserviceresourcetables)
 
+<a id="resources"></a>
+
 ### Resources
 
 Type annotations for additional resources from `boto3.resource("dynamodb").*`.
@@ -162,6 +184,8 @@ from mypy_boto3_dynamodb.service_resource import Table, ...
 
 - [Table](./service_resource.md#table)
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -170,7 +194,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodb.paginators import ListBackupsPaginator, ...
+from mypy_boto3_dynamodb.paginator import ListBackupsPaginator, ...
 ```
 
 - [ListBackupsPaginator](./paginators.md#listbackupspaginator)
@@ -178,6 +202,8 @@ from mypy_boto3_dynamodb.paginators import ListBackupsPaginator, ...
 - [ListTagsOfResourcePaginator](./paginators.md#listtagsofresourcepaginator)
 - [QueryPaginator](./paginators.md#querypaginator)
 - [ScanPaginator](./paginators.md#scanpaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -187,11 +213,13 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodb.waiters import TableExistsWaiter, ...
+from mypy_boto3_dynamodb.waiter import TableExistsWaiter, ...
 ```
 
 - [TableExistsWaiter](./waiters.md#tableexistswaiter)
 - [TableNotExistsWaiter](./waiters.md#tablenotexistswaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -246,6 +274,8 @@ from mypy_boto3_dynamodb.literals import AttributeActionType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

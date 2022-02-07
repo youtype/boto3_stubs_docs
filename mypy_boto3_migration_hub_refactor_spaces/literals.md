@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-migrationhubrefactorspaces-module"></a>
+
 # Literals for boto3 MigrationHubRefactorSpaces module
 
 > [Index](..) > [MigrationHubRefactorSpaces](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
 type annotations stubs module
-[mypy_boto3_migration_hub_refactor_spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
+[mypy-boto3-migration-hub-refactor-spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
 
 - [Literals for boto3 MigrationHubRefactorSpaces module](#literals-for-boto3-migrationhubrefactorspaces-module)
   - [ApiGatewayEndpointTypeType](#apigatewayendpointtypetype)
@@ -29,6 +31,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="apigatewayendpointtypetype"></a>
+
 ## ApiGatewayEndpointTypeType
 
 ```python
@@ -39,6 +43,8 @@ Values:
 
 - `PRIVATE`
 - `REGIONAL`
+
+<a id="applicationstatetype"></a>
 
 ## ApplicationStateType
 
@@ -54,6 +60,8 @@ Values:
 - `FAILED`
 - `UPDATING`
 
+<a id="environmentstatetype"></a>
+
 ## EnvironmentStateType
 
 ```python
@@ -66,6 +74,8 @@ Values:
 - `CREATING`
 - `DELETING`
 - `FAILED`
+
+<a id="errorcodetype"></a>
 
 ## ErrorCodeType
 
@@ -87,6 +97,8 @@ Values:
 - `RESOURCE_UPDATE_FAILURE`
 - `SERVICE_ENDPOINT_HEALTH_CHECK_FAILURE`
 - `STATE_TRANSITION_FAILURE`
+
+<a id="errorresourcetypetype"></a>
 
 ## ErrorResourceTypeType
 
@@ -116,6 +128,8 @@ Values:
 - `VPC_ENDPOINT_SERVICE_CONFIGURATION`
 - `VPC_LINK`
 
+<a id="httpmethodtype"></a>
+
 ## HttpMethodType
 
 ```python
@@ -132,6 +146,8 @@ Values:
 - `POST`
 - `PUT`
 
+<a id="listapplicationspaginatorname"></a>
+
 ## ListApplicationsPaginatorName
 
 ```python
@@ -141,6 +157,8 @@ from mypy_boto3_migration_hub_refactor_spaces.literals import ListApplicationsPa
 Values:
 
 - `list_applications`
+
+<a id="listenvironmentvpcspaginatorname"></a>
 
 ## ListEnvironmentVpcsPaginatorName
 
@@ -152,6 +170,8 @@ Values:
 
 - `list_environment_vpcs`
 
+<a id="listenvironmentspaginatorname"></a>
+
 ## ListEnvironmentsPaginatorName
 
 ```python
@@ -161,6 +181,8 @@ from mypy_boto3_migration_hub_refactor_spaces.literals import ListEnvironmentsPa
 Values:
 
 - `list_environments`
+
+<a id="listroutespaginatorname"></a>
 
 ## ListRoutesPaginatorName
 
@@ -172,6 +194,8 @@ Values:
 
 - `list_routes`
 
+<a id="listservicespaginatorname"></a>
+
 ## ListServicesPaginatorName
 
 ```python
@@ -181,6 +205,8 @@ from mypy_boto3_migration_hub_refactor_spaces.literals import ListServicesPagina
 Values:
 
 - `list_services`
+
+<a id="networkfabrictypetype"></a>
 
 ## NetworkFabricTypeType
 
@@ -192,6 +218,8 @@ Values:
 
 - `TRANSIT_GATEWAY`
 
+<a id="proxytypetype"></a>
+
 ## ProxyTypeType
 
 ```python
@@ -202,6 +230,8 @@ Values:
 
 - `API_GATEWAY`
 
+<a id="routeactivationstatetype"></a>
+
 ## RouteActivationStateType
 
 ```python
@@ -211,6 +241,8 @@ from mypy_boto3_migration_hub_refactor_spaces.literals import RouteActivationSta
 Values:
 
 - `ACTIVE`
+
+<a id="routestatetype"></a>
 
 ## RouteStateType
 
@@ -227,6 +259,8 @@ Values:
 - `INACTIVE`
 - `UPDATING`
 
+<a id="routetypetype"></a>
+
 ## RouteTypeType
 
 ```python
@@ -238,6 +272,8 @@ Values:
 - `DEFAULT`
 - `URI_PATH`
 
+<a id="serviceendpointtypetype"></a>
+
 ## ServiceEndpointTypeType
 
 ```python
@@ -248,6 +284,8 @@ Values:
 
 - `LAMBDA`
 - `URL`
+
+<a id="servicestatetype"></a>
 
 ## ServiceStateType
 
@@ -261,6 +299,8 @@ Values:
 - `CREATING`
 - `DELETING`
 - `FAILED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -569,6 +609,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

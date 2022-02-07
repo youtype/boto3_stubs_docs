@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-applicationdiscoveryservice-module"></a>
+
 # Typed dictionaries for boto3 ApplicationDiscoveryService module
 
 > [Index](..) > [ApplicationDiscoveryService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
 type annotations stubs module
-[mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
+[mypy-boto3-discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
 - [Typed dictionaries for boto3 ApplicationDiscoveryService module](#typed-dictionaries-for-boto3-applicationdiscoveryservice-module)
   - [AgentConfigurationStatusTypeDef](#agentconfigurationstatustypedef)
@@ -69,6 +71,8 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
 
+<a id="agentconfigurationstatustypedef"></a>
+
 ## AgentConfigurationStatusTypeDef
 
 ```python
@@ -80,6 +84,8 @@ Optional fields:
 - `agentId`: `str`
 - `operationSucceeded`: `bool`
 - `description`: `str`
+
+<a id="agentinfotypedef"></a>
 
 ## AgentInfoTypeDef
 
@@ -101,6 +107,8 @@ Optional fields:
 - `agentType`: `str`
 - `registeredTime`: `str`
 
+<a id="agentnetworkinfotypedef"></a>
+
 ## AgentNetworkInfoTypeDef
 
 ```python
@@ -112,6 +120,8 @@ Optional fields:
 - `ipAddress`: `str`
 - `macAddress`: `str`
 
+<a id="associateconfigurationitemstoapplicationrequestrequesttypedef"></a>
+
 ## AssociateConfigurationItemsToApplicationRequestRequestTypeDef
 
 ```python
@@ -122,6 +132,8 @@ Required fields:
 
 - `applicationConfigurationId`: `str`
 - `configurationIds`: `Sequence`\[`str`\]
+
+<a id="batchdeleteimportdataerrortypedef"></a>
 
 ## BatchDeleteImportDataErrorTypeDef
 
@@ -136,6 +148,8 @@ Optional fields:
   [BatchDeleteImportDataErrorCodeType](./literals.md#batchdeleteimportdataerrorcodetype)
 - `errorDescription`: `str`
 
+<a id="batchdeleteimportdatarequestrequesttypedef"></a>
+
 ## BatchDeleteImportDataRequestRequestTypeDef
 
 ```python
@@ -145,6 +159,8 @@ from mypy_boto3_discovery.type_defs import BatchDeleteImportDataRequestRequestTy
 Required fields:
 
 - `importTaskIds`: `Sequence`\[`str`\]
+
+<a id="batchdeleteimportdataresponsetypedef"></a>
 
 ## BatchDeleteImportDataResponseTypeDef
 
@@ -158,6 +174,8 @@ Required fields:
   `List`\[[BatchDeleteImportDataErrorTypeDef](./type_defs.md#batchdeleteimportdataerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="configurationtagtypedef"></a>
 
 ## ConfigurationTagTypeDef
 
@@ -173,6 +191,8 @@ Optional fields:
 - `key`: `str`
 - `value`: `str`
 - `timeOfCreation`: `datetime`
+
+<a id="continuousexportdescriptiontypedef"></a>
 
 ## ContinuousExportDescriptionTypeDef
 
@@ -193,6 +213,8 @@ Optional fields:
   [DataSourceType](./literals.md#datasourcetype))
 - `schemaStorageConfig`: `Dict`\[`str`, `str`\]
 
+<a id="createapplicationrequestrequesttypedef"></a>
+
 ## CreateApplicationRequestRequestTypeDef
 
 ```python
@@ -207,6 +229,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="createapplicationresponsetypedef"></a>
+
 ## CreateApplicationResponseTypeDef
 
 ```python
@@ -219,6 +243,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createtagsrequestrequesttypedef"></a>
+
 ## CreateTagsRequestRequestTypeDef
 
 ```python
@@ -229,6 +255,8 @@ Required fields:
 
 - `configurationIds`: `Sequence`\[`str`\]
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="customeragentinfotypedef"></a>
 
 ## CustomerAgentInfoTypeDef
 
@@ -246,6 +274,8 @@ Required fields:
 - `totalAgents`: `int`
 - `unknownAgents`: `int`
 
+<a id="customerconnectorinfotypedef"></a>
+
 ## CustomerConnectorInfoTypeDef
 
 ```python
@@ -262,6 +292,8 @@ Required fields:
 - `totalConnectors`: `int`
 - `unknownConnectors`: `int`
 
+<a id="deleteapplicationsrequestrequesttypedef"></a>
+
 ## DeleteApplicationsRequestRequestTypeDef
 
 ```python
@@ -271,6 +303,8 @@ from mypy_boto3_discovery.type_defs import DeleteApplicationsRequestRequestTypeD
 Required fields:
 
 - `configurationIds`: `Sequence`\[`str`\]
+
+<a id="deletetagsrequestrequesttypedef"></a>
 
 ## DeleteTagsRequestRequestTypeDef
 
@@ -286,6 +320,8 @@ Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="describeagentsrequestrequesttypedef"></a>
+
 ## DescribeAgentsRequestRequestTypeDef
 
 ```python
@@ -298,6 +334,8 @@ Optional fields:
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describeagentsresponsetypedef"></a>
 
 ## DescribeAgentsResponseTypeDef
 
@@ -312,6 +350,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconfigurationsrequestrequesttypedef"></a>
+
 ## DescribeConfigurationsRequestRequestTypeDef
 
 ```python
@@ -321,6 +361,8 @@ from mypy_boto3_discovery.type_defs import DescribeConfigurationsRequestRequestT
 Required fields:
 
 - `configurationIds`: `Sequence`\[`str`\]
+
+<a id="describeconfigurationsresponsetypedef"></a>
 
 ## DescribeConfigurationsResponseTypeDef
 
@@ -334,6 +376,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecontinuousexportsrequestrequesttypedef"></a>
+
 ## DescribeContinuousExportsRequestRequestTypeDef
 
 ```python
@@ -345,6 +389,8 @@ Optional fields:
 - `exportIds`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describecontinuousexportsresponsetypedef"></a>
 
 ## DescribeContinuousExportsResponseTypeDef
 
@@ -360,6 +406,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeexportconfigurationsrequestrequesttypedef"></a>
+
 ## DescribeExportConfigurationsRequestRequestTypeDef
 
 ```python
@@ -371,6 +419,8 @@ Optional fields:
 - `exportIds`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describeexportconfigurationsresponsetypedef"></a>
 
 ## DescribeExportConfigurationsResponseTypeDef
 
@@ -386,6 +436,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeexporttasksrequestrequesttypedef"></a>
+
 ## DescribeExportTasksRequestRequestTypeDef
 
 ```python
@@ -399,6 +451,8 @@ Optional fields:
   `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describeexporttasksresponsetypedef"></a>
 
 ## DescribeExportTasksResponseTypeDef
 
@@ -414,6 +468,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeimporttasksrequestrequesttypedef"></a>
+
 ## DescribeImportTasksRequestRequestTypeDef
 
 ```python
@@ -426,6 +482,8 @@ Optional fields:
   `Sequence`\[[ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describeimporttasksresponsetypedef"></a>
 
 ## DescribeImportTasksResponseTypeDef
 
@@ -440,6 +498,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetagsrequestrequesttypedef"></a>
+
 ## DescribeTagsRequestRequestTypeDef
 
 ```python
@@ -451,6 +511,8 @@ Optional fields:
 - `filters`: `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describetagsresponsetypedef"></a>
 
 ## DescribeTagsResponseTypeDef
 
@@ -466,6 +528,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateconfigurationitemsfromapplicationrequestrequesttypedef"></a>
+
 ## DisassociateConfigurationItemsFromApplicationRequestRequestTypeDef
 
 ```python
@@ -476,6 +540,8 @@ Required fields:
 
 - `applicationConfigurationId`: `str`
 - `configurationIds`: `Sequence`\[`str`\]
+
+<a id="exportconfigurationsresponsetypedef"></a>
 
 ## ExportConfigurationsResponseTypeDef
 
@@ -489,6 +555,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="exportfiltertypedef"></a>
+
 ## ExportFilterTypeDef
 
 ```python
@@ -500,6 +568,8 @@ Required fields:
 - `name`: `str`
 - `values`: `Sequence`\[`str`\]
 - `condition`: `str`
+
+<a id="exportinfotypedef"></a>
 
 ## ExportInfoTypeDef
 
@@ -521,6 +591,8 @@ Optional fields:
 - `requestedStartTime`: `datetime`
 - `requestedEndTime`: `datetime`
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -532,6 +604,8 @@ Required fields:
 - `name`: `str`
 - `values`: `Sequence`\[`str`\]
 - `condition`: `str`
+
+<a id="getdiscoverysummaryresponsetypedef"></a>
 
 ## GetDiscoverySummaryResponseTypeDef
 
@@ -552,6 +626,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="importtaskfiltertypedef"></a>
+
 ## ImportTaskFilterTypeDef
 
 ```python
@@ -562,6 +638,8 @@ Optional fields:
 
 - `name`: [ImportTaskFilterNameType](./literals.md#importtaskfilternametype)
 - `values`: `Sequence`\[`str`\]
+
+<a id="importtasktypedef"></a>
 
 ## ImportTaskTypeDef
 
@@ -585,6 +663,8 @@ Optional fields:
 - `applicationImportFailure`: `int`
 - `errorsAndFailedEntriesZip`: `str`
 
+<a id="listconfigurationsrequestrequesttypedef"></a>
+
 ## ListConfigurationsRequestRequestTypeDef
 
 ```python
@@ -604,6 +684,8 @@ Optional fields:
 - `orderBy`:
   `Sequence`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
 
+<a id="listconfigurationsresponsetypedef"></a>
+
 ## ListConfigurationsResponseTypeDef
 
 ```python
@@ -616,6 +698,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listserverneighborsrequestrequesttypedef"></a>
 
 ## ListServerNeighborsRequestRequestTypeDef
 
@@ -634,6 +718,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listserverneighborsresponsetypedef"></a>
+
 ## ListServerNeighborsResponseTypeDef
 
 ```python
@@ -648,6 +734,8 @@ Required fields:
 - `knownDependencyCount`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="neighborconnectiondetailtypedef"></a>
 
 ## NeighborConnectionDetailTypeDef
 
@@ -666,6 +754,8 @@ Optional fields:
 - `destinationPort`: `int`
 - `transportProtocol`: `str`
 
+<a id="orderbyelementtypedef"></a>
+
 ## OrderByElementTypeDef
 
 ```python
@@ -680,6 +770,8 @@ Optional fields:
 
 - `sortOrder`: [orderStringType](./literals.md#orderstringtype)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -691,6 +783,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -705,6 +799,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="startcontinuousexportresponsetypedef"></a>
 
 ## StartContinuousExportResponseTypeDef
 
@@ -723,6 +819,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startdatacollectionbyagentidsrequestrequesttypedef"></a>
+
 ## StartDataCollectionByAgentIdsRequestRequestTypeDef
 
 ```python
@@ -732,6 +830,8 @@ from mypy_boto3_discovery.type_defs import StartDataCollectionByAgentIdsRequestR
 Required fields:
 
 - `agentIds`: `Sequence`\[`str`\]
+
+<a id="startdatacollectionbyagentidsresponsetypedef"></a>
 
 ## StartDataCollectionByAgentIdsResponseTypeDef
 
@@ -745,6 +845,8 @@ Required fields:
   `List`\[[AgentConfigurationStatusTypeDef](./type_defs.md#agentconfigurationstatustypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startexporttaskrequestrequesttypedef"></a>
 
 ## StartExportTaskRequestRequestTypeDef
 
@@ -761,6 +863,8 @@ Optional fields:
 - `startTime`: `Union`\[`datetime`, `str`\]
 - `endTime`: `Union`\[`datetime`, `str`\]
 
+<a id="startexporttaskresponsetypedef"></a>
+
 ## StartExportTaskResponseTypeDef
 
 ```python
@@ -772,6 +876,8 @@ Required fields:
 - `exportId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startimporttaskrequestrequesttypedef"></a>
 
 ## StartImportTaskRequestRequestTypeDef
 
@@ -788,6 +894,8 @@ Optional fields:
 
 - `clientRequestToken`: `str`
 
+<a id="startimporttaskresponsetypedef"></a>
+
 ## StartImportTaskResponseTypeDef
 
 ```python
@@ -800,6 +908,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopcontinuousexportrequestrequesttypedef"></a>
+
 ## StopContinuousExportRequestRequestTypeDef
 
 ```python
@@ -809,6 +919,8 @@ from mypy_boto3_discovery.type_defs import StopContinuousExportRequestRequestTyp
 Required fields:
 
 - `exportId`: `str`
+
+<a id="stopcontinuousexportresponsetypedef"></a>
 
 ## StopContinuousExportResponseTypeDef
 
@@ -823,6 +935,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopdatacollectionbyagentidsrequestrequesttypedef"></a>
+
 ## StopDataCollectionByAgentIdsRequestRequestTypeDef
 
 ```python
@@ -832,6 +946,8 @@ from mypy_boto3_discovery.type_defs import StopDataCollectionByAgentIdsRequestRe
 Required fields:
 
 - `agentIds`: `Sequence`\[`str`\]
+
+<a id="stopdatacollectionbyagentidsresponsetypedef"></a>
 
 ## StopDataCollectionByAgentIdsResponseTypeDef
 
@@ -846,6 +962,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagfiltertypedef"></a>
+
 ## TagFilterTypeDef
 
 ```python
@@ -857,6 +975,8 @@ Required fields:
 - `name`: `str`
 - `values`: `Sequence`\[`str`\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -867,6 +987,8 @@ Required fields:
 
 - `key`: `str`
 - `value`: `str`
+
+<a id="updateapplicationrequestrequesttypedef"></a>
 
 ## UpdateApplicationRequestRequestTypeDef
 

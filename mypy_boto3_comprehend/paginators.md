@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-comprehend-module"></a>
+
 # Paginators for boto3 Comprehend module
 
 > [Index](..) > [Comprehend](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
 type annotations stubs module
-[mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
+[mypy-boto3-comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
 - [Paginators for boto3 Comprehend module](#paginators-for-boto3-comprehend-module)
   - [ListDocumentClassificationJobsPaginator](#listdocumentclassificationjobspaginator)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [ListSentimentDetectionJobsPaginator](#listsentimentdetectionjobspaginator)
   - [ListTopicsDetectionJobsPaginator](#listtopicsdetectionjobspaginator)
 
+<a id="listdocumentclassificationjobspaginator"></a>
+
 ## ListDocumentClassificationJobsPaginator
 
 Type annotations for
@@ -25,10 +29,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_comprehend.paginator import ListDocumentClassificationJobsPaginator
 
 def get_list_document_classification_jobs_paginator() -> ListDocumentClassificationJobsPaginator:
-    return boto3.client("comprehend").get_paginator("list_document_classification_jobs")
+    return Session().client("comprehend").get_paginator("list_document_classification_jobs")
 ```
 
 Boto3 documentation:
@@ -44,6 +50,8 @@ Arguments for `ListDocumentClassificationJobsPaginator.paginate` method:
 `ListDocumentClassificationJobsPaginator.paginate` returns
 `_PageIterator`\[[ListDocumentClassificationJobsResponseTypeDef](./type_defs.md#listdocumentclassificationjobsresponsetypedef)\].
 
+<a id="listdocumentclassifierspaginator"></a>
+
 ## ListDocumentClassifiersPaginator
 
 Type annotations for
@@ -52,10 +60,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_comprehend.paginator import ListDocumentClassifiersPaginator
 
 def get_list_document_classifiers_paginator() -> ListDocumentClassifiersPaginator:
-    return boto3.client("comprehend").get_paginator("list_document_classifiers")
+    return Session().client("comprehend").get_paginator("list_document_classifiers")
 ```
 
 Boto3 documentation:
@@ -71,6 +81,8 @@ Arguments for `ListDocumentClassifiersPaginator.paginate` method:
 `ListDocumentClassifiersPaginator.paginate` returns
 `_PageIterator`\[[ListDocumentClassifiersResponseTypeDef](./type_defs.md#listdocumentclassifiersresponsetypedef)\].
 
+<a id="listdominantlanguagedetectionjobspaginator"></a>
+
 ## ListDominantLanguageDetectionJobsPaginator
 
 Type annotations for
@@ -79,10 +91,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_comprehend.paginator import ListDominantLanguageDetectionJobsPaginator
 
 def get_list_dominant_language_detection_jobs_paginator() -> ListDominantLanguageDetectionJobsPaginator:
-    return boto3.client("comprehend").get_paginator("list_dominant_language_detection_jobs")
+    return Session().client("comprehend").get_paginator("list_dominant_language_detection_jobs")
 ```
 
 Boto3 documentation:
@@ -98,6 +112,8 @@ Arguments for `ListDominantLanguageDetectionJobsPaginator.paginate` method:
 `ListDominantLanguageDetectionJobsPaginator.paginate` returns
 `_PageIterator`\[[ListDominantLanguageDetectionJobsResponseTypeDef](./type_defs.md#listdominantlanguagedetectionjobsresponsetypedef)\].
 
+<a id="listentitiesdetectionjobspaginator"></a>
+
 ## ListEntitiesDetectionJobsPaginator
 
 Type annotations for
@@ -106,10 +122,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_comprehend.paginator import ListEntitiesDetectionJobsPaginator
 
 def get_list_entities_detection_jobs_paginator() -> ListEntitiesDetectionJobsPaginator:
-    return boto3.client("comprehend").get_paginator("list_entities_detection_jobs")
+    return Session().client("comprehend").get_paginator("list_entities_detection_jobs")
 ```
 
 Boto3 documentation:
@@ -125,6 +143,8 @@ Arguments for `ListEntitiesDetectionJobsPaginator.paginate` method:
 `ListEntitiesDetectionJobsPaginator.paginate` returns
 `_PageIterator`\[[ListEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listentitiesdetectionjobsresponsetypedef)\].
 
+<a id="listentityrecognizerspaginator"></a>
+
 ## ListEntityRecognizersPaginator
 
 Type annotations for
@@ -133,10 +153,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_comprehend.paginator import ListEntityRecognizersPaginator
 
 def get_list_entity_recognizers_paginator() -> ListEntityRecognizersPaginator:
-    return boto3.client("comprehend").get_paginator("list_entity_recognizers")
+    return Session().client("comprehend").get_paginator("list_entity_recognizers")
 ```
 
 Boto3 documentation:
@@ -152,6 +174,8 @@ Arguments for `ListEntityRecognizersPaginator.paginate` method:
 `ListEntityRecognizersPaginator.paginate` returns
 `_PageIterator`\[[ListEntityRecognizersResponseTypeDef](./type_defs.md#listentityrecognizersresponsetypedef)\].
 
+<a id="listkeyphrasesdetectionjobspaginator"></a>
+
 ## ListKeyPhrasesDetectionJobsPaginator
 
 Type annotations for
@@ -160,10 +184,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_comprehend.paginator import ListKeyPhrasesDetectionJobsPaginator
 
 def get_list_key_phrases_detection_jobs_paginator() -> ListKeyPhrasesDetectionJobsPaginator:
-    return boto3.client("comprehend").get_paginator("list_key_phrases_detection_jobs")
+    return Session().client("comprehend").get_paginator("list_key_phrases_detection_jobs")
 ```
 
 Boto3 documentation:
@@ -179,6 +205,8 @@ Arguments for `ListKeyPhrasesDetectionJobsPaginator.paginate` method:
 `ListKeyPhrasesDetectionJobsPaginator.paginate` returns
 `_PageIterator`\[[ListKeyPhrasesDetectionJobsResponseTypeDef](./type_defs.md#listkeyphrasesdetectionjobsresponsetypedef)\].
 
+<a id="listsentimentdetectionjobspaginator"></a>
+
 ## ListSentimentDetectionJobsPaginator
 
 Type annotations for
@@ -187,10 +215,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_comprehend.paginator import ListSentimentDetectionJobsPaginator
 
 def get_list_sentiment_detection_jobs_paginator() -> ListSentimentDetectionJobsPaginator:
-    return boto3.client("comprehend").get_paginator("list_sentiment_detection_jobs")
+    return Session().client("comprehend").get_paginator("list_sentiment_detection_jobs")
 ```
 
 Boto3 documentation:
@@ -206,6 +236,8 @@ Arguments for `ListSentimentDetectionJobsPaginator.paginate` method:
 `ListSentimentDetectionJobsPaginator.paginate` returns
 `_PageIterator`\[[ListSentimentDetectionJobsResponseTypeDef](./type_defs.md#listsentimentdetectionjobsresponsetypedef)\].
 
+<a id="listtopicsdetectionjobspaginator"></a>
+
 ## ListTopicsDetectionJobsPaginator
 
 Type annotations for
@@ -214,10 +246,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_comprehend.paginator import ListTopicsDetectionJobsPaginator
 
 def get_list_topics_detection_jobs_paginator() -> ListTopicsDetectionJobsPaginator:
-    return boto3.client("comprehend").get_paginator("list_topics_detection_jobs")
+    return Session().client("comprehend").get_paginator("list_topics_detection_jobs")
 ```
 
 Boto3 documentation:

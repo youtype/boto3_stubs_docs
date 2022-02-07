@@ -1,3 +1,5 @@
+<a id="gluedatabrewclient-for-boto3-gluedatabrew-module"></a>
+
 # GlueDataBrewClient for boto3 GlueDataBrew module
 
 > [Index](..) > [GlueDataBrew](.) > GlueDataBrewClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
 type annotations stubs module
-[mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
+[mypy-boto3-databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 - [GlueDataBrewClient for boto3 GlueDataBrew module](#gluedatabrewclient-for-boto3-gluedatabrew-module)
   - [GlueDataBrewClient](#gluedatabrewclient)
@@ -60,6 +62,8 @@ type annotations stubs module
     - [update_schedule](#update_schedule)
     - [get_paginator](#get_paginator)
 
+<a id="gluedatabrewclient"></a>
+
 ## GlueDataBrewClient
 
 Type annotations for `boto3.client("databrew")`
@@ -67,14 +71,17 @@ Type annotations for `boto3.client("databrew")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_databrew.client import GlueDataBrewClient
 
 def get_databrew_client() -> GlueDataBrewClient:
-    return boto3.client("databrew")
+    return Session().client("databrew")
 ```
 
 Boto3 documentation:
 [GlueDataBrew.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -98,7 +105,11 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -110,6 +121,8 @@ Boto3 documentation:
 [GlueDataBrew.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_delete_recipe_version"></a>
 
 ### batch_delete_recipe_version
 
@@ -132,6 +145,8 @@ Keyword-only arguments:
 Returns
 [BatchDeleteRecipeVersionResponseTypeDef](./type_defs.md#batchdeleterecipeversionresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -146,6 +161,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_dataset"></a>
 
 ### create_dataset
 
@@ -170,6 +187,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+
+<a id="create_profile_job"></a>
 
 ### create_profile_job
 
@@ -206,6 +225,8 @@ Keyword-only arguments:
 Returns
 [CreateProfileJobResponseTypeDef](./type_defs.md#createprofilejobresponsetypedef).
 
+<a id="create_project"></a>
+
 ### create_project
 
 Creates a new DataBrew project.
@@ -230,6 +251,8 @@ Keyword-only arguments:
 Returns
 [CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
+<a id="create_recipe"></a>
+
 ### create_recipe
 
 Creates a new DataBrew recipe.
@@ -252,6 +275,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRecipeResponseTypeDef](./type_defs.md#createreciperesponsetypedef).
+
+<a id="create_recipe_job"></a>
 
 ### create_recipe_job
 
@@ -291,6 +316,8 @@ Keyword-only arguments:
 Returns
 [CreateRecipeJobResponseTypeDef](./type_defs.md#createrecipejobresponsetypedef).
 
+<a id="create_ruleset"></a>
+
 ### create_ruleset
 
 Creates a new ruleset that can be used in a profile job to validate the data
@@ -315,6 +342,8 @@ Keyword-only arguments:
 Returns
 [CreateRulesetResponseTypeDef](./type_defs.md#createrulesetresponsetypedef).
 
+<a id="create_schedule"></a>
+
 ### create_schedule
 
 Creates a new schedule for one or more DataBrew jobs.
@@ -337,6 +366,8 @@ Keyword-only arguments:
 Returns
 [CreateScheduleResponseTypeDef](./type_defs.md#createscheduleresponsetypedef).
 
+<a id="delete_dataset"></a>
+
 ### delete_dataset
 
 Deletes a dataset from DataBrew.
@@ -356,6 +387,8 @@ Keyword-only arguments:
 Returns
 [DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
 
+<a id="delete_job"></a>
+
 ### delete_job
 
 Deletes the specified DataBrew job.
@@ -373,6 +406,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns [DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef).
+
+<a id="delete_project"></a>
 
 ### delete_project
 
@@ -392,6 +427,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
+
+<a id="delete_recipe_version"></a>
 
 ### delete_recipe_version
 
@@ -413,6 +450,8 @@ Keyword-only arguments:
 Returns
 [DeleteRecipeVersionResponseTypeDef](./type_defs.md#deleterecipeversionresponsetypedef).
 
+<a id="delete_ruleset"></a>
+
 ### delete_ruleset
 
 Deletes a ruleset.
@@ -431,6 +470,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteRulesetResponseTypeDef](./type_defs.md#deleterulesetresponsetypedef).
+
+<a id="delete_schedule"></a>
 
 ### delete_schedule
 
@@ -451,6 +492,8 @@ Keyword-only arguments:
 Returns
 [DeleteScheduleResponseTypeDef](./type_defs.md#deletescheduleresponsetypedef).
 
+<a id="describe_dataset"></a>
+
 ### describe_dataset
 
 Returns the definition of a specific DataBrew dataset.
@@ -470,6 +513,8 @@ Keyword-only arguments:
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
+<a id="describe_job"></a>
+
 ### describe_job
 
 Returns the definition of a specific DataBrew job.
@@ -488,6 +533,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeJobResponseTypeDef](./type_defs.md#describejobresponsetypedef).
+
+<a id="describe_job_run"></a>
 
 ### describe_job_run
 
@@ -509,6 +556,8 @@ Keyword-only arguments:
 Returns
 [DescribeJobRunResponseTypeDef](./type_defs.md#describejobrunresponsetypedef).
 
+<a id="describe_project"></a>
+
 ### describe_project
 
 Returns the definition of a specific DataBrew project.
@@ -527,6 +576,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
+
+<a id="describe_recipe"></a>
 
 ### describe_recipe
 
@@ -549,6 +600,8 @@ Keyword-only arguments:
 Returns
 [DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef).
 
+<a id="describe_ruleset"></a>
+
 ### describe_ruleset
 
 Retrieves detailed information about the ruleset.
@@ -567,6 +620,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRulesetResponseTypeDef](./type_defs.md#describerulesetresponsetypedef).
+
+<a id="describe_schedule"></a>
 
 ### describe_schedule
 
@@ -587,6 +642,8 @@ Keyword-only arguments:
 Returns
 [DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -604,6 +661,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_datasets"></a>
 
 ### list_datasets
 
@@ -624,6 +683,8 @@ Keyword-only arguments:
 
 Returns
 [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+
+<a id="list_job_runs"></a>
 
 ### list_job_runs
 
@@ -646,6 +707,8 @@ Keyword-only arguments:
 Returns
 [ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef).
 
+<a id="list_jobs"></a>
+
 ### list_jobs
 
 Lists all of the DataBrew jobs that are defined.
@@ -667,6 +730,8 @@ Keyword-only arguments:
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
+<a id="list_projects"></a>
+
 ### list_projects
 
 Lists all of the DataBrew projects that are defined.
@@ -686,6 +751,8 @@ Keyword-only arguments:
 
 Returns
 [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
+
+<a id="list_recipe_versions"></a>
 
 ### list_recipe_versions
 
@@ -709,6 +776,8 @@ Keyword-only arguments:
 Returns
 [ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef).
 
+<a id="list_recipes"></a>
+
 ### list_recipes
 
 Lists all of the DataBrew recipes that are defined.
@@ -729,6 +798,8 @@ Keyword-only arguments:
 
 Returns
 [ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef).
+
+<a id="list_rulesets"></a>
 
 ### list_rulesets
 
@@ -752,6 +823,8 @@ Keyword-only arguments:
 Returns
 [ListRulesetsResponseTypeDef](./type_defs.md#listrulesetsresponsetypedef).
 
+<a id="list_schedules"></a>
+
 ### list_schedules
 
 Lists the DataBrew schedules that are defined.
@@ -773,6 +846,8 @@ Keyword-only arguments:
 Returns
 [ListSchedulesResponseTypeDef](./type_defs.md#listschedulesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all the tags for a DataBrew resource.
@@ -791,6 +866,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="publish_recipe"></a>
 
 ### publish_recipe
 
@@ -811,6 +888,8 @@ Keyword-only arguments:
 
 Returns
 [PublishRecipeResponseTypeDef](./type_defs.md#publishreciperesponsetypedef).
+
+<a id="send_project_session_action"></a>
 
 ### send_project_session_action
 
@@ -838,6 +917,8 @@ Keyword-only arguments:
 Returns
 [SendProjectSessionActionResponseTypeDef](./type_defs.md#sendprojectsessionactionresponsetypedef).
 
+<a id="start_job_run"></a>
+
 ### start_job_run
 
 Runs a DataBrew job.
@@ -856,6 +937,8 @@ Keyword-only arguments:
 
 Returns
 [StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
+
+<a id="start_project_session"></a>
 
 ### start_project_session
 
@@ -878,6 +961,8 @@ Keyword-only arguments:
 Returns
 [StartProjectSessionResponseTypeDef](./type_defs.md#startprojectsessionresponsetypedef).
 
+<a id="stop_job_run"></a>
+
 ### stop_job_run
 
 Stops a particular run of a job.
@@ -896,6 +981,8 @@ Keyword-only arguments:
 - `RunId`: `str` *(required)*
 
 Returns [StopJobRunResponseTypeDef](./type_defs.md#stopjobrunresponsetypedef).
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -917,6 +1004,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes metadata tags from a DataBrew resource.
@@ -935,6 +1024,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_dataset"></a>
 
 ### update_dataset
 
@@ -958,6 +1049,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
+
+<a id="update_profile_job"></a>
 
 ### update_profile_job
 
@@ -992,6 +1085,8 @@ Keyword-only arguments:
 Returns
 [UpdateProfileJobResponseTypeDef](./type_defs.md#updateprofilejobresponsetypedef).
 
+<a id="update_project"></a>
+
 ### update_project
 
 Modifies the definition of an existing DataBrew project.
@@ -1013,6 +1108,8 @@ Keyword-only arguments:
 Returns
 [UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef).
 
+<a id="update_recipe"></a>
+
 ### update_recipe
 
 Modifies the definition of the `LATEST_WORKING` version of a DataBrew recipe.
@@ -1033,6 +1130,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRecipeResponseTypeDef](./type_defs.md#updatereciperesponsetypedef).
+
+<a id="update_recipe_job"></a>
 
 ### update_recipe_job
 
@@ -1065,6 +1164,8 @@ Keyword-only arguments:
 Returns
 [UpdateRecipeJobResponseTypeDef](./type_defs.md#updaterecipejobresponsetypedef).
 
+<a id="update_ruleset"></a>
+
 ### update_ruleset
 
 Updates specified ruleset.
@@ -1086,6 +1187,8 @@ Keyword-only arguments:
 Returns
 [UpdateRulesetResponseTypeDef](./type_defs.md#updaterulesetresponsetypedef).
 
+<a id="update_schedule"></a>
+
 ### update_schedule
 
 Modifies the definition of an existing DataBrew schedule.
@@ -1106,6 +1209,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateScheduleResponseTypeDef](./type_defs.md#updatescheduleresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

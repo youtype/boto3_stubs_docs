@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-lookoutforvision-module"></a>
+
 # Literals for boto3 LookoutforVision module
 
 > [Index](..) > [LookoutforVision](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
 type annotations stubs module
-[mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
+[mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 - [Literals for boto3 LookoutforVision module](#literals-for-boto3-lookoutforvision-module)
   - [DatasetStatusType](#datasetstatustype)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [TargetPlatformOsType](#targetplatformostype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="datasetstatustype"></a>
 
 ## DatasetStatusType
 
@@ -42,6 +46,8 @@ Values:
 - `UPDATE_FAILED_ROLLBACK_IN_PROGRESS`
 - `UPDATE_IN_PROGRESS`
 
+<a id="listdatasetentriespaginatorname"></a>
+
 ## ListDatasetEntriesPaginatorName
 
 ```python
@@ -51,6 +57,8 @@ from mypy_boto3_lookoutvision.literals import ListDatasetEntriesPaginatorName
 Values:
 
 - `list_dataset_entries`
+
+<a id="listmodelpackagingjobspaginatorname"></a>
 
 ## ListModelPackagingJobsPaginatorName
 
@@ -62,6 +70,8 @@ Values:
 
 - `list_model_packaging_jobs`
 
+<a id="listmodelspaginatorname"></a>
+
 ## ListModelsPaginatorName
 
 ```python
@@ -72,6 +82,8 @@ Values:
 
 - `list_models`
 
+<a id="listprojectspaginatorname"></a>
+
 ## ListProjectsPaginatorName
 
 ```python
@@ -81,6 +93,8 @@ from mypy_boto3_lookoutvision.literals import ListProjectsPaginatorName
 Values:
 
 - `list_projects`
+
+<a id="modelhostingstatustype"></a>
 
 ## ModelHostingStatusType
 
@@ -96,6 +110,8 @@ Values:
 - `STOPPING_HOSTING`
 - `SYSTEM_UPDATING`
 
+<a id="modelpackagingjobstatustype"></a>
+
 ## ModelPackagingJobStatusType
 
 ```python
@@ -108,6 +124,8 @@ Values:
 - `FAILED`
 - `RUNNING`
 - `SUCCEEDED`
+
+<a id="modelstatustype"></a>
 
 ## ModelStatusType
 
@@ -127,6 +145,8 @@ Values:
 - `TRAINING`
 - `TRAINING_FAILED`
 
+<a id="targetdevicetype"></a>
+
 ## TargetDeviceType
 
 ```python
@@ -137,6 +157,8 @@ Values:
 
 - `jetson_xavier`
 
+<a id="targetplatformacceleratortype"></a>
+
 ## TargetPlatformAcceleratorType
 
 ```python
@@ -146,6 +168,8 @@ from mypy_boto3_lookoutvision.literals import TargetPlatformAcceleratorType
 Values:
 
 - `NVIDIA`
+
+<a id="targetplatformarchtype"></a>
 
 ## TargetPlatformArchType
 
@@ -158,6 +182,8 @@ Values:
 - `ARM64`
 - `X86_64`
 
+<a id="targetplatformostype"></a>
+
 ## TargetPlatformOsType
 
 ```python
@@ -167,6 +193,8 @@ from mypy_boto3_lookoutvision.literals import TargetPlatformOsType
 Values:
 
 - `LINUX`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -475,6 +503,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

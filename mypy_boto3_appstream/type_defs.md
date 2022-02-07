@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-appstream-module"></a>
+
 # Typed dictionaries for boto3 AppStream module
 
 > [Index](..) > [AppStream](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
 type annotations stubs module
-[mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
+[mypy-boto3-appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
 - [Typed dictionaries for boto3 AppStream module](#typed-dictionaries-for-boto3-appstream-module)
   - [AccessEndpointTypeDef](#accessendpointtypedef)
@@ -154,6 +156,8 @@ type annotations stubs module
   - [VpcConfigTypeDef](#vpcconfigtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="accessendpointtypedef"></a>
+
 ## AccessEndpointTypeDef
 
 ```python
@@ -168,6 +172,8 @@ Required fields:
 Optional fields:
 
 - `VpceId`: `str`
+
+<a id="appblocktypedef"></a>
 
 ## AppBlockTypeDef
 
@@ -189,6 +195,8 @@ Optional fields:
 - `SourceS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `CreatedTime`: `datetime`
 
+<a id="applicationfleetassociationtypedef"></a>
+
 ## ApplicationFleetAssociationTypeDef
 
 ```python
@@ -199,6 +207,8 @@ Required fields:
 
 - `FleetName`: `str`
 - `ApplicationArn`: `str`
+
+<a id="applicationsettingsresponsetypedef"></a>
 
 ## ApplicationSettingsResponseTypeDef
 
@@ -211,6 +221,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `SettingsGroup`: `str`
 - `S3BucketName`: `str`
+
+<a id="applicationsettingstypedef"></a>
 
 ## ApplicationSettingsTypeDef
 
@@ -225,6 +237,8 @@ Required fields:
 Optional fields:
 
 - `SettingsGroup`: `str`
+
+<a id="applicationtypedef"></a>
 
 ## ApplicationTypeDef
 
@@ -250,6 +264,8 @@ Optional fields:
 - `InstanceFamilies`: `List`\[`str`\]
 - `CreatedTime`: `datetime`
 
+<a id="associateapplicationfleetrequestrequesttypedef"></a>
+
 ## AssociateApplicationFleetRequestRequestTypeDef
 
 ```python
@@ -260,6 +276,8 @@ Required fields:
 
 - `FleetName`: `str`
 - `ApplicationArn`: `str`
+
+<a id="associateapplicationfleetresulttypedef"></a>
 
 ## AssociateApplicationFleetResultTypeDef
 
@@ -274,6 +292,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associateapplicationtoentitlementrequestrequesttypedef"></a>
+
 ## AssociateApplicationToEntitlementRequestRequestTypeDef
 
 ```python
@@ -286,6 +306,8 @@ Required fields:
 - `EntitlementName`: `str`
 - `ApplicationIdentifier`: `str`
 
+<a id="associatefleetrequestrequesttypedef"></a>
+
 ## AssociateFleetRequestRequestTypeDef
 
 ```python
@@ -297,6 +319,8 @@ Required fields:
 - `FleetName`: `str`
 - `StackName`: `str`
 
+<a id="batchassociateuserstackrequestrequesttypedef"></a>
+
 ## BatchAssociateUserStackRequestRequestTypeDef
 
 ```python
@@ -307,6 +331,8 @@ Required fields:
 
 - `UserStackAssociations`:
   `Sequence`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
+
+<a id="batchassociateuserstackresulttypedef"></a>
 
 ## BatchAssociateUserStackResultTypeDef
 
@@ -321,6 +347,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdisassociateuserstackrequestrequesttypedef"></a>
+
 ## BatchDisassociateUserStackRequestRequestTypeDef
 
 ```python
@@ -331,6 +359,8 @@ Required fields:
 
 - `UserStackAssociations`:
   `Sequence`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
+
+<a id="batchdisassociateuserstackresulttypedef"></a>
 
 ## BatchDisassociateUserStackResultTypeDef
 
@@ -344,6 +374,8 @@ Required fields:
   `List`\[[UserStackAssociationErrorTypeDef](./type_defs.md#userstackassociationerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="computecapacitystatustypedef"></a>
 
 ## ComputeCapacityStatusTypeDef
 
@@ -361,6 +393,8 @@ Optional fields:
 - `InUse`: `int`
 - `Available`: `int`
 
+<a id="computecapacitytypedef"></a>
+
 ## ComputeCapacityTypeDef
 
 ```python
@@ -370,6 +404,8 @@ from mypy_boto3_appstream.type_defs import ComputeCapacityTypeDef
 Required fields:
 
 - `DesiredInstances`: `int`
+
+<a id="copyimagerequestrequesttypedef"></a>
 
 ## CopyImageRequestRequestTypeDef
 
@@ -387,6 +423,8 @@ Optional fields:
 
 - `DestinationImageDescription`: `str`
 
+<a id="copyimageresponsetypedef"></a>
+
 ## CopyImageResponseTypeDef
 
 ```python
@@ -398,6 +436,8 @@ Required fields:
 - `DestinationImageName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createappblockrequestrequesttypedef"></a>
 
 ## CreateAppBlockRequestRequestTypeDef
 
@@ -418,6 +458,8 @@ Optional fields:
 - `DisplayName`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createappblockresulttypedef"></a>
+
 ## CreateAppBlockResultTypeDef
 
 ```python
@@ -429,6 +471,8 @@ Required fields:
 - `AppBlock`: [AppBlockTypeDef](./type_defs.md#appblocktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createapplicationrequestrequesttypedef"></a>
 
 ## CreateApplicationRequestRequestTypeDef
 
@@ -453,6 +497,8 @@ Optional fields:
 - `LaunchParameters`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createapplicationresulttypedef"></a>
+
 ## CreateApplicationResultTypeDef
 
 ```python
@@ -464,6 +510,8 @@ Required fields:
 - `Application`: [ApplicationTypeDef](./type_defs.md#applicationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdirectoryconfigrequestrequesttypedef"></a>
 
 ## CreateDirectoryConfigRequestRequestTypeDef
 
@@ -481,6 +529,8 @@ Optional fields:
 - `ServiceAccountCredentials`:
   [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
 
+<a id="createdirectoryconfigresulttypedef"></a>
+
 ## CreateDirectoryConfigResultTypeDef
 
 ```python
@@ -493,6 +543,8 @@ Required fields:
   [DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createentitlementrequestrequesttypedef"></a>
 
 ## CreateEntitlementRequestRequestTypeDef
 
@@ -512,6 +564,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="createentitlementresulttypedef"></a>
+
 ## CreateEntitlementResultTypeDef
 
 ```python
@@ -523,6 +577,8 @@ Required fields:
 - `Entitlement`: [EntitlementTypeDef](./type_defs.md#entitlementtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfleetrequestrequesttypedef"></a>
 
 ## CreateFleetRequestRequestTypeDef
 
@@ -558,6 +614,8 @@ Optional fields:
 - `MaxConcurrentSessions`: `int`
 - `UsbDeviceFilterStrings`: `Sequence`\[`str`\]
 
+<a id="createfleetresulttypedef"></a>
+
 ## CreateFleetResultTypeDef
 
 ```python
@@ -569,6 +627,8 @@ Required fields:
 - `Fleet`: [FleetTypeDef](./type_defs.md#fleettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createimagebuilderrequestrequesttypedef"></a>
 
 ## CreateImageBuilderRequestRequestTypeDef
 
@@ -597,6 +657,8 @@ Optional fields:
 - `AccessEndpoints`:
   `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 
+<a id="createimagebuilderresulttypedef"></a>
+
 ## CreateImageBuilderResultTypeDef
 
 ```python
@@ -608,6 +670,8 @@ Required fields:
 - `ImageBuilder`: [ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createimagebuilderstreamingurlrequestrequesttypedef"></a>
 
 ## CreateImageBuilderStreamingURLRequestRequestTypeDef
 
@@ -623,6 +687,8 @@ Optional fields:
 
 - `Validity`: `int`
 
+<a id="createimagebuilderstreamingurlresulttypedef"></a>
+
 ## CreateImageBuilderStreamingURLResultTypeDef
 
 ```python
@@ -635,6 +701,8 @@ Required fields:
 - `Expires`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstackrequestrequesttypedef"></a>
 
 ## CreateStackRequestRequestTypeDef
 
@@ -663,6 +731,8 @@ Optional fields:
   `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 - `EmbedHostDomains`: `Sequence`\[`str`\]
 
+<a id="createstackresulttypedef"></a>
+
 ## CreateStackResultTypeDef
 
 ```python
@@ -674,6 +744,8 @@ Required fields:
 - `Stack`: [StackTypeDef](./type_defs.md#stacktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstreamingurlrequestrequesttypedef"></a>
 
 ## CreateStreamingURLRequestRequestTypeDef
 
@@ -693,6 +765,8 @@ Optional fields:
 - `Validity`: `int`
 - `SessionContext`: `str`
 
+<a id="createstreamingurlresulttypedef"></a>
+
 ## CreateStreamingURLResultTypeDef
 
 ```python
@@ -705,6 +779,8 @@ Required fields:
 - `Expires`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createupdatedimagerequestrequesttypedef"></a>
 
 ## CreateUpdatedImageRequestRequestTypeDef
 
@@ -724,6 +800,8 @@ Optional fields:
 - `newImageTags`: `Mapping`\[`str`, `str`\]
 - `dryRun`: `bool`
 
+<a id="createupdatedimageresulttypedef"></a>
+
 ## CreateUpdatedImageResultTypeDef
 
 ```python
@@ -736,6 +814,8 @@ Required fields:
 - `canUpdateImage`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createusagereportsubscriptionresulttypedef"></a>
 
 ## CreateUsageReportSubscriptionResultTypeDef
 
@@ -750,6 +830,8 @@ Required fields:
   [UsageReportScheduleType](./literals.md#usagereportscheduletype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createuserrequestrequesttypedef"></a>
 
 ## CreateUserRequestRequestTypeDef
 
@@ -769,6 +851,8 @@ Optional fields:
 - `FirstName`: `str`
 - `LastName`: `str`
 
+<a id="deleteappblockrequestrequesttypedef"></a>
+
 ## DeleteAppBlockRequestRequestTypeDef
 
 ```python
@@ -778,6 +862,8 @@ from mypy_boto3_appstream.type_defs import DeleteAppBlockRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="deleteapplicationrequestrequesttypedef"></a>
 
 ## DeleteApplicationRequestRequestTypeDef
 
@@ -789,6 +875,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="deletedirectoryconfigrequestrequesttypedef"></a>
+
 ## DeleteDirectoryConfigRequestRequestTypeDef
 
 ```python
@@ -798,6 +886,8 @@ from mypy_boto3_appstream.type_defs import DeleteDirectoryConfigRequestRequestTy
 Required fields:
 
 - `DirectoryName`: `str`
+
+<a id="deleteentitlementrequestrequesttypedef"></a>
 
 ## DeleteEntitlementRequestRequestTypeDef
 
@@ -810,6 +900,8 @@ Required fields:
 - `Name`: `str`
 - `StackName`: `str`
 
+<a id="deletefleetrequestrequesttypedef"></a>
+
 ## DeleteFleetRequestRequestTypeDef
 
 ```python
@@ -820,6 +912,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="deleteimagebuilderrequestrequesttypedef"></a>
+
 ## DeleteImageBuilderRequestRequestTypeDef
 
 ```python
@@ -829,6 +923,8 @@ from mypy_boto3_appstream.type_defs import DeleteImageBuilderRequestRequestTypeD
 Required fields:
 
 - `Name`: `str`
+
+<a id="deleteimagebuilderresulttypedef"></a>
 
 ## DeleteImageBuilderResultTypeDef
 
@@ -842,6 +938,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteimagepermissionsrequestrequesttypedef"></a>
+
 ## DeleteImagePermissionsRequestRequestTypeDef
 
 ```python
@@ -853,6 +951,8 @@ Required fields:
 - `Name`: `str`
 - `SharedAccountId`: `str`
 
+<a id="deleteimagerequestrequesttypedef"></a>
+
 ## DeleteImageRequestRequestTypeDef
 
 ```python
@@ -862,6 +962,8 @@ from mypy_boto3_appstream.type_defs import DeleteImageRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="deleteimageresulttypedef"></a>
 
 ## DeleteImageResultTypeDef
 
@@ -875,6 +977,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletestackrequestrequesttypedef"></a>
+
 ## DeleteStackRequestRequestTypeDef
 
 ```python
@@ -884,6 +988,8 @@ from mypy_boto3_appstream.type_defs import DeleteStackRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="deleteuserrequestrequesttypedef"></a>
 
 ## DeleteUserRequestRequestTypeDef
 
@@ -897,6 +1003,8 @@ Required fields:
 - `AuthenticationType`:
   [AuthenticationTypeType](./literals.md#authenticationtypetype)
 
+<a id="describeappblocksrequestrequesttypedef"></a>
+
 ## DescribeAppBlocksRequestRequestTypeDef
 
 ```python
@@ -908,6 +1016,8 @@ Optional fields:
 - `Arns`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="describeappblocksresulttypedef"></a>
 
 ## DescribeAppBlocksResultTypeDef
 
@@ -922,6 +1032,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeapplicationfleetassociationsrequestrequesttypedef"></a>
+
 ## DescribeApplicationFleetAssociationsRequestRequestTypeDef
 
 ```python
@@ -934,6 +1046,8 @@ Optional fields:
 - `ApplicationArn`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeapplicationfleetassociationsresulttypedef"></a>
 
 ## DescribeApplicationFleetAssociationsResultTypeDef
 
@@ -949,6 +1063,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeapplicationsrequestrequesttypedef"></a>
+
 ## DescribeApplicationsRequestRequestTypeDef
 
 ```python
@@ -960,6 +1076,8 @@ Optional fields:
 - `Arns`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="describeapplicationsresulttypedef"></a>
 
 ## DescribeApplicationsResultTypeDef
 
@@ -975,6 +1093,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedirectoryconfigsrequestrequesttypedef"></a>
+
 ## DescribeDirectoryConfigsRequestRequestTypeDef
 
 ```python
@@ -986,6 +1106,8 @@ Optional fields:
 - `DirectoryNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describedirectoryconfigsresulttypedef"></a>
 
 ## DescribeDirectoryConfigsResultTypeDef
 
@@ -1000,6 +1122,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeentitlementsrequestrequesttypedef"></a>
 
 ## DescribeEntitlementsRequestRequestTypeDef
 
@@ -1017,6 +1141,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="describeentitlementsresulttypedef"></a>
+
 ## DescribeEntitlementsResultTypeDef
 
 ```python
@@ -1031,6 +1157,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefleetsrequestrequesttypedef"></a>
+
 ## DescribeFleetsRequestRequestTypeDef
 
 ```python
@@ -1041,6 +1169,8 @@ Optional fields:
 
 - `Names`: `Sequence`\[`str`\]
 - `NextToken`: `str`
+
+<a id="describefleetsresulttypedef"></a>
 
 ## DescribeFleetsResultTypeDef
 
@@ -1055,6 +1185,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeimagebuildersrequestrequesttypedef"></a>
+
 ## DescribeImageBuildersRequestRequestTypeDef
 
 ```python
@@ -1066,6 +1198,8 @@ Optional fields:
 - `Names`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeimagebuildersresulttypedef"></a>
 
 ## DescribeImageBuildersResultTypeDef
 
@@ -1080,6 +1214,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeimagepermissionsrequestrequesttypedef"></a>
 
 ## DescribeImagePermissionsRequestRequestTypeDef
 
@@ -1097,6 +1233,8 @@ Optional fields:
 - `SharedAwsAccountIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
+<a id="describeimagepermissionsresulttypedef"></a>
+
 ## DescribeImagePermissionsResultTypeDef
 
 ```python
@@ -1112,6 +1250,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeimagesrequestrequesttypedef"></a>
+
 ## DescribeImagesRequestRequestTypeDef
 
 ```python
@@ -1126,6 +1266,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="describeimagesresulttypedef"></a>
+
 ## DescribeImagesResultTypeDef
 
 ```python
@@ -1138,6 +1280,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describesessionsrequestrequesttypedef"></a>
 
 ## DescribeSessionsRequestRequestTypeDef
 
@@ -1158,6 +1302,8 @@ Optional fields:
 - `AuthenticationType`:
   [AuthenticationTypeType](./literals.md#authenticationtypetype)
 
+<a id="describesessionsresulttypedef"></a>
+
 ## DescribeSessionsResultTypeDef
 
 ```python
@@ -1171,6 +1317,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestacksrequestrequesttypedef"></a>
+
 ## DescribeStacksRequestRequestTypeDef
 
 ```python
@@ -1181,6 +1329,8 @@ Optional fields:
 
 - `Names`: `Sequence`\[`str`\]
 - `NextToken`: `str`
+
+<a id="describestacksresulttypedef"></a>
 
 ## DescribeStacksResultTypeDef
 
@@ -1195,6 +1345,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeusagereportsubscriptionsrequestrequesttypedef"></a>
+
 ## DescribeUsageReportSubscriptionsRequestRequestTypeDef
 
 ```python
@@ -1205,6 +1357,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeusagereportsubscriptionsresulttypedef"></a>
 
 ## DescribeUsageReportSubscriptionsResultTypeDef
 
@@ -1219,6 +1373,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeuserstackassociationsrequestrequesttypedef"></a>
 
 ## DescribeUserStackAssociationsRequestRequestTypeDef
 
@@ -1235,6 +1391,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeuserstackassociationsresulttypedef"></a>
+
 ## DescribeUserStackAssociationsResultTypeDef
 
 ```python
@@ -1248,6 +1406,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeusersrequestrequesttypedef"></a>
 
 ## DescribeUsersRequestRequestTypeDef
 
@@ -1265,6 +1425,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeusersresulttypedef"></a>
+
 ## DescribeUsersResultTypeDef
 
 ```python
@@ -1277,6 +1439,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="directoryconfigtypedef"></a>
 
 ## DirectoryConfigTypeDef
 
@@ -1295,6 +1459,8 @@ Optional fields:
   [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
 - `CreatedTime`: `datetime`
 
+<a id="disableuserrequestrequesttypedef"></a>
+
 ## DisableUserRequestRequestTypeDef
 
 ```python
@@ -1307,6 +1473,8 @@ Required fields:
 - `AuthenticationType`:
   [AuthenticationTypeType](./literals.md#authenticationtypetype)
 
+<a id="disassociateapplicationfleetrequestrequesttypedef"></a>
+
 ## DisassociateApplicationFleetRequestRequestTypeDef
 
 ```python
@@ -1317,6 +1485,8 @@ Required fields:
 
 - `FleetName`: `str`
 - `ApplicationArn`: `str`
+
+<a id="disassociateapplicationfromentitlementrequestrequesttypedef"></a>
 
 ## DisassociateApplicationFromEntitlementRequestRequestTypeDef
 
@@ -1330,6 +1500,8 @@ Required fields:
 - `EntitlementName`: `str`
 - `ApplicationIdentifier`: `str`
 
+<a id="disassociatefleetrequestrequesttypedef"></a>
+
 ## DisassociateFleetRequestRequestTypeDef
 
 ```python
@@ -1341,6 +1513,8 @@ Required fields:
 - `FleetName`: `str`
 - `StackName`: `str`
 
+<a id="domainjoininfotypedef"></a>
+
 ## DomainJoinInfoTypeDef
 
 ```python
@@ -1351,6 +1525,8 @@ Optional fields:
 
 - `DirectoryName`: `str`
 - `OrganizationalUnitDistinguishedName`: `str`
+
+<a id="enableuserrequestrequesttypedef"></a>
 
 ## EnableUserRequestRequestTypeDef
 
@@ -1364,6 +1540,8 @@ Required fields:
 - `AuthenticationType`:
   [AuthenticationTypeType](./literals.md#authenticationtypetype)
 
+<a id="entitledapplicationtypedef"></a>
+
 ## EntitledApplicationTypeDef
 
 ```python
@@ -1373,6 +1551,8 @@ from mypy_boto3_appstream.type_defs import EntitledApplicationTypeDef
 Required fields:
 
 - `ApplicationIdentifier`: `str`
+
+<a id="entitlementattributetypedef"></a>
 
 ## EntitlementAttributeTypeDef
 
@@ -1384,6 +1564,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="entitlementtypedef"></a>
 
 ## EntitlementTypeDef
 
@@ -1405,6 +1587,8 @@ Optional fields:
 - `CreatedTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
+<a id="expiresessionrequestrequesttypedef"></a>
+
 ## ExpireSessionRequestRequestTypeDef
 
 ```python
@@ -1414,6 +1598,8 @@ from mypy_boto3_appstream.type_defs import ExpireSessionRequestRequestTypeDef
 Required fields:
 
 - `SessionId`: `str`
+
+<a id="fleeterrortypedef"></a>
 
 ## FleetErrorTypeDef
 
@@ -1425,6 +1611,8 @@ Optional fields:
 
 - `ErrorCode`: [FleetErrorCodeType](./literals.md#fleeterrorcodetype)
 - `ErrorMessage`: `str`
+
+<a id="fleettypedef"></a>
 
 ## FleetTypeDef
 
@@ -1464,6 +1652,8 @@ Optional fields:
 - `MaxConcurrentSessions`: `int`
 - `UsbDeviceFilterStrings`: `List`\[`str`\]
 
+<a id="imagebuilderstatechangereasontypedef"></a>
+
 ## ImageBuilderStateChangeReasonTypeDef
 
 ```python
@@ -1475,6 +1665,8 @@ Optional fields:
 - `Code`:
   [ImageBuilderStateChangeReasonCodeType](./literals.md#imagebuilderstatechangereasoncodetype)
 - `Message`: `str`
+
+<a id="imagebuildertypedef"></a>
 
 ## ImageBuilderTypeDef
 
@@ -1511,6 +1703,8 @@ Optional fields:
 - `AccessEndpoints`:
   `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 
+<a id="imagepermissionstypedef"></a>
+
 ## ImagePermissionsTypeDef
 
 ```python
@@ -1521,6 +1715,8 @@ Optional fields:
 
 - `allowFleet`: `bool`
 - `allowImageBuilder`: `bool`
+
+<a id="imagestatechangereasontypedef"></a>
 
 ## ImageStateChangeReasonTypeDef
 
@@ -1533,6 +1729,8 @@ Optional fields:
 - `Code`:
   [ImageStateChangeReasonCodeType](./literals.md#imagestatechangereasoncodetype)
 - `Message`: `str`
+
+<a id="imagetypedef"></a>
 
 ## ImageTypeDef
 
@@ -1567,6 +1765,8 @@ Optional fields:
 - `ImageErrors`:
   `List`\[[ResourceErrorTypeDef](./type_defs.md#resourceerrortypedef)\]
 
+<a id="lastreportgenerationexecutionerrortypedef"></a>
+
 ## LastReportGenerationExecutionErrorTypeDef
 
 ```python
@@ -1578,6 +1778,8 @@ Optional fields:
 - `ErrorCode`:
   [UsageReportExecutionErrorCodeType](./literals.md#usagereportexecutionerrorcodetype)
 - `ErrorMessage`: `str`
+
+<a id="listassociatedfleetsrequestrequesttypedef"></a>
 
 ## ListAssociatedFleetsRequestRequestTypeDef
 
@@ -1593,6 +1795,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listassociatedfleetsresulttypedef"></a>
+
 ## ListAssociatedFleetsResultTypeDef
 
 ```python
@@ -1605,6 +1809,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassociatedstacksrequestrequesttypedef"></a>
 
 ## ListAssociatedStacksRequestRequestTypeDef
 
@@ -1620,6 +1826,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listassociatedstacksresulttypedef"></a>
+
 ## ListAssociatedStacksResultTypeDef
 
 ```python
@@ -1632,6 +1840,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listentitledapplicationsrequestrequesttypedef"></a>
 
 ## ListEntitledApplicationsRequestRequestTypeDef
 
@@ -1649,6 +1859,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listentitledapplicationsresulttypedef"></a>
+
 ## ListEntitledApplicationsResultTypeDef
 
 ```python
@@ -1663,6 +1875,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1672,6 +1886,8 @@ from mypy_boto3_appstream.type_defs import ListTagsForResourceRequestRequestType
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1685,6 +1901,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="networkaccessconfigurationtypedef"></a>
+
 ## NetworkAccessConfigurationTypeDef
 
 ```python
@@ -1695,6 +1913,8 @@ Optional fields:
 
 - `EniPrivateIpAddress`: `str`
 - `EniId`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1708,6 +1928,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="resourceerrortypedef"></a>
+
 ## ResourceErrorTypeDef
 
 ```python
@@ -1719,6 +1941,8 @@ Optional fields:
 - `ErrorCode`: [FleetErrorCodeType](./literals.md#fleeterrorcodetype)
 - `ErrorMessage`: `str`
 - `ErrorTimestamp`: `datetime`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1734,6 +1958,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3locationtypedef"></a>
+
 ## S3LocationTypeDef
 
 ```python
@@ -1744,6 +1970,8 @@ Required fields:
 
 - `S3Bucket`: `str`
 - `S3Key`: `str`
+
+<a id="scriptdetailstypedef"></a>
 
 ## ScriptDetailsTypeDef
 
@@ -1761,6 +1989,8 @@ Optional fields:
 
 - `ExecutableParameters`: `str`
 
+<a id="serviceaccountcredentialstypedef"></a>
+
 ## ServiceAccountCredentialsTypeDef
 
 ```python
@@ -1771,6 +2001,8 @@ Required fields:
 
 - `AccountName`: `str`
 - `AccountPassword`: `str`
+
+<a id="sessiontypedef"></a>
 
 ## SessionTypeDef
 
@@ -1797,6 +2029,8 @@ Optional fields:
 - `NetworkAccessConfiguration`:
   [NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef)
 
+<a id="sharedimagepermissionstypedef"></a>
+
 ## SharedImagePermissionsTypeDef
 
 ```python
@@ -1809,6 +2043,8 @@ Required fields:
 - `imagePermissions`:
   [ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef)
 
+<a id="stackerrortypedef"></a>
+
 ## StackErrorTypeDef
 
 ```python
@@ -1819,6 +2055,8 @@ Optional fields:
 
 - `ErrorCode`: [StackErrorCodeType](./literals.md#stackerrorcodetype)
 - `ErrorMessage`: `str`
+
+<a id="stacktypedef"></a>
 
 ## StackTypeDef
 
@@ -1850,6 +2088,8 @@ Optional fields:
   `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 - `EmbedHostDomains`: `List`\[`str`\]
 
+<a id="startfleetrequestrequesttypedef"></a>
+
 ## StartFleetRequestRequestTypeDef
 
 ```python
@@ -1859,6 +2099,8 @@ from mypy_boto3_appstream.type_defs import StartFleetRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="startimagebuilderrequestrequesttypedef"></a>
 
 ## StartImageBuilderRequestRequestTypeDef
 
@@ -1874,6 +2116,8 @@ Optional fields:
 
 - `AppstreamAgentVersion`: `str`
 
+<a id="startimagebuilderresulttypedef"></a>
+
 ## StartImageBuilderResultTypeDef
 
 ```python
@@ -1886,6 +2130,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopfleetrequestrequesttypedef"></a>
+
 ## StopFleetRequestRequestTypeDef
 
 ```python
@@ -1896,6 +2142,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="stopimagebuilderrequestrequesttypedef"></a>
+
 ## StopImageBuilderRequestRequestTypeDef
 
 ```python
@@ -1905,6 +2153,8 @@ from mypy_boto3_appstream.type_defs import StopImageBuilderRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="stopimagebuilderresulttypedef"></a>
 
 ## StopImageBuilderResultTypeDef
 
@@ -1917,6 +2167,8 @@ Required fields:
 - `ImageBuilder`: [ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="storageconnectortypedef"></a>
 
 ## StorageConnectorTypeDef
 
@@ -1934,6 +2186,8 @@ Optional fields:
 - `ResourceIdentifier`: `str`
 - `Domains`: `Sequence`\[`str`\]
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1945,6 +2199,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1955,6 +2211,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapplicationrequestrequesttypedef"></a>
 
 ## UpdateApplicationRequestRequestTypeDef
 
@@ -1978,6 +2236,8 @@ Optional fields:
 - `AttributesToDelete`:
   `Sequence`\[[ApplicationAttributeType](./literals.md#applicationattributetype)\]
 
+<a id="updateapplicationresulttypedef"></a>
+
 ## UpdateApplicationResultTypeDef
 
 ```python
@@ -1989,6 +2249,8 @@ Required fields:
 - `Application`: [ApplicationTypeDef](./type_defs.md#applicationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedirectoryconfigrequestrequesttypedef"></a>
 
 ## UpdateDirectoryConfigRequestRequestTypeDef
 
@@ -2006,6 +2268,8 @@ Optional fields:
 - `ServiceAccountCredentials`:
   [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
 
+<a id="updatedirectoryconfigresulttypedef"></a>
+
 ## UpdateDirectoryConfigResultTypeDef
 
 ```python
@@ -2018,6 +2282,8 @@ Required fields:
   [DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateentitlementrequestrequesttypedef"></a>
 
 ## UpdateEntitlementRequestRequestTypeDef
 
@@ -2037,6 +2303,8 @@ Optional fields:
 - `Attributes`:
   `Sequence`\[[EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef)\]
 
+<a id="updateentitlementresulttypedef"></a>
+
 ## UpdateEntitlementResultTypeDef
 
 ```python
@@ -2048,6 +2316,8 @@ Required fields:
 - `Entitlement`: [EntitlementTypeDef](./type_defs.md#entitlementtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefleetrequestrequesttypedef"></a>
 
 ## UpdateFleetRequestRequestTypeDef
 
@@ -2081,6 +2351,8 @@ Optional fields:
 - `MaxConcurrentSessions`: `int`
 - `UsbDeviceFilterStrings`: `Sequence`\[`str`\]
 
+<a id="updatefleetresulttypedef"></a>
+
 ## UpdateFleetResultTypeDef
 
 ```python
@@ -2092,6 +2364,8 @@ Required fields:
 - `Fleet`: [FleetTypeDef](./type_defs.md#fleettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateimagepermissionsrequestrequesttypedef"></a>
 
 ## UpdateImagePermissionsRequestRequestTypeDef
 
@@ -2105,6 +2379,8 @@ Required fields:
 - `SharedAccountId`: `str`
 - `ImagePermissions`:
   [ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef)
+
+<a id="updatestackrequestrequesttypedef"></a>
 
 ## UpdateStackRequestRequestTypeDef
 
@@ -2135,6 +2411,8 @@ Optional fields:
   `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 - `EmbedHostDomains`: `Sequence`\[`str`\]
 
+<a id="updatestackresulttypedef"></a>
+
 ## UpdateStackResultTypeDef
 
 ```python
@@ -2146,6 +2424,8 @@ Required fields:
 - `Stack`: [StackTypeDef](./type_defs.md#stacktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="usagereportsubscriptiontypedef"></a>
 
 ## UsageReportSubscriptionTypeDef
 
@@ -2162,6 +2442,8 @@ Optional fields:
 - `SubscriptionErrors`:
   `List`\[[LastReportGenerationExecutionErrorTypeDef](./type_defs.md#lastreportgenerationexecutionerrortypedef)\]
 
+<a id="usersettingtypedef"></a>
+
 ## UserSettingTypeDef
 
 ```python
@@ -2172,6 +2454,8 @@ Required fields:
 
 - `Action`: [ActionType](./literals.md#actiontype)
 - `Permission`: [PermissionType](./literals.md#permissiontype)
+
+<a id="userstackassociationerrortypedef"></a>
 
 ## UserStackAssociationErrorTypeDef
 
@@ -2186,6 +2470,8 @@ Optional fields:
 - `ErrorCode`:
   [UserStackAssociationErrorCodeType](./literals.md#userstackassociationerrorcodetype)
 - `ErrorMessage`: `str`
+
+<a id="userstackassociationtypedef"></a>
 
 ## UserStackAssociationTypeDef
 
@@ -2203,6 +2489,8 @@ Required fields:
 Optional fields:
 
 - `SendEmailNotification`: `bool`
+
+<a id="usertypedef"></a>
 
 ## UserTypeDef
 
@@ -2225,6 +2513,8 @@ Optional fields:
 - `LastName`: `str`
 - `CreatedTime`: `datetime`
 
+<a id="vpcconfigtypedef"></a>
+
 ## VpcConfigTypeDef
 
 ```python
@@ -2235,6 +2525,8 @@ Optional fields:
 
 - `SubnetIds`: `Sequence`\[`str`\]
 - `SecurityGroupIds`: `Sequence`\[`str`\]
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

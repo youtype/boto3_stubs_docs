@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-mediaconvert-module"></a>
+
 # Paginators for boto3 MediaConvert module
 
 > [Index](..) > [MediaConvert](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
 type annotations stubs module
-[mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
+[mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 - [Paginators for boto3 MediaConvert module](#paginators-for-boto3-mediaconvert-module)
   - [DescribeEndpointsPaginator](#describeendpointspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListJobsPaginator](#listjobspaginator)
   - [ListPresetsPaginator](#listpresetspaginator)
   - [ListQueuesPaginator](#listqueuespaginator)
+
+<a id="describeendpointspaginator"></a>
 
 ## DescribeEndpointsPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediaconvert.paginator import DescribeEndpointsPaginator
 
 def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
-    return boto3.client("mediaconvert").get_paginator("describe_endpoints")
+    return Session().client("mediaconvert").get_paginator("describe_endpoints")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `DescribeEndpointsPaginator.paginate` method:
 `DescribeEndpointsPaginator.paginate` returns
 `_PageIterator`\[[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)\].
 
+<a id="listjobtemplatespaginator"></a>
+
 ## ListJobTemplatesPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediaconvert.paginator import ListJobTemplatesPaginator
 
 def get_list_job_templates_paginator() -> ListJobTemplatesPaginator:
-    return boto3.client("mediaconvert").get_paginator("list_job_templates")
+    return Session().client("mediaconvert").get_paginator("list_job_templates")
 ```
 
 Boto3 documentation:
@@ -68,6 +78,8 @@ Arguments for `ListJobTemplatesPaginator.paginate` method:
 `ListJobTemplatesPaginator.paginate` returns
 `_PageIterator`\[[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef)\].
 
+<a id="listjobspaginator"></a>
+
 ## ListJobsPaginator
 
 Type annotations for `boto3.client("mediaconvert").get_paginator("list_jobs")`.
@@ -75,10 +87,12 @@ Type annotations for `boto3.client("mediaconvert").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediaconvert.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
-    return boto3.client("mediaconvert").get_paginator("list_jobs")
+    return Session().client("mediaconvert").get_paginator("list_jobs")
 ```
 
 Boto3 documentation:
@@ -95,6 +109,8 @@ Arguments for `ListJobsPaginator.paginate` method:
 `ListJobsPaginator.paginate` returns
 `_PageIterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
+<a id="listpresetspaginator"></a>
+
 ## ListPresetsPaginator
 
 Type annotations for
@@ -103,10 +119,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediaconvert.paginator import ListPresetsPaginator
 
 def get_list_presets_paginator() -> ListPresetsPaginator:
-    return boto3.client("mediaconvert").get_paginator("list_presets")
+    return Session().client("mediaconvert").get_paginator("list_presets")
 ```
 
 Boto3 documentation:
@@ -123,6 +141,8 @@ Arguments for `ListPresetsPaginator.paginate` method:
 `ListPresetsPaginator.paginate` returns
 `_PageIterator`\[[ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef)\].
 
+<a id="listqueuespaginator"></a>
+
 ## ListQueuesPaginator
 
 Type annotations for
@@ -131,10 +151,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediaconvert.paginator import ListQueuesPaginator
 
 def get_list_queues_paginator() -> ListQueuesPaginator:
-    return boto3.client("mediaconvert").get_paginator("list_queues")
+    return Session().client("mediaconvert").get_paginator("list_queues")
 ```
 
 Boto3 documentation:

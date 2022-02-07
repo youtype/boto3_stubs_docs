@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-dynamodb-module"></a>
+
 # Paginators for boto3 DynamoDB module
 
 > [Index](..) > [DynamoDB](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
-[mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+[mypy-boto3-dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 - [Paginators for boto3 DynamoDB module](#paginators-for-boto3-dynamodb-module)
   - [ListBackupsPaginator](#listbackupspaginator)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [QueryPaginator](#querypaginator)
   - [ScanPaginator](#scanpaginator)
 
+<a id="listbackupspaginator"></a>
+
 ## ListBackupsPaginator
 
 Type annotations for `boto3.client("dynamodb").get_paginator("list_backups")`.
@@ -21,10 +25,12 @@ Type annotations for `boto3.client("dynamodb").get_paginator("list_backups")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dynamodb.paginator import ListBackupsPaginator
 
 def get_list_backups_paginator() -> ListBackupsPaginator:
-    return boto3.client("dynamodb").get_paginator("list_backups")
+    return Session().client("dynamodb").get_paginator("list_backups")
 ```
 
 Boto3 documentation:
@@ -42,6 +48,8 @@ Arguments for `ListBackupsPaginator.paginate` method:
 `ListBackupsPaginator.paginate` returns
 `_PageIterator`\[[ListBackupsOutputTypeDef](./type_defs.md#listbackupsoutputtypedef)\].
 
+<a id="listtablespaginator"></a>
+
 ## ListTablesPaginator
 
 Type annotations for `boto3.client("dynamodb").get_paginator("list_tables")`.
@@ -49,10 +57,12 @@ Type annotations for `boto3.client("dynamodb").get_paginator("list_tables")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dynamodb.paginator import ListTablesPaginator
 
 def get_list_tables_paginator() -> ListTablesPaginator:
-    return boto3.client("dynamodb").get_paginator("list_tables")
+    return Session().client("dynamodb").get_paginator("list_tables")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `ListTablesPaginator.paginate` method:
 `ListTablesPaginator.paginate` returns
 `_PageIterator`\[[ListTablesOutputTypeDef](./type_defs.md#listtablesoutputtypedef)\].
 
+<a id="listtagsofresourcepaginator"></a>
+
 ## ListTagsOfResourcePaginator
 
 Type annotations for
@@ -74,10 +86,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dynamodb.paginator import ListTagsOfResourcePaginator
 
 def get_list_tags_of_resource_paginator() -> ListTagsOfResourcePaginator:
-    return boto3.client("dynamodb").get_paginator("list_tags_of_resource")
+    return Session().client("dynamodb").get_paginator("list_tags_of_resource")
 ```
 
 Boto3 documentation:
@@ -92,6 +106,8 @@ Arguments for `ListTagsOfResourcePaginator.paginate` method:
 `ListTagsOfResourcePaginator.paginate` returns
 `_PageIterator`\[[ListTagsOfResourceOutputTypeDef](./type_defs.md#listtagsofresourceoutputtypedef)\].
 
+<a id="querypaginator"></a>
+
 ## QueryPaginator
 
 Type annotations for `boto3.client("dynamodb").get_paginator("query")`.
@@ -99,10 +115,12 @@ Type annotations for `boto3.client("dynamodb").get_paginator("query")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dynamodb.paginator import QueryPaginator
 
 def get_query_paginator() -> QueryPaginator:
-    return boto3.client("dynamodb").get_paginator("query")
+    return Session().client("dynamodb").get_paginator("query")
 ```
 
 Boto3 documentation:
@@ -138,6 +156,8 @@ Arguments for `QueryPaginator.paginate` method:
 `QueryPaginator.paginate` returns
 `_PageIterator`\[[QueryOutputTypeDef](./type_defs.md#queryoutputtypedef)\].
 
+<a id="scanpaginator"></a>
+
 ## ScanPaginator
 
 Type annotations for `boto3.client("dynamodb").get_paginator("scan")`.
@@ -145,10 +165,12 @@ Type annotations for `boto3.client("dynamodb").get_paginator("scan")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dynamodb.paginator import ScanPaginator
 
 def get_scan_paginator() -> ScanPaginator:
-    return boto3.client("dynamodb").get_paginator("scan")
+    return Session().client("dynamodb").get_paginator("scan")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iot1clickdevicesservice-module"></a>
+
 # Type annotations for boto3 IoT1ClickDevicesService module
 
 > [Index](..) > IoT1ClickDevicesService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
 type annotations stubs module
-[mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
+[mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iot1click-devices]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iot1click-devices]'
+
+# standalone installation
 pip install mypy-boto3-iot1click-devices
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-iot1click-devices
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="iot1clickdevicesserviceclient"></a>
+
 ## IoT1ClickDevicesServiceClient
 
 Type annotations for `boto3.client("iot1click-devices")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -50,6 +64,8 @@ from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
 - [untag_resource](./client.md#untag_resource)
 - [update_device_state](./client.md#update_device_state)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoT1ClickDevicesServiceClient [exceptions](./client.md#exceptions)
@@ -63,6 +79,8 @@ IoT1ClickDevicesServiceClient [exceptions](./client.md#exceptions)
 - ResourceConflictException
 - ResourceNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -71,11 +89,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_iot1click_devices.paginators import ListDeviceEventsPaginator, ...
+from mypy_boto3_iot1click_devices.paginator import ListDeviceEventsPaginator, ...
 ```
 
 - [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
 - [ListDevicesPaginator](./paginators.md#listdevicespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -91,6 +111,8 @@ from mypy_boto3_iot1click_devices.literals import ListDeviceEventsPaginatorName,
 - [ListDevicesPaginatorName](./literals.md#listdevicespaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

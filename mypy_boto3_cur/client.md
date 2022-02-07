@@ -1,3 +1,5 @@
+<a id="costandusagereportserviceclient-for-boto3-costandusagereportservice-module"></a>
+
 # CostandUsageReportServiceClient for boto3 CostandUsageReportService module
 
 > [Index](..) > [CostandUsageReportService](.) >
@@ -6,7 +8,7 @@
 Auto-generated documentation for
 [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
 type annotations stubs module
-[mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
+[mypy-boto3-cur](https://pypi.org/project/mypy-boto3-cur/).
 
 - [CostandUsageReportServiceClient for boto3 CostandUsageReportService module](#costandusagereportserviceclient-for-boto3-costandusagereportservice-module)
   - [CostandUsageReportServiceClient](#costandusagereportserviceclient)
@@ -21,6 +23,8 @@ type annotations stubs module
     - [put_report_definition](#put_report_definition)
     - [get_paginator](#get_paginator)
 
+<a id="costandusagereportserviceclient"></a>
+
 ## CostandUsageReportServiceClient
 
 Type annotations for `boto3.client("cur")`
@@ -28,14 +32,17 @@ Type annotations for `boto3.client("cur")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cur.client import CostandUsageReportServiceClient
 
 def get_cur_client() -> CostandUsageReportServiceClient:
-    return boto3.client("cur")
+    return Session().client("cur")
 ```
 
 Boto3 documentation:
 [CostandUsageReportService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -57,7 +64,11 @@ Exceptions:
 - `Exceptions.ReportLimitReachedException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -69,6 +80,8 @@ Boto3 documentation:
 [CostandUsageReportService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -84,6 +97,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_report_definition"></a>
 
 ### delete_report_definition
 
@@ -103,6 +118,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteReportDefinitionResponseTypeDef](./type_defs.md#deletereportdefinitionresponsetypedef).
+
+<a id="describe_report_definitions"></a>
 
 ### describe_report_definitions
 
@@ -124,6 +141,8 @@ Keyword-only arguments:
 Returns
 [DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -141,6 +160,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="modify_report_definition"></a>
 
 ### modify_report_definition
 
@@ -163,6 +184,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_report_definition"></a>
+
 ### put_report_definition
 
 Creates a new report using the description that you provide.
@@ -182,6 +205,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

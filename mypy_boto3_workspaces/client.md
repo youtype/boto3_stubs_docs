@@ -1,3 +1,5 @@
+<a id="workspacesclient-for-boto3-workspaces-module"></a>
+
 # WorkSpacesClient for boto3 WorkSpaces module
 
 > [Index](..) > [WorkSpaces](.) > WorkSpacesClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
 type annotations stubs module
-[mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
+[mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 - [WorkSpacesClient for boto3 WorkSpaces module](#workspacesclient-for-boto3-workspaces-module)
   - [WorkSpacesClient](#workspacesclient)
@@ -74,6 +76,8 @@ type annotations stubs module
     - [update_workspace_image_permission](#update_workspace_image_permission)
     - [get_paginator](#get_paginator)
 
+<a id="workspacesclient"></a>
+
 ## WorkSpacesClient
 
 Type annotations for `boto3.client("workspaces")`
@@ -81,14 +85,17 @@ Type annotations for `boto3.client("workspaces")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_workspaces.client import WorkSpacesClient
 
 def get_workspaces_client() -> WorkSpacesClient:
-    return boto3.client("workspaces")
+    return Session().client("workspaces")
 ```
 
 Boto3 documentation:
 [WorkSpaces.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -120,7 +127,11 @@ Exceptions:
 - `Exceptions.UnsupportedWorkspaceConfigurationException`
 - `Exceptions.WorkspacesDefaultRoleNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -132,6 +143,8 @@ Boto3 documentation:
 [WorkSpaces.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_connection_alias"></a>
 
 ### associate_connection_alias
 
@@ -155,6 +168,8 @@ Keyword-only arguments:
 Returns
 [AssociateConnectionAliasResultTypeDef](./type_defs.md#associateconnectionaliasresulttypedef).
 
+<a id="associate_ip_groups"></a>
+
 ### associate_ip_groups
 
 Associates the specified IP access control group with the specified directory.
@@ -173,6 +188,8 @@ Keyword-only arguments:
 - `GroupIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="authorize_ip_rules"></a>
 
 ### authorize_ip_rules
 
@@ -195,6 +212,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -209,6 +228,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="copy_workspace_image"></a>
 
 ### copy_workspace_image
 
@@ -233,6 +254,8 @@ Keyword-only arguments:
 Returns
 [CopyWorkspaceImageResultTypeDef](./type_defs.md#copyworkspaceimageresulttypedef).
 
+<a id="create_connect_client_add_in"></a>
+
 ### create_connect_client_add_in
 
 Creates a client-add-in for Amazon Connect within a directory.
@@ -255,6 +278,8 @@ Keyword-only arguments:
 Returns
 [CreateConnectClientAddInResultTypeDef](./type_defs.md#createconnectclientaddinresulttypedef).
 
+<a id="create_connection_alias"></a>
+
 ### create_connection_alias
 
 Creates the specified connection alias for use with cross-Region redirection.
@@ -275,6 +300,8 @@ Keyword-only arguments:
 
 Returns
 [CreateConnectionAliasResultTypeDef](./type_defs.md#createconnectionaliasresulttypedef).
+
+<a id="create_ip_group"></a>
 
 ### create_ip_group
 
@@ -299,6 +326,8 @@ Keyword-only arguments:
 Returns
 [CreateIpGroupResultTypeDef](./type_defs.md#createipgroupresulttypedef).
 
+<a id="create_tags"></a>
+
 ### create_tags
 
 Creates the specified tags for the specified WorkSpaces resource.
@@ -317,6 +346,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_updated_workspace_image"></a>
 
 ### create_updated_workspace_image
 
@@ -340,6 +371,8 @@ Keyword-only arguments:
 
 Returns
 [CreateUpdatedWorkspaceImageResultTypeDef](./type_defs.md#createupdatedworkspaceimageresulttypedef).
+
+<a id="create_workspace_bundle"></a>
 
 ### create_workspace_bundle
 
@@ -369,6 +402,8 @@ Keyword-only arguments:
 Returns
 [CreateWorkspaceBundleResultTypeDef](./type_defs.md#createworkspacebundleresulttypedef).
 
+<a id="create_workspaces"></a>
+
 ### create_workspaces
 
 Creates one or more WorkSpaces.
@@ -389,6 +424,8 @@ Keyword-only arguments:
 
 Returns
 [CreateWorkspacesResultTypeDef](./type_defs.md#createworkspacesresulttypedef).
+
+<a id="delete_connect_client_add_in"></a>
 
 ### delete_connect_client_add_in
 
@@ -411,6 +448,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_connection_alias"></a>
+
 ### delete_connection_alias
 
 Deletes the specified connection alias.
@@ -430,6 +469,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_ip_group"></a>
+
 ### delete_ip_group
 
 Deletes the specified IP access control group.
@@ -447,6 +488,8 @@ Keyword-only arguments:
 - `GroupId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_tags"></a>
 
 ### delete_tags
 
@@ -467,6 +510,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_workspace_bundle"></a>
+
 ### delete_workspace_bundle
 
 Deletes the specified WorkSpace bundle.
@@ -485,6 +530,8 @@ Keyword-only arguments:
 - `BundleId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_workspace_image"></a>
 
 ### delete_workspace_image
 
@@ -505,6 +552,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="deregister_workspace_directory"></a>
+
 ### deregister_workspace_directory
 
 Deregisters the specified directory.
@@ -524,6 +573,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_account"></a>
+
 ### describe_account
 
 Retrieves a list that describes the configuration of Bring Your Own License
@@ -536,6 +587,8 @@ Boto3 documentation:
 
 Returns
 [DescribeAccountResultTypeDef](./type_defs.md#describeaccountresulttypedef).
+
+<a id="describe_account_modifications"></a>
 
 ### describe_account_modifications
 
@@ -558,6 +611,8 @@ Keyword-only arguments:
 Returns
 [DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef).
 
+<a id="describe_client_properties"></a>
+
 ### describe_client_properties
 
 Retrieves a list that describes one or more specified Amazon WorkSpaces
@@ -578,6 +633,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeClientPropertiesResultTypeDef](./type_defs.md#describeclientpropertiesresulttypedef).
+
+<a id="describe_connect_client_add_ins"></a>
 
 ### describe_connect_client_add_ins
 
@@ -601,6 +658,8 @@ Keyword-only arguments:
 Returns
 [DescribeConnectClientAddInsResultTypeDef](./type_defs.md#describeconnectclientaddinsresulttypedef).
 
+<a id="describe_connection_alias_permissions"></a>
+
 ### describe_connection_alias_permissions
 
 Describes the permissions that the owner of a connection alias has granted to
@@ -623,6 +682,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeConnectionAliasPermissionsResultTypeDef](./type_defs.md#describeconnectionaliaspermissionsresulttypedef).
+
+<a id="describe_connection_aliases"></a>
 
 ### describe_connection_aliases
 
@@ -648,6 +709,8 @@ Keyword-only arguments:
 Returns
 [DescribeConnectionAliasesResultTypeDef](./type_defs.md#describeconnectionaliasesresulttypedef).
 
+<a id="describe_ip_groups"></a>
+
 ### describe_ip_groups
 
 Describes one or more of your IP access control groups.
@@ -669,6 +732,8 @@ Keyword-only arguments:
 Returns
 [DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef).
 
+<a id="describe_tags"></a>
+
 ### describe_tags
 
 Describes the specified tags for the specified WorkSpaces resource.
@@ -686,6 +751,8 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns [DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef).
+
+<a id="describe_workspace_bundles"></a>
 
 ### describe_workspace_bundles
 
@@ -709,6 +776,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef).
 
+<a id="describe_workspace_directories"></a>
+
 ### describe_workspace_directories
 
 Describes the available directories that are registered with Amazon WorkSpaces.
@@ -730,6 +799,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef).
+
+<a id="describe_workspace_image_permissions"></a>
 
 ### describe_workspace_image_permissions
 
@@ -753,6 +824,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeWorkspaceImagePermissionsResultTypeDef](./type_defs.md#describeworkspaceimagepermissionsresulttypedef).
+
+<a id="describe_workspace_images"></a>
 
 ### describe_workspace_images
 
@@ -778,6 +851,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef).
 
+<a id="describe_workspace_snapshots"></a>
+
 ### describe_workspace_snapshots
 
 Describes the snapshots for the specified WorkSpace.
@@ -797,6 +872,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeWorkspaceSnapshotsResultTypeDef](./type_defs.md#describeworkspacesnapshotsresulttypedef).
+
+<a id="describe_workspaces"></a>
 
 ### describe_workspaces
 
@@ -822,6 +899,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef).
 
+<a id="describe_workspaces_connection_status"></a>
+
 ### describe_workspaces_connection_status
 
 Describes the connection status of the specified WorkSpaces.
@@ -843,6 +922,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef).
 
+<a id="disassociate_connection_alias"></a>
+
 ### disassociate_connection_alias
 
 Disassociates a connection alias from a directory.
@@ -861,6 +942,8 @@ Keyword-only arguments:
 - `AliasId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_ip_groups"></a>
 
 ### disassociate_ip_groups
 
@@ -883,6 +966,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -901,6 +986,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="import_workspace_image"></a>
 
 ### import_workspace_image
 
@@ -931,6 +1018,8 @@ Keyword-only arguments:
 Returns
 [ImportWorkspaceImageResultTypeDef](./type_defs.md#importworkspaceimageresulttypedef).
 
+<a id="list_available_management_cidr_ranges"></a>
+
 ### list_available_management_cidr_ranges
 
 Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you
@@ -955,6 +1044,8 @@ Keyword-only arguments:
 Returns
 [ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef).
 
+<a id="migrate_workspace"></a>
+
 ### migrate_workspace
 
 Migrates a WorkSpace from one operating system or bundle type to another, while
@@ -976,6 +1067,8 @@ Keyword-only arguments:
 Returns
 [MigrateWorkspaceResultTypeDef](./type_defs.md#migrateworkspaceresulttypedef).
 
+<a id="modify_account"></a>
+
 ### modify_account
 
 Modifies the configuration of Bring Your Own License (BYOL) for the specified
@@ -996,6 +1089,8 @@ Keyword-only arguments:
 - `DedicatedTenancyManagementCidrRange`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="modify_client_properties"></a>
 
 ### modify_client_properties
 
@@ -1019,6 +1114,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="modify_selfservice_permissions"></a>
+
 ### modify_selfservice_permissions
 
 Modifies the self-service WorkSpace management capabilities for your users.
@@ -1040,6 +1137,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="modify_workspace_access_properties"></a>
 
 ### modify_workspace_access_properties
 
@@ -1064,6 +1163,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="modify_workspace_creation_properties"></a>
+
 ### modify_workspace_creation_properties
 
 Modify the default properties used to create WorkSpaces.
@@ -1085,6 +1186,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="modify_workspace_properties"></a>
 
 ### modify_workspace_properties
 
@@ -1108,6 +1211,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="modify_workspace_state"></a>
+
 ### modify_workspace_state
 
 Sets the state of the specified WorkSpace.
@@ -1130,6 +1235,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="reboot_workspaces"></a>
+
 ### reboot_workspaces
 
 Reboots the specified WorkSpaces.
@@ -1151,6 +1258,8 @@ Keyword-only arguments:
 Returns
 [RebootWorkspacesResultTypeDef](./type_defs.md#rebootworkspacesresulttypedef).
 
+<a id="rebuild_workspaces"></a>
+
 ### rebuild_workspaces
 
 Rebuilds the specified WorkSpace.
@@ -1171,6 +1280,8 @@ Keyword-only arguments:
 
 Returns
 [RebuildWorkspacesResultTypeDef](./type_defs.md#rebuildworkspacesresulttypedef).
+
+<a id="register_workspace_directory"></a>
 
 ### register_workspace_directory
 
@@ -1196,6 +1307,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="restore_workspace"></a>
+
 ### restore_workspace
 
 Restores the specified WorkSpace to its last known healthy state.
@@ -1213,6 +1326,8 @@ Keyword-only arguments:
 - `WorkspaceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="revoke_ip_rules"></a>
 
 ### revoke_ip_rules
 
@@ -1232,6 +1347,8 @@ Keyword-only arguments:
 - `UserRules`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_workspaces"></a>
 
 ### start_workspaces
 
@@ -1254,6 +1371,8 @@ Keyword-only arguments:
 Returns
 [StartWorkspacesResultTypeDef](./type_defs.md#startworkspacesresulttypedef).
 
+<a id="stop_workspaces"></a>
+
 ### stop_workspaces
 
 Stops the specified WorkSpaces.
@@ -1274,6 +1393,8 @@ Keyword-only arguments:
 
 Returns
 [StopWorkspacesResultTypeDef](./type_defs.md#stopworkspacesresulttypedef).
+
+<a id="terminate_workspaces"></a>
 
 ### terminate_workspaces
 
@@ -1296,6 +1417,8 @@ Keyword-only arguments:
 Returns
 [TerminateWorkspacesResultTypeDef](./type_defs.md#terminateworkspacesresulttypedef).
 
+<a id="update_connect_client_add_in"></a>
+
 ### update_connect_client_add_in
 
 Updates a Amazon Connect client add-in.
@@ -1317,6 +1440,8 @@ Keyword-only arguments:
 - `URL`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_connection_alias_permission"></a>
 
 ### update_connection_alias_permission
 
@@ -1341,6 +1466,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_rules_of_ip_group"></a>
+
 ### update_rules_of_ip_group
 
 Replaces the current rules of the specified IP access control group with the
@@ -1364,6 +1491,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_workspace_bundle"></a>
+
 ### update_workspace_bundle
 
 Updates a WorkSpace bundle with a new image.
@@ -1383,6 +1512,8 @@ Keyword-only arguments:
 - `ImageId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_workspace_image_permission"></a>
 
 ### update_workspace_image_permission
 
@@ -1405,6 +1536,8 @@ Keyword-only arguments:
 - `SharedAccountId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

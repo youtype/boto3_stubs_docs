@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-drs-module"></a>
+
 # Type annotations for boto3 drs module
 
 > [Index](..) > drs
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [drs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs)
 type annotations stubs module
-[mypy_boto3_drs](https://pypi.org/project/mypy-boto3-drs/).
+[mypy-boto3-drs](https://pypi.org/project/mypy-boto3-drs/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[drs]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[drs]'
+
+# standalone installation
 pip install mypy-boto3-drs
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-drs
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="drsclient"></a>
+
 ## drsClient
 
 Type annotations for `boto3.client("drs")` as [drsClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_drs.client import drsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -65,6 +79,8 @@ from mypy_boto3_drs.client import drsClient
 - [update_replication_configuration](./client.md#update_replication_configuration)
 - [update_replication_configuration_template](./client.md#update_replication_configuration_template)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 drsClient [exceptions](./client.md#exceptions)
@@ -79,6 +95,8 @@ drsClient [exceptions](./client.md#exceptions)
 - UninitializedAccountException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -87,7 +105,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_drs.paginators import DescribeJobLogItemsPaginator, ...
+from mypy_boto3_drs.paginator import DescribeJobLogItemsPaginator, ...
 ```
 
 - [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
@@ -96,6 +114,8 @@ from mypy_boto3_drs.paginators import DescribeJobLogItemsPaginator, ...
 - [DescribeRecoverySnapshotsPaginator](./paginators.md#describerecoverysnapshotspaginator)
 - [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
 - [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -140,6 +160,8 @@ from mypy_boto3_drs.literals import DataReplicationErrorStringType, ...
 - [TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

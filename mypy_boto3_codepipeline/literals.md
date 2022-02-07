@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-codepipeline-module"></a>
+
 # Literals for boto3 CodePipeline module
 
 > [Index](..) > [CodePipeline](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module
-[mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
+[mypy-boto3-codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
 - [Literals for boto3 CodePipeline module](#literals-for-boto3-codepipeline-module)
   - [ActionCategoryType](#actioncategorytype)
@@ -35,6 +37,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="actioncategorytype"></a>
+
 ## ActionCategoryType
 
 ```python
@@ -50,6 +54,8 @@ Values:
 - `Source`
 - `Test`
 
+<a id="actionconfigurationpropertytypetype"></a>
+
 ## ActionConfigurationPropertyTypeType
 
 ```python
@@ -61,6 +67,8 @@ Values:
 - `Boolean`
 - `Number`
 - `String`
+
+<a id="actionexecutionstatustype"></a>
 
 ## ActionExecutionStatusType
 
@@ -75,6 +83,8 @@ Values:
 - `InProgress`
 - `Succeeded`
 
+<a id="actionownertype"></a>
+
 ## ActionOwnerType
 
 ```python
@@ -87,6 +97,8 @@ Values:
 - `Custom`
 - `ThirdParty`
 
+<a id="approvalstatustype"></a>
+
 ## ApprovalStatusType
 
 ```python
@@ -98,6 +110,8 @@ Values:
 - `Approved`
 - `Rejected`
 
+<a id="artifactlocationtypetype"></a>
+
 ## ArtifactLocationTypeType
 
 ```python
@@ -107,6 +121,8 @@ from mypy_boto3_codepipeline.literals import ArtifactLocationTypeType
 Values:
 
 - `S3`
+
+<a id="artifactstoretypetype"></a>
 
 ## ArtifactStoreTypeType
 
@@ -118,6 +134,8 @@ Values:
 
 - `S3`
 
+<a id="blockertypetype"></a>
+
 ## BlockerTypeType
 
 ```python
@@ -127,6 +145,8 @@ from mypy_boto3_codepipeline.literals import BlockerTypeType
 Values:
 
 - `Schedule`
+
+<a id="encryptionkeytypetype"></a>
 
 ## EncryptionKeyTypeType
 
@@ -138,6 +158,8 @@ Values:
 
 - `KMS`
 
+<a id="executortypetype"></a>
+
 ## ExecutorTypeType
 
 ```python
@@ -148,6 +170,8 @@ Values:
 
 - `JobWorker`
 - `Lambda`
+
+<a id="failuretypetype"></a>
 
 ## FailureTypeType
 
@@ -163,6 +187,8 @@ Values:
 - `RevisionOutOfSync`
 - `RevisionUnavailable`
 - `SystemUnavailable`
+
+<a id="jobstatustype"></a>
 
 ## JobStatusType
 
@@ -180,6 +206,8 @@ Values:
 - `Succeeded`
 - `TimedOut`
 
+<a id="listactionexecutionspaginatorname"></a>
+
 ## ListActionExecutionsPaginatorName
 
 ```python
@@ -189,6 +217,8 @@ from mypy_boto3_codepipeline.literals import ListActionExecutionsPaginatorName
 Values:
 
 - `list_action_executions`
+
+<a id="listactiontypespaginatorname"></a>
 
 ## ListActionTypesPaginatorName
 
@@ -200,6 +230,8 @@ Values:
 
 - `list_action_types`
 
+<a id="listpipelineexecutionspaginatorname"></a>
+
 ## ListPipelineExecutionsPaginatorName
 
 ```python
@@ -209,6 +241,8 @@ from mypy_boto3_codepipeline.literals import ListPipelineExecutionsPaginatorName
 Values:
 
 - `list_pipeline_executions`
+
+<a id="listpipelinespaginatorname"></a>
 
 ## ListPipelinesPaginatorName
 
@@ -220,6 +254,8 @@ Values:
 
 - `list_pipelines`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -230,6 +266,8 @@ Values:
 
 - `list_tags_for_resource`
 
+<a id="listwebhookspaginatorname"></a>
+
 ## ListWebhooksPaginatorName
 
 ```python
@@ -239,6 +277,8 @@ from mypy_boto3_codepipeline.literals import ListWebhooksPaginatorName
 Values:
 
 - `list_webhooks`
+
+<a id="pipelineexecutionstatustype"></a>
 
 ## PipelineExecutionStatusType
 
@@ -256,6 +296,8 @@ Values:
 - `Succeeded`
 - `Superseded`
 
+<a id="stageexecutionstatustype"></a>
+
 ## StageExecutionStatusType
 
 ```python
@@ -271,6 +313,8 @@ Values:
 - `Stopping`
 - `Succeeded`
 
+<a id="stageretrymodetype"></a>
+
 ## StageRetryModeType
 
 ```python
@@ -280,6 +324,8 @@ from mypy_boto3_codepipeline.literals import StageRetryModeType
 Values:
 
 - `FAILED_ACTIONS`
+
+<a id="stagetransitiontypetype"></a>
 
 ## StageTransitionTypeType
 
@@ -291,6 +337,8 @@ Values:
 
 - `Inbound`
 - `Outbound`
+
+<a id="triggertypetype"></a>
 
 ## TriggerTypeType
 
@@ -307,6 +355,8 @@ Values:
 - `StartPipelineExecution`
 - `Webhook`
 
+<a id="webhookauthenticationtypetype"></a>
+
 ## WebhookAuthenticationTypeType
 
 ```python
@@ -318,6 +368,8 @@ Values:
 - `GITHUB_HMAC`
 - `IP`
 - `UNAUTHENTICATED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -626,6 +678,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

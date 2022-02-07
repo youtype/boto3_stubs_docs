@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-healthlake-module"></a>
+
 # Literals for boto3 HealthLake module
 
 > [Index](..) > [HealthLake](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
 type annotations stubs module
-[mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
+[mypy-boto3-healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 - [Literals for boto3 HealthLake module](#literals-for-boto3-healthlake-module)
   - [CmkTypeType](#cmktypetype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [JobStatusType](#jobstatustype)
   - [PreloadDataTypeType](#preloaddatatypetype)
   - [ServiceName](#servicename)
+
+<a id="cmktypetype"></a>
 
 ## CmkTypeType
 
@@ -25,6 +29,8 @@ Values:
 
 - `AWS_OWNED_KMS_KEY`
 - `CUSTOMER_MANAGED_KMS_KEY`
+
+<a id="datastorestatustype"></a>
 
 ## DatastoreStatusType
 
@@ -39,6 +45,8 @@ Values:
 - `DELETED`
 - `DELETING`
 
+<a id="fhirversiontype"></a>
+
 ## FHIRVersionType
 
 ```python
@@ -48,6 +56,8 @@ from mypy_boto3_healthlake.literals import FHIRVersionType
 Values:
 
 - `R4`
+
+<a id="jobstatustype"></a>
 
 ## JobStatusType
 
@@ -63,6 +73,8 @@ Values:
 - `IN_PROGRESS`
 - `SUBMITTED`
 
+<a id="preloaddatatypetype"></a>
+
 ## PreloadDataTypeType
 
 ```python
@@ -72,6 +84,8 @@ from mypy_boto3_healthlake.literals import PreloadDataTypeType
 Values:
 
 - `SYNTHEA`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

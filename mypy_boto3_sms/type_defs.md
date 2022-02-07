@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-sms-module"></a>
+
 # Typed dictionaries for boto3 SMS module
 
 > [Index](..) > [SMS](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
 type annotations stubs module
-[mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
+[mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
 
 - [Typed dictionaries for boto3 SMS module](#typed-dictionaries-for-boto3-sms-module)
   - [AppSummaryTypeDef](#appsummarytypedef)
@@ -89,6 +91,8 @@ type annotations stubs module
   - [VmServerAddressTypeDef](#vmserveraddresstypedef)
   - [VmServerTypeDef](#vmservertypedef)
 
+<a id="appsummarytypedef"></a>
+
 ## AppSummaryTypeDef
 
 ```python
@@ -120,6 +124,8 @@ Optional fields:
 - `totalServerGroups`: `int`
 - `totalServers`: `int`
 
+<a id="appvalidationconfigurationtypedef"></a>
+
 ## AppValidationConfigurationTypeDef
 
 ```python
@@ -135,6 +141,8 @@ Optional fields:
 - `ssmValidationParameters`:
   [SSMValidationParametersTypeDef](./type_defs.md#ssmvalidationparameterstypedef)
 
+<a id="appvalidationoutputtypedef"></a>
+
 ## AppValidationOutputTypeDef
 
 ```python
@@ -144,6 +152,8 @@ from mypy_boto3_sms.type_defs import AppValidationOutputTypeDef
 Optional fields:
 
 - `ssmOutput`: [SSMOutputTypeDef](./type_defs.md#ssmoutputtypedef)
+
+<a id="connectortypedef"></a>
 
 ## ConnectorTypeDef
 
@@ -165,6 +175,8 @@ Optional fields:
 - `macAddress`: `str`
 - `associatedOn`: `datetime`
 
+<a id="createapprequestrequesttypedef"></a>
+
 ## CreateAppRequestRequestTypeDef
 
 ```python
@@ -181,6 +193,8 @@ Optional fields:
   `Sequence`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createappresponsetypedef"></a>
+
 ## CreateAppResponseTypeDef
 
 ```python
@@ -195,6 +209,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createreplicationjobrequestrequesttypedef"></a>
 
 ## CreateReplicationJobRequestRequestTypeDef
 
@@ -218,6 +234,8 @@ Optional fields:
 - `encrypted`: `bool`
 - `kmsKeyId`: `str`
 
+<a id="createreplicationjobresponsetypedef"></a>
+
 ## CreateReplicationJobResponseTypeDef
 
 ```python
@@ -230,6 +248,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapplaunchconfigurationrequestrequesttypedef"></a>
+
 ## DeleteAppLaunchConfigurationRequestRequestTypeDef
 
 ```python
@@ -240,6 +260,8 @@ Optional fields:
 
 - `appId`: `str`
 
+<a id="deleteappreplicationconfigurationrequestrequesttypedef"></a>
+
 ## DeleteAppReplicationConfigurationRequestRequestTypeDef
 
 ```python
@@ -249,6 +271,8 @@ from mypy_boto3_sms.type_defs import DeleteAppReplicationConfigurationRequestReq
 Optional fields:
 
 - `appId`: `str`
+
+<a id="deleteapprequestrequesttypedef"></a>
 
 ## DeleteAppRequestRequestTypeDef
 
@@ -262,6 +286,8 @@ Optional fields:
 - `forceStopAppReplication`: `bool`
 - `forceTerminateApp`: `bool`
 
+<a id="deleteappvalidationconfigurationrequestrequesttypedef"></a>
+
 ## DeleteAppValidationConfigurationRequestRequestTypeDef
 
 ```python
@@ -271,6 +297,8 @@ from mypy_boto3_sms.type_defs import DeleteAppValidationConfigurationRequestRequ
 Required fields:
 
 - `appId`: `str`
+
+<a id="deletereplicationjobrequestrequesttypedef"></a>
 
 ## DeleteReplicationJobRequestRequestTypeDef
 
@@ -282,6 +310,8 @@ Required fields:
 
 - `replicationJobId`: `str`
 
+<a id="disassociateconnectorrequestrequesttypedef"></a>
+
 ## DisassociateConnectorRequestRequestTypeDef
 
 ```python
@@ -291,6 +321,8 @@ from mypy_boto3_sms.type_defs import DisassociateConnectorRequestRequestTypeDef
 Required fields:
 
 - `connectorId`: `str`
+
+<a id="generatechangesetrequestrequesttypedef"></a>
 
 ## GenerateChangeSetRequestRequestTypeDef
 
@@ -302,6 +334,8 @@ Optional fields:
 
 - `appId`: `str`
 - `changesetFormat`: [OutputFormatType](./literals.md#outputformattype)
+
+<a id="generatechangesetresponsetypedef"></a>
 
 ## GenerateChangeSetResponseTypeDef
 
@@ -315,6 +349,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="generatetemplaterequestrequesttypedef"></a>
+
 ## GenerateTemplateRequestRequestTypeDef
 
 ```python
@@ -325,6 +361,8 @@ Optional fields:
 
 - `appId`: `str`
 - `templateFormat`: [OutputFormatType](./literals.md#outputformattype)
+
+<a id="generatetemplateresponsetypedef"></a>
 
 ## GenerateTemplateResponseTypeDef
 
@@ -338,6 +376,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapplaunchconfigurationrequestrequesttypedef"></a>
+
 ## GetAppLaunchConfigurationRequestRequestTypeDef
 
 ```python
@@ -347,6 +387,8 @@ from mypy_boto3_sms.type_defs import GetAppLaunchConfigurationRequestRequestType
 Optional fields:
 
 - `appId`: `str`
+
+<a id="getapplaunchconfigurationresponsetypedef"></a>
 
 ## GetAppLaunchConfigurationResponseTypeDef
 
@@ -364,6 +406,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getappreplicationconfigurationrequestrequesttypedef"></a>
+
 ## GetAppReplicationConfigurationRequestRequestTypeDef
 
 ```python
@@ -373,6 +417,8 @@ from mypy_boto3_sms.type_defs import GetAppReplicationConfigurationRequestReques
 Optional fields:
 
 - `appId`: `str`
+
+<a id="getappreplicationconfigurationresponsetypedef"></a>
 
 ## GetAppReplicationConfigurationResponseTypeDef
 
@@ -387,6 +433,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapprequestrequesttypedef"></a>
+
 ## GetAppRequestRequestTypeDef
 
 ```python
@@ -396,6 +444,8 @@ from mypy_boto3_sms.type_defs import GetAppRequestRequestTypeDef
 Optional fields:
 
 - `appId`: `str`
+
+<a id="getappresponsetypedef"></a>
 
 ## GetAppResponseTypeDef
 
@@ -412,6 +462,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getappvalidationconfigurationrequestrequesttypedef"></a>
+
 ## GetAppValidationConfigurationRequestRequestTypeDef
 
 ```python
@@ -421,6 +473,8 @@ from mypy_boto3_sms.type_defs import GetAppValidationConfigurationRequestRequest
 Required fields:
 
 - `appId`: `str`
+
+<a id="getappvalidationconfigurationresponsetypedef"></a>
 
 ## GetAppValidationConfigurationResponseTypeDef
 
@@ -437,6 +491,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getappvalidationoutputrequestrequesttypedef"></a>
+
 ## GetAppValidationOutputRequestRequestTypeDef
 
 ```python
@@ -446,6 +502,8 @@ from mypy_boto3_sms.type_defs import GetAppValidationOutputRequestRequestTypeDef
 Required fields:
 
 - `appId`: `str`
+
+<a id="getappvalidationoutputresponsetypedef"></a>
 
 ## GetAppValidationOutputResponseTypeDef
 
@@ -460,6 +518,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getconnectorsrequestrequesttypedef"></a>
+
 ## GetConnectorsRequestRequestTypeDef
 
 ```python
@@ -470,6 +530,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getconnectorsresponsetypedef"></a>
 
 ## GetConnectorsResponseTypeDef
 
@@ -485,6 +547,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getreplicationjobsrequestrequesttypedef"></a>
+
 ## GetReplicationJobsRequestRequestTypeDef
 
 ```python
@@ -496,6 +560,8 @@ Optional fields:
 - `replicationJobId`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getreplicationjobsresponsetypedef"></a>
 
 ## GetReplicationJobsResponseTypeDef
 
@@ -511,6 +577,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getreplicationrunsrequestrequesttypedef"></a>
+
 ## GetReplicationRunsRequestRequestTypeDef
 
 ```python
@@ -525,6 +593,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getreplicationrunsresponsetypedef"></a>
 
 ## GetReplicationRunsResponseTypeDef
 
@@ -542,6 +612,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getserversrequestrequesttypedef"></a>
+
 ## GetServersRequestRequestTypeDef
 
 ```python
@@ -554,6 +626,8 @@ Optional fields:
 - `maxResults`: `int`
 - `vmServerAddressList`:
   `Sequence`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
+
+<a id="getserversresponsetypedef"></a>
 
 ## GetServersResponseTypeDef
 
@@ -571,6 +645,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="importappcatalogrequestrequesttypedef"></a>
+
 ## ImportAppCatalogRequestRequestTypeDef
 
 ```python
@@ -581,6 +657,8 @@ Optional fields:
 
 - `roleName`: `str`
 
+<a id="launchapprequestrequesttypedef"></a>
+
 ## LaunchAppRequestRequestTypeDef
 
 ```python
@@ -590,6 +668,8 @@ from mypy_boto3_sms.type_defs import LaunchAppRequestRequestTypeDef
 Optional fields:
 
 - `appId`: `str`
+
+<a id="launchdetailstypedef"></a>
 
 ## LaunchDetailsTypeDef
 
@@ -603,6 +683,8 @@ Optional fields:
 - `stackName`: `str`
 - `stackId`: `str`
 
+<a id="listappsrequestrequesttypedef"></a>
+
 ## ListAppsRequestRequestTypeDef
 
 ```python
@@ -614,6 +696,8 @@ Optional fields:
 - `appIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listappsresponsetypedef"></a>
 
 ## ListAppsResponseTypeDef
 
@@ -628,6 +712,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="notificationcontexttypedef"></a>
+
 ## NotificationContextTypeDef
 
 ```python
@@ -639,6 +725,8 @@ Optional fields:
 - `validationId`: `str`
 - `status`: [ValidationStatusType](./literals.md#validationstatustype)
 - `statusMessage`: `str`
+
+<a id="notifyappvalidationoutputrequestrequesttypedef"></a>
 
 ## NotifyAppValidationOutputRequestRequestTypeDef
 
@@ -655,6 +743,8 @@ Optional fields:
 - `notificationContext`:
   [NotificationContextTypeDef](./type_defs.md#notificationcontexttypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -666,6 +756,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putapplaunchconfigurationrequestrequesttypedef"></a>
 
 ## PutAppLaunchConfigurationRequestRequestTypeDef
 
@@ -681,6 +773,8 @@ Optional fields:
 - `serverGroupLaunchConfigurations`:
   `Sequence`\[[ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef)\]
 
+<a id="putappreplicationconfigurationrequestrequesttypedef"></a>
+
 ## PutAppReplicationConfigurationRequestRequestTypeDef
 
 ```python
@@ -692,6 +786,8 @@ Optional fields:
 - `appId`: `str`
 - `serverGroupReplicationConfigurations`:
   `Sequence`\[[ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef)\]
+
+<a id="putappvalidationconfigurationrequestrequesttypedef"></a>
 
 ## PutAppValidationConfigurationRequestRequestTypeDef
 
@@ -709,6 +805,8 @@ Optional fields:
   `Sequence`\[[AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef)\]
 - `serverGroupValidationConfigurations`:
   `Sequence`\[[ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef)\]
+
+<a id="replicationjobtypedef"></a>
 
 ## ReplicationJobTypeDef
 
@@ -739,6 +837,8 @@ Optional fields:
 - `replicationRunList`:
   `List`\[[ReplicationRunTypeDef](./type_defs.md#replicationruntypedef)\]
 
+<a id="replicationrunstagedetailstypedef"></a>
+
 ## ReplicationRunStageDetailsTypeDef
 
 ```python
@@ -749,6 +849,8 @@ Optional fields:
 
 - `stage`: `str`
 - `stageProgress`: `str`
+
+<a id="replicationruntypedef"></a>
 
 ## ReplicationRunTypeDef
 
@@ -771,6 +873,8 @@ Optional fields:
 - `encrypted`: `bool`
 - `kmsKeyId`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -785,6 +889,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3locationtypedef"></a>
+
 ## S3LocationTypeDef
 
 ```python
@@ -796,6 +902,8 @@ Optional fields:
 - `bucket`: `str`
 - `key`: `str`
 
+<a id="ssmoutputtypedef"></a>
+
 ## SSMOutputTypeDef
 
 ```python
@@ -805,6 +913,8 @@ from mypy_boto3_sms.type_defs import SSMOutputTypeDef
 Optional fields:
 
 - `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+<a id="ssmvalidationparameterstypedef"></a>
 
 ## SSMValidationParametersTypeDef
 
@@ -821,6 +931,8 @@ Optional fields:
 - `executionTimeoutSeconds`: `int`
 - `outputS3BucketName`: `str`
 
+<a id="servergrouplaunchconfigurationtypedef"></a>
+
 ## ServerGroupLaunchConfigurationTypeDef
 
 ```python
@@ -834,6 +946,8 @@ Optional fields:
 - `serverLaunchConfigurations`:
   `List`\[[ServerLaunchConfigurationTypeDef](./type_defs.md#serverlaunchconfigurationtypedef)\]
 
+<a id="servergroupreplicationconfigurationtypedef"></a>
+
 ## ServerGroupReplicationConfigurationTypeDef
 
 ```python
@@ -845,6 +959,8 @@ Optional fields:
 - `serverGroupId`: `str`
 - `serverReplicationConfigurations`:
   `List`\[[ServerReplicationConfigurationTypeDef](./type_defs.md#serverreplicationconfigurationtypedef)\]
+
+<a id="servergrouptypedef"></a>
 
 ## ServerGroupTypeDef
 
@@ -858,6 +974,8 @@ Optional fields:
 - `name`: `str`
 - `serverList`: `Sequence`\[[ServerTypeDef](./type_defs.md#servertypedef)\]
 
+<a id="servergroupvalidationconfigurationtypedef"></a>
+
 ## ServerGroupValidationConfigurationTypeDef
 
 ```python
@@ -869,6 +987,8 @@ Optional fields:
 - `serverGroupId`: `str`
 - `serverValidationConfigurations`:
   `List`\[[ServerValidationConfigurationTypeDef](./type_defs.md#servervalidationconfigurationtypedef)\]
+
+<a id="serverlaunchconfigurationtypedef"></a>
 
 ## ServerLaunchConfigurationTypeDef
 
@@ -891,6 +1011,8 @@ Optional fields:
 - `configureScript`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `configureScriptType`: [ScriptTypeType](./literals.md#scripttypetype)
 
+<a id="serverreplicationconfigurationtypedef"></a>
+
 ## ServerReplicationConfigurationTypeDef
 
 ```python
@@ -902,6 +1024,8 @@ Optional fields:
 - `server`: [ServerTypeDef](./type_defs.md#servertypedef)
 - `serverReplicationParameters`:
   [ServerReplicationParametersTypeDef](./type_defs.md#serverreplicationparameterstypedef)
+
+<a id="serverreplicationparameterstypedef"></a>
 
 ## ServerReplicationParametersTypeDef
 
@@ -919,6 +1043,8 @@ Optional fields:
 - `encrypted`: `bool`
 - `kmsKeyId`: `str`
 
+<a id="servertypedef"></a>
+
 ## ServerTypeDef
 
 ```python
@@ -933,6 +1059,8 @@ Optional fields:
 - `vmServer`: [VmServerTypeDef](./type_defs.md#vmservertypedef)
 - `replicationJobId`: `str`
 - `replicationJobTerminated`: `bool`
+
+<a id="servervalidationconfigurationtypedef"></a>
 
 ## ServerValidationConfigurationTypeDef
 
@@ -950,6 +1078,8 @@ Optional fields:
 - `userDataValidationParameters`:
   [UserDataValidationParametersTypeDef](./type_defs.md#userdatavalidationparameterstypedef)
 
+<a id="servervalidationoutputtypedef"></a>
+
 ## ServerValidationOutputTypeDef
 
 ```python
@@ -959,6 +1089,8 @@ from mypy_boto3_sms.type_defs import ServerValidationOutputTypeDef
 Optional fields:
 
 - `server`: [ServerTypeDef](./type_defs.md#servertypedef)
+
+<a id="sourcetypedef"></a>
 
 ## SourceTypeDef
 
@@ -970,6 +1102,8 @@ Optional fields:
 
 - `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
+<a id="startappreplicationrequestrequesttypedef"></a>
+
 ## StartAppReplicationRequestRequestTypeDef
 
 ```python
@@ -979,6 +1113,8 @@ from mypy_boto3_sms.type_defs import StartAppReplicationRequestRequestTypeDef
 Optional fields:
 
 - `appId`: `str`
+
+<a id="startondemandappreplicationrequestrequesttypedef"></a>
 
 ## StartOnDemandAppReplicationRequestRequestTypeDef
 
@@ -994,6 +1130,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="startondemandreplicationrunrequestrequesttypedef"></a>
+
 ## StartOnDemandReplicationRunRequestRequestTypeDef
 
 ```python
@@ -1008,6 +1146,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="startondemandreplicationrunresponsetypedef"></a>
+
 ## StartOnDemandReplicationRunResponseTypeDef
 
 ```python
@@ -1020,6 +1160,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopappreplicationrequestrequesttypedef"></a>
+
 ## StopAppReplicationRequestRequestTypeDef
 
 ```python
@@ -1029,6 +1171,8 @@ from mypy_boto3_sms.type_defs import StopAppReplicationRequestRequestTypeDef
 Optional fields:
 
 - `appId`: `str`
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1041,6 +1185,8 @@ Optional fields:
 - `key`: `str`
 - `value`: `str`
 
+<a id="terminateapprequestrequesttypedef"></a>
+
 ## TerminateAppRequestRequestTypeDef
 
 ```python
@@ -1050,6 +1196,8 @@ from mypy_boto3_sms.type_defs import TerminateAppRequestRequestTypeDef
 Optional fields:
 
 - `appId`: `str`
+
+<a id="updateapprequestrequesttypedef"></a>
 
 ## UpdateAppRequestRequestTypeDef
 
@@ -1067,6 +1215,8 @@ Optional fields:
   `Sequence`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="updateappresponsetypedef"></a>
+
 ## UpdateAppResponseTypeDef
 
 ```python
@@ -1081,6 +1231,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatereplicationjobrequestrequesttypedef"></a>
 
 ## UpdateReplicationJobRequestRequestTypeDef
 
@@ -1103,6 +1255,8 @@ Optional fields:
 - `encrypted`: `bool`
 - `kmsKeyId`: `str`
 
+<a id="userdatatypedef"></a>
+
 ## UserDataTypeDef
 
 ```python
@@ -1112,6 +1266,8 @@ from mypy_boto3_sms.type_defs import UserDataTypeDef
 Optional fields:
 
 - `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+<a id="userdatavalidationparameterstypedef"></a>
 
 ## UserDataValidationParametersTypeDef
 
@@ -1123,6 +1279,8 @@ Optional fields:
 
 - `source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
 - `scriptType`: [ScriptTypeType](./literals.md#scripttypetype)
+
+<a id="validationoutputtypedef"></a>
 
 ## ValidationOutputTypeDef
 
@@ -1142,6 +1300,8 @@ Optional fields:
 - `serverValidationOutput`:
   [ServerValidationOutputTypeDef](./type_defs.md#servervalidationoutputtypedef)
 
+<a id="vmserveraddresstypedef"></a>
+
 ## VmServerAddressTypeDef
 
 ```python
@@ -1152,6 +1312,8 @@ Optional fields:
 
 - `vmManagerId`: `str`
 - `vmId`: `str`
+
+<a id="vmservertypedef"></a>
 
 ## VmServerTypeDef
 

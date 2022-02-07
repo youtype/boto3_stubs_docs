@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-importexport-module"></a>
+
 # Literals for boto3 ImportExport module
 
 > [Index](..) > [ImportExport](.) > Literals
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
 type annotations stubs module
-[mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
+[mypy-boto3-importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
 - [Literals for boto3 ImportExport module](#literals-for-boto3-importexport-module)
   - [JobTypeType](#jobtypetype)
   - [ListJobsPaginatorName](#listjobspaginatorname)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="jobtypetype"></a>
 
 ## JobTypeType
 
@@ -24,6 +28,8 @@ Values:
 - `Export`
 - `Import`
 
+<a id="listjobspaginatorname"></a>
+
 ## ListJobsPaginatorName
 
 ```python
@@ -33,6 +39,8 @@ from mypy_boto3_importexport.literals import ListJobsPaginatorName
 Values:
 
 - `list_jobs`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -341,6 +349,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

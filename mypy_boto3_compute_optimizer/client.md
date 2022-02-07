@@ -1,3 +1,5 @@
+<a id="computeoptimizerclient-for-boto3-computeoptimizer-module"></a>
+
 # ComputeOptimizerClient for boto3 ComputeOptimizer module
 
 > [Index](..) > [ComputeOptimizer](.) > ComputeOptimizerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
-[mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
+[mypy-boto3-compute-optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 - [ComputeOptimizerClient for boto3 ComputeOptimizer module](#computeoptimizerclient-for-boto3-computeoptimizer-module)
   - [ComputeOptimizerClient](#computeoptimizerclient)
@@ -33,6 +35,8 @@ type annotations stubs module
     - [put_recommendation_preferences](#put_recommendation_preferences)
     - [update_enrollment_status](#update_enrollment_status)
 
+<a id="computeoptimizerclient"></a>
+
 ## ComputeOptimizerClient
 
 Type annotations for `boto3.client("compute-optimizer")`
@@ -40,14 +44,17 @@ Type annotations for `boto3.client("compute-optimizer")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
 
 def get_compute-optimizer_client() -> ComputeOptimizerClient:
-    return boto3.client("compute-optimizer")
+    return Session().client("compute-optimizer")
 ```
 
 Boto3 documentation:
 [ComputeOptimizer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -74,7 +81,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -86,6 +97,8 @@ Boto3 documentation:
 [ComputeOptimizer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -101,6 +114,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_recommendation_preferences"></a>
 
 ### delete_recommendation_preferences
 
@@ -126,6 +141,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_recommendation_export_jobs"></a>
+
 ### describe_recommendation_export_jobs
 
 Describes recommendation export jobs created in the last seven days.
@@ -148,6 +165,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRecommendationExportJobsResponseTypeDef](./type_defs.md#describerecommendationexportjobsresponsetypedef).
+
+<a id="export_auto_scaling_group_recommendations"></a>
 
 ### export_auto_scaling_group_recommendations
 
@@ -181,6 +200,8 @@ Keyword-only arguments:
 Returns
 [ExportAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponsetypedef).
 
+<a id="export_ebs_volume_recommendations"></a>
+
 ### export_ebs_volume_recommendations
 
 Exports optimization recommendations for Amazon EBS volumes.
@@ -209,6 +230,8 @@ Keyword-only arguments:
 
 Returns
 [ExportEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#exportebsvolumerecommendationsresponsetypedef).
+
+<a id="export_ec2_instance_recommendations"></a>
 
 ### export_ec2_instance_recommendations
 
@@ -241,6 +264,8 @@ Keyword-only arguments:
 Returns
 [ExportEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#exportec2instancerecommendationsresponsetypedef).
 
+<a id="export_lambda_function_recommendations"></a>
+
 ### export_lambda_function_recommendations
 
 Exports optimization recommendations for Lambda functions.
@@ -272,6 +297,8 @@ Keyword-only arguments:
 Returns
 [ExportLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#exportlambdafunctionrecommendationsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -290,6 +317,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_auto_scaling_group_recommendations"></a>
 
 ### get_auto_scaling_group_recommendations
 
@@ -318,6 +347,8 @@ Keyword-only arguments:
 Returns
 [GetAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#getautoscalinggrouprecommendationsresponsetypedef).
 
+<a id="get_ebs_volume_recommendations"></a>
+
 ### get_ebs_volume_recommendations
 
 Returns Amazon Elastic Block Store (Amazon EBS) volume recommendations.
@@ -341,6 +372,8 @@ Keyword-only arguments:
 
 Returns
 [GetEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#getebsvolumerecommendationsresponsetypedef).
+
+<a id="get_ec2_instance_recommendations"></a>
 
 ### get_ec2_instance_recommendations
 
@@ -367,6 +400,8 @@ Keyword-only arguments:
 
 Returns
 [GetEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#getec2instancerecommendationsresponsetypedef).
+
+<a id="get_ec2_recommendation_projected_metrics"></a>
 
 ### get_ec2_recommendation_projected_metrics
 
@@ -396,6 +431,8 @@ Keyword-only arguments:
 Returns
 [GetEC2RecommendationProjectedMetricsResponseTypeDef](./type_defs.md#getec2recommendationprojectedmetricsresponsetypedef).
 
+<a id="get_effective_recommendation_preferences"></a>
+
 ### get_effective_recommendation_preferences
 
 Returns the recommendation preferences that are in effect for a given resource,
@@ -418,6 +455,8 @@ Keyword-only arguments:
 Returns
 [GetEffectiveRecommendationPreferencesResponseTypeDef](./type_defs.md#geteffectiverecommendationpreferencesresponsetypedef).
 
+<a id="get_enrollment_status"></a>
+
 ### get_enrollment_status
 
 Returns the enrollment (opt in) status of an account to the Compute Optimizer
@@ -431,6 +470,8 @@ Boto3 documentation:
 
 Returns
 [GetEnrollmentStatusResponseTypeDef](./type_defs.md#getenrollmentstatusresponsetypedef).
+
+<a id="get_enrollment_statuses_for_organization"></a>
 
 ### get_enrollment_statuses_for_organization
 
@@ -457,6 +498,8 @@ Keyword-only arguments:
 Returns
 [GetEnrollmentStatusesForOrganizationResponseTypeDef](./type_defs.md#getenrollmentstatusesfororganizationresponsetypedef).
 
+<a id="get_lambda_function_recommendations"></a>
+
 ### get_lambda_function_recommendations
 
 Returns Lambda function recommendations.
@@ -481,6 +524,8 @@ Keyword-only arguments:
 
 Returns
 [GetLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#getlambdafunctionrecommendationsresponsetypedef).
+
+<a id="get_recommendation_preferences"></a>
 
 ### get_recommendation_preferences
 
@@ -507,6 +552,8 @@ Keyword-only arguments:
 Returns
 [GetRecommendationPreferencesResponseTypeDef](./type_defs.md#getrecommendationpreferencesresponsetypedef).
 
+<a id="get_recommendation_summaries"></a>
+
 ### get_recommendation_summaries
 
 Returns the optimization findings for an account.
@@ -528,6 +575,8 @@ Keyword-only arguments:
 
 Returns
 [GetRecommendationSummariesResponseTypeDef](./type_defs.md#getrecommendationsummariesresponsetypedef).
+
+<a id="put_recommendation_preferences"></a>
 
 ### put_recommendation_preferences
 
@@ -554,6 +603,8 @@ Keyword-only arguments:
   [InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_enrollment_status"></a>
 
 ### update_enrollment_status
 
