@@ -76,7 +76,7 @@ jobs:
       - name: Build docs
         if: steps.vars.outputs.version
         run: |
-          python -m mypy_boto3_builder . --docs
+          python -m mypy_boto3_builder . --product boto3-docs
       - name: Update marker file
         if: steps.vars.outputs.version
         env:
